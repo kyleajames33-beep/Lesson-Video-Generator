@@ -1,10 +1,13 @@
 // Direct-current circuit engine: describe the parts and which junctions they join, and it
 // works out every current, voltage and power from Kirchhoff's laws. Plain TypeScript, no
 // React. Series, parallel and mixed circuits all use the same solver, so nothing depends on
-// a memorised formula. Switches and values can change at set frames; the charge that has
-// passed through each part is kept, so moving charges never jump when something changes.
+// a memorised formula. Switches and values can change at set frames, or ramp smoothly over a
+// stretch of frames, and parts can be added mid-run; the charge that has passed through each
+// part is kept, so moving charges never jump when something changes.
 
-export type PartKind = 'battery' | 'resistor' | 'lamp' | 'switch' | 'ammeter' | 'voltmeter' | 'wire';
+export type PartKind = 'battery' | 'resistor' | 'lamp' | 'switch' | 'ammeter' | 'voltmeter' | 'wire' | 'motor' | 'rheostat' | 'coil';
+/** Parts that behave as a plain resistance in a steady (DC) circuit. */
+const RESISTIVE: readonly PartKind[] = ['resistor', 'lamp', 'motor', 'rheostat', 'coil'];
 export type Part = {
 	id: string;
 	kind: PartKind;
@@ -15,10 +18,17 @@ export type Part = {
 	from: string; to: string;
 	/** Battery: its EMF in volts. */
 	emf?: number;
-	/** Resistor or lamp: resistance in ohms. Battery: internal resistance (default 0). */
+	/**
+	 * Resistance in ohms. Resistor, lamp, motor, rheostat, coil: its resistance (a motor and
+	 * a coil are treated as their resistance alone: no back EMF, no self-induction).
+	 * Battery: internal resistance (default 0). Ammeter: its own small resistance (default 0,
+	 * an ideal meter). Voltmeter: its own large resistance (default infinite, an ideal meter).
+	 */
 	r?: number;
 	/** Switch: closed (default) or open. */
 	closed?: boolean;
+	/** False leaves the part out of the circuit (and the drawing) until a change adds it. Default true. */
+	present?: boolean;
 };
 export type CircuitState = {
 	/** Potential of each junction in volts, measured from the negative terminal of the first battery. */
@@ -42,13 +52,16 @@ export const solveCircuit = (parts: readonly Part[]): CircuitState => {
 	const ids = new Set<string>();
 	for (const p of parts) { if (ids.has(p.id)) throw new Error(`circuit: two parts are both called "${p.id}"`); ids.add(p.id); }
 	const names: string[] = [];
-	const firstBattery = parts.find(p => p.kind === 'battery');
+	const firstBattery = parts.find(p => p.kind === 'battery' && p.present !== false) ?? parts.find(p => p.kind === 'battery');
 	if (firstBattery) names.push(firstBattery.from);
 	for (const p of parts) for (const n of [p.from, p.to]) if (!names.includes(n)) names.push(n);
 	const node = (n: string) => names.indexOf(n) - 1; // the first name is the zero of potential, index -1
+	const here = (p: Part) => p.present !== false;
+	const hasR = (p: Part) => !!p.r && p.r > 0;
+	// Parts with a resistance: loads, and meters given their own resistance.
+	const resists = (p: Part) => here(p) && ((RESISTIVE.includes(p.kind) || p.kind === 'ammeter' || p.kind === 'voltmeter') && hasR(p));
 	// Parts that fix a voltage carry an unknown current: batteries and everything with no resistance.
-	const carries = (p: Part) => p.kind === 'battery' || p.kind === 'wire' || p.kind === 'ammeter' || (p.kind === 'switch' && p.closed !== false) || ((p.kind === 'resistor' || p.kind === 'lamp') && !(p.r && p.r > 0));
-	const resists = (p: Part) => (p.kind === 'resistor' || p.kind === 'lamp') && !!p.r && p.r > 0;
+	const carries = (p: Part) => here(p) && !resists(p) && (p.kind === 'battery' || p.kind === 'wire' || p.kind === 'ammeter' || (p.kind === 'switch' && p.closed !== false) || RESISTIVE.includes(p.kind));
 	const branches = parts.filter(carries), nv = names.length - 1, n = nv + branches.length;
 	const A = Array.from({length: n}, () => new Float64Array(n + 1));
 	for (let i = 0; i < nv; i++) A[i][i] += LEAK;
@@ -78,6 +91,7 @@ export const solveCircuit = (parts: readonly Part[]): CircuitState => {
 	names.forEach((name, i) => { voltage[name] = i === 0 ? 0 : clean(x[i - 1]); });
 	const state: CircuitState = {voltage, current: {}, drop: {}, power: {}, terminal: {}, short: false};
 	for (const p of parts) {
+		if (!here(p)) { state.drop[p.id] = 0; state.current[p.id] = 0; state.power[p.id] = 0; if (p.kind === 'battery') state.terminal[p.id] = 0; continue; }
 		const drop = clean(voltage[p.from] - voltage[p.to]), k = branches.indexOf(p);
 		const current = clean(k >= 0 ? x[nv + k] : resists(p) ? drop / p.r! : 0);
 		state.drop[p.id] = drop;
@@ -95,24 +109,56 @@ export const seriesResistance = (...ohms: number[]) => ohms.reduce((sum, r) => s
 export const parallelResistance = (...ohms: number[]) => 1 / ohms.reduce((sum, r) => sum + 1 / r, 0);
 
 // ----------------------------------------------------------- changes over time
-/** At scene frame `at`, change these values of these parts (close a switch, swap a resistance, raise the EMF). */
-export type CircuitChange = {at: number; set: Record<string, Partial<Pick<Part, 'emf' | 'r' | 'closed'>>>};
+/**
+ * At frame `at`, change these values of these parts: close a switch, add a part
+ * (`present: true`), swap a resistance, raise the EMF. With `over`, numbers (emf, r) move
+ * smoothly to their new values across that many frames (a rheostat being turned), while
+ * switches and `present` still change at `at`. Ramps of the same value should not overlap.
+ */
+export type CircuitChange = {at: number; set: Record<string, Partial<Pick<Part, 'emf' | 'r' | 'closed' | 'present'>>>; over?: number; ease?: 'linear' | 'smooth'};
 export type CircuitRun = {
-	/** One entry per stretch of time in which nothing changes, in order. */
+	/** One entry per stretch of time in which nothing changes, in order (one per frame during a ramp). */
 	phases: readonly {from: number; parts: readonly Part[]; state: CircuitState}[];
 };
+const smoothstep = (u: number) => u * u * (3 - 2 * u);
 /** Solve the circuit for the start and after every change. Frames count from when the circuit's clock starts. */
 export const runCircuit = (parts: readonly Part[], changes: readonly CircuitChange[] = []): CircuitRun => {
-	let now = parts.map(p => ({...p}));
-	const phases = [{from: 0, parts: now, state: solveCircuit(now)}];
-	for (const change of [...changes].sort((a, b) => a.at - b.at)) {
-		for (const id of Object.keys(change.set)) if (!now.some(p => p.id === id)) throw new Error(`circuit: a change names "${id}", which is not a part`);
-		now = now.map(p => (change.set[p.id] ? {...p, ...change.set[p.id]} : p));
-		phases.push({from: Math.max(0, change.at), parts: now, state: solveCircuit(now)});
+	const sorted = [...changes].sort((a, b) => a.at - b.at);
+	for (const change of sorted) for (const id of Object.keys(change.set)) if (!parts.some(p => p.id === id)) throw new Error(`circuit: a change names "${id}", which is not a part`);
+	/** The parts as they stand at a frame: every change that has started, applied in order. */
+	const standing = (frame: number) => {
+		let now = parts.map(p => ({...p}));
+		for (const c of sorted) {
+			if (c.at > frame) break;
+			const raw = c.over && c.over > 0 ? Math.min(1, (frame - c.at) / c.over) : 1, u = c.ease === 'linear' ? raw : smoothstep(raw);
+			now = now.map(p => {
+				const set = c.set[p.id];
+				if (!set) return p;
+				const next: Part = {...p};
+				if (set.closed !== undefined) next.closed = set.closed;
+				if (set.present !== undefined) next.present = set.present;
+				if (set.emf !== undefined) next.emf = (p.emf ?? 0) + (set.emf - (p.emf ?? 0)) * u;
+				if (set.r !== undefined) next.r = (p.r ?? 0) + (set.r - (p.r ?? 0)) * u;
+				return next;
+			});
+		}
+		return now;
+	};
+	const frames = new Set<number>([0]);
+	for (const c of sorted) {
+		const at = Math.max(0, c.at);
+		frames.add(at);
+		if (c.over && c.over > 0) for (let j = 1; j <= Math.ceil(c.over); j++) frames.add(c.at + j);
 	}
+	const phases = [...frames].filter(f => f >= 0).sort((a, b) => a - b).map(from => { const now = standing(from); return {from, parts: now, state: solveCircuit(now)}; });
 	return {phases};
 };
-const phaseAt = (run: CircuitRun, frame: number) => { let k = 0; while (k + 1 < run.phases.length && run.phases[k + 1].from <= frame) k++; return run.phases[k]; };
+const phaseAt = (run: CircuitRun, frame: number) => {
+	const ph = run.phases;
+	let lo = 0, hi = ph.length - 1;
+	while (lo < hi) { const mid = (lo + hi + 1) >> 1; if (ph[mid].from <= frame) lo = mid; else hi = mid - 1; }
+	return ph[lo];
+};
 /** Currents, voltages and powers at a frame. */
 export const circuitAt = (run: CircuitRun, frame: number) => phaseAt(run, frame).state;
 /** The parts as they are at a frame (which switches are closed, what each value is). */

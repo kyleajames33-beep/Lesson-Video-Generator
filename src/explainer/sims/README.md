@@ -108,6 +108,88 @@ Direct-current circuits solved from Kirchhoff's laws: name the junctions, list t
 - Where no current flows the charges stay on the wire and sit still. That is correct, and worth saying in narration.
 - Symbols follow exam-paper conventions (rectangle resistor, crossed-circle lamp). This part only draws diagrams, not real equipment.
 
+Added 13 November 2026 (Year 11 Physics gaps):
+
+| Idea | What to use |
+| --- | --- |
+| Motors, variable resistors, coils in a circuit | kinds `motor` (circle with M), `rheostat` (rectangle with a diagonal arrow), `coil` (four loops); each is its resistance `r` |
+| Real meters disturb the circuit | `ammeter` with a small `r`, `voltmeter` with a large `r`; both are solved as part of the circuit, so the readings show the loading effect |
+| Naming a wire | `labels` now works on `wire` parts too |
+| Turning a rheostat, a battery running down | a change with `over` (frames): `{at, set: {v: {r: 4}}, over: 110}` moves the value smoothly (`ease: 'linear'` or the default `'smooth'`) |
+| Closing a switch, adding a part mid-run | a change at a frame: `{s: {closed: true}}`, or a part listed with `present: false` and later `{m: {present: true}}` (not drawn until then) |
+| Current against time | `CircuitTimeGraph` with `traces: [{id, quantity?, label, tone}]` and `span` (circuit frames on the axis); a switch shows as an upright step, a ramp as a slope |
+
+- A motor and a coil are their resistance only: no back EMF and no self-induction. Do not use them to show a motor slowing the current as it speeds up, or a coil delaying the current.
+- Ramps of the same value should not overlap; a ramp is solved once per frame.
+
+### Two-step titrations (in `titration.ts`)
+
+Give `k2` for a particle that gives or takes two H⁺. Everything else stays the same, and one-step titrations give exactly the results they did.
+
+| Idea | What to use |
+| --- | --- |
+| Carbonate titrated with hydrochloric acid (two end points) | analyte `{kind: 'base', k: Kw / Ka2, k2: Kw / Ka1, ...}`; `equivalenceVolumes` gives both, the second at twice the first |
+| A weak acid with two H⁺ (H₂A) titrated with a strong base | analyte `{kind: 'acid', k: Ka1, k2: Ka2, ...}` |
+| Sulfuric acid in the burette | titrant `{kind: 'acid', k2: 1.2e-2}` (first step strong): the equivalence volume halves |
+| The two buffer regions, pH = pKa at each half-way | `halfEquivalences` (each with its `pKa` and `step`) |
+| Which form is in the flask | `mixtureAt(t, v).base.forms` (B, BH⁺, BH₂²⁺, for carbonate CO₃²⁻, HCO₃⁻, H₂CO₃) or `.acid.forms` |
+| Choosing an indicator for one end point | `indicatorFit(t, indicator, 0.02, volume)` and `steepSection(t, share, volume)` take the end point's volume |
+
+- `equivalenceVolume` and `equivalencePoint` give the last end point (the flask fully reacted). `halfEquivalence` gives the first weak step.
+- `TitrationGraph` marks every end point and half-way point. Give `equivalence.label` and `half.label` as lists for one label each.
+- The pH at a half-way point sits close to the pKa, not exactly on it, when the two pKa values are near each other or the solution is dilute. The tests allow 0.1.
+- Conductivity of a two-step mixture is a rough guide only.
+
+### Population (`population.ts`, drawing in `population-views.tsx`)
+
+Populations over generations or time, worked out once. Drift is seeded.
+
+| Idea | What to use |
+| --- | --- |
+| Genetic drift, several populations side by side | `runAlleles({p0, n, generations, lines, seed})` (n diploid individuals, 2n gene copies drawn each generation); `fixedAt`, `fixedTo` |
+| Natural selection, with or without drift | add `fitness: {AA, Aa, aa}`; leave `n` out for the deterministic curve; `run.expected` is always the no-drift curve; `selectionStep`, `meanFitness` |
+| Logistic growth to a carrying capacity | `runLogistic({n0, r, k, to, form: 'continuous' or 'discrete'})`; `rate` is rN(1 − N/K); `logisticAt` is the exact curve |
+| Predator and prey cycles | `runPredatorPrey({prey0, predators0, preyGrowth, predation, conversion, predatorDeath, to})`, stepped with RK4; `lotkaBalance`, `lotkaSmallPeriod`, `lotkaInvariant` |
+
+- Drawing: `AlleleGraph` (every line, optional dashed `expected` curve and `start` level), `GrowthGraph` (K and K/2 marks, or `rate` to plot the growth rate), `PredatorPreyGraph`. All are `SeriesGraph`s and take `now`.
+- The clock is `useSeriesTime({at, from, to, frames, ease})`: scene frames to generations or years. `valueAt(t, v, now)` or `seriesReadout(lines, now)` gives readout values from the same time.
+- Above 4000 gene copies drift uses a normal approximation to the binomial draw.
+- Choose the seed by looking, as for chance: pick a run whose lines spread clearly and where one or two fix inside the scene.
+
+### Heating curve (`heating.ts`, drawing in `heating-views.tsx`)
+
+Heat supplied at a constant power to a substance that melts and boils, in SI units.
+
+| Idea | What to use |
+| --- | --- |
+| Heating curve with plateaus | `runHeating({mass, power, start, end or duration, c: {solid, liquid, gas}, melt: {at, latent}, boil: {at, latent}})`; `HeatingGraph` |
+| Why the temperature stops rising while it melts | `heatingAt(run, t)` gives `solid`, `liquid`, `gas` shares; `PhaseReadout` drains one bar into the next |
+| Q = mcΔT and Q = mL | each stretch has `t0`, `t1`, `T0`, `T1`, `q0`, `q1`; plateaus last mL / P and slopes are P / (mc) |
+
+- `HeatingGraph` `labels` names any stretch (`solid`, `melting`, `liquid`, `boiling`, `gas`): plateau labels sit in a shaded band, warming labels beside the line. `temperatures` marks the melting and boiling points.
+- With real water the boiling plateau is about seven times the melting one. That is the science; do not stretch the melting plateau to look even.
+- A start temperature equal to the melting point counts as liquid; start just below it for a solid.
+
+### Energy profile (`energy-profile.ts`, drawing in `energy-profile-views.tsx`)
+
+| Idea | What to use |
+| --- | --- |
+| Exothermic or endothermic profile with Ea and ΔH | `EnergyProfileView` with `config: {reactants, products, ea}`; `showEa`, `showDeltaH` grow each arrow (0 to 1) |
+| A catalyst lowers the activation energy | add `catalysedEa`; `catalysed` draws the lower dashed hump, `showCatalysedEa` its arrow |
+| Following the reaction along the curve | `progress` (0 to 1) draws the curve; `ball` puts a marker at the front |
+| The numbers | `energyProfile(config)`: `deltaH` (negative when exothermic), `kind`, arrows with signed `length`, `reverseEa`; `profileEnergyAt` |
+
+- The energy axis has no numbers: it is a qualitative diagram. Write values in the labels if the lesson needs them.
+- `energyProfile` refuses a hump lower than the products (Ea must be at least ΔH) and a catalysed Ea that is not lower.
+
+### Time graphs (`series-views.tsx`)
+
+`SeriesGraph` is the one line graph behind the population, heating and circuit graphs: several lines with lesson labels and tones, a moving `now`, dashed `marks`, shaded `spans`, hand-written `notes`. Text is at least 30 px. Use it directly for any other quantity against time.
+
+### Demos
+
+`demos.tsx` is a separate Remotion entry (not in the registry) with one composition per addition above: `SimDemo-Population`, `SimDemo-Heating`, `SimDemo-EnergyProfile`, `SimDemo-Diprotic`, `SimDemo-Circuits`. Open it with `npx remotion studio src/explainer/sims/demos.tsx`.
+
 ### Drawing (`views.tsx`)
 
 - `ParticleBoxView`, `BoxCountGraph`, `useBoxFrame(run, clock)`.
@@ -145,11 +227,10 @@ Listed by how many unbuilt designs could use them (Year 11 Chemistry, Year 12 Ph
 
 1. States of matter and heating curves (needs attraction between particles in the box).
 2. Momentum: two-body collisions on a track with before and after bars.
-3. Allele frequency drift and selection across generations.
-4. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
-5. Titrations with two H⁺ per acid particle, and buffers with acid or base added.
-6. Capacitor charging and alternating current for the circuit engine.
+3. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
+4. Buffers with acid or base added.
+5. Capacitor charging and alternating current for the circuit engine (and back EMF for motors).
 
-Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram). Built on 11 November 2026: titration and circuits.
+Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram). Built on 11 November 2026: titration and circuits. Built on 13 November 2026: population, heating curve, energy profile, two-step titrations and the circuit additions. The heating curve covers the graph in item 1; particles with attraction are still wanted.
 
 Maths lessons: the Maths studio kit (`../math/studio`) has its own dice histogram part. The Maths owner chooses between that part and `chance.ts` for each lesson, so one lesson never mixes the two.

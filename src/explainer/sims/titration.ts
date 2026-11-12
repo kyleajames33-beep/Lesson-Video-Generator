@@ -10,8 +10,15 @@ export type Solution = {
 	kind: 'acid' | 'base';
 	/** mol/L */
 	concentration: number;
-	/** Ka of a weak acid, or Kb of a weak base. Leave out for a strong one. One H+ (or one OH-) per particle. */
+	/** Ka of a weak acid, or Kb of a weak base. Leave out for a strong one. One H+ (or one OH-) per particle unless `k2` is given. */
 	k?: number;
+	/**
+	 * Second step, for a particle that gives two H+ (Ka2 of an acid such as H2A) or takes two
+	 * H+ (Kb2 of a base such as carbonate, CO3 2- to HCO3- to H2CO3). With `k2` the particle
+	 * reacts in two steps and the curve has two equivalence points. Leave `k` out (and give
+	 * `k2`) when the first step is strong, as for sulfuric acid.
+	 */
+	k2?: number;
 };
 export type Titration = {
 	/** In the flask at the start. */
@@ -34,11 +41,34 @@ export type Mixture = {
 	pH: number;
 	/** Concentrations in mol/L. */
 	h: number; oh: number;
-	/** The acid's two forms: the whole molecule (zero for a strong acid) and its negative ion. */
-	acid: {total: number; molecule: number; ion: number};
-	/** The base's two forms: the uncharged base (zero for a strong base) and its positive ion. */
-	base: {total: number; molecule: number; ion: number};
+	/**
+	 * The acid: the whole molecule (zero for a strong acid) and its ionised forms together.
+	 * `forms` lists every form from most to least H+ (HA, A- or H2A, HA-, A2-), and `charge`
+	 * is the negative charge they carry (equal to `ion` for a one-H+ acid).
+	 */
+	acid: {total: number; molecule: number; ion: number; forms: number[]; charge: number};
+	/**
+	 * The base: the unreacted base (zero for a strong base) and its reacted forms together.
+	 * `forms` lists every form from fewest to most H+ taken (B, BH+ or B, BH+, BH2 2+), and
+	 * `charge` is the positive charge gained (equal to `ion` for a one-step base).
+	 */
+	base: {total: number; molecule: number; ion: number; forms: number[]; charge: number};
 };
+
+/** How many H+ each particle gives (acid) or takes (base): 2 when `k2` is given, else 1. */
+export const protonsOf = (s: Solution) => (s.k2 === undefined ? 1 : 2);
+/**
+ * Share of a particle in each form, from most to least H+ for an acid (at [H+] = x), or from
+ * fewest to most H+ taken for a base (at [OH-] = x). k1 undefined means the first step is strong.
+ */
+const fractions = (s: Solution, x: number): number[] => {
+	const k1 = s.k, k2 = s.k2;
+	if (k2 === undefined) return k1 === undefined ? [0, 1] : [x / (x + k1), k1 / (x + k1)];
+	if (k1 === undefined) return [0, x / (x + k2), k2 / (x + k2)];
+	const d = x * x + k1 * x + k1 * k2;
+	return [(x * x) / d, (k1 * x) / d, (k1 * k2) / d];
+};
+const chargeOf = (f: number[]) => f.reduce((sum, share, i) => sum + share * i, 0);
 
 const check = (t: Titration) => {
 	if (t.analyte.kind === t.titrant.kind) throw new Error('titration: the burette must hold the opposite kind to the flask (acid into base, or base into acid)');
@@ -52,39 +82,72 @@ export const mixtureAt = (t: Titration, added: number): Mixture => {
 	const acidSol = t.analyte.kind === 'acid' ? t.analyte : t.titrant, baseSol = t.analyte.kind === 'base' ? t.analyte : t.titrant;
 	const fromFlask = t.analyte.concentration * t.analyte.volume / volume, fromBurette = t.titrant.concentration * v / volume;
 	const ca = t.analyte.kind === 'acid' ? fromFlask : fromBurette, cb = t.analyte.kind === 'base' ? fromFlask : fromBurette;
-	const anion = (h: number) => (acidSol.k === undefined ? ca : ca * acidSol.k / (acidSol.k + h));
-	const cation = (h: number) => (baseSol.k === undefined ? cb : cb * baseSol.k * h / (baseSol.k * h + kw));
-	// Charge balance: H+ + base cation = OH- + acid anion. The left side minus the right falls as pH rises.
+	const anion = (h: number) => ca * chargeOf(fractions(acidSol, h));
+	const cation = (h: number) => cb * chargeOf(fractions(baseSol, kw / h));
+	// Charge balance: H+ + base cation charge = OH- + acid anion charge. The left side minus the right falls as pH rises.
 	let lo = -2, hi = 16;
 	for (let i = 0; i < 70; i++) {
 		const mid = (lo + hi) / 2, h = 10 ** -mid;
 		if (h + cation(h) - kw / h - anion(h) > 0) lo = mid; else hi = mid;
 	}
-	const pH = (lo + hi) / 2, h = 10 ** -pH, a = anion(h), c = cation(h);
-	return {volume, pH, h, oh: kw / h, acid: {total: ca, molecule: ca - a, ion: a}, base: {total: cb, molecule: cb - c, ion: c}};
+	const pH = (lo + hi) / 2, h = 10 ** -pH;
+	const af = fractions(acidSol, h).map(share => share * ca), bf = fractions(baseSol, kw / h).map(share => share * cb);
+	return {
+		volume, pH, h, oh: kw / h,
+		acid: {total: ca, molecule: af[0], ion: ca - af[0], forms: af, charge: anion(h)},
+		base: {total: cb, molecule: bf[0], ion: cb - bf[0], forms: bf, charge: cation(h)},
+	};
 };
 export const phAt = (t: Titration, added: number) => mixtureAt(t, added).pH;
 
-/** Volume from the burette (mL) at which the moles added equal the moles in the flask. */
-export const equivalenceVolume = (t: Titration) => { check(t); return t.analyte.concentration * t.analyte.volume / t.titrant.concentration; };
-/** The equivalence point: 7 for strong with strong, above 7 for a weak acid with a strong base, below 7 for a weak base with a strong acid. */
+/**
+ * Volumes from the burette (mL) at each equivalence point, in order. One for a one-step
+ * particle in the flask; two for a two-step one (carbonate with acid: the second is at
+ * twice the first, both measured from the start).
+ */
+export const equivalenceVolumes = (t: Titration) => {
+	check(t);
+	const first = t.analyte.concentration * t.analyte.volume / (t.titrant.concentration * protonsOf(t.titrant));
+	return Array.from({length: protonsOf(t.analyte)}, (_, i) => first * (i + 1));
+};
+/** Volume from the burette (mL) at which the flask has fully reacted (the last equivalence point). */
+export const equivalenceVolume = (t: Titration) => { const v = equivalenceVolumes(t); return v[v.length - 1]; };
+/** The equivalence point: 7 for strong with strong, above 7 for a weak acid with a strong base, below 7 for a weak base with a strong acid. For a two-step particle, the last one. */
 export const equivalencePoint = (t: Titration) => { const volume = equivalenceVolume(t); return {volume, pH: phAt(t, volume)}; };
+/** Every equivalence point, in order of volume. */
+export const equivalencePoints = (t: Titration) => equivalenceVolumes(t).map(volume => ({volume, pH: phAt(t, volume)}));
+/**
+ * Half-way points of each weak step: half of that step has happened, its two forms are
+ * equal, and the pH is close to that step's pKa (of the acid, or of the base's reacted form).
+ * Strong steps have no entry.
+ */
+export const halfEquivalences = (t: Titration) => {
+	const vs = equivalenceVolumes(t), kw = t.kw ?? KW, out: {volume: number; pH: number; pKa: number; step: number}[] = [];
+	vs.forEach((v, i) => {
+		const k = i === 0 ? t.analyte.k : t.analyte.k2;
+		if (k === undefined) return;
+		const volume = ((i ? vs[i - 1] : 0) + v) / 2, pKa = t.analyte.kind === 'acid' ? -Math.log10(k) : -Math.log10(kw / k);
+		out.push({volume, pH: phAt(t, volume), pKa, step: i + 1});
+	});
+	return out;
+};
 /**
  * Half-way to equivalence, when the flask holds a weak acid or weak base: half of it has
  * reacted, the two forms are equal, and the pH equals the pKa (of the acid, or of the
- * base's positive ion). Returns null when the flask holds a strong acid or base.
+ * base's positive ion). Returns null when the flask holds a strong acid or base. For a
+ * two-step particle, the first weak step (see halfEquivalences for both).
  */
 export const halfEquivalence = (t: Titration) => {
-	if (t.analyte.k === undefined) return null;
-	const volume = equivalenceVolume(t) / 2, pKa = t.analyte.kind === 'acid' ? -Math.log10(t.analyte.k) : -Math.log10((t.kw ?? KW) / t.analyte.k);
-	return {volume, pH: phAt(t, volume), pKa};
+	const first = halfEquivalences(t)[0];
+	return first ? {volume: first.volume, pH: first.pH, pKa: first.pKa} : null;
 };
 /**
  * The steep part of the curve: the pH just before and just after equivalence, taken
  * `share` of the equivalence volume either side (default 2%). Returned low to high.
+ * `volume` picks which equivalence point (default the last).
  */
-export const steepSection = (t: Titration, share = 0.02) => {
-	const ve = equivalenceVolume(t), a = phAt(t, ve * (1 - share)), b = phAt(t, ve * (1 + share));
+export const steepSection = (t: Titration, share = 0.02, volume = equivalenceVolume(t)) => {
+	const a = phAt(t, volume * (1 - share)), b = phAt(t, volume * (1 + share));
 	return {low: Math.min(a, b), high: Math.max(a, b)};
 };
 
@@ -93,9 +156,9 @@ export const steepSection = (t: Titration, share = 0.02) => {
  * so the steep part is drawn as a clean line. `value` picks what is plotted.
  */
 export const titrationCurve = (t: Titration, to: number, value: (m: Mixture) => number = m => m.pH, steps = 240) => {
-	const ve = equivalenceVolume(t), vs = new Set<number>();
+	const vs = new Set<number>();
 	for (let i = 0; i <= steps; i++) vs.add((to * i) / steps);
-	if (ve < to) for (let i = -40; i <= 40; i++) { const v = ve * (1 + Math.sign(i) * 0.05 * (Math.abs(i) / 40) ** 3); if (v >= 0 && v <= to) vs.add(v); }
+	for (const ve of equivalenceVolumes(t)) if (ve < to) for (let i = -40; i <= 40; i++) { const v = ve * (1 + Math.sign(i) * 0.05 * (Math.abs(i) / 40) ** 3); if (v >= 0 && v <= to) vs.add(v); }
 	const volume = [...vs].sort((a, b) => a - b);
 	return {volume, value: volume.map(v => value(mixtureAt(t, v)))};
 };
@@ -137,8 +200,8 @@ export const volumeAtPh = (t: Titration, pH: number, to = equivalenceVolume(t) *
  * whole pH range sits inside the steep part of the curve (steepSection), so the colour
  * changes within a drop or two of the equivalence point.
  */
-export const indicatorFit = (t: Titration, ind: Indicator, share = 0.02) => {
-	const steep = steepSection(t, share), a = volumeAtPh(t, ind.low), b = volumeAtPh(t, ind.high), ve = equivalenceVolume(t);
+export const indicatorFit = (t: Titration, ind: Indicator, share = 0.02, volume = equivalenceVolume(t)) => {
+	const steep = steepSection(t, share, volume), a = volumeAtPh(t, ind.low), b = volumeAtPh(t, ind.high), ve = volume;
 	const starts = a === null || b === null ? null : Math.min(a, b), ends = a === null || b === null ? null : Math.max(a, b);
 	return {suits: ind.low >= steep.low && ind.high <= steep.high, starts, ends, equivalence: ve, early: ends === null ? null : ve - ends};
 };
@@ -148,13 +211,14 @@ const LAMBDA = {h: 349.8, oh: 198.6, strongAnion: 76.3, weakAnion: 40.9, strongC
 /**
  * Conductivity of the flask in mS/cm: each ion's concentration times how well it carries
  * charge. H+ and OH- carry far better than the other ions, which is why the line bends at
- * the equivalence point.
+ * the equivalence point. For two-step particles it is a rough guide only: every form is
+ * given the same conductivity per unit of charge.
  */
 export const conductivityOf = (t: Titration, m: Mixture) => {
 	const acidSol = t.analyte.kind === 'acid' ? t.analyte : t.titrant, baseSol = t.analyte.kind === 'base' ? t.analyte : t.titrant;
 	const anion = t.ions?.anion ?? (acidSol.k === undefined ? LAMBDA.strongAnion : LAMBDA.weakAnion);
 	const cation = t.ions?.cation ?? (baseSol.k === undefined ? LAMBDA.strongCation : LAMBDA.weakCation);
-	return LAMBDA.h * m.h + LAMBDA.oh * m.oh + anion * m.acid.ion + cation * m.base.ion;
+	return LAMBDA.h * m.h + LAMBDA.oh * m.oh + anion * m.acid.charge + cation * m.base.charge;
 };
 export const conductivityAt = (t: Titration, added: number) => conductivityOf(t, mixtureAt(t, added));
 

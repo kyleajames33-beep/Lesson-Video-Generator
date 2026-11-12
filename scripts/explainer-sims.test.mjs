@@ -419,3 +419,209 @@ test('waves: refraction follows Snell and stops at the critical angle', () => {
 	near(waves.pulseAt(pulse, 1, 0.5), 1, 1e-12, 'pulse centre moves at its speed');
 	assert.deepEqual(waves.particleAt(() => 0.1, 2, 0, 'longitudinal'), [2.1, 0]);
 });
+
+const pop = await load('src/explainer/sims/population.ts');
+
+test('population: drift keeps the mean frequency near p0, and small populations fix', () => {
+	const a = pop.runAlleles({p0: 0.3, n: 50, generations: 20, lines: 600, seed: 4});
+	const b = pop.runAlleles({p0: 0.3, n: 50, generations: 20, lines: 600, seed: 4});
+	assert.deepEqual(Array.from(a.p[5]), Array.from(b.p[5]), 'same seed, same lines');
+	assert.notDeepEqual(Array.from(a.p[5]), Array.from(pop.runAlleles({p0: 0.3, n: 50, generations: 20, lines: 600, seed: 5}).p[5]));
+	for (const g of [1, 5, 20]) near(a.p.reduce((s, l) => s + l[g], 0) / a.p.length, 0.3, 0.02, `mean at generation ${g}`);
+	// Variance grows as p0 q0 (1 - (1 - 1/2N)^g).
+	const g = 20, m = a.p.reduce((s, l) => s + l[g], 0) / a.p.length, varG = a.p.reduce((s, l) => s + (l[g] - m) ** 2, 0) / a.p.length;
+	near(varG, 0.3 * 0.7 * (1 - (1 - 1 / 100) ** g), 0.012, 'spread grows at the Wright-Fisher rate');
+	const small = pop.runAlleles({p0: 0.5, n: 10, generations: 400, lines: 400, seed: 9});
+	assert.ok(small.fixedAt.every(x => x !== null), 'every small population has lost one allele');
+	near(small.fixedTo.filter(x => x === 'A').length / 400, 0.5, 0.08, 'A is kept in about p0 of them');
+	for (let l = 0; l < 10; l++) { const at = small.fixedAt[l], end = small.p[l][400]; assert.ok(end === 0 || end === 1); assert.equal(small.p[l][at], end, 'stays fixed'); }
+	const still = pop.runAlleles({p0: 0.4, generations: 30});
+	assert.ok(still.p[0].every(v => v === 0.4), 'no drift and no selection: nothing changes');
+});
+
+test('population: selection moves the frequency the right way at the deterministic rate', () => {
+	const w = {AA: 1.1, Aa: 1.05, aa: 1};
+	const p = 0.2, q = 0.8, wbar = pop.meanFitness(p, w);
+	near(pop.selectionStep(p, w) - p, p * q * (p * (w.AA - w.Aa) + q * (w.Aa - w.aa)) / wbar, 1e-12, 'one step matches the textbook change');
+	const det = pop.runAlleles({p0: 0.2, generations: 100, fitness: w});
+	for (let g = 1; g <= 100; g++) assert.ok(det.p[0][g] > det.p[0][g - 1], 'A rises every generation');
+	assert.ok(det.p[0][100] > 0.9);
+	const against = pop.runAlleles({p0: 0.8, generations: 60, fitness: {AA: 0.9, Aa: 0.95, aa: 1}});
+	assert.ok(against.p[0][60] < 0.8, 'a less fit allele falls');
+	const drift = pop.runAlleles({p0: 0.2, n: 2000, generations: 60, lines: 40, seed: 2, fitness: w});
+	for (const g of [20, 40, 60]) near(drift.p.reduce((s, l) => s + l[g], 0) / 40, drift.expected[g], 0.02, `large N follows the curve at ${g}`);
+	near(drift.expected[60], det.p[0][60], 1e-12, 'expected curve is the no-drift run');
+});
+
+test('population: logistic growth approaches K and grows fastest at K / 2', () => {
+	const c = pop.runLogistic({n0: 10, r: 0.5, k: 1000, to: 40});
+	near(c.v[c.v.length - 1], 1000, 1, 'approaches K');
+	for (let i = 1; i < c.v.length; i++) assert.ok(c.v[i] >= c.v[i - 1] && c.v[i] <= 1000);
+	let best = 0; for (let i = 1; i < c.rate.length; i++) if (c.rate[i] > c.rate[best]) best = i;
+	near(c.v[best], 500, 15, 'fastest growth at K / 2');
+	near(c.rate[best], 0.5 * 1000 / 4, 0.5, 'maximum rate rK / 4');
+	near(pop.logisticAt(c.config, Math.log(99) / 0.5), 500, 1e-9, 'exact time to K / 2');
+	const d = pop.runLogistic({n0: 10, r: 0.5, k: 1000, to: 40, form: 'discrete'});
+	assert.equal(d.t.length, 41);
+	near(d.v[1], 10 + 0.5 * 10 * (1 - 10 / 1000), 1e-12, 'one discrete step');
+	near(d.v[40], 1000, 1, 'discrete also settles on K');
+	let jump = 0; for (let i = 1; i < d.v.length; i++) if (d.v[i] - d.v[i - 1] > d.v[jump + 1] - d.v[jump]) jump = i - 1;
+	near(d.v[jump], 500, 260, 'biggest step starts near K / 2');
+});
+
+test('population: Lotka-Volterra keeps its conserved quantity over several cycles', () => {
+	const c = {prey0: 40, predators0: 9, preyGrowth: 0.1, predation: 0.02, conversion: 0.01, predatorDeath: 0.1, to: 400};
+	const run = pop.runPredatorPrey(c);
+	const v0 = pop.lotkaInvariant(c, c.prey0, c.predators0);
+	let worst = 0; for (let i = 0; i < run.t.length; i++) worst = Math.max(worst, Math.abs(pop.lotkaInvariant(c, run.prey[i], run.predators[i]) - v0));
+	assert.ok(worst < 1e-6 * Math.abs(v0), `drift ${worst}`);
+	const cycles = run.t[run.t.length - 1] / pop.lotkaSmallPeriod(c);
+	assert.ok(cycles > 4, `${cycles} cycles`);
+	let peaks = 0; for (let i = 1; i < run.prey.length - 1; i++) if (run.prey[i] > run.prey[i - 1] && run.prey[i] >= run.prey[i + 1]) peaks++;
+	assert.ok(peaks >= 4, 'prey rises and falls again and again');
+	const bal = pop.lotkaBalance(c);
+	const still = pop.runPredatorPrey({...c, prey0: bal.prey, predators0: bal.predators, to: 50});
+	near(still.prey[still.prey.length - 1], bal.prey, 1e-9, 'balance point stays put');
+	near(pop.valueAt([0, 1, 2], [0, 10, 30], 1.5), 20, 1e-12, 'valueAt interpolates');
+});
+
+const heat = await load('src/explainer/sims/heating.ts');
+
+test('heating: plateaus last m L / P and slopes are P / (m c)', () => {
+	// 0.5 kg of ice at -20 °C heated at 500 W to 120 °C.
+	const c = {mass: 0.5, power: 500, start: -20, end: 120, c: {solid: 2100, liquid: 4200, gas: 2010}, melt: {at: 0, latent: 334000}, boil: {at: 100, latent: 2260000}};
+	const run = heat.runHeating(c);
+	assert.deepEqual(run.stretches.map(s => s.stage), ['solid', 'melting', 'liquid', 'boiling', 'gas']);
+	const [solid, melting, liquid, boiling, gas] = run.stretches;
+	near(melting.t1 - melting.t0, 0.5 * 334000 / 500, 1e-9, 'melting time');
+	near(boiling.t1 - boiling.t0, 0.5 * 2260000 / 500, 1e-9, 'boiling time');
+	assert.equal(melting.T0, 0); assert.equal(melting.T1, 0); assert.equal(boiling.T1, 100);
+	for (const [s, cap] of [[solid, 2100], [liquid, 4200], [gas, 2010]]) near((s.T1 - s.T0) / (s.t1 - s.t0), 500 / (0.5 * cap), 1e-9, `${s.stage} slope`);
+	near(run.heat, 500 * run.duration, 1e-6, 'heat = power x time');
+	near(run.heat, 0.5 * (2100 * 20 + 334000 + 4200 * 100 + 2260000 + 2010 * 20), 1e-6, 'heat = sum of m c dT and m L');
+	const mid = heat.heatingAt(run, (melting.t0 + melting.t1) / 2);
+	assert.equal(mid.stage, 'melting'); near(mid.solid, 0.5, 1e-9, 'half melted'); near(mid.liquid, 0.5, 1e-9, 'half liquid'); assert.equal(mid.temperature, 0);
+	const late = heat.heatingAt(run, boiling.t0 + 0.25 * (boiling.t1 - boiling.t0));
+	near(late.gas, 0.25, 1e-9, 'a quarter boiled off'); near(late.liquid + late.gas + late.solid, 1, 1e-12, 'shares add to 1');
+	assert.equal(heat.heatingAt(run, 1e9).temperature, 120);
+	assert.equal(heat.plateaus(run).length, 2);
+	const curve = heat.heatingCurve(run);
+	assert.equal(curve.t.length, 6); near(heat.heatingAt(run, curve.t[2]).temperature, curve.v[2], 1e-9, 'corners match');
+	// A duration cuts the run part-way through boiling; a liquid start skips the solid stretches.
+	const cut = heat.runHeating({...c, end: undefined, duration: 2000});
+	near(cut.duration, 2000, 1e-9, 'stops at the duration'); assert.equal(cut.stretches.at(-1).stage, 'boiling');
+	const warmWater = heat.runHeating({...c, start: 20, end: 60});
+	assert.deepEqual(warmWater.stretches.map(s => s.stage), ['liquid']);
+	near(warmWater.duration, 0.5 * 4200 * 40 / 500, 1e-9, 'warming water only');
+	assert.throws(() => heat.runHeating({...c, c: {liquid: 4200}}));
+});
+
+const prof = await load('src/explainer/sims/energy-profile.ts');
+
+test('energy profile: arrows have the right lengths and signs', () => {
+	const exo = prof.energyProfile({reactants: 0, products: -90, ea: 120, catalysedEa: 70});
+	assert.equal(exo.kind, 'exothermic');
+	assert.equal(exo.peak, 120); assert.equal(exo.catalysedPeak, 70);
+	assert.deepEqual(exo.ea, {from: 0, to: 120, length: 120});
+	assert.deepEqual(exo.catalysedEa, {from: 0, to: 70, length: 70});
+	assert.deepEqual(exo.deltaHArrow, {from: 0, to: -90, length: -90});
+	assert.equal(exo.reverseEa, 210);
+	const endo = prof.energyProfile({reactants: 50, products: 110, ea: 100});
+	assert.equal(endo.kind, 'endothermic'); assert.equal(endo.deltaH, 60); assert.ok(endo.deltaHArrow.length > 0, 'ΔH arrow points up');
+	assert.equal(endo.reverseEa, 40); assert.equal(endo.catalysedEa, null);
+	// The curve starts and ends on the levels and tops out at the peak.
+	near(prof.profileEnergyAt(exo, 0), 0, 1e-12, 'reactant level'); near(prof.profileEnergyAt(exo, 1), -90, 1e-12, 'product level');
+	near(prof.profileEnergyAt(exo, prof.PROFILE_SHAPE.peakAt), 120, 1e-12, 'peak'); near(prof.profileEnergyAt(exo, prof.PROFILE_SHAPE.peakAt, true), 70, 1e-12, 'catalysed peak');
+	let top = -Infinity; for (let u = 0; u <= 1; u += 0.001) top = Math.max(top, prof.profileEnergyAt(endo, u)); near(top, 150, 1e-9, 'never above the peak');
+	assert.throws(() => prof.energyProfile({reactants: 0, products: 100, ea: 60}), /Ea ≥ ΔH/);
+	assert.throws(() => prof.energyProfile({reactants: 0, products: -10, ea: 60, catalysedEa: 80}));
+});
+
+test('titration: carbonate with a strong acid has two equivalence points, 1 : 2 from the start', () => {
+	// Na2CO3 0.1 mol/L, 25 mL, with HCl 0.1 mol/L. H2CO3: Ka1 4.5e-7, Ka2 4.7e-11, so Kb1 = Kw / Ka2 and Kb2 = Kw / Ka1.
+	const t = {analyte: {kind: 'base', concentration: 0.1, volume: 25, k: 1e-14 / 4.7e-11, k2: 1e-14 / 4.5e-7}, titrant: {kind: 'acid', concentration: 0.1}};
+	const [v1, v2] = titr.equivalenceVolumes(t);
+	near(v1, 25, 1e-12, 'first'); near(v2, 50, 1e-12, 'second'); near(v2 / v1, 2, 1e-12, '1 : 2 from the start');
+	assert.equal(titr.equivalenceVolume(t), 50);
+	// The steepest drops on the curve sit at those volumes.
+	const steepest = (a, b) => { let best = a, drop = 0; for (let v = a; v <= b; v += 0.02) { const d = titr.phAt(t, v) - titr.phAt(t, v + 0.02); if (d > drop) { drop = d; best = v; } } return best + 0.01; };
+	const s1 = steepest(10, 40), s2 = steepest(40, 70);
+	near(s1, 25, 0.3, 'first steep drop'); near(s2, 50, 0.1, 'second steep drop'); near(s2 / s1, 2, 0.03, 'measured ratio');
+	near(titr.phAt(t, 0), 11.66, 0.03, 'start: 0.1 mol/L carbonate');
+	const halves = titr.halfEquivalences(t);
+	assert.equal(halves.length, 2);
+	near(halves[0].volume, 12.5, 1e-12, 'first half-way'); near(halves[0].pKa, 10.33, 0.01, 'pKa2 of carbonic acid'); near(halves[0].pH, halves[0].pKa, 0.1, 'pH = pKa2');
+	near(halves[1].volume, 37.5, 1e-12, 'second half-way'); near(halves[1].pKa, 6.35, 0.01, 'pKa1'); near(halves[1].pH, halves[1].pKa, 0.05, 'pH = pKa1');
+	near(titr.equivalencePoints(t)[0].pH, 8.34, 0.1, 'first end point: hydrogencarbonate, pH = (pKa1 + pKa2) / 2');
+	assert.ok(titr.equivalencePoints(t)[1].pH < 4.5, 'second end point is acidic (carbonic acid)');
+	const m = titr.mixtureAt(t, 25);
+	assert.equal(m.base.forms.length, 3); near(m.base.forms.reduce((a, b) => a + b, 0), m.base.total, 1e-12, 'forms add up');
+	assert.ok(m.base.forms[1] > 0.95 * m.base.total, 'at the first end point it is nearly all hydrogencarbonate');
+	near(m.h + m.base.charge, m.oh + m.acid.charge, 1e-9, 'charges balance');
+	const fit = titr.indicatorFit(t, titr.INDICATORS.phenolphthalein, 0.02, v1);
+	near(fit.equivalence, 25, 1e-12, 'fit against the first end point');
+	let last = Infinity; for (let v = 0; v <= 70; v += 0.5) { const pH = titr.phAt(t, v); assert.ok(pH < last, 'pH falls all the way'); last = pH; }
+});
+
+test('titration: a two-H+ acid with a strong base buffers at each pKa; one-step results are unchanged', () => {
+	const t = {analyte: {kind: 'acid', concentration: 0.1, volume: 20, k: 1e-4, k2: 1e-9}, titrant: {kind: 'base', concentration: 0.1}};
+	assert.deepEqual(titr.equivalenceVolumes(t), [20, 40]);
+	const [a, b] = titr.halfEquivalences(t);
+	near(a.pH, 4, 0.06, 'pH = pKa1'); near(b.pH, 9, 0.06, 'pH = pKa2');
+	near(titr.halfEquivalence(t).volume, 10, 1e-12, 'halfEquivalence gives the first');
+	const sulfuric = {analyte: {kind: 'base', concentration: 0.1, volume: 25}, titrant: {kind: 'acid', concentration: 0.05, k2: 1.2e-2}};
+	assert.deepEqual(titr.equivalenceVolumes(sulfuric), [25], 'two H+ per titrant particle halves the volume');
+	near(titr.phAt(t, 0), titr.phAt({...t, analyte: {...t.analyte, k2: undefined}}, 0), 0.001, 'a tiny Ka2 hardly changes the start');
+	const mono = {analyte: {kind: 'acid', concentration: 0.1, k: 1.8e-5, volume: 25}, titrant: {kind: 'base', concentration: 0.1}};
+	assert.deepEqual(titr.equivalenceVolumes(mono), [25]);
+	near(titr.mixtureAt(mono, 12.5).acid.charge, titr.mixtureAt(mono, 12.5).acid.ion, 1e-15, 'one-step charge = ion');
+});
+
+test('circuits: real meters load the circuit by the hand-calculated amount', () => {
+	// Voltmeter of 10 kΩ across the lower of two 10 kΩ resistors on 12 V.
+	const parts = r => [
+		{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12},
+		{id: 'r1', kind: 'resistor', from: 'P', to: 'm', r: 10000},
+		{id: 'r2', kind: 'resistor', from: 'm', to: 'N', r: 10000},
+		{id: 'v', kind: 'voltmeter', from: 'm', to: 'N', r},
+	];
+	near(circ.solveCircuit(parts(undefined)).drop.v, 6, 1e-6, 'ideal voltmeter');
+	const lower = circ.parallelResistance(10000, 10000), loaded = circ.solveCircuit(parts(10000));
+	near(loaded.drop.v, 12 * lower / (10000 + lower), 1e-6, 'loaded reading = 4 V');
+	near(loaded.drop.v, 4, 1e-6, 'four volts');
+	near(loaded.current.v, 4 / 10000, 1e-9, 'the meter draws current');
+	near(circ.solveCircuit(parts(1e7)).drop.v, 12 * circ.parallelResistance(10000, 1e7) / (10000 + circ.parallelResistance(10000, 1e7)), 1e-6, 'a large meter barely loads');
+	// Ammeter of 1 Ω in series with 5 Ω on 12 V.
+	const amm = r => circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12}, {id: 'a', kind: 'ammeter', from: 'P', to: 'x', r}, {id: 'r', kind: 'resistor', from: 'x', to: 'N', r: 5}]);
+	near(amm(undefined).current.a, 2.4, 1e-6, 'ideal ammeter');
+	near(amm(1).current.a, 2, 1e-6, 'ammeter resistance lowers the current: 12 / 6');
+	near(amm(1).drop.a, 2, 1e-6, 'and takes a little voltage');
+	// New loads behave as resistances.
+	for (const kind of ['motor', 'rheostat', 'coil']) near(circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 6}, {id: 'x', kind, from: 'P', to: 'N', r: 3}]).current.x, 2, 1e-6, kind);
+});
+
+test('circuits: a switch closing or a part added at a frame changes the current from that frame; a ramp is smooth', () => {
+	const parts = [
+		{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12},
+		{id: 'r1', kind: 'resistor', from: 'P', to: 'j', r: 6},
+		{id: 's', kind: 'switch', from: 'j', to: 'N', closed: false},
+		{id: 'm', kind: 'motor', from: 'j', to: 'N', r: 6, present: false},
+	];
+	const run = circ.runCircuit(parts, [{at: 60, set: {s: {closed: true}}}]);
+	assert.equal(circ.circuitAt(run, 59).current.b, 0, 'open: no current');
+	near(circ.circuitAt(run, 60).current.b, 2, 1e-6, 'closed at frame 60: 12 / 6');
+	const added = circ.runCircuit([...parts.slice(0, 2), {id: 'w', kind: 'wire', from: 'j', to: 'k'}, {id: 'm', kind: 'motor', from: 'k', to: 'N', r: 6, present: false}], [{at: 40, set: {m: {present: true}}}]);
+	assert.equal(circ.circuitAt(added, 39).current.m, 0); assert.equal(circ.circuitAt(added, 39).current.b, 0);
+	near(circ.circuitAt(added, 40).current.m, 1, 1e-6, 'the motor joins at frame 40');
+	assert.equal(circ.partsAt(added, 10).find(p => p.id === 'm').present, false);
+	// A rheostat turned from 12 Ω down to 2 Ω over 100 frames.
+	const ramp = circ.runCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12}, {id: 'v', kind: 'rheostat', from: 'P', to: 'N', r: 12}], [{at: 50, set: {v: {r: 2}}, over: 100}]);
+	near(circ.circuitAt(ramp, 50).current.b, 1, 1e-6, 'starts at 1 A');
+	near(circ.circuitAt(ramp, 100).current.b, 12 / 7, 1e-6, 'half-way through the turn: 7 Ω');
+	near(circ.circuitAt(ramp, 150).current.b, 6, 1e-6, 'ends at 6 A');
+	near(circ.circuitAt(ramp, 400).current.b, 6, 1e-6, 'and stays');
+	let last = 0; for (let f = 0; f <= 200; f++) { const i = circ.circuitAt(ramp, f).current.b; assert.ok(i >= last - 1e-12, 'current rises steadily'); assert.ok(i - last < 0.15 || f === 0, 'no jumps'); last = i; }
+	const linear = circ.runCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 10}], []);
+	assert.equal(linear.phases.length, 1);
+	near(circ.chargeMoved(ramp, 'b', 50), 50, 1e-6, 'charge before the ramp');
+});

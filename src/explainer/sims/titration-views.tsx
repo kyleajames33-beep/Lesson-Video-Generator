@@ -6,7 +6,7 @@ import React, {useId, useMemo} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND} from '../kit';
 import {CARD, INK, INK_SOFT, TRACK, TYPE, Tone, ToneName, tone} from '../shared/tokens';
-import {Indicator, Mixture, Pour, Titration, addedAt, conductivityOf, cssColour, equivalenceVolume, flowAt, halfEquivalence, indicatorColour, mixtureAt, titrationCurve} from './titration';
+import {Indicator, Mixture, Pour, Titration, addedAt, conductivityOf, cssColour, equivalenceVolumes, flowAt, halfEquivalences, indicatorColour, mixtureAt, titrationCurve} from './titration';
 
 const clamp01 = (u: number) => Math.min(1, Math.max(0, u));
 const fade = (f: number, at?: number, dur = 12) => (at === undefined ? 1 : clamp01((f - at) / dur));
@@ -86,10 +86,10 @@ export const TitrationGraph: React.FC<{
 	tone?: ToneName | Tone;
 	/** Also show the whole curve faintly from the start. */
 	whole?: boolean;
-	/** Mark the equivalence point once the curve reaches it. */
-	equivalence?: {label?: string; at?: number};
-	/** Mark the half-way point of a weak acid or base, where pH = pKa. */
-	half?: {label?: string; at?: number};
+	/** Mark each equivalence point once the curve reaches it. For a two-step particle, give a label per point as a list. */
+	equivalence?: {label?: string | readonly string[]; at?: number};
+	/** Mark the half-way point of each weak step, where pH = pKa. For a two-step particle, give a label per point as a list. */
+	half?: {label?: string | readonly string[]; at?: number};
 	/** Shade the pH range over which this indicator changes colour (pH graphs only). */
 	indicator?: {indicator: Indicator; at?: number; label?: string};
 	xLabel?: string; yLabel?: string; yMax?: number; opacity?: number;
@@ -104,14 +104,15 @@ export const TitrationGraph: React.FC<{
 	const X = (v: number) => L + (v / to) * pw, Y = (val: number) => T + ph - (Math.min(top, Math.max(0, val)) / top) * ph;
 	const now = value(mixtureAt(titration, Math.min(to, added))), va = Math.min(to, Math.max(0, added));
 	const pathTo = (limit: number) => { let d = ''; for (let i = 0; i < curve.volume.length && curve.volume[i] <= limit; i++) d += `${d ? 'L' : 'M'}${X(curve.volume[i]).toFixed(1)},${Y(curve.value[i]).toFixed(1)} `; return d; };
-	const ve = equivalenceVolume(titration), veValue = value(mixtureAt(titration, ve));
-	const halfPoint = isPh ? halfEquivalence(titration) : null;
+	const eqPoints = equivalenceVolumes(titration).map(v => ({volume: v, value: value(mixtureAt(titration, v))}));
+	const halfPoints = isPh ? halfEquivalences(titration) : [];
+	const labelOf = (given: string | readonly string[] | undefined, i: number, fallback: string) => (typeof given === 'string' ? given : given?.[i] ?? fallback);
 	const xStep = [1, 2, 5, 10, 20, 25, 50, 100].find(s => to / s <= 6) ?? to;
 	const yStep = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, 50, 100, 200, 500].find(s => top / s <= 6) ?? top;
 	const yTicks = isPh ? (ph >= 380 ? [0, 2, 4, 6, 8, 10, 12, 14] : [0, 7, 14]) : Array.from({length: Math.floor(top / yStep + 1e-9) + 1}, (_, i) => +(i * yStep).toFixed(6));
 	const text: React.CSSProperties = {fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: TYPE.label, fontVariantNumeric: 'tabular-nums'};
 	const hand: React.CSSProperties = {fontFamily: FONT_HAND, fontWeight: 700, fontSize: TYPE.handSmall};
-	const eqOn = equivalence && added >= ve ? fade(f, equivalence.at) : 0, halfOn = half && halfPoint && added >= halfPoint.volume ? fade(f, half.at) : 0;
+	const eqOn = (v: number) => (equivalence && added >= v ? fade(f, equivalence.at) : 0), halfOn = (v: number) => (half && added >= v ? fade(f, half.at) : 0);
 	const indOn = indicator && isPh ? fade(f, indicator.at) : 0;
 	const ticks: React.ReactNode[] = [];
 	for (let v = 0; v <= to + 1e-9; v += xStep) ticks.push(<g key={v}><line x1={X(v)} x2={X(v)} y1={T + ph} y2={T + ph + 10} stroke={INK} strokeWidth={3} /><text x={X(v)} y={T + ph + 42} textAnchor="middle" style={text} fill={INK}>{v}</text></g>);
@@ -130,8 +131,8 @@ export const TitrationGraph: React.FC<{
 			) : null}
 			{whole ? <path d={pathTo(to)} fill="none" stroke={INK_SOFT} strokeWidth={3} strokeDasharray="5 9" opacity={0.7} /> : null}
 			<path d={`${pathTo(va)}L${X(va).toFixed(1)},${Y(now).toFixed(1)}`} fill="none" stroke={t.stroke} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" />
-			{halfOn > 0 && halfPoint ? <g opacity={halfOn}><circle cx={X(halfPoint.volume)} cy={Y(halfPoint.pH)} r={9} fill={CARD} stroke={INK} strokeWidth={4} /><text x={X(halfPoint.volume) + 4} y={Y(halfPoint.pH) + 52} textAnchor="middle" style={hand} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{half?.label ?? 'half-way: pH = pKa'}</text></g> : null}
-			{eqOn > 0 ? <g opacity={eqOn}><line x1={X(ve)} x2={X(ve)} y1={T + ph} y2={Y(veValue)} stroke={INK} strokeWidth={3} strokeDasharray="10 9" /><circle cx={X(ve)} cy={Y(veValue)} r={10} fill={CARD} stroke={INK} strokeWidth={4} /><text x={X(ve) + 20} y={Y(veValue) + 12} style={hand} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{equivalence?.label ?? 'equivalence point'}</text></g> : null}
+			{halfPoints.map((hp, i) => { const o = halfOn(hp.volume); return o > 0 ? <g key={`h${i}`} opacity={o}><circle cx={X(hp.volume)} cy={Y(hp.pH)} r={9} fill={CARD} stroke={INK} strokeWidth={4} /><text x={X(hp.volume) + 4} y={Y(hp.pH) + 52} textAnchor="middle" style={hand} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{labelOf(half?.label, i, 'half-way: pH = pKa')}</text></g> : null; })}
+			{eqPoints.map((ep, i) => { const o = eqOn(ep.volume); return o > 0 ? <g key={`e${i}`} opacity={o}><line x1={X(ep.volume)} x2={X(ep.volume)} y1={T + ph} y2={Y(ep.value)} stroke={INK} strokeWidth={3} strokeDasharray="10 9" /><circle cx={X(ep.volume)} cy={Y(ep.value)} r={10} fill={CARD} stroke={INK} strokeWidth={4} /><text x={X(ep.volume) + 20} y={Y(ep.value) + 12} style={hand} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{labelOf(equivalence?.label, i, eqPoints.length > 1 ? `equivalence point ${i + 1}` : 'equivalence point')}</text></g> : null; })}
 			<circle cx={X(va)} cy={Y(now)} r={10} fill={t.stroke} stroke={CARD} strokeWidth={3} />
 			<path d={`M${L},${T} V${T + ph} H${L + pw}`} fill="none" stroke={INK} strokeWidth={4} strokeLinecap="round" strokeLinejoin="round" />
 			{ticks}

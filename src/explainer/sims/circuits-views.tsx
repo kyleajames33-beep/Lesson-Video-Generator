@@ -7,8 +7,29 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY} from '../kit';
 import {CARD, INK, TONES, TYPE, Tone, ToneName, rgba, tone} from '../shared/tokens';
-import {CircuitRun, Part, chargeMoved, circuitAt, partsAt} from './circuits';
+import {CircuitRun, CircuitState, Part, chargeMoved, circuitAt, partsAt} from './circuits';
+import {SeriesGraph, SeriesLine, SeriesMark} from './series-views';
 import {simNum} from './views';
+
+/** Frames a switch lever takes to swing open or shut after its change. */
+export const SWITCH_SWING = 8;
+/**
+ * How closed a switch is drawn at circuit frame `frame`: 0 open, 1 closed, in between while
+ * the lever swings for SWITCH_SWING frames after the frame at which it changed. (The current
+ * itself changes at that frame; the swing is only the drawing.)
+ */
+export const switchClosure = (run: CircuitRun, id: string, frame: number) => {
+	let closed = true, flip = -Infinity, before = true;
+	for (const ph of run.phases) {
+		if (ph.from > frame) break;
+		const part = ph.parts.find(q => q.id === id), now = part?.closed !== false;
+		if (ph.from === 0) { closed = before = now; continue; }
+		if (now !== closed) { before = closed; closed = now; flip = ph.from; }
+	}
+	const u = Math.min(1, Math.max(0, (frame - flip) / SWITCH_SWING)), eased = u * u * (3 - 2 * u);
+	if (!Number.isFinite(flip)) return closed ? 1 : 0;
+	return closed ? (before ? 1 : eased) : (before ? 1 - eased : 0);
+};
 
 export type CircuitClock = {/** Scene frame at which the circuit's own frame count starts. */ at?: number};
 /** Currents, voltages, powers and the parts as they are at the current scene frame. Use one clock for the drawing and the readouts. */
@@ -26,7 +47,7 @@ export type CircuitStage = {x: number; y: number; cell: number};
 export type CircuitLayout = Record<string, readonly (readonly [number, number])[]>;
 export type CircuitLabel = {text: string; tone?: ToneName | Tone; /** Which side of the part: 1 or -1 (default -1: above a part drawn left to right). */ side?: 1 | -1};
 
-const HALF: Record<Part['kind'], number> = {battery: 14, resistor: 54, lamp: 32, switch: 42, ammeter: 34, voltmeter: 34, wire: 0};
+const HALF: Record<Part['kind'], number> = {battery: 14, resistor: 54, lamp: 32, switch: 42, ammeter: 34, voltmeter: 34, wire: 0, motor: 34, rheostat: 54, coil: 58};
 type Route = {pts: [number, number][]; cum: number[]; length: number; mid: number; ux: number; uy: number; mx: number; my: number};
 const routeOf = (corners: readonly (readonly [number, number])[], s: CircuitStage): Route => {
 	const pts = corners.map(([gx, gy]) => [s.x + gx * s.cell, s.y + gy * s.cell] as [number, number]);
@@ -66,7 +87,7 @@ export const CircuitView: React.FC<{
 	run: CircuitRun; layout: CircuitLayout; stage: CircuitStage; clock?: CircuitClock;
 	carriers?: 'conventional' | 'electrons' | 'none';
 	speed?: number; gap?: number; chargeTone?: ToneName | Tone;
-	/** Names, values or readings written beside parts. Meters show their own reading unless given a label here. */
+	/** Names, values or readings written beside parts (wires too). Meters show their own reading unless given a label here. */
 	labels?: Record<string, CircuitLabel>;
 	/** Colour each wire by its potential, from cool at 0 V to warm at `max` volts. */
 	potential?: {max: number};
@@ -85,6 +106,7 @@ export const CircuitView: React.FC<{
 	for (const p of parts) {
 		const corners = layout[p.id];
 		if (!corners || corners.length < 2) throw new Error(`CircuitView: the layout has no route for "${p.id}"`);
+		if (p.present === false) continue;
 		const r = routeOf(corners, stage), half = HALF[p.kind];
 		const a = slice(r, 0, r.mid - half), b = slice(r, r.mid + half, r.length);
 		if (p.kind === 'wire') wires.push(<polyline key={p.id} points={slice(r, 0, r.length)} fill="none" stroke={wireColour(p.from)} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />);
@@ -105,8 +127,29 @@ export const CircuitView: React.FC<{
 		const given = labels[p.id], side = given?.side ?? -1;
 		const letter = (s: string) => <text x={r.mx} y={r.my + 11} textAnchor="middle" style={{...text, fontSize: TYPE.support}} fill={INK}>{s}</text>;
 		let reach = 34;
-		if (p.kind === 'resistor') {
-			symbols.push(<polygon key={p.id} points={[P(-52, -19), P(52, -19), P(52, 19), P(-52, 19)].map(q => q.join(',')).join(' ')} fill={CARD} stroke={INK} strokeWidth={5} strokeLinejoin="round" />);
+		if (p.kind === 'resistor' || p.kind === 'rheostat') {
+			const box = <polygon key={p.id} points={[P(-52, -19), P(52, -19), P(52, 19), P(-52, 19)].map(q => q.join(',')).join(' ')} fill={CARD} stroke={INK} strokeWidth={5} strokeLinejoin="round" />;
+			if (p.kind === 'resistor') symbols.push(box);
+			else {
+				// Variable resistor: the rectangle with an arrow drawn diagonally through it.
+				const tip = P(46, side * 40), back = P(-46, -side * 40), ang = Math.atan2(tip[1] - back[1], tip[0] - back[0]);
+				const wing = (da: number) => [tip[0] - 22 * Math.cos(ang + da), tip[1] - 22 * Math.sin(ang + da)].join(',');
+				symbols.push(<g key={p.id}>{box}<line x1={back[0]} y1={back[1]} x2={tip[0]} y2={tip[1]} stroke={INK} strokeWidth={5} strokeLinecap="round" /><polygon points={`${tip.join(',')} ${wing(0.42)} ${wing(-0.42)}`} fill={INK} stroke={INK} strokeWidth={2} strokeLinejoin="round" /></g>);
+				reach = 50;
+			}
+		} else if (p.kind === 'motor') {
+			symbols.push(<g key={p.id}><circle cx={r.mx} cy={r.my} r={32} fill={CARD} stroke={INK} strokeWidth={5} />{letter('M')}</g>);
+			reach = 46;
+		} else if (p.kind === 'coil') {
+			// Coil: four loops along the wire, on the side away from its label.
+			let d = '';
+			for (let k = 0; k < 4; k++) for (let i = 0; i <= 12; i++) {
+				const th = Math.PI - (Math.PI * i) / 12, [qx, qy] = P(-43.5 + 29 * k + 14.5 * Math.cos(th), -side * 22 * Math.sin(th));
+				d += `${d ? 'L' : 'M'}${qx.toFixed(1)},${qy.toFixed(1)} `;
+			}
+			const [s0x, s0y] = P(-58, 0), [e0x, e0y] = P(58, 0);
+			symbols.push(<path key={p.id} d={`M${s0x},${s0y} ${d.replace(/^M/, 'L')} L${e0x},${e0y}`} fill="none" stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />);
+			reach = 30;
 		} else if (p.kind === 'lamp') {
 			const bright = Math.min(1, Math.max(0, state.power[p.id] / full)), d = 30 * Math.SQRT1_2;
 			symbols.push(<g key={p.id}>{bright > 0.01 ? <circle cx={r.mx} cy={r.my} r={34 + 30 * bright} fill={rgba(TONES.amber.stroke, 0.3 * bright)} /> : null}<circle cx={r.mx} cy={r.my} r={30} fill={CARD} stroke={INK} strokeWidth={5} /><circle cx={r.mx} cy={r.my} r={27} fill={rgba(TONES.amber.stroke, 0.85 * bright)} />{line(-d, -d, d, d, 4)}{line(-d, d, d, -d, 4)}</g>);
@@ -116,15 +159,23 @@ export const CircuitView: React.FC<{
 			symbols.push(<g key={p.id}>{line(-9, -18, -9, 18, 10)}{line(9, -36, 9, 36, 5)}<text x={plus[0]} y={plus[1] + 10} textAnchor="middle" style={text} fill={INK}>+</text><text x={minus[0]} y={minus[1] + 10} textAnchor="middle" style={text} fill={INK}>−</text></g>);
 			reach = 48;
 		} else if (p.kind === 'switch') {
-			const open = p.closed === false, e0 = P(-36, 0), e1 = P(36, 0);
-			symbols.push(<g key={p.id}>{open ? line(-36, 0, 28, -side * 34) : line(-36, 0, 36, 0)}<circle cx={e0[0]} cy={e0[1]} r={8} fill={CARD} stroke={INK} strokeWidth={4} /><circle cx={e1[0]} cy={e1[1]} r={8} fill={CARD} stroke={INK} strokeWidth={4} /></g>);
-			reach = 30;
+			// The lever is hinged at the first terminal. Open, it is angled up away from the second
+			// terminal; closed, it lies flat across both. It swings between the two over SWITCH_SWING frames.
+			const shut = switchClosure(run, p.id, frame), angle = (1 - shut) * 0.56;
+			const e0 = P(-36, 0), e1 = P(36, 0), tip = P(-36 + 80 * Math.cos(angle), -side * 80 * Math.sin(angle));
+			symbols.push(<g key={p.id}>
+				<line x1={e0[0]} y1={e0[1]} x2={tip[0]} y2={tip[1]} stroke={INK} strokeWidth={6} strokeLinecap="round" />
+				<circle cx={e0[0]} cy={e0[1]} r={9} fill={CARD} stroke={INK} strokeWidth={4} />
+				<circle cx={e1[0]} cy={e1[1]} r={9} fill={CARD} stroke={INK} strokeWidth={4} />
+			</g>);
+			reach = 34 + 30 * (1 - shut);
 		} else if (p.kind === 'ammeter' || p.kind === 'voltmeter') {
 			symbols.push(<g key={p.id}><circle cx={r.mx} cy={r.my} r={32} fill={CARD} stroke={INK} strokeWidth={5} />{letter(p.kind === 'ammeter' ? 'A' : 'V')}</g>);
 			reach = 46;
 		}
 		const label: CircuitLabel | undefined = given ?? (p.kind === 'ammeter' ? {text: `${simNum(Math.abs(state.current[p.id]), 2)} A`} : p.kind === 'voltmeter' ? {text: `${simNum(Math.abs(state.drop[p.id]), 1)} V`} : undefined);
-		if (label && p.kind !== 'wire') {
+		if (p.kind === 'wire') reach = 8;
+		if (label) {
 			const [lx, ly] = P(0, side * (reach + 22)), nx = -r.uy * side, sideways = Math.abs(nx) > 0.5;
 			symbols.push(<text key={`${p.id}-label`} x={lx + (sideways ? Math.sign(nx) * -10 : 0)} y={ly + 11} textAnchor={sideways ? (nx > 0 ? 'start' : 'end') : 'middle'} style={text} fill={label.tone ? tone(label.tone).ink : INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{label.text}</text>);
 		}
@@ -137,4 +188,48 @@ export const CircuitView: React.FC<{
 			{symbols}
 		</svg>
 	);
+};
+
+export type CircuitTrace = {
+	/** The part to follow. */
+	id: string;
+	/** What to plot (default 'current'). `drop` is the voltage across the part; `terminal` a battery's terminal voltage. */
+	quantity?: 'current' | 'drop' | 'power' | 'terminal';
+	label?: string; tone?: ToneName | Tone;
+};
+const traceValue = (state: CircuitState, t: CircuitTrace) => {
+	const q = t.quantity ?? 'current';
+	const v = q === 'current' ? state.current[t.id] : q === 'drop' ? state.drop[t.id] : q === 'power' ? state.power[t.id] : state.terminal[t.id];
+	return Math.abs(v ?? 0);
+};
+/**
+ * A strip chart of current (or voltage or power) against time for chosen parts, drawing
+ * itself as the circuit's clock runs. A switch closing shows as a sudden step, a rheostat
+ * being turned as a smooth slope. `span` is the stretch of circuit frames the time axis
+ * covers; the axis is labelled in seconds at `fps`.
+ */
+export const CircuitTimeGraph: React.FC<{
+	run: CircuitRun; traces: readonly CircuitTrace[]; clock?: CircuitClock;
+	x: number; y: number; w: number; h: number;
+	span: number; fps?: number;
+	yMax?: number; xLabel?: string; yLabel?: string;
+	/** Dashed guides at chosen values, such as the current before a change. */
+	marks?: readonly SeriesMark[];
+	format?: (v: number) => string;
+	opacity?: number;
+}> = ({run, traces, clock, x, y, w, h, span, fps = 30, yMax, xLabel = 'time (s)', yLabel = 'current (A)', marks, format, opacity}) => {
+	const frame = Math.max(0, useCurrentFrame() - (clock?.at ?? 0));
+	const step = Math.max(1, Math.floor(span / 300)), samples = new Set<number>();
+	for (let f = 0; f <= span; f += step) samples.add(f);
+	samples.add(span);
+	// Changes are sudden: sample just before each one so the step is drawn upright.
+	for (const ph of run.phases) if (ph.from > 0 && ph.from <= span) { samples.add(ph.from); samples.add(ph.from - 1e-3); }
+	const frames = [...samples].sort((a, b) => a - b);
+	const lines: SeriesLine[] = traces.map((tr, i) => ({
+		t: Float64Array.from(frames, f => f / fps),
+		v: Float64Array.from(frames, f => traceValue(circuitAt(run, Math.floor(f + 1e-9)), tr)),
+		tone: tr.tone ?? (['amber', 'blue', 'green', 'violet'] as const)[i % 4], label: tr.label,
+	}));
+	const top = yMax ?? Math.max(1e-9, ...lines.flatMap(l => Array.from(l.v))) * 1.2;
+	return <SeriesGraph lines={lines} x={x} y={y} w={w} h={h} xRange={[0, span / fps]} yRange={[0, top]} now={Math.min(span, frame) / fps} marks={marks} xLabel={xLabel} yLabel={yLabel} format={format} opacity={opacity} />;
 };
