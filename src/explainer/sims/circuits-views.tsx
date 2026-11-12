@@ -7,7 +7,7 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY} from '../kit';
 import {CARD, INK, TONES, TYPE, Tone, ToneName, rgba, tone} from '../shared/tokens';
-import {CircuitRun, CircuitState, Part, chargeMoved, circuitAt, partsAt} from './circuits';
+import {CircuitRun, CircuitState, Part, chargeMoved, circuitAt, partsAt, secondary} from './circuits';
 import {SeriesGraph, SeriesLine, SeriesMark} from './series-views';
 import {simNum} from './views';
 
@@ -43,11 +43,13 @@ export type CircuitStage = {x: number; y: number; cell: number};
 /**
  * The route of each part on the grid, as corner points from its `from` end to its `to` end.
  * The symbol is drawn in the middle of the longest straight stretch; the rest is wire.
+ * A transformer called "t" needs two routes: "t" for its primary winding and "t:2" for its
+ * secondary (from `from2` to `to2`). Draw them as two parallel stretches side by side.
  */
 export type CircuitLayout = Record<string, readonly (readonly [number, number])[]>;
 export type CircuitLabel = {text: string; tone?: ToneName | Tone; /** Which side of the part: 1 or -1 (default -1: above a part drawn left to right). */ side?: 1 | -1};
 
-const HALF: Record<Part['kind'], number> = {battery: 14, resistor: 54, lamp: 32, switch: 42, ammeter: 34, voltmeter: 34, wire: 0, motor: 34, rheostat: 54, coil: 58};
+const HALF: Record<Part['kind'], number> = {battery: 14, resistor: 54, lamp: 32, switch: 42, ammeter: 34, voltmeter: 34, wire: 0, motor: 34, rheostat: 54, coil: 58, ac: 34, transformer: 60};
 type Route = {pts: [number, number][]; cum: number[]; length: number; mid: number; ux: number; uy: number; mx: number; my: number};
 const routeOf = (corners: readonly (readonly [number, number])[], s: CircuitStage): Route => {
 	const pts = corners.map(([gx, gy]) => [s.x + gx * s.cell, s.y + gy * s.cell] as [number, number]);
@@ -121,10 +123,49 @@ export const CircuitView: React.FC<{
 				dots.push(<circle key={`${p.id}-${k}`} cx={px} cy={py} r={7.5} fill={ct.stroke} stroke={CARD} strokeWidth={2} />);
 			}
 		}
+		// A transformer's labels always sit on the outer side of each winding, away from the core.
+		let outer: 1 | -1 | undefined;
+		if (p.kind === 'transformer') {
+			const corners2 = layout[secondary(p.id)];
+			if (!corners2 || corners2.length < 2) throw new Error(`CircuitView: the layout has no route for "${secondary(p.id)}" (the transformer's secondary winding)`);
+			const r2 = routeOf(corners2, stage), a2 = slice(r2, 0, r2.mid - half), b2 = slice(r2, r2.mid + half, r2.length);
+			wires.push(<g key={`${p.id}-2`} fill="none" strokeWidth={5} strokeLinecap="round" strokeLinejoin="round">{a2 ? <polyline points={a2} stroke={wireColour(p.from2!)} /> : null}{b2 ? <polyline points={b2} stroke={wireColour(p.to2!)} /> : null}</g>);
+			if (carriers !== 'none') {
+				const n2 = Math.max(1, Math.round(r2.length / gap)), g2 = r2.length / n2, shift2 = chargeMoved(run, secondary(p.id), frame) * speed * (g2 / gap) * (carriers === 'electrons' ? -1 : 1);
+				for (let k = 0; k < n2; k++) {
+					const s = (((k * g2 + shift2) % r2.length) + r2.length) % r2.length;
+					if (Math.abs(s - r2.mid) < half + 8) continue;
+					const [px, py] = pointAt(r2, s);
+					dots.push(<circle key={`${p.id}-2-${k}`} cx={px} cy={py} r={7.5} fill={ct.stroke} stroke={CARD} strokeWidth={2} />);
+				}
+			}
+			// Each winding is a row of loops bulging towards the other; two lines between them stand for the iron core.
+			const winding = (r0: Route, tx: number, ty: number, loops: number) => {
+				const towards = Math.sign(-r0.uy * (tx - r0.mx) + r0.ux * (ty - r0.my)) || 1, w = 116 / loops;
+				let d = '';
+				for (let k = 0; k < loops; k++) for (let i = 0; i <= 12; i++) {
+					const th = Math.PI - (Math.PI * i) / 12, along = -58 + w * (k + 0.5) + (w / 2) * Math.cos(th), across = towards * 20 * Math.sin(th);
+					d += `${d ? 'L' : 'M'}${(r0.mx + r0.ux * along - r0.uy * across).toFixed(1)},${(r0.my + r0.uy * along + r0.ux * across).toFixed(1)} `;
+				}
+				return <path d={d} fill="none" stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" />;
+			};
+			const [n1, n2t] = p.turns ?? [1, 1], many = n1 >= n2t ? [5, 3] : [3, 5], even = n1 === n2t ? [4, 4] : many;
+			const cx = (r.mx + r2.mx) / 2, cy = (r.my + r2.my) / 2, ox = (r2.mx - r.mx) * 0.07, oy = (r2.my - r.my) * 0.07;
+			outer = (-r.uy * (r2.mx - r.mx) + r.ux * (r2.my - r.my)) > 0 ? -1 : 1;
+			const second = labels[secondary(p.id)];
+			if (second) {
+				const away = (-r2.uy * (r.mx - r2.mx) + r2.ux * (r.my - r2.my)) > 0 ? -1 : 1, lx = r2.mx - r2.uy * away * 52, ly = r2.my + r2.ux * away * 52, nx = -r2.uy * away, sideways = Math.abs(nx) > 0.5;
+				symbols.push(<text key={`${p.id}-label2`} x={lx + (sideways ? Math.sign(nx) * -10 : 0)} y={ly + 11} textAnchor={sideways ? (nx > 0 ? 'start' : 'end') : 'middle'} style={text} fill={second.tone ? tone(second.tone).ink : INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{second.text}</text>);
+			}
+			symbols.push(<g key={p.id}>
+				{winding(r, r2.mx, r2.my, even[0])}{winding(r2, r.mx, r.my, even[1])}
+				{[-1, 1].map(sgn => <line key={sgn} x1={cx + sgn * ox - r.ux * 64} y1={cy + sgn * oy - r.uy * 64} x2={cx + sgn * ox + r.ux * 64} y2={cy + sgn * oy + r.uy * 64} stroke={INK} strokeWidth={5} strokeLinecap="round" />)}
+			</g>);
+		}
 		// Symbol, drawn in its own axes: `along` runs from the `from` end to the `to` end, `across` is at right angles.
 		const P = (along: number, across: number): [number, number] => [r.mx + r.ux * along - r.uy * across, r.my + r.uy * along + r.ux * across];
 		const line = (x0: number, y0: number, x1: number, y1: number, width = 5, key?: string) => { const [p0, p1] = [P(x0, y0), P(x1, y1)]; return <line key={key} x1={p0[0]} y1={p0[1]} x2={p1[0]} y2={p1[1]} stroke={INK} strokeWidth={width} strokeLinecap="round" />; };
-		const given = labels[p.id], side = given?.side ?? -1;
+		const given = labels[p.id], side = outer ?? given?.side ?? -1;
 		const letter = (s: string) => <text x={r.mx} y={r.my + 11} textAnchor="middle" style={{...text, fontSize: TYPE.support}} fill={INK}>{s}</text>;
 		let reach = 34;
 		if (p.kind === 'resistor' || p.kind === 'rheostat') {
@@ -154,6 +195,12 @@ export const CircuitView: React.FC<{
 			const bright = Math.min(1, Math.max(0, state.power[p.id] / full)), d = 30 * Math.SQRT1_2;
 			symbols.push(<g key={p.id}>{bright > 0.01 ? <circle cx={r.mx} cy={r.my} r={34 + 30 * bright} fill={rgba(TONES.amber.stroke, 0.3 * bright)} /> : null}<circle cx={r.mx} cy={r.my} r={30} fill={CARD} stroke={INK} strokeWidth={5} /><circle cx={r.mx} cy={r.my} r={27} fill={rgba(TONES.amber.stroke, 0.85 * bright)} />{line(-d, -d, d, d, 4)}{line(-d, d, d, -d, 4)}</g>);
 			reach = 52;
+		} else if (p.kind === 'ac') {
+			// Alternating source: a circle with one wave inside it (always level, whichever way the wire runs).
+			let d = '';
+			for (let i = 0; i <= 24; i++) { const qx = r.mx - 20 + (40 * i) / 24, qy = r.my - 11 * Math.sin((2 * Math.PI * i) / 24); d += `${i ? 'L' : 'M'}${qx.toFixed(1)},${qy.toFixed(1)} `; }
+			symbols.push(<g key={p.id}><circle cx={r.mx} cy={r.my} r={32} fill={CARD} stroke={INK} strokeWidth={5} /><path d={d} fill="none" stroke={INK} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round" /></g>);
+			reach = 46;
 		} else if (p.kind === 'battery') {
 			const plus = P(34, -side * 34), minus = P(-34, -side * 34);
 			symbols.push(<g key={p.id}>{line(-9, -18, -9, 18, 10)}{line(9, -36, 9, 36, 5)}<text x={plus[0]} y={plus[1] + 10} textAnchor="middle" style={text} fill={INK}>+</text><text x={minus[0]} y={minus[1] + 10} textAnchor="middle" style={text} fill={INK}>−</text></g>);
@@ -175,6 +222,7 @@ export const CircuitView: React.FC<{
 		}
 		const label: CircuitLabel | undefined = given ?? (p.kind === 'ammeter' ? {text: `${simNum(Math.abs(state.current[p.id]), 2)} A`} : p.kind === 'voltmeter' ? {text: `${simNum(Math.abs(state.drop[p.id]), 1)} V`} : undefined);
 		if (p.kind === 'wire') reach = 8;
+		if (p.kind === 'transformer') reach = 30;
 		if (label) {
 			const [lx, ly] = P(0, side * (reach + 22)), nx = -r.uy * side, sideways = Math.abs(nx) > 0.5;
 			symbols.push(<text key={`${p.id}-label`} x={lx + (sideways ? Math.sign(nx) * -10 : 0)} y={ly + 11} textAnchor={sideways ? (nx > 0 ? 'start' : 'end') : 'middle'} style={text} fill={label.tone ? tone(label.tone).ink : INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{label.text}</text>);
@@ -194,13 +242,15 @@ export type CircuitTrace = {
 	/** The part to follow. */
 	id: string;
 	/** What to plot (default 'current'). `drop` is the voltage across the part; `terminal` a battery's terminal voltage. */
-	quantity?: 'current' | 'drop' | 'power' | 'terminal';
+	quantity?: 'current' | 'drop' | 'power' | 'terminal' | 'speed';
 	label?: string; tone?: ToneName | Tone;
+	/** Plot the value with its sign (an alternating current swings above and below zero). Default: its size. */
+	signed?: boolean;
 };
 const traceValue = (state: CircuitState, t: CircuitTrace) => {
 	const q = t.quantity ?? 'current';
-	const v = q === 'current' ? state.current[t.id] : q === 'drop' ? state.drop[t.id] : q === 'power' ? state.power[t.id] : state.terminal[t.id];
-	return Math.abs(v ?? 0);
+	const v = q === 'current' ? state.current[t.id] : q === 'drop' ? state.drop[t.id] : q === 'power' ? state.power[t.id] : q === 'speed' ? state.speed?.[t.id] : state.terminal[t.id];
+	return t.signed ? v ?? 0 : Math.abs(v ?? 0);
 };
 /**
  * A strip chart of current (or voltage or power) against time for chosen parts, drawing
@@ -222,14 +272,14 @@ export const CircuitTimeGraph: React.FC<{
 	const step = Math.max(1, Math.floor(span / 300)), samples = new Set<number>();
 	for (let f = 0; f <= span; f += step) samples.add(f);
 	samples.add(span);
-	// Changes are sudden: sample just before each one so the step is drawn upright.
-	for (const ph of run.phases) if (ph.from > 0 && ph.from <= span) { samples.add(ph.from); samples.add(ph.from - 1e-3); }
+	// Changes are sudden: sample just before each one so the step is drawn upright. (A circuit solved every frame has no steps to mark.)
+	if (run.phases.length < span) for (const ph of run.phases) if (ph.from > 0 && ph.from <= span) { samples.add(ph.from); samples.add(ph.from - 1e-3); }
 	const frames = [...samples].sort((a, b) => a - b);
 	const lines: SeriesLine[] = traces.map((tr, i) => ({
 		t: Float64Array.from(frames, f => f / fps),
 		v: Float64Array.from(frames, f => traceValue(circuitAt(run, Math.floor(f + 1e-9)), tr)),
 		tone: tr.tone ?? (['amber', 'blue', 'green', 'violet'] as const)[i % 4], label: tr.label,
 	}));
-	const top = yMax ?? Math.max(1e-9, ...lines.flatMap(l => Array.from(l.v))) * 1.2;
-	return <SeriesGraph lines={lines} x={x} y={y} w={w} h={h} xRange={[0, span / fps]} yRange={[0, top]} now={Math.min(span, frame) / fps} marks={marks} xLabel={xLabel} yLabel={yLabel} format={format} opacity={opacity} />;
+	const top = yMax ?? Math.max(1e-9, ...lines.flatMap(l => Array.from(l.v, Math.abs))) * 1.2, low = traces.some(tr => tr.signed) ? -top : 0;
+	return <SeriesGraph lines={lines} x={x} y={y} w={w} h={h} xRange={[0, span / fps]} yRange={[low, top]} now={Math.min(span, frame) / fps} marks={marks} xLabel={xLabel} yLabel={yLabel} format={format} opacity={opacity} />;
 };

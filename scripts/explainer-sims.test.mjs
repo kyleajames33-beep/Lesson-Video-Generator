@@ -741,3 +741,80 @@ test('induction: a magnet passing through a coil gives one pulse each way, and L
 	const fast = ind.runInduction({source: {kind: 'magnet', moment: 1, radius: 0.05, position: t => -0.3 + 0.6 * t}, turns: 200, duration: 1, steps: 800});
 	rel(fast.peakEmf, 2 * run.peakEmf, 1e-3, 'double the speed, double the emf');
 });
+
+// ---------------------------------------------- alternating current, transformers, motors
+test('circuits: an alternating source drives a sine current; r.m.s. is peak / root 2 and average power is I_rms squared R', () => {
+	const parts = [{id: 's', kind: 'ac', from: 'N', to: 'P', peak: 10, frequency: 0.5}, {id: 'r', kind: 'resistor', from: 'P', to: 'N', r: 5}];
+	const run = circ.runCircuit(parts, [], {frames: 240, fps: 30});
+	near(circ.circuitAt(run, 0).current.r, 0, 1e-9, 'starts at zero');
+	near(circ.circuitAt(run, 15).current.r, 2, 1e-6, 'quarter of a cycle: peak 10 V / 5 ohms');
+	near(circ.circuitAt(run, 30).current.r, 0, 1e-6, 'half a cycle: zero again');
+	near(circ.circuitAt(run, 45).current.r, -2, 1e-6, 'three quarters: the other way');
+	const ac = circ.solveAC(parts);
+	near(ac.rms.current.r, 2 / Math.SQRT2, 1e-9, 'r.m.s. current'); near(ac.rms.drop.r, 10 / Math.SQRT2, 1e-6, 'r.m.s. voltage');
+	near(ac.power.r, 10, 1e-6, 'average power = 1.414^2 x 5 = 10 W');
+	let sum = 0; for (let f = 0; f < 60; f++) sum += circ.circuitAt(run, f).power.r;
+	near(sum / 60, 10, 1e-6, 'the average of the instantaneous power over a cycle agrees');
+	near(circ.rmsOf(325), 229.8, 0.1, '325 V peak is about 230 V r.m.s.'); near(circ.peakOf(circ.rmsOf(7)), 7, 1e-12);
+	assert.ok(circ.chargeMoved(run, 'r', 30) > 30, 'charge flows one way for half a cycle');
+	assert.ok(Math.abs(circ.chargeMoved(run, 'r', 60)) < 0.05 * circ.chargeMoved(run, 'r', 30), 'over a whole cycle the charges end where they began');
+});
+
+test('circuits: an ideal transformer steps voltage by the turns ratio and conserves power', () => {
+	const parts = [
+		{id: 's', kind: 'ac', from: 'N', to: 'P', peak: 240, frequency: 0.5},
+		{id: 't', kind: 'transformer', from: 'P', to: 'N', from2: 'a', to2: 'b', turns: [1200, 60]},
+		{id: 'load', kind: 'resistor', from: 'a', to: 'b', r: 6},
+	];
+	const ac = circ.solveAC(parts), k = circ.secondary('t');
+	near(Math.abs(ac.peak.drop[k]), 12, 1e-6, 'secondary voltage = 240 x 60 / 1200');
+	near(Math.abs(ac.peak.current.load), 2, 1e-6, 'load current = 12 / 6');
+	near(Math.abs(ac.peak.current.t), 0.1, 1e-6, 'primary current = 2 x 60 / 1200');
+	near(Math.abs(ac.peak.drop.t * ac.peak.current.t), Math.abs(ac.peak.drop[k] * ac.peak.current[k]), 1e-6, 'power in = power out');
+	near(ac.power.load, (12 / Math.SQRT2) ** 2 / 6, 1e-6, 'average power in the load');
+	const ideal = circ.idealTransformer({primaryVoltage: 240, turns: [1200, 60], load: 6});
+	near(ideal.secondaryVoltage, 12, 1e-12); near(ideal.primaryCurrent, 0.1, 1e-12); near(ideal.powerIn, ideal.powerOut, 1e-12); assert.equal(ideal.kind, 'step-down');
+	// The load decides the current: open the secondary and the primary draws nothing.
+	const open = circ.solveAC(parts.filter(p => p.id !== 'load'));
+	near(open.peak.current.t, 0, 1e-6, 'no load, no primary current'); near(Math.abs(open.peak.drop[k]), 12, 1e-6, 'but the secondary voltage is still there');
+	// A battery gives no output: a transformer needs a changing current.
+	const dc = circ.solveMixed([{id: 's', kind: 'battery', from: 'N', to: 'P', emf: 12, r: 1}, parts[1], parts[2]]);
+	near(dc.current.load, 0, 1e-9, 'steady current in the primary: nothing in the secondary');
+	const run = circ.runCircuit(parts, [], {frames: 60});
+	near(Math.abs(circ.circuitAt(run, 15).current.load), 2, 1e-6, 'in a run, at the peak instant');
+});
+
+test('circuits: stepping the voltage up for the line cuts the power wasted in it', () => {
+	const loss = circ.lineLoss(500e6, 250e3, 2);
+	near(loss.current, 2000, 1e-9); near(loss.loss, 8e6, 1e-3); near(loss.fraction, 0.016, 1e-12);
+	near(circ.lineLoss(500e6, 500e3, 2).loss, 2e6, 1e-3, 'double the voltage, a quarter of the loss');
+	const direct = circ.solveAC([{id: 's', kind: 'ac', from: 'N', to: 'P', peak: 100}, {id: 'line', kind: 'resistor', from: 'P', to: 'q', r: 1}, {id: 'load', kind: 'resistor', from: 'q', to: 'N', r: 1}]);
+	const stepped = circ.solveAC([
+		{id: 's', kind: 'ac', from: 'N', to: 'P', peak: 100},
+		{id: 'up', kind: 'transformer', from: 'P', to: 'N', from2: 'h1', to2: 'h0', turns: [1, 10]},
+		{id: 'line', kind: 'resistor', from: 'h1', to: 'h2', r: 1},
+		{id: 'down', kind: 'transformer', from: 'h2', to: 'h0', from2: 'l1', to2: 'l0', turns: [10, 1]},
+		{id: 'load', kind: 'resistor', from: 'l1', to: 'l0', r: 1},
+	]);
+	near(Math.abs(stepped.peak.current.line), 1000 / 101, 1e-6, 'line current: 1000 V across the line and the load seen as 100 ohms');
+	near(Math.abs(stepped.peak.current.load), 10000 / 101, 1e-5, 'ten times that in the load');
+	assert.ok(stepped.power.line < direct.power.line / 20, 'far less heat in the same line');
+	assert.ok(stepped.power.load > 3 * direct.power.load, 'and far more power delivered');
+});
+
+test('circuits: a motor\'s back emf cuts its current as it speeds up, and V I = I^2 R + back emf x I', () => {
+	const parts = [{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12}, {id: 'm', kind: 'motor', from: 'P', to: 'N', r: 2, k: 0.1, inertia: 0.002, load: 0.1}];
+	const run = circ.runCircuit(parts, [{at: 200, set: {m: {load: 0.3}}}, {at: 400, set: {m: {jammed: true}}}], {frames: 500});
+	const start = circ.circuitAt(run, 0), steady = circ.circuitAt(run, 190);
+	near(start.current.m, 6, 1e-6, 'at switch-on: no spin, no back emf, V / R');
+	near(steady.current.m, 1, 1e-3, 'at speed: (12 - 10) / 2'); near(steady.speed.m, 100, 0.1, 'speed 100 rad/s, so a back emf of 10 V');
+	near(12 * steady.current.m, steady.power.m + steady.mech.m, 1e-6, 'power supplied = heat + mechanical power');
+	const expected = circ.motorSteady({voltage: 12, r: 2, k: 0.1, load: 0.1});
+	near(expected.current, 1, 1e-12); near(expected.speed, 100, 1e-9); near(expected.stall, 6, 1e-12);
+	const loaded = circ.circuitAt(run, 390);
+	near(loaded.current.m, 3, 1e-3, 'heavier load: slower, less back emf, more current'); near(loaded.speed.m, 60, 0.1);
+	near(circ.circuitAt(run, 420).current.m, 6, 1e-6, 'jammed: back to V / R');
+	let last = 7; for (let f = 0; f <= 150; f++) { const i = circ.circuitAt(run, f).current.m; assert.ok(i <= last + 1e-9, 'the current falls steadily as it spins up'); last = i; }
+	// A motor given no constant is still its resistance alone, as before.
+	near(circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12}, {id: 'm', kind: 'motor', from: 'P', to: 'N', r: 2}]).current.m, 6, 1e-6);
+});

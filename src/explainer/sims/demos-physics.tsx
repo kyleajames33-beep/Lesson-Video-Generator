@@ -10,6 +10,8 @@ import {FieldStage, MagneticFieldView} from './magnetic-field-views';
 import {inductionAt, runInduction} from './induction';
 import {FluxEmfStrips, MagnetCoilView, MeterNeedle, RotatingCoilView} from './induction-views';
 import {useSeriesTime} from './series-views';
+import {Part, runCircuit, secondary, solveAC} from './circuits';
+import {CircuitLayout, CircuitTimeGraph, CircuitView, useCircuit} from './circuits-views';
 import {SimReadout} from './views';
 
 const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };
@@ -73,7 +75,67 @@ export const InductionDemo: React.FC = () => {
 	);
 };
 
+// 3. Alternating current, a transformer, and a motor's back emf --------------------
+const acParts: Part[] = [
+	{id: 's', kind: 'ac', from: 'n', to: 'p', peak: 24, frequency: 0.5},
+	{id: 'w1', kind: 'wire', from: 'p', to: 'a'},
+	{id: 't', kind: 'transformer', from: 'a', to: 'b', from2: 'c', to2: 'd', turns: [20, 5]},
+	{id: 'w2', kind: 'wire', from: 'b', to: 'n'},
+	{id: 'w3', kind: 'wire', from: 'c', to: 'e'},
+	{id: 'l', kind: 'lamp', from: 'e', to: 'f', r: 3},
+	{id: 'w4', kind: 'wire', from: 'f', to: 'd'},
+];
+const acLayout: CircuitLayout = {
+	s: [[0, 4], [0, 0]], w1: [[0, 0], [3, 0]], t: [[3, 0], [3, 4]], w2: [[3, 4], [0, 4]],
+	[secondary('t')]: [[4.4, 0], [4.4, 4]], w3: [[4.4, 0], [7.4, 0]], l: [[7.4, 0], [7.4, 4]], w4: [[7.4, 4], [4.4, 4]],
+};
+const acRun = lazy(() => runCircuit(acParts, [], {frames: 300}));
+const acValues = lazy(() => solveAC(acParts));
+export const ACDemo: React.FC = () => {
+	const run = acRun(), ac = acValues();
+	return (
+		<DemoPage title="Alternating current through a transformer">
+			<CircuitView run={run} layout={acLayout} stage={{x: 230, y: 380, cell: 95}} speed={9}
+				labels={{s: {text: 'supply', side: -1}, t: {text: '20 turns'}, [secondary('t')]: {text: '5 turns'}, l: {text: 'lamp', side: -1}}} />
+			<CircuitTimeGraph run={run} span={300} x={1000} y={160} w={880} h={470} yLabel="current (A)"
+				traces={[{id: 'l', label: 'lamp', signed: true, tone: 'amber'}, {id: 't', label: 'primary', signed: true, tone: 'blue'}]} />
+			<SimReadout x={1040} y={660} w={800} title="From the same circuit" rows={[
+				{label: 'supply, peak', value: 24, digits: 0, unit: 'V'},
+				{label: 'secondary, peak', value: Math.abs(ac.peak.drop[secondary('t')]), digits: 1, unit: 'V', tone: 'amber'},
+				{label: 'secondary, r.m.s.', value: ac.rms.drop[secondary('t')], digits: 2, unit: 'V', tone: 'amber'},
+				{label: 'lamp, average power', value: ac.power.l, digits: 1, unit: 'W'},
+			]} />
+		</DemoPage>
+	);
+};
+
+const motorParts: Part[] = [
+	{id: 'b', kind: 'battery', from: 'n', to: 'p', emf: 12},
+	{id: 'sw', kind: 'switch', from: 'p', to: 'a', closed: false},
+	{id: 'am', kind: 'ammeter', from: 'a', to: 'c'},
+	{id: 'm', kind: 'motor', from: 'c', to: 'd', r: 2, k: 0.1, inertia: 0.004, load: 0.1},
+	{id: 'w', kind: 'wire', from: 'd', to: 'n'},
+];
+const motorLayout: CircuitLayout = {b: [[0, 4], [0, 0]], sw: [[0, 0], [3, 0]], am: [[3, 0], [6, 0]], m: [[6, 0], [6, 4]], w: [[6, 4], [0, 4]]};
+const motorRun = lazy(() => runCircuit(motorParts, [{at: 30, set: {sw: {closed: true}}}, {at: 200, set: {m: {load: 0.3}}, over: 20}], {frames: 300}));
+export const MotorDemo: React.FC = () => {
+	const run = motorRun(), {state} = useCircuit(run), speed = state.speed?.m ?? 0;
+	return (
+		<DemoPage title="A motor pushes back as it spins up">
+			<CircuitView run={run} layout={motorLayout} stage={{x: 150, y: 330, cell: 100}} speed={3} labels={{m: {text: 'motor', side: -1}, b: {text: '12 V', side: 1}}} />
+			<CircuitTimeGraph run={run} span={300} x={960} y={150} w={920} h={400} traces={[{id: 'm', label: 'current'}]} xLabel="" />
+			<CircuitTimeGraph run={run} span={300} x={960} y={540} w={920} h={440} traces={[{id: 'm', quantity: 'speed', label: 'speed', tone: 'teal'}]} yLabel="speed (rad/s)" />
+			<SimReadout x={150} y={800} w={640} title="Now" rows={[
+				{label: 'current', value: Math.abs(state.current.m), digits: 2, unit: 'A', tone: 'amber'},
+				{label: 'back emf', value: 0.1 * speed, digits: 1, unit: 'V', tone: 'red'},
+			]} />
+		</DemoPage>
+	);
+};
+
 export const PHYSICS_DEMOS: readonly (readonly [string, React.FC])[] = [
 	['SimDemo-MagneticField', MagneticDemo],
 	['SimDemo-Induction', InductionDemo],
+	['SimDemo-AC', ACDemo],
+	['SimDemo-MotorBackEmf', MotorDemo],
 ];

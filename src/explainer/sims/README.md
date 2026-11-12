@@ -122,6 +122,25 @@ Added 13 November 2026 (Year 11 Physics gaps):
 - A motor and a coil are their resistance only: no back EMF and no self-induction. Do not use them to show a motor slowing the current as it speeds up, or a coil delaying the current.
 - Ramps of the same value should not overlap; a ramp is solved once per frame.
 
+Added 14 November 2026 (Year 12 Physics gaps):
+
+| Idea | What to use |
+| --- | --- |
+| An alternating supply | kind `ac` with `peak`, `frequency` (a slow model value, about 0.5 Hz) and `phase`; `runCircuit(parts, changes, {frames})` solves every frame, so the charges surge back and forth |
+| Peak and r.m.s. readouts, average power | `solveAC(parts)`: `peak` (a full solved state), `rms.current`, `rms.drop`, `power`; `rmsOf`, `peakOf` |
+| An ideal transformer | kind `transformer` with `from`, `to` (primary), `from2`, `to2` (secondary) and `turns: [primary, secondary]`; its secondary values are listed under `secondary(id)` |
+| Transformer numbers without a circuit | `idealTransformer({primaryVoltage, turns, load})` |
+| Why power is sent at high voltage | `lineLoss(power, voltage, lineResistance)`, or a circuit with a step-up transformer, a line resistor and a step-down transformer |
+| A motor that draws less current as it speeds up | kind `motor` with `k` (volts per rad/s), `inertia`, `load`, `friction`; read `state.speed`, `state.mech`; change `load` or `jammed` at a frame |
+| Motor numbers without a run | `motorSteady({voltage, r, k, load})`: speed, current, back emf, stall current |
+| A signed trace (alternating current), or a motor's speed | `CircuitTimeGraph` trace with `signed: true`, or `quantity: 'speed'` |
+
+- The circuit is still resistances only. With no capacitors and no self-induction, an alternating circuit at any instant is a direct one at that instant's voltage, which is exactly how it is solved. A coil still does not delay its current.
+- A transformer links its windings only for an alternating source. To a battery each winding is a wire, so a steady current in the primary gives nothing in the secondary. Mixed circuits are handled by `solveMixed` (the steady and alternating parts are solved separately and added).
+- The transformer is ideal. Add winding resistances with `r` and `r2`, or a series resistor, to show copper loss. Core losses are not modelled.
+- In `CircuitView` a transformer called `t` needs two routes in the layout: `t` and `secondary('t')`, drawn as two parallel stretches side by side. Label each winding under the same two names.
+- A motor without `k` is its resistance alone, exactly as before.
+
 ### Two-step titrations (in `titration.ts`)
 
 Give `k2` for a particle that gives or takes two H⁺. Everything else stays the same, and one-step titrations give exactly the results they did.
