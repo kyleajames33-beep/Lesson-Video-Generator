@@ -182,7 +182,7 @@ export const S07: React.FC = () => {
 			<Enter at={x5 + 12} style={{position: 'absolute', left: 720, top: 770}}>
 				<span style={DISPLAY(48)}><AnswerFrame at={x5 + 12} tick={false}><LnRule dom /></AnswerFrame></span>
 			</Enter>
-			<MistakeCard x={700} y={880} w={1124} size={40} at={not} wrong={<>d/dx(ln x) = 1/(ln x)</>} caption="at x = 1 that is 1/0, undefined" />
+			<MistakeCard x={700} y={880} w={1040} size={40} at={not} wrong={<>d/dx(ln x) = 1/(ln x)</>} caption="at x = 1 that is 1/0, undefined" />
 		</>
 	);
 };

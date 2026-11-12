@@ -104,7 +104,7 @@ export const Hallway: React.FC<{pos: number; vel?: number; arrowO?: number; robo
 			<line x1={FL.x - 30} x2={FL.x + FL.w + 30} y1={NLY} y2={NLY} stroke={INK} strokeWidth={4} />
 			{ticks.map(t => <g key={t}><line x1={HX(t)} x2={HX(t)} y1={NLY - 11} y2={NLY + 11} stroke={INK} strokeWidth={3.5} /><text x={HX(t)} y={NLY + 42} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: [0, 16, 20, 36].includes(t) ? INK : SOFT}}>{t < 0 ? '−' + Math.abs(t) : t}</text></g>)}
 			<text x={HX(40) + 34} y={NLY + 10} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: BLUE}}>x</text>
-			<text x={HX(40) + 26} y={NLY + 44} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, fill: SOFT}}>(cm)</text>
+			<text x={HX(40) - 30} y={NLY + 42} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, fill: SOFT}}>(cm)</text>
 			{origin > 0.01 ? <g opacity={origin}><text x={HX(0) - 14} y={NLY - 16} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: AMBER}} stroke={CARD} strokeWidth={7} paintOrder="stroke">O</text></g> : null}
 			{rests.map((r, i) => r.o > 0.01 ? <g key={i} opacity={r.o}>
 				{r.pulse ? <circle cx={HX(r.x)} cy={NLY} r={14 + 16 * r.pulse} fill="none" stroke={TEAL_STROKE} strokeWidth={4} opacity={1 - r.pulse * 0.6} /> : null}

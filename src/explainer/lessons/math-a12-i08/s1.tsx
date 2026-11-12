@@ -104,7 +104,7 @@ export const S02: React.FC = () => {
 	return (
 		<>
 			<SceneHeading text="Track A(x) with shapes" at={4} size={56} />
-			<PairView X={X} dots={dots} curve={{from: 0, to: 6 * smooth(prog(fr, k.hill, 40))}}
+			<PairView X={X} dots={dots} markerLabelBelow curve={{from: 0, to: 6 * smooth(prog(fr, k.hill, 40))}}
 				topKids={m => <>
 					{(() => {const o = 1 - prog(fr, k.one, 12); const [bx, by0] = m.p(2, 0), [, by1] = m.p(2, 4); return o > 0.01 ? <g opacity={o}><line x1={bx} x2={bx} y1={by0} y2={by1} stroke={ABLUE} strokeWidth={14} strokeLinecap="round" opacity={0.55} /><text x={bx + 30} y={by1 + 10} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: ABLUE}} stroke={CARD} strokeWidth={7} paintOrder="stroke">11 am: A(2) = 4, so 400 cars</text><text x={bx + 30} y={by1 + 60} style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36, fill: ABLUE}} stroke={CARD} strokeWidth={7} paintOrder="stroke">A is a height up here</text></g> : null;})()}
 					<PLabel p={m.p(3.9, 1.4)} text="back to the 9 am level" color={ABLUE} size={38} hand o={prog(fr, k.zero + 8, 12)} />

@@ -39,3 +39,9 @@ Each lesson's build notes (`builds/<id>-notes.md`) have a "Repair 12 Nov (Codex 
 12. `math-a12-i10`: the hand tags are below THE LIFT card (about 22 s). Root A, 12 Nov.
 13. `math-a12-i12`: the graph height is now 180, so the asset guard passes. This is its first render (v1). Root A, 12 Nov.
 d03, d04, d14, i08 and i14 follow after one more small-collision pass.
+14. `math-a12-d03`: the phone text wraps inside the screen (about 71 s); the mistake cards in scenes 7 and 13 now end before the graph's "x" label. Root A, 12 Nov.
+15. `math-a12-d04`: the full rise label is left of the triangle's leg (about 152 s); the scene 9 graph sits below the pitch card. Root A, 12 Nov.
+16. `math-a12-d14`: the Plan card sits below the GIVENS card, and the domain line is clear (about 273 s); the 1.50 tick is dropped beside the x = π/2 line. Root A, 12 Nov.
+17. `math-a12-i08`: the definition box is clear of "after noon: more cars leave" (about 29 s); the scene 3 marker label is below the axis. Root A, 12 Nov.
+18. `math-a12-i14`: the replay stops at t = 2.9 (v −2.97, a −0.6), so every label is true (about 129 s); "(cm)" is inside the margin. Root A, 12 Nov.
+All 13 held Maths videos and i12 are now on this list.

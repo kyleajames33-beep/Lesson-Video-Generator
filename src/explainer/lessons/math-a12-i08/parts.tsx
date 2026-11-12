@@ -139,9 +139,11 @@ export const botMap = (g: PairG = PG) => makePlot(g.x, g.y + g.hTop + g.gap, g.w
 export const PairView: React.FC<{
 	g?: PairG; X: number; a?: number; fn?: (t: number) => number; Afn?: (x: number) => number;
 	curve?: {from: number; to: number} | null; shift?: number; ghost?: number; dots?: readonly {x: number; o: number}[]; point?: number; marker?: number; link?: boolean;
+	/** Opt-in: write the marker's "x" below the axis (scene 3, where the trapezium's side label sits above it). */
+	markerLabelBelow?: boolean;
 	topLabel?: string; botLabel?: string; xLabel?: string; xTicks?: readonly (number | PlotTick)[]; yTopTicks?: readonly (number | PlotTick)[]; yBotTicks?: readonly (number | PlotTick)[];
 	topKids?: (m: PlotMap) => React.ReactNode; botKids?: (m: PlotMap) => React.ReactNode; at?: number; out?: number; topAt?: number; topO?: number;
-}> = ({g = PG, X, a = 0, fn = f, Afn = A, curve = {from: 0, to: 6}, shift = 0, ghost = 0, dots = [], point = 1, marker = 1, link = true, topLabel = 'A(x): extra cars (hundreds)', botLabel = 'net rate f(t) = 3 − t (hundred cars per hour)', xLabel = 't (hours after 9 am)', xTicks = HOURS, yTopTicks = [2, 4], yBotTicks = [-3, 3], topKids, botKids, at = -30, out, topAt, topO = 1}) => {
+}> = ({g = PG, X, a = 0, fn = f, Afn = A, curve = {from: 0, to: 6}, shift = 0, ghost = 0, dots = [], point = 1, marker = 1, link = true, markerLabelBelow = false, topLabel = 'A(x): extra cars (hundreds)', botLabel = 'net rate f(t) = 3 − t (hundred cars per hour)', xLabel = 't (hours after 9 am)', xTicks = HOURS, yTopTicks = [2, 4], yBotTicks = [-3, 3], topKids, botKids, at = -30, out, topAt, topO = 1}) => {
 	const fr = useCurrentFrame();
 	const yb = g.y + g.hTop + g.gap;
 	const Ash = (x: number) => Afn(x) + shift;
@@ -164,7 +166,7 @@ export const PairView: React.FC<{
 				{m => <>
 					<AreaFillLayer m={m} fn={fn} a={Math.min(a, X)} to={Math.max(a, X)} signed />
 					<g clipPath={m.clip}><path d={fnPath(m, fn, g.wx[0], g.wx[1])} stroke={TEAL} strokeWidth={7} fill="none" strokeLinecap="round" /></g>
-					{marker > 0.01 ? (() => {const [px, py] = m.p(X, fn(X)), [, ay] = m.p(X, 0); return <g opacity={marker}><line x1={px} x2={px} y1={ay} y2={py} stroke={AMBER_STROKE} strokeWidth={5} /><circle cx={px} cy={ay} r={13} fill={AMBER_STROKE} stroke={CARD} strokeWidth={4} /><text x={px + 16} y={ay - 16} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMBER}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x</text></g>;})() : null}
+					{marker > 0.01 ? (() => {const [px, py] = m.p(X, fn(X)), [, ay] = m.p(X, 0); return <g opacity={marker}><line x1={px} x2={px} y1={ay} y2={py} stroke={AMBER_STROKE} strokeWidth={5} /><circle cx={px} cy={ay} r={13} fill={AMBER_STROKE} stroke={CARD} strokeWidth={4} /><text x={px + 16} y={markerLabelBelow ? ay + 46 : ay - 16} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMBER}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x</text></g>;})() : null}
 					{botKids ? botKids(m) : null}
 				</>}
 			</StudioPlot>

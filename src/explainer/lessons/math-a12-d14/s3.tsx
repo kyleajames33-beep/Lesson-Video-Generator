@@ -85,13 +85,13 @@ export const S07: React.FC = () => {
 		<>
 			<TaskStrip text="Find the equations of the tangent and the normal" at={4} size={52} />
 			<EquationStrip at={10} size={60}>y = ln x / cos x</EquationStrip>
-			<Givens x={96} y={262} w={560} size={42} lines={[
-				{content: <>x = 1  <span style={{fontSize: 32, color: INK_SOFT}}>(radians)</span></>, at: Math.min(one0, 30)},
+			<Givens x={96} y={262} w={560} size={36} lines={[
+				{content: <>x = 1  <span style={{fontSize: 30, color: INK_SOFT}}>(radians)</span></>, at: Math.min(one0, 30)},
 				{content: 'domain: x > 0, cos x ≠ 0', at: Math.min(one0, 30) + 10, role: 'k'},
 			]} />
 			<RecallChip x={690} y={262} at={30} size={32}>quotient video (d08):<br /><span style={{color: INK, fontWeight: 800}}>dy/dx at 1 = 1/cos 1</span>  = sec 1</RecallChip>
-			<div style={{position: 'absolute', left: 96, top: 440, opacity: prog(f, 14, 14)}}>
-				<div style={{display: 'inline-block', background: CARD, borderRadius: 16, padding: '6px 22px 8px', boxShadow: CARD_SHADOW, border: '3px solid rgba(60,45,20,0.18)', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 34, color: INK, lineHeight: 1.3}}>
+			<div style={{position: 'absolute', left: 96, top: 452, opacity: prog(f, 14, 14)}}>
+				<div style={{display: 'inline-block', background: CARD, borderRadius: 16, padding: '6px 22px 8px', boxShadow: CARD_SHADOW, border: '3px solid rgba(60,45,20,0.18)', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 32, color: INK, lineHeight: 1.25}}>
 					<div>1. point from f</div>
 					<div style={{opacity: prog(f, only, 12)}}>2. gradient from f′: <span style={{color: VIOLET}}>the only step that depends on the function</span></div>
 				</div>
@@ -103,7 +103,7 @@ export const S07: React.FC = () => {
 			<Line x={96} y={774} at={mcos} size={44}>m<sub style={{fontSize: 28}}>N</sub> = −1 ÷ (<V>1/cos 1</V>) = <Tl>−cos 1</Tl></Line>
 			<AnswerBox x={96} y={838} at={one2} size={46}><span>normal:  y = <Tl>−cos 1</Tl>(x − 1)</span></AnswerBox>
 			<Line x={720} y={852} at={radians} size={32} color={INK_SOFT} weight={700}>cos 1 ≈ 0.540 (1 radian)</Line>
-			<RoadView S={WK} win={W7} fam={LNCOS} X={X} px={1} at={-60} xTicks={[0.5, 1, 1.5, 2]} yTicks={[{value: -1, label: '−1'}, {value: 1, label: '1'}]}
+			<RoadView S={WK} win={W7} fam={LNCOS} X={X} px={1} at={-60} xTicks={[0.5, 1, 2]} yTicks={[{value: -1, label: '−1'}, {value: 1, label: '1'}]}
 				road={{at: -60, pieces: ROAD7}} carO={1} ringO={prog(f, zero2, 12)} tangentO={prog(f, one1, 16)} glowO={prog(f, one1, 14)} glowReach={220}
 				acrossO={prog(f, normIs, 12)} acrossSolid={prog(f, one2, 8)} normalO={prog(f, one2, 16)} rightO={prog(f, one2 + 10, 12)}
 				under={() => <line x1={ax} x2={ax} y1={M.box.top} y2={M.box.top + M.box.height} stroke={AMB} strokeWidth={4} strokeDasharray="12 9" />} />

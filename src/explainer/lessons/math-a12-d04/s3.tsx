@@ -20,7 +20,7 @@ export const S09: React.FC = () => {
 	const four = cue(id, 'equals four'), r1 = cue(id, 'log of two'), r2 = cue(id, 'At x equals four', 2), ans = cue(id, 'three six one'), measured = cue(id, "That's the slope"), guitar = cue(id, 'On the guitar'), quarter = cue(id, 'only a quarter');
 	// Right column graph: tall until the guitar returns, then it moves under the guitar and its readout board.
 	const mv = smooth(prog(f, guitar, 30));
-	const GW = {x: 1250, y: 150 + (634 - 150) * mv, w: 574, h: 520 - (520 - 330) * mv};
+	const GW = {x: 1250, y: 150 + (690 - 150) * mv, w: 574, h: 520 - (520 - 300) * mv};
 	const win = {x: [-0.3, 5] as Range, y: [-1.5, 3] as Range};
 	const M = gmap(GW.x, GW.y, GW.w, GW.h, win);
 	const T: FnKey[] = [{frame: 0, x: 4}];
