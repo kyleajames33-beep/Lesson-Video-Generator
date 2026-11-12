@@ -49,7 +49,11 @@ Render each as **v2** (`--revision=v2`), run the full check again, and replace t
 31. `math-a12-i11`: area against the y-axis and reflected graphs (pool ramp). Graded A on 13 Nov. Its playlist position is before i12.
 32. `math-a12-i13`: integrating a rate, net change against total, and cross-sections (air conditioner, dam, drainage channel). Graded A on 13 Nov.
 
-Root swept each of entries 29 to 32 at 1 fps before grading A. Check each one's "check at playback speed" list in its build notes.
+33. `math-a12-f01`: sequences, partial sums and sigma notation (scoreboard, stacking chairs). Graded A on 13 Nov. It opens the sequences strand, after i14.
+34. `math-a12-f02`: arithmetic sequences and the nth term (stacking chairs under a door). Graded A on 13 Nov.
+35. `math-a12-f03`: arithmetic partial sums (a tin pyramid). Graded A on 13 Nov.
+
+Root swept each of entries 29 to 35 at 1 fps before grading A. Check each one's "check at playback speed" list in its build notes.
 
 **First, d01.** If `math-a12-d01` v2 is still unlisted, make it public now. Add it at position 1 of the Year 12 Maths Advanced playlist, and use the full title, description and syllabus dotpoint quoted verbatim, as for the science videos. If no Maths playlist exists yet, create "HSC Maths Advanced Year 12" and record its id in `status.md`.
 

@@ -1,0 +1,25 @@
+// Every cue phrase for math-a12-f02, resolved once at load against the measured word timings (a missing phrase
+// throws here, before any scene renders). Repeated words name their occurrence: [phrase, n].
+import {cue} from './common';
+
+const C = <K extends string>(id: string, map: Record<K, string | [string, number]>): Record<K, number> => {
+	const out = {} as Record<K, number>;
+	for (const [k, v] of Object.entries(map) as [K, string | [string, number]][]) out[k] = Array.isArray(v) ? cue(id, v[0], v[1]) : cue(id, v);
+	return out;
+};
+
+export const K1 = C('scene-01', {last: 'Last video ended', one: 'One chair is', every: 'every chair you add', so: 'So how tall', twenty: 'stack of twenty', guess: "Here's a quick guess", start: 'Start at eighty', add: 'add twenty sixes', gives: 'That gives two', cm: ['centimetres', 3], door: 'two-metre door', sounds: 'It sounds right', isit: 'is it', by: 'By the end', find: 'find any term'});
+export const K2 = C('scene-02', {seq: 'A sequence like', called: 'called an arithmetic', ap: 'AP for short', when: "It's arithmetic when", diff: 'every difference between', same1: ['same', 1], fixed: 'That fixed difference', common: 'the common difference', here: 'Here, eighty-six', m1: ['minus', 1], m2: ['minus', 2], six: 'd is six', negative: 'can be negative', twenty: 'Twenty, seventeen', three: 'minus three', but: 'But one, four', isnt: "isn't arithmetic", its: 'Its differences', same: ['same', 2], test: 'So to test', rule: 'For a sequence given'});
+export const K3 = C('scene-03', {jump: 'So how do we', start: 'Start at the first', second: 'To reach the second', third: 'The third term', fourth: 'the fourth term', along: ['along', 2], each: 'Each time', less: 'one less than', because: 'because the first', nth: 'So the nth term', d: ['lots of d', 1], now: 'Now test the guess', stack: 'A stack of twenty', nineteen: 'nineteen steps', thats: "That's eighty plus", ninety: 'ninety-four', not: 'not two hundred', guess: 'The guess added', many: 'too many'});
+export const K4 = C('scene-04', {heres: "Here's why", plot: 'Plot each', every: 'Every extra chair', goes: 'goes up by d', line: 'straight line', expand: 'Expand the formula', linear: "That's a linear", grad: 'its gradient is d', chairs: 'For the chairs', six: 'gradient six', cross: 'It would cross', no: 'no stack of zero', one: 'starts at one', points: 'And the points sit', join: "don't join"});
+export const K5 = C('scene-05', {lets: "Let's use", seq: 'An arithmetic sequence', find: 'Find the tenth', nine: 'nine steps', so: 'so a sub ten', t32: 'thirty-two', now: 'Now, which term', set: 'Set the formula', take: 'Take away five', f45: 'forty-five', divide: 'Divide by three', fifteen: ['fifteen', 1], n16: 'So n is sixteen', check: 'Check'});
+export const K6 = C('scene-06', {heres: "Here's a useful", can: 'Can a stack', set: 'Set the formula', eighty: 'Eighty, plus', so: 'So n minus', seventy: 'seventy over six', twelve: 'is twelve', thirds: ['thirds', 1], not: "That's not a whole", cant: "can't have", term: 'is not a term', graph: 'On the graph', passes: 'passes one hundred', between: 'between the twelfth', f146: 'forty-six', f152: 'fifty-two'});
+export const K7 = C('scene-07', {some: 'Sometimes', fourth: 'The fourth term', ninth: 'the ninth term is', find: 'Find a and d', from: 'From the fourth', five: 'five steps', rises: 'rises by twenty', so: 'So five d', four: ['four', 1], same: "That's the same", now: 'Now step back', three: 'three steps of four', a: 'so a is', one: ['one', 1], check: 'Check'});
+export const K8 = C('scene-08', {now: 'Now a decreasing', starts: 'starts at seven', which: 'Which term', formula: 'The formula gives', simp: 'which simplifies', set: 'Set that below', then: 'Then four n', so: 'so n is bigger', five: ['five', 1], but: 'But n is a position', whole: ['whole number', 1], first: 'The first whole', three: 'is three', check: 'Check', one: ['one', 4], grad: 'And the gradient'});
+export const K9 = C('scene-09', {to: 'To remember', fence: 'fence posts', five: 'Five posts', gaps: 'four gaps', terms: 'Terms are the posts', steps: 'the steps are the gaps', so: 'So the nth', first: ['first', 1]});
+export const K10 = C('scene-10', {your: 'Your turn', pause: 'Pause here'});
+export const K11 = C('scene-11', {t20: 'The twentieth term', so: "So it's twelve", thats: "That's twelve minus", e83: 'eighty-three', wrong: 'Minus eighty-eight', takes: 'It takes twenty', many: 'many'});
+export const K12 = C('scene-12', {last: 'Last one', pause: 'Pause here'});
+export const K13 = C('scene-13', {from: 'From the third', four: 'four steps', rises: 'rises by sixteen', d4: 'So d is four', now: 'Now step back', ten: 'ten minus eight', a2: 'so a is two', wrong: 'Three point two', divides: 'It divides by five', them: 'them'});
+export const K14 = C('scene-14', {so: 'So a fixed', line: 'straight line', next: 'Next, the total', super: 'A supermarket', one: 'one on top', two: 'two below', three: 'then three', fifteen: 'down to fifteen', how: 'How many tins', adding: 'Adding them', short: 'shortcut'});
+export const K15 = C('scene-15', {here: 'Here are the key', pause: 'Pause the video'});
