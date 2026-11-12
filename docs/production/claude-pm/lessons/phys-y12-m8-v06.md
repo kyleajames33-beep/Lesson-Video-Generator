@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V06: Stellar mass and element production. How does stellar mass change the elements a star can make? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,361 characters, 18 scenes, about 547 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v05's final frame.
 
@@ -80,6 +80,20 @@ Entry knowledge: binding curve and fusion (v05); HR regions (v04); Big Bang elem
 Stops after: the two mass tracks, the iron limit, neutron capture (slow and rapid), the energy distinction and element origins. No mass limits or supernova mechanisms beyond one sentence.
 Handoff: v07, how cathode rays and oil drops revealed the electron.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the curve with the painted Sun, the hot-blue star and the gold ring, scene 1 (about 26 s); (B) the swelling star in cross-section, scene 2 (about 31 s); (C) inside the core: helium burning, scene 3 (about 34 s); (D) the core temperature ladder with the live mass slider, scene 4 (about 32 s); (E) the Sun-like track with the painted nebula, scene 5 (about 32 s); (F) the onion layers with the stage clock, scene 6 (about 37 s); (G) the binding curve and the collapse with the painted remnant, scene 7 (about 38 s); (H) the neutron-capture grid: one capture, then the slow and rapid paths, scenes 8 and 9 (about 71 s; the grid splits into two paths at about 32 s); (I) the two-column panel, scene 10 (about 31 s); (J) the periodic table filling by origin, scene 11 (about 28 s); (K) the memory card, scene 12 (about 9 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 71 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The helium nuclei in the core (scene 3) run on the particle box engine (`particle-box.ts`), the same model as the colliding protons last time with a higher activation energy for the bigger charge, so far fewer collisions succeed at the same `temperature` and the count rises only when the core readout reaches about 10⁸ K (tagged "model"). The mass slider in scene 4 reads the design's table (mass, hottest core, last fuel, end state) and stays lesson-coded, as do the neutron-capture paths, which follow real nuclides on the grid.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Stars and clouds are plates.** The white dwarf in scene 5 is a small copy of the painted white star (`y12p-star-white-v1.png`); the gas cloud and the new star in scene 10 are small copies of the painted molecular cloud (`y12p-molecular-cloud-v1.png`) and the painted Sun. Star cross-sections, the onion layers and the periodic table stay diagrams.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *A*, *Z*, *T*, *Δm*, *u*.
@@ -109,6 +123,8 @@ Visual: board change to the core temperature ladder with the live mass slider (t
 
 Visual: board change: the Sun-like track (the `m8-stellar-evolution` family's left branch). On "the climb stops at carbon and oxygen" the "1 M☉" reach bar with a stop mark below "C ~6 × 10⁸ K". On "a planetary nebula" the painted planetary nebula `y12p-planetary-nebula-v1.png` (about 560 px) with its small white central star, tag "illustrative", grey hand tag "not about planets". On "helium, carbon and nitrogen back into space" small He, C and N discs drift outwards. On "a white dwarf, mostly carbon and oxygen" the central dot enlarges into a small coded white disc "C + O white dwarf"; the HR thumbnail point moves down to the bottom left. On "years" tag "cools slowly; no more fusion", ink pen ring round the white dwarf. Marks (Revision 2): red pen cross through the "C ~6 × 10⁸ K" mark on the 1 M☉ bar, red hand tag "never hot enough".
 
+Upgrade (Revision 3): The white dwarf left at the centre of the nebula is a small copy of the painted white star (about 40 px), not a coded white disc.
+
 ### 6. a massive star climbs to iron
 > A star more than about eight times the Sun's mass keeps going. Carbon fuses at about six hundred million kelvin, then neon, then oxygen at about one and a half billion, and finally silicon at about three billion kelvin, making **iron**. Each stage leaves its ash in a shell, so the star ends up layered like an onion, hydrogen outside, iron at the centre. And the stages speed up. For a star of fifteen solar masses, hydrogen lasts about eleven million years, but silicon lasts about eighteen **days**.
 
@@ -133,6 +149,8 @@ Visual: the grid splits into two paths. On "nuclei capture neutrons one at a tim
 > Notice the difference. Fusion up to iron releases energy, and that energy holds a star up and makes it shine. Neutron capture beyond iron makes only small amounts of heavy elements, as a by-product, and it can't keep a star **going**. That's one reason gold is so rare. And the winds and explosions that end a star's life spread all these elements into space, where they're built into new stars, planets, and **you**.
 
 Visual: board change: a two-column panel. On "Fusion up to iron releases energy" left column "fusion (H → Fe): releases energy, powers the star" with the curve's climbing arrow. On "going" right column "neutron capture (beyond Fe): makes heavy elements, small amounts, no power for the star". On "gold is so rare" the gold ring plate (about 260 px), amber hand tag "rare: made only in extreme events". On "spread all these elements into space" the planetary nebula and supernova remnant plates small, coloured discs drifting from both into a coded gas cloud. On "you" the cloud condenses into a small coded new star with a planet dot, tag "next generation: stars and planets". Marks (Revision 2): the two columns are framed, an amber pen tick beside the left column's "powers the star" and a red pen cross beside the right column's "no power for the star".
+
+Upgrade (Revision 3): The gas cloud and the new star are small copies of the painted molecular cloud (about 220 px wide) and the painted Sun (about 90 px), not coded pictures.
 
 ### 11. where every element came from
 > Put it on the periodic table. Hydrogen and most helium came from the Big Bang. Carbon and nitrogen mostly came from Sun-like stars, and stars a few times bigger, as they shed their outer **layers**. Oxygen up to iron mostly came from massive stars and their explosions. And beyond iron, from slow neutron capture in giants, and rapid neutron capture in neutron star **collisions**.
@@ -237,6 +255,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,361 characters**, 18 scenes. Characters per scene (1 to 18): 342, 406, 456, 425, 428, 494, 512, 423, 517, 409, 373, 120, 184, 330, 139, 427, 301, 75. At 13.3 characters per second the speech is about 478 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 4 slider runs under its narration): **about 547 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,288 characters (scene sum; 6,305 with inter-scene spaces), about 558 s. Reserve trims if the voiced take runs long: scene 6's stage-duration sentence (keep the clock on screen); scene 9's 2017 sentence (keep the tag); scene 5's planets clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,361 characters). The notes scene is 45 s in all, so the estimate is about 547 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v05's final frame (`phys-y12-m8-v05.md`, "Final frame"): paper background; heading "Why do main-sequence stars release energy by combining light nuclei?"; the coded binding-energy-per-nucleon curve across the frame with labels ¹H, ⁴He, ¹²C, ¹⁶O, "peak near iron (⁵⁶Fe: 8.8 MeV)", ²³⁸U; a solid amber arrow from ¹H to ⁴He tagged "main sequence"; dashed grey arrows from ⁴He to ¹²C, ¹⁶O and on to ⁵⁶Fe, each with a "?"; a small core inset filled with ⁴He discs, tag "core hydrogen used up"; the painted Sun `phys-y11-sun-v1.png` (small, lower left) and the painted hot-blue star `y12p-star-hot-blue-v1.png` (larger, lower right), each with an ink hand tag "how far up?" (v05 Revision 2); chip "Next: how does stellar mass change the elements a star can make?". Scene 1 tags the stars "1 M☉" and "25 M☉", adds the gold ring and turns the chip into the heading.
@@ -254,6 +274,8 @@ In order (kebab-case; 18 scene headings, all `### N.`): hook, after-hydrogen, he
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: core contraction and envelope swell, triple alpha, core temperature ladder, onion layers with stage clock, binding-curve stop, core collapse, neutron capture chain, periodic table by source, `m8-stellar-evolution`, `m8-nucleosynthesis`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2; no set-up runs past about 70 s): 1 to 2 clear change; 2 to 3 camera continue (into the core); 3 to 4 clear change to the ladder; 4 to 5 clear change; 5 to 6 clear change; 6 to 7 clear change to the curve; 7 to 8 clear change to the grid; 8 to 9 camera continue; 9 to 10 clear change; 10 to 11 clear change to the table; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v06-learning-review.md`, `science_check` = `checks/p-y12-m8-v06-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -275,6 +297,8 @@ Kit gaps (for the v06 build brief):
 2. **Onion layers with stage clock.** Concentric shells filling from the centre; a clock whose stage lines flash at increasing rate.
 3. **Neutron capture chain.** An N-Z grid with capture (right) and beta-decay (diagonal) steps and A/Z tallies (v05's tally component).
 4. **Periodic table by source.** A coded 18-column table whose cells fill by source with a legend.
+
+Revision 3 (13 Nov 2026). Existing plates newly used small (confirmed by file listing, not re-inspected): `y12p-star-white-v1.png` (scene 5), `y12p-molecular-cloud-v1.png` and `phys-y11-sun-v1.png` (scene 10). New plate requests: none.
 
 ## Codex asset brief
 
@@ -298,6 +322,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 21 to 24 under Decisions to root.
 11. Revision 2: confirm no learner copy gives "more protons" as the cause of every later stage (4, 16, model answer; author note i); the 15 M☉ durations against Woosley and Janka 2005 table 1, and "speed up overall" (6); "iron-group peak" and "among the most tightly bound" (7, notes); the slow-process path with stable and unstable stops (8, 9); 2017 merger and 2019 strontium (9); the YouTube title length (98 characters); the Maltese-cross tube in the final frame.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -347,3 +373,26 @@ New plate requests: none.
 Joins: the opening is v05's Revision 2 final frame (its "how far up?" tags are now hand tags). The final frame replaces the held `y12p-crt-tube-v1.png` with the delivered `y12p-maltese-cross-tube-v1.png` and adds one grey hand tag; v07 Revision 2 opens on it. Root to confirm this substitution (it removes the join's dependence on the held CRT plate).
 
 Counts: 6,288 to 6,361 characters (scene sum); about 558 s to about 547 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: helium burning in scene 3 is tied to the particle box engine (model); the mass slider and the capture paths stay lesson-coded from the design's table.
+- Scenes 5 and 10: a coded white disc, gas cloud and new star become small copies of plates.
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,361 characters, unchanged; about 547 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

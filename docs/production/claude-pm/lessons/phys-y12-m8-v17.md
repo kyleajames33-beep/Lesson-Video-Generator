@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V17: Q-values of artificial transmutations. What determines the energy released in an artificial transmutation? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,908 characters, 19 scenes, about 510 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v16's final frame.
 
@@ -77,6 +77,19 @@ Main question: *Rutherford turned nitrogen into oxygen by firing alpha particles
 Entry knowledge: mass defect, binding energy and 931.5 MeV per u (v16); spontaneous and artificial transmutation (v14); the beryllium reaction (v09); E = mc² (m7-v16); conservation of energy and momentum (Year 11).
 Stops after: Rutherford's observation, the balanced equation, Q from conservation of energy, the sign, why atomic masses work, Q = −1.19 MeV and its meaning, Q fixed by masses, the binding-energy route, a positive reaction, induced fission's Q. No chain reactions.
 Handoff: v18, why one fission event can trigger a controlled or uncontrolled chain.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the curve and the reaction, scene 1 (about 24 s); (B) the schematic chamber, scene 2 (about 25 s); (C) the equation built from disc groups, scene 3 (about 24 s); (D) the energy ledger, then the sign of Q on two small ledgers, scenes 4 and 5 (about 56 s); (E) the equation with its electrons, then the two-stage working, scenes 6 to 8 (about 77 s; the working layout takes the frame at about 22 s); (F) the ledger with numbers, then its K_in slider, scenes 9 and 10 (about 47 s); (G) the binding bars, scene 11 (about 28 s); (H) the painted polonium-beryllium source, scene 12 (about 28 s); (I) the two results and the memory card, scene 13 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 77 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine is needed: the energy ledger and its K_in slider (scenes 9 and 10) are exact arithmetic (K_out = K_in + Q), with all three readouts and both bars computed from the slider, so "Q" visibly does not move.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -167,6 +180,8 @@ Visual: `QuestionCard`, worded as printed: "Explain why the Q-value of a nuclear
 
 Visual: card shrinks to the top; "does not depend" underlines; the two-alpha picture stays at the right. Lines write in turn (44 px): "Q = (m_reactants − m_products)c²: rest masses only"; "masses fixed by the nuclei involved"; on "same" "extra K_in → equal extra K_out (energy conservation); Q unchanged" in a dark-ink frame. On "bigger" a chip "faster alpha → bigger Q" fades in and is crossed in red, red hand tag "Q set by masses". Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "explain: the Q-value does not depend on the incoming particle's kinetic energy".
+
 ### 18. handoff
 > One artificial transmutation changed the world. A slow neutron hits uranium two three five, and it splits into barium one four one, krypton ninety two, and three neutrons. The products are lighter by zero point one eight six u, so Q is about one hundred and seventy three mega electron volts, from a single nucleus. And one neutron in gives three neutrons out. So why can one fission event trigger a controlled or uncontrolled **chain**?
 
@@ -240,6 +255,8 @@ Checked with Python (6 Nov, `nuclear.py` and an inline check in the session scra
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,908 characters**, 19 scenes. Characters per scene (1 to 19): 323, 332, 323, 362, 388, 291, 405, 333, 359, 264, 376, 372, 132, 243, 439, 140, 318, 433, 75. At 13.3 characters per second the speech is about 444 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 10 slider runs under its narration): **about 510 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,926 characters by the inter-scene convention (5,908 scene sum), about 527 s. Reserve trims if the voiced take runs long: scene 11 (open decision 2); scene 5's Po-210 sentence (keep the chip); scene 7's spoken six-decimal masses (say the totals only, keep the givens on screen).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,908 characters). The notes scene is 45 s in all, so the estimate is about 510 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v16's final frame (designed in this wave, `phys-y12-m8-v16.md`): paper background; heading "How does missing mass measure nuclear binding energy?"; at the left the coded binding-energy-per-nucleon curve (x "mass number A" 0 to 240, y "binding energy per nucleon (MeV)" 0 to 9) with an amber arrow rising on the left side and a teal arrow rising up and to the left from the heavy end, both towards the peak near iron (v16 Revision 2, brief 193), and labelled points "⁴He", "¹⁴N", "¹⁷O"; name tag "Rutherford, 1919"; at the right an amber "α" arrow striking a coded ¹⁴N nucleus (7 red, 7 grey discs); under it the equation "⁴₂He + ¹⁴₇N → ¹⁷₈O + ¹₁H" with a chip "Q = ?" and an orange energy bar with "+?" and "−?" ends; chip "Next: what determines the energy released in an artificial transmutation?". Scene 1 turns the chip into the heading.
@@ -258,6 +275,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v17-learning-review.md`, `science_check` = `checks/p-y12-m8-v17-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -271,6 +290,8 @@ Coded: the schematic chamber, alpha tracks, scintillation flashes, nuclei and di
 Kit gaps (for the v17 build brief):
 1. **Energy ledger.** Two stacked bars (rest energy and kinetic energy) constrained to equal totals, with a set rest-energy step that transfers to kinetic energy (positive Q) or from it (negative Q), and optional labelled values.
 2. **Fission split.** A large disc cluster that stretches and splits into two set clusters with neutrons leaving along set paths (shared with v18's opening).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -292,6 +313,8 @@ Error-only check (report errors; do not restyle or rewrite):
 11. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Report site notes 8 to 10 under Decisions to root.
 13. Confirm the "Final frame" description is passed unchanged to v18's designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -345,3 +368,25 @@ New plate requests: none.
 Joins: the opening frame is v16's final frame as revised in v16 Revision 2 (both arrows rise towards the peak). The final frame (scene 18) is unchanged, as root decision 9 requires, so v18 opens on it.
 
 Counts: 5,908 to 5,908 characters (scene sum; Revision 1's headline 5,926 used the inter-scene convention); about 527 s to about 510 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the energy ledger is exact arithmetic (no engine is needed).
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,908 characters, unchanged; about 510 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

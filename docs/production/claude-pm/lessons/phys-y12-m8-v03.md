@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V03: Stellar spectra and classes. How can spectra classify stars and reveal their temperature? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,303 characters, 17 scenes, about 543 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v02's final frame.
 
@@ -76,6 +76,19 @@ Entry knowledge: spectra in plain language (m7-v03, v04); Wien's law (m7-v09); E
 Stops after: production and comparison of spectra, two temperature methods, the classes and their causes. No HR diagram, no luminosity classes.
 Handoff: v04, the HR diagram.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted Sun with its strip, joined by three painted stars, scene 1 (about 35 s); (B) the lamp and the discharge tube with the energy ladder, scene 2 (about 38 s); (C) the absorption bench, scene 3 (about 35 s); (D) the intensity graph, which becomes the live star thermometer, scenes 4 and 5 (about 63 s; the slider and readouts arrive at about 30 s); (E) the three atom panels and the hump, scene 6 (about 44 s); (F) the feature thermometers, scene 7 (about 35 s); (G) the class strip, then the composition bars beside it, scenes 8 and 9 (about 61 s; the strip shrinks left at about 38 s); (H) the full-width working, scene 10 (about 34 s); (I) the atom panels and the memory card, scene 11 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 63 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The cool gas in front of the lamp (scene 3) runs on the particle box engine (`particle-box.ts`): a few small particles far apart at a low `temperature`, as in the Module 7 spectra video. The star thermometer in scenes 4 and 5 is the exact Planck curve with λ_max = b/T, lesson-coded, and the level-2 population hump in scene 6 is the design's exact model; neither needs an engine.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *E*, *h*, *f*, *λ*, *T*, *b*.
@@ -94,6 +107,8 @@ Visual: board change, solid from the first frame: at the left the painted filame
 > Now put cooler, thinner gas in front of a hot source. Its atoms absorb only photons whose energy exactly matches a gap between their levels, lifting an electron **up**. They give that energy out again, but in all directions, so less reaches you at that wavelength. That's a dark line, at the same wavelength as the bright **one**. A star works like this. Its hot, dense layers give the continuous light, and the cooler gas above absorbs, so stars show absorption **spectra**.
 
 Visual: board change to the `m8-spectra` layout, solid from the first frame: the filament lamp plate at the left, a coded cool gas cloud tagged "cool sodium vapour", a strip at the right. On "absorb only photons whose energy exactly matches a gap" a sodium energy ladder small at the right (lowest level and the first level above, gap "2.11 eV"): a yellow-orange photon arrives and the electron jumps up from the lowest level, navy hand tag "starts in the lowest level". On "up" the strip shows a continuous spectrum with a dark line at 589 nm. On "in all directions" small yellow-orange arrows leave the cloud in every direction, only one continuing to the strip, amber hand tag "scattered every way". On "one" a sodium emission strip (a bright yellow-orange line at 589 nm on black) slides beneath, dashed connectors at identical positions, ink pen ring round the matching pair. On "A star works like this" the Sun plate `phys-y11-sun-v1.png` (about 320 px) replaces the filament, with a coded arc "hot, dense layers" and an outer arc "cooler atmosphere". On "spectra" chip "stars: absorption spectra (Fraunhofer lines in the Sun, including sodium's D lines)".
+
+Upgrade (Revision 3): The cool sodium vapour sits in the painted glass cell requested for the Module 7 spectra video (`y12p-vapour-cell-v1.png`, about 300 px tall), with the particle box run showing through its window. Fallback, as there: no cell is drawn; a dashed region tagged "cool sodium vapour" holds the run. The gas is not drawn as a coded cloud.
 
 ### 4. a star against a black body
 > How does a star's spectrum compare with a pure black body? Plot intensity against wavelength. A black body gives a smooth curve, and its shape depends only on **temperature**. A star's spectrum follows nearly the same curve, but with narrow dips cut into it. The curve tells you the **temperature**. The dips tell you which atoms are in the atmosphere, and, as you'll see, they tell you the temperature **again**.
@@ -231,6 +246,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,303 characters**, 17 scenes. Characters per scene (1 to 17): 469, 499, 463, 401, 434, 587, 462, 511, 303, 449, 93, 230, 328, 271, 326, 402, 75. At 13.3 characters per second the speech is about 474 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 5 slider runs under its narration): **about 543 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,260 characters (scene sum; 6,276 with inter-scene spaces), about 556 s. Reserve trims if the voiced take runs long: scene 8's alphabet history (keep the reorder on screen); scene 5's dust clause; scene 9's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,303 characters). The notes scene is 45 s in all, so the estimate is about 543 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v02's final frame (`phys-y12-m8-v02.md`, "Final frame", Revision 2): paper background; heading "What evidence supports an expanding hot early Universe?"; four small evidence tags across the top; the painted Sun `phys-y11-sun-v1.png` at the left with a light path to a coded spectrum strip at the right (true-colour continuum; dark lines at 393.4, 396.8, 410.2, 434.0, 486.1, 656.3 nm); above it an intensity curve with narrow dips, tag "continuous + absorption"; a small thermometer gauge "T = ?"; v02's red hand tag "same tool, new target"; chip "Next: how can spectra classify stars and reveal their temperature?". Scene 1's first beat fades the evidence tags and the hand tag, keeps the Sun, strip, curve and gauge, and turns the chip into the heading.
@@ -249,6 +266,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v03-learning-review.md`, `science_check` = `checks/p-y12-m8-v03-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (all inspected 7 Nov; scaled uniformly only, never stretched, never above native size):
@@ -266,6 +285,8 @@ Kit gaps (for the v03 build brief):
 2. **Level-2 population meter.** Three atom panels with electrons on levels, set by a temperature parameter, and the hump graph.
 3. **Feature thermometers.** Bars on a shared reversed temperature axis (reused in v04's colour band).
 4. **Class strip.** Seven stacked strips with real line positions and swatches.
+
+Revision 3 (13 Nov 2026). Scene 3 reuses the plate requested in `phys-y12-m7-v03.md` (`y12p-vapour-cell-v1.png`); it is not a second request, and its fallback draws no object. New plate requests: none.
 
 ## Codex asset brief
 
@@ -287,6 +308,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 9 to 11 under Decisions to root.
 11. Revision 2: confirm the lamp path (`phys-y11-filament-lamp-v1.png`); the sodium absorber (3; 589.0 nm, 2.11 eV, from the lowest level); "about 3500 K" for the K/M boundary in every learner display (7, 8, 12, 13, 15, notes, model answers; author note c); composition bars totalling 100% (9; author note g); "same peak, same class" in the handoff and final frame (16); grouped denominators (2, 5, 10, 13, model answers); the star-thermometer values; scene 11's cue order.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -339,3 +362,26 @@ New plate requests: none.
 Joins: the opening is v02's Revision 2 final frame; scene 1's first beat fades v02's new hand tag "same tool, new target". The final frame (scene 16) changes wording ("same peak, same class"; "same class → same star?") and v04 Revision 2 opens on it.
 
 Counts: 6,260 to 6,303 characters (scene sum); about 556 s to about 543 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the cool gas of scene 3 is tied to the particle box engine; the star thermometer and the hydrogen hump stay exact lesson models.
+- Scene 3: the coded gas cloud becomes the vapour cell requested for Module 7 (same plate, same fallback).
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,303 characters, unchanged; about 543 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

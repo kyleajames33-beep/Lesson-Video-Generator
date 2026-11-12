@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V12: Matter waves and electron diffraction. What evidence shows that particles have wave behaviour? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,268 characters, 18 scenes, about 535 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v11's final frame.
 
@@ -72,6 +72,19 @@ Entry knowledge: de Broglie's suggestion and Bohr's rule (v10, v11); diffraction
 Stops after: λ = h/p and h/mv with p = mv applicability, size checks, Davisson and Germer with the two-stage check, rings and the school tube, why it is evidence, Bohr's rule from standing waves. No wavefunctions, probability or uncertainty.
 Handoff: v13, why orbital probabilities replace literal electron paths.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the orbit and the empty evidence panel, scene 1 (about 27 s); (B) the two chips, then a particle's wavelength, scenes 2 and 3 (about 56 s); (C) the painted steel ball, then the electron's wavelength, scenes 4 and 5 (about 61 s; the ball's working shrinks to one line at about 28 s); (D) the Davisson and Germer schematic with its two-stage working, scenes 6 to 8 (about 83 s; the schematic shrinks to a corner at about 29 s); (E) the painted diffraction tube with its voltage slider, scene 9 (about 42 s); (F) the evidence panel filling, scene 10 (about 31 s); (G) the orbit: back to the atom, then Bohr's rule, scenes 11 and 12 (about 49 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 83 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The ring pattern in scenes 9 and 10 uses two engines on one set of values. The ring angles come from the waves engine (`waves.ts`, `brightAngles` for the crystal spacing and the electron's wavelength λ = h/mv), so the rings shrink as the voltage slider raises the speed. The single spots that build the rings come from the chance engine (`chance.ts`, a `weighted` experiment whose outcomes are the ring positions weighted by brightness, shown with `trialsShown`), so each electron lands as one spot and the rings appear only as the tally grows: "travels as a wave, lands as a spot" is watched. The wavelength working (scenes 4 to 8) is exact arithmetic. The waves wrapped round the orbit (scenes 1, 11 and 12) are lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *λ*, *h*, *p*, *m*, *v*, *d*, *θ*, *r*, *n*.
@@ -89,7 +102,7 @@ Visual: board change: two small chips at the top, "light: diffraction → wave (
 ### 3. a particle's wavelength
 > For a particle, momentum is mass times velocity, so lambda equals h over m v. That's the form on your formula sheet. It works when the particle is much slower than light, say under a tenth of c. Faster than that, you'd use relativistic momentum from Module seven. The more momentum a particle has, the shorter its **wavelength**.
 
-Visual: "λ = h/p" with "p = mv" substituting below; on "lambda equals h over m v" "λ = h/mv" (boxed) and a small chip "HSC formula sheet". On "under a tenth of c" a slate hand tag beside p = mv: "p = mv: for v below about 0.1c", with a slate pen bracket on "mv". On "relativistic momentum" a grey chip "faster: relativistic momentum (Module 7)". On "wavelength" the momentum slider: the teal arrow on the navy dot grows and the wave behind it squeezes to a shorter wavelength; teal hand tag "more momentum → shorter λ" and a teal pen ring round the squeezed wave.
+Visual: "λ = h/p" with "p = mv" substituting below; on "lambda equals h over m v" "λ = h/mv" (boxed) and a small chip "HSC formula sheet". On "under a tenth of c" a slate hand tag beside p = mv: "p = mv: for v below about 0.1c", with a slate pen bracket under "mv". On "relativistic momentum" a grey chip "faster: relativistic momentum (Module 7)". On "wavelength" the momentum slider: the teal arrow on the navy dot grows and the wave behind it squeezes to a shorter wavelength; teal hand tag "more momentum → shorter λ" and a teal pen ring round the squeezed wave.
 
 ### 4. why nobody had noticed
 > So why had nobody noticed? Take a fifty gram steel ball, rolling at two metres per second. Lambda is six point six two six times ten to the minus thirty four, over zero point zero five zero times two point zero. That's six point six times ten to the minus thirty three **metres**, far smaller than a proton. No gap is ever that narrow, so the ball never shows **diffraction**.
@@ -119,7 +132,7 @@ Visual: stage 1 shrinks to one kept line "v = 4.36 × 10⁶ m s⁻¹". On "h ove
 ### 9. rings, and a family surprise
 > That same year, George Thomson fired faster electrons through very thin metal foil, and they made rings. Here's the surprise. His father, J J Thomson, had shown the electron was a particle. A school electron diffraction tube does the same thing. Electrons pass through a thin layer of graphite and make bright **rings** on a glowing screen. It runs at thousands of volts, so it's a teacher demonstration. Turn up the voltage, and the rings get smaller. Faster electrons have more momentum, so a shorter wavelength, and they diffract less, just as h over m v **predicts**.
 
-Visual: board change (a new set-up, solid from the first frame): the painted electron diffraction tube `y12p-electron-diffraction-tube-v1.png` at the right (about 900 px wide, 384 px tall, below native size, on the cream stage with no navy behind the glass), the reused supply `phys-y11-eht-supply-v1.png` (about 330 px tall) below it with coded leads to the tube's terminal posts; the painted screen is seen nearly edge-on, so a coded face-on "screen view" circle (about 360 px, pale green, dark at first) sits above the bulb, joined to it by a grey pen arrow; at the left a small coded foil panel (about 300 px). On "George Thomson" name tag in words only "G. P. Thomson, 1927: thin foil"; a navy beam passes through the foil and a ring pattern appears behind it. On "His father, J J Thomson" a second tag "J. J. Thomson, 1897: electron = particle" with a two-headed arrow between the tags, label "father: particle; son: wave", navy hand tag "both were right". On "A school electron diffraction tube" label arrows on the plate (32 px): "electron gun", "graphite", "glowing screen". On "rings" two coded teal rings light in the screen view. On "teacher demonstration" a safety chip "thousands of volts, evacuated glass: teacher demonstration", red pen ring round the supply. On "Turn up the voltage" the live control starts: a voltage slider on the supply with live readouts beside the screen view (52 px) "V = 3.0 kV", "v = 3.25 × 10⁷ m s⁻¹", "λ = 2.24 × 10⁻¹¹ m", "inner ring r ≈ 14 mm" (small grey tag "model tube"); the slider steps to 4.0 kV ("3.75 × 10⁷", "1.94 × 10⁻¹¹ m", "≈ 12 mm") and 5.0 kV ("4.19 × 10⁷", "1.73 × 10⁻¹¹ m", "≈ 11 mm") while the rings shrink smoothly; teal pen bracket on the inner ring's radius, teal hand tag "V up, rings shrink"; grey chip "11 to 14% of c: p = mv within 0.3%". On "predicts" a chip "V ↑ → v ↑ → p ↑ → λ ↓ → smaller rings" in a dark-ink frame.
+Visual: board change (a new set-up, solid from the first frame): the painted electron diffraction tube `y12p-electron-diffraction-tube-v1.png` at the right (about 900 px wide, 384 px tall, below native size, on the cream stage with no navy behind the glass), the reused supply `phys-y11-eht-supply-v1.png` (about 330 px tall) below it with coded leads to the tube's terminal posts; the painted screen is seen nearly edge-on, so a coded face-on circle tagged "screen view" (about 360 px, pale green, dark at first) sits above the bulb, joined to it by a grey pen arrow; at the left a small coded foil panel (about 300 px). On "George Thomson" name tag in words only "G. P. Thomson, 1927: thin foil"; a navy beam passes through the foil and a ring pattern appears behind it. On "His father, J J Thomson" a second tag "J. J. Thomson, 1897: electron = particle" with a two-headed arrow between the tags, label "father: particle; son: wave", navy hand tag "both were right". On "A school electron diffraction tube" label arrows on the plate (32 px): "electron gun", "graphite", "glowing screen". On "rings" two coded teal rings light in the screen view. On "teacher demonstration" a safety chip "thousands of volts, evacuated glass: teacher demonstration", red pen ring round the supply. On "Turn up the voltage" the live control starts: a voltage slider on the supply with live readouts beside the screen view (52 px) "V = 3.0 kV", "v = 3.25 × 10⁷ m s⁻¹", "λ = 2.24 × 10⁻¹¹ m", "inner ring r ≈ 14 mm" (small grey tag "model tube"); the slider steps to 4.0 kV ("3.75 × 10⁷", "1.94 × 10⁻¹¹ m", "≈ 12 mm") and 5.0 kV ("4.19 × 10⁷", "1.73 × 10⁻¹¹ m", "≈ 11 mm") while the rings shrink smoothly; teal pen bracket on the inner ring's radius, teal hand tag "V up, rings shrink"; grey chip "11 to 14% of c: p = mv within 0.3%". On "predicts" a chip "V ↑ → v ↑ → p ↑ → λ ↓ → smaller rings" in a dark-ink frame.
 
 ### 10. why this counts as evidence
 > Why is this convincing? Peaks and rings come from waves overlapping, adding in some directions and cancelling in others. Particles on separate paths can't cancel each other out. And the wavelength measured from the pattern matches h over m v. The pattern and the number together make strong **evidence**. But the electrons are still particles too. Each one lands as a single spot, and the rings build up from many **spots**.
@@ -155,6 +168,8 @@ Visual: `QuestionCard`, worded as printed: "Explain how the diffraction of elect
 > De Broglie proposed that particles have a wavelength, h over m v. Electrons fired at a crystal give peaks at set angles, an interference pattern that only waves can make. And the wavelength found from the pattern matches h over m v, so the hypothesis is **confirmed**. The slip is saying electrons are waves and not particles. Each electron still arrives as a single **spot**.
 
 Visual: card shrinks to the top; "diffraction", "evidence" and "de Broglie's hypothesis" underline; the tube picture stays at the right (about 300 px). Lines write in turn (44 px): "hypothesis: λ = h/mv"; "pattern of peaks or rings = interference → wave behaviour" (teal pen ring round the rings); on "confirmed" "λ from pattern (d sin θ) = h/mv (Davisson and Germer: 1.65 vs 1.67 × 10⁻¹⁰ m)" in a dark-ink frame. On "spot" a chip "electrons are waves, not particles" fades in and is crossed in red (red hand tag "both: lands as a particle, spreads as a wave"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "explain: electrons diffracted by crystals | evidence for de Broglie's hypothesis". The card has no numbers, so the strip repeats its demand.
 
 ### 17. handoff
 > So electrons diffract, with exactly de Broglie's wavelength, and his idea explains Bohr's rule. But look again at the screen. Each electron lands as one tiny spot, and we can't say where the next one will land, only where it's likely to. If an electron spreads like a wave but arrives like a particle, what does its orbit really look like? Why do orbital probabilities replace literal electron **paths**?
@@ -228,6 +243,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad folder `m8v12
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,268 characters**, 18 scenes. Characters per scene (1 to 18): 353, 432, 325, 368, 443, 386, 324, 404, 563, 416, 342, 301, 263, 407, 98, 368, 400, 75. At 13.3 characters per second the speech is about 471 s; add 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 64 s of holds and countdowns; the scene 9 slider runs under its narration): **about 535 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,273 characters by the inter-scene convention (6,256 scene sum), about 551 s. Reserve trims if the voiced take runs long: scene 9's family surprise (keep the tags); scene 3's relativistic sentence (keep the chip); scene 10's "Particles on separate paths" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,268 characters). The notes scene is 45 s in all, so the estimate is about 535 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v11's final frame (designed in this wave, `phys-y12-m8-v11.md`): paper background; heading "How do hydrogen energy gaps predict Balmer wavelengths?"; at the upper left the boxed rule "mvr = nh/2π" with a grey chip "why?"; at the centre a dashed circular orbit around a small red nucleus with a navy standing wave wrapped round it, exactly three wavelengths, tag "n = 3: three whole wavelengths fit"; beside it a smaller crossed orbit where the wave does not join up, tag "doesn't fit: not allowed"; name tag "de Broglie, 1924" and tag "electron = wave?"; at the right an empty panel headed "evidence?"; chip "Next: what evidence shows that particles have wave behaviour?". Scene 1 turns the chip into the heading.
@@ -246,6 +263,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v12-learning-review.md`, `science_check` = `checks/p-y12-m8-v12-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -262,6 +281,8 @@ Kit gaps (for the v12 build brief):
 1. **Polar detector plot.** A detector arm sweeping an arc while a polar signal curve grows, with a set peak angle (50°), a live angle readout and a dashed prediction marker (Revision 2: no even-spread comparison curve).
 2. **Ring screen.** Concentric ring bands whose radii follow a set rule from a voltage readout, and a dot-accumulation mode (dots placed one at a time with probability following the ring bands, seeded and deterministic).
 3. **Standing-wave orbit** (shared with v11's kit gap 2): whole and non-whole wavelength versions, the non-whole one fading over laps.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the waves engine has no standing wave on a closed ring (a whole number of wavelengths round an orbit); the wrapped waves are lesson-coded.
 
 ## Codex asset brief
 
@@ -285,6 +306,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 4 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -333,3 +356,26 @@ New plate requests: none.
 Joins: the opening frame (v11's final frame) is unchanged; the tube plate enters on a scene 1 cue. The final frame (scene 17) is unchanged, so v13's opening holds.
 
 Counts: 6,256 to 6,268 characters (scene sum; Revision 1's headline 6,273 used the inter-scene convention); about 551 s to about 535 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the ring angles are tied to the waves engine and the single landing spots to the chance engine; the wrapped orbit waves stay lesson-coded (kit gap recorded).
+- Scenes 3 and 9: a bracket "on" a label and the "face-on" screen tag are reworded (visual text only, for the checking script).
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the waves engine has no standing wave on a closed ring (a whole number of wavelengths round an orbit); the wrapped waves are lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,268 characters, unchanged; about 535 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

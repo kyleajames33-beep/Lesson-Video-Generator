@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V22: Particle accelerators. How do accelerators create and test evidence about particles? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,432 characters, 21 scenes (18 teaching scenes, the notes hold, the course-end scene and a silent end hold), about 557 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v21's final frame. This is the last video of Year 12 Physics; it ends on a course-end frame.
 
@@ -79,6 +79,19 @@ Main question: *To make a Higgs boson, you need a collision with at least 125 Ge
 Entry knowledge: the Standard Model table (v21); scattering and wavelength (v20); W = qV (m6-v03); r = mv/(qB) (m6-v05); E = mc² (m7-v16); momentum conservation (Year 11).
 Stops after: electric acceleration, magnetic steering and focusing, linac, synchrotron, collider, detectors, testing and its limits; then the course close. No RF or detector engineering.
 Handoff: none (end of Year 12 Physics). Next for learners: exam practice.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the painted detector, scene 1 (about 20 s); (B) the two panels: why so much energy, scene 2 (about 26 s); (C) the voltage ladder, scene 3 (about 24 s); (D) the painted linac tunnel, scene 4 (about 27 s); (E) the ring, scene 5 (about 27 s); (F) the ring beside the field ramp with its energy slider, scene 6 (about 30 s); (G) the working layout, scene 7 (about 34 s); (H) the storage ring and its light, scene 8 (about 30 s); (I) the large ring with head-on beams, scene 9 (about 28 s); (J) the painted detector and its layers, then the signatures, scenes 10 and 11 (about 64 s; the layer view enlarges at about 31 s); (K) the two-photon bump, scene 12 (about 32 s); (L) the energy scale and its three limits, scene 13 (about 28 s); (M) the memory card, scene 14 (about 8 s); question and feedback cards; the notes board; the course-end frame and its silent hold. No set-up runs past about 64 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The tracks in the detector's tracker layer (scenes 10 and 11) run on the field motion engine (`field-motion.ts`, a `magnetic` field, drawn with `FieldMotionView`): each charged particle is a run set by its sign of charge and its momentum (r = p/qB holds at any speed), so opposite charges curve opposite ways and higher momentum curves less, while the photon and the neutrino are straight lines with no force. The ring itself is not an engine run: the engine is not relativistic, so the orbit in scenes 5 and 6 and the field ramp are exact arithmetic (B = p/(qr) at fixed r), lesson-coded, with "p" and "B" computed from the energy slider.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -174,6 +187,8 @@ Visual: `QuestionCard`, worded as printed: "Explain the roles of the electric an
 
 Visual: card shrinks to the top; "roles" and "must increase" underline; command strip "Explain: both fields, then why B rises"; the ring picture stays at the right, gaining an amber arrow in the gap and navy arrows in the magnets as the rows write (44 px). On "energy" row "electric field: F along v → does work → KE ↑ (each pass)". On "ring" row "magnetic field: F ⊥ v → no work → steers (centripetal force)". On "rises" row "r = p/(qB), r fixed → B ∝ p" in a dark-ink frame. On "up" a chip "the magnetic field speeds the particles up" fades in and is crossed in red (red hand tag "B steers; E pushes"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "explain: the roles of the electric and magnetic fields in a synchrotron | why B must rise as the particles gain energy".
+
 ### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
@@ -248,6 +263,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad folder `m8v18
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,432 characters**, 21 scene headings (18 teaching scenes, the notes hold, the course-end scene and a silent end hold; the silent hold has no narration). Characters per scene (1 to 21): 263, 341, 321, 365, 362, 405, 451, 400, 371, 416, 442, 426, 368, 111, 212, 253, 171, 369, 75, 310, 0. At 13.3 characters per second the speech is about 484 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, about 40 s more of the quiet notes hold (45 s in all), 3 s of course-end hold and 3 s of silent end hold (about 73 s of holds and countdowns; the ramp slider runs under its narration): **about 557 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,384 characters, about 568 s. Reserve trims if the voiced take runs long: scene 8's protein sentence; scene 11's momentum sentence pair (keep the arrows); scene 12's W and Z sentence (keep the tag).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,432 characters). The notes scene is 45 s in all, so the estimate is about 557 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v21's final frame (`phys-y12-m8-v21.md`, "Final frame"): paper background; heading "How does the Standard Model organise particles and interactions?"; the full coded Standard Model table (quarks and leptons in three generation columns, carriers block, gold Higgs ring, grey gravity box outside); generation 1 and the photon bright, every other cell lit with a small gold tag "made in collisions"; behind the table a thin coded ring outline with two dots circling in opposite directions and a small flash where they meet, tag "?"; chip "Next: how do accelerators create and test evidence about particles?". Scene 1 pulses the gold tags, enlarges the H and t cells, brightens the ring and turns the chip into the heading.
@@ -268,6 +285,8 @@ Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countd
 
 Note for the build: the course-end scene comes after the key notes, unlike the other designs, because the brief asks v22's final frame to close the course.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -285,6 +304,8 @@ Kit gaps (for the v22 build brief):
 2. **Detector layers with missing momentum.** `m8-accelerator` extended with schematic signatures per particle type and a head-to-tail momentum sum that fails to close.
 3. **Two-photon bump.** A schematic histogram with background and a cue-driven bump, permanently labelled "schematic, not real data".
 4. **Course-end frame.** Four module thumbnails reusing existing coded views (M5 projectile and orbit, M6 circle in B, M7 wave and spectrum, M8 table).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the field motion engine is not relativistic, so the synchrotron's ring and field ramp are lesson arithmetic; an accelerator part (gaps that push, magnets that ramp) would need the relativity kit recorded for Module 7.
 
 ## Codex asset brief
 
@@ -307,6 +328,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -357,3 +380,25 @@ New plate requests: none.
 Joins: the opening frame (v21's final frame) is unchanged. The course-end frame and the silent end hold (root decision 13: four module thumbnails and "Year 12 Physics: complete") are unchanged.
 
 Counts: 6,384 to 6,432 characters (scene sum); about 568 s to about 557 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the tracker's curved tracks are tied to the field motion engine; the ring and field ramp stay exact arithmetic (kit gap recorded).
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the field motion engine is not relativistic, so the synchrotron's ring and field ramp are lesson arithmetic; an accelerator part (gaps that push, magnets that ramp) would need the relativity kit recorded for Module 7.
+
+Joins: the opening frame and the course-end frame (with its silent hold) are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,432 characters, unchanged; about 557 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

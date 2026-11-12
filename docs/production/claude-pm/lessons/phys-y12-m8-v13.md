@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V13: Schrödinger and the quantum model of the atom. Why do orbital probabilities replace literal electron paths? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,632 characters, 18 scenes, about 489 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v12's final frame.
 
@@ -67,6 +67,19 @@ Main question: *If an electron lands as a single spot but spreads like a wave, c
 Entry knowledge: electron diffraction and standing waves on orbits (v12); Bohr's model and its limits (v10, v11); standing waves on strings (Year 11).
 Stops after: Bohr's two problems, Schrödinger's wave approach and allowed states, probability, the orbital, shapes, the contrast, the assessment. No uncertainty, quantum numbers or wavefunction mathematics.
 Handoff: v14, what changes in a nucleus during alpha, beta and gamma decay.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted tube under the ring screen, one spot at a time, scene 1 (about 22 s); (B) Bohr's orbit with its two problem chips, scene 2 (about 25 s); (C) the nucleus beside the painted guitar: the wave equation, then standing waves, scenes 3 and 4 (about 61 s; the string's standing waves start at about 30 s); (D) the slice through the atom with the probability probe, scene 5 (about 29 s); (E) the cloud built from measurements, then "no path", scenes 6 and 7 (about 54 s); (F) the orbital shapes, scene 8 (about 24 s); (G) the comparison table, then the two words, scenes 9 and 10 (about 47 s); (H) the assessment board, scenes 11 and 12 (about 53 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The cloud in scenes 6 and 7 is built by the chance engine (`chance.ts`): a `weighted` experiment whose outcomes are small regions of the slice weighted by the hydrogen 1s probability, shown with `trialsShown` (a few measurements slowly, then fast), with the live "measurements" count read from the same run. Each dot is one draw, so the cloud is denser near the nucleus because the weights are. The standing waves on the guitar string in scene 4 come from the waves engine (`waves.ts`, `standingMode` with fixed ends, drawn with `WaveStringView`): one, two and three loops are real modes. The probability probe in scene 5 is the exact 1s formula, lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -142,6 +155,8 @@ Visual: `QuestionCard` (subject "Physics"), worded as printed: "Distinguish betw
 
 Visual: card shrinks to the top; "orbit" and "orbital" underline; command-word strip "Distinguish: both sides"; the card's picture stays at the right, its empty box filling with a teal cloud on "all". Two lines write in turn (44 px): "orbit: definite 2D circular path, fixed radius, definite position"; on "all" "orbital: 3D region, probability of finding the electron at each point, no path"; both lines framed together in a dark-ink box. On "along" a chip "orbital = the fuzzy path it travels" fades in and is crossed in red, red hand tag "no path at all". Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "distinguish: an electron orbit (Bohr) | an orbital (Schrödinger)". The card has no numbers, so the strip repeats its demand.
+
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Assess the contribution of Schrödinger to the current model of the atom. Pause here to answer.
 
@@ -151,6 +166,8 @@ Visual: `QuestionCard`, worded as printed: "Assess the contribution of Schrödin
 > Bohr's model assumed quantised orbits, and only worked with one electron. Schrödinger treated the electron as a three dimensional wave. Allowed energies came out of his equation, and it works for all atoms, giving orbitals as regions of **probability**. Limits are that we lose any picture of the motion, and bigger atoms need approximations. So it's a foundational contribution. The slip is saying Schrödinger found the electron's exact **path**.
 
 Visual: card shrinks to the top; "Assess" and "contribution" underline; command-word strip "Assess: strengths, limits, judgement"; the timeline picture stays at the right. Lines write in turn (44 px): "before: Bohr, quantisation assumed, one electron only"; "contribution: electron as a 3D wave; energies from the equation; works for all atoms"; on "probability" "orbitals: probability regions, not paths"; on "lose any picture of the motion" "limits: no picture of motion; approximations beyond one electron"; on "foundational contribution" "judgement: foundational (current model)" in a dark-ink frame. On "path" a chip "Schrödinger worked out the electron's exact path" fades in and is crossed in red, red hand tag "probabilities, not paths". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "assess: Schrödinger's contribution to the current model of the atom". The card has no numbers, so the strip repeats its demand.
 
 ### 17. handoff
 > So the current model describes electrons as clouds of probability, not as little planets on paths. But look at the very centre of the cloud. The nucleus is about a hundred thousand times smaller than the atom, packed with protons and neutrons. And some nuclei don't stay the same. They throw out particles, or energy, and change. So what changes in a nucleus during alpha, beta and gamma **decay**?
@@ -213,6 +230,8 @@ Model answer: Bohr's model assumed quantised circular orbits and worked quantita
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,632 characters**, 18 scenes. Characters per scene (1 to 18): 292, 328, 397, 411, 385, 335, 392, 323, 460, 157, 395, 312, 125, 308, 104, 439, 394, 75. At 13.3 characters per second the speech is about 423 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 5 probe runs under its narration): **about 489 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,629 characters by the inter-scene convention (5,612 scene sum), about 504 s. Reserve trims if the voiced take runs long: scene 8's chemistry clause; scene 11's periodic table clause; scene 2's last sentence (keep the split label).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,632 characters). The notes scene is 45 s in all, so the estimate is about 489 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v12's final frame (designed in this wave, `phys-y12-m8-v12.md`): paper background; heading "What evidence shows that particles have wave behaviour?"; at the upper left, small, the boxed rule "mvr = nh/2π" with a tick; at the left a coded circular glowing screen (from the electron diffraction tube) showing two teal ring bands built of many navy dots, with a few new single dots arriving and a dashed navy marker "next?" hovering; a faint teal shading over the ring bands tagged "likely"; at the right a small red nucleus with the dashed n = 1 orbit fading out, its navy standing wave almost gone, and a soft grey haze around the nucleus, tag "a path?"; chip "Next: why do orbital probabilities replace literal electron paths?". Scene 1 turns the chip into the heading.
@@ -231,6 +250,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v13-learning-review.md`, `science_check` = `checks/p-y12-m8-v13-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -244,6 +265,8 @@ Coded: the ring screen and dots, the Bohr orbit, waves, the helium icon, energy 
 Kit gaps (for the v13 build brief):
 1. **String to atom morph.** A standing wave on a straight segment (aligned to the guitar plate's top string) that bends into a radial wave around a nucleus with an energy well under it.
 2. **Orbital shapes.** Soft 3D 1s, 2s and 2p lobes on rotating axes (illustrative, not plotted from wavefunctions; label "shapes, not to scale").
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -263,6 +286,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 and 2 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -308,3 +333,25 @@ New plate requests: none.
 Joins: the opening frame (v12's final frame, unchanged by v12 Revision 2) is unchanged; the tube enters on a scene 1 cue. The final frame (scene 17) is unchanged, so v14's opening holds.
 
 Counts: 5,612 to 5,632 characters (scene sum; Revision 1's headline 5,629 used the inter-scene convention); about 504 s to about 489 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the measurement cloud is tied to the chance engine and the guitar string's standing waves to the waves engine; the probability probe stays an exact formula.
+- Question cards: both already carry pictures; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,632 characters, unchanged; about 489 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The cloud's regions and their weights come from the 1s formula; the seed is chosen by looking, so that the first few slow dots do not all land in one place.

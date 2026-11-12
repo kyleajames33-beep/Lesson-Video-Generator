@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V09: Chadwick's discovery of the neutron. What evidence established an uncharged massive particle in the nucleus? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,159 characters, 18 scenes, about 529 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v08's final frame.
 
@@ -71,6 +71,20 @@ Entry knowledge: the nucleus and proton (v08); photons and the electron volt (Mo
 Stops after: beryllium radiation, paraffin protons, the gamma contradiction, Chadwick's neutron, the two-target mass, the completed nucleus. No quarks; no electron-orbit problem.
 Handoff: v10, why Rutherford's model could not explain stable atoms and line spectra.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the gold nucleus with its missing mass and the painted gold ring, scene 1 (about 38 s); (B) the beam line of painted plates: the source and lead, then the paraffin, scenes 2 and 3 (about 66 s; the wax and its protons arrive at about 30 s); (C) the energy-transfer inset, scene 4 (about 30 s); (D) the beam line with nitrogen in place of the wax, scene 5 (about 27 s); (E) the neutron stage, then the two tracks through lead, scenes 6 and 7 (about 56 s); (F) the live target-mass slider, scene 8 (about 31 s); (G) the two targets and their ratio, scene 9 (about 37 s); (H) the full-width working, scene 10 (about 23 s); (I) the gold nucleus completed, scene 11 (about 17 s); (J) the two insets and the memory card, scene 12 (about 13 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 66 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: the heart of this video is a head-on collision between two bodies, and the kit has no two-body collision engine. The target-mass slider in scene 8 is exact arithmetic (recoil speed ÷ neutron speed = 2m_n/(m_n + m), energy share = 4m_n m/(m_n + m)²), lesson-coded, with the two discs on the track moving at the computed speeds.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Gas cell and balls are plates.** The nitrogen gas cell in scenes 5 and 9 is the painted glass cell requested for the Module 7 spectra video (`y12p-vapour-cell-v1.png`), tagged "nitrogen gas"; its fallback is a dashed region with the same tag and no object drawn. The two billiard balls in scene 6 are two steel ball plates (`phys-y11-steel-ball-v1.png`). The abstract collision discs (photon, proton, neutron, the "ping-pong" and "bowling" pair) stay plain tagged discs.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *m_n*, *m_p*, *v_p*, *v_N*, *E*.
@@ -100,10 +114,14 @@ Visual: board change to the energy-transfer inset. On "A photon has no mass" an 
 
 Visual: camera change back to the beam line with the paraffin swapped for a coded gas cell "nitrogen gas" (the painted source, bricks and ionisation chamber stay, solid). On "measured the fastest nitrogen recoils" larger red "N" discs leave with short teal arrows, tag "fastest nitrogen recoils (head-on)". On "about ninety million electron volts, by his own estimate" the contradiction board: two amber bars for the same beam, "from protons: ≈ 55 MeV" and "from nitrogen: ≈ 90 MeV (Chadwick's estimate)", with a red "≠", red pen ring round the "≠". On "energy" the 16 MeV line from scene 4 crosses both bars, tag "too big for the reaction". On "itself" the "≠" pulses, red hand tag "one beam, two answers"; the "γ?" label on the stream is crossed.
 
+Upgrade (Revision 3): The nitrogen sits in the painted glass cell (about 300 px tall), tagged "nitrogen gas", not a coded cell. Fallback: a dashed region with the same tag.
+
 ### 6. Chadwick's neutron
 > Chadwick proposed a different answer. The radiation is a stream of uncharged particles, each with about the mass of a proton. He called them neutrons. Now picture a head-on elastic collision between equal masses, from Year 11. The moving one stops, and the target moves off with all the speed, like one billiard ball hitting another. So a neutron with five point seven million electron volts can hand all of it to a **proton**.
 
 Visual: board change: the stream relabels "n (neutrons): no charge, mass ≈ m_p". On "uncharged particles" grey discs "n" replace the dashed stream. On "about the mass of a proton" a balance-bar inset: "n" and "p" level. On "a head-on elastic collision between equal masses" the equal-mass inset: a grey "n" strikes a red "p" at rest. On "The moving one stops" the "n" stops dead; on "all the speed" the "p" leaves with the full teal arrow, tag "equal masses, head-on: full hand-over"; on "like one billiard ball hitting another" two coded billiard balls repeat the motion (no cue, no table edge figures). On "proton" an orange bar "n: 5.7 MeV" transfers wholly to "p: 5.7 MeV" (framed); the 16 MeV line sits well above it, tag "possible". Marks (Revision 2): grey hand tag "neutron: no charge, mass ≈ m_p"; teal pen arrow along the proton's full-speed path; ink hand tag "billiard on billiard".
+
+Upgrade (Revision 3): The two billiard balls are two steel ball plates of equal size (about 60 px), not coded balls.
 
 ### 7. why it got through lead
 > Being uncharged also explains the lead. A charged particle tugs on electrons all along its path, knocking them off atoms and losing energy fast. A neutron feels no electric force, so it slips through until it strikes a **nucleus**. And the reaction balances. Helium four plus beryllium nine gives carbon twelve plus one **neutron**.
@@ -119,6 +137,8 @@ Visual: board change to the live target-mass slider (the lesson's simulation) be
 > But the neutron's speed is unknown too. So write the rule once for protons, and once for nitrogen nuclei, about fourteen times heavier, using the fastest recoil of each, from head-on hits by the fastest neutrons. Then divide. The unknown speed cancels. The fastest protons recoiled at three point three times ten to the seven metres per second, and the fastest nitrogen nuclei at four point seven times ten to the **six**. So seven point zero two equals m n plus fourteen m p, over m n plus m **p**.
 
 Visual: camera change (a new stage): the recoil rule framed at the top, the painted paraffin slab (about 240 px) and a coded nitrogen cell at the left as the two targets. Givens grouped: "v_p (max, head-on) = 3.3 × 10⁷ m s⁻¹ (paraffin)", "v_N (max, head-on) = 4.7 × 10⁶ m s⁻¹ (nitrogen)", "m_N ≈ 14 m_p"; teal hand tag "same fastest neutrons for both". On "write the rule once for protons" "v_p = 2m_n v / (m_n + m_p)"; on "once for nitrogen nuclei" "v_N = 2m_n v / (m_n + 14m_p)". On "Then divide" a fraction bar joins them; on "The unknown speed cancels" "2m_n v" strikes out top and bottom, red pen strokes. On "six" "v_p / v_N = (m_n + 14m_p) / (m_n + m_p)"; beside it a small chip "v_p / v_N = (m_n + m_p) / (m_n + 14m_p)" crossed in red, red hand tag "heavier target, slower recoil". On "p" "(3.3 × 10⁷) / (4.7 × 10⁶) = 7.02 = (m_n + 14m_p) / (m_n + m_p)".
+
+Upgrade (Revision 3): The nitrogen target at the left is the same painted glass cell (about 240 px), or the dashed region of the fallback.
 
 ### 10. solve for the mass
 > Cross-multiply and solve, and the neutron's mass is about one point one six proton **masses**. Chadwick's own estimate was close, within his measurement errors. Today's data-sheet value is one point six seven five times ten to the minus twenty seven kilograms, just a tenth of a percent heavier than a **proton**.
@@ -228,6 +248,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,159 characters**, 18 scenes. Characters per scene (1 to 18): 505, 401, 475, 402, 353, 423, 324, 412, 491, 305, 227, 177, 355, 389, 139, 305, 401, 75. At 13.3 characters per second the speech is about 463 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 8 slider runs under its narration): **about 529 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,020 characters (scene sum; 6,037 with inter-scene spaces), about 535 s. Reserve trims if the voiced take runs long: scene 1's proton-electron sentence (keep the crossed tag); scene 7's lead explanation to one sentence; scene 10's "Chadwick's own estimate" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,159 characters). The notes scene is 45 s in all, so the estimate is about 529 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v08's final frame (`phys-y12-m8-v08.md`, Revision 2): paper background; heading "Why did scattering require a tiny dense nucleus?"; at the centre a large coded gold nucleus (red disc, tag "enlarged") labelled "+79e", partly filled with small red "p" discs; tag "proton: charge +e, mass m_p (Rutherford, 1920)"; a charge bar "79 protons → +79e ✓" and a mass bar "79 protons → 79 m_p" filled red, the rest to "197 m_p" a grey dashed gap with a grey hand tag "≈ 118 m_p missing" and a grey pen bracket, and the tag "charge 0?"; chip "Next: what evidence established an uncharged massive particle in the nucleus?". Scene 1 turns the chip into the heading and adds the gold ring beside the nucleus.
@@ -246,6 +268,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v09-learning-review.md`, `science_check` = `checks/p-y12-m8-v09-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (Revision 2; all inspected 7 Nov; scaled uniformly, never stretched, never above native size):
@@ -260,6 +284,8 @@ Coded: alpha dots, the radiation stream, photons, neutrons, protons, nitrogen nu
 Kit gaps (for the v09 build brief):
 1. **Beam line.** Plates placed left to right with a coded stream whose label and icon change (radiation?, γ?, n) and particles leaving targets with teal speed arrows.
 2. **Energy-transfer inset.** Collision of two coded discs with set mass ratio showing the share of kinetic energy passed on (orange bars).
+
+Revision 3 (13 Nov 2026). Scenes 5 and 9 reuse the plate requested in `phys-y12-m7-v03.md` (`y12p-vapour-cell-v1.png`); it is not a second request. Existing plate newly used in scene 6 (confirmed by file listing): `phys-y11-steel-ball-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no two-body collision engine (item 2 on the "wanted next" list: collisions on a track with before and after bars). It would serve this video directly.
 
 ## Codex asset brief
 
@@ -285,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 and 2 under Decisions to root.
 12. Revision 2: confirm the speed attributions (3; author note g); "about ninety million" as Chadwick's own estimate (5; author note b); "fastest" and "head-on" for both targets (3, 5, 9, givens); "no direct ionisation" (7; author note h); the ± 10% tag on the nitrogen speed with the 0.9 to 1.4 m_p range (10); grouped denominators (8, 9, 10 chip); the slider values; the two new crossed slips.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -336,3 +364,26 @@ New plate requests: none.
 Joins: the opening is v08's Revision 2 final frame (its "missing" tag is now a hand tag with a pen bracket); scene 1 adds the gold ring. The final frame (scene 17) is unchanged apart from one rose hand tag "radiates?", recorded in v10's opening.
 
 Counts: 6,020 to 6,159 characters (scene sum); about 535 s to about 529 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the target-mass slider stays exact lesson arithmetic (kit gap recorded).
+- Scenes 5, 6 and 9: the coded gas cell becomes the vapour cell requested for Module 7 (same plate, same fallback); the coded billiard balls become steel ball plates.
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no two-body collision engine (item 2 on the "wanted next" list: collisions on a track with before and after bars). It would serve this video directly.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,159 characters, unchanged; about 529 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V08: Rutherford scattering and the nucleus. Why did scattering require a tiny dense nucleus? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,918 characters, 17 scenes, about 514 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v07's final frame.
 
@@ -73,6 +73,19 @@ Main question: *How could a sheet of gold foil throw an alpha particle straight 
 Entry knowledge: electrons and the plum-pudding model (v07); Coulomb's law (Year 11).
 Stops after: Geiger-Marsden results, Thomson's failed prediction, Rutherford's reasoning and model, the scale, the model's bounds. No neutron, no radiation problem.
 Handoff: v09, what evidence established an uncharged massive particle in the nucleus.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the plum-pudding atom, then the foil and the painted chamber, scene 1 (about 39 s); (B) the alpha particle and the chamber cutaway, scene 2 (about 33 s); (C) the scattering stage, Thomson version, scene 3 (about 34 s); (D) the chamber with the live detector arm, then the Thomson stage beside the reversing path, scenes 4 and 5 (about 56 s); (E) the Coulomb distance slider, then the two collision insets, scenes 6 and 7 (about 58 s); (F) the scattering stage, Rutherford version, then large nuclei beside it, scenes 8 and 9 (about 60 s); (G) the nuclear model, scene 10 (about 24 s); (H) the chamber and the memory card, scene 11 (about 11 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every alpha path runs on the field motion engine (`field-motion.ts`, a `custom` field, drawn with `FieldMotionView`). In the Rutherford stage (scenes 5, 8 and 9) the force is a repulsive 1/r² from a point nucleus, and each path is its own run with its own aiming distance, so the straight, bent and reversed paths are computed. In the Thomson stage (scenes 3 and 5) the force is that of the same charge spread through a whole atom (it grows only in proportion to distance inside the sphere), so every run bends by a tiny angle. The "large angles" counters count the runs that turn past 90°. The Coulomb slider (scene 6) is exact arithmetic. The detector arm's relative rates are the design's illustrative values, tagged so on screen.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -226,6 +239,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,918 characters**, 17 scenes. Characters per scene (1 to 17): 517, 436, 453, 405, 351, 465, 312, 361, 437, 315, 147, 357, 414, 188, 275, 410, 75. At 13.3 characters per second the speech is about 445 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 4 arm runs under its narration): **about 514 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,679 characters (scene sum; 5,695 with inter-scene spaces), about 512 s. Reserve trims if the voiced take runs long: scene 4's quote (keep the card); scene 6's Year 11 sentence; scene 9's oval sentence (keep the drawing).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,918 characters). The notes scene is 45 s in all, so the estimate is about 514 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v07's final frame (`phys-y12-m8-v07.md`, Revision 2, which adds one navy hand tag "tiny, negative, light" on the electrons): paper background; heading "How did cathode rays and oil drops reveal the electron?"; at the centre Thomson's plum-pudding model: a uniform pale red sphere labelled "spread-out positive charge" with evenly scattered navy electron dots labelled "electrons"; tag "Thomson's guess, 1904: the plum-pudding model"; from the left a coded alpha particle (small amber circle "α (+)") with a dashed path heading for the sphere and ending in "?"; chip "Next: why did scattering require a tiny dense nucleus?". Scene 1 turns the chip into the heading, fades v07's hand tag and shrinks the sphere into the foil.
@@ -244,6 +259,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v08-learning-review.md`, `science_check` = `checks/p-y12-m8-v08-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (Revision 2; inspected 7 Nov; scaled uniformly, never stretched, never above native size):
@@ -258,6 +275,8 @@ Coded: alpha particles and paths, atoms, nuclei, plum-pudding washes, force arro
 Kit gaps (for the v08 build brief):
 1. **Scattering stage.** Thomson version (washes, hairline nudges, zigzag cancellation) and Rutherford version (`m8-rutherford`: impact-parameter-dependent paths, rare reversal), with an angle counter.
 2. **Chamber arm.** The microscope-and-screen layer rotating about the foil centre with flash frequency set by angle (schematic).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no two-body collision engine (item 2 on the "wanted next" list), so the light-centre and heavy-centre collision insets in scene 7 are lesson-coded.
 
 ## Codex asset brief
 
@@ -280,6 +299,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 4 under Decisions to root.
 12. Revision 2: confirm no learner copy gives 1 in 8000 as a thin-gold result (4, 9, 12, notes, model answer; author note f); the closest-approach force comparison (6; author note c); "almost never", "vanishingly rare" and "anywhere near often enough" in place of impossibility (3, 5, 13, model answer; author note i); the energetic-return condition (7; author note g); the modern-size wording (9); the arm readouts.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -331,3 +352,25 @@ New plate requests: none.
 Joins: the opening is v07's Revision 2 final frame (its new hand tag fades in scene 1). The final frame (scene 16) keeps its content; the "missing" tag becomes a hand tag with a pen bracket, recorded in v09's opening.
 
 Counts: 5,679 to 5,918 characters (scene sum); about 512 s to about 514 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the Thomson and Rutherford scattering stages and their large-angle counters are tied to the field motion engine; the collision insets stay lesson-coded (kit gap recorded).
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no two-body collision engine (item 2 on the "wanted next" list), so the light-centre and heavy-centre collision insets in scene 7 are lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,918 characters, unchanged; about 514 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The cricket oval in scene 9 stays a plain top-down outline tagged "cricket oval" (a scale picture, like the road outlines in Module 5).

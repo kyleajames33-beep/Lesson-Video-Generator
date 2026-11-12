@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V21: The Standard Model. How does the Standard Model organise particles and interactions? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,213 characters, 19 scenes (18 narrated scenes and the notes hold), about 536 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v20's final frame.
 
@@ -79,6 +79,20 @@ Entry knowledge: quarks u and d, hadrons and leptons (v20); antimatter (m7-v16);
 Stops after: the table of quarks and leptons, antimatter and charge accounting, the four forces and their carriers, the weak force at quark level, the Higgs, and gravity outside. No accelerators.
 Handoff: v22, how accelerators create and test evidence about particles.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's organising board, then its two blocks, scenes 1 and 2 (about 43 s); (B) the full table: six quarks, then six leptons, scenes 3 and 4 (about 62 s; the second row fills from about 37 s); (C) the antiparticle mirror, scene 5 (about 31 s); (D) the charge accounting, scene 6 (about 27 s); (E) the force comparison, scene 7 (about 43 s); (F) the exchange picture with two boats, scene 8 (about 26 s); (G) range from mass with the carrier-mass slider, scene 9 (about 30 s); (H) beta decay at the quark level, scene 10 (about 28 s); (I) the table with the painted detector: the Higgs, then what is missing, scenes 11 and 12 (about 62 s; the table shrinks left at about 34 s); (J) the memory card, scene 13 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine is needed: the table's kinds counter is a count, the charge sums are arithmetic, and the carrier-mass slider in scene 9 is the design's labelled extension estimate. All stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The boats are plates.** The two boats in scene 8 are the painted top-view boats (`phys-y11-boat-top-white-v1.png` and `phys-y11-boat-top-red-v1.png`, about 260 px long each, no people) on a plain pale blue band. The bag is a plain dark disc with the hand tag "heavy bag", moving on a dashed arc; no bag is drawn. The "acts on" pictures in scene 7 are small diagrams (quark dots, a charge pair, a lepton dot) and, for gravity, a small copy of the painted Sun.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *e*, *u*, *d*, *s*, *W*, *Z*.
@@ -118,10 +132,14 @@ Visual: board change to charge accounting (a new set-up, solid from the first fr
 
 Visual: board change to the force comparison (a new set-up, solid from the first frame with its four rows and empty bars): four rows "strong", "electromagnetic", "weak", "gravity"; columns "range" (log bars) and "acts on" (icons). On "The strong force is the strongest" stepped strength bars appear, strong tallest; on "acts on quarks" icon "quarks (inside hadrons)"; on "about the width of a nucleus" its range bar "≈ 10⁻¹⁵ m" labelled "leftover pull between nucleons", violet hand tag "two settings: inside hadrons, between nucleons". On "reaches forever" (first) the EM bar runs off the axis "unlimited", icon "charged particles". On "acts on all quarks and leptons, even neutrinos" weak range "≈ 10⁻¹⁸ m", icon "all quarks and leptons". On "Gravity is by far the weakest" gravity strength bar tiny, range "unlimited", icon "everything with mass-energy". On "out" a grey tag "strength order: strong > EM > weak > gravity (guide values only)" and a small inset of a neutral planet pair attracting; grey pen ring round gravity's tiny bar, grey hand tag "weakest, but always attracts".
 
+Upgrade (Revision 3): The "acts on" pictures are small diagrams; the gravity row uses a small copy of the painted Sun (`phys-y11-sun-v1.png`, about 70 px) for "anything with mass".
+
 ### 8. forces as exchanges
 > In the Standard Model, a force happens when particles exchange a carrier. Picture two boats on a lake, passing a heavy bag from one to the other. Each boat recoils, so they drift **apart**. In the same way, two electrons repel by exchanging photons. The strong force is carried by gluons, between quarks. The weak force is carried by the W and Z **bosons**.
 
 Visual: board change to the exchange sketch: two coded boats on a pale blue lake (no figures). On "passing a heavy bag from one to the other" a coded bag arcs from the left boat to the right. On "apart" both boats drift outwards, recoil arrows; grey chip "analogy: shows repulsion only", grey pen arrows on the recoils. On "two electrons repel by exchanging photons" two navy dots with an amber diamond "γ" passing between them, moving apart. On "carried by gluons, between quarks" a violet diamond "g" between two quark dots. On "bosons" slate diamonds "W⁺, W⁻, Z⁰"; the carriers block of the table fills: "γ photon (EM)", "g gluon (strong)", "W±, Z (weak)"; grey tag "exchanged carriers: 'virtual particles'"; the kinds counter reads "16".
+
+Upgrade (Revision 3): The two boats are the painted top-view boats seen from above (about 260 px long each), drifting apart as the disc tagged "heavy bag" passes from one to the other. No coded boats and no figures are drawn.
 
 ### 9. why some forces are short
 > Why is the weak force so short-ranged? Its carriers are heavy, about eighty-five to a hundred times a proton's mass. The heavier the exchanged carrier, the shorter the distance the force can reach. The photon has no mass, so electromagnetism reaches forever. Gluons have no mass either, but they're confined, trapped with the quarks inside protons and neutrons, so the strong force is short-ranged **too**.
@@ -167,6 +185,8 @@ Visual: `QuestionCard`, worded as printed: "Identify the fundamental force respo
 > Beta decay changes a down quark into an up, so it's the weak force, carried by the W minus **boson**. Quarks are held together by the strong force, carried by **gluons**. Electrons repel through the electromagnetic force, carried by **photons**. The slip is calling beta decay the strong force, just because it happens in a nucleus. Only the weak force changes quark **type**.
 
 Visual: card shrinks to the top; "force" and "carrier" underline; the three panels stay at the right; rows write in turn (44 px), each framed as it completes. On "boson" row "(i) weak: W⁻ (d → u)". On "gluons" row "(ii) strong: gluons". On "photons" row "(iii) electromagnetic: photons". On "type" a chip "beta decay: strong force (it's in the nucleus)" fades in and is crossed in red (red hand tag "flavour change → weak"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "(i) beta-minus decay of a neutron | (ii) quarks bound inside a proton | (iii) two electrons repelling".
 
 ### 18. handoff
 > Look at the table again. Most of it never turns up in ordinary matter. Charm, strange, top and bottom, the muon and the tau, the W, the Z and the Higgs all had to be made, and then caught, before anyone could test the theory. So how do accelerators create and test evidence about **particles**?
@@ -241,6 +261,8 @@ Checked with Python (6 Nov, scratchpad folder `m8v18-22`); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,213 characters**, 19 scene headings (18 narrated scenes and the notes hold). Characters per scene (1 to 19): 291, 283, 496, 334, 409, 361, 576, 349, 402, 368, 446, 371, 92, 207, 325, 178, 360, 290, 75. At 13.3 characters per second the speech is about 467 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the slider and counter run under their narration): **about 536 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,092 characters, about 542 s. Reserve trims if the voiced take runs long: scene 9's gluon sentence (open decision 3); scene 3's gold atom sentence; scene 12's neutrino sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,213 characters). The notes scene is 45 s in all, so the estimate is about 536 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v20's final frame (`phys-y12-m8-v20.md`, "Final frame"): paper background; heading "What evidence shows that protons and neutrons have smaller constituents?"; an organising board: a column headed "quarks" with "u (+⅔)" and "d (−⅓)" filled and four dashed empty slots marked "?"; a column headed "leptons" with "e⁻", "μ⁻" and "ν" filled and three dashed empty slots; a thin row "antimatter partners" with a mirror icon; an empty column headed "forces?" with four dashed slots; chip "Next: how does the Standard Model organise particles and interactions?". Scene 1 pulses each part of the board and turns the chip into the heading; scene 2 turns the board into the table's two blocks.
@@ -259,6 +281,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v21-learning-review.md`, `science_check` = `checks/p-y12-m8-v21-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -275,6 +299,8 @@ Kit gaps (for the v21 build brief):
 2. **Antiparticle mirror.** Reflection of table cells with label bars and sign flips.
 3. **Exchange sketch and range from mass.** Boats with a bag, then a carrier diamond whose travel shrinks with a mass readout.
 4. **Quark-level beta decay.** A boundary of three quark dots with one changing and a W diamond splitting into e⁻ and ν̄.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-boat-top-white-v1.png`, `phys-y11-boat-top-red-v1.png` (scene 8). New plate requests: none.
 
 ## Codex asset brief
 
@@ -293,6 +319,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the two top-view boat plates show no people and read as boats at about 260 px.
 
 ## YouTube metadata (draft)
 
@@ -341,3 +369,26 @@ New plate requests: none.
 Joins: the opening frame (v20's final frame) is unchanged. The final frame (scene 18) is unchanged, so v22's opening holds.
 
 Counts: 6,092 to 6,213 characters (scene sum); about 542 s to about 536 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine is needed (counts, sums and a labelled estimate).
+- Scene 8: the coded boats become the painted top-view boats; the bag is a plain tagged disc.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,213 characters, unchanged; about 536 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The "heavy bag" in scene 8 is a plain disc with a hand tag, because no bag plate exists and the 26 s analogy does not justify a new one; say if a painted bag is wanted.

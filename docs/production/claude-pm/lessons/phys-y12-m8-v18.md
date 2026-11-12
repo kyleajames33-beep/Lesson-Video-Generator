@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V18: Fission chain reactions. Why can one fission event trigger a controlled or uncontrolled chain? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,435 characters, 19 scenes (18 narrated scenes and the notes hold), about 553 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v17's actual final frame (root decision 9; see "Opening frame").
 
@@ -76,6 +76,20 @@ Entry knowledge: Q from atomic masses and its sign (v17); binding energy per nuc
 Stops after: the fission event and its energy, the chain and k, critical mass, the moderator and control rods, controlled against uncontrolled, OPAL. No reactor engineering, no fusion.
 Handoff: v19, why fusion can release energy despite repulsion between nuclei.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, with the painted reactor pool as a preview, scene 1 (about 31 s); (B) one fission event, scene 2 (about 34 s); (C) the binding-energy curve, scene 3 (about 28 s); (D) the working layout, scene 4 (about 35 s); (E) the fragments flying into the lattice, scene 5 (about 29 s); (F) the generation tree, scene 6 (about 27 s); (G) the k slider with its bar graph, scene 7 (about 33 s); (H) the lump of fuel: where neutrons go, scene 8 (about 26 s); (I) the moderator, then the core with its control-rod slider, scenes 9 and 10 (about 61 s; the water becomes the core at about 36 s); (J) the tree again with k = 2, scene 11 (about 29 s); (K) the painted reactor pool, scene 12 (about 26 s); (L) the memory card, scene 13 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The generation tree (scenes 6 and 11) uses the chance engine (`chance.ts`): each generation is one `coins` draw, with as many coins as neutrons released and a chance p that each goes on to cause a fission, so the tree branches at random while its average follows k. The seed is chosen by looking, so the tree neither dies in two generations nor explodes off the frame, and the tag says "model". The k slider's bar graph (scene 7) and the control-rod slider's readouts (scene 10) are exact arithmetic (fissions = 1000 × k^(n − 1)), lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The temperature is a readout.** The "thermometer" beside the lattice in scene 5 is a temperature readout chip (44 px), not a drawn thermometer. The fuel lump, the core grid and the rods stay plain schematics over which the painted pool is the real object.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *k*, *Q*, *Δm*, *A*, *Z*.
@@ -104,6 +118,8 @@ Visual: board change to the working layout (solid from the first frame, the smal
 > Most of that energy is kinetic energy of the two fragments, flying apart. They crash into the surrounding atoms, and the material heats **up**. The fragments are radioactive too, and their later decays add more, so one fission releases about two hundred MeV in **total**. Burning one molecule of methane releases about nine electron volts. So one fission gives about twenty million times **more**.
 
 Visual: board change (a new set-up, solid from the first frame): the fission event replays small; the two fragments fly into a coded lattice of atoms (about 900 px). On "flying apart" amber trails on the fragments, tag "fragment kinetic energy (most of it)". On "up" the lattice atoms jiggle faster, a thermometer bar rises, amber hand tag "→ heat" with an amber pen ring round the thermometer. On "later decays" the fragments emit small e⁻ dots and amber γ packets, tag "β and γ from the fragments". On "total" a stacked bar "≈ 173 MeV at the split + later decays ≈ 200 MeV total". On "nine electron volts" a tiny bar "CH₄ + 2O₂: ≈ 9 eV". On "more" the scale chip "200 MeV ÷ 9 eV ≈ 2 × 10⁷" in a dark-ink frame.
+
+Upgrade (Revision 3): The lattice's temperature is a readout chip that ticks up as the fragments stop; no thermometer is drawn.
 
 ### 6. one becomes many
 > Now the chain. Each fission frees two or three neutrons, and each of those can trigger another fission. A chain reaction is neutrons from one fission causing more fissions. Say each fission triggers two more. One fission, then two, then four, then **eight**. Each round is called a generation. After ten generations, that's over a thousand fissions at **once**.
@@ -164,6 +180,8 @@ Visual: `QuestionCard`, worded as printed: "Explain how a nuclear reactor mainta
 > Each fission frees two or three neutrons, and the chain is steady when, on average, exactly one of them causes another fission, so k equals **one**. The moderator slows the fast neutrons, so uranium two thirty-five can capture **them**. The control rods absorb spare neutrons, and moving them in or out holds k at **one**. The slip is saying control rods slow the neutrons. That's the moderator's **job**.
 
 Visual: card shrinks to the top; "steady", "moderator" and "control rods" underline; the OPAL picture stays at the right. Rows write in turn (44 px); the k = 1 row is framed. On "one" (first) row "steady chain: on average exactly 1 neutron per fission causes another (k = 1)". On "them" row "moderator (water, graphite): slows fast neutrons → more captured by U-235". On "one" (second) row "control rods (boron, cadmium): absorb spare neutrons; in → k ↓, out → k ↑". On "job" a chip "control rods slow the neutrons down" fades in and is crossed in red (red hand tag "rods absorb; moderator slows"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "explain: a steady (controlled) fission chain reaction | refer to the moderator and the control rods".
 
 ### 18. handoff
 > So fission releases energy by climbing the binding energy curve from the heavy side. The other side of the curve climbs too. Joining light nuclei, like hydrogen into helium, climbs even more steeply. But light nuclei are positive, and they push each other away. So why can fusion release energy despite repulsion between **nuclei**?
@@ -240,6 +258,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad folder `m8v18
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,435 characters**, 19 scene headings (18 narrated scenes and the notes hold). Characters per scene (1 to 19): 413, 454, 368, 470, 385, 353, 444, 349, 483, 336, 381, 352, 90, 240, 423, 102, 389, 328, 75. At 13.3 characters per second the speech is about 484 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the k and rod sliders run under their narration): **about 553 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,429 characters, about 567 s. Reserve trims if the voiced take runs long: scene 5's methane comparison; scene 8's uranium-238 example; scene 12's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,435 characters). The notes scene is 45 s in all, so the estimate is about 553 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v17's final frame exactly (reconciled by root, 6 November, root decision 9; unchanged by v17 Revision 2): see `phys-y12-m8-v17.md` "Final frame" (Q = +173 MeV with the about-200-MeV tag, three neutrons heading to ²³⁵U nuclei marked "?"). Scene 1 rewinds to a single neutron and nucleus before the chain is built; v18 keeps the 173 MeV (immediate) versus about 200 MeV (after fragment decays) distinction.
@@ -258,6 +278,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v18-learning-review.md`, `science_check` = `checks/p-y12-m8-v18-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -274,6 +296,8 @@ Kit gaps (for the v18 build brief):
 2. **Generation tree and k graph.** A tree whose branching factor is set by k, linked to a bar graph of fissions per generation.
 3. **Equal-mass bounce.** Head-on elastic collision of two equal discs with momentum handed over, then a zig-zag slowing path with a counter.
 4. **Control-rod core.** Rods sliding into a grid with a k readout driven by insertion depth.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for a branching chain with escape and capture (neutrons born, slowed by a moderator, absorbed by rods); the tree is a per-generation chance draw and the core is lesson-coded.
 
 ## Codex asset brief
 
@@ -295,6 +319,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 4 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -343,3 +369,26 @@ New plate requests: none.
 Joins: the opening frame is v17's actual final frame (root decision 9), unchanged. The final frame keeps its content; only the fission arrow's direction is stated as rising up and to the left (brief 193). v19 Revision 2's opening frame matches.
 
 Counts: 6,429 to 6,435 characters (scene sum); about 567 s to about 553 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the generation tree is tied to the chance engine (model); the k graph and rod slider stay exact arithmetic (kit gap recorded).
+- Scene 5: the thermometer is a readout chip.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine for a branching chain with escape and capture (neutrons born, slowed by a moderator, absorbed by rods); the tree is a per-generation chance draw and the core is lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,435 characters, unchanged; about 553 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

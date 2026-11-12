@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V11: Hydrogen energy levels and the Balmer series. How do hydrogen energy gaps predict Balmer wavelengths? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,034 characters, 18 scenes, about 520 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v10's final frame.
 
@@ -70,6 +70,19 @@ Main question: *If each line is one photon from one drop, can the size of each e
 Entry knowledge: Bohr's levels and hf = E_i − E_f (v10); E = hf, E = hc/λ, eV (Module 7).
 Stops after: the investigation, level values, gap method, the Rydberg equation derived and used, crowding, the series limit, why Balmer is visible. No matter waves; no absorption or ion calculations.
 Handoff: v12, what evidence shows that particles have wave behaviour.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the ladder with four "?" arrows and the painted tube beside the strip, scene 1 (about 33 s); (B) the bench with the tube, supply and spectroscope, scene 2 (about 29 s); (C) the ladder: the levels, then the red line's energy and wavelength, scenes 3 to 5 (about 79 s; the working takes the frame at about 26 s); (D) the derivation strip, scene 6 (about 38 s); (E) the full-width Rydberg working, scenes 7 and 8 (about 47 s); (F) the live n_i slider, then the series limit, scenes 9 and 10 (about 57 s); (G) the series fan and the memory card, scenes 11 and 12 (about 39 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 79 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine is needed: the n_i slider in scene 9 is exact arithmetic (the gap from E_n = −13.6/n² eV and the Rydberg equation), lesson-coded, with "ΔE", "1/λ", "λ" and the photon's place and colour on the strip computed from the same level.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -233,6 +246,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,034 characters**, 18 scenes. Characters per scene (1 to 18): 437, 389, 351, 342, 359, 502, 343, 276, 362, 397, 389, 131, 276, 419, 191, 345, 450, 75. At 13.3 characters per second the speech is about 454 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 9 slider runs under its narration): **about 520 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,001 characters (scene sum; 6,018 with inter-scene spaces), about 533 s. Reserve trims if the voiced take runs long: scene 2's grating clause; scene 6's last sentence (keep the chip); scene 9's level-seven sentence (keep the line).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,034 characters). The notes scene is 45 s in all, so the estimate is about 520 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v10's final frame (`phys-y12-m8-v10.md`, Revision 2): paper background; heading "Why couldn't Rutherford's model explain stable atoms and line spectra?"; at the left a coded hydrogen energy ladder (navy lines n = 1 to 6, dashed "n = ∞, E = 0" at the top, "E₁ = −13.6 eV" at the bottom; other levels labelled with n only), level n = 2 highlighted; four downward arrows ending on n = 2 from n = 3 (red), 4 (cyan), 5 (blue-violet) and 6 (violet), each with a "?"; at the right a black spectrum strip with four lines labelled "656", "486", "434", "410 nm (measured)"; tag "ΔE → λ?"; chip "Next: how do hydrogen energy gaps predict Balmer wavelengths?". Scene 1 turns the chip into the heading and brings in the painted discharge tube beside the strip.
@@ -251,6 +266,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v11-learning-review.md`, `science_check` = `checks/p-y12-m8-v11-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (all inspected 7 Nov; scaled uniformly only, never stretched, never above native size):
@@ -266,6 +283,8 @@ Coded: ladder, arrows, photons, spectrum strips and bands, brackets, dashed limi
 Kit gaps (for the v11 build brief):
 1. **Ladder to spectrum.** A downward arrow whose photon flies to a strip and lands at the wavelength computed from R (so the line positions come from the same numbers as the working).
 2. **Standing-wave orbit.** A sinusoid wrapped round a circle with a whole number of wavelengths (and a non-closing version) for the final frame.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -287,6 +306,8 @@ Error-only check (report errors; do not restyle or rewrite):
 11. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Report site notes 1 to 3 under Decisions to root.
 13. Revision 2: confirm one visible boundary, 380 to 750 nm, everywhere (1, 9, 11, notes, memory aid check, site note 1; author note f); 397 nm called a faint deep-violet visible line, not ultraviolet; grouped denominators (5, 7, 14, 16, model answers); the n_i slider values; the scene 5 crossed slip; true line colours; the final frame unchanged for v12.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -338,3 +359,25 @@ New plate requests: none.
 Joins: the opening is v10's Revision 2 final frame (arrow colours now cyan, blue-violet and violet). The final frame (scene 17) is unchanged, so the v12 join holds.
 
 Counts: 6,001 to 6,034 characters (scene sum); about 533 s to about 520 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the level slider is exact arithmetic (no engine is needed).
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,034 characters, unchanged; about 520 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

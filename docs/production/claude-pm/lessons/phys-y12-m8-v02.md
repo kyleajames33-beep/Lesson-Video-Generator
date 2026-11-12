@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V02: Evidence for the Big Bang. What evidence supports an expanding hot early Universe? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,518 characters, 18 scenes, about 559 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v01's final frame.
 
@@ -84,6 +84,20 @@ Entry knowledge: v01's timeline; Doppler Δλ/λ = v/c (m7-v04); Wien's law (m7-
 Stops after: four lines of evidence, the limits of v = H₀d and why the lines are stronger together. No scale-factor or lookback calculations.
 Handoff: v03, how spectra classify stars and reveal their temperature.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame with the empty evidence column, scene 1 (about 26 s); (B) the live redshift slider on the galaxy's spectrum, scene 2 (about 31 s); (C) the painted galaxy and Hubble's graph, scene 3 (about 43 s); (D) the expansion grid, scene 4 (about 36 s); (E) the full-width working, scene 5 (about 35 s); (F) the graph's zoom and Andromeda, scene 6 (about 32 s); (G) the painted horn antenna under the sky, scene 7 (about 29 s); (H) the black-body graph, scene 8 (about 38 s); (I) the abundance bars, scene 9 (about 34 s); (J) the stretching wave and the supernova light curves, scene 10 (about 31 s); (K) the evidence table, then the memory card over it, scenes 11 and 12 (about 32 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 43 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The stretching wave in scene 10 comes from the waves engine (`waves.ts`): one `displacement` whose wavelength the lesson stretches with the grid, with the crests counted past a marker, so "longer wavelength, longer time between crests" is watched on one model wave (tagged "model"). The redshift slider in scene 2 is exact arithmetic (λ_obs = (1 + z)λ_rest, v ≈ cz) and stays lesson-coded, as do the expansion grid and the graphs, which plot the design's values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Small pictures are plates.** The pulsing star in scene 3 is a small copy of the painted white star (`y12p-star-white-v1.png`) whose brightness rises and falls. The gas cloud in scenes 9 and 11 is a small copy of the painted molecular cloud (`y12p-molecular-cloud-v1.png`). The "light-curve" picture in scene 11 is a small graph.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *z*, *λ*, *v*, *d*, *H₀*, *T*.
@@ -102,6 +116,8 @@ Visual: board change: the live redshift slider (the lesson's simulation), solid 
 > In the nineteen twenties, astronomers measured these redshifts, and Edwin Hubble measured distances, using pulsing stars whose rhythm reveals how bright they really are. Compare that with how bright they look, and you get the **distance**. In nineteen twenty-nine, he plotted speed against distance. The points fell close to a straight line through the **origin**. Twice as far, twice as fast. That's Hubble's law, v equals H nought d. The gradient, H nought, is about seventy kilometres per second per **megaparsec**, where a megaparsec is about three point two six million light years.
 
 Visual: board change: the painted galaxy `phys-y11-galaxy-v1.png` small at the left with a coded pulsing star dot inside it, its brightness rising and falling regularly. On "pulsing stars whose rhythm reveals how bright they really are" tag "rhythm → true brightness (luminosity)". On "distance" chip "dimmer than expected → farther (inverse square law, Year 11)". On "plotted speed against distance" the Hubble scatter graph draws: x "distance d (Mpc)" 0 to 500, y "recession speed v (km s⁻¹)" 0 to 35 000. Points appear one by one (illustrative, tag "illustrative modern data"). On "origin" the best-fit line draws through (0, 0). On "Twice as far, twice as fast" two points at 200 and 400 Mpc highlight with speeds 14 000 and 28 000 km s⁻¹. On "v equals H nought d" equation strip "v = H₀d". On "megaparsec" a gradient triangle "H₀ = 28 000 / 400 = 70 km s⁻¹ Mpc⁻¹" (framed), chip "1 Mpc ≈ 3.26 million light years"; the evidence column's first row ticks "redshift grows with distance". Marks (Revision 2): the galaxy plate (about 300 px) is solid from the first frame; amber hand tag "the gradient is H₀" with an amber pen arrow along the line; navy pen rings round the two highlighted points with a navy hand tag "× 2, × 2"; each point arrives with its small slider value from scene 2 beside it.
+
+Upgrade (Revision 3): The pulsing star inside the galaxy is a small copy of the painted white star (about 40 px) brightening and dimming, not a coded dot.
 
 ### 4. why a straight line means expansion
 > Why does a straight line mean space is expanding? Picture a grid of galaxies, and stretch all the spacing by the same factor. A galaxy one step away moves one step further. Two steps away, it moves two steps. So farther galaxies recede faster, in proportion, and that's true seen from every galaxy on the grid. No galaxy is the **centre**. Run the expansion backwards, and the Universe was once far denser. One over H nought even gives a rough age, about fourteen billion **years**.
@@ -133,6 +149,8 @@ Visual: board change: the black-body graph, solid from the first frame, x "wavel
 
 Visual: board change: abundance bars, solid from the first frame (two empty bar frames, labelled, with a small coded gas-cloud icon beside the second). On "a quarter helium by mass" bar "predicted (v01): 25% He, 75% H". On "the fewest heavy elements" a small strip of heavy-element chips ("C, N, O, Fe") shrinks to almost nothing, grey hand tag "least processed = fewest heavy elements". On "cent" bar "observed, least processed gas: 24 to 25% He" beside it, tag "match", with a grey pen bracket joining the two bars. On "Could stars have made it instead?" a chip "made by stars?". On "only a few per cent" a thin bar "added by stars: a few %", rose hand tag "too little". On "helium" a row of small gas-cloud tags "few stars formed: still ≈ 24% He"; the chip is crossed; the evidence column's third row ticks "about a quarter helium".
 
+Upgrade (Revision 3): The gas cloud beside the second bar is a small copy of the painted molecular cloud (about 120 px), not a coded icon.
+
 ### 10. slow supernovae
 > The fourth clue links to relativity. A wavelength is just the time between crests, times the speed of light. So if expansion stretches each wavelength by one plus z, it stretches every time interval in the signal by one plus z as well. Exploding stars called supernovae show exactly this. One at a z of one brightens and fades twice as slowly as a nearby **one**. That's cosmological time dilation, and it's been **measured**.
 
@@ -142,6 +160,8 @@ Visual: board change: on the `m8-expansion` grid, a wave packet's crests tick pa
 > Each clue alone might have another explanation. Together, they point the same way. Expanding, because of the redshift and the slowed clocks. Hot, because of the black body glow. Dense enough to fuse, because of the helium. Four independent measurements, made with different instruments, and one model explains them **all**.
 
 Visual: board change to the evidence table: rows "redshift ∝ distance", "2.7 K black body", "25% helium", "supernovae × (1 + z)"; columns "hot Big Bang", "steady state". On "Expanding" the first and fourth rows highlight, tag "expanding". On "Hot" the second row, tag "hot". On "Dense enough to fuse" the third row, tag "dense". On "independent measurements" tags "galaxy spectra", "microwave antenna", "gas-cloud composition", "supernova timing". On "all" the hot Big Bang column fills with ticks; the steady-state column shows one partial tick (expansion, with continuous creation) and three crosses. Marks (Revision 2): each row carries a small picture (galaxy plate, horn antenna plate, gas-cloud icon, light-curve icon, each about 120 px); ink pen ring round the hot Big Bang column; red hand tag "one model, four tests".
+
+Upgrade (Revision 3): In the row pictures, the gas cloud is the same small plate; the light curve is a small graph.
 
 ### 12. a way to remember
 > Here's a way to remember the four clues. Stretched light, leftover glow, a quarter helium, slow **supernovae**.
@@ -245,6 +265,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,518 characters**, 18 scenes. Characters per scene (1 to 18): 348, 407, 575, 474, 470, 426, 380, 503, 451, 418, 319, 107, 317, 329, 270, 392, 257, 75. At 13.3 characters per second the speech is about 490 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 2 slider runs under its narration): **about 559 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,445 characters (scene sum; 6,462 with inter-scene spaces), about 570 s. Reserve trims if the voiced take runs long: scene 3's megaparsec clause (keep it on screen); scene 4's Hubble-time sentence; scene 9's last clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,518 characters). The notes scene is 45 s in all, so the estimate is about 559 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v01's final frame (`phys-y12-m8-v01.md`, "Final frame"): paper background; heading "How did cooling radiation allow matter to form in the early Universe?"; a coded expanding square grid of ink dots with small ink circles (neutral atoms); a small row of five timeline markers along the top; long, faint stretched waves (fading from red-brown to grey) arriving from every frame edge at a small central dot labelled "us" with an ink pen ring, tags "light from recombination, stretched", the red-brown hand tag "stretched ever since" and "still here?" (v01 Revision 2); at the lower left two grid dots each carrying the small painted galaxy `phys-y11-galaxy-v1.png`, drifting apart with arrows, tag "still receding?"; chip "Next: what evidence supports an expanding hot early Universe?". Scene 1's first beat fades the timeline markers and v01's hand tag and pen ring, then draws the evidence column, moves one galaxy far right and turns the chip into the heading. The "still here?" waves return in scene 7; the receding galaxies return in scene 3.
@@ -263,6 +285,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v02-learning-review.md`, `science_check` = `checks/p-y12-m8-v02-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -279,6 +303,8 @@ Kit gaps (for the v02 build brief):
 2. **Black-body curve with stretch.** Planck curves at given temperatures on a log wavelength axis, a Wien marker, and a stretch factor that slides one curve onto another.
 3. **Supernova light curves.** One schematic shape drawn at two time stretches on a shared axis.
 4. **Evidence table.** Rows and columns filling with ticks and crosses.
+
+Revision 3 (13 Nov 2026). Existing plates newly used small (confirmed by file listing, not re-inspected): `y12p-star-white-v1.png` (scene 3), `y12p-molecular-cloud-v1.png` (scenes 9 and 11). New plate requests: none.
 
 ## Codex asset brief
 
@@ -300,6 +326,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 4 to 7 under Decisions to root.
 11. Revision 2: confirm the guard-digit working (5: 0.0884, 2.65 × 10⁴, 379 ≈ 380; feedback 1: 0.0803, 2.41 × 10⁴, 344); the uniformity condition (8, author note j); "least processed gas, with the fewest heavy elements" in place of "oldest" (9, notes, author note k); the Andromeda labels (6, 16, model answer, author note l); the slider values; true spectrum colours.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm `y12p-molecular-cloud-v1.png` reads as a gas cloud at about 120 px on the paper background.
 
 ## YouTube metadata (draft)
 
@@ -348,3 +376,26 @@ New plate requests: none (the horn antenna is delivered).
 Joins: the opening is v01's Revision 2 final frame (the stretched wave fading to grey, with a hand tag and a pen ring that scene 1's first beat fades). The final frame (scene 17) is unchanged apart from one red hand tag "same tool, new target", which v03's first beat fades, so the v03 join holds.
 
 Counts: 6,445 to 6,518 characters (scene sum); about 570 s to about 559 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the stretching wave of scene 10 is tied to the waves engine; the redshift slider, grid and graphs stay lesson-coded.
+- Scenes 3, 9 and 11: a coded star dot and a coded gas-cloud icon become small copies of plates.
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,518 characters, unchanged; about 559 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

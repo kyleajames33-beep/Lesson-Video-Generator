@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V10: Limits of the Rutherford and Bohr models. Why couldn't Rutherford's model explain stable atoms and line spectra? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,037 characters, 21 scenes, about 523 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v09's final frame.
 
@@ -65,6 +65,19 @@ Entry knowledge: the nuclear atom (v09); accelerating charges radiate, hydrogen'
 Stops after: Rutherford's two failures, Bohr's postulates and levels, how they fix both, Bohr's three limitations and the verdict. No Rydberg calculations, no series, no matter waves.
 Handoff: v11, how hydrogen energy gaps predict Balmer wavelengths.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the atom with the painted discharge tube glowing, scene 1 (about 34 s); (B) the spiral stage, scenes 2 and 3 (about 51 s); (C) the live spectrum sweep with the tube and spectroscope, then the two failure chips, scenes 4 and 5 (about 43 s); (D) the allowed orbits, scene 6 (about 26 s); (E) the energy ladder: levels, the photon, both failures fixed, scenes 7 to 9 (about 84 s; a drop and its photon at about 33 s, the two ticks at about 58 s); (F) the orbit picker, scene 10 (about 24 s); (G) the assessment board and its first card, scenes 11 and 12 (about 28 s); (H) the second card large with the line zoom, scene 13 (about 22 s); (I) the third card, scene 14 (about 18 s); (J) the two chips and the memory card, scene 15 (about 18 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 84 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The classical spiral (scenes 2 to 4) runs on the field motion engine (`field-motion.ts`, a `custom` field: an attractive 1/r² pull plus a small drag that stands for the energy radiated), drawn with `FieldMotionView`. The path winds inward because the run loses energy, and the readouts "orbit radius", "orbit frequency" and "emitted wavelength" in scene 4 are read from the run's radius at each moment, so the predicted light sweeps smoothly through the strip. It is the classical model, tagged "classical prediction", and its time scale is slowed. The energy ladder and the orbit picker are exact (E_n = −13.6/n² eV) and stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *n*, *E*, *h*, *f*, *λ*, *E_i*, *E_f*.
@@ -83,6 +96,8 @@ Visual: board change to the spiral stage: nucleus (red, "not to scale"), electro
 > In a smaller orbit, it moves faster and radiates more strongly, so it sinks faster still. For hydrogen, the calculation gives about ten to the minus eleven seconds before the electron hits the nucleus, less than a ten-billionth of a second. Yet a jar of hydrogen gas stays hydrogen for as long as you like. That's the first failure. Rutherford's model says atoms can't be **stable**.
 
 Visual: on "moves faster and radiates more strongly" the electron's speed arrow lengthens and the wavelets come thicker and faster. On "sinks faster still" the path becomes an inward spiral that tightens. On "about ten to the minus eleven seconds" a clock readout ticks "t ≈ 1.6 × 10⁻¹¹ s" as the electron reaches the nucleus. On "a jar of hydrogen gas" a coded glass jar labelled "H₂ gas" sits unchanged, tag "stable for years". On "stable" a chip "failure 1: stability" (framed) and a crossed chip "Rutherford's atom lasts 10⁻¹¹ s". Marks (Revision 2): grey hand tag "faster and faster" on the spiral; grey pen ring round the clock (52 px readout).
+
+Upgrade (Revision 3): The jar of hydrogen gas is the painted glass cell requested for the Module 7 spectra video (`y12p-vapour-cell-v1.png`), tagged "H₂ gas" and "stable for years", not a coded jar. Fallback if that plate is not delivered: the painted discharge tube, unlit, with the same tags.
 
 ### 4. failure 2: the light
 > The second failure is the light. As the electron spirals in, its orbit frequency rises smoothly, so its waves should slide through every frequency, giving a continuous smear of colour. But glowing hydrogen gives sharp lines, with four bright visible ones, at six five six, four eight six, four three four and four one zero nanometres. Every hydrogen atom, anywhere, gives the same **lines**. Rutherford's model can't produce a line spectrum at **all**.
@@ -229,6 +244,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,037 characters**, 21 scenes. Characters per scene (1 to 21): 458, 301, 379, 444, 129, 349, 436, 326, 345, 318, 153, 207, 292, 245, 246, 148, 399, 123, 343, 321, 75. At 13.3 characters per second the speech is about 454 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 4 sweep runs under its narration): **about 523 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,017 characters (scene sum; 6,037 with inter-scene spaces), about 538 s. Reserve trims if the voiced take runs long: scene 13's magnetic-field clause; scene 3's jar sentence (keep the drawing); scene 11 merged into scene 12's first line.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,037 characters). The notes scene is 45 s in all, so the estimate is about 523 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v09's final frame (`phys-y12-m8-v09.md`, Revision 2): paper background; heading "What evidence established an uncharged massive particle in the nucleus?"; at the centre a small nucleus of red "p" and grey "n" discs (tag "not to scale"); one navy electron moving on a dashed circular orbit around it (held in motion), with a teal velocity arrow turning with it and a rose arrow "a" pointing to the centre, tag "changing direction = accelerating"; a Module 7 chip "accelerating charges radiate EM waves" with a faint rose wavelet leaving the electron and a "?", and a rose hand tag "radiates?"; chip "Next: why couldn't Rutherford's model explain stable atoms and line spectra?". Scene 1's first beat fades the hand tag and turns the chip into the heading.
@@ -247,6 +264,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v10-learning-review.md`, `science_check` = `checks/p-y12-m8-v10-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (all inspected 7 Nov; scaled uniformly only, never stretched, never above native size):
@@ -262,6 +281,8 @@ Coded: atom, orbits, spiral, wavelets, clock, jar, spectrum strips, energy ladde
 Kit gaps (for the v10 build brief):
 1. **Spiral collapse.** An electron on an inward spiral with rising speed, wavelet rate and a clock readout; shown as the classical prediction (not to scale in time).
 2. **Circles to ladder morph.** Allowed orbits that unroll into horizontal energy levels in the `m8-quantum-atom` ladder, and back.
+
+Revision 3 (13 Nov 2026). Scene 3 reuses the plate requested in `phys-y12-m7-v03.md` (`y12p-vapour-cell-v1.png`); it is not a second request. Its fallback here is the unlit discharge tube plate. New plate requests: none.
 
 ## Codex asset brief
 
@@ -282,6 +303,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 3 under Decisions to root.
 12. Revision 2: confirm the hook's observed tag is stability (1; author note f); "four bright" or "four prominent" lines everywhere, with the faint 397 nm line drawn inside the visible strip (4, 20, notes; v11 matches); the emission and absorption forms (8, notes); "closely" in the handoff (20); the classical sweep values (4; author note g); true line colours (4, 9, 20, final frame).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -330,3 +353,26 @@ New plate requests: none.
 Joins: the opening is v09's Revision 2 final frame (its "radiates?" hand tag fades in scene 1). The final frame (scene 20) keeps its content; the arrow colours now match the true line colours (cyan for 486 nm), recorded in v11's opening.
 
 Counts: 6,017 to 6,037 characters (scene sum); about 538 s to about 523 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the classical spiral and its sweeping wavelength are tied to the field motion engine (classical model, tagged); the ladder stays exact.
+- Scene 3: the coded glass jar becomes the vapour cell requested for Module 7, with the unlit discharge tube as its fallback.
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,037 characters, unchanged; about 523 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The radiation loss in the spiral is a small drag chosen to show the inward path; the 10⁻¹¹ s on screen is the design's value, not a time read from the run.

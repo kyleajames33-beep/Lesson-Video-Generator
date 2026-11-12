@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V07: Discovering the electron. How did cathode rays and oil drops reveal the electron? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,075 characters, 18 scenes, about 523 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v06's Revision 2 final frame (see "Opening frame").
 
@@ -70,6 +70,20 @@ Main question: *How do you find the mass of a particle far too small to see?*
 Entry knowledge: E = V/d, F = qE, v = E/B, projectile path between plates, qE = mg (Module 6).
 Stops after: cathode-ray evidence, Thomson's e/m, Millikan's e and quantisation, m_e from both. No alpha scattering or nucleus.
 Handoff: v08, why scattering required a tiny dense nucleus.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted Maltese-cross tube and the balance reading "? kg", scene 1 (about 34 s); (B) the Maltese-cross tube large, scene 2 (about 32 s); (C) the two-by-two evidence grid, scene 3 (about 31 s); (D) the cathode ray tube with the supply, scene 4 (about 27 s); (E) the crossed-field stage, scene 5 (about 36 s); (F) the full-width working with the field off, scene 6 (about 35 s); (G) the ratio bars, scene 7 (about 22 s); (H) the Millikan bench with the live voltage slider, then one drop's charge, scenes 8 and 9 (about 56 s; the working arrives at about 28 s); (I) the charge axis, scene 10 (about 24 s); (J) the two experiment chips, then the memory card, scenes 11 and 12 (about 34 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 56 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Both experiments run on the field motion engine (`field-motion.ts`, drawn with `FieldMotionView`). Thomson, stage 1 (scene 5): the beam is a `custom` field that adds the electric and magnetic accelerations, so it runs straight only when v = E/B. Stage 2 (scene 6): with the magnetic field off it is a `uniform` field between the plates, and the deflection "y" is read from the run at the plate end. Millikan (scenes 8 and 9): the drop is a `uniform` field whose net acceleration is qE/m − g, so it rises, falls or hangs still as the voltage slider moves, and it is held exactly where the readouts show qE = mg. Each clock is slowed to a watchable rate.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The CRT is still held.** Scenes 4 to 6 use the coded-outline tube that root allowed if the painted plate (`y12p-crt-tube-v1.png`) fails once more; it is flagged here only because it is a coded drawing of a real object.
 
 ## Script and shots
 
@@ -227,6 +241,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,075 characters**, 18 scenes. Characters per scene (1 to 18): 448, 419, 416, 362, 473, 471, 294, 379, 372, 324, 298, 157, 338, 376, 174, 300, 399, 75. At 13.3 characters per second the speech is about 457 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 8 slider runs under its narration): **about 523 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,002 characters (scene sum; 6,019 with inter-scene spaces), about 534 s. Reserve trims if the voiced take runs long: scene 3's paddle-wheel sentence (keep the cell and tag); scene 6's derivation sentence (keep the strip); scene 7's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,075 characters). The notes scene is 45 s in all, so the estimate is about 523 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v06's final frame exactly (`phys-y12-m8-v06.md` "Final frame", Revision 2): element strip along the top; a plain gold atom with no structure drawn, labelled "Au (gold)", tag "electrons inside? (unknown before 1897)"; the painted Maltese-cross tube `y12p-maltese-cross-tube-v1.png` with its glow off at the right, tag "1890s: cathode rays" and a grey hand tag "glass tube, no glow yet"; "Next" chip. Scene 1's first beat fades the hand tag; the scene keeps the tube, slides it left and switches its glow on.
@@ -244,6 +260,8 @@ In order (kebab-case; 18 scene headings, all `### N.`): hook, cathode-ray-tube, 
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: tube stage (beam, glow, plates, field lines, crosses, force arrows), evidence grid, number line of charges, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 clear change to the tube; 2 to 3 camera continue (grid beside the tube); 3 to 4 camera push into cell 4; 4 to 5 camera change (crossed-field stage with the working panel); 5 to 6 camera change (B-off stage with full-width working); no set-up runs past about 60 s; 6 to 7 clear change; 7 to 8 clear change to the plates; 8 to 9 camera continue; 9 to 10 clear change; 10 to 11 clear change; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v07-learning-review.md`, `science_check` = `checks/p-y12-m8-v07-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -265,6 +283,8 @@ Coded: beams, glow, field lines, crosses, force arrows, evidence grid, charge ax
 Kit gaps (for the v07 build brief):
 1. **Tube stage.** Coded beam over the CRT plate with switchable E and B, beam path from the forces (straight when balanced, parabola in E alone, straight after the plates), and force arrows on a marker.
 2. **Charge axis.** Dots that fall and settle on multiples of e, with labelled dashed lines.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -292,6 +312,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 4 under Decisions to root.
 12. Revision 2: confirm the signed charges (9, 14, model answer 1: |q| then q = −3.20 × 10⁻¹⁹ C and −4.80 × 10⁻¹⁹ C; author note f); grouped denominators (5, 9, 10, 11, 14, model answers); the slider values; the scene 6 crossed slip; the tube assignments (Maltese-cross tube in 1 to 3, coded-outline CRT in 3 to 6; open decision 4); the stage changes at 4 to 5 and 5 to 6.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -341,3 +363,25 @@ New plate requests: none.
 Joins: the opening is v06's Revision 2 final frame (the Maltese-cross tube replaces the held CRT plate); scene 1's first beat fades v06's grey hand tag. The final frame (scene 17) is unchanged apart from one navy hand tag, recorded in v08's opening.
 
 Counts: 6,002 to 6,075 characters (scene sum); about 534 s to about 523 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: Thomson's two stages and Millikan's balanced drop are tied to the field motion engine.
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,075 characters, unchanged; about 523 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

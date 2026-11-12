@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V20: Evidence for quarks and new particles. What evidence shows that protons and neutrons have smaller constituents? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,190 characters, 20 scenes (19 narrated scenes and the notes hold), about 534 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v19's final frame.
 
@@ -79,6 +79,20 @@ Entry knowledge: alpha scattering (v08); de Broglie wavelength (v12); circles in
 Stops after: three lines of evidence, the quark charges, the electron contrast, the positron, muon, pion and neutrino, and the hadron and lepton families. No full table, no forces.
 Handoff: v21, how the Standard Model organises particles and interactions.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the enlarged proton with its "?", scene 1 (about 26 s); (B) the evidence test card, scene 2 (about 21 s); (C) the painted linac tunnel with the probe-energy slider, scene 3 (about 39 s); (D) the two panels: what they saw, then what it means, scenes 4 and 5 (about 42 s); (E) the hadron pattern grid, scene 6 (about 30 s); (F) the neutron that changes, scene 7 (about 24 s); (G) the quark charge sums, scene 8 (about 37 s); (H) the test card with two columns, scene 9 (about 22 s); (I) the painted cloud chamber and the track view, then the discovery cards, scenes 10 and 11 (about 64 s; the cards take the frame at about 42 s); (J) the beta energy spread, scene 12 (about 32 s); (K) the classification tree and the memory card, scenes 13 and 14 (about 36 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 64 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Two pictures run on the field motion engine (`field-motion.ts`, drawn with `FieldMotionView`). In the "model" panel of scene 5 the electron paths are `custom` runs: a smooth spread-out charge gives every run a gentle bend, while three small hard centres send a few runs off at large angles, as in the scattering video. In scene 10 the two tracks in the chamber are `magnetic` runs with opposite signs of charge, so they curve opposite ways, and the run that crosses the lead plate continues with less speed and a tighter curve, which is how the direction of travel is read. The wave across the proton in scene 3 is a `displacement` from the waves engine whose wavelength follows the slider's λ = hc/E (shown to scale against the proton disc; the readouts are exact arithmetic).
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The reactor is a plate.** The small reactor in scene 12 is a small copy of the painted reactor pool (`y12p-opal-reactor-pool-v1.png`), not a coded core. The track view, the discovery cards and the detector tank stay schematics labelled "schematic".
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *λ*, *h*, *p*, *r*, *m*, *v*, *q*, *B*.
@@ -143,6 +157,8 @@ Visual: camera continue: the chamber shrinks to the left and a row of "discovery
 
 Visual: board change to the energy spread (a new set-up, solid from the first frame): a schematic bar chart "number of β electrons" against "electron energy", a smooth hump ending at a dashed line "total energy available", labelled "schematic, not data". On "a spread of energies, not one fixed value" the hump draws; a single tall dashed bar "expected if only two products" crossed. On "Energy seemed to vanish" the gap between each bar and the dashed line shades, tag "missing energy". On "an antineutrino" a grey "ν̄" dot leaving each decay, grey hand tag "ν̄: neutral, almost never interacts", small tag "neutrino family". On "reactor" a small coded reactor core (from v18) with grey ν̄ dots streaming out to a tank, framed tag "ν̄ detected 1956 (Cowan and Reines)", grey pen arrow along the stream.
 
+Upgrade (Revision 3): The reactor is a small copy of the painted reactor pool (about 220 px tall), not a coded core; the antineutrino dots and the tank outline are as described.
+
 ### 13. two families
 > So particles sort into two families. Hadrons feel the strong force, and they're made of quarks. Baryons, like protons and neutrons, have three quarks. Mesons, like the pion, have a quark and an antiquark, the antimatter partner of a quark. Leptons don't feel the strong force, and they have no known parts. The electron, the muon and the neutrinos are leptons. A pion is light, but it's still a **hadron**.
 
@@ -172,6 +188,8 @@ Visual: `QuestionCard`, worded as printed: "Outline TWO pieces of evidence that 
 > First, high-energy electrons scatter off protons at large angles far more often than a smooth proton allows, so there are small hard parts **inside**. Second, hundreds of hadrons fall into patterns, as expected from combinations of a few **parts**. The quark charges then fit both nucleons. The slip is using neutron decay as proof. Fundamental particles like the muon decay too, so decay alone doesn't settle **it**.
 
 Visual: card shrinks to the top; "TWO" and "not fundamental" underline; the picture stays at the right. On "inside" row "1. scattering: many large-angle scatters → small hard parts" in a dark-ink frame (44 px). On "parts" row "2. patterns: hundreds of hadrons in families" in a dark-ink frame. On "The quark charges then fit both nucleons" a small grey row "supported by: uud = +1, udd = 0". On "it" a chip "neutron decay proves it has parts" fades in and is crossed in red (red hand tag "muons decay too"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "outline TWO pieces of evidence | protons are not fundamental particles".
 
 ### 19. handoff
 > So now there are quarks, up and down so far. There are leptons, like the electron, the muon and the neutrinos. Every one of them has an antimatter partner. And there are forces acting between them all. That's a lot to keep track of. So how does the Standard Model organise particles and **interactions**?
@@ -245,6 +263,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad folder `m8v18
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,190 characters**, 20 scene headings (19 narrated scenes and the notes hold). Characters per scene (1 to 20): 348, 278, 520, 243, 316, 397, 317, 493, 293, 554, 295, 420, 402, 75, 154, 199, 106, 405, 300, 75. At 13.3 characters per second the speech is about 465 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the probe slider runs under its narration): **about 534 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,110 characters, about 543 s. Reserve trims if the voiced take runs long: scene 6's periodic table sentences; scene 11's last sentence; scene 12's last clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,190 characters). The notes scene is 45 s in all, so the estimate is about 534 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v19's final frame (`phys-y12-m8-v19.md`, "Final frame"): paper background; heading "Why can fusion release energy despite repulsion between nuclei?"; at the centre-left a ⁴He cluster with navy springs; one rose proton disc lifted out and enlarged to the right half of the frame with a "?" inside; at the far left a small thumbnail of v08's gold-foil scattering with one large-angle path highlighted, tag "v08: probing an atom found the nucleus"; a dashed arrow from a small navy electron dot aimed at the enlarged proton, tag "probe a proton?"; chip "Next: what evidence shows that protons and neutrons have smaller constituents?". Scene 1 fades the helium cluster and turns the chip into the heading; the proton, thumbnail and electron stay.
@@ -263,6 +283,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v20-learning-review.md`, `science_check` = `checks/p-y12-m8-v20-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched; inspected 7 Nov; delivered in brief 193):
@@ -278,6 +300,8 @@ Kit gaps (for the v20 build brief):
 1. **Observation and model panels.** A paired layout where the model panel cannot draw until a cue, with "schematic, not data" and "model" tags as fixed parts of the component (reused in v22's detector evidence).
 2. **Track chamber.** A coded cloud-chamber view with a cross grid, a lead plate, a track whose radius follows r = mv/(qB) with a speed drop at the plate, and direction and force arrows.
 3. **Classification tree.** A tree that fills branch by branch (reused in v21).
+
+Revision 3 (13 Nov 2026). Existing plate newly used small in scene 12 (confirmed by file listing, not re-inspected): `y12p-opal-reactor-pool-v1.png`. New plate requests: none.
 
 ## Codex asset brief
 
@@ -299,6 +323,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -346,3 +372,26 @@ New plate requests: none.
 Joins: the opening frame (v19's final frame) is unchanged; the linac enters on a scene 1 cue. The final frame (scene 19) is unchanged, so v21's opening holds.
 
 Counts: 6,110 to 6,190 characters (scene sum); about 543 s to about 534 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the scattering paths and the two chamber tracks are tied to the field motion engine, and the probe wave to the waves engine.
+- Scene 12: the coded reactor core becomes a small copy of the reactor pool plate.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,190 characters, unchanged; about 534 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

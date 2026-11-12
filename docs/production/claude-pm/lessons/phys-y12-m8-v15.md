@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V15: Half-life and radioactive decay. Why does half-life predict a population but not one atom? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,636 characters, 18 scenes, about 490 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v14's final frame.
 
@@ -72,6 +72,21 @@ Main question: *Nobody can say when one nucleus will decay. So how can a sample 
 Entry knowledge: spontaneous decay and the Geiger counter (v14); graphs (Year 11); e and ln (Mathematics).
 Stops after: no memory and λ, the counters model, half-life and its trap, the law from the cause, λ = ln2/t½, activity, background and graph reading, two worked calculations, population against one nucleus. No mass defect or carbon dating.
 Handoff: v16, how missing mass measures nuclear binding energy.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the painted source and Geiger counter under the click trace, scene 1 (about 23 s); (B) one nucleus with its "age" readout, scene 2 (about 29 s); (C) the painted counter tray, scene 3 (about 26 s); (D) the halving staircase and curve, then why the halving times are equal, scenes 4 and 5 (about 62 s; the grid of nuclei and the rate line arrive at about 31 s); (E) the working layout, scene 6 (about 28 s); (F) the twin graphs of number and activity, scene 7 (about 25 s); (G) the Geiger counter with no source: background, scene 8 (about 32 s); (H) the two-stage working beside the activity curve, scenes 9 and 10 (about 51 s); (I) the sample-size runs, scene 11 (about 32 s); (J) the staircase and the memory card, scene 12 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Decay here is genuinely random, and two engines show it. The grid of nuclei, the number against time curve and the sample-size runs (scenes 4, 5 and 11) run on the particle box engine (`particle-box.ts`): one species with a one-particle reaction at a fixed `rate`, so every nucleus has the same chance each moment whatever its age. `countAt` gives the "left" readouts and `BoxCountGraph` the curves; the runs with 20, 200 and 2000 particles wobble less and less round the smooth curve because the counts do. The counter tray (scene 3) uses the chance engine (`chance.ts`): each throw is one `coins` draw with as many coins as counters remain and p = 0.5, seeded so that the run reads 200, 103, 49, 27 as the design states. The clicks in scene 1 are the same kind of draw. The worked values (scenes 6, 9 and 10) are exact arithmetic.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **No clock picture.** The "clock face" on the attempt 2 card is the painted digital timer (`phys-y11-digital-timer-v1.png`) reading "30:00".
+- **The balance in the handoff is flagged.** The two-pan "mass comparison (diagram)" balance is a coded drawing of a real object. It is kept because the join frame between the half-life video and the mass-defect video shows it and a final frame must not change, and because Revision 2 chose it on purpose (a painted balance would suggest that nuclei are weighed on scales). Root may accept it as a labelled diagram, or ask for mass bars in both videos in a later pass that changes the join on both sides together.
 
 ## Script and shots
 
@@ -152,10 +167,14 @@ Visual: card shrinks to the top; "14.3 days", "8.0 × 10¹⁰" and "30.0 days" u
 
 Visual: `QuestionCard`, worded as printed: "A particular radioactive nucleus has a half-life of 10 minutes. It has existed for 30 minutes without decaying. State the probability that it decays in the next 10 minutes, and explain your answer. (2 marks)" The card arrives with its full text and picture in one move (question text 36 px). Picture (about 280 px): one coded nucleus beside a clock face marked "30 min so far" and a tag "t½ = 10 min". The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The clock beside the nucleus is the painted digital timer (about 160 px wide) with a coded readout "30:00" and the tag "30 min so far", not a coded clock face.
+
 ### 16. feedback 2 (brief)
 > It's fifty per cent, the same as for a brand new nucleus. A nucleus has no memory, so it has the same chance per second at any age. The half-life is ten minutes, so in any ten minutes, the chance is one **half**. The slip is thinking it's overdue, so it's more likely to **go**.
 
 Visual: card shrinks to the top; "half-life of 10 minutes" and "30 minutes" underline; the clock picture stays at the right. Lines write in turn (44 px): "probability = ½ (50%)" in a dark-ink frame; "no memory: same λ at every age"; on "half" "chance in one t½ = ½". On "go" a chip "it's overdue, so it's more likely" fades in and is crossed in red, red hand tag "no memory". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "t½ = 10 minutes | it has lasted 30 minutes without decaying | probability of decay in the next 10 minutes?".
 
 ### 17. handoff
 > So half-life predicts the crowd, never one nucleus. But every one of these decays gives out energy. Where does that energy come from? Weigh a carbon twelve nucleus. Then weigh six protons and six neutrons, separately. They don't balance. So how does missing mass measure nuclear binding **energy**?
@@ -231,6 +250,8 @@ Checked with Python (6 Nov, `v15.py` in the session scratchpad folder `m8v12-17-
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,636 characters**, 18 scenes. Characters per scene (1 to 18): 300, 380, 349, 407, 415, 368, 327, 429, 289, 388, 424, 96, 255, 380, 190, 270, 294, 75. At 13.3 characters per second the speech is about 424 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 3 tray and scene 10 slider run under their narration): **about 490 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,651 characters by the inter-scene convention (5,634 scene sum), about 506 s. Reserve trims if the voiced take runs long: scene 3's last sentence (keep the tally); scene 7's "But they're different things" sentence (keep the unit tags); scene 11's last sentence (keep the dial).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,636 characters). The notes scene is 45 s in all, so the estimate is about 490 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v14's final frame (designed in this wave, `phys-y12-m8-v14.md`): paper background; heading "What changes in a nucleus during alpha, beta and gamma decay?"; at the left a coded 10 by 10 grid of identical nuclei (red-grey discs), about a dozen flipped to grey "decayed" rings at scattered places; along the top an irregular click trace (vertical ticks at uneven spacing); a dashed navy marker hovering over the grid, tag "which next? when?"; at the right an empty graph with axes "N" and "t" and a dashed curve sketch halving at equal steps, tag "half every t½?"; chip "Next: why does half-life predict a population but not one atom?". Scene 1 turns the chip into the heading.
@@ -249,6 +270,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v15-learning-review.md`, `science_check` = `checks/p-y12-m8-v15-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched; all inspected 7 Nov, native sizes accepted by root decision 17):
@@ -264,6 +287,8 @@ Coded: the nuclei grid, click trace, graphs, staircase, halving guides, probabil
 Kit gaps (for the v15 build brief):
 1. **Seeded sample runs.** The `m8-decay-population` family is deterministic and stratified; scene 11 needs several seeded random runs for small and large samples plotted against the expected curve (seeded so every render is identical).
 2. **Counter throws.** Instanced counter plates scattered on the tray at seeded positions, with red-up counters lifting away each throw and a tally.
+
+Revision 3 (13 Nov 2026). Existing plate newly used on the attempt 2 card (confirmed by file listing, not re-inspected): `phys-y11-digital-timer-v1.png`. New plate requests: none.
 
 ## Codex asset brief
 
@@ -289,6 +314,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 5 and 6 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the seeded tray run gives exactly 200, 103, 49, 27 (or correct the design's readouts to the run chosen), and that the timer plate can show "30:00".
 
 ## YouTube metadata (draft)
 
@@ -339,3 +366,26 @@ New plate requests: none.
 Joins: the opening frame (v14's final frame) is unchanged; the source and counter enter on a scene 1 cue. The final frame changes only its tag ("MeV each" to "energy out", brief 193) and adds the balance label "mass comparison (diagram)" (v16 learning review: keep that label at every use, including the joins); v16 Revision 2's "Opening frame" matches.
 
 Counts: 5,634 to 5,636 characters (scene sum; Revision 1's headline 5,651 used the inter-scene convention); about 506 s to about 490 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the decaying grid, its curve and the sample-size runs are tied to the particle box engine, and the counter tray and clicks to the chance engine.
+- Attempt 2 card: the coded clock face becomes the painted digital timer.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,636 characters, unchanged; about 490 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The two-pan "mass comparison (diagram)" balance is a coded drawing of a real object. It is kept because the join frame between the half-life video and the mass-defect video shows it and a final frame must not change, and because Revision 2 chose it on purpose (a painted balance would suggest that nuclei are weighed on scales). Root may accept it as a labelled diagram, or ask for mass bars in both videos in a later pass that changes the join on both sides together. (2) The tray's seeded run must reproduce the design's 200, 103, 49, 27, or those four readouts change to match the seed chosen (a visual number, not speech: check the narration does not say them).

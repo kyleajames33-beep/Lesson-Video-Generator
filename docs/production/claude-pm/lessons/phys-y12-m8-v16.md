@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V16: Mass defect and binding energy. How does missing mass measure nuclear binding energy? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,744 characters, 19 scenes, about 498 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v15's final frame.
 
@@ -73,6 +73,20 @@ Main question: *A carbon-12 nucleus has less mass than its own parts, yet no par
 Entry knowledge: binding energy and the curve (v05); E = mc² (m7-v16); alpha decay and mass-energy in decay (v14); MeV energies of decays (v15).
 Stops after: the mass defect as the mass of the binding energy, the method, C-12 in two stages, the atomic-mass trap, per nucleon, the curve's values and shape, energy release towards the peak. No reaction Q-values or fission estimate.
 Handoff: v17, what determines the energy released in an artificial transmutation.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the mass-comparison balance, now live, scene 1 (about 26 s); (B) the carbon-12 nucleus pulled apart beside the small balance, then run in reverse, scenes 2 and 3 (about 49 s); (C) the method strip, then the two-stage working, scenes 4 to 6 (about 78 s; the working layout replaces the strip at about 24 s); (D) the two working columns for the atomic mass trap, scene 7 (about 33 s); (E) the two bars, scene 8 (about 23 s); (F) the binding-energy curve, scene 9 (about 20 s); (G) the neighbour links, then the repulsion web, scenes 10 and 11 (about 48 s); (H) the full curve with its two arrows and the memory card, scenes 12 and 13 (about 37 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 78 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine is needed: every number is exact arithmetic. The live balance (scenes 1 to 3) shows the two pan readouts, the gap "Δm" and the energy-in bar from one value as the nucleons are pulled apart, and the curve marker reads the design's table of binding energies.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The balance is flagged.** The two-pan "mass comparison (diagram)" balance is a coded drawing of a real object. It is kept because the join frame between the half-life video and the mass-defect video shows it and a final frame must not change, and because Revision 2 chose it on purpose (a painted balance would suggest that nuclei are weighed on scales). Root may accept it as a labelled diagram, or ask for mass bars in both videos in a later pass that changes the join on both sides together.
 
 ## Script and shots
 
@@ -163,6 +177,8 @@ Visual: `QuestionCard`, worded as printed: "A student states: 'The mass defect i
 
 Visual: card shrinks to the top; "particles that are lost" underlines; the balance picture stays at the right, its nucleons counted "12 = 12". Lines write in turn (44 px): "same Z protons and N neutrons before and after"; "binding energy released when the nucleus forms; E = mc²: mass falls by E_b/c²"; on "energy" "Δm = mass equivalent of E_b" in a dark-ink frame. On "missing" a chip "mass defect = lost particles" fades in and is crossed in red, red hand tag "nothing missing". Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "statement: the mass defect is the mass of the particles that are lost when a nucleus forms".
+
 ### 18. handoff
 > So the curve shows where nuclear energy can come from. But in nineteen nineteen, Ernest Rutherford did something new. He fired alpha particles into nitrogen gas, and turned some of the nitrogen into oxygen, the first artificial transmutation. Did that reaction release energy, or cost energy? What determines the energy released in an artificial **transmutation**?
 
@@ -239,6 +255,8 @@ Checked with Python (6 Nov, `nuclear.py` in the session scratchpad folder `m8v12
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,744 characters**, 19 scenes. Characters per scene (1 to 19): 341, 326, 319, 318, 331, 381, 433, 312, 272, 307, 334, 339, 159, 199, 411, 181, 346, 360, 75. At 13.3 characters per second the speech is about 432 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the balance and cursor run under their narration): **about 498 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,753 characters by the inter-scene convention (5,735 scene sum), about 514 s. Reserve trims if the voiced take runs long: scene 7's wrong working (open decision 2); scene 8's U-235 sentence (keep the bars); scene 12's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,744 characters). The notes scene is 45 s in all, so the estimate is about 498 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v15's final frame (designed in this wave, `phys-y12-m8-v15.md`): paper background; heading "Why does half-life predict a population but not one atom?"; at the upper left, small, the navy N against t curve with teal halving guides; at the left a small decaying nucleus sending out an amber α with an orange energy bar, tag "energy out" (v15 Revision 2; was "MeV each"); at the centre a coded two-pan balance labelled "mass comparison (diagram)": on the left pan a packed C-12 nucleus (6 red "p" and 6 grey "n" discs), on the right pan six red and six grey discs spaced apart; the beam tipped down on the right (separate nucleons heavier), tag "missing mass?"; chip "Next: how does missing mass measure nuclear binding energy?". Scene 1 turns the chip into the heading.
@@ -257,6 +275,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v16-learning-review.md`, `science_check` = `checks/p-y12-m8-v16-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have: none used as plates (the content is nuclei, curves and working). Revision 2: searched again for a scene 1 plate (including the brief 192 and 193 deliveries); none carries the mass-defect idea without misleading, so the live coded balance is the anchor.
@@ -269,6 +289,8 @@ Coded: the balance, nuclei and nucleons, energy bars, gamma packets, the method 
 Kit gaps (for the v16 build brief):
 1. **Comparison balance.** A coded two-pan beam that tips by a set amount from a numeric difference, with a gap bracket and readout (used in v15's final frame and here).
 2. **Neighbour links and repulsion web.** Packed disc clusters with links drawn only between touching discs, and rose lines between every pair of proton discs, with counts.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -289,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 11. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Report site note 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -343,3 +367,25 @@ New plate requests: none.
 Joins: the opening frame is v15's final frame as revised in v15 Revision 2 (tag "energy out", balance label). The final frame now shows both arrows rising towards the peak; v17 Revision 2's opening frame matches.
 
 Counts: 5,735 to 5,744 characters (scene sum; Revision 1's headline 5,753 used the inter-scene convention); about 514 s to about 498 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the live balance and curve marker are exact arithmetic (no engine is needed).
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,744 characters, unchanged; about 498 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The two-pan "mass comparison (diagram)" balance is a coded drawing of a real object. It is kept because the join frame between the half-life video and the mass-defect video shows it and a final frame must not change, and because Revision 2 chose it on purpose (a painted balance would suggest that nuclei are weighed on scales). Root may accept it as a labelled diagram, or ask for mass bars in both videos in a later pass that changes the join on both sides together.

@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V14: Alpha, beta and gamma decay. What changes in a nucleus during alpha, beta and gamma decay? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,620 characters, 18 scenes, about 490 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v13's final frame.
 
@@ -74,6 +74,20 @@ Entry knowledge: nuclear notation (Year 11); protons, neutrons and the tiny nucl
 Stops after: why nuclei decay, α, β⁻ with the antineutrino, β⁺, γ, the properties with the absorber test and deflection, spontaneous against artificial, mass-energy qualitatively. No rates, half-life or Q calculations.
 Handoff: v15, why half-life predicts a population but not one atom.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the painted sealed source and Geiger counter, scene 1 (about 25 s); (B) the neutrons against protons chart, scene 2 (about 24 s); (C) the uranium nucleus: alpha decay, scene 3 (about 34 s), then a board change to the carbon nucleus: beta-minus decay, scene 4 (about 24 s); (D) the full-width beta energy spectrum, scene 5 (about 31 s); (E) the fluorine nucleus: beta-plus decay, scene 6 (about 24 s); (F) the nucleus with its energy ladder: gamma decay, scene 7 (about 37 s); (G) the three rows of atoms: ionisation, then penetration with the absorber selector, scenes 8 and 9 (about 62 s; the bench with the absorber slot arrives at about 30 s); (H) the field region, scene 10 (about 19 s); (I) the two columns, scene 11 (about 31 s); (J) the summary table as the memory card, scene 12 (about 16 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The three tracks in the field (scene 10) run on the field motion engine (`field-motion.ts`, a `magnetic` field, drawn with `FieldMotionView`): the alpha and the beta are two runs with opposite signs of charge and very different charge-to-mass ratios, so they curve opposite ways and the beta curves far more tightly, while the gamma is a straight line with no force. The radii are a model, tagged "not to scale". The clicks of the Geiger counter in scene 1 use the chance engine (`chance.ts`, a `coins` experiment with a small chance per time step), so the clicks come at random with a steady average. The absorber counts in scene 9 are the design's stated values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **No balance picture.** The "coded balance" in scene 11 is two mass bars side by side, "parent" taller than "products", labelled "mass comparison (diagram)", not a drawing of scales.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *A*, *Z*, *N*, *α*, *β*, *γ*, *ν̄*.
@@ -121,7 +135,7 @@ Visual: board change (a new set-up, solid from the first frame): three rows of g
 ### 9. penetration: the reverse
 > Every ionisation costs the radiation a bit of its energy, so the strongest ionisers stop soonest. Test it with absorbers between a source and a Geiger counter. Alpha is stopped by a sheet of paper, or a few centimetres of air. Beta minus gets through paper, but a few millimetres of aluminium stops it. Gamma gets through both, and several centimetres of lead only reduces it. So outside the body, gamma is the danger, but swallowed or breathed in, alpha does the most **damage**.
 
-Visual: on "Every ionisation costs" the alpha row's track ends after a short distance, the beta's after longer, the gamma's runs off the edge, amber hand tag "more ionisation → shorter range". On "Test it with absorbers" board change to the absorber selector (Revision 2 live control; a new set-up, solid in one move): the painted sealed source at the left (about 440 px wide), one empty slot on the beam line, and the painted Geiger counter at the right (about 900 px wide, 450 px tall) with its live count (52 px) "940 counts per minute" (small grey tags "mixed school source: α, β⁻, γ" and "corrected for background"); the three painted absorbers wait in a row below the slot (paper `y12p-absorber-paper-v1.png` and aluminium `y12p-absorber-aluminium-v1.png` about 260 px tall, lead bricks `y12p-lead-bricks-v1.png` about 420 px wide); a safety chip "sealed source, tongs, keep your distance, short exposure: teacher-run". On "a sheet of paper" the paper slides up into the slot (about 330 px tall), amber "α" markers stop at it and the count drops to "622"; amber pen ring round the drop, amber hand tag "α gone". On "a few millimetres of aluminium" the aluminium replaces the paper, navy "β⁻" markers stop at it and the count drops to "88"; navy hand tag "β⁻ gone". On "several centimetres of lead only reduces it" the lead bricks replace the aluminium across the beam (tag "5 cm lead"), amber "γ" markers pass with fewer leaving, and the count falls to "27", not 0; amber hand tag "reduced, not stopped" with an amber pen underline on "27". On "damage" the bench shrinks to the left and a small coded tissue block appears at the right: outside it, γ markers pass through it, tag "outside: γ reaches tissue"; inside it, an α marker deposits a dense cluster of "+" marks in a tiny region, tag "inside: α ionises a tiny region intensely".
+Visual: on "Every ionisation costs" the alpha row's track ends after a short distance, the beta's after longer, the gamma's runs off the edge, amber hand tag "more ionisation → shorter range". On "Test it with absorbers" board change to the absorber selector (Revision 2 live control; a new set-up, solid in one move): the painted sealed source at the left (about 440 px wide), one empty slot on the beam line, and the painted Geiger counter at the right (about 900 px wide, 450 px tall) with its live count (52 px) "940 counts per minute" (small grey tags "mixed school source: α, β⁻, γ" and "corrected for background"); the three painted absorbers wait in a row below the slot (paper `y12p-absorber-paper-v1.png` and aluminium `y12p-absorber-aluminium-v1.png` about 260 px tall, lead bricks `y12p-lead-bricks-v1.png` about 420 px wide); a safety chip "sealed source, tongs, keep your distance, short exposure: teacher-run". On "a sheet of paper" the paper slides up into the slot (about 330 px tall), amber "α" markers stop at it and the count drops to "622"; amber pen ring round the drop, amber hand tag "α gone". On "a few millimetres of aluminium" the aluminium replaces the paper, navy "β⁻" markers stop at it and the count drops to "88"; navy hand tag "β⁻ gone". On "several centimetres of lead only reduces it" the lead bricks replace the aluminium across the beam (tag "5 cm lead"), amber "γ" markers pass with fewer leaving, and the count falls to "27", not 0; amber hand tag "reduced, not stopped" with an amber pen underline under "27". On "damage" the bench shrinks to the left and a small coded tissue block appears at the right: outside it, γ markers pass through it, tag "outside: γ reaches tissue"; inside it, an α marker deposits a dense cluster of "+" marks in a tiny region, tag "inside: α ionises a tiny region intensely".
 
 ### 10. deflection in a field
 > A magnetic field sorts them too. Alpha and beta minus curve in opposite directions, because their charges have opposite signs. Beta minus curves far more, because it's thousands of times lighter. Gamma goes straight through, because it has no **charge**.
@@ -132,6 +146,8 @@ Visual: board change (a new set-up, solid from the first frame): a region of ink
 > All of these happen spontaneously. A nucleus can also be changed on purpose, by hitting it with a particle, like an alpha particle or a neutron. That's an artificial transmutation, and we'll calculate one later. In every spontaneous decay, the products have slightly less total mass than the nucleus they came from. That missing mass becomes the products' kinetic energy, and any gamma energy, by E equals m c **squared**.
 
 Visual: board change: two columns. Left "spontaneous" (the U-238 alpha decay icon, chip "no trigger"). On "hitting it with a particle" right "artificial (induced)": an amber α arrow hits a coded N-14 nucleus, tag "Rutherford, 1919: ⁴₂He + ¹⁴₇N → ?" (calculated in v17). On "slightly less total mass" a coded balance: the parent on one pan heavier than the products on the other, labelled "mass comparison (diagram)", orange hand tag "products: less mass" with an orange pen arrow on the tilt. On "kinetic energy" the alpha and the recoiling daughter move apart with teal speed arrows and orange energy bars. On "squared" chip "E = mc² (Module 7)" in a dark-ink frame and a preview tag "Po-210 → Pb-206 + α: 5.41 MeV (calculated later)".
+
+Upgrade (Revision 3): The mass comparison is two bars (the parent's a little taller than the products'), labelled "mass comparison (diagram)" with the orange hand tag "products: less mass". No scales are drawn.
 
 ### 12. the summary table (hold about 3 seconds)
 > Here's the whole picture in one table, worth copying into your book. Alpha takes four from A and two from Z. Beta minus adds one to Z. Beta plus takes one from Z. Gamma changes neither, it just carries off **energy**.
@@ -229,6 +245,8 @@ Checked with Python (6 Nov, `nuclear.py` in the session scratchpad folder `m8v12
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,620 characters**, 18 scenes. Characters per scene (1 to 18): 332, 323, 451, 320, 407, 313, 486, 348, 476, 250, 418, 213, 153, 265, 161, 298, 331, 75. At 13.3 characters per second the speech is about 423 s; add about 3 s for the table hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 67 s of holds and countdowns; the scene 9 selector runs under its narration): **about 490 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,606 characters by the inter-scene convention (5,589 scene sum), about 504 s. Reserve trims if the voiced take runs long: scene 7's "hundreds of thousands" sentence (keep the tags); scene 6 to one sentence (open decision 1); scene 9's hazard sentence (open decision 2).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,620 characters). The notes scene is 45 s in all, so the estimate is about 490 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v13's final frame (designed in this wave, `phys-y12-m8-v13.md`): paper background; heading "Why do orbital probabilities replace literal electron paths?"; at the left a large soft teal 1s cloud with a small red nucleus dot at its centre; a zoom inset at the right, joined to the nucleus by two thin guide lines, showing a cluster of red "p" and grey "n" discs (tag "not to scale"), trembling slightly; scale tag "atom ≈ 10⁻¹⁰ m, nucleus ≈ 10⁻¹⁵ m"; three dashed arrows leaving the cluster, labelled "α?", "β?" and "γ?"; chip "Next: what changes in a nucleus during alpha, beta and gamma decay?". Scene 1 turns the chip into the heading.
@@ -246,6 +264,8 @@ In order (kebab-case; 18 scene headings, all `### N.`): hook, why-unstable, alph
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except summary-table (`hold` after its rows write), attempt-1, attempt-2 (`hold`) and key-notes (`hold`). `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: N against Z chart, nuclear equation builder, beta energy spectrum, ionisation tracks, absorber line-up, field deflection, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change; 2 to 3 clear change (chart shrinks to the corner); 3 to 4 camera continue with the nucleus swapped; 4 to 5 clear change to the spectrum stage; 5 to 6 clear change back to the nucleus (Revision 2); 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue, then clear change to the bench; 9 to 10 clear change; 10 to 11 clear change; 11 to 12 clear change to the table; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
 
 Holds: summary table (3 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v14-learning-review.md`, `science_check` = `checks/p-y12-m8-v14-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -265,6 +285,8 @@ Kit gaps (for the v14 build brief):
 1. **N against Z chart.** A schematic band of stable nuclei with markers that step by decay vectors (α: −2, −2; β⁻: +1 in Z, −1 in N; β⁺: the reverse; γ: none). Schematic, not a plotted nuclide chart (label "schematic").
 2. **Nuclear equation builder.** Nuclide symbols with A and Z that assemble from disc groups, with A and Z tallies that tick to equality.
 3. **Absorber selector.** One slot on the beam line whose absorber plate swaps (none, paper, aluminium, lead), with radiation markers that stop at, pass or thin out at it, and a live count readout tied to each swap.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -291,6 +313,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 4 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -343,3 +367,27 @@ New plate requests: none.
 Joins: the opening frame (v13's final frame) is unchanged. The final frame (scene 17) is unchanged, so v15's opening holds.
 
 Counts: 5,589 to 5,620 characters (scene sum; Revision 1's headline 5,606 used the inter-scene convention); about 504 s to about 490 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the three tracks in the field are tied to the field motion engine and the random clicks to the chance engine; the absorber counts stay the design's values.
+- Scene 11: the coded balance becomes two mass bars.
+- Scene 9: an underline "on" a number is reworded (visual text only, for the checking script).
+- Question cards: both already carry pictures (the "Question cards" decision of Revision 2) and both feedback scenes already carry givens strips; they were checked against the answer-free rule and left as they are.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,620 characters, unchanged; about 490 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

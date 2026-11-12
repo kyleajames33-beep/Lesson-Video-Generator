@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V05: Fusion in main-sequence stars. Why do main-sequence stars release energy by combining light nuclei? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,313 characters, 17 scenes, about 544 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v04's final frame.
 
@@ -79,6 +79,19 @@ Main question: *Four hydrogen nuclei go in, one helium nucleus comes out, and th
 Entry knowledge: the main sequence (v04); E = mc² and 0.7% (m7-v16); nuclear notation and Coulomb repulsion (Year 11).
 Stops after: ignition and balance, binding energy and the curve, the pp chain with conservation and energy, the CNO cycle and why massive stars use it. No helium burning or later stages.
 Handoff: v06, how stellar mass changes the elements a star can make.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the core inset on the painted Sun, scene 1 (about 29 s); (B) the painted gas cloud collapsing, scene 2 (about 38 s); (C) the colliding protons, scene 3 (about 30 s); (D) the mass-defect bars, scene 4 (about 34 s); (E) the binding-energy curve with its live marker, scene 5 (about 37 s); (F) the reaction steps, then the A and Z tallies under them, scenes 6 and 7 (about 70 s; the tallies arrive at about 35 s); (G) the working layout, scene 8 (about 36 s); (H) the CNO ring, scene 9 (about 41 s); (I) the Coulomb comparison, scene 10 (about 41 s); (J) the memory card, scene 11 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 70 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The colliding protons in scene 3 run on the particle box engine (`particle-box.ts`, drawn with `ParticleBoxView`): one species with a two-particle reaction that has an activation energy standing for the electrical repulsion. Drawn with `failed`, most collisions flash as bounces; raising the `temperature` timeline lets a few succeed, so "hotter core, more fusion" is counted (`rateAt`) and not just stated. The first pair that approaches and turns back is a `custom` run on the field motion engine with a repulsive 1/r² force. The binding-energy marker (scene 5) reads the design's table of values and stays lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -159,6 +172,8 @@ Visual: `QuestionCard`, worded as printed: "Compare the proton-proton chain and 
 
 Visual: card shrinks to the top with its picture; "Compare" underlines. On "energy" a framed two-column table "pp chain | CNO cycle", row "same: 4 ¹H → ⁴He, 26.7 MeV, Δm = 0.0287 u". On "end" row "pp: directly from protons | CNO: carbon catalyst, returned". On "Sun" row "pp: cooler cores (Sun, ~99%) | CNO: hotter cores (> 1.3 M☉)". On "carbon" (last) a chip "the CNO cycle uses up carbon" fades in and is crossed (caption "catalyst: regenerated"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "compare: the proton-proton chain | the CNO cycle | both release energy in main-sequence stars". The card has no numbers, so the strip repeats its demand.
+
 ### 16. handoff
 > So stars shine by climbing the binding energy curve, from hydrogen to helium. But the core's hydrogen doesn't last forever. When it runs out, the core is mostly helium. Can a star keep climbing, towards carbon, oxygen, even iron? That depends on its mass. So how does stellar mass change the elements a star can **make**?
 
@@ -235,6 +250,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,313 characters**, 17 scenes. Characters per scene (1 to 17): 386, 503, 399, 449, 490, 460, 462, 484, 549, 540, 135, 213, 338, 133, 380, 317, 75. At 13.3 characters per second the speech is about 475 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 5 marker runs under its narration): **about 544 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,264 characters (scene sum; 6,280 with inter-scene spaces), about 556 s. Reserve trims if the voiced take runs long: scene 10's detector sentence (keep the share bar); scene 4's analogy clause; scene 3's last clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,313 characters). The notes scene is 45 s in all, so the estimate is about 544 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v04's final frame (`phys-y12-m8-v04.md`, "Final frame", Revision 2; its "energy?" tag is now a rose hand tag with a pen ring round the core inset): paper background; heading "How does the HR diagram distinguish brightness, temperature and stellar stage?"; the full coded HR diagram with the main-sequence band glowing pale amber and the other regions dimmed; five small tags round the diagram ("temperature", "colour", "luminosity", "size", "stage"); from the Sun's point a small round core inset: four rose "¹H" discs and one "⁴He" nucleus with a dashed arrow and a "?", tag "energy?"; chip "Next: why do main-sequence stars release energy by combining light nuclei?". Scene 1's first beat fades the tags, enlarges the core inset to the centre in front of the painted Sun, shrinks the HR diagram to a corner thumbnail and turns the chip into the heading.
@@ -253,6 +270,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v05-learning-review.md`, `science_check` = `checks/p-y12-m8-v05-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (all inspected 7 Nov; scaled uniformly only, never stretched, never above native size):
@@ -269,6 +288,8 @@ Kit gaps (for the v05 build brief):
 2. **CNO ring.** Six stations on a circle, a carbon disc travelling round and returning.
 3. **Collapse and balance.** Arrow pairs that reach equal length, with a perturbation loop.
 4. **Binding curve with labelled nuclides.** The `m8-nucleosynthesis` curve with tick labels and a climbing arrow (reused in v06).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -290,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 16 to 19 under Decisions to root.
 11. Revision 2: confirm "more than about one point three times the Sun's mass" (9) and "at the same distance" with the shared separation "d" (10; author note j); the curve-marker values; the scene 8 crossed slip; stage changes at 9 to 10 and 10 to 11.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -336,3 +359,25 @@ New plate requests: none.
 Joins: the opening is v04's Revision 2 final frame (the "energy?" tag is now a rose hand tag). The final frame (scene 16) is unchanged apart from the "how far up?" tags becoming hand tags, recorded in v06's opening.
 
 Counts: 6,264 to 6,313 characters (scene sum); about 556 s to about 544 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the colliding protons are tied to the particle box engine (an activation energy standing for the repulsion) and the turning-back pair to the field motion engine; the binding-energy marker stays lesson-coded.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,313 characters, unchanged; about 544 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The particle box stands in for the repulsion with an activation energy and for tunnelling with a small success rate; the on-screen tag says "model".

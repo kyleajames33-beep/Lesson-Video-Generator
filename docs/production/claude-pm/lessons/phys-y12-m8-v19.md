@@ -1,6 +1,6 @@
 # Year 12 Physics M8 V19: Fusion and the Coulomb barrier. Why can fusion release energy despite repulsion between nuclei? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 193 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,786 characters, 18 scenes (17 narrated scenes and the notes hold), about 504 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v18's final frame.
 
@@ -76,6 +76,20 @@ Main question: *Two light nuclei push each other away harder and harder as they 
 Entry knowledge: fission and the curve's two sides (v18); fusion in stars (v05); binding energy (v16); Q (v17); Coulomb's law (Year 11).
 Stops after: the barrier and the well, the conditions for fusion, why energy is released, the D-T Q, the energy ledger, stars and tokamaks. No particle structure.
 Handoff: v20, the evidence that protons and neutrons have smaller constituents.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the two repelling nuclei with the painted Sun, scene 1 (about 27 s); (B) the two-range graph with the separation slider, scene 2 (about 32 s); (C) the working layout, scene 3 (about 28 s); (D) the speed spread beside the energy curve, then the two curves side by side, scenes 4 and 5 (about 62 s; the board changes at about 36 s); (E) the three binding bars, scene 6 (about 28 s); (F) the working layout for the masses, scene 7 (about 28 s); (G) the energy ledger beside the curve, scene 8 (about 27 s); (H) the helium nucleus and the neutron sharing the energy, scene 9 (about 32 s); (I) the painted Sun with its core inset, scene 10 (about 32 s); (J) the painted tokamak, scene 11 (about 35 s); (K) the curve and the memory card, scene 12 (about 6 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The speed spread in scene 4 runs on the particle box engine (`particle-box.ts`, drawn with `ParticleBoxView`): two species with a two-particle reaction whose activation energy stands for the Coulomb barrier. Drawn with `failed`, nearly every collision bounces; as the `temperature` timeline rises a few of the fastest pairs fuse, and `rateAt` is the "fusions" readout (tagged "model"). The pair of nuclei on the energy curve (scenes 1, 2, 8 and 12) is a `custom` run on the field motion engine: a repulsive 1/r² force that gives way to a strong short-range pull inside about 3 fm, so the marker climbs the hill and drops into the valley in step with the nuclei. The force and energy readouts are exact arithmetic.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The ball is a plate.** The ball in the ball-over-hump inset is the steel ball plate (`phys-y11-steel-ball-v1.png`), not a coded disc. The wall block in scene 9 and the field-line rings in scene 11 stay schematics over the painted tokamak.
 
 ## Script and shots
 
@@ -161,6 +175,8 @@ Visual: `QuestionCard`, worded as printed: "Nuclear fusion releases energy, yet 
 
 Visual: card shrinks to the top; "releases" and "high temperatures" underline; the tokamak picture stays at the right; rows write in turn (44 px). On "them" row "repulsion (long range) vs strong force (≈ 3 fm)" with the hill-and-valley curve small. On "get through or over that Coulomb barrier" row "high T → high speed → enough tunnel through (or get over)". On "released" row "product more tightly bound → less mass → Q > 0" in a dark-ink frame. On "hot" a chip "the strong force only works at high temperature" fades in and is crossed in red (red hand tag "temperature is for getting close"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "explain: fusion releases energy | yet it occurs only at extremely high temperatures".
+
 ### 17. handoff
 > All of this treats protons and neutrons as tiny solid balls, held together by the strong force. But are they? Earlier, firing alpha particles at atoms revealed the nucleus inside. What if we fire something at a proton? So what evidence shows that protons and neutrons have smaller **constituents**?
 
@@ -238,6 +254,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad folder `m8v18
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,786 characters**, 18 scene headings (17 narrated scenes and the notes hold). Characters per scene (1 to 18): 361, 425, 367, 475, 342, 371, 376, 355, 426, 429, 471, 77, 164, 292, 119, 367, 294, 75. At 13.3 characters per second the speech is about 435 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the separation slider runs under its narration): **about 504 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,729 characters, about 515 s. Reserve trims if the voiced take runs long: scene 10's surprise sentence pair; scene 11's ITER sentence (keep the tag); scene 9's last sentence (keep the chips).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,786 characters). The notes scene is 45 s in all, so the estimate is about 504 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v18's final frame (`phys-y12-m8-v18.md`, "Final frame"): paper background; heading "Why can one fission event trigger a controlled or uncontrolled chain?"; the coded binding-energy-per-nucleon curve across the frame (labels ²H, ³H, ⁴He, "peak near iron (⁵⁶Fe: 8.8 MeV)", ⁹²Kr, ¹⁴¹Ba, ²³⁵U); a solid amber arrow rising up and to the left from ²³⁵U to the fragments tagged "fission (this video)" (v18 Revision 2, brief 193); a dashed amber arrow from ²H and ³H up to ⁴He with a "?", tagged "fusion?"; an inset of a rose ²H disc and a rose ³H disc with red repulsion arrows pointing apart; chip "Next: why can fusion release energy despite repulsion between nuclei?". Scene 1 shrinks the curve to a corner thumbnail, enlarges the repelling inset and turns the chip into the heading.
@@ -256,6 +274,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m8-v19-learning-review.md`, `science_check` = `checks/p-y12-m8-v19-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -271,6 +291,8 @@ Kit gaps (for the v19 build brief):
 1. **Two-range forces and barrier-well curve.** Linked force-against-separation and energy-against-separation curves with a slider-driven pair of nuclei (reusable for v21's force-range comparison).
 2. **Speed spread.** A particle cloud with a skewed speed distribution, a few long bars reaching a threshold line.
 3. **Energy ledger.** Bars that lend and return, then add Q.
+
+Revision 3 (13 Nov 2026). Existing plate newly used in the ball-over-hump inset (confirmed by file listing): `phys-y11-steel-ball-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the field motion engine is two-dimensional, so the charges spiralling along the tokamak's field lines (scene 11) are lesson-coded, as in the Module 6 magnetic force video; tunnelling has no engine and is shown as a dashed path.
 
 ## Codex asset brief
 
@@ -291,6 +313,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -339,3 +363,26 @@ New plate requests: none.
 Joins: the opening frame is v18's final frame as revised (fission arrow direction only). The final frame (scene 17) is unchanged, so v20's opening holds.
 
 Counts: 5,729 to 5,786 characters (scene sum); about 515 s to about 504 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the speed spread is tied to the particle box engine and the approaching nuclei to the field motion engine; the readouts stay exact arithmetic (kit gaps recorded).
+- The ball-over-hump inset uses the steel ball plate.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the field motion engine is two-dimensional, so the charges spiralling along the tokamak's field lines (scene 11) are lesson-coded, as in the Module 6 magnetic force video; tunnelling has no engine and is shown as a dashed path.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,786 characters, unchanged; about 504 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.
