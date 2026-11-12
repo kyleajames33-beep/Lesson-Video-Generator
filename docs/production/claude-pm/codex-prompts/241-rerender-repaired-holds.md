@@ -51,3 +51,4 @@ All 13 held Maths videos and i12 are now on this list.
 - Brief 242 (Year 11 upgrade error check and plates) is light work with no speech. Run it in gaps when no render or voicing job can run, for example while the Google quota is spent.
 - Brief 239 also has entries 33 to 35 (f01, f02, f03), graded A on 13 Nov.
 - Brief 243 (Year 11 Maths crosswalk, outline and packs) is light research with no speech. Run it after brief 242, in the same kind of gaps.
+- Brief 244 (Year 12 Physics plate QA and two plates) is light work. Run it after 242 and before 243.

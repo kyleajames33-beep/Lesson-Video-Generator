@@ -137,7 +137,7 @@ Visual: card shrinks to the top; "same speed" and "level ground" underline. Rows
 
 Visual: board clears to the stage with the 15 m s⁻¹ level-ground paths at 30° and 60° landing together, and the orange box "R = u² sin 2θ ÷ g" at the top right. On "thirty metre cliff" the ground under the launcher rises into a coded HSC-style cliff outline 30 m high (the launcher on its top edge), with the sea level line 30 m below at 7 px per metre; the old paths fade. The launcher's speed readout changes to "u = 20 m s⁻¹". On "falls below" three trajectories draw from the barrel tip at 30° (solid orange), 45° (solid green-grey) and 60° (dashed blue-grey), each rising, passing back through the launch level (a dashed horizontal line at the cliff top marked "launch level") and continuing down towards the sea, stopping just above sea level with a "?" at each landing. On "furthest" the orange box gets a red stamp "level ground only?" and a chip writes "Next: landing below the launch level". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -201,7 +201,7 @@ Checked with Python (6 Nov); Codex to re-check.
 
 ## Narration length estimate
 
-Revision 2 count (6 Nov; by script: only lines starting "> ", `**` removed): **5,859 characters**, 15 scenes; narration unchanged from Revision 1, whose stated total of 5,873 was an addition slip (its per-scene counts sum to 5,859). Characters per scene (1 to 15): 485, 434, 535, 477, 469, 555, 533, 378, 177, 292, 363, 291, 401, 394, 75. At 13.3 characters per second the speech is about 441 s; add about 2 s for the scene 5 barrel sweep to settle (Revision 2), 3 s for the prediction countdown, about 8 s of settling for the paired replays in scenes 1, 3, 6 and 7 (the 65° flight runs 4.6 s), about 2 s for the graph sweep in scene 5, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 96 s of holds and countdowns): **about 538 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's last two sentences (keep the tag); scene 8's second trap.
+Revision 2 count (6 Nov; by script: only lines starting "> ", `**` removed): **5,859 characters**, 15 scenes; narration unchanged from Revision 1, whose stated total of 5,873 was an addition slip (its per-scene counts sum to 5,859). Characters per scene (1 to 15): 485, 434, 535, 477, 469, 555, 533, 378, 177, 292, 363, 291, 401, 394, 75. At 13.3 characters per second the speech is about 441 s; add about 2 s for the scene 5 barrel sweep to settle (Revision 2), 3 s for the prediction countdown, about 8 s of settling for the paired replays in scenes 1, 3, 6 and 7 (the 65° flight runs 4.6 s), about 2 s for the graph sweep in scene 5, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 40 s more of the quiet notes hold (about 81 s of holds and countdowns; root 13 Nov set the notes hold to 45 s): **about 523 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's last two sentences (keep the tag); scene 8's second trap.
 
 ## Final frame
 
@@ -215,7 +215,7 @@ In order (15 scene headings): hook, range-from-columns, swap, shortcut-condition
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`); scene 1 ends with a 3 s prediction countdown. `motionTools`: strobe stage with paired flights and clocks, ledger (v01 kit gaps 1, 2), launch-triangle side swap, range against angle graph with a coupled point (`DataGraph`), `AlignedAlgebra`, `NumberTicker`, `ScribbleCircle`, `PenArrow`, path draw-on, `Countdown`. Transitions: v03's final frame continues into scene 1 (camera continue); 1 to 2 clear change to the ledger; 2 to 3 clear change (triangles full stage, ledger to a thumbnail); 3 to 4 camera continue into a full-width working stage; 4 to 5 clear change to the graph with the painted launcher as its live control; 5 to 6 clear change to the calculation layout; 6 to 7 clear change (new case); 7 to 8 camera continue; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 clear change; 14 to 15 fade to the notes board.
 
-Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m5-v04-learning-review.md`, `science_check` = `checks/p-y12-m5-v04-physics-check.md`.
+Holds: hook (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech), key-notes (45 s, root 13 Nov). Review evidence paths: `learning_review` = `checks/p-y12-m5-v04-learning-review.md`, `science_check` = `checks/p-y12-m5-v04-physics-check.md`.
 
 ## Assets
 

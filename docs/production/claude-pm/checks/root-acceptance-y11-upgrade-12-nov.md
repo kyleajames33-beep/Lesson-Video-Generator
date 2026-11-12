@@ -69,3 +69,15 @@ This answers the upgrade calls U1 to U15 in `root-decisions-chem-y11-m1.md`, and
 - **M2 U3 and M3 U3:** hiding method aids during countdowns is accepted. Every supplied value and condition stays on the card.
 - **M4 U3:** m4-v12 attempt 2's molecule models are **replaced** with a sealed reaction vessel plate, or the plain card if no plate fits. Counting the models gives the answer, so they break the answer-free picture rule. The other stand-ins are accepted.
 - **M4 U8:** the three confirmations go to brief 242.
+
+## Year 12 Physics Modules 5 to 8 (root, 13 November 2026)
+This answers the "Visual upgrade (13 November 2026)" calls in `root-decisions-phys-y12-m5.md` to `-m8.md`. **Every call not named below is accepted as written.** R1 to R4 apply to Year 12 Physics too: every Year 12 Physics build uses them, whatever an older design line says about red crossings.
+
+- **m8-v15 final frame and m8-v16 opening (mass balance):** use the painted balance plate from Year 11 Chemistry (m1-v06's balance, `y11c-` prefix) on both sides of the join, at the same size and place, with the same readings. This is R2: use the plate where one exists. The builder changes both sides together; the join wording stays.
+- **m7-v02 and m7-v13 joins:** drawing the wheel, oscilloscope and star from their plates is accepted.
+- **m5-v06's target flag:** accepted as a plain exam-style marker.
+- **m6-v15:** accepted, with the existing "simple model" tag plus the words "steady values stand for RMS values". Losses depend on I²R either way.
+- **m8-v15's counter tray:** the builder chooses a seed by looking. The on-screen counts follow the run (the speech says only "about").
+- **m5-v04 (pilot):** root set its notes hold to 45 s. Its "crossed mistakes red" line yields to R1 at build.
+- **Plates:** the five plates to inspect and the two new requests (sailing dinghy, vapour cell) go to brief 244.
+- **Kit gaps:** commissioned as the next kit job, Module 6 first (it blocks the most videos).
