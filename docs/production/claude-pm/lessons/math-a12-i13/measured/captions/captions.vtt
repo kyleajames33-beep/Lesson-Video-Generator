@@ -1,0 +1,529 @@
+WEBVTT
+
+00:00:00.341 --> 00:00:03.113
+Last video ended here, with the power used
+
+00:00:03.173 --> 00:00:05.342
+by a home's air conditioner across a hot
+
+00:00:05.362 --> 00:00:05.543
+day.
+
+00:00:06.165 --> 00:00:08.609
+Power is how fast energy is used, measured
+
+00:00:08.650 --> 00:00:10.995
+in kilowatts, and here it peaks at four
+
+00:00:11.036 --> 00:00:12.598
+kilowatts at two in the afternoon.
+
+00:00:13.484 --> 00:00:15.334
+So how much energy does it use, from
+
+00:00:15.455 --> 00:00:16.863
+eight in the morning to eight at night?
+
+00:00:17.648 --> 00:00:19.817
+A quick guess is four kilowatts for twelve
+
+00:00:19.858 --> 00:00:21.847
+hours, which is forty-eight kilowatt hours.
+
+00:00:22.531 --> 00:00:24.378
+Is the true answer more, or less?
+
+00:00:25.035 --> 00:00:25.316
+Less,
+
+00:00:25.919 --> 00:00:28.670
+because the air conditioner only draws four kilowatts
+
+00:00:28.792 --> 00:00:29.494
+at two o'clock.
+
+00:00:30.279 --> 00:00:31.725
+Here's how to get it exactly.
+
+00:00:32.511 --> 00:00:34.802
+Take a thin strip of time, a tiny
+
+00:00:34.843 --> 00:00:35.465
+part of an hour.
+
+00:00:36.270 --> 00:00:38.374
+Over that strip, the power barely changes,
+
+00:00:38.897 --> 00:00:41.141
+so the energy is power times time,
+
+00:00:41.644 --> 00:00:44.731
+in kilowatts times hours, which is kilowatt hours.
+
+00:00:45.494 --> 00:00:47.321
+On the graph, that's the strip's area.
+
+00:00:48.185 --> 00:00:50.650
+Add every strip, make them thinner, and you
+
+00:00:50.671 --> 00:00:52.375
+get the area under the power graph.
+
+00:00:53.118 --> 00:00:55.570
+That's the definite integral of power over the
+
+00:00:55.592 --> 00:00:55.792
+day.
+
+00:00:56.819 --> 00:00:58.374
+The same idea works for any rate.
+
+00:00:59.001 --> 00:01:01.072
+Integrate a rate over an interval, and you
+
+00:01:01.113 --> 00:01:02.500
+get the amount it adds up to.
+
+00:01:03.263 --> 00:01:05.728
+The area's units are the graph's units up,
+
+00:01:06.050 --> 00:01:07.352
+times its units across.
+
+00:01:08.075 --> 00:01:10.078
+So the energy is the integral from zero
+
+00:01:10.119 --> 00:01:12.603
+to twelve, of four sine of pi t
+
+00:01:12.745 --> 00:01:13.245
+over twelve.
+
+00:01:14.148 --> 00:01:16.558
+The inside is linear, with rate pi over
+
+00:01:16.579 --> 00:01:18.607
+twelve, so the primitive divides by it.
+
+00:01:19.130 --> 00:01:22.303
+That gives minus forty-eight over pi, times cos
+
+00:01:22.404 --> 00:01:23.729
+of pi t over twelve.
+
+00:01:24.453 --> 00:01:26.861
+At twelve, cos pi is minus one.
+
+00:01:27.485 --> 00:01:29.239
+At zero, cos zero is one.
+
+00:01:29.905 --> 00:01:32.651
+So the energy is ninety-six over pi, about
+
+00:01:32.752 --> 00:01:34.355
+thirty point six kilowatt hours.
+
+00:01:34.997 --> 00:01:36.987
+That's less than forty-eight, as predicted.
+
+00:01:37.715 --> 00:01:38.788
+Notice the domain, too.
+
+00:01:39.432 --> 00:01:41.640
+After eight at night this formula goes negative,
+
+00:01:42.023 --> 00:01:44.150
+but an air conditioner can't use negative power.
+
+00:01:44.614 --> 00:01:46.708
+So the model only holds from zero to
+
+00:01:46.749 --> 00:01:47.070
+twelve.
+
+00:01:48.024 --> 00:01:49.819
+Units also stop a common mistake.
+
+00:01:50.502 --> 00:01:52.965
+A factory finds that each extra item costs
+
+00:01:53.186 --> 00:01:55.810
+fifty minus zero point two x dollars to
+
+00:01:55.850 --> 00:01:58.374
+make, when it's already making x items.
+
+00:01:59.155 --> 00:02:01.122
+That's a rate, in dollars per item.
+
+00:02:01.966 --> 00:02:04.310
+Raising production from one hundred to two hundred
+
+00:02:04.451 --> 00:02:07.436
+items costs the integral of that rate, from
+
+00:02:07.577 --> 00:02:08.798
+one hundred to two hundred.
+
+00:02:09.622 --> 00:02:12.366
+The primitive is fifty x minus zero point
+
+00:02:12.508 --> 00:02:14.931
+one x squared, and the answer is two
+
+00:02:14.972 --> 00:02:15.593
+thousand dollars.
+
+00:02:16.478 --> 00:02:19.411
+Dollars per item, times items, gives dollars.
+
+00:02:20.296 --> 00:02:23.145
+But integrating a total, like a profit in
+
+00:02:23.187 --> 00:02:25.615
+dollars, gives dollars times items.
+
+00:02:26.539 --> 00:02:28.190
+That isn't the change in profit you were
+
+00:02:28.231 --> 00:02:28.593
+asked for.
+
+00:02:29.259 --> 00:02:31.414
+So integrate a rate, and you get an
+
+00:02:31.475 --> 00:02:31.817
+amount.
+
+00:02:32.509 --> 00:02:33.593
+Some rates go negative.
+
+00:02:34.478 --> 00:02:36.745
+Water moves through a gate into a dam
+
+00:02:36.847 --> 00:02:38.792
+at a rate of eight minus two t
+
+00:02:38.954 --> 00:02:40.679
+megalitres per day, for six days.
+
+00:02:41.423 --> 00:02:43.732
+After day four the rate is negative, so
+
+00:02:43.794 --> 00:02:45.340
+water flows back out through the gate.
+
+00:02:46.044 --> 00:02:48.207
+The integral from zero to six is twelve,
+
+00:02:48.569 --> 00:02:50.371
+and that's the net change: the dam ends
+
+00:02:50.452 --> 00:02:52.596
+up with twelve megalitres more than it started
+
+00:02:52.637 --> 00:02:52.776
+with.
+
+00:02:53.378 --> 00:02:54.962
+But the water that passed through the gate
+
+00:02:55.144 --> 00:02:58.413
+is the total area, sixteen in plus four
+
+00:02:58.575 --> 00:03:00.259
+out, which is twenty megalitres.
+
+00:03:00.942 --> 00:03:01.910
+So the question decides.
+
+00:03:02.414 --> 00:03:04.520
+If it asks how much the amount changed,
+
+00:03:04.902 --> 00:03:05.523
+use the integral.
+
+00:03:05.927 --> 00:03:07.877
+If it asks how much flowed in total,
+
+00:03:08.321 --> 00:03:08.944
+use the area.
+
+00:03:09.621 --> 00:03:11.990
+Now a region bounded by the y-axis.
+
+00:03:12.773 --> 00:03:14.720
+A drainage channel has sides shaped like y
+
+00:03:15.181 --> 00:03:17.911
+equals x squared, in metres, with y measured
+
+00:03:17.991 --> 00:03:18.634
+up from the bottom.
+
+00:03:19.299 --> 00:03:20.913
+The water is one metre deep.
+
+00:03:21.756 --> 00:03:24.201
+What area of the cross-section, the shape you'd
+
+00:03:24.241 --> 00:03:26.025
+see if you cut straight across, does the
+
+00:03:26.065 --> 00:03:26.646
+water fill?
+
+00:03:27.529 --> 00:03:29.334
+Put the y-axis down the middle of the
+
+00:03:29.355 --> 00:03:29.635
+channel.
+
+00:03:30.319 --> 00:03:31.842
+Then the right half of the water is
+
+00:03:31.903 --> 00:03:34.368
+bounded by the curve, the y-axis and the
+
+00:03:34.409 --> 00:03:35.009
+water surface.
+
+00:03:35.973 --> 00:03:38.906
+Cut it into thin horizontal strips, like layers
+
+00:03:38.928 --> 00:03:39.308
+of water.
+
+00:03:40.133 --> 00:03:42.378
+At height y, a layer reaches from the
+
+00:03:42.599 --> 00:03:45.204
+y-axis out to x equals root y.
+
+00:03:46.047 --> 00:03:48.515
+So integrate root y with respect to y,
+
+00:03:48.837 --> 00:03:49.839
+from zero to one,
+
+00:03:50.362 --> 00:03:51.525
+which gives two thirds.
+
+00:03:52.268 --> 00:03:54.733
+The channel is even about the y-axis, so
+
+00:03:54.794 --> 00:03:55.114
+double it:
+
+00:03:55.636 --> 00:03:56.978
+four thirds of a square metre.
+
+00:03:57.628 --> 00:03:59.751
+The channel is thirty metres long, so it
+
+00:03:59.812 --> 00:04:03.177
+holds four thirds times thirty, which is forty
+
+00:04:03.299 --> 00:04:04.520
+cubic metres of water.
+
+00:04:05.385 --> 00:04:07.439
+A check with x gives the same answer.
+
+00:04:08.004 --> 00:04:10.585
+The two by one rectangle, minus the area
+
+00:04:10.666 --> 00:04:13.567
+under the curve, is two minus two thirds,
+
+00:04:13.889 --> 00:04:15.029
+which is four thirds.
+
+00:04:15.952 --> 00:04:17.298
+And here's a surprise.
+
+00:04:17.902 --> 00:04:20.283
+Double the depth to two metres, and the
+
+00:04:20.324 --> 00:04:23.425
+water's area nearly triples, because the channel is
+
+00:04:23.566 --> 00:04:24.526
+wider higher up.
+
+00:04:25.280 --> 00:04:27.602
+So the steps for a model are: name
+
+00:04:27.642 --> 00:04:28.703
+the rate and its units,
+
+00:04:29.264 --> 00:04:30.865
+take the interval from the question,
+
+00:04:31.586 --> 00:04:33.968
+integrate, and answer in the units of the
+
+00:04:34.008 --> 00:04:34.309
+amount.
+
+00:04:35.054 --> 00:04:35.805
+Here's the check to keep.
+
+00:04:36.472 --> 00:04:38.678
+Units up, times units across,
+
+00:04:39.300 --> 00:04:40.925
+tells you what an integral has found.
+
+00:04:41.527 --> 00:04:43.272
+If those units don't make the amount you
+
+00:04:43.314 --> 00:04:45.179
+want, you're integrating the wrong thing.
+
+00:04:47.827 --> 00:04:48.276
+Your turn.
+
+00:04:49.122 --> 00:04:51.745
+A supplier's hopper pours sand into a box
+
+00:04:51.785 --> 00:04:54.308
+trailer at a rate of six t minus
+
+00:04:54.468 --> 00:04:57.311
+t squared kilograms per second, for the first
+
+00:04:57.511 --> 00:04:58.252
+six seconds.
+
+00:04:58.873 --> 00:05:00.883
+How much sand goes into the trailer in
+
+00:05:00.923 --> 00:05:01.405
+that time?
+
+00:05:02.170 --> 00:05:03.057
+Pause here to answer.
+
+00:05:13.829 --> 00:05:16.261
+The amount is the integral of the rate,
+
+00:05:16.503 --> 00:05:17.527
+from zero to six.
+
+00:05:18.071 --> 00:05:20.785
+The primitive is three t squared minus t
+
+00:05:20.827 --> 00:05:21.771
+cubed over three.
+
+00:05:22.496 --> 00:05:24.520
+At six, that's one hundred and eight minus
+
+00:05:24.562 --> 00:05:26.867
+seventy-two, so thirty-six kilograms.
+
+00:05:27.774 --> 00:05:29.369
+Fifty-four kilograms is wrong.
+
+00:05:29.773 --> 00:05:32.000
+It uses the top rate, nine kilograms per
+
+00:05:32.061 --> 00:05:33.665
+second, for the whole six seconds.
+
+00:05:35.298 --> 00:05:35.723
+Last one.
+
+00:05:36.575 --> 00:05:38.777
+A metal plate is the region bounded by
+
+00:05:39.078 --> 00:05:42.001
+y equals x cubed, the y-axis and the
+
+00:05:42.062 --> 00:05:44.684
+line y equals eight, measured in centimetres.
+
+00:05:45.547 --> 00:05:48.378
+Find its area by integrating with respect to
+
+00:05:48.740 --> 00:05:48.819
+y.
+
+00:05:49.504 --> 00:05:50.290
+Pause here to answer.
+
+00:06:00.938 --> 00:06:01.869
+Rearrange the curve.
+
+00:06:02.475 --> 00:06:04.440
+x is the cube root of y, so
+
+00:06:04.782 --> 00:06:06.445
+x is y to the power of one
+
+00:06:06.546 --> 00:06:06.826
+third.
+
+00:06:07.609 --> 00:06:09.894
+Integrate from zero to eight, and you get
+
+00:06:10.015 --> 00:06:12.560
+three quarters, times y to the power four
+
+00:06:12.641 --> 00:06:12.981
+thirds.
+
+00:06:13.945 --> 00:06:16.215
+Eight to the four thirds is sixteen, so
+
+00:06:16.256 --> 00:06:18.385
+the area is twelve square centimetres.
+
+00:06:19.290 --> 00:06:20.857
+Four square centimetres is wrong.
+
+00:06:21.360 --> 00:06:22.964
+That's the region on the other side of
+
+00:06:22.985 --> 00:06:25.492
+the curve, between it and the x-axis.
+
+00:06:27.221 --> 00:06:29.084
+So an integral turns a rate into an
+
+00:06:29.125 --> 00:06:31.910
+amount, and a region against either axis into
+
+00:06:31.930 --> 00:06:32.471
+an area,
+
+00:06:33.073 --> 00:06:34.536
+as long as the units and the domain
+
+00:06:34.576 --> 00:06:35.077
+make sense.
+
+00:06:35.919 --> 00:06:37.650
+Next, the most important rate of all.
+
+00:06:38.556 --> 00:06:40.368
+Here's a robot vacuum at one end of
+
+00:06:40.388 --> 00:06:40.811
+a hallway.
+
+00:06:41.534 --> 00:06:43.477
+Where is it, how fast is it going,
+
+00:06:43.957 --> 00:06:45.940
+and is it speeding up or slowing down?
+
+00:06:48.601 --> 00:06:49.404
+Here are the key notes.
+
+00:06:50.047 --> 00:06:51.775
+Pause the video if you need more time
+
+00:06:51.836 --> 00:06:52.318
+to copy them.

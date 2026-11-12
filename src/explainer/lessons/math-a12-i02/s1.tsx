@@ -1,41 +1,22 @@
 // Scenes 1 to 4: the hook (i01's bracket frame, expanding (2x + 1)² on an area model, then the starter rising in
 // its jar beside live rate and rise graphs), rewriting into powers of x (each case graphed with its domain), the
 // bracket by guess, check and halve (the kit's paired derivative panel tracing the guess's gradient onto a dashed
-// target), and two answers a constant 1/6 apart. I01FinalFrameStandIn is i01's final frame as its design states
-// it, built here so i01 can import it.
+// target), and two answers a constant 1/6 apart. Frame 0 is i01's own final frame (I01FinalFrame, imported).
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, INK, prog} from '../../kit';
 import {CARD, CARD_SHADOW, Card, FrameSvg, HandTag, InnerSlot, MarkSpan, PairedDerivativePanel, Pow, SceneHeading, StudioPrimitiveFamily, WorkingRows, fnPath, kf, vis} from '../../math/studio';
+import {AID01, I01Board, I01FinalFrame} from '../math-a12-i01/s3';
 import {K1, K2, K3, K4} from './cuemap';
 import {AMB, BLUE, Bl, BoxCard, Cc, Chip, Frac, GREEN, GREY, Line, MiniPlot, P4, PLabel, Q4, Rt, StarterBoard, StarterGraph, StarterRise, Tick, V, VIOLET} from './parts';
 
-export const AID01 = 'The gradient rule fixes the shape. One point fixes the height.';
+export {AID01};
 const HEAD01 = 'Next: brackets and the reverse chain rule';
 const HEAD1 = 'Power primitives: algebra and the reverse chain rule';
 const SQ = () => <>(<InnerSlot>2x + 1</InnerSlot>)²</>;
 
-// ---------- i01's final frame ----------
-const I01Board: React.FC<{headAt: number; expandAt: number; shortAt: number; out?: number; showHead?: boolean}> = ({headAt, expandAt, shortAt, out, showHead = true}) => {
-	const f = useCurrentFrame();
-	const o = out === undefined ? 1 : 1 - prog(f, out, 14);
-	if (o <= 0.001) return null;
-	return (
-		<div style={{position: 'absolute', inset: 0, opacity: o}}>
-			{showHead ? <SceneHeading text={HEAD01} at={headAt} size={56} /> : null}
-			<div style={{position: 'absolute', left: 96, top: 150, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36, color: INK}}>{AID01}</div>
-			<div style={{position: 'absolute', left: 0, width: 1920, top: 250, textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 120, color: INK, whiteSpace: 'pre'}}>
-				∫<MarkSpan kind="circle" at={headAt} color={AMB} width={6}><V><SQ /></V></MarkSpan> dx
-			</div>
-			<Chip x={250} y={520} at={expandAt} size={56}>expand first?</Chip>
-			<div style={{position: 'absolute', left: 260, top: 630, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 48, color: INK, opacity: 0.5 * prog(f, expandAt, 12)}}>4x² + 4x + 1</div>
-			<Chip x={1180} y={520} at={shortAt} size={56}>or a shortcut?</Chip>
-			<div style={{position: 'absolute', left: 1600, top: 470, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 130, color: AMB, opacity: prog(f, shortAt, 12)}}>?</div>
-		</div>
-	);
-};
-/** i01's final frame (i01 design scene 14 and its silent return after the notes); i02 opens on it. */
-export const I01FinalFrameStandIn: React.FC = () => <I01Board headAt={-60} expandAt={-60} shortAt={-60} />;
+// i01's final frame and its board come from i01 itself (i02 opens on it).
+const I01FinalFrameStandIn = I01FinalFrame;
 
 // ---------- 1. hook ----------
 const CUT = 12;

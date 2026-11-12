@@ -1,0 +1,613 @@
+WEBVTT
+
+00:00:00.261 --> 00:00:01.946
+Last video ended on this question:
+
+00:00:02.609 --> 00:00:04.695
+if a curve has gradient two x at
+
+00:00:04.796 --> 00:00:05.317
+every x,
+
+00:00:05.919 --> 00:00:06.561
+which curve is it?
+
+00:00:07.385 --> 00:00:08.931
+Here's that rule on a plant stand.
+
+00:00:09.635 --> 00:00:11.884
+Three bean plants grow by the same rule.
+
+00:00:12.547 --> 00:00:15.412
+t weeks after they sprout, each tip rises
+
+00:00:15.574 --> 00:00:17.417
+at two t centimetres per week.
+
+00:00:18.141 --> 00:00:20.727
+So each tip's height has gradient two t
+
+00:00:20.888 --> 00:00:21.669
+at every moment.
+
+00:00:22.533 --> 00:00:24.356
+But they sit on different shelves, so their
+
+00:00:24.398 --> 00:00:25.820
+height graphs are the same shape,
+
+00:00:26.322 --> 00:00:26.662
+slid up.
+
+00:00:27.586 --> 00:00:28.406
+Now one fact:
+
+00:00:29.089 --> 00:00:31.613
+one tip is sixty-six centimetres above the floor
+
+00:00:31.755 --> 00:00:32.555
+after four weeks.
+
+00:00:33.398 --> 00:00:34.266
+Which shelf is it on?
+
+00:00:34.990 --> 00:00:36.915
+And how does a whole family of curves
+
+00:00:36.976 --> 00:00:38.018
+become one curve?
+
+00:00:38.711 --> 00:00:40.085
+Here's the name for what we're finding.
+
+00:00:40.709 --> 00:00:43.374
+If a function, capital F, has derivative f,
+
+00:00:43.876 --> 00:00:46.201
+then capital F is called a primitive of
+
+00:00:46.222 --> 00:00:46.261
+f.
+
+00:00:47.344 --> 00:00:49.368
+So x squared is a primitive of two
+
+00:00:49.529 --> 00:00:49.648
+x,
+
+00:00:50.291 --> 00:00:52.254
+and each tip's height is a primitive of
+
+00:00:52.315 --> 00:00:52.976
+its growth rate.
+
+00:00:53.880 --> 00:00:56.388
+Finding a primitive runs differentiation backwards.
+
+00:00:57.112 --> 00:00:59.560
+Differentiating takes x squared to two x.
+
+00:01:00.164 --> 00:01:02.214
+Finding a primitive starts at two x and
+
+00:01:02.376 --> 00:01:02.596
+asks,
+
+00:01:03.160 --> 00:01:04.044
+what did this come from?
+
+00:01:04.696 --> 00:01:06.061
+Why do so many curves fit?
+
+00:01:06.946 --> 00:01:09.318
+Adding a constant slides a curve straight up
+
+00:01:09.480 --> 00:01:11.289
+or down, without tilting it anywhere.
+
+00:01:11.911 --> 00:01:14.236
+At every x, the slid curve has the
+
+00:01:14.297 --> 00:01:17.102
+same gradient as x squared, because the derivative
+
+00:01:17.143 --> 00:01:18.185
+of a constant is zero.
+
+00:01:18.969 --> 00:01:20.675
+So if capital F is one primitive,
+
+00:01:21.259 --> 00:01:23.487
+F plus any constant is also a primitive.
+
+00:01:24.171 --> 00:01:25.960
+We write the constant as C, and the
+
+00:01:26.001 --> 00:01:27.971
+family as F of x, plus C.
+
+00:01:28.408 --> 00:01:30.536
+But could a curve that isn't a slid
+
+00:01:30.577 --> 00:01:32.665
+copy also have gradient two x?
+
+00:01:33.529 --> 00:01:35.921
+Take any two primitives of the same function,
+
+00:01:36.303 --> 00:01:37.569
+and look at the gap between them.
+
+00:01:38.313 --> 00:01:40.137
+For two of the shoots, it stays thirty
+
+00:01:40.179 --> 00:01:41.381
+centimetres all the way up.
+
+00:01:42.105 --> 00:01:44.956
+Their gradients are equal at every x, so
+
+00:01:45.117 --> 00:01:47.205
+the gap's gradient is zero everywhere.
+
+00:01:48.089 --> 00:01:50.835
+A function whose gradient is zero everywhere never
+
+00:01:50.916 --> 00:01:52.358
+rises and never falls.
+
+00:01:53.061 --> 00:01:56.320
+So over an unbroken interval, it stays constant.
+
+00:01:57.064 --> 00:01:59.572
+That means any two primitives differ by a
+
+00:01:59.653 --> 00:02:00.074
+constant,
+
+00:02:00.596 --> 00:02:02.963
+and F of x, plus C, covers every
+
+00:02:03.065 --> 00:02:03.405
+one of them.
+
+00:02:04.008 --> 00:02:06.135
+So how do we find one primitive?
+
+00:02:06.863 --> 00:02:07.836
+Reverse the power rule.
+
+00:02:08.440 --> 00:02:11.247
+Differentiating multiplies by the power, then lowers it
+
+00:02:11.288 --> 00:02:11.668
+by one.
+
+00:02:12.331 --> 00:02:12.913
+To undo it,
+
+00:02:13.456 --> 00:02:15.846
+raise the power by one, then divide by
+
+00:02:15.888 --> 00:02:16.670
+the new power.
+
+00:02:17.515 --> 00:02:18.459
+Try x squared.
+
+00:02:19.164 --> 00:02:21.112
+Raising the power gives x cubed.
+
+00:02:21.675 --> 00:02:24.687
+But x cubed differentiates to three x squared,
+
+00:02:25.050 --> 00:02:26.013
+three times too big.
+
+00:02:26.778 --> 00:02:27.745
+So divide by three.
+
+00:02:28.509 --> 00:02:31.556
+x cubed over three differentiates to x squared.
+
+00:02:32.282 --> 00:02:33.011
+Watch its gradient.
+
+00:02:33.720 --> 00:02:36.184
+At every x, the gradient of x cubed
+
+00:02:36.205 --> 00:02:38.949
+over three equals the height of x squared.
+
+00:02:39.833 --> 00:02:41.979
+In general, x to the n plus one,
+
+00:02:42.321 --> 00:02:44.949
+over n plus one, differentiates to x to
+
+00:02:44.990 --> 00:02:45.290
+the n.
+
+00:02:46.014 --> 00:02:47.927
+The n plus one cancels, as long as
+
+00:02:47.968 --> 00:02:48.551
+it isn't zero.
+
+00:02:49.336 --> 00:02:51.299
+So for x above zero, it works for
+
+00:02:51.541 --> 00:02:53.825
+every real n except minus one.
+
+00:02:54.489 --> 00:02:56.685
+Two more facts handle whole polynomials.
+
+00:02:57.169 --> 00:02:59.120
+The derivative of a sum is the sum
+
+00:02:59.242 --> 00:03:00.006
+of the derivatives.
+
+00:03:00.530 --> 00:03:02.412
+So if F is a primitive of f,
+
+00:03:02.814 --> 00:03:05.057
+and G is a primitive of g, then
+
+00:03:05.338 --> 00:03:07.321
+F plus G is a primitive of f
+
+00:03:07.402 --> 00:03:07.741
+plus g.
+
+00:03:08.585 --> 00:03:10.973
+And k times F is a primitive of
+
+00:03:11.054 --> 00:03:13.542
+k times f, for any constant k.
+
+00:03:14.507 --> 00:03:16.255
+Now the notation for the whole family.
+
+00:03:16.899 --> 00:03:19.027
+The integral of f of x, d x,
+
+00:03:19.470 --> 00:03:20.996
+equals F of x, plus C.
+
+00:03:21.740 --> 00:03:24.425
+The function inside is called the integrand, and
+
+00:03:24.566 --> 00:03:26.630
+d x says that x is the variable.
+
+00:03:27.233 --> 00:03:29.805
+This is called the indefinite integral, and finding
+
+00:03:29.846 --> 00:03:30.991
+it is called integration.
+
+00:03:31.755 --> 00:03:33.377
+So the integral of x to the n
+
+00:03:33.819 --> 00:03:35.962
+is x to the n plus one, over
+
+00:03:36.144 --> 00:03:37.385
+n plus one, plus C.
+
+00:03:38.216 --> 00:03:39.463
+Now a worked example.
+
+00:03:40.207 --> 00:03:43.437
+Find the integral of three x squared, plus
+
+00:03:43.498 --> 00:03:46.045
+four x, minus five, d x.
+
+00:03:46.852 --> 00:03:47.861
+Work term by term.
+
+00:03:48.568 --> 00:03:52.240
+Three x squared becomes three, times x cubed
+
+00:03:52.361 --> 00:03:52.882
+over three,
+
+00:03:53.385 --> 00:03:54.387
+which is x cubed.
+
+00:03:55.271 --> 00:03:57.577
+Four x is four x to the one,
+
+00:03:57.999 --> 00:04:00.746
+so it becomes four, times x squared over
+
+00:04:00.827 --> 00:04:01.087
+two,
+
+00:04:01.690 --> 00:04:02.792
+which is two x squared.
+
+00:04:03.676 --> 00:04:06.183
+Minus five is minus five x to the
+
+00:04:06.245 --> 00:04:08.833
+zero, so it becomes minus five x.
+
+00:04:09.897 --> 00:04:12.541
+Add one C for the whole answer, because
+
+00:04:12.583 --> 00:04:15.046
+the constants from each term combine into a
+
+00:04:15.168 --> 00:04:15.968
+single constant.
+
+00:04:16.672 --> 00:04:18.318
+Now check by differentiating back.
+
+00:04:19.001 --> 00:04:21.927
+The derivative is three x squared, plus four
+
+00:04:22.029 --> 00:04:23.331
+x, minus five.
+
+00:04:23.995 --> 00:04:25.488
+That's the integrand exactly.
+
+00:04:26.361 --> 00:04:28.409
+Now the main idea in one problem.
+
+00:04:29.111 --> 00:04:31.274
+A curve has gradient d y by d
+
+00:04:31.435 --> 00:04:34.519
+x equals three x squared, minus four x,
+
+00:04:34.659 --> 00:04:35.260
+plus two,
+
+00:04:35.761 --> 00:04:38.124
+and it passes through the point one, five.
+
+00:04:38.866 --> 00:04:39.874
+Find its equation.
+
+00:04:40.740 --> 00:04:41.604
+Integrate first.
+
+00:04:42.387 --> 00:04:45.113
+y equals x cubed, minus two x squared,
+
+00:04:45.454 --> 00:04:47.017
+plus two x, plus C.
+
+00:04:47.659 --> 00:04:49.787
+That's a whole family, every member the same
+
+00:04:49.868 --> 00:04:50.128
+shape.
+
+00:04:50.835 --> 00:04:51.907
+The point picks one.
+
+00:04:52.533 --> 00:04:55.828
+Substitute x equals one, and y equals five.
+
+00:04:56.733 --> 00:04:59.779
+Five equals one, minus two, plus two, plus
+
+00:04:59.820 --> 00:05:01.362
+C, which is one plus C.
+
+00:05:02.646 --> 00:05:03.779
+So C is four.
+
+00:05:04.526 --> 00:05:07.390
+The curve is y equals x cubed, minus
+
+00:05:07.432 --> 00:05:10.016
+two x squared, plus two x, plus four.
+
+00:05:10.799 --> 00:05:12.565
+A fact like this, the value of the
+
+00:05:12.606 --> 00:05:15.196
+function at one x, is called an initial
+
+00:05:15.237 --> 00:05:15.638
+condition.
+
+00:05:16.383 --> 00:05:17.390
+Back to the plant stand.
+
+00:05:17.852 --> 00:05:20.601
+Each tip's height is t squared, plus C.
+
+00:05:21.464 --> 00:05:23.586
+The tip that's sixty-six centimetres up at four
+
+00:05:23.666 --> 00:05:27.330
+weeks has sixteen, plus C, equals sixty-six,
+
+00:05:27.831 --> 00:05:28.952
+so C is fifty.
+
+00:05:29.593 --> 00:05:31.822
+It started at fifty centimetres, on the middle
+
+00:05:31.862 --> 00:05:32.103
+shelf.
+
+00:05:32.931 --> 00:05:34.061
+C isn't sixty-six.
+
+00:05:34.607 --> 00:05:36.134
+Sixty-six is where it got to.
+
+00:05:37.079 --> 00:05:38.054
+C is where it started.
+
+00:05:38.709 --> 00:05:39.654
+Here's the idea to keep.
+
+00:05:40.300 --> 00:05:42.138
+The gradient rule fixes the shape.
+
+00:05:42.904 --> 00:05:44.329
+One point fixes the height.
+
+00:05:45.334 --> 00:05:47.459
+For the plant stand, the growth rule fixed
+
+00:05:47.481 --> 00:05:49.907
+the shape, and one reading fixed the shelf.
+
+00:05:50.770 --> 00:05:53.311
+To find the shape, raise the power, divide
+
+00:05:53.352 --> 00:05:55.354
+by the new power, and add C.
+
+00:05:55.997 --> 00:05:57.384
+Then differentiate back to check.
+
+00:05:59.970 --> 00:06:00.294
+Your turn.
+
+00:06:00.998 --> 00:06:04.339
+Find the integral of eight x cubed, minus
+
+00:06:04.541 --> 00:06:07.201
+six x squared, plus five, d x,
+
+00:06:07.803 --> 00:06:09.763
+and check your answer by differentiating.
+
+00:06:10.167 --> 00:06:11.159
+Pause here to answer.
+
+00:06:22.022 --> 00:06:24.212
+Eight x cubed becomes eight x to the
+
+00:06:24.292 --> 00:06:26.362
+four over four, which is two x to
+
+00:06:26.402 --> 00:06:26.724
+the four.
+
+00:06:27.566 --> 00:06:30.674
+Minus six x squared becomes minus two x
+
+00:06:30.755 --> 00:06:31.076
+cubed.
+
+00:06:31.859 --> 00:06:33.052
+Five becomes five x.
+
+00:06:33.658 --> 00:06:35.502
+So the answer is two x to the
+
+00:06:35.563 --> 00:06:38.609
+four, minus two x cubed, plus five x,
+
+00:06:38.790 --> 00:06:39.291
+plus C.
+
+00:06:40.294 --> 00:06:43.521
+Differentiating gives eight x cubed, minus six x
+
+00:06:43.582 --> 00:06:45.645
+squared, plus five, which matches.
+
+00:06:46.428 --> 00:06:48.656
+Without the C, you'd have just one primitive,
+
+00:06:48.898 --> 00:06:49.399
+not all of them.
+
+00:06:51.114 --> 00:06:51.542
+Last one.
+
+00:06:52.329 --> 00:06:55.111
+A curve has gradient function f prime of
+
+00:06:55.273 --> 00:06:58.436
+x equals four x cubed, minus six x,
+
+00:06:58.537 --> 00:06:59.117
+plus one,
+
+00:06:59.698 --> 00:07:01.940
+and it passes through the point two, nine.
+
+00:07:02.644 --> 00:07:03.656
+Find f of x.
+
+00:07:04.447 --> 00:07:05.439
+Pause here to answer.
+
+00:07:16.379 --> 00:07:17.088
+Integrate first.
+
+00:07:17.936 --> 00:07:19.559
+f of x is x to the four,
+
+00:07:20.001 --> 00:07:22.546
+minus three x squared, plus x, plus C.
+
+00:07:23.410 --> 00:07:24.257
+Now use the point.
+
+00:07:24.979 --> 00:07:28.240
+At x equals two, that's sixteen, minus twelve,
+
+00:07:28.542 --> 00:07:29.101
+plus two,
+
+00:07:29.622 --> 00:07:31.463
+plus C, which is six plus C.
+
+00:07:32.285 --> 00:07:34.854
+It must equal nine, so C is three.
+
+00:07:35.658 --> 00:07:37.040
+f of x is x to the four,
+
+00:07:37.442 --> 00:07:40.389
+minus three x squared, plus x, plus three.
+
+00:07:41.112 --> 00:07:43.139
+C isn't the y-value, nine.
+
+00:07:43.602 --> 00:07:45.832
+It's the slide from six up to nine.
+
+00:07:47.568 --> 00:07:50.757
+So a family of primitives becomes one curve
+
+00:07:50.978 --> 00:07:52.542
+once a single point is known.
+
+00:07:53.766 --> 00:07:56.453
+Next, the power is on a bracket: the
+
+00:07:56.535 --> 00:07:59.001
+integral of two x plus one, all squared.
+
+00:07:59.708 --> 00:08:00.803
+You could expand it first.
+
+00:08:00.865 --> 00:08:02.183
+But is there a shortcut?
+
+00:08:04.755 --> 00:08:05.638
+Here are the key notes.
+
+00:08:06.161 --> 00:08:07.929
+Pause the video if you need more time
+
+00:08:07.950 --> 00:08:08.431
+to copy them.

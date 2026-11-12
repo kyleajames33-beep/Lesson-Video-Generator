@@ -1,0 +1,77 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i13.md",
+  "sourceSha256": "9a512234f163777f98cf6af8408c2ca9f83a6b6af307a6a845209dc32a37d625",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended here, with the power used by a home's air conditioner across a hot day. Power is how fast energy is used, measured in kilowatts, and here it peaks at four kilowatts at two in the afternoon. So how much energy does it use, from eight in the morning to eight at night? A quick guess is four kilowatts for twelve hours, which is forty-eight kilowatt hours. Is the true answer more, or less?",
+      "audioFile": "public/audio/math-a12-i13/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Less, because the air conditioner only draws four kilowatts at two o'clock. Here's how to get it exactly. Take a thin strip of time, a tiny part of an hour. Over that strip, the power barely changes, so the energy is power times time, in kilowatts times hours, which is kilowatt hours. On the graph, that's the strip's area. Add every strip, make them thinner, and you get the area under the power graph. That's the definite integral of power over the day. The same idea works for any rate. Integrate a rate over an interval, and you get the amount it adds up to. The area's units are the graph's units up, times its units across.",
+      "audioFile": "public/audio/math-a12-i13/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So the energy is the integral from zero to twelve, of four sine of pi t over twelve. The inside is linear, with rate pi over twelve, so the primitive divides by it. That gives minus forty-eight over pi, times cos of pi t over twelve. At twelve, cos pi is minus one. At zero, cos zero is one. So the energy is ninety-six over pi, about thirty point six kilowatt hours. That's less than forty-eight, as predicted. Notice the domain, too. After eight at night this formula goes negative, but an air conditioner can't use negative power. So the model only holds from zero to twelve.",
+      "audioFile": "public/audio/math-a12-i13/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Units also stop a common mistake. A factory finds that each extra item costs fifty minus zero point two x dollars to make, when it's already making x items. That's a rate, in dollars per item. Raising production from one hundred to two hundred items costs the integral of that rate, from one hundred to two hundred. The primitive is fifty x minus zero point one x squared, and the answer is two thousand dollars. Dollars per item, times items, gives dollars. But integrating a total, like a profit in dollars, gives dollars times items. That isn't the change in profit you were asked for. So integrate a rate, and you get an amount.",
+      "audioFile": "public/audio/math-a12-i13/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Some rates go negative. Water moves through a gate into a dam at a rate of eight minus two t megalitres per day, for six days. After day four the rate is negative, so water flows back out through the gate. The integral from zero to six is twelve, and that's the net change: the dam ends up with twelve megalitres more than it started with. But the water that passed through the gate is the total area, sixteen in plus four out, which is twenty megalitres. So the question decides. If it asks how much the amount changed, use the integral. If it asks how much flowed in total, use the area.",
+      "audioFile": "public/audio/math-a12-i13/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Now a region bounded by the y-axis. A drainage channel has sides shaped like y equals x squared, in metres, with y measured up from the bottom. The water is one metre deep. What area of the cross-section, the shape you'd see if you cut straight across, does the water fill? Put the y-axis down the middle of the channel. Then the right half of the water is bounded by the curve, the y-axis and the water surface. Cut it into thin horizontal strips, like layers of water. At height y, a layer reaches from the y-axis out to x equals root y. So integrate root y with respect to y, from zero to one, which gives two thirds. The channel is even about the y-axis, so double it: four thirds of a square metre.",
+      "audioFile": "public/audio/math-a12-i13/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The channel is thirty metres long, so it holds four thirds times thirty, which is forty cubic metres of water. A check with x gives the same answer. The two by one rectangle, minus the area under the curve, is two minus two thirds, which is four thirds. And here's a surprise. Double the depth to two metres, and the water's area nearly triples, because the channel is wider higher up.",
+      "audioFile": "public/audio/math-a12-i13/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "So the steps for a model are: name the rate and its units, take the interval from the question, integrate, and answer in the units of the amount. Here's the check to keep. Units up, times units across, tells you what an integral has found. If those units don't make the amount you want, you're integrating the wrong thing.",
+      "audioFile": "public/audio/math-a12-i13/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Your turn. A supplier's hopper pours sand into a box trailer at a rate of six t minus t squared kilograms per second, for the first six seconds. How much sand goes into the trailer in that time? Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i13/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "The amount is the integral of the rate, from zero to six. The primitive is three t squared minus t cubed over three. At six, that's one hundred and eight minus seventy-two, so thirty-six kilograms. Fifty-four kilograms is wrong. It uses the top rate, nine kilograms per second, for the whole six seconds.",
+      "audioFile": "public/audio/math-a12-i13/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Last one. A metal plate is the region bounded by y equals x cubed, the y-axis and the line y equals eight, measured in centimetres. Find its area by integrating with respect to y. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i13/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Rearrange the curve. x is the cube root of y, so x is y to the power of one third. Integrate from zero to eight, and you get three quarters, times y to the power four thirds. Eight to the four thirds is sixteen, so the area is twelve square centimetres. Four square centimetres is wrong. That's the region on the other side of the curve, between it and the x-axis.",
+      "audioFile": "public/audio/math-a12-i13/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "So an integral turns a rate into an amount, and a region against either axis into an area, as long as the units and the domain make sense. Next, the most important rate of all. Here's a robot vacuum at one end of a hallway. Where is it, how fast is it going, and is it speeding up or slowing down?",
+      "audioFile": "public/audio/math-a12-i13/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i13/scene-14.wav"
+    }
+  ]
+}

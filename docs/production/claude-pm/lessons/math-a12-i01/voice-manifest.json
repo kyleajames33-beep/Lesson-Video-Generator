@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i01.md",
+  "sourceSha256": "bcdb670222ffee7d6d7d12e7b4242fe2b6d7c75747007ab15fbe5744c61bef8a",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on this question: if a curve has gradient two x at every x, which curve is it? Here's that rule on a plant stand. Three bean plants grow by the same rule. t weeks after they sprout, each tip rises at two t centimetres per week. So each tip's height has gradient two t at every moment. But they sit on different shelves, so their height graphs are the same shape, slid up. Now one fact: one tip is sixty-six centimetres above the floor after four weeks. Which shelf is it on? And how does a whole family of curves become one curve?",
+      "audioFile": "public/audio/math-a12-i01/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Here's the name for what we're finding. If a function, capital F, has derivative f, then capital F is called a primitive of f. So x squared is a primitive of two x, and each tip's height is a primitive of its growth rate. Finding a primitive runs differentiation backwards. Differentiating takes x squared to two x. Finding a primitive starts at two x and asks, what did this come from?",
+      "audioFile": "public/audio/math-a12-i01/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Why do so many curves fit? Adding a constant slides a curve straight up or down, without tilting it anywhere. At every x, the slid curve has the same gradient as x squared, because the derivative of a constant is zero. So if capital F is one primitive, F plus any constant is also a primitive. We write the constant as C, and the family as F of x, plus C.",
+      "audioFile": "public/audio/math-a12-i01/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "But could a curve that isn't a slid copy also have gradient two x? Take any two primitives of the same function, and look at the gap between them. For two of the shoots, it stays thirty centimetres all the way up. Their gradients are equal at every x, so the gap's gradient is zero everywhere. A function whose gradient is zero everywhere never rises and never falls. So over an unbroken interval, it stays constant. That means any two primitives differ by a constant, and F of x, plus C, covers every one of them.",
+      "audioFile": "public/audio/math-a12-i01/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "So how do we find one primitive? Reverse the power rule. Differentiating multiplies by the power, then lowers it by one. To undo it, raise the power by one, then divide by the new power. Try x squared. Raising the power gives x cubed. But x cubed differentiates to three x squared, three times too big. So divide by three. x cubed over three differentiates to x squared. Watch its gradient. At every x, the gradient of x cubed over three equals the height of x squared. In general, x to the n plus one, over n plus one, differentiates to x to the n. The n plus one cancels, as long as it isn't zero. So for x above zero, it works for every real n except minus one.",
+      "audioFile": "public/audio/math-a12-i01/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Two more facts handle whole polynomials. The derivative of a sum is the sum of the derivatives. So if F is a primitive of f, and G is a primitive of g, then F plus G is a primitive of f plus g. And k times F is a primitive of k times f, for any constant k. Now the notation for the whole family. The integral of f of x, d x, equals F of x, plus C. The function inside is called the integrand, and d x says that x is the variable. This is called the indefinite integral, and finding it is called integration. So the integral of x to the n is x to the n plus one, over n plus one, plus C.",
+      "audioFile": "public/audio/math-a12-i01/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Now a worked example. Find the integral of three x squared, plus four x, minus five, d x. Work term by term. Three x squared becomes three, times x cubed over three, which is x cubed. Four x is four x to the one, so it becomes four, times x squared over two, which is two x squared. Minus five is minus five x to the zero, so it becomes minus five x. Add one C for the whole answer, because the constants from each term combine into a single constant. Now check by differentiating back. The derivative is three x squared, plus four x, minus five. That's the integrand exactly.",
+      "audioFile": "public/audio/math-a12-i01/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Now the main idea in one problem. A curve has gradient d y by d x equals three x squared, minus four x, plus two, and it passes through the point one, five. Find its equation. Integrate first. y equals x cubed, minus two x squared, plus two x, plus C. That's a whole family, every member the same shape. The point picks one. Substitute x equals one, and y equals five. Five equals one, minus two, plus two, plus C, which is one plus C. So C is four. The curve is y equals x cubed, minus two x squared, plus two x, plus four. A fact like this, the value of the function at one x, is called an initial condition.",
+      "audioFile": "public/audio/math-a12-i01/scene-08.wav"
+    },
+    {
+      "id": "scene-08a",
+      "text": "Back to the plant stand. Each tip's height is t squared, plus C. The tip that's sixty-six centimetres up at four weeks has sixteen, plus C, equals sixty-six, so C is fifty. It started at fifty centimetres, on the middle shelf. C isn't sixty-six. Sixty-six is where it got to. C is where it started.",
+      "audioFile": "public/audio/math-a12-i01/scene-08a.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's the idea to keep. The gradient rule fixes the shape. One point fixes the height. For the plant stand, the growth rule fixed the shape, and one reading fixed the shelf. To find the shape, raise the power, divide by the new power, and add C. Then differentiate back to check.",
+      "audioFile": "public/audio/math-a12-i01/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Find the integral of eight x cubed, minus six x squared, plus five, d x, and check your answer by differentiating. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i01/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Eight x cubed becomes eight x to the four over four, which is two x to the four. Minus six x squared becomes minus two x cubed. Five becomes five x. So the answer is two x to the four, minus two x cubed, plus five x, plus C. Differentiating gives eight x cubed, minus six x squared, plus five, which matches. Without the C, you'd have just one primitive, not all of them.",
+      "audioFile": "public/audio/math-a12-i01/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. A curve has gradient function f prime of x equals four x cubed, minus six x, plus one, and it passes through the point two, nine. Find f of x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i01/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Integrate first. f of x is x to the four, minus three x squared, plus x, plus C. Now use the point. At x equals two, that's sixteen, minus twelve, plus two, plus C, which is six plus C. It must equal nine, so C is three. f of x is x to the four, minus three x squared, plus x, plus three. C isn't the y-value, nine. It's the slide from six up to nine.",
+      "audioFile": "public/audio/math-a12-i01/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So a family of primitives becomes one curve once a single point is known. Next, the power is on a bracket: the integral of two x plus one, all squared. You could expand it first. But is there a shortcut?",
+      "audioFile": "public/audio/math-a12-i01/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i01/scene-15.wav"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "math-a12-i11",
+  "fps": 30,
+  "status": "Brief238 revised reviewed source;not voiced",
+  "sourceDesignSha256": "1d9e9b9381f2276de3ee0c97201978974c33cd0a8dd37ac53accb20cadfed02d",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (no rule for ln x)",
+      "voiceover": {
+        "text": "Last video ended here: the region between y equals the natural log of x, the y-axis, and the lines y equals zero and y equals one. It's the shape of the water in a pool with a sloping beach entry. The deep end's wall is the y-axis, the floor is flat at y equals zero, and then it rises along the log curve to the water's edge. Here's the catch. In this course, we have no rule to integrate the natural log of x. So we can't stand strips up on the x-axis under this curve, and add them up. But water settles in flat layers, so the strips can lie sideways instead. So how do we find areas using y, and how can a reflected exponential graph help?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "sideways strips: the integral of x, d y",
+      "voiceover": {
+        "text": "Cut the water into thin sideways strips, like layers. Each strip has thickness delta y, a small change in y. Its length is the x-value of the curve at that height. So each strip's area is about x times delta y. Add them up, make them thinner, and the area is the integral of x, d y, from y equals zero to y equals one. The limits are y-values, because the strips are stacked up the y-axis. To use it, write x in terms of y. If y is the natural log of x, then x is e to the y. So the area is the integral from zero to one, of e to the y, d y. That's e to the one, minus e to the zero, which is e minus one, about one point seven two square metres of water."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "reflect the picture in y equals x",
+      "voiceover": {
+        "text": "There's another way to see that answer. The graphs of e to the x and the natural log of x are reflections of each other in the line y equals x. Reflecting swaps x and y, and it keeps every shape the same size. So reflect our region. The curve becomes y equals e to the x. The y-axis becomes the x-axis. And the region becomes the area under e to the x, from zero to one. That's the integral from zero to one of e to the x, d x, which is e minus one again. So the pool's water has the same area as the region under e to the x. It's the same integral, with a different letter, and the strips now stand up."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the area under the log curve",
+      "voiceover": {
+        "text": "Now the region we couldn't do: under the natural log of x, from one to e, above the x-axis. In the pool, that's the concrete under the sloping ramp. Draw the rectangle from x equals zero to e, and from y equals zero to one. Its area is e times one, which is e. The curve splits that rectangle into two pieces. The piece against the y-axis is the water we just found, with area e minus one. The other piece is the concrete under the natural log of x. So its area is e, minus, bracket, e minus one, which is exactly one. The ramp's cross-section is exactly one square metre. We found an area under the log curve, without ever integrating the natural log of x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "left of the y-axis: sideways strips have signs",
+      "voiceover": {
+        "text": "Sideways strips have signs too. When the curve is to the right of the y-axis, x is positive, and the strip adds. When it's to the left, x is negative, and the strip subtracts. Take x equals y squared minus four, from y equals zero to y equals three. From zero to two, the curve is left of the y-axis, and the integral is minus sixteen thirds. On its own, that piece has x less than or equal to zero throughout, so its area is minus the integral, sixteen thirds. From two to three, it's to the right, and the integral is seven thirds. So, just like last video, the area makes each piece positive. Sixteen thirds plus seven thirds is twenty-three thirds. The numbers match last video's for a reason. This is that curve, reflected in y equals x."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the pair to remember. For sideways strips, right is plus, and left is minus. And reflecting in y equals x swaps x and y, but keeps the area."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "any base: log base two",
+      "voiceover": {
+        "text": "The same idea works for any base. Find the area between y equals log base two of x, the y-axis, and the lines y equals zero and y equals three. Log base two of x is the power of two that gives x, so x is two to the y. From an earlier video, a primitive of two to the y is two to the y, over the natural log of two. So the area is eight over the natural log of two, minus one over the natural log of two, which is seven over the natural log of two, about ten point one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the area of the region bounded by the curve x equals three y minus y squared, the y-axis, and the lines y equals zero and y equals four. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The curve meets the y-axis where three y minus y squared is zero, at y equals zero and y equals three. From zero to three, x is positive, and the integral is nine halves. From three to four, the curve is left of the axis, and the integral is minus eleven sixths. Make both positive and add. Twenty-seven sixths plus eleven sixths is thirty-eight sixths, which is nineteen thirds. Eight thirds is wrong. That lets the piece on the left subtract."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Find the exact area of the region bounded by y equals log base two of x, the x-axis, and the line x equals eight. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The curve meets the x-axis at x equals one, and at x equals eight, y is three. The rectangle from x equals zero to eight, and from y equals zero to three, has area twenty-four. The piece against the y-axis has area seven over the natural log of two, from the last example. So the area under the curve is twenty-four, minus seven over the natural log of two, about thirteen point nine. Seven over the natural log of two, on its own, is wrong. That's the region against the y-axis, not the x-axis."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So sideways strips use x, d y, with right as plus and left as minus, and reflecting in y equals x keeps every area. Next, a shortcut. Here's x cubed, from minus two to two. The two shaded pieces look exactly alike, one above the axis and one below. Can we know the integral without working it out?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-13",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

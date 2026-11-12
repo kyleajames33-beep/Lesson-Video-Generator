@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-i07.md",
+  "sourceSha256": "4d3b39828dbe9de55cc917992d3b3cc2bf25e517ee57601b3a7e2f1a7376a5b8",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's a bath filling with the plug out. The tap runs in and the drain takes water out, so this graph is the net flow, twelve minus two t litres per minute, over eight minutes, with thin rectangles one minute wide. Positive means the bath is gaining water, and negative means it's losing water. The tap is being turned down, so after six minutes the drain wins, and the net flow is negative. Think for a moment. What could a strip below the axis mean? Look at the last rectangle. Its height is minus two, and its width is one minute. Minus two litres per minute, times one minute, is minus two litres. So the bath lost roughly two litres. So a strip below the axis is a negative change.",
+      "audioFile": "public/audio/math-a12-i07/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "So keep every strip's sign. Strips above the axis add, and strips below the axis subtract. That makes it a signed sum. Now refine it, just as we did before. With sixteen strips, the signed sum is thirty-six. With sixty-four, it's thirty-three. With two hundred and fifty-six, it's thirty-two point two five. Now use the right ends instead. The sums are twenty-eight, thirty-one, and thirty-one point seven five. Both sets close in on the same number, thirty-two. However we choose the heights, thinner strips settle on one value.",
+      "audioFile": "public/audio/math-a12-i07/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "That settled number gets its own name, the definite integral. We write it with this long S, which stands for sum. The integral from a to b of f of x, d x, is the limit of the sums of f of x times delta x, as delta x goes to zero. A limit is the value the sums settle on, as the strips get thinner. The d x reminds us of the strip width, and a and b are the ends of the interval. The units come along too. Litres per minute, times minutes, gives litres. And this works for any rate. The sums estimate the total change, so their limit is the total change itself. For the storm in the last video, it's the rain that fell. For this bath, it's the change in the water it holds. Here, the integral from zero to eight of twelve minus two t, d t, looks like thirty-two. Let's check that with shapes.",
+      "audioFile": "public/audio/math-a12-i07/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "When the graph makes simple shapes, we can find the integral from their areas. From zero to six, the graph and the axis make a triangle, with base six and height twelve. Half of six, times twelve, is thirty-six. So the integral from zero to six is thirty-six, and the bath gains thirty-six litres.",
+      "audioFile": "public/audio/math-a12-i07/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "From six to eight, the graph is below the axis. Every strip there is negative, or zero at the start, so no sum is positive, and the integral can't be positive either. This region has real size below the axis, so here the integral is negative. This triangle has base two and depth four, so its area is four. So the integral from six to eight is minus four. The bath loses four litres.",
+      "audioFile": "public/audio/math-a12-i07/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Over the whole eight minutes, the graph changes sign. The integral adds the signed pieces. Thirty-six, plus minus four, gives thirty-two. That matches the settled sums. It's the net change: the bath ends with thirty-two litres more than it started with. If it had drained more than it gained, the integral would be negative. Area above the axis counts as positive, and area below counts as negative.",
+      "audioFile": "public/audio/math-a12-i07/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The shape doesn't have to start at zero. Find the integral from one to three of two x plus one. At x equals one, the line is at height three, and at x equals three, it's at height seven. The region between the line and the axis, from one to three, is a trapezium. Its area is the average of three and seven, times the width two, which is ten. The graph stays above the axis, so the integral is ten.",
+      "audioFile": "public/audio/math-a12-i07/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Here's a surprise. Find the integral from minus three to three of x. From minus three to zero, the line is below the axis, making a triangle with area four and a half. From zero to three, there's a matching triangle above, also four and a half. So the integral is four and a half, minus four and a half, which is zero. There's plenty of area here, but the integral is zero, because the part above and the part below balance.",
+      "audioFile": "public/audio/math-a12-i07/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Shapes can be curved too. Find the integral from minus two to two, of minus the square root of four minus x squared. The square root of four minus x squared is the top half of a circle, with radius two. The minus sign flips it below the axis. Half the circle's area is a half, times pi, times two squared, which is two pi. Every strip is below the axis, so the integral is minus two pi.",
+      "audioFile": "public/audio/math-a12-i07/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's the rule to remember. Above adds, below subtracts. Every strip keeps its sign, and the definite integral is what the signed sums settle on. One condition: every integral here runs from the smaller number, a, up to the bigger one, b. A later video shows what happens when they swap.",
+      "audioFile": "public/audio/math-a12-i07/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Use areas to evaluate the integral from zero to three of x minus five, d x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i07/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Sketch it first. At zero the line is at minus five, and at three it's at minus two, so it's below the axis the whole way. The shape is a trapezium, with parallel sides five and two, and width three. Its area is three, times seven over two, which is twenty-one over two. It's below the axis, so the integral is minus twenty-one over two. Twenty-one over two is wrong. It loses the sign.",
+      "audioFile": "public/audio/math-a12-i07/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. Use areas to evaluate the integral from zero to six of x minus two, d x. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-i07/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "The line crosses the axis at x equals two. From zero to two, there's a triangle below, with area two. From two to six, there's a triangle above, with base four and height four, so its area is eight. The integral is eight minus two, which is six. Ten is wrong. It adds both areas, and forgets that the piece below subtracts.",
+      "audioFile": "public/audio/math-a12-i07/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So a definite integral is a signed sum, settled. Strips below the axis count against it. Now a new question. Here's the graph of three minus t, shaded from zero up to a point x. The integral from zero to x gives the shaded signed area, and it changes as x moves. How fast does it grow?",
+      "audioFile": "public/audio/math-a12-i07/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-i07/scene-16.wav"
+    }
+  ]
+}
