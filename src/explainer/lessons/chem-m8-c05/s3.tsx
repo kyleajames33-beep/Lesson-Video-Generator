@@ -104,7 +104,7 @@ export const SceneFeedback1: React.FC = () => {
 			<Sx x={R} y={638} text="slow pool; dead algae decayed," size={32} color={ALG} weight={800} at={K14.grew} />
 			<Sx x={R} y={678} text="and bacteria used the O_2; still" size={32} color={ALG} weight={800} at={K14.bacteria} />
 			<Sx x={R} y={718} text="water mixes little oxygen back in" size={32} color={ALG} weight={800} at={K14.bacteria + 10} />
-			<MistakeX x={140} y={960} text="lowest O_2 where nutrients are highest" at={K14.expect} cross={K14.trap} note="the crash is delayed" size={32} />
+			<MistakeX x={140} y={560} text="lowest O_2 where nutrients are highest" at={K14.expect} cross={K14.trap} note="the crash is delayed" size={32} />
 			{void K14.oxygen}
 		</svg>
 	);

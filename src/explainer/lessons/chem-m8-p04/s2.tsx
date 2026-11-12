@@ -33,10 +33,10 @@ export const SceneUnknown: React.FC = () => {
 			<CSeg g={G7} a={[0, 1.52]} b={[0.14, 1.52]} at={K7.far} color={OUT} width={4} dash="12 9" dur={20} out={K7.halve + 20} />
 			<AChip x={gx(G7, 0.02)} y={gy(G7, 1.52) - 66} text="1.52: above the linear range" size={30} color={OUT} hand={false} at={K7.far + 6} out={K7.halve + 20} />
 			<CSeg g={G7} a={[0.1273, 1.52]} b={[0.1273, 0]} at={K7.extend + 10} color={INK_SOFT} width={4} dash="10 8" out={K7.halve + 20} />
-			<MistakeX x={gx(G7, 0.06)} y={G7.y + G7.h + 70} text="extend the line: 0.128?" at={K7.extend + 20} cross={K7.dont} note="outside the standards: dilute, don't extend" size={32} />
+			<MistakeX x={gx(G7, 0.06)} y={G7.y + G7.h + 100} text="extend the line: 0.128?" at={K7.extend + 20} cross={K7.dont} note="outside the standards: dilute, don't extend" size={32} />
 			<Fade at={K7.dilute}>
-				<PicF p={BURETTE} x={560} y={600} h={300} />
-				<PicF p={BURETTE} x={700} y={600} h={300} />
+				<PicF p={BURETTE} x={560} y={540} h={300} />
+				<PicF p={BURETTE} x={700} y={540} h={300} />
 			</Fade>
 			<Wr x={96} y={900} text="5.00 mL rinse water + 5.00 mL distilled water" at={K7.five} size={38} color={NAVY} weight={800} />
 			<Sx x={96} y={950} text="halves the concentration" size={34} color={INK} hand weight={700} at={K7.halve} />
@@ -165,7 +165,7 @@ export const SceneRisk: React.FC = () => {
 				<PicF p={GLOVES} x={1730} y={92} h={80} />
 			</Fade>
 			<RiskGrid x={96} y={190} cols={[130, 500, 500, 614]} rowH={122} rows={rows} listAt={K11.now + 4} end={end} size={26} />
-			<Sx x={96} y={1050} text="Follow your school's risk assessment and each bottle's safety data sheet." size={28} color={INK} weight={700} at={K11.sink} />
+			<Sx x={96} y={1026} text="Follow your school's risk assessment and each bottle's safety data sheet." size={30} color={INK} weight={700} at={K11.sink} />
 		</Overlay>
 	);
 };

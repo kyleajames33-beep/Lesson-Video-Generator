@@ -44,8 +44,8 @@ export const SceneOrder: React.FC = () => {
 				<Sx x={960} y={1030} text="the order changes the hazard, not the results" size={38} color={NAVY} anchor="middle" weight={800} at={-1000} />
 			</Fade>
 			<PicV p={FUME} x={1530} y={520} h={320} at={K7.last - 10} />
-			<HTag x={1530} y={890} text="teacher demonstration" size={34} color={COOH} at={K7.teacher} />
-			<AChip x={1530} y={912} text="p04: Cr(VI) handled by the teacher" size={26} color={GREYS} hand={false} at={K7.cupboard} />
+			<HTag x={1360} y={432} text="teacher demonstration" size={34} color={COOH} at={K7.teacher} />
+			<AChip x={1360} y={456} text="p04: Cr(VI) handled by the teacher" size={28} color={GREYS} hand={false} at={K7.cupboard} />
 			{void K7.order}{void K7.start}{void K7.sodium}{void K7.dich}
 		</svg>
 	);
@@ -59,7 +59,7 @@ export const SceneTwoGroups: React.FC = () => {
 		<svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
 			<TaskLine text="One molecule, two groups" at={0} />
 			<Sx x={96} y={240} text="a yes for one group doesn't mean no for the others" size={38} color={AMB} hand weight={700} at={K8.yes} />
-			<MolAt k="propenol" x={560} y={430} s={1.4} at={K8.prop - 10} ring={{cc: K8.prop + 20, oh: K8.prop + 30}} />
+			<MolAt k="propenol" x={560} y={430} s={1.4} at={-1000} ring={{cc: K8.prop + 20, oh: K8.prop + 30}} />
 			<Sx x={560} y={318} text="prop-2-en-1-ol" size={40} color={INK} anchor="middle" weight={800} at={K8.prop} />
 			<Sx x={560} y={548} text="drawn only: toxic, not a class sample" size={30} color={GREYS} anchor="middle" hand weight={700} at={K8.structure} />
 			<Thumb p={BR.clear} x={140} y={590} h={220} at={K8.fades - 6} />
@@ -117,17 +117,17 @@ export const SceneExcluding: React.FC = () => {
 			<Sx x={lx} y={ly + 24} text="X" size={66} color={NAVY} anchor="middle" weight={800} at={-1000} opacity={1 - isEth} />
 			<Sx x={lx} y={ly + 10} text="ethanol" size={26} color={ANS8} anchor="middle" weight={800} at={K9.ethanol} />
 			<HTag x={B.x + 170} y={B.y + 200} text="X = ethanol" size={44} color={ANS8} at={K9.ethanol + 6} />
-			<Sx x={96} y={900} text="fizz: none" size={34} color={INK} weight={700} at={K9.write} />
-			<Sx x={96} y={946} text="bromine: stays orange" size={34} color={INK} weight={700} at={K9.write + 8} />
-			<Sx x={96} y={992} text="dichromate: green" size={34} color={INK} weight={700} at={K9.write + 16} />
-			<Sx x={96} y={1046} text="write down every result" size={30} color={AMB} hand weight={700} at={K9.write + 20} />
+			<Sx x={96} y={862} text="fizz: none" size={34} color={INK} weight={700} at={K9.write} />
+			<Sx x={96} y={906} text="bromine: stays orange" size={34} color={INK} weight={700} at={K9.write + 8} />
+			<Sx x={96} y={950} text="dichromate: green" size={34} color={INK} weight={700} at={K9.write + 16} />
+			<Sx x={96} y={1004} text="write down every result" size={30} color={AMB} hand weight={700} at={K9.write + 20} />
 			<FlowChart cx={1200} y={380} step={210} qw={640} pw={350} size={30} psize={25} rows={[
 				{q: 'NaHCO_3: fizz?', yes: 'yes: –COOH supported', no: 'no: not detected', at: K9.one - 10, lit: 'no', litAt: K9.nofizz, thumb: CARB.before},
 				{q: 'bromine water: fades within seconds?', yes: 'yes: C=C supported', no: 'no: not detected', at: K9.bromine - 10, lit: 'no', litAt: K9.bromine + 20, thumb: BR.orange},
 				{q: 'warm acidified K_2Cr_2O_7: green?', yes: 'yes: 1°/2° –OH supported', no: 'no: not detected', at: K9.dich - 10, lit: 'yes', litAt: K9.dich + 20, thumb: DICH.green},
 			]} />
-			<HTag x={1200} y={1010} text="the no results did half the work" size={38} color={AMB} anchor="middle" at={K9.half} />
-			<HTag x={1200} y={1056} text="every no rules a candidate out" size={32} color={INK_SOFT} anchor="middle" at={K9.every} />
+			<HTag x={1200} y={992} text="the no results did half the work" size={38} color={AMB} anchor="middle" at={K9.half} />
+			<HTag x={1200} y={1036} text="every no rules a candidate out" size={32} color={INK_SOFT} anchor="middle" at={K9.every} />
 			{void K9.back}{void K9.out3}{void K9.notice}{void CAND5}{void vis}
 		</svg>
 	);

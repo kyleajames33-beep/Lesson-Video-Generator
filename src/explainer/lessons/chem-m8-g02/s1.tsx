@@ -134,7 +134,7 @@ export const SceneQ1Graph: React.FC = () => {
 			<GBand g={G1} lo={0} hi={4} at={KG.these} tag="the standards' range" />
 			<Crosses g={G1} pts={CU_PTS} at={ptAt} color={CU} pre={0.3} />
 			<GLine g={G1} a={[0, fitCu(0)]} b={[4, fitCu(4)]} at={KG.rule} color={GIV} width={5} dur={34} />
-			<SlopeTri g={G1} c0={1} c1={4} m={0.0999} b={0.0002} at={KG.slope} color={GIV} size={28} />
+			<SlopeTri g={G1} c0={1} c1={4} m={0.0999} b={0.0002} at={KG.slope} color={GIV} size={30} />
 			<Framed x={930} y={292} text="slope ≈ 0.0999 per mg L⁻¹" size={40} color={TEAL} at={KG.litre - 6} />
 			<Sx x={950} y={344} text="(about 0.1)" size={34} color={TEAL} hand weight={700} at={KG.litre + 4} />
 			<Sx x={1530} y={206} text="s06: TAILS" size={30} color={INK} hand weight={700} at={ON} />
@@ -166,12 +166,12 @@ export const SceneQ1Range: React.FC = () => {
 			<Q1Col marks={M_R} cells={{'0,5': KR.top, '1,5': KR.top + 6}} checks={<Checks tick={[{at: ON}]} />} />
 			<CuDone />
 			<Ring cx={gx(G1, 4)} cy={gy(G1, 0.399)} rx={30} ry={30} at={KR.top} color={AMBER_INK} />
-			<Sx x={gx(G1, 4) - 20} y={gy(G1, 0.399) + 58} text="top standard 0.399" size={30} color={AMBER_INK} anchor="middle" weight={800} at={KR.top + 6} />
+			<Sx x={gx(G1, 4) - 40} y={gy(G1, 0.399) - 40} text="top standard 0.399" size={30} color={AMBER_INK} anchor="end" weight={800} at={KR.top + 6} />
 			<GLine g={G1} a={[4, fitCu(4)]} b={[5, fitCu(5)]} at={KR.nothing} color={GIV} width={4} dash="12 10" />
 			{bendK > 0.01 ? <g opacity={bendK}>
 				<DrawPath d={`M${gx(G1, 4)},${gy(G1, fitCu(4))} Q${gx(G1, 4.6)},${gy(G1, 0.455)} ${gx(G1, 5)},${gy(G1, 0.47)}`} at={KR.bend} dur={20} color="#8d857a" width={5} dash="6 8" />
 			</g> : null}
-			<ALine g={G1} v={() => 0.62 + (0.142 - 0.62) * drop} at={KR.six} color={AMBER_INK} label={() => (drop > 0.5 ? 'diluted 0.142' : 'undiluted 0.620')} size={34} />
+			<ALine g={G1} v={() => 0.62 + (0.142 - 0.62) * drop} at={KR.six} color={AMBER_INK} label={() => (drop > 0.5 ? 'diluted 0.142' : 'undiluted 0.620')} size={34} lx={gx(G1, 2.4)} />
 			<Tag x={1500} y={226} w={340} text="0.620 is above the top standard" size={32} color={AMBER_INK} at={KR.outside} out={KR.inside} />
 			<Tag x={1500} y={370} w={340} text="possible bend: not measured" size={32} color="#6f685e" ink="#575148" fill="#f1eee7" at={KR.bend} />
 			<GTag x={1500} y={480} text="p04: the fifth standard fell below" size={26} at={KR.bend + 10} />

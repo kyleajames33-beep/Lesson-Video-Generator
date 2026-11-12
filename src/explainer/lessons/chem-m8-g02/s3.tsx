@@ -43,8 +43,8 @@ export const SceneQ3Data: React.FC = () => (
 		<Badge text="Judge the monitoring evidence" />
 		<Q3Col marks={M_D} cells={{'1,1': KD.over, '2,1': KD.under}} checks={<Checks lit={[undefined, undefined, undefined, KD.flushed]} />} />
 		<GuideBar x={BAR.x} y={BAR.y} w={BAR.w} bracket={KD.yes} marks={[{...MORN, at: KD.over}, {...FLUSH, at: KD.under}]} glPulse={KD.guideline} />
-		<Pic p={PL.aas} cx={950} cy={520} w={300} />
-		<Sx x={950} y={624} text="the method" size={30} color={INK} anchor="middle" hand weight={700} at={ON} />
+		<Pic p={PL.aas} cx={930} cy={566} w={220} />
+		<Sx x={1052} y={616} text="the method" size={30} color={INK} hand weight={700} at={ON} />
 		<Tag x={1130} y={448} w={710} text="quantification limit: the lowest concentration this method can measure with the stated reliability" size={34} color={GIV} at={KD.ql} />
 		<CalcLine x={800} y={706} sub="morning: 0.012 ÷ 0.005 =" res="2.4 × the guideline" at={KD.over} resAt={KD.two4} size={46} />
 		<Sx x={800} y={770} text="flushed: 0.002, under the guideline" size={42} color="#5d656e" hand weight={700} at={KD.under} />

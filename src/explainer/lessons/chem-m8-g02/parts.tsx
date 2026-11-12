@@ -144,7 +144,7 @@ export const SlopeTri: React.FC<{g: GG; c0: number; c1: number; m: number; b: nu
 	return (
 		<g opacity={v}>
 			<DrawPath d={`M${x0},${y0} L${x1},${y0} L${x1},${y1}`} at={at} dur={24} color={color} width={4} dash="10 7" />
-			<Sx x={(x0 + x1) / 2} y={y0 + size + 8} text={`${(c1 - c0).toFixed(2)} mg L⁻¹`} size={size} color={color} anchor="middle" weight={700} at={at + 10} />
+			<Sx x={x0 + (x1 - x0) * 0.6} y={y0 - 14} text={`${(c1 - c0).toFixed(2)} mg L⁻¹`} size={size} color={color} anchor="middle" weight={700} at={at + 10} />
 			<Sx x={x1 + 12} y={(y0 + y1) / 2 + 10} text={`${(m * (c1 - c0)).toFixed(3)}`} size={size} color={color} weight={700} at={at + 16} />
 		</g>
 	);

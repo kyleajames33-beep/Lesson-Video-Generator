@@ -62,16 +62,16 @@ export const ScenePhysical: React.FC = () => {
 		<svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
 			<TaskLine text="Physical parameters" at={2} size={52} />
 			<PCol x={96} w={1004} title="Physical" color={PHYS} at={-1000}>
-				<Pl p={THERMO} x={126} y={320} h={110} at={K8.temp - 6} />
+				<Pl p={THERMO} x={126} y={320} h={110} at={-1000} />
 				<Sx x={350} y={370} text="temperature: warm water holds less O_2" size={38} color={INK} weight={700} at={K8.warm} />
 				<Fade at={K8.less}>
 					<Sx x={350} y={418} text="O_2 saturation (fresh water)" size={28} color={GREYX} weight={600} at={-1000} />
 					<Sx x={350} y={466} text="20 °C" size={30} color={INK} weight={700} at={-1000} />
-					<rect x={450} y={440} width={9.1 * 55 * smooth(prog(f, K8.less, 20))} height={32} rx={8} fill="#7fb8dc" />
-					<Sx x={960} y={466} text={`about 9.1${NB}mg/L`} size={30} color={O2_INK} weight={700} at={K8.less + 14} />
+					<rect x={450} y={440} width={9.1 * 45 * smooth(prog(f, K8.less, 20))} height={32} rx={8} fill="#7fb8dc" />
+					<Sx x={870} y={466} text={`about 9.1${NB}mg/L`} size={30} color={O2_INK} weight={700} at={K8.less + 14} />
 					<Sx x={350} y={516} text="30 °C" size={30} color={RED8} weight={700} at={-1000} />
-					<rect x={450} y={490} width={7.6 * 55 * smooth(prog(f, K8.less + 6, 20))} height={32} rx={8} fill="#e9a07a" />
-					<Sx x={880} y={516} text={`about 7.6${NB}mg/L`} size={30} color={RED8} weight={700} at={K8.less + 20} />
+					<rect x={450} y={490} width={7.6 * 45 * smooth(prog(f, K8.less + 6, 20))} height={32} rx={8} fill="#e9a07a" />
+					<Sx x={802} y={516} text={`about 7.6${NB}mg/L`} size={30} color={RED8} weight={700} at={K8.less + 20} />
 				</Fade>
 				<Pl p={TURB} x={126} y={570} h={220} at={K8.turb - 6} />
 				<Sx x={350} y={620} text="turbidity: cloudiness from" size={38} color={INK} weight={700} at={K8.cloud} />
@@ -136,7 +136,7 @@ export const SceneBiological: React.FC = () => {
 				<PCol x={466} w={340} title="Chemical" color={CHEM} dim={lit < 0.5} summary={SUM.chem} />
 			</g>
 			<PCol x={836} w={1004} title="Biological" color={BIOL} at={-1000}>
-				<Pl p={CPLATE} x={866} y={300} h={220} at={K10.ecoli - 6} />
+				<Pl p={CPLATE} x={866} y={300} h={220} at={-1000} />
 				<Sx x={1120} y={350} text="E. coli: gut bacteria" size={40} color={INK} weight={700} at={K10.ecoli} />
 				<Sx x={1120} y={398} text="sign of faecal contamination" size={36} color={INK} weight={700} at={K10.faecal} />
 				<Sx x={1120} y={442} text="(sewage or animal waste)" size={32} color={INK_SOFT} weight={600} at={K10.sewage} />
@@ -169,13 +169,13 @@ export const SceneWorkedRead: React.FC = () => {
 		<svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
 			<TaskLine text="Which site shows the strongest signs of an oxygen problem?" at={2} size={46} />
 			<Sx x={1840} y={205} text="site L09 data" size={28} color={GREYX} anchor="end" hand at={K11.three} />
-			<rect x={TX} y={TY} width={1744} height={HH + 3 * RH} rx={16} fill="#fffdf8" stroke="rgba(60,45,20,0.3)" strokeWidth={2.5} opacity={prog(f, K11.three - 10, 12)} />
+			<rect x={TX} y={TY} width={1744} height={HH + 3 * RH} rx={16} fill="#fffdf8" stroke="rgba(60,45,20,0.3)" strokeWidth={2.5} />
 			{hl([1, 2], K11.nit, K11.dox)}
 			{hl([3], K11.dox, K11.obs)}
 			{hl([4], K11.obs, K11.so)}
-			{heads.map((h, i) => h.map((t, k) => <Sx key={i + '-' + k} x={colX(i) + 20} y={TY + 46 + k * 38} text={t} size={30} color={INK} weight={700} at={K11.three - 10} />))}
-			{[0, 1, 2].map(r => <line key={r} x1={TX} x2={TX + 1744} y1={TY + HH + r * RH} y2={TY + HH + r * RH} stroke="rgba(60,45,20,0.3)" strokeWidth={2} opacity={prog(f, K11.three, 12)} />)}
-			{[1, 2, 3, 4].map(i => <line key={i} x1={colX(i)} x2={colX(i)} y1={TY} y2={TY + HH + 3 * RH} stroke="rgba(60,45,20,0.3)" strokeWidth={2} opacity={prog(f, K11.three, 12)} />)}
+			{heads.map((h, i) => h.map((t, k) => <Sx key={i + '-' + k} x={colX(i) + 20} y={TY + 46 + k * 38} text={t} size={30} color={INK} weight={700} at={-1000} />))}
+			{[0, 1, 2].map(r => <line key={r} x1={TX} x2={TX + 1744} y1={TY + HH + r * RH} y2={TY + HH + r * RH} stroke="rgba(60,45,20,0.3)" strokeWidth={2} />)}
+			{[1, 2, 3, 4].map(i => <line key={i} x1={colX(i)} x2={colX(i)} y1={TY} y2={TY + HH + 3 * RH} stroke="rgba(60,45,20,0.3)" strokeWidth={2} />)}
 			{ROWS.map((row, r) => {
 				const y = TY + HH + r * RH;
 				const at = K11.three + r * 8;

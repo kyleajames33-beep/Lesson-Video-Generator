@@ -33,3 +33,11 @@ Every `cues()` phrase resolves against `docs/production/claude-pm/lessons/m8p04/
 - Scene 5: the wipe arc removing the smudge, the rinse swirl, the matching rim and slot arrows.
 - Scene 7: the readout falling 1.52 to 0.845 as the cuvette cross-fades; the crossed "extend the line" chip.
 - Feedback 2: the beam thinning, the readout stepping to 0.910, the two reads landing apart.
+
+## Repair 12 Nov (Codex hold)
+Finding 228-P04-DILUTION-OVERLAP: in unknown-dilute (frames 5419 and 5538, about 181 to 185 s), the two burette stand bases covered the "5.00 mL rinse water + 5.00 mL distilled water" line.
+- Fix: `src/explainer/lessons/chem-m8-p04/s2.tsx` lines 38 and 39. Both burettes are raised 60 px (y 600 to 540), so the bases end above the line.
+- Extra defects from the 1 fps sweep (all fixed):
+  - The same scene, about 175 to 191 s: the "extend the line: 0.128?" slip box touched the x-axis title "concentration (mol/L)". It moved down 30 px (s2.tsx line 36).
+  - risk, about 278 to 296 s: "Follow your school's risk assessment and each bottle's safety data sheet." was 28 px at y 1050, inside the bottom margin and partly under the frame edge. It is now 30 px at y 1026 (s2.tsx line 168).
+- Recheck at 178 to 192 s and 282 to 296 s.

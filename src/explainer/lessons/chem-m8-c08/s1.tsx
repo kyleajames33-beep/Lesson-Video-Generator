@@ -229,9 +229,9 @@ export const SceneFizz: React.FC = () => {
 				<Sx x={1110} y={700} text="CH_3COOH + NaHCO_3 → CH_3COONa + H_2O + CO_2" size={30} color={INK} weight={800} at={K4.fizzes - 6} />
 			</DimG>
 			<Sx x={1110} y={756} text="CO_2 + Ca(OH)_2 → CaCO_3(s) + H_2O" size={30} color={GREYS} weight={700} at={K4.milky} />
-			<Thumb p={CARB.before} x={1130} y={800} h={220} at={K4.nofizz - 20} />
-			<HTag x={1320} y={880} text="alcohol: far too weak an acid" size={36} color={OHV} at={K4.alcohol} />
-			<HTag x={1320} y={930} text="no fizz" size={40} color={OHV} at={K4.nofizz} />
+			<Thumb p={CARB.before} x={1240} y={800} h={220} at={K4.nofizz - 20} />
+			<HTag x={1430} y={880} text="alcohol: far too weak an acid" size={36} color={OHV} at={K4.alcohol} />
+			<HTag x={1430} y={930} text="no fizz" size={40} color={OHV} at={K4.nofizz} />
 			{void K4.next}{void K4.breaks}{void K4.confirms}{void K4.weak}{void f}
 		</svg>
 	);

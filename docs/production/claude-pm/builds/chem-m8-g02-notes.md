@@ -34,3 +34,13 @@ Every cue and underline resolves (config loads; marksCheck passes). Holds use me
 - 3b grey reagent shares growing under each standard. 3c bar split.
 - 4b lead dots gathering in the overnight pipe and moving in the running pipes.
 - 4d grey average marker sliding to 0.007.
+
+## Repair 12 Nov (Codex hold)
+Finding 231-CHEM-G02-SLOPE-LABEL-OVERLAP: in q1-graph (frame 2823, 94.1 s), the slope-triangle run label "3.00 mg L-1" overlapped the green "the standards' range" tag.
+- Fix: in `src/explainer/lessons/chem-m8-g02/parts.tsx` line 147, the SlopeTri run label now sits just above the horizontal leg, 60% along it, instead of under it. In s1.tsx line 137 its size is 30 px (was 28). SlopeTri is used only here.
+- Extra defects from the 1 fps sweep (all fixed):
+  - q1-range, about 100 to 123 s: "top standard 0.399" crossed the ruled line, and the moving "undiluted 0.620" / "diluted 0.142" label crossed the line once it dropped. The top-standard label moved above-left of its ring, and the moving label now starts at c = 2.4 (s1.tsx lines 169 and 174).
+  - q2-blank, about 229 to 237 s: the grey reagent-share bars ran through "0.032 at zero iron". The label and its leader moved up 32 px (s2.tsx lines 66 and 67).
+  - q3-data, about 352 to 358 s: the "flushed 0.002" marker label sat on the AAS plate. The plate is now smaller and lower (w 300 to 220), and "the method" sits beside it (s3.tsx lines 46 and 47).
+- Not fixed: 231-CHEM-G02-NOTES-OPENING (partial heading for about 0.4 to 1 s at the key-notes start). It comes from the shared KeyNotesBoard write-on used across the catalogue, so this is a root decision.
+- Recheck at 90 to 98 s, 100 to 126 s, 229 to 238 s and 350 to 358 s.

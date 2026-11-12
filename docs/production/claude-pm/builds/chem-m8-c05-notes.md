@@ -33,3 +33,13 @@ Every `cues()` phrase resolves against `docs/production/claude-pm/lessons/m8c05/
 - The oxygen trace drawing on its cues and the noon and dawn markers.
 - One column highlighted at a time in the data table, with the lake thumbnails arriving on "clear water", "scum" and "dead fish".
 - One stills batch rendered the scene 5 crash plate blank once (a temporary bundle clean-up error in that run); the re-render showed it correctly. Confirm it at playback.
+
+## Repair 12 Nov (Codex hold)
+Finding 223-C05-OPENING: the worked-read scene (starts frame 7527, 250.9 s) opened title-only for about 1 s; the table grid arrived on "Three sites".
+- Fix: `src/explainer/lessons/chem-m8-c05/s2.tsx` SceneWorkedRead (lines 172, 176 to 178). The table frame, column headings and grid lines now show from the scene start. Rows, highlights, arrows and thumbnails still enter on their measured cues.
+- Extra defects from the 1 fps sweep (all fixed):
+  - Physical scene, about 186 to 200 s: the O2 saturation value "about 9.1 mg/L" ran past the right edge of the Physical column, and the column opened empty for about 2 s. In s2.tsx lines 65 and 70 to 74, the bar scale is now 45 px per mg/L (was 55) with the value labels moved left, and the thermometer plate shows from the scene start.
+  - Biological scene opening, about 233 to 236 s: the active column was empty. The culture plate now shows from the scene start (s2.tsx line 139).
+  - Feedback 1, about 382 to 384 s: the crossed slip "lowest O2 where nutrients are highest" and its note sat at the bottom of the frame, past the 40 px margin. It moved to the free band under the question (s3.tsx line 107, y 960 to 560).
+- Not changed: the key-notes heading writes on for about 1 s before the bullets (shared KeyNotesBoard, chem-m5-c06a/s4.tsx). This is the catalogue-wide notes pattern, so it is left for root.
+- Recheck at 250 to 256 s, 186 to 200 s, 233 to 240 s and 380 to 386 s. Narration and measured data are unchanged.

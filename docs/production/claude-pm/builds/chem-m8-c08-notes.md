@@ -35,3 +35,13 @@ Every `cues()` phrase resolves against `docs/production/claude-pm/lessons/m8c08/
 - Scene 5: orange to green on "ions"; the H appearing and ringed on "primary or secondary".
 - Scene 9: strikes landing exactly on each "out", ethanol glowing on "Only ethanol", the chart's no/no/yes pills lighting.
 - The candidate strip's docked thumbnails arriving on "cyclohexene fades it", "cyclohexane doesn't", "Ethanol is", "stays orange".
+
+## Repair 12 Nov (Codex hold)
+Finding 226-C08-OPENING: the two-groups scene (starts frame 6302, 210.1 s) showed only the heading and amber note until about 215 s.
+- Fix: `src/explainer/lessons/chem-m8-c08/s2.tsx` line 62. The prop-2-en-1-ol skeleton now shows from the scene start. Its name, the C=C and OH rings and the rest of the scene still enter on their cues.
+- Extra defects from the 1 fps sweep (all fixed):
+  - cooh-fizz, about 111 to 114 s: the alcohol "no fizz" thumbnail covered "CO2" at the end of "limewater turns milky: CO2". The thumbnail and its two labels moved right 110 px (s1.tsx lines 232 to 234).
+  - order, about 207 to 210 s: "teacher demonstration" overlapped the "3 acidified K2Cr2O7 (Cr(VI))" label, and the 26 px "p04: Cr(VI) handled by the teacher" chip was clipped at the right edge. Both moved into the free band above the fume cupboard, and the chip is now 28 px (s2.tsx lines 47 and 48).
+  - excluding, about 269 to 275 s: the results list and "every no rules a candidate out" sat inside the bottom margin. They were lifted 20 to 42 px (s2.tsx lines 120 to 123, 129 and 130).
+- Not changed: the shared key-notes heading write-on (same as c05).
+- Recheck at 210 to 216 s, 108 to 116 s, 205 to 212 s and 268 to 276 s.

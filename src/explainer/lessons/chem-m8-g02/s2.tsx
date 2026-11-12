@@ -63,8 +63,8 @@ export const SceneQ2Blank: React.FC = () => {
 			{br > 0.01 ? <g opacity={br}>
 				<path d={`M${G3.x - 30},${gy(G3, 0)} l-12,0 L${G3.x - 42},${gy(G3, 0.032)} l12,0`} fill="none" stroke={AMBER_INK} strokeWidth={4} />
 				<circle cx={G3.x} cy={gy(G3, 0.032)} r={13} fill="none" stroke={AMBER_INK} strokeWidth={4} />
-				<path d={`M${G3.x + 16},${gy(G3, 0.032) + 4} Q${G3.x + 120},${gy(G3, 0.032) + 6} ${1186},${gy(G3, 0.04)}`} fill="none" stroke={AMBER_INK} strokeWidth={3} />
-				<Sx x={1196} y={gy(G3, 0.04) + 12} text="0.032 at zero iron" size={34} color={AMBER_INK} weight={800} at={ON} />
+				<path d={`M${G3.x + 16},${gy(G3, 0.032) + 4} Q${G3.x + 120},${gy(G3, 0.032) + 6} ${1186},${gy(G3, 0.04) - 30}`} fill="none" stroke={AMBER_INK} strokeWidth={3} />
+				<Sx x={1196} y={gy(G3, 0.04) - 20} text="0.032 at zero iron" size={34} color={AMBER_INK} weight={800} at={ON} />
 			</g> : null}
 			<Tag x={1150} y={480} w={320} text="intercept: where the line meets the absorbance axis" size={30} color={AMBER_INK} at={KB.p032 + 10} />
 			<PicH p={PL.cuvBlank} cx={1590} cy={360} h={290} />
