@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V01: Charged particles between parallel plates. How does the voltage between parallel plates set a charged particle's acceleration? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,162 characters, 16 scenes, about 552 s, counted by script with the build parser rules (see "Narration length estimate"). First video of Module 6.
 
@@ -66,6 +66,19 @@ Entry knowledge: Year 11 field, volt, work and F = ma; m5-v23.
 Stops after: E = V/d, F = qE with sign, a = qE/m, gravity check. No trajectories, no energy.
 Handoff: v02, why a charged particle's path between plates is like a projectile.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the last frame of Module 5, then the plates wired to the painted supply: one particle and three changes, then the uniform field, scenes 1 and 2 (about 68 s); (B) the close-up of the gap with the work strip, scene 3 (about 35 s); (C) the full-width calculation over the plate stage, scene 4 (about 31 s); (D) the plate stage with force arrows, then the accelerating proton, scenes 5 and 6 (about 69 s); (E) the calculation layout, scene 7 (about 42 s); (F) the comparison bar and the oil drop, scene 8 (about 38 s); (G) the live plate stage, scene 9 (about 29 s); (H) the memory card, scene 10 (about 17 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 69 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The particle between the plates runs on the field motion engine (`field-motion.ts`, a `uniform` field whose acceleration is qE/m, drawn with `FieldMotionView`: trail, strobe images, velocity and acceleration arrows) on one `useMotionTime` clock slowed to a watchable rate. Positions, strobe gaps and speed readouts are read from `stateAt` of the run. Scene 6's proton is one run from rest, so its strobe gaps grow while its violet "a" arrow keeps one length. In scene 9 each setting of the dial, the gap slider and the particle toggle is its own run; "E" and "|F|" are exact arithmetic (V/d, qE) and "a" is the run's acceleration.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *E*, *V*, *d*, *q*, *F*, *a*, *m*, *e*. Paper background and handwritten headline face as the explainer house style.
@@ -88,7 +101,7 @@ Visual: camera push to the gap; the existing high-voltage supply plate (`phys-y1
 ### 4. a field from real numbers
 > Try it with real numbers. Two plates two centimetres apart, connected to a hundred volt supply. That's a hundred volts over zero point zero two metres, which is five thousand volts per **metre**, pointing from the top plate down. Double the voltage to two hundred volts, and the field doubles, to **ten thousand**. Keep a hundred volts, but move the plates four centimetres apart, and it halves, to **two and a half thousand**.
 
-Visual: calculation layout. Task strip: "Find E between the plates." Equation strip: "E = V/d". Givens grouped: "V = 100 V", "d = 2.0 cm = 0.020 m". `AlignedAlgebra`: "E = 100/0.020"; on "metre" "= 5.0 × 10³ V m⁻¹ (downwards)" framed. On "ten thousand" a second row "200 V: E = 1.0 × 10⁴ V m⁻¹" with the plate stage's lines doubling in density. On "two and a half thousand" "d = 0.040 m: E = 2.5 × 10³ V m⁻¹" with the lines halving. Revision 2: the plate stage sits under the working at full width with the supply plate at its left, so the frame is never only algebra; on "ten thousand" the supply display ticks from 100 to 200 V (the dial turns), and on "two and a half thousand" the dial returns to 100 V and a gap slider drags the bottom plate from 2.0 to 4.0 cm; a live blue "E" readout (52 px) ticks with each move. Each result is framed. Navy hand tag "cm → m first" with a pen ring round "0.020 m"; blue hand tags "× 2" and "÷ 2" beside the two new rows.
+Visual: calculation layout. Task strip: "Find E between the plates." Equation strip: "E = V/d". Givens grouped: "V = 100 V", "d = 2.0 cm = 0.020 m". `AlignedAlgebra`: "E = 100/0.020"; on "metre" "= 5.0 × 10³ V m⁻¹ (downwards)" framed. On "ten thousand" a second row "200 V: E = 1.0 × 10⁴ V m⁻¹" with the plate stage's lines doubling in density. On "two and a half thousand" "d = 0.040 m: E = 2.5 × 10³ V m⁻¹" with the lines halving. Revision 2: the plate stage sits under the working at full width with the supply plate at its left, so the frame is never only algebra; as the second row writes the supply display ticks from 100 to 200 V (the dial turns), and as the third row writes the dial returns to 100 V and a gap slider drags the bottom plate from 2.0 to 4.0 cm; a live blue "E" readout (52 px) ticks with each move. Each result is framed. Navy hand tag "cm → m first" with a pen ring round "0.020 m"; blue hand tags "× 2" and "÷ 2" beside the two new rows.
 
 ### 5. the force depends on the sign of the charge
 > Now put a charge in the field. The force on it is F equals q E, the charge times the field. For a positive charge, the force points the same way as the field, towards the negative **plate**. For a negative charge, like an electron, q is negative, so the force points against the field, towards the positive **plate**. A common slip is to think the electron goes the way the field arrows point. It doesn't. The arrows show the push on a positive charge, so the electron is pushed the opposite **way**.
@@ -125,6 +138,8 @@ Visual: board clears to a framed memory card: the chain "V/d → ×q → ÷m" in
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "Two parallel plates are 2.5 cm apart and connected to a 150 V supply. A proton is released from rest next to the positive plate. (a) Calculate the electric field strength between the plates. (b) Calculate the magnitude of the proton's acceleration and state its direction. (m_p = 1.673 × 10⁻²⁷ kg, e = 1.602 × 10⁻¹⁹ C)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted supply (`phys-y11-eht-supply-v1.png`, about 240 px tall) wired to two plain plates, its display reading "150 V", with a navy bracket "2.5 cm" across the gap and a dot tagged "proton" beside the top plate. The plates carry no signs beyond the card's "positive plate" tag, and no field lines or arrows are drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > E equals V over d. A hundred and fifty volts over zero point zero two five metres is six point zero times ten to the three volts per **metre**. Then q E over the proton's mass gives an acceleration of five point seven times ten to the eleven metres per second squared, towards the negative **plate**. The classic slip is leaving the gap in **centimetres**.
 
@@ -134,6 +149,8 @@ Visual: card shrinks to a strip at the top (full text, 30 px). Answer side (Revi
 > Last one. An oil drop has a mass of one point six times ten to the minus fourteen kilograms, and a charge of minus three point two times ten to the minus nineteen coulombs. It sits between two horizontal plates, sixteen millimetres apart. What voltage holds it still, and which plate must be positive? Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "An oil drop of mass 1.6 × 10⁻¹⁴ kg carries a charge of −3.2 × 10⁻¹⁹ C. It is between two horizontal parallel plates 16 mm apart. (a) Calculate the potential difference needed to hold the drop stationary. (b) State which plate must be positive. Justify your answer. (g = 9.8 m s⁻²)" Countdown ring for 10 seconds with "Pause here to answer." The oil drop plate sits beside the card between two plain plates with no signs. Nothing answer-bearing.
+
+Upgrade (Revision 3): The oil drop between two plain plates is on screen from the first frame, with a navy bracket "16 mm" across the gap. The plates carry no signs and no supply display, because the voltage and the positive plate are the answers.
 
 ### 14. feedback 2 (brief)
 > To hold still, the size of q E must balance m g, so E equals m g over the size of q, four point nine times ten to the five volts per metre. Then V equals E d, which is seven point eight times ten to the three **volts**. The drop is negative and needs an upward push, so the field must point down, and the top plate must be **positive**. The classic slip is pointing the field **upwards**, the way the drop needs to be pushed.
@@ -145,7 +162,7 @@ Visual: card shrinks to a strip at the top (full text, 30 px). Answer side (Revi
 
 Visual: clear change to the plate stage (2.0 cm gap, top "+"): an electron enters from the left at mid-gap with a teal "v" arrow; on "across" a faint amber upward "F" arrow attaches to it and it pauses at the plate entrance. On "cliff" a small left inset shows a coded exam-style cliff with a dashed parabola of a ball launched horizontally (from m5-v05's style); chip "Next: why is a charged particle's path between plates like a projectile?". Revision 2: teal hand tag "keeps going across" under the v arrow and amber hand tag "steady push up" by the F arrow (both fade before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -208,6 +225,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **6,162 characters**, 16 scenes (Revision 1 stated 6,138, which included the 15 joins between scenes; its scene sum was 6,123). Characters per scene (1 to 16): 403, 503, 464, 415, 488, 419, 556, 508, 387, 226, 308, 344, 323, 413, 330, 75. At 13.3 characters per second the speech is about 463 s; add 3 s for the prediction countdown, about 4 s for the strobe and drop animations, about 2 s for the scene 9 live-control sweeps to settle, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 89 s of holds and countdowns; the notes hold is about 60 s in all): **about 552 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's Millikan sentence (A2 still carries the balance); scene 9's proton comparison sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,162 characters). The notes scene is 45 s in all, so the estimate is about 537 s (it was about 552 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 m5-v23's final frame (`phys-y12-m5-v23.md`, "Final frame"): paper background; two coded horizontal parallel plates across the centre (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", a voltage label "V" across the gap; a small coded "+q" particle between the plates with an empty arrow "a = ?"; at the left a small inset of Earth's surface patch with parallel gravitational field arrows, tag "near the surface: uniform"; heading "What minimum launch speed allows escape without further propulsion?"; chip "Next (Module 6): how does voltage between parallel plates determine a charged particle's acceleration?". Scene 1 relabels the particle "proton (+)", starts it moving and builds the three ghosts; the heading changes in scene 2 and the inset fades there.
@@ -226,6 +245,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m6-v01-learning-review.md`, `checks/p-y12-m6-v01-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only):
@@ -237,6 +258,8 @@ Need (new plates): none (Revision 2 reuses the supply plate as the scene 1 ancho
 Coded: plates, field lines, fringe lines, particles, arrows, strobe images, the 1 C token, chains, algebra, chips, cards, countdowns, notes board.
 
 Kit gaps: 1. **Plate stage** (two horizontal plates with sign rows; gap and voltage readouts; supply leads; field lines whose spacing follows E; optional fringe bulges; particles accelerating from rest at a set a with slow motion; scaled force and acceleration arrows; strobe images). Shared with v02, v03 and v06; extends `ElectricPlates` (`m6-plates`).
+
+Revision 3 (13 Nov 2026). The supply plate is also used on the attempt 1 card. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M6 v01)
 
@@ -255,6 +278,8 @@ Error-only check:
 8. Confirm no em dash (U+2014), no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -300,3 +325,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 6,138 stated (joined; 6,123 scene sum) to 6,162 characters (scene sum); about 549 s to about 552 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the accelerating proton and the live plate stage are tied to the field motion engine.
+- Scene 4: two cues that repeated a spoken phrase out of order are reworded (visual text only, for the checking script).
+- Question cards: attempt 1 gains the supply wired to the plates with the card's values; both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,162 characters, unchanged; about 537 s (it was about 552 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

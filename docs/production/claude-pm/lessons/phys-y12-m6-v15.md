@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V15: High-voltage transmission. Why does stepping voltage up reduce transmission loss? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,899 characters, 17 scenes, about 518 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v14's final frame.
 
@@ -67,6 +67,20 @@ Entry knowledge: I²R heating (v14); transformer ratios (v13); AC needed (v12); 
 Stops after: two powers and two voltages, I = P/V, I²R, the worked example and ledger, the low-voltage surprise, the grid chain with real voltages, why AC, why not higher. No three-phase or grid control.
 Handoff: v16, how a split-ring motor keeps turning.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted power station, towers and house, scene 1 (about 39 s); (B) the push to the simple-model circuit with its two brackets, scene 2 (about 41 s); (C) the twin lines, low and high voltage, scene 3 (about 21 s); (D) the graph stage with the voltage slider, scene 4 (about 23 s); (E) the working layout: 250 kV, then 500 kV, scenes 5 and 6 (about 52 s); (F) the graph at full size, scene 7 (about 30 s); (G) the grid chain built from plates, then the "~" tags, scenes 8 and 9 (about 61 s); (H) the push to one tower, scene 10 (about 20 s); (I) the line and the memory card, scene 11 (about 11 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The simple-model line (scenes 2, 3, 4 and 11) runs on the circuits engine (`circuits.ts`, drawn with `CircuitView`): the station as a battery, the line as a resistor "R = 2.0 Ω" and the load as a resistor chosen so that the same power is sent. `solveCircuit` gives the current, the drop along the line and the power wasted in it, so "I", the two voltage brackets and "P_loss" are read from the solved circuit. In scene 4 the voltage slider is a `runCircuit` change with `over`, so the moving charges thin out as the readouts fall and the point rides the 1/V² curve. The engine is direct current: here it stands for the line's steady working values, and the design's "simple model" tag stays on screen.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **No balance picture.** The "balance icon" in scene 10 is not drawn as a pair of scales: the two sides are two chips, "lower I²R loss" and "cost of insulation, towers and corona", either side of a plain "against" mark.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *P*, *V*, *I*, *R*, *P_loss*.
@@ -120,6 +134,8 @@ Visual: the chain stays; on "alternating current" small "~" tags appear on every
 > So why not a million volts, or more? Higher voltages need more insulation, taller towers and wider gaps to the ground. And near very high-voltage wires, the air itself starts to leak charge, called corona, which wastes energy too. So the voltage is chosen as a **balance**.
 
 Visual: camera push to one tower plate, enlarged (a new set-up). On "more insulation" its insulator strings highlight and lengthen (coded overlay); on "taller towers" a dashed taller outline grows above the tower; on "wider gaps to the ground" a clearance bracket widens, navy hand tag "more clearance". On "corona" a faint violet glow outlines the line's wires, tag "corona: charge leaks into the air". On "balance" a balance icon: "lower I²R loss" on one pan, "cost of insulation, towers and corona" on the other; red hand tag "a trade-off".
+
+Upgrade (Revision 3): The "balance" is two chips either side of a plain "against" mark, as described in "Visual upgrade". No scales are drawn.
 
 ### 11. a way to remember
 > Here's a way to remember it. Double the voltage, half the current, a quarter of the loss. It works when the power sent and the line stay the **same**.
@@ -220,6 +236,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,842, a scene sum of 5,826): **5,899 characters**, 17 scenes. Characters per scene (1 to 17): 522, 540, 275, 309, 366, 318, 405, 512, 308, 269, 146, 335, 468, 304, 384, 363, 75. At 13.3 characters per second the speech is about 444 s; add about 3 s for the prediction countdown, 2 s for the scene 4 slider, 3 s for the scene 6 screen check, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 74 s of holds and countdowns): **about 518 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's HVDC sentence; scene 4's one-hundredth sentence (the slider shows it).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,899 characters). The notes scene is 45 s in all, so the estimate is about 518 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v14's final frame (designed in this wave, `phys-y12-m6-v14.md`): paper background; a wide view: the power station plate at the left, the house plate at the right, two transmission tower plates between them carrying one long coded line; orange current dots along the line; a coded resistor zigzag labelled "R_line"; a warm tint along the line; tag "P_loss = I²R ?"; no values; heading "Why are real transformers less efficient than the ideal model?"; chip "Next: why does stepping voltage up reduce transmission loss?". Scene 1 turns the chip into the heading.
@@ -237,6 +255,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, two-powers, curren
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: transmission line (current dots, resistor zigzag, warm tint, voltage brackets), loss ledger, `DataGraph` (P_loss against V), grid chain, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 camera push to the simple-model circuit; 2 to 3 clear change to twin lines; 3 to 4 clear change to the graph with the slider; 4 to 5 clear change to the working layout; 5 to 6 camera continue; 6 to 7 clear change to the full graph; 7 to 8 clear change to the chain; 8 to 9 camera continue; 9 to 10 camera push to one tower; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), scene 4 slider (2 s), scene 6 screen check (3 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v15-learning-review.md`, `science_check` = `checks/p-y12-m6-v15-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -260,6 +280,8 @@ Kit gaps (for the v15 build brief):
 1. **Transmission line.** Dot density and speed driven by I = P/V; tint strength driven by I²R; two voltage brackets (between the outgoing and return wires, along the line); a voltage slider driving the point on the P_loss graph.
 2. **Grid chain.** Plates in a row with transformer symbols between them and per-stage voltage tags; dot density changes at each transformer.
 
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio), so the "~" tags and the step-up and step-down stages of the grid chain are lesson symbols.
+
 ## Codex asset brief
 
 Revision 2: no open request; items 1 and 2 were delivered in brief 190 and are kept here for the record.
@@ -282,6 +304,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: confirm the simple-model V (between outgoing and return wires) is never mixed with the real three-phase ratings; "tens of kilovolts" for generators; no "safe" in the domestic-voltage description; the slider factors; the crossed VI slip; author note (a)'s two limits.
 11. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -330,3 +354,26 @@ New plate requests: none.
 Joins: the opening is v14's final frame (unchanged in v14 Revision 2). The final frame (scene 16) is unchanged, so the v16 join holds.
 
 Counts: 5,842 (joined; scene sum 5,826) to 5,899 characters (scene sum); about 526 s to about 518 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the simple-model line, the twin lines and the voltage slider are tied to the circuits engine (a direct-current stand-in, tagged "simple model").
+- Scene 10: the coded balance icon becomes two chips.
+- Question cards: both already carry line diagrams and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio), so the "~" tags and the step-up and step-down stages of the grid chain are lesson symbols.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,899 characters, unchanged; about 518 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The direct-current engine stands in for an alternating line in the simple model; the "simple model" tag covers it. Say if root wants the line left lesson-coded until an alternating source exists.

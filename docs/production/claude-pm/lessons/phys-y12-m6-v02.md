@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V02: Charged particles fired between plates. Why is a charged particle's path between plates like a projectile? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,119 characters, 16 scenes, about 551 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -64,6 +64,20 @@ Entry knowledge: v01, m5-v01, m5-v05.
 Stops after: components, parabola, comparison with projectiles, t, y, exit velocity, straight path after the plates, deflection factors, plate hit. No energy account (v03).
 Handoff: v03, how a potential difference sets a particle's speed.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the electron curving between the plates with its strobe images and clock, scenes 1 and 2 (about 63 s); (B) the comparison table beside the stage, scene 3 (about 39 s); (C) the calculation layout: time, then deflection, scenes 4 and 5 (about 74 s); (D) the large velocity triangle at the exit point, scene 6 (about 36 s); (E) the pull back to the straight line beyond the plates, scene 7 (about 31 s); (F) the live plate stage with three sliders, then the plate strike, scenes 8 and 9 (about 69 s); (G) the memory card, scene 10 (about 15 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 74 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The particle between the plates runs on the field motion engine (`field-motion.ts`, a `uniform` field whose acceleration is qE/m, drawn with `FieldMotionView`: trail, strobe images, velocity and acceleration arrows) on one `useMotionTime` clock slowed to a watchable rate. Positions, strobe gaps and speed readouts are read from `stateAt` of the run. Here the electron enters with v_x and the field acts only between the plates, so the run uses a `custom` field (qE/m while x is inside the plate length, zero beyond it): the parabola, the exit velocity triangle and the straight line after the plates are all one computed path. In scenes 8 and 9 each slider setting is its own run; "t" and "y" are read at the plate end, and the "exits" or "hits" flag is whether the run reaches d/2 first.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The CRT plate is held.** The cathode ray tube plate (`y12p-crt-tube-v1.png`) is still held after brief 189, and its permitted fallback is a coded outline. That fallback is a coded drawing of a real object, so it is flagged for root rather than changed here.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *v_x*, *v_y*, *a*, *E*, *L*, *d*, *t*, *y*, *θ*. Paper background and handwritten headline face as the explainer house style.
@@ -123,6 +137,8 @@ Visual: board clears to a framed memory card (hand lettering, 52 px): "Swap g fo
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "An electron enters midway between two horizontal parallel plates, travelling parallel to the plates at 2.5 × 10⁷ m s⁻¹. The plates are 6.0 cm long and 3.0 cm apart, with a potential difference of 150 V and the top plate positive. (a) Show that the electron leaves the plates without striking either plate. (b) Calculate the angle between the electron's velocity and the horizontal as it leaves. (m_e = 9.109 × 10⁻³¹ kg, e = 1.602 × 10⁻¹⁹ C)" A small exam-style diagram: two plates with "6.0 cm" and "3.0 cm" labels and an arrow for the electron entering at mid-gap. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The exam-style plate diagram is the card's picture and is on screen from the first frame (labels 30 px or more). No path is drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > Here a is eight point seven nine times ten to the fourteen, and the electron is inside for two point four nanoseconds. So the deflection is two point five three millimetres, well under the fifteen millimetres of room, and it gets **out**. v y is a t, two point one one times ten to the six, so the angle is about four point eight **degrees**. The classic slip is using y over L, which gives two point **four**.
 
@@ -133,17 +149,21 @@ Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revis
 
 Visual: `QuestionCard`, worded as printed: "A proton enters a uniform electric field at right angles to the field. A cricket ball is thrown horizontally near Earth's surface. Compare the trajectories of the proton and the ball, giving two similarities and two differences. (4 marks)" Picture on the card (Revision 2): two small coded panels side by side, a proton entering between plates with no path drawn, and a coded ball at the edge of an exam-style cliff with no path drawn. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The two panels are on screen from the first frame. The ball is a plain exam-style dot tagged "ball" at the cliff edge, as the proton is a dot tagged "proton" between the plates; neither panel shows a path, a force arrow or an acceleration.
+
 ### 14. feedback 2 (brief)
 > Similarities. Both move at constant velocity along the entry direction, with constant acceleration across it, so both paths are **parabolas**. Differences. The proton's acceleration, q E over m, depends on its charge, its mass and the field, while every ball has the same g. And the proton's direction depends on its charge's sign, while gravity always pulls **down**. The classic slip is describing each one without **comparing**.
 
 Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revision 2): the two card panels now show their paths, the proton's parabola bending towards the negative plate and the ball's parabola falling, each about 300 px wide, under a two-column table "proton | ball" (36 px) that fills row by row: on "parabolas" "constant v along entry; constant a across; parabola | same" with a framed "same" bracket; then "a = qE/m, depends on q/m and E | a = g, same for all masses"; on "down" "direction set by the sign of q | always down", framed. On "comparing" a chip "Proton: parabola. Ball: falls." fades in and is crossed in red, red hand tag "compare in every point". Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "proton: enters a uniform electric field at right angles | cricket ball: thrown horizontally near Earth's surface | two similarities, two differences".
 
 ### 15. next: where did the extra speed come from?
 > So between the plates, the electron moved like a projectile, and it left a little faster than it went in. The field did work on it. That's our next question. How does a potential difference set a particle's **speed**?
 
 Visual: clear change to the plate stage (true scale) with the main case's path; the exit speed readouts "in: 3.00 × 10⁷ m s⁻¹", "out: 3.06 × 10⁷ m s⁻¹" stay, and an orange "K" bar beside each, the exit bar slightly longer. On "speed" a chip writes: "Next: how does a potential difference set a particle's speed?". Revision 2: orange hand tag "more K out?" with a pen arrow to the longer bar (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -211,6 +231,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **6,119 characters**, 16 scenes (Revision 1 stated 6,067, which included the 15 joins; its scene sum was 6,052). Characters per scene (1 to 16): 407, 431, 524, 515, 461, 477, 414, 480, 437, 196, 436, 398, 236, 419, 213, 75. At 13.3 characters per second the speech is about 460 s; add 3 s for the prediction countdown, about 3 s for the strobe runs in scenes 1, 2 and 9, about 2 s for the pull-back in scene 7, about 3 s for the scene 8 slider sweeps to settle, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 91 s of holds and countdowns; the notes hold is about 60 s in all): **about 551 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 3's proton clause; scene 7's backward-extension sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,119 characters). The notes scene is 45 s in all, so the estimate is about 536 s (it was about 551 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v01's final frame (`phys-y12-m6-v01.md`, "Final frame"): paper background; the plate stage across the centre (2.0 cm gap on the drawing scale, top row "+", bottom row "−", blue field lines pointing down); an electron "(−)" at the left entrance at mid-gap with a teal "v" arrow pointing right and a faint amber "F" arrow pointing up; at the left a small inset of an exam-style cliff with a dashed horizontal-launch parabola; heading "How does the voltage between parallel plates set a charged particle's acceleration?"; chip "Next: why is a charged particle's path between plates like a projectile?". Scene 1 sets the plate length bracket (5.0 cm) and starts the electron moving; the heading changes in scene 2.
@@ -229,6 +251,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m6-v02-learning-review.md`, `checks/p-y12-m6-v02-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov; scaled uniformly only): none used from earlier runs (the cliff inset is coded exam style, as m5-v05).
@@ -242,6 +266,8 @@ Need (new plates):
 Coded: plates, field lines, brackets, strobe images, components, paths, the screen dot, the backward extension, tables, chips, cards, countdowns, notes board.
 
 Kit gaps: 2. **Strobe trajectory mode** for the plate stage (horizontal entry at a set v_x; exact y = ½a(x/v_x)² at true scale; strobe images with v_x and v_y arrows; L and d brackets fixed; ghost projectile overlay with its own scale tag; straight continuation after the plates to a screen; backward extension; plate-hit stop). Shared with v03 (scene 8) and v06.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M6 v02)
 
@@ -262,6 +288,8 @@ Error-only check:
 8. Confirm no em dash (U+2014), no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
 10. Report the site notes under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -308,3 +336,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none new. `y12p-crt-tube-v1.png` stays requested and held; the coded-outline fallback is specified under Assets for root to accept or reject.
 
 Counts: 6,067 stated (joined; 6,052 scene sum) to 6,119 characters (scene sum); about 544 s to about 551 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the path between and beyond the plates and the three sliders are tied to the field motion engine.
+- Question cards: both already carry diagrams; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,119 characters, unchanged; about 536 s (it was about 551 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The cathode ray tube plate (`y12p-crt-tube-v1.png`) is still held after brief 189, and its permitted fallback is a coded outline. That fallback is a coded drawing of a real object, so it is flagged for root rather than changed here.

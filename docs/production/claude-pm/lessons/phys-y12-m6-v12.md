@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V12: Mutual induction. How can one coil induce an emf in another without touching it? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,705 characters, 16 scenes, about 519 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v11's final frame.
 
@@ -67,6 +67,19 @@ Entry knowledge: Faraday's law, flux linkage (v10); Lenz's law (v11); electromag
 Stops after: primary and secondary, switching versus steady DC, Lenz in the secondary, the graphs, a Faraday number, relative movement, AC, the iron core, "a transformer". No ratios.
 Handoff: v13, how a transformer exchanges voltage for current.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the two-coil bench with its switch, supply and galvanometer, scene 1 (about 36 s); (B) the field-line cutaway of both coils, scene 2 (about 29 s); (C) the bench run slowly: switch on, hold, switch off, scene 3 (about 47 s); (D) the side-by-side "switch on" and "switch off" panel, scene 4 (about 27 s); (E) the bench as a strip over the pair of graphs, scene 5 (about 21 s); (F) the working layout, scene 6 (about 30 s); (G) the bench again: moving the primary, scene 7 (about 24 s); (H) the graph pair with the alternating supply, scene 8 (about 40 s); (I) the bench with the iron rod, then the closed core, scene 9 (about 35 s); (J) the two graph pairs and the memory card, scene 10 (about 11 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 47 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The primary circuit (supply, knife switch and coil) runs on the circuits engine (`circuits.ts`, drawn with `CircuitView` over the painted parts): the switch closes and opens mid-run and the orange charges move only while the run's current flows. The engine's coil is its resistance only, so the short rise and fall of the primary current, the alternating current in scene 8 and the secondary's emf are lesson-coded curves drawn with `SeriesGraph` on the same clock. The scene 6 ramp-time slider is exact arithmetic (ε = N ΔΦ/Δt).
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *ε*, *N*, *ΔΦ*, *Δt*.
@@ -84,7 +97,7 @@ Visual (Revision 2 stage change): clear change to a field-line cutaway of both c
 ### 3. why switching matters
 > When you close the switch, the primary current doesn't reach its full value instantly. It rises over a short time. As it rises, its field grows, so the flux through the secondary grows. A changing flux linkage induces an emf, so the needle **flicks**. Once the current is steady, the field is steady, the flux stops changing, and the emf falls to **zero**. Open the switch, and the current falls to zero, so the flux falls, and an emf appears again, in the opposite **direction**. It's often bigger, because the current falls so quickly. This is called mutual induction. An emf is induced in one coil, by a changing current in **another**.
 
-Visual: clear change back to the bench (Revision 2). The switch reopens and the field fades; then on "When you close the switch" it closes again and the scene runs slowly: the orange current dots speed up over about a second (a small current gauge by the primary rising), the slate lines grow outwards and the secondary's flux counter rises. On "flicks" the needle flicks right while the counter is rising; the chain strip extends "→ changing → emf". On "zero" the gauge and counter hold; the needle returns to zero; tag "steady: no change, no emf". On "direction" the switch opens, the gauge and lines collapse, the counter falls, and the needle flicks left, further (author note b). On "another" a chip "mutual induction: an emf in one coil from a changing current in another", framed. Revision 2: orange hand tag "rising" on the gauge, slate "Φ changing" on the counter; a chip "steady current → steady emf" fades in on "zero" and is crossed in red.
+Visual: clear change back to the bench (Revision 2). The switch reopens and the field fades; then on "When you close the switch" it closes again and the scene runs slowly: the orange current dots speed up over about a second (a small current gauge by the primary rising), the slate lines grow outwards and the secondary's flux counter rises. On "flicks" the needle flicks right while the counter is rising; the chain strip extends "→ changing → emf". On "zero" the gauge and counter hold; the needle returns to zero; tag "steady: no change, no emf". On "direction" the switch opens, the gauge and lines collapse, the counter falls, and the needle flicks left, further (author note b). On "another" a chip "mutual induction: an emf in one coil from a changing current in another", framed. Revision 2: orange hand tag "rising" on the gauge, slate "Φ changing" on the counter; a chip "steady current → steady emf" fades in at the cue "zero" and is crossed in red.
 
 ### 4. Lenz's law in the secondary
 > Lenz's law from last video tells us which way. At switch on, the secondary's current makes a field that opposes the growing flux from the primary. At switch off, it props up the flux that's **falling**. That's why the two flicks point opposite ways. And the energy for the secondary's current comes from the primary's power supply, carried across by the changing **field**.
@@ -129,7 +142,7 @@ Visual: `QuestionCard` (subject "Physics"), worded as printed: "A primary coil i
 ### 12. feedback 1 (brief)
 > Closing the switch, the current and its field grow, so the flux through the secondary changes, and the needle flicks **briefly**. With the switch closed, the current is steady, so the flux is steady, and the reading is **zero**. Opening it, the flux falls, and the needle flicks the opposite **way**. The classic slip is a steady reading while the switch is closed. Steady current, no **emf**.
 
-Visual: card shrinks to the top; "closed", "remains closed" and "opened" underline. On "briefly" "(a) brief deflection: growing I_p → changing Φ → ε". On "zero" "(b) zero: steady I_p → steady Φ → no ε". On "way" "(c) brief deflection the opposite way: falling Φ (Lenz)". Each answer framed (Revision 2; audit no-framed-answer list). Answer side: a navy givens strip "12 V battery; switch; secondary on a centre-zero galvanometer" and the card's diagram enlarged with three small needle dials under it (right flick, zero, left flick) that fill in on "briefly", "zero" and "way". On "emf" a chip "steady deflection while closed" fades in and is crossed in red (caption "steady current, no emf"). Hold about 1 second.
+Visual: card shrinks to the top; "closed", "remains closed" and "opened" underline. On "briefly" "(a) brief deflection: growing I_p → changing Φ → ε". On "zero" "(b) zero: steady I_p → steady Φ → no ε". On "way" "(c) brief deflection the opposite way: falling Φ (Lenz)". Each answer framed (Revision 2; audit no-framed-answer list). Answer side: a navy givens strip "12 V battery; switch; secondary on a centre-zero galvanometer" and the card's diagram enlarged with three small needle dials under it (right flick, zero, left flick) that fill in at the cues "briefly", "zero" and "way". On "emf" a chip "steady deflection while closed" fades in and is crossed in red (caption "steady current, no emf"). Hold about 1 second.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A primary coil of one hundred turns sits beside a secondary coil of two hundred and fifty turns. When the primary is switched off, the flux through each turn of the secondary falls from six point zero times ten to the minus four webers to zero, in zero point zero three zero seconds. Calculate the average emf induced in the secondary. Pause here to answer.
@@ -146,7 +159,7 @@ Visual: card shrinks to the top; "secondary coil of 250 turns" and "each turn of
 
 Visual: board clears (camera change) to the closed-core schematic from scene 9, larger: the primary winding on the left limb with fewer drawn turns, labelled "N_p", connected to a coded AC source symbol "~"; the secondary winding on the right limb with more drawn turns, "N_s", connected to a coded lamp symbol; slate flux arrows circulating round the core. On "different numbers of turns" the drawn turns on each limb pulse in turn. On "voltage" labels "V_p ?" and "V_s ?" appear at the two windings; on "current" labels "I_p ?" and "I_s ?" appear, and a chip "Next: how does a transformer exchange voltage for current?". Revision 2: navy hand tag "fewer | more turns" across the two windings (it fades before the hold, so the final frame below, which v13 opens on, is unchanged). Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -205,6 +218,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,705 characters**, 16 scenes (Revision 1 stated 5,673, which included the 15 joins; its scene sum was 5,658). Characters per scene (1 to 16): 473, 390, 623, 365, 274, 395, 318, 536, 472, 142, 303, 377, 367, 323, 272, 75. At 13.3 characters per second the speech is about 429 s; add about 2 s for the scene 6 ramp-time slider to settle; add about 3 s for the prediction countdown, 2 s for the slow switch-on replay, 2 s for the AC cycles, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns; the notes hold is about 60 s in all): **about 519 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 8's phase surprise (open decision 1); scene 7's last sentence; scene 3's "often bigger" sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,705 characters). The notes scene is 45 s in all, so the estimate is about 504 s (it was about 519 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v11's final frame (designed in this wave, `phys-y12-m6-v11.md`): paper background; a bench line; at the left a coil plate (the primary) with coded leads to an open knife switch and the low-voltage supply; at the right, in line with it and a small gap away, the first coil with coded leads to the galvanometer, needle at zero; a navy bracket across the gap "no contact"; a "?" over the gap; heading "Why does the induced current oppose the flux change?"; chip "Next: how can one coil induce an emf in another without touching it?". Scene 1 turns the chip into the heading and removes the "?".
@@ -222,6 +237,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, primary-field, swi
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: two-coil bench (field lines linked to the primary current, flux counter, needle layer, current dots), aligned graphs with a time cursor and tangents, moving primary, iron rod insert, closed-core schematic, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 clear change to the field-line cutaway; 2 to 3 clear change back to the bench; 3 to 4 clear change to the switch-on and switch-off panel; 4 to 5 clear change to the graph stage (bench strip above); 5 to 6 clear change; 6 to 7 clear change back to the bench; 7 to 8 camera continue; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v12-learning-review.md`, `science_check` = `checks/p-y12-m6-v12-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -241,6 +258,8 @@ Kit gaps (for the v12 build brief):
 2. **Aligned graphs with cursor and tangents.** A `DataGraph` pair sharing a time axis, a moving cursor linked to the bench, and tangent lines at chosen times.
 3. **Closed-core schematic.** Extend `m6-transformer-grid`'s core with drawn windings, circulating flux arrows and placeholder labels.
 
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video. The circuits engine has no self-induction (a current that rises over a short time) and no alternating supply; both are on its "wanted next" list and are not coded around inside the engine here.
+
 ## Codex asset brief
 
 No new plates for v12. The galvanometer plates are specified in `phys-y12-m6-v10.md`. Confirm at build time that the soft-iron rod plate fits through both coil bores at one uniform scale (use the wide-bore coil plate if needed).
@@ -259,6 +278,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1, 2 and 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +324,26 @@ Visual upgrade (to `../maths-visual-standard.md`, the build gate and the audit's
 New plate requests: none.
 
 Counts: 5,673 stated (joined; 5,658 scene sum) to 5,705 characters (scene sum); about 515 s to about 519 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the primary circuit's switch and steady current are tied to the circuits engine; the rise, fall and alternating curves stay lesson-coded (kit gaps recorded).
+- Scenes 3 and 12: two cues that repeated a spoken word out of order are reworded (visual text only, for the checking script).
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video. The circuits engine has no self-induction (a current that rises over a short time) and no alternating supply; both are on its "wanted next" list and are not coded around inside the engine here.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,705 characters, unchanged; about 504 s (it was about 519 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

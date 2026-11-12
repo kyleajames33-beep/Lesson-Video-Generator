@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V19: AC induction motors. Why must an induction-motor rotor lag the rotating field? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,462 characters, 16 scenes, about 558 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v18's final frame.
 
@@ -64,6 +64,20 @@ Entry knowledge: v18's AC; the motor effect (v07); Faraday's law (v10); Lenz's l
 Stops after: the rotating field (qualitative), induced rotor current, torque, why slip is necessary, load and slip, typical numbers (extension), the comparison with the DC motor. No three-phase winding design.
 Handoff: v20, how a moving conductor can be braked without contact.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted cage rotor beside the stator ring, with the desk fan, scene 1 (about 44 s); (B) the four-pole stator ring filling the stage: a field that turns, scene 2 (about 46 s); (C) the painted cage rotor large, scene 3 (about 21 s); (D) the ring with the rotor at rest inside it, scene 4 (about 29 s); (E) the push to two bars of the rotor, scene 5 (about 36 s); (F) the greyed "what if" panel with the rotor-speed slider, scene 6 (about 45 s); (G) the speed-dial stage, scene 7 (about 29 s); (H) the working layout, scene 8 (about 33 s); (I) the sailing panel, scene 9 (about 28 s); (J) the two-column comparison, scene 10 (about 39 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 46 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: there is no alternating supply, no rotating field and no induction engine. The turning field is exact (three sine currents a third of a cycle apart, added as vectors) and lesson-coded; the offset sines are drawn with `SeriesGraph`. The rotor-speed slider in scene 6 and the dials in scene 7 are the design's illustrative small-slip model, tagged "illustrative" on screen.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The boat is a plate.** The sailing boat in scene 9 is a painted plate, not a coded silhouette (new request, with a fallback, under "Assets"). The stator ring, the end-on rotor and the small machine pictures in scene 10 are schematics and stay coded.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -112,6 +126,8 @@ Visual: board change to the working layout (g01 layout) with a grey tag "beyond 
 > Here's a way to picture slip. Think of a sailing boat going straight downwind. The wind pushes the sail only while the boat is slower than the wind. If the boat ever matched the wind's speed, the air around the sail would be still, and the push would vanish. So the boat always sails a little slower than the wind. The rotor is the boat, and the turning field is the **wind**.
 
 Visual: board clears to the sailing panel (a new set-up): a coded boat silhouette with a square sail (no figures, about 400 px), fixed-length grey wind arrows behind it, and a short arrow at the sail "relative wind". On "slower than the wind" the boat moves right more slowly than the wind arrows; the relative-wind arrow is long and the sail bulges; grey hand tag "push from relative wind". On "matched the wind's speed" a ghost boat (dashed outline, full ink) at the wind's speed: the relative-wind arrow shrinks to zero and the ghost sail hangs slack (tag "no relative wind, no push"). On "a little slower" the solid boat settles just behind the wind arrows with a small relative-wind arrow. On "wind" labels "boat = rotor", "wind = rotating field", "relative wind = slip", framed together. Hold about 2 seconds.
+
+Upgrade (Revision 3): The boat is the painted dinghy (`y12p-sailing-dinghy-v1.png`, new, side view, about 400 px tall, no people). It keeps one painted sail; the "bulging" and "slack" states are shown by the relative-wind arrow and its hand tags, not by redrawing the sail. The boat "at the wind's speed" is a second copy of the plate inside a dashed inset card, not a ghost. Fallback if the plate is not delivered: the existing top-view boat (`phys-y11-boat-top-white-v1.png`) moving along the wind arrows, with the same tags.
 
 ### 10. versus the DC motor
 > Compare this with the DC motor. Both turn because currents in a field feel forces. But in the DC motor, the current is fed into the coil through brushes, and a split ring reverses it every half turn. In the induction motor, the current is induced, and the field itself turns. So there are no brushes, no split ring and no sparks to wear things out. That's why induction motors run fans, pumps and washing machines for years with little **maintenance**. The price is slip. A DC motor's rotor doesn't need to lag behind **anything**.
@@ -206,6 +222,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,300, a scene sum of 6,285): **6,462 characters**, 16 scenes. Characters per scene (1 to 16): 582, 606, 284, 385, 480, 603, 386, 444, 372, 523, 177, 484, 194, 359, 508, 75. At 13.3 characters per second the speech is about 486 s; add about 3 s for the prediction countdown, 3 s for the what-if and its speed slider, 2 s for the sailing hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 72 s of holds and countdowns): **about 558 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long, in order: scene 9 (sailing picture, about 28 s; open decision 3); scene 1's desk-fan sentence (about 3 s); scene 10's maintenance sentence (about 8 s).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,462 characters). The notes scene is 45 s in all, so the estimate is about 558 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v18's final frame (`phys-y12-m6-v18.md` Revision 2): paper background; two small chips at the upper left "generator: turning → current" and "motor: current → turning"; at the centre a coded ring of six grey stator coils with a dashed slate field arrow across the middle, rotating; inside it a coded end-on cage rotor with an index mark turning slightly behind the field arrow; at the left of the ring the squirrel-cage rotor plate in side view, joined to the end-on rotor by a navy pen arrow "same rotor, end on"; a navy bracket "no wires to the rotor"; a "?" between the field arrow and the rotor's mark; heading "How do simple AC and DC generators produce different outputs?"; chip "Next: why must an induction-motor rotor lag the rotating field?". Scene 1 turns the chip into the heading, fades the two small chips and adds the speed readouts.
@@ -224,6 +242,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), what-if and slider (3 s), sailing picture (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v19-learning-review.md`, `science_check` = `checks/p-y12-m6-v19-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -240,6 +260,8 @@ Kit gaps (for the v19 build brief):
 2. **End-on cage rotor with sliding-field overlay.** Bars round the rim, induced bar currents (dots and crosses) placed by the field's position, tangential force arrows, an index mark, and field lines whose motion relative to the rotor equals the slip (freezing when slip is zero).
 3. **Sailing panel.** A coded boat with a square sail, fixed wind arrows, a relative-wind arrow and a sail bulge that both scale with (wind speed − boat speed).
 
+Revision 3 (13 Nov 2026). New request for scene 9: `y12p-sailing-dinghy-v1.png`. Fallback: `phys-y11-boat-top-white-v1.png` (exists). New plate requests: `y12p-sailing-dinghy-v1.png` (scene 9; fallback `phys-y11-boat-top-white-v1.png`). Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no alternating supply, rotating field or induction in any engine; the stator field and the slip model are lesson-coded.
+
 ## Codex asset brief (Year 12 Physics M6 v19: squirrel-cage rotor)
 
 Revision 2: no open request; the plate was delivered in brief 190 and is kept here for the record.
@@ -249,6 +271,8 @@ Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the d
 1. `y12p-squirrel-cage-rotor-v1.png` (1600 × 1000 px): the conducting cage of an induction-motor rotor on its own, **without the laminated iron core**, so the structure is clear: about twelve straight, evenly spaced aluminium-coloured bars running parallel to the axis, joined at each end by a solid aluminium end ring, with a plain steel shaft passing through the centres of the end rings, joined to them by simple solid painted hubs (no thin spokes). Seen from the side at a slight elevation, axis horizontal, so the bars read as a cage and the far bars are partly visible between the near ones. Codex reports, in plate pixels: the axis line (two points), the centres of the two end rings, and the outline of one pair of neighbouring near-side bars with the end-ring segments joining them (for the coded loop overlay).
 
 Report inspection on the paper background and the dark board background at about 400 px wide, and confirm that the end rings and bars read as one closed cage. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/phys-y12-m6-v19-provenance.json`.
+
+Revision 3 (13 Nov 2026). New plate `y12p-sailing-dinghy-v1.png`: one small sailing dinghy seen exactly side-on, sailing left to right, with a single plain pale sail set square across the boat (running downwind), a simple hull and mast. No people, no flags, no lettering or numbers, no water, no sky, no shadow on the ground. Painted in the same hand as the `y12p-` apparatus plates. Transparent PNG with an alpha channel, at least 1600 px tall, clean edges with no coloured fringe. Sidecar JSON with the hull's waterline and the centre of the sail. It is used at about 400 px tall on a paper background with coded wind arrows behind it.
 
 ## Codex error-check brief
 
@@ -265,6 +289,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: confirm the ring is drawn with four poles from scene 1 (tag "4 poles: field turns at 1500 rev/min (50 Hz)") so the site's 1500 and 1425 match it, scene 8 works the same 4-pole motor, and the 2-pole bridge tag is screen only; re-check the slider readouts and the crossed 5.3% slip; confirm no learner copy claims the rotor lags with zero friction and zero load.
 11. Log the two site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists except the new request.
 
 ## YouTube metadata (draft)
 
@@ -310,3 +336,26 @@ New plate requests: none.
 Joins: the opening is v18 Revision 2's final frame (cage plate in side view beside a coded end-on rotor). The final frame (scene 15) is unchanged, so the v20 join holds.
 
 Counts: 6,300 (joined; scene sum 6,285) to 6,462 characters (scene sum); about 560 s to about 558 s (root review, 7 Nov: site speeds restored on a four-pole ring; the first Revision 2 draft was 6,535 characters, about 563 s).
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the turning field stays lesson-coded and the slip model stays tagged "illustrative".
+- Scene 9: the coded boat silhouette becomes a painted dinghy (new plate request with a fallback); the ghost boat becomes a second copy in a dashed inset card.
+- Question cards: both already carry schematics and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: `y12p-sailing-dinghy-v1.png` (scene 9; fallback `phys-y11-boat-top-white-v1.png`).
+
+Kit gaps: no alternating supply, rotating field or induction in any engine; the stator field and the slip model are lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,462 characters, unchanged; about 558 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) One new plate is requested for a 28 s analogy. If root prefers no new plate, use the fallback (the top-view boat) and the scene still works.

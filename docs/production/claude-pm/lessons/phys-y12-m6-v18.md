@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V18: AC and DC generators. How do simple AC and DC generators produce different outputs? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,300 characters, 16 scenes, about 543 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v17's final frame.
 
@@ -65,6 +65,20 @@ Main question: *Turn the same coil in the same field at the same speed. With one
 Entry knowledge: v17's motor as a generator; flux and area normal (v09); emf from the rate of change of flux (v10); Lenz's law (v11); the split-ring commutator (v16).
 Stops after: flux and emf through one turn, the coil's emf alternating in both, slip rings and split ring, current, torque and flux in both, speed, the power-station generator. No induction motors.
 Handoff: v19, why an induction-motor rotor must lag the rotating field.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame on the bench, then the generator stage with the oscilloscope, scene 1 (about 48 s); (B) the flux stage with the coil large, scene 2 (about 43 s); (C) the linked flux and emf graphs, scene 3 (about 44 s); (D) the side-tracker close-up, scene 4 (about 28 s); (E) the slip-ring close-up, scene 5 (about 37 s); (F) the split view with the split ring, scene 6 (about 43 s); (G) the three-row comparison, scene 7 (about 43 s); (H) the slip-ring stage with the speed slider and oscilloscope, scene 8 (about 23 s); (I) the power station and its schematic cutaway, scene 9 (about 30 s); (J) the two ring close-ups and the memory card, scene 10 (about 14 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 48 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: there is no induction engine and no alternating source. The flux and emf of the turning coil are exact formulas of the angle (Φ = BA cos θ and its rate of change), lesson-coded, and the coil, the linked graphs and the oscilloscope traces all read one angle clock. The graphs are drawn with `SeriesGraph` (`series-views.tsx`) with a moving `now`, so the emf trace peaks where the flux line is steepest.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Schematics stay coded; apparatus is painted.** The end-on coil, the pole blocks, the field lines, the ring close-ups and the circuit symbols are exam-style schematics and stay coded. Every real piece of apparatus on a bench (motor, flywheel, meters, supply, pulley, masses, oscilloscope) is its painted plate.
 
 ## Script and shots
 
@@ -204,6 +218,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,315, a scene sum of 6,300): **6,300 characters**, 16 scenes (narration unchanged in Revision 2). Characters per scene (1 to 16): 637, 567, 579, 366, 498, 570, 574, 307, 394, 192, 319, 306, 171, 433, 312, 75. At 13.3 characters per second the speech is about 474 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns): **about 543 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9 (open decision 4); scene 7's energy sentence; scene 1's DC and AC chips' narration (keep the chips).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,300 characters). The notes scene is 45 s in all, so the estimate is about 543 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v17's final frame (designed in this wave, `phys-y12-m6-v17.md`): paper background; the hobby motor plate with its flywheel turning steadily, a curved amber outline arrow round the flywheel "turned by an outside drive"; no supply, switch or ammeter; coded leads from the motor's terminals to the oscilloscope plate at the right, its screen showing a flat coded trace with a "?"; a rose tag "ε (output)" and a chip "motor → generator"; heading "Why does a spinning DC motor draw less current?"; chip "Next: how do simple AC and DC generators produce different outputs?". Scene 1 turns the chip into the heading and moves into the single-coil model.
@@ -221,6 +237,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, flux-turning-coil,
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: generator stage (ring swap, side tracker, torque arrows), linked graphs with cursor and snapshots, steepness tangent, output trace on the oscilloscope plate, brush-swap close-up, comparison rows, stator ring with rotating field (handoff), `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 camera change (bench to model); 1 to 2 clear change to the flux stage; 2 to 3 camera change to the linked-graph stage; 3 to 4 clear change to the side-tracker close-up; 4 to 5 camera push-in on the rings; 5 to 6 camera change to the split view; 6 to 7 clear change; 7 to 8 camera change; 8 to 9 clear change; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). The scene 2 and 3 angle drag and the scene 8 slider ride the narration. Review evidence paths: `learning_review` = `checks/p-y12-m6-v18-learning-review.md`, `science_check` = `checks/p-y12-m6-v18-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -241,6 +259,8 @@ Kit gaps (for the v18 build brief):
 2. **Linked graphs.** Flux and emf `lineGraph`s sharing a time axis, a cursor tied to the coil angle, a sliding tangent on the flux curve.
 3. **Output trace on the oscilloscope plate.** A coded trace in the plate's screen region (coordinates from the plate), sine or rectified sine, with amplitude and frequency parameters for scene 8.
 
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for flux and induction, as recorded for the flux video; a turning-coil generator (slip rings or split ring, with speed and load) would serve this video and the motor videos either side of it.
+
 ## Codex asset brief
 
 No new plates for v18. The hobby motor, flywheel and squirrel-cage rotor were delivered in brief 190. Codex reports the oscilloscope plate's screen rectangle in plate pixels (for the coded trace) if not already recorded.
@@ -260,6 +280,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: re-check the angle-drag readouts and speed-slider factors; confirm the handoff shows the cage plate in side view with a coded end-on rotor (no end-on use of the plate).
 11. Log the three site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +325,25 @@ New plate requests: none.
 Joins: the opening is v17's final frame (unchanged in v17 Revision 2). The final frame changes only in how the cage rotor is shown (plate side view beside a coded end-on rotor); v19 Revision 2's opening frame is written to match.
 
 Counts: 6,315 (joined; scene sum 6,300) to 6,300 characters (scene sum); about 559 s to about 543 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the coil, graphs and traces share one lesson clock and `SeriesGraph` draws the graphs (kit gap recorded).
+- Question cards: both already carry schematics and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine for flux and induction, as recorded for the flux video; a turning-coil generator (slip rings or split ring, with speed and load) would serve this video and the motor videos either side of it.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,300 characters, unchanged; about 543 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

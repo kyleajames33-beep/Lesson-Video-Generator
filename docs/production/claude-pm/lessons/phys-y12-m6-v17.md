@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V17: Back emf in DC motors. Why does a spinning DC motor draw less current? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,556 characters, 16 scenes, about 564 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v16's final frame (root-reconciled; see "Opening frame").
 
@@ -66,6 +66,21 @@ Entry knowledge: v16's DC motor; Faraday's law (v10); Lenz's law (v11); Year 11 
 Stops after: back emf, I = (V − ε_back)/R, start, full speed, load, jam, the power ledger, starting resistors. No generators, induction motors or braking.
 Handoff: v18, how simple AC and DC generators produce different outputs.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the bench: the painted hobby motor and flywheel with the multimeter, switch and supply, scene 1 (about 37 s); (B) the motor schematic at full size, scene 2 (about 42 s); (C) the greyed "what if" panel, scene 3 (about 55 s); (D) the equivalent circuit, then the current against speed graph with the speed slider beside it, scenes 4 and 5 (about 75 s; the graph and flywheel inset arrive at about 35 s); (E) the motor bench lifting a load, scene 6 (about 38 s); (F) the working layout, scene 7 (about 43 s); (G) the motor bench with the jammed shaft, scene 8 (about 30 s); (H) the equivalent circuit with the painted rheostat, scene 9 (about 32 s); (I) the two small benches and the memory card, scene 10 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 75 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The equivalent circuit (scenes 3, 4, 5, 8 and 9) runs on the circuits engine (`circuits.ts`, drawn with `CircuitView`): the supply, the coil's resistance "R" and the back emf as a second battery facing the supply. The lesson sets that battery's voltage from the speed slider with a smooth change (`over`), and `solveCircuit` gives the current, so "I" falls from 6.0 A to 1.0 A as "ε_back" rises from 0 to 10 V, and the moving charges slow with it. In scene 9 the starting resistor is a `rheostat` in series, turned down as the motor speeds up. The bench multimeter in scenes 1, 6 and 8 shows the same run's current. The current against speed line is drawn from the same solved values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Schematics stay coded; apparatus is painted.** The end-on coil, the pole blocks, the field lines, the ring close-ups and the circuit symbols are exam-style schematics and stay coded. Every real piece of apparatus on a bench (motor, flywheel, meters, supply, pulley, masses, oscilloscope) is its painted plate.
+- **The jam is a plate.** The block that jams the flywheel in scene 8 is the painted wooden block (`phys-y11-wooden-block-v1.png`), not a coded block.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -110,6 +125,8 @@ Visual: board change to the working layout (g01 layout). Task strip (36 px): "Wh
 
 Visual: camera change to the motor bench (a new set-up from scene 7); on "jam the shaft" a coded grey block slides against the flywheel and it stops; a tag "stalled: ω = 0". On "No spin, no back emf" the share bar (small, right) returns to all orange, "ε_back = 0". On "six point zero amps" the ammeter readout jumps to "6.0 A"; working (52 px) "I = 12 / 2.0 = 6.0 A", framed. On "seventy two watts" working "I²R = 6.0² × 2.0 = 72 W", framed; the red heat bar grows far past the earlier 2.0 W bar (shown beside it). On "thirty six times" red hand tag "72 / 2.0 = 36 ×". On "heat" the amber converted bar shrinks to nothing; the whole input bar turns red, "all input → heat". On "seconds" the coil windings region on the motor plate tints red (overlay glow on the can only), red pen ring and tag "windings overheat".
 
+Upgrade (Revision 3): The block that slides against the flywheel is the painted wooden block (about 120 px wide), not a coded grey block.
+
 ### 9. starting big motors safely
 > Big motors have the same problem at every start, because their winding resistance is tiny. So a starting resistor is added in series, a resistor that limits the current while the motor starts. Here, adding four ohms makes the starting current twelve volts over six ohms, **two point zero amps**. As the motor speeds up and the back emf grows, the resistor is switched out, step by step, until the motor runs on the full **supply**.
 
@@ -125,6 +142,8 @@ Visual: board clears to two small benches side by side (plates at least 300 px):
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A small DC motor is connected to a 9.0 V supply. The resistance of its coil is 1.5 Ω. When running at full speed, the motor draws a current of 0.80 A. (a) Calculate the back emf at full speed. (b) Calculate the current in the motor if its shaft is jammed so that it cannot turn. (3 marks)" A small coded circuit beside it (supply, ammeter, motor symbol), no values. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The small circuit is the card's picture and is on screen from the first frame (symbols 30 px or more). It carries no values, as designed. The share bar and the memory card are hidden.
+
 ### 12. feedback 1 (brief)
 > At full speed, the back emf is V minus I R. That's nine point zero minus zero point eight zero times one point five, so **seven point eight volts**. Jammed, there's no back emf, so the current is nine point zero over one point five, **six point zero amps**. The classic slip is giving I R, one point two volts, as the back emf. That's the voltage across the resistance, not the back **emf**.
 
@@ -135,10 +154,14 @@ Visual: card shrinks to the top; a givens strip (36 px): navy "V = 9.0 V", ink "
 
 Visual: `QuestionCard` arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A DC motor connected to a constant supply voltage is lifting a load at a steady speed. The load is suddenly increased. Explain the changes in the motor's speed, back emf and current, and explain how energy is conserved when the motor reaches its new steady speed. (4 marks)" A small coded diagram: the motor bench silhouette with the hanger and an extra mass. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the bench in painted plates, not a silhouette: the hobby motor and flywheel, the bench pulley, the hanger and the slotted masses, with one extra mass drawn beside the hanger (about 420 px wide in all). It is on screen from the first frame. No speed, current or emf readouts are drawn.
+
 ### 14. feedback 2 (brief)
 > The heavier load slows the motor, so the back emf falls. With less back emf, more of the supply voltage drives current, so the current **rises**. More current gives more torque, so the motor settles at a lower speed. The supply now delivers more power, V I. It still splits into converted mechanical power and heat, and the heat, I squared R, has **grown**. The slip is saying the current falls because the motor is **slower**.
 
 Visual: card shrinks to the top; a givens strip (36 px): "constant supply V", "load increased"; "suddenly increased" and "energy is conserved" underline. The bench silhouette with the extra mass sits at the right (300 px). The chain builds (44 px): on "rises" "speed ↓ → ε_back ↓ → I = (V − ε_back)/R ↑"; on "lower speed" "→ torque ↑ → new steady speed (lower)"; on "grown" the power bars: a taller orange "VI" splitting into an amber "converted (ε_back I)" bar and a taller red "I²R" bar, with the ledger "VI = I²R + ε_back I" in a dark-ink frame (no claim on the amber bar's height). On "slower" a chip "current falls because the motor is slower" fades in and is crossed in red (caption "slower → less back emf → more current"). Hold about 1 second.
+
+Upgrade (Revision 3): The bench at the right is the same set of painted plates (about 300 px), not a silhouette.
 
 ### 15. handoff
 > So a spinning motor draws less current because its coil is also a generator, and the back emf it makes pushes against the supply. Now remove the supply. Turn the shaft with something else, and connect the motor to an **oscilloscope**. The back emf is still there, but now it's the output. The motor has become a **generator**. So what shape is **its output**?
@@ -214,6 +237,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,339, a scene sum of 6,324): **6,556 characters**, 16 scenes. Characters per scene (1 to 16): 495, 556, 730, 472, 537, 509, 572, 395, 423, 129, 282, 379, 240, 415, 347, 75. At 13.3 characters per second the speech is about 493 s; add about 3 s for the prediction countdown, 2 s for the scene 5 slider, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 71 s of holds and countdowns; the scene 3 what-if no longer needs its own hold): **about 564 s**, inside the 5,500 to 7,000 character band and under the 570 s cap, but close to it. Reserve trims if the voiced take runs long, in order: scene 10 (open decision 4, about 10 s); scene 6's half-speed numbers, keeping the chain (about 8 s); scene 9's last clause (about 5 s).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,556 characters). The notes scene is 45 s in all, so the estimate is about 564 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v16's final frame exactly (reconciled by root, 6 November): see `phys-y12-m6-v16.md` "Final frame" (power pack plate, coded ammeter with ghost and live needles and no numbers, coded split-ring motor schematic spinning, "Next" chip). Scene 1 shrinks the motor to an inset and fades the pack and ammeter before the bench enters.
@@ -231,6 +256,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, also-a-generator, 
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: motor bench (flywheel spin rate, ammeter readout, current dots), back-emf overlay, runaway what-if, equivalent circuit with voltage-share bar, current-speed `lineGraph`, power bars, jam block, rheostat stepper, `AlignedAlgebra`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 camera change (model to bench); 1 to 2 camera change (bench to model); 2 to 3 clear change (the what-if panel with its ledger); 3 to 4 clear change (to the circuit); 4 to 5 camera continue; 5 to 6 camera change (bench with load); 6 to 7 clear change (working layout); 7 to 8 camera change (bench); 8 to 9 clear change (circuit); 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), scene 5 slider (2 s) (the what-if is now carried by its narration, no separate hold), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v17-learning-review.md`, `science_check` = `checks/p-y12-m6-v17-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -254,6 +281,8 @@ Kit gaps (for the v17 build brief):
 1. **Motor bench.** Plate composite with a flywheel layer rotating at a scene-set rate, a coded ammeter readout that counts between values, current dots whose density follows the current.
 2. **Equivalent circuit with voltage-share bar.** Supply, resistor and an opposing rose cell; a bar split into ε_back and IR that animates with speed; a current-speed `lineGraph` linked to the same speed value.
 3. **Power bars.** An input bar splitting into heat and converted, with an optional friction sliver.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-wooden-block-v1.png` (scene 8). The hobby motor, flywheel, pulley, hanger and masses are also used on the attempt 2 card and in feedback 2. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the circuits engine's motor is a resistance only, so the back emf is a separate battery whose voltage the lesson sets from the speed; an engine motor whose back emf follows its own speed (and its load) is on the "wanted next" list.
 
 ## Codex asset brief (Year 12 Physics M6 v17: hobby motor and flywheel)
 
@@ -281,6 +310,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: re-check the what-if ledger (11 A, 132 W, 242 W), the speed-slider readouts and the crossed "all 12 W" slip; confirm feedback 2 makes no claim that the mechanical power always grows (author note g) and that the 6.0 A is labelled the resistance-only estimate before appreciable rotation.
 11. Log the three site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -328,3 +359,26 @@ New plate requests: none.
 Joins: the opening is v16's root-reconciled final frame (unchanged in v16 Revision 2). The final frame (scene 15) is unchanged, so the v18 join holds.
 
 Counts: 6,339 (joined; scene sum 6,324) to 6,556 characters (scene sum); about 563 s to about 564 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the equivalent circuit, the speed slider, the starting resistor and the bench meter are tied to the circuits engine (kit gap recorded: the back emf is set by the lesson).
+- Scene 8: the coded jam block becomes the painted wooden block.
+- Question cards: attempt 2's bench silhouette becomes the painted plates (also in feedback 2); both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the circuits engine's motor is a resistance only, so the back emf is a separate battery whose voltage the lesson sets from the speed; an engine motor whose back emf follows its own speed (and its load) is on the "wanted next" list.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,556 characters, unchanged; about 564 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The back emf is drawn as an explicit second battery in the equivalent circuit, which is how the design already draws it; the engine's own motor part is not used to show the current falling.

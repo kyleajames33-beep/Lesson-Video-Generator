@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V10: Faraday's law. What changes create an induced emf? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,187 characters, 14 scenes, about 556 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v09's final frame.
 
@@ -60,6 +60,19 @@ Main question: *A magnet sitting inside a coil does nothing to the meter, but th
 Entry knowledge: flux and the three ways it changes (v09); voltage as energy per coulomb; gradients.
 Stops after: induced emf, emf versus current, flux linkage, Faraday's law, the graph, the worked example, the rod, the list of changes. No direction.
 Handoff: v11, why the induced current opposes the flux change.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the bench with the magnet, the coil and the galvanometer, scene 1 (about 42 s); (B) the close-up cutaway of the coil with threading field lines, scene 2 (about 45 s); (C) the bench with the coil of twice the turns, scene 3 (about 30 s); (D) the working side with Faraday's law, scene 4 (about 28 s); (E) the flux-linkage graph with the emf bars under it, scene 5 (about 47 s); (F) the working layout, scene 6 (about 49 s); (G) the sliding rod seen from above with its speed slider, scene 7 (about 49 s); (H) the four-panel summary board, scene 8 (about 38 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 49 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The sliding-rod loop in scene 7 runs on the circuits engine (`circuits.ts`, drawn with `CircuitView`): the rails, the resistor and the rod as a battery whose voltage the lesson sets to Blv at each slider speed, so the drifting charges speed up and stop with the emf readout. The time graphs in scene 5 are drawn with `SeriesGraph` (`series-views.tsx`): the flux-linkage line with a moving `now`, and the emf bars under it taken from the line's gradient in each stretch. The magnet, the coil and the needle stay a lesson animation, because there is no induction engine.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -130,7 +143,7 @@ Visual: card shrinks to the top; "0.25 m", "4.0 m s⁻¹", "0.30 T" and "brought
 
 Visual: board clears (camera change) to the bench: the bar magnet, "N" facing the coil, with the amber motion arrow pointing at the coil; the coil plate; the galvanometer with its needle deflected. On "which way does that current flow" the leads dim. On "one way" a rose curved arrow round the coil's near end, clockwise as seen from the magnet, with "?"; on "the other way" a second rose curved arrow, anticlockwise, with "?". On "conservation of energy" a chip "energy is conserved". On "one" a large "?" between the two arrows and a chip "Next: why does the induced current oppose the flux change?". Revision 2: amber hand tag "N pushed in" on the motion arrow (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 14. key notes (quiet, hold about 60 seconds)
+### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -193,6 +206,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **6,187 characters**, 14 scenes (Revision 1 stated 6,202, which included the 13 joins; its scene sum was 6,189). Characters per scene (1 to 14): 553, 601, 405, 379, 628, 658, 657, 504, 380, 384, 312, 375, 276, 75. At 13.3 characters per second the speech is about 465 s; add about 2 s for the scene 7 slider steps to settle; add about 3 s for the prediction countdown, 3 s for the magnet pushes in scene 1, 2 s for the graph build, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 91 s of holds and countdowns; the notes hold is about 60 s in all): **about 556 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 3's last two sentences; scene 4's unit sentence (keep the chip); scene 8's open-circuit sentences.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,187 characters). The notes scene is 45 s in all, so the estimate is about 541 s (it was about 556 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v09's final frame (designed in this wave, `phys-y12-m6-v09.md`): paper background; a bench line; the bar magnet plate at the left, "N" coded on the end facing the coil, a coded amber motion arrow "→" behind it (still); the coil plate at the centre, axis in line with the magnet; coded leads to the galvanometer at the right, needle at the centre zero; a "?" by the needle; a chip "changing Φ"; heading "Why does changing loop orientation change magnetic flux?"; chip "Next: what changes create an induced emf?". Scene 1 turns the chip into the heading.
@@ -211,6 +226,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v10-learning-review.md`, `science_check` = `checks/p-y12-m6-v10-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -228,6 +245,8 @@ Kit gaps (for the v10 build brief):
 1. **Magnet bench.** A magnet plate moved along the coil axis by a coded motion arrow at set speeds; field lines from the magnet threading the coil with a counter; a needle layer rotating about the galvanometer pivot from an illustrative emf; current dots in the leads.
 2. **Linkage graph with emf bars.** `DataGraph` with gradient triangles and a time-aligned bar graph below.
 3. **Rod on rails.** Extend `m6-sliding-rod` with the galvanometer in the end bar, the growing shaded area and a swept-area strip.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video. The rod's emf is set by the lesson (Blv) rather than computed by an engine.
 
 ## Codex asset brief (Year 12 Physics M6 v10: galvanometer)
 
@@ -251,6 +270,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no person, hand, face or body outline is drawn or requested (the magnet and rod are moved by coded arrows).
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +315,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (the galvanometer requested in Revision 1 is delivered).
 
 Counts: 6,202 stated (joined; 6,189 scene sum) to 6,187 characters (scene sum); about 555 s to about 556 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the sliding-rod loop is tied to the circuits engine and the scene 5 graphs to `SeriesGraph`; the magnet and coil stay a lesson animation (kit gap recorded).
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video. The rod's emf is set by the lesson (Blv) rather than computed by an engine.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,187 characters, unchanged; about 541 s (it was about 556 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V07: The motor effect. Why does a current-carrying wire feel a magnetic force? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,992 characters, 14 scenes, about 541 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v06's final frame (reconciled 6 Nov; see "Opening frame").
 
@@ -66,6 +66,20 @@ Entry knowledge: current is moving charge; a moving charge crossing a magnetic f
 Stops after: motor effect, dots and crosses, F = BIl, active length, F = lIB sin θ, maximum and zero, the palm rule, reversal, the loudspeaker. No wire-wire forces.
 Handoff: v08, why parallel currents attract or repel.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the bench: the painted magnet, the copper rod, the knife switch and the supply, scene 1 (about 43 s); (B) the tilt to the top view: inside the wire, then adding up the pushes, scenes 2 and 3 (about 77 s; the charge band and length bracket arrive at about 41 s); (C) the working layout, scene 4 (about 29 s); (D) the flat field panel with the angle dial, scene 5 (about 55 s); (E) the top view with the three palm-rule axes, scene 6 (about 46 s); (F) the loudspeaker cross-section, scene 7 (about 58 s); (G) the field panel again for the two checks and the memory card, scene 8 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 77 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The bench circuit in scene 1 runs on the circuits engine (`circuits.ts`, drawn with `CircuitView` over the painted parts): a supply, the knife switch and the rod as a resistor, with the switch closed mid-run (`{s: {closed: true}}`), so the current readout steps up at the moment the rod kicks, and the moving charges in the leads follow the same current. The scene 5 angle dial is exact arithmetic (F = BIl sin θ) and stays lesson-coded. The rod's swing and the loudspeaker cone are lesson animations driven by that force.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The support is a plate.** The "coded support bar" in scene 1 is the painted boss and crossbar (`phys-y11-boss-crossbar-v1.png`) on a painted retort stand (`phys-y11-retort-stand-v1.png`). Leads stay plain lines.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *F*, *B*, *I*, *l*, *θ*. Paper background and handwritten headline face as the explainer house style.
@@ -74,6 +88,8 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 > Last time ended on this picture. A wire crosses a magnetic field, and every electron drifting inside it feels a sideways push. So does the wire itself get pushed? Here's a real copper rod, hanging on two light leads between the poles of a strong magnet. The north pole is on top, so the field points straight **down**. Close the switch, and a current flows through the rod from left to right. The rod swings away from **us**. Now reverse the current. Which way will it swing this **time**? Towards us. But this rod has no overall charge. So why does a magnetic field push on it at **all**?
 
 Visual: opens on v06's final frame (see "Opening frame"). On "So does the wire itself get pushed?" the dashed amber "F = ?" arrow on the wire pulses. On "copper rod" camera change to the magnet stage: the horseshoe magnet plate (`y12p-horseshoe-magnet-v1.png`, new) seen from the front, poles one above the other, the copper rod plate (`phys-y11-rod-copper-v1.png`) hanging across the gap on two coded leads from a coded support bar; coded leads run to the knife switch (`phys-y11-knife-switch-v1.png` with `phys-y11-knife-switch-blade-v1.png`) and the low-voltage supply (`phys-y11-low-voltage-supply-v1.png`) at the right. Coded "N" on the upper pole, "S" on the lower. On "down" slate field arrows draw down through the gap, label "B". On "Close the switch" the switch blade closes and a orange arrow "I" runs along the rod to the right. On "us" the rod swings back (it shrinks slightly and rises, illustrative, author note d) and an amber arrow "F (away from us)" draws in perspective. On "time" the switch reopens, the rod falls back, the orange arrow flips to point left, and a 3 s `Countdown` runs beside two chips "towards us" and "away from us". On "Towards us." the rod swings forward (it grows slightly); the "towards us" chip ticks. On "all" the heading writes on: "Why does a current-carrying wire feel a magnetic force?" and a chip "the motor effect: a force on a current in a magnetic field". Revision 2: the bench fills the frame (magnet about 520 px wide); hand tags: slate "N above: B down", orange "I →", amber "away from us" with a pen arrow along the swing; ink "no net charge!" with a pen ring round the rod.
+
+Upgrade (Revision 3): The rod hangs on its two leads from the painted boss and crossbar on a painted retort stand, not from a coded bar. The supply's current readout (a chip beside the painted supply, 44 px) reads "0 A" until the switch closes, then the run's value.
 
 ### 2. inside the wire
 > Let's look from above. From up here, the field points away from us, into the screen, so we draw it as crosses, just as in earlier **videos**. Now zoom into the rod. The metal ions stay put, but free electrons drift slowly along it, the opposite way to the conventional **current**. Each drifting electron is a moving charge in a magnetic field, so each one feels a sideways **push**. The electrons can't leave the metal, so they push on the rest of the rod, and the whole rod **moves**. A neutral wire feels a force because of the moving charges inside it.
@@ -108,7 +124,7 @@ Visual: board change: the loudspeaker plate (`phys-y11-loudspeaker-v1.png`, cros
 ### 8. two checks and a way to remember
 > Two quick checks for exam questions. Theta is the angle between the current and the field, not between the wire and the bench. And count only the length of wire that's inside the **field**. Here's a way to remember the angle rule. Across the field, full force. Along the field, no **force**.
 
-Visual: board clears to the scene 5 panel (field arrows across the screen, wire at 30°). On "not between the wire and the bench" a chip "θ = angle to the bench" draws beside a ghost bench line under the wire and is crossed; "θ = angle between I and B" is ticked. On "field" the wire extends beyond the panel edge; the outside part greys, "l = inside only". On "force" the handwritten line writes large above: "Across the field, full force. Along the field, no force." with a line under it "F = lIB sin θ" (44 px), the whole set inside a framed memory card; the wire turns to 90° (amber arrow full), then to 0° (no arrow). Revision 2: red crossing on "θ = angle to the bench" with a red hand tag "I to B"; navy hand tag "inside only" on the greyed part. Hold about 2 seconds.
+Visual: board clears to the scene 5 panel (field arrows across the screen, wire at 30°). On "not between the wire and the bench" a chip "θ = angle to the bench" draws beside a ghost bench line under the wire and is crossed; "θ = angle between I and B" is ticked. On "field" the wire extends beyond the panel edge; the outside part greys, "l = inside only". On "force" the handwritten line writes large above: "Across the field, full force. Along the field, no force." with a line under it "F = lIB sin θ" (44 px), the whole set inside a framed memory card; the wire turns to 90° (amber arrow full), then to 0° (no arrow). Revision 2: red crossing through the chip "θ = angle to the bench" with a red hand tag "I to B"; navy hand tag "inside only" on the greyed part. Hold about 2 seconds.
 
 ### 9. attempt 1 (countdown, 10 seconds)
 > Your turn. A straight wire carries a current of two point five amps, and forty centimetres of it lies inside a uniform magnetic field of zero point one five tesla. Calculate the force on the wire when the current is at right angles to the field, and when it's at thirty degrees to the field. Pause here to answer.
@@ -135,7 +151,7 @@ Visual: card shrinks to the top; "into the page" and "to the right" underline. T
 
 Visual: board clears (camera change) to a coded panel: one long vertical wire with a orange current arrow up the screen. On "magnetic field of its own" faint slate circles draw round it (in perspective, tag "Year 11: a current makes a field"). On "side by side" a second parallel wire with an upward orange current arrow slides in beside it, "I₁" and "I₂". On "other's field" each wire's faint circles reach the other wire. On "apart" a large "?" between the wires with two faint amber double-headed arrows, and a chip "Next: why do parallel currents attract or repel?". Revision 2: slate hand tag "each in the other's field" with a pen arc between the wires (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 14. key notes (quiet, hold about 60 seconds)
+### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -198,6 +214,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,992 characters**, 14 scenes; narration unchanged from Revision 1, whose stated 6,005 included the 13 joins. Characters per scene (1 to 14): 573, 540, 477, 383, 731, 617, 775, 283, 313, 370, 243, 345, 267, 75. At 13.3 characters per second the speech is about 451 s; add about 2 s for the scene 5 dial sweeps to settle; add about 3 s for the prediction countdown, 2 s for the swings in scene 1, 2 s for the camera tilt, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns; the notes hold is about 60 s in all): **about 541 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 6's electron sentences (the point is also in scene 2's inset); scene 7's sound sentence; scene 4's weight comparison.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,992 characters). The notes scene is 45 s in all, so the estimate is about 526 s (it was about 541 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v06's final frame (`phys-y12-m6-v06.md`, read on disk 6 Nov after this design was first drafted on an assumed frame; reconciled): paper background; a square region filled with a regular grid of slate crosses, tag "B into page"; a straight horizontal coded copper-coloured wire crossing the region from left to right; an orange arrow "I" above it pointing right, tag "conventional current"; small "−" electrons drifting left inside the wire, each with a small amber arrow pointing up; a large dashed amber outline arrow "F = ?" pointing up on the middle of the wire; heading "How can crossed fields select one particle speed?"; chip "Next: why does a current-carrying wire feel a magnetic force?". Scene 1 turns the chip into the heading (on "all"), pulses the "F = ?" arrow, then changes to the magnet stage. Directions agree: current right, B into the page, force up the page.
@@ -215,6 +233,8 @@ In order (kebab-case; 14 scene headings, all `### N.`): hook, inside-the-wire, a
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: magnet stage (swinging rod layer), camera tilt, charge drift, current split, palm-rule axes, voice-coil section, `DataGraph`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue (tilt); 2 to 3 camera continue (same top view); 3 to 4 clear change (working layout); 4 to 5 clear change; 5 to 6 clear change back to the top view; 6 to 7 clear change; 7 to 8 clear change; attempts and feedback card shrink to the top; 12 to 13 clear change; 13 to 14 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v07-learning-review.md`, `science_check` = `checks/p-y12-m6-v07-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -235,6 +255,8 @@ Kit gaps (for the v07 build brief):
 2. **Charge drift.** Ions fixed, electrons drifting at a set speed, each with a small force arrow; slight bunching to one edge.
 3. **Current split and palm-rule axes.** A current arrow resolving into across-field and along-field components; three labelled axes that rotate to match any diagram.
 4. **Voice-coil views (Revision 2).** End-on ring with radial field arrows, tangent current arrows and axial force dots; side section with coil crosses and dots, field up and down, axial force arrows; cone layer motion.
+
+Revision 3 (13 Nov 2026). Existing plates newly used in scene 1 (already in this design's list or confirmed by file listing): `phys-y11-boss-crossbar-v1.png`, `phys-y11-retort-stand-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine draws the magnetic field of a magnet or a current, or the force on a wire in it; the field arrows, cross grids and force arrows are lesson-coded.
 
 ## Codex asset brief (Year 12 Physics M6 v07: horseshoe magnet)
 
@@ -258,6 +280,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site note 1 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -301,3 +325,27 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (the horseshoe magnet requested in Revision 1 is delivered).
 
 Counts: 6,005 stated (joined; 5,992 scene sum) to 5,992 characters (scene sum, narration unchanged); about 540 s to about 541 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the hook circuit (switch closing, current stepping up) is tied to the circuits engine; the angle dial stays lesson-coded.
+- Scene 1: the coded support bar becomes the painted boss, crossbar and stand.
+- Scene 8: "red crossing on" a chip is now "through the chip" (visual text only, for the checking script).
+- Question cards: both already carry diagrams and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine draws the magnetic field of a magnet or a current, or the force on a wire in it; the field arrows, cross grids and force arrows are lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,992 characters, unchanged; about 526 s (it was about 541 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

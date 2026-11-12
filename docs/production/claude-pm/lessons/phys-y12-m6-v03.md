@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V03: Work and energy in electric fields. How does a potential difference set a particle's speed? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,013 characters, 16 scenes, about 541 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -59,6 +59,19 @@ Main question: *An electron gun speeds electrons up with a voltage. Double the v
 Entry knowledge: v01, v02; Year 11 work and energy.
 Stops after: W = qEd = qV, signed ΔU, eV, v = √(2qV/m), v ∝ √V and 1/√m, qEd along the field only, initial K. No magnetic deflection.
 Handoff: v04, when a magnetic field exerts a force on a moving charge.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the tube with the painted supply at 5000 V, scene 1 (about 24 s); (B) the plate stage: the work done, then the potential ladder and the energy ledger, scenes 2 and 3 (about 81 s; the ladder and ledger arrive at about 28 s); (C) the full-width unit board, scene 4 (about 30 s); (D) the calculation layout with the gun and supply, scene 5 (about 48 s); (E) the speed against voltage graph driven by the supply dial, scene 6 (about 28 s); (F) the two lanes, scene 7 (about 31 s); (G) last time's path stage: q E d, then the ledger with a starting energy, scenes 8 and 9 (about 85 s; the ledger arrives at about 42 s); (H) the memory card, scene 10 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 85 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The particle between the plates runs on the field motion engine (`field-motion.ts`, a `uniform` field whose acceleration is qE/m, drawn with `FieldMotionView`: trail, strobe images, velocity and acceleration arrows) on one `useMotionTime` clock slowed to a watchable rate. Positions, strobe gaps and speed readouts are read from `stateAt` of the run. In scenes 2 and 3 the proton's kinetic energy on the ledger is ½mv² from the run, so it climbs in step with the potential lines the proton crosses. Scenes 8 and 9 reuse last time's path: "K₀ = 2559 eV" and "K = 2656 eV" are the run's entry and exit energies, and the gain equals q times the potential difference crossed. The scene 6 dial is exact arithmetic (v = √(2|q|V/m)) and stays lesson-coded, as do the two lanes in scene 7.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -119,6 +132,8 @@ Visual: board clears to a framed memory card: the handwritten line "Energy ∝ V
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "Electrons are accelerated from rest through a potential difference of 2.0 kV in an evacuated tube. (a) State the kinetic energy gained by each electron in electronvolts and in joules. (b) Calculate the final speed of the electrons. (m_e = 9.109 × 10⁻³¹ kg, e = 1.602 × 10⁻¹⁹ C)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted supply (`phys-y11-eht-supply-v1.png`, about 240 px tall), its display reading "2.0 kV", wired to a plain exam-style gun (a cathode block and an anode block). No beam speed, no energy bar and no graph are drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > The kinetic energy is two thousand electronvolts, which is three point two oh times ten to the minus sixteen **joules**. Then v is the square root of two times that energy over the electron's mass, about two point six five times ten to the seven metres per **second**. The classic slip is forgetting the square root, which leaves you with a speed **squared**.
 
@@ -128,6 +143,8 @@ Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revis
 > Last one. A proton and an alpha particle are each accelerated from rest through the same potential difference. The alpha particle has twice the proton's charge, and about four times its mass. Which gains more kinetic energy, and which ends up faster? Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A proton and an alpha particle are each accelerated from rest through the same potential difference. The alpha particle has charge +2e and mass 6.64 × 10⁻²⁷ kg; the proton has charge +e and mass 1.673 × 10⁻²⁷ kg. (a) Which particle gains more kinetic energy? Explain. (b) Which particle has the greater final speed? Justify your answer. (3 marks)" Picture on the card (Revision 2): two coded lanes, a small "+e" disc and a larger "+2e" disc at the start of identical guns marked "same V", no bars or speeds. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The two lanes are on screen from the first frame, each a plain exam-style gun marked "same V" with its particle at the start ("+e" and "+2e"). No energy bars and no speed readouts are drawn.
 
 ### 14. feedback 2 (brief)
 > The kinetic energy is q V, so the alpha particle, with double the charge, gains twice as much. But it's about four times as massive, so its speed is the square root of two over four, about zero point seven one times the proton's. The proton is **faster**. The classic slip is saying they gain the same energy, because the voltage is the **same**.
@@ -139,7 +156,7 @@ Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revis
 
 Visual: clear change. At the left a coded exam-style electron gun (a cathode block and an anode block, labels "0 V" and "+5000 V"); the beam leaves it moving right into a square region of slate crosses, tag "B into page". On "bends" the beam curves downwards along an arc inside the region; two speed readouts, "entering: 4.19 × 10⁷ m s⁻¹" and "inside: 4.19 × 10⁷ m s⁻¹", are equal, and the orange K bar beside the beam does not change. On "charge" a chip writes: "Next: when does a magnetic field exert a force on a moving charge?". Revision 2: teal hand tag "same speed" with a pen ring round the two equal readouts (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame.
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -203,6 +220,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **6,013 characters**, 16 scenes (Revision 1 stated 5,977, which included the 15 joins; its scene sum was 5,962). Characters per scene (1 to 16): 321, 367, 700, 393, 635, 368, 418, 559, 567, 137, 234, 347, 272, 338, 282, 75. At 13.3 characters per second the speech is about 452 s; add 3 s for the prediction countdown, about 3 s for the ledger and graph animations, about 3 s for the scene 6 dial sweep to settle, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 89 s of holds and countdowns; the notes hold is about 60 s in all): **about 541 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's retarding sentences (keep "if the field pushes against a charge, it loses q V"); scene 5's relativity sentence (keep the screen chip).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,013 characters). The notes scene is 45 s in all, so the estimate is about 526 s (it was about 541 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v02's final frame (`phys-y12-m6-v02.md`, "Final frame"): paper background; the plate stage (plates 5.0 cm long, 2.0 cm apart, top "+", bottom "−", blue field lines down) with the electron's curved path inside and a short straight continuation; readouts "in: 3.00 × 10⁷ m s⁻¹" and "out: 3.06 × 10⁷ m s⁻¹" with orange K bars, the exit bar slightly longer; heading "Why is a charged particle's path between plates like a projectile?"; chip "Next: how does a potential difference set a particle's speed?". Scene 1 pulses the K bars, then changes to the gun; the heading changes in scene 2.
@@ -221,6 +240,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m6-v03-learning-review.md`, `checks/p-y12-m6-v03-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (Revision 2, inspected 7 Nov; scaled uniformly only):
@@ -233,6 +254,8 @@ Need (new plates): none.
 Coded: plates, ladder lines, ledger bars, counters, graph, lanes, brackets, paths, the exam-style gun and the magnetic field region (scene 15), chips, cards, countdowns, notes board.
 
 Kit gaps: 3. **Potential ladder with energy ledger** (equipotential lines labelled in volts; particle moving between them; signed U and K bars sharing a zero line; ΔV readout with sign; eV counter). Extends `EnergyPotential` (`m6-potential-energy`). Shared with v06.
+
+Revision 3 (13 Nov 2026). The supply plate is also used on the attempt 1 card. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M6 v03)
 
@@ -250,6 +273,8 @@ Error-only check:
 7. Confirm no person, hand, face or body outline is drawn or requested.
 8. Confirm no em dash (U+2014), no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -296,3 +321,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none. `y12p-crt-tube-v1.png` stays requested and held (fallback for root, as v02).
 
 Counts: 5,977 stated (joined; 5,962 scene sum) to 6,013 characters (scene sum); about 535 s to about 541 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the ledger energies in scenes 2, 3, 8 and 9 are tied to the field motion engine; the voltage dial and the lanes stay lesson-coded arithmetic.
+- Question cards: attempt 1 gains the supply wired to an exam-style gun; both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,013 characters, unchanged; about 526 s (it was about 541 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The cathode ray tube plate (`y12p-crt-tube-v1.png`) is still held after brief 189, and its permitted fallback is a coded outline. That fallback is a coded drawing of a real object, so it is flagged for root rather than changed here.

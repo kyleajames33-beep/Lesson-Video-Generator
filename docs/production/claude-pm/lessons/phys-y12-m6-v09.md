@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V09: Magnetic flux. Why does changing loop orientation change magnetic flux? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,595 characters, 15 scenes, about 511 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
 
@@ -60,6 +60,19 @@ Entry knowledge: B in tesla; areas; resolving a vector; cos values.
 Stops after: flux, weber, normal, Φ = B∥A = BA cos θ, the flux-angle curve, the plane-angle trap, three ways to change flux. No linkage, no emf.
 Handoff: v10, what changes create an induced emf.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the loop in the field with the bench inset, scene 1 (about 33 s); (B) the rain panel, scene 2 (about 28 s); (C) the loop face on, then turned to 60° with its normal and components, scenes 3 and 4 (about 64 s); (D) the graph stage with the turning loop and live readouts, scene 5 (about 40 s); (E) the working layout, scene 6 (about 49 s); (F) the large side view for the angle trap, scene 7 (about 37 s); (G) the change board with three mini-stages, scene 8 (about 33 s); (H) the two loops and the memory card, scene 9 (about 8 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 64 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: flux through a turning loop is geometry. The turning loop, its arrow counter and the readouts "θ", "cos θ" and "Φ" in scene 5 are exact arithmetic (Φ = BA cos θ), lesson-coded, with the counter and the dot on the cosine curve computed from the same angle.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *Φ*, *B*, *A*, *θ*, *α*.
@@ -67,7 +80,7 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 ### 1. hook (turn the loop)
 > Here's a square loop of wire in a uniform magnetic field. When the loop faces the field square on, lots of field passes through it. Now turn the loop until it's edge on to the field. What happens to the amount of field passing through it? Make your **prediction**. It falls, all the way to **zero**. The field hasn't changed, and neither has the size of the loop. Only its direction has. So why does turning a loop change the field passing through **it**?
 
-Visual: opens on v08's final frame (see "Opening frame"); the "Next" chip becomes the heading: "Why does changing loop orientation change magnetic flux?"; the Faraday tag fades. On "faces the field square on" the loop turns to face the field (normal along B) and six arrows passing through its face brighten; a counter "through the loop: 6". On "prediction" a 3 s `Countdown` beside three chips "more", "less", "the same". On "zero" the loop turns smoothly to edge on; the counter falls 6, 5, 3 ... 0 and the arrows skim past its edge; the "less" chip ticks. On "it" the loop turns back to 60° and holds (counter 3), with a tag "same B, same loop". Anchor (Revision 2): from "Here's a square loop of wire" a framed inset at the top right (about 35% of the frame) shows the painted coil (`phys-y11-solenoid-coil-v1.png`), bar magnet (`phys-y11-bar-magnet-v1.png`, coded "N") and galvanometer (`y12p-galvanometer-v1.png` with its needle layer at zero) on a bench line, with a pen arrow from one turn of the coil to the coded loop and an ink hand tag "every turn is a loop like this"; the inset fades on "zero". Hand tags: slate "6 through" by the counter at the start, slate "0 through" at edge on, with a pen ring round the counter.
+Visual: opens on v08's final frame (see "Opening frame"); the "Next" chip becomes the heading: "Why does changing loop orientation change magnetic flux?"; the Faraday tag fades. On "faces the field square on" the loop turns to face the field (normal along B) and six arrows passing through its face brighten; a counter "through the loop: 6". On "prediction" a 3 s `Countdown` beside three chips "more", "less", "the same". On "zero" the loop turns smoothly to edge on; the counter falls 6, 5, 3 ... 0 and the arrows skim past its edge; the "less" chip ticks. On "it" the loop turns back to 60° and holds (counter 3), with a tag "same B, same loop". Anchor (Revision 2): from "Here's a square loop of wire" a framed inset at the top right (about 35% of the frame) shows the painted coil (`phys-y11-solenoid-coil-v1.png`), bar magnet (`phys-y11-bar-magnet-v1.png`, coded "N") and galvanometer (`y12p-galvanometer-v1.png` with its needle layer at zero) on a bench line, with a pen arrow from one turn of the coil to the coded loop and an ink hand tag "every turn is a loop like this"; the inset fades at the same cue. Hand tags: slate "6 through" by the counter at the start, slate "0 through" at edge on, with a pen ring round the counter.
 
 ### 2. a loop in the rain
 > Picture the same loop held out in steady rain that falls straight down. Hold it flat, facing the sky, and the most rain falls through it. Tilt it, and less gets through. Turn it on its edge, and none does, even though it's the same loop in the same **rain**. Magnetic field passes through a loop in the same way. What matters is how much of the loop's area faces the **field**.
@@ -134,7 +147,7 @@ Visual: card shrinks to the top; "plane of the loop makes an angle of 30°" unde
 
 Visual: board clears (camera change) to the bench: the coil plate (`phys-y11-solenoid-coil-v1.png`) at the centre, its leads (coded) running to the galvanometer (`y12p-galvanometer-v1.png` with its needle layer `y12p-galvanometer-needle-v1.png`, new, requested in v10) at the right, needle at zero; the bar magnet plate (`phys-y11-bar-magnet-v1.png`, coded "N" on the end facing the coil) at the left, still. On "changing flux" a small chip "changing Φ" with a slate up-down arrow. On "bring a magnet near it" a coded amber motion arrow "→" appears behind the magnet (no movement yet). On "move" a "?" beside the needle and a chip "Next: what changes create an induced emf?". Revision 2: the bench fills the frame (coil about 500 px wide, galvanometer about 320 px); ink hand tag "needle: still" with a pen ring round the zero (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -195,6 +208,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,595 characters**, 15 scenes; narration unchanged from Revision 1, whose stated 5,609 included the 14 joins. Characters per scene (1 to 15): 443, 369, 318, 537, 532, 657, 487, 440, 108, 338, 377, 283, 396, 235, 75. At 13.3 characters per second the speech is about 421 s; add about 2 s for the scene 5 readouts to settle at each stop; add about 3 s for the prediction countdown, 2 s for the turning loop in scene 1, 2 s for the sweep in scene 5, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns; the notes hold is about 60 s in all): **about 511 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 5's negative-flux sentences (open decision 1); scene 7's example sentence; scene 2's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,595 characters). The notes scene is 45 s in all, so the estimate is about 496 s (it was about 511 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v08's final frame (designed in this wave, `phys-y12-m6-v08.md`): paper background; evenly spaced slate field arrows pointing to the right, "B"; a square coded wire loop in perspective, tilted about a vertical axis by about 50° from facing the field, the arrows through it brightened; a navy arrow at right angles to its face; a small tag "Michael Faraday, 1831"; a large "?"; heading "Why do parallel currents attract or repel?"; chip "Next: why does changing loop orientation change magnetic flux?". Scene 1 turns the chip into the heading and turns the loop to face the field.
@@ -213,6 +228,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v09-learning-review.md`, `science_check` = `checks/p-y12-m6-v09-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -229,6 +246,8 @@ Kit gaps (for the v09 build brief):
 1. **Loop in a field.** A coded square loop rendered in perspective rotating about a vertical axis (the `engine3d` projection could serve), with the arrows passing through its face highlighted and counted, a rotating normal and the θ arc.
 2. **Rain panel.** Falling streaks, a tilting ring and a streak counter; a 90° panel rotation that turns the streaks into field arrows.
 3. **Change board.** Four mini-stages with flux counters (B rising, A stretching or sliding out, θ turning, sliding inside).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for flux and induction (the flux through a coil against time, and the emf from its rate of change, with a meter reading tied to it). One would serve this video and the seven that follow.
 
 ## Codex asset brief
 
@@ -248,6 +267,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 and 2 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -291,3 +312,26 @@ Visual upgrade (to `../maths-visual-standard.md`, the build gate and the audit's
 New plate requests: none.
 
 Counts: 5,609 stated (joined; 5,595 scene sum) to 5,595 characters (scene sum, narration unchanged); about 510 s to about 511 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the turning loop stays lesson-coded arithmetic (kit gap recorded).
+- Scene 1: a repeated cue is reworded (visual text only, for the checking script).
+- Question cards: both already carry diagrams and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for flux and induction (the flux through a coil against time, and the emf from its rate of change, with a meter reading tied to it). One would serve this video and the seven that follow.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,595 characters, unchanged; about 496 s (it was about 511 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

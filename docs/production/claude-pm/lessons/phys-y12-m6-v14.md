@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V14: Real transformer losses. Why are real transformers less efficient than the ideal model? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,841 characters, 16 scenes, about 513 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v13's final frame.
 
@@ -67,6 +67,21 @@ Entry knowledge: the ideal model (v13); Faraday's and Lenz's laws (v10, v11); th
 Stops after: efficiency, copper heating and thick wire, eddy currents and lamination, hysteresis and soft iron, flux leakage and the closed core, the judgement. No transmission.
 Handoff: v15, why stepping voltage up reduces transmission loss.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's schematic with the painted transformer and its two meters, scene 1 (about 31 s); (B) the efficiency board with large bars, scene 2 (about 30 s); (C) the windings close-up, scene 3 (about 58 s); (D) the core slice with eddy loops, scene 4 (about 35 s); (E) the lamination stage with the painted sheets and the sheet slider, scene 5 (about 37 s); (F) the magnified iron grain, scene 6 (about 24 s); (G) the schematic again for leaked flux, scene 7 (about 39 s); (H) the three-row table, then the memory card lifted from it, scenes 8 and 9 (about 39 s); (I) the schematic with the ideal card and the three bars, scene 10 (about 28 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 58 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio), and nothing models eddy currents or hysteresis. The sheet slider in scene 5 is the design's simple model (heating falls as 1/n²), lesson-coded and tagged "simple model" on screen. The power readouts are exact arithmetic.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Meters are plates; readouts are chips.** The two "coded meters" in scene 1 are painted multimeters (`phys-y11-digital-multimeter-v1.png`, about 200 px wide) with coded readouts in their display windows. The "thermometer tag" is a plain temperature readout chip, not a drawn thermometer.
+- **Small pictures in the table are diagrams.** The "icons" in scenes 8 and 9 are the small diagrams from scenes 3, 4 and 7 (a winding, an eddy loop in a core slice, a stray flux line), not drawings of objects.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *η*, *P_in*, *P_out*, *I*, *R*.
@@ -75,6 +90,8 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 > Here's our transformer from last time, twelve hundred turns to sixty, on two hundred and thirty volts. The ideal model said one hundred and fifteen watts in, and one hundred and fifteen watts out. Now try a real transformer, with the same supply and the same lamp. One hundred and fifteen watts go **in**. But only one hundred and four watts come **out**. And the transformer is **warm**. So where did eleven watts **go**?
 
 Visual: opens on v13's final frame (see "Opening frame"); the chip becomes the heading: "Why are real transformers less efficient than the ideal model?". On "Now try a real transformer" the painted plate `y12p-transformer-v1.png` (about 360 px tall, uniform scale) slides in at the left of the schematic with the same coded leads, navy hand tag "real transformer, same supply" (the real device is what is measured; it stays through scene 2). Two coded meters (readouts 52 px) sit on its input and output leads. On "watts go in" the input meter and the P_in bar read "115 W" (tag "example values"). On "watts come out" the output meter reads "104 W" and the P_out bar drops from "115 W (ideal)" to "104 W". On "warm" the warm tint on the windings and core of both the plate outline and the schematic strengthens and a coded thermometer tag reads "warm"; red hand tag "warm = lost energy". On "where did eleven watts go" a gap bar "11 W ?" opens between the two bars and an amber pen ring circles it.
+
+Upgrade (Revision 3): The two meters on the input and output leads are painted multimeters with coded readouts (52 px) in their display windows. The temperature is a readout chip beside the core.
 
 ### 2. efficiency, and three assumptions
 > We compare them with efficiency. Efficiency is the useful power out, divided by the power in. Here that's one hundred and four over one hundred and fifteen, about ninety per **cent**. Remember the three assumptions behind the ideal model. All the flux links both coils, the windings have no resistance, and no energy is lost in the core. A real transformer breaks each one, just a **little**. Let's find out how.
@@ -85,6 +102,8 @@ Visual: clear change to the efficiency board (a new set-up): the two amber bars 
 > Start with the windings. They're long coils of copper wire, and real wire has resistance. Whenever current flows through resistance, it heats it. From Year 11, the heating power is I squared **R**. Double the current, and the heating goes up four **times**. Here's the surprise. The secondary carries ten amps. Even with a resistance of only zero point zero five zero ohms, it loses five point zero **watts**. The primary has much more resistance, four point zero ohms, but carries only zero point five zero amps, so it loses just one point zero **watt**. Because the current is squared, here the high-current winding loses more, even with far less resistance. So designers give it thicker wire, with less **resistance**. Big transformers also use oil and cooling fins, to carry the heat **away**.
 
 Visual: camera push to the windings close-up (a new set-up): both windings of the schematic large, the ideal card small at the top right; card item 2 "no resistance in the windings" is crossed and re-labelled "copper (resistive) heating". On "it heats it" the windings glow faintly. On "I squared R" an equation strip (44 px) "P = I²R (heating in a resistance)". On "four times" a live current slider on the secondary (0.050 Ω) runs from 5.0 A to 10 A with readouts (52 px) "I = 5.0 A: I²R = 1.25 W" then "I = 10 A: I²R = 5.0 W"; rose hand tag "× 2 current → × 4 heat". On "watts" beside the secondary: "10² × 0.050 = 5.0 W" in a dark-ink frame (tag "example values"); the secondary winding glows more. On "watt" beside the primary: "0.50² × 4.0 = 1.0 W" in a dark-ink frame (orange). On "far less resistance" a chip "bigger R, so the primary loses more" fades in and is crossed in red (red hand tag "current counts twice"). On "resistance" the secondary winding redraws with thicker strands (same number of turns); tag "fix: thicker wire on the high-current side". On "away" small coded fins outline the core's sides and a tag "cooling: oil, fins (removes the heat)"; amber pen arrow from the fins outwards.
+
+Upgrade (Revision 3): No fins are drawn in code. The tag "cooling: oil, fins (removes the heat)" sits beside a small inset of the painted pole transformer (`y12p-pole-transformer-v1.png`, about 240 px tall).
 
 ### 4. currents inside the iron
 > Next, the core. Iron is a metal, so it conducts electricity. And the changing flux doesn't just pass through the windings, it runs through the iron itself. Picture a loop inside the iron, going round the flux. The flux through that loop is changing, so by Faraday's law, there's an emf around it. And because iron conducts, a current swirls round inside the core. These are called eddy **currents**. By Lenz's law they oppose the change, and they just heat the **iron**.
@@ -126,6 +145,8 @@ Visual: the schematic with the ideal card, all three items crossed with their fi
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "Transformer cores are made from thin sheets of soft iron that are insulated from each other. Explain how this laminated construction improves the efficiency of a transformer. (3 marks)" A small coded drawing of a solid core and a laminated core side by side, no current loops drawn. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the painted lamination sheets (`y12p-lamination-sheets-v1.png`, about 280 px tall) beside the painted soft-iron rod (`phys-y11-rod-soft-iron-v1.png`) tagged "solid" and "laminated", in place of the coded drawing. It is on screen from the first frame. No current loops are drawn. The memory card and the table are hidden.
+
 ### 12. feedback 1 (brief)
 > The changing flux induces eddy currents in the iron core, and those currents waste energy as **heat**. Thin insulated sheets confine each eddy current to a small loop with a high resistance, so the currents are much smaller, and much less energy is **wasted**. The classic slip is saying laminating increases the flux linkage. It doesn't. It cuts the eddy **currents**.
 
@@ -135,6 +156,8 @@ Visual: card shrinks to the top; a givens strip (36 px): "thin sheets", "insulat
 > Last one. A transformer draws two point zero amps from a two hundred and thirty volt supply. Its secondary delivers nineteen amps at twenty three volts. Calculate its efficiency, and identify one way the missing energy is lost. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A transformer draws a current of 2.0 A from a 230 V AC supply. Its secondary delivers 19 A at 23 V to a load. (a) Calculate the efficiency of the transformer. (b) Identify ONE way in which energy is lost in the transformer, and a design feature that reduces it. (3 marks)" A small coded transformer box with "in" and "out" leads, no values beside it. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's picture is the painted transformer (`y12p-transformer-v1.png`, about 280 px tall) with plain leads tagged "in" and "out", in place of the coded box. It is on screen from the first frame. No values, bars or meters are drawn beside it.
 
 ### 14. feedback 2 (brief)
 > Power in is two hundred and thirty times two point zero, four hundred and sixty watts. Power out is twenty three times nineteen, four hundred and thirty seven watts. So the efficiency is ninety five per **cent**. Twenty three watts are lost, for example as heat in the windings, reduced by thicker **wire**. The slip is dividing the wrong way round. An efficiency over one hundred per cent is always a **mistake**.
@@ -211,6 +234,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 5,760, a scene sum of 5,745): **5,841 characters**, 16 scenes. Characters per scene (1 to 16): 406, 404, 773, 462, 494, 323, 514, 351, 168, 376, 103, 357, 249, 402, 384, 75. At 13.3 characters per second the speech is about 439 s; add about 3 s for the scene 2 screen check, 2 s for the scene 3 current slider, 3 s for the scene 5 sheet slider, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 74 s of holds and countdowns): **about 513 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 6 (hysteresis; the review asks to keep it); scene 3's cooling sentence; scene 10's second sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,841 characters). The notes scene is 45 s in all, so the estimate is about 513 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v13's final frame (designed in this wave, `phys-y12-m6-v13.md`): paper background; the coded closed square soft-iron core with slate flux arrows; the primary winding (many turns) "N_p = 1200" on a "230 V ~" source with "I_p = 0.50 A"; the secondary winding (few turns) "N_s = 60" on a lit lamp, "11.5 V", "I_s = 10 A"; a faint warm tint over the windings and core; amber bars "P_in = 115 W" and "P_out = 115 W (ideal)" with a "?" on P_out; the ideal card ("all flux links both coils", "no resistance in the windings", "no energy lost in the core"), each marked "?"; heading "How does a transformer exchange voltage for current?"; chip "Next: why are real transformers less efficient than the ideal model?". Scene 1 turns the chip into the heading.
@@ -228,6 +253,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, efficiency, copper
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: transformer with losses (heat tints, leakage lines, power ledger with loss bar), core cross-section with eddy loops and lamination split, lamination zoom, magnetisation flip, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 clear change to the efficiency board; 2 to 3 camera push to the windings; 3 to 4 clear change to the core slice; 4 to 5 camera continue to the lamination stage (the plate joins); 5 to 6 clear change to the iron grain; 6 to 7 camera change back to the schematic; 7 to 8 clear change to the table; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: scene 2 screen check (3 s), scene 3 current slider (2 s), scene 5 sheet slider (3 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v14-learning-review.md`, `science_check` = `checks/p-y12-m6-v14-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -247,6 +274,8 @@ Coded: the schematic, heat tints, thermometer tag, power ledger and loss bar, co
 Kit gaps (for the v14 build brief):
 1. **Core cross-section with lamination split.** A slice with flux dots linked to an AC cursor, one large eddy loop that splits into n thin loops, and a heat tint whose strength follows 1/n².
 2. **Concentric windings cut-away.** The secondary wound over the primary on one limb, with leakage lines that shrink.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-digital-multimeter-v1.png` (scene 1), `y12p-pole-transformer-v1.png` (scene 3 inset), `y12p-lamination-sheets-v1.png` and `phys-y11-rod-soft-iron-v1.png` (attempt 1), `y12p-transformer-v1.png` (attempt 2). New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio). Eddy currents and hysteresis have no engine; the 1/n² slider is the design's simple model.
 
 ## Codex asset brief
 
@@ -269,6 +298,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: re-check the current-slider and sheet-slider readouts, the scoped MEPS tag (98.28 to 99.40%, oil-filled, 50% load) and that no learner copy ranks the high-current winding as worst in every transformer.
 11. Report site notes 1 to 3 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm `y12p-pole-transformer-v1.png` shows a cooling tank or fins; if it does not, drop the inset and keep the hand tag alone.
 
 ## YouTube metadata (draft)
 
@@ -315,3 +346,26 @@ New plate requests: none.
 Joins: the opening is v13's final frame (unchanged in v13 Revision 2). The final frame (scene 15) is unchanged, so the v15 join holds.
 
 Counts: 5,760 (joined; scene sum 5,745) to 5,841 characters (scene sum); about 517 s to about 513 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the sheet slider stays a tagged simple model.
+- Scene 1: coded meters become painted multimeters; the thermometer becomes a readout chip. Scene 3: coded fins become an inset of the painted pole transformer.
+- Question cards: both coded drawings become painted plates (lamination sheets and iron rod; the transformer); both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio). Eddy currents and hysteresis have no engine; the 1/n² slider is the design's simple model.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,841 characters, unchanged; about 513 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The iron rod stands in for "a solid core" on the attempt 1 card; root may prefer the sheets alone.

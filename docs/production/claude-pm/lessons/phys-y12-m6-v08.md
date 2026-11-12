@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V08: Forces between parallel wires. Why do parallel currents attract or repel? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,308 characters, 15 scenes, about 564 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v07's final frame.
 
@@ -64,6 +64,20 @@ Entry knowledge: v07's motor effect and palm rule; a current makes a circular fi
 Stops after: field of one wire, force on the other, F/l, direction rule, third-law pair, both ampere statements, the balance investigation. No three-wire sums.
 Handoff: v09, why changing loop orientation changes magnetic flux.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the bench with the two hanging strips, scene 1 (about 28 s); (B) the painted wire-through-card stand turning into the end-on field of one wire, scene 2 (about 44 s); (C) the second wire slides in: the push, scene 3 (about 41 s); (D) the full-width algebra with the three sliders, scene 4 (about 30 s); (E) the side-by-side comparison, scene 5 (about 28 s); (F) the working layout, scene 6 (about 49 s); (G) the two long wires and the ampere cards, scene 7 (about 60 s); (H) the balance stage, scene 8 (about 55 s); (I) the two pairs and the memory card, scene 9 (about 17 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Two circuits run on the circuits engine (`circuits.ts`, drawn with `CircuitView` over the painted parts). Scene 1: the battery, the knife switch and the two strips, wired so the currents run the same way (then reversed in one strip); the switch closes mid-run and the strips move only once the run's current flows. Scene 8: the supply, the two rods in series and the multimeter as an `ammeter`, so the meter shows the run's current while the balance reading changes. The scene 4 sliders are exact arithmetic (F/l = 2 × 10⁻⁷ I₁I₂/r) and stay lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Bench parts are plates.** The crossbar in scene 1 is the painted boss and crossbar (`phys-y11-boss-crossbar-v1.png`); the insulating blocks in scene 8 are two painted wooden blocks (`phys-y11-wooden-block-v1.png`, about 60 px). The foil strips stay plain light-grey lines: they are drawn as wires are, and they must bow as they move, which a plate cannot do without being stretched.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *F/l*, *μ₀*, *I₁*, *I₂*, *r*, *B*.
@@ -72,6 +86,8 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 > Two long wires hang side by side, a few centimetres apart, and both carry a current upwards. Each one sits in the other's magnetic field. So will they pull together, push apart, or do nothing at all? Make your **prediction**. They pull **together**. Now reverse one of the currents. This time they push **apart**. So why do parallel currents attract, and opposite currents **repel**?
 
 Visual: opens on v07's final frame (see "Opening frame"). The "Next" chip becomes the heading: "Why do parallel currents attract or repel?". Anchor (Revision 2): on "Two long wires hang" the two coded wires become two aluminium foil strips (coded, light grey) hanging from a coded crossbar between two painted retort stands (`phys-y11-retort-stand-v1.png`, uniform scale, about 620 px tall), with coded leads to the painted knife switch (`phys-y11-knife-switch-v1.png` with its blade layer) and the painted car battery (`phys-y11-car-battery-v1.png`, about 300 px wide) at the right, tag "short bursts only" (30 px). On "prediction" a 3 s `Countdown` beside three chips "pull together", "push apart", "nothing". On "together" the two wires bow towards each other at their middles (illustrative, author note a); the "pull together" chip ticks; two amber arrows point inwards. On "Now reverse one of the currents" the right wire's orange arrow flips to point down and the wires straighten. On "apart" they bow away from each other; amber arrows point outwards. On "repel" a tag under the wires: "same direction: attract; opposite: repel". Hand tags: orange "both up" by the first pair of current arrows; amber "pull in" and "push out" by the two bows, each with a pen arrow; a pen ring round the flipped current arrow.
+
+Upgrade (Revision 3): The strips hang from the painted boss and crossbar between the two painted stands, not from a coded bar.
 
 ### 2. the field of one wire
 > Start with one wire. Look at it end on, with its current coming out of the screen towards us. That's a dot. Its magnetic field makes circles around it. The right-hand grip rule from Year 11 gives the direction. Thumb along the current, and the fingers curl the way the field goes, anticlockwise **here**. The field gets weaker further out. Its strength is B equals mu nought I over two pi r, where r is the distance from the **wire**. Mu nought is a constant, about four pi times ten to the minus seven, that sets how strong a field a current makes. Double the distance, and the field **halves**.
@@ -108,6 +124,8 @@ Visual: board change: two long horizontal coded wires "1 m apart", each "1 A", s
 
 Visual: board change to the balance stage: the top-pan balance plate (`phys-y11-top-pan-balance-v1.png`) with a coded display layer; a copper rod (`phys-y11-rod-copper-v1.png`) on two small coded insulating blocks on the pan; a second copper rod above it held by a clamp on a retort stand (`phys-y11-retort-stand-v1.png`); coded leads to the low-voltage supply (`phys-y11-low-voltage-supply-v1.png`) through the digital multimeter as an ammeter (`phys-y11-digital-multimeter-v1.png`); a navy bracket "r: centre to centre" between the rods (Revision 2). On "the same current runs out along one and back along the other" orange arrows run right along the top rod and left along the bottom rod. On "rises" an amber arrow pushes down on the lower rod and the display ticks up. On "ten amps" the meter reads "10.0 A" and the display change reads "+0.10 g" (tag "illustrative data"). On "F equals m g" a strip "F = Δm g = 0.10 × 10⁻³ × 9.8 = 9.8 × 10⁻⁴ N; F/l = 9.8 × 10⁻⁴ / 0.50 = 1.96 × 10⁻³ N m⁻¹". On "fixed" chips "independent: I", "dependent: F/l", "controlled: r, l, alignment", and two method chips (Revision 2, brief 189): "lower rod's leads: at right angles, twisted together" and "control: remove the top rod; reading should not change". The balance display and ammeter are live readouts (52 px). On "Then plot" the stage shrinks left and a `DataGraph` "F/l (N m⁻¹)" against "I₁I₂/r (A² m⁻¹)" plots the five illustrative points (author note b). On "seven" a fitted line through the origin draws with "gradient ≈ 2.0 × 10⁻⁷ N A⁻² = μ₀/2π" (tick, framed), then a grey-ink chip "safety: short bursts of current (rods heat up); limits: finite rods, rods move (r changes), heating, forces on the leads". Hand tags: amber "pushed down: reading up" with a pen arrow from the lower rod to the display; ink "straight through 0" on the fitted line.
 
+Upgrade (Revision 3): The lower rod rests on two painted wooden blocks on the pan, not coded blocks. The multimeter's reading is the circuit run's current.
+
 ### 9. a way to remember
 > Here's a way to remember the direction. Like currents attract, unlike currents repel. That's the opposite of what you'd guess from magnets, where like poles repel. And whatever the currents, the two forces are always the same **size**.
 
@@ -138,7 +156,7 @@ Visual: card shrinks to the top; "Both currents are doubled" and "separation ...
 
 Visual: board clears (camera change). On "Michael Faraday" a small text tag "Michael Faraday, 1831" (no portrait). On "make a current" a square coded wire loop draws in perspective in a region of evenly spaced slate field arrows pointing to the right. On "passes through a loop of wire" the field arrows that pass through the loop brighten. On "facing" the loop tilts by about 50° about a vertical axis and fewer arrows brighten; a navy arrow at right angles to the loop's face appears briefly; a large "?" and a chip "Next: why does changing loop orientation change magnetic flux?". Revision 2: slate hand tag "fewer lines through?" with a pen ring round the brightened arrows (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -204,6 +222,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **6,308 characters**, 15 scenes; narration unchanged from Revision 1, whose stated 6,322 included the 14 joins. Characters per scene (1 to 15): 367, 584, 549, 403, 378, 654, 804, 729, 231, 348, 355, 226, 313, 292, 75. At 13.3 characters per second the speech is about 474 s; add about 2 s for the scene 2 probe and scene 4 slider sweeps to settle; add about 3 s for the prediction countdown, 2 s for the bowing wires, 2 s for the graph points, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns; the notes hold is about 60 s in all): **about 564 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 5's last sentence (the inset carries it); scene 7's μ₀ sentence (keep the chip); scene 9's magnet comparison. The safety point in scene 8 is on screen only (chip).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,308 characters). The notes scene is 45 s in all, so the estimate is about 549 s (it was about 564 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v07's final frame (designed in this wave, `phys-y12-m6-v07.md`): paper background; two long parallel vertical coded wires, each with a orange current arrow pointing up the screen, "I₁" (left) and "I₂" (right); faint slate circles around each wire reaching the other; a large "?" between them with two faint amber double-headed arrows; heading "Why does a current-carrying wire feel a magnetic force?"; chip "Next: why do parallel currents attract or repel?". Scene 1 turns the chip into the heading and removes the "?".
@@ -221,6 +241,8 @@ In order (kebab-case; 15 scene headings, all `### N.`): hook, one-wire-field, se
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: hanging pair, two-wire end-on stage, palm-rule axes (v07), ampere cards, current balance stage, `DataGraph`, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change to the wire-and-card plate, then a camera rise to end on (Revision 2); 2 to 3 clear change to the two-wire stage; 3 to 4 clear change to full-width algebra with the slider panel; 4 to 5 clear change to the side-by-side comparison; 5 to 6 clear change; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 clear change; 14 to 15 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v08-learning-review.md`, `science_check` = `checks/p-y12-m6-v08-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -240,6 +262,8 @@ Kit gaps (for the v08 build brief):
 1. **Two-wire end-on stage.** Extend `m6-parallel-wires` beyond its same-direction limit: either wire can be a dot or a cross; each wire's circles in its own slate; field and force arrows at each wire; force arrows always drawn equal.
 2. **Current balance stage.** Plate composition with a coded display, rod positions, current arrows and an r bracket; a `DataGraph` with illustrative points and a through-origin fit.
 
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-boss-crossbar-v1.png` (scene 1), `phys-y11-wooden-block-v1.png` (scene 8). New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine draws the magnetic field of a current (the circles round a wire) or the force between wires; both stay lesson-coded.
+
 ## Codex asset brief
 
 No new plates for v08. Confirm at build time that `phys-y11-top-pan-balance-v1.png`, `phys-y11-rod-copper-v1.png`, `phys-y11-retort-stand-v1.png`, `phys-y11-low-voltage-supply-v1.png` and `phys-y11-digital-multimeter-v1.png` compose at one consistent scale without stretching (the rods at about the width of the balance pan or a little wider), and report the balance display rectangle in plate pixels for the coded reading.
@@ -258,6 +282,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site note 1 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -304,3 +330,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none (all scene 1 and scene 2 plates exist and were inspected 7 Nov).
 
 Counts: 6,322 stated (joined; 6,308 scene sum) to 6,308 characters (scene sum, narration unchanged); about 563 s to about 564 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the hook circuit and the balance circuit are tied to the circuits engine; the sliders stay lesson-coded.
+- Scenes 1 and 8: the coded crossbar and insulating blocks become painted plates.
+- Question cards: both already carry diagrams and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine draws the magnetic field of a current (the circles round a wire) or the force between wires; both stay lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,308 characters, unchanged; about 549 s (it was about 564 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The aluminium foil strips stay coded lines (they must bow as they attract and repel); say if a pair of painted strip plates in three poses is wanted instead.

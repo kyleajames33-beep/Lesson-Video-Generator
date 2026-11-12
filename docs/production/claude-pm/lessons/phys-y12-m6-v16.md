@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V16: The split-ring DC motor. How does a split-ring motor keep turning? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,398 characters, 16 scenes, about 550 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v15's final frame.
 
@@ -72,6 +72,20 @@ Entry knowledge: motor effect (v07); area normal (v09); torque (Module 5 v09).
 Stops after: parts and functions, the force pair, τ = nIAB sin θ, edge on and face on, the worked example, the plane-angle trap, rocking without a commutator, current reversal every half turn, inertia, smoothing named. No back emf.
 Handoff: v17, why a spinning DC motor draws less current.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted motor beside the power pack, then the three-quarter schematic, scene 1 (about 38 s); (B) the painted motor filling the stage for its parts, scene 2 (about 34 s); (C) the end-on coil with its two forces, scene 3 (about 40 s); (D) the one-side derivation stage, scene 4 (about 37 s); (E) the end-on coil beside the live torque graph, scene 5 (about 38 s); (F) the working layout, scene 6 (about 53 s); (G) the end-on coil without a split ring, scene 7 (about 31 s); (H) the split view with the commutator close-up, scene 8 (about 41 s); (I) the smoothing view, scene 9 (about 31 s); (J) the memory card, scene 10 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 53 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits. The torque readouts and the scene 5 angle drag are exact arithmetic (τ = nIAB sin θ) and stay lesson-coded. The turning coil itself (it rocks and stops without the split ring in scene 7, and keeps turning with it in scene 8) is a lesson animation: no engine turns a body under a torque. The circuits engine can draw the supply, ammeter symbol and motor in the handoff, but its motor is a resistance only, so the needle that jumps high and then settles is not taken from it.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Schematics stay coded; apparatus is painted.** The end-on coil, the pole blocks, the field lines, the ring close-ups and the circuit symbols are exam-style schematics and stay coded. Every real piece of apparatus on a bench (motor, flywheel, meters, supply, pulley, masses, oscilloscope) is its painted plate.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *τ*, *n*, *I*, *A*, *B*, *θ*.
@@ -140,6 +154,8 @@ Visual: card shrinks to the top; a givens strip (36 px): navy "n = 120, 4.0 cm �
 > Last one. Explain the function of the split-ring commutator in a simple DC motor. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and diagram in one move (question text 36 px), worded as printed: "Explain the function of the split-ring commutator in a simple DC motor. (3 marks)" A small coded front view of a split ring and two brushes, unlabelled. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's picture is the commutator end of the painted motor (`y12p-dc-motor-model-v1.png`, cropped at uniform scale to the two half rings and the brushes, about 300 px wide), unlabelled, in place of the coded front view. It is on screen from the first frame. No current arrows are drawn. The memory card is hidden.
 
 ### 14. feedback 2 (brief)
 > Without it, the torque on the coil would reverse each time the coil passed face on, so it would rock and stop. The split ring turns with the coil, and every half turn, it swaps which half touches each brush. That reverses the current in the **coil**, so the forces reverse, and the torque keeps acting in the same direction, giving continuous rotation. The classic slip is saying it changes AC into DC. The supply is already **DC**.
@@ -214,6 +230,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,413, a scene sum of 6,398): **6,398 characters**, 16 scenes (narration unchanged in Revision 2). Characters per scene (1 to 16): 502, 452, 527, 486, 499, 703, 418, 541, 416, 162, 313, 385, 103, 424, 392, 75. At 13.3 characters per second the speech is about 481 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns): **about 550 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. The scene 5 angle drag rides the existing narration and adds no time. If the voiced take runs over 570 s, trim in this order: scene 9 to two sentences (open decision 2, about 20 s); scene 3's end-side sentence (about 8 s); scene 6's last two sentences, keeping the screen chip (about 8 s).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,398 characters). The notes scene is 45 s in all, so the estimate is about 550 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v15's final frame (designed in this wave, `phys-y12-m6-v15.md`): paper background; left to right: the power point plate with a tag "230 V"; a coded lead to the lab power pack plate with a small coded cut-away showing a closed-core transformer symbol and a tag "step-down, then DC out"; red and black coded leads from its terminals to the simple DC motor plate (`y12p-dc-motor-model-v1.png`); a coded amber curved arrow circulating round the motor's axle; a "?" over the split ring and brushes; heading "Why does stepping voltage up reduce transmission loss?"; chip "Next: how does a split-ring motor keep turning?". Scene 1 turns the chip into the heading, removes the "?" and the power point.
@@ -232,6 +250,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v16-learning-review.md`, `science_check` = `checks/p-y12-m6-v16-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -248,6 +268,8 @@ Kit gaps (for the v16 build brief):
 1. **End-on coil with the area-normal convention.** Change `m6-coil-torque`'s angle readout from the plane angle to θ between the area normal and B; add the normal, lever arms and a rotation model with inertia and light friction (rocking and settling face on without a commutator).
 2. **Commutator close-up linked to the coil angle.** Two half rings with gaps, two brushes, current arrows that reverse as the gaps pass the brushes, the coil's dot and cross swapping in step; an option for six segments and three coils.
 3. **Ammeter with a ghost needle** (final frame).
+
+Revision 3 (13 Nov 2026). The motor plate, cropped to its commutator end, is also used on the attempt 2 card. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine turns a body under a torque (a coil with inertia between poles), as recorded for the torque videos in Module 5; and the circuits engine's motor has no back emf.
 
 ## Codex asset brief
 
@@ -270,6 +292,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: re-check the angle-drag readouts and the crossed 360 N m slip.
 11. Report site notes 1 to 5 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the crop of `y12p-dc-motor-model-v1.png` shows both half rings, the gaps and both brushes clearly at 300 px; if not, keep the coded front view.
 
 ## YouTube metadata (draft)
 
@@ -314,3 +338,25 @@ New plate requests: none.
 Joins: the opening is v15's final frame (unchanged in v15 Revision 2). The final frame (scene 15) is unchanged, so v17's root-reconciled opening still matches.
 
 Counts: 6,413 (joined; scene sum 6,398) to 6,398 characters (scene sum); about 566 s to about 550 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the torque arithmetic and the turning coil stay lesson-coded (kit gaps recorded).
+- Question cards: attempt 2's coded split ring becomes a crop of the painted motor; attempt 1 keeps its end-on sketch; both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine turns a body under a torque (a coil with inertia between poles), as recorded for the torque videos in Module 5; and the circuits engine's motor has no back emf.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,398 characters, unchanged; about 550 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

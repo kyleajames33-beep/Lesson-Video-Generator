@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V20: Eddy currents and magnetic braking. How can a moving conductor be braked without contact? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,502 characters, 16 scenes, about 558 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v19's final frame. Last video of Module 6.
 
@@ -71,6 +71,20 @@ Entry knowledge: v19's flipped arrangement; the motor effect (v07); Faraday's la
 Stops after: eddy currents, the braking force, energy to heat, the tube, slots, no braking without motion, the coaster brake, the motor link. No Maxwell, cooktops or metal detectors.
 Handoff: Module 7 v01, how Maxwell connected electricity and magnetism to light.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted copper pendulum swinging into the field, scene 1 (about 31 s); (B) the push to the plate at the field's edge: the currents, then the forces, scenes 2 and 3 (about 70 s; the force arrows arrive at about 39 s); (C) the energy stage with large bars, scene 4 (about 37 s); (D) the tube stage, scene 5 (about 44 s); (E) the pendulum stage with the slotted plate beside the solid one, scene 6 (about 36 s); (F) the braking force against speed graph, scene 7 (about 37 s); (G) the coaster stage, scene 8 (about 38 s); (H) the motor and brake mirror, scene 9 (about 36 s); (I) the three pendulum frames and the memory card, scene 10 (about 8 s); question and feedback cards; the handoff that closes the module; the notes board. No set-up runs past about 70 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits: nothing models eddy currents, and the field motion engine cannot hold a body on a pivot. The pendulum's decaying swing, the magnet's slow fall in the tube and the coaster pass in scene 8 are lesson-coded from the design's stated values; in scene 8 "K" and "heat in the fins" are computed together so their sum stays fixed. The force against speed curve in scene 7 is tagged "illustrative".
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Stands and clamps are plates.** Each stand that holds the pendulum, a tube or a magnet is the painted retort stand with its boss and crossbar (`phys-y11-retort-stand-v1.png`, `phys-y11-boss-crossbar-v1.png`). A release is shown by a plain ledge line sliding out from under the magnet or plate; no clamp jaws are drawn. The copper sheet in scene 7 is the painted metal plate (`phys-y11-metal-plate-v1.png`). The plastic tube stays coded (root decision 15), and tracks and field regions stay plain outlines.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -79,6 +93,8 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 > Here's the copper plate, swinging into the field. With the magnet in place, the plate stops within a few **swings**. Take the magnet away, and the same plate swings on and **on**. But copper isn't magnetic. Hold a magnet still against a copper plate, and there's no pull at **all**. So what's slowing it? Make your **prediction**. Is copper weakly attracted to the magnet, or are currents induced in the copper? It's induced **currents**.
 
 Visual: opens on v19's final frame (see "Opening frame"; the painted solid copper pendulum `y12p-copper-pendulum-v1.png` at least 400 px tall on its coded pivot); the chip becomes the heading: "How can a moving conductor be braked without contact?". On "swinging into the field" the plate swings through the field region of crosses. On "swings" its swing shrinks quickly and it stops within about three swings (illustrative, author note b); a live counter (52 px) "swings: 1, 2, 3"; amber hand tag "stops fast". On "away" the field region fades out (tag "magnet removed"); the plate is pulled back by a coded release clamp and let go. On "on" it keeps swinging with a slowly shrinking amplitude; the counter runs on (amber hand tag "swings on"). On "Hold a magnet still" an inset (about 350 px): the neodymium magnet plate (`y12p-neodymium-magnet-v1.png`) resting beside a copper plate edge, no arrows. On "no pull at all" tag "at rest: no force" with a slate pen ring round the resting pair. On "prediction" a 3 s `Countdown` beside two chips: "copper is weakly attracted" and "currents are induced in the copper". On "currents" the second chip ticks and the first is crossed in red (caption "a still magnet: no pull").
+
+Upgrade (Revision 3): The pendulum hangs from the painted boss and crossbar on a painted retort stand. Where the plate is "pulled back by a release clamp", a plain ledge line holds it back and slides away; no clamp is drawn.
 
 ### 2. currents inside solid metal
 > The plate has no wires, but it's full of closed paths. Picture any loop drawn inside the copper. Where the copper is moving into the field, the flux through loops there is **increasing**. That induces an emf, and because copper conducts, a current swirls round inside the metal. A current induced in a loop inside a solid piece of metal is called an eddy current, like a swirl in a stream. Where the copper is moving out of the field, the flux through loops there is decreasing, so the eddy current swirls the other **way**.
@@ -100,6 +116,8 @@ Visual: clear change to the energy stage (a new set-up): the pendulum swinging a
 
 Visual: board change to the tube stage (a new set-up): the copper tube plate (`y12p-copper-tube-v1.png`, at least 500 px tall) and a coded plastic tube (translucent pale grey outline, same size; root decision 15) upright side by side, the neodymium magnet held above each by a coded clamp. On "Drop a strong magnet" the clamps open; in the copper tube the magnet (shown in a coded cut-away window, author note c) drifts down. On "repels" a rose eddy ring in the tube wall below the magnet, an amber upward arrow on the magnet; on "attracts" a rose ring above it circulating the other way, a second amber upward arrow; rose hand tag "push below, pull above". On "up" both arrows pulse. On "equals its weight" a grey downward arrow "weight" and the two upward arrows sum to the same length; tag "terminal speed: steady". On "plastic tube" the second magnet drops straight through the plastic tube; on "quarter of a second" a timer beside it (52 px) "≈ 0.25 s (free fall, 30 cm)" and working (44 px) "t = √(2s/g) = √(2 × 0.30 / 9.8) = 0.25 s" in a dark-ink frame; beside the copper tube a timer tag "a few seconds (depends on magnet and tube)". On "energy" small bars beside the copper tube: "gravitational" (grey) falling, "heat" (red) rising, "kinetic" (amber) small and constant; amber pen ring round the constant kinetic bar.
 
+Upgrade (Revision 3): Each magnet rests on a plain ledge line on the painted boss above its tube, and the ledge slides out to drop it; no clamp jaws are drawn. Both stands are painted.
+
 ### 6. cut the paths
 > Now cut slots into the plate, like the teeth of a comb. The slots break the big loops into small ones. A small loop encloses less changing flux, so it has a smaller emf, and its narrow path has more resistance. So the currents are much smaller, the braking force drops, and the slotted plate swings much **longer**. A long slot down a copper tube does the same, and the magnet falls much **faster**. Small eddy currents still flow, though. It's the same idea as laminated transformer cores.
 
@@ -109,6 +127,8 @@ Visual: clear change back to the pendulum stage (a new set-up from scene 5): the
 > Here's an important limit. Braking needs motion. The force comes from a changing flux, so the slower the conductor moves, the weaker the **force**. As a train slows down, its magnetic brake fades, and it can't hold the train still. A friction brake has to finish the stop, and hold **it**. For the same reason, a magnet can't float at rest over a still copper sheet. With nothing moving, the flux doesn't change, and there's no force at **all**. Magnetic braking resists motion. It can't make things **levitate**.
 
 Visual: board change to a coded graph (no scale, about 700 px wide): x "speed", y "braking force", a curve rising from the origin (labelled "illustrative"), a dot sliding down it to zero. On "force" the dot reaches the origin; tag "no motion → no flux change → no force"; red pen ring round the origin. On "train slows down" a grey chip row: "magnetic brake: fades as v → 0"; on "hold it" a second chip "friction brake: finishes the stop and holds". On "float at rest" the neodymium magnet plate above a copper sheet (a coded copper rectangle), dropped by a coded clamp: it falls and rests on the sheet; no arrows. On "all" tag "still: Φ steady, no eddy currents, no force". On "levitate" a framed chip "braking ≠ levitation at rest", and a chip "a magnet floats over still copper" crossed in red.
+
+Upgrade (Revision 3): The copper sheet is the painted metal plate (`phys-y11-metal-plate-v1.png`, about 420 px wide), not a coded rectangle. The magnet is released by the same plain ledge.
 
 ### 8. roller-coaster brakes
 > Roller coasters use magnetic brakes for slowing down. Copper fins under the car pass between rows of strong magnets. Picture a three tonne car arriving at twenty metres per second. Slowing it to five metres per second takes away about **five point six times ten to the five joules** of kinetic energy, and all of it becomes heat in the **fins**. In the usual range of speeds, faster fins mean stronger braking, so the brake works hardest at the start, and the stop feels smooth. With no contact, nothing **wears out**.
@@ -130,6 +150,8 @@ Visual: board clears to three small pendulum frames (about 300 px each): at rest
 
 Visual: `QuestionCard` (subject "Physics") arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A roller-coaster car is slowed by a magnetic brake: copper fins attached to the car pass between rows of strong permanent magnets fixed beside the track. (a) Explain, with reference to Lenz's law, how the brake slows the car. (b) Apply the law of conservation of energy to the braking process. (4 marks)" A small coded diagram: a car outline (no figures) with a fin entering a pair of magnet blocks. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is the painted coaster car (`y12p-coaster-car-v1.png`, empty seats, about 420 px wide) with its fin just short of the painted brake rail (`y12p-coaster-brake-rail-v1.png`), in place of the coded outline. It is on screen from the first frame. No currents, force arrows or energy bars are drawn. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > As the fins move through the field, the flux through loops in the copper changes, inducing eddy currents. By Lenz's law, they oppose the motion. The currents sit in the field, so they feel a force against the car's **motion**. The car's kinetic energy becomes electrical energy in the eddy currents, then heat in the fins, through their **resistance**. The classic slip is saying the magnets attract the copper. Copper isn't magnetic. It's the induced currents that are **pushed**.
 
@@ -139,6 +161,8 @@ Visual: card shrinks to the top; a givens strip (36 px): "copper fins", "moving 
 > Last one. A magnet is dropped down a vertical copper tube. An identical magnet is dropped down an identical tube with a narrow slot cut along its whole length. Compare the motion of the two magnets, and explain the difference. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and diagram in one move (question text 36 px), worded as printed: "A strong magnet is dropped down a vertical copper tube. An identical magnet is dropped down an identical copper tube that has a narrow slot cut along its full length. Compare the motion of the two magnets and explain the difference. (3 marks)" A small coded diagram: two upright tubes, the second with a vertical slot line, a magnet above each. The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's picture is the two painted tubes (`y12p-copper-tube-v1.png` and `y12p-copper-tube-slotted-v1.png`, about 320 px tall) with a painted magnet (`y12p-neodymium-magnet-v1.png`) above each, in place of the coded diagram. It is on screen from the first frame. Both magnets are still; no timers and no eddy rings are drawn.
 
 ### 14. feedback 2 (brief)
 > In the solid tube, large eddy currents circle the tube, opposing the fall, so the magnet falls slowly, at a steady **speed**. The slot cuts those circular paths, so only small eddy currents flow. The opposing force is much smaller, and that magnet falls much **faster**, close to free fall. The slip is saying the slot stops all eddy currents. Small ones still **flow**.
@@ -213,6 +237,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,389, a scene sum of 6,374): **6,502 characters**, 16 scenes. Characters per scene (1 to 16): 418, 516, 416, 497, 585, 482, 497, 506, 480, 108, 264, 469, 248, 358, 583, 75. At 13.3 characters per second the speech is about 489 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns): **about 558 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's regenerative-braking sentences (open decision 3); scene 6's last sentence; scene 5's energy sentence (keep the bars).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,502 characters). The notes scene is 45 s in all, so the estimate is about 558 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v19's final frame (designed in this wave, `phys-y12-m6-v19.md`): paper background; a small recap at the upper left (stator ring, rotor, amber "dragged along" arrow); at the centre a square field region of slate crosses ("B into the screen"); the copper pendulum plate hanging from a coded pivot, its leading edge just inside the field region, an amber outline motion arrow pointing into the region; a faint rose loop on the plate's leading edge; a dashed amber "F = ?" arrow on the plate pointing against the motion; a navy bracket "no contact"; a "?"; heading "Why must an induction-motor rotor lag the rotating field?"; chip "Next: how can a moving conductor be braked without contact?". Scene 1 turns the chip into the heading, fades the recap and lets the plate swing.
@@ -230,6 +256,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, eddy-currents, pus
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: pendulum stage (decay, magnet toggle, plate swap), eddy overlay, tube stage, energy bars, force-speed chip graph, coaster stage, motor-brake mirror, curling E field, `AlignedAlgebra`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`, Revision 2): 1 to 2 camera push to the plate close-up; 2 to 3 camera continue; 3 to 4 clear change to the energy stage; 4 to 5 clear change (tubes); 5 to 6 clear change (pendulum, with a tube inset); 6 to 7 clear change; 7 to 8 camera change (coaster); 8 to 9 clear change; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 clear change; 15 to 16 fade to the notes board.
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). The scene 8 coaster pass rides the narration. Review evidence paths: `learning_review` = `checks/p-y12-m6-v20-learning-review.md`, `science_check` = `checks/p-y12-m6-v20-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -249,6 +277,8 @@ Kit gaps (for the v20 build brief):
 1. **Pendulum stage with eddy overlay.** A plate swinging on a pivot with a damping parameter; swirls generated at the region's entry and exit boundaries with the senses in author note a; force arrows on the in-field segments; a solid or slotted plate mask that limits swirl size.
 2. **Tube stage.** Upright tube plates with a coded cut-away window, a falling magnet with a terminal-speed profile (illustrative), eddy rings above and below with opposite senses, force arrows and timers.
 3. **Curling E field.** Blue circular arrows inside a ring around a changing B, with current dots following.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-retort-stand-v1.png`, `phys-y11-boss-crossbar-v1.png` (scenes 1 and 5), `phys-y11-metal-plate-v1.png` (scene 7). The coaster car, brake rail, tubes and magnet are also used on the attempt cards. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for eddy currents or a damped swing on a pivot; all braking motion is lesson-coded from the design's values.
 
 ## Codex asset brief (Year 12 Physics M6 v20: eddy-current apparatus and coaster brake)
 
@@ -282,6 +312,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: confirm the scene 4 energy bars show total mechanical energy stepping down (kinetic and gravitational trading places within a swing); re-check the coaster live readouts and the crossed 3.4 × 10⁵ J slip; confirm the force-speed graph and coaster speed curve carry "illustrative".
 11. Log the four site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm `phys-y11-metal-plate-v1.png` reads as a copper or plain metal sheet at 420 px; if it reads as something else, keep it but tag it "copper sheet".
 
 ## YouTube metadata (draft)
 
@@ -328,3 +360,26 @@ New plate requests: none.
 Joins: the opening is v19's final frame (unchanged in v19 Revision 2). The final frame (scene 15) is unchanged and still matches `phys-y12-m7-v01.md`'s "Opening frame" (copper ring end-on, "B changing", blue curling E, crossed "battery" and "wires", "changing E → B?", the Maxwell chip), re-read on 7 Nov.
 
 Counts: 6,389 (joined; scene sum 6,374) to 6,502 characters (scene sum); about 564 s to about 558 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the braking motion stays lesson-coded with linked readouts.
+- Scenes 1, 5 and 7: coded clamps become painted stands with a plain release ledge; the coded copper sheet becomes the painted metal plate.
+- Question cards: both coded diagrams become painted plates (coaster car and brake rail; the two tubes and magnets); both feedback scenes already carried givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine for eddy currents or a damped swing on a pivot; all braking motion is lesson-coded from the design's values.
+
+Joins: the opening frame and the final frame (the end of Module 6) are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,502 characters, unchanged; about 558 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

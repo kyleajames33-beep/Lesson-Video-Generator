@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V04: Magnetic force on a moving charge. When does a magnetic field exert a force on a moving charge? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,641 characters, 17 scenes, about 516 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -61,6 +61,20 @@ Main question: *A magnetic field bends our electron beam. But put a proton in th
 Entry knowledge: Year 11 magnetic fields; v01, v03.
 Stops after: zero force at rest or along B; F = qvB sin θ; direction perpendicular to v and B by the palm rule; sign reversal. No zero work, no circle.
 Handoff: v05, why a perpendicular magnetic field bends a path without increasing speed.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the tilt to the painted magnet and the 3D field box, scenes 1 and 2 (about 50 s); (B) the single arrow seen end-on: dots and crosses, scene 3 (about 31 s); (C) the 3D box with the velocity components, scene 4 (about 34 s); (D) the flat cross grid with the axis triad: direction, then negative charges, scenes 5 and 6 (about 54 s); (E) the calculation layout, scene 7 (about 36 s); (F) the live angle dial with its sine graph, scene 8 (about 26 s); (G) the Sun and Earth for the aurora, scene 9 (about 44 s); (H) the flat grid with the turning path, scene 10 (about 19 s); (I) the memory card, scene 11 (about 15 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 54 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The turning path in scene 10 and in the handoff is a `magnetic` run on the field motion engine (`field-motion.ts`, drawn with `FieldMotionView`: field crosses, trail, velocity and acceleration arrows), so the force arrow stays at right angles to the velocity because the run says so. The scene 8 angle dial is exact arithmetic (F = qvB sin θ) and stays lesson-coded, as do the 3D field box and its component arrows.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The aurora scene is a schematic.** Scene 9's field lines, particle dots, atmosphere band and glow band are a labelled diagram round the painted Sun and Earth, tagged "not to scale". No plate of an aurora is requested.
 
 ## Script and shots
 
@@ -146,7 +160,7 @@ Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revis
 
 Visual: clear change to the flat cross grid (tag "B into page"). A proton "(+)" moving right with a teal "v" arrow and an amber "F" arrow pointing up, a right-angle mark between them; a dashed grey continuation of its path curving upwards and to the left with "?" at its end; a speed readout "v = ?" beside it. On "speed" a chip writes: "Next: why does a perpendicular magnetic field bend a path without increasing speed?". Revision 2: amber hand tag "always sideways" with a pen ring round the right-angle mark (it fades before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame.
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -205,6 +219,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,641 characters**, 17 scenes (Revision 1 stated 5,568, which included the 16 joins; its scene sum was 5,552). Characters per scene (1 to 17): 297, 373, 408, 452, 367, 347, 474, 341, 588, 259, 197, 237, 362, 242, 314, 308, 75. At 13.3 characters per second the speech is about 424 s; add 3 s for the prediction countdown, about 4 s for the 3D rotations, about 2 s for the aurora stream, about 3 s for the scene 8 dial sweeps to settle, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 92 s of holds and countdowns; the notes hold is about 60 s in all): **about 516 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's electric-field contrast sentence; scene 8's sixty-degree sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,641 characters). The notes scene is 45 s in all, so the estimate is about 501 s (it was about 516 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v03's final frame (`phys-y12-m6-v03.md`, "Final frame"): paper background; at the left a coded exam-style electron gun (cathode "0 V", anode "+5000 V"); a teal beam enters a square region of slate crosses (tag "B into page") and curves downwards along an arc; readouts "entering: 4.19 × 10⁷ m s⁻¹" and "inside: 4.19 × 10⁷ m s⁻¹" with an unchanged orange K bar; heading "How does a potential difference set a particle's speed?"; chip "Next: when does a magnetic field exert a force on a moving charge?". Scene 1 rotates the camera to the 3D view; the heading changes in scene 2.
@@ -223,6 +239,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m6-v04-learning-review.md`, `checks/p-y12-m6-v04-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov; scaled uniformly only): `public/assets/physics/phys-y11-earth-v1.png` and `public/assets/physics/phys-y11-sun-v1.png` (both 1254 × 1254 RGBA): scene 9.
@@ -233,6 +251,8 @@ Need (new plates): none.
 Coded: the gun (from v03), 3D field box, field arrows, dot and cross grids, particles, vectors, θ arcs, components, axis triad, sin graph, chips, cards, countdowns, notes board.
 
 Kit gaps: 4. **3D field box** (oblique box of parallel B arrows; particle at rest or moving in any direction; camera rotation to face the page turning arrows into crosses or dots; v resolved into v∥ and v⊥ with a live θ arc; F arrow scaled by qvB sin θ). The **axis triad** is part of this gap. Shared with v05 (scene 7 comparison) and v07 if root wishes.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the field motion engine is two-dimensional, so the spiral of a charge along a field line (scene 9) and the oblique 3D field box are lesson-coded.
 
 ## Codex asset brief (Year 12 Physics M6 v04)
 
@@ -250,6 +270,8 @@ Error-only check:
 7. Confirm no person, hand, face or body outline is drawn or requested (the palm rule must be words and the axis triad only).
 8. Confirm no em dash (U+2014), no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +316,25 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,568 stated (joined; 5,552 scene sum) to 5,641 characters (scene sum); about 508 s to about 516 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the turning path is tied to the field motion engine; the angle dial and the 3D box stay lesson-coded (kit gap recorded).
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips; nothing added.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: the field motion engine is two-dimensional, so the spiral of a charge along a field line (scene 9) and the oblique 3D field box are lesson-coded.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,641 characters, unchanged; about 501 s (it was about 516 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) The aurora in scene 9 stays a schematic with a "not to scale" tag; say if a painted aurora panel is wanted.

@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V13: Ideal transformers. How does a transformer exchange voltage for current? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 190 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,349 characters, 16 scenes, about 552 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v12's final frame.
 
@@ -66,6 +66,20 @@ Entry knowledge: mutual induction and the closed core (v12); Faraday's law (v10)
 Stops after: volts per turn, the voltage ratio, step-up and step-down, power in equals power out, the inverse current ratio, the load setting the current, the worked example. No losses.
 Handoff: v14, why real transformers are less efficient than the ideal model.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's schematic with the painted transformer beside it, scene 1 (about 42 s); (B) the push into the windings, turn by turn, scene 2 (about 60 s); (C) the real-world stage with plates, scene 3 (about 40 s); (D) the power ledger with two large bars, scenes 4 and 5 (about 45 s); (E) the full-width algebra with the turns slider, scene 6 (about 44 s); (F) the load stage with the open secondary, scene 7 (about 39 s); (G) the working layout: the voltage, then current and power, scenes 8 and 9 (about 73 s); (H) the two schematics and the memory card, scene 10 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 73 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits yet: the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio). The turns slider in scene 6 and the load switch in scene 7 are exact arithmetic on V_p/V_s = N_p/N_s and V_pI_p = V_sI_s and stay lesson-coded, with every readout computed from the slider. The alternating flux trace is a lesson curve drawn with `SeriesGraph`.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **No balance picture.** The "balance icon" in scenes 1 and 6 is not drawn as a pair of scales. It is a trade strip: two linked readout chips, "V" with an up arrow and "I" with a down arrow, over a fixed chip "P fixed", with the hand tag "trade, not a gift".
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *V_p*, *V_s*, *N_p*, *N_s*, *I_p*, *I_s*.
@@ -74,6 +88,8 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 > Last time we wound two coils on one closed iron core. Let's put numbers on it. The primary has one hundred turns, and it's connected to ten volts AC. The secondary has two hundred turns, twice as many. Will the secondary's voltage be bigger, smaller, or the same? Make your **prediction**. It's twenty volts, twice as big. So does the transformer give us something for free? Connect a lamp, and it draws half an amp. Now look at the primary. It draws one whole **amp**. Twice the voltage, half the current. So how does a transformer exchange voltage for **current**?
 
 Visual: opens on v12's final frame (see "Opening frame"); the chip becomes the heading: "How does a transformer exchange voltage for current?". On "Let's put numbers on it" the painted demonstration transformer (`y12p-transformer-v1.png`, about 420 px tall, uniform scale) slides in at the left of the schematic; hand tags point at its windings: orange "few turns" and rose "many turns", with a navy tag "the real thing". On "one hundred turns" the label "N_p" becomes "N_p = 100"; on "ten volts AC" "V_p ?" becomes "V_p = 10 V"; on "two hundred turns" "N_s" becomes "N_s = 200" with a rose hand tag "× 2 turns". On "prediction" a 3 s `Countdown` beside chips "bigger", "smaller", "the same". On "twenty volts" "V_s ?" becomes "V_s = 20 V" and the "bigger" chip ticks. On "half an amp" the lamp lights, rose dots run in the secondary circuit and "I_s ?" becomes "I_s = 0.50 A". On "amp" orange dots in the primary leads speed up, "I_p ?" becomes "I_p = 1.0 A" and an orange pen ring circles it. On "half the current" the two pairs pulse: "V: × 2" and "I: ÷ 2" tags. On "current" a small balance icon tag "trade, not a gift". Values are readouts at 52 px. Labels used: "N_p", "N_s", "V_p", "V_s", "I_p", "I_s" (data-sheet symbols).
+
+Upgrade (Revision 3): The "balance icon" is the trade strip described in "Visual upgrade": two linked chips with opposed arrows and the hand tag "trade, not a gift". No scales are drawn.
 
 ### 2. same flux, same volts per turn
 > Start with the voltages. In an ideal transformer, all the flux goes round the core, so it passes through every turn of both coils. Every turn sees the same changing flux, so by Faraday's law, every turn gets the same emf, delta phi over delta t. Think of it as the volts per **turn**. The secondary's voltage is its number of turns, times the volts per **turn**. The primary works the same way. The changing flux passes through its turns too, and in an ideal coil with no resistance, the emf in those turns matches the supply **voltage**. So both voltages are turns times the same volts per turn. Divide one by the other, and the flux change **cancels**. V p over V s equals N p over N **s**. With our numbers, ten volts over one hundred turns is a tenth of a volt per turn, so two hundred turns give twenty **volts**.
@@ -99,6 +115,8 @@ Visual: the power ledger stays. On "power is voltage times current" a small chip
 > Now put the two rules together. The voltage goes up by the turns ratio, and the power stays the same. So the current has to go down by the same **ratio**. In symbols, I p over I s equals N s over N p. The turns are **flipped**. Try it live, with a load that takes ten watts. Give the secondary fifty, one hundred, two hundred, then four hundred turns. The voltage climbs, the current falls, and their product stays at ten **watts**. A step-up transformer steps the current down, and a step-down transformer steps the current **up**. It can't raise both. That's the exchange, voltage for **current**.
 
 Visual: clear change to full-width algebra (a new set-up): the two framed rules sit side by side at the top (44 px): "V_p/V_s = N_p/N_s" and "V_pI_p = V_sI_s". On "ratio" `AlignedAlgebra` (current line 52 px): "I_p/I_s = V_s/V_p = N_s/N_p", the result in a dark-ink frame (60 px). On "flipped" the N_s and N_p in the last fraction swap places with a navy arc arrow (hand tag "flipped"). On "Try it live" the algebra shrinks to a top strip and the slider stage builds (a new set-up): the transformer schematic centre-left with N_p = 100 and "V_p = 10 V" fixed, a load box "load takes 10 W" on the secondary, and a navy slider "N_s" under the secondary winding. On "fifty, one hundred, two hundred, then four hundred turns" the slider steps 50, 100, 200, 400 (about 1 s each, a 3 s hold in all); the drawn secondary turns grow and the live readouts (52 px) update together: "V_s" 5.0, 10, 20, 40 V (rose); "I_s" 2.0, 1.0, 0.50, 0.25 A (rose dots slow at each step); "V_s × I_s" 10 W each time (amber); "I_p" 1.0 A throughout (orange, tag "10 W ÷ 10 V"). On "watts" the P_in and P_out bars beside the readouts stay level at 10 W; amber hand tag "product fixed". On "steps the current up" a two-row table (36 px): "step-up: V up, I down"; "step-down: V down, I up". On "current" the balance icon from scene 1 tips: one pan "V", the other "I", with "P fixed" on the beam.
+
+Upgrade (Revision 3): The balance that "tips" is the same trade strip: as the slider moves, the "V" chip's arrow grows upward while the "I" chip's arrow grows downward, and "P fixed" does not change.
 
 ### 7. the load decides the current
 > So who decides how big the currents are? The load does, the thing the secondary is supplying. With nothing connected, no current flows in the secondary, and an ideal primary draws almost no current, because the emf in its own turns balances the **supply**. Now connect the lamp. Current flows in the secondary, and by Lenz's law, its field opposes the changing **flux**. To keep the flux changing as the supply demands, the primary draws extra **current**. A bigger load draws more current from the secondary, so the primary draws **more**.
@@ -214,6 +232,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,041, a scene sum of 6,026): **6,349 characters**, 16 scenes. Characters per scene (1 to 16): 554, 794, 537, 220, 370, 579, 524, 484, 493, 154, 319, 407, 200, 333, 306, 75. At 13.3 characters per second the speech is about 477 s; add about 3 s for the prediction countdown, 3 s for the scene 3 screen check, 3 s for the scene 6 slider sweep, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 75 s of holds and countdowns): **about 552 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's last sentence (second lamp; keep the readouts silent); scene 3's power-station sentence; scene 9's check with the turns ratio.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,349 characters). The notes scene is 45 s in all, so the estimate is about 552 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v12's final frame (designed in this wave, `phys-y12-m6-v12.md`): paper background; a coded HSC-style closed square soft-iron core (grey), the primary winding on its left limb with fewer drawn turns, labelled "N_p", joined to a coded AC source "~"; the secondary winding on its right limb with more drawn turns, "N_s", joined to a coded lamp; slate flux arrows circulating round the core; labels "V_p ?", "V_s ?", "I_p ?", "I_s ?"; heading "How can one coil induce an emf in another without touching it?"; chip "Next: how does a transformer exchange voltage for current?". No values. Scene 1 turns the chip into the heading; the drawn turns are already in the ratio 1 : 2 (v12 builds them so; build note).
@@ -232,6 +252,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), scene 3 screen check (3 s), scene 6 slider sweep (3 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v13-learning-review.md`, `science_check` = `checks/p-y12-m6-v13-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -248,6 +270,8 @@ Coded: the closed-core schematic with drawn windings, flux arrows, per-turn emf 
 Kit gaps (for the v13 build brief):
 1. **Closed-core transformer.** Extend v12's schematic: per-turn tags that copy along a winding and sum, drawn turns in a set ratio, current dots with speeds from I_p and I_s, a load switch and second lamp, an opposing field arrow inside the core.
 2. **Power bars.** Two amber bars with labels and an "ideal" tick; a shake state for "energy from nothing".
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio). A transformer part and an alternating source would serve this video and the next two.
 
 ## Codex asset brief
 
@@ -270,6 +294,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Revision 2: re-check the per-turn counter, the turns-slider stops, the load readouts and the crossed 4600 V slip; confirm scene 7's arrows are drawn at a stated rising-flux instant.
 11. Report site notes 1 to 4 under Decisions to root.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -315,3 +341,26 @@ New plate requests: none (`y12p-transformer-v1.png` delivered).
 Join: the opening is v12's final frame as written on 7 Nov (v12 still Revision 1 when this revision was written); scene 1 changes only by adding the plate after the first sentence. The final frame (scene 15) is unchanged, so the v14 join holds.
 
 Counts: 6,041 (joined; scene sum 6,026) to 6,349 characters (scene sum); about 541 s to about 552 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits yet (direct current only); the slider and load switch stay lesson-coded arithmetic.
+- Scenes 1 and 6: the coded balance icon becomes a trade strip of two linked chips.
+- Question cards: both already carry schematics and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the circuits engine is direct current only: it has no alternating supply and no transformer part (two windings linked by a turns ratio). A transformer part and an alternating source would serve this video and the next two.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,349 characters, unchanged; about 552 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

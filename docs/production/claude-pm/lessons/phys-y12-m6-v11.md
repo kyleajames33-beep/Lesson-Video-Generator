@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V11: Lenz's law. Why does the induced current oppose the flux change? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,705 characters, 14 scenes, about 519 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v10's final frame.
 
@@ -60,6 +60,19 @@ Entry knowledge: Faraday's law (v10); electromagnets, the grip rule and like pol
 Stops after: the energy argument, Lenz's law, the minus sign, the four-step direction method for approaching and receding magnets, stationary case, open versus closed evidence. No motors or braking devices.
 Handoff: v12, how one coil can induce an emf in another without touching it.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the bench with the two possible current directions, scene 1 (about 35 s); (B) the full-frame "what if" panel with large energy bars, scene 2 (about 32 s); (C) the energy-flow board with the push-speed slider, scene 3 (about 25 s); (D) the coil with its field lines and the framed law, scene 4 (about 31 s); (E) the bench with the four-step rail, scene 5 (about 50 s); (F) the bench: stop, then pull out, scene 6 (about 37 s); (G) the open circuit, then the drop test with the coil on its end, scene 7 (about 67 s; the drop test replaces the bench at about 25 s); (H) the two small benches and the memory card, scene 8 (about 20 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 50 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The coil and galvanometer loop in scene 7 runs on the circuits engine (`circuits.ts`, drawn with `CircuitView` over the painted parts): the coil as a battery whose voltage the lesson sets to the induced emf, with a switch that opens mid-run. With the switch open the charges stay on the wire and sit still while the emf chip stays lit, which is exactly the point of the test. The push-speed slider in scene 3 is the design's proportional model (× 1, × 2, × 3 and × 1, × 4, × 9) and stays lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -82,7 +95,7 @@ Visual (Revision 2 stage change): clear change to an energy-flow board: the benc
 ### 4. Lenz's law
 > This is Lenz's law. The induced current flows in the direction that makes its own magnetic field oppose the change in flux that caused it. Here, the flux to the right is increasing, so the coil's own field points to the left, against the **increase**. Notice that it opposes the change in flux, not the magnet's field itself. That's what the minus sign in Faraday's law means. The induced emf always opposes the **change**.
 
-Visual: on "Lenz's law" a framed chip "Lenz's law: the induced current's field opposes the change in flux that caused it". On "flux to the right is increasing" slate field lines from the magnet run right through the coil, a slate arrow "B (magnet)" and a "Φ ↑" tag. On "increase" a rose arrow "induced B" along the coil axis pointing left. On "minus sign" the equation strip "ε = −N ΔΦ / Δt" writes with the minus sign circled rose (as v10 left it). On "change" a tag "minus sign = opposes the change". Revision 2 (stage change): clear change to a coil cutaway (about 60% of the frame, turns as coded ink ellipses) with the slate external lines and the rose induced arrow, the bench as an inset; the Lenz chip framed (48 px); a chip "opposes the magnet's field" fades in on "not the magnet's field itself" and is crossed in red, red hand tag "the change, not the field"; slate hand tag "Φ ↑" with a pen ring round the counter.
+Visual: on "Lenz's law" a framed chip "Lenz's law: the induced current's field opposes the change in flux that caused it". On "flux to the right is increasing" slate field lines from the magnet run right through the coil, a slate arrow "B (magnet)" and a "Φ ↑" tag. On "increase" a rose arrow "induced B" along the coil axis pointing left. On "minus sign" the equation strip "ε = −N ΔΦ / Δt" writes with the minus sign circled rose (as v10 left it). On "change" a tag "minus sign = opposes the change". Revision 2 (stage change): clear change to a coil cutaway (about 60% of the frame, turns as coded ink ellipses) with the slate external lines and the rose induced arrow, the bench as an inset; the Lenz chip framed (48 px); a chip "opposes the magnet's field" fades in at the cue "not the magnet's field itself" and is crossed in red, red hand tag "the change, not the field"; slate hand tag "Φ ↑" with a pen ring round the counter.
 
 ### 5. four steps to the current direction
 > Now let's find the current direction, in four steps. One, which way does the magnet's field go through the coil? To the right, away from the north **pole**. Two, is the flux increasing or decreasing? Increasing, as the magnet gets **closer**. Three, the induced field must oppose that increase, so it points **left**. Four, use the right-hand grip rule for a coil. Curl the fingers the way the current flows, and the thumb points along the field inside. For a field pointing left, towards the magnet, the current flows anticlockwise, seen from the magnet's **side**. And the coil's left end becomes a north pole, facing the magnet's north pole. Like poles repel, just as we **found**.
@@ -97,7 +110,9 @@ Visual: on "Stop the magnet" the motion arrow disappears; the rose arrows, lette
 ### 7. the evidence: who pays?
 > Here's a neat test. Break the circuit, so no current can flow. There's still an emf, but with no current, the coil makes no field, so there's no push back. The magnet moves in **freely**. Close the circuit again, and you have to push harder, because now you're supplying the electrical energy. Now drop a magnet, north pole first, right through a coil standing on its end. As it falls in, the coil's top end becomes a north pole, pushing up on the falling north **pole**. As it leaves, the flux is falling, so the current reverses, and the coil's bottom end becomes a north pole, pulling up on the magnet's south **end**. Either way, the coil pushes up, so we'd expect the magnet to fall a little more **slowly** than through an open coil. Some of the energy that would have become kinetic energy becomes heat in the coil instead. Later in this module, the same idea brakes moving metal without touching **it**.
 
-Visual: on "Break the circuit" one lead to the galvanometer opens (a coded gap); rose "ε" stays at the coil's terminals but no current arrows, no induced poles; on "freely" the magnet moves in with only the motion arrow (no opposing force arrow); tag "open: emf, no current, no opposition". On "Close the circuit again" the gap closes; the rose current, poles and opposing arrow return, and the applied-push arrow on the magnet grows; tag "closed: you supply the energy". On "drop a magnet" camera change to one coil plate stood on its end (axis vertical) on a coded stand above a coded floor line, a bar magnet above it with "N" at its lower end, released and falling by gravity (no hand); the galvanometer beside it. On "pole" (falling in) a rose "N" at the coil's top end, an upward amber arrow on the magnet, the needle swinging right. On "end" (leaving below) a rose "N" at the coil's bottom end facing the magnet's upper "S" end, an upward amber arrow on the magnet, the needle swinging left (tag "current reverses, force still up", author note f). On "slowly" a second, open coil appears beside the first and the drop repeats through both together; the magnet through the closed coil lags slightly (tag "illustrative: no measured times", Revision 2, brief 189; author note c). On "instead" small energy bars beside the closed coil: "kinetic" a little shorter, "heat" a small bar. On "it" a grey-ink chip "magnetic braking: later in Module 6". Revision 2: amber hand tags "up entering" and "up leaving" with a pen arrow on each upward force; rose hand tag "current flips, force doesn't"; "open: no opposition" framed in the first half; a chip "open coil: still pushes back" fades in on "freely" and is crossed in red.
+Visual: on "Break the circuit" one lead to the galvanometer opens (a coded gap); rose "ε" stays at the coil's terminals but no current arrows, no induced poles; on "freely" the magnet moves in with only the motion arrow (no opposing force arrow); tag "open: emf, no current, no opposition". On "Close the circuit again" the gap closes; the rose current, poles and opposing arrow return, and the applied-push arrow on the magnet grows; tag "closed: you supply the energy". On "drop a magnet" camera change to one coil plate stood on its end (axis vertical) on a coded stand above a coded floor line, a bar magnet above it with "N" at its lower end, released and falling by gravity (no hand); the galvanometer beside it. On "pole" (falling in) a rose "N" at the coil's top end, an upward amber arrow on the magnet, the needle swinging right. On "end" (leaving below) a rose "N" at the coil's bottom end facing the magnet's upper "S" end, an upward amber arrow on the magnet, the needle swinging left (tag "current reverses, force still up", author note f). On "slowly" a second, open coil appears beside the first and the drop repeats through both together; the magnet through the closed coil lags slightly (tag "illustrative: no measured times", Revision 2, brief 189; author note c). On "instead" small energy bars beside the closed coil: "kinetic" a little shorter, "heat" a small bar. On "it" a grey-ink chip "magnetic braking: later in Module 6". Revision 2: amber hand tags "up entering" and "up leaving" with a pen arrow on each upward force; rose hand tag "current flips, force doesn't"; "open: no opposition" framed in the first half; a chip "open coil: still pushes back" fades in at the cue "freely" and is crossed in red.
+
+Upgrade (Revision 3): In the drop test the coil stands on its end in the painted retort stand and boss (`phys-y11-retort-stand-v1.png`, `phys-y11-boss-crossbar-v1.png`), not on a coded stand. The floor stays a plain line.
 
 ### 8. a way to remember
 > Here's a way to remember the direction. Coming in, it pushes back. Going away, it pulls back. It works for either pole, and whether the magnet or the coil does the moving. The coil always resists the change, so you always pay for the electrical energy with **work**.
@@ -129,7 +144,7 @@ Visual: card shrinks to the top; "attracts the magnet" and "conservation of ener
 
 Visual: board clears (camera change) to the bench. On "moving magnet" the magnet slides out of frame to the left. Revision 2: navy hand tag "no contact" with a pen bracket on the gap; orange hand tag "switch: open" by the blade (both fade before the hold, so the final frame below is unchanged). On "second coil" a second coil plate (`phys-y11-solenoid-coil-v1.png`) slides in at the left, in line with the first coil, a small gap between them; coded leads from it to the knife switch (`phys-y11-knife-switch-v1.png` with its blade layer, open) and the low-voltage supply (`phys-y11-low-voltage-supply-v1.png`); the first coil stays connected to the galvanometer, needle at zero. On "without touching" a navy bracket marks the gap "no contact". On "another" a "?" over the gap and a chip "Next: how can one coil induce an emf in another without touching it?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
-### 14. key notes (quiet, hold about 60 seconds)
+### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -180,6 +195,8 @@ No numerical values. Codex to re-check the direction results with the cross prod
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,705 characters**, 14 scenes (Revision 1 stated 5,699, which included the 13 joins; its scene sum was 5,686). Characters per scene (1 to 14): 461, 424, 339, 415, 664, 488, 891, 262, 277, 385, 245, 409, 370, 75. At 13.3 characters per second the speech is about 429 s; add about 2 s for the scene 3 slider steps to settle; add about 3 s for the prediction countdown, 2 s for the runaway what-if, 2 s for the drop test, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns; the notes hold is about 60 s in all): **about 519 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's drop test (open decision 1); scene 6's last sentence; scene 13's first sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,705 characters). The notes scene is 45 s in all, so the estimate is about 504 s (it was about 519 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v10's final frame (designed in this wave, `phys-y12-m6-v10.md`): paper background; the bench: bar magnet at the left, "N" facing the coil, an amber motion arrow pointing towards the coil; the coil plate; dimmed coded leads to the galvanometer at the right, needle deflected; two rose curved arrows round the coil's near end (clockwise and anticlockwise as seen from the magnet), each with "?"; a large "?"; a chip "energy is conserved"; heading "What changes create an induced emf?"; chip "Next: why does the induced current oppose the flux change?". Scene 1 turns the chip into the heading and turns the two arrows into the two pole options.
@@ -198,6 +215,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 60 s). Review evidence paths: `learning_review` = `checks/p-y12-m6-v11-learning-review.md`, `science_check` = `checks/p-y12-m6-v11-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -214,6 +233,8 @@ Kit gaps (for the v11 build brief):
 1. **Lenz bench.** v10's magnet bench with induced poles, an induced-field arrow, near-side current arrows on the coil turns (direction from author note a), an end-on "seen from the magnet" inset, and force arrows on the magnet; an open-circuit gap that removes the induced effects while keeping "ε".
 2. **Runaway what-if and energy bars.** A greyed accelerating ghost with a speed readout and three energy bars (source, kinetic, heat).
 3. **Drop test.** Two upright coils on coded stands, two magnets falling under gravity, the closed one slightly delayed (illustrative).
+
+Revision 3 (13 Nov 2026). Existing plates newly used in scene 7 (confirmed by file listing, not re-inspected): `phys-y11-retort-stand-v1.png`, `phys-y11-boss-crossbar-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video.
 
 ## Codex asset brief
 
@@ -232,6 +253,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no person, hand, face or body outline is drawn or requested (pushes are arrows; the grip rule is a coded axis).
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -279,3 +302,27 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,699 stated (joined; 5,686 scene sum) to 5,705 characters (scene sum); about 516 s to about 519 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the open and closed circuit of scene 7 is tied to the circuits engine; the rest stays a lesson animation (kit gap recorded).
+- Scene 7: the coded stand in the drop test becomes the painted stand and boss.
+- Scenes 4 and 7: two chips that "fade in on" a phrase spoken earlier are reworded (visual text only, for the checking script).
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: no engine for flux and induction (the flux through a coil against time, the emf from its rate of change, and a meter needle tied to it), as recorded for the flux video.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,705 characters, unchanged; about 504 s (it was about 519 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M6 V05: Charged particles in circles. Why does a perpendicular magnetic field bend a path without increasing speed? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,624 characters, 17 scenes, about 514 s, counted by script with the build parser rules (see "Narration length estimate").
 
@@ -65,6 +65,19 @@ Entry knowledge: v04; m5-v11; v02, v03.
 Stops after: zero work and constant speed; the circle; r = mv/(qB); T = 2πm/(qB); comparisons with other circular motion and with an electric field. No combined fields.
 Handoff: v06, how crossed fields can select one particle speed.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame on the cross grid with the painted magnet as an inset, scene 1 (about 24 s); (B) the orbit stage: no work, then the pull back to the whole circle, scenes 2 and 3 (about 67 s; the camera pulls back at about 38 s); (C) the full-width algebra column, scene 4 (about 27 s); (D) the calculation layout, scene 5 (about 48 s); (E) the electron's orbit panel, scene 6 (about 33 s); (F) the live orbit stage with its two sliders and lap timer, scene 7 (about 37 s); (G) the three-system comparison board, scene 8 (about 35 s); (H) the two panels: plates against the magnetic field, scene 9 (about 21 s); (I) the opening frame again with the predictions, scene 10 (about 21 s); (J) the memory card, scene 11 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Every circle runs on the field motion engine (`field-motion.ts`, a `magnetic` field, drawn with `FieldMotionView`: field crosses, trail, velocity and acceleration arrows) on one `useMotionTime` clock slowed to a watchable rate. The speed readout stays fixed because the run's speed does. In scene 7 each setting of the speed and field sliders is its own run; "r" and "T" are read from the run, so the lap timer shows the same period at every speed. Scene 8's other two systems are runs too (the ball on a string as a `custom` inward pull, the satellite as a `central` field), and scene 9 sets last time's `uniform` path beside the `magnetic` circle.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *F*, *q*, *v*, *B*, *m*, *r*, *T*. Paper background and handwritten headline face as the explainer house style.
@@ -117,7 +130,7 @@ Visual: camera change to two panels: left, v02's plate path with fixed-direction
 ### 10. back to the predictions
 > So, back to the predictions. The proton doesn't speed up, and it doesn't spiral in. With no work done, it goes round a circle at a steady **speed**. And the electron at the same speed curves far more tightly, on a circle about eighteen hundred times smaller, turning the other **way**.
 
-Visual: camera change back to scene 1's frame: on "speed" the "circle" chip ticks and "speeds up" and "spirals in" are crossed, the proton circling with its fixed speed readout. On "way" the electron ghost becomes a tiny clockwise circle at the same start point, tag "tighter (× 1/1837), opposite sense"; the "tighter" prediction chip ticks. Revision 2: red crossings on "speeds up" and "spirals in"; teal hand tag "steady speed" with a pen ring round the readout.
+Visual: camera change back to scene 1's frame: on "speed" the "circle" chip ticks and "speeds up" and "spirals in" are crossed, the proton circling with its fixed speed readout. On "way" the electron ghost becomes a tiny clockwise circle at the same start point, tag "tighter (× 1/1837), opposite sense"; the "tighter" prediction chip ticks. Revision 2: red crossings through the chips "speeds up" and "spirals in"; teal hand tag "steady speed" with a pen ring round the readout.
 
 ### 11. memory aid
 > To remember it: a magnetic force steers, it never **speeds**. And the radius is m v over q B, momentum on top, charge and field **underneath**.
@@ -128,6 +141,8 @@ Visual: board clears to a framed memory card: "Magnetic force steers. It never s
 > Your turn. A proton travels at three point zero times ten to the six metres per second, at right angles to a uniform magnetic field of zero point two five tesla. Calculate the radius of its path, and its period. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Physics"), worded as printed: "A proton travels at 3.0 × 10⁶ m s⁻¹ perpendicular to a uniform magnetic field of strength 0.25 T. (a) Calculate the radius of the proton's circular path. (b) Calculate the period of its motion. (m_p = 1.673 × 10⁻²⁷ kg, e = 1.602 × 10⁻¹⁹ C)" Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): From the first frame the card's right side carries a panel of slate crosses tagged "B = 0.25 T, into the page" with a proton and its teal velocity arrow tagged "3.0 × 10⁶ m s⁻¹". No circle, no force arrow and no lap timer are drawn, because the radius and period are the answers. The memory card is hidden.
 
 ### 13. feedback 1 (brief)
 > r equals m v over q B. Put in the proton's mass, its speed, its charge and the field, and r is zero point one two five metres, about twelve and a half **centimetres**. The period is two pi m over q B, two point six two times ten to the minus seven **seconds**. The classic slip is using the electron's mass, which gives a radius about eighteen hundred times too **small**.
@@ -149,7 +164,7 @@ Visual: card shrinks to a full-text strip at the top (30 px). Answer side (Revis
 
 Visual: clear change. Two horizontal coded plates (top "+", bottom "−") with blue field lines pointing down, and the space between them also filled with slate crosses (tag "E down, B into page"); at the left an electron "(−)" about to enter at mid-gap with a teal "v" arrow; an amber "F_E" arrow up and a rose "F_B" arrow down on it, both drawn dashed with "?" sizes; a slit drawn in a coded barrier at the far right on the centre line. On "speed" a chip writes: "Next: how can crossed fields select one particle speed?". Revision 2: amber and rose hand tags "push up?" and "push down?" beside the two dashed arrows (they fade before the hold, so the final frame below is unchanged). Hold about 2 seconds. This is the final frame.
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -210,6 +225,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` or `### Na.` headings, only lines starting "> " inside each scene, joined with a space, bold markers removed; total = sum of the scene strings): **5,624 characters**, 17 scenes; narration unchanged from Revision 1, whose stated 5,640 included the 16 joins. Characters per scene (1 to 17): 320, 504, 390, 356, 637, 444, 487, 467, 274, 277, 135, 233, 360, 153, 284, 228, 75. At 13.3 characters per second the speech is about 423 s; add 3 s for the prediction countdown, about 4 s for the orbit and lap-timer animations, about 3 s for the scene 7 slider sweeps to settle, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the memory-aid hold, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 91 s of holds and countdowns, including about 1 s for the scene 10 replay; the notes hold is about 60 s in all): **about 514 s**, inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's cyclotron sentence (keep the chip); scene 9 (the comparison with an electric field returns in v06).
 
+Revision 3 (13 Nov 2026): narration unchanged (5,624 characters). The notes scene is 45 s in all, so the estimate is about 499 s (it was about 514 s; the notes hold falls from 60 s to 45 s).
+
 ## Opening frame
 
 v04's final frame (`phys-y12-m6-v04.md`, "Final frame"): paper background; a square region of slate crosses (tag "B into page"); a proton "(+)" just left of centre moving right, with a teal "v" arrow and an amber "F" arrow pointing up, a right-angle mark between them; a dashed grey continuation curving upwards and to the left, ending in "?"; a readout "v = ?"; heading "When does a magnetic field exert a force on a moving charge?"; chip "Next: why does a perpendicular magnetic field bend a path without increasing speed?". Scene 1 moves the proton a short way along the dashed path; scene 2 fills the "v = ?" readout with "4.0 × 10⁶ m s⁻¹" and changes the heading.
@@ -228,6 +245,8 @@ Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-n
 
 Holds: hook (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/p-y12-m6-v05-learning-review.md`, `checks/p-y12-m6-v05-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet or in earlier designs; scaled uniformly only):
@@ -242,6 +261,8 @@ Need (new plates): none.
 Coded: cross grids, orbits, vectors, right-angle marks, counters, K bars, lap timers, scale bars, peg and string, plate panels, algebra, chips, cards, countdowns, notes board, the crossed-field set-up (scene 14).
 
 Kit gaps: 5. **Orbit stage** (exact circle for given m, q, v, B on a set scale; tangent v and inward F arrows; fixed speed readout and K bar; zero work counter; lap timers; concentric orbits at v and 2v in step; sense of rotation from the sign of q; side-by-side panels at different scales). Extends `MagneticOrbit` (`m6-magnetic-orbit`).
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M6 v05)
 
@@ -259,6 +280,8 @@ Error-only check:
 7. Confirm no person, hand, face or body outline is drawn or requested.
 8. Confirm no em dash (U+2014), no U+2061, and Australian spelling.
 9. Confirm the narration counts by script.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -303,3 +326,26 @@ Visual upgrade (to `../maths-visual-standard.md` and the build gate):
 New plate requests: none.
 
 Counts: 5,640 stated (joined; 5,624 scene sum) to 5,624 characters (scene sum, narration unchanged); about 512 s to about 514 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the circles, the two sliders, the comparison board and the plates-against-field panels are tied to the field motion engine.
+- Scene 10: "red crossings on" two chips is now "through the chips" (visual text only, for the checking script; R1 makes the crossings slate).
+- Question cards: attempt 1 gains a cross-grid panel with the proton and its velocity; attempt 2 and both feedback scenes were already complete.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s (it was 60 s).
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,624 characters, unchanged; about 499 s (it was about 514 s; the notes hold falls from 60 s to 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.
