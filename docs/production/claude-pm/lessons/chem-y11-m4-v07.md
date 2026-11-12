@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V07: Hess's law. Why can we add reaction enthalpies along different paths? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,213 characters, 19 scenes, about 560 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -68,6 +68,17 @@ Handoff: chem-y11-m4-v08, formation enthalpies.
 - **Opening frame:** m4-v06's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v08` opens on it):** the carbon two-route diagram at full width (coded): top level "C(s) + O₂(g)" with a teal tag "elements"; middle level "CO(g) + ½O₂(g)"; bottom level "CO₂(g)". Left: a long red arrow "direct: −393.5 kJ mol⁻¹". Right: red arrows "step 1: −110.5" and "step 2: −283.0". Beside the −110.5 arrow a slate tag "forming 1 mol of CO from its elements"; beside the −393.5 arrow a slate tag "forming 1 mol of CO₂ from its elements". `c4-icon-carbon-lump-v1.png` small at the top left. The amber chip "Values like these are tabulated for thousands of compounds. How do they give a reaction's ΔH?". The chip "Next: How do standard formation enthalpies calculate a reaction enthalpy?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the methane ladder, then the carbon lump and two routes, scene 1 (about 29 s); (B) the two-route diagram with its marker, scene 2 (about 29 s); (C) the height-against-distance panel, scene 3 (about 35 s); (D) the law as a gloss card, scene 4 (about 17 s); (E) the painted carbon and what can be measured, scene 5 (about 24 s); (F) one equation card reversed, then scaled, scenes 6 and 7 (about 41 s); (G) the target strip and the two data cards adjusted, scenes 8 and 9 (about 56 s); (H) the cancel board, scene 10 (about 36 s); (I) the check against the diagram, scene 11 (about 22 s); (J) two traps, scene 12 (about 20 s); (K) the memory card, scene 13 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 56 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The flags and tracks in scene 3 and the flame sketch in scene 5 are not drawn; a plain graph and a hand tag carry the same points.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -75,7 +86,7 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook and prediction (countdown, 3 seconds at the end)
 > Last time, we went the long way round. We pulled methane and oxygen apart into atoms, then built the products, and still got delta H. Here's a simpler case to test that idea. Carbon can burn straight to carbon dioxide. Or it can burn to carbon monoxide first, and then the carbon monoxide burns to carbon dioxide. So predict. Does the two-step route release more energy, less, or the **same**?
 
-Visual: opens on m4-v06's final frame; the "Next" chip fades. On "pulled methane and oxygen apart into atoms" the up and down arrows pulse; on "still got delta H" the dashed direct arrow pulses. Clear change on "a simpler case": `c4-icon-carbon-lump-v1.png` at the left with a coded red glow, label "C(s)". On "straight to carbon dioxide" one arrow "C → CO₂"; on "carbon monoxide first" a two-arrow path "C → CO → CO₂". Heading writes: "Why do different routes give the same ΔH?". Chips "more", "less", "the same". On "same" the 3 s `Countdown` ring runs. Hand tags: slate "one step?" on the direct arrow and "two steps?" on the path, with a `PenArrow` between them; pen ring on "C(s)".
+Visual: opens on m4-v06's final frame; the "Next" chip fades. On "pulled methane and oxygen apart into atoms" the up and down arrows pulse; on "still got delta H" the dashed direct arrow pulses. Clear change on "a simpler case": `c4-icon-carbon-lump-v1.png` at the left with a coded red glow, label "C(s)". On "straight to carbon dioxide" one arrow "C → CO₂"; on "carbon monoxide first" a two-arrow path "C → CO → CO₂". Heading writes: "Why do different routes give the same ΔH?". Chips "more", "less", "the same". On "same" the 3 s `Countdown` ring runs. Hand tags: slate "one step?" on the direct arrow and "two steps?" on the path, with a `PenArrow` between them; pen ring round "C(s)".
 
 ### 2. same start, same finish
 > The same. Burning carbon straight to carbon dioxide releases three hundred and ninety-three point five kilojoules per mole. Going via carbon monoxide, the first step releases one hundred and ten point five, and the second releases two hundred and eighty-three point zero. Add those, and you get three hundred and ninety-three point five again. Same start, same finish, same delta **H**.
@@ -87,6 +98,8 @@ Visual: "the same" ticks. Stage: the diagram fills the right two thirds, the pai
 
 Visual: on "depends only on what the substances are" a grey tag "enthalpy is a state function". On "height above sea level" clear change to the altitude panel: a beach flag and a lookout flag; on "a steep track or a gentle one" two coded tracks draw; on "the same height" one height bracket covers both; on "different distances" live counters run as two markers climb: "height climbed" ends equal on both tracks, while "distance walked" ends at different values (tag "depends on the route"). On "go out by one route" the panel returns to the carbon diagram and an arrow loop runs down the direct route and back up the two-step route with a "+energy?" counter; on "out" the counter is crossed (tag "conservation of energy"). Hand tags: slate "same height" on the bracket; grey "route matters here" on the distance counters; red "energy from nothing? no" on the crossed counter.
 
+Upgrade (Revision 3): The altitude panel is a plain graph, not a landscape: a vertical axis "height above sea level" with two labelled levels, "beach" and "lookout", and two plain route lines between them (one steep and short, one gentle and long). No flags, hill or scenery are drawn. The two live counters and the height bracket are unchanged.
+
 ### 4. Hess's law
 > That's Hess's law. The enthalpy change for a reaction is the same whatever route it takes, so the enthalpy changes of the steps add up to the overall enthalpy change. It's why our imaginary route through separate atoms **worked**.
 
@@ -96,6 +109,8 @@ Visual: on "Hess's law" a gloss card writes: "Hess's law: ΔH is the same whatev
 > Hess's law matters most when a reaction can't be measured. Try to burn carbon to just carbon monoxide, and some of the carbon monoxide keeps burning to carbon dioxide, so you always get a mixture. But burning carbon completely, and burning carbon monoxide, can both be measured. So we can calculate the step we can't **measure**.
 
 Visual: the carbon card returns at the left. On "burn carbon to just carbon monoxide" a coded flame sketch over the carbon with arrows "CO" and, on "keeps burning", some "CO" arrows turning into "CO₂" (tag "a mixture"). On the diagram, the step 1 arrow turns grey with a "?" (tag "can't be measured cleanly"). On "burning carbon completely" the direct arrow ticks green "measured"; on "burning carbon monoxide" step 2 ticks green "measured". On "measure" the "?" on step 1 pulses. Stage: the painted carbon large at the left with the flame sketch (stage change). Hand tags: grey "a mixture" with a pen ring on the turning arrows; green "measured" on both ticked arrows.
+
+Upgrade (Revision 3): No flame is sketched in code. The painted carbon lump keeps its coded red glow, with a grey hand tag "burning in limited air" and the "CO" and "CO₂" arrows as described.
 
 ### 6. reversing an equation
 > To use measured equations, we often have to turn them around or resize them. First, reversing. If a reaction gives out two hundred and eighty-three kilojoules going forwards, then going backwards it must take in exactly two hundred and eighty-three. So when you reverse an equation, delta H keeps its size, but changes **sign**.
@@ -142,27 +157,35 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Use the following thermochemical equations: S(s) + O₂(g) → SO₂(g)  ΔH = −296.8 kJ mol⁻¹; 2SO₂(g) + O₂(g) → 2SO₃(g)  ΔH = −197.8 kJ mol⁻¹. Calculate ΔH for the reaction S(s) + 3/2 O₂(g) → SO₃(g). Show how the equations are combined. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted sulfur sample (`y11c-sample-sulfur-v1.png`, about 260 px), untagged. Both data equations sit on their own lines at 34 px or more. The memory card is hidden.
+
 ### 15. feedback 1 (brief)
 > Keep the first equation. Halve the second, so it makes one sulfur trioxide, with delta H minus ninety-eight point nine. Add them, and sulfur dioxide cancels, leaving the target. Delta H is minus two hundred and ninety-six point eight plus minus ninety-eight point nine, which is minus three hundred and ninety-five point seven kilojoules per mole. Forgetting to halve gives minus four hundred and ninety-four point **six**.
 
 Visual: card shrinks to the top. Rows on cue: "(1) keep: S(s) + O₂(g) → SO₂(g)  −296.8"; "(2) ÷ 2: SO₂(g) + ½O₂(g) → SO₃(g)  −98.9" (amber outline); "add: SO₂ cancels; O₂ + ½O₂ = 3/2 O₂ → target ✓"; "ΔH = −296.8 + (−98.9) = −395.7 kJ mol⁻¹" (red). On "six" a chip "−296.8 + (−197.8) = −494.6" fades in and is crossed, note "not halved". Hold about 1 second. The ΔH row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "halve it too".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "(1) S + O₂ → SO₂: −296.8 | (2) 2SO₂ + O₂ → 2SO₃: −197.8 | target: S + 3/2 O₂ → SO₃".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Nitrogen and oxygen form two nitrogen monoxide, delta H plus one hundred and eighty point five. Two nitrogen dioxide breaks down into two nitrogen monoxide and oxygen, delta H plus one hundred and fourteen point one. Calculate delta H for half a nitrogen plus oxygen giving nitrogen dioxide. Pause here to answer.
 
 Visual: `QuestionCard`: "Use the following thermochemical equations: N₂(g) + O₂(g) → 2NO(g)  ΔH = +180.5 kJ mol⁻¹; 2NO₂(g) → 2NO(g) + O₂(g)  ΔH = +114.1 kJ mol⁻¹. Calculate ΔH for the reaction ½N₂(g) + O₂(g) → NO₂(g). Show how the equations are combined. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted tube of brown nitrogen dioxide (`c9-no2-tube-brown-v1.png`, about 280 px tall), untagged. Both data equations sit on their own lines at 34 px or more. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Halve the first equation, plus ninety point two five. Reverse and halve the second, so nitrogen dioxide is a product, minus fifty-seven point zero five. Add them. Nitrogen monoxide cancels, and the two halves of oxygen add to one, leaving the target. Delta H is plus thirty-three point two kilojoules per mole. Keeping the second sign positive gives plus one hundred and forty-seven point **three**.
 
 Visual: card shrinks. Rows on cue: "(1) ÷ 2: ½N₂(g) + ½O₂(g) → NO(g)  +90.25" (amber); "(2) reversed, ÷ 2: NO(g) + ½O₂(g) → NO₂(g)  −57.05" (teal and amber outline); "add: NO cancels; ½O₂ + ½O₂ = O₂ → target ✓"; "ΔH = +90.25 + (−57.05) = +33.2 kJ mol⁻¹" (blue). On "three" a chip "+90.25 + 57.05 = +147.3" fades in and is crossed, note "sign not flipped". Hold about 1 second. The ΔH row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "flip the sign".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "(1) N₂ + O₂ → 2NO: +180.5 | (2) 2NO₂ → 2NO + O₂: +114.1 | target: ½N₂ + O₂ → NO₂".
 
 ### 18. conclusion and handoff
 > So we can add reaction enthalpies along different paths because enthalpy depends only on the start and the finish. Reverse or scale each step together with its delta H, cancel what appears on both sides, and add. Now look at the two numbers we used for carbon. Each one is the enthalpy change for making one mole of a compound from its elements. Chemists list values like these for thousands of compounds. So how do they give a reaction's delta **H**?
 
 Visual: the memory line returns small at the top. On "depends only on the start and the finish" the two-route diagram returns at full width with all three arrows; on "cancel what appears on both sides" the middle level pulses. On "the two numbers we used for carbon" the "−110.5" and "−393.5" arrows pulse; on "making one mole of a compound from its elements" the top level gains a teal tag "elements", and slate tags write beside the arrows: "forming 1 mol of CO from its elements" and "forming 1 mol of CO₂ from its elements". `c4-icon-carbon-lump-v1.png` small at the top left. On "thousands of compounds" a faint coded table edge slides in behind the diagram and stops. On "H" the amber chip "Values like these are tabulated for thousands of compounds. How do they give a reaction's ΔH?" and the chip "Next: How do standard formation enthalpies calculate a reaction enthalpy?" write. The table edge fades out. Hold about 2 seconds. This is the final frame (m4-v08 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -172,9 +195,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Method: target first; reverse or scale; add; cancel; check the target; add ΔH.
 5. C(s) + ½O₂(g) → CO(g): −393.5 + 283.0 = −110.5 kJ mol⁻¹.
 
-Memory aid (framed card, on the notes screen): *Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Flip it, flip the sign. Scale it, scale ΔH. Then add, and check the target.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -225,6 +246,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,213 characters**, 19 scenes (per scene: 389, 382, 471, 226, 325, 324, 225, 387, 359, 473, 292, 272, 97, 332, 419, 323, 395, 447, 75; Revision 1: 6,213). At 13.3 characters per second the speech is about 467 s; add about 12 s of settling (the two-route diagram and route marker in 2, the altitude counters in 3, the cancel board in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 560 s** (Revision 1: about 558 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,213 characters). The notes scene is 45 s in all, so the estimate is about 545 s (it was about 560 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v07` (route chem-y11-m4-v07; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v07`.
@@ -235,6 +258,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attem
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v07-learning-review.md`, `checks/c-y11-m4-v07-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 November on a dark contact sheet; uniform scaling only, never stretched):
@@ -244,6 +269,8 @@ Have (inspected 6 November on a dark contact sheet; uniform scaling only, never 
 Need: no new plates (Revision 2: the carbon plate stays on screen as a thumbnail through scenes 1 to 5).
 
 Coded: two-route diagram, altitude panel, energy loop, equation cards with flip and stretch, cancel board, target strip, calculation rows, chips, cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `y11c-sample-sulfur-v1.png` (attempt 1), `c9-no2-tube-brown-v1.png` (attempt 2). Removed: the coded flags and tracks (scene 3) and the flame sketch (scene 5). New plate requests: none.
 
 ## Codex error-check brief
 
@@ -257,6 +284,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested (the altitude panel has tracks and flags only); no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m4-v06's final frame, and send the final frame to the m4-v08 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +334,24 @@ Visual upgrade (teaching logic and narration unchanged):
 New plate requests: none.
 
 Counts: 6,213 characters (Revision 1: 6,213, unchanged); about 558 s to about 560 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 3: the beach and lookout picture becomes a plain height graph with two route lines. Scene 5: the coded flame sketch is removed.
+- Scene 1: "pen ring on" a label is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 1 gains the sulfur sample and attempt 2 a tube of nitrogen dioxide; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,213 characters, unchanged; about 545 s (it was about 560 s).
+
+Calls for root: none.

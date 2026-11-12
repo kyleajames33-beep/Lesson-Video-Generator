@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V04: Enthalpy of solution. Why can dissolving an ionic substance warm or cool water? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,081 characters, 18 scenes, about 551 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,16 @@ Handoff: chem-y11-m4-v05, catalysts and energy profiles.
 - **Opening frame:** m4-v03's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v05` opens on it):** left: the ammonium chloride enthalpy-level diagram (coded): bottom-left level "NH₄Cl(s) + water", a blue up arrow "separate ions: energy in" to the top level "separated ions", an orange down arrow "hydrate ions: energy out" to the right level "hydrated ions" (slightly above the start), and a blue net arrow "ΔH = +14.8 kJ mol⁻¹ (data)"; the start and end levels are ringed teal with the tag "ΔH depends only on start and end". Right: `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (the catalysed peroxide flask from m3-v15) with the label "hydrogen peroxide + manganese dioxide: a different route". The amber chip "A different route: does ΔH change?". The chip "Next: Why does a catalyst change activation energy but not reaction enthalpy?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the cold pack, the cup and the prediction, scene 1 (about 26 s); (B) the lattice lens: ions pulled apart, then wrapped in water, scenes 2 and 3 (about 56 s); (C) two big numbers and the contest slider, scene 4 (about 37 s); (D) two level diagrams side by side, scene 5 (about 25 s); (E) the cup station and its steps, scene 6 (about 30 s); (F) the calculation board beside the cup, scene 7 (about 36 s); (G) the sign stage: a push in to the dissolving crystals, scenes 8 and 9 (about 48 s); (H) the magnified readouts, scene 10 (about 32 s); (I) the number line, scene 11 (about 35 s); (J) the memory card, scene 12 (about 10 s); question and feedback cards; the handoff; the notes board. One cut was added: the cup station ran from scene 6 to scene 9 (about 114 s), so scene 8 now changes the frame.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -118,7 +128,9 @@ Visual: board settles into the calculation layout beside the cup. On "enthalpy o
 ### 8. the enthalpy of solution
 > Negative q means the solution lost heat to the dissolving. Next, the moles. The molar mass of ammonium chloride is fifty-three point four nine, so we dissolved zero point one zero zero zero moles. Delta H is minus q over n, so that's plus one point four zero nine kilojoules divided by zero point one, which is plus fourteen point one kilojoules per mole. The water cooled, so delta H is **positive**.
 
-Visual: on "lost heat to the dissolving" a blue arrow from the solution into a dashed system outline round the dissolving crystals. On "fifty-three point four nine" "M(NH₄Cl) = 53.49 g mol⁻¹"; on "zero point one zero zero zero moles" "n = 5.35 ÷ 53.49 = 0.1000 mol" (violet). Equation strip "ΔHsoln = −q ÷ n". On "plus one point four zero nine kilojoules divided by zero point one" the row "ΔHsoln = −(−1.409) ÷ 0.1000"; on "plus fourteen point one" "= +14.1 kJ mol⁻¹" (blue). On "positive" the result frames in a dark-ink box with a green tick (52 px), with the tag "water cooled → endothermic". Violet hand tag "moles of solid" with a pen ring on "0.1000 mol"; blue hand tag "minus a negative: plus" on the −(−1.409) row.
+Visual: on "lost heat to the dissolving" a blue arrow from the solution into a dashed system outline round the dissolving crystals. On "fifty-three point four nine" "M(NH₄Cl) = 53.49 g mol⁻¹"; on "zero point one zero zero zero moles" "n = 5.35 ÷ 53.49 = 0.1000 mol" (violet). Equation strip "ΔHsoln = −q ÷ n". On "plus one point four zero nine kilojoules divided by zero point one" the row "ΔHsoln = −(−1.409) ÷ 0.1000"; on "plus fourteen point one" "= +14.1 kJ mol⁻¹" (blue). On "positive" the result frames in a dark-ink box with a green tick (52 px), with the tag "water cooled → endothermic". Violet hand tag "moles of solid" with a pen ring round "0.1000 mol"; blue hand tag "minus a negative: plus" on the −(−1.409) row.
+
+Upgrade (Revision 3): Stage change (about 48 s with scene 9): the cup shrinks to a thumbnail at the top left and the frame pushes in to a large lens of the dissolving crystals inside their dashed system outline (about 560 px wide), with the sign rows at full width (48 px) on the right. The calculation rows from scene 7 dim to one retained line, the row "q = 105.35 × 4.18 × (−3.2) = −1409 J".
 
 ### 9. the sign and the moles
 > Careful with the sign. A falling temperature tempts you to write a negative answer, but the water's loss is the system's gain, so an endothermic change has a positive delta H. And n is the moles of solid that dissolved, never the moles of **water**.
@@ -145,39 +157,45 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "2.00 g of sodium hydroxide (NaOH, M = 40.00 g mol⁻¹) is dissolved in 100.0 g of water in a polystyrene foam cup. The temperature of the solution rises from 21.2 °C to 26.2 °C. Calculate the molar enthalpy of solution of sodium hydroxide. Assume the solution has a specific heat capacity of 4.18 J g⁻¹ K⁻¹. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted foam cup (`m6-foam-cup-calorimeter-v1.png`, about 300 px), with no readout and no tag. Card text 38 px. The memory card and level diagrams are hidden.
+
 ### 14. feedback 1 (brief)
 > The solution's mass is one hundred and two grams, and delta T is five point zero. So q is one hundred and two times four point one eight times five point zero, about two point one three kilojoules. The moles are two point zero zero over forty point zero zero, which is zero point zero five. So delta H is minus forty-two point six kilojoules per mole, negative because the water warmed. Using a hundred grams leaves out the **solid**.
 
 Visual: card shrinks to the top. Rows on their cues: "m = 100.0 + 2.00 = 102.0 g" (amber); "ΔT = 26.2 − 21.2 = 5.0 K"; "q = 102.0 × 4.18 × 5.0 = 2132 J = 2.132 kJ" (orange); "n = 2.00 ÷ 40.00 = 0.0500 mol" (violet); "ΔHsoln = −2.132 ÷ 0.0500 = −42.6 kJ mol⁻¹" (red). On "solid" a chip "m = 100.0 g: −41.8 kJ mol⁻¹" fades in and is crossed. Hold about 1 second. The final row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "the solid warmed too".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "2.00 g NaOH, M = 40.00 g mol⁻¹ | 100.0 g of water | 21.2 °C → 26.2 °C | c = 4.18 J g⁻¹ K⁻¹".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. When potassium nitrate dissolves in water, the temperature falls. Explain this using the energy needed to separate the ions and the energy released by hydration, and state the sign of delta H. Pause here to answer.
 
 Visual: `QuestionCard`: "When solid potassium nitrate (KNO₃) dissolves in water, the temperature of the solution decreases. Explain this observation in terms of the energy required to separate the ions and the energy released when the ions are hydrated. State the sign of the enthalpy of solution. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted watch glass of white crystals (`y11c-watch-glass-salt-v1.png`, about 280 px), untagged, standing for the potassium nitrate. Card text 38 px. Nothing answer-bearing; the level diagrams stay hidden.
+
 ### 16. feedback 2 (brief)
 > Separating the potassium and nitrate ions takes more energy than hydrating them releases. The extra energy is taken from the water, so the solution cools. The process is endothermic, and delta H is positive. A temperature fall doesn't mean a negative delta **H**.
 
 Visual: card shrinks. A small level diagram builds on cue: "K⁺ and NO₃⁻ separate" (long blue up arrow); "hydrated" (shorter orange down arrow, ending above the start); "taken from the water" (blue arrow from the cup); "ΔH positive" (blue net arrow). On "H" a chip "ΔH negative because the temperature fell" fades in and is crossed. Hold about 1 second. "ΔH positive" frames in a dark-ink box with a green tick. The crossed chip carries a red hand tag "fall = endothermic = positive".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "solid KNO₃ dissolves in water | the solution's temperature decreases".
 
 ### 17. conclusion and handoff
 > So dissolving can warm or cool water because it happens in two steps. Separating the ions takes energy in, hydrating them gives energy out, and the bigger step wins. Notice that delta H only depended on where the route started and where it finished. In Module Three, a catalyst gave hydrogen peroxide a different route. Does a different route change delta **H**?
 
 Visual: the memory line returns small at the top. On "Separating the ions takes energy in" and "hydrating them gives energy out" the ammonium chloride level diagram draws at the left with its arrows; on "the bigger step wins" the blue net arrow "ΔH = +14.8 kJ mol⁻¹ (data)". On "where the route started and where it finished" the start and end levels ring teal with the tag "ΔH depends only on start and end". On "a catalyst gave hydrogen peroxide a different route" `y11c-flask-peroxide-mno2-plug-fizz-v1.png` slides in at the right with "hydrogen peroxide + manganese dioxide: a different route". On "H" the amber chip "A different route: does ΔH change?" and the chip "Next: Why does a catalyst change activation energy but not reaction enthalpy?" write. Hold about 2 seconds. This is the final frame (m4-v05 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Separating the ions takes energy in; hydrating them releases energy.
-2. Separation bigger: water cools, ΔHsoln positive. Hydration bigger: water warms, ΔHsoln negative.
+2. Separation bigger: cools, ΔHsoln positive. Hydration bigger: warms, ΔHsoln negative.
 3. m = water + solid; n = moles of solid; ΔHsoln = −q ÷ n.
 4. A temperature fall gives a positive ΔHsoln.
 5. Probe ±0.1 °C per reading: ΔT ±0.2 °C; the result carries the same percentage.
 
-Memory aid (framed card, on the notes screen): *Separate: energy in. Hydrate: energy out. The bigger step sets the sign.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Separate: energy in. Hydrate: energy out. The bigger step sets the sign.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -232,6 +250,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,081 characters**, 18 scenes (per scene: 351, 364, 383, 488, 339, 393, 479, 397, 245, 419, 466, 130, 281, 430, 224, 259, 358, 75; Revision 1: 5,968). At 13.3 characters per second the speech is about 457 s; add about 13 s of settling (the lattice lens in 2 and 3, the contest slider in 4, the level diagrams in 5, the number line in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 551 s** (Revision 1: about 540 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,081 characters). The notes scene is 45 s in all, so the estimate is about 536 s (it was about 551 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v04` (route chem-y11-m4-v04; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v04`.
@@ -241,6 +261,8 @@ In order (18 scene headings, all `### N.`): hook-prediction, separating-ions, hy
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v03's final frame into scene 1 by camera continue, then a camera push into the cup's lattice lens; 1 to 2 camera continue; 2 to 3 camera continue; 3 to 4 clear change to the bars; 4 to 5 clear change to the level diagrams; 5 to 6 clear change to the cup station; 6 to 7 camera continue; 7 to 8 camera continue; 8 to 9 camera continue; 9 to 10 camera push into the readout; 10 to 11 clear change to the number line; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v04-learning-review.md`, `checks/c-y11-m4-v04-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -256,6 +278,8 @@ Need: no new plates (Revision 2: the peroxide flask dependency is met).
 
 Coded: readouts, tipping and stirrer, lattice lens with ions and water molecules, bars, level diagrams, calculation rows, uncertainty readouts, number line and band, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (already in this design's list): `m6-foam-cup-calorimeter-v1.png` (attempt 1), `y11c-watch-glass-salt-v1.png` (attempt 2, standing for potassium nitrate). New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -268,6 +292,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested (solid tips and stirrer moves by code); water molecules drawn bent with δ charges correctly oriented; no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m4-v03's final frame, and send the final frame to the m4-v05 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the one retained line in scene 8 matches the value written in scene 7 and "Numbers used"; the builder copies that row, not the wording in this paragraph.
 
 ## YouTube metadata (draft)
 
@@ -321,3 +347,24 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 6,081 characters (Revision 1: 5,968); about 540 s to about 551 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 8: a stage change (push in to the dissolving crystals) breaks up the cup station, which had held for about 114 s.
+- Question cards: attempt 1 gains the foam cup and attempt 2 a watch glass of white crystals; both feedback scenes gain navy givens strips.
+- Key notes: the second bullet is shortened to fit one line.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,081 characters, unchanged; about 536 s (it was about 551 s).
+
+Calls for root: a watch glass of white crystals stands for potassium nitrate on the attempt 2 card.

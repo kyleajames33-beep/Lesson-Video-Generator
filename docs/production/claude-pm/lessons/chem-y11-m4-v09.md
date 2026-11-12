@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V09: Combustion data in energy cycles. How can combustion data complete an unknown energy cycle? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,364 characters, 18 scenes, about 562 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -75,6 +75,17 @@ Handoff: chem-y11-m4-v10, photosynthesis and respiration.
 - **Opening frame:** m4-v08's final frame as found in `chem-y11-m4-v08.md` on 6 November (described in Decisions: the ethanol height diagram with "−277.7" ringed and "how was this measured?").
 - **Final frame (`chem-y11-m4-v10` opens on it):** the cycle board redrawn for glucose: top card "C₆H₁₂O₆(s) + 6O₂(g)" (amber outline), bottom card "6CO₂(g) + 6H₂O(l)" (the same "floor" style as the methane cycle), a solid orange down arrow at the right labelled "burning (or respiration): ΔH = −2803 kJ mol⁻¹", and a dashed up arrow at the left labelled "photosynthesis: ?". Small at the right: `b6a-mitochondrion-v1.png` beside the down arrow and `g1-leaf-v1.png` beside the up arrow, each with a grey label ("cell", "leaf"). The amber chip "Same two levels. How are the two arrows related?". The chip "Next: How are photosynthesis and respiration related in an enthalpy cycle?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the Bunsen flame, the two bars and the prediction, scene 1 (about 41 s); (B) the bars become two routes, scene 2 (about 29 s); (C) the data card at full width, scene 3 (about 33 s); (D) the cycle board and route one, scenes 4 and 5 (about 54 s); (E) the working at full width, scene 6 (about 31 s); (F) the enthalpy ladder, scene 7 (about 24 s); (G) the triangle again: two names, then the state toggle, scenes 8 and 9 (about 62 s; the toggle flips the bottom card and the readout at scene 9); (H) the fuel bars and the unit toggle, scenes 10 and 11 (about 53 s); (I) the memory card, scene 12 (about 13 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The small coded flames on the data rows (scene 3) and the steam-to-drops icon (scene 9) are replaced by chips and a hand tag.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -93,6 +104,8 @@ Visual: "exothermic" ticks. On "the same elements" the two bars turn into two ro
 > They come from heats of combustion. A heat of combustion is the enthalpy change when one mole of a substance burns completely in oxygen. It's always negative, because burning releases energy. Carbon's is minus three hundred and ninety-three point five kilojoules per mole. Hydrogen's is minus two hundred and eighty-five point eight. And methane's is minus eight hundred and ninety point six. Each one ends as carbon dioxide gas or liquid **water**.
 
 Visual: stage change: the data card takes the full width and the cycle shrinks to a thumbnail at the top left. On "heat of combustion is" gloss card "heat of combustion, ΔHc: the enthalpy change when 1 mol burns completely in oxygen (always negative)". Rows write on cue, each with a small coded flame, under a grey tag "data: OpenStax Chemistry 2e, Appendix G": on "Carbon's" "C(s) + O₂(g) → CO₂(g)   ΔHc = −393.5 kJ mol⁻¹"; on "Hydrogen's" "H₂(g) + ½O₂(g) → H₂O(l)   −285.8 kJ mol⁻¹"; on "methane's" "CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)   −890.6 kJ mol⁻¹". On "water" the products "CO₂(g)" and "H₂O(l)" in all three rows are underlined teal. The carbon row carries a small `c4-icon-carbon-lump-v1.png` and the methane row a small `p01-bunsen-lit-v2.png` in place of the coded flame (the hydrogen row keeps a coded flame). Hand tags: orange "always negative" on the gloss card; teal "same products" with a pen ring on the underlined H₂O(l).
+
+Upgrade (Revision 3): No flame is drawn in code. Each data row is marked with a small orange chip "burned in O₂" (30 px); the painted Bunsen flame and carbon lump already on the rows stay.
 
 ### 4. drawing the cycle
 > Now draw the full cycle. Top left, the elements: one carbon, two hydrogen molecules, and the two oxygen molecules that burning will need. Top right, methane, with the same two oxygens. At the bottom, carbon dioxide and two waters, the same finish for both. The arrow across the top is the unknown, methane's formation enthalpy. The oxygen changes nothing in that step, because its formation enthalpy is **zero**.
@@ -117,12 +130,14 @@ Visual: the three cards slide onto a vertical slate axis "enthalpy, H" (no numbe
 ### 8. the same arrow, two names
 > Notice the bottom arrows. Burning carbon makes carbon dioxide from its elements, so carbon's heat of combustion is also the formation enthalpy of carbon dioxide. Hydrogen's is the formation enthalpy of liquid water. So the cycle can be read the other way. Know methane's formation enthalpy, and you can find its heat of combustion, using last time's formula. When formation data are given, use that formula. When combustion data are given, draw the **cycle**.
 
-Visual: back to the triangle. On "Burning carbon makes carbon dioxide" the carbon label on the left arrow gains a second line in teal: "= ΔfH°(CO₂)"; on "hydrogen's is the formation enthalpy of liquid water" "= ΔfH°(H₂O, l)". On "read the other way" the right arrow becomes the unknown (amber "?") and the top arrow shows "−74.6"; a row "ΔHc(CH₄) = [ΔfH°(CO₂) + 2ΔfH°(H₂O)] − ΔfH°(CH₄) = −965.1 − (−74.6) = −890.5 kJ mol⁻¹" writes, with m4-v08's formula strip ghosting above it (tag "same calculation"). On "when formation data are given" three method chips stack at the right: "formation data → products minus reactants (v08)"; on "combustion data are given" "combustion data or equations → draw the cycle"; a grey third chip "only bond energies → an estimate (v06)"; on "cycle" the middle chip pulses. Teal hand tags "same arrow" on both relabelled bottom arrows, with a pen ring on "= ΔfH°(CO₂)".
+Visual: back to the triangle. On "Burning carbon makes carbon dioxide" the carbon label on the left arrow gains a second line in teal: "= ΔfH°(CO₂)"; on "hydrogen's is the formation enthalpy of liquid water" "= ΔfH°(H₂O, l)". On "read the other way" the right arrow becomes the unknown (amber "?") and the top arrow shows "−74.6"; a row "ΔHc(CH₄) = [ΔfH°(CO₂) + 2ΔfH°(H₂O)] − ΔfH°(CH₄) = −965.1 − (−74.6) = −890.5 kJ mol⁻¹" writes, with m4-v08's formula strip ghosting above it (tag "same calculation"). On "when formation data are given" three method chips stack at the right: "formation data → products minus reactants (v08)"; on "combustion data are given" "combustion data or equations → draw the cycle"; a grey third chip "only bond energies → an estimate (v06)"; on "cycle" the middle chip pulses. Teal hand tags "same arrow" on both relabelled bottom arrows, with a pen ring round "= ΔfH°(CO₂)".
 
 ### 9. keep the states
 > Every arrow must finish in exactly the same states. Use hydrogen's value for making steam, minus two hundred and forty-one point eight, with methane's value for liquid water, and the cycle gives plus thirteen point five, the wrong sign. Steam releases about forty-four kilojoules per mole as it condenses, so mixed states break the cycle. Check that the state symbols **match**.
 
 Visual: on "making steam" the state toggle (Decisions) flips the left route's bottom card to "CO₂(g) + 2H₂O(g)" (the "(g)" amber) while the right route's stays "(l)"; the single floor splits into two floors with a gap, and the toggle readout jumps from "ΔfH°(CH₄) = −74.5" to "+13.5 kJ mol⁻¹". On "plus thirteen point five" a crossed row "−393.5 + 2(−241.8) + 890.6 = +13.5" with the red stamp "states don't match". On "about forty-four kilojoules" the gap is labelled "2 × 44 kJ" with a small coded steam-to-drops icon. On "match" the toggle flips back, the readout returns to "−74.5", the floors rejoin and every state symbol in the cycle is ringed teal. Red hand tag "states don't match" on the crossed row; teal hand tag "same states" with a pen ring on the rejoined floor.
+
+Upgrade (Revision 3): No steam-to-drops icon is drawn. The gap label "2 × 44 kJ" carries a grey hand tag "steam condensing to liquid".
 
 ### 10. per mole or per gram
 > Heats of combustion also let us compare fuels, in two ways. Per mole, octane in petrol releases about five thousand four hundred and seventy kilojoules, more than six times methane's. But a mole of octane weighs about a hundred and fourteen grams, and a mole of methane only about sixteen. Divide each by its molar mass: methane gives fifty-five point five kilojoules per gram, and octane forty-seven point nine. Per gram, methane **wins**.
@@ -144,27 +159,35 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Use the following data to calculate the standard enthalpy of formation of ethanol, C₂H₅OH(l). Show an energy cycle or relevant equations. C(s) + O₂(g) → CO₂(g)  ΔH = −393.5 kJ mol⁻¹; H₂(g) + ½O₂(g) → H₂O(l)  ΔH = −285.8 kJ mol⁻¹; C₂H₅OH(l) + 3O₂(g) → 2CO₂(g) + 3H₂O(l)  ΔH = −1367 kJ mol⁻¹ (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted spirit burner (`m7-spirit-burner-calorimeter-v1.png` cropped to the burner, uniform scale, about 260 px), untagged, as the ethanol. The three data equations sit on their own lines at 34 px or more. The cycle board and memory card are hidden.
+
 ### 14. feedback 1 (brief)
 > Ethanol has two carbons and six hydrogens, so route one burns two carbons and three hydrogen molecules: minus one thousand six hundred and forty-four point four. Add one thousand three hundred and sixty-seven, and the formation enthalpy is about minus two hundred and seventy-seven kilojoules per mole. Subtracting the other way round gives plus two hundred and seventy-seven, the wrong **sign**.
 
 Visual: card shrinks to the top. A small cycle: "2C(s) + 3H₂(g) + 3½O₂(g)" top left, "C₂H₅OH(l) + 3O₂(g)" top right, "2CO₂(g) + 3H₂O(l)" bottom. Rows: "route 1 = 2(−393.5) + 3(−285.8) = −1644.4 kJ"; "ΔfH° = −1644.4 + 1367 = −277.4 ≈ −277 kJ mol⁻¹" (amber), with a grey tag "last video: −277.7 (rounding)" and the ethanol thumbnail from scene 1 ticking. On "Subtracting the other way round" a chip "−1367 − (−1644.4) = +277 kJ mol⁻¹" fades in; on "sign" it is crossed. Hold about 1 second. The ΔfH° row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "subtract the right way".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "ΔHc: C(s) −393.5 | H₂(g) −285.8 | C₂H₅OH(l) −1367 (kJ mol⁻¹)".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Butane, the fuel in a camping stove, has a heat of combustion of minus two thousand eight hundred and seventy-eight kilojoules per mole, and a molar mass of fifty-eight point one two. Hydrogen's is minus two hundred and eighty-five point eight, with a molar mass of two point zero one six. Which fuel releases more energy per mole, and which per gram? Pause here to answer.
 
 Visual: `QuestionCard`: "Butane (C₄H₁₀, M = 58.12 g mol⁻¹) has ΔHc = −2878 kJ mol⁻¹. Hydrogen (H₂, M = 2.016 g mol⁻¹) has ΔHc = −285.8 kJ mol⁻¹. (a) Which fuel releases more energy per mole? (1 mark) (b) Calculate the energy released per gram for each fuel, and identify which releases more per gram. (2 marks)" `m7-camping-gas-burner-v1.png` small beside the card. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The camping gas burner plate stands beside the card from the first frame (about 260 px), untagged. Card text 34 to 38 px so both parts fit. The fuel bars are hidden.
+
 ### 16. feedback 2 (brief)
 > Per mole, butane releases about ten times as much. Per gram, butane gives forty-nine point five kilojoules, and hydrogen gives a hundred and forty-one point eight, so hydrogen wins by almost three times. A bigger number per mole doesn't mean more energy per **gram**.
 
 Visual: card shrinks. Rows: "(a) butane: 2878 kJ mol⁻¹ > 285.8 kJ mol⁻¹"; "(b) butane: 2878 ÷ 58.12 = 49.5 kJ g⁻¹; hydrogen: 285.8 ÷ 2.016 = 141.8 kJ g⁻¹, so hydrogen" (teal). The fuel bars flip as in scene 10. On "doesn't mean more energy per" a chip "butane wins both: 2878 > 285.8" fades in; on "gram" it is crossed. Hold about 1 second. Row (b) frames in a dark-ink box with a green tick. The crossed chip carries a red hand tag "divide by M".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "butane: −2878 kJ mol⁻¹, M = 58.12 | hydrogen: −285.8 kJ mol⁻¹, M = 2.016".
 
 ### 17. conclusion and handoff
 > So combustion data complete an energy cycle because every route burns down to the same floor, and routes with the same start and finish give the same total. One more fuel: glucose. Burned in oxygen, it ends as carbon dioxide and liquid water, releasing two thousand eight hundred and three kilojoules per mole. Your cells run the same overall reaction, and plants run it backwards. How are those two **related**?
 
 Visual: the memory line returns small at the top. On "the same total" the methane cycle pulses once and shrinks away. On "glucose" the cycle board redraws for glucose: the top card "C₆H₁₂O₆(s) + 6O₂(g)"; on "carbon dioxide and liquid water" the bottom card "6CO₂(g) + 6H₂O(l)"; on "two thousand eight hundred and three kilojoules" the orange down arrow "burning: ΔH = −2803 kJ mol⁻¹". On "Your cells" `b6a-mitochondrion-v1.png` small beside it and the label gains "(or respiration)"; on "plants run it backwards" `g1-leaf-v1.png` beside a dashed up arrow "photosynthesis: ?". On "related" the amber chip "Same two levels. How are the two arrows related?" and the chip "Next: How are photosynthesis and respiration related in an enthalpy cycle?" write. Hold about 2 seconds. This is the final frame (m4-v10 opens on it).
 
-### 18. key notes (quiet, hold about 50 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -174,9 +197,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. ΔHc(C) = ΔfH°(CO₂); ΔHc(H₂) = ΔfH°(H₂O, l).
 5. Per gram = |ΔHc| ÷ M; rankings can flip (methane 55.5, octane 47.9 kJ g⁻¹).
 
-Memory aid (framed card, on the notes screen): *Burn it all to the same floor.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Burn it all to the same floor.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -235,6 +256,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,364 characters**, 18 scenes (per scene: 546, 382, 445, 408, 304, 415, 318, 455, 374, 436, 270, 168, 322, 392, 383, 263, 408, 75; Revision 1: 6,367). At 13.3 characters per second the speech is about 478 s; add about 13 s of settling (the routes in 2, the cycle in 4, the route counters in 5, the ladder in 7, the state toggle in 9, the unit toggle in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (about 50 s in all, above the 40 s floor; five short bullets): **about 562 s** (Revision 1: about 570 s), under the cap (Module 4 root decision 14: no added narration).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,364 characters). The notes scene is 45 s in all, so the estimate is about 557 s (it was about 562 s; the notes hold was already 50 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v09` (route chem-y11-m4-v09; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v09`.
@@ -244,6 +267,8 @@ In order (18 scene headings, all `### N.`): hook-prediction, energy-cycle, heats
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v08's final frame into scene 1 by camera continue (the methane row stays); 1 to 2 camera continue (bars become routes); 2 to 3 camera continue (cycle shrinks left); 3 to 4 camera continue; 4 to 5 camera continue; 5 to 6 camera continue; 6 to 7 morph (corners slide onto the ladder); 7 to 8 morph back; 8 to 9 camera continue; 9 to 10 clear change to the fuel bars; 10 to 11 camera continue; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s; Revision 2). Review evidence paths: `checks/c-y11-m4-v09-learning-review.md`, `checks/c-y11-m4-v09-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -259,6 +284,8 @@ Need: no new plates.
 
 Coded: cycle board, corner cards, arrows, data card with flame icons, ladder, floor split, fuel bar charts, calculation rows, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plate newly used on a question card: `m7-spirit-burner-calorimeter-v1.png` cropped to the burner (attempt 1; confirmed by file listing, not re-inspected). Removed: the coded flames (scene 3) and the steam-to-drops icon (scene 9). New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -270,6 +297,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame still matches m4-v08's final frame (reconciled 6 November), and send the final frame to the m4-v10 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -323,3 +352,25 @@ Visual upgrade:
 New plate requests: none.
 
 Counts: 6,364 characters (Revision 1: 6,367); about 570 s to about 562 s (notes hold 60 s to 50 s).
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 3: the coded flames on the data rows become "burned in O₂" chips. Scene 9: the steam-to-drops icon becomes a hand tag.
+- Scene 8: "pen ring on" a label is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 1 gains the spirit burner; both feedback scenes gain navy givens strips.
+- Key notes: the hold is 45 s (it was 50 s).
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,364 characters, unchanged; about 557 s (it was about 562 s; the notes hold was already 50 s).
+
+Calls for root: none.

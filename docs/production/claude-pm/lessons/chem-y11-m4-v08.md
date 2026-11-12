@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V08: Standard enthalpies of formation. How do standard formation enthalpies calculate a reaction enthalpy? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,426 characters, 19 scenes, about 567 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -72,6 +72,16 @@ Handoff: chem-y11-m4-v09, combustion data in an energy cycle.
 - **Opening frame:** m4-v07's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v09` opens on it; for the v09 designer):** left half: the ethanol height diagram (coded). A teal horizontal line across the left half labelled "elements: C(s), H₂(g), O₂(g); ΔfH° = 0". Below it, a level "C₂H₅OH(l) + 3O₂(g): −277.7 kJ" (grey), and further below a level "2CO₂(g) + 3H₂O(l): −1644.4 kJ" (green-grey). A red arrow from the upper level down to the lower one, labelled "ΔHc = −1367 kJ mol⁻¹". The "−277.7" on the ethanol level is ringed amber with a "?" tag beside it reading "how was this measured?". Right half: an equation strip "2C(s) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)  ΔfH° = −277.7 kJ mol⁻¹" with a grey crossed tag "can't be made directly in a calorimeter"; beneath it `m7-spirit-burner-calorimeter-v1.png` small with the slate chip "combustion can be measured". The amber chip "Can combustion data complete the cycle?". The chip "Next: How can combustion data complete an unknown energy cycle?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the two-route diagram and the prediction, scene 1 (about 28 s); (B) the definition and the table with its zeros, scene 2 (about 35 s); (C) the formation cards at full width, scene 3 (about 36 s); (D) the height diagram and its sea-level marker, scenes 4 and 5 (about 56 s); (E) the formula at full width, scene 6 (about 16 s); (F) the ethanol working, scenes 7 and 8 (about 60 s); (G) the shielded burner and its missing energy, scene 9 (about 22 s); (H) the contrast card, scene 10 (about 24 s); (I) methane both ways beside the Bunsen flame, scene 11 (about 21 s); (J) the traps checklist, scene 12 (about 19 s); (K) the memory card, scene 13 (about 8 s); question and feedback cards; the handoff; the notes board. Two cuts were added: the table ran through scenes 2 and 3 (about 71 s) and the height diagram through scenes 4 to 6 (about 72 s), so scenes 3 and 6 now change the frame.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -89,7 +99,9 @@ Visual: "zero" ticks and the table's O₂ row fills "0". On "The standard enthal
 ### 3. formation equations
 > A formation equation always makes exactly one mole of the compound, even if that means fractions in front of the elements. For ammonia, it's half a nitrogen plus one and a half hydrogen, minus forty-six point one. For liquid ethanol, it's two carbon, three hydrogen and half an oxygen, minus two hundred and seventy-seven point seven. The state matters too. Liquid water is minus two hundred and eighty-five point eight, but steam is only minus two hundred and forty-one point **eight**.
 
-Visual: on "exactly one mole of the compound" a formation card builds "→ 1 NH₃(g)" first, then on "half a nitrogen plus one and a half hydrogen" the left side fills "½N₂(g) + 3/2 H₂(g)" (amber fractions) and "ΔfH° = −46.1 kJ mol⁻¹". On "For liquid ethanol" a second card "2C(s) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)  ΔfH° = −277.7 kJ mol⁻¹". On "The state matters" two rows "H₂O(l) −285.8" and on "steam" "H₂O(g) −241.8" (grey tag "difference 44: condensing, m4-v06"); on "eight" the state symbols ring. Stage: the formation cards at full width (48 px). Amber hand tag "exactly 1 mol" with a pen ring on "→ 1 NH₃(g)"; grey hand tag "state matters" on the two water rows.
+Visual: on "exactly one mole of the compound" a formation card builds "→ 1 NH₃(g)" first, then on "half a nitrogen plus one and a half hydrogen" the left side fills "½N₂(g) + 3/2 H₂(g)" (amber fractions) and "ΔfH° = −46.1 kJ mol⁻¹". On "For liquid ethanol" a second card "2C(s) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)  ΔfH° = −277.7 kJ mol⁻¹". On "The state matters" two rows "H₂O(l) −285.8" and on "steam" "H₂O(g) −241.8" (grey tag "difference 44: condensing, m4-v06"); on "eight" the state symbols ring. Stage: the formation cards at full width (48 px). Amber hand tag "exactly 1 mol" with a pen ring round "→ 1 NH₃(g)"; grey hand tag "state matters" on the two water rows.
+
+Upgrade (Revision 3): Stage change (about 36 s): the formation cards take the full width (equations 48 px) and the table shrinks to a narrow strip at the right, keeping only the rows named in this scene.
 
 ### 4. heights from sea level
 > Think of the elements as sea level. Each compound's formation enthalpy is its height above or below that level. Most compounds sit below, because forming them releases energy, but a few, like ethene, sit above. Once every substance has a height measured from the same sea level, any reaction's delta H is just the difference in **height**.
@@ -105,6 +117,8 @@ Visual: on "an indirect route" a reactants level and a products level on the hei
 > So delta H for a reaction is the sum of the formation enthalpies of the products, minus the sum for the reactants. Each value is per mole of that substance, so multiply it by its coefficient in the equation **first**.
 
 Visual: the formula strip settles at the top right: "ΔH° = Σ n ΔfH°(products) − Σ n ΔfH°(reactants)". On "Each value is per mole" a tag "kJ per mol of that substance"; on "multiply it by its coefficient" the n's light amber with "n = coefficient"; on "first" an example chip "2 CO₂(g): 2 × (−393.5) = −787.0". Amber hand tag "× n first" with a pen ring on the coefficient in the example chip.
+
+Upgrade (Revision 3): Stage change (about 16 s): the formula writes at full width in the centre (52 px) and the height diagram shrinks to the left third, its products and reactants levels still labelled.
 
 ### 7. ethanol: the products
 > Let's calculate a number you've already met, the enthalpy of combustion of ethanol. Liquid ethanol plus three oxygen gives two carbon dioxide and three liquid water. For the products, it's two times minus three hundred and ninety-three point five, plus three times minus two hundred and eighty-five point eight. That's minus one thousand six hundred and forty-four point **four**.
@@ -129,7 +143,7 @@ Visual: clear change to the contrast card, two columns. Left on "bond enthalpies
 ### 11. methane, both ways
 > For methane, our bond enthalpy estimate was minus eight hundred and eight, and that was for steam. Formation enthalpies give minus eight hundred and ninety point three, which is the data value for liquid water, because each one was found for that exact substance in that exact **state**.
 
-Visual: stage change: `p01-bunsen-lit-v2.png` at the left (grey tag "natural gas: mostly methane"), rows at the right on cue: "bonds (m4-v06): −808 kJ mol⁻¹, H₂O(g), estimate" (grey); on "minus eight hundred and ninety point three" "ΔfH°: (−393.5) + 2(−285.8) − (−74.8) = −890.3 kJ mol⁻¹, H₂O(l)" (red), with the table row "CH₄(g) −74.8" lighting; on "state" the "(l)" in the equation rings. Grey hand tag "estimate" on the −808 row; red hand tag "exact substances, exact states" with a pen ring on "(l)"; the −890.3 row frames in a dark-ink box with a green tick.
+Visual: stage change: `p01-bunsen-lit-v2.png` at the left (grey tag "natural gas: mostly methane"), rows at the right on cue: "bonds (m4-v06): −808 kJ mol⁻¹, H₂O(g), estimate" (grey); on "minus eight hundred and ninety point three" "ΔfH°: (−393.5) + 2(−285.8) − (−74.8) = −890.3 kJ mol⁻¹, H₂O(l)" (red), with the table row "CH₄(g) −74.8" lighting; on "state" the "(l)" in the equation rings. Grey hand tag "estimate" on the −808 row; red hand tag "exact substances, exact states" with a pen ring round "(l)"; the −890.3 row frames in a dark-ink box with a green tick.
 
 ### 12. traps
 > Four traps. Multiply every value by its coefficient. Write zero for elements like oxygen. Use the right state, because liquid water and steam have different values. And keep the order, products minus reactants. Get it backwards, and you flip the **sign**.
@@ -146,39 +160,45 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Propane burns according to the equation C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l). Use the standard enthalpies of formation below to calculate the enthalpy of combustion of propane. ΔfH° (kJ mol⁻¹): C₃H₈(g) −103.8; CO₂(g) −393.5; H₂O(l) −285.8. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted camping gas burner (`m7-camping-gas-burner-v1.png`, about 280 px), untagged, as the propane burning. The three data values sit on one line at 34 px or more. The formula strip and the checklist are hidden.
+
 ### 15. feedback 1 (brief)
 > Products: three times minus three hundred and ninety-three point five, plus four times minus two hundred and eighty-five point eight, which is minus two thousand three hundred and twenty-three point seven. Reactants: minus one hundred and three point eight, and oxygen is zero. So delta H is about minus two thousand two hundred and twenty kilojoules per mole. Reactants minus products gives the wrong **sign**.
 
 Visual: card shrinks to the top. Rows on cue: "products: 3(−393.5) + 4(−285.8) = −1180.5 − 1143.2 = −2323.7 kJ"; "reactants: −103.8 + 5(0) = −103.8 kJ"; "ΔHc = −2323.7 − (−103.8) = −2219.9 ≈ −2220 kJ mol⁻¹" (red). On "sign" a chip "−103.8 − (−2323.7) = +2220" fades in and is crossed, note "bond order used". Hold about 1 second. The ΔHc row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "that's the bond order".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "C₃H₈(g) + 5O₂(g) → 3CO₂(g) + 4H₂O(l) | ΔfH°: C₃H₈ −103.8 | CO₂ −393.5 | H₂O(l) −285.8 (kJ mol⁻¹)".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Liquid hydrogen peroxide decomposes into liquid water and oxygen gas. The formation enthalpies are, hydrogen peroxide, minus one hundred and eighty-seven point eight, and liquid water, minus two hundred and eighty-five point eight. Calculate delta H for the equation on the card, and explain why no value is given for oxygen. Pause here to answer.
 
 Visual: `QuestionCard`: "Hydrogen peroxide decomposes: 2H₂O₂(l) → 2H₂O(l) + O₂(g). ΔfH° (kJ mol⁻¹): H₂O₂(l) −187.8; H₂O(l) −285.8. (a) Calculate ΔH for this reaction. (2 marks) (b) Explain why no ΔfH° value is given for O₂(g). (1 mark)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted flask of hydrogen peroxide (`y11c-flask-peroxide-mno2-plug-fizz-v1.png`, about 280 px tall), untagged. Card text 34 to 38 px so both parts fit. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Products: two times minus two hundred and eighty-five point eight, plus zero for oxygen, minus five hundred and seventy-one point six. Reactants: two times minus one hundred and eighty-seven point eight, minus three hundred and seventy-five point six. So delta H is minus one hundred and ninety-six point zero kilojoules per mole. Oxygen gas is an element in its standard state, so its value is zero. Leaving out the twos gives minus ninety-eight point **zero**.
 
 Visual: card shrinks. Rows on cue: "products: 2(−285.8) + 0 = −571.6 kJ"; "reactants: 2(−187.8) = −375.6 kJ"; "ΔH = −571.6 − (−375.6) = −196.0 kJ mol⁻¹" (red); "(b) O₂(g): element in its standard state, ΔfH° = 0". On "zero" a chip "−285.8 − (−187.8) = −98.0" fades in and is crossed, note "coefficients ignored". Hold about 1 second. The ΔH row and the (b) row frame in a dark-ink box with a green tick. The crossed chip carries a red hand tag "use the twos".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "2H₂O₂(l) → 2H₂O(l) + O₂(g) | ΔfH°: H₂O₂(l) −187.8 | H₂O(l) −285.8 (kJ mol⁻¹)".
 
 ### 18. conclusion and handoff
 > So standard formation enthalpies calculate a reaction enthalpy because each one is a height measured from the elements, and by Hess's law, products minus reactants gives the change. But where do those heights come from? You can't make ethanol by mixing carbon, hydrogen and oxygen in a calorimeter, so its formation enthalpy has to be found another way. Ethanol's combustion, though, is easy to measure. Could combustion data complete the **cycle**?
 
 Visual: the memory line returns small at the top. On "a height measured from the elements" the ethanol height diagram returns on the left half: the teal line "elements: C(s), H₂(g), O₂(g); ΔfH° = 0", the level "C₂H₅OH(l) + 3O₂(g): −277.7 kJ", the level "2CO₂(g) + 3H₂O(l): −1644.4 kJ" and the red arrow "ΔHc = −1367 kJ mol⁻¹". On "where do those heights come from" the "−277.7" is ringed amber with the tag "? how was this measured?". On "You can't make ethanol" the right half shows the strip "2C(s) + 3H₂(g) + ½O₂(g) → C₂H₅OH(l)  ΔfH° = −277.7 kJ mol⁻¹" with a grey crossed tag "can't be made directly in a calorimeter". On "easy to measure" `m7-spirit-burner-calorimeter-v1.png` small beneath it with the slate chip "combustion can be measured". On "cycle" the amber chip "Can combustion data complete the cycle?" and the chip "Next: How can combustion data complete an unknown energy cycle?" write. Hold about 2 seconds. This is the final frame (m4-v09 opens on it).
 
-### 19. key notes (quiet, hold about 50 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. ΔfH°: enthalpy change when 1 mol of a compound forms from its elements, all in standard states.
+1. ΔfH°: enthalpy change when 1 mol of a compound forms from its elements in standard states.
 2. Elements in their standard states: ΔfH° = 0.
 3. ΔH° = Σ n ΔfH°(products) − Σ n ΔfH°(reactants).
 4. States matter: H₂O(l) −285.8, H₂O(g) −241.8 kJ mol⁻¹.
 5. Bonds: broken − formed (costs). Formation: products − reactants (heights).
 
-Memory aid (framed card, on the notes screen): *Formation enthalpies are heights: products − reactants.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Formation enthalpies are heights: products − reactants.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -231,6 +251,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,426 characters**, 19 scenes (per scene: 370, 463, 483, 335, 408, 213, 376, 423, 292, 315, 283, 251, 102, 370, 407, 357, 458, 445, 75; Revision 1: 6,364). At 13.3 characters per second the speech is about 483 s; add about 13 s of settling (the height diagram in 4, the marker in 5, the numeric marker run in 8, the stage changes in 9 and 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 44 s more of the quiet notes hold (about 50 s in all, above the 40 s floor; five short bullets): **about 567 s** (Revision 1: about 569 s), under the cap. The scene 1 callback sentence is paid for by the shorter notes hold (Module 4 root decision 14: length-neutral at the cap).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,426 characters). The notes scene is 45 s in all, so the estimate is about 562 s (it was about 567 s; the notes hold was already 50 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v08` (route chem-y11-m4-v08; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v08`.
@@ -240,6 +262,8 @@ In order (19 scene headings, all `### N.`): hook-prediction, definition-zero, fo
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v07's final frame into scene 1 by camera continue (the table slides in beside the diagram); 1 to 2 camera continue; 2 to 3 camera continue; 3 to 4 clear change to the height diagram; 4 to 5 camera continue; 5 to 6 camera continue; 6 to 7 camera continue (calculation layout beside the diagram); 7 to 8 camera continue; 8 to 9 camera continue; 9 to 10 clear change to the contrast card; 10 to 11 camera continue; 11 to 12 clear change; 12 to 13 clear change; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 50 s; Revision 2). Review evidence paths: `checks/c-y11-m4-v08-learning-review.md`, `checks/c-y11-m4-v08-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -253,6 +277,8 @@ Need: no new plates.
 
 Coded: data table, formation cards, height diagram with sea-level line and route arrows, bars, contrast card, checklist, calculation rows, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m7-camping-gas-burner-v1.png` (attempt 1), `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (attempt 2). New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -265,6 +291,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m4-v07's final frame, and send the final frame description to the `chem-y11-m4-v09` designer (written in parallel) so v09 opens on it exactly.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. The peroxide flask plate shows a catalyst plug and fizzing; confirm that is acceptable beside a card that states only the decomposition equation, or swap it for a neutral flask.
 
 ## YouTube metadata (draft)
 
@@ -320,3 +348,25 @@ Visual upgrade:
 New plate requests: none.
 
 Counts: 6,426 characters (Revision 1: 6,364); about 569 s to about 567 s (notes hold 60 s to 50 s).
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scenes 3 and 6: two stage changes break up the table (about 71 s) and the height diagram (about 72 s).
+- Scenes 3 and 11: "pen ring on" a label is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 1 gains the camping gas burner and attempt 2 the peroxide flask; both feedback scenes gain navy givens strips.
+- Key notes: the first bullet is shortened to fit one line; the hold is 45 s (it was 50 s).
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,426 characters, unchanged; about 562 s (it was about 567 s; the notes hold was already 50 s).
+
+Calls for root: the fizzing peroxide flask stands beside the attempt 2 card.

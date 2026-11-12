@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V13: Gibbs free energy and spontaneity. How do enthalpy, entropy and temperature determine spontaneity? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,746 characters, 15 scenes, about 525 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -53,7 +53,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Board layout (Revision 2):** heading top left. Stages, each under about 47 s: m4-v12's final frame (1); the gloss card with the painted ice and the electrolysis cell (2); the cold and hot rings with live counters, then the formula strip (3); the sign dial at full width under the strip (4); the calculation board with the beam (5); the full-width trap rows (6); the painted Bunsen pair with the rate strip (7); the painted limestone with its calculation (8); the framed memory card (9); question cards (10 to 13); the final layout (14).
 - **Colour roles (Revision 2, fixed for the whole video):** enthalpy orange (released) or blue (absorbed); entropy purple; temperature slate; ΔG green when negative, red when positive; activation energy amber; energy packets amber; framed answers in a dark-ink box with a green tick; crossed mistakes red strike plus a red hand tag; hand-font teacher tags take the colour of the item they mark; source and derivation rows grey; earlier rows dimmed.
 - **Type sizes (Revision 2, 1080p):** the current calculation row at least 44 px (48 px); framed results, the ring counters and the beam's ΔG readout about 52 px; givens, conversion rows and dial labels 34 to 36 px; the grey derivation rows 28 px (supporting, not required reading); earlier rows 30 px; hand-font tags 34 to 40 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
-- **Simulation (Revision 2): the cold and hot rings (scene 3) and the live beam (scene 5).** A live readout on the core idea (the same heat matters more to cold surroundings): three packets drop into each ring (m4-v11's packet model, 6 particles per ring); the cold ring's ways counter (52 px) jumps from 6 to 126 (× 21), the hot ring's from 3003 to 8568 (× 2.9), counting the ways with the v11 rule (grey tag "packet model, as in m4-v11"). In scene 5 the balance beam's two pans carry live weights "ΔH°: −91.8" and "TΔS°: −59.0" as each row is calculated, and its pointer readout settles on "ΔG° = −32.8 kJ mol⁻¹".
+- **Simulation (Revision 2): the cold and hot rings (scene 3) and the live beam (scene 5).** A live readout on the core idea (the same heat matters more to cold surroundings): three packets drop into each ring (m4-v11's packet model, 6 particles per ring); the cold ring's ways counter (52 px) jumps from 6 to 126 (× 21), the hot ring's from 3003 to 8568 (× 2.9), counting the ways with the v11 rule (grey tag "packet model, as in m4-v11"). In scene 5 the balance beam's two pans carry live weights "ΔH°: −91.8" and "TΔS°: −59.0" as each row is calculated, and its pointer readout settles at "ΔG° = −32.8 kJ mol⁻¹".
 
 Author notes (not learner copy):
 (a) Derivation (on screen in grey, not spoken): at constant T and P, ΔS(surroundings) = −ΔH(system) ÷ T; ΔS(total) = ΔS − ΔH ÷ T; multiplying by −T gives −TΔS(total) = ΔH − TΔS ≡ ΔG; so ΔG < 0 exactly when ΔS(total) > 0.
@@ -72,6 +72,18 @@ Handoff: chem-y11-m4-v14, temperature reversing spontaneity.
 
 - **Opening frame:** m4-v12's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v14` opens on it):** left: `y11c-limestone-lumps-v1.png` with the equation card "CaCO₃(s) → CaO(s) + CO₂(g)", chips "ΔH° = +178.3 kJ mol⁻¹" (blue) and "ΔS° = +160.6 J K⁻¹ mol⁻¹" (purple). Right: a coded ΔG axis (vertical "ΔG° (kJ mol⁻¹)", horizontal "T (K)", a horizontal zero line), with one red point at "298 K: +130.4" and a faint dashed purple arrow leaving the point downward to the right, tagged "−TΔS grows as T rises". The amber chip "Hot enough, could ΔG turn negative?". The chip "Next: When can changing temperature reverse reaction spontaneity?" at the bottom of the safe area (above the bottom 12%).
+
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the Haber card and the prediction, scene 1 (about 19 s); (B) what spontaneous means, scene 2 (about 31 s); (C) the cold and hot rings, scene 3 (about 39 s); (D) the sign dial, scene 4 (about 36 s); (E) the ammonia calculation with its live beam, scene 5 (about 45 s); (F) the two unit traps at full width, scene 6 (about 27 s); (G) the sealed vessel that never changes, then the lit burner, scene 7 (about 36 s); (H) the limestone calculation, scene 8 (about 47 s); (I) the memory card, scene 9 (about 7 s); question and feedback cards; the handoff; the notes board. One cut was added: the ammonia board ran through scenes 5 and 6 (about 72 s), so scene 6 now changes the frame.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The sealed vessel in scene 7 is a run of the particle box engine (`src/explainer/sims/`): two kinds of particle with a reaction whose energy barrier is set so high that no collision succeeds at this temperature, so the product counter honestly stays at zero while the collisions keep happening.
+- **No coded pictures of real things.** The flask and calendar in scene 7 are not drawn.
 
 ## Script and shots
 
@@ -100,17 +112,21 @@ Visual: the sign dial under the strip: a horizontal ΔG line, a zero mark; on "I
 ### 5. ammonia at twenty-five degrees
 > Now ammonia at twenty-five degrees. Delta H is minus ninety-one point eight kilojoules. Delta S is minus one hundred and ninety-eight point one joules, which is minus zero point one nine eight one kilojoules per kelvin. T is two hundred and ninety-eight kelvin. T delta S is two hundred and ninety-eight times minus zero point one nine eight one, minus fifty-nine point zero. So delta G is minus ninety-one point eight, minus minus fifty-nine point zero, which is minus thirty-two point eight kilojoules per mole. Negative, so yes, it's spontaneous. At this temperature, the heat release **wins**.
 
-Visual: the calculation board beside the Haber card. Task strip: "Is N₂(g) + 3H₂(g) → 2NH₃(g) spontaneous at 25 °C?". Equation strip "ΔG° = ΔH° − TΔS°". Givens: on "minus ninety-one point eight kilojoules" "ΔH° = −91.8 kJ mol⁻¹" (orange); on "minus zero point one nine eight one kilojoules per kelvin" "ΔS° = −198.1 J K⁻¹ mol⁻¹ = −0.1981 kJ K⁻¹ mol⁻¹" (purple, the ÷ 1000 written small); on "two hundred and ninety-eight kelvin" "T = 25 + 273 = 298 K" (slate). Stage rows: on "two hundred and ninety-eight times minus zero point one nine eight one" "TΔS° = 298 × (−0.1981) = −59.0 kJ mol⁻¹"; on "minus minus fifty-nine point zero" "ΔG° = −91.8 − (−59.0)"; on "minus thirty-two point eight kilojoules per mole" "= −32.8 kJ mol⁻¹" (green). On "spontaneous" a classification row "ΔG° < 0: spontaneous at 25 °C"; the prediction chip "yes" ticks. On "wins" the balance beam, its pans carrying live weights "ΔH°: −91.8" and "TΔS°: −59.0", tips toward the orange chip and its readout settles on "ΔG° = −32.8 kJ mol⁻¹"; the result row frames in a dark-ink box with a green tick (52 px). Purple hand tag "÷ 1000 first" with a pen ring on the ΔS° conversion row; red hand tag "minus a negative adds" with a `ScribbleCircle` round the double minus.
+Visual: the calculation board beside the Haber card. Task strip: "Is N₂(g) + 3H₂(g) → 2NH₃(g) spontaneous at 25 °C?". Equation strip "ΔG° = ΔH° − TΔS°". Givens: on "minus ninety-one point eight kilojoules" "ΔH° = −91.8 kJ mol⁻¹" (orange); on "minus zero point one nine eight one kilojoules per kelvin" "ΔS° = −198.1 J K⁻¹ mol⁻¹ = −0.1981 kJ K⁻¹ mol⁻¹" (purple, the ÷ 1000 written small); on "two hundred and ninety-eight kelvin" "T = 25 + 273 = 298 K" (slate). Stage rows: on "two hundred and ninety-eight times minus zero point one nine eight one" "TΔS° = 298 × (−0.1981) = −59.0 kJ mol⁻¹"; on "minus minus fifty-nine point zero" "ΔG° = −91.8 − (−59.0)"; on "minus thirty-two point eight kilojoules per mole" "= −32.8 kJ mol⁻¹" (green). On "spontaneous" a classification row "ΔG° < 0: spontaneous at 25 °C"; the prediction chip "yes" ticks. On "wins" the balance beam, its pans carrying live weights "ΔH°: −91.8" and "TΔS°: −59.0", tips toward the orange chip and its readout settles at "ΔG° = −32.8 kJ mol⁻¹"; the result row frames in a dark-ink box with a green tick (52 px). Purple hand tag "÷ 1000 first" with a pen ring on the ΔS° conversion row; red hand tag "minus a negative adds" with a `ScribbleCircle` round the double minus.
 
 ### 6. the two unit traps
 > Two traps. Forget to divide delta S by a thousand, and you'd get plus fifty-eight thousand nine hundred and forty-two, which says non-spontaneous and is completely wrong. Use twenty-five degrees instead of two hundred and ninety-eight kelvin, and you'd get minus eighty-six point eight, the right sign but the wrong number. Convert both before you **substitute**.
 
 Visual: two ghost rows under the working: on "Forget to divide delta S by a thousand" "−91.8 − 298 × (−198.1) = +58 942" with the red stamp "J not converted"; on "Use twenty-five degrees" "−91.8 − 25 × (−0.1981) = −86.8" with the stamp "T must be in kelvin". On "substitute" the two conversion rows in the givens are ringed teal, tag "convert first". Stage: the two trap rows fill the frame at 44 px (stage change from the board). Red hand tags "J vs kJ" and "K, not °C" on the two crossed rows.
 
+Upgrade (Revision 3): Stage change (about 27 s): the working shrinks to its framed result, "ΔG° = −32.8 kJ mol⁻¹", at the top, and the two trap rows take the full width one at a time (48 px), each with its red stamp.
+
 ### 7. spontaneous is not fast
 > So here's the surprise. Mix nitrogen and hydrogen at twenty-five degrees, and you can wait for years without making any ammonia you could measure. Spontaneous doesn't mean fast. Breaking nitrogen's strong triple bond gives this reaction a very high activation energy, so almost no collisions succeed. Methane and air are the same. Burning is spontaneous, but a Bunsen burner still needs a spark. Delta G tells you whether a reaction can go. Activation energy tells you how **fast**.
 
 Visual: on "Mix nitrogen and hydrogen" a coded sealed flask of N₂ and H₂ molecules with a calendar counter running "1 year, 2 years..." and a "NH₃ formed: none measurable" readout. On "Spontaneous doesn't mean fast" a crossed chip "spontaneous = fast". On "very high activation energy" the rate strip: a coded energy profile with a tall amber Eₐ hill (from v01's style) beside the green "ΔG° = −32.8". On "Methane and air" `p01-bunsen-unlit-v2.png`; on "still needs a spark" a coded spark and the plate cross-fades to `p01-bunsen-lit-v2.png`. On "Delta G tells you whether" a green chip "ΔG: whether"; on "fast" an amber chip "Eₐ: how fast". Stage: the painted Bunsen burner large at the left, the rate strip at the right. Amber hand tag "the hill decides the speed" with a `PenArrow` up the Eₐ hill; green hand tag "can go" on the ΔG chip.
+
+Upgrade (Revision 3): No flask or calendar is drawn in code. The sealed mixture is a plain rounded particle box labelled "sealed: N₂ and H₂, 25 °C" (the particle box engine run, see "Simulation engine"), with a slate counter chip "years: 1, 2, 3 ..." and the "NH₃ made: 0" counter beside it.
 
 ### 8. limestone at twenty-five degrees
 > Now a reaction that absorbs heat. Limestone, calcium carbonate, can break down into lime and carbon dioxide gas. Delta H is plus one hundred and seventy-eight point three kilojoules, and delta S is plus one hundred and sixty point six joules per kelvin, which is plus zero point one six zero six kilojoules. At two hundred and ninety-eight kelvin, T delta S is forty-seven point nine. So delta G is plus one hundred and seventy-eight point three minus forty-seven point nine, plus one hundred and thirty point four kilojoules. Positive, so it's non-spontaneous. The entropy gain helps, but at this temperature it's far too **small**.
@@ -127,39 +143,45 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "For the reaction 2H₂O(l) → 2H₂(g) + O₂(g): ΔH° = +571.7 kJ mol⁻¹ and ΔS° = +326.6 J K⁻¹ mol⁻¹. Calculate ΔG° at 25 °C, and classify the reaction as spontaneous or non-spontaneous at this temperature. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted beaker of water (`y11c-beaker-water-36ml-v1.png`, about 280 px), untagged. The two data values sit on one line at 34 px or more. The dial and memory card are hidden.
+
 ### 11. feedback 1 (brief)
 > Delta S is zero point three two six six kilojoules, and T is two hundred and ninety-eight kelvin. T delta S is ninety-seven point three. So delta G is five hundred and seventy-one point seven minus ninety-seven point three, about plus four hundred and seventy-four kilojoules per mole. Positive, so non-spontaneous. Forgetting to divide by a thousand gives about minus ninety-seven thousand, which wrongly says **spontaneous**.
 
 Visual: card shrinks to the top. Rows: "ΔS° = 326.6 ÷ 1000 = 0.3266 kJ K⁻¹ mol⁻¹; T = 298 K"; "TΔS° = 298 × 0.3266 = 97.3 kJ mol⁻¹"; "ΔG° = 571.7 − 97.3 = +474 kJ mol⁻¹: non-spontaneous" (red). On "Forgetting to divide by a thousand" a chip "571.7 − 298 × 326.6 ≈ −97 000" fades in; on "spontaneous" it gains the wrong verdict "spontaneous" and is crossed. Hold about 1 second. The ΔG° row frames in a dark-ink box with a tick (52 px). The crossed chip carries a red hand tag "divide by 1000".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "2H₂O(l) → 2H₂(g) + O₂(g) | ΔH° = +571.7 kJ mol⁻¹ | ΔS° = +326.6 J K⁻¹ mol⁻¹ | 25 °C".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Hydrogen peroxide decomposes into water and oxygen. Delta H is minus one hundred and ninety-six point one kilojoules, and delta S is plus one hundred and twenty-six point zero joules per kelvin. Calculate delta G at twenty-five degrees. Then explain why a bottle of hydrogen peroxide can still be stored for months. Pause here to answer.
 
 Visual: `QuestionCard`: "For the reaction 2H₂O₂(l) → 2H₂O(l) + O₂(g): ΔH° = −196.1 kJ mol⁻¹ and ΔS° = +126.0 J K⁻¹ mol⁻¹. (a) Calculate ΔG° at 25 °C. (2 marks) (b) Hydrogen peroxide solution can be stored for months at room temperature. Explain why this is consistent with your answer to (a). (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted clear bottle of colourless liquid (`y11c-sample-bottle-clear-v1.png`, about 260 px tall), untagged, as the stored solution. Card text 34 to 38 px so both parts fit. Nothing answer-bearing: no catalyst and no bubbles are shown.
+
 ### 13. feedback 2 (brief)
 > T delta S is two hundred and ninety-eight times zero point one two six, thirty-seven point five. So delta G is minus one hundred and ninety-six point one minus thirty-seven point five, about minus two hundred and thirty-four kilojoules. It's spontaneous, but the activation energy is high, so it's very slow, until a catalyst speeds it up. Saying it must decompose quickly confuses spontaneous with **fast**.
 
 Visual: card shrinks. Rows: "TΔS° = 298 × 0.1260 = 37.5 kJ mol⁻¹"; "ΔG° = −196.1 − 37.5 = −234 kJ mol⁻¹: spontaneous" (green); "(b) high Eₐ: very slow at room temperature; a catalyst (such as MnO₂) speeds it up" (amber). On "confuses spontaneous with" a chip "ΔG < 0, so it decomposes quickly" fades in; on "fast" it is crossed. Hold about 1 second. The ΔG° row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "whether, not how fast".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "2H₂O₂(l) → 2H₂O(l) + O₂(g) | ΔH° = −196.1 kJ mol⁻¹ | ΔS° = +126.0 J K⁻¹ mol⁻¹ | stored for months at room temperature".
 
 ### 14. conclusion and handoff
 > So enthalpy, entropy and temperature combine in delta G equals delta H minus T delta S, and its sign at the stated temperature decides whether a change is spontaneous. Limestone is non-spontaneous at twenty-five degrees. But lime kilns turn limestone into lime every day. Its delta S is positive, so as T gets bigger, minus T delta S gets more negative. Hot enough, could delta G turn **negative**?
 
 Visual: the memory line returns small at the top. On "delta G equals delta H minus T delta S" the green formula strip pulses. On "Limestone is non-spontaneous" the limestone plate and card return at the left with the chips "ΔH° = +178.3 kJ mol⁻¹" and "ΔS° = +160.6 J K⁻¹ mol⁻¹". On "lime kilns" a grey chip "lime kilns: limestone → lime". On "as T gets bigger" a coded ΔG axis draws at the right ("ΔG° (kJ mol⁻¹)" against "T (K)", zero line), with the red point "298 K: +130.4"; on "minus T delta S gets more negative" a faint dashed purple arrow leaves the point downward to the right, tag "−TΔS grows as T rises". On "negative" the amber chip "Hot enough, could ΔG turn negative?" and the chip "Next: When can changing temperature reverse reaction spontaneity?" write. Hold about 2 seconds. This is the final frame (m4-v14 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Spontaneous: tends to happen by itself under the stated conditions (may need a start; may be slow).
-2. ΔG° = ΔH° − TΔS°: negative, spontaneous; positive, non-spontaneous; zero, neither favoured.
+1. Spontaneous: tends to happen by itself under the stated conditions (it may be slow).
+2. ΔG° = ΔH° − TΔS°: negative, spontaneous; positive, non-spontaneous; zero, neither.
 3. Units: ΔS ÷ 1000 (kJ K⁻¹ mol⁻¹); T in K (°C + 273). Convert before substituting.
 4. At 298 K: NH₃ −32.8 kJ mol⁻¹ (spontaneous); CaCO₃ +130.4 (non-spontaneous).
 5. Spontaneous ≠ fast: ΔG says whether; activation energy says how fast.
 
-Memory aid (framed card, on the notes screen): *Negative ΔG says it can go. Activation energy says how fast.*
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Negative ΔG says it can go. Activation energy says how fast.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -212,6 +234,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,746 characters**, 15 scenes (per scene: 249, 414, 518, 476, 593, 359, 478, 629, 94, 293, 423, 347, 404, 394, 75; Revision 1: 5,746). At 13.3 characters per second the speech is about 432 s; add about 12 s of settling (the rings and counters in 3, the dial in 4, the calculation and beam in 5, the rate strip in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 525 s** (Revision 1: about 523 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,746 characters). The notes scene is 45 s in all, so the estimate is about 510 s (it was about 525 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v13` (route chem-y11-m4-v13; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v13`.
@@ -221,6 +245,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, spontaneous-defined
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v12's final frame into scene 1 by camera continue; 1 to 2 camera continue (the Haber card shrinks to the corner); 2 to 3 clear change to the surroundings ring; 3 to 4 camera continue (the formula strip stays); 4 to 5 camera continue (calculation board beside the Haber card); 5 to 6 camera continue; 6 to 7 clear change to the flask and rate strip; 7 to 8 board clear to the limestone board; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v13-learning-review.md`, `checks/c-y11-m4-v13-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -236,6 +262,8 @@ Requested in Revision 1 (now delivered):
 
 Coded: surroundings rings, formula build, sign dial, calculation rows, electrolysis cell, sealed flask and calendar counter, rate strip, ΔG axis, bars, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `y11c-beaker-water-36ml-v1.png` (attempt 1), `y11c-sample-bottle-clear-v1.png` (attempt 2). Removed: the coded flask and calendar (scene 7). New plate requests: none. Simulation: the particle box engine for the scene 7 vessel.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -247,6 +275,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (the electrolysis cell and the spark are coded); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v12's final frame, and send the final frame and the limestone plate pairing to the m4-v14 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the beaker plate carries no printed volume that could be read as data for the question; if it does, crop or swap it.
 
 ## YouTube metadata (draft)
 
@@ -298,3 +328,25 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none (the Revision 1 limestone request is delivered).
 
 Counts: 5,746 characters (Revision 1: 5,746); about 523 s to about 525 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 6: a stage change breaks up the ammonia board (about 72 s). Scene 7: the coded flask and calendar become a particle box engine run with a years counter.
+- Scene 5: "settles on" a readout value is now "settles at" (visual text only, for the checking script).
+- Question cards: attempt 1 gains a beaker of water and attempt 2 a clear bottle; both feedback scenes gain navy givens strips.
+- Key notes: the first two bullets are shortened to fit one line each.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "may need a start", which stays in scene 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,746 characters, unchanged; about 510 s (it was about 525 s).
+
+Calls for root: the particle box engine shows "can go but does not" in scene 7 with a barrier no collision clears.

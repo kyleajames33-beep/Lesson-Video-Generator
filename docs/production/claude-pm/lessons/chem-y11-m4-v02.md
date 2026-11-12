@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V02: Calorimetry and q = mcΔT. How can a calorimeter turn a temperature rise into heat transfer? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade.
 
 Narration 6,345 characters, 19 scenes, about 568 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,18 @@ Handoff: chem-y11-m4-v03, combustion calorimetry errors.
 - **Opening frame:** m4-v01's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v03` opens on it):** left: `m7-spirit-burner-calorimeter-v1.png` with readout "31.2 °C", "started at 19.5 °C", label "200.0 g of water", and a teal result chip on the can "water gained 9.78 kJ". Lower left: `m7-spirit-burner-on-balance-v1.png` small, coded readout "151.62 g" with a grey "started at 152.34 g" and a chip "0.72 g of ethanol burned". Right: a two-bar comparison (coded): an orange bar "0.72 g of ethanol can release about 21 kJ (data)" and a shorter teal bar "the water gained 9.78 kJ", the gap between their ends shaded grey with a "?" in it. The amber chip "Where did the rest of the energy go?". The chip "Next: Why does combustion calorimetry underestimate a fuel enthalpy?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the burner rig and the prediction, scene 1 (about 24 s); (B) the water-mass slider with its particle lens, scene 2 (about 30 s); (C) water against copper, scene 3 (about 31 s); (D) the scaling ladder, scene 4 (about 26 s); (E) the °C and K scales at full width, scene 5 (about 25 s); (F) the burner calculation and "whose mass?", scenes 6 and 7 (about 60 s); (G) the foam cup station and its calculation, scenes 8 and 9 (about 55 s); (H) the two containers compared, scene 10 (about 25 s); (I) the sign card, scene 11 (about 34 s); (J) both calorimeters and the big assumption, scene 12 (about 22 s); (K) the memory line, scene 13 (about 6 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The particle lens beside the water-mass slider in scene 2 is a run of the particle box engine (`src/explainer/sims/`): the same energy input shared among twice as many particles, so each particle speeds up by less. The slider readout itself is lesson-coded arithmetic (9781 J ÷ (m × 4.18)).
+- **No coded pictures of real things.** The two thermometers in scene 3 are not drawn in code; each block carries a coded readout chip instead.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -88,6 +100,8 @@ Visual: "about half" ticks; the ghost can's readout shows "+5.85 °C". On "share
 > It also depends on what the stuff is. Specific heat capacity, c, is the energy needed to warm one gram of a substance by one degree. For water it's four point one eight joules per gram per degree. Copper needs only about zero point three nine joules. The data sheet writes water's value per kilogram, four point one eight times ten to the three joules per kilogram per kelvin. That's the same value, written per **gram**.
 
 Visual: the c comparison: two coded blocks, "1 g of water" (blue) and "1 g of copper" (copper colour), each with a thermometer rising one degree. On "Specific heat capacity, c" gloss card "specific heat capacity, c: the energy to warm 1 g by 1 degree". On "four point one eight joules" the water's energy counter fills to "4.18 J" (teal); on "zero point three nine" the copper's counter stops at "0.39 J" (tag "copper: 0.385 J g⁻¹ K⁻¹"). On "The data sheet" a coded data-sheet strip "Specific heat capacity of water: 4.18 × 10³ J kg⁻¹ K⁻¹"; on "gram" an equals sign links it to "4.18 J g⁻¹ K⁻¹" with the working "4180 J per kg ÷ 1000 g per kg = 4.18 J per g" (teal hand tag "same value, new unit").
+
+Upgrade (Revision 3): No thermometer is drawn in code. Each block ("1 g of water", "1 g of copper") carries a slate readout chip "+1 °C" (44 px) that ticks up as its joule counter fills; the two joule counters are the picture.
 
 ### 4. building q = mcΔT
 > Now build the formula. One gram of water, warmed by one degree, takes four point one eight joules. Two hundred grams takes two hundred times as much. And warming it by eleven point seven degrees takes eleven point seven times that again. So the heat is the mass, times the specific heat capacity, times the temperature change. q equals m c delta **T**.
@@ -113,6 +127,8 @@ Visual: on "whatever warmed up and was measured" the water in the can is ringed 
 > Now a different calorimeter, a foam cup. Fifty millilitres of hydrochloric acid and fifty millilitres of sodium hydroxide solution are mixed, and the temperature rises from twenty-one point four to twenty-eight point zero degrees. Both solutions warm up, so m is the whole mixture, a hundred millilitres, taken as a hundred grams. That's two assumptions. The solution has the density of water, and it has the specific heat capacity of **water**.
 
 Visual: the board clears to the foam cup station: `m6-foam-cup-calorimeter-v1.png` with coded readout "21.4 °C"; two `m6-beaker-v1.png` with coded colourless fills, labels "50.0 mL HCl, 1.00 mol L⁻¹" and "50.0 mL NaOH, 1.00 mol L⁻¹". On "are mixed" the beakers tilt on coded arcs over the cup in turn (no hands); the readout climbs "21.4 → 28.0 °C" (tag "data: HSCScience worked example"). On "Both solutions warm up" the whole liquid in the cup's window glows faint orange. On "the whole mixture" the givens write (amber): "V(total) = 50.0 + 50.0 = 100.0 mL" then "m = ρV = 1.00 g mL⁻¹ × 100.0 mL = 100.0 g" (amber hand tag "both solutions warmed"). On "two assumptions" two chips: "density of water: 1.00 g mL⁻¹" and on "specific heat capacity" "c of water: 4.18 J g⁻¹ K⁻¹".
+
+Upgrade (Revision 3): On "water" the chip "c of water: 4.18 J g⁻¹ K⁻¹" takes a pen ring and a grey hand tag "an assumption".
 
 ### 9. the foam cup calculation
 > Delta T is six point six degrees. So q is a hundred times four point one eight times six point six, which is two thousand seven hundred and fifty-nine joules, or two point seven six kilojoules. Using only fifty grams, the acid on its own, would halve the answer, because the base warmed up **too**.
@@ -144,27 +160,35 @@ Visual: the memory line writes large in the explainer's handwriting style: "Mass
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A spirit burner is used to heat 250.0 g of water in a copper can. The temperature of the water rises from 18.6 °C to 27.4 °C, and the mass of the spirit burner decreases by 0.60 g. Calculate the heat absorbed by the water, in kJ. (Specific heat capacity of water = 4.18 J g⁻¹ K⁻¹) (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted burner and copper can (`m7-spirit-burner-calorimeter-v1.png`, about 300 px), with no readout and no tag. It shows only what the card states. Card text 38 px. The formula strip and memory line are hidden.
+
 ### 15. feedback 1 (brief)
 > Delta T is twenty-seven point four minus eighteen point six, eight point eight. Then q is two hundred and fifty times four point one eight times eight point eight, nine thousand one hundred and ninety-six joules, or nine point two zero kilojoules. The zero point six zero grams is the fuel, so it doesn't go in the **formula**.
 
 Visual: card shrinks to the top. Rows: "ΔT = 27.4 − 18.6 = 8.8 K"; "q = 250.0 × 4.18 × 8.8 = 9196 J = 9.20 kJ" framed in a dark-ink box with a green tick (grey tag "ΔT = 8.8 justifies two figures"). On "formula" a chip "q = 0.60 × 4.18 × 8.8 = 22 J" fades in and is crossed in red (red hand tag "fuel mass"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "250.0 g of water | 18.6 °C → 27.4 °C | c = 4.18 J g⁻¹ K⁻¹ | burner lost 0.60 g".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Thirty millilitres of one mole per litre hydrochloric acid is mixed with thirty millilitres of one mole per litre sodium hydroxide solution in a foam cup, and the temperature rises from twenty point eight to twenty-seven point four degrees. Calculate the heat absorbed by the solution, then state the heat change of the reaction, with its sign. Pause here to answer.
 
 Visual: `QuestionCard`: "30.0 mL of 1.00 mol L⁻¹ hydrochloric acid is mixed with 30.0 mL of 1.00 mol L⁻¹ sodium hydroxide solution in a polystyrene foam cup. The temperature rises from 20.8 °C to 27.4 °C. Assume the density of the mixture is 1.00 g mL⁻¹ and its specific heat capacity is 4.18 J g⁻¹ K⁻¹. (a) Calculate the heat absorbed by the solution. (2 marks) (b) State the heat change of the reaction, including its sign. (1 mark)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted foam cup (`m6-foam-cup-calorimeter-v1.png`, about 300 px), with no readout and no tag. Card text 34 to 38 px so both parts fit. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > The sixty millilitre mixture has a mass of sixty grams. Delta T is six point six. So q is sixty times four point one eight times six point six, about one thousand six hundred and fifty-five joules, or one point six six kilojoules. The reaction released that heat, so its heat change is minus one point six six kilojoules. Using thirty grams would leave out half the **mixture**.
 
 Visual: card shrinks. Rows: "V(total) = 30.0 + 30.0 = 60.0 mL; m = ρV = 1.00 g mL⁻¹ × 60.0 mL = 60.0 g" (amber); "ΔT = 27.4 − 20.8 = 6.6 K"; "q = 60.0 × 4.18 × 6.6 = 1655 J = 1.66 kJ" and "(b) heat change of the reaction = −1.66 kJ (released)", both framed in a dark-ink box with a green tick (grey tag "ΔT = 6.6 justifies two figures"). On "mixture" a chip "m = 30.0 g: q = 0.828 kJ" fades in and is crossed in red (red hand tag "both solutions warmed"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "30.0 mL + 30.0 mL | 20.8 °C → 27.4 °C | 1.00 g mL⁻¹ | 4.18 J g⁻¹ K⁻¹".
 
 ### 18. conclusion and handoff
 > So a calorimeter turns a temperature rise into heat with q equals m c delta T, using the mass, specific heat capacity and temperature change of the material that warmed. But here's a puzzle. The burner lost zero point seven two grams of ethanol. Burning that much ethanol can release about twenty-one kilojoules, yet the water gained only nine point seven eight. Where did the rest **go**?
 
 Visual: the memory line returns small at the top. On "q equals m c delta T" the formula strip pulses. On "The burner lost" the board settles into the final frame: the burner rig with "water gained 9.78 kJ"; on "zero point seven two grams" `m7-spirit-burner-on-balance-v1.png` small at the lower left with "151.62 g", "started at 152.34 g" and the chip "0.72 g of ethanol burned". On "about twenty-one kilojoules" the orange bar "0.72 g of ethanol can release about 21 kJ (data)" draws at the right; on "nine point seven eight" the shorter teal bar "the water gained 9.78 kJ"; the gap shades grey with "?". On "go" the amber chip "Where did the rest of the energy go?" and the chip "Next: Why does combustion calorimetry underestimate a fuel enthalpy?" write. Hold about 2 seconds. This is the final frame (m4-v03 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -174,9 +198,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. ΔT = final − initial; a 1 °C change = a 1 K change.
 5. q is the surroundings' gain; the reaction's heat change has the opposite sign.
 
-Memory aid (framed card, on the notes screen): *Mass, c and ΔT: all from the stuff that warmed.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Mass, c and ΔT: all from the stuff that warmed.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -234,6 +256,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,345 characters**, 19 scenes (per scene: 319, 404, 417, 348, 327, 451, 352, 441, 294, 334, 447, 296, 81, 301, 323, 376, 374, 385, 75; Revision 1: 6,336). At 13.3 characters per second the speech is about 477 s; add about 10 s of settling (the lens and slider in 2, the ladder in 4, the pours in 8, the sign card in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 568 s** (Revision 1: about 567 s), just under the cap.
 
+Revision 3 (12 Nov 2026): narration unchanged (6,345 characters). The notes scene is 45 s in all, so the estimate is about 553 s (it was about 568 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v02` (route chem-y11-m4-v02; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v02`.
@@ -243,6 +267,8 @@ In order (19 scene headings, all `### N.`): hook-prediction, heat-vs-temperature
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v01's final frame into scene 1 by camera continue; 1 to 2 camera push into the two cans' particles; 2 to 3 clear change to the blocks; 3 to 4 camera continue (the water block becomes rung 1); 4 to 5 camera continue; 5 to 6 camera continue (the burner returns at the left); 6 to 7 camera continue; 7 to 8 clear change to the foam cup; 8 to 9 camera continue; 9 to 10 split screen; 10 to 11 camera continue; 11 to 12 camera continue; 12 to 13 clear change; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v02-learning-review.md`, `checks/c-y11-m4-v02-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -257,6 +283,8 @@ Need: no new plates.
 
 Coded: readouts, particle lens and energy packets, c blocks and counters, data-sheet strip, scaling ladder, formula and calculation rows, tilt arcs and fills, split screen arrows, sign card, leak arrows, comparison bars, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (already in this design's list): `m7-spirit-burner-calorimeter-v1.png` (attempt 1), `m6-foam-cup-calorimeter-v1.png` (attempt 2). Removed: the two coded thermometers in scene 3. New plate requests: none. Simulation: the particle box engine for the scene 2 lens.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -268,6 +296,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (beakers tilt by code); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v01's final frame, and send the final frame to the m4-v03 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the scene 2 particle lens (twice the particles, the same energy in) does not suggest a measured value; the readouts stay those in "Numbers used".
 
 ## YouTube metadata (draft)
 
@@ -319,3 +349,24 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 6,345 characters (Revision 1: 6,336); about 567 s to about 568 s. No reserve cut was needed.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 2: the particle lens is named as a particle box engine run. Scene 3: the coded thermometers become readout chips.
+- Scene 8: the bold cue "water" now has its on-screen action (a pen ring on the assumption chip); the checking script had flagged it as unquoted.
+- Question cards: attempt 1 gains the burner and can, attempt 2 the foam cup; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,345 characters, unchanged; about 553 s (it was about 568 s).
+
+Calls for root: the particle box engine drives the scene 2 lens only; the slider arithmetic stays lesson-coded.

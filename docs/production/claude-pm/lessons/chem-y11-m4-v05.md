@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V05: Catalysts and energy profiles. Why does a catalyst change activation energy but not reaction enthalpy? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,613 characters, 18 scenes, about 517 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,18 @@ Handoff: chem-y11-m4-v06, bond enthalpies.
 - **Opening frame:** m4-v04's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v06` opens on it):** right two thirds: the ammonia energy profile (coded): axes "enthalpy, H" and "reaction progress"; reactant level "N₂(g) + 3H₂(g)" at the left, product level "2NH₃(g)" lower at the right; the uncatalysed solid ink curve with a high peak; the catalysed dashed teal curve with a lower peak and the label "with iron"; amber Eₐ arrows from the reactant level to each peak; one red ΔH arrow "ΔH = −92 kJ mol⁻¹ (with or without iron)". Lower left: `c7-iron-catalyst-pellets-v1.png` small with the label "iron catalyst (solid)". The amber chip "Where does −92 kJ come from? The bonds broken and the bonds formed." The chip "Next: How do broken and formed bonds determine an approximate enthalpy change?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the two flasks and their two levels, scenes 1 and 2 (about 55 s); (B) the uncatalysed profile at full width, scene 3 (about 29 s); (C) the push in to the surface model, scene 4 (about 31 s); (D) the overlay profile with the peak slider, scene 5 (about 30 s); (E) the energy distribution and fraction meter, scene 6 (about 24 s); (F) the flasks and their readouts again, scene 7 (about 23 s); (G) the ruled exam card, scenes 8 and 9 (about 47 s); (H) the phase sorter, then the iron pellets, scenes 10 and 11 (about 52 s; the painted pellets arrive at scene 11); (I) the memory card, scene 12 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 55 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The collision lens that feeds the fraction meter in scene 6 can run on the particle box engine (`src/explainer/sims/`) with its energy barrier lowered for the catalysed run, as in m3-v15, so the count of successful collisions comes from the same model. The peak slider and the distribution curve stay lesson-coded.
+- **No coded pictures of real things.** The stopwatch icon in scene 2 is replaced by a readout chip.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -83,6 +95,8 @@ Visual: opens on m4-v04's final frame; the "Next" chip fades and the level diagr
 > The same. Both flasks start with the same substances, and both finish with the same substances, water and oxygen. Delta H is the enthalpy of the products minus the enthalpy of the reactants, so it depends only on where the reaction starts and where it finishes. The catalyst changes how quickly the reaction gets there, not how far down it **goes**.
 
 Visual: "the same" ticks. On "start with the same substances" both flasks gain the same label "2H₂O₂(aq)"; on "finish with the same substances" both gain "2H₂O(l) + O₂(g)". On "the enthalpy of the products minus the enthalpy of the reactants" the strip "ΔH = H(products) − H(reactants)" (grey tag "m4-v01"); two level lines draw at the right, "reactants" higher, "products" lower, with the red ΔH arrow between them. On "how quickly" a stopwatch icon (coded) over the catalysed flask; on "goes" the ΔH arrow pulses. Hand tags: slate "same start, same finish" with a `ScribbleCircle` round the two matching labels; red "ΔH fixed" on the arrow.
+
+Upgrade (Revision 3): No stopwatch is drawn. On "how quickly" a slate readout chip "time to finish: much shorter" (40 px) sits over the catalysed flask, and a grey chip "time to finish: very long" over the other.
 
 ### 3. the uncatalysed hill
 > Let's draw the full energy profile. The reactants sit on the left, and the products sit lower on the right, because energy is released. Between them is a hill. Its height above the reactants is the activation energy, the minimum energy a collision needs before old bonds can start to break. Without a catalyst, that hill is high, so very few collisions have enough energy to get **over**.
@@ -122,12 +136,12 @@ Visual: on the ruled card, a second small overlay draws beside the first: on "th
 ### 10. two kinds of catalyst
 > Catalysts come in two kinds, sorted by phase, meaning solid, liquid, gas or solution. Manganese dioxide is a solid working in a solution, so it's a heterogeneous catalyst, a different phase from the reactants. Iodide ions, dissolved in the peroxide solution, also speed it up, and they're in the same phase, so iodide is a homogeneous **catalyst**.
 
-Visual: clear change to the phase sorter, two columns. On "sorted by phase" gloss "phase: solid, liquid, gas or solution (aqueous)". On "Manganese dioxide is a solid working in a solution" the left panel: a grey solid strip under a blue solution with H₂O₂ molecules, labels "MnO₂(s)" and "H₂O₂(aq)"; on "heterogeneous" the column head "heterogeneous: different phase". On "Iodide ions" the right panel: I⁻ ions scattered among H₂O₂ molecules in one solution, labels "I⁻(aq)" and "H₂O₂(aq)"; on "catalyst" the column head "homogeneous: same phase". Hand tags: grey "different phase" and "same phase" under the two columns, with a pen ring on "(s)" against "(aq)".
+Visual: clear change to the phase sorter, two columns. On "sorted by phase" gloss "phase: solid, liquid, gas or solution (aqueous)". On "Manganese dioxide is a solid working in a solution" the left panel: a grey solid strip under a blue solution with H₂O₂ molecules, labels "MnO₂(s)" and "H₂O₂(aq)"; on "heterogeneous" the column head "heterogeneous: different phase". On "Iodide ions" the right panel: I⁻ ions scattered among H₂O₂ molecules in one solution, labels "I⁻(aq)" and "H₂O₂(aq)"; on "catalyst" the column head "homogeneous: same phase". Hand tags: grey "different phase" and "same phase" under the two columns, with a pen ring round "(s)" against "(aq)".
 
 ### 11. an industrial catalyst
 > The same rules hold in industry. Ammonia is made from nitrogen and hydrogen gases passed over solid iron, a heterogeneous catalyst. The iron makes the reaction fast enough to be useful. Without it, the reaction would need far higher temperatures to go at a useful rate. But delta H stays at minus ninety-two kilojoules per mole, with or without **it**.
 
-Visual: on "Ammonia is made" `c7-iron-catalyst-pellets-v1.png` at the left with "iron (solid)" and gas molecules N₂ and H₂ drifting over it (labels "(g)"); a strip "N₂(g) + 3H₂(g) → 2NH₃(g)". On "heterogeneous catalyst" the pellets drop into the "different phase" column from scene 9 (small). On "fast enough to be useful" the ammonia overlay profile draws at the right (solid and dashed paths). On "minus ninety-two kilojoules per mole" the red ΔH arrow "ΔH = −92 kJ mol⁻¹"; on "it" the label "(with or without iron)". Stage: the painted pellets large at the left (stage change from the sorter). Hand tags: grey "solid + gases" with a pen ring on "(g)"; red "same −92" on the ΔH arrow.
+Visual: on "Ammonia is made" `c7-iron-catalyst-pellets-v1.png` at the left with "iron (solid)" and gas molecules N₂ and H₂ drifting over it (labels "(g)"); a strip "N₂(g) + 3H₂(g) → 2NH₃(g)". On "heterogeneous catalyst" the pellets drop into the "different phase" column from scene 9 (small). On "fast enough to be useful" the ammonia overlay profile draws at the right (solid and dashed paths). On "minus ninety-two kilojoules per mole" the red ΔH arrow "ΔH = −92 kJ mol⁻¹"; on "it" the label "(with or without iron)". Stage: the painted pellets large at the left (stage change from the sorter). Hand tags: grey "solid + gases" with a pen ring round "(g)"; red "same −92" on the ΔH arrow.
 
 ### 12. the line to remember
 > Here's the line to remember. A catalyst finds a lower pass. Same start, same finish, less **climb**.
@@ -139,27 +153,35 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience") with a coded profile beside it (values on a labelled relative axis): "The energy profile shows a reaction with and without a catalyst. Reactants: 20 kJ mol⁻¹; peak without catalyst: 170 kJ mol⁻¹; peak with catalyst: 110 kJ mol⁻¹; products: 60 kJ mol⁻¹ (values relative to an arbitrary zero). (a) Determine the activation energy with and without the catalyst. (2 marks) (b) Determine ΔH for each pathway. (1 mark)" The full question and profile stay on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no arrows drawn).
 
+Upgrade (Revision 3): The supplied profile is the card's picture and is on screen from the first frame, at least 520 px wide with its four values at 30 px or more. Card text 34 to 38 px so both parts fit. The memory card and drawing rules are hidden.
+
 ### 14. feedback 1 (brief)
 > Without the catalyst, the activation energy is one hundred and seventy minus twenty, one hundred and fifty. With it, one hundred and ten minus twenty, ninety. Delta H is sixty minus twenty, plus forty kilojoules per mole for both routes, because the ends don't move. Saying the catalyst changes delta H misses the whole **point**.
 
 Visual: card shrinks to the top. On the profile, arrows draw on cue: "Eₐ = 170 − 20 = 150 kJ mol⁻¹" (amber); "Eₐ(catalysed) = 110 − 20 = 90 kJ mol⁻¹" (light amber); "ΔH = 60 − 20 = +40 kJ mol⁻¹ (both)" (blue). On "point" a chip "catalysed ΔH smaller" fades in and is crossed. Hold about 1 second. The three arrow labels frame in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "ends don't move".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "reactants 20 | peak 170 | peak with catalyst 110 | products 60 (kJ mol⁻¹)".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Iron is used as a catalyst when ammonia is made from nitrogen and hydrogen gases. Classify iron as a homogeneous or heterogeneous catalyst, explain why it increases the rate, and state its effect on delta H. Pause here to answer.
 
 Visual: `QuestionCard`: "Solid iron is used as a catalyst in the industrial reaction N₂(g) + 3H₂(g) → 2NH₃(g), ΔH = −92 kJ mol⁻¹. (a) Classify iron as a homogeneous or heterogeneous catalyst. Justify your answer. (1 mark) (b) Explain how iron increases the rate of this reaction. (2 marks) (c) State the effect of iron on ΔH. (1 mark)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted iron pellets (`c7-iron-catalyst-pellets-v1.png`, about 320 px wide), untagged. It shows only what the card states. Card text 34 to 38 px so the three parts fit. The phase sorter is hidden.
+
 ### 16. feedback 2 (brief)
 > Iron is a solid and the reactants are gases, so it's heterogeneous. It provides a route with a lower activation energy, so a bigger fraction of collisions have enough energy, and the rate increases. Delta H is unchanged at minus ninety-two, because the reactants and products are the same. The catalyst doesn't supply the **energy**.
 
 Visual: card shrinks. Rows on cue: "(a) Fe(s), reactants (g): different phases → heterogeneous"; "(b) lower-Eₐ pathway → larger fraction of collisions with E ≥ Eₐ → more successful collisions per second"; "(c) ΔH unchanged: −92 kJ mol⁻¹". On "energy" a chip "iron provides the energy to react" fades in and is crossed. Hold about 1 second. Row (c) frames in a dark-ink box with a green tick. The crossed chip carries a red hand tag "lower barrier, not extra energy".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "catalyst: solid iron | N₂(g) + 3H₂(g) → 2NH₃(g) | ΔH = −92 kJ mol⁻¹".
 
 ### 17. conclusion and handoff
 > So a catalyst lowers the activation energy by offering a different route, but delta H depends only on the reactants and products, so it stays the same. That raises a deeper question. Ammonia's minus ninety-two kilojoules is fixed by the substances themselves. So where does that number come from? It comes from the bonds that break and the bonds that **form**.
 
 Visual: the memory line returns small at the top. On "lowers the activation energy" the ammonia overlay profile returns full size and the two Eₐ arrows pulse; on "depends only on the reactants and products" the two levels pulse. On "fixed by the substances themselves" the red ΔH arrow "ΔH = −92 kJ mol⁻¹ (with or without iron)" pulses; `c7-iron-catalyst-pellets-v1.png` settles small at the lower left with "iron catalyst (solid)". On "the bonds that break" faint N≡N and H–H sketches appear by the reactant level; on "form" faint N–H sketches by the product level; both sets of sketches then fade as the amber chip "Where does −92 kJ come from? The bonds broken and the bonds formed." and the chip "Next: How do broken and formed bonds determine an approximate enthalpy change?" write. Hold about 2 seconds. This is the final frame (m4-v06 opens on it; it holds no bond sketches, which m4-v06 draws on its own scene 1 cues).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -169,9 +191,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Draw: same start and end levels; Eₐ from reactants to each peak; one ΔH arrow.
 5. Heterogeneous: different phase (MnO₂(s), Fe(s)). Homogeneous: same phase (I⁻(aq)).
 
-Memory aid (framed card, on the notes screen): *A catalyst finds a lower pass: same start, same finish, less climb.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *A catalyst finds a lower pass: same start, same finish, less climb.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -219,6 +239,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,613 characters**, 18 scenes (per scene: 384, 345, 384, 409, 400, 324, 311, 307, 318, 344, 348, 96, 318, 326, 239, 329, 356, 75; Revision 1: 5,609, then miscounted as 17 scenes in this line). At 13.3 characters per second the speech is about 422 s; add about 14 s of settling (the full profile in 3, the surface inset in 4, the peak slider and pass morph in 5, the distribution and fraction meter in 6, the second overlay in 9), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 517 s** (Revision 1: about 515 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,613 characters). The notes scene is 45 s in all, so the estimate is about 502 s (it was about 517 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v05` (route chem-y11-m4-v05; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v05`.
@@ -228,6 +250,8 @@ In order (18 scene headings, all `### N.`): hook-prediction, only-the-ends, unca
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v04's final frame into scene 1 by camera continue (the flask stays); 1 to 2 camera continue; 2 to 3 clear change to the full profile (the two level lines carry over); 3 to 4 camera push into the surface inset; 4 to 5 camera continue, with the pass morph inside the scene; 5 to 6 clear change to the distribution; 6 to 7 clear change to the flasks; 7 to 8 clear change to the ruled card; 8 to 9 camera continue (second overlay on the same card); 9 to 10 clear change to the phase sorter; 10 to 11 camera continue; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v05-learning-review.md`, `checks/c-y11-m4-v05-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -240,6 +264,8 @@ Need: no new plates.
 
 Coded: equation strips, level lines, energy profiles with solid and dashed paths, Eₐ and ΔH arrows, surface model with ball-and-stick molecules, pass landscape, distribution, warming sketch, phase panels, gas molecules, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plate newly used on a question card (already in this design's list): `c7-iron-catalyst-pellets-v1.png` (attempt 2). Removed: the stopwatch icon. New plate requests: none. Simulation: the particle box engine may drive the scene 6 collision count.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -251,6 +277,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v04's final frame, and send the final frame to the m4-v06 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -301,3 +329,24 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 5,613 characters (Revision 1: 5,609); about 515 s to about 517 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 2: the coded stopwatch becomes two "time to finish" readout chips. Scene 6: the collision count is tied to the particle box engine.
+- Scenes 10 and 11: "pen ring on" a state symbol is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 2 gains the iron pellets; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,613 characters, unchanged; about 502 s (it was about 517 s).
+
+Calls for root: none.

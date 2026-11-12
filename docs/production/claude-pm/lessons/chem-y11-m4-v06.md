@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V06: Bond enthalpies. How do broken and formed bonds determine an approximate enthalpy change? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,160 characters, 18 scenes, about 556 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,16 @@ Handoff: chem-y11-m4-v07, Hess's law.
 - **Opening frame:** m4-v05's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v07` opens on it):** the methane energy ladder at full width (coded): lower left level "CH₄(g) + 2O₂(g)"; top level "separate atoms: C + 4H + 4O (gas)"; lower right level "CO₂(g) + 2H₂O(g)", below the reactant level. A blue up arrow "break: +2652 kJ"; an orange down arrow "form: −3460 kJ"; a red dashed arrow straight from reactants to products "direct: ΔH = −808 kJ mol⁻¹". The two-stage route is labelled "imaginary route" (grey), the direct arrow "real reaction". The amber chip "Two routes, same ΔH. Why can we add enthalpies along a different path?". The chip "Next: Why can we add reaction enthalpies along different paths?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the ammonia profile and the prediction, scene 1 (about 30 s); (B) the bond lens: pulling apart and snapping together, scene 2 (about 43 s); (C) the bond table and its gloss, scene 3 (about 29 s); (D) the energy ladder for hydrogen chloride and the formula, scenes 4 and 5 (about 61 s); (E) the ammonia ladder with its running tally, scenes 6 and 7 (about 53 s); (F) the structure board and the methane calculation, scenes 8 and 9 (about 57 s; the calculation rows take the right half at scene 9); (G) the comparison scale, scene 10 (about 36 s); (H) two traps, scene 11 (about 16 s); (I) the memory card, scene 12 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -78,7 +88,7 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 ### 1. hook and prediction (countdown, 3 seconds at the end)
 > Here's the ammonia profile from last time, minus ninety-two kilojoules, catalyst or not. To make ammonia, the triple bond in each nitrogen molecule has to break, and it's one of the strongest bonds there is. Three hydrogen to hydrogen bonds break too, and then six new nitrogen to hydrogen bonds form. So predict. With such a strong bond to break, does making ammonia take energy in, or give energy **out**?
 
-Visual: opens on m4-v05's final frame; the "Next" chip fades and the iron pellets stay as a small painted thumbnail (fading at the end of the scene); the dashed catalysed path fades. On "the triple bond in each nitrogen molecule" a coded structure "N≡N" (blue N atoms) draws by the reactant level (Revision 2: drawn here, not inherited), tag "one of the strongest bonds". On "Three hydrogen to hydrogen bonds" three "H–H" sketches; on "six new nitrogen to hydrogen bonds" two ammonia structures with three N–H each. Heading writes: "Where does ΔH come from?". The ΔH arrow and its value dim (no spoiler beyond the opening frame's value). Chips "energy in" and "energy out". On "out" the 3 s `Countdown` ring runs. Hand tags: blue "strong!" with a pen ring on "N≡N"; orange "6 new bonds" with a `PenArrow` to the two ammonia structures.
+Visual: opens on m4-v05's final frame; the "Next" chip fades and the iron pellets stay as a small painted thumbnail (fading at the end of the scene); the dashed catalysed path fades. On "the triple bond in each nitrogen molecule" a coded structure "N≡N" (blue N atoms) draws by the reactant level (Revision 2: drawn here, not inherited), tag "one of the strongest bonds". On "Three hydrogen to hydrogen bonds" three "H–H" sketches; on "six new nitrogen to hydrogen bonds" two ammonia structures with three N–H each. Heading writes: "Where does ΔH come from?". The ΔH arrow and its value dim (no spoiler beyond the opening frame's value). Chips "energy in" and "energy out". On "out" the 3 s `Countdown` ring runs. Hand tags: blue "strong!" with a pen ring round "N≡N"; orange "6 new bonds" with a `PenArrow` to the two ammonia structures.
 
 ### 2. breaking and making
 > Energy out, and to see why, think about what a bond is. A covalent bond is a shared pair of electrons, attracted to both nuclei. Pulling the two atoms apart works against that attraction, so breaking a bond always takes energy in. When two atoms come together and bond, the attraction pulls them in, so forming a bond always gives energy out. And forming a bond gives out exactly the energy it takes to break that bond. If it didn't, you could break and remake a bond over and over, and create energy from nothing. The law of conservation of energy says that's **impossible**.
@@ -140,27 +150,35 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Ethene reacts with hydrogen to form ethane: C₂H₄(g) + H₂(g) → C₂H₆(g). Use the bond enthalpies in the table to calculate ΔH for this reaction. Bond enthalpies (kJ mol⁻¹): C=C 614; C–C 346; C–H 414; H–H 436. (3 marks)" Structural formulas of ethene, hydrogen and ethane are drawn on the card (no bonds ticked). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The three structural formulas are the card's picture and are on screen from the first frame (bond lines at least 4 px, atom letters 34 px or more), with the bond table from the card beside them. The formula strip and memory card are hidden.
+
 ### 14. feedback 1 (brief)
 > Broken: one carbon double bond, four carbon to hydrogen bonds and one hydrogen to hydrogen bond, two thousand seven hundred and six. Formed: one carbon single bond and six carbon to hydrogen bonds, two thousand eight hundred and thirty. So delta H is minus one hundred and twenty-four kilojoules per mole. Formed minus broken would give plus one hundred and twenty-four, the wrong **sign**.
 
 Visual: card shrinks to the top; bonds tick on the card's structures as counted. Rows: "broken: 614 + 4 × 414 + 436 = 2706 kJ" (blue); "formed: 346 + 6 × 414 = 2830 kJ" (orange); "ΔH = 2706 − 2830 = −124 kJ mol⁻¹" (red). On "sign" a chip "2830 − 2706 = +124 kJ mol⁻¹" fades in and is crossed. Hold about 1 second. The ΔH row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "wrong order".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "C=C 614 | C–C 346 | C–H 414 | H–H 436 (kJ mol⁻¹)".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A bond enthalpy calculation gives minus eight hundred and eight kilojoules per mole for burning methane, but the data value, which forms liquid water, is minus eight hundred and ninety. Give two reasons for the difference. Pause here to answer.
 
 Visual: `QuestionCard`: "Using bond enthalpies, a student calculates ΔH = −808 kJ mol⁻¹ for CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O. The data value for the standard enthalpy of combustion of methane, which forms H₂O(l), is −890 kJ mol⁻¹. Give TWO reasons for the difference between these values. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted Bunsen flame (`p01-bunsen-lit-v2.png`, about 280 px tall), untagged, as the methane burning. Card text 38 px. Nothing answer-bearing; the comparison scale is hidden.
+
 ### 16. feedback 2 (brief)
 > First, bond enthalpies are averages, so they don't exactly match the bonds in these molecules. Second, bond enthalpies apply to gases, but the data value forms liquid water, which releases extra energy as it condenses. Heat loss isn't a reason, because nothing was measured in a **calorimeter**.
 
 Visual: card shrinks. Rows on cue: "1. average bond enthalpies, not the exact bonds in CH₄, O₂, CO₂ and H₂O"; "2. bond enthalpies are for gases; forming H₂O(l) releases extra energy (about 44 kJ per mol of water)". On "calorimeter" a chip "heat lost to the surroundings" fades in and is crossed, note "no experiment". Hold about 1 second. Both rows frame in a dark-ink box with a green tick. The crossed chip carries a red hand tag "no experiment".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "bond enthalpies: −808 kJ mol⁻¹ | data, forming H₂O(l): −890 kJ mol⁻¹".
 
 ### 17. conclusion and handoff
 > So broken and formed bonds give an approximate delta H. It's the energy in to break every bond, minus the energy out to form the new ones. But notice what we did. We never followed the real reaction. We imagined pulling everything apart into atoms, then building the products, and still got about the right answer. Why can we add enthalpies along a different **path**?
 
 Visual: the memory line returns small at the top. On "the energy in to break every bond" and "the energy out to form the new ones" the methane ladder returns at full width with "break: +2652 kJ" and "form: −3460 kJ". On "We never followed the real reaction" a red dashed arrow draws straight from reactants to products, "direct: ΔH = −808 kJ mol⁻¹", labelled "real reaction"; on "imagined pulling everything apart into atoms" the up and down arrows are labelled "imaginary route" (grey) and the top level reads "separate atoms: C + 4H + 4O (gas)". On "path" the amber chip "Two routes, same ΔH. Why can we add enthalpies along a different path?" and the chip "Next: Why can we add reaction enthalpies along different paths?" write. Hold about 2 seconds. This is the final frame (m4-v07 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -170,9 +188,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Draw structures; count every bond × coefficient (CO₂ has two C=O).
 5. Approximate: averages, and gases only (liquid water releases about 44 kJ more per mol).
 
-Memory aid (framed card, on the notes screen): *Break: energy in. Make: energy out. ΔH = in − out.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Break: energy in. Make: energy out. ΔH = in − out.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -225,6 +241,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,160 characters**, 18 scenes (per scene: 403, 572, 387, 462, 350, 471, 233, 352, 407, 474, 215, 89, 375, 386, 254, 291, 364, 75; Revision 1: 6,160). At 13.3 characters per second the speech is about 463 s; add about 12 s of settling (the bond lens in 2, the ladders in 4 and 6, the running tally in 6 and 7, the structure board in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 556 s** (Revision 1: about 554 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,160 characters). The notes scene is 45 s in all, so the estimate is about 541 s (it was about 556 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v06` (route chem-y11-m4-v06; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v06`.
@@ -235,6 +253,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attem
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v06-learning-review.md`, `checks/c-y11-m4-v06-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have:
@@ -244,6 +264,8 @@ Have:
 Need: no new plates. Bonds, structures, ladders and numbers are coded, as the owner rule requires; the two existing plates above anchor the ammonia and methane cases.
 
 Coded: structures, bond lens, bond table, ladders, bars, number line, condensing-steam sketch, calculation rows, chips, cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plate newly used on a question card (already in this design's list): `p01-bunsen-lit-v2.png` (attempt 2). New plate requests: none.
 
 ## Codex error-check brief
 
@@ -257,6 +279,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested; structures are drawn correctly (O=C=O linear; H₂O bent; NH₃ three N–H); no em dash (U+2014); Australian spelling; the narration never says "hydrogen bond" for H–H.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m4-v05's final frame, and send the final frame to the m4-v07 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -306,3 +330,23 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 6,160 characters (Revision 1: 6,160, unchanged); about 554 s to about 556 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 1: "pen ring on" the triple bond is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 2 gains the Bunsen flame; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,160 characters, unchanged; about 541 s (it was about 556 s).
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V10: Photosynthesis and respiration. How are photosynthesis and respiration related in an enthalpy cycle? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,549 characters, 15 scenes, about 510 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -67,6 +67,17 @@ Handoff: chem-y11-m4-v11, entropy.
 - **Opening frame:** m4-v09's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v11` opens on it):** left, small: the finished glucose cycle (blue up arrow "photosynthesis +2803", orange down arrow "respiration −2803") with a pale-yellow light chip on the up arrow "needs light". Right, large: `c9-ice-cube-v1.png` on a coded bench line with a coded puddle beginning around it, a readout "room 25 °C", a blue inward arrow tagged "ΔH = +6.01 kJ mol⁻¹ (absorbs heat)"; below it `m5x-cold-pack-v1.png` with a coded readout "25.0 → 12 °C" and a blue tag "endothermic". The amber chip "Endothermic, yet it happens by itself. What else decides the direction?". The chip "Next: How does entropy describe spreading and possible particle arrangements?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the leaf, the chloroplast and the mitochondrion, with the prediction, scene 1 (about 35 s); (B) the equation strip with atom counters, scene 2 (about 33 s); (C) the two-path view with its staircase readout, scene 3 (about 38 s); (D) the equation reversed, scene 4 (about 31 s); (E) the level diagram, scene 5 (about 32 s); (F) the formation-data check, scene 6 (about 34 s); (G) stored energy against light absorbed, scene 7 (about 32 s); (H) the energy split in a real cell, scene 8 (about 35 s); (I) the memory card, scene 9 (about 14 s); question and feedback cards; the handoff; the notes board. No single picture holds past about 38 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The small coded flame in scene 3 is the painted flame plate.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -84,7 +95,9 @@ Visual: the board clears to an equation strip with atom counters. "C₆H₁₂O�
 ### 3. burning and respiration
 > In a flame, glucose burns in one hot rush. In a cell, it's broken down in dozens of small, controlled steps. But both start with glucose and oxygen, and both finish as carbon dioxide and liquid water. Delta H depends only on the start and the finish, so respiration releases the same two thousand eight hundred and three kilojoules per mole as burning. That's only about fifteen point six kilojoules per gram, far less than methane, because glucose already contains oxygen. It's partly burned **already**.
 
-Visual: the two-path view: top level "C₆H₁₂O₆(s) + 6O₂(g)", bottom level "6CO₂(g) + 6H₂O(l)". On "one hot rush" a single tall orange arrow with a small coded flame drops in one move, readout "−2803 kJ mol⁻¹". On "dozens of small, controlled steps" a staircase of small orange steps beside it, the mitochondrion plate at its foot. On "both start with glucose and oxygen" the two paths' tops glow; on "both finish" their feet glow. On "the same two thousand eight hundred and three kilojoules" a marker walks down the staircase while the live readout "ΔH so far" ticks down step by step and lands on "−2803 kJ mol⁻¹" (grey tag "steps not to scale: illustrative"); both paths are labelled "ΔH = −2803 kJ mol⁻¹". On "fifteen point six kilojoules per gram" a small bar pair from v09 returns: "glucose: 2803 ÷ 180.16 = 15.6 kJ g⁻¹" beside "methane: 55.5 kJ g⁻¹". On "already contains oxygen" the six O atoms in the glucose formula ring amber; on "already" a grey tag "partly oxidised". Stage: the two-path view fills the frame, the mitochondrion plate at the staircase foot. Orange hand tags "one rush" and "many small steps"; slate hand tag "same start, same finish" with a `ScribbleCircle` round the two feet.
+Visual: the two-path view: top level "C₆H₁₂O₆(s) + 6O₂(g)", bottom level "6CO₂(g) + 6H₂O(l)". On "one hot rush" a single tall orange arrow with a small coded flame drops in one move, readout "−2803 kJ mol⁻¹". On "dozens of small, controlled steps" a staircase of small orange steps beside it, the mitochondrion plate at its foot. On "both start with glucose and oxygen" the two paths' tops glow; on "both finish" their feet glow. On "the same two thousand eight hundred and three kilojoules" a marker walks down the staircase while the live readout "ΔH so far" ticks down step by step and lands at "−2803 kJ mol⁻¹" (grey tag "steps not to scale: illustrative"); both paths are labelled "ΔH = −2803 kJ mol⁻¹". On "fifteen point six kilojoules per gram" a small bar pair from v09 returns: "glucose: 2803 ÷ 180.16 = 15.6 kJ g⁻¹" beside "methane: 55.5 kJ g⁻¹". On "already contains oxygen" the six O atoms in the glucose formula ring amber; on "already" a grey tag "partly oxidised". Stage: the two-path view fills the frame, the mitochondrion plate at the staircase foot. Orange hand tags "one rush" and "many small steps"; slate hand tag "same start, same finish" with a `ScribbleCircle` round the two feet.
+
+Upgrade (Revision 3): The flame beside the single tall arrow is the painted flame (`g1-flame-v1.png`, about 160 px), not a coded one.
 
 ### 4. photosynthesis is the reverse
 > Now look at photosynthesis. Its overall equation is exactly the reverse: six carbon dioxides and six waters make one glucose and six oxygens. When you reverse a thermochemical equation, you reverse the sign of delta H. So photosynthesis is plus two thousand eight hundred and three kilojoules per mole. It's endothermic. Making glucose doesn't release energy, it stores it, and that energy comes from absorbed **light**.
@@ -121,27 +134,35 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Cellular respiration: C₆H₁₂O₆(s) + 6O₂(g) → 6CO₂(g) + 6H₂O(l)  ΔH = −2803 kJ mol⁻¹. (a) Write the thermochemical equation for photosynthesis. (1 mark) (b) Calculate the energy stored when a plant produces 10.0 g of glucose. (M(C₆H₁₂O₆) = 180.16 g mol⁻¹) (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted leaf (`g1-leaf-v1.png`, about 300 px wide), untagged. Card text 34 to 38 px so both parts fit. The level diagram and memory card are hidden.
+
 ### 11. feedback 1 (brief)
 > Reverse the equation and the sign: six CO two and six water give glucose and six oxygen, delta H plus two thousand eight hundred and three. Ten grams is zero point zero five five five moles, and times two thousand eight hundred and three, that's about a hundred and fifty-six kilojoules. Writing two thousand eight hundred and three kilojoules forgets to scale to the **mass**.
 
 Visual: card shrinks to the top. Rows: "(a) 6CO₂(g) + 6H₂O(l) → C₆H₁₂O₆(s) + 6O₂(g)  ΔH = +2803 kJ mol⁻¹" (blue); "(b) n = 10.0 ÷ 180.16 = 0.0555 mol"; "energy stored = 0.0555 × 2803 = 156 kJ" (teal). On "forgets to scale" a chip "2803 kJ" fades in; on "mass" it is crossed, note "per mole, not per 10.0 g". Hold about 1 second. Rows (a) and the energy row frame in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "scale to 10.0 g".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "respiration: ΔH = −2803 kJ mol⁻¹ | 10.0 g of glucose | M = 180.16 g mol⁻¹".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A student says, "A plant must absorb exactly two thousand eight hundred and three kilojoules of light energy to make one mole of glucose." Evaluate this statement, using what delta H actually measures. Pause here to answer.
 
 Visual: `QuestionCard`: "A student states: 'A plant must absorb exactly 2803 kJ of light energy to make one mole of glucose, because ΔH for photosynthesis is +2803 kJ mol⁻¹.' Evaluate this statement. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted chloroplast (`b6a-chloroplast-v1.png`, about 300 px wide), untagged, as the place where light is absorbed. Card text 38 px. Nothing answer-bearing; the budget bars stay hidden.
+
 ### 13. feedback 2 (brief)
 > Partly right. Glucose and oxygen do store two thousand eight hundred and three kilojoules more enthalpy per mole, so at least that much energy must end up stored. But the plant absorbs far more light than that, and most of it is released as heat. So "exactly" is wrong. Delta H is what's stored, not what's **absorbed**.
 
 Visual: card shrinks. Rows: "correct: products store 2803 kJ more per mol, so at least this much must be supplied" (teal); "incorrect: far more light is absorbed; most is released as heat" (grey); "so: not 'exactly'". On "absorbed" a chip "Correct: Hess's law says exactly 2803 kJ of light" fades in and is crossed. Hold about 1 second. The "so" row frames in a dark-ink box with a green tick. The crossed chip carries a red hand tag "stored ≠ absorbed".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "claim: exactly 2803 kJ of light per mole of glucose | ΔH(photosynthesis) = +2803 kJ mol⁻¹".
 
 ### 14. conclusion and handoff
 > So photosynthesis and respiration are the same cycle, run in opposite directions: the same size of delta H, with opposite signs. Photosynthesis climbs uphill, and it stops in the dark, because it needs light all the time. But some uphill changes happen all by themselves. Ice melts on a warm bench, and a cold pack gets cold, and both absorb heat. So if energy isn't the whole story, what else decides which way a change **goes**?
 
 Visual: the memory line returns small at the top. On "the same cycle" the level diagram pulses, then shrinks to the left. On "it stops in the dark" the light rays switch off and the up arrow dims, tag "needs light". On "Ice melts on a warm bench" `c9-ice-cube-v1.png` enters at the right on a coded bench line, a coded puddle spreading, readout "room 25 °C", a blue inward arrow "ΔH = +6.01 kJ mol⁻¹ (absorbs heat)". On "a cold pack gets cold" `m5x-cold-pack-v1.png` below it with readout "25.0 → 12 °C" and a blue tag "endothermic". On "goes" the amber chip "Endothermic, yet it happens by itself. What else decides the direction?" and the chip "Next: How does entropy describe spreading and possible particle arrangements?" write. Hold about 2 seconds. This is the final frame (m4-v11 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -151,9 +172,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Cycle: photosynthesis arrow up, respiration arrow down; the loop sums to zero.
 5. ΔH is energy stored, not light absorbed or energy captured in ATP.
 
-Memory aid (framed card, on the notes screen): *Up is plus, down is minus, and it's the same hill.*
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Up is plus, down is minus, and it's the same hill.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -207,6 +226,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,549 characters**, 15 scenes (per scene: 463, 441, 501, 416, 431, 457, 431, 459, 186, 341, 373, 233, 316, 426, 75; Revision 1: 5,555). At 13.3 characters per second the speech is about 417 s; add about 12 s of settling (the counters in 2, the staircase readout in 3, the level diagram in 5, the budget bars in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 510 s** (Revision 1: about 509 s). The two repairs are close to length-neutral, so the total stays above the 5,500 floor.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,549 characters). The notes scene is 45 s in all, so the estimate is about 495 s (it was about 510 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v10` (route chem-y11-m4-v10; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v10`.
@@ -216,6 +237,8 @@ In order (15 scene headings, all `### N.`): hook-prediction, balance-respiration
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v09's final frame into scene 1 by camera continue; 1 to 2 clear change to the equation strip; 2 to 3 camera continue (the equation becomes the two levels); 3 to 4 camera continue; 4 to 5 morph (the equations collapse into the level diagram); 5 to 6 camera continue (working at the right); 6 to 7 camera continue; 7 to 8 camera continue; 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v10-learning-review.md`, `checks/c-y11-m4-v10-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -231,6 +254,8 @@ Need: no new plates. Check by build: the chloroplast and mitochondrion plates ar
 
 Coded: cycle board, equation strip with atom counters, two-path staircase, level diagram, light rays, budget bars, calculation rows, bench line and puddle, readouts, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used (already in this design's list unless noted): `g1-flame-v1.png` (scene 3, confirmed by file listing, not re-inspected), `g1-leaf-v1.png` (attempt 1 card), `b6a-chloroplast-v1.png` (attempt 2 card). Removed: the coded flame. New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -242,6 +267,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v09's final frame, and send the final frame to the m4-v11 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +321,23 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 5,549 characters (Revision 1: 5,555); about 509 s to about 510 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 3: the coded flame is the painted flame plate; "lands on" a readout value is now "lands at" (visual text only, for the checking script).
+- Question cards: attempt 1 gains the leaf and attempt 2 the chloroplast; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,549 characters, unchanged; about 495 s (it was about 510 s).
+
+Calls for root: none.

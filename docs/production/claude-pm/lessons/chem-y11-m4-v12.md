@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V12: The sign of an entropy change. How can a balanced reaction suggest the sign of entropy change? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,600 characters, 15 scenes, about 514 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -69,6 +69,16 @@ Handoff: chem-y11-m4-v13, Gibbs free energy.
 - **Opening frame:** m4-v11's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v13` opens on it):** centre: the Haber equation card "N₂(g) + 3H₂(g) → 2NH₃(g)" with its molecule tiles (four reactant molecules, two product molecules). Left of it, an orange chip "ΔH° = −91.8 kJ mol⁻¹: heat released, surroundings gain entropy" with an orange tick "helps"; right of it, a purple chip "ΔS° = −198.1 J K⁻¹ mol⁻¹: the system loses entropy" with a purple cross "hurts". Above, a coded balance beam (no figure) with the orange chip's weight on one pan and the purple chip's on the other, level and wobbling. The amber chip "One helps, one hurts. Which wins, and does temperature matter?". The chip "Next: How do enthalpy, entropy and temperature determine spontaneity?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the two cards from last time and the prediction, scene 1 (about 23 s); (B) the dry ice, scene 2 (about 39 s); (C) the Haber card with its gas tallies and arrangement readout, scene 3 (about 40 s); (D) the classification board, then two ties, scenes 4 and 5 (about 59 s); (E) the cooling ladder, scene 6 (about 40 s); (F) the calculation board, scene 7 (about 42 s); (G) the methane tie settled, scene 8 (about 29 s); (H) the memory card, scene 9 (about 14 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 59 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -123,39 +133,45 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Predict whether the entropy of the system increases or decreases in each reaction. Justify each prediction. (a) 2HgO(s) → 2Hg(l) + O₂(g) (b) 2SO₂(g) + O₂(g) → 2SO₃(g) (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted test tube in its holder (`m5x-test-tube-holder-v1.png`, about 280 px tall), untagged, as a solid being heated. The two equations sit on their own lines at 40 px. The rule chips and memory card are hidden.
+
 ### 11. feedback 1 (brief)
 > In the first, a gas forms from a solid, zero moles of gas becoming one, so entropy increases. In the second, three moles of gas become two, so there are fewer ways, and entropy decreases. Calling the second positive because it releases heat mixes up delta H and delta **S**.
 
 Visual: card shrinks to the top. Rows: "(a) gas 0 → 1 (O₂ formed from a solid): ΔS +, entropy increases" (purple); "(b) gas 3 → 2: fewer gas particles, fewer ways: ΔS −, entropy decreases". On "Calling the second positive" a chip "(b) ΔS + because the reaction releases heat" fades in; on "S" it is crossed. Hold about 1 second. Both rows frame in a dark-ink box with a green tick. The crossed chip carries a red hand tag "heat ≠ ways".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "(a) 2HgO(s) → 2Hg(l) + O₂(g) | (b) 2SO₂(g) + O₂(g) → 2SO₃(g)".
 
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. Calculate delta S nought for the sulfur trioxide reaction. Sulfur dioxide's standard entropy is two hundred and forty-eight point two, oxygen's is two hundred and five point two, and sulfur trioxide's is two hundred and fifty-six point eight joules per kelvin per mole. Does your answer agree with your prediction? Pause here to answer.
 
 Visual: `QuestionCard`: "Use the standard entropies below to calculate ΔS° for 2SO₂(g) + O₂(g) → 2SO₃(g), and state whether your answer supports your prediction in part (b). S° (J K⁻¹ mol⁻¹): SO₂(g) 248.2; O₂(g) 205.2; SO₃(g) 256.8 (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries coded molecule models of the equation as written: two SO₂ and one O₂ on the left of an arrow, two SO₃ on the right (atom colours from the key, about 420 px wide, no counts or tallies). It shows only what the equation states. The three S° values sit on one line at 34 px or more.
+
 ### 13. feedback 2 (brief)
 > Products: two times two hundred and fifty-six point eight, five hundred and thirteen point six. Reactants: two times two hundred and forty-eight point two, plus two hundred and five point two, seven hundred and one point six. So delta S nought is minus one hundred and eighty-eight joules per kelvin per mole, negative, as predicted. Leave out the oxygen, and you'd get plus seventeen point two, the wrong **sign**.
 
 Visual: card shrinks. Rows: "Σ products = 2(256.8) = 513.6"; "Σ reactants = 2(248.2) + 205.2 = 701.6"; "ΔS° = 513.6 − 701.6 = −188.0 J K⁻¹ mol⁻¹: negative, agrees with (b)" (purple). On "Leave out the oxygen" a chip "S°(O₂) = 0: 513.6 − 496.4 = +17.2" fades in; on "sign" it is crossed. Hold about 1 second. The ΔS° row frames in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "O₂ is not 0".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "S° (J K⁻¹ mol⁻¹): SO₂(g) 248.2 | O₂(g) 205.2 | SO₃(g) 256.8".
 
 ### 14. conclusion and handoff
 > So a balanced equation suggests the sign of delta S: compare the states, count the gas, and when the count ties, use standard entropies. Now look again at the ammonia reaction. It's exothermic, delta H is minus ninety-one point eight kilojoules, and the heat it releases raises the entropy of the surroundings. But its own entropy falls, by a hundred and ninety-eight joules per kelvin. One helps, and one hurts. So which one **wins**?
 
 Visual: the memory line returns small at the top. On "compare the states, count the gas" the two rule chips pulse; on "use standard entropies" the data strip pulses. On "Now look again at the ammonia reaction" the Haber card returns to centre with its molecule tiles. On "minus ninety-one point eight kilojoules" the orange chip "ΔH° = −91.8 kJ mol⁻¹: heat released, surroundings gain entropy" with a tick "helps" (grey source tag "OpenStax"). On "its own entropy falls" the purple chip "ΔS° = −198.1 J K⁻¹ mol⁻¹: the system loses entropy" with a cross "hurts". On "One helps, and one hurts" a coded balance beam above the card, a weight from each chip on its pans, level and wobbling. On "wins" the amber chip "One helps, one hurts. Which wins, and does temperature matter?" and the chip "Next: How do enthalpy, entropy and temperature determine spontaneity?" write. Hold about 2 seconds. This is the final frame (m4-v13 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. States: gas ≫ liquid > solid.
 2. Count moles of gas: more gas, ΔS +; less gas, ΔS −. Dissolving a solid: usually +.
 3. A tie in the gas count can't decide the sign or size: use data.
-4. S°: entropy of 1 mol at 100 kPa (tables at 25 °C). Perfect crystal at 0 K: S = 0, so elements' S° > 0.
+4. S°: entropy of 1 mol at 100 kPa. Perfect crystal at 0 K: S = 0, so elements have S° > 0.
 5. ΔS° = ΣS°(products) − ΣS°(reactants), each × coefficient.
 
-Memory aid (framed card, on the notes screen): *Count the gas first. A tie? Look it up.*
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Count the gas first. A tie? Look it up.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -210,6 +226,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,600 characters**, 15 scenes (per scene: 310, 518, 535, 481, 311, 528, 564, 388, 184, 248, 270, 346, 411, 431, 75; Revision 1: 5,665). At 13.3 characters per second the speech is about 421 s; add about 12 s of settling (the tallies and arrangement readout in 3, the columns in 4, the cooling ladder in 6, the live sums in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 514 s** (Revision 1: about 517 s), above the 5,500-character floor.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,600 characters). The notes scene is 45 s in all, so the estimate is about 499 s (it was about 514 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v12` (route chem-y11-m4-v12; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v12`.
@@ -220,6 +238,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attem
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v12-learning-review.md`, `checks/c-y11-m4-v12-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 November on a dark contact sheet; uniform scaling only, never stretched):
@@ -229,6 +249,8 @@ Have (inspected 6 November on a dark contact sheet; uniform scaling only, never 
 Need: no new plates.
 
 Coded: equation cards, gas tallies, molecule tiles, arrangement counter, S° bars, classification board, ion inset, cooling ladder, data strip, calculation rows, balance beam, chips, cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plate newly used on a question card (confirmed by file listing, not re-inspected): `m5x-test-tube-holder-v1.png` (attempt 1). Attempt 2 uses coded molecule models (an abstract diagram). New plate requests: none.
 
 ## Codex error-check brief
 
@@ -241,6 +263,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (the balance beam is a plain coded beam); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v11's final frame, and send the final frame to the m4-v13 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +318,23 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 5,600 characters (Revision 1: 5,665); about 517 s to about 514 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains a test tube in its holder and attempt 2 molecule models of its equation; both feedback scenes gain navy givens strips.
+- Key notes: the fourth bullet is shortened to fit one line ("tables at 25 °C" stays in scene 6).
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "tables at 25 °C", which stays on screen in scene 6.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,600 characters, unchanged; about 499 s (it was about 514 s).
+
+Calls for root: molecule models of the equation are the picture on the attempt 2 card; they show the gas count to anyone who counts them, which is the skill practised in attempt 1.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V03: Combustion calorimetry and heat loss. Why does combustion calorimetry underestimate a fuel enthalpy? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,998 characters, 19 scenes, about 545 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,17 @@ Handoff: chem-y11-m4-v04, dissolution.
 - **Opening frame:** m4-v02's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v04` opens on it):** left, small: `m7-spirit-burner-calorimeter-shield-v1.png` with the slate chip "−626 against −1367 kJ mol⁻¹: heat escaped" and a grey tag "flame outside the water". Centre: `m6-foam-cup-calorimeter-v1.png` large, coded probe readout "21.0 °C", a teal label "reaction inside the water". Right: `m5x-cold-pack-v1.png` above `m5x-hot-pack-v1.png`, each with a coded label: "ammonium nitrate dissolving: cools" (cool blue down arrow) and "calcium chloride dissolving: warms" (warm orange up arrow). The amber chip "Why can dissolving warm or cool water?". The chip "Next: Why can dissolving an ionic substance warm or cool water?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the burner result and the prediction, scene 1 (about 29 s); (B) the enthalpy of combustion defined, scene 2 (about 31 s); (C) the bench method, scene 3 (about 30 s); (D) the calculation beside the balance, scenes 4 and 5 (about 50 s); (E) two bars to scale, scene 6 (about 24 s); (F) the energy-split bar, scene 7 (about 23 s); (G) the push into the rig with the heat-share slider, scene 8 (about 27 s); (H) the sooty rig, scene 9 (about 27 s); (I) the balance and the evaporating fuel, scene 10 (about 21 s); (J) three causes, one direction, scene 11 (about 25 s); (K) the shielded rig, scene 12 (about 23 s); (L) the answer frame, scene 13 (about 15 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 50 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The burner cap in scene 10 is not drawn in code.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -113,7 +124,7 @@ Visual: clear change to the energy-split bar across the top half, the burner rig
 ### 8. heat lost to the air
 > The biggest leak is heat lost to the air. The flame heats the air around it, and that hot air, along with the hot gases from burning, rises past the sides of the can and carries its energy away. The warm can also heats the room. Every joule that misses the water is a joule that q never counts, so q is too small, and delta H comes out too small in **size**.
 
-Visual: camera push into the burner rig. On "The flame heats the air around it" orange leak arrows curl from the flame's edges; on "rises past the sides of the can" they stream upward past the can's sides with faint shimmer lines; on "The warm can also heats the room" small arrows leave the can's walls. Cause chip 1 writes at the right: "heat lost to the air (largest)". On "q is too small" the chain "q too small → |ΔHc| too small" (orange down arrow). On "size" the grey bar segment gains the label "1: heat to the air". Simulation (Decisions): as the leak arrows stream upward, the heat-share slider appears beside the rig and slides from 100% towards 46% as the arrows thicken; the teal water segment shortens, and the readouts (52 px) step "share 100% · q 21.4 kJ · ΔHc −1367", "75% · 16.0 kJ · −1025", "60% · 12.8 kJ · −820", landing on "46% · 9.78 kJ · −626 kJ mol⁻¹" (our result, pen ring) before "size". Orange hand tag "missed joules: q never counts them".
+Visual: camera push into the burner rig. On "The flame heats the air around it" orange leak arrows curl from the flame's edges; on "rises past the sides of the can" they stream upward past the can's sides with faint shimmer lines; on "The warm can also heats the room" small arrows leave the can's walls. Cause chip 1 writes at the right: "heat lost to the air (largest)". On "q is too small" the chain "q too small → |ΔHc| too small" (orange down arrow). On "size" the grey bar segment gains the label "1: heat to the air". Simulation (Decisions): as the leak arrows stream upward, the heat-share slider appears beside the rig and slides from 100% towards 46% as the arrows thicken; the teal water segment shortens, and the readouts (52 px) step "share 100% · q 21.4 kJ · ΔHc −1367", "75% · 16.0 kJ · −1025", "60% · 12.8 kJ · −820", landing at "46% · 9.78 kJ · −626 kJ mol⁻¹" (our result, pen ring) before "size". Orange hand tag "missed joules: q never counts them".
 
 ### 9. incomplete combustion
 > The second cause is incomplete combustion. If the flame doesn't get enough oxygen, some carbon ends up as soot or carbon monoxide instead of carbon dioxide. You can see it, a yellow, smoky flame and a black layer on the bottom of the can. Making those releases less energy than making carbon dioxide, so less heat is released for each mole of fuel **burned**.
@@ -124,6 +135,8 @@ Visual: on "incomplete combustion" `m7-spirit-burner-calorimeter-sooty-v1.png` c
 > A third cause hides in the mass. Ethanol evaporates easily. If the burner sits uncapped, some ethanol evaporates from the wick without burning. The balance counts it as fuel burned, so n comes out too big. Dividing the same q by a bigger n makes delta H smaller in size **again**.
 
 Visual: on "hides in the mass" the balance plate returns at the left. On "sits uncapped" the coded cap slides off; on "evaporates from the wick" faint grey wisps rise from the wick with no flame and the readout ticks down "151.62 → 151.58 g". Cause chip 3: "fuel evaporates (uncapped wick)". On "n comes out too big" the chain "mass loss too big → n too big"; on "Dividing the same q by a bigger n" the row "−q ÷ (bigger n) → |ΔHc| too small". On "again" two grey chips appear under the list: "the can absorbs some heat" and "thermometer bulb not fully in the water", each tagged "also makes |ΔHc| too small". Live readouts (52 px) beside the balance, as the chain writes: "mass loss 0.72 → 0.76 g", "n 0.01563 → 0.01650 mol", "ΔHc −626 → −593 kJ mol⁻¹" (grey tag "illustrative"). Violet hand tag "counted, never burned" with a `PenArrow` from the wisps to the n readout.
+
+Upgrade (Revision 3): No cap is drawn or moved in code. The uncapped state is the painted burner beside its cap as it appears in `m7-spirit-burner-calorimeter-v1.png` (cropped to the burner, uniform scale), with a grey hand tag "cap off" and the coded balance readout falling.
 
 ### 11. systematic, not random
 > Notice that every one of these pushes the answer the same way, smaller in size. That makes them systematic errors, which shift every repeat in one direction. Random errors, like the last digit on the balance, scatter results both ways, so they can't explain a result that's half the data value. Repeating the experiment won't fix **it**.
@@ -145,39 +158,45 @@ Visual: on "human error" a chip "human error" stamped red and crossed. On "Name 
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student uses a spirit burner containing methanol (CH₃OH, M = 32.04 g mol⁻¹) to heat 200.0 g of water in a copper can. The mass of the burner decreases by 0.60 g and the temperature of the water rises from 19.4 °C to 29.8 °C. (a) Calculate the molar enthalpy of combustion of methanol. (Specific heat capacity of water = 4.18 J g⁻¹ K⁻¹) (3 marks) (b) The data value is −726 kJ mol⁻¹. Calculate the percentage error. (1 mark)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted burner on its balance (`m7-spirit-burner-on-balance-v1.png`, about 300 px), with no readout and no tag. Card text 34 to 38 px so both parts fit. The answer frame is hidden.
+
 ### 15. feedback 1 (brief)
 > Delta T is ten point four, so q is two hundred times four point one eight times ten point four, about eight point six nine kilojoules. The moles are zero point six zero divided by thirty-two point zero four, zero point zero one eight seven three. So delta H c is minus four hundred and sixty-four kilojoules per mole, and the percentage error is about thirty-six per cent. Keep the minus **sign**.
 
 Visual: card shrinks to the top. Rows on their cues: "ΔT = 29.8 − 19.4 = 10.4 K"; "q = 200.0 × 4.18 × 10.4 = 8694 J = 8.69 kJ" (orange); "n = 0.60 ÷ 32.04 = 0.01873 mol" (violet); "ΔHc = −8.69 ÷ 0.01873 = −464 kJ mol⁻¹" (red); "% error = (726 − 464) ÷ 726 × 100 = 36%". On "sign" a chip "ΔHc = +464 kJ mol⁻¹" fades in and is crossed, note "combustion releases energy: negative". Hold about 1 second. The ΔHc row and the percentage row frame in a dark-ink box with a green tick (52 px). The crossed chip carries a red hand tag "combustion releases: negative".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "CH₃OH, M = 32.04 g mol⁻¹ | 200.0 g of water | burner lost 0.60 g | 19.4 °C → 29.8 °C | data: −726 kJ mol⁻¹".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. A student forgets to cap the spirit burner, and it sits for several minutes before the final weighing. Explain how this affects the calculated enthalpy of combustion. Pause here to answer.
 
 Visual: `QuestionCard`: "In a spirit burner experiment, a student forgets to replace the cap after the flame goes out, and the burner stands for several minutes before its final mass is recorded. Explain the effect of this on the calculated molar enthalpy of combustion of the fuel. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted burner with its cap beside it (`m7-spirit-burner-calorimeter-v1.png`, cropped to the burner, about 280 px), untagged. It shows only what the card states: the cap is off. Card text 38 px. The answer frame stays hidden until feedback.
+
 ### 17. feedback 2 (brief)
 > Fuel evaporates from the uncapped wick, so the recorded mass loss is too big. That makes the calculated moles too big. The same q divided by more moles gives a delta H that's less negative, smaller in size than it should be. Saying n is too small gets the chain **backwards**.
 
 Visual: card shrinks. The answer frame from scene 13 fills on cue: "fuel evaporates" → "mass loss too big → n too big" → "ΔHc less negative". On "backwards" a chip "n too small, so ΔHc more negative" fades in and is crossed. Hold about 1 second. The last box "ΔHc less negative" frames in a dark-ink box with a green tick. The crossed chip carries a red hand tag "more mass lost, more moles".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "cap left off | burner stood for several minutes | then the final mass was recorded".
 
 ### 18. conclusion and handoff
 > So combustion calorimetry underestimates a fuel's enthalpy because heat escapes to the air, some fuel burns incompletely, and some evaporates, and all three make delta H smaller in size. The weak point is that the flame sits outside the water. What about a change that happens inside the water itself? Dissolving some solids warms water, and dissolving others cools it. **Why**?
 
 Visual: the energy-split bar returns small at the top with its three labels. On "heat escapes to the air", "burns incompletely" and "evaporates" the three labels pulse in turn. On "the flame sits outside the water" the shielded rig shrinks to the lower left with the slate chip "−626 against −1367 kJ mol⁻¹: heat escaped" and tag "flame outside the water". On "inside the water itself" `m6-foam-cup-calorimeter-v1.png` slides to the centre, readout "21.0 °C", label "reaction inside the water". On "warms water" `m5x-hot-pack-v1.png` at the right with "calcium chloride dissolving: warms" (orange up arrow); on "cools it" `m5x-cold-pack-v1.png` above it with "ammonium nitrate dissolving: cools" (blue down arrow). On "Why" the amber chip "Why can dissolving warm or cool water?" and the chip "Next: Why can dissolving an ionic substance warm or cool water?" write. Hold about 2 seconds. This is the final frame (m4-v04 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. ΔHc: enthalpy change when 1 mol burns completely in oxygen (ethanol: −1367 kJ mol⁻¹).
 2. n = mass burned ÷ M; ΔHc = −q ÷ n (q in kJ).
-3. School results are less negative: heat lost to the air, incomplete combustion, fuel evaporating (n too big).
+3. School results are less negative: heat lost to air, sooty flame, fuel evaporating.
 4. These errors are systematic: repeats do not fix them.
 5. Improve: draught shield and lid, can near the flame, blue flame, cap at once.
 
-Memory aid (framed card, on the notes screen): *Name it, trace it to q or n, then move ΔH.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Name it, trace it to q or n, then move ΔH.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -234,6 +253,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,998 characters**, 19 scenes (per scene: 382, 406, 397, 293, 368, 321, 307, 354, 355, 276, 333, 308, 197, 389, 393, 198, 272, 374, 75; Revision 1: 5,999). At 13.3 characters per second the speech is about 451 s; add about 13 s of settling (the method steps in 3, the energy-split bar in 7, the heat-share slider in 8, the cross-fades in 9 and 12, the evaporation readouts in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 545 s** (Revision 1: about 542 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,998 characters). The notes scene is 45 s in all, so the estimate is about 530 s (it was about 545 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v03` (route chem-y11-m4-v03; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v03`.
@@ -243,6 +264,8 @@ In order (19 scene headings, all `### N.`): hook-prediction, enthalpy-of-combust
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v02's final frame into scene 1 by camera continue; 1 to 2 camera continue (the placeholder fills); 2 to 3 clear change to the bench; 3 to 4 camera continue; 4 to 5 camera continue; 5 to 6 camera continue; 6 to 7 clear change to the energy-split bar; 7 to 8 camera push into the rig; 8 to 9 in-place cross-fade to the sooty rig; 9 to 10 camera continue (balance returns); 10 to 11 camera continue; 11 to 12 in-place cross-fade to the shielded rig; 12 to 13 clear change; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v03-learning-review.md`, `checks/c-y11-m4-v03-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -259,6 +282,8 @@ Need: no new plates (Revision 2: none; every plate named above exists in `public
 
 Coded: readouts, stirrer loop, cap, vapour wisps, calculation rows, comparison bars, bomb calorimeter cutaway, energy-split bar, leak arrows and shimmer, flame inset with C, CO and CO₂, error target, answer frame, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (already in this design's list): `m7-spirit-burner-on-balance-v1.png` (attempt 1), `m7-spirit-burner-calorimeter-v1.png` cropped to the burner (attempt 2 and scene 10). Removed: the coded cap. New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -271,6 +296,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested (cap, stirrer and spark move by code); no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m4-v02's final frame and that the sooty and shield plates register with the plain rig.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -321,3 +348,24 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none.
 
 Counts: 5,998 characters (Revision 1: 5,999); about 542 s to about 545 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 8: "landing on" a readout value is now "landing at" (visual text only, for the checking script). Scene 10: the coded cap is replaced by the painted uncapped burner and a hand tag.
+- Question cards: attempt 1 gains the burner on its balance and attempt 2 the uncapped burner; both feedback scenes gain navy givens strips.
+- Key notes: the third bullet is shortened to fit one line.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,998 characters, unchanged; about 530 s (it was about 545 s).
+
+Calls for root: none.

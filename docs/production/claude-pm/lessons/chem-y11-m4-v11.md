@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V11: Entropy. How does entropy describe spreading and possible particle arrangements? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,923 characters, 16 scenes, about 538 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -67,6 +67,18 @@ Handoff: chem-y11-m4-v12, the sign of ΔS from a balanced equation.
 - **Opening frame:** m4-v10's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v12` opens on it):** the memory line "Entropy counts the ways." small at the top. Left: `y11c-dry-ice-v1.png` with a coded equation card beneath "CO₂(s) → CO₂(g)" and a purple chip "ΔS: + or −?". Right: a coded equation card "N₂(g) + 3H₂(g) → 2NH₃(g)" with four coded reactant molecules above it and an empty products tray, and a purple chip "ΔS: + or −?". The amber chip "Can a balanced equation tell us which way entropy changes?". The chip "Next: How can a balanced reaction suggest the sign of entropy change?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the cycle shrinks and two jars open, with the prediction, scene 1 (about 33 s); (B) the tally board of sixteen arrangements, scene 2 (about 35 s); (C) the jars with the particle-number slider, then the perfume bottle, scene 3 (about 34 s); (D) the hot and cold blocks sharing packets, scene 4 (about 34 s); (E) entropy defined between the two models, scene 5 (about 25 s); (F) the state lens, scene 6 (about 34 s); (G) the two-column card, scene 7 (about 44 s); (H) the surroundings ring, scene 8 (about 37 s); (I) three everyday cases with their bar pairs, scene 9 (about 38 s); (J) the memory card, scene 10 (about 4 s); question and feedback cards; the handoff; the notes board. One cut was added: the ring ran through scenes 8 and 9 (about 75 s), so scene 9 now changes the frame.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The moving dots in the two joined jars (scenes 1 to 3) and in the attempt 1 box after feedback run on the particle box engine (`src/explainer/sims/`): two joined chambers, two colours, no reaction, so the mixing on screen is a real random walk. The arrangement counts, the slider figures and the "ways" counter are exact arithmetic and stay lesson-coded.
+- **No coded pictures of real things.** The arrangement tiles in scene 2 are plain two-half boxes with dots, not jar drawings, and the ice tray in scene 9 is the painted ice plate.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -81,10 +93,12 @@ Visual: opens on m4-v10's final frame; the "Next" chip fades. On "something besi
 
 Visual: "two in each jar" ticks. On "sixteen possible arrangements" the tally board at the right flashes each arrangement in turn (small jar icons with coloured dots) and sorts them into five columns: "4 top: 1", "3 top: 4", "2 and 2: 6", "1 top: 4", "0 top: 1". On "is called a microstate" gloss "microstate: one particular way the particles are arranged". On "equally likely" every icon gets the same small weight mark. On "Only one of the sixteen" the "4 top" column rings red; on "six of them" the "2 and 2" column rings purple; on "often" a bar "6 ÷ 1 = 6 times as likely" draws. Stage: the tally board takes the right two thirds (48 px column heads, 52 px counts), the jars small at the left. Purple hand tag "6 ways vs 1 way" with a `ScribbleCircle` round the "2 and 2" column.
 
+Upgrade (Revision 3): Each arrangement tile on the tally board is a plain rounded box split into two halves with four coloured dots (a particle model), not a drawn jar.
+
 ### 3. why spreading wins
 > With more particles, the numbers get enormous. For a hundred particles, the chance of finding them all in one jar is about one in a million million million million million. A real sample has far more particles than that, so it never happens. No force pushes the gas to spread out. Spread-out arrangements are just so much more numerous that spreading is what we always see. That's why perfume spreads through a room, and never gathers back into the **bottle**.
 
-Visual: stage: the painted jars large at the left. On "the numbers get enormous" the particle-number slider (Decisions) runs beside the jars, the dots multiplying, and the readout (52 px) steps "4: 1 in 16", "10: 1 in 1024", "20: about 1 in a million"; on "about one in a million million million million million" it lands on "100: about 1 in 10³⁰" and a chip "all in one jar: (½)¹⁰⁰ ≈ 1 in 10³⁰" (purple). On "far more particles" a grey tag "a real sample: about 10²³ particles". On "No force pushes" a crossed chip "a force pushes the gas". On "Spread-out arrangements" the "2 and 2" column from scene 2 returns small, swelling. On "perfume" `m7-perfume-bottle-v1.png` at the right with a coded cloud of scent dots spreading out; on "bottle" a ghost arrow from the cloud back into the bottle is crossed. Purple hand tags "no push, just odds" on the crossed chip and "never comes back" with a pen ring on the crossed ghost arrow.
+Visual: stage: the painted jars large at the left. On "the numbers get enormous" the particle-number slider (Decisions) runs beside the jars, the dots multiplying, and the readout (52 px) steps "4: 1 in 16", "10: 1 in 1024", "20: about 1 in a million"; on "about one in a million million million million million" it lands at "100: about 1 in 10³⁰" and a chip "all in one jar: (½)¹⁰⁰ ≈ 1 in 10³⁰" (purple). On "far more particles" a grey tag "a real sample: about 10²³ particles". On "No force pushes" a crossed chip "a force pushes the gas". On "Spread-out arrangements" the "2 and 2" column from scene 2 returns small, swelling. On "perfume" `m7-perfume-bottle-v1.png` at the right with a coded cloud of scent dots spreading out; on "bottle" a ghost arrow from the cloud back into the bottle is crossed. Purple hand tags "no push, just odds" on the crossed chip and "never comes back" with a pen ring on the crossed ghost arrow.
 
 ### 4. energy spreads too
 > Energy spreads in the same way. Imagine energy shared out in small, equal packets. Three packets shared among three particles can be arranged in ten different ways. Let those particles touch three cold ones, and the same three packets can be shared among six particles, in fifty-six ways. So the energy spreads into the cold particles, simply because there are more ways for it to be shared. That's why heat flows from a hot object into a cold **one**.
@@ -116,6 +130,8 @@ Visual: the surroundings ring: a small dashed teal circle "system" inside a wide
 
 Visual: on "Ice melting on a warm bench" `c9-ice-cube-v1.png` inside the system circle; a small purple bar pair: "room: − (small)" and on "the water gains more" "water: + (larger)"; a total bar "total: +" with a tick. On "The cold pack" `m5x-cold-pack-v1.png` replaces the ice; a coded inset of ions spreading through water dots; the "water: +" bar becomes "ions spreading: + (large)". On "Water freezing in a freezer" a coded ice tray in the system: "system: −" (purple down) and on "raises the entropy of its surroundings" "surroundings: + (larger)"; total "+" with a tick. On "depends on temperature" a grey chip "depends on temperature: coming in this module". On "that" the three totals pulse. Stage: the painted ice large inside the ring, then the cold pack. Purple hand tag "total goes up" with a `ScribbleCircle` round each total tick.
 
+Upgrade (Revision 3): Stage change (about 38 s): the ring shrinks to the left third and each case takes the right two thirds in turn with its plate large (about 420 px) and its bar pair at 44 px: the ice, then the cold pack. For "Water freezing in a freezer" no ice tray is drawn in code: the painted ice (`c9-ice-cube-v1.png`) returns with a slate hand tag "in a freezer". The three total ticks stay in a row along the bottom.
+
 ### 10. counting the ways
 > Here's the line to remember. Entropy counts the **ways**.
 
@@ -126,39 +142,45 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A box is divided into two halves by a partition. One half contains a gas, and the other half contains a different gas. The gases do not react. The partition is removed. Explain, in terms of particle arrangements and entropy, why the gases mix, and why they do not separate again by themselves. (3 marks)" A coded box with purple dots left and green dots right beside the card. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The two-colour box is the card's picture and is on screen from the first frame (about 420 px wide, partition in place, dots still). Card text 38 px. The memory card is hidden.
+
 ### 12. feedback 1 (brief)
 > Once the partition is gone, each particle can be anywhere in the box, so there are far more possible arrangements, and almost all of them are mixed. The particles move at random, so the system ends up in mixed arrangements, and its entropy rises. Unmixing would need one of the very rare separated arrangements, so it never happens. Mixing doesn't release energy. It happens because it's far more **likely**.
 
 Visual: card shrinks to the top. Rows: "particles can be anywhere: many more arrangements, almost all mixed" (purple); "random motion → mixed arrangements; entropy increases"; "separated arrangements are extremely rare → no unmixing". On "Mixing doesn't release energy" a chip "they mix because mixing releases energy" fades in and is crossed; on "likely" the first two rows frame in a dark-ink box with a green tick. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "two different gases, one in each half | they do not react | the partition is removed".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Distinguish between the enthalpy change and the entropy change when ice melts at twenty-five degrees. Give the sign of each, and say what each one describes. Pause here to answer.
 
 Visual: `QuestionCard`: "Ice melts at 25 °C: H₂O(s) → H₂O(l). Distinguish between the enthalpy change and the entropy change for this process. In your answer, state the sign of each and what each describes. (3 marks)" The ice plate small beside the card. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The ice plate stands at the card's right from the first frame (about 280 px), untagged. Card text 38 px. The two-column card is hidden.
+
 ### 14. feedback 2 (brief)
 > Delta H is positive. Melting absorbs heat, to loosen the attractions between water molecules. Delta S is also positive, because molecules that can move past each other have more possible arrangements. One describes heat, the other describes arrangements. Saying delta S is negative because melting absorbs energy mixes the two **up**.
 
 Visual: card shrinks. Rows: "ΔH > 0: heat absorbed to loosen attractions (kJ mol⁻¹)" (blue); "ΔS > 0: more possible arrangements in the liquid (J K⁻¹ mol⁻¹)" (purple); "ΔH: heat. ΔS: arrangements." On "mixes the two" a chip "ΔS < 0 because melting absorbs energy" fades in; on "up" it is crossed. The two sign rows frame in a dark-ink box with a green tick. Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "ice melts at 25 °C | H₂O(s) → H₂O(l)".
 
 ### 15. conclusion and handoff
 > So entropy describes spreading by counting the ways particles and their energy can be arranged, and gases have by far the most. That gives chemists a shortcut. If a reaction makes gas from a solid, or changes the number of gas molecules, the equation itself might tell us which way entropy changes. Dry ice turning to gas, or nitrogen and hydrogen making ammonia: can you read the sign straight from the **equation**?
 
 Visual: the memory line returns small at the top. On "gases have by far the most" the state lens returns briefly, gas panel ringed. On "makes gas from a solid" `y11c-dry-ice-v1.png` enters at the left with the card "CO₂(s) → CO₂(g)"; on "changes the number of gas molecules" the card "N₂(g) + 3H₂(g) → 2NH₃(g)" at the right with four coded reactant molecules above it and an empty products tray. On "Dry ice turning to gas" and "nitrogen and hydrogen making ammonia" each card gains a purple chip "ΔS: + or −?". On "equation" the amber chip "Can a balanced equation tell us which way entropy changes?" and the chip "Next: How can a balanced reaction suggest the sign of entropy change?" write. Hold about 2 seconds. This is the final frame (m4-v12 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Entropy, S: how many ways particles and their energy can be arranged (J K⁻¹ mol⁻¹).
-2. Spreading wins because spread-out arrangements are far more numerous, not because of a force.
+2. Spreading wins: spread-out arrangements are far more numerous. No force pushes.
 3. Entropy: gas ≫ liquid > solid; it rises with temperature.
-4. ΔH is heat (kJ mol⁻¹); ΔS is the change in the number of ways. Judge each sign separately.
-5. Second law: in a change that happens by itself, total entropy (system + surroundings) rises.
+4. ΔH: heat (kJ mol⁻¹). ΔS: change in the number of ways. Judge each sign separately.
+5. Second law: a change that happens by itself raises total entropy (system + surroundings).
 
-Memory aid (framed card, on the notes screen): *Entropy counts the ways.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Entropy counts the ways.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -208,6 +230,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,923 characters**, 16 scenes (per scene: 436, 471, 456, 448, 334, 455, 584, 495, 504, 53, 276, 404, 189, 330, 413, 75; Revision 1: 5,923). At 13.3 characters per second the speech is about 445 s; add about 12 s of settling (the tally board in 2, the particle slider in 3, the packets in 4, the state lens in 6, the surroundings ring in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 538 s** (Revision 1: about 536 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,923 characters). The notes scene is 45 s in all, so the estimate is about 523 s (it was about 538 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v11` (route chem-y11-m4-v11; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v11`.
@@ -217,6 +241,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, counting-arrangemen
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m4-v10's final frame into scene 1 by camera continue (its plates shrink to a corner strip); 1 to 2 camera continue (tally board at the right); 2 to 3 camera push into the jars; 3 to 4 clear change to the blocks; 4 to 5 camera pull back (jars and blocks either side); 5 to 6 clear change to the state lens; 6 to 7 camera continue (the lens becomes the card's ice row); 7 to 8 clear change to the surroundings ring; 8 to 9 camera continue; 9 to 10 clear change; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v11-learning-review.md`, `checks/c-y11-m4-v11-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -235,6 +261,8 @@ Both: transparent PNG with a true alpha channel, clean edges with no fringe or h
 
 Coded: particles and tally board, energy packets and blocks, counters, state lens, S° bars, two-column card, surroundings ring, ion inset, ice tray, equation cards, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). No plates added. Removed: the coded ice tray (scene 9), replaced by the ice plate already in this design. New plate requests: none. Simulation: the particle box engine for the mixing dots.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -246,6 +274,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (the cover slides by code); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v10's final frame, and send the final frame to the m4-v12 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm the particle box run in scenes 1 to 3 never shows a count that disagrees with the tally board (four particles: 1, 4, 6, 4, 1).
 
 ## YouTube metadata (draft)
 
@@ -296,3 +326,26 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: `y11c-gas-jar-open-v1.png` and `y11c-gas-jar-cover-slip-v1.png` (essential; Assets).
 
 Counts: 5,923 characters (Revision 1: 5,923, unchanged); about 536 s to about 538 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 9: a stage change breaks up the surroundings ring (about 75 s); the coded ice tray becomes the painted ice with a hand tag.
+- Scene 2: arrangement tiles are plain two-half boxes. Scenes 1 to 3: the mixing dots are named as a particle box engine run.
+- Scene 3: "lands on" a readout value is now "lands at" (visual text only, for the checking script).
+- Question cards: both feedback scenes gain navy givens strips.
+- Key notes: three bullets are shortened to fit one line each.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,923 characters, unchanged; about 523 s (it was about 538 s).
+
+Calls for root: the particle box engine drives the mixing dots; the counts stay exact arithmetic.

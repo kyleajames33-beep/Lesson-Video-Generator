@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V14: Temperature and spontaneity. When can changing temperature reverse reaction spontaneity? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 184 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 5,558 characters, 14 scenes, about 513 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -67,6 +67,16 @@ Handoff: none in the course; route handoff "Complete and communicate an approved
 - **Opening frame:** m4-v13's final frame exactly (Decisions).
 - **Final frame (course end; nothing opens on it):** a calm, uncluttered frame on the explainer paper background. Heading in the handwriting style, centred in the upper third: "Year 11 Chemistry: complete". Beneath it, four module tiles in a row, each a simple coded card with its module number and title and a green tick: "Module 1: Properties and Structure of Matter", "Module 2: Introduction to Quantitative Chemistry", "Module 3: Reactive Chemistry", "Module 4: Drivers of Reactions" (the Module 4 tile carries a tiny coded ΔG line, the last graph of the course). Below, the memory line of this video small and grey. One slate chip at the bottom of the safe area (above the bottom 12%): "Next: plan and complete your depth study with your teacher". No Year 12 titles, no previews, no plates. Held about 4 seconds, then the key notes; the notes cross-fade back to this frame at the end.
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the limestone result and the prediction, scene 1 (about 31 s); (B) the graph at full frame with its temperature slider, scene 2 (about 45 s); (C) the threshold working at full width, scene 3 (about 42 s); (D) the painted limestone beside the graph, checking either side, scene 4 (about 44 s); (E) ice and water, scene 5 (about 41 s); (F) the grid of four graphs, scene 6 (about 41 s); (G) the memory card, scene 7 (about 15 s); question and feedback cards; (H) the Module 4 ladder, scene 12 (about 34 s); (I) the course tiles, scene 13 (about 21 s); the notes board. No single picture holds past about 45 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -84,7 +94,7 @@ Visual: stage change: the graph enlarges to fill the frame (the painted limeston
 ### 3. finding the threshold
 > Where does it cross zero? At that temperature, delta G is zero, so delta H equals T delta S, and T equals delta H divided by delta S. This is called the threshold temperature, or the crossover temperature. Keep the units consistent. Delta S must be in kilojoules, so T is one hundred and seventy-eight point three divided by zero point one six zero six. That's one thousand one hundred and ten kelvin, about eight hundred and thirty-seven degrees. Divide by one hundred and sixty point six instead, and you'd get one point one one kelvin, which is **absurd**.
 
-Visual: stage change: the working takes the full width (current row 48 px), the graph a thumbnail at the top right. Task strip: "Find the temperature where ΔG° = 0". Rows: on "delta G is zero" "0 = ΔH° − TΔS°"; on "delta H equals T delta S" "ΔH° = TΔS°"; on "T equals delta H divided by delta S" "T = ΔH° ÷ ΔS°" (amber). On "the threshold temperature" gloss "threshold (crossover) temperature: where ΔG° = 0 and spontaneity switches". On "Delta S must be in kilojoules" "ΔS° = 160.6 ÷ 1000 = 0.1606 kJ K⁻¹ mol⁻¹". On "one hundred and seventy-eight point three divided by zero point one six zero six" "T = 178.3 ÷ 0.1606"; on "one thousand one hundred and ten kelvin" "= 1110 K" (amber, framed in a dark-ink box with a tick, 52 px; grey tag "estimate from 25 °C data (measured about 1170 K)") and the thumbnail graph's zero crossing is ringed amber at 1110 K; on "eight hundred and thirty-seven degrees" "1110 − 273 = 837 °C". On "Divide by one hundred and sixty point six" a chip "178.3 ÷ 160.6 = 1.11 K" fades in; on "absurd" it is crossed, stamp "ΔS not converted". Hand tags: amber "terms balance here" with a pen ring on "ΔH° = TΔS°"; purple "÷ 1000 first" on the conversion row; the crossed chip carries a red hand tag "kJ, not J".
+Visual: stage change: the working takes the full width (current row 48 px), the graph a thumbnail at the top right. Task strip: "Find the temperature where ΔG° = 0". Rows: on "delta G is zero" "0 = ΔH° − TΔS°"; on "delta H equals T delta S" "ΔH° = TΔS°"; on "T equals delta H divided by delta S" "T = ΔH° ÷ ΔS°" (amber). On "the threshold temperature" gloss "threshold (crossover) temperature: where ΔG° = 0 and spontaneity switches". On "Delta S must be in kilojoules" "ΔS° = 160.6 ÷ 1000 = 0.1606 kJ K⁻¹ mol⁻¹". On "one hundred and seventy-eight point three divided by zero point one six zero six" "T = 178.3 ÷ 0.1606"; on "one thousand one hundred and ten kelvin" "= 1110 K" (amber, framed in a dark-ink box with a tick, 52 px; grey tag "estimate from 25 °C data (measured about 1170 K)") and the thumbnail graph's zero crossing is ringed amber at 1110 K; on "eight hundred and thirty-seven degrees" "1110 − 273 = 837 °C". On "Divide by one hundred and sixty point six" a chip "178.3 ÷ 160.6 = 1.11 K" fades in; on "absurd" it is crossed, stamp "ΔS not converted". Hand tags: amber "terms balance here" with a pen ring round "ΔH° = TΔS°"; purple "÷ 1000 first" on the conversion row; the crossed chip carries a red hand tag "kJ, not J".
 
 ### 4. checking either side
 > Now check each side. At eleven hundred and seventy-three kelvin, delta G is one hundred and seventy-eight point three minus eleven seventy-three times zero point one six zero six, which is minus ten point one kilojoules. Negative, so in the kiln, limestone breaking down into lime and carbon dioxide is spontaneous. At twenty-five degrees it's plus one hundred and thirty point four, non-spontaneous. Above the threshold, the entropy term wins, and below it, the heat term wins. But the threshold only tells us which direction is favoured. It says nothing about how fast the change **goes**.
@@ -111,20 +121,28 @@ Visual: the memory line writes large in the explainer's hand font as a framed ca
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "N₂(g) + 3H₂(g) → 2NH₃(g)  ΔH° = −91.8 kJ mol⁻¹  ΔS° = −198.1 J K⁻¹ mol⁻¹. (a) Identify how the signs of ΔH° and ΔS° make the spontaneity of this reaction depend on temperature. (1 mark) (b) Calculate the temperature above which the reaction is non-spontaneous under standard conditions. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted ammonia bottle (`m5x-ammonia-bottle-v1.png`, about 260 px tall), untagged, as the product. The equation and its two data values sit on their own line at 34 px or more. The grid and memory card are hidden.
+
 ### 9. feedback 1 (brief)
 > Both signs are negative, so temperature decides: it's spontaneous below the threshold. T is ninety-one point eight divided by zero point one nine eight one, which is four hundred and sixty-three kelvin, about one hundred and ninety degrees. Above that, it's non-spontaneous. Forgetting to convert gives zero point four six three kelvin, which makes no **sense**.
 
 Visual: card shrinks to the top. Rows: "(a) ΔH° < 0 and ΔS° < 0: spontaneous below the threshold" (amber); "(b) ΔS° = −0.1981 kJ K⁻¹ mol⁻¹; T = −91.8 ÷ (−0.1981) = 463 K (about 190 °C)"; "above 463 K: ΔG° > 0, non-spontaneous" (red). A mini graph: a rising line crossing at 463 K. On "Forgetting to convert" a chip "91.8 ÷ 198.1 = 0.463 K" fades in; on "sense" it is crossed. Hold about 1 second. Row (b) frames in a dark-ink box with a tick (52 px). The crossed chip carries a red hand tag "convert ΔS".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "N₂(g) + 3H₂(g) → 2NH₃(g) | ΔH° = −91.8 kJ mol⁻¹ | ΔS° = −198.1 J K⁻¹ mol⁻¹".
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. For water freezing, delta H is minus six point zero one kilojoules, and delta S is minus twenty-two point zero joules per kelvin. Show by calculation that freezing is spontaneous at minus five degrees, but not at plus five degrees. Pause here to answer.
 
 Visual: `QuestionCard`: "For the freezing of water, H₂O(l) → H₂O(s): ΔH = −6.01 kJ mol⁻¹ and ΔS = −22.0 J K⁻¹ mol⁻¹. Show by calculation that freezing is spontaneous at −5 °C but non-spontaneous at +5 °C. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted ice (`c9-ice-cube-v1.png`, about 280 px), untagged. Card text 38 px. Nothing answer-bearing; the ice and water graph from scene 5 is hidden.
+
 ### 11. feedback 2 (brief)
 > At minus five degrees, two hundred and sixty-eight kelvin, delta G is minus six point zero one plus five point nine zero, about minus zero point one one, so freezing is spontaneous. At plus five degrees, two hundred and seventy-eight kelvin, it's about plus zero point one one, so it isn't. Calling freezing always spontaneous because it's exothermic ignores the entropy **term**.
 
 Visual: card shrinks. Rows: "268 K: ΔG = −6.01 − 268 × (−0.0220) = −6.01 + 5.90 = −0.11 kJ mol⁻¹: spontaneous" (green); "278 K: ΔG = −6.01 − 278 × (−0.0220) = −6.01 + 6.12 = +0.11 kJ mol⁻¹: non-spontaneous" (red). On "Calling freezing always spontaneous" a chip "exothermic, so always spontaneous" fades in; on "term" it is crossed. Hold about 1 second. Both rows frame in a dark-ink box with a tick. The crossed chip carries a red hand tag "TΔS can win".
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "H₂O(l) → H₂O(s) | ΔH = −6.01 kJ mol⁻¹ | ΔS = −22.0 J K⁻¹ mol⁻¹ | at −5 °C and at +5 °C".
 
 ### 12. Module 4 in one picture
 > So temperature can reverse spontaneity when delta H and delta S have the same sign, and the switch happens at the threshold, delta H divided by delta S, in kelvin. That finishes Module 4. It asked what drives reactions. First, enthalpy, the energy taken in or given out. Then entropy, counting the ways. And finally Gibbs free energy, which weighs the two, with temperature setting the **balance**. Every reaction you meet can be read with those three ideas.
@@ -136,7 +154,7 @@ Visual: the memory line returns small at the top. On "at the threshold" the lime
 
 Visual: the ladder shrinks into the Module 4 tile. On "the particles and bonds" the Module 1 tile writes with a green tick; on "count them in moles" the Module 2 tile; on "how and why substances react" the Module 3 tile; on "what drives a reaction to go" the Module 4 tile (with its tiny ΔG line). Heading writes "Year 11 Chemistry: complete". On "plan and finish your depth study" the slate chip "Next: plan and complete your depth study with your teacher". On "done" the four ticks pulse once. Hold about 4 seconds. This is the final frame of the course.
 
-### 14. key notes (quiet, hold about 60 seconds)
+### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -146,9 +164,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Limestone: about 1110 K (estimate from 25 °C data). Ice and water: 273 K.
 5. Both +: spontaneous above the threshold; both −: below. Opposite signs never switch.
 
-Memory aid (framed card, on the notes screen): *Same signs: temperature decides. Opposite signs: it never switches.*
-
-At the end the notes cross-fade back to scene 13's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Same signs: temperature decides. Opposite signs: it never switches.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 13's final frame.
 
 ## Teaching checks
 
@@ -201,6 +217,8 @@ Checked with Python (6 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,558 characters**, 14 scenes (per scene: 413, 592, 555, 587, 539, 540, 199, 326, 358, 263, 376, 454, 281, 75; Revision 1: 5,558). At 13.3 characters per second the speech is about 418 s; add about 12 s of settling (the graph and slider in 2, the crossing in 3, the slider, regions and cross-fade in 4, the grid in 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 4 s for the course-end hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 513 s** (Revision 1: about 511 s). Narration unchanged, so the total stays above the 5,500 floor.
 
+Revision 3 (12 Nov 2026): narration unchanged (5,558 characters). The notes scene is 45 s in all, so the estimate is about 498 s (it was about 513 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v14` (route chem-y11-m4-v14; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v14`.
@@ -210,6 +228,8 @@ In order (14 scene headings, all `### N.`): hook-prediction, straight-line, thre
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end; scene 13 is `explain` with a 4 s hold. Transitions: m4-v13's final frame into scene 1 by camera continue; 1 to 2 camera push (the graph enlarges); 2 to 3 camera continue (working at the left); 3 to 4 camera continue; 4 to 5 clear change to the ice board; 5 to 6 clear change to the grid; 6 to 7 clear change; attempts and feedback card shrink to the top; 11 to 12 board clear; 12 to 13 morph (the ladder shrinks into the Module 4 tile); 13 to 14 fade to the notes board, and 14 cross-fades back to 13's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), course end (4 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v14-learning-review.md`, `checks/c-y11-m4-v14-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -227,6 +247,8 @@ Requested in Revision 1 (now delivered):
 
 Coded: ΔG against T graphs and regions, calculation rows, ice and water graph, combination grid, Module 4 ladder with thumbnails, module tiles, course-end frame, chips, cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards: `m5x-ammonia-bottle-v1.png` (attempt 1; confirmed by file listing, not re-inspected), `c9-ice-cube-v1.png` (attempt 2; already in this design's list). New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -238,6 +260,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling; the course-end frame names no Year 12 content.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m4-v13's final frame, and that the quicklime plate brief pairs with v13's limestone plate brief.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -291,3 +315,23 @@ Visual upgrade:
 New plate requests: none.
 
 Counts: 5,558 characters (Revision 1: 5,558, unchanged); about 511 s to about 513 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 3: "pen ring on" a label is now "pen ring round" (visual text only, for the checking script).
+- Question cards: attempt 1 gains the ammonia bottle and attempt 2 the ice; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,558 characters, unchanged; about 498 s (it was about 513 s).
+
+Calls for root: none.

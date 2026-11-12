@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V01: Energy profiles. How does an energy profile distinguish endothermic from exothermic change? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 219 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 219 error-check findings resolved (root); ready to voice.
 
 Narration 6,372 characters, 19 scenes, about 570 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,6 +73,16 @@ Handoff: chem-y11-m4-v02, calorimetry.
 - **Opening frame:** m3-v15's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v02` opens on it):** left: `m7-spirit-burner-calorimeter-v1.png` large (copper can with thermometer over a lit spirit burner on a stand), a coded readout on the thermometer "31.2 °C" with a grey "started at 19.5 °C" beneath, a label card "200.0 g of water" on the can, and short warm-orange arrows from the flame into the can's base. Right: the exothermic profile small (methane), ΔH arrow red, with the tag "energy out: how much?". The amber chip "The water warmed by 11.7 °C. How many joules flowed into it?". The chip "Next: How can a calorimeter turn a temperature rise into heat transfer?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the warm cup from last time and the prediction, scene 1 (about 23 s); (B) two readouts, one falling and one rising, scene 2 (about 26 s); (C) system and surroundings with the dashed outline, scene 3 (about 29 s); (D) arrows out and arrows in, scene 4 (about 27 s); (E) the two enthalpy bars, scene 5 (about 33 s); (F) the profile drawn, then its hill, scenes 6 and 7 (about 68 s; the Bunsen plate arrives at scene 7 and changes the frame); (G) the arrows check at full width, scene 8 (about 19 s); (H) the limestone profile, scene 9 (about 33 s); (I) the trap split screen, scene 10 (about 27 s); (J) the rule card and its slider, scene 11 (about 25 s); (K) the thermochemical equation, scene 12 (about 31 s); (L) the memory line, scene 13 (about 7 s); question and feedback cards; the handoff; the notes board. No single picture holds past about 37 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -130,7 +140,7 @@ Visual: split screen: left, the methane profile with the product level ringed an
 ### 11. from a thermometer to a profile
 > So you can go from a thermometer to a profile. If the surroundings warm up, energy left the system, the products sit lower, and delta H is negative. If the surroundings cool down, energy went into the system, the products sit higher, and delta H is positive. So dissolving ammonium chloride gets a profile with the products **higher**.
 
-Visual: the rule card writes in two columns. Left (orange): "surroundings warm up" → "energy out of the system" → "products lower" → "ΔH negative: exothermic", each row on its cue. Right (blue): "surroundings cool down" → "energy into the system" → "products higher" → "ΔH positive: endothermic". Beneath the card the thermometer-to-profile slider runs (see Simulation): it first rests on "+11.7 °C" (the burner) with the product level below and the red arrow down. On "dissolving ammonium chloride" the foam cup thumbnail "−5.8 °C" joins the right column and the slider sweeps through zero to "−5.8 °C": the product level rises above the reactants and the arrow turns blue and points up. On "higher" the sketch labels write: "NH₄Cl(s)" low, "NH₄⁺(aq) + Cl⁻(aq)" higher (no numbers); blue hand tag "cooler surroundings: products higher".
+Visual: the rule card writes in two columns. Left (orange): "surroundings warm up" → "energy out of the system" → "products lower" → "ΔH negative: exothermic", each row on its cue. Right (blue): "surroundings cool down" → "energy into the system" → "products higher" → "ΔH positive: endothermic". Beneath the card the thermometer-to-profile slider runs (see Simulation): it first rests at "+11.7 °C" (the burner) with the product level below and the red arrow down. On "dissolving ammonium chloride" the foam cup thumbnail "−5.8 °C" joins the right column and the slider sweeps through zero to "−5.8 °C": the product level rises above the reactants and the arrow turns blue and points up. On "higher" the sketch labels write: "NH₄Cl(s)" low, "NH₄⁺(aq) + Cl⁻(aq)" higher (no numbers); blue hand tag "cooler surroundings: products higher".
 
 ### 12. the thermochemical equation
 > We can also write delta H next to the equation. That's called a thermochemical equation. Methane plus two oxygen gives carbon dioxide plus two water, with every state shown, and delta H equals minus eight hundred and ninety kilojoules per mole. Per mole here means for the equation as written, so one mole of methane burning. The states matter, because liquid water and steam store different amounts of **energy**.
@@ -147,39 +157,45 @@ Visual: the memory line writes large in the explainer's handwriting style: "Exot
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience") beside `m5x-cold-pack-v1.png`: "An instant cold pack contains solid ammonium nitrate, NH₄NO₃, and water in separate compartments. When the inner seal is broken, the ammonium nitrate dissolves and the temperature of the pack falls from 22 °C to 4 °C. (a) Classify the dissolving of ammonium nitrate as exothermic or endothermic. Justify your answer with reference to the system and the surroundings. (2 marks) (b) State the sign of ΔH and describe the position of the products relative to the reactants on an energy profile diagram. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The cold pack plate stands at the card's right from the first frame (about 300 px), untagged. Card text 34 to 38 px so both parts fit. The rule card and the memory line are hidden during the countdown.
+
 ### 15. feedback 1 (brief)
 > Endothermic. The temperature of the surroundings fell, so energy flowed from the surroundings, the water and the pack, into the system, the dissolving ammonium nitrate. So delta H is positive, and the products sit higher than the reactants. A temperature fall doesn't mean a negative delta H. Delta H describes the **system**.
 
 Visual: card shrinks to the top. Rows: "endothermic" (blue); "surroundings (water, pack) cooled → energy flowed into the system (dissolving NH₄NO₃)" with inward blue arrows on a small dashed outline; "ΔH > 0: products higher than reactants" with a mini profile. The answer "endothermic: ΔH > 0, products higher" sits in a dark-ink box with a green tick. On "doesn't mean a negative delta H" a chip "ΔH is negative because the temperature decreased" fades in and is crossed in red; on "Delta H describes the system" a red hand tag "ΔH is the system's" writes beside it. Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "ammonium nitrate dissolves in water | pack: 22 °C → 4 °C".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Use the energy profile to determine the activation energy and the enthalpy change for this reaction, and state whether it's exothermic or endothermic. Pause here to answer.
 
 Visual: `QuestionCard`: "The energy profile diagram for a reaction is shown. (a) Determine the activation energy, Eₐ. (1 mark) (b) Determine the enthalpy change, ΔH, and classify the reaction as exothermic or endothermic. (2 marks)" beside a coded profile: vertical axis "enthalpy (kJ mol⁻¹)" with ticks at −50, 0, 50, 100, 150, 200 and the note "values relative to an arbitrary zero"; reactant level at 40, peak at 160, product level at −50, horizontal axis "reaction progress"; labels "reactants" and "products" only (no arrows). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The supplied profile is the card's picture and is on screen from the first frame, at least 520 px wide with axis numbers at 30 px or more. The rule card stays hidden.
+
 ### 17. feedback 2 (brief)
 > The activation energy is from the reactants at forty up to the peak at a hundred and sixty, so a hundred and twenty kilojoules per mole. Delta H is products minus reactants, minus fifty minus forty, which is minus ninety kilojoules per mole. Negative, so it's exothermic. A hundred and sixty is the peak's height from zero, not the activation **energy**.
 
 Visual: card shrinks. On the profile: the amber Eₐ arrow draws from 40 to 160, "Eₐ = 160 − 40 = 120 kJ mol⁻¹"; the red ΔH arrow from 40 down to −50, "ΔH = −50 − 40 = −90 kJ mol⁻¹"; "exothermic (products lower)". The two results frame in a dark-ink box with a green tick. On "from zero" a chip "Eₐ = 160 kJ mol⁻¹" fades in beside a grey ghost arrow from 0 to 160; on "energy" it is crossed in red (red hand tag "start at the reactants"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "reactants 40 | peak 160 | products −50 (kJ mol⁻¹)".
 
 ### 18. conclusion and handoff
 > So an energy profile shows an exothermic change with the products below the reactants and a negative delta H, and an endothermic change with the products above and a positive delta H, both with an activation energy hill. A thermometer in the surroundings tells you which one you've got. But how much energy flowed? The water in this can warmed by eleven point seven degrees. How can that temperature rise tell us how many joules flowed into **it**?
 
 Visual: the two small profiles side by side with the memory line under them. On "products below the reactants" the methane profile's red arrow pulses; on "products above" the limestone profile's blue arrow pulses; on "activation energy hill" both amber Eₐ arrows pulse. On "A thermometer in the surroundings" the rule card thumbnail. On "But how much energy flowed?" the board settles into the final frame: `m7-spirit-burner-calorimeter-v1.png` large at the left, readout "31.2 °C", "started at 19.5 °C", label "200.0 g of water", orange arrows into the can; the methane profile small at the right with "energy out: how much?". On "eleven point seven degrees" the amber chip "The water warmed by 11.7 °C. How many joules flowed into it?". On "it" the chip "Next: How can a calorimeter turn a temperature rise into heat transfer?" writes. Hold about 2 seconds. This is the final frame (m4-v02 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. System: the chemicals changing. Surroundings: everything else, including the thermometer.
+1. System: the chemicals changing. Surroundings: everything else, thermometer included.
 2. Exothermic: energy out, surroundings warm, ΔH negative.
 3. Endothermic: energy in, surroundings cool, ΔH positive.
-4. Profile: vertical axis enthalpy, not temperature. Eₐ: reactants to peak.
-5. Thermochemical equation: states, ΔH with its sign, kJ mol⁻¹ for the equation as written.
+4. Profile: vertical axis is enthalpy, not temperature. Eₐ: reactants to peak.
+5. Thermochemical equation: states, signed ΔH, kJ mol⁻¹ for the equation as written.
 
-Memory aid (framed card, on the notes screen): *Exothermic: energy exits. Endothermic: energy enters.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Exothermic: energy exits. Endothermic: energy enters.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -232,6 +248,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,372 characters**, unchanged from Revision 1, 19 scenes (per scene: 307, 340, 385, 360, 445, 410, 498, 253, 440, 362, 331, 410, 94, 364, 322, 182, 350, 444, 75). At 13.3 characters per second the speech is about 479 s; add about 10 s of settling (the readouts in 2, the hill draw and spark in 7, the two-profile set and plates in 9, the slider in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold: **about 570 s**, at the cap.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,372 characters). The notes scene is 45 s in all, so the estimate is about 555 s (it was about 570 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m4-v01` (route chem-y11-m4-v01; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m4-v01`.
@@ -241,6 +259,8 @@ In order (19 scene headings, all `### N.`): hook-prediction, measuring-changes, 
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m3-v15's final frame into scene 1 by camera continue, then a clear change to the foam cup; 1 to 2 camera continue (the burner slides in beside the cup); 2 to 3 camera push into the cup; 3 to 4 camera continue; 4 to 5 clear change to the bars; 5 to 6 camera continue (bars become levels); 6 to 7 camera continue; 7 to 8 camera continue; 8 to 9 camera continue (the first profile shrinks); 9 to 10 split screen; 10 to 11 clear change; 11 to 12 clear change; 12 to 13 camera continue; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m4-v01-learning-review.md`, `checks/c-y11-m4-v01-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -258,6 +278,8 @@ Need: no new plates (Revision 2 reuses the limestone and quicklime pair).
 
 Coded: readouts, powder heap and tipping, stir swirl, method card, system boundary and energy arrows, ion lens, enthalpy bars, energy profiles (axes, levels, hill, arrows, labels), split screen, rule card and the thermometer-to-profile slider, equation strip, chips, cards, countdowns, key notes board.
 
+Revision 4 (12 Nov 2026). No plates added or removed. New plate requests: none.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -269,6 +291,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (powder tips and the burner lights by code); no em dash (U+2014); Australian spelling; the safety chip matches current NSW school guidance for ethanol burners and ammonium chloride.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m3-v15's final frame, and send the final frame to the m4-v02 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -328,3 +352,23 @@ Counts: 6,372 characters (unchanged); about 570 s (unchanged, at the cap).
 Brief 219 error check (`checks/c-y11-m4-v01-rev2-error-check.md`), should-fix finding resolved (root decision 19 via the Module 4 after-183 note):
 - Scene 2: a grey method strip "teacher demonstration or checked footage: follow your school's approved method" sits under the existing safety chip on the practical view. The spirit burner stays the painted still; no fuel procedure is animated. Author note (h) names the ethanol and ammonium chloride SDS as the author-side references; open decision 4 is marked resolved.
 - Display and author-plan change only, as required at the 570 s cap. No speech change. Narration 6,372 characters (sum of 19 scene strings), about 570 s. Bold cues quoted in spoken order (Revision 3 also ties scene 13's "enters" to the spoken "Endothermic, energy enters" and scene 15's "system" to "Delta H describes the system"; no timing change); no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 11: the wording "rests on" a readout value is now "rests at", so the checking script no longer reads the value as a spoken cue (visual text only).
+- Question cards: both feedback scenes gain navy givens strips; the rule card and memory line are hidden during countdowns.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,372 characters, unchanged; about 555 s (it was about 570 s).
+
+Calls for root: none.
