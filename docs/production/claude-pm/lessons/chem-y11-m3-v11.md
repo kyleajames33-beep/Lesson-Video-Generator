@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V11: Galvanic cells. Why does a galvanic cell need two half-cells and an ion path? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,258 characters, 19 scenes, about 560 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -69,6 +69,18 @@ Handoff: chem-y11-m3-v12, standard reduction potentials.
 - **Opening frame (equals m3-v10's final frame):** two half-cell plates side by side at one scale with a gap: left `y11c-halfcell-zn-v1.png` (tag "ZnSO₄(aq)"), right `y11c-halfcell-cu-v1.png` (tag "CuSO₄(aq)"); above the left "Zn(s) → Zn²⁺(aq) + 2e⁻" (teal), above the right "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet); a coded black wire arcing from the top of the zinc strip to the top of the copper strip with an amber "e⁻ ?"; a grey dashed "?" in the gap; the chip "Next: Why does a galvanic cell need two half-cells and an ion path?".
 - **Final frame (m3-v12 opens on it):** left half of the board, the relative ladder titled "relative to copper (V)": a vertical scale with ticks at 0.00, −0.50, −1.00, −1.50, −2.00; tiles "Cu 0.00" (on a zero line with a small wave glyph), "Fe −0.65", "Zn −1.05", "Mg −1.80", teal outlines, grey tag "our class readings (illustrative)"; right half, an empty vertical ladder titled "E° (V), relative to hydrogen", ticks from −3.00 to +1.00, a dashed teal line at 0.00 labelled "H₂", and four empty slots each marked "?" with the labels "Mg", "Zn", "Fe", "Cu" beside them; top right, a coded ruled card glyph titled "Standard reduction potentials (data sheet)"; the chip "Next: How do standard reduction potentials predict a redox reaction?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** the Visual lines already mark each stage change: (A) the painted half-cells with the meter, then the electrode lenses, scenes 1 and 2 (about 45 s); (B) the charge counters, without and then with the salt bridge, scenes 3 and 4 (about 61 s); (C) the bridge lens, scene 5 (about 23 s); (D) the split screen, scene 6 (about 37 s); (E) anode and cathode on the rig, scene 7 (about 30 s); (F) the lamp circuit running, scene 8 (about 20 s); (G) swapping in other half-cells and the results table, scenes 9 to 11 (about 64 s); (H) the meter and the relative ladder, scene 12 (about 36 s); (I) the safety strip on the rig, scene 13 (about 17 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 64 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine for the wire.** The electron dots in the wire and the lamp's brightness are driven by the circuits engine (`src/explainer/sims/circuits.ts`, `useCircuit` with `carriers="electrons"`): the cell is one battery of about 1.10 V with a switch that stands for the ion path, open until the salt bridge is lowered in, so the dots sit still on the wire (as the engine draws zero current) and then move steadily. The net-charge readouts on the two solutions stay lesson-coded.
+- **No coded icons of real things.** The globe glyph (scene 6), the clock glyph (scene 8) and the wave and hill pictures (scene 12) are replaced as the scene paragraphs say.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -103,6 +115,8 @@ Visual: (stage change: the bridge lens at full width; about 23 s) a lens opens o
 
 Visual: (stage change: the split screen; about 37 s) left half: `y11c-cuso4-beaker-zinc-after-v1.png` large with m3-v07's surface lens (electrons hop from Zn to Cu²⁺; a warm amber shimmer; amber hand tag "direct: energy lost as heat"); right half: the cell rig. On "only way" the wire glows (orange hand tag "wire only"). On "globe" the meter shifts aside, `y11c-filament-lamp-lit-v1.png` (existing plate, scaled small) joins the wire and lights, and a full electron stream runs (grey tag "a load draws a real current"). On "cell" gloss chip "galvanic cell: makes electricity from a redox reaction that happens by itself"; grey tag "the cell doesn't create electrons; they come from the zinc"; a pen arrow from the lamp to the zinc strip.
 
+Upgrade (Revision 3): The globe in the wire is the painted filament lamp (`phys-y11-filament-lamp-v1.png` unlit, cross-fading to `y11c-filament-lamp-lit-v1.png` when it lights, about 240 px), not a coded glyph.
+
 ### 7. anode and cathode
 > The two electrodes have names. Oxidation happens at the anode, here the zinc. Reduction happens at the cathode, here the copper. A handy pair is an ox, red cat. Anode, oxidation. Reduction, cathode. Electrons are pushed out of the zinc, so in a galvanic cell the anode is the negative terminal, and the cathode is **positive**. Electrons always flow through the wire from the anode to the **cathode**.
 
@@ -112,6 +126,8 @@ Visual: the globe fades; the meter returns. Labels write: "anode (−): oxidatio
 > Run the cell through the globe for a long time, and you can see the half-equations at work. The zinc electrode slowly wears away, as zinc atoms become ions. The copper electrode gains a fresh coating of copper, and the blue colour fades, as copper ions are used **up**.
 
 Visual: (stage change: the lamp circuit running; about 18 s) the meter is replaced by the lit lamp plate; on "through the globe" a coded clock glyph spins several times (grey tag "hours with a load; a voltmeter alone draws too little current to show this"); the zinc plate cross-fades to `y11c-halfcell-zn-used-v1.png` (delivered; thinner, pitted strip) and the copper plate to `y11c-halfcell-cu-used-v1.png` (delivered; thicker, rough fresh copper, paler blue). Hand tags: teal "zinc: mass down", violet "copper: mass up"; on "up" "Cu²⁺ concentration down" (grey tag "not up: ions leave the solution"); a pen ring around the paler blue.
+
+Upgrade (Revision 3): No clock is drawn: a time readout "hours later" (44 px) advances beside the lit lamp while the electron dots keep moving.
 
 ### 9. prediction: swap in magnesium (countdown, 3 seconds)
 > Quick prediction. Swap the zinc half-cell for a magnesium half-cell. Will the voltage go up, or **down**?
@@ -133,6 +149,8 @@ Visual: the rig shrinks to the left. The results table sorts by voltage; on "cop
 
 Visual: the meter with its two leads enlarges; on "two connections" each lead tip glows. On "one half-cell on its own" a single half-cell with one lead and a "?" display; a chip "a half-cell has its own measurable voltage" fades in and is crossed in red (red hand tag "one lead, no reading"). On "sea level" a small wave glyph and a hill outline with a height arrow from the waves. On "zero" the relative ladder draws at full height (stage change): "Cu 0.00" on the zero line (wave glyph), then "Fe −0.65", "Zn −1.05", on "eight" "Mg −1.80". Title "relative to copper (V)"; ink hand tag "agreed zero" on the zero line.
 
+Upgrade (Revision 3): No waves or hill are drawn: the "sea level" comparison is a plain vertical height scale with a zero line labelled "sea level = 0" and one height arrow, beside the relative ladder with "Cu 0.00" on its own zero line.
+
 ### 13. safety
 > If you do this practical, wear safety glasses. Copper sulfate is harmful if swallowed, and it harms waterways, so collect every solution for disposal as your teacher directs, not down the sink. Wash your hands when you **finish**.
 
@@ -143,39 +161,45 @@ Visual: the safety strip writes along the top (`chem-m8-p02` style): "safety gla
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A galvanic cell is made from a magnesium electrode in 1 mol L⁻¹ Mg(NO₃)₂(aq) and a copper electrode in 1 mol L⁻¹ Cu(NO₃)₂(aq). The electrodes are joined by a wire and the solutions by a salt bridge containing KNO₃(aq). (a) Identify the anode, with a reason. (b) State the direction of electron flow. (c) State the direction in which nitrate ions move in the salt bridge, with a reason. (3 marks)" A small coded diagram of two labelled beakers, wire and bridge (no arrows). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the rig hides).
 
+Upgrade (Revision 3): The card's picture is its cell diagram, drawn from the first frame in solid dark ink at about 480 px wide with labels at 30 px or more and no arrows. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 15. feedback 1 (brief)
 > Magnesium is the anode. It loses electrons more readily, so it's oxidised there. Electrons flow through the wire, from magnesium to copper. Nitrate ions move through the salt bridge into the magnesium half-cell, to balance the new magnesium ions. Saying electrons flow through the salt bridge is the **slip**. Only ions move **there**.
 
 Visual: card shrinks to the top. The diagram fills: "anode (−): Mg → Mg²⁺ + 2e⁻" (teal), "cathode (+): Cu²⁺ + 2e⁻ → Cu" (violet); orange arrow "e⁻" along the wire Mg → Cu; violet NO₃⁻ dots moving toward the Mg beaker. The answer "anode: Mg. e⁻: Mg → Cu in the wire. NO₃⁻ → Mg half-cell" in a dark-ink box with a green tick. On "slip" a chip "e⁻ through the salt bridge" fades in; on "there" it is crossed in red (red hand tag "ions only"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Mg in Mg(NO₃)₂(aq) | Cu in Cu(NO₃)₂(aq) | KNO₃ salt bridge".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. A student pairs three metals, P, Q and R, with a copper half-cell. Copper is the positive terminal each time. The readings are zero point four five volts for P, one point three volts for Q, and zero point nine volts for R. Rank the metals by how readily they lose electrons, and explain why the student can't report the potential of P's half-cell on its own. Pause here to answer.
 
 Visual: `QuestionCard`: "A student made three galvanic cells, each from a copper half-cell and a half-cell of metal P, Q or R, under the same conditions. In every cell the copper electrode was the positive terminal. Readings: P–Cu 0.45 V; Q–Cu 1.30 V; R–Cu 0.90 V. (a) List P, Q and R from the most to the least readily oxidised. (b) Explain why the student cannot report a value for the potential of the P half-cell on its own. (3 marks)" A small results table repeats the data. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted copper half-cell (`y11c-halfcell-cu-v1.png`, about 260 px tall) above the small results table. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Q, then R, then P. Every metal was oxidised against copper, and a bigger voltage means a bigger difference from copper, so Q loses electrons most readily. A voltmeter only measures the difference between two half-cells, so P's value only means something against a reference. Ranking P first, because its reading is smallest, gets the order **backwards**.
 
 Visual: card shrinks. A mini relative ladder: "Cu 0.00", "P −0.45", "R −0.90", "Q −1.30"; ranking "Q > R > P"; tag "two connections: differences only". The answer "Q > R > P" sits in a dark-ink box with a green tick. On "backwards" a chip "P > R > Q" fades in and is crossed in red (red hand tag "smallest reading = closest to copper"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "P–Cu 0.45 V | Q–Cu 1.30 V | R–Cu 0.90 V | copper positive every time".
 
 ### 18. conclusion and handoff
 > So a galvanic cell needs two half-cells to force electrons through a wire, and a salt bridge to keep both solutions neutral. And half-cells can only be compared with each other. Chemists did that carefully, against one standard reference, the hydrogen half-cell, under standard conditions, and their results are on your data sheet. How do standard reduction potentials predict a redox **reaction**?
 
 Visual: the rig shrinks and fades left; the relative ladder (from 12) moves to the left half. On "against one standard reference" the empty ladder draws on the right: title "E° (V), relative to hydrogen", ticks −3.00 to +1.00, on "the hydrogen half-cell" a dashed teal line "H₂ 0.00". Four empty slots "?" with labels "Mg", "Zn", "Fe", "Cu" appear. On "data sheet" the coded ruled card "Standard reduction potentials (data sheet)" slides in at the top right. On "reaction" the chip "Next: How do standard reduction potentials predict a redox reaction?" writes. Hold about 2 seconds. This is the final frame (m3-v12 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Galvanic cell: a spontaneous redox reaction split into two half-cells.
 2. Electrons go through the wire; ions go through the salt bridge.
 3. Anode: oxidation, negative. Cathode: reduction, positive.
-4. Salt bridge: anions to the anode side, cations to the cathode side. No bridge, no steady current.
+4. Salt bridge: anions to the anode side, cations to the cathode side; charge keeps moving.
 5. A voltmeter compares two half-cells, so potentials are relative to a reference.
 
-Memory aid (framed card, on the notes screen): *AN OX, RED CAT: anode oxidation, reduction cathode.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *AN OX, RED CAT: anode oxidation, reduction cathode.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -227,6 +251,8 @@ Checked by script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,258 characters**, 19 scenes (Revision 1: 6,210). At 13.3 characters per second the speech is about 471 s; add about 10 s of settling (the electrode lenses in 2, the charge counters in 3 and 4, the bridge lens in 5, the split screen in 6, the running-cell cross-fade in 8, the half-cell swaps in 10, the ladder in 12), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 58 s in all): **about 560 s** (Revision 1: about 553 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,258 characters). The notes scene is 45 s in all, so the estimate is about 547 s (it was about 560 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v11` (route chem-y11-m3-v11; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v11`.
@@ -236,6 +262,8 @@ In order (19 scene headings, all `### N.`): hook-wire-alone, half-cells, flow-st
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-magnesium (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions: the opening frame into scene 1 by clearing the Next chip and inserting the meter; 1 to 2 camera continue (the rig enlarges; lenses open); 2 to 3 camera continue (lenses close; counters appear); 3 to 4 camera continue (the bridge lowers); 4 to 5 zoom into the bridge lens; 5 to 6 split screen; 6 to 7 camera continue (the lamp clears, the meter returns); 7 to 8 camera continue (the lamp replaces the meter); 8 to 9 camera continue (plates reset); 9 to 10 to 11 camera continue (the rig shrinks left as the table grows); 11 to 12 camera continue (the ladder replaces the table); 12 to 13 camera continue (safety strip over the top); attempts and feedback card shrink to the top; 17 to 18 board clear (the ladder returns); 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v11-learning-review.md`, `checks/c-y11-m3-v11-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -253,6 +281,8 @@ Need (new plates): none in Revision 2. The Revision 1 request below is delivered
 6. `y11c-halfcell-zn-used-v1.png`, 7. `y11c-halfcell-cu-used-v1.png`: scene 8. Wanted; fallback: coded tags only ("zinc: mass down", "copper: mass up") on the fresh plates.
 
 Coded: wire and leads, meter digits, electron and ion streams, charge badges and net-charge counters, electron counter, stop bar, electrode lenses, bridge lens, direct-contact lens, labels and signs, method card, results table, relative ladders, wave and hill glyphs, data-sheet card glyph, chips, attempt cards and diagrams, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-filament-lamp-v1.png` and `y11c-filament-lamp-lit-v1.png` (scene 6, replacing the globe glyph), `y11c-halfcell-cu-v1.png` (attempt 2 card). Removed: the clock, wave and hill glyphs. New plate requests: none. Simulation: the circuits engine for the electron dots and the lamp.
 
 ## Codex asset brief (Year 11 Chemistry M3 v11)
 
@@ -281,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals `chem-y11-m3-v10.md`'s "Final frame", and send this design's final frame to the m3-v12 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -334,3 +366,24 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none. The brief 183 galvanic set is delivered at 1671 × 941 on one shared canvas (Assets and the asset brief now say so).
 
 Counts: 6,258 characters (Revision 1: 6,210); about 553 s to about 560 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The electron dots in the wire and the lamp are named as a circuits engine run (zero current until the bridge closes the circuit).
+- Coded glyphs removed: the globe is the painted lamp, the clock is a time readout, the sea-level picture is a plain height scale.
+- Question cards: attempt 1 keeps its cell diagram as the picture; attempt 2 gains the copper half-cell; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: "no bridge, no steady current" (kept in scene 3).
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,258 characters, unchanged; about 547 s (it was about 560 s).
+
+Calls for root: the circuits engine treats the whole cell as one battery with a switch for the ion path; it shows that charge flows only in a complete circuit, not the cell chemistry.

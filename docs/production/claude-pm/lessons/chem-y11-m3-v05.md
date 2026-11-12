@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V05: Acid-base and acid-carbonate reactions. How can we predict acid-base and acid-carbonate products? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 218 error-check finding resolved by root; ready to voice.
 
 Narration 5,621 characters, 19 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -74,6 +74,17 @@ Handoff: chem-y11-m3-v06 (cultural hold), then chem-y11-m3-v07.
 - **Opening frame:** m3-v04's final frame exactly (Decisions).
 - **Final frame (for root to reconcile with `chem-y11-m3-v06` when it is designed):** the reaction toolkit board: six ticked strips in two rows, "synthesis: A + B → AB", "decomposition: AB → A + B", "precipitation: swap partners, one insoluble", "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", "acid + base: salt + water", "acid + carbonate: salt + water + CO₂", each with one small plate from its video (`c1-burned-magnesium-v1.png`, `m6-limewater-milky-v1.png`, `m5x-ppt-agcl-white-v1.png`, `m8-flame-blue-v2.png`, `m6-clip-phenolphthalein-colourless-v1.png`, `m6-marble-chips-acid-v1.png`); the heading "Predicting products"; the chip "Next: How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?". No image, icon or text about the practices themselves.
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) three beakers, one fizzing, scene 1 (about 23 s); (B) the acid and base ion lenses, then merged, scenes 2 and 3 (about 67 s; the two lenses merge at full frame at scene 3); (C) the acid drip into the pink flask, scene 4 (about 24 s); (D) the salt namer and potassium sulfate, scenes 5 to 7 (about 52 s); (E) the magnesium oxide beaker, scene 8 (about 23 s); (F) the marble chips, scene 9 (about 28 s); (G) the gas test into limewater, scene 10 (about 25 s); (H) baking soda and vinegar, scene 11 (about 21 s); (I) the pattern compare, scene 12 (about 26 s); (J) antacids, scene 13 (about 25 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The acid drip in scene 4 is a run of the titration engine (`src/explainer/sims/titration.ts`): a strong base in the flask and a strong acid added, with `usePour` as the one clock. `mixtureAt` gives the hydroxide left and the water formed for the three readouts, `indicatorColour` with `INDICATORS.phenolphthalein` sets the flask colour (pink, then colourless at the end point) and `TitrationRig` with `outline={false}` draws the drops and the liquid over the painted flask plates. No pH value or curve is shown; that belongs to Year 12.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -97,6 +108,8 @@ Visual: the two lenses merge at full frame; on "molecule" each H⁺ docks onto a
 > You can watch it happen. Add a few drops of phenolphthalein, an indicator, to dilute sodium hydroxide, and it turns pink. Add dilute acid a little at a time, and the mixture warms slightly. When the hydroxide ions are used up, the pink **vanishes**. Wear safety glasses, use dilute solutions, and never sniff the mixture.
 
 Visual: stage change to the drip stage: `m6-clip-phenolphthalein-pink-v1.png` large at the left with tag "dilute NaOH + phenolphthalein"; gloss chip "indicator: a dye whose colour changes between acid and base". The acid drip runs (simulation): coded acid drops fall in from above; the readouts "OH⁻ left" (10 → 0), "H₂O made" (0 → 10) and the thermometer (21.0 → 21.6 °C, tag "illustrative") update live (52 px); the lens beside it shows each H⁺ docking on an OH⁻ (violet hand tag "OH⁻ running out"). On "vanishes" "OH⁻ left" reaches 0 and the flask cross-fades to `m6-clip-phenolphthalein-colourless-v1.png` (green tick). Safety strip: "safety glasses; dilute solutions; never sniff" with `m5x-safety-glasses-v1.png` small.
+
+Upgrade (Revision 4): The drops, the three readouts and the colour change come from one titration engine run (see "Simulation engine"), so the pink fades at the same drop that takes the "OH⁻ left" readout to zero.
 
 ### 5. naming the salt
 > To predict the salt, the metal names the first word, and the acid names the second. Hydrochloric acid gives chlorides, sulfuric acid gives sulfates, and nitric acid gives **nitrates**. Then the charges fix the formula, just like in synthesis.
@@ -148,27 +161,35 @@ Visual: stage change: `m6-antacid-tablets-v1.png` large, split into two labelled
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Dilute nitric acid, HNO₃, is added to calcium hydroxide solution, Ca(OH)₂(aq). (a) Name the salt formed. (b) Write a balanced equation for the reaction, including states. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the pattern compare hides).
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted tube of clear limewater (`m6-limewater-clear-v1.png`, about 280 px tall), untagged, as a picture of calcium hydroxide solution. Card text 38 px. The pattern compare is hidden.
+
 ### 15. feedback 1 (brief)
 > Calcium nitrate. Calcium is plus two and nitrate is minus one, so there are two nitrate ions for each calcium. Two nitrates need two nitric acids, and calcium hydroxide's two hydroxide ions make two waters. Two nitric acid plus calcium hydroxide gives calcium nitrate plus two water. Writing C a N O three, with one nitrate, ignores the **charges**.
 
 Visual: card shrinks to the top. Salt namer "calcium nitrate"; charge tiles "Ca²⁺" with two "NO₃⁻", "Ca(NO₃)₂". Line "2HNO₃(aq) + Ca(OH)₂(aq) → Ca(NO₃)₂(aq) + 2H₂O(l)" with tally "4 H, 2 N, 8 O, 1 Ca" green, framed in a dark-ink box with a green tick. On "charges" a chip "CaNO₃" fades in and is crossed in red (red hand tag "Ca²⁺ needs two NO₃⁻"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "dilute nitric acid, HNO₃ | calcium hydroxide solution, Ca(OH)₂(aq)".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Excess hydrochloric acid is added to potassium carbonate solution. Write the balanced equation, and describe a test that identifies the gas. Pause here to answer.
 
 Visual: `QuestionCard`: "Excess dilute hydrochloric acid is added to potassium carbonate solution, K₂CO₃(aq), and a gas is produced. (a) Write a balanced equation for the reaction, including states. (b) Describe a test that would identify the gas, including the expected result. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted tube of carbonate before any acid is added (`m8-carbonate-tube-before-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > It's a carbonate, so salt, water and carbon dioxide. The salt is potassium chloride. The carbonate takes two hydrogen ions, so two hydrochloric acid, and two potassium chloride. Then water and carbon dioxide. Bubble the gas through limewater, and it turns milky. Stopping at the salt and water leaves out a whole **product**.
 
 Visual: card shrinks. Line "2HCl(aq) + K₂CO₃(aq) → 2KCl(aq) + H₂O(l) + CO₂(g)" with tally "2 H, 2 Cl, 2 K, 1 C, 3 O" green, framed in a dark-ink box with a green tick; three product chips. `m6-limewater-milky-v1.png` small with "CO₂: limewater turns milky". On "product" a chip "2HCl + K₂CO₃ → 2KCl + H₂O" fades in and is crossed in red (red hand tag "carbonate: + CO₂"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "excess dilute HCl | potassium carbonate solution, K₂CO₃(aq) | a gas is produced".
 
 ### 18. conclusion and handoff
 > So to predict an acid reaction, look at the base. Hydroxides and oxides give a salt and water. Carbonates give a salt, water and carbon dioxide, and limewater proves the gas. That gives you six reaction types for predicting products. Next, a different question about chemistry and food. How do particular Aboriginal and Torres Strait Islander food-processing practices remove **toxins**?
 
 Visual: the pattern compare shrinks into two strips, "acid + base: salt + water" and "acid + carbonate: salt + water + CO₂", which join the four earlier strips. On "six reaction types" the toolkit board builds: six ticked strips in two rows, each with its small plate (final frame list), heading "Predicting products". On "toxins" the chip "Next: How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?" writes. Hold about 2 seconds. This is the final frame (root reconciles with m3-v06 when it is designed).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -178,9 +199,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Acid + carbonate → salt + water + CO₂ (limewater turns milky).
 5. Salt name: metal first, acid's anion second; charges fix the formula.
 
-Memory aid (framed card, on the notes screen): *Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Metal names the first word, acid names the second. Hydroxide or oxide: salt and water. Carbonate: salt, water and CO₂.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -230,6 +249,8 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,621 characters**, 19 scenes (Revision 1: 5,578). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 419 s; add about 5 s of settling (the lens docking in 3, 8, 9; the delivery tube in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 508 s** (Revision 1: about 503 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (5,621 characters). The notes scene is 45 s in all, so the estimate is about 495 s (it was about 508 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v05` (route chem-y11-m3-v05; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v05`.
@@ -239,6 +260,8 @@ In order (19 scene headings, all `### N.`): hook-fizz, acid-base-alkali, neutral
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: m3-v04's final frame into scene 1 by camera continue (the beakers stay); 1 to 2 camera continue (the lens opens over the acid beaker); 2 to 3 to 4 camera continue; 4 to 5 board clear; 5 to 6 to 7 camera continue (the namer stays); 7 to 8 to 9 to 10 to 11 camera continue along the bench (each plate slides in as its case starts); 11 to 12 camera continue (cases gather into the compare); 12 to 13 camera continue; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v05-learning-review.md`, `checks/c-y11-m3-v05-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -256,6 +279,8 @@ Need (new plates, Codex): none.
 
 Coded: ion lenses and docking, water and CO₂ shapes, bubbles, salt namer, charge tiles, atom tiles and tallies, delivery tube, thermometer glyph, pattern compare, toolkit board, chips, attempt cards, countdowns, key notes board.
 
+Revision 4 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m6-limewater-clear-v1.png` (attempt 1), `m8-carbonate-tube-before-v1.png` (attempt 2). New plate requests: none. Simulation: the titration engine for scene 4.
+
 ## Codex asset brief (Year 11 Chemistry M3 v05)
 
 No new plates. Codex confirms that `m6-clip-phenolphthalein-pink-v1.png` and `m6-clip-phenolphthalein-colourless-v1.png` overlay exactly, and reports, at one shared display scale, the mouth of `m8-carbonate-tube-fizz-v1.png` and the free end of the delivery tube in `m6-limewater-clear-v1.png` so the coded tube can join them.
@@ -270,6 +295,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m3-v04's final frame. Send the final frame to root for reconciliation with m3-v06 (cultural hold).
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm that the scene 4 readouts still match "Numbers used" when read from the titration engine run, and that no pH value appears.
 
 ## YouTube metadata (draft)
 
@@ -329,3 +356,23 @@ Counts: 5,621 characters (Revision 1: 5,578); about 503 to about 508 s.
 Brief 218 error check (`checks/c-y11-m3-v05-rev2-error-check.md`), should-fix finding resolved (root):
 - Final-frame toolkit: the combustion strip now reads "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", the scoped wording from repaired m3-v04, so soot is not called an oxide. The opening frame still equals m3-v04's final frame (which carries the same strip).
 - No speech change. Narration 5,621 characters (sum of 19 scene strings), about 508 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 4: the acid drip is named as a titration engine run (hydroxide left, water formed and the phenolphthalein colour all from one run).
+- Question cards: attempt 1 gains a tube of limewater and attempt 2 a tube of carbonate; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,621 characters, unchanged; about 495 s (it was about 508 s).
+
+Calls for root: the titration engine drives scene 4, with no pH shown.

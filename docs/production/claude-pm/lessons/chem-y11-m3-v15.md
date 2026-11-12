@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V15: Surface area and catalysts. How do surface area and catalysts change reaction rate differently? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,153 characters, 18 scenes, about 555 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,6 +73,18 @@ Handoff: chem-y11-m4-v01, energy profiles.
 - **Opening frame:** m3-v14's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m4-v01` opens on it):** left: the logging balance with the new plate `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (black powder in frothing liquid, plug in the neck) on its pan; `m7-temp-probe-sleeve-stand-v1.png` beside it with the probe tip dipping through the plug's edge into the liquid (coded readout "32.5 °C", with a small grey "started at 21.0 °C" under it); a faint warm-orange glow ripple spreading from the flask into the air (coded). Right: the memory board small: "Concentration and surface area: hit often. Temperature: hit hard. Catalyst: lower the bar." Top left a small grey tag "Module 3 complete". The amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". The chip "Next: How does an energy profile distinguish endothermic from exothermic change?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) chips beside powder, scene 1 (about 21 s); (B) the cut-up cube and its slider, scene 2 (about 37 s); (C) the logging rig and the two curves, scene 3 (about 34 s); (D) the surface lens, scene 4 (about 32 s); (E) hydrogen peroxide on the rig, scene 5 (about 26 s); (F) filtering the catalyst back out, scene 6 (about 21 s); (G) the lever board, scene 7 (about 27 s); (H) the energy distribution with the line slider, scene 8 (about 28 s); (I) the lever board with both dials, scene 9 (about 26 s); (J) one lump against powder, scene 10 (about 23 s); (K) a fair catalyst test on the rig, scene 11 (about 28 s); (L) the memory board, scene 12 (about 9 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 37 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The collision stage and every particle lens are runs of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`): one two-particle reaction with an energy barrier `ea`, drawn with `failed` so collisions that lacked the energy are seen to bounce apart. Live readouts read the run ("collisions", "reacted", `collisionRateAt`), shown as counts or "× start", never as measured rates. The catalyst is shown as two runs that differ only in `ea` (scenes 7 and 9): the same collisions, more of them succeeding. The surface lens in scene 4 stays lesson-coded, because the engine has no solid surface.
+- **No coded pictures of real things.** The coded funnel and filter paper in scene 6 are the painted filter plate, and the lock icon in scene 8 is a hand tag.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -107,6 +119,8 @@ Visual: the rig with `y11c-flask-acid-plug-spent-v1.png` on the pan, label "25.0
 
 Visual: the filter strip: a coded funnel and filter paper over a flask; the frothing liquid pours through by code (the flask tilts on a coded arc) and the black powder collects on the paper. On "dry it" a small coded warm-air shimmer over the paper. On "weigh it" `y11c-mno2-watch-glass-v1.png` sits on `y11c-top-pan-balance-v1.png`, readout "0.50 g" framed in a dark-ink box with a green tick against the label "0.50 g before" (tag "illustrative: weigh on a tared watch glass; compare within ±0.01 g"). On "fresh hydrogen peroxide" a second run: the powder tips into a new flask (`y11c-flask-acid-plug-spent-v1.png` → `y11c-flask-peroxide-mno2-plug-fizz-v1.png`) and a second teal curve draws on top of the first. On "end" a small loop arrow "takes part → given back" (teal hand tag "not used up").
 
+Upgrade (Revision 3): The filter is the painted funnel and flask (`y11c-filter-funnel-flask-empty-v1.png`, about 460 px tall), not a coded funnel; the recovered black powder is shown on the painted watch glass of manganese dioxide (`y11c-mno2-watch-glass-v1.png`, about 260 px wide) beside the balance readout.
+
 ### 7. a lower bar
 > So which lever does a catalyst push? It doesn't speed the particles up, and it doesn't make them collide more often. Instead, it gives the reaction a different route, through steps on the surface of the manganese dioxide, and that route has a lower activation energy. Think of it as lowering the bar. At the same temperature, many more collisions can now clear **it**.
 
@@ -117,10 +131,14 @@ Visual: the lever board: the funnel at the centre, the three phrases at its inle
 
 Visual: the board clears to the energy-spread graph: one curve "20 °C", the amber dashed line "Eₐ (no catalyst)" with its small amber tail. On "doesn't touch the curve" a lock icon on the curve. On "moves the activation energy line to the left" the line slider runs (see Simulation): a teal dashed line "Eₐ (with catalyst)" slides left from the amber line's position with a left-pointing arrow "catalyst", while the tail bar beside the graph grows. On "a much bigger tail" the area beyond the teal line fills teal, much larger than the amber tail (teal hand tag "bigger fraction"). On "Compare that with heating" v14's two-temperature graph appears small at the right (curve moved, line fixed). On "Temperature moves the curve" a `PenArrow` along the shifted curve in the small graph; on "line" a `PenArrow` along the moved line in the big graph; the memory line writes under both: "Temperature moves the curve. A catalyst moves the line." A crossed ghost of a shifted curve labelled "catalyst" flashes once (site Common Error; red hand tag "the curve stays"). The memory line sits in a framed card from here on.
 
+Upgrade (Revision 3): No lock is drawn: on "doesn't touch the curve" an ink hand tag "curve: unchanged" writes on the curve with a pen ring, and the amber line slides left under the slider.
+
 ### 9. different levers, same amount
 > So the two work differently. More surface area gives more collisions each second, with the same activation energy. A catalyst gives the same collisions, but a lower activation energy, so more of them succeed. And neither one changes how much product you get. Manganese dioxide makes the oxygen come off faster, but it doesn't make more of **it**.
 
 Visual: the lever board returns: a slate cable from a "surface area" dial to the inlet ("more collisions per second, same Eₐ"); a teal cable from a "catalyst" dial to the energy gate ("same collisions, lower Eₐ, larger fraction succeed"). On "neither one changes how much product" the powder and chips levels (0.44 g) and a teal "0.36 g O₂ when complete" level appear small; chip "faster, not more" framed with a green tick (ink hand tag "same amount").
+
+Upgrade (Revision 3): On "it doesn't make more of it" the chip "faster, not more" takes its green frame and tick, with the two final levels (0.44 g and 0.36 g) marked by pen ticks.
 
 ### 10. catalysts have surfaces too
 > The two ideas also work together. Manganese dioxide is a solid, and the reaction happens on its surface. So a fine powder of catalyst works faster than one lump of the same mass, because more of its surface is exposed. That's why many industrial catalysts are spread thinly over a very large **surface**.
@@ -142,27 +160,35 @@ Visual: the memory board writes large in the explainer's handwriting style: "Con
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "0.50 g of zinc granules and 0.50 g of zinc powder were each added to 50.0 mL of 1.0 mol L⁻¹ hydrochloric acid (excess) at 25 °C. The volume of hydrogen collected is shown. (a) Which curve, P or Q, shows the zinc powder? Justify your answer using collision theory. (2 marks) (b) Explain why both reactions produce the same final volume of hydrogen. (1 mark)" with a coded `LineGraph` "volume of H₂ (mL)" 0 to 200 against "time (s)": P steep, levelling at 190 mL early; Q shallower, reaching 190 mL later (tag "illustrative data"). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card's picture is its own graph (curves P and Q), drawn solid from the first frame at about 520 px wide with axis labels at 30 px or more. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 14. feedback 1 (brief)
 > Curve P. It's steeper at the start. Powder has a larger surface area, so more zinc particles are exposed and more acid particles hit them each second, at the same activation energy. Both end at a hundred and ninety millilitres because the same mass of zinc reacts, with acid in excess. The powder doesn't have a lower activation **energy**.
 
 Visual: card shrinks to the top. Rows: "P: steeper start → faster" (P's start ringed); "powder: larger surface area → more Zn particles exposed → more collisions with H⁺ per second; same Eₐ, same fraction effective" (slate); "same mass of Zn (limiting) → same moles of H₂ → same 190 mL" (teal). The answer "P: the powder" sits in a dark-ink box with a green tick. On "energy" a chip "the powder has a lower activation energy" fades in and is crossed in red (red hand tag "same Eₐ, more hits"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "0.50 g granules, 0.50 g powder | 50.0 mL of 1.0 mol L⁻¹ HCl, in excess | curves P and Q". The answer rows are framed in green with a tick as they land.
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A car's catalytic converter has a thin coating of platinum spread over a ceramic honeycomb. The platinum speeds up the reaction of carbon monoxide with oxygen. Explain, using a Maxwell-Boltzmann distribution, how the platinum increases the rate. Then explain why it's spread as a thin coating over a honeycomb, instead of being used as a solid block. Pause here to answer.
 
 Visual: `QuestionCard`: "A car's catalytic converter contains a ceramic honeycomb coated with a thin layer of platinum. The platinum catalyses the reaction 2CO(g) + O₂(g) → 2CO₂(g). (a) With reference to a Maxwell-Boltzmann distribution, explain how platinum increases the rate of this reaction. (3 marks) (b) Explain why the platinum is spread as a thin coating over a honeycomb rather than used as a solid block. (2 marks)" beside the new plate `y11c-catalytic-converter-honeycomb-v1.png` (a cut ceramic honeycomb block showing its many square channels; no car, no people). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The honeycomb plate is about 300 px (not small). Card text 34 to 38 px.
+
 ### 16. feedback 2 (brief)
 > Platinum gives a different route with a lower activation energy. On the distribution, the curve stays the same, but the activation energy line moves left, so a larger fraction of collisions have enough energy, and the rate rises. The reaction happens on the platinum's surface, so a thin coating over a honeycomb exposes far more surface, for less platinum. Shifting the curve to the right would be **wrong**.
 
 Visual: card shrinks. Rows with a small distribution sketch: "alternative route, lower Eₐ; platinum not used up" (teal); the sketch draws: same curve, Eₐ line moving left, larger shaded tail; "→ larger fraction of collisions with energy ≥ Eₐ → more effective collisions per second" (teal); "reaction on the Pt surface → thin coating on a honeycomb: huge surface, little platinum (expensive)" (slate, the honeycomb channels ringed). The answer "lower Eₐ route: line moves left, curve stays; thin coating = huge surface" sits in a dark-ink box with a green tick. On "wrong" a chip "platinum shifts the curve to the right" fades in and is crossed in red (red hand tag "the line moves"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "platinum coated on a ceramic honeycomb | 2CO(g) + O₂(g) → 2CO₂(g)". The answer rows are framed in green with a tick as they land.
 
 ### 17. conclusion and handoff
 > So surface area and catalysts both speed reactions up, but in different ways. More surface means more collisions each second. A catalyst opens a route with a lower activation energy, so more of the collisions succeed. That's the end of Module 3. Now look back at the catalyst run. The flask warmed up by more than eleven degrees, and that energy came from the reaction itself. Where does it come from, and why do some reactions cool their surroundings **instead**?
 
 Visual: the memory board small at the right. On "More surface" the surface-area cable pulses; on "lower activation energy" the catalyst cable. On "end of Module 3" grey tag "Module 3 complete". On "look back at the catalyst run" the board settles into the final frame: the balance with `y11c-flask-peroxide-mno2-plug-fizz-v1.png`, the probe beside it reading "32.5 °C" with "started at 21.0 °C", the warm ripple spreading. On "came from the reaction itself" the amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". On "instead" the chip "Next: How does an energy profile distinguish endothermic from exothermic change?" writes. Hold about 2 seconds. This is the final frame (m4-v01 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -172,9 +198,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. A catalyst moves the Eₐ line left; temperature moves the curve.
 5. Compare catalysts at one temperature: the reaction's own heat speeds it up.
 
-Memory aid (framed card, on the notes screen): *Concentration and surface area: hit often. Temperature: hit hard. Catalyst: lower the bar.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Concentration and surface area: hit often. Temperature: hit hard. Catalyst: lower the bar.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -229,6 +253,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,153 characters**, 18 scenes (per scene: 273, 489, 447, 431, 351, 277, 364, 377, 342, 300, 368, 116, 360, 336, 382, 405, 460, 75; Revision 1: 6,103). At 13.3 characters per second the speech is about 463 s; add about 11 s of settling (the cube slider in 2, the curves in 3 and 5, the filter in 6, the line slider in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 555 s** (Revision 1: about 550 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,153 characters). The notes scene is 45 s in all, so the estimate is about 540 s (it was about 555 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v15` (route chem-y11-m3-v15; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v15`.
@@ -238,6 +264,8 @@ In order (18 scene headings, all `### N.`): hook-prediction, surface-only, powde
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m3-v14's final frame into scene 1 by camera continue (the chips and powder panel moves to the centre); 1 to 2 camera push into a chip; 2 to 3 pull back to the rig; 3 to 4 camera push into the surfaces; 4 to 5 pull back to the rig with the peroxide flask; 5 to 6 camera continue; 6 to 7 clear change to the lever board; 7 to 8 clear change to the distribution; 8 to 9 camera continue; 9 to 10 camera continue; 10 to 11 clear change to the rig; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v15-learning-review.md`, `checks/c-y11-m3-v15-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -250,6 +278,8 @@ Have (inspected 5 November on a dark contact sheet; uniform scaling only, never 
 Delivered by brief 183 (inspected 6 November on a paper contact sheet at about 300 px): `y11c-flask-powder-acid-plug-fizz-v1.png` (1106 × 1422, scene 3); `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (1106 × 1422, scenes 5, 6, 11, final frame); `y11c-catalytic-converter-honeycomb-v1.png` (1448 × 1086, attempt 2). Need (new plates): none in Revision 2.
 
 Coded: cube cutter and slider, surface lenses and counters, line slider and tail bar, filter strip, route sketch, distributions, lever board and cables, warm ripple, readouts, `LineGraph`s, chips, cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-filter-funnel-flask-empty-v1.png` and `y11c-mno2-watch-glass-v1.png` (scene 6). Removed: the coded funnel and the lock icon. New plate requests: none. Simulation: the particle box engine for the catalyst runs.
 
 ## Codex asset brief (Year 11 Chemistry M3 v15)
 
@@ -274,6 +304,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (powders tip, filter and pour by code); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m3-v14's final frame, and send the final frame to the m4-v01 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -329,3 +361,25 @@ Visual upgrade (teaching logic unchanged):
 New plate requests: none. All three brief 183 plates are delivered and inspected.
 
 Counts: 6,153 characters (Revision 1: 6,103); about 550 s to about 555 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The catalyst is named as two particle box runs that differ only in the energy barrier.
+- Scene 6: the coded funnel is the painted filter plate, with the manganese dioxide watch glass. Scene 8: the lock icon becomes a hand tag.
+- Scene 9: the bold cue "it" is now quoted in the scene's Upgrade paragraph, so every bold cue is tied to a visual.
+- Question cards: attempt 1 keeps its graph as the picture; attempt 2's honeycomb plate is larger; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,153 characters, unchanged; about 540 s (it was about 555 s).
+
+Calls for root: none.

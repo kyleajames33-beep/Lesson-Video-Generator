@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V10: Half-equations. How do half-equations combine into a balanced redox equation? (design)
 
-Status: Revision 3 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,400 characters, 19 scenes, about 566 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -66,6 +66,16 @@ Handoff: chem-y11-m3-v11, galvanic cells.
 
 - **Opening frame (equals m3-v09's final frame):** top, small and dimmed, "Zn(s) → Zn²⁺(aq) + 2e⁻" (teal tag "oxidation") and "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet tag "reduction"); centre, large, "Al(s) → Al³⁺(aq) + 3e⁻" (teal "oxidation") above "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet "reduction"), with "3e⁻" and "2e⁻" ringed amber and an amber "?" between the lines; the small OIL RIG card at the top right; the chip "Next: How do half-equations combine into a balanced redox equation?".
 - **Final frame (m3-v11 opens on it; unchanged in Revision 2):** two half-cell plates side by side at one scale on the lower two thirds, with a gap between them: left `y11c-halfcell-zn-v1.png` (zinc strip in colourless zinc sulfate solution; tag "ZnSO₄(aq)"), right `y11c-halfcell-cu-v1.png` (copper strip in blue copper(II) sulfate solution; tag "CuSO₄(aq)"); above the left beaker "Zn(s) → Zn²⁺(aq) + 2e⁻" (teal), above the right "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet); a coded black wire arcs from the top of the zinc strip to the top of the copper strip, with an amber "e⁻ ?" on it; a grey dashed "?" sits in the gap between the beakers; the chip "Next: Why does a galvanic cell need two half-cells and an ion path?". (The wire's "e⁻ ?" stays amber because m3-v11 opens on it; see Open decisions.)
+
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** the Visual lines already name stages A to J: (A) the anchor beaker and its lens, scenes 1 and 2 (about 52 s); (B) the zinc lens with the charge beam, then copper, scenes 3 and 4 (about 58 s; the chlorine jar and its lens arrive part-way through scene 4); (D) the iron tube lens, scene 5 (about 24 s); (E) the electron bank, scenes 6 and 7 (about 67 s); (F) the full-width check, scene 8 (about 23 s); (G) tube, jar and compact bank, scenes 9 and 10 (about 43 s); (H) the trap lens, scene 11 (about 37 s); (I) the beaker and its spectators, scene 12 (about 25 s); (J) the method card, scene 13 (about 23 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
 
 ## Script and shots
 
@@ -141,38 +151,45 @@ Visual (stage J, method card; about 23 s): stage change. A grey card slides in a
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A strip of magnesium ribbon is placed in silver nitrate solution, AgNO₃(aq). Silver crystals form on the ribbon and magnesium ions enter the solution. (a) Write the oxidation half-equation. (b) Write the reduction half-equation. (c) Combine them to give the balanced net ionic equation. (3 marks)" `y11c-sample-magnesium-ribbon-v1.png` small at the card's top right (not answer-bearing). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the method card and memory card hide).
 
+Upgrade (Revision 4): The magnesium ribbon plate is about 260 px (not small). Card text 38 px.
+
 ### 15. feedback 1 (brief)
 > Magnesium gives magnesium two plus plus two electrons. A silver ion plus one electron gives silver. Magnesium loses two, and each silver ion gains one, so double the silver half-equation. Magnesium plus two silver ions gives magnesium two plus plus two silver. Writing one silver ion balances the atoms, but leaves the charge at plus one against plus **two**.
 
 Visual: card shrinks to the top. "Mg(s) → Mg²⁺(aq) + 2e⁻" (teal); "Ag⁺(aq) + e⁻ → Ag(s)" (violet) with navy "× 2"; a compact bank row "lost 2 | gained 2" (green "="); result in a dark-ink frame with a green tick, 60 px: "Mg(s) + 2Ag⁺(aq) → Mg²⁺(aq) + 2Ag(s)", beam "+2 | +2". On "two" a chip "Mg + Ag⁺ → Mg²⁺ + Ag" fades in and is crossed red, red hand tag "charge +1 | +2". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "magnesium ribbon in AgNO₃(aq) | silver crystals form | magnesium ions enter the solution".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Aluminium dissolves in hydrochloric acid, giving aluminium ions and hydrogen gas. The reduction half-equation is two H plus, plus two electrons, gives H two. Write the oxidation half-equation, and the balanced net ionic equation. Pause here to answer.
 
 Visual: `QuestionCard`: "Aluminium reacts with dilute hydrochloric acid to form aluminium ions and hydrogen gas. The reduction half-equation is: 2H⁺(aq) + 2e⁻ → H₂(g). (a) Write the oxidation half-equation. (b) Write the balanced net ionic equation for the reaction. (3 marks)" `y11c-aluminium-acid-v1.png` (from m3-v07) small at the card's top right. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): The aluminium in acid plate is about 260 px tall (not small). Card text 38 px.
+
 ### 17. feedback 2 (brief)
 > Aluminium gives aluminium three plus plus three electrons. Three and two both go into six, so multiply the aluminium half-equation by two, and the hydrogen one by three. Two aluminium plus six H plus gives two aluminium three plus plus three H two. The charge is plus six on each side. Aluminium plus two H plus gives aluminium three plus plus H two balances the atoms, but not the **charge**.
 
 Visual: card shrinks. "Al(s) → Al³⁺(aq) + 3e⁻" with navy "× 2"; "2H⁺(aq) + 2e⁻ → H₂(g)" with navy "× 3"; a compact bank row "lost 6 | gained 6" (green "="); "6e⁻" strikes; result in a dark-ink frame with a green tick, 60 px: "2Al(s) + 6H⁺(aq) → 2Al³⁺(aq) + 3H₂(g)", beam "+6 | +6". On "charge" a chip "Al + 2H⁺ → Al³⁺ + H₂" fades in and is crossed red, red hand tag "charge +2 | +3". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "aluminium + dilute HCl → Al³⁺ + H₂ | given: 2H⁺(aq) + 2e⁻ → H₂(g)".
 
 ### 18. conclusion and handoff
 > When zinc sits in copper sulfate, electrons pass straight from zinc atoms to copper ions, right at the metal's surface, and the energy just warms the solution a little. But each half-equation could happen separately. Put zinc in a beaker of zinc sulfate, copper in a beaker of copper sulfate, and join the two metals with a wire. Would electrons flow through the wire? Why does a galvanic cell need two half-cells and an ion **path**?
 
 Visual: board clears. `y11c-cuso4-beaker-zinc-after-v1.png` (from m3-v07) at the centre; on "right at the metal's surface" a small lens shows electrons hopping from Zn atoms to Cu²⁺ at the surface; on "warms the solution" a soft amber shimmer and a tag "energy released as heat". On "each half-equation could happen separately" the plate splits into two: `y11c-halfcell-zn-v1.png` (left, tag "ZnSO₄(aq)") and `y11c-halfcell-cu-v1.png` (right, tag "CuSO₄(aq)"), with a gap; the zinc half-equation writes above the left beaker (teal) and the copper one above the right (violet). On "join the two metals with a wire" a black wire arcs from strip to strip; on "through the wire" an amber "e⁻ ?" sits on it; a grey dashed "?" appears in the gap. On "path" the chip "Next: Why does a galvanic cell need two half-cells and an ion path?" writes. Hold about 2 seconds. This is the final frame (m3-v11 opens on it).
 
-### 19. key notes (quiet, hold about 55 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Oxidation: e⁻ on the right (Zn → Zn²⁺ + 2e⁻). Reduction: e⁻ on the left (Cu²⁺ + 2e⁻ → Cu).
-2. Check atoms, then charge. Electrons fix the charge (Cl₂ + 2e⁻ → 2Cl⁻).
-3. To combine: multiply until electrons lost = electrons gained, add, cancel the e⁻, check. Never subtract.
-4. 2Al + 3Cu²⁺ → 2Al³⁺ + 3Cu (6e⁻; charge +6 each side).
+1. Oxidation half-equation: e⁻ on the right (Zn → Zn²⁺ + 2e⁻).
+2. Reduction half-equation: e⁻ on the left (Cu²⁺ + 2e⁻ → Cu).
+3. Check atoms, then charge. Electrons fix the charge (Cl₂ + 2e⁻ → 2Cl⁻).
+4. Combine: multiply until electrons lost = gained, add, cancel the e⁻. Never subtract.
+5. 2Al + 3Cu²⁺ → 2Al³⁺ + 3Cu (6e⁻; charge +6 each side).
 
-Bullets at 34 px in the role colours (oxidation teal, reduction violet, e⁻ orange, multipliers navy). Memory card (framed, ink hand font, 44 px, under the bullets): *Electrons lost = electrons gained.* *Multiply, add, then cancel.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering, oxidation teal, reduction violet, electrons orange): *Electrons lost = electrons gained. Multiply, add, then cancel.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Stage plan (Revision 2)
 
@@ -248,6 +265,8 @@ Checked by an atom-and-charge counting script (5 November); re-run in Python for
 
 Revision 2 count (6 November; build parser rules): **6,400 characters**, 19 scenes. At 13.3 characters per second the speech is about 481 s; add about 10 s of settling (the lens openings in 1, 3, 4, 5 and 11, the bank steps in 7 and 10, the merges in 6, 7 and 10, the token flight in 12, the plate split in 18), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 48 s more of the quiet notes hold (about 55 s in all): **about 566 s**.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,400 characters). The notes scene is 45 s in all, so the estimate is about 556 s (it was about 566 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v10` (route chem-y11-m3-v10; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v10`.
@@ -257,6 +276,8 @@ In order (19 scene headings, all `### N.`): hook-three-two, half-equation, two-c
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-iron-chlorine (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions (Revision 2): the opening frame into scene 1 by clearing the Next chip, then the board shrinks to the top strip as the al-salt plate slides in and the lens grows from the foil; 1 to 2 camera continue (the lens splits); 2 to 3 slide (the aluminium lens leaves left, the zinc beaker enters); 3 to 4 camera continue in the zinc lens, then slide to the gas jar on "chlorine gas"; 4 to 5 slide (gas jar out, iron tube in); 5 to 6 board clear to the bank (panel stays; memory card writes); 6 to 7 camera continue (bank resets to aluminium); 7 to 8 camera continue (bank shrinks to a thumbnail, result to centre); 8 to 9 board clear to the tube and jar; 9 to 10 camera continue (compact bank animates); 10 to 11 board clear to the trap lens; 11 to 12 camera continue (the beaker grows, the lens moves to the solution); 12 to 13 board clear to the method card; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 55 s). Review evidence paths: `checks/c-y11-m3-v10-learning-review.md`, `checks/c-y11-m3-v10-science-check.md`. Build gate: a 16-frame contact sheet beside `../assets/maths-std-ref-chem-m5-g01.jpg` before any full render (`../maths-visual-standard.md`).
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -274,6 +295,8 @@ Need (new plates, Revision 2):
 Coded: ion lenses and all particles, electron bank, counters, steppers, charge beam, two-checks panel, half-equation lines, multipliers, merges and cancels, framed answers, ledger relabel, method card, token flight, wire, chips, attempt cards, countdowns, memory card, key notes board.
 
 Fallbacks if the m3-v07 or m3-v08 plates are late: scenes 1, 2, 11 and 12 use `c11-cuso4-beaker-dissolved-v1.png` with the lens alone (tag "aluminium foil in copper sulfate, after salt (m3-v08)"); scenes 3 and 4 use the same beaker with the tag "zinc strip". Both are weaker anchors and need root approval; the render waits for the real plates if possible.
+
+Revision 4 (12 Nov 2026). No plate added or removed; the two card plates are shown larger. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v10)
 
@@ -296,6 +319,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals `chem-y11-m3-v09.md`'s "Final frame", and that this design's final frame still equals `chem-y11-m3-v11.md`'s opening frame.
 8. Confirm the particle conventions in Decisions are followed in every lens description (ion sizes, charges, water not shown).
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -366,3 +391,23 @@ Visual upgrade: Revision 2 already meets the light-upgrade items (anchor plate i
 New plate requests: none.
 
 Counts: 6,400 characters (unchanged); about 566 s (unchanged).
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: the two card pictures are larger; both feedback scenes gain navy givens strips.
+- Key notes: the first note is split in two, so there are five one-line bullets.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,400 characters, unchanged; about 556 s (it was about 566 s).
+
+Calls for root: none.

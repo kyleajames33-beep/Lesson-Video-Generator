@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V04: Combustion. How do oxygen supply and fuel affect combustion products? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 218 error-check findings resolved by root; ready to voice.
 
 Narration 5,582 characters, 17 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -75,6 +75,17 @@ Handoff: chem-y11-m3-v05, acid-base and acid-carbonate products.
 - **Opening frame:** m3-v03's final frame exactly (Decisions).
 - **Final frame (m3-v05 opens on it):** left, `c1-burned-magnesium-v1.png` (white magnesium oxide on the tile, tongs resting) tagged "MgO, a metal oxide"; centre, `m5x-unsaturated-beaker-v1.png` tagged "dilute hydrochloric acid, HCl(aq)" with a coded faint white cloud of powder dissolving, tag "dissolves, no fizz"; right, `m6-marble-chips-acid-v1.png` tagged "marble chips (CaCO₃) in the same acid", tag "fizzes"; an amber chip spanning both beakers "both use up the acid: what forms?"; the four ticked pattern strips small at the top right ("A + B → AB", "AB → A + B", "AB + CD → precipitate", "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide"); the chip "Next: How can we predict acid-base and acid-carbonate products?".
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) two flames and two dishes, scene 1 (about 31 s); (B) what the carbon and hydrogen become, with the gas tests, scenes 2 and 3 (about 59 s); (C) the balancing line for methane, scene 4 (about 32 s); (D) butane and the half molecule, scenes 5 and 6 (about 37 s); (E) the air hole closed, scene 7 (about 31 s); (F) the oxygen slider stage, scene 8 (about 31 s); (G) three "why it matters" cards, scene 9 (about 35 s); (H) magnesium, then copper, scenes 10 and 11 (about 56 s; the plate and the lens change at scene 11); question and feedback cards; the handoff; the notes board. No set-up runs past about 59 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The window-and-airflow glyph and the gas-heater outline in scene 9 are replaced by painted plates and words.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -124,6 +135,8 @@ Visual: stage change to the oxygen slider stage: the flame plate at the left, th
 
 Visual: stage change: three cards file in at full width: "CO: poisonous, no colour, no smell" (rose), "soot: dirty surfaces" (black), "less energy released" (amber). A chip "incomplete combustion is safer: less CO₂" fades in and is crossed in red (red hand tag "no: CO forms"). On "ventilation" a coded window-and-airflow glyph beside a gas-heater outline (abstract; no plate). On "heating" a safety strip: "teacher supervision; safety glasses; hair tied back; ventilated room; heat-resistant mat; yellow safety flame when not heating" with `m5x-safety-glasses-v1.png` and `y11c-heatproof-mat-v1.png` small.
 
+Upgrade (Revision 4): No window, airflow or heater is drawn in code. The three cards carry painted plates or words only: the soot card carries the sooty basin (`y11c-basin-underside-sooty-v1.png`, about 240 px); the ventilation point is the painted camping gas burner (`m7-camping-gas-burner-v1.png`, about 260 px) with a rose hand tag "indoors, poor ventilation: CO" and the dark-ink line "burn fuels with plenty of fresh air".
+
 ### 10. metals: the fuel decides
 > The fuel matters too. A metal has no carbon and no hydrogen, so when magnesium burns in oxygen, the only product is the metal oxide. No carbon dioxide, and no water. Magnesium burns with a brilliant white light, so bright you shouldn't look straight at it, and leaves white magnesium oxide. Charges fix the formula: plus two and minus two, so it's M g O, not M g O **two**.
 
@@ -139,27 +152,35 @@ Visual: stage change: `y11c-copper-foil-v1.png` large on the mat with tongs rest
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Pentane, C₅H₁₂, is a component of petrol. Write a balanced chemical equation, including states, for the complete combustion of pentane vapour. Assume the water is produced as a gas. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the ladder hides).
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted burner with its blue flame (`m8-flame-blue-v2.png`, about 280 px), untagged; "complete combustion" is already stated on the card. Card text 38 px. The ladder is hidden.
+
 ### 13. feedback 1 (brief)
 > Five carbons give five carbon dioxides. Twelve hydrogens give six waters. That's ten plus six, sixteen oxygen atoms, so eight oxygen molecules. C five H twelve plus eight O two gives five C O two plus six H two O, all gases. Writing sixteen O two counts atoms, not **molecules**.
 
 Visual: card shrinks to the top. Line "C₅H₁₂(g) + 8O₂(g) → 5CO₂(g) + 6H₂O(g)" builds in the C, H, O order; right O count "10 + 6 = 16"; tally "5 C, 12 H, 16 O" green; the line framed in a dark-ink box with a green tick (grey tag "C₅H₁₂(l) also accepted for liquid pentane"). On "not molecules" a chip "C₅H₁₂ + 16O₂ → ..." fades in and is crossed in red (red hand tag "16 atoms = 8 O₂"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "pentane, C₅H₁₂, as a vapour | complete combustion | water as a gas".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A gas heater in a poorly ventilated room burns propane, C three H eight, making only carbon monoxide and water. Write the balanced equation. Pause here to answer.
 
 Visual: `QuestionCard`: "A gas heater in a poorly ventilated room burns propane, C₃H₈. The only products are carbon monoxide and water vapour. Write a balanced chemical equation, including states, for this reaction. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted camping gas burner (`m7-camping-gas-burner-v1.png`, about 280 px), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 15. feedback 2 (brief)
 > Three carbons give three carbon monoxides, and eight hydrogens give four waters. That's seven oxygen atoms, three and a half O two, so double. Two propane plus seven oxygen gives six carbon monoxide plus eight water. Writing carbon dioxide is the classic slip. The oxygen ran short, so carbon takes only **one**.
 
 Visual: card shrinks. Line builds: "C₃H₈ + 3.5O₂ → 3CO + 4H₂O" then the ×2 sweep: "2C₃H₈(g) + 7O₂(g) → 6CO(g) + 8H₂O(g)"; tally "6 C, 16 H, 14 O" green; framed in a dark-ink box with a green tick. The ladder's "CO: 1 O" rung lights. On "one" a chip "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O" fades in and is crossed in red (red hand tag "that's complete combustion"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "propane, C₃H₈ | products: carbon monoxide and water vapour only".
 
 ### 16. conclusion and handoff
 > So when a hydrocarbon burns, its hydrogen becomes water, and the oxygen supply decides how far the carbon gets. Metals burn to metal oxides, like this magnesium oxide. Drop it into dilute hydrochloric acid, and it **dissolves**, with no fizzing. Put marble chips, calcium carbonate, into the same acid, and they **fizz**. Both use up the acid, but they can't be making the same products. How can we predict acid-base and acid-carbonate **products**?
 
 Visual: the flame pair and ladder shrink into a strip "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide" (Revision 3: soot is carbon, not an oxide), which ticks beside the earlier three strips at the top right. On "magnesium oxide" `c1-burned-magnesium-v1.png` moves to the left; `m5x-unsaturated-beaker-v1.png` slides in (tag "dilute hydrochloric acid, HCl(aq)"). On "dissolves" coded white powder drops in and fades away (tag "dissolves, no fizz"). On "they fizz" `m6-marble-chips-acid-v1.png` slides in at the right (tag "marble chips, CaCO₃: fizzes"). On "Both use up the acid" the amber chip "both use up the acid: what forms?" spans both beakers. On "acid-carbonate products" the chip "Next: How can we predict acid-base and acid-carbonate products?" writes. Hold about 2 seconds. This is the final frame (m3-v05 opens on it).
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -169,9 +190,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Balance C, then H, then O last; double away a half.
 5. Mg and Cu burn in oxygen to oxides only: 2Mg + O₂ → 2MgO.
 
-Memory aid (framed card, on the notes screen): *Plenty of oxygen, carbon takes two. Less, one. Least, none.*
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Plenty of oxygen, carbon takes two. Less, one. Least, none.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -221,6 +240,8 @@ Checked by an atom-counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,582 characters**, 17 scenes (Revision 1: 5,574). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 419 s; add about 5 s of settling (the dishes in 1, the splitter in 2 and 3, the ladder in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 506 s** (Revision 1: about 503 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (5,582 characters). The notes scene is 45 s in all, so the estimate is about 493 s (it was about 506 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v04` (route chem-y11-m3-v04; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v04`.
@@ -230,6 +251,8 @@ In order (17 scene headings, all `### N.`): hook-flames, combustion-rule, comple
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: m3-v03's final frame into scene 1 by camera continue (the burners stay); 1 to 2 camera continue (the flame pair shrinks left); 2 to 3 to 4 camera continue; 4 to 5 to 6 camera continue (the line stays); 6 to 7 board clear of the line, flame pair returns; 7 to 8 camera continue (ladder stays); 8 to 9 camera continue; 9 to 10 board clear; 10 to 11 camera continue; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v04-learning-review.md`, `checks/c-y11-m3-v04-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -248,6 +271,8 @@ Need (new plates, Codex), in priority order:
 3. `y11c-copper-foil-v1.png` and 4. `y11c-copper-foil-black-v1.png`: scene 11; also m3-v07's oxygen test. Essential (metal combustion without flame is the contrast with magnesium).
 
 Coded: clamp glyph, mist droplets, fuel splitter tiles and bins, atom tiles and tallies, coefficient slots, half-molecule, oxygen ladder, soot glow, glare, airflow glyph, cards, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-basin-underside-sooty-v1.png` and `m7-camping-gas-burner-v1.png` (scene 9 and the attempt 2 card), `m8-flame-blue-v2.png` (attempt 1 card). Removed: the airflow glyph and heater outline. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v04; plates 3 and 4 shared with v07)
 
@@ -270,6 +295,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m3-v03's final frame, and send the final frame to the m3-v05 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -328,3 +355,23 @@ Brief 218 error check (`checks/c-y11-m3-v04-rev2-error-check.md`), both should-f
 - Combustion strip (scene 16 and the final frame): "fuel + O₂ → oxides" becomes "hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide", matching the repaired narration (soot is carbon, not an oxide). The same wording is carried into m3-v05's toolkit and m3-v07's dimmed copy.
 - Scene 1 (root decision 19): the animated clamp lowering a coded basin is removed. The observation is shown only as the two painted basin stills, and a grey method strip writes on "hold a cold white dish": "teacher demonstration or checked footage: follow your school's approved method". No method is presented as school-approved.
 - No speech change. Narration 5,582 characters (sum of 17 scene strings), about 506 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 9: the coded window, airflow and heater pictures are replaced by the sooty basin, the gas burner and words.
+- Question cards: attempt 1 gains the blue-flame burner and attempt 2 the camping gas burner; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,582 characters, unchanged; about 493 s (it was about 506 s).
+
+Calls for root: none.

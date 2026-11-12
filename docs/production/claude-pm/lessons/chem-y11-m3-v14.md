@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V14: Temperature and concentration. How do temperature and concentration change the rate evidence? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 219 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 219 error-check finding resolved by root; ready to voice.
 
 Narration 6,303 characters, 17 scenes, about 566 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -73,6 +73,18 @@ Handoff: chem-y11-m3-v15, surface area and catalysts.
 - **Opening frame:** m3-v13's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m3-v15` opens on it):** left: the logging rig (balance, `y11c-flask-acid-plug-spent-v1.png` on the pan after the control run, laptop showing the control curve, 1.00 mol L⁻¹, 20.0 °C, levelled at 0.44 g). Right, two stacked panels separated by a thin slate rule. Upper panel: `y11c-chips-powder-watch-glasses-v1.png` (new; two watch glasses, marble chips and the same mass of marble powder) with labels "1.00 g chips" and "1.00 g powder" and a "?" chip "crush them?". Lower panel: `y11c-flask-acid-plug-spent-v1.png` small, label "hydrogen peroxide solution", beside `y11c-mno2-watch-glass-v1.png` (new; a small heap of black powder on a watch glass), label "manganese dioxide: not used up?". The amber chip "Same lever, or a different one?". The memory line "Hit often, hit hard, hit right." small at the top right. The chip "Next: How do surface area and catalysts change reaction rate differently?" at the bottom of the safe area.
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the rig with its plugged flask, scene 1 (about 27 s); (B) the plan board, scene 2 (about 37 s); (C) the rig at full width with live logging, scene 3 (about 32 s); (D) the graph at full width: the control, then the concentration series, scenes 4 and 5 (about 61 s); (E) two particle lenses, scene 6 (about 27 s); (F) the water bath and probe beside the graph, scene 7 (about 29 s); (G) the energy distribution, scene 8 (about 35 s); (H) the lever board, scene 9 (about 33 s); (I) the limitation rows with their objects, scene 10 (about 38 s); (J) the memory card, scene 11 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 61 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The collision stage and every particle lens are runs of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`): one two-particle reaction with an energy barrier `ea`, drawn with `failed` so collisions that lacked the energy are seen to bounce apart. Live readouts read the run ("collisions", "reacted", `collisionRateAt`), shown as counts or "× start", never as measured rates. In scene 6 the two lenses are two runs at the same temperature with one and two times the acid particles; in scene 8 a third run at a higher `temperature` shows a larger share of collisions clearing the barrier.
+- **No coded icons of real things.** The lock icon on the activation-energy line (scene 8) is a hand tag.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -117,6 +129,8 @@ Visual: (stage change: the water bath and probe beside the graph; about 29 s) th
 
 Visual: on "collide a little more often" the funnel inlet in the corner brightens slightly (thin arrow from the temperature dial). On "spread of energies" the board clears to v13's energy-spread graph: one curve labelled "20 °C" (mid colour), the dashed Eₐ line, its small amber tail. On "shifts to the right and flattens" a second curve "40 °C" (deep orange) draws, peak lower and further right. On "It isn't taller" a grey ghost of a wrongly taller curve flashes and is crossed (tag "same area: same number of particles"); the two areas briefly fill pale to show they match. On "The activation energy hasn't moved" the Eₐ line pulses and a lock icon sits on its foot. On "a much bigger tail" the 40 °C tail fills amber, clearly larger than the 20 °C tail. On "hard" the funnel's energy gate lights, wired by a thick arrow from the temperature dial (amber hand tag "bigger tail"; red hand tag "not taller" on the crossed ghost).
 
+Upgrade (Revision 4): No lock is drawn: on "The activation energy hasn't moved" an amber hand tag "Eₐ: fixed" writes at the foot of the line with a pen ring.
+
 ### 9. two controls, two levers
 > So the two controls push different levers. Concentration changes how often particles collide, not how much energy they have. Temperature changes both, but mostly the fraction with enough energy. Warming does transfer energy to the mixture, but the activation energy stays the same. It's the particles' average kinetic energy that rises. And neither control changes how much product forms when the chips run out, only how fast it **arrives**.
 
@@ -137,27 +151,35 @@ Visual: the memory line writes large: "Hit often, hit hard, hit right." Under it
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student investigates the effect of temperature on the rate of reaction between magnesium and dilute hydrochloric acid. Identical 2 cm pieces of magnesium ribbon are added to 50 mL portions of 0.50 mol L⁻¹ HCl held in a water bath at 20, 30, 40 and 50 °C, and the time for each piece to disappear is recorded. (a) Identify the independent variable and TWO controlled variables. (2 marks) (b) Explain, using collision theory, why the reaction is faster at higher temperatures. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted beaker on its hotplate with the thermometer (`m8-beaker-hotplate-clear-v1.png`, `c8-thermometer-hot-v1.png`, about 300 px tall), untagged, as the water bath. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 13. feedback 1 (brief)
 > The independent variable is temperature. Controls include the length of ribbon and the acid's volume and concentration. At higher temperature the particles have more kinetic energy, so a much larger fraction of collisions have at least the activation energy, and they collide a little more often too. More effective collisions each second, faster rate. Just saying they collide more often isn't **enough**.
 
 Visual: card shrinks to the top. Rows: "IV: temperature of the acid" (orange); "Controls: length (mass) of Mg ribbon; volume and concentration of HCl" (slate); "Higher T → higher average kinetic energy → much larger fraction of collisions with energy ≥ Eₐ (and slightly more collisions) → more effective collisions per second → faster" (teal), with the two-temperature energy-spread thumbnail. The third row frames in a dark-ink box with a green tick. On "enough" a chip "only because the particles collide more often" fades in and is crossed in red (red hand tag "mainly energy"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "2 cm Mg ribbon | 50 mL of 0.50 mol L⁻¹ HCl | 20, 30, 40, 50 °C | time to disappear". The answer rows are framed in green with a tick as they land.
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. Excess zinc granules react with fifty millilitres of hydrochloric acid, once at one mole per litre and once at zero point five. The graph shows the hydrogen collected. Which curve used the one mole per litre acid? Explain, using the graph and collision theory. Then explain why the final volumes are different. Pause here to answer.
 
 Visual: `QuestionCard`: "Excess zinc granules were added to 50.0 mL of hydrochloric acid at 25 °C, once with 1.0 mol L⁻¹ HCl and once with 0.5 mol L⁻¹ HCl. The volume of hydrogen gas collected is shown in the graph. (a) Which curve, A or B, shows the reaction with 1.0 mol L⁻¹ HCl? Justify your answer using the graph and collision theory. (2 marks) (b) Explain why the final volumes of hydrogen are different. (2 marks)" with a coded `LineGraph` "volume of H₂ (mL)" 0 to 700 against "time (s)": curve A steep, levelling at 620 mL; curve B shallower, levelling at 310 mL (tag "illustrative data"). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card's picture is its own graph (curves A and B), drawn solid from the first frame at about 520 px wide with axis labels at 30 px or more. Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 15. feedback 2 (brief)
 > Curve A. It's steeper at the start, because more hydrogen ions in each millilitre means more collisions with the zinc each second. And here the zinc is in excess, so the acid runs out first. Twice the acid gives twice the hydrogen, six hundred and twenty millilitres against three hundred and ten. The curves only end together when the other reactant runs **out**.
 
 Visual: card shrinks. Rows: "A: steeper start → faster → 1.0 mol L⁻¹: more H⁺ per mL → more collisions per second" (slate, the start of A ringed); "Zn in excess → HCl limiting → 0.050 mol HCl gives twice the H₂ of 0.025 mol" (teal); "620 mL vs 310 mL" with the two levels ringed. The answer "A: 1.0 mol L⁻¹" sits in a dark-ink box with a green tick. On "out" a chip "both curves should end at the same volume" fades in and is crossed in red (red hand tag "check which runs out"), with the note "only when the other reactant runs out first (like this video's chips)". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "excess zinc | 50.0 mL HCl: 1.0 or 0.5 mol L⁻¹ | 25 °C | curves A and B". The answer rows are framed in green with a tick as they land.
 
 ### 16. conclusion and handoff
 > So concentration speeds a reaction by making collisions more frequent, and temperature mainly by giving more collisions enough energy, and the logged curves show both as a steeper start. There are two more ways to speed reactions up. You could crush the chips into powder, or, for some reactions, add a substance that isn't used up. Do they push the same lever, or different **ones**?
 
 Visual: the memory line returns small at the top right. On "more frequent" the concentration cable on the lever board pulses; on "enough energy" the temperature cable. On "steeper start" the control, 2.00 mol L⁻¹ and 40 °C curves flash together. On "crush the chips into powder" the board settles into the final frame: the rig at the left with the spent flask and the control curve on the laptop; upper right panel `y11c-chips-powder-watch-glasses-v1.png` with "1.00 g chips" and "1.00 g powder" and the chip "crush them?". On "a substance that isn't used up" the lower right panel: the peroxide flask and `y11c-mno2-watch-glass-v1.png` with "manganese dioxide: not used up?". On "ones" the amber chip "Same lever, or a different one?" and the chip "Next: How do surface area and catalysts change reaction rate differently?" write. Hold about 2 seconds. This is the final frame (m3-v15 opens on it).
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -167,9 +189,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Higher concentration: more collisions per second, same fraction effective.
 5. Higher temperature: a much larger fraction with energy ≥ Eₐ, and slightly more collisions.
 
-Memory aid (framed card, on the notes screen): *Concentration: hit often. Temperature: hit hard, and a little more often.*
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Concentration: hit often. Temperature: hit hard, and a little more often.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -222,6 +242,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,303 characters**, 17 scenes (per scene: 354, 490, 423, 425, 386, 364, 392, 459, 437, 500, 156, 358, 402, 342, 360, 380, 75; Revision 1: 6,180). At 13.3 characters per second the speech is about 474 s; add about 11 s of settling (curve draws in 3, 5 and 7, the axis break in 5, the second distribution in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 566 s** (Revision 1: about 556 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,303 characters). The notes scene is 45 s in all, so the estimate is about 551 s (it was about 566 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v14` (route chem-y11-m3-v14; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v14`.
@@ -231,6 +253,8 @@ In order (17 scene headings, all `### N.`): hook-prediction, plan, logging, comp
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m3-v13's final frame into scene 1 by camera continue (the funnel shrinks to the corner); 1 to 2 camera continue; 2 to 3 camera continue (the rig grows); 3 to 4 camera continue; 4 to 5 camera continue (the graph keeps the control curve); 5 to 6 camera push into the chip surface; 6 to 7 pull back to the rig; 7 to 8 clear change to the distribution; 8 to 9 camera continue (the funnel returns); 9 to 10 clear change; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v14-learning-review.md`, `checks/c-y11-m3-v14-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -245,6 +269,8 @@ Have (inspected 5 November on a dark contact sheet; uniform scaling only, never 
 Delivered by brief 183 (inspected 6 November): `y11c-chips-powder-watch-glasses-v1.png` (1774 × 887): final frame, v15 scenes 1 to 3; `y11c-mno2-watch-glass-v1.png` (1448 × 1086): final frame, v15 scenes 6 to 8. Need (new plates): none in Revision 2.
 
 Coded: USB cable, laptop-screen graph, readouts, system boundary and wisps, plan board, `LineGraph`s, bands and dots, results strips, particle lenses and counters, distributions, lever board and cables, step ruler, chips, cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): the hotplate beaker and thermometer on the attempt 1 card. Removed: the lock icon. New plate requests: none. Simulation: the particle box engine for the particle lenses.
 
 ## Codex asset brief (Year 11 Chemistry M3 v14 and v15)
 
@@ -266,6 +292,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested (chips and plug move by code); no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m3-v13's final frame, and send the final frame to the m3-v15 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -334,3 +362,24 @@ Brief 219 error check (`checks/c-y11-m3-v14-rev2-error-check.md`), should-fix fi
 - Scene 10: the temperature row now reads "hold it steady: follow your school's approved method". Open decision 6 is marked resolved by root decision 24; no school method is presented as approved or needed before voicing.
 - Scene 4: the framed rate is now tied to the spoken "grams per second", so the final bold cue is quoted in order. Visual otherwise unchanged.
 - No speech change. Narration 6,303 characters (sum of 17 scene strings), about 566 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The particle lenses are named as particle box runs (twice the particles in scene 6; a higher temperature in scene 8).
+- Scene 8: the lock icon becomes a hand tag.
+- Question cards: attempt 1 gains the water-bath plates; attempt 2 keeps its graph as the picture; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,303 characters, unchanged; about 551 s (it was about 566 s).
+
+Calls for root: none.

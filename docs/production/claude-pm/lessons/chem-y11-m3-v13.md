@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V13: Collision theory. Why do collision energy and orientation control reaction rate? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 219 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 219 error-check finding resolved by root (scene 10 speech, +14 characters, accepted in root decision 35); ready to voice.
 
 Narration 6,154 characters, 17 scenes, about 553 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -66,6 +66,17 @@ Handoff: chem-y11-m3-v14, temperature and concentration.
 - **Opening frame:** m3-v12's final frame exactly (Decisions; reconciled to `chem-y11-m3-v12.md` as written on 5 November).
 - **Final frame (`chem-y11-m3-v14` opens on it):** left: the gas rig small (`y11c-flask-chips-acid-bung-fizz-v1.png`, coded tube, syringe at 52 mL) over the finished volume-time graph. Right: the funnel from scene 9, smaller, with its three labels "hit often", "hit hard", "hit right". Under the funnel two coded control dials: "concentration" (slate) and "temperature" (deep orange), each with a small "?" tag; a pen arrow from "concentration" to "hit often" with a "?" and one from "temperature" to "hit hard" with a "?" (the arrows are questions, not answers). The amber chip "Which lever does each one push, and how would the data show it?". The chip "Next: How do temperature and concentration change the rate evidence?" at the bottom of the safe area (above the bottom 12%).
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the two beakers and the "how fast?" chip, scene 1 (about 34 s); (B) the particle box, scene 2 (about 26 s); (C) the volume against time graph and its sliding window, scenes 3 and 4 (about 63 s); (D) the collision stage with the energy meter, scenes 5 and 6 (about 55 s); (E) the energy distribution, scene 7 (about 33 s); (F) the collision stage for orientation, scene 8 (about 26 s); (G) the funnel, scene 9 (about 31 s); (H) frequency against success, scene 10 (about 41 s); (I) the memory card, scene 11 (about 20 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 63 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **Simulation engine.** The collision stage and every particle lens are runs of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView`): one two-particle reaction with an energy barrier `ea`, drawn with `failed` so collisions that lacked the energy are seen to bounce apart. Live readouts read the run ("collisions", "reacted", `collisionRateAt`), shown as counts or "× start", never as measured rates. The orientation replays in scene 8 are lesson-coded close-ups of two molecules, because the engine's particles have no direction.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -130,27 +141,35 @@ Visual: the memory line writes large in the explainer's handwriting style: "Hit 
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Hydrogen iodide decomposes when two HI molecules collide: 2HI(g) → H₂(g) + I₂(g). Only a small fraction of the collisions between HI molecules produce H₂ and I₂. Using collision theory, explain why. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted tube of hot hydrogen iodide (`c8-hot-hi-tube-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 13. feedback 1 (brief)
 > A collision only works if it has at least the activation energy, and most collisions don't, so the molecules bounce apart. It also needs the right orientation, here the two hydrogen atoms meeting, so they can bond. Only collisions with both are effective. Saying they don't collide often enough misses the point, because it's the fraction that fails.
 
 Visual: card shrinks to the top. Rows write in turn: "Effective collision needs energy ≥ Eₐ: most HI collisions have less, so they bounce apart" (amber, with the small shaded tail icon); "and the right orientation: the H atoms must meet to form H–H" (green; two HI ball models, H white and I purple, meeting H-to-H with a tick, then I-to-I with a cross); "Only collisions with both react, so only a small fraction succeed" (teal). The last row frames in a dark-ink box with a green tick. On "don't collide often enough" a chip "HI molecules don't collide often enough" fades in and is crossed in red (red hand tag "it's the fraction"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "2HI(g) → H₂(g) + I₂(g) | only a small fraction of collisions react". The three reason rows are framed in green with a tick as they land.
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. Magnesium reacts with excess dilute hydrochloric acid at a constant twenty-five degrees, and the hydrogen is collected in a gas syringe. Use the table to calculate the average rate between zero and twenty seconds, and between sixty and eighty seconds. Then explain the change using collision theory. Pause here to answer.
 
 Visual: `QuestionCard`: "Magnesium ribbon reacts with excess dilute hydrochloric acid at a constant 25 °C. The hydrogen gas is collected in a gas syringe. Time (s): 0, 20, 40, 60, 80. Volume of H₂ (mL): 0, 24, 40, 50, 56. (a) Calculate the average rate of reaction between 0 and 20 s, and between 60 and 80 s. (2 marks) (b) Explain the change in rate using collision theory. (2 marks)" with the data as a small two-row table (tag "illustrative data"). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted tube of magnesium in acid (`m5x-strong-acid-mg-v1.png`, about 260 px tall), untagged, above the data table (34 px). Card text 34 to 38 px. Nothing answer-bearing.
+
 ### 15. feedback 2 (brief)
 > From zero to twenty seconds, twenty-four over twenty is one point two millilitres per second. From sixty to eighty, six over twenty is zero point three zero. As the ribbon reacts away, there's less magnesium surface for the acid to hit, so fewer collisions happen each second. At the same temperature, the same fraction succeed, so the rate falls. The particles didn't lose **energy**.
 
 Visual: card shrinks. Rows: "0 to 20 s: 24 ÷ 20 = 1.2 mL s⁻¹" and "60 to 80 s: (56 − 50) ÷ 20 = 6 ÷ 20 = 0.30 mL s⁻¹", each framed in a dark-ink box with a green tick; "ribbon reacts away (acid in excess) → less Mg surface → fewer collisions per second" (slate meter dropping); "same temperature → same fraction effective → fewer effective collisions per second → slower" (teal). On "energy" a chip "the particles lose energy as the reaction goes on" fades in and is crossed in red (red hand tag "same temperature, same energies"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "time 0, 20, 40, 60, 80 s | volume 0, 24, 40, 50, 56 mL | 25 °C, acid in excess".
 
 ### 16. conclusion and handoff
 > So collision energy and orientation control the rate because only collisions with both can react, and the rate counts how many of those happen each second. In a laboratory, we can't turn particles the right way round, but we can change how often they collide and how hard they hit. Two easy controls are the concentration and the temperature. Which lever does each one push, and how would the data **show it**?
 
 Visual: the memory line returns small at the top. On "only collisions with both can react" the funnel returns with its two gates lit. On "how many of those happen each second" the outlet stream pulses. On "In a laboratory" the board settles into the final frame's layout: the gas rig and graph small at the left, the funnel with "hit often", "hit hard", "hit right" at the right. On "concentration" the slate dial appears with "?"; on "temperature" the deep orange dial appears with "?"; the two questioning pen arrows draw. On "show it" the amber chip "Which lever does each one push, and how would the data show it?" and the chip "Next: How do temperature and concentration change the rate evidence?" write. Hold about 2 seconds. This is the final frame (m3-v14 opens on it).
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -160,9 +179,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Eₐ: the smallest collision energy that can start a reaction.
 5. Rate depends on how often particles collide and the fraction that succeed.
 
-Memory aid (framed card, on the notes screen): *Hit often, hit hard, hit right.*
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Hit often, hit hard, hit right.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -212,6 +229,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,140 characters**, 17 scenes (per scene: 456, 344, 448, 380, 351, 391, 436, 350, 407, 528, 270, 236, 350, 331, 381, 406, 75; Revision 1: 6,011). At 13.3 characters per second the speech is about 462 s; add about 9 s of settling (the graph build in 3, the sliding window in 4, the collision replays in 6 and 8, the funnel in 9, the lens in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 552 s** (Revision 1: about 541 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,154 characters). The notes scene is 45 s in all, so the estimate is about 538 s (it was about 553 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v13` (route chem-y11-m3-v13; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v13`.
@@ -221,6 +240,8 @@ In order (17 scene headings, all `### N.`): hook-prediction, collisions-fail, ra
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m3-v12's final frame into scene 1 by camera continue, then a clear change to the air box; 1 to 2 camera continue; 2 to 3 camera continue (the rig stays); 3 to 4 camera continue; 4 to 5 camera push into the chips (meaningful zoom to particles); 5 to 6 camera continue; 6 to 7 camera continue (the meter's line rotates into the graph); 7 to 8 camera continue; 8 to 9 clear change to the funnel; 9 to 10 camera continue; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v13-learning-review.md`, `checks/c-y11-m3-v13-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -235,6 +256,8 @@ Need: no new plates.
 
 Coded: air particle box, collision stage and ball models, energy meter, gradient triangles and the sliding window, table and `LineGraph`s (volume-time and the energy spread), funnel and tally bars, meters, chip-surface lens, dials, cards, chips, countdowns, key notes board.
 
+Revision 4 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `c8-hot-hi-tube-v1.png` (attempt 1), `m5x-strong-acid-mg-v1.png` (attempt 2). New plate requests: none. Simulation: the particle box engine for the collision stage.
+
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
@@ -247,6 +270,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no person, hand or face is drawn or requested (the high-jump comparison is spoken only); no em dash (U+2014); Australian spelling.
 8. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 9. Confirm the opening frame equals m3-v12's final frame as written in `chem-y11-m3-v12.md`, and send this final frame to the m3-v14 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -307,3 +332,23 @@ Brief 219 error check (`checks/c-y11-m3-v13-rev2-error-check.md`), should-fix fi
 - Scene 10 speech: "the acid gets weaker" becomes "the acid becomes less concentrated" (using up H⁺ lowers concentration; it does not change hydrochloric acid's strength), matching repaired m2-v20. The hand tag now reads "less concentrated acid"; the author notes in Decisions and (c) use the same wording.
 - Scene 9: the pen ring on the gloss card's "AND" is now tied to the spoken "both enough energy and the right orientation", so the final bold cue is quoted in order. Visual otherwise unchanged.
 - Narration 6,154 characters (sum of 17 scene strings; scene 10 is 542, +14 against Revision 2's 6,140), about 553 s. Inside 5,500 to 6,800 and under 570 s. Bold cues quoted in spoken order; no em dashes. Speech changed in scene 10 only: record from this revision.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- The collision stage is named as a particle box run with an energy barrier and failed collisions shown; orientation stays a coded close-up.
+- Question cards: attempt 1 gains the tube of hydrogen iodide and attempt 2 the tube of magnesium in acid; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,154 characters, unchanged; about 538 s (it was about 553 s).
+
+Calls for root: none.

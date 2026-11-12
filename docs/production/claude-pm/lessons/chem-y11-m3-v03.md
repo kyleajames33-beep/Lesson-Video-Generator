@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V03: Precipitation reactions. How do solubility rules predict a precipitation reaction? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 218 error-check finding resolved by root; ready to voice.
 
 Narration 6,280 characters, 18 scenes, about 562 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,16 @@ Handoff: chem-y11-m3-v04, combustion products.
 - **Opening frame:** m3-v02's final frame exactly (Decisions).
 - **Final frame (m3-v04 opens on it):** two Bunsen burners side by side at the same scale: left `m8-flame-blue-v2.png` tagged "air hole open"; right `y11c-bunsen-yellow-flame-v1.png` (new; fallback in Assets) tagged "air hole closed"; a pen bracket over both "same gas"; an amber chip across them "same fuel, different products?"; small at the top right, the strip "AB + CD → precipitate" ticked beside m3-v02's two ticked strips; the chip "Next: How do oxygen supply and fuel affect combustion products?".
 
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the clear waste and the silver chloride tubes, scene 1 (about 32 s); (B) two bottles and their ion lenses, scene 2 (about 30 s); (C) the merged lens with live ion counters, scene 3 (about 32 s); (D) the well plate, scene 4 (about 35 s); (E) the rules card with example tubes, scene 5 (about 36 s); (F) the swap cross and barium sulfate, scene 6 (about 33 s); (G) the three-line equation stack, scenes 7 and 8 (about 57 s); (H) lead iodide, scene 9 (about 31 s); (I) a prediction with no precipitate, scene 10 (about 21 s); (J) the waste beaker again, scene 11 (about 31 s); (K) the memory card, scene 12 (about 11 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 57 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -104,6 +114,8 @@ Visual: stage change: `p03-well-plate-white-tile-v1.png` fills the frame; a code
 > Patterns like that are summed up as the solubility rules. A handy way to remember the soluble groups is **NAGSAG**. Nitrates, ammonium and Group 1 compounds are almost always soluble. Sulfates are soluble, except with barium, lead and **calcium**. Acetates are soluble. And Group 17, the halides chloride, bromide and iodide, are soluble except with **silver and lead**. Everything else, like carbonates and hydroxides, is mostly insoluble, unless it's paired with Group 1 or **ammonium**.
 
 Visual: stage change: the rules card (C13 Revision 3 card) fills the frame, replacing the plate; gloss chips "soluble: dissolves", "insoluble: barely dissolves". On "NAGSAG" the six letters stack down the left; rows write on their words: "N: nitrates (NO₃⁻)", "A: ammonium (NH₄⁺)", "G: Group 1 (Na⁺, K⁺)", bracket "almost always soluble". On "calcium" the S row: "S: sulfates (SO₄²⁻): soluble, except Ba²⁺, Sr²⁺, Pb²⁺ (insoluble); Ca²⁺, Ag⁺ (slightly)". "A: acetates (CH₃COO⁻): soluble". On "silver and lead" the G row: "G: Group 17 halides (Cl⁻, Br⁻, I⁻): soluble, except Ag⁺, Pb²⁺" (footnote "PbCl₂ slightly soluble"). On "Group 1 or ammonium" a separate box: "Mostly insoluble: carbonates, phosphates, hydroxides, sulfides, unless with Group 1 or NH₄⁺. Also soluble: Ba(OH)₂; Ca, Sr, Ba sulfides. Ca(OH)₂, Sr(OH)₂ slightly". Tag: "a summary of many experiments, wider than this plate"; the card matches Year 12 C13 Revision 3; violet and amber hand tags "exceptions" ring the exception lists. Hold about 3 seconds (reading hold).
+
+Upgrade (Revision 4): The rules card is not text alone: the painted tubes of white silver chloride and yellow lead iodide (`m5x-ppt-agcl-white-v1.png`, `m5x-ppt-pbi2-yellow-v1.png`, about 240 px tall each) stand beside the halide line, and the clear tube (`m5x-no-ppt-clear-v1.png`) beside the nitrate line, from the first frame.
 
 ### 6. the method, and barium sulfate
 > So here's the method. List the ions, swap partners, and **check both** new pairs against the rules. Try barium chloride and sodium sulfate. Swapping gives barium sulfate and sodium chloride. Sodium chloride is Group 1, so it's soluble. Barium sulfate is a sulfate with barium, one of the exceptions, so it's the white **precipitate**. Balanced, barium chloride plus sodium sulfate gives barium sulfate solid, plus two sodium chloride, **aqueous**.
@@ -145,39 +157,45 @@ Visual: the swap cross returns small with its X of arrows; on "check both" the f
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Solutions of iron(III) chloride and sodium hydroxide are mixed. (a) Name the precipitate that forms. (b) Write the net ionic equation for its formation, including states. (3 marks)" The compact rules card stays visible small in the corner (supplied rules, as in an exam stimulus). The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no swap cross, no tube).
 
+Upgrade (Revision 4): From the first frame the card's right side carries two painted dropper bottles (`p03-dropper-bottle-v1.png` twice, about 240 px tall), untagged. Card text 38 px; the compact rules card stays in the corner as supplied data (30 px or more).
+
 ### 14. feedback 1 (brief)
 > Swap partners: iron three hydroxide and sodium chloride. Sodium chloride is soluble. Hydroxides are mostly insoluble, and iron isn't an exception, so iron three hydroxide forms, a rust-brown solid. Iron is plus three, so it needs three hydroxides: iron three ion plus three hydroxide ions gives iron three hydroxide solid. Writing the product as separate ions again is wrong, because the precipitate is never **split**.
 
 Visual: card shrinks to the top. Swap cross runs quickly; NaCl ticks; Fe(OH)₃ flags amber; `m5x-ppt-feoh3-brown-v1.png` beside it; answer chip "(a) iron(III) hydroxide, Fe(OH)₃(s), rust-brown". Line "Fe³⁺(aq) + 3OH⁻(aq) → Fe(OH)₃(s)", framed in a dark-ink box with a green tick, tally "(+3) + 3(−1) = 0". On "split" a chip "Fe³⁺(aq) + 3OH⁻(aq) → Fe³⁺(aq) + 3OH⁻(aq)" fades in and is crossed in red (red hand tag "keep the solid whole"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "iron(III) chloride + sodium hydroxide | rules card supplied".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A water sample contains dissolved copper ions, along with sodium and nitrate ions. Which solution would remove the copper as a precipitate: sodium nitrate, sodium hydroxide or potassium chloride? Justify your choice. Pause here to answer.
 
 Visual: `QuestionCard`: "A water sample contains Cu²⁺(aq), Na⁺(aq) and NO₃⁻(aq) ions. A technician can add one of these solutions: sodium nitrate, sodium hydroxide or potassium chloride. Identify the solution that would remove copper ions as a precipitate, and justify your choice using solubility rules. (3 marks)" The compact rules card stays small in the corner. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): From the first frame the card's right side carries a painted clear bottle of water sample (`y11c-sample-bottle-clear-v1.png`, about 260 px tall), untagged. Card text 38 px; the compact rules card stays in the corner.
+
 ### 16. feedback 2 (brief)
 > Sodium hydroxide. Hydroxides are mostly insoluble and copper isn't an exception, so pale blue copper hydroxide forms, while sodium stays dissolved. Sodium nitrate only adds soluble ions. Potassium chloride is the trap: chlorides are soluble except with silver and lead, so copper chloride stays **dissolved**.
 
 Visual: card shrinks. Three option tiles: "NaNO₃" (grey, "all soluble: no solid"), "NaOH" (ticked and framed; `m5x-ppt-cuoh2-blue-v1.png` small; line "Cu²⁺(aq) + 2OH⁻(aq) → Cu(OH)₂(s)"), and on "copper chloride stays dissolved" "KCl" fades in with "CuCl₂ precipitates" and is crossed in red (red hand tag "chlorides: soluble except Ag⁺, Pb²⁺"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "sample holds Cu²⁺, Na⁺, NO₃⁻ | choices: sodium nitrate, sodium hydroxide, potassium chloride".
 
 ### 17. conclusion and handoff
 > So when two salt solutions like these mix, the ions swap partners, and the rules tell you whether a new pair stays dissolved or comes out as a solid. So far, our products have stayed in the tube. When a fuel burns, the products leave as gases you can't see. Here's the same burner gas burning two ways: a blue flame, and a yellow, smoky one. Same fuel, so are the products the same? How do oxygen supply and fuel affect combustion **products**?
 
 Visual: the swap cross and the three-line stack shrink into the strip "AB + CD → precipitate", which ticks beside m3-v02's two strips at the top right. On "When a fuel burns" the final frame builds: `m8-flame-blue-v2.png` (tag "air hole open") and `y11c-bunsen-yellow-flame-v1.png` (tag "air hole closed") slide in at the same scale; on "same burner gas" a pen bracket "same gas" spans them; on "Same fuel" the amber chip "same fuel, different products?" writes across them. On "combustion products" the chip "Next: How do oxygen supply and fuel affect combustion products?" writes. Hold about 2 seconds. This is the final frame (m3-v04 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Salt solutions: ions swap partners; an insoluble pair precipitates.
-2. Soluble (NAGSAG): nitrates, ammonium, Group 1, acetates; sulfates except Ba²⁺, Sr²⁺, Pb²⁺ (Ca²⁺, Ag⁺ slightly); halides except Ag⁺, Pb²⁺.
-3. Mostly insoluble: carbonates, phosphates, hydroxides, sulfides, unless with Group 1 or NH₄⁺ (also soluble: Ba(OH)₂; Ca, Sr, Ba sulfides).
-4. Full ionic: split only (aq) ionic compounds, never the solid.
-5. Net ionic: cross out spectators, e.g. Ba²⁺ + SO₄²⁻ → BaSO₄(s).
+2. Soluble (NAGSAG): nitrates, ammonium, Group 1, acetates; most sulfates and halides.
+3. Exceptions: sulfates of Ba²⁺, Sr²⁺, Pb²⁺; halides of Ag⁺, Pb²⁺ (insoluble).
+4. Mostly insoluble: carbonates, phosphates, hydroxides, sulfides (not Group 1, NH₄⁺).
+5. Net ionic: split only (aq) ionic compounds, then cross out the spectators.
 
-Memory aid (framed card, on the notes screen): *Swap partners, check both. Split only the aqueous; cross out what's the same on both sides.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Swap partners, check both. Split only the aqueous; cross out what's the same on both sides.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. The compact rules card from scene 5 sits under the memory card at 30 px, so the fine exceptions (slightly soluble calcium and silver sulfates; soluble barium hydroxide) stay on screen for anyone copying them. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -229,6 +247,8 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,280 characters**, 18 scenes (Revision 1: 6,263). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 471 s; add about 6 s of settling (lenses in 2, 3; the spotting plate in 4; the token flight in 7), 3 s for the in-scene prediction, 3 s reading hold on the rules card, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 562 s** (Revision 1: about 559 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,280 characters). The notes scene is 45 s in all, so the estimate is about 549 s (it was about 562 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v03` (route chem-y11-m3-v03; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v03`.
@@ -238,6 +258,8 @@ In order (18 scene headings, all `### N.`): hook-lead, ions-in-bottles, precipit
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); prediction-no-ppt is `explain` with an in-scene 3 s countdown (kit build item, root decision m2-8). Transitions: m3-v02's final frame into scene 1 by camera continue; 1 to 2 board clear (bottles stay); 2 to 3 camera continue (the lens stays); 3 to 4 camera continue (the lens shrinks, the plate slides in); 4 to 5 cross-fade (results grid into the rules card); 5 to 6 camera continue (card shrinks to the corner); 6 to 7 to 8 camera continue (the equation stack grows down); 8 to 9 board clear of the stack; 9 to 10 to 11 camera continue; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: rules card (3 s), prediction (3 s in-scene), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v03-learning-review.md`, `checks/c-y11-m3-v03-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -254,6 +276,8 @@ Need (new plates, Codex):
 1. `y11c-bunsen-yellow-flame-v1.png`: scene 17 and the final frame; also m3-v04 throughout. Essential (the handoff's contrast and m3-v04's central observation). Aligned with `m8-flame-blue-v2.png`.
 
 Coded: ion lenses and shells, lattice lock, spotting-plate well fills and results grid, rules card, swap cross, token flight, strikes, charge tallies, composition card, reagent chips, option tiles, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): the three precipitate tubes beside the rules card in scene 5; `p03-dropper-bottle-v1.png` (attempt 1 card); `y11c-sample-bottle-clear-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v03; plate shared with v04)
 
@@ -274,6 +298,8 @@ Error-only check (report errors; do not restyle or rewrite):
 6. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 7. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 8. Confirm the opening frame equals m3-v02's final frame, and send the final frame to the m3-v04 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -333,3 +359,23 @@ Brief 218 error check (`checks/c-y11-m3-v03-rev2-error-check.md`), should-fix fi
 - Scene 4: the pen ring now triggers on "sodium or nitrate" (the spoken words), not the stale "potassium or nitrate". Its Na⁺ and NO₃⁻ targets are unchanged.
 - No speech change. Narration 6,280 characters (sum of 18 scene strings), about 562 s. Bold cues quoted in spoken order; no em dashes.
 - Unchanged hold from brief 218: the yellow-flame plate candidates failed registration, so the written fallback stands until a registered plate is delivered (build item, not a voicing blocker).
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 5: the rules card gains three example tubes, so the frame is not text alone.
+- Question cards: attempt 1 gains two dropper bottles and attempt 2 a sample bottle; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s. Left the board: the fine exceptions and the example net ionic equation, which stay on the compact rules card under the memory card and in scene 8.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,280 characters, unchanged; about 549 s (it was about 562 s).
+
+Calls for root: two key notes ran past 130 characters; they are split and trimmed, with the full rules card kept on the notes screen.

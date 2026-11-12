@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V07: The metal activity series. How can observations order metals by reactivity? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 218 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 218 error-check findings resolved by root; ready to voice.
 
 Narration 5,760 characters, 19 scenes, about 520 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -71,6 +71,16 @@ Handoff: chem-y11-m3-v08, why reactivity follows electron removal.
 
 - **Opening frame (self-contained):** heading "How is the reactivity of various metals predicted?"; three `m5x-unsaturated-beaker-v1.png` copies at one scale, each tagged "dilute HCl", with metal tags "Mg", "Zn", "Cu" above; the six ticked reaction-type strips from m3-v05's final frame small and dimmed at the top right (Revision 3: the combustion strip carries the scoped wording "combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide"). Root may reconcile with m3-v06's final frame when it is designed; no narration depends on m3-v06.
 - **Final frame (m3-v08 opens on it):** left, our series as a vertical strip (K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Ag, Au; teal outline for tested metals, grey for reference-only, dashed H line), with an arrow "more reactive" pointing up; right, a mini periodic table outline with the same metals' cells shaded by rank (darkest for K), a pen arrow "down a group" on Group 1 and "to the left" across period 3; under it the tag "every metal here formed positive ions: M → Mⁿ⁺ + electrons"; an amber chip "easier to remove electrons?"; the chip "Next: Why do metal-reactivity trends follow electron removal?".
+
+## Visual upgrade (Revision 4)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 4)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the same acid on three metals, made fair, scenes 1 and 2 (about 54 s); (B) the equation for the bubbles, scene 3 (about 28 s); (C) iron and aluminium join the row, scene 4 (about 18 s); (D) the troughs of water, scene 5 (about 31 s); (E) burning in oxygen, scene 6 (about 20 s); (F) zinc in copper sulfate and its equation, scenes 7 and 8 (about 51 s); (G) the displacement grid and its counter, scenes 9 and 10 (about 38 s); (H) one merged series, scene 11 (about 21 s); (I) the reference series beside ours, scene 12 (about 46 s); (J) the mnemonic, scene 13 (about 19 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 54 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
 
 ## Script and shots
 
@@ -146,27 +156,35 @@ Visual: the full series strip; the mnemonic writes word by word beside it, each 
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student cleaned three metals, X, Y and Z, with sandpaper so no surface layer could block a reaction, and tested them. Results: in dilute hydrochloric acid, X and Y produced bubbles of gas; Z showed no change. Placed in solutions of each other's nitrates, X reacted with solutions of Y and of Z; Y reacted only with the solution of Z; Z reacted with neither. (a) List the metals from most to least reactive. (b) State the position of hydrogen in this series, with a reason. (3 marks)" A small results table repeats the data. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the series strip hides).
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted well plate on its white tile (`p03-well-plate-white-tile-v1.png`, about 300 px wide), empty and untagged. Card text 34 to 38 px so the whole question fits. Nothing answer-bearing.
+
 ### 15. feedback 1 (brief)
 > X, then Y, then Z. X displaces both others, Y displaces one, and Z displaces none. Hydrogen goes between Y and Z, because X and Y made hydrogen with acid, and Z didn't. Putting Z first, because it was displaced the most, gets the order **backwards**.
 
 Visual: card shrinks to the top. The tally column returns: "X 2, Y 1, Z 0"; series "X > Y > H > Z" with the dashed H line (tag "X, Y made H₂; Z clean, so no hidden layer"), framed in a dark-ink box with a green tick. On "backwards" a chip "Z > Y > X" fades in and is crossed in red (red hand tag "count what it displaces, not what displaces it"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "acid: X and Y bubble, Z does not | X displaces Y and Z | Y displaces Z only".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. A copper wire is placed in silver nitrate solution. Predict whether a reaction occurs, write the equation, and give two observations. Pause here to answer.
 
 Visual: `QuestionCard`: "A clean copper wire is placed in colourless silver nitrate solution. (a) Using the activity series, predict whether a reaction occurs. (b) Write a balanced equation for any reaction. (c) Describe two observations that would show the reaction is occurring. (4 marks)" The full series strip is shown on the card as a supplied stimulus. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): From the first frame the card's right side carries the painted copper wire (`y11c-copper-wire-bent-v1.png`, about 300 px wide), untagged, beside the supplied series strip. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Yes. Copper is above silver, so it displaces it. Copper plus two silver nitrate gives copper nitrate plus two silver. Silver crystals grow on the wire, and the solution slowly turns blue as copper ions form. Saying no, because copper is below hydrogen, compares it with the wrong thing. Here, copper is competing with **silver**.
 
 Visual: card shrinks. Series strip with Cu and Ag ringed (Cu above Ag). Line "Cu(s) + 2AgNO₃(aq) → Cu(NO₃)₂(aq) + 2Ag(s)" with green tally; net "Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s)" small. Two observation chips: "silver crystals on the wire", "solution turns blue"; the equation framed in a dark-ink box with a green tick. On "competing with silver" a chip "no reaction: Cu is below H" fades in and is crossed in red (red hand tag "compare with the metal ion present"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card from the first frame: "clean copper wire | colourless silver nitrate solution | series supplied".
 
 ### 18. conclusion and handoff
 > So observations order metals: how fast they react with acid and water, how they burn, and which metals they displace. In every one of these reactions, the metal turned into positive ions, and a metal does that by losing electrons. Look where the most reactive metals sit on the periodic table: far left, and low down. Why do metal-reactivity trends follow electron **removal**?
 
 Visual: the series strip moves to the left (final-frame form). On "positive ions" the tag "every metal here formed positive ions: M → Mⁿ⁺ + electrons" writes under it. On "periodic table" the mini periodic table outline slides in at the right with the tested metals' cells shaded by rank; on "far left, and low down" pen arrows "down a group" and "to the left". The amber chip "easier to remove electrons?" writes. On "removal" the chip "Next: Why do metal-reactivity trends follow electron removal?" writes. Hold about 2 seconds. This is the final frame (m3-v08 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -176,9 +194,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Series (RSC): K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Ag, Au.
 5. Aluminium's oxide layer hides its reactivity.
 
-Memory aid (framed card, on the notes screen): *Please Stop Calling Me A Zombie, I Like Having Copper Silverware Guaranteed.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Please Stop Calling Me A Zombie, I Like Having Copper Silverware Guaranteed.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -229,6 +245,8 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,760 characters**, 19 scenes (Revision 1: 5,669). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 426 s; add about 6 s of settling (the beakers in 1 and 4, the lens in 7, the grid in 10, the merge in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 520 s** (Revision 1: about 511 s).
 
+Revision 4 (12 Nov 2026): narration unchanged (5,760 characters). The notes scene is 45 s in all, so the estimate is about 507 s (it was about 520 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v07` (route chem-y11-m3-v07; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v07`.
@@ -238,6 +256,8 @@ In order (19 scene headings, all `### N.`): hook-acid, fair-test, hydrogen, iron
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-grid (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions: the opening frame into scene 1 by cross-fade of each beaker on its cue; 1 to 2 to 3 to 4 camera continue (the beaker row stays); 4 to 5 camera continue (the beakers shrink to the top; troughs slide in); 5 to 6 camera continue; 6 to 7 board clear (strips stay at the right); 7 to 8 camera continue; 8 to 9 to 10 camera continue (the grid slides in); 10 to 11 camera continue (strips merge); 11 to 12 to 13 camera continue; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v07-learning-review.md`, `checks/c-y11-m3-v07-science-check.md`.
+
+Revision 4: the stage list is in "Visual upgrade (Revision 4)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -261,6 +281,8 @@ Need (new plates, Codex), in priority order:
 8. `y11c-trough-mg-v1.png`: scene 5. Wanted; fallback: the tag "magnesium: barely reacts with cold water" on `y11c-trough-water-v1.png`.
 
 Coded: bubble meters, fair-test card, oxide-skin inset, ranking strips, atom tiles and tallies, ion lens, token flight and strikes, displacement grid fills and tally column, series merge and H line, reference compare, mnemonic alignment, mini periodic table outline, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `p03-well-plate-white-tile-v1.png` (attempt 1), `y11c-copper-wire-bent-v1.png` (attempt 2). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v07)
 
@@ -287,6 +309,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame is self-contained (no dependence on m3-v06), and send the final frame to the m3-v08 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -352,3 +376,22 @@ Brief 218 error check (`checks/c-y11-m3-v07-rev2-error-check.md`), both should-f
 - Scene 5 (root decision 19): the existing tag now reads "K, Na and Ca: teacher demonstration or checked footage; follow your school's approved method". The troughs stay painted stills; no procedure is presented as approved.
 - Opening frame: the dimmed toolkit copy carries the scoped combustion strip from m3-v05 ("combustion: hydrocarbon + O₂ → H₂O + CO₂, CO or C; metal + O₂ → oxide").
 - No speech change. Narration 5,760 characters (sum of 19 scene strings), about 520 s. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 4 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains an empty well plate and attempt 2 the copper wire; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,760 characters, unchanged; about 507 s (it was about 520 s).
+
+Calls for root: none.

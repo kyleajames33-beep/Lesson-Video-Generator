@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V12: Standard reduction potentials. How do standard reduction potentials predict a redox reaction? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,193 characters, 19 scenes, about 552 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -68,6 +68,17 @@ Handoff: chem-y11-m3-v13, collision theory.
 - **Opening frame (equals m3-v11's final frame):** left half, the relative ladder titled "relative to copper (V)": ticks at 0.00, −0.50, −1.00, −1.50, −2.00; tiles "Cu 0.00" (on a zero line with a small wave glyph), "Fe −0.65", "Zn −1.05", "Mg −1.80", teal outlines, grey tag "our class readings (illustrative)"; right half, the empty ladder titled "E° (V), relative to hydrogen", ticks −3.00 to +1.00, a dashed teal "H₂ 0.00" line, four empty "?" slots labelled "Mg", "Zn", "Fe", "Cu"; top right, the ruled card glyph "Standard reduction potentials (data sheet)"; the chip "Next: How do standard reduction potentials predict a redox reaction?".
 - **Final frame (m3-v13 opens on it):** left third, the E° ladder small (tiles K −2.94, Mg −2.36, Al −1.68, Zn −0.76, Fe −0.44, H₂ 0.00 dashed, Cu +0.34, Ag +0.80), with the Al and Zn tiles ringed teal; right two thirds, two acid beaker plates side by side at one scale, rims level: left `m6-zinc-acid-v1.png` (zinc granules, steady bubbles) with the tag above "Zn: E°cell = +0.76 V" and a teal tick "spontaneous", right `y11c-aluminium-acid-v1.png` (foil, one or two bubbles) with the tag "Al: E°cell = +1.68 V" and a teal tick "spontaneous"; under the aluminium beaker a crossed red chip "bigger E°cell = faster"; centred under both beakers an amber chip "how fast? particles must meet"; a small coded clock glyph beside the amber chip; the chip "Next: Why do collision energy and orientation control reaction rate?". No oxide inset, no particles drawn (m3-v13 decides its own first particle view).
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the standard ladder filling beside the four half-cell plates, scenes 1 and 2 (about 58 s); (B) table stage, scene 3 (about 35 s): the ladder redrawn as a full-width data-sheet table; (C) one pair pulled out, scene 4 (about 23 s); (D) calculation board, scene 5 (about 26 s): the zinc and copper half-cells beside the working; (E) the partner slider, scene 6 (about 20 s); (F) the nail in copper sulfate, scene 7 (about 30 s); (G) silver in copper sulfate, scene 8 (about 20 s); (H) the acid beakers, scene 9 (about 29 s); (I) the inert electrode, scene 10 (about 28 s); (J) full-width working for copper in silver nitrate, scenes 11 and 12 (about 41 s); (K) zinc against aluminium, scene 13 (about 25 s); question and feedback cards; the handoff; the notes board. The earlier revision kept the ladder as the main picture through scenes 1 to 5 (about 142 s); stages B and D are the new cuts.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded outlines of real things.** The acid beaker outline in scene 10 is the painted beaker; the platinum strip stays a simple labelled bar, as in an exam diagram.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -87,6 +98,8 @@ Visual: on "Copper minus zinc" a gap bracket between Cu and Zn on the E° ladder
 
 Visual: the class ladder and strip clear; the E° ladder widens and adds tiles: "Ag⁺ + e⁻ ⇌ Ag +0.80", "Pb²⁺/Pb −0.13", "Sn²⁺/Sn −0.14", "Al³⁺/Al −1.68", "K⁺ + e⁻ ⇌ K −2.94". On "written as a reduction" one tile enlarges: "Cu²⁺ + 2e⁻ ⇌ Cu(s)" with "e⁻ on the left" (grey tag "the ⇌ means it can run either way"). On "more positive" a violet arrow up the ladder "more readily reduced"; on "silver ions" the Ag tile glows violet. On "more negative" a teal arrow down "more readily oxidised"; on "sheet" the K tile glows teal. Hand tags: violet "gains e⁻ most easily" at Ag, teal "loses e⁻ most easily" at K; a pen ring around "e⁻ on the left".
 
+Upgrade (Revision 3): Board change to the table stage, solid from the first frame: the half-cell plates and the class ladder leave, and the ladder is redrawn as a full-width table card titled "standard reduction potentials" (rows 34 px or more, most positive at the top), with the new rows writing on their cues. A navy hand tag "more positive: more easily reduced" writes down its right edge with a pen arrow.
+
 ### 4. which way a pair runs
 > When two half-cells are joined, they can't both be reduced. The one with the more positive E nought is reduced, at the cathode. The other runs backwards, as an oxidation, at the anode. The cell potential is the difference between them. E nought cell equals E nought of the cathode minus E nought of the **anode**.
 
@@ -96,6 +109,8 @@ Visual: the Cu and Zn tiles pull out to the right side of the ladder. On "more p
 > For zinc and copper, copper is more positive, so copper ions are reduced, and zinc is oxidised. E nought cell is plus zero point three four, subtract negative zero point seven six, which is plus one point one oh **volts**. Notice you use both values straight from the table. Don't flip the anode's sign as well, because the subtraction already does **that**.
 
 Visual: givens group: "E°(Cu²⁺/Cu) = +0.34 V", "E°(Zn²⁺/Zn) = −0.76 V". Stage by stage under the equation strip: "cathode: Cu (more positive); anode: Zn"; "E°cell = (+0.34) − (−0.76)"; on "volts" "E°cell = +1.10 V" framed in a dark-ink box with a green tick, with the gap bracket on the ladder (ink hand tag "subtracting a negative adds"). On "that" a chip "flip −0.76 to +0.76, then subtract: −0.42 V" fades in and is crossed in red (red hand tag "values straight from the table").
+
+Upgrade (Revision 3): Board change to the calculation board, solid from the first frame: the table shrinks to a thumbnail at the top left, the painted zinc and copper half-cells (`y11c-halfcell-zn-v1.png`, `y11c-halfcell-cu-v1.png`, about 300 px tall each) stand at the left as the cell being worked, and the navy givens card and the staged working fill the right two thirds.
 
 ### 6. what a positive value means
 > A positive E nought cell means the reaction is spontaneous under standard conditions. Spontaneous means it happens by itself, without a continuous supply of energy. A negative value means the reaction as written won't happen by itself, though the reverse **will**.
@@ -122,6 +137,8 @@ Visual: (stage change: the acid beakers; about 29 s) m3-v07's acid beakers fill 
 
 Visual: (stage change: the inert-electrode inset at full height; about 26 s) a platinum strip glyph in an acid beaker outline with H₂ bubbling over it (coded); H⁺ dots touch the surface, take orange electrons and leave as H₂ bubbles; the platinum stays unchanged (tag "Pt: unchanged"; ink hand tag "carries e⁻, never reacts" with a pen arrow to the strip). Gloss chip "inert electrode: carries electrons without reacting". Grey tags "standard hydrogen half-cell: platinum" and "data sheet writes H⁺ + e⁻ ⇌ ½H₂: same E°". On "iron three plus and iron two plus" a tile "Fe³⁺ + e⁻ ⇌ Fe²⁺ +0.77" adds to the ladder; on "graphite" a small platinum glyph and a graphite rod glyph appear beside it (grey tag "ion-to-ion half-cells: Pt or graphite").
 
+Upgrade (Revision 3): The beaker is the painted empty beaker (`m6-beaker-v1.png`, about 420 px) with a coded colourless fill; the platinum strip is a plain coded bar labelled "Pt (inert)" at 30 px. No beaker outline is drawn in code.
+
 ### 11. prediction: copper in silver nitrate (countdown, 3 seconds)
 > Quick prediction. Remember copper wire in silver nitrate? Work out E nought cell. Is it **spontaneous**?
 
@@ -142,27 +159,35 @@ Visual: (stage change: the zinc and aluminium beakers; about 26 s) `m6-zinc-acid
 
 Visual: board clears (the ladder hides). `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A strip of zinc is placed in 1 mol L⁻¹ tin(II) chloride solution. A strip of tin is placed in 1 mol L⁻¹ zinc chloride solution. Both are at 25 °C. Data: E°(Zn²⁺/Zn) = −0.76 V; E°(Sn²⁺/Sn) = −0.14 V. (a) Using E°cell, predict which combination reacts. (b) Write the net ionic equation for the reaction. (c) State the value of E°cell for this reaction. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 3): From the first frame the card's right side carries two painted beakers of colourless solution (`y11c-beaker-colourless-solution-v1.png` twice, about 240 px each), tagged with the card's own labels "SnCl₂(aq)" and "ZnCl₂(aq)". Card text 34 to 38 px. The ladder is hidden.
+
 ### 15. feedback 1 (brief)
 > Zinc in the tin solution reacts. Tin two plus ions are reduced, and zinc is oxidised. E nought cell is minus zero point one four, subtract negative zero point seven six, which is plus zero point six two volts, so it's spontaneous. Zinc plus tin two plus gives zinc two plus plus tin. Adding the values to get minus zero point nine oh is the **slip**. It's always cathode minus **anode**.
 
 Visual: card shrinks to the top. Stages: "cathode: Sn²⁺ (more positive); anode: Zn"; "E°cell = (−0.14) − (−0.76) = +0.62 V" framed in a dark-ink box with a green tick; "tin in ZnCl₂: −0.62 V, no reaction" (small, grey); line "Zn(s) + Sn²⁺(aq) → Zn²⁺(aq) + Sn(s)". On "slip" a chip "(−0.76) + (−0.14) = −0.90 V" fades in; on "anode" it is crossed in red (red hand tag "subtract, never add"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "E°(Zn²⁺/Zn) = −0.76 V | E°(Sn²⁺/Sn) = −0.14 V | 25 °C, 1 mol L⁻¹".
 
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. A galvanic cell is made from a magnesium half-cell and a silver half-cell. Write the overall equation, and calculate the standard cell potential. Pause here to answer.
 
 Visual: `QuestionCard`: "A galvanic cell is constructed from a Mg(s)/Mg²⁺(aq) half-cell and a Ag(s)/Ag⁺(aq) half-cell under standard conditions. Data: E°(Mg²⁺/Mg) = −2.36 V; E°(Ag⁺/Ag) = +0.80 V. (a) Write the balanced overall equation for the cell reaction. (b) Calculate E°cell. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted magnesium half-cell (`y11c-halfcell-mg-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing.
+
 ### 17. feedback 2 (brief)
 > Magnesium is oxidised, and silver ions are reduced. To balance the electrons, double the silver half-equation, so magnesium plus two silver ions gives magnesium two plus plus two silver. E nought cell is plus zero point eight oh, subtract negative two point three six, which is plus three point one six volts. Doubling silver's value first gives three point nine six, and that's the **trap**.
 
 Visual: card shrinks. "Mg → Mg²⁺ + 2e⁻" (teal), "Ag⁺ + e⁻ → Ag" (violet) "× 2"; line "Mg(s) + 2Ag⁺(aq) → Mg²⁺(aq) + 2Ag(s)"; "E°cell = (+0.80) − (−2.36) = +3.16 V" framed in a dark-ink box with a green tick. On "trap" a chip "2(+0.80) − (−2.36) = +3.96 V" fades in and is crossed in red (red hand tag "never double E°"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "E°(Mg²⁺/Mg) = −2.36 V | E°(Ag⁺/Ag) = +0.80 V | standard conditions".
 
 ### 18. conclusion and handoff
 > So standard reduction potentials tell you which way the electrons move, and a positive E nought cell says the reaction is spontaneous. But spontaneous doesn't mean fast. Iron rusting is spontaneous, and it takes months. Aluminium in acid has the bigger E nought cell, yet it started slowly, because the acid particles couldn't reach the metal atoms. A reaction can only happen when particles meet. Why do collision energy and orientation control reaction **rate**?
 
 Visual: the E° ladder shrinks to the left third (K, Mg, Al, Zn, Fe, H₂, Cu, Ag tiles). On "which way the electrons move" an orange arrow down the ladder. On "Iron rusting" a grey tag "rusting: spontaneous, slow" with the coded clock glyph. On "Aluminium in acid" `m6-zinc-acid-v1.png` and `y11c-aluminium-acid-v1.png` return side by side, rims level, tags "Zn: E°cell = +0.76 V ✓ spontaneous" and "Al: E°cell = +1.68 V ✓ spontaneous"; the Al and Zn tiles on the ladder ring teal; the crossed chip "bigger E°cell = faster" sits under the aluminium beaker. On "particles meet" the amber chip "how fast? particles must meet" writes centred under both beakers, the clock glyph beside it; the rusting tag fades. On "rate" the chip "Next: Why do collision energy and orientation control reaction rate?" writes. Hold about 2 seconds. This is the final frame (m3-v13 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -172,9 +197,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. E°cell > 0: spontaneous under standard conditions.
 5. In dilute HCl, metals with negative E° react. E° says whether, not how fast.
 
-Memory aid (framed card, on the notes screen): *Cathode minus anode, straight from the table: positive means it goes.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Cathode minus anode, straight from the table: positive means it goes.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -225,6 +248,8 @@ Checked by script (5 November); Codex to re-check every value against the curren
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,193 characters**, 19 scenes (Revision 1: 6,096). At 13.3 characters per second the speech is about 466 s; add about 7 s of settling (the ladder and plates in 1 and 3, the slider in 6, the nail cross-fade in 7, the acid beakers in 9, the inset in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 58 s in all): **about 552 s** (Revision 1: about 542 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,193 characters). The notes scene is 45 s in all, so the estimate is about 539 s (it was about 552 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v12` (route chem-y11-m3-v12; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v12`.
@@ -234,6 +259,8 @@ In order (19 scene headings, all `### N.`): standard-ladder, same-gaps, reading-
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-copper-silver (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions: the opening frame into scene 1 by clearing the Next chip and filling the slots; 1 to 2 camera continue; 2 to 3 camera continue (the class ladder clears, the E° ladder widens); 3 to 13 camera continue with the ladder fixed at the left and the right two thirds clearing between examples; attempts and feedback card shrink to the top (the ladder hides); 17 to 18 board clear (the ladder returns small); 18 to 19 fade to the notes board, and 19 cross-fades back to 18's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v12-learning-review.md`, `checks/c-y11-m3-v12-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all. Transitions 2 to 3 and 4 to 5 are now board changes (table stage, calculation board).
 
 ## Assets
 
@@ -248,6 +275,8 @@ Need (new plate, Codex, Revision 2):
 1. `y11c-cuso4-beaker-silver-v1.png`: scene 8 (the "no" prediction gets its own unchanged beaker). Fallback: `c11-cuso4-beaker-dissolved-v1.png` with the grey tag "silver wire: no change" (no coded wire drawn into the plate).
 
 Coded: E° ladder and tiles, gap brackets, conditions card, calculation strips, chips, inert-electrode inset, platinum glyph, clock glyph, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-halfcell-zn-v1.png` and `y11c-halfcell-cu-v1.png` (scene 5), `m6-beaker-v1.png` (scene 10), `y11c-beaker-colourless-solution-v1.png` (attempt 1 card), `y11c-halfcell-mg-v1.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v12)
 
@@ -269,6 +298,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals `chem-y11-m3-v11.md`'s "Final frame", and send this design's "Final frame" text unchanged to the m3-v13 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -325,3 +356,24 @@ Visual upgrade (teaching logic unchanged; this design was on the audit's no-fram
 New plate request: `y11c-cuso4-beaker-silver-v1.png` (edit of the delivered nail plate), with a written fallback.
 
 Counts: 6,193 characters (Revision 1: 6,096); about 542 s to about 552 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Cuts: scene 3 (table stage) and scene 5 (calculation board with the painted half-cells) are new stages. Before, the ladder was the main picture for about 142 s.
+- Scene 10: the coded beaker outline is the painted beaker.
+- Question cards: attempt 1 gains two labelled beakers and attempt 2 the magnesium half-cell; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,193 characters, unchanged; about 539 s (it was about 552 s).
+
+Calls for root: none.

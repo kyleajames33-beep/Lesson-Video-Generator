@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V02: Synthesis and decomposition. How can we predict and balance synthesis and decomposition products? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,627 characters, 16 scenes, about 508 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -76,6 +76,17 @@ Handoff: chem-y11-m3-v03, solubility rules and precipitation.
 - **Opening frame:** m3-v01's final frame exactly (Decisions; reconciled to m3-v01 Revision 1, 5 November).
 - **Final frame (m3-v03 opens on it):** left, two painted reagent bottles (`p03-dropper-bottle-v1.png` twice) with coded labels "silver nitrate solution" and "sodium chloride solution", each with a small "clear" tag; centre, `m5x-no-ppt-clear-v1.png` beside `m5x-ppt-agcl-white-v1.png` (same scale) joined by a pen arrow "mix"; under them the strip "AgNO₃(aq) + NaCl(aq) → ?"; the pattern strips "A + B → AB" (ticked) and "AB → A + B" (ticked) small at the top right, with a third strip "AB + CD → ?" (amber); the chip "Next: How do solubility rules predict a precipitation reaction?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) two reactions counted, scene 1 (about 26 s); (B) the two pattern strips, scene 2 (about 34 s); (C) sodium and chlorine as samples, with the charge builder, scene 3 (about 31 s); (D) the balancing line, scene 4 (about 35 s); (E) iron(III) chloride and the coefficient stepper, scenes 5 and 6 (about 42 s); (F) the metal carbonate family, scene 7 (about 35 s); (G) water split, scene 8 (about 31 s); (H) hydrogen peroxide and the glowing splint, scene 9 (about 42 s); (I) the method card beside three thumbnails, scene 10 (about 34 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 42 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The chlorine in scene 3 is the painted chlorine jar, and the padlock glyph on locked subscripts (scenes 4 and 8) is a hand tag.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -95,10 +106,14 @@ Visual: stage change: the two counters collapse into the pattern strips at full 
 
 Visual: stage change: `y11c-sodium-cut-fresh-v1.png` and `y11c-gas-jar-v1.png` with a coded pale yellow-green fill (tag "chlorine gas, Cl₂") large at the left; grey tag "teacher demonstration in a fume cupboard, or footage". At the right, the charge builder: an amber tile "Na⁺" and a violet tile "Cl⁻" click together; tally "(+1) + (−1) = 0" (52 px; amber hand tag "charges cancel"). On "product is sodium chloride" the formula "NaCl" writes, framed, and `c1-salt-jar-crystals-v1.png` appears small beside it (tag "sodium chloride"); grey tag "charges: for ionic products like these". On "The charges decide it" the Cl₂ in the reactant strip dims with a tag "doesn't set the product's formula".
 
+Upgrade (Revision 3): The chlorine is the painted jar of chlorine gas (`y11c-gas-jar-chlorine-v1.png`, about 380 px tall), not a clear jar with a coded fill.
+
 ### 4. then balance it
 > Now write the equation and count. Chlorine is diatomic, which means it comes as molecules of two atoms, so there are two chlorine atoms on the left and only one on the right. You can't change N a C l, so put a two in front of **it**. Now there are two sodium atoms on the right, so put a two in front of sodium as well. Two sodium and two chlorine on each **side**. That's the rule from the balancing video: change the big number in front, never the small number inside.
 
 Visual: stage change: the balancing line at full width (48 px): "Na(s) + Cl₂(g) → NaCl(s)" with atom tiles under each formula (grey Na, green Cl) and the tally "left: 1 Na, 2 Cl | right: 1 Na, 1 Cl" (red mismatch on Cl; red pen ring). Gloss chip "diatomic: an element found as molecules of two atoms". The padlock glyph on NaCl's subscripts (from m2-v01; grey hand tag "locked"). On "in front of it" a teal "2" drops into the slot before NaCl; a second NaCl tile set appears; tally updates, Na now mismatched. On "on each side" a teal "2" drops before Na; tally "2 Na, 2 Cl | 2 Na, 2 Cl" turns green: "2Na(s) + Cl₂(g) → 2NaCl(s)", framed in a dark-ink box with a green tick.
+
+Upgrade (Revision 3): No padlock is drawn: locked subscripts take a slate pen ring and an ink hand tag "locked". The same ring and tag are used in scene 8.
 
 ### 5. prediction (countdown, 3 seconds)
 > Quick prediction. Iron reacts with chlorine to make iron three chloride. Is the formula F e C l two, copying the two from chlorine, or something **else**?
@@ -130,32 +145,42 @@ Visual: stage change: `y11c-h2o2-tube-splint-glowing-v1.png` large at the left (
 
 Visual: a method card at full width writes line by line (40 px): "1. Pattern: count products (many → one, or one → many)." "2. Formula: charges (ionic synthesis products) or family (decomposition)." "3. Balance: coefficients only, check every atom." with a grey tag "charges: for ionic products like these" and the two gas-test chips under it. On "coefficients fix the count" the memory line writes large as a framed card in the handwriting style (dark-ink frame; amber "Charges", teal "Coefficients"): "Charges fix the formula. Coefficients fix the count."
 
+Upgrade (Revision 3): The method card is not text alone: three thumbnails (about 200 px each) stand down its left side, one beside each line group: the cut sodium, the copper carbonate crucible and the peroxide tube with its splint.
+
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Lithium reacts with nitrogen gas to form a single product. Predict the product's formula, and write the balanced equation. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Lithium metal reacts with nitrogen gas to form a single ionic product. (a) Predict the formula of the product. (b) Write a balanced equation for the reaction, including states. (3 marks)" Small givens strip: "Li is in Group 1; N is in Group 15." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the method card hides).
+
+Upgrade (Revision 3): From the first frame the card's right side carries the painted jar of metal under oil beside a clear gas jar (`y11c-alkali-oil-jar-v1.png`, `y11c-gas-jar-v1.png`, about 240 px tall each), untagged. Card text 38 px; the card's own data line "Li is in Group 1; N is in Group 15" stays. The method card is hidden.
 
 ### 12. feedback 1 (brief)
 > Lithium is plus one, and nitrogen forms minus three ions, so it takes three lithiums: L i three N, lithium nitride. Nitrogen comes in pairs, so two lithium nitrides, then six lithium atoms. Six L i plus N two gives two L i three N. If you wrote L i N two, you copied the subscript from the nitrogen **molecule**.
 
 Visual: card shrinks to the top. Charge builder: three "Li⁺" with one "N³⁻", tally "3(+1) + (−3) = 0", "Li₃N". Line "6Li(s) + N₂(g) → 2Li₃N(s)" with tally "6 Li, 2 N | 6 Li, 2 N" green, framed in a dark-ink box with a green tick. On "molecule" a chip "Li + N₂ → LiN₂" fades in and is crossed in red (red hand tag "charges set the formula"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Li: Group 1 | N: Group 15 | one ionic product".
+
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Zinc carbonate is heated strongly. Write a balanced equation with states, and describe a test that identifies the gas. Pause here to answer.
 
 Visual: `QuestionCard`: "A sample of zinc carbonate, ZnCO₃, is heated strongly in a test tube and a gas is given off. (a) Write a balanced equation for the decomposition, including states. (b) Describe a chemical test that would identify the gas and the expected result. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." The family card stays hidden.
+
+Upgrade (Revision 3): From the first frame the card's right side carries the painted test tube in its holder (`m5x-test-tube-holder-v1.png`, about 280 px tall), untagged. Card text 38 px. Nothing answer-bearing; the family card stays hidden.
 
 ### 14. feedback 2 (brief)
 > It's a metal carbonate like copper's, so it gives the metal oxide and carbon dioxide. Z n C O three solid gives Z n O solid plus C O two gas, already balanced. Bubble the gas through limewater, and it turns milky. Breaking it into zinc, carbon and oxygen elements is wrong, because a carbonate decomposes into an oxide and carbon **dioxide**.
 
 Visual: card shrinks. Family card returns with "Zn" in the slot; line "ZnCO₃(s) → ZnO(s) + CO₂(g)" with tally "1 Zn, 1 C, 3 O" both sides, green, framed in a dark-ink box with a green tick. `m6-limewater-milky-v1.png` small with the chip "CO₂: limewater turns milky". On "an oxide and carbon dioxide" a chip "ZnCO₃ → Zn + C + O₃" fades in and is crossed in red (red hand tag "carbonate → oxide + CO₂"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "ZnCO₃ heated strongly | a gas is given off".
+
 ### 15. conclusion and handoff
 > So, synthesis and decomposition are predictable because the products come from what the reactants are made of. Charges set the formula, families tell you how a compound breaks, and coefficients make the atoms match. But some reactions start with two dissolved compounds. Mix two clear solutions, silver nitrate and sodium chloride, and a white solid appears. Which pairs of solutions do this, and how could you know before you **mix**? How do solubility rules predict a precipitation reaction?
 
 Visual: the pattern strips grow back to the centre, both ticked, with Fe and Cu equations ghosted beneath; on "two dissolved compounds" a third strip "AB + CD → ?" writes in amber. On "silver nitrate and sodium chloride" the final frame builds: two `p03-dropper-bottle-v1.png` with labels "silver nitrate solution" and "sodium chloride solution" (tags "clear"); `m5x-no-ppt-clear-v1.png` beside `m5x-ppt-agcl-white-v1.png` with a pen arrow "mix"; strip "AgNO₃(aq) + NaCl(aq) → ?". On "mix" the chip "Next: How do solubility rules predict a precipitation reaction?" writes. Hold about 2 seconds. This is the final frame (m3-v03 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -165,9 +190,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Products contain only the reactant's atoms.
 5. CO₂ turns limewater milky; O₂ relights a glowing splint.
 
-Memory aid (framed card, on the notes screen): *Charges fix the formula. Coefficients fix the count.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Charges fix the formula. Coefficients fix the count.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -217,6 +240,8 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,627 characters**, 16 scenes (Revision 1: 5,609). Revision 2 adds about 2 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 422 s; add about 4 s of settling (tiles and tallies in 4, 6), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 508 s** (Revision 1: about 505 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,627 characters). The notes scene is 45 s in all, so the estimate is about 495 s (it was about 508 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v02` (route chem-y11-m3-v02; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v02`.
@@ -226,6 +251,8 @@ In order (16 scene headings, all `### N.`): hook-count, two-patterns, synthesis-
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: m3-v01's final frame into scene 1 by camera continue (the model shrinks off; plates slide in); 1 to 2 camera continue (counters collapse into the strips); 2 to 3 to 4 camera continue; 4 to 5 board clear; 5 to 6 camera continue; 6 to 7 board clear (strips stay); 7 to 8 to 9 camera continue (the family card stays); 9 to 10 camera continue (chips gather under the method card); attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v02-learning-review.md`, `checks/c-y11-m3-v02-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -244,6 +271,8 @@ Need (new plates, Codex):
 1. `y11c-h2o2-tube-splint-glowing-v1.png` and 2. `y11c-h2o2-tube-splint-relit-v1.png`: scene 9. Essential (the oxygen test is the observation that identifies the product; a coded splint would be clip art). Edits of `m6-splint-pop-v1.png`.
 
 Coded: pattern counters and strips, charge tiles and tallies, atom tiles, coefficient slots and padlock glyph, common-multiple ladder, family card, gas-test chips, gas wisp, lightning glyph, method card, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-gas-jar-chlorine-v1.png` (scene 3, replacing a coded fill), `y11c-alkali-oil-jar-v1.png` and `y11c-gas-jar-v1.png` (attempt 1 card), `m5x-test-tube-holder-v1.png` (attempt 2 card). Removed: the padlock glyph. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v02)
 
@@ -264,6 +293,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m3-v01's final frame (Revision 1), and send the final frame to the m3-v03 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -316,3 +347,23 @@ Visual upgrade (scene-level visual changes; teaching logic unchanged):
 - No new plate requests.
 
 Counts: 5,627 characters (Revision 1: 5,609); about 505 to about 508 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 3: the chlorine jar is the painted plate. Scenes 4 and 8: the padlock glyph becomes a pen ring and hand tag. Scene 10: the method card gains three thumbnails.
+- Question cards: attempt 1 gains the oil jar and a gas jar; attempt 2 gains a test tube in its holder; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,627 characters, unchanged; about 495 s (it was about 508 s).
+
+Calls for root: the jar of metal under oil stands for lithium on the attempt 1 card.

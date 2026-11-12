@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V09: Redox and oxidation numbers. How do electron transfer and oxidation number identify redox? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,594 characters, 18 scenes, about 507 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,16 @@ Handoff: chem-y11-m3-v10, combining half-equations.
 
 - **Opening frame (equals m3-v08's final frame):** centre, "Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)" large; a curved amber arrow from "Zn(s)" to "Cu²⁺(aq)" labelled "2e⁻"; tags "loses 2e⁻" under Zn and "gains 2e⁻" under Cu²⁺; two grey chips "name?" above each side; the series strip small and dimmed at the far left; the chip "Next: How do electron transfer and oxidation number identify redox?".
 - **Final frame (m3-v10 opens on it):** top, small and dimmed, the zinc pair "Zn(s) → Zn²⁺(aq) + 2e⁻" (teal tag "oxidation") and "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet tag "reduction"); centre, large, "Al(s) → Al³⁺(aq) + 3e⁻" (teal tag "oxidation") above "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet tag "reduction"), with "3e⁻" and "2e⁻" each ringed amber and an amber "?" between the two lines; the small OIL RIG card at the top right; the chip "Next: How do half-equations combine into a balanced redox equation?".
+
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** each teaching scene is already its own stage in the Visual lines: (A) the anchor plates, scene 1 (about 25 s); (B) the ion lens for burning magnesium, scene 2 (about 25 s); (C) the zinc beaker and the OIL RIG card, scene 3 (about 29 s); (D) the electron counters, scene 4 (about 23 s); (E) the partner diagram, scene 5 (about 31 s); (F) the hydrogen chloride molecule, scene 6 (about 26 s); (G) the rule card, then the working, scenes 7 and 8 (about 42 s); (H) permanganate and the oxidation-number meter, scenes 9 and 10 (about 34 s); (I) the chlorine jar and the meter, scene 11 (about 29 s); (J) the precipitate that is not redox, scene 12 (about 25 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 42 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
 
 ## Script and shots
 
@@ -132,39 +142,45 @@ Visual: (stage change: the precipitate plate and grey badges; about 25 s) `m5x-p
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Magnesium ribbon reacts with dilute hydrochloric acid: Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g). (a) Assign oxidation numbers to each element on both sides of the equation. (b) Identify the species oxidised and the species reduced. (c) Name the oxidising agent and the reducing agent. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the rule card hides).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted tube of magnesium in acid (`m5x-strong-acid-mg-v1.png`, about 280 px tall), untagged. Card text 38 px. The rule card is hidden.
+
 ### 14. feedback 1 (brief)
 > Magnesium goes from zero to plus two, so it's oxidised, and it's the reducing agent. Hydrogen goes from plus one in the acid to zero in hydrogen gas, so it's reduced, and the hydrogen ions are the oxidising agent. Chlorine stays at minus one. Calling magnesium the oxidising agent, because it's oxidised, is the classic **swap**.
 
 Visual: card shrinks to the top. `m5x-strong-acid-mg-v1.png` small at the left (the fizzing ribbon). The equation with badges: Mg 0 → +2 (teal up), H +1 → 0 (violet down), Cl −1 → −1 (grey "="), with the meter pointers moving to match; the answer "Mg: oxidised, reducing agent. H⁺: reduced, oxidising agent. Cl⁻: unchanged." in a dark-ink box with a green tick. On "swap" a chip "Mg is the oxidising agent" fades in and is crossed in red (red hand tag "the oxidising agent is reduced"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g)".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Household bleach contains the hypochlorite ion, O C L minus. When bleach removes a stain, hypochlorite ions become chloride ions. Find chlorine's oxidation number in each, and decide whether hypochlorite acts as an oxidising agent. Pause here to answer.
 
 Visual: `QuestionCard`: "Household bleach contains the hypochlorite ion, OCl⁻. When bleach removes a coloured stain, OCl⁻(aq) is converted to Cl⁻(aq). (a) Determine the oxidation number of chlorine in OCl⁻ and in Cl⁻. (b) Explain whether OCl⁻ acts as an oxidising agent, even though no oxygen gas is involved. (3 marks)" Grey safety tag on the card: "never mix bleach with acids or ammonia". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted household cleaner bottle (`m6-household-cleaner-bottle-v1.png`, about 280 px tall), untagged. Card text 38 px; the safety tag on the card is terracotta at 30 px, not grey.
+
 ### 16. feedback 2 (brief)
 > In hypochlorite, oxygen is minus two and the ion is minus one, so chlorine is plus one. In chloride, it's minus one. Chlorine's number goes down, so it gains electrons and is reduced, which makes hypochlorite the oxidising agent, with no oxygen gas involved. Saying chlorine is minus one in both misses the **exception**. Bonded to oxygen, chlorine isn't minus **one**.
 
 Visual: card shrinks. Strip "O = −2; Cl + (−2) = −1; Cl = +1"; badges "+1" in OCl⁻ and "−1" in Cl⁻; the Cl pointer falls from +1 to −1 (readout "−2: gained 2 e⁻, reduced"). The answer "Cl: +1 → −1, reduced, so OCl⁻ is the oxidising agent" in a dark-ink box with a green tick. On "exception" a chip "Cl is −1 in both" fades in; on "one" it is crossed in red (red hand tag "rule order: O first"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "OCl⁻(aq) becomes Cl⁻(aq) | no oxygen gas involved".
 
 ### 17. conclusion and handoff
 > So oxidation is loss of electrons, reduction is gain, and oxidation numbers show which is which. Each half of a redox reaction can also be written on its own, with the electrons showing. Zinc gives zinc ions plus two electrons. Copper ions plus two electrons give copper. Now try aluminium with copper ions, from the salt demonstration. Each aluminium atom loses three electrons, but each copper ion takes only **two**. How do half-equations combine into a balanced redox **equation**?
 
 Visual: board clears. On "Zinc gives" the line "Zn(s) → Zn²⁺(aq) + 2e⁻" writes with a teal "oxidation" tag; on "Copper ions plus" "Cu²⁺(aq) + 2e⁻ → Cu(s)" with a violet "reduction" tag. On "aluminium with copper ions" the zinc pair shrinks and dims at the top; the aluminium pair writes large: "Al(s) → Al³⁺(aq) + 3e⁻" (teal "oxidation") over "Cu²⁺(aq) + 2e⁻ → Cu(s)" (violet "reduction"). On "two" "3e⁻" and "2e⁻" ring amber and an amber "?" appears between the lines. The OIL RIG card sits small at the top right. On "equation" the chip "Next: How do half-equations combine into a balanced redox equation?" writes. Hold about 2 seconds. This is the final frame (m3-v10 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Oxidation: loss of electrons. Reduction: gain of electrons.
 2. Redox: both happen together.
 3. Oxidising agent: takes electrons, is reduced. Reducing agent: gives electrons, is oxidised.
-4. Rules, in order: element 0; simple ion = charge; F −1; O −2; H +1; sum = 0 or the ion's charge.
+4. Rules, in order: element 0; simple ion = charge; F −1; O −2; H +1; sum = total charge.
 5. Oxidation number up: oxidised. Down: reduced. No change: not redox.
 
-Memory aid (framed card, on the notes screen): *OIL RIG: Oxidation Is Loss, Reduction Is Gain.*
-
-At the end the notes cross-fade back to scene 17's final frame.
+Memory aid (framed card beside the notes, hand lettering): *OIL RIG: Oxidation Is Loss, Reduction Is Gain.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 17's final frame.
 
 ## Teaching checks
 
@@ -217,6 +233,8 @@ Checked by an atom-and-charge counting script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,594 characters**, 18 scenes (Revision 1: 5,585). At 13.3 characters per second the speech is about 421 s; add about 7 s of settling (the plates in 1, the lens in 2, the counters in 4, the rule card in 7, the meter in 10 to 12), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 58 s in all): **about 507 s** (Revision 1: about 504 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,594 characters). The notes scene is 45 s in all, so the estimate is about 494 s (it was about 507 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v09` (route chem-y11-m3-v09; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v09`.
@@ -226,6 +244,8 @@ In order (18 scene headings, all `### N.`): hook-no-oxygen, magnesium-burning, d
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-permanganate (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions: the opening frame into scene 1 by clearing the Next chip; 1 to 2 camera continue (the magnesium plate moves to the centre); 2 to 3 to 4 to 5 camera continue (the zinc line returns); 5 to 6 board clear; 6 to 7 to 8 to 9 to 10 camera continue (the rule card shrinks to the right); 10 to 11 to 12 camera continue (equations replace each other); attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board, and 18 cross-fades back to 17's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v09-learning-review.md`, `checks/c-y11-m3-v09-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -239,6 +259,8 @@ Have (inspected 5 November on a paper-background contact sheet at about 250 px; 
 Need (new plates): none. Revision 2 uses the existing `y11c-rusty-nail-v1.png` for scene 1's rust.
 
 Coded: electron arrows, ion lens, surface lens, electron counters, OIL RIG card, partner diagram, agent tags, number badges, rule card, working strips, oxidation-number meter, molecule glyph, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used on question cards (confirmed by file listing, not re-inspected): `m5x-strong-acid-mg-v1.png` (attempt 1), `m6-household-cleaner-bottle-v1.png` (attempt 2). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v09)
 
@@ -254,6 +276,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals `chem-y11-m3-v08.md`'s "Final frame", and send this design's final frame to the m3-v10 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +329,22 @@ High-risk redesign (scene level; narration, numbers and teaching logic kept):
 New plate requests: none (existing `y11c-rusty-nail-v1.png`, `y11c-gas-jar-chlorine-v1.png`, `y11c-cuso4-beaker-zinc-v1.png` and `m5x-strong-acid-mg-v1.png` added, each inspected).
 
 Counts: 5,594 characters (Revision 1: 5,585); about 504 s to about 507 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Question cards: attempt 1 gains the tube of magnesium in acid and attempt 2 a household cleaner bottle; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,594 characters, unchanged; about 494 s (it was about 507 s).
+
+Calls for root: none.

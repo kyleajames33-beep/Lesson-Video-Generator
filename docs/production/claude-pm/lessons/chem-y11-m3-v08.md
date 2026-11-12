@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V08: Metal reactivity and electrons. Why do metal-reactivity trends follow electron removal? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 183 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,319 characters, 17 scenes, about 560 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -68,6 +68,17 @@ Handoff: chem-y11-m3-v09, electron transfer and oxidation numbers.
 - **Opening frame (equals m3-v07's final frame):** left, the series strip (K, Na, Ca, Mg, Al, Zn, Fe, Pb, H, Cu, Ag, Au; teal outline for tested metals, grey for reference-only, dashed H line) with an arrow "more reactive" pointing up; right, the mini periodic table outline with the same metals' cells shaded by rank (darkest for K), pen arrows "down a group" and "to the left"; under it the tag "every metal here formed positive ions: M → Mⁿ⁺ + electrons"; the amber chip "easier to remove electrons?"; the chip "Next: Why do metal-reactivity trends follow electron removal?".
 - **Final frame (m3-v09 opens on it):** centre, the line "Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)" in large type; a curved amber arrow from "Zn(s)" to "Cu²⁺(aq)" labelled "2e⁻"; under "Zn(s)" the tag "loses 2e⁻" and under "Cu²⁺(aq)" the tag "gains 2e⁻"; above the line two grey chips with question marks, "name?" over the zinc side and "name?" over the copper side; the series strip small and dimmed at the far left; the chip "Next: How do electron transfer and oxidation number identify redox?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the series strip and two plates, scene 1 (about 28 s); (B) the shell row down a group, scene 2 (about 42 s); (C) three period 3 samples and the period row, scene 3 (about 35 s); (D) the ionisation bars and their surprise, scene 4 (about 22 s); (E) the ionisation meter, scene 5 (about 33 s); (F) electronegativity on the series strip, scene 6 (about 37 s); (G) the chain line, scene 7 (about 37 s); (H) the periodic outline, scene 8 (about 28 s); (I) aluminium in acid and its oxide skin, scene 9 (about 34 s); (J) aluminium in copper sulfate with salt, scene 10 (about 32 s); (K) tendency against what you see, scene 11 (about 30 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 42 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded outlines of real things.** The can and window-frame outline glyphs in scene 9 are replaced by the painted aluminium sample and words. The oxide skin over the lattice is a particle model and stays coded.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -117,6 +128,8 @@ Visual: (stage change: the periodic outline large; about 26 s) the mini periodic
 
 Visual: board clears. `y11c-aluminium-acid-v1.png` (from m3-v07; one or two bubbles) at the right with the amber "?" tag "slow start". On "oxygen in the air" the oxide-skin inset opens on the foil surface: grey Al atoms, a thin grey skin grows over them (tag "aluminium oxide, a few millionths of a millimetre"); on "keeps water and acid away" blue and teal dots bounce off the skin. On "passivation" gloss chip "passivation: a thin oxide layer protects the metal". On "years" two small grey outline glyphs (a can, a window frame) fade in and out. Hand tags: grey "forms instantly in air" on the skin, amber "keeps reagents off" on the bouncing dots; a pen ring around the plate's one or two bubbles.
 
+Upgrade (Revision 3): No can or window frame is drawn. On "years" the painted aluminium sample (`y11c-sample-aluminium-v1.png`, about 240 px) stands beside the chip with a dark-ink line "drink cans and window frames last for years".
+
 ### 10. same metal, new surface
 > Here's a classic demonstration, shown as footage. Aluminium foil sits in blue copper sulfate solution, and almost nothing **happens**. Then some sodium chloride, ordinary salt, is stirred in. Chloride ions break up the oxide layer, and soon the foil fizzes, the mixture gets hot, and brown copper **forms**. Same metal, same copper ions. Breaking the protective layer let the aluminium react, so the slow start was never low **reactivity**.
 
@@ -132,27 +145,35 @@ Visual: a two-column card writes: left "underlying tendency: sets place in the s
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Calcium and magnesium are both in Group 2. Calcium reacts steadily with cold water; magnesium barely reacts. Data: first ionisation energy: Mg 738 kJ mol⁻¹, Ca 590 kJ mol⁻¹. Electronegativity: Mg 1.31, Ca 1.00. Explain why calcium is more reactive than magnesium, with reference to atomic radius, ionisation energy and electronegativity. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the chain line hides).
 
+Upgrade (Revision 3): From the first frame the card's right side carries the two painted troughs, calcium and magnesium in cold water (`y11c-trough-ca-v1.png`, `y11c-trough-mg-v1.png`, about 280 px wide each), tagged only "Ca" and "Mg". They show what the card states (steady bubbles; almost none). Card text 34 to 38 px.
+
 ### 13. feedback 1 (brief)
 > Calcium's outer electrons are in a fourth shell, so the atom is larger, and they're further from the nucleus with the same core charge. They're held less tightly, so calcium has the lower ionisation energy, and the lower electronegativity. It loses its two outer electrons more easily. Saying calcium has more electrons to lose is the **slip**. Each atom loses just **two**.
 
 Visual: card shrinks to the top. Mg and Ca shell diagrams side by side at true relative size, radius arrows (Ca longer), badges "+2" on both; the chain line writes in short form beside them with the data: "larger atom → weaker grip → IE 590 < 738, electronegativity 1.00 < 1.31 → loses 2e⁻ more easily". The conclusion line "Ca loses its 2 outer electrons more easily, so it is more reactive" sits in a dark-ink box with a green tick. On "slip" a chip "Ca has more electrons to lose" fades in; on "two" it is crossed in red (red hand tag "both lose 2"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "first ionisation energy: Mg 738, Ca 590 kJ mol⁻¹ | electronegativity: Mg 1.31, Ca 1.00 | both Group 2".
 
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A student finds that aluminium foil reacts more slowly with dilute acid than zinc does, and concludes that aluminium is less reactive than zinc. Evaluate this conclusion. Pause here to answer.
 
 Visual: `QuestionCard`: "A student adds equal masses of aluminium foil and zinc granules to separate test tubes of the same dilute hydrochloric acid. Zinc bubbles steadily at once; aluminium bubbles only slightly at first. The student concludes that aluminium is less reactive than zinc. Evaluate the student's conclusion. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted aluminium in acid and zinc in acid (`y11c-aluminium-acid-v1.png`, `m6-zinc-acid-v1.png`, about 260 px tall each), tagged only "Al" and "Zn". They show what the card states. Card text 38 px.
+
 ### 15. feedback 2 (brief)
 > The conclusion is wrong. Aluminium is above zinc in the measured activity series, so a clean aluminium surface reacts more readily. The foil was slow because its oxide layer kept the acid off at first. Once that layer breaks down, aluminium reacts vigorously. Ranking a metal by a slow start, without checking its surface, is the **trap**.
 
 Visual: card shrinks. The series strip with Al and Zn ringed (Al above Zn). The oxide-skin glyph over aluminium, then gaps open and bubbles start (tag "oxide layer, then fast"). The answer "invalid: Al is above Zn; the oxide layer slowed the start" sits in a dark-ink box with a green tick. On "trap" a chip "Al < Zn: it started slowly" fades in and is crossed in red (red hand tag "check the surface"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "zinc bubbles at once | aluminium foil bubbles only slightly at first | same acid".
 
 ### 16. conclusion and handoff
 > So reactivity trends follow how easily a metal's atoms lose their outer electrons. But those electrons don't just vanish. When zinc went into copper sulfate, each zinc atom lost two electrons, and each copper ion picked two up. One can't happen without the other. Chemists have names for those two halves, and a way to track electrons even when no ions are visible. How do electron transfer and oxidation number identify **redox**?
 
 Visual: board clears; the series strip small and dimmed at the far left. On "zinc went into copper sulfate" the line "Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s)" writes large; on "lost two electrons" a curved amber arrow "2e⁻" runs from "Zn(s)" to "Cu²⁺(aq)" with the tag "loses 2e⁻" under Zn; on "picked two up" the tag "gains 2e⁻" under Cu²⁺. On "names for those two halves" two grey chips "name?" appear over each side. On "redox" the chip "Next: How do electron transfer and oxidation number identify redox?" writes. Hold about 2 seconds. This is the final frame (m3-v09 opens on it).
 
-### 17. key notes (quiet, hold about 60 seconds)
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -162,9 +183,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Low electronegativity also shows a weak grip. The full series is measured.
 5. Passivation: an Al₂O₃ layer hides aluminium's reactivity.
 
-Memory aid (framed card, on the notes screen): *Weaker grip, easier loss, more reactive.*
-
-At the end the notes cross-fade back to scene 16's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Weaker grip, easier loss, more reactive.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 16's final frame.
 
 ## Teaching checks
 
@@ -214,6 +233,8 @@ Checked by script (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,319 characters**, 17 scenes (Revision 1: 6,160). At 13.3 characters per second the speech is about 475 s; add about 6 s of settling (the plates in 1 and 3, the meter in 5, the values in 6, the demonstration in 10), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold (about 58 s in all): **about 560 s** (Revision 1: about 548 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,319 characters). The notes scene is 45 s in all, so the estimate is about 547 s (it was about 560 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v08` (route chem-y11-m3-v08; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v08`.
@@ -223,6 +244,8 @@ In order (17 scene headings, all `### N.`): hook-electrons, down-a-group, across
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction-aluminium (`explain` ending in a 3 s hold), attempt-1, attempt-2 and key-notes (`hold`). Transitions: the opening frame into scene 1 by rewriting the amber chip; 1 to 2 board clear (series strip stays at the left); 2 to 3 to 4 to 5 camera continue (rows slide); 5 to 6 camera continue (bars dim, strip enlarges); 6 to 7 board clear; 7 to 8 camera continue; 8 to 9 board clear; 9 to 10 to 11 camera continue; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board, and 17 cross-fades back to 16's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v08-learning-review.md`, `checks/c-y11-m3-v08-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -239,6 +262,8 @@ Need (new plate, Codex, Revision 2):
 1. `y11c-gold-nugget-v1.png`: scene 1 (the unreactive end of the anchor). Fallback: the Au tile glow alone, with the potassium plate.
 
 Coded: chips, shell rows and period row, ionisation bars, stacked energy bars, electronegativity values, chain line, periodic outline brackets, ion-in-water inset, oxide-skin inset and chloride breaker, can and window-frame outline glyphs, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-sample-aluminium-v1.png` (scene 9), `y11c-trough-ca-v1.png` and `y11c-trough-mg-v1.png` (attempt 1 card), `y11c-aluminium-acid-v1.png` and `m6-zinc-acid-v1.png` (attempt 2 card). Removed: the can and window-frame glyphs. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M3 v08)
 
@@ -260,6 +285,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested; no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals `chem-y11-m3-v07.md`'s "Final frame", and send this design's final frame to the m3-v09 designer.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -313,3 +340,23 @@ Visual upgrade (teaching logic unchanged):
 New plate request: `y11c-gold-nugget-v1.png` (edit of `y11c-watch-glass-v1.png`). The brief 183 beaker pair is delivered at 1106 × 1422 (the zinc-set canvas); the asset brief now says so.
 
 Counts: 6,319 characters (Revision 1: 6,160); about 548 s to about 560 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 9: the can and window-frame glyphs are replaced by the painted aluminium sample and words.
+- Question cards: attempt 1 gains the calcium and magnesium troughs; attempt 2 gains aluminium and zinc in acid; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,319 characters, unchanged; about 547 s (it was about 560 s).
+
+Calls for root: none.

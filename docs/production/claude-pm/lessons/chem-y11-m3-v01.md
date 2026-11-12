@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V01: Indicators of chemical change. Which observations are evidence that new substances formed? (design)
 
-Status: Revision 2 (6 Nov 2026): brief 182 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 182 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 5,588 characters, 16 scenes, about 510 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -72,6 +72,17 @@ Handoff: chem-y11-m3-v02, synthesis and decomposition.
 - **Opening frame:** m2-v20's final frame exactly (Decisions).
 - **Final frame (`chem-y11-m3-v02` opens on it):** the board split in two halves by a thin slate divider. Left half: a coded atom-tile model of "2Mg + O₂ → 2MgO": two pale-grey Mg tiles and one red O–O pair on the left of an arrow, two Mg–O pairs on the right; under it the equation "2Mg(s) + O₂(g) → 2MgO(s)" and a small tally "Mg 2 | 2 ✓, O 2 | 2 ✓"; above it `p01-mg-ribbon-v1.png` (small) with label "magnesium burns in oxygen"; an amber chip under it "two substances → one". Right half: a coded atom-tile model of "CaCO₃ → CaO + CO₂": one Ca–C–O₃ tile group on the left of an arrow, a Ca–O pair and an O–C–O group on the right; under it "CaCO₃(s) → CaO(s) + CO₂(g)" and a tally "Ca 1 | 1 ✓, C 1 | 1 ✓, O 3 | 3 ✓"; above it `m5-g02b-open-crucible-v1.png` (small; white powder in an open crucible on a tripod over a Bunsen flame) with label "calcium carbonate heated"; an amber chip under it "one substance → two". Heading top left "Reactive chemistry"; the memory line small at the top right "A clue, not a proof: ask what's new."; the chip "Next: How can we predict and balance synthesis and decomposition products?".
 
+## Visual upgrade (Revision 3)
+
+The earlier visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) fizzing chips beside an opened bottle, scenes 1 and 2 (about 59 s); (B) two magnified circles, scene 3 (about 38 s); (C) the reaction slider and its atom counters, scene 4 (about 28 s); (D) the indicator stage, scenes 5 and 6 (about 60 s; scene 6 pushes in to the zinc in acid); (E) five indicators and their lookalikes, scene 7 (about 29 s); (F) the case builder, scene 8 (about 31 s); (G) the exam sentence beside its precipitate, scene 9 (about 19 s); (H) the short version, scene 14 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 60 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghost" or "soft" is drawn solid in dark ink (or its role colour) at full strength; an earlier row that "dims" stays solid at a smaller size. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "a later video", or the tag is dropped. Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip from its first frame, frames the answer in green with a tick and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all (the length brief 236 records).
+- **No coded pictures of real things.** The coded thermometer in scene 6 is the painted thermometer plate with a coded readout over it.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -106,6 +117,8 @@ Visual: board clears to the indicator stage: three large cards at full width (tw
 
 Visual: stage change: push-in to `m6-zinc-acid-v1.png`, large at the left, with a coded thermometer beside it rising "21 °C → 29 °C" (52 px; tag "illustrative"); card 4 "temperature change" at the right, with an energy ledger under it: "breaking bonds: energy in" (slate) and "making bonds: energy out" (teal), the "out" bar longer (amber hand tag "more out: it warms"). On "used up" card 5: the zinc pieces shrinking by coded masking, label "reactant used up", amber hand tag "turned into new substances". On "several at once" the three labels "gas", "warms", "used up" link to the zinc beaker with three amber pen lines; on "same" the three labels pulse together.
 
+Upgrade (Revision 3): The thermometer beside the zinc in acid is the painted plate `c8-thermometer-hot-v1.png` (about 420 px tall) with the coded readout "21 °C → 29 °C" (52 px) beside it, not a coded thermometer.
+
 ### 7. every clue has a lookalike
 > But here's the catch. Every one of these clues has a lookalike that isn't a chemical change. Sparkling water fizzes. Food colouring changes the colour of water. Salt crystals appear when salt water evaporates. A cold pack gets cold because a solid dissolves. And sugar disappears into water. None of these makes a new substance. So an indicator is a clue, not a proof. Ask what's **new**.
 
@@ -121,25 +134,35 @@ Visual: stage change: the chips plate and the bottle plate side by side at the l
 
 Visual: a sentence card at full width (44 px lines). On "Don't just write" the line "A precipitate formed." writes and is crossed in red (red hand tag "observation only"). On "Write" the line "A yellow precipitate formed, showing that a new substance, lead iodide (PbI₂), was produced." writes, framed in a dark-ink box with a green tick; on "changed" "yellow precipitate formed" underlines amber (amber hand tag "what you saw") and "lead iodide (PbI₂), was produced" underlines teal (teal hand tag "what changed"). The PbI₂ tube plate sits at the left.
 
+Upgrade (Revision 3): The sentence card is not text alone: the painted tube of yellow precipitate (`c13-pbi2-tube-precipitate-v1.png`, about 300 px tall) stands at its left from the first frame, as the thing the sentence describes.
+
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. Which observation is the best evidence that a new substance has formed? A, ice melts and the water level rises. B, a beaker gets colder when a white solid dissolves in water. C, steel wool glows in air and leaves a dark solid that weighs more than the steel wool did. D, a purple solid disappears when it's stirred into water. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Which observation is the best evidence that a new substance has formed? (A) Ice melts and the water level rises. (B) A beaker becomes colder when a white solid dissolves in water. (C) Steel wool glows when heated in air and leaves a dark solid with a greater mass than the original steel wool. (D) A purple solid disappears when it is stirred into water, forming a purple solution. (1 mark)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): From the first frame the card's right side carries a painted empty beaker (`m6-beaker-v1.png`, about 260 px), untagged. Card text 34 to 38 px so the four options fit. Nothing answer-bearing: the picture belongs to no single option.
 
 ### 11. feedback 1 (brief)
 > C. The steel wool glows, and leaves a dark solid that's heavier, because the iron has combined with oxygen from the air to make iron oxide, a new substance. B is the classic trap. A temperature change on its own doesn't show that anything new has **formed**.
 
 Visual: card shrinks to the top; option C ticks, framed in a dark-ink box with a green tick. Rows: "glows + new dark solid + mass gained (oxygen added)" and "iron + oxygen → iron oxide: new substance" (teal). On "formed" a chip "B: temperature change alone" fades in and is crossed in red (red hand tag "a clue, not a proof"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "four observations, A to D | which is the best evidence of a new substance?".
+
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. A piece of magnesium ribbon is added to dilute hydrochloric acid. Bubbles form, the test tube becomes warm, and the ribbon disappears. A student concludes that the magnesium just dissolved, like sugar in water. Evaluate the student's conclusion. Pause here to answer.
 
 Visual: `QuestionCard`: "A piece of magnesium ribbon is added to dilute hydrochloric acid. Bubbles form, the test tube becomes warm and the ribbon disappears. A student concludes: 'The magnesium just dissolved, like sugar in water.' Evaluate the student's conclusion. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): From the first frame the card's right side carries the painted tube of magnesium in acid (`m5x-strong-acid-mg-v1.png`, about 280 px tall), untagged. It shows only what the card states (bubbles, the ribbon). Card text 38 px.
+
 ### 13. feedback 2 (brief)
 > The conclusion is wrong. Three indicators appear together, a gas, a temperature rise and a reactant used up. The gas is hydrogen, which your teacher can test with a lit splint for a squeaky pop, and evaporating the solution leaves white magnesium chloride, not shiny magnesium. Sugar comes back unchanged, so calling this dissolving is the classic **slip**.
 
 Visual: card shrinks. Rows: "three indicators: gas, warming, magnesium used up"; "new substances: hydrogen gas (squeaky pop: teacher test) and magnesium chloride (white solid on evaporation)" (teal); `m6-splint-pop-v1.png` small with tag "teacher demonstration behind a screen"; "The conclusion is wrong" framed in a dark-ink box with a green tick. On "slip" a chip "it dissolved, like sugar" fades in and is crossed in red (red hand tag "sugar comes back unchanged"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "bubbles form | the tube warms | the ribbon disappears | claim: it just dissolved".
 
 ### 14. the short version
 > So here's the short version. Indicators are clues. Strong evidence is several clues together, plus a new substance you can name that wasn't there before. And underneath every chemical change, the atoms are only rearranged, so every atom you start with is still there at the **end**.
@@ -151,7 +174,7 @@ Visual: the five indicator cards return small in a row with their lookalikes gre
 
 Visual: the board clears to the final frame's layout. On "join substances together" the left half builds: `p01-mg-ribbon-v1.png` small with label "magnesium burns in oxygen"; the atom-tile model "2Mg + O₂ → 2MgO" assembles (two Mg tiles and an O–O pair regroup into two Mg–O pairs); the equation strip "2Mg(s) + O₂(g) → 2MgO(s)"; tally "Mg 2 | 2 ✓, O 2 | 2 ✓"; amber chip "two substances → one". On "break one substance apart" the right half builds: `m5-g02b-open-crucible-v1.png` small, label "calcium carbonate heated"; the model "CaCO₃ → CaO + CO₂" (the Ca–C–O₃ group splits into a Ca–O pair and an O–C–O group); the equation strip "CaCO₃(s) → CaO(s) + CO₂(g)"; tally "Ca 1 | 1 ✓, C 1 | 1 ✓, O 3 | 3 ✓"; amber chip "one substance → two". The memory line small at the top right. On "products" the chip "Next: How can we predict and balance synthesis and decomposition products?" writes. Hold about 2 seconds. This is the final frame (m3-v02 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
@@ -161,9 +184,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Strong evidence: several indicators plus a new product named.
 5. Atoms are rearranged, never made or destroyed.
 
-Memory aid (framed card, on the notes screen): *A clue, not a proof: ask what's new.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *A clue, not a proof: ask what's new.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -211,6 +232,8 @@ Checked by count (5 November); Codex to re-check.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,588 characters**, 16 scenes (Revision 1: 5,569). Revision 2 adds about 3 s of settling for its simulation and stage changes to the estimate below. At 13.3 characters per second the speech is about 419 s; add about 8 s of settling (the tile regrouping in 3, the tally in 4, the before-and-after plates in 5 and 6, the lookalikes in 7), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 510 s** (Revision 1: about 506 s).
 
+Revision 3 (12 Nov 2026): narration unchanged (5,588 characters). The notes scene is 45 s in all, so the estimate is about 497 s (it was about 510 s).
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m3-v01` (route chem-y11-m3-v01; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m3-v01`.
@@ -220,6 +243,8 @@ In order (16 scene headings, all `### N.`): hook-prediction, there-before, atoms
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); scene 1 is `explain` with a 3 s countdown at its end. Transitions: m2-v20's final frame into scene 1 by camera continue; 1 to 2 camera continue; 2 to 3 camera continue (the magnifier circles open); 3 to 4 camera continue; 4 to 5 clear change; 5 to 6 camera continue; 6 to 7 camera continue (lookalikes slide in beside the cards); 7 to 8 clear change (back to the pair); 8 to 9 clear change; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: hook countdown (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m3-v01-learning-review.md`, `checks/c-y11-m3-v01-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -243,6 +268,8 @@ Need (new plates, Codex): none.
 
 Coded: bubbles, magnifier circles, molecules and atom tiles, tallies, indicator cards and cause tags, thermometers, shrinking-zinc mask, food-colouring drop, sugar grains, checklist, sentence card, chips, attempt cards, countdowns, key notes board.
 
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `c8-thermometer-hot-v1.png` (scene 6), `c13-pbi2-tube-precipitate-v1.png` (scene 9), `m6-beaker-v1.png` (attempt 1 card), `m5x-strong-acid-mg-v1.png` (attempt 2 card). New plate requests: none.
+
 ## Codex asset brief (Year 11 Chemistry M3 v01)
 
 No new plates. Codex confirms on the dark board: (1) `g1-sugar-bowl-v1.png` shows plain white sugar; (2) `hscscience/chem-y11-m3/l2/lab-footage-cuco3.png` as the copper carbonate fallback (a line-drawn tube with an alpha channel; its drawn style may not match the painted plates, in which case the fallback becomes a coded green-to-black powder in a crucible outline); (3) the two c13 tubes and the two limewater plates overlay exactly for cross-fades.
@@ -257,6 +284,8 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm no person, hand or face is drawn or requested (sugar and food colouring move by code, no spoon or hand); no em dash (U+2014); Australian spelling.
 6. Confirm the narration character count by script, and that every quoted cue is in its scene's narration in spoken order.
 7. Confirm the opening frame equals m2-v20's final frame, and send the final frame to the m3-v02 designer exactly as written.
+
+Revision 3 (visuals only), also check: the narration lines are identical to the previous revision; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; the five key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -309,3 +338,23 @@ Visual upgrade (high-risk design: scene-level redesign of the long stretches; te
 - No new plate requests.
 
 Counts: 5,588 characters (Revision 1: 5,569); about 506 to about 510 s.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics and Biology. Visuals only: no narration line changed (checked by hash against the previous revision), so the brief 236 voicing stands.
+
+Findings: the latest error check was clean or its findings were already resolved (see `checks/chem-y11-voicing-readiness.md`); nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times and the standing rules (solid ink with no ghosts, no video numbers on screen, question cards, the notes scene).
+- Scene 6: the coded thermometer is the painted thermometer plate. Scene 9: the sentence card gains the precipitate tube beside it.
+- Question cards: attempt 1 gains a neutral empty beaker and attempt 2 the tube of magnesium in acid; both feedback scenes gain navy givens strips.
+- Key notes: rewritten as five one-line bullets with the framed memory card beside them; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 5,588 characters, unchanged; about 497 s (it was about 510 s).
+
+Calls for root: none.
