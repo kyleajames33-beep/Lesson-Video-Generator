@@ -42,6 +42,60 @@ Things to know:
 
 One body under a force law, in SI units: `uniform` (projectiles, a charge between plates), `central` (orbits), `magnetic` (a charge circling in a field), or `custom`. `stateAt(path, t)` gives position, velocity, acceleration and speed. Tests check it against the textbook range and height formulas, circular and elliptical orbits (energy and angular momentum conserved), r = mv/qB, and the parabola between plates.
 
+Added 14 November 2026:
+
+| Idea | What to use |
+| --- | --- |
+| A pendulum, a vertical circle, a ball on a string | `constraint: {kind: 'string', cx, cy}` (its length is the distance from the fixed point to the start); `rigid: true` for a rod |
+| A string that goes slack | a string's run stops holding the body when its tension would fall below zero: `path.released` is the time, and the body is a projectile from then on |
+| A cart on a smooth hill or in a dip | `constraint: {kind: 'track', y: x => ...}` |
+| Tension, or the push from the track | `supportAt(path, t)` (per kilogram: multiply by the mass) |
+| Kinetic and potential energy on the way | `energyAt(path, t, zero)` (per kilogram, uniform field) |
+| An engine burn; raising an orbit | `burns: [{at, along}]` (m/s added along the motion) or `{at, dvx, dvy}` |
+
+- `FieldMotionView` draws the string and its fixed point, or the track, by itself.
+- A track holds the body on (a bead on a wire): it does not let the body leave over a crest. Read `supportAt`: where it goes negative a real cart would lift off.
+- On a string or track `stateAt` gives the true acceleration (field plus string or track), so the acceleration arrow points the right way.
+- A burn is instant. Put it at a step boundary you care about, or use enough `steps` that one step is short.
+
+### Turning effects on a beam (`beam.ts`, drawing in `mechanics-views.tsx`)
+
+| Idea | What to use |
+| --- | --- |
+| Torque of one force | `torque(r, force, angle)` (r F sin θ) |
+| A beam with several forces: does it balance? | `solveBeam({forces: [{id, at, force, direction?, angle?}], weight?, centre?})`: each torque, `clockwise`, `anticlockwise`, `net`, `balanced`, and the pivot's `support` force |
+| Where to put a weight, or how big it must be | `balancePoint(beam, force)`, `balanceForce(beam, at)` |
+| Letting go: which way it tips | `runBeam(beam, {duration, limit})`, `beamAngleAt` |
+| The picture | `BeamView` (arrows, distance brackets, optional turning arrows, `angle` to tilt it) |
+
+- Distances are from the pivot, positive to the right. Torques are positive when anticlockwise.
+- `BeamView` draws a plain beam on a triangle. A seesaw or crane plate goes over or beside it in the lesson.
+
+### Collisions on a track (`collisions.ts`, drawing in `mechanics-views.tsx`)
+
+| Idea | What to use |
+| --- | --- |
+| Velocities after a collision | `collide({m1, m2, u1, u2, restitution})` (1 elastic, 0 they stick): `v1`, `v2`, momentum and kinetic energy before and after, `impulse` |
+| The two bodies moving, meeting and leaving | `runCollision({..., x1, x2, size1, size2, duration})`, `collisionAt(run, t)`; `CollisionTrack` |
+| "The total is the same before and after" | `BeforeAfterBars` with rows for each momentum, the total and the kinetic energy |
+| A light particle hitting a heavy one (how much it hands over) | `elasticTransfer(incoming, target)`: `speedRatio`, `energyShare` |
+| Recoil, an explosion from rest | `pushApart(m1, m2, energy)` |
+
+- One dimension only, and one collision per run. Bodies are blocks; put plates over them in the lesson if the objects are real.
+
+### A branching chain (`chain.ts`, drawing in `mechanics-views.tsx`)
+
+| Idea | What to use |
+| --- | --- |
+| One event causing others, generation by generation | `runChain({seed, generations, start, released, chance})`: `events` per generation, `expected` (the average rule), `k` |
+| Dying away, steady, growing | choose `chance` so that `multiplication(released, chance)` is below, at or above 1 |
+| Control rods going in part-way | `chance` as a list, one value per generation |
+| The first few generations, event by event | `run.tree` (each event with its parent); `ChainTreeView` |
+| Totals per generation | `ChainBars` (with a tick for the average rule on each bar) |
+
+- Seeded, like `chance.ts`: choose the seed by looking, so the tree neither dies in two generations nor floods the frame.
+- It counts events only. It does not model where the particles go, how fast they are, or a moderator slowing them.
+
 ### Chance (`chance.ts`, drawing in `chance-views.tsx`)
 
 The same random experiment repeated many times, stored once, with the exact probabilities worked out beside it.
@@ -272,7 +326,7 @@ Formulas with no stored run: each is exact, so a slider can call it every frame.
 
 ### Demos
 
-`demos.tsx` is a separate Remotion entry (not in the registry) with one composition per addition above: `SimDemo-Population`, `SimDemo-Heating`, `SimDemo-EnergyProfile`, `SimDemo-Diprotic`, `SimDemo-Circuits`, and the physics pieces listed in `demos-physics.tsx` (`SimDemo-MagneticField` and those that follow). Open it with `npx remotion studio src/explainer/sims/demos.tsx`. For stills, `node scripts/explainer-sim-stills.mjs SimDemo-MagneticField:200` writes to `out/explainer/sims-demos/` and holds the stills lock.
+`demos.tsx` is a separate Remotion entry (not in the registry) with one composition per addition above: `SimDemo-Population`, `SimDemo-Heating`, `SimDemo-EnergyProfile`, `SimDemo-Diprotic`, `SimDemo-Circuits`, and the physics pieces in `demos-physics.tsx`: `SimDemo-MagneticField`, `SimDemo-Induction`, `SimDemo-AC`, `SimDemo-MotorBackEmf`, `SimDemo-BlackBody`, `SimDemo-SlitPatterns`, `SimDemo-Photoelectric`, `SimDemo-Relativity`, `SimDemo-Beam`, `SimDemo-StringTrackBurn`, `SimDemo-Collisions`, `SimDemo-Chain`. Open it with `npx remotion studio src/explainer/sims/demos.tsx`. For stills, `node scripts/explainer-sim-stills.mjs SimDemo-MagneticField:200` writes to `out/explainer/sims-demos/` and holds the stills lock.
 
 ### Drawing (`views.tsx`)
 
@@ -307,14 +361,18 @@ To see them all, grade the gallery: `npm run grade:explainer -- SimGallery --fra
 
 ## Wanted next
 
-Listed by how many unbuilt designs could use them (Year 11 Chemistry, Year 12 Physics, Year 11 Physics):
+Listed by how many unbuilt designs could use them:
 
-1. States of matter and heating curves (needs attraction between particles in the box).
-2. Momentum: two-body collisions on a track with before and after bars.
+1. States of matter (needs attraction between particles in the box).
+2. Capacitors and self-induction in the circuit engine (a current that rises over a short time; a coil that delays it). The alternating source, the transformer and the motor's back emf are built; these two are not.
 3. Ray diagrams for refraction and lenses (the numbers are already in `waves.ts`).
 4. Buffers with acid or base added.
-5. Capacitor charging and alternating current for the circuit engine (and back EMF for motors).
+5. Losses in a real transformer (eddy currents, hysteresis, flux leakage) and eddy-current braking.
+6. Field motion in three dimensions (a charge spiralling along a field line) and at speeds near c (a ring accelerator).
+7. A turning body with inertia driven by a changing torque (a motor coil that rocks or spins).
+8. Collisions in two dimensions, and several collisions in one run.
+9. A standing wave on a closed ring (de Broglie's orbit), and tunnelling through a barrier.
 
-Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram). Built on 11 November 2026: titration and circuits. Built on 13 November 2026: population, heating curve, energy profile, two-step titrations and the circuit additions. The heating curve covers the graph in item 1; particles with attraction are still wanted.
+Built on 10 November 2026: waves, and chance (dice, coins and weighted draws filling a histogram). Built on 11 November 2026: titration and circuits. Built on 13 November 2026: population, heating curve, energy profile, two-step titrations and the circuit additions. Built on 14 November 2026 (Year 12 Physics gaps): magnetic fields, flux and induction, alternating current with an ideal transformer and motor back emf, black-body curves, single-slit and grating patterns, a photoelectric bench, a special-relativity kit, a beam, strings, tracks and burns in field motion, collisions on a track (the old item 2) and a branching chain. The heating curve covers the graph in item 1; particles with attraction are still wanted.
 
 Maths lessons: the Maths studio kit (`../math/studio`) has its own dice histogram part. The Maths owner chooses between that part and `chance.ts` for each lesson, so one lesson never mixes the two.

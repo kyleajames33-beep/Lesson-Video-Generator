@@ -78,7 +78,7 @@ export const RotatingCoilView: React.FC<{
 			<line x1={cx} y1={cy} x2={cx + nx * half * 0.62} y2={cy + ny * half * 0.62} stroke={INK} strokeWidth={5} strokeLinecap="round" />
 			<polygon points={`${cx + nx * (half * 0.62 + 14)},${cy + ny * (half * 0.62 + 14)} ${cx + nx * half * 0.62 - ny * 11},${cy + ny * half * 0.62 + nx * 11} ${cx + nx * half * 0.62 + ny * 11},${cy + ny * half * 0.62 - nx * 11}`} fill={INK} />
 			<circle cx={cx} cy={cy} r={8} fill={INK} />
-			{normalLabel ? <text x={cx + nx * (half * 0.62 + 34)} y={cy + ny * (half * 0.62 + 34) + 11} textAnchor={nx > 0.3 ? 'start' : nx < -0.3 ? 'end' : 'middle'} style={text} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{normalLabel}</text> : null}
+			{normalLabel ? <text x={cx + nx * (half * 0.62 + 34)} y={cy + ny * (half * 0.62 + 34) + 11} textAnchor={nx > 0.3 ? 'start' : nx < -0.3 ? 'end' : 'middle'} style={text} fill={INK} stroke={CARD} strokeWidth={12} paintOrder="stroke">{normalLabel}</text> : null}
 			{fieldLabel ? <text x={14} y={30} style={text} fill={ft.ink} stroke={CARD} strokeWidth={7} paintOrder="stroke">{fieldLabel}</text> : null}
 		</svg>
 	);

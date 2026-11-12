@@ -928,3 +928,166 @@ test('relativity: the light clock obeys Pythagoras, so the moving clock ticks ga
 	const a = sr.lightClockAt(clock, 0.1 * T), b = sr.lightClockAt(clock, 0.2 * T);
 	rel(Math.hypot(b.x - a.x, b.y - a.y) / (0.1 * T), c, 1e-9, 'the pulse moves at c in this frame too');
 });
+
+// ------------------------------------------------- strings, tracks and engine burns
+test('field motion: a pendulum keeps its energy, has period 2 pi root(L/g) for small swings, and pulls hardest at the bottom', () => {
+	const L = 2, g = 9.8, a0 = 0.1;
+	const run = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: -g}, start: {x: L * Math.sin(a0), y: -L * Math.cos(a0), vx: 0, vy: 0}, duration: 6, steps: 3000, constraint: {kind: 'string', cx: 0, cy: 0}});
+	for (const t of [0.5, 1.7, 4.2, 6]) { const s = motion.stateAt(run, t); near(Math.hypot(s.x, s.y), L, 1e-9, 'stays on the string'); }
+	// It is back at its start after one period.
+	const T = 2 * Math.PI * Math.sqrt(L / g), back = motion.stateAt(run, T);
+	near(back.x, L * Math.sin(a0), 2e-3, 'period'); near(back.speed, 0, 5e-3);
+	const e0 = motion.energyAt(run, 0, -L).total, e1 = motion.energyAt(run, 3.3, -L).total;
+	rel(e1, e0, 1e-6, 'kinetic + potential stays fixed');
+	const bottom = motion.stateAt(run, T / 4);
+	rel(bottom.speed ** 2, 2 * g * L * (1 - Math.cos(a0)), 1e-3, 'speed at the bottom from the height lost');
+	rel(motion.supportAt(run, T / 4), g + bottom.speed ** 2 / L, 1e-3, 'tension per kilogram at the bottom: g + v^2 / L');
+	rel(motion.supportAt(run, 0), g * Math.cos(a0), 1e-6, 'and at the top of the swing: g cos(angle)');
+});
+
+test('field motion: a vertical circle is faster at the bottom, and a slow string goes slack', () => {
+	const L = 0.8, g = 9.8, top = 4;
+	// A rod (rigid): starts at the top moving sideways at 4 m/s.
+	const rod = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: -g}, start: {x: 0, y: L, vx: top, vy: 0}, duration: 1.2, steps: 2400, constraint: {kind: 'string', cx: 0, cy: 0, rigid: true}});
+	let low = 0; for (let i = 0; i <= rod.n; i++) if (rod.y[i] < rod.y[low]) low = i;
+	near(rod.y[low], -L, 1e-4, 'reaches the bottom');
+	rel(rod.vx[low] ** 2 + rod.vy[low] ** 2, top ** 2 + 4 * g * L, 1e-4, 'v_bottom^2 = v_top^2 + 4 g L');
+	assert.equal(rod.released, undefined);
+	// A string started at the bottom with too little speed to get over the top: it goes slack on the way up.
+	const slow = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: -g}, start: {x: 0, y: -L, vx: 5, vy: 0}, duration: 1.5, steps: 3000, constraint: {kind: 'string', cx: 0, cy: 0}});
+	assert.ok(slow.released !== undefined, 'needs root(5 g L) = 6.3 m/s at the bottom; 5 m/s is not enough');
+	const at = motion.stateAt(slow, slow.released);
+	assert.ok(at.y > 0, 'it goes slack above the centre');
+	near(motion.supportAt(slow, slow.released + 0.05), 0, 1e-9, 'no tension after that');
+	const later = motion.stateAt(slow, slow.released + 0.1);
+	near(later.ay, -g, 1e-9, 'and it falls as a projectile'); assert.ok(Math.hypot(later.x, later.y) < L + 1e-6, 'inside the circle');
+	const fast = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: -g}, start: {x: 0, y: -L, vx: 6.5, vy: 0}, duration: 1.5, steps: 3000, constraint: {kind: 'string', cx: 0, cy: 0}});
+	assert.equal(fast.released, undefined, '6.5 m/s at the bottom gets over the top');
+});
+
+test('field motion: a body on a smooth track trades height for speed and presses harder in a dip', () => {
+	const g = 9.8, hill = x => 0.5 * x * x;
+	const run = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: -g}, start: {x: -1.2, y: 0, vx: 0, vy: 0}, duration: 4, steps: 4000, constraint: {kind: 'track', y: hill}});
+	near(run.y[0], 0.72, 1e-12, 'starts on the track');
+	let low = 0; for (let i = 0; i <= run.n; i++) if (Math.abs(run.x[i]) < Math.abs(run.x[low])) low = i;
+	rel(run.vx[low] ** 2 + run.vy[low] ** 2, 2 * g * 0.72, 1e-3, 'speed at the bottom: v^2 = 2 g h');
+	rel(run.support[low], g + (2 * g * 0.72) * 1, 2e-3, 'push from the track at the bottom: g + v^2 x curvature');
+	for (let i = 0; i <= run.n; i += 400) { near(run.y[i], hill(run.x[i]), 1e-9, 'on the track'); rel(0.5 * (run.vx[i] ** 2 + run.vy[i] ** 2) + g * run.y[i], g * 0.72, 1e-5, 'energy kept'); }
+	assert.ok(Math.max(...run.x) > 1.19 && Math.max(...run.x) < 1.2001, 'climbs to the same height on the far side');
+});
+
+test('field motion: an engine burn changes the orbit; two burns move a satellite to a higher circle', () => {
+	const gm = 3.986e14, r1 = 7.0e6, r2 = 1.4e7, v1 = Math.sqrt(gm / r1), aT = (r1 + r2) / 2;
+	const dv1 = Math.sqrt(gm * (2 / r1 - 1 / aT)) - v1, tT = Math.PI * Math.sqrt(aT ** 3 / gm);
+	const vArrive = Math.sqrt(gm * (2 / r2 - 1 / aT)), dv2 = Math.sqrt(gm / r2) - vArrive;
+	const t1 = 1000, total = t1 + tT + 12000;
+	const run = motion.runMotion({field: {kind: 'central', gm}, start: {x: r1, y: 0, vx: 0, vy: v1}, duration: total, steps: 12000, burns: [{at: t1, along: dv1}, {at: t1 + tT, along: dv2}]});
+	rel(Math.hypot(motion.stateAt(run, 900).x, motion.stateAt(run, 900).y), r1, 1e-6, 'before the burn: the low circle');
+	rel(motion.stateAt(run, t1 + 30).speed, v1 + dv1, 2e-3, 'just after burn 1: faster');
+	const arrive = motion.stateAt(run, t1 + tT);
+	rel(Math.hypot(arrive.x, arrive.y), r2, 2e-3, 'half an ellipse later it reaches the high radius');
+	for (const t of [t1 + tT + 3000, t1 + tT + 9000, total]) { const s = motion.stateAt(run, t); rel(Math.hypot(s.x, s.y), r2, 3e-3, 'after burn 2: the high circle'); rel(s.speed, Math.sqrt(gm / r2), 3e-3, 'at the slower circular speed'); }
+	const energy = t => { const s = motion.stateAt(run, t); return 0.5 * s.speed ** 2 - gm / Math.hypot(s.x, s.y); };
+	rel(energy(500), -gm / (2 * r1), 1e-5, 'total energy on the low circle: -GM / 2r');
+	rel(energy(total), -gm / (2 * r2), 5e-3, 'greater (less negative) on the high circle, though the speed is lower');
+	// A sideways kick given as dvx, dvy.
+	const kicked = motion.runMotion({field: {kind: 'uniform', ax: 0, ay: 0}, start: {x: 0, y: 0, vx: 1, vy: 0}, duration: 2, steps: 200, burns: [{at: 1, dvy: 3}]});
+	near(motion.stateAt(kicked, 2).y, 3, 0.05); near(motion.stateAt(kicked, 2).vx, 1, 1e-12);
+});
+
+// ------------------------------------------------ beam, collisions, branching chain
+const beamKit = await load('src/explainer/sims/beam.ts');
+const coll = await load('src/explainer/sims/collisions.ts');
+const chainKit = await load('src/explainer/sims/chain.ts');
+
+test('beam: it balances when the clockwise and anticlockwise moments are equal', () => {
+	const g = 9.8;
+	// 30 kg at 1.2 m to the left; 25 kg at 1.44 m to the right.
+	const beam = {forces: [{id: 'a', at: -1.2, force: 30 * g}, {id: 'b', at: 1.44, force: 25 * g}]};
+	const s = beamKit.solveBeam(beam);
+	near(s.anticlockwise, 30 * g * 1.2, 1e-9, 'anticlockwise moment: 352.8 N m'); near(s.clockwise, 25 * g * 1.44, 1e-9, 'clockwise moment');
+	near(s.net, 0, 1e-9); assert.ok(s.balanced, 'equal moments: balanced');
+	near(s.support, 55 * g, 1e-9, 'the pivot holds up both weights: forces balance separately');
+	assert.equal(s.torques[0].sense, 'anticlockwise'); assert.equal(s.torques[1].sense, 'clockwise');
+	const off = beamKit.solveBeam({forces: [beam.forces[0], {id: 'b', at: 1.2, force: 25 * g}]});
+	assert.ok(!off.balanced); near(off.net, 5 * g * 1.2, 1e-9, 'same distance: 58.8 N m left over, anticlockwise');
+	near(beamKit.balancePoint({forces: [beam.forces[0]]}, 25 * g), 1.44, 1e-12, 'where the 25 kg must sit');
+	near(beamKit.balanceForce({forces: [beam.forces[0]]}, 1.44), 25 * g, 1e-9, 'or the force needed there');
+	// Metre rule pivoted at 50 cm: 200 g at 20 cm balances 150 g at 90 cm.
+	assert.ok(beamKit.solveBeam({forces: [{at: -0.30, force: 0.2 * g}, {at: 0.40, force: 0.15 * g}]}).balanced);
+	// The crane: 4 t at 30 m against 20 t at 6 m.
+	assert.ok(beamKit.solveBeam({forces: [{at: 30, force: 4000 * g}, {at: -6, force: 20000 * g}]}).balanced);
+	near(beamKit.torque(0.25, 80), 20, 1e-12); near(beamKit.torque(0.25, 80, 30), 10, 1e-9, 'at 30 degrees only half the force turns'); near(beamKit.torque(0.25, 80, 180), 0, 1e-9, 'along the handle: nothing');
+	near(beamKit.solveBeam({forces: [{at: 0.3, force: 40, direction: 'up'}]}).net, 12, 1e-12, 'an upward push on the right turns it anticlockwise');
+	// A beam with its own weight off-centre.
+	near(beamKit.solveBeam({forces: [], weight: 10, centre: 0.2}).net, -2, 1e-12);
+	const level = beamKit.runBeam(beam, {duration: 2}), tip = beamKit.runBeam({forces: [beam.forces[0], {at: 1.2, force: 25 * g}]}, {duration: 2, limit: 0.25});
+	near(beamKit.beamAngleAt(level, 2), 0, 1e-9, 'balanced: stays level');
+	near(beamKit.beamAngleAt(tip, 2), 0.25, 1e-9, 'unbalanced: tips anticlockwise onto its stop');
+});
+
+test('collisions: momentum is conserved in every collision, and kinetic energy too when it is elastic', () => {
+	const cases = [
+		{m1: 2, m2: 3, u1: 4, u2: -1}, {m1: 0.5, m2: 0.5, u1: 3, u2: 0}, {m1: 1, m2: 100, u1: 5, u2: 0}, {m1: 1200, m2: 800, u1: 15, u2: 5},
+	];
+	for (const c of cases) for (const e of [1, 0.6, 0]) {
+		const r = coll.collide({...c, restitution: e});
+		near(r.momentumAfter, r.momentumBefore, 1e-9 * Math.max(1, Math.abs(r.momentumBefore)), `momentum, e = ${e}`);
+		if (e === 1) near(r.kineticAfter, r.kineticBefore, 1e-9 * r.kineticBefore, 'elastic: kinetic energy conserved');
+		else assert.ok(r.kineticAfter < r.kineticBefore, 'inelastic: kinetic energy is lost');
+		near(r.v2 - r.v1, e * (c.u1 - c.u2), 1e-9, 'they separate at e times the closing speed');
+		near(r.impulse, c.m2 * (r.v2 - c.u2), 1e-12);
+	}
+	const equal = coll.collide({m1: 0.5, m2: 0.5, u1: 3, u2: 0});
+	near(equal.v1, 0, 1e-12, 'equal masses, elastic: the first stops'); near(equal.v2, 3, 1e-12, 'and the second leaves with its speed');
+	const stick = coll.collide({m1: 2, m2: 3, u1: 5, u2: 0, restitution: 0});
+	near(stick.v1, 2, 1e-12); near(stick.v2, 2, 1e-12, 'stuck together: one shared speed'); near(stick.kineticLost, 25 - 10, 1e-9);
+	// Chadwick's rule: a neutron on a proton hands over everything; on nitrogen (14 times heavier) only about a quarter.
+	near(coll.elasticTransfer(1, 1).speedRatio, 1, 1e-12); near(coll.elasticTransfer(1, 1).energyShare, 1, 1e-12);
+	near(coll.elasticTransfer(1, 14).speedRatio, 2 / 15, 1e-12); near(coll.elasticTransfer(1, 14).energyShare, 56 / 225, 1e-12);
+	near(coll.collide({m1: 1, m2: 14, u1: 1, u2: 0}).v2, 2 / 15, 1e-12, 'the engine agrees with the rule');
+	const apart = coll.pushApart(2, 6, 48);
+	near(2 * apart.v1 + 6 * apart.v2, 0, 1e-12, 'pushed apart from rest: total momentum stays zero'); near(0.5 * 2 * apart.v1 ** 2 + 0.5 * 6 * apart.v2 ** 2, 48, 1e-9);
+});
+
+test('collisions: a run finds the moment of contact and moves both bodies before and after it', () => {
+	const run = coll.runCollision({m1: 2, m2: 1, u1: 3, u2: 0, x1: 0, x2: 4, size1: 0.5, size2: 0.5, duration: 4});
+	near(run.time, 1, 1e-12, 'they touch when the gap of 3 m closes at 3 m/s');
+	const before = coll.collisionAt(run, 0.5), after = coll.collisionAt(run, 2);
+	assert.equal(before.hit, false); near(before.x1, 1.5, 1e-12); near(before.x2, 4, 1e-12);
+	assert.ok(after.hit); near(after.v1, 1, 1e-12); near(after.v2, 4, 1e-12);
+	near(after.x1, 3 + 1, 1e-12); near(after.x2, 4 + 4, 1e-12);
+	near(after.p1 + after.p2, before.p1 + before.p2, 1e-12, 'total momentum the same at every moment');
+	near(after.k1 + after.k2, before.k1 + before.k2, 1e-12);
+	assert.ok(after.x2 - after.x1 >= 1 - 1e-9, 'they never pass through each other');
+	assert.equal(coll.runCollision({m1: 1, m2: 1, u1: 1, u2: 2, x1: 0, x2: 3, duration: 5}).time, null, 'a slower body never catches a faster one');
+});
+
+test('chain: seeded and repeatable; it dies away below k = 1, holds near k = 1 and grows above it', () => {
+	const cfg = {seed: 11, generations: 12, start: 1000, released: 2.5, chance: 0.6};
+	const a = chainKit.runChain(cfg), b = chainKit.runChain(cfg), c = chainKit.runChain({...cfg, seed: 12});
+	assert.deepEqual(a.events, b.events, 'same seed, same chain'); assert.notDeepEqual(a.events, c.events);
+	near(chainKit.multiplication(2.5, 0.6), 1.5, 1e-12);
+	rel(a.events[9], chainKit.chainSize(1000, 1.5, 10), 0.08, 'k = 1.5: about 38 000 events in generation 10');
+	rel(a.expected[9], 1000 * 1.5 ** 9, 1e-12);
+	const dying = chainKit.runChain({...cfg, chance: 0.32});
+	rel(dying.events[9], chainKit.chainSize(1000, 0.8, 10), 0.3, 'k = 0.8: about 134 left');
+	assert.ok(dying.events[11] < dying.events[5] && dying.events[5] < 1000);
+	const steady = chainKit.runChain({...cfg, chance: 0.4, generations: 20});
+	for (const n of steady.events) assert.ok(n > 700 && n < 1400, `k = 1 holds roughly steady (got ${n})`);
+	for (let g = 0; g < a.releasedBy.length; g++) { assert.ok(a.releasedBy[g] >= 2 * a.events[g] && a.releasedBy[g] <= 3 * a.events[g], 'each event releases 2 or 3'); assert.ok(a.events[g + 1] <= a.releasedBy[g], 'no more new events than particles released'); }
+	// Control rods part-way through: the chance falls, and so does the chain.
+	const rods = chainKit.runChain({...cfg, chance: [0.6, 0.6, 0.6, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3, 0.3]});
+	assert.ok(rods.events[3] > rods.events[0] && rods.events[10] < rods.events[3], 'grows, then falls once the rods are in');
+});
+
+test('chain: the early generations are followed event by event, each with its parent', () => {
+	const run = chainKit.runChain({seed: 4, generations: 7, start: 1, released: 2.5, chance: 0.8});
+	assert.ok(run.tree.length > 1 && run.tree.length <= 400);
+	assert.equal(run.tree[0].parent, -1);
+	for (let g = 0; g < run.treeGenerations; g++) assert.equal(run.tree.filter(n => n.generation === g).length, run.events[g], `the tree holds every event of generation ${g + 1}`);
+	for (const node of run.tree) if (node.generation > 0) { assert.ok(node.parent >= 0 && node.parent < run.events[node.generation - 1], 'every event has a parent in the generation before'); }
+	for (let g = 1; g < run.treeGenerations; g++) for (let i = 0; i < run.events[g - 1]; i++) assert.ok(run.tree.filter(n => n.generation === g && n.parent === i).length <= 3, 'no event causes more than 3');
+	const none = chainKit.runChain({seed: 1, generations: 5, start: 5, chance: 0});
+	assert.deepEqual(none.events, [5, 0, 0, 0, 0], 'no chance, no chain');
+});

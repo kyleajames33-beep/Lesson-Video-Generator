@@ -215,7 +215,9 @@ const Arrow: React.FC<{x: number; y: number; dx: number; dy: number; color: stri
 
 /**
  * The moving body on its path: trail, strobe images at equal time steps, velocity and
- * acceleration arrows, an optional ground line, central body or field marks.
+ * acceleration arrows, an optional ground line, central body or field marks. A body held on
+ * a string is drawn with its string and fixed point (until the string goes slack); a body
+ * on a track is drawn with the track.
  * Put labels and readouts beside it using motionScale() and useMotionTime() with the same stage and clock.
  */
 export const FieldMotionView: React.FC<{
@@ -256,6 +258,9 @@ export const FieldMotionView: React.FC<{
 		const c = tone(spec.tone), x0 = S.sx(s.x), y0 = S.sy(s.y), dx = vx * spec.scale, dy = -vy * spec.scale;
 		return <g opacity={o}>{spec.components ? <><Arrow x={x0} y={y0} dx={dx} dy={0} color={c.stroke} width={4} dash="9 8" /><Arrow x={x0} y={y0} dx={0} dy={dy} color={c.stroke} width={4} dash="9 8" /></> : null}<Arrow x={x0} y={y0} dx={dx} dy={dy} color={c.stroke} label={spec.label} labelColor={c.ink} /></g>;
 	};
+	const held = path.config.constraint, world = stage.world ?? boundsOf(path);
+	const taut = held?.kind === 'string' && (path.released === undefined || t < path.released);
+	const rail = held?.kind === 'track' ? Array.from({length: 121}, (_, i) => { const wx = world.x0 + ((world.x1 - world.x0) * i) / 120; return `${S.sx(wx).toFixed(1)},${(S.sy(held.y(wx)) + r + 3).toFixed(1)}`; }).join(' ') : '';
 	const field = path.config.field;
 	const cx = field.kind === 'central' ? field.cx ?? 0 : 0, cy = field.kind === 'central' ? field.cy ?? 0 : 0;
 	return (
@@ -263,6 +268,8 @@ export const FieldMotionView: React.FC<{
 			{markNodes}
 			{ground !== undefined ? <line x1={stage.x} x2={stage.x + stage.w} y1={S.sy(ground)} y2={S.sy(ground)} stroke={INK} strokeWidth={5} strokeLinecap="round" /> : null}
 			{centre ? <g><circle cx={S.sx(cx)} cy={S.sy(cy)} r={Math.max(10, centre.r * S.k)} fill={tone(centre.tone ?? 'teal').soft} stroke={tone(centre.tone ?? 'teal').stroke} strokeWidth={5} />{centre.label ? <text x={S.sx(cx)} y={S.sy(cy) + 12} textAnchor="middle" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: TYPE.handSmall}} fill={tone(centre.tone ?? 'teal').ink}>{centre.label}</text> : null}</g> : null}
+			{rail ? <polyline points={rail} fill="none" stroke={INK} strokeWidth={6} strokeLinecap="round" strokeLinejoin="round" /> : null}
+			{held?.kind === 'string' ? <g>{taut ? <line x1={S.sx(held.cx)} y1={S.sy(held.cy)} x2={S.sx(s.x)} y2={S.sy(s.y)} stroke={INK} strokeWidth={held.rigid ? 7 : 4} strokeLinecap="round" /> : null}<circle cx={S.sx(held.cx)} cy={S.sy(held.cy)} r={9} fill={INK} /></g> : null}
 			<polyline points={pts} fill="none" stroke={tt.stroke} strokeWidth={trail.width ?? 5} strokeLinecap="round" strokeLinejoin="round" strokeDasharray={trail.whole ? '4 12' : undefined} opacity={0.9} />
 			{ghosts.map((g, i) => <circle key={i} cx={S.sx(g.x)} cy={S.sy(g.y)} r={r * 0.72} fill={bt.soft} stroke={bt.stroke} strokeWidth={3} />)}
 			{vec(acceleration, s.ax, s.ay)}

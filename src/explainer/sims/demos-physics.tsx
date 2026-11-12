@@ -17,6 +17,12 @@ import {BlackBodyGraph, GammaGraph, IntensityPattern, LightClockView, Photoelect
 import {photoelectric} from './photoelectric';
 import {contractedLength, dilatedTime, gamma, lightClockTicks} from './relativity';
 import {gratingBrightness, gratingMaxima, singleSlitBrightness} from './waves';
+import {Beam, solveBeam} from './beam';
+import {runChain} from './chain';
+import {collisionAt, runCollision} from './collisions';
+import {energyAt, runMotion, stateAt, supportAt} from './field-motion';
+import {BeamView, BeforeAfterBars, ChainBars, ChainTreeView, CollisionTrack} from './mechanics-views';
+import {FieldMotionView, useMotionTime} from './views';
 import {SimReadout} from './views';
 
 const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };
@@ -206,6 +212,97 @@ export const RelativityDemo: React.FC = () => {
 	);
 };
 
+// 5a. Turning effects on a beam ---------------------------------------------------
+export const BeamDemo: React.FC = () => {
+	const f = useCurrentFrame(), at = 0.6 + 0.84 * ramp(f, 30, 200), g = 9.8;
+	const beam: Beam = {forces: [{id: 'a', at: -1.2, force: 30 * g}, {id: 'b', at, force: 25 * g}]}, s = solveBeam(beam);
+	return (
+		<DemoPage title="Balanced when the two moments are equal">
+			<BeamView beam={beam} x={110} y={250} w={1100} h={700} reach={1.7} angle={Math.max(-0.1, Math.min(0.1, s.net / 1500))} turning
+				labels={{a: {force: '30 kg', distance: '1.20 m'}, b: {force: '25 kg', distance: `${at.toFixed(2)} m`}}} />
+			<SimReadout x={1270} y={380} w={580} title="Moments about the pivot" rows={[
+				{label: 'anticlockwise', value: s.anticlockwise, digits: 0, unit: 'N m', tone: 'blue'},
+				{label: 'clockwise', value: s.clockwise, digits: 0, unit: 'N m', tone: 'amber'},
+				{label: 'left over', value: Math.abs(s.net), digits: 0, unit: 'N m'},
+			]} />
+			<Caption x={1290} y={720}>{s.balanced || Math.abs(s.net) < 1 ? 'balanced' : 'tips anticlockwise'}</Caption>
+		</DemoPage>
+	);
+};
+
+// 5b. A string, a track and an engine burn ----------------------------------------
+const G = 9.8;
+const swing = lazy(() => runMotion({field: {kind: 'uniform', ax: 0, ay: -G}, start: {x: 0, y: -1, vx: 5.2, vy: 0}, duration: 2.2, steps: 2200, constraint: {kind: 'string', cx: 0, cy: 0},
+	// Stop when the slack string would pull tight again: the free ball is back at the string's length from the fixed point.
+	stopWhen: s => s.t > 0.4 && Math.hypot(s.x, s.y) > 1.0005}));
+const hill = (x: number) => 0.3 * (x - 1.6) ** 2 + 0.4 * Math.exp(-((x - 1.6) ** 2) / 0.1);
+const coaster = lazy(() => runMotion({field: {kind: 'uniform', ax: 0, ay: -G}, start: {x: 0, y: 0, vx: 0, vy: 0}, duration: 3.4, steps: 3400, constraint: {kind: 'track', y: hill}}));
+const GM = 3.986e14, R1 = 7e6, R2 = 1.4e7, AT = (R1 + R2) / 2, T_BURN = 1500, T_HALF = Math.PI * Math.sqrt(AT ** 3 / GM);
+const raise = lazy(() => runMotion({
+	field: {kind: 'central', gm: GM}, start: {x: R1, y: 0, vx: 0, vy: Math.sqrt(GM / R1)}, duration: T_BURN + T_HALF + 9000, steps: 6000,
+	burns: [{at: T_BURN, along: Math.sqrt(GM * (2 / R1 - 1 / AT)) - Math.sqrt(GM / R1)}, {at: T_BURN + T_HALF, along: Math.sqrt(GM / R2) - Math.sqrt(GM * (2 / R2 - 1 / AT))}],
+}));
+export const ConstraintDemo: React.FC = () => {
+	const clock = {at: 10, seconds: 8}, ts = useMotionTime(swing(), clock), tc = useMotionTime(coaster(), clock), tr = useMotionTime(raise(), clock);
+	const orbit = stateAt(raise(), tr), e = energyAt(coaster(), tc);
+	return (
+		<DemoPage title="Held on a string, held on a track, kicked by a burn">
+			<FieldMotionView path={swing()} stage={{x: 60, y: 220, w: 520, h: 520, world: {x0: -1.3, x1: 1.3, y0: -1.3, y1: 1.3}}} clock={clock} body={{tone: 'blue'}} trail={{tone: 'grey'}} velocity={{tone: 'teal', scale: 22}} />
+			<FieldMotionView path={coaster()} stage={{x: 640, y: 300, w: 620, h: 360, world: {x0: -0.15, x1: 3.35, y0: -0.1, y1: 0.95}}} clock={clock} body={{tone: 'warm', r: 15}} trail={{tone: 'grey'}} velocity={{tone: 'teal', scale: 26}} />
+			<FieldMotionView path={raise()} stage={{x: 1300, y: 200, w: 580, h: 560, world: {x0: -1.5e7, x1: 1.5e7, y0: -1.5e7, y1: 1.5e7}}} clock={clock} body={{tone: 'violet', r: 13}} trail={{tone: 'grey'}} centre={{r: 6.371e6, tone: 'teal'}} />
+			<Caption x={90} y={160}>a string that goes slack</Caption>
+			<Caption x={670} y={160}>a smooth track</Caption>
+			<Caption x={1330} y={160}>two engine burns</Caption>
+			<SimReadout x={70} y={790} w={520} title="String" rows={[{label: 'tension per kg', value: supportAt(swing(), ts), digits: 1, unit: 'N'}]} />
+			<SimReadout x={650} y={790} w={600} title="Track" rows={[{label: 'kinetic', value: e.kinetic, digits: 2, unit: 'J/kg', tone: 'teal'}, {label: 'kinetic + potential', value: e.total, digits: 2, unit: 'J/kg'}]} />
+			<SimReadout x={1310} y={790} w={560} title="Orbit" rows={[{label: 'radius', value: Math.hypot(orbit.x, orbit.y) / 1e6, digits: 1, unit: '× 10⁶ m'}, {label: 'speed', value: orbit.speed / 1000, digits: 2, unit: 'km/s', tone: 'violet'}]} />
+		</DemoPage>
+	);
+};
+
+// 5c. Collisions ------------------------------------------------------------------
+const bump = lazy(() => runCollision({m1: 2, m2: 1, u1: 2, u2: 0, x1: 1, x2: 5, size1: 0.7, size2: 0.5, duration: 3, restitution: 1}));
+const stick = lazy(() => runCollision({m1: 2, m2: 1, u1: 2, u2: 0, x1: 1, x2: 5, size1: 0.7, size2: 0.5, duration: 3, restitution: 0}));
+export const CollisionDemo: React.FC = () => {
+	const t = useSeriesTime({at: 10, to: 3, frames: 240});
+	const panel = (run: ReturnType<typeof bump>, x: number, name: string) => {
+		const r = run.result, c = run.config, after = collisionAt(run, t).hit ? 1 : 0;
+		return (
+			<>
+				<Caption x={x + 20} y={160}>{name}</Caption>
+				<CollisionTrack run={run} t={t} x={x} y={200} w={860} h={280} world={[0, 10]} labels={['2 kg', '1 kg']} />
+				<BeforeAfterBars x={x} y={520} w={860} h={500} after={after} digits={1} rows={[
+					{label: 'p (2 kg)', before: c.m1 * c.u1, after: c.m1 * r.v1, tone: 'blue'},
+					{label: 'p (1 kg)', before: c.m2 * c.u2, after: c.m2 * r.v2, tone: 'warm'},
+					{label: 'total p', before: r.momentumBefore, after: r.momentumAfter, tone: 'ink'},
+					{label: 'kinetic', before: r.kineticBefore, after: r.kineticAfter, tone: 'teal'},
+				]} />
+			</>
+		);
+	};
+	return (
+		<DemoPage title="Momentum is kept in every collision">
+			{panel(bump(), 60, 'elastic')}
+			{panel(stick(), 1000, 'they stick together')}
+		</DemoPage>
+	);
+};
+
+// 5d. A branching chain -----------------------------------------------------------
+const growing = lazy(() => runChain({seed: 5, generations: 10, start: 1, released: 2.5, chance: 0.62, treeLimit: 260}));
+const held = lazy(() => runChain({seed: 9, generations: 14, start: 400, released: 2.5, chance: [0.56, 0.56, 0.56, 0.4, 0.4, 0.4, 0.4, 0.4, 0.4, 0.3]}));
+export const ChainDemo: React.FC = () => {
+	const f = useCurrentFrame(), tree = growing(), rods = held();
+	return (
+		<DemoPage title="One event causes others: a chain">
+			<Caption x={90} y={160}>each event followed, k = 1.55</Caption>
+			<ChainTreeView run={tree} x={70} y={230} w={900} h={760} now={1 + ramp(f, 10, 200) * 6} generations={7} rowLabel={(g, n) => `gen ${g}: ${n}`} />
+			<Caption x={1040} y={160}>totals: k = 1.4, then 1, then 0.75</Caption>
+			<ChainBars run={rods} x={1020} y={210} w={860} h={800} now={1 + ramp(f, 10, 220) * 13} xLabel="generation" expectedLabel="average rule" />
+		</DemoPage>
+	);
+};
+
 export const PHYSICS_DEMOS: readonly (readonly [string, React.FC])[] = [
 	['SimDemo-MagneticField', MagneticDemo],
 	['SimDemo-Induction', InductionDemo],
@@ -215,4 +312,8 @@ export const PHYSICS_DEMOS: readonly (readonly [string, React.FC])[] = [
 	['SimDemo-SlitPatterns', SlitDemo],
 	['SimDemo-Photoelectric', PhotoelectricDemo],
 	['SimDemo-Relativity', RelativityDemo],
+	['SimDemo-Beam', BeamDemo],
+	['SimDemo-StringTrackBurn', ConstraintDemo],
+	['SimDemo-Collisions', CollisionDemo],
+	['SimDemo-Chain', ChainDemo],
 ];
