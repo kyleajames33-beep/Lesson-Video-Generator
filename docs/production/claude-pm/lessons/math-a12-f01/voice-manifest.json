@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f01.md",
+  "sourceSha256": "3345043a9d031234d65d69380fcd21d8fa4abda0098d1ddb069dd7ab9def780a",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Here's a list of numbers: minus one, zero, nine, thirty-two. They're the positions of a moving particle, read at one, two, three and four seconds. A list of numbers in a fixed order, like this, is called a sequence. Sequences are everywhere. At a cricket match, read the scoreboard at the end of each over. The runs scored in each over make one sequence, and those end-of-over totals make another. So what exactly is a sequence, and how do we add up its terms neatly?",
+      "audioFile": "public/audio/math-a12-f01/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "A sequence is an ordered list of objects, usually numbers. Each object is called a term, and every term has a position: first, second, third, and so on. We write a sub n for the term in position n, where n is a positive whole number. Say one team scores one, three, five and seven runs in the first four overs. Here, a sub three is five. The three is the position, the third over, and the five is the value, the runs. Now a second team scores the same runs in reverse: seven, five, three, one. After four overs, both teams have sixteen. But after the first over, one scoreboard shows one, and the other shows seven. The positions stay put and the values move. That's why order matters, and why these are different sequences.",
+      "audioFile": "public/audio/math-a12-f01/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Often a rule gives each term from its position. Say a team scores two n runs in over n. Put in n equals one, and a sub one is two. Then come four, six, eight and ten. The rule only needs the position. So to find a sub fifty, put in fifty and get one hundred, without listing the first forty-nine terms. If the game stops after five overs, the list stops at ten, its fifth term, so it's a finite sequence. A finite sequence ends at some last term, a sub m. Here m is five. But if the list never stops, two, four, six, eight, ten, and so on forever, it's an infinite sequence. We show that with three dots at the end.",
+      "audioFile": "public/audio/math-a12-f01/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now add the runs up as we go, like the scoreboard does. After one over, the total is S one, just the first term, two. S two adds the first two terms: two plus four is six. Then the scoreboard shows twelve, twenty and thirty. In general, S sub n is the sum of the first n terms. It's called the nth partial sum, a running total. Notice that the totals, two, six, twelve, twenty, thirty, make a new sequence of their own. And each total is the one before it, plus one more over. So S five minus S four leaves just the fifth over's runs: thirty minus twenty is ten.",
+      "audioFile": "public/audio/math-a12-f01/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "What if the sequence is infinite, like a game whose overs never end? Then the sum of all its terms, a sub one plus a sub two plus a sub three, and so on, is called a series. The partial sums are the steps on the way. For two, plus four, plus six, and so on, the scoreboard just keeps climbing, so this series has no total. Some series do settle on a number, and we'll see which ones in a later video. So, S sub n means the first n terms. A series means all of them.",
+      "audioFile": "public/audio/math-a12-f01/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Writing long sums out is slow, so we use sigma notation. Take the first team's runs again: one, three, five, seven. This big symbol is the Greek capital letter sigma, and it means add. Underneath, k equals one tells you where to start. On top, four tells you where to stop. And two k minus one, on the right, is the rule for each term. Each value of k makes one term. Put in k equals one, two, three and four, to get one, three, five and seven. Add them up, and the sum is sixteen, Team A's score after four overs.",
+      "audioFile": "public/audio/math-a12-f01/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "The start doesn't have to be one. Here's the sum from k equals three to seven, of k squared. The first term uses k equals three, so it's nine. Then come sixteen, twenty-five, thirty-six and forty-nine. That's five terms, not seven, because seven minus three is four, plus one for the first term. The total is one hundred and thirty-five. In general, the sum from k equals i to j, of a sub k, adds every term from a sub i up to a sub j. And k is just a counter. Use m instead, and the sum is exactly the same.",
+      "audioFile": "public/audio/math-a12-f01/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Let's go the other way. A sequence has a sub n equals n squared minus n plus one. Its first five terms are one, three, seven, thirteen and twenty-one. Their sum, S five, is forty-five. To write S five in sigma notation, swap n for the counter k, start at one and stop at five. So S five is the sum, from k equals one to five, of k squared minus k plus one. That's forty-five again, written in one line.",
+      "audioFile": "public/audio/math-a12-f01/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Now write a sum from words. Write the sum of the first ten odd numbers in sigma notation. First, find a rule for the odd numbers. One, three, five, seven: each one is one less than an even number, so the kth odd number is two k minus one. Check: k equals one gives one. Next, the start and the stop. The first ten odd numbers means k goes from one to ten. So it's the sum, from k equals one to ten, of two k minus one. The last term is two times ten, minus one, which is nineteen. And all ten add to one hundred.",
+      "audioFile": "public/audio/math-a12-f01/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Here's a way to read any sigma. Bottom: start. Top: stop. And the number of terms is the top minus the bottom, plus one. From five to nine, that's five terms, not four.",
+      "audioFile": "public/audio/math-a12-f01/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "Your turn. Evaluate the sum, from k equals two to five, of four k minus three. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f01/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Start at k equals two: four times two, minus three, is five. Then come nine, thirteen and seventeen. That's four terms, and they add to forty-four. Twenty-eight is wrong. It starts at k equals one, and stops one term early.",
+      "audioFile": "public/audio/math-a12-f01/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "Last one. A sequence has a sub n equals ten minus two n. Find S four, and write S four in sigma notation. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f01/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "The first four terms are eight, six, four and two. S four adds all four of them, to make twenty. In sigma notation, it's the sum, from k equals one to four, of ten minus two k. Two is wrong. That's a sub four, the fourth term, not the sum of the first four terms.",
+      "audioFile": "public/audio/math-a12-f01/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "So a sequence is an ordered list, a sub n is the term in position n, S sub n adds up the first n terms, and sigma writes a sum in one line. Now look at a stack of chairs. One chair is eighty centimetres tall. Two stacked are eighty-six, and three are ninety-two. Each chair adds six. What happens when every step is the same?",
+      "audioFile": "public/audio/math-a12-f01/scene-15.wav"
+    },
+    {
+      "id": "scene-16",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f01/scene-16.wav"
+    }
+  ]
+}

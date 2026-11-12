@@ -1,0 +1,851 @@
+1
+00:00:00,281 --> 00:00:01,546
+Here's a list of numbers:
+
+2
+00:00:02,209 --> 00:00:02,771
+minus one,
+
+3
+00:00:03,273 --> 00:00:03,655
+zero,
+
+4
+00:00:04,177 --> 00:00:05,402
+nine, thirty-two.
+
+5
+00:00:06,265 --> 00:00:08,894
+They're the positions of a moving particle, read
+
+6
+00:00:09,035 --> 00:00:10,058
+at one, two,
+
+7
+00:00:10,561 --> 00:00:11,905
+three and four seconds.
+
+8
+00:00:12,989 --> 00:00:14,873
+A list of numbers in a fixed order,
+
+9
+00:00:15,034 --> 00:00:16,718
+like this, is called a sequence.
+
+10
+00:00:17,522 --> 00:00:18,908
+Sequences are everywhere.
+
+11
+00:00:19,592 --> 00:00:21,679
+At a cricket match, read the scoreboard at
+
+12
+00:00:21,720 --> 00:00:22,722
+the end of each over.
+
+13
+00:00:23,306 --> 00:00:25,393
+The runs scored in each over make one
+
+14
+00:00:25,434 --> 00:00:28,526
+sequence, and those end-of-over totals make another.
+
+15
+00:00:29,309 --> 00:00:31,835
+So what exactly is a sequence, and how
+
+16
+00:00:31,856 --> 00:00:33,459
+do we add up its terms neatly?
+
+17
+00:00:34,295 --> 00:00:36,701
+A sequence is an ordered list of objects,
+
+18
+00:00:36,983 --> 00:00:37,644
+usually numbers.
+
+19
+00:00:38,246 --> 00:00:40,533
+Each object is called a term, and every
+
+20
+00:00:40,594 --> 00:00:43,744
+term has a position: first, second, third, and
+
+21
+00:00:43,786 --> 00:00:44,086
+so on.
+
+22
+00:00:44,689 --> 00:00:47,197
+We write a sub n for the term
+
+23
+00:00:47,219 --> 00:00:49,607
+in position n, where n is a positive
+
+24
+00:00:49,688 --> 00:00:50,129
+whole number.
+
+25
+00:00:50,912 --> 00:00:53,717
+Say one team scores one, three, five and
+
+26
+00:00:53,858 --> 00:00:55,741
+seven runs in the first four overs.
+
+27
+00:00:56,203 --> 00:00:58,321
+Here, a sub three is five.
+
+28
+00:00:58,906 --> 00:01:00,813
+The three is the position, the third over,
+
+29
+00:01:01,155 --> 00:01:03,182
+and the five is the value, the runs.
+
+30
+00:01:03,926 --> 00:01:05,890
+Now a second team scores the same runs
+
+31
+00:01:06,051 --> 00:01:08,436
+in reverse: seven, five, three, one.
+
+32
+00:01:09,179 --> 00:01:11,146
+After four overs, both teams have sixteen.
+
+33
+00:01:11,689 --> 00:01:12,814
+But after the first over,
+
+34
+00:01:13,377 --> 00:01:15,486
+one scoreboard shows one, and the other shows
+
+35
+00:01:15,568 --> 00:01:15,848
+seven.
+
+36
+00:01:16,692 --> 00:01:19,220
+The positions stay put and the values move.
+
+37
+00:01:19,742 --> 00:01:21,969
+That's why order matters, and why these are
+
+38
+00:01:22,010 --> 00:01:22,852
+different sequences.
+
+39
+00:01:23,636 --> 00:01:25,728
+Often a rule gives each term from its
+
+40
+00:01:25,789 --> 00:01:26,150
+position.
+
+41
+00:01:26,956 --> 00:01:29,529
+Say a team scores two n runs in
+
+42
+00:01:29,731 --> 00:01:30,313
+over n.
+
+43
+00:01:31,098 --> 00:01:33,891
+Put in n equals one, and a sub
+
+44
+00:01:34,033 --> 00:01:34,655
+one is two.
+
+45
+00:01:35,360 --> 00:01:37,847
+Then come four, six, eight and ten.
+
+46
+00:01:38,551 --> 00:01:40,078
+The rule only needs the position.
+
+47
+00:01:40,601 --> 00:01:43,228
+So to find a sub fifty, put in
+
+48
+00:01:43,390 --> 00:01:46,097
+fifty and get one hundred, without listing the
+
+49
+00:01:46,138 --> 00:01:47,521
+first forty-nine terms.
+
+50
+00:01:48,465 --> 00:01:50,708
+If the game stops after five overs, the
+
+51
+00:01:50,749 --> 00:01:53,733
+list stops at ten, its fifth term, so
+
+52
+00:01:53,814 --> 00:01:55,076
+it's a finite sequence.
+
+53
+00:01:55,839 --> 00:01:58,550
+A finite sequence ends at some last term,
+
+54
+00:01:59,093 --> 00:01:59,956
+a sub m.
+
+55
+00:02:00,440 --> 00:02:00,722
+Here m
+
+56
+00:02:01,309 --> 00:02:01,772
+is five.
+
+57
+00:02:02,581 --> 00:02:05,448
+But if the list never stops, two, four,
+
+58
+00:02:05,650 --> 00:02:07,955
+six, eight, ten, and so on forever,
+
+59
+00:02:08,458 --> 00:02:09,721
+it's an infinite sequence.
+
+60
+00:02:10,364 --> 00:02:12,031
+We show that with three dots at the
+
+61
+00:02:12,092 --> 00:02:12,231
+end.
+
+62
+00:02:12,862 --> 00:02:14,672
+Now add the runs up as we go,
+
+63
+00:02:15,316 --> 00:02:16,181
+like the scoreboard does.
+
+64
+00:02:16,783 --> 00:02:18,406
+After one over, the total is S
+
+65
+00:02:18,907 --> 00:02:20,330
+one, just the first term,
+
+66
+00:02:20,952 --> 00:02:21,132
+two.
+
+67
+00:02:22,135 --> 00:02:24,285
+S two adds the first two terms: two
+
+68
+00:02:24,366 --> 00:02:25,893
+plus four is six.
+
+69
+00:02:26,557 --> 00:02:29,636
+Then the scoreboard shows twelve, twenty and thirty.
+
+70
+00:02:30,541 --> 00:02:30,982
+In general,
+
+71
+00:02:31,485 --> 00:02:33,332
+S sub n is the sum of the
+
+72
+00:02:33,434 --> 00:02:34,578
+first n terms.
+
+73
+00:02:35,302 --> 00:02:37,955
+It's called the nth partial sum, a running
+
+74
+00:02:37,996 --> 00:02:38,297
+total.
+
+75
+00:02:39,363 --> 00:02:42,829
+Notice that the totals, two, six, twelve, twenty,
+
+76
+00:02:43,130 --> 00:02:43,470
+thirty,
+
+77
+00:02:43,992 --> 00:02:45,594
+make a new sequence of their own.
+
+78
+00:02:46,256 --> 00:02:47,820
+And each total is the one before it,
+
+79
+00:02:48,162 --> 00:02:49,404
+plus one more over.
+
+80
+00:02:50,207 --> 00:02:53,752
+So S five minus S four leaves just
+
+81
+00:02:53,793 --> 00:02:54,894
+the fifth over's runs:
+
+82
+00:02:55,556 --> 00:02:57,358
+thirty minus twenty is ten.
+
+83
+00:02:58,041 --> 00:03:00,447
+What if the sequence is infinite, like a
+
+84
+00:03:00,487 --> 00:03:02,051
+game whose overs never end?
+
+85
+00:03:02,793 --> 00:03:04,857
+Then the sum of all its terms, a
+
+86
+00:03:04,897 --> 00:03:06,921
+sub one plus a sub two plus a
+
+87
+00:03:06,941 --> 00:03:09,306
+sub three, and so on, is called a
+
+88
+00:03:09,426 --> 00:03:09,847
+series.
+
+89
+00:03:10,611 --> 00:03:12,223
+The partial sums are the steps on the
+
+90
+00:03:12,263 --> 00:03:12,445
+way.
+
+91
+00:03:13,290 --> 00:03:15,918
+For two, plus four, plus six, and so
+
+92
+00:03:15,999 --> 00:03:18,507
+on, the scoreboard just keeps climbing, so this
+
+93
+00:03:18,527 --> 00:03:19,711
+series has no total.
+
+94
+00:03:20,595 --> 00:03:22,580
+Some series do settle on a number, and
+
+95
+00:03:22,621 --> 00:03:24,305
+we'll see which ones in a later video.
+
+96
+00:03:25,068 --> 00:03:25,228
+So,
+
+97
+00:03:25,811 --> 00:03:28,218
+S sub n means the first n terms.
+
+98
+00:03:28,763 --> 00:03:30,177
+A series means all of them.
+
+99
+00:03:30,821 --> 00:03:32,830
+Writing long sums out is slow,
+
+100
+00:03:33,332 --> 00:03:35,039
+so we use sigma notation.
+
+101
+00:03:35,903 --> 00:03:37,229
+Take the first team's runs again:
+
+102
+00:03:37,912 --> 00:03:40,161
+one, three, five, seven.
+
+103
+00:03:41,045 --> 00:03:43,495
+This big symbol is the Greek capital letter
+
+104
+00:03:43,716 --> 00:03:45,744
+sigma, and it means add.
+
+105
+00:03:46,768 --> 00:03:47,170
+Underneath,
+
+106
+00:03:47,734 --> 00:03:49,906
+k equals one tells you where to start.
+
+107
+00:03:50,671 --> 00:03:52,885
+On top, four tells you where to stop.
+
+108
+00:03:53,832 --> 00:03:56,122
+And two k minus one, on the right,
+
+109
+00:03:56,566 --> 00:03:57,791
+is the rule for each term.
+
+110
+00:03:58,536 --> 00:04:00,530
+Each value of k makes one term.
+
+111
+00:04:01,356 --> 00:04:02,657
+Put in k equals one,
+
+112
+00:04:03,279 --> 00:04:03,518
+two,
+
+113
+00:04:04,140 --> 00:04:06,343
+three and four, to get one,
+
+114
+00:04:06,845 --> 00:04:07,145
+three,
+
+115
+00:04:07,687 --> 00:04:08,788
+five and seven.
+
+116
+00:04:09,610 --> 00:04:11,573
+Add them up, and the sum is sixteen,
+
+117
+00:04:12,216 --> 00:04:13,738
+Team A's score after four overs.
+
+118
+00:04:14,348 --> 00:04:16,196
+The start doesn't have to be one.
+
+119
+00:04:16,919 --> 00:04:19,064
+Here's the sum from k equals three to
+
+120
+00:04:19,145 --> 00:04:20,507
+seven, of k squared.
+
+121
+00:04:21,210 --> 00:04:23,384
+The first term uses k equals three, so
+
+122
+00:04:23,426 --> 00:04:23,868
+it's nine.
+
+123
+00:04:24,412 --> 00:04:27,650
+Then come sixteen, twenty-five, thirty-six and forty-nine.
+
+124
+00:04:28,234 --> 00:04:31,305
+That's five terms, not seven, because seven minus
+
+125
+00:04:31,346 --> 00:04:33,253
+three is four, plus one for the first
+
+126
+00:04:33,294 --> 00:04:33,454
+term.
+
+127
+00:04:34,198 --> 00:04:36,065
+The total is one hundred and thirty-five.
+
+128
+00:04:36,969 --> 00:04:39,432
+In general, the sum from k equals i
+
+129
+00:04:39,493 --> 00:04:41,635
+to j, of a sub k,
+
+130
+00:04:42,237 --> 00:04:45,000
+adds every term from a sub i up
+
+131
+00:04:45,042 --> 00:04:45,742
+to a sub j.
+
+132
+00:04:46,724 --> 00:04:48,371
+And k is just a counter.
+
+133
+00:04:49,296 --> 00:04:51,683
+Use m instead, and the sum is exactly
+
+134
+00:04:51,745 --> 00:04:52,045
+the same.
+
+135
+00:04:52,608 --> 00:04:53,373
+Let's go the other way.
+
+136
+00:04:53,979 --> 00:04:56,629
+A sequence has a sub n equals n
+
+137
+00:04:56,691 --> 00:04:58,538
+squared minus n plus one.
+
+138
+00:04:59,061 --> 00:05:02,008
+Its first five terms are one, three, seven,
+
+139
+00:05:02,370 --> 00:05:03,612
+thirteen and twenty-one.
+
+140
+00:05:04,094 --> 00:05:06,503
+Their sum, S five, is forty-five.
+
+141
+00:05:07,126 --> 00:05:09,947
+To write S five in sigma notation, swap
+
+142
+00:05:10,188 --> 00:05:12,329
+n for the counter k, start at one
+
+143
+00:05:12,630 --> 00:05:13,430
+and stop at five.
+
+144
+00:05:13,911 --> 00:05:15,958
+So S five is the sum, from k
+
+145
+00:05:15,999 --> 00:05:18,909
+equals one to five, of k squared minus
+
+146
+00:05:18,930 --> 00:05:19,873
+k plus one.
+
+147
+00:05:20,336 --> 00:05:22,484
+That's forty-five again, written in one line.
+
+148
+00:05:23,210 --> 00:05:25,165
+Now write a sum from words.
+
+149
+00:05:25,930 --> 00:05:28,039
+Write the sum of the first ten odd
+
+150
+00:05:28,120 --> 00:05:29,727
+numbers in sigma notation.
+
+151
+00:05:30,492 --> 00:05:32,729
+First, find a rule for the odd numbers.
+
+152
+00:05:33,613 --> 00:05:35,495
+One, three, five, seven:
+
+153
+00:05:36,297 --> 00:05:38,579
+each one is one less than an even
+
+154
+00:05:38,620 --> 00:05:38,879
+number,
+
+155
+00:05:39,421 --> 00:05:41,984
+so the kth odd number is two k
+
+156
+00:05:42,045 --> 00:05:42,565
+minus one.
+
+157
+00:05:43,370 --> 00:05:45,525
+Check: k equals one gives one.
+
+158
+00:05:46,534 --> 00:05:48,046
+Next, the start and the stop.
+
+159
+00:05:48,731 --> 00:05:51,322
+The first ten odd numbers means k goes
+
+160
+00:05:51,363 --> 00:05:52,507
+from one to ten.
+
+161
+00:05:53,271 --> 00:05:55,721
+So it's the sum, from k equals one
+
+162
+00:05:55,843 --> 00:05:58,011
+to ten, of two k minus one.
+
+163
+00:05:58,876 --> 00:06:01,086
+The last term is two times ten, minus
+
+164
+00:06:01,228 --> 00:06:02,352
+one, which is nineteen.
+
+165
+00:06:03,056 --> 00:06:04,964
+And all ten add to one hundred.
+
+166
+00:06:05,637 --> 00:06:07,153
+Here's a way to read any sigma.
+
+167
+00:06:07,722 --> 00:06:08,694
+Bottom: start.
+
+168
+00:06:09,201 --> 00:06:10,068
+Top: stop.
+
+169
+00:06:10,753 --> 00:06:12,559
+And the number of terms is the top
+
+170
+00:06:12,781 --> 00:06:14,306
+minus the bottom, plus one.
+
+171
+00:06:14,949 --> 00:06:17,432
+From five to nine, that's five terms, not
+
+172
+00:06:17,493 --> 00:06:17,692
+four.
+
+173
+00:06:20,380 --> 00:06:20,827
+Your turn.
+
+174
+00:06:21,557 --> 00:06:24,347
+Evaluate the sum, from k equals two to
+
+175
+00:06:24,428 --> 00:06:26,877
+five, of four k minus three.
+
+176
+00:06:27,803 --> 00:06:28,890
+Pause here to answer.
+
+177
+00:06:39,648 --> 00:06:41,171
+Start at k equals two:
+
+178
+00:06:41,874 --> 00:06:44,020
+four times two, minus three, is five.
+
+179
+00:06:44,683 --> 00:06:47,333
+Then come nine, thirteen and seventeen.
+
+180
+00:06:47,896 --> 00:06:50,595
+That's four terms, and they add to forty-four.
+
+181
+00:06:51,482 --> 00:06:52,468
+Twenty-eight is wrong.
+
+182
+00:06:53,073 --> 00:06:55,682
+It starts at k equals one, and stops
+
+183
+00:06:55,863 --> 00:06:56,565
+one term early.
+
+184
+00:06:58,197 --> 00:06:58,642
+Last one.
+
+185
+00:06:59,187 --> 00:07:01,976
+A sequence has a sub n equals ten
+
+186
+00:07:02,117 --> 00:07:02,799
+minus two n.
+
+187
+00:07:03,683 --> 00:07:06,514
+Find S four, and write S four in
+
+188
+00:07:06,656 --> 00:07:07,518
+sigma notation.
+
+189
+00:07:08,183 --> 00:07:09,009
+Pause here to answer.
+
+190
+00:07:19,855 --> 00:07:22,623
+The first four terms are eight, six, four
+
+191
+00:07:22,725 --> 00:07:23,105
+and two.
+
+192
+00:07:24,010 --> 00:07:26,103
+S four adds all four of them, to
+
+193
+00:07:26,144 --> 00:07:26,586
+make twenty.
+
+194
+00:07:27,452 --> 00:07:30,338
+In sigma notation, it's the sum, from k
+
+195
+00:07:30,479 --> 00:07:33,305
+equals one to four, of ten minus two
+
+196
+00:07:33,366 --> 00:07:33,526
+k.
+
+197
+00:07:34,431 --> 00:07:35,217
+Two is wrong.
+
+198
+00:07:35,700 --> 00:07:38,427
+That's a sub four, the fourth term, not
+
+199
+00:07:38,468 --> 00:07:39,972
+the sum of the first four terms.
+
+200
+00:07:41,680 --> 00:07:43,722
+So a sequence is an ordered list,
+
+201
+00:07:44,342 --> 00:07:46,184
+a sub n is the term in position
+
+202
+00:07:46,424 --> 00:07:46,524
+n,
+
+203
+00:07:47,285 --> 00:07:49,106
+S sub n adds up the first n
+
+204
+00:07:49,186 --> 00:07:52,129
+terms, and sigma writes a sum in one
+
+205
+00:07:52,189 --> 00:07:52,469
+line.
+
+206
+00:07:53,071 --> 00:07:54,599
+Now look at a stack of chairs.
+
+207
+00:07:55,242 --> 00:07:57,110
+One chair is eighty centimetres tall.
+
+208
+00:07:57,632 --> 00:08:00,844
+Two stacked are eighty-six, and three are ninety-two.
+
+209
+00:08:01,527 --> 00:08:02,994
+Each chair adds six.
+
+210
+00:08:03,840 --> 00:08:05,873
+What happens when every step is the same?
+
+211
+00:08:09,195 --> 00:08:10,058
+Here are the key notes.
+
+212
+00:08:10,461 --> 00:08:12,008
+Pause the video if you need more time
+
+213
+00:08:12,050 --> 00:08:12,511
+to copy them.

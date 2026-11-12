@@ -1,0 +1,82 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f02.md",
+  "sourceSha256": "c33aaaa5f5b539f00fba4ed953a82fff8712effbfc66876a589972005ae62b72",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on a stack of chairs. One chair is eighty centimetres tall, and every chair you add makes the stack six centimetres taller. So how tall is a stack of twenty chairs? Here's a quick guess. Start at eighty, and add twenty sixes. That gives two hundred centimetres, so it would only just fit under a two-metre door. It sounds right, but is it? By the end of the next few minutes, you'll know how to find any term, and whether that guess survives.",
+      "audioFile": "public/audio/math-a12-f02/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "A sequence like eighty, eighty-six, ninety-two is called an arithmetic sequence, or an arithmetic progression, AP for short. It's arithmetic when every difference between a term and the term before it is the same. That fixed difference is called the common difference, d. Here, eighty-six minus eighty is six, ninety-two minus eighty-six is six, and so on, so d is six. The difference can be negative, too. Twenty, seventeen, fourteen, eleven goes down by three each step, so d is minus three. But one, four, nine, sixteen isn't arithmetic. Its differences are three, five and seven, which aren't the same. So to test a list of terms, check that each difference matches. For a sequence given by a rule, show the difference is the same for every n.",
+      "audioFile": "public/audio/math-a12-f02/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "So how do we jump straight to any term? Start at the first term, a, one chair. To reach the second term, add one d. The third term is two d's along, and the fourth term is three d's along. Each time, the number of steps is one less than the position, because the first chair needed no step at all. So the nth term is a, plus n minus one lots of d. Now test the guess. A stack of twenty chairs is nineteen steps above one chair. That's eighty plus nineteen sixes, which is one hundred and ninety-four centimetres, not two hundred. The guess added one chair too many.",
+      "audioFile": "public/audio/math-a12-f02/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Here's why arithmetic sequences look so familiar. Plot each stack's height against the number of chairs. Every extra chair goes up by d, the same amount each time, so the points lie on a straight line. Expand the formula, and you get d n, plus a minus d. That's a linear function of n, and its gradient is d. For the chairs, a sub n is six n plus seventy-four, so the line has gradient six. It would cross the vertical axis at seventy-four, but there's no stack of zero chairs, because n starts at one. And the points sit only at whole numbers, because you can't stack part of a chair, so we don't join them up.",
+      "audioFile": "public/audio/math-a12-f02/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Let's use the formula. An arithmetic sequence has first term five, and common difference three. Find the tenth term. That's nine steps of three after the first term, so a sub ten is five plus twenty-seven, which is thirty-two. Now, which term equals fifty? Set the formula equal to fifty. Five, plus n minus one lots of three, equals fifty. Take away five, and n minus one lots of three is forty-five. Divide by three, and n minus one is fifteen. So n is sixteen, and fifty is the sixteenth term. Check: five plus fifteen threes is fifty.",
+      "audioFile": "public/audio/math-a12-f02/scene-05.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Here's a useful twist. Can a stack be exactly one hundred and fifty centimetres tall? Set the formula equal to one hundred and fifty. Eighty, plus n minus one lots of six, equals one hundred and fifty. So n minus one is seventy over six, and n is twelve and two thirds. That's not a whole number, and you can't have two thirds of a chair. So one hundred and fifty is not a term. On the graph, the line passes one hundred and fifty between the twelfth and thirteenth points, which are one hundred and forty-six and one hundred and fifty-two.",
+      "audioFile": "public/audio/math-a12-f02/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Sometimes you're given two terms instead. The fourth term is thirteen, and the ninth term is thirty-three. Find a and d. From the fourth term to the ninth is five steps, and the value rises by twenty, from thirteen to thirty-three. So five d is twenty, and d is four. That's the same as subtracting the two equations. Now step back from the fourth term to the first. That's three steps of four, so a is thirteen minus twelve, which is one. Check: the ninth term is one plus eight fours, which is thirty-three.",
+      "audioFile": "public/audio/math-a12-f02/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "Now a decreasing one. An arithmetic sequence starts at seven, with common difference minus four. Which term is the first negative one? The formula gives a sub n equals seven, plus n minus one lots of minus four, which simplifies to eleven minus four n. Set that below zero. Then four n is bigger than eleven, so n is bigger than two point seven five. But n is a position, so it must be a whole number. The first whole number above two point seven five is three. Check: the terms are seven, three, and then minus one. And the gradient here is minus four, the same as d.",
+      "audioFile": "public/audio/math-a12-f02/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "To remember why it's n minus one, think of fence posts. Five posts in a row have only four gaps between them. Terms are the posts, and the steps are the gaps. So the nth term sits n minus one steps after the first.",
+      "audioFile": "public/audio/math-a12-f02/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. An arithmetic sequence has first term twelve, and common difference minus five. Find the twentieth term. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f02/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The twentieth term is nineteen steps after the first. So it's twelve, plus nineteen lots of minus five. That's twelve minus ninety-five, which is minus eighty-three. Minus eighty-eight is wrong. It takes twenty steps, which is one too many.",
+      "audioFile": "public/audio/math-a12-f02/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. The third term of an arithmetic sequence is ten, and the seventh term is twenty-six. Find the first term and the common difference. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f02/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "From the third term to the seventh is four steps, and the value rises by sixteen. So d is four. Now step back two places from the third term: ten minus eight is two, so a is two. Three point two is wrong for d. It divides by five, counting the terms instead of the steps between them.",
+      "audioFile": "public/audio/math-a12-f02/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So a fixed difference d means every term is a, plus n minus one lots of d, and the terms lie on a straight line in n. Next, the total. A supermarket stacks tins in a pyramid: one on top, two below it, then three, down to fifteen on the bottom row. How many tins is that? Adding them one row at a time is slow. Is there a shortcut?",
+      "audioFile": "public/audio/math-a12-f02/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f02/scene-15.wav"
+    }
+  ]
+}

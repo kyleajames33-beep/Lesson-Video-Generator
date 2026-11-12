@@ -1,0 +1,795 @@
+1
+00:00:00,322 --> 00:00:02,517
+Last video ended on a stack of chairs.
+
+2
+00:00:03,422 --> 00:00:05,927
+One chair is eighty centimetres tall, and every
+
+3
+00:00:05,968 --> 00:00:08,453
+chair you add makes the stack six centimetres
+
+4
+00:00:08,494 --> 00:00:08,854
+taller.
+
+5
+00:00:09,557 --> 00:00:11,670
+So how tall is a stack of twenty
+
+6
+00:00:11,711 --> 00:00:11,992
+chairs?
+
+7
+00:00:13,061 --> 00:00:13,664
+Here's a quick guess.
+
+8
+00:00:14,471 --> 00:00:17,086
+Start at eighty, and add twenty sixes.
+
+9
+00:00:17,832 --> 00:00:20,101
+That gives two hundred centimetres, so it would
+
+10
+00:00:20,203 --> 00:00:22,572
+only just fit under a two-metre door.
+
+11
+00:00:23,520 --> 00:00:24,976
+It sounds right, but is it?
+
+12
+00:00:25,981 --> 00:00:27,084
+By the end of the next few minutes,
+
+13
+00:00:27,446 --> 00:00:29,553
+you'll know how to find any term, and
+
+14
+00:00:29,574 --> 00:00:30,858
+whether that guess survives.
+
+15
+00:00:31,621 --> 00:00:35,331
+A sequence like eighty, eighty-six, ninety-two is called
+
+16
+00:00:35,351 --> 00:00:38,941
+an arithmetic sequence, or an arithmetic progression, AP
+
+17
+00:00:38,961 --> 00:00:39,342
+for short.
+
+18
+00:00:40,004 --> 00:00:42,489
+It's arithmetic when every difference between a term
+
+19
+00:00:42,610 --> 00:00:44,373
+and the term before it is the same.
+
+20
+00:00:45,056 --> 00:00:47,664
+That fixed difference is called the common difference,
+
+21
+00:00:47,966 --> 00:00:48,166
+d.
+
+22
+00:00:48,929 --> 00:00:52,494
+Here, eighty-six minus eighty is six, ninety-two minus
+
+23
+00:00:52,535 --> 00:00:55,139
+eighty-six is six, and so on, so d
+
+24
+00:00:55,260 --> 00:00:55,619
+is six.
+
+25
+00:00:56,443 --> 00:00:57,729
+The difference can be negative, too.
+
+26
+00:00:58,272 --> 00:01:02,378
+Twenty, seventeen, fourteen, eleven goes down by three
+
+27
+00:01:02,540 --> 00:01:04,803
+each step, so d is minus three.
+
+28
+00:01:05,585 --> 00:01:08,893
+But one, four, nine, sixteen isn't arithmetic.
+
+29
+00:01:09,496 --> 00:01:12,183
+Its differences are three, five and seven, which
+
+30
+00:01:12,324 --> 00:01:12,824
+aren't the same.
+
+31
+00:01:13,567 --> 00:01:15,492
+So to test a list of terms, check
+
+32
+00:01:15,513 --> 00:01:16,756
+that each difference matches.
+
+33
+00:01:17,499 --> 00:01:19,368
+For a sequence given by a rule, show
+
+34
+00:01:19,409 --> 00:01:21,357
+the difference is the same for every n.
+
+35
+00:01:22,022 --> 00:01:24,316
+So how do we jump straight to any
+
+36
+00:01:24,377 --> 00:01:24,658
+term?
+
+37
+00:01:25,342 --> 00:01:27,890
+Start at the first term, a, one chair.
+
+38
+00:01:28,533 --> 00:01:30,971
+To reach the second term, add one d.
+
+39
+00:01:31,616 --> 00:01:34,147
+The third term is two d's along, and
+
+40
+00:01:34,167 --> 00:01:36,176
+the fourth term is three d's along.
+
+41
+00:01:36,839 --> 00:01:38,966
+Each time, the number of steps is one
+
+42
+00:01:39,086 --> 00:01:40,350
+less than the position,
+
+43
+00:01:40,892 --> 00:01:42,698
+because the first chair needed no step at
+
+44
+00:01:42,798 --> 00:01:42,918
+all.
+
+45
+00:01:43,521 --> 00:01:46,595
+So the nth term is a, plus n
+
+46
+00:01:46,656 --> 00:01:48,202
+minus one lots of d.
+
+47
+00:01:49,010 --> 00:01:49,857
+Now test the guess.
+
+48
+00:01:50,564 --> 00:01:53,291
+A stack of twenty chairs is nineteen steps
+
+49
+00:01:53,453 --> 00:01:54,495
+above one chair.
+
+50
+00:01:55,117 --> 00:01:58,222
+That's eighty plus nineteen sixes, which is one
+
+51
+00:01:58,283 --> 00:02:01,007
+hundred and ninety-four centimetres, not two hundred.
+
+52
+00:02:01,569 --> 00:02:03,518
+The guess added one chair too many.
+
+53
+00:02:04,155 --> 00:02:07,085
+Here's why arithmetic sequences look so familiar.
+
+54
+00:02:07,850 --> 00:02:10,021
+Plot each stack's height against the number of
+
+55
+00:02:10,102 --> 00:02:10,443
+chairs.
+
+56
+00:02:11,248 --> 00:02:13,591
+Every extra chair goes up by d, the
+
+57
+00:02:13,633 --> 00:02:15,976
+same amount each time, so the points lie
+
+58
+00:02:16,078 --> 00:02:16,878
+on a straight line.
+
+59
+00:02:17,701 --> 00:02:19,846
+Expand the formula, and you get d n,
+
+60
+00:02:20,167 --> 00:02:21,470
+plus a minus d.
+
+61
+00:02:22,273 --> 00:02:24,158
+That's a linear function of n, and its
+
+62
+00:02:24,199 --> 00:02:25,141
+gradient is d.
+
+63
+00:02:25,964 --> 00:02:28,429
+For the chairs, a sub n is six
+
+64
+00:02:28,570 --> 00:02:31,295
+n plus seventy-four, so the line has gradient
+
+65
+00:02:31,356 --> 00:02:31,655
+six.
+
+66
+00:02:32,499 --> 00:02:34,805
+It would cross the vertical axis at seventy-four,
+
+67
+00:02:35,187 --> 00:02:37,795
+but there's no stack of zero chairs, because
+
+68
+00:02:38,017 --> 00:02:38,778
+n starts at one.
+
+69
+00:02:39,521 --> 00:02:41,645
+And the points sit only at whole numbers,
+
+70
+00:02:41,987 --> 00:02:43,749
+because you can't stack part of a chair,
+
+71
+00:02:44,131 --> 00:02:45,212
+so we don't join them up.
+
+72
+00:02:45,783 --> 00:02:46,616
+Let's use the formula.
+
+73
+00:02:47,402 --> 00:02:50,569
+An arithmetic sequence has first term five, and
+
+74
+00:02:50,609 --> 00:02:51,772
+common difference three.
+
+75
+00:02:52,374 --> 00:02:53,688
+Find the tenth term.
+
+76
+00:02:54,374 --> 00:02:56,458
+That's nine steps of three after the first
+
+77
+00:02:56,498 --> 00:02:59,785
+term, so a sub ten is five plus
+
+78
+00:02:59,825 --> 00:03:01,388
+twenty-seven, which is thirty-two.
+
+79
+00:03:02,271 --> 00:03:03,798
+Now, which term equals fifty?
+
+80
+00:03:04,585 --> 00:03:06,196
+Set the formula equal to fifty.
+
+81
+00:03:06,861 --> 00:03:08,868
+Five, plus n minus one lots of three,
+
+82
+00:03:09,010 --> 00:03:09,611
+equals fifty.
+
+83
+00:03:10,274 --> 00:03:11,095
+Take away five,
+
+84
+00:03:11,598 --> 00:03:13,181
+and n minus one lots of three is
+
+85
+00:03:13,222 --> 00:03:13,883
+forty-five.
+
+86
+00:03:14,385 --> 00:03:16,580
+Divide by three, and n minus one is
+
+87
+00:03:16,641 --> 00:03:17,063
+fifteen.
+
+88
+00:03:17,547 --> 00:03:20,181
+So n is sixteen, and fifty is the
+
+89
+00:03:20,282 --> 00:03:21,066
+sixteenth term.
+
+90
+00:03:21,769 --> 00:03:22,009
+Check:
+
+91
+00:03:22,572 --> 00:03:24,638
+five plus fifteen threes is fifty.
+
+92
+00:03:25,424 --> 00:03:26,374
+Here's a useful twist.
+
+93
+00:03:27,041 --> 00:03:29,335
+Can a stack be exactly one hundred and
+
+94
+00:03:29,356 --> 00:03:30,342
+fifty centimetres tall?
+
+95
+00:03:31,167 --> 00:03:33,001
+Set the formula equal to one hundred and
+
+96
+00:03:33,041 --> 00:03:33,323
+fifty.
+
+97
+00:03:34,107 --> 00:03:36,253
+Eighty, plus n minus one lots of six,
+
+98
+00:03:36,734 --> 00:03:37,937
+equals one hundred and fifty.
+
+99
+00:03:38,739 --> 00:03:41,184
+So n minus one is seventy over six,
+
+100
+00:03:41,625 --> 00:03:43,810
+and n is twelve and two thirds.
+
+101
+00:03:44,553 --> 00:03:46,322
+That's not a whole number, and you can't
+
+102
+00:03:46,363 --> 00:03:47,670
+have two thirds of a chair.
+
+103
+00:03:48,455 --> 00:03:50,301
+So one hundred and fifty is not a
+
+104
+00:03:50,342 --> 00:03:50,602
+term.
+
+105
+00:03:51,486 --> 00:03:53,469
+On the graph, the line passes one hundred
+
+106
+00:03:53,490 --> 00:03:55,873
+and fifty between the twelfth and thirteenth points,
+
+107
+00:03:56,215 --> 00:03:58,338
+which are one hundred and forty-six and one
+
+108
+00:03:58,359 --> 00:03:59,099
+hundred and fifty-two.
+
+109
+00:03:59,701 --> 00:04:01,749
+Sometimes you're given two terms instead.
+
+110
+00:04:02,511 --> 00:04:04,518
+The fourth term is thirteen, and the ninth
+
+111
+00:04:04,558 --> 00:04:05,682
+term is thirty-three.
+
+112
+00:04:06,284 --> 00:04:07,311
+Find a and d.
+
+113
+00:04:08,255 --> 00:04:10,098
+From the fourth term to the ninth is
+
+114
+00:04:10,219 --> 00:04:10,820
+five steps,
+
+115
+00:04:11,421 --> 00:04:14,246
+and the value rises by twenty, from thirteen
+
+116
+00:04:14,306 --> 00:04:14,887
+to thirty-three.
+
+117
+00:04:15,651 --> 00:04:18,306
+So five d is twenty, and d is
+
+118
+00:04:18,467 --> 00:04:18,688
+four.
+
+119
+00:04:19,354 --> 00:04:21,227
+That's the same as subtracting the two equations.
+
+120
+00:04:22,054 --> 00:04:24,268
+Now step back from the fourth term to
+
+121
+00:04:24,289 --> 00:04:24,751
+the first.
+
+122
+00:04:25,416 --> 00:04:28,466
+That's three steps of four, so a is
+
+123
+00:04:28,668 --> 00:04:30,935
+thirteen minus twelve, which is one.
+
+124
+00:04:31,699 --> 00:04:31,959
+Check:
+
+125
+00:04:32,583 --> 00:04:35,213
+the ninth term is one plus eight fours,
+
+126
+00:04:35,616 --> 00:04:36,358
+which is thirty-three.
+
+127
+00:04:37,098 --> 00:04:38,631
+Now a decreasing one.
+
+128
+00:04:39,216 --> 00:04:42,268
+An arithmetic sequence starts at seven, with common
+
+129
+00:04:42,289 --> 00:04:43,653
+difference minus four.
+
+130
+00:04:44,397 --> 00:04:46,527
+Which term is the first negative one?
+
+131
+00:04:47,290 --> 00:04:49,736
+The formula gives a sub n equals seven,
+
+132
+00:04:50,218 --> 00:04:53,124
+plus n minus one lots of minus four,
+
+133
+00:04:53,506 --> 00:04:56,052
+which simplifies to eleven minus four n.
+
+134
+00:04:56,856 --> 00:04:58,141
+Set that below zero.
+
+135
+00:04:58,745 --> 00:05:01,134
+Then four n is bigger than eleven, so
+
+136
+00:05:01,516 --> 00:05:03,844
+n is bigger than two point seven five.
+
+137
+00:05:04,609 --> 00:05:06,419
+But n is a position, so it must
+
+138
+00:05:06,440 --> 00:05:07,305
+be a whole number.
+
+139
+00:05:07,829 --> 00:05:09,579
+The first whole number above two point seven
+
+140
+00:05:09,620 --> 00:05:10,827
+five is three.
+
+141
+00:05:11,631 --> 00:05:13,255
+Check: the terms are seven,
+
+142
+00:05:13,757 --> 00:05:15,280
+three, and then minus one.
+
+143
+00:05:15,823 --> 00:05:17,889
+And the gradient here is minus four, the
+
+144
+00:05:17,930 --> 00:05:18,471
+same as d.
+
+145
+00:05:19,276 --> 00:05:21,970
+To remember why it's n minus one, think
+
+146
+00:05:22,011 --> 00:05:22,090
+of
+
+147
+00:05:22,654 --> 00:05:23,297
+fence posts.
+
+148
+00:05:23,860 --> 00:05:25,948
+Five posts in a row have only four
+
+149
+00:05:26,009 --> 00:05:26,811
+gaps between them.
+
+150
+00:05:27,435 --> 00:05:29,442
+Terms are the posts, and the steps are
+
+151
+00:05:29,463 --> 00:05:29,844
+the gaps.
+
+152
+00:05:30,487 --> 00:05:33,550
+So the nth term sits n minus one
+
+153
+00:05:33,631 --> 00:05:34,972
+steps after the first.
+
+154
+00:05:37,762 --> 00:05:38,145
+Your turn.
+
+155
+00:05:39,011 --> 00:05:42,419
+An arithmetic sequence has first term twelve, and
+
+156
+00:05:42,499 --> 00:05:44,083
+common difference minus five.
+
+157
+00:05:44,648 --> 00:05:46,063
+Find the twentieth term.
+
+158
+00:05:46,649 --> 00:05:47,476
+Pause here to answer.
+
+159
+00:05:58,201 --> 00:06:01,140
+The twentieth term is nineteen steps after the
+
+160
+00:06:01,180 --> 00:06:01,482
+first.
+
+161
+00:06:02,044 --> 00:06:04,968
+So it's twelve, plus nineteen lots of minus
+
+162
+00:06:05,008 --> 00:06:05,309
+five.
+
+163
+00:06:06,030 --> 00:06:09,642
+That's twelve minus ninety-five, which is minus eighty-three.
+
+164
+00:06:10,589 --> 00:06:12,025
+Minus eighty-eight is wrong.
+
+165
+00:06:12,428 --> 00:06:14,357
+It takes twenty steps, which is one too
+
+166
+00:06:14,398 --> 00:06:14,599
+many.
+
+167
+00:06:16,257 --> 00:06:16,761
+Last one.
+
+168
+00:06:17,446 --> 00:06:19,833
+The third term of an arithmetic sequence is
+
+169
+00:06:19,954 --> 00:06:20,315
+ten,
+
+170
+00:06:20,837 --> 00:06:22,602
+and the seventh term is twenty-six.
+
+171
+00:06:23,345 --> 00:06:25,949
+Find the first term and the common difference.
+
+172
+00:06:26,737 --> 00:06:27,566
+Pause here to answer.
+
+173
+00:06:38,435 --> 00:06:40,402
+From the third term to the seventh is
+
+174
+00:06:40,544 --> 00:06:41,186
+four steps,
+
+175
+00:06:41,809 --> 00:06:43,576
+and the value rises by sixteen.
+
+176
+00:06:44,160 --> 00:06:45,135
+So d is four.
+
+177
+00:06:46,021 --> 00:06:48,402
+Now step back two places from the third
+
+178
+00:06:48,443 --> 00:06:48,723
+term:
+
+179
+00:06:49,404 --> 00:06:50,824
+ten minus eight is two,
+
+180
+00:06:51,326 --> 00:06:52,326
+so a is two.
+
+181
+00:06:53,168 --> 00:06:54,917
+Three point two is wrong for d.
+
+182
+00:06:55,561 --> 00:06:58,329
+It divides by five, counting the terms instead
+
+183
+00:06:58,350 --> 00:06:59,392
+of the steps between them.
+
+184
+00:07:00,954 --> 00:07:04,316
+So a fixed difference d means every term
+
+185
+00:07:04,437 --> 00:07:06,677
+is a, plus n minus one lots of
+
+186
+00:07:06,738 --> 00:07:06,957
+d,
+
+187
+00:07:07,479 --> 00:07:09,279
+and the terms lie on a straight line
+
+188
+00:07:09,400 --> 00:07:09,800
+in n.
+
+189
+00:07:10,723 --> 00:07:11,889
+Next, the total.
+
+190
+00:07:12,513 --> 00:07:14,697
+A supermarket stacks tins in a pyramid:
+
+191
+00:07:15,199 --> 00:07:17,483
+one on top, two below it, then three,
+
+192
+00:07:17,845 --> 00:07:19,608
+down to fifteen on the bottom row.
+
+193
+00:07:20,251 --> 00:07:21,416
+How many tins is that?
+
+194
+00:07:22,242 --> 00:07:23,754
+Adding them one row at a time is
+
+195
+00:07:23,836 --> 00:07:24,178
+slow.
+
+196
+00:07:24,804 --> 00:07:25,630
+Is there a shortcut?
+
+197
+00:07:28,388 --> 00:07:29,271
+Here are the key notes.
+
+198
+00:07:29,794 --> 00:07:31,562
+Pause the video if you need more time
+
+199
+00:07:31,583 --> 00:07:32,064
+to copy them.

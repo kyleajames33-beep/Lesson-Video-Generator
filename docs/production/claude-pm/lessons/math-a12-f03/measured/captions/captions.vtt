@@ -1,0 +1,562 @@
+WEBVTT
+
+00:00:00.342 --> 00:00:02.979
+Last video ended on this pyramid of tins.
+
+00:00:03.462 --> 00:00:06.007
+There's one tin on top, then two, then
+
+00:00:06.089 --> 00:00:08.494
+three, down to fifteen on the bottom row.
+
+00:00:09.137 --> 00:00:10.164
+How many tins is that?
+
+00:00:11.029 --> 00:00:12.813
+Adding fifteen numbers one at a time is
+
+00:00:13.075 --> 00:00:14.598
+slow, and it's easy to slip.
+
+00:00:15.261 --> 00:00:17.028
+There's a famous trick that does it in
+
+00:00:17.210 --> 00:00:17.671
+one line.
+
+00:00:18.235 --> 00:00:20.501
+But a trick isn't much use unless you
+
+00:00:20.542 --> 00:00:21.644
+know why it works.
+
+00:00:22.368 --> 00:00:24.673
+So why does it work, and does it
+
+00:00:24.714 --> 00:00:26.539
+work for every arithmetic sequence?
+
+00:00:27.323 --> 00:00:29.339
+Pair the top row with the bottom row.
+
+00:00:29.843 --> 00:00:31.536
+One plus fifteen is sixteen.
+
+00:00:32.242 --> 00:00:34.146
+Now pair the second row with the second
+
+00:00:34.187 --> 00:00:35.910
+last: two plus fourteen,
+
+00:00:36.432 --> 00:00:37.173
+also sixteen.
+
+00:00:38.015 --> 00:00:40.118
+Every pair gives the same total, because each
+
+00:00:40.160 --> 00:00:42.323
+time you move in one row, the top
+
+00:00:42.364 --> 00:00:44.106
+number goes up by one and the bottom
+
+00:00:44.127 --> 00:00:45.369
+number goes down by one.
+
+00:00:46.276 --> 00:00:46.799
+Here's the picture.
+
+00:00:47.423 --> 00:00:49.774
+Copy the pyramid, turn it upside down, and
+
+00:00:49.896 --> 00:00:51.000
+fit it against the first.
+
+00:00:51.704 --> 00:00:54.689
+Every row now holds sixteen tins, and there
+
+00:00:54.710 --> 00:00:57.574
+are fifteen rows, so the shape holds fifteen
+
+00:00:57.796 --> 00:00:58.777
+times sixteen.
+
+00:00:59.141 --> 00:01:00.497
+That's two hundred and forty.
+
+00:01:01.181 --> 00:01:03.512
+The pyramid is exactly half of that: one
+
+00:01:03.553 --> 00:01:04.517
+hundred and twenty tins.
+
+00:01:05.302 --> 00:01:08.339
+The same thing happens in any arithmetic sequence.
+
+00:01:09.043 --> 00:01:11.311
+Write the sum forwards, from the first term,
+
+00:01:11.613 --> 00:01:13.842
+a, up to the last term, a sub
+
+00:01:13.903 --> 00:01:13.942
+n.
+
+00:01:14.647 --> 00:01:17.003
+Then write the same sum backwards underneath.
+
+00:01:17.806 --> 00:01:20.147
+In each column, the top term goes up
+
+00:01:20.268 --> 00:01:22.629
+by d and the bottom term goes down
+
+00:01:22.769 --> 00:01:24.970
+by d, so every column adds to a
+
+00:01:25.410 --> 00:01:26.271
+plus a sub n.
+
+00:01:27.112 --> 00:01:29.236
+There are n columns, so two lots of
+
+00:01:29.257 --> 00:01:32.142
+S sub n is n times a plus
+
+00:01:32.304 --> 00:01:32.744
+a sub n.
+
+00:01:33.588 --> 00:01:35.675
+Halve it, and S sub n is n
+
+00:01:35.756 --> 00:01:38.165
+over two, times a plus a sub n.
+
+00:01:39.008 --> 00:01:41.252
+In words, it's the average of the first
+
+00:01:41.353 --> 00:01:43.718
+and last terms, times how many terms there
+
+00:01:43.779 --> 00:01:43.878
+are.
+
+00:01:44.408 --> 00:01:46.116
+Often you don't know the last term.
+
+00:01:46.619 --> 00:01:48.824
+But you do know it's a, plus n
+
+00:01:48.885 --> 00:01:50.348
+minus one lots of d.
+
+00:01:51.171 --> 00:01:52.997
+Swap that in for a sub n, and
+
+00:01:53.118 --> 00:01:55.827
+the bracket becomes two a, plus n minus
+
+00:01:56.009 --> 00:01:56.911
+one lots of d.
+
+00:01:57.735 --> 00:02:00.001
+So S sub n is also n over
+
+00:02:00.042 --> 00:02:03.171
+two, times two a plus n minus one
+
+00:02:03.392 --> 00:02:03.953
+lots of d.
+
+00:02:04.757 --> 00:02:07.230
+It's the same sum, written with a, d
+
+00:02:07.532 --> 00:02:07.913
+and n.
+
+00:02:08.800 --> 00:02:09.686
+Test it on the pyramid.
+
+00:02:10.230 --> 00:02:12.776
+With a and d both one, and n
+
+00:02:12.898 --> 00:02:15.906
+equal to fifteen, it's fifteen over two, times
+
+00:02:16.127 --> 00:02:17.170
+two plus fourteen.
+
+00:02:17.853 --> 00:02:20.304
+That's seven and a half times sixteen, which
+
+00:02:20.365 --> 00:02:21.651
+is one hundred and twenty again.
+
+00:02:22.575 --> 00:02:23.917
+Use the first form when you know the
+
+00:02:23.958 --> 00:02:26.103
+last term, and the second when you know
+
+00:02:26.164 --> 00:02:27.065
+the common difference.
+
+00:02:27.748 --> 00:02:29.912
+Find the sum of the first twenty terms
+
+00:02:30.193 --> 00:02:32.578
+of three, seven, eleven, and so on.
+
+00:02:33.220 --> 00:02:35.495
+Here a is three, d is four, and
+
+00:02:35.718 --> 00:02:36.462
+n is twenty.
+
+00:02:37.005 --> 00:02:38.670
+We don't know the last term, so use
+
+00:02:38.711 --> 00:02:39.553
+the second form.
+
+00:02:39.876 --> 00:02:43.184
+That's ten, times six plus nineteen fours.
+
+00:02:43.867 --> 00:02:46.720
+Nineteen fours is seventy-six, so it's ten times
+
+00:02:46.822 --> 00:02:48.750
+eighty-two, which is eight hundred and twenty.
+
+00:02:49.495 --> 00:02:50.319
+Check with the first form.
+
+00:02:50.782 --> 00:02:53.623
+The twentieth term is three plus seventy-six, which
+
+00:02:53.664 --> 00:02:56.725
+is seventy-nine, and ten times three plus seventy-nine
+
+00:02:56.906 --> 00:02:58.326
+is also eight hundred and twenty.
+
+00:02:59.101 --> 00:03:01.207
+Now, the sum of all the whole numbers
+
+00:03:01.288 --> 00:03:02.893
+from fifty to two hundred.
+
+00:03:03.778 --> 00:03:05.973
+It's arithmetic, with d equal to one.
+
+00:03:06.616 --> 00:03:08.425
+The first term is fifty, and the last
+
+00:03:08.566 --> 00:03:10.776
+is two hundred, so the first form fits.
+
+00:03:11.422 --> 00:03:12.976
+But how many terms are there?
+
+00:03:13.461 --> 00:03:14.428
+Not one hundred and fifty.
+
+00:03:14.931 --> 00:03:17.998
+It's two hundred minus fifty, plus one, which
+
+00:03:18.038 --> 00:03:19.261
+is one hundred and fifty-one.
+
+00:03:20.065 --> 00:03:21.933
+So the sum is one hundred and fifty-one
+
+00:03:22.074 --> 00:03:24.464
+over two, times fifty plus two hundred.
+
+00:03:25.308 --> 00:03:27.632
+That's one hundred and fifty-one, times one hundred
+
+00:03:27.653 --> 00:03:30.538
+and twenty-five, which is eighteen thousand, eight hundred
+
+00:03:30.559 --> 00:03:31.239
+and seventy-five.
+
+00:03:31.890 --> 00:03:32.332
+Sometimes n
+
+00:03:33.059 --> 00:03:33.784
+is the unknown.
+
+00:03:34.489 --> 00:03:37.132
+How many terms of four, plus nine, plus
+
+00:03:37.214 --> 00:03:39.517
+fourteen, and so on, are needed for the
+
+00:03:39.578 --> 00:03:41.581
+sum to first go over five hundred?
+
+00:03:42.403 --> 00:03:44.846
+Here a is four and d is five,
+
+00:03:45.328 --> 00:03:47.471
+so S sub n is n over two,
+
+00:03:47.552 --> 00:03:49.174
+times five n plus three.
+
+00:03:50.016 --> 00:03:51.961
+Set that above five hundred, and you get
+
+00:03:52.002 --> 00:03:53.304
+a quadratic inequality.
+
+00:03:54.027 --> 00:03:56.655
+Its positive root is about thirteen point eight
+
+00:03:56.737 --> 00:03:57.037
+five.
+
+00:03:57.741 --> 00:03:59.950
+But n must be a whole number, so
+
+00:03:59.991 --> 00:04:01.719
+the first one that works is fourteen.
+
+00:04:02.406 --> 00:04:03.155
+Check both sides.
+
+00:04:03.761 --> 00:04:06.165
+Thirteen terms make four hundred and forty-two, which
+
+00:04:06.366 --> 00:04:06.886
+isn't enough,
+
+00:04:07.428 --> 00:04:10.113
+and fourteen terms make five hundred and eleven.
+
+00:04:10.896 --> 00:04:13.380
+Because every term is positive, the sum only
+
+00:04:13.441 --> 00:04:15.525
+grows, so fourteen is the first.
+
+00:04:16.210 --> 00:04:16.934
+Here's a surprise.
+
+00:04:17.458 --> 00:04:20.389
+How many terms of eleven, plus nine, plus
+
+00:04:20.410 --> 00:04:22.918
+seven, and so on, add up to thirty-two?
+
+00:04:23.742 --> 00:04:26.525
+Here a is eleven and d is minus
+
+00:04:26.586 --> 00:04:29.410
+two, so S sub n simplifies to n
+
+00:04:29.551 --> 00:04:31.213
+times twelve minus n.
+
+00:04:32.015 --> 00:04:34.340
+Set that equal to thirty-two, and the quadratic
+
+00:04:34.421 --> 00:04:35.122
+has two roots:
+
+00:04:35.664 --> 00:04:36.686
+four and eight.
+
+00:04:37.550 --> 00:04:39.502
+Both are whole numbers, and both work.
+
+00:04:40.531 --> 00:04:41.664
+Four terms make thirty-two.
+
+00:04:42.250 --> 00:04:45.338
+The next four terms are three, one, minus
+
+00:04:45.419 --> 00:04:47.404
+one and minus three, and they add to
+
+00:04:47.445 --> 00:04:49.891
+zero, so eight terms make thirty-two again.
+
+00:04:50.694 --> 00:04:52.418
+When the terms go negative, the sum can
+
+00:04:52.460 --> 00:04:54.645
+come back down, so check every root.
+
+00:04:55.325 --> 00:04:56.239
+Here's the short version.
+
+00:04:56.741 --> 00:04:59.024
+An arithmetic sum is the average of the
+
+00:04:59.104 --> 00:05:01.726
+first and last terms, times how many terms
+
+00:05:01.767 --> 00:05:02.087
+there are.
+
+00:05:02.788 --> 00:05:05.610
+It's guaranteed for arithmetic sequences, because their terms
+
+00:05:05.790 --> 00:05:07.052
+always pair up evenly.
+
+00:05:07.753 --> 00:05:08.841
+Other lists might not.
+
+00:05:09.624 --> 00:05:11.790
+For one, plus two, plus four,
+
+00:05:12.311 --> 00:05:13.514
+it gives seven and a half,
+
+00:05:14.035 --> 00:05:15.579
+but the real sum is seven.
+
+00:05:18.250 --> 00:05:18.735
+Your turn.
+
+00:05:19.240 --> 00:05:21.366
+Find the sum of the first thirty terms
+
+00:05:21.507 --> 00:05:24.617
+of the arithmetic series five, plus eight, plus
+
+00:05:24.678 --> 00:05:25.841
+eleven, and so on.
+
+00:05:26.447 --> 00:05:27.259
+Pause here to answer.
+
+00:05:37.901 --> 00:05:38.202
+Here a
+
+00:05:38.765 --> 00:05:39.247
+is five,
+
+00:05:39.769 --> 00:05:40.593
+d is three
+
+00:05:41.115 --> 00:05:42.321
+and n is thirty.
+
+00:05:43.084 --> 00:05:46.193
+The thirtieth term is five plus twenty-nine threes,
+
+00:05:46.534 --> 00:05:47.376
+which is ninety-two.
+
+00:05:48.138 --> 00:05:49.499
+So the sum is fifteen,
+
+00:05:50.140 --> 00:05:51.901
+times five plus ninety-two,
+
+00:05:52.482 --> 00:05:55.204
+which is one thousand four hundred and fifty-five.
+
+00:05:56.089 --> 00:05:57.244
+Fifteen hundred is wrong.
+
+00:05:57.768 --> 00:06:00.137
+It uses thirty steps of three, instead of
+
+00:06:00.217 --> 00:06:00.779
+twenty-nine.
+
+00:06:02.443 --> 00:06:02.827
+Last one.
+
+00:06:03.632 --> 00:06:06.617
+How many terms of two, plus six, plus
+
+00:06:06.657 --> 00:06:07.899
+ten, and so on,
+
+00:06:08.420 --> 00:06:10.364
+are needed for the sum to first be
+
+00:06:10.464 --> 00:06:11.706
+more than two hundred?
+
+00:06:12.489 --> 00:06:13.317
+Pause here to answer.
+
+00:06:23.868 --> 00:06:24.168
+Here a
+
+00:06:24.671 --> 00:06:26.356
+is two and d is four,
+
+00:06:26.859 --> 00:06:29.267
+so S sub n simplifies to two n
+
+00:06:29.308 --> 00:06:29.649
+squared.
+
+00:06:30.392 --> 00:06:32.176
+Two n squared is more than two hundred
+
+00:06:32.277 --> 00:06:34.141
+when n squared is more than a hundred,
+
+00:06:34.503 --> 00:06:35.846
+so n is more than ten.
+
+00:06:36.669 --> 00:06:39.537
+Ten terms make exactly two hundred, which isn't
+
+00:06:39.619 --> 00:06:39.838
+more.
+
+00:06:40.542 --> 00:06:42.257
+So the answer is eleven terms.
+
+00:06:42.945 --> 00:06:43.490
+Ten is wrong.
+
+00:06:44.056 --> 00:06:45.944
+It reaches two hundred, but doesn't go over.
+
+00:06:47.615 --> 00:06:50.364
+So pairing explains both sum formulas.
+
+00:06:51.229 --> 00:06:51.551
+Next,
+
+00:06:52.218 --> 00:06:53.064
+real situations.
+
+00:06:53.930 --> 00:06:56.371
+A volunteer crew plants fifty seedlings on its
+
+00:06:56.412 --> 00:06:56.932
+first day,
+
+00:06:57.493 --> 00:06:59.434
+eighty on the second and a hundred and
+
+00:06:59.515 --> 00:07:02.036
+ten on the third, thirty more each day.
+
+00:07:02.939 --> 00:07:05.506
+After twelve days, have they planted more or
+
+00:07:05.627 --> 00:07:07.412
+less than twelve hundred seedlings?
+
+00:07:10.221 --> 00:07:11.105
+Here are the key notes.
+
+00:07:11.627 --> 00:07:13.396
+Pause the video if you need more time
+
+00:07:13.416 --> 00:07:13.898
+to copy them.
