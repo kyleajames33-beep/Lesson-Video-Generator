@@ -45,3 +45,7 @@ d03, d04, d14, i08 and i14 follow after one more small-collision pass.
 17. `math-a12-i08`: the definition box is clear of "after noon: more cars leave" (about 29 s); the scene 3 marker label is below the axis. Root A, 12 Nov.
 18. `math-a12-i14`: the replay stops at t = 2.9 (v −2.97, a −0.6), so every label is true (about 129 s); "(cm)" is inside the margin. Root A, 12 Nov.
 All 13 held Maths videos and i12 are now on this list.
+
+**New queued work (root, 13 Nov):**
+- Brief 239 has four new entries, 29 to 32: i01, i07, i11 and i13, each graded A with a clean 1 fps sweep. Render them after this list, in brief 239's method.
+- Brief 242 (Year 11 upgrade error check and plates) is light work with no speech. Run it in gaps when no render or voicing job can run, for example while the Google quota is spent.
