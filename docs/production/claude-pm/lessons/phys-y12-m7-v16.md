@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V16: Mass-energy equivalence. How does mass-energy accounting explain fusion, annihilation and combustion? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,750 characters, 17 scenes, about 503 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v15's final frame. Last video of Module 7.
 
@@ -70,6 +70,21 @@ Entry knowledge: rest mass invariant (v15); photons and the eV (v10, v11); conse
 Stops after: E = mc², the accounting rule, the Sun's mass loss and fusion, annihilation, combustion, the comparison and its cause. No binding-energy calculations.
 Handoff: Module 8 v01, how cooling radiation allowed matter to form in the early Universe.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the painted Sun, scene 1 (about 31 s); (B) E = mc², then the system box with the energy-out slider, scenes 2 and 3 (about 56 s); (C) the working layout: the Sun's mass loss, then the fusion step, scenes 4 and 5 (about 61 s); (D) the annihilation event, then its numbers, scenes 6 and 7 (about 62 s); (E) the working layout with the painted fuel can, scene 8 (about 36 s); (F) the log-scale chart, scene 9 (about 29 s); (G) the painted balance, scene 10 (about 19 s); (H) the system box and the memory card, scene 11 (about 7 s); question and feedback cards; the handoff to Module 8; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine is needed: this is accounting. The energy-out slider in scene 3 is exact arithmetic (Δm = E/c²), lesson-coded, with the packets leaving and the mass bar falling from the same value.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Oxygen is red (root rule R3).** Wherever an oxygen atom or molecule is drawn (the "O₂" cloud in scene 8, the small molecule in scene 9), oxygen atoms are red discs, carbon dark grey and hydrogen white with an ink outline.
+- **Flames are plates.** The small flame beside the balance in scene 10 is the painted flame (`chemistry/g1-flame-v1.png`), and the burner flame on the attempt 2 card is the painted Bunsen flame (`chemistry/p01-bunsen-lit-v2.png`).
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *E*, *m*, *c*, *Δm*.
@@ -114,15 +129,21 @@ Visual: working layout beside the event. Givens grouped: "m_e = 9.109 × 10⁻³
 
 Visual: board change to the working layout: the painted fuel can `y12p-fuel-can-v1.png` (about 380 px tall) and a coded oxygen cloud "O₂" inside one dashed system box, tag "system: 1.0 kg petrol + 3.5 kg oxygen = 4.5 kg". Givens: "E = 44 MJ = 4.4 × 10⁷ J (per kg of petrol, site value)". On "the same accounting applies" chip "Δm = E/c² (every process)". On "kilograms" `AlignedAlgebra` "Δm = (4.4 × 10⁷) / (9.0 × 10¹⁶) = 4.9 × 10⁻¹⁰ kg ≈ 0.49 μg" (52 px) in a dark-ink frame. On "billion" "fraction = (4.9 × 10⁻¹⁰) / 4.5 ≈ 1 × 10⁻¹⁰ (1 part in 10¹⁰)", framed; a chip "fraction = 4.9 × 10⁻¹⁰ / 1.0 (petrol only)" is crossed in red, red hand tag "count the oxygen too".
 
+Upgrade (Revision 3): The oxygen beside the fuel can is a small cluster of O₂ molecules, each two red discs (R3), not a plain cloud.
+
 ### 9. one rule, three scales
 > Put the three side by side, as fractions of the mass that reacts. Combustion, about one ten billionth. Fusion, about zero point seven per cent. Annihilation, all of it. Why such a huge gap? Chemical reactions only rearrange electrons, a few electron volts per bond. Nuclear reactions rearrange the particles in the nucleus, millions of electron volts each. Same rule, very different **scale**.
 
 Visual: board change: a horizontal log-scale chart (about 1300 px wide) "fraction of reacting mass converted", ticks 10⁻¹⁰, 10⁻⁵, 1, with the three small plates (fuel can, Sun, and the annihilation box) at the bar ends. On "Combustion, about one ten billionth" a short bar "combustion ≈ 10⁻¹⁰". On "Fusion, about zero point seven per cent" "fusion (Sun) ≈ 7 × 10⁻³". On "Annihilation, all of it" "annihilation = 1". (Optional greyed bar "fission ≈ 9 × 10⁻⁴, not in this video": open decision 2.) On "rearrange electrons" a small coded molecule (about 300 px) with outer electrons shifting, navy hand tag "chemical: a few eV per bond". On "rearrange the particles in the nucleus" a small nucleus (about 300 px) with nucleons regrouping, rose hand tag "nuclear: millions of eV". On "scale" an ink pen bracket "× about 10⁶ per particle".
 
+Upgrade (Revision 3): The small molecule is drawn with oxygen red, carbon dark grey and hydrogen white with an ink outline (R3).
+
 ### 10. why chemistry never noticed
 > That's why chemists could treat mass as perfectly conserved for centuries. Half a microgram out of four and a half kilograms is far too small for an ordinary laboratory balance to **detect**. In nuclear reactions, the mass change is big enough to **measure**.
 
 Visual: the painted top-pan balance `phys-y11-top-pan-balance-v1.png` with a coded display "4.500 000 kg" before and after a small coded flame (no change in any digit). On "detect" grey-blue hand tag "change: 0.000 000 49 g, below an ordinary lab balance's resolution" with a pen ring round the unchanged last digit. On "measure" the fusion mass bars return small with the 0.7% sliver, tag "nuclear: measurable (mass spectrometry)".
+
+Upgrade (Revision 3): The small flame is the painted flame plate (about 120 px tall), not a coded flame. The balance display stays a coded readout in the plate's window.
 
 ### 11. a way to remember
 > Here's the accounting in four words. Energy out, mass **down**. And the exchange rate is c squared.
@@ -143,6 +164,8 @@ Visual: card shrinks to the top; "1.5 × 10²⁷ W" and "0.7%" underline. A give
 > Last one. Burning one kilogram of methane releases fifty five megajoules. A student claims the products of burning have exactly the same mass as the reactants. Evaluate this claim, using a calculation. Pause here to answer.
 
 Visual: `QuestionCard` arrives with its full text and picture in one move (question text 36 px), worded as printed: "Burning 1.0 kg of methane in oxygen releases 55 MJ of energy. A student claims: 'The products of a combustion reaction have exactly the same mass as the reactants.' Evaluate this claim. Support your answer with a calculation. (3 marks)" Picture: a coded gas-burner flame (about 300 px) inside a dashed system box labelled "methane + oxygen". Data chip "c = 3.00 × 10⁸ m s⁻¹". The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's picture is the painted Bunsen flame (`chemistry/p01-bunsen-lit-v2.png`, about 300 px tall) inside the dashed system box tagged "methane + oxygen", in place of the coded flame. It is on screen from the first frame. No mass readouts are drawn. The memory card is hidden.
 
 ### 15. feedback 2 (brief)
 > Delta m equals fifty five times ten to the six, over nine times ten to the sixteen, about six times ten to the minus ten kilograms. So the products are lighter, and the claim isn't exactly **true**. But the change is under a microgram, far too small for an ordinary balance, so the claim works for all practical **purposes**. The slip is saying chemical reactions don't change mass **at all**.
@@ -223,6 +246,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **5,750 characters**, 17 scenes. Characters per scene (1 to 17): 413, 340, 401, 348, 467, 426, 395, 481, 389, 251, 95, 295, 384, 223, 381, 386, 75. At 13.3 characters per second the speech is about 432 s; add about 3 s for the prediction countdown, 2 s for the scene 3 slider, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 71 s of holds and countdowns): **about 503 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 5,678 characters, about 511 s. Reserve trims if the voiced take runs long: scene 2's power-station sentence; scene 10; scene 5's neutrino clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (5,750 characters). The notes scene is 45 s in all, so the estimate is about 503 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v15's final frame (designed in this wave, `phys-y12-m7-v15.md`): paper background; heading "Why does ever more momentum fail to push mass to light speed?"; at the top left a small momentum bar and speed gauge (needle at the "c" stop); at the centre left the painted spacecraft `y12p-spacecraft-v1.png` (exhaust off) with tag "p = 0" and a grey energy bar marked "?" with tag "energy at rest? E = mc²"; at the right the painted Sun `phys-y11-sun-v1.png` with tag "loses ≈ 4 million tonnes per second"; chip "Next: how does mass-energy accounting explain fusion, annihilation and combustion?". Scene 1 turns the chip into the heading, fades the gauges and probe (the probe returns in scene 2) and moves the Sun to the centre left.
@@ -240,6 +265,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, e-mc2, accounting-
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: system boundary and mass-energy ledger, fusion step, annihilation event, log-scale bars, pair production, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 clear change; 2 to 3 camera continue; 3 to 4 clear change to working; 4 to 5 camera continue; 5 to 6 clear change; 6 to 7 camera continue; 7 to 8 clear change to working; 8 to 9 clear change to the chart; 9 to 10 camera continue; 10 to 11 clear change; attempts and feedback card shrink to the top; 15 to 16 clear change; 16 to 17 fade to the notes board.
 
 Holds: hook (3 s countdown), scene 3 slider (2 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Longest set-up (Revision 2): about 62 s (scenes 6 and 7, the annihilation event with its working). Review evidence paths: `learning_review` = `checks/p-y12-m7-v16-learning-review.md`, `science_check` = `checks/p-y12-m7-v16-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -259,6 +286,8 @@ Kit gaps (for the v16 build brief):
 1. **Mass-energy ledger.** A dashed system boundary with a mass bar that drops by E/c² as amber packets leave (scaled display, with the numeric Δm shown).
 2. **Annihilation and pair production.** Particle pair meeting and vanishing into two opposite packets with momentum arrows; reversible for the handoff.
 3. **Log-scale bars.** Three (or four) bars on a 10⁻¹⁰ to 1 axis.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `chemistry/g1-flame-v1.png` (scene 10), `chemistry/p01-bunsen-lit-v2.png` (attempt 2 card). New plate requests: none.
 
 ## Codex asset brief
 
@@ -280,6 +309,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 5 to 7 under Decisions to root.
 11. Revision 2: confirm no learner copy says mass rides on or is carried by photons (1, 3, 5; author note g); the balance claim is scoped to an ordinary balance (10, 15, A2 model answer); grouped denominators (4, 7, 8, 13, 15, model answers); "per bond" (9; author note h); the head-on, equal-energy pair-production tag (16; author note i); the slider and crossed-slip values (Numbers used).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -328,3 +359,27 @@ New plate requests: none.
 Joins: the opening is v15's final frame (unchanged). The final frame is unchanged except for one small grey tag "head-on, equal energies" under "≥ 0.51 MeV each"; root to add it to m8-v01's "Opening frame" (or let m8-v01 scene 1 fade it).
 
 Counts: 5,678 to 5,750 characters (scene sum); about 511 s to about 503 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that the energy-out slider is exact arithmetic (no engine is needed).
+- Scenes 8 and 9: oxygen atoms are drawn red (R3).
+- Scene 10 and the attempt 2 card: coded flames become painted flame plates.
+- Question cards: both carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame (the last frame of Module 7) are unchanged word for word; builders draw both solid (R2).
+
+Counts: 5,750 characters, unchanged; about 503 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

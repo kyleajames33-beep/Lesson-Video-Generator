@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V11: Photoelectric graphs, Planck's constant and the work function. How do photoelectric graphs reveal Planck constant and work function? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,158 characters, 17 scenes, about 529 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v10's final frame.
 
@@ -65,6 +65,19 @@ Main question: *How can a graph of electron energies against light frequency mea
 Entry knowledge: photons, work function, threshold, intensity (v10); h (v09); W = qV (Module 6); gradients and intercepts.
 Stops after: K_max = hf − ϕ by energy conservation, stopping voltage, current-voltage graphs, the K_max and V_stop lines, gradient h (or h/e), intercepts f₀ and ϕ, parallel lines, the sodium data. No matter waves.
 Handoff: v12, why observers must agree on light speed.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the data table beside the painted photocell and lamp, scene 1 (about 37 s); (B) the metal surface with two photons, scene 2 (about 33 s); (C) the photocell circuit with the reverse-voltage slider, then its graph grown to fill the right, scenes 3 and 4 (about 67 s; the graph takes over at about 37 s); (D) the K_max against f axes: the straight line, then a second metal, scenes 5 and 6 (about 57 s); (E) the working layout with the data plot: the gradient, then Planck's constant, scenes 7 and 8 (about 67 s); (F) the data plot zoomed out to the origin, scene 9 (about 37 s); (G) the three-row trap card, scene 10 (about 19 s); (H) the two parallel lines and the memory card, scene 11 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The electrons crossing the photocell against the reverse voltage (scene 3) run on the field motion engine (`field-motion.ts`, a `uniform` field whose deceleration is eV/(md), drawn with `FieldMotionView`): each electron starts with the speed its K_max gives and either reaches the collector or slows, stops and turns back, so the photocurrent readout falls to zero exactly when the slider reaches the stopping voltage. The graphs (scenes 4 to 9) are exact straight lines from K_max = hf − ϕ and the design's data table, lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -216,6 +229,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings; scene 3 changes "field" to "force", same length): **6,158 characters**, 17 scenes. Characters per scene (1 to 17): 488, 436, 491, 396, 455, 305, 472, 430, 487, 249, 97, 479, 428, 255, 308, 307, 75. At 13.3 characters per second the speech is about 463 s; add about 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 66 s of holds and countdowns; the scene 3 and 5 controls run under their narration): **about 529 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: about 544 s. Reserve trims if the voiced take runs long: scene 8's two-phenomena sentence (keep the inset); scene 4's last two sentences (keep the brackets); feedback 1's electron-volt clause (keep it on screen).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,158 characters). The notes scene is 45 s in all, so the estimate is about 529 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v10's final frame (designed in this wave, `phys-y12-m7-v10.md`): paper background; heading "Why can bright low-frequency light fail to eject electrons?"; at the left a coded zinc surface with one amber photon packet "hf" striking one navy electron; in the middle a vertical energy bar "hf (4.96 eV)" split into a slate lower part "ϕ (4.3 eV)" and an orange upper part "left over: kinetic energy"; the equation "K_max = hf − ϕ"; on the right empty axes, "K_max" up and "f" along, with a "?"; chip "Next: how do photoelectric graphs reveal Planck's constant and work function?". Scene 1 turns the chip into the heading and keeps the bar and axes.
@@ -234,6 +249,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v11-learning-review.md`, `science_check` = `checks/p-y12-m7-v11-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -251,6 +268,8 @@ Coded: circuit wiring and polarity, field arrow, electrons, I-V graph, K_max and
 Kit gaps (for the v11 build brief):
 1. **Stopping-voltage circuit.** Reverse supply that slows electrons by eV; electrons with a spread of energies up to K_max (dots do not all carry K_max, per `m7-photoelectric`'s limits); ammeter reading from the number reaching the anode.
 2. **Data plot.** Points plotted from a table, a best-fit line, rise and run brackets, dashed extensions to both axes with intercept labels.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for light meeting matter: photons, a metal's work function, the photocurrent and the stopping voltage (a photocell bench). One would serve the two photoelectric videos; here only the electrons' flight between the plates is an engine run.
 
 ## Codex asset brief
 
@@ -273,6 +292,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
 11. Revision 2: confirm "against the electric force" (3) with the field arrow from the cathode towards the negative anode and the force arrow opposite the motion; the guard-digit chain (4.125, 6.608, −2.275, 5.515, 3.645) in scenes 7 to 9; the grouped denominators (7, 9, 13, A1 model answer); the frequency-marker readouts (5); the "same photon rate (schematic)" tag (4); the crossed slips (7, 9).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -320,3 +341,25 @@ New plate requests: none.
 Joins: the opening is v10's final frame, unchanged in v10 Revision 2. The final frame (scene 16) is unchanged except that the ship is sized (about 900 px wide), so the v12 join holds.
 
 Counts: 6,158 to 6,158 characters (scene sum; scene 3 word swap of equal length); about 544 s to about 529 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the electrons turning back at the stopping voltage are tied to the field motion engine; the graphs stay exact lesson lines.
+- Question cards: both already carry a graph or plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine for light meeting matter: photons, a metal's work function, the photocurrent and the stopping voltage (a photocell bench). One would serve the two photoelectric videos; here only the electrons' flight between the plates is an engine run.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,158 characters, unchanged; about 529 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

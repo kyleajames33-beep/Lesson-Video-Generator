@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V07: Diffraction gratings. How does a grating let us measure wavelength? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,157 characters, 16 scenes, about 532 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v06's final frame.
 
@@ -63,6 +63,19 @@ Main question: *A grating keeps the bright lines where two slits put them, but m
 Entry knowledge: v06's path difference and d sin θ = mλ; trigonometry.
 Stops after: sharpness, the grating equation, line density to d, the screen angle, the worked example, allowed orders, white light, why gratings are better, the investigation. No resolving power.
 Handoff: v08, why rotating a polariser changes transmitted intensity.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the zoom into the ruled slide, scene 1 (about 31 s); (B) the pair-cancellation panel with the slit-count slider, scene 2 (about 44 s); (C) the order fan, scene 3 (about 39 s); (D) the magnified ruler strip, scene 4 (about 30 s); (E) the grating bench, then the zoom out to the order fan, scenes 5 and 6 (about 84 s; the camera zooms out at about 48 s); (F) the white-light fan with the wavelength slider, scene 7 (about 26 s); (G) the two-slit band beside the grating line, scene 8 (about 23 s); (H) the bench for the investigation, scene 9 (about 34 s); (I) the memory card, scene 10 (about 7 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 84 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The order angles come from the waves engine (`waves.ts`): `brightAngles` for the grating's spacing gives every order on the fan (scenes 3, 5, 6 and 7), so the first-order readouts (10.4°, 12.3°, 15.0°) and the highest visible order are read from the same call that places the rays. The slit-count slider in scene 2 is the summed field (`fieldAt`) of N sources for N = 2, 6 and 20, so the peaks sharpen because the sum does; "1000" is the design's illustrative last step and is drawn as a narrowed peak with its tag. Every wave on screen is a slow model wave with a long wavelength, tagged "model"; the readouts carry the design's real values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -209,6 +222,8 @@ Model answer: θ = tan⁻¹(0.280/0.800) = 19.3° (1 mark). d = 1/(500 × 10³) 
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,155, a scene sum of 6,140): **6,157 characters**, 16 scenes. Characters per scene (1 to 16): 406, 589, 513, 401, 637, 480, 346, 304, 457, 92, 261, 441, 271, 389, 495, 75. At 13.3 characters per second the speech is about 463 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s; the sliders run inside their narration): **about 532 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 7's overlap sentence; scene 9's second-order clause (open decision 3).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,157 characters). The notes scene is 45 s in all, so the estimate is about 532 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v06's final frame (`phys-y12-m7-v06.md`, "Final frame"): the slide holder plate with a coded ruled slide at the left; two stacked intensity graphs on a shared angle axis: "two slits" broad bands with a red screen strip and a navy "centre?" bracket; below, a dashed sketch of sharp peaks at the same angles with dashed connectors, tag "same d: same places" and a "?"; heading "Why do two slits produce regularly spaced bright and dark bands?"; chip "Next: how does a grating let us measure wavelength?". Scene 1 turns the chip into the heading and zooms on the ruled slide.
@@ -227,6 +242,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v07-learning-review.md`, `science_check` = `checks/p-y12-m7-v07-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -237,6 +254,8 @@ Have (scaled uniformly only, never stretched):
 Need (new plates): none.
 
 Coded: ruled slide, phase dials, graphs, fans, rays, spots, brackets, spectra, error bars, polarising filter and readout (final frame), working strips, chips, attempt cards and diagram, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the waves engine has no many-slit (grating) intensity helper; the sharpening is shown by summing up to 20 sources.
 
 ## Codex asset brief
 
@@ -256,6 +275,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log site notes 1 to 3 in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -301,3 +322,25 @@ New plate requests: none.
 Joins: the opening is v06's final frame (unchanged in v06 Revision 2). The final frame (scene 15) is unchanged (the new tag fades before the hold), so the v08 join holds.
 
 Counts: 6,155 (joined; scene sum 6,140) to 6,157 characters (scene sum); about 547 s to about 532 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the order fan, its angle readouts and the slit-count slider are tied to the waves engine.
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the waves engine has no many-slit (grating) intensity helper; the sharpening is shown by summing up to 20 sources.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,157 characters, unchanged; about 532 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

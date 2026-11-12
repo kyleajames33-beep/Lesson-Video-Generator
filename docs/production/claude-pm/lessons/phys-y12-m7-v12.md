@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V12: Inertial frames and Einstein's postulates. Why must observers agree on light speed? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,351 characters, 18 scenes, about 549 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v11's final frame.
 
@@ -74,6 +74,20 @@ Entry knowledge: Maxwell's c (v01); interference fringes (v06); Newton's first l
 Stops after: frames, inertial and non-inertial, Galilean addition, the aether and Michelson-Morley with its limits, Einstein's postulates, why they force a common c, moving-source evidence, the price. No γ or dilation.
 Handoff: v13, how two observers can measure different elapsed times.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted spacecraft, the Earth and the light pulse, then the two observers and adding velocities, scenes 1 and 2 (about 64 s; the probe and the frame badges arrive at about 30 s); (B) the spacecraft large with its cabin window: inertial frames, then the three cabin experiments, scenes 3 and 4 (about 64 s; the exhaust goes and the window enlarges at about 39 s); (C) Maxwell's c and the aether, scene 5 (about 36 s); (D) the interferometer schematic, then the evidence ledger beside it, scenes 6 and 7 (about 79 s; the ledger arrives at about 42 s); (E) the postulates card, then the three-step chain, scenes 8 and 9 (about 63 s); (F) the beam pipe with the source-speed slider, scene 10 (about 26 s); (G) the ship and Earth again: the price, scene 11 (about 19 s); (H) the memory card, scene 12 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 79 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine models relativity. The fringe strip of the interferometer (scene 6) comes from the waves engine (`waves.ts`): `sumAt` of two model waves whose path difference the lesson sets, so the "expected shift" and the "no shift" strips are two real sums. The velocity-addition readouts (scene 2) and the source-speed slider (scene 10) are exact arithmetic set beside the measured value, lesson-coded.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Cabin objects are plates where they can be.** The two colliding balls in scene 4 are steel ball plates (`phys-y11-steel-ball-v1.png`), and the small ship in scene 3 is a small copy of the spacecraft plate. The spring stays a coded zigzag because it must stretch; the cabin window, the interferometer and the beam pipe are schematics.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *c*, *v*, *μ₀*, *ε₀*.
@@ -93,10 +107,14 @@ Visual: on "a frame of reference" the two ruler-and-clock badges pulse, with a d
 
 Visual: board change: the spacecraft large at the centre with a coded cut-away window showing the cabin; the painted steel ball `phys-y11-steel-ball-v1.png` floats in the middle. On "An inertial frame" a definition chip "inertial frame: not accelerating; Newton's first law holds". On "coasting with its engines off" the exhaust layer is off and the starfield streams past at a steady rate. On "speed" the ball stays exactly centred while the starfield speeds up and then holds steady; teal hand tag "ball stays put" with a teal pen ring round the ball. On "fire the engines" the exhaust layer `y12p-spacecraft-exhaust-v1.png` fades in. On "the ball drifts to the back wall" the ball moves towards the rear wall of the cabin; a dashed grey arrow "no force?" with a red hand-drawn "?" and red hand tag "first law fails here". On "frame" chip "non-inertial: accelerating (or turning, spinning)". On "Turning and spinning frames" a small coded ship icon curving on a path, tag "turning: non-inertial".
 
+Upgrade (Revision 3): The small ship beside the definition is a small copy of the spacecraft plate (about 160 px wide), not an icon.
+
 ### 4. no experiment reveals uniform motion
 > Here's the deep idea. Inside a closed, coasting cabin, no experiment can tell you how fast you're moving. Collide two balls, time a vibrating spring, anything you like. The results are the same as when the ship is at rest. Only motion relative to something else can be **measured**. There's no special frame that is truly at **rest**.
 
 Visual: the exhaust layer fades out; the cut-away window enlarges. On "Collide two balls" two coded balls collide and rebound in the cabin; on "time a vibrating spring" a coded spring oscillates beside a clock badge. On "The results are the same" a split panel: left "ship at rest" and right "ship at 0.8c", the same collision and spring running identically, readouts equal. On "measured" an orange velocity arrow appears between the ship and Earth only, orange hand tag "only relative motion". On "rest" a chip "absolute rest" is crossed in red.
+
+Upgrade (Revision 3): The two balls that collide in the cabin are steel ball plates (about 44 px), not coded discs.
 
 ### 5. Maxwell's c and the aether
 > Light caused a problem. Maxwell's equations predict that electromagnetic waves travel at c, one over the square root of mu zero epsilon zero, about three times ten to the eight metres per second. But c relative to what? The equations don't mention the source or the observer. Physicists assumed light travels through an invisible medium called the aether, like sound through air. Earth moves around the Sun at about thirty kilometres per second, so it should feel an aether **wind**.
@@ -148,6 +166,8 @@ Visual: `QuestionCard` (subject "Physics") arrives with its full text and pictur
 
 Visual: card shrinks to the top; "constant velocity", "constant speed" and "slowing down" underline. The three plates stay in a row at the right (about 240 px each). On "accelerates" "(a) inertial: constant velocity" and "(b) non-inertial: direction changes → centripetal acceleration" (44 px), each framed, with an orange inward arrow drawn on the car's path. On "down" "(c) non-inertial: decelerating", framed, with an arrow on the lift. On "direction" a chip "car: inertial (constant speed)" fades in and is crossed in red (red hand tag "constant speed ≠ constant velocity"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "(a) spacecraft coasting at constant velocity, engines off | (b) car on a roundabout at constant speed | (c) lift slowing as it arrives at a floor".
+
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. Evaluate this statement. The Michelson Morley experiment proved that the aether does not exist. Pause here to answer.
 
@@ -157,6 +177,8 @@ Visual: `QuestionCard` arrives with its full text and picture in one move (quest
 > The statement goes too far. The experiment was sensitive enough to detect the expected aether wind, and found none, so it's strong evidence against a stationary **aether**. But a null result can't prove something doesn't exist, and rescue ideas fitted the data. The aether was dropped because Einstein's postulates explained the result without **it**. The slip is the word **proved**.
 
 Visual: card shrinks to the top; "proved" and "does not exist" underline. The schematic and its fringe strip (expected 0.4 marker, observed ≈ 0) at the right (about 500 px). On "aether" "expected ≈ 0.4 fringe, detectable ≈ 0.01, observed: no significant shift → strong evidence against a stationary aether" (44 px), framed. On "it" "cannot prove non-existence; the contraction fix was added to fit this result, not independent evidence; relativity explains the result with no aether", framed. On "proved" a chip "proved the aether does not exist" fades in and is crossed in red (red hand tag "strong evidence, not proof"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "statement: the Michelson-Morley experiment proved that the aether does not exist".
 
 ### 17. handoff
 > So every inertial observer measures the same c. Now put that to work. Build a clock from light, a pulse bouncing between two mirrors on the spacecraft. On board, the pulse goes straight up and down. From Earth, the ship moves sideways during each bounce, so the same pulse travels a longer, slanted path, at the same speed. So how can two observers measure different elapsed **times**?
@@ -225,6 +247,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,351 characters**, 18 scenes. Characters per scene (1 to 18): 395, 455, 517, 326, 479, 553, 492, 322, 515, 349, 252, 132, 285, 324, 127, 372, 381, 75. At 13.3 characters per second the speech is about 478 s; add about 3 s for the prediction countdown, 2 s for the scene 10 slider sweep, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 71 s of holds and countdowns): **about 549 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,218 characters, about 552 s. Reserve trims if the voiced take runs long: scene 10 (CERN, open decision 1); scene 4's last sentence; scene 3's turning-frames sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,351 characters). The notes scene is 45 s in all, so the estimate is about 549 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v11's final frame (designed in this wave, `phys-y12-m7-v11.md`): paper background; heading "How do photoelectric graphs reveal Planck's constant and work function?"; at the top left a small coded plot of two parallel K_max against f lines labelled "gradient = h"; a text tag "1905: photons, and relativity"; at the centre left the painted spacecraft `y12p-spacecraft-v1.png` facing right with a speed tag "v = 0.8c"; an amber coded light pulse ahead of it with tags "c measured on board?" and "c measured from Earth?"; chip "Next: why must observers agree on light speed?". Scene 1 turns the chip into the heading and fades the small plot and the 1905 tag.
@@ -242,6 +266,8 @@ In order (kebab-case; 18 scene headings, all `### N.`): hook, frames-galilean, i
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 1 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: frames and badges, cabin cut-away, velocity addition strip, interferometer schematic, evidence ledger, light clock, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue; 2 to 3 clear change to the cabin; 3 to 4 camera continue; 4 to 5 clear change; 5 to 6 clear change to the schematic; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue; 9 to 10 clear change; 10 to 11 clear change; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
 
 Holds: hook (3 s countdown), scene 10 slider sweep (2 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Longest set-up (Revision 2): scenes 6 and 7, about 79 s, with the rotating schematic, the live fringe readout and the ledger arriving. Review evidence paths: `learning_review` = `checks/p-y12-m7-v12-learning-review.md`, `science_check` = `checks/p-y12-m7-v12-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -261,6 +287,8 @@ Kit gaps (for the v12 build brief):
 2. **Interferometer schematic.** Two-arm beams, rotation stage, fringe strip with expected and detectable markers.
 3. **Cabin cut-away.** A coded window in the ship plate's hull showing a floating object that responds to thrust state.
 
+Revision 3 (13 Nov 2026). The steel ball and spacecraft plates are also used small in scenes 3 and 4. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no special-relativity kit in `src/explainer/sims/` (a light clock seen from two frames, γ against speed, and lengths and times compared between frames). One would serve the relativity videos.
+
 ## Codex asset brief
 
 No new plates for v12 (the spacecraft pair is briefed in `phys-y12-m7-v11.md`). `phys-y11-steel-ball-v1.png`, `phys-y11-car-top-v1.png` and `phys-y11-lift-car-v1.png` were inspected on a session contact sheet (6 Nov): no people.
@@ -279,6 +307,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 4 under Decisions to root.
 11. Revision 2: confirm scene 1 no longer claims exact measurements (author note g); scene 6 separates the July 1887 runs from later seasonal tests (author note h); scenes 7 and 16 restrict the criticism to the contraction added to fit this result (author note i); the source-speed slider readouts (Numbers used).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -324,3 +354,26 @@ New plate requests: none.
 Joins: the opening is v11's final frame (unchanged). The final frame (scene 17) is unchanged, so the v13 join holds.
 
 Counts: 6,218 to 6,351 characters (scene sum); about 552 s to about 549 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the interferometer's fringe strips are tied to the waves engine; the rest is exact lesson arithmetic (kit gap recorded).
+- Scenes 3 and 4: a coded ship icon and coded balls become plates.
+- Question cards: both already carry pictures; both feedback scenes gain navy givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no special-relativity kit in `src/explainer/sims/` (a light clock seen from two frames, γ against speed, and lengths and times compared between frames). One would serve the relativity videos.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,351 characters, unchanged; about 549 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

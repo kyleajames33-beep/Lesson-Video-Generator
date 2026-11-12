@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V14: Length contraction. Why can a moving distance be shorter without an object being crushed? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,423 characters, 17 scenes, about 557 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v13's final frame.
 
@@ -68,6 +68,20 @@ Main question: *If the ship's distance to the star is 7.2 light-years and Earth'
 Entry knowledge: time dilation, γ, proper time, the muons (v13); postulates and frames (v12).
 Stops after: l = l₀/γ, proper length, the derivation, simultaneous endpoint measurement, not crushed but real, perpendicular lengths, 60 m and 0.6c, muons in the muon frame, one effect per frame. No paradoxes.
 Handoff: v15, why ever more momentum cannot push mass to light speed.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the Earth, the spacecraft and the 12 and 7.2 light-year brackets, then the equation, scenes 1 and 2 (about 78 s; the equation strip arrives at about 41 s); (B) the painted station along the bottom with the marker post, scene 3 (about 43 s); (C) the close-up of the station deck as a track, scene 4 (about 32 s); (D) the ship large above the deck, scene 5 (about 33 s); (E) the two spacecraft meeting head-on with their rings, scene 6 (about 29 s); (F) the working layout: the passing ship, then the docking bay, scenes 7 and 8 (about 58 s); (G) the two columns for the muons, scenes 9 and 10 (about 68 s); (H) the two rows and the memory card, scene 11 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 78 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine models relativity. The scene 7 speed slider is exact arithmetic (l = l₀/γ): the ink outline over the unscaled ship plate shortens along the motion only, with "γ" and "l" computed from the slider, and the plate itself is never squashed. The two muon columns are the same event worked in two frames from the design's values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The ship plate is never stretched.** Contraction is shown by an ink outline and a ruler over the unscaled plate, as Revision 2 set. The marker post in scene 3, the end markers, the rings and the docking bay bracket stay plain diagrams.
 
 ## Script and shots
 
@@ -220,6 +234,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,423 characters**, 17 scenes. Characters per scene (1 to 17): 550, 489, 569, 431, 437, 390, 379, 402, 615, 295, 155, 280, 310, 359, 374, 313, 75. At 13.3 characters per second the speech is about 483 s; add about 3 s for the prediction countdown, 3 s for the scene 8 screen check, 2 s for the scene 7 slider, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 74 s of holds and countdowns): **about 557 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,338 characters, about 564 s. Reserve trims if the voiced take runs long: scene 6 (rings; keep one sentence and the inset); scene 5's reciprocity sentences; scene 8's screen check.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,423 characters). The notes scene is 45 s in all, so the estimate is about 557 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v13's final frame (designed in this wave, `phys-y12-m7-v13.md`): paper background; heading "How can two observers measure different elapsed times?"; the painted Earth `phys-y11-earth-v1.png` at the left and a coded star at the right, displaced slightly left with an arrow "star approaching at 0.8c" (ship frame shown); the painted spacecraft `y12p-spacecraft-v1.png` between them, held still, facing right; an ink bracket "12 ly (Earth frame)"; a teal bracket "0.8 × 9 = 7.2 ly (ship frame?)"; clock badges "Earth frame: 15 yr" (ink) and "ship's clock: 9 yr" (teal); chip "Next: why can a moving distance be shorter without an object being crushed?". Scene 1 turns the chip into the heading.
@@ -238,6 +254,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), scene 7 slider (2 s), scene 8 screen check (3 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v14-learning-review.md`, `science_check` = `checks/p-y12-m7-v14-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on session contact sheets; scaled uniformly only, never stretched):
@@ -254,6 +272,8 @@ Kit gaps (for the v14 build brief):
 1. **Contracted outline over an unscaled plate.** An outline and ruler whose horizontal length follows l₀/γ while the plate behind keeps its aspect ratio (opacity 40%).
 2. **Frame swap.** One control that holds either the station or the ship still and moves the other, with the attached clock badges.
 3. **Two-frame columns.** v13's atmosphere column plus a contracted copy whose ground rises.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no special-relativity kit in `src/explainer/sims/` (a light clock seen from two frames, γ against speed, and lengths and times compared between frames). One would serve the relativity videos.
 
 ## Codex asset brief
 
@@ -275,6 +295,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 4 under Decisions to root.
 11. Revision 2: re-check the slider values and the crossed "100 × 1.67 = 167 m" slip (Numbers used); confirm the muon counter label "ideal model: constant 0.995c, no energy loss" (9).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -321,3 +343,25 @@ New plate requests: none.
 Joins: the opening is v13's final frame (unchanged). The final frame (scene 16) is unchanged except that the ship is sized (about 900 px wide), so the v15 join holds.
 
 Counts: 6,338 to 6,423 characters (scene sum); about 564 s to about 557 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the speed slider and the two-frame muon columns stay exact lesson arithmetic (kit gap recorded).
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no special-relativity kit in `src/explainer/sims/` (a light clock seen from two frames, γ against speed, and lengths and times compared between frames). One would serve the relativity videos.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,423 characters, unchanged; about 557 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

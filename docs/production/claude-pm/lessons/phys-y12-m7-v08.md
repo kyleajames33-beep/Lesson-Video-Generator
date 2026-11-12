@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V08: Polarisation and Malus's law. Why does rotating a polariser change transmitted intensity? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,283 characters, 16 scenes, about 541 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v07's final frame.
 
@@ -63,6 +63,20 @@ Main question: *Turn one polarising filter in front of another and the light fad
 Entry knowledge: v07's handoff question; v01's transverse EM wave; intensity and amplitude; vector components.
 Stops after: polarisation, the filter's action, ½I₀, Malus's law derived and used, crossed filters, the three-filter chain, the investigation, the significance for the model of light. No Brewster, scattering or applications.
 Handoff: v09, how thermal spectra challenged classical predictions.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's bench with the lamp and the turning filter, scene 1 (about 37 s); (B) the E-arrow view: polarised light, then what a filter does, scenes 2 and 3 (about 75 s; the filter disc arrives at about 43 s); (C) the analyser stage with its slider and growing graph, scene 4 (about 45 s); (D) the two-filter stage: crossed, scene 5 (about 20 s), then a board change for half or cos squared, scene 6 (about 26 s); (E) the working layout under the three-filter stage, scene 7 (about 51 s); (F) the bench for the investigation, scene 8 (about 28 s); (G) the judgement board, scene 9 (about 45 s); (H) the memory card, scene 10 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 75 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** Malus's law is exact arithmetic (E = E_max cos θ, I = I_max cos²θ), so the analyser slider, the three-filter chain and the intensity bars stay lesson-coded, with the passed component, the bar and the point on the cos² graph computed from one angle. The transverse and longitudinal contrast in scene 9 uses the waves engine (`waves.ts`): one `displacement` shown with `WaveStringView` particles in transverse mode and in longitudinal mode, so the sound inset moves along its travel direction and the light model moves across it.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Small pictures on the judgement board are diagrams.** The pictures in scene 9 are the E-arrow diagram and the two particle strips, not drawings of objects. The filter discs stay coded inside the painted slide holders, as root decided.
 
 ## Script and shots
 
@@ -203,6 +217,8 @@ Model answer: Polarisation restricts a wave's oscillation to a single direction 
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,298, a scene sum of 6,283; no narration changed): **6,283 characters**, 16 scenes. Characters per scene (1 to 16): 494, 567, 424, 603, 266, 341, 672, 378, 594, 128, 256, 305, 171, 486, 523, 75. At 13.3 characters per second the speech is about 472 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s; the analyser slider runs inside its narration): **about 541 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 9's aether sentence; scene 8's background clause (open decision 4).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,283 characters). The notes scene is 45 s in all, so the estimate is about 541 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v07's final frame (`phys-y12-m7-v07.md`, "Final frame"): the grating bench, small: the laser module on the optical bench, the beam through a coded circular polarising filter in the slide holder (navy axis line) to a coded sensor readout "I = ?"; a curved navy rotation arrow round the filter; above the beam a "?" with two arrow options (along the beam, across it); a grey chip "sound: diffracts, interferes, longitudinal"; heading "How does a grating let us measure wavelength?"; chip "Next: why does rotating a polariser change transmitted intensity?". Scene 1 turns the chip into the heading, turns the filter in the laser beam, then swaps the laser for the lamp.
@@ -221,6 +237,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v08-learning-review.md`, `science_check` = `checks/p-y12-m7-v08-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -232,6 +250,8 @@ Have (scaled uniformly only, never stretched):
 Need (new plates): `y12p-light-sensor-v1.png` (scene 8), requested in `phys-y12-m7-v02.md`'s Codex asset brief and shared; no separate request here. The optional filter mount is not selected (open decision 1).
 
 Coded: filters and axes, E arrows and components, beam, bars, graphs, table, judgement board, sound inset, working strips, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -252,6 +272,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Confirm the final frame matches the opening assumed in `phys-y12-m7-v09.md`.
 12. Log site notes 1 to 3 in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -298,3 +320,25 @@ New plate requests: none of its own; scene 8 depends on `y12p-light-sensor-v1.pn
 Joins: the opening is v07's final frame (unchanged in v07 Revision 2). The final frame (scene 15) is unchanged (the new tag fades before the hold), so it still matches the opening assumed in `phys-y12-m7-v09.md`.
 
 Counts: 6,298 (joined; scene sum 6,283) to 6,283 characters (scene sum; no narration changed); about 558 s to about 541 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that Malus's law is exact arithmetic (lesson-coded); the transverse and longitudinal contrast is tied to the waves engine.
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,283 characters, unchanged; about 541 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V03: Spectra from different sources. How do different sources produce different spectral patterns? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,291 characters, 15 scenes, about 542 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v02's final frame.
 
@@ -71,6 +71,20 @@ Entry knowledge: v01 and v02; electrons in atoms; wavelength and colour.
 Stops after: continuous, emission and absorption spectra; fingerprints; reflected sunlight; Kirchhoff's rules; the investigation. No Doppler, width or temperature evidence.
 Handoff: v04, what stellar spectra tell us beyond chemical identity.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the three painted sources and their three strips, scene 1 (about 35 s); (B) the spectroscope stage, scene 2 (about 31 s); (C) the filament stage with its zoom inset, scene 3 (about 43 s); (D) the discharge stage with the drop selector, scene 4 (about 52 s); (E) the reference cards, scene 5 (about 43 s); (F) the absorption stage, scene 6 (about 50 s); (G) the reflection inset with the Sun and Moon, scene 7 (about 29 s); (H) the three rules, scene 8 (about 17 s); (I) the investigation bench, scene 9 (about 32 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 52 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The two gas insets run on the particle box engine (`particle-box.ts`, drawn with `ParticleBoxView`): the hot thin gas in the discharge tube (scene 4) and the cool thin vapour in front of the lamp (scene 6) are boxes with a few small particles far apart, at a high and a low `temperature`. The drop selector in scene 4 is exact (the four hydrogen wavelengths and their energy drops) and stays lesson-coded, as do the spectrum strips. The hot dense filament (scene 3) stays a lesson animation: the engine has no attraction between particles, so it cannot hold a solid together.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Sources and cards are plates.** The white source in scene 2 is the painted filament lamp. The white card in scenes 7 and 9 is the painted paper sheet (`phys-y11-paper-sheet-flat-v1.png`). The small source pictures in scenes 1 and 8 are small copies of the lamp and discharge tube plates. The inside of the spectroscope stays a labelled diagram.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -84,6 +98,8 @@ Visual: opens on v02's final frame (see "Opening frame"); the chip "Next: how do
 > A spectroscope spreads light out by wavelength. Inside, a grating or a prism sends each wavelength in a slightly different direction, and how a grating does that is a later video. Visible light is a tiny slice of the electromagnetic spectrum, from about four hundred nanometres for violet to about seven hundred for **red**. So a spectrum is a map. It shows how much light the source gives out at each **wavelength**.
 
 Visual: board change to the spectroscope stage: the pocket spectroscope plate (`y12p-pocket-spectroscope-v1.png`, delivered in brief 191, on its own painted stand, about 500 px wide), its slit facing a coded white source; a coded cut-away shows a grating inside and the beam fanning into colours. On "different direction" the fan spreads violet least to red most, as a grating does (schematic); navy hand tag "each wavelength its own direction". On "electromagnetic spectrum" a small v01 spectrum ribbon appears above; a bracket zooms on the visible band. On "red" the axis "380 to 750 nm" writes under the strip, ticks at 400, 500, 600, 700 nm. On "wavelength" a small brightness-against-wavelength graph traces above the strip, tag "a spectrum: brightness at each wavelength"; navy hand tag "a map" and a navy pen arrow from the graph down to the strip.
+
+Upgrade (Revision 3): The white source at the slit is the painted filament lamp (`phys-y11-filament-lamp-v1.png`, about 240 px tall), not a coded source.
 
 ### 3. hot and dense: every colour
 > Start with the filament. It's a coil of tungsten wire, heated by the current to about twenty-nine hundred kelvin. In a solid, the atoms are packed tightly and interact strongly, so their charges are shaken in every possible way. Remember, accelerating charges radiate. Shake them in every way, and you get every **wavelength**, with no **gaps**. That's a continuous spectrum. Heat the filament more, and it gets brighter, and its light shifts towards the blue **end**. But its smooth spread depends mainly on temperature, not on the metal, which is why it can't identify an element.
@@ -105,20 +121,28 @@ Visual: board change: a reference card column at the right with four strips: "hy
 
 Visual: board change: the filament lamp plate at the left, a coded glass cell of cool sodium vapour (faint grey, tag "cool sodium vapour") between it and the spectroscope. On "Cool atoms sit in their lowest energy level" a small sodium energy ladder appears with every electron on the bottom level; navy hand tag "cool: bottom level". On "up" a rose electron jumps from the bottom level to the next, the incoming yellow wave vanishing into the atom. On "lines" the strip shows a continuous spectrum with two dark lines at 589.0 and 589.6 nm (zoom tag "589.0 and 589.6 nm"); sodium's yellow emission strip from scene 5 slides beneath it, dashed connectors showing identical positions; black hand tag "same places" and a pen bracket joining the dark and bright pairs. On "given out again, but in all directions" small rose arrows leave the gas cloud in every direction, only one pointing on to the spectroscope. On "dark" a tag "dark, not empty". On "The Sun works the same way" the Sun plate (reused) replaces the filament; a coded cut-away arc "hot dense layers" and an outer arc "cooler gas"; the strip becomes the solar strip from scene 1; chip "Fraunhofer lines".
 
+Upgrade (Revision 3): The cell of cool sodium vapour is the painted glass cell (`y12p-vapour-cell-v1.png`, new, about 300 px tall) with the particle box run showing through its window. Fallback if the plate is not delivered: no cell is drawn; a dashed region between the lamp and the spectroscope carries the tag "cool sodium vapour" and the particle box run.
+
 ### 7. reflected sunlight
 > What about sunlight bouncing off the Moon, a cloud or a sheet of white paper? You see the same dark lines, in the same places. Reflection doesn't make a new spectrum. The Moon isn't a glowing gas. It just sends sunlight back, so moonlight carries the Sun's **pattern**. That's also the safe way to look at sunlight. Never point a spectroscope at the Sun. Aim it at white paper or a cloud **instead**.
 
 Visual: board change to the reflection inset: the Sun plate at the upper left, the Moon plate (`y12p-moon-v1.png`, reused from M5) at the upper right, a coded white card below; amber rays Sun → Moon → spectroscope and Sun → card → spectroscope. On "same dark lines" both strips appear, identical to the solar strip, dashed connectors. On "pattern" a crossed chip "moonlight = the Moon's own emission spectrum". On "Never point a spectroscope at the Sun" a red crossed chip "never aim at the Sun". On "instead" a tick chip "use reflected light: white paper or cloud". Hand-font tags: amber "just sent back" on the Moon's ray, black "the Sun's own lines" on the strips; amber pen arrow Sun → Moon → spectroscope.
+
+Upgrade (Revision 3): The white card is the painted paper sheet (about 300 px wide), not a coded card.
 
 ### 8. three rules
 > In the 1850s, Gustav Kirchhoff summed this up in three rules. Here's a way to remember them. Hot and dense, all colours. Hot and thin, bright lines. Cool and thin, in front of something hot, dark lines, in the same **places**.
 
 Visual: board clears to three rows, each with a small source icon and its strip: "hot and dense → continuous"; "hot and thin → bright lines"; "cool and thin in front → dark lines". On "Hot and dense, all colours" the first row pulses; on "Hot and thin, bright lines" the second; on "places" the third, with dashed connectors to the second; the handwritten line writes above, inside a framed memory card (dark-ink frame, 40 px hand lettering): "Hot and dense: all colours. Hot and thin: bright lines. Cool and thin in front: dark lines, same places." Hold about 2 seconds.
 
+Upgrade (Revision 3): Each row's small picture is a small copy of its plate (about 110 px): the filament lamp; the discharge tube; the lamp behind the vapour cell (or the dashed region of the fallback).
+
 ### 9. doing the investigation
 > In the investigation, you view each source through a spectroscope with a wavelength scale. A filament lamp, a few discharge tubes, and sunlight reflected from white paper. For each one, record whether it's continuous, bright lines or dark lines, and read off where the lines sit. Then match them to reference spectra. The discharge tubes run at high voltage and get hot, so switch the supply off before a tube is **changed**.
 
 Visual: board change: the three sources in a row on a coded bench (filament lamp, discharge tube with EHT supply, white card lit by a coded sun ray), the pocket spectroscope on a stand in front of each in turn. On "wavelength scale" a coded scale overlay inside the spectroscope view, 400 to 700 nm. On "record" a coded results table: "source | type | line positions (nm)", filling row by row. On "match them to reference spectra" the reference card column slides in. On "changed" a chip "EHT: switch off before changing tubes; tubes get hot"; red hand tag "switch off first" and a red pen ring round the EHT supply's switch. Navy hand tag "read where the lines sit" on the scale overlay (with "record").
+
+Upgrade (Revision 3): The white card on the bench is the painted paper sheet. The bench stays a plain line and the ray a plain amber line.
 
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. A gas in a discharge tube gives bright lines at four hundred and forty-seven, five hundred and two, five hundred and eighty-eight, six hundred and sixty-eight and seven hundred and seven nanometres. Use the reference spectra to identify the gas, and explain your reasoning. Pause here to answer.
@@ -206,6 +230,8 @@ Model answer: (a) The Sun's hot, dense layers emit a continuous spectrum; cooler
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,195, a scene sum of 6,181): **6,291 characters**, 15 scenes. Characters per scene (1 to 15): 469, 409, 570, 688, 573, 668, 392, 222, 421, 306, 351, 230, 424, 493, 75. At 13.3 characters per second the speech is about 473 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s): **about 542 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: the helium discovery (open decision 4); scene 9's last sentence.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,291 characters). The notes scene is 45 s in all, so the estimate is about 542 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v02's final frame (`phys-y12-m7-v02.md`, "Final frame"): a small row of method icons at the top; at the left a column of three source plates (filament lamp, hydrogen discharge tube, Sun), each feeding an amber beam into a coded spectroscope slit with a blank spectrum strip (380 to 750 nm outline) and a "?"; heading "How can a time-and-distance measurement reveal the speed of light?"; chip "Next: how do different sources produce different spectral patterns?". Scene 1 turns the chip into the heading and fills the three strips in turn.
@@ -224,6 +250,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v03-learning-review.md`, `science_check` = `checks/p-y12-m7-v03-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -236,6 +264,8 @@ Need (new plates, Codex): none (both plates delivered in brief 191; the conditio
 
 Coded: spectrum strips and lines, reference cards, energy ladder, drop selector, atoms and electrons, lattice inset, sodium vapour cell, rays, white card, results table, chips, attempt cards and diagrams, countdowns, key notes board.
 
+Revision 3 (13 Nov 2026). New request for scene 6: `y12p-vapour-cell-v1.png`. Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-paper-sheet-flat-v1.png` (scenes 7 and 9). New plate requests: `y12p-vapour-cell-v1.png` (scene 6; fallback: a dashed region tagged "cool sodium vapour", no object drawn). Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the particle box has no attraction between particles (item 1 on its "wanted next" list), so the hot dense solid in scene 3 is lesson-coded. No engine draws spectra from energy levels.
+
 ## Codex asset brief (Year 12 Physics M7 v03: spectral sources)
 
 Revision 2: plates 1 and 2 were delivered in brief 191 (anchors and QA in `assets/brief191-manifest.json`); plate 3 is not needed (the Y11 filament lamp has true alpha). Kept for the record; no new request.
@@ -247,6 +277,8 @@ Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the d
 3. Conditional: `y12p-filament-lamp-v1.png` (1000 × 1200 px): a clear-glass filament lamp in a bench holder, painted unlit with a visible coiled filament, on a transparent background (only if the Y11 plate lacks alpha).
 
 Report inspection on the paper background and the dark board background at about 400 px wide. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/phys-y12-m7-v03-provenance.json`.
+
+Revision 3 (13 Nov 2026). New plate `y12p-vapour-cell-v1.png`: a sealed clear glass absorption cell (a short glass cylinder with flat end windows, lying on its side) held in a simple bench carrier that matches `y12p-slide-holder-v1.png`. The cell is empty and clear so that a coded gas can show through it; no flame, no liquid, no labels, lettering or numbers, no people or hands. Seen exactly side-on. Transparent PNG with an alpha channel, at least 1400 px wide, clean edges with no coloured fringe, glass kept see-through (partly transparent pixels in the window). Sidecar JSON with the window rectangle. It is used at about 300 px tall between the filament lamp and the spectroscope.
 
 ## Codex error-check brief
 
@@ -262,6 +294,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log site notes 1 and 3 in `site-corrections-phys-y12.md` (note 2 is a suggestion only).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists except the new request.
 
 ## YouTube metadata (draft)
 
@@ -310,3 +344,27 @@ New plate requests: none.
 Joins: the opening is v02's final frame (unchanged in v02 Revision 2). The final frame (scene 14) is unchanged, so the v04 join holds.
 
 Counts: 6,195 (joined; scene sum 6,181) to 6,291 characters (scene sum); about 550 s to about 542 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the thin-gas insets (scenes 4 and 6) are tied to the particle box engine; the dense filament and the strips stay lesson-coded (kit gap recorded).
+- Scenes 2, 7, 8 and 9: a coded source, coded white cards and coded source icons become plates.
+- Scene 6: the coded glass cell becomes a painted cell (new plate request, with a fallback that draws no object).
+- Question cards: both already carry plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: `y12p-vapour-cell-v1.png` (scene 6; fallback: a dashed region tagged "cool sodium vapour", no object drawn).
+
+Kit gaps: the particle box has no attraction between particles (item 1 on its "wanted next" list), so the hot dense solid in scene 3 is lesson-coded. No engine draws spectra from energy levels.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,291 characters, unchanged; about 542 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: (1) One new plate is requested (the vapour cell). Its fallback draws no object, so the scene still meets the no-coded-objects rule without it.

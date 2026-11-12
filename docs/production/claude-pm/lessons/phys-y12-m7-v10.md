@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V10: The photoelectric effect. Why can bright low-frequency light fail to eject electrons? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,277 characters, 18 scenes, about 541 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v09's final frame.
 
@@ -67,6 +67,20 @@ Main question: *If brighter light carries more energy, why can't a bright red la
 Entry knowledge: Planck's packets E = hf (v09); light carries energy (v01); W = qV (Module 6); c = fλ (Year 11).
 Stops after: the photoelectric effect, the work function, the three observations and the wave model's failed predictions, Einstein's photon model explaining each, the zinc check in electron volts. No stopping voltage or graphs.
 Handoff: v11, how photoelectric graphs reveal Planck's constant and the work function.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame: the painted zinc plate under two painted lamps, scene 1 (about 34 s); (B) the painted photocell with its circuit, scene 2 (about 44 s); (C) the wave-model surface with the predictions panel, scene 3 (about 35 s); (D) the live photocell bench: the threshold, then energy and number, scenes 4 and 5 (about 44 s); (E) the zinc surface with the timeline, scene 6 (about 35 s); (F) the zinc surface at full width with photons, scene 7 (about 28 s); (G) the energy well, scene 8 (about 32 s); (H) the live bench again with energy readouts, scene 9 (about 28 s); (I) the working layout: the red photon, then the ultraviolet photon, scenes 10 and 11 (about 67 s; the well inset grows at about 38 s); (J) the two lamps and the memory card, scene 12 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 67 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** No engine fits yet. The live photocell bench (scenes 4, 5 and 9) is exact arithmetic on E = hf and K_max = hf − ϕ, lesson-coded: the frequency and brightness sliders drive the "f", photocurrent, "hf" and "K_max" readouts and the number and speed of the electrons from one set of values, so the bench cannot disagree with the working in scenes 10 and 11.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **No clock picture.** The "clock icon" on the attempt 2 card is the painted digital timer (`phys-y11-digital-timer-v1.png`) with a blank display.
 
 ## Script and shots
 
@@ -147,6 +161,8 @@ Visual: card shrinks to the top; "2.3 eV", "bright", "dim", "600 nm" and "400 nm
 
 Visual: `QuestionCard` arrives with its full text and picture in one move (question text 36 px), worded as printed: "A student claims: 'If dim red light shines on a zinc plate for long enough, electrons will eventually be ejected.' Evaluate this claim. (2 marks)" Picture: the painted zinc plate (about 360 px) under one painted bench lamp with a thin red beam, and a coded clock icon. Data chip "zinc: ϕ = 4.3 eV; red photon: 1.77 eV" (given in scene 11). The full question stays on screen. Countdown ring full from "Pause here to answer." for 10 seconds. Nothing answer-bearing.
 
+Upgrade (Revision 3): The clock on the card is the painted digital timer (about 160 px wide) with a blank display, not a coded icon. No electrons are drawn.
+
 ### 16. feedback 2 (brief)
 > The claim is incorrect. Each red photon has less energy than zinc's work function, and one photon interacts with one electron, so photon energies can't add up. Waiting longer only delivers more photons that are too **weak**. The claim is exactly what the wave model predicted, and experiments ruled it **out**.
 
@@ -222,6 +238,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; unchanged narration; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,277 characters**, 18 scenes. Characters per scene (1 to 18): 447, 582, 462, 283, 301, 470, 377, 428, 373, 501, 381, 136, 362, 331, 161, 302, 305, 75. At 13.3 characters per second the speech is about 472 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 9 slider runs under its narration): **about 541 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: about 556 s. Reserve trims if the voiced take runs long: scene 6's area sentence (keep the 69 s on screen); scene 2's electron-volt clause (keep the chip); scene 11's "to spare" clause.
 
+Revision 3 (13 Nov 2026): narration unchanged (6,277 characters). The notes scene is 45 s in all, so the estimate is about 541 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v09's final frame (designed in this wave, `phys-y12-m7-v09.md`): paper background; heading "How did thermal spectra challenge classical predictions?"; at the top left a small coded oscillator energy ladder with "E = hf"; an amber wave train breaking into packets, tag "light in packets? (Einstein, 1905)"; at the centre the painted zinc plate `phys-y11-metal-plate-v1.png`, tag "clean zinc plate"; two copies of the painted bench lamp `y12p-bench-lamp-v1.png`, upper left with a thin violet coded beam (tag "ultraviolet, dim") and a few navy electron dots leaving the plate (tag "electrons out"), upper right with a broad bright red coded beam (tag "red, very bright") and no electrons (tag "electrons: none"); chip "Next: why can bright low-frequency light fail to eject electrons?". Scene 1 turns the chip into the heading; the ladder and packet train fade.
@@ -240,6 +258,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v10-learning-review.md`, `science_check` = `checks/p-y12-m7-v10-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (inspected 6 Nov on a session contact sheet; scaled uniformly only, never stretched):
@@ -256,6 +276,8 @@ Coded: circuit wiring, beams, electrons, photon packets, energy well and bars, w
 Kit gaps (for the v10 build brief):
 1. **Photocell scene.** Beam colour from λ, width from intensity; electron emission gated by hf ≥ ϕ, rate from intensity, top speed from hf − ϕ (within `m7-photoelectric`'s limits).
 2. **Energy well.** A slate step of height ϕ, amber photon bars that rise, fall short or clear it, with the excess coloured orange.
+
+Revision 3 (13 Nov 2026). Existing plate newly used on the attempt 2 card (confirmed by file listing, not re-inspected): `phys-y11-digital-timer-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no engine for light meeting matter: photons, a metal's work function, the photocurrent and the stopping voltage (a photocell bench). One would serve the two photoelectric videos.
 
 ## Codex asset brief
 
@@ -277,6 +299,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
 11. Revision 2: confirm the grouped denominators (6, 10, 11, 14, model answers); the "ordinary lamp light" labels (8, 11, memory card); the intensity tag "same f: intensity ∝ photons per second per m²" (7); the live bench readouts (Numbers used); the crossed "hc / 700" slip (10); the quartz-window tag and author note (f).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists. Confirm `phys-y11-digital-timer-v1.png` can be shown with a blank display.
 
 ## YouTube metadata (draft)
 
@@ -326,3 +350,26 @@ New plate requests: none.
 Joins: the opening is v09's final frame, which v09 Revision 2 keeps unchanged. The final frame (scene 17) is unchanged, so the v11 join holds.
 
 Counts: 6,277 to 6,277 characters (scene sum; no narration change); about 556 s to about 541 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: recorded that no engine fits; the live bench stays exact lesson arithmetic (kit gap recorded).
+- Attempt 2 card: the coded clock icon becomes the painted digital timer.
+- Question cards: both already carry plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no engine for light meeting matter: photons, a metal's work function, the photocurrent and the stopping voltage (a photocell bench). One would serve the two photoelectric videos.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,277 characters, unchanged; about 541 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V01: Maxwell and light. How did Maxwell connect electricity and magnetism to light? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,087 characters, 14 scenes, about 527 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on phys-y12-m6-v20's final frame. First video of Module 7.
 
@@ -66,6 +66,20 @@ Main question: *A changing magnetic field makes a curling electric field. If a c
 Entry knowledge: v20's curling electric field; Faraday's law (m6 v10); Year 11 transverse waves and v = fλ.
 Stops after: unification, the self-sustaining transverse wave, accelerating charges, the predicted speed, Hertz, the EM family at c. No measurement methods, spectra or photons.
 Handoff: v02, how a time-and-distance measurement reveals the speed of light.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the last frame of Module 6, then the field chain and the painted Sun with its beam, scene 1 (about 37 s); (B) the three chips and the charging capacitor, scene 2 (about 45 s); (C) the field chain turning into the 3-D wave, scene 3 (about 47 s); (D) the antenna stage with the frequency dial, scene 4 (about 45 s); (E) the working layout, scene 5 (about 53 s); (F) the spark stage with the painted transmitter and receiver, scene 6 (about 47 s); (G) the spectrum ribbon, scene 7 (about 31 s); (H) the memory card, scene 8 (about 8 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 53 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The travelling waves run on the waves engine (`waves.ts`, drawn with `waves-views.tsx`) on one `useWaveTime` clock. In scene 4 the fronts leaving the antenna are `wavefronts` from an oscillating source drawn with `WavefrontView`, so they crowd closer as the dial steps the frequency, and "λ = c/f" is checked against the spacing on screen. In scene 6 the fronts from the spark are `ringsFrom` the gap. The blue E and slate B curves of the 3-D wave (scenes 3, 7, 8 and 13) are two copies of one `displacement`, in phase, laid in two planes by the lesson. Real light is far too fast to watch, so every wave is a slow model wave and the readouts carry the real values (the design's tag "model, slowed" stays on screen).
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Small pictures are symbols.** The "coil icon" and "capacitor icon" beside μ₀ and ε₀ in scene 5 are the circuit symbols for a coil and a capacitor, not drawings of parts.
 
 ## Script and shots
 
@@ -200,6 +214,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,100, a scene sum of 6,087; no narration changed): **6,087 characters**, 14 scenes. Characters per scene (1 to 14): 491, 599, 623, 596, 704, 628, 410, 109, 237, 559, 169, 477, 410, 75. At 13.3 characters per second the speech is about 458 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 4 dial runs inside its narration): **about 527 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 4's constant-velocity sentence; scene 6's illustrative numbers (open decision 4).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,087 characters). The notes scene is 45 s in all, so the estimate is about 527 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v20's final frame (`phys-y12-m6-v20.md`, "Final frame"): paper background; the copper tube end-on as a coded copper ring, slate dots (B out of the screen) in its middle tagged "B changing"; blue curling "E" arrows inside the ring with rose current dots following them; crossed grey chips "battery" and "wires"; chips "changing B → E (curling round)" and "changing E → B?"; a faint chain of linked blue and slate loops drifting right with a "?"; heading "How can a moving conductor be braked without contact?"; chip "Next: how did Maxwell connect electricity and magnetism to light?". Scene 1 turns the chip into the heading, fades the crossed chips and answers the "?".
@@ -218,6 +234,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v01-learning-review.md`, `science_check` = `checks/p-y12-m7-v01-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -233,6 +251,8 @@ Coded: capacitor and cell, field lines and loops, the EM wave, antenna rod overl
 Kit gaps (for the v01 build brief):
 1. **Field chain.** Alternating blue and slate loops linking outwards, each appearing as the previous changes, resolving into the `m7-em-geometry` wave.
 2. **Antenna stage.** Oscillating electron dots on a rod with wave fronts released once per cycle, plus the still and constant-velocity contrast panels.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M7 v01: spark-gap apparatus)
 
@@ -260,6 +280,8 @@ Error-only check (report errors; do not restyle or rewrite):
 10. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 11. Confirm the narration character count and per-scene counts by script with the build parser rules.
 12. Log the three site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -306,3 +328,25 @@ New plate requests: none.
 Joins: the opening is phys-y12-m6-v20's final frame as currently written (v20 Revision 2: copper ring end-on, curling blue E, crossed "battery" and "wires" chips, "changing E → B?", the linked-loop chain and the Next chip); scene 1 is unchanged up to "light", where the Sun plate is added. The final frame (scene 13) is unchanged: the new handoff tag and pen ring fade before the hold, so the v02 join holds.
 
 Counts: 6,100 (joined; scene sum 6,087) to 6,087 characters (scene sum; no narration changed); about 543 s to about 527 s (notes hold 60 s to 45 s).
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the wave fronts and the E and B curves are tied to the waves engine (slow model waves, real values on the readouts).
+- Question cards: both already carry plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,087 characters, unchanged; about 527 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

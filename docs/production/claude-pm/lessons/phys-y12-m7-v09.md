@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V09: Black-body radiation and the ultraviolet catastrophe. How did thermal spectra challenge classical predictions? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,442 characters, 18 scenes, about 555 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v08's final frame (see "Opening frame").
 
@@ -70,6 +70,19 @@ Main question: *Why did the wave model predict that a hot object should blaze wi
 Entry knowledge: light is an electromagnetic wave made by accelerating charges (v01); continuous spectra (v03); wave evidence (v05 to v08); standing waves and c = fλ (Year 11).
 Stops after: black-body curves, Wien's law both ways, the classical prediction, the ultraviolet catastrophe, Planck's packets and their limits. No photoelectric effect.
 Handoff: v10, why bright low-frequency light can fail to eject electrons.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the painted bar heater, scene 1 (about 33 s); (B) the lattice of charges and the cavity box, scene 2 (about 37 s); (C) the plot filling the centre: reading the curve, then the hotter and cooler curves, scenes 3 and 4 (about 69 s; the second curve arrives at about 40 s); (D) the full plot, live, with the temperature slider, scene 5 (about 34 s); (E) the working layout, scene 6 (about 33 s); (F) the cavity box with its standing waves, then the classical curve running off the plot, scenes 7 and 8 (about 59 s); (G) the zoom into the cavity wall, then the packet bars, scenes 9 and 10 (about 62 s; the bars arrive at about 28 s); (H) the three-row card, scene 11 (about 27 s); (I) the three-temperature plot and the memory card, scene 12 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 69 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The standing waves in the cavity (scene 7) come from the waves engine (`waves.ts`): `standingMode` for the box length and each harmonic, drawn with `WaveStringView`, so "more and more patterns at short wavelengths" is counted from real modes (1, 2, 3 and upward half-wavelengths), not drawn by hand. The black-body curve and its temperature slider (scenes 3 to 5, 8 and 12) are the exact Planck formula, lesson-coded, with the peak marker and "λ_max" computed from the same temperature. The packet bars (scene 10) are the design's qualitative model.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -155,6 +168,8 @@ Visual: `QuestionCard` arrives with its full text and picture in one move (quest
 
 Visual: card shrinks to the top; "failed at short wavelengths" and "Planck's hypothesis" underline. The sketch grows to the right half (600 px); the packet bars sit under it. On "catastrophe" (44 px) "classical: equal share per pattern + more patterns at short λ → intensity → ∞ (UV catastrophe)", framed, with the dashed grey curve added to the sketch and a red hand tag "→ ∞". On "falls" "Planck: E = hf packets; large hf at short λ not supplied thermally → emission suppressed → curve falls", framed; the tall amber packet bar locks. On "Einstein" a chip "Planck discovered photons" fades in and is crossed in red (red hand tag "Planck: emitters; Einstein: light"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "classical model: fails at short wavelengths | Planck's hypothesis: how it fixes the problem". The card has no numbers, so the strip repeats its two demands.
+
 ### 17. handoff
 > So hot objects showed that energy is traded in packets of h f. Einstein went further, and said light itself arrives in packets. The evidence came from metals. A dim ultraviolet lamp knocks electrons out of zinc, but a red lamp, however bright, knocks out none. So why can bright low-frequency light fail to eject **electrons**?
 
@@ -225,6 +240,8 @@ Checked with Python (6 Nov, `numbers.py` in the session scratchpad); Codex to re
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings): **6,442 characters**, 18 scenes. Characters per scene (1 to 18): 436, 489, 397, 523, 456, 434, 486, 289, 369, 455, 355, 166, 268, 334, 154, 433, 323, 75. At 13.3 characters per second the speech is about 484 s; add about 3 s for the prediction countdown, 2 s for the scene 5 slider sweep, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 71 s of holds and countdowns): **about 555 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Revision 1: 6,430 characters, about 567 s. Reserve trims if the voiced take runs long: the "warm cup of tea" sentence (8); scene 4's heater sentences (keep the heater tag on screen); scene 5's Sun check (kept on screen as a silent line).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,442 characters). The notes scene is 45 s in all, so the estimate is about 555 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 Assumed v08 final frame, written before v08 could be read: paper background; v08's coded polariser chain (an unpolarised source, a polariser and an analyser with labelled transmission axes, and an intensity readout), heading "Why does rotating a polariser change transmitted intensity?", and a chip "Next: how did thermal spectra challenge classical predictions?". Scene 1 needs only an on-screen wave-model diagram that can shrink to a badge and the chip.
@@ -244,6 +261,8 @@ In order (kebab-case; 18 scene headings, all `### N.`): hook, thermal-radiation,
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Scene 4 is `explain` with a 3 s prediction countdown. `onScreenChange` per scene is the cue list under each "Visual". `motionTools`: black-body plot (temperature slider, peak marker, dashed classical curve, band shading), cavity model (bouncing ray, multiplying standing waves), packet bars, `AlignedAlgebra`, `NumberTicker`, `PenArrow`, `Countdown`, `CameraStage`. Transitions (`pickTransition`): 1 to 2 camera continue; 2 to 3 clear change to the plot; 3 to 4 camera continue (same plot); a camera change inside 4 to the heater set-up; 4 to 5 camera change (the live slider plot); 5 to 6 clear change to working; 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 camera change (into the wall); 9 to 10 camera continue; 10 to 11 camera continue; no set-up runs past about 75 s; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 clear change; 17 to 18 fade to the notes board.
 
 Holds: scene 4 (3 s countdown), scene 5 slider sweep (2 s), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v09-learning-review.md`, `science_check` = `checks/p-y12-m7-v09-physics-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
 
 ## Assets
 
@@ -267,6 +286,8 @@ Kit gaps (for the v09 build brief):
 2. **Cavity standing waves.** Patterns drawn at λ = 2L/n with equal amber blocks and a counter.
 3. **Packet bars.** A grey thermal band and amber packet bars of height hf, with a lock state.
 
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): no black-body (Planck curve) helper in any engine; the curve is an exact lesson formula.
+
 ## Codex asset brief
 
 Revision 2: plates 1 and 3 were delivered in brief 191 and are kept below for the record. Plate 2 is optional now: if Codex can register it pixel-exactly with plate 1 (same canvas, same outlines, only the element and its reflection changed), deliver it; otherwise report the exact element-rod rectangle on plate 1 for the coded overlay (author note h) and stop.
@@ -289,6 +310,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root.
 11. Revision 2: confirm n = 0 is included in E = nhf on screen (scene 9) and in the model answer; every scientific-notation denominator is grouped (scenes 5, 6, 14, A1 model answer); "almost all infrared" (scene 2); the slider readouts (5); the crossed "T = b × λ_max" chip (6).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -335,3 +358,25 @@ New plate requests: none required. Optional: a pixel-registered `y12p-bar-heater
 Joins: v08's final frame was re-read at the end of this pass: v08 Revision 2 (7 Nov) keeps the same final frame (polariser chain on the optical bench, same heading, chip "Next: how did thermal spectra challenge classical predictions?"), so the join holds. The final frame (scene 17) is unchanged, so the v10 join holds.
 
 Counts: 6,430 to 6,442 characters (scene sum); about 567 s to about 555 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the cavity's standing waves are tied to the waves engine; the Planck curve stays an exact lesson formula.
+- Question cards: both already carry pictures; feedback 2 gains its navy givens strip (feedback 1 had one).
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: no black-body (Planck curve) helper in any engine; the curve is an exact lesson formula.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,442 characters, unchanged; about 555 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

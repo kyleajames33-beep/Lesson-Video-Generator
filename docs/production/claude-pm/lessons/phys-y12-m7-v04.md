@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V04: Reading stellar spectra. What can stellar spectra tell us beyond chemical identity? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,261 characters, 15 scenes, about 540 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v03's final frame.
 
@@ -65,6 +65,19 @@ Entry knowledge: v03's spectra and fingerprints; wave period; c = fλ.
 Stops after: temperature, radial velocity with Δλ/λ = v/c, rotation, density, separating the clues. No Wien numbers, Hubble or stellar evolution.
 Handoff: v05, why light spreads after passing an edge or narrow opening.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame with the painted stars beside the two strips, scene 1 (about 37 s); (B) the feature strip with three things to read, scene 2 (about 24 s); (C) the three painted stars in a row, scene 3 (about 47 s); (D) the Doppler construction with the velocity slider strip, scene 4 (about 43 s); (E) the working layout, scene 5 (about 41 s); (F) the spinning star, scene 6 (about 53 s); (G) the two gas insets, scene 7 (about 41 s); (H) the profile pair, scene 8 (about 27 s); (I) the three headings and the memory card, scene 9 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 53 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The Doppler construction in scene 4 runs on the waves engine (`waves.ts`): `wavefronts` from a moving source, drawn with `WavefrontView`, so the crests stretch behind the star and bunch ahead of it because the source moves between crests. It is a slow model wave with a model speed; the readouts "Δλ" and "λ_obs" are the real values from Δλ/λ = v/c, and the on-screen tag says the picture is a model. The two gas insets in scene 7 run on the particle box engine (`particle-box.ts`): the same species at high and low density, with the dense box's `collisionRateAt` shown as the "collisions" readout and its collision events as the small flashes.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -88,6 +101,8 @@ Visual: board change: three star plates in a row: `y12p-star-cool-red-v1.png` (n
 > Now motion. Picture a star moving away from us, giving out a wave. It sends out one crest, and before the next crest leaves, one period later, the star has moved a distance v times **T**. So every wavelength reaching us is stretched by v T. That's the shift, delta lambda. And the period is the wavelength divided by c. Put those together, and delta lambda over lambda equals v over **c**. Moving away stretches the waves, a redshift. Moving towards us squeezes them, a **blueshift**. This works when v is much less than c, and it only measures motion straight towards or away from us.
 
 Visual: board change to the Doppler construction: a coded star dot at the left moving right (away from a coded observer marker at the far left), emitting blue-grey crests. On "sends out one crest" crest 1 leaves; on "before the next crest leaves" a navy clock tick "one period T"; the star has moved; a rose bracket between its old and new positions "vT"; crest 2 leaves. On "T" the crests behind the star (towards the observer) are spaced λ + vT; tag "stretched". Working strip: on "stretched by v T" "Δλ = vT". On "the period is the wavelength divided by c" "T = λ / c". On "c" "Δλ = v λ / c  →  Δλ / λ = v / c" framed in a dark-ink box (60 px); rose hand tag "stretch per wave = vT". On "a redshift" the crests behind lengthen, tinted red; below the construction an H-alpha strip (656.3 nm, red) with a velocity slider (live control): v steps "+300 km s⁻¹" then "+600 km s⁻¹" (away) while live readouts (52 px) show "Δλ = +0.66 nm, λ_obs = 656.96 nm" then "Δλ = +1.31 nm, λ_obs = 657.61 nm" and the line slides right of its grey dashed rest mark. On "blueshift" the star reverses direction and the crests towards the observer shorten, tinted blue; the slider moves to "−300 km s⁻¹": "Δλ = −0.66 nm, λ_obs = 655.64 nm", the line left of its rest mark (it stays red: the shift is under a nanometre). A navy tag "v ≪ c; radial (line-of-sight) motion only" and a navy pen ring round "v ≪ c".
+
+Upgrade (Revision 3): The moving star is a small copy of the painted white star (`y12p-star-white-v1.png`, about 60 px), not a coded dot. The observer stays a plain marker (a short upright line tagged "observer"); no person or telescope is drawn.
 
 ### 5. reading a speed
 > Here's one. A calcium line has a rest wavelength of three hundred and ninety-three point three nanometres. In a star's spectrum it's at three hundred and ninety-four point two. The shift is plus nought point nine **nanometres**, longer, so the star is moving away. The speed is c times nought point nine over three hundred and ninety-three point three, about **six point nine times ten to the five** metres per second. And here's the check. Every line in that star shifts by the same fraction, so a shifted pattern means motion, not a different **element**.
@@ -198,6 +213,8 @@ Model answer: Faster rotation: light from the approaching edge is blueshifted an
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,084, a scene sum of 6,070): **6,261 characters**, 15 scenes. Characters per scene (1 to 15): 487, 319, 623, 573, 545, 711, 541, 362, 165, 300, 410, 256, 426, 468, 75. At 13.3 characters per second the speech is about 471 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s; the sliders run inside their narration): **about 540 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 3's molecules sentence; scene 8's shape contrast (open decision 3).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,261 characters). The notes scene is 45 s in all, so the estimate is about 540 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v03's final frame (`phys-y12-m7-v03.md`, "Final frame"): three strips on a 380 to 750 nm axis: "laboratory hydrogen" reference (410.2, 434.0, 486.1, 656.3 nm); "star A" with the four dark lines shifted to longer wavelength by the same fraction (tag "exaggerated"), connectors leaning right, chip "shifted?"; "star B" with broadened lines at the rest positions, chip "broader?"; tick chip "composition: hydrogen"; heading "How do different sources produce different spectral patterns?"; chip "Next: what can stellar spectra tell us beyond chemical identity?". Scene 1 turns the chip into the heading and brings in the feature board.
@@ -216,6 +233,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v04-learning-review.md`, `science_check` = `checks/p-y12-m7-v04-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -227,6 +246,8 @@ Have (scaled uniformly only, never stretched):
 Need (new plates, Codex): none (both star plates delivered in brief 191).
 
 Coded: strips and lines, feature board, class strip, line-strength graph, Doppler construction, crests, profiles, gas insets, giant outline, slit close-up, working strips, chips, attempt cards and diagram, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). The white star plate is also used small in scene 4. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M7 v04: stars)
 
@@ -253,6 +274,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log site notes 1 to 3 in `site-corrections-phys-y12.md` (note 1 as a coverage gap).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -297,3 +320,26 @@ New plate requests: none.
 Joins: the opening is v03's final frame (unchanged in v03 Revision 2); the star plates arrive after it. The final frame (scene 14) is unchanged, so the v05 join holds.
 
 Counts: 6,084 (joined; scene sum 6,070) to 6,261 characters (scene sum); about 541 s to about 540 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the Doppler construction is tied to the waves engine and the dense and thin gas insets to the particle box engine.
+- Scene 4: the coded star dot becomes a small copy of the star plate.
+- Question cards: both already carry plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,261 characters, unchanged; about 540 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

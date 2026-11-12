@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V06: Double-slit interference. Why do two slits produce regularly spaced bright and dark bands? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,253 characters, 16 scenes, about 539 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v05's final frame.
 
@@ -62,6 +62,19 @@ Main question: *Two narrow slits, one laser, and the screen shows a neat row of 
 Entry knowledge: v05's diffraction and wavelets; superposition and phase.
 Stops after: path difference and phase, coherence, d sin θ = mλ derived, x = mλL/d and Δx = λL/d with conditions, the worked example, the investigation. No many-slit sharpness.
 Handoff: v07, how a grating lets us measure wavelength.
+
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame with the painted bench as a strip and the band pattern, scene 1 (about 27 s); (B) the superposition pair, scene 2 (about 21 s); (C) the two-source stage with its probe point, scene 3 (about 52 s); (D) the coherence panels, scene 4 (about 36 s); (E) the derivation close-up, then the pull back to the screen, scenes 5 and 6 (about 81 s; the camera pulls back at about 39 s); (F) the slider pattern, scene 7 (about 22 s); (G) the working layout, scene 8 (about 53 s); (H) the bench with the metre rule, scene 9 (about 31 s); (I) the path-difference bar and the memory card, scene 10 (about 10 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 81 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** This video sits squarely on the waves engine (`waves.ts`, drawn with `waves-views.tsx`) on one `useWaveTime` clock. Scene 2's two waves and their sum are `sumAt` in a `WaveStringView`. The two-source stage (scenes 1, 3 and 4) is `interferenceAt` drawn with `WavefrontView`; the probe's readout is `pathDifference` at the probe point, so "whole waves: bright" is read off the same picture. The incoherent panel in scene 4 gives one source a drifting `phase`. The band pattern and the scene 7 sliders use `doubleSlitBrightness` and `brightAngles`, with "Δx" from λL/d shown beside the pattern it describes. Every wave on screen is a slow model wave with a long wavelength, tagged "model"; the readouts carry the design's real values.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
 
 ## Script and shots
 
@@ -202,6 +215,8 @@ Model answer: (a) Dark fringes occur where the path difference is (m + ½)λ; th
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,268, a scene sum of 6,253; no narration changed): **6,253 characters**, 16 scenes. Characters per scene (1 to 16): 360, 283, 686, 474, 513, 555, 287, 708, 418, 138, 300, 362, 214, 377, 503, 75. At 13.3 characters per second the speech is about 470 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s; the sliders run inside their narration): **about 539 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 8's reverse calculation; scene 9's slit-separation sentence (open decision 3).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,253 characters). The notes scene is 45 s in all, so the estimate is about 539 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v05's final frame (`phys-y12-m7-v05.md`, "Final frame"): a coded top view of straight teal wavefronts arriving at a barrier with two narrow slits; semicircular wavefronts spreading from each slit and overlapping; a coded screen at the right with evenly spaced bright and dark bands (schematic) and a "?"; heading "Why does light spread after passing an edge or narrow opening?"; chip "Next: why do two slits produce regularly spaced bright and dark bands?". Scene 1 turns the chip into the heading and adds the particle-prediction ghost.
@@ -220,6 +235,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v06-learning-review.md`, `science_check` = `checks/p-y12-m7-v06-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -229,6 +246,8 @@ Have (scaled uniformly only, never stretched):
 Need (new plates): none.
 
 Coded: wavefronts, path lines, bars, readouts, triangles, screens and patterns, graphs, working strips, chips, attempt cards and diagram, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). No plate added or removed. New plate requests: none.
 
 ## Codex asset brief
 
@@ -248,6 +267,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log site notes 1 and 2 in `site-corrections-phys-y12.md` (note 3 is a consistency suggestion).
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +315,25 @@ New plate requests: none.
 Joins: the opening is v05's final frame (unchanged in v05 Revision 2); the bench strip arrives after it. The final frame (scene 15) is unchanged (the new tag fades before the hold), so the v07 join holds.
 
 Counts: 6,268 (joined; scene sum 6,253) to 6,253 characters (scene sum; no narration changed); about 555 s to about 539 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the superposition, the two-source stage, the probe, the coherence panels and the band pattern are tied to the waves engine.
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,253 characters, unchanged; about 539 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

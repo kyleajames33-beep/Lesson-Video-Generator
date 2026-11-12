@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V02: Measuring the speed of light. How can a time-and-distance measurement reveal the speed of light? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,123 characters, 14 scenes, about 529 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v01's final frame.
 
@@ -64,6 +64,20 @@ Entry knowledge: v01's predicted c; speed = distance / time; reflection.
 Stops after: Rømer, Fizeau, Foucault, a time-of-flight investigation, the 1983 definition, lunar ranging and GPS. No water result, spectra or relativity.
 Handoff: v03, how different sources produce different spectral patterns.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame with the two prediction chips, scene 1 (about 36 s); (B) the orbit stage: the Sun, Earth, Jupiter and its moon, scene 2 (about 58 s); (C) the toothed-wheel stage with the wheel-speed slider, scene 3 (about 56 s); (D) the rotating-mirror stage, scene 4 (about 39 s); (E) the time-of-flight bench with the laser, sensors and oscilloscope, scene 5 (about 48 s); (F) the two definition boxes, scene 6 (about 46 s); (G) the Earth and Moon ranging stage, scene 7 (about 40 s); (H) the two rows and the memory card, scene 8 (about 9 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 58 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The orbit stage in scene 2 runs on the field motion engine (`field-motion.ts`, `central` fields, drawn with `FieldMotionView`): Earth and Jupiter round the Sun as two runs on one clock, with the moon circling Jupiter. The "runs late" readout is the Earth to Jupiter distance from the two runs divided by c, so the delay grows as Earth moves away because the picture does. The wheel-speed slider (scene 3), the mirror turn (scene 4) and the pulse timing (scene 5) are exact arithmetic and stay lesson-coded; the oscilloscope traces are drawn with `SeriesGraph`.
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **Small pictures are plates.** The light source in scene 4 is the painted ray box (`phys-y11-ray-box-v1.png`), the satellite in scene 7 is the painted satellite (`y12p-satellite-v1.png`), and the "wheel" and "oscilloscope" pictures in scene 8 and in the scene 13 row are small copies of the toothed wheel and oscilloscope plates. The orbit picture in that row is a small diagram. The hilltop, the spindle and the reflector stay plain lines.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -88,6 +102,8 @@ Visual: board change to the toothed-wheel stage: the toothed wheel plate (`y12p-
 
 Visual: board change to the rotating-mirror stage: a coded source at the left, a plane mirror plate (reused) on a coded spindle (the spinning mirror), a second plane mirror plate far right (fixed). On "spinning mirror to a fixed mirror" an amber beam out and back. On "angle" the spinning mirror rotates slightly between the outgoing and returning beams; a navy angle mark. On "path" the returning beam lands slightly to one side of the source; a grey tag "deflection". On "close to three times ten to the eight" a grey chip "Foucault (1862): ≈ 2.98 × 10⁸ m s⁻¹". On "video" a small grey chip "water tube: see v05". Hand-font tags: navy "turned while the light was away" on the angle mark, amber "comes back off target" on the returning beam; navy pen arc on the angle.
 
+Upgrade (Revision 3): The source at the left is the painted ray box (about 220 px wide), not a coded source.
+
 ### 5. timing a pulse today
 > Today, you can time light directly. A school version uses a laser that sends short pulses, and two fast light sensors on an oscilloscope. One sensor sees the pulse leave. The other sees it after an extra trip to a mirror fifteen metres away and **back**. That's thirty metres of extra path. The oscilloscope shows the two pulses, about a hundred nanoseconds **apart**. Say you measure a hundred and one nanoseconds. Thirty metres over a hundred and one nanoseconds is **two point nine seven times ten to the eight** metres per second. Change the extra path, measure each delay, and the gradient of the graph of path against delay is the speed of **light**.
 
@@ -103,10 +119,14 @@ Visual: board change: a navy box "1983: the metre = distance light travels in a 
 
 Visual: board change to the ranging stage: the Earth plate (reused) at the left, the Moon plate (`y12p-moon-v1.png`, reused from M5) at the right, a small coded reflector square on the Moon (no astronauts, no figures). On "Reflectors placed on the Moon" the reflector square highlights. On "leaves" an amber pulse travels to the Moon and back; navy timer "t = 2.56 s (round trip)". On "three point eight four times ten to the eight metres" working (52 px): "d = ct / 2 = (2.998 × 10⁸ × 2.56) / 2 = 3.84 × 10⁸ m" (orange), framed (60 px); a red crossed chip "d = ct = 7.67 × 10⁸ m" (caption "there and back: halve it"). On "GPS" a small coded satellite icon with a signal arc to a coded ground dot; chip "distance = c × travel time". On "metres" a chip "1 μs × c ≈ 300 m of distance (range) error"; navy hand tag "timing is everything" and a navy pen ring round "1 μs".
 
+Upgrade (Revision 3): The navigation satellite is the painted satellite plate (about 60 px), not a coded icon.
+
 ### 8. a way to remember
 > Here's a way to remember the switch. Then, measure distance and time, and find c. Now, fix c, time it, and find the **distance**.
 
 Visual: board clears to two rows. On "Then, measure distance and time" the top row: "d, t → c" with Fizeau's wheel icon (small). On "distance" the bottom row: "c (fixed), t → d" with the Moon icon; the handwritten line writes above, inside a framed memory card (dark-ink frame, 44 px hand lettering): "Then: measure d and t, find c. Now: fix c, time it, find d." Hold about 2 seconds.
+
+Upgrade (Revision 3): Fizeau's wheel in the top row is a small copy of the toothed wheel plate (about 120 px), not an icon.
 
 ### 9. attempt 1 (countdown, 10 seconds)
 > Your turn. A toothed wheel with five hundred teeth sends light to a mirror seven point five kilometres away. The returning light is first blocked when the wheel turns at twenty turns per second. Calculate the speed of light. Pause here to answer.
@@ -132,6 +152,8 @@ Visual: card shrinks to the top; "2.51 s" and "distance rather than" underline. 
 > So a time-and-distance measurement revealed the speed of light: first with planets, then with spinning wheels and mirrors, now with electronics, until c became exact. But light isn't only a signal with a speed. Spread it out into its colours, and it carries a message about whatever made it. A hot filament, a glowing gas and sunlight each give a different pattern. How do different sources produce different spectral **patterns**?
 
 Visual: board clears (camera change). On "first with planets" small icons in a row: orbit, wheel, oscilloscope, navy box "c exact". On "Spread it out into its colours" an amber beam enters a coded spectroscope slit and fans into a blank strip; amber hand tag "a message in the colours" and an amber pen arrow along the fan, both fading before the final hold so the final frame is unchanged. On "A hot filament, a glowing gas and sunlight" three source plates appear in a column at the left: the filament lamp (`phys-y11-filament-lamp-v1.png`, reused; true alpha confirmed in brief 191), a hydrogen discharge tube (`y12p-discharge-tube-v1.png`, delivered in brief 191), and the Sun plate (reused); each feeds a coded spectroscope slit and a blank spectrum strip with a "?". On "patterns" a chip "Next: how do different sources produce different spectral patterns?". Hold about 2 seconds. This is the final frame (see "Final frame").
+
+Upgrade (Revision 3): In the row of four, the wheel and the oscilloscope are small copies of their plates (about 110 px each) and the orbit is a small diagram; the navy box "c exact" is unchanged. The final frame's wording is unchanged: the same four items in the same order.
 
 ### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -202,6 +224,8 @@ Checked with Python (6 Nov); Codex to re-check.
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,134, a scene sum of 6,121): **6,123 characters**, 14 scenes. Characters per scene (1 to 14): 481, 768, 747, 514, 640, 611, 531, 125, 246, 383, 238, 337, 427, 75. At 13.3 characters per second the speech is about 460 s; add about 3 s for the prediction countdown, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the quiet notes hold (45 s in all; about 69 s of holds and countdowns; the scene 3 slider runs inside its narration): **about 529 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 4 to one sentence; scene 5's gradient sentence (open decision 3).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,123 characters). The notes scene is 45 s in all, so the estimate is about 529 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v01's final frame (`phys-y12-m7-v01.md`, "Final frame"): an EM wave (blue E, slate B, navy direction) travelling right along a long coded distance bar "distance d = ?"; tag "E ↔ B"; chip "c = 1/√(μ₀ε₀) ≈ 3.00 × 10⁸ m s⁻¹ (predicted)"; bracket "3 m" with timer "≈ 10 ns"; timer "time t = ?"; chip "speed = d / t"; heading "How did Maxwell connect electricity and magnetism to light?"; chip "Next: how can a time-and-distance measurement reveal the speed of light?". Scene 1 turns the chip into the heading and enlarges "speed = d / t".
@@ -220,6 +244,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v02-learning-review.md`, `science_check` = `checks/p-y12-m7-v02-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -233,6 +259,8 @@ Need (new plates, Codex):
 1. `y12p-light-sensor-v1.png`: 5 (two copies); shared with v08 (scene 8). Essential (Revision 2).
 
 Coded: orbits, Io, shadow cone, light paths and pulses, timers, brackets, spindle, oscilloscope trace, graph, satellite icon, reflector square, spectroscope slit and blank strips, working strips, chips, attempt cards and diagrams, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `phys-y11-ray-box-v1.png` (scene 4), `y12p-satellite-v1.png` (scene 7). The toothed wheel and oscilloscope plates are also used small in scenes 8 and 13. New plate requests: none.
 
 ## Codex asset brief (Year 12 Physics M7 v02: speed-of-light apparatus)
 
@@ -262,6 +290,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061 anywhere in this file, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log the three site notes in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -308,3 +338,26 @@ New plate requests: `y12p-light-sensor-v1.png` (scene 5, shared with v08), becau
 Joins: the opening is v01's final frame (unchanged in v01 Revision 2). The final frame (scene 13) is unchanged apart from the plate status notes (the new handoff tag and pen arrow fade before the hold), so the v03 join holds.
 
 Counts: 6,134 (joined; scene sum 6,121) to 6,123 characters (scene sum); about 545 s to about 529 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the orbit stage and its light-delay readout are tied to the field motion engine; the wheel, mirror and pulse timing stay lesson-coded arithmetic.
+- Scenes 4, 7, 8 and 13: a coded source, a coded satellite and two coded icons become plates.
+- Question cards: both already carry plates and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: none new.
+
+Joins: the opening frame and the final frame are unchanged word for word (the final frame keeps its row of four method pictures, two now drawn from their plates under R2); builders draw both solid.
+
+Counts: 6,123 characters, unchanged; about 529 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.

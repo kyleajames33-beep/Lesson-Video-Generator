@@ -1,6 +1,6 @@
 # Year 12 Physics M7 V05: Diffraction and the wave model. Why does light spread after passing an edge or narrow opening? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing.
+Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 191 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 6,289 characters, 16 scenes, about 542 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v04's final frame.
 
@@ -66,6 +66,20 @@ Entry knowledge: v04; wavefronts and wavelength from Year 11.
 Stops after: Huygens' principle, diffraction at gaps and edges, the gap-to-wavelength condition, the qualitative pattern, Newton versus Huygens with the deciding evidence, the investigation. No interference maths.
 Handoff: v06, why two slits produce regularly spaced bright and dark bands.
 
+## Visual upgrade (Revision 3)
+
+The Revision 2 visual upgrade is already written into each scene's Visual line (anchor, simulation, colour roles, hand tags, framed answers). This section tops the design up to the checklist used for Year 11 Physics, Biology and Chemistry, and applies root rules R1 to R4 (`../checks/root-acceptance-y11-upgrade-12-nov.md`). Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) last time's frame, then the laser bench with the narrowing slit, scene 1 (about 32 s); (B) the painted ripple tank, then the water seen from above, scene 2 (about 32 s); (C) the Huygens stage: every point a source, then the barrier and gap, scenes 3 and 4 (about 69 s; the barrier arrives at about 31 s); (D) the doorway and the scale of light, scene 5 (about 36 s); (E) the slit pattern with its intensity curve, scene 6 (about 38 s); (F) the model duel, one row at a time, scene 7 (about 54 s); (G) the evidence: the observed column, then the Poisson stage, scene 8 (about 44 s); (H) the bench again for the investigation, scene 9 (about 24 s); (I) the two Huygens panels and the memory card, scene 10 (about 6 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 69 s, so no cut was needed.
+- **Simulation engines (`src/explainer/sims/`).** The wave pictures run on the waves engine (`waves.ts`, drawn with `WavefrontView`) on one `useWaveTime` clock. In scenes 3 and 4 every dot on the front is a source of `ringsFrom` wavelets, and the new front is where they add. The water through the gap (scene 2), the light pattern beyond the slit (scenes 1, 6 and 9) and the two slits of the handoff are the summed field (`fieldAt`) of a row of sources across each opening, so narrowing the row widens the spread because the sum does. The readouts "slit width" and "central band width" are the design's real values; the wave on screen is a slow model wave with a long wavelength, tagged "model".
+- **Answer frames and mistakes (root rule R1).** Every answer sits in a dark-ink frame with an ink tick. Every mistake takes a slate scribble and a slate hand tag; "not possible" takes a slate cross. This overrides any red crossing, strike, chip or tag in the Visual lines and in "Colour roles". Red and green keep only their subject meanings.
+- **Solid ink (root rule R2).** The opening frame and the final frame are drawn solid in full ink wherever a line calls part of them "faint", "ghost", "pale", "dim" or "grey", so both sides of each join match. Text a student must read is never faint: an earlier row that "dims" stays solid at a smaller size, and an earlier path that "stays faint" is a thin solid line in its role colour.
+- **No coded drawings of real objects.** Apparatus and real objects are painted plates (the `y12p-` set or existing plates), scaled uniformly and never stretched. Exam-style outlines (ground, walls, cliffs, bench edges), vectors, field lines, graphs and circuit symbols stay coded, as root decision 3 for this course records.
+- **No video numbers on screen.** Where a Visual line tags something with a video code, the on-screen words say "last time", "an earlier video" or "next time". Video codes in this document are notes for the builder.
+- **Question cards.** Each attempt card arrives whole (sentences 38 px) with a picture from its first frame. The picture is answer-free: nothing on it can be counted, measured or read off to get the answer. Method aids (ledgers, formula strips, memory cards) are hidden while a countdown runs; every supplied value and condition stays on the card. Each feedback scene keeps a navy givens strip from its first frame.
+- **Notes scene.** Five one-line bullets (95 characters or fewer, 34 px, role colours), the framed memory card beside them, and a notes scene of 45 s in all.
+- **The mirror is a plate.** The "mirror icon" in the Foucault row of scene 8 is a small copy of the plane mirror plate (`phys-y11-plane-mirror-v1.png`, about 100 px). The doorway, the hair and the round disc stay plain outlines.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings.
@@ -109,6 +123,8 @@ Visual: board change to the model duel, built one row at a time: two column head
 > Then the evidence came in. Light was shown to spread into shadows, which only waves **do**. In 1850, Foucault put water in his spinning-mirror apparatus, and found light travels slower in water, just as the wave model **predicted**. And there was a famous surprise. Siméon Poisson pointed out that the wave theory predicted a bright spot right in the centre of the shadow of a round **disc**. He thought that was absurd. François Arago looked, and found the spot. In each case, the two models predicted different things, and the wave prediction **won**. The strongest evidence of all, interference, is next.
 
 Visual: the duel table gains an "observed" column. On "do" the "gap or edge" row's observed cell shows the spreading pattern; tick under Huygens, cross under Newton. On "predicted" the "speed in water" row's observed cell "slower (Foucault, 1850)" with v02's mirror icon; tick under Huygens; green hand tag "measured: slower". On "disc" a camera change to the Poisson stage at full width: a red beam on a coded round disc on a post, the disc's shadow on a screen and, at the shadow's centre, a small bright red dot (tag "schematic"); grey hand tag "Poisson: absurd!". On "found the spot" a tick chip "Poisson spot observed" and a red pen ring round the dot. On "won" the camera returns to the completed table (all rows at 36 px); every Huygens cell ticks; a chip "the wave model accepted", framed. On "interference, is next" a grey chip "Young's two slits: next video".
+
+Upgrade (Revision 3): The picture in the Foucault row is a small copy of the plane mirror plate, not an icon.
 
 ### 9. investigating diffraction
 > To investigate it yourself, shine a laser through an adjustable slit onto a screen a couple of metres away. Narrow the slit slowly, and watch the central band **widen**. Swap a red laser for a green one, and compare. Even a single hair in the beam gives a spread-out pattern. Never look along a laser beam, or at its **reflections**.
@@ -201,6 +217,8 @@ Model answer: (a) Newton's model explained refraction towards the normal by an a
 
 Revision 2 count (7 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed; total = sum of scene strings, which replaces Revision 1's joined count of 6,282, a scene sum of 6,267): **6,289 characters**, 16 scenes. Characters per scene (1 to 16): 420, 419, 412, 511, 481, 502, 716, 591, 325, 78, 205, 451, 210, 436, 457, 75. At 13.3 characters per second the speech is about 473 s; add about 3 s for the prediction, 2 s for the memory-aid hold, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 40 s more of the notes hold (45 s in all; about 69 s; the slit sweeps run inside their narration): **about 542 s**, inside the 5,500 to 7,000 character band and under the 570 s cap. Reserve trims: scene 5's sound sentence; scene 8's Poisson spot (open decision 3).
 
+Revision 3 (13 Nov 2026): narration unchanged (6,289 characters). The notes scene is 45 s in all, so the estimate is about 542 s, unchanged (the notes hold was already 45 s).
+
 ## Opening frame
 
 v04's final frame (`phys-y12-m7-v04.md`, "Final frame"): a small feature board with ticked chips "temperature", "velocity", "spin", "density" at the upper left; at the centre a coded spectroscope entrance slit (two dark jaws, narrow gap), straight pale amber wavefronts arriving from the left, faint curved wavefronts fanning out beyond the gap, a "?" in the shadow region; heading "What can stellar spectra tell us beyond chemical identity?"; chip "Next: why does light spread after passing an edge or narrow opening?". Scene 1 turns the chip into the heading, fades the feature board and moves to the bench.
@@ -219,6 +237,8 @@ Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1
 
 Holds: hook (3 s countdown), memory aid (2 s), attempt-1, attempt-2 (10 s countdown, "Pause here to answer." on screen), key-notes (about 45 s). Review evidence paths: `learning_review` = `checks/p-y12-m7-v05-learning-review.md`, `science_check` = `checks/p-y12-m7-v05-physics-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". The key-notes scene is 45 s in all.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -230,6 +250,8 @@ Have (scaled uniformly only, never stretched):
 Need (new plates, Codex): none (the slide holder was delivered in brief 191).
 
 Coded: wavefronts, wavelets, barriers, shadows, slits, patterns and curves, doorway, sound fronts, duel table, Poisson diagram, hair, chips, attempt cards and diagram, countdowns, key notes board.
+
+Revision 3 (13 Nov 2026). Existing plate newly used small in scene 8 (confirmed by file listing, not re-inspected): `phys-y11-plane-mirror-v1.png`. New plate requests: none. Kit gaps (real gaps in `src/explainer/sims/`; not coded around in the engines): the waves engine has no single-slit intensity helper (only `doubleSlitBrightness` with a slit-width term), so the single-slit curve is the summed field of a row of sources; a helper would serve this video and the next.
 
 ## Codex asset brief (Year 12 Physics M7 v05: slide holder)
 
@@ -255,6 +277,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) and no U+2061, and Australian spelling.
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Log site notes 1 to 3 in `site-corrections-phys-y12.md`.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the question-card pictures give nothing away; every givens strip repeats the card's values exactly; the key notes agree with the narration and with "Numbers used"; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -304,3 +328,26 @@ New plate requests: none.
 Joins: the opening is v04's final frame (unchanged in v04 Revision 2). The final frame (scene 15) is unchanged: the new handoff tag and pen bracket fade before the hold, so the v06 join holds.
 
 Counts: 6,282 (joined; scene sum 6,267) to 6,289 characters (scene sum); about 556 s to about 542 s.
+
+## Revision 3 (13 Nov 2026)
+
+Visual-standard top-up to the checklist used for Year 11 Physics, Biology and Chemistry, with root rules R1 to R4. Visuals only: no narration line changed (checked by hash against a baseline taken before the first edit).
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, the simulation engines named, and the standing rules (R1 dark-ink answer frames and slate mistakes, R2 solid join frames, no coded real objects, question cards, the notes scene).
+- Simulation: the wavelets, the water through the gap and the slit patterns are tied to the waves engine (slow model waves, real values on the readouts).
+- Scene 8: the mirror icon becomes a small copy of the mirror plate.
+- Question cards: both already carry pictures and both feedback scenes already carry givens strips.
+- Key notes: already five one-line bullets with a memory card; the card sits beside them and the notes scene is 45 s.
+
+New plate requests: none.
+
+Kit gaps: the waves engine has no single-slit intensity helper (only `doubleSlitBrightness` with a slit-width term), so the single-slit curve is the summed field of a row of sources; a helper would serve this video and the next.
+
+Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
+
+Counts: 6,289 characters, unchanged; about 542 s, unchanged (the notes hold was already 45 s).
+
+Speech changes needed: none.
+
+Calls for root: none.
