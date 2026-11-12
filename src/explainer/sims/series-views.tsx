@@ -88,6 +88,8 @@ export const SeriesGraph: React.FC<{
 		let d = '';
 		const n = l.t.length;
 		if (!n || to < from) return d;
+		// A line whose samples begin part-way along the axis is drawn from its first sample, not stretched back to the edge.
+		if (l.t[0] > from) from = Math.min(to, l.t[0]);
 		const startV = valueAt(l.t, l.v, from);
 		d = `M${X(from).toFixed(1)},${Y(startV).toFixed(1)} `;
 		for (let i = 0; i < n; i++) { const t = l.t[i]; if (t > from && t < to) d += `L${X(t).toFixed(1)},${Y(l.v[i]).toFixed(1)} `; }

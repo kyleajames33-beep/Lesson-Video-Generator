@@ -818,3 +818,113 @@ test('circuits: a motor\'s back emf cuts its current as it speeds up, and V I = 
 	// A motor given no constant is still its resistance alone, as before.
 	near(circ.solveCircuit([{id: 'b', kind: 'battery', from: 'N', to: 'P', emf: 12}, {id: 'm', kind: 'motor', from: 'P', to: 'N', r: 2}]).current.m, 6, 1e-6);
 });
+
+// ------------------------------------------- black body, slits, photoelectric, relativity
+const bb = await load('src/explainer/sims/blackbody.ts');
+const pe = await load('src/explainer/sims/photoelectric.ts');
+const sr = await load('src/explainer/sims/relativity.ts');
+
+test('black body: the curve peaks where Wien\'s law says, and hotter means a shorter peak and more at every wavelength', () => {
+	for (const T of [3000, 5800, 10000]) {
+		const c = bb.blackBodyCurve({temperature: T, from: 50e-9, to: 3000e-9, points: 5901});
+		let best = 0; for (let i = 1; i < c.radiance.length; i++) if (c.radiance[i] > c.radiance[best]) best = i;
+		rel(c.wavelength[best], 2.898e-3 / T, 2e-3, `peak at ${T} K`);
+		rel(c.peak.wavelength, bb.wienPeak(T), 1e-12, 'reported peak');
+	}
+	near(bb.wienPeak(5800) * 1e9, 499.6, 0.1, 'the Sun: about 500 nm');
+	rel(bb.temperatureFromPeak(420e-9), 6900, 2e-3, 'a peak at 420 nm means about 6900 K');
+	for (const l of [200e-9, 500e-9, 1000e-9, 2500e-9]) assert.ok(bb.planck(l, 5000) > bb.planck(l, 3500), 'hotter is brighter at every wavelength');
+});
+
+test('black body: the classical curve agrees at long wavelengths and runs away at short ones; the total is sigma T^4', () => {
+	rel(bb.classicalRadiance(1e-3, 300), bb.planck(1e-3, 300), 0.03, 'long wavelength: classical is close');
+	assert.ok(bb.classicalRadiance(100e-9, 5800) > 1e6 * bb.planck(100e-9, 5800), 'ultraviolet: classical is enormously too big');
+	assert.ok(bb.classicalRadiance(50e-9, 5800) > bb.classicalRadiance(100e-9, 5800), 'and it keeps climbing');
+	// Integrate Planck's curve over wavelength; pi x that is the power per square metre.
+	const T = 5800; let sum = 0; const n = 200000, a = 10e-9, b = 100e-6, h = (b - a) / n;
+	for (let i = 0; i < n; i++) sum += bb.planck(a + (i + 0.5) * h, T) * h;
+	rel(Math.PI * sum, bb.radiatedPower(T), 2e-3, 'Stefan-Boltzmann');
+	rel(bb.radiatedPower(2 * T), 16 * bb.radiatedPower(T), 1e-12, 'double the temperature, sixteen times the power');
+});
+
+test('waves: one slit is dark where w sin(angle) = wavelength; a grating is bright where d sin(angle) = m wavelength', () => {
+	const lam = 650e-9, w = 0.1e-3;
+	near(waves.singleSlitBrightness(w, lam, 0), 1, 1e-12, 'brightest straight ahead');
+	near(waves.singleSlitBrightness(w, lam, Math.asin(lam / w)), 0, 1e-12, 'first dark band');
+	near(waves.singleSlitBrightness(w, lam, Math.asin((2 * lam) / w)), 0, 1e-12, 'second dark band');
+	assert.equal(waves.singleSlitDarkAngles(w, lam).filter(a => Math.abs(a.m) === 1).length, 2);
+	rel(waves.centralBandWidth(w, lam, 2), 0.026, 1e-9, 'central band: 2 x 650 nm x 2 m / 0.1 mm = 26 mm');
+	rel(waves.centralBandWidth(w / 2, lam, 2), 0.052, 1e-9, 'half the slit, twice the spread');
+	rel(waves.fringeSpacing(0.25e-3, 632.8e-9, 2), 5.0624e-3, 1e-9, 'double-slit spacing');
+	// A grating with 400 lines per mm and 647 nm light: first order at 15.0 degrees, second at 31.2.
+	const d = waves.gratingSpacing(400e3), red = 647e-9, max = waves.gratingMaxima(d, red);
+	near(d, 2.5e-6, 1e-15, 'd = 1 / N');
+	near((max.find(a => a.m === 1).angle * 180) / Math.PI, 15.0, 0.05, 'first order');
+	near((max.find(a => a.m === 2).angle * 180) / Math.PI, 31.2, 0.05, 'second order');
+	assert.equal(waves.highestOrder(d, red), 3, 'm <= d / wavelength, rounded down');
+	for (const a of max) near(waves.gratingBrightness(1000, d, red, a.angle), 1, 1e-6, `order ${a.m} is fully bright`);
+	for (const a of max) near(Math.sin(a.angle) * d, a.m * red, 1e-18, 'd sin(angle) = m wavelength');
+	// More slits: same angles, narrower lines.
+	const off = Math.asin(red / d) + 0.002;
+	assert.ok(waves.gratingBrightness(1000, d, red, off) < 0.01 && waves.gratingBrightness(2, d, red, off) > 0.9, 'a line that is broad with 2 slits is sharp with 1000');
+	near(waves.gratingBrightness(2, d, red, 0.1), waves.doubleSlitBrightness(d, red, 0.1), 1e-12, 'two slits: the double-slit pattern');
+	near(waves.malus(40, Math.PI / 3), 10, 1e-9, 'Malus: 40 x cos^2 60 = 10');
+});
+
+test('photoelectric: E_k = hf - work function, a threshold frequency, and brightness changes only the number', () => {
+	// Zinc, 4.3 eV. Red light (700 nm) frees nothing, however bright; ultraviolet (200 nm) does.
+	const red = pe.photoelectric({wavelength: 700e-9}, 4.3), uv = pe.photoelectric({wavelength: 200e-9}, 4.3);
+	near(red.photonEV, 1.771, 1e-3, 'red photon'); assert.equal(red.emits, false); assert.equal(red.kMaxEV, 0);
+	assert.equal(pe.photocurrent({wavelength: 700e-9}, 4.3, 1000), 0, 'bright red light: still nothing');
+	near(uv.photonEV, 6.199, 1e-3, 'ultraviolet photon'); assert.ok(uv.emits);
+	near(uv.kMaxEV, 6.199 - 4.3, 1e-3, 'E_k = hf - phi'); near(uv.stoppingVoltage, uv.kMaxEV, 1e-12, 'stopping voltage in volts = E_k in eV');
+	rel(uv.kMaxJ, uv.kMaxEV * 1.602e-19, 1e-3, 'in joules');
+	rel(uv.thresholdFrequency, (4.3 * 1.602176634e-19) / 6.62607015e-34, 1e-12, 'f0 = phi / h');
+	near(pe.photoelectric({frequency: uv.thresholdFrequency}, 4.3).kMaxEV, 0, 1e-9, 'at the threshold the electrons only just escape');
+	const f = 1.2e15, k = pe.photoelectric({frequency: f}, 2.3);
+	rel(k.kMaxJ, 6.62607015e-34 * f - 2.3 * 1.602176634e-19, 1e-9, 'hf - phi in joules');
+	rel(k.maxSpeed, Math.sqrt((2 * k.kMaxJ) / 9.1093837e-31), 1e-12, 'fastest electron');
+	// Brightness: twice the current, the same stopping voltage.
+	near(pe.photocurrent({frequency: f}, 2.3, 2), 2 * pe.photocurrent({frequency: f}, 2.3, 1), 1e-12);
+	assert.equal(pe.photocurrent({frequency: f}, 2.3, 2, -k.stoppingVoltage), 0, 'stopped at the same reverse voltage');
+	assert.ok(pe.photocurrent({frequency: f}, 2.3, 2, -k.stoppingVoltage / 2) > 0);
+	// The K_max line has gradient h / e for every metal.
+	const a = pe.kMaxLine(2.3, 1.5e15), b = pe.kMaxLine(4.3, 1.5e15);
+	assert.ok(b.threshold > a.threshold, 'a bigger work function moves the threshold up');
+	const points = [0.8e15, 1.0e15, 1.2e15, 1.4e15].map(fr => [fr, pe.photoelectric({frequency: fr}, 2.3).stoppingVoltage]);
+	const fit = pe.fitStoppingVoltage(points);
+	rel(fit.planck, 6.62607015e-34, 1e-9, 'gradient x e = h'); rel(fit.workFunction, 2.3, 1e-9, 'intercept gives the work function'); rel(fit.thresholdFrequency, a.threshold, 1e-9);
+});
+
+test('relativity: gamma at 0.6c is 1.25; time dilates, length contracts, momentum has no ceiling', () => {
+	near(sr.gamma(0.6), 1.25, 1e-12, 'gamma at 0.6c'); near(sr.gamma(0.8), 5 / 3, 1e-12); near(sr.gamma(0), 1, 1e-15);
+	near(sr.betaFromGamma(1.25), 0.6, 1e-12);
+	assert.throws(() => sr.gamma(1), /below c/);
+	// Muons at 0.995c: 2.2 microseconds becomes about 22.
+	near(sr.dilatedTime(2.2, 0.995), 22.03, 0.01, 'muon lifetime in the lab');
+	near(sr.dilatedTime(8, 0.6), 10, 1e-9, 'an 8 year trip on the ship is 10 years on Earth');
+	near(sr.contractedLength(100, 0.8), 60, 1e-9, 'a 100 m ship at 0.8c is 60 m long');
+	near(sr.contractedLength(12, 0.8), 7.2, 1e-9, '12 light-years becomes 7.2');
+	rel(sr.relativisticMomentum(9.109e-31, 0.95), 3.2026 * 9.109e-31 * 0.95 * 2.99792458e8, 1e-4, 'electron at 0.95c');
+	for (const q of [1, 10, 1000]) { const beta = sr.betaFromMomentum(q * 2.99792458e8, 1); assert.ok(beta < 1, 'never reaches c'); rel(sr.relativisticMomentum(1, beta), q * 2.99792458e8, 1e-9, 'and gives back its momentum'); }
+	near(sr.addVelocities(0.9, 0.9), 1.8 / 1.81, 1e-12, '0.9c + 0.9c is still below c'); near(sr.addVelocities(1e-6, 2e-6), 3e-6, 1e-15, 'slow speeds just add');
+	rel(sr.restEnergy(1), 8.98755e16, 1e-5, 'one kilogram is 9.0 x 10^16 J'); rel(sr.massFromEnergy(3.846e26), 4.28e9, 2e-3, 'the Sun loses about 4.2 million tonnes each second');
+	rel(sr.relativisticKineticEnergy(1, 0.001), 0.5 * (0.001 * 2.99792458e8) ** 2, 1e-5, 'slow: half m v squared');
+	near(sr.totalEnergy(1, 0.6), 1.25 * sr.restEnergy(1), 1e-3);
+});
+
+test('relativity: the light clock obeys Pythagoras, so the moving clock ticks gamma times slower', () => {
+	const clock = {height: 1.5, beta: 0.6}, c = 2.99792458e8, ticks = sr.lightClockTicks(clock);
+	rel(ticks.rest, 3 / c, 1e-12, 'at rest: 2d / c'); rel(ticks.moving, 1.25 * ticks.rest, 1e-12, 'moving: gamma times longer');
+	// Half a tick: the pulse covers the slant, (c T / 2)^2 = d^2 + (v T / 2)^2.
+	const T = ticks.moving; rel((c * T / 2) ** 2, 1.5 ** 2 + (0.6 * c * T / 2) ** 2, 1e-12, 'Pythagoras on half a tick');
+	const top = sr.lightClockAt(clock, T / 2);
+	near(top.y, 1.5, 1e-9, 'at half a tick the pulse is at the top mirror'); rel(top.x, 0.6 * c * T / 2, 1e-12, 'and the clock has moved v T / 2');
+	const s = sr.lightClockAt(clock, 4 * T + T / 4);
+	assert.equal(s.ticks, 4); assert.equal(s.restTicks, 5, 'while the moving clock ticks 4 times, one at rest ticks 5');
+	near(s.y, 0.75, 1e-9, 'a quarter of the way into the next tick: half-way up');
+	assert.equal(s.path.length, 10, 'the path is a zigzag with a corner at every mirror');
+	// The pulse's speed along its path is c.
+	const a = sr.lightClockAt(clock, 0.1 * T), b = sr.lightClockAt(clock, 0.2 * T);
+	rel(Math.hypot(b.x - a.x, b.y - a.y) / (0.1 * T), c, 1e-9, 'the pulse moves at c in this frame too');
+});

@@ -103,6 +103,35 @@ export const doubleSlitBrightness = (d: number, wavelength: number, angle: numbe
 	return Math.cos(beta) ** 2 * envelope;
 };
 
+// ---------------------------------------------------- single slit and grating
+const sinc2 = (a: number) => (Math.abs(a) < 1e-9 ? 1 : (Math.sin(a) / a) ** 2);
+/** Relative brightness (0 to 1) on a far screen at this angle, for one slit of this width: (sin a / a)^2 with a = pi w sin(angle) / wavelength. */
+export const singleSlitBrightness = (slitWidth: number, wavelength: number, angle: number) => sinc2((Math.PI * slitWidth * Math.sin(angle)) / wavelength);
+/** Directions of the dark bands of one slit: w sin(angle) = m x wavelength, m = 1, 2, ... either side (there is no dark band at m = 0). */
+export const singleSlitDarkAngles = (slitWidth: number, wavelength: number) => { const out: {m: number; angle: number}[] = []; for (let m = -Math.floor(slitWidth / wavelength); m <= slitWidth / wavelength; m++) if (m !== 0) out.push({m, angle: Math.asin((m * wavelength) / slitWidth)}); return out; };
+/** Full width of the central bright band on a screen a distance L away (small angles): 2 x wavelength x L / w. */
+export const centralBandWidth = (slitWidth: number, wavelength: number, screenDistance: number) => (2 * wavelength * screenDistance) / slitWidth;
+/** Spacing of double-slit bands on a screen a distance L away (small angles): wavelength x L / d. */
+export const fringeSpacing = (d: number, wavelength: number, screenDistance: number) => (wavelength * screenDistance) / d;
+/**
+ * Relative brightness (0 to 1) at this angle for `slits` equally spaced slits, d apart.
+ * The bright lines stay where two slits put them (d sin(angle) = m x wavelength); more
+ * slits make each line narrower. `slitWidth` adds the single-slit envelope (0: ignore it).
+ */
+export const gratingBrightness = (slits: number, d: number, wavelength: number, angle: number, slitWidth = 0) => {
+	const beta = (Math.PI * d * Math.sin(angle)) / wavelength, s = Math.sin(beta);
+	const lines = Math.abs(s) < 1e-9 ? 1 : (Math.sin(slits * beta) / (slits * s)) ** 2;
+	return lines * (slitWidth > 0 ? singleSlitBrightness(slitWidth, wavelength, angle) : 1);
+};
+/** Slit spacing of a grating ruled with this many lines per metre: d = 1 / N. */
+export const gratingSpacing = (linesPerMetre: number) => 1 / linesPerMetre;
+/** Directions of a grating's bright lines, d sin(angle) = m x wavelength, for every order that exists. */
+export const gratingMaxima = (d: number, wavelength: number) => brightAngles(d, wavelength);
+/** The highest order a grating can show: the largest whole m with m x wavelength <= d. */
+export const highestOrder = (d: number, wavelength: number) => Math.floor(d / wavelength + 1e-9);
+/** Malus's law: brightness passed by an analyser at this angle to polarised light, I = I_max cos^2(angle). */
+export const malus = (intensity: number, angle: number) => intensity * Math.cos(angle) ** 2;
+
 // ------------------------------------------------------------------ wavefronts
 export type Wavefront = {x: number; y: number; r: number; /** time since it was sent out */ age: number};
 /**

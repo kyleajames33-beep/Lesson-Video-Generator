@@ -12,6 +12,11 @@ import {FluxEmfStrips, MagnetCoilView, MeterNeedle, RotatingCoilView} from './in
 import {useSeriesTime} from './series-views';
 import {Part, runCircuit, secondary, solveAC} from './circuits';
 import {CircuitLayout, CircuitTimeGraph, CircuitView, useCircuit} from './circuits-views';
+import {blackBodyCurve, wienPeak} from './blackbody';
+import {BlackBodyGraph, GammaGraph, IntensityPattern, LightClockView, PhotoelectricGraph, PhotonBars} from './modern-views';
+import {photoelectric} from './photoelectric';
+import {contractedLength, dilatedTime, gamma, lightClockTicks} from './relativity';
+import {gratingBrightness, gratingMaxima, singleSlitBrightness} from './waves';
 import {SimReadout} from './views';
 
 const lazy = <T,>(make: () => T) => { let value: T | undefined; return () => (value ??= make()); };
@@ -133,9 +138,81 @@ export const MotorDemo: React.FC = () => {
 	);
 };
 
+// 4a. Black-body curves ---------------------------------------------------------
+const bodies = lazy(() => [4000, 5000, 6000].map(temperature => blackBodyCurve({temperature, from: 100e-9, to: 2500e-9})));
+export const BlackBodyDemo: React.FC = () => {
+	const now = useSeriesTime({at: 10, from: 100, to: 2500, frames: 200}), curves = bodies();
+	return (
+		<DemoPage title="Hotter means a shorter peak, and brighter everywhere">
+			<BlackBodyGraph x={50} y={160} w={1240} h={880} now={now} peaks visible={{label: 'visible'}} classical={{of: 2, label: 'classical'}}
+				curves={[{curve: curves[0], label: '4000 K', tone: 'red'}, {curve: curves[1], label: '5000 K', tone: 'amber'}, {curve: curves[2], label: '6000 K', tone: 'blue'}]} />
+			<SimReadout x={1340} y={220} w={520} title="Peak wavelength" rows={[
+				{label: '4000 K', value: wienPeak(4000) * 1e9, digits: 0, unit: 'nm', tone: 'red'},
+				{label: '5000 K', value: wienPeak(5000) * 1e9, digits: 0, unit: 'nm', tone: 'amber'},
+				{label: '6000 K', value: wienPeak(6000) * 1e9, digits: 0, unit: 'nm', tone: 'blue'},
+			]} />
+		</DemoPage>
+	);
+};
+
+// 4b. Single slit and grating ---------------------------------------------------
+const RED = 650e-9, SPACING = 3.25e-6;
+export const SlitDemo: React.FC = () => {
+	const f = useCurrentFrame(), width = 0.2e-3 - 0.15e-3 * ramp(f, 20, 160), slits = [2, 3, 5, 8, 12, 20][Math.min(5, Math.floor(ramp(f, 20, 200) * 6))];
+	const orders = gratingMaxima(SPACING, RED).filter(o => Math.abs(o.m) <= 2).map(o => ({angle: o.angle, label: `m = ${o.m}`}));
+	return (
+		<DemoPage title="One slit spreads; many slits sharpen">
+			<Caption x={90} y={160}>one slit, narrowing</Caption>
+			<IntensityPattern brightness={a => singleSlitBrightness(width, RED, a)} maxAngle={0.022} x={60} y={210} w={860} h={560} tickDegrees={0.5} />
+			<SimReadout x={160} y={800} w={660} title="Slit" rows={[{label: 'width', value: width * 1e3, digits: 3, unit: 'mm'}, {label: 'central band at 2 m', value: ((2 * RED * 2) / width) * 1e3, digits: 0, unit: 'mm', tone: 'red'}]} />
+			<Caption x={1010} y={160}>equal slits, more of them</Caption>
+			<IntensityPattern brightness={a => gratingBrightness(slits, SPACING, RED, a)} maxAngle={0.5} x={980} y={210} w={880} h={560} orders={orders} tickDegrees={10} samples={1400} />
+			<SimReadout x={1090} y={800} w={660} title="Slits" rows={[{label: 'number', value: slits, digits: 0}, {label: 'first order at', value: (Math.asin(RED / SPACING) * 180) / Math.PI, digits: 1, unit: '°', tone: 'red'}]} />
+		</DemoPage>
+	);
+};
+
+// 4c. Photoelectric bench -------------------------------------------------------
+export const PhotoelectricDemo: React.FC = () => {
+	const f = useCurrentFrame(), frequency = 4e14 + 1.2e15 * ramp(f, 20, 240), r = photoelectric({frequency}, 4.3);
+	return (
+		<DemoPage title="One photon, one electron">
+			<PhotoelectricGraph x={50} y={170} w={1050} h={860} toFrequency={1.6e15} now={frequency} thresholds
+				metals={[{workFunction: 2.3, label: 'potassium', tone: 'violet'}, {workFunction: 4.3, label: 'zinc', tone: 'teal'}]} />
+			<PhotonBars x={1180} y={170} w={640} h={470} photonEV={r.photonEV} workFunction={4.3} full={8} labels={{photon: 'photon', work: 'zinc needs', short: 'not enough: no electrons'}} />
+			<SimReadout x={1180} y={680} w={660} title="Zinc, at this frequency" rows={[
+				{label: 'photon energy', value: r.photonEV, digits: 2, unit: 'eV', tone: 'amber'},
+				{label: 'largest kinetic energy', value: r.kMaxEV, digits: 2, unit: 'eV', tone: 'teal'},
+				{label: 'stopping voltage', value: r.stoppingVoltage, digits: 2, unit: 'V'},
+			]} />
+		</DemoPage>
+	);
+};
+
+// 4d. Relativity ----------------------------------------------------------------
+const CLOCK = {height: 1.5, beta: 0.8};
+export const RelativityDemo: React.FC = () => {
+	const ticks = lightClockTicks(CLOCK), t = useSeriesTime({at: 10, to: 3 * ticks.rest, frames: 250});
+	return (
+		<DemoPage title="A moving clock ticks more slowly">
+			<LightClockView clock={CLOCK} t={t} x={60} y={170} mirrorGap={230} track={1150} labels={{rest: 'at rest', moving: 'moving at 0.8c', ticks: 'ticks:'}} />
+			<GammaGraph now={CLOCK.beta} x={60} y={560} w={900} h={490} />
+			<SimReadout x={1040} y={610} w={800} title="At 0.8c" rows={[
+				{label: 'γ', value: gamma(0.8), digits: 3, tone: 'violet'},
+				{label: '1 s on the moving clock takes', value: dilatedTime(1, 0.8), digits: 3, unit: 's'},
+				{label: 'a 100 m ship measures', value: contractedLength(100, 0.8), digits: 1, unit: 'm'},
+			]} />
+		</DemoPage>
+	);
+};
+
 export const PHYSICS_DEMOS: readonly (readonly [string, React.FC])[] = [
 	['SimDemo-MagneticField', MagneticDemo],
 	['SimDemo-Induction', InductionDemo],
 	['SimDemo-AC', ACDemo],
 	['SimDemo-MotorBackEmf', MotorDemo],
+	['SimDemo-BlackBody', BlackBodyDemo],
+	['SimDemo-SlitPatterns', SlitDemo],
+	['SimDemo-Photoelectric', PhotoelectricDemo],
+	['SimDemo-Relativity', RelativityDemo],
 ];

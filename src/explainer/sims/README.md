@@ -239,6 +239,33 @@ The flux through a loop or coil over time, and the emf that its change induces: 
 - Textbook values for readouts: `faradayEmf`, `generatorPeakEmf`, `rodEmf`, `fluxThrough`.
 - This engine gives the emf. To drive a circuit with it, set a battery's `emf` in the circuit engine from `inductionAt` (or use the alternating source there for a steady generator).
 
+### Light and matter helpers (`blackbody.ts`, `photoelectric.ts`, `relativity.ts`, additions to `waves.ts`; drawing in `modern-views.tsx`)
+
+Formulas with no stored run: each is exact, so a slider can call it every frame.
+
+| Idea | What to use |
+| --- | --- |
+| Black-body curves, hotter and cooler | `blackBodyCurve({temperature, from, to})`, `planck`; `BlackBodyGraph` (several curves, `visible` band, `peaks`) |
+| Wien's law | `wienPeak(T)`, `temperatureFromPeak(wavelength)` |
+| The classical curve that runs away (ultraviolet catastrophe) | `classicalRadiance`; `classical` on `BlackBodyGraph` |
+| Total power radiated | `radiatedPower(T)` (σT⁴) |
+| One slit: a central band that widens as the slit narrows | `singleSlitBrightness`, `singleSlitDarkAngles`, `centralBandWidth`; `IntensityPattern` |
+| A grating: same angles as two slits, sharper lines | `gratingBrightness(slits, d, wavelength, angle)`, `gratingMaxima`, `gratingSpacing`, `highestOrder` |
+| Double-slit spacing on a screen; Malus's law | `fringeSpacing`; `malus` |
+| One photon | `photon({frequency})` or `photon({wavelength})`: energy in joules and eV |
+| A photoelectric bench | `photoelectric(light, workFunction)`: `emits`, `kMaxEV`, `stoppingVoltage`, thresholds; `photocurrent(light, workFunction, intensity, voltage)` |
+| Largest kinetic energy against frequency, one line per metal | `kMaxLine`; `PhotoelectricGraph`; `PhotonBars` for hf beside the work function |
+| Planck's constant from data | `fitStoppingVoltage(points)`: gradient × e, threshold and work function |
+| Gamma, time dilation, length contraction | `gamma(beta)`, `dilatedTime`, `contractedLength`; `GammaGraph` |
+| Momentum and energy near c | `relativisticMomentum`, `betaFromMomentum`, `relativisticKineticEnergy`, `restEnergy`, `massFromEnergy`, `addVelocities` |
+| A light clock, at rest and moving | `lightClockAt(clock, t)`, `lightClockTicks`; `LightClockView` (to scale, both clocks on one time) |
+
+- Speeds in `relativity.ts` are fractions of c (`beta`). `gamma(1)` throws: nothing with mass reaches c.
+- `photocurrent` below zero volts is a straight-line model of a real cell's curve. The stopping voltage and the threshold are exact; the shape between them is not.
+- `IntensityPattern` takes any brightness function of the angle, so it also draws `doubleSlitBrightness`. Its strip is the screen: light on dark.
+- The black-body graph plots brightness as a fraction of the tallest peak shown, not in W sr⁻¹ m⁻³.
+- `field-motion.ts` is still not relativistic. For a ring accelerator use r = p / (qB) with `relativisticMomentum`.
+
 ### Time graphs (`series-views.tsx`)
 
 `SeriesGraph` is the one line graph behind the population, heating and circuit graphs: several lines with lesson labels and tones, a moving `now`, dashed `marks`, shaded `spans`, hand-written `notes`. Text is at least 30 px. Use it directly for any other quantity against time.
