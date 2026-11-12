@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V10: Line spectra and energy levels. Why does hydrogen give out only a few sharp colours, and what does that reveal about electrons in atoms? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: spectrum orientation locked: energy increases left to right, red left, violet right, UV beyond violet at the right. Narration 5,645 characters (joined parser count), about 511 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,629 characters (sum of scene strings; 5,645 with joining spaces; Revision 1 was 5,645 by the joined parser count), 17 scenes, about 511 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -60,6 +60,18 @@ Entry knowledge: Stage 5 light, colour and energy; atoms with electron shells; v
 Stops after: photons, the continuous-spectrum problem, Bohr's levels, emission as drops, line counting, fingerprints as evidence, Schrödinger's orbitals named and pictured. No configurations, flame-test method or calculations with E = hf.
 Handoff: chem-y11-ws-v01, how new evidence improves a testable question.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted hydrogen discharge tube (`y11c-hydrogen-discharge-tube-lit-v1.png`, about 460 px tall) glows on screen from the first frame (v09's final frame). The lit filament lamp is now the painted plate `y11c-filament-lamp-lit-v1.png` (delivered), not a coded glow on the unlit lamp. The sodium flame (`m8-flame-na-yellow-v2.png`) carries the fingerprint scene.
+- **Simulation: lines built from single drops.** In scenes 6 and 8 the drops are a run of the chance engine (`src/explainer/sims/chance.ts`, `{kind: 'weighted'}` with one outcome per allowed drop). Each trial is one atom: its electron drops, one photon leaves and lands on the strip at that drop's place. A tally at each line grows (`ChanceHistogram` laid along the strip), and live readouts at 44 px read the run: "atoms so far", "this drop" (for example "4 → 2") and "this photon" (its line, for example "486 nm, blue-green"). Photons only ever land on the lines; the gaps stay dark however long it runs. The weights are illustrative and the strip is labelled "model: brightness not to scale".
+- **Colour key (fixed for the whole video).** Energy in orange; each photon and its line in the colour of its light; ultraviolet a slate dashed arrow labelled "UV"; electrons blue; energy levels dark ink; Bohr's model navy; Schrödinger's cloud blue dots; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every label the Visual lines call "grey", "dim", "faint" or "ghost" is drawn solid in dark ink (on the near-black spectrum band, labels are white).
+- **Type sizes (1080p).** Heading 60 px; the current rule line, readouts and framed answers 52 px, never under 44; question-card sentences 38 px; level labels, wavelength labels and tags 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) the tube, the lamp and their two spectra, scene 1 (about 35 s); (B) the hydrogen strip large, scene 2 (about 24 s); (C) the nuclear atom and its predicted rainbow, scene 3 (about 31 s); (D) stairs and ramp, then the level diagram with one drop, scenes 4 and 5 (about 61 s); (E) the level diagram beside the tube and strip with the live run, scene 6 (about 40 s); (F) the three-level atom, scenes 7 and 8 (about 32 s); (G) three spectra and the sodium flame, scene 9 (about 28 s); (H) Bohr's atom and the orbital cloud, scene 10 (about 50 s); (I) the memory card, scene 11 (about 13 s); question and feedback cards; the timeline; the notes board. Scene 6 is a new stage (the tube plate returns and the run starts), so the level diagram does not run past about 61 s unchanged.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No video numbers on screen.** Tags that showed "v08" or "v11" are reworded in the scene paragraphs.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v08 and v09): nucleus red and grey (small); electrons blue; energy levels ink lines with grey labels "1" to "6"; "energy in" arrows orange; photons as wavy arrows in the colour of their light (ultraviolet drawn as a grey dashed wavy arrow labelled "UV"); spectrum strips on a near-black band; Bohr rings dashed grey once Schrödinger appears; orbital clouds blue dots; crossed chips red strike.
@@ -69,91 +81,124 @@ Cue words in **bold** trigger the visual change. Colour key (continues v08 and v
 
 Visual: opens on v09's final frame (Decisions). On the second sentence a coded ray sketch draws: a beam from the tube through a small triangle prism, fanning onto the spectrum strip. On "lines" the four lines draw onto the strip one at a time, left to right from red to violet (red at the left, in the order spoken); on "violet" the last appears, and the dark gaps between them get a grey tag "darkness". On "gaps" `phys-y11-filament-lamp-v1.png` slides in below the tube with a coded warm glow on its filament; a second ray sketch fans its light onto a second strip, which fills with a smooth continuous rainbow; tags "continuous spectrum" (lamp) and "line spectrum" (hydrogen). On "atom" the heading writes on: "Line spectra: why only these colours?" and the small atom's "?" pulses.
 
+Upgrade (Revision 4): The discharge tube (about 460 px tall) is solid from the first frame, and the lamp is the painted lit plate `y11c-filament-lamp-lit-v1.png` (about 360 px) when it arrives. The two spectrum strips are at least 120 px tall. On "you don't get a rainbow" a red-struck small rainbow strip carries a red hand tag "not this". On "four sharp coloured lines" an ink hand tag "only four" writes above the strip with a pen bracket spanning the lines. On "with darkness in between" the tag "darkness" is white on the band. On "with no gaps" an ink hand tag "every colour" writes on the lamp's strip. The strip tags "continuous spectrum" and "line spectrum" are 38 px.
+
 ### 2. one colour, one photon energy
 > First, we need one idea about light. Light carries energy in tiny packets, called photons. Each photon's energy sets its **colour**. Red photons carry the least energy of the visible colours, and violet photons carry the **most**. So a single sharp line means photons that all have the same, exact **energy**.
 
 Visual: the lamp and its strip shrink to a thumbnail; the hydrogen strip enlarges. On "colour" a small wavy photon arrow travels from the tube and lands on the red line; tag "photon: a packet of light energy". On "most" an orange arrow writes along the strip's length from red to violet (left to right), labelled "photon energy increases"; a grey tag "E = hf" sits small beside it. On "energy" the red line is ringed with a scribble circle and tagged "one line = one exact photon energy".
+
+Upgrade (Revision 4): The hydrogen strip fills the board width, with the tube small at the left. On "tiny packets, called photons" an ink hand tag "photon = one packet" writes beside the travelling photon. On "violet photons carry the most" the orange arrow carries an orange hand tag "more energy →", and the tag "E = hf" is dark ink at 30 px. On "the same, exact energy" the pen ring round the red line takes a red hand tag "one line, one energy".
 
 ### 3. what the nuclear model would predict
 > Now, the nuclear model of the atom, from Rutherford's gold foil experiments, has a tiny nucleus with electrons around it. But nothing in that model limits an electron's energy. If an electron could have any energy at all, it could lose any amount, and the atom could give out photons of every **energy**. That would be a smooth rainbow, like the **filament**. Hydrogen's lines say that can't be **right**.
 
 Visual: the small atom from the opening enlarges at the left: a tiny nucleus and an electron dot circling at a loose radius, tag "nuclear model (v08)". On the second sentence the electron drifts smoothly inward and outward (no fixed radius), and a vertical energy bar beside it fills as a smooth gradient, tag "any energy?". On "energy" wavy photons of every colour stream out, and a strip below fills with a continuous rainbow. On "filament" the lamp thumbnail glows and its rainbow strip slides next to this one: identical. On "right" the predicted rainbow is crossed and the real four-line strip slides over it; a small grey tag "classical physics also predicted the electron would spiral in" writes under the atom.
 
+Upgrade (Revision 4): The atom (about 420 px) and both strips are on the board from the first frame; the tag reads "nuclear model" with no video number. On "nothing in that model limits an electron's energy" an ink hand tag "any energy allowed?" writes beside the energy bar. On "photons of every energy" the predicted strip fills. On "That would be a smooth rainbow" a pen bracket joins the predicted strip and the lamp's strip with an ink hand tag "same as the lamp". On "that can't be right" the predicted rainbow is struck in red with a red hand tag "but hydrogen shows lines". The classical-physics tag is dark ink at 30 px.
+
 ### 4. Bohr's idea: fixed energy levels
 > In nineteen thirteen, Niels Bohr proposed a fix. An electron can only have certain fixed energies, called energy levels. Think of a staircase, not a **ramp**. You can stand on any step, but never between **steps**. The lowest level, where an electron normally sits, is called the ground **state**.
 
 Visual: board clears to the stairs and ramp sketch: on "ramp" two side profiles draw, a smooth ramp with a ball that can rest anywhere (crossed lightly, tag "any energy") and a staircase with uneven steps. On "steps" a ball hops from step to step, never stopping between; tag "energy levels: only these energies". The staircase then rotates into the energy-level diagram: six horizontal lines at hydrogen's spacing, labelled 1 to 6, with "energy" on a vertical arrow. On "state" an electron dot settles on level 1, tagged "ground state". A grey tag "Bohr model, 1913" sits at the diagram's top.
+
+Upgrade (Revision 4): Both profiles are on the board from the first frame of the scene. On "not a ramp" the ramp takes a slate cross (not red: it is the rejected picture, not a student slip) and a slate hand tag "any height". On "never between steps" a navy hand tag "only these heights" writes with a pen bracket down the steps. The level labels "1" to "6" are dark ink at 34 px and the "energy" arrow is labelled at 38 px. On "ground state" a navy hand tag "lowest step" writes with a pen arrow to level 1. The tag "Bohr model, 1913" is dark ink.
 
 ### 5. up, then down: how the light is made
 > Here's how the light is made. The electric current, or a hot flame, gives an electron energy, and it jumps up to a higher level. We say the atom is **excited**. But it doesn't stay there. The electron soon drops back to a lower level, and as it drops, it gives out one photon. That photon's energy is exactly the energy gap between the two **levels**. And an electron sitting in a level gives out no light at **all**. Light only comes from a **jump**.
 
 Visual: on the second sentence an orange "energy in" arrow (labelled "current or flame") meets the electron on level 1 and it jumps to level 3. On "excited" the dot glows, tag "excited". On the fourth sentence the dot drops from level 3 to level 2 and a red wavy photon leaves the diagram to the right. On "levels" a bracket marks the gap between levels 3 and 2, tag "photon energy = gap", and the photon lands on the strip as the red line. On "all" the dot rests on level 2 with no photons and a grey tag "no jump, no light". On "jump" the drop replays once, the bracket glowing.
 
+Upgrade (Revision 4): On "it jumps up to a higher level" an orange hand tag "energy in: up" writes on the orange arrow. On "it gives out one photon" a red hand tag "one drop, one photon" writes along the photon's path. On "the energy gap between the two levels" the bracket is a pen bracket and its line "photon energy = gap" is framed in navy at 52 px. On "gives out no light at all" the tag "no jump, no light" is dark ink at 38 px.
+
 ### 6. fixed gaps, fixed lines
 > Now the lines make sense. The levels are fixed, so the gaps between them are fixed, and each gap makes photons of one exact energy, and one exact colour. For hydrogen, the four visible lines come from electrons dropping down to the second level, from the third, fourth, fifth and sixth **levels**. A bigger drop releases more energy, so its line sits further toward **violet**. Drops all the way to the lowest level release even more energy, as ultraviolet light, which our eyes can't **see**.
 
 Visual: on "levels" four drop arrows draw in turn (3 → 2 red, 4 → 2 blue-green, 5 → 2 blue, 6 → 2 violet), each releasing a photon that lands as its line on the strip; grey wavelength labels "656, 486, 434, 410 nm" appear small under the lines. On "violet" the four arrows line up by length beside the strip, longest under violet, tag "bigger drop, more energy". On "see" two grey dashed arrows drop to level 1 (2 → 1, 3 → 1), their dashed photons leaving off the strip's right edge, beyond violet, into a grey zone "ultraviolet (invisible)". A tag on the strip: "each line = one drop, not a picture of an orbit".
+
+Upgrade (Revision 4): Board change: the level diagram at the left, the discharge tube (about 320 px) back at the top right and the strip directly under it, solid from the first frame. The four drops and their lines are a live run (see "Simulation"): the first four trials are shown slowly in the order red, blue-green, blue, violet to match the narration, then the run speeds up and the tallies grow. Wavelength labels are white on the band at 30 px. On "each gap makes photons of one exact energy" an ink hand tag "same gap, same colour, every time" writes over the tallies. On "its line sits further toward violet" a violet hand tag (dark-ink outline) "bigger drop → more energy" writes with a pen arrow along the four arrows. On "which our eyes can't see" the zone "ultraviolet (invisible)" is labelled at 34 px. The strip tag "each line = one drop, not a picture of an orbit" is 34 px.
 
 ### 7. prediction (countdown, 3 seconds)
 > Quick prediction. Here's an atom with just three energy levels. When its electrons drop down, how many different lines could its emission spectrum show? Have a **think**.
 
 Visual: board clears to a three-level diagram (levels labelled "bottom", "middle", "top", unevenly spaced, no energies), an electron dot on the top level, and an empty spectrum strip. Chip "how many lines?". On "think" the 3 s `Countdown` ring runs. No arrows drawn.
 
+Upgrade (Revision 4): The three-level diagram (labels at 38 px) and the empty strip are on the board from the first frame; the question chip is 44 px. No hand tags (thinking time).
+
 ### 8. every pair of levels
 > Three. An electron can drop from the top level to the middle, from the middle to the bottom, or straight from the top to the **bottom**. Each drop has its own gap, so each makes its own **line**. The straight drop is the biggest, so its photon has the most **energy**.
 
 Visual: on the first sentence three drop arrows draw in turn (top → middle, middle → bottom, top → bottom), finishing on "bottom". On "line" each arrow releases a photon that lands as a separate line on the strip (three lines: the top → bottom line furthest toward violet). On "energy" the long arrow and its line glow together, tag "biggest gap, most energetic photon". A chip writes "lines = number of different drops".
+
+Upgrade (Revision 4): On "Three" the answer "3 lines" is framed in green with a tick (52 px). The three drops then repeat as a live chance run with a tally at each of the three lines. On "Each drop has its own gap" a pen bracket marks each gap in turn with an ink hand tag "3 gaps, 3 lines". On "its photon has the most energy" the long arrow takes a violet hand tag (dark-ink outline) "biggest gap". The closing chip is 44 px.
 
 ### 9. a fingerprint, and the evidence
 > This is why line spectra are such strong evidence for Bohr's idea. Every element has its own set of energy levels, so it gives out its own pattern of lines, like a **fingerprint**. Sodium, for example, gives out a strong yellow-orange **line**. That's the colour you see when a sodium compound is held in a flame, and you'll collect flame colours yourself in a later practical **video**.
 
 Visual: the hydrogen strip returns at the top. On the first sentence a chip "fixed levels predict lines; the lines match the gaps" writes beside it. On "fingerprint" three strips stack: hydrogen (four lines), helium and sodium (coded line patterns, tagged "each element: its own levels, its own lines"); a scribble circle rings the different patterns. On "line" the sodium strip's strong yellow-orange line glows and `m8-flame-na-yellow-v2.png` appears small beside it. On "video" a grey chip "flame tests: later practical" writes under the flame.
 
+Upgrade (Revision 4): The three strips (each at least 100 px tall, labelled at 34 px) are on the board from the first frame of the stack. On "strong evidence for Bohr's idea" the chip is 38 px with a navy pen underline. On "like a fingerprint" an ink hand tag "no two the same" writes with the pen ring. On "a strong yellow-orange line" the sodium flame plate is about 360 px (not small) with a pen arrow from the flame to the line. The last chip reads "flame tests: a later practical" in dark ink.
+
 ### 10. Bohr's limit, and Schrödinger's orbitals
 > But Bohr's model had limits. It pictured electrons circling the nucleus in neat orbits, and its sums matched hydrogen's lines very well. For atoms with more than one electron, it didn't **work**. In nineteen twenty-six, Erwin Schrödinger's model replaced the neat orbits. It keeps the energy levels, but it doesn't track an electron along a path. Instead, it describes orbitals. An orbital is a region around the nucleus where the electron is likely to be **found**. Picture a cloud that's densest where the electron is most likely to **be**. Inside the energy levels, orbitals come in types called s, p, d and f, which we'll use in a later **video**.
 
 Visual: board clears to a Bohr atom (nucleus, solid circular rings, an electron dot on a ring), tag "Bohr model: neat orbits". On "work" a second atom with many electrons appears beside it with a red "?" and a tag "more electrons: predictions fail". On the fourth sentence the rings fade to dashed grey, still labelled "Bohr model". On "found" a dot-density cloud fades in around the nucleus, denser near the centre, tag "orbital: where the electron is likely to be (Schrödinger model, 1926)". On "be" a brightness gradient pulses through the densest region, tag "probability, not a path". On "video" four small grey chips "s", "p", "d", "f" line up beside the cloud with "v11" under them.
+
+Upgrade (Revision 4): Both atoms are about 380 px. On "neat orbits" a navy hand tag "worked for hydrogen" writes beside the Bohr atom. On "it didn't work" the "?" atom takes a red hand tag "fails for bigger atoms". The Bohr rings become dashed navy (not grey). On "It keeps the energy levels" a navy hand tag "levels stay" writes beside the cloud. On "likely to be found" the orbital tag is 38 px with a pen ring round the densest region and a blue hand tag "most likely here". On "a later video" the chips "s", "p", "d", "f" are dark ink at 38 px with "a later video" under them (no video number).
 
 ### 11. one line to remember
 > So here's the picture to keep. Stairs, not a ramp. Electrons can only change energy in fixed steps, so atoms give out only certain photon energies, and only certain **colours**.
 
 Visual: the staircase from scene 4 returns at the left and the hydrogen strip at the right; a drop on the stairs releases a photon onto its line. On "colours" the handwritten line writes large: "Stairs, not a ramp: fixed steps, fixed colours." Hold about 2 seconds.
 
+Upgrade (Revision 4): The line sits in a framed memory card (hand lettering, 52 px): navy "Stairs, not a ramp:" ink "fixed steps, fixed colours." A pen arrow links the drop on the stairs to its line on the strip.
+
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. Two energy levels in an atom are one point six times ten to the minus nineteen joules, and four point one times ten to the minus nineteen joules, above the ground state. An electron moves from the higher level to the lower level. State whether a photon is absorbed or emitted, and calculate its energy. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Two energy levels in an atom are 1.6 × 10⁻¹⁹ J and 4.1 × 10⁻¹⁹ J above the ground state. An electron moves from the higher level to the lower level. (a) State whether a photon is absorbed or emitted. (b) Calculate the energy of the photon." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no diagram, no arrow).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the glowing discharge tube (about 300 px tall), untagged. Nothing answer-bearing: no levels and no arrow are drawn.
 
 ### 13. feedback 1 (brief)
 > The electron drops, so the atom loses energy, and a photon is **emitted**. Its energy is the gap: four point one minus one point six, which is two point five times ten to the minus nineteen **joules**. Adding the two, to get five point seven, is the slip. A photon carries the difference between the levels, not the **sum**.
 
 Visual: card shrinks to the top. A two-level diagram draws: "4.1 × 10⁻¹⁹ J" and "1.6 × 10⁻¹⁹ J" above a "ground state" line. On "emitted" a drop arrow draws with a photon leaving, row "(a) emitted (electron drops)". On "joules" a bracket marks the gap; row "(b) E = 4.1 × 10⁻¹⁹ − 1.6 × 10⁻¹⁹ = 2.5 × 10⁻¹⁹ J". On "sum" a chip "4.1 + 1.6 = 5.7 × 10⁻¹⁹ J" fades in and is crossed (caption "photon = the gap"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "levels 1.6 × 10⁻¹⁹ J and 4.1 × 10⁻¹⁹ J above the ground state | higher → lower". On "emitted" the answer "(a) emitted" is framed in green with a tick (52 px). On "two point five times ten to the minus nineteen joules" the working row is 52 px and "2.5 × 10⁻¹⁹ J" is framed in green. On "sum" the crossed chip is struck in red with a red hand tag "the gap, not the sum".
+
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. An atom has three energy levels, at zero, two and five units of energy. Which photon energies can it emit, when an electron drops from one level to a lower one? Explain why it can't emit a photon with four units of energy. Pause here to answer.
 
 Visual: `QuestionCard`: "A model atom has three energy levels, with energies of 0, 2 and 5 units. (a) List the photon energies the atom can emit when an electron drops from one level to a lower level. (b) Explain why the atom's emission spectrum contains no line for a photon energy of 4 units." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (levels listed in text only; no diagram).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted hand spectroscope (`y11c-hand-spectroscope-v1.png`, about 300 px wide), untagged. Nothing answer-bearing.
 
 ### 15. feedback 2 (brief)
 > The possible drops are five to two, two to zero, and five to zero. So the photon energies are three, two and five **units**. Four isn't the gap between any pair of levels, so no single drop can make it, and there's no line at four **units**. Listing only two and five is the classic slip. Don't forget the drop between the two upper **levels**.
 
 Visual: card shrinks to the top. A three-level diagram draws at 0, 2 and 5. On "units" (first) three drop arrows draw with brackets "3", "2", "5"; row "(a) 3, 2 and 5 units". On "units" (second) a dashed "4?" bracket tries each pair and fades; row "(b) no pair of levels is 4 units apart, so no single drop gives a 4-unit photon". On "levels" a chip "only 2 and 5" fades in and is crossed (caption "5 → 2 gives 3"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "levels at 0, 2 and 5 units | drops only". On "three, two and five units" the answer "(a) 3, 2 and 5 units" is framed in green with a tick (52 px). On "no line at four units" the answer "(b) no pair of levels is 4 apart" is framed in green, and the dashed "4?" bracket is solid slate. On "levels" the crossed chip is struck in red with a red hand tag "5 → 2 gives 3".
+
 ### 16. handoff: evidence changes models
 > Notice how the model of the atom kept changing. The nuclear model couldn't explain line spectra, so Bohr changed it, and Schrödinger changed it again when Bohr's model didn't work for bigger atoms. Each time, new evidence forced a better **model**. Next time, we'll use that same habit in our own investigations, and see how new evidence can improve a testable chemistry **question**.
 
 Visual: board clears. A model timeline draws left to right: three small coded atoms "nuclear model", "Bohr model", "Schrödinger model", joined by arrows, each arrow labelled with its evidence ("line spectra", "atoms with more electrons"). On "model" the arrows glow, tag "new evidence → better model". On "question" v06's sand and salt accounting bar appears small at the right with a teal overhang, tagged "our investigation", and the chip writes "Next: how can new evidence improve a testable chemistry question?". Hold about 2 seconds. This is the final frame (`chem-y11-ws-v01` opens on it, if its designer agrees).
 
-### 17. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The three atoms are about 240 px each, with model names at 38 px and evidence labels at 34 px. On "new evidence forced a better model" the tag "new evidence → better model" is navy hand lettering at 42 px with pen arrows; it is part of the final frame as written. Nothing else is added, so the final frame is exactly as described.
+
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Light is emitted as photons; a photon's energy sets its colour (red least, violet most, of the visible colours). A line spectrum shows only certain colours; a continuous spectrum shows all.
-2. Bohr model: electrons can only have fixed energies (energy levels). Energy absorbed lifts an electron to a higher level (excited); when it drops, it emits one photon with energy equal to the gap between the levels.
-3. Fixed levels give fixed gaps, so only certain photon energies: lines. Each element has its own levels, so its own line pattern (a fingerprint). This spectral evidence supports the Bohr model.
-4. Schrödinger model: keeps energy levels, but describes electrons by orbitals, regions where an electron is likely to be found (not fixed paths). Orbital types: s, p, d, f.
+1. Light comes as photons. A photon's energy sets its colour (violet > red).
+2. Electrons can only have fixed energies: energy levels (Bohr).
+3. An excited electron drops and emits one photon: its energy = the gap.
+4. Fixed gaps give fixed lines. Each element has its own pattern of lines.
+5. Schrödinger: orbitals, regions where an electron is likely to be found.
 
-Memory aid (large, on the notes screen): *Stairs, not a ramp: fixed steps, fixed colours.*
+Memory aid (framed card beside the notes, hand lettering, with a small staircase drawn in the card): *Stairs, not a ramp: fixed steps, fixed colours.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -205,6 +250,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **5,645 characters**, 17 scenes (per-scene counts in Review notes). At 13.3 characters per second the speech is about 424 s; add about 3 s for the photon flights in scenes 5 and 6, 2 s for the scene 11 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 87 s): **about 511 s** (8.5 minutes), inside the band (near its lower end) and well under the cap. There is room for about 750 more characters if the learning review asks for more on any stage (scene 3's classical-radiation tag could become a spoken sentence, or scene 10 could gain one sentence on why Bohr failed). Watch scene 6: each photon must land on the strip as its colour is named. Reserve trims: scene 10's last sentence (keep the s, p, d, f chips silent), scene 9's last clause (keep the flame chip), scene 3's last sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,629 characters, 17 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 511 s to about 496 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v10` (route chem-y11-m1-v10; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v10`.
@@ -214,6 +261,8 @@ In order (17 scene headings, all `### N.`): hook, photons, nuclear-model-problem
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: 1 to 2 camera push to the hydrogen strip; 2 to 3 camera continue (the small atom enlarges); 3 to 4 clear change (the stairs); 4 to 5 camera continue (the staircase becomes the level diagram); 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 camera pull back to the strip stack; 9 to 10 clear change; 10 to 11 camera continue; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v10-learning-review.md`, `checks/c-y11-m1-v10-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 5 to 6 is a board change (the tube and strip return beside the level diagram).
 
 ## Assets
 
@@ -227,6 +276,8 @@ Need (new plates, Codex):
 2. Optional: `y11c-filament-lamp-lit-v1.png`, a lit variant of `phys-y11-filament-lamp-v1.png` (open decision 3). Fallback: the coded glow.
 
 Coded: ray sketches and prism triangle, spectrum strips (continuous and line), photons, energy-level diagrams, the stairs and ramp sketch, nuclear and Bohr atoms, the orbital dot cloud, s p d f chips, helium and sodium line patterns, model timeline, rows, chips, attempt cards, countdowns, key notes board. Build note: extend `EnergyInset` from `chem-m8-c03a/parts.tsx` into a full-size `EnergyLevels` component (levels from an energy list, cue-driven jumps and drops, photon colour from the drop's wavelength, landing x on a linked `SpectrumStrip`).
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-hydrogen-discharge-tube-lit-v1.png`, `y11c-filament-lamp-lit-v1.png` (replaces the unlit lamp with a coded glow). Existing plate newly used: `y11c-hand-spectroscope-v1.png` (attempt 2 card); the discharge tube is also the attempt 1 picture and returns in scene 6; the sodium flame is larger in scene 9. New plate requests: none. Simulation: the chance engine for scenes 6 and 8.
 
 ## Codex asset brief (Year 11 Chemistry M1 v10; plate 1 also used in v09)
 
@@ -250,6 +301,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("colour").
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals v09's final frame, and that the final frame is flagged for the ws-v01 designer.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the chance run in scenes 6 and 8 only ever places photons on the allowed lines, and its "brightness not to scale" label is present; the readouts name the right drop for each line (3 → 2 with 656 nm, 4 → 2 with 486 nm, 5 → 2 with 434 nm, 6 → 2 with 410 nm); the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -296,3 +349,28 @@ Narration: 5,645 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v10-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,629 characters over 17 scenes (the earlier 5,645 included the 16 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v10-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the glowing discharge tube from the first frame; the lamp is now the painted lit plate.
+- Simulation: in scenes 6 and 8 a chance-engine run sends one photon per atom onto the strip, so the lines build up as tallies while the gaps stay dark, with live "this drop" and "this photon" readouts.
+- Cut: scene 6 is a new stage with the tube plate back beside the strip. Stage list recorded.
+- Hand tags (two or three) and a pen mark in scenes 1 to 6 and 8 to 10; the memory line is a framed card in scene 11.
+- Answers framed in green (scenes 8, 13, 15); crossed slips struck in red with red hand tags; the rejected ramp takes a slate cross.
+- Tags with video numbers ("v08", "v11") are reworded; grey, dim and ghost items are solid.
+- Question cards: attempt 1 gains the discharge tube; attempt 2 gains the hand spectroscope; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the continuous-spectrum contrast and the orbital type names (kept in scenes 1 and 10).
+
+New plate requests: none.
+
+Joins: the opening is v09's final frame, unchanged. The final frame (scene 16) is unchanged, so `chem-y11-ws-v01`'s opening holds.
+
+Counts: 5,629 characters, unchanged; about 511 s to about 496 s.
+
+Calls for root: (1) the chance run's weights are illustrative, labelled "brightness not to scale"; (2) the lit-lamp plate replaces the coded glow (the optional plate was delivered); (3) the slate cross on the ramp.

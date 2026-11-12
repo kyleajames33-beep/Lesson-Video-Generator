@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V02: Planning investigations. How does a chemistry plan produce valid, useful data? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: scene 2 controls staged one at a time; recap after the causes; count corrected. Narration 6,360 characters (joined parser count), about 569.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,345 characters (sum of scene strings; 6,360 with joining spaces; Revision 1 was 6,360 by the joined parser count), 16 scenes, about 569.1 s (9.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,18 @@ Handoff: chem-y11-ws-v03, carrying out the plan safely and accurately.
 - **Opening frame:** ws-v01's final frame exactly (Decisions).
 - **Final frame (ws-v03 opens on it):** at the left, three plates in a row: the crucible with its lid slightly ajar (`y11c-cuso4-crucible-lid-v1.png`, new), the desiccator (`m8-desiccator-v1.png`) and the balance (`y11c-top-pan-balance-v1.png`) with a blank readout "– . – – g"; at the right, the completed `PlanBoard`: "valid: IV heating time; DV % mass lost; controls: 2.50 g, same crucible, small blue flame, same cooling; empty crucible to constant mass"; "reliable: 3 full runs; 0 to 12 min in 2 min steps"; "equipment: 0.01 g balance; porcelain crucible, lid ajar; tongs; desiccator"; "safe and ethical: glasses; tongs and mat; gentle flame; waste container; record every reading"; the chip "Next: How do we collect and source chemistry data safely and accurately?".
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted crucible of blue copper sulfate crystals (`y11c-cuso4-crucible-blue-v1.png`, about 460 px tall) is on screen from the first frame, because the video opens on ws-v01's final frame. Every part of the plan is shown on real apparatus: the crucible with its lid, the tongs, the heatproof mat, the balance, the desiccator, the safety glasses and the waste bottle, all painted plates that now exist.
+- **Simulation: the trial run (scene 9).** One mass model on one clock: the balance readout creeps 1.60 g → 1.62 g → 1.64 g as coded water molecules settle on the powder, and a "% mass lost" readout (52 px) computed from it falls 36.0% → 35.2% → 34.4%, so the student watches the error grow. Two other live pictures use the same idea: the step rulers in scene 6 count steps across the 0.90 g loss (9 against 90), and the three runs in scene 4 plot point by point onto the prediction curve (labelled "illustrative").
+- **Colour key (fixed across ws-v01 to ws-v03).** Independent variable navy; dependent variable and measured values dark ink; controlled variables and the "because" gold; valid teal; reliable violet; risk levels low green, medium amber, high red (the `RiskMatrix` palette); a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Tags the Visual lines call "grey" or "dimmed", and every "ghost", are drawn solid in dark ink; earlier control tags stay solid at a smaller size instead of dimming.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current gloss line and framed answers 44 to 52 px; question-card sentences 38 px (34 px where a card quotes a plan); `PlanBoard` lines, risk-table cells and tags 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) the rushed test, scene 1 (about 40 s); (B) one crucible and its variables, then the empty crucible, scenes 2 and 3 (about 85 s; the crucible plate changes to the empty one at scene 3); (C) three runs and the curve, scene 4 (about 30 s); (D) two balances and the step rulers, scenes 5 and 6 (about 55 s); (E) the risk board, scene 7 (about 45 s); (F) waste and the record, scene 8 (about 30 s); (G) the trial run and the desiccator, scene 9 (about 39 s); (H) the full plan and the memory card, scene 10 (about 19 s); question and feedback cards; the final frame; the notes board. No set-up runs past about 85 s, so no new cut was needed.
+- **Question cards.** Each attempt card arrives whole with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No coded pictures of real things.** The coded sink outline (scene 8) is replaced by a struck word card; the heatproof mat, tongs, lidded crucible and empty crucible are the delivered plates, not coded fallbacks.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -71,89 +83,117 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 
 Visual: opens on ws-v01's final frame; the "Next" chip fades and the question box glows. On "rushed test" the board shifts left: three crucible plates (`y11c-cuso4-crucible-blue-lit-v1.png`, three copies at one uniform scale) on three differently sized coded flames (one roaring, one small, one medium), each with a timer chip "2 min", "4 min", "6 min"; coded steam; on "still hot" each crucible slides onto a balance readout with a red heat shimmer; readouts write "19%", "15%", "31%" (grey tag "illustrative data"). On "one" a small coded plot of the three points zigzags; the "4 min" point is ringed. On "test" two chips "hypothesis wrong?" and "test wrong?" appear. On "many differences" three grey tags write between the crucibles: "different burners", "different flames", "weighed hot". On "all" the clipboard "plan: ?" from the opening frame grows into `PlanBoard` with four empty sections; the heading writes on: "Planning: data you can use".
 
+Upgrade (Revision 4): The crucible and question box are solid from the first frame. The three lit crucibles are about 360 px tall with their timer chips at 38 px and the three readouts at 52 px; the tag "illustrative data" is dark ink. On "and weigh them while they're still hot" a red hand tag "weighed hot" writes with a pen arrow to the shimmer. On "lost less than the two minute one" the pen ring round the 4 min point takes a red hand tag "less? that makes no sense". On "With so many differences at once" the three difference tags are dark ink at 34 px with a pen bracket joining them and an ink hand tag "which one caused it?".
+
 ### 2. variables and validity
 > A valid investigation measures what it claims to measure. Here, that means the mass lost must be water, and only the heating time can change it. Heating time is the independent variable, the one we change. The percentage of mass lost is the dependent variable, the one we **measure**. Everything else that could change the result is a controlled variable, kept the same. The same two point five zero grams of crystals, the same crucible, the same small blue flame at the same height, and the same cooling before each **weighing**. If any of these changed too, we couldn't tell which change caused the **result**. And the flame stays gentle, because strong heat would break down the copper sulfate, so the mass lost wouldn't be just **water**.
 
 Visual: board clears to one crucible at the left. Gloss "valid: measures what it claims to measure" writes at the top of `PlanBoard`'s "valid" section. A navy tag "independent: heating time" attaches to a timer chip under the burner; on "measure" an ink tag "dependent: % mass lost" attaches to a balance readout. Controls staged one at a time beside the apparatus (Revision 2): on "controlled variable" a grey gloss "controlled: kept the same" writes; the crucible and the "2.50 g" mass chip stay visible throughout as the current case. Each control tag writes beside the part it controls as it is named, and the previous tag dims to grey as the next one writes: on "two point five zero grams" "mass: 2.50 g" by the crystals; on "the same crucible" "same crucible" by the crucible; on "the same small blue flame" "small blue flame, same height" by the burner (the flame plate dims to a small steady cone); on "weighing" "same cooling before weighing" by the balance readout. On "result" a gold bracket gathers the four dimmed tags with the label "if it changed too, which change caused the result?". On "water" ws-v01's black-crust crucible (`y11c-cuso4-crucible-black-v1.png`) flashes small with the tag "strong heat: not just water" and is crossed. Only after that cause does the short `PlanBoard` recap assemble in the "valid" section: "IV: heating time; DV: % mass lost; controls: 2.50 g, crucible, flame, cooling".
+
+Upgrade (Revision 4): The crucible is about 460 px tall, solid from the first frame. On "the mass lost must be water" a teal hand tag "valid = only water lost, only time changed" writes under the gloss. On "the one we change" the tag "independent: heating time" is navy at 38 px with a pen arrow to the timer; on "the one we measure" the tag "dependent: % mass lost" is ink at 38 px with a pen arrow to the readout. Each control tag is gold at 34 px and stays solid when the next one writes. On "we couldn't tell which change caused the result" the bracket is a gold pen bracket. On "wouldn't be just water" the small black-crust crucible (about 220 px) is struck in red with a red hand tag "not just water".
 
 ### 3. an experimental control
 > There's one more check, an experimental control. That's a run without the thing being tested, for comparison. Before adding any crystals, we heat the empty crucible and its lid, and weigh them, until their mass stops changing. If the empty crucible lost or gained mass when heated, we'd wrongly blame that on the **crystals**. A steady empty crucible shows that every later change comes from what's inside **it**.
 
 Visual: the crystals fade from the crucible (an empty crucible: the lid plate's crucible with no contents, coded fade of the crystal layer, or `y11c-crucible-empty-lid-v1.png` if root accepts the optional plate). Gloss "experimental control: a run without the thing being tested". The flame lights; a readout ticks "24.33 g → 24.31 g → 24.31 g" with a tick on the repeat (tag "steady: constant mass"). On "crystals" a ghost "−0.02 g?" floats from the crucible toward an imagined crystal layer and is crossed (tag "would be blamed on the crystals"). On "it" the crystals fade back in and the "valid" section gains "control: empty crucible to constant mass".
 
+Upgrade (Revision 4): The crucible plate changes to the delivered empty crucible with its lid (`y11c-crucible-empty-lid-v1.png`), not a coded fade. The readout is live at 52 px. On "a run without the thing being tested" a teal hand tag "nothing in it: for comparison" writes beside the crucible. On "until their mass stops changing" the repeated reading "24.31 g" takes a pen ring with a teal hand tag "steady". On "we'd wrongly blame that on the crystals" the "−0.02 g?" note is solid dark ink in an inset card with a dashed border, struck in red with a red hand tag "blamed on the crystals".
+
 ### 4. reliable data, and enough points
 > Next, reliable data. Reliable means that if you repeat the whole experiment, you get consistent results. So the plan uses three separate samples. Each one is heated in two minute steps, and weighed after every step, from zero to twelve **minutes**. If all three runs show the same pattern, we can trust it. And seven time points can show where the curve levels **off**. With only two points, we'd never see it.
 
 Visual: gloss "reliable: repeating the whole experiment gives consistent results". Three crucibles in a row (labelled "run 1", "run 2", "run 3"); a shared timer strip "0, 2, 4, 6, 8, 10, 12 min" writes under them. On "minutes" ghost dots of three runs plot on the prediction sketch from ws-v01, overlapping on the dashed curve (tag "same pattern", grey "illustrative"). On "levels off" the seven points glow along the curve's flat end at 36.1%. On "never see it" a dimmed alternative with only two points (0 and 12 min) joined by a straight line is crossed small (tag "two points: no levelling off"). The "reliable" section gains "3 full runs; 0 to 12 min in 2 min steps".
+
+Upgrade (Revision 4): The three crucibles (about 300 px each) and the prediction axes are on the board from the first frame. On "you get consistent results" a violet hand tag "repeat the whole thing" writes over the three runs. The run dots plot live, point by point, as solid dots in three tones (tag "illustrative" in dark ink). On "where the curve levels off" a violet pen bracket marks the flat end with a hand tag "seven points show the bend". On "With only two points" the two-point alternative is solid inside an inset card with a dashed border, struck in red with a red hand tag "no bend to see".
 
 ### 5. which balance? (countdown, 3 seconds)
 > Now the equipment. In total, the crystals will lose about nought point nine grams of water. One balance reads to nought point one of a gram. The other reads to nought point zero one. Which one should we **use**?
 
 Visual: board change. Two copies of `y11c-top-pan-balance-v1.png` side by side with the same crucible on each; coded readouts "26.8 g" (tag "reads to 0.1 g") and "26.81 g" (tag "reads to 0.01 g"). A chip "total loss ≈ 0.90 g". On "use" the 3 s `Countdown` ring runs. No answer shown.
 
+Upgrade (Revision 4): Both balances (about 460 px wide each) are on the board from the first frame with their readouts at 52 px and their tags at 38 px; the chip "total loss ≈ 0.90 g" is 44 px. No hand tags (thinking time).
+
 ### 6. choosing equipment by what the measurement needs
 > The nought point zero one gram balance. Count the steps. On the coarse balance, the whole loss is only nine steps, so one step is more than a tenth of the answer. On the finer balance, it's ninety steps, and one step is only about one **percent**. We choose the other materials the same way. A porcelain crucible, because it survives a direct **flame**. A lid, set slightly ajar, to stop crystals spitting out while steam still **escapes**. And tongs, because the crucible gets far too hot to **touch**.
 
 Visual: under each balance a coded step ruler spans the 0.90 g loss: on "nine steps" the coarse ruler shows 9 wide steps with one step shaded and tagged "1 step > 10% of the answer"; on "percent" the fine ruler shows 90 thin steps with one shaded, tag "1 step ≈ 1%". The fine balance gets a teal tick. On "flame" the crucible (`y11c-cuso4-crucible-lid-v1.png`, new) is ringed, tag "porcelain: survives a direct flame". On "escapes" the lid is ringed with a small coded steam wisp leaving the gap, tag "lid ajar: no spitting, steam escapes". On "touch" the tongs plate (`y11c-crucible-tongs-v1.png`, new) slides in lying on the heatproof mat plate (`y11c-heatproof-mat-v1.png`, new), tag "too hot to touch". The "equipment" section gains "0.01 g balance; porcelain crucible, lid ajar; pipeclay triangle; tongs".
+
+Upgrade (Revision 4): On "The nought point zero one gram balance" the fine balance is framed in green with a tick. The step rulers count live: the coarse one to 9, the fine one to 90 (readouts 44 px). On "one step is more than a tenth of the answer" a red hand tag "too coarse" writes on the coarse ruler; on "only about one percent" a green hand tag "fine enough" writes on the fine ruler. The lidded crucible (about 380 px), the tongs and the heatproof mat are the delivered plates, each solid when named, with its reason tag at 34 px and a pen ring on the part named.
 
 ### 7. assessing risks
 > Then, the risks. A hazard is something that could cause harm. Risk combines how likely the harm is with how bad it would be, and a control is a step that lowers the **risk**. A hot crucible could burn someone. That's likely, and moderate, so the risk is high. Tongs, a heatproof mat and a cooling time make a burn unlikely, so the risk falls to **low**. Overheating could release irritating gases, but the plan's gentle flame removes most of that **hazard**. And copper sulfate irritates the eyes, so safety glasses go on before the burner is **lit**.
 
 Visual: board change. `RiskMatrix` at the right (rows "likely, possible, unlikely"; columns "minor, moderate, major"; tag "example matrix: use your school's"). Glosses as spoken: "hazard: could cause harm"; "risk: how likely, and how bad"; on "risk" "control: a step that lowers the risk". One-row risk table (Hazard / Harm / Likelihood / Consequence / Risk / Control): row 1 writes "hot crucible and triangle" / "burn" / "likely" / "moderate" and the marker lands on "high"; on "low" the tongs and mat plates appear in the control cell and the marker slides to "unlikely / moderate", tinting low. Row 1 collapses to a grey chip "burns"; row 2 writes "overheating" / "irritating gases"; on "hazard" its control cell reads "gentle flame (the plan removes most of the hazard)" and the marker lands on low. On "lit" the safety glasses plate (`m5x-safety-glasses-v1.png`) slides into a third row "copper sulfate in eyes" / control "glasses on before lighting". A fourth row writes on screen only: "copper sulfate swallowed" / "no food or drink; wash hands". Footer: "your teacher approves the plan; follow your school's risk assessment". The "safe and ethical" section gains "tongs and mat; gentle flame; glasses".
 
+Upgrade (Revision 4): The risk board is solid from the first frame: the matrix at the right with cells labelled at 30 px, the risk table at the left with cells at 30 px. On "a control is a step that lowers the risk" a green hand tag "control = lowers the risk" writes above the table. On "so the risk is high" the marker cell is red with a red hand tag "high"; on "so the risk falls to low" the marker slides with a pen arrow and a green hand tag "low". Row 1 stays solid as a one-line chip (not grey). The tongs, mat and safety glasses plates are about 220 px each in their control cells. The footer is dark ink at 30 px.
+
 ### 8. ethical issues
 > Planning also means thinking about ethical issues. Copper sulfate is very toxic to life in rivers and the sea, so the white powder goes into a labelled waste container, never down the **sink**. Using just two point five zero grams per sample keeps the waste **small**. And every reading goes into the record, including the odd ones. Leaving out results that don't fit would make the data look better than it **is**.
 
 Visual: a coded sink outline with a crossed drain; on "sink" the waste bottle plate (`m5x-waste-bottle-v1.png`) slides in with a coded label "copper waste" and a teal tick. On "small" a chip "2.50 g per sample: small waste, 90 steps". On "every reading" a coded logbook strip writes three rows of readings, one of them odd ("run 2, 6 min: 1.84 g?"), kept with a small note "check: kept". On "is" a chip "delete the odd result" fades in and is crossed. The "safe and ethical" section gains "waste container, not the sink; small quantities; record every reading".
+
+Upgrade (Revision 4): No sink is drawn: a word card "down the sink" is struck in red with a red hand tag "toxic to water life". On "a labelled waste container" the waste bottle plate is about 380 px tall with a teal tick and a pen arrow from the crucible to the bottle. On "keeps the waste small" the chip is 38 px. On "including the odd ones" the odd row in the logbook strip (cells 34 px) takes a pen ring with a teal hand tag "kept". On "is" the chip "delete the odd result" is struck in red with a red hand tag "never".
 
 ### 9. new evidence from a trial run
 > A good plan also changes when new evidence arrives. In a trial run, the white powder was left to cool on the open bench. On the balance, its mass crept up, from one point six zero to one point six four grams, and a faint blue tinge **appeared**. The powder was taking water back from the air. That would make every percentage too small. So we modify the plan. The crucible cools with its lid on, inside a desiccator, a sealed jar that keeps the air dry, and it's weighed as soon as it's **cool**.
 
 Visual: the white powder crucible (`m5-g02b-open-crucible-v1.png`) on the balance; tag "trial run". On "crept up" the readout ticks 1.60, 1.62, 1.64 g (tag "illustrative data"); on "appeared" a faint blue tint grows over the powder's surface (coded overlay) and is ringed. On "taking water back" small coded water molecules drift from the air onto the powder. On "too small" a row writes "(2.50 − 1.64) ÷ 2.50 = 34.4%, not 36.0%". On "modify the plan" `PlanBoard`'s "valid" section strikes "same cooling" and rewrites "cool with lid on in a desiccator; weigh when cool"; on "cool" the desiccator plate (`m8-desiccator-v1.png`) slides in with the lidded crucible inside (gloss "desiccator: a sealed jar that keeps the air dry").
 
+Upgrade (Revision 4): The balance with the white-powder crucible (about 460 px) is solid from the first frame; the trial run is live (see "Simulation"), with both readouts at 52 px and the tag "illustrative data" in dark ink. On "its mass crept up" a rose hand tag "getting heavier" writes with a pen arrow up beside the readout. On "taking water back from the air" a navy hand tag "water from the air" writes on the drifting molecules. On "every percentage too small" the row is 44 px and the "% mass lost" readout reads 34.4% with a rose pen ring. On "we modify the plan" the struck words take a slate line and the rewrite is gold. On "inside a desiccator" the desiccator plate is about 420 px with its gloss at 34 px and a teal hand tag "dry air inside".
+
 ### 10. the plan in one line
 > So here's the plan in one line. Change one, measure one, control the rest, and repeat the whole thing. Then choose equipment fine enough for the change, lower every risk, and record honestly. That's what turns a question into data you can **use**.
 
 Visual: `PlanBoard` slides to the centre, all four sections filled; each section glows as its clause is spoken. On "use" the memory line writes large across the top: "Change one, measure one, control the rest, and repeat the whole thing." Hold about 2 seconds.
+
+Upgrade (Revision 4): `PlanBoard` fills the board with section titles at 38 px and lines at 30 px or more. The memory line sits in a framed memory card (hand lettering, 46 px): navy "Change one," ink "measure one," gold "control the rest," violet "and repeat the whole thing."
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Back to sand and salt. A student will dissolve twenty gram samples of the mixture in twenty, forty, sixty and eighty millilitres of water, then filter, and evaporate the filtrate to recover the salt. Identify the independent and dependent variables, and two controlled variables, and justify one of them. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student investigates how the volume of water used affects the salt recovered from a sand and salt mixture. Samples of 20.00 g of the mixture are each stirred with 20, 40, 60 or 80 mL of water, filtered, and the filtrate is evaporated to recover the salt. (a) Identify the independent and dependent variables. (b) Identify TWO controlled variables, and justify why ONE of them must be controlled. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted beaker of sand settled in clear liquid (`y11c-sand-saltwater-beaker-v1.png`, about 260 px), untagged. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > The independent variable is the volume of water. The dependent variable is the percentage of the mixture recovered as salt. Controlled variables include the mass of mixture, the water temperature, the stirring time and the drying. Temperature must stay the same, because warmer water dissolves a little more salt, so it would change the result **too**. Writing "the salt" as a controlled variable is the classic slip. It doesn't say what's kept the **same**.
 
 Visual: card shrinks to the top. Rows: "(a) IV: volume of water; DV: % of mixture recovered as salt" (navy, ink). "(b) controls: mass of mixture (20.00 g), water temperature, stirring time, drying to constant mass". On "too" the "water temperature" control glows with a small row "warmer water dissolves a little more salt → would change the result too". On "same" a chip "Controlled variable: the salt" fades in and is crossed (caption "what is kept the same?"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "20.00 g samples | 20, 40, 60, 80 mL of water | filter, evaporate". The answer rows are framed in green with a tick as they land (38 px), with "volume of water" in navy and the controls in gold. On "it would change the result too" a gold hand tag "a second thing changing" writes beside the temperature row. On "same" the crossed chip is struck in red with a red hand tag "what is kept the same?".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Another student's plan says: heat the copper sulfate crystals strongly, with a roaring flame, so the water leaves quickly. Then tip the leftover powder into the sink. Identify one problem with the validity of this plan, and one safety or ethical problem, and modify the plan to fix both. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed, with the plan quoted in a box: "Plan: 'Heat 2.50 g of blue copper sulfate crystals strongly, using a roaring flame, so that the water leaves quickly. Weigh the powder. Then tip the leftover powder into the sink.' The plan aims to measure the percentage of water in the crystals. (a) Identify ONE problem with the validity of this plan. (b) Identify ONE safety or ethical problem. (c) Modify the plan to fix both problems. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card text is 34 to 38 px with the quoted plan in a tinted box. From the first frame the card's right side carries the lit crucible of blue crystals (`y11c-cuso4-crucible-blue-lit-v1.png`, about 260 px), untagged. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > Strong heat breaks down the copper sulfate itself, so the mass lost isn't just water, and the result isn't valid. It can also release irritating gases. So use a small, gentle flame and heat to constant mass. And copper sulfate is toxic to aquatic life, so the powder goes into a waste container, not the sink. Adding "be careful" is the classic slip. It doesn't change the likelihood or the harm, so it isn't a **control**.
 
 Visual: card shrinks to the top. Rows: "(a) strong heat breaks down CuSO₄: mass lost ≠ water only" (black-crust crucible small beside it); "(b) irritating gases; toxic to aquatic life: not the sink"; "(c) small gentle flame, heat to constant mass; residue into a labelled waste container" (waste bottle small). On "control" a chip "Be careful." fades in and is crossed (caption "changes neither likelihood nor harm"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "heat strongly, roaring flame | tip the powder into the sink | aim: % of water". The three answer rows are framed in green with a tick as they land (38 px); the black-crust crucible and the waste bottle are about 200 px each. On "control" the crossed chip is struck in red with a red hand tag "changes neither likelihood nor harm".
 
 ### 15. conclusion and handoff
 > So a valid plan changes one variable, measures one, controls the rest, and checks the apparatus with a control. Repeating the whole experiment makes the data reliable. Equipment, risks and ethics are all planned before anything is lit. Next, we carry out the plan. How do we collect and source chemistry data safely and **accurately**?
 
 Visual: the memory line returns small at the top. `PlanBoard` slides to the right as the final-frame elements assemble at the left: the lidded crucible, the desiccator and the balance with a blank readout. On "accurately" the chip "Next: How do we collect and source chemistry data safely and accurately?" writes. Hold about 2 seconds. This is the final frame (ws-v03 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): Nothing is added beyond the Visual: the final-frame elements assemble exactly as described under "Opening frame and final frame", in full ink, with the three plates at about 360 px each.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Valid: the method measures what it claims to measure. Reliable: repeating the whole experiment gives consistent results.
-2. Independent variable: the one you change. Dependent variable: the one you measure. Controlled variables: kept the same, because if they changed you couldn't tell which change caused the result.
-3. Experimental control: a run without the thing being tested, for comparison (heat the empty crucible to constant mass).
-4. Choose equipment fine enough for the change (0.01 g balance for a 0.90 g loss). Risk = how likely and how bad; a control lowers one or both. "Be careful" is not a control.
-5. Ethics: no toxic waste down the sink; use small quantities; record every reading. Change the plan when trial evidence shows a problem.
+1. Valid: measures what it claims to measure. Reliable: repeats give consistent results.
+2. Change one variable (independent), measure one (dependent), control the rest.
+3. Experimental control: a run without the thing being tested, for comparison.
+4. Choose equipment fine enough for the change. A control lowers a risk.
+5. No toxic waste down the sink. Record every reading. Update the plan on new evidence.
 
-Memory aid (large, on the notes screen): *Change one, measure one, control the rest, and repeat the whole thing.*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering, in the scene 10 colours): *Change one, measure one, control the rest, and repeat the whole thing.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -213,6 +253,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules): **6,345 characters**, 16 scenes. At 13.3 characters per second the speech is about 477 s; add about 10 s of holds and settling (the rushed test in 1, the control readout in 3, the step rulers in 6, the trial readout in 9), 2 s for the memory hold, 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 568 s (9.5 minutes)**.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,345 characters, 16 scenes). The notes scene is now 45 s in all (it was about 58 s), so the estimate falls from about 569 s to about 556 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v02` (route chem-y11-ws-v02; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v02`.
@@ -222,6 +264,8 @@ In order (16 scene headings, all `### N.`): hook, variables-validity, experiment
 Per-scene motion (schema 4): all `motionRole: "explain"` except which-balance (3 s countdown inside an explain scene), attempt-1, attempt-2 and key-notes (`hold`). Transitions: ws-v01's final frame into scene 1 by camera continue (the clipboard grows into `PlanBoard`); 1 to 2 clear change; 2 to 3 camera continue; 3 to 4 camera continue; 4 to 5 clear change; 5 to 6 camera continue; 6 to 7 clear change (risk board); 7 to 8 camera continue; 8 to 9 clear change (the balance); 9 to 10 camera pull back to `PlanBoard`; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: which-balance (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-ws-v02-learning-review.md`, `checks/c-y11-ws-v02-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. No transition changed.
 
 ## Assets
 
@@ -241,6 +285,8 @@ Need (new plates, Codex):
 4. Optional, `y11c-crucible-empty-lid-v1.png`: scene 3. Fallback: a coded fade of the crystal layer.
 
 Coded: `PlanBoard`, variable tags and tooltips, timers and readouts, zigzag plot, prediction sketch and run dots, step rulers, `RiskMatrix` and risk rows, sink outline, logbook strip, water molecules, blue tint overlay, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-cuso4-crucible-lid-v1.png`, `y11c-crucible-tongs-v1.png`, `y11c-heatproof-mat-v1.png`, `y11c-crucible-empty-lid-v1.png`, `y11c-cuso4-crucible-blue-lit-v1.png`, `y11c-cuso4-crucible-black-v1.png`, `y11c-top-pan-balance-v1.png`. The coded fallbacks for the mat and the empty crucible are withdrawn. Existing plate newly used: `y11c-sand-saltwater-beaker-v1.png` (attempt 1 card). Removed: the coded sink outline. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v02; shared with ws-v03)
 
@@ -266,6 +312,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals ws-v01's final frame and the final frame matches ws-v03's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the trial-run readouts: (2.50 − 1.60) ÷ 2.50 = 36.0%, (2.50 − 1.62) ÷ 2.50 = 35.2%, (2.50 − 1.64) ÷ 2.50 = 34.4%; the step counts 9 and 90; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -311,3 +359,28 @@ Narration: 6,360 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-ws-v02-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,345 characters over 16 scenes (the earlier 6,360 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-ws-v02-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the crucible of blue crystals from ws-v01's final frame; every planned item is now a delivered painted plate.
+- Simulation: scene 9's trial run is live (mass 1.60 g to 1.64 g, "% mass lost" 36.0% to 34.4%); the step rulers and the three runs also build live.
+- Hand tags (two or three) and a pen mark in scenes 1 to 4 and 6 to 9; the memory line is a framed card in scene 10.
+- Answers framed in green (scenes 6, 12, 14); crossed slips struck in red with red hand tags; ghost and dimmed items drawn solid, in dashed inset cards where they show a wrong case.
+- Scene 8: the coded sink outline is replaced by a struck word card and the waste bottle plate.
+- Question cards: attempt 1 gains the beaker of sand in liquid; attempt 2 gains the lit crucible; feedback scenes gain navy givens strips.
+- Key notes: five long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s.
+- Stage list recorded; no set-up ran past about 85 s, so no cut was added.
+
+New plate requests: none.
+
+Joins: the opening is ws-v01's final frame, unchanged. The final frame is unchanged, so ws-v03's opening holds.
+
+Counts: 6,345 characters, unchanged; about 569 s to about 556 s.
+
+Calls for root: (1) the readout value 35.2% (for 1.62 g) is new on screen; (2) violet is added for "reliable" and teal for "valid" across the three skills videos.

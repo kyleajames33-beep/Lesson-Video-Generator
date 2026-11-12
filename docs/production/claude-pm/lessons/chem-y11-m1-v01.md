@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V01: Classifying matter. How do the particles in a sample show whether it is an element, a compound or a mixture? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 5 magnet beat now crossfades to a matched sulfur-only residue plate so no painted iron remains. Narration 6,302 characters (joined parser count), about 564 s. Previously Revision 1 (5 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,287 characters (sum of scene strings; 6,302 with joining spaces; Revision 1 was 6,302 by the joined parser count), 16 scenes, about 564 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11). First video of the whole Year 11 Chemistry playlist: cold open on a concrete case, no course title card.
 
@@ -68,6 +68,17 @@ Handoff: v02, what melting and boiling observations can and cannot tell us about
 
 Particle colours (CPK-based, flat fills with a thin ink outline): oxygen red `#d8483b`; carbon charcoal `#3b3a38`; hydrogen white `#ffffff`; nitrogen blue `#3f6fb5`; argon lilac `#b49ad6`; sulfur yellow `#e8c547`; iron rust-orange `#c46a2f`; copper copper-brown `#b0643a`; aluminium silver `#c9ccd1`; nickel grey-green `#8fa08a`; sodium ion violet `#8a5bb5`; chloride ion green `#4f9a5a`; water molecules drawn as one red O with two white H. Ions carry a small "+" or "−" in the circle. Classification: pure substances navy (`C.blue`), mixtures amber (`AMBER`); element and compound navy shades; homogeneous and heterogeneous amber shades. Crossed chips red strike. Paper background and handwritten headline face as the explainer house style.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The three painted gas jars (`y11c-gas-jar-v1.png`, the same plate three times, about 420 px tall, uniform scale) are solid on a dark-ink bench line from the first frame. They return in scenes 2 to 4, 6 and 7, so the whole classification grows out of one real case.
+- **Simulation: the live particle views.** Every gas view (jars A to D) is a run of the particle box engine (`src/explainer/sims/particle-box.ts`, drawn with `ParticleBoxView` inside the circular view), one species per kind of particle, each species drawn as its bonded-atom glyph. A live readout sits under each view at 52 px: "kinds of particle" (scenes 1 and 2), "kinds of atom" (scene 3), the ratio counters (scene 4) and, in scene 7, "O₂ particles" and "overall C : O", read from the run as extra O₂ is injected on "add more oxygen" (6 : 24 to 6 : 30). The run is a model: the counts are illustrative except where the scene says the count is exact. Kit note: if `ParticleBoxView` cannot yet draw a species as a multi-atom glyph, add that as a draw option; do not hand-animate the particles.
+- **Colour key (fixed for the whole video).** Pure substance, element and compound navy; mixture, homogeneous and heterogeneous amber; particle colours as in "Colour key"; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy; hand tags take the colour of the idea they mark (navy on pure substances, amber on mixtures, red on slips). Every tag, chip or label the Visual lines call "grey" or "faint" is drawn in dark ink at full strength.
+- **Type sizes (1080p).** Heading 60 px; the current definition or answer line and every live readout 52 px, never under 44; question-card sentences 38 px; supporting lines and tree labels 30 px or more; hand tags 42 px (34 px inside a particle view); key notes 34 px; nothing a student must read under 26 px. All text above the bottom 12% of the frame.
+- **Board stages and cuts.** (A) the jar row, scenes 1 and 2 (about 73 s); (B) element board, scene 3 (about 32 s): jar A and the iron lump plate; (C) compound board, scene 4 (about 47 s): jar B, a glass of water and a watch glass of salt; (D) iron and sulfur with the magnet, scene 5 (about 37 s); (E) jar D beside A and B, scenes 6 and 7 (about 44 s); (F) salt water, then iron and sulfur, scene 8 (about 42 s); (G) two glasses, then the coins, scene 9 (about 40 s); (H) the full tree, scene 10 (about 30 s); question and feedback cards; the handoff bench; the notes board. Revision 3 kept scenes 1 to 4 on the jar row with only the camera moving (about 153 s); stages B and C are the new cuts. Each stage shows its plates from its first frame.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key above.
@@ -77,86 +88,117 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: cold open, no title card. Three identical painted gas jars (`y11c-gas-jar-v1.png`, new, the same plate three times, scaled uniformly) stand on a faint bench line, tagged "A", "B", "C" in grey. On "gas" a slow camera drift along the row; each jar's glass shimmers faintly (no visible contents). On the second sentence three grey tags write under the row: "oxygen", "carbon dioxide", "air", with a "?" linking each tag to every jar (dashed lines crossing). On "particles" a particle view opens above each jar (author note a): A shows identical O₂ pairs drifting; B identical CO₂ triples (charcoal centre, red ends); C a mix of N₂ (blue pairs), O₂ and one lilac Ar. The dashed "?" lines resolve: each tag slides under its jar (A oxygen, B carbon dioxide, C air). On "apart" the heading writes on: "Element, compound or mixture: what do the particles show?".
 
+Upgrade (Revision 4): The jars are about 420 px tall and the bench line is solid dark ink; the tags "A", "B", "C" are dark ink at 42 px. On "They look exactly the same" an amber hand tag "same to the eye" writes over the row with a pen bracket under all three jars. On "particles" a navy hand tag "zoom in" writes with a pen arrow from jar A up to its view. Each view is a live particle box run; on "apart" a readout writes under each view at 52 px: "kinds of particle: 1" (A), "1" (B), "3" (C).
+
 ### 2. one substance, or more than one
 > Start with the first split. A substance is one particular kind of matter, with its own kind of particle. In jar A, every particle is identical: two oxygen atoms joined **together**. Jar B is the same idea. Every particle is one carbon atom joined to two oxygen **atoms**. A sample that contains only one substance is called a pure **substance**. Now look at the air. There are different kinds of particle here: mostly nitrogen, some oxygen, a little argon and carbon **dioxide**, all moving around separately. A sample with two or more substances mixed together is a **mixture**.
 
 Visual: camera pushes to jars A and B; their particle views enlarge. On "together" one O₂ in view A is ringed (scribble circle) and a tag writes "every particle: O₂"; the other particles flash in turn, all identical. On "atoms" one CO₂ in view B is ringed, tag "every particle: CO₂". On "pure substance" the tree root writes at the top right, "Matter", with its first branch "pure substance: one substance only" (navy), and thumbnails of jars A and B hang under it. On "Now look at the air" the camera slides to jar C; on "dioxide" each kind of particle is ringed in turn as named (N₂, O₂, Ar, and one CO₂ drifting in; author note a), with a legend chip. On "mixture" the second branch writes: "mixture: two or more substances" (amber), with jar C's thumbnail under it.
+
+Upgrade (Revision 4): The readout under each view stays live at 52 px. On "together" a navy hand tag "all the same" writes beside view A. On "atoms" the readouts under A and B pulse "kinds of particle: 1". On "dioxide" the readout under C counts 1, 2, 3, 4 as each kind is ringed, and on "moving around separately" an amber hand tag "4 kinds, not joined to each other" writes with a pen bracket round view C. The tree labels are 30 px or more, navy and amber.
 
 ### 3. element: one kind of atom
 > Pure substances split again. Oxygen is an element. An element is a substance made of only one kind of atom. Here, each particle happens to be a molecule, two atoms joined together, but both atoms are **oxygen**. So a molecule doesn't make something a compound. Iron is an element too. In a piece of iron, every atom is an iron **atom**. Elements are the substances listed in the periodic table, and an element's formula has just one **symbol**.
 
 Visual: view A centre stage, enlarged so one molecule fills a ring; a grey gloss writes "molecule: atoms joined together". On "oxygen" both atoms of the ringed molecule flash red together and a tag writes "one kind of atom"; a small chip "molecule ≠ compound" writes beside it. On "Iron is an element too" the iron lump plate (`c5-solid-lump-v1.png`) slides in at the left with a grey tag "iron"; on "atom" its particle view opens: a regular lattice of identical rust-orange atoms vibrating slightly. On "symbol" the tree's pure branch splits: "element: one kind of atom" with thumbnails O₂ and Fe; a small formula strip writes under it: "O₂, Fe, S₈: one symbol each", the symbols ringed.
 
+Upgrade (Revision 4): Board change to the element board, solid from the first frame: jar A (about 420 px) at the centre with its view enlarged, and the iron lump (`c5-solid-lump-v1.png`, about 380 px) at the left with a dark-ink tag "iron"; nothing slides in later. On "both atoms are oxygen" a navy hand tag "2 atoms, 1 kind" writes with a pen ring round the molecule, and the readout under the view reads "kinds of atom: 1" (52 px). On "a molecule doesn't make something a compound" the chip "molecule ≠ compound" takes a navy pen underline. On "every atom is an iron atom" the iron view's readout writes "kinds of atom: 1" with a navy hand tag "all iron". On "symbol" the painted sulfur sample (`y11c-sample-sulfur-v1.png`, about 220 px) lands beside the formula strip under "S₈".
+
 ### 4. compound: elements bonded in a fixed ratio
 > Carbon dioxide is a compound. A compound is a substance made of two or more elements, chemically bonded together in a fixed ratio. Every carbon dioxide particle has one carbon atom bonded to two oxygen atoms, so the ratio is always one to **two**. Water is a compound too, always two hydrogen atoms to one **oxygen**. Some compounds, like table salt, aren't made of separate molecules at all. Charged particles called ions, sodium and chloride, are packed in a lattice, always one to **one**. That fixed ratio is what marks a compound. And because its atoms are bonded, you can only split a compound into its elements with a chemical **reaction**.
 
 Visual: view B centre stage. A ratio counter writes beside it: "C : O". As the narration says the ratio, three molecules are ringed in turn and the counter ticks "1 : 2" each time; on "two" it locks with a navy tag "fixed". On "oxygen" a small water particle view slides in below: identical H₂O molecules (red O, two white H), counter "H : O = 2 : 1". On "Some compounds" a salt lattice view slides in: a square grid of alternating violet "Na⁺" and larger green "Cl⁻" circles (author note e), tag "no separate molecules"; on "one" a dashed square around one Na⁺ and one Cl⁻ pair, counter "Na⁺ : Cl⁻ = 1 : 1". On "marks a compound" the tree's pure branch gains "compound: two or more elements, bonded, fixed ratio" with thumbnails CO₂, H₂O, NaCl. On "reaction" a grey chip writes under it: "split into elements only by a chemical reaction".
+
+Upgrade (Revision 4): Board change to the compound board, solid from the first frame: jar B (about 420 px) at the left with its view open, a glass of water (`m8-water-glass-v1.png`, about 300 px) at the centre and a watch glass of salt (`y11c-watch-glass-salt-v1.png`, about 300 px wide) at the right; the water and salt views open on their cues above their own plates (they do not slide in over jar B). The three ratio counters are live readouts at 52 px. On "always one to two" a navy hand tag "same in every particle" writes with a pen ring round the counter. On "always one to one" a navy hand tag "ions, still a fixed ratio" writes beside the salt view. On "chemical reaction" the chip is dark ink and a navy hand tag "bonded: needs a reaction" writes under it.
 
 ### 5. mixture: separate substances, any proportion
 > A mixture is different. Its substances are just mingled, so each one keeps its own particles and its own properties. Here are iron filings stirred into yellow sulfur powder. The iron and the sulfur aren't bonded to each other, so a magnet can pull the iron straight **out**. And there's no fixed recipe. You could mix in a pinch of sulfur or a whole **spoonful**, and it's still a mixture of iron and sulfur. Proportions that can change are called variable composition, and that's a mark of a **mixture**.
 
 Visual: board clears to the iron and sulfur plate (`y11c-iron-sulfur-mixture-v1.png`, new: a watch glass with grey filings and yellow powder, unevenly mixed). A particle view opens over the boundary: separate rust-orange iron grains (small lattices) and yellow S₈ clusters, not touching each other (author note f); tag "not bonded to each other". A coded stirring rod outline makes one slow pass beside the plate, by itself. On "magnet" the magnet plate (`y11-magnet-string-v2.png`) lowers on its coded string from a coded clamp bar above; on "out" it lifts, and coded grey filing specks stream up and cling to its underside while the painted mixture crossfades to its matched sulfur-only residue state (`y11c-iron-sulfur-residue-v1.png`, same canvas and registration: the iron gone, bare watch glass at the left, the yellow powder unchanged), so no painted iron remains under the magnet (in the particle view, iron grains leave; sulfur clusters stay). Grey tag "each keeps its own properties". On "no fixed recipe" a "+ sulfur" chip appears; on "spoonful" it adds yellow clusters to the particle view twice (more each time) and a tag "still iron + sulfur". On "mixture" the right column writes: "variable composition: the proportions can change", amber.
 
+Upgrade (Revision 4): The mixture plate is about 620 px wide and solid from the first frame; the magnet hangs above it from the first frame and lowers on its cue. A readout under the particle view reads "iron grains 8, sulfur clusters 6" (model counts, 44 px). On "pull the iron straight out" an amber hand tag "iron still acts like iron" writes with a pen arrow from the magnet to the filings. On "spoonful" the sulfur readout ticks 6, 10, 16 as the clusters are added, with an amber hand tag "any amount". The tags "not bonded to each other" and "each keeps its own properties" are dark ink.
+
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. This jar holds oxygen molecules and carbon dioxide molecules, moving around together. It contains only carbon and oxygen atoms. So is it an element, a compound or a mixture? Have a **think**.
 
 Visual: a fourth gas jar (`y11c-gas-jar-v1.png`) tagged "D" slides in beside A and B; its particle view shows O₂ pairs and CO₂ triples drifting together (about 6 of each). A grey list writes under it: "atoms present: C, O". Three option chips: "element", "compound", "mixture". On "think" the 3 s `Countdown` ring runs beside the question "Jar D: element, compound or mixture?". No chip is highlighted.
+
+Upgrade (Revision 4): Jar D is about 420 px tall beside A and B, with its live view open from the first frame. The list "atoms present: C, O" is dark ink at 38 px; the three option chips are 44 px. No hand tags (thinking time).
 
 ### 7. prediction answer: look at the particles, not the atom list
 > It's a mixture. Look at the particles, not the list of atoms. There are two different kinds of **particle** here. Inside each carbon dioxide molecule, the atoms are bonded in a fixed ratio. But the carbon dioxide molecules aren't bonded to the oxygen **molecules**. And you could add more oxygen, or less, so the overall ratio of carbon to oxygen can **change**. In a compound, it never can.
 
 Visual: the "mixture" chip glows amber. On "particle" the two kinds in view D are ringed in two colours (one O₂, one CO₂) with tags "kind 1: O₂", "kind 2: CO₂". On the next sentence one CO₂ is ringed with the tag "bonded inside, 1 : 2". On "molecules" a dashed gap line appears between a CO₂ and a neighbouring O₂ with the tag "not bonded to each other". On "add more oxygen" the add-more chip "+ O₂" drops three extra O₂ pairs into view D; a counter "overall C : O" ticks from "6 : 24" to "6 : 30"; on "change" it is ringed (author note b: this count is exact). On "never can" jar B's view returns small beside it with its locked "1 : 2".
 
+Upgrade (Revision 4): On "It's a mixture" the "mixture" chip is framed in green with a green tick (52 px). On "not the list of atoms" a chip "compound: it only has C and O" fades in and is struck in red, with a red hand tag "the atom list isn't enough". On "two different kinds of particle" an amber hand tag "2 kinds = mixture" writes with a pen bracket round the two ringed particles. The view is a live particle box run: on "add more oxygen" three O₂ are injected and the readouts tick "O₂ particles 6 to 9" and "overall C : O 6 : 24 to 6 : 30" (52 px, read from the run). On "can change" an amber hand tag "ratio moved" writes with a pen arrow to the readout.
+
 ### 8. homogeneous and heterogeneous
 > Mixtures split once more, by how evenly they're mixed. Stir salt into water until it disappears. The salt breaks up into its ions, and they spread evenly between the water **molecules**. Every drop has the same composition, and you can't see separate parts. That's a homogeneous **mixture**, the same all the way through. Air is one too. Now look at the iron and sulfur again. There are grey patches and yellow patches, and a scoop from one side isn't the same as a scoop from the **other**. That's a heterogeneous mixture. Its composition differs from region to **region**.
 
 Visual: board clears to a painted glass of water (`m8-water-glass-v1.png`); coded white salt crystals drop in from a coded spoon outline and dissolve (shrink and vanish), the coded rod stirs by itself. A particle view opens: Na⁺ and Cl⁻ ions leave a small lattice corner and spread among water molecules (author note e). On "molecules" the ions are evenly spread; three small sample circles at the top, middle and bottom of the view each show the same mix, tag "same everywhere". On "mixture" the tree's mixture branch gains "homogeneous: same composition throughout" with thumbnails of the glass and jar C. On "iron and sulfur" the iron and sulfur plate slides in at the right (magnet gone, sample restored). On "other" two dashed scoop circles sample its left (mostly grey) and right (mostly yellow) and each expands into a mini particle view: mostly iron grains in one, mostly sulfur clusters in the other; tags "scoop 1" and "scoop 2" with a "≠" between. On "region" the branch gains "heterogeneous: composition differs from region to region", thumbnail iron and sulfur.
+
+Upgrade (Revision 4): The glass of water (about 420 px) is solid from the first frame, and the iron and sulfur plate (about 520 px wide) arrives solid on its cue. On "Every drop has the same composition" each of the three sample circles shows the same readout, "Na⁺ 2, Cl⁻ 2, H₂O 12" (model counts, 34 px), and an amber hand tag "any drop: same mix" writes with a pen bracket across the three. On "a scoop from one side" the scoop readouts write "iron 9, sulfur 2" and "iron 2, sulfur 8" (model counts) with an amber hand tag "scoops differ" and a pen ring round the "≠".
 
 ### 9. the trap: uniform doesn't mean pure
 > Here's the classic exam trap. Pure water and salt water look identical. Both are clear and uniform. But uniform only tells you a mixture is homogeneous. It doesn't tell you a sample is **pure**. The salt water is still two substances, and you can make it saltier or less salty. Alloys are another trap. Gold-coloured Australian coins are mostly copper, with some aluminium and **nickel**. Those atoms are spread evenly, but the proportions are chosen by the maker, not fixed by a formula. So an alloy is a homogeneous mixture, not a **compound**.
 
 Visual: two identical water glasses (`m8-water-glass-v1.png` twice) side by side, tagged "pure water" and "salt water"; a grey chip "look the same" between them. On "pure" the chip becomes "uniform ≠ pure" (amber doodle underline). On "saltier or less salty" the add-more chip "+ salt" drops ions into the salt water's particle view (opened small) while pure water's view stays only H₂O. On "Alloys" board shifts: the coins plate (`y11-coins-v1.png`) at the left; on "nickel" a particle view opens: a regular lattice of copper-brown atoms with a few silver aluminium and grey-green nickel atoms in random places (author note d); a grey chip "Australian $1 and $2 coins: about 92% copper, 6% aluminium, 2% nickel". On "chosen by the maker" a small strip writes "brass: copper + zinc, proportions vary; steel: iron + carbon" in grey. On "compound" a chip "alloy = compound" fades in and is crossed (caption "no fixed formula: homogeneous mixture").
 
+Upgrade (Revision 4): Both glasses are about 380 px tall. On "It doesn't tell you a sample is pure" an amber hand tag "uniform = evenly mixed, that's all" writes under the chip with a pen underline. On "saltier or less salty" the salt view's readout ticks "ions 4 to 8" while the pure water readout holds "ions 0" (model counts, 44 px). The coins plate is about 380 px and solid when the board shifts. On "chosen by the maker" an amber hand tag "the recipe can change" writes with a pen arrow to the lattice. On "compound" the crossed chip is struck in red with a red hand tag "no fixed formula". The composition chip and the brass and steel strip are dark ink at 30 px.
+
 ### 10. memory aid: ask "just one?"
 > Here's a way to sort any sample. Ask the same question three times: just one? Is there just one substance? If yes, it's pure, and if not, it's a **mixture**. For a pure substance, is there just one element? Then it's an element. Two or more, bonded in a fixed ratio, make a **compound**. And for a mixture, is it just one region, the same all the way through? Then it's homogeneous. If not, it's **heterogeneous**.
 
 Visual: the full classification tree returns at full size in the centre, with its example thumbnails. Above the three decision points, the handwritten line writes: "Just one?". On "mixture" the first fork lights with the question "just one substance?" (yes: pure; no: mixture). On "compound" the second fork lights: "just one element?" (yes: element; no: compound). On "heterogeneous" the third fork lights: "just one region?" (yes: homogeneous; no: heterogeneous). Hold about 2 seconds.
+
+Upgrade (Revision 4): The line "Just one?" sits in a framed memory card (hand lettering, 60 px) above the tree. As each fork lights, a pen ring draws round it in its role colour (navy for the first two forks, amber for the third). The example thumbnails are the painted plates already used (jars, iron lump, glass of water, iron and sulfur).
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Classify each sample as an element, a compound, a homogeneous mixture or a heterogeneous mixture, and justify each answer using its particles. Solid sulfur, made of S eight molecules. Glucose, C six H twelve O six. And sand stirred into water. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry"), worded as printed: "Classify each of the following as an element, a compound, a homogeneous mixture or a heterogeneous mixture. Justify each classification by referring to the particles present. (a) solid sulfur, made of S₈ molecules (b) glucose, C₆H₁₂O₆ (c) sand stirred into water". The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." No tree, no particle views (nothing answer-bearing).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries three small painted pictures, about 220 px each, unlabelled: the sulfur sample (`y11c-sample-sulfur-v1.png`), dry sand on a watch glass (`y11c-watch-glass-sand-v1.png`) and a glass of water (`m8-water-glass-v1.png`). Nothing answer-bearing: the sand is shown dry, before it is stirred in.
+
 ### 12. feedback 1 (brief)
 > Sulfur is an element. Each molecule has eight atoms, but they're all sulfur, one kind of **atom**. Glucose is a compound, three elements bonded in a fixed ratio in every **molecule**. Sand in water is a heterogeneous mixture, two substances, with the sand in its own **region**. The classic slip is calling sulfur a compound because its molecule has eight atoms. It's the kinds of atom that **count**.
 
 Visual: card shrinks to the top. On "atom" row "(a) element: S₈, eight atoms, all sulfur" with a tiny S₈ crown (all yellow). On "molecule" row "(b) compound: C, H and O bonded, fixed ratio 6 : 12 : 6" with a tiny glucose particle sketch (charcoal, red and white circles touching). On "region" row "(c) heterogeneous mixture: sand settles in its own region" with a tiny two-region particle sketch ("particles" underlined in the card). On "classic slip" a chip "S₈ is a compound: 8 atoms bonded" fades in; on "count" it is crossed (caption "one kind of atom: element"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "(a) S₈ | (b) C₆H₁₂O₆ | (c) sand stirred into water". In each row the classification word is framed in green with a tick (52 px): "element", "compound", "heterogeneous mixture". The sulfur plate sits small beside row (a) and the sand and water pictures beside row (c). On "count" the crossed chip is struck in red with a red hand tag "count the kinds, not the atoms".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A student makes two sugar solutions. One has five grams of sugar in every hundred grams of solution, and the other has fifteen grams in every hundred grams. Both are clear and look the same all the way through. The student says sugar solution is a pure substance, because it's uniform. Evaluate this claim. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A student prepares two solutions of sugar in water. Solution 1 contains 5 g of sugar in every 100 g of solution. Solution 2 contains 15 g of sugar in every 100 g of solution. Both solutions are clear and appear the same throughout. The student claims that sugar solution is a pure substance because it is uniform. Evaluate the student's claim." Two small water-glass plates (`m8-water-glass-v1.png`) beside the card, tagged "1" and "2", identical. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): The card text is 38 px and the two glasses (about 260 px each) are on the card's right side from the first frame.
+
 ### 14. feedback 2 (brief)
 > The claim is wrong. Uniform tells you it's a homogeneous mixture, not a pure substance. There are two kinds of particle, sugar molecules and water **molecules**. And the composition changes, five percent sugar in one and fifteen percent in the **other**. A pure substance can't do that. So it's a homogeneous mixture. Clear and uniform never proves **pure**.
 
 Visual: card shrinks to the top. A small particle view between the glasses shows sugar molecules (simplified clusters) among water molecules. Row "two kinds of particle: sugar, water" (on "molecules"). On "other" row "5 g per 100 g = 5%; 15 g per 100 g = 15%: composition varies" ("5 g" and "15 g" underlined in the card; the second glass's view has three times as many sugar clusters). Row "homogeneous mixture". On "pure" a chip "pure: it's clear and uniform" fades in and is crossed (caption "uniform ≠ pure"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "5 g per 100 g | 15 g per 100 g | both clear and uniform". The two glass views are live particle box runs with readouts "sugar particles 3" and "sugar particles 9" (model counts, 44 px). On "A pure substance can't do that" an amber hand tag "composition changed" writes with a pen arrow between the two readouts. On "So it's a homogeneous mixture" the row "homogeneous mixture" is framed in green with a tick (52 px). On "pure" the crossed chip is struck in red with a red hand tag "uniform ≠ pure".
 
 ### 15. handoff
 > In the lab, though, you can't see particles. So we need evidence we can actually measure. Pure water and salt water look the same, but heat them and they don't behave the same. Next time, we'll find out what melting and boiling can tell us about a **sample**.
 
 Visual: board clears. The two water glasses of scene 9 become two identical beakers of clear liquid on switched-off hotplates (`m8-beaker-hotplate-clear-v1.png`, twice, same scale), tagged "pure water" (left) and "salt water" (right); a thermometer plate (`c8-thermometer-hot-v1.png`) stands in each beaker, and on "heat them" a coded readout box writes above each: "? °C". On "sample" the next chip writes centred above them: "Next: what can melting and boiling tell us?". This is the final frame (see "Final frame"). Hold about 2 seconds.
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): On "evidence we can actually measure" a navy hand tag "measure it" writes with a pen ring round the left "? °C" box once it appears; the tag and ring clear before the "Next" chip writes, so the final frame is exactly as described under "Final frame". Tags under the beakers are dark ink.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Pure substance: only one substance, fixed composition. Mixture: two or more substances, each keeping its own particles; composition can vary.
-2. Element: only one kind of atom (O₂, Fe, S₈). Compound: two or more elements chemically bonded in a fixed ratio (CO₂ 1 : 2, H₂O 2 : 1, NaCl 1 : 1).
-3. Homogeneous mixture: the same composition throughout (salt water, air, alloys). Heterogeneous mixture: composition differs from region to region (iron and sulfur, sand and water).
-4. Uniform does not mean pure. Alloys are homogeneous mixtures, not compounds.
+1. Pure substance: one substance only. Mixture: two or more, in any proportion.
+2. Element: one kind of atom (O₂, Fe, S₈).
+3. Compound: elements bonded in a fixed ratio (CO₂ 1 : 2, H₂O 2 : 1, NaCl 1 : 1).
+4. Homogeneous: same composition throughout. Heterogeneous: differs by region.
+5. Uniform does not mean pure. Alloys are homogeneous mixtures, not compounds.
 
-Memory aid (large, on the notes screen): *Just one?* Second line: *Just one substance? Just one element? Just one region?* The small classification tree sits beside the notes.
+Memory aid (framed card beside the notes, hand lettering): *Just one?* Second line: *Just one substance? Just one element? Just one region?* Notes 34 px in the role colours (navy for pure substance, element and compound; amber for mixtures); no paragraphs. The whole notes scene runs 45 s.
 
 ## Opening frame
 
@@ -215,6 +257,8 @@ Checked with Python (5 Nov); Codex to re-check.
 
 Revision 1 count (5 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,302 characters**, 16 scenes. Characters per scene (1 to 16): 419, 559, 432, 631, 493, 205, 379, 558, 534, 402, 276, 385, 338, 346, 255, 75. At 13.3 characters per second the speech is about 474 s; add about 6 s of settling (the jar row in scene 1, the magnet lift in scene 5, the dissolving in scene 8), 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s each for the memory-aid and handoff holds and about 55 s more of the quiet notes hold (about 90 s of holds and countdowns): **about 564 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's brass and steel strip stays silent already; cut scene 3's last sentence (keep the formula strip silent); cut scene 7's last sentence (keep jar B's locked ratio on screen).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,287 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 564 s to about 549 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v01` (route chem-y11-m1-v01). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v01` and build folder `docs/production/claude-pm/lessons/c-y11-m1-v01` (root to confirm when adding the LESSONS entry).
@@ -224,6 +268,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, substance-or-mixtu
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except prediction (`hold`: the learner decides jar D's class during the 3 s countdown with its particle view on screen), attempt-1, attempt-2 (`hold`: the learner reads the worded question and works during the countdown) and key-notes (`hold`: the learner copies four notes). `design.renderer`: explainer. `design.visualSystem`: Year 11 Chemistry paper board with particle views and the classification tree (this file's colour key). Transitions (`pickTransition`): 1 to 2 camera push (same jars); 2 to 3 camera continue (view A grows); 3 to 4 camera slide to jar B; 4 to 5 clear change (new sample); 5 to 6 clear change back to the jars; 6 to 7 camera continue; 7 to 8 clear change; 8 to 9 camera continue (the glass stays); 9 to 10 pull back to the whole tree; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
 Holds: prediction (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen). key-notes is the quiet notes hold (about 60 s). Review evidence paths for the LESSONS entry: `learning_review` = `checks/c-y11-m1-v01-learning-review.md`, `science_check` = `checks/c-y11-m1-v01-chemistry-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transitions 2 to 3 and 3 to 4 are now board changes (element board, compound board), not camera moves.
 
 ## Assets
 
@@ -247,6 +293,8 @@ Kit gaps (for the v01 build brief):
 1. **Particle view.** A circular inset (radius prop), with a thin cone to a source point, that runs a seeded particle simulation by state: gas (particles spaced, straight-line drift with elastic bounces off the circle), liquid (close, sliding), solid (lattice positions with small vibration). Particles are composed of atoms (circles with colour, radius and optional charge sign) bonded into rigid units that move as one. Props: particle list with counts, state, seed, `addAt` events (frame, particles to add), ring and flash targets by index. Used throughout the Year 11 Chemistry run.
 2. **Classification tree.** A small tree component (root, two levels) whose branches draw on at cue frames, each with a label and one to three thumbnails; supports a compact top-right position and a full-size centre position, and a highlight state per fork (scene 10).
 
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `public/assets/chemistry/y11c-gas-jar-v1.png`, `y11c-iron-sulfur-mixture-v1.png`, `y11c-iron-sulfur-residue-v1.png`. Existing plates newly used: `public/assets/chemistry/y11c-sample-sulfur-v1.png` (scenes 3, 11, 12), `y11c-watch-glass-salt-v1.png` (scene 4), `y11c-watch-glass-sand-v1.png` (scenes 11, 12); `m8-water-glass-v1.png` also in scenes 4, 11 and 12. New plate requests: none. Simulation: the particle box engine for every gas view.
+
 ## Codex asset brief (Year 11 Chemistry M1 v01)
 
 Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/chem-y11-m1-v01.md`, route entry chem-y11-m1-v01. Paint after the learning review, science check and Codex error check pass and the owner gives the go-ahead. Save to `public/assets/chemistry/`. Every plate: transparent PNG with a true alpha channel and **clean edges with no coloured fringe or halo** (check on a black and a white background), ink and watercolour in the house style, matched to `public/assets/chemistry/m8-beaker-hotplate-clear-v1.png` in line weight, palette and glass treatment, at least 8 per cent clear margin, no text, labels, letters, numbers, scale bars, brand names, logos, people, hands, faces, backdrop, glow or ground shadow. Never stretch to fit; keep the native aspect ratio.
@@ -269,6 +317,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("colour", "aluminium", "sulfur" per IUPAC and NESA).
 8. Confirm the narration character count and per-scene counts by script with the build parser rules.
 9. Report site notes 1 and 2 under Decisions to root for `../site-corrections-chem-y11.md` (owner record only; the site is read-only here).
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the model readouts (kinds of particle 1, 1, 3 then 4; jar D 6 : 24 to 6 : 30; iron 8 with sulfur 6, 10, 16; sample circles Na⁺ 2, Cl⁻ 2, H₂O 12; scoops 9 and 2 against 2 and 8; ions 4 to 8; sugar 3 and 9) contradict nothing spoken; the attempt 1 pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -314,3 +364,28 @@ Narration: 6,302 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v01-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,287 characters over 16 scenes (the earlier 6,302 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v01-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)": anchor, simulation, colour key, type sizes, board stages and question cards. Each scene gains an "Upgrade (Revision 4)" paragraph.
+- Scene 1: jars solid at about 420 px; hand tags and a pen bracket; live "kinds of particle" readouts.
+- Simulation: every gas view is a particle box run with live readouts; scene 7 injects O₂ and reads the overall ratio from the run.
+- Cuts: scenes 3 and 4 are new board stages (element board, compound board) with real plates from the first frame (iron lump; glass of water and watch glass of salt). Before, scenes 1 to 4 ran about 153 s on the jar row.
+- Hand tags (two or three) and a pen mark in scenes 1 to 5, 7 to 9, 14 and 15; the memory line is a framed card in scene 10.
+- Answers framed in green in scenes 7, 12 and 14; crossed slips struck in red with a red hand tag (a new crossed slip in scene 7: "compound: it only has C and O").
+- Question cards: attempt 1 gains three neutral pictures (sulfur, dry sand, water); feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets; the framed memory card sits beside them; the notes scene is 45 s. Left the board: the example lists for each mixture type and "each keeping its own particles".
+- Grey and faint tags are now dark ink; type sizes stated.
+
+New plate requests: none.
+
+Joins: no opening frame (first video). The final frame is unchanged word for word, so v02's opening holds.
+
+Counts: 6,287 characters, unchanged; about 564 s to about 549 s (notes scene 45 s).
+
+Calls for root: (1) the model readouts in scenes 5, 8, 9 and 14 are invented counts, labelled as model counts; (2) the small classification tree no longer sits beside the key notes (the framed card restates it); (3) `ParticleBoxView` may need a draw option for multi-atom glyphs.

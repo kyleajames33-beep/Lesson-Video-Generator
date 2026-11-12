@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V13: Atomic radius trends. Why does atomic radius change across a period and down a group? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: radius uses two identical bonded atoms; 11+ kept on the nucleus; "same core charge". Narration 5,613 characters (joined parser count), about 509.4 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,597 characters (sum of scene strings; 5,613 with joining spaces; Revision 1 was 5,621 by the joined parser count), 17 scenes, about 509.4 s (8.5 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -56,6 +56,17 @@ Entry knowledge: Stage 5 shells; v08, v11, v12.
 Stops after: radius defined, shielding and core charge, the period and group trends with sourced data, exam sentences, atoms against ions and an isoelectronic set. No ionisation energy, electronegativity, reactivity or transition-metal explanation.
 Handoff: chem-y11-m1-v14, first ionisation energy and electronegativity.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** Revision 3 used no painted object. The video still opens on v12's final frame, and at about 8 s two real samples arrive beside the shell diagrams: sodium under oil (`y11c-sample-sodium-oil-v1.png`) and a jar of chlorine gas (`y11c-gas-jar-chlorine-v1.png`), about 300 px each. The puzzle is asked about atoms of these two real substances. They meet again in scene 9, where a watch glass of salt (`y11c-watch-glass-salt-v1.png`) stands between the sodium ion and the chloride ion: the ions are the ones in table salt.
+- **Simulation: the radius stepper.** One shell-atom model is stepped along the real data, with four live readouts at 52 px: "protons", "inner electrons", "core charge" and "radius (pm)". Across period 3 (scene 4) protons step 11 to 17, inner electrons hold 10, core charge climbs +1 to +7 and the radius falls 166 to 102 pm while the outer ring contracts to scale. Down group 1 (scene 7) the core charge holds +1 while a shell is added at each step and the radius rises 128, 166, 203 pm. In scene 10 it steps the five ten-electron ions (protons 8 to 13, radius 140 to 54 pm). Every ring radius and bar is drawn from the quoted values (Cordero 2008; Shannon 1976), never by eye.
+- **Colour key (fixed for the whole video).** Nucleus, protons and "more protons" red; electrons blue; core charge and pull arrows amber; shielding a slate band with a dark-ink outline; the radius ruler and radius values teal; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every tag the Visual lines call "grey" or "ghost" is drawn solid in dark ink.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current rule line and framed answers 52 px, never under 44; question-card sentences 38 px; nucleus labels, bar values and sentence frames 34 px or more; source tags 26 px; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) the table, the two samples and the shell diagrams, scene 1 (about 35 s); (B) two bonded chlorine atoms and the ruler, scene 2 (about 26 s); (C) one large sodium atom, scene 3 (about 45 s); (D) the period 3 strip with the stepper and bars, scene 4 (about 32 s); (E) sodium against chlorine, scene 5 (about 22 s); (F) group 1, scenes 6 and 7 (about 46 s); (G) exam sentences beside their pictures, scene 8 (about 27 s); (H) atoms into ions with the salt, scene 9 (about 36 s); (I) five ions, scene 10 (about 36 s); (J) the cross and the memory card, scene 11 (about 12 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 46 s, so no new cut was needed.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v08 to v10): protons and the nucleus red (`C.rose`); electrons blue (`C.blue`); shell rings ink; core charge and pull arrows amber; shielding band grey; radius ruler teal; crossed chips red strike.
@@ -65,91 +76,124 @@ Cue words in **bold** trigger the visual change. Colour key (continues v08 to v1
 
 Visual: opens on v12's final frame exactly (`chem-y11-m1-v12.md` "Opening frame and final frame": `PeriodicGrid` with the period 3 row and the Li to K group 1 column outlined, and Na, Cl and K shell diagrams in equal dashed "radius?" circles). The dashed circles fade; the sodium (2,8,1) and chlorine (2,8,7) shell diagrams slide to centre, drawn at the same size, and the K diagram stays beside the group 1 column. On "bigger" a ghost outline of chlorine swells beyond sodium, tag "expected?". On "smaller" the ghost fades and chlorine's real outer ring contracts to its true scale beside sodium (102 against 166, computed), tags "Na 166 pm" and "Cl 102 pm". On "larger" a lithium shell diagram appears small above the existing potassium diagram, potassium visibly larger, tags "Li 128 pm" and "K 203 pm". On "group" the heading writes on: "Atomic radius: why does it change?", and arrows draw on the periodic cross: along the row "smaller", down the column "larger".
 
+Upgrade (Revision 4): The table and shell diagrams are solid from the first frame, drawn in dark ink. On "Sodium and chlorine sit in the same row" the sodium sample and the chlorine jar (about 300 px each) arrive solid under their shell diagrams with dark-ink name tags. On "So you'd expect it to be bigger" the expected outline is a solid dashed dark-ink ring with an ink hand tag "bigger?". On "much smaller" the tags "Na 166 pm" and "Cl 102 pm" are teal at 44 px with a pen bracket comparing the two widths and a teal hand tag "smaller!". On "atoms get larger" the tags "Li 128 pm" and "K 203 pm" are teal at 44 px. The two arrows on the periodic cross are pen arrows.
+
 ### 2. what an atomic radius measures
 > An atom has no hard edge, so chemists measure the distance between the nuclei of two identical atoms bonded together, and take **half**. That's the atomic radius. It's tiny, so we use picometres. A picometre is a millionth of a millionth of a **metre**. Every value we compare today is measured the same way, so the comparison is fair.
 
 Visual: board clears to two chlorine atoms (soft electron clouds, overlapping slightly, nuclei as red dots). On "half" a teal ruler draws from nucleus to nucleus, "204 pm (model: 2 × 102)", then a tick at its midpoint and a bracket over one half, "radius = 102 pm"; tag "atomic radius: half the distance between two identical bonded nuclei" (Revision 2: 204 pm is the additive model distance from the tabulated radius, not a measured Cl₂ bond). On "metre" a small unit strip writes: "1 pm = 0.000 000 000 001 m", grey tag "covalent radius; Sources: Cordero et al., 2008".
+
+Upgrade (Revision 4): The two bonded chlorine atoms fill the board (each about 420 px), with the chlorine jar small at the top left. On "An atom has no hard edge" an ink hand tag "fuzzy edge" writes on the cloud with a pen arrow. On "take half" the ruler and its values are teal at 44 px and the bracket is a pen bracket with a teal hand tag "half = radius". On "a millionth of a millionth of a metre" the unit strip is 38 px. The source tag is dark ink at 26 px.
 
 ### 3. two effects on an outer electron
 > Two things decide how close the outer electrons sit. The first is the nucleus. Its positive protons attract the negative electrons, and more protons pull harder. The second is shielding. Inner electrons sit between the nucleus and the outer electrons, and their repulsion cancels part of the nucleus's **pull**. A simple way to estimate the pull an outer electron feels is the core charge: the number of protons, minus the number of inner **electrons**. For sodium, that's eleven minus ten, so plus **one**. Exam answers call this net pull the effective nuclear **charge**.
 
 Visual: board clears to a large sodium shell model (11 red protons in the nucleus labelled "11+", shells 2, 8, 1). On the second and third sentences amber arrows draw from the nucleus to the outer electron, tag "attraction". On "pull" a grey band fills the two inner shells and the amber arrow thins as it crosses it, tag "shielding: inner electrons cancel part of the pull". On "electrons" a row writes: "core charge = protons − inner electrons". On "one" the nucleus keeps its "11+" label; a glowing "+1" writes beside the thinned, screened outer-electron arrow, labelled "core-charge estimate", with the working "11 − 10 = +1" beside it (Revision 2). On "charge" a grey tag writes under the row: "exam term: effective nuclear charge (core charge is a simple estimate of it)".
 
+Upgrade (Revision 4): The sodium model is about 620 px across, solid from the first frame, with the sodium sample small at the top left. On "more protons pull harder" a red hand tag "pull" writes on the amber arrow. On "cancels part of the nucleus's pull" a slate hand tag "inner electrons shield" writes on the band with a pen bracket across the two inner shells. On "the number of protons, minus the number of inner electrons" the rule row is 52 px with "protons" in red and "inner electrons" in blue. On "so plus one" the working "11 − 10 = +1" is 52 px and "+1" is framed in amber. The exam-term tag is dark ink at 30 px.
+
 ### 4. across a period: same shells, stronger pull
 > Now go across Period three, from sodium to chlorine. Each step adds one proton to the nucleus. The new electron goes into the same third shell, so the inner shells don't change, and there are still ten inner **electrons**. So the core charge climbs, from plus one for sodium to plus seven for **chlorine**. A stronger pull on the same shell draws the outer electrons closer, and the atom gets **smaller**.
 
 Visual: the sodium model moves left; a strip of seven small shell atoms writes across: Na, Mg, Al, Si, P, S, Cl, each with three shells. On "electrons" the two inner shells of every atom glow grey together, tag "same inner shells: 10 electrons". On "chlorine" the core charges write in each nucleus in turn, "+1, +2, +3, +4, +5, +6, +7", amber arrows thickening left to right. On "smaller" the outer rings contract to scale while the radius bars at the right grow down in order: "166, 141, 121, 111, 107, 105, 102 pm"; tag "Period 3: radius decreases". Grey tags: "argon left out: noble-gas radii measured differently" and "transition metals: radius changes little".
+
+Upgrade (Revision 4): The strip of seven atoms and the empty bar chart are on the board from the first frame, with the four readouts above them. The stepper runs sodium to chlorine (see "Simulation"). On "there are still ten inner electrons" a slate hand tag "same shield: 10" writes with a pen bracket under all seven atoms. On "plus seven for chlorine" an amber hand tag "pull grows" writes with a pen arrow along the thickening arrows. On "the atom gets smaller" a teal hand tag "radius falls" writes with a pen arrow down the bars. Bar values are teal at 34 px; the two side tags are dark ink at 30 px.
 
 ### 5. more electrons, still smaller
 > Hang on, chlorine has more electrons. Shouldn't they take up more room? The extra electrons all go into the same outer shell, and electrons in the same shell barely shield each other. So the nucleus's extra pull wins. More electrons in the same shell doesn't mean a bigger **atom**.
 
 Visual: the sodium and chlorine models enlarge side by side, outer rings to scale. A red-outlined chip writes over chlorine: "more electrons, so bigger?" On the third sentence the seven outer electrons of chlorine pulse together, tag "same shell: little shielding of each other". On "atom" the chip is crossed (caption "same shell, stronger pull: smaller").
 
+Upgrade (Revision 4): Both models are about 420 px with the two samples as thumbnails beside them. On "Shouldn't they take up more room?" the chip is 44 px. On "barely shield each other" a blue hand tag "side by side: no shielding" writes with a pen ring round the outer shell. On "atom" the chip is struck in red with a red hand tag "same shell, stronger pull".
+
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Lithium and potassium are both in Group one. Potassium has sixteen more protons pulling on its electrons. So which atom is larger? Have a **think**.
 
 Visual: board clears to the Group 1 column on the periodic cross, lithium and potassium highlighted, with blank radius bars. Chip "Li or K: which is larger?". On "think" the 3 s `Countdown` ring runs. No shell diagrams shown.
+
+Upgrade (Revision 4): The group 1 column, the two blank bars and the chip (44 px) are on the board from the first frame. No hand tags (thinking time).
 
 ### 7. down a group: one more shell each step
 > Potassium. Going down Group one, each element has one more occupied shell than the one above, so its outer electron sits further from the **nucleus**. Yes, potassium has more protons, but it also has more inner electrons shielding them. Its core charge is nineteen minus eighteen, plus one, the same as lithium's. With the same core charge, the extra shell **wins**. So atomic radius increases down a **group**.
 
 Visual: shell diagrams draw down the column: Li (2,1), Na (2,8,1), K (2,8,8,1). On "nucleus" each new outer ring draws further out, a teal ruler measuring each. On the third and fourth sentences the cores write: "Li 3 − 2 = +1", "Na 11 − 10 = +1", "K 19 − 18 = +1", amber arrows of equal thickness. On "wins" the outer ring of potassium glows, tag "same core charge, extra shell: further out". On "group" the bars grow: "Li 128, Na 166, K 203, Rb 220, Cs 244 pm" (Rb and Cs bars only, no models), tag "Group 1: radius increases".
 
+Upgrade (Revision 4): On "Potassium" the answer "potassium" is framed in green with a tick (52 px). The stepper runs down the group with the core-charge readout holding +1. On "one more occupied shell" a teal hand tag "+1 shell" writes at each new ring with a pen arrow outward. On "more inner electrons shielding them" a slate hand tag "more shield too" writes on potassium's inner shells. On "the same as lithium's" the three workings are 44 px with each "+1" framed in amber. On "radius increases down a group" the bar values are teal at 34 px (Rb and Cs bars labelled "data only").
+
 ### 8. saying it in an exam
 > In an exam, don't just say the atom gets smaller. Name the cause. Across a period, the number of protons increases while electrons go into the same shell, so the stronger effective nuclear charge pulls the outer electrons **closer**. Down a group, each element has an extra occupied shell, so the outer electrons are further from the **nucleus**.
 
 Visual: board clears to two sentence frames writing in turn, each with its key words underlined in amber: on "closer" "Across a period: more protons, same shell, stronger effective nuclear charge, so outer electrons pulled closer, smaller radius."; on "nucleus" "Down a group: extra occupied shell, so outer electrons further from the nucleus, larger radius." A grey tag "name protons, shells and shielding" sits under both.
+
+Upgrade (Revision 4): Each sentence frame (38 px) sits beside its picture, so the frame is never text alone: the period 3 strip with its bars beside the first, the group 1 column with its bars beside the second (thumbnails about 420 px wide). The key words take amber pen underlines. On "Name the cause" an ink hand tag "say why, not just what" writes above the frames. The bottom tag is dark ink at 30 px.
 
 ### 9. atoms into ions
 > Atoms can also gain or lose electrons to form ions. When sodium loses its one outer electron, it doesn't just lose a dot. It loses the whole third shell. Its outer electrons are now in the second shell, and the sodium ion is much **smaller**. Chlorine goes the other way. It gains one electron into its outer shell, but the nucleus still has seventeen protons. The extra electron adds repulsion between the outer electrons, so they spread out, and the chloride ion is **larger**.
 
 Visual: board clears to Na (2,8,1) at the left, to scale. On the second and third sentences the outer electron leaves and the whole third ring fades out; the model resizes to Na⁺ (2,8). On "smaller" bars "Na 166 pm" and "Na⁺ 102 pm" sit beside it, tag "cation: whole outer shell lost". At the right Cl (2,8,7); a blue dot joins its outer ring; on the fifth sentence small red double-headed arrows flicker between outer electrons (tag "more repulsion, same 17 protons"). On "larger" the ring widens to Cl⁻'s scale; bars "Cl 102 pm" and "Cl⁻ 181 pm", tag "anion: same shell, more repulsion". Grey Sources tag "ionic radii: Shannon, 1976; measured differently from atomic radii".
 
+Upgrade (Revision 4): The watch glass of salt (about 320 px wide) stands at the centre from the first frame with a dark-ink tag "table salt: Na⁺ and Cl⁻", the sodium atom at the left and the chlorine atom at the right. On "It loses the whole third shell" a red hand tag "a whole shell gone" writes with a pen ring where the ring was. On "the sodium ion is much smaller" the bars are teal at 44 px. On "the nucleus still has seventeen protons" a red hand tag "still 17+" writes on the nucleus. On "so they spread out" a blue hand tag "more repulsion: spreads" writes with pen arrows outward. On "the chloride ion is larger" the bars are teal at 44 px. The source tag is dark ink at 26 px.
+
 ### 10. same electrons, different sizes
 > So is it all about how many electrons there are? Look at five ions that each have exactly ten electrons: oxide, fluoride, sodium, magnesium and aluminium **ions**. They're called isoelectronic, which means same number of electrons. Their sizes still fall, because the number of protons rises, from eight up to thirteen. More protons pull the same ten electrons in **tighter**. So electron count alone never tells you the size. Protons and shells matter too.
 
 Visual: board clears to five ion models in a row, each with shells 2, 8 drawn, nuclei labelled "8+", "9+", "11+", "12+", "13+", symbols "O²⁻, F⁻, Na⁺, Mg²⁺, Al³⁺". On "ions" a tag "10 electrons each" writes over all five. On "tighter" each outer ring contracts to scale and bars write "140, 133, 102, 72, 54 pm", amber arrows thickening left to right; chip "same electrons, more protons: smaller".
+
+Upgrade (Revision 4): The five ion models (about 300 px each) are on the board from the first frame with their nucleus labels at 38 px in red. The stepper's readouts show "electrons 10" holding while "protons" steps 8, 9, 11, 12, 13. On "exactly ten electrons" a blue pen bracket spans all five with a blue hand tag "10 each". On "the number of protons rises" a red pen arrow runs left to right under the nuclei with a red hand tag "more pull". On "tighter" the bar values are teal at 38 px and the chip is 44 px.
 
 ### 11. one line to remember
 > So here's the pattern to keep. Across a period, same shells, stronger pull, smaller atoms. Down a group, one more shell each step, larger **atoms**.
 
 Visual: the periodic cross returns large with its two arrows; sodium to chlorine models shrink along the row, lithium to potassium models grow down the column. On "atoms" the handwritten line writes: "Across: same shells, stronger pull. Down: one more shell each step." Hold about 2 seconds.
 
+Upgrade (Revision 4): The periodic cross fills the board with its two pen arrows. The memory line sits in a framed memory card (hand lettering, 48 px): amber "Across: same shells, stronger pull." teal "Down: one more shell each step."
+
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. The atomic radius of magnesium is one hundred and forty-one picometres, and the atomic radius of sulfur is one hundred and five picometres. Explain why sulfur atoms are smaller, even though they contain more electrons. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "The atomic radius of magnesium is 141 pm and the atomic radius of sulfur is 105 pm. Explain why sulfur atoms are smaller than magnesium atoms, even though they contain more electrons. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no shell diagrams, no periodic cross).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted magnesium ribbon and sulfur sample (`y11c-sample-magnesium-ribbon-v1.png`, `y11c-sample-sulfur-v1.png`, about 240 px each), untagged. Nothing answer-bearing (no shells, no table).
 
 ### 13. feedback 1 (brief)
 > Both are in Period three, so their outer electrons are in the same third **shell**. Sulfur has sixteen protons to magnesium's twelve, with ten inner electrons in each, so its core charge is plus six, not plus two. That stronger pull draws the outer shell **closer**. Saying sulfur has fewer shells is the slip. They have the same **number**.
 
 Visual: card shrinks to the top. Two shell models draw: Mg (2,8,2) and S (2,8,6). On "shell" row "same period: same number of occupied shells (3)". On "closer" row "core charge: Mg 12 − 10 = +2; S 16 − 10 = +6; stronger pull, smaller radius", amber arrows thicker on sulfur. On "number" a chip "sulfur has fewer shells" fades in and is crossed (caption "both have 3 shells"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "Mg 141 pm | S 105 pm | S has more electrons". The two answer rows are framed in green with a tick as they land (38 px), with the core charges "+2" and "+6" in amber at 52 px. On "number" the crossed chip is struck in red with a red hand tag "both have 3 shells".
+
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. An oxygen atom has a radius of sixty-six picometres. Predict whether an oxide ion, O two minus, is larger or smaller than an oxygen atom, and explain your prediction. Pause here to answer.
 
 Visual: `QuestionCard`: "An oxygen atom has an atomic radius of 66 pm. Predict whether the oxide ion, O²⁻, is larger or smaller than the oxygen atom. Explain your prediction. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no models).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries a clear gas jar (`y11c-gas-jar-v1.png`, about 300 px tall), untagged, as the picture of oxygen gas. Nothing answer-bearing (no models).
 
 ### 15. feedback 2 (brief)
 > Larger. The oxide ion has the same eight protons, but two extra electrons in the same outer shell. More repulsion between the outer electrons, with the same nuclear pull, spreads them out. In fact it's one hundred and forty **picometres**. The classic slip is saying the ion gains a new shell. It doesn't. Two comma six becomes two comma eight, still two **shells**.
 
 Visual: card shrinks to the top. O (2,6) draws; two blue dots join its outer ring and it widens to O²⁻ (2,8). Row "same 8 protons; 2 more electrons in the same shell; more repulsion: larger". On "picometres" bars "O 66 pm" and "O²⁻ 140 pm" write. On "shells" a chip "O²⁻ has an extra shell" fades in and is crossed (caption "2,6 → 2,8: still 2 shells"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "O atom 66 pm | O²⁻: 2 more electrons". On "Larger" the answer "larger" is framed in green with a tick (52 px). On "spreads them out" a blue hand tag "same 8+, more repulsion" writes on the model. On "one hundred and forty picometres" the bars are teal at 44 px. On "shells" the crossed chip is struck in red with a red hand tag "2,6 → 2,8: still 2 shells".
+
 ### 16. handoff: a tighter grip
 > Notice what this means. A small atom with a strong pull, like chlorine, holds its outer electrons tightly. A big atom with a weak pull, like sodium, holds its outer electron loosely. So how much energy does it take to pull an electron off an atom, and how strongly does an atom pull on electrons it shares? Next time, we'll see how first ionisation energy and electronegativity follow the same atomic **structure**.
 
 Visual: board clears to the sodium and chlorine models from scene 4 at their true sizes. On the second sentence chlorine's amber arrows glow thick; on the third sodium's single arrow glows thin. On the fourth sentence an orange "energy?" arrow tugs sodium's outer electron outward, and a second chlorine atom appears beside the first with a shared pair of dots between them, tag "pull?". On "structure" the chip writes: "Next: how do first ionisation energy and electronegativity follow atomic structure?". Hold about 2 seconds. This is the final frame (v14 opens on it).
 
-### 17. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): Both models are about 420 px, solid from the first frame of the scene, with the two samples as thumbnails. On "holds its outer electrons tightly" an amber hand tag "tight grip" writes on chlorine; on "holds its outer electron loosely" an amber hand tag "loose grip" writes on sodium. Both tags clear before the last chip writes, so the final frame is exactly as described; the thumbnails clear with them.
+
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Atomic radius: half the distance between the nuclei of two identical bonded atoms of an element (in pm; 1 pm = 10⁻¹² m).
-2. Across a period, radius decreases: protons increase, electrons enter the same shell, shielding barely changes, so the effective nuclear charge (core charge = protons − inner electrons) rises and pulls the outer electrons closer.
-3. Down a group, radius increases: each element has an extra occupied shell, so the outer electrons are further from the nucleus (core charge stays the same).
-4. Cations are smaller than their atoms (often a whole shell is lost); anions are larger (same protons, more electron repulsion). For isoelectronic ions, more protons means a smaller ion.
+1. Atomic radius: half the distance between two identical bonded nuclei (in pm).
+2. Across a period: more protons, same shell, stronger pull, smaller radius.
+3. Down a group: one more occupied shell each step, so a larger radius.
+4. Core charge = protons − inner electrons (an estimate of the net pull).
+5. Cations are smaller than their atoms; anions are larger.
 
-Memory aid (large, on the notes screen): *Across: same shells, stronger pull. Down: one more shell each step.*
+Memory aid (framed card beside the notes, hand lettering, amber and teal as in scene 11, with the small periodic cross in the card): *Across: same shells, stronger pull. Down: one more shell each step.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -203,6 +247,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **5,621 characters**, 17 scenes. At 13.3 characters per second the speech is about 423 s; add about 3 s for the bar growth in scenes 4 and 7, 2 s for the scene 11 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 87 s): **about 510 s**, inside the band and under the cap. Reserve trims: scene 8's second sentence (the exam frames carry it on screen), scene 10's definition sentence (keep the tag), scene 16's second sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,597 characters, 17 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 509 s to about 494 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v13` (route chem-y11-m1-v13; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v13`.
@@ -213,6 +259,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v13-learning-review.md`, `checks/c-y11-m1-v13-science-check.md`.
 
+Revision 4: key-notes hold is 45 s in all. No transition changed.
+
 ## Assets
 
 Have: none needed. Every visual is an abstract model, chart or text (shell models in the HSC convention, bars, the periodic cross).
@@ -220,6 +268,8 @@ Have: none needed. Every visual is an abstract model, chart or text (shell model
 Need: no new plates.
 
 Coded: shell atoms with a radius ruler, pull and shield arrows, core-charge labels, radius bars with Sources tags, periodic cross, ion morph, sentence frames, chips, attempt cards, countdowns, key notes board. Build note: drive every ring radius from the quoted pm value (one scale per scene), never by eye.
+
+Revision 4 (12 Nov 2026). The Revision 3 statement "Have: none needed" is withdrawn. Existing plates now used (confirmed by file listing, not re-inspected): `y11c-sample-sodium-oil-v1.png` and `y11c-gas-jar-chlorine-v1.png` (scenes 1, 3, 5, 16), `y11c-watch-glass-salt-v1.png` (scene 9), `y11c-sample-magnesium-ribbon-v1.png` and `y11c-sample-sulfur-v1.png` (attempt 1 card), `y11c-gas-jar-v1.png` (attempt 2 card). New plate requests: none. Shell models, bars and the periodic cross stay coded.
 
 ## Codex error-check brief
 
@@ -233,6 +283,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening-frame assumption is flagged for root to reconcile with v12, and the final frame matches v14's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the stepper's readouts match "Numbers used" at every stop (period 3: core charge +1 to +7, radii 166, 141, 121, 111, 107, 105, 102 pm; group 1: +1 throughout, 128, 166, 203 pm; ions: 140, 133, 102, 72, 54 pm); the final frame is unchanged once the scene 16 tags and thumbnails clear; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -277,3 +329,28 @@ Narration: 5,613 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v13-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,597 characters over 17 scenes (the earlier 5,613 included the 16 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v13-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: Revision 3 had no painted object. Sodium under oil and a jar of chlorine gas arrive at about 8 s; a watch glass of salt stands between the two ions in scene 9.
+- Simulation: the radius stepper, one shell atom stepped along the real data with live "protons", "inner electrons", "core charge" and "radius" readouts (scenes 4, 7 and 10).
+- Hand tags (two or three) and a pen mark in scenes 1 to 5 and 7 to 10; the memory line is a framed card in scene 11.
+- Scene 8: each exam sentence now sits beside its picture, so the frame is not text alone.
+- Answers framed in green (scenes 7, 13, 15); crossed slips struck in red with red hand tags; ghost and grey items drawn solid.
+- Question cards: attempt 1 gains the magnesium and sulfur samples; attempt 2 gains a clear gas jar; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the isoelectronic rule (kept in scene 10).
+- Stage list recorded; no set-up ran past about 46 s, so no cut was added.
+
+New plate requests: none.
+
+Joins: the opening is v12's final frame, unchanged (the samples arrive after it). The final frame (scene 16) is unchanged, so v14's opening holds.
+
+Counts: 5,597 characters, unchanged; about 509 s to about 494 s.
+
+Calls for root: (1) real samples beside an abstract lesson, which reverses the Revision 3 "no plates" call; (2) a clear gas jar stands for oxygen on the attempt 2 card.

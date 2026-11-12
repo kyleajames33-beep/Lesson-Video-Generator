@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V22: Ionic lattices and their properties. Why are ionic solids hard and brittle, and why do they conduct only when their ions can move? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,983 characters (sum of scene strings), 19 scenes, about 531 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -70,6 +70,16 @@ Entry knowledge: v19, v21, Stage 5 circuits.
 Stops after: the lattice, melting point (charge, size in one sentence), the Celsius-ratio trap, hardness, brittleness, solid, molten and aqueous conductivity. No solubility rules, lattice energy values, electrolysis products, molecular shape or metals.
 Handoff: chem-y11-m1-v23, molecular shape and bond dipoles.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the halite crystal, scene 1 (about 30 s); (B) the rock-salt cube and the lattice heater, scenes 2 and 3 (about 51 s); (C) the thermometer as the hero, scenes 4 and 5 (about 56 s); (D) the cross-section and the layer slider, scenes 6 to 8 (about 59 s); (E) what conducting needs, scene 9 (about 21 s); (F) the conductivity circuit: dry salt, molten salt, dissolved salt, scenes 10 to 12 (about 84 s, with a stage change and a different painted plate at each scene); (G) the three-column table, scene 13 (about 26 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 84 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v21; Revision 2 colour roles and type sizes in Decisions): Na⁺ and other cations small circles with a red edge; Cl⁻ and other anions larger circles with a blue edge; attraction lines faint grey, pulsing amber when named; repulsion arrows red (between cations) or blue (between anions); the negative electrode tagged "−" in blue, the positive "+" in red; δ+ red, δ− blue; property chips teal; crossed chips red strike. Ion sizes keep Cl⁻ visibly larger than Na⁺ (v13's ions).
@@ -108,6 +118,8 @@ Visual: board clears to a 2D cross-section of the lattice (four rows of eight al
 > Quick prediction. Suppose a sharp blow shifts one layer of ions along, by just one position. What happens to the charges that end up next to each other? Have a **think**.
 
 Visual: the cross-section stays; a dashed outline shows the top two rows shifted one ion to the right (ghosted, not yet moved). Chip "shift one layer: which charges meet?". On "think" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 3): The shifted rows are shown as a solid dashed dark-ink outline (not ghosted), with the chip at 44 px.
 
 ### 8. brittleness
 > Before the shift, every positive ion sits next to negative ions. After the shift, positive ions line up next to positive ions, and negative next to **negative**. Like charges repel. So instead of bending, the layers push apart, and the crystal splits along a flat plane. That's why ionic solids are brittle, and why salt breaks into pieces with flat, smooth **faces**.
@@ -239,6 +251,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Review evidence paths: `checks/c-y11-m1-v22-learning-review.md`, `checks/c-y11-m1-v22-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched; Revision 2 inspected 7 November):
@@ -282,6 +296,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v21's final frame, and that the Final frame section is exact enough for v23 to open on it.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -333,3 +349,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plate requested: `y11c-calcium-chloride-v1.png`.
 
 Narration: 5,983 characters as the sum of the 19 scene strings (Revision 1: 5,867 as a sum, 5,885 stated with joining spaces); about 531 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v22-rev2-error-check.md`): 0 blockers, 0 new should fix. Nothing to resolve.
+
+Changes:
+- Scene 7: the "ghosted" shifted rows are a solid dashed outline.
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 25, 30, 37 and 38.

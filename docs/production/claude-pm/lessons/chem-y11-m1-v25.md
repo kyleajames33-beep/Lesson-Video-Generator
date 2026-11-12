@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V25: Covalent networks and allotropes. Why do diamond, graphite and silicon dioxide have different properties? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,786 characters (sum of scene strings), 16 scenes, about 517 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -48,7 +48,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Legacy logic ported:** none.
 - **Explainer motion (coded):** **network turntables** (3D `BallStick` fragments, slow yaw: a diamond fragment of about 30 carbons, tetrahedral; a graphite stack of three hexagonal sheets, sheets about 2.4 times further apart than bonded neighbours; a quartz-like Si–O fragment (Si tan, O red-brown); a C₆₀ ball); **bond count rings** (one carbon ringed, its bonds numbered 1 to 4 or 1 to 3, the free electron as a blue dot); **delocalised drift** (blue dots drifting along a graphite sheet, not between sheets); **sheet slide** (the top sheet slides sideways over the next, grey dotted "weak attraction" lines stretching and re-forming); **scratch test** (a coded scratch line across the diamond plate that fails, a red stop mark; the glass scratch for quartz as a coded line on a coded glass pane); **Mohs bar** (a 1 to 10 bar with graphite, quartz, glass and diamond markers); **molecular lens** (separate CO₂ molecules with wide gaps); `Countdown`, `QuestionCard`, `Chip` with `cross`, `PenArrow`, scribble circle, `HandText`, `KeyNotes`, `Heading`.
 - **Board layout (constant):** heading top left; the real object (plate) at the left; the 3D structure at the right in the lens; a three-column property table (hardness, conducts?, on strong heating) builds under the structures from scene 3 and stays until scene 10.
-- **Simulations (Revision 2).** (1) The bond switch (scenes 3 and 4): one ringed carbon toggles between four bonds in 3D and three bonds in a flat sheet; readouts (52 px) "bonds per carbon" (4 or 3) and "free electrons per carbon" (0 or 1) update, and the lens rebuilds as the diamond network or the graphite sheet. (2) The sheet tester (scenes 4 and 5): a slide control moves the top graphite sheet while a readout "covalent bonds broken" stays at 0 (only the grey dotted attractions stretch and re-form); then a heat slider climbs to "above 3500 °C" and the same readout only starts to rise as in-sheet bonds break. Soft (sliding) and hard to melt (bond breaking) are seen as two different readouts.
+- **Simulations (Revision 2).** (1) The bond switch (scenes 3 and 4): one ringed carbon toggles between four bonds in 3D and three bonds in a flat sheet; readouts (52 px) "bonds per carbon" (4 or 3) and "free electrons per carbon" (0 or 1) update, and the lens rebuilds as the diamond network or the graphite sheet. (2) The sheet tester (scenes 4 and 5): a slide control moves the top graphite sheet while a readout "covalent bonds broken" stays at 0 (only the grey dotted attractions stretch and re-form); then a heat slider climbs into a top zone labelled "very strong heating (above about 3500 °C)" and the same readout rises gradually as in-sheet bonds break, with no sharp threshold (Revision 3). Soft (sliding) and hard to melt (bond breaking) are seen as two different readouts.
 - **Colour roles (Revision 2, fixed for the whole video):** carbon charcoal; silicon tan; oxygen red-brown; covalent bonds ink; delocalised electrons and the free-electron readout blue; weak attractions grey dotted lines; temperatures terracotta; property table cells ink with the conducts column blue; givens strips navy; framed answers dark-ink box with a green tick; crossed slips red strike with a red hand tag; hand tags take the colour of what they mark.
 - **Type sizes (Revision 2, 1080p):** the current statement or table row at least 44 px; slider and counter readouts about 52 px; table cells, chips and supporting lines 32 to 36 px; hand tags at least 30 px; nothing a student must read below 26 px. All text above the bottom 12% of the frame.
 
@@ -67,6 +67,16 @@ Main question: *Why do diamond, graphite and silicon dioxide have different prop
 Entry knowledge: v22, v23, v24, v02; Stage 5 covalent bonding.
 Stops after: molecular against network, diamond, graphite, allotropy with C₆₀, SiO₂ against CO₂, a memory aid. No polymers; intermolecular forces named only.
 Handoff: chem-y11-m1-v26, boiling points of molecular substances.
+
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) pencil, diamond and quartz, scene 1 (about 27 s); (B) molecular against network, scene 2 (about 39 s); (C) diamond and the bond switch, scene 3 (about 40 s); (D) graphite and the sheet tester, scenes 4 and 5 (about 59 s); (E) three allotropes, scene 6 (about 34 s); (F) quartz and its network, scenes 7 and 8 (about 52 s); (G) dry ice, scene 9 (about 33 s); (H) the memory card, scene 10 (about 18 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 59 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
 
 ## Script and shots
 
@@ -95,7 +105,9 @@ Visual: stage change (Revision 2): the pencil plate (about 620 px wide, solid) t
 ### 5. soft, but not easy to melt
 > Graphite is soft, but it's not easy to melt. To turn graphite into a liquid or a gas, you'd have to break the strong covalent bonds inside every **sheet**. So graphite stays solid to well above three thousand degrees **Celsius**. Soft and slippery describes how the layers slide. It doesn't mean the bonds are **weak**.
 
-Visual: the graphite stack turns; on "sheet" the in-sheet bonds glow ink-bright while the dotted interlayer lines stay grey, tags "strong: inside sheets" and "weak: between sheets". The sheet tester's heat slider climbs (terracotta readout, 52 px); the "covalent bonds broken" readout stays at 0 until the slider passes 3500 °C, then starts to rise as in-sheet bonds break; terracotta hand tag "only now" with a pen arrow. On "Celsius" the table's graphite cell writes "on strong heating: no melting at normal pressure; sublimes above 3500 °C". On "weak" a chip "graphite is soft, so its bonds are weak" fades in and is struck in red, red hand tag "weak between layers only".
+Visual: the graphite stack turns; on "sheet" the in-sheet bonds glow ink-bright while the dotted interlayer lines stay grey, tags "strong: inside sheets" and "weak: between sheets". The sheet tester's heat slider climbs (terracotta readout, 52 px); the "covalent bonds broken" readout stays at 0 through moderate heating and climbs gradually only in the slider's top zone, "very strong heating (above about 3500 °C)", as in-sheet bonds break (Revision 3: no sharp threshold); terracotta hand tag "only with very strong heating" with a pen arrow. On "Celsius" the table's graphite cell writes "on strong heating: no melting at normal pressure; sublimes above 3500 °C". On "weak" a chip "graphite is soft, so its bonds are weak" fades in and is struck in red, red hand tag "weak between layers only".
+
+Upgrade (Revision 3): The heat slider has no switch-on point. Its scale runs from room temperature to a top zone labelled "very strong heating (above about 3500 °C)" in terracotta at 30 px; the "covalent bonds broken" readout (52 px) stays at 0 through the sliding test and through moderate heating, then climbs gradually as the slider moves through the top zone. A small dark-ink tag reads "model: how fast it sublimes depends on temperature and pressure".
 
 ### 6. allotropes
 > Diamond and graphite are allotropes of carbon. Allotropes are different structural forms of the same element, in the same physical state. Carbon has others too. In buckminsterfullerene, sixty carbon atoms join into a hollow ball, like a soccer **ball**. Each ball is a separate molecule, held to the next by weak attractions, so this form of carbon is soft, and it even dissolves in some **solvents**. Same element, different arrangement, different **properties**.
@@ -226,6 +238,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Review evidence paths: `checks/c-y11-m1-v25-learning-review.md`, `checks/c-y11-m1-v25-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (inspected 5 November on a paper contact sheet; scaled uniformly only, never stretched):
@@ -266,6 +280,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v24's final frame and the final frame matches v26's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -321,3 +337,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules; the
 - New plate requested: `y11c-sic-cutting-disc-v1.png`.
 
 Narration: 5,786 characters as the sum of the 16 scene strings (Revision 1: 5,755 as a sum, 5,770 stated with joining spaces); about 517 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v25-rev2-error-check.md`): 0 blockers, 1 new should fix. Scene 5's heat slider kept "covalent bonds broken" at zero until 3500 °C and tagged the rise "only now", which implied a sharp onset for sublimation; the temperature is a rough strong-heating reference and the rate depends on temperature and pressure. Resolved in the Visual text of scene 5 and in the Simulations decision: the readout now climbs gradually towards the top of the slider's range, the range is labelled "very strong heating (above about 3500 °C)", and the tag reads "only with very strong heating". No narration change.
+
+Changes:
+- Scene 5 and the Simulations decision: the sheet tester's heat slider no longer has a sharp 3500 °C threshold or an "only now" tag (brief 237 should fix).
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: the heat slider wording keeps root decision 29's "above 3500 °C" as a rough zone label, not a threshold.

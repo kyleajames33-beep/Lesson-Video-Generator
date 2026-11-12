@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V21: Electronegativity and the bonding spectrum. How does electron attraction connect ionic and covalent bonding? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 learning review and science check clean at Revision 1, so no repair or repair check was needed (root); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (7 Nov 2026): brief 179 reviews clean at Revision 1, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,312 characters (sum of scene strings; 6,330 with joining spaces), 19 scenes, about 563 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -60,6 +60,17 @@ Entry knowledge: v12, v14, v19, v20.
 Stops after: Δχ and the spectrum, non-polar, polar and ionic bonds, δ+ and δ−, the HF boundary case, periodic positions, Lewis diagrams for NaCl, MgCl₂, H₂O and CO₂. No lattice, shapes, polar molecules, metallic bonding or intermolecular forces.
 Handoff: chem-y11-m1-v22, the ionic lattice and its properties.
 
+## Visual upgrade (Revision 3)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 3)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** Revision 2 used one small plate, in the last scene. The video still opens on v20's final frame (the "NaCl" and "CO₂" cards), and at about 5 s the two real substances arrive under their cards: a jar of salt (`c1-salt-jar-crystals-v1.png`) and a dish of dry ice (`y11c-dry-ice-v1.png`, solid carbon dioxide), about 300 px each. One is ions and one is molecules, and the video explains what connects them. Each worked bond and Lewis diagram then stands beside its real substance: chlorine gas, salt, water, dry ice.
+- **Simulation: the difference dial.** The tug-of-war bond is computed, not posed: the shared pair's position is set by the two atoms' electronegativity values, and three live readouts at 52 px read the same state: the two values, "difference (Δχ)" and the bond type by the guide. In scenes 3 to 5 the left atom is stepped (Cl, H, Na) and the pair moves 0, 1.0, 2.3. In scene 6 the dial sweeps the whole range from 0 to 3.2 through the silent examples (C–H 0.4, O–H 1.2, H–F 1.8, MgO 2.1, KF 3.2), so the pair slides further and further until it is handed over, while a marker travels along the spectrum bar and the type readout changes "non-polar covalent", "polar covalent", "ionic". Past about 1.7 the readout shows "ionic (by the guide)" so scene 8's exception stays honest.
+- **Colour key (fixed for the whole video).** Nuclei red; electrons blue; the moving or shared electrons amber; δ+ red and δ− blue; ion charges teal; the covalent end of the spectrum slate and the ionic end teal, with the guide lines at 0.4 and 1.7 as solid dashed dark-ink lines; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every item the Visual lines call "grey", "faint" or "soft" is drawn solid in dark ink (the rope is a solid dark-ink line), and on-screen tags never show a video number.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current working line and framed answers 52 px, never under 44; Lewis symbols 72 px with dots about 14 px across; question-card sentences 38 px; spectrum labels, markers and supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) the two cards, the two substances and the rope, scene 1 (about 38 s); (B) the electronegativity map, scene 2 (about 27 s): the shaded table outline large; (C) the tug-of-war bond with its dial, scenes 3 to 5 (about 87 s; the left atom, the task strip and the real substance beside it change at each scene); (D) the spectrum bar, scenes 6 to 8 (about 86 s; the dial sweep in 6, the H–F marker in 7 and 8); (E) ionic Lewis board, scenes 9 and 10 (about 55 s); (F) covalent Lewis board, scenes 11 and 12 (about 50 s): water, then carbon dioxide, each beside its real substance; (G) the spectrum and the memory card, scene 13 (about 21 s); question and feedback cards; the handoff; the notes board. Revision 2 kept the rope on screen through scenes 1 to 5 (about 152 s) and one Lewis board through scenes 9 to 12 (about 105 s); stages B and F are the new cuts.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v14 and v19): nuclei red; electrons blue; the moving or shared electrons in Lewis diagrams amber; rope line grey; δ+ red and δ− blue (small italic); ion charges teal; spectrum bar from grey (covalent end) to teal (ionic end) with faint guide bands; crossed chips red strike. Screen notation: Δχ (with the word "difference" beside it the first time), δ+, δ−, [Na]⁺, [Cl]⁻ with eight dots.
@@ -69,100 +80,138 @@ Cue words in **bold** trigger the visual change. Colour key (continues v14 and v
 
 Visual: opens on v20's final frame (Decisions). On the second sentence the "?" between the cards fades and the rope line grows across the centre; the two cards shrink to the top corners. On "electrons" two nuclei with shell rings appear at the rope's ends, the blue pair on the rope. On the fourth sentence the pair sits centred. On the fifth sentence it slides a little to the right. On "completely" it leaves the rope and joins the right atom's outer ring; the rope fades; the atoms gain "+" and "−". On "bonding" the scene rewinds to a centred pair, and the heading writes on: "Electronegativity: one pull, from sharing to transfer".
 
+Upgrade (Revision 3): The two cards are solid from the first frame. On "we named sodium chloride as ions" the jar of salt (about 300 px) arrives solid under its card; on "carbon dioxide as atoms sharing electrons" the dish of dry ice (about 300 px wide) arrives under its card, each with a dark-ink name tag. On "these aren't two separate worlds" an ink hand tag "one idea links them" writes between the cards with a pen arrow each way. The rope is a solid dark-ink line and its tag reads "pull on electrons: electronegativity" with no video number. On "the pair stays in the middle" a pen tick marks the centre; on "it can take the electrons completely" a teal hand tag "handed over" writes with a pen arrow along the electron's path.
+
 ### 2. the difference decides
 > Electronegativity measures how strongly an atom in a bond attracts the shared electrons. It rises toward the top right of the periodic table. Fluorine is the highest, at four point zero. Chlorine is three point two, hydrogen two point two, and sodium only zero point **nine**. What decides the bond is the difference between the two atoms' **values**.
 
 Visual: a coded periodic outline at the right, shaded darker toward the top right (v14's heat strip). On the third sentence "F 4.0" lights. On the fourth sentence "Cl 3.2", "H 2.2" light; on "nine" "Na 0.9" lights at the far left. On "values" a readout writes under the rope: "difference (Δχ) = larger value − smaller value".
+
+Upgrade (Revision 3): Board change to the map: the shaded table outline fills the board (a solid two-tone tint, darker to the top right), with the rope small at the lower left. The four lit values are 52 px. On "It rises toward the top right" a pen arrow runs from bottom left to top right with an ink hand tag "stronger pull ↗". On "sodium only zero point nine" a pen ring marks sodium. On "the difference between the two atoms' values" the readout line is 52 px and framed, with an amber hand tag "the gap decides".
 
 ### 3. equal pull: chlorine with chlorine
 > Start with two chlorine atoms. Each has seven outer electrons, and needs one more. So they share a pair, one electron from each. That shared pair is a covalent **bond**. Both atoms pull equally, because the difference is zero, so the pair sits exactly in the **middle**. That's a non-polar covalent bond.
 
 Visual: board clears to the tug-of-war bond with two chlorine atoms (outer rings with seven blue dots each). On the third sentence one dot from each atom moves onto the rope, side by side, glowing amber. On "bond" tag "covalent bond: a shared pair of electrons". On the fifth sentence the readout writes "Cl 3.2, Cl 3.2: Δχ = 0". On "middle" the pair settles at the exact centre with two equal pull arrows, and the label writes "non-polar covalent: shared equally".
 
+Upgrade (Revision 3): Board change to the bond stage: the tug-of-war bond across the centre (about 1,100 px), the dial readouts under it and a jar of chlorine gas (`y11c-gas-jar-chlorine-v1.png`, about 300 px) at the left from the first frame, with a navy givens card "Cl 3.2 | Cl 3.2". On "one electron from each" an amber hand tag "one each" writes over the shared pair. On "a covalent bond" the tag is 38 px. On "the difference is zero" the readout "Δχ = 0" is 52 px. On "exactly in the middle" an ink hand tag "equal pull: centred" writes with a pen tick at the centre mark, and the label "non-polar covalent" is framed in green (44 px).
+
 ### 4. unequal pull: hydrogen chloride
 > Now hydrogen and chlorine. The difference is three point two minus two point two, which is one point **zero**. Chlorine pulls harder, so the shared pair spends more of its time near the chlorine. The chlorine end gets a small negative charge, and the hydrogen end a small positive charge. We write these as delta minus and delta plus, where delta means partial, a bit less than a full **charge**. This is a polar covalent **bond**.
 
 Visual: the left atom becomes hydrogen (one ring, small). Task strip "H–Cl: classify the bond". Givens: "H 2.2", "Cl 3.2". On "zero" the readout writes "3.2 − 2.2 = 1.0". On the second sentence the pair slides toward chlorine and the chlorine pull arrow thickens. On the third sentence a faint blue haze gathers at the chlorine end and fades at the hydrogen end. On "charge" "δ−" writes on Cl (blue) and "δ+" on H (red), tag "δ: a partial charge". On "bond" the label writes "polar covalent: shared unequally".
+
+Upgrade (Revision 3): The left atom becomes hydrogen and the givens card reads "H 2.2 | Cl 3.2"; the chlorine jar steps back to a thumbnail. On "which is one point zero" the working "3.2 − 2.2 = 1.0" is 52 px. On "spends more of its time near the chlorine" the pair's new position is marked by a pen arrow with a blue hand tag "nearer Cl". The charge haze is a solid pale blue tint with a dark-ink outline, not a faint glow. On "delta means partial" the tags "δ−" and "δ+" are 52 px with an ink hand tag "δ = a little". On "a polar covalent bond" the label is framed in green (44 px).
 
 ### 5. a big difference: sodium chloride
 > Now sodium and chlorine. The difference is three point two minus zero point nine, which is two point **three**. Chlorine's pull is so much stronger that sodium's outer electron moves across completely. Sodium becomes a plus one ion, and chlorine becomes a minus one ion. These ions attract each other strongly, because opposite charges attract. That attraction is an ionic **bond**.
 
 Visual: the left atom becomes sodium (2, 8, 1). Task strip "Na–Cl: classify the bond". Givens "Na 0.9", "Cl 3.2". On "three" the readout writes "3.2 − 0.9 = 2.3". On the second sentence sodium's single amber electron travels along the rope and drops into chlorine's outer ring; the rope fades. On the third sentence the atoms relabel "Na⁺" and "Cl⁻" (teal), sodium's outer ring gone. On the fourth sentence a soft double-headed attraction arrow pulses between them. On "bond" the label writes "ionic bond: attraction between oppositely charged ions".
 
+Upgrade (Revision 3): The left atom becomes sodium, the givens card reads "Na 0.9 | Cl 3.2" and the jar of salt (about 300 px) stands at the left. On "which is two point three" the working "3.2 − 0.9 = 2.3" is 52 px. On "moves across completely" an amber hand tag "all the way over" writes with a pen arrow along the electron's path. On "chlorine becomes a minus one ion" the ion labels are teal at 52 px. On "opposite charges attract" the attraction arrow is a solid teal double-headed pen arrow with a teal hand tag "+ attracts −". On "an ionic bond" the label is framed in green (44 px). A chip "Na and Cl share a pair" is struck in red with a red hand tag "gap 2.3: transfer".
+
 ### 6. one spectrum
 > So bonding is a spectrum, not two boxes. As the difference grows, the shared pair moves further toward one atom, until it's handed over. As a rough guide, a difference below about zero point four is non-polar covalent. Between zero point four and one point seven is polar covalent. And above about one point seven is **ionic**. You can see it on the periodic table, too. A metal from the bottom left, with a non-metal from the top right, are far apart in electronegativity, so they bond ionically. Two non-metals, close together, share **electrons**.
 
 Visual: the spectrum bar draws along the lower third, 0 to 3.3, grey shading to teal. On the second sentence the three bonds from scenes 3 to 5 shrink onto it as markers: Cl₂ at 0, H–Cl at 1.0, NaCl at 2.3, each with its small tug-of-war icon. On the third to fifth sentences faint guide bands write at 0.4 and 1.7 with the labels "non-polar covalent", "polar covalent" and, on "ionic", "ionic"; tag "a guide, not a wall". Silent extra markers drop: C–H 0.4, O–H 1.2, MgO 2.1, KF 3.2. On the sixth and seventh sentences the periodic outline returns small: Na (bottom left) and Cl (top right) light with a long curved arrow; on "electrons" C and O light with a short arrow, tag "close together: covalent".
+
+Upgrade (Revision 3): Board change to the spectrum stage: the bar across the lower half (labels 34 px), the tug-of-war bond above it and the dial sweeping (see "Simulation"). On "a spectrum, not two boxes" an ink hand tag "one sliding scale" writes above the bar. On "until it's handed over" the marker reaches the ionic end and the pair leaves the rope. On "is ionic" the three band labels are 38 px and the tag "a guide, not a wall" is dark-ink hand lettering with a pen underline. On "far apart in electronegativity" the long arrow on the small table is a teal pen arrow tagged "far apart: ionic"; on "share electrons" the short arrow is a slate pen arrow tagged "close: covalent".
 
 ### 7. prediction (countdown, 3 seconds)
 > Quick prediction. In hydrogen fluoride, the difference is four point zero minus two point two, which is one point eight. By the guide, that's ionic. So is hydrogen fluoride made of ions? Have a **think**.
 
 Visual: the spectrum bar stays; a new marker "H–F 1.8" hovers just past the 1.7 band with a "?". Readout "4.0 − 2.2 = 1.8". Chip "hydrogen fluoride: ions?". On "think" the 3 s `Countdown` ring runs.
 
+Upgrade (Revision 3): The spectrum bar, the "H–F 1.8" marker (44 px) and the working "4.0 − 2.2 = 1.8" (52 px) are on the board from the first frame; the chip is 44 px. No hand tags (thinking time).
+
 ### 8. the boundary is fuzzy
 > It isn't. Hydrogen fluoride is made of separate molecules, and it boils at about twenty degrees Celsius. An ionic solid like salt doesn't melt until eight hundred and one. So its bond is strongly polar, but still covalent. That's why these numbers are only a guide. Bonds near the boundary have some of both characters, so in an exam, say about one point **seven**, and use the evidence.
 
 Visual: the H–F marker settles at 1.8 with a tag "molecules: boils at about 20 °C"; a small NaCl marker tag "melts at 801 °C". On the third sentence a small H–F tug-of-war icon shows its pair pulled hard toward F but still on the rope, δ+ and δ−. On the fourth sentence the 1.7 band blurs into a soft gradient, tag "mixed character near the boundary". On "seven" a chip writes "about 1.7, then check the evidence".
+
+Upgrade (Revision 3): On "It isn't" the answer "not ions: molecules" is framed in green with a tick (52 px). On "it boils at about twenty degrees Celsius" and on "eight hundred and one" the two evidence tags are 38 px with a pen bracket between them and an ink hand tag "the evidence decides". On "strongly polar, but still covalent" the H–F tug of war shows its pair hard over but still on the rope, with a blue hand tag "still shared". On "only a guide" the 1.7 line widens into a solid hatched band (not a blur) tagged "mixed character". On "seven" the chip is 44 px.
 
 ### 9. Lewis dot diagrams: showing the transfer
 > Chemists show these electron moves with Lewis dot diagrams. Each dot is one outer electron, drawn around the element's symbol. Inner electrons aren't shown, because only the outer ones take part in **bonding**. For sodium chloride, sodium has one dot, and chlorine has seven. The dot moves from sodium to chlorine. Sodium is left with no dots, and chlorine now has eight. We put each ion in square brackets, with its charge **outside**.
 
 Visual: board clears; the spectrum bar shrinks to a strip at the top. On the first sentence "Na" with one amber dot and "Cl" with seven blue dots (in pairs and one single) write at the centre. On the second sentence a small shell atom of chlorine (2, 8, 7) beside it fades its inner rings, leaving only the seven outer dots. On "bonding" tag "Lewis dot diagram: outer electrons only". On the fourth and fifth sentences a pen arrow carries the amber dot from Na to Cl's single side. On the sixth sentence the result writes: "Na" with no dots, "Cl" with eight. On "outside" square brackets draw around each: "[Na]⁺" and "[Cl]⁻" with eight dots, the charges in teal.
 
+Upgrade (Revision 3): Board change to the ionic Lewis board: the jar of salt (about 300 px) at the left, the Lewis symbols (72 px) at the centre and the spectrum as a strip at the top, from the first frame. On "one outer electron" an ink hand tag "outer electrons only" writes with a pen ring round chlorine's seven dots. On "The dot moves from sodium to chlorine" the pen arrow carries the amber dot with an amber hand tag "one electron across". On "chlorine now has eight" a blue hand tag "8: full" writes on chlorine. On "with its charge outside" the bracketed result is framed in green (52 px).
+
 ### 10. magnesium chloride
 > Magnesium chloride works the same way. Magnesium has two outer electrons, and each chlorine can take only one. So magnesium gives one electron to each of two chlorines. That's why the formula is M g C l two, and the diagram shows one magnesium ion, and two separate chloride **ions**.
 
 Visual: "Mg" with two amber dots between two "Cl" symbols (seven blue dots each). On the third sentence two pen arrows carry one amber dot to each chlorine. On "ions" the result writes "[Mg]²⁺  [Cl]⁻  [Cl]⁻", each chloride with eight dots, and v19's formula card "MgCl₂" slides in beside it, tag "1 Mg²⁺ : 2 Cl⁻, as in v19".
+
+Upgrade (Revision 3): The symbols are 72 px. On "each chlorine can take only one" a blue hand tag "room for one each" writes on the two chlorines. On "one electron to each of two chlorines" the two pen arrows carry an amber hand tag "one to each". On "two separate chloride ions" the result "[Mg]²⁺ [Cl]⁻ [Cl]⁻" is framed in green (52 px), and the formula card's tag reads "1 Mg²⁺ : 2 Cl⁻" with no video number. A chip "[Mg]²⁺ [Cl₂]²⁻" is struck in red with a red hand tag "two separate ions".
 
 ### 11. sharing: water
 > In a covalent Lewis diagram, the shared pair sits between the two atoms, and it's often drawn as a line. Pairs that aren't shared are called lone pairs. Water is a good example. Oxygen has six outer electrons, and each hydrogen has one. Oxygen shares one pair with each hydrogen, so it has two bonding pairs, and two lone **pairs**. That gives oxygen eight electrons around it. Each hydrogen has two, which is all hydrogen **needs**.
 
 Visual: board clears. On the first sentence a small Cl₂ Lewis diagram writes (shared pair between the symbols, amber), and the pair morphs into a line: "Cl–Cl", tag "bonding pair = a line". On the second sentence the six unshared dots on each Cl glow, tag "lone pairs". On the fourth sentence "O" with six blue dots and two "H" with one amber dot each. On the fifth sentence each H dot pairs with one O dot between the symbols; on "pairs" the two bonding pairs glow amber with tags "bonding pair" and the two remaining pairs on O glow blue, "lone pair". On the sixth sentence a count ring around O ticks to "8". On "needs" rings around each H tick to "2", tag "hydrogen: 2 is full".
 
+Upgrade (Revision 3): Board change to the covalent Lewis board: a glass of water (`m8-water-glass-v1.png`, about 300 px) at the left and the symbols (72 px) at the centre from the first frame. On "it's often drawn as a line" an amber hand tag "pair = line" writes on the Cl–Cl line. On "called lone pairs" a blue hand tag "lone pairs" writes with a pen bracket. On "two bonding pairs, and two lone pairs" the four pairs take amber and blue pen rings. On "eight electrons around it" the count "8" is 52 px; on "all hydrogen needs" the counts "2" are 52 px with an ink hand tag "2 is full for H". The finished water diagram is framed in green.
+
 ### 12. double bonds: carbon dioxide
 > Sometimes atoms share two pairs. In carbon dioxide, carbon has four outer electrons, and each oxygen has six. Carbon shares two pairs with each oxygen, making two double **bonds**. Now every atom has eight electrons around it.
 
 Visual: "C" with four amber dots between two "O" with six blue dots each. On the third sentence two amber and two blue dots gather between C and each O; on "bonds" each group of four morphs into a double line: "O=C=O", tag "double bond: two shared pairs". On the fourth sentence count rings around each atom tick to "8". The v20 card "CO₂: carbon dioxide" ticks at the top corner.
+
+Upgrade (Revision 3): The glass of water is replaced by the dish of dry ice (about 300 px wide, dark-ink tag "solid carbon dioxide"). On "share two pairs" an amber hand tag "two pairs" writes over one group of four dots. On "two double bonds" the result "O=C=O" is framed in green (52 px) with its tag at 38 px. On "every atom has eight electrons" the three counts "8" are 52 px with a pen tick each.
 
 ### 13. the connection
 > So here's the connection. Ionic and covalent bonding are two ends of the same tug of war. The bigger the electronegativity difference, the more one-sided the bond, from sharing equally, to sharing unequally, to handing the electron **over**. Small gap, share. Big gap, **transfer**.
 
 Visual: board clears to the spectrum bar enlarged, with three tug-of-war icons above it at 0, 1.0 and 2.3 (centred, shifted, handed over). On "over" a long amber arrow runs along the bar under them, tag "bigger difference: more one-sided". On "transfer" the handwritten line writes: "Small gap, share. Big gap, transfer." Hold about 2 seconds.
 
+Upgrade (Revision 3): The spectrum bar fills the board with the three tug-of-war pictures above it (about 420 px each) and the salt and dry ice as thumbnails at the two ends. The memory line sits in a framed memory card (hand lettering, 52 px): slate "Small gap, share." teal "Big gap, transfer." The long arrow is an amber pen arrow.
+
 ### 14. attempt 1 (countdown, 10 seconds)
 > Your turn. Using the electronegativity values given, classify the bonds potassium to chlorine, nitrogen to hydrogen, and bromine to bromine, as non-polar covalent, polar covalent or ionic. For any polar bond, show which atom is delta minus. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Electronegativity values: K 0.8, Cl 3.2, N 3.0, H 2.2, Br 3.0. Classify each bond as non-polar covalent, polar covalent or ionic: (a) K–Cl (b) N–H (c) Br–Br. For any polar covalent bond, show which atom carries δ−. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no spectrum bar).
+
+Upgrade (Revision 3): The card text is 38 px. From the first frame the card's right side carries the table outline (about 460 px wide) with the cells K, Cl, N, H and Br lit and labelled by symbol only. Nothing answer-bearing (no shading, no spectrum bar).
 
 ### 15. feedback 1 (brief)
 > Potassium and chlorine differ by two point four, so that bond is **ionic**. Nitrogen and hydrogen differ by zero point eight, so it's polar covalent, with delta minus on the nitrogen, because nitrogen pulls **harder**. Two bromines differ by zero, so that bond is non-polar covalent. Putting delta minus on the hydrogen is the **slip**. Delta minus always goes on the more electronegative atom.
 
 Visual: card shrinks to the top. Rows write: on "ionic" "(a) 3.2 − 0.8 = 2.4: ionic"; on "harder" "(b) 3.0 − 2.2 = 0.8: polar covalent, δ⁺H–Nδ⁻"; then "(c) 3.0 − 3.0 = 0: non-polar covalent". On "slip" a chip "δ⁻H–Nδ⁺" fades in and is crossed (caption "δ− on the stronger puller"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card: "K 0.8 | Cl 3.2 | N 3.0 | H 2.2 | Br 3.0". Each working row is 44 px and its bond type is framed in green as it lands, with "δ⁺H–Nδ⁻" at 52 px. On "slip" the crossed chip is struck in red with a red hand tag "δ− on the stronger puller".
+
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Draw Lewis dot diagrams for sodium oxide, showing the transfer of electrons, and for ammonia, N H three. Pause here to answer.
 
 Visual: `QuestionCard`: "Draw Lewis dot diagrams for: (a) sodium oxide, Na₂O, showing the transfer of electrons; (b) ammonia, NH₃. (4 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no Lewis diagrams on screen).
+
+Upgrade (Revision 3): The card text is 38 px. From the first frame the card's right side carries the painted ammonia bottle (`m5x-ammonia-bottle-v1.png`, about 280 px tall), untagged, as a picture of one of the two substances. Nothing answer-bearing (no dots, no brackets).
 
 ### 17. feedback 2 (brief)
 > For sodium oxide, oxygen has six outer electrons, and needs two more. Each sodium gives one. So there are two sodium ions in brackets, each plus one, and one oxide ion with eight dots, and a charge of minus **two**. For ammonia, nitrogen has five outer electrons. It shares one pair with each of three hydrogens, which leaves one lone **pair**. Drawing sodium and oxygen sharing a pair is the **trap**. A big electronegativity difference means transfer.
 
 Visual: card shrinks to the top. (a) "Na" (one amber dot), "O" (six blue dots), "Na" (one amber dot); two pen arrows carry the amber dots to O; on "two" the result "[Na]⁺  [O]²⁻  [Na]⁺" writes, O with eight dots. (b) "N" with five blue dots and three "H" with one amber dot each; three bonding pairs form; on "pair" the remaining pair on N glows, tag "1 lone pair". On "trap" a chip showing "Na:O:Na" with shared pairs fades in and is crossed (caption "Δχ = 2.5: transfer, not sharing"). Hold about 1 second.
 
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card: "(a) Na₂O, show the transfer | (b) NH₃". The symbols are 64 px. On "a charge of minus two" the result "[Na]⁺ [O]²⁻ [Na]⁺" is framed in green with a tick (52 px). On "one lone pair" the ammonia diagram is framed in green, its lone pair marked by a blue pen ring. On "trap" the crossed chip is struck in red with a red hand tag "gap 2.5: transfer".
+
 ### 18. handoff: not pairs, but a pattern
 > One last thing. In a real crystal of salt, each sodium ion doesn't pair up with just one chloride. It attracts every chloride ion around it, and each chloride attracts the sodiums around it, building a huge, regular **pattern**. So why is that crystal so hard, and why does it carry electricity only once it melts or dissolves? That's next **time**.
 
 Visual: board clears to the "[Na]⁺ [Cl]⁻" pair from scene 9 at the centre. On the second sentence more ions appear around it, alternating Na⁺ (small, red edge) and Cl⁻ (large, blue edge), with faint attraction lines from the first Na⁺ to its four nearest Cl⁻ neighbours in the layer. On "pattern" the layer grows to a 6 × 4 grid of alternating ions, and `c1-salt-jar-crystals-v1.png` appears small at the left, tag "salt: a crystal of ions". On the third sentence two grey tags write beside the grid: "hard?" and "conducts only when melted or dissolved?". On "time" the chip writes: "Next: why are ionic solids hard and brittle, and why do they conduct only when their ions can move?". Hold about 2 seconds. This is the final frame (v22 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 3): The ion pair is solid from the first frame of the scene and the salt jar is about 300 px when it arrives. Nothing is added, so the final frame is exactly as described under "Final frame". Builders draw the attraction lines and tags in solid dark ink and the heading at full strength (the final frame's "faint", "grey" and "dimmed" wording is kept only so the join text matches v22).
+
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Electronegativity difference (Δχ = larger − smaller) decides the bond. Bonding is a spectrum: below about 0.4 non-polar covalent (Cl₂, 0); about 0.4 to 1.7 polar covalent (H–Cl, 1.0); above about 1.7 ionic (NaCl, 2.3). The values are a guide (HF, 1.8, is molecular).
-2. Polar covalent: δ− on the more electronegative atom, δ+ on the other. Ionic bond: the attraction between oppositely charged ions after electron transfer.
-3. Lewis dot diagrams show outer electrons only. Ionic: [Na]⁺ [:Cl:]⁻, ions in brackets with charges. Covalent: bonding pairs (lines) and lone pairs; H₂O has 2 bonding pairs and 2 lone pairs on O; CO₂ is O=C=O.
+1. Electronegativity difference decides the bond: larger value − smaller value.
+2. About 0 to 0.4 non-polar; 0.4 to 1.7 polar covalent; above about 1.7 ionic.
+3. The values are a guide: HF (1.8) is still molecular.
+4. Polar bond: δ− on the more electronegative atom, δ+ on the other.
+5. Lewis diagrams show outer electrons: ions in brackets; shared pairs as lines.
 
-Memory aid (large, on the notes screen): *Small gap, share. Big gap, transfer.*
+Memory aid (framed card beside the notes, hand lettering, slate and teal as in scene 13, with the small spectrum bar in the card): *Small gap, share. Big gap, transfer.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Final frame
 
@@ -220,6 +269,8 @@ Model answer: (a) Each Na shown with one outer electron and O with six; one elec
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **6,330 characters**, 19 scenes. At 13.3 characters per second the speech is about 476 s; add about 3 s for the electron moves in scenes 5, 9 and 10, 2 s for the scene 13 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 87 s): **about 563 s**. Reserve trims: scene 12 (double bonds, about 220 characters; open decision 3), scene 8's fourth sentence (keep the blurred band), scene 1's fifth sentence (keep the slide).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,312 characters, 19 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 563 s to about 548 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v21` (route chem-y11-m1-v21; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v21`.
@@ -230,6 +281,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v21-learning-review.md`, `checks/c-y11-m1-v21-science-check.md`.
 
+Revision 3: key-notes hold is 45 s in all. Transitions 1 to 2 and 10 to 11 are now board changes (the map, the covalent Lewis board); 2 to 3, 5 to 6 and 8 to 9 are board changes as before.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched):
@@ -239,6 +292,8 @@ Have (scaled uniformly only, never stretched):
 Need: no new plates.
 
 Coded: the tug-of-war bond, Δχ readouts, the spectrum bar with markers and guide bands, the periodic outline and distance arrows, Lewis diagrams (dots, brackets, charges, lines, lone pairs, count rings), the ion layer (scene 18), molecule and formula cards, chips, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `y11c-dry-ice-v1.png` (scenes 1, 12, 13), `y11c-gas-jar-chlorine-v1.png` (scenes 3, 4), `m8-water-glass-v1.png` (scene 11), `m5x-ammonia-bottle-v1.png` (attempt 2 card); `c1-salt-jar-crystals-v1.png` is now also in scenes 1, 5, 9 and 13 at about 300 px. New plate requests: none. The tug-of-war bond, the spectrum bar and Lewis diagrams stay coded.
 
 ## Codex asset brief (Year 11 Chemistry M1 v21)
 
@@ -256,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v20's final frame and the final frame matches v22's opening.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the dial's readouts match "Numbers used" at every stop (0, 0.4, 1.0, 1.2, 1.8, 2.1, 2.3, 3.2) and the pair always sits nearer the atom with the higher value; the type readout past 1.7 says "ionic (by the guide)"; the two new struck chips ("Na and Cl share a pair"; "[Mg]²⁺ [Cl₂]²⁻") are fair slips; the join with v22 is unchanged; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +351,27 @@ Previous: How to name an inorganic compound from its formula. Next: Why ionic so
 - Brief 179 reviews (`checks/c-y11-m1-v21-learning-review.md`, `checks/c-y11-m1-v21-science-check.md`): 0 blockers, 0 should fix, 0 optional. No repair was made, so there is no Revision 2 and no repair error check; the reviewed Revision 1 narration and visuals are unchanged.
 - Headline count restated as the sum of scene strings: 6,312 characters over 19 scenes (the earlier 6,330 included the 18 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 3 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 2), so the brief 236 voicing stands.
+
+Findings: brief 179's learning review and science check were clean at Revision 1 and no later check is open; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 3)"; each scene gains an "Upgrade (Revision 3)" paragraph.
+- Anchor: a jar of salt and a dish of dry ice arrive under the two formula cards at about 5 s; chlorine gas, salt, water and dry ice stand beside their bonds and Lewis diagrams.
+- Simulation: the difference dial. The shared pair's position, the Δχ readout and the bond type are computed from the two values; scene 6 sweeps the whole range while a marker travels along the spectrum.
+- Cuts: scene 2 (the map) and scene 11 (covalent Lewis board) are new stages. Before, the rope ran about 152 s and one Lewis board about 105 s.
+- Hand tags (two or three) and a pen mark in scenes 1 to 6 and 8 to 12; the memory line is a framed card in scene 13.
+- Worked bonds and diagrams framed in green (scenes 3 to 5, 8 to 12, 15, 17); two new crossed slips in scenes 5 and 10; faint, soft and grey items drawn solid; tags with video numbers reworded.
+- Question cards: attempt 1 gains the table outline with five cells lit; attempt 2 gains the ammonia bottle; feedback scenes gain navy givens strips.
+- Key notes: three long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the worked Lewis examples (kept in scenes 9 to 12).
+
+New plate requests: none.
+
+Joins: the opening is v20's final frame, unchanged (the two substances arrive after it). The final frame is unchanged word for word, so v22's opening holds.
+
+Counts: 6,312 characters, unchanged; about 563 s to about 548 s.
+
+Calls for root: (1) the two new crossed slips are new on-screen wording; (2) dry ice stands for carbon dioxide beside its card and its Lewis diagram; (3) the dial labels values above about 1.7 "ionic (by the guide)".

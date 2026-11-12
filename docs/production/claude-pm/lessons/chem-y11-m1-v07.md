@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V07: Percentage composition from a formula. Why does a chemical formula fix the percentage by mass of each element? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: scene 8 hydrate working staged one reasoning stage at a time. Narration 6,108 characters (joined parser count), about 547 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,093 characters (sum of scene strings; 6,108 with joining spaces; Revision 1 was 6,108 by the joined parser count), 16 scenes, about 547 s (9.1 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -56,6 +56,18 @@ Entry knowledge: Stage 5 formulae and proportions; v01 (compounds); v06 (percent
 Stops after: fixed ratio, relative atomic and formula mass, element and water percentages, counting every atom, hydrate mass loss. No moles, empirical formulae or nuclide notation.
 Handoff: v08, nuclide notation.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted jar of salt (`c1-salt-jar-crystals-v1.png`, about 420 px) is on screen from the first frame, because the video opens on v06's final frame. It is parked as "your turn later", returns on the attempt 1 card and is answered in feedback 1. The second real object is the crucible of blue copper sulfate crystals (`y11c-cuso4-crucible-blue-v1.png`), whose mass loss shows the calculated percentage.
+- **Simulation: the live mass bar.** The mass bar is computed, not drawn by hand: each tile's width is its relative atomic mass, and three readouts (52 px) read the same data as tiles land: "share", "Mr" and "%". In scene 5 a selector steps from carbon to oxygen and the "%" readout moves 27.3% → 72.7%. In scene 9 the heating runs on one clock: the balance readout falls 2.50 g → 1.60 g while the water tiles lift off the bar and a "% of starting mass" readout falls 100% → 63.9%.
+- **Colour key (fixed for the whole video).** The selected element's tiles and every percentage amber; other tiles in their element colours with an ink outline; the water group pale blue; givens navy; a framed answer green with a green tick; a crossed mistake red with a red hand tag. Hand tags take the colour of the idea they mark. Earlier rows stay solid at a smaller size instead of dimming, and every tag the Visual lines call "grey" or "ghost" is dark ink at full strength.
+- **Type sizes (1080p).** Heading 60 px; the formula 72 px; the current working row, readouts and framed answers 52 px, never under 44; question-card sentences 38 px; givens and tile labels 34 px; supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) the salt jar, scene 1 (about 37 s); (B) the molecule field, then the carton, scene 2 (about 31 s); (C) the comparison balance, scene 3 (about 36 s); (D) count bar and mass bar for CO₂, scenes 4 to 6 (about 85 s, with the calculation board arriving at scene 5); (E) ammonium nitrate, scene 7 (about 50 s); (F) the blue crystals and the hydrate working, scene 8 (about 58 s); (G) heating stage, scene 9 (about 33 s): the crucible large at the centre over the balance readout; (H) the three bars and the memory card, scene 10 (about 17 s); question and feedback cards; the handoff; the notes board. Scene 9 is a new stage so the crucible board does not run about 91 s unchanged.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No coded pictures of real things.** The coded carton of snack packs (scene 2) becomes a painted plate (requested below, with a plain-tile fallback); on-screen tags never show a video number.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v06): percentages and the selected element's tiles amber; other atom tiles in element colours with an ink outline (carbon dark grey, oxygen red, nitrogen blue, hydrogen white, copper copper-brown, sulfur yellow, magnesium pale green, sodium violet, chlorine green), water groups as a pale blue tint around their tiles; givens navy; earlier rows dimmed; crossed chips red strike. Screen notation: subscripts (CO₂, NH₄NO₃), the hydrate dot (CuSO₄·5H₂O), Ar and Mr written "relative atomic mass" and "relative formula mass" in full on first use, then "Ar" and "Mr" in rows.
@@ -65,86 +77,117 @@ Cue words in **bold** trigger the visual change. Colour key (continues v06): per
 
 Visual: opens on v06's final frame (Decisions). On "them" the crossed filter icon pulses and the tag "compound: fixed ratio" gains "1 Na : 1 Cl". On "element" the formula "NaCl" splits into two tiles (sodium violet, chlorine green, widths not yet meaningful, equal and dashed) with "? %" under each; the heading writes on: "Percentage composition from a formula". On "yourself" the salt jar and its tiles shrink to a small parked card at the top right labelled "your turn later", and the formula "CO₂" writes large at the centre.
 
+Upgrade (Revision 4): The salt jar is about 420 px and solid from the first frame; the funnel beside "NaCl" is the small painted filter plate, as in v06's final frame. On "one sodium for every chlorine" a navy hand tag "1 : 1, always" writes beside the tag with a pen underline. On "you don't need to split it" an amber hand tag "read it off the formula" writes with a pen arrow to "NaCl". The two "? %" marks are 52 px in amber. The parked card label "your turn later" is dark ink at 30 px.
+
 ### 2. why the formula is enough
 > Here's why the formula is enough. Every carbon dioxide molecule is the same: one carbon atom and two oxygen **atoms**. So whatever fraction of one molecule's mass is oxygen, a billion molecules have exactly the same **fraction**. One molecule is a fair sample of the whole substance. It's like a carton of identical snack packs. Find what fraction of one pack is nuts, and you know the fraction for the whole **carton**.
 
 Visual: the formula "CO₂" expands into a coded particle model: one dark grey carbon sphere between two red oxygen spheres, with `PenArrow` labels "1 C" and "2 O" on "atoms". On "fraction" the molecule copies outward into a field of identical molecules filling the stage (fast multiply, about 1 s), and the small `c1-sparkling-bottle-sealed-v1.png` plate appears at the corner with a grey tag "the gas in a soft drink: carbon dioxide". On "carton" the field gives way to a simple coded carton outline holding a grid of identical snack packs (plain rounded rectangles, each with the same two coloured fills), one pack magnified with a tag "same fraction in every pack". The chip "one formula = a fair sample" writes beside it.
+
+Upgrade (Revision 4): The formula "CO₂" is 72 px and the bottle plate (about 300 px tall) is on the board from the first frame of the scene, tagged in dark ink. On "one carbon atom and two oxygen atoms" the two labels are pen arrows. On "exactly the same fraction" an amber hand tag "same in every molecule" writes over the field with a pen ring round one molecule. On "a carton of identical snack packs" the painted carton (`y11c-snack-pack-carton-v1.png`, new, about 520 px wide) replaces the coded carton, with one pack ringed by a pen ring and an amber hand tag "one pack tells you the carton". The chip "one formula = a fair sample" is 44 px.
 
 ### 3. relative atomic mass, in one sentence
 > To find those fractions, we need to know how heavy each kind of atom is. Atoms are far too light to weigh one at a time, so chemists compare them on one scale, called relative atomic **mass**. On that scale, a carbon atom is twelve point zero and an oxygen atom is sixteen point **zero**. They're just comparison numbers, with no units, and you'll find them on the periodic table or in the question. A later video explains why many of them aren't whole **numbers**.
 
 Visual: board returns to the CO₂ molecule at the left. On "mass" a coded beam balance outline draws (abstract, a line and two pans) with one carbon sphere on the left pan; the heading tag "relative atomic mass (Ar): atoms compared on one scale". On "zero" (second) an oxygen sphere sits on the right pan and the beam tips down on that side; readouts "C 12.0" and "O 16.0" write under the pans. On the fourth sentence a small coded periodic table cell for carbon draws (symbol and "12.0" only), with the tag "no units". On "numbers" a small grey chip "why decimals? video 9" writes and fades to the corner.
 
+Upgrade (Revision 4): The CO₂ molecule (about 300 px wide) and the abstract beam balance are on the board from the first frame. The readouts "C 12.0" and "O 16.0" are 52 px. On "compare them on one scale" an ink hand tag "compared, not weighed" writes above the beam. On "They're just comparison numbers, with no units" an ink hand tag "no units" writes with a pen underline under both readouts. On "numbers" the chip reads "why decimals? a later video" in dark ink at 30 px, with no video number.
+
 ### 4. prediction (countdown, 3 seconds)
 > Quick prediction. Two of the three atoms in carbon dioxide are oxygen. So is carbon dioxide two thirds oxygen by mass, about sixty-seven percent? Or more, or less? Have a **think**.
 
 Visual: the CO₂ molecule at the top; below it the count bar: three equal tiles (one grey, two red), the two red tiles bracketed "2 of 3 atoms = 66.7%". The question writes as a chip: "oxygen by mass: 66.7%, more, or less?". On "think" the 3 s `Countdown` ring runs. No mass bar yet.
+
+Upgrade (Revision 4): The molecule and the count bar are on the board from the first frame; the bracket "2 of 3 atoms = 66.7%" and the question chip are 44 px. No hand tags (thinking time).
 
 ### 5. carbon dioxide, worked
 > It's more, and here's why. Add up the whole molecule: one carbon at twelve point zero, plus two oxygens at sixteen point zero each. That's forty-four point zero, the relative formula **mass**. The oxygen's share is two times sixteen point zero, which is thirty-two point **zero**. So oxygen is thirty-two point zero over forty-four point zero, times a hundred, which is seventy-two point seven **percent**. That's more than two thirds, because each oxygen atom is heavier than the carbon **atom**. Counting atoms isn't the same as weighing **them**.
 
 Visual: calculation layout. Task strip: "Find the percentage by mass of oxygen in CO₂". Givens (navy): "C 12.0; O 16.0". On "mass" (first) row "Mr(CO₂) = 12.0 + 2 × 16.0 = 44.0" writes, and directly under the count bar the mass bar draws: one grey tile 12.0 wide and two red tiles 16.0 wide each, filling the 640 px bar, labelled "44.0". On "zero" row "oxygen share = 2 × 16.0 = 32.0" and the two red tiles turn amber. On "percent" row "% O = 32.0 ÷ 44.0 × 100 = 72.7%" (bright) and the amber section is labelled "72.7%"; a grey chip "carbon: 27.3% (check: adds to 100%)". On "atom" a `PenArrow` points at one red tile, longer than the grey tile, tag "O is heavier than C". On "them" the count bar's "66.7%" bracket and the mass bar's "72.7%" bracket glow together, unequal in length, tagged "count ≠ mass".
 
+Upgrade (Revision 4): The task strip, the navy givens card ("C 12.0 | O 16.0") and the empty 640 px mass bar are on the board from the first frame. On "It's more" the answer "more" is framed in green with a tick (44 px). The three readouts "Mr 44.0", "share 32.0" and "% 72.7" are live (see "Simulation"), and the selector steps carbon 27.3% then oxygen 72.7% as the tiles turn amber. On "seventy-two point seven percent" the result "72.7%" is framed in green with a tick (52 px). The chip "carbon: 27.3% (check: adds to 100%)" is dark ink at 34 px. On "each oxygen atom is heavier" an amber hand tag "heavier atom, bigger share" writes with the pen arrow. On "Counting atoms isn't the same as weighing them" the bracket "2 of 3 atoms = 66.7%" is struck in red with a red hand tag "count ≠ mass".
+
 ### 6. the method
 > So here's the method. Count how many atoms of the element are in the formula. Multiply by its relative atomic mass, to get that element's share of the **mass**. Add up every atom in the formula, to get the relative formula **mass**. Then divide the share by the total, and multiply by a **hundred**. It's part over whole, just like last time, except now the whole is the formula **itself**.
 
 Visual: the CO₂ rows dim; the equation strip writes in four labelled stages as spoken: "1 count", then on "mass" (first) "2 share = count × Ar", on "mass" (second) "3 Mr = sum of all Ar", on "hundred" "4 % = share ÷ Mr × 100". On "itself" the full equation strip forms: "% of element = (number of atoms × Ar) ÷ Mr × 100", and a small ghost of v06's accounting bar slides in beside the mass bar with the tag "same idea: part over whole".
+
+Upgrade (Revision 4): The CO₂ rows stay solid at 34 px (not dimmed). The four stages write at 44 px with the numerals hand-numbered in amber. On "It's part over whole" the full equation strip (52 px) takes an amber pen bracket over "(number of atoms × Ar)" tagged "part" and a navy pen bracket under "Mr" tagged "whole". The copy of v06's accounting bar is solid, about 300 px wide, tagged in dark ink.
 
 ### 7. ammonium nitrate: count every nitrogen
 > Now a formula with a trap. Ammonium nitrate is N H four N O three. It's made of two parts, ammonium and nitrate, and each part contains a nitrogen **atom**. So there are two nitrogens, not one. The relative formula mass is fourteen point zero, plus four times one point zero, plus fourteen point zero, plus three times sixteen point zero, which is eighty point **zero**. Nitrogen's share is two times fourteen point zero, twenty-eight point **zero**. So nitrogen is twenty-eight point zero over eighty point zero, which is thirty-five point zero **percent**. Count only one nitrogen, and you'd get half that, seventeen point five percent, which is a classic **slip**.
 
 Visual: board resets; task strip "Find the percentage by mass of nitrogen in NH₄NO₃"; givens "N 14.0; H 1.0; O 16.0". The formula "NH₄NO₃" writes large. On "atom" it splits into two bracketed groups "NH₄⁺" and "NO₃⁻" with grey labels "ammonium" and "nitrate", and a scribble circle rings the N in each group. On "zero" (first) row "Mr = 14.0 + 4 × 1.0 + 14.0 + 3 × 16.0 = 80.0" and the mass bar builds group by group (N, 4 H as one narrow labelled block, N, 3 O). On "zero" (second) row "nitrogen share = 2 × 14.0 = 28.0" and both blue N tiles turn amber, one in each group. On "percent" row "% N = 28.0 ÷ 80.0 × 100 = 35.0%" (bright). On "slip" a chip "one N: 14.0 ÷ 80.0 × 100 = 17.5%" fades in and is crossed (caption "count every N").
 
+Upgrade (Revision 4): The task strip, the navy givens card ("N 14.0 | H 1.0 | O 16.0") and the formula (72 px) are on the board from the first frame. On "each part contains a nitrogen atom" the two pen rings land with an amber hand tag "two N". The readouts "Mr", "share" and "%" are live as the bar builds. On "thirty-five point zero percent" the result "35.0%" is framed in green with a tick (52 px). On "slip" the crossed chip is struck in red with a red hand tag "count every N".
+
 ### 8. hydrates: water inside the crystal
 > Some crystals hold water inside them. These blue copper sulfate crystals have water molecules built into the crystal itself, called water of **crystallisation**. Their formula is written C u S O four, dot, five H two O. The dot means that for every copper sulfate unit, there are five water molecules in the **crystal**. Treat the five waters as one group. Each water is two times one point zero plus sixteen point zero, eighteen point zero, so the five waters are ninety point **zero**. The whole formula is sixty-three point five, plus thirty-two point one, plus sixty-four point zero, plus ninety point zero, which is two hundred and forty-nine point **six**. So water is ninety point zero over two hundred and forty-nine point six, thirty-six point one **percent**.
 
 Visual: board resets; the new plate `y11c-cuso4-crucible-blue-v1.png` (blue crystals in a crucible on a pipeclay triangle, burner unlit) at the left. On "crystallisation" a magnifier circle on the crystals shows a coded fragment of lattice: copper-brown and yellow-red sulfate groups with small blue-tinted water molecules tucked between them, tag "water of crystallisation". Task strip "Find the percentage by mass of water in CuSO₄·5H₂O"; givens "Cu 63.5; S 32.1; O 16.0; H 1.0". The formula writes large; on "crystal" the dot glows and "5H₂O" lifts into five small water tiles with a pale blue tint around the group, tag "for every CuSO₄: five H₂O in the crystal". Staged working (Revision 2; one reasoning stage bright at a time, never all four rows bright together). On "Treat the five waters as one group" only the formula's "5H₂O" group stays bright (the rest of the formula dims). On "zero" rows "H₂O = 2 × 1.0 + 16.0 = 18.0" and "5 H₂O = 5 × 18.0 = 90.0" write beside the bright "5H₂O". On "The whole formula" that working clears except a small kept result chip "5 H₂O = 90.0"; on "six" row "Mr = 63.5 + 32.1 + 4 × 16.0 + 90.0 = 249.6" (the "4 × 16.0" written "64.0" beneath it) and the mass bar builds: Cu, S, 4 O, then the tinted water group. On "So water is" the formula-mass expansion dims to a short kept result "Mr = 249.6"; on "percent" the water group turns amber; row "% H₂O = 90.0 ÷ 249.6 × 100 = 36.1%" (bright), with only the "90.0" and "249.6" results kept beside it.
+
+Upgrade (Revision 4): The crucible of blue crystals (about 460 px tall) is solid at the left from the first frame, with the task strip and the navy givens card ("Cu 63.5 | S 32.1 | O 16.0 | H 1.0"). On "water of crystallisation" a pale blue hand tag (dark-ink outline) "water built into the crystal" writes on the magnifier. On "five water molecules in the crystal" an ink hand tag "the dot means: plus 5 waters" writes with a pen ring round the dot. On "Treat the five waters as one group" a chip "5H₂O read as one water" fades in and is struck in red, with a red hand tag "five waters, not one". The staged working stays as written, with kept results solid at 34 px. On "thirty-six point one percent" the result "36.1%" is framed in green with a tick (52 px).
 
 ### 9. you can see that percentage
 > And that number is something you can measure. Heat the blue crystals gently, and the water is driven off as steam. The crystals crumble to a white **powder**. If all the water leaves, the mass falls by thirty-six point one percent. So two point five zero grams of crystals would lose about zero point nine zero grams, leaving about one point six zero **grams**. Last time, lost mass was an error. Here, it's the **measurement**.
 
 Visual: the burner under the crucible lights (plate cross-fades to the lit variant, `y11c-cuso4-crucible-blue-lit-v1.png`) with coded steam wisps. On "powder" the crucible cross-fades to `m5-g02b-open-crucible-v1.png` (white powder, same framing; Codex matches the new plates to it), tag "anhydrous: without water". On the fourth sentence the mass bar's tinted water group lifts off and drifts away as steam, leaving the 63.9% white segment. On "grams" a coded readout "2.50 g" falls to "1.60 g" with rows "water lost: 36.1% of 2.50 g ≈ 0.90 g" and "left ≈ 1.60 g". On "measurement" v06's rose hatched gap appears small beside it with a tag "v06: loss = error"; the water segment gets "here: loss = the measurement".
 
+Upgrade (Revision 4): Board change to the heating stage: the crucible (about 560 px tall) at the centre, the balance readout (52 px) under it and the mass bar at the right, solid from the first frame. The run is live (see "Simulation"). On "the water is driven off as steam" a pale blue hand tag (dark-ink outline) "water leaving" writes with a pen arrow up the steam. On "the mass falls by thirty-six point one percent" the readout "% of starting mass" reads 63.9% and an amber hand tag "36.1% gone" writes with a pen bracket over the missing part of the bar. On "leaving about one point six zero grams" the result "1.60 g" is framed in green. On "Here, it's the measurement" the two tags read "last video: loss = error" (rose) and "here: loss = the measurement" (amber), with no video number.
+
 ### 10. one line to remember
 > Here's the line to remember. Count every atom, then it's part over **whole**. Count every atom of the element, including the ones hiding in a second group or in a hydrate's waters, then divide its share by the whole formula **mass**.
 
 Visual: the three bars (CO₂, NH₄NO₃, CuSO₄·5H₂O) stack small, their amber sections glowing in turn. On "whole" the handwritten line writes large: "Count every atom, then it's part over whole." On "mass" scribble circles ring the second N in NH₄NO₃ and the "5" in 5H₂O. Hold about 2 seconds.
+
+Upgrade (Revision 4): The line sits in a framed memory card (hand lettering, 52 px): amber "Count every atom," navy "then it's part over whole." The two rings on the second N and on the "5" are pen rings.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn, and it's the salt from the start. Using sodium, twenty-three point zero, and chlorine, thirty-five point five, calculate the percentage by mass of chlorine in sodium chloride. Pause here to answer.
 
 Visual: the parked salt card returns small at the corner. `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Using relative atomic masses Na = 23.0 and Cl = 35.5, calculate the percentage by mass of chlorine in sodium chloride, NaCl." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (the salt tiles stay equal and dashed).
 
+Upgrade (Revision 4): The card text is 38 px, and the salt jar (about 280 px) sits on the card's right side from the first frame as its picture. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > The relative formula mass is twenty-three point zero plus thirty-five point five, which is fifty-eight point **five**. Chlorine is thirty-five point five over fifty-eight point five, times a hundred, sixty point seven **percent**. One of the two atoms is chlorine, but fifty percent is the classic slip. A chlorine atom is heavier than a sodium atom, so it carries more of the **mass**.
 
 Visual: card shrinks to the top. On "five" row "Mr(NaCl) = 23.0 + 35.5 = 58.5", and the parked salt tiles become a true mass bar (violet 23.0, green 35.5). On "percent" row "% Cl = 35.5 ÷ 58.5 × 100 = 60.7%"; the green tile turns amber, labelled "60.7%". On "mass" a chip "1 of 2 atoms = 50%" fades in and is crossed (caption "count ≠ mass"). The v06 chip "Na: ? %  Cl: ? %" from the opening ticks: "Cl 60.7%, Na 39.3%". Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "Na 23.0 | Cl 35.5 | NaCl". The rows are 52 px; on "sixty point seven percent" the result "60.7%" is framed in green with a tick. On "fifty percent is the classic slip" the chip "1 of 2 atoms = 50%" is struck in red with a red hand tag "count ≠ mass". The ticked chip "Cl 60.7%, Na 39.3%" is 44 px beside the jar.
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Using magnesium twenty-four point three, sulfur thirty-two point one, oxygen sixteen point zero and hydrogen one point zero, calculate the percentage by mass of water in magnesium sulfate heptahydrate, M g S O four, dot, seven H two O. Pause here to answer.
 
 Visual: `QuestionCard`: "Magnesium sulfate heptahydrate has the formula MgSO₄·7H₂O. Using Mg = 24.3, S = 32.1, O = 16.0 and H = 1.0, calculate the percentage by mass of water in this hydrate." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries a watch glass of white crystals (`y11c-watch-glass-salt-v1.png`, about 280 px wide), untagged, as the picture of a white crystalline hydrate. Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > The magnesium sulfate part adds up to one hundred and twenty point **four**. Seven waters at eighteen point zero each make one hundred and twenty-six point **zero**. So the total is two hundred and forty-six point four, and water is one hundred and twenty-six point zero over that, fifty-one point one **percent**. Counting only one water gives thirteen point zero percent, and that's the slip to **avoid**.
 
 Visual: card shrinks to the top; "·7H₂O" in the card is underlined on the second sentence. On "four" row "MgSO₄ = 24.3 + 32.1 + 4 × 16.0 = 120.4". On "zero" row "7 H₂O = 7 × 18.0 = 126.0". On "percent" row "Mr = 120.4 + 126.0 = 246.4; % H₂O = 126.0 ÷ 246.4 × 100 = 51.1%" with a mass bar whose tinted water group, now amber, is just over half. On "avoid" a chip "one H₂O: 18.0 ÷ 138.4 × 100 = 13.0%" fades in and is crossed (caption "count all seven waters"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "Mg 24.3 | S 32.1 | O 16.0 | H 1.0 | MgSO₄·7H₂O". The rows are 52 px; "120.4" and "126.0" are framed in amber as partial results, and on "fifty-one point one percent" the result "51.1%" is framed in green with a tick. On "avoid" the crossed chip is struck in red with a red hand tag "count all seven waters".
 
 ### 15. handoff: what's inside an atom?
 > We've been using relative atomic masses as numbers handed to us. But each one comes from what's inside the atom. Chemists can write chlorine like this, with a thirty-five above and a seventeen below the **symbol**. Next time, we'll see how those two numbers tell us exactly which particles are inside an atom, or an **ion**.
 
 Visual: board clears to the NaCl mass bar from scene 12. The green chlorine tile lifts out and grows into a large "Cl". On "symbol" a superscript "35" writes at its top left and a subscript "17" at its bottom left (nuclide notation ³⁵₁₇Cl), each with a small "?" beside it. On "ion" a chip writes "How does nuclide notation tell us the particles in an atom or ion?". Hold about 2 seconds. This is the final frame (v08 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The NaCl bar is on the board from the first frame of the scene. On "each one comes from what's inside the atom" an ink hand tag "what's inside?" writes above the lifted "Cl" and clears before the last chip writes, so the final frame is exactly as described. The "35" and "17" are 52 px with their "?" marks in amber.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. A compound has a fixed ratio of atoms, so its formula gives the same percentage composition for any sample.
-2. % of an element = (number of atoms of the element × Ar) ÷ Mr × 100, where Mr (relative formula mass) is the sum of all the Ar values in the formula. Ar and Mr have no units.
-3. Count every atom: NH₄NO₃ has 2 N (35.0% N). The fraction of atoms is not the fraction of mass: CO₂ is 72.7% O by mass.
-4. Hydrates: the dot means water of crystallisation. CuSO₄·5H₂O is 36.1% water; heating drives the water off, so if all of it leaves, the mass falls by 36.1%.
+1. A compound's atom ratio is fixed, so its formula gives its percentages.
+2. % of element = (number of atoms × Ar) ÷ Mr × 100.
+3. Mr = the sum of every Ar in the formula. Ar and Mr have no units.
+4. Count every atom: NH₄NO₃ has 2 N. Atom share is not mass share.
+5. Hydrates: the dot means water in the crystal. CuSO₄·5H₂O is 36.1% water.
 
-Memory aid (large, on the notes screen): *Count every atom, then it's part over whole.*
+Memory aid (framed card beside the notes, hand lettering, amber and navy as in scene 10): *Count every atom, then it's part over whole.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -201,6 +244,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **6,108 characters**, 16 scenes (per-scene counts in Review notes). At 13.3 characters per second the speech is about 459 s; add about 2 s for the molecule field (scene 2), 2 s for the steam and readout (scene 9), 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 88 s): **about 547 s** (9.1 minutes), inside the band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's carton analogy (two sentences; keep the molecule field), scene 3's last sentence (the chip stays), scene 8's spoken formula reading ("Their formula is written ...").
 
+Revision 4 (12 Nov 2026): narration unchanged (6,093 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 547 s to about 532 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v07` (route chem-y11-m1-v07; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v07`.
@@ -210,6 +255,8 @@ In order (16 scene headings, all `### N.`): hook, fixed-ratio, relative-atomic-m
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except prediction, attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Transitions: 1 to 2 camera continue (CO₂ expands into the molecule); 2 to 3 camera continue; 3 to 4 camera continue (the molecule stays); 4 to 5 board reset to the calculation layout (the count bar carries over); 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue (the crucible lights); 9 to 10 board clear; attempts and feedback card shrink to the top; 14 to 15 board clear (the NaCl bar carries over); 15 to 16 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v07-learning-review.md`, `checks/c-y11-m1-v07-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 8 to 9 is a board change to the heating stage.
 
 ## Assets
 
@@ -224,6 +271,8 @@ Need (new plates, Codex):
 
 Coded: the CO₂ particle model and molecule field, carton and packs, abstract beam balance, periodic table cell, formula tiles, count and mass bars, lattice magnifier, steam, readouts, calculation rows, chips, nuclide notation, attempt cards, countdowns, key notes board.
 
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-cuso4-crucible-blue-v1.png`, `y11c-cuso4-crucible-blue-lit-v1.png`. Existing plates newly used on question cards: the salt jar (attempt 1), `y11c-watch-glass-salt-v1.png` (attempt 2). New plate request: `y11c-snack-pack-carton-v1.png` (scene 2). Fallback until it arrives: a plain grid of identical two-colour rounded tiles with no carton drawn.
+
 ## Codex asset brief (Year 11 Chemistry M1 v07)
 
 Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/chem-y11-m1-v07.md`. Paint after the learning review, science check and Codex error check pass and the owner gives the go-ahead. Save to `public/assets/chemistry/`. Every plate: transparent PNG with a true alpha channel and **clean edges with no coloured fringe or halo**, ink and watercolour in the house style, no text, labels, numbers, people, hands, faces, backdrop, glow or ground shadow. Never stretch; keep the native aspect ratio.
@@ -232,6 +281,8 @@ Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the d
 2. `y11c-cuso4-crucible-blue-lit-v1.png` (same canvas): identical to plate 1 with the burner's flame copied exactly from `m5-g02b-open-crucible-v1.png` (a small blue flame), and the crystals' colour unchanged.
 
 All three (`m5-g02b-open-crucible-v1.png`, plate 1, plate 2) must overlay exactly so they cross-fade. Report the overlay check on the paper and dark board backgrounds at about 300 px wide. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/chem-y11-m1-v07-provenance.json`.
+
+Revision 4 (12 Nov 2026), one new plate, same standing rules as above. `y11c-snack-pack-carton-v1.png` (2000 × 1400 px, landscape): an open cardboard carton seen from a high three-quarter view, holding two neat rows of identical small clear snack packs, each pack showing the same two kinds of contents (for example nuts and dried fruit) in the same proportion. Transparent PNG with a true alpha channel and clean edges; ink and watercolour in the house style; no text, labels, brand names, logos, people or hands; no glow or ground shadow. It must read at 520 px wide on the paper background with single packs still distinct. Sidecar anchors: the centre of one front-row pack (for the ring).
 
 ## Codex error-check brief
 
@@ -246,6 +297,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("crystallisation", "sulfate").
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals v06's final frame and the final frame matches v08's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the new on-screen items agree with "Numbers used" (carbon 27.3%; "% of starting mass" 100% → 63.9%; "36.1% gone"); the struck chip "5H₂O read as one water" carries no number; the attempt card pictures give nothing away; every plate named exists except the one new request.
 
 ## YouTube metadata (draft)
 
@@ -289,3 +342,28 @@ Narration: 6,108 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v07-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,093 characters over 16 scenes (the earlier 6,108 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v07-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the salt jar from v06's final frame, parked and paid off in feedback 1; the blue crystals are the second real object.
+- Simulation: the mass bar is computed, with live "share", "Mr" and "%" readouts; the heating in scene 9 runs live (2.50 g to 1.60 g, 100% to 63.9%).
+- Cut: scene 9 is a new heating stage. Stage list recorded.
+- Hand tags (two or three) and a pen mark in scenes 1 to 3 and 5 to 9; the memory line is a framed card in scene 10.
+- Worked examples: givens cards; 72.7%, 35.0% and 36.1% framed in green; crossed slips in red in scenes 5 (the 66.7% bracket), 7 and 8 (new chip "5H₂O read as one water").
+- Scene 2: the coded carton becomes a painted plate (new request, with a fallback). Scene 3 and scene 9 tags no longer show a video number.
+- Question cards: attempt 1 carries the salt jar; attempt 2 a watch glass of white crystals; feedback scenes gain navy givens strips and green frames.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the 72.7% example and the heating consequence (kept in scenes 5 and 9).
+
+New plate requests: `y11c-snack-pack-carton-v1.png` (scene 2; fallback stated).
+
+Joins: the opening is v06's final frame (its funnel drawn as the small painted plate, as v06 Revision 3 says). The final frame (scene 15) is unchanged, so v08's opening holds.
+
+Counts: 6,093 characters, unchanged; about 547 s to about 532 s.
+
+Calls for root: (1) the new carton plate, or keep the plain-tile fallback; (2) the struck chip in scene 8 is new on-screen wording; (3) a watch glass of white crystals stands for magnesium sulfate heptahydrate on the attempt 2 card.

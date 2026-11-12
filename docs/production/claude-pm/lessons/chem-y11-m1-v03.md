@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V03: Filtration and crystallisation. How can we recover an insoluble solid and a dissolved solid from one mixture? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: "filter paper" replaces "no filter" in scenes 11 and 15. Narration 5,886 characters (joined parser count), about 530.2 s. Previously Revision 1 (5 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,870 characters (sum of scene strings; 5,886 with joining spaces; Revision 1 was 5,897 by the joined parser count), 17 scenes, about 530.2 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,19 @@ Entry knowledge: v01, v02; Stage 5 dissolving, evaporation and safe practical wo
 Stops after: filtration by particle size; residue and filtrate; washing and drying; solubility and saturation; crystallisation by evaporating then cooling, with salt's flat solubility as the surprise; why crystals are purer; the order; safety. The water is lost as steam.
 Handoff: v04, catching the vapour: simple and fractional distillation.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted beaker of sand and salty water (`y11c-sand-saltwater-beaker-v1.png`, about 560 px wide) is on screen from the first frame, because the video opens on v02's final frame. The two goal chips stay as the checklist and are ticked when each real product appears on its watch glass.
+- **Simulation 1: the filter as a live membrane (scene 2).** The pore cross-section is a run of the particle box engine (`src/explainer/sims/particle-box.ts`) with a `membrane` across the box that passes the small species (water molecules, Na⁺, Cl⁻) and stops the large one (sand grains). Live readouts at 44 px read the run: "through the paper: water", "ions", "sand grains 0". Labelled "model, not to scale".
+- **Simulation 2: the cooling marker (scene 9).** A marker slides down each solubility curve from 80 °C to 20 °C with live readouts (52 px) read from the curve: for potassium nitrate "still dissolved 169 → 31 g" and "crystals out 0 → 138 g"; for salt "38 → 36 g" and "0 → 2 g" (per 100 g of water).
+- **Colour key (fixed for the whole video).** Sand and anything undissolved golden-brown; dissolved salt and its ions violet and green as in v01, with "dissolved" words in violet; water navy; the potassium nitrate curve amber and the salt curve navy; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy; checklist chips amber until ticked, then green. Hand tags take the colour of the idea they mark. Every tag or label the Visual lines call "grey", "faint" or "ghost" is drawn solid in dark ink.
+- **Type sizes (1080p).** Heading 60 px; the current term, rule line, readouts and framed answers 52 px, never under 44; question-card sentences 38 px; callouts, graph labels and supporting lines 30 px or more; hand tags 42 px (34 px inside a view or graph); key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) the beaker, scene 1 (about 28 s); (B) the pore view, scene 2 (about 36 s); (C) the filter rig, scenes 3 to 5 (about 61 s); (D) washing, the watch glass and the oven, scene 6 (about 31 s); (E) the filtrate flask and the terms, scene 7 (about 27 s); (F) the evaporating basin, scene 8 (about 35 s); (G) the solubility graph, scene 9 (about 41 s); (H) the crystal face, scene 10 (about 35 s); (I) the order strip and the sieve, scene 11 (about 30 s); question and feedback cards; the handoff basin; the notes board. No set-up runs past about 61 s, so no new cut was needed.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No ghosts, no coded icons of real things.** The "ghost" previews in scenes 6, 10 and 11 become solid inset cards with a dashed border and a dark-ink title; the coded "mini cone icon" in scene 8 becomes a small copy of the painted filter plate.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: as `chem-y11-m1-v01.md` (water molecules red O with white H; Na⁺ violet; Cl⁻ green; sand grains pale golden-brown). Apparatus glass as painted; coded liquid colourless with a faint blue edge; residue sand golden-brown; crystals white. Goal checklist chips amber until ticked, then navy with a tick.
@@ -71,91 +84,124 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v02's final frame (see "Opening frame"); the "Next" chip fades and the two goal chips "dry sand" and "dry salt" shrink to a checklist at the top right. On "insoluble" a particle view opens on the sand layer: large golden-brown grains lying separate, water molecules around them, tag "insoluble: doesn't dissolve". On "soluble" a second particle view opens higher in the water: Na⁺ and Cl⁻ ions spread among water molecules, tag "soluble: dissolves". On "mixture" the heading writes on: "Filtration and crystallisation: getting sand and salt back".
 
+Upgrade (Revision 4): The beaker is about 560 px wide and solid from the first frame; callouts are dark ink. On "use the property that's different" an ink hand tag "what's different?" writes above the beaker. On "insoluble" a golden-brown hand tag "stays as grains" writes beside the sand view with a pen ring round one grain. On "soluble" a violet hand tag "spread out as ions" writes beside the upper view.
+
 ### 2. filtration: why it works
 > Start with the sand. We'll pour the mixture through filter paper. Filter paper is full of tiny holes, called pores. Water molecules are far smaller than the pores, so they pass straight **through**. The dissolved salt is split into separate ions, which are tiny too, so they go through with the **water**. But a sand grain is a huge clump of particles, much too big for the pores, so it gets **trapped**. That's filtration. It separates an insoluble solid from a liquid, by particle size.
 
 Visual: camera push to a coded cross-section of filter paper: a band of tangled pale fibres with gaps, tagged "filter paper" and, on "pores", one gap ringed "pore". On "through" water molecules stream down through the gaps. On "water" violet and green ions stream through with them (tag "ions: tiny"). On "trapped" a large faceted golden-brown grain drifts down and stops on the fibres, unable to enter (tag "sand grain: much too big"); more grains settle beside it. A small grey tag "not to scale" in the corner (author note a). The right column writes "filtration: separates an insoluble solid from a liquid, by particle size".
+
+Upgrade (Revision 4): The pore view fills the left two thirds and is a live particle box run with a membrane (see "Simulation 1"); the readouts sit at the right at 44 px. On "they pass straight through" a navy hand tag "tiny: through" writes with a pen arrow down through a pore. On "they go through with the water" the "ions" readout starts counting, with a violet hand tag "ions too". On "it gets trapped" the readout "sand grains 0" pulses and a golden-brown hand tag "too big" writes with a pen ring round the stuck grain. The tag "not to scale" is dark ink at 30 px; the definition line is 44 px.
 
 ### 3. the setup: residue and filtrate
 > Here's the setup. Fold the filter paper into a cone, sit it in a funnel, and stand the funnel in a conical flask. Pour the mixture slowly down a glass **rod**, so it runs onto the paper without splashing. The solid left on the paper is called the **residue**. The liquid that drips through into the flask is called the **filtrate**.
 
 Visual: board shifts to the empty filter plate (`y11c-filter-funnel-flask-empty-v1.png`, new: funnel with folded paper cone, standing in a conical flask). As the first sentence is spoken, three short labels write and dim in turn: "filter paper cone", "funnel", "conical flask". The sand beaker plate sits at the upper left. On "rod" the beaker tilts by itself; a coded stream runs down a coded glass rod into the cone; coded drips begin to fall from the stem and the flask's level rises. Over the next sentences the plate cross-fades to the aligned "sand" plate (`y11c-filter-funnel-flask-sand-v1.png`). On "residue" a callout to the sand in the cone: "residue: the solid left on the paper". On "filtrate" a callout to the flask: "filtrate: the liquid that drips through".
 
+Upgrade (Revision 4): The filter plate (about 560 px tall) and the sand beaker (about 300 px) are on the board from the first frame. The three part labels are dark ink at 34 px and stay (they do not dim to grey). On "down a glass rod" an ink hand tag "slowly, no splashing" writes with a pen arrow along the stream. On "residue" a golden-brown hand tag "stays" writes beside the callout; on "filtrate" a navy hand tag "drips through" writes beside the flask with a pen arrow down the stem. The two term callouts are 44 px.
+
 ### 4. prediction (countdown, 3 seconds)
 > Quick prediction. The filtrate in the flask is perfectly clear. So is it pure water? Have a **think**.
 
 Visual: camera pushes to the flask; the clear filtrate glints. A chip "filtrate: clear" and the question "Is the filtrate pure water?". On "think" the 3 s `Countdown` ring runs. No particle view (nothing answer-bearing).
+
+Upgrade (Revision 4): The flask is about 480 px tall and the question line is 52 px; the chip "filtrate: clear" is dark ink at 38 px. No hand tags (thinking time).
 
 ### 5. prediction answer: still a solution
 > No, it's still salt water. The salt's ions went straight through the paper with the water, so the filtrate is a **solution**, a liquid with something dissolved in it. Clear only tells you nothing undissolved is floating in it. Put a drop on a warm watch glass, and when the water evaporates, tiny white crystals are left **behind**. Filtration can't remove a dissolved solid, and clear doesn't mean pure.
 
 Visual: on "solution" a particle view opens on the filtrate: ions among water molecules (the same mix as scene 1's second view), tag "solution: a liquid with something dissolved in it". On "Put a drop" a coded drop moves from the flask to a watch glass plate (`y11c-watch-glass-v1.png`, new) resting at the hotplate's warm edge; the drop's particle view shows water molecules leaving; on "behind" a faint ring of white crystal specks remains (author note b). On "clear doesn't mean pure" a chip "clear = pure water" fades in and is crossed (caption "the ions passed through").
 
+Upgrade (Revision 4): On "No, it's still salt water" the answer "still salt water" is framed in green with a tick (52 px). On "went straight through the paper" a violet hand tag "ions went through" writes with a pen arrow from the cone to the flask. The watch glass (about 320 px wide) is solid when it appears, and on "tiny white crystals are left behind" the crystal ring is drawn solid white with a dark-ink outline and a violet hand tag "the salt was there all along". On "clear doesn't mean pure" the crossed chip is struck in red with a red hand tag "clear ≠ pure".
+
 ### 6. wash and dry the sand
 > Now finish the sand. It's still wet, and that water is salt water. If you dried it now, salt crystals would be left stuck to the **grains**. So rinse the residue with a little distilled water, which has nothing dissolved in it. The fresh water carries the dissolved salt through the paper into the **filtrate**. Then dry the sand in a warm oven, or in the air, until it's completely **dry**. That's the insoluble solid recovered.
 
 Visual: camera on the sand residue; a particle view on the wet sand shows grains with salt water (ions) between them. On "grains" a ghost preview: the water leaves and white crystal specks crust the grains (tag "salt left on the sand"), then the ghost fades. On "distilled water" the wash bottle plate (`m6-wash-bottle-v1.png`) appears above the cone; its coded squeeze sends a thin stream over the sand. On "filtrate" the particle view shows fresh water molecules pushing the ions down through the paper; the ions in the sand view thin to none. On "dry" the cone's sand slides onto a watch glass (cross-fade to `y11c-watch-glass-sand-v1.png`, new) that moves into the drying oven (`m8-drying-oven-v1.png`); its door closes and opens by itself (a short time-jump tag "later"). The checklist ticks "dry sand".
+
+Upgrade (Revision 4): Board change to the washing stage: the cone of sand (about 480 px), the wash bottle and the oven plate (about 380 px) are on the board from the first frame. On "left stuck to the grains" the preview is a solid inset card with a dashed border, titled "if you dried it now", and a red hand tag "salt on the sand". On "carries the dissolved salt through the paper" a readout "ions left in the sand" ticks down to 0 (model count, 44 px) with a navy hand tag "rinsed away" and a pen arrow down through the cone. On "completely dry" the "dry sand" chip turns green with a tick and a pen ring round the watch glass of sand.
 
 ### 7. solubility and saturation
 > Now the salt, dissolved in the filtrate. To get it back, we need a few words. The salt is the solute, the substance that dissolves. The water is the solvent, the liquid it dissolves in. Solubility is the most solute that can dissolve in a hundred grams of water, at a stated **temperature**. And a solution that's holding as much solute as it can is called **saturated**.
 
 Visual: the filtrate flask returns at the left with its particle view. The right column writes term by term as spoken, each with an arrow to the view: "solute: the substance that dissolves" (arrow to an ion), "solvent: the liquid it dissolves in" (arrow to a water molecule). On "temperature" a gloss writes "solubility: the most solute that dissolves in 100 g of water at a stated temperature". On "saturated" a saturation meter (a coded vertical bar, empty to full) appears beside the view, currently low, tag "saturated: holding as much as it can (meter full)".
 
+Upgrade (Revision 4): The filtrate flask is about 460 px tall, solid from the first frame. Each term line is 44 px with its key word in its role colour (solute violet, solvent navy). On "the substance that dissolves" a violet pen arrow runs to an ion; on "the liquid it dissolves in" a navy pen arrow runs to a water molecule. On "a hundred grams of water" an ink hand tag "per 100 g of water" writes under the gloss with a pen underline. On "saturated" the meter is labelled at 34 px and takes an amber hand tag "full = saturated".
+
 ### 8. crystallisation
 > So here's crystallisation. Pour the filtrate into an evaporating basin, and heat it gently. The water evaporates, but the salt can't, so the solution gets more and more **concentrated**. Once it's saturated, the water that's left can't hold all the salt, and the extra salt comes out of the solution as solid **crystals**. Stop heating while there's still some liquid left, and let it cool. Then filter off the crystals, rinse them with a tiny amount of cold water, and dry **them**.
 
 Visual: board shifts to the evaporating basin plate on an electric hotplate (`y11c-evaporating-basin-hotplate-v1.png`, new, painted steam wisps above), the filtrate pouring in by itself. On "heat it gently" the hotplate light glows. The particle view shows water molecules leaving upward and ions staying; on "concentrated" the saturation meter fills. On "crystals" the meter reaches full ("saturated") and ions begin to lock into small lattices that grow (white crystal specks appear around the basin's edge). On "Stop heating" the light goes out; the plate cross-fades to the aligned crystals plate (`y11c-evaporating-basin-crystals-v1.png`, new: off the heat, on a heatproof mat, crystals and a little liquid). On "dry them" the crystals transfer to a watch glass (`y11c-watch-glass-salt-v1.png`, new) by a short coded filter step (a mini cone icon), and the checklist ticks "dry salt". A small terracotta and green safety card writes quietly at the lower right (above the 88% line): "safety glasses; heat gently; stop before it's dry; cool on a heatproof mat" (author note d).
+
+Upgrade (Revision 4): The basin on its hotplate (about 600 px wide) is solid from the first frame. The saturation meter is a live readout tied to the particle view ("water left" falling as the meter fills; model, 44 px). On "the salt can't" a violet hand tag "salt stays" writes with a pen ring round an ion. On "comes out of the solution as solid crystals" a violet hand tag "no room left: crystals" writes with a pen arrow to the first lattice. On "Stop heating while there's still some liquid left" an ink hand tag "stop before dry" writes beside the hotplate light. The filter step is shown with a small copy of the painted filter plate (about 180 px), not a coded icon. On "dry them" the "dry salt" chip turns green with a tick. The safety card is dark ink at 30 px.
 
 ### 9. the surprise: cooling barely helps salt
 > Here's a surprise. You might expect cooling to be what makes the crystals form. For many solids, it is. Potassium nitrate's solubility drops from about one hundred and sixty nine grams per hundred grams of water at eighty degrees, to about thirty one at twenty **degrees**. Cool a saturated solution over that range, and about a hundred and thirty eight grams **crystallise**. But salt barely changes. It's about thirty eight grams at eighty degrees, and about thirty six at twenty. So for salt, removing water is what forms most of the crystals, not **cooling**.
 
 Visual: board clears to a coded solubility graph (kit `lineGraph`): x axis "temperature (°C)" 0 to 80, y axis "solubility (g per 100 g water)" 0 to 180. On "Potassium nitrate's" the KNO₃ curve draws (amber, steep), with points labelled "169 g at 80 °C" and, on "degrees", "31 g at 20 °C". On "crystallise" a falling arrow runs down the curve from 80 °C to 20 °C, and a bracket between the two levels reads "169 − 31 = 138 g crystallise (per 100 g water)". On "salt barely changes" the NaCl curve draws (navy, nearly flat) with points "38 g at 80 °C" and "36 g at 20 °C", bracket "about 2 g". On "cooling" a chip "salt: remove water" glows beside the flat curve and a chip "KNO₃: cooling helps a lot" beside the steep one.
 
+Upgrade (Revision 4): The graph fills the board, with axis labels at 30 px or more and point labels at 34 px. The cooling marker and its readouts run as in "Simulation 2": the potassium nitrate marker slides on "Cool a saturated solution over that range". On "about a hundred and thirty eight grams crystallise" the bracket value "138 g" is framed in amber with an amber hand tag "a big drop". On "But salt barely changes" a navy hand tag "nearly flat: about 2 g" writes with a pen bracket between the two salt points, and the salt marker slides on "about thirty six at twenty". On "not cooling" the chip "salt: remove water" is framed in green.
+
 ### 10. why the crystals are purer
 > Crystallisation does more than recover the salt. It also makes it purer. As a crystal grows, its ions fit into a neat, repeating lattice. Particles of other dissolved substances don't fit that pattern, so most of them stay in the leftover liquid, which is called the mother **liquor**. Slow cooling helps, because the crystals grow larger and more ordered, and trap less liquid. Boil it right down to dryness instead, and every dissolved impurity ends up in your **solid**.
 
 Visual: camera pushes into the crystals basin; a particle view at a crystal face: Na⁺ and Cl⁻ snap into place in a growing lattice; on "don't fit that pattern" a few teal impurity particles bump the face and drift back into the liquid. On "liquor" a callout to the leftover liquid "mother liquor: the leftover liquid, holding most impurities". On "Slow cooling" two small lattices side by side: slow (large, regular) and fast (small, with pockets of liquid and impurities trapped), tag "slow: larger, purer". On "solid" a ghost of the basin boiled dry shows a grey crust with teal impurity specks mixed in (tag "dryness: impurities kept, and it spits").
+
+Upgrade (Revision 4): The crystals basin (about 520 px wide) is solid from the first frame with the view open at a crystal face. On "fit into a neat, repeating lattice" a violet hand tag "fits the pattern" writes with a pen ring round a newly placed ion. On "don't fit that pattern" a teal hand tag "doesn't fit: stays in the liquid" writes with a pen arrow following one impurity back into the liquid. On "Slow cooling helps" the two lattices are solid, tagged at 34 px. On "ends up in your solid" the preview is a solid inset card with a dashed border titled "boiled to dryness", with a red hand tag "impurities kept".
 
 ### 11. the order, and a rule to remember
 > Notice the order. Filter first, then crystallise the filtrate. Crystallise first, and the sand ends up buried in your salt **crystals**. Undissolved, filter it out. Dissolved, crystallise it out. Filter paper works a bit like a kitchen sieve, where big pieces stay and small ones pass **through**. But dissolved salt isn't tiny grains of salt. It's separate ions, so filter paper cannot **catch** it.
 
 Visual: a two-step strip writes across the top: "1. filter → 2. crystallise the filtrate". On "crystals" a ghost of the reversed order: a basin crust of white crystals with golden sand grains mixed through, crossed (caption "sand in the salt"). On "Undissolved, filter it out" the handwritten rule writes large: "Undissolved: filter it out. Dissolved: crystallise it out." On "kitchen sieve" the sieve plate (`y11-sieve-bowl-filtered-v1.png`) slides in; on "through" the large pieces in the sieve are ringed (tag "big pieces stay") and the small beads in the bowl ringed (tag "small pieces pass"). On "catch" the scene 2 pore view returns small beside it, ions streaming through, tag "dissolved: separate ions, not tiny grains".
 
+Upgrade (Revision 4): The two-step strip is 52 px. The reversed-order preview is a solid inset card with a dashed border, struck in red with a red hand tag "sand in the salt". The rule sits in a framed memory card (hand lettering, 52 px): golden-brown "Undissolved: filter it out." violet "Dissolved: crystallise it out." The sieve plate (about 380 px) is solid when it arrives; on "big pieces stay and small ones pass through" the two rings are pen rings. On "separate ions" a violet hand tag "ions, not tiny grains" writes beside the small pore view.
+
 ### 12. attempt 1 (countdown, 10 seconds)
 > Your turn. A mixture contains sand, water and dissolved potassium nitrate. Describe how you'd obtain dry sand and dry potassium nitrate crystals, and justify each step using a physical property. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry"), worded as printed: "A mixture contains clean sand, water and dissolved potassium nitrate. Describe how to obtain (a) dry sand and (b) dry potassium nitrate crystals from this mixture. Justify each step by referring to a physical property." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no apparatus, no graph).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted beaker of sand settled in clear liquid (`y11c-sand-saltwater-beaker-v1.png`, about 280 px), untagged. Nothing answer-bearing.
 
 ### 13. feedback 1 (brief)
 > Filter first. The sand is insoluble and too big for the pores, so it stays as the residue. Rinse it with a little distilled water, then dry it. Next, heat the filtrate to concentrate it, and let it cool slowly. Potassium nitrate is much less soluble when it's cold, so crystals form. Filter them off and dry them. Crystallising before filtering is the slip to **avoid**.
 
 Visual: card shrinks to the top. Rows write in time with the sentences: "(a) filter: sand insoluble, too big for the pores → residue; rinse with distilled water; dry" ("insoluble" is not in the card; "sand" underlined); "(b) heat the filtrate to concentrate; cool slowly: KNO₃ much less soluble when cold → crystals; filter; dry" ("dissolved potassium nitrate" underlined), with a tiny KNO₃ curve and its falling arrow. On "avoid" a chip "crystallise first, then filter" fades in and is crossed (caption "sand ends up in the crystals"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "clean sand | water | dissolved potassium nitrate". The two answers are framed in green with a tick (44 px): "(a) filter, rinse, dry" and "(b) concentrate, cool slowly, filter, dry", each with its reason line under it at 34 px. The beaker picture stays small beside row (a). On "avoid" the crossed chip is struck in red with a red hand tag "sand ends up in the crystals".
+
 ### 14. attempt 2 (countdown, 10 seconds)
 > Last one. A student pours a blue copper sulfate solution through filter paper. The filtrate that comes through is just as blue. The student says the filter paper must be faulty. Explain why the student is wrong, and describe how to get solid copper sulfate crystals from the solution. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A student pours a blue solution of copper(II) sulfate through filter paper. The filtrate is just as blue as the original solution. The student concludes that the filter paper must be faulty. (a) Explain why the student's conclusion is incorrect. (b) Describe how solid copper(II) sulfate crystals could be obtained from the solution." A small blue solution plate (`c11-cuso4-beaker-dissolved-v1.png`) beside the card. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
+
+Upgrade (Revision 4): The card text is 38 px and the blue solution plate (about 280 px) is on the card's right side from the first frame.
 
 ### 15. feedback 2 (brief)
 > The paper isn't faulty. The copper sulfate is dissolved, as separate ions far smaller than the pores, so they pass straight through with the water. To get crystals, heat the solution gently to concentrate it, then let it cool slowly, filter off the blue crystals, and dry them. Swapping to a finer filter paper is the slip to **avoid**.
 
 Visual: card shrinks to the top. Row "(a) dissolved: Cu²⁺ and SO₄²⁻ ions, far smaller than the pores, pass through" with the scene 2 pore view (blue Cu²⁺ and an orange-red SO₄²⁻ cluster streaming through) ("filtrate is just as blue" underlined). Row "(b) concentrate by gentle heating; cool slowly; filter; dry" with a tiny blue crystal (`c11-cuso4-beaker-crystal-v1.png`, cropped thumbnail by uniform scale). On "avoid" a chip "use finer filter paper" fades in and is crossed (caption "filter paper misses dissolved ions"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "blue copper(II) sulfate solution | filtrate just as blue". On "The paper isn't faulty" the answer "(a) dissolved ions pass through the pores" is framed in green with a tick (44 px). On "dry them" the answer "(b) concentrate, cool slowly, filter, dry" is framed in green beside the blue crystal picture. On "avoid" the crossed chip is struck in red with a red hand tag "paper can't catch dissolved ions".
+
 ### 16. handoff
 > Notice what happened to the water, though. It left as steam, and it was lost. Sometimes the liquid is the part we want, or the mixture is two liquids. Next time, we'll catch that vapour, and see why a fractionating column separates liquids so much **better**.
 
 Visual: board clears. The evaporating basin on its hotplate (`y11c-evaporating-basin-hotplate-v1.png`) returns at the centre, painted steam rising; coded faint steam wisps drift up and off the top of the frame. On "lost" a tag with a leader to the steam: "water lost as steam". On "two liquids" two question chips write at the right, stacked: "catch the water?" and "two liquids?". On "better" the next chip writes centred above: "Next: why does a fractionating column separate liquids better?". This is the final frame (see "Final frame"). Hold about 2 seconds.
 
-### 17. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The basin is on the board from the first frame of the scene. On "it was lost" a navy pen arrow follows the steam upward before the tag writes. Nothing else is added, so the final frame is exactly as described under "Final frame"; the tag and wisps are drawn solid in dark ink and white with an outline, not faint.
+
+### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Filtration separates an insoluble solid from a liquid by particle size: the residue stays on the paper; the filtrate (liquid and anything dissolved) passes through.
-2. A clear filtrate can still be a solution. Wash the residue with a little distilled water before drying it.
-3. Crystallisation recovers a dissolved solid: heat gently to remove water until saturated, stop before dry, cool, filter, dry. Salt's solubility barely changes with temperature; potassium nitrate's changes a lot.
-4. Crystals grow as an ordered lattice, so most impurities stay in the mother liquor. Filter first, then crystallise.
+1. Filtration: separates an insoluble solid from a liquid by particle size.
+2. Residue stays on the paper; the filtrate passes through, with anything dissolved.
+3. A clear filtrate can still be a solution. Rinse the residue before drying it.
+4. Crystallise: heat gently to saturation, stop before dry, cool, filter, dry.
+5. Filter first, then crystallise. Crystals leave most impurities in the liquid.
 
-Memory aid (large, on the notes screen): *Undissolved: filter it out. Dissolved: crystallise it out.*
+Memory aid (framed card beside the notes, hand lettering, golden-brown and violet as in scene 11): *Undissolved: filter it out. Dissolved: crystallise it out.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Opening frame
 
@@ -210,6 +256,8 @@ Checked with Python (5 Nov); Codex to re-check.
 
 Revision 1 count (5 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,897 characters**, 17 scenes. Characters per scene (1 to 17): 375, 476, 320, 98, 396, 417, 363, 471, 551, 465, 399, 216, 366, 306, 332, 255, 75. At 13.3 characters per second the speech is about 443 s; add about 6 s of settling (the pour in scene 3, the oven time-jump in scene 6, the basin in scene 8), 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 88 s): **about 531 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 7's "To get it back, we need a few words." ; scene 10's slow-cooling sentence (keep the two lattices silent); scene 16's "Sometimes the liquid is the part we want, or the mixture is two liquids." (keep the chips silent).
 
+Revision 4 (12 Nov 2026): narration unchanged (5,870 characters, 17 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 530 s to about 515 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v03` (route chem-y11-m1-v03). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v03` and build folder `docs/production/claude-pm/lessons/c-y11-m1-v03`.
@@ -219,6 +267,8 @@ In order (kebab-case; 17 scene headings, all `### N.`): hook, filtration-why, fi
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except prediction (`hold`: the learner decides about the clear filtrate during the 3 s countdown), attempt-1, attempt-2 (`hold`) and key-notes (`hold`: the learner copies four notes). `design.renderer`: explainer. `design.visualSystem`: Year 11 Chemistry paper board (v01 colour key) with apparatus plates and particle views. Transitions: 1 to 2 camera push into the paper; 2 to 3 pull back to the apparatus; 3 to 4 push to the flask; 4 to 5 continue; 5 to 6 slide to the residue; 6 to 7 slide to the flask; 7 to 8 continue (the filtrate pours into the basin); 8 to 9 clear change to the graph; 9 to 10 clear change back to the basin; 10 to 11 pull back; attempts and feedback card shrink to the top; 15 to 16 board clear; 16 to 17 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/c-y11-m1-v03-learning-review.md`, `science_check` = `checks/c-y11-m1-v03-chemistry-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 5 to 6 is a board change to the washing stage.
 
 ## Assets
 
@@ -239,6 +289,8 @@ Need (new plates, Codex), in priority order:
 Coded: filter-paper cross-section and particles, pour stream, drips, liquid levels, particle views, saturation meter, solubility graph, lattices and impurity particles, ghosts, steam wisps (coded, added to the painted ones), checklist, safety card, chips, crossed chips, attempt cards, answer rows, countdowns, key notes board.
 
 Kit gaps: none new (v01's particle view and kit `lineGraph`; a simple `PourStream` (a curved coded stream between two points with a drip emitter) can live in the lesson folder and is reused in v04).
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-sand-saltwater-beaker-v1.png`, `y11c-filter-funnel-flask-empty-v1.png`, `y11c-filter-funnel-flask-sand-v1.png`, `y11c-evaporating-basin-hotplate-v1.png`, `y11c-evaporating-basin-crystals-v1.png`, `y11c-watch-glass-v1.png`, `y11c-watch-glass-sand-v1.png`, `y11c-watch-glass-salt-v1.png`. The glass rod stays coded (root decision 2). The sand beaker is also the attempt 1 card picture. New plate requests: none. Simulation: the particle box engine with a membrane for the pore view.
 
 ## Codex asset brief (Year 11 Chemistry M1 v03; plates 3 and 4 shared with v04 and v05)
 
@@ -266,6 +318,8 @@ Error-only check (report errors; do not restyle or rewrite):
 9. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("crystallise", "litre", "sulfate").
 10. Confirm the narration character count and per-scene counts by script with the build parser rules.
 11. Report site notes 1 to 3 under Decisions to root for `../site-corrections-chem-y11.md`.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the cooling-marker readouts (169 → 31 g with 0 → 138 g; 38 → 36 g with 0 → 2 g) follow the drawn curves at every temperature shown; the membrane model contradicts nothing spoken; the attempt 1 picture gives nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -311,3 +365,28 @@ Narration: 5,886 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v03-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,870 characters over 17 scenes (the earlier 5,886 included the 16 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v03-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the sand and salty water beaker from v02's final frame, solid from the first frame.
+- Simulations: the pore view is a particle box run with a membrane and live "through the paper" readouts (scene 2); a cooling marker slides down each solubility curve with live "still dissolved" and "crystals out" readouts (scene 9).
+- Hand tags (two or three) and a pen mark in scenes 1 to 3 and 5 to 11; the rule is a framed memory card in scene 11.
+- Ghost previews in scenes 6, 10 and 11 are solid inset cards; the coded mini cone icon in scene 8 is a small copy of the filter plate.
+- Answers framed in green in scenes 5, 9, 13 and 15; crossed slips struck in red with red hand tags.
+- Question cards: attempt 1 gains the sand beaker picture; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the salt against potassium nitrate solubility comparison and the term "mother liquor".
+- Stage list recorded; no set-up ran past about 61 s, so no cut was added (scene 6 becomes its own washing stage).
+
+New plate requests: none.
+
+Joins: the opening is v02's final frame, unchanged. The final frame is unchanged word for word (its "faint" wisps and "grey" tag are drawn solid), so v04's opening holds.
+
+Counts: 5,870 characters, unchanged; about 530 s to about 515 s.
+
+Calls for root: (1) the cooling marker shows values between the labelled points, read from the drawn curves; (2) "ions left in the sand" and "water left" are model readouts; (3) the membrane model treats a sand grain as one large particle.

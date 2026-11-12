@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V09: Relative atomic mass. Why is relative atomic mass a weighted average? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: chlorine Ar now 35.48 with guard digits kept in the working. Narration 6,203 characters (joined parser count), about 552.1 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,188 characters (sum of scene strings; 6,203 with joining spaces; Revision 1 was 6,202 by the joined parser count), 16 scenes, about 552.1 s (9.2 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -55,6 +55,18 @@ Entry knowledge: Stage 5 averages, percentages, linear equations; v07; v08.
 Stops after: the weighted average explained and calculated, the sense check, and an unknown two-isotope abundance under a stated assumption. No mass spectrometer operation or spectra.
 Handoff: v10, line spectra and energy levels.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** Revision 3 opened on coded nuclei only. The video still opens on v08's final frame, and at about 6 s a painted gas jar of chlorine (`y11c-gas-jar-chlorine-v1.png`, about 420 px tall) arrives solid at the left: 35.45 describes the atoms in this real jar. In scene 2 a magnifier on the jar opens into the hundred-atom sample. The mass spectrometer (`m8-mass-spectrometer-v1.png`) and a painted silicon sample (`y11c-sample-silicon-v1.png`) are the other real objects.
+- **Simulation 1: drawing atoms at random (scene 8).** A run of the chance engine (`src/explainer/sims/chance.ts`, `{kind: 'weighted', outcomes: [{label: '10', weight: 19.9}, {label: '11', weight: 80.1}]}`, drawn with `TrialView`, `ChanceHistogram` and a running-mean line). Boron atoms are drawn one at a time; three live readouts at 52 px read the run: "atoms drawn", "this atom: 10 or 11" and "average so far", which wobbles and then settles near 10.8 while no single atom ever reads 10.8. Choose a seed whose first few draws include both isotopes.
+- **Simulation 2: the live balance beam (scenes 5, 7 and 10).** The pivot position is computed from the stacks, with a live readout under it at 52 px; in scene 10 the stacks grow to 78 and 22 while the pivot holds 28.22.
+- **Colour key (fixed for the whole video).** The lighter isotope of each pair in a light tone and the heavier in a dark tone of one hue (chlorine greens, boron tan and brown, silicon grey and slate); abundances and fractions amber; the balance point and Ar navy; the unknown x teal; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Earlier rows stay solid at a smaller size instead of dimming; "grey", "faint", "dimmed" and "ghost" items are drawn solid in dark ink.
+- **Type sizes (1080p).** Heading 60 px; the current working row, readouts and framed answers 52 px, never under 44; question-card sentences 38 px; data-table cells, beam ticks and stack counts 34 px; supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) the chlorine box, nuclei and jar, scene 1 (about 28 s); (B) the hundred-atom sample, scene 2 (about 48 s); (C) definition board, scene 3 (about 40 s): the mass spectrometer large at the left, the two blocks small, then the data table; (D) the calculation board, scene 4 (about 49 s); (E) the chlorine beam, scene 5 (about 22 s); (F) the boron beam, scenes 6 and 7 (about 53 s); (G) the draw stage, scene 8 (about 28 s): the chance run; (H) silicon, scenes 9 and 10 (about 74 s); question and feedback cards; the handoff; the notes board. Revision 3 kept the token grid through scenes 2 and 3 (about 88 s) and the boron beam through scenes 6 to 8 (about 81 s); stages C and G are the new cuts.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v08): chlorine-35 tokens green, chlorine-37 tokens dark green; boron-10 tokens tan, boron-11 brown; silicon tokens grey and slate; percentages and abundances amber; masses ink; the balance point and its value navy; unknowns (x) teal; crossed chips red strike.
@@ -64,86 +76,117 @@ Cue words in **bold** trigger the visual change. Colour key (continues v08): chl
 
 Visual: opens on v08's final frame (Decisions). On "five" the two nuclei get tags "35" and "37" and a small chip "no atom = 35.45". On "six" a midpoint mark draws on a short number line under the nuclei at 36 with the chip "simple average: 36"; the 35.45 mark sits left of it. On "from" the chip "36" is crossed (caption "not the simple average"), and the heading writes on: "Relative atomic mass: a weighted average".
 
+Upgrade (Revision 4): The chlorine box and nuclei are solid from the first frame (the "faint" beam is a solid dark-ink line). On "Here's chlorine on the periodic table" the painted chlorine gas jar (about 420 px tall) arrives solid at the left with a dark-ink tag "chlorine gas", and a navy hand tag "35.45 is about these atoms" writes with a pen arrow from the jar to the box. On "thirty-five point four five" the chip "no atom = 35.45" is 44 px. On "thirty-six" the midpoint chip is 44 px; on "from" it is struck in red with a red hand tag "not the simple average".
+
 ### 2. a sample of a hundred atoms
 > Think about a real sample of chlorine. It's a mixture of both isotopes, and they're not equally common. Out of every hundred chlorine atoms, about seventy-six are chlorine-thirty-five, and only about twenty-four are chlorine-thirty-**seven**. So to find the average mass of one atom, add up the masses of all hundred, then share the total among them. Seventy-six atoms at thirty-five, plus twenty-four atoms at thirty-seven, gives three thousand five hundred and forty-**eight**. Divide by a hundred atoms, and that's thirty-five point four **eight**. It's much closer to thirty-five, because most of the atoms are chlorine-thirty-**five**.
 
 Visual: the nuclei shrink into token style; a 10 × 10 grid of 100 atom tokens fills the stage at random positions, green and dark green mixed. On "seven" the tokens sort into two blocks, 76 green and 24 dark green, with counts "76 × ³⁵Cl" and "24 × ³⁷Cl". On "five hundred and forty-eight" the tally writes in the right column: "76 × 35 = 2660", "24 × 37 = 888", "total = 3548". On "thirty-five point four eight" row "3548 ÷ 100 = 35.48" writes bright. On "most of the atoms are chlorine-thirty-five" the number line from scene 1 returns: 35.48 lands close to 35, and the 76 block pulses.
+
+Upgrade (Revision 4): A magnifier on the jar opens into the 10 × 10 grid, which fills the stage; the jar stays small at the left. The counts "76 × ³⁵Cl" and "24 × ³⁷Cl" are 52 px. On "they're not equally common" an amber hand tag "not half and half" writes over the mixed grid. On "share the total among them" an ink hand tag "total ÷ number of atoms" writes above the tally with a pen underline. The tally rows are 44 px and "35.48" is framed in green with a tick (52 px). On "most of the atoms are chlorine-thirty-five" a green pen arrow runs from the 76 block to the 35.48 mark with a hand tag "pulled towards 35".
 
 ### 3. weighted average, and what Ar means
 > That's a weighted average. Each isotope's mass counts as many times as that isotope occurs, so the common isotope counts **more**. Relative atomic mass, written A r, is this weighted average for the atoms in a natural sample of an element, on the scale where carbon-twelve is exactly **twelve**. Like any relative mass, it has no units. The percentages, called abundances, are measured with an instrument called a mass spectrometer, which sorts atoms by **mass**. How it works is a story for later. Here, the abundances are simply **given**.
 
 Visual: on "more" the 76 block's "76 ×" and the 24 block's "24 ×" glow as weights, tag "weighted: each mass counted as often as it occurs". On "twelve" the definition writes in the right column: "Ar: weighted average mass of an element's atoms in a natural sample (carbon-12 = 12 exactly); no units". On "mass" the plate `m8-mass-spectrometer-v1.png` appears small at the lower left with the tag "measures abundances (how it works: later)". On "given" the plate fades and a data table writes: columns "isotope", "mass", "abundance"; rows "³⁵Cl, 35, 75.77%" and "³⁷Cl, 37, 24.23%".
 
+Upgrade (Revision 4): Board change to the definition board, solid from the first frame: the mass spectrometer (about 420 px) at the left with a dark-ink tag, the two blocks small at the top and the definition space at the right. On "so the common isotope counts more" an amber hand tag "counts 76 times" writes on the large block with a pen ring round "76 ×". The definition line is 38 px with "weighted average" in navy. On "it has no units" an ink hand tag "no units" writes with a pen underline. On "which sorts atoms by mass" a pen arrow runs from the spectrometer to the abundance column heading. The data table is solid at 34 px when the plate steps back (the plate shrinks to about 200 px; it does not fade out).
+
 ### 4. the shortcut with fractions
 > In questions, you'll use a shortcut. Turn each percentage into a fraction by dividing by a hundred, multiply each isotope's mass by its fraction, then add them up. For chlorine, the abundances are seventy-five point seven seven percent, and twenty-four point two three **percent**. Thirty-five times zero point seven five seven seven is twenty-six point five **two**. Thirty-seven times zero point two four two three is eight point nine **seven**. Add them, and you get thirty-five point four eight, about thirty-five point **five**. The periodic table says thirty-five point four five because it uses each isotope's exact mass, which is slightly less than thirty-five or thirty-seven.
 
 Visual: calculation layout; task strip "Calculate Ar(Cl)". Equation strip writes on the first sentence: "Ar = (mass₁ × fraction₁) + (mass₂ × fraction₂)", grey tag "fraction = % ÷ 100". On "percent" a "fraction" column fills the data table: "0.7577", "0.2423". On "two" row "35 × 0.7577 = 26.5195 (≈ 26.52)". On "seven" row "37 × 0.2423 = 8.9651 (≈ 8.97)". On "five" row "Ar = 26.5195 + 8.9651 = 35.4846 ≈ 35.48 ≈ 35.5" (bright), with a small grey tag "add the unrounded values; rounding each first gives 35.49" (Revision 2: guard digits kept in the working) and a grey tag "the 100-atom count gave 35.48 ≈ 35.5 too". On the last sentence a small grey chip "exact masses 34.97 and 36.97 give 35.45" writes beside the row, and the hook's "35.45" ticks.
+
+Upgrade (Revision 4): The task strip, the data table as a navy givens card and the chlorine jar thumbnail (about 200 px) are on the board from the first frame. The equation strip is 52 px; the tag "fraction = % ÷ 100" is amber hand lettering. Each product row is 52 px and stays solid at 38 px when the next lands. On "about thirty-five point five" the result "35.48 ≈ 35.5" is framed in green with a tick. The guard-digit tag and the tag "exact masses 34.97 and 36.97 give 35.45" are dark ink at 30 px. A chip "(35 + 37) ÷ 2 = 36" stays struck in red at the corner from scene 1 with its red hand tag.
 
 ### 5. picture it as a balance
 > Here's a way to picture it. Put the isotopes on a beam, at their masses, and stack each one by how common it **is**. The relative atomic mass is where the beam would balance. With three quarters of the weight at thirty-five, the balance point sits close to **it**. The average leans toward the **crowd**.
 
 Visual: the rows dim; a number-line beam draws from 34 to 38 with ticks; on "is" stacks of tokens drop onto 35 (tall stack, 76 tokens in columns) and 37 (short stack, 24 tokens). On "it" a pivot triangle slides along under the beam from 36 toward 35 and stops at 35.48 (computed), the beam levelling as it arrives; a `NumberTicker` under the pivot reads "35.5". On "crowd" the handwritten line writes above: "The average leans toward the crowd." Hold about 2 seconds.
 
+Upgrade (Revision 4): The beam fills the board, with ticks at 34 px. The pivot readout is live at 52 px (see "Simulation 2") and moves from 36.00 to 35.48 as the pivot slides. On "stack each one by how common it is" an amber hand tag "76 here, 24 there" writes over the stacks. On "the balance point sits close to it" a navy pen arrow marks the pivot with a navy hand tag "balances here". The line sits in a framed memory card (hand lettering, 52 px): navy "The average leans toward the crowd."
+
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Boron has two isotopes: boron-ten, at nineteen point nine percent, and boron-eleven, at eighty point one percent. Will its relative atomic mass be closer to ten, or closer to eleven? Have a **think**.
 
 Visual: board clears to a new data table "¹⁰B, 10, 19.9%" and "¹¹B, 11, 80.1%" and an empty beam from 9.5 to 11.5 with ticks at 10 and 11; no stacks, no pivot. Chip "closer to 10 or 11?". On "think" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 4): The data table (34 px) and the empty beam are on the board from the first frame; the question chip is 44 px. No hand tags (thinking time).
 
 ### 7. boron, worked
 > Closer to eleven, because boron-eleven is the crowd. Let's check. As fractions, the abundances are zero point one nine nine, and zero point eight zero **one**, and they add to exactly one, which is a good first **check**. Ten times zero point one nine nine is one point nine **nine**. Eleven times zero point eight zero one is eight point eight one **one**. Add them, and A r is ten point eight zero one, or ten point eight to three significant **figures**.
 
 Visual: on the first sentence the stacks drop onto the beam (short tan stack at 10, tall brown stack at 11) and the pivot slides to 10.80. Task strip "Calculate Ar(B)". On "zero point eight zero one" the fraction column fills "0.199", "0.801". On "check" row "0.199 + 0.801 = 1.000 ✓". On "nine" row "10 × 0.199 = 1.99". On "eight point eight one one" row "11 × 0.801 = 8.811". On "figures" row "Ar(B) = 1.99 + 8.811 = 10.801 ≈ 10.8" (bright); the pivot's ticker reads "10.8".
 
+Upgrade (Revision 4): On "Closer to eleven" the answer "closer to 11" is framed in green with a tick (44 px). The pivot readout is live and settles at 10.80. On "they add to exactly one" an amber hand tag "fractions add to 1" writes with a pen tick. Each product row is 52 px and stays solid at 38 px when the next lands. On "ten point eight to three significant figures" the result "Ar(B) = 10.8" is framed in green with a tick.
+
 ### 8. the sense check, and no atom weighs 10.8
 > Always sense check your answer. It must land between the lightest and heaviest isotopes, and nearer the more common **one**. Ten point eight passes both **tests**. And notice that no single boron atom has a mass of ten point eight. Every atom is boron-ten or boron-eleven. Ten point eight is the average of the sample, not the mass number of any **atom**.
 
 Visual: on "one" a bracket marks the range 10 to 11 on the beam (tag "between the isotope masses") and an arrow from the midpoint 10.5 toward 11 (tag "nearer the crowd"). On "tests" both tags tick. On the third sentence a single token is lifted from each stack and labelled "10" and "11"; a ghost token labelled "10.8" fades in between them and is crossed (caption "no atom has the average mass"). On "atom" a chip writes "Ar is a sample average, not a mass number".
+
+Upgrade (Revision 4): Board change to the draw stage: the chance run (see "Simulation 1") fills the left two thirds, with the boron beam small at the right. Atoms are drawn slowly at first, then quickly; the histogram has two bars only, at 10 and 11. On "nearer the more common one" a navy hand tag "between 10 and 11, nearer 11" writes on the running-mean line. On "no single boron atom has a mass of ten point eight" the readout "this atom" flashes 10, 11, 11 and a red-struck token "10.8" carries a red hand tag "no such atom" (the token is solid, not a ghost). On "the average of the sample" the readout "average so far" takes a navy pen ring. The closing chip is 44 px.
 
 ### 9. the reverse question: silicon
 > Now the question in reverse. Suppose you know the relative atomic mass, and you want the abundances. In this question, silicon has a relative atomic mass of twenty-eight point two two, and we assume it has only two isotopes, silicon-twenty-eight and silicon-twenty-**nine**. Real silicon also has some silicon-thirty, so this is a simplified **model**. Let x be the fraction of silicon-twenty-eight. With only two isotopes, the fractions add to one, so silicon-twenty-nine is one minus **x**.
 
 Visual: board clears. Task strip "Find the percentage abundance of each isotope". Givens (navy): "Ar(Si) = 28.22; isotopes ²⁸Si and ²⁹Si". On "nine" an amber-outlined assumption chip writes into the givens: "assume only these two isotopes". On "model" a grey tag "(real silicon also has ³⁰Si)" sits under the chip. A beam from 27.5 to 29.5 draws with empty stack outlines at 28 and 29 and the pivot already at 28.22. On "x" the outlines get teal labels "x" (at 28) and "1 − x" (at 29), with the row "fractions: x + (1 − x) = 1".
 
+Upgrade (Revision 4): The task strip, a navy givens card ("Ar(Si) = 28.22 | isotopes ²⁸Si and ²⁹Si | assume only these two") and the painted silicon sample (`y11c-sample-silicon-v1.png`, about 300 px, dark-ink tag "silicon") are on the board from the first frame, with the empty beam. On "we assume it has only two isotopes" the assumption line in the card takes an amber pen underline with an amber hand tag "an assumption: say it". The tag "(real silicon also has ³⁰Si)" is dark ink at 30 px. On "Let x be the fraction of silicon-twenty-eight" a teal hand tag "x" writes at 28; on "one minus x" a teal hand tag "the rest" writes at 29 with a pen bracket joining the two.
+
 ### 10. solve and check
 > Now write the weighted average with x in it. Twenty-eight x, plus twenty-nine times one minus x, equals twenty-eight point two **two**. Expand the bracket, and the x terms combine to minus x, so twenty-nine minus x equals twenty-eight point two **two**. That makes x zero point seven **eight**. So silicon-twenty-eight is seventy-eight percent, and silicon-twenty-nine is twenty-two **percent**. Check it: twenty-one point eight four plus six point three eight gives back twenty-eight point two **two**.
 
 Visual: algebra rows aligned at the equals sign. On "equals twenty-eight point two two" "28x + 29(1 − x) = 28.22". On "twenty-nine minus x equals twenty-eight point two two" "28x + 29 − 29x = 28.22", then "29 − x = 28.22". On "zero point seven eight" "x = 29 − 28.22 = 0.78" (bright). On "percent" row "²⁸Si 78%, ²⁹Si 22%" and the beam's stacks fill to 78 and 22 tokens, the pivot staying balanced at 28.22. On "gives back twenty-eight point two two" the check row writes "28 × 0.78 + 29 × 0.22 = 21.84 + 6.38 = 28.22 ✓", and the assumption chip glows once.
+
+Upgrade (Revision 4): The algebra rows are 52 px for the current row and 38 px for earlier rows, aligned at the equals sign, with x in teal. On "the x terms combine to minus x" a teal pen bracket joins "28x" and "− 29x" with a teal hand tag "28x − 29x = −x". On "That makes x zero point seven eight" the result "x = 0.78" is framed in green. On "twenty-two percent" the answer "²⁸Si 78%, ²⁹Si 22%" is framed in green with a tick and the stacks grow while the pivot readout holds 28.22. On "gives back twenty-eight point two two" the check row takes a green pen tick. A chip "²⁸Si 22%, ²⁹Si 78%" is struck in red with a red hand tag "28.22 is near 28: 28 is the crowd".
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. A model element has two isotopes, with masses twenty-two and twenty-four, and abundances of seventy point zero percent and thirty point zero percent. Calculate its relative atomic mass. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "A model element has two isotopes with masses 22 and 24. Their abundances are 70.0% and 30.0% respectively. Calculate the relative atomic mass of the element." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no beam).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the mass spectrometer plate (about 280 px), untagged, as the source of the data. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > As fractions, the abundances are zero point seven zero zero, and zero point three zero **zero**. Twenty-two times zero point seven zero zero is fifteen point four, and twenty-four times zero point three zero zero is seven point **two**. Together that's twenty-two point **six**. It's between twenty-two and twenty-four, and nearer twenty-two, the more common isotope. Twenty-three, the simple average, is the slip to **avoid**.
 
 Visual: card shrinks to the top. On "zero point three zero zero" row "fractions 0.700 and 0.300". On "seven point two" row "22 × 0.700 = 15.4; 24 × 0.300 = 7.2". On "twenty-two point six" row "Ar = 15.4 + 7.2 = 22.6" (bright), and a small beam draws with the pivot at 22.6. On "avoid" a chip "(22 + 24) ÷ 2 = 23" fades in and is crossed (caption "the crowd is at 22"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "masses 22 and 24 | 70.0% and 30.0%". The rows are 52 px; on "twenty-two point six" the result "22.6" is framed in green with a tick and the small beam's pivot readout reads 22.6. On "avoid" the crossed chip is struck in red with a red hand tag "the crowd is at 22".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Assume an element has only two isotopes, with masses sixty-three and sixty-five, and a relative atomic mass of sixty-three point six zero. Calculate the percentage abundance of each isotope. Pause here to answer.
 
 Visual: `QuestionCard`: "Assume that an element has only two isotopes, with masses 63 and 65. Its relative atomic mass is 63.60. Calculate the percentage abundance of each isotope." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries a two-row data table as its picture: "isotope 63: ? %" and "isotope 65: ? %" (34 px). Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > Let x be the fraction of the mass sixty-three isotope. Sixty-three x, plus sixty-five times one minus x, equals sixty-three point six **zero**, which simplifies to sixty-five minus two x equals sixty-three point six zero. So x is zero point seven **zero**: seventy percent mass sixty-three, and thirty **percent** mass sixty-five. Don't swap them. Sixty-three point six is near sixty-three, so sixty-three is the **crowd**.
 
 Visual: card shrinks to the top; "only two isotopes" in the card is underlined on the first sentence. On "equals sixty-three point six zero" row "63x + 65(1 − x) = 63.60". On "zero point seven zero" rows "65 − 2x = 63.60" and "x = 0.70". On "percent" row "mass 63: 70%; mass 65: 30%" with a small beam, stacks 70 and 30, pivot at 63.60. On "crowd" a chip "mass 63: 30%, mass 65: 70%" fades in and is crossed (caption "that gives 64.4, nearer 65"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "masses 63 and 65 | Ar 63.60 | only two isotopes". The rows are 52 px with x in teal. On "So x is zero point seven zero" the result "x = 0.70" is framed in green; on "thirty percent" the answer "63: 70%, 65: 30%" is framed in green with a tick. On "crowd" the crossed chip is struck in red with a red hand tag "that gives 64.4".
 
 ### 15. handoff: what are the electrons doing?
 > So relative atomic mass is all about nuclei, and how common each isotope is. But remember, isotopes behave the same in reactions, because their electrons are the same. So what are those electrons actually doing? Our best clue comes from light. When hydrogen gas glows, it gives out only a few sharp colours, not a whole **rainbow**. Next time, we'll see what those colours reveal about the energy of electrons in an **atom**.
 
 Visual: board clears. The two chlorine nuclei from scene 1 return small at the top left, dimmed, with tag "nuclei: done". A small coded atom draws at the left: a dim nucleus and a soft blue electron region with a "?". On the fourth sentence the new plate `y11c-hydrogen-discharge-tube-lit-v1.png` (requested in v10's asset brief) fades in at the centre, glowing pink-violet. On "rainbow" a coded spectrum strip draws to its right: a dark band with four thin vertical lines (red, blue-green, blue, violet) at their hydrogen positions; a faint full rainbow ghost appears above it and is crossed. On "atom" the chip writes "How do line spectra reveal discrete atomic energy levels?". Hold about 2 seconds. This is the final frame (v10 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The discharge tube plate (about 420 px tall) is solid when it arrives. On "their electrons are the same" a blue hand tag "what are the electrons doing?" writes beside the small atom and clears before the last chip writes, so the final frame is exactly as described. Builders draw the nuclei, the atom and the spectrum in full ink (the final frame's "dimmed", "soft" and "faint ghost" wording is kept only so the join text matches v10), and the crossed rainbow is a solid strip struck in red.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Relative atomic mass (Ar): the weighted average mass of an element's atoms in a natural sample, on the scale where carbon-12 = 12 exactly. No units.
-2. Ar = Σ (isotope mass × fractional abundance), where fractional abundance = % ÷ 100. Example: Ar(B) = 10 × 0.199 + 11 × 0.801 = 10.8.
-3. Sense check: Ar lies between the lightest and heaviest isotope masses, nearer the more abundant. No single atom has the mass Ar.
-4. Two isotopes, unknown abundance: let x be one fraction and 1 − x the other; solve mass₁x + mass₂(1 − x) = Ar. State the assumption that there are only two isotopes.
+1. Ar: weighted average mass of an element's atoms (carbon-12 = 12). No units.
+2. Ar = sum of (isotope mass × fraction), where fraction = % ÷ 100.
+3. Check: Ar lies between the isotope masses, nearer the more common one.
+4. No single atom has the mass Ar. It is the average for a sample.
+5. Two isotopes, one unknown: use x and 1 − x. State the two-isotope assumption.
 
-Memory aid (large, on the notes screen): *The average leans toward the crowd.*
+Memory aid (framed card beside the notes, hand lettering, navy): *The average leans toward the crowd.* A small beam with its pivot sits inside the card. Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -197,6 +240,8 @@ Checked with Python and SymPy (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **6,202 characters**, 16 scenes (per-scene counts in Review notes). At 13.3 characters per second the speech is about 466 s; add about 2 s for the token sort (scene 2), 2 s for the scene 5 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 86 s): **about 552 s** (9.2 minutes), inside the band and under the cap. Reserve trims: scene 3's mass spectrometer sentences (keep the plate and its tag silent), scene 8's last sentence, scene 2's last sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,188 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 552 s to about 537 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v09` (route chem-y11-m1-v09; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v09`.
@@ -207,6 +252,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v09-learning-review.md`, `checks/c-y11-m1-v09-science-check.md`.
 
+Revision 4: key-notes hold is 45 s in all. Transitions 2 to 3 and 7 to 8 are now board changes (definition board, draw stage).
+
 ## Assets
 
 Have (inspected 5 November on a paper-background contact sheet):
@@ -215,6 +262,8 @@ Have (inspected 5 November on a paper-background contact sheet):
 Need: none new for this video. Scene 15 uses `y11c-hydrogen-discharge-tube-lit-v1.png`, requested in `chem-y11-m1-v10.md`'s asset brief (v10 also opens on this frame). Fallback if that plate is not ready: the coded spectrum strip alone with the chip.
 
 Coded: chlorine box, nuclei and tokens, number lines, tally, data tables, beams, stacks, pivot and ticker, rows, chips, small atom with electron region, spectrum strip, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Existing plates newly used (confirmed by file listing, not re-inspected): `public/assets/chemistry/y11c-gas-jar-chlorine-v1.png` (scenes 1, 2, 4), `y11c-sample-silicon-v1.png` (scene 9); `m8-mass-spectrometer-v1.png` is now large in scene 3 and on the attempt 1 card. `y11c-hydrogen-discharge-tube-lit-v1.png` is delivered. New plate requests: none. Simulation: the chance engine for scene 8.
 
 ## Codex asset brief
 
@@ -233,6 +282,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v08's final frame and the final frame matches v10's opening.
 10. Report site notes 1 to 3 to root.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the chance run uses weights 19.9 and 80.1 and its "average so far" readout approaches 10.801; the struck chip in scene 10 ("²⁸Si 22%, ²⁹Si 78%") would give 28.78, so its tag is fair; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -275,3 +326,27 @@ Narration: 6,203 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v09-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,188 characters over 16 scenes (the earlier 6,203 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v09-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: a painted jar of chlorine gas arrives at about 6 s and opens into the hundred-atom sample; a painted silicon sample stands beside the reverse problem.
+- Simulations: scene 8 is a chance-engine run that draws boron atoms at random while the average settles near 10.8 and no atom reads 10.8; the beam's pivot readout is live in scenes 5, 7 and 10.
+- Cuts: scene 3 (definition board with the spectrometer large) and scene 8 (draw stage) are new stages.
+- Hand tags (two or three) and a pen mark in scenes 1 to 5 and 7 to 10; the memory line is a framed card in scene 5.
+- Worked examples: givens cards, results framed in green, earlier rows solid; scene 10 gains a crossed slip (the swapped abundances).
+- Question cards: attempt 1 gains the spectrometer; attempt 2 gains a two-row "? %" table; feedback scenes gain navy givens strips and green frames.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the boron worked line and the equation written with mass₁ and mass₂ (kept in scenes 7 and 10).
+
+New plate requests: none.
+
+Joins: the opening is v08's final frame, unchanged (the jar arrives after it). The final frame (scene 15) is unchanged word for word, so v10's opening holds.
+
+Counts: 6,188 characters, unchanged; about 552 s to about 537 s.
+
+Calls for root: (1) the chance run is new picture content for scene 8 (the spoken words are unchanged); (2) the scene 10 crossed slip is new on-screen wording; (3) the chlorine gas jar as anchor, shown sealed.

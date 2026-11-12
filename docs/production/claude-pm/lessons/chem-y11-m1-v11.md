@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V11: Electron configuration and spdf notation. How does spdf notation locate the electrons in an atom? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: count corrected to the joined parser convention. Narration 5,830 characters (joined parser count), about 529.4 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,812 characters (sum of scene strings; 5,830 with joining spaces; Revision 1 was 5,830 by the joined parser count), 19 scenes, about 529.4 s (8.8 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,17 @@ Handoff: chem-y11-m1-v12, how electron arrangements organise groups and periods.
 - **Opening frame:** ws-v03's final frame exactly (Decisions).
 - **Final frame (v12 opens on it):** the coded periodic table outline at the centre, unshaded, with four lit cells: P (15) and Cl (17) in period 3 carrying small chips "…3p³" and "…3p⁵", K (19) at the start of period 4 with "…4s¹", and Fe (26) in the middle block with "…3d⁶"; above the table's top edge three grey brackets over the s columns, the d columns and the p columns, labelled "2?", "10?" and "6?"; v10's s, p, d, f chips gone; the chip "Next: How do electron arrangements organise groups and periods?".
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** Revision 3 used no painted object. The video still opens on ws-v03's final frame (the periodic table outline), and at about 4 s a painted gas jar of chlorine (`y11c-gas-jar-chlorine-v1.png`, about 420 px tall) arrives solid beside the enlarged Cl cell: seventeen electrons in every atom of this real gas. Each worked element then stands beside its ladder as a real sample: red phosphorus (`y11c-sample-red-phosphorus-v1.png`, scene 8), the chlorine jar again (scene 10) and a lump of iron (`c5-solid-lump-v1.png`, scene 11).
+- **Simulation: the filling run.** `SubshellLadder` is driven by a rule, not by typed arrows: given a number of electrons it places them lowest subshell first, one per box before pairing. Three live readouts at 52 px read the same state: "electrons placed", "configuration so far" and "unpaired". In scene 5 the run steps through 1 to 21 electrons so the path 1s, 2s, 2p, 3s, 3p, 4s, 3d is watched happening; in scenes 7, 8, 10 and 11 it stops at 19, 20, 21, then 15, 17 and 26. Coded in the lesson (kit gap 1, as before); no engine in `src/explainer/sims/` fits.
+- **Colour key (fixed for the whole video).** s rows blue, p rows green, d rows amber, f rows slate; electron arrows dark ink; unpaired electrons ringed teal; running totals and sum checks navy; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the subshell or idea they mark. Every tag the Visual lines call "grey" or "faint" is drawn solid in dark ink, and on-screen tags never show a video number.
+- **Type sizes (1080p).** Heading 60 px; the configuration line 56 px; readouts, the current rule line and framed answers 52 px, never under 44; question-card sentences 38 px; row labels, box labels and supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px. Orbital boxes are at least 64 px on the ladder and about 160 px in a close-up.
+- **Board stages and cuts.** (A) the Cl cell, the chlorine jar and the shell diagram, scene 1 (about 33 s); (B) the level tree becoming boxes, scenes 2 and 3 (about 67 s); (C) the notation "3p⁵" large, scene 4 (about 34 s); (D) the ladder and its filling path, scenes 5 to 7 (about 73 s); (E) phosphorus build, scene 8 (about 30 s): the sample at the left, the ladder at the centre; (F) box close-up, scene 9 (about 27 s): the 3p row fills the board; (G) chlorine, scene 10 (about 30 s): the jar at the left, the 3p close-up and the fold to [Ne]; (H) iron, scene 11 (about 34 s): the lump at the left, the ladder folded to [Ar] and the 3d row large; (I) the wrong line, scene 12 (about 27 s); (J) the memory card, scene 13 (about 20 s); question and feedback cards; the final frame; the notes board. Revision 3 kept the ladder in one layout through scenes 5 to 11 (about 194 s); stages E to H are the new cuts, each with a different layout and its own real sample.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -70,104 +81,138 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 
 Visual: opens on ws-v03's final frame; the "Next" chip fades. On the first sentence the Cl cell enlarges out of the table (the table dims behind it), "17" glowing, tag "17 electrons". On "shell" a coded Stage 5 shell diagram draws beside it (three rings with 2, 8 and 7 dots; tag "Stage 5: shells"). On the third sentence v10's s, p, d, f chips slide in beside the rings. On "electron" the line "1s² 2s² 2p⁶ 3s² 3p⁵" writes under the diagram in grey, as a preview, with a tag "the address" and a "?" over it; the heading writes on: "spdf notation: where are the electrons?".
 
+Upgrade (Revision 4): The table outline is drawn in dark ink on the paper stage, solid from the first frame. On "chlorine is element seventeen" the painted chlorine gas jar (about 420 px tall) arrives solid at the left with a dark-ink tag "chlorine gas", and an ink hand tag "17 electrons in each atom" writes with a pen arrow from the jar to the Cl cell. On "one number for each shell" a navy hand tag "2, 8, 7" writes under the shell diagram. On "So where exactly" a pen ring circles the seven outer dots with an ink hand tag "where, exactly?". The preview line is solid dark ink at 44 px (not grey), with its "?" in amber.
+
 ### 2. levels split into subshells
 > Start with the energy levels, numbered one, two, three and four, going up in energy. Each level is split into subshells. A subshell is a group of orbitals of the same type and energy. Level one has just an s **subshell**. Level two has s and **p**. Level three has s, p and **d**. And level four has all four types, s, p, d and **f**. So the level number tells you how many subshell types it **has**.
 
 Visual: board clears to the level tree at the left: four level bars "1", "2", "3", "4" stacked upward (tag "energy levels, v10"). Gloss "subshell: orbitals of the same type and energy". On "subshell" level 1 sprouts a blue "s"; on "p" level 2 sprouts "s" and a green "p"; on "d" level 3 sprouts "s", "p" and an amber "d"; on "f" level 4 sprouts "s", "p", "d" and a grey "f". On "has" the level numbers and their counts of letters glow in pairs (1 and 1, 2 and 2, 3 and 3, 4 and 4).
+
+Upgrade (Revision 4): The four level bars are on the board from the first frame, numbered at 44 px; the tag reads "energy levels" with no video number. The gloss is 38 px. Each letter sprouts at 52 px in its colour. On "Each level is split into subshells" an ink hand tag "levels have parts" writes beside the tree. On "how many subshell types it has" a navy pen bracket pairs each level number with its count of letters, and a navy hand tag "level n: n types" writes beside them.
 
 ### 3. orbitals, and two electrons each
 > Each subshell is made of orbitals, the regions where an electron is likely to be found. An s subshell has one orbital, a p subshell has three, a d has five, and an f has **seven**. Here's the key rule. Each orbital holds at most two electrons, and those two must spin in opposite directions. We draw each orbital as a box, and its electrons as an up arrow and a down **arrow**. So an s subshell holds two electrons, p holds six, d holds ten, and f holds **fourteen**.
 
 Visual: the letters become rows of boxes: s one box, p three, d five, f seven (gloss "orbital: where an electron is likely to be found, v10"); on "seven" the box counts write "1, 3, 5, 7". On "spin in opposite directions" one box enlarges with an up arrow and a down arrow dropping in (grey tags "Pauli: two per orbital, opposite spins" and "spin: drawn ↑ and ↓"). On "arrow" a third arrow tries to enter the box and bounces off (tag "never three"). On "fourteen" each row fills with paired arrows and writes its capacity: "s 2, p 6, d 10, f 14"; a grey tag "level capacity 2n²: 2, 8, 18, 32" sits small beside the tree (not spoken).
 
+Upgrade (Revision 4): The rows of boxes use boxes of about 100 px. On "the regions where an electron is likely to be found" the gloss is 34 px with no video number. On "an f has seven" the counts "1, 3, 5, 7" are 52 px. On "those two must spin in opposite directions" an ink hand tag "one up, one down" writes on the enlarged box with a pen ring. On "arrow" the third arrow bounces off and is struck in red with a red hand tag "never three". On "f holds fourteen" the capacities "s 2, p 6, d 10, f 14" are 52 px in the subshell colours; the tag "level capacity 2n²: 2, 8, 18, 32" is dark ink at 30 px.
+
 ### 4. reading the notation
 > Now the notation itself. Take three p five. The three is the energy level. The p is the type of subshell. And the small raised five is the number of electrons in **it**. So it's an address. Level three, the p subshell, five electrons live **there**. A full configuration lists every occupied subshell like this, and the raised numbers always add up to the number of electrons in the **atom**.
 
 Visual: "3p⁵" writes large at the centre. On "energy level" the "3" lifts with a navy leader line and label "level"; on "type of subshell" the "p" lifts, green, label "subshell type"; on "it" the "⁵" lifts, label "electrons in it" and a small p row of three boxes shows five arrows (↑↓ ↑↓ ↑). On "there" a coded address card writes "level 3 · p subshell · 5 electrons" (tag "an address, not a point: the electrons are in the orbital region"). On "atom" chlorine's full line from scene 1 writes again in ink; its superscripts tally beneath: "2 + 2 + 6 + 2 + 5 = 17 ✓"; brackets group it "1s² | 2s² 2p⁶ | 3s² 3p⁵" over "2 | 8 | 7" (tag "Stage 5 shells").
+
+Upgrade (Revision 4): "3p⁵" is about 200 px tall at the centre from the first frame. The three leader lines are pen lines with their labels as hand tags: navy "level", green "subshell type", ink "electrons in it". On "So it's an address" the address card is 44 px and framed. On "always add up to the number of electrons" the sum "2 + 2 + 6 + 2 + 5 = 17 ✓" is navy at 44 px with a pen tick, and the grouping brackets are pen brackets.
 
 ### 5. lowest energy first
 > So which subshells fill first? Electrons fill the lowest energy subshells first, just as a ball settles on the lowest step of a staircase. Mostly, that means level by level. One s, two s, two p, three s, three **p**. But there's a surprise at level four. The four s subshell is lower in energy than three d, so four s fills first, and three d fills after **it**.
 
 Visual: board change to `SubshellLadder` at the left (empty boxes): rows at their energies, 1s at the bottom, then 2s, 2p, 3s, 3p, 4s, 3d, 4p (grey tag "Aufbau principle: build up from the lowest energy"). v10's staircase appears small at the top right; a ball settles onto its lowest step. On "three p" a navy path traces up the rows 1s → 2s → 2p → 3s → 3p. On "surprise" the 4s row pulses; it sits just below the 3d row, and on "it" the path continues 3p → 4s → 3d with a small curved arrow, tag "4s before 3d".
 
+Upgrade (Revision 4): Board change to the ladder, solid from the first frame, with row labels at 38 px; the staircase picture is about 300 px wide. The filling run plays (see "Simulation") with its three readouts at the right. On "lowest energy subshells first" an ink hand tag "lowest first" writes at the 1s row with a pen arrow up. On "three p" the path is a navy pen path. On "The four s subshell is lower in energy than three d" an amber pen bracket spans the 4s and 3d rows with an amber hand tag "4s sits lower". On "it" the tag "4s before 3d" is 44 px.
+
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Potassium has nineteen electrons. Once three p is full, the atom holds eighteen. Where does electron nineteen **go**?
 
 Visual: the ladder fills to 3p in a quick sweep (counter "18"); one extra arrow "19" hovers above the ladder between the 4s and 3d rows. Chips "4s?" and "3d?". On "go" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 4): The readout "electrons placed" reads 18; the hovering arrow "19" is 52 px and the two chips are 44 px. No hand tags (thinking time).
 
 ### 7. potassium: four s first
 > Into four s, not three d. Four s is the lower energy subshell, so it fills first, and potassium ends in four s **one**. That's also why potassium starts a new row of the periodic table. Its outermost electron is the first one in level **four**. Calcium, with twenty electrons, fills four s with a second one. Only then, from scandium on, does three d start to **fill**.
 
 Visual: on "Into four s" the hovering arrow drops into the 4s box (counter "19"); the "3d?" chip is crossed. On "one" the line "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹" writes; tally "= 19 ✓". On "four" a small periodic table outline at the top right lights the K cell at the start of row 4, tag "first electron in level 4: new row". On "Calcium" a second arrow pairs in the 4s box (counter "20") and the Ca cell lights beside K; on "fill" the first arrow drops into a 3d box (counter "21"), and the Sc cell lights at the start of the middle block (tag "3d starts at scandium").
 
+Upgrade (Revision 4): On "Into four s" the answer "4s" is framed in green with a tick (52 px) and the "3d?" chip is struck in red. The readouts step 19, 20, 21. On "potassium ends in four s one" the line is 56 px and its tally is navy. On "the first one in level four" a blue hand tag "new level, new row" writes with a pen arrow to the K cell. On "does three d start to fill" an amber hand tag "3d starts here" writes with a pen arrow to the Sc cell.
+
 ### 8. phosphorus, step by step
 > Let's build phosphorus, with fifteen electrons. One s two, that's two. Two s two, four. Two p six, ten. Three s two, twelve. And three p takes the last three, making **fifteen**. So phosphorus is one s two, two s two, two p six, three s two, three p **three**. Group the levels, and you get two, eight, five, the Stage 5 **version**.
 
 Visual: board resets the ladder (empty); task strip "P: 15 electrons". Each clause fills a row with arrows as spoken, the counter ticking "2", "4", "10", "12", and on "fifteen" "15" (3p gets three arrows, placed but not yet arranged: they appear in the row's first box area and wait, tag "how do these three sit?"). On "three" the configuration line writes "1s² 2s² 2p⁶ 3s² 3p³" with "= 15 ✓". On "version" brackets group it into "2 | 8 | 5".
+
+Upgrade (Revision 4): Board change: the painted red phosphorus sample (about 300 px, dark-ink tag "phosphorus") at the left, the ladder at the centre and a navy givens card "P: 15 electrons" at the right, solid from the first frame. The readout "electrons placed" ticks 2, 4, 10, 12, 15 with a navy hand tag at each row giving the running total. On "one s two, two s two, two p six, three s two, three p three" the configuration line (56 px) is framed in green with a tick. On "two, eight, five" the grouping brackets are pen brackets with a navy hand tag "the old shell numbers".
 
 ### 9. one per box before pairing
 > But how do those three p electrons sit in their three orbitals? Electrons repel each other. So in orbitals of equal energy, they spread out, one per orbital, before any of them pair **up**. Phosphorus's three p electrons each get their own box. That gives phosphorus three unpaired electrons, electrons alone in their **orbital**.
 
 Visual: the 3p row enlarges at the right. On "repel" the three waiting arrows push apart (small coded repulsion marks between them); on "up" they settle one per box, all pointing up (grey tag "Hund's rule: one per box before pairing"); a crossed alternative shows "↑↓ ↑ (empty)" small (tag "not paired first"). On "orbital" each single arrow is ringed teal and a chip writes "3 unpaired" (gloss "unpaired: alone in its orbital").
 
+Upgrade (Revision 4): Board change to the box close-up: the three 3p boxes fill the board width (about 160 px each), with the sample small at the top left. On "Electrons repel each other" a green hand tag "they push apart" writes over the pen repulsion marks. On "one per orbital, before any of them pair up" the rule line is 44 px (tag "Hund's rule" in dark ink at 30 px). The paired-first alternative is solid inside an inset card with a dashed border, struck in red with a red hand tag "not paired first". On "three unpaired electrons" the teal rings are pen rings and the chip "3 unpaired" is framed in green (52 px).
+
 ### 10. chlorine, and a shortcut
 > Chlorine has seventeen, so its three p subshell holds five. The first three go one per box, and the next two pair **up**. That leaves two pairs and one single, so chlorine has one unpaired **electron**. We can shorten it, too. Everything up to two p six matches the noble gas neon, so we write neon in square brackets, then three s two, three p **five**.
 
 Visual: the ladder refills to 3s for Cl (counter "12"); the 3p row takes arrows one per box (↑ ↑ ↑), then on "up" two down arrows pair into the first two boxes: ↑↓ ↑↓ ↑. On "electron" the single arrow is ringed teal, chip "1 unpaired". On "shorten" the rows 1s to 2p fold into one grey block labelled "[Ne] = 1s² 2s² 2p⁶ (10 electrons)" (gloss "noble-gas shorthand"). On "five" the line writes "Cl: [Ne] 3s² 3p⁵" beside the full line, and the sum check "10 + 2 + 5 = 17 ✓".
+
+Upgrade (Revision 4): Board change: the chlorine gas jar (about 360 px) at the left, the 3p close-up at the centre and the ladder small at the right. The readouts read 17 electrons. On "the next two pair up" a green hand tag "then pair" writes with a pen arrow to the two down arrows. On "one unpaired electron" the chip "1 unpaired" is framed in green (52 px). On "matches the noble gas neon" the folded block is solid slate with dark-ink text and a navy hand tag "same as neon: 10". On "three p five" the shorthand line (56 px) is framed in green and its sum check is navy.
 
 ### 11. iron, and the written order
 > Now iron, with twenty-six. After three p six, eighteen electrons are placed, the same as argon. Four s fills next with two, making twenty. The last six go into three **d**. When we write it, we list the subshells in level order, so three d comes before four s. Argon, three d six, four s **two**. In the five d boxes, six electrons means five singles, then one pair. So iron has four unpaired **electrons**.
 
 Visual: the ladder refills to 3p (counter "18"); the rows fold to "[Ar]" (tag "argon: 18 electrons"). 4s takes two arrows (counter "20"); on "d" six arrows go into 3d (counter "26"). On "level order" the configuration line writes "1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²" with a small curved arrow lifting "3d⁶" in front of "4s²" (tag "filled 4s first; written in level order"). On "two" "Fe: [Ar] 3d⁶ 4s²" with "18 + 6 + 2 = 26 ✓". On "five singles" the 3d row enlarges: five up arrows, then one down arrow pairs in the first box: ↑↓ ↑ ↑ ↑ ↑. On "electrons" the four singles ring teal, chip "4 unpaired".
 
+Upgrade (Revision 4): Board change: the painted lump of iron (about 300 px, dark-ink tag "iron") at the left, the ladder folded to "[Ar]" at the centre and the 3d row large at the right. The readouts step 18, 20, 26. On "The last six go into three d" an amber hand tag "4s first, then 3d" writes on the ladder. On "we list the subshells in level order" the curved arrow is a pen arrow with an ink hand tag "written in level order". On "Argon, three d six, four s two" the line (56 px) is framed in green with a tick. On "five singles, then one pair" a pen bracket spans the five boxes. On "four unpaired electrons" the chip "4 unpaired" is framed in green (52 px).
+
 ### 12. a total that adds up, but is still wrong
 > One warning. A configuration can add up and still be wrong. One s two, two s two, two p five, three s two, three p six also adds to **seventeen**. But two p isn't full. An electron won't go into a higher subshell while a lower one still has room, so this atom isn't in its lowest energy **arrangement**. Check the order, as well as the **total**.
 
 Visual: board clears; the chlorine line from scene 10 sits at the top with a teal tick. Below it the wrong line writes in grey: "1s² 2s² 2p⁵ 3s² 3p⁶" with its tally; on "seventeen" the tally "2 + 2 + 5 + 2 + 6 = 17" writes and gains a tick (tag "the total checks out"). On "isn't full" a mini ladder shows the 2p row with one empty half-box ringed rose and the 3p row full; on "arrangement" a rose arrow from the extra 3p electron points back down to the 2p gap (tag "not the lowest energy"). On "total" the line is crossed and a chip writes "check the order and the total" (the site's chlorine example, with its correction).
+
+Upgrade (Revision 4): The correct chlorine line is 44 px with a teal tick, and the wrong line is solid dark ink at 44 px (not grey). On "also adds to seventeen" the tally takes a navy pen tick with a navy hand tag "total is fine". On "two p isn't full" a rose pen ring marks the empty half-box with a rose hand tag "a gap lower down". On "isn't in its lowest energy arrangement" the arrow is a rose pen arrow. On "total" the wrong line is struck in red with a red hand tag "right total, wrong order", and the closing chip is 44 px.
 
 ### 13. one line to remember
 > So here's the method in one line. Lowest first, one per box, then pair, and check the total. Fill from the lowest energy, remembering four s before three d. Spread out before pairing. And make sure the raised numbers add up to the electron **count**.
 
 Visual: the three configurations (P, Cl, Fe) stack small at the right with their sum checks. On "count" the memory line writes large: "Lowest first, one per box, then pair, and check the total." Hold about 2 seconds.
 
+Upgrade (Revision 4): The three configurations (44 px) stack at the right beside their samples as thumbnails (about 160 px each). The memory line sits in a framed memory card (hand lettering, 48 px): blue "Lowest first," green "one per box, then pair," navy "and check the total."
+
 ### 14. attempt 1 (countdown, 10 seconds)
 > Your turn. Sulfur has atomic number sixteen. Write the full electron configuration of a sulfur atom, using s p d f notation, and state how many unpaired electrons it has. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "Sulfur has atomic number 16. (a) Write the full electron configuration of a sulfur atom in spdf notation. (b) Draw the orbital diagram for its 3p subshell and state the number of unpaired electrons in a sulfur atom. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no ladder).
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted sulfur sample (`y11c-sample-sulfur-v1.png`, about 280 px), untagged. Nothing answer-bearing (no ladder, no boxes).
 
 ### 15. feedback 1 (brief)
 > Sulfur is one s two, two s two, two p six, three s two, three p four, adding to **sixteen**. In three p, the first three go one per box, and the fourth pairs up. That's one pair and two singles, so two unpaired **electrons**. Pairing them up first, to get zero unpaired, is the classic slip. One per box comes **first**.
 
 Visual: card shrinks to the top. Row "(a) 1s² 2s² 2p⁶ 3s² 3p⁴ (2 + 2 + 6 + 2 + 4 = 16 ✓)" boxed on "sixteen". A 3p row of three boxes fills ↑ ↑ ↑ then ↓ into the first: ↑↓ ↑ ↑; on "electrons" the two singles ring teal, boxed "(b) 2 unpaired". On "first" a chip with boxes "↑↓ ↑↓ (empty): 0 unpaired" fades in and is crossed. Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "sulfur | Z = 16 | 16 electrons". On "adding to sixteen" the answer "(a) 1s² 2s² 2p⁶ 3s² 3p⁴" is framed in green with a tick (52 px). The 3p boxes are about 120 px. On "two unpaired electrons" the answer "(b) 2 unpaired" is framed in green. On "first" the crossed chip is struck in red with a red hand tag "one per box first".
+
 ### 16. attempt 2 (countdown, 10 seconds)
 > Last one. Vanadium has atomic number twenty-three. Write its electron configuration using noble gas shorthand, and state how many unpaired electrons a vanadium atom has. Pause here to answer.
 
 Visual: `QuestionCard`: "Vanadium has atomic number 23. (a) Write the electron configuration of a vanadium atom using noble-gas shorthand. (b) State the number of unpaired electrons in a vanadium atom. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the periodic table outline (about 520 px wide) with cell 23 "V" lit and no configuration shown, as a data sheet would. Nothing answer-bearing.
 
 ### 17. feedback 2 (brief)
 > Argon takes eighteen. Four s fills next with two, making twenty, and the last three go into three d. So vanadium is argon, three d three, four s **two**. The three d electrons go one per box, so there are three unpaired **electrons**. Writing argon, three d five, is the classic slip. It fills three d before four s, and four s comes **first**.
 
 Visual: card shrinks to the top. A mini ladder fills from "[Ar] 18" to 4s² ("20") to 3d³ ("23"); row "(a) [Ar] 3d³ 4s² (18 + 3 + 2 = 23 ✓)" boxed on "two". On "electrons" the 3d row shows ↑ ↑ ↑ (two empty boxes), singles ringed teal, boxed "(b) 3 unpaired". On "first" a chip "[Ar] 3d⁵" fades in and is crossed (caption "4s fills before 3d"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "vanadium | Z = 23 | [Ar] = 18". The mini ladder's readout steps 18, 20, 23. On "argon, three d three, four s two" the answer "(a) [Ar] 3d³ 4s²" is framed in green with a tick (52 px). On "three unpaired electrons" the answer "(b) 3 unpaired" is framed in green. On "first" the crossed chip is struck in red with a red hand tag "4s fills first".
+
 ### 18. handoff: back to the table
 > Now look where our atoms sit. Phosphorus and chlorine both end in three p, and they share a row. Potassium's four s one begins the next row, and iron is filling three d, in the middle block. That's no accident. Next, how do electron arrangements organise groups and **periods**?
 
 Visual: board clears to the periodic table outline. On "Phosphorus and chlorine" their cells light with chips "…3p³" and "…3p⁵" and a faint bar along period 3. On "Potassium" the K cell lights at the start of period 4 with "…4s¹"; on "iron" the Fe cell lights in the middle block with "…3d⁶". On "no accident" three grey brackets draw over the table's top edge, over the s, d and p columns, labelled "2?", "10?", "6?". On "periods" the chip "Next: How do electron arrangements organise groups and periods?" writes. Hold about 2 seconds. This is the final frame (v12 opens on it).
 
-### 19. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The table outline is drawn in dark ink. On "they share a row" the bar along period 3 is a solid green pen line (not faint). On "That's no accident" the three brackets are pen brackets with their labels at 38 px in blue, amber and green. Nothing else is added, so the final frame is exactly as described under "Opening frame and final frame" (its "grey brackets" are drawn in the subshell colours at full strength).
+
+### 19. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Energy levels (n = 1, 2, 3, 4) split into subshells: level 1: s; level 2: s, p; level 3: s, p, d; level 4: s, p, d, f.
-2. Orbitals per subshell: s 1, p 3, d 5, f 7. Each orbital holds at most 2 electrons, with opposite spins. Capacities: s 2, p 6, d 10, f 14.
-3. Notation: 3p⁵ = level 3, p subshell, 5 electrons. Superscripts add up to the number of electrons.
-4. Filling order: 1s 2s 2p 3s 3p 4s 3d 4p (4s fills before 3d). Write in level order: Fe = 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s² = [Ar] 3d⁶ 4s².
-5. Equal-energy orbitals fill one per box before pairing. P: 3 unpaired; Cl: 1 unpaired; Fe: 4 unpaired.
+1. Levels split into subshells: 1: s; 2: s, p; 3: s, p, d; 4: s, p, d, f.
+2. Orbitals: s 1, p 3, d 5, f 7. Two electrons each, so s 2, p 6, d 10, f 14.
+3. 3p⁵ means level 3, p subshell, 5 electrons. Superscripts add to the total.
+4. Fill 1s 2s 2p 3s 3p 4s 3d 4p. Write in level order: Fe = [Ar] 3d⁶ 4s².
+5. Equal-energy orbitals: one electron per box before any pair up.
 
-Memory aid (large, on the notes screen): *Lowest first, one per box, then pair, and check the total.*
-
-At the end the notes cross-fade back to scene 18's final frame.
+Memory aid (framed card beside the notes, hand lettering, in the scene 13 colours): *Lowest first, one per box, then pair, and check the total.* Notes 34 px with s, p and d in their colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 18's final frame.
 
 ## Teaching checks
 
@@ -221,6 +266,8 @@ Checked with Python (5 November; an Aufbau fill in the order 1s 2s 2p 3s 3p 4s 3
 
 Revision 1 count (5 November; build parser rules): **5,812 characters**, 19 scenes. At 13.3 characters per second the speech is about 437 s; add about 10 s of holds and settling (the ladder fills in 5, 8, 10 and 11), 2 s for the memory hold, 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 528 s (8.8 minutes)**.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,812 characters, 19 scenes). The notes scene is now 45 s in all (it was about 58 s), so the estimate falls from about 529 s to about 516 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v11` (route chem-y11-m1-v11; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v11`.
@@ -231,6 +278,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v11-learning-review.md`, `checks/c-y11-m1-v11-science-check.md`.
 
+Revision 4: key-notes hold is 45 s in all. Transitions 7 to 8, 8 to 9, 9 to 10 and 10 to 11 are now board changes (new layout and a new real sample each time).
+
 ## Assets
 
 Plates: none new and none reused. Every visual here is an abstract model (levels, orbitals, electrons, notation, the periodic table outline), coded under the owner's rule that real objects are painted and abstract diagrams are coded. Checked: no existing explainer component draws subshell ladders or orbital boxes (`src/explainer/` searched 5 November for "orbital", "periodic" and "spdf": no chemistry matches), so `SubshellLadder` and the periodic table outline are new shared components (also used by v12 and later Module 1 videos).
@@ -238,6 +287,8 @@ Plates: none new and none reused. Every visual here is an abstract model (levels
 Kit gaps (for the build brief):
 1. **`SubshellLadder`** (new, shared): rows of orbital boxes at energy heights from a subshell list; cue-driven arrow placement (single up arrows first within a row, then down arrows); running counter; fold-to-core ("[Ne]", "[Ar]") animation; a filling-path trace.
 2. **`PeriodicGrid`** (new, shared; first drawn in ws-v03's final frame): an 18-column outline with an optional f-block pair of rows; cells addressable by Z; highlight, chip and bracket overlays; block tints s blue, p green, d amber, f grey (v12).
+
+Revision 4 (12 Nov 2026). The Revision 3 statement "Plates: none" is withdrawn. Existing plates now used (confirmed by file listing, not re-inspected): `public/assets/chemistry/y11c-gas-jar-chlorine-v1.png` (scenes 1, 10, 13), `y11c-sample-red-phosphorus-v1.png` (scenes 8, 9, 13), `c5-solid-lump-v1.png` (scenes 11, 13, tagged "iron"), `y11c-sample-sulfur-v1.png` (attempt 1 card). New plate requests: none. Levels, orbitals, the ladder and the table outline stay coded.
 
 ## Codex error-check brief
 
@@ -252,6 +303,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals ws-v03's final frame and the final frame matches v12's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the filling run places electrons in the order 1s 2s 2p 3s 3p 4s 3d with one per box before pairing, and its readouts at 15, 17, 19, 20, 21 and 26 electrons match the stated configurations and unpaired counts (3, 1, 1, 0, 1, 4); the samples shown are the named elements; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +347,28 @@ Narration: 5,830 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v11-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,812 characters over 19 scenes (the earlier 5,830 included the 18 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v11-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: Revision 3 had no painted object. A jar of chlorine gas arrives at about 4 s; red phosphorus, chlorine and iron stand beside their worked configurations.
+- Simulation: the ladder is a rule-driven filling run with live "electrons placed", "configuration so far" and "unpaired" readouts.
+- Cuts: scenes 8, 9, 10 and 11 are new stages with different layouts. Before, one ladder layout ran about 194 s through scenes 5 to 11.
+- Hand tags (two or three) and a pen mark in scenes 1 to 5 and 7 to 12; the memory line is a framed card in scene 13.
+- Worked configurations framed in green (scenes 7 to 11, 15, 17); crossed slips struck in red with red hand tags (scenes 3, 7, 9, 12, 15, 17).
+- Grey and faint text is solid dark ink; tags with video numbers are reworded.
+- Question cards: attempt 1 gains the sulfur sample; attempt 2 gains the table outline with cell 23 lit; feedback scenes gain navy givens strips.
+- Key notes: five long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the three unpaired-count examples (kept in scenes 9 to 11).
+
+New plate requests: none.
+
+Joins: the opening is ws-v03's final frame, unchanged (drawn in dark ink on the paper stage). The final frame is unchanged, so v12's opening holds.
+
+Counts: 5,812 characters, unchanged; about 529 s to about 516 s.
+
+Calls for root: (1) real samples beside an abstract lesson (chlorine jar, red phosphorus, iron), which reverses the Revision 3 "no plates" call; (2) the attempt 2 picture shows vanadium's place in the table, as a data sheet would; (3) the filling run stays a lesson-coded part.

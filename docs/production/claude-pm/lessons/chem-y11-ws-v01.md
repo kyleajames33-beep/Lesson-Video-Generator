@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V01: Questioning and predicting. How can new evidence improve a testable chemistry question? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error-check findings resolved (root). Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: "specific" judged against the percentage question; Group C card shows steady mass; count corrected. Narration 6,328 characters (joined parser count), about 567.7 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error-check finding resolved by root, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,314 characters (sum of scene strings; 6,328 with joining spaces; Revision 1 was 6,333 by the joined parser count), 15 scenes, about 567.7 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -67,6 +67,17 @@ Handoff: chem-y11-ws-v02, planning the modified question.
 - **Opening frame:** v10's final frame exactly (Decisions).
 - **Final frame (ws-v02 opens on it):** at the left, the unlit blue crystal crucible (`y11c-cuso4-crucible-blue-v1.png`, from v07) with the small prediction sketch above it (axes "heating time (min)" and "% mass lost", dashed curve rising to a grey line "36.1%", tag "prediction"); at the right, the question box "How does the time of gentle heating affect the percentage of mass lost by blue copper sulfate crystals?" over the modified `HypothesisSlots` card ("If the crystals are heated gently until their mass stops changing, then they'll lose 36.1% of their mass, because gentle heat drives off the water, while strong heat also breaks down the copper sulfate."); beside it the clipboard plate (`m5x-clipboard-sheet-v1.png`) with a coded grey "plan: ?" on its sheet; the chip "Next: How does a chemistry plan produce valid, useful data?".
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The video opens on v10's final frame (the coded model timeline). At about 9 s the real investigation arrives as painted plates: the top-pan balance (`y11c-top-pan-balance-v1.png`, about 420 px) with the watch glass of sand (`y11c-watch-glass-sand-v1.png`) beside v06's accounting bar. From scene 2 the crucible of copper sulfate crystals (blue, then white) is the running real object, and the three groups' crucibles carry the evidence in scenes 7 and 8.
+- **Simulation: the heating run (scene 9).** A coded model of mass lost against gentle heating time, on one clock: a time readout runs 0 to 10 min, the "% mass lost" readout (52 px) rises and levels at 36.1%, the curve draws as the readout moves and the crucible plate cross-fades blue, patchy, white in step. Group B's point (4 min, 27.6%) sits on the curve and group A's (steady mass, 36.0%) on the level part. It is labelled "prediction (model)": only those two points are data, and they are the design's illustrative class data. The number line in scene 6 is the second live picture: the shaded band narrows from "almost any loss" to a thin band at 36.1%.
+- **Colour key (fixed across ws-v01 to ws-v03).** "If" and the independent variable navy; "then" and measured quantities dark ink; "because" gold; evidence that fits teal; evidence that challenges rose; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every tag the Visual lines call "grey" is dark ink at full strength, and on-screen tags never show a video number ("v06" and "v07" tags are dropped or reworded).
+- **Type sizes (1080p).** Heading 60 px; the question box, the current hypothesis slot, readouts and framed answers 44 to 52 px; question-card sentences 38 px (the attempt 2 card may drop to 34 px to hold its table and printed hypothesis); check-list lines, evidence cards and supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) timeline, then the balance and the bar, scene 1 (about 37 s); (B) crucible and question box, scenes 2 and 3 (about 86 s; at scene 3 the board is re-laid with the hypothesis card full width); (C) primary against secondary, scene 4 (about 39 s); (D) the check list, scenes 5 and 6 (about 48 s); (E) the three crucibles and the bins, scenes 7 and 8 (about 84 s); (F) modify board, scene 9 (about 51 s): the hypothesis card, the question box and the live heating run; question and feedback cards; the final frame; the notes board. Revision 3 kept the three crucibles through scenes 7 to 9 (about 135 s); stage F is the new cut.
+- **Question cards.** Each attempt card arrives whole with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key as in Decisions.
@@ -76,84 +87,110 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v10's final frame (Decisions). On the first sentence the timeline's arrows glow in turn. On the second sentence the timeline shrinks to a corner chip "new evidence → better model" and v06's accounting bar slides to the centre and enlarges: sand and salt segments with the teal overhang past the "100%" end line. On "percent" the overhang is ringed with a scribble circle and its label writes "103.7%: extra mass". On "dry" a question box writes "How much salt is there?", then strikes and rewrites "Was the sand really dry?" (grey tag "v06"). On "them" the bar slides away left and the heading writes on: "From evidence to a better question".
 
+Upgrade (Revision 4): The timeline is solid from the first frame. On "Your own investigations work the same way" the painted balance (about 420 px) with the watch glass of sand arrives solid at the left, and the accounting bar enlarges beside it. On "more than a hundred percent" the pen ring round the overhang takes a teal hand tag "103.7%: extra mass". On "It was new evidence" a teal hand tag "evidence, not a mistake" writes above the bar. On "was the sand really dry" the first question is struck with a slate line and the rewritten question (44 px) takes a navy pen underline; the tag "v06" is not shown.
+
 ### 2. from observation to inquiry question
 > In the percentage video, heating drove the water out of blue copper sulfate crystals, leaving a white powder. That's an observation, something we notice with our senses or instruments. To investigate it, we turn it into an inquiry question, one that data can answer. What happens when you heat crystals? That's too broad, because there's nothing specific to **measure**. A better question is: what percentage of the mass of blue copper sulfate crystals is lost when they're heated until their mass stops **changing**? It names what we measure, the mass before and after, and the condition, heating to a steady **mass**.
 
 Visual: the unlit blue crucible plate (`y11c-cuso4-crucible-blue-v1.png`) at the left cross-fades through the lit plate to the white powder (`m5-g02b-open-crucible-v1.png`) as the first sentence plays (coded steam wisps; grey tag "v07: water driven off"). A chip "observation: blue crystals → white powder" writes under it (gloss "observation: noticed with senses or instruments"). At the right a question box writes "What happens when you heat crystals?"; on "measure" it gains a grey tag "nothing specific to measure" and is crossed. On "changing" the new question writes beneath it (gloss "inquiry question: one that data can answer"). On "mass" the words "percentage of the mass ... lost" underline navy (tag "measured: mass before and after") and "until their mass stops changing" underlines grey (tag "condition: steady mass, v06"); a small grey tag "concept: water of crystallisation" sits under the box.
+
+Upgrade (Revision 4): The crucible plates are about 460 px tall and solid; the tag reads "water driven off" with no video number. On "That's an observation" a teal hand tag "what we saw" writes beside the observation chip (38 px). On "one that data can answer" the gloss is navy hand lettering at 34 px. On "nothing specific to measure" the broad question is struck in red with a red hand tag "measure what?". On "A better question is" the new question writes at 44 px. On "It names what we measure" a navy pen underline marks "percentage of the mass ... lost" with a navy hand tag "measured"; on "heating to a steady mass" a second pen underline marks the condition with an ink hand tag "condition". The tags under the box are dark ink at 30 px with no video number.
 
 ### 3. a hypothesis, with a reason
 > Next comes a hypothesis, a testable prediction with a reason from what we already know. A useful pattern is if, then, because. If blue copper sulfate crystals are heated until their mass stops changing, then they'll lose thirty-six point one percent of their mass, because the formula shows that water is thirty-six point one percent of the mass, and heating drives the water **off**. The reason is the part that makes it more than a guess. If, then, because: the because is the **chemistry**.
 
 Visual: `HypothesisSlots` builds under the question as spoken: "If" (navy) "blue copper sulfate crystals are heated until their mass stops changing," "then" (ink) "they'll lose 36.1% of their mass," "because" (gold) "the formula CuSO₄·5H₂O shows water is 36.1% of the mass, and heating drives the water off." On "off" a small inset beside the because slot: v07's mass bar with the pale blue water group labelled "36.1%" lifting away (grey tag "recall: v07"). On "more than a guess" a chip "a hypothesis is a guess" fades in and is crossed. On "chemistry" the gold slot pulses and the memory line writes large: "If, then, because: the because is the chemistry." Hold about 2 seconds.
 
+Upgrade (Revision 4): The board is re-laid: the hypothesis card takes the full width of the right two thirds and the crucible steps back to about 300 px. Each slot is 44 px with its lead word in its role colour. On "a testable prediction with a reason" a gold hand tag "prediction + reason" writes above the card. On "heating drives the water off" the mass-bar inset is solid, about 360 px wide, tagged "the percentage video" in dark ink (no video number). On "more than a guess" the chip "a hypothesis is a guess" is struck in red with a red hand tag "needs a because". On "chemistry" the memory line sits in a framed memory card (hand lettering, 52 px): navy "If," ink "then," gold "because: the because is the chemistry."
+
 ### 4. primary and secondary data
 > Primary data are measurements you collect yourself, like masses read from a balance. Secondary data were collected by someone else, like the relative atomic masses behind our thirty-six point one percent, from a published data **sheet**. And some questions should only be answered with secondary data. At what temperature does copper sulfate itself start to break down? Testing that would mean very strong heating, which gives off harmful gases, so we'd look it up in published data from a reliable **source**.
 
 Visual: the board splits. Left, tag "primary data: collected by you": the balance plate (`y11c-top-pan-balance-v1.png`, from v06) with the white crucible on its pan; a coded readout ticks "24.31 g" (tag "crucible"), then "26.81 g" (tag "crucible + crystals"), grey tag "illustrative data". Right, tag "secondary data: collected by someone else": on "sheet" a coded data-sheet card writes "Cu 63.5, S 32.1, O 16.0, H 1.0" with a thin arrow to the "36.1%" in the because slot. On "break down" a second question box writes "At what temperature does copper sulfate break down?" with a grey tag "very strong heat: harmful gases". On "source" a coded card "published data" stacks under it with a teal tick and the tag "answer this one with secondary data".
+
+Upgrade (Revision 4): Both halves are on the board from the first frame: the balance (about 460 px) with the crucible at the left, the data-sheet card frame at the right. The readouts are live at 52 px and the tag "illustrative data" is dark ink at 30 px. On "measurements you collect yourself" a navy hand tag "yours" writes over the balance; on "collected by someone else" an ink hand tag "theirs" writes over the data sheet with a pen arrow to "36.1%". On "which gives off harmful gases" the tag is terracotta at 34 px with a pen underline. On "published data from a reliable source" the stacked card takes a teal tick with a teal hand tag "look it up".
 
 ### 5. judging a hypothesis (countdown, 3 seconds)
 > So how do we judge a hypothesis? Is it testable, with something we can change or measure? Is it specific enough to answer the inquiry question, which asks for a percentage? Is the reason sound chemistry? And could some result show it's wrong? Here's a weaker one. The crystals will lose some mass when they're heated. Which check does it **fail**?
 
 Visual: board clears to the right half. `CheckList` writes at the left as spoken: "testable: something to change or measure"; "specific: enough to answer the question (here, a percentage)"; "reasoned: the because is sound chemistry"; "could be shown wrong: some result would contradict it". A candidate card writes at the right: "The crystals will lose some mass when they're heated." On "fail" the 3 s `Countdown` ring runs beside it. No ticks yet.
 
+Upgrade (Revision 4): The four check lines (38 px, numbered by hand in navy) and the candidate card (44 px) are on the board from the first frame of the scene. No hand tags during the countdown (thinking time).
+
 ### 6. reading the checks
 > It's testable, and it could even be shown wrong, if the mass didn't change. But it gives no amount, so it isn't specific enough for our question. It also gives no reason. Our hypothesis passes all four checks, because a result of twenty-five percent would clearly show it's **wrong**.
 
 Visual: the check list runs against the weak card: ticks on "testable" and "could be shown wrong" (tag "only if the mass didn't change"). On "gives no amount" a small coded number line 0 to 100% shades from just above 0 all the way along (tag "no percentage: almost any loss fits"); on "isn't specific enough" the "specific" check is crossed; on "no reason" the "reasoned" check is crossed. On the last sentence the hypothesis card from scene 3 slides in and ticks all four; on "wrong" a small line writes under it: "a result that would show it wrong: 25% lost", and the number line now shades only a narrow band at 36.1%.
+
+Upgrade (Revision 4): The ticks are green pen ticks and the two failed checks take red pen crosses. On "It's testable" a green hand tag "passes 2" writes beside the two ticks. On "it gives no amount" the number line (labels 30 px) shades almost its whole length with a red hand tag "almost anything fits". On "Our hypothesis passes all four checks" the hypothesis card is framed in green with a tick, and on "would clearly show it's wrong" the shaded band narrows to 36.1% with a gold hand tag "one clear target".
 
 ### 7. new evidence from three groups (countdown, 3 seconds)
 > Now the new evidence. Three groups each heated two point five zero grams of crystals. Group A heated gently until the mass stopped changing, and lost thirty-six point zero percent. That fits. Group B stopped after four minutes, with blue patches still showing, and lost only twenty-seven point six **percent**. Group C used a roaring flame. Their powder turned black at the bottom, and they lost forty-seven point two **percent**. Which one should change our hypothesis, and which one just points to a problem with the **method**?
 
 Visual: board change. Three crucible plates in a row under "A", "B", "C": A the white powder (`m5-g02b-open-crucible-v1.png`, burner shown unlit by the plate set's unlit variant if painted, otherwise as is), B white with pale blue patches (`y11c-cuso4-crucible-patchy-v1.png`, new), C white with black solid at the bottom (`y11c-cuso4-crucible-black-v1.png`, new). Under each, a coded `EvidenceCard` writes "2.50 g → lost 0.90 g: 36.0%" (A), "lost 0.69 g: 27.6%" (B, with "4 min; blue patches"), "lost 1.18 g: 47.2%" (C, with "roaring flame; heated to steady mass; black solid", the steady-mass condition visible before the countdown, Revision 2); grey tag "illustrative data". A's card slides onto the hypothesis and glows teal "fits". On the first "percent" B's blue patches are ringed; on the second "percent" C's black base is ringed. On "method" three bins write under the cards, "method?", "prediction?", "reason?", and the 3 s `Countdown` ring runs. B and C wait above the bins.
 
+Upgrade (Revision 4): The three crucible plates are about 380 px tall, solid from the first frame, with their letters at 52 px and each evidence card at 34 px; the tag "illustrative data" is dark ink. On "That fits" a teal hand tag "fits" writes on A's card with a teal pen tick. On "with blue patches still showing" the pen ring round B's patches takes a navy hand tag "still blue". On "turned black at the bottom" the pen ring round C's base takes a rose hand tag "black?". The three bins are labelled at 38 px. No further tags during the countdown.
+
 ### 8. what each result challenges
 > Group B is a method problem. The blue patches show water was still there, so they didn't heat until the mass stopped changing, which our hypothesis already requires. It doesn't challenge the hypothesis, but it tells us that time matters. Group C is different. They did heat until the mass was steady, and they still lost far more than the water. Black solid means the copper sulfate itself broke down. So the because was incomplete, heating doesn't always drive off only water. When evidence doesn't fit, ask what it challenges: the method, the prediction, or the **reason**.
 
 Visual: B's card drops into the "method?" bin, which fills teal-grey (tag "didn't meet the condition: water left"); a small chip "time matters" peels off B and parks at the top right. On "Group C is different" C's card lifts; on "steady" a tick "steady mass: condition met" writes on it; on "broke down" a small coded particle inset at C's black base shows a CuSO₄ unit splitting into a black CuO unit and a grey gas puff (grey tag "breaks down: more mass lost"). C's card drops into both "prediction?" and "reason?" bins (rose, "challenges"); the because slot in `HypothesisSlots` glows rose. On "reason" the rule writes large under the bins: "Evidence that doesn't fit: does it challenge the method, the prediction or the reason?"
+
+Upgrade (Revision 4): On "Group B is a method problem" the answer tag "B: method" is framed in green (44 px) as its card drops. On "water was still there" a navy hand tag "not heated long enough" writes with a pen arrow to the patches. On "time matters" the chip is 38 px. On "Black solid means the copper sulfate itself broke down" a rose hand tag "more than water left" writes with a pen arrow to the black base; the particle inset is at least 300 px wide with labels at 30 px. On "the because was incomplete" the because slot takes a rose pen underline. The rule line is 44 px in a framed card.
 
 ### 9. modifying the hypothesis and the question
 > Published data agree. Copper sulfate breaks down only when it's much hotter than it needs to be to lose its water. So we modify the hypothesis, with a condition and a better reason. If the crystals are heated gently until their mass stops changing, then they'll lose thirty-six point one percent of their mass, because gentle heat drives off the water, while strong heat also breaks down the copper **sulfate**. And Group B's evidence gives us a sharper question. How does the time of gentle heating affect the percentage of mass **lost**? Our prediction: the percentage rises, then levels off at thirty-six point one, once all the water has **gone**.
 
 Visual: the "published data" card from scene 4 slides in beside C's bin with a teal tick (tag "secondary data agrees"). On "modify the hypothesis" `HypothesisSlots` edits in place: "gently" inserts after "heated" (strike and rewrite, gold underline), and the because slot gains "while strong heat also breaks down the copper sulfate" (gloss "modify: change it to fit the evidence"); on "sulfate" the C card's rose glow fades to teal "now explained". On "sharper question" the "time matters" chip slides into the question box, which strikes its old wording and rewrites: "How does the time of gentle heating affect the percentage of mass lost by blue copper sulfate crystals?"; on "lost" "time of gentle heating" underlines navy and "percentage of mass lost" ink. On "gone" small coded axes draw beside the box ("heating time (min)", "% mass lost") and a dashed curve rises and flattens onto a grey line "36.1%", tag "prediction".
 
+Upgrade (Revision 4): Board change to the modify board, solid from the first frame: the hypothesis card at the upper right, the question box under it, and at the left the crucible (about 380 px) over the empty axes of the heating run. On "we modify the hypothesis" the inserted word "gently" and the added clause are gold with a gold pen underline and a gold hand tag "condition added, reason fixed". On "a sharper question" the old question is struck with a slate line and the new one writes at 44 px. On "the percentage rises, then levels off" the heating run plays live (see "Simulation"), with the readouts at 52 px, group B's point marked "B: 4 min, 27.6%" and a teal hand tag "levels at 36.1%" with a pen bracket on the flat part. The label "prediction (model)" is dark ink at 30 px.
+
 ### 10. attempt 1 (countdown, 10 seconds)
 > Your turn. A student dissolves a sand and salt mixture in twenty millilitres of water, filters it, and recovers much less salt than expected. Salt dissolves only up to a limit, about thirty-six grams in a hundred millilitres of water. Write an inquiry question about the volume of water used, then a hypothesis using if, then, because. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A student separates a 20.00 g mixture of sand and salt by dissolving it in 20 mL of water, filtering, and evaporating the filtrate. Much less salt is recovered than expected. At room temperature, about 36 g of salt dissolves in 100 mL of water. (a) Write an inquiry question about the volume of water used. (b) Write a hypothesis in the form 'If ..., then ..., because ...'. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted beaker of sand settled in clear liquid (`y11c-sand-saltwater-beaker-v1.png`, about 280 px), untagged. Nothing answer-bearing.
 
 ### 11. feedback 1 (brief)
 > One good question: how does the volume of water used affect the percentage of salt recovered from the **mixture**? A hypothesis: if more water is used, then more salt is recovered, because more water can dissolve more salt, leaving less behind in the sand. More water is better, is the classic slip. It names nothing to measure, and gives no **reason**.
 
 Visual: card shrinks to the top. Row "(a) How does the volume of water used affect the percentage of salt recovered from the mixture?" with "volume of water" navy and "percentage of salt recovered" ink; boxed on "mixture". `HypothesisSlots`: "If more water is used, then more salt is recovered, because more water can dissolve more salt, leaving less in the sand." boxed "(b)". On "reason" a chip "More water is better." fades in and is crossed (caption "nothing measured, no because"). Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "20.00 g mixture | 20 mL of water | about 36 g of salt per 100 mL". The question row "(a)" is framed in green with a tick (38 px), with "volume of water" in navy. The hypothesis "(b)" is framed in green with its three lead words in navy, ink and gold. On "reason" the crossed chip is struck in red with a red hand tag "nothing measured, no because".
+
 ### 12. attempt 2 (countdown, 10 seconds)
 > Last one. The student tests twenty, forty, sixty and eighty millilitres of water. The salt recovered is thirty-five point five, sixty-nine point four, sixty-nine point six and sixty-nine point five percent of the mixture. Explain what this evidence shows, and modify the hypothesis to reflect it. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed, with a small coded table: "Volume of water (mL): 20, 40, 60, 80. Salt recovered (% of mixture): 35.5, 69.4, 69.6, 69.5." and the hypothesis printed: "If more water is used, then more salt is recovered, because more water can dissolve more salt." Card text: "Each test used a 20.00 g sample of the same mixture. At room temperature, about 36 g of salt dissolves in 100 mL of water. (a) Explain what the new evidence shows. (b) Modify the hypothesis to reflect the evidence. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no graph).
+
+Upgrade (Revision 4): The card text is 34 to 38 px with the table cells at 34 px; the printed hypothesis sits in its own tinted box. From the first frame the card's right side carries the same beaker plate (about 220 px), untagged. Nothing answer-bearing (no graph).
 
 ### 13. feedback 2 (brief)
 > Recovery rises from twenty to forty millilitres, then stays at about seventy percent. Forty millilitres can dissolve about fourteen grams, so by then, all the salt has dissolved. So modify it. If more water is used, the salt recovered increases until all the salt dissolves, then stays the same, because extra water has no more salt to dissolve. Ignoring the last two results because they don't fit is the classic **mistake**. Evidence that doesn't fit is what improves the **hypothesis**.
 
 Visual: card shrinks to the top. The four values plot as dots on small coded axes (volume against % recovered), rising then flat; a short row "40 mL × 36 g ÷ 100 mL ≈ 14 g: all the salt dissolves" and boxed "(a) rises, then levels near 70%". `HypothesisSlots` edits in place: "increases until all the salt dissolves, then stays the same, because extra water has no more salt to dissolve", boxed "(b)". On "mistake" a chip "Ignore the 60 and 80 mL results." fades in and is crossed. On "hypothesis" the scene 8 rule glows small at the top. Hold about 1 second.
 
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "20, 40, 60, 80 mL | 35.5, 69.4, 69.6, 69.5% | about 36 g per 100 mL". The four points plot one at a time with a live readout of each value (44 px). On "then stays at about seventy percent" a teal hand tag "levels off" writes with a pen bracket over the last three points, and "(a)" is framed in green. On "all the salt has dissolved" the row "40 mL × 36 g ÷ 100 mL ≈ 14 g" is 44 px. On "then stays the same" the edited hypothesis "(b)" is framed in green with a tick. On "mistake" the crossed chip is struck in red with a red hand tag "never drop results that don't fit".
+
 ### 14. conclusion and handoff
 > So an observation becomes an inquiry question that data can answer, then a hypothesis with a chemistry reason. And when evidence doesn't fit, we ask whether it challenges the method, the prediction or the reason. Our copper sulfate question is ready. Next, how does a chemistry plan produce valid, useful **data**?
 
 Visual: the memory line returns small at the top. A strip writes across the upper half as spoken: "observation → inquiry question → hypothesis (if, then, because) → data (primary, secondary) → sort the evidence → modify". On "copper sulfate question" the strip fades and the final-frame elements assemble (see "Opening frame and final frame"): crucible and prediction sketch at the left, question box and modified hypothesis at the right, the clipboard "plan: ?". On "data" the chip "Next: How does a chemistry plan produce valid, useful data?" writes. Hold about 2 seconds. This is the final frame of the video (ws-v02 opens on it).
 
-### 15. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The strip of six steps is 34 px with a navy pen arrow between each pair. Nothing else is added: the final-frame elements assemble exactly as described under "Opening frame and final frame", drawn in full ink (its "grey line" is a solid dark-ink dashed line).
+
+### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Observation: noticed with senses or instruments. Inquiry question: one that data can answer; it names what is measured and the conditions.
-2. Hypothesis: a testable prediction with a reason. If (the change or condition), then (the predicted result), because (the chemistry).
-3. Primary data: collected by you. Secondary data: collected by someone else (data sheets, published values). Use secondary data when a test is unsafe or impossible in school.
-4. Judge a hypothesis: testable, specific, sound reason, and some result could show it wrong.
-5. Evidence that doesn't fit: does it challenge the method, the prediction or the reason? Modify the hypothesis or question to match. Never ignore results that don't fit.
+1. Inquiry question: data can answer it; it names what is measured and the conditions.
+2. Hypothesis: if (the change), then (the result), because (the chemistry).
+3. Primary data: you collect it. Secondary data: collected by someone else.
+4. Judge it: testable, specific, sound reason, and some result could show it wrong.
+5. Evidence that doesn't fit: does it challenge the method, prediction or reason?
 
-Memory aid (large, on the notes screen): *If, then, because: the because is the chemistry.*
-
-At the end the notes cross-fade back to scene 14's final frame.
+Memory aid (framed card beside the notes, hand lettering, navy, ink and gold as in scene 3): *If, then, because: the because is the chemistry.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 14's final frame.
 
 ## Teaching checks
 
@@ -209,6 +246,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules: `### N.` headings, only lines starting "> " counted, `**` removed): **6,319 characters**, 15 scenes (per-scene counts in Review notes). At 13.3 characters per second the speech is about 475 s; add about 10 s of holds and settling (the crucible cross-fade in 2, the memory hold in 3, the evidence cards in 7 and 8, the curve in 9), 6 s for two prediction countdowns, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 567 s (9.4 minutes)**, inside the band.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,314 characters, 15 scenes). The notes scene is now 45 s in all (it was about 58 s), so the estimate falls from about 568 s to about 555 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v01` (route chem-y11-ws-v01; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v01`.
@@ -218,6 +257,8 @@ In order (15 scene headings, all `### N.`): hook, inquiry-question, hypothesis, 
 Per-scene motion (schema 4): all `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`); judging and new-evidence carry 3 s countdowns inside explain scenes. Transitions (`pickTransition`): v10's final frame into scene 1 by camera continue (the timeline shrinks to a chip); 1 to 2 camera continue (the bar slides away as the crucible arrives); 2 to 3 camera continue; 3 to 4 split board; 4 to 5 clear change; 5 to 6 camera continue; 6 to 7 clear change (the crucible row); 7 to 8 camera continue; 8 to 9 camera continue; attempts and feedback card shrink to the top; 13 to 14 board clear; 14 to 15 fade to the notes board, and 15 cross-fades back to 14's final frame.
 
 Holds: judging and new-evidence (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-ws-v01-learning-review.md`, `checks/c-y11-ws-v01-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 8 to 9 is a board change to the modify board.
 
 ## Assets
 
@@ -232,6 +273,8 @@ Need (new plates, Codex):
 2. `y11c-cuso4-crucible-patchy-v1.png`: scene 7 (group B). Wanted; fallback: a 40% cross-fade of the blue crystal plate over the white powder plate (reads as pale blue, but less clearly patchy).
 
 Coded: model timeline (from v10), accounting bar (from v06), question boxes, `HypothesisSlots`, `CheckList`, `EvidenceCard`s and bins, balance readouts, data-sheet card, number line, particle inset (CuSO₄ to CuO), prediction sketch, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-cuso4-crucible-blue-v1.png`, `y11c-cuso4-crucible-blue-lit-v1.png`, `y11c-cuso4-crucible-patchy-v1.png`, `y11c-cuso4-crucible-black-v1.png`, `y11c-top-pan-balance-v1.png`. Existing plates newly used: `y11c-watch-glass-sand-v1.png` (scene 1 anchor, with the balance), `y11c-sand-saltwater-beaker-v1.png` (both attempt cards). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry WS v01; adds to v07's crucible set)
 
@@ -255,6 +298,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v10's final frame and the final frame matches ws-v02's opening.
 10. Check site notes 1 to 6 and confirm or reject each.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the heating run is labelled "prediction (model)", passes through 27.6% at 4 min and levels at 36.1%, and shows no other value as data; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +350,28 @@ Narration: 6,328 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-ws-v01-rev2-error-check.md`), one should-fix cue finding, resolved: Scene 6: actions follow the speech order: number line on "gives no amount", "specific" crossed on "isn't specific enough", "reasoned" crossed on "no reason" (root fix after brief 186, already in the Visual; confirmed in this pass).
 - Headline count restated as the sum of scene strings: 6,314 characters over 15 scenes (the earlier 6,328 included the 14 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: brief 186's one finding was fixed by root at Revision 3; nothing open.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the painted balance and watch glass of sand arrive at about 9 s beside the accounting bar; the crucibles carry scenes 2, 3 and 7 to 9.
+- Simulation: scene 9's prediction is a live heating run (time and "% mass lost" readouts, the curve drawing, the crucible changing in step), labelled as a model; scene 6's number line narrows live.
+- Cut: scene 9 is a new modify board. Before, the three crucibles ran about 135 s. Scene 3 re-lays the board with the hypothesis card full width.
+- Hand tags (two or three) and a pen mark in scenes 1 to 4 and 6 to 9; the memory line is a framed card in scene 3.
+- Answers framed in green (scenes 6, 8, 11, 13); crossed slips struck in red with red hand tags; rewritten questions use a slate line, not red.
+- Tags with video numbers ("v06", "v07") are dropped or reworded; grey tags are dark ink.
+- Question cards: both attempts gain the beaker of sand in liquid; feedback scenes gain navy givens strips.
+- Key notes: five long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s.
+
+New plate requests: none.
+
+Joins: the opening is v10's final frame, unchanged. The final frame is unchanged, so ws-v02's opening holds.
+
+Counts: 6,314 characters, unchanged; about 568 s to about 555 s.
+
+Calls for root: (1) the heating run shows a modelled curve between the two illustrative class points; (2) the attempt 2 card may need 34 px text to hold its table and printed hypothesis.

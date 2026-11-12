@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V26: Intermolecular forces. Why can molecular substances have very different boiling points? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,648 characters (sum of scene strings), 16 scenes, about 506 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -63,6 +63,16 @@ Main question: *Why can molecular substances have very different boiling points?
 Entry knowledge: v23, v14, v21, v25, v02.
 Stops after: boiling against bond breaking, the three forces with an 18-electron comparison, water against H₂S and CH₄, total attraction, a method. No solubility, branching (tag only) or water's other anomalies.
 Handoff: chem-y11-m1-v27, dissolving.
+
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) water and methane on the boiling-point strip, scene 1 (about 29 s); (B) the boiling lens, scene 2 (about 31 s); (C) dispersion forces, scene 3 (about 46 s); (D) the 18-electron comparison card, scene 4 (about 28 s); (E) dipole to dipole, scene 5 (about 32 s); (F) hydrogen bonds, scene 6 (about 43 s); (G) water against hydrogen sulfide and methane, scenes 7 and 8 (about 46 s); (H) iodine against water, scene 9 (about 26 s); (I) the checklist and the memory card, scene 10 (about 29 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 46 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
 
 ## Script and shots
 
@@ -217,6 +227,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: the longest set-up is scenes 4 to 6 on the comparison card (about 66 s); the molecule pair changes each scene. Review evidence paths: `checks/c-y11-m1-v26-learning-review.md`, `checks/c-y11-m1-v26-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (inspected 5 November on a paper contact sheet; scaled uniformly only, never stretched):
@@ -243,6 +255,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v25's final frame and the final frame matches v27's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -294,3 +308,21 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plates: none.
 
 Narration: 5,648 characters as the sum of the 16 scene strings (Revision 1: 5,784 as a sum, 5,799 stated with joining spaces); about 506 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v26-rev2-error-check.md`): 0 blockers, 0 new should fix. Nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 29, 37 and 38.

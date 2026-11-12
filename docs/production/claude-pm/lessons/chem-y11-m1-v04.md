@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V04: Simple and fractional distillation. Why does a fractionating column improve liquid separation? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: attempt 2 stem states the slightly-richer-vapour condition; old distillation plate removed as fallback. Narration 6,201 characters (joined parser count), about 554.9 s. Previously Revision 1 (5 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,186 characters (sum of scene strings; 6,201 with joining spaces; Revision 1 was 6,216 by the joined parser count), 16 scenes, about 554.9 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -64,6 +64,18 @@ Entry knowledge: v01 to v03; Stage 5 evaporation, condensation and particle ener
 Stops after: simple distillation; both liquids evaporate from a mixture; enrichment by repeated cycles; how the column repeats them; beads, length, fractions; the azeotrope limit; choosing; safety.
 Handoff: v05, why dyes travel different distances in paper chromatography.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The video opens on v03's final frame, so the painted evaporating basin with its escaping steam is on screen from the first frame; the painted simple distillation rig (`y11c-simple-distillation-v1.png`, about 1,200 px wide) replaces it within about 12 s. The aligned fractional rig (`y11c-fractional-distillation-v1.png`) is the second real object.
+- **Simulation: the enrichment run.** One coded model carries the vapour composition through repeated boil-and-condense cycles: 17% → 62% → 80% → 86% → 89% and on towards the stop at about 96% ethanol by mass (the design's own values). It drives the staircase (scene 5), the staircase laid on the column (scene 6), the extra steps of a longer column (scene 7) and the gauge that stops (scene 8), each with a live "vapour: % ethanol" readout at 52 px and a "cycles" counter. The thermometer readouts (100 °C, about 89 °C, about 78 °C, the climb in scene 7) are live readouts on the same clock as the vapour path. Kit gap, as before: the enrichment staircase component.
+- **Colour key (fixed for the whole video).** Ethanol and every "% ethanol" readout amber; water and cooling water navy; salt and other things that stay behind violet; temperatures dark ink; safety text terracotta; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every tag or label the Visual lines call "grey", "dim", "faint" or "ghost" is drawn solid in dark ink.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current definition line and framed answers 52 px, never under 44; question-card sentences 38 px; apparatus labels, step values and supporting lines 30 px or more (step values on the current step 44 px); hand tags 42 px (34 px inside a view); key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) basin, then the simple rig, scenes 1 and 2 (about 69 s); (B) detail board, scene 3 (about 26 s): two large crops of the rig side by side, the still head and the open receiver; (C) two-liquids board, scene 4 (about 38 s): the flask crop with a large surface view and vapour gauge; (D) the staircase, scene 5 (about 35 s); (E) the fractional rig, scenes 6 and 7 (about 74 s); (F) gauge stage, scene 8 (about 34 s): the staircase and the 0 to 100% gauge across the board, the rig as a thumbnail; (G) the two choice cards, scene 9 (about 40 s); (H) rig, safety card and the memory card, scene 10 (about 23 s); question and feedback cards; the handoff strip; the notes board. Revision 3 held the simple rig through scenes 1 to 4 (about 134 s) and the fractional rig through scenes 6 to 8 (about 108 s); stages B, C and F are the new cuts.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No ghosts, no coded icons of real things.** The ghost condenser and ghost beaker (scene 1), the ghost stopper (scene 3), the flask icons on the staircase (scene 5) and the ghost column (scene 7) are replaced as each scene's Upgrade paragraph says.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: as `chem-y11-m1-v01.md`, plus ethanol molecules (two charcoal C, one red O, small white H dots, as one chain unit); vapour particles drawn the same as the liquid's but spaced and moving upward; condenser cooling water as pale blue arrows; % ethanol readouts in amber; temperatures in ink.
@@ -73,86 +85,117 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v03's final frame (see "Opening frame"); the "Next" chip fades. On "catch that vapour" a coded glass cover (a ghost condenser outline) bends the escaping wisps sideways; on "liquid" the wisps turn into drops that fall into a small ghost beaker; the chip "catch the water?" ticks. On "salt water" the basin slides away and the simple distillation plate (`y11c-simple-distillation-v1.png`, new) slides in. On "two liquids" the chip "two liquids?" brightens; on "tall column" the fractional plate (`y11c-fractional-distillation-v1.png`, new, aligned) cross-fades in for a moment with its column ringed, then back. On "separation" the heading writes on: "Distillation: why does a column separate liquids better?".
 
+Upgrade (Revision 4): The basin is solid from the first frame. The ghost cover and ghost beaker are not drawn: on "catch that vapour" a navy pen arrow bends over the rising wisps and a navy hand tag "catch it, cool it" writes beside it; on "liquid" the chip "catch the water?" ticks green. On "salt water" the simple rig is on the board at about 1,200 px wide, solid. On "a tall column packed with glass beads" the fractional rig shows with a pen ring round its column and an amber hand tag "the column". Chips are dark ink at 38 px.
+
 ### 2. simple distillation of salt water
 > Here's simple distillation. Heat salt water in a flask. Water molecules escape as vapour, which just means a substance in its gas state, but the salt ions don't. Salt is non-volatile, so it doesn't evaporate at these **temperatures**. The vapour flows into the condenser, a tube with cold water running through an outer jacket. The cold glass takes energy from the vapour, so it condenses back into liquid **water**. That liquid is called the distillate, and it drips into the receiver. The salt stays behind in the **flask**.
 
 Visual: the simple plate across the left two thirds; labels write and dim as each part is named: "flask", "condenser", "receiver". The heating mantle's coded glow on "Heat". A particle view opens at the liquid surface: water molecules leave, ions stay; on "temperatures" tag "salt: non-volatile". On "condenser" pale blue arrows show cold water entering the jacket at the lower end and leaving at the upper end. Vapour particles travel up, through the side arm and into the condenser; on "water" they slow and merge into drops (tag "condenses: vapour → liquid"). On "distillate" drops fall into the receiver and its level rises (callout "distillate: pure water"). On "flask" the flask's particle view shows the ions becoming more crowded (tag "salt stays").
+
+Upgrade (Revision 4): The three part labels are dark ink at 34 px and stay (they do not dim). On "the salt ions don't" a violet hand tag "salt stays" writes beside the flask view with a pen ring round one ion. On "so it condenses back into liquid water" a navy hand tag "cooled: vapour → liquid" writes on the condenser with a pen arrow along it. On "distillate" the callout is 44 px. A live readout over the receiver counts "distillate collected" (model, 44 px) while the flask readout "salt in the flask: all of it" holds.
 
 ### 3. two details: the thermometer, and never seal it
 > Two details matter. The thermometer bulb sits level with the side arm, so it measures the vapour that's about to leave, not the boiling liquid. For pure water, it reads a steady hundred **degrees**. And the apparatus must never be sealed. The receiver stays open to the air, because heating a closed system builds up pressure, and the glass could **burst**.
 
 Visual: camera push to the still head; on "side arm" a scribble circle rings the thermometer bulb level with the side arm; a coded readout "100 °C" writes and holds on "degrees" (tag "measures the vapour leaving"). Camera slides to the receiver: on "open to the air" a short green arrow shows air passing freely at the receiver's open mouth (tag "open: no pressure build-up"). On "burst" a ghost stopper appears in the receiver mouth and is crossed (caption "never heat a sealed system").
 
+Upgrade (Revision 4): Board change to the detail board, solid from the first frame: a large crop of the still head at the left and a large crop of the open receiver at the right (both crops of `y11c-simple-distillation-v1.png` at one uniform scale). The readout "100 °C" is 52 px. On "the vapour that's about to leave" an ink hand tag "reads the vapour" writes with the pen ring round the bulb. On "The receiver stays open to the air" a green hand tag "open" writes with the pen arrow at the mouth. On "burst" no stopper is drawn: a solid inset card with a dashed border, "sealed: pressure builds", is struck in red with a red hand tag "never heat a sealed system".
+
 ### 4. the surprise: both liquids evaporate
 > Now try two liquids. Ethanol boils at seventy eight degrees, and water boils at a hundred. You might expect the ethanol to boil off at seventy eight, and leave the water behind. That's not what happens. A mixture that's seventeen percent ethanol by mass starts boiling at about eighty nine **degrees**, and both kinds of molecule escape. Ethanol molecules are held less strongly by their neighbours, so more of them get **away**. The vapour is richer in ethanol, about sixty two percent, but that's still a lot of **water**.
 
 Visual: the flask now holds the ethanol and water mixture (tag "17% ethanol by mass"); two data chips write: "ethanol: boils at 78 °C", "water: boils at 100 °C". On "You might expect" a ghost prediction strip: "78 °C: ethanol off → water left" (grey); on "That's not what happens" it is crossed. On "degrees" the side-arm readout settles at "about 89 °C" (author note b). A surface particle view: both ethanol chains and water molecules leave the surface. On "away" ethanol chains leave more often (a tally beside the view counts leaving molecules by kind). On "water" a vapour gauge beside the view reads "vapour: about 62% ethanol" with its water share shaded (tag "richer, not pure").
+
+Upgrade (Revision 4): Board change to the two-liquids board, solid from the first frame: a crop of the flask at the left (about 520 px), a large surface view at the centre and the vapour gauge frame at the right. The two data chips are 44 px in amber and navy. On "leave the water behind" the prediction strip is solid dark ink in an inset card; on "That's not what happens" it is struck in red with a red hand tag "both evaporate". The tally of leaving molecules is a live readout (model, 44 px). On "more of them get away" an amber hand tag "ethanol escapes more easily" writes with a pen arrow from the surface. On "but that's still a lot of water" the gauge reads "vapour: about 62% ethanol" at 52 px with a navy pen bracket on its water share and a navy hand tag "38% water".
 
 ### 5. one cycle isn't enough: do it again
 > So what if we do it again? Condense that vapour, and boil the new liquid. Now the vapour is about eighty percent **ethanol**. Do it again, and it's about eighty six, then about eighty **nine**. Each cycle of boiling and condensing enriches the vapour, which means it raises the share of the more volatile liquid, the one that evaporates more easily. Notice the steps are getting smaller. Simple distillation gives you only one cycle. To separate two liquids well, you need **many**.
 
 Visual: board shifts to the enrichment staircase in the right two thirds: step 1 is a small flask icon "17%" with an arrow up to "62%" (from scene 4, dim). On "do it again" a new small flask icon at step 2 fills to "62%"; on "ethanol" its arrow up reads "80%". On "eighty six" step 3: "80% → 86%"; on "nine" step 4: "86% → 89%". Only the current step is bright; earlier steps dim. A grey label under the staircase: "ideal steps, % ethanol by mass, rounded" (author note b). On "steps are getting smaller" a bracket on each rise shrinks in turn (45, 18, 6, 3 percentage points). On "only one cycle" step 1 alone is ringed (tag "simple: one step"); on "many" the whole staircase glows.
 
+Upgrade (Revision 4): The staircase fills the board. Each step is a plain rounded tile carrying its two percentages (no flask icon); the current step's values are 52 px and earlier steps stay solid in dark ink at 34 px (not dimmed to grey). A live readout at the top right reads "vapour: % ethanol" and "cycles" from the run. On "Each cycle of boiling and condensing enriches the vapour" an amber hand tag "richer each time" writes with a pen arrow up the steps. On "Notice the steps are getting smaller" the brackets carry their values "+45, +18, +6, +3" in amber with an amber hand tag "smaller gains". On "only one cycle" the ring on step 1 is a pen ring. The label under the staircase is dark ink at 30 px.
+
 ### 6. what the column does
 > That's what a fractionating column does, automatically. It's a tall tube packed with glass beads, between the flask and the condenser. It's hottest at the bottom and cooler towards the top. Rising vapour condenses on the cooler beads, and that liquid trickles **down**. Hotter vapour rising from below boils some of it again, and more of the ethanol escapes. This happens over and over up the column, so each level holds vapour a little richer in ethanol than the level **below**. By the top, the vapour is mostly ethanol, at about seventy eight **degrees**.
 
 Visual: the fractional plate (`y11c-fractional-distillation-v1.png`) cross-fades in, aligned with the simple plate; the column is ringed and labelled "fractionating column: packed with glass beads". A temperature scale writes along the column on "hottest at the bottom": "about 89 °C" at the bottom, "about 78 °C" at the top (author note c), with a shaded gradient. A column cutaway (circular magnifier on the beads): on "down" vapour particles touch a bead, condense to a drop, and the drop trickles down; on "boils some of it again" hotter vapour from below reboils the drop, with more ethanol chains leaving it. On "below" the scene 5 staircase slides onto the column so its steps sit at rising heights (17% low, then 62%, 80%, 86%, 89% higher up). On "degrees" the side-arm readout settles at "about 78 °C" and the vapour gauge at the top reads "mostly ethanol".
+
+Upgrade (Revision 4): Board change to the fractional rig (about 1,200 px wide), solid from the first frame, with the column cutaway open at the right. On "hottest at the bottom" the temperature scale is 34 px in dark ink. On "that liquid trickles down" a navy hand tag "condenses, trickles down" writes with a pen arrow down a bead. On "more of the ethanol escapes" an amber hand tag "boils again: richer" writes with a pen arrow up. On "a little richer in ethanol than the level below" the staircase values sit on the column at 34 px and the "vapour: % ethanol" readout climbs live. On "about seventy eight degrees" the readout "about 78 °C" (52 px) takes a pen ring.
 
 ### 7. beads, height and fractions
 > The beads matter because they give the vapour a huge surface to condense on, so lots of these little cycles happen in a short height. A longer column gives even more cycles, so the separation gets **better**. You collect the distillate in parts, called fractions. While the thermometer stays near seventy eight, the fraction is mostly ethanol. When the reading climbs towards a hundred, the ethanol is running out, so you swap in a new **receiver**.
 
 Visual: the cutaway zooms out across many beads, drops forming on every one (tag "huge surface: many cycles"). On "better" a ghost taller column extends the plate upward and the staircase gains extra steps (tag "longer column: more cycles"); the ghost fades. On "fractions" the receiver gains a tag "fraction 1: mostly ethanol" while the readout holds near "78 °C". On "climbs towards a hundred" the readout ticks upward (80, 85, 90 ...); on "receiver" the first receiver slides out and a new one slides in (tag "fraction 2").
 
+Upgrade (Revision 4): On "a huge surface to condense on" an amber hand tag "more surface, more cycles" writes on the cutaway. On "A longer column gives even more cycles" no ghost column is drawn: a dashed dark-ink outline extends the column upward, the "cycles" readout counts on and the staircase gains steps, with an amber hand tag "taller: more steps". On "fractions" the receiver tag is 38 px. On "When the reading climbs towards a hundred" the live readout climbs and takes a pen ring with an ink hand tag "ethanol running out"; on "receiver" the tag "fraction 2" writes at 38 px.
+
 ### 8. the limit: the azeotrope
 > But here's the limit. However tall the column, the distillate never gets past about ninety six percent ethanol by mass. At that composition, the vapour has exactly the same composition as the liquid, so another cycle changes **nothing**. A mixture like this, which boils without changing its composition, is called an azeotrope. It boils at one steady temperature, just like a pure substance. So a steady thermometer reading is a hint, not proof of **purity**.
 
 Visual: an azeotrope gauge (0 to 100% ethanol by mass) appears beside the column, filling in the staircase's shrinking steps: 62, 80, 86, 89, 90, 92 ... and stopping at a hard mark "about 96%" (author note b). On "nothing" one more step is drawn at the top: the arrow from "96%" to "96%" goes flat (tag "vapour = liquid: no change"). On "azeotrope" the right column writes "azeotrope: a mixture that boils without changing composition". On "steady temperature" the readout "about 78 °C" holds with a grey tag "same as nearly pure ethanol". On "purity" a chip "steady reading = pure" fades in and is crossed (caption "a hint, not proof", the v02 phrase).
+
+Upgrade (Revision 4): Board change to the gauge stage, solid from the first frame: the staircase and the 0 to 100% gauge across the board, with the fractional rig as a thumbnail (about 300 px) at the left. The gauge value is a live readout at 52 px. On "never gets past about ninety six percent" the readout stops at "about 96%" with an amber pen bar across the gauge and an amber hand tag "stops here". On "another cycle changes nothing" an amber hand tag "vapour = liquid" writes on the flat arrow. On "azeotrope" the definition line is 44 px. The tag "same as nearly pure ethanol" is dark ink. On "purity" the crossed chip is struck in red with a red hand tag "a hint, not proof".
 
 ### 9. choosing simple or fractional
 > So which should you choose? If one part doesn't evaporate at all, like salt in water, or the boiling points are far apart, one cycle is enough. That's simple distillation. If two liquids mix and their boiling points are close, use fractional distillation. You'll sometimes hear twenty five degrees apart as a rough guide, but it isn't a law. What matters is how much more easily one liquid evaporates, and how pure you need it. Oil refineries use giant columns like this to split crude oil into fractions, like petrol and **diesel**.
 
 Visual: two side-by-side cards (the simple and fractional plates as small thumbnails above them): "simple: one part non-volatile, or boiling points far apart (salt water → water)" and "fractional: liquids that mix, close boiling points (ethanol and water)". On "twenty five degrees" a grey chip "about 25 °C apart: a rough guide only". On "how pure you need it" a small tag "how easily each evaporates; purity needed". On "Oil refineries" the crude oil barrel plate (`m7-crude-oil-barrel-v1.png`) and the industrial column plate (`m7-fractional-distillation-column-v1.png`) appear small at the lower right (tag "industrial"); on "diesel" two fraction tags write on the industrial column's side outlets: "petrol", "diesel".
 
+Upgrade (Revision 4): The two cards and their rig thumbnails (about 420 px wide each) are on the board from the first frame; card text 38 px with "simple" in navy and "fractional" in amber. On "one cycle is enough" a navy hand tag "one cycle" writes under the simple card. On "their boiling points are close" an amber hand tag "many cycles" writes under the fractional card. On "but it isn't a law" the chip "about 25 °C apart: a rough guide only" is dark ink with a pen underline under "rough guide". The barrel and industrial column plates are about 260 px tall, solid, with the outlet tags at 30 px.
+
 ### 10. safety and the memory aid
 > Ethanol catches fire easily, so it's heated with an electric heating mantle or a water bath, never a flame, with the apparatus clamped and the receiver **open**. Here's a way to remember the column. Simple distillation is one step up the ladder. A column climbs many steps, and the ladder ends at the **azeotrope**.
 
 Visual: the fractional plate returns at the left with a compact terracotta and green safety card (above the 88% line): "ethanol: flammable → heating mantle or water bath, no flame; clamp; receiver open; ventilate; teacher approval" (on "open"). On "Here's a way to remember" the staircase returns large at the right; the handwritten line writes above it: "Simple: one step. Column: many steps. The ladder ends at the azeotrope." On "azeotrope" the top of the ladder gets a stop mark "about 96%". Hold about 2 seconds.
+
+Upgrade (Revision 4): The safety card is terracotta and dark ink at 34 px; on "never a flame" a red pen underline marks "no flame". The memory line sits in a framed memory card (hand lettering, 48 px): navy "Simple: one step." amber "Column: many steps. The ladder ends at the azeotrope." On "azeotrope" the stop mark "about 96%" is an amber pen bar.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. A solution contains water and a dissolved blue dye that doesn't evaporate when heated. Name and explain a technique that could collect the water, and explain why filtration can't do it. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry"), worded as printed: "A solution contains water and a dissolved blue dye. The dye does not evaporate when the solution is heated. (a) Name a technique that could be used to collect the water, and explain how it works. (b) Explain why filtration cannot be used to collect the water separately from the dye." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no apparatus).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries a painted beaker of blue solution (`c11-cuso4-beaker-dissolved-v1.png`, about 280 px), untagged, as the picture of a blue solution. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > Use simple distillation. Heat the solution, and the water evaporates while the non-volatile dye stays in the flask. The vapour condenses in the condenser and collects as pure water. Filtration can't work, because the dye is dissolved. Its particles are far smaller than the pores, so they pass straight through with the **water**. Filtering out the dye is the slip to **avoid**.
 
 Visual: card shrinks to the top. The simple plate returns small with blue liquid in the flask; row "(a) simple distillation: water evaporates, dye (non-volatile) stays; vapour condenses → pure water" with the vapour path running and colourless drops in the receiver ("does not evaporate" underlined in the card). On "water" row "(b) dye dissolved: particles far smaller than the pores, pass through" with v03's pore view small (blue particles streaming through). On "avoid" a chip "filter out the dye" fades in and is crossed (caption "dissolved particles pass through"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "water + dissolved blue dye | the dye does not evaporate". On "Use simple distillation" the answer "(a) simple distillation" is framed in green with a tick (52 px). On "because the dye is dissolved" the answer "(b) dissolved: passes through the pores" is framed in green. On "avoid" the crossed chip is struck in red with a red hand tag "dissolved particles pass through".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. Two liquids, P and Q, mix completely. Pure P boils at sixty eight degrees, and pure Q boils at seventy two. Their first vapour is only slightly richer in P than the liquid. Explain why simple distillation would separate them poorly, and how a fractionating column improves the separation. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "Two liquids, P and Q, are completely miscible. Pure P boils at 68 °C and pure Q boils at 72 °C. In a simple distillation, the first vapour is only slightly richer in P than the liquid. (a) Explain why simple distillation would give a poor separation of P and Q. (b) Explain how a fractionating column improves the separation. (c) State whether these boiling points alone guarantee that pure P can be collected. Justify your answer." The full question stays on screen, including part (c), which is not spoken (Revision 2). Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries two identical clear sample bottles (`y11c-sample-bottle-clear-v1.png` twice, about 240 px tall), tagged only "P" and "Q". Nothing answer-bearing.
+
 ### 14. feedback 2 (brief)
 > The boiling points are only four degrees apart, so both liquids evaporate together, and one cycle gives vapour only a little richer in P. A column gives many cycles of condensing and boiling again, each one enriching the vapour in P. And no, the boiling points alone can't guarantee pure P, because the mixture might form an **azeotrope**. Saying P boils off first at sixty eight, leaving pure Q, is the slip to **avoid**.
 
 Visual: card shrinks to the top. Row "(a) 72 − 68 = 4 °C apart: both evaporate; one cycle: only slightly richer in P" ("68 °C" and "72 °C" underlined). Row "(b) column: many condense and reboil cycles, each enriching the vapour in P" with a small staircase. On "azeotrope" row "(c) not guaranteed: boiling points don't show whether an azeotrope forms". On "avoid" a chip "P boils off at 68 °C, leaving pure Q" fades in and is crossed (caption "both evaporate together"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "P 68 °C | Q 72 °C | first vapour only slightly richer in P". The three answer rows are framed in green with a tick as they land (44 px): "(a) only 4 °C apart: both evaporate", "(b) column: many cycles", "(c) not guaranteed: an azeotrope may form". On "avoid" the crossed chip is struck in red with a red hand tag "both evaporate together".
 
 ### 15. handoff
 > Distillation separates by how easily things evaporate. But what about a single drop of black ink? It's a mixture of several dyes, and there's only a tiny amount. Next time, we'll put it on a strip of paper, and find out why its dyes travel different **distances**.
 
 Visual: board clears. A coded strip of chromatography paper stands at the centre (about 220 × 760 px): white, a faint grey pencil baseline about one sixth of the way up, and a round black ink dot centred on the baseline. On "black ink" a callout to the dot: "black ink: several dyes"; on "tiny amount" a chip at the right "only a few drops". On "distances" the next chip writes above: "Next: why do the dyes travel different distances?". This is the final frame (see "Final frame"). Hold about 2 seconds.
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): On "It's a mixture of several dyes" an ink pen ring draws round the ink dot before its callout writes; nothing else is added, so the final frame is exactly as described under "Final frame". The baseline, callout and chip are drawn solid in dark ink, not faint or grey.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Distillation: heat, the vapour rises, the condenser cools it back to liquid (the distillate). Thermometer bulb at the side arm. Never heat a sealed system.
-2. Simple distillation: one component non-volatile or boiling points far apart (salt water → pure water).
-3. Two liquids that mix both evaporate, so one cycle only enriches the vapour. A fractionating column repeats condensing and reboiling many times on its beads (hot at the bottom, cooler at the top), so the vapour gets richer in the more volatile liquid as it rises. Longer column: more cycles.
-4. Ethanol and water: limited to about 96% ethanol by mass (an azeotrope). A steady temperature is a hint, not proof of purity. Heat ethanol with a mantle or water bath, never a flame.
+1. Distillation: boil, then cool the vapour back to liquid (the distillate).
+2. Simple: one part non-volatile, or boiling points far apart.
+3. Two mixed liquids both evaporate; one cycle only enriches the vapour.
+4. A column repeats condensing and reboiling on its beads, many times.
+5. Ethanol and water stop near 96% (azeotrope). Steady temperature is not proof.
 
-Memory aid (large, on the notes screen): *Simple: one step. Column: many steps. The ladder ends at the azeotrope.*
+Memory aid (framed card beside the notes, hand lettering, navy and amber as in scene 10): *Simple: one step. Column: many steps. The ladder ends at the azeotrope.* A terracotta safety strip under the notes (30 px): "Never heat a sealed system. Heat ethanol with a mantle or water bath, never a flame." Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Opening frame
 
@@ -214,6 +257,8 @@ Checked with Python (5 Nov, NumPy interpolation of the tabulated data in author 
 
 Revision 1 count (5 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,216 characters**, 16 scenes. Characters per scene (1 to 16): 409, 514, 349, 512, 470, 546, 441, 452, 529, 307, 218, 370, 335, 414, 260, 75. At 13.3 characters per second the speech is about 467 s; add about 8 s of settling (the vapour path in scene 2, the staircase sliding onto the column in scene 6, the receiver swap in scene 7, the gauge in scene 8), 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s each for the memory-aid and handoff holds and about 55 s more of the quiet notes hold (about 89 s): **about 556 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 9's crude oil sentence (keep the industrial thumbnails silent); scene 7's "A longer column gives even more cycles, so the separation gets better." (keep the ghost column silent); scene 3's last clause.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,186 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 555 s to about 540 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v04` (route chem-y11-m1-v04). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v04` and build folder `docs/production/claude-pm/lessons/c-y11-m1-v04`.
@@ -223,6 +268,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, simple-distillatio
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`: the learner copies four notes). `design.renderer`: explainer. `design.visualSystem`: Year 11 Chemistry paper board (v01 colour key) with the aligned distillation plates, vapour paths and the enrichment staircase. Transitions: 1 to 2 camera continue (the simple plate stays); 2 to 3 camera push to the still head; 3 to 4 pull back (the flask's contents change); 4 to 5 camera slide to the staircase; 5 to 6 cross-fade simple to fractional plate (aligned), staircase lands on the column; 6 to 7 continue; 7 to 8 continue; 8 to 9 pull back to the two cards; 9 to 10 continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
 Holds: attempt-1, attempt-2 (10 s after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/c-y11-m1-v04-learning-review.md`, `science_check` = `checks/c-y11-m1-v04-chemistry-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transitions 2 to 3, 3 to 4 and 7 to 8 are now board changes (detail board, two-liquids board, gauge stage).
 
 ## Assets
 
@@ -237,6 +284,8 @@ Need (new plates, Codex), in priority order:
 Coded: vapour particles and path, cooling-water arrows, drops, liquid levels, boiling chips, thermometer readouts, surface views, tallies, the vapour gauge, the staircase, the column cutaway and temperature scale, the ghost column, receivers sliding, the azeotrope gauge, cards, safety card, chips, crossed chips, the final-frame paper strip and ink dot, attempt cards, answer rows, countdowns, key notes board.
 
 Kit gaps: **enrichment staircase** (a small component: N steps, each a flask icon with an "in → out" percentage readout and a rise bracket, bright current step, dim earlier steps; can be repositioned onto a vertical path in scene 6). Everything else reuses v01's particle view and v03's `PourStream` (as a drip emitter at the condenser outlet).
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-simple-distillation-v1.png`, `y11c-fractional-distillation-v1.png`, `y11c-evaporating-basin-hotplate-v1.png`. Existing plates newly used on question cards: `c11-cuso4-beaker-dissolved-v1.png` (attempt 1), `y11c-sample-bottle-clear-v1.png` twice (attempt 2). Removed coded stand-ins: ghost condenser, ghost beaker, ghost stopper, flask icons, ghost column. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M1 v04)
 
@@ -259,6 +308,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("vaporise", "litre", "colour").
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root for `../site-corrections-chem-y11.md`.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the new on-screen values (gains +45, +18, +6, +3; "38% water" beside 62% ethanol; the live readouts) agree with "Numbers used"; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -304,3 +355,28 @@ Narration: 6,201 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v04-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,186 characters over 16 scenes (the earlier 6,201 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v04-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the steaming basin (v03's final frame), then the painted simple rig within about 12 s.
+- Simulation: one enrichment run drives the staircase, the column, the longer column and the gauge, with live "vapour: % ethanol" and "cycles" readouts; thermometer readouts are live.
+- Cuts: scene 3 (detail board), scene 4 (two-liquids board) and scene 8 (gauge stage) are new stages. Before, the simple rig ran about 134 s and the fractional rig about 108 s.
+- Hand tags (two or three) and a pen mark in scenes 1 to 9; the memory line is a framed card in scene 10.
+- Ghosts and coded icons removed: ghost condenser and beaker, ghost stopper (now a struck inset card), flask icons on the staircase (plain tiles), ghost column (dashed outline).
+- Answers framed in green in scenes 12 and 14; crossed slips struck in red with red hand tags (scenes 3, 4, 8, 12, 14).
+- Question cards: attempt 1 gains a beaker of blue solution; attempt 2 gains two clear bottles tagged P and Q; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card and a safety strip; the notes scene is 45 s. Left the bullets: thermometer position, bead and column-length detail (kept in scenes 3, 6 and 7).
+
+New plate requests: none.
+
+Joins: the opening is v03's final frame, unchanged. The final frame is unchanged word for word (drawn solid, not faint), so v05's opening holds.
+
+Counts: 6,186 characters, unchanged; about 555 s to about 540 s.
+
+Calls for root: (1) the copper sulfate beaker stands in for "a blue dye solution" on the attempt 1 card; (2) the readouts "distillate collected", the leaving tally and "cycles" are model readouts; (3) "38% water" is new on-screen text (100 − 62).

@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V19: Ion charges and ionic formulae. How do ion charges determine a neutral inorganic formula? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 should-fix resolved (scene 16 question scoped to the oxide ion; narration +22 characters) and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Scene 16 needs a one-line Codex confirmation before wave 7 voices this design. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 6,350 characters (sum of scene strings), 19 scenes, about 557 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,372 characters (sum of scene strings), 19 scenes, about 559 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: nineteenth video of Year 11 Chemistry (2017 syllabus), Module 1; first of two nomenclature videos (v19 ion charges and formulae, v20 naming from a formula). It builds on `chem-y11-m1-v08.md` (ions: electrons = protons − charge), `chem-y11-m1-v11.md` (subshells, used in one sentence for transition metals), `chem-y11-m1-v12.md` (valence electrons per group; metals and non-metals by position) and `chem-y11-m1-v18.md` (its final frame: Na⁺ and Cl⁻) without re-teaching them. Templates: `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates), `chem-y11-m1-v17.md` (series conventions). No starter pack exists; the pack work is done here. Route entry: `chem-y11-m1-v19` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html` (SHA256 `bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025`, recomputed, matches; used: `l19-from-electron-configuration-to-ion-charge-title` (the group-to-charge table, Na → Na⁺ [Ne], O → O²⁻, Al³⁺ lock-in), `l19-transition-metals-variable-oxidation-states-title` (Fe²⁺ and Fe³⁺, Cu⁺ and Cu²⁺, the cause in one sentence: 3d and 4s close in energy), `l19-iupac-nomenclature-rules-title` (the polyatomic ion examples Na₂SO₄, Ca(NO₃)₂ and (NH₄)₂CO₃, and "Working out a Roman numeral: For FeCl₂ ... FeCl₃", used here as the backwards charge step), Short Answer Q7 (CuCl and CuCl₂, the copper-against-sodium comparison, reworded for attempt 2) and Q8(a) (Fe₂O₃, the rust case); naming rules themselves are v20; the isoelectronic radius material is v13's; Lewis diagrams are v21's). Site corrections file checked: no logged item touches lesson 19.
 
@@ -32,7 +32,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Backwards step included.** Scene 10 works the charge out from FeCl₃ and FeCl₂ (site's "Working out a Roman numeral" without the numeral). It answers attempt 2 and sets up v20's Stock numerals.
 - **Polyatomic ions (six).** Hydroxide OH⁻, nitrate NO₃⁻, carbonate CO₃²⁻, sulfate SO₄²⁻, phosphate PO₄³⁻, ammonium NH₄⁺. The narration says names and charges; the formulae are on screen (spoken polyatomic formulae are hard to follow in TTS). Learned by heart: the HSC data sheet does not list them (author note e).
 - **Spoken formulae.** Formulae are read once each where the subscript is the point ("M g C l two", "A l two O three", "F e two O three", "C a C l two", "M g three N two"), as v07 did; the names carry the rest. Open decision 2 gives the fallback.
-- **Attempts (original wording, HSC style).** A1: formulae of magnesium nitride and aluminium sulfate (2 marks), with the group numbers and the sulfate ion on the card. Answers Mg₃N₂ and Al₂(SO₄)₃. Crossed: "Al₂SO₄₃" (no brackets). A2: copper's charge in CuO and Cu₂O, and why copper forms two oxides but sodium only one (3 marks; site Q7 reworded to oxides). Answers +2, +1; transition metal. Crossed: "Cu₂O: copper is 2+".
+- **Attempts (original wording, HSC style).** A1: formulae of magnesium nitride and aluminium sulfate (2 marks), with the group numbers and the sulfate ion on the card. Answers Mg₃N₂ and Al₂(SO₄)₃. Crossed: "Al₂SO₄₃" (no brackets). A2: copper's charge in CuO and Cu₂O, and why copper forms two compounds with the oxide ion but sodium only one (3 marks; site Q7 reworded to oxides; scoped to the oxide ion in Revision 3). Answers +2, +1; transition metal. Crossed: "Cu₂O: copper is 2+".
 - **Mistake scene:** none separate. "Change the charge to make it fit" (13); "MgO is Mg₂O₂" (6); "CaNO₃₂" (12); "the subscript is the charge" (crossed in 17); "every metal has one fixed charge" (8); "no brackets needed" (crossed in 15).
 - **Handoff (route next: `chem-y11-m1-v20`, "How do we name an inorganic compound from its formula?").** Scene 18 flips the direction: given FeCl₃, Cu₂O, Ca(NO₃)₂ and CO₂, how do we say the name, and what does a Roman numeral mean? Final frame in its own section.
 - **Site notes (read 5 November; for root to log in `../site-corrections-chem-y11.md` if accepted):**
@@ -63,6 +63,16 @@ Main question: *How do ion charges determine a neutral inorganic formula?*
 Entry knowledge: v08, v11, v12, v18.
 Stops after: ion charges by group, the neutrality rule, binary formulae with the shortcut, variable charges (forwards and backwards), six polyatomic ions with brackets. No names or Roman numerals, no Lewis diagrams, no lattice.
 Handoff: chem-y11-m1-v20, naming inorganic compounds.
+
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. One narration sentence changed (scene 16).
+
+- **Board stages.** (A) salt and rust, scene 1 (about 26 s); (B) the shell atoms, scene 2 (about 36 s); (C) the group strip, scene 3 (about 38 s); (D) the charge tally and aluminium oxide, scenes 4 and 5 (about 68 s); (E) the cross-over shortcut, scene 6 (about 34 s); (F) calcium chloride, then the transition block, scenes 7 and 8 (about 45 s); (G) rust, scene 9 (about 27 s); (H) working backwards, scene 10 (about 24 s); (I) polyatomic ions and brackets, scenes 11 and 12 (about 54 s); (J) the three-step rule, scene 13 (about 21 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 68 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
 
 ## Script and shots
 
@@ -144,9 +154,11 @@ Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written fo
 Visual: card shrinks to the top with its picture kept small. A navy givens strip on the answer side: "Mg²⁺ (group 2), N³⁻ (group 15) | Al³⁺ (group 13), SO₄²⁻". Rows write at 44 px: "(a) Mg²⁺, N³⁻: 3 × (+2) = +6, 2 × (−3) = −6"; on "two" "Mg₃N₂", framed with a green tick. "(b) Al³⁺, SO₄²⁻: 2 × (+3) = +6, 3 × (−2) = −6"; on "three" "Al₂(SO₄)₃", framed, brackets glowing. On "slip" a chip "Al₂SO₄₃" fades in and is struck in red, red hand tag "brackets around the whole ion". Hold about 1 second.
 
 ### 16. attempt 2 (countdown, 10 seconds)
-> Last one. Copper forms two oxides, C u O and C u two O. Work out the charge on the copper ion in each, and explain why copper can form two oxides, when sodium forms only one. Pause here to answer.
+> Last one. Copper forms two oxides, C u O and C u two O. Work out the charge on the copper ion in each, and explain why copper can form two compounds with the oxide ion, when sodium forms only one. Pause here to answer.
 
-Visual: `QuestionCard`: "Copper forms two oxides, CuO and Cu₂O. The oxide ion is O²⁻. (a) Determine the charge on the copper ion in each oxide. (b) Explain why copper can form two different oxides, while sodium forms only one, Na₂O. (3 marks)" Picture on the card's right: `y11c-copper-oxide-black-v1.png` and `y11c-copper-oxide-red-v1.png` side by side (about 220 px each, uniform scale), captioned "CuO (black)" and "Cu₂O (red)". Card text 32 px. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+Visual: `QuestionCard`: "Copper forms two oxides, CuO and Cu₂O. The oxide ion is O²⁻. (a) Determine the charge on the copper ion in each oxide. (b) Explain why copper can form two different compounds with the oxide ion, while sodium forms only one, Na₂O. (3 marks)" Picture on the card's right: `y11c-copper-oxide-black-v1.png` and `y11c-copper-oxide-red-v1.png` side by side (about 220 px each, uniform scale), captioned "CuO (black)" and "Cu₂O (red)". Card text 32 px. The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
+
+Upgrade (Revision 3): The card's part (b) now reads "Explain why copper can form two different compounds with the oxide ion, while sodium forms only one, Na₂O." Card text 38 px. Nothing else changes.
 
 ### 17. feedback 2 (brief)
 > In C u O, one oxide ion is minus two, so the copper is plus **two**. In C u two O, one oxide ion is shared by two coppers, so each copper is plus **one**. Copper is a transition metal, so it can lose one electron or two. Sodium always loses just its one outer electron, so it only forms plus one. Reading the two in C u two O as copper's charge is the **trap**.
@@ -190,7 +202,7 @@ The handoff board of scene 18, held about 2 seconds: four formula cards in a row
 **Attempt 1 (scene 14; original wording, HSC style).** "Write the chemical formula of: (a) magnesium nitride, the compound formed from magnesium and nitrogen; (b) aluminium sulfate. Data: Mg is in group 2, N in group 15 and Al in group 13; the sulfate ion is SO₄²⁻. (2 marks)"
 Model answer: (a) Mg²⁺ and N³⁻; 3 × (+2) = +6 and 2 × (−3) = −6, so Mg₃N₂ (1). (b) Al³⁺ and SO₄²⁻; 2 × (+3) = +6 and 3 × (−2) = −6, so Al₂(SO₄)₃ (1). Classic mistake (crossed): "Al₂SO₄₃" (no brackets).
 
-**Attempt 2 (scene 16; original wording, HSC style).** "Copper forms two oxides, CuO and Cu₂O. The oxide ion is O²⁻. (a) Determine the charge on the copper ion in each oxide. (b) Explain why copper can form two different oxides, while sodium forms only one, Na₂O. (3 marks)"
+**Attempt 2 (scene 16; original wording, HSC style).** "Copper forms two oxides, CuO and Cu₂O. The oxide ion is O²⁻. (a) Determine the charge on the copper ion in each oxide. (b) Explain why copper can form two different compounds with the oxide ion, while sodium forms only one, Na₂O. (3 marks)"
 Model answer: (a) In CuO, one O²⁻ (−2) balances one copper ion, so Cu²⁺; in Cu₂O, one O²⁻ (−2) is balanced by two copper ions, so each is Cu⁺ (1 each). (b) Copper is a transition metal, which can lose different numbers of electrons (one or two) because its outer subshells are close in energy; sodium has one outer electron, and losing it gives the noble gas arrangement of neon, so it forms only Na⁺ (1). Classic mistake (crossed): "Cu₂O: copper is 2+".
 
 ## Numbers used (author note: every value)
@@ -231,6 +243,8 @@ Revision 2 count (7 November; build parser rules, the total is the sum of the 19
 
 Revision 1 estimate (superseded): **6,377 characters**, 19 scenes. At 13.3 characters per second the speech is about 479 s; add about 3 s for the tally levelling in scenes 4, 5 and 9, 2 s for the scene 13 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 87 s): **about 566 s**, inside the band and just under the 570 s cap. Reserve trims: scene 10's last sentence (keep the chip), scene 12's last sentence (keep the crossed version silent), scene 3's last sentence (keep the tags).
 
+Revision 3 (12 Nov 2026; build parser rules, the total is the sum of the 19 scene strings): **6,372 characters** (Revision 2 was 6,350; scene 16 went from 196 to 218). At 13.3 characters per second the speech is about 479 s; with the Revision 2 holds unchanged the video is **about 559 s**, inside 5,500 to about 7,000 characters and under 570 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v19` (route chem-y11-m1-v19; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v19`.
@@ -240,6 +254,8 @@ In order (19 scene headings, all `### N.`): hook, why-ions, group-charges, neutr
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: 1 to 2 clear change (the plates slide off); 2 to 3 camera pull back to the group strip; 3 to 4 camera continue (strip shrinks to the top right, the tally draws); 4 to 5 camera continue; 5 to 6 clear change; 6 to 7 clear change; 7 to 8 camera continue then clear to the strip; 8 to 9 camera continue (the rust plate returns); 9 to 10 clear change; 10 to 11 clear change to the tiles; 11 to 12 camera continue; 12 to 13 clear change; attempts and feedback card shrink to the top; 17 to 18 board clear; 18 to 19 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: the longest unchanged set-up is scenes 4 and 5 on the ion counter (about 68 s), and the counter itself changes with every step. Review evidence paths: `checks/c-y11-m1-v19-learning-review.md`, `checks/c-y11-m1-v19-science-check.md`.
+
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
 
 ## Assets
 
@@ -274,6 +290,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("aluminium", "sulfate").
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v18's final frame and the final frame matches v20's opening.
+
+Revision 3, also check: the scene 16 narration and card wording (copper forms two compounds with the oxide ion; sodium forms only one, Na₂O) and the new count 6,372; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -323,3 +341,23 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plates: none. All plates exist and were inspected.
 
 Narration: 6,350 characters as the sum of the 19 scene strings (Revision 1: 6,359 as a sum, 6,377 stated with joining spaces); about 557 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Repair after the brief 237 error check, plus a visual-standard top-up. One narration sentence changed.
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v19-rev2-error-check.md`): 0 blockers, 1 should fix. Attempt 2 asked why sodium "forms only one" oxide, but sodium also forms a peroxide, so one common ion charge does not prove one oxygen compound. Resolved by scoping the question to the oxide ion: scene 16 now says "explain why copper can form two compounds with the oxide ion, when sodium forms only one", and the card, the practice question and the Decisions line match. The feedback (scene 17) already answers with the ion charges and is unchanged.
+
+Changes:
+- Scene 16 narration: "explain why copper can form two oxides, when sodium forms only one" became "explain why copper can form two compounds with the oxide ion, when sodium forms only one" (+22 characters). Sodium peroxide and superoxide contain other ions, so the scoped statement is true.
+- The scene 16 card, the practice question and the Decisions "Attempts" line carry the same wording.
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: 6,350 to 6,372 characters (sum of the 19 scene strings; scene 16 is 196 to 218); about 557 s to about 559 s, under 570 s.
+
+Calls for root: the scene 16 wording is a speech change made after the brief 237 check, so scene 16 needs a one-line confirmation before wave 7 voices it.

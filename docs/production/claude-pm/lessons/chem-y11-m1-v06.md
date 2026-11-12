@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V06: Percentage composition of a separated mixture. After a separation, what fraction of the mixture's mass came from each component, and what does missing mass mean? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 177 learning review and science check clean at Revision 1, so no repair or repair check was needed (root); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (7 Nov 2026): brief 177 reviews clean at Revision 1, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,041 characters (sum of scene strings; 6,056 with joining spaces), 16 scenes, about 542 s (9.0 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -57,6 +57,17 @@ Entry knowledge: Stage 5 particle model and physical change; proportions; v01 (m
 Stops after: weighing by difference, percentage by mass of each component from the original mass, the conservation check, recovery and loss, extra mass and drying to constant mass. No formula-based percentages, moles or gravimetric calculations.
 Handoff: v07, percentage composition from a chemical formula.
 
+## Visual upgrade (Revision 3)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 3)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The video opens on v05's final frame, so the painted balance and the watch glasses of sand and salt are on screen from the first frame; the painted beaker of dry sand and salt (`y11c-sand-salt-dry-beaker-v1.png`, about 420 px) replaces them at about 14 s with its mass beside it. The real mixture, the real balance (`y11c-top-pan-balance-v1.png`) and the real products carry every number.
+- **Simulation: the live accounting bar.** One mass model drives the balance display, the working rows, the accounting bar and a "total" readout (52 px), so they cannot disagree. The display ticks to each reading before it is spoken (scene 3); the bar fills as each percentage lands (scenes 4 and 6); in scene 9 the damp sand dries on one clock: display 6.40 g → 6.12 g → 6.00 g → 6.00 g, sand 32.0% → 30.6% → 30.0%, total 102.0% → 100.6% → 100.0%, with the teal overhang shrinking to nothing.
+- **Colour key (fixed for the whole video).** Measured masses and givens navy; percentages amber; sand sand-brown; salt pale grey-white with an ink outline; missing mass rose hatching; extra mass (water) teal; a framed answer green with a green tick; a crossed mistake red with a red hand tag. Hand tags take the colour of the idea they mark. Earlier rows stay solid at a smaller size instead of dimming, and every tag the Visual lines call "grey" is dark ink.
+- **Type sizes (1080p).** Heading 60 px; the balance display, the current working row, the total readout and framed answers 52 px, never under 44; question-card sentences 38 px; givens, bar labels and process labels 34 px; supporting lines 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) v05's bench, then the mixture beaker, scene 1 (about 34 s); (B) the process strip, scene 2 (about 38 s); (C) the balance close up, scene 3 (about 40 s); (D) calculation board with the 20.00 g bar, scene 4 (about 35 s); (E) conservation board, scene 5 (about 32 s): three painted containers across the board; (F) calculation board with the 25.00 g bar, scene 6 (about 34 s); (G) loss board, scene 7 (about 33 s): the process plates large, with loss markers; (H) balance and bar, scenes 8 and 9 (about 48 s); (I) the memory card, scene 10 (about 17 s); question and feedback cards; the handoff; the notes board. Revision 2 kept the calculation layout through scenes 4 to 7 (about 134 s); stages E and G are the new cuts.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key (new for the Year 11 Chemistry Module 1 calculation videos; keep across v06 and v07): measured masses navy (`C.blue`); percentages amber (`AMBER`); missing mass rose hatching (`C.rose`); extra mass (water) teal; givens navy in a grouped box; earlier results dimmed; crossed chips red strike. Sand segment of the accounting bar sand-brown, salt segment pale grey-white with an ink outline, so both read on paper. Screen units: g and %. Paper background and handwritten heading face, as the explainer house style.
@@ -66,86 +77,117 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v05's final frame exactly (`chem-y11-m1-v05.md` "Final frame": dimmed black-ink chromatogram at left tagged "which components?", the balance plate centre with a blank "– – – . – – g" readout, the sand and salt watch glasses at right with the amber chip "how much of each?", and the "Next" chip above). On the first sentence the "Next" chip fades and the chromatogram's tag becomes "which: yes" with a "how much: ?" tag beside it. On "together" the chromatogram shrinks away to a small corner thumbnail, the balance and watch glasses slide off to the right (both return in scenes 2 and 3), and the new plate `y11c-sand-salt-dry-beaker-v1.png` (a small beaker of dry sand and salt) slides in at the left; a navy readout writes beside it "mixture: 20.00 g" with a small grey label "example data". On "salt" two empty dashed boxes write in the right column, "sand: ? %" and "salt: ? %", and the heading writes on: "Percentage by mass: how much of each?". On "back" two navy labels write above the boxes: "mass at the start" (pointing at 20.00 g) and "masses you get back" (pointing at the empty boxes).
 
+Upgrade (Revision 3): The balance and watch glasses are solid from the first frame (v05's final frame, drawn in full ink). The mixture beaker is about 420 px, solid when it arrives, and its readout "mixture: 20.00 g" is 52 px; the label "example data" is dark ink at 30 px. On "how much of each one was there" an amber hand tag "how much?" writes beside the chromatogram tag. On "the mass you start with" a navy hand tag "start" writes with a pen arrow to 20.00 g; on "the masses you get back" a navy hand tag "back" writes with a pen bracket over the two empty boxes.
+
 ### 2. the separation, in fast forward
 > You've seen this separation before, so here it is in fast forward. Add water, and the salt dissolves while the sand **doesn't**. Pour it through filter paper, and the sand stays behind as the **residue**, while the salty liquid, the filtrate, runs through. Rinse the sand with a little water to wash off any salt, then dry it. The filtrate goes into an evaporating basin, and we heat it gently until most of the water has gone, then leave it somewhere warm to finish drying. Now each component sits in its own **container**.
 
 Visual: a process strip runs left to right along the stage, each step a plate with a short label written as it is spoken (v03's plates, reused). On "doesn't" `y11c-sand-saltwater-beaker-v1.png` takes the first slot (sand settled, salt dissolved), label "1 dissolve". On "residue" `y11c-filter-funnel-flask-sand-v1.png` takes the next slot; a `PenArrow` labels "residue: sand" on the paper and "filtrate: salt solution" on the flask, label "2 filter". The rinse sentence draws three coded water drops onto the sand, then the sand moves to `y11c-watch-glass-sand-v1.png`, label "3 rinse and dry". On "evaporating basin" `y11c-evaporating-basin-hotplate-v1.png` takes the last slot (painted steam wisps, coded wisps thinning out), with a grey chip "heat gently, stop before it spits" and label "4 evaporate"; it cross-fades to `y11c-evaporating-basin-crystals-v1.png` as the sentence ends. On "container" the strip collapses to two plates side by side, the sand watch glass and the basin of dry salt, each with an empty navy readout "? g".
+
+Upgrade (Revision 3): The four slots of the process strip are on the board from the first frame as numbered frames, and each plate (about 380 px tall) lands solid on its cue; step labels are dark ink at 34 px. On "the sand stays behind as the residue" a sand-brown hand tag "sand stays" writes with a pen arrow to the paper. On "runs through" an ink hand tag "salt goes through, dissolved" writes with a pen arrow down to the flask. The chip "heat gently, stop before it spits" is dark ink. On "its own container" the two readouts "? g" are 52 px with a pen ring round each.
 
 ### 3. weighing by difference
 > Here's a practical detail that matters. You can't tip the salt onto the balance, so you weigh its container **too**. The empty basin was forty-five point one two grams. With the dry salt in it, it reads fifty-nine point one two **grams**. Subtract, and the salt alone is fourteen point zero zero **grams**. That's called weighing by difference. The dried sand gets the same treatment on its watch glass: twenty-seven point three five grams, minus twenty-one point three five grams for the empty glass, gives six point zero zero grams of **sand**.
 
 Visual: camera pushes into the new balance plate `y11c-top-pan-balance-v1.png` at the centre of the stage. On "too" the empty basin plate (`y11c-evaporating-basin-empty-v1.png`, new, aligned with v03's basin pair) settles on the pan and the coded display ticks to "45.12 g"; a navy row writes in the right column "empty basin 45.12 g". On "grams" (first) the basin cross-fades to `y11c-evaporating-basin-crystals-v1.png` and the display ticks to "59.12 g"; row "basin + salt 59.12 g". On "grams" (second) a subtraction line draws and "salt = 59.12 − 45.12 = 14.00 g" writes, bright; the earlier two rows dim. The phrase "weighing by difference" writes as a grey tag beside the rows. On "sand" the basin lifts off; the empty watch glass (`y11c-watch-glass-v1.png`) weighs "21.35 g", then the sand watch glass (`y11c-watch-glass-sand-v1.png`) weighs "27.35 g"; the row "sand = 27.35 − 21.35 = 6.00 g" writes. The boxes from scene 1 now read "sand: 6.00 g" and "salt: 14.00 g".
 
+Upgrade (Revision 3): The balance (about 640 px wide) is solid from the first frame and its display is a live readout at 52 px. On "so you weigh its container too" a navy hand tag "container first" writes beside the empty basin. The first two rows stay solid at 38 px when the subtraction lands (not dimmed). On "the salt alone is fourteen point zero zero grams" the result "14.00 g" is framed in green with a tick and a navy pen bracket joins the two readings it came from. On "weighing by difference" the tag is navy hand lettering at 42 px. On "gives six point zero zero grams of sand" the result "6.00 g" is framed in green.
+
 ### 4. percentage by mass
 > Now the fraction. Percentage by mass, which the syllabus calls percentage by weight, is the mass of one component, divided by the mass of the whole mixture, times one **hundred**. For the sand, that's six point zero zero over twenty point zero zero, times a hundred, which is thirty point zero **percent**. For the salt, fourteen point zero zero over twenty point zero zero gives seventy point zero **percent**. And together they make one hundred percent, which is a useful **check**.
 
 Visual: board resets to the calculation layout. Task strip: "Find the percentage by mass of each component". On "hundred" the equation strip writes "% by mass = (mass of component ÷ mass of original mixture) × 100", with "original mixture" underlined navy. Givens group (navy): "mixture 20.00 g; sand 6.00 g; salt 14.00 g". The mass accounting bar draws under the givens: an outline the length of 20.00 g with an end line. On "percent" (first) row "sand: 6.00 ÷ 20.00 × 100 = 30.0%" writes and a sand-brown segment fills 30% of the bar, labelled "30.0%". On "percent" (second) row "salt: 14.00 ÷ 20.00 × 100 = 70.0%" writes; the salt segment fills the rest of the bar, labelled "70.0%". On "check" a chip "30.0% + 70.0% = 100.0%" writes and the bar's end line ticks green.
+
+Upgrade (Revision 3): The task strip, the navy givens card and the empty bar outline are on the board from the first frame, with the mixture beaker as a small picture (about 220 px) beside the givens. On "divided by the mass of the whole mixture" a navy hand tag "the whole goes underneath" writes with a pen arrow to the denominator. The two working rows are 52 px; "30.0%" and "70.0%" are framed in green as they land. On "which is a useful check" the sum chip is 44 px and takes a green pen tick with a green hand tag "adds to 100".
 
 ### 5. why the starting mass, and why it adds up
 > Why divide by the twenty grams you started with? Because the question is about the original mixture, so the whole is what you weighed first. And here's why the check works. Filtering and evaporating are physical changes. They move the sand and the salt into different containers, but they don't create or destroy any **matter**. So if nothing is lost along the way, the masses you get back must add up to the mass you started **with**.
 
 Visual: the equation strip's "mass of original mixture" glows; a scribble circle rings "20.00 g" in the givens, tagged "the whole: weighed first". The bar splits into its two segments, which slide back into the small beaker thumbnail at the left. On "matter" a small coded diagram shows grains (brown) and salt particles (grey) moving between three outlined containers (beaker, funnel, basin), the count of each staying the same, with a grey tag "physical change: nothing made, nothing destroyed". On "with" the two segments slide back out and rejoin end to end, exactly filling the 20.00 g outline, and a chip "6.00 g + 14.00 g = 20.00 g" writes.
 
+Upgrade (Revision 3): Board change to the conservation board, solid from the first frame: three painted containers across the board (`y11c-sand-salt-dry-beaker-v1.png`, `y11c-filter-funnel-flask-sand-v1.png` and `y11c-evaporating-basin-crystals-v1.png`, about 360 px each) replace the coded outlined containers, with the 20.00 g bar under them. A live readout holds "sand 6.00 g + salt 14.00 g = 20.00 g" (52 px) while coded sand and salt tokens move from container to container. On "the whole is what you weighed first" the pen ring round "20.00 g" takes a navy hand tag "the whole". On "they don't create or destroy any matter" an ink hand tag "moved, not made" writes with a pen arrow following one token. On "must add up to the mass you started with" the rejoined bar takes a green pen tick.
+
 ### 6. a real run: some mass goes missing
 > Real practicals are rarely that tidy. Another group starts with twenty-five point zero zero grams of the same kind of mixture. They get back eight point zero zero grams of sand, and sixteen point zero zero grams of **salt**. The sand is thirty-two point zero percent, and the salt is sixty-four point zero **percent**. Add those, and you've only accounted for ninety-six point zero percent. One gram, which is four point zero percent of the mixture, is **missing**.
 
 Visual: earlier rows clear; the task strip stays. Givens group rewrites (navy): "mixture 25.00 g; sand 8.00 g; salt 16.00 g" (written on "salt"), with a grey "example data" tag. A new accounting bar outline the length of 25.00 g draws. On "percent" rows "sand: 8.00 ÷ 25.00 × 100 = 32.0%" and "salt: 16.00 ÷ 25.00 × 100 = 64.0%" write one after the other, each filling its segment; the bar stops short of the end line. On "missing" the gap fills with rose hatching, labelled "missing 1.00 g = 4.0%"; a chip writes "recovered: 96.0%".
+
+Upgrade (Revision 3): Board change back to the calculation board with the new givens card ("mixture 25.00 g | sand 8.00 g | salt 16.00 g") and the empty 25.00 g bar from the first frame. The two working rows are 52 px with "32.0%" and "64.0%" framed in amber as partial results. On "you've only accounted for ninety-six point zero percent" the total readout reads "96.0%" and a chip "÷ 24.00 g (what came back): 33.3% + 66.7% = 100%" fades in and is struck in red, with a red hand tag "that hides the loss". On "missing" the rose gap takes a rose hand tag "1.00 g short" with a pen bracket.
 
 ### 7. where the missing mass went
 > So where did it go? It didn't vanish, and it isn't a mystery third substance. It's mass that never made it into the final containers. Some salty solution stays behind, wetting the beaker, the funnel and the filter **paper**. A little solution can spit out of the basin if it's heated too **hard**. And some crystals stay stuck to the glass rod or the **basin**. So report the missing percentage honestly, and name where the losses most likely **happened**.
 
 Visual: the process strip from scene 2 returns small above the bar. A chip "a third substance?" fades in on the first sentence and is crossed (red strike, caption "missing mass is lost, not new"). On "paper" rose loss markers point at the beaker wall and the filter paper, with a few coded wet droplets. On "hard" coded droplets jump from the basin plate, tagged "spitting". On "basin" a rose marker points at a few coded crystals on the basin rim and a coded glass rod. On "happened" the three markers become three short rows under the bar: "solution left on glassware and paper", "spitting during heating", "crystals left on rod and basin", and the hatched gap glows once.
 
+Upgrade (Revision 3): Board change to the loss board, solid from the first frame: the scene 2 process plates large across the board (about 360 px each), with the 25.00 g bar and its rose gap under them. On "it isn't a mystery third substance" the chip is struck in red with a red hand tag "lost, not new". Each loss marker is a rose pen arrow with a rose hand tag: "left wetting the glass and paper" on "paper", "spat out" on "hard", "stuck crystals" on "basin". On "name where the losses most likely happened" the three rows under the bar are 34 px in dark ink.
+
 ### 8. prediction (countdown, 3 seconds)
 > Quick prediction. Suppose a group weighs its sand while it's still a little damp. Will the percentage of sand come out too high, or too low? And what will the two percentages add up to? Have a **think**.
 
 Visual: the 20.00 g example returns as givens with its bar (30.0% and 70.0%). The sand watch glass sits on the balance with a coded dark damp patch on the sand and a few water droplets; the display shows "? g". The two questions write as chips: "sand %: too high or too low?" and "total: ? %". On "think" the 3 s `Countdown` ring runs beside them. Nothing else changes.
+
+Upgrade (Revision 3): The balance (about 520 px), the sand watch glass and the 20.00 g bar are on the board from the first frame; the two question chips are 44 px. No hand tags (thinking time).
 
 ### 9. extra mass, and drying to constant mass
 > Too high. The balance can't tell sand from water, so the water gets counted as **sand**. And that pushes the total above one hundred **percent**. So the total is a clue in both directions. Below one hundred means something was lost. Above one hundred means something extra was weighed, and it's usually **water**. The fix is drying to constant mass. Heat it, let it cool, and weigh it. Then heat and weigh again, until two readings in a row **match**.
 
 Visual: on "sand" the damp sand reading ticks higher than 6.00 g ("6.40 g", illustrative, author note in Numbers used) and the sand segment grows; a teal sliver inside it is labelled "water". On "percent" the bar now overhangs the end line; the overhang is teal, labelled "extra: total above 100%". On "both directions" the scene 6 bar with its rose gap slides in above for comparison; on "water" two tags write: "below 100%: something lost" (rose) and "above 100%: something extra, usually water" (teal). On "match" a small loop diagram draws: "heat → cool → weigh → heat → cool → weigh" with the coded readout going "6.40 g", "6.12 g", "6.00 g", "6.00 g", the last two ringed and tagged "constant mass".
 
+Upgrade (Revision 3): On "Too high" the answer "too high" is framed in green with a tick (52 px). The drying runs as the live accounting bar (see "Simulation"): on "the water gets counted as sand" the display reads 6.40 g, sand reads 32.0% and a teal hand tag "water weighed as sand" writes with a pen ring round the teal sliver; on "above one hundred percent" the total readout reads "102.0%" with a teal pen bracket on the overhang. The two direction tags are 38 px in rose and teal. On "until two readings in a row match" the display steps 6.12 g, 6.00 g, 6.00 g while the total falls to 100.6% and then 100.0%, and the last two readings take a pen ring with a navy hand tag "constant mass".
+
 ### 10. one line to remember
 > Here's the whole method in one line. Divide by what you started with, then account for the **rest**. Each component's percentage uses the original mass on the bottom, and whatever is left over tells you about loss, or about extra **mass**.
 
 Visual: the board clears to the equation strip and the 25.00 g bar with its rose gap. On "rest" the handwritten line writes large: "Divide by what you started with, then account for the rest." On "mass" a `PenArrow` points from "started with" to the "original mixture" denominator, and a second from "the rest" to the rose gap, which gets a small teal ghost beside it (the extra case). Hold about 2 seconds.
+
+Upgrade (Revision 3): The line sits in a framed memory card (hand lettering, 52 px): navy "Divide by what you started with," rose "then account for the rest." The two pen arrows are navy and rose. The extra-mass case is a solid teal marker beside the gap, not a ghost.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. A fifteen point zero zero gram mixture of chalk and table salt is separated. The student recovers four point two zero grams of dry chalk and ten point five zero grams of dry salt. Calculate the percentage by mass of each component in the original mixture, and the percentage that was not recovered. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"), worded as printed: "A 15.00 g mixture of chalk (insoluble) and table salt is separated by filtration and evaporation. The student recovers 4.20 g of dry chalk and 10.50 g of dry salt. (a) Calculate the percentage by mass of each component in the original mixture. (b) Calculate the percentage of the original mass that was not recovered." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no bar, no rows).
 
+Upgrade (Revision 3): The card text is 38 px. From the first frame the card's right side carries the painted top-pan balance (`y11c-top-pan-balance-v1.png`, about 300 px) with a blank display. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > Chalk is four point two zero over fifteen point zero zero, times a hundred, which is twenty-eight point zero **percent**. Salt is ten point five zero over fifteen point zero zero, which is seventy point zero **percent**. Together that's ninety-eight point zero percent, so two point zero percent was not **recovered**. The slip to avoid is dividing by fourteen point seven zero, the total you got back. That hides the loss **completely**.
 
 Visual: card shrinks to the top; "15.00 g" in the card is underlined navy on the first sentence. On "percent" (first) row "(a) chalk: 4.20 ÷ 15.00 × 100 = 28.0%" writes and fills its bar segment. On "percent" (second) "salt: 10.50 ÷ 15.00 × 100 = 70.0%". On "recovered" row "(b) 100% − 98.0% = 2.0% not recovered (0.30 g)" with the rose hatched gap. On "completely" a chip "÷ 14.70 g: chalk 28.6%, salt 71.4%" fades in and is crossed (caption "divide by the original 15.00 g"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card: "mixture 15.00 g | chalk 4.20 g | salt 10.50 g". The working rows are 52 px with "28.0%", "70.0%" and "2.0% not recovered" framed in green as they land. On "completely" the crossed chip is struck in red with a red hand tag "divide by the original 15.00 g".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A ten point zero zero gram mixture of sand and salt is separated. The sand is dried in an oven for only ten minutes, then weighed at four point one two grams. The dry salt weighs six point two five grams. Calculate the percentage of each component, then explain why the total isn't one hundred percent, and how the method should change. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "A 10.00 g mixture of sand and salt is separated. The sand is dried in an oven for 10 minutes and then weighs 4.12 g. The recovered dry salt weighs 6.25 g. (a) Calculate the percentage by mass of each component. (b) Explain why the percentages do not add to 100%, and state how the method should be changed." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 3): The card text is 38 px. From the first frame the card's right side carries the watch glass of sand (`y11c-watch-glass-sand-v1.png`, about 260 px wide) beside the drying oven (`m8-drying-oven-v1.png`, about 260 px), untagged. Nothing answer-bearing: the sand is painted dry and no reading is shown.
+
 ### 14. feedback 2 (brief)
 > Sand comes out at forty-one point two percent, and salt at sixty-two point five **percent**. That adds to one hundred and three point seven percent, so something extra was **weighed**. The most likely cause is water left in the sand, because it was dried for only ten minutes. Dry it to constant mass before **weighing**. Calling the extra mass a third substance is the classic **mistake**.
 
 Visual: card shrinks to the top. On "percent" rows "(a) sand: 4.12 ÷ 10.00 × 100 = 41.2%" and "salt: 6.25 ÷ 10.00 × 100 = 62.5%" write, filling a bar that overhangs its end line. On "weighed" the overhang turns teal: "total 103.7%: 0.37 g extra". On the third sentence "only 10 minutes" in the card is underlined; on "weighing" row "(b) water still in the sand; dry to constant mass (heat, cool, weigh until two readings match)". On "mistake" a chip "extra 3.7% = a third substance" fades in and is crossed (caption "extra mass is usually water"). Hold about 1 second.
+
+Upgrade (Revision 3): A navy givens strip sits under the shrunken card: "mixture 10.00 g | sand 4.12 g after 10 minutes | salt 6.25 g". The rows are 52 px with "41.2%" and "62.5%" framed in amber as partial results. On "so something extra was weighed" the total readout reads "103.7%" with a teal hand tag "0.37 g extra". On "Dry it to constant mass before weighing" the answer "(b) water in the sand: dry to constant mass" is framed in green with a tick (44 px). On "mistake" the crossed chip is struck in red with a red hand tag "usually water".
 
 ### 15. handoff: inside the salt
 > So by separating a mixture and weighing the parts, we found how much of it was salt. But salt itself is a compound. Its sodium and chlorine are bonded together in a fixed ratio, so no filter can pull them apart. Next time, we'll see how the formula alone tells us what fraction of a compound's mass comes from each **element**.
 
 Visual: board clears. The 20.00 g bar returns small at the top with "salt 70.0%" glowing. The salt segment lifts out and becomes `c1-salt-jar-crystals-v1.png` at the centre. On the second sentence the formula "NaCl" writes beside the jar with a grey tag "compound: fixed ratio"; a small coded filter funnel icon draws next to it and is crossed ("can't filter a compound apart"). On "element" a chip writes: "Na: ? %   Cl: ? %   from the formula alone?". Hold about 2 seconds. This is the final frame (v07 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 3): The salt jar (about 420 px) is solid when it arrives. On "bonded together in a fixed ratio" a navy hand tag "bonded" writes beside "NaCl" and clears before the last chip writes, so the final frame is as described. On "no filter can pull them apart" the funnel beside the formula is a small copy of the painted filter plate (`y11c-filter-funnel-flask-empty-v1.png`, about 160 px), struck with a slate cross, in place of the coded funnel icon; v07's opening draws the same small plate. Tags are dark ink.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Percentage by mass of a component = (mass of component ÷ mass of original mixture) × 100.
-2. Weighing by difference: mass of solid = mass of container with solid − mass of empty container.
-3. A physical separation conserves matter: with no loss, the component masses add to the original mass (100%).
-4. Total below 100%: mass was lost (solution left on glassware and paper, spitting, crystals left behind). Total above 100%: extra mass, usually water. Dry to constant mass: heat, cool, weigh, repeat until two readings match.
+1. % by mass = (mass of component ÷ mass of original mixture) × 100.
+2. Weigh by difference: container with solid − empty container.
+3. A physical separation conserves matter: with no loss, the parts total 100%.
+4. Total below 100%: mass was lost. Total above 100%: extra mass, usually water.
+5. Dry to constant mass: heat, cool, weigh, until two readings match.
 
-Memory aid (large, on the notes screen): *Divide by what you started with, then account for the rest.*
+Memory aid (framed card beside the notes, hand lettering, navy and rose as in scene 10): *Divide by what you started with, then account for the rest.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -197,6 +239,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted, bold markers removed): **6,056 characters** (scenes joined with a space), 16 scenes. Characters per scene (1 to 16): 453, 512, 530, 468, 427, 453, 440, 199, 435, 231, 331, 422, 368, 374, 323, 75. At 13.3 characters per second the speech is about 455 s; add about 3 s of settling for the separation strip (scene 2) and the drying loop (scene 9), 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold, and about 55 s more of the quiet notes hold (about 87 s of holds and countdowns): **about 542 s** (9.0 minutes), within the 5,500 to 6,800 character band and under the 570 s cap. Watch scene 3: each display reading must tick before its number is spoken. Reserve trims if the voiced take runs long: scene 5's second sentence ("And here's why the check works."), scene 7's final sentence (keep the three rows silent), scene 10 entirely (the aid stays on the notes screen).
 
+Revision 3 (12 Nov 2026): narration unchanged (6,041 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 542 s to about 527 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v06` (route chem-y11-m1-v06; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v06`.
@@ -206,6 +250,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, separation-recall,
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except prediction, attempt-1, attempt-2 (`hold`, countdown) and key-notes (`hold`, copying). Transitions (`pickTransition`): 1 to 2 camera continue (the mixture beaker becomes step 1 of the strip); 2 to 3 camera push into the balance; 3 to 4 board reset to the calculation layout (the two masses carry into the givens); 4 to 5 camera continue; 5 to 6 clear change (new givens, same layout); 6 to 7 camera continue (the bar stays); 7 to 8 clear change; 8 to 9 camera continue; 9 to 10 board clear; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
 Holds: prediction (3 s countdown), attempt-1, attempt-2 (10 s countdown after the speech, "Pause here to answer." on screen); key-notes is the quiet notes hold (about 60 s). Review evidence paths for the LESSONS entry: `learning_review` = `checks/c-y11-m1-v06-learning-review.md`, `science_check` = `checks/c-y11-m1-v06-science-check.md`.
+
+Revision 3: key-notes hold is 45 s in all. Transitions 4 to 5, 5 to 6 and 6 to 7 are now board changes (conservation board, calculation board, loss board).
 
 ## Assets
 
@@ -222,6 +268,8 @@ Need (new plates, Codex), in priority order:
 3. `y11c-sand-salt-dry-beaker-v1.png`: scenes 1, 5. Wanted; fallback: `m6-beaker-v1.png` with coded sand and salt grains.
 
 Coded: chromatogram thumbnail (from v05), readouts and balance digits, process strip labels, steam wisps, water drops, sand grains and salt specks in the beaker, the particle-conservation diagram, mass accounting bars with hatched gaps and teal overhangs, loss markers, droplets, glass rod, the drying loop, calculation layout rows, crossed chips, filter-funnel icon, attempt cards, countdowns, key notes board.
+
+Revision 3 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-top-pan-balance-v1.png`, `y11c-evaporating-basin-empty-v1.png`, `y11c-sand-salt-dry-beaker-v1.png`, and v03's shared set. Newly placed: the three containers of scene 5 are painted plates, not coded outlines; the balance is the attempt 1 picture; the sand watch glass and `m8-drying-oven-v1.png` are the attempt 2 picture; the funnel in scene 15 is a small copy of `y11c-filter-funnel-flask-empty-v1.png`. New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M1 v06; adds to v03's shared `y11c-` set)
 
@@ -246,6 +294,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("vaporise" not used; "colour", "centre").
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Confirm the opening-frame assumption is flagged for root (Decisions) and the final frame matches v07's opening.
+
+Revision 3 (visuals only), also check: the narration lines are identical to Revision 2; every phrase quoted after "On" in an "Upgrade (Revision 3)" paragraph is in that scene's narration, in spoken order within the paragraph; the new on-screen numbers: 6.40 ÷ 20.00 = 32.0% and total 102.0%; 6.12 ÷ 20.00 = 30.6% and total 100.6%; the crossed chip 8.00 ÷ 24.00 = 33.3% and 16.00 ÷ 24.00 = 66.7%; "1.00 g short"; "0.37 g extra"; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -284,3 +334,28 @@ Next: Percentage composition from a chemical formula.
 - Brief 177 reviews (`checks/c-y11-m1-v06-learning-review.md`, `checks/c-y11-m1-v06-science-check.md`): 0 blockers, 0 should fix, 0 optional. No repair was made, so there is no Revision 2 and no repair error check; the reviewed Revision 1 narration and visuals are unchanged.
 - Headline count restated as the sum of scene strings: 6,041 characters over 16 scenes (the earlier 6,056 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 3 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 2), so the brief 236 voicing stands.
+
+Findings: brief 177's learning review and science check were clean at Revision 1 and no later check is open; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 3)"; each scene gains an "Upgrade (Revision 3)" paragraph.
+- Anchor: v05's balance and watch glasses, then the painted beaker of dry sand and salt at about 14 s.
+- Simulation: one mass model drives the balance display, the rows, the accounting bar and a total readout; in scene 9 the damp sand dries live (6.40 g to 6.00 g, total 102.0% to 100.0%).
+- Cuts: scene 5 (conservation board with three painted containers) and scene 7 (loss board) are new stages. Before, the calculation layout ran about 134 s through scenes 4 to 7.
+- Hand tags (two or three) and a pen mark in scenes 1 to 7 and 9; the memory line is a framed card in scene 10.
+- Worked examples: givens cards, results framed in green; scene 6 gains a crossed slip "÷ 24.00 g (what came back): 33.3% + 66.7% = 100%".
+- Coded outlines of real containers (scene 5) and the coded funnel icon (scene 15) are replaced by painted plates.
+- Question cards: attempt 1 gains the balance; attempt 2 gains the sand watch glass and the oven; feedback scenes gain navy givens strips and green frames.
+- Key notes: four items (one long) cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the list of where losses happen (kept in scene 7).
+
+New plate requests: none.
+
+Joins: the opening is v05's final frame, unchanged. The final frame (scene 15) keeps the same objects, words and chip; its funnel is drawn as a small painted plate in place of a coded icon, and v07's opening does the same.
+
+Counts: 6,041 characters, unchanged; about 542 s to about 527 s.
+
+Calls for root: (1) the scene 6 crossed slip and the scene 9 readouts (32.0%, 30.6%, 102.0%, 100.6%) are new on-screen numbers derived from the design's own data; (2) the funnel in the final frame is now a painted thumbnail, which v07's builder must match.

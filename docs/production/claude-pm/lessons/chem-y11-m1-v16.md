@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V16: Flame tests. What do flame colours show and what can they not identify reliably? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: "The sample isn't burning"; no named concentrations or approvals (root decision). Narration 5,584 characters (joined parser count), about 509.9 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,567 characters (sum of scene strings; 5,584 with joining spaces; Revision 1 was 5,625 by the joined parser count), 18 scenes, about 509.9 s (8.6 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -59,6 +59,18 @@ Entry knowledge: v10, v15; Stage 5 Bunsen safety and ionic compounds.
 Stops after: the cause recalled, a reasoned method with safety, seven colours as primary data, what a colour shows, four limits, the spectroscope fix. No cation sequence, instruments beyond the hand spectroscope, or calculations.
 Handoff: chem-y11-m1-v17, radiation from unstable isotopes.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted trough with potassium's lilac flame is on screen from the first frame (v15's final frame), and within about 10 s the painted Bunsen burner with its coloured flames takes over. The aligned flame set (now complete: `m8-flame-k-lilac-v2.png`, `m8-flame-sr-crimson-v2.png` and `y11c-flame-li-crimson-v1.png` are delivered) and the hand spectroscope (`y11c-hand-spectroscope-v1.png`, delivered) carry the whole video.
+- **Simulation: photons into a colour, and into lines.** Two runs of the chance engine (`src/explainer/sims/chance.ts`, `{kind: 'weighted'}` with one outcome per emission line of the metal). In scene 2 each trial is one photon leaving the flame: photons of sodium's lines land in a swatch that blends them, with live readouts "photons counted" and the blended colour, so the student watches many single photons become one colour to the eye. In scene 11 the same photons are sent through the spectroscope instead: they pile up as tallies at their own places on the strip (lithium: 671 nm strong, 610 nm weak; strontium: bands near 606 nm and 640 to 690 nm, and 461 nm), so two flames that blended to the same red come apart into different patterns. The weights are illustrative and both views are labelled "model: brightness not to scale".
+- **Colour key (fixed for the whole video).** Each metal's flame, swatch, table row and lines in its own flame colour; method steps teal; safety text green outline with dark ink; the four limits terracotta outline; the spectroscope strips on a near-black band with white labels; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Every tag the Visual lines call "grey" or "faint" is dark ink at full strength, and on-screen tags never show a video number.
+- **Type sizes (1080p).** Heading 60 px; the current step, readouts and framed answers 44 to 52 px; question-card sentences 38 px; table rows, bottle labels, reason chips and limit chips 34 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) the trough, then the burner with two flames, scene 1 (about 30 s); (B) the flame beside the energy ladder with the photon run, scene 2 (about 30 s); (C) the method board, scene 3 (about 43 s); (D) reasons board, scene 4 (about 46 s): the burner large at the centre with the steps in a column at the right, each gaining its reason, and the safety glasses plate; (E) the burner and the results table, scenes 5 and 6 (about 49 s); (F) crimson: one metal or two, scenes 7 and 8 (about 37 s); (G) masking, scene 9 (about 29 s); (H) no colour and no amount, scene 10 (about 23 s); (I) the spectroscope and the two strips, scene 11 (about 36 s); (J) the memory card, scene 12 (about 10 s); question and feedback cards; the handoff; the notes board. Scene 4 is re-laid as its own stage so the method board does not run about 89 s unchanged.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No coded flames.** The coded luminous flame (scene 4) and the coded yellow glow (scenes 9 and 16) are replaced by a word card and by cross-fades between the aligned painted flame plates.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v10 and v15): energy levels ink; photons in the colour of their light; flames in their painted colours; method steps teal; safety items green outline; limits red outline; the spectroscope strips on a near-black band (as v10); crossed chips red strike.
@@ -68,96 +80,131 @@ Cue words in **bold** trigger the visual change. Colour key (continues v10 and v
 
 Visual: opens on v15's final frame (Decisions). On the second sentence the trough slides out and `m8-flame-blue-v2.png` (Bunsen with a blue flame) moves to centre; a coded wire loop carries a drop from a small bottle (`m5x-bottle-scn-v1.png` with a coded label "KCl(aq)") to the flame edge. On "lilac" the plate cross-fades to `m8-flame-k-lilac-v2.png`, tag "sample colours the flame". On the fourth sentence a second bottle "NaCl(aq)" and the cross-fade to `m8-flame-na-yellow-v2.png`. On "metal" chip "colour comes from the metal". On "reliably" the heading writes on: "Flame tests: what can a colour tell you?"
 
+Upgrade (Revision 4): The trough is solid from the first frame; the burner (about 560 px tall) is solid when it takes the centre. The bottle labels are 34 px. On "The sample isn't burning" an ink hand tag "not burning" writes beside the loop with a pen arrow. On "the flame turns lilac" a lilac hand tag (dark-ink outline) "from the potassium" writes on the flame. On "Sodium compounds turn it yellow-orange" a yellow-orange hand tag (dark-ink outline) "from the sodium" writes. On "the colour belongs to the metal" the chip is 44 px with a pen underline under "metal".
+
 ### 2. why a metal colours a flame
 > You've met the cause already, with hydrogen's line spectrum. The flame's heat gives the metal's electrons energy, lifting them to higher energy levels. As they drop back, they give out photons, with energies set by the gaps between that metal's own levels. A flame shows several of these at once, and your eye blends them into a single **colour**. So each metal gives its own **colour**.
 
 Visual: a small energy ladder (v10's style, four uneven levels) draws beside the sodium flame, tag "v10: energy levels". On the second sentence an orange "heat" arrow lifts an electron dot up two levels. On the third sentence it drops and a yellow-orange wavy photon leaves toward the flame. On "colour" (first) two or three further drops send photons of nearby colours into the flame, and a small swatch blends them into one, tag "your eye blends the photons into one colour". On "colour" (second) the ladder duplicates beside a lilac flame thumbnail with different gaps, tag "each metal: its own levels, its own colour".
+
+Upgrade (Revision 4): The sodium flame (about 520 px tall) is at the left and the energy ladder at the right from the first frame; the ladder's tag reads "energy levels" with no video number. On "lifting them to higher energy levels" an orange hand tag "heat lifts" writes on the up arrow. On "they give out photons" a yellow-orange hand tag (dark-ink outline) "drops: photons" writes on a leaving photon. On "your eye blends them into a single colour" the photon run plays (see "Simulation") with its readouts at 44 px and a pen ring round the blended swatch. On "So each metal gives its own colour" a lilac hand tag (dark-ink outline) "different gaps, different colour" writes on the second ladder.
 
 ### 3. the method
 > Here's how the practical runs. It follows your school's risk assessment, with solutions your teacher has approved, usually metal **chlorides**. You'll need a Bunsen burner with the air hole open, giving a hot blue flame, and a nichrome wire loop, which doesn't colour the flame itself. Clean the loop as your school's method says, then heat it until the flame shows no **colour**. Then dip the loop in a solution, hold it at the edge of the blue flame, and record the colour straight **away**. Clean the loop, and repeat with the next **solution**.
 
 Visual: board clears to the method board. On "chlorides" seven bottles (`m5x-bottle-scn-v1.png`, same plate, uniform scale) stand in a row with coded labels "LiCl, NaCl, KCl, CaCl₂, SrCl₂, BaCl₂, CuCl₂", tag "examples: your teacher chooses the approved solutions" and a green-outline chip "follows the school's risk assessment" (Revision 2: no concentrations or specific approvals named). On the second sentence `m8-flame-blue-v2.png` appears with tag "air hole open: blue, non-luminous flame" and the coded loop with tag "nichrome: doesn't colour the flame". On "colour" (first) teal step 1 writes, "clean the loop until the flame shows no colour", and the loop glows in a colourless flame. On "away" steps 2 and 3 write: "dip in a solution", "hold at the flame edge; record the colour at once". On "solution" step 4 writes, "clean, then repeat", with a looping arrow back to step 1.
 
+Upgrade (Revision 4): The method board is solid from the first frame: the burner (about 460 px) at the left, the row of seven bottles (about 200 px each, labels 34 px) along the bottom and the four numbered step slots at the right. On "your school's risk assessment" the green-outline chip is 38 px. On "usually metal chlorides" the tag under the bottles is dark ink at 30 px. On "giving a hot blue flame" a teal hand tag "blue flame" writes with a pen arrow; on "doesn't colour the flame itself" a teal hand tag "nichrome: no colour of its own" writes on the loop. Each step is 38 px with a hand-drawn numeral, and the arrow back to step 1 is a pen arrow.
+
 ### 4. why each step matters
 > Each step has a reason. That first test, with a clean loop and no sample, is a blank. It shows what the loop and flame give on their own, so any colour you see later comes from the **sample**. A blue flame matters, because the yellow flame you get with the air hole closed would hide the colours. Cleaning between tests stops one sample colouring the **next**. And testing each solution more than once checks that your observation is **reliable**. For safety, wear safety glasses, tie back long hair, and remember the loop stays hot. Some of these compounds are toxic, so wash your hands **afterwards**.
 
 Visual: each method step gains a short reason chip as it is named. On "sample" step 1's chip "blank: a control" writes beside a colourless flame. On the third sentence a coded yellow luminous flame ghost appears beside the blue flame and is crossed, tag "luminous flame hides colours". On "next" step 4's chip "stops carry-over". On "reliable" a "repeat" column appears in a results-table outline at the right. On the fifth sentence `m5x-safety-glasses-v1.png` appears small with green chips "glasses", "hair tied back", "hot loop". On "afterwards" chip "some compounds toxic: wash hands" (green outline).
+
+Upgrade (Revision 4): Board change to the reasons board: the burner large at the centre (about 620 px), the four steps in a column at the right and the safety glasses plate (about 240 px) at the lower left from the first frame. On "is a blank" a teal hand tag "blank = control" writes beside step 1. On "the yellow flame you get with the air hole closed" no flame is drawn: a word card "air hole closed: yellow flame hides the colours" takes a slate cross. On "stops one sample colouring the next" and on "checks that your observation is reliable" each reason chip is 34 px in teal with a pen arrow to its step. On "wear safety glasses" the three safety chips have a green outline at 34 px. On "wash your hands afterwards" the last chip writes at 34 px.
 
 ### 5. what you'll see
 > Here's what you'll record. Lithium gives a crimson **red**. Sodium, a bright yellow-**orange**. Potassium, a pale **lilac**. Calcium, an orange-**red**. Strontium, a deep red, a lot like lithium's. Barium, a pale **green**. And copper, a blue-**green**.
 
 Visual: the burner plate sits at centre left; with each metal the loop dips into its bottle and the flame cross-fades to that colour, and a row writes in the results table at the right with a tick in "repeat": on "red" (first) `y11c-flame-li-crimson-v1.png`, "Li⁺: crimson red"; on "orange" `m8-flame-na-yellow-v2.png`, "Na⁺: yellow-orange"; on "lilac" `m8-flame-k-lilac-v2.png`, "K⁺: lilac"; on "red" (second) `m8-flame-ca-brick-red-v2.png`, "Ca²⁺: orange-red"; on the strontium sentence `m8-flame-sr-crimson-v2.png`, "Sr²⁺: red (crimson)"; on "green" (first) `m8-flame-ba-pale-green-v2.png`, "Ba²⁺: pale green"; on "green" (second) `m8-flame-cu-blue-green-v2.png`, "Cu²⁺: blue-green". A grey tag on the table: "primary data: your own observations".
 
+Upgrade (Revision 4): The burner (about 520 px) and the empty seven-row results table are on the board from the first frame; rows are 38 px and each ion label is written in its flame colour with a dark-ink outline. Each flame change is a cross-fade inside the aligned painted set. On "a lot like lithium's" a pen bracket joins the lithium and strontium rows with a red hand tag "nearly the same". The tag "primary data: your own observations" is dark ink at 30 px.
+
 ### 6. what a flame colour shows
 > So what does a colour tell you? It tells you which metal is likely to be present, because the colour comes from the metal's electrons. It doesn't tell you the rest of the compound. Sodium chloride and sodium nitrate both give the same yellow-orange **flame**. The chloride or nitrate part doesn't change the colour. And because you watch and record it yourself, it's primary **data**.
 
 Visual: two bottles "NaCl(aq)" and "NaNO₃(aq)" stand either side of the sodium flame plate. On "flame" both send loops to the flame and the same yellow-orange result writes twice; chip "flame colour: the metal, not the compound". On "data" the results table glows, tag "primary data: observed and recorded by you".
+
+Upgrade (Revision 4): On "which metal is likely to be present" an ink hand tag "the metal" writes with a pen arrow to the "Na" in both bottle labels. On "It doesn't tell you the rest of the compound" an ink hand tag "not the rest" writes with a pen bracket over "Cl" and "NO₃". On "the same yellow-orange flame" the chip "flame colour: the metal, not the compound" is framed at 44 px. On "it's primary data" the table takes a teal pen tick.
 
 ### 7. prediction (countdown, 3 seconds)
 > Quick prediction. An unknown solution gives a crimson-red flame. Which metal is it? Think about the colours we just recorded. Have a **think**.
 
 Visual: board clears to `y11c-flame-li-crimson-v1.png` alone at centre with an unlabelled bottle "?" beside it. Chip "crimson-red flame: which metal?". On "think" the 3 s `Countdown` ring runs. The results table is hidden.
 
+Upgrade (Revision 4): The crimson flame (about 560 px tall) and the "?" bottle are on the board from the first frame; the chip is 44 px. No hand tags (thinking time).
+
 ### 8. two metals, one colour
 > If you said lithium, you might be right. But strontium gives a very similar red. By eye, you can't reliably tell them **apart**. Calcium's orange-red is close as well. Colours are hard to describe, too. One person's crimson is another person's scarlet. So a colour alone can point to more than one **metal**.
 
 Visual: on the first sentence a chip "Li⁺" writes under the flame. On "apart" the strontium plate fades in beside it (side by side, same scale), and two crimson swatches slide together and merge, tags "Li⁺?" and "Sr²⁺?". On the fourth sentence the calcium plate joins small, tag "close". On the fifth and sixth sentences two handwritten words "crimson" and "scarlet" write under the same swatch. On "metal" a red-outline chip writes "limit 1: similar colours overlap".
+
+Upgrade (Revision 4): On "you might be right" the chip "Li⁺" is 52 px with a "?" beside it (it is not framed as an answer). On "you can't reliably tell them apart" the two flames stand side by side (about 420 px each) and the answer "Li⁺ or Sr²⁺" is framed in green with a tick (52 px). On "close as well" the calcium flame is about 300 px. On "another person's scarlet" the two handwritten words are 42 px. On "more than one metal" the limit chip is 38 px with a terracotta outline.
 
 ### 9. sodium gets everywhere
 > Here's the second problem. Sodium compounds are almost everywhere, in dust, on skin, in tap water, even on glassware. And sodium's yellow-orange is very bright. So a tiny trace of sodium can swamp a weaker colour, like potassium's pale **lilac**. In a mixture, the strongest colour tends to **win**. That's why the blank, and a clean loop, really **matter**.
 
 Visual: the lilac flame `m8-flame-k-lilac-v2.png` at centre. On the second sentence small coded specks drift onto the loop from tags "dust", "skin", "tap water", "glassware". On "lilac" a coded yellow glow spreads over the lilac flame until the lilac is barely visible; tag "trace Na⁺ masks K⁺". On "win" chip "mixtures: the strongest colour dominates". On "matter" the method's steps 1 and 4 flash back small, ticked; red-outline chip "limit 2: contamination and masking". Grey tag: "blue cobalt glass can filter out sodium's yellow".
 
+Upgrade (Revision 4): The lilac flame (about 520 px) is solid from the first frame. On "almost everywhere" the four source tags are dark ink at 34 px with pen arrows to the loop. On "swamp a weaker colour" the plate cross-fades most of the way from the lilac flame to the sodium flame (both from the aligned set), with a readout "sodium present: a trace" (44 px) and a yellow-orange hand tag (dark-ink outline) "a trace is enough". On "the strongest colour tends to win" the chip is 38 px. On "really matter" steps 1 and 4 return at 34 px with teal ticks, and the limit chip has a terracotta outline. The cobalt glass tag is dark ink at 30 px.
+
 ### 10. what a flame can't tell you at all
 > Some metals give no useful colour at all. Magnesium compounds, for example, give out mostly ultraviolet light, which you can't **see**. The flame just stays blue. And a flame test says nothing about how much of a metal is there. A faint colour might mean a dilute solution, or just a poor **dip**.
 
 Visual: a bottle "MgCl₂(aq)" sends a loop to `m8-flame-blue-v2.png`; the flame stays blue. On "see" a small v10 ladder shows a grey dashed photon leaving, tag "mostly ultraviolet: invisible"; red-outline chip "limit 3: some metals show no colour". On "dip" two flames of the same colour at different brightness sit side by side, tag "brightness ≠ amount"; red-outline chip "limit 4: no amount".
+
+Upgrade (Revision 4): The blue flame (about 460 px) and the "MgCl₂(aq)" bottle are on the board from the first frame. On "which you can't see" a slate hand tag "ultraviolet: invisible" writes on the dashed photon. On "says nothing about how much" the two copper flames stand side by side (the same painted plate at two strengths, about 360 px each) with an ink hand tag "brightness ≠ amount". The two limit chips are 38 px with terracotta outlines.
 
 ### 11. the fix: look at the lines
 > So how do chemists tell lithium from strontium? They spread the flame's light out with a spectroscope, a small instrument that separates light into its colours, like the prism we used for hydrogen. Then you see the actual lines. Lithium shows one strong red **line**. Strontium shows several red and orange bands, and a blue **line**. Each metal's pattern is its fingerprint, so the line pattern can identify a metal that the colour **can't**.
 
 Visual: board clears to `y11c-hand-spectroscope-v1.png` small at the left, a coded beam from the crimson flame entering it. On the second sentence a near-black strip (v10's) draws at the right. On "line" (first) the lithium strip fills: one strong red line at 671 nm and a faint one at 610 nm, tag "lithium". On "line" (second) a second strip under it fills: bands at about 606 nm and 640 to 690 nm and a blue line at 461 nm, tag "strontium". On "can't" a scribble circle rings the two different patterns, chip "same colour by eye; different line patterns". Grey chip: "more tests for metal ions: Year 12".
 
+Upgrade (Revision 4): The spectroscope (about 420 px wide, not small) is at the left and the two empty strips (each at least 110 px tall) at the right from the first frame. The line run plays (see "Simulation"), with tallies growing at each line and labels in white at 30 px. On "one strong red line" a red hand tag "one strong line" writes with a pen arrow. On "a blue line" a blue hand tag (dark-ink outline) "and a blue one" writes with a pen arrow. On "the colour can't" the pen ring round the two patterns takes an ink hand tag "same colour, different lines". The last chip is dark ink at 30 px.
+
 ### 12. one line to remember
 > So here's the rule to keep. A flame colour is a clue, and the line pattern is the evidence. Colour suggests, spectrum **confirms**.
 
 Visual: the crimson flame at the left, the two strips at the right. On "confirms" the handwritten line writes: "Colour suggests; spectrum confirms." Hold about 2 seconds.
+
+Upgrade (Revision 4): The line sits in a framed memory card (hand lettering, 56 px): red "Colour suggests;" ink "spectrum confirms." The crimson flame and the two strips sit either side.
 
 ### 13. attempt 1 (countdown, 10 seconds)
 > Your turn. A student carries out flame tests on two unlabelled solutions. Solution A gives a crimson flame, and solution B gives a lilac flame. Identify the metal ions that could be present in each. Explain why the result for A isn't certain, and suggest a way to confirm it. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "A student carries out flame tests on two unlabelled solutions, each containing one metal ion. Solution A gives a crimson flame. Solution B gives a lilac flame. (a) Identify the metal ion or ions that could be present in each solution. (b) Explain why the result for solution A does not identify its metal ion with certainty, and suggest a method to confirm it. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no flame plates, no results table).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the burner with its blue flame (`m8-flame-blue-v2.png`, about 280 px) and two bottles tagged only "A" and "B". Nothing answer-bearing (no coloured flame, no table).
+
 ### 14. feedback 1 (brief)
 > Solution B is potassium. Solution A could be lithium or strontium, because both give a very similar crimson **red**. To confirm, view the flame through a spectroscope and compare its lines with known samples. Writing just lithium for A is the slip. The colour can't separate the **two**.
 
 Visual: card shrinks to the top. The lilac and crimson flames sit small side by side. On "red" rows "(a) B: K⁺; A: Li⁺ or Sr²⁺"; "(b) similar colours: can't be separated by eye". On the third sentence row "confirm: spectroscope; compare line patterns with known Li⁺ and Sr²⁺", the two strips small. On "two" a chip "A is lithium" fades in and is crossed (caption "Li⁺ or Sr²⁺"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "A: crimson flame | B: lilac flame | one metal ion each". On "Solution B is potassium" the answer "B: K⁺" is framed in green (44 px); on "very similar crimson red" the answer "A: Li⁺ or Sr²⁺" is framed in green with a tick. On "compare its lines with known samples" the confirm row is 38 px beside the two strips. On "two" the crossed chip is struck in red with a red hand tag "Li⁺ or Sr²⁺".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A student flame tests a solution of potassium chloride, but sees a yellow-orange flame instead of lilac. Identify the most likely cause, and explain why the student shouldn't conclude that potassium is absent. Pause here to answer.
 
 Visual: `QuestionCard`: "A student carries out a flame test on a solution of potassium chloride but observes a yellow-orange flame instead of a lilac flame. (a) Identify the most likely cause of this result. (b) Explain why the student should not conclude that potassium ions are absent. (2 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no flames).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the burner with its blue flame (about 280 px) and one bottle labelled "KCl(aq)". Nothing answer-bearing (no coloured flame).
+
 ### 16. feedback 2 (brief)
 > The likely cause is sodium contamination, from a dirty loop or glassware. Sodium's bright yellow-orange swamps potassium's pale lilac, so the potassium can be there but **hidden**. Clean the loop until the blank shows no colour, and test again. Concluding that potassium is absent is the **trap**.
 
 Visual: card shrinks to the top. The lilac flame with its yellow masking glow sits small. On "hidden" rows "(a) sodium contamination (dirty loop or glassware)"; "(b) Na⁺ yellow-orange masks K⁺ lilac". On the third sentence row "fix: clean until the blank is colourless; repeat", and the glow fades back to lilac. On "trap" a chip "potassium is absent" fades in and is crossed (caption "masked, not absent"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "KCl solution | flame seen: yellow-orange, not lilac". The masked flame is the cross-fade of the two painted plates, about 300 px. On "sodium contamination" the answer "(a) sodium contamination" is framed in green (44 px); on "can be there but hidden" the answer "(b) masked, not absent" is framed in green with a tick. On "test again" the plate cross-fades back to lilac beside the fix row (38 px). On "trap" the crossed chip is struck in red with a red hand tag "masked, not absent".
 
 ### 17. handoff: from electrons to the nucleus
 > Everything in today's video happened outside the nucleus, as electrons moved between energy levels. But some atoms change inside the nucleus itself, and give out radiation. So what radiation do unstable isotopes give off, and does it matter whether they're natural or **human-made**?
 
 Visual: board clears to a shell atom at the left; one electron drops and a coloured photon leaves, tag "flame colours: electrons outside the nucleus". On the second sentence the camera pushes to the right of the atom, where its nucleus enlarges (red protons, grey neutrons, as v08), and a small red burst with "?" flickers out of it, tag "radiation: changes inside the nucleus". On "human-made" the chip writes: "Next: what radiation do unstable isotopes give off, and does it matter if they're natural or human-made?". Hold about 2 seconds. This is the final frame (v17 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The shell atom (about 420 px) is solid from the first frame of the scene. On "happened outside the nucleus" a blue hand tag "electrons: outside" writes on the outer shell and clears before the nucleus enlarges. Nothing else is added, so the final frame is exactly as described; its tags are drawn in dark ink.
+
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Flame colour: heat excites the metal's electrons to higher energy levels; as they drop back they emit photons with energies set by that metal's own levels; the eye sees the blend as one colour.
-2. Method: follow the school's risk assessment and use the teacher's approved solutions; clean nichrome loop (blank first, until the flame shows no colour); blue non-luminous flame; record the colour at once; clean and repeat. Safety glasses, hair tied back, hot loop, wash hands.
-3. Colours: Li⁺ crimson red; Na⁺ yellow-orange; K⁺ lilac; Ca²⁺ orange-red; Sr²⁺ red (crimson); Ba²⁺ pale green; Cu²⁺ blue-green. The colour identifies the metal, not the compound.
-4. Limits: similar colours overlap (Li⁺ and Sr²⁺); sodium contamination masks weaker colours; some metals (Mg²⁺) give no visible colour; no information about amount. A spectroscope separates the lines and confirms the metal.
+1. Heat lifts a metal's electrons; as they drop back they emit that metal's colours.
+2. Method: clean loop, blank first, blue flame, record at once, clean and repeat.
+3. Li⁺ crimson, Na⁺ yellow-orange, K⁺ lilac, Ca²⁺ orange-red, Ba²⁺ green, Cu²⁺ blue-green.
+4. A colour suggests the metal, not the compound, and not the amount.
+5. Limits: Li⁺ and Sr²⁺ look alike; sodium masks; a spectroscope confirms.
 
-Memory aid (large, on the notes screen): *Colour suggests; spectrum confirms.*
+Memory aid (framed card beside the notes, hand lettering, red and ink as in scene 12): *Colour suggests; spectrum confirms.* A green-outline safety strip under the notes (30 px): "Follow your school's risk assessment: safety glasses, hair tied back, hot loop, wash hands." Notes 34 px with each ion in its flame colour (dark-ink outline); no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -205,6 +252,8 @@ No calculations in this video.
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **5,625 characters**, 18 scenes. At 13.3 characters per second the speech is about 423 s; add about 4 s for the loop movements and cross-fades in scenes 3 and 5, 2 s for the masking glow, 2 s for the scene 12 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 90 s): **about 513 s**, inside the band and under the cap. Reserve trims: scene 4's safety sentences can move to on-screen chips only if root prefers (about 150 characters), scene 8's fifth and sixth sentences, scene 10's last sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (5,567 characters, 18 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 510 s to about 495 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v16` (route chem-y11-m1-v16; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v16`.
@@ -214,6 +263,8 @@ In order (18 scene headings, all `### N.`): hook, cause, method, reasons-safety,
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: 1 to 2 camera continue (the ladder joins the flame); 2 to 3 clear change to the method board; 3 to 4 camera continue (reasons attach to steps); 4 to 5 camera push to the burner; 5 to 6 camera continue; 6 to 7 clear change; 7 to 8 camera continue; 8 to 9 clear change; 9 to 10 camera continue; 10 to 11 clear change; 11 to 12 camera continue; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v16-learning-review.md`, `checks/c-y11-m1-v16-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 3 to 4 is a board change to the reasons board.
 
 ## Assets
 
@@ -229,6 +280,8 @@ Need (Codex):
 3. `y11c-hand-spectroscope-v1.png`: new. Essential for scene 11.
 
 Coded: wire loop, energy ladder, results table, reason chips, overlap swatches, contamination specks and masking glow, brightness pair, spectroscope beam and strips, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `m8-flame-k-lilac-v2.png`, `m8-flame-sr-crimson-v2.png`, `y11c-flame-li-crimson-v1.png`, `y11c-hand-spectroscope-v1.png`. The v1 flame plates are no longer needed. Removed coded stand-ins: the luminous flame (now a word card) and the yellow masking glow (now a cross-fade between the potassium and sodium plates). The blue-flame burner is the picture on both attempt cards. New plate requests: none. Simulation: the chance engine for scenes 2 and 11.
 
 ## Codex asset brief (Year 11 Chemistry M1 v16)
 
@@ -253,6 +306,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("colour").
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals v15's final frame and the final-frame chip matches v17's approved learner question.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the chance runs place photons only at each metal's stated lines and both carry the label "model: brightness not to scale"; nothing new names a concentration, an approval or a school method (root decision 33 stands); the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -297,3 +352,28 @@ Narration: 5,584 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v16-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,567 characters over 18 scenes (the earlier 5,584 included the 17 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v16-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the lilac trough flame from v15's final frame, then the painted burner within about 10 s; the aligned flame set and the spectroscope are now all delivered.
+- Simulation: chance-engine photon runs. In scene 2 single photons blend into one colour; in scene 11 the same photons, spread by the spectroscope, pile up as different line patterns for lithium and strontium.
+- Cut: scene 4 is re-laid as a reasons board. Stage list recorded.
+- Hand tags (two or three) and a pen mark in scenes 1 to 6 and 8 to 11; the memory line is a framed card in scene 12.
+- Coded flames removed: the luminous flame is a word card with a slate cross; the masking glow is a cross-fade between painted plates.
+- Answers framed in green (scenes 8, 14, 16); crossed slips struck in red with red hand tags; limit chips take a terracotta outline.
+- Question cards: both attempts gain the blue-flame burner with their bottles; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card and a safety strip; the notes scene is 45 s. Left the bullets: strontium's own colour line and magnesium (kept in scenes 5 and 10 and in the limits bullet).
+
+New plate requests: none.
+
+Joins: the opening is v15's final frame, unchanged. The final frame (scene 17) is unchanged, so v17's opening holds.
+
+Counts: 5,567 characters, unchanged; about 510 s to about 495 s.
+
+Calls for root: (1) the photon runs use illustrative weights, labelled as a model; (2) strontium's flame colour is not in the five key-note bullets by name (it is in the limits bullet); (3) the masking picture is now a cross-fade of two plates, which the builder should check reads as "mostly yellow with a hint of lilac".

@@ -1,6 +1,6 @@
 # Year 11 Chemistry WS V03: Conducting investigations. How do we collect and source chemistry data safely and accurately? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: darkening now means stop and restart; citation matches its reference; "percentage points" in feedback 1; count corrected. Narration 6,359 characters (joined parser count), about 567.2 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,344 characters (sum of scene strings; 6,359 with joining spaces; Revision 1 was 6,331 by the joined parser count), 16 scenes, about 567.2 s (9.4 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,18 @@ Handoff: chem-y11-m1-v11, spdf notation.
 - **Opening frame:** ws-v02's final frame exactly (Decisions).
 - **Final frame (v11 opens on it):** a coded periodic table outline at the centre (the "data sheet" from scene 8, grown to full size: main-group and transition blocks as empty cells, f block rows below; light grey grid on the dark board; element symbols shown only for H, He and the first three periods plus Fe in period 4), with three cells highlighted: P (15) and Cl (17) in period 3, Fe (26) in period 4, each with its atomic number and a small "?" for its electrons; at the right, v10's four small grey chips "s", "p", "d", "f" in a column; the chip "Next: How does spdf notation locate the electrons in an atom?". The ws-v03 apparatus is gone.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted lidded crucible, desiccator and balance are on screen from the first frame (ws-v02's final frame). The whole method is then carried out on those real objects: safety glasses, tongs, mat, the check mass (`y11c-check-mass-v1.png`, now delivered) and the desiccator are all painted plates.
+- **Simulation: more repeats (scene 7).** A run of the chance engine (`src/explainer/sims/chance.ts`, `{kind: 'weighted'}` with outcomes 34.3, 34.4 and 34.5 for class 2). Repeats drop onto the number line one at a time, slowly then quickly, and three live readouts at 52 px read the run: "repeats", "mean" and "gap to the accepted value". The mean stays at about 34.4% and the gap at about 1.7 however many repeats land, so the student watches precision improve nothing. On the cue the method changes (desiccator) and a second run with outcomes 36.0, 36.1 and 36.2 lands on the gold mark. The values are illustrative and tagged so. The balance readouts in scene 4 are live on the same principle (zero, then 10.00 g).
+- **Colour key (fixed across ws-v01 to ws-v03).** The accepted value gold; class 1 teal; class 2 navy; accurate teal words, precise violet words; source checks teal tick and rose cross; risk and hazard text terracotta; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the idea they mark. Tags the Visual lines call "grey", "dimmed" or "faint", and every "ghost", are drawn solid in dark ink, and on-screen tags never show a video code.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current gloss and framed answers 44 to 52 px; question-card sentences 38 px (34 px for the data rows and source cards on a card); check-list lines, source cards, reference parts and tags 30 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) two classes, scene 1 (about 31 s); (B) the run strip, scenes 2 and 3 (about 81 s; three incidents change it during scene 3); (C) the balance close up, scene 4 (about 37 s); (D) the number line, scenes 5 to 7 (about 84 s; the live repeats run in scene 7); (E) the source cards, scene 8 (about 53 s); (F) the safety data sheet close up, scene 9 (about 25 s); (G) the report extract and reference entry, scene 10 (about 33 s); question and feedback cards; the final frame; the notes board. No set-up runs past about 84 s, so no new cut was needed.
+- **Question cards.** Each attempt card arrives whole with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No coded pictures of real things.** Crucible "icons", the coded lid and the bench outline in scenes 3 and 7 are small copies of the painted crucible plates.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
@@ -70,89 +82,117 @@ Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 
 Visual: opens on ws-v02's final frame; the "Next" chip fades and `PlanBoard` slides to a thumbnail at the top right. On the second sentence two copies of the lidded crucible (`y11c-cuso4-crucible-lid-white-v1.png`) sit under "class 1" and "class 2". On "percent" three teal result chips stack under class 1 (grey tag "illustrative data"); on "four" three navy chips under class 2. On "agree closely" both stacks get a small bracket. On "thirty-six point one" a gold chip "formula: 36.1%" writes between them. On "know" the heading writes on: "Collecting data safely and accurately" and a "?" sits over each stack.
 
+Upgrade (Revision 4): The opening frame is solid from the first frame. The two lidded crucibles are about 380 px tall with their class labels at 44 px; the result chips are 44 px in teal and navy and the tag "illustrative data" is dark ink. On "Both sets agree closely" a violet hand tag "tight" writes beside each stack on its pen bracket. On "the formula says thirty-six point one percent" the gold chip is 52 px with a gold hand tag "the target". On "know" the two "?" marks are 52 px.
+
 ### 2. employing safe work practices
 > First, safety, because a plan only protects people if it's actually followed. Safety glasses go on before the burner is lit, and long hair is tied back. The crucible sits on its pipeclay triangle, with the lid slightly ajar, over a small blue flame. Hot apparatus is moved only with tongs, onto a heatproof mat. And the balance stays well away from the **burner**.
 
 Visual: board clears to the run strip at the left: the safety glasses plate (`m5x-safety-glasses-v1.png`) sets down beside the burner first, tag "on before lighting"; then the lit lidded crucible (`y11c-cuso4-crucible-lid-v1.png` with v07's lit flame edit, or the coded flame) with tags "lid ajar" and "small blue flame"; the tongs (`y11c-crucible-tongs-v1.png`) and heatproof mat (`y11c-heatproof-mat-v1.png`) slide in, tag "hot apparatus: tongs, onto the mat". A grey tag "hair tied back" writes in the plan's safe list. On "burner" the balance plate slides to the far right with a dashed separation line, tag "away from the flame". Each item gets a small tick on the `PlanBoard` thumbnail.
+
+Upgrade (Revision 4): The run strip plates are about 320 px each and each lands solid; each item's tag is dark ink at 34 px. On "only protects people if it's actually followed" a terracotta hand tag "a plan on paper protects no one" writes above the strip. On "Safety glasses go on before the burner is lit" a pen arrow orders the glasses before the burner with a hand-numbered "1". On "moved only with tongs" a pen ring marks the tongs. On "well away from the burner" the dashed separation line is a pen line with an ink hand tag "away from the heat".
 
 ### 3. evaluating safe work, as you go
 > Then we evaluate those practices while we work. Did each control do its job? In one run, a crystal spat out when the lid was knocked fully **open**. So the lid works, but only if it stays in place. In another, a crucible nearly went onto the balance while still **hot**. That's a burn risk. A hot crucible also reads low on a balance, because warm air rising around it lifts it slightly. So we add a rule: cool in the desiccator first, then weigh. And if the powder starts to darken, stop heating, because it's breaking **down**. That run can't measure the water, so restart gently after your teacher checks it. You check it, and fix it, as you **go**.
 
 Visual: on "open" a coded lid slides fully off the crucible and a small blue crystal arcs out (incident flag 1, tag "lid knocked open"); the lid slides back to ajar with a tick "works if it stays in place". On "hot" a crucible with a red heat shimmer moves toward the balance and stops short (incident flag 2); on "reads low" a small coded readout dips "25.91 → 25.88 g" with rising air wisps (tag "warm air lifts it"); on "add a rule" the desiccator plate (`m8-desiccator-v1.png`) slides between the mat and the balance with an arrow "cool, then weigh". On "down" a faint grey darkening at the crucible's base and the flame icon goes out (tag "darkening: stop heating"); on "can't measure the water" a small grey chip "this run: not used for water content" writes and a dashed "restart gently, after teacher review" arrow loops back to a fresh crucible icon. On "go" the `PlanBoard` thumbnail's safe section gains "lid stays ajar; desiccator before weighing; darkening: stop, restart gently after teacher review" with a small loop arrow "check and fix".
 
+Upgrade (Revision 4): The lid, crucible and "fresh crucible" are the painted lidded crucible plate (small copies where the Visual says icon). On "a crystal spat out" the incident flag is terracotta at 38 px with a pen ring; on "only if it stays in place" a teal hand tag "works, if it stays put" writes on the lid. On "still hot" the second flag is terracotta with a red hand tag "burn risk". On "reads low" the readout "25.91 → 25.88 g" is live at 52 px with an ink hand tag "hot reads low". On "cool in the desiccator first, then weigh" the desiccator (about 360 px) lands solid with the arrow as a pen arrow. On "starts to darken" the darkening is a solid slate patch with a terracotta hand tag "darkening: stop". The chip "this run: not used for water content" and the restart arrow are dark ink at 30 px.
+
 ### 4. ensuring accurate readings
 > Next, accuracy, which starts with equipment that gives true readings. Before weighing, the empty balance should read zero point zero **zero**. Then we check it with a check mass, a metal block of known mass, ten point zero zero **grams**. If it reads ten point zero zero, we can trust its readings. Each sample is weighed on the same balance every time, so small differences between balances can't sneak into the subtraction. And every reading is recorded straight **away**.
 
 Visual: board change; the balance plate enlarges at the left. On "zero" the coded readout settles to "0.00 g" with a tick (tag "zeroed"). On "grams" a check mass plate (`y11c-check-mass-v1.png`, new) lowers onto the pan and the readout ticks to "10.00 g" (tag "check mass: known value"); a tick writes "reads true". On "same balance" a second, dimmed balance outline appears with a small "+0.02 g?" tag and is crossed (tag "one balance per sample"). On "away" a coded logbook row writes "crucible + crystals: 26.81 g" as the readout shows it.
+
+Upgrade (Revision 4): The balance (about 620 px wide) is solid from the first frame and its readout is live at 52 px. On "should read zero point zero zero" a teal hand tag "zero first" writes with a pen tick. On "a metal block of known mass" the check mass plate (about 200 px) lowers onto the pan, and on "If it reads ten point zero zero" the readout takes a pen ring with a teal hand tag "reads true". On "the same balance every time" the second balance is solid inside an inset card with a dashed border and "+0.02 g?", struck in red with a red hand tag "one balance per sample". On "recorded straight away" the logbook row is 38 px with an ink hand tag "write it now".
 
 ### 5. accurate and precise
 > Now let's keep two words apart. Accurate means close to the accepted value. Precise means repeated readings agree closely with each other, with a small spread. From planning, valid means the method measures what it claims to, and reliable means repeating the whole experiment gives consistent **results**. Our accepted value is thirty-six point one percent, from the formula. Let's put both classes on the same **line**.
 
 Visual: four gloss chips write in a 2 × 2 block at the top right as spoken: "accurate: close to the accepted value"; "precise: readings agree closely (small spread)"; on "results" "valid: measures what it claims to" and "reliable: whole experiment repeats consistently" (these two grey, tag "recall: planning"). On "line" a `DotLine` draws across the lower board from 33% to 37% with a gold mark at 36.1 labelled "accepted value (formula)"; class 1's three teal dots drop onto it at 35.8, 36.0, 36.2.
 
+Upgrade (Revision 4): The four gloss chips are 38 px: "accurate" in teal, "precise" in violet, and the two recalled words in dark ink (not grey), tagged "from planning". On "close to the accepted value" a teal pen arrow points to where the gold mark will sit; on "with a small spread" a violet pen bracket shows a narrow spread. The number line has tick labels at 34 px and the gold mark labelled at 38 px. On "both classes on the same line" class 1's dots drop.
+
 ### 6. prediction (countdown, 3 seconds)
 > Class two's results are thirty-four point three, thirty-four point five and thirty-four point four percent. Are they precise, accurate, both, or **neither**?
 
 Visual: class 2's three navy dots wait above the line at 34.3, 34.4, 34.5 (not yet dropped). Chips "precise?", "accurate?", "both?", "neither?". On "neither" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 4): Class 2's dots wait above the line; the four option chips are 44 px. No hand tags (thinking time).
 
 ### 7. precise, but not accurate
 > Precise, but not accurate. They agree closely, but they all sit well below thirty-six point one. Class one is both precise and accurate. When every result is shifted the same way, something in the method is pushing them all. Class two cooled their crucibles on the open bench, so the powder took back water from the air, just like the trial run. More repeats won't fix that, because every repeat has the same problem. Only changing the method **will**. We'll look at these errors more closely in a later **video**.
 
 Visual: class 2's dots drop onto the line at 34.3 to 34.5. A spread bracket over each class (class 2 slightly narrower, tag "precise"); a gap bracket from class 2's centre to the gold mark, "≈ 1.7 below" (tag "not accurate"); class 1's gap bracket is nearly zero (tag "accurate and precise"). On "shifted the same way" an arrow pushes all three navy dots left together. On "open bench" a small crucible uncovered on a bench outline with coded water molecules drifting in (grey tag "ws-v02 trial run"). On "More repeats" ghost navy dots pile up at 34.4 and don't move toward the gold mark. On "will" the desiccator plate glows small, and the ghost dots slide to 36.1 (tag "change the method"). On "video" a grey chip "error types: later video (ws-v05)".
 
+Upgrade (Revision 4): On "Precise, but not accurate" the answer "precise, not accurate" is framed in green with a tick (52 px). On "they all sit well below" the gap bracket is a pen bracket labelled "≈ 1.7 below" at 38 px. On "something in the method is pushing them all" a navy hand tag "all pushed the same way" writes with the pen arrow. On "took back water from the air" a small copy of the open white-powder crucible plate (`m5-g02b-open-crucible-v1.png`, about 220 px) stands with coded water molecules drifting in; its tag reads "the trial run" with no video code. On "More repeats won't fix that" the chance run plays (see "Simulation"): solid navy dots pile up near 34.4 while the "mean" and "gap" readouts hold. On "Only changing the method will" the desiccator (about 240 px) lands and the second run's dots land on the gold mark with a teal hand tag "method changed". The last chip reads "error types: a later video" in dark ink.
+
 ### 8. choosing reliable secondary sources
 > The accepted value rests on secondary sources too. The relative atomic masses came from a published data sheet, and the hazards in our plan came from a safety data sheet, written by the chemical's supplier. How do we know a source is reliable? Ask four things. Who wrote it, and are they experts? Why was it written, to inform, or to sell? When was it written, and is it up to date? And does it agree with other reliable sources? Who, why, when, and does it agree? A comment online saying copper sulfate is harmless fails every one, and it disagrees with the safety data **sheet**.
 
 Visual: board change. Source cards fan out at the left: "data sheet: relative atomic masses" (a small coded periodic-table grid on it), "safety data sheet (SDS): supplier", "chemistry data handbook", with a grey tag "a range of sources". A `CheckList` writes at the right as spoken: "who: experts, accountable?", "why: inform or sell?", "when: dated, current?", "agrees with other reliable sources?". On "Who, why, when, and does it agree?" the memory line writes in hand lettering above the list. A coded comment card slides in ("copper sulfate is harmless, I've touched it heaps", no name, no date, no avatar); the check list runs against it: four rose crosses. On "sheet" a rose line links the comment to the SDS card's hazard line, tag "disagrees".
+
+Upgrade (Revision 4): The three source cards are about 420 px wide each, solid from the first frame, with titles at 34 px; the tag "a range of sources" is dark ink. The four check questions are 38 px with their lead words "who", "why", "when", "agree" in navy hand lettering. The memory line sits in a framed memory card (hand lettering, 52 px): "Who, why, when, and does it agree?" On "fails every one" the four crosses are rose pen crosses with a rose hand tag "0 out of 4". On "it disagrees with the safety data sheet" the link is a rose pen line.
 
 ### 9. extracting what the plan needs
 > Then we extract only what we need. From the safety data sheet, that's three facts. Copper sulfate is harmful if swallowed, it causes serious eye irritation, and it's very toxic to aquatic **life**. Those three facts are exactly why the plan has no food or drink, safety glasses, and a waste **container**.
 
 Visual: the SDS card enlarges: several coded grey lines of small text (unreadable filler shapes, not real wording), three of which highlight in turn as spoken: "harmful if swallowed", "causes serious eye irritation", and on "life" "very toxic to aquatic life". On "container" each highlighted line slides into a control cell of ws-v02's risk table: "no food or drink", "safety glasses" (glasses plate small), "waste container" (waste bottle plate small).
 
+Upgrade (Revision 4): The safety data sheet card fills the left half; its filler lines are plain bars, and the three highlighted lines are real words at 38 px in terracotta. On "three facts" an ink hand tag "take only what you need" writes above the card. Each line's slide into its control cell is a pen arrow, and the glasses and waste bottle plates in the cells are about 200 px each. On "a waste container" a teal pen bracket joins the three pairs with a teal hand tag "fact → control".
+
 ### 10. acknowledging sources
 > Finally, we acknowledge every source, in an accepted referencing style. In the text, a short citation names the author and the year. At the end, a reference list gives the full entry: the author, the year, the title, the publisher, and where to find it. Many schools use a style called A P A. Use the style your school uses, and be consistent, so a reader can find and check the same source **again**.
 
 Visual: a coded report extract writes at the right: "... the crystals should lose 36.1% of their mass ([Data sheet publisher], [year])." with the bracket part underlined, tag "in-text citation: author, year". Below a "References" heading, an entry for that same document writes with its parts labelled by leader lines as spoken: "[Data sheet publisher]. ([year]). *[Data sheet title]: Relative atomic masses*. [Publisher]. [URL]" (labels "author", "year", "title", "publisher", "where to find it"; tag "example layout, APA style"). On "again" a thin arrow runs from the citation to its matching entry and on to the data-sheet card (Revision 2: the in-text claim and the reference entry now name the same document). A second, smaller entry writes beneath it as a separate example with its own tag "another entry: a safety data sheet": "[Supplier name]. ([year]). *Copper(II) sulfate pentahydrate: Safety data sheet*. [URL]".
+
+Upgrade (Revision 4): The report extract and the reference entry are 38 px, with the labelled parts in navy and leader lines as pen lines. On "a short citation names the author and the year" a navy pen underline marks the bracketed citation with a navy hand tag "author, year". On "the full entry" a pen bracket spans the entry. On "be consistent" an ink hand tag "one style, all the way through" writes beside the entries. On "find and check the same source again" the arrow from citation to entry to card is a pen arrow. The second example entry is 30 px in dark ink.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Students made a sand and salt mixture that was exactly seventy point zero percent salt, then separated it. Student P recovered sixty-nine point six, sixty-nine point eight and sixty-nine point five percent salt. Student Q recovered seventy-four point one, seventy-three point nine and seventy-four point two. Compare the accuracy and precision of their results, and give one way to make sure the balance gave accurate readings. Pause here to answer.
 
 Visual: board clears. `QuestionCard` (subject "Chemistry"; tag "HSC-style question, written for HSCScience"): "A sand and salt mixture was made to contain exactly 70.0% salt by mass. Two students separated samples of it three times each. Salt recovered (% of mixture): Student P: 69.6, 69.8, 69.5. Student Q: 74.1, 73.9, 74.2. (a) Compare the accuracy and the precision of the two students' results. (b) Describe ONE step that ensures the balance gives accurate readings. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no number line).
 
+Upgrade (Revision 4): The card text is 38 px with its data rows at 34 px. From the first frame the card's right side carries a watch glass of recovered salt (`y11c-watch-glass-salt-v1.png`, about 260 px wide), untagged. Nothing answer-bearing (no number line, no balance check shown).
+
 ### 12. feedback 1 (brief)
 > Both sets are precise, because each student's readings agree closely. P's are accurate, close to seventy point zero. Q's are all about four percentage points high, so something added mass, such as salt that wasn't fully dry. To check the balance, zero it, then weigh a check mass of known value. Saying Q is accurate because the readings agree is the classic slip. That's precision, not **accuracy**.
 
 Visual: card shrinks to the top. A `DotLine` from 68 to 76% with a gold mark at 70.0: P's dots cluster on it, Q's cluster near 74; spread brackets on both "0.3" (tag "both precise"); a gap bracket "≈ 4 percentage points high" on Q. Rows: "(a) both precise; P accurate; Q not (shifted high every time, e.g. damp salt)"; "(b) zero, then check with a known check mass". On "accuracy" a chip "Q is accurate: the readings agree." fades in and is crossed. Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "made to be 70.0% salt | P: 69.6, 69.8, 69.5 | Q: 74.1, 73.9, 74.2". The dots drop live onto the line with the gold mark at 70.0. The answer rows are framed in green with a tick as they land (38 px), with "precise" in violet and "accurate" in teal. On "about four percentage points high" the gap bracket is a pen bracket with a rose hand tag "shifted". On "accuracy" the crossed chip is struck in red with a red hand tag "that's precision".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. A student needs the solubility of salt in water, and finds three sources. A chemistry data handbook from a university publisher, from twenty twenty-two. An anonymous comment under a video, with no date. And a salt supplier's safety data sheet, from twenty twenty-three. Choose the two most reliable sources and justify your choice. Then state what a reference list entry must include. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed, with three small coded source cards: "A: Chemistry data handbook, university press, 2022"; "B: anonymous comment under an online video, no date"; "C: salt supplier's safety data sheet, 2023". Card text: "A student needs a value for the solubility of sodium chloride in water. (a) Choose the TWO most reliable sources and justify your choice. (b) State FOUR pieces of information a reference list entry should include. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing.
 
+Upgrade (Revision 4): The card text is 38 px and the three source cards (34 px) sit on the card's right side from the first frame as its picture. Nothing answer-bearing (no ticks).
+
 ### 14. feedback 2 (brief)
 > A and C. Both have named, accountable authors, both are dated, and they're written to inform, so they can be checked against each other. The comment has no author, no date, and no way to check it. A reference list entry needs the author, the year, the title, and the publisher or where to find it. Choosing the comment because lots of people liked it is the classic slip. Popular isn't the same as **reliable**.
 
 Visual: card shrinks to the top. The four-question `CheckList` runs against the three cards: A and C tick all four (teal), B crosses all four (rose). Row "(a) A and C: accountable authors, dated, to inform, can be cross-checked"; row "(b) author, year, title, publisher or URL". On "reliable" a chip "B: lots of people liked it" fades in and is crossed. Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "A handbook, 2022 | B anonymous comment, no date | C supplier's safety data sheet, 2023". On "A and C" the answer "(a) A and C" is framed in green with a tick (52 px) as the check list runs. On "the author, the year, the title" the answer "(b) author, year, title, publisher or where to find it" is framed in green (38 px). On "reliable" the crossed chip is struck in red with a red hand tag "popular ≠ reliable".
 
 ### 15. conclusion and handoff
 > So we follow the plan safely, and check our safety as we go. We set up the balance to read truly, and judge accuracy against an accepted value. And we choose reliable sources, take what we need, and acknowledge them. One of those sources, the data sheet, is really a periodic table. Let's go back inside its atoms. How does s p d f notation locate the electrons in an **atom**?
 
 Visual: the memory line returns small at the top; a strip writes as spoken: "safe: follow and check → accurate: zero, check mass, accepted value → sourced: who, why, when, agree → acknowledged". On "data sheet" the data-sheet card from scene 8 slides to the centre and grows into the full periodic table outline (final frame, see "Opening frame and final frame"); P, Cl and Fe highlight with "?" for their electrons; v10's "s", "p", "d", "f" chips slide in at the right. On "atom" the chip "Next: How does spdf notation locate the electrons in an atom?" writes. Hold about 2 seconds. This is the final frame (v11 opens on it).
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The four-step strip is 34 px with pen arrows between steps. Nothing else is added: the periodic table and its three highlighted cells assemble exactly as described under "Opening frame and final frame". Builders draw its grid in dark ink on the paper stage (the final-frame text says "light grey grid on the dark board", kept only so the join text matches v11).
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Safe work: follow the planned controls, and check them as you work; add or fix a control when something goes wrong.
-2. Accurate: close to the accepted value. Precise: repeated readings agree closely. (Valid: measures what it claims to. Reliable: the whole experiment repeats consistently.)
-3. Ensure accuracy: zero the balance, check it with a known check mass, use the same balance for each sample, record readings at once, cool before weighing.
-4. Agreeing results can still be inaccurate if the method shifts them all; more repeats can't fix that, changing the method can.
-5. Reliable sources: who, why, when, and does it agree? Extract only what you need. Acknowledge with an in-text citation and a reference list entry (author, year, title, publisher, where to find it).
+1. Follow the planned safety controls, and check them as you work.
+2. Accurate: close to the accepted value. Precise: repeated readings agree closely.
+3. For accuracy: zero the balance, test it with a check mass, cool before weighing.
+4. Results that agree can all be shifted. More repeats won't fix that; a new method will.
+5. Sources: who, why, when, and does it agree? Cite the author, year, title, publisher.
 
-Memory aid (large, on the notes screen): *Who, why, when, and does it agree?*
-
-At the end the notes cross-fade back to scene 15's final frame.
+Memory aid (framed card beside the notes, hand lettering): *Who, why, when, and does it agree?* Notes 34 px in the role colours (accurate teal, precise violet); no paragraphs. The whole notes scene runs 45 s. At the end the notes cross-fade back to scene 15's final frame.
 
 ## Teaching checks
 
@@ -207,6 +247,8 @@ Checked with Python (5 November); Codex to re-check.
 
 Revision 1 count (5 November; build parser rules): **6,316 characters**, 16 scenes. At 13.3 characters per second the speech is about 475 s; add about 10 s of holds and settling (the incidents in 3, the readouts in 4, the dot drops in 5 and 7, the source checks in 8), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 52 s more of the quiet notes hold: **about 564 s (9.4 minutes)**.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,344 characters, 16 scenes). The notes scene is now 45 s in all (it was about 58 s), so the estimate falls from about 567 s to about 554 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-ws-v03` (route chem-y11-ws-v03; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-ws-v03`.
@@ -216,6 +258,8 @@ In order (16 scene headings, all `### N.`): hook, safe-practice, evaluate-safety
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: ws-v02's final frame into scene 1 by camera continue (`PlanBoard` shrinks to a thumbnail); 1 to 2 clear change; 2 to 3 camera continue; 3 to 4 camera push to the balance; 4 to 5 camera continue; 5 to 6 to 7 camera continue (the number line stays); 7 to 8 clear change (source cards); 8 to 9 camera push to the SDS card; 9 to 10 camera continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, and 16 cross-fades back to 15's final frame.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-ws-v03-learning-review.md`, `checks/c-y11-ws-v03-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. No transition changed.
 
 ## Assets
 
@@ -230,6 +274,8 @@ Need (new plates, Codex):
 1. `y11c-check-mass-v1.png`: scene 4. Wanted; fallback: the readout alone with a coded chip "check mass 10.00 g" (weaker: the object being weighed should be visible).
 
 Coded: run strip, incident flags, readouts and logbook rows, `DotLine`, gloss chips, source cards, the online comment card (text only, no avatar), `CheckList`, SDS filler lines and highlights, risk-table cells, report extract and reference layout, periodic table outline (final frame; becomes v11's opening), s p d f chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-check-mass-v1.png`, `y11c-cuso4-crucible-lid-v1.png`, `y11c-cuso4-crucible-lid-white-v1.png`, `y11c-crucible-tongs-v1.png`, `y11c-heatproof-mat-v1.png`, `y11c-top-pan-balance-v1.png`. The check-mass fallback is withdrawn. Existing plates newly used: `m5-g02b-open-crucible-v1.png` (scene 7, the uncovered crucible), `y11c-watch-glass-salt-v1.png` (attempt 1 card). No lit variant of the lidded crucible exists, so scene 2 keeps a coded flame under the lidded crucible plate. New plate requests: none. Simulation: the chance engine for scene 7.
 
 ## Codex asset brief (Year 11 Chemistry WS v03)
 
@@ -252,6 +298,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals ws-v02's final frame and the final frame matches v11's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the chance run's readouts (mean about 34.4%, gap about 1.7; then 36.0 to 36.2 on the gold mark) are tagged illustrative and contradict nothing spoken; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -299,3 +347,29 @@ Narration: 6,359 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-ws-v03-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,344 characters over 16 scenes (the earlier 6,359 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-ws-v03-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the lidded crucible, desiccator and balance from ws-v02's final frame; the check mass is now the delivered plate.
+- Simulation: scene 7's "more repeats won't fix that" is a chance-engine run with live "repeats", "mean" and "gap" readouts; a second run lands on the accepted value once the method changes.
+- Hand tags (two or three) and a pen mark in scenes 1 to 5 and 7 to 10; the memory line is a framed card in scene 8.
+- Answers framed in green (scenes 7, 12, 14); crossed slips struck in red with red hand tags; ghost dots and dimmed outlines drawn solid.
+- Crucible icons, the coded lid and the bench outline are small copies of the painted crucible plates.
+- Tags with a video code are reworded ("the trial run", "a later video").
+- Question cards: attempt 1 gains a watch glass of salt; attempt 2 keeps its three source cards; feedback scenes gain navy givens strips.
+- Key notes: five long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s.
+- Stage list recorded; no set-up ran past about 84 s, so no cut was added.
+
+New plate requests: none.
+
+Joins: the opening is ws-v02's final frame, unchanged. The final frame is unchanged word for word, so v11's opening holds; its "dark board" wording is a leftover and builders draw it on the paper stage.
+
+Counts: 6,344 characters, unchanged; about 567 s to about 554 s.
+
+Calls for root: (1) the chance run's second set (36.0, 36.1, 36.2) is illustrative and new on screen; (2) the final frame's "light grey grid on the dark board" wording should be corrected in both ws-v03 and v11 together, after voicing; (3) scene 2 still uses a coded flame under the lidded crucible.

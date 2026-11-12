@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V24: Metallic bonding. Why can a metal bend while retaining electrical conductivity? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,584 characters (sum of scene strings), 17 scenes, about 501 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -62,6 +62,16 @@ Entry knowledge: v22, v23, v12, v15, v01; Stage 5 current.
 Stops after: electron sea model, conduction, malleability and ductility, the answer, one bond-strength contrast, one alloy. No dislocations, thermal conductivity, lustre or transition-metal trends.
 Handoff: chem-y11-m1-v25, diamond, graphite and silicon dioxide.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the bent wire lighting the lamp, scene 1 (about 26 s); (B) the electron-sea lens, scenes 2 and 3 (about 62 s); (C) the circuit with the current switch, scene 4 (about 34 s); (D) metal against salt on the slide slider, scene 5 (about 34 s); (E) the bend slider, scene 6 (about 24 s); (F) three kinds of solid, scene 7 (about 34 s); (G) sodium against magnesium, scenes 8 and 9 (about 38 s); (H) the coins and the alloy lens, scene 10 (about 38 s); (I) the memory card, scene 11 (about 14 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 62 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v23; Revision 2 colour roles and type sizes in Decisions): cations copper-brown with "+"; delocalised electrons small blue dots; force arrows grey; attraction lines faint blue; aluminium atoms silver-grey; crossed chips red strike.
@@ -80,6 +90,8 @@ Visual: inside the lens, neutral copper atoms in a grid; as the first sentences 
 > Here's the key feature. In a covalent bond, the shared electrons sit between two particular atoms, so the bond points in one direction. In a metal, every cation is attracted to the electrons all around it, in every direction. The metallic bond has no fixed **direction**. Chemists call it **non-directional**, and that's what lets a metal bend.
 
 Visual: at the left a small v23 ball-and-stick bond with its shared pair between two atoms, a single arrow along it, tag "covalent: one direction". At the right one cation in the lattice is ringed; faint blue attraction lines draw to electrons all around it. On "direction" the lines pulse together. On "non-directional" the tag writes "metallic bond: non-directional" (44 px); hand tags ink "one way" with a pen arrow on the covalent bond, blue "every way" with pen rays round the ringed cation.
+
+Upgrade (Revision 3): The eight attraction lines round the ringed cation are solid dark-ink lines (not faint) and carry the tag "attraction in every direction (a sketch, not a count)" at 30 px.
 
 ### 4. electrons carry the current
 > First, conductivity. A current is a flow of charge, so a conductor needs charged particles that can move. Connect a battery, and the delocalised electrons drift toward the positive **terminal**, while new electrons flow in from the negative end. The cations stay where they are. They only **vibrate**. So metals conduct as solids, because their electrons are already free to move. In the salt crystal, the ions are locked in place until it melts or **dissolves**.
@@ -220,6 +232,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Review evidence paths: `checks/c-y11-m1-v24-learning-review.md`, `checks/c-y11-m1-v24-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (inspected 5 November on a paper contact sheet; scaled uniformly only, never stretched; Revision 2 re-inspected 7 November):
@@ -263,6 +277,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("delocalised").
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v23's final frame and the final frame matches v25's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -313,3 +329,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules; the
 - New plate requested: `y11c-sterling-silver-spoon-v1.png`.
 
 Narration: 5,584 characters as the sum of the 17 scene strings (Revision 1: 5,598 as a sum, 5,614 stated with joining spaces); about 501 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v24-rev2-error-check.md`): 0 blockers, 0 new should fix; the coins plate shows no halo on paper and stays. Nothing to resolve.
+
+Changes:
+- Scene 3: the attraction lines are solid and tagged as a sketch, not a count (brief 237 note that eight lines are schematic).
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 29, 37 and 38.

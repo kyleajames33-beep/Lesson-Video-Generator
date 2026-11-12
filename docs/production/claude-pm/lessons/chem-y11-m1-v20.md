@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V20: Naming inorganic compounds. How do we name an inorganic compound from its formula? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,765 characters (sum of scene strings), 18 scenes, about 513 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,16 @@ Entry knowledge: v12, v19.
 Stops after: the ionic or covalent decision, binary ionic names, Stock numerals, polyatomic ion compounds, covalent prefixes, the contrast. No acids, hydrates, redox oxidation numbers or bonding explanations.
 Handoff: chem-y11-m1-v21, electron attraction and bonding.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the two copper oxides, scene 1 (about 27 s); (B) the sorting gate, scene 2 (about 30 s); (C) the name builder, scene 3 (about 31 s); (D) potassium oxide, then the charge dial for the copper oxides, scenes 4 to 6 (about 68 s); (E) which metals need a numeral, scene 7 (about 27 s); (F) polyatomic ions, scene 8 (about 35 s); (G) covalent names, scenes 9 and 10 (about 49 s); (H) the contrast and the memory card, scene 11 (about 28 s); (I) three names through the gate, scene 12 (about 35 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 68 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v19): cation symbols and Roman numerals red; anion symbols and endings blue; polyatomic tiles violet; covalent atom counters and prefixes amber; the ionic lane of the sorting gate teal, the covalent lane amber; crossed chips red strike. Screen notation: copper(II) oxide, iron(III) chloride (numeral in brackets, no space).
@@ -118,7 +128,7 @@ Visual: on "trioxide" counters under "SO₃" (1 S, 3 O) and "sulfur trioxide" bu
 ### 11. the big contrast
 > So here's the big contrast. In an ionic name, a Roman numeral gives the metal's charge. In a covalent name, a prefix gives the number of atoms. You'll also see names like copper dichloride in other books. They count the ions instead, and they're valid IUPAC names too. Here, we use the numeral **route**. Ionic: name the charge if it can change. Covalent: count the **atoms**.
 
-Visual: board clears to two columns (44 px). Left (teal) "ionic": "copper(II) oxide: II = charge of Cu", red pen ring on "II". Right (amber) "covalent": "carbon dioxide: di = 2 oxygen atoms", amber pen ring on "di". On the fourth sentence a grey box writes under the ionic column (not crossed): "also valid IUPAC: copper dichloride (counts the ions)", with a grey hand tag "you'll see this too". On "route" the ionic column glows, hand tag "our route: the numeral". On "atoms" the memory line writes in a framed card in hand lettering (48 px): teal "Ionic: name the charge if it can change." amber "Covalent: count the atoms." Hold about 2 seconds.
+Visual: board clears to two columns (44 px). Left (teal) "ionic": "copper(II) oxide: II = charge of Cu", red pen ring round "II". Right (amber) "covalent": "carbon dioxide: di = 2 oxygen atoms", amber pen ring round "di". On the fourth sentence a grey box writes under the ionic column (not crossed): "also valid IUPAC: copper dichloride (counts the ions)", with a grey hand tag "you'll see this too". On "route" the ionic column glows, hand tag "our route: the numeral". On "atoms" the memory line writes in a framed card in hand lettering (48 px): teal "Ionic: name the charge if it can change." amber "Covalent: count the atoms." Hold about 2 seconds.
 
 ### 12. putting it together
 > Let's run three formulas through the whole method. F e S O four. Iron is a metal, so it's ionic. Sulfate is minus two, so the iron is plus two, which makes it iron two **sulfate**. P C l five. Phosphorus and chlorine are both non-metals, so it's covalent, and we count the atoms. It's phosphorus **pentachloride**. Last, A l, bracket O H, close bracket, three. Aluminium is a metal with only one charge, so there's no numeral and no prefix. It's simply aluminium **hydroxide**.
@@ -233,6 +243,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: the longest stage is scenes 4 to 6 on the copper plates (about 70 s), with the charge dial changing through scene 6. Review evidence paths: `checks/c-y11-m1-v20-learning-review.md`, `checks/c-y11-m1-v20-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (scaled uniformly only, never stretched; Revision 2 inspected 7 November):
@@ -272,6 +284,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v19's final frame and the final frame matches v21's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -318,3 +332,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plates requested: `y11c-lead-dioxide-v1.png`, `y11c-copper-chloride-crystals-v1.png` (Codex asset brief).
 
 Narration: 5,765 characters as the sum of the 18 scene strings (Revision 1: 5,632 as a sum, 5,649 stated with joining spaces); about 513 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v20-rev2-error-check.md`): 0 blockers, no further change requested. This session's cue check found one false cue in scene 11 (a pen ring "on" the on-screen numeral "II" read as a spoken cue); it is reworded, with no change on screen.
+
+Changes:
+- Scene 11: the two pen rings are described as drawn "round" the numeral "II" and the prefix "di", so neither reads as a spoken cue. No on-screen change.
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 37 and 38.

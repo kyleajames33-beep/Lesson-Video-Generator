@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V05: Paper chromatography and Rf values. Why do mixture components travel different distances in chromatography? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: Rf limits now 0 ≤ Rf ≤ 1 and "cannot exceed 1". Narration 5,946 characters (joined parser count), about 537.2 s. Previously Revision 1 (5 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 5,931 characters (sum of scene strings; 5,946 with joining spaces; Revision 1 was 5,970 by the joined parser count), 16 scenes, about 537.2 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -63,6 +63,18 @@ Entry knowledge: v01 to v04; Stage 5 dissolving and ratios; ruler measurements i
 Stops after: stationary and mobile phases; why distances differ; Rf from the common baseline; why a ratio; same conditions; standards support identity, not prove it; practical details; traps.
 Handoff: v06, what fraction of a separated mixture came from each component (percentage by mass).
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The painted chromatography jar (`y11c-chromatography-jar-back-v1.png` and `-front-v1.png`, about 620 px tall, uniform scale) closes round the strip within the first 10 s; the strip itself is on screen from the first frame (v04's final frame). The real jar returns in scenes 2 and 9 and on the attempt 1 card.
+- **Simulation: the developing strip with live readouts.** The developing strip (kit gap 1) is one run: the solvent front and every spot read the same clock. In scene 1 it runs without numbers. In scene 7 the worked strip replays from the start with live readouts at 52 px: "front" 0 → 8.0 cm, "P" 0 → 2.4 cm, "Q" 0 → 6.4 cm, and two ratio readouts that hold "0.30" and "0.80" the whole way up, passing 4.0, 1.2 and 3.2 cm at the halfway mark. Every value is computed from the run (spot = Rf × front), never typed.
+- **Colour key (fixed for the whole video).** Stationary phase (paper) and "stuck" slate; mobile phase (solvent) and "moving" navy; dye spots their own colours (blue, pink, yellow; P blue, Q yellow); givens navy; the Rf result amber; a framed answer green with a green tick; a crossed mistake red with a red hand tag. Hand tags take the colour of the idea they mark. Every tag, line or label the Visual lines call "grey", "faint", "dim" or "ghost" is drawn solid in dark ink (the pencil baseline is a solid graphite-grey line at least 3 px thick).
+- **Type sizes (1080p).** Heading 60 px; the equation strip, the current working row, readouts and framed answers 52 px, never under 44; question-card sentences 38 px; dimension values and lane tags 34 px; supporting lines 30 px or more; hand tags 42 px (34 px on a strip); key notes 34 px; nothing a student must read under 26 px.
+- **Board stages.** (A) strip into the jar, scenes 1 and 2 (about 63 s); (B) the phase particle view, scene 3 (about 41 s); (C) the finished strip and the Rf definition, scenes 4 and 5 (about 47 s); (D) the calculation board, scenes 6 and 7 (about 66 s, with the live replay as the change at scene 7); (E) the three-lane sheet, scene 8 (about 37 s); (F) the method strip and jar, scene 9 (about 30 s); (G) traps and the memory card, scene 10 (about 31 s); question and feedback cards; the handoff bench; the notes board. No set-up runs past about 66 s, so no new cut was needed.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No ghosts.** Every "ghost" item (scene 5's arrow, scene 7's third strip, scene 8's extra lane, scene 9's wrong set-ups, scene 10's wrong dimension lines) is drawn solid, inside an inset card with a dashed border where it shows a wrong or alternative case.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: as `chem-y11-m1-v01.md`, plus: paper strip white with a faint fibre texture; pencil baseline grey; wet paper a faint blue tint below the solvent front; dye spots blue `#3a63b8`, pink `#d4588f`, yellow `#e3b72f` (hook), P blue and Q yellow (worked example); measurement lines ink with values in navy (givens) and results bright. Screen writes "Rf" with the f as a subscript (R_f) and "cm".
@@ -72,86 +84,117 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v04's final frame (see "Opening frame"); the callout and chips fade. The jar's back layer (`y11c-chromatography-jar-back-v1.png`, new) fades in around the strip's lower half with a shallow coded layer of water (below the baseline, tag "water below the line"); the strip lowers into it by itself; the front layer (`y11c-chromatography-jar-front-v1.png`) closes over it; on "lid" the lid slides on. A grey tag "about 20 minutes, sped up". The developing strip runs: the wet tint climbs (solvent front, a crisp edge); on "apart" the black dot smears upward and splits into three spots (author note d): blue lowest, pink middle, yellow highest, still moving as the front rises, then stopping when the run stops. On "same line" a dashed line along the baseline glows; on "same time" a small coded timer chip "same run". On "chromatography" the heading writes on: "Chromatography: why do the dyes travel different distances?".
 
+Upgrade (Revision 4): The strip is solid from the first frame and the jar (about 620 px tall) is closed round it within about 10 s. The tags "water below the line" and "about 20 minutes, sped up" are dark ink at 30 px. On "the black dot comes apart" an ink hand tag "one dot, three dyes" writes beside the strip with a pen bracket spanning the three spots. On "the same line" the baseline takes a navy pen underline with a navy hand tag "same start"; on "the same time" the chip "same run" is dark ink at 34 px.
+
 ### 2. two phases
 > Chromatography always has two parts. The paper is the stationary phase, the part that stays still. The water is the mobile phase, the part that **moves**. It climbs the paper the way a spill soaks into a paper towel, drawn up into the tiny gaps between the paper's **fibres**. As it climbs, it carries the dissolved dyes with it, but not all at the same speed.
 
 Visual: the jar shrinks to the left. The right column writes "stationary phase: stays still (the paper)" with an arrow to the strip; on "moves" it writes "mobile phase: moves (the solvent, water)" with an arrow to the wet tint. On "fibres" a magnifier on the strip just below the front shows coded tangled fibres with water creeping up through the gaps between them (tag "drawn up between the fibres"). On "not all at the same speed" three small arrows of different lengths point up from the three spots.
+
+Upgrade (Revision 4): The two phase lines are 44 px, with "stationary" in slate and "mobile" in navy. On "the part that stays still" a slate hand tag "paper: still" writes on the strip. On "the part that moves" a navy hand tag "water: climbing" writes with a pen arrow up the wet part. On "not all at the same speed" the three arrows are pen arrows in the three dye colours.
 
 ### 3. why the distances differ
 > Here's the key. Each dye particle keeps switching between two places. It can stick to the paper and stay put, or it can dissolve in the moving water and get carried up. A dye that's attracted more strongly to the paper spends more of its time stuck, so it falls behind and travels a shorter **distance**. A dye that dissolves well in the water, and sticks only weakly to the paper, spends more of its time moving, so it travels **further**. Every dye had the same time, so different attractions spread them apart. That's why one black dot becomes three **spots**.
 
 Visual: camera push into a phase particle view on the strip (author note a): fibres as pale bars, water molecules streaming up between them, blue and yellow dye particles. Each dye particle alternates: stuck on a fibre (it stops, a small "stuck" tick) or carried by the water (it rides up). On "distance" the blue particles are ringed: they stick often and long; a "time moving" bar beside them fills only a little. On "further" the yellow particles are ringed: they mostly ride; their "time moving" bar fills a lot. On "same time" a shared timer runs for both; the two groups separate. On "spots" the view pulls back to the strip: the three spots, each with its own "time moving" bar beside it (blue short, pink middle, yellow long).
 
+Upgrade (Revision 4): The particle view fills the board. The two "time moving" bars are live readouts (model, labelled at 34 px) on one shared timer. On "stick to the paper and stay put" a slate hand tag "stuck" writes beside a stopped particle with a pen ring. On "get carried up" a navy hand tag "carried" writes with a pen arrow along a riding particle. On "so it falls behind" a blue hand tag "sticks more: falls behind" writes beside the blue group; on "so it travels further" a yellow hand tag (dark-ink outline) "moves more: goes further" writes beside the yellow group.
+
 ### 4. prediction (countdown, 3 seconds)
 > Quick prediction. Of these three dyes, which one is attracted most strongly to the paper? Have a **think**.
 
 Visual: the finished strip at the centre with its three spots (no bars, no labels except colours). Question: "Which dye is most strongly attracted to the paper (the stationary phase)?". On "think" the 3 s `Countdown` ring runs. Nothing answer-bearing.
+
+Upgrade (Revision 4): The finished strip is about 760 px tall at the centre; the question line is 52 px. No hand tags (thinking time).
 
 ### 5. the Rf value
 > It's the blue one, lowest on the strip, because it spent the most time stuck. To compare spots fairly, chemists use a ratio called the R F value. It's the distance the spot moved, divided by the distance the solvent **moved**. Both are measured from the baseline, the pencil line where the sample started. For the spot, measure to its **centre**. For the solvent, measure to the solvent front, the highest point the solvent reached. A spot can never get ahead of the solvent, so R F is always between zero and **one**, and it has no units.
 
 Visual: the blue spot is ringed (tag "most time stuck: lowest"). The right zone's equation strip writes on "moved": "R_f = distance moved by the spot ÷ distance moved by the solvent front". On "baseline" the pencil line glows with the tag "baseline: where the sample started". On "centre" a dimension line draws from the baseline up to the blue spot's centre (a small crosshair at the centre). On "solvent front" a second dimension line draws from the baseline to the front's edge (tag "solvent front: the highest point reached"). On "one" a chip writes "0 ≤ R_f ≤ 1, no units" with a ghost arrow showing a spot can't pass the front.
 
+Upgrade (Revision 4): On "It's the blue one" the blue spot takes a pen ring and the answer "blue: lowest" is framed in green with a tick (44 px). The equation strip is 52 px with "spot" in amber and "solvent front" in navy. On "from the baseline" a navy hand tag "start here" writes at the baseline with a pen arrow. On "measure to its centre" an amber hand tag "to the centre" writes at the crosshair. On "always between zero and one" the chip is 44 px; the arrow showing a spot cannot pass the front is a solid dark-ink arrow stopped by a short bar.
+
 ### 6. worked example: P and Q
 > Let's try one. A green food colouring separates into two spots, P and Q. The solvent front is eight point zero centimetres above the baseline. Spot P moved two point four centimetres, and spot Q moved six point **four**. For P, two point four divided by eight point zero gives zero point three **zero**. For Q, six point four divided by eight point zero gives zero point eight **zero**. Both answers have two significant figures, like the measurements.
 
 Visual: board shifts to a calculation layout. Left: a new developed strip (green dot on the baseline at the start; after development a blue spot P and a yellow spot Q, author note e). Right: task strip "Calculate R_f for spots P and Q"; equation strip (from scene 5) stays; givens group (navy, with units), each writing as spoken and its dimension line drawing on the strip: "solvent front: 8.0 cm"; "spot P: 2.4 cm"; on "four" "spot Q: 6.4 cm"; a grey tag "all from the baseline". Working rows one at a time: on "zero" (first) "R_f(P) = 2.4 ÷ 8.0 = 0.30"; on "zero" (second) "R_f(Q) = 6.4 ÷ 8.0 = 0.80" (the P row dims). On the last sentence a grey tag "2 significant figures, like the data".
+
+Upgrade (Revision 4): The developed strip (about 760 px tall) and the task strip are on the board from the first frame; the givens group is a navy givens card at 38 px. The tag "all from the baseline" is dark ink. Each working row is 52 px; when the Q row lands the P row stays solid at 38 px (not dimmed to grey). On "zero point three zero" the result "0.30" is framed in green with a tick; on "zero point eight zero" the result "0.80" is framed in green. On "two significant figures" an ink hand tag "2 sig figs, like the data" writes with a pen underline under "8.0". A chip "R_f = 8.0 ÷ 2.4 = 3.3" is not shown here (it is the crossed slip of scene 10).
 
 ### 7. why a ratio, and why the conditions matter
 > Why a ratio? If you'd stopped this run halfway, the front would be at four point zero centimetres, P at one point two and Q at three point two. Every distance halves, but the ratios stay at zero point three zero and zero point eight **zero**. Each spot moves a fixed fraction of the solvent's distance. But that fraction depends on the conditions, the type of paper, the solvent and the temperature. Change any of them, and the R F values **change**.
 
 Visual: a second strip slides in beside the first, labelled "stopped halfway" (author note e). On "four point zero" its dimension lines draw: "front: 4.0 cm", "P: 1.2 cm", "Q: 3.2 cm". On "zero" (last bold) rows write beside it: "1.2 ÷ 4.0 = 0.30", "3.2 ÷ 4.0 = 0.80", and both strips' R_f rows glow together (tag "same fraction"). On "the type of paper" three small chips write: "paper", "solvent", "temperature". On "change" a ghost third strip "different solvent" appears with its spots at different heights (no values) and the chip "R_f depends on the conditions".
 
+Upgrade (Revision 4): The worked strip replays as a live run (see "Simulation"): the three distance readouts climb while the two ratio readouts hold 0.30 and 0.80. On "stopped this run halfway" the run pauses at the halfway mark and the second strip is on the board solid. On "the ratios stay at zero point three zero and zero point eight zero" an amber hand tag "same fraction" writes with a pen bracket joining the two pairs of rows. On "depends on the conditions" the three chips are 38 px. On "the R F values change" the third strip is solid inside an inset card with a dashed border titled "different solvent", with an ink hand tag "new conditions, new R_f".
+
 ### 8. comparing with standards
 > That's how chromatography helps identify substances. Run known substances, called standards, on the same paper, in the same solvent, at the same **time**. Here, standard X has an R F of zero point three zero, and standard Y has zero point eight zero. So spot P matches X, and spot Q matches **Y**. But a match supports the identity, it doesn't prove it, because two different substances can share an R F value. To be more confident, run them again in a different solvent, and check they still **match**.
 
 Visual: the worked-example strip widens into a three-lane sheet: lane 1 the green sample (P and Q), lane 2 standard X, lane 3 standard Y, all on one baseline. On "time" the three lanes develop together. Tags "X: R_f 0.30", "Y: R_f 0.80". On "Y" dashed horizontal lines join P to X and Q to Y. On "supports the identity" a chip "match: supports, doesn't prove" (amber underline); a ghost lane "another dye, Z" shows a spot at the same height as X (tag "same R_f, different substance"). On "match" a mini second sheet "different solvent" shows P and X again level with each other at a new height (tag "still matches: stronger evidence").
+
+Upgrade (Revision 4): The three-lane sheet (about 760 px tall) is on the board from the first frame with its lane labels at 34 px. On "at the same time" an ink hand tag "same paper, same solvent, same run" writes above the lanes. On "spot Q matches Y" the two dashed lines are pen lines with amber hand tags "match" at each. On "it doesn't prove it" the chip is 44 px and the extra lane "another dye, Z" is solid inside an inset card with a dashed border, with a red hand tag "same R_f, different dye". On "check they still match" the mini second sheet is solid, tagged at 30 px.
 
 ### 9. details that protect the measurement
 > A few details make the results trustworthy. Draw the baseline in pencil, because pencil doesn't dissolve, but ink would run up the paper too. Keep the solvent below the baseline, or the spots just dissolve into the **pool**. Keep the lid on, so the solvent doesn't evaporate off the paper as it climbs. And mark the solvent front as soon as you take the strip out, because it dries and **disappears**.
 
 Visual: a fresh strip; the pencil plate (`m5x-pencil-v1.png`) draws the baseline by itself (tag "pencil: doesn't dissolve"), with a ghost ink line beside it that smears upward when wetted (crossed, caption "ink would run"). On "pool" a ghost jar with the solvent above the baseline: the spot bleeds out into the liquid (crossed, caption "solvent below the line"). On "lid" the lid slides on (tag "lid: stops the solvent evaporating off the paper", author note b). On "disappears" the strip lifts out, a coded pencil tick marks the front's edge, and the wet tint fades (tag "mark the front straight away").
 
+Upgrade (Revision 4): The jar (about 520 px tall) and a fresh strip are on the board from the first frame. The two wrong set-ups are solid inset cards with dashed borders ("ink baseline", "solvent above the line"), each struck in red with a red hand tag ("ink would run"; "spots wash out"). On "pencil doesn't dissolve" an ink hand tag "pencil stays put" writes on the baseline. On "Keep the lid on" an ink hand tag "lid on" writes with a pen arrow to the lid. On "as soon as you take the strip out" the front mark is a pen tick with an ink hand tag "mark it now". The front "pencil tick" is drawn by the painted pencil plate, not a coded pencil.
+
 ### 10. traps, and a way to remember
 > Two classic traps. Measure from the baseline, not from the bottom edge of the paper, and to the centre of each spot. And put the spot's distance on top. If you ever get an R F bigger than one, you've flipped it. Here's a way to remember the whole idea. Spot over front, and stickier stays **lower**. The spot cannot pass the front. And the dye that sticks to the paper most has the smallest R **F**.
 
 Visual: on the scene 6 strip, a ghost dimension line from the paper's bottom edge to P is crossed (caption "from the baseline"); a ghost line to P's top edge is crossed (caption "to the centre"). A chip "R_f = 8.0 ÷ 2.4 = 3.3" fades in and is crossed (caption "spot over front: cannot exceed 1"). On "Spot over front" the handwritten line writes large: "Spot over front, and stickier stays lower." On "lower" the blue spot of the hook strip glows (tag "stickiest: lowest"). On "F" (last) a small number line 0 to 1 shows the three hook spots placed at 0.20, 0.50 and 0.80 (author note d; screen only, no narration of the values). Hold about 2 seconds.
+
+Upgrade (Revision 4): The two wrong dimension lines are solid red dashed lines, each struck in red with a red hand tag ("from the baseline"; "to the centre"). On "you've flipped it" the chip "R_f = 8.0 ÷ 2.4 = 3.3" is struck in red with a red hand tag "bigger than 1: flipped". The memory line sits in a framed memory card (hand lettering, 52 px): amber "Spot over front," slate "and stickier stays lower." The number line is 34 px with the three spots in their colours.
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. An unknown food dye is run alongside a tartrazine standard, on the same paper in the same solvent. The solvent front travels ten point zero centimetres, and the unknown's spot travels four point zero centimetres. Tartrazine's R F under these conditions is zero point four zero. Calculate the unknown's R F, and evaluate the claim that it must be tartrazine. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry"), worded as printed: "An unknown food dye was run alongside a standard sample of the dye tartrazine, on the same chromatography paper in the same solvent. The solvent front travelled 10.0 cm from the baseline, and the centre of the unknown's spot travelled 4.0 cm. Under these conditions, tartrazine has an Rf value of 0.40. (a) Calculate the Rf value of the unknown dye. (b) A student concludes that the unknown dye must be tartrazine. Evaluate this conclusion." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." No strip (nothing answer-bearing).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted jar with its lid on (both layers, about 300 px tall) holding a blank strip: no spots, no front, no numbers. Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > R F is four point zero divided by ten point zero, which is zero point four **zero**. That matches tartrazine under the same conditions, so it supports the conclusion. But it doesn't prove it, because another dye could have the same R F. Running both in a second solvent would make the case **stronger**. Ten divided by four, two point five, is the slip to **avoid**.
 
 Visual: card shrinks to the top. A small strip draws with the front at 10.0 cm and the spot at 4.0 cm (dimension lines; "10.0 cm" and "4.0 cm" underlined in the card). Row "(a) R_f = 4.0 ÷ 10.0 = 0.40" (on "zero"). Row "(b) matches 0.40 under the same conditions: supports, doesn't prove; another dye may share it; test in a second solvent" (on "stronger"). On "avoid" a chip "R_f = 10.0 ÷ 4.0 = 2.5" fades in and is crossed (caption "spot over front: cannot exceed 1"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "front 10.0 cm | spot 4.0 cm | tartrazine R_f 0.40, same conditions". On "zero point four zero" the working row is 52 px and "0.40" is framed in green with a tick. On "But it doesn't prove it" the answer "(b) supports, doesn't prove" is framed in green (44 px). On "avoid" the crossed chip is struck in red with a red hand tag "spot over front".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. In a paper chromatogram, the solvent front travels twelve point zero centimetres. Spot A travels three point zero centimetres, and spot B travels nine point zero. Calculate the R F of each spot, and identify which component is more strongly attracted to the stationary phase. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "In a paper chromatography experiment, the solvent front travelled 12.0 cm from the baseline. Spot A travelled 3.0 cm and spot B travelled 9.0 cm. (a) Calculate the Rf value of each spot. (b) Identify which component is more strongly attracted to the stationary phase. Justify your answer." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries a developed strip (about 420 px tall) showing the front line and two spots tagged "A" (lower) and "B" (higher), with no numbers and no ratio. The positions are the card's own givens, so nothing answer-bearing is added.
+
 ### 14. feedback 2 (brief)
 > For A, three point zero over twelve point zero is zero point two **five**. For B, nine point zero over twelve point zero is zero point seven **five**. A is more strongly attracted to the stationary phase. It spent more time stuck to the paper, so it travelled a smaller fraction of the solvent's distance. Choosing B because it went further is the slip to **avoid**.
 
 Visual: card shrinks to the top. A small strip with front 12.0 cm, A at 3.0 cm, B at 9.0 cm (dimension lines; values underlined in the card). Rows: on "five" (first) "R_f(A) = 3.0 ÷ 12.0 = 0.25"; on "five" (second) "R_f(B) = 9.0 ÷ 12.0 = 0.75". Row "(b) A: lower R_f, more time stuck to the paper" with "stickier stays lower" in grey. On "avoid" a chip "B: it moved further" fades in and is crossed (caption "further = less attracted to the paper"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "front 12.0 cm | A 3.0 cm | B 9.0 cm". The two working rows are 52 px with "0.25" and "0.75" framed in green as they land. On "A is more strongly attracted" the answer "(b) A: lower R_f, more time stuck" is framed in green with a tick (44 px); the line "stickier stays lower" is slate hand lettering at 34 px. On "avoid" the crossed chip is struck in red with a red hand tag "further = less attracted".
 
 ### 15. handoff
 > So chromatography tells you which substances are in a mixture. It doesn't tell you how much of each there is. For that, we go back to the sand and salt we separated, and we weigh them. Next time, we'll work out what fraction of a separated mixture came from each **component**.
 
 Visual: board clears. The hook's developed black-ink strip shrinks to the far left, dimmed, with the tag "which components?". On "how much of each" the analytical balance plate (`m8-balance-watch-glass-v1.png`) slides in at the centre with a blank coded readout over its display. On "sand and salt" the two watch glass plates from v03 slide in at the right, stacked, tagged "sand" (`y11c-watch-glass-sand-v1.png`) and "salt" (`y11c-watch-glass-salt-v1.png`), with the chip "how much of each?". On "component" the next chip writes centred above: "Next: what fraction of a separated mixture came from each component?". This is the final frame (see "Final frame"). Hold about 2 seconds.
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The balance and the two watch glasses are solid when they arrive. On "It doesn't tell you how much of each there is" an ink hand tag "which, but not how much" writes above the small strip and clears before the "Next" chip writes, so the final frame is exactly as described under "Final frame". Builders draw the left strip and every tag in full ink (the final frame's "dimmed to about 50% opacity" and "grey" wording is kept only so the join text matches v06).
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Paper chromatography: the stationary phase (paper) stays still; the mobile phase (solvent) moves up the paper. Each component keeps switching between sticking to the paper and moving with the solvent.
-2. Stronger attraction to the paper: more time stuck, shorter distance, smaller Rf. Dissolves well in the solvent: travels further, larger Rf.
-3. Rf = distance moved by the spot ÷ distance moved by the solvent front, both from the baseline (to the spot's centre). 0 ≤ Rf ≤ 1, no units.
-4. Compare Rf values only under the same conditions (paper, solvent, temperature), with standards run alongside. A match supports an identity; it does not prove it. Pencil baseline, solvent below it, lid on, mark the front.
+1. Stationary phase (paper) stays still; mobile phase (solvent) moves up it.
+2. Stronger attraction to the paper: more time stuck, shorter distance, smaller Rf.
+3. Rf = spot distance ÷ solvent front distance, both from the baseline.
+4. Rf is between 0 and 1, with no units. Measure to the centre of the spot.
+5. Compare Rf only under the same conditions. A match supports; it does not prove.
 
-Memory aid (large, on the notes screen): *Spot over front, and stickier stays lower.*
+Memory aid (framed card beside the notes, hand lettering, amber and slate as in scene 10): *Spot over front, and stickier stays lower.* A method strip under the notes (30 px, dark ink): "Pencil baseline, solvent below it, lid on, mark the front straight away." Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Opening frame
 
@@ -215,6 +258,8 @@ Checked with Python (5 Nov); Codex to re-check.
 
 Revision 1 count (5 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **5,970 characters**, 16 scenes. Characters per scene (1 to 16): 488, 352, 551, 103, 527, 440, 442, 491, 393, 415, 390, 354, 307, 354, 273, 75. At 13.3 characters per second the speech is about 449 s; add about 6 s of settling (the strip developing in scene 1, the three lanes in scene 8), 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s each for the memory-aid and handoff holds and about 55 s more of the quiet notes hold (about 90 s): **about 539 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Reserve trims if the voiced take runs long: scene 2's last sentence (keep the three arrows silent); scene 7's "Each spot moves a fixed fraction of the solvent's distance." (the glow carries it); scene 9's front-marking sentence (keep the tick silent).
 
+Revision 4 (12 Nov 2026): narration unchanged (5,931 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 537 s to about 522 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v05` (route chem-y11-m1-v05). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v05` and build folder `docs/production/claude-pm/lessons/c-y11-m1-v05`.
@@ -224,6 +269,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, two-phases, why-di
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except prediction (`hold`: the learner picks the stickiest dye during the 3 s countdown with the developed strip on screen), attempt-1, attempt-2 (`hold`) and key-notes (`hold`: the learner copies four notes). `design.renderer`: explainer. `design.visualSystem`: Year 11 Chemistry paper board (v01 colour key) with the developing strip, phase particle view and calculation strips. Transitions: 1 to 2 camera pull back (jar shrinks left); 2 to 3 camera push into the paper; 3 to 4 pull back to the strip; 4 to 5 continue; 5 to 6 clear change to the calculation layout; 6 to 7 continue (second strip slides in); 7 to 8 continue (the strip widens into lanes); 8 to 9 clear change to a fresh strip; 9 to 10 continue; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/c-y11-m1-v05-learning-review.md`, `science_check` = `checks/c-y11-m1-v05-chemistry-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. No transition changed.
 
 ## Assets
 
@@ -240,6 +287,8 @@ Coded: the strip, baseline, ink and dye spots, wet tint and solvent front, the s
 
 Kit gaps (for the v05 build brief):
 1. **Developing strip.** A coded paper strip component: width, height, baseline height, sample dot colour; a solvent front that rises with eased speed to a set final height; a list of components each with a colour and Rf, each spot's centre computed as baseline + Rf × (front − baseline) at every frame (so the drawing always obeys Rf), spots that start merged in the dot and spread slightly as they travel; optional lanes; dimension lines on demand. Used in scenes 1 to 15.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-chromatography-jar-back-v1.png`, `y11c-chromatography-jar-front-v1.png`, `y11c-watch-glass-sand-v1.png`, `y11c-watch-glass-salt-v1.png`. The jar is also the attempt 1 card picture; the attempt 2 picture is a coded developed strip (the strip is coded throughout, by the earlier decision). New plate requests: none.
 
 ## Codex asset brief (Year 11 Chemistry M1 v05)
 
@@ -262,6 +311,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm the narration character count and per-scene counts by script with the build parser rules.
 9. Confirm the "Final frame" description contains no numbers and matches scene 15.
 10. Report site notes 1 and 2 under Decisions to root for `../site-corrections-chem-y11.md`.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the live readouts in scene 7 (front 0 → 8.0 cm, P 0 → 2.4 cm, Q 0 → 6.4 cm, ratios held at 0.30 and 0.80, halfway values 4.0, 1.2, 3.2) agree with "Numbers used"; the attempt 2 picture shows only the card's own givens; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -308,3 +359,28 @@ Narration: 5,946 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v05-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 5,931 characters over 16 scenes (the earlier 5,946 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v05-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the painted jar closes round the strip within about 10 s.
+- Simulation: the worked strip replays in scene 7 with live distance readouts and two ratio readouts that hold 0.30 and 0.80, so "why a ratio" is watched, not only told.
+- Hand tags (two or three) and a pen mark in scenes 1 to 3 and 5 to 9; the memory line is a framed card in scene 10.
+- Worked example (scene 6): navy givens card, both results framed in green; the earlier row stays solid, not dimmed.
+- Ghost strips, lanes and dimension lines are solid, in dashed inset cards where they show a wrong case; wrong cases are struck in red with red hand tags.
+- Question cards: attempt 1 gains the jar with a blank strip; attempt 2 gains a developed strip with spots A and B and no numbers; feedback scenes gain navy givens strips and green frames.
+- Key notes: four long items cut to five one-line bullets with the framed memory card and a method strip; the notes scene is 45 s.
+- Stage list recorded; no set-up ran past about 66 s, so no cut was added.
+
+New plate requests: none.
+
+Joins: the opening is v04's final frame, unchanged. The final frame is unchanged word for word (builders draw its "dimmed" strip and "grey" tags in full ink), so v06's opening holds.
+
+Counts: 5,931 characters, unchanged; about 537 s to about 522 s.
+
+Calls for root: (1) the attempt 2 card shows spots A and B at their given heights (the givens, not the answer); (2) the "time moving" bars are model readouts; (3) the final frame text still says "dimmed" and "grey" so that it matches v06 word for word.

@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V17: Radiation from unstable isotopes. What radiation do unstable isotopes give off, and does it matter whether they're natural or human-made? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 178 review repairs applied. Needs a Codex error check before voicing. Summary: ionisation smoke alarm; M explained; nuclear energy in the origin comparison; "activity falls quickly". Narration 6,273 characters (joined parser count), about 560.8 s. Previously Revision 1 (5 November 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,256 characters (sum of scene strings; 6,273 with joining spaces; Revision 1 was 6,249 by the joined parser count), 18 scenes, about 560.8 s (9.3 minutes), counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -63,6 +63,17 @@ Entry knowledge: v08, v10, v14.
 Stops after: the three types and their nuclear changes in words, penetration and ionisation, six named radioisotopes, the answer (the nucleus decides), what origin changes. No nuclear equations, half-life calculations or dose units.
 Handoff: chem-y11-m1-v18, balancing nuclear reactions.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** Two real objects carry the question: the painted ionisation smoke alarm (`y11c-smoke-alarm-v1.png`) and the gum tree (`g1-tree-v1.png`), each about 420 px, both on screen by about 17 s. Each radiation type then gets its own real object (uranium ore for alpha, the tree for beta, the cobalt-60 source pot for gamma), and scenes 8 and 9 are built from six painted objects, not table rows.
+- **Simulation: what gets through (scene 7).** Three runs of the chance engine (`src/explainer/sims/chance.ts`, `{kind: 'weighted'}`), one each for alpha, beta and gamma. Each trial is one particle or photon leaving the source; its outcome is where it stops: "in the paper", "in the aluminium", "in the lead" or "through the lead". The tracks on the penetration diagram are drawn from the run, and live readouts at 44 px read it: "sent", "stopped by paper", "stopped by aluminium", "through the lead". Alpha: all stop in the paper. Beta: all stop in the aluminium. Gamma: none stop in the paper, a few in the aluminium, most in the lead and some still get through, so "reduced, not zero" is watched, not only told. The weights are illustrative and the diagram carries "model: not measured count rates". Ionisation trails are drawn from the same run (dense for alpha, sparse for gamma).
+- **Colour key (fixed for the whole video).** Protons red; neutrons slate with a dark-ink outline; electrons and beta particles blue; alpha particles orange; gamma rays violet; natural green; human-made teal; a framed answer green frame with a green tick (the "natural" green is used only as a column colour and heading); a crossed mistake red with a red hand tag; givens strips navy. Hand tags take the colour of the radiation or idea they mark. Every tag the Visual lines call "grey", "faint" or "dim" is dark ink at full strength, and on-screen tags never show a video number.
+- **Type sizes (1080p).** Heading 60 px; particle cards 44 px with the particle name at 52 px; readouts, the current rule line and framed answers 44 to 52 px; question-card sentences 38 px; object captions, table rows and absorber labels 34 px or more; hand tags 42 px; key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) the nucleus, then the alarm and the tree, scene 1 (about 37 s); (B) the unstable nucleus and one ionised atom, scene 2 (about 33 s); (C) alpha with the uranium ore, scene 3 (about 31 s); (D) beta with the tree, scene 4 (about 33 s); (E) gamma with the source pot, scene 5 (about 27 s); (F) the three cards, then the penetration diagram and its live run, scenes 6 and 7 (about 57 s); (G) natural board, scene 8 (about 34 s): three large objects in a row; (H) human-made board, scene 9 (about 40 s): three large objects in a row; (I) the two columns side by side, scene 10 (about 35 s); (J) made-to-order board, scene 11 (about 44 s): the vial with its detector and the alarm with its chamber; (K) the memory card, scene 12 (about 11 s); question and feedback cards; the handoff; the notes board. Revision 3 kept one two-column table through scenes 8 to 11 (about 153 s); stages G, H and J are the new cuts.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v08 and v10): protons red; neutrons grey; electrons blue; alpha particles orange (a 2p2n cluster); beta particles blue (small fast dots); gamma rays violet wavy arrows; absorbers as grey rectangles with labels; natural column green; human-made column teal; crossed chips red strike.
@@ -72,96 +83,131 @@ Cue words in **bold** trigger the visual change. Colour key (continues v08 and v
 
 Visual: opens on v16's final frame (Decisions). On the second sentence the camera pushes into the enlarged nucleus, and the atom shrinks away. On "reactors" `y11c-smoke-alarm-v1.png` appears at the left, labelled "ionisation smoke alarm" (Revision 2), tag "americium-241: human-made". On "natural" `g1-tree-v1.png` appears at the right, tag "carbon-14: natural". On the fourth sentence a chip "human-made = stronger radiation?" writes between them with a "?". On "from" the heading writes on: "Radiation: does natural or human-made matter?"
 
+Upgrade (Revision 4): The opening frame is drawn solid in dark ink. On "made by people in nuclear reactors" the smoke alarm (about 420 px) is solid at the left with its label at 38 px and a teal hand tag "human-made". On "completely natural" the tree (about 460 px tall) is solid at the right with a green hand tag "natural". On "a different, stronger kind" the chip is 44 px with a pen ring round its "?". The heading is 60 px.
+
 ### 2. unstable nuclei, and what ionising means
 > Remember from our nuclide video, a nucleus is unstable when it has the wrong balance of neutrons and protons, or is simply too big. An isotope with an unstable nucleus is called a radioisotope. Sooner or later its nucleus decays. It changes to become more stable, and gives out **radiation**. The radiation from decaying nuclei is called ionising, because it can knock electrons off atoms it hits, turning them into **ions**.
 
 Visual: v08's band-of-stability sketch returns small at the right, with a point off the band, tag "v08: unstable". On the second sentence the nucleus at the left is labelled "radioisotope". On "radiation" the nucleus flickers and a burst leaves it, tag "decay: the nucleus changes, radiation leaves". On "ions" the burst passes a small shell atom, knocks one blue electron off, and the atom gains a "+" tag; chip "ionising: knocks electrons off atoms (v14's ionisation, in one hit)".
+
+Upgrade (Revision 4): The nucleus (about 420 px) is at the left from the first frame and the band-of-stability sketch (about 420 px wide, axis labels 30 px) at the right; its tag reads "unstable" with no video number. On "the wrong balance of neutrons and protons" a pen arrow points from the band to the off-band point with an ink hand tag "off the band". On "gives out radiation" an ink hand tag "decay" writes on the burst. On "turning them into ions" a blue hand tag "electron knocked off" writes with a pen arrow along the freed electron, and the chip reads "ionising: knocks electrons off atoms" at 38 px (no video number).
 
 ### 3. alpha: two protons and two neutrons
 > There are three main types. The first is alpha. An alpha particle is two protons and two neutrons stuck together, the same as a helium **nucleus**. It has a charge of plus two, and a relative mass of four. When a nucleus gives out an alpha particle, it loses two protons, so it becomes a different **element**. Very heavy nuclei, like uranium-two-thirty-eight, often decay this **way**.
 
 Visual: board clears to a large heavy nucleus (many red and grey nucleons). On "nucleus" a 2-red 2-grey orange-outlined cluster breaks off and leaves to the right, tag "alpha particle: 2 protons + 2 neutrons (helium nucleus)". A particle card writes at the right: "alpha (α): charge +2; relative mass 4". On "element" the parent's proton counter ticks down by 2 and its label changes from "element X" to "a different element", tag "2 fewer protons". On "way" a small label "uranium-238" sits on the parent nucleus.
 
+Upgrade (Revision 4): The heavy nucleus (about 460 px) is at the centre and the painted uranium ore (`y11c-uranium-ore-v1.png`, about 320 px, dark-ink tag "uranium ore") at the left from the first frame. On "the same as a helium nucleus" an orange hand tag "2 p + 2 n" writes on the leaving cluster with a pen ring. The card is 44 px with "alpha (α)" in orange. On "it becomes a different element" a red hand tag "2 fewer protons: new element" writes on the counter. On "often decay this way" a pen arrow runs from the ore to the nucleus.
+
 ### 4. beta: a neutron turns into a proton
 > The second is beta. A beta particle is a fast electron, but it doesn't come from the electron shells. It's made in the nucleus, when a neutron changes into a proton and an electron, and the electron shoots **out**. A beta particle has a charge of minus one and almost no mass. The nucleus now has one more proton, so it's a different element again. Nuclei with too many neutrons, like carbon-fourteen, decay this **way**.
 
 Visual: board clears to a smaller nucleus. A grey tag "not from the shells" crosses a faint shell ring around it. On the third sentence one grey neutron glows, turns red, and a small blue dot shoots out to the right; on "out" tag "beta particle: a fast electron made in the nucleus". Card: "beta (β): charge −1; relative mass ≈ 1/1836". The proton counter ticks up by 1, tag "1 more proton". On "way" label "carbon-14" and a small v08 band sketch with the point above the band, tag "too many neutrons".
+
+Upgrade (Revision 4): The nucleus (about 420 px) is at the centre and the tree (about 360 px tall, dark-ink tag "carbon-14 in living things") at the left from the first frame. On "it doesn't come from the electron shells" the shell ring is a solid slate ring with a slate cross and a slate hand tag "not from the shells". On "a neutron changes into a proton and an electron" a red hand tag "neutron → proton" writes with a pen ring round the changing nucleon. On "the electron shoots out" a blue hand tag "beta" writes on the dot. The card is 44 px with "beta (β)" in blue. On "one more proton" the counter tag is red at 38 px.
 
 ### 5. gamma: energy only
 > The third is gamma. A gamma ray isn't a particle of matter at all. It's a photon, like the photons of light from our spectra video, but with far more energy. It has no charge and no **mass**. Giving out a gamma ray doesn't change the protons or neutrons. The nucleus just gets rid of extra energy, often right after an alpha or beta **decay**.
 
 Visual: board clears to a nucleus with a soft glow ("excited"). On the second sentence a violet wavy arrow leaves it, tag "gamma ray: a high-energy photon". On "mass" card "gamma (γ): no charge; no mass". On the fourth sentence the proton and neutron counters stay still, tag "same protons, same neutrons". On "decay" a short replay: a beta dot leaves, then a violet gamma arrow, and the glow fades, tag "often follows alpha or beta".
 
+Upgrade (Revision 4): The glowing nucleus (about 420 px) is at the centre and the painted source pot (`phys-y11-gamma-source-v1.png`, about 320 px, dark-ink tag "a sealed gamma source") at the left from the first frame. On "It's a photon" a violet hand tag "energy, not matter" writes on the wavy arrow. The card is 44 px with "gamma (γ)" in violet. On "doesn't change the protons or neutrons" a pen bracket spans both counters with an ink hand tag "both unchanged". On "often right after an alpha or beta decay" the replay's tag is dark ink at 34 px.
+
 ### 6. prediction (countdown, 3 seconds)
 > Quick prediction. Alpha particles are big and highly charged. Gamma rays have no charge at all. Which do you think gets further through solid material? Have a **think**.
 
 Visual: board clears to the three particle cards side by side, with a blank absorber line under them. Chip "alpha or gamma: which travels further through matter?". On "think" the 3 s `Countdown` ring runs.
+
+Upgrade (Revision 4): The three cards (44 px) and the empty absorber line are on the board from the first frame; the chip is 44 px. No hand tags (thinking time).
 
 ### 7. penetration and ionisation
 > Gamma travels much further. Alpha is stopped by a sheet of paper, or a few centimetres of air. Beta gets through paper, but is stopped by a few millimetres of **aluminium**. Gamma passes through both, and needs several centimetres of lead, or thick concrete, to cut it down a lot. Why? Alpha is big, slow and strongly charged, so it collides with atoms constantly, ionising them, and loses its energy very **quickly**. Gamma has no charge, so it rarely hits anything, and travels much further. The more it ionises, the sooner it **stops**.
 
 Visual: the penetration diagram draws (HSC convention): a source box at the left, then three labelled absorbers: "paper", "aluminium (a few mm)", "lead (several cm)". On the second sentence an orange alpha track ends at the paper. On "aluminium" a blue beta track passes the paper and ends in the aluminium. On the fourth sentence a violet gamma track passes both and thins through the lead, continuing faint beyond it, tag "reduced, not zero". On "quickly" ionisation trails appear along each track: dense, short dots for alpha; fewer for beta; sparse for gamma; tag "alpha: most ionising". On "stops" a chip writes "more ionising → less penetrating".
 
+Upgrade (Revision 4): On "Gamma travels much further" the answer "gamma" is framed in green with a tick (52 px). The penetration diagram fills the board in the HSC convention, with a small painted thumbnail above each absorber label (`y12p-absorber-paper-v1.png`, `y12p-absorber-aluminium-v1.png`, `y12p-lead-bricks-v1.png`, about 180 px each) and the source pot at the left. The three runs play (see "Simulation") with their readouts at the right. On "stopped by a sheet of paper" an orange hand tag "stops here" writes at the paper; on "a few millimetres of aluminium" a blue hand tag "stops here" writes at the aluminium; on "to cut it down a lot" a violet hand tag "reduced, not zero" writes beyond the lead, where the surviving gamma tracks are thin solid lines. On "loses its energy very quickly" a pen bracket marks alpha's dense trail with an orange hand tag "most ionising". On "stops" the chip is 44 px.
+
 ### 8. natural radioisotopes
 > Now let's sort some real radioisotopes. Natural ones first. Uranium-two-thirty-eight has been in rocks since the Earth formed, and gives out **alpha** particles. Carbon-fourteen is made in the upper atmosphere, when cosmic rays hit nitrogen, and every living thing takes some in. It gives out **beta** particles. And potassium-forty is in rocks, soil, food and even your body. It gives out beta particles, and some gamma **rays**.
 
 Visual: board clears to a two-column table; the left column heads "natural" (green). On "alpha" `y11c-uranium-ore-v1.png` appears in the first row with "uranium-238: alpha; in rocks since Earth formed". On "beta" `g1-tree-v1.png` (small) in the second row with "carbon-14: beta; made in the upper atmosphere, taken up by living things". On "rays" a third row writes "potassium-40: beta, and some gamma; in rocks, soil and food" (text row, no plate). A green tick column marks "α, β, γ all present".
+
+Upgrade (Revision 4): Board change to the natural board, solid from the first frame: three large objects in a row under a green heading "natural" (44 px): the uranium ore (about 360 px), the tree (about 420 px tall) and a caption card for potassium-40. Each caption is 34 px with its radiation in its colour. On "gives out alpha particles" an orange hand tag "α" writes on the ore; on "It gives out beta particles" a blue hand tag "β" writes on the tree; on "even your body" an ink hand tag "in you, too" writes on the potassium-40 card, and on "some gamma rays" the card takes blue "β" and violet "γ" hand tags. A green pen bracket under the row reads "α, β and γ: all here".
 
 ### 9. human-made radioisotopes
 > Americium-two-forty-one, in ionisation smoke alarms, gives out **alpha** particles. Cobalt-sixty is made by adding a neutron to cobalt-fifty-nine. It gives out beta particles, then gamma rays, and it's used to treat cancers and to sterilise medical **equipment**. And technetium-ninety-nine M gives out gamma rays, for medical scans. The M means its nucleus holds extra **energy**, which it gives out as a gamma ray. In Australia, the material it comes from is made in a research reactor at Lucas Heights in **Sydney**.
 
 Visual: the right column heads "human-made" (teal; grey tag "made in reactors"). On "alpha" `y11c-smoke-alarm-v1.png` (small) in the first row: "americium-241: alpha; ionisation smoke alarms". On "adding a neutron to cobalt-fifty-nine" a small coded inset: a grey neutron joins a nucleus, tag "made in reactors (neutron added)" (Revision 2: retied from the cut opening sentences). On "equipment" `phys-y11-gamma-source-v1.png` (small) in the second row: "cobalt-60: beta, then gamma; cancer treatment, sterilising", with a faint line "⁵⁹Co + neutron → ⁶⁰Co" under it. On "energy" a grey gloss writes beside the third row: "m: the nucleus holds extra energy, given out as gamma" (Revision 2). On "Sydney" `y11c-lead-shielded-vial-v1.png` (small) in the third row: "technetium-99m: gamma; medical imaging", tag "made from molybdenum-99 (Lucas Heights reactor, Sydney)". A teal tick column marks "α, β, γ all present".
 
+Upgrade (Revision 4): Board change to the human-made board, solid from the first frame: three large objects in a row under a teal heading "human-made" (44 px): the smoke alarm (about 360 px), the cobalt-60 source pot (about 340 px) and the lead-shielded vial (`y11c-lead-shielded-vial-v1.png`, about 340 px). Captions are 34 px. On "gives out alpha particles" an orange hand tag "α" writes on the alarm. On "adding a neutron to cobalt-fifty-nine" the neutron inset is at least 300 px wide with its line "⁵⁹Co + neutron → ⁶⁰Co" in dark ink at 34 px. On "then gamma rays" blue "β" and violet "γ" hand tags write on the pot. On "The M means its nucleus holds extra energy" the gloss is dark ink at 34 px with a pen arrow to the "m". On "Lucas Heights in Sydney" the tag is dark ink at 30 px. A teal pen bracket under the row reads "α, β and γ: all here".
+
 ### 10. so does it matter?
 > Look at the two columns. Both have alpha, beta and gamma emitters. Human-made radioisotopes don't give out a special, stronger kind of radiation. The type of radiation is decided by the nucleus, by its balance of protons and neutrons and any extra energy it holds, and not by where it came from. In fact, carbon-fourteen made in a reactor is exactly the same as carbon-fourteen made by cosmic rays, and gives out exactly the same beta **particles**.
 
 Visual: the two columns light together; on the second sentence matching rows are linked by arrows: "alpha: U-238 ↔ Am-241", "beta: C-14 ↔ Co-60", "gamma: K-40 ↔ Tc-99m". On the third sentence the hook's chip "human-made = stronger radiation?" returns and is crossed. On the fourth sentence chip "the nucleus decides the radiation, not its origin" writes (bright). On "particles" two identical carbon-14 nuclei sit side by side, tagged "cosmic rays" and "reactor", each sending out an identical blue beta dot.
+
+Upgrade (Revision 4): Board change: the two rows come together as two columns of thumbnails (about 200 px each), green heading left and teal heading right. On "Both have alpha, beta and gamma emitters" three pen arrows link the matching pairs, each labelled α, β or γ in its colour. On "don't give out a special, stronger kind" the chip "human-made = stronger radiation?" is struck in red with a red hand tag "same three types". On "decided by the nucleus" the chip "the nucleus decides the radiation, not its origin" is framed at 44 px. On "exactly the same beta particles" the two carbon-14 nuclei (about 260 px each) take an ink hand tag "identical" with a pen bracket.
 
 ### 11. what origin does change
 > What does differ is where they come from. Natural radioisotopes are either very long-lived, left over since the Earth formed, or constantly made in nature. Human-made ones can be made to order, so scientists can choose the radiation and the half-life a job needs. Half-life is the time it takes for half of the unstable nuclei in a sample to decay. Technetium-ninety-nine M's gamma rays pass out of the body to a camera, and its half-life of about six hours means its activity falls quickly. Americium's alpha particles ionise the air inside the alarm, and travel only a few **centimetres**.
 
 Visual: the table dims; a chip "origin changes: supply and choice" writes at the top. On the second sentence the U-238 row glows ("since Earth formed") and the C-14 row glows ("made continually"). On the third sentence the human-made column glows, tag "made to order: choose the radiation and half-life". On the fourth sentence a grey tag writes: "half-life: time for half of the unstable nuclei to decay". On the fifth sentence the Tc-99m row expands: a violet arrow leaving the vial plate toward a coded detector bar, tag "gamma escapes the body; half-life about 6 hours". On "centimetres" the smoke alarm row expands: a coded cutaway chamber with short orange alpha tracks ionising air dots, tag "alpha: a few centimetres of air".
 
+Upgrade (Revision 4): Board change to the made-to-order board, solid from the first frame: the lead-shielded vial with a coded detector bar at the left and the smoke alarm with its chamber cutaway at the right (each about 420 px), under the chip "origin changes: supply and choice" (38 px). On "left over since the Earth formed" and on "constantly made in nature" two green caption lines write at 34 px beside small thumbnails of the ore and the tree. On "made to order" a teal hand tag "chosen for the job" writes between the two objects. On "the time it takes for half of the unstable nuclei" the half-life line is 34 px with a small live count "unstable nuclei: 16 → 8" (model, 34 px). On "about six hours" a violet hand tag "gamma gets out; gone in hours" writes on the vial's arrow. On "only a few centimetres" an orange hand tag "alpha: stays inside" writes on the chamber tracks.
+
 ### 12. one line to remember
 > So here's the pattern to keep. Paper stops alpha, aluminium stops beta, and lead cuts down gamma. The more it ionises, the sooner it **stops**.
 
 Visual: the penetration diagram returns, compact. On "stops" the handwritten line writes: "The more it ionises, the sooner it stops." and the absorber labels glow in order "paper → aluminium → lead". Hold about 2 seconds.
+
+Upgrade (Revision 4): The compact penetration diagram sits under a framed memory card (hand lettering, 52 px): "The more it ionises, the sooner it stops." The absorber order "paper → aluminium → lead" is 38 px with orange, blue and violet pen ticks.
 
 ### 13. attempt 1 (countdown, 10 seconds)
 > Your turn. Cobalt-sixty is a human-made radioisotope that gives out beta particles and gamma rays. Compare beta particles and gamma rays in terms of their charge, penetrating ability and ionising ability. Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry", tag "HSC-style question, written for HSCScience"): "Cobalt-60 is a human-made radioisotope that emits beta particles and gamma rays. Compare beta particles and gamma rays in terms of their charge, penetrating ability and ionising ability. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no cards, no diagram).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the painted source pot (about 280 px), untagged. Nothing answer-bearing (no cards, no diagram).
+
 ### 14. feedback 1 (brief)
 > Beta particles have a charge of minus one, and gamma rays have no **charge**. Beta is stopped by a few millimetres of aluminium, while gamma needs several centimetres of lead to cut it down. Beta is more ionising than gamma. Saying gamma is the most ionising, because it gets furthest, is the slip. It's the other way **round**.
 
 Visual: card shrinks to the top. A three-row comparison table writes: on "charge" "charge: β −1; γ 0"; then "penetrating: β stopped by a few mm Al; γ reduced by several cm Pb"; then "ionising: β more than γ". On "round" a chip "gamma most ionising, because most penetrating" fades in and is crossed (caption "more penetrating → less ionising"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "cobalt-60 | emits beta particles and gamma rays | compare: charge, penetration, ionisation". The three table rows are framed in green with a tick as they land (38 px), with β in blue and γ in violet. On "round" the crossed chip is struck in red with a red hand tag "more penetrating → less ionising".
 
 ### 15. attempt 2 (countdown, 10 seconds)
 > Last one. A student claims that human-made radioisotopes give off more dangerous kinds of radiation than natural ones. Evaluate this claim, using one natural and one human-made radioisotope as examples. Pause here to answer.
 
 Visual: `QuestionCard`: "A student claims: 'Human-made radioisotopes give off more dangerous kinds of radiation than natural radioisotopes.' Evaluate this claim, using one natural and one human-made radioisotope as examples. (3 marks)" The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." Nothing answer-bearing (no table).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the smoke alarm and the tree (about 240 px each), untagged. Nothing answer-bearing (no isotope names, no radiation types).
+
 ### 16. feedback 2 (brief)
 > The claim isn't supported. Natural uranium-two-thirty-eight and human-made americium-two-forty-one both give out alpha **particles**. The type of radiation depends on the nucleus, not its origin. How dangerous a source is depends on its type, amount, half-life and how you're exposed. Saying human-made means more dangerous is the **trap**.
 
 Visual: card shrinks to the top. Rows write: "claim not supported"; on "particles" "U-238 (natural): α; Am-241 (human-made): α"; then "radiation type set by the nucleus"; then "hazard: type, amount, half-life, exposure". On "trap" a chip "human-made = more dangerous" fades in and is crossed (caption "same radiation types"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "claim: human-made radiation is a more dangerous kind". On "The claim isn't supported" the answer "not supported" is framed in green with a tick (52 px). The example row carries thumbnails of the ore and the alarm with an orange "α" on each. On "not its origin" the row "radiation type set by the nucleus" is framed in green (38 px). On "trap" the crossed chip is struck in red with a red hand tag "same radiation types".
 
 ### 17. handoff: which element is left?
 > One last thing. Alpha and beta decay change the number of protons, so the nucleus becomes a different element. When uranium-two-thirty-eight gives out an alpha particle, what's left behind? And how do the numbers add **up**? Next time, we'll learn how to balance a nuclear **reaction**.
 
 Visual: board clears to a uranium-238 nucleus labelled "²³⁸₉₂U" at the left. On the second sentence an alpha cluster labelled "⁴₂He" leaves to the right; the remaining nucleus is labelled "?". On "up" a faint arrow writes between them, "²³⁸₉₂U → ? + ⁴₂He", with the top and bottom numbers glowing amber; under it a faint second line "⁵⁹Co + neutron → ⁶⁰Co". On "reaction" the chip writes: "Next: how do we balance a nuclear reaction?". Hold about 2 seconds. This is the final frame (v18 opens on it).
 
-### 18. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The uranium nucleus (about 420 px) is solid from the first frame of the scene. Nothing is added, so the final frame is exactly as described and v18's opening holds. Builders draw the two arrow lines in solid dark ink at 44 px or more (the final frame's "faint" wording is kept only so the join text matches v18).
+
+### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. A radioisotope has an unstable nucleus (wrong neutron-to-proton balance, or too big). It decays, giving out ionising radiation (radiation that can knock electrons off atoms, making ions).
-2. Alpha (α): 2 protons + 2 neutrons (a helium nucleus), charge +2, relative mass 4; the nucleus loses 2 protons. Beta (β): a fast electron made when a neutron changes into a proton; charge −1, mass ≈ 0; the nucleus gains 1 proton. Gamma (γ): a high-energy photon, no charge or mass; protons and neutrons unchanged.
-3. Penetration: α stopped by paper or a few cm of air; β by a few mm of aluminium; γ reduced by several cm of lead. Ionising ability: α > β > γ.
-4. Natural: U-238 (α), C-14 (β), K-40 (β, some γ). Human-made (reactors): Am-241 (α, ionisation smoke alarms), Co-60 (β then γ, radiotherapy, sterilising), Tc-99m (γ, medical imaging). The radiation type is set by the nucleus (its proton and neutron balance and any extra energy, as in Tc-99m), not its origin.
+1. A radioisotope's unstable nucleus decays and gives out ionising radiation.
+2. Alpha: 2 protons + 2 neutrons, charge +2. The nucleus loses 2 protons.
+3. Beta: an electron from a neutron turning into a proton. Gamma: energy only.
+4. Paper stops alpha, aluminium stops beta, lead cuts down gamma.
+5. The nucleus sets the radiation type, not whether it is natural or human-made.
 
-Memory aid (large, on the notes screen): *The more it ionises, the sooner it stops.*
+Memory aid (framed card beside the notes, hand lettering, with the small paper, aluminium and lead diagram in the card): *The more it ionises, the sooner it stops.* Notes 34 px with alpha in orange, beta in blue and gamma in violet; no paragraphs. The whole notes scene runs 45 s.
 
 ## Teaching checks
 
@@ -217,6 +263,8 @@ Model answer: The claim is not supported (1). Natural and human-made radioisotop
 
 Revision 1 count (5 November; build parser rules, scenes joined with a space): **6,249 characters**, 18 scenes. At 13.3 characters per second the speech is about 470 s; add about 3 s for the decay animations in scenes 3 to 5, 2 s for the penetration tracks, 2 s for the scene 12 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 55 s more of the quiet notes hold (about 89 s): **about 559 s**, inside the band and under the cap. Reserve trims: scene 9's last sentence (keep the Lucas Heights tag), scene 11's fourth and fifth sentences (keep the half-life tag), scene 10's last sentence.
 
+Revision 4 (12 Nov 2026): narration unchanged (6,256 characters, 18 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 561 s to about 546 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v17` (route chem-y11-m1-v17; root to confirm). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v17`.
@@ -226,6 +274,8 @@ In order (18 scene headings, all `### N.`): hook, unstable-ionising, alpha, beta
 Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, attempt-1, attempt-2 and key-notes (`hold`). Transitions: 1 to 2 camera push into the nucleus; 2 to 3, 3 to 4, 4 to 5 clear change (one nucleus each; the cards accumulate at the right); 5 to 6 camera pull back to the cards; 6 to 7 camera continue (the absorbers draw under the cards); 7 to 8 clear change; 8 to 9 camera continue (the second column fills); 9 to 10 camera continue; 10 to 11 camera continue; 11 to 12 clear change; attempts and feedback card shrink to the top; 16 to 17 board clear; 17 to 18 fade to the notes board.
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 60 s). Review evidence paths: `checks/c-y11-m1-v17-learning-review.md`, `checks/c-y11-m1-v17-science-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transitions 7 to 8, 8 to 9, 9 to 10 and 10 to 11 are now board changes (natural board, human-made board, two columns, made-to-order board).
 
 ## Assets
 
@@ -240,6 +290,8 @@ Need (new plates, Codex; `y11c-` prefix):
 3. `y11c-lead-shielded-vial-v1.png`: scenes 9, 11. Essential (the technetium row needs a real object, not an icon).
 
 Coded: nuclei and decay bursts, particle cards, the band-of-stability sketch (v08), penetration diagram with absorbers and tracks, ionisation trails, the smoke-alarm chamber cutaway, detector bar, the natural and human-made table, nuclide labels, chips, attempt cards, countdowns, key notes board.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `y11c-smoke-alarm-v1.png`, `y11c-uranium-ore-v1.png`, `y11c-lead-shielded-vial-v1.png`. Existing plates newly used: `public/assets/physics/y12p-absorber-paper-v1.png`, `y12p-absorber-aluminium-v1.png`, `y12p-lead-bricks-v1.png` (thumbnails above the coded absorbers in scene 7); the uranium ore, the tree and the source pot also stand beside the three decay scenes (3, 4, 5); the source pot is the attempt 1 picture and the alarm and tree the attempt 2 picture. Potassium-40 stays a caption card (no plate). New plate requests: none. Simulation: the chance engine for scene 7.
 
 ## Codex asset brief (Year 11 Chemistry M1 v17)
 
@@ -263,6 +315,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling ("ionise").
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v16's final frame and the final frame matches v18's opening.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the chance runs show alpha stopping in the paper, beta in the aluminium and gamma reduced but not stopped by the lead, and carry "model: not measured count rates"; the half-life count "16 → 8" is labelled a model; the absorber thumbnails read as paper, aluminium and lead; the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -309,3 +363,27 @@ Narration: 6,273 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v17-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,256 characters over 18 scenes (the earlier 6,273 included the 17 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v17-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Anchor: the smoke alarm and the tree, large, by about 17 s; each decay type gets a real object beside its nucleus (uranium ore, tree, source pot).
+- Simulation: scene 7's penetration diagram is driven by three chance-engine runs with live "sent", "stopped by" and "through the lead" readouts, labelled as a model.
+- Cuts: scenes 8, 9 and 11 are new stages (natural board, human-made board, made-to-order board) built from large painted objects. Before, one two-column table ran about 153 s through scenes 8 to 11.
+- Hand tags (two or three) and a pen mark in scenes 1 to 5 and 7 to 11; the memory line is a framed card in scene 12.
+- Answers framed in green (scenes 7, 14, 16); crossed slips struck in red with red hand tags; faint and grey items drawn solid; tags with video numbers reworded.
+- Question cards: attempt 1 gains the source pot; attempt 2 gains the alarm and the tree; feedback scenes gain navy givens strips.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the list of six named radioisotopes (kept in scenes 8 and 9) and the charge and mass values for beta and gamma (kept on the cards).
+
+New plate requests: none.
+
+Joins: the opening is v16's final frame, unchanged. The final frame (scene 17) is unchanged word for word, so v18's opening holds.
+
+Counts: 6,256 characters, unchanged; about 561 s to about 546 s.
+
+Calls for root: (1) the chance runs' weights are illustrative; (2) the list of six named radioisotopes is no longer in the key notes; (3) potassium-40 has a caption card and no plate (a banana or soil plate could be commissioned later).

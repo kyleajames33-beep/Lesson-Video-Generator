@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V23: Molecular shape and polarity. How does molecular shape determine whether bond dipoles cancel? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,910 characters (sum of scene strings), 17 scenes, about 527 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,16 @@ Entry knowledge: v21, v14; Stage 5 covalent sharing.
 Stops after: bond dipoles, VSEPR with five shapes and angles, symmetry and polarity, a method and a memory aid. No intermolecular forces, solubility, five- or six-group shapes.
 Handoff: chem-y11-m1-v24, metals bending and conducting.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the water and carbon dioxide models lifted into 3D, scene 1 (about 27 s); (B) one bond dipole, scene 2 (about 32 s); (C) the dipole adder, scene 3 (about 35 s); (D) the group stepper, scene 4 (about 31 s); (E) the shape table with turning models, scenes 5 and 6 (about 73 s; a stage change at scene 6 brings the methane model forward); (F) cancel or add, scenes 7 and 8 (about 38 s); (G) lone pairs break symmetry, scene 9 (about 27 s); (H) identical outer atoms, scene 10 (about 32 s); (I) the method and the memory card, scene 11 (about 30 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 73 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v14; Revision 2 colour roles and type sizes in Decisions): bond dipole arrows orange; overall dipole thick red; lone-pair lobes violet; angle arcs navy; δ− red, δ+ blue; crossed chips red strike.
@@ -79,6 +89,8 @@ Visual: board clears to one C=O bond enlarged, the shared pair shown as blue dot
 > So is the whole molecule polar? Treat each bond dipole as a pull, with a size and a direction, like two ropes tied to one knot. If two equal pulls point in opposite directions, the knot doesn't move. The dipoles cancel, and the molecule is **non-polar**, even though its bonds are polar. If the pulls don't cancel, there's an overall dipole, with one end of the molecule slightly negative and the other slightly **positive**. That's a polar molecule. So we need to know the **shape**.
 
 Visual: a small ring with two orange ropes appears at the right; the dipole adder (simulation, Decisions) fills the centre from the first frame, two equal arrows at 180° with readouts "bond angle 180°" and "overall pull 0.00" (52 px). On the second sentence's "opposite directions" beat the ropes pull left and right, equal length, and the ring stays still. On "non-polar" the two arrows slide tip to tail and close to a grey "0" ring, tag "no overall dipole: non-polar molecule", hand tag "cancel" with a pen ring round "0.00". Then the slider closes the angle live: 180° → 150° → 120° → 90°, the readout climbing 0.00 → 0.52 → 1.00 → 1.41 and a red resultant growing from nothing; on "positive" the thick red resultant is full and the tag "overall dipole: polar molecule" writes; red hand tag "angle closes, pull grows". On "shape" the ring and ropes fade and a chip writes "polar molecule? need the shape" (44 px).
+
+Upgrade (Revision 3): The adder's resultant readout carries the unit label "× one bond dipole" at 30 px beside the 52 px value, at every stop (0.00, 0.52, 1.00, 1.22, 1.41), so no value reads as a measured dipole moment.
 
 ### 4. VSEPR: electron groups spread out
 > Here's the rule that sets the shape. Around a central atom, groups of electrons repel each other, so they spread out as far apart as possible. A group can be a single bond, a double bond, or a lone pair, which is a pair of electrons that isn't shared. This is called VSEPR, short for valence shell electron pair repulsion. Start from the Lewis diagram, and count the electron groups around the central **atom**.
@@ -220,6 +232,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Review evidence paths: `checks/c-y11-m1-v23-learning-review.md`, `checks/c-y11-m1-v23-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (Revision 2, inspected 7 November; uniform scale only):
@@ -245,6 +259,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame against v22's actual final frame (assumed here) and that the final frame matches v24's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -296,3 +312,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plates: none.
 
 Narration: 5,910 characters as the sum of the 17 scene strings (Revision 1: 5,935 as a sum, 5,951 stated with joining spaces); about 527 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v23-rev2-error-check.md`): 0 blockers, 0 new should fix. Its one build note is recorded here: the dipole adder's readout is in units of one bond dipole (1.22 at 104.5° is not water's measured dipole moment).
+
+Changes:
+- Scene 3: the dipole adder readout is labelled "× one bond dipole" (brief 237 build note).
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 23, 24, 37 and 38.

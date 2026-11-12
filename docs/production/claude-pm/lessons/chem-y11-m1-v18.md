@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V18: Balanced nuclear equations. How do we balance a nuclear reaction? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,944 characters (sum of scene strings), 18 scenes, about 527 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -61,6 +61,16 @@ Entry knowledge: v08, v12, v17.
 Stops after: the two conservation rules, notation for five particles, alpha, beta and gamma equations, a human-made neutron-capture reaction, an unknown particle, what changes in the nucleus. No half-life, fission, fusion or positron emission.
 Handoff: chem-y11-m1-v19, ion charges and neutral formulae.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) the uranium ore and the uranium nuclide, scenes 1 and 2 (about 58 s); (B) the particle cards, scene 3 (about 32 s); (C) alpha: the calculation board with the nucleus counter, scene 4 (about 41 s); (D) beta, scenes 5 and 6 (about 44 s); (E) gamma with the lead-shielded vial, scene 7 (about 19 s); (F) the pattern and the uranium-238 chain, scene 8 (about 27 s); (G) cobalt with the source pot, scene 9 (about 28 s); (H) the missing particle with the tree, scene 10 (about 31 s); (I) the change table, scene 11 (about 26 s); (J) the trap, scene 12 (about 20 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 58 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v17): protons red; neutrons grey; electrons and beta particles blue; alpha particles orange (a 2p2n cluster); gamma rays violet wavy arrows; the top row of every nuclide and the top balance row amber ("nucleons"); the bottom row and the bottom balance row teal ("charge"); the element strip ink with the matching box lit; crossed chips red strike. Screen notation: ²³⁸₉₂U, ⁴₂He, ⁰₋₁e, γ (alone), ¹₀n, ¹₁p (mass number top left, atomic number bottom left). Colour roles and type sizes as in Decisions (Revision 2).
@@ -83,7 +93,7 @@ Visual: board clears to a row of particle cards writing in one at a time, each w
 ### 4. alpha decay: uranium-238
 > Let's balance the uranium. On the left, uranium-two-thirty-eight has two hundred and thirty-eight on top, and ninety-two on the **bottom**. On the right, the alpha particle takes four and **two**. So the new nucleus must have two hundred and thirty-eight minus four on top, which is two hundred and thirty-**four**. And ninety-two minus two on the bottom, which is **ninety**. Now, which element has ninety protons? The periodic table says **thorium**. Check both rows. Two thirty-four plus four is two thirty-eight, and ninety plus two is ninety-two. It's **balanced**.
 
-Visual: calculation layout. Task strip: "Alpha decay of uranium-238: find the new nuclide". Equation strip: "²³⁸₉₂U → ? + ⁴₂He" (from scene 1). On "bottom" the left side's numbers fill the bands: amber "238", teal "92". On "two" the alpha card's numbers drop into the right side of the bands: amber "? + 4", teal "? + 2". On "four" the amber row resolves: "238 − 4 = 234" and the "?" takes the top number 234. On "ninety" the teal row resolves: "92 − 2 = 90", and the bottom number 90 writes. The nucleus counter (simulation, Decisions) sits at the left from the scene's first frame, reading "nucleons 238" (amber) and "charge +92" (teal), 52 px. On "four" the orange cluster leaves the counter's nucleus and the nucleon readout ticks 238 → 234; on "ninety" the charge readout ticks +92 → +90. On "thorium" an element strip slides in at the right ("88 Ra, 89 Ac, 90 Th, 91 Pa, 92 U"), the counter's pointer slides from 92 back to 90, the 90 box lights gold, and the "?" becomes "Th": "²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He", framed in a dark-ink box; teal hand tag "2 places back" with a pen arrow along the strip. On "Check both rows" the bands write their sums: amber "238 = 234 + 4", teal "92 = 90 + 2". On "balanced" both bands tick and an ink hand tag "both rows" rings the ticks. The counter is relabelled "thorium-234" and the ore thumbnail gains the tag "uranium → thorium".
+Visual: calculation layout. Task strip: "Alpha decay of uranium-238: find the new nuclide". Equation strip: "²³⁸₉₂U → ? + ⁴₂He" (from scene 1). On "bottom" the left side's numbers fill the bands: amber "238", teal "92". On "two" the alpha card's numbers drop into the right side of the bands: amber "? + 4", teal "? + 2". On "four" the amber row resolves: "238 − 4 = 234" and the "?" takes the top number 234. On "ninety" the teal row resolves: "92 − 2 = 90", and the bottom number 90 writes. The nucleus counter (simulation, Decisions) sits at the left from the scene's first frame, reading "nucleons 238" (amber) and "charge +92" (teal), 52 px. At the same cue ("four") the orange cluster leaves the counter's nucleus and the nucleon readout ticks 238 → 234; at the "ninety" cue the charge readout ticks +92 → +90. On "thorium" an element strip slides in at the right ("88 Ra, 89 Ac, 90 Th, 91 Pa, 92 U"), the counter's pointer slides from 92 back to 90, the 90 box lights gold, and the "?" becomes "Th": "²³⁸₉₂U → ²³⁴₉₀Th + ⁴₂He", framed in a dark-ink box; teal hand tag "2 places back" with a pen arrow along the strip. On "Check both rows" the bands write their sums: amber "238 = 234 + 4", teal "92 = 90 + 2". On "balanced" both bands tick and an ink hand tag "both rows" rings the ticks. The counter is relabelled "thorium-234" and the ore thumbnail gains the tag "uranium → thorium".
 
 ### 5. prediction (countdown, 3 seconds)
 > Quick prediction. Carbon-fourteen gives out a beta particle. What happens to its top number, and to its bottom number? Have a **think**.
@@ -93,7 +103,7 @@ Visual: board clears to the equation strip "¹⁴₆C → ? + ⁰₋₁e" with e
 ### 6. beta decay: carbon-14
 > The top number stays at fourteen, because the beta particle carries away no nucleons. But the bottom number goes up by **one**. Here's why. Inside the nucleus, a neutron turns into a proton and an electron. The electron leaves as the beta particle, but the new proton stays, so the nucleus now has seven **protons**. Seven protons means **nitrogen**. Check the bottom row. Six on the left, and seven plus minus one on the right, which is also **six**. Charge is conserved.
 
-Visual: task strip: "Beta decay of carbon-14: find the new nuclide". The amber row writes "14 = ? + 0, so ? = 14" on the first sentence. On "one" the teal row writes "6 = ? + (−1), so ? = 7", the "−1" glowing. On the third and fourth sentences a carbon-14 nucleus at the left plays v17's swap: one grey neutron glows and turns red, and a blue dot shoots out labelled "⁰₋₁e"; on "protons" the proton counter ticks from 6 to 7. On "nitrogen" the element strip ("5 B, 6 C, 7 N, 8 O") lights 7 and the equation completes: "¹⁴₆C → ¹⁴₇N + ⁰₋₁e". The swap plays on the nucleus counter: its readouts hold "nucleons 14" (amber, hand tag "same") while "charge" ticks +6 → +7 (teal) on "protons", and the pointer slides one box forward. On "six" the teal band writes "6 = 7 + (−1)" and ticks; the amber band "14 = 14 + 0" ticks; the equation is framed; teal hand tag "the −1 balances it" with a pen ring round the "−1".
+Visual: task strip: "Beta decay of carbon-14: find the new nuclide". The amber row writes "14 = ? + 0, so ? = 14" on the first sentence. On "one" the teal row writes "6 = ? + (−1), so ? = 7", the "−1" glowing. On the third and fourth sentences a carbon-14 nucleus at the left plays v17's swap: one grey neutron glows and turns red, and a blue dot shoots out labelled "⁰₋₁e"; on "protons" the proton counter ticks from 6 to 7. On "nitrogen" the element strip ("5 B, 6 C, 7 N, 8 O") lights 7 and the equation completes: "¹⁴₆C → ¹⁴₇N + ⁰₋₁e". The swap plays on the nucleus counter: its readouts hold "nucleons 14" (amber, hand tag "same") while "charge" ticks +6 → +7 (teal) at the "protons" cue, and the pointer slides one box forward. On "six" the teal band writes "6 = 7 + (−1)" and ticks; the amber band "14 = 14 + 0" ticks; the equation is framed; teal hand tag "the −1 balances it" with a pen ring round the "−1".
 
 ### 7. gamma: only energy leaves
 > Gamma rays are the easy case. Technetium-ninety-nine M, from our hospital example, has a nucleus with extra energy. That's what the M **means**. When it gives out a gamma ray, both numbers stay the same, so it's still technetium-ninety-**nine**. Only energy **leaves**.
@@ -104,6 +114,8 @@ Visual: board clears; `y11c-lead-shielded-vial-v1.png` (from v17, about 340 px t
 > So here's the pattern. Alpha takes four off the top and two off the bottom, so the element moves two places back in the periodic **table**. Beta leaves the top alone, and adds one to the bottom, so the element moves one place **forward**. Gamma changes **neither**. You don't need to memorise these, if you remember one line. Top counts nucleons, bottom counts **charge**.
 
 Visual: board clears to a three-row change table beside a longer element strip ("88 Ra to 95 Am" with "5 B to 8 O" as a second strip). The nucleus counter runs the real uranium-238 chain along the strip (simulation; grey tag "uranium-238 decay chain"). On "table" row 1 writes "alpha: top −4, bottom −2", an orange cluster leaves, the readouts tick 238 → 234 and +92 → +90 and the pointer jumps from 92 U back to 90 Th (orange pen arc "−2"). On "forward" row 2 writes "beta: top 0, bottom +1", a blue dot leaves, the charge readout ticks +90 → +91 with the nucleons holding at 234, and the pointer jumps to 91 Pa (blue pen arc "+1"). On "neither" row 3 writes "gamma: no change" with a violet "=", and a violet wavy arrow leaves while both readouts hold. On the fourth sentence a second beta step plays silently: +91 → +92, pointer to 92 U, ink hand tag "uranium again, but uranium-234". On "charge" the memory line writes in a framed card in hand lettering (48 px): amber "Top counts nucleons," teal "bottom counts charge." A small grey tag at the side: "the same two rules balance every nuclear reaction". Hold about 2 seconds.
+
+Upgrade (Revision 3): The uranium-238 chain shows exactly three labelled steps on the nucleus counter: "α" (U-238 to Th-234), "β" (to Pa-234) and "β" (to U-234), each step tagged in its colour at 38 px. The gamma row is illustrated on a separate small nucleus beside the table, labelled "any nucleus with extra energy" in dark ink, with its own two readouts holding; it is not drawn as a fourth step of the chain. The grey tags are dark ink.
 
 ### 9. a human-made reaction: making cobalt-60
 > Now a reaction people make happen. In a nuclear reactor, cobalt-fifty-nine is hit with **neutrons**. When its nucleus absorbs one, the top number goes up by one, from fifty-nine to sixty. The bottom number stays at twenty-seven, because a neutron has no **charge**. So it's still cobalt, just a heavier isotope, cobalt-**sixty**. That's how the cobalt-sixty used in cancer treatment is **made**.
@@ -227,6 +239,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: no stage runs more than about 75 s unchanged (scenes 3 and 4 share the reference strip but the nucleus counter, equation and strip change in scene 4). Review evidence paths: `checks/c-y11-m1-v18-learning-review.md`, `checks/c-y11-m1-v18-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (from v17's set; scaled uniformly only, never stretched; Revision 2 inspected 7 November):
@@ -258,6 +272,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count by script.
 10. Confirm the opening frame equals v17's final frame and the final frame matches v19's opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -309,3 +325,23 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - No new plates: every plate used exists in `public/assets` (uranium ore, smoke alarm, lead-shielded vial, gamma source, tree).
 
 Narration: 5,944 characters as the sum of the 18 scene strings (Revision 1: 5,959 as a sum, 5,976 stated with joining spaces); about 527 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v18-rev2-error-check.md`): 0 blockers, no narration change requested. Its one build attention point is resolved here: scene 8's gamma picture is separated from the decay chain. This session's cue check also found three cue words out of spoken order in the Visual text of scenes 4 and 6 (the same word quoted twice); the second mentions are reworded, with no change to what happens on screen.
+
+Changes:
+- Scene 8: the gamma picture now plays on its own small nucleus, apart from the three labelled chain steps (brief 237 attention point).
+- Scenes 4 and 6: three cue words that were quoted twice are reworded at their second mention ("at the same cue"), so every quoted cue is in spoken order. No on-screen change.
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 26, 37 and 38.

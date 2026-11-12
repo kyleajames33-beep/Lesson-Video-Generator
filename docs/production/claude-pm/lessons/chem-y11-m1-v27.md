@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V27: Solubility. How can attractions explain whether a substance dissolves? (design)
 
-Status: Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md. Needs error check before plates and voicing. Previously Revision 1 (5 November 2026): first design.
+Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,516 characters (sum of scene strings), 16 scenes, about 497 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -64,6 +64,16 @@ Entry knowledge: v26, v23, v22, v03, v06; Stage 5 solutions.
 Stops after: the trade, salt in water and hexane, oil and water, iodine, polar and non-polar parts, silver chloride, the guide not a law, the Module 1 close. No entropy, lattice or hydration energy names, soaps or solubility rules.
 Handoff: chem-y11-m2-v01, conservation of mass.
 
+## Visual upgrade (Revision 3)
+
+Revision 2 already wrote the visual upgrade into each scene's Visual line (anchor, simulation, colour roles, type sizes, hand tags, framed answers, card pictures, givens strips, five key notes, 45 s notes scene). This section tops it up to the same checklist used for Year 11 Physics and Biology. Where a scene has an "Upgrade (Revision 3)" paragraph, it adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Board stages.** (A) three mixtures, scene 1 (about 26 s); (B) the trade ledger, scene 2 (about 39 s); (C) salt in water, scene 3 (about 35 s); (D) salt in hexane, scene 4 (about 19 s); (E) oil and water, scene 5 (about 44 s); (F) iodine, scenes 6 and 7 (about 47 s); (G) the alcohol chain, scene 8 (about 35 s); (H) a guide, not a law, scene 9 (about 32 s); (I) the memory card, scene 10 (about 15 s); question and feedback cards; the handoff; the notes board. No set-up runs past about 47 s, so no cut was needed.
+- **Solid ink, no ghosts.** Every tag, line or object the Visual lines call "grey", "faint", "dim", "dimmed", "ghosted" or "soft" is drawn solid in dark ink (or its role colour) at full strength. A "glow" is a solid highlight or a pen ring, never a blur.
+- **No video numbers on screen.** Where a Visual line tags something with a video code ("v17", "as in v19", "v22's lattice"), the on-screen words say "last time" or "an earlier video", or the tag is dropped. Video codes in these documents are notes for the builder only.
+- **Question cards (confirmed).** Both attempt cards arrive whole with their picture from the first frame and nothing answer-bearing; card sentences are 38 px (Revision 2 said 32 px). Each feedback scene keeps its navy givens strip, frames the answer in green and strikes one classic mistake in red with a red hand tag.
+- **Notes scene.** Five one-line bullets, the framed memory card and a 45 s scene, as Revision 2 set them.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Colour key (continues v26; Revision 2 colour roles and type sizes in Decisions): hydrogen bonds violet dotted; dispersion light blue dotted; ion–dipole orange; Na⁺ purple, Cl⁻ green; δ− red, δ+ blue; crossed chips red strike.
@@ -108,10 +118,14 @@ Visual: the iodine lens: I₂ molecules slip between hexane chains, light blue l
 
 Visual: the alcohol pair: methanol (one carbon) and hexan-1-ol (six carbons) as skeletal models, each O–H ringed violet and the carbon chain shaded light blue. On the second sentence methanol molecules mix into a water lens with violet dots, tag "miscible: mix in any amount". On "water" the hexan-1-ol chain glows, tag "about 6 g per litre (25 °C)", grey Sources tag "PubChem". From "Watch the chain grow" the chain slider (simulation, Decisions) steps from C1 to C6: the model grows, its light blue chain lengthens, and the readout changes "mixes in any amount" (C1 to C3), "about 70 g/L" (C4), "about 22 g/L" (C5), "about 6 g/L" (C6); on "soluble" an arrow writes along it, "bigger non-polar part → less soluble in water" (44 px), light blue hand tag "chain takes over".
 
+Upgrade (Revision 3): Every solubility readout on the chain slider keeps the word "about" (for example "about 70 g/L", "about 22 g/L") and the tag "values from different sources and temperatures" in dark ink at 26 px.
+
 ### 9. a guide, not a law
 > So like dissolves like is a useful guide, but it isn't a law. Silver chloride is ionic, like sodium chloride. Yet only about two thousandths of a gram dissolves in a litre of water, compared with about three hundred and sixty grams of sodium **chloride**. Its ions hold each other so tightly that water's attractions can't pay for pulling them **apart**. So for any prediction, compare the actual attractions that are broken and **formed**.
 
 Visual: two bars: "NaCl about 360 g per litre of water" (tall) and "AgCl about 0.002 g per litre" (a sliver, the scale break marked), on "chloride" both labelled, grey Sources tag "PubChem; CRC". On "apart" a small AgCl lattice lens shows water molecules turning toward it but no ion lifting off; ledger arm tipped. On "formed" a chip "all ionic compounds dissolve in water" fades in and is struck in red, red hand tag "a guide, not a law"; ink hand tag "×180 000" with a pen bracket between the bars.
+
+Upgrade (Revision 3): The sodium chloride bar is labelled "about 360 g per litre of water" in full; the denominator is never shortened to "per litre".
 
 ### 10. one line to remember
 > So here's a line to keep. Dissolving is a trade, and like dissolves like because the trade is **fair**. That's a first prediction. Mixing helps too, because particles naturally spread out when they **mix**.
@@ -218,6 +232,8 @@ Per-scene motion (schema 4): all `motionRole: "explain"` except prediction, atte
 
 Holds: prediction (3 s), attempt-1, attempt-2 (10 s), key-notes (about 45 s quiet). Revision 2: the longest set-up is scenes 3 and 4 on the crystal-edge lens (about 54 s), with the lens swapping from water to hexane. Review evidence paths: `checks/c-y11-m1-v27-learning-review.md`, `checks/c-y11-m1-v27-science-check.md`.
 
+Revision 3: the stage list is in "Visual upgrade (Revision 3)". No transition or hold changed.
+
 ## Assets
 
 Have (inspected 5 November on a paper contact sheet; scaled uniformly only, never stretched):
@@ -255,6 +271,8 @@ Error-only check (report errors; do not restyle or rewrite):
 7. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 8. Confirm the narration character count by script.
 9. Confirm the opening frame equals v26's final frame and the final frame matches `chem-y11-m2-v01`'s opening.
+
+Revision 3, also check: the narration lines are identical to Revision 2; every phrase quoted after "On" is in its scene's narration, in spoken order; the Revision 3 changes listed in the last section say what they claim.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +323,22 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - New plates: none.
 
 Narration: 5,516 characters as the sum of the 16 scene strings (Revision 1: 5,561 as a sum, 5,576 stated with joining spaces); about 497 s with holds. Bold cues quoted in spoken order; no em dashes.
+
+## Revision 3 (12 Nov 2026)
+
+Visual-standard top-up after the brief 237 error check. Visuals and notes for the builder only: no narration line changed (checked by hash against Revision 2).
+
+Findings: Brief 237 error check (`checks/c-y11-m1-v27-rev2-error-check.md`): 0 blockers, 0 new should fix. Its two build notes are recorded here: the alcohol solubilities come from sources at different temperatures and stay labelled "about"; the 360 g figure for sodium chloride is per litre of water, not per litre of solution.
+
+Changes:
+- Scenes 8 and 9: the "about" labels and the "per litre of water" denominator are fixed in the Visual text (brief 237 build notes).
+- New section "Visual upgrade (Revision 3)": the stage list with times, and four standing rules (solid ink with no ghosts, no video numbers on screen, question cards at 38 px, the notes scene).
+- Checked against the Year 11 Physics and Biology upgrade checklist: scene 1 anchor plate, hand tags and pen marks, framed answers with crossed slips, a live simulation with readouts, question cards with pictures and givens strips, five key notes with a framed memory card and a 45 s notes scene, type sizes and colour roles. All were already in Revision 2.
+
+New plate requests: none.
+
+Joins: the opening frame and the final frame are unchanged word for word.
+
+Counts: narration unchanged; the time estimate is unchanged.
+
+Calls for root: none beyond root decisions 29, 37 and 38.

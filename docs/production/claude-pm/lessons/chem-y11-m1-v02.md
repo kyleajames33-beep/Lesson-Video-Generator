@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V02: Melting and boiling as evidence. What can a melting or boiling observation tell us about a sample, and what can't it? (design)
 
-Status: Revision 3 (7 Nov 2026): brief 186 error check clean (root confirmed); headline count restated as the sum of scene strings. Ready to voice. Previously Revision 2 (6 Nov 2026): brief 177 review repairs applied. Needs a Codex error check before voicing. Summary: memory aid now says "check another property" instead of a two-property guarantee. Narration 6,345 characters (joined parser count), about 564.2 s. Previously Revision 1 (5 Nov 2026): first design. Needs independent learning review and science check before voicing.
+Status: Revision 4 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 3 (7 Nov 2026): brief 186 error check clean, headline restated as the sum of scene strings, ready to voice.
 
 Narration 6,330 characters (sum of scene strings; 6,345 with joining spaces; Revision 1 was 6,356 by the joined parser count), 16 scenes, about 564.2 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -63,6 +63,18 @@ Entry knowledge: v01; Stage 5 particle model and changes of state; line graphs.
 Stops after: physical property; sharp transitions and plateaus for pure substances, ranges and slopes for mixtures, each with a particle reason; data read as evidence with its limits (pressure, shared values, two properties); sublimation; physical against chemical evidence.
 Handoff: v03, recovering an insoluble solid and a dissolved solid from one mixture.
 
+## Visual upgrade (Revision 4)
+
+Each scene below keeps its Visual line and gains an "Upgrade (Revision 4)" paragraph. The Upgrade paragraph adds to the Visual and wins wherever the two differ. No narration line changed.
+
+- **Anchor.** The two painted beakers on hotplates (`m8-beaker-hotplate-clear-v1.png` twice, about 460 px wide, with `c8-thermometer-hot-v1.png` in each) are on screen from the first frame, because the video opens on v01's final frame. The question is asked about that real bench: same look, different boiling.
+- **Simulation: the live heating run.** One coded heating model drives everything in scenes 1, 3 and 4 from one clock: the two readouts (52 px), the bubbles, the falling liquid level, a "liquid left" readout and the heating curve all read the same run. Pure water: rise to 100 °C, then flat until the liquid is gone. Salt water: about 101 °C at first boil, drifting to about 102 °C at half volume. Scene 5 runs the same model for samples A and B. Kit gap: a heating-curve engine (temperature against time, with a plateau or a drift set by the lesson) belongs in `src/explainer/sims/`; until it exists the model is coded in the lesson with every on-screen number read from it. The particle views are v01's.
+- **Colour key (fixed for the whole video).** Pure substance, plateau and "physical: same particles" navy; mixture, slope and range amber; a new substance (chemical change) plum; a framed answer green with a green tick; a crossed mistake red with a red hand tag; givens strips navy; "not present" (the missing liquid stage) a slate cross, not red. Hand tags take the colour of the idea they mark. Every tag, chip or label the Visual lines call "grey" is dark ink at full strength.
+- **Type sizes (1080p).** Heading 60 px; readouts, the current rule line and framed answers 52 px, never under 44; question-card sentences 38 px; graph labels, table cells and supporting lines 30 px or more; hand tags 42 px (34 px inside a view or graph); key notes 34 px; nothing a student must read under 26 px.
+- **Board stages and cuts.** (A) two beakers heating, scene 1 (about 38 s); (B) properties board, scene 2 (about 39 s): ice cube, boiling beaker and data card; (C) one beaker close up with a large heating curve, scenes 3 and 4 (about 79 s; the beaker, view and curve all change at scene 4); (D) samples A and B with the graph, scenes 5 and 6 (about 73 s); (E) the unknown white solid, scene 7 (about 34 s); (F) dry ice, scene 8 (about 30 s); (G) ice against magnesium, scene 9 (about 35 s); (H) the two curves and the memory card, scene 10 (about 26 s); question and feedback cards; the handoff beaker; the notes board. Revision 3 kept the two beakers on screen through scenes 1 to 4 (about 156 s); stage B is the new cut.
+- **Question cards.** Each attempt card arrives whole (38 px) with a picture from its first frame and nothing answer-bearing. Each feedback scene keeps a navy givens strip, frames the answer in green and crosses one classic mistake in red.
+- **No coded pictures of real things.** The coded mountain outline in scene 6 is replaced by two readout cards. On-screen tags never show a video number.
+
 ## Script and shots
 
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour key: as `chem-y11-m1-v01.md` (particle colours; pure substances navy, mixtures amber). Graphs: pure substance curve navy, mixture curve amber, plateau and range brackets in ink. Temperatures on screen "°C"; narration says "degrees" (Celsius throughout).
@@ -72,86 +84,117 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 
 Visual: opens on v01's final frame (see "Opening frame"); the "Next" chip fades. A grey tag writes along the bench: "both at normal air pressure". On "on" the hotplate indicator lights glow (coded) and both readouts begin to tick from 25 °C, at the same rate. On "boils" the pure water readout reaches "100 °C" and holds; coded bubbles rise through its liquid; a small heating-curve graph draws at the right in step with the readouts (navy line rising, then flat). On "up" the salt water readout passes 100, settles at "about 101 °C" as bubbles start, then creeps on to "about 102 °C" while its liquid level drops to about half; its amber line on the same graph slopes gently upward (author note a; grey label "example readings"). On "us" the heading writes on: "Melting and boiling: what can they tell us?".
 
+Upgrade (Revision 4): The beakers are about 460 px wide and both readouts are 52 px; the tag "both at normal air pressure" is dark ink. The heating runs as one live model (see "Simulation"), with a "liquid left" readout under each beaker. On "stays at a hundred" a navy hand tag "holds" writes with a pen bracket along the flat part of the navy line. On "keeps creeping up" an amber hand tag "still climbing" writes with a pen arrow along the amber slope. The label "example readings" is dark ink at 30 px.
+
 ### 2. physical properties
 > Boiling point is a physical property. A physical property is something you can measure or observe without turning the substance into a different **substance**. Melting point is the temperature where a solid turns into a liquid. Boiling point is the temperature where a liquid boils, forming gas all the way through it, not just at the **surface**. Density, solubility and electrical conductivity are physical properties too. A pure substance has its own fixed values, which is why chemists can look them up in a data **table**.
 
 Visual: the beakers shrink to the left; the right column writes "physical property: measured without changing the substance" on "substance". On "Melting point" a small ice cube plate (`c9-ice-cube-v1.png`) with a grey chip "melting point: solid → liquid". On "surface" a mini view of the pure water shows bubbles forming deep in the liquid (ringed) beside surface evaporation (grey tag "boiling: gas forms all through the liquid"). On "Density, solubility" three chips write in a row: "density", "solubility", "electrical conductivity". On "table" a coded data-table card slides in: "water: melting point 0 °C, boiling point 100 °C (normal air pressure)", tag "pure substance: fixed values".
+
+Upgrade (Revision 4): Board change to the properties board, solid from the first frame: the ice cube (`c9-ice-cube-v1.png`, about 300 px) at the left, one boiling beaker with its thermometer (about 380 px) at the centre showing bubbles forming deep in the liquid, and the data-table card frame at the right (its rows write on their cue). On "without turning the substance into a different substance" a navy hand tag "same substance afterwards" writes under the definition. On "not just at the surface" an ink hand tag "bubbles from inside" writes with a pen ring round the deep bubbles. On "fixed values" the two values "0 °C" and "100 °C" take a navy pen underline with a navy hand tag "always the same".
 
 ### 3. why the pure water holds at a hundred
 > So why does the pure water stop at a hundred degrees? While it heats, the energy makes the water molecules move faster, so the temperature **rises**. Once it boils, the energy goes into pulling molecules away from their neighbours and out into the gas. Every molecule is the same, so they can all escape at the same temperature, and the temperature stays flat until all the liquid is **gone**. Plot temperature against time and you get a heating curve. A pure substance gives a flat section, called a plateau, at its melting point and at its boiling **point**.
 
 Visual: camera pushes into the pure water beaker; a particle view opens at the liquid surface (v01 particle view, liquid state, all identical H₂O). On "rises" the molecules jiggle faster and the readout ticks up to 100 (replayed fast). On "pulling molecules away" molecules break from the surface into the gas one after another at a steady rate while the readout holds at "100 °C" (ringed); tag "energy separates the molecules". On "gone" the heating curve enlarges at the right: the navy line rises, then runs flat; a bracket marks the flat part. On "heating curve" axes labels write ("temperature (°C)", "time"). On "point" (last) the curve extends backwards for ice: a lower plateau at 0 °C (melting) and the 100 °C plateau (boiling), both bracketed, tag "plateau: fixed temperature".
 
+Upgrade (Revision 4): Board change to the close-up stage: the pure-water beaker (about 520 px) at the left and a large heating curve filling the right half, solid from the first frame. The readout "100 °C" and a "liquid left" readout (100% falling to 0%) are 52 px and read the live run. On "the temperature rises" a navy hand tag "energy → faster molecules" writes beside the rising line. On "all escape at the same temperature" a navy hand tag "all identical: one temperature" writes with a pen ring round the held readout. On "called a plateau" a navy hand tag "flat = plateau" writes on the pen bracket.
+
 ### 4. why the salt water creeps up
 > The salt water behaves differently, because it's a mixture. Only the water molecules escape as gas. The ions from the salt stay behind. So as it boils, the water that's left gets saltier, and saltier water needs a higher temperature to **boil**. That's why its temperature keeps creeping up instead of staying flat. Something similar happens when an impure solid melts. The different particles disrupt its regular arrangement, so it starts melting at a lower temperature, and it melts gradually, over a **range**.
 
 Visual: camera slides to the salt water beaker; its surface particle view opens: water molecules and violet Na⁺ and green Cl⁻ ions. On "escape" only water molecules leave; the ions stay. A small counter "ions per 100 particles in the liquid" ticks up as water leaves (illustrative). On "boil" the readout steps "about 101 °C" to "about 102 °C" as the counter rises, and the amber curve on the graph slopes; tag "saltier water boils at a higher temperature". On "impure solid" the view becomes two small lattices side by side: a pure lattice of identical particles, and a mixed lattice with a few different particles out of place. As a coded readout rises, the pure lattice's particles break loose all at one temperature; the mixed lattice's particles break loose a few at a time over a stretch of temperatures. On "range" a bracket marks the stretch, tag "melting range" (author note f).
+
+Upgrade (Revision 4): The salt-water beaker (about 520 px) replaces the pure-water beaker and its amber curve replaces the navy one at the right; the counter "ions per 100 particles in the liquid" is a live readout at 44 px (model count). On "The ions from the salt stay behind" an amber hand tag "ions stay" writes with a pen ring round one ion. On "saltier water needs a higher temperature to boil" an amber hand tag "saltier → hotter" writes with a pen arrow along the slope. On "over a range" an amber hand tag "starts lower, melts over a range" writes on the bracket.
 
 ### 5. reading melting data
 > Here's how that shows up in data. Sample A melts sharply at three hundred and twenty seven degrees. All of it turns to liquid at that one **temperature**. Sample B starts to soften at sixty degrees, and it isn't fully liquid until eighty, a twenty degree **range**. A sharp melting point is consistent with a pure substance. A melting range is physical evidence that a sample is probably a **mixture**. Candle wax behaves like sample B, because wax is a mixture of many similar **compounds**.
 
 Visual: board clears to two samples: a grey metal lump (`c5-solid-lump-v1.png`) tagged "sample A" and a white waxy block (`m7-paraffin-candle-v1.png` used only as the sample picture at first, tagged "sample B"). A heating-curve graph at the right with both lines drawing live. On "temperature" A's navy line runs flat at 327 °C (bracket "melts at 327 °C"). On "range" B's amber line slopes from 60 °C to 80 °C (bracket "60 °C to 80 °C: a 20 °C range"). On "consistent with a pure substance" a navy chip under A writes "consistent with pure"; on "mixture" an amber chip under B writes "physical evidence: probably a mixture" (correction 3). On "compounds" the candle picture gains its own tag "candle wax: a mixture, melts over a range".
 
+Upgrade (Revision 4): Both sample plates (each about 320 px) and the empty graph axes are on the board from the first frame; a live readout over each sample shows its temperature (52 px). On "at that one temperature" a navy hand tag "sharp" writes on A's flat line. On "a twenty degree range" an amber hand tag "20 °C wide" writes with a pen bracket from 60 °C to 80 °C. The two verdict chips are 44 px in navy and amber.
+
 ### 6. the limits: consistent isn't proof
 > But be careful with the sharp one. Consistent with pure isn't the same as proof of pure. A few mixtures boil at one steady temperature, just like a pure substance, and you'll meet one when we distil ethanol. Boiling points also change with air pressure. High on a mountain, pure water boils below a hundred **degrees**. And one melting point can match more than one substance. So chemists state the pressure, and they check at least two independent properties before they **conclude** anything.
 
 Visual: A's chip "consistent with pure" stays; a second chip "proof of pure" fades in beside it and is crossed (caption "one sharp reading isn't proof"). On "A few mixtures" a small grey card "some mixtures boil at one steady temperature (v04: ethanol and water)". On "degrees" a small inset: a coded mountain outline with a beaker readout "below 100 °C" at the top and "100 °C" at sea level (no exact value). On "one melting point can match" A's "327 °C" sprouts two dashed lines to two "?" boxes. On "conclude" the right column writes the rule: "state the pressure; check at least two independent properties" (amber doodle underline).
+
+Upgrade (Revision 4): On "isn't the same as proof of pure" the chip "proof of pure" is struck in red with a red hand tag "not proof". The card for "A few mixtures" reads "some mixtures boil at one steady temperature (a later video)" in dark ink, with no video number. On "below a hundred degrees" two readout cards replace the mountain outline: "sea level: 100 °C" and "high altitude, lower pressure: below 100 °C" (44 px), with an ink hand tag "pressure matters". On "they check at least two independent properties" an ink hand tag "two checks" writes with the pen underline under the rule line (52 px).
 
 ### 7. two properties: the mystery white solid
 > Here's how that works. A white solid melts sharply at eight hundred and one degrees. Its density is two point one six grams per cubic centimetre, and it dissolves in water. Now check a data **table**. Sodium chloride melts at eight hundred and one degrees and has a density of two point one six. Two independent properties match, and it dissolves, so it's very likely sodium chloride. That's not certain, but it's much stronger evidence than one **number**.
 
 Visual: board clears to a jar of white crystals (`c1-salt-jar-crystals-v1.png`, unlabelled) tagged "unknown white solid". Givens write beside it, grouped with units: "melts sharply at 801 °C", "density 2.16 g cm⁻³", "dissolves in water". On "table" a coded data table writes: "substance, melting point (°C), density (g cm⁻³)": "potassium chloride, 770, 1.98"; "sodium chloride, 801, 2.16"; "sodium carbonate, 851, 2.54" (author note e). On "Sodium chloride melts" the 801 cell glows and is ticked; on "density" the 2.16 cell glows and is ticked; the other rows dim (each fails at least one column). On "number" a chip writes: "two properties match: very likely NaCl (not certain)".
 
+Upgrade (Revision 4): The jar of white crystals (about 380 px) and the navy givens strip ("melts sharply at 801 °C | density 2.16 g cm⁻³ | dissolves in water") are on the board from the first frame. On "Two independent properties match" a green hand tag "2 matches" writes with pen ticks beside the 801 and 2.16 cells. On "it's very likely sodium chloride" the chip "very likely NaCl (not certain)" is framed in green with a tick (52 px). On "one number" a chip "801 °C, so it must be NaCl" fades in and is struck in red, with a red hand tag "one number isn't enough".
+
 ### 8. sublimation
 > Some solids don't melt at all. Dry ice is solid carbon dioxide. At normal air pressure, it turns straight from a solid into a gas at about minus seventy eight degrees, without ever becoming a **liquid**. That change is called sublimation. It isn't melting, because there's no liquid stage. But it's still a sharp change at one temperature, and the particles are carbon dioxide molecules before and **after**.
 
 Visual: board clears to the dry ice plate (`y11c-dry-ice-v1.png`, new: pellets in a shallow dish, no fog) with a readout "about −78 °C" and a grey tag "normal air pressure". A particle view opens: a lattice of CO₂ molecules (charcoal and red) at the surface. On "liquid" molecules leave the lattice straight into widely spaced gas, with no liquid layer forming; a three-box strip writes beside it "solid → liquid → gas" with the middle box crossed and a direct arrow "solid → gas" drawn over it. On "sublimation" the right column writes "sublimation: solid straight to gas". On "after" one CO₂ molecule is ringed in the lattice and the same one ringed again in the gas, tag "same CO₂ molecules".
+
+Upgrade (Revision 4): The dry ice plate (about 420 px wide) is solid from the first frame; the tag "normal air pressure" is dark ink and the readout is 52 px. On "without ever becoming a liquid" the middle box takes a slate cross (not red) with an ink hand tag "no liquid stage". On "sublimation" the right-column line is 52 px. On "before and after" a navy hand tag "same molecules: physical" writes with a pen arrow joining the two ringed molecules.
 
 ### 9. physical or chemical evidence
 > That last point matters. Melting, boiling and sublimation are physical changes. The particles spread out or pack together, but they stay the same particles, so cooling can reverse the **change**. A chemical change makes a new substance. Burn a strip of magnesium, and the shiny metal becomes a white **powder**, magnesium oxide, with completely different properties. So a change of state alone is never evidence of a chemical reaction. You need evidence of a new **substance**.
 
 Visual: left, the ice cube plate with its particle view: an H₂O lattice loosens into liquid; on "change" the view runs backwards (reversal loop) and refreezes; tag "physical: same particles". Right, the magnesium ribbon plate (`p01-mg-ribbon-v1.png`); on "Burn" a coded bright flare (white-yellow, brief) and a cross-fade to `c1-burned-magnesium-v1.png` (white powder on a tile, tongs resting); on "powder" its particle view shows a grey Mg lattice and red O₂ molecules becoming a lattice of alternating magnesium and oxide ions; tag "chemical: new substance, MgO". No reversal loop runs on this side (a small "no way back by cooling" tag). On "substance" (last) the right column writes: "change of state alone: not evidence of a reaction".
 
+Upgrade (Revision 4): Both plates (ice cube and magnesium ribbon, about 300 px each) are on the board from the first frame. On "cooling can reverse the change" a navy hand tag "goes back" writes with a pen loop arrow on the ice view. On "white powder" a plum pen arrow runs from the ribbon to the powder with a plum hand tag "new substance". On "You need evidence of a new substance" the right-column line (44 px) takes a plum pen underline. The tag "no way back by cooling" is dark ink.
+
 ### 10. memory aid
 > Here's a way to keep it straight. Flat hints pure, a slope hints mixture, then check another property. A pure substance holds one temperature while it changes state, so its curve goes **flat**. A mixture's composition changes as it melts or boils, so its curve **slopes**. And because a hint isn't proof, you confirm with a second **property**.
 
 Visual: the two heating curves from scene 5 return side by side at the centre. The handwritten line writes large above them: "Flat hints pure, a slope hints mixture: check another property." On "flat" the navy plateau glows; on "slopes" the amber sloping section glows; on "property" a small second-property chip ("density") clips beside the navy curve. Hold about 2 seconds.
+
+Upgrade (Revision 4): The line sits in a framed memory card (hand lettering, 52 px) above the two curves: navy "Flat hints pure," amber "a slope hints mixture:" ink "check another property." A navy pen bracket marks the plateau on "flat" and an amber pen arrow follows the slope on "slopes".
 
 ### 11. attempt 1 (countdown, 10 seconds)
 > Your turn. Two white solids are heated slowly. Solid X melts completely at one hundred and twenty two degrees, and its temperature stays constant while it melts. Solid Y begins to melt at seventy degrees and is fully liquid at eighty four. Which is more likely to be a mixture, and is it right to say X must be pure? Pause here to answer.
 
 Visual: `QuestionCard` (subject "Chemistry"), worded as printed: "Two white solids, X and Y, are heated slowly at the same rate. Solid X melts completely at 122 °C, and its temperature stays constant while it melts. Solid Y begins to melt at 70 °C and is completely liquid at 84 °C. (a) Which solid is more likely to be a mixture? Justify your answer. (b) A student concludes that solid X must be a pure substance. Evaluate this conclusion." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer." No graphs (nothing answer-bearing).
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries two identical painted watch glasses of white solid (`y11c-watch-glass-salt-v1.png` twice, about 240 px wide), tagged only "X" and "Y". Nothing answer-bearing.
+
 ### 12. feedback 1 (brief)
 > Solid Y is more likely a mixture. It melts over a fourteen degree range, from seventy to eighty **four**. Solid X's sharp melting point is consistent with a pure substance, but on its own it doesn't prove it. Compare it with data, and check a second property, such as density or **solubility**. Writing that X is definitely pure is the slip to **avoid**.
 
 Visual: card shrinks to the top. Row "(a) Y: melts from 70 °C to 84 °C, a 14 °C range: physical evidence of a mixture" (on "four"; "70 °C" and "84 °C" underlined in the card) with a tiny amber sloping curve. Row "(b) X: sharp, consistent with pure; not proof: compare with data, check a second property" (on "solubility") with a tiny navy plateau. On "avoid" a chip "X is definitely pure" fades in and is crossed (caption "consistent with, not proof of"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "X: 122 °C, constant while melting | Y: 70 °C to 84 °C". The answers are framed in green with a tick (52 px): "(a) Y" and "(b) consistent with pure, not proof". On "avoid" the crossed chip is struck in red with a red hand tag "consistent with, not proof of".
 
 ### 13. attempt 2 (countdown, 10 seconds)
 > Last one. At normal air pressure, a white solid turns straight into a gas at about minus seventy eight degrees. When the gas is cooled, the same white solid forms again. Name this change of state. Then evaluate a student's claim that a chemical reaction happened, because a gas was produced. Pause here to answer.
 
 Visual: `QuestionCard`, worded as printed: "At normal atmospheric pressure, a white solid changes directly into a gas at about −78 °C. When the gas is collected and cooled below −78 °C, the same white solid forms again. (a) Name this change of state. (b) A student claims that a chemical reaction has occurred because a gas was produced. Evaluate this claim." The full question stays on screen. Countdown ring for 10 seconds with "Pause here to answer."
 
+Upgrade (Revision 4): The card text is 38 px. From the first frame the card's right side carries the dry ice plate (`y11c-dry-ice-v1.png`, about 260 px wide), untagged. Nothing answer-bearing: the change is not named and no particles are shown.
+
 ### 14. feedback 2 (brief)
 > It's sublimation, a solid turning straight into a gas. And the claim is wrong. The same white solid forms again on cooling, so no new substance was made. The particles are the same before and after, so it's a physical **change**. Producing a gas isn't evidence of a reaction by **itself**.
 
 Visual: card shrinks to the top. Row "(a) sublimation: solid → gas, no liquid" with the three-box strip from scene 8. Row "(b) same solid re-forms: same particles, physical change" ("the same white solid forms again" underlined in the card) on "change", with the scene 8 particle view running forward and back. On "itself" a chip "chemical: a gas formed" fades in and is crossed (caption "a change of state isn't a reaction"). Hold about 1 second.
+
+Upgrade (Revision 4): A navy givens strip sits under the shrunken card: "solid → gas at about −78 °C | cooled: the same white solid again". On "It's sublimation" the answer "(a) sublimation" is framed in green with a tick (52 px). On "so it's a physical change" the answer "(b) physical change: same particles" is framed in green. On "itself" the crossed chip is struck in red with a red hand tag "a gas isn't proof of a reaction". The dry ice plate stays small beside the rows.
 
 ### 15. handoff
 > So properties help us identify a substance. They can also help us separate one. Here's a beaker of muddy, salty water, with sand, salt and water all together. The sand doesn't dissolve, but the salt does. Next time, we'll use that difference to get dry sand and dry salt back out of one **mixture**.
 
 Visual: board clears. The sand and salt water beaker (`y11c-sand-saltwater-beaker-v1.png`, new, shared with v03) slides in at the centre: a layer of sand settled at the bottom, slightly cloudy water above. On "sand doesn't dissolve" a callout to the settled sand: "sand: doesn't dissolve"; on "salt does" a callout to the water: "salt: dissolved". Two goal chips write at the right: "dry sand" and "dry salt". On "mixture" the next chip writes above: "Next: how do we get both back?". This is the final frame (see "Final frame"). Hold about 2 seconds.
 
-### 16. key notes (quiet, hold about 60 seconds)
+Upgrade (Revision 4): The beaker is on the board from the first frame of the scene (it does not slide in). On "They can also help us separate one" an ink hand tag "use the difference" writes above the beaker and clears before the callouts write, so the final frame is exactly as described under "Final frame". Callouts and goal chips are dark ink at 34 px or more.
+
+### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Physical property: measured without changing the substance (melting point, boiling point, density, solubility, conductivity).
-2. Pure substance: sharp, fixed melting and boiling points; flat plateaus on a heating curve. Mixture: changes state over a range; the curve slopes.
-3. A sharp transition is consistent with a pure substance, not proof. State the pressure and check at least two independent properties.
-4. Sublimation: solid straight to gas (dry ice, about −78 °C at normal pressure). Changes of state are physical: same particles. A chemical change makes a new substance.
+1. Physical property: measured without changing the substance.
+2. Pure substance: sharp melting and boiling points; flat plateau on a heating curve.
+3. Mixture: changes state over a range; its curve slopes.
+4. Sharp is consistent with pure, not proof: state pressure, check two properties.
+5. Changes of state (even sublimation) are physical: same particles before and after.
 
-Memory aid (large, on the notes screen): *Flat hints pure, a slope hints mixture: check another property.*
+Memory aid (framed card beside the notes, hand lettering, navy and amber as in scene 10): *Flat hints pure, a slope hints mixture: check another property.* Notes 34 px in the role colours; no paragraphs. The whole notes scene runs 45 s.
 
 ## Opening frame
 
@@ -210,6 +253,8 @@ Checked with Python (5 Nov); Codex to re-check.
 
 Revision 1 count (5 Nov; counted by script with the build parser rules: `### N.` headings, only lines starting "> " counted and joined with a space, bold markers removed): **6,356 characters**, 16 scenes. Characters per scene (1 to 16): 510, 515, 548, 505, 476, 486, 449, 400, 465, 343, 338, 342, 313, 281, 295, 75. At 13.3 characters per second the speech is about 478 s; add about 6 s of settling (the live heating in scene 1 runs partly under the speech; the melting lattices in scene 4; the burn in scene 9), 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s each for the memory-aid and handoff holds and about 55 s more of the quiet notes hold (about 87 s): **about 565 s**, inside the 5,500 to 6,800 character band and under the 570 s cap. Watch scene 1 at playback speed: the readouts must reach 100 °C before "stays at a hundred" and the salt water must visibly creep before "creeping up" (start heating on "on" and run the readouts faster than real time; a small grey "time sped up" tag). Reserve trims if the voiced take runs long: scene 2's "Density, solubility and electrical conductivity are physical properties too." (keep the chips silent); scene 6's mountain sentence (keep the inset silent).
 
+Revision 4 (12 Nov 2026): narration unchanged (6,330 characters, 16 scenes). The notes scene is now 45 s in all (it was about 60 s), so the estimate falls from about 564 s to about 549 s.
+
 ## Scene list and build ids
 
 Lesson key `c-y11-m1-v02` (route chem-y11-m1-v02). Suggested explainer folder `src/explainer/lessons/chem-y11-m1-v02` and build folder `docs/production/claude-pm/lessons/c-y11-m1-v02`.
@@ -219,6 +264,8 @@ In order (kebab-case; 16 scene headings, all `### N.`): hook, physical-propertie
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`: the learner reads the worded question and works during the countdown) and key-notes (`hold`: the learner copies four notes). `design.renderer`: explainer. `design.visualSystem`: Year 11 Chemistry paper board (v01 colour key) with heating-curve graphs. Transitions: 1 to 2 camera pull back (beakers shrink left); 2 to 3 camera push into the pure water; 3 to 4 camera slide to the salt water; 4 to 5 clear change; 5 to 6 camera continue (sample A stays); 6 to 7 clear change; 7 to 8 clear change; 8 to 9 camera continue (the change-of-state strip carries over); 9 to 10 clear change to the two curves; attempts and feedback card shrink to the top; 14 to 15 board clear; 15 to 16 fade to the notes board.
 
 Holds: attempt-1, attempt-2 (10 s countdown after the speech). key-notes is the quiet notes hold (about 60 s). Review evidence paths: `learning_review` = `checks/c-y11-m1-v02-learning-review.md`, `science_check` = `checks/c-y11-m1-v02-chemistry-check.md`.
+
+Revision 4: key-notes hold is 45 s in all. Transition 1 to 2 is a board change to the properties board; 2 to 3 a board change to the close-up stage.
 
 ## Assets
 
@@ -238,6 +285,8 @@ Need (new plates, Codex), in priority order:
 Coded: readouts, hotplate indicator glow, bubbles, liquid level, heating-curve graphs and brackets, particle views, lattices, ion counter, mountain outline, data table, chips and tags, the change-of-state strip, the flare, crossed chips, attempt cards, answer rows, countdowns, key notes board.
 
 Kit gaps: none new (v01's particle view gains a `surface` mode where particles leave the liquid upward at a set rate by kind, and a `lattice melt` mode where lattice particles break loose at given readout values; record both in the v01 kit-gap brief). The heating-curve graph uses the existing coded `lineGraph`, drawn live from the same model that drives the readouts.
+
+Revision 4 (12 Nov 2026). Now delivered and used (confirmed by file listing, not re-inspected): `public/assets/chemistry/y11c-sand-saltwater-beaker-v1.png`, `y11c-dry-ice-v1.png`. Existing plate newly used: `y11c-watch-glass-salt-v1.png` twice on the attempt 1 card; the dry ice plate also on the attempt 2 card. Removed: the coded mountain outline (scene 6). New plate requests: none. Kit gap: a heating-curve engine for `src/explainer/sims/`.
 
 ## Codex asset brief (Year 11 Chemistry M1 v02; plate 1 shared with v03)
 
@@ -261,6 +310,8 @@ Error-only check (report errors; do not restyle or rewrite):
 8. Confirm no em dash (U+2014) anywhere in this file, and Australian spelling.
 9. Confirm the narration character count and per-scene counts by script with the build parser rules.
 10. Report site notes 1 to 3 under Decisions to root for `../site-corrections-chem-y11.md`.
+
+Revision 4 (visuals only), also check: the narration lines are identical to Revision 3; every phrase quoted after "On" in an "Upgrade (Revision 4)" paragraph is in that scene's narration, in spoken order within the paragraph; the new on-screen items contradict nothing spoken (the "liquid left" readouts, the two pressure cards in scene 6, the crossed chip "801 °C, so it must be NaCl" in scene 7); the attempt card pictures give nothing away; every plate named exists.
 
 ## YouTube metadata (draft)
 
@@ -305,3 +356,29 @@ Narration: 6,345 characters (joined parser count: `### N.` headings, lines start
 - Brief 186 error check (`checks/c-y11-m1-v02-rev2-error-check.md`): 0 blockers, 0 should fix. Nothing to resolve.
 - Headline count restated as the sum of scene strings: 6,330 characters over 16 scenes (the earlier 6,345 included the 15 joining spaces). No speech, visual or timing change; the stated duration estimate is kept (it is about 1 s conservative).
 - Bold cues quoted in spoken order; no em dashes (rechecked 7 November).
+
+## Revision 4 (12 Nov 2026)
+
+Visual upgrade to `../maths-visual-standard.md` and the build gate. Visuals only: no narration line changed (checked by hash against Revision 3), so the brief 236 voicing stands.
+
+Findings: the latest error check (`checks/c-y11-m1-v02-rev2-error-check.md`) was clean; nothing to resolve.
+
+Changes:
+- New section "Visual upgrade (Revision 4)"; each scene gains an "Upgrade (Revision 4)" paragraph.
+- Scene 1: the beakers (v01's final frame) are the anchor; readouts at 52 px; hand tags and pen marks on the plateau and the slope.
+- Simulation: one live heating run drives the readouts, bubbles, liquid level, "liquid left" readout and curve in scenes 1, 3, 4 and 5.
+- Cut: scene 2 moves to a properties board (ice cube, boiling beaker, data card). Before, the two beakers stayed on screen for about 156 s. Scenes 3 and 4 use a close-up stage with a large curve.
+- Hand tags (two or three) and a pen mark in scenes 1 to 9; the memory line is a framed card in scene 10.
+- Scene 6: the coded mountain outline is replaced by two readout cards; the tag "v04" becomes "a later video".
+- Scene 7 (worked identification): navy givens strip, answer framed in green, and a new crossed slip "801 °C, so it must be NaCl".
+- Question cards: attempt 1 gains two identical watch glasses of white solid tagged X and Y; attempt 2 gains the dry ice plate; feedback scenes gain navy givens strips and green frames.
+- Key notes: four long items cut to five one-line bullets with the framed memory card; the notes scene is 45 s. Left the board: the list of properties, the dry ice temperature and "a chemical change makes a new substance".
+- Grey tags are now dark ink; type sizes stated; plum added for "new substance".
+
+New plate requests: none.
+
+Joins: the opening is v01's final frame, unchanged. The final frame is unchanged word for word, so v03's opening holds.
+
+Counts: 6,330 characters, unchanged; about 564 s to about 549 s.
+
+Calls for root: (1) a heating-curve engine is a kit gap; (2) the scene 7 crossed slip is new on-screen wording; (3) showing dry ice on the attempt 2 card (the change is not named on it).
