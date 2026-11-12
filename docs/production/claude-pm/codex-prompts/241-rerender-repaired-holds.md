@@ -1,0 +1,27 @@
+# Brief 241: re-render the repaired held videos (v2)
+
+Read `00-standing-rules.md`, brief 239 (the render, check and publish method) and the "Release standard" section of `checks/root-signoff-maths-builds.md`. Do not spawn sub-agents. Make no source, narration or design edits, no new speech and no commits. One render at a time, never alongside voicing.
+
+**Background (root, 12 Nov).** Your normal-speed playback found real defects in videos that root had graded A: 13 Maths videos and Chemistry M8 c05, c08, p04 and g02. They were short collisions, clipped labels and stale or contradictory values that fell between the 16-frame sheet's samples. Root is repairing each one in scene code. Root also now sweeps every video at 1 frame per second before grading A. Root adds a lesson to the list below only after:
+- its repair is graded A on a fresh sheet;
+- its 1 fps sweep is clean.
+
+Each lesson's build notes (`builds/<id>-notes.md`) have a "Repair 12 Nov (Codex hold)" section naming the held moment and its fix. **Check that exact moment first** at native speed.
+
+**Working this list overnight.** Re-read this file after every job. If no unprocessed entry remains, return to your other queued work and check again after it. Root appends entries through the night.
+
+**Per lesson:**
+1. Render **v2**: `--revision=v2`.
+2. Run the full brief 239 check:
+   - the defect scan;
+   - sheet comparison with root's new sheet;
+   - the held moment at native speed;
+   - sampled native playback of the build notes' items;
+   - alignment and captions.
+3. If it passes:
+   - Keep the v1 private upload private (don't delete it).
+   - Upload v2 as public into its playlist position, with the same metadata and SRT. Add it to the focus playlist as well.
+   - Record the result in `status.md`.
+4. If a real defect remains, hold it again with the timestamp and evidence, as before, and continue.
+
+**Ready to re-render (root appends below):**
