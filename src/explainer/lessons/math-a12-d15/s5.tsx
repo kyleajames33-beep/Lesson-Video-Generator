@@ -5,7 +5,7 @@ import {useCurrentFrame} from 'remotion';
 import {Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, FunctionSimulator, FrameSvg, HandTag, KeyNotesBullets, SceneHeading, vis, MATH_STRAND_ACCENT} from '../../math/studio';
 import {cue} from './common';
-import {Am, Chip, CurveLabel, G_J, GREY_INK, SMOOTH, V, VIOLET, WIN_J, gmap, stubLine} from './parts';
+import {Am, Chip, CurveLabelH as CurveLabel, G_J, GREY_INK, SMOOTH, V, VIOLET, WIN_J, gmap, stubLine} from './parts';
 import {AID_MAIN, BoardBadge} from './s4';
 
 // ---------- the handoff picture (parametric in its cue frames; D15FinalFrame shows it complete) ----------

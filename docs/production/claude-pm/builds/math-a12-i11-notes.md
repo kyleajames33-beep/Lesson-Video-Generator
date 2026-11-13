@@ -58,3 +58,7 @@ A on the checker. Root may call these frames B+:
 - frame 7 (scene 5 opening): the lower right is thin until the worked example starts;
 - frame 11 (feedback 1 opening): the left middle is empty for about 5 s above the plan card;
 - the memory aid's icons are small (170 px) beside the 64 px aid lines.
+
+## Probe check 13 Nov
+- Line-through-text probe (`out/explainer/.repair-sweep/ink-check.sh`, 1 fps, three renders) before the render: 13 runs, 5 after fixes. Plot labels now use a local PLabel with a 16 px paper stroke (was i06's, 8 px); inline SVG labels 14 px (parts.tsx, s1.tsx). Accepted: red strike-outs, "(2, ln 2)" for one frame while it moves with the reflection.
+- Sheet re-made because the fixes changed sheet frames: `docs/production/claude-pm/builds/math-a12-i11-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 2 warnings.

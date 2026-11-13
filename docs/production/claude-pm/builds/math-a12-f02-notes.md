@@ -51,3 +51,7 @@ Four sweeps at every 30th frame with the probe, every frame inspected on contact
 
 ## Honest grade
 A on the checker (0 failures). Root may call frames 5 (scene 4: the plot with one row and the chairs card), 10 (scene 8 at frame 481: plot and plan card, rows not yet written) and 13 (attempt 2 card before "Pause") B+. The tin pyramid's first seconds in the handoff show the base with only the top rows (not a sheet frame).
+
+## Probe check 13 Nov
+- Line-through-text probe (`out/explainer/.repair-sweep/ink-check.sh`, 1 fps, three renders) before the render: 12 runs, 10 after fixes. "door: 2 m" moved right of the ruler with a 14 px paper stroke (parts.tsx, shared with f03). Accepted: red strike-outs, a dashed ghost box and the chair plate passing under "door: 2 m" briefly, the selection ring round "n = 1", the kit "no stack of 0 chairs" label, the "0" tick.
+- Sheet re-made because the fixes changed sheet frames: `docs/production/claude-pm/builds/math-a12-f02-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 3 warnings.

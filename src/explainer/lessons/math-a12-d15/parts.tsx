@@ -13,6 +13,7 @@ import {gmap} from '../math-a12-d14/parts';
 import type {GMap} from '../math-a12-d14/parts';
 
 export {AnswerBox, Chip, CurveLabel, Line, Note, P, RecallChip, Ring, gmap, tl} from '../math-a12-d14/parts';
+export {CurveLabelH, Halo, HALO} from '../math-a12-d14/parts'; // Repair 13 Nov: d15 scenes use the dense-halo label
 export type {GMap};
 
 export const VIOLET = MATH_GRADIENT;
@@ -292,7 +293,8 @@ export const BoardCloseUp: React.FC<{x: number; y: number; w: number; h: number;
 					<line x1={w / 2 + 60} y1={h / 2 - 110} x2={w / 2 + 90} y2={h / 2 - 150} />
 				</g> : null}
 			</svg>
-			{title ? <div style={{position: 'absolute', left: 18, top: 10, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 28, letterSpacing: 2, color: INK_SOFT}}>{title}</div> : null}
+			{/* Repair 13 Nov: the close-up title sits on a paper pad; the track and board pass under it */}
+			{title ? <div style={{position: 'absolute', left: 18, top: 10, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 28, letterSpacing: 2, color: INK_SOFT, backgroundColor: '#fbf8f1', borderRadius: 8, boxShadow: '0 0 5px 3px #fbf8f1', padding: '0 6px', marginLeft: -6}}>{title}</div> : null}
 			{children}
 		</div>
 	);
@@ -362,7 +364,7 @@ export const MiniTrack: React.FC<{w: number; h: number; win: Win; fam: Piecewise
 					{pose ? <BoardSprite p={pose.C} deg={pose.deg} len={boardLen} flip={flip} /> : null}
 				</g>
 			</svg>
-			{label ? <div style={{position: 'absolute', left: 14, top: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, color: INK, textShadow: '0 0 6px #fbf8f1, 0 0 10px #fbf8f1'}}>{label}</div> : null}
+			{label ? <div style={{position: 'absolute', left: 14, top: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, color: INK, textShadow: '0 0 6px #fbf8f1, 0 0 10px #fbf8f1', backgroundColor: '#fbf8f1', borderRadius: 8, boxShadow: '0 0 5px 3px #fbf8f1', padding: '0 6px', marginLeft: -6}}>{label}</div> : null}
 		</div>
 	);
 };

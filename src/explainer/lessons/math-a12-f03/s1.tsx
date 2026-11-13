@@ -65,9 +65,12 @@ export const S02: React.FC = () => {
 			<TinFlip bx={bx} by={by} S={S} glow={g} labels={1 - zoom} base={1 - zoom} copy={copy} readouts={{at: k.row, stagger: 3, size: 26, out: k.pyr}} ring={{row: 4, o: vis(fr, k.row + 50, k.pyr, 12)}}
 				arcs={[{a: 1, b: 15, o: vis(fr, k.pair + 10, k.heres, 12)}, {a: 2, b: 14, o: vis(fr, k.now + 10, k.heres, 12)}, {a: 3, b: 13, o: vis(fr, k.down + 20, k.heres, 12)}]} />
 			{fr < k.t120 ? <Row x={96} y={250} at={-30} out={k.t120 - 8} size={52}>1 + 2 + 3 + … + 15 = ?</Row> : null}
+			{/* Probe check 13 Nov: the pair sums sit in a dense paper halo, so the pairing arcs pass behind them */}
+			<div className="rp-pad" style={{textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ')}}><style>{'.rp-pad span, .rp-pad > div:not([style*="inset"]){background-color:#f7f3eb;border-radius:8px;box-shadow:0 0 5px 3px #f7f3eb}'}</style>
 			<Row x={96} y={400} at={k.s1} out={k.copy - 10} size={52} color={TEAL}>1 + 15 = 16</Row>
 			<Row x={96} y={480} at={k.s2} out={k.copy - 10} size={52} color={TEAL}>2 + 14 = 16</Row>
 			<Row x={96} y={560} at={k.down + 20} out={k.copy - 10} size={52} color={TEAL}>3 + 13 = 16</Row>
+			</div>
 			<Hand x={r3.x1 + 18} y={r3.y0 - 8} at={k.up} out={k.heres} size={40} color={AMBER}>+1 per row down</Hand>
 			<Hand x={r13.x1 + 18} y={r13.y0 - 8} at={k.down} out={k.heres} size={40} color={AMBER}>−1 per row up</Hand>
 			<Hand x={1290} y={262} at={k.row + 50} out={k.pyr} size={42} color={INK}>row 4: <span style={{color: BLUE}}>4 blue</span> + <span style={{color: VIOLET}}>12 violet</span> = 16</Hand>
@@ -96,9 +99,9 @@ export const S03: React.FC = () => {
 			<SceneHeading text="Any arithmetic sequence: forwards and backwards" at={4} size={48} />
 			<MiniShape x={96} y={270} S={0.27} />
 			<Hand x={96} y={450} at={0} size={42} color={POS} w={580}>{'the tins: n rows, each row a + aₙ long'}</Hand>
-			<Hand x={L3.x} y={250} at={k.write} size={38} color={BLUE}>forwards</Hand>
+			<div className="rp-pad" style={{textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ')}}><style>{'.rp-pad span, .rp-pad > div:not([style*="inset"]){background-color:#f7f3eb;border-radius:8px;box-shadow:0 0 5px 3px #f7f3eb}'}</style><Hand x={L3.x} y={250} at={k.write} size={38} color={BLUE}>forwards</Hand></div>
 			<Ladder x={L3.x} y={300} cardW={L3.cardW} h={110} gap={L3.gap} size={50} values={TOPV} dropAt={[k.write + 20, k.write + 40, k.write + 60, k.write + 70, k.last + 10]} />
-			<Hand x={L3.x} y={600} at={k.back} size={38} color={VIOLET}>backwards</Hand>
+			<div className="rp-pad" style={{textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ')}}><style>{'.rp-pad span, .rp-pad > div:not([style*="inset"]){background-color:#f7f3eb;border-radius:8px;box-shadow:0 0 5px 3px #f7f3eb}'}</style><Hand x={L3.x} y={600} at={k.back} size={38} color={VIOLET}>backwards</Hand></div>
 			<Ladder x={L3.x} y={480} cardW={L3.cardW} h={110} gap={L3.gap} size={50} color={VIOLET} values={BOTV} dropAt={k.back + 6} stagger={10} />
 			<Arcs x={L3.x} y={300} cardW={L3.cardW} gap={L3.gap} size={38} arcs={[0, 1, 2, 3].map(i => ({from: i, to: i + 1, label: '+d', at: k.up + i * 6}))} />
 			<Arcs x={L3.x} y={480} cardW={L3.cardW} gap={L3.gap} h={110} size={38} arcs={[0, 1, 2, 3].map(i => ({from: i, to: i + 1, label: '−d', at: k.down + i * 6, below: true}))} />

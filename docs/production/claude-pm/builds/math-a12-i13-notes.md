@@ -65,3 +65,7 @@ A on the checker. Root may call these frames B+:
 
 ## Root grade (13 Nov)
 A. Root fixed the scene 5 item: "the question decides" is now the heading inside the decision card, so nothing sits between the total-flow row and the card (checked on a still at frame 5640). Root accepts the other B+ candidates as written: brief build-up moments, and the 30 px readout card.
+
+## Probe check 13 Nov
+- Line-through-text probe (`out/explainer/.repair-sweep/ink-check.sh`, 1 fps, three renders) before the render: 16 runs, 12 after fixes. Local PLabel with a 16 px paper stroke; inline SVG labels 14 px; "4 kW: only an instant" and "kWh: the power bill" on paper pads (parts.tsx, s1.tsx, s2.tsx). Accepted: red strike-outs, single-frame touches on "x = √y" and "4/3 m²" as they enter.
+- Sheet re-made because the fixes changed sheet frames: `docs/production/claude-pm/builds/math-a12-i13-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 1 warnings.

@@ -105,7 +105,7 @@ export const Hallway: React.FC<{pos: number; vel?: number; arrowO?: number; robo
 			{ticks.map(t => <g key={t}><line x1={HX(t)} x2={HX(t)} y1={NLY - 11} y2={NLY + 11} stroke={INK} strokeWidth={3.5} /><text x={HX(t)} y={NLY + 42} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: [0, 16, 20, 36].includes(t) ? INK : SOFT}}>{t < 0 ? '−' + Math.abs(t) : t}</text></g>)}
 			<text x={HX(40) + 34} y={NLY + 10} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: BLUE}}>x</text>
 			<text x={HX(40) - 30} y={NLY + 42} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, fill: SOFT}}>(cm)</text>
-			{origin > 0.01 ? <g opacity={origin}><text x={HX(0) - 14} y={NLY - 16} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: AMBER}} stroke={CARD} strokeWidth={7} paintOrder="stroke">O</text></g> : null}
+			{origin > 0.01 ? <g opacity={origin}><text x={HX(0) - 14} y={NLY - 16} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, fill: AMBER}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">O</text></g> : null}
 			{rests.map((r, i) => r.o > 0.01 ? <g key={i} opacity={r.o}>
 				{r.pulse ? <circle cx={HX(r.x)} cy={NLY} r={14 + 16 * r.pulse} fill="none" stroke={TEAL_STROKE} strokeWidth={4} opacity={1 - r.pulse * 0.6} /> : null}
 				<circle cx={HX(r.x)} cy={NLY} r={13} fill={CARD} stroke={TEAL} strokeWidth={5} />
@@ -196,7 +196,7 @@ export const Stack: React.FC<{x: number; y: number; w: number; win: readonly [nu
 				const [tx, ty] = m.p(pn.titleT, pn.y[1]);
 				return <g key={'c' + i} opacity={pn.o ?? 1}>
 					{b > a ? <g clipPath={`url(#i14-pan-${i})`} opacity={pn.curveO ?? 1}><path d={curvePath(m, pn.fn, a, b)} stroke={pn.color} strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" /></g> : null}
-					<text x={tx} y={ty + 22} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: pn.color}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{pn.title}</text>
+					<text x={tx} y={ty + 22} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: pn.color}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{pn.title}</text>
 				</g>;
 			})}
 			{(() => {const m = ms[last]; return <g>
@@ -233,12 +233,14 @@ export const Column: React.FC<{ms: PanMap[]; t: number; o?: number; label?: stri
 	return <g opacity={o}>
 		{glow > 0 ? <rect x={X - 16} y={top} width={32} height={bot - top} rx={10} fill="#f8e8c8" opacity={0.8 * glow} /> : null}
 		<line x1={X} x2={X} y1={top} y2={bot} stroke={INK_SOFT} strokeWidth={3} strokeDasharray="8 8" />
-		{label ? <text x={X} y={top + 30} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{label}</text> : null}
+		{label ? <text x={X} y={top + 30} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{label}</text> : null}
 	</g>;
 };
 /** Text label in frame space (SVG), stroked on paper. */
+// Repair 13 Nov (Codex hold 2): SVG labels and panel titles here use a 14 px paper stroke (was 7), so the time
+// cursor, curves and lines that pass under a label stop at its edge.
 export const Lbl: React.FC<{x: number; y: number; text: React.ReactNode; color?: string; size?: number; anchor?: 'start' | 'middle' | 'end'; hand?: boolean; o?: number}> = ({x, y, text, color = INK, size = 34, anchor = 'start', hand = false, o = 1}) => (o <= 0.01 ? null :
-	<text x={x} y={y} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{text}</text>);
+	<text x={x} y={y} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{text}</text>);
 
 // ---------- the snow post ----------
 const POST_Y = (D: number) => 1686 - 4.68 * D;
@@ -274,7 +276,7 @@ export const SnowPost: React.FC<{x: number; y: number; h: number; D: number; lab
 			<path d={snow} fill="url(#i14-snow)" stroke="#9fb3c8" strokeWidth={3} />
 			<path d={`M${pl - 60},${ly + 5} L${pl},${ly} L${pr},${ly} L${pr + 60},${ly + 5}`} stroke="#6f8fb0" strokeWidth={5} fill="none" strokeLinecap="round" />
 			{peak > 0.01 ? <line x1={pl - 30} x2={pr + 30} y1={ly} y2={ly} stroke={GREEN} strokeWidth={6} opacity={peak} /> : null}
-			{labels ? [50, 100, 150, 200, 250].map(v => {const [, ty] = F(0, POST_Y(v)); return <g key={v}><line x1={pl - 30} x2={pl - 8} y1={ty} y2={ty} stroke={INK} strokeWidth={3} /><text x={pl - 40} y={ty + 10} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{v === 250 ? '250 cm' : v}</text></g>;}) : null}
+			{labels ? [50, 100, 150, 200, 250].map(v => {const [, ty] = F(0, POST_Y(v)); return <g key={v}><line x1={pl - 30} x2={pl - 8} y1={ty} y2={ty} stroke={INK} strokeWidth={3} /><text x={pl - 40} y={ty + 10} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{v === 250 ? '250 cm' : v}</text></g>;}) : null}
 		</FrameSvg>
 	);
 };

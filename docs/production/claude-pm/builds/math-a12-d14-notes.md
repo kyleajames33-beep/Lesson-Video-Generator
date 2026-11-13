@@ -55,3 +55,13 @@ Hold moment: scene 7, about 4:33 (frame 8208).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d14/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
 - Root follow-up (12 Nov): scene 7 the Plan card no longer cuts the GIVENS card (givens 42 to 36 px, Plan card at y 452 and 32 px; s3.tsx:88, 93, 94) and the x tick "1.50" beside the dashed x = π/2 line is dropped (ticks ½, 1, 2; s3.tsx:106). New after still `work/brief239/d14/repair-12nov/after-8208.png`. Re-swept at 1 fps after the change (no new flags); sheet re-made.
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 12, about 6:46 (frame 12180): the vertical axis ran through the radical in "y = √2".
+- Fix: Label moved right of the normal, above the tangent (s4.tsx, scene 12).
+- Other probe hits fixed: Curve labels use d04's padded CurveLabelH (d14's scenes import it; the re-exported CurveLabel is unchanged for d15 and d16).
+- Other probe hits fixed: A paper pad behind the tags and rows crossed by axes, tangents, leaders or the road: "headlights: the tangent", "height from f", "meets again", "a quarter turn", "run and rise swap", "top of the bend", "same car, same two steps", "point (1, 1);", "no visible bend". Mini-road titles padded.
+- Other probe hits fixed: Scene 4: triangle labels pushed further off their legs ("rise −√3/2" sat on its leg), with a 16 px paper stroke.
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 45 runs before, 12 after. Accepted: red strike-outs on mistake cards, drawn answer rings touching neighbouring text, a single-frame touch on the "meets again" note as it leaves, 4 to 7 px touches.
+- Sheet: `docs/production/claude-pm/builds/math-a12-d14-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 2 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

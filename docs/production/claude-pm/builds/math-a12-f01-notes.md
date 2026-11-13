@@ -61,3 +61,7 @@ Four sweeps of the whole composition at every 30th frame (half scale, with the t
 
 ## Honest grade
 A on the checker (0 failures). Root may call two frames B+: frame 7 (scene 6 at frame 192: the ∑ slots are still empty while the narration introduces sigma, and the lower half holds only "1 + 3 + 5 + 7"), and frame 12 (attempt 1: question card, given card and the blank scoreboard; 56% bare paper, a question scene). Scenes 3 and 9 also run near 50% bare paper in their first seconds (not sheet frames).
+
+## Probe check 13 Nov
+- Line-through-text probe (`out/explainer/.repair-sweep/ink-check.sh`, 1 fps, three renders) before the render: 14 runs, 6 after fixes. Scene 1: the dashed links stop under the t labels, and "positions x (m) at t = 1, 2, 3, 4 s" sits on a paper pad (s1.tsx). Accepted: red strike-outs, scoreboard text on its painted plate, "game over" beside the plate edge, the "0" tick label.
+- Sheet unchanged by the fixes (re-graded PASS WITH WARNINGS: 0 failures, 2 warnings; the new grade stills match the existing sheet), so no new sheet.

@@ -48,3 +48,7 @@ Three sweeps with the probe, every frame inspected. Found and fixed: the copy ne
 
 ## Honest grade
 A on the checker (0 failures). Root may call frames 3 (scene 3: ladders and two cards, 56% bare), 6 and 7 (scenes 5 and 6 at their second rows: one working line and the plan card) and 12 (feedback 1 opener: plan card and slot row) B+; and the lesson is board-heavy in its middle (worked examples 5 to 8 carry no plate, as the design intends).
+
+## Probe check 13 Nov
+- Line-through-text probe (`out/explainer/.repair-sweep/ink-check.sh`, 1 fps, three renders) before the render: 16 runs, 10 after fixes. The pair sums "1 + 15 = 16" to "3 + 13 = 16", "forwards" and "backwards" on paper pads (s1.tsx); "442" and "511" given a paper stroke (s2.tsx). s3.tsx (final-frame wiring, other session) untouched. Accepted: red strike-outs, 4 to 8 px touches on the tin stack numbers.
+- Sheet re-made because the fixes changed sheet frames: `docs/production/claude-pm/builds/math-a12-f03-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 5 warnings.

@@ -5,8 +5,8 @@ import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {EquationStrip, FunctionSimulator, FrameSvg, GivensCard, HandTag, MarkSpan, MistakeCard, SceneHeading, StudioOneSidedSecants, TaskStrip, kf, vis} from '../../math/studio';
 import {cue} from './common';
-import {
-	AMB, AMB_INK, AnswerBox, Am, BandLayer, BoardCloseUp, BoardLayer, BoxCard, CBRT, CORNER, CUSP, Cross, CurveLabel, GREEN, GREY, GREY_INK, JUMP, Legend, Line, MiniTrack, RED, RideBoard, Ring, SMOOTH, Tick, V, VIOLET,
+import {Halo, 
+	AMB, AMB_INK, AnswerBox, Am, BandLayer, BoardCloseUp, BoardLayer, BoxCard, CBRT, CORNER, CUSP, Cross, CurveLabelH as CurveLabel, GREEN, GREY, GREY_INK, JUMP, Legend, Line, MiniTrack, RED, RideBoard, Ring, SMOOTH, Tick, V, VIOLET,
 	crossFrame, fmt3, gmap, piecewiseFamily, ride, stubLine, workedFam,
 } from './parts';
 import type {Stage, TMap, Win} from './parts';
@@ -56,7 +56,7 @@ export const S06: React.FC = () => {
 			<BoardLayer S={G6} win={WIN6} fam={CBRT} board={{X: 0, o: upO, len: 230, upright: true}} clip={false} over={() => <Ring p={O} r={30} />} />
 			<CurveLabel x={M.pt(-1.45, 0)[0]} y={M.pt(0, 1.4)[1]} at={take} size={44} color={INK}>y = ∛x = x<sup style={{fontSize: 28}}>1/3</sup></CurveLabel>
 			<HandTag x={M.pt(0.1, 0)[0]} y={M.pt(0, -1.15)[1]} text="vertical tangent: no gradient" at={vertical + 10} size={42} color={VIOLET} />
-			<HandTag x={M.pt(-1.45, 0)[0]} y={M.pt(0, 0.95)[1]} text="unbroken, looks smooth" at={unbroken + 10} out={butSec + 40} size={42} color={INK} />
+			<Halo><HandTag x={M.pt(-1.45, 0)[0]} y={M.pt(0, 0.95)[1]} text="unbroken, looks smooth" at={unbroken + 10} out={butSec + 40} size={42} color={INK} /></Halo>
 			{/* right column */}
 			<Line x={RX} y={164} at={take} size={52}>(∛h − 0)/h<span style={{opacity: prog(f, power, 12)}}> = h<sup style={{fontSize: 32}}>−2/3</sup></span></Line>
 			<BoxCard x={RX} y={316} w={1000} at={6} out={butSec - 6} size={44} border={VIOLET} title="Differentiable at a (recall)">
@@ -80,8 +80,8 @@ export const S06: React.FC = () => {
 			</div>
 			{f >= cusp - 2 ? <FunctionSimulator x={1470} y={650} width={420} height={290} window={{x: [-1.5, 1.5], y: [-0.5, 1.5]}} family={CUSP} timeline={[{frame: 0, x: 0}]} color={INK} at={cusp} xTicks={[]} yTicks={[]} xLabel="" yLabel=""
 				overlay={g => {const P = g.toFrame(0, 0); const o = prog(f, cusp + 30, 14); return <FrameSvg><g opacity={o}><line x1={P[0]} y1={P[1]} x2={P[0] - 34} y2={P[1] - 150} stroke={VIOLET} strokeWidth={6} strokeLinecap="round" /><line x1={P[0]} y1={P[1]} x2={P[0] + 34} y2={P[1] - 150} stroke={VIOLET} strokeWidth={6} strokeLinecap="round" /></g></FrameSvg>;}} /> : null}
-			<HandTag x={1500} y={725} text="left → −∞" at={cusp + 40} size={34} color={VIOLET} />
-			<HandTag x={1870} y={725} text="right → +∞" at={cusp + 50} size={34} color={VIOLET} anchor="end" />
+			<Halo><HandTag x={1500} y={725} text="left → −∞" at={cusp + 40} size={34} color={VIOLET} /></Halo>
+			<Halo><HandTag x={1870} y={725} text="right → +∞" at={cusp + 50} size={34} color={VIOLET} anchor="end" /></Halo>
 			<HandTag x={RX} y={912} text="corner, cusp, vertical tangent: continuous, not differentiable" at={opposite} size={38} color={INK} />
 		</>
 	);
@@ -182,10 +182,10 @@ export const S08: React.FC = () => {
 			<CurveLabel x={P2[0] + 20} y={P2[1] + 18} at={-30} size={34} color={INK}>(2, 4)</CurveLabel>
 			<HandTag x={M.pt(2.1, 0)[0]} y={M.pt(0, 0.5)[1]} text="gap: the pieces miss" at={hOf + 30} out={bIs} size={36} color={AMB_INK} />
 			<HandTag x={M.pt(2.1, 0)[0]} y={M.pt(0, 0.5)[1]} text="b free: a step again" at={alone + 20} out={alone + 100} size={36} color={RED} />
-			<HandTag x={M.pt(-0.4, 0)[0]} y={M.pt(0, 0.4)[1]} text="same line as the tangent to x² at 2" at={tangentTo} out={alone} size={34} color={GREY_INK} />
+			<Halo><HandTag x={M.pt(-0.4, 0)[0]} y={M.pt(0, 0.4)[1]} text="same line as the tangent to x² at 2" at={tangentTo} out={alone} size={34} color={GREY_INK} /></Halo>
 			{/* the board through the join (equal-unit close-up) */}
 			<BoardCloseUp x={1190} y={250} w={400} h={390} M={Mloc} fam={workedFam(4, -4)} board={{X: Xb, o: 1, len: 300}} k={1} band={{o: 1, ranges: [[0.6, 3.4]], depth: 22}} range={[0.5, 3.5]} at={boardRolls - 10} out={alone} title="CLOSE-UP">
-				<div style={{position: 'absolute', left: 16, bottom: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, color: VIOLET, textShadow: '0 0 6px #f3efe4'}}>angle ≈ 76.0°</div>
+				<div style={{position: 'absolute', left: 16, bottom: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, color: VIOLET, textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #f3efe4`).join(', '), backgroundColor: '#f3efe4', borderRadius: 8, boxShadow: '0 0 5px 3px #f3efe4', padding: '0 6px', marginLeft: -6}}>angle ≈ 76.0°</div>
 			</BoardCloseUp>
 			<HandTag x={1200} y={672} text="no jolt" at={jolt} out={alone} size={40} color={VIOLET} />
 		</>

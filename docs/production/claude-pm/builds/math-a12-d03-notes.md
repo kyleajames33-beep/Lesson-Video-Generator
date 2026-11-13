@@ -61,3 +61,15 @@ Hold moment: scene 2, about 1:11 (root repair: phone text wraps).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d03/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
 - Root follow-up (12 Nov): the scene 7 and scene 13 mistake cards are narrower (1124 to 1040, 1728 to 1640) so they end before the graph's "x" axis label (s2.tsx:185, s4.tsx:45). Re-swept at 1 fps after the change (no new flags); sheet re-made.
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 13 feedback, about 7:12 (frame 12960): the clamped top axis ran through the curve label "y = 2 ln x − 3x".
+- Fix: Label moved to the clear lower left of the plot (s4.tsx, scene 13).
+- Other probe hits fixed: Scene 1: pre-grown "y = ln x" label moved left of its curve; "still climbing" tag and arrow raised above the curve; "4 thousand users: 1.39 weeks" moved below the x-axis, off the curve and the dashed link; "d/dx(ln x) = ln x ?" moved right of the asymptote; small-graph "y = eˣ" moved to the top left.
+- Other probe hits fixed: Scene 2: zoom circle moved level with and left of the point, so neither leader crosses "zoomed ×N".
+- Other probe hits fixed: The stopwatch readout sits in a dial-coloured window, so the hand passes under the digits (parts.tsx, AppRig).
+- Other probe hits fixed: Scenes 4, 5 and 8: "y = ln x" moved off the dashed y = x. Scene 7: "y = ln x" below its curve, "y = eˣ" left of the asymptote. Scene 8: "eˣ (dashed)", "y = 1/x" and "ln x undefined" moved clear of the branches and the chord.
+- Other probe hits fixed: Scene 11: "ln x" between its curve and the axis. Scene 16: "y = ln x" under its curve, "× ?" above both curves.
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 45 runs before, 9 after. Accepted: six red strike-outs on mistake cards, the drawn ring round "x > 0", 4 px touches on the kit triangle label "across 1".
+- Sheet: `docs/production/claude-pm/builds/math-a12-d03-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 7 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

@@ -63,3 +63,12 @@ Hold moment: asset and font guard before rendering ("height 170 below minimum 18
 - Sheet re-made: `docs/production/claude-pm/builds/math-a12-i12-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 3 warnings).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/i12/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 4, about 2:41 (frame 4830): the blue soil curve struck through "area > 0: the soil still moves".
+- Fix: Tag moved below the axis, in the clear lower right of its strip (s1.tsx).
+- Other probe hits fixed: Plot labels share i10's PLabel (16 px paper stroke).
+- Other probe hits fixed: Attempt picture: "x² sin x + 3" given a paper stroke (s3.tsx).
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 13 runs before, 7 after. Accepted: red strike-outs, the kit StudioSymmetryPairs value labels "+0.02", "−0.02" and "+0.11" (a kit item, reported), the final crossfade frame.
+- Sheet: `docs/production/claude-pm/builds/math-a12-i12-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 3 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

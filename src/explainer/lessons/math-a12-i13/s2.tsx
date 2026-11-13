@@ -8,7 +8,7 @@ import {AreaFillLayer, CARD, Card, CardTitle, FrameSvg, GivensStrip, HandTag, Ke
 import {I13FinalFrameStandIn} from '../math-a12-i14/s1';
 import {dur, hold} from './common';
 import {K10, K11, K12, K13, K14, K6, K7, K8, K9} from './cuemap';
-import {AC, AMB, AMB_INK, Attempt, BLUE, Bl, CHANNEL, ChannelRig, Chip, FramedCard, GREEN, GREY, Int, MiniPlot, P, PLabel, RED_INK, SegRow, TEAL, TEAL_SOFT, TrailerPic, VIO, chanArea} from './parts';
+import {Halo, AC, AMB, AMB_INK, Attempt, BLUE, Bl, CHANNEL, ChannelRig, Chip, FramedCard, GREEN, GREY, Int, MiniPlot, P, PLabel, RED_INK, SegRow, TEAL, TEAL_SOFT, TrailerPic, VIO, chanArea} from './parts';
 
 export const AID13 = 'Units up × units across = what you’ve found.';
 const SOFT = '#6f6658';
@@ -38,7 +38,7 @@ const Surface: React.FC<{m: M; h: number; o: number; label?: number}> = ({m, h, 
 	const a = m.p(-r, h), b = m.p(r, h);
 	return <g opacity={o}>
 		<line x1={a[0]} x2={b[0]} y1={a[1]} y2={b[1]} stroke={AMB} strokeWidth={5} strokeDasharray="14 10" />
-		{label > 0.001 ? <text x={m.p(Math.sqrt(h) + 0.12, h)[0]} y={m.p(0, h)[1] + 44} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke" opacity={label}>{`y = ${Number.isInteger(h) ? h : h.toFixed(2)}`}</text> : null}
+		{label > 0.001 ? <text x={m.p(Math.sqrt(h) + 0.12, h)[0]} y={m.p(0, h)[1] + 44} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke" opacity={label}>{`y = ${Number.isInteger(h) ? h : h.toFixed(2)}`}</text> : null}
 	</g>;
 };
 const RX6 = 40, PW = 900;
@@ -70,8 +70,8 @@ export const S06: React.FC = () => {
 					{layersO > 0.001 ? <g opacity={layersO}>{Array.from({length: nLayers}, (_, i) => {const y0 = i / 8, y1 = (i + 1) / 8, len = Math.sqrt((y0 + y1) / 2); const a = m.p(0, y1), b = m.p(len, y0); return <rect key={i} x={a[0]} y={a[1]} width={b[0] - a[0]} height={b[1] - a[1]} fill="rgba(107,79,160,0.16)" stroke={VIO} strokeWidth={2.5} />;})}</g> : null}
 					{(() => {const o = vis(f, k.at, k.one + 20, 12); if (o <= 0.001) return null; const a = m.p(0, 0.52), b = m.p(0.7, 0.46); return <g opacity={o}>
 						<rect x={a[0]} y={a[1]} width={b[0] - a[0]} height={b[1] - a[1]} fill={VIO} opacity={0.75} />
-						<text x={m.p(0.05, 0.6)[0]} y={m.p(0, 0.6)[1]} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIO}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x = √y</text>
-						<text x={b[0] + 14} y={b[1] + 4} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: VIO}} stroke={CARD} strokeWidth={7} paintOrder="stroke">Δy</text>
+						<text x={m.p(0.05, 0.6)[0]} y={m.p(0, 0.6)[1]} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIO}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">x = √y</text>
+						<text x={b[0] + 14} y={b[1] + 4} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: VIO}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">Δy</text>
 					</g>;})()}
 					{(() => {const o = prog(f, k.put, 14); const a = m.p(0, -0.3), b = m.p(0, 2.2); return <line x1={a[0]} x2={b[0]} y1={a[1]} y2={b[1]} stroke={INK} strokeWidth={8} opacity={o} />;})()}
 					<Surface m={m} h={1} o={water} />
@@ -116,9 +116,9 @@ export const S07: React.FC = () => {
 					</g> : null}
 					{(() => {const o = prog(f, k.double + 72, 14); if (o <= 0.001) return null; const a = m.p(-1, 1), b = m.p(1, 1), c = m.p(-Math.SQRT2, 2), d = m.p(Math.SQRT2, 2); return <g opacity={o}>
 						<line x1={a[0]} x2={b[0]} y1={a[1]} y2={b[1]} stroke={INK} strokeWidth={4} />
-						<text x={(a[0] + b[0]) / 2} y={a[1] - 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">2 m</text>
+						<text x={(a[0] + b[0]) / 2} y={a[1] - 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">2 m</text>
 						<line x1={c[0]} x2={d[0]} y1={c[1]} y2={d[1]} stroke={INK} strokeWidth={4} />
-						<text x={(c[0] + d[0]) / 2} y={c[1] - 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">2.83 m</text>
+						<text x={(c[0] + d[0]) / 2} y={c[1] - 14} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">2.83 m</text>
 					</g>;})()}
 					<Surface m={m} h={h} o={1} label={surprise ? 0 : 1} />
 				</>}
@@ -158,7 +158,7 @@ export const S08: React.FC = () => {
 			{rows.map((r, i) => <div key={i} style={{position: 'absolute', left: 130, top: 430 + i * 92, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46, color: INK, opacity: prog(f, r.at, 12), whiteSpace: 'pre'}}>{r.c}</div>)}
 			<div style={{position: 'absolute', left: 130, top: 430 + 4 * 92, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46, color: RED_INK, opacity: prog(f, k.iff, 12), whiteSpace: 'pre'}}><span style={{textDecoration: 'line-through', textDecorationThickness: 4}}>$ × items = ?</span>  ✗</div>
 			<FrameSvg style={{opacity: prog(f, 12, 14)}}><SvgPlate plate={AC} x={1260} y={420} w={540} /></FrameSvg>
-			<HandTag x={1300} y={640} text="kWh: the power bill" at={k.units + 40} size={38} color={BLUE} />
+			<Halo><HandTag x={1300} y={640} text="kWh: the power bill" at={k.units + 40} size={38} color={BLUE} /></Halo>
 			<FrameSvg style={{opacity: prog(f, 20, 14)}}><SvgPlate plate={CHANNEL} x={1320} y={700} w={460} /></FrameSvg>
 			<HandTag x={560} y={900} text="m²: the water’s cross-section" at={k.units + 130} size={38} color={TEAL} />
 		</>
@@ -199,7 +199,7 @@ export const S10: React.FC = () => {
 					<PLabel p={m.p(3, 3.6)} text="36" color={TEAL} size={52} anchor="middle" o={prog(f, k.kg, 12)} />
 					{(() => {const o = prog(f, k.wrong + 70, 12); if (o <= 0.001) return null; const a = m.p(0, 9), b = m.p(6, 0); return <g opacity={o}>
 						<rect x={a[0]} y={a[1]} width={b[0] - a[0]} height={b[1] - a[1]} fill="none" stroke={RED_INK} strokeWidth={4} strokeDasharray="12 9" />
-						<text x={m.p(3, 9.4)[0]} y={m.p(3, 9.4)[1]} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: RED_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">9 × 6 = 54: too much</text>
+						<text x={m.p(3, 9.4)[0]} y={m.p(3, 9.4)[1]} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: RED_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">9 × 6 = 54: too much</text>
 					</g>;})()}
 				</>}
 			</MiniPlot>

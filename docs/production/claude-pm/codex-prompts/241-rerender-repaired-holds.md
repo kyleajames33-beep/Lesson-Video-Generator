@@ -68,3 +68,14 @@ The other four holds (d15, i12, i01, i14) and the paused entries 31 to 35 follow
 - Before this, aₙ, Sₙ, S₁₀, 10⁻³, π and θ fell back to a system font, which was a serif n at heavy weights.
 
 This is an intended source change for every render from now on, including the v3 re-renders. In sheet comparisons, expect small differences in subscript and superscript shapes and in π. Your font scan should now find no serif fallback in those characters; report any it does find.
+
+**Ready to render (root, 14 Nov small hours).** These are swept clean with the line-through-text check and graded A on fresh sheets (`builds/<id>-sheet-repair2-2026-11-13.jpg`). Each notes file has a "Repair 13 Nov (Codex hold 2)" or "Probe check 13 Nov" section listing the held moment, the fix and the accepted remaining hits. Check the held moment first, then run the full brief 239 check. All of these use the new font files.
+23. `math-a12-d15` **v3**: the right panel's formula sits clear of the zoom leader (about 35 s).
+24. `math-a12-i12` **v2** (its first good master): the soil tag sits below the axis (about 161 s).
+25. `math-a12-i14` **v2**: the "same signs: speeding up" chip fades before the jump to t = 1, and the slowing run ends at t = 1.9, so every sign chip matches the live v and a (about 136 s). Also do the scene 2 re-voice from brief 239 entry 28 if it is not done yet.
+26. `math-a12-i11` v1 (brief 239 entry 31, unpaused).
+27. `math-a12-i13` v1 (brief 239 entry 32, unpaused).
+28. `math-a12-f01` v1 (brief 239 entry 33, unpaused).
+29. `math-a12-f02` v1 (brief 239 entry 34, unpaused).
+
+Still waiting: `math-a12-i01` (one small label touch being fixed) and `math-a12-f03` (its final frame now joins f04, which is still being graded).

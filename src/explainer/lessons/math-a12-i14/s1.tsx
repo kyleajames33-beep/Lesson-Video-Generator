@@ -180,7 +180,9 @@ export const S04: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K4;
 	const j1 = k.at25 + 6, j2 = k.compare + 8;
-	const t = fr < j1 ? 2 : fr < j2 ? kf(fr, [[k.further, 2.5], [k.three, 2.9]], false) : kf(fr, [[k.slowing - 20, 1], [k.slowing + 50, 2]], false);
+	// Repair 13 Nov (Codex hold 2): the slowing run ends at t = 1.9, not 2, so the live "v > 0" tag and the
+	// "opposite signs: slowing down" chip never sit on v = 0 (the robot is still heading for rest).
+	const t = fr < j1 ? 2 : fr < j2 ? kf(fr, [[k.further, 2.5], [k.three, 2.9]], false) : kf(fr, [[k.slowing - 20, 1], [k.slowing + 50, 1.9]], false);
 	const robotO = fr < j2 ? jump(fr, j1) : jump(fr, j2);
 	const moving = vis(fr, k.further, k.three + 4) + vis(fr, k.slowing - 20, k.slowing + 52);
 	const colO = fr < j2 ? prog(fr, j1, 12) : 1;
@@ -205,7 +207,9 @@ export const S04: React.FC = () => {
 			</>} />
 			<LiveReadoutBoard x={RX} y={400} width={620} at={-30} inline size={44} labelSize={30} rows={rows(t, ['t', 'x', 'v', 'speed', 'a'], {speed: {glow: [k.speed, k.three + 40]}})} />
 			<Chip x={RX} y={760} at={-30} out={k.three - 6} size={40} color="#8a5a12">{'a < 0 at t = 2.5 s:\nslowing down?'}</Chip>
-			<Chip x={RX} y={760} at={k.three} out={k.down + 6} size={42} color={TEAL}>same signs: speeding up</Chip>
+			{/* Repair 13 Nov (Codex hold 2): this chip describes t = 2.9 (v and a both negative); it left at k.down + 6, long after
+			    the jump to t = 1 (v = +9, a = −12), where it was wrong. It now fades out before the jump. */}
+			<Chip x={RX} y={760} at={k.three} out={j2 - 12} size={42} color={TEAL}>same signs: speeding up</Chip>
 			<Chip x={RX} y={858} at={k.slowing} out={k.down + 6} size={42} color={AMBER}>opposite signs: slowing down</Chip>
 			<div style={{position: 'absolute', left: RX, top: 768, opacity: prog(fr, k.down + 8, 14), background: '#fffdf8', border: `5px solid ${GREEN}`, borderRadius: 18, padding: '10px 26px 14px', boxShadow: '0 12px 26px rgba(40,115,71,0.16)', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 42, color: INK, lineHeight: 1.3, whiteSpace: 'pre'}}>
 				<span style={{color: GREEN}}>v and a same sign:</span> speeding up{'\n'}<span style={{color: GREEN}}>opposite signs:</span> slowing down

@@ -35,11 +35,11 @@ export const S01: React.FC = () => {
 				</StudioPlot>
 				<FrameSvg>
 					{HOOK_VALS.map((v, i) => {const [dx, dy] = dot14(i + 1, v); const pl = vis(fr, k.positions + i * 8, k.seq, 12); return <g key={i}>
-						{pl > 0.01 ? <line x1={dx} y1={dy} x2={960 + i * 200} y2={430} stroke={BLUE} strokeWidth={3} strokeDasharray="8 8" opacity={0.7 * pl} /> : null}
+						{pl > 0.01 ? <line x1={dx} y1={dy} x2={960 + i * 200} y2={470} stroke={BLUE} strokeWidth={3} strokeDasharray="8 8" opacity={0.7 * pl} /> : null}
 						<circle cx={dx} cy={dy} r={12 + 6 * pl} fill={BLUE} stroke="#fffdf8" strokeWidth={4} />
 					</g>;})}
 				</FrameSvg>
-				<div style={{position: 'absolute', left: 900, top: 480, opacity: 1 - prog(fr, k.seq - 10, 12), fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 34, color: POS}}>positions x (m) at t = 1, 2, 3, 4 s</div>
+				<div style={{position: 'absolute', left: 900, top: 480, opacity: 1 - prog(fr, k.seq - 10, 12), fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 34, color: POS, textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', '), backgroundColor: '#f7f3eb', borderRadius: 10, boxShadow: '0 0 5px 3px #f7f3eb', padding: '0 6px', marginLeft: -6}}>positions x (m) at t = 1, 2, 3, 4 s</div>{/* Probe check 13 Nov: dense halo; the dashed links now stop under the t labels (y 470, was 430) */}
 				{['1st', '2nd', '3rd', '4th'].map((s, i) => <div key={s} style={{position: 'absolute', left: 960 + i * 200, top: 238, transform: 'translateX(-50%)', opacity: vis(fr, k.fixed + i * 6, k.cricket - 4, 10), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: AMBER}}>{s}</div>)}
 				<div style={{position: 'absolute', left: 900, top: 560, opacity: vis(fr, k.positions + 40, k.seq - 4, 12), fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44, lineHeight: 1.35, color: INK}}>
 					{HOOK_VALS.map((v, i) => <div key={i} style={{opacity: prog(fr, [279, 294, 317, 339][i], 10)}}><span style={{color: POS}}>at t = {i + 1} s:</span>  x = <span style={{color: BLUE}}>{v < 0 ? '−1' : v}</span> m</div>)}

@@ -9,13 +9,16 @@
 //   its perpendicular to y = x: (x, y) → (y, x)).
 import React from 'react';
 import {useCurrentFrame} from 'remotion';
-import {FONT_DISPLAY, INK} from '../../kit';
+import {FONT_DISPLAY, FONT_HAND, INK} from '../../kit';
 import {CARD, FrameSvg, StudioPlot, SvgPlate, plateMap, usePlatePreload, vis} from '../../math/studio';
 import type {PlateSpec, PlotMap} from '../../math/studio';
 
-export {AnswerBox, Attempt, BoxCard, Chip, FramedCard, GREEN, GREY, Line, MiniPlot, PLabel, RED, Tick} from '../math-a12-i06/parts';
+export {AnswerBox, Attempt, BoxCard, Chip, FramedCard, GREEN, GREY, Line, MiniPlot, RED, Tick} from '../math-a12-i06/parts';
 export {Note, SegRow} from '../math-a12-i01/parts';
 export {Int} from '../math-a12-i08/parts';
+// Probe check 13 Nov: plot labels with a 16 px paper stroke (i06's PLabel uses 8), so curves under a label stop at its edge.
+export const PLabel: React.FC<{p: [number, number]; text: React.ReactNode; color?: string; size?: number; anchor?: 'start' | 'middle' | 'end'; hand?: boolean; o?: number; dx?: number; dy?: number}> = ({p, text, color = INK, size = 36, anchor = 'start', hand = false, o = 1, dx = 0, dy = 0}) => (o <= 0.001 ? null :
+	<text x={p[0] + dx} y={p[1] + dy} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={16} strokeLinejoin="round" paintOrder="stroke">{text}</text>);
 export const BLUE = '#1f6fb2';
 export const AMB = '#9c5a00';
 export const AMB_INK = '#7a4600';
@@ -89,7 +92,7 @@ export const PoolCut: React.FC<{x: number; y: number; w: number; fill?: number; 
 			{concrete > 0.001 ? <polygon points={conc} fill="#f3d9a6" stroke={AMB} strokeWidth={5} opacity={concrete} /> : null}
 			{rect > 0.001 ? <rect x={rx0} y={ry0} width={rx1 - rx0} height={ry1 - ry0} fill="none" stroke={INK} strokeWidth={5} strokeDasharray="14 9" opacity={rect} /> : null}
 			{tags > 0.001 ? <g opacity={tags} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34}}>
-				{([[220, 420, 'wall: y-axis', 'start'], [400, 610, 'floor: y = 0', 'middle'], [960, 470, 'ramp', 'start'], [700, 222, 'surface: y = 1', 'middle']] as const).map(([fx, fy, t, a]) => {const p = P(fx, fy); return <text key={t} x={p[0] + (a === 'start' ? 10 : 0)} y={p[1]} textAnchor={a} fill={INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">{t}</text>;})}
+				{([[220, 420, 'wall: y-axis', 'start'], [400, 610, 'floor: y = 0', 'middle'], [960, 470, 'ramp', 'start'], [700, 222, 'surface: y = 1', 'middle']] as const).map(([fx, fy, t, a]) => {const p = P(fx, fy); return <text key={t} x={p[0] + (a === 'start' ? 10 : 0)} y={p[1]} textAnchor={a} fill={INK} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{t}</text>;})}
 			</g> : null}
 			{children ? children(P) : null}
 		</FrameSvg>

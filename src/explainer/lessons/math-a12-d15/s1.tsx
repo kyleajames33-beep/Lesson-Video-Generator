@@ -7,7 +7,7 @@ import {HandTag, MarkSpan, SceneHeading, StudioOneSidedSecants, smooth, vis, zoo
 import {D14FinalFrame} from '../math-a12-d14/s5';
 import {cue} from './common';
 import {
-	BLUE, BandLayer, BoardCloseUp, BoardLayer, BoxCard, Bl, CORNER, Chip, CurveLabel, G_J, GREY, JoltMarks, Legend, Line, RED, RecallChip, RideBoard, Ring, SMOOTH, TEAL, Tl, TrackView, V, VIOLET, WIN_H, WIN_J,
+	BLUE, BandLayer, BoardCloseUp, BoardLayer, BoxCard, Bl, CORNER, Chip, CurveLabelH as CurveLabel, G_J, GREY, JoltMarks, Legend, Line, RED, RecallChip, RideBoard, Ring, SMOOTH, TEAL, Tl, TrackView, V, VIOLET, WIN_H, WIN_J,
 	Am, crossFrame, gmap, hAt, lerpStage, mixHex, ride, shakeAt, trackSlope,
 } from './parts';
 import type {Stage} from './parts';
@@ -48,7 +48,9 @@ const HookPanel: React.FC<{S: Stage; right: boolean; t: number; ink: number; ban
 					<JoltMarks p={M.pt(1, 1)} o={p.joltO} r={40} />
 				</>} />
 			<CurveLabel x={M.pt(0.15, 0)[0]} y={M.pt(0, -0.45)[1]} at={-60} size={38} color={BLUE} opacity={p.d14LabelO}>{p.right ? 'x², then x' : 'x², then 2x − 1'}</CurveLabel>
-			<div style={{position: 'absolute', left: M.pt(-0.92, 0)[0], top: M.pt(0, 2.12)[1], fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: INK, lineHeight: 1.25, whiteSpace: 'pre', textShadow: '0 0 6px #fffdf8, 0 0 12px #fffdf8'}}>
+			{/* Repair 13 Nov (Codex hold 2): the right panel's upper zoom leader ran through "x, x > 1" at the top left;
+			    its formula now sits in the empty lower right of the panel, under the line and clear of both leaders. */}
+			<div style={{position: 'absolute', left: M.pt(p.right ? 1.21 : -0.92, 0)[0], top: M.pt(0, p.right ? 0.74 : 2.12)[1], fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: INK, lineHeight: 1.25, whiteSpace: 'pre', textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ')}}>
 				<div style={{opacity: prog(useCurrentFrame(), p.formulaAt, 12)}}>x², x ≤ 1</div>
 				<div style={{opacity: prog(useCurrentFrame(), p.formulaAt + 40, 12)}}>{p.right ? 'x, x > 1' : '2x − 1, x > 1'}</div>
 			</div>
@@ -150,7 +152,7 @@ export const S02: React.FC = () => {
 				<div style={{fontSize: 40, color: VIOLET}}>test: secants from P, from both sides</div>
 			</BoxCard>
 			<BoardCloseUp x={RX} y={500} w={1000} h={430} M={M} fam={SMOOTH} board={{X: 1.02, o: 1, len: 0.9 * M.sx}} k={1.75} band={{o: 1, ranges: [[-0.8, 2.6]]}} range={[-0.8, 2.8]} at={-30} out={ifThose - 10} title="CLOSE-UP: THE BOARD AT THE JOIN">
-				<div style={{position: 'absolute', right: 22, bottom: 14, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: VIOLET, textShadow: '0 0 6px #f3efe4, 0 0 10px #f3efe4'}}>one tangent here?</div>
+				<div style={{position: 'absolute', right: 22, bottom: 14, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: VIOLET, textShadow: '0 0 6px #f3efe4, 0 0 10px #f3efe4', backgroundColor: '#f3efe4', borderRadius: 8, boxShadow: '0 0 5px 3px #f3efe4', padding: '0 6px', marginLeft: -6}}>one tangent here?</div>
 			</BoardCloseUp>
 			<Line x={RX} y={330} at={right} size={44}><Tl>h → 0 from the right:  h &gt; 0</Tl></Line>
 			<Line x={RX} y={396} at={left} size={44}><Bl>h → 0 from the left:  h &lt; 0</Bl></Line>

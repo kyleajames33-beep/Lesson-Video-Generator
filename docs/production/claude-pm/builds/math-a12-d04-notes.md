@@ -56,3 +56,12 @@ Hold moment: scene 4, about 2:32 (root repair: rise label left of the leg).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d04/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
 - Root follow-up (12 Nov): scene 9 the small log₂ graph moves to y 690 and 300 px high, below the pitch card, so its "y" label is clear (s3.tsx:23). Re-swept at 1 fps after the change (no new flags); sheet re-made.
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 8, about 5:06 (frame 9180): the log base ½ curve crossed its own label "y = log½ x".
+- Fix: Label moved into the clear band above its curve (s2.tsx, scene 8).
+- Other probe hits fixed: d04's own curve labels use CurveLabelH (opaque paper pad and dense halo, new in parts.tsx). The exported CurveLabel is unchanged for d05, d08, d09, d12 and d13.
+- Other probe hits fixed: A paper pad (Halo wrapper) behind the kit tags crossed by curves, axes or plate edges: "× ?", "× 2 frequency", "× 10 power", "power × 10", "shoots up", "slope here?", "ln a < 0: it flips", "downhill". "¼ as much" and "1/x at work" moved off the brace; the bels label raised off the x-axis.
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 66 runs before, 14 after. Accepted: red strike-outs on mistake cards, the drawn answer rings round "1.44" and "10.492", 4 to 5 px touches.
+- Sheet: `docs/production/claude-pm/builds/math-a12-d04-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 14 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

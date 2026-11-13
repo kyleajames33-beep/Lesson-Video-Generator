@@ -6,8 +6,8 @@ import {FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, Card, CardTitle, FrameSvg, FunctionSimulator, GivensStrip, HandTag, MarkSpan, MistakeCard, QuestionCard, RolesOn, TaskStrip, vis} from '../../math/studio';
 import {AnswerStack} from '../math-a12-d14/parts';
 import {cue, hold} from './common';
-import {
-	A1FAM, A2FAM, AMB, AMB_INK, Am, AnswerBox, BoardSprite, CORNER, CurveLabel, GREEN, GREY, JUMP, Line, MiniTrack, P, Ring, SMOOTH, TEAL, Tick, V, VIOLET, Band,
+import {Halo, 
+	A1FAM, A2FAM, AMB, AMB_INK, Am, AnswerBox, BoardSprite, CORNER, CurveLabelH as CurveLabel, GREEN, GREY, JUMP, Line, MiniTrack, P, Ring, SMOOTH, TEAL, Tick, V, VIOLET, Band,
 	gmap, stubLine,
 } from './parts';
 import type {TMap, Win} from './parts';
@@ -210,7 +210,7 @@ export const S13: React.FC = () => {
 			<CurveLabel x={M.pt(-1.45, 0)[0]} y={M.pt(0, 3.9)[1]} at={-30} size={38} color={INK}>y = f(x)</CurveLabel>
 			<CurveLabel x={P0[0] - 140} y={P0[1] - 70} at={e0} size={36} color={INK}>(0, 1)</CurveLabel>
 			<CurveLabel x={M.pt(-1.45, 0)[0]} y={M.pt(0, 2.75)[1]} at={lineIs + 10} size={34} color={VIOLET}>one tangent,<br />gradient 2</CurveLabel>
-			<HandTag x={M.pt(0.2, 0)[0]} y={M.pt(0, 0.45)[1]} text="miss by 1" at={miss} size={40} color={AMB_INK} />
+			<Halo><HandTag x={M.pt(0.2, 0)[0]} y={M.pt(0, 0.45)[1]} text="miss by 1" at={miss} size={40} color={AMB_INK} /></Halo>
 		</>
 	);
 };

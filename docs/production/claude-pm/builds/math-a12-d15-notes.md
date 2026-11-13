@@ -59,3 +59,13 @@ Hold moment: scene 13 feedback 2, about 7:35 (frame 13671).
 - Sheet re-made: `docs/production/claude-pm/builds/math-a12-d15-sheet.jpg` (the grade checker's 16 sheet stills, no stamps). `npm run grade:explainer`: PASS WITH WARNINGS (0 failures, 3 warnings).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/d15/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 1, about 0:35 (frame 1050): the upper dashed zoom leader struck through the right panel's "x, x > 1".
+- Fix: The right panel's formula moved to the empty lower right of its panel, clear of both leaders (s1.tsx).
+- Other probe hits fixed: Curve labels use the padded CurveLabelH (through d14); the CurveLabel re-exported to d16 is unchanged.
+- Other probe hits fixed: A paper pad behind the tags crossed by axes and lines: "same direction", "continuous, not differentiable", "both gradients 2", "the pieces don't meet", "unbroken, looks smooth", "left → −∞", "right → +∞", "same line as the tangent", "miss by 1".
+- Other probe hits fixed: Close-up panel titles ("CLOSE-UP: SECOND TRACK") and the "angle ≈" readouts sit on paper pads; the track and board pass under them (parts.tsx, s1 to s3).
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 64 runs before, 20 after. Accepted: the final crossfade frame at 8:50 (the notes text over the next frame), 4 to 9 px touches.
+- Sheet: `docs/production/claude-pm/builds/math-a12-d15-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 3 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

@@ -6,8 +6,8 @@ import {useCurrentFrame} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {HandTag, MistakeCard, SceneHeading, StudioOneSidedSecants, vis} from '../../math/studio';
 import {cue} from './common';
-import {
-	AMB, AMB_INK, AnswerBox, Am, BandLayer, BoardCloseUp, BoardLayer, BoxCard, Bl, Chip, CurveLabel, G_J, GREY, GREY_INK, JUMP, JoltMarks, Legend, Line, RED, Ring, SMOOTH, TEAL, Tl, V, VIOLET, WIN_J,
+import {Halo, 
+	AMB, AMB_INK, AnswerBox, Am, BandLayer, BoardCloseUp, BoardLayer, BoxCard, Bl, Chip, CurveLabelH as CurveLabel, G_J, GREY, GREY_INK, JUMP, JoltMarks, Legend, Line, RED, Ring, SMOOTH, TEAL, Tl, V, VIOLET, WIN_J,
 	crossFrame, deg1, fmt3, gmap, piecewiseFamily, ride, shakeAt, stubLine, swingFam, trackSlope,
 } from './parts';
 import type {BoardState, Win} from './parts';
@@ -21,7 +21,7 @@ const RideCloseUp: React.FC<{fam: Parameters<typeof trackSlope>[0]; X: number; s
 	const m = trackSlope(fam, X);
 	return (
 		<BoardCloseUp x={1430} y={y} w={450} h={400} M={M_J} fam={fam} board={{X, o: 1, len: BOARD_J, shake}} k={1.75} band={{o: 1, ranges: [[-0.8, 2.6]]}} range={[-1, 2.8]} at={at} out={out} title="CLOSE-UP" jolt={jolt}>
-			<div style={{position: 'absolute', left: 18, bottom: 10, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: VIOLET, textShadow: '0 0 6px #f3efe4, 0 0 10px #f3efe4'}}>angle ≈ {deg1(m)}</div>
+			<div style={{position: 'absolute', left: 18, bottom: 10, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: VIOLET, textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #f3efe4`).join(', '), backgroundColor: '#f3efe4', borderRadius: 8, boxShadow: '0 0 5px 3px #f3efe4', padding: '0 6px', marginLeft: -6}}>angle ≈ {deg1(m)}</div>
 		</BoardCloseUp>
 	);
 };
@@ -54,7 +54,7 @@ export const S03: React.FC = () => {
 				{arrO > 0.001 ? <g opacity={arrO}>{arrow(-1)}{arrow(1)}</g> : null}
 			</>} />
 			<CurveLabel x={Pp[0] + 30} y={Pp[1] + 20} at={-30} size={42} color={INK}>P(1, 1)</CurveLabel>
-			<HandTag x={M_J.pt(-0.42, 0)[0]} y={M_J.pt(0, 2.3)[1]} text="same direction" at={direction + 8} size={46} color={VIOLET} />
+			<Halo><HandTag x={M_J.pt(-0.42, 0)[0]} y={M_J.pt(0, 2.3)[1]} text="same direction" at={direction + 8} size={46} color={VIOLET} /></Halo>
 			<HandTag x={M_J.pt(1.2, 0)[0]} y={M_J.pt(0, 0.1)[1]} text="no jolt" at={jolt} size={46} color={VIOLET} />
 			{/* right column */}
 			<BoxCard x={RX} y={156} at={-30} size={44} title="Givens">f(x) = x² for x ≤ 1,  2x − 1 for x &gt; 1</BoxCard>
@@ -104,7 +104,7 @@ export const S04: React.FC = () => {
 			<CurveLabel x={Pp[0] + 120} y={Pp[1] - 100} at={twoFrom + 12} size={40} color={VIOLET}>gradient 1</CurveLabel>
 			<CurveLabel x={Pp[0] + 30} y={Pp[1] + 24} at={-30} size={42} color={INK}>(1, 1)</CurveLabel>
 			<CurveLabel x={M_J.pt(1.75, 0)[0]} y={M_J.pt(0, 2.42)[1]} at={50} size={32} color={GREY_INK}>last join</CurveLabel>
-			<HandTag x={M_J.pt(-0.42, 0)[0]} y={M_J.pt(0, 2.3)[1]} text="continuous, not differentiable" at={unbroken + 30} out={track} size={42} color={INK} />
+			<Halo><HandTag x={M_J.pt(-0.42, 0)[0]} y={M_J.pt(0, 2.3)[1]} text="continuous, not differentiable" at={unbroken + 30} out={track} size={42} color={INK} /></Halo>
 			<HandTag x={M_J.pt(-0.42, 0)[0]} y={M_J.pt(0, 2.3)[1]} text="corner = jolt" at={instant + 4} size={46} color={VIOLET} />
 			{/* right column */}
 			<BoxCard x={RX} y={156} at={-30} size={44} title="Givens">g(x) = x² for x ≤ 1,  x for x &gt; 1</BoxCard>
@@ -162,8 +162,8 @@ export const S05: React.FC = () => {
 			<CurveLabel x={A[0] + (secStage ? -44 : 24)} y={A[1] + (secStage ? -52 : 8)} at={oneOne} size={40} color={INK} anchor={secStage ? 'end' : 'start'}>f(1) = 1</CurveLabel>
 			<CurveLabel x={Bt[0] - 108} y={(A[1] + Bt[1]) / 2 - (secStage ? 70 : 26)} at={two} size={40} color={AMB_INK}>jump</CurveLabel>
 			<CurveLabel x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 4.25)[1]} at={-30} size={40} color={INK}>y = x², then y = 2x</CurveLabel>
-			<HandTag x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 3.45)[1]} text="both gradients 2" at={itsGrad + 10} out={look} size={44} color={VIOLET} />
-			<HandTag x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 2.75)[1]} text="the pieces don't meet" at={step + 10} out={look} size={44} color={AMB_INK} />
+			<Halo><HandTag x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 3.45)[1]} text="both gradients 2" at={itsGrad + 10} out={look} size={44} color={VIOLET} /></Halo>
+			<Halo><HandTag x={M5.pt(-0.42, 0)[0]} y={M5.pt(0, 2.75)[1]} text="the pieces don't meet" at={step + 10} out={look} size={44} color={AMB_INK} /></Halo>
 			{/* right column */}
 			<BoxCard x={RX} y={156} at={-30} size={44} title="Givens">f(x) = x² for x ≤ 1,  2x for x &gt; 1</BoxCard>
 			<BoxCard x={RX} y={300} at={6} out={contAt} size={44} title="Question">gradients match, but do the pieces meet?</BoxCard>

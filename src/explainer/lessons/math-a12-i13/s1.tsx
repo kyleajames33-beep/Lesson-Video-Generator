@@ -7,7 +7,7 @@ import {FONT_DISPLAY, FONT_HAND, INK, prog} from '../../kit';
 import {AreaFillLayer, CARD, Card, CardTitle, EquationStrip, HandTag, LiveReadoutBoard, MistakeCard, RiemannLayer, SceneHeading, StudioPlot, TaskStrip, fnPath, kf, smooth, vis} from '../../math/studio';
 import {I12FinalFrame} from '../math-a12-i12/s3';
 import {K1, K2, K3, K4, K5} from './cuemap';
-import {ACRig, AMB, AMB_INK, BLUE, Bl, Chip, E, GREEN, GREY, Int, Note, P, PLabel, RED_INK, SegRow, TEAL, VIO, cost, costSoFar, dam, damNet, damTotal, leftSum} from './parts';
+import {Halo, ACRig, AMB, AMB_INK, BLUE, Bl, Chip, E, GREEN, GREY, Int, Note, P, PLabel, RED_INK, SegRow, TEAL, VIO, cost, costSoFar, dam, damNet, damTotal, leftSum} from './parts';
 
 const G = {x: 40, y: 150, w: 1100, h: 800};
 const WIN = {x: [-0.6, 12.8] as [number, number], y: [-0.5, 4.8] as [number, number]};
@@ -79,7 +79,7 @@ export const S02: React.FC = () => {
 					<PLabel p={m.p(3.25, -0.42)} text="Δt h" size={36} anchor="middle" o={vis(f, k.over + 20, k.add, 12)} />
 				</>;}}
 			</PowerPlot>
-			<HandTag x={790} y={318} text="4 kW: only an instant" at={k.less + 20} out={k.take - 6} size={40} color={AMB_INK} />
+			<Halo><HandTag x={790} y={318} text="4 kW: only an instant" at={k.less + 20} out={k.take - 6} size={40} color={AMB_INK} /></Halo>
 			<ACRig x={RX} y={170} w={690} t={t} />
 			<Card x={RX} y={470} w={690} at={k.less + 10} out={k.over - 8} pad="14px 26px 16px">
 				<CardTitle>less, because</CardTitle>

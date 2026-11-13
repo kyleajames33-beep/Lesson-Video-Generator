@@ -65,8 +65,8 @@ export const S02: React.FC = () => {
 				{m => {const hi = n === 5 ? 2 : undefined; const y0 = 2 / 5; const L = Math.exp(y0); const a = m.p(0, y0), b = m.p(L, y0 + 0.2); return <>
 					<Sideways m={m} g={Math.exp} c={0} d={1} n={n} hi={hi} />
 					{hi !== undefined ? <>
-						<text x={b[0] + 14} y={(a[1] + b[1]) / 2 + 12} opacity={prog(f, k.each, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: AMB_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">Δy</text>
-						<text x={(a[0] + b[0]) / 2} y={b[1] - 12} textAnchor="middle" opacity={prog(f, k.its, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: TEAL}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x</text>
+						<text x={b[0] + 14} y={(a[1] + b[1]) / 2 + 12} opacity={prog(f, k.each, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">Δy</text>
+						<text x={(a[0] + b[0]) / 2} y={b[1] - 12} textAnchor="middle" opacity={prog(f, k.its, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: TEAL}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">x</text>
 					</> : null}
 					<PLabel p={m.p(0.1, 1.9)} text={`Σ x Δy ≈ ${sum.toFixed(2)}  (n = ${n})`} size={36} color="#4f4840" o={prog(f, k.thinner, 12)} />
 					<PLabel p={m.p(1.6, 1.25)} text="y = ln x" color={BLUE} size={40} />
@@ -149,8 +149,8 @@ export const S04: React.FC = () => {
 			</SquareGraph>
 			<PoolCut x={RX} y={150} w={1090} layers={5} concrete={conc * (0.35 + 0.65 * prog(f, k.other, 14))} rect={prog(f, k.draw, 12)}>
 				{P => {const w = P(560, 450), c = P(1180, 520); const o = prog(f, k.ramp, 12); return <g opacity={o} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40}}>
-					<text x={w[0]} y={w[1]} textAnchor="middle" fill="#2f6f8f" stroke={CARD} strokeWidth={7} paintOrder="stroke">1.72 m²</text>
-					<text x={c[0]} y={c[1]} textAnchor="middle" fill={AMB_INK} stroke={CARD} strokeWidth={7} paintOrder="stroke">1.00 m²</text>
+					<text x={w[0]} y={w[1]} textAnchor="middle" fill="#2f6f8f" stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">1.72 m²</text>
+					<text x={c[0]} y={c[1]} textAnchor="middle" fill={AMB_INK} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">1.00 m²</text>
 				</g>;}}
 			</PoolCut>
 			<Card x={RX} y={580} w={1090} at={10} out={k.concrete - 6} pad="14px 28px 16px">
@@ -183,8 +183,8 @@ export const S05: React.FC = () => {
 			<StudioPlot x={W5.x} y={W5.y} width={W5.w} height={W5.h} window={{x: [-4.5, 5.5], y: [-1, 3.6]}} xTicks={[-4, -2, 2, 4].map(v => ({value: v, label: v < 0 ? `−${-v}` : String(v)}))} yTicks={[1, 2, 3]} at={-30}>
 				{m => {const curve = Array.from({length: 121}, (_, i) => {const y = (3 * i) / 120; const q = m.p(g5(y), y); return `${i ? 'L' : 'M'}${q[0].toFixed(1)},${q[1].toFixed(1)}`;}).join(' '); return <>
 					{(() => {const o1 = vis(f, k.when1, k.take, 12), o2 = vis(f, k.when2, k.take, 12); const a1 = m.p(0, 1.4), b1 = m.p(3, 1.0), a2 = m.p(-3, 2.6), b2 = m.p(0, 2.2); return <>
-						<g opacity={o1}><rect x={a1[0]} y={a1[1]} width={b1[0] - a1[0]} height={b1[1] - a1[1]} fill="rgba(19,118,122,0.25)" stroke={TEAL} strokeWidth={4} /><text x={b1[0] + 14} y={b1[1] - 2} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: TEAL}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x &gt; 0</text></g>
-						<g opacity={o2}><rect x={a2[0]} y={a2[1]} width={b2[0] - a2[0]} height={b2[1] - a2[1]} fill="rgba(184,50,42,0.18)" stroke={RED_INK} strokeWidth={4} /><text x={a2[0]} y={a2[1] - 14} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: RED_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">x &lt; 0</text></g>
+						<g opacity={o1}><rect x={a1[0]} y={a1[1]} width={b1[0] - a1[0]} height={b1[1] - a1[1]} fill="rgba(19,118,122,0.25)" stroke={TEAL} strokeWidth={4} /><text x={b1[0] + 14} y={b1[1] - 2} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: TEAL}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">x &gt; 0</text></g>
+						<g opacity={o2}><rect x={a2[0]} y={a2[1]} width={b2[0] - a2[0]} height={b2[1] - a2[1]} fill="rgba(184,50,42,0.18)" stroke={RED_INK} strokeWidth={4} /><text x={a2[0]} y={a2[1] - 14} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: RED_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">x &lt; 0</text></g>
 					</>;})()}
 					<g opacity={sO}><Sideways m={m} g={g5} c={0} d={3} n={12} signed flip={flip} /></g>
 					{[0, 3].map(Y => <path key={Y} d={`M${m.p(-4.5, Y).join(',')} L${m.p(5.5, Y).join(',')}`} stroke={AMB} strokeWidth={3} strokeDasharray="10 9" opacity={prog(f, k.take + 20, 12)} />)}

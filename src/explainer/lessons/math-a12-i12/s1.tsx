@@ -130,7 +130,8 @@ export const S04: React.FC = () => {
 					<g clipPath={m.clip}><path d={fnPath(m, g, -1.3, 1.3)} stroke={ABLUE} strokeWidth={4} fill="none" /></g>
 				</>}
 			</StudioPlot>
-			<Hand x={1500} y={880} at={k.area} size={36} color="#9c5a00">area &gt; 0: the soil still moves</Hand>
+			{/* Repair 13 Nov (Codex hold 2): was (1500, 880) on the blue soil curve; now below the axis, where the strip is clear */}
+			<Hand x={1500} y={968} at={k.area} size={36} color="#9c5a00">area &gt; 0: the soil still moves</Hand>
 		</>
 	);
 };

@@ -66,3 +66,12 @@ Hold moment: scene 4, about 2:09 (frame 3870).
 - Verification: a 1 frame per second sweep of the whole composition (every frame rendered with a text and card probe that flags text on text, cards over text, text within 30 px of the frame edge and text under 30 px; every flag inspected visually, plus overview sheets), fixes applied, then the affected lessons swept again until no real collision remained. Before and after full-resolution stills of the hold moment: `work/brief239/i14/repair-12nov/` (before = Codex evidence frame, after = rebuilt still). Scoped typecheck clean. Not re-voiced; narration, measured lesson.json and design files unchanged.
 - Codex recheck: play the hold moment and the scenes named above at 1x. Not committed (root commits).
 - Root follow-up (12 Nov): the hallway "(cm)" now sits left of the "40" label (end-anchored at x 40 minus 30 px, 30 px text; parts.tsx:107), inside the 40 px margin in every scene. Re-swept at 1 fps after the change (no new flags); sheet re-made.
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 4, about 2:15.9 (frame 4077): a stale chip still said "same signs: speeding up" after the jump to t = 1 (v +9.0, a −12.0), where the signs are opposite.
+- Fix: The chip now fades out before the jump. The slowing run ends at t = 1.9 (v +0.63), so the live "v > 0" tag and "opposite signs: slowing down" never sit on v = 0 (s1.tsx).
+- Other probe hits fixed: Every sign chip and tag checked against the readout at every sweep frame ("same signs", "opposite signs", "v < 0", "v > 0", "a < 0" against v and a): all agree.
+- Other probe hits fixed: SVG labels and panel titles use a 14 px paper stroke (parts.tsx).
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 54 runs before, 25 after. Accepted: the time cursor touching panel titles (up to 13 px), "v < 0: moving left" for one frame at a scene exit, the kit ConstantFamilySlider point label (a kit item), the final crossfade frame.
+- Sheet: `docs/production/claude-pm/builds/math-a12-i14-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS: 0 failures, 0 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.

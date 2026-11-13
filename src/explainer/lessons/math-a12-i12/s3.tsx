@@ -41,7 +41,7 @@ const AxisPic: React.FC = () => (
 		<StudioPlot x={0} y={0} width={820} height={360} window={{x: [-4, 4], y: [-1, 3]}} xTicks={[{value: -PI, label: '−π'}, {value: 0, label: '0'}, {value: PI, label: 'π'}]} yTicks={[]} xLabel="x" yLabel="" bare={false} at={-30}>
 			{(m: PlotMap) => {const [a, ay] = m.p(-PI, 0), [b] = m.p(PI, 0), [c] = m.p(0, 0); return <>
 				<path d={`M${a},${ay - 30} V${ay - 60} H${b} V${ay - 30}`} stroke="#9c5a00" strokeWidth={5} fill="none" />
-				<text x={c} y={ay - 90} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, fill: INK}}>x² sin x + 3</text>
+				<text x={c} y={ay - 90} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, fill: INK}} stroke="#fffdf8" strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">x² sin x + 3</text>
 			</>;}}
 		</StudioPlot>
 	</div>
