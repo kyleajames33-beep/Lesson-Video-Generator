@@ -6,6 +6,12 @@ Prepared 14 November 2026 for the owner. Status: groundwork only. No account, pa
 
 Keep YouTube free for discovery. Put a second, private copy of each finished video in a Bunny Stream library that only plays when hscscience.com.au hands the viewer a signed link that expires. The site only signs links for logged-in people with an active A$5 a week subscription paid through Stripe. Bunny costs are small: about US$5 to US$40 a month at 100 to 1,000 members if we set the encoding bitrates sensibly. The real work and the real risks are on the site (payments, access checks, refunds, GST) and in the voice and artwork licences, not in Bunny.
 
+## Owner decisions (14 November 2026)
+
+- Some videos will come down from YouTube and become members-only, so membership is not only the same videos as YouTube. Which ones is still to choose (candidates: exam walkthroughs and hard practice videos, plus new videos released to members first).
+- Billing: cut the per-charge card fees. Offer a 4-weekly price (A$20 every 4 weeks, "A$5 a week") and a cheaper annual price. The exact annual figure is still to set (for example A$199 a year).
+- ElevenLabs: all takes were made on a paid plan. Google: the voices are made through the paid Gemini API (`generativelanguage.googleapis.com`, `scripts/generate-google-audio.mjs`). Still check whether the TTS model is labelled Preview, and read the Gemini API terms on preview models, before Maths and Year 11 go behind the paywall.
+
 ## (a) What the site has today
 
 The site is the private repo `kyleajames33-beep/Teaching-APP` (the brief called it "teachingapp"). It was audited read-only from a shallow clone of `main` at commit `e0b94ead` (9 November 2026).
