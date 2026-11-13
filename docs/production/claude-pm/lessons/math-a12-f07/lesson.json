@@ -1,0 +1,174 @@
+{
+  "id": "math-a12-f07",
+  "fps": 30,
+  "status": "Brief240 reviewed narration input; no speech or build",
+  "sourceDesignSha256": "a584d472fb586c5504f63692023868c2cd6fc220039279a6bf72116d5e83ba09",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (an endless sum)",
+      "voiceover": {
+        "text": "Last video ended with a bouncing ball. It's dropped from one hundred and twenty-eight centimetres, and each bounce reaches half the height it fell from: sixty-four, thirty-two, sixteen, and so on. After eight bounces, the heights add to one hundred and twenty-seven and a half. Each new bounce fills exactly half of the gap that's left below one hundred and twenty-eight. So the total keeps growing, but it can never pass one hundred and twenty-eight. Can infinitely many bounces really add to a finite number? And when does that happen?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "what happens to the terms",
+      "voiceover": {
+        "text": "Start with the terms. Here r is a half, so each bounce is half the one before. Halving again and again makes a number as small as you like. After ten halvings, a half to the ten is less than one thousandth. So the terms get closer and closer to zero. The same is true for any r between minus one and one. Multiplying by a number smaller than one in size shrinks the size by the same fraction every time. With r equal to minus a half, the terms flip sign, but their size still halves, so they close in on zero from both sides."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "what happens to the totals",
+      "voiceover": {
+        "text": "Now the totals. From last video, S sub n is a, times one minus r to the n, over one minus r. Split that into two parts. It's a over one minus r, minus a over one minus r, times r to the n. For our series, a over one minus r is one hundred and twenty-eight, and the second part is the gap that's left. As n grows, r to the n shrinks towards zero, so the gap shrinks towards zero too. The totals get as close to one hundred and twenty-eight as you like, without ever passing it."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the limiting sum",
+      "voiceover": {
+        "text": "That value is called the limiting sum, S infinity. It's the number the totals get closer and closer to, as we add more and more terms. So S infinity equals a over one minus r. For our series, it's sixty-four over a half, which is one hundred and twenty-eight. But it only works when r is between minus one and one. That's often written with the size of r, mod r, less than one."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04a",
+      "title": "the ball's whole journey",
+      "voiceover": {
+        "text": "Now the ball's whole journey. It falls one hundred and twenty-eight centimetres. After that, every bounce goes up and comes back down the same height, so each bounce height is travelled twice. Those heights have a limiting sum of one hundred and twenty-eight. So the ball travels one hundred and twenty-eight, plus two times one hundred and twenty-eight, which is three hundred and eighty-four centimetres. Infinitely many bounces, but a finite distance."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "when there's no limiting sum",
+      "voiceover": {
+        "text": "What goes wrong otherwise? A magic ball that bounced twice as high each time would have r equal to two, and its totals would grow without bound. If r is one, every term is a, so the total grows by a each time. If r is minus one, the terms are a, minus a, a, minus a, and the totals bounce between a and zero forever. They never settle on one number. Whenever the size of r is one or more, r to the n doesn't shrink, so the gap never closes. There's no limiting sum."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example: one third",
+      "voiceover": {
+        "text": "Let's use it. Find the limiting sum of twelve, plus four, plus four thirds, and so on. First find r, from two ratios. Four over twelve is a third, and four thirds over four is a third. The size of r is less than one, so a limiting sum exists. Write that down before using the formula. S infinity is twelve over one minus a third, which is twelve over two thirds. Dividing by two thirds means multiplying by three over two, so it's eighteen."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "worked example: a zigzag",
+      "voiceover": {
+        "text": "When r is negative, the totals zigzag. Take eight, minus four, plus two, minus one, and so on. Here r is minus a half. The totals go eight, four, six, five, five and a half, jumping above and below one value, and closing in. S infinity is eight, over one minus minus a half. That's eight over three halves, which is sixteen thirds, about five point three three. Here the first term is positive, and a negative r adds to the bottom, so the limiting sum is smaller than the first term."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "worked example: a repeating decimal",
+      "voiceover": {
+        "text": "Limiting sums also turn repeating decimals into fractions. Zero point two seven two seven, repeating, is twenty-seven hundredths, plus twenty-seven ten-thousandths, and so on. Each piece is one hundredth of the one before, so r is one hundredth. Then S infinity is twenty-seven hundredths, over ninety-nine hundredths. The hundredths cancel, leaving twenty-seven over ninety-nine, which simplifies to three elevenths. Check: three divided by eleven is zero point two seven two seven, repeating."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember the condition. When the size of r is less than one, the terms shrink, so the total settles. Shrinking ratio, settling sum. And the value it settles on is a over one minus r."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The geometric series ten, plus ten r, plus ten r squared, and so on, has a limiting sum of forty. Find r. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Here a is ten, so ten over one minus r equals forty. Then one minus r is ten over forty, which is a quarter, so r is three quarters. Check the condition: three quarters is between minus one and one, so this limiting sum exists. Minus three is wrong. It turns the fraction upside down, and a ratio of minus three has no limiting sum at all."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. For what values of x does the geometric series one, plus two x, plus four x squared, and so on, have a limiting sum? Find the limiting sum in terms of x. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "First find the ratio. Each term is two x times the one before, so r is two x. A limiting sum needs the size of two x to be less than one. So two x is between minus one and one, and x is between minus a half and a half. Then S infinity is one over one minus two x. Minus one to one is wrong. The condition is on the ratio, two x, not on x."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a geometric series has a limiting sum exactly when the size of r is less than one, and it's a over one minus r. Shrinking ratios settle, but growing ratios model real growth. A country town has twenty thousand people, and its population grows by five per cent each year. How many people live there after six years?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

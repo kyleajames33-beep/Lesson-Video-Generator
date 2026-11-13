@@ -85,3 +85,5 @@ Still waiting: `math-a12-i01` (one small label touch being fixed) and `math-a12-
 Every number on these sheets was rechecked by root. Each was swept with the line-through-text check; only deliberate strike-outs and answer rings remain.
 33. `math-a12-i01` **v2**: the C slider and the row under it sit below the "time t (weeks)" axis title (the held moment, about 330 s), and "66 cm at 4 weeks" now has a paper pad, with both dashed lines passing under it (about 334 s). Root A, 14 Nov. Your sheet may differ slightly from `builds/math-a12-i01-sheet-repair2-2026-11-13.jpg` at scene 8a only.
 All eight Codex hold-2 videos and every paused build are now on this list.
+34. `math-a12-f06` v1: the finite geometric sum and its proof (chessboard, bouncing ball). Root A, 14 Nov; every number rechecked.
+35. `math-a12-f07` v1: the limiting sum (bouncing ball, recurring decimals). Root A, 14 Nov. Its final frame is a stand-in for f08's opening, which is not built yet.

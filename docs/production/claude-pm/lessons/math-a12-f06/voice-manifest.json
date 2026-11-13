@@ -1,0 +1,87 @@
+{
+  "mathPronunciation": true,
+  "source": "docs\\production\\claude-pm\\lessons\\math-a12-f06.md",
+  "sourceSha256": "ada1a549d00cb6a6ddc90dfc2b3783a94386152ff71b84c012c380501aec9146",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "text": "Last video ended on a chessboard. One grain of rice on the first square, two on the second, then four, eight and sixteen, with running totals one, three, seven, fifteen and thirty-one. Look at the totals. Each one is one less than a power of two. Thirty-one is thirty-two minus one. If the pattern keeps going, the first ten squares hold two to the ten, minus one grains, which is one thousand and twenty-three. But a pattern isn't a reason. Why does it work, and does something like it work for every geometric sequence?",
+      "audioFile": "public/audio/math-a12-f06/scene-01.wav"
+    },
+    {
+      "id": "scene-02",
+      "text": "Here's the reason, with a small case. Take two minus one, times one plus two plus four plus eight. Two minus one is just one, so this is the sum itself. Now expand the brackets. Two times the bracket gives two, four, eight and sixteen. On the board, doubling every pile gives the next square's pile, so the whole row slides one square along. Minus one times the bracket gives minus one, minus two, minus four and minus eight. Line them up, and the middle terms cancel in pairs. Only two terms survive: sixteen, and minus one. So the sum is sixteen minus one.",
+      "audioFile": "public/audio/math-a12-f06/scene-02.wav"
+    },
+    {
+      "id": "scene-03",
+      "text": "Take x minus one, times x to the n minus one, plus x to the n minus two, and so on, down to x, plus one. Multiplying the bracket by x raises every power by one, so the top term becomes x to the n. Multiplying by minus one gives the same powers as before, all negative. Every power from x up to x to the n minus one appears once with a plus and once with a minus, so they cancel. What's left is x to the n, minus one. Nothing here depended on which whole number n is, so it's true for every whole number from one upward.",
+      "audioFile": "public/audio/math-a12-f06/scene-03.wav"
+    },
+    {
+      "id": "scene-04",
+      "text": "Now use it to add any geometric sequence. S sub n is a, plus a r, plus a r squared, up to a r to the n minus one. Take out the a, and the bracket is exactly the one we just expanded, with r in place of x. So r minus one, times S sub n, is a, times r to the n, minus one. To get S sub n alone, divide by r minus one. That's only allowed if r isn't one, because then we'd be dividing by zero. And if r is one, every term is a, so the sum is just n lots of a.",
+      "audioFile": "public/audio/math-a12-f06/scene-04.wav"
+    },
+    {
+      "id": "scene-05",
+      "text": "Multiply the top and bottom by minus one, and you get the form in the syllabus: a, times one minus r to the n, all over one minus r. Both forms always give the same value. When r is bigger than one, the r minus one form keeps the top and bottom positive. When r is between minus one and one, the one minus r form does. Some books get S sub n by multiplying it by r and subtracting. That's the same shift and cancel, done row by row.",
+      "audioFile": "public/audio/math-a12-f06/scene-05.wav"
+    },
+    {
+      "id": "scene-05a",
+      "text": "So how much rice is on the whole chessboard? Here a is one, r is two and n is sixty-four, so the total is two to the sixty-four, minus one. That's about eighteen billion billion grains, which is hundreds of years of the whole world's rice harvest. The last square alone holds more than all the other squares put together.",
+      "audioFile": "public/audio/math-a12-f06/scene-05a.wav"
+    },
+    {
+      "id": "scene-06",
+      "text": "Let's use it. Find the sum from k equals one to six of three times two to the k minus one. The rule gives three, six, twelve, so a is three and r is two. The counter goes from one to six, so there are six terms. Since r is bigger than one, use the r minus one form. That's three, times two to the six, minus one, over two minus one. Two to the six is sixty-four, so it's three times sixty-three, which is one hundred and eighty-nine. Adding the six terms one by one gives the same total.",
+      "audioFile": "public/audio/math-a12-f06/scene-06.wav"
+    },
+    {
+      "id": "scene-07",
+      "text": "Signs need care when r is negative. Find the sum of the first six terms of one, minus three, plus nine, minus twenty-seven, and so on. Here a is one, and r is minus three. Use the one minus r form, with brackets around minus three. Minus three to the six is seven hundred and twenty-nine, because an even power of a negative is positive. So the top is one minus seven hundred and twenty-nine, and the bottom is one plus three, which is four. The sum is minus seven hundred and twenty-eight over four, which is minus one hundred and eighty-two.",
+      "audioFile": "public/audio/math-a12-f06/scene-07.wav"
+    },
+    {
+      "id": "scene-08",
+      "text": "One more, with a ratio less than one. Find the sum of the first eight terms of sixty-four, plus thirty-two, plus sixteen, and so on. Here a is sixty-four and r is a half. Use the one minus r form: sixty-four, times one minus a half to the eight, over one minus a half. Dividing by a half doubles, so that's one hundred and twenty-eight, times one minus one over two hundred and fifty-six. That's one hundred and twenty-eight, minus a half, so the sum is one hundred and twenty-seven and a half. Notice how close that is to one hundred and twenty-eight.",
+      "audioFile": "public/audio/math-a12-f06/scene-08.wav"
+    },
+    {
+      "id": "scene-09",
+      "text": "Here's the idea to remember. Multiplying by r shifts every term one step along. Subtract, and only the new end and the old start are left. That's why the formula has r to the n, minus one, inside it.",
+      "audioFile": "public/audio/math-a12-f06/scene-09.wav"
+    },
+    {
+      "id": "scene-10",
+      "text": "Your turn. Evaluate the sum from k equals one to five of two times three to the k minus one. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f06/scene-10.wav"
+    },
+    {
+      "id": "scene-11",
+      "text": "The terms are two, six, eighteen, and so on, so a is two and r is three. The counter runs from one to five, so there are five terms. The sum is two, times three to the five, minus one, over three minus one, which is two hundred and forty-two. Eighty is wrong. It uses three to the four, the last term's power, instead of n, which is five.",
+      "audioFile": "public/audio/math-a12-f06/scene-11.wav"
+    },
+    {
+      "id": "scene-12",
+      "text": "Last one. In a geometric sequence, the second term is six and the fifth term is forty-eight. Find the sum of the first eight terms. Pause here to answer.",
+      "audioFile": "public/audio/math-a12-f06/scene-12.wav"
+    },
+    {
+      "id": "scene-13",
+      "text": "From the second term to the fifth is three multiplications, so r cubed is forty-eight over six, which is eight, and r is two. Then a times two is six, so a is three. The sum of eight terms is three, times two to the eight, minus one, which is seven hundred and sixty-five. One thousand five hundred and thirty is wrong. It starts the sum at six, the second term, instead of a.",
+      "audioFile": "public/audio/math-a12-f06/scene-13.wav"
+    },
+    {
+      "id": "scene-14",
+      "text": "So the shift-and-cancel expansion gives the sum of any n terms, as long as r isn't one. Drop a tennis ball from one hundred and twenty-eight centimetres, and suppose each bounce reaches half the height it fell from. Its bounce heights are sixty-four, thirty-two, sixteen, and so on, and each new height fills half of the gap that's left below one hundred and twenty-eight. What happens if the ball never stops bouncing?",
+      "audioFile": "public/audio/math-a12-f06/scene-14.wav"
+    },
+    {
+      "id": "scene-15",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/math-a12-f06/scene-15.wav"
+    }
+  ]
+}
