@@ -23,7 +23,7 @@ export async function serveExplainerBundle(directory) {
 	const origin = `http://127.0.0.1:${server.address().port}`;
 	return {url: `${origin}/index.html`, failures,
 		async checkFonts() {
-			for (const name of ['caveat-latin-wght-normal.woff2', 'inter-tight-latin-wght-normal.woff2']) {
+			for (const name of ['caveat-latin-wght-normal.woff2', 'caveat-subsup-wght-normal.woff2', 'inter-tight-latin-wght-normal.woff2', 'inter-tight-subsup-wght-normal.woff2', 'inter-tight-greek-wght-normal.woff2']) {
 				const response = await fetch(`${origin}/public/fonts/${name}`);
 				if (!response.ok) throw new Error(`Bundle font unavailable: ${name} (${response.status})`);
 				const bytes = await response.arrayBuffer();

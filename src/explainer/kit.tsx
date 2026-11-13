@@ -3,6 +3,9 @@ import React, {useMemo} from 'react';
 import {cancelRender, continueRender, delayRender, Easing, Freeze, Img, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_DISPLAY, FONT_HAND, TOK} from '../styles/tokens';
 
+/** Codepoints in the generated *-subsup fonts: subscript and superscript digits, signs, brackets and letters. */
+export const SUBSUP_RANGE = 'U+1D62-1D65, U+2070-2071, U+2074-208E, U+2090-2093, U+2095-209C, U+2C7C';
+
 // A failed font load must stop the render rather than silently export fallback text.
 if (typeof document !== 'undefined' && !(window as unknown as {__explainerFonts?: boolean}).__explainerFonts) {
 	(window as unknown as {__explainerFonts?: boolean}).__explainerFonts = true;
@@ -12,6 +15,13 @@ if (typeof document !== 'undefined' && !(window as unknown as {__explainerFonts?
 	const faces = [
 		new FontFace('Caveat', `url(${staticFile('fonts/caveat-latin-wght-normal.woff2')}) format('woff2')`, {weight: '400 700'}),
 		new FontFace('Inter Tight', `url(${staticFile('fonts/inter-tight-latin-wght-normal.woff2')}) format('woff2')`, {weight: '100 900'}),
+		// Subscript and superscript characters the latin subsets lack (an, Sn, H2O
+		// with Unicode sub/superscripts), scaled from each family's own glyphs. The
+		// unicode-range holds only the added codepoints, so no existing glyph changes.
+		new FontFace('Caveat', `url(${staticFile('fonts/caveat-subsup-wght-normal.woff2')}) format('woff2')`, {weight: '400 700', unicodeRange: SUBSUP_RANGE}),
+		new FontFace('Inter Tight', `url(${staticFile('fonts/inter-tight-subsup-wght-normal.woff2')}) format('woff2')`, {weight: '100 900', unicodeRange: SUBSUP_RANGE}),
+		// Greek letters (theta, pi, Delta, lambda, mu) in Inter Tight's own Greek subset, not a system fallback (root, 13 Nov).
+		new FontFace('Inter Tight', `url(${staticFile('fonts/inter-tight-greek-wght-normal.woff2')}) format('woff2')`, {weight: '100 900', unicodeRange: 'U+0370-03FF, U+1F00-1FFF'}),
 	];
 	Promise.all(faces.map(face => face.load().then(f => { document.fonts.add(f); }))).then(release, error => cancelRender(new Error(`Explainer font load failed: ${String(error)}`)));
 }

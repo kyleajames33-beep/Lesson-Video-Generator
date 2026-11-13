@@ -6,7 +6,7 @@ import {build} from 'esbuild';
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const FFMPEG = path.join(ROOT, 'node_modules/@remotion/compositor-win32-x64-msvc/ffmpeg.exe');
-export const FONTS = ['assets/explainer-paper-grain.png', 'fonts/caveat-latin-wght-normal.woff2', 'fonts/inter-tight-latin-wght-normal.woff2'];
+export const FONTS = ['assets/explainer-paper-grain.png', 'fonts/caveat-latin-wght-normal.woff2', 'fonts/caveat-subsup-wght-normal.woff2', 'fonts/inter-tight-latin-wght-normal.woff2', 'fonts/inter-tight-subsup-wght-normal.woff2', 'fonts/inter-tight-greek-wght-normal.woff2'];
 
 /** Load the explainer registry (configs only) in node via a throwaway CJS bundle. */
 export const loadConfig = async (id) => {
