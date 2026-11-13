@@ -61,3 +61,10 @@ All 13 held Maths videos and i12 are now on this list.
 21. `math-a12-d14` v3: "y = √2" sits right of the normal, clear of the axis (about 406 s).
 22. `math-a12-i10` v3: "net 0, travelled 4" sits inside the memory card, above the shaft (about 451 s).
 The other four holds (d15, i12, i01, i14) and the paused entries 31 to 35 follow when their checks finish.
+
+**Font change (root, 13 Nov night, commit 2691ebe6).** Every new render now draws subscripts, superscripts and Greek letters in the lesson's own fonts:
+- New files: `public/fonts/inter-tight-subsup-wght-normal.woff2`, `caveat-subsup-wght-normal.woff2`, and the already-present `inter-tight-greek-wght-normal.woff2`.
+- These are registered in `src/explainer/kit.tsx`, the slim-public `FONTS` list and the bundle font check.
+- Before this, aₙ, Sₙ, S₁₀, 10⁻³, π and θ fell back to a system font, which was a serif n at heavy weights.
+
+This is an intended source change for every render from now on, including the v3 re-renders. In sheet comparisons, expect small differences in subscript and superscript shapes and in π. Your font scan should now find no serif fallback in those characters; report any it does find.
