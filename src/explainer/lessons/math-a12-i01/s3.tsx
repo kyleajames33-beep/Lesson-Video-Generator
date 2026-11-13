@@ -31,7 +31,7 @@ export const S08A: React.FC = () => {
 						<path d={fnPath(m, u => tip(u, C), 0, 5)} stroke={f >= k.fifty + 6 ? GREEN : INK} strokeWidth={7} fill="none" strokeLinecap="round" opacity={prog(f, k.each, 12)} />
 					</g>
 					{(() => {const p = m.p(4, tip(4, C)); return <circle cx={p[0]} cy={p[1]} r={11} fill={f >= k.fifty + 6 ? GREEN : INK} stroke={CARD} strokeWidth={4} opacity={prog(f, k.each, 12)} />;})()}
-					{(() => {const p = m.p(4, 82); return <g opacity={ghost}><circle cx={p[0]} cy={p[1]} r={10} fill="#8a8378" /><text x={p[0] - 20} y={p[1] - 34} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32, fill: RED}} stroke={CARD} strokeWidth={7} paintOrder="stroke">C = 66: 82 cm at 4 weeks</text></g>;})()}
+					{(() => {const p = m.p(4, 82); return <g opacity={ghost}><circle cx={p[0]} cy={p[1]} r={10} fill="#8a8378" /><text x={p[0] - 20} y={p[1] - 34} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32, fill: RED}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">C = 66: 82 cm at 4 weeks</text></g>;})()}
 					<PLabel p={m.p(1.55, 8)} text="C = 0" size={34} o={vis(f, k.each, k.has + 44, 12)} />
 				</>}
 			</ShelfGraph>
@@ -39,8 +39,9 @@ export const S08A: React.FC = () => {
 			<SegRow x={1400} y={240} size={52} segs={[{c: <>66 = 4² <Cc>+ C</Cc></>, at: k.tip + 30}]} />
 			<SegRow x={1400} y={330} size={52} segs={[{c: <>= 16 <Cc>+ C</Cc></>, at: k.has + 10}]} />
 			<Line x={1400} y={420} at={k.fifty} size={52}><Cc>C = 50</Cc></Line>
-			<ParameterSlider x={620} y={710} width={380} symbol="C" role="k" value={C} min={0} max={80} ticks={[0, 20, 40, 60, 80].map(v => ({value: v, label: String(v)}))} at={k.has + 30} digits={0} />
-			<SegRow x={640} y={860} size={44} segs={[{c: <><Cc>C = 50</Cc>: it started at 50 cm, the middle shelf</>, at: k.started}]} answerAt={k.started + 4} />
+			{/* Repair 13 Nov (Codex hold 2): slider was y 710, its C badge covered the "time t (weeks)" axis title; slider and row moved down */}
+			<ParameterSlider x={620} y={752} width={380} symbol="C" role="k" value={C} min={0} max={80} ticks={[0, 20, 40, 60, 80].map(v => ({value: v, label: String(v)}))} at={k.has + 30} digits={0} />
+			<SegRow x={640} y={900} size={44} segs={[{c: <><Cc>C = 50</Cc>: it started at 50 cm, the middle shelf</>, at: k.started}]} answerAt={k.started + 4} />
 			<MistakeCard x={1390} y={530} w={500} at={k.isnt} size={50} wrong={<>C = 66</>} caption="66 cm is where it got to" />
 		</>
 	);
@@ -67,7 +68,7 @@ export const S09: React.FC = () => {
 						{[-2, -1, 0, 1, 2].map(c => <path key={c} d={fnPath(m, x => x * x + c, -2.5, 2.5)} stroke="#8a8378" strokeWidth={3.5} fill="none" opacity={0.55} />)}
 						<path d={fnPath(m, x => x * x + C, -2.5, 2.5)} stroke={C > 2.999 ? GREEN : INK} strokeWidth={7} fill="none" strokeLinecap="round" />
 					</g>
-					{(() => {const p = m.p(1, 4); return <g><circle cx={p[0]} cy={p[1]} r={14} fill={CARD} stroke={INK} strokeWidth={5} /><text x={p[0] + 24} y={p[1] + 44} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: AMB_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">(1, 4)</text></g>;})()}
+					{(() => {const p = m.p(1, 4); return <g><circle cx={p[0]} cy={p[1]} r={14} fill={CARD} stroke={INK} strokeWidth={5} /><text x={p[0] + 24} y={p[1] + 44} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">(1, 4)</text></g>;})()}
 					<Ring p={m.p(1, 4)} r={32} o={prog(f, k.height + 50, 10)} color={GREEN} />
 				</>}
 			</StudioPlot>
@@ -182,12 +183,12 @@ export const S13: React.FC = () => {
 					{(() => {const a = m.p(2, 6), b = m.p(2, 9); const so = vis(f, k.six, k.fx, 12); return <g opacity={so}>
 						<line x1={a[0] - 30} x2={a[0] - 30} y1={a[1]} y2={b[1] + 12} stroke={AMB} strokeWidth={6} strokeLinecap="round" />
 						<path d={`M${a[0] - 42},${b[1] + 28} L${a[0] - 30},${b[1] + 8} L${a[0] - 18},${b[1] + 28}`} stroke={AMB} strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-						<text x={a[0] - 46} y={(a[1] + b[1]) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, fill: AMB_INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">the slide</text>
+						<text x={a[0] - 46} y={(a[1] + b[1]) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">the slide</text>
 						<circle cx={a[0]} cy={a[1]} r={9} fill={INK} />
 					</g>;})()}
-					{(() => {const p = m.p(2, 9); return <g opacity={prog(f, 20, 12)}><circle cx={p[0]} cy={p[1]} r={15} fill={CARD} stroke={INK} strokeWidth={5} /><text x={p[0] - 26} y={p[1] - 22} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">(2, 9)</text></g>;})()}
+					{(() => {const p = m.p(2, 9); return <g opacity={prog(f, 20, 12)}><circle cx={p[0]} cy={p[1]} r={15} fill={CARD} stroke={INK} strokeWidth={5} /><text x={p[0] - 26} y={p[1] - 22} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">(2, 9)</text></g>;})()}
 					<Ring p={m.p(2, 9)} r={34} o={vis(f, k.three + 10, k.isnt, 10)} color={GREEN} />
-					{(() => {const p = m.p(2, 15); return <g opacity={slip}><circle cx={p[0]} cy={p[1]} r={10} fill={RED} /><text x={p[0] - 22} y={p[1] - 16} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: RED}} stroke={CARD} strokeWidth={7} paintOrder="stroke">C = 9: f(2) = 15</text></g>;})()}
+					{(() => {const p = m.p(2, 15); return <g opacity={slip}><circle cx={p[0]} cy={p[1]} r={10} fill={RED} /><text x={p[0] - 22} y={p[1] - 16} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: RED}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">C = 9: f(2) = 15</text></g>;})()}
 				</>}
 			</StudioPlot>
 		</>

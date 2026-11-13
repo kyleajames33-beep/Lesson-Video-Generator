@@ -96,7 +96,7 @@ export const ShelfStand: React.FC<{x: number; y: number; w: number; t: number | 
 					<line x1={bx} x2={bx} y1={P[1].ty} y2={P[0].ty} stroke={AMB} strokeWidth={9} strokeLinecap="round" />
 					<line x1={bx - 14} x2={bx + 14} y1={P[1].ty} y2={P[1].ty} stroke={AMB} strokeWidth={6} strokeLinecap="round" />
 					<line x1={bx - 14} x2={bx + 14} y1={P[0].ty} y2={P[0].ty} stroke={AMB} strokeWidth={6} strokeLinecap="round" />
-					<text x={bx - 16} y={(P[0].ty + P[1].ty) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, fill: AMB_INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{gapLabel}</text>
+					<text x={bx - 16} y={(P[0].ty + P[1].ty) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{gapLabel}</text>
 				</g> : null}
 			</FrameSvg>
 		</div>
@@ -127,7 +127,7 @@ export const ShelfGraph: React.FC<{x: number; y: number; w: number; h: number; t
 				{arrows > 0.001 ? <g opacity={arrows}>{[0, 1].map(i => {const X = 1.4, a = m.p(X, tip(X, SHELF_C[i])), b = m.p(X, tip(X, SHELF_C[i + 1])); return <g key={i}>
 					<line x1={a[0]} x2={a[0]} y1={a[1] - 8} y2={b[1] + 12} stroke={AMB} strokeWidth={6} strokeLinecap="round" />
 					<path d={`M${a[0] - 12},${b[1] + 26} L${a[0]},${b[1] + 6} L${a[0] + 12},${b[1] + 26}`} stroke={AMB} strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-					<text x={a[0] + 18} y={(a[1] + b[1]) / 2 + 12} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">+ 30 cm</text>
+					<text x={a[0] + 18} y={(a[1] + b[1]) / 2 + 12} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">+ 30 cm</text>
 				</g>;})}</g> : null}
 				{SHELF_C.map((C, i) => {const o = points * curveO[i]; if (o <= 0.001) return null; const s = stub(m, tt, tip(tt, C), 2 * tt); const p = m.p(tt, tip(tt, C)); return <g key={C} opacity={o}>
 					{stubs > 0.001 ? <line {...s} stroke={MATH_GRADIENT} strokeWidth={6} strokeLinecap="round" opacity={stubs} /> : null}
@@ -135,9 +135,10 @@ export const ShelfGraph: React.FC<{x: number; y: number; w: number; h: number; t
 				</g>;})}
 				{ring > 0.001 ? (() => {const p = m.p(4, 66); return <g opacity={ring}>
 					<circle cx={p[0]} cy={p[1]} r={24} fill="none" stroke={INK} strokeWidth={5} />
-					<text x={p[0] - 34} y={p[1] - 26} textAnchor="end" opacity={ringTag} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: AMB_INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">66 cm at 4 weeks</text>
+					
 				</g>;})() : null}
 				{children ? children(m) : null}
+				{ring > 0.001 ? (() => {const p = m.p(4, 66); return <g opacity={ring}>{/* Repair 13 Nov: drawn after the plot children on a paper pad, so the dashed 80 cm guide and the C = 66 ghost curve pass under "66 cm at 4 weeks" */}<rect x={p[0] - 34 - 290} y={p[1] - 26 - 33} width={296} height={44} rx={10} fill={CARD} opacity={ringTag} /><text x={p[0] - 34} y={p[1] - 26} textAnchor="end" opacity={ringTag} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">66 cm at 4 weeks</text></g>;})() : null}
 			</>}
 		</StudioPlot>
 	);
@@ -166,8 +167,10 @@ export const MiniPlot: React.FC<{x: number; y: number; w: number; h: number; win
 	</StudioPlot>
 );
 /** A plot label (plot-local coordinates from m.p), stroked on paper. */
+// Repair 13 Nov (Codex hold 2): SVG labels in this lesson use a 14 px paper stroke (was 7 or 8), so curves, dashed
+// guides and axes that run under a label stop at its edge. Note and SegRow (shared with i07, i11, i13) are unchanged.
 export const PLabel: React.FC<{p: [number, number]; text: React.ReactNode; color?: string; size?: number; anchor?: 'start' | 'middle' | 'end'; hand?: boolean; o?: number; dx?: number; dy?: number}> = ({p, text, color = INK, size = 36, anchor = 'start', hand = false, o = 1, dx = 0, dy = 0}) => (o <= 0.001 ? null :
-	<text x={p[0] + dx} y={p[1] + dy} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{text}</text>);
+	<text x={p[0] + dx} y={p[1] + dy} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{text}</text>);
 /** Framed card (double ink rule) for the memory aid and the notes card. */
 export const FramedCard: React.FC<{x: number; y: number; w: number; h: number; at?: number; children?: React.ReactNode}> = ({x, y, w, h, at = -30, children}) => {
 	const f = useCurrentFrame();

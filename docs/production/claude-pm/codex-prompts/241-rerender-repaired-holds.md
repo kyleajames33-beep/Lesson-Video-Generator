@@ -83,3 +83,5 @@ Still waiting: `math-a12-i01` (one small label touch being fixed) and `math-a12-
 31. `math-a12-f04` v1: arithmetic sequences as linear models (planting strip, visitors, a machine's output, a tree). Graded A on 13 Nov. Its scene 8 readout heights equal 120 + 45 × the displayed t.
 32. `math-a12-f05` v1: geometric sequences (folded paper, a chessboard). Graded A on 14 Nov.
 Every number on these sheets was rechecked by root. Each was swept with the line-through-text check; only deliberate strike-outs and answer rings remain.
+33. `math-a12-i01` **v2**: the C slider and the row under it sit below the "time t (weeks)" axis title (the held moment, about 330 s), and "66 cm at 4 weeks" now has a paper pad, with both dashed lines passing under it (about 334 s). Root A, 14 Nov. Your sheet may differ slightly from `builds/math-a12-i01-sheet-repair2-2026-11-13.jpg` at scene 8a only.
+All eight Codex hold-2 videos and every paused build are now on this list.

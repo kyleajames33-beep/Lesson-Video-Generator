@@ -40,14 +40,14 @@ export const S05: React.FC = () => {
 				xTicks={[-2, -1, 1, 2]} yTopTicks={[-2, 2]} yBottomTicks={[1, 2, 3, 4]}
 				overlay={(s, top, bottom) => {const a = bottom(1, 0), b = bottom(1, yS), c = bottom(1, 1); const tgt = Array.from({length: 89}, (_, i) => {const u = -2.2 + (4.4 * i) / 88; const p = bottom(u, Math.min(4.2, u * u)); return `${i ? 'L' : 'M'}${p[0].toFixed(1)},${p[1].toFixed(1)}`;}).join(' '); const wl = bottom(0.12, 3.55); return <FrameSvg>
 					<path d={tgt} stroke={INK} strokeWidth={5} strokeDasharray="6 14" fill="none" strokeLinecap="round" />
-					<text x={wl[0]} y={wl[1]} opacity={1 - prog(f, sweep1 - 10, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">want: x²</text>
+					<text x={wl[0]} y={wl[1]} opacity={1 - prog(f, sweep1 - 10, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">want: x²</text>
 					<g opacity={bars}>
 						<line x1={a[0] + 18} x2={a[0] + 18} y1={a[1]} y2={b[1]} stroke={VIOLET} strokeWidth={7} />
 						<line x1={a[0] - 18} x2={a[0] - 18} y1={a[1]} y2={c[1]} stroke="#4f4840" strokeWidth={7} />
-						<text x={a[0] + 36} y={b[1] + 12} opacity={vis(f, k.big, k.divide - 2, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIOLET}} stroke={CARD} strokeWidth={7} paintOrder="stroke">3 vs 1</text>
-						<text x={a[0] + 36} y={c[1] - 14} opacity={prog(f, k.divide + 52, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIOLET}} stroke={CARD} strokeWidth={7} paintOrder="stroke">1 = 1</text>
+						<text x={a[0] + 36} y={b[1] + 12} opacity={vis(f, k.big, k.divide - 2, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIOLET}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">3 vs 1</text>
+						<text x={a[0] + 36} y={c[1] - 14} opacity={prog(f, k.divide + 52, 10)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: VIOLET}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">1 = 1</text>
 					</g>
-					{(() => {const p = top(-1.9, ((-1.9) ** 3 / 3) * yS); return <text x={p[0] + 20} y={Math.min(p[1], top(0, -2.4)[1]) - 6} opacity={vis(f, k.raising + 30, k.watch - 10, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: INK}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{yS > 1.5 ? 'x³' : 'x³/3'}</text>;})()}
+					{(() => {const p = top(-1.9, ((-1.9) ** 3 / 3) * yS); return <text x={p[0] + 20} y={Math.min(p[1], top(0, -2.4)[1]) - 6} opacity={vis(f, k.raising + 30, k.watch - 10, 12)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">{yS > 1.5 ? 'x³' : 'x³/3'}</text>;})()}
 				</FrameSvg>;}} /> : null}
 			<LiveReadoutBoard x={RX5} y={650} width={700} at={k.but + 20} out={genOut} inline size={48} labelSize={32} rows={[
 				{label: 'x', value: X, digits: 1},
@@ -208,12 +208,12 @@ export const S08: React.FC = () => {
 					{(() => {const a = m.p(1, 1), b = m.p(1, 5); const so = vis(f, k.five + 6, k.curve, 12); return <g opacity={so}>
 						<line x1={a[0] - 34} x2={a[0] - 34} y1={a[1]} y2={b[1] + 14} stroke={AMB} strokeWidth={6} strokeLinecap="round" />
 						<path d={`M${a[0] - 46},${b[1] + 30} L${a[0] - 34},${b[1] + 10} L${a[0] - 22},${b[1] + 30}`} stroke={AMB} strokeWidth={6} fill="none" strokeLinecap="round" strokeLinejoin="round" />
-						<text x={a[0] - 50} y={(a[1] + b[1]) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, fill: AMB_INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">the slide</text>
+						<text x={a[0] - 50} y={(a[1] + b[1]) / 2 + 14} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 44, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">the slide</text>
 					</g>;})()}
 					{(() => {const p = m.p(1, 1); return <circle cx={p[0]} cy={p[1]} r={9} fill={INK} opacity={vis(f, k.five + 6, k.curve, 12)} />;})()}
 					{(() => {const p = m.p(1, 5); return <g opacity={prog(f, k.point, 12)}>
 						<circle cx={p[0]} cy={p[1]} r={16} fill={CARD} stroke={INK} strokeWidth={5} />
-						<text x={p[0] + 26} y={p[1] + 50} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: AMB_INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">(1, 5)</text>
+						<text x={p[0] + 26} y={p[1] + 50} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: AMB_INK}} stroke={CARD} strokeWidth={14} strokeLinejoin="round" paintOrder="stroke">(1, 5)</text>
 					</g>;})()}
 					<Ring p={m.p(1, 5)} r={34} o={prog(f, k.four + 10, 12)} color={GREEN} />
 					{f >= famAt && f < k.eq ? <PLabel p={m.p(1.75, W2(1.75) - 1.6)} text="C = 0" size={40} /> : null}

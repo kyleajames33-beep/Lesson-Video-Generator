@@ -91,3 +91,12 @@ A on the checker. Root may call these frames B+:
 - frame 12 (attempt 1 hold): the Given card is small beside an 800 px picture, so the lower left is empty.
 
 The shoots are small in the first two weeks of every run (t² growth), as open decision 6 foresaw.
+
+## Repair 13 Nov (Codex hold 2)
+Held moment: scene 8a, about 5:30 (frame 9900): the C slider's value badge covered the "time t (weeks)" axis title.
+- Fix: The slider and the C = 50 row below it moved down (s3.tsx).
+- Other probe hits fixed: SVG labels in this lesson use a 14 px paper stroke (PLabel, ShelfGraph tags, inline labels). Note and SegRow, shared with i07, i11 and i13, are unchanged.
+- Probe: the new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`): 1 fps normal, text-hidden and text-only renders; a hit is a drawn graphic still visible beside glyph ink. It flags all seven Codex hold-2 defects on the unrepaired source. Whole lesson: 48 runs before, 23 after. Accepted: red strike-outs, the amber box mark round the integral, "66 cm at 4 weeks" touching the dashed 80 cm guide (paper stroked), 4 to 18 px touches.
+- Sheet: `docs/production/claude-pm/builds/math-a12-i01-sheet-repair2-2026-11-13.jpg`. `npm run grade:explainer`: PASS WITH WARNINGS: 0 failures, 2 warnings.
+- Lesson-folder changes only; no kit edits. Not re-voiced; narration and timing unchanged. Codex recheck: play the hold moment and the scenes above at 1x.
+- Root follow-up (13 Nov): scene 8a "66 cm at 4 weeks" now sits on a paper pad, drawn after the plot children, so the dashed 80 cm guide and the grey C = 66 ghost curve pass under it (parts.tsx, ShelfGraph ring tag). Re-swept 320 to 340 s with the line-through-text probe: the 25 px hit is gone (only the intended red strike-out on "C = 66" remains). Full still at 334 s checked.
