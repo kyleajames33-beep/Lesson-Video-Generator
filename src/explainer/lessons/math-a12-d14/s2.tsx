@@ -6,8 +6,8 @@ import {FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {EquationStrip, HandTag, MarkSpan, MistakeCard, TaskStrip, kf, piTicks, smooth, vis} from '../../math/studio';
 import {Givens} from '../math-a12-d08/parts';
 import {cue} from './common';
-import {
-	AnswerBox, AnswerStack, COS2, CurveLabel, G, Legend, Line, Note, PI, Panel, PlanCard, R3, RecallChip, Results, RoadView, S, SQ, SQ_YTICKS, TEAL, Tl, V, VIOLET, WIN_SQ, WK, Win, gmap, lerpStage, lerpWin,
+import {Halo, 
+	AnswerBox, AnswerStack, COS2, CurveLabelH as CurveLabel, G, Legend, Line, Note, PI, Panel, PlanCard, R3, RecallChip, Results, RoadView, S, SQ, SQ_YTICKS, TEAL, Tl, V, VIOLET, WIN_SQ, WK, Win, gmap, lerpStage, lerpWin,
 } from './parts';
 
 const P6 = PI / 6;
@@ -51,7 +51,7 @@ export const S03: React.FC = () => {
 				road={{at: -60, pieces: ROAD}} carO={1} ringO={prog(f, half1, 12)} tangentO={prog(f, six, 16)} glowO={prog(f, six, 16)} glowReach={200} />
 			<CurveLabel x={M.pt(-0.28, 0)[0]} y={M.pt(0, 1.19)[1]} at={30} size={40} color={INK}>y = cos 2x</CurveLabel>
 			<CurveLabel x={P[0] - 196} y={P[1] - 30} at={half1} size={36} color={INK}>(π/6, ½)</CurveLabel>
-			<HandTag x={M.pt(0.95, 0)[0]} y={M.pt(0, 0.92)[1]} text="headlights: the tangent" at={six + 12} size={36} color={VIOLET} />
+			<Halo><HandTag x={M.pt(0.95, 0)[0]} y={M.pt(0, 0.92)[1]} text="headlights: the tangent" at={six + 12} size={36} color={VIOLET} /></Halo>
 		</>
 	);
 };
@@ -82,8 +82,8 @@ export const S04: React.FC = () => {
 	// label offsets, pushed away from the triangle's centre
 	const cen: [number, number] = [(P[0] + Cc[0] + Ec[0]) / 3, (P[1] + Cc[1] + Ec[1]) / 3];
 	const push = (m: [number, number], d: number): [number, number] => {const vx = m[0] - cen[0], vy = m[1] - cen[1], l = Math.hypot(vx, vy) || 1; return [m[0] + (vx / l) * d, m[1] + (vy / l) * d];};
-	const lRun = push(mRun, 44), lRise = push(mRise, 48);
-	const lab = (p: [number, number], text: string, color: string, o: number, anchor: 'start' | 'middle' | 'end' = 'middle') => (o <= 0.001 ? null : <text x={p[0]} y={p[1] + 12} textAnchor={anchor} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: color}} stroke="#fffdf8" strokeWidth={9} paintOrder="stroke" opacity={o}>{text}</text>);
+	const lRun = push(mRun, 56), lRise = push(mRise, 66); // Repair 13 Nov: was 44 / 48; "rise −√3/2" sat on its own leg
+	const lab = (p: [number, number], text: string, color: string, o: number, anchor: 'start' | 'middle' | 'end' = 'middle') => (o <= 0.001 ? null : <text x={p[0]} y={p[1] + 12} textAnchor={anchor} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 36, fill: color}} stroke="#fffdf8" strokeWidth={16} strokeLinejoin="round" paintOrder="stroke" opacity={o}>{text}</text>);
 	const midTurn = f >= point && f < way;
 	return (
 		<>
@@ -103,8 +103,8 @@ export const S04: React.FC = () => {
 					{turned ? <path d={`M${Cc[0] + 10},${Cc[1] - 26} L${Ec[0] - 14},${Ec[1] - 26} M${Ec[0] - 30},${Ec[1] - 38} L${Ec[0] - 12},${Ec[1] - 26} L${Ec[0] - 30},${Ec[1] - 14}`} stroke={VIOLET} strokeWidth={4} fill="none" strokeLinecap="round" opacity={prog(f, way + 8, 10)} /> : null}
 				</>} />
 			<CurveLabel x={M.pt(1.12, 0)[0] + 20} y={M.pt(0, -0.05)[1] + 70} at={30} size={40} color={INK}>y = cos 2x</CurveLabel>
-			<HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="run and rise swap" at={swap} size={40} color={INK} />
-			<HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="a quarter turn" at={point} out={swap} size={40} color={INK} />
+			<Halo><HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="run and rise swap" at={swap} size={40} color={INK} /></Halo>
+			<Halo><HandTag x={M.pt(-0.2, 0)[0]} y={M.pt(0, -0.3)[1]} text="a quarter turn" at={point} out={swap} size={40} color={INK} /></Halo>
 			<Legend at={-60} />
 			<Panel x={880} y={676} w={700} at={30} out={newG - 6} border={TEAL} pad="6px 24px 8px">
 				<div style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46, color: INK, whiteSpace: 'pre'}}>normal: same point, <Tl>gradient ?</Tl></div>

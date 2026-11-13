@@ -6,8 +6,8 @@ import {FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, EquationStrip, HandTag, MarkSpan, MistakeCard, TaskStrip, kf, smooth, vis} from '../../math/studio';
 import {Givens} from '../math-a12-d08/parts';
 import {cue} from './common';
-import {
-	AMB, AMB_INK, AnswerBox, AnswerStack, CarSprite, Chip, CloseUp, COS2, CurveLabel, DriveStrip, E, GREY, Legend, LNCOS, Line, MiniRoad, Note, P, PI, RecallChip, RoadView, Tl, V, VIOLET, TEAL, WK, Win, XEX, dirs, gmap,
+import {Halo, 
+	AMB, AMB_INK, AnswerBox, AnswerStack, CarSprite, Chip, CloseUp, COS2, CurveLabelH as CurveLabel, DriveStrip, E, GREY, Legend, LNCOS, Line, MiniRoad, Note, P, PI, RecallChip, RoadView, Tl, V, VIOLET, TEAL, WK, Win, XEX, dirs, gmap,
 } from './parts';
 
 // ---------- 6. a flat tangent and an upright normal ----------
@@ -56,7 +56,7 @@ export const S06: React.FC = () => {
 				</>} />
 			<CurveLabel x={M.pt(2.15, 0)[0]} y={M.pt(0, -0.12)[1]} at={-60} out={never - 10} size={40} color={INK}>y = xe<P>−x</P></CurveLabel>
 			<CurveLabel x={Pp[0] + 30} y={Pp[1] + 44} at={e} size={34} color={INK}>(1, 1/e)</CurveLabel>
-			<HandTag x={M.pt(-0.42, 0)[0]} y={M.pt(0, 0.68)[1]} text="top of the bend: beam flat" at={zero + 16} out={vertical} size={36} color={VIOLET} />
+			<Halo><HandTag x={M.pt(-0.42, 0)[0]} y={M.pt(0, 0.68)[1]} text="top of the bend: beam flat" at={zero + 16} out={vertical} size={36} color={VIOLET} /></Halo>
 			<HandTag x={M.pt(1.25, 0)[0]} y={M.pt(0, 0.68)[1]} text="across the road: upright" at={up + 4} out={parallel - 14} size={36} color={TEAL} />
 			<Legend at={-60} />
 			<CurveLabel x={Pp[0] + 14} y={M.pt(0, -0.4)[1]} at={write} size={36} color={TEAL}>x = 1</CurveLabel>
@@ -112,7 +112,7 @@ export const S07: React.FC = () => {
 			<CurveLabel x={Pp[0] - 130} y={Pp[1] + 20} at={zero2} size={34} color={INK}>(1, 0)</CurveLabel>
 			<Note x={M.pt(0.72, 0)[0]} y={M.pt(0, -0.78)[1]} at={take} size={30}>{'domain: x > 0,\nx ≠ π/2'}</Note>
 			<CloseUp x={96} y={560} w={900} h={340} M={M} fam={LNCOS} X={X} k={2.4} at={20} out={easy - 6} pieces={ROAD7} title="CLOSE-UP: A NEW ROAD">
-				<HandTag x={24} y={300} text="same car, same two steps" at={only + 10} size={40} color={INK} />
+				<Halo><HandTag x={24} y={300} text="same car, same two steps" at={only + 10} size={40} color={INK} /></Halo>
 			</CloseUp>
 			<Legend at={-60} />
 		</>

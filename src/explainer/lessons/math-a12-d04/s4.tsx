@@ -10,7 +10,7 @@ import type {FnFamily, FnKey} from '../../math/studio';
 import type {Range} from '../../math/graphs';
 import {cue, hold} from './common';
 import {
-	AMB, AttemptStage, Chip, CurveLabel, DISPLAY, F, Frac, GUITAR, GuitarImg, Lg, METER, MeterImg, NAVY, OLIVE, QAxes, RecallChip, VIOLET, WIN, gmap, logCurve,
+	AMB, AttemptStage, Chip, CurveLabelH as CurveLabel, Halo, DISPLAY, F, Frac, GUITAR, GuitarImg, Lg, METER, MeterImg, NAVY, OLIVE, QAxes, RecallChip, VIOLET, WIN, gmap, logCurve,
 } from './parts';
 
 // ---------- 13. attempt 2 ----------
@@ -74,7 +74,7 @@ export const S14: React.FC = () => {
 				xTicks={[1, 2, 3, 4]} yTicks={[-1, 1]} xLabel="x" yLabel="y"
 				regions={[{x: [0, 4.5], color: '#f8e8c8', opacity: 0.55, at: -30}]}
 				point={{at: dec - 6}} tangent={{at: dec, halfLength: 170}}
-				overlay={g => <HandTag x={g.pt[0] + 40} y={g.pt[1] + 70} text="downhill" at={dec + 10} size={44} color={VIOLET} />} />
+				overlay={g => <Halo><HandTag x={g.pt[0] + 40} y={g.pt[1] + 70} text="downhill" at={dec + 10} size={44} color={VIOLET} /></Halo>} />
 			<CurveLabel x={gmap(G.x, G.y, G.w, G.h, win).pt(2.4, -0.9)[0]} y={gmap(G.x, G.y, G.w, G.h, win).pt(2.4, -0.9)[1] + 10} color={INK} size={42}>y = <Third /> x</CurveLabel>
 		</>
 	);

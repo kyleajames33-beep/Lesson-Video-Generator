@@ -81,7 +81,8 @@ export const AppRig: React.FC<{phone: {x: number; y: number; h: number}; watch?:
 			{watch && dial ? <>
 				<FrameSvg><SvgPlate plate={S} x={watch.x} y={watch.y} w={sw} /></FrameSvg>
 				<StopwatchHand cx={dcx} cy={dcy} r={DIAL.r * dial.s * 0.86} seconds={weeks} period={1} color="#b8322a" />
-				{watchLabel !== undefined ? <div style={{position: 'absolute', left: dcx - 150, width: 300, top: dcy + DIAL.r * dial.s * 0.28, textAlign: 'center', ...DISPLAY(Math.max(28, sw * 0.13), INK, 800), fontVariantNumeric: 'tabular-nums'}}>{watchLabel}</div> : null}
+				{/* Repair 13 Nov: the readout sits in a dial-coloured window, so the sweeping hand passes under it, not through the digits */}
+				{watchLabel !== undefined ? <div style={{position: 'absolute', left: dcx - 150, width: 300, top: dcy + DIAL.r * dial.s * 0.28, textAlign: 'center', ...DISPLAY(Math.max(28, sw * 0.13), INK, 800), fontVariantNumeric: 'tabular-nums'}}><span style={{background: '#fbf9f4', borderRadius: 10, padding: '0 10px', boxShadow: '0 0 0 2px rgba(60,45,20,0.10)'}}>{watchLabel}</span></div> : null}
 			</> : null}
 		</div>
 	);

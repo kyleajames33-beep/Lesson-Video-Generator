@@ -51,7 +51,7 @@ export const S05: React.FC = () => {
 					{label: 'gradient', role: 'gradient', value: s => s.pslope, digits: 3, glow: [half, half + 80]},
 				]}} />
 			<CurveLabel x={330} y={200} size={44} color={NAVY}>y = e<Pow>x</Pow></CurveLabel>
-			<CurveLabel x={720} y={330} size={44}>y = ln x</CurveLabel>
+			<CurveLabel x={772} y={330} size={44}>y = ln x</CurveLabel>{/* Repair 13 Nov: x 720 to 772, off the dashed y = x */}
 			<RecallChip x={RX} y={170} at={-30} size={32}>Year 11: on e<Pow>x</Pow>, gradient = height</RecallChip>
 			<HandTag x={RX + 6} y={650} text="across → rise" at={one} size={44} color={MATH_GRADIENT} />
 			<HandTag x={RX + 300} y={650} text="up → run" at={two2} size={44} color={MATH_GRADIENT} />
@@ -156,8 +156,9 @@ export const S07: React.FC = () => {
 				curves={[{fn: X => Math.exp(X), at: -30, color: NAVY, width: 5, domain: [-1, Math.log(1.42)]}]}
 				point={{at: -30}} tangent={{at: not, halfLength: 120}}
 				overlay={g => <HandTag x={g.pt[0] + 24} y={g.pt[1] + 54} text="slope 1 at x = 1" at={not + 10} size={36} color={MATH_GRADIENT} />} />
-			<CurveLabel x={1660} y={600} size={40}>y = ln x</CurveLabel>
-			<CurveLabel x={1290} y={580} size={36} color={NAVY}>y = e<Pow>x</Pow></CurveLabel>
+			{/* Repair 13 Nov: ln x label below its curve (was 1660, 600 on it); eˣ label left of the dashed asymptote (was 1290, 580) */}
+			<CurveLabel x={1660} y={640} size={40}>y = ln x</CurveLabel>
+			<CurveLabel x={1196} y={536} size={36} color={NAVY}>y = e<Pow>x</Pow></CurveLabel>
 			<Enter at={-30} out={x1 - 6} style={{position: 'absolute', left: 720, top: 230}}>
 				<div style={{...DISPLAY(32, INK_SOFT, 700), marginBottom: 12}}>What we found on the graph:</div>
 				<div style={DISPLAY(56)}>gradient × x = 1</div>
@@ -209,12 +210,13 @@ export const S08: React.FC = () => {
 							<Chord g={g} a={[Math.log(0.4), 0.4]} b={[0.4, Math.log(0.4)]} at={stays + 10} />
 							<line x1={ax} x2={ax} y1={GSQ.y + 48} y2={GSQ.y + 48 + 700} stroke={MATH_GRADIENT} strokeWidth={8} opacity={0.6 * glow} />
 						</FrameSvg>
-						<HandTag x={GSQ.x + 120} y={GSQ.y + 640} text="ln x undefined" at={negative} size={40} color={INK} />
+						<HandTag x={GSQ.x + 120} y={GSQ.y + 300} text="ln x undefined" at={negative} size={40} color={INK} />
 					</>;
 				}} />
-			<CurveLabel x={300} y={200} size={40} color={INK_SOFT}>e<Pow>x</Pow> (dashed)</CurveLabel>
-			<CurveLabel x={720} y={330} size={44}>y = ln x</CurveLabel>
-			<CurveLabel x={560} y={250} size={40} color={MATH_GRADIENT}>y = <Frac n="1" d="x" /></CurveLabel>
+			{/* Repair 13 Nov: eˣ label left of the y-axis and the 1/x branch (was x 300); 1/x label between its branch and eˣ (was x 560) */}
+			<CurveLabel x={110} y={200} size={40} color={INK_SOFT}>e<Pow>x</Pow> (dashed)</CurveLabel>
+			<CurveLabel x={772} y={330} size={44}>y = ln x</CurveLabel>{/* Repair 13 Nov: x 720 to 772, off the dashed y = x */}
+			<CurveLabel x={468} y={250} size={40} color={MATH_GRADIENT}>y = <Frac n="1" d="x" /></CurveLabel>
 			<Card x={RX} y={180} w={830} at={-30} pad="14px 28px 18px">
 				<CardTitle>Why x &gt; 0</CardTitle>
 				{[

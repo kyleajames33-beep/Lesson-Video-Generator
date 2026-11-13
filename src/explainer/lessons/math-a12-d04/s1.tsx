@@ -10,7 +10,7 @@ import {
 import type {FnKey} from '../../math/studio';
 import {cue, LN2} from './common';
 import {
-	AMB, Chip, CurveLabel, DISPLAY, Dot, F, Frac, GHOST, GUITAR, GuitarImg, HandNote, Legend, Lg, METER, NAVY, OLIVE, RecallChip, TanLine, VIOLET, WIN, gmap, lg, logCurve,
+	AMB, Chip, CurveLabelH as CurveLabel, Halo, DISPLAY, Dot, F, Frac, GHOST, GUITAR, GuitarImg, HandNote, Legend, Lg, METER, NAVY, OLIVE, RecallChip, TanLine, VIOLET, WIN, gmap, lg, logCurve,
 } from './parts';
 
 const lerp = (a: number, b: number, t: number) => a + (b - a) * t;
@@ -69,7 +69,7 @@ export const S01: React.FC = () => {
 					{label: 'sound level', value: dB, digits: 1, unit: <>dB, power × {fmtNum(P, 2)}</>, glow: [decibels - 10, add]},
 				]} />
 			</div>
-			<HandTag x={600} y={482} text="power × 10" at={decibels - 20} out={add} size={36} color={INK_SOFT} />
+			<Halo><HandTag x={600} y={482} text="power × 10" at={decibels - 20} out={add} size={36} color={INK_SOFT} /></Halo>
 			<FunctionSimulator at={-30} x={gx} y={gy} width={gw} height={gh} window={W} family={LOG_BASE_FAMILY} baseParams={{c: 2}} timeline={T} color={NAVY} asymptotes={[0]}
 				xTicks={t < 0.5 ? [-2, -1, 1, 2, 3, 4] : [1, 2, 3, 4, 5]} yTicks={t < 0.5 ? [-2, -1, 1, 2, 3, 4] : [-2, -1, 1, 2]} xLabel={t < 0.5 ? 'x' : 'x: ratio (new ÷ start)'} yLabel="y"
 				curves={[logCurve(Math.E, {color: INK, width: 7}), {...logCurve(10, {color: OLIVE, width: 7, xMax: oliveMax}), at: add, out: undefined}]}
@@ -87,14 +87,14 @@ export const S01: React.FC = () => {
 						{f >= one4 ? <DrawnMark mark={{kind: 'circle', cx: rx, cy: ry, rx: 46, ry: 40}} at={one4} color={INK} /> : null}
 					</FrameSvg>
 				)} />
-			<HandTag x={M.pt(4, 0)[0] + 20} y={(M.pt(4, Math.log(4))[1] + M.pt(4, 2)[1]) / 2 + 10} text="× ?" at={-200} out={logs + 10} size={56} color={NAVY} />
+			<Halo><HandTag x={M.pt(4, 0)[0] + 20} y={(M.pt(4, Math.log(4))[1] + M.pt(4, 2)[1]) / 2 + 10} text="× ?" at={-200} out={logs + 10} size={56} color={NAVY} /></Halo>
 			<CurveLabel x={l2Lab[0]} y={l2Lab[1]} color={NAVY} size={lerp(44, 40, t)}>y = <Lg b="2" /> x{f >= octave ? ' (octaves)' : ''}</CurveLabel>
 			<CurveLabel x={lnLab[0]} y={lnLab[1]} color={INK} size={lerp(44, 40, t)}>y = ln x</CurveLabel>
-			<CurveLabel x={M.pt(2.6, 0.3)[0]} y={M.pt(2.6, 0.3)[1] - 6} at={add + 30} color={OLIVE} size={40}>y = <Lg b="10" /> x (bels)</CurveLabel>
+			<CurveLabel x={M.pt(2.6, 0.3)[0]} y={M.pt(2.6, 0.3)[1] - 16} at={add + 30} color={OLIVE} size={40}>y = <Lg b="10" /> x (bels)</CurveLabel>
 			{/* the climbing pitch */}
-			<HandTag x={M.pt(-0.3, 2.6)[0]} y={M.pt(0, 2.6)[1]} text="× 2 frequency = +1 octave" at={octave} out={make} size={40} color={NAVY} />
+			<Halo><HandTag x={M.pt(-0.3, 2.6)[0]} y={M.pt(0, 2.6)[1]} text="× 2 frequency = +1 octave" at={octave} out={make} size={40} color={NAVY} /></Halo>
 			<HandTag x={M.pt(1.5, 0)[0]} y={M.pt(0, -2.2)[1]} text="x = 4: 440 Hz, concert A" at={soThe + 100} out={make + 20} size={40} color={NAVY} />
-			<HandTag x={M.pt(-0.3, 2.6)[0]} y={M.pt(0, 2.6)[1]} text="× 10 power = +1 bel" at={decibels} out={all} size={40} color={OLIVE} />
+			<Halo><HandTag x={M.pt(-0.3, 2.6)[0]} y={M.pt(0, 2.6)[1]} text="× 10 power = +1 bel" at={decibels} out={all} size={40} color={OLIVE} /></Halo>
 			<Chip x={M.pt(1.25, 0)[0]} y={M.pt(0, -0.45)[1]} at={one4} size={42}>a<sup style={{fontSize: '0.6em'}}>0</sup> = 1, so <Lg b="a" /> 1 = 0</Chip>
 			<HandNote x={M.pt(1.4, 0)[0]} y={M.pt(0, -1.5)[1]} lines={['same note: 0 octaves', 'same power: 0 bels']} at={one4 + 12} size={38} />
 			<Chip x={M.pt(-0.42, 0)[0]} y={M.pt(0, 2.95)[1]} at={much} size={44} color={VIOLET}><span style={{color: VIOLET}}>slope = ?</span></Chip>

@@ -6,7 +6,7 @@ import {Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, FrameSvg, FunctionSimulator, HandTag, KeyNotesBullets, SceneHeading, vis, MATH_STRAND_ACCENT} from '../../math/studio';
 import type {FnFamily} from '../../math/studio';
 import {cue} from './common';
-import {AnswerBox, BLUE, Chip, CurveLabel, Line, RecallChip, Ring, TEAL, Tl, V, VIOLET, gmap, tl} from './parts';
+import {AnswerBox, BLUE, Chip, CurveLabelH as CurveLabel, Halo, Line, RecallChip, Ring, TEAL, Tl, V, VIOLET, gmap, tl} from './parts';
 import {AID_MAIN, CarBadge} from './s3';
 
 export const AID_LINE = 'Point from f, slope from f′. For the normal, flip and change the sign, unless the tangent is flat.';
@@ -101,11 +101,11 @@ export const S13: React.FC = () => {
 					</div>
 				</div>
 				<Line x={CX} y={436} at={6} size={50}>Find the tangent to y = x² at x = 1.</Line>
-				<Line x={CX} y={506} at={pt} size={46}>point (1, 1);<span style={{opacity: prog(f, grad, 12)}}>  gradient <V>2 × 1 = 2</V></span></Line>
+				<Halo><Line x={CX} y={506} at={pt} size={46}>point (1, 1);<span style={{opacity: prog(f, grad, 12)}}>  gradient <V>2 × 1 = 2</V></span></Line></Halo>
 				<AnswerBox x={CX} y={566} at={one} size={46}><span>tangent:  y − 1 = <V>2</V>(x − 1), so y = 2x − 1</span></AnswerBox>
 				<Chip x={CX} y={666} at={carries} out={sw + 20} size={40} color={BLUE}>x² for x ≤ 1, then 2x − 1 for x &gt; 1</Chip>
 				<Chip x={CX} y={666} at={sw + 30} size={40} color={BLUE}>x² for x ≤ 1, then x for x &gt; 1</Chip>
-				<HandTag x={1500} y={790} text="no visible bend" at={invisible + 10} out={sw} size={40} color={INK} anchor="end" />
+				<Halo><HandTag x={1500} y={790} text="no visible bend" at={invisible + 10} out={sw} size={40} color={INK} anchor="end" /></Halo>
 				<HandTag x={CX} y={784} text="a corner: gradient 2 meets gradient 1" at={corner + 10} size={40} color={VIOLET} />
 				<RecallChip x={CX} y={836} at={both} size={36}>both joins unbroken at (1, 1)</RecallChip>
 			</div>

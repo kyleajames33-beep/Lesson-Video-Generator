@@ -7,8 +7,8 @@ import {DrawPath, FONT_DISPLAY, INK, INK_SOFT, prog} from '../../kit';
 import {CARD, CARD_SHADOW, HandTag, SceneHeading, kf, piTicks, smooth, vis, MATH_STRAND_ACCENT} from '../../math/studio';
 import {D13FinalFrame, D14_STAGE, MemoryLine, WIN_C} from '../math-a12-d13/s4';
 import {cue} from './common';
-import {
-	B, COS2, Chip, GREY_INK, Legend, CloseUp, CurveLabel, DriveStrip, G, Line, Note, PI, Panel, R3, RecallChip, RoadView, S, SQ, SQ_YTICKS, TAN_C, TEAL, VIOLET, MEET_X, MEET_Y, GREY, Win, WIN_SQ, gmap, lerpStage, lerpWin,
+import {Halo, 
+	B, COS2, Chip, GREY_INK, Legend, CloseUp, CurveLabelH as CurveLabel, DriveStrip, G, Line, Note, PI, Panel, R3, RecallChip, RoadView, S, SQ, SQ_YTICKS, TAN_C, TEAL, VIOLET, MEET_X, MEET_Y, GREY, Win, WIN_SQ, gmap, lerpStage, lerpWin,
 } from './parts';
 
 const C_TICKS = piTicks(0, 1, 6);
@@ -104,7 +104,7 @@ export const S01: React.FC = () => {
 				<HandTag x={bx[0]} y={bx[1] + 66} text="wrong place" at={onCurve + 48} out={across - 20} size={36} color={GREY_INK} />
 				{/* the close-up and the readouts */}
 				<CloseUp {...CU} M={Ms} fam={COS2} X={X} k={K} at={picture + 10} pieces={ROAD} glowO={gO} tangentO={tO} acrossO={acrossO} acrossSolid={solid} night={nightO} title="CLOSE-UP">
-					<HandTag x={24} y={78} text="headlights: the tangent" at={lights + 24} size={40} color={VIOLET} />
+					<Halo><HandTag x={24} y={78} text="headlights: the tangent" at={lights + 24} size={40} color={VIOLET} /></Halo>
 					<HandTag x={24} y={CU.h - 40} text="straight across: the normal" at={across + 10} size={40} color={TEAL} />
 				</CloseUp>
 				<DriveStrip x={880} y={762} w={960} X={X} m={COS2.df(X, {})} at={picture + 14} acrossAt={across} mGlow={vis(f, three, three + 60, 10)} />
@@ -149,14 +149,14 @@ export const S02: React.FC = () => {
 				</>} />
 			<CurveLabel x={P[0] - 215} y={P[1] - 30} at={-60} size={38} color={INK}>(π/6, ½)</CurveLabel>
 			<CurveLabel x={M.pt(1.3, 0)[0]} y={M.pt(0, 1.17)[1]} at={-60} size={42} color={INK}>y = cos 2x</CurveLabel>
-			<HandTag x={A0[0] + 18} y={A0[1] - 70} text="height from f" at={subst + 20} out={once} size={36} color={INK} />
+			<Halo><HandTag x={A0[0] + 18} y={A0[1] - 70} text="height from f" at={subst + 20} out={once} size={36} color={INK} /></Halo>
 			<HandTag x={M.pt(0.62, 0)[0]} y={M.pt(0, -1.06)[1]} text="the beam lights the road again" at={along + 4} size={36} color={VIOLET} />
-			<Note x={Q[0] + 40} y={Q[1] - 70} at={along + 16} size={30}>meets again: still the tangent at π/6</Note>
+			<Halo><Note x={Q[0] + 40} y={Q[1] - 70} at={along + 16} size={30}>meets again: still the tangent at π/6</Note></Halo>
 			{/* scene 1's chips and close-up leave as the formula arrives */}
 			<Chip x={880} y={168} at={-60} out={met - 20} size={44} color={VIOLET}>gradient: direction only</Chip>
 			<Chip x={880} y={252} at={-60} out={met - 20} size={40} color={MATH_STRAND_ACCENT}>point + gradient → tangent and normal?</Chip>
 			<CloseUp x={880} y={kf(f, [[met - 30, CU.y], [met, 490]])} w={960} h={kf(f, [[met - 30, CU.h], [met, 300]])} M={M} fam={COS2} X={P6} k={kf(f, [[met - 30, K], [met, 2.0]])} at={-60} out={def - 14} pieces={ROAD} glowO={1} tangentO={1} acrossO={1 - 0.7 * prog(f, 4, 20)}>
-				<HandTag x={24} y={78} text="headlights: the tangent" at={-60} size={40} color={VIOLET} />
+				<Halo><HandTag x={24} y={78} text="headlights: the tangent" at={-60} size={40} color={VIOLET} /></Halo>
 			</CloseUp>
 			{/* the two ingredients */}
 			<RecallChip x={880} y={168} at={met} size={40}>Year 11:  <span style={{color: INK, fontWeight: 800, background: vis(f, yminus, yminus + 120, 10) > 0 ? `rgba(248,232,200,${0.9 * vis(f, yminus, yminus + 120, 10)})` : undefined, borderRadius: 8}}>y − y₁ = m(x − x₁)</span></RecallChip>

@@ -13,6 +13,9 @@ import {gmap} from '../math-a12-d13/parts';
 import type {GMap} from '../math-a12-d04/parts';
 
 export {AnswerBox, AmberStrip, B, Chip, CurveLabel, Frac2, Line, P, Panel, PreRing, RecallChip, Ring, S, gmap, tl} from '../math-a12-d13/parts';
+// Repair 13 Nov (Codex hold 2): d14's and d15's scenes import CurveLabelH (dense halo), so curves and axes stop at a
+// label's edge. CurveLabel itself is unchanged for d15/d16 re-exports.
+export {CurveLabelH, Halo, HALO} from '../math-a12-d04/parts';
 export type {GMap};
 
 export const VIOLET = MATH_GRADIENT;
@@ -404,7 +407,7 @@ export const MiniRoad: React.FC<{w: number; h: number; win: Win; fam: FnFamily; 
 					<circle cx={P[0]} cy={P[1]} r={18} fill="none" stroke={INK} strokeWidth={4} />
 				</g>
 			</svg>
-			<div style={{position: 'absolute', left: 14, top: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, color: INK, textShadow: '0 0 6px #fbf8f1, 0 0 10px #fbf8f1'}}>{label}</div>
+			<div style={{position: 'absolute', left: 14, top: 8, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, color: INK, textShadow: [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fbf8f1`).join(', '), backgroundColor: '#fbf8f1', borderRadius: 8, boxShadow: '0 0 5px 3px #fbf8f1', padding: '0 6px', marginLeft: -6}}>{label}</div>
 			{tag ? <div style={{position: 'absolute', left: 0, top: h + 6, width: w, textAlign: 'center', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, color: GREY_INK, whiteSpace: 'pre'}}>{tag}</div> : null}
 		</div>
 	);

@@ -10,7 +10,7 @@ import {
 import type {FnKey} from '../../math/studio';
 import {cue, LN2, LN10} from './common';
 import {
-	AMB, Chip, CurveLabel, DISPLAY, Dot, F, Frac, GHOST, GUITAR, GuitarImg, Legend, Lg, METER, MeterImg, NAVY, OLIVE, VIOLET, WIN, gmap, logCurve,
+	AMB, Chip, CurveLabelH as CurveLabel, Halo, DISPLAY, Dot, F, Frac, GHOST, GUITAR, GuitarImg, Legend, Lg, METER, MeterImg, NAVY, OLIVE, VIOLET, WIN, gmap, logCurve,
 } from './parts';
 
 /** The proved rule, small, in a green frame (scenes 6 to 9). */
@@ -154,7 +154,7 @@ export const S07: React.FC = () => {
 			<CurveLabel x={M.pt(-0.42, 2.6)[0]} y={M.pt(0, 2.6)[1] - 30} color={NAVY} size={46}>y = <Lg b={a < 1.12 ? '1.1' : Math.abs(a - Math.E) < 0.01 ? 'e' : Math.abs(a - Math.round(a)) < 0.01 ? String(Math.round(a)) : a.toFixed(2)} /> x</CurveLabel>
 			<CurveLabel x={M.pt(3.8, 1.25)[0]} y={M.pt(3.8, 1.25)[1] + 6} color={GHOST} size={32}>ln x (dashed)</CurveLabel>
 			<HandTag x={M.pt(1.4, 0)[0]} y={M.pt(0, 2.6)[1]} text="a = e: ln x itself" at={eOne + 6} out={two} size={44} color={INK} />
-			<HandTag x={M.pt(1.3, 0)[0]} y={M.pt(0, 2.6)[1]} text="shoots up" at={shoots} out={agrees} size={52} color={VIOLET} />
+			<Halo><HandTag x={M.pt(1.3, 0)[0]} y={M.pt(0, 2.6)[1]} text="shoots up" at={shoots} out={agrees} size={52} color={VIOLET} /></Halo>
 			<Chip x={M.pt(1.6, 0)[0]} y={M.pt(0, -0.55)[1]} at={oneTo} size={42} color={MATH_MISTAKE}>1<sup style={{fontSize: '0.6em'}}>y</sup> = 1 for every y: no <Lg b="1" /></Chip>
 			<Chip x={M.pt(1.6, 0)[0]} y={M.pt(0, -1.65)[1]} at={agrees} size={42} color={MATH_MISTAKE}>1/ln 1 = 1/0: undefined</Chip>
 			<Enter at={-30} style={{position: 'absolute', left: 1380, top: 600}}>
@@ -209,7 +209,8 @@ export const S08: React.FC = () => {
 				)} />
 			<CurveLabel x={M.pt(2.8, 2.1)[0]} y={M.pt(2.8, 2.1)[1] - 30} color={NAVY} size={42} out={f0}>y = <Lg b="2" /> x</CurveLabel>
 			<CurveLabel x={M.pt(2.8, 2.1)[0]} y={M.pt(2.8, 2.1)[1] - 30} at={f1 + 6} color="rgba(34,67,122,0.75)" size={34}><Lg b="2" /> x (dashed)</CurveLabel>
-			<CurveLabel x={M.pt(3.0, -1.45)[0]} y={M.pt(3.0, -1.45)[1] - 6} at={f1 + 6} color={INK} size={46}>y = <Lg b="½" /> x</CurveLabel>
+			{/* Repair 13 Nov (Codex hold 2): was at (3.0, -1.45), on the curve itself (-1.58 at x = 3); now in the clear band above it */}
+			<CurveLabel x={M.pt(3.0, -0.72)[0]} y={M.pt(3.0, -0.72)[1]} at={f1 + 6} color={INK} size={46}>y = <Lg b="½" /> x</CurveLabel>
 			<CurveLabel x={M.pt(3.9, 1.3)[0]} y={M.pt(3.9, 1.3)[1] + 6} color={GHOST} size={32}>ln x (dashed)</CurveLabel>
 			<HandTag x={M.pt(0.6, 0)[0]} y={M.pt(0, 2.5)[1] - 50} text="flips" at={f0 + 10} out={falls + 60} size={56} role="k" />
 			<HandTag x={M.pt(1.7, 0)[0]} y={M.pt(0, -2.75)[1]} text="decreasing for all x > 0" at={falls + 14} size={44} color={INK} />

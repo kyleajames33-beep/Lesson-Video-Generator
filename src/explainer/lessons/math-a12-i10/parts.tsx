@@ -15,7 +15,15 @@ import {FONT_DISPLAY, FONT_HAND, INK, prog} from '../../kit';
 import {CARD, FrameSvg, SvgPlate, plateMap, usePlatePreload, vis} from '../../math/studio';
 import type {PlateSpec, PlotMap} from '../../math/studio';
 
-export {ABLUE, AMBER, AMBER_STROKE, AnswerBox, Attempt, BoxCard, Bu, Chip, Ex, FramedCard, GRAD, Graph, Hand, Int, Lims, MiniPlot, PLabel, RED, Row, SOFT, TEAL, Task, Tick} from '../math-a12-i09/parts';
+export {ABLUE, AMBER, AMBER_STROKE, AnswerBox, Attempt, BoxCard, Bu, Chip, Ex, FramedCard, GRAD, Graph, Hand, Int, Lims, MiniPlot, RED, Row, SOFT, TEAL, Task, Tick} from '../math-a12-i09/parts';
+
+// Repair 13 Nov (Codex hold 2): plot labels with a wider paper stroke (16, round joins; i09's is 8), so a curve, area
+// outline or arrow that runs under a value label stops at its edge. i12 re-exports this PLabel too.
+export const PLabel: React.FC<{p: [number, number]; text: React.ReactNode; color?: string; size?: number; anchor?: 'start' | 'middle' | 'end'; hand?: boolean; o?: number; dx?: number; dy?: number}> = ({p, text, color = INK, size = 36, anchor = 'start', hand = false, o = 1, dx = 0, dy = 0}) => (o <= 0.001 ? null :
+	<text x={p[0] + dx} y={p[1] + dy} textAnchor={anchor} opacity={o} style={{fontFamily: hand ? FONT_HAND : FONT_DISPLAY, fontWeight: hand ? 700 : 800, fontSize: size, fill: color}} stroke={CARD} strokeWidth={16} strokeLinejoin="round" paintOrder="stroke">{text}</text>);
+/** Repair 13 Nov: wraps HTML labels (Hand, HandTag) in a dense paper halo (inherited text-shadow; not positioned). */
+export const HALO = [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ');
+export const Halo: React.FC<{children: React.ReactNode}> = ({children}) => <div className="rp-pad" style={{textShadow: HALO}}><style>{'.rp-pad span, .rp-pad > div:not([style*="inset"]){background-color:#f7f3eb;border-radius:8px;box-shadow:0 0 5px 3px #f7f3eb}'}</style>{children}</div>;
 
 const PI = Math.PI;
 // ---------- the models ----------

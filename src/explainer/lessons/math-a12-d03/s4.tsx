@@ -41,7 +41,8 @@ export const S13: React.FC = () => {
 				xTicks={[1, 2, 3]} yTicks={[-8, -6, -4, -2]} xLabel="x" yLabel="y" asymptotes={[0]}
 				point={{at: -30}} tangent={{at: minus2 - 20, halfLength: 140}}
 				overlay={g => <HandTag x={g.pt[0] + 30} y={g.pt[1] - 70} text="slope −2" at={minus2} size={44} color={MATH_GRADIENT} />} />
-			<CurveLabel x={1250} y={330} size={40}>y = 2 ln x − 3x</CurveLabel>
+			{/* Repair 13 Nov (Codex hold 2): was (1250, 330) on the clamped top axis; the clear lower left of the plot */}
+			<CurveLabel x={1250} y={604} size={40}>y = 2 ln x − 3x</CurveLabel>
 			<MistakeCard x={96} y={790} w={1640} size={44} at={wrote} wrong={<>dy/dx = <Frac n="1" d="x" /> − 3, so −2.5</>} caption="2 ln x is a stretch, not ln(2x)" />
 		</>
 	);
@@ -139,10 +140,11 @@ export const S16: React.FC = () => {
 							<line x1={ax} y1={ay} x2={ax} y2={by + 10} stroke={NAVY} strokeWidth={5} />
 							<path d={`M${ax - 12},${by + 22} L${ax},${by + 4} L${ax + 12},${by + 22}`} stroke={NAVY} strokeWidth={5} fill="none" />
 						</FrameSvg>
-						<HandTag x={ax + 20} y={(ay + by) / 2 + 10} text="× ?" at={next + 24} size={56} color={NAVY} />
+						<HandTag x={ax + 20} y={by - 52} text="× ?" at={next + 24} size={56} color={NAVY} />
 					</> : null;
 				}} />
-			<CurveLabel x={1560} y={560} size={44}>y = ln x</CurveLabel>
+			{/* Repair 13 Nov: ln x label under its curve (was 1560, 560 on it); "× ?" above both curves (was between them) */}
+			<CurveLabel x={1600} y={598} size={44}>y = ln x</CurveLabel>
 			<CurveLabel x={1440} y={330} size={44} color={NAVY} at={next + 10}>y = log<span style={{fontSize: '0.6em', position: 'relative', top: '0.3em'}}>2</span> x</CurveLabel>
 		</>
 	);

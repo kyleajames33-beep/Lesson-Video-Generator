@@ -8,7 +8,7 @@ import {AreaFillLayer, CARD, LiveReadoutBoard, SceneHeading, StudioPlot, fnPath,
 import type {PlotMap, PlotTick} from '../../math/studio';
 import {I09FinalFrame} from '../math-a12-i09/s3';
 import {K1, K2, K3, K4} from './cuemap';
-import {ABLUE, AnswerBox, BoxCard, Chip, FlipFill, Fq4, Hand, Int, Lims, LiftShaftSim, Named, PLabel, Row, SOFT, TEAL, Task, level, q4, travelled} from './parts';
+import {Halo, ABLUE, AnswerBox, BoxCard, Chip, FlipFill, Fq4, Hand, Int, Lims, LiftShaftSim, Named, PLabel, Row, SOFT, TEAL, Task, level, q4, travelled} from './parts';
 
 const PI = Math.PI;
 /** A blue curve on its own axes; children draw fills under the curve via `under`. */
@@ -148,7 +148,7 @@ export const S04: React.FC = () => {
 					<PLabel p={m.p(0.6, flip > 0.5 ? 1.4 : -1.6)} text={flip > 0.5 ? '16/3' : '−16/3'} size={50} />
 				</>;}} />
 			{inset > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: inset}}><LiftShaftSim x={150} y={200} h={420} lv={level(tl)} tags={false} /></div> : null}
-			<Hand x={330} y={582} at={k.lift + 10} size={40} color={INK}>floors up − floors down</Hand>
+			<Halo><Hand x={330} y={582} at={k.lift + 10} size={40} color={INK}>floors up − floors down</Hand></Halo>
 			<Row x={RX + 10} y={150} at={k.piece} size={38} color={SOFT}>F(3) − F(2) = −3 − (−16/3) = 7/3</Row>
 			<Named x={RX} y={230} kind="int" at={k.whole} size={40}><Int lo="0" hi="3">(x² − 4)</Int> = F(3) − (F(0)) = −3</Named>
 			<Row x={RX + 10} y={340} at={k.and} size={50}>−3 = 7/3 − 16/3</Row>

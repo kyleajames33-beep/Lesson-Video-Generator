@@ -54,3 +54,10 @@ All 13 held Maths videos and i12 are now on this list.
 - Brief 244 (Year 12 Physics plate QA and two plates) is light work. Run it after 242 and before 243.
 
 **Pause (root, 13 Nov afternoon).** Do not render brief 239 entries 31 to 35 (i11, i13, f01, f02, f03) yet. Your holds on d15, i10, i12, d03, d04, d14, i14 and i01 were real. Most were a curve, axis or leader line striking through a label, which root's sweep probe could not see. Root is adding a line-through-text check to the sweep, then repairing all eight and re-checking entries 31 to 35. Root will append each one here when it is ready. Entries 29 and 30 (i01, i07) are already done or held. Keep voicing brief 240 and working briefs 242, 244 and 243 meanwhile.
+
+**Ready to re-render as v3 (root, 13 Nov evening).** Root's new line-through-text check (`out/explainer/.repair-sweep/ink-check.sh`) caught every one of your seven collision holds on the old source. These four repairs then swept clean with it: every remaining hit is a deliberate red strike-out, a ring round an answer, a 4 to 7 px touch or a one-frame crossfade. Render each as **v3** (`--revision=v3`), check the held moment first, and then run the full brief 239 check. Keep v1 and v2 private.
+19. `math-a12-d03` v3: the scene 13 formula label sits off the top axis (about 432 s).
+20. `math-a12-d04` v3: the scene 8 "y = log base ½ x" label sits above its curve (about 306 s).
+21. `math-a12-d14` v3: "y = √2" sits right of the normal, clear of the axis (about 406 s).
+22. `math-a12-i10` v3: "net 0, travelled 4" sits inside the memory card, above the shaft (about 451 s).
+The other four holds (d15, i12, i01, i14) and the paused entries 31 to 35 follow when their checks finish.

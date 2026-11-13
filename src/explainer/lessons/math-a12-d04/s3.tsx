@@ -9,7 +9,7 @@ import type {FnKey} from '../../math/studio';
 import type {Range} from '../../math/graphs';
 import {cue, hold, LN2} from './common';
 import {
-	AMB, AttemptStage, CurveLabel, DISPLAY, F, Frac, GHOST, GUITAR, GuitarImg, Legend, Lg, METER, MeterImg, NAVY, OLIVE, QAxes, TanLine, VIOLET, gmap, logCurve,
+	AMB, AttemptStage, CurveLabelH as CurveLabel, Halo, DISPLAY, F, Frac, GHOST, GUITAR, GuitarImg, Legend, Lg, METER, MeterImg, NAVY, OLIVE, QAxes, TanLine, VIOLET, gmap, logCurve,
 } from './parts';
 import {RuleBox} from './s2';
 
@@ -57,7 +57,7 @@ export const S09: React.FC = () => {
 			<FunctionSimulator x={GW.x} y={GW.y} width={GW.w} height={GW.h} window={{x: win.x, y: win.y}} family={LOG_BASE_FAMILY} baseParams={{c: 2}} timeline={T} color={NAVY} curveWidth={6}
 				xTicks={[1, 2, 3, 4]} yTicks={[-1, 1, 2]} xLabel="x" yLabel="y"
 				point={{at: -30, color: NAVY}} tangent={{at: r2, halfLength: 150}}
-				overlay={g => <HandTag x={g.pt[0] - 20} y={g.pt[1] + 56} text="slope here?" at={-30} out={r2} size={38} color={INK_SOFT} anchor="end" />} />
+				overlay={g => <Halo><HandTag x={g.pt[0] - 20} y={g.pt[1] + 56} text="slope here?" at={-30} out={r2} size={38} color={INK_SOFT} anchor="end" /></Halo>} />
 			<CurveLabel x={M.pt(0.3, 2.2)[0]} y={M.pt(0.3, 2.2)[1] - 24} color={NAVY} size={38}>y = <Lg b="2" /> x</CurveLabel>
 			<LiveReadoutBoard x={1250} y={690} width={574} at={ans} out={guitar} inline rows={[{label: 'gradient at x = 4', value: 1 / (4 * LN2), role: 'gradient', digits: 3, glow: [measured, guitar]}]} />
 			<HandTag x={1262} y={830} text="the slope we measured ✓" at={measured} out={guitar} size={40} color={MATH_ANSWER} />
@@ -68,8 +68,8 @@ export const S09: React.FC = () => {
 				{label: 'open string, 110 Hz', value: 1 / (110 * LN2), digits: 4, role: 'gradient', unit: 'octaves per Hz'},
 				{label: 'concert A, 440 Hz (x = 4)', value: 1 / (440 * LN2), digits: 4, role: 'gradient', unit: 'octaves per Hz', glow: [quarter, 99999]},
 			]} />
-			<HandTag x={1236} y={480} text="¼ as much:" at={quarter} size={44} role="k" anchor="end" marks={[{kind: 'brace', x: 1244, y1: 420, y2: 610, facing: 'left'}]} markAt={quarter - 4} />
-			<HandTag x={1236} y={534} text="1/x at work" at={quarter + 10} size={44} role="k" anchor="end" />
+			<HandTag x={1220} y={480} text="¼ as much:" at={quarter} size={44} role="k" anchor="end" marks={[{kind: 'brace', x: 1244, y1: 420, y2: 610, facing: 'left'}]} markAt={quarter - 4} />
+			<HandTag x={1220} y={534} text="1/x at work"at={quarter + 10} size={44} role="k" anchor="end" />
 		</>
 	);
 };
@@ -118,7 +118,7 @@ export const S10: React.FC = () => {
 					</div>
 				);
 			})}
-			<HandTag x={GX + 330} y={GY + 96} text="ln a < 0: it flips" at={negative + 8} size={44} role="k" />
+			<Halo><HandTag x={GX + 330} y={GY + 96} text="ln a < 0: it flips" at={negative + 8} size={44} role="k" /></Halo>
 			<CurveLabel x={GX + 330} y={GY + 76} color={NAVY} size={38} out={f0}><Lg b="2" /> x: × 1.44</CurveLabel>
 			<CurveLabel x={GX + 410} y={GY + 150} color={INK} size={34}>ln x</CurveLabel>
 			<CurveLabel x={GX + 250} y={GY + 246} color={OLIVE} size={38} out={slope}><Lg b="10" /> x: × 0.43</CurveLabel>

@@ -171,7 +171,8 @@ export const S14: React.FC = () => {
 				</div>
 				{fr >= 16 ? <div style={{position: 'absolute', inset: 0, opacity: prog(fr, 16, 14)}}>
 					<LiftShaftSim x={1260} y={560} h={380} lv={0} tags={false} />
-					<div style={{position: 'absolute', left: 1220, top: 945, width: 260, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30, color: SOFT}}>net 0, travelled 4</div>
+					{/* Repair 13 Nov (Codex hold 2): was top 945 on the card's bottom border; now above the shaft, inside the card */}
+					<div style={{position: 'absolute', left: 1220, top: 506, width: 260, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 30, color: SOFT}}>net 0, travelled 4</div>
 					<BPlot x={1440} y={600} w={420} h={330} win={{x: [-0.2, 3.3], y: [-1.2, 4.6]}} fn={q4} xTicks={[2]} yTicks={[]} xLabel="x" yLabel="every piece +" under={m => <><FlipFill m={m} fn={q4} a={0} b={2} p={1} /><AreaFillLayer m={m} fn={q4} a={2} to={3} signed /></>} />
 				</div> : null}
 			</div>

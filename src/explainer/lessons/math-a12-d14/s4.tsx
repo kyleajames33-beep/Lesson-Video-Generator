@@ -5,7 +5,7 @@ import {useCurrentFrame} from 'remotion';
 import {Enter, FONT_DISPLAY, FONT_HAND, INK, INK_SOFT, prog} from '../../kit';
 import {Card, CardTitle, FrameSvg, FunctionSimulator, GivensStrip, MarkSpan, MistakeCard, QuestionCard, RolesOn, TaskStrip, piTicks} from '../../math/studio';
 import {cue, hold} from './common';
-import {AnswerBox, AnswerStack, CurveLabel, E, E2X, Line, P, PI, PreRing, Ring, SPC, TEAL, Tl, V, VIOLET, gmap, tl} from './parts';
+import {AnswerBox, AnswerStack, CurveLabelH as CurveLabel, E, E2X, Line, P, PI, PreRing, Ring, SPC, TEAL, Tl, V, VIOLET, gmap, tl} from './parts';
 
 /** The d02 to d13 attempt layout: question card, Given card, large answer-free picture, full ring from "Pause here". */
 const Attempt: React.FC<{hold: {startFrame: number; endFrame: number}; pauseAt: number; picture: React.ReactNode; given: React.ReactNode[]; heading?: string; children: React.ReactNode}> = ({hold: h, pauseAt, picture, given, heading, children}) => (
@@ -147,7 +147,8 @@ export const S12: React.FC = () => {
 			<CurveLabel x={M.pt(1.72, 0)[0]} y={M.pt(0, 1.18)[1]} at={-30} size={32} color={INK}>y = sin x + cos x</CurveLabel>
 			<CurveLabel x={Pp[0] + 30} y={Pp[1] + 12} at={two} size={34} color={INK}>(π/4, √2)</CurveLabel>
 			<CurveLabel x={Pp[0] + 14} y={M.box.top + M.box.height - 56} at={vert + 10} size={34} color={TEAL}>x = π/4</CurveLabel>
-			<CurveLabel x={M.pt(-0.35, 0)[0]} y={Pp[1] - 52} at={horiz + 10} size={34} color={VIOLET}>y = √2</CurveLabel>
+			{/* Repair 13 Nov (Codex hold 2): was at x = -0.35, where the y-axis cut the radical; now right of the normal, above the tangent */}
+			<CurveLabel x={M.pt(1.3, 0)[0]} y={Pp[1] - 52} at={horiz + 10} size={34} color={VIOLET}>y = √2</CurveLabel>
 		</>
 	);
 };

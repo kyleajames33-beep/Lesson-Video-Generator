@@ -95,12 +95,26 @@ export const TanLine: React.FC<{M: GMap; X: number; Y: number; m: number; half?:
 };
 export const Dot: React.FC<{p: [number, number]; color?: string; r?: number; opacity?: number}> = ({p, color = VIOLET, r = 14, opacity = 1}) => (opacity <= 0.001 ? null : <circle cx={p[0]} cy={p[1]} r={r} fill={color} stroke={CARD} strokeWidth={5} opacity={opacity} />);
 
+/** Repair 13 Nov (Codex hold 2): a dense paper halo (stacked shadows, opaque to about 6 px). A curve, axis or leader
+ * that runs under a label now stops at the label's edge instead of striking through its glyphs. */
+export const HALO = [1, 2, 3, 4, 6, 8, 11, 14].map(r => `0 0 ${r}px #fffdf8`).join(', ');
+/** Wrap kit labels (HandTag) so their text inherits the dense halo. Not positioned, so children keep their placement. */
+/** Paper backing pad (opaque, feathered) for label text; the line under a label is hidden, not just softened. */
+export const PAD: React.CSSProperties = {backgroundColor: '#f7f3eb', borderRadius: 10, boxShadow: '0 0 5px 3px #f7f3eb', padding: '0 6px', marginLeft: -6};
+export const Halo: React.FC<{children: React.ReactNode}> = ({children}) => <div className="rp-pad" style={{textShadow: HALO}}><style>{'.rp-pad span, .rp-pad > div:not([style*="inset"]){background-color:#f7f3eb;border-radius:8px;box-shadow:0 0 5px 3px #f7f3eb}'}</style>{children}</div>;
 /** Label at a frame point, with a paper halo. */
 export const CurveLabel: React.FC<{x: number; y: number; at?: number; out?: number; color?: string; children: React.ReactNode; size?: number; anchor?: 'start' | 'end'; opacity?: number}> = ({x, y, at = -30, out, color = INK, children, size = 42, anchor = 'start', opacity = 1}) => {
 	const f = useCurrentFrame();
 	const o = prog(f, at, 12) * (out === undefined ? 1 : 1 - prog(f, out, 10)) * opacity;
 	if (o <= 0.001) return null;
 	return <div style={{position: 'absolute', left: x, top: y, transform: anchor === 'end' ? 'translateX(-100%)' : undefined, opacity: o, ...DISPLAY(size, color), textShadow: '0 0 6px #fffdf8, 0 0 12px #fffdf8, 0 0 3px #fffdf8'}}>{children}</div>;
+};
+/** Repair 13 Nov: CurveLabel with the dense HALO (d04 and d14 only; d05, d08, d09, d12 and d13 keep CurveLabel unchanged). */
+export const CurveLabelH: React.FC<{x: number; y: number; at?: number; out?: number; color?: string; children: React.ReactNode; size?: number; anchor?: 'start' | 'end'; opacity?: number}> = ({x, y, at = -30, out, color = INK, children, size = 42, anchor = 'start', opacity = 1}) => {
+	const f = useCurrentFrame();
+	const o = prog(f, at, 12) * (out === undefined ? 1 : 1 - prog(f, out, 10)) * opacity;
+	if (o <= 0.001) return null;
+	return <div style={{position: 'absolute', left: x, top: y, transform: anchor === 'end' ? 'translateX(-100%)' : undefined, opacity: o, ...DISPLAY(size, color), textShadow: HALO, ...PAD}}>{children}</div>;
 };
 
 /** Grey "Year 11" / "last video" recall chip. */

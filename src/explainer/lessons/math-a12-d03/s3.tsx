@@ -154,7 +154,8 @@ export const S11: React.FC = () => {
 				point={{at: -30, color: NAVY}} tangent={{at: -30, halfLength: 110}}
 				triangle={{run: 1, at: -30, labels: {first: (_l, s) => (s.reflect > 0.99 ? 'rise 1' : 'across 1'), second: (_l, s) => (s.reflect > 0.99 ? 'run 2' : 'up 2')}}} />
 			<CurveLabel x={270} y={330} size={38} color={NAVY}>e<Pow2 /></CurveLabel>
-			<CurveLabel x={560} y={600} size={38}>ln x</CurveLabel>
+			{/* Repair 13 Nov: right of x = 3.2, between the curve and the x-axis (was 560, 600 on the curve) */}
+			<CurveLabel x={650} y={612} size={38}>ln x</CurveLabel>
 		</>
 	);
 };

@@ -49,7 +49,7 @@ export const S01: React.FC = () => {
 				xLabel={f >= weeks ? 'x: users (thousands)' : 'x'} yLabel={f >= weeks ? 'y: weeks' : 'y'}
 				asymptotes={grown ? [0] : []}
 				point={{at: -30}} tangent={{at: -30, halfLength: grown ? 150 : 190}}
-				label={{content: () => <>y = ln x</>, at: -30, pos: () => [grown ? 3.2 : 3.35, grown ? 1.9 : 1.42], size: 44}}
+				label={{content: () => <>y = ln x</>, at: -30, pos: () => [grown ? 3.2 : 1.9, grown ? 1.9 : 1.42], size: 44}} /* Repair 13 Nov: pre-grown label left of the curve (was x 3.35) */
 				markers={[{X: 4, Y: Math.log(4), at: turn + 30, color: INK}]}
 				overlay={gg => (
 					<>
@@ -57,16 +57,18 @@ export const S01: React.FC = () => {
 						<HandTag x={gg.pt[0] + 40} y={gg.pt[1] + 70} text="gradient ?" at={then + 24} size={52} color={MATH_GRADIENT} />
 						{atHalf ? <HandTag x={gg.pt[0] + 34} y={gg.pt[1] + 60} text="ln ½ ≈ −0.693" at={half + 6} size={40} color={INK} /> : null}
 						{atHalf ? <HandTag x={gg.pt[0] + 34} y={gg.pt[1] + 110} text="500 users: 0.69 weeks before the start" at={half + 20} size={32} color={INK_SOFT} /> : null}
-						{atHalf ? <HandTag x={gg.pt[0] + 60} y={gg.pt[1] - 150} text="still climbing: gradient > 0" at={climbing + 6} size={40} color={MATH_GRADIENT} marks={[{kind: 'arrow', from: [gg.pt[0] + 20, gg.pt[1] - 40], to: [gg.pt[0] + 120, gg.pt[1] - 120], bend: -0.1}]} markAt={climbing} /> : null}
+						{atHalf ? <HandTag x={gg.pt[0] + 60} y={gg.pt[1] - 330} text="still climbing: gradient > 0" at={climbing + 6} size={40} color={MATH_GRADIENT} marks={[{kind: 'arrow', from: [gg.pt[0] + 20, gg.pt[1] - 40], to: [gg.pt[0] + 120, gg.pt[1] - 270], bend: -0.1}]} markAt={climbing} /> : null}
 					</>
 				)} />
-			<HandTag x={1720} y={520} text="4 thousand users: 1.39 weeks" at={turn + 40} out={soIs} size={36} color={INK} anchor="end" />
+			{/* Repair 13 Nov: below the x axis, clear of the curve and the dashed link (was 1720, 520 on both) */}
+			<HandTag x={1800} y={790} text="4 thousand users: 1.39 weeks" at={turn + 40} out={soIs} size={36} color={INK} anchor="end" />
 			{/* the app anchor */}
 			<div style={{position: 'absolute', inset: 0, opacity: prog(f, answers + 10, 16), transform: `translateX(${(1 - smooth(prog(f, answers + 10, 24))) * -80}px)`}}>
 				<FunctionSimulator x={96} y={160} width={600} height={380} window={{x: [0, 1.6], y: [0, 4.5]}} family={EXP} timeline={[{frame: 0, x: 0, p: {c: Math.E}}, {frame: app + 20, x: 0}, {frame: turn - 10, x: Math.log(4)}]}
 					color={NAVY} curveWidth={6} xLabel="x: weeks" yLabel="y: users (thousands)" xTicks={[1]} yTicks={[1, 2, 3, 4]} draw={{at: app, dur: 40}}
 					point={{at: app + 10, color: NAVY}} />
-				<CurveLabel x={430} y={250} at={app + 30} color={NAVY} size={40}>y = e<Pow>x</Pow></CurveLabel>
+				{/* Repair 13 Nov: top left of the small graph, clear of the curve and its dot (was 430, 250) */}
+				<CurveLabel x={200} y={230} at={app + 30} color={NAVY} size={40}>y = e<Pow>x</Pow></CurveLabel>
 				<AppRig phone={{x: 110, y: 560, h: 420}} watch={{x: 380, y: 650, h: 300}} users={Math.exp(t)} perWeek={Math.exp(t)} weeks={t} at={answers + 10} watchLabel={`${fmtNum(t)} wk`} />
 				<HandTag x={620} y={640} text="users per week" at={app + 60} size={38} color={MATH_GRADIENT} />
 				<HandTag x={620} y={690} text="= users" at={app + 70} size={38} color={MATH_GRADIENT} />
@@ -79,7 +81,7 @@ export const S01: React.FC = () => {
 					<path d="M520,212 C760,180 1200,300 1690,520" stroke={INK_SOFT} strokeWidth={4} strokeDasharray="12 10" fill="none" />
 				</FrameSvg>
 			</div>
-			<div style={{position: 'absolute', left: 1100, top: 250, opacity: prog(f, soIs, 12) * (1 - 0.45 * prog(f, fails + 10, 12)), ...DISPLAY(46, INK_SOFT, 700)}}>
+			<div style={{position: 'absolute', left: 1420, top: 250, opacity: prog(f, soIs, 12) * (1 - 0.45 * prog(f, fails + 10, 12)), ...DISPLAY(46, INK_SOFT, 700)}}>
 				<MarkSpan kind="strike" at={fails} color={MATH_MISTAKE} width={5}>d/dx(ln x) = ln x ?</MarkSpan>
 			</div>
 			{f < answers + 10 ? null : <Legend at={answers + 10} />}
@@ -108,7 +110,7 @@ export const S02: React.FC = () => {
 			<Legend />
 			<FunctionSimulator x={GSQ.x} y={GSQ.y} width={GSQ.w} height={GSQ.h} window={SQ} family={LN} timeline={T}
 				xTicks={SQ_TICKS} yTicks={SQ_TICKS} xLabel="x: users (thousands)" yLabel="y: weeks" asymptotes={[0]}
-				point={{at: -30}} secant={{at: slide, out: one}} zoom={{cx: 330, cy: 400, r: 140, factor, at: slide + 6, out: one + 10}}
+				point={{at: -30}} secant={{at: slide, out: one}} zoom={{cx: 320, cy: 668, r: 110, factor, /* Repair 13 Nov: level with the point, left of it, so both leaders clear the zoom label */ at: slide + 6, out: one + 10}}
 				tangent={{at: one, halfLength: 170}}
 				readout={{x: RX, y: 300, width: 560, at: one, inline: true, rows: lnRows({markGx: every, glowGx: [every, 99999]})}}
 				overlay={g => <HandTag x={g.pt[0] + 30} y={g.pt[1] + 70} text="x × 2, gradient ÷ 2" at={dbl} out={every + 20} size={40} color={MATH_GRADIENT} />} />
@@ -201,7 +203,7 @@ export const S04: React.FC = () => {
 				timeline={[{frame: 0, x: 0, reflect: 0, p: {c: Math.E}}, {frame: foldStart + 6, reflect: 0}, {frame: foldStart + 56, reflect: 1}]}
 				color={NAVY} curveWidth={5} />
 			<CurveLabel x={330} y={200} size={44} color={NAVY}>y = e<Pow>x</Pow></CurveLabel>
-			<CurveLabel x={720} y={330} size={44}>y = ln x</CurveLabel>
+			<CurveLabel x={772} y={330} size={44}>y = ln x</CurveLabel>{/* Repair 13 Nov: x 720 to 772, off the dashed y = x */}
 			<CurveLabel x={760} y={200} size={40} color={INK_SOFT}>y = x</CurveLabel>
 			<RecallChip x={RX} y={170} at={-30} size={32}>Year 11: ln x is e<Pow>x</Pow> reflected in y = x</RecallChip>
 			<Chip x={RX} y={260} at={swaps} size={48}>(a, b) → (b, a)</Chip>
