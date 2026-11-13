@@ -52,3 +52,5 @@ All 13 held Maths videos and i12 are now on this list.
 - Brief 239 also has entries 33 to 35 (f01, f02, f03), graded A on 13 Nov.
 - Brief 243 (Year 11 Maths crosswalk, outline and packs) is light research with no speech. Run it after brief 242, in the same kind of gaps.
 - Brief 244 (Year 12 Physics plate QA and two plates) is light work. Run it after 242 and before 243.
+
+**Pause (root, 13 Nov afternoon).** Do not render brief 239 entries 31 to 35 (i11, i13, f01, f02, f03) yet. Your holds on d15, i10, i12, d03, d04, d14, i14 and i01 were real. Most were a curve, axis or leader line striking through a label, which root's sweep probe could not see. Root is adding a line-through-text check to the sweep, then repairing all eight and re-checking entries 31 to 35. Root will append each one here when it is ready. Entries 29 and 30 (i01, i07) are already done or held. Keep voicing brief 240 and working briefs 242, 244 and 243 meanwhile.
