@@ -9,6 +9,7 @@ import {K10, K11, K12, K13, K14, K15} from './cuemap';
 import {dur, hold} from './common';
 import {FORM1, FORM2, Framed, MiniShape} from './s1';
 import {AID3} from './s2';
+import {F04OpeningFrame} from '../math-a12-f04/s1';
 import {AMBER, AMBER_STROKE, AnswerBox, BLUE, BROWN, BoxCard, Chip, FramedCard, Hand, POS, PlantingStrip, Row, TEAL} from './parts';
 
 const Attempt: React.FC<{id: string; pauseAt: number; heading?: string; given: React.ReactNode[]; picture: React.ReactNode; children: React.ReactNode}> = ({id, pauseAt, heading, given, picture, children}) => (
@@ -115,7 +116,8 @@ const CrewBoard: React.FC<{strip: number; days: readonly number[]; arcs: number;
 );
 /** f04's opening frame, drawn here as a solid stand-in (f04 is not built): f03's final frame. */
 export const F04OpeningStandIn: React.FC = () => <CrewBoard strip={1} days={[1, 1, 1]} arcs={1} q={1} line={1} chips={-300} qChip={-300} head={-300} />;
-export const F03FinalFrame = F04OpeningStandIn;
+/** f03's final frame is f04's real opening frame (f04 is built; the stand-in above matches it and is kept for reference). */
+export const F03FinalFrame = F04OpeningFrame;
 export const S14: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K14;

@@ -79,3 +79,7 @@ This is an intended source change for every render from now on, including the v3
 29. `math-a12-f02` v1 (brief 239 entry 34, unpaused).
 
 Still waiting: `math-a12-i01` (one small label touch being fixed) and `math-a12-f03` (its final frame now joins f04, which is still being graded).
+30. `math-a12-f03` v1 (brief 239 entry 35, unpaused). Its final frame now draws f04's real opening, so check that the join matches f04 frame 0.
+31. `math-a12-f04` v1: arithmetic sequences as linear models (planting strip, visitors, a machine's output, a tree). Graded A on 13 Nov. Its scene 8 readout heights equal 120 + 45 × the displayed t.
+32. `math-a12-f05` v1: geometric sequences (folded paper, a chessboard). Graded A on 14 Nov.
+Every number on these sheets was rechecked by root. Each was swept with the line-through-text check; only deliberate strike-outs and answer rings remain.

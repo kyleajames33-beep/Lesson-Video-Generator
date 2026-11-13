@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-f04",
+  "fps": 30,
+  "status": "Brief240 reviewed narration input; no speech or build",
+  "sourceDesignSha256": "0ce652602f73af3429922a2714e96e3413624aabcc55f3243f6ac2800a775214",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (more or less than 1,200 seedlings?)",
+      "voiceover": {
+        "text": "Here's a tree-planting crew. They plant fifty seedlings on their first day, eighty on the second and a hundred and ten on the third, thirty more each day as they get faster. After twelve days, have they planted more or less than twelve hundred seedlings? Many people say less, or about the same. Twelve days at around a hundred seedlings sounds like twelve hundred. Let's find out, and see how arithmetic sequences model change like this."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "spotting an arithmetic model",
+      "voiceover": {
+        "text": "First, why is this arithmetic? Each day's planting is thirty seedlings more than the day before. When a fixed amount is added each period, the amounts make an arithmetic sequence. So a sub n is the number planted on day n. The first term, a, is fifty seedlings, the common difference, d, is thirty, and n counts the days. If the change were a fixed percentage instead, like three per cent more each day, the steps themselves would grow. That's a geometric sequence, and it's coming soon."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "one day, or the total?",
+      "voiceover": {
+        "text": "Now choose the right formula. One day's planting is a single term. On day twelve, it's fifty plus eleven lots of thirty, which is three hundred and eighty seedlings. But the question asks for the total over all twelve days, and that's a partial sum, S twelve. It's six, times fifty plus three hundred and eighty, which is two thousand five hundred and eighty seedlings. That's more than double the guess. The guess forgot that the later days are much bigger than a hundred."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "linear terms, curving totals",
+      "voiceover": {
+        "text": "Look at the two graphs. Each day's planting goes up by the same thirty seedlings, so the daily amounts lie on a straight line. a sub n is thirty n plus twenty, a linear function of the day number. That's what linear growth means: the same change in every period. But the running total adds a bigger amount each day, so its graph bends upward. The totals grow faster and faster, even though each day's planting only grows by thirty."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "worked example: a theme park",
+      "voiceover": {
+        "text": "Here's a bigger model. A new theme park has sixty-two thousand visitors in its first year, and three thousand five hundred more each year after that. Its visitors in year n are sixty-two thousand, plus n minus one increases, because the first year has no increase yet. That simplifies to three thousand five hundred n, plus fifty-eight thousand five hundred. Over the first ten years, the total is S ten. That's five, times one hundred and twenty-four thousand, plus nine increases. So it's five times one hundred and fifty-five thousand five hundred, which is seven hundred and seventy-seven thousand five hundred visitors."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example: the first year over a target",
+      "voiceover": {
+        "text": "In which year do its visitors first go over one hundred thousand? Set the formula above one hundred thousand. Then three thousand five hundred n is more than forty-one thousand five hundred, so n is more than about eleven point eight six. Years are whole numbers, so it's year twelve. Check both sides. Year eleven has ninety-seven thousand visitors, and year twelve has one hundred thousand five hundred. Notice that year twelve comes after eleven increases, not twelve."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "decay: where the model stops",
+      "voiceover": {
+        "text": "Arithmetic models can go down, too. A new machine makes nine hundred parts in its first week, and fifteen fewer parts each week after that. Here d is minus fifteen, so its output in week n is nine hundred and fifteen, minus fifteen n. That reaches zero in week sixty-one. After that, the formula gives negative parts, which can't happen, so the model only works up to there. How many parts does it make before its output reaches zero? That's the first sixty weeks: thirty, times nine hundred plus fifteen, which is twenty-seven thousand, four hundred and fifty."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "in year n, or after n years?",
+      "voiceover": {
+        "text": "Watch the wording about time. A young tree is one hundred and twenty centimetres tall when it's planted, and it grows forty-five centimetres each year. How tall is it after six years? Here the starting height is at time zero, before any year has passed. After one year, there's one year of growth. After six years, there are six. So the height is one hundred and twenty, plus six lots of forty-five, which is three hundred and ninety centimetres. As a sequence that starts at the planting height, that's the seventh term, not the sixth. So when the first value is in year one, year n has had n minus one changes. When the start is time zero, after n years means n changes."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "For any of these problems, first find a, d and n, and say what n counts. Then ask one question. Is it one period? Use a sub n. Is it a running total? Use S sub n."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A café sells eighty coffees on its first day, and six more coffees each day after that. How many coffees does it sell in total over its first fifteen days? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "This is a total, so it's a partial sum. Here a is eighty, d is six and n is fifteen. Day fifteen sells eighty plus fourteen sixes, which is one hundred and sixty-four. So the total is fifteen over two, times eighty plus one hundred and sixty-four, which is one thousand eight hundred and thirty. One hundred and sixty-four is wrong. That's just day fifteen's sales, not the total."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. On the first day of winter, a woodpile holds one hundred and eighty logs. Each day after that, it holds four fewer logs than the day before. On which day does it first hold fewer than one hundred logs? Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Day n comes after n minus one drops, so the pile holds one hundred and eighty, minus four lots of n minus one. Set that below one hundred. Then n minus one is more than twenty, so n is more than twenty-one. The first day below is day twenty-two, with ninety-six logs. Day twenty-one is wrong. On that day the pile holds exactly one hundred, not fewer."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So an arithmetic sequence models a quantity that changes by the same amount each period. Its terms lie on a straight line, and S sub n gives the running total. But what if each step multiplies instead? Two, four, eight, sixteen. Each term is double the one before."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}

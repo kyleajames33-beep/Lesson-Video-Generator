@@ -1,0 +1,164 @@
+{
+  "id": "math-a12-f05",
+  "fps": 30,
+  "status": "Brief240 reviewed narration input; no speech or build",
+  "sourceDesignSha256": "cd3e0ba2d6a2ed37bd443245f80a8b8cc43bce748551b9974ba828503ec7e753",
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "hook (doubling paper)",
+      "voiceover": {
+        "text": "Last video ended here. Two, four, eight, sixteen. The gaps aren't equal, so this isn't arithmetic, but every term is double the one before. Here's what doubling can do. A sheet of paper is about a tenth of a millimetre thick. Fold it in half, and it's two layers thick. Fold again, and it's four. If you could fold it forty-two times, how thick would it be? A few centimetres? A metre? It would be thicker than the distance to the Moon. How can doubling turn something so thin into something so huge?"
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-02",
+      "title": "geometric sequences",
+      "voiceover": {
+        "text": "In a geometric sequence, each term is the one before, multiplied by the same number. That number is called the common ratio, r. So a sub n equals r times a sub n minus one. To test a sequence, divide each term by the one before it. Take two, six, eighteen, fifty-four. Six over two is three, eighteen over six is three, and fifty-four over eighteen is three. Every ratio is the same, so it's geometric, with r equal to three. Now try five, ten, twenty, thirty-five. The first two ratios are two, but thirty-five over twenty is one and three quarters. One different ratio is enough. It's not geometric."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-03",
+      "title": "fractions, negatives and zero",
+      "voiceover": {
+        "text": "The ratio doesn't have to be a whole number. One hundred, fifty, twenty-five, twelve and a half has r equal to a half. Each term is half the last, so the terms shrink towards zero. One, minus two, four, minus eight has r equal to minus two. Multiplying by a negative number flips the sign every time, so the terms alternate. But r can never be zero. If it were, every term after the first would be zero, and the ratio test would divide by zero."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-04",
+      "title": "the nth term: count the multiplications",
+      "voiceover": {
+        "text": "Now a formula for any term. Start with a, the first term. The second term is a times r. The third is a times r times r, which is a r squared. Each step along multiplies by r once more. Just like arithmetic sequences, the nth term is n minus one steps from the first. So a sub n equals a, times r to the power n minus one. Back to the paper. The unfolded sheet is the first term, a tenth of a millimetre. After forty-two folds, it's the forty-third term, a tenth of a millimetre times two to the forty-two. Two to the forty-two is more than four trillion. That's why it reaches about four hundred and forty thousand kilometres."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-05",
+      "title": "an exponential function of n",
+      "voiceover": {
+        "text": "Here's why doubling grows so fast. Plot the terms of three, six, twelve, and so on. An arithmetic sequence adds the same amount each time, so its points lie on a straight line. Here each step multiplies, so each jump is bigger than the last, and the points curve upward. The formula is three times two to the n minus one. The variable n is in the power, so a sub n is an exponential function of n. With a positive r, the points sit on an exponential curve. With a positive first term and r between zero and one, the points fall towards zero instead. When r is negative, the signs alternate, so the points jump from one side of the axis to the other."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-06",
+      "title": "worked example: the eighth term",
+      "voiceover": {
+        "text": "Let's use the formula. The sequence is three, six, twelve, and so on. Find the eighth term. First, a is three, and r is six over three, which is two. The eighth term is seven multiplications from the first, so it's three, times two to the power seven. Two to the seven is one hundred and twenty-eight, so the eighth term is three hundred and eighty-four."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-07",
+      "title": "the first term over one thousand",
+      "voiceover": {
+        "text": "Which term is the first to go over one thousand? Set three times two to the n minus one above one thousand. Divide by three, so two to the n minus one is more than one thousand over three. To get n out of the power, take logs of both sides, and divide by log two. Log two is positive, so the inequality stays the same way round. Then n minus one is more than about eight point three eight, so n is more than nine point three eight. Positions are whole numbers, so it's the tenth term. Check both sides. The ninth term is seven hundred and sixty-eight, below one thousand, and the tenth is one thousand five hundred and thirty-six."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-08",
+      "title": "worked example: from two terms",
+      "voiceover": {
+        "text": "What if you're given two terms, but not the first? The third term is twelve, and the sixth term is ninety-six. From the third term to the sixth is three multiplications, so ninety-six is twelve times r cubed. Dividing cancels a. So r cubed is eight, and r is two. Then a times r squared is twelve, so a times four is twelve, and a is three. Here the gap is three steps, an odd number, so there's only one real cube root. With an even number of steps and a positive result, r could be positive or negative, so you'd get two possible sequences. A negative result would give no real r at all."
+      },
+      "holdSeconds": 0,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-09",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the difference to remember. Arithmetic adds the same number each step. Geometric multiplies by the same number each step. And to reach term n, you take n minus one steps, so you multiply by r, n minus one times."
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-10",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Find the sixth term of the geometric sequence four, minus twelve, thirty-six, and so on. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-11",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "First, r is minus twelve over four, which is minus three. The sixth term is five multiplications from the first, so it's four times minus three to the power five. An odd power of a negative number is negative, so the answer is minus nine hundred and seventy-two. Two thousand nine hundred and sixteen is wrong. It uses the power six, one multiplication too many."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-12",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. In a geometric sequence, the second term is six and the fourth term is fifty-four. Find all possible values of a and r. Pause here to answer."
+      },
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "durationInFrames": 1,
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "scene-13",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "From the second term to the fourth is two multiplications, so fifty-four is six times r squared. So r squared is nine, and r is three or minus three. Then a is six over r. So a is two with r equal to three, or a is minus two with r equal to minus three. Giving only r equals three is wrong. It misses the second sequence: minus two, six, minus eighteen, fifty-four."
+      },
+      "holdSeconds": 1,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-14",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a geometric sequence multiplies by the same ratio every step, and its nth term is a times r to the n minus one. But what happens when we add the terms? Put one grain of rice on the first square of a chessboard, two on the second, four on the third, doubling each time. The running totals are one, three, seven, fifteen and thirty-one. How many grains are on the first ten squares, without adding them one by one?"
+      },
+      "holdSeconds": 2,
+      "holdKind": "visual",
+      "durationInFrames": 1
+    },
+    {
+      "id": "scene-15",
+      "title": "key notes (quiet, 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "holdSeconds": 0,
+      "holdKind": "notes",
+      "durationInFrames": 1350
+    }
+  ]
+}
