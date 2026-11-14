@@ -18,7 +18,7 @@ let serveUrl = null;
 try {
 	const pub = path.join(base, 'public-slim'); buildSlimPublic(config, pub); const src = config.__entrySource;
 	fs.writeFileSync(entry, `import React from 'react';\nimport {Composition, registerRoot} from 'remotion';\nimport {ExplainerVideo} from '${posix(path.join(ROOT, 'src/explainer/ExplainerVideo'))}';\nimport {${src.exportName} as config} from '${posix(src.modulePath)}';\nimport {ExplainerAssetGuard} from '${posix(path.join(ROOT, 'scripts/lib/explainer-render-guard'))}';\nconst W: React.FC = () => <ExplainerAssetGuard><ExplainerVideo config={config} /></ExplainerAssetGuard>;\nregisterRoot(() => <Composition id={config.id} component={W} durationInFrames={${total}} fps={30} width={1920} height={1080} />);\n`);
-	serveUrl = await bundle({entryPoint: entry, publicDir: pub});
+	serveUrl = await bundle({entryPoint: entry, publicDir: pub, enableCaching: false});
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 90000});
 	for (const fr of frames) { const out = path.join(outDir, `after-${fr}.png`); await renderStill({composition, serveUrl, frame: Number(fr), output: out, imageFormat: 'png', timeoutInMilliseconds: 90000, logLevel: 'error'}); console.log(out); }
 } finally { release(); fs.rmSync(entry, {force: true}); if (serveUrl) fs.rmSync(serveUrl, {recursive: true, force: true}); }

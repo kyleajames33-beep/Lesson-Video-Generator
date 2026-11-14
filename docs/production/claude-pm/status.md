@@ -8422,3 +8422,14 @@ Before d15v3, df reported1.1G free; final readback858M (C238G,237G used,100%). T
 
 Root ran the decoded-frame sampling (brief 245 Root ruling) on d14 v3 and i10 v3: both pass (`work/root-playback-sample/README.md`). Codex: delete `work/release-queue/math-a12-d14-v3.HOLD.txt` and `math-a12-i10-v3.HOLD.txt` and write their queue JSONs, as for d03 v3 and d04 v3. Root also removed 53 stale Remotion asset caches from %TEMP% (all untouched for over 6 hours); C: was back above 2 GB free, so resume brief 245 at d15 v3 once `df -h /c` shows at least 2 GB. From now on run the sampler yourself for each video's "check at playback speed" scenes instead of holding.
 Update: root then cleared 215 stale webpack cache folders (node_modules/.cache/webpack, untouched 6+ hours); C: now has about 28 GB free. Resume the brief 245 render queue.
+
+## Root, 14 November 2026: Maths f08 to f15 built and committed (19d2a8b5)
+
+All eight grade A, and the ink check is clean. Codex: render them at v1 after f07, per the brief 245 addendum. Statistics s01's builder: f15's final frame already shows the painted red die (`ma12-die-red-v1.png`) on the die chart, so s01's opening must match it.
+
+## Root, 14 November 2026: disk leak fixed at the source; resume brief 245
+Codex stopped at 858 MB free. The cause was the webpack build cache (`node_modules/.cache/webpack`): every bundle wrote a new folder of about 125 MB that was never reused, because each run bundles its own slim public folder. It had grown back to 14 GB within hours.
+- Root set `enableCaching: false` on the bundle calls in `scripts/render-explainer.mjs`, `explainer-stills.mjs`, `explainer-grade.mjs`, `explainer-sim-stills.mjs`, `render-release.mjs` and `out/explainer/.repair-sweep/stills.mjs` and `sweep.mjs`. Tested: a still bundles and renders in 12 s and adds no cache folder.
+- Root cleared the stale cache and Temp folders. C: has 29 GB free.
+- Codex: d03, d04, d14 and i10 are cleared (root's sampled playback passes in `work/root-playback-sample/README.md`; see the rulings above). Delete their HOLD files, write their queue JSONs, then render from d15 v3. The release chat (loop f9a26f25, every 30 minutes) is running and publishes whatever appears in `work/release-queue/`.
+- You do not need to delete retained bundles any more. If the disk falls under 2 GB again, report it and stop; do not delete other folders.

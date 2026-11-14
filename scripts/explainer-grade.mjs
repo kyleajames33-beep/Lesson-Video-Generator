@@ -130,7 +130,7 @@ const Wrapped: React.FC = () => <ExplainerAssetGuard><AuditProbe><ExplainerVideo
 registerRoot(() => <Composition id={config.id} component={Wrapped} durationInFrames={${total}} fps={30} width={1920} height={1080} />);
 `);
 	console.log(`Bundling ${id}...`);
-	serveUrl = await bundle({entryPoint: entry, publicDir: pub});
+	serveUrl = await bundle({entryPoint: entry, publicDir: pub, enableCaching: false});
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 90000});
 
 	// ---- render and measure ---------------------------------------------------

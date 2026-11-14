@@ -35,7 +35,7 @@ try {
 	const emptyPublic = path.join(out, 'public-slim');
 	fs.mkdirSync(emptyPublic, {recursive: true});
 	fs.cpSync(path.join(ROOT, 'public/fonts'), path.join(emptyPublic, 'fonts'), {recursive: true});
-	const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/explainer/sims/demos.tsx'), publicDir: emptyPublic, outDir: bundleDir});
+	const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/explainer/sims/demos.tsx'), publicDir: emptyPublic, outDir: bundleDir, enableCaching: false});
 	for (const job of jobs) {
 		browser = await openBrowser('chrome');
 		const composition = await selectComposition({serveUrl, id: job.id, puppeteerInstance: browser, timeoutInMilliseconds: 90000});

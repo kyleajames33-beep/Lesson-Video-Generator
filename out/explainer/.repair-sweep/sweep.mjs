@@ -57,7 +57,7 @@ const Wrapped: React.FC = () => <ExplainerAssetGuard><SweepProbe${ink ? ' hideTe
 registerRoot(() => <Composition id={config.id} component={Wrapped} durationInFrames={${total}} fps={30} width={1920} height={1080} />);
 `);
 	const t0 = Date.now();
-	const serveUrl = await bundle({entryPoint: entry, publicDir: pub});
+	const serveUrl = await bundle({entryPoint: entry, publicDir: pub, enableCaching: false});
 	bundleDir = serveUrl;
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 90000});
 	const probes = {};

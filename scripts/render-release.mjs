@@ -47,7 +47,7 @@ for (const file of before.files.filter(f => f.path.startsWith('public/') && f.sh
   mkdirSync(path.dirname(destination), {recursive: true}); copyFileSync(file.path, destination);
 }
 console.log('Bundling selected release dependencies.');
-const serveUrl = await bundle({entryPoint: path.resolve(config.entryPoint), publicDir, outDir: path.resolve(outputDir, 'bundle')});
+const serveUrl = await bundle({entryPoint: path.resolve(config.entryPoint), publicDir, outDir: path.resolve(outputDir, 'bundle'), enableCaching: false});
 const inputProps = {lesson};
 const composition = await selectComposition({serveUrl, id: config.compositionId, inputProps});
 if (composition.durationInFrames !== totalFrames || composition.fps !== before.timeline.fps) throw new Error('Rendered composition differs from shared timeline.');

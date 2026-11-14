@@ -43,7 +43,7 @@ if (fs.existsSync(chunkDir)) throw new Error(`${chunkDir} exists. Preserve or re
 fs.mkdirSync(chunkDir, {recursive: true});
 const entry = path.join(base, 'entry.tsx');
 writeEntry(config, entry, references.assets);
-const serveUrl = await bundle({entryPoint: entry, publicDir: pub});
+const serveUrl = await bundle({entryPoint: entry, publicDir: pub, enableCaching: false});
 const bundleServer = await serveExplainerBundle(serveUrl);
 await bundleServer.checkFonts();
 const run = (args) => execFileSync(FFMPEG, args, {stdio: 'inherit'});

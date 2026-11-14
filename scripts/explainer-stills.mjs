@@ -13,7 +13,7 @@ const pub = path.join(base, 'public-slim');
 buildSlimPublic(config, pub);
 const entry = path.join(base, 'entry.tsx');
 writeEntry(config, entry);
-const serveUrl = await bundle({entryPoint: entry, publicDir: pub});
+const serveUrl = await bundle({entryPoint: entry, publicDir: pub, enableCaching: false});
 try {
 	const composition = await selectComposition({serveUrl, id, timeoutInMilliseconds: 60000});
 	const dir = path.join(base, 'stills');
