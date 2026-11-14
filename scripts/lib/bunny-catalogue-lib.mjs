@@ -89,7 +89,16 @@ export function findTitle(id) {
 			try { walk(JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')), path.join(dir, f)); } catch { /* skip unreadable ledger */ }
 		}
 	}
-	return ledgerTitles[id] ?? null;
+	if (ledgerTitles[id]) return ledgerTitles[id];
+	// Last resort: the design's "## YouTube metadata (draft)" section ("Title: ..." line).
+	const design = path.join(ROOT, 'docs/production/claude-pm/lessons', `${id}.md`);
+	if (exists(design)) {
+		const text = fs.readFileSync(design, 'utf8');
+		const at = text.indexOf('## YouTube metadata');
+		const m = at >= 0 ? /^Title:\s*(.+?)\s*$/m.exec(text.slice(at)) : null;
+		if (m) return {title: m[1], source: `${rel(design)} (design draft)`};
+	}
+	return null;
 }
 
 export function srtCueCount(text) {

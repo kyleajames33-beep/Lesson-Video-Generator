@@ -8,6 +8,15 @@ Publishing moves to a separate release chat (Claude Sonnet), which uploads throu
 - **Codex's job:** render, check and then **queue** each video. Codex no longer uploads in YouTube Studio.
 - **If a check fails:** hold the video exactly as before, report it in `status.md` and continue with the next one.
 
+## Root ruling (14 Nov, answering the d03 and d04 playback holds)
+
+Native playback cannot run on this PC (missing kernel-assets path). From now on, item 5 of the release standard (`checks/root-signoff-maths-builds.md`) is met by **decoded-frame sampling of the exact master**:
+- Run `python -I work/root-playback-sample/sample-sheets.py <key> <rev> <comma-separated scene numbers>` for the scenes named in the build notes' "check at playback speed" list (key is like `d14`, rev like `v3`).
+- It writes one-frame-per-second sheets from the master to `work/root-playback-sample/math-a12-<key>/`. Inspect every sheet for motion that lands wrong, overlaps, clips, freezes or goes blank, and record the result in the export review.
+- If it passes, write the release-queue JSON as usual. Continuous viewing stays with the owner on YouTube.
+
+**d03 v3 and d04 v3:** root ran this check and both pass (`work/root-playback-sample/README.md`). Delete your two HOLD files and write their queue JSONs now.
+
 ## Order of work
 
 1. **Disk.** Run `df -h /c` before each render. Under 2 GB free, stop and report.
@@ -38,6 +47,19 @@ Publishing moves to a separate release chat (Claude Sonnet), which uploads throu
    
    Write the JSON last, so the release chat never sees a half-written entry. Add one line per queued video to `status.md`.
 4. **Between renders**, resume brief 242 from Chemistry M2 v07, and voice per brief 240 as the daily Google quota allows.
+
+## Addendum (14 Nov, root): render Maths f08 to f15 after f07
+
+Root graded f08, f09, f10, f11, f12, f13, f14 and f15 A on their 16-frame sheets (`builds/math-a12-fNN-sheet.jpg`).
+- The ink check came back clean on all eight. The only remaining hits are deliberate strike-throughs and rings, ruled lines printed on the plates, and cross-fade frames.
+- They are committed.
+- Render each at v1, in order f08 to f15, after f07, using the same render, check and queue method as the entries above.
+- For item 5, run `sample-sheets.py` on each build note's "check at playback speed" scenes.
+
+The joins are drawn to match:
+- f07's final frame leads into f08's opening. f08's opening dissolves from f07's final frame over about 0.5 s; that dissolve is intended, so do not hold for it.
+- f08 to f15 each open on the previous lesson's final frame.
+- f15 ends on statistics s01's opening, with the red die.
 
 ## Never
 

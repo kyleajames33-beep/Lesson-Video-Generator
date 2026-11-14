@@ -6554,3 +6554,1871 @@ Brief240 t01: beach820px with buoys aligned to measured sea row560 inspected;300
 Brief240 g01 artwork checked at300/600/1500px with separate calculator on desk; blank-page and display rectangles supplied. G02: reuse shared g01 desk and calculator, no new plate. G03: reuse same desk/calculator and accepted s06 cookie callback; cookie geometry hold applies to callback. T04: no new plate. No duplicate art or speech.
 
 Brief240 artwork inventory: 61 unique requested plate names supplied as native PNGs, all local Drive mirror PNG hashes verified; metadata copied, cloud sync unverified. Geometry/profile deviations are explicit and are not approval to build or publish. All34 source review pairs retained; whole-course anchor findings remain with root. Daily Google quota hold remains; voice seconds/cost0 for this artwork stage.
+
+Brief239 d02 release resumed under root11Nov five-check standard. Existing checked master uploading as private draft gm9_OwAwG_Y; do not duplicate upload. Native1x intermittent samples inspected at00:13/00:41,01:24/01:35,02:05/02:43,03:04/03:19,04:39/04:54 and08:03; handoff switch and export brief recording still completing. Human continuous viewing/listening pending as root permits.
+
+## Brief239 d02 public,11November
+
+Published https://youtu.be/gm9_OwAwG_Y at verified Manual Maths playlist PLMcUYX3DYIeY position2 after d01. Copyright and Community Guidelines checks completed, no issues. Timed English Australia manual subtitles explicitly published. Design metadata retained, syllabus checked against current NESA page; ASCII greater-than rejected byYouTube so equivalent fullwidth glyph used. Master out/explainer/Explainer-math-a12-d02/Explainer-math-a12-d02-v1.mp4,540.5s,16215frames,SHA256113f5bc070083bd959eb1d4b677dab829fe4177cfaf9971fd89b0fde87380d8e. Existing120sample picture/font scans0flags and endpoints decode;16frame master sheet matches signed-off A sheet with one-frame readout rounding noted. Native1x playback sampled at00:13/00:41,01:24/01:35,02:05/02:43,03:04/03:19,04:39/04:54,08:03 and08:24/08:55; no new defect observed in sampled states. Export production brief passes under root11Nov sampled standard; continuous viewing/listening and independent ay pronunciation stay pending for owner. Exact sample qualifications in work/brief239/d02/export-review.json. Existing Drive master hash verified previously; release records locally mirrored. No re-render or re-voice.
+
+## Brief239 d03 held for phone text overflow,11November
+
+Concrete defect at01:11,scene2: weeks to reach and x thousand extend outside the black phone display, white lettering becomes unreadable on paper. Confirmed in native1x playback and exact master frame work/brief239/d03/phone-overflow-71s.png. Report work/brief239/d03/release-hold.md; root scene repair needed, no Codex code edit. Existing554.533s master retained,120sample scans0flags and A-sheet match unchanged. Private upload9aTAQTL-das saved, do not duplicate or publish it. Remaining playback items incomplete after this defect. Continuing d04 as brief239 directs.
+
+Brief239 d04 rendering: root A sheet inspected; export checker records only exact-preview items pending, to complete after render under root11Nov standard. Frozen2928dependencies,16088frames and222playback captions in work/brief239/d04. FreeRAM about0.82GB,Cfree31.72GB; concurrency1, no simultaneous voice/render. Existing d01/d02 public, d03 concrete phone-overflow hold.
+
+Brief240 f01 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;6050characters,16scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f02 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;5980characters,15scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f03 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;5776characters,15scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f04 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;5810characters,15scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f05 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;6100characters,15scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f06 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;6063characters,16scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f07 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;5841characters,16scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f08 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;6055characters,14scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 f09 Revision3 repairs independently checked:0 blockers,prior source findings resolved for current scope;6384characters,16scene strings,declared counts agree. Reports updated with current hash and changed-scene scope. Native plate/profile exceptions remain separate. No speech,source edit or re-render.
+
+Brief240 math-a12-f01 voice preparation only: 6050characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\f01\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f02 voice preparation only: 5980characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f02\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f03 voice preparation only: 5776characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f03\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f04 voice preparation only: 5810characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f04\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f05 voice preparation only: 6100characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f05\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f06 voice preparation only: 6063characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\f06\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f07 voice preparation only: 5841characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\f07\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f08 voice preparation only: 6055characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\f08\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f09 voice preparation only: 6384characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\f09\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f10 voice preparation only: 5821characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\f10\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f11 voice preparation only: 5636characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\f11\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f12 voice preparation only: 5629characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f12\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f13 voice preparation only: 5665characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f13\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f14 voice preparation only: 5578characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\f14\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-f15 voice preparation only: 5693characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\f15\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s01 voice preparation only: 5792characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\s01\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s02 voice preparation only: 5602characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\s02\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s03 voice preparation only: 5809characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\s03\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s04 voice preparation only: 6196characters,18scene takes,notes45s. Inputs work\brief240\voice-inputs\s04\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s05 voice preparation only: 6107characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\s05\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s06 voice preparation only: 6036characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\s06\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s07 voice preparation only: 5732characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\s07\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s08 voice preparation only: 6167characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\s08\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s09 voice preparation only: 5817characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\s09\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s10 voice preparation only: 6257characters,17scene takes,notes45s. Inputs work\brief240\voice-inputs\s10\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s11 voice preparation only: 5647characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\s11\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-s12 voice preparation only: 5515characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\s12\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-t01 voice preparation only: 6214characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\t01\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-t02 voice preparation only: 6023characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\t02\lesson.json;source recording check passes; paid voice still subject to quota,order and artwork checks. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-t03 voice preparation only: 5678characters,15scene takes,notes45s. Inputs work\brief240\voice-inputs\t03\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-t04 voice preparation only: 5974characters,16scene takes,notes45s. Inputs work\brief240\voice-inputs\t04\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-g01 voice preparation only: 5832characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\g01\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-g02 voice preparation only: 5591characters,14scene takes,notes45s. Inputs work\brief240\voice-inputs\g02\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief240 math-a12-g03 voice preparation only: 6034characters,13scene takes,notes45s. Inputs work\brief240\voice-inputs\g03\lesson.json;source recording check held for the correction/clarification in its original independent review; draft input is not approval to voice. No speech requested,seconds0/cost0; existing packs/audio preserved.
+
+Brief220 source-data follow-up: added NIST ethanoic acid C64197,index2,Coblentz4819 measured solution-transmission JCAMP,hash/source/conditions in assets/brief220-spectra/ir-browser-nov11.json. It cannot replace the required neat-liquid trace; spectroscopy recording holds remain. Acetone browser download stalled,no file; local HTTP403 recorded. No paid voice or design edit.
+
+Brief240 f04 artwork hand-in: public/assets/maths/ma12-tube-seedling-v1.png, public/assets/maths/ma12-young-gum-tree-v1.png, public/assets/maths/ma12-hillside-strip-v1.png. Native anchors, dimensions and deviations in docs/production/claude-pm/assets/ma12-f04-provenance.json; paper/dark/black/white QA inspected. Local Drive mirror SHA256 verified; cloud sync unverified. Source review findings still recorded; no speech or render.
+
+Brief240 f04 hillside Revision3 correction handed in: root resolved the profile to level-overall rolling terrain. New native PNG replaces only the previously held rising candidate; old candidate archived by hash. Native2172x724, alpha128 ground points(0,517),(543,501),(1086,461),(1629,505),(2171,517), equal endpoint rows517. Two-tile paper and black/white QA checked; visible pale edge haze removed with image tool. No pixel edits/stretching. Seam texture not pixel-identical and bottom8percent margin absent, both reported. This supersedes the contradictory-contract hold; remaining strict art holds are chessboard,cookie,orange overlay andtide scale. Mirror PNG/metadata hashes checked. No speech or render added.
+
+Brief238 i01 revised source independently rechecked:0 source blockers,6137characters,16scenes,current hash/cues in work/brief238/i01-repaired-source.json. Prior source hold resolved;new/previously skipped plates now being prepared. Actual geometry and quota still gate speech/build. No completed take regenerated.
+
+Brief238 i07 revised source independently rechecked:0 source blockers,5861characters,16scenes,current hash/cues in work/brief238/i07-repaired-source.json. Prior source hold resolved;new/previously skipped plates now being prepared. Actual geometry and quota still gate speech/build. No completed take regenerated.
+
+Brief238 i11 revised source independently rechecked:0 source blockers,5545characters,13scenes,current hash/cues in work/brief238/i11-repaired-source.json. Prior source hold resolved;new/previously skipped plates now being prepared. Actual geometry and quota still gate speech/build. No completed take regenerated.
+
+Brief238 i13 revised source independently rechecked:0 source blockers,5700characters,14scenes,current hash/cues in work/brief238/i13-repaired-source.json. Prior source hold resolved;new/previously skipped plates now being prepared. Actual geometry and quota still gate speech/build. No completed take regenerated.
+
+Brief239 d04 master assembled and scanned:536.2667s,16088frames;120picture and120font samples0flags,both endpoints decode.16-frame master sheet visually matches root A reference. All2928frozen dependencies unchanged,post-render check valid.222caption cues exported from playback timeline. Master Drive mirror SHA256 verified,cloud sync unverified. Native sampled playback/export review and publication next; no duplicate render.
+
+Brief239 d05 started: frozen playback/source inventory captured (15241frames,2930tracked files). Export checker retains exact-preview pending until post-render sampled review under root11Nov release standard. One guarded render launched at concurrency1; d04 playback window activation failed, so its publication remains pending. No completed master repeated.
+
+Brief239 d04 private upload checkpoint: https://youtu.be/zBf7-drf-bg (do not duplicate upload). Title/description,Maths playlist,not-made-for-kids,AI disclosure,EnglishAustralia and222cue timed SRT entered. YouTubeCopyright/CommunityGuidelines checks both noissues. Captions saved from upload editor; explicit published-caption state still to verify. NativeVLC activation failed. Private YouTube1080p playback verified rate1 and sampled opening/ratio frames,but remaining required moments and export review incomplete. Computer Use stopped the turn because it could not establish the current browser URL reliably; no public release. d05 render remains active in separate process,concurrency1. Continue by checking actual master/chunks before restarting anything.
+
+Brief239 d05 render finished: out/explainer/Explainer-math-a12-d05/Explainer-math-a12-d05-v1.mp4,508.033s,15241frames. Post-render scan/sheet/playback/publication pending. d06 single render started,15249frames frozen; no speech running. Browser access recovered to existing d04 draft; no duplicate upload.
+
+Brief239 d04 HELD after recovered browser playback:02:32.4 scene4 tangent-triangle rise label extends beyond master right edge,clipping intended rise1/ln2 approximately1.443. Exact1920x1080 evidence work/brief239/d04/triangle-label-152s.png,release-hold.json. This supersedes publication-next state. Existing private draft zBf7-drf-bg retained;do not publish or duplicate upload. No source edits. Remaining playback items incomplete after concrete defect. d05 rendered,checking;d06 renders next.
+
+Brief239 d05 post-render checks:120picture samples0flags,120font samples1false positive at247.63s independently inspected at1920x1080 (intended sans/hand glyphs,no serif fallback),both endpoints decode.16-frame sheet matches root A.201timed captions from playback timeline,2930frozen files unchanged. Drive local mirror master SHA256 verified,cloud sync unverified. Native playback/release review pending;do not repeat render.
+
+Brief238 i13 revised plates handed in:public/assets/maths/ma12-air-conditioner-v1.png1754x897 andma12-drainage-channel-v1.png1619x971,native generator PNG byte copies. Paper300/560 and450/900width plus dark/black/white QA inspected. Unit bbox~(219,229,1215,611),clear readout(1230,345,1560,505);channel near centre(721,804),far(1370,126),rims(218,404)/(1143,422),anchors~6px. Native canvas deviations and qualitative perspective curve reported;exact parabola belongs to coded graph. Provenance assets/ma12-i13-provenance.json,manifest updated. PNG/metadata Drive mirror hashes verified,cloud sync unverified. Source fixes rechecked0blockers;recording gate still to prepare,voice0/cost0. No existing take repeated.
+
+Brief238 i01 revised artwork candidates supplied with geometry HOLD: public\assets\maths\ma12-plant-stand-v1.png. Native canvas1107x1421 differs from1640x1800 guide. Soil spacing about260px rather than420px;floor-to-bottom-soil about320px rather than280px. No single uniform scale preserves both30cm shelf gaps and20cm floor offset. Strict4px guide not passed. Max350px growth composite inspected separately. Required paper sizes/test overlays and four-background alpha QA inspected. Provenance docs\production\claude-pm\assets\ma12-i01-provenance.json. Source recording gate passes for repaired narration only;art geometry still holds paid voice. No pixel edits or unchanged takes repeated. Native PNG/metadata local Drive mirror hashes verified by this hand-in;cloud sync unverified.
+
+Brief238 i07 revised artwork candidates supplied with geometry HOLD: public\assets\maths\ma12-bathtub-v1.png. At equivalent2400px-wide guide,inner walls~448/1955,rim440,floor819 differ from420/2000/420/900 by more than4px. Inner cavity remains rectangular;quarter-depth test uses actual measured bounds. Strict guide not passed. Required paper sizes/test overlays and four-background alpha QA inspected. Provenance docs\production\claude-pm\assets\ma12-i07-provenance.json. Source recording gate passes for repaired narration only;art geometry still holds paid voice. No pixel edits or unchanged takes repeated. Native PNG/metadata local Drive mirror hashes verified by this hand-in;cloud sync unverified.
+
+Brief238 i11 revised artwork candidates supplied with geometry HOLD: public\assets\maths\ma12-beach-entry-pool-v1.png, public\assets\maths\ma12-pool-cutaway-v1.png. Qualitative perspective painting passed visible checks;native dimensions reported. 400px/metre equal-unit log profile has measured surface errors greater than4px. Rounded ramp start and low ramp surface miss exact ln(x) guide. Candidate stays held;no profile warp. Required paper sizes/test overlays and four-background alpha QA inspected. Provenance docs\production\claude-pm\assets\ma12-i11-provenance.json. Source recording gate passes for repaired narration only;art geometry still holds paid voice. No pixel edits or unchanged takes repeated. Native PNG/metadata local Drive mirror hashes verified by this hand-in;cloud sync unverified.
+
+Brief238 repaired-source recording gates prepared for i01/i07/i11/i13;all four pass source-stage checks against current review hashes. i01/i07/i11 exact artwork guides remain held;prevoice guard still refuses them. i13 native artwork handed in and its sourceAudit-aware operational validation prepared. No paid request before19:00Sydney. Serial render coordinator will pause after current d06 and machine hand-in to reserve the single heavy-process slot for eligible quota-reset voice work.
+
+Brief239 2026-11-11T07:55:32.734Z: d06 master out/explainer/Explainer-math-a12-d06/Explainer-math-a12-d06-v1.mp4,508.300s,15249frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T07:55:32.736Z: Serial render queue paused after current lesson. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 d05 private upload checkpoint:XdFrgqAgy7c,source metadata andMathsplaylist/settings entered,201cue SRT saved,YouTubeCopyright/CommunityGuidelines noissues. Native1x frames sampled00:30.6,01:19.9,02:07.3,03:23.5/26.4. Browser seeking/timing inconsistent;remaining required moments and explicitcaption publication unresolved. No release pass;do not duplicate upload.
+
+Brief239 d06 sheet comparison complete:rendered16frames visually match root A reference,120picture/120font samples0flags,unchanged inputs. Native sampled playback andpublication pending. Machine render/backup hand-in above retained.
+
+Brief239 d18 scene03 source correction independently checked:only scene03 narration differs,5704characters total. Geometry/domain correction0source blockers,currenthash726bd8dc6ae95ae3129948d10e542b730a580c9e174f2fba6b03c0cd045c0ec5. All44current measured/audiofiles backedup andhashverified. One-scene recording gate passes,other12takes remain untouched. Speech request reserved for quota reset while rendering is paused.
+
+## Brief238 i13 voice hand-in
+
+math-a12-i13: docs/production/claude-pm/checks/m-a12-i13-redesign-learning-review.md: 1 blocker,2 should fix,0 optional. Shared findings counted once.; docs/production/claude-pm/checks/m-a12-i13-redesign-maths-check.md: 1 maths blocker,1 maths should fix,0 optional.238-I13-NOTES-SIGNED-AREA and238-I13-TOTAL-UNITS-SCOPE shared with learning report. Notes-fit is additional learning finding. Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public\assets\maths\ma12-air-conditioner-v1.png, public\assets\maths\ma12-drainage-channel-v1.png. 5700 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total453.30s, notes45s. Selected new-request billed usage1331 input/9553 output tokens; estimatedUSD0.086642. Measureddocs/production/claude-pm/lessons/math-a12-i13/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.026s in scene-02;176 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief238/voice-results/i13/hand-in.json. Shared held handoff assets and profile tolerance misses remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief239 d18 scene03 correction voiced/measured: 43.120s,new requests1,estimatedUSD0.009775. Other12takes/timings exactly preserved;all44original backup files verified before canonical update. Text,alignment,bold cues,peaks/silences/request attempts checked;fullscale0,longsilences0,low-scorewords2. Evidencework/brief239/d18-scene03-revoice/hand-in.json. Measured lesson updated;fresh playback snapshot prepared. Human listening and sampled render playback pending. No full master produced by this helper.
+
+Brief239 2026-11-11T08:58:58.633Z: d07 master out/explainer/Explainer-math-a12-d07/Explainer-math-a12-d07-v1.mp4,532.300s,15969frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification CHANGED: see post-render-input-check.json. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T08:58:59.317Z: ready list changed;read new instructions before next render
+
+Brief239 2026-11-11T08:58:59.460Z: Serial render queue ready list changed;read new instructions before next render. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 i14 scene02 correction voiced/measured: 41.040s,new requests1,estimatedUSD0.009300. Other14takes/timings exactly preserved;all original backup files verified before canonical update. Text,alignment,bold cues,peaks/silences/request attempts checked;fullscale0,longsilences0,low-scorewords3. Evidencework/brief239/i14-scene02-revoice/hand-in.json. Measured lesson updated;fresh playback snapshot prepared. Human listening and sampled render playback pending. No full master produced by this helper.
+
+Brief239 d05 PUBLIC:https://youtu.be/XdFrgqAgy7c.508.033s/15241frames,masterSHA256a621e246ce64dbd18e27d0769312ce08ecd3558b37e19b912a62893368bb3a03.120picture samples0flags;120font samples1falsepositive visually resolved,both endpoints decoded. Master16-frame sheet matches root A;native1x quickturn/upright cabins/leader,cosine trace,arc,degree stretch/reversal,3carriedtangents,both25dots,4quarterperiodslides andnotes inspected with timestamps in work/brief239/d05/export-review.json. Export-stage brief passes;human continuous viewing/listening pending under explicit root sampled standard.201cueEnglishAustralia manual SRT explicitly published before publicSave. Source metadata/settings retained;YouTubechecks noissues,HD complete. ManualMathsplaylistPLMcUYX3DYIeY position3 afterd01/d02,verified afterreload;held d04private draftremovedfromplaylist,notdeleted. Record youtube/brief239-d05-public-2026-11-11.json. Master andpublicationmetadata Drive local mirrorhashesverified,cloudsyncunverified.
+
+Brief239 d18 correction caption/backup follow-up:180cues exported from fresh build playback timeline andcanonical caption copies updated. New measured pack,audio andrepair records localDrive SHA256 verified (65files);original full backups remain. Cloud sync andhuman listening unverified. Onlyscene03changed,other12takes preserved.
+
+Brief239 i14 correction caption/backup follow-up:180cues exported from fresh build playback timeline andcanonical caption copies updated. New measured pack,audio andrepair records localDrive SHA256 verified (72files);original full backups remain. Cloud sync andhuman listening unverified. i14K2 cues listed in build notes allresolve against new wordtimings,includingminusfour occurrence1;proof work/brief239/i14-scene02-revoice/cue-check.json.
+
+Brief239 d06 private upload checkpoint:l4NA-hyrLaw. Existing checked master uploaded once;metadata entered. Captions andnative playback/public release still pending. d07 rendered sheet visually matches root A reference;native playback remains pending. d08 is rendering.
+
+Brief239 2026-11-11T09:48:34.955Z: d08 master out/explainer/Explainer-math-a12-d08/Explainer-math-a12-d08-v1.mp4,515.267s,15458frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T09:48:34.957Z: Serial render queue paused after current lesson. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 d06 PUBLIC:https://youtu.be/l4NA-hyrLaw. Master out/explainer/Explainer-math-a12-d06/Explainer-math-a12-d06-v1.mp4,508.300s/15249frames,SHA2568ae04bed3ee9e90b5b472a2000b89d2dca6ea20636858e76db6df7bfb4ff67ba.120picture/120font samples0flags,both endpoints decoded,16-frame sheet matches root A. Native1x graph/crank,levelleader,carriedtriangle,speedgauge,dashedoutside-onlytangent,ratechain/pulses,matchingflattangents,handoff andnotes sampled;exact99.6667s masterframe confirms narrow ratio blank. Timestamps/evidence work/brief239/d06/export-review.json;export-stagegate passes. Human continuousview/listening pending owner. 199cueEnglishAustralia manualSRT explicitlyPublished beforePublicsave. Source metadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position4 afterd01/d02/d05 verified. Master/publicationrecords localDrivehashverified,cloudsyncunverified. d09 rendering serially;d07 reviewnext.
+
+Brief239 d07 private upload checkpoint:https://youtu.be/JS4W5rmJlqk. Existing532.3s master uploadedonce,metadata entered;captions/nativeplayback/publication pending. Snapshot differences inspected:only unrelated rooti14files andregistry;frozenentry directlyimports d07config. d08 rendered16sheet visuallymatches root A,120picture/120font0flags,unchangedinputs;nativeplayback/publicationpending. d09 rendering.
+
+Brief239 d07 HELD after native1x review:01:04.529/01:06.022 deck clock rewinds to0.00day,length4.00m,width2.00m,area8.00m2,but panel still labelled AREA ADDED SINCE DAY0 retains real2.13m2/guess0.25m2. Exact1920x1080frame66s confirms contradiction,work/brief239/d07/deck-rewind-66s.png andrelease-hold.json. Rootsheet matches butdoesnotresolve this playback defect. Master532.3s/15969frames,120picture/120font0flags,endpointsdecode,Drivehashverified. Privatehttps://youtu.be/JS4W5rmJlqk retained once,outsideplaylist;metadata entered,EnglishAustralia SRT saved,YouTubechecksnoissues. Othernativechecks incomplete afterdefect,noexportpass. No sourceedits orfinishedrender repeated;continue d08 whiled09renders.
+
+Brief239 d08 private uploadcheckpoint:https://youtu.be/HHSnWWid6cQ. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 2026-11-11T10:25:27.826Z: d09 master out/explainer/Explainer-math-a12-d09/Explainer-math-a12-d09-v1.mp4,517.667s,15530frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T10:25:28.301Z: d10 not rendered:unexpected export-stage blocker,see work/brief239/d10/pre-render-export-stage-check.log.
+
+Brief239 coordinator correction:d10 was incorrectly skipped because a Node warning preceded valid checker JSON. Inspected actual report:only the two explicitly permitted sampled-preview/studentlearning pending blockers,no sourceblocker. Parser fixed in workcoordinator;pause after currentd11 andresume d10 first,nextremaininglist. d11 alreadybegan,preserve it anddo not runanother heavyprocess. No falseapproval orcompletedmasterrepeat.
+
+Brief239 d08 PUBLIC:https://youtu.be/HHSnWWid6cQ. Master out/explainer/Explainer-math-a12-d08/Explainer-math-a12-d08-v1.mp4,515.267s/15458frames,SHA25603042e9fb2648f759955b856887e3cf4beb02d27bf70e3dd6558feed3585a819.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d08/export-review.json,export-stagegatepasses. 213cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position5verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 d09 private uploadcheckpoint:https://youtu.be/hdD2P8Mc5tw. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 d09 PUBLIC:https://youtu.be/hdD2P8Mc5tw. Master out/explainer/Explainer-math-a12-d09/Explainer-math-a12-d09-v1.mp4,517.667s/15530frames,SHA25638d0f9c8dcb4f0e080477a76d3cda914337c0f6089ddc62395af4990e075d925.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d09/export-review.json,export-stagegatepasses. 209cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position6verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 2026-11-11T11:26:16.142Z: d11 master out/explainer/Explainer-math-a12-d11/Explainer-math-a12-d11-v1.mp4,521.600s,15648frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T11:26:16.148Z: Serial render queue paused after current lesson. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 2026-11-11T11:26:26.207Z: d10 not rendered:unexpected export-stage blocker,see work/brief239/d10/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.315Z: d12 not rendered:unexpected export-stage blocker,see work/brief239/d12/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.424Z: d13 not rendered:unexpected export-stage blocker,see work/brief239/d13/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.527Z: d14 not rendered:unexpected export-stage blocker,see work/brief239/d14/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.712Z: d15 not rendered:unexpected export-stage blocker,see work/brief239/d15/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.820Z: d16 not rendered:unexpected export-stage blocker,see work/brief239/d16/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:26.928Z: d17 not rendered:unexpected export-stage blocker,see work/brief239/d17/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:27.034Z: d18 not rendered:unexpected export-stage blocker,see work/brief239/d18/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:27.142Z: d19 not rendered:unexpected export-stage blocker,see work/brief239/d19/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:27.250Z: i02 not rendered:unexpected export-stage blocker,see work/brief239/i02/pre-render-export-stage-check.log.
+
+Brief239 2026-11-11T11:26:27.350Z: i03 not rendered:unexpected export-stage blocker,see work/brief239/i03/pre-render-export-stage-check.log.
+
+Brief239 queueparser secondreconciliation:NodewarningscanfollowJSONaswellasprecedeit. Parsedall11actualskippedreports(d10,d12-d19,i02/i03),eachcontainsonlythe2root-permitted exactpreview/studentlearningpendingfindings,nootherblocker. CorrectedboundJSONextractionvalidatedagainsteveryreport,work/brief239/preflight-parser-reconciliation.json. i04alreadyhas6completedchunkswhenfound,preservedandfinishingserially;pauseafterit,thenrestartd10first. Priorunexpected-blockerlabelsareparsererrors,notlessonholds. No completedmasterredone.
+
+Brief239 d11 private uploadcheckpoint:https://youtu.be/nf-dR0IROiY. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 d11 REVIEWED PRIVATE:https://youtu.be/nf-dR0IROiY.521.600s/15648frames,masterSHA25657bc66301a9f2f52b505374b10600c9f4deda3873f5fd033d0d2ec27e5533c67.120picture/120font0flags,endpointsdecode,unchangedinputs,16sheetcorrespondstorootA. Frame14where-dy/dx-exists givenschipwrapsbelowfirstchip;native440.320/442.001 confirmsreadable/unobscured. Native1xlighthousechangeover,beam0to0.8andback,parallelneverlands,fastnegativeangle/0pause,3heldslopes,race1.3returnpi/3,constantteal1.000,smallmapraceandcarriedsquash/slide/wallscheckedwithtimestampsinwork/brief239/d11/export-review.json. Exportgatepasses. 217cueEnglishAustralia manualSRTexplicitlyPublished;HDcomplete,notkids,AIyes,Education,sourcemetadata. Private/outsideplaylistuntil d10releasehandled,do notduplicate. Master/reviewmetadata localDrivehashverified,cloudsyncunverified;humanview/listeningpending. i04finishingitsalready-startedrender;correctedparserwillreturntod10next. Futureworkers1whennear1GBfreeRAMorlimitedcommitheadroom toavoidrepeatedguardwaits;guardunchanged.
+
+Brief239 2026-11-11T12:07:08.655Z: i04 master out/explainer/Explainer-math-a12-i04/Explainer-math-a12-i04-v1.mp4,509.933s,15298frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T12:07:08.657Z: Serial render queue paused after current lesson. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 2026-11-11T12:35:00.935Z: d10 master out/explainer/Explainer-math-a12-d10/Explainer-math-a12-d10-v1.mp4,492.167s,14765frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T13:06:13.563Z: d12 master out/explainer/Explainer-math-a12-d12/Explainer-math-a12-d12-v1.mp4,545.900s,16377frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T13:33:40.080Z: d13 master out/explainer/Explainer-math-a12-d13/Explainer-math-a12-d13-v1.mp4,487.133s,14614frames.120picture samples 1flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T14:03:07.084Z: d14 master out/explainer/Explainer-math-a12-d14/Explainer-math-a12-d14-v1.mp4,497.033s,14911frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T14:35:45.930Z: d15 master out/explainer/Explainer-math-a12-d15/Explainer-math-a12-d15-v1.mp4,531.233s,15937frames.120picture samples 0flags;120font samples 4flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T15:11:11.469Z: d16 master out/explainer/Explainer-math-a12-d16/Explainer-math-a12-d16-v1.mp4,497.000s,14910frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T15:48:53.717Z: d17 master out/explainer/Explainer-math-a12-d17/Explainer-math-a12-d17-v1.mp4,535.633s,16069frames.120picture samples 0flags;120font samples 1flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T16:21:37.587Z: d18 master out/explainer/Explainer-math-a12-d18/Explainer-math-a12-d18-v1.mp4,463.300s,13899frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T16:58:25.955Z: d19 master out/explainer/Explainer-math-a12-d19/Explainer-math-a12-d19-v1.mp4,517.967s,15539frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T17:34:54.874Z: i02 master out/explainer/Explainer-math-a12-i02/Explainer-math-a12-i02-v1.mp4,518.800s,15564frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T18:13:26.217Z: i03 master out/explainer/Explainer-math-a12-i03/Explainer-math-a12-i03-v1.mp4,536.933s,16108frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T18:52:24.873Z: i05 master out/explainer/Explainer-math-a12-i05/Explainer-math-a12-i05-v1.mp4,539.833s,16195frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+12November2026 root68/owner direction: resume repaired i01,i07,i11 recording; i13 already complete and preserved. Native artwork geometry differences remain documented for builder fitting under decision30, not certified within4px. i01 new stand repaint/inspection in progress; i07/i11 existing painted candidates retained. d18 scene03 and i14 scene02 required corrections already voiced before their renders. No completed take repeated.
+
+Brief239 d10 private uploadcheckpoint:https://youtu.be/8KWSLLhK4R4. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+12November i01 plant stand: newly painted and edge-cleanup edited with built-in generator;nativePNG1197x1315 copiedbyteforbyte to public/assets/maths/ma12-plant-stand-v1.png. Soilcentres(276,865),(596,612),(910,346),floorabout1180. Fourbackgroundalpha and112/224/350pxgrowth at300/770px inspected;no timbercontact. Strict1640x1800/14pxcm/4pxgeometryand8percentmargin notcertified;builderfitrequired underdecision30,all measurementsretained. Previousplate backedup. Nativefile/provenance/QA localDrivehashcopiesverified,cloudsyncunverified. Readyforvoicingunderroot68.
+
+Brief239 2026-11-11T20:04:03.235Z: i06 master out/explainer/Explainer-math-a12-i06/Explainer-math-a12-i06-v1.mp4,495.033s,14851frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+## Brief238 i01 voice hand-in
+
+math-a12-i01: docs/production/claude-pm/checks/m-a12-i01-redesign-learning-review.md: 0 blockers, 2 should fix, 0 optional.; docs/production/claude-pm/checks/m-a12-i01-redesign-maths-check.md: 0 maths blockers, 0 maths should fix, 0 maths optional. Asset-margin and notes-fit findings are in the companion learning review. Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-bookcase-pots-v1.png, public/assets/maths/ma12-bean-shoot-v1.png, public\assets\maths\ma12-plant-stand-v1.png. 6137 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total529.43s, notes45s. Selected new-request billed usage1490 input/11455 output tokens; estimatedUSD0.103840. Measureddocs/production/claude-pm/lessons/math-a12-i01/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.284s in scene-08;204 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief238/voice-results/i01/hand-in.json. Shared held handoff assets and profile tolerance misses remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+math-a12-i01 voiced hand-in backup: 69 canonicalpack,audio,operationalinput/result files localDrivehashverified;cloudsyncunverified. Completedtakesretained.
+
+Brief239 d10 PUBLIC:https://youtu.be/8KWSLLhK4R4. Master out/explainer/Explainer-math-a12-d10/Explainer-math-a12-d10-v1.mp4,492.167s/14765frames,SHA256733c451727fbaa745bbd4f3c6d2cd62e0de9593323ab132aa8def91f52fb9f99.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d10/export-review.json,export-stagegatepasses. 193cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position7verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+## Brief238 i07 voice hand-in
+
+math-a12-i07: docs/production/claude-pm/checks/m-a12-i07-redesign-learning-review.md: 1 blocker, 4 should fix, 0 optional. Findings shared with the maths check count once.; docs/production/claude-pm/checks/m-a12-i07-redesign-maths-check.md: 1 maths blocker, 2 maths should fix, 0 maths optional. Shared findings:238-I07-NONPOSITIVE-RULE,238-I07-SECONDS,238-I07-STRIP-COUNT. Cue and stale-author-table findings are in the learning review. Overall unique result1 blocker/4 should fix. Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public\assets\maths\ma12-bathtub-v1.png. 5861 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total477.43s, notes45s. Selected new-request billed usage1407 input/10156 output tokens; estimatedUSD0.092107. Measureddocs/production/claude-pm/lessons/math-a12-i07/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.204s in scene-15;189 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief238/voice-results/i07/hand-in.json. Shared held handoff assets and profile tolerance misses remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief239 d11 PUBLIC:https://youtu.be/nf-dR0IROiY. Master out/explainer/Explainer-math-a12-d11/Explainer-math-a12-d11-v1.mp4,521.600s/15648frames,SHA25657bc66301a9f2f52b505374b10600c9f4deda3873f5fd033d0d2ec27e5533c67.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d11/export-review.json,export-stagegatepasses. 217cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position8verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+d11 platform evidence precision: final12November StudioDetails andContent Notices showdash/noissues displayed,HDcomplete. Copyright explicitlypassedatprivateupload;Communitywasstillcheckingthen. Separate finalCommunitypanel no longerexposed,sofinalclearNotices usedforrelease. Thisqualifiesthegeneric publichand-in checks wording. Exactevidenceinwork/brief239/d11/platform-checks.json;publicationrecordcorrectedandlocalDrivemirrored.
+
+math-a12-i07 voiced hand-in backup: 69 canonicalpack,audio,operationalinput/result files localDrivehashverified;cloudsyncunverified. Completedtakesretained.
+
+Brief239 d12 private uploadcheckpoint:https://youtu.be/rA6Bl1Bu0lU. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+## Brief238 i11 voice hand-in
+
+math-a12-i11: docs/production/claude-pm/checks/m-a12-i11-redesign-learning-review.md: 1 blocker,1 should fix,0 optional. Shared mathematical finding counted once.; docs/production/claude-pm/checks/m-a12-i11-redesign-maths-check.md: 1 maths blocker,0 maths should fix,0 optional. Shared238-I11-NOTES-SIGNED-AREA;coordinate-label finding in learning report. Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public\assets\maths\ma12-beach-entry-pool-v1.png, public\assets\maths\ma12-pool-cutaway-v1.png. 5545 reviewed narration characters across13 takes;1 exact-text takes served from cache;12 new requests. Total457.40s, notes45s. Selected new-request billed usage1382 input/9657 output tokens; estimatedUSD0.087604. Measureddocs/production/claude-pm/lessons/math-a12-i11/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.145s in scene-02;179 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief238/voice-results/i11/hand-in.json. Shared held handoff assets and profile tolerance misses remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+math-a12-i11 voiced hand-in backup: 60 canonicalpack,audio,operationalinput/result files localDrivehashverified;cloudsyncunverified. Completedtakesretained.
+
+## Brief240 f01 voice hand-in
+
+math-a12-f01: docs/production/claude-pm/checks/m-a12-f01-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f01-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-cricket-scoreboard-v1.png, public/assets/maths/ma12-cricket-ball-v1.png, public/assets/maths/ma12-stacking-chair-side-v1.png, public/assets/maths/ma12-cricket-grass-strip-v1.png. 6050 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total533.93s, notes45s. Selected new-request billed usage1539 input/11569 output tokens; estimatedUSD0.104890. Measureddocs/production/claude-pm/lessons/math-a12-f01/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.083s in scene-01;213 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief240/voice-results/f01/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief239 d12 HELD private https://youtu.be/rA6Bl1Bu0lU. Master out/explainer/Explainer-math-a12-d12/Explainer-math-a12-d12-v1.mp4,545.900s/16377frames,SHA256e0ce84f69c15827d493bf2b0ec39a7302f9cfb0c259d9c13ed0b0acb9151b278.120picture/120font0flags,endpointsdecoded,16sheetcorrespondsrootA,116cuesevaluated. Actualplaybackdefect at06:12.3/scene08phaseB: sunbeam=secx=cosec(pi/2-x) clipsatdiagramrightedge,loses-x). Native372.319s andexactmasterframe11169 confirm. Evidence work\brief239\d12\phase-b-label-372s.png;hold work\brief239\d12/release-hold.json. Private,notinplaylist,SRTsavedbutexplicitcaptionPublishnotdone. Restofplaybackreviewstoppedafterrealdefect. No exportapproval,sourceedit,revoice orduplicate master/upload. Master/evidencelocalDrivehashverified,cloudsyncunverified. Continue d13.
+
+math-a12-f01 voiced hand-in backup: 69 canonicalpack,audio,operationalinput/result files localDrivehashverified;cloudsyncunverified. Completedtakesretained.
+
+2026-11-11T20:54:25.595Z repaired Maths queue: f02 voicing stopped;no automatic retry. Existing takes preserved,see work/brief240/f02-nov12-voice.log.
+
+2026-11-11T20:54:39.743Z repairedvoice priority ended;zeroactivevoice/renderprocessesverified. Resume remainingBrief239rendersserially,readReadylistaftereachlesson;finishedmasters preserved.
+
+Brief239 d13 private uploadcheckpoint:https://youtu.be/LvFRIP67TiM. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+12November f02 partialhand-in: scene01..06generated/aligned;scene07paidrawtake andgenerationmetadata preservedincache,alignmentfailed(emptystderr). No Google429/quotaerror shown,no requestretry. 49audio/cachefileslocalDrivehashverified. Resume07alignmentfromexacttextcacheafteractivei08render;donotregenerateit. Details work/brief240/f02-partial-nov12-backup.json. Renderingresumedseriallywhilevoicingpaused.
+
+12November Brief240 f10 repairedsource recheck:0blockers inupdatedscope,5883characters/14scenes,SHA25645866aa94da0a7c83fae6bf328e262e7f63b34ec7d971bfef87b31ee0c1a1a59. Exact interest is5000/3;about1666.67 is spoken asapproximate andexact equality shown. Smooth curve estimates distinguished fromwhole repayments;two500dollar steps supported. Rates explicitly separate fixed-from-start loans;keynote asymmetry scopedtothis example. Firstgraphstepfrom2147.29to2500 isnot500;visual500chips explicitlylink2500,3000,3500,whichresolvesreferent. No newsourceblocker. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 f11 repairedsource recheck:0blockers inupdatedscope,5892characters/14scenes,SHA2566e4ef0954528fea7205b87d52159d80b9cbf9e1f8a515b671ff36a5038da72be. Equality M=Pr nowseparately leadsdivisionbyzero/constantbalance;M<Pr negativepower target. Amountstillowing usesAn directly;three payoffunknownssetAn0. Total240equalroundedpayments explicitlystated ratherthanclaiming smallerfinalpayment model. Repairedhandoffmatches. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 f12 repairedsource recheck:0blockers inupdatedscope,5760characters/15scenes,SHA2567190c884bf3ba787ad253f6528f555b96c526f0749d0457d3a734710d70155c0. Rounded-up withdrawal nowrunsoutat120th withsmallerfinalwithdrawal. Rateconversionexplicitly coursemodel,compoundingonceperpaymentperiod;periodcountsandendpayments retained. Exactfinaldue independentlyrecomputed below. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 f13 repairedsource recheck:0blockers inupdatedscope,5734characters/15scenes,SHA256f4cdfa160661c182b2c94422a74c570b25942c2cebbeec05ad77793fd5d17837. Corrected first-deposit intermediates268.4279/267.0924. Zeroopeningbalance,ncount,andr0limitFV=nM clearlyrecorded;positive-rateconditionearliestdepositearnsmost nowexplicit. Conditions/model boundariesaccurate. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 f14 repairedsource recheck:0blockers inupdatedscope,5688characters/15scenes,SHA2563dd0d5388468aa0e89e0f843cb71842d2375e2ad9faf96cc2778bab2ac659eb3. Full-precisiontotalroundingnoteexplainspartssummingonecentless. Doublingdepositsconditionzeroopeningbalance addedtoexample/question. Supergrowth fixed7percent mathematicalmodel explicitlystated;whichchangewinsdepends onsizeandtime. No recommendationtoinvest. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 f15 repairedsource recheck:0blockers inupdatedscope,5808characters/14scenes,SHA25632570d72e7bbf13a58fb3670ad9fe9ccb7a79058ebbaf8feabb1753aebcf1f6e. Zeroopeningbalance/positiverateexplicitbeforeannuitywork. Balanceupdatesonlyatmonthend identifiedasmodel. Roundingupconditionrpositive/goalnotmet retained;live diehandoffsource alreadyconfirmed in source-followups-nov11.md. Earlierfullreview/primarysourcework retained;newrecordinginputs/gates stilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s01 repairedsource recheck:0blockers inupdatedscope,5964characters/14scenes,SHA2560cc46cf0672dc50810e72d47af7e7da939fd849a5102c693b39d154ca0fd4e75. Unrounded frequencies sum exactly1 by exhaustive mutuallyexclusive counts;roundedsums may differ. Maximum-face discrepancy comparison nowexplicit illustration,not formal preselected-face test. General models no longer require equallylikely outcomes. Original200rolls/38fours sourcechecks retained;predesigned seededruns remain illustrative. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s02 repairedsource recheck:0blockers inupdatedscope,5797characters/14scenes,SHA256c39c176ed6720a645aa183e30e833905e34c35833fbd0bc57cf3ddab1dcd9acf. Finiteuniform claim nowrestricted to discrete outcomes;countablyinfinite equal atoms cannot sum1,whereas continuousuniform works differently. Probability0.3 excluded onlyfor each atom,not a group event. Equalcount test expressly requires equallylikely underlying outcomes. Calendar nonuniform counts unchanged. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s03 repairedsource recheck:0blockers inupdatedscope,5981characters/14scenes,SHA2565f95209090686d1ca1f1df464a073f652f61a53d7fb764579f60f8a6b4ee76a5. Signeddeviations replace distances;zero deviations allowed after squaring. SD correctly described as spread,withsqrtvariance formula retained. Runningmean isone illustrative run,not deterministic convergence path. Insurer90dollars ispremium minus expected claims before othercosts,not assertedprofit. Originalmu1.7,variance0.81 andpayout210/sigma1134 calculations retained. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s04 repairedsource recheck:0blockers inupdatedscope,6288characters/18scenes,SHA256d669499c8a28d7f3dc4e6b1a907fd521ee92ec831d486127ba5718120beb4f0f. Empirical histogram/CDF nowexplicit estimates,within-class proportionality expressly assumes even spread. Singletons zero probability remainsvalidforcontinuous models. Intervals arethe chosen events,not the onlypossible positiveprobabilityevents. CDF endpoints nowlimits;bounded-example statements scoped. Reactiontime counts20/50/70/40/20 sum200 andestimatedintervalprobability0.6 unchanged. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s05 repairedsource recheck:0blockers inupdatedscope,6264characters/16scenes,SHA256ace0f6a8b498ddb79d483c7c0d057d8f4e8bb89ad08f5fa879e1c8cca3093df8. f=Fprime qualified whereF hasgradient;piecewise corners neednot define derivative,andisolateddensityvalues change no area. Primitive relation scopedtodensitymodels usedhere. Highdensity meanslocal concentration,not positiveprobability ofanexact value. F=x2/9 andf=2x/9 giveinterval1..2probability1/3 aspreviouslyverified. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s06 repairedsource recheck:0blockers inupdatedscope,6169characters/16scenes,SHA256980c00cb51a8e91f47b9302b7cc2ddc88e9eaddc8e7c61550c12b557e1f428e9. CookieX nowcontinuous idealrandompoint radius,distinguished fromfinitechip selection. Fifteenperannulus identified asone designedsample,not universal sample property. Mode described asdensitypeak/mostlikelynearby,not positivepointprobability. Flatuniform hasno singlepeak. Existingquartiles2,2sqrt2,2sqrt3 andequalareaannuli remaincorrect;paintedcircle deviations remain forbuilderfitting. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s07 repairedsource recheck:0blockers inupdatedscope,5859characters/16scenes,SHA256831272b700107971f520fced50e9677ac7a584f332aa837cdf73aba3fefe9c0d. Uniformarrivalphase nowexplicit assumption;equal-width intervals compared instead ofpointprobabilities. Roundingerror uniformity conditionalon fractionalparts notbunched nearwholeunits. Widthratio formula expressly intersectssupport[a,b]. Flatdensity1/(b-a),CDFpieces,andbuswait values remainunchanged. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s08 repairedsource recheck:0blockers inupdatedscope,6218characters/14scenes,SHA2568f4683d1369f831aa10d4b044fe20ec45886136ba61747dc6fdacf1a8c7aaa04. Stripprobability clearlyapproximate. E(X2)>=mu2 includesdegenerate equality;SD describedasspread ratherthanmeanabsolutedistance. Fortyminutes/4minutes nowrough song-equivalentguide,not exact expected renewalcount;lastsong maynotfinish. Fullprecisiontrace requirementretained. Newindependentquadrature confirmsplaylistnorm1/mean4/varianceabout0.758;midpointmeans2.625/2.65625/2.6640625 correct. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s09 repairedsource recheck:0blockers inupdatedscope,5869characters/15scenes,SHA256ecb10557f156a4d68f4819ad6b80e0c5e20639e874a745ed7cee39ea53778055. Directnormal histogram andfive90-chip-sum bags nowseparatelydisclosed onscreen;root65 explicitlyacceptsdisclosure withoutregeneration. Histogram isillustration,not newevidenceproving CLT. Model-fit discussion requires tailsaswellassymmetricpeak. Negative-massarea qualifiedasnegligiblefortheseparameters,notuniversal. Existingpegboardcausalexplanation retained. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s10 repairedsource recheck:0blockers inupdatedscope,6301characters/17scenes,SHA2561ce5ad46e57ffa10f3dd415bbb49d524796d8ecb8b6c78bbf5f6dd77990dff64. Spoken(x-mu)squared grouping matchesfactorisedsecondderivative. Empiricalruleandjuicethresholdresults explicitlymodel probabilities,not guaranteed samplecounts. SciPy recheckconfirmswithin1/2/3sigma0.6827/0.9545/0.9973 andP(X<130)=0.0912 forN(150,225). Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s11 repairedsource recheck:0blockers inupdatedscope,5688characters/15scenes,SHA256e71aa4cd6ab98a3bc306bff5e56951253ef15f282913d36ac17df04f4c64d740. Allleft-CDF/positive-z-onlystatements nowreferonlytothe displayedtable,not everytable. Fishinterpretation usesatleastthreshold undernormalmodels. Boltvaluesfromroundedz1.67versusexact5/3 explicitlyapproximate. NoNESA-suppliedtableimplied. Independentrecheckupper tails1.25/1.6 gives0.1056/0.0548. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 s12 repairedsource recheck:0blockers inupdatedscope,5636characters/15scenes,SHA25620141e1e1507ed33f21b673a27b1c65fda6d88eafd7ef400596aaabe22912246. Seeded19/200bottlecountidentifiedasonesimulatedrun. Table-derivedmu508.64 honestlyleavestail0.0099,justunder1percent,not exact;targetprobabilityworkedusingroundedtablez. Cerealmax1.9expresslyone-decimalgrid;continuousstrictboundaryabout1.941hasnomaximum. Attempt2sigmaabout4hours ratherthanexact;SciPy gives3.998. Safe-roundingdirectionandgridpass/fail independentlyrecomputed. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 t01 repairedsource recheck:0blockers inupdatedscope,6289characters/15scenes,SHA25613db7859876998906da4b3c8c3cfdd96646ccf4beac74a8a9bb78cb45d0e1d52. Buoytime/radian conversion nowexplicit angularrate1radianpersecond;phase delay thereforepi/3seconds inthismodel. Cursorat1.5independentlyrecomputed2.798449. Repeatingtanasymptotes everypi acknowledged;onlywindowedonesdrawn. Current6289charactersestimatednearcap;measurebefore anyreserve trim. Nativebuoyedge differences remain reported forbuilderfitting,not pixel-identicalcertification. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 t02 repairedsource recheck:0blockers inupdatedscope,6071characters/16scenes,SHA25606f6c577f60cbcaed9a17426f96009fdd553aa5fe2e6a6992d903f50788d2d3f. Onlynewnarrationadds smooth-wave modellingassumption to tidehandoff. Existingnumericaltrig/window/domaincheckretained;closedenddotsalready specified. Finalframeunchanged,so t03joinintact. Tideboardnativeanchorsavailablebeforebuild;physicalguide deviations remainrecorded. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 t03 repairedsource recheck:0blockers inupdatedscope,5809characters/15scenes,SHA2564fec3a550286e0649c6158e43bc662f1f6d7d2eaed7a6655d9df31c87ec94165. Checklist nowrestrictedtosinusoidalmodels,not arbitraryperiodicfunctions. Boatwindowboundedtofirst12hourcycle thenrepeats:acos(1/4) gives2.5174hoursand9.4826hours,so[0,2.52]and[9.48,12] arecorrectroundedcrossingwindows. Midline4.5/amplitude3/period12andspokenatleastthresholdcondition unchanged. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 t04 repairedsource recheck:0blockers inupdatedscope,6001characters/16scenes,SHA2561ba726107897c3b2e6140b4fd09bf80b4cd4fc0f971459b2ac38f1c46abdef63. Logaxis narrowrangescanberescaled;preferenceexplainedbycomparisons/range,not impossiblelayout. 95versus85dBreadingis11.8percenthigher whileintensityis10times;3dBfactorabout2. Tinylinearvalues callednearzero,andCelsiusrange comparedby10degreedifference ratherthanphysicalratio. Currentcafeaccent iscorrectU00E9;oldpreparedmanifesthadmojibakeU00C3/U00A9,so scene06also requiresfreshinput. No replacementcharacters in source. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 g01 repairedsource recheck:0blockers inupdatedscope,5889characters/14scenes,SHA256a1082575df4176ef891f2154b90bb9fa0de8184d800f28b1a2199e9d130eb6b6. Lastoperation nowbestfirst-rule heuristic,not absolutemandate;memoryline sayssuggests. Oneequation/twounknownsclaim scopedtothisfamily. Stationarydip givesa0,b-3;localmaxclassification nowearnsignchange. Spokenln(x2-4)grouping explicit. Drawnskateboardangle mustuseactualunequalwindowunits;75.96degreesreservedforequalunits. Fullmath/errorreviewretained. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 g02 repairedsource recheck:0blockers inupdatedscope,5711characters/14scenes,SHA2562a2a73b0301c24fb4beba55ad75a7a6fcaa02d10424c75648dd435a7f93eee30. Indefinite-plusknownvalue andinitialvalueplusdefiniteintegral bothallowed. Readingsallowintegralestimation,not claimnothingtointegrate. Area/distance instruction scopedtographandaxis;between-curvesgeneralisation omitted. Spokenln(x2+1)grouping clear. Trapezoids35litres andsignedpieces-ln2/ln5 givingtotalarealn10 independentlyrechecked. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 g03 repairedsource recheck:0blockers inupdatedscope,6261characters/13scenes,SHA256f580b7e85b30cce4c2cea0a9d1982176d810655f7b208960b3f1b10b0dd7fad0. Uniformity uses equal-widthintervals;normalanduniform comparedat samethreshold,not samesupport. Rateperperiod versusnperiodcount distinguished. Annuityzero-start/endpayment conditions nowexplicit inquestionandfeedback;lastdepositearnsnointerestyet. Fivepercentnonzeroexample25155.79 andcrossedlumpsum32577.89 independentlyrecomputed;zeroratelimit belongsf13. Roundedloanmaximum retainedaspreviouslyverified. Nearcap6261characters;actualvoicedmeasurementrequired. Earlierfullreview/primarysourceworkretained;recordinginputs/gatesstilltorefreshbeforepaidvoice. No finishedtake repeated.
+
+12November Brief240 repaired-source readiness complete:all34sourcescheckedcurrent,25changeddesignsindependentlyrecheckedagainstpreviousfindingsandfreshrecordinggatescreated;f01-f09unchangedsources/gatesretained. Currentinputscontainexactrepairednarration,noem dash/replacementcharacters. Previousoperationalversionspreservedunderwork/brief240/root68-prior. Fourprofiledeviationsremainrecorded(ma12-chessboard-top-v1.png,ma12-cookie-v1.png,ma12-tide-board-v1.png);owner/root68clearsvoicing,builderfitrequired,nofalsegeometrictolerancepass. 319input/review/manifestfileslocalDrivehashverified,cloudsyncunverified. No paidcallsorfinishedtakesrepeated.
+
+12November Brief240 repaired-source readiness complete:all34sourcescheckedcurrent,25changeddesignsindependentlyrecheckedagainstpreviousfindingsandfreshrecordinggatescreated;f01-f09unchangedsources/gatesretained. Currentinputscontainexactrepairednarration,noem dash/replacementcharacters. Previousoperationalversionspreservedunderwork/brief240/root68-prior. Fourprofiledeviationsremainrecorded(ma12-chessboard-top-v1.png,ma12-cookie-v1.png,ma12-marker-buoy-orange-v1.png,ma12-tide-board-v1.png);owner/root68clearsvoicing,builderfitrequired,nofalsegeometrictolerancepass. 321input/review/manifestfileslocalDrivehashverified,cloudsyncunverified. No paidcallsorfinishedtakesrepeated.
+
+Brief239 2026-11-11T21:45:31.927Z: i08 master out/explainer/Explainer-math-a12-i08/Explainer-math-a12-i08-v1.mp4,532.900s,15987frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T21:45:31.950Z: Serial render queue paused after current lesson. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+2026-11-11T21:45:44.186Z i08 render/checkprocess ended. Resume repairedvoice runner:f02 existing01..06audioandpaid07rawcache mustbereused;wholelessonquotacheck runsbeforecalls. No concurrentrender.
+
+## Brief240 f02 voice hand-in
+
+math-a12-f02: docs/production/claude-pm/checks/m-a12-f02-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f02-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-stacking-chair-side-v1.png. 5980 reviewed narration characters across15 takes;8 exact-text takes served from cache;7 new requests. Total493.07s, notes45s. Selected new-request billed usage457 input/3633 output tokens; estimatedUSD0.032925. Measureddocs/production/claude-pm/lessons/math-a12-f02/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.068s in scene-01;199 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:8 scenes, details inwork/brief240/voice-results/f02/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+2026-11-11T21:50:59.138Z repaired Maths queue: f03 requires14 new requests;86/99 used. Whole lesson does not fit. No speech request or retry made;resume next quota window. Completed takes preserved.
+
+math-a12-f02 voiced hand-in backup: 66 canonicalpack,audio,operationalinput/result files localDrivehashverified;cloudsyncunverified. Completedtakesretained.
+
+Brief239 d13 PUBLIC:https://youtu.be/LvFRIP67TiM. Master out/explainer/Explainer-math-a12-d13/Explainer-math-a12-d13-v1.mp4,487.133s/14614frames,SHA256f0ea094a2c60d276a5acdc4907b485bd54782cc9592382c387c3111f4639e05f.120picture/120font scans:1/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d13/export-review.json,export-stagegatepasses. 192cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position9verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 d14 private uploadcheckpoint:https://youtu.be/5HN0LvoIiOI. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 d14 HELD private https://youtu.be/5HN0LvoIiOI. Masterout/explainer/Explainer-math-a12-d14/Explainer-math-a12-d14-v1.mp4,497.033s/14911frames,SHA2565c3a6b3c96d6eecb85ec98b9d93bb6185a4d7051f779c28a53921d65e92f0c59.120picture/120font0flags,bothendpointsdecode,16sheetmatchesrootAwithsameheadingoverlapnotresolvedbysheetapproval,130directcuesresolve. Native1x273.686/276.355/280.841sandframe8208at273.6s: scene07Givenscardcoversbottomofcosxdenominator. Evidencework\brief239\d14\quotient-heading-273s.png,holdwork\brief239\d14/release-hold.json. RemainsPrivate,outsideplaylist;manualEnglishAustraliaSRTexplicitlyPublished. Laterpractice/finalreviewstoppedafterdefect. Noexportpass,sourceedit,revoice,duplicatemasterorupload. LocalDriveevidencehashverified,cloudsyncunverified. Continue d15.
+
+Brief239 d15 private uploadcheckpoint:https://youtu.be/78opFTgmzks. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 2026-11-11T22:27:12.418Z: i09 master out/explainer/Explainer-math-a12-i09/Explainer-math-a12-i09-v1.mp4,519.067s,15572frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 d15 HELD private https://youtu.be/78opFTgmzks. Masterout/explainer/Explainer-math-a12-d15/Explainer-math-a12-d15-v1.mp4,531.233s/15937frames,SHA256ba451b2dd8cf1a7ff70e50b4b07902b018a0647339eff3d3982038db23c14aec.120picture0flags/120font4flagsallvisuallyresolvedsans-seriftemplatefalsepositives,bothendpointsdecode,16sheetcorrespondsrootA,172ASTliteralcuesevaluated0unbound. Native1x455.709/459.552s/frame13671at455.7s: scene13feedback2violet one tangent,gradient2 labelrunsoffrightedge. Evidencework\brief239\d15\feedback-label-455s.png,holdwork\brief239\d15/release-hold.json. Private,outsideplaylist,EnglishAustraliamanualSRTexplicitlyPublished,bothplatformchecksnoissues,HDcomplete. Finalnotes/handoffreviewnotclaimedafterdefect. Noexportpass,sourceedit,revoice,duplicatemasterorupload. LocalDriveevidencehashverified,cloudsyncunverified. Continue d16.
+
+Brief239 d16 private uploadcheckpoint:https://youtu.be/2OUjYk6pwf8. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 d16 HELD private https://youtu.be/2OUjYk6pwf8. Masterout/explainer/Explainer-math-a12-d16/Explainer-math-a12-d16-v1.mp4,497.000s/14910frames,SHA256f3055c0deccf5718bcc13e0315cf6e3ef50608ff80d5c484801383b49728047e. 120picture0flags/120font0flags,endpointsdecoded,16frame master content/layout corresponds rootA,148ASTliteralcuecallsresolve0unbound. Rootsheet doesnot sample overlapinstant. Actualdefect:Scene06 at254.1s/frame7623: handwritten every nearby point is higher overlaps the printed inflection(2,2) label. Native254.165/256.225 and full1920master confirm persistent collision that obscures both annotations. Evidencework\brief239\d16\minimum-annotation-254s.png;holdwork\brief239\d16/release-hold.json. Private saved,HDcomplete,Noticesdash,both CopyrightandCommunityexplicitly noissues. EnglishAustralia timedmanualSRTexplicitPublishdone. Notinplaylist. MetadataASCIIanglebrackets convertedtoequivalentfullwidthcomparisons dueYouTubevalidation;wordingpreserved. Opening inherited slope table/glows/vasecut/fill stream and rates/base-belly-neck/tints/tangentpause/inflectionguide/ring/diamond/14cmvase return/signstrip/x4entry/localmaximum and minimum sampled1x. Review stops atannotationdefect;laterinconclusivetest/practice/finalnotesnotclaimedreviewed. Keep private,noexportapproval,sceneedit,speech orduplicaterender/upload. Continue d17. Humancontinuousview/listeningpending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+Brief239 d17 private uploadcheckpoint:https://youtu.be/N0DCjZVH2Gs. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 2026-11-11T22:58:51.474Z: i10 master out/explainer/Explainer-math-a12-i10/Explainer-math-a12-i10-v1.mp4,474.033s,14221frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T22:59:48.731Z: i12 render failed (1);completed chunks preserved,see render.log.
+
+Brief239 i12 render blocked before frame rendering: asset guard raises RangeError Invalid graph window. Located StudioPlot in src/explainer/lessons/math-a12-i12/s1.tsx:126 with height170, below graphTransform minimum180. No failed speech request or render retry. No completed chunks inferred; failure is during asset scan before rendering. Existing outputs preserved. Scene repair belongs Claude under brief239 no-scene-edit rule; continue i14 serially. Evidence work/brief239/i12/render.log.
+
+Brief239 d17 HELD private https://youtu.be/N0DCjZVH2Gs. Masterout/explainer/Explainer-math-a12-d17/Explainer-math-a12-d17-v1.mp4,535.633s/16069frames,SHA2560540c2446ac137cb3a12711c217b112680b63be5c62583ef6a85e05214821e92. 120picture0flags/120font1flag(frame1539)visuallyresolvedsans-seriftemplatefalsepositive. Endpointsdecoded,16sheetcontent/layoutcorrespondstorootA,minoranimatedphaseonly.187cuemapentriesresolve0missing. Rootsheetdoesnotsamplecollisioninstant. Actualdefect:Scene08 domain explanation: red x=0:no point annotation overlaps local min(1,2),obscuringthetext. Native229.126s(viewpaintnear227s),full1920masterframe6810at227.0s confirmsactualcollision. Evidencework\brief239\d17\no-point-label-227s.png;holdwork\brief239\d17/release-hold.json. Private saved,HDcomplete,Noticesdash,bothCopyrightandCommunityexplicitlycomplete/noissues. EnglishAustralia timedmanualSRTexplicitPublishdone. Outsideplaylist. Opening/laptop launch-fast-levelchart/wigglyandruler sketches/redrejection/cornersandsmoothredraw/halfturn/domainpieces/asymptoteriders sampled1x. Stops onactualannotationcollision;laterstack/views/quartic/memory/practice/notesnotclaimedreviewed. Holdprivate,noexportapproval,sourceedit,speech orduplicatemaster/upload. Continue d18,whose requiredscene03revoiceisalreadycompleted. Humancontinuousview/listeningpending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+Brief239 d18 private uploadcheckpoint:https://youtu.be/UR-aqXCHpEU. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 2026-11-11T23:38:31.219Z: i14 master out/explainer/Explainer-math-a12-i14/Explainer-math-a12-i14-v1.mp4,483.233s,14497frames.120picture samples 0flags;120font samples 0flags (flags require visual review). Both endpoints decoded,16-frame sheet generated,playback captions exported. Frozen input verification unchanged. Drive local master hash verified,cloud sync unverified. Root-sheet comparison,native sampled playback and publication remain pending. No release approval inferred from machine checks. Ready list re-read before next lesson.
+
+Brief239 2026-11-11T23:38:31.242Z: Serial render queue eligible render list exhausted. d18 remains excluded until its required scene3 re-voice is completed. Finished masters were not re-rendered. Visual/playback review and public release are separate pending work.
+
+Brief239 d18 PUBLIC:https://youtu.be/UR-aqXCHpEU. Master out/explainer/Explainer-math-a12-d18/Explainer-math-a12-d18-v1.mp4,463.300s/13899frames,SHA256e05ba7b8af6fed78437b98238db10f84a895843e7914dd8748e67fd283d8c3a2.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d18/export-review.json,export-stagegatepasses. 180cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position10verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 d19 private uploadcheckpoint:https://youtu.be/wmTUBKL3e8Y. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 d19 PUBLIC:https://youtu.be/wmTUBKL3e8Y. Master out/explainer/Explainer-math-a12-d19/Explainer-math-a12-d19-v1.mp4,517.967s/15539frames,SHA25627646ebe941fe6fe45f3f0f4927195b3ab218a57587a646df322d9b4aee78380.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/d19/export-review.json,export-stagegatepasses. 202cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position11verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 i02 HELD before upload: Scene 03 gradient-of-the-guess readout displays 9.9 against target 1.5, while the plotted derivative height is about 3.0. Expected guess gradient is twice the target. Shared PairedDerivativePanel forwards readout into the lower derivative FunctionSimulator, so s.slope is the second derivative rather than the displayed derivative height. At x=0.5 this would show 16 versus target 4 instead of the correct 8 versus 4. Master out/explainer/Explainer-math-a12-i02/Explainer-math-a12-i02-v1.mp4, 518.8s/15564 frames, SHA256 f1b4a33fcf476bac8e8a799b34edd06d12d18415d2453b3f90bd5dce57184391. 120 picture and 120 font samples zero flags; both endpoints decode, frozen inputs unchanged at completion, 124 cue-map entries resolve zero missing. 16 master frames compared with root A. Frame 4 has the same numerical readout defect in both; root signoff does not remove the contradiction. Minor moving-value phase difference elsewhere. Evidence work/brief239/i02/v1-sheet-frame-04.png; work/brief239/i02/release-hold.json. Not started. Real defect already established from full-resolution decoded master frame and source. Later playback items are not claimed. Hold existing master, no upload, no source changes or rerender under brief 239. Continue i03. Human listening pending. Local Drive evidence hash verified, cloud sync unverified.
+
+Brief239 i03 private uploadcheckpoint:https://youtu.be/syeTNBdeUJc. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i03 HELD private https://youtu.be/syeTNBdeUJc. Masterout/explainer/Explainer-math-a12-i03/Explainer-math-a12-i03-v1.mp4,536.933s/16108frames,SHA256bac3ab3e35bfc1a9fe7ff9ba17cdff0abf7c1c396e5b559cf0bb9ca557ca45d2. 120 picture and font samples zero flags; both endpoints decode; 111 cue-map entries resolve, zero missing; 16-frame sheet matches root A with minor phase differences. Actualdefect:Scene 03, 81.5 seconds (master frame 2445): answer box covers lower half of handwritten everywhere: gradient = 3 x height. AnswerBox and HandTag both y=640; answer arrives 80.7s, annotation remains until 82.3667s. Actual readable-label overlap, not a whole-scene crossfade. Evidencework\brief239\i03\answer-transition-81s.png;holdwork\brief239\i03/release-hold.json. Private saved, HD complete, not kids, AI yes, Education, source metadata. Original English Australia timed SRT explicitly Published. Copyright no issues; Community Guidelines ongoing at private save. Outside public playlist. Native rate 1 verified at 10.126/14.130/17.025: phone and clock run to 8h,98.9 percent. 75.178/79.141/82.049: triangle sweep, ratio 3 and overlap. 84.082/88.006/92.160: scaled gradient dots land on integrand and annotation later clears. Later build-note checks not claimed. Hold current master/upload, no duplicate upload or render, no source edits under brief 239. Continue i04. Human listening pending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+Brief239 i04 private uploadcheckpoint:https://youtu.be/yzNCJ3FTtEY. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i04 PUBLIC:https://youtu.be/yzNCJ3FTtEY. Master out/explainer/Explainer-math-a12-i04/Explainer-math-a12-i04-v1.mp4,509.933s/15298frames,SHA25600702fd39a3a8d3e7b5cee7be2c6265415c800cc78e19689f16dd354cd12bc0b.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/i04/export-review.json,export-stagegatepasses. 213cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position12verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 i04 platform evidence precision: copyright explicitly clear in upload wizard; Community Guidelines still ongoing then, final Details Notices dash. Separate final Community completion was not exposed. Public release retained under five-check sampled standard. Publication record uses exact platform-checks evidence. Supplemental import-closure/platform/delta reports for d13,d18,d19 and i02 updated hold backed up with local Drive hash verification; cloud sync unverified. i02 exact defect frame3404 at113.4667s.
+
+Brief239 i05 private uploadcheckpoint:https://youtu.be/RHM37G_GAyE. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i05 PUBLIC:https://youtu.be/RHM37G_GAyE. Master out/explainer/Explainer-math-a12-i05/Explainer-math-a12-i05-v1.mp4,539.833s/16195frames,SHA25624cc6520e3d18b9c3657b5225396e3fb539bc0b70b6e94b3e8c3946160ed5458.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/i05/export-review.json,export-stagegatepasses. 218cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position13verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 i06 private uploadcheckpoint:https://youtu.be/wgtnLUP5lgg. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i06 PUBLIC:https://youtu.be/wgtnLUP5lgg. Master out/explainer/Explainer-math-a12-i06/Explainer-math-a12-i06-v1.mp4,495.033s/14851frames,SHA25650054a82086e37bb37e63310335c8b0680cb17304aca4aefc56328bfd40d4c06.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/i06/export-review.json,export-stagegatepasses. 188cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position14verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 i08 private uploadcheckpoint:https://youtu.be/5nJ7tNHhd-4. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i08 HELD private https://youtu.be/5nJ7tNHhd-4. Masterout/explainer/Explainer-math-a12-i08/Explainer-math-a12-i08-v1.mp4,532.900s/15987frames,SHA25644b2656ed7c8b2c1eba3725931beb0bd0a8ab9e696bafc5a3abd1b9c2ced339d. 120 picture/font samples zero flags, both endpoints decode,157 cue-map entries resolve zero missing.16-frame master sheet matches rootA,minor moving-value phase. Actualdefect:Scene01 at29s,masterframe870: accumulation definition white box covers upper half of after noon: more cars leave annotation. Formula appears at27.433s while annotation remains. Confirmed native29.129/32.004 and full-resolution master. Source s1.tsx:65,69. Evidencework\brief239\i08\definition-overlap-29s.png;holdwork\brief239\i08/release-hold.json. Private saved,HD complete,not kids,AIyes,Education,source metadata. Original English Australia manual timed SRT explicitly Published. Copyright and Community checks both explicitly complete,no issues. Outside public playlist. Native rate1 verified15.162/20.204/23.007:clock9to11amto1pm,arrow in then out.25.165/29.129/32.004:returns11am400cars;definition overlaps annotation. Later playback, countdown and noon maximum not claimed. Hold existing master/upload,no duplicate upload or rerender,no source edits under239. Continuei09.Humanlisteningpending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+Brief239 i09 private uploadcheckpoint:https://youtu.be/QkaQKB47xOI. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i09 PUBLIC:https://youtu.be/QkaQKB47xOI. Master out/explainer/Explainer-math-a12-i09/Explainer-math-a12-i09-v1.mp4,519.067s/15572frames,SHA25611a249a5926d94e4c8327c747468d23a66f301b7e7cb11a6fd626159dbb6d879.120picture/120font scans:0/0flags,bothendpointsdecoded,16framemaster sheetmatchesrootA. Native1xbuildnoteitems sampledinwork/brief239/i09/export-review.json,export-stagegatepasses. 205cueEnglishAustralia manualSRT explicitlyPublishedbeforePublicsave. Sourcemetadata,notkids,AIyes,Education,HDcomplete,YouTubechecksnoissues. ManualMathsplaylistPLMcUYX3DYIeY position15verified. Changed-source recording scope reconciled toactualmeasuredtakes whereoldscopekeptplaceholderaudio/duration;reviewednarrationtextmatchesexactly,originalscopepreserved. Fullmasterplaybackreviewseparate. Master/publicationmetadata localDrivehashverified,cloudsyncunverified. Humancontinuousview/listeningpendingowner. Readylistre-readbeforecontinuing;finishedmastersnotrepeated.
+
+Brief239 i10 private uploadcheckpoint:https://youtu.be/NThNhYywyK4. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i10 HELD private https://youtu.be/NThNhYywyK4. Masterout/explainer/Explainer-math-a12-i10/Explainer-math-a12-i10-v1.mp4,474.033s/14221frames,SHA256f02ae07dee3326e12da667b5f86ecc0cdac2007e65221a511e8699ec164e47e4. 120picture/font samples zero flags,bothendpointsdecode,140cue-mapentriesresolve0missing.16framemaster/rootA sheets content/layoutmatch,minor notesentrancephase. Actualdefect:Scene01 at22s,masterframe660: handwritten ends where it started overlaps printed THE LIFT description, v=sin t floors per second,for2pi seconds. Native23.053 and full-resolution decoded master confirm. Earlier up2 tag also touches this card. Source s1.tsx:61-62 places hand tags at1450,520 inside the description. Evidencework\brief239\i10\lift-tag-overlap-22s.png;holdwork\brief239\i10/release-hold.json. PrivateSaved,HDcomplete,notkids,AIyes,Education,sourcemetadata. OriginalEnglishAustralia manualtimedSRTexplicitlyPublished. CopyrightandCommunitybothcomplete,noissues. Outsidepublicplaylist. Native1x16.062/19.114/23.053 liftupandback,netchange0,travelled4. Landingmotionnotfullysampledatsettledfloor2. Actualannotationoverlapfound;laterflip/car/practice/noteschecksnotclaimed. Holdexistingmaster/upload,noduplicaterender/upload,nosceneeditsunder239.Continuei14.Humanlisteningpending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+Brief239 i14 private uploadcheckpoint:https://youtu.be/pjNHUoHcIv8. Existingcheckedmaster uploadedonce,source metadata/settingsentered. Captions/nativeplayback/exportgate/playlist/publicationpending. Do not duplicaterender/upload.
+
+Brief239 i14 HELD private https://youtu.be/pjNHUoHcIv8. Masterout/explainer/Explainer-math-a12-i14/Explainer-math-a12-i14-v1.mp4,483.233s/14497frames,SHA256c4d926ba6d954889d81ccb8bb64a0ba570ccb67902bff7b7ea93d93107c17e93. 120picture/font samples zero flags,bothendpointsdecode,171cue-mapentriesresolve0missingagainstcorrectedscene02. Requiredsingle-scene revoicecompletedbeforerender,unchangedtakespreserved.16sheetframescontent/layoutcorrespondto rootA,butcorrectedscene02duration shiftslater phases:masterframe4stillscene03vsrootscene04,frame15handoffvsrootnotes. Cannotclaimeveryframe samephase. Native scene04 numericaldefectaboveholdsrelease. Actualdefect:Scene04 at129s,masterframe3870:t=3.0s,v=-3.00cm/s,a=0.0cm/s2,while labels say a<0,faster though a<0,and same signs:speeding up. At t=3,a=6t-18=0,so current-state negative-acceleration label is false. Animation reaches3 at126.033s and holds until comparison cut about132.167s. Native129.022 and exactmasterframeconfirm. Source s1.tsx:183,199-201,208. Evidencework\brief239\i14\zero-acceleration-label-129s.png;holdwork\brief239\i14/release-hold.json. PrivateSaved,HDcomplete,notkids,AIyes,Education,sourcemetadata. OriginalEnglishAustralia correctedmanualtimedSRTexplicitlyPublished. BothCopyrightandCommunitycomplete,noissues. Outsidepublicplaylist. Native1x16.123/19.067/23.431 robotforward/backto36withfadecut.35.163/40.004/44.065 correctedfixedoriginwordingvisibleincaptions/card,upperplayercroppedthenrestored.46.127/49.079/53.204 teal tangenttracesvelocityandgradientdefinition.65.109/69.085/73.023 reststubs,t=2and4circles,leftreplay,returns16cmatrest.121.040/125.008/129.022 backingspeedgrows2.36to2.97to3,butendpointa0contradictsnegative label. Laterlegs/families/snow/practice/notesnotclaimed. Holdexistingmaster/upload,noduplicaterender/upload,nosceneeditsunder239. Requiredscene02correctionpreserved. Continuequeueaudit.Humanlisteningpending. LocalDriveevidencehashverified,cloudsyncunverified.
+
+
+## Queue audit, 12 November 2026
+
+Brief239 ready list re-read: all 28 entries accounted for, 14 public plus d01 pilot (15 public total), 13 real playback/sheet holds, and i12 asset guard hold. No unprocessed eligible render remains on the current list. List SHA256 64ed39b3b6c25727ac72146666db3f4951f6589a1fd1b13b4c5e1d70db5da389. Details work/brief239/queue-audit-2026-11-12.json. No duplicate take, render or upload.
+
+Fresh f03 and Chemistry v03 file gates both pass source/recording checks and stop at whole-lesson quota: 86/99 requests used, 13 left, f03 needs14 and v03 needs16. Zero paid requests or provider retries in this audit. Next reset12November19:00Sydney. Brief238 requested repaired voices and both single-scene corrections complete. Brief240 all34 current source hashes match preparation; reviews/plates complete, f01/f02 voiced,32 remain. Root68 readiness file predates f02 completion; its old completed=false is superseded by f02 hand-in.
+
+d03,d04,d07 source repairs noticed, but their root A sheets still date10November and sign-off11November; no new repaired-build A evidence found. Existing held masters retained. i12 failed asset guard before any rendered chunk: height170 below minimum180, Invalid graph window. The earlier queue message chunks preserved is generic and does not mean i12 rendered chunks. No scene edits under239.
+
+Remaining queue checked:236 resumesv03 after quota,237 checks/plates complete and voicing after wave2;220 character cap/spectra holds remain;199 four build holds and205B04 sparse-frame hold remain;232-234 complete;206-212/215 remain shelved. Full queue remains unfinished because of these dependencies.
+
+Platform evidence precision for i05,i06,i09: Copyright explicitly clear in the upload wizard; Community Guidelines ongoing then. Final Details Notices dash, HD complete, Public saved and playlist verified. No separately exposed final Community completion panel was observed. This qualifies the generic checks wording above; publication JSON uses exact platform evidence.
+
+## Module 8 backlog correction, 12 November 2026
+
+The earlier queue audit omitted the unuploaded Module 8 masters in work/youtube-pending.json. There are18:10 Biology (b06,b07,b08,b09,b10,b11,p02,g01,g02,g03) and8 Chemistry (c04,c05,c06,c08,p03,p04,p05,g02). These are existing rendered masters, not finished public releases. Historical live readback dated1November records Biology b01-b05 and six Chemistry entries; no fresh live playlist check was performed in this audit.
+
+Chemistry c04/c06 have technical checks and sampled playback with no reported concrete visual defect; remaining export reviews can proceed without Google quota. The other16 retain named findings requiring individual review or builder/root resolution. Do not infer a blanket release from the Maths-only sign-off and do not rerender completed masters merely to resume reviews. Owner pre-approved publication in223/226 once required checks pass. Earlier statement that nothing else could proceed was too broad.
+
+Other Module8 work remains under220: Biology p01 count mismatch, b12/b13/b14/b16 recording checks, b15/b17 owner holds; Chemistry c09/c13 character-cap deferral and c10/c11a/c11b/c12/g03 measured-spectra holds. Existing speech is preserved. Google daily quota is separate from ElevenLabs115000-character cap (109966 tallied).
+
+
+## Maths focus-area playlists completed,12November2026
+
+Retained full-coursePLMcUYX3DYIeY,renamed HSC Maths Advanced Year12:Full Course. All15 public videos and existing order retained. Created seven focus playlists plus Mixed Exam Practice,Public/Manual. Verified differential7,integral4,applications4,correct lesson order. Five future playlists empty. Full-course description links all eight; each focus description links full course. No private held videos added,no duplicate upload or speech. Records and future routing for67 lessons:docs/production/claude-pm/youtube/maths-focus-playlists.json. Proof images in outputs/mathssubject playlist files. Continue Module8Chemistry c04/c06 exact-master release reviews without new speech/render.
+
+Module8 C04 review checkpoint: existing v2 master SHA623f36c0fb5005ce64addac853c2d7eed1efa96797da7573fe3bb1c83967ac7a uploaded once,Private https://youtu.be/qAWhDz3d1nk,HD complete. Exact clean design metadata replaces pending-record epsilon mojibake. Notkids,AIyes,Education,EnglishAustralia. Copyright and Community checks both explicitly complete,no issues. Original manual timed SRT explicitly Published. Native1x exact-master review in progress; no public release yet,no new render/voice.
+
+
+## Module8 Chemistry C04 review hand-in,12November2026
+
+Existing v2 master523.5s/15705frames,SHA623f36c0fb5005ce64addac853c2d7eed1efa96797da7573fe3bb1c83967ac7a retained,uploaded oncePrivate https://youtu.be/qAWhDz3d1nk. Both platform checks explicitly clear,HD complete;notkids,AIyes,Education,EnglishAustralia. Original manual timed SRT explicitly Published. Native1x sampled spectrum79-97s,concentration133-139s,atomisation184-192s,absorption198-209s,gaps213-217s,furnace/lamps233-241s,dilution289-307s,practicecountdown383/387/391s,feedback403-411s and439-457s. New M8-C04-CAPTION-ANSWER-OVERLAP:default CC covers part of framed original2.51x10.0 approximately25mg/L at407.048/411.128s,source s3.tsx final Framed y1030. Underlying arithmetic/master answer present;native caption-fit issue holds publication. Evidence outputs/chem-m8-c04-caption-answer-overlap.jpg and work/module8-release-reviews/chem-m8-c04/release-hold.json. No full motion/listening pass or export approval invented. Continue C06;no rerender,new speech or duplicate upload.
+
+Module8 C06 review checkpoint: existing checked v1 master uploaded oncePrivate https://youtu.be/MKg-6tk33aI,HD complete. Copyright and Community both explicitly clear. Source metadata,notkids,AIyes,Education,EnglishAustralia;original manual SRT explicitly Published. No new render/voice. Native review in progress. C04/C06 current-input reports bind unchanged master hashes and original playback/captions;shared kit.tsx changed since their render,so current source not claimed identical. Original render-completion freeze proof retained.
+
+
+## Brief226 C06 PUBLIC,12November2026
+
+https://youtu.be/MKg-6tk33aI. Existing v1 master545.9s/16377frames,SHA2db7f3bb989dbf99c3d4d714d0f3717ce6248f687c730a7b631222b773a5bf0d. Original120picture/120font scans0flags,endpointsdecode,16sheet/rootA comparison retained and master sheet reopened.221buildcueproperties resolve,0missing;184captions byte-exact original playback timeline. Native1x checks:fullsampling78/82/86s,pale/brown99/103/107s,iodine119/123/127s,yellow/straw/blue143/147/151s,clear153/156/159s;disappears cue152.8s/clear transition152.6667s. BOD259-297s showsbottles/conditions/days/microbes;304/308/312s8.4to4.9/result3.5. Worked239-254s result6.40;feedback414/418/422s result8.32;practice449/453/457s countdown9/5/1,feedback464/468/472s P0.9/Q5.8 andlimitedinference;notes508/512/516s five44pxbullets and memorycard. No sampled visualdefect. Full exact-master learning trace and limitations inwork/module8-release-reviews/chem-m8-c06/export-review.json;export-stage check ready. Humancontinuousview/listening remains pending,not claimed. Original render freeze unchanged at completion;sharedkitlaterchanged,explicitlyrecorded,not certified as original source.
+
+Public saved,Save disabled,HD complete,both platform checks explicitly clear,notkids,AIyes,Education,EnglishAustralia,source metadata. Original manual SRT explicitly Published. ChemistryModule8PLZvXmfLoo9k8 reloaded:7videos,C06index7 afteroriginalsix,relative route order retained with held earlier gaps. Recorddocs/production/claude-pm/youtube/brief226-c06-public-2026-11-12.json. No completed take,render or upload repeated.
+
+Module8 P03 review checkpoint: existing master uploaded oncePrivate https://youtu.be/46uwqqj8OGM,HD complete. Copyright explicitly clear,Community still checking at initial save. Source metadata,notkids,AIyes,Education,EnglishAustralia;184original manual timed captions explicitly Published.176buildcues resolve0missing. Reviewing existing reference-type question and remaining native items;no new render/speech.
+
+
+## Brief228 P03 PUBLIC,12November2026
+
+https://youtu.be/46uwqqj8OGM. Existingv1 master529.5s/15885frames,SHA34dbc3655d442c0d5dc91aa3d81c4d8da15ee3daaa049baf55de8a8484228f3c retained. Original120picture0flags,onefontfalsepositive9861alreadyreviewed,16master/rootAcomparison retained.176buildcueproperties resolve0missing;184captioncues byte-exact original playback. Native1x hook14-32s,cation149-167s,record214-230s,risk299-337s,feedback1384-402s,attempt1374/378/381s(countdown8/4/1),feedback2439-457s,notes494/498/502s. Specific observedstates and limits inwork/module8-release-reviews/chem-m8-p03/export-review.json. Prior228-P03-REFERENCE-TYPE independentlyclosed:fullquestion readablethroughresponse;large50pxheading,40pxfixrail andcarry-over/cleanflame/CuOH2diagram restateneededfacts;small23.2pxcard pastreference only. No sourceedit,newrootgrade or invented continuousperception. Exact-masterlearning reviewpass,exportcheckready,humancontinuousview/listeningpendingowner.
+
+Publicsaved,Save disabled,HDcomplete,notkids,AIyes,Education,EnglishAustralia,exactsource metadata,originalmanualSRTexplicitlyPublished. Copyright explicitly clear;Community ongoing atPrivate save;finalDetailsNoticesdash,not claiming separatelyexposedfinalCommunitypanel. ChemistryModule8PLZvXmfLoo9k8 reloaded8publicvideos:P03index7,C06index8,originalsixunchanged. C06 movedtobottomonce;its earlierindex7hand-in supersededbythisreorder,publicationrecord/pendingupdated. Recorddocs/production/claude-pm/youtube/brief228-p03-public-2026-11-12.json. No repeatmaster,take orupload.
+
+Module8 P05 review checkpoint: existing master uploaded oncePrivate https://youtu.be/ApkkG2rSXV4,HD complete. Copyright explicitly clear,Community still checking at initial save. Source metadata,notkids,AIyes,Education,EnglishAustralia;179original manual timed captions explicitly Published.166buildcues resolve0missing. Checking whether priornotes-opening finding is normal quiet-copy board entrance;remaining native review underway. No new render/speech.
+
+
+## Brief229 P05 PUBLIC,12November2026
+
+https://youtu.be/ApkkG2rSXV4. Existing v1 master521.333s/15640frames, SHA f5c23c701fc301a3203fb21793c5b4b02ba8324da47275839381a5c192b430cd retained. Original120-picture scan0flags, font false positive9579 previously resolved, original16-frame master/root A comparison retained.166 build-cue properties resolve0missing;179 original timed-caption cues byte-exact. Native1x samples cover fizz/limewater109-127s,dichromate method139-147s,positive/control/batch states154-187s,record locks199-217s,risk289-327s,full attempts374/378/382 and429/433/437s,feedback389-397 and449-457s,notes483/486/489s. Detailed observations and limitations in work/module8-release-reviews/chem-m8-p05/export-review.json. Prior229-P05-NOTES-OPENING independently closed: progressive entrance to quiet copy hold, all five46px bullets and memory card settled by486s. No source edit,new root grade,repeat render/take/upload or invented continuous perception. Current shared kit has changed since original freeze; review binds immutable existing master, not current-source identity. Exact-master learning review pass, export gate ready, owner continuous listening/viewing pending.
+
+Public saved/Save disabled,HDcomplete,notkids,AIyes,Education,EnglishAustralia,source-exact metadata and original manual SRT explicitly Published. Copyright explicitly clear at upload; Community ongoing at Private save, final Details Notices dash; no separately observed final Community panel claimed. Module8 playlist PLZvXmfLoo9k8 has9 public videos in Manual order, previous8 unchanged,P05index9. Record docs/production/claude-pm/youtube/brief229-p05-public-2026-11-12.json. Local Drive master and hand-in hashes verified; cloud sync not independently verified.
+
+
+## Module8 Chemistry repair audit: chem-m8-c05,12November2026
+
+Existing master SHA verified against pending record. Compared 8 lesson-source files with original render freeze: 0 changed. Existing hold retained. No lesson-specific source repair since original render freeze. Blocking finding 223-C05-OPENING; prior native playback retained at work/brief223/chem-m8-c05/playback-ui-check.json. No completed work repeated and no source edits/new release approval. Evidence work/module8-release-reviews/chem-m8-c05/remaining-hold-audit.json.
+
+
+## Module8 Chemistry repair audit: chem-m8-c08,12November2026
+
+Existing master SHA verified against pending record. Compared 8 lesson-source files with original render freeze: 0 changed. Existing hold retained. No lesson-specific source repair since original render freeze. Blocking finding 226-C08-OPENING; prior native playback retained at work/brief226/chem-m8-c08/playback-ui-check.json. No completed work repeated and no source edits/new release approval. Evidence work/module8-release-reviews/chem-m8-c08/remaining-hold-audit.json.
+
+
+## Module8 Chemistry repair audit: chem-m8-p04,12November2026
+
+Existing master SHA verified against pending record. Compared 8 lesson-source files with original render freeze: 0 changed. Existing hold retained. No lesson-specific source repair since original render freeze. Blocking finding 228-P04-DILUTION-OVERLAP; prior native playback retained at work/brief228/chem-m8-p04/playback-ui-check.json. No completed work repeated and no source edits/new release approval. Evidence work/module8-release-reviews/chem-m8-p04/remaining-hold-audit.json.
+
+
+## Module8 Chemistry repair audit: chem-m8-g02,12November2026
+
+Existing master SHA verified against pending record. Compared 8 lesson-source files with original render freeze: 0 changed. Existing hold retained. No lesson-specific source repair since original render freeze. Blocking finding 231-CHEM-G02-SLOPE-LABEL-OVERLAP; prior native playback retained at work/brief231/chem-m8-g02/playback-ui-check.json. No completed work repeated and no source edits/new release approval. Evidence work/module8-release-reviews/chem-m8-g02/remaining-hold-audit.json.
+
+
+## Overnight queue restart,12November22:12Sydney
+
+Brief240 step3 audit: all61 new native PNGs already delivered and visual-QA-inspected in assets/brief240-manifest.json; hashes reverified. Priority f12/f13/f15/skyline/tide plates present. No completed painting repeated. Missing documentation found: s11/s12 reused bottle cavity measurements, to finish while voicing. Brief241 Ready list currently empty. Reset passed; resume240 at f03, preserve f01/f02 and238. One heavy job only.
+
+Brief240 step3 remaining documentation completed: assets/ma12-s11-plate-measures.json records native bottle cavity, conservative interior mask and measurement uncertainty for reused s11/s12 bottle. Original asset unchanged; no new PNG required. Native aspect preserved, builder to fit overlays. Local Drive hash copy verified.
+
+## Brief240 f03 voice hand-in
+
+math-a12-f03: docs/production/claude-pm/checks/m-a12-f03-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f03-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-food-tin-v1.png, public/assets/maths/ma12-display-base-v1.png. 5776 reviewed narration characters across15 takes;1 exact-text takes served from cache;14 new requests. Total474.90s, notes45s. Selected new-request billed usage1405 input/10095 output tokens; estimatedUSD0.091558. Measureddocs/production/claude-pm/lessons/math-a12-f03/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.028s in scene-08;187 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief240/voice-results/f03/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief241 overnight render started: chem-m8-c05 v2
+
+After f03 voice hand-in and local Drive backup, re-read241 and found root-listed C05,C08,P04,G02. C05 v2 rendering with one worker, no voice active. Root repair sheet/1fps-ready entry and notes captured in work/brief241/chem-m8-c05/root-list-readback.json. Guard passed18 public paths and18 scenes frame-by-frame; actual render asset hashes retained. Existing v1 master untouched. Final scan,sheet,held250-256s native check,extra186-200/233-240/380-386s windows and publication remain pending.
+
+Brief241 C05 v2 render recovery: original font guard stopped at70s (14x150-frame chunks) on temporary-bundle Caveat font HTTP404. No master published. Completed chunks retained. Exact lesson/renderer import closure, narration/timeline and actual public copies reverified unchanged; unrelated root source changes tracked separately. Recovery helper work/brief241/resume-isolated-render.mjs validates retained chunk frames and hashes, uses an isolated work-folder bundle and keeps the same fonts/guards/settings. No lesson/source/narration edits and no repeat speech. Cause of temporary endpoint disappearance not established; no attribution claimed. Recovery proceeds one worker, alone.
+
+Brief241 C05 v2 checkpoint:489.9s/14697frames, SHA14c2471f7c7e4108bd7bb3d8fb4486b354078f92de0419b78d25796744d35d46; narration/playback identicalv1,1021 aligned words,166 byte-exact original captions,201 cue properties resolve0missing. All actual source/assets unchanged;10 unrelated Maths/registry changes excluded by124-file reachable closure. Local Drive master SHA verified. Uploaded oncePrivate https://youtu.be/WOR6OhPrdMk, metadata/disclosures set; processing/manual captions/native final review underway. Do not duplicate upload.
+
+
+## Brief241 chem-m8-c05 v2 PUBLIC, 12 November 2026 23:48 Sydney
+
+https://youtu.be/WOR6OhPrdMk. Master out/explainer/Explainer-chem-m8-c05/Explainer-chem-m8-c05-v2.mp4, 489.900s/14697frames, SHA 14c2471f7c7e4108bd7bb3d8fb4486b354078f92de0419b78d25796744d35d46.120-picture/120-font scans0flags,both endpoints decoded,16-frame sheet matches root repaired A reference (reference grading borders excluded). 201 cue properties resolve0missing,1021 aligned words,166 original manual caption cues byte-exact; narration and timeline unchanged. Held moment checked FIRST at252/254/256s: table grid/headings present, then values/map. Extra repaired physical187-202s,biological234-240s and feedback380-386s all clear. Sampled native1x also brake47-51,source flows59-81,bloom84-102,crash107-127,table259-286,response344/348/352 and399/403/407,feedback424/427/430,notes459/463/467. Normal settled captions281/283/285 leave ranking clear; seeking controls temporarily shift captions upward. Pre-hold11 recorded explicitly in export-review timerObservation:10-frame anticipatory fade before the exact300-frame response, not an extra full second. No timer fix or change to separate BiologyG02 finding claimed. Human continuous perception/listening not claimed. Full trace and limitations: work/brief241/chem-m8-c05/export-review.json; export gate ready.
+
+Public saved,HD complete,both platform checks explicitly clear,notkids,AIyes,Education,EnglishAustralia,source-exact metadata and original SRT explicitly Published. Module8 playlist PLZvXmfLoo9k8, 10 public videos, position8, route order read back on fresh reopened page. C06 now9,P05now10; existing records updated. Original v1/master and any private uploads retained. No speech requested;14 completed v2 chunks validated/reused after temporary-font404 stop,isolated bundle completed without further error. Original source/actual18 public assets unchanged;10 unrelated Maths/registry edits outside124-file closure documented. Local Drive master/report hashes verified; cloud sync unverified. Record docs/production/claude-pm/youtube/brief241-chem-m8-c05-v2-public-2026-11-12.json. Re-read241 before next job.
+
+Brief241 C08 v2 in progress overnight12-13November: isolated work-folder bundle,2workers,14 asset paths/17scenes guard passed; no voicing active. Source/logic and root16-frame reference inspected; final-master/native review pending. Current log work/brief241/chem-m8-c08/render.log, active-job.json has process/session. Google window remains12November until13November19:00Sydney; midnight is not a reset.14 new TTS requests used for completed f03, remaining240 voice preserved.
+
+Brief241 C08 v2 checkpoint:505.367s/15161frames,SHA636a7de4edec71f0b9d1d34e66386b17439d161229d83e1cb60fbeb8ca120cbe;1058 aligned words,179 byte-exact original captions,187 cue properties0missing,narration/timeline unchanged,14 public assets unchanged,9 unrelated Maths/registry edits excluded. Local Drive master SHA verified. Uploaded oncePrivate https://youtu.be/7YLkYQ069vo; caption/native checks pending. Do not duplicate upload.
+
+
+## Brief241 chem-m8-c08 v2 PUBLIC, 13 November 2026 00:50 Sydney
+
+https://youtu.be/7YLkYQ069vo. Master out/explainer/Explainer-chem-m8-c08/Explainer-chem-m8-c08-v2.mp4, 505.367s/15161frames, SHA 636a7de4edec71f0b9d1d34e66386b17439d161229d83e1cb60fbeb8ca120cbe.120 picture/120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 187 cue properties resolve0missing,1058 aligned words,179 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/chem-m8-c08/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: 226-C08-OPENING: skeleton visible in first native window.; Root sweep repairs at111-114,207-210,269-275 confirmed, including settled-control recheck..
+
+Sampled native1x observations: Held opening checked FIRST at212/214/216: prop-2-en-1-ol skeleton present before name/rings; no title-only wait. Carbonate109/112/115 shows fizz, limewater and shifted alcohol no-fizz thumbnail clear of CO2 label. Safety band rechecked with settled controls204/206/208: teacher demonstration and Cr(VI) handled by teacher chip above cupboard, clear of reagent label and right edge. Exclusion269/272/275: all three results and every no rules a candidate out above bottom edge; settled captions do not hide final result. Bromine59/63/67: orange tube becomes clear, Br2 pair inset changes around C=C.74/78/82: cyclohexene clear and cyclohexane orange thumbnails dock separately; room-light limit appears. Carbonate94/98/102: acid/proton explanation then fizz and gas delivery apparatus.109: limewater milky. Intermittent samples do not establish every proton/bubble trajectory. Dichromate119/123/127: orange, explicit ringed H and primary/secondary explanation, then green with Cr3+ label.139/143/147: tertiary no-H ring and orange thumbnail, ethanol green thumbnail, water-bath label and ester limit. Candidate elimination249/253/257 then259/263/267: ethanoic acid strike, cyclohexene strike, remaining exclusions and ethanol glow; no/no/yes results highlighted without early exit. Screen paint can lag media clock, no exact audible-word synchronization claimed. Full first attempt344/348/352: all candidates, observations and task readable throughout countdown9/5/1. Second attempt399/403/407: full question and no-effervescence picture, then countdown7/3. No answer exposed in either attempt. Feedback429/433/437: unsupported conclusion, fresh-portion bromine and dichromate results, limit and crossed faulty inference clear. Notes489/493/497: five bullets and Fizz/Fade/Green aid fully readable in quiet hold.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/chem-m8-c08/platform-publication.json; manual SRT explicitly Published. Primary playlist PLZvXmfLoo9k8, position10, 11 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-chem-m8-c08-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 chem-m8-p04 v2 PUBLIC, 13 November 2026 01:40 Sydney
+
+https://youtu.be/FwfePwRG3Ws. Master out/explainer/Explainer-chem-m8-p04/Explainer-chem-m8-p04-v2.mp4, 476.467s/14294frames, SHA 518e5382bbaffed4498fbd03ba78ba9b1f8efb24190e75790ae498117f466f4d.120 picture samples0flags;120 font samples1raw flag(s),all visually adjudicated false positive,0unresolved,both endpoints decoded,16-frame sheet compared with root repaired A reference. 149 cue properties resolve0missing,1013 aligned words,167 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/chem-m8-p04/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: 228-P04-DILUTION-OVERLAP: burette stands clear of volume line in first native window.; Root sweep: extend-line chip and risk footer inside clear frame area, quiet holds readable..
+
+Sampled native1x observations: Held moment FIRST179/183/187: raised burette bases clear of5.00mL+5.00mL label, extend-line slip separated from x-axis; readout falls1.52 to0.845 as cuvette lightens.189/190/191 recheck: full readings strip0.842,0.848,0.845 and mean0.845 clear in quiet hold after transient player/caption overlay. Risk284/288/292: glassware and instrument rows reveal in order, full table and repaired safety footer wholly inside frame and readable in quiet hold292. Font probe raw flag at295.8 adjudicated false positive using native1920x1080 frame8874: intended sans body/footer and handwritten headings, no Times fallback; raw flag retained. Standards59/63/67 and69/73/77: stock/water burettes, tube moved to water position with1.00mL then10.00mL marks, stock concentration and dilution equation0.0200mol/L, rack values arriving. Intermittent sampling does not resolve every stream or rocking-mix trajectory. Wavelength89/93/97: scan and800nm peak, comparison curve.104/108/112: arrows compare sensitivity, separate school red-filter calibration warning, blank in slot and0.012 cutaway.114/116/117: glass/water correction completes0.000. Cuvette124/128/132: ridged-side outlines, wipe/clear-face instruction, rinse swirl and matching rim/slot arrows; dilute-to-concentrated row begins. Fine wipe arc not continuously perceived. Full graph question329/333/337 remains readable throughout countdown10/7/2, answer-free. Feedback349/353/357 reads0.250mol/L, factor2.50 then boxed0.625mol/L with units and original-solution underline. Full fingerprint question379/383/387 stays readable with both cuvettes and countdown9/5/1.394/398/402: smudge/beam panel reads0.910, green reference read-off then higher red read-off lands right, too-high concentration labelled. Feedback404/408/412: improvement phrase underlined, wiping/ridged-side fix highlighted, average-three-readings slip explicitly crossed. Five complete short notes and both memory lines visible459/463/467 in quiet copy hold.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/chem-m8-p04/platform-publication.json; manual SRT explicitly Published. Primary playlist PLZvXmfLoo9k8, position8, 12 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-chem-m8-p04-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 chem-m8-g02 v2 PUBLIC, 13 November 2026 02:33 Sydney
+
+https://youtu.be/3qWOR701gnk. Master out/explainer/Explainer-chem-m8-g02/Explainer-chem-m8-g02-v2.mp4, 480.633s/14419frames, SHA 216bc089dedecdcd65ba561fe90e2f763c7412336c6627237174f195e57f9e3e.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 114 cue properties resolve0missing,1007 aligned words,162 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/chem-m8-g02/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: 231-CHEM-G02-SLOPE-LABEL-OVERLAP: first native window confirms run label clear of range tag.; Sweep fixes: range markers, reagent-share label and AAS/flushed-marker spacing clear.; 231-CHEM-G02-NOTES-OPENING is root-accepted shared entrance, no unresolved hold..
+
+Sampled native1x observations: Held moment FIRST91/94/97: slope-triangle3.00mg/L label is above the horizontal leg, separated from the standards-range tag;0.300 rise and0.0999 slope readable. Range104/108/112 then114/118/122: top standard0.399 sits clear of ruled line; possible bend tagged not measured; marker moves from undiluted0.620 to diluted0.142, final label stays above the line and inside-frame. Reagent repair229/233/236:0.032-at-zero label and leader above reagent shares, no crossed text; grey shares appear beneath standards. Lead repair351/354/358: flushed0.002 marker clear of smaller/lower AAS plate; method label beside it. Overnight/running pipe dot groups change without obstructing the comparison. Graph74/78/82: TAILS rail progresses, concentration/absorbance data underlined and crosses strengthen from previews. First held window also confirms ruled line and slope triangle. No exact spoken-word onset claim. Read-off129/133/137 then139/141/143:0.142 guides land at1.42mg/L,10.00-to50.00mL pipette/flask arrow and factor5, boxed7.1mg/L. Full final answer clear in quiet hold143. Intercept244/248/252 then254/258/260: bar separates0.032 reagent from0.258 iron; subtract before divide yields1.30mg/L. Graph read-off from0.290 agrees; units remain visible. Full attempts59/63/66,199/203/207 and319/322/325: all stems/data/demands retained with answer-free diagrams and countdowns8/4/1,9/5/1,7/4/1. Quiet controls settle before judging legibility. Claim379/383/387: one-tap/one-day limit, not-supported result and repeat-sampling/public-health-unit advice clear. Average trap399/403/407 shows crossed0.007 calculation/marker and two different waters, first-draw2.4-times-guideline conclusion. Only settled marker sampled, not every sliding-path position. Notes464/468/472: five short bullets and memory aid fully readable. Shared notes opening remains accepted by root; not reopened as a hold.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/chem-m8-g02/platform-publication.json; manual SRT explicitly Published. Primary playlist PLZvXmfLoo9k8, position9, 13 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-chem-m8-g02-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-d07 v2 PUBLIC, 13 November 2026 03:29 Sydney
+
+https://youtu.be/KvvqQc2qpFg. Master out/explainer/Explainer-math-a12-d07/Explainer-math-a12-d07-v2.mp4, 532.300s/15969frames, SHA a3cc5d6f179ffb19f7c19e491e72a89d6614abfb4b576eda805fd3d54416adf3.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 94 cue properties resolve0missing,1362 aligned words,222 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-d07/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: Scene01a retained half-day comparison retitled, native held-first pass.; Sweep repairs: width frame inset, scene04tag, shared factor, brief inside tag and late gradient/recall spacing all checked..
+
+Sampled native1x observations: Held moment FIRST65/67/70: day0,length4.00m,width2.00m,area8.00m2; retained2.13m2 real and0.25m2 guess explicitly titled AREA ADDED IN THAT HALF DAY. Contradiction resolved. Width label fully inside frame. Deck57/59/61: day0 to0.25 to0.50, length/width/area and real bar grow, ending10.13m2/2.13increment.74/78/82: side and top strips labelled2m2/day each, total4.00 against0.50 guess, factor8, rewind remains explicit. Opening4/8/12: inherited graph eases left while deck enters;24/28/32 wrong flat guess shown,34/36/37 true steep violet tangent returns at pi/2. No gap or clipped stage observed in sampled positions. Rectangle99/103/107:0.30nudge and side/top strips separately reveal.109/113/117: corner shown then nudge0.02 with vanishes tag; strips-not-to-scale retained. Intermittent samples do not prove every intermediate trajectory. Factor turns139/143/147:2.29+1.47=3.76;159/163/167 rider atpi/2,4.81+0=4.81 and wrong guess crossed.189/193/197:7.46 and-7.46 cancel, tangent flat at3pi/4; product-levels-off tag below axis clear of sinx. Shared-factor224/228/232: tag clear of working line, factored expression and4.810 check visible. Inner-rate299/303/307: boxed2 in2cos2x and product terms. Targeted300.701/301.817/302.285 catches short from-the-inside tag below givens, clear of cos2x, then leaves before working. Gradient334/338/342: exact -pi^3/4 and-7.752, true tangent steeper than crossed-3.88 guess. Recall chip has left before gradient-7.75 label; no collision. Full attempts384/388/392 and431/435/439: complete prompts, givens and answer-free area rectangles remain through countdown9/5/1 each. Feedback459/463/467: -e^-2, approx-0.135 and falling tangent agree; positive-slope trap crossed. Notes514/518/522: five short bullets and deck memory card fully readable in quiet hold. All original recordings preserved; no human pronunciation/listening pass claimed.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-d07/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position5, 16 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-d07-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-d12 v2 PUBLIC, 13 November 2026 04:12 Sydney
+
+https://youtu.be/JON49IL6rlQ. Master out/explainer/Explainer-math-a12-d12/Explainer-math-a12-d12-v2.mp4, 545.900s/16377frames, SHA 0f1253c32ba5f223a66215d3b20958e01b2f5c1c3e606330a4bec7fad8fd37e6.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 116 cue properties resolve0missing,1274 aligned words,201 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-d12/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: Sunbeam label now two lines inside the diagram, held moment checked FIRST at native1x.; Sweep repairs: amber domain strip clear of cos x working; graph shrinks before slip, keeping x-axis label clear..
+
+Sampled native1x observations: FIRST native samples370.107,372.061,375.061s: two-line sunbeam=sec x / =cosec(pi/2-x) stays inside the tower diagram while paired angle readings change oppositely and sum to1.57. No clipping or competing label found. Opening2/5/10s retains d11 handoff graph then eases left;15-27s tower enters, the shadow and beam labels develop, readouts return to0.00/0.00/1.00 overhead. No sampled join collision. 34-54s wrong reciprocal derivative is built then crossed. At48s the sun nudges to0.15, beam1.01, then returns to1.00; flat tangent at0 and undefined flipped guess are distinguished. 64-97s paired cos/sec riders change together, with -0.707/+1.414 slope check at pi/4, opposed arrows and near-wall steepening; shadow3.60 edge arrow is visible. Beam exits the finite tower view intentionally, not a missing asset. 124-137s quotient signs and factor split progress to sec x tan x with cos x nonzero condition; no row collision.165-196s repaired amber sin x nonzero strip stays right of working and leaves cos x visible. Cosec slope changes from negative to positive, both paired slopes0 at pi/2. 224-250s cot quotient simplifies using sin squared+cos squared=1; the result is negative cosec squared. Downward branch arrows, slope at pi/4=-2 and the domain are legible.259-273s domain cards align with their excluded asymptotes. 296-323s sec flat-point example excludes pi/2, uses sec never0 then tan0, and yields points(0,1),(pi,-1). The graph shrinks before the crossed x=0-only slip; x(radians) remains clear above it. 335-364s co-partner chip destinations and circled minuses appear in order, complementary-angle identities and inside derivative-1 are added, then the tower enters. Samples confirm before/after states, not continuous perception of each short ghost spring. 393/397/401s attempt1 shows ring7 then3, with complete exact-gradient task and answer-free axis, then feedback.409-422s feedback gives -2sqrt3 approximately-3.464 with falling tangent and crossed positive flipped derivative. 438/442/446s attempt2 shows ring9 then5 and a brief transition into feedback, with derivative and domain demands retained.454-474s feedback has both negative terms, x not equal k*pi and crossed plus-sign slip. A separate settled471/474s check confirms captions clear the slip after seek controls fade. 478-507s derivative/domain summary leads to three composites and the gradient question, then notes.520/527/533s five-note board stays quiet, readable and clear of the aid card.543/545s notes fade back to the final handoff, consistent with decoded endpoint.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-d12/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position10, 17 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-d12-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-d15 v2 HELD, 13 November 2026 04:47 Sydney
+
+https://youtu.be/LmJRPptSCJI remains Private. Original held feedback label at455s now passes (checked FIRST); new real defect at35s/frame1050: upper dashed corner-zoom leader strikes through right-hand piecewise formula second row x, x > 1. Native samples28/32/37s and full1920x1080 frame confirm. Evidence work/brief241/math-a12-d15/zoom-label-check-35s.png; details work/brief241/math-a12-d15/hold.json. Root notes say leaders do not cross formulas, but actual master does. No source edit made.
+
+Master out/explainer/Explainer-math-a12-d15/Explainer-math-a12-d15-v2.mp4,531.233s/15937frames,SHA 35610af82e8918d37c3d69dd0427b9ab55256ee66a478fbc63fe0673d00c0aca.120picture0flags;120font samples4raw flags,all fullsize inspected false positives (intended sans method lines),0unresolved;16sheet teaching/layout states match root with recorded sample-phase differences.172cue properties0missing,1251alignedwords,217original timedSRT cues byte-exact. No source or narration/timeline changes. Copyright and Community Guidelines complete clear,manual SRT explicitly Published. Both v1 Private78opFTgmzks and v2 PrivateLmJRPptSCJI retained. Remaining native checklist/export review incomplete after real defect,no release approval or playlists. Local Drive master and hand-in hash verified,remote sync unverified. Continue d16,already the sole active render. Do not overwrite or re-render this completedv2; root must resolve the new finding for a later revision.
+
+
+## Brief241 math-a12-d16 v2 PUBLIC, 13 November 2026 05:54 Sydney
+
+https://youtu.be/3bF2ePwrtkE. Master out/explainer/Explainer-math-a12-d16/Explainer-math-a12-d16-v2.mp4, 497.000s/14910frames, SHA 46b946208021310d899a29d429761652bafa2f468e15fafb00f6ceca9a2a429b.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 148 cue properties resolve0missing,1115 aligned words,191 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-d16/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: FIRST nearby-points higher tag clear of inflection(2,2), curve and minimum label at native1x250/254/256.5s.; Sweep repairs: steady-flow/slowest tags separated, derivative ticks -3,3,9; increasing/decreasing wording and tangent-crosses wording clear; feedback formula clear of maximum label; sign strip and zero-label separated; curve label clear of y axis; opening table inside frame..
+
+Sampled native1x observations: Held moment reviewed first, then all23 planned windows at native1x, 71 actual samples. Vase fill changes from fast base through slower belly to faster neck; steady flow0.75L/min remains distinct from height rate. Widest14cm return shows3.0cm/min. Paired graph and tangent views retain correct derivative ticks, cap/cup signs and nonstationary inflection(2,2) with slope-3. Tangent-crosses wording sits above point label. Sign tests and x^4 counterexample are readable. Three flat examples distinguish minimum, maximum and horizontal inflection. Attempt1 countdown sampled9,5,1 without answers; feedback gives maximum(-3,27),minimum(1,-5), clear graph formula and correction. Attempt2 countdown10,6,2; feedback sign strip is separated from zero working and gives only inflection(3,-162). Final three-panel handoff, quiet key notes and fade back checked. Brief captions displaced upward while seek controls are visible; settled samples clear teaching text.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-d16/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position12, 18 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-d16-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-d17 v2 PUBLIC, 13 November 2026 06:58 Sydney
+
+https://youtu.be/zTBwUq4-K5A. Master out/explainer/Explainer-math-a12-d17/Explainer-math-a12-d17-v2.mp4, 535.633s/16069frames, SHA a3b1aee870d6eb7d61a20ebadac4397fc4ddf7b79bd29dad45b96d63a129b66a.120 picture samples0flags;120 font samples1raw flag(s),all visually adjudicated false positive,0unresolved,both endpoints decoded,16-frame sheet compared with root repaired A reference. 187 cue properties resolve0missing,1263 aligned words,218 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-d17/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: FIRST224/227/230s x=0:no point tag below axis, clear local minimum(1,2).; Recap card clears before SYMMETRY header; scene11 and15 ticks readable; rises-on-each-piece tag clears y label..
+
+Sampled native1x observations: Held moment checked FIRST then planned playback moments, 79 actual native1x samples. Opening d16 continuity and laptop chart checked. Wrong wiggly and ruler sketches, red rising segment/ring76.5/77.5s and rejection78.5s sampled; signs remain readable. Corners, smooth cubic redraw and nonhorizontal inflection slope-3 checked. Recap clears before symmetry header119s; half-turn and landing samples127/129.5s; intercepts/end behaviour readable. Checklist, domain pieces and reciprocal working checked; no-point tag clear. Riders approach vertical asymptote on separate sides, then oblique y=x approach and summary. Big graph hands to aligned panels; first and second derivative rider passes and column highlights checked. Readouts match plotted gradients. Daily-view rider reaches/stops at day3 then continues through the long tail; busiest day explicitly at inflection. Quartic crossing versus touching zeros, touch ring, second derivative zero columns and repaired tick spacing checked. Memory card highlights readable. Both attempts answer-free, countdown10/6/2 sampled. Feedback1 domain/no-inflection and rises-on-each-piece tag clear; feedback2 crosses at-1/touches at2, turning points0/2 and correction clear. Sheep-pen handoff, quiet notes and final fade-back sampled at535.54s. Playback naturally ended before helper pause, actual final screenshot saved and inspected. 150s summary chip right border extends to frame edge as root reference; all teaching words and check tick are visible on exact1920x1080frame4500. Recorded cosmetic edge treatment, no loss of teaching content.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-d17/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position13, 19 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-d17-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-i02 v2 PUBLIC, 13 November 2026 07:57 Sydney
+
+https://youtu.be/9ZnRQS4Q2qc. Master out/explainer/Explainer-math-a12-i02/Explainer-math-a12-i02-v2.mp4, 518.800s/15564frames, SHA 7bec83515cc27aa7838d1798ecdf84e141f100d59c20582a1c0a86486bb94871.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 124 cue properties resolve0missing,1208 aligned words,204 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-i02/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: FIRST moving gradient readout displays f prime:4.2vs2.1,then8.0vs4.0 atx0.5,then4.0vs4.0 afterhalving. Original second-derivative contradiction resolved.; Recap clear heading; plan leaves before rewrite; inside tag/check line and two-line summary chip clear; domain chip inside frame; jar ghost label clear heading/working; outside factor labels and attempt integrand tag clear..
+
+Sampled native1x observations: Held numerical moment checked FIRST at113.676/116.022/118.739s, then 76 total native1x samples across opening, algebra, all repaired label windows, attempts, feedback and notes. Opening recap and square expansion clear. Starter clock reaches6h and initial rise graph leaves answer unknown. Algebra rewrites retain original domains; plan card leaves before first working. Guess differentiates to twice integrand; displayed first derivative agrees with lower plot,8vs4beforehalving and4vs4after. Check line sits below readout. Brief two-line summary chip checked after seek controls fade at127.346s: all wording inside frame and readable. Equivalent primitive family constant gap1/6 checked. Domain chip explicitly appears late at175.824s and fits. Starter root working yieldsC=-1.5, final6cmrise at6h; silent tail219s has clear correct answer/slip,24cmghost label abovejar clear heading/working. Inside/outside labels separated; gradient dots land on integrand. Missing-number factor can be fixed; missing-x guess differentiates to6ratherthan8 atx1 and is rejected. Root example answer sqrt(x^2+4)+C, positive radicand domain and derivative checked. Memory-card355/361s and root answer337/344/347s samples saved before browser timeout; their screenshots subsequently inspected, all clear. Browser connection recovered in fresh same-Chrome tab, existing upload reused. No paid work repeated. Attempt1 countdown10/6/2 answer-free, integrand tag left of timer. Feedback correct inner divisor and slipgradient12vs6 clear. Attempt2 countdown10/5/1; feedback primitive(x^3+1)^5/15+C and wrong-factor-product gradient22.4vs16 atx1 clear. Exponential handoff, quiet key notes and final fade-back at518.586s pass. Continuous motion and human listening not claimed.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-i02/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position16, 20 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-i02-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-i03 v2 PUBLIC, 13 November 2026 08:42 Sydney
+
+https://youtu.be/H6_PLqB6RVw. Master out/explainer/Explainer-math-a12-i03/Explainer-math-a12-i03-v2.mp4, 536.933s/16108frames, SHA 61f4629547bdf96e86f6a79b4897937e9e1cd92dce808141fca6e127e6ea2559.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 111 cue properties resolve0missing,1365 aligned words,224 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-i03/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: FIRST old everywhere-gradient tag gone before answer box at81.77s; halved primitive trace equals target at83.65s and90.57s. Plain scene3 heading legible.; Opening2-to-x chip clear y label; negative exponential rising tag split below curve; phone battery tag clears ticks; other-base graph label and conversion clear readout; straight-line primitive tag clear slider badge..
+
+Sampled native1x observations: Held moment first, then all25 planned windows. Opening phone, C slide, triangle and derivative landing pass. Linear exponent divides by inner rate, negative exponential primitive rises, phone clock completes below100percent. Nonlinear exponent requires inside derivative; missing-number versus missing-x distinction clear. Base2 ratio0.693; base slider1.96 to1.10, constant graph and y=x limit distinct. Drug initial2 gives C1 and limit1mg. Phone initial40 gives C100, reaches98.9percent while ratio remains0.5. Expanded exponential squared integrates term by term; memory aid readable. Attempt1 countdown9/6/2, feedback2e^(2x-1)+C and twice-integrand slip clear. Attempt2 countdown9/5/1, separate-base answer and correction clear. Reciprocal handoff, quiet notes and final return checked through536.526s. Shared opening crossfade transient accepted. Settled captions clear teaching content.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-i03/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position17, 21 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-i03-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+
+## Brief241 math-a12-i10 v2 HELD PRIVATE, 13 November 2026
+
+https://youtu.be/ZPw0l4iu9e0. Original lift-label hold resolved FIRST at native1x20.227/23.044/26.186s. All21 planned windows plus painted-landing peak checked, 69 native samples. New real defect: completed notes at451s/frame13530, memory-card bottom border crosses net 0, travelled 4. Full master sheet frame16 and native442/451/461s confirm; also present in root reference. Source s3.tsx:174. Evidence work/brief241/math-a12-i10/hold.json, v2-sheet-frame-16.png, export-review.json. No source edit or export pass; releaseApproval false. Keep v1 NThNhYywyK4 and v2 ZPw0l4iu9e0 private, retain both masters.
+
+Master out/explainer/Explainer-math-a12-i10/Explainer-math-a12-i10-v2.mp4, SHA 79fbeada770a00c52b9f39dabbb28c9a40b7ef62a6bc7130aa57de8c680be31f,474.033s/14221frames.120picture and120font samples0flags, both endpoints decoded;140cues0missing,1130aligned words,193 original byte-exact SRT cues. Exact reachable source/assets/narration unchanged;8 unrelated root science edits separately recorded,criticalChanges empty. Source metadata74/2211chars, notkids,AIyes,Education,EnglishAustralia, manual timed SRT explicitly Published;copyright/CommunityGuidelines completeclear. Master backup hashverified. Owner continuous viewing/listening pending. Continue i12, d03 sole active render; no new speech.
+
+
+## Brief241 math-a12-i12 FIRST v1 HELD PRIVATE,13 November2026
+
+https://youtu.be/fuNi1BJ7keg. Repaired minimum graph height180 passes and first full master completes. Held scene checked FIRST at native1x156.264/161.166/164.165s: NEW real defect at161s/frame4830, blue soil curve strikes through the soil still moves. Full1920x1080 evidence work/brief241/math-a12-i12/soil-label-161s.png confirms; source s1.tsx:126-133, Hand x1500 y880 over graph y846 h180. No scene edits. Hold/export-review JSON and pending/ledger updated. No export pass/public release; rest of native checklist incomplete after concrete defect. Root repair and new approval required for v2.
+
+Master out/explainer/Explainer-math-a12-i12/Explainer-math-a12-i12-v1.mp4,SHA 4bd265a04770e76f85415059e3ab819c6d29f40606a67058ce3ca6dd738ec4fb,517.233s/15517frames,51394793bytes.120picture/120font samples0flags,both endpoints decoded;16sheet matches root.118cueproperties0missing,1211aligned words,204timed captions. First completed master, no old completed master or SRT equality claim. Narration/timeline equals earlier planned guard-failed playback; exact sources and5assets unchanged. Operational scan helper cv1 naming mistake corrected to cv2, master not re-rendered. Source metadata100/1539chars,notkids,AIyes,Education,EnglishAustralia;manual timed SRT explicitly Published;copyright/CommunityGuidelines completeclear. Local Drive master hashverified, remote sync unverified. Continue d03 sole render; owner viewing/listening pending.
+
+
+## Brief241 math-a12-d03 v2 HELD PRIVATE,13 November2026
+
+https://youtu.be/5hZJaghuOoQ. Original phone-text hold resolved FIRST70.111/72.164/74.074s. NEW real collision scene13 at432s/frame12960: top horizontal graph axis strikes through y = 2 ln x - 3x. Native423/432/440s and full1920x1080 evidence work/brief241/math-a12-d03/feedback-label-432s.png confirm. Source s4.tsx:39-44. Curve formula clears y label but overlaps horizontal axis; both narrowed mistake cards clear x, run same tag clear run2. No source edits/export pass/public release. Preserve old9aTAQTL-das and new5hZJaghuOoQ as Private, both masters. Root repair/new approval beforev3. Remaining native windows after feedback1 incomplete. 58 samples saved in native-samples/export-review JSON.
+
+Master out/explainer/Explainer-math-a12-d03/Explainer-math-a12-d03-v2.mp4,SHA e3bfe58fddefd29680bf2938cac7a65ef6f701a40a0801db94e3d577c7279948,554.533s/16636frames,53778391bytes;120picture/120font samples0flags,both endpoints decoded,16sheet matches root apart from moving phase.102cues0missing,1396alignedwords,239original byte-exact timed captions. Old239d03 lacks playback snapshot: compare exact retained v1 master SHA/frame count and copied AAC ADTS bytes, equal SHA4d7740cf5d5afaaccae139b8fef611b7c4140b2a159c09a8b8e1ff002de803a7; no deep JSON equality claim. Exactsource5assets unchanged. Metadata67/1396chars,notkids,AIyes,Education,EnglishAustralia;manualSRT explicitlyPublished,copyright/CommunityGuidelines completeclear. LocalDrive master hashverified, remote sync unverified. Continue d04 sole active render; owner human viewing/listening pending.
+
+
+## Brief241 math-a12-d04 v2 HELD PRIVATE,13 November2026
+
+https://youtu.be/Yk4euVEorDc. Original triangle-label hold resolved FIRST150.096/152.207/156.160s. NEW scene8 collision at306s/frame9180: black decreasing log curve crosses its own y = log base half x label (lower y/equal and basehalf subscript). Native306.072 and full1920x1080 evidence work/brief241/math-a12-d04/basehalf-label-306s.png confirm. Source s2.tsx:212 label atM.pt(3,-1.45) minus6px. No source edits. 31 samples saved; remaining native checklist after scene8 incomplete, including scene9 graph below pitch card. No export pass/public release. Keep oldzBf7-drf-bg and newYk4euVEorDc Private, both masters. Root repair/new approval beforev3.
+
+Master out/explainer/Explainer-math-a12-d04/Explainer-math-a12-d04-v2.mp4,SHA af934d9abbf60e437e64f20205666ac08fcafebe79079d68418d534876befd94,536.267s/16088frames,52825882bytes.120picture/120font samples0flags,both endpoints decoded,16sheet matches root.91cue properties0missing (build notes say96; static checker resolves91 callable properties, no missing),1350alignedwords,222byte-exact original timedSRT cues. Oldplayback deepEqual, exactsources/5assets unchanged. Metadata79/1372chars,notkids,AIyes,Education,EnglishAustralia;manualSRT explicitlyPublished;copyright/CommunityGuidelines completeclear. LocalDrive master hashverified, remote sync unverified. Continue d14 sole render; owner continuous viewing/listening pending.
+
+
+## Brief241 math-a12-d14 v2 HELD PRIVATE,13 November2026
+
+https://youtu.be/KXmunJD9cew. Original hold resolved FIRST271/274/279s: one-line heading, Plan below Givens, separate domain, dropped1.50tick. NEW scene12 at406s/frame12180 vertical graph axis cuts through radical in y = sqrt2. Native406/415s and full1920x1080 work/brief241/math-a12-d14/tangent-label-406s.png confirm; source s4.tsx:150. 47 native samples through feedback2; remaining handoff/notes incomplete after defect. No source edits/export pass/public release. Keep old5HN0LvoIiOI and newKXmunJD9cew Private and both masters; root repair/new approval beforev3.
+
+Master out/explainer/Explainer-math-a12-d14/Explainer-math-a12-d14-v2.mp4,SHA 50b5ff1d61230ffd4ec484aeaf7b5e9410a122826214fd94fbed949d136c9c31,497.033s/14911frames,53022863bytes,2workers.120picture/120font samples0flags,endpoints decoded,sheet matches root;130cues0missing,1179words,205original byte-exact timedSRT. Exact sources/4assets unchanged, oldplayback deepEqual. Metadata90/1364chars,notkids,AIyes,Education,EnglishAustralia;manualSRT explicitlyPublished;copyright/CommunityGuidelines completeclear,HDcomplete,noNotices. LocalDrive master hashverified,remote sync unverified. Hold/exportreview,pending/ledger updated. Continue i08 finishedrender package checks; no new speech.
+
+
+## Brief241 math-a12-i14 PRE-RENDER HOLD,13 November2026
+
+Did not start v2. Root repaired sheet frame5/full still4077 at135.9s shows t1.0,v+9.0,a-12.0 with same signs: speeding up. Actual signs opposite, slowing down. Source S04 s1.tsx:183,211-212 retains stale chip after comparison jump j2 until k.down+6. Evidence work/brief241/math-a12-i14/pre-render-hold.json and root full still out/explainer/Explainer-math-a12-i14/grade/stills/sheet-04077.png.171cues0missing. Prepared snapshot preserved as held, do not launch stale snapshot. No new speech/source edit/master/upload. Keep original pjNHUoHcIv8 Private and master. Root repair/new A and1fps sweep needed. Continue new brief239 i01 after i08 checks.
+
+2026-11-13T01:18:55.811Z repaired Maths queue: f04 voicing stopped;no automatic retry. Existing takes preserved,see work/brief240/f04-nov12-voice.log.
+
+
+## Brief241 math-a12-i08 v2 PUBLIC, 13 November 2026 12:21 Sydney
+
+https://youtu.be/UCtjtcTpiTc. Master out/explainer/Explainer-math-a12-i08/Explainer-math-a12-i08-v2.mp4, 532.900s/15987frames, SHA 0fa50b0960073a1f30a0b782996d0eb440ace8c17aea1c5057bd0cab3670ed2f.120 picture samples0flags;120 font samples0flags,both endpoints decoded,16-frame sheet compared with root repaired A reference. 157 cue properties resolve0missing,1251 aligned words,204 timed caption cues validated. Narration/playback unchanged; exact source/public-copy check in work/brief241/math-a12-i08/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: FIRST definition above after-noon label at27/29/33s, countdown separate.; Scene3 out arrow and graph marker clear; scene4 height labels clear; app card below heading; FTC bracket tag beside theorem chip..
+
+Sampled native1x observations: Original held moment first; every planned teaching region checked, with split follow-ups for two helper deadlines. No video/render rerun. Carpark signed accumulation values250/400/450/400/0; noon flat gradient0; moving derivative dots land on netrate. Definition and countdown separate. Shrinkingstrip h0.5/0.1/0.01 chord1.75/1.95/1.995 tends2; magnifier and tangent landing clear. Matching10:30rate rows1.5. Curved app reaches8/3,gradient4andheight4atx2; xcubeover3overlay matches. Continuity chip and no-straight-line tag closely adjacent at244s, whole wording legible in exact full master; no missing teaching text. Lowerbound10am shifts400to150,down5/2withgradient1both. Constantscancel, theorem and bracket annotation clear. Previous trolley8/3,rain1cm,bath32L match. Memorycard clear. Attempt1count10/7/3 and attempt2count10/6/2 answer-free; feedback0and3,then26withlowerendpoint1subtracted. Negativecube ring handoff,completequietnotes and finalreturn532.693s checked. Native screenshots can lag player time briefly after seek; exact timestamps not word-sync claims.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief241/math-a12-i08/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position21, 22 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief241-math-a12-i08-v2-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read241 after this job.
+
+## Brief240 f04 voice hand-in
+
+math-a12-f04: docs/production/claude-pm/checks/m-a12-f04-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f04-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-tube-seedling-v1.png, public/assets/maths/ma12-young-gum-tree-v1.png, public/assets/maths/ma12-hillside-strip-v1.png. 5810 reviewed narration characters across15 takes;7 exact-text takes served from cache;8 new requests. Total466.80s, notes45s. Selected new-request billed usage663 input/5078 output tokens; estimatedUSD0.046034. Measureddocs/production/claude-pm/lessons/math-a12-f04/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.325s in scene-13;173 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief240/voice-results/f04/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief240 f04 request accounting addendum,13Nov: first run saved scenes01-06 then scene07 request terminated with UND_ERR_SOCKET, no429/quota response. Ledger retains all7attempts. Resume reused6takes plus existing notescache and generated remaining8; cumulative f04Google attempts15,14successful newscene takes plus1interrupted. Final run hand-in's newRequests8/cost describes resume run only. Daily total29/99.61files Drivehashverified. Completed takes preserved. f05 next14requests fits.
+
+## Brief240 f05 voice hand-in
+
+math-a12-f05: docs/production/claude-pm/checks/m-a12-f05-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f05-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-paper-sheet-v1.png, public/assets/maths/ma12-paper-folded-v1.png. 6100 reviewed narration characters across15 takes;1 exact-text takes served from cache;14 new requests. Total510.20s, notes45s. Selected new-request billed usage1455 input/10975 output tokens; estimatedUSD0.099503. Measureddocs/production/claude-pm/lessons/math-a12-f05/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.245s in scene-11;211 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:12 scenes, details inwork/brief240/voice-results/f05/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Brief240 f06 voice hand-in
+
+math-a12-f06: docs/production/claude-pm/checks/m-a12-f06-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f06-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-chessboard-top-v1.png, public/assets/maths/ma12-rice-grain-v1.png, public/assets/maths/ma12-rice-heap-v1.png. 6063 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total500.67s, notes45s. Selected new-request billed usage1512 input/10738 output tokens; estimatedUSD0.097398. Measureddocs/production/claude-pm/lessons/math-a12-f06/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.865s in scene-05;200 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:14 scenes, details inwork/brief240/voice-results/f06/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief239 math-a12-i01 FIRST v1 HELD PRIVATE,13 November2026
+
+https://youtu.be/OPPTVpkpCXA. NEW scene08a at330s/frame9900 C50slider badge covers lower part of time t (weeks) axis title. Full1920x1080 work/brief239/i01/slider-over-time-label-330s.png and native330/337s confirm; source s3.tsx:25,41. No source edits/export pass/public release. 39 native samples through shelf return; remaining memory,attempts,feedback,handoff/notes incomplete after defect. Original partial browser-scrolled90-121s window repeated in full view. Root repair/new A1fps approval beforev2; retain firstmaster/Privateupload.
+
+Master out/explainer/Explainer-math-a12-i01/Explainer-math-a12-i01-v1.mp4,SHA 7c25d8cadd3955bcad4fb344525aa4255f29012ebdd5aa3e1d0643417887a703,529.433s/15883frames,55501392bytes,2workers.120picture/120font samples0flags,endpoints decoded,sheet matches root with moving-phase differences.148cues0missing,1212alignedwords,204timedSRT. Firstmaster no priorSRT-equality claim. Exact source5assets/narration unchanged. Metadata74/2808chars,notkids,AIyes,Education,EnglishAustralia;manualSRT explicitlyPublished,copyright/CommunityGuidelines completeclear,HDcomplete,noNotices. MasterDrivehashverified,remote sync unverified. Continue f07 voice alone; newrenderi07 after currentvoice ends if diskguardpasses.
+
+## Brief240 f07 voice hand-in
+
+math-a12-f07: docs/production/claude-pm/checks/m-a12-f07-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f07-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: . 5841 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total490.33s, notes45s. Selected new-request billed usage1393 input/10481 output tokens; estimatedUSD0.095025. Measureddocs/production/claude-pm/lessons/math-a12-f07/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.146s in scene-12;195 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:14 scenes, details inwork/brief240/voice-results/f07/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief239 math-a12-i07 v1 PUBLIC, 13 November 2026 14:19 Sydney
+
+https://youtu.be/drqUXZXWIe0. Master out/explainer/Explainer-math-a12-i07/Explainer-math-a12-i07-v1.mp4, 477.433s/14323frames, SHA 8a72516f85d4e94035fa09fb8932f049555ac3df989bb1e25c10e6ea9df9cd89.120 picture samples0flags;120 font samples2raw flag(s),all visually adjudicated false positive,0unresolved,both endpoints decoded,16-frame sheet compared with root repaired A reference. 123 cue properties resolve0missing,1120 aligned words,189 timed caption cues validated. First master: frozen measured narration/timeline validated; exact source/public-copy check in work/brief239/i07/post-render-input-check.json. Native held moment checked FIRST; original holds resolved: .
+
+Sampled native1x observations: Bath40to76to72L, time and rate values agree; negative laststrip estimate minus2L clear. Left36/33/32.25 and right28/31/31.75 converge to32. Definition notation, continuous condition, units and netchange versus initial amount clear. Positive triangle36 and negative triangle minus4 give32. Drainedmore ghost is hypothetical. Trapezium10, cancelling9/2 regions0, reflected semicircle minus2pi correct. Full1920 master240s confirms pale label outlines keep y=2x+1 and width2 readable beside axes; close placement recorded, no struck-through letters. Memorycard includes a<b condition and swappedlimits later. Attempts answer-free throughout countdowns; first10/5/1 and second10/5/1 sampled. Feedback minus21/2, then8minus2=6, wrong10 crossed with reason. Handoff A(x) movingend clear; all five notes and memorypicture complete at445/461/473/475s; finalreturn477.269s checked. Two initial player scroll restoration deadlines produced no samples; helper wait extended, fullview restored and all planned windows actually sampled. No video rerender. Screenshots may lag media clock briefly; no continuous human motion or listening claim.
+
+Exact-master learning review pass/export gate ready. No continuous human motion or audio perception claimed; owner viewing/listening remains pending. Metadata and saved settings from actual UI: work/brief239/i07/platform-publication.json; manual SRT explicitly Published. Primary playlist PLMcUYX3DYIeY, position21, 23 public videos, saved route read back. Any prior master/private upload retained. Record docs/production/claude-pm/youtube/brief239-math-a12-i07-v1-public-2026-11-13.json. Local Drive master and hand-in files hash-verified; remote sync not independently verified. No new speech; one heavy process at a time. Re-read239 after this job.
+
+## Brief239 afternoon pause observed, 13 November 2026 17:05 Sydney
+
+Root appended a pause to brief241 for entries31-35 pending the new line-through-text sweep. Preserve completed i11 v1 (Private sPDOFGngy3A), i13 v1 and f01 v1 masters and chunks. No f02/f03 render started. i11 native review reached complete quiet notes through441.548s; final456.9s transition still unchecked. No export pass or public release for i11. i13 and f01 have no native review/public approval. Their completed technical scans remain useful and must not be rerun unnecessarily. i13 metadata selected the84-character alternative explicitly written in the design because its first title is113characters. No narration, scene or design edits. Re-read241 before any further render. Resume240f08 voicing within daily allowance, then242/244/243.
+
+2026-11-13T06:05:16.960Z repaired Maths queue: f08 local alignment memory below0.8GBphysical/2.5GBcommitheadroom afterboundedwait. No speech requested. Completedtakespreserved;render/reviewworkcancontinue.
+
+
+## Brief242 step2 m1-v19 source repair confirmed,13November2026
+
+Scene16 oxide-ion scope agrees in speech, card, practice and Decisions. CuO/Cu2O/Na2O charge balances checked. Only scene16 differs from brief237 narration,196to218characters;19scene sum6372,noemdash.0blockers0shouldfix. checks/c-y11-m1-v19-upgrade-error-check.md and work/brief242/chem-y11-m1-v19-calculations.json. Wave7 source wording gate cleared; whole-wave release and measured/built/human checks remain later. No speech/source edits.
+
+
+## Brief239 math-a12-i11 v1 rendered, ROOT PAUSE,13November2026
+
+out/explainer/Explainer-math-a12-i11/Explainer-math-a12-i11-v1.mp4,SHA38c838a27786b014a6394b07fdafe7d727f50d9977f2be6212eda26195d11ac0,13722frames,457.400s,45880652bytes.120picture samples0flags,120font samples0flags;88cues,0missing,1113alignedwords,179timedSRT. Firstmaster,frozen measured narration validated; no priorSRT equalityclaim. Exact source/assets unchanged. Through441.548s, final456.9s transition unchecked; no approval. Root afternoon241pause applies; no export/public approval,no rerender. Master localDrive hashverified;remote sync unverified. Files work/brief239/i11/root-afternoon-pause.json. Continue240voice and242light queue.
+
+
+## Brief239 math-a12-i13 v1 rendered, ROOT PAUSE,13November2026
+
+out/explainer/Explainer-math-a12-i13/Explainer-math-a12-i13-v1.mp4,SHAbca9001f50b971fc50a73ce1608e980aeacd370e9c8c75508d6f45d2bc93e169,13599frames,453.300s,46703595bytes.120picture samples0flags,120font samples0flags;93cues,0missing,1073alignedwords,176timedSRT. Firstmaster,frozen measured narration validated; no priorSRT equalityclaim. Exact source/assets unchanged. Not started. Root afternoon241pause applies; no export/public approval,no rerender. Master localDrive hashverified;remote sync unverified. Files work/brief239/i13/root-afternoon-pause.json. Continue240voice and242light queue.
+
+
+## Brief239 math-a12-f01 v1 rendered, ROOT PAUSE,13November2026
+
+out/explainer/Explainer-math-a12-f01/Explainer-math-a12-f01-v1.mp4,SHA6edac6dbc9dbdf25d9f51ca8dbe7af8067ad0fa94c67b5b70127a618e05ed4cc,16018frames,533.933s,52994844bytes.120picture samples0flags,120font samples0flags;200cues,0missing,1205alignedwords,213timedSRT. Firstmaster,frozen measured narration validated; no priorSRT equalityclaim. Exact source/assets unchanged. Not started. Root afternoon241pause applies; no export/public approval,no rerender. Master localDrive hashverified;remote sync unverified. Files work/brief239/f01/root-afternoon-pause.json. Continue240voice and242light queue.
+
+## Brief242 step1 inventory written,13November2026
+
+work/brief242/inventory.json covers275Year11designs. Exact narration strings and per-scene hashes compared for all275 against prior Codex audit scenes or Git source blobs whose SHA256 matches an earlier check. Older FA1 check filenames omit the focus-area component; these aliases were resolved rather than treating missing audits as unchanged.124designs differ from the available checked baseline; these differences can include earlier accepted repairs, so the upgrade decision sections remain the scope reference. Current numerical visual candidates, author Numbers/Facts sections, plate filenames/existence and root's named confirmations recorded. No general science, plate or voice approval. Source payload work/brief242/source-scenes.json; recovered checked blobs work/brief242/recovered-baselines.json. Continue individual checks and plates. No design edits,speech,render or commit in this brief.
+
+
+## Brief242 plate digestive tract replacement,13November2026
+
+public/assets/biology/y11-digestive-tract-v2.png and sidecar, SHA670f7e42c9a4d7b7878175ef6603982782291c00fa236b1167822b7ddabbe4a7. Rejected v1 retained. No mouth,face,lips,teeth,tongue,bodyoutline. Organs distinct on native white/paper and600px preview. TrueRGBA alpha0to255. Native1052x1494 differs from approximate1400x2000; uniform fit only. Visible box above1alpha204,174,819,1327 has clear margin; isolated alpha1pixels reach raw canvas edge, technical deviation disclosed rather than claiming perfectlyzero outermargin. No visiblehalo. assets/brief242-manifest.json and y11fa2v16-brief242-provenance.json record anchors,QA and prompts/method. Root can replace rejected plate in v16/v17; actual built fit and playback pending. No design/code edits.
+
+
+## Brief242 step2 BiologyFA1v28,13November2026
+
+Heap-model claim confirmed by exact enumeration:70choices,16complete,54missing,about23percentcomplete. Frequency applies to the named random model, not real mitotic errors. OpenStax opposite-pole/phase source cited in checks/y11b-fa1-v28-upgrade-error-check.md. Changed6/9/10 add194characters,total5528;73cues present andordered,noemdash.0blockers0shouldfix in upgrade. Calculations work/brief242/bio-y11-fa1-v28-calculations.json. Measured/built/nativeplate/human checks pending; no design edits.
+
+## Brief240 f08 voice hand-in
+
+math-a12-f08: docs/production/claude-pm/checks/m-a12-f08-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f08-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-country-town-v1.png, public/assets/maths/ma12-camper-trailer-v1.png, public/assets/maths/ma12-concert-ticket-v1.png. 6055 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total469.63s, notes45s. Selected new-request billed usage1321 input/9962 output tokens; estimatedUSD0.090319. Measureddocs/production/claude-pm/lessons/math-a12-f08/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.164s in scene-05;185 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief240/voice-results/f08/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief242 step2 BiologyFA3v29 source confirmed,13November2026
+
+Carvalho etal2015 DOI10.1590/0100-83582015000200004 supports germination inhibition by higher-concentration aqueous eucalyptus leaf extracts against distilled-water controls. Lower-concentration limits recorded; model is not presented as measured percentages or proof for every barepatch. Onlyscene6 changed,+390,total5518.80rawcue matches,one false parsermatch,0unresolved;noemdash.0blockers0shouldfix in upgrade. checks/y11b-fa3-v29-upgrade-error-check.md;work/brief242/bio-y11-fa3-v29-source-evidence.json. No design edits;built/plate/engine/native/human checks pending.
+
+
+## Brief242 Physics plates fairy lights and power station,13November2026
+
+New public/assets/physics/phys-y11-fairy-lights-v2.png with AustralianTypeI three-flat-pin plug,10unlitglobes,sidecar10centres. Originalv1retained. Native2172x724,trueRGBA,visiblepaperedgesclean;horizontalmarginabout3percent ratherthan8,near-transparentstrays disclosed. Uniformnativefitonly. Existingphys-y11-power-station-v2.png inspectednativeonpaperanddark:no redchimneybands,no visiblematte,keepv2;no unnecessaryrepaint. Addedsidecarandbothentries assets/brief242-manifest.json. Actualjoinedv17/v18frames,glowmapping andplaybackremainbuilderchecks.
+
+
+## Brief242 step2 chem-y11-m4-v04,13November2026
+
+The scene8 retained row is exactly the scene7 row: q = 105.35 × 4.18 × (−3.2) = −1409 J. The Upgrade paragraph repeats the full row correctly; it does not substitute a rounded or differently signed summary.0blockers0shouldfix in checked upgrade. docs/production/claude-pm/checks/c-y11-m4-v04-upgrade-error-check.md, work\brief242\chem-y11-m4-v04-calculations.json. Source contract confirmed;actualbuilt/engine/plate/measured/humanchecks pending. No design edits.
+
+
+## Brief242 step2 chem-y11-m4-v11,13November2026
+
+The four distinguishable particle/two equal-jar model has16arrangements. The tally counts for4,3,2,1,0particles in the top jar are1,4,6,4,1. These are counts of possible microstates, not a demand that every finite random playback histogram equal the theoretical weights.0blockers0shouldfix in checked upgrade. docs/production/claude-pm/checks/c-y11-m4-v11-upgrade-error-check.md, work\brief242\chem-y11-m4-v11-calculations.json. Source contract confirmed;actualbuilt/engine/plate/measured/humanchecks pending. No design edits.
+
+
+## Brief242 step2 phys-y11-fa2-v10,13November2026
+
+Attempt1part(b) asks which note is higher pitched and which has the larger signal amplitude. The worded card, spoken stem, scene12feedback and practice model answer agree. X is500Hz, Y200Hz; X is higher pitched, Y has twice the signal amplitude. No inference that different-frequency Y is necessarily louder is required.0blockers0shouldfix in checked upgrade. docs/production/claude-pm/checks/p-y11-fa2-v10-upgrade-error-check.md, work\brief242\phys-y11-fa2-v10-calculations.json. Source contract confirmed;actualbuilt/engine/plate/measured/humanchecks pending. No design edits.
+
+
+## Brief242 horse forefeet repair,13November2026
+
+Replaced requested samefilename public/assets/biology/y11-horse-forefeet-series-v1.png,2172x724,with4/3/3/1toe stages. Third has2reducedside digits. Originalfive-toe plate hashverifiedbackup work/brief242/original-y11-horse-forefeet-series-v1-five-toes.png,SHA7e97b5d0dce01e1a8185efaa6a208ef94dde3f75d62b83b8ab8cfab92d629067. NewSHA064bd802b1c9386280f8f94008f74d37b3aadaf967cd99d2912a5b3b523a0b45. Sidecar footcentres;nativepaperQA andmanifest entry. No visiblefringeonpaper; neartransparentstrays disclosed. Actualframefit/registrationpending. Otherthreeanatomicalstages retained,notpixelidentityclaim. No design/scene edit.
+
+
+## Brief242 Chemistrym4v13 beaker confirmation,13November2026
+
+Existingy11c-beaker-water-36ml-v1.png inspectednative: no printedvolume,scale,numbers or labels. Filename36ml is not questiondata inpicture. Pass requestedconfirmation;no repaint. work/brief242/chem-m4-v13-beaker-qa.json andassets/brief242-manifest.json. Actualbuiltfitpending.
+
+
+## Brief242 Chemistry m1-v07 snack carton,13 November2026
+
+Delivered public/assets/chemistry/y11c-snack-pack-carton-v1.png and sidecar; six matching nut-and-raisin packs in two rows. Native1500x1049, trueRGBA; visible margins exceed11percent after built-in margin edit. Nativepaper and dark views clean. Alpha1strays and approximate-size deviation disclosed in assets/brief242-manifest.json. Front-pack and allpack centres recorded; actual build fit pending. No source edits.
+
+
+## Brief242 inventory count correction,13 November2026
+
+Final current inventory compares all275 designs:67 differ from checked narration baseline,0 baseline gaps,82 currently flagged for individual checks. Earlier124 and interim94 counts are superseded: old check scene IDs and FA1 filename aliases were normalised. Differences may include earlier accepted repairs. Directly rewritten numerical Visuals remain candidates for inspection;82 is not blanket clearance of the other designs.
+
+
+## Brief240 quota hold after f08,13 November2026
+
+f08 completed and backed up; daily ledger86of99. f09 needs15 new requests and only13 remain, so local wholelesson gate stopped it before any paid request. Resume f09 after13November19:00Sydney reset. No quota retries. Maths239entries31to35 remain rootpaused under241afternoon notice; continue242,244,243 light work.
+
+
+## Brief242 bio-y11-fa3-v18 root wording confirmation,13 November2026
+
+Scene1 still says "both models of evolution ran on natural selection". Root BiologyFA3 U6 requires "ran on the same mechanism" before voicing. The requested narration change is absent. Keep the existing voicing hold; root must apply and recheck the repair. This confirmation does not resolve the separate AGAR primary-source hold. Report: docs/production/claude-pm/checks/y11b-fa3-v18-upgrade-root-confirmation.md. 1 blocker,0 shouldfix in this targeted check; full upgrade review remains pending. No source edits.
+
+
+## Brief242 bio-y11-fa2-v09 root wording confirmation,13 November2026
+
+Scene1 Visual still specifies "the pull: video 12". Root BiologyFA2 U4 requires "the pull: a later video". The requested current Visual wording is absent. Root should update the design or explicitly record the override in the build. Narration is unaffected. Report: docs/production/claude-pm/checks/y11b-fa2-v09-upgrade-root-confirmation.md. 0 blocker,1 shouldfix in this targeted check; full upgrade review remains pending. No source edits.
+
+
+## Brief242 bio-y11-fa3-v04 root wording confirmation,13 November2026
+
+YouTube title now reads "From One Finch to More Than a Dozen Species: How Isolation Makes New Species | Year 11 Biology". The named title correction is present. Report: docs/production/claude-pm/checks/y11b-fa3-v04-upgrade-root-confirmation.md. 0 blocker,0 shouldfix in this targeted check; full upgrade review remains pending. No source edits.
+
+
+## Brief242 Chemistry m1-v12 halogen ampoules,13 November2026
+
+Delivered public/assets/chemistry/y11c-halogen-vials-v1.png and sidecar, SHA8a4bba027196e763fa1a38d38bcf4475d4ce72ec9a541346e184af58fa8943b8. Foursealed ampoules in F,Cl,Br,I order; pale gases,smallbromineliquidpoolandvapour,iodinecrystalsandtracevapour clearly distinct at520pxwide. Native1642x958,trueRGBA,cleanpaper/darkcomposites;visible margins exceed12percent. Native-size deviation and alpha1strays disclosed in assets/brief242-manifest.json. Fourcentres recorded; actual scene fit pending. No design edits.
+
+
+## Brief242 Chemistry m4-v12 sealed vessel,13 November2026
+
+Delivered public/assets/chemistry/y11c-sealed-reaction-vessel-v1.png and sidecar, SHA12e4290371315576412a2956a5dd6b55536735d2375e824c2cfa8bf39c3f381e. Emptysealedglassvessel with no molecule models, counts, scale or reaction data. Native1448x1086,trueRGBA;nativepaper/dark edges clean,visible margins above12percent. Approximate-size deviation andalpha1strays recorded in assets/brief242-manifest.json. Root M4U3 override replaces older design attempt2moleculemodels with this plate;actual cardfitpending. No design edits.
+
+
+## Brief242 BiologyFA2v19 weighted tube candidates,13 November2026
+
+Painted y11-model-artery-tube-weighted-v1.png and y11-model-vein-tube-weighted-v1.png in public/assets/biology, sidecars and assets/brief242-manifest.json. Both1774x887; artery staysround,veincompresses under matching-style brassmass. Nativepaper and300/600paper/dark inspections clean. Exact-registration QA NOT passed:50percent overlays show smallendpoint/brush changes, and pixel-identical mass is unconfirmed. Conditional candidates only,not voiceclearance. Root must accept registration or apply existing fallback speech cut beforevoicing. Originalunweightedplates unchanged. Provenance assets/y11b-fa2-v19-brief242-weighted-provenance.json.
+
+
+## Brief242 BiologyFA2v19 valve-closed,13 November2026
+
+Delivered public/assets/biology/y11-vein-valve-closed-v1.png and sidecar. QA: CONDITIONAL: exact outer-outline registration not passed. Closed leaflets meet centrally and three red cells are above them. Same1024x1536canvas;50percent overlay shows small regenerated wall-outline changes, so exact pair registration is not claimed. Visible top/bottom margin is below8percent, inherited from original. Root acceptance or further repair required before build. Nativepaper/dark clean;alpha1strays disclosed. Manifest assets/brief242-manifest.json. No design/narration edits;not wholelesson voice clearance.
+
+
+## Brief242 BiologyFA2v19 student-vessels,13 November2026
+
+Delivered public/assets/biology/y11-student-vessel-model-v1.png and sidecar. QA: pass native visual inspection. Thick-walled green hose, narrow rolled quilted paper towel and wide clear soft tube with dark flap are separate and visible. No water, labels or anatomy. Native1619x971 instead of approximate2000x1200; visible margins exceed12percent. Retain native ratio. Nativepaper/dark clean;alpha1strays disclosed. Manifest assets/brief242-manifest.json. No design/narration edits;not wholelesson voice clearance.
+
+
+## Brief242 PhysicsFA0 item24b apparatus,13 November2026
+
+Delivered five missing plates in public/assets/physics:phys-y11-cricket-ball-v1.png,phys-y11-air-track-v1.png,phys-y11-air-glider-v1.png,phys-y11-glider-flag-v1.png,phys-y11-glider-mass-v1.png. Sidecars contain ballcentre/radius,trackrunningline/inlet/buffers/feet,gliderunderside/topslot/endfixings,flagpeg/edges andmasspeg. Nativepaper andwhite/darkQA clean;trueRGBA,no questiondata orpeople. Native dimensions differ fromrequested,especiallytrackcanvas2172x724vs3600x400;uniformfitonly,no stretch. Alpha1strays disclosed. Provenance assets/phys-y11-fa0-item24b-brief242-provenance.json andassets/brief242-manifest.json. Actualjoinedsceneassembly,timingandmotionpending. No design edits.
+
+
+## Brief242 PhysicsFA0 cones and Moon QA,13 November2026
+
+Fivecones accepted forillustration underroot24(a);no constant-slant repaint,no stretching. Nativecones/Moonlayers have no people,text orquestiondata;compositededgesclean,alpha1strays disclosed. Moon ground buildBLOCKER: sidecar groundLiney69 missespaintedsurface aroundy544to681. Builder must use actualcontactsurface thenchecknativeplayback. No observed Moonanimation,so sidecar no-playback-approval remains. Report checks/p-y11-fa0-cones-moon-upgrade-plate-check.md,measurements work/brief242/cones-moon-native-measurements.json,manifest updated. Assetsunchanged.
+
+
+## Brief242 chem-y11-m1-v04 derived numbers,13 November2026
+
+The new +45,+18,+6,+3 are percentage-point gains between the stated successive compositions, not relative percentage increases. A62percent ethanol vapour contains38percent water. Values remain rounded illustrative steps, not extra measured equilibrium data.0blockers0shouldfix in these named items;96quotedcues present/inorder,6186characters,noemdash. Report docs/production/claude-pm/checks/c-y11-m1-v04-upgrade-derived-number-check.md;calculations work/brief242/chem-y11-m1-v04-derived-number-check.json. Fullremainingupgrade/plate/run/listeningchecks pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v06 derived numbers,13 November2026
+
+Scene6 uses25.00g original mixture,8.00g sand,16.00g salt:32.0+64.0=96.0percent,1.00g missing. Crossed24.00g denominator gives33.3+66.7=100percent and hides loss. Scene9 returns to original20.00g case with14.00g salt: sand32.0,30.6,30.0percent and totals102.0,100.6,100.0percent. The later10.00g question recovers10.37g,0.37g extra.0blockers0shouldfix in these named items;73quotedcues present/inorder,6041characters,noemdash. Report docs/production/claude-pm/checks/c-y11-m1-v06-upgrade-derived-number-check.md;calculations work/brief242/chem-y11-m1-v06-derived-number-check.json. Fullremainingupgrade/plate/run/listeningchecks pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v07 derived numbers,13 November2026
+
+NH4NO3 has2N and nitrogen35.0percent; oneN gives crossed17.5percent. CuSO4dot5H2O water90.0of249.6 gives36.1percent lost and63.9percent remaining. A2.50g sample loses0.9014g and leaves1.5986g, correctly rounded0.90g and1.60g. The5H2O-as-onewater chip is explicitly crossed, not a valid formula interpretation.0blockers0shouldfix in these named items;75quotedcues present/inorder,6093characters,noemdash. Report docs/production/claude-pm/checks/c-y11-m1-v07-upgrade-derived-number-check.md;calculations work/brief242/chem-y11-m1-v07-derived-number-check.json. Fullremainingupgrade/plate/run/listeningchecks pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v14 derived numbers,13 November2026
+
+1251dividedby496=2.52218, so the new approximately2.5times bracket is correct. It compares chlorine with sodium, not the endpoint argon value1521. No new physical constants are introduced by the bracket.0blockers0shouldfix in these named items;70quotedcues present/inorder,5527characters,noemdash. Report docs/production/claude-pm/checks/c-y11-m1-v14-upgrade-derived-number-check.md;calculations work/brief242/chem-y11-m1-v14-derived-number-check.json. Fullremainingupgrade/plate/run/listeningchecks pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-ws-v02 derived numbers,13 November2026
+
+For2.50g starting crystals, final readings1.60,1.62,1.64g give36.0,35.2,34.4percent mass lost. Water uptake raises final mass and reduces computed loss, matching scene9. A0.90g loss spans9steps on0.1g resolution and90steps on0.01g resolution. Trial readouts are illustrative, not reported measurements.0blockers0shouldfix in these named items;77quotedcues present/inorder,6345characters,noemdash. Report docs/production/claude-pm/checks/c-y11-ws-v02-upgrade-derived-number-check.md;calculations work/brief242/chem-y11-ws-v02-derived-number-check.json. Fullremainingupgrade/plate/run/listeningchecks pending,no blanketvoiceclearance.
+
+## Brief242 storage hold,13 November2026
+
+Local C and Drive G report about300MBfree. Backup of the five new Chemistry derived-number reports failed with Windows disk-full error before its first new calculation file copied. All five reports,calculations,cueaudits,inventory and status updates exist locally. Do not claim their Drive backup complete. Earlier completed hand-ins remain as recorded. Pending set: chem-y11-m1-v04,v06,v07,v14 andchem-y11-ws-v02 derived-number files; currentinventory/status. New artwork and heavy work paused for space. Existingmasters,chunks,originalplates anduploads preserved. Continue small sourcechecks locally while space is unresolved.
+
+
+## Brief242 chem-y11-m1-v01 crossed slips,13November2026
+
+The crossed claim that C and O alone establish a compound is false for the shown CO2/O2 mixture. SixCO2 and sixO2 give C:O6:24; adding threeO2 changes it to6:30. Two particle kinds, variable overall ratio and no bonding between the molecular species agree.0blockers0shouldfix in named items;86cues present/inorder,noemdash,6287characters. docs/production/claude-pm/checks/c-y11-m1-v01-upgrade-crossed-slip-check.md. Fullremainingupgrade/plate/run/listeningchecks pending. Local saved,Drivebackup pending diskspace.
+
+
+## Brief242 chem-y11-m1-v02 crossed slips,13November2026
+
+The new801degreechip is clearly crossed: one matching melting point does not uniquely identify an unknown. The positive conclusion still combines the stated melting point,density and solubility, and says very likely rather than certain. No new measured constant was added by this slip.0blockers0shouldfix in named items;81cues present/inorder,noemdash,6330characters. docs/production/claude-pm/checks/c-y11-m1-v02-upgrade-crossed-slip-check.md. Fullremainingupgrade/plate/run/listeningchecks pending. Local saved,Drivebackup pending diskspace.
+
+
+## Brief242 chem-y11-m1-v08 crossed slips,13November2026
+
+Iron56two-plus has26protons,30neutrons,24electrons and netcharge+2. The28-electron row is explicitly crossed; it would give negative charge rather than the stated2plus.0blockers0shouldfix in named items;78cues present/inorder,noemdash,5885characters. docs/production/claude-pm/checks/c-y11-m1-v08-upgrade-crossed-slip-check.md. Fullremainingupgrade/plate/run/listeningchecks pending. Local saved,Drivebackup pending diskspace.
+
+
+## Brief242 chem-y11-m1-v09 crossed slips,13November2026
+
+The stated two-isotope question gives x0.78,78percentSi28 and22percentSi29. Weighted contributions21.84+6.38=28.22. Swapping the abundances gives28.78, so the new swapped chip is correctly crossed. This is the given hypothetical two-isotope sample, not a claim about natural silicon.0blockers0shouldfix in named items;77cues present/inorder,noemdash,6188characters. docs/production/claude-pm/checks/c-y11-m1-v09-upgrade-crossed-slip-check.md. Fullremainingupgrade/plate/run/listeningchecks pending. Local saved,Drivebackup pending diskspace.
+
+
+## Brief242 chem-y11-m1-v21 crossed slips,13November2026
+
+The NaCl difference is2.3. The crossed shared-pair chip contradicts this design ionic-transfer model. Magnesium loses twoelectrons, one to each of twochlorines: separate Mg2plus/Clminus/Clminus gives netzero and MgCl2. The new Cl2two-minuscombinedion chip is correctly crossed; the twochlorideions stay separate in the accepted diagram.0blockers0shouldfix in named items;83cues present/inorder,noemdash,6312characters. docs/production/claude-pm/checks/c-y11-m1-v21-upgrade-crossed-slip-check.md. Fullremainingupgrade/plate/run/listeningchecks pending. Local saved,Drivebackup pending diskspace.
+
+
+## Brief242 BiologyFA3v22 upgrade sourcecheck,13November2026
+
+Changedscene5 Australia/NewGuinea claims supported by AustralianMuseum;current7/8rootfallback has fourevidencelines andqualitativebars,noinventednumericprobabilities.0blockers0shouldfix in sourceupgrade.16scenes5658characters,55cues present/inorder,noemdash. checks/y11b-fa3-v22-upgrade-error-check.md andwork/brief242/bio-y11-fa3-v22-upgrade-source-check.json. Actualbuild/plate/timing/listening pending,rootreleasesvoicing. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v01 changed narration,13November2026
+
+Scene15 now scopes the oscillating-particle rule to mechanical wave models. That avoids applying a material-particle description to all waves. Transverse/across and longitudinal/along wording agrees with the defined direction of energy transfer. No error found in the checked changes.0blockers,0shouldfix in checkedchanges;5583characters,71cuespresent/inorder,noemdash. docs/production/claude-pm/checks/p-y11-fa2-v01-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v02 changed narration,13November2026
+
+Changed scenes6,9and10 explicitly identify made-up demonstration data, repeat each marked coil run and compare returned position within uncertainty. Decreasing17,15,12cm pulse amplitudes are consistent with the stated frictional loss; the narrative does not mistake particle excursion for4m wave travel. No new arithmetic is hidden in those changed sentences. No error found in the checked changes.0blockers,0shouldfix in checkedchanges;6302characters,89cuespresent/inorder,noemdash. docs/production/claude-pm/checks/p-y11-fa2-v02-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v03 changed narration,13November2026
+
+Changed scenes1,5and6 specify the unchanged driver swing and equal wave-front speed, define matching points by phase/direction rather than height alone, and give two0.75m crest gaps. At4Hz the period is0.25s and speed3m/s; a2Hz run at that speed has1.5m wavelength. Crest-to-trough halfwave is scoped to a smooth regular wave. No error found in the checked changes.0blockers,0shouldfix in checkedchanges;5527characters,75cuespresent/inorder,noemdash. docs/production/claude-pm/checks/p-y11-fa2-v03-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v04 changed narration,13November2026
+
+Changed scene4 correctly measures1.00m between adjacent compression centres and removes a spoken video code. Scene7 scopes the tiny-displacement estimate with explicit500Hz/60dB tags. Standard plane-wave intensity gives about0.000022mm amplitude, below0.0001mm; even peak-to-peak is below that bound. The new first-order crowding fractions0.06283 and0.12566 round6percent and13percent, labelledmodel. Actual finite-particle spacing/readout agreement remains an engine check. Scene3 specifies a live readout purple particle: net travel0 while the same particle visibly moves forward and back. Zero net displacement holds after a complete cycle, not at every intermediate instant. Specify the full-cycle interval or have the live readout follow actual displacement; do not display a permanent instantaneous zero beside a moving particle. This is a source-display ambiguity to resolve before build; no actual engine defect is claimed.0blockers,1shouldfix in checkedchanges;5908characters,73cuespresent/inorder,noemdash. docs/production/claude-pm/checks/p-y11-fa2-v04-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+## Brief242 intermittent disk-full stop,13 November2026
+
+Source checks locally saved through Chemistry crossed slips,BiologyFA3v22 andPhysicsFA2v01to04. Later seven Physics checks are NOT handed in: work/brief242/check-physics-fa2-next.py stopped at its space guard before writing any reports. Cue audits forv05,v06,v07,v09,v11,v12,v21 were recovered;false parser candidates identified. Pending findings already inspected: FA2v07scene14still lacks rootU13mandatory handoff wording;FA2v09scene12infers buzzer vibration from flashing lamp alone. Preserve this pending state and rerun helper only after space is stable. C/G free space fluctuates from nearzero to under700MB; actual write failures occurred. New artwork,voicing,renders andDrivebackups paused for diskspace. Need several GB free before heavy work. f08done;f09needs15requests,only13remain until13Nov19:00Sydney. Root241afternoonMathsholdstillactive. No completedtakes ormasters redone/deleted.
+
+
+## Brief242 phys-y11-fa2-v05 changed narration,13November2026
+
+Changed scenes2and6 scope pattern/energy speed to this cord.1.50m in0.50s gives3.0m/s; spring1.00m in0.50s gives2.0m/s. Same cord/tension at4Hz has0.75m wavelength and remains3.0m/s. Particle moved-along0 is correct for transverse motion. No error found in these checked changes. 0blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v05-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v06 changed narration,13November2026
+
+Changed scenes3and6 now scope peak/trough and fastest-at-zero statements to smooth regular curves. For the stated sinusoidal3cm,2Hz motion, period0.50s and maximum speed0.377m/s; the speed readout correctly runs0percent atturningpoints to100percent atzero. Scene8 distinguishes timeaxis from distanceaxis;3/4=0.75m. One mechanical cue candidate is a false match across the quoted tag half a period on; the actual following forward again cue is in scene11. No error found in these checked changes. 0blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v06-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v07 changed narration,13November2026
+
+The new P/Q readouts2.0to2.7cm and2.0to0.9cm agree with the specified0.10m rightshift. Longitudinal1.00m sine snapshot compresses at0.50m,rarefies at1.00m and has a displacement crest0.25m away. The13percent spacing change is the stated continuum derivative model; actual drawn gaps remain an engine check. Root FA2U13 requires scene14 to use the places where its arrows meet wording. Current narration still says its zero crossings show where the compressions and rarefactions are, without the sine-wave scope added to scenes8and9. The mandatory handoff narration repair is absent. Keep voice clearance held until root applies its decision and reconciles the joined opening. 1blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v07-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v09 changed narration,13November2026
+
+Changed scenes2,4and6 separate particle oscillation from energy transport, scope the mean motion, and distinguish lessair from perfectvacuum. Counts40to3to0 are explicitly model counts. One raw cue candidate ends at the displayed quick to pass it on tag; the actual following steel cue is present in scene8. Scene12 says the flashing light shows the buzzer has not stopped vibrating. The question only states that its lamp still flashes; that establishes visiblelight/power, not mechanical oscillation of the buzzer. The earlier bell demonstration has a visible moving hammer, but this unseen buzzer question supplies no such observation or linked sensor. Remove the unsupported inference or supply direct vibration evidence in the question and feedback. 0blockers,1shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v09-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v11 changed narration,13November2026
+
+Scene3 now checks the microphone channels sidebyside before separating them. The next in-step points at0.341,0.682,1.023m are1,2,3wavelengths for the stated1000Hz illustrative341m/s case. Starting besideA counts0, not the first displacement wavelength. One raw cue candidate is a false match after switching on in the safety table; actual snag cue is present in scene11. No error found in these checked changes. 0blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v11-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v12 changed narration,13November2026
+
+Changed scenes3,9,10and11 distinguish pressure from particle displacement, require a freelytravelling wave/few echoes and flatmeter, and explicitly state that model-set swing is not an independent test.3dB gives1.995times,6dB3.981times,10dB10times. Data62,68,71.5,74dB give ratios1,3.981,8.913,15.849; through-origin fit against1,4,9,16 hasgradient0.9907,rounding0.99. Atfixedparticle swing,speedproportionalf and energyproportionalf squared; fixedpressureswing gives fixed intensity. One raw cue candidate is a false match after the displayed after tag in the card description; the actual Pause here to answer cue is present. No error found in these checked changes. 0blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v12-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 phys-y11-fa2-v21 changed narration,13November2026
+
+Trimmed scene14 retains the correct medium assignment.1.52sin50/1.33 gives0.87548 and61.10degrees,awayfromnormal as light speedsup into water. Swapping indices gives42.09degrees,correctly crossed42.1. The trimmed sentence adds no new quantity. No error found in these checked changes. 0blockers,0shouldfix incheckedchanges. docs/production/claude-pm/checks/p-y11-fa2-v21-upgrade-changed-narration-check.md. Remainingfullupgrade/plate/engine/listeningpending. Local saved,Drivebackuppendingdiskspace.
+
+
+## Brief242 storage recovered and backups reconciled,13November2026
+
+Space rose to about3.6GB after intermittentdisk-full failures. Seven pending PhysicsFA2changed-narration checks now saved: v05,v06,v11,v12,v21 nofindingsincheckedscope;v07blocker(rootU13handoffspeechfixabsent);v09shouldfix(flashinglampdoesnotestablishbuzzervibration). These are sourcechecks,not wholelessonclearance. Allnonemptybrief242workfiles,currentreports anddeliveredplates/sidecars/manifest copied tolocalDrive mirror or verifiedalreadyidentical: 207new/updated,64skippedmatching. Reported backupholds above are superseded for these files. RemoteDrive sync notindependentlyverified. Receipt work/brief242/backup-reconciliation-2026-11-13.json. Completedtakes/mastersunchanged. Continue remaining242checks;heavyjobs stillfollowquota/rootgates andavailabledisk.
+
+
+## Brief242 chem-y11-m1-v01 modelreadoutsource,13November2026
+
+Simulation calls the particle counts illustrative except exact formula/count examples. New scene5,8,9and14readouts are explicitly marked modelcounts in the design. The6:24to6:30oxygen injection and3vs9sugar factor agree. Actual visible model labels must be checked in build; this does not establish rendered labels.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v01-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v03 modelreadoutsource,13November2026
+
+Filter run explicitly labelled model,not to scale. Sand grains through paper remains0; water/ionscanpass. Evaporation readout is markedmodel. Cooling:169minus31=138gKNO3,38minus36=2gsalt per100gwater,correct.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v03-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v05 modelreadoutsource,13November2026
+
+Scene4time-moving bars are explicitly model,labelled34px. Developing-strip spotpositionsfollowfixedRf timesfront:2.4/8=.30,6.4/8=.80;halfway4cm gives1.2and3.2cm. Counts/bar lengths are not claimed measured data.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v05-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v15 modelreadoutsource,13November2026
+
+Reaction-box rates explicitly labelled model:relative rates,not measured. Selected barriers are stated notdata. The threeboxesholdsameparticlecounts andtemperature;barrierorderingLi>Na>K is the stated comparative model. No numeric rate-ratio is accepted as measuredkinetics; actualrun/readoutagreementpending.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v15-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v17 modelreadoutsource,13November2026
+
+Chanceweights explicitly illustrative; diagramlabel model:not measuredcount rates. Alpha stopsinpaper,beta inaluminium,gamma reducedratherthanallstopped is the declared representative shielding model. No probability percentage introduced as measured data. Actualtrialtotals/shieldreadoutsnotobserved.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v17-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-ws-v01 modelreadoutsource,13November2026
+
+Heatingcurve explicitly prediction(model);onlytwoillustrativeclasspoints are data. The36.1percent idealwaterloss uses90/249.6,while36.0percent classreading is roundedfrom2.50to1.60g,not a contradiction. Curvepointsandmassreadoutmustshareclock atbuild.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-ws-v01-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-ws-v03 modelreadoutsource,13November2026
+
+Repeat outcomes and readouts explicitly illustrative/tagged. Symmetricfirstoutcomescentre34.4andcorrectedrun36.1;gap1.7percentagepoints. Finite-seedmeansneednotbeexactat everytrial, so build must computeactualmean/gapfromoutcomes,notforceconstanttheoreticalmean.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-ws-v03-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v10 modelreadoutsource,13November2026
+
+Allowed-drop chanceweights explicitly illustrative; striplabel model:brightnessnot to scale. The linepositionsstayfixed while trialcount/talliesgrow. No numeric branchingprobability isclaimedphysical. Actualphotonlandings/talliesmustbecheckedagainstsameoutcome.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v10-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 chem-y11-m1-v16 modelreadoutsource,13November2026
+
+Both photonviews explicitly model:brightnessnot to scale; chanceweights illustrative. Colourblend and spectrumtallies come from same photonoutcomes. No inventedlineintensitycountsareclaimedmeasured. Actualcolour/tallyagreementnotobserved.0blockers0shouldfix in these named items. docs/production/claude-pm/checks/c-y11-m1-v16-upgrade-model-readout-check.md. Actualengine/renderedlabels andremainingfullupgrade pending,no blanketvoiceclearance.
+
+
+## Brief242 BiologyFA2v28 pituitary alpha repair,13November2026
+
+Delivered public/assets/biology/y11-hypothalamus-pituitary-section-v2.png and sidecar,SHA4167a08b3355767e37533687af780db99dc266a2c8b96bd6c339a20a624a5240. Originalv1preserved. Pale backing/externalhaze removed;nativepaper/darkedgesclean,trueRGBA. Same1122x1402canvas;anatomicalstructures retained,not pixelidentity. Original4to5percentmargins andalpha1strays disclosedinmanifest. Builderusesv2andchecksleaderanchors/fit;no playbackapproval. assets/brief242-manifest.json updated.
+
+
+## Brief242 PhysicsFA3U13 plateQA and repairs,13November2026
+
+Twelveexistingplateschecked;field-sensor/ironnailtruealpha,blankmeters/noquestiondata,heater/powerpointreadoncream,rednorthmagnetacceptedwithtag. Spherev1visiblehalofailed:deliveredphys-y11-metal-sphere-stand-v2.png repairsit. Torsionv1fixedballoutsidejarfailed:deliveredphys-y11-torsion-balance-v2.png,base/needle sidecarsandstaticassembly. Newbase1013x1552 differsfrom1003x1568needle;uniform0.9needlescale+57,76offsetstaticfitonly,actualrotationpending. Oldv1preservedanditsnewsidecarflagsfailure. checks/p-y11-fa3-u13-upgrade-plate-check.md,assets/brief242-manifest.json. Belljar/lampandactualscenechecksremainpending.
+
+
+## Brief 242: Biology FA2 v22 balloon plate, 13 November 2026
+
+Delivered y11-balloon-wool-model-v2.png and sidecar. Top neck fits the tube; lower knot removed. Original v1 preserved. Paper and dark composites pass. Narrow top and bottom margins are recorded for scene padding. Static check only. See checks/y11b-fa2-v22-v32-upgrade-plate-check.md.
+
+## Brief 242: Biology FA2 v32 islet pair, 13 November 2026
+
+Existing plates register under uniform scale 2000/1254, without translation or stretching. Silhouette overlap 0.997709. Outer tissue and capillary align; beta-cell loss is visible. No repaint needed. Dark composites pass. Actual scene swap remains to be checked. Measurements saved in assets/y11b-fa2-v32-brief242-islet-registration.json; manifest updated.
+
+Brief 242 backup hold, 13 November 2026: balloon v2 and islet registration hand-ins saved locally, but the first Drive copy failed with disk-full error 112. Only about 50 MB remains locally and 48 MB on the Drive mount. Do not rerun the hand-in script; reconcile its six files after space recovers. No paid speech started. Existing takes and masters preserved.
+
+
+## Brief 242: Biology FA2 v05 plate QA, 13 November 2026
+
+Chlorosis leaf and blank fertiliser bag pass paper and dark fringe checks. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+
+## Brief 242: Biology FA2 v18 plate QA, 13 November 2026
+
+Villus v2 passes; brush border retained as anatomy. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+
+## Brief 242: Biology FA2 v22 plate QA, 13 November 2026
+
+Alveolar wall section still needs the requested outer dark ink outline. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+
+## Brief 242: Biology FA2 v23 plate QA, 13 November 2026
+
+Filter section fails: visible external halo on dark and missing outer ink outline. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+
+## Brief 242: Biology FA2 v24 and v32 plate QA, 13 November 2026
+
+Magnet-string v2 passes. Tubule section still needs an outer ink outline. Islet pair is covered by its separate registration hand-in. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+
+## Brief 242: Biology FA2 v30 plate QA, 13 November 2026
+
+Adrenal lower red fringe is invisible on paper; paper and dark checks pass. No design or artwork pixels changed. Details: checks/y11b-fa2-u9-upgrade-plate-check.md. These are static checks only.
+
+The reused bean seedling also passes paper and dark checks. Three section repairs remain pending disk space. Local hand-ins saved; Drive copy will be attempted only with space available.
+
+
+## Brief 242: phys-y11-fa3-v05 changed narration, 13 November 2026
+
+Scenes 3 and 7: multiplying q by a negative number reverses the electric force. Equal charge magnitudes give equal opposite forces. F/m gives the inverse mass dependence; the quoted initial speeds are consistent with rounded masses and force. The race is tagged not to scale and at first, so it must not become a long constant-force run in the nonuniform point-charge field. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v05-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v06 changed narration, 13 November 2026
+
+Scenes 4 and 5: doubling either charge doubles force; doubling both gives four times. The distance changes give one quarter, four times and nine times respectively. The factor bars agree with the inverse-square law. Actual bar values still need the engine check. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v06-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v14 changed narration, 13 November 2026
+
+Scene 9: the fixed 12 V supply gives 0.25 A at 48 ohms and 0.50 A at 24 ohms. Halving resistance doubles current. The new sentence correctly limits the claim to this low-voltage circuit. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v14-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v18 changed narration, 13 November 2026
+
+Scenes 2 and 4: opening the single loop stops steady drift throughout it. Opening only one parallel branch leaves the other path complete. The dots represent drift, not disappearance of charge. No new unsupported numerical claim. Two cue parser matches are false matches across labels ending in on; the actual following cues occur in their scene narration. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v18-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v19 changed narration, 13 November 2026
+
+Scenes 4 and 6: added meter resistance lowers series current throughout the loop. With a 12 ohm resistor, 0.10 ohm meter and 6 V supply, current is 0.4959 A and meter drop 0.04959 V, which round to 0.50 A and 0.050 V. A 10 megaohm voltmeter across 6 V takes 0.60 microamp. The changed motion descriptions follow these effects. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v19-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v20 changed narration, 13 November 2026
+
+Scenes 3, 8 and 10: charge-in and charge-out counts agree in the steady series loop. The 3 and 5 ohm resistors give 8 ohms, 1.5 A, 4.5 V and 7.5 V. Adding 4 ohms gives 12 ohms and 1 A, with drops 3, 5 and 4 V. The energy staircase correctly returns to its reference level. Scene 8 readout unit: the heading is energy per coulomb but its readouts are 12 J, 7.5 J and 0 J. Use J per coulomb (or V), or explicitly make the readout the energy of the tracked one-coulomb packet. As written, the heading and displayed units disagree. This is a Visual wording finding, not an observed engine failure. 0 blockers; 1 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v20-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+
+## Brief 242: phys-y11-fa3-v21 changed narration, 13 November 2026
+
+Scenes 1, 2, 4, 6 and 11: branches share the same two junction potentials. Branch currents 2 and 4 A sum to 6 A and give 2 ohms. Adding a 12 ohm branch adds 1 A, giving 7 A and 12/7 = 1.714 ohms. The original branch currents stay unchanged for the stated fixed ideal 12 V supply. Root accepts the home stage if its sentence stays; the sentence remains. Scene 2 has an energy per coulomb axis and starts with 12 J per coulomb, but the new live readouts fall from 12 J to 0 J. Make the units agree with the axis, or name the energy of a tracked one-coulomb packet. This repeats the v20 scene 8 Visual wording issue. 0 blockers; 1 should-fix. See docs/production/claude-pm/checks/p-y11-fa3-v21-upgrade-changed-narration-check.md. Remaining full upgrade, engine and listening checks are pending.
+
+Backup update: the balloon v2, its sidecar, islet registration, both recent Biology reports, U9 QA record and current manifest/status were copied to the Drive mirror and hash-verified after space recovered. This supersedes the earlier eight-file backup hold. Google f09 preflight after the 7 pm reset reports 0 of 99 used and 15 needed. No paid request started while memory and disk headroom remain unstable.
+
+
+## Brief 242: Physics FA3 U13 remaining plate checks, 13 November 2026
+
+Bell jar and filament lamp v2 pass paper and dark checks. Keep both existing plates. The jar has transparent glass and clear ink edges; its enclosure role does not require a style repaint. All named U13 static items have now been inspected. Existing sphere and torsion repairs and their build limitations still apply. Actual motion and playback remain pending. Updated checks/p-y11-fa3-u13-upgrade-plate-check.md and manifest.
+
+## Brief 242: Physics FA3 v04 reference-sheet decision, 13 November 2026
+
+Official 2025-syllabus sheet page 3 visually checked. Only the permittivity form of point-charge E is printed, not an additional k form. Root decision 9 conditional now applies; current dual screen treatment needs root alignment. 0 blockers, 1 should-fix. See checks/p-y11-fa3-v04-upgrade-reference-sheet-check.md. No source edit.
+
+The seven Physics FA3 changed-narration reports were saved locally, but their backup batch hit disk-full error 112. Preserve the reports; reconcile backups when space returns. No speech requests or renders started.
+
+
+## Brief 242: bio-y11-fa1-v08 changed narration, 13 November 2026
+
+Scene 10: cholesterol buffers membrane fluidity in animal cells. Restricting tail movement at warmer temperatures and disrupting tight packing at lower temperatures are consistent roles. The qualitative paired bars illustrate the same comparison; no numerical temperature, measured rate or percentage is claimed. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v08-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v09 changed narration, 13 November 2026
+
+Scenes 7 and 11: the new speech explicitly separates electrical effects on ions from this concentration-only comparison. Facilitated diffusion is down the relevant gradient through a channel or carrier, with no ATP step added. The Visual repeats the electrical-force scope beside model sodium counts. The handoff retains that scope. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v09-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v10 changed narration, 13 November 2026
+
+Scene 9: 15.0 to 17.4 g gives +2.4 g and +16 percent. The control 14.8 to 14.9 g gains about 0.676 percent, correctly under 1 percent. The speech calls these illustrative numbers and limits the water-movement inference to no leak, equal blotting and little sugar crossing. All three conditions appear together on screen. Root R1 still governs the slip colour at build time. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v10-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v11 changed narration, 13 November 2026
+
+Scene 5: equal inward and outward water exchange in an isotonic solution preserves the normal red-cell shape. Hypertonic surroundings cause water loss and crenation. The common saline example concerns an isotonic solution; no clinical dose, concentration value or treatment instruction is introduced. The displayed counts are the stated relative model, not measured blood composition. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v11-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v12 changed narration, 13 November 2026
+
+Scenes 2 to 4: the example is explicitly a simplified one-ion, one-direction ATP pump. One ion per ATP is its model rule, not a sodium-potassium pump stoichiometry claim. Totals stay 36 before and after pumping, after three cycles and in the near-equal 19/17 leak snapshot. Removing ATP stops pumping while passive leakage reduces the gradient; restoring ATP rebuilds it. Electrical effects are scoped separately in scene 2. The cause and displayed count changes agree. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v12-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v02 changed narration, 13 November 2026
+
+Scenes 5 and 7: cube areas 6, 24 and 54 and volumes 1, 8 and 27 give ratios 6, 3 and 2. Growing side 1 to 3 multiplies surface by 9 and volume by 27. Edge-to-centre distances are 0.5 and 1.5 cm. The diffusion comparison uses the same temperature and particle speed, rather than speeding particles up in the larger cube. The actual random seed and centre counts remain an engine check. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v02-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v06 changed narration, 13 November 2026
+
+Scenes 4, 5 and 6b: light and carbon dioxide plateaus are correctly separated from a temperature optimum and decline. New rates 3.0, 4.5 and 0.6 are explicitly relative model readings, not measured biological rates. Greenhouse enrichment around 1000 ppm compared with roughly 400 ppm supports the broad two-to-three-times example. The 25 to 35 degree band is marked as varying by species; experiments also show acclimation can move optima substantially. Do not turn that band into a universal optimum. Actual model curves and live readouts still require build review. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v06-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v12 changed narration, 13 November 2026
+
+Scene 4: cohesion from hydrogen bonding transmits tension along a continuous water column. The paired top and bottom step readouts illustrate linked column movement, not individual molecules travelling the full tree height. The scene explicitly labels the chain a model and says molecules shift partners. No new measured propagation speed or rate is introduced. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v12-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v15 changed narration, 13 November 2026
+
+Scene 6: a thin transverse celery section lets light pass and reduces overlapping structures. Dye in xylem supports the water-path inference; the scene correctly says it does not establish phloem function, which comes from earlier knowledge. No new measured data introduced. Scene 6 says thin hand-cut slices let the student see one layer of cells. A thin transverse hand section is not necessarily a single-cell-thick layer. The stated advantage is light transmission and less overlap; root should remove the unsupported guarantee of one layer. 0 blockers; 1 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v15-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: chem-y11-m3-v13 changed narration, 13 November 2026
+
+Scene 10: declining acid concentration and shrinking marble surface reduce collision frequency. With temperature and the reaction mechanism held unchanged, the collision-theory model keeps the successful fraction unchanged while the number of successful collisions per second falls. The new speech explicitly separates these two quantities. The displayed 0.067 mL per second is retained from scene 4, not a newly derived value. No error found in the checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/c-y11-m3-v13-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v26 changed narration, 13 November 2026
+
+Scenes 4 and 7: the control-centre model compares 36.8 and 36.0 with 37.0, giving gaps 0.2 and 1.0 degrees. Relative outputs 1 and 5 consistently use five signal units per degree; heat made returns to the model baseline of one when the outgoing path is broken. The cut-nerve case distinguishes signals leaving the brain from signals arriving at the muscle. No quantitative neural frequency or clinical heat rate is claimed. No error found in these checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v26-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v27 changed narration, 13 November 2026
+
+Scenes 2 and 6: the illustrative response drops from 3 to 1 as the temperature gap drops from 0.6 to 0.2 degrees, consistently with v26. The displayed band midpoint is 37. The new trace sentence explains a delay in a feedback correction; the trace is labelled illustrative and is not a patient record. Actual simulator timing remains to be checked. No error found in these checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v27-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v31 changed narration, 13 November 2026
+
+Scene 10: the paper Table 4 gives individual insulin time-to-peak mean 44 minutes and SD 35. The estimated group response is nearly flat at 20 and 30 minutes and is highest at 20; rounding its broad top to 20 to 30 is consistent. Mean individual peak time need not equal the peak time of the group curve. The new distinction is mathematically and statistically sound. Scene 10 shows scattered tick marks as individual peak times. Table 4 gives a mean and SD, not those individual positions. The schematic-width tag applies to the curve band, not clearly to this tick row. Unless raw individual times are available and used, label the tick positions as schematic or use only the published summary. Do not present invented individual marks as observed data. 0 blockers; 1 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v31-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v32 changed narration, 13 November 2026
+
+Scenes 2 and 5: the new wording recalls insulin feedback and explains failed glucose recovery. Carrier saturation leaves glucose in the tubule; the water consequence is reserved for the prediction and next scene. The displayed glucose traces are marked illustrative sketches, not measured patient data. No new diagnostic threshold or derived number is added. The tubule plate outline repair remains a separate artwork finding. No error found in these checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v32-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa2-v33 changed narration, 13 November 2026
+
+Scene 6: humid air limits evaporative cooling. The wording uses about 40 degrees together with confusion, matching the broad heatstroke description in NSW health guidance. The temperature run is explicitly illustrative, with a medical-emergency tag. It does not claim the exact rate of temperature rise or a universal threshold for protein damage. The new faster-reaction explanation gives the stated positive-feedback direction. No error found in these checked changes. 0 blockers; 0 should-fix. See docs/production/claude-pm/checks/y11b-fa2-v33-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: backups reconciled, 2026-11-13-081627 UTC
+
+All nonempty brief 242 work files, current reports and delivered plates, sidecars and manifest copied to the local Drive mirror or verified already identical: 129 new or updated; 329 matching files skipped. This supersedes the earlier backup holds for the files in work/brief242/backup-reconciliation-2026-11-13-081627.json. Remote Drive sync was not independently verified. Completed takes and masters are unchanged.
+
+
+## Brief 242: latest source-check backups, 2026-11-13-081845 UTC
+
+The fifteen latest Biology and Chemistry source-change reports, their calculations and cue audits, current inventory and U9 measurements are present in the Drive mirror and hash-verified. 32 copied or updated; 15 already matching. Receipt work/brief242/text-backup-2026-11-13-081845.json. This includes reports created during the earlier reconciliation. Remote sync not independently verified.
+
+## Brief240 f09 voice hand-in
+
+math-a12-f09: docs/production/claude-pm/checks/m-a12-f09-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f09-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-used-hatchback-v1.png, public/assets/maths/ma12-loan-statement-v1.png. 6384 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total480.67s, notes45s. Selected new-request billed usage1413 input/10239 output tokens; estimatedUSD0.092857. Measureddocs/production/claude-pm/lessons/math-a12-f09/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap0.962s in scene-06;183 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:15 scenes, details inwork/brief240/voice-results/f09/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: Biology FA2 v23 section repair, 13 November 2026
+
+Delivered public/assets/biology/y11-glomerular-filter-section-v2.png and sidecar. Outer ink outline now reads on cream; dark composite is clean. Original v1 preserved. Native dimensions, approximate anchors and narrow margins recorded. This repairs the earlier static outline/halo finding. Actual scene fit and motion remain pending. See assets/y11b-fa2-u9-section-repairs-brief242.json.
+
+
+## Brief 242: Biology FA2 v22 section repair, 13 November 2026
+
+Delivered public/assets/biology/y11-alveolar-wall-section-v2.png and sidecar. Outer ink outline now reads on cream; dark composite is clean. Original v1 preserved. Native dimensions, approximate anchors and narrow margins recorded. This repairs the earlier static outline/halo finding. Actual scene fit and motion remain pending. See assets/y11b-fa2-u9-section-repairs-brief242.json.
+
+
+## Brief 242: Biology FA2 v24 and v32 section repair, 13 November 2026
+
+Delivered public/assets/biology/y11-tubule-capillary-section-v2.png and sidecar. Outer ink outline now reads on cream; dark composite is clean. Original v1 preserved. Native dimensions, approximate anchors and narrow margins recorded. This repairs the earlier static outline/halo finding. Actual scene fit and motion remain pending. See assets/y11b-fa2-u9-section-repairs-brief242.json.
+
+
+## Brief 242: bio-y11-fa3-v02 changed narration, 13 November 2026
+
+Scenes 5, 8 and 10: 20 to 3 gives 85 percent mortality. The sprite count is explicitly relative; the survivor mix shifts towards deeper beaks without changing individual beaks. Later selection can reverse with the seed environment. The myxoma example is confined to early successful less-deadly strains, not a claim that virulence always declines. No error found in the checked changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa3-v02-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa3-v10 changed narration, 13 November 2026
+
+Scenes 2 and 9: the illustrative generation ladder shifts the share from 3/10 to 9/10 across six generations. No individual changes within a generation. The new speech distinguishes inherited ability from acclimatisation during one lifetime. The shown one-to-two-week heat example does not become inherited acquired change. No observed kangaroo population rate is claimed. No error found in the checked changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa3-v10-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa3-v15 changed narration, 13 November 2026
+
+Scenes 4 and 7: freshwater is hypotonic to fish body fluids, so net water enters; seawater is hypertonic, so net water leaves a marine teleost. The new particle-crossing counts have the correct direction in each case. Salt-loss and salt-gain arrows, active gill transport, drinking and urine-volume contrasts agree. Counts must still be read from the actual simulation rather than independently animated. No error found in the checked changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa3-v15-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa3-v30 changed narration, 13 November 2026
+
+Scene 3: a predator peak after a prey peak is the intended lag, and the model and real fur records are kept apart. A ten-year illustrative cycle with a two-year peak delay can have its predator start falling before the prey reaches its trough. These example phase times demonstrate the wording issue; they are not the missing build configuration. Scene 3 says predators only decline after prey have already crashed, and its Visual rings the hare trough before the lynx falling stretch. A lag between peaks does not imply predators wait for the prey trough before declining. In the specified ten-year cycle with about two years between peaks, the predator peak and onset of decline can precede that trough. Root should align this cue with the actual model decline and avoid the absolute only. 0 blockers; 1 should-fix. Report: docs/production/claude-pm/checks/y11b-fa3-v30-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa3-v31 changed narration, 13 November 2026
+
+Scenes 2, 3 and 5: 400 to 200 is a halving of the model K, kept separate from real ecological data. A discrete logistic example with r = 0.51 can move 400 to 192 after the K step, then approach 200, so the small undershoot is possible; a continuous logistic run would approach without crossing. The available population engine supports both forms. This calculation demonstrates feasibility, not approval of unspecified lesson settings. Builder must choose the form and settings deliberately, provide coherent birth/death readouts and read all displays from that run. No error found in the checked changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa3-v31-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+## Brief240 f10 voice hand-in
+
+math-a12-f10: docs/production/claude-pm/checks/m-a12-f10-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f10-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: . 5883 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total439.20s, notes45s. Selected new-request billed usage1277 input/9201 output tokens; estimatedUSD0.083447. Measureddocs/production/claude-pm/lessons/math-a12-f10/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.161s in scene-13;167 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:12 scenes, details inwork/brief240/voice-results/f10/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: Biology FA3 v30/v31 culture-tube repair, 13 November 2026
+
+Delivered y11-culture-tube-v2.png and sidecar: one cotton-plugged tube, cloudy pale straw liquid, clean alpha and ink edges. Original three-tube v1 preserved. Native paper/dark checks and smaller-than-required paper thumbnails pass. Final framing gives about 14 percent top and 12 percent bottom margins; dimensions and liquid/base anchors recorded. Use this same plate across v30 final frame and v31 opening, then check the joined scene. Provenance: assets/y11fa3v30-brief242-culture-provenance.json. Paramecium repair and remaining U11 checks still pending.
+
+
+## Brief 242: Biology FA3 v30 Paramecium repair, 13 November 2026
+
+Delivered b2c-paramecium-v2.png and sidecar. Actual paper/dark composites pass: black backing and broad glow removed, individual cilia spaces transparent, nuclei and vacuoles retained. Original v1 preserved. Six-percent side margins recorded for extra scene padding. See checks/y11b-fa3-u11-upgrade-plate-check.md and assets/y11fa3v30-brief242-paramecium-provenance.json. Remaining U11 items and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v03 changed narration, 13 November 2026
+
+Scenes 4 and 6: the angle is measured from the horizontal, so adjacent gives F cos theta and opposite F sin theta. The 100 N sweep values and 50 N equal components agree to the displayed precision. The sum of perpendicular component magnitudes is not the resultant magnitude. The monotonic shadow claim is limited to the shown zero-to-ninety-degree sweep. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v03-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v05 changed narration, 13 November 2026
+
+Scene 13: 5.0 cm is 0.050 m and the beam-blocking average is 2.5 m/s over 0.020 s. The new speech correctly calls it an estimate of instantaneous speed only when speed changes little during the interval. The crossed 250 value is the missing-centimetre-conversion error. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v05-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v07 changed narration, 13 November 2026
+
+Scenes 5 and 7: areas give 36 m while speeding up, 48 m steady and 24 m braking, totalling 108 m. Braking acceleration is minus 3 m/s squared. Returning from rest at minus 2 m/s squared gives positions 104, 96 and 88 m at 20, 22 and 24 s. Negative velocity with negative acceleration means speeding up in the negative direction, as the changed speech says. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v07-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v10 changed narration, 13 November 2026
+
+Scene 14: mean 9.93, range 0.04 and mean error about 1.3 percent are correct. A shared positive shift suggests rather than proves a systematic error. The extra repeat rings are explicitly conditional model outcomes; repeating does not remove a fixed bias. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v10-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v11 changed narration, 13 November 2026
+
+Scenes 2 and 7: subtracting the observer velocity gives A 10 m/s east, B zero and road 20 m/s west. The perpendicular boat case is 6 north plus 8 west, magnitude 10 and direction 53 degrees west of north. The 5105-character count is the explicit root-decision-12 exception in the source, not a new length finding. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v11-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v12 changed narration, 13 November 2026
+
+Scenes 4 and 7: the 150 N resolver gives about 141 and 51.3 N at 20 degrees and 106 N each at 45 degrees. Normal force is 144.697 N, rounded 145; at 35 degrees it falls to 109.964 N, rounded 110. The horizontal net is 45.954 N, rounded 46.0. The level-snow condition justifies zero vertical acceleration and the separate net-force panel avoids adding a fifth applied force. No error found in these changes. Report: docs/production/claude-pm/checks/p-y11-fa1-v12-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+## Brief240 f11 voice hand-in
+
+math-a12-f11: docs/production/claude-pm/checks/m-a12-f11-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f11-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-motorbike-v1.png, public/assets/maths/ma12-swing-tag-v1.png. 5892 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total448.37s, notes45s. Selected new-request billed usage1315 input/9429 output tokens; estimatedUSD0.085518. Measureddocs/production/claude-pm/lessons/math-a12-f11/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.168s in scene-04;173 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:12 scenes, details inwork/brief240/voice-results/f11/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: phys-y11-fa1-v15 changed narration, 13 November 2026
+
+Scene 1: the changed opening distinguishes ideal model points from illustrative scattered measurements. A small residual alone does not disprove the model. The points become explicitly labelled simulated data at the same cue; no actual experiment is claimed. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/p-y11-fa1-v15-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v19 changed narration, 13 November 2026
+
+Scenes 3, 5 and 7: static friction matches the 4, 5 and 6 N pulls while below its limit. The simple sliding model gives 5.88 N, rounded 5.9; doubling normal force gives 11.76 N, shown 11.8 or about 12. The break-free gap supplies a forward net force until pull falls to kinetic friction. Area independence and speed independence are explicitly limited to this model. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/p-y11-fa1-v19-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v24 changed narration, 13 November 2026
+
+Scenes 9, 12 and 13: the three trials give mean 1.98 and half-range 0.03 m/s squared. The model predicts 2.0375, shown 2.04; the difference is about 2.82 percent using unrounded values, reasonably about 3 percent. The parallel 0.30 shift is explicitly illustrative and conditional on a roughly common resistance effect; angle and timing are named independent checks. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/p-y11-fa1-v24-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v26 changed narration, 13 November 2026
+
+Scenes 2 and 11: a steady force along motion gives 100 J over 2.5 m and 400 J over 10 m. With zero displacement the shelf does zero work. For the ramp, L sin theta = h gives gravity work minus mgh on either route; the sign is consistent for lifting. Friction and the motor force following the car around a loop are non-conservative. No new numerical gravity result is introduced. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/p-y11-fa1-v26-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: phys-y11-fa1-v31 changed narration, 13 November 2026
+
+Changed scenes: the gate timings yield the spoken rounded speed 0.158, total after 0.0788, about 1.5 percent shortfall and 39 percent kinetic energy retained when unrounded speed is carried. The five means fit gradient about 1.00 and intercept about minus 0.0012; setting 4 has a 0.0011 gap, as the author table notes. Percentages 3.0, 2.0, 1.5, 1.1 and 1.0 agree. Quadrature of the stated measurement limits gives about 0.00047 for the momentum difference at setting 3, consistent with the approximate 0.0005 display. Constant and proportional discrepancies are correctly distinguished without claiming their causes are proved. Scene 4 explicitly writes total after = 0.500 times 0.158 = 0.0788. The displayed product is actually 0.0790; 0.0788 comes from carrying the unrounded gate-time speed. Keep the correct gate-based result, but show the unrounded substitution or state that it is carried. This is a screen arithmetic/rounding finding; no speech edit is needed to the correctly rounded result. 0 blockers; 1 should-fix. Report: docs/production/claude-pm/checks/p-y11-fa1-v31-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v20 changed narration, 13 November 2026
+
+Scene 11d: saturation is distinguished from denaturation. Permanent denaturation above 50 degrees is explicitly a condition of this question; 80 exceeds that given threshold, so cooling does not restore activity. No universal claim about all enzymes is made. The six-to-zero active-site display follows the stated condition. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v20-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v21 changed narration, 13 November 2026
+
+Scene 10d: pH is the independent variable; time until starch is absent is the dependent variable, with shorter time indicating faster reaction. Volumes, concentrations and temperature are controlled variables. Boiled amylase is an experimental comparison supporting the role of active enzyme, rather than a variable merely held constant. No new derived rate is claimed. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v21-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v24 changed narration, 13 November 2026
+
+Scene 7: enzymes do not plan or wait in an intentional queue. Random molecular motion, recruitment into replication complexes, parallel forks, molecular shape and proofreading are the stated limitations of the hand model. The new wording explains recruitment rather than implying independent enzymes randomly perform a complete ordered replication sequence. No new numerical claim. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v24-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v31 changed narration, 13 November 2026
+
+Scenes 5 and 9: the graze thought experiment needs somatic division and does not use meiosis. The model reaches sixteen cells and full closure without its meiosis toggle. The new Cavendish wording is confined to susceptible plantations; it does not say every cultivar or plantation has identical resistance. Current official sources support Cavendish as the main Australian banana and TR4 in the Northern Territory and Queensland. Vegetative propagation gives the low-diversity comparison, while inherited variation is the species-level point. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v31-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v13 changed narration, 13 November 2026
+
+Changed scenes: the size inset gives 200 times, correctly more than 100, and nm is one millionth of a millimetre. The half-hour membrane-area claim is supported for cultured macrophages, not asserted for every cell. The illustrative no-return model uses the original surface area as its denominator; equal inward and outward flows preserve the surface. Low ATP stops the stated vesicle-release process while passive water movement can continue. No measured membrane-recycling precision is invented. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa1-v13-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v14 changed narration, 13 November 2026
+
+Changed scenes: the model starts gases equally before respiration creates opposite oxygen and carbon-dioxide gradients. Gentle versus steep differences are 4 and 16, a fourfold gradient contrast, not a change in particle speed. Neutral glucose examples correctly separate downhill facilitated diffusion from energy-dependent uphill uptake. The yeast question explicitly measures equality after glucose use stops. Sodium direction is scoped to these examples and the speech notes electrical effects. The kidney graphic needs the energy-source distinction below. Scene 6 places a splitting ATP badge at the kidney glucose carrier and calls it a different carrier powered by ATP. Renal glucose uptake is sodium-coupled secondary active transport: ATP powers the sodium-potassium pump that maintains its driving gradient, rather than being hydrolysed by the glucose carrier. The broad speech uses energy from ATP is compatible with this, but the graphic should not depict the glucose carrier itself as an ATPase. Root should align that image with the indirect energy route; no extra molecular detail is needed in the speech. 0 blockers; 1 should-fix. Report: docs/production/claude-pm/checks/y11b-fa1-v14-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v15 changed narration, 13 November 2026
+
+Changed scenes: oxygen permits complete aerobic glucose breakdown and a larger ATP yield; the comparison bars carry no invented numerical yield. Water is correctly used as solvent and in hydrolysis, produced in respiration and involved in plant turgor. The leaf exchange column is explicitly net exchange in bright light, while glucose is made and also used. The nitrate comparison correctly links nitrogen, amino acids, protein synthesis and growth rather than treating nitrate as a fuel. The stated masses are retained question data, not measured results from the model. No error found in these changes. 0 blockers; 0 should-fix. Report: docs/production/claude-pm/checks/y11b-fa1-v15-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v16 changed narration, 13 November 2026
+
+Changed scenes: whole glucose is kept outside the mitochondrion before being split into smaller products. Oxygen is the terminal acceptor leading to water, while glucose carbon leaves in carbon dioxide. The new energy staircase says the pathway releases energy overall, with ATP at some steps rather than all steps. Qualitative bars have no numerical yield. The oxygen-origin tally is a pathway illustration, not a licence to trace atoms directly through the simplified net equation; actual tally values remain a build check. Scene 13 says cells get less ATP from the first steps in the cytoplasm when oxygen runs short. This can imply that those steps themselves now yield less ATP per glucose. The intended distinction is less ATP overall, with the small glycolytic yield still available in the cytoplasm. Root should make that distinction clear before voicing; the new line should not attribute the lost aerobic yield to reduced glycolytic yield. 0 blockers; 1 should-fix. Report: docs/production/claude-pm/checks/y11b-fa1-v16-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+## Brief240 f12 voice hand-in
+
+math-a12-f12: docs/production/claude-pm/checks/m-a12-f12-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f12-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-wall-calendar-v1.png, public/assets/maths/ma12-apartment-building-v1.png. 5760 reviewed narration characters across15 takes;1 exact-text takes served from cache;14 new requests. Total437.17s, notes45s. Selected new-request billed usage1272 input/9149 output tokens; estimatedUSD0.082977. Measureddocs/production/claude-pm/lessons/math-a12-f12/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.107s in scene-11;173 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief240/voice-results/f12/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: bio-y11-fa1-v17 changed narration, 13 November 2026
+
+Changed scenes: the tree is explicitly weighed wet and soil dried, avoiding a false dry-mass comparison. Rounded 2 to 77 kg gives about 75 kg gain; the 90.00 to 89.94 soil ledger is rounded, not a claim that the original under-60-g observation was exactly 60 g. The 4-in-10000 grid is 0.04 percent, consistent as an approximation with current air and well below 0.1 percent. The overall photosynthesis coefficients balance carbon, hydrogen and oxygen; the speech correctly separates reversed overall inputs/outputs from the different cellular pathways. Dry wood is described only approximately as half carbon. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v17-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: bio-y11-fa1-v18 changed narration, 13 November 2026
+
+Changed scenes: the peroxide equation balances. The shelf-versus-liver timer is explicitly an unmeasured qualitative comparison, not a measured acceleration ratio. The paired enzyme model holds temperature fixed, lowers the activation barrier and leaves overall reactants, products and energy change unchanged. Selective enzyme control notes that linked reactions may also change. In the stated fixed-substrate potato question, renewed foaming after fresh substrate supports substrate depletion and retained catalase activity; no claim that catalase is consumed is made. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v18-upgrade-changed-narration-check.md. Remaining full upgrade and playback checks are pending.
+
+
+## Brief 242: Biology FA1 v19 changed narration, 13 November 2026
+
+Changed scenes: 1894 to 1958 is 64 years, consistent with about sixty. Specificity is scoped to the drawn substrate or a few related substrates, rather than claiming every enzyme accepts exactly one molecule. The rigid-site and changing-site models, reusable enzyme and example of bond strain agree. After two drawn trials the correct-substrate counters are 2, 2, 2; the near-miss counters are 2, 0, 0. The near miss is explicitly a drawn example, not proof that any other ligand can never move an enzyme. No error found in these changes. Report: docs/production/claude-pm/checks/y11b-fa1-v19-upgrade-changed-narration-check.md. Separate plate hold: y11-induced-fit-closed-v1.png, y11-induced-fit-near-miss-v1.png, y11-induced-fit-open-v1.png, y11-induced-fit-products-v1.png, y11-induced-fit-substrate-v1.png. No whole-lesson voice or build clearance.
+
+## Brief240 f13 voice hand-in
+
+math-a12-f13: docs/production/claude-pm/checks/m-a12-f13-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f13-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-super-statement-v1.png. 5734 reviewed narration characters across15 takes;1 exact-text takes served from cache;14 new requests. Total447.93s, notes45s. Selected new-request billed usage1300 input/9421 output tokens; estimatedUSD0.085439. Measureddocs/production/claude-pm/lessons/math-a12-f13/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap0.965s in scene-01;176 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief240/voice-results/f13/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: Biology FA1 v26 changed narration, 13 November 2026
+
+0 blocker(s), 1 should-fix item(s). Should fix, scene 4: the tag calls m6-metaphase-spread-v1.png "real chromosomes from one human cell". This is a generated illustration, not a micrograph. Brief 85 provenance records built-in imagegen, its prompt and generated source. Its approximately forty chromosomes are deliberately uncounted. Identify it as an illustration of a chromosome spread, or use an authenticated human micrograph if retaining the real-cell claim. This is a provenance/visual claim finding, not a request to change the correct spoken human chromosome count.
+
+Report: docs/production/claude-pm/checks/y11b-fa1-v26-upgrade-changed-narration-check.md. Counts and cue review recorded; no source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA1 v27 changed narration, 13 November 2026
+
+1 blocker(s), 1 should-fix item(s). Blocker, scene 9: the new visual marks ONE chromatid of an already replicated chromosome, then puts that mark in BOTH immediate daughters and all four descendants. Normal mitosis separates the two sisters into different daughters, so that illustrated mark initially follows one daughter lineage. The spoken "It would be copied into both daughter cells" also overstates this for a mistake remaining in G2. Root must reconcile the mutation timing, spoken claim and tree. A pre-replication mutation copied into both sisters could support both daughters, but is not the state currently drawn. General "can be passed on" is valid; the specific 2 then 4 affected-cell counter is not valid for the pictured single marked sister. Should fix, cycle-clock specification and scene 10: "chromosomes stay 4 all the way round" keeps an unqualified chromosomes: 4 beside the anaphase plate. Once sisters separate, this still-undivided model cell has eight daughter chromosomes, four at each pole. Either distinguish whole-cell count through anaphase or explicitly label the readout per daughter nucleus/set and change its scope consistently. G2 four and each daughter four are correct. Do not introduce eight in G2.
+
+Report: docs/production/claude-pm/checks/y11b-fa1-v27-upgrade-changed-narration-check.md. Counts and cue review recorded; no source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA3 U11 nine static checks and v28 bag repair, 13 November 2026
+
+Delivered and checked m5x-bead-bag-v2.png, empty bag only with clean true alpha and sidecar; original v1 preserved. Nine plate checks recorded in checks/y11b-fa3-u11-upgrade-plate-check.md. Confirmed holds: wrong saltmarsh-snail appearance, split-view rocky shore, white frames on both turf plates, opaque creek landscape. Actual paper/dark composites did not reproduce broad external glow on turtle, tray or bag; root decisions remain in force until reconciled. Single red bead passes static alpha QA. More U11 checks and full scene review remain pending.
+
+
+## Brief 242: Biology FA3 v28 counting tray v2, 13 November 2026
+
+Delivered y11-counting-tray-v2.png, sidecar, provenance and manifest entry. Actual native paper/dark alpha QA passes; no beads or question data. Original v1 preserved. Narrow side margins disclosed for extra scene padding. See checks/y11b-fa3-u11-upgrade-plate-check.md. No whole-lesson or motion approval.
+
+
+## Brief 242: Biology FA3 U11 thirteen further plate checks, 13 November 2026
+
+Confirmed external halos on grass tuft, soil-moisture meter and salt lake; repairs pending. Reef v2, both sieve plates, dry rangeland, capeweed, fossil fish, open quadrat and Tasmanian devil pass static edge checks with recorded margin limits. Hopping mouse keeps a small ground shadow; SEM-style bacteria keep a feathered substrate vignette, both disclosed for root acceptance. Native paper/dark evidence and hashes in assets/y11b-fa3-u11-next-thirteen-native-qa.json; report checks/y11b-fa3-u11-upgrade-plate-check.md. No source edits or whole-lesson approval.
+
+## Brief240 f14 voice hand-in
+
+math-a12-f14: docs/production/claude-pm/checks/m-a12-f14-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f14-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: . 5688 reviewed narration characters across15 takes;1 exact-text takes served from cache;14 new requests. Total417.37s, notes45s. Selected new-request billed usage1225 input/8704 output tokens; estimatedUSD0.078949. Measureddocs/production/claude-pm/lessons/math-a12-f14/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.123s in scene-08;157 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief240/voice-results/f14/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: Biology FA3 three halo repairs, 13 November 2026
+
+Delivered y11-grass-tuft-v2.png, y11-soil-moisture-meter-v2.png and y11-salt-lake-v2.png with sidecars, provenance, manifest and native paper/dark QA. External halos removed, native aspect and useful internal details retained. Original v1 plates unchanged. Meter bottom and salt-lake side margins are slightly narrow, disclosed for scene padding. Static passes only; full scene and lesson checks remain.
+
+
+## Brief 242: Biology FA3 v25 rocky-shore repair, 13 November 2026
+
+Delivered y11-rocky-shore-v2.png, sidecar, provenance and manifest. Bare exposed rock now has water only at the bottom; underwater split view, shafts and caustics removed. Native paper/dark QA passes. Original v1 preserved; narrow margins and one-pixel height change recorded for scene insertion. Tide/barnacle overlays and motion remain pending.
+
+
+## Brief 242: Biology FA3 v32 saltmarsh-snail repair, 13 November 2026
+
+Delivered y11-saltmarsh-snail-v2.png, sidecar, provenance and manifest. Plain brown shell, short spire/tentacles and compact foot match the generic requested type, with clean true alpha on paper/dark. Original v1 remains. Root integration choice and scene review pending, no whole-lesson clearance.
+
+
+## Brief 242: creek-bank QA scope correction, 13 November 2026
+
+FA3 v23 explicitly calls the creek-bank plate an opaque full scene. The earlier blanket alpha failure is corrected: retain it for that stated native-aspect scene use, without claiming it is a transparent cutout. No repaint solely for opacity. QA record, manifest and report corrected.
+
+
+## Brief 242: Biology FA3 v27 turf border repairs, 13 November 2026
+
+Delivered patchy and dense turf v2 plates with sidecars, manifest and provenance. White frames removed; both 1254-square backgrounds fill their opaque canvases as explicitly requested. Original v1 files preserved. Static pass only; exact percentage-cover/model readouts and overlay fit still need scene review.
+
+## Brief240 f15 voice hand-in
+
+math-a12-f15: docs/production/claude-pm/checks/m-a12-f15-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-f15-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-travel-suitcase-v1.png. 5808 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total434.33s, notes45s. Selected new-request billed usage1276 input/9079 output tokens; estimatedUSD0.082349. Measureddocs/production/claude-pm/lessons/math-a12-f15/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.143s in scene-12;167 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief240/voice-results/f15/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+
+## Brief 242: Biology FA3 v32 new numeric overlays, 13 November 2026
+
+Independent arithmetic confirms the lake gap/overlap, snail means/ranges and question readouts. Repeat-model weighted expectations are exactly 1850 and 3075; actual finite seeded run remains a build check. Zero findings in these additions, all 81 cues match, 5609 narration characters, no em dash. Report checks/y11b-fa3-v32-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+2026-11-13T09:33:24.390Z repaired Maths queue: s01 requires13 new requests;96/99 used. Whole lesson does not fit. No speech request or retry made;resume next quota window. Completed takes preserved.
+
+
+## Brief 242: Biology FA3 twelve further native plate checks, 13 November 2026
+
+Dandelion, daisy, clover, estuary, ground beetle v2, empty quadrat frame, both perch, flying bee, tennis ball, bead scoop and pitfall trap inspected on actual native paper/dark composites. Static checks pass with margin limits and tennis-ball contact shadow disclosed. Daisy also reads at 40 pixels. No repaint or source change. Evidence and hashes in assets/y11b-fa3-u11-next-twelve-native-qa.json; more file-listing-only plates and scene checks remain.
+
+
+## Brief 242: Biology FA1 v19 five induced-fit plates, 13 November 2026
+
+Delivered open, closed, substrate, products and near-miss PNGs with sidecars, provenance and native paper/dark QA. Correct model contrast and alpha, but strict matched-set hold remains: returned1254-square canvases differ from requested2000, far-side body is not pixel identical and isolated substrate registration is approximate. Product release placement and near-miss fit also need review. Report checks/y11b-fa1-v19-upgrade-plate-check.md. No source edit, whole-lesson voice or build clearance.
+
+
+## Brief242: phys-y11-fa3-v29 missing plate,13November2026
+
+Delivered phys-y11-rod-nickel-v1.png with sidecar. Same2172x724 canvas as soft-iron reference; warm silvery finish, full rod, no broad halo on actual paper/dark. Axis sidecar supplied. Regenerated material brushwork, no pixel identity claimed. Provenance: assets/physics-brief242-four-new-plates.json. Static only, no source edits or whole-lesson clearance.
+
+
+## Brief242: phys-y11-fa3-v30 missing plate,13November2026
+
+Delivered phys-y11-iron-block-v1.png with sidecar. Native1536x1024, full matte grey block, clean actual paper/dark alpha, no surrounding wash. Top face and base contact edge supplied. Perspective and physical scale on the delivered balance pan still need assembled scene review. Provenance: assets/physics-brief242-four-new-plates.json. Static only, no source edits or whole-lesson clearance.
+
+
+## Brief242: phys-y11-fa3-v17 missing plate,13November2026
+
+Delivered phys-y11-house-front-v1.png with sidecar. Native1774x887. Roof/wall palette and paint treatment match original house; centred door and two separate unlit windows. Clean actual paper/dark alpha. Glass rectangles and individual sash-pane rectangles prevent coded glow painting over wood bars. Joined closer-view transition still needs native playback. Provenance: assets/physics-brief242-four-new-plates.json. Static only, no source edits or whole-lesson clearance.
+
+
+## Brief242: phys-y11-fa1-v31 missing plate,13November2026
+
+Delivered phys-y11-air-blower-v1.png with sidecar. Native1374x1145. Hose/open end, plain switch, short lead and three flat TypeI plug blades are readable. Clean paper/dark alpha including cable loop. Side margins about2.3and2.9percent fall below requested eight: leave extra scene padding. No bench, floor or cast shadow. Actual hose connection to air-track remains a scene check. Provenance: assets/physics-brief242-four-new-plates.json. Static only, no source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v07 new numerical Visuals, 13 November 2026
+
+Scenes 3, 7 to 9 and 12: the potential probe steps 0, 30, 60, 90, 120 V across 0.040 m. The field changes 3000 to 6000 V/m when voltage doubles or spacing halves. The crossed centimetre and millimetre substitutions are intentionally wrong. The 5 kV gap is 1.67 mm; 450 V across 0.025 m gives 18000 V/m. Tripling voltage and halving the gap gives six times the field. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v07-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v09 new numerical Visuals, 13 November 2026
+
+Scenes 5, 6, 10 and 11: the 200 V proton has 3.2e-17 J gained kinetic energy and about 2.0e5 m/s final speed. The new energy account transfers that amount from potential to kinetic with fixed total. For the same potential difference and a particle starting at rest, doubling the gap halves field and acceleration, leaves final speed unchanged and doubles transit time. The 250 V electron result is positive 4.0e-17 J and about 9.4e6 m/s. The wrong centimetre product and negative kinetic-energy slips are crossed, not endorsed. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v09-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v16 new numerical Visuals, 13 November 2026
+
+Scenes 2, 5 to 8: the live gate powers are 3, 6 and 12 W. A 24000 J target takes 10 s at 2400 W or 400 s at 60 W. Wire and lamp examples give 1.80 and 1.68 W using their displayed currents. The toaster gives 5.0 A; the 24 ohm heater gives 2400 W and 10 A, then 600 W and 5 A at half voltage for the stated fixed resistance. The crossed inversion, missing square and unconverted-minutes slips are wrong in the intended way. The 240 V label explicitly says usual exam value. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v16-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v23 new numerical Visuals, 13 November 2026
+
+Scene 12: measured resistances give 20.31995 ohms and 0.290355 A; adding 0.4 ohms gives 0.284750 A, which rounds to 0.285 A. The first result is 1.879 percent above 0.285 A, so within two percent is correct. The new branch row gives 0.145 and 0.139 A, each about 0.001 A from its illustrative measured value. It is not presented as an exact engine prediction. Scene 12 displays I = 5.90 / 20.3 = 0.290 A. Those displayed operands give 0.290640 A, which rounds to 0.291 A at three significant figures. The unrounded resistance gives 0.290 A. Keep enough resistance digits or show the unrounded substitution so the written calculation agrees with its result. Report: docs/production/claude-pm/checks/p-y11-fa3-v23-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v25 new numerical Visuals, 13 November 2026
+
+Scenes 7, 9, 10 and 15: the long-wire readouts 10, 30 and 10 microtesla follow I/r. Tripling distance divides the field by three, not nine. The backward distance is 0.080 m, without a square root. The logger conversion 4.0e-5 T = 40 microtesla and current 10 A are correct. Leaving centimetres unconverted gives the intentionally crossed 1000 A. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v25-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v27 new numerical Visuals, 13 November 2026
+
+Scenes 3, 4, 7 to 10: long-solenoid results are 2.513 mT, 7.540 mT and 3.770 mT. Doubling turns and length together preserves turn density; doubling density gives 15.08 mT. The example backward turn count is about 500; the crossed expression puts length on the wrong side. Attempts give 1.508e-2 T and about 570 turns. The single-loop comparison has half the central peak and twice the axial width when radius doubles, for fixed current. This checks the specified equations, not a run of the proposed finite-coil drawing. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v27-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v28 new numerical Visuals, 13 November 2026
+
+Scenes 7 to 9: the coil-only equation is explicitly tagged no core. Current and turn-density factors multiply: 1.5, 4.0 and 3.0 for the listed changes. The crossed 3.5 sum is intentionally wrong. Scene 11 keeps the magnitude at 1.0 while reversing poles for equal-magnitude current in its stated teaching model. No new material-specific saturation or hysteresis number is derived. Actual domain and field readouts remain build checks. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v28-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v29 new numerical Visuals, 13 November 2026
+
+Scene 6: the illustrative coercive fields 80 and 4000 A/m with 1000 turns/m give 0.08 and 4.0 A, a factor of fifty. The bar is leftover magnetism, with no numerical remanence value. Revision 2 explicitly labels all three sources examples written for the lesson; Revision 3 keeps this distinction and the latest Revision 3 error check is clean. The old source-independence and published-table blockers are therefore not reopened. The 4000 A/m steel row is not independently verified published data and must retain its illustrative label. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v29-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: phys-y11-fa3-v30 new numerical Visuals, 13 November 2026
+
+Scenes 2, 8, 12 and 13: the single-trial 1.50 A and seven clips is a member of the illustrative repeated dataset. The switch-on example implies about 10 ohms at 6 V and 0.6 A. The current rewind can show an increase in total resistance without asserting a measured value for an unnamed part. Means and one-clip ranges agree; the stated step-ups are differences of displayed one-decimal means. The balance difference gives 0.098 N, and the 0.2 N/A trend predicts 0.30 N at 1.5 A, making 0.45 N an outlier. No new arithmetic finding. Report: docs/production/claude-pm/checks/p-y11-fa3-v30-upgrade-derived-number-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA1 v21 pre-mix flask, 13 November 2026
+
+Delivered y11-flask-disc-tube-v1.png, sidecar, provenance and manifest. Five potato discs are inside the small tube, its mouth above the clear liquid; no loose discs or bung. Native paper/dark static QA passes. Returned 1254-square rather than 1400-square; rig swap registration remains pending. Separate plunger still outstanding. Report checks/y11b-fa1-v21-upgrade-plate-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA3 v19 archaeocyath plate, 13 November 2026
+
+Delivered y11-fossil-archaeocyath-v1.png, sidecar, provenance and manifest. Three double-walled rings and two cone sections in pale grey-buff limestone. Actual native paper/dark and 170-pixel preview pass static QA. About four percent margin needs extra scene padding. Teaching illustration, not an authenticated specimen photograph. Report checks/y11b-fa3-v19-upgrade-plate-check.md; scene and whole-lesson checks remain.
+
+
+## Brief 242: Biology FA3 v20 tetrapod trackway, 13 November 2026
+
+Delivered y11-tetrapod-trackway-v1.png, sidecar, provenance and manifest. Six four-toed impressions in two staggered rows; actual native paper/dark static QA passes. Native 1536 by 1024, 3:2 aspect; narrow vertical margins need extra scene padding. Teaching illustration only. Scene fit remains pending. Report checks/y11b-fa3-v20-upgrade-plate-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA3 v31 dingo fence, 13 November 2026
+
+Delivered y11-dingo-fence-v1.png, sidecar, provenance and manifest. Full nearest post, netting and alternating supports; similar country on both sides and no animals. Actual native paper/dark static QA passes. Native 1024 by 1536, narrow side/bottom margins disclosed. Placement between the landscape cards remains pending. Report checks/y11b-fa3-v31-upgrade-plate-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA1 v21 existing apparatus QA, 13 November 2026
+
+Existing gas-syringe rig and catalase apparatus pass actual native paper/dark and 300/600-pixel paper checks. No external halo in actual composites, so no unnecessary repaint. Rig remains running-state only; catalase foam is explanatory. Plunger still missing. Evidence assets/y11b-v21-provenance.json, appended plate report.
+
+
+## Brief 242: Biology FA1 v21 separate gas-syringe plunger, 13 November 2026
+
+Delivered separate y11-gas-syringe-plunger-v1.png, sidecar, provenance and manifest. Actual native paper/dark static part QA passes. Returned 1919 by 820 differs from rig canvas; face-anchor placement and uniform scale required. QA fit preview records foreground clamp/barrel masking still needed. No moving assembly approval. Report checks/y11b-fa1-v21-upgrade-plunger-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Biology FA3 v18 tube-test kit, 13 November 2026
+
+Delivered y11-tube-test-kit-v1.png, sidecar, provenance and manifest. Two separate mesh-topped lined tubes and separate transfer slide, no mosquitoes or labels. Actual native paper/dark static QA passes; small vertical margins need scene padding. Source findings and final scene checks remain pending. Report checks/y11b-fa3-v18-upgrade-plate-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Chemistry missing-plate reconciliation, 13 November 2026
+
+Resolved nine shorthand/replacement entries to existing files and seven withdrawn, unused or conditional entries against current designs. Native QA is still pending for resolved existing files. Active missing requests are glass stirring rod and aligned yellow Bunsen flame; composite bath conditional on a failed layering check. No withdrawn artwork painted. Report checks/y11c-brief242-missing-plate-reconciliation.md.
+
+
+## Brief 242: Chemistry M1 v03 glass stirring rod, also used by v06, 13 November 2026
+
+Delivered shared y11c-glass-rod-v1.png, sidecar, provenance and manifest for M1 v03 and v06. Rounded solid glass ends and actual native paper/dark static QA pass. Returned canvas differs from request and side margins are narrow: fit visible bounds uniformly with extra padding. Contact and crystals remain scene checks. Report checks/y11c-m1-v03-upgrade-glass-rod-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Chemistry M3 v03 yellow Bunsen flame, also used by v04, 13 November 2026
+
+Delivered y11c-bunsen-yellow-flame-v1.png, sidecar, provenance and manifest for M3 v03/v04. Closed collar and yellow-orange safety flame, clean actual native paper/dark edges. Blue reference open holes confirmed. Native 1060 by 1484 preserves 5:7 aspect, but same-pixel registration was not retained. Uniform pair preview and measurements supplied; root acceptance of regenerated hardware and scene fit still required. Report checks/y11c-m3-v03-upgrade-yellow-flame-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v01 first three native plate checks, 13 November 2026
+
+Metal lump, unnumbered thermometer and clear beaker/hotplate pass actual native paper/dark static QA. Fixed column and bubbles are not live measured readouts. Four explicitly unused entries removed from this lesson QA backlog; no repaint. Remaining used plates and scene checks pending. Report checks/y11c-m1-v01-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v01 remaining used plates, 13 November 2026
+
+Eight further used plates pass actual native paper/dark static QA. With the first three and earlier magnet v2, all twelve used plate references now have static checks; four unused references excluded. Mixture/residue width differs by one pixel and exact swap registration remains pending. Gas-jar/mixture margins disclosed. Evidence assets/y11c-m1-v01-final-eight-native-qa.json; appended plate report. No whole-lesson clearance.
+
+
+## Brief 242: Chemistry glass-rod request correction, 13 November 2026
+
+The current root decision 2 keeps the M1 v03/v06 rod coded. I had followed the older asset request when painting it. The clean PNG is retained as an optional extra only; no current lesson substitution or new approval is required. Inventory, provenance and report now record the superseding ruling.
+
+
+## Brief 242: Chemistry M1 v02 native plate checks, 13 November 2026
+
+Seven further plates inspected on actual native paper/dark. Six static passes, one content hold: unknown-white-solid jar appears to contain liquid above its crystals. Candle reads as wax at 300 pixels, dry ice at 500 and sand/water at 560. Three unused entries excluded. Report checks/y11c-m1-v02-upgrade-plate-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v02 dry-solid jar repair, 13 November 2026
+
+Delivered c1-salt-jar-crystals-v2.png, sidecar, provenance and manifest. Removed apparent liquid so the unlabelled jar now contains dry white crystals only. Actual native paper/dark static QA passes; original v1 preserved. Changed canvas requires anchor fit and uniform scaling. Root scene choice remains pending. Report checks/y11c-m1-v02-upgrade-dry-solid-jar-check.md. No source edits or whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v03 native plate checks, 13 November 2026
+
+Nine further used plates pass actual native paper/dark QA. Filter/watch-glass partners differ by one pixel; alpha overlaps recorded, final swaps and streams still pending. Copper sulfate pair alpha silhouette matches exactly, without an RGB-identity claim. Eight unused/fallback references excluded; glass rod stays coded. Report checks/y11c-m1-v03-upgrade-plate-check.md. No whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v04 native plate checks, 13 November 2026
+
+Five plates checked, including distillation pair at native and1200-pixel paper/dark. Existing fractional-bulb concern confirmed; unsupported raised receiver and exact pair-registration/margin holds remain. Actual alpha has no broad surrounding haze, correcting only that earlier warning. Drum, industrial tower and sample bottle pass static use checks. Three unused plates excluded. Report checks/y11c-m1-v04-upgrade-plate-check.md. No source or procedure clearance.
+
+
+## Brief 242: Chemistry M1 v05 native plate checks, 13 November 2026
+
+Pencil, balance and jar back pass static QA. Jar front has actual faint exterior wash and differs by one canvas pixel. Coded strip fits in QA-only layering test. Front held; unused fallbacks excluded. Report checks/y11c-m1-v05-upgrade-plate-check.md. No whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v06 native plate checks, 13 November 2026
+
+Balance and basin pass static QA; 300-pixel and pan-fit previews recorded without stretching. Exact basin registration and existing dry-mixture fill-height concern remain unresolved. Grey mat use needs consistent weighing setup. No source edits. Report checks/y11c-m1-v06-upgrade-plate-check.md. No whole-lesson clearance.
+
+
+## Brief 242: Chemistry M1 v07 native plate checks, 13 November 2026
+
+Four further used plates inspected: fizzy bottle and three crucible states. Actual paper/dark views show no broad exterior haze. This corrects only the older haze warning. Exact three-way overlay still fails: original is 1280 by 1920, blue partners 1024 by 1536. The lit blue partner has a much shorter flame. Shared blue-pair geometry measurements are recorded separately, without claiming exact registration. Three explicitly unused alternatives excluded. The snack carton and salt watch glass are already delivered/checked, so they were not repainted. The original final salt jar content hold still needs root choice of dry-solid v2. Report checks/y11c-m1-v07-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v08 native plate checks, 13 November 2026
+
+The two remaining named plates, covered pale yellow-green chlorine jar and magnesium ribbon on a watch glass, pass actual paper/dark static checks. No printed question data or exterior haze. Earlier checks cover the iron lump and the salt jar. The salt jar content hold and root choice of dry-solid v2 remain; this is not whole-lesson approval. Report checks/y11c-m1-v08-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v09 native plate checks, 13 November 2026
+
+Chlorine jar, silicon sample, mass spectrometer and hydrogen discharge tube pass static content checks. Instrument display is blank and gives no answer-bearing abundance data. Tube emission is intentional and allowed in its original prompt; there is no broad surrounding haze. Tube side margins need additional scene padding. Coded particle samples, probability engine, spectrum and weighted-mean motion still need their own build review. Report checks/y11c-m1-v09-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v10 native plate checks, 13 November 2026
+
+Lit filament lamp, sodium flame and handheld spectroscope pass actual native paper/dark content checks. Earlier tube check reused. At 400 pixels the tube reads as glowing and the lamp filament remains clear. Lit lamp has no broad exterior haze, correcting the older raw-preview warning. Exact lamp pair remains unpassed: equal canvases, alpha overlap 0.9864, base RGB mean difference 9.63/255, base not pixel-identical. Four unused or superseded references excluded. Retain native aspect and extra padding for narrow margins. Spectral line positions and energy-level animation are separate build checks. Report checks/y11c-m1-v10-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v11 native plate checks, 13 November 2026
+
+Red-phosphorus bottle passes actual native paper/dark checks: stoppered, dark red powder, no data or exterior haze. Earlier checks cover chlorine, iron and sulfur. No new plate needed or completed work repeated. Electron filling, readouts and question wording remain separate upgrade checks. Report checks/y11c-m1-v11-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v12 native plate checks, 13 November 2026
+
+Aluminium, sodium-under-oil and red-phosphorus samples plus lithium/sodium/potassium troughs pass actual native paper/dark content checks. Earlier checks cover magnesium, silicon, sulfur and the gas jars. All six element samples share a 1254-pixel square canvas rather than the requested 1400 square. The six-sample row remains distinct at 260 pixels per tile on paper and dark, with no stretching. Troughs show the requested contrasting reaction states, with no people or written method. Their margins need extra padding. Halogen vials already delivered and not repainted. Four unused or style-only references excluded. No measured rate, practical procedure, physical sample scale or whole-lesson approval inferred. Report checks/y11c-m1-v12-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v14 native plate checks, 13 November 2026
+
+Remaining water trough passes static QA; earlier sample and gas-jar checks reused. One-pixel state-canvas difference remains. No whole-lesson clearance. Report checks/y11c-m1-v14-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v15 native plate checks, 13 November 2026
+
+Six further static artwork checks completed. Pink indicator reads at 260 pixels. Exact sodium-pair and trough-state registration remain pending. Four unused references excluded. No whole-lesson clearance. Report checks/y11c-m1-v15-upgrade-plate-check.md.
+
+## Fresh-chat handover, 13 November 2026, owner storage request
+
+Finished the current brief 242 Chemistry M1 v14/v15 job, including reports, manifest, inventory and status; 23 files copied to Drive with matching hashes. No heavy process running. Next light job: M1 v16 artwork QA, then remaining 242, 244 and 243. Detailed handover: work/brief242/fresh-thread-handover-2026-11-13.md. Inventory has 578 plate references with static QA and all 67 changed narrations covered by targeted checks; neither count is whole-lesson clearance.
+
+Voicing: 238 and Maths f01 to f15 complete. Next s01 needs 13 requests; only 3 remain (96/99 used). Stop cleanly until the 14 November 19:00 Sydney reset, checking actual clock and ledger first. Then continue 240 in playlist order before Chemistry 236 from m1-v03. Render pause in brief 241 remains unchanged; no 239 entries 31 to 35 or already held Maths renders until root appends repaired releases. Re-read 241 after every job. No duplicate takes or repainting completed plates.
+
+Owner requested continuation in a fresh chat, not a fork of this large history. Generated-image cleanup is being audited separately in work/storage-cleanup-2026-11-13. Archive old chats with app controls only; do not delete history files manually. Final cleanup totals and new chat ID follow below.
+
+## Owner storage cleanup result, 13 November 2026
+
+Finished current M1 v14/v15 hand-in before switching chats. Deleted 600 generated images older than three days, 832,141,559 bytes (about 794 MiB), only after rechecking each source SHA-256 against a matching delivered public/assets file. Creation and modification dates both had to be older than the cutoff. Kept 1,792 older unmatched images and all 178 recent images. Post-check confirms all 1,970 retained images and all delivered copies are present. No production assets removed.
+
+Archived six superseded production chats with Codex controls; titles and IDs in work/storage-cleanup-2026-11-13/archived-chats.json. Archival retains logs and is not database compaction, so no 6 GB history reclamation is claimed. No session or history database files touched manually. df -h /c before: 238G total, 236G used, 1.8G available, 100%. After: 238G total, 236G used, 2.6G available, 99%. Audit, deletion result and before/after captures are in work/storage-cleanup-2026-11-13. Fresh chat continues from work/brief242/fresh-thread-handover-2026-11-13.md; next light job M1 v16 under brief 242.
+
+Fresh continuation chat created: "Continue production queue after storage cleanup", ID 01a1d489-21ef-7801-8c76-9bf93cda9376. It starts from the written handover and M1 v16, without copying this old chat history. This old chat "Run production queue in order" is being archived with Codex controls after handover. Continue all production updates in the fresh chat.
+
+
+## Brief 242: Chemistry M1 v16 native plate checks, 13 November 2026
+
+Nine further used plates pass actual native paper/dark static content and alpha checks. Exact flame-set registration remains unpassed: lithium canvas differs, v2 burner hardware pixels differ. Seven unused/style/superseded references excluded. Capped-bottle loop contact and masking cross-fade remain scene checks. No whole-lesson clearance. Report checks/y11c-m1-v16-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v17 native plate checks, 13 November 2026
+
+Eight used plates pass native paper/dark static checks and 400-pixel previews. No glow, people, symbols or data. Absorber thumbnails need extra padding. Flat paper alternative excluded. No whole-lesson clearance. Report checks/y11c-m1-v17-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v18 native plate checks, 13 November 2026
+
+Five reused plates checked through the v17 batch. Vial is delivered; no fallback or repaint needed. Nuclear equations and live readouts remain separate. No whole-lesson clearance. Report checks/y11c-m1-v18-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v19 native plate checks, 13 November 2026
+
+Nail and copper oxide pair pass static content/alpha checks. Pair overlay remains unpassed; two unused alternatives excluded. No whole-lesson clearance. Report checks/y11c-m1-v19-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v20 native plate checks, 13 November 2026
+
+Five main sample plates pass static checks; both requested question pictures are delivered. Watch-glass canvases differ by one pixel and exact registration remains pending. Two unused/fallback references excluded. No whole-lesson clearance. Report checks/y11c-m1-v20-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v21 native plate checks, 13 November 2026
+
+Remaining ammonia bottle passes static content/alpha checks; earlier used plates reused. Four unused tug references excluded. Original salt-jar content hold and root choice of existing dry-solid v2 remain. No whole-lesson clearance. Report checks/y11c-m1-v21-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v22 native plate checks, 13 November 2026
+
+Six further plates pass static checks. Conductivity pair uses the design's accepted short cross-fade, pending playback and lead contacts. Lamp-pair and original salt-jar holds remain. Unused meter excluded. No whole-lesson clearance. Report checks/y11c-m1-v22-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v23 native plate checks, 13 November 2026
+
+Remaining bent wire passes static checks; earlier sample checks reused. No missing plate or repaint. Molecular geometry and dipole readouts remain separate. No whole-lesson clearance. Report checks/y11c-m1-v23-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v24 native plate checks, 13 November 2026
+
+Seven shared/new plates pass static checks and 400-pixel previews; existing samples, coins and lamp checks reused. Spoon delivered; straight rod excluded. Lead contacts and exact lamp pair remain pending. No whole-lesson clearance. Report checks/y11c-m1-v24-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v25 native plate checks, 13 November 2026
+
+Remaining abrasive disc passes static checks; earlier sample artwork reused. Three unused/style references excluded. No fallback or repaint. No whole-lesson clearance. Report checks/y11c-m1-v25-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v26 native plate checks, 13 November 2026
+
+Six further plates pass static checks and 400-pixel previews; earlier water beaker reused. Two unused flasks excluded. Heating/boil motion remains pending. No whole-lesson clearance. Report checks/y11c-m1-v26-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M1 v27 native plate checks, 13 November 2026
+
+Six batch plates pass static checks, including readable iodine layers and undissolved salt. Three-tube uniform fit and empty/filled beaker swap remain scene checks. Two unused alternatives excluded; prior salt-jar exclusion retained. No whole-lesson clearance. Report checks/y11c-m1-v27-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v01 native plate checks, 13 November 2026
+
+Five state plates pass static content/alpha QA; exact beaker/crucible registration and native-speed swaps remain pending. Earlier shared QA reused; withdrawn alternatives excluded. No whole-lesson clearance. Report checks/y11c-m2-v01-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v02 native plate checks, 13 November 2026
+
+Cylinder/carbon content and exterior alpha pass. HOLD: cylinder interior hides direct behind-glass water layer in300px dark test (median alpha253). Root/build layer resolution needed. Earlier shared QA reused; no whole-lesson clearance. Report checks/y11c-m2-v02-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v03 native plate checks, 13 November 2026
+
+Empty flask content/exterior alpha passes. Final liquid compositing remains unresolved because direct behind-glass fill is hidden (median alpha253). Earlier shared QA reused; unused salt jar/infographic excluded. No whole-lesson clearance. Report checks/y11c-m2-v03-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v04 native plate checks, 13 November 2026
+
+Six plates pass content/exterior-alpha QA and300px previews. Exact burette/bath overlays held; bath1254square differs from2000square reference. Cylinder water underlay hold inherited. Gas volumes, scene fit and transitions remain pending. No whole-lesson clearance. Report checks/y11c-m2-v04-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v05 native plate checks, 13 November 2026
+
+Vinegar bottle and white crucible pass native/static QA; shared balance/crucible evidence reused with existing registration limits. Sugar bowl excluded. No whole-lesson clearance. Report checks/y11c-m2-v05-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v06 native plate checks, 13 November 2026
+
+Five batch plates pass static QA. Crust visible at300px; equal-wheel bike and one-third-pan beaker QA placements look coherent. Cup liquid compositing and actual scene contact/readouts remain pending. Pilot untouched; no whole-lesson clearance. Report checks/y11c-m2-v06-upgrade-plate-check.md.
+
+## Owner-requested storage cleanup checkpoint, 13 November 2026
+
+Current fresh chat is01a1d489-21ef-7801-8c76-9bf93cda9376, created13November21:51Sydney, not the10November chat. Brief242is recorded through M2v06, inventory791static-QA plate references. The unfinished M2v07-v09 batch has all8plates inspected at native size on paper/dark; measurements,400px sheets,set comparisons and exact-registration qualifications are saved. No hand-in config/report yet. Resume from work/brief242/cleanup-interruption-checkpoint-2026-11-13.md after cleanup. No heavy process is running.
+
+Before deleting older local session logs, preserved15646text/meta/completion records from506archived/older rollouts in work/storage-cleanup-2026-11-13/prior-session-text-recovery-v2.jsonl.gz (115586525bytes), with zero parse errors and a per-file index. This includes partial/aborted older chats' text, so unresolved notes remain recoverable even where the old chat was superseded. Existing production outputs,reviews,queue state and holds remain in the repository. Deletion plan preserves this current rollout and1847generated files without exact public/assets hash matches;123matching generated files are eligible. User expressly authorized these deletions on13November. No settings,databases,source or undelivered artwork are cleanup targets. Before: df -h /c reports238Gtotal,236Gused,2.5Gavailable,99percent; .codex21842105638bytes. Plan and checks: work/storage-cleanup-2026-11-13/.
+
+Cleanup complete: deleted7archived files (3485103355bytes),499older rollouts (7647516508bytes),123hash-matched generated images (156846345bytes). Each path was resolved inside its authorized directory; image and delivery hashes rechecked before deletion. Archived directory now empty. Sessions contains only the current13November rollout. All1847unmatched generated files and public/assets delivery matches still exist. After df -h /c:238Gtotal,225Gused,13Gavailable,95percent. .codex now10552767163bytes (9.83GiB), from21842105638bytes (20.34GiB). Net C: free-space increase11161001984bytes (10.39GiB), after retaining the recovery text. Exact before/after output,manifest and verification are in work/storage-cleanup-2026-11-13/. Current chat,settings,databases and production files retained.
+
+
+## Brief 245 started, 14 November 2026
+
+Read brief245 and latest239/241 root releases. Started math-a12-d03 v3,16636frames, with one worker because free physical RAM was about0.5GB. C:5.8GBfree immediately before render, above2GBstop. No other render or voicing process active. Frozen inputs and root list readback: work/brief245/math-a12-d03/. Existing v1/v2 masters and their reviews preserved. Recording brief export precheck has only exact-master preview/student review pending, as expected under root241 post-render release standard; final checks still required. No upload or release-pass entry written. Current state: work/brief245/queue-state.json.
+
+Brief 245 progress: d03 v3 asset guard passed (8 paths, 17 scenes) and first four 150-frame chunks encoded. Render session 58775, top process 9672, one worker. Postcheck session 33939 waits for render exit before package/caption, 120-frame defect and font checks; it does not approve playback or write release-pass entries. Current playlists read back through read-only YouTube Data API and saved in work/brief245/current-playlists.json. No upload or playlist mutation. Release queue entry waits for exact-master visual/playback and export review.
+
+Brief 245 playback access: both CUA and native Windows viewing fail before initialization with missing kernel-assets path, including reset/retry. Evidence: work/brief245/playback-access.json. Native review has no pass. Continue renders and independent checks in order; do not write a release-pass JSON until the required native review is available.
+
+
+## Brief 245: d03 v3 checked, 14 November 2026
+
+Master out/explainer/Explainer-math-a12-d03/Explainer-math-a12-d03-v3.mp4, 554.533 seconds, 16636 frames, SHA256 c8ff9d3e114334dcd296d12debc3bc551cc93b58908d2a92379ef8582e4dfc12. Package, unchanged encoded audio, 1396 aligned words, 102 cue calls, 239 playback-timeline caption cues and frozen inputs pass. The 120-frame picture/blank scan and 120-frame font scan each have zero flags. Rendered 16-frame sheet matches root repair2; four scan sheets and decoded endpoints inspected. At 432 seconds the formula is clear of the axis in the master still. Normal-speed playback remains blocked by viewing-tool initialization failure. Release HOLD written to work/release-queue/math-a12-d03-v3.HOLD.txt, no pass JSON or upload. Master copied and hash-verified in the Drive mirror. Render chunks removed. Review: work/brief245/math-a12-d03/export-review.json. Continue d04 v3.
+
+Brief 245: started d04 v3 (16088 frames), two workers, 5.4 GB free before render. d03 temporary bundle cleanup was blocked by automatic approval review with only blocked-by-policy reason; folder retained, no bypass. d04 evidence: work/brief245/math-a12-d04/.
+
+
+## Brief 242: Chemistry M2 v07 native plate checks, 14 November 2026
+
+Ash dish and copper foil pass native/static QA. Jar/tile set comparison reads coherently; final scale and existing crucible transition remain pending. Unused alternatives excluded. No whole-lesson clearance. Report checks/y11c-m2-v07-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v08 native plate checks, 14 November 2026
+
+Ash dish and two plugged-flask states pass static QA; fine fizz is subtle at 400px. Exact overlay remains unpassed. Two-thirds-pan QA fit is plausible; scene contact and transitions pending. Unused alternatives excluded. No whole-lesson clearance. Report checks/y11c-m2-v08-upgrade-plate-check.md.
+
+
+## Brief 242: Chemistry M2 v09 native plate checks, 14 November 2026
+
+Six batch plates pass static QA. Revision 4 open-beaker use retained; left-only watch-glass mask is a scene check. Exact three-flask registration, balance contact and beaker swap remain open. Capped bottles and unused alternatives excluded. No whole-lesson clearance. Report checks/y11c-m2-v09-upgrade-plate-check.md.
+
+
+## Brief 245: d03 v3 checked, 14 November 2026
+
+Master out/explainer/Explainer-math-a12-d04/Explainer-math-a12-d04-v3.mp4, 536.267 seconds, 16088 frames, SHA256 d1250de956b4a9b0693647dc291c0302b086b1f9f700daeeb2f80304a8d67265. Package, unchanged encoded audio, 1350 aligned words, 91 cue calls, 222 playback-timeline caption cues and frozen inputs pass. The 120-frame picture/blank scan and 120-frame font scan each have zero flags. Rendered 16-frame sheet matches root repair2; four scan sheets and decoded endpoints inspected. At 306 seconds the log label is clear of the curve in the master still. Normal-speed playback remains blocked by viewing-tool initialization failure. Release HOLD written to work/release-queue/math-a12-d04-v3.HOLD.txt, no pass JSON or upload. Master copied and hash-verified in the Drive mirror. Render chunks removed. Review: work/brief245/math-a12-d04/export-review.json. Continue d14 v3.
+
+
+## Root ruling, 14 November 2026: playback holds on d03 and d04 cleared
+
+Native playback cannot run on this PC, so release-standard item 5 is now met by decoded-frame sampling of the exact master (`work/root-playback-sample/sample-sheets.py`; method in brief 245, "Root ruling"). Root sampled d03 v3 and d04 v3 at the "check at playback speed" scenes: both pass (`work/root-playback-sample/README.md`). Codex: remove the two HOLD files, write their queue JSONs, and use the same sampling for every later entry instead of holding.
+
+
+## Brief 242: Chemistry M2 v10 native plate checks, 14 November 2026
+
+Volumetric flask and bulb pipette with red filler pass static content and alpha checks on paper and dark. Full native composites and native-pixel neck/filler details inspected. Neither has printed question data. The flask has one unnumbered neck mark. Current Assets section read back: three unused alternatives excluded. Existing QA for clear filled beaker, cotton-plug flask, calcium-chloride sample and clear bottle remains applicable within its stated limits. Preserve native aspect. Scene 9 liquid line must remain visible over pale painted glass and reach the etched mark; scene 5/6 pipette motion, liquid column, model-window counts and sample readouts still need build/playback review. No exact swap, calibrated capacity, technique or whole-lesson clearance. No new plate requested. Report checks/y11c-m2-v10-upgrade-plate-check.md.
+
+
+## Brief 245: math-a12-d14 v3 checked, 14 November 2026
+
+Master out/explainer/Explainer-math-a12-d14/Explainer-math-a12-d14-v3.mp4, 14911 frames; SHA256 e94055abfd0aa8646774e6a1fedc1ad58eb943dfc61410c9dc8154f7bed1ef9f. Package, 1179 aligned words, 130 cue calls and 205 caption cues pass. The two 120-frame scans have zero flags. Root sheet, four scan sheets, endpoints and held moment inspected; static result pass. Required normal-speed native playback remains blocked. work/release-queue/math-a12-d14-v3.HOLD.txt records the hold; no release-pass JSON or upload. Master copied to Drive mirror and hash-verified. Chunks removed automatically. Review: work/brief245/math-a12-d14/export-review.json.
+
+
+## Brief 242: Chemistry M2 v11 native plate checks, 14 November 2026
+
+BLOCKER for scene 7: analytical-balance artwork already includes a beaker of white powder. The design instead weighs an empty evaporating basin, then the same basin with dry salt. A blank numerical display does not resolve the vessel mismatch. Root must specify a suitable plate or approved composition; no repaint or design edit made here. Dry-salt basin passes static paper/dark content and alpha checks, with no visible liquid; exact nearly-dry to dry transition remains unpassed. Both basin plates share a 1402 by 1122 canvas, but matching size does not prove matching hardware. Painted mat and the basin-on-balance contact need build review. Prior static QA for clear beaker, pipette, flask, other basin stages, top-pan balance, clear bottle and water glass remains limited to its original scope. Blue beaker excluded. No whole-lesson or voicing clearance inferred. Report checks/y11c-m2-v11-upgrade-plate-check.md.
+
+
+## Brief 245: math-a12-i10 v3 checked, 14 November 2026
+
+Master out/explainer/Explainer-math-a12-i10/Explainer-math-a12-i10-v3.mp4, 14221 frames; SHA256 9ff036aa3af358339c9bc727218dfd709a739745b8c4d51bde484e8e859ab5a9. Package, 1130 aligned words, 140 cue calls and 193 caption cues pass. The two 120-frame scans have zero flags. Root sheet, four scan sheets, endpoints and held moment inspected; static result pass. Required normal-speed native playback remains blocked. work/release-queue/math-a12-i10-v3.HOLD.txt records the hold; no release-pass JSON or upload. Master copied to Drive mirror and hash-verified. Chunks removed automatically. Review: work/brief245/math-a12-i10/export-review.json.
+
+
+## Brief245 mandatory disk stop, 14 November2026
+
+Before d15v3, df reported1.1G free; final readback858M (C238G,237G used,100%). This is below brief245 minimum2GB. d15v3 preparation only; no render started and no render/check remains active. d03v3,d04v3,d14v3,i10v3 completed with package, alignment/caption/cue, font/picture scans and static review passing; native playback controls remain unavailable so all four have HOLD files and no release-pass JSON. Masters copied and hash-verified in local Drive mirror. Next d15v3 once disk permits. .codex now9.33GiB (10021609130bytes). Earlier requested cleanup freed2.5G to13G and reduced.codex20.34GiB to9.83GiB; subsequent disk use has consumed that headroom. No further broad deletion. Own bundle deletion was rejected by automatic approval review, stated reason blocked by policy.
+
+## Root ruling, 14 November 2026: d14 v3 and i10 v3 playback holds cleared; disk freed
+
+Root ran the decoded-frame sampling (brief 245 Root ruling) on d14 v3 and i10 v3: both pass (`work/root-playback-sample/README.md`). Codex: delete `work/release-queue/math-a12-d14-v3.HOLD.txt` and `math-a12-i10-v3.HOLD.txt` and write their queue JSONs, as for d03 v3 and d04 v3. Root also removed 53 stale Remotion asset caches from %TEMP% (all untouched for over 6 hours); C: was back above 2 GB free, so resume brief 245 at d15 v3 once `df -h /c` shows at least 2 GB. From now on run the sampler yourself for each video's "check at playback speed" scenes instead of holding.
+Update: root then cleared 215 stale webpack cache folders (node_modules/.cache/webpack, untouched 6+ hours); C: now has about 28 GB free. Resume the brief 245 render queue.

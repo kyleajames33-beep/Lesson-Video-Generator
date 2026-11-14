@@ -1,0 +1,26 @@
+// Every cue phrase for math-a12-f09, resolved once at load against the measured word timings (a missing phrase
+// throws here, before any scene renders). Repeated words name their occurrence: [phrase, n].
+import {cue} from './common';
+
+const C = <K extends string>(id: string, map: Record<K, string | [string, number]>): Record<K, number> => {
+	const out = {} as Record<K, number>;
+	for (const [k, v] of Object.entries(map) as [K, string | [string, number]][]) out[k] = Array.isArray(v) ? cue(id, v[0], v[1]) : cue(id, v);
+	return out;
+};
+
+export const K1 = C('scene-01', {first: 'first car loan', borrow: 'You borrow', each: 'each month interest', added: 'is added', mult: 'multiplied by', then: 'Then your', rep: 'repayment comes off', sowhat: 'So what do you owe', next: 'next month', more: 'will more', less: 'less or the same', guess: 'guess'});
+export const K2 = C('scene-02', {principal: 'The principal', balance: ['balance', 1], reducing: 'In a reducing-balance', charged: 'interest is charged', not: 'not on the amount', rate: 'The rate is seven', comp: 'compounded monthly', r: "month's rate r", over: 'over twelve', zero: 'zero point six', first: 'first the interest', plus: 'one plus r', then: 'Then the repayment', so: 'So you now owe', dollars: 'dollars'});
+export const K3 = C('scene-03', {that: 'That one month', call: 'Call the balance', a0: 'so A zero', rule: 'A rule that gives', rec: 'recurrence', here: 'Here A sub n', eq: 'equals one plus r', times: 'times A sub n', minus: 'minus M', rep: 'M the repayment', without: 'Without the repayment', comp: ['compound interest', 1], so: 'So a reducing-balance', period: 'every period', and: 'And interest comes first', month: 'end of the month'});
+export const K4 = C('scene-04', {here: 'Here are three', each: "Each row's", m1: 'In month one', i1: 'one hundred and eighty', pays: 'pays off', d1: 'four hundred and twenty', m2: 'In month two', lower: 'balance is lower', i2: 'seventy-seven', leaving: 'leaving', d2: 'twenty-two', debt2: ['the debt', 2], m3: 'In month three', i3: 'seventy-four', rounded: 'rounded to the cent', falls: 'balance falls', end: 'twenty-eight thousand', ans: 'forty-two'});
+export const K5 = C('scene-05', {so: 'each month a little', stays: 'stays the same', smaller: 'smaller balance', less: 'Less interest', more: 'more of the six', again: 'again', works: 'This works', weren: "If it weren't", run: 'run all five', end: 'By the end', few: 'few dollars', sixtieth: 'sixtieth', car: 'the car is', off: 'paid off'});
+export const K6 = C('scene-06', {now: 'Now find the pattern', a1: 'A one is', a2: 'For A two', mult: 'multiply all of that', take: 'take off another', thats: "That's thirty", sq: 'squared', a3: 'In A three', grown: 'grown for three', first: 'The first repayment', two: 'for two months', stopped: 'stopped two months', last: 'The last has', all: 'at all'});
+export const K7 = C('scene-07', {so: 'So after n months', nth: ['to the n', 1], sum: 'times a sum', one: 'one plus one point', sq: 'squared', up: 'up to the power', gs: 'geometric series', first: 'first term one', ratio: 'ratio one point', terms: 'n terms', its: 'Its sum is', over: 'all over', which: 'which is zero', six: 'zero point zero zero six', notice: 'Notice the ratio', not: 'not r itself'});
+export const K8 = C('scene-08', {gen: 'In general', read: 'Read it as', first: 'The first is', comp: 'compound interest', second: 'The second is', each: 'each grown', because: 'because paying', what: 'What you owe', diff: 'the difference', three: 'For three months', gives: 'it gives', table: 'the table'});
+export const K9 = C('scene-09', {zoom: 'Now zoom out', home: 'home loan', five: 'five per cent', thirty: 'thirty years', at: 'at two thousand', first: 'In the first month', more: 'more than three quarters', so: 'So the balance', slowly: 'falls slowly', faster: 'then faster', dont: "You don't owe", half: 'than half', years: 'twenty years'});
+export const K10 = C('scene-10', {heres: "Here's a way", grow: 'Grow then pay', pay: 'then pay', balance: 'The balance grows', times: 'times one plus', then: 'and then the repayment', minus: 'minus M'});
+export const K11 = C('scene-11', {your: 'Your turn', pause: 'Pause here'});
+export const K12 = C('scene-12', {monthly: 'The monthly rate', half: 'half a per cent', after1: 'After one month', twelve: 'twelve thousand and sixty', minus: 'minus two hundred', which: 'which is eleven', after2: 'After two months', cents: 'five cents', wrong: 'eleven thousand five hundred', takes: 'It takes off', month: 'each month'});
+export const K13 = C('scene-13', {last: 'Last one', pause: 'Pause here'});
+export const K14 = C('scene-14', {reps: 'The repayments give', ratio: 'ratio one point', terms: 'n terms', its: 'Its sum is', over: ['over zero point', 1], nine: 'nine hundred over', thousand: 'twenty-five thousand', using: 'Using zero point', ratio2: 'The ratio is one', r: 'one plus r'});
+export const K15 = C('scene-15', {so: 'So a reducing-balance', falls: 'balance falls', heres: "Here's the home loan", cleared: 'cleared in thirty', what: 'What if', two: 'two thousand five hundred', how: 'How much sooner', gone: 'gone'});
+export const K16 = C('scene-16', {here: 'Here are the key', pause: 'Pause the video'});

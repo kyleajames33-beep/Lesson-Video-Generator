@@ -163,3 +163,15 @@ Do these yourself; agents must not create accounts or enter payment details.
 - `scripts/lib/bunny-catalogue-lib.mjs`: shared lookups for the two scripts.
 
 Collections in Bunny are folders for tidiness only; they are not public and are not playlists ([collections](https://bunny.net/docs/stream/collections.md)). Bunny accepts `.srt` and `.vtt` captions ([video specification](https://bunny.net/docs/stream/video-specification.md)).
+
+## Voice licence check: Google TTS (root, 14 November 2026)
+
+The Maths and Year 11 voice uses `gemini-3.8-flash-tts` through the paid Gemini API (`scripts/generate-google-audio.mjs`).
+- **Status:** Google's models page badges it "New". It is not listed as Preview or Experimental, so the pre-GA "not for production" caution does not apply. (Even Preview models "may be used for production" per that page.) Source: aistudio.google.com/docs/models.
+- **Terms** (Gemini API Additional Terms, effective 23 March 2026, aistudio.google.com/docs/terms):
+  - Google "won't claim ownership" of generated content.
+  - The service is for "professional or business purposes".
+  - We are responsible for how the content is used.
+  - On the paid tier (active Cloud Billing), Google does not use prompts or responses to improve its products.
+- **Conclusion:** Google-voiced videos can go behind the paywall.
+- **Open item:** the terms note that some laws may require attribution, and outputs carry SynthID watermarks. Add a line to the membership Terms and the video descriptions saying narration is AI-generated, and tick YouTube's altered-content disclosure where it applies. Recheck the terms when the 2027 pricing changes.
