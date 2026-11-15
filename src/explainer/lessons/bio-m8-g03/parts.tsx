@@ -115,8 +115,11 @@ export const BPRing: React.FC<{g?: RG; lit?: (number | undefined)[]; minus?: num
 			{labels ? SLOT_NAMES.map((t, i) => {
 				const [x, y] = pt(i);
 				const below = i === 2 || i === 3;
-				const yy = i === 0 ? y - g.r - 14 : below ? y + g.r + 38 : y + g.r + 36;
-				return <Sx key={t} x={x} y={yy} text={t} size={32} color={(lit[i] !== undefined && f >= (lit[i] as number)) ? TEAL : INK} anchor="middle" hand weight={700} at={-1000} opacity={1 - 0.5 * dimOf(i)} />;
+				// receptors sits above its slot (nudged right of the arc 0 arrowhead) and response sits inside the ring to the
+				// right of its slot: below the slot, both labels lay on the arcs that run into the slots from beneath.
+				const yy = i === 0 ? y - g.r - 14 : i === 1 ? y - g.r - 30 : i === 4 ? y + 11 : below ? y + g.r + 38 : y + g.r + 36;
+				const xx = i === 1 ? x + 12 : i === 4 ? x + g.r + 42 : x;
+				return <Sx key={t} x={xx} y={yy} text={t} size={32} color={(lit[i] !== undefined && f >= (lit[i] as number)) ? TEAL : INK} anchor={i === 4 ? 'start' : 'middle'} hand weight={700} at={-1000} opacity={1 - 0.5 * dimOf(i)} />;
 			}) : null}
 			{cut !== undefined && f >= cut ? <g>
 				<DrawPath d={`M${cp[0] - 30},${cp[1] - 30} L${cp[0] + 30},${cp[1] + 30}`} at={cut} dur={8} color={RED_BP} width={9} />

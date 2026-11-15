@@ -158,10 +158,10 @@ export const SceneQ3Mistake: React.FC = () => {
 			<T x={796} y={770} w={470} text="Negative: the response opposes the change." size={42} color={TEAL} at={KM3.neg} />
 			<rect x={1320} y={300} width={520} height={620} rx={20} fill={CARD} stroke={AMBER_INK} strokeWidth={4} />
 			<Sx x={1346} y={350} text="R (ethylene)" size={38} color={INK} hand at={-1000} />
-			<Pic p={PL.ripe} cx={1520} cy={480} w={300} />
+			<Pic p={PL.ripe} cx={1520} cy={510} w={300} />
 			<g>
-				<ellipse cx={1520} cy={480} rx={190} ry={120} fill="none" stroke={AMBER_INK} strokeWidth={4} strokeDasharray="10 8" opacity={0.7} />
-				<circle cx={1520 + 190 * Math.cos(cyc * Math.PI * 2)} cy={480 + 120 * Math.sin(cyc * Math.PI * 2)} r={12} fill={AMBER_INK} stroke={CARD} strokeWidth={3} />
+				<ellipse cx={1520} cy={510} rx={190} ry={120} fill="none" stroke={AMBER_INK} strokeWidth={4} strokeDasharray="10 8" opacity={0.7} />
+				<circle cx={1520 + 190 * Math.cos(cyc * Math.PI * 2)} cy={510 + 120 * Math.sin(cyc * Math.PI * 2)} r={12} fill={AMBER_INK} stroke={CARD} strokeWidth={3} />
 			</g>
 			<Sign x={1740} y={630} s="+" color={AMBER_INK} p={pulse(f, KM3.adds, 40)} />
 			<T x={1346} y={770} w={470} text="Positive: the response adds to the change." size={42} color={AMBER_INK} at={KM3.pos} />

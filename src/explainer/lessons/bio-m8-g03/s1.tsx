@@ -48,7 +48,7 @@ export const SceneHook: React.FC = () => {
 				<DrawPath d={`M${ax + 10},${ay - 20} C${ax + 90},${ay - 30} ${ax + 120},${ay - 190} ${ax + 190},${ay - 140} S${ax + 320},${ay - 20} ${ax + 390},${ay - 22}`} at={KH.read + 16} dur={36} color={AMBER_INK} width={6} dash="12 7" />
 			</HookCard>
 			<HookCard x={1276} at={KH.pos} n="3" verb="Classify it" color={BLUE}>
-				<PicPair a={PL.unripe} b={PL.ripe} cx={1550} cy={420} w={420} at={KH.pos + 10} />
+				<PicPair a={PL.unripe} b={PL.ripe} cx={1550} cy={426} w={350} at={KH.pos + 10} />
 				<Sx x={1550} y={628} text="negative or positive feedback?" size={34} color={INK} anchor="middle" hand at={-1000} />
 				{[['−', TEAL, 1400], ['+', AMBER_INK, 1700]].map(([s, c, x]) => (
 					<g key={s as string}>
