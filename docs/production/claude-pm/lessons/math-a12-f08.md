@@ -282,9 +282,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Geometric Growth and Decay Models: Percentages, Time Zero and Limiting Totals | Year 12 Maths Advanced
+Title: Geometric Growth and Decay: Percentages, Time Zero and Limiting Totals | Year 12 Maths Advanced
 
-(Title length: 103 characters; shorter alternative "Geometric Growth and Decay Models | Year 12 Maths Advanced", 58 characters.)
+(Root, 15 Nov: the 103-character title exceeded YouTube's 100-character limit; "Models" dropped, now 95 characters; shorter alternative "Geometric Growth and Decay Models | Year 12 Maths Advanced", 58 characters.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-advanced/year12/sequences-and-series/lesson04.sa.html
 

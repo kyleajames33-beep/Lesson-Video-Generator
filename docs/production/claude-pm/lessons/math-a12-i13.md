@@ -284,9 +284,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Integrals in Practical Problems: Energy from Power, Units and Regions Against the y-axis | Year 12 Maths Advanced
+Title: Integrals in Real Problems: Rates, Units and y-axis Regions | Year 12 Maths Advanced
 
-(Title length: 113 characters; longer alternative: "Integrals in Real Problems: Rates, Units and y-axis Regions | Year 12 Maths Advanced", 84 characters; within 80: shorter: "Integrals in Real Problems: Rates and y-axis Regions | Year 12 Maths Advanced", 77 characters.)
+(Root, 15 Nov: the 113-character title exceeded YouTube's 100-character limit, so the 84-character alternative below is now the title. Original: "Integrals in Practical Problems: Energy from Power, Units and Regions Against the y-axis | Year 12 Maths Advanced", 113 characters; longer alternative: "Integrals in Real Problems: Rates, Units and y-axis Regions | Year 12 Maths Advanced", 84 characters; within 80: shorter: "Integrals in Real Problems: Rates and y-axis Regions | Year 12 Maths Advanced", 77 characters.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-advanced/year12/integral-calculus/lesson07.sa.html
 
