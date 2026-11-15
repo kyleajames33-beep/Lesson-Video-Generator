@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B12-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b12/lesson.json",
+  "lessonSha256": "ba38abae6b2d1705b5d32d7e4fae7aec8bba24266f1ad920ba6176c4a00ff95c",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b12/lesson.production-brief.json",
+    "sha256": "a64e0b660ebff7a947cc5757b2edda6ac973798bf997e8e17ba316ac75552d3f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "If type 2 diabetes means cells respond poorly to insulin, why isn't the treatment simply more insulin? Early on, many people with type 2 make plenty of insulin, sometimes more than usual. Adding more of a signal the cells are already ignoring isn't the first move. So how can type 2 diabetes be managed?",
+      "hash": "b80d7774bccd",
+      "textSha256": "b80d7774bccd8947989c64a9ce63f025666bd5eb2d5c80039769128051c05af1",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hook.b80d7774bccd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hook.b80d7774bccd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hook.b80d7774bccd.generation.json",
+      "plannedRequestSha256": "7f73b88379c2a5521a9547b615312503333bab464fb8e027bcf04194cbd7506a"
+    },
+    {
+      "id": "type-one-two",
+      "parentSceneId": "type-one-two",
+      "text": "Earlier, you saw how type 2 develops. In muscle and fat cells, insulin still binds, but fewer glucose transporters reach the membrane, so glucose stays in the blood. The liver also releases too much glucose. Beta cells cover by releasing more insulin, until they fall behind. Type 1 is different: immune cells destroy the beta cells, so little or no insulin is made. Think of insulin as a key. Type 1 has no key. In type 2, the key fits, but the lock is jammed.",
+      "hash": "5705c9a8c492",
+      "textSha256": "5705c9a8c49221f27939446a4435ec3b19ef5a1f1dd6fc2c1d1344fef9ea850a",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/type-one-two.5705c9a8c492.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/type-one-two.5705c9a8c492.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/type-one-two.5705c9a8c492.generation.json",
+      "plannedRequestSha256": "b1bfee0eb20acf495f3233777e0932dc269138bebc965518fe46276b31538864"
+    },
+    {
+      "id": "two-jobs",
+      "parentSceneId": "two-jobs",
+      "text": "So management has two jobs. Bring blood glucose back towards its usual range, and lower the risk of damage to blood vessels, kidneys, eyes and nerves. Management is the long-term work of keeping a disease under control, without curing it. A treatment acts on the disease mechanism. And monitoring measures whether the plan is working. A good plan links every action back to the mechanism.",
+      "hash": "702d76084705",
+      "textSha256": "702d76084705496ac634017f9b027f0ac5f7588d36758b3d7212d34a737215bd",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/two-jobs.702d76084705.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/two-jobs.702d76084705.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/two-jobs.702d76084705.generation.json",
+      "plannedRequestSha256": "8be61e0a93e6c71b0a3ad09604a48c91e164ff169a9dbe565142556bb395bcc9"
+    },
+    {
+      "id": "lifestyle",
+      "parentSceneId": "lifestyle",
+      "text": "Start with lifestyle, because it acts on the cause. When muscles contract during activity, they move glucose transporters into the membrane without needing insulin, so glucose leaves the blood. Losing weight shrinks the fat stored in and around the liver and other organs, so cells respond to insulin better again. The catch is keeping it up for years, which depends on time, money and access to healthy food.",
+      "hash": "6b5233a1f0cd",
+      "textSha256": "6b5233a1f0cdebdf82d0026088bd0607c62f235e165056434521d223096d9fa2",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/lifestyle.6b5233a1f0cd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/lifestyle.6b5233a1f0cd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/lifestyle.6b5233a1f0cd.generation.json",
+      "plannedRequestSha256": "8c69ea4f92fbcdae303ba56322ee07ae3213f3fc78287cb493c5e4ba811fff88"
+    },
+    {
+      "id": "metformin",
+      "parentSceneId": "metformin",
+      "text": "Most people also take a tablet called metformin. It reduces the glucose the liver releases into the blood, and helps muscle respond to insulin, so glucose falls without pushing tired beta cells to work harder. It's cheap, well tested, rarely makes glucose drop too low, and doesn't add weight. But it doesn't remove the resistance, and some people get stomach upsets.",
+      "hash": "7835a765a9fe",
+      "textSha256": "7835a765a9fefa0aabb6b608f1bd9c1e9421f1c1fe336a9238eb0f34be42a717",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/metformin.7835a765a9fe.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/metformin.7835a765a9fe.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/metformin.7835a765a9fe.generation.json",
+      "plannedRequestSha256": "2925cbc1ae9d8ce1d07759832ffaf4f328821e59b5ebffaf882587d4382d9322"
+    },
+    {
+      "id": "hba1c",
+      "parentSceneId": "hba1c",
+      "text": "How do you know the plan's working? One glucose reading only shows that moment. Glucose slowly sticks to haemoglobin in red blood cells, and red cells last about four months. So the HbA1c test, the share of haemoglobin with glucose attached, shows average glucose over the past two to three months. One good morning can't fake it. Monitoring doesn't lower glucose. It's the evidence for keeping, changing or stepping up the plan.",
+      "hash": "9affa03dea6e",
+      "textSha256": "9affa03dea6e428a07ebf9f8cfe37fe981fac3c8f2399017a856c6904ddb2999",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hba1c.9affa03dea6e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hba1c.9affa03dea6e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/hba1c.9affa03dea6e.generation.json",
+      "plannedRequestSha256": "5a853614224bc52d7f028c7e54b1f3ac96046bfaeb954baab43c8f9f47cad535"
+    },
+    {
+      "id": "step-up",
+      "parentSceneId": "step-up",
+      "text": "If HbA1c stays above target, the plan steps up: another medicine, and if beta cells keep falling behind, insulin. Here's the twist. Injected insulin replaces a signal that's running short, but it doesn't unjam the lock, and it can add weight, which worsens the resistance. Care also targets the damage itself: medicines for blood pressure and cholesterol, and regular kidney, eye and foot checks. They don't treat the diabetes, but they prevent much of its harm.",
+      "hash": "ef12e7df71d8",
+      "textSha256": "ef12e7df71d8b4e4deaa8af60f106438dccf39b996544b5b3afc1ec5b0fefffb",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/step-up.ef12e7df71d8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/step-up.ef12e7df71d8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/step-up.ef12e7df71d8.generation.json",
+      "plannedRequestSha256": "ff551189967c14f83c9f910a3d342c3d03732642e77196522238f3bdfa68962c"
+    },
+    {
+      "id": "direct-trial",
+      "parentSceneId": "direct-trial",
+      "text": "How strong is the evidence? Take DiRECT, a trial in Scotland and England. GP practices were randomly assigned. In one group, adults diagnosed in the past six years had a low-energy diet for several months, then support to keep the weight off. Other practices gave usual care. After a year, 46 per cent of the diet group were in remission, glucose below the diabetes threshold without glucose-lowering medicines, against 4 per cent with usual care.",
+      "hash": "aa35ba48bbcd",
+      "textSha256": "aa35ba48bbcdc7758a7a5feb90706be0b2aa62c4efa346dfbc83a25b3a4c191c",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/direct-trial.aa35ba48bbcd.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/direct-trial.aa35ba48bbcd.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/direct-trial.aa35ba48bbcd.generation.json",
+      "plannedRequestSha256": "5ddba647f83e52e5e7211afa1a490223b9132cd667d6c2ccbadda7d81e07c5e0"
+    },
+    {
+      "id": "judge-evidence",
+      "parentSceneId": "judge-evidence",
+      "text": "Now judge it. It was randomised and the gap was large, so it's strong evidence that weight loss early on can reverse the disease. But remission faded as weight came back. Among 85 people followed with continued support, 11 were in remission at five years. Participants were recently diagnosed and not on insulin, so it may not apply more widely. Everyday results are often smaller.",
+      "hash": "88986dbbdf42",
+      "textSha256": "88986dbbdf4292280f0b8ee55b5ef0ba87955810a7453490aad018acd4fc1209",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/judge-evidence.88986dbbdf42.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/judge-evidence.88986dbbdf42.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/judge-evidence.88986dbbdf42.generation.json",
+      "plannedRequestSha256": "1a4eab9f3b46ed9330fc855ed7ea15a6776069bd3351c3dbff32d7706b5fb609"
+    },
+    {
+      "id": "future-direction",
+      "parentSceneId": "future-direction",
+      "text": "The syllabus also asks about future research. One active direction is drugs that copy a gut hormone called GLP-1. They make beta cells release insulin only when glucose is high, slow the stomach emptying, and reduce appetite, so people eat less and lose weight. Large trials show lower HbA1c and weight loss, and for some drugs, fewer heart attacks and strokes in people at high risk. Against that, many are injected, often costly, can cause nausea, and weight tends to return when people stop.",
+      "hash": "e5823b04c3c5",
+      "textSha256": "e5823b04c3c5c54aba115b71c433171fecb9b6b079224ff34b12b3ac3c8fde17",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/future-direction.e5823b04c3c5.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/future-direction.e5823b04c3c5.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/future-direction.e5823b04c3c5.generation.json",
+      "plannedRequestSha256": "5069d77f870a9b79c0a4480e552bce7dbe559c64b962bd17067acd93580c674c"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A person with type 2 diabetes has used metformin and an activity plan for two years. Their HbA1c has risen from 7.0 to 8.4 per cent, and their doctor suggests adding insulin. Explain what the HbA1c result shows, and assess whether insulin alone would fix the underlying problem. Pause here to answer.",
+      "hash": "40b4373079fb",
+      "textSha256": "40b4373079fbe8c9d497d004b374eb58113ab34b6d00e0560ceb5c45f870cd16",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt.40b4373079fb.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt.40b4373079fb.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt.40b4373079fb.generation.json",
+      "plannedRequestSha256": "c172b7b86772c2d9e942c47384267071ea0ee91fec3f926d459996cb3afbfc26"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "HbA1c shows average glucose over two to three months, so a rise from 7.0 to 8.4 means control has worsened over months, not on one bad day. The beta cells may be falling further behind, so stepping up makes sense. But insulin replaces the signal, it doesn't fix the resistance, and it can add weight. So keep the activity and metformin too. The classic mistake is calling HbA1c a treatment.",
+      "hash": "b4fac89004e8",
+      "textSha256": "b4fac89004e84bdf8275db8f24b882a3b57c433ab41f56f33efddafc1eec6445",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-one.b4fac89004e8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-one.b4fac89004e8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-one.b4fac89004e8.generation.json",
+      "plannedRequestSha256": "d4696d6e4dac98b7068ecae158ad5d9cb3f3fa71a91e4304bbd17a0a73ffd654"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. In a trial, 600 adults with type 2 diabetes were randomly given a new weekly injection or a placebo for 26 weeks. HbA1c fell by 1.4 points with the drug and 0.3 with the placebo. One in eight stopped the drug because of nausea, and it isn't subsidised yet. Evaluate this evidence for using the drug to manage type 2 diabetes. Pause here to answer.",
+      "hash": "32bc817bd857",
+      "textSha256": "32bc817bd857e87d761a25d9312693ea597936526776c33eb32f91c714cc478f",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt-two.32bc817bd857.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt-two.32bc817bd857.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/attempt-two.32bc817bd857.generation.json",
+      "plannedRequestSha256": "599ed1b3cb1e005920565af7269ee3d33a63a098fc88e188ff87db4eb442068c"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "It was randomised, with a placebo, so the bigger fall is most likely the drug's effect, and 1.1 points is a large change. But 26 weeks is short, and HbA1c is a measure, not the outcome people care about: fewer heart attacks or deaths. Side effects and cost may stop people using it. So it's promising, but not yet proven for long-term care. The classic mistake is treating a trial result as real-world success.",
+      "hash": "a211b9793bf8",
+      "textSha256": "a211b9793bf8471971874a688f72c3c320e743c759df0be9fc566a7e6716e2b1",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-two.a211b9793bf8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-two.a211b9793bf8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/feedback-two.a211b9793bf8.generation.json",
+      "plannedRequestSha256": "1efccc2798b58b2776ece49e6331aa9fec7e115a35f8f85106d474c1d793540a"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for any management question. Name the mechanism, say how each action changes it, then judge the evidence: was it randomised, how long did it run, what outcome did it measure, and can people keep it up? Next, how prevention campaigns can stop disease before it starts.",
+      "hash": "175c00b44c68",
+      "textSha256": "175c00b44c6888b927939d67db2ada64574e98f8c08c956ea6da45b2d3e225cd",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/decision-rule.175c00b44c68.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/decision-rule.175c00b44c68.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/decision-rule.175c00b44c68.generation.json",
+      "plannedRequestSha256": "65c1cc07a10b31bf04204276e97fe27c41aa269f611beda453a6e5ea6237e75d"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B12-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

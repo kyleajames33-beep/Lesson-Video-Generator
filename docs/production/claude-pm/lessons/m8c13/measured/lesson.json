@@ -1,0 +1,7806 @@
+{
+  "title": "How should a synthesis be designed and judged? Aspirin from reagents to tablets: supply, equilibrium, rate, yield, purity, safety, waste and cost, then a judgement with its condition",
+  "subtitle": "Aspirin has been made for well over a century, by the gram at school and by the tonne in factories. How do chemists decide on a recipe, and how do you judge whether it's a good one?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 21,
+  "lessonIntent": "explaining each design factor for aspirin and how the factors trade off; transferring them to biodiesel and fuel ethanol; planning an evaluation with a judgement and its condition. No atom economy or E-factor calculations, no drug trials, no mechanisms.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 756,
+      "voiceover": {
+        "text": "In 1897, a chemist at Bayer in Germany made a pure sample of acetylsalicylic acid, and in 1899 it went on sale as Aspirin. More than a century later, a school lab can make a few grams in an afternoon, and factories make it by the tonne. So how do chemists decide on a recipe, and how do you judge whether it's a good one?",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/hook.004e86d2359c.mp3",
+        "startFrame": 0,
+        "endFrame": 696
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "In",
+          "startMs": 0,
+          "endMs": 120,
+          "timestampMs": 60,
+          "confidence": null
+        },
+        {
+          "text": " 1897,",
+          "startMs": 160,
+          "endMs": 1600,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1680,
+          "endMs": 1760,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " chemist",
+          "startMs": 1960,
+          "endMs": 2160,
+          "timestampMs": 2060,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 2280,
+          "endMs": 2400,
+          "timestampMs": 2340,
+          "confidence": null
+        },
+        {
+          "text": " Bayer",
+          "startMs": 2440,
+          "endMs": 2800,
+          "timestampMs": 2620,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2880,
+          "endMs": 2960,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " Germany",
+          "startMs": 3040,
+          "endMs": 3520,
+          "timestampMs": 3280,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 3840,
+          "endMs": 3920,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4000,
+          "endMs": 4080,
+          "timestampMs": 4040,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 4160,
+          "endMs": 4400,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " sample",
+          "startMs": 4560,
+          "endMs": 4880,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 4920,
+          "endMs": 4960,
+          "timestampMs": 4940,
+          "confidence": null
+        },
+        {
+          "text": " acetylsalicylic",
+          "startMs": 5080,
+          "endMs": 6080,
+          "timestampMs": 5580,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 6160,
+          "endMs": 6960,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7040,
+          "endMs": 7120,
+          "timestampMs": 7080,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 7160,
+          "endMs": 7200,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": " 1899",
+          "startMs": 7280,
+          "endMs": 8240,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 8560,
+          "endMs": 8640,
+          "timestampMs": 8600,
+          "confidence": null
+        },
+        {
+          "text": " went",
+          "startMs": 8720,
+          "endMs": 8880,
+          "timestampMs": 8800,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 8960,
+          "endMs": 9040,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " sale",
+          "startMs": 9120,
+          "endMs": 9440,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 9600,
+          "endMs": 9760,
+          "timestampMs": 9680,
+          "confidence": null
+        },
+        {
+          "text": " Aspirin.",
+          "startMs": 9840,
+          "endMs": 10640,
+          "timestampMs": 10240,
+          "confidence": null
+        },
+        {
+          "text": " More",
+          "startMs": 10960,
+          "endMs": 11120,
+          "timestampMs": 11040,
+          "confidence": null
+        },
+        {
+          "text": " than",
+          "startMs": 11160,
+          "endMs": 11200,
+          "timestampMs": 11180,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11280,
+          "endMs": 11440,
+          "timestampMs": 11360,
+          "confidence": null
+        },
+        {
+          "text": " century",
+          "startMs": 11520,
+          "endMs": 12000,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " later,",
+          "startMs": 12200,
+          "endMs": 12640,
+          "timestampMs": 12420,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " school",
+          "startMs": 12960,
+          "endMs": 13120,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " lab",
+          "startMs": 13200,
+          "endMs": 13440,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 13680,
+          "endMs": 13760,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13840,
+          "endMs": 13920,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 14000,
+          "endMs": 14160,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " grams",
+          "startMs": 14240,
+          "endMs": 14560,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 14600,
+          "endMs": 14640,
+          "timestampMs": 14620,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 14720,
+          "endMs": 14800,
+          "timestampMs": 14760,
+          "confidence": null
+        },
+        {
+          "text": " afternoon,",
+          "startMs": 14880,
+          "endMs": 15760,
+          "timestampMs": 15320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15840,
+          "endMs": 15920,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " factories",
+          "startMs": 16000,
+          "endMs": 16560,
+          "timestampMs": 16280,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 16640,
+          "endMs": 16720,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 16960,
+          "endMs": 17040,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 17080,
+          "endMs": 17120,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " tonne.",
+          "startMs": 17280,
+          "endMs": 17760,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 18400,
+          "endMs": 18560,
+          "timestampMs": 18480,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 18800,
+          "endMs": 18880,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " chemists",
+          "startMs": 18960,
+          "endMs": 19360,
+          "timestampMs": 19160,
+          "confidence": null
+        },
+        {
+          "text": " decide",
+          "startMs": 19440,
+          "endMs": 19840,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 19920,
+          "endMs": 20000,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20040,
+          "endMs": 20080,
+          "timestampMs": 20060,
+          "confidence": null
+        },
+        {
+          "text": " recipe,",
+          "startMs": 20160,
+          "endMs": 21040,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 21280,
+          "endMs": 21360,
+          "timestampMs": 21320,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 21440,
+          "endMs": 21520,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 21600,
+          "endMs": 21760,
+          "timestampMs": 21680,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 21840,
+          "endMs": 22080,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " whether",
+          "startMs": 22200,
+          "endMs": 22320,
+          "timestampMs": 22260,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 22360,
+          "endMs": 22480,
+          "timestampMs": 22420,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22533,
+          "endMs": 22587,
+          "timestampMs": 22560,
+          "confidence": null
+        },
+        {
+          "text": " good",
+          "startMs": 22640,
+          "endMs": 22720,
+          "timestampMs": 22680,
+          "confidence": null
+        },
+        {
+          "text": " one?",
+          "startMs": 22880,
+          "endMs": 23200,
+          "timestampMs": 23040,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "reaction",
+      "type": "concept",
+      "durationInFrames": 831,
+      "voiceover": {
+        "text": "Here's the reaction. Salicylic acid has an O H group on its ring. Ethanoic anhydride, also called acetic anhydride, puts an acetyl group onto that oxygen, making an ester link, like the ones in the esters video. The other half of the anhydride leaves as ethanoic acid. So you get aspirin, plus ethanoic acid as a by-product. Every factor we judge comes back to this one equation.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/reaction.2f111fb64de8.mp3",
+        "startFrame": 0,
+        "endFrame": 771
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here's",
+          "startMs": 0,
+          "endMs": 280,
+          "timestampMs": 140,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 320,
+          "endMs": 360,
+          "timestampMs": 340,
+          "confidence": null
+        },
+        {
+          "text": " reaction.",
+          "startMs": 400,
+          "endMs": 1200,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " Salicylic",
+          "startMs": 1440,
+          "endMs": 2000,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 2080,
+          "endMs": 2400,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 2480,
+          "endMs": 2640,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 2760,
+          "endMs": 2880,
+          "timestampMs": 2820,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 3200,
+          "endMs": 3440,
+          "timestampMs": 3320,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 3520,
+          "endMs": 3760,
+          "timestampMs": 3640,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 3800,
+          "endMs": 3840,
+          "timestampMs": 3820,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " ring.",
+          "startMs": 4240,
+          "endMs": 4640,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " Ethanoic",
+          "startMs": 4880,
+          "endMs": 5440,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " anhydride,",
+          "startMs": 5560,
+          "endMs": 6480,
+          "timestampMs": 6020,
+          "confidence": null
+        },
+        {
+          "text": " also",
+          "startMs": 6560,
+          "endMs": 6800,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 6880,
+          "endMs": 7120,
+          "timestampMs": 7000,
+          "confidence": null
+        },
+        {
+          "text": " acetic",
+          "startMs": 7200,
+          "endMs": 7680,
+          "timestampMs": 7440,
+          "confidence": null
+        },
+        {
+          "text": " anhydride,",
+          "startMs": 7760,
+          "endMs": 8800,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " puts",
+          "startMs": 8920,
+          "endMs": 9040,
+          "timestampMs": 8980,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 9080,
+          "endMs": 9120,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " acetyl",
+          "startMs": 9240,
+          "endMs": 9600,
+          "timestampMs": 9420,
+          "confidence": null
+        },
+        {
+          "text": " group",
+          "startMs": 9680,
+          "endMs": 9920,
+          "timestampMs": 9800,
+          "confidence": null
+        },
+        {
+          "text": " onto",
+          "startMs": 10000,
+          "endMs": 10160,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 10240,
+          "endMs": 10320,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " oxygen,",
+          "startMs": 10400,
+          "endMs": 11040,
+          "timestampMs": 10720,
+          "confidence": null
+        },
+        {
+          "text": " making",
+          "startMs": 11200,
+          "endMs": 11360,
+          "timestampMs": 11280,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 11400,
+          "endMs": 11440,
+          "timestampMs": 11420,
+          "confidence": null
+        },
+        {
+          "text": " ester",
+          "startMs": 11600,
+          "endMs": 11920,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " link,",
+          "startMs": 12080,
+          "endMs": 12400,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " like",
+          "startMs": 12480,
+          "endMs": 12560,
+          "timestampMs": 12520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12640,
+          "endMs": 12680,
+          "timestampMs": 12660,
+          "confidence": null
+        },
+        {
+          "text": " ones",
+          "startMs": 12720,
+          "endMs": 12880,
+          "timestampMs": 12800,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12960,
+          "endMs": 13040,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13080,
+          "endMs": 13120,
+          "timestampMs": 13100,
+          "confidence": null
+        },
+        {
+          "text": " esters",
+          "startMs": 13320,
+          "endMs": 13520,
+          "timestampMs": 13420,
+          "confidence": null
+        },
+        {
+          "text": " video.",
+          "startMs": 13720,
+          "endMs": 14000,
+          "timestampMs": 13860,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14400,
+          "endMs": 14480,
+          "timestampMs": 14440,
+          "confidence": null
+        },
+        {
+          "text": " other",
+          "startMs": 14560,
+          "endMs": 14720,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " half",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 15080,
+          "endMs": 15120,
+          "timestampMs": 15100,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 15200,
+          "endMs": 15240,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 15280,
+          "endMs": 16000,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " leaves",
+          "startMs": 16079.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16240,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 16480,
+          "endMs": 16640,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 16720,
+          "endMs": 17280,
+          "timestampMs": 17000,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 17360,
+          "endMs": 17760,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 18160,
+          "endMs": 18240,
+          "timestampMs": 18200,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 18320,
+          "endMs": 18400,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " get",
+          "startMs": 18520,
+          "endMs": 18640,
+          "timestampMs": 18580,
+          "confidence": null
+        },
+        {
+          "text": " aspirin,",
+          "startMs": 18720,
+          "endMs": 19440,
+          "timestampMs": 19080,
+          "confidence": null
+        },
+        {
+          "text": " plus",
+          "startMs": 19520,
+          "endMs": 19760,
+          "timestampMs": 19640,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 19920,
+          "endMs": 20400,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 20480,
+          "endMs": 20720,
+          "timestampMs": 20600,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 20800,
+          "endMs": 20880,
+          "timestampMs": 20840,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 20920,
+          "endMs": 20960,
+          "timestampMs": 20940,
+          "confidence": null
+        },
+        {
+          "text": " by-product.",
+          "startMs": 21080,
+          "endMs": 21680,
+          "timestampMs": 21380,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 22240,
+          "endMs": 22560,
+          "timestampMs": 22400,
+          "confidence": null
+        },
+        {
+          "text": " factor",
+          "startMs": 22640,
+          "endMs": 22960,
+          "timestampMs": 22800,
+          "confidence": null
+        },
+        {
+          "text": " we",
+          "startMs": 23040,
+          "endMs": 23120,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 23200,
+          "endMs": 23520,
+          "timestampMs": 23360,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 23600,
+          "endMs": 23840,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 23920,
+          "endMs": 24080,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 24120,
+          "endMs": 24160,
+          "timestampMs": 24140,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 24240,
+          "endMs": 24400,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 24560,
+          "endMs": 24720,
+          "timestampMs": 24640,
+          "confidence": null
+        },
+        {
+          "text": " equation.",
+          "startMs": 24880,
+          "endMs": 25680,
+          "timestampMs": 25280,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "supply",
+      "type": "concept",
+      "durationInFrames": 908,
+      "voiceover": {
+        "text": "Before anything else, you need the reagents, in bulk. Salicylic acid was first made from compounds in plants such as willow bark, but plants couldn't supply tablets for the whole world. Industry makes it from phenol and carbon dioxide, and phenol comes mostly from crude oil. The anhydride is made from ethanoic acid. So availability means a cheap, steady supply, and here that supply traces back to fossil fuels.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/supply.cf68316ee3c0.mp3",
+        "startFrame": 0,
+        "endFrame": 848
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Before",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " anything",
+          "startMs": 400,
+          "endMs": 720,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " else,",
+          "startMs": 800,
+          "endMs": 1360,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1440,
+          "endMs": 1520,
+          "timestampMs": 1480,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 1600,
+          "endMs": 1760,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1800,
+          "endMs": 1840,
+          "timestampMs": 1820,
+          "confidence": null
+        },
+        {
+          "text": " reagents,",
+          "startMs": 1960,
+          "endMs": 2880,
+          "timestampMs": 2420,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " bulk.",
+          "startMs": 3280,
+          "endMs": 3960,
+          "timestampMs": 3620,
+          "confidence": null
+        },
+        {
+          "text": " Salicylic",
+          "startMs": 4240,
+          "endMs": 4800,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 4880,
+          "endMs": 5200,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " was",
+          "startMs": 5320,
+          "endMs": 5440,
+          "timestampMs": 5380,
+          "confidence": null
+        },
+        {
+          "text": " first",
+          "startMs": 5560,
+          "endMs": 5680,
+          "timestampMs": 5620,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 5760,
+          "endMs": 6000,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " compounds",
+          "startMs": 6240,
+          "endMs": 6720,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 6800,
+          "endMs": 6880,
+          "timestampMs": 6840,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 6960,
+          "endMs": 7360,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " such",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " willow",
+          "startMs": 7920,
+          "endMs": 8160,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " bark,",
+          "startMs": 8240,
+          "endMs": 9040,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 9120,
+          "endMs": 9200,
+          "timestampMs": 9160,
+          "confidence": null
+        },
+        {
+          "text": " plants",
+          "startMs": 9400,
+          "endMs": 9600,
+          "timestampMs": 9500,
+          "confidence": null
+        },
+        {
+          "text": " couldn't",
+          "startMs": 9680,
+          "endMs": 9840,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " supply",
+          "startMs": 9920,
+          "endMs": 10240,
+          "timestampMs": 10080,
+          "confidence": null
+        },
+        {
+          "text": " tablets",
+          "startMs": 10400,
+          "endMs": 10720,
+          "timestampMs": 10560,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 10760,
+          "endMs": 10800,
+          "timestampMs": 10780,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 11080,
+          "endMs": 11200,
+          "timestampMs": 11140,
+          "confidence": null
+        },
+        {
+          "text": " world.",
+          "startMs": 11280,
+          "endMs": 12240,
+          "timestampMs": 11760,
+          "confidence": null
+        },
+        {
+          "text": " Industry",
+          "startMs": 12520,
+          "endMs": 12800,
+          "timestampMs": 12660,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 12920,
+          "endMs": 13040,
+          "timestampMs": 12980,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 13120,
+          "endMs": 13200,
+          "timestampMs": 13160,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 13280,
+          "endMs": 13360,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " phenol",
+          "startMs": 13520,
+          "endMs": 13920,
+          "timestampMs": 13720,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 14000,
+          "endMs": 14080,
+          "timestampMs": 14040,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 14160,
+          "endMs": 14400,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " dioxide,",
+          "startMs": 14480,
+          "endMs": 15520,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15560,
+          "endMs": 15600,
+          "timestampMs": 15580,
+          "confidence": null
+        },
+        {
+          "text": " phenol",
+          "startMs": 15760,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " comes",
+          "startMs": 16400,
+          "endMs": 16560,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " mostly",
+          "startMs": 16720,
+          "endMs": 16880,
+          "timestampMs": 16800,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 16960,
+          "endMs": 17120,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " crude",
+          "startMs": 17200,
+          "endMs": 17440,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " oil.",
+          "startMs": 17520,
+          "endMs": 18320,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 18600,
+          "endMs": 19200,
+          "timestampMs": 18900,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " made",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 19680,
+          "endMs": 19840,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 19920,
+          "endMs": 20400,
+          "timestampMs": 20160,
+          "confidence": null
+        },
+        {
+          "text": " acid.",
+          "startMs": 20480,
+          "endMs": 21440,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 21560,
+          "endMs": 21680,
+          "timestampMs": 21620,
+          "confidence": null
+        },
+        {
+          "text": " availability",
+          "startMs": 22080,
+          "endMs": 22480,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 22640,
+          "endMs": 22800,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " cheap,",
+          "startMs": 23040,
+          "endMs": 23520,
+          "timestampMs": 23280,
+          "confidence": null
+        },
+        {
+          "text": " steady",
+          "startMs": 23600,
+          "endMs": 23920,
+          "timestampMs": 23760,
+          "confidence": null
+        },
+        {
+          "text": " supply,",
+          "startMs": 24000,
+          "endMs": 24960,
+          "timestampMs": 24480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 25040,
+          "endMs": 25120,
+          "timestampMs": 25080,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 25200,
+          "endMs": 25680,
+          "timestampMs": 25440,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 25760,
+          "endMs": 25840,
+          "timestampMs": 25800,
+          "confidence": null
+        },
+        {
+          "text": " supply",
+          "startMs": 25920,
+          "endMs": 26240,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " traces",
+          "startMs": 26320,
+          "endMs": 26720,
+          "timestampMs": 26520,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 26800,
+          "endMs": 26960,
+          "timestampMs": 26880,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 27040,
+          "endMs": 27120,
+          "timestampMs": 27080,
+          "confidence": null
+        },
+        {
+          "text": " fossil",
+          "startMs": 27200,
+          "endMs": 27440,
+          "timestampMs": 27320,
+          "confidence": null
+        },
+        {
+          "text": " fuels.",
+          "startMs": 27600,
+          "endMs": 28240,
+          "timestampMs": 27920,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "equilibrium",
+      "type": "concept",
+      "durationInFrames": 1023,
+      "voiceover": {
+        "text": "Why not use plain ethanoic acid, the acid in vinegar? It can make the same ester, but that reaction is an equilibrium. The mixture settles with plenty of salicylic acid left over, and the water it makes drives the reaction back. The anhydride makes no water. It makes ethanoic acid instead, so the reaction runs almost all the way to aspirin. That means a much higher yield. The catch? The anhydride costs more, and it reacts with water, so everything has to stay dry.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/equilibrium.9e50e4fa7444.mp3",
+        "startFrame": 0,
+        "endFrame": 963
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Why",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 480,
+          "endMs": 640,
+          "timestampMs": 560,
+          "confidence": null
+        },
+        {
+          "text": " plain",
+          "startMs": 720,
+          "endMs": 1040,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 1120,
+          "endMs": 1680,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 1760,
+          "endMs": 2320,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2400,
+          "endMs": 2480,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 2640,
+          "endMs": 2800,
+          "timestampMs": 2720,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2840,
+          "endMs": 2880,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " vinegar?",
+          "startMs": 2960,
+          "endMs": 3640,
+          "timestampMs": 3300,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 4080,
+          "endMs": 4160,
+          "timestampMs": 4120,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 4240,
+          "endMs": 4320,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " same",
+          "startMs": 4560,
+          "endMs": 4800,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " ester,",
+          "startMs": 5040,
+          "endMs": 5680,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 5760,
+          "endMs": 5840,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " that",
+          "startMs": 5920,
+          "endMs": 6080,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 6360,
+          "endMs": 6640,
+          "timestampMs": 6500,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium.",
+          "startMs": 7080,
+          "endMs": 7840,
+          "timestampMs": 7460,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " mixture",
+          "startMs": 8440,
+          "endMs": 8800,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " settles",
+          "startMs": 8920,
+          "endMs": 9280,
+          "timestampMs": 9100,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9400,
+          "endMs": 9520,
+          "timestampMs": 9460,
+          "confidence": null
+        },
+        {
+          "text": " plenty",
+          "startMs": 9600,
+          "endMs": 9920,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 9960,
+          "endMs": 10000,
+          "timestampMs": 9980,
+          "confidence": null
+        },
+        {
+          "text": " salicylic",
+          "startMs": 10080,
+          "endMs": 10560,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 10640,
+          "endMs": 10880,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 10960,
+          "endMs": 11200,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " over,",
+          "startMs": 11360,
+          "endMs": 11920,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11960,
+          "endMs": 12000,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12080,
+          "endMs": 12120,
+          "timestampMs": 12100,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 12160,
+          "endMs": 12480,
+          "timestampMs": 12320,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 12560,
+          "endMs": 12640,
+          "timestampMs": 12600,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 12720,
+          "endMs": 12960,
+          "timestampMs": 12840,
+          "confidence": null
+        },
+        {
+          "text": " drives",
+          "startMs": 13120,
+          "endMs": 13520,
+          "timestampMs": 13320,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13560,
+          "endMs": 13600,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 14240,
+          "endMs": 14840,
+          "timestampMs": 14540,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 15120,
+          "endMs": 15200,
+          "timestampMs": 15160,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 15320,
+          "endMs": 16000,
+          "timestampMs": 15660,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 16079.999999999998,
+          "endMs": 16320,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 16480,
+          "endMs": 16640,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " water.",
+          "startMs": 16720,
+          "endMs": 17200,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 17520,
+          "endMs": 17600,
+          "timestampMs": 17560,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 17680,
+          "endMs": 17920,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 18000,
+          "endMs": 18480,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 18560,
+          "endMs": 18800,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " instead,",
+          "startMs": 19080,
+          "endMs": 19760,
+          "timestampMs": 19420,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 19840,
+          "endMs": 19920,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19960,
+          "endMs": 20000,
+          "timestampMs": 19980,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 20240,
+          "endMs": 20480,
+          "timestampMs": 20360,
+          "confidence": null
+        },
+        {
+          "text": " runs",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 20880,
+          "endMs": 21200,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 21360,
+          "endMs": 21520,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21600,
+          "endMs": 21640,
+          "timestampMs": 21620,
+          "confidence": null
+        },
+        {
+          "text": " way",
+          "startMs": 21680,
+          "endMs": 21840,
+          "timestampMs": 21760,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21920,
+          "endMs": 22080,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " aspirin.",
+          "startMs": 22200,
+          "endMs": 22720,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " That",
+          "startMs": 23120,
+          "endMs": 23280,
+          "timestampMs": 23200,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 23360,
+          "endMs": 23600,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23680,
+          "endMs": 23760,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 23920,
+          "endMs": 24160,
+          "timestampMs": 24040,
+          "confidence": null
+        },
+        {
+          "text": " higher",
+          "startMs": 24240,
+          "endMs": 24480,
+          "timestampMs": 24360,
+          "confidence": null
+        },
+        {
+          "text": " yield.",
+          "startMs": 24560,
+          "endMs": 25040,
+          "timestampMs": 24800,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 25520,
+          "endMs": 25600,
+          "timestampMs": 25560,
+          "confidence": null
+        },
+        {
+          "text": " catch?",
+          "startMs": 25800,
+          "endMs": 26080,
+          "timestampMs": 25940,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 26560,
+          "endMs": 26640,
+          "timestampMs": 26600,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 26760,
+          "endMs": 27360,
+          "timestampMs": 27060,
+          "confidence": null
+        },
+        {
+          "text": " costs",
+          "startMs": 27440,
+          "endMs": 27800,
+          "timestampMs": 27620,
+          "confidence": null
+        },
+        {
+          "text": " more,",
+          "startMs": 27840,
+          "endMs": 28320,
+          "timestampMs": 28080,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 28400,
+          "endMs": 28640,
+          "timestampMs": 28520,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 28720,
+          "endMs": 28800,
+          "timestampMs": 28760,
+          "confidence": null
+        },
+        {
+          "text": " reacts",
+          "startMs": 28960,
+          "endMs": 29160,
+          "timestampMs": 29060,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 29200,
+          "endMs": 29280,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " water,",
+          "startMs": 29360,
+          "endMs": 30080,
+          "timestampMs": 29720,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 30200,
+          "endMs": 30320,
+          "timestampMs": 30260,
+          "confidence": null
+        },
+        {
+          "text": " everything",
+          "startMs": 30400,
+          "endMs": 30880,
+          "timestampMs": 30640,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 30960,
+          "endMs": 31040,
+          "timestampMs": 31000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31120,
+          "endMs": 31200,
+          "timestampMs": 31160,
+          "confidence": null
+        },
+        {
+          "text": " stay",
+          "startMs": 31320,
+          "endMs": 31440,
+          "timestampMs": 31380,
+          "confidence": null
+        },
+        {
+          "text": " dry.",
+          "startMs": 31520,
+          "endMs": 32080,
+          "timestampMs": 31800,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "rate-conditions",
+      "type": "concept",
+      "durationInFrames": 1071,
+      "voiceover": {
+        "text": "Next, speed. At room temperature the reaction is slow. A few drops of concentrated sulfuric or phosphoric acid act as a catalyst, and a warm water bath, about seventy to eighty degrees, gives more collisions with enough energy. The catalyst gets you there sooner; it doesn't change where you end up. So why not heat it harder? A hotter mixture can make more side products, the anhydride fumes more, and the energy costs money. Like the Haber process, it's a balance of speed, yield and cost.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/rate-conditions.62054e95b3d9.mp3",
+        "startFrame": 0,
+        "endFrame": 1011
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Next,",
+          "startMs": 0,
+          "endMs": 800,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " speed.",
+          "startMs": 880,
+          "endMs": 1440,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " At",
+          "startMs": 1920,
+          "endMs": 2080,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " room",
+          "startMs": 2160,
+          "endMs": 2320,
+          "timestampMs": 2240,
+          "confidence": null
+        },
+        {
+          "text": " temperature",
+          "startMs": 2400,
+          "endMs": 2960,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 3440,
+          "endMs": 3680,
+          "timestampMs": 3560,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " slow.",
+          "startMs": 3920,
+          "endMs": 4400,
+          "timestampMs": 4160,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 4960,
+          "endMs": 5040,
+          "timestampMs": 5000,
+          "confidence": null
+        },
+        {
+          "text": " few",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " drops",
+          "startMs": 5280,
+          "endMs": 5520,
+          "timestampMs": 5400,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 5560,
+          "endMs": 5600,
+          "timestampMs": 5580,
+          "confidence": null
+        },
+        {
+          "text": " concentrated",
+          "startMs": 5760,
+          "endMs": 6400,
+          "timestampMs": 6080,
+          "confidence": null
+        },
+        {
+          "text": " sulfuric",
+          "startMs": 6480,
+          "endMs": 7040,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 7120,
+          "endMs": 7200,
+          "timestampMs": 7160,
+          "confidence": null
+        },
+        {
+          "text": " phosphoric",
+          "startMs": 7360,
+          "endMs": 7920,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 8000,
+          "endMs": 8320,
+          "timestampMs": 8160,
+          "confidence": null
+        },
+        {
+          "text": " act",
+          "startMs": 8480,
+          "endMs": 8640,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " as",
+          "startMs": 8720,
+          "endMs": 8800,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8840,
+          "endMs": 8880,
+          "timestampMs": 8860,
+          "confidence": null
+        },
+        {
+          "text": " catalyst,",
+          "startMs": 8960,
+          "endMs": 9920,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 9960,
+          "endMs": 10000,
+          "timestampMs": 9980,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " warm",
+          "startMs": 10240,
+          "endMs": 10480,
+          "timestampMs": 10360,
+          "confidence": null
+        },
+        {
+          "text": " water",
+          "startMs": 10600,
+          "endMs": 10720,
+          "timestampMs": 10660,
+          "confidence": null
+        },
+        {
+          "text": " bath,",
+          "startMs": 10800,
+          "endMs": 11360,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " seventy",
+          "startMs": 11840,
+          "endMs": 12120,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 12160,
+          "endMs": 12320,
+          "timestampMs": 12240,
+          "confidence": null
+        },
+        {
+          "text": " eighty",
+          "startMs": 12400,
+          "endMs": 12520,
+          "timestampMs": 12460,
+          "confidence": null
+        },
+        {
+          "text": " degrees,",
+          "startMs": 12560,
+          "endMs": 13440,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 13480,
+          "endMs": 13680,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 13760,
+          "endMs": 14000,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " collisions",
+          "startMs": 14080,
+          "endMs": 14560,
+          "timestampMs": 14320,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 14640,
+          "endMs": 14720,
+          "timestampMs": 14680,
+          "confidence": null
+        },
+        {
+          "text": " enough",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " energy.",
+          "startMs": 15120,
+          "endMs": 15840,
+          "timestampMs": 15480,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " catalyst",
+          "startMs": 16320,
+          "endMs": 16800,
+          "timestampMs": 16560,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 16920,
+          "endMs": 17040,
+          "timestampMs": 16980,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 17080,
+          "endMs": 17120,
+          "timestampMs": 17100,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 17200,
+          "endMs": 17440,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " sooner;",
+          "startMs": 17520,
+          "endMs": 18160,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18240,
+          "endMs": 18400,
+          "timestampMs": 18320,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 18520,
+          "endMs": 18800,
+          "timestampMs": 18660,
+          "confidence": null
+        },
+        {
+          "text": " change",
+          "startMs": 18960,
+          "endMs": 19120,
+          "timestampMs": 19040,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " end",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " up.",
+          "startMs": 19680,
+          "endMs": 20240,
+          "timestampMs": 19960,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 20560,
+          "endMs": 20720,
+          "timestampMs": 20640,
+          "confidence": null
+        },
+        {
+          "text": " why",
+          "startMs": 20960,
+          "endMs": 21120,
+          "timestampMs": 21040,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 21200,
+          "endMs": 21280,
+          "timestampMs": 21240,
+          "confidence": null
+        },
+        {
+          "text": " heat",
+          "startMs": 21360,
+          "endMs": 21520,
+          "timestampMs": 21440,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 21560,
+          "endMs": 21600,
+          "timestampMs": 21580,
+          "confidence": null
+        },
+        {
+          "text": " harder?",
+          "startMs": 21680,
+          "endMs": 22320,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " hotter",
+          "startMs": 22720,
+          "endMs": 22960,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " mixture",
+          "startMs": 23040,
+          "endMs": 23360,
+          "timestampMs": 23200,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 23440,
+          "endMs": 23520,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 23600,
+          "endMs": 23760,
+          "timestampMs": 23680,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 23920,
+          "endMs": 24080,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " side",
+          "startMs": 24160,
+          "endMs": 24400,
+          "timestampMs": 24280,
+          "confidence": null
+        },
+        {
+          "text": " products,",
+          "startMs": 24480,
+          "endMs": 25200,
+          "timestampMs": 24840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 25240,
+          "endMs": 25280,
+          "timestampMs": 25260,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 25360,
+          "endMs": 26080,
+          "timestampMs": 25720,
+          "confidence": null
+        },
+        {
+          "text": " fumes",
+          "startMs": 26240,
+          "endMs": 26640,
+          "timestampMs": 26440,
+          "confidence": null
+        },
+        {
+          "text": " more,",
+          "startMs": 26760,
+          "endMs": 27280,
+          "timestampMs": 27020,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 27360,
+          "endMs": 27440,
+          "timestampMs": 27400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27480,
+          "endMs": 27520,
+          "timestampMs": 27500,
+          "confidence": null
+        },
+        {
+          "text": " energy",
+          "startMs": 27600,
+          "endMs": 27920,
+          "timestampMs": 27760,
+          "confidence": null
+        },
+        {
+          "text": " costs",
+          "startMs": 28080,
+          "endMs": 28400,
+          "timestampMs": 28240,
+          "confidence": null
+        },
+        {
+          "text": " money.",
+          "startMs": 28480,
+          "endMs": 29120,
+          "timestampMs": 28800,
+          "confidence": null
+        },
+        {
+          "text": " Like",
+          "startMs": 29440,
+          "endMs": 29600,
+          "timestampMs": 29520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 29680,
+          "endMs": 29720,
+          "timestampMs": 29700,
+          "confidence": null
+        },
+        {
+          "text": " Haber",
+          "startMs": 29760,
+          "endMs": 30080,
+          "timestampMs": 29920,
+          "confidence": null
+        },
+        {
+          "text": " process,",
+          "startMs": 30360,
+          "endMs": 30800,
+          "timestampMs": 30580,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 30840,
+          "endMs": 30960,
+          "timestampMs": 30900,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 31000,
+          "endMs": 31040,
+          "timestampMs": 31020,
+          "confidence": null
+        },
+        {
+          "text": " balance",
+          "startMs": 31200,
+          "endMs": 31360,
+          "timestampMs": 31280,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 31440,
+          "endMs": 31520,
+          "timestampMs": 31480,
+          "confidence": null
+        },
+        {
+          "text": " speed,",
+          "startMs": 31600,
+          "endMs": 32320,
+          "timestampMs": 31960,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 32520.000000000004,
+          "endMs": 32720,
+          "timestampMs": 32620,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 32880,
+          "endMs": 33040,
+          "timestampMs": 32960,
+          "confidence": null
+        },
+        {
+          "text": " cost.",
+          "startMs": 33120,
+          "endMs": 33680,
+          "timestampMs": 33400,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "yield",
+      "type": "concept",
+      "durationInFrames": 804,
+      "voiceover": {
+        "text": "Now, how much do you get? Yield compares the aspirin you collect with the most the equation says you could make. Even when the reaction goes almost to completion, product gets lost. Some stays dissolved in the liquid, some sticks to the glassware, and some is left on the filter paper. So a yield well under a hundred per cent is normal, and in a factory, every lost gram is lost money.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/yield.5428a8b558ab.mp3",
+        "startFrame": 0,
+        "endFrame": 744
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Now,",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 800,
+          "endMs": 960,
+          "timestampMs": 880,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 1040,
+          "endMs": 1120,
+          "timestampMs": 1080,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " get?",
+          "startMs": 1360,
+          "endMs": 1680,
+          "timestampMs": 1520,
+          "confidence": null
+        },
+        {
+          "text": " Yield",
+          "startMs": 2240,
+          "endMs": 2560,
+          "timestampMs": 2400,
+          "confidence": null
+        },
+        {
+          "text": " compares",
+          "startMs": 2680,
+          "endMs": 3040,
+          "timestampMs": 2860,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " aspirin",
+          "startMs": 3280,
+          "endMs": 3680,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " collect",
+          "startMs": 4080,
+          "endMs": 4320,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 4400,
+          "endMs": 4480,
+          "timestampMs": 4440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4560,
+          "endMs": 4640,
+          "timestampMs": 4600,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5120,
+          "endMs": 5200,
+          "timestampMs": 5160,
+          "confidence": null
+        },
+        {
+          "text": " equation",
+          "startMs": 5320,
+          "endMs": 5680,
+          "timestampMs": 5500,
+          "confidence": null
+        },
+        {
+          "text": " says",
+          "startMs": 5760,
+          "endMs": 6000,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " could",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " make.",
+          "startMs": 6560,
+          "endMs": 7360,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " Even",
+          "startMs": 7440,
+          "endMs": 7680,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7880,
+          "endMs": 7920,
+          "timestampMs": 7900,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 8160,
+          "endMs": 8400,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 8440,
+          "endMs": 8720,
+          "timestampMs": 8580,
+          "confidence": null
+        },
+        {
+          "text": " almost",
+          "startMs": 8800,
+          "endMs": 9200,
+          "timestampMs": 9000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 9240,
+          "endMs": 9280,
+          "timestampMs": 9260,
+          "confidence": null
+        },
+        {
+          "text": " completion,",
+          "startMs": 9360,
+          "endMs": 10160,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " product",
+          "startMs": 10360,
+          "endMs": 10560,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " gets",
+          "startMs": 10640,
+          "endMs": 10880,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " lost.",
+          "startMs": 10960,
+          "endMs": 11840,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " Some",
+          "startMs": 12000,
+          "endMs": 12160,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " stays",
+          "startMs": 12240,
+          "endMs": 12480,
+          "timestampMs": 12360,
+          "confidence": null
+        },
+        {
+          "text": " dissolved",
+          "startMs": 12520,
+          "endMs": 12880,
+          "timestampMs": 12700,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 12960,
+          "endMs": 13000,
+          "timestampMs": 12980,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13040,
+          "endMs": 13120,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " liquid,",
+          "startMs": 13320,
+          "endMs": 13840,
+          "timestampMs": 13580,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 13920,
+          "endMs": 14080,
+          "timestampMs": 14000,
+          "confidence": null
+        },
+        {
+          "text": " sticks",
+          "startMs": 14160,
+          "endMs": 14400,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 14440,
+          "endMs": 14480,
+          "timestampMs": 14460,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " glassware,",
+          "startMs": 14840,
+          "endMs": 15560,
+          "timestampMs": 15200,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15600,
+          "endMs": 15760,
+          "timestampMs": 15680,
+          "confidence": null
+        },
+        {
+          "text": " some",
+          "startMs": 15920,
+          "endMs": 16079.999999999998,
+          "timestampMs": 16000,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " left",
+          "startMs": 16320,
+          "endMs": 16480,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 16560,
+          "endMs": 16600,
+          "timestampMs": 16580,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16640,
+          "endMs": 16720,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " filter",
+          "startMs": 16840,
+          "endMs": 16960,
+          "timestampMs": 16900,
+          "confidence": null
+        },
+        {
+          "text": " paper.",
+          "startMs": 17040,
+          "endMs": 18000,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 18160,
+          "endMs": 18320,
+          "timestampMs": 18240,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 18400,
+          "endMs": 18480,
+          "timestampMs": 18440,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 18560,
+          "endMs": 18880,
+          "timestampMs": 18720,
+          "confidence": null
+        },
+        {
+          "text": " well",
+          "startMs": 19040,
+          "endMs": 19200,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 19280,
+          "endMs": 19440,
+          "timestampMs": 19360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19520,
+          "endMs": 19600,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " hundred",
+          "startMs": 19640,
+          "endMs": 19840,
+          "timestampMs": 19740,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 19920,
+          "endMs": 20080,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " cent",
+          "startMs": 20200,
+          "endMs": 20320,
+          "timestampMs": 20260,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 20400,
+          "endMs": 20560,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " normal,",
+          "startMs": 20640,
+          "endMs": 21280,
+          "timestampMs": 20960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 21480,
+          "endMs": 21520,
+          "timestampMs": 21500,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 21600,
+          "endMs": 21680,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " factory,",
+          "startMs": 21920,
+          "endMs": 22480,
+          "timestampMs": 22200,
+          "confidence": null
+        },
+        {
+          "text": " every",
+          "startMs": 22560,
+          "endMs": 22880,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " lost",
+          "startMs": 22960,
+          "endMs": 23200,
+          "timestampMs": 23080,
+          "confidence": null
+        },
+        {
+          "text": " gram",
+          "startMs": 23280,
+          "endMs": 23680,
+          "timestampMs": 23480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 23760,
+          "endMs": 23920,
+          "timestampMs": 23840,
+          "confidence": null
+        },
+        {
+          "text": " lost",
+          "startMs": 24000,
+          "endMs": 24240,
+          "timestampMs": 24120,
+          "confidence": null
+        },
+        {
+          "text": " money.",
+          "startMs": 24320,
+          "endMs": 24800,
+          "timestampMs": 24560,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "purity",
+      "type": "concept",
+      "durationInFrames": 1097,
+      "voiceover": {
+        "text": "A medicine has to be pure, and leftover salicylic acid can irritate the stomach. So the crude crystals are dissolved in a little hot solvent and cooled. The aspirin crystallises out, and most impurities stay dissolved. That's called recrystallising. To check, add iron three chloride. Salicylic acid still has its free O H on the ring, so it turns the solution violet. Pure aspirin doesn't. Here's the trade-off: each recrystallisation makes it purer, but loses more product, so the yield falls.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/purity.70a80a4596ec.mp3",
+        "startFrame": 0,
+        "endFrame": 1037
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "A",
+          "startMs": 0,
+          "endMs": 80,
+          "timestampMs": 40,
+          "confidence": null
+        },
+        {
+          "text": " medicine",
+          "startMs": 160,
+          "endMs": 640,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 760,
+          "endMs": 880,
+          "timestampMs": 820,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 920,
+          "endMs": 960,
+          "timestampMs": 940,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 1040,
+          "endMs": 1200,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " pure,",
+          "startMs": 1440,
+          "endMs": 1920,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 2040,
+          "endMs": 2160,
+          "timestampMs": 2100,
+          "confidence": null
+        },
+        {
+          "text": " leftover",
+          "startMs": 2240,
+          "endMs": 2640,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " salicylic",
+          "startMs": 2720,
+          "endMs": 3280,
+          "timestampMs": 3000,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 3360,
+          "endMs": 3680,
+          "timestampMs": 3520,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 3760,
+          "endMs": 4000,
+          "timestampMs": 3880,
+          "confidence": null
+        },
+        {
+          "text": " irritate",
+          "startMs": 4040,
+          "endMs": 4480,
+          "timestampMs": 4260,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4520,
+          "endMs": 4560,
+          "timestampMs": 4540,
+          "confidence": null
+        },
+        {
+          "text": " stomach.",
+          "startMs": 4640,
+          "endMs": 5600,
+          "timestampMs": 5120,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 5680,
+          "endMs": 5760,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " crude",
+          "startMs": 6000,
+          "endMs": 6240,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " crystals",
+          "startMs": 6320,
+          "endMs": 6800,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " dissolved",
+          "startMs": 7040,
+          "endMs": 7440,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 7480,
+          "endMs": 7520,
+          "timestampMs": 7500,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7600,
+          "endMs": 7680,
+          "timestampMs": 7640,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " hot",
+          "startMs": 8000,
+          "endMs": 8160,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " solvent",
+          "startMs": 8240,
+          "endMs": 8720,
+          "timestampMs": 8480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 8800,
+          "endMs": 8960,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " cooled.",
+          "startMs": 9040,
+          "endMs": 10000,
+          "timestampMs": 9520,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 10080,
+          "endMs": 10160,
+          "timestampMs": 10120,
+          "confidence": null
+        },
+        {
+          "text": " aspirin",
+          "startMs": 10280,
+          "endMs": 10640,
+          "timestampMs": 10460,
+          "confidence": null
+        },
+        {
+          "text": " crystallises",
+          "startMs": 10680,
+          "endMs": 11360,
+          "timestampMs": 11020,
+          "confidence": null
+        },
+        {
+          "text": " out,",
+          "startMs": 11440,
+          "endMs": 11920,
+          "timestampMs": 11680,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12000,
+          "endMs": 12080,
+          "timestampMs": 12040,
+          "confidence": null
+        },
+        {
+          "text": " most",
+          "startMs": 12200,
+          "endMs": 12320,
+          "timestampMs": 12260,
+          "confidence": null
+        },
+        {
+          "text": " impurities",
+          "startMs": 12400,
+          "endMs": 12960,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " stay",
+          "startMs": 13080,
+          "endMs": 13200,
+          "timestampMs": 13140,
+          "confidence": null
+        },
+        {
+          "text": " dissolved.",
+          "startMs": 13240,
+          "endMs": 14240,
+          "timestampMs": 13740,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 14320,
+          "endMs": 14480,
+          "timestampMs": 14400,
+          "confidence": null
+        },
+        {
+          "text": " called",
+          "startMs": 14600,
+          "endMs": 14720,
+          "timestampMs": 14660,
+          "confidence": null
+        },
+        {
+          "text": " recrystallising.",
+          "startMs": 14960,
+          "endMs": 16640,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " To",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " check,",
+          "startMs": 16960,
+          "endMs": 17440,
+          "timestampMs": 17200,
+          "confidence": null
+        },
+        {
+          "text": " add",
+          "startMs": 17520,
+          "endMs": 17760,
+          "timestampMs": 17640,
+          "confidence": null
+        },
+        {
+          "text": " iron",
+          "startMs": 17840,
+          "endMs": 18080,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " three",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " chloride.",
+          "startMs": 18560,
+          "endMs": 19680,
+          "timestampMs": 19120,
+          "confidence": null
+        },
+        {
+          "text": " Salicylic",
+          "startMs": 19760,
+          "endMs": 20240,
+          "timestampMs": 20000,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 20320,
+          "endMs": 20640,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " still",
+          "startMs": 20840,
+          "endMs": 21040,
+          "timestampMs": 20940,
+          "confidence": null
+        },
+        {
+          "text": " has",
+          "startMs": 21120,
+          "endMs": 21200,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 21320,
+          "endMs": 21440,
+          "timestampMs": 21380,
+          "confidence": null
+        },
+        {
+          "text": " free",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " O",
+          "startMs": 21840,
+          "endMs": 22000,
+          "timestampMs": 21920,
+          "confidence": null
+        },
+        {
+          "text": " H",
+          "startMs": 22120,
+          "endMs": 22240,
+          "timestampMs": 22180,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 22320,
+          "endMs": 22400,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22440,
+          "endMs": 22480,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " ring,",
+          "startMs": 22560,
+          "endMs": 23120,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 23200,
+          "endMs": 23280,
+          "timestampMs": 23240,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 23360,
+          "endMs": 23440,
+          "timestampMs": 23400,
+          "confidence": null
+        },
+        {
+          "text": " turns",
+          "startMs": 23560,
+          "endMs": 23760,
+          "timestampMs": 23660,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 23800,
+          "endMs": 23840,
+          "timestampMs": 23820,
+          "confidence": null
+        },
+        {
+          "text": " solution",
+          "startMs": 23920,
+          "endMs": 24400,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " violet.",
+          "startMs": 24480,
+          "endMs": 25440,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " Pure",
+          "startMs": 25600,
+          "endMs": 25760,
+          "timestampMs": 25680,
+          "confidence": null
+        },
+        {
+          "text": " aspirin",
+          "startMs": 25840,
+          "endMs": 26240,
+          "timestampMs": 26040,
+          "confidence": null
+        },
+        {
+          "text": " doesn't.",
+          "startMs": 26320,
+          "endMs": 27360,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " Here's",
+          "startMs": 27440,
+          "endMs": 27600,
+          "timestampMs": 27520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27680,
+          "endMs": 27760,
+          "timestampMs": 27720,
+          "confidence": null
+        },
+        {
+          "text": " trade-off:",
+          "startMs": 27880,
+          "endMs": 28800,
+          "timestampMs": 28340,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 28880,
+          "endMs": 29120,
+          "timestampMs": 29000,
+          "confidence": null
+        },
+        {
+          "text": " recrystallisation",
+          "startMs": 29240,
+          "endMs": 30240,
+          "timestampMs": 29740,
+          "confidence": null
+        },
+        {
+          "text": " makes",
+          "startMs": 30360,
+          "endMs": 30480,
+          "timestampMs": 30420,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 30560,
+          "endMs": 30640,
+          "timestampMs": 30600,
+          "confidence": null
+        },
+        {
+          "text": " purer,",
+          "startMs": 30680,
+          "endMs": 31400,
+          "timestampMs": 31040,
+          "confidence": null
+        },
+        {
+          "text": " but",
+          "startMs": 31440,
+          "endMs": 31600,
+          "timestampMs": 31520,
+          "confidence": null
+        },
+        {
+          "text": " loses",
+          "startMs": 31680,
+          "endMs": 32080,
+          "timestampMs": 31880,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 32200.000000000004,
+          "endMs": 32320,
+          "timestampMs": 32260,
+          "confidence": null
+        },
+        {
+          "text": " product,",
+          "startMs": 32560.000000000004,
+          "endMs": 33040,
+          "timestampMs": 32800,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 33120,
+          "endMs": 33200,
+          "timestampMs": 33160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 33280,
+          "endMs": 33440,
+          "timestampMs": 33360,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 33640,
+          "endMs": 33840,
+          "timestampMs": 33740,
+          "confidence": null
+        },
+        {
+          "text": " falls.",
+          "startMs": 33920,
+          "endMs": 34560,
+          "timestampMs": 34240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "safety-waste",
+      "type": "concept",
+      "durationInFrames": 1016,
+      "voiceover": {
+        "text": "Then safety and waste. Ethanoic anhydride is corrosive and its vapour irritates the eyes and lungs, and the acid catalyst is corrosive too. So the work goes in a fume cupboard, with gloves and eye protection. The by-product, ethanoic acid, doesn't have to be waste. A factory can recover it and turn it back into anhydride. Used solvents and leftover liquids go into labelled waste containers, not down the sink. Less waste means less to treat, and less to pay for.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/safety-waste.296be67f3c66.mp3",
+        "startFrame": 0,
+        "endFrame": 956
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Then",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " safety",
+          "startMs": 560,
+          "endMs": 1040,
+          "timestampMs": 800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1120,
+          "endMs": 1200,
+          "timestampMs": 1160,
+          "confidence": null
+        },
+        {
+          "text": " waste.",
+          "startMs": 1360,
+          "endMs": 2080,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " Ethanoic",
+          "startMs": 2320,
+          "endMs": 2880,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 3000,
+          "endMs": 3680,
+          "timestampMs": 3340,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 3760,
+          "endMs": 3840,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " corrosive",
+          "startMs": 3920,
+          "endMs": 4640,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 4880,
+          "endMs": 4960,
+          "timestampMs": 4920,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 5040,
+          "endMs": 5120,
+          "timestampMs": 5080,
+          "confidence": null
+        },
+        {
+          "text": " vapour",
+          "startMs": 5200,
+          "endMs": 5520,
+          "timestampMs": 5360,
+          "confidence": null
+        },
+        {
+          "text": " irritates",
+          "startMs": 5680,
+          "endMs": 6160,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6240,
+          "endMs": 6320,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " eyes",
+          "startMs": 6400,
+          "endMs": 6640,
+          "timestampMs": 6520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " lungs,",
+          "startMs": 6880,
+          "endMs": 7600,
+          "timestampMs": 7240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7640,
+          "endMs": 7680,
+          "timestampMs": 7660,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7760,
+          "endMs": 7840,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 7920,
+          "endMs": 8240,
+          "timestampMs": 8080,
+          "confidence": null
+        },
+        {
+          "text": " catalyst",
+          "startMs": 8320,
+          "endMs": 8800,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 8880,
+          "endMs": 8960,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " corrosive",
+          "startMs": 9040,
+          "endMs": 9440,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " too.",
+          "startMs": 9520,
+          "endMs": 9920,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 10600,
+          "endMs": 10640,
+          "timestampMs": 10620,
+          "confidence": null
+        },
+        {
+          "text": " work",
+          "startMs": 10720,
+          "endMs": 10960,
+          "timestampMs": 10840,
+          "confidence": null
+        },
+        {
+          "text": " goes",
+          "startMs": 11040,
+          "endMs": 11200,
+          "timestampMs": 11120,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 11240,
+          "endMs": 11280,
+          "timestampMs": 11260,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 11360,
+          "endMs": 11440,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " fume",
+          "startMs": 11520,
+          "endMs": 11760,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " cupboard,",
+          "startMs": 11840,
+          "endMs": 12320,
+          "timestampMs": 12080,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " gloves",
+          "startMs": 12560,
+          "endMs": 12960,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 13040,
+          "endMs": 13200,
+          "timestampMs": 13120,
+          "confidence": null
+        },
+        {
+          "text": " eye",
+          "startMs": 13280,
+          "endMs": 13440,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " protection.",
+          "startMs": 13520,
+          "endMs": 14280,
+          "timestampMs": 13900,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 14560,
+          "endMs": 14640,
+          "timestampMs": 14600,
+          "confidence": null
+        },
+        {
+          "text": " by-product,",
+          "startMs": 14760,
+          "endMs": 15520,
+          "timestampMs": 15140,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 15600,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15840,
+          "confidence": null
+        },
+        {
+          "text": " acid,",
+          "startMs": 16160,
+          "endMs": 16720,
+          "timestampMs": 16440,
+          "confidence": null
+        },
+        {
+          "text": " doesn't",
+          "startMs": 16840,
+          "endMs": 17120,
+          "timestampMs": 16980,
+          "confidence": null
+        },
+        {
+          "text": " have",
+          "startMs": 17240,
+          "endMs": 17360,
+          "timestampMs": 17300,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 17440,
+          "endMs": 17520,
+          "timestampMs": 17480,
+          "confidence": null
+        },
+        {
+          "text": " be",
+          "startMs": 17560,
+          "endMs": 17600,
+          "timestampMs": 17580,
+          "confidence": null
+        },
+        {
+          "text": " waste.",
+          "startMs": 17680,
+          "endMs": 18160,
+          "timestampMs": 17920,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 18640,
+          "endMs": 18720,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " factory",
+          "startMs": 18800,
+          "endMs": 19120,
+          "timestampMs": 18960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 19200,
+          "endMs": 19280,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " recover",
+          "startMs": 19480,
+          "endMs": 19680,
+          "timestampMs": 19580,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 20080,
+          "endMs": 20160,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " turn",
+          "startMs": 20240,
+          "endMs": 20320,
+          "timestampMs": 20280,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 20400,
+          "endMs": 20560,
+          "timestampMs": 20480,
+          "confidence": null
+        },
+        {
+          "text": " back",
+          "startMs": 20680,
+          "endMs": 20800,
+          "timestampMs": 20740,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 20920,
+          "endMs": 21040,
+          "timestampMs": 20980,
+          "confidence": null
+        },
+        {
+          "text": " anhydride.",
+          "startMs": 21160,
+          "endMs": 22120,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " Used",
+          "startMs": 22400,
+          "endMs": 22640,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " solvents",
+          "startMs": 22720,
+          "endMs": 23200,
+          "timestampMs": 22960,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 23240,
+          "endMs": 23280,
+          "timestampMs": 23260,
+          "confidence": null
+        },
+        {
+          "text": " leftover",
+          "startMs": 23360,
+          "endMs": 23760,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " liquids",
+          "startMs": 23840,
+          "endMs": 24320,
+          "timestampMs": 24080,
+          "confidence": null
+        },
+        {
+          "text": " go",
+          "startMs": 24400,
+          "endMs": 24480,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " into",
+          "startMs": 24600,
+          "endMs": 24720,
+          "timestampMs": 24660,
+          "confidence": null
+        },
+        {
+          "text": " labelled",
+          "startMs": 24800,
+          "endMs": 25280,
+          "timestampMs": 25040,
+          "confidence": null
+        },
+        {
+          "text": " waste",
+          "startMs": 25360,
+          "endMs": 25600,
+          "timestampMs": 25480,
+          "confidence": null
+        },
+        {
+          "text": " containers,",
+          "startMs": 25680,
+          "endMs": 26560,
+          "timestampMs": 26120,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 26640,
+          "endMs": 26960,
+          "timestampMs": 26800,
+          "confidence": null
+        },
+        {
+          "text": " down",
+          "startMs": 27040,
+          "endMs": 27200,
+          "timestampMs": 27120,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 27280,
+          "endMs": 27360,
+          "timestampMs": 27320,
+          "confidence": null
+        },
+        {
+          "text": " sink.",
+          "startMs": 27440,
+          "endMs": 28040,
+          "timestampMs": 27740,
+          "confidence": null
+        },
+        {
+          "text": " Less",
+          "startMs": 28320,
+          "endMs": 28560,
+          "timestampMs": 28440,
+          "confidence": null
+        },
+        {
+          "text": " waste",
+          "startMs": 28640,
+          "endMs": 29040,
+          "timestampMs": 28840,
+          "confidence": null
+        },
+        {
+          "text": " means",
+          "startMs": 29120,
+          "endMs": 29360,
+          "timestampMs": 29240,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 29440,
+          "endMs": 29600,
+          "timestampMs": 29520,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 29640,
+          "endMs": 29680,
+          "timestampMs": 29660,
+          "confidence": null
+        },
+        {
+          "text": " treat,",
+          "startMs": 29840,
+          "endMs": 30400,
+          "timestampMs": 30120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 30560,
+          "endMs": 30720,
+          "timestampMs": 30640,
+          "confidence": null
+        },
+        {
+          "text": " less",
+          "startMs": 30880,
+          "endMs": 31040,
+          "timestampMs": 30960,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 31080,
+          "endMs": 31120,
+          "timestampMs": 31100,
+          "confidence": null
+        },
+        {
+          "text": " pay",
+          "startMs": 31200,
+          "endMs": 31360,
+          "timestampMs": 31280,
+          "confidence": null
+        },
+        {
+          "text": " for.",
+          "startMs": 31440,
+          "endMs": 31840,
+          "timestampMs": 31640,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "environment-society-cost",
+      "type": "concept",
+      "durationInFrames": 932,
+      "voiceover": {
+        "text": "Finally, step back. Environmentally, the starting materials come from crude oil, and heating, solvents and purification all use energy. Socially, aspirin is on the World Health Organization's list of essential medicines, so a cheap, reliable supply matters for people's health. Economically, each tablet sells for very little, so the route needs a high yield from cheap reagents, with little waste. Every factor pulls on the others.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/environment-society-cost.8e6fd09d04d3.mp3",
+        "startFrame": 0,
+        "endFrame": 872
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Finally,",
+          "startMs": 0,
+          "endMs": 480,
+          "timestampMs": 240,
+          "confidence": null
+        },
+        {
+          "text": " step",
+          "startMs": 880,
+          "endMs": 1200,
+          "timestampMs": 1040,
+          "confidence": null
+        },
+        {
+          "text": " back.",
+          "startMs": 1360,
+          "endMs": 1760,
+          "timestampMs": 1560,
+          "confidence": null
+        },
+        {
+          "text": " Environmentally,",
+          "startMs": 2320,
+          "endMs": 3520,
+          "timestampMs": 2920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 3560,
+          "endMs": 3600,
+          "timestampMs": 3580,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 3680,
+          "endMs": 4000,
+          "timestampMs": 3840,
+          "confidence": null
+        },
+        {
+          "text": " materials",
+          "startMs": 4080,
+          "endMs": 4560,
+          "timestampMs": 4320,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 4640,
+          "endMs": 4800,
+          "timestampMs": 4720,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 4880,
+          "endMs": 5040,
+          "timestampMs": 4960,
+          "confidence": null
+        },
+        {
+          "text": " crude",
+          "startMs": 5120,
+          "endMs": 5440,
+          "timestampMs": 5280,
+          "confidence": null
+        },
+        {
+          "text": " oil,",
+          "startMs": 5520,
+          "endMs": 6000,
+          "timestampMs": 5760,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " heating,",
+          "startMs": 6240,
+          "endMs": 6880,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " solvents",
+          "startMs": 7000,
+          "endMs": 7360,
+          "timestampMs": 7180,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " purification",
+          "startMs": 7640,
+          "endMs": 8400,
+          "timestampMs": 8020,
+          "confidence": null
+        },
+        {
+          "text": " all",
+          "startMs": 8640,
+          "endMs": 8880,
+          "timestampMs": 8760,
+          "confidence": null
+        },
+        {
+          "text": " use",
+          "startMs": 8960,
+          "endMs": 9120,
+          "timestampMs": 9040,
+          "confidence": null
+        },
+        {
+          "text": " energy.",
+          "startMs": 9280,
+          "endMs": 10000,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " Socially,",
+          "startMs": 10320,
+          "endMs": 11200,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " aspirin",
+          "startMs": 11280,
+          "endMs": 11680,
+          "timestampMs": 11480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 11720,
+          "endMs": 11760,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 11840,
+          "endMs": 11920,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11960,
+          "endMs": 12000,
+          "timestampMs": 11980,
+          "confidence": null
+        },
+        {
+          "text": " World",
+          "startMs": 12080,
+          "endMs": 12320,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " Health",
+          "startMs": 12400,
+          "endMs": 12560,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " Organization's",
+          "startMs": 12640,
+          "endMs": 13440,
+          "timestampMs": 13040,
+          "confidence": null
+        },
+        {
+          "text": " list",
+          "startMs": 13520,
+          "endMs": 13680,
+          "timestampMs": 13600,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 13760,
+          "endMs": 13800,
+          "timestampMs": 13780,
+          "confidence": null
+        },
+        {
+          "text": " essential",
+          "startMs": 13840,
+          "endMs": 14320,
+          "timestampMs": 14080,
+          "confidence": null
+        },
+        {
+          "text": " medicines,",
+          "startMs": 14400,
+          "endMs": 15280,
+          "timestampMs": 14840,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 15360,
+          "endMs": 15440,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 15520,
+          "endMs": 15600,
+          "timestampMs": 15560,
+          "confidence": null
+        },
+        {
+          "text": " cheap,",
+          "startMs": 15680,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15880,
+          "confidence": null
+        },
+        {
+          "text": " reliable",
+          "startMs": 16160,
+          "endMs": 16640,
+          "timestampMs": 16400,
+          "confidence": null
+        },
+        {
+          "text": " supply",
+          "startMs": 16720,
+          "endMs": 17200,
+          "timestampMs": 16960,
+          "confidence": null
+        },
+        {
+          "text": " matters",
+          "startMs": 17360,
+          "endMs": 17680,
+          "timestampMs": 17520,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 17760,
+          "endMs": 17840,
+          "timestampMs": 17800,
+          "confidence": null
+        },
+        {
+          "text": " people's",
+          "startMs": 17920,
+          "endMs": 18240,
+          "timestampMs": 18080,
+          "confidence": null
+        },
+        {
+          "text": " health.",
+          "startMs": 18440,
+          "endMs": 18720,
+          "timestampMs": 18580,
+          "confidence": null
+        },
+        {
+          "text": " Economically,",
+          "startMs": 19200,
+          "endMs": 20240,
+          "timestampMs": 19720,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 20320,
+          "endMs": 20480,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " tablet",
+          "startMs": 20560,
+          "endMs": 20960,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " sells",
+          "startMs": 21000,
+          "endMs": 21280,
+          "timestampMs": 21140,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " very",
+          "startMs": 21520,
+          "endMs": 21760,
+          "timestampMs": 21640,
+          "confidence": null
+        },
+        {
+          "text": " little,",
+          "startMs": 21840,
+          "endMs": 22400,
+          "timestampMs": 22120,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 22480,
+          "endMs": 22560,
+          "timestampMs": 22520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22600,
+          "endMs": 22640,
+          "timestampMs": 22620,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 22720,
+          "endMs": 22960,
+          "timestampMs": 22840,
+          "confidence": null
+        },
+        {
+          "text": " needs",
+          "startMs": 23080,
+          "endMs": 23200,
+          "timestampMs": 23140,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 23280,
+          "endMs": 23360,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 23480,
+          "endMs": 23600,
+          "timestampMs": 23540,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 23760,
+          "endMs": 24000,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 24080,
+          "endMs": 24240,
+          "timestampMs": 24160,
+          "confidence": null
+        },
+        {
+          "text": " cheap",
+          "startMs": 24320,
+          "endMs": 24560,
+          "timestampMs": 24440,
+          "confidence": null
+        },
+        {
+          "text": " reagents,",
+          "startMs": 24640,
+          "endMs": 25280,
+          "timestampMs": 24960,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 25360,
+          "endMs": 25440,
+          "timestampMs": 25400,
+          "confidence": null
+        },
+        {
+          "text": " little",
+          "startMs": 25520,
+          "endMs": 25760,
+          "timestampMs": 25640,
+          "confidence": null
+        },
+        {
+          "text": " waste.",
+          "startMs": 25840,
+          "endMs": 26320,
+          "timestampMs": 26080,
+          "confidence": null
+        },
+        {
+          "text": " Every",
+          "startMs": 26800,
+          "endMs": 27120,
+          "timestampMs": 26960,
+          "confidence": null
+        },
+        {
+          "text": " factor",
+          "startMs": 27280,
+          "endMs": 27680,
+          "timestampMs": 27480,
+          "confidence": null
+        },
+        {
+          "text": " pulls",
+          "startMs": 27840,
+          "endMs": 28160,
+          "timestampMs": 28000,
+          "confidence": null
+        },
+        {
+          "text": " on",
+          "startMs": 28200,
+          "endMs": 28240,
+          "timestampMs": 28220,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 28320,
+          "endMs": 28400,
+          "timestampMs": 28360,
+          "confidence": null
+        },
+        {
+          "text": " others.",
+          "startMs": 28600,
+          "endMs": 29040,
+          "timestampMs": 28820,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "judge",
+      "type": "concept",
+      "durationInFrames": 996,
+      "voiceover": {
+        "text": "So how do you judge it? As in the extended responses video, decide the verdict first, then give each factor a paragraph with its evidence. Here's a judgement with a condition. The anhydride route is a sound design for a cheap, essential medicine, because it gives a high yield quickly under mild conditions, provided the ethanoic acid is recovered and the product is purified to medicine standard. Its weakness is its oil-based starting materials. That's an evaluation, not a list.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/judge.362a651c4b40.mp3",
+        "startFrame": 0,
+        "endFrame": 936
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 160,
+          "timestampMs": 80,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 320,
+          "endMs": 480,
+          "timestampMs": 400,
+          "confidence": null
+        },
+        {
+          "text": " do",
+          "startMs": 560,
+          "endMs": 600,
+          "timestampMs": 580,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 640,
+          "endMs": 800,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " judge",
+          "startMs": 920,
+          "endMs": 1040,
+          "timestampMs": 980,
+          "confidence": null
+        },
+        {
+          "text": " it?",
+          "startMs": 1120,
+          "endMs": 1640,
+          "timestampMs": 1380,
+          "confidence": null
+        },
+        {
+          "text": " As",
+          "startMs": 1920,
+          "endMs": 2080,
+          "timestampMs": 2000,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 2120,
+          "endMs": 2160,
+          "timestampMs": 2140,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2240,
+          "endMs": 2280,
+          "timestampMs": 2260,
+          "confidence": null
+        },
+        {
+          "text": " extended",
+          "startMs": 2320,
+          "endMs": 2800,
+          "timestampMs": 2560,
+          "confidence": null
+        },
+        {
+          "text": " responses",
+          "startMs": 3080,
+          "endMs": 3360,
+          "timestampMs": 3220,
+          "confidence": null
+        },
+        {
+          "text": " video,",
+          "startMs": 3440,
+          "endMs": 4080,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " decide",
+          "startMs": 4200,
+          "endMs": 4560,
+          "timestampMs": 4380,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 4600,
+          "endMs": 4640,
+          "timestampMs": 4620,
+          "confidence": null
+        },
+        {
+          "text": " verdict",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " first,",
+          "startMs": 5200,
+          "endMs": 6000,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 6080,
+          "endMs": 6400,
+          "timestampMs": 6240,
+          "confidence": null
+        },
+        {
+          "text": " give",
+          "startMs": 6480,
+          "endMs": 6720,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 6800,
+          "endMs": 6960,
+          "timestampMs": 6880,
+          "confidence": null
+        },
+        {
+          "text": " factor",
+          "startMs": 7040,
+          "endMs": 7360,
+          "timestampMs": 7200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 7400,
+          "endMs": 7440,
+          "timestampMs": 7420,
+          "confidence": null
+        },
+        {
+          "text": " paragraph",
+          "startMs": 7520,
+          "endMs": 8080,
+          "timestampMs": 7800,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 8160,
+          "endMs": 8240,
+          "timestampMs": 8200,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 8320,
+          "endMs": 8400,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " evidence.",
+          "startMs": 8480,
+          "endMs": 9280,
+          "timestampMs": 8880,
+          "confidence": null
+        },
+        {
+          "text": " Here's",
+          "startMs": 9600,
+          "endMs": 9800,
+          "timestampMs": 9700,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 9840,
+          "endMs": 9880,
+          "timestampMs": 9860,
+          "confidence": null
+        },
+        {
+          "text": " judgement",
+          "startMs": 9920,
+          "endMs": 10400,
+          "timestampMs": 10160,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 10480,
+          "endMs": 10560,
+          "timestampMs": 10520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 10600,
+          "endMs": 10640,
+          "timestampMs": 10620,
+          "confidence": null
+        },
+        {
+          "text": " condition.",
+          "startMs": 10720,
+          "endMs": 11280,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 11840,
+          "endMs": 11880,
+          "timestampMs": 11860,
+          "confidence": null
+        },
+        {
+          "text": " anhydride",
+          "startMs": 11920,
+          "endMs": 12640,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 12800,
+          "endMs": 12960,
+          "timestampMs": 12880,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 13000,
+          "endMs": 13040,
+          "timestampMs": 13020,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 13120,
+          "endMs": 13280,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " sound",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " design",
+          "startMs": 13840,
+          "endMs": 14080,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 14320,
+          "endMs": 14400,
+          "timestampMs": 14360,
+          "confidence": null
+        },
+        {
+          "text": " cheap,",
+          "startMs": 14480,
+          "endMs": 14800,
+          "timestampMs": 14640,
+          "confidence": null
+        },
+        {
+          "text": " essential",
+          "startMs": 15080,
+          "endMs": 15360,
+          "timestampMs": 15220,
+          "confidence": null
+        },
+        {
+          "text": " medicine,",
+          "startMs": 15440,
+          "endMs": 16160,
+          "timestampMs": 15800,
+          "confidence": null
+        },
+        {
+          "text": " because",
+          "startMs": 16239.999999999998,
+          "endMs": 16400,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 16480,
+          "endMs": 16560,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " gives",
+          "startMs": 16613,
+          "endMs": 16720,
+          "timestampMs": 16666.5,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16800,
+          "endMs": 16880,
+          "timestampMs": 16840,
+          "confidence": null
+        },
+        {
+          "text": " high",
+          "startMs": 16960,
+          "endMs": 17120,
+          "timestampMs": 17040,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 17200,
+          "endMs": 17520,
+          "timestampMs": 17360,
+          "confidence": null
+        },
+        {
+          "text": " quickly",
+          "startMs": 17600,
+          "endMs": 18160,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " under",
+          "startMs": 18280,
+          "endMs": 18400,
+          "timestampMs": 18340,
+          "confidence": null
+        },
+        {
+          "text": " mild",
+          "startMs": 18480,
+          "endMs": 18720,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " conditions,",
+          "startMs": 18800,
+          "endMs": 19680,
+          "timestampMs": 19240,
+          "confidence": null
+        },
+        {
+          "text": " provided",
+          "startMs": 19760,
+          "endMs": 20320,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " ethanoic",
+          "startMs": 20560,
+          "endMs": 20960,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " acid",
+          "startMs": 21040,
+          "endMs": 21280,
+          "timestampMs": 21160,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21320,
+          "endMs": 21360,
+          "timestampMs": 21340,
+          "confidence": null
+        },
+        {
+          "text": " recovered",
+          "startMs": 21440,
+          "endMs": 22160,
+          "timestampMs": 21800,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22240,
+          "endMs": 22320,
+          "timestampMs": 22280,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22400,
+          "endMs": 22480,
+          "timestampMs": 22440,
+          "confidence": null
+        },
+        {
+          "text": " product",
+          "startMs": 22640,
+          "endMs": 22800,
+          "timestampMs": 22720,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 22880,
+          "endMs": 22960,
+          "timestampMs": 22920,
+          "confidence": null
+        },
+        {
+          "text": " purified",
+          "startMs": 23040,
+          "endMs": 23600,
+          "timestampMs": 23320,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 23680,
+          "endMs": 23760,
+          "timestampMs": 23720,
+          "confidence": null
+        },
+        {
+          "text": " medicine",
+          "startMs": 23920,
+          "endMs": 24080,
+          "timestampMs": 24000,
+          "confidence": null
+        },
+        {
+          "text": " standard.",
+          "startMs": 24160,
+          "endMs": 25200,
+          "timestampMs": 24680,
+          "confidence": null
+        },
+        {
+          "text": " Its",
+          "startMs": 25280,
+          "endMs": 25360,
+          "timestampMs": 25320,
+          "confidence": null
+        },
+        {
+          "text": " weakness",
+          "startMs": 25440,
+          "endMs": 26080,
+          "timestampMs": 25760,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 26160,
+          "endMs": 26240,
+          "timestampMs": 26200,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 26360,
+          "endMs": 26480,
+          "timestampMs": 26420,
+          "confidence": null
+        },
+        {
+          "text": " oil-based",
+          "startMs": 26560,
+          "endMs": 27120,
+          "timestampMs": 26840,
+          "confidence": null
+        },
+        {
+          "text": " starting",
+          "startMs": 27200,
+          "endMs": 27520,
+          "timestampMs": 27360,
+          "confidence": null
+        },
+        {
+          "text": " materials.",
+          "startMs": 27600,
+          "endMs": 28880,
+          "timestampMs": 28240,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 28960,
+          "endMs": 29120,
+          "timestampMs": 29040,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 29160,
+          "endMs": 29200,
+          "timestampMs": 29180,
+          "confidence": null
+        },
+        {
+          "text": " evaluation,",
+          "startMs": 29280,
+          "endMs": 30320,
+          "timestampMs": 29800,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 30400,
+          "endMs": 30480,
+          "timestampMs": 30440,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 30560,
+          "endMs": 30600,
+          "timestampMs": 30580,
+          "confidence": null
+        },
+        {
+          "text": " list.",
+          "startMs": 30640,
+          "endMs": 31200,
+          "timestampMs": 30920,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 454,
+      "voiceover": {
+        "text": "One line to keep: yield tells you how much product you collected, not how good the route is. So when you evaluate a synthesis, start with the reagents, and end with the people and the cost.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/memory-aid.f57b3b7a08c4.mp3",
+        "startFrame": 0,
+        "endFrame": 394
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "One",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 320,
+          "endMs": 560,
+          "timestampMs": 440,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 600,
+          "endMs": 640,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " keep:",
+          "startMs": 720,
+          "endMs": 1680,
+          "timestampMs": 1200,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 1840,
+          "endMs": 2240,
+          "timestampMs": 2040,
+          "confidence": null
+        },
+        {
+          "text": " tells",
+          "startMs": 2320,
+          "endMs": 2560,
+          "timestampMs": 2440,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 2800,
+          "endMs": 2880,
+          "timestampMs": 2840,
+          "confidence": null
+        },
+        {
+          "text": " much",
+          "startMs": 2960,
+          "endMs": 3120,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " product",
+          "startMs": 3200,
+          "endMs": 3600,
+          "timestampMs": 3400,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " collected,",
+          "startMs": 3840,
+          "endMs": 4640,
+          "timestampMs": 4240,
+          "confidence": null
+        },
+        {
+          "text": " not",
+          "startMs": 4720,
+          "endMs": 5040,
+          "timestampMs": 4880,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 5120,
+          "endMs": 5280,
+          "timestampMs": 5200,
+          "confidence": null
+        },
+        {
+          "text": " good",
+          "startMs": 5360,
+          "endMs": 5520,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5560,
+          "endMs": 5600,
+          "timestampMs": 5580,
+          "confidence": null
+        },
+        {
+          "text": " route",
+          "startMs": 5680,
+          "endMs": 5920,
+          "timestampMs": 5800,
+          "confidence": null
+        },
+        {
+          "text": " is.",
+          "startMs": 6000,
+          "endMs": 6560,
+          "timestampMs": 6280,
+          "confidence": null
+        },
+        {
+          "text": " So",
+          "startMs": 6880,
+          "endMs": 7040,
+          "timestampMs": 6960,
+          "confidence": null
+        },
+        {
+          "text": " when",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 7440,
+          "endMs": 7520,
+          "timestampMs": 7480,
+          "confidence": null
+        },
+        {
+          "text": " evaluate",
+          "startMs": 7800,
+          "endMs": 8080,
+          "timestampMs": 7940,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 8119.999999999999,
+          "endMs": 8160,
+          "timestampMs": 8140,
+          "confidence": null
+        },
+        {
+          "text": " synthesis,",
+          "startMs": 8240,
+          "endMs": 9200,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " start",
+          "startMs": 9280,
+          "endMs": 9600,
+          "timestampMs": 9440,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 9680,
+          "endMs": 9760,
+          "timestampMs": 9720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9800,
+          "endMs": 9840,
+          "timestampMs": 9820,
+          "confidence": null
+        },
+        {
+          "text": " reagents,",
+          "startMs": 9960,
+          "endMs": 10720,
+          "timestampMs": 10340,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10840,
+          "endMs": 10960,
+          "timestampMs": 10900,
+          "confidence": null
+        },
+        {
+          "text": " end",
+          "startMs": 11120,
+          "endMs": 11360,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 11440,
+          "endMs": 11600,
+          "timestampMs": 11520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11680,
+          "endMs": 11760,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " people",
+          "startMs": 12000,
+          "endMs": 12240,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12280,
+          "endMs": 12320,
+          "timestampMs": 12300,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 12400,
+          "endMs": 12480,
+          "timestampMs": 12440,
+          "confidence": null
+        },
+        {
+          "text": " cost.",
+          "startMs": 12560,
+          "endMs": 13120,
+          "timestampMs": 12840,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 864,
+      "voiceover": {
+        "text": "Your turn. A biodiesel plant reacts vegetable oil with methanol, and the reaction is reversible. It uses about twice the methanol the equation needs, then recovers the leftover methanol and reuses it. Explain both choices. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-1.8b06eb08e3b9.mp3",
+        "startFrame": 0,
+        "endFrame": 528
+      },
+      "responseHold": {
+        "startFrame": 540,
+        "endFrame": 840
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Your",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " turn.",
+          "startMs": 320,
+          "endMs": 920,
+          "timestampMs": 620,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 1200,
+          "endMs": 1280,
+          "timestampMs": 1240,
+          "confidence": null
+        },
+        {
+          "text": " biodiesel",
+          "startMs": 1360,
+          "endMs": 2000,
+          "timestampMs": 1680,
+          "confidence": null
+        },
+        {
+          "text": " plant",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " reacts",
+          "startMs": 2560,
+          "endMs": 2960,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " vegetable",
+          "startMs": 3040,
+          "endMs": 3440,
+          "timestampMs": 3240,
+          "confidence": null
+        },
+        {
+          "text": " oil",
+          "startMs": 3520,
+          "endMs": 3840,
+          "timestampMs": 3680,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 3920,
+          "endMs": 4000,
+          "timestampMs": 3960,
+          "confidence": null
+        },
+        {
+          "text": " methanol,",
+          "startMs": 4080,
+          "endMs": 4960,
+          "timestampMs": 4520,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 5000,
+          "endMs": 5040,
+          "timestampMs": 5020,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 5120,
+          "endMs": 5160,
+          "timestampMs": 5140,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 5200,
+          "endMs": 5760,
+          "timestampMs": 5480,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 5840,
+          "endMs": 5920,
+          "timestampMs": 5880,
+          "confidence": null
+        },
+        {
+          "text": " reversible.",
+          "startMs": 6000,
+          "endMs": 7200,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " It",
+          "startMs": 7280,
+          "endMs": 7360,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " uses",
+          "startMs": 7440,
+          "endMs": 7680,
+          "timestampMs": 7560,
+          "confidence": null
+        },
+        {
+          "text": " about",
+          "startMs": 7760,
+          "endMs": 8080,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " twice",
+          "startMs": 8160,
+          "endMs": 8560,
+          "timestampMs": 8360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8600,
+          "endMs": 8640,
+          "timestampMs": 8620,
+          "confidence": null
+        },
+        {
+          "text": " methanol",
+          "startMs": 8720,
+          "endMs": 9120,
+          "timestampMs": 8920,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 9200,
+          "endMs": 9280,
+          "timestampMs": 9240,
+          "confidence": null
+        },
+        {
+          "text": " equation",
+          "startMs": 9400,
+          "endMs": 9840,
+          "timestampMs": 9620,
+          "confidence": null
+        },
+        {
+          "text": " needs,",
+          "startMs": 9920,
+          "endMs": 10640,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 10720,
+          "endMs": 10800,
+          "timestampMs": 10760,
+          "confidence": null
+        },
+        {
+          "text": " recovers",
+          "startMs": 10960,
+          "endMs": 11360,
+          "timestampMs": 11160,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11400,
+          "endMs": 11440,
+          "timestampMs": 11420,
+          "confidence": null
+        },
+        {
+          "text": " leftover",
+          "startMs": 11520,
+          "endMs": 11920,
+          "timestampMs": 11720,
+          "confidence": null
+        },
+        {
+          "text": " methanol",
+          "startMs": 12000,
+          "endMs": 12560,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " reuses",
+          "startMs": 12800,
+          "endMs": 13360,
+          "timestampMs": 13080,
+          "confidence": null
+        },
+        {
+          "text": " it.",
+          "startMs": 13440,
+          "endMs": 14160,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " Explain",
+          "startMs": 14280,
+          "endMs": 14640,
+          "timestampMs": 14460,
+          "confidence": null
+        },
+        {
+          "text": " both",
+          "startMs": 14800,
+          "endMs": 15040,
+          "timestampMs": 14920,
+          "confidence": null
+        },
+        {
+          "text": " choices.",
+          "startMs": 15120,
+          "endMs": 16160,
+          "timestampMs": 15640,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 16239.999999999998,
+          "endMs": 16480,
+          "timestampMs": 16360,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 16560,
+          "endMs": 16800,
+          "timestampMs": 16680,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 17040,
+          "endMs": 17600,
+          "timestampMs": 17320,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 840,
+        "responseHoldStart": 540,
+        "pausePrompt": 540
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 754,
+      "voiceover": {
+        "text": "The reaction is an equilibrium, so adding extra methanol, a reactant, shifts it towards the products and converts more of the oil. Methanol costs money, and it's toxic and flammable, so recovering it cuts cost, waste and risk. Saying the excess is mainly there to speed it up is the trap. The main reason is the equilibrium position.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-1.25201427a486.mp3",
+        "startFrame": 0,
+        "endFrame": 694
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "The",
+          "startMs": 0,
+          "endMs": 67,
+          "timestampMs": 33.5,
+          "confidence": null
+        },
+        {
+          "text": " reaction",
+          "startMs": 80,
+          "endMs": 605,
+          "timestampMs": 342.5,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 640,
+          "endMs": 840,
+          "timestampMs": 740,
+          "confidence": null
+        },
+        {
+          "text": " an",
+          "startMs": 880,
+          "endMs": 1000,
+          "timestampMs": 940,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium,",
+          "startMs": 1040,
+          "endMs": 2160,
+          "timestampMs": 1600,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 2240,
+          "endMs": 2480,
+          "timestampMs": 2360,
+          "confidence": null
+        },
+        {
+          "text": " adding",
+          "startMs": 2640,
+          "endMs": 2960,
+          "timestampMs": 2800,
+          "confidence": null
+        },
+        {
+          "text": " extra",
+          "startMs": 3040,
+          "endMs": 3360,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " methanol,",
+          "startMs": 3440,
+          "endMs": 4080,
+          "timestampMs": 3760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 4120,
+          "endMs": 4160,
+          "timestampMs": 4140,
+          "confidence": null
+        },
+        {
+          "text": " reactant,",
+          "startMs": 4240,
+          "endMs": 5120,
+          "timestampMs": 4680,
+          "confidence": null
+        },
+        {
+          "text": " shifts",
+          "startMs": 5200,
+          "endMs": 5480,
+          "timestampMs": 5340,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 5520,
+          "endMs": 5600,
+          "timestampMs": 5560,
+          "confidence": null
+        },
+        {
+          "text": " towards",
+          "startMs": 5680,
+          "endMs": 6000,
+          "timestampMs": 5840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " products",
+          "startMs": 6240,
+          "endMs": 6720,
+          "timestampMs": 6480,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6880,
+          "endMs": 6960,
+          "timestampMs": 6920,
+          "confidence": null
+        },
+        {
+          "text": " converts",
+          "startMs": 7040,
+          "endMs": 7520,
+          "timestampMs": 7280,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 7600,
+          "endMs": 7760,
+          "timestampMs": 7680,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 7800,
+          "endMs": 7840,
+          "timestampMs": 7820,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 7920,
+          "endMs": 8000,
+          "timestampMs": 7960,
+          "confidence": null
+        },
+        {
+          "text": " oil.",
+          "startMs": 8080,
+          "endMs": 8480,
+          "timestampMs": 8280,
+          "confidence": null
+        },
+        {
+          "text": " Methanol",
+          "startMs": 9120,
+          "endMs": 9520,
+          "timestampMs": 9320,
+          "confidence": null
+        },
+        {
+          "text": " costs",
+          "startMs": 9600,
+          "endMs": 9920,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " money,",
+          "startMs": 10000,
+          "endMs": 10560,
+          "timestampMs": 10280,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10680,
+          "endMs": 10800,
+          "timestampMs": 10740,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 10880,
+          "endMs": 11040,
+          "timestampMs": 10960,
+          "confidence": null
+        },
+        {
+          "text": " toxic",
+          "startMs": 11120,
+          "endMs": 11520,
+          "timestampMs": 11320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 11600,
+          "endMs": 11680,
+          "timestampMs": 11640,
+          "confidence": null
+        },
+        {
+          "text": " flammable,",
+          "startMs": 11760,
+          "endMs": 12640,
+          "timestampMs": 12200,
+          "confidence": null
+        },
+        {
+          "text": " so",
+          "startMs": 12720,
+          "endMs": 12800,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " recovering",
+          "startMs": 13040,
+          "endMs": 13360,
+          "timestampMs": 13200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 13440,
+          "endMs": 13520,
+          "timestampMs": 13480,
+          "confidence": null
+        },
+        {
+          "text": " cuts",
+          "startMs": 13680,
+          "endMs": 13920,
+          "timestampMs": 13800,
+          "confidence": null
+        },
+        {
+          "text": " cost,",
+          "startMs": 14000,
+          "endMs": 14560,
+          "timestampMs": 14280,
+          "confidence": null
+        },
+        {
+          "text": " waste",
+          "startMs": 14600,
+          "endMs": 14960,
+          "timestampMs": 14780,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 15040,
+          "endMs": 15200,
+          "timestampMs": 15120,
+          "confidence": null
+        },
+        {
+          "text": " risk.",
+          "startMs": 15280,
+          "endMs": 15760,
+          "timestampMs": 15520,
+          "confidence": null
+        },
+        {
+          "text": " Saying",
+          "startMs": 16400,
+          "endMs": 16640,
+          "timestampMs": 16520,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " excess",
+          "startMs": 16920,
+          "endMs": 17200,
+          "timestampMs": 17060,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 17280,
+          "endMs": 17360,
+          "timestampMs": 17320,
+          "confidence": null
+        },
+        {
+          "text": " mainly",
+          "startMs": 17520,
+          "endMs": 17840,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " there",
+          "startMs": 17920,
+          "endMs": 18080,
+          "timestampMs": 18000,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 18120,
+          "endMs": 18160,
+          "timestampMs": 18140,
+          "confidence": null
+        },
+        {
+          "text": " speed",
+          "startMs": 18240,
+          "endMs": 18480,
+          "timestampMs": 18360,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 18560,
+          "endMs": 18640,
+          "timestampMs": 18600,
+          "confidence": null
+        },
+        {
+          "text": " up",
+          "startMs": 18720,
+          "endMs": 18960,
+          "timestampMs": 18840,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 19120,
+          "endMs": 19280,
+          "timestampMs": 19200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19360,
+          "endMs": 19440,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " trap.",
+          "startMs": 19520,
+          "endMs": 20000,
+          "timestampMs": 19760,
+          "confidence": null
+        },
+        {
+          "text": " The",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " main",
+          "startMs": 20560,
+          "endMs": 20800,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " reason",
+          "startMs": 20880,
+          "endMs": 21280,
+          "timestampMs": 21080,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 21360,
+          "endMs": 21440,
+          "timestampMs": 21400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 21520,
+          "endMs": 21600,
+          "timestampMs": 21560,
+          "confidence": null
+        },
+        {
+          "text": " equilibrium",
+          "startMs": 21680,
+          "endMs": 22320,
+          "timestampMs": 22000,
+          "confidence": null
+        },
+        {
+          "text": " position.",
+          "startMs": 22400,
+          "endMs": 23120,
+          "timestampMs": 22760,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 1016,
+      "voiceover": {
+        "text": "Last one, and it's a long response. A company near sugar-cane farms wants to make fuel ethanol, either by hydrating ethene or by fermenting sugar. Evaluate the two routes. Don't write the whole answer. Plan it: your verdict, then one line for each paragraph. Take a full minute if you like. Pause here to answer.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/attempt-2.bcd838ecda71.mp3",
+        "startFrame": 0,
+        "endFrame": 680
+      },
+      "responseHold": {
+        "startFrame": 692,
+        "endFrame": 992
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Last",
+          "startMs": 0,
+          "endMs": 320,
+          "timestampMs": 160,
+          "confidence": null
+        },
+        {
+          "text": " one,",
+          "startMs": 400,
+          "endMs": 880,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 1040,
+          "endMs": 1200,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " it's",
+          "startMs": 1280,
+          "endMs": 1440,
+          "timestampMs": 1360,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 1480,
+          "endMs": 1520,
+          "timestampMs": 1500,
+          "confidence": null
+        },
+        {
+          "text": " long",
+          "startMs": 1600,
+          "endMs": 1840,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " response.",
+          "startMs": 2160,
+          "endMs": 2800,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " A",
+          "startMs": 3120,
+          "endMs": 3200,
+          "timestampMs": 3160,
+          "confidence": null
+        },
+        {
+          "text": " company",
+          "startMs": 3280,
+          "endMs": 3600,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " near",
+          "startMs": 3680,
+          "endMs": 3920,
+          "timestampMs": 3800,
+          "confidence": null
+        },
+        {
+          "text": " sugar-cane",
+          "startMs": 4000,
+          "endMs": 4560,
+          "timestampMs": 4280,
+          "confidence": null
+        },
+        {
+          "text": " farms",
+          "startMs": 4640,
+          "endMs": 5040,
+          "timestampMs": 4840,
+          "confidence": null
+        },
+        {
+          "text": " wants",
+          "startMs": 5120,
+          "endMs": 5360,
+          "timestampMs": 5240,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 5400,
+          "endMs": 5440,
+          "timestampMs": 5420,
+          "confidence": null
+        },
+        {
+          "text": " make",
+          "startMs": 5520,
+          "endMs": 5680,
+          "timestampMs": 5600,
+          "confidence": null
+        },
+        {
+          "text": " fuel",
+          "startMs": 5760,
+          "endMs": 6080,
+          "timestampMs": 5920,
+          "confidence": null
+        },
+        {
+          "text": " ethanol,",
+          "startMs": 6240,
+          "endMs": 7120,
+          "timestampMs": 6680,
+          "confidence": null
+        },
+        {
+          "text": " either",
+          "startMs": 7200,
+          "endMs": 7440,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 7520,
+          "endMs": 7680,
+          "timestampMs": 7600,
+          "confidence": null
+        },
+        {
+          "text": " hydrating",
+          "startMs": 7760,
+          "endMs": 8320,
+          "timestampMs": 8040,
+          "confidence": null
+        },
+        {
+          "text": " ethene",
+          "startMs": 8400,
+          "endMs": 8880,
+          "timestampMs": 8640,
+          "confidence": null
+        },
+        {
+          "text": " or",
+          "startMs": 9120,
+          "endMs": 9280,
+          "timestampMs": 9200,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 9360,
+          "endMs": 9440,
+          "timestampMs": 9400,
+          "confidence": null
+        },
+        {
+          "text": " fermenting",
+          "startMs": 9520,
+          "endMs": 10000,
+          "timestampMs": 9760,
+          "confidence": null
+        },
+        {
+          "text": " sugar.",
+          "startMs": 10080,
+          "endMs": 10560,
+          "timestampMs": 10320,
+          "confidence": null
+        },
+        {
+          "text": " Evaluate",
+          "startMs": 11120,
+          "endMs": 11680,
+          "timestampMs": 11400,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 11720,
+          "endMs": 11760,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " two",
+          "startMs": 11840,
+          "endMs": 12000,
+          "timestampMs": 11920,
+          "confidence": null
+        },
+        {
+          "text": " routes.",
+          "startMs": 12080,
+          "endMs": 13000,
+          "timestampMs": 12540,
+          "confidence": null
+        },
+        {
+          "text": " Don't",
+          "startMs": 13440,
+          "endMs": 13600,
+          "timestampMs": 13520,
+          "confidence": null
+        },
+        {
+          "text": " write",
+          "startMs": 13680,
+          "endMs": 13840,
+          "timestampMs": 13760,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 13920,
+          "endMs": 14000,
+          "timestampMs": 13960,
+          "confidence": null
+        },
+        {
+          "text": " whole",
+          "startMs": 14080,
+          "endMs": 14320,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 14520,
+          "endMs": 14800,
+          "timestampMs": 14660,
+          "confidence": null
+        },
+        {
+          "text": " Plan",
+          "startMs": 15120,
+          "endMs": 15440,
+          "timestampMs": 15280,
+          "confidence": null
+        },
+        {
+          "text": " it:",
+          "startMs": 15520,
+          "endMs": 16000,
+          "timestampMs": 15760,
+          "confidence": null
+        },
+        {
+          "text": " your",
+          "startMs": 16079.999999999998,
+          "endMs": 16160,
+          "timestampMs": 16120,
+          "confidence": null
+        },
+        {
+          "text": " verdict,",
+          "startMs": 16239.999999999998,
+          "endMs": 16960,
+          "timestampMs": 16600,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 17040,
+          "endMs": 17200,
+          "timestampMs": 17120,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 17280,
+          "endMs": 17520,
+          "timestampMs": 17400,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 17600,
+          "endMs": 17840,
+          "timestampMs": 17720,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 17920,
+          "endMs": 18000,
+          "timestampMs": 17960,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 18080,
+          "endMs": 18240,
+          "timestampMs": 18160,
+          "confidence": null
+        },
+        {
+          "text": " paragraph.",
+          "startMs": 18320,
+          "endMs": 19040,
+          "timestampMs": 18680,
+          "confidence": null
+        },
+        {
+          "text": " Take",
+          "startMs": 19440,
+          "endMs": 19600,
+          "timestampMs": 19520,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 19640,
+          "endMs": 19680,
+          "timestampMs": 19660,
+          "confidence": null
+        },
+        {
+          "text": " full",
+          "startMs": 19760,
+          "endMs": 19920,
+          "timestampMs": 19840,
+          "confidence": null
+        },
+        {
+          "text": " minute",
+          "startMs": 20000,
+          "endMs": 20240,
+          "timestampMs": 20120,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 20280,
+          "endMs": 20320,
+          "timestampMs": 20300,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 20400,
+          "endMs": 20480,
+          "timestampMs": 20440,
+          "confidence": null
+        },
+        {
+          "text": " like.",
+          "startMs": 20640,
+          "endMs": 20880,
+          "timestampMs": 20760,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 21360,
+          "endMs": 21600,
+          "timestampMs": 21480,
+          "confidence": null
+        },
+        {
+          "text": " here",
+          "startMs": 21720,
+          "endMs": 21840,
+          "timestampMs": 21780,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 21920,
+          "endMs": 22000,
+          "timestampMs": 21960,
+          "confidence": null
+        },
+        {
+          "text": " answer.",
+          "startMs": 22200,
+          "endMs": 22640,
+          "timestampMs": 22420,
+          "confidence": null
+        }
+      ],
+      "revealDelays": {
+        "answerVisibleStart": 992,
+        "responseHoldStart": 692,
+        "pausePrompt": 692
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 826,
+      "voiceover": {
+        "text": "One strong plan starts with the verdict. Fermentation suits this company better, provided it can power the distillation cheaply, for example by burning cane waste. Then one line per paragraph, each with evidence from the card: supply, conditions and rate, separation and energy, then carbon dioxide. Listing advantages and disadvantages with no verdict is the trap.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/feedback-2.e53067a90b43.mp3",
+        "startFrame": 0,
+        "endFrame": 766
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "One",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " strong",
+          "startMs": 320,
+          "endMs": 640,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " plan",
+          "startMs": 720,
+          "endMs": 1120,
+          "timestampMs": 920,
+          "confidence": null
+        },
+        {
+          "text": " starts",
+          "startMs": 1200,
+          "endMs": 1600,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 1680,
+          "endMs": 1760,
+          "timestampMs": 1720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1800,
+          "endMs": 1840,
+          "timestampMs": 1820,
+          "confidence": null
+        },
+        {
+          "text": " verdict.",
+          "startMs": 2000,
+          "endMs": 2560,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " Fermentation",
+          "startMs": 3040,
+          "endMs": 3680,
+          "timestampMs": 3360,
+          "confidence": null
+        },
+        {
+          "text": " suits",
+          "startMs": 3760,
+          "endMs": 4080,
+          "timestampMs": 3920,
+          "confidence": null
+        },
+        {
+          "text": " this",
+          "startMs": 4160,
+          "endMs": 4240,
+          "timestampMs": 4200,
+          "confidence": null
+        },
+        {
+          "text": " company",
+          "startMs": 4320,
+          "endMs": 4640,
+          "timestampMs": 4480,
+          "confidence": null
+        },
+        {
+          "text": " better,",
+          "startMs": 4720,
+          "endMs": 5360,
+          "timestampMs": 5040,
+          "confidence": null
+        },
+        {
+          "text": " provided",
+          "startMs": 5600,
+          "endMs": 5840,
+          "timestampMs": 5720,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 5920,
+          "endMs": 6000,
+          "timestampMs": 5960,
+          "confidence": null
+        },
+        {
+          "text": " can",
+          "startMs": 6080,
+          "endMs": 6160,
+          "timestampMs": 6120,
+          "confidence": null
+        },
+        {
+          "text": " power",
+          "startMs": 6240,
+          "endMs": 6480,
+          "timestampMs": 6360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 6560,
+          "endMs": 6640,
+          "timestampMs": 6600,
+          "confidence": null
+        },
+        {
+          "text": " distillation",
+          "startMs": 6760,
+          "endMs": 7280,
+          "timestampMs": 7020,
+          "confidence": null
+        },
+        {
+          "text": " cheaply,",
+          "startMs": 7360,
+          "endMs": 8160,
+          "timestampMs": 7760,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 8200,
+          "endMs": 8240,
+          "timestampMs": 8220,
+          "confidence": null
+        },
+        {
+          "text": " example",
+          "startMs": 8320,
+          "endMs": 8800,
+          "timestampMs": 8560,
+          "confidence": null
+        },
+        {
+          "text": " by",
+          "startMs": 8880,
+          "endMs": 9040,
+          "timestampMs": 8960,
+          "confidence": null
+        },
+        {
+          "text": " burning",
+          "startMs": 9120,
+          "endMs": 9440,
+          "timestampMs": 9280,
+          "confidence": null
+        },
+        {
+          "text": " cane",
+          "startMs": 9520,
+          "endMs": 9760,
+          "timestampMs": 9640,
+          "confidence": null
+        },
+        {
+          "text": " waste.",
+          "startMs": 9840,
+          "endMs": 10240,
+          "timestampMs": 10040,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 10880,
+          "endMs": 11120,
+          "timestampMs": 11000,
+          "confidence": null
+        },
+        {
+          "text": " one",
+          "startMs": 11520,
+          "endMs": 11680,
+          "timestampMs": 11600,
+          "confidence": null
+        },
+        {
+          "text": " line",
+          "startMs": 11760,
+          "endMs": 12000,
+          "timestampMs": 11880,
+          "confidence": null
+        },
+        {
+          "text": " per",
+          "startMs": 12080,
+          "endMs": 12160,
+          "timestampMs": 12120,
+          "confidence": null
+        },
+        {
+          "text": " paragraph,",
+          "startMs": 12320,
+          "endMs": 13200,
+          "timestampMs": 12760,
+          "confidence": null
+        },
+        {
+          "text": " each",
+          "startMs": 13320,
+          "endMs": 13440,
+          "timestampMs": 13380,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 13520,
+          "endMs": 13600,
+          "timestampMs": 13560,
+          "confidence": null
+        },
+        {
+          "text": " evidence",
+          "startMs": 13680,
+          "endMs": 14080,
+          "timestampMs": 13880,
+          "confidence": null
+        },
+        {
+          "text": " from",
+          "startMs": 14160,
+          "endMs": 14240,
+          "timestampMs": 14200,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 14280,
+          "endMs": 14320,
+          "timestampMs": 14300,
+          "confidence": null
+        },
+        {
+          "text": " card:",
+          "startMs": 14400,
+          "endMs": 15200,
+          "timestampMs": 14800,
+          "confidence": null
+        },
+        {
+          "text": " supply,",
+          "startMs": 15480,
+          "endMs": 16000,
+          "timestampMs": 15740,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 16079.999999999998,
+          "endMs": 16560,
+          "timestampMs": 16320,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16600,
+          "endMs": 16640,
+          "timestampMs": 16620,
+          "confidence": null
+        },
+        {
+          "text": " rate,",
+          "startMs": 16720,
+          "endMs": 17440,
+          "timestampMs": 17080,
+          "confidence": null
+        },
+        {
+          "text": " separation",
+          "startMs": 17520,
+          "endMs": 18160,
+          "timestampMs": 17840,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 18240,
+          "endMs": 18320,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " energy,",
+          "startMs": 18400,
+          "endMs": 19200,
+          "timestampMs": 18800,
+          "confidence": null
+        },
+        {
+          "text": " then",
+          "startMs": 19280,
+          "endMs": 19520,
+          "timestampMs": 19400,
+          "confidence": null
+        },
+        {
+          "text": " carbon",
+          "startMs": 19760,
+          "endMs": 20000,
+          "timestampMs": 19880,
+          "confidence": null
+        },
+        {
+          "text": " dioxide.",
+          "startMs": 20080,
+          "endMs": 21040,
+          "timestampMs": 20560,
+          "confidence": null
+        },
+        {
+          "text": " Listing",
+          "startMs": 21360,
+          "endMs": 21680,
+          "timestampMs": 21520,
+          "confidence": null
+        },
+        {
+          "text": " advantages",
+          "startMs": 21800,
+          "endMs": 22400,
+          "timestampMs": 22100,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 22440,
+          "endMs": 22480,
+          "timestampMs": 22460,
+          "confidence": null
+        },
+        {
+          "text": " disadvantages",
+          "startMs": 22560,
+          "endMs": 23440,
+          "timestampMs": 23000,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 23520,
+          "endMs": 23600,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " no",
+          "startMs": 23760,
+          "endMs": 24000,
+          "timestampMs": 23880,
+          "confidence": null
+        },
+        {
+          "text": " verdict",
+          "startMs": 24080,
+          "endMs": 24560,
+          "timestampMs": 24320,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 24640,
+          "endMs": 24800,
+          "timestampMs": 24720,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 24840,
+          "endMs": 24880,
+          "timestampMs": 24860,
+          "confidence": null
+        },
+        {
+          "text": " trap.",
+          "startMs": 24960,
+          "endMs": 25520,
+          "timestampMs": 25240,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "course-close",
+      "type": "concept",
+      "durationInFrames": 792,
+      "voiceover": {
+        "text": "So for any synthesis, ask where the reagents come from, which conditions balance speed, yield and cost, how pure the product must be, how safe it is and what it wastes, and who it serves at what cost. Then weigh them, and finish with a judgement and its condition. That's the last video in Module 8, and the end of the Year 12 Chemistry course.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/course-close.6fcc5af5327b.mp3",
+        "startFrame": 0,
+        "endFrame": 732
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "So",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " for",
+          "startMs": 400,
+          "endMs": 560,
+          "timestampMs": 480,
+          "confidence": null
+        },
+        {
+          "text": " any",
+          "startMs": 640,
+          "endMs": 800,
+          "timestampMs": 720,
+          "confidence": null
+        },
+        {
+          "text": " synthesis,",
+          "startMs": 880,
+          "endMs": 1920,
+          "timestampMs": 1400,
+          "confidence": null
+        },
+        {
+          "text": " ask",
+          "startMs": 2000,
+          "endMs": 2320,
+          "timestampMs": 2160,
+          "confidence": null
+        },
+        {
+          "text": " where",
+          "startMs": 2400,
+          "endMs": 2560,
+          "timestampMs": 2480,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 2640,
+          "endMs": 2720,
+          "timestampMs": 2680,
+          "confidence": null
+        },
+        {
+          "text": " reagents",
+          "startMs": 2800,
+          "endMs": 3280,
+          "timestampMs": 3040,
+          "confidence": null
+        },
+        {
+          "text": " come",
+          "startMs": 3360,
+          "endMs": 3520,
+          "timestampMs": 3440,
+          "confidence": null
+        },
+        {
+          "text": " from,",
+          "startMs": 3600,
+          "endMs": 4400,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " which",
+          "startMs": 4520,
+          "endMs": 4640,
+          "timestampMs": 4580,
+          "confidence": null
+        },
+        {
+          "text": " conditions",
+          "startMs": 4920,
+          "endMs": 5200,
+          "timestampMs": 5060,
+          "confidence": null
+        },
+        {
+          "text": " balance",
+          "startMs": 5280,
+          "endMs": 5600,
+          "timestampMs": 5440,
+          "confidence": null
+        },
+        {
+          "text": " speed,",
+          "startMs": 5680,
+          "endMs": 6320,
+          "timestampMs": 6000,
+          "confidence": null
+        },
+        {
+          "text": " yield",
+          "startMs": 6480,
+          "endMs": 6640,
+          "timestampMs": 6560,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 6720,
+          "endMs": 6800,
+          "timestampMs": 6760,
+          "confidence": null
+        },
+        {
+          "text": " cost,",
+          "startMs": 6880,
+          "endMs": 7760,
+          "timestampMs": 7320,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 7840,
+          "endMs": 8000,
+          "timestampMs": 7920,
+          "confidence": null
+        },
+        {
+          "text": " pure",
+          "startMs": 8080,
+          "endMs": 8400,
+          "timestampMs": 8240,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 8440,
+          "endMs": 8480,
+          "timestampMs": 8460,
+          "confidence": null
+        },
+        {
+          "text": " product",
+          "startMs": 8560,
+          "endMs": 8880,
+          "timestampMs": 8720,
+          "confidence": null
+        },
+        {
+          "text": " must",
+          "startMs": 9000,
+          "endMs": 9120,
+          "timestampMs": 9060,
+          "confidence": null
+        },
+        {
+          "text": " be,",
+          "startMs": 9200,
+          "endMs": 9760,
+          "timestampMs": 9480,
+          "confidence": null
+        },
+        {
+          "text": " how",
+          "startMs": 9840,
+          "endMs": 10000,
+          "timestampMs": 9920,
+          "confidence": null
+        },
+        {
+          "text": " safe",
+          "startMs": 10080,
+          "endMs": 10320,
+          "timestampMs": 10200,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 10400,
+          "endMs": 10440,
+          "timestampMs": 10420,
+          "confidence": null
+        },
+        {
+          "text": " is",
+          "startMs": 10480,
+          "endMs": 10720,
+          "timestampMs": 10600,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 10880,
+          "endMs": 10960,
+          "timestampMs": 10920,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 11040,
+          "endMs": 11120,
+          "timestampMs": 11080,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 11200,
+          "endMs": 11280,
+          "timestampMs": 11240,
+          "confidence": null
+        },
+        {
+          "text": " wastes,",
+          "startMs": 11320,
+          "endMs": 12160,
+          "timestampMs": 11740,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 12240,
+          "endMs": 12320,
+          "timestampMs": 12280,
+          "confidence": null
+        },
+        {
+          "text": " who",
+          "startMs": 12400,
+          "endMs": 12560,
+          "timestampMs": 12480,
+          "confidence": null
+        },
+        {
+          "text": " it",
+          "startMs": 12640,
+          "endMs": 12720,
+          "timestampMs": 12680,
+          "confidence": null
+        },
+        {
+          "text": " serves",
+          "startMs": 12800,
+          "endMs": 13200,
+          "timestampMs": 13000,
+          "confidence": null
+        },
+        {
+          "text": " at",
+          "startMs": 13280,
+          "endMs": 13440,
+          "timestampMs": 13360,
+          "confidence": null
+        },
+        {
+          "text": " what",
+          "startMs": 13600,
+          "endMs": 13760,
+          "timestampMs": 13680,
+          "confidence": null
+        },
+        {
+          "text": " cost.",
+          "startMs": 13840,
+          "endMs": 14600,
+          "timestampMs": 14220,
+          "confidence": null
+        },
+        {
+          "text": " Then",
+          "startMs": 14880,
+          "endMs": 15120,
+          "timestampMs": 15000,
+          "confidence": null
+        },
+        {
+          "text": " weigh",
+          "startMs": 15280,
+          "endMs": 15520,
+          "timestampMs": 15400,
+          "confidence": null
+        },
+        {
+          "text": " them,",
+          "startMs": 15640,
+          "endMs": 16079.999999999998,
+          "timestampMs": 15860,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 16160,
+          "endMs": 16239.999999999998,
+          "timestampMs": 16200,
+          "confidence": null
+        },
+        {
+          "text": " finish",
+          "startMs": 16320,
+          "endMs": 16640,
+          "timestampMs": 16480,
+          "confidence": null
+        },
+        {
+          "text": " with",
+          "startMs": 16720,
+          "endMs": 16800,
+          "timestampMs": 16760,
+          "confidence": null
+        },
+        {
+          "text": " a",
+          "startMs": 16880,
+          "endMs": 16960,
+          "timestampMs": 16920,
+          "confidence": null
+        },
+        {
+          "text": " judgement",
+          "startMs": 17040,
+          "endMs": 17440,
+          "timestampMs": 17240,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 17600,
+          "endMs": 17760,
+          "timestampMs": 17680,
+          "confidence": null
+        },
+        {
+          "text": " its",
+          "startMs": 17840,
+          "endMs": 17920,
+          "timestampMs": 17880,
+          "confidence": null
+        },
+        {
+          "text": " condition.",
+          "startMs": 18000,
+          "endMs": 18560,
+          "timestampMs": 18280,
+          "confidence": null
+        },
+        {
+          "text": " That's",
+          "startMs": 19440,
+          "endMs": 19680,
+          "timestampMs": 19560,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 19760,
+          "endMs": 19840,
+          "timestampMs": 19800,
+          "confidence": null
+        },
+        {
+          "text": " last",
+          "startMs": 19920,
+          "endMs": 20160,
+          "timestampMs": 20040,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 20240,
+          "endMs": 20560,
+          "timestampMs": 20400,
+          "confidence": null
+        },
+        {
+          "text": " in",
+          "startMs": 20640,
+          "endMs": 20720,
+          "timestampMs": 20680,
+          "confidence": null
+        },
+        {
+          "text": " Module",
+          "startMs": 20800,
+          "endMs": 21040,
+          "timestampMs": 20920,
+          "confidence": null
+        },
+        {
+          "text": " 8,",
+          "startMs": 21120,
+          "endMs": 21600,
+          "timestampMs": 21360,
+          "confidence": null
+        },
+        {
+          "text": " and",
+          "startMs": 21760,
+          "endMs": 21920,
+          "timestampMs": 21840,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22000,
+          "endMs": 22080,
+          "timestampMs": 22040,
+          "confidence": null
+        },
+        {
+          "text": " end",
+          "startMs": 22240,
+          "endMs": 22480,
+          "timestampMs": 22360,
+          "confidence": null
+        },
+        {
+          "text": " of",
+          "startMs": 22560,
+          "endMs": 22640,
+          "timestampMs": 22600,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 22680,
+          "endMs": 22720,
+          "timestampMs": 22700,
+          "confidence": null
+        },
+        {
+          "text": " Year",
+          "startMs": 22800,
+          "endMs": 22960,
+          "timestampMs": 22880,
+          "confidence": null
+        },
+        {
+          "text": " 12",
+          "startMs": 23040,
+          "endMs": 23280,
+          "timestampMs": 23160,
+          "confidence": null
+        },
+        {
+          "text": " Chemistry",
+          "startMs": 23360,
+          "endMs": 23760,
+          "timestampMs": 23560,
+          "confidence": null
+        },
+        {
+          "text": " course.",
+          "startMs": 23840,
+          "endMs": 24400,
+          "timestampMs": 24120,
+          "confidence": null
+        }
+      ]
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 759,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+        "audioFile": "public/audio/Chemistry-Y12-M8-C13-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+        "startFrame": 0,
+        "endFrame": 135
+      },
+      "pilotOnly": false,
+      "captions": [
+        {
+          "text": "Here",
+          "startMs": 0,
+          "endMs": 240,
+          "timestampMs": 120,
+          "confidence": null
+        },
+        {
+          "text": " are",
+          "startMs": 320,
+          "endMs": 400,
+          "timestampMs": 360,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 440,
+          "endMs": 480,
+          "timestampMs": 460,
+          "confidence": null
+        },
+        {
+          "text": " key",
+          "startMs": 560,
+          "endMs": 720,
+          "timestampMs": 640,
+          "confidence": null
+        },
+        {
+          "text": " notes.",
+          "startMs": 800,
+          "endMs": 1440,
+          "timestampMs": 1120,
+          "confidence": null
+        },
+        {
+          "text": " Pause",
+          "startMs": 1680,
+          "endMs": 1920,
+          "timestampMs": 1800,
+          "confidence": null
+        },
+        {
+          "text": " the",
+          "startMs": 1960,
+          "endMs": 2000,
+          "timestampMs": 1980,
+          "confidence": null
+        },
+        {
+          "text": " video",
+          "startMs": 2080,
+          "endMs": 2480,
+          "timestampMs": 2280,
+          "confidence": null
+        },
+        {
+          "text": " if",
+          "startMs": 2560,
+          "endMs": 2640,
+          "timestampMs": 2600,
+          "confidence": null
+        },
+        {
+          "text": " you",
+          "startMs": 2720,
+          "endMs": 2800,
+          "timestampMs": 2760,
+          "confidence": null
+        },
+        {
+          "text": " need",
+          "startMs": 2920,
+          "endMs": 3040,
+          "timestampMs": 2980,
+          "confidence": null
+        },
+        {
+          "text": " more",
+          "startMs": 3120,
+          "endMs": 3280,
+          "timestampMs": 3200,
+          "confidence": null
+        },
+        {
+          "text": " time",
+          "startMs": 3360,
+          "endMs": 3600,
+          "timestampMs": 3480,
+          "confidence": null
+        },
+        {
+          "text": " to",
+          "startMs": 3680,
+          "endMs": 3760,
+          "timestampMs": 3720,
+          "confidence": null
+        },
+        {
+          "text": " copy",
+          "startMs": 3920,
+          "endMs": 4080,
+          "timestampMs": 4000,
+          "confidence": null
+        },
+        {
+          "text": " them.",
+          "startMs": 4200,
+          "endMs": 4480,
+          "timestampMs": 4340,
+          "confidence": null
+        }
+      ]
+    }
+  ],
+  "status": "fresh-measured-preview-pending-full-review",
+  "timingStatus": "Measured decoded speech and exact caption tokens. Named stage cues resolve from selected take; exact playback and listening pending."
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B14-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b14/lesson.json",
+  "lessonSha256": "eddda76c6475ff2a321bae26ffb6b15912a69995d3c034cda3fe6e2a031e4a1f",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b14/lesson.production-brief.json",
+    "sha256": "6308cb92a46a859ecacd7d04f550856961cf05e88b061965b8c5568c9d6c4fd7"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "A couple of days after birth, nearly every baby born in NSW is offered a heel-prick blood test, checking for more than twenty conditions. One of them, PKU, can cause severe brain damage, yet babies found this way can grow up without it. So did the test prevent a genetic disease, or only find it? That's today's question: when can genetics help prevent disease?",
+      "hash": "58d9853f5085",
+      "textSha256": "58d9853f50852ecfde48e3a083cbc9ce209995208bd16ad7af341f8aedbb8c27",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/hook.58d9853f5085.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/hook.58d9853f5085.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/hook.58d9853f5085.generation.json",
+      "plannedRequestSha256": "f80c79783bb809d763328e8c52a56474602d778a6c61370c1d73aa7386d2095f"
+    },
+    {
+      "id": "three-jobs",
+      "parentSceneId": "three-jobs",
+      "text": "Genetic technologies do three different jobs. Screening finds a risk or a condition, but it doesn't change any DNA. Embryo testing chooses between embryos that already exist. Genetic engineering changes the genetic material itself. So for any method, ask which job it does, and what exactly it prevents: symptoms in a person, the birth of an affected child, or the faulty gene itself.",
+      "hash": "6270bc57da92",
+      "textSha256": "6270bc57da920b1f5ebd0afbe7f9f1e445f977bc69e7aba2eb23b4c09691d86e",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/three-jobs.6270bc57da92.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/three-jobs.6270bc57da92.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/three-jobs.6270bc57da92.generation.json",
+      "plannedRequestSha256": "8db67b64602b1c229347c653a4415918a4f3b14c1d03b3347ecdf834e963a8c7"
+    },
+    {
+      "id": "pku",
+      "parentSceneId": "pku",
+      "text": "Start with the heel prick. In PKU, short for phenylketonuria, both copies of one gene are faulty, so the liver makes too little working enzyme to break down phenylalanine, an amino acid in ordinary protein. Phenylalanine builds up in the blood and damages the developing brain. If the test finds it early, the baby starts a low-phenylalanine diet straightaway, the level stays low, and the brain develops normally.",
+      "hash": "ff37b8d1e7ef",
+      "textSha256": "ff37b8d1e7efb989f04a870a288b6cd200ae1f1c01c976dcc75c884a581b0b57",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/pku.ff37b8d1e7ef.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/pku.ff37b8d1e7ef.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/pku.ff37b8d1e7ef.generation.json",
+      "plannedRequestSha256": "2616743d518303caf06b37ee973f211add10304f16338be5e2d3dd5f4c2720fa"
+    },
+    {
+      "id": "phenotype-not-genotype",
+      "parentSceneId": "phenotype-not-genotype",
+      "text": "The faulty alleles are still there in every cell, and they can still be passed on. What the diet prevents is the harmful phenotype, the effect the genes have on the body, because it limits the phenylalanine the weak pathway can't handle. That's why screening only helps when there's something useful to do next. A test for a condition nothing can treat finds it, but it doesn't prevent it.",
+      "hash": "b8007f829179",
+      "textSha256": "b8007f82917947353ebffe7e920ffe2960b92e709266eef692ba8a454518f345",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/phenotype-not-genotype.b8007f829179.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/phenotype-not-genotype.b8007f829179.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/phenotype-not-genotype.b8007f829179.generation.json",
+      "plannedRequestSha256": "ae73b290b5c4a141e071814dacaa10ef17960ee91bcaca647369756f7f2085ce"
+    },
+    {
+      "id": "carriers",
+      "parentSceneId": "carriers",
+      "text": "The second job is finding risk before a pregnancy. You've met carriers before: people with one altered allele for a recessive condition like cystic fibrosis, plus one working copy, so they're usually healthy. Most don't know it. If two carriers have children, each pregnancy has a one in four chance of an affected child. Carrier screening tests a couple before or early in pregnancy, and Medicare now funds it for three conditions, including cystic fibrosis.",
+      "hash": "1d8cb98dfea1",
+      "textSha256": "1d8cb98dfea195d90de738c7e6fc57402d9ee35a0ebb8779fcbd7cbfddcaada3",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/carriers.1d8cb98dfea1.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/carriers.1d8cb98dfea1.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/carriers.1d8cb98dfea1.generation.json",
+      "plannedRequestSha256": "22405d4d7dce4f97ec81841d5e98ebe5f83db93528fdc51791b5804213a3bb74"
+    },
+    {
+      "id": "counselling-pgt",
+      "parentSceneId": "counselling-pgt",
+      "text": "A genetic counsellor explains the options without steering the couple's choice. One option is embryo testing, called PGT. The couple goes through IVF, and each embryo grows for about five days. A few cells are taken from the outer layer, the part that would become placenta, and tested for the family's known variant. Only an unaffected embryo is transferred. Notice that no embryo's DNA is changed. PGT is selection, not engineering. It can prevent an affected birth, but only when the family's variant is already known, and it needs IVF, which is costly.",
+      "hash": "3f334bdfc507",
+      "textSha256": "3f334bdfc507357a896ff0d60015722a53da35a6390484d47ae013f16c950234",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/counselling-pgt.3f334bdfc507.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/counselling-pgt.3f334bdfc507.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/counselling-pgt.3f334bdfc507.generation.json",
+      "plannedRequestSha256": "8cddd164298df6d8fdd95997d53a0b0d3f14e2c7d729ad7bcc283c2f4363795d"
+    },
+    {
+      "id": "gene-therapy",
+      "parentSceneId": "gene-therapy",
+      "text": "The third job is changing genes. A change in a body cell stays with that person. Gene therapy works in body cells. For spinal muscular atrophy, a modified virus carries a working copy of a missing gene into nerve cells, and it has to be given early, before many of those cells are lost. For sickle cell disease, CRISPR can edit a patient's own blood stem cells outside the body. Both treat one person. Their children's risk doesn't change.",
+      "hash": "25c8ae017fae",
+      "textSha256": "25c8ae017fae4c3ad234e45bcaee128799dc403065918f1754962951b1d40848",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/gene-therapy.25c8ae017fae.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/gene-therapy.25c8ae017fae.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/gene-therapy.25c8ae017fae.generation.json",
+      "plannedRequestSha256": "bf494f3bc054b1dbe18525a93addb10809f66d1f3f231ff4f9789ad73ff9a75a"
+    },
+    {
+      "id": "germline",
+      "parentSceneId": "germline",
+      "text": "Editing an egg, sperm or early embryo is called germline editing. The edit can enter the child's germline, their own eggs or sperm, and be inherited. That's the real difference from gene therapy: a germline edit could be passed to children. It's illegal in Australia. The future person can't consent, a wrong edit could be inherited too, and it can't be taken back.",
+      "hash": "2527a7d47c20",
+      "textSha256": "2527a7d47c2083f401dd809f1a59f60661401bafa460b973542fed53b840a060",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/germline.2527a7d47c20.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/germline.2527a7d47c20.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/germline.2527a7d47c20.generation.json",
+      "plannedRequestSha256": "320249e600c2fc5208de88f296387e129af1a20616b7d4b239a295dd120d088a"
+    },
+    {
+      "id": "limits",
+      "parentSceneId": "limits",
+      "text": "So why can't genetics prevent most disease? The biggest limit is biology. Type 2 diabetes, heart disease and most cancers involve many genes, each adding a little risk, plus diet and other exposures. There's no single gene to test for or edit, so prevention campaigns still do most of the work. Tests can also return a variant of uncertain significance, a DNA change no one can yet call harmful or harmless. And methods that cost thousands or millions reach only some families.",
+      "hash": "b5c47149aa5d",
+      "textSha256": "b5c47149aa5d04c5feffc8d6ace1482bc72d4d2a33ab188547552347f98eceaf",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/limits.b5c47149aa5d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/limits.b5c47149aa5d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/limits.b5c47149aa5d.generation.json",
+      "plannedRequestSha256": "9211ddc9fa2a9787eee2c9bd063369b5e2ca1e58d648dfad702fadaeeb8b867a"
+    },
+    {
+      "id": "ethics",
+      "parentSceneId": "ethics",
+      "text": "There are ethical questions too. Couples have the right to make informed choices about their own families. But some disability advocates, including people who live with the conditions being tested for, argue that selecting against a condition sends a message about lives like theirs. And people disagree about where to draw the line, between a fatal childhood disease, an adult-onset one and a trait.",
+      "hash": "e6fc21a7fdf8",
+      "textSha256": "e6fc21a7fdf81ffab3edc36cb86543aca8b5ca55fcf2646c4f7a1416e9e106ca",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/ethics.e6fc21a7fdf8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/ethics.e6fc21a7fdf8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/ethics.e6fc21a7fdf8.generation.json",
+      "plannedRequestSha256": "48d57704fc505b4b25b62802ee813d58eb8b304ca5f74a918e4cfcb25374af44"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. Carrier screening shows that both members of a couple carry a variant for spinal muscular atrophy, an autosomal recessive condition. State the chance that each pregnancy is affected. Then explain how PGT could reduce the chance of an affected child, and why it isn't genetic engineering. Pause here to answer.",
+      "hash": "d623c275b8db",
+      "textSha256": "d623c275b8db86495cc60e47f08afd09a4a8ef2834bd92c29579e2f24f27ff7a",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt.d623c275b8db.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt.d623c275b8db.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt.d623c275b8db.generation.json",
+      "plannedRequestSha256": "443fabeb865d787c83498d68c12cb623362af683dfc01758a8e87413093e4751"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "One in four, because each carrier passes on the variant half the time. With PGT, the couple's IVF embryos are tested for that known variant, and only an unaffected embryo is transferred. No DNA is altered, so it's selection, not engineering. The classic mistake is writing that PGT removes the faulty gene from the embryo.",
+      "hash": "0735e5c07bf8",
+      "textSha256": "0735e5c07bf8201362cfa7afa99b326255fcae257cfafe02bc76ca9a6e595de4",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-one.0735e5c07bf8.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-one.0735e5c07bf8.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-one.0735e5c07bf8.generation.json",
+      "plannedRequestSha256": "d613279933622abe94349b3bdfa4c15bdc7de26e1b8fead6b2e1766b7c502c2e"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. Huntington's disease is caused by one dominant allele, and symptoms usually begin in adulthood. No current treatment prevents them. Explain why newborn screening would not prevent Huntington's disease. Then assess one genetic technology that could reduce its effect on a family. Pause here to answer.",
+      "hash": "5111b774852b",
+      "textSha256": "5111b774852be873f8598d795562a337feda4aff087293173779c5d9de59ccb8",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt-two.5111b774852b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt-two.5111b774852b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/attempt-two.5111b774852b.generation.json",
+      "plannedRequestSha256": "15ea44c6388bcffb477cf599c8c25603905877716deb4c9106c17cecf6b19781"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Screening only prevents symptoms when an early treatment exists, like the diet for PKU. Huntington's has none, so finding it early prevents nothing. PGT can select embryos without the known allele, preventing an affected birth. But it needs IVF, costs a lot and raises ethical questions, so it helps some families, not most. The classic mistake is claiming gene therapy can now cure it.",
+      "hash": "a61a3f58ee47",
+      "textSha256": "a61a3f58ee47d58a1c578e03a9cf9b775fe55107d4c37fcbae5a3aeb70f2da71",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-two.a61a3f58ee47.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-two.a61a3f58ee47.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/feedback-two.a61a3f58ee47.generation.json",
+      "plannedRequestSha256": "7678757409fb4e99095fe353804d2cd8772c6bb9f2eec7e6192e9b85a14291c3"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So for any genetic prevention question, name the job: find, choose or change. Then say exactly what's prevented, symptoms, an affected birth or the gene itself, and give one limit from biology, access or ethics. Next, a disorder that's already present: how technology can assist hearing loss.",
+      "hash": "5db30d14b44b",
+      "textSha256": "5db30d14b44b63a9798e3c79603c62c35ca915c8c19604ac1335a67454b961e9",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/decision-rule.5db30d14b44b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/decision-rule.5db30d14b44b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/decision-rule.5db30d14b44b.generation.json",
+      "plannedRequestSha256": "faf4d4f37c3fe7336a30137817d987a3440c49c3dd8dca07992abeb84c26c45f"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B14-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

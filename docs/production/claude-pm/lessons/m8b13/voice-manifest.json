@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Biology-Y12-M8-B13-claude-2026-11-05-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8b13/lesson.json",
+  "lessonSha256": "ad046e24e4d41591b9809e18c41a3674e477237981a04fb2f74e8576e08fa116",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8b13/lesson.production-brief.json",
+    "sha256": "a0179215e0fa64d1bdc899c84a70a0fae07962fbcf6f96680732648b56cdb311"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Australia has one of the highest melanoma rates in the world. In 1981, a Victorian campaign told people to slip, slop, slap, and in 1988 it grew into SunSmart. Today, melanoma rates in younger Australians are falling. But was that the campaign, or something else? So how can prevention campaigns reduce disease, and how do we know one worked?",
+      "hash": "e278927ef508",
+      "textSha256": "e278927ef508bcb788b98bb161e3b1ddf7411a9e9422b6cbaab28f0149f060f7",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/hook.e278927ef508.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/hook.e278927ef508.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/hook.e278927ef508.generation.json",
+      "plannedRequestSha256": "600c7efc0e425973fa8e8e1f9d9a5bd88a4b311d167392b4069b8e1debe030a0"
+    },
+    {
+      "id": "prevention-levels",
+      "parentSceneId": "prevention-levels",
+      "text": "You've seen how UV damages DNA in skin cells. Prevention means acting before disease or harm develops. Primary prevention stops the exposure itself, like sun protection. Secondary prevention catches disease early, before symptoms, like screening. Tertiary prevention limits the damage once disease is established. A campaign is a planned program of messages and actions, aimed at a defined group, to change one behaviour.",
+      "hash": "26983cff81cf",
+      "textSha256": "26983cff81cf51a6552e945f5c3c762c0453f076dc65f77ef02849aacba37d09",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/prevention-levels.26983cff81cf.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/prevention-levels.26983cff81cf.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/prevention-levels.26983cff81cf.generation.json",
+      "plannedRequestSha256": "9481b77ec23cdce40220f678cf6faecc9df648dbab834621a486bc69c3695911"
+    },
+    {
+      "id": "design-frame",
+      "parentSceneId": "design-frame",
+      "text": "Good campaigns start from the mechanism. For melanoma, the risk is UV reaching skin cells, so the target behaviour is reducing that exposure, especially in childhood, when sunburn adds the most risk. Then choose the audience, and decide before you start what you'll measure. If you can't name the exposure, the people and the measure, it's an advert, not a strategy.",
+      "hash": "b26f14628f66",
+      "textSha256": "b26f14628f6628d07bd6a65bce48dc353867d016ab15bbdbc7f5d7354f64fe74",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/design-frame.b26f14628f66.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/design-frame.b26f14628f66.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/design-frame.b26f14628f66.generation.json",
+      "plannedRequestSha256": "d5f0d875f8752ee695360dfc9ffa7f65d7bc4709e25aa3367c0d812c4d3d7a7c"
+    },
+    {
+      "id": "knowing-doing",
+      "parentSceneId": "knowing-doing",
+      "text": "Here's the problem campaigns run into. People learn the message, agree with it, and still don't change, because habit, cost, convenience and what others do matter more than information. So SunSmart didn't rely on ads. Schools adopted hat and shade policies, councils built shade, UV alerts went into weather forecasts, and commercial solariums were banned. These change the conditions, so the safe choice becomes the easy one. Tobacco control worked the same way, with taxes and smoke-free laws alongside the ads.",
+      "hash": "d503e744787e",
+      "textSha256": "d503e744787e4d6b5ff3d04496e29d9bd5637a2e22be0188bb5f8017887d4446",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/knowing-doing.d503e744787e.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/knowing-doing.d503e744787e.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/knowing-doing.d503e744787e.generation.json",
+      "plannedRequestSha256": "6bbcc3bd91c8216ae0ff4d686c913891d044930dfaa0a6c562bb003099934725"
+    },
+    {
+      "id": "evidence-ladder",
+      "parentSceneId": "evidence-ladder",
+      "text": "So how do you measure whether it worked? Process measures count what the campaign did: ads shown, schools signed up. On their own, they can't tell you whether it worked. Impact measures track the behaviour or exposure it targeted: hats worn, sunscreen used, sunburn. Outcome measures track the disease itself, melanoma rates. Outcomes matter most, but melanoma takes decades to appear, so early on, impact is the best evidence you can get.",
+      "hash": "1cd2fc83f414",
+      "textSha256": "1cd2fc83f414294471df37a5dbbf7545a1fb46295616403bc8924e990138029b",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/evidence-ladder.1cd2fc83f414.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/evidence-ladder.1cd2fc83f414.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/evidence-ladder.1cd2fc83f414.generation.json",
+      "plannedRequestSha256": "2a50448f5d93756c1a377de25c29b290ab605d1e0d3c5614f08a79f9fcabea58"
+    },
+    {
+      "id": "impact-evidence",
+      "parentSceneId": "impact-evidence",
+      "text": "SunSmart has impact evidence over thirty years. Summer surveys in Melbourne, repeated from 1987 to 2017, found more people wearing hats and sunscreen and seeking shade, and fewer getting sunburnt on weekends. Another analysis found that in summers with more SunSmart TV advertising, sunburn was less common. That's like a dose-response: more campaign, more protection. It points to the campaign, not just a change in fashion.",
+      "hash": "98ab744ab96d",
+      "textSha256": "98ab744ab96d9b9822e6197adccffd9f6d5877ea92617a8d87b573ad6e87a307",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/impact-evidence.98ab744ab96d.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/impact-evidence.98ab744ab96d.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/impact-evidence.98ab744ab96d.generation.json",
+      "plannedRequestSha256": "b7901f87be0ee1182fbfecf5dcd6e0fe8500554e505d568cd044cf3ae55d7cd2"
+    },
+    {
+      "id": "outcome-evidence",
+      "parentSceneId": "outcome-evidence",
+      "text": "Now outcomes. In Queensland, invasive melanoma rates in people under forty fell between 1995 and 2014, and national rates in young adults have fallen since the late 1990s. These are rates, not counts, so a growing population can't hide the fall. In older Australians, rates kept rising. That fits latency: older people built up their UV damage before the campaign began, while younger people grew up with hats and shade. It's the pattern you'd expect if the campaign worked.",
+      "hash": "49dc9d8b8d37",
+      "textSha256": "49dc9d8b8d3771d77017c26573005f8938cfe026b951a23de39ad30b2a0e8acb",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/outcome-evidence.49dc9d8b8d37.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/outcome-evidence.49dc9d8b8d37.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/outcome-evidence.49dc9d8b8d37.generation.json",
+      "plannedRequestSha256": "967c59bb69ced47aecf95ada04c8f09444053a76b58d68e9ec6c4986d771d181"
+    },
+    {
+      "id": "how-sure",
+      "parentSceneId": "how-sure",
+      "text": "So how sure can we be? Judge the secondary sources first, data someone else collected: who produced them, when, is there real data, and do independent sources agree? Here, they're health agencies and peer-reviewed studies that agree. But this national trend has no randomised control group. Behaviour was self-reported, and other exposures and policies changed too. So the evidence is strong, but it supports a package, not the ads alone.",
+      "hash": "52c261504e0b",
+      "textSha256": "52c261504e0b06c547b361be002b48c296781e8ad067ef8e4131b55432cc0fc1",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/how-sure.52c261504e0b.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/how-sure.52c261504e0b.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/how-sure.52c261504e0b.generation.json",
+      "plannedRequestSha256": "618680306f3420ed5acc7ed3d3a44653b2541a4c6416184f71cd94ff9e5ee2c4"
+    },
+    {
+      "id": "equity-improve",
+      "parentSceneId": "equity-improve",
+      "text": "Effectiveness also means equity: whether the benefit reaches the people at highest risk. A campaign can lift the average while missing them. Teenagers and young adults still report the most sunburn, and outdoor workers are exposed on most working days. An improvement would reach them where they are, with shade, shirts and hats supplied at work and sport, so cost doesn't decide who's protected, and sunburn measured separately for those groups.",
+      "hash": "26e95184ccc9",
+      "textSha256": "26e95184ccc9d4f74e0bfbfa252ee43d3708c27927f198a480d2ceb69ebdd375",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/equity-improve.26e95184ccc9.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/equity-improve.26e95184ccc9.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/equity-improve.26e95184ccc9.generation.json",
+      "plannedRequestSha256": "5e1b704d803b84d3e6ea63a4a11f975cfcb29267565a0fbff7268bb13fadcebb"
+    },
+    {
+      "id": "attempt",
+      "parentSceneId": "attempt",
+      "text": "Two exam questions. First. A school built shade sails and added broad-brimmed hats to its uniform. Over one school year, independent observers counted more students in shade at lunch, and UV meters worn by some students recorded 40 per cent less exposure. Evaluate this strategy for preventing melanoma. Pause here to answer.",
+      "hash": "9e9814109584",
+      "textSha256": "9e98141095840260a807c35e026f3d252a114d684c8fd7cc88dba381c4a6a8ed",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt.9e9814109584.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt.9e9814109584.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt.9e9814109584.generation.json",
+      "plannedRequestSha256": "6f6f7af5a5f6d937913d6c9073773488ea9dca71b2512c5b189dd02f7d4919ca"
+    },
+    {
+      "id": "feedback-one",
+      "parentSceneId": "feedback-one",
+      "text": "Shade and a uniform hat protect students without relying on memory. More students in shade and 40 per cent less UV are impact measures, and they're stronger than self-report, because they were observed and measured. But one year can't show a fall in melanoma, which takes decades. So it's promising, with outcome evidence still to come. The classic mistake is saying it has already prevented melanoma.",
+      "hash": "2482afc28161",
+      "textSha256": "2482afc281619bcca3999ee7da5f055f9418576bb2a6a0ec8444f8374e104606",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-one.2482afc28161.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-one.2482afc28161.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-one.2482afc28161.generation.json",
+      "plannedRequestSha256": "e1c98d0d97170bb71ae9e13773de2f34f619c2d038cf1a307ff22210ea6f56f8"
+    },
+    {
+      "id": "attempt-two",
+      "parentSceneId": "attempt-two",
+      "text": "Second. A council ran an online campaign about type 2 diabetes. Afterwards, residents knew more about its risk factors, but physical activity didn't change. Many residents work long shifts, and few streets have footpaths. Propose two changes that would make the strategy more effective, and a way to measure its success. Pause here to answer.",
+      "hash": "2cdd90cb186f",
+      "textSha256": "2cdd90cb186f95f82eea4706681b4f5a6f4853f36ebbc22cbe59920063f3e1bb",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt-two.2cdd90cb186f.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt-two.2cdd90cb186f.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/attempt-two.2cdd90cb186f.generation.json",
+      "plannedRequestSha256": "a63090a324f9395f05e6e124be8b7643d797ca668bf830dad9870c4b6d86eb8e"
+    },
+    {
+      "id": "feedback-two",
+      "parentSceneId": "feedback-two",
+      "text": "Change the conditions, not just the message. Build footpaths and safe routes, so activity fits into travel and shift work. Offer free risk checks where people already go, like workplaces and pharmacies, then support those at high risk early. Measure activity first, then new diabetes rates over several years, with the same testing in a comparison area. The classic mistake is proposing more information.",
+      "hash": "a7061e871f84",
+      "textSha256": "a7061e871f847d10ffee53dbbe73d625e654ac23b5c3c35af36ea6cffa003457",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-two.a7061e871f84.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-two.a7061e871f84.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/feedback-two.a7061e871f84.generation.json",
+      "plannedRequestSha256": "22638036a27cebf492348521a71850db5d7dde1332e00256c1ca53e49c74ee05"
+    },
+    {
+      "id": "decision-rule",
+      "parentSceneId": "decision-rule",
+      "text": "So, for any campaign. Name the exposure it targets and the people it must reach. Then judge the evidence at three levels, process, impact and outcome, and ask who it missed. Then propose a change that removes a barrier for those people. Next, when genetics can help prevent disease.",
+      "hash": "da34b24c3765",
+      "textSha256": "da34b24c37654b72935ee6c274a0411f88b9f08b1590c98259cbf5ba63963516",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/decision-rule.da34b24c3765.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/decision-rule.da34b24c3765.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/decision-rule.da34b24c3765.generation.json",
+      "plannedRequestSha256": "65cc9f30dcd5f0186d544499e65aba6a83145bffccd03563f6e7b80b1902635b"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Biology-Y12-M8-B13-claude-2026-11-05-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

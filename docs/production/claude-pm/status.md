@@ -8433,3 +8433,146 @@ Codex stopped at 858 MB free. The cause was the webpack build cache (`node_modul
 - Root cleared the stale cache and Temp folders. C: has 29 GB free.
 - Codex: d03, d04, d14 and i10 are cleared (root's sampled playback passes in `work/root-playback-sample/README.md`; see the rulings above). Delete their HOLD files, write their queue JSONs, then render from d15 v3. The release chat (loop f9a26f25, every 30 minutes) is running and publishes whatever appears in `work/release-queue/`.
 - You do not need to delete retained bundles any more. If the disk falls under 2 GB again, report it and stop; do not delete other folders.
+
+Brief245: queued math-a12-d03 v3 after Root sampled-playback pass; work/release-queue/math-a12-d03-v3.json. Hash and captions rechecked; two playlist insertion positions based on current readback and preceding batch entries. No old public master to replace; no upload by Codex.
+
+Brief245: queued math-a12-d04 v3 after Root sampled-playback pass; work/release-queue/math-a12-d04-v3.json. Hash and captions rechecked; two playlist insertion positions based on current readback and preceding batch entries. No old public master to replace; no upload by Codex.
+
+Brief245: queued math-a12-d14 v3 after Root sampled-playback pass; work/release-queue/math-a12-d14-v3.json. Hash and captions rechecked; two playlist insertion positions based on current readback and preceding batch entries. No old public master to replace; no upload by Codex.
+
+Brief245: queued math-a12-i10 v3 after Root sampled-playback pass; work/release-queue/math-a12-i10-v3.json. Hash and captions rechecked; two playlist insertion positions based on current readback and preceding batch entries. No old public master to replace; no upload by Codex.
+
+Brief245 (root takeover): queued math-a12-d15 v3; work/release-queue/math-a12-d15-v3.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 14}, {'id': 'PLGdQ3MlxIMxM', 'position': 2}].
+
+## Root takeover of brief 245 rendering, 15 November 2026 (Codex out of usage for about 6 hours)
+Root is now running the brief 245 render queue with Codex's own tools (`work/brief245/prepare-render.mjs`, `prepare-checks.py`, `render-isolated.mjs`, `postcheck-after-render.py`), one lesson at a time, via `work/brief245/root/render-one.sh`. Root does the sampled-playback review and queues with `work/brief245/root/queue.py` (general version of `queue-root-cleared.py`; maps playlist videos by upload record, ledger or exact title). d15 v3 is queued. Order: i12 v2 (rendering), then i11 v2, i13 v2, f01 v2 (their v1 masters predate the 13 Nov source commit 6df0187b, so they are re-rendered), f02 to f07 v1, i01 v2, f08 to f15 v1. i14 v2 waits for its scene 2 re-voice (voice is Codex's job).
+Codex, when back: read this first, check `work/brief245/queue-state.json` "rootTakeover" and do not start a render while `tasklist` shows a Remotion render; tell root which lesson you take next.
+
+Brief245 (root takeover): queued math-a12-i12 v2; work/release-queue/math-a12-i12-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 27}, {'id': 'PLTUDJzY311JI', 'position': 9}].
+
+Brief245 (root takeover): queued math-a12-i12 v2; work/release-queue/math-a12-i12-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 28}, {'id': 'PLTUDJzY311JI', 'position': 9}].
+Root note: the first i12 v2 queue line above used a stale readback (before d15 published); root withdrew it before the release chat ran and re-queued at Full Course position 28. queue.py now refreshes the readback on every run.
+
+Brief245 (root takeover): queued math-a12-i14 v2; work/release-queue/math-a12-i14-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 29}, {'id': 'PLGdQ3MlxIMxM', 'position': 7}].
+
+Brief245 (root takeover): queued math-a12-i11 v2; work/release-queue/math-a12-i11-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 28}, {'id': 'PLTUDJzY311JI', 'position': 9}].
+
+Brief245 (root takeover): queued math-a12-i13 v2; work/release-queue/math-a12-i13-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 30}, {'id': 'PLGdQ3MlxIMxM', 'position': 7}].
+
+Brief245 (root takeover): queued math-a12-f01 v2; work/release-queue/math-a12-f01-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 32}, {'id': 'PLHjSojS8gtYk', 'position': 0}].
+
+Brief245 (root takeover): queued math-a12-f02 v1; work/release-queue/math-a12-f02-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 33}, {'id': 'PLHjSojS8gtYk', 'position': 1}].
+
+Brief245 (root takeover): queued math-a12-f03 v1; work/release-queue/math-a12-f03-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 34}, {'id': 'PLHjSojS8gtYk', 'position': 2}].
+
+Brief245 (root takeover): queued math-a12-f04 v1; work/release-queue/math-a12-f04-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 35}, {'id': 'PLHjSojS8gtYk', 'position': 3}].
+
+Brief245 (root takeover): queued math-a12-i01 v2; work/release-queue/math-a12-i01-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 19}, {'id': 'PLTUDJzY311JI', 'position': 0}].
+
+Brief245 (root takeover): queued math-a12-f05 v2; work/release-queue/math-a12-f05-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 37}, {'id': 'PLHjSojS8gtYk', 'position': 4}].
+
+Brief245 (root takeover): queued math-a12-f06 v1; work/release-queue/math-a12-f06-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 38}, {'id': 'PLHjSojS8gtYk', 'position': 5}].
+
+Brief245 (root takeover): queued math-a12-f07 v1; work/release-queue/math-a12-f07-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 39}, {'id': 'PLHjSojS8gtYk', 'position': 6}].
+
+## Root, 15 November 2026, 20:45: overnight split
+Root has rendered, checked and queued d15, i12, i14, i11, i13, i01 and f01 to f07; the release chat has published them. Root is rendering f08 to f15 tonight (chain 2, one render at a time; check `tasklist` for Remotion before any heavy job). Codex: do not render tonight. Your next job is brief 240 step 4: voice the statistics designs s01 onward (Google voice, the daily quota and ledger rules as before), so root can build them next. Voicing is light and does not clash with root's renders.
+
+## Root overnight job list, 15 November 2026 (owner asleep)
+1. Brief 245 chain 2: render, check and queue Maths f08 to f15 (in progress).
+2. Module 8 Biology b06 to b11, g01 to g03, p02 (rendered 9 Nov, held only on native playback): root decoded-frame sampling, then queue for the release chat.
+3. Module 8 Chemistry c04 v2 (private upload qAWhDz3d1nk since 12 Nov): sample; if it passes, set it public (owner standing permission for gate-passed videos).
+4. Last, if time remains: ElevenLabs (about 70k credits) for Y12 Chemistry and Biology designs that are not yet voiced. Owner will not read the scripts (owner, 15 Nov); an independent review agent reviews each script first, then root voices only passed scripts.
+Codex: voice statistics s01 onward (brief 240 step 4); do not render tonight.
+
+Root (15 Nov): queued bio-m8-g03 v1; work/release-queue/bio-m8-g03-v1.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 5 (route order).
+
+## Brief240 s01 voice hand-in
+
+math-a12-s01: docs/production/claude-pm/checks/m-a12-s01-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s01-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-die-top-1-v1.png, public/assets/maths/ma12-die-top-2-v1.png, public/assets/maths/ma12-die-top-3-v1.png, public/assets/maths/ma12-die-top-4-v1.png, public/assets/maths/ma12-die-top-5-v1.png, public/assets/maths/ma12-die-top-6-v1.png, public/assets/maths/ma12-coin-heads-v1.png, public/assets/maths/ma12-coin-tails-v1.png, public/assets/maths/ma12-spinner-base-v1.png, public/assets/maths/ma12-spinner-pointer-v1.png, public/assets/maths/ma12-desk-calendar-v1.png. 5964 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total471.57s, notes45s. Selected new-request billed usage1361 input/10009 output tokens; estimatedUSD0.090761. Measureddocs/production/claude-pm/lessons/math-a12-s01/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.065s in scene-04;187 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief240/voice-results/s01/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Root, 15 November 2026, late: Module 8 Biology release check
+The 10 unpublished Biology M8 masters (rendered 9 Nov, before the ink check existed) were sampled at playback speed. g03 passes and is queued (playlist PLWNEnRyti8uo position 5). p02, b06 and b07 each have a line or label crossing text (HOLD files in work/release-queue name the moments); fixes are committed (89fca2e0, f6d3bcff, bd07b193). Because three of four had collisions, root is running the ink check (`out/explainer/.repair-sweep/ink-check-any.sh`) on the remaining nine after the Maths chain, then fixing, re-rendering as v2, sampling and queueing in route order (b01-b05, g03, p02, b06-b11, g01, g02).
+
+## Brief240 s02 voice hand-in
+
+math-a12-s02: docs/production/claude-pm/checks/m-a12-s02-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s02-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-die-red-v1.png. 5797 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total469.93s, notes45s. Selected new-request billed usage1305 input/9970 output tokens; estimatedUSD0.090383. Measureddocs/production/claude-pm/lessons/math-a12-s02/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.166s in scene-09;180 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief240/voice-results/s02/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+Brief245 (root takeover): queued math-a12-f08 v1; work/release-queue/math-a12-f08-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 40}, {'id': 'PLHjSojS8gtYk', 'position': 7}].
+
+## Brief240 s03 voice hand-in
+
+math-a12-s03: docs/production/claude-pm/checks/m-a12-s03-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s03-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-pet-carrier-v1.png. 5981 reviewed narration characters across14 takes;1 exact-text takes served from cache;13 new requests. Total474.47s, notes45s. Selected new-request billed usage1353 input/10083 output tokens; estimatedUSD0.091423. Measureddocs/production/claude-pm/lessons/math-a12-s03/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.492s in scene-04;184 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:11 scenes, details inwork/brief240/voice-results/s03/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Brief240 s04 voice hand-in
+
+math-a12-s04: docs/production/claude-pm/checks/m-a12-s04-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s04-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-starting-blocks-v1.png, public/assets/maths/ma12-timing-display-v1.png. 6288 reviewed narration characters across18 takes;1 exact-text takes served from cache;17 new requests. Total493.40s, notes45s. Selected new-request billed usage1409 input/10556 output tokens; estimatedUSD0.095708. Measureddocs/production/claude-pm/lessons/math-a12-s04/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.328s in scene-16;194 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief240/voice-results/s04/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Brief240 s05 voice hand-in
+
+math-a12-s05: docs/production/claude-pm/checks/m-a12-s05-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s05-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-delivery-van-v1.png. 6264 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total532.27s, notes45s. Selected new-request billed usage1502 input/11527 output tokens; estimatedUSD0.104494. Measureddocs/production/claude-pm/lessons/math-a12-s05/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.202s in scene-04;210 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:10 scenes, details inwork/brief240/voice-results/s05/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Brief240 s06 voice hand-in
+
+math-a12-s06: docs/production/claude-pm/checks/m-a12-s06-redesign-learning-review.md: 0 source blockers for current reviewed source; historical findings retained; docs/production/claude-pm/checks/m-a12-s06-redesign-maths-check.md: 0 source blockers for current reviewed source; historical findings retained Everyday anchor retained; existing full anchor review/provenance unchanged. Plates: public/assets/maths/ma12-cookie-v1.png, public/assets/maths/ma12-choc-chip-v1.png. 6169 reviewed narration characters across16 takes;1 exact-text takes served from cache;15 new requests. Total515.93s, notes45s. Selected new-request billed usage1451 input/11119 output tokens; estimatedUSD0.100796. Measureddocs/production/claude-pm/lessons/math-a12-s06/measured/lesson.json; original pack/audio backups retained. Alignment and all bold-cue timings validated; worst word gap1.625s in scene-15;206 caption cues exported and canonical caption hashes checked. Machine retry/clipping/silence/low-score findings:13 scenes, details inwork/brief240/voice-results/s06/hand-in.json. Native artwork measurements and deviations remain as logged in the manifest. Human listening and built preview pending; no scene build or render. 
+
+## Brief 240 statistics voice quota stop, 15 November 2026
+
+s01 to s06 are voiced, checked and handed in individually above. The current Sydney quota day ledger has 86 requests. s07 needs 15 new requests, which would exceed the 99-request local daily cap, so its whole-lesson preflight stopped before any speech request. Resume at s07 after the 7 pm Sydney quota reset, subject to a fresh ledger and file gate. No render was started. Human listening and built previews remain pending.
+
+Brief245 (root takeover): queued math-a12-f10 v1; work/release-queue/math-a12-f10-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 41}, {'id': 'PLMyZoEwEJpNs', 'position': 0}].
+
+Brief245 (root takeover): queued math-a12-f11 v1; work/release-queue/math-a12-f11-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 42}, {'id': 'PLMyZoEwEJpNs', 'position': 1}].
+
+Brief245 (root takeover): queued math-a12-f13 v1; work/release-queue/math-a12-f13-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 43}, {'id': 'PLMyZoEwEJpNs', 'position': 2}].
+
+Brief245 (root takeover): queued math-a12-f14 v1; work/release-queue/math-a12-f14-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 44}, {'id': 'PLMyZoEwEJpNs', 'position': 3}].
+
+Brief245 (root takeover): queued math-a12-f15 v1; work/release-queue/math-a12-f15-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 45}, {'id': 'PLMyZoEwEJpNs', 'position': 4}].
+
+## Root, 16 November 2026, 00:45: overnight progress
+Queued and checked (root sampled playback): Maths d15, i12, i14, i11, i13, i01, f01 to f08, f10, f11, f13, f14, f15; Biology M8 g03. The release chat publishes them in order.
+Held with fixes committed, v2 renders queued in `work/brief245/root/chain3.sh`: Maths f05 (done, v2 queued), f09 (3bcb24d2), f12 (patch applied by chain 3 before rendering); Biology M8 p02, b06, b07.
+Running now: the ink check (`ink-check-any.sh`) on Biology M8 b08 to b11, g01, g02, p02, b06, b07; then chain 3 renders f09 v2, f12 v2 and Biology p02/b06/b07 v2. Results: `work/brief245/root/chain.log` and `C:/Users/kygs/AppData/Local/Temp/claude/maths-repair/ink/`.
+Codex: do not render until chain 3 reports CHAIN3 DONE in that log.
+
+Brief245 (root takeover): queued math-a12-f09 v2; work/release-queue/math-a12-f09-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 41}, {'id': 'PLMyZoEwEJpNs', 'position': 0}].
+
+Brief245 (root takeover): queued math-a12-f12 v2; work/release-queue/math-a12-f12-v2.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 44}, {'id': 'PLMyZoEwEJpNs', 'position': 3}].
+
+Root (15 Nov): queued bio-m8-b06 v2; work/release-queue/bio-m8-b06-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 6 (route order).
+
+Root (15 Nov): queued bio-m8-b07 v2; work/release-queue/bio-m8-b07-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 7 (route order).
+
+Root (15 Nov): queued bio-m8-b08 v2; work/release-queue/bio-m8-b08-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 8 (route order).
+
+Root (15 Nov): queued bio-m8-b09 v2; work/release-queue/bio-m8-b09-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 9 (route order).
+
+Root (15 Nov): queued bio-m8-b10 v2; work/release-queue/bio-m8-b10-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 10 (route order).
+
+Root (15 Nov): queued bio-m8-b11 v2; work/release-queue/bio-m8-b11-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 11 (route order).
+
+Root (15 Nov): queued bio-m8-g01 v2; work/release-queue/bio-m8-g01-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 12 (route order).
+
+Root (15 Nov): queued bio-m8-g02 v2; work/release-queue/bio-m8-g02-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 13 (route order).
+
+Root (15 Nov): queued bio-m8-p02 v2; work/release-queue/bio-m8-p02-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 6 (route order).
+
+Root (15 Nov): queued bio-m8-g03 v2; work/release-queue/bio-m8-g03-v2.json. Root sampled playback pass; playlist PLWNEnRyti8uo position 5 (route order).
+
+
+## Root ElevenLabs voicing, 16 November 2026 (Module 8 b12, b13, b14, b16, c13; readiness review work/brief245/root/m8-voice-readiness.md)
+
+Plan allowance: 40000 credits. Plan allowance less cumulative billed characters: 10547. Cycle complete.
+
+bio-m8-b12: measured, 5969 characters, 5894 credits used, 15 scenes generated, 1 reused, 495.03 seconds. Report: docs/production/claude-pm/lessons/m8b12/measured/measured-report.json.
+
+bio-m8-b13: measured, 5693 characters, 5618 credits used, 14 scenes generated, 1 reused, 459.10 seconds. Report: docs/production/claude-pm/lessons/m8b13/measured/measured-report.json.
+
+bio-m8-b14: measured, 5963 characters, 5888 credits used, 15 scenes generated, 1 reused, 481.70 seconds. Report: docs/production/claude-pm/lessons/m8b14/measured/measured-report.json.
+
+bio-m8-b16: measured, 6010 characters, 5935 credits used, 14 scenes generated, 1 reused, 473.63 seconds. Report: docs/production/claude-pm/lessons/m8b16/measured/measured-report.json.
+
+chem-m8-c13: measured, 6193 characters, 6118 credits used, 16 scenes generated, 1 reused, 496.63 seconds. Report: docs/production/claude-pm/lessons/m8c13/measured/measured-report.json.
+
+Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
