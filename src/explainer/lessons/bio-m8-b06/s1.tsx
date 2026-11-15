@@ -170,7 +170,7 @@ export const SceneCFNormal: React.FC = () => {
 			<DrawPath d={`M${zx},${zy} L${CELL.x + plW(P.cftr, CELL.h) + 20},${CELL.y + CELL.h - 60}`} at={K4.lining + 4} dur={18} color={INK} width={3} dash="8 8" />
 			</g>
 			<Glow cx={zx} cy={zy} rx={50} ry={110} at={K4.lining} len={60} />
-			<Wr x={AIR.x} y={AIR.y + AIR.h + 46} text="cells lining the airway" at={K4.lining} size={34} color={INK} hand />
+			<g opacity={1 - prog(f, K4.thin - 10, 10)}><Wr x={AIR.x} y={AIR.y + AIR.h + 46} text="cells lining the airway" at={K4.lining} size={34} color={INK} hand /></g>
 			<Callout from={ch[4]} x={520} y={250} text="CFTR: a channel protein" at={K4.cftr} size={38} color={GEN} />
 			<Wr x={520} y={300} text="made from the CFTR gene" at={K4.gene} size={32} color={GEN} hand />
 			<IonFlow chans={ch} at={K4.chloride} color="#3c8a4a" label="Cl⁻" n={12} />
