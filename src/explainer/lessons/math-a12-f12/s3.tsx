@@ -84,7 +84,7 @@ export const S13: React.FC = () => {
 			{['A₁ = 0 × 1.005 + 400 = 400', 'A₂ = 400 × 1.005 + 400 = 802', 'A₃ = 802 × 1.005 + 400 = 1206.01'].map((t, i) => <Row key={i} x={96} y={490 + i * 64} at={rowAt[i]} size={44} dim={i < 2 ? prog(fr, k.cent, 12) * 0.6 : 0} small={38}>{t}</Row>)}
 			<AnswerBox x={96} y={700} at={k.cent} size={52}>A₃ = $1,206.01</AnswerBox>
 			<MistakeCard x={96} y={810} w={900} at={k.a1} size={44} wrong={<>A₁ = $402</>} caption="deposit 1 earns no interest in month 1" />
-			<ThreeCals x={1000} y={420} h={350} labels={rowAt.map((a, i) => ({at: a, text: ['$400', '$802', '$1,206.01'][i]}))} stamps={m => [{text: ['+$0.00', '+$2.00', '+$4.01'][m - 1], tone: 'interest', at: rowAt[m - 1], dx: -26, dy: -26}, {text: '+$400', tone: 'deposit', at: rowAt[m - 1] + 8, dx: 26, dy: 26}]} />
+			<ThreeCals x={1000} y={420} h={350} labels={rowAt.map((a, i) => ({at: a, text: ['$400', '$802', '$1,206.01'][i]}))} stamps={m => [{text: ['+$0.00', '+$2.00', '+$4.01'][m - 1], tone: 'interest', at: rowAt[m - 1], dx: -26, dy: -46}, {text: '+$400', tone: 'deposit', at: rowAt[m - 1] + 8, dx: 26, dy: 4}]} />
 			<Hand x={1000} y={880} at={k.first} size={38} color={IN.ink} w={880}>month 1 interest is on $0: nothing</Hand>
 		</>
 	);
