@@ -100,7 +100,7 @@ export const S14: React.FC = () => {
 			<QStrip parts={['A loan of $50,000 has interest at ', {u: '4.8% p.a., compounded monthly', at: k.reps}, ', with repayments of ', {u: '$900 per month', at: k.reps + 20}, '. Show that the amount owing ', {u: 'after n months', at: k.terms}, ' is Aₙ = 50 000(1.004)ⁿ − 225 000(1.004ⁿ − 1).']} />
 			<GivensStrip x={96} y={338} size={38} maxW={1300} items={[{content: 'P = $50,000', role: 'balance', at: k.reps}, {content: 'r = 0.048 ÷ 12 = 0.004', role: 'interest', at: k.reps + 10}, {content: 'M = $900', role: 'repay', at: k.reps + 20}]} />
 			<Row x={96} y={420} at={k.reps} size={46} dim={prog(fr, k.its, 12)} small={38}>A<sub>n</sub> = 50 000(1.004)<Pow>n</Pow> − 900<span style={{color: TEAL}}>(1 + 1.004 + … + 1.004<Pow>n−1</Pow>)</span></Row>
-			<Hand x={760} y={490} at={k.ratio} out={k.its + 40} size={40} color={AMBER}>GP: first term 1, ratio 1.004, n terms</Hand>
+			<Hand x={760} y={490} at={k.ratio} out={k.its - 6} size={40} color={AMBER}>GP: first term 1, ratio 1.004, n terms</Hand>
 			<Row x={96} y={520} at={k.its} size={48} dim={prog(fr, k.thousand, 12)} small={40}>{'     '}= 50 000(1.004)<Pow>n</Pow> − 900 × <Frac n={<>1.004<Pow>n</Pow> − 1</>} d="0.004" /></Row>
 			<Hand x={1000} y={590} at={k.nine} out={k.using - 8} size={40} color={POS}>900 ÷ 0.004 = 225 000</Hand>
 			<AnswerBox x={96} y={680} at={k.thousand} size={50}>A<Sb>n</Sb> = 50 000(1.004)<Pow>n</Pow> − 225 000(1.004<Pow>n</Pow> − 1)  ✓</AnswerBox>
