@@ -192,7 +192,7 @@ export const SceneStomata: React.FC = () => {
 			<Tag x={1250} y={156} w={574} text="same magnification, same field area; several random, non-overlapping fields; a few leaves of one species" size={28} color="#8d857a" ink={GREYT} fill="#f1eee7" at={K10.mag} />
 			<Sx x={1260} y={366} text={`lower surface: ${f >= K10.lower ? lowN : '?'}`} size={52} color={f >= K10.lower ? AMBER_INK : GREYT} weight={800} at={ON} />
 			<Sx x={1260} y={440} text={`upper surface: ${upN > 0 ? upN : '?'}`} size={52} color={f >= K10.upper ? TEAL : GREYT} weight={800} at={ON} />
-			<g opacity={prog(f, K10.few, 12)}>{[0, 1, 2].map(i => <circle key={i} cx={1680 + i * 52} cy={520 - (i % 2) * 24} r={22} fill="none" stroke={GREYT} strokeWidth={3} strokeDasharray="5 4" />)}<Sx x={1732} y={580} text="more fields" size={28} color={GREYT} hand anchor="middle" at={ON} /></g>
+			<g opacity={prog(f, K10.few, 12)}>{[0, 1, 2].map(i => <circle key={i} cx={1680 + i * 52} cy={520 - (i % 2) * 24} r={22} fill="none" stroke={GREYT} strokeWidth={3} strokeDasharray="5 4" />)}<Sx x={1648} y={528} text="more fields" size={28} color={GREYT} hand anchor="end" at={ON} /></g>
 			<PicH p={PL.stoma} cx={1330} cy={570} h={150} />
 			<T x={1420} y={570} w={400} text="each mark is a stoma, like this" size={32} color={INK} at={ON} />
 			<Tag x={1250} y={680} w={574} text="illustrative equal-area counts per field, not a species-wide result" size={28} color="#8d857a" ink={GREYT} fill="#f1eee7" at={K10.lower} />
