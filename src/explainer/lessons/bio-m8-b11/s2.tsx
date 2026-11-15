@@ -23,6 +23,8 @@ export const SceneDose: React.FC = () => {
 	const f = useCurrentFrame();
 	const fill = [K6.rose, K6.rose + 12, K6.rose + 24, K6.rose + 36];
 	const tops = [0, 1, 2, 3].map(i => [bar54X(G6, i), bar54Top(G6, i) - 64] as [number, number]);
+	// arrow tip at the top-left of the tallest bar, below the y-axis title band
+	const tip: [number, number] = [tops[3][0] - 56, tops[3][1] + 46];
 	return (
 		<Svg>
 			<Title text="1954: a dose-response" />
@@ -33,8 +35,8 @@ export const SceneDose: React.FC = () => {
 			<g opacity={0.4 + 0.6 * prog(f, K6.causes, 12)}><Chip x={110} y={446} text="causes of death well recorded" size={36} color={TEAL} ink={INK} /></g>
 			<Bars54 g={G6} fill={fill} pulses={[[0, K6.lowest], [3, K6.highest]]} size={28} vsize={34} />
 			<g opacity={prog(f, K6.dr, 12)}>
-				<DrawPath d={`M${tops[0][0]},${tops[0][1] + 40} Q${(tops[1][0] + tops[2][0]) / 2},${tops[1][1] - 10} ${tops[3][0] - 20},${tops[3][1]}`} at={K6.dr} dur={22} color={BLUE} width={7} />
-				<path d={`M${tops[3][0] - 44},${tops[3][1] - 10} L${tops[3][0] - 20},${tops[3][1]} L${tops[3][0] - 40},${tops[3][1] + 18}`} fill="none" stroke={BLUE} strokeWidth={7} strokeLinecap="round" opacity={prog(f, K6.dr + 18, 6)} />
+				<DrawPath d={`M${tops[0][0]},${tops[0][1] + 40} Q${(tops[1][0] + tops[2][0]) / 2},${tops[1][1] - 10} ${tip[0]},${tip[1]}`} at={K6.dr} dur={22} color={BLUE} width={7} />
+				<path d={`M${tip[0] - 24},${tip[1] - 10} L${tip[0]},${tip[1]} L${tip[0] - 20},${tip[1] + 18}`} fill="none" stroke={BLUE} strokeWidth={7} strokeLinecap="round" opacity={prog(f, K6.dr + 18, 6)} />
 			</g>
 			<T x={110} y={590} w={620} text="dose-response: more exposure, more disease" size={46} color={BLUE} at={K6.dr} />
 			<Sx x={110} y={740} text="1951: smoking recorded" size={34} color={TEAL} hand at={K6.recorded} />
@@ -73,8 +75,8 @@ export const SceneJudgeCohort: React.FC = () => {
 			</g>
 			<Sx x={420} y={756} text="can't be fully ruled out" size={36} color={INK} hand at={K7.unmeasured} />
 			{packV > 0.01 ? <g opacity={packV}>
-				<PicH p={PL.pack} cx={880} cy={700} h={140} />
-				<DrawPath d={`M${820},${770} L${940},${630}`} at={K7.strongest + 6} dur={10} color={RED} width={7} />
+				<PicH p={PL.pack} cx={926} cy={700} h={140} />
+				<DrawPath d={`M${866},${770} L${986},${630}`} at={K7.strongest + 6} dur={10} color={RED} width={7} />
 				<Chip x={870} y={790} text="an RCT wasn't possible" size={30} color={RED} ink={INK} anchor="middle" />
 			</g> : null}
 			<FrameStrip x={1000} y={150} w={824} rowH={154} gap={12} lit={[K7.design, K7.strengths, K7.limitations, K7.judgement]} slots={[
@@ -161,7 +163,7 @@ export const SceneCause: React.FC = () => {
 			</g> : null}
 			<g opacity={prog(f, K8.early, 14)}>
 				<GTag x={96} y={806} text="correlation alone isn't causation; this is several lines of evidence" size={30} />
-				<GTag x={1100} y={806} text="Bradford Hill, 1965" size={28} />
+				<GTag x={1590} y={806} text="Bradford Hill, 1965" size={28} />
 			</g>
 			<StudyTimeline ccAt={ON} ccDim={ON} cohAt={ON} cohEnd={() => 2001} cohHi={K8.first} cohDim={K8.countries} />
 			{void CTRL}{void scribbleEllipse}

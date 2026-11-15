@@ -135,7 +135,7 @@ export const CycleRing: React.FC<{g: CG; at?: number; o?: number; dot?: (f: numb
 						<circle cx={x} cy={y} r={tr} fill={CARD} stroke={lit > 0.5 ? BLUE : EDGE} strokeWidth={lit > 0.5 ? 5 : 3} />
 						{thumbs ? <Pic p={plates[i]} cx={x} cy={y} w={tr * 1.78} /> : null}
 						{labels ? <Sx x={lx} y={ly} text={ST_NAME[i]} size={size} color={lit > 0.5 ? BLUE : INK} anchor={right ? 'start' : 'end'} hand weight={700} at={ON} /> : null}
-						{letters ? <Sx x={lx} y={ly + size * 0.95} text={ST_LET[i]} size={Math.max(26, size * 0.78)} color={GREYT} anchor={right ? 'start' : 'end'} weight={700} at={ON} /> : null}
+						{letters ? <Sx x={lx} y={sn < 0 ? ly - size * 0.95 : ly + size * 0.95} text={ST_LET[i]} size={Math.max(26, size * 0.78)} color={GREYT} anchor={right ? 'start' : 'end'} weight={700} at={ON} /> : null}
 					</g>
 				);
 			})}

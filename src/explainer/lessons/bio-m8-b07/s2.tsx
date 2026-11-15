@@ -171,15 +171,15 @@ export const SceneRisk: React.FC = () => {
 				<g key={t} opacity={1 - 0.55 * (i < 2 ? prog(f, mods[i + 1], 12) : 0)}><Chip x={1320} y={200 + i * 86} text={t} size={36} color={TEAL} ink={INK} at={a} /></g>
 			))}
 			<g opacity={prog(f, K8.add, 14)}>
-				<line x1={1360} x2={1810} y1={830} y2={830} stroke={INK_SOFT} strokeWidth={4} />
-				<rect x={1380} y={830 - 70 * smooth(prog(f, K8.asb, 16))} width={110} height={70 * smooth(prog(f, K8.asb, 16))} rx={8} fill="#9aa3a8" />
-				<rect x={1520} y={830 - 90 * smooth(prog(f, K8.asb + 10, 16))} width={110} height={90 * smooth(prog(f, K8.asb + 10, 16))} rx={8} fill={AMBER} />
-				<rect x={1660} y={830 - 380 * stack} width={110} height={380 * stack} rx={8} fill={RED} opacity={0.8} />
-				<g opacity={prog(f, K8.together + 20, 12)}><line x1={1650} x2={1790} y1={830 - 160} y2={830 - 160} stroke={INK} strokeWidth={3} strokeDasharray="8 6" /><Sx x={1640} y={830 - 166} text="sum of the two" size={28} color={INK} anchor="end" hand at={-1000} /></g>
-				<Sx x={1435} y={866} text="asbestos" size={30} color={INK} anchor="middle" hand at={K8.asb} />
-				<Sx x={1575} y={866} text="smoking" size={30} color={INK} anchor="middle" hand at={K8.asb + 8} />
-				<Sx x={1715} y={866} text="together" size={30} color={INK} anchor="middle" hand at={K8.together} />
-				<GTag x={1380} y={690} text="more than the sum" size={30} at={K8.far} />
+				<line x1={1360} x2={1810} y1={800} y2={800} stroke={INK_SOFT} strokeWidth={4} />
+				<rect x={1380} y={800 - 70 * smooth(prog(f, K8.asb, 16))} width={110} height={70 * smooth(prog(f, K8.asb, 16))} rx={8} fill="#9aa3a8" />
+				<rect x={1520} y={800 - 90 * smooth(prog(f, K8.asb + 10, 16))} width={110} height={90 * smooth(prog(f, K8.asb + 10, 16))} rx={8} fill={AMBER} />
+				<rect x={1660} y={800 - 350 * stack} width={110} height={350 * stack} rx={8} fill={RED} opacity={0.8} />
+				<g opacity={prog(f, K8.together + 20, 12)}><line x1={1650} x2={1790} y1={800 - 160} y2={800 - 160} stroke={INK} strokeWidth={3} strokeDasharray="8 6" /><Sx x={1640} y={800 - 166} text="sum of the two" size={28} color={INK} anchor="end" hand at={-1000} /></g>
+				<Sx x={1435} y={836} text="asbestos" size={30} color={INK} anchor="middle" hand at={K8.asb} />
+				<Sx x={1575} y={836} text="smoking" size={30} color={INK} anchor="middle" hand at={K8.asb + 8} />
+				<Sx x={1715} y={836} text="together" size={30} color={INK} anchor="middle" hand at={K8.together} />
+				<GTag x={1380} y={660} text="more than the sum" size={30} at={K8.far} />
 			</g>
 			<TobaccoStrip t={{c0: ON, e0: ON, c1: ON, e1: ON, c2: ON, e2: ON, dim1: ON, dim2: ON, hotE: [{slot: 0, at: K8.prob}]}} />
 		</Svg>
@@ -207,7 +207,7 @@ export const SceneVerdict: React.FC = () => {
 			<Sx x={236} y={420} text="work exposure" size={34} color={INK} anchor="middle" hand at={-1000} />
 			<T x={116} y={650} w={250} text="cutting asbestos sheeting" size={30} at={K9.worker} />
 			<rect x={400} y={380} width={280} height={330} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
-			<Wisps a={[450, 610]} b={[630, 470]} n={3} spread={30} width={7} />
+			<Wisps a={[450, 570]} b={[630, 482]} n={3} spread={30} width={7} />
 			<Sx x={540} y={420} text="childhood exposure" size={34} color={INK} anchor="middle" hand at={-1000} />
 			<T x={420} y={650} w={250} text="a parent's smoke" size={30} at={K9.child} />
 			{g > 0.01 ? <g opacity={g}>

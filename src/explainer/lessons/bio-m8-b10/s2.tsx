@@ -21,7 +21,7 @@ export const SceneMortality: React.FC = () => {
 			<Title text="Worked: mortality" />
 			<TaskStrip text="In 2025: how many deaths from type 2 diabetes per 100,000 people per year?" at={ON} />
 			<BoardLeft top={260}>
-				<Givens x={124} y={490} w={540} size={36} lh={92} items={[
+				<Givens x={124} y={512} w={540} size={36} lh={92} items={[
 					{t: 'deaths from type 2 diabetes in 2025: 16 people', at: K6.sixteen, pulse: [K6.over]},
 					{t: 'population: 80,000 people', at: ON, pulse: [K6.over + 10, K6.whole]},
 					{t: 'time window: 1 year', at: K6.in2025},
@@ -31,8 +31,8 @@ export const SceneMortality: React.FC = () => {
 			<FracRow x={sx} yc={370} lhs="mortality rate" num="deaths" den="population" tail="× 100,000" size={sz} at={K6.third} denPulse={K6.whole} />
 			<FracRow x={sx} yc={560} lhs="" num="16" den="80,000" tail="× 100,000" size={sz} at={K6.over} denPulse={K6.whole + 10} denLabel="the whole population" />
 			<Framed x={sx} y={780} text="= 20 per 100,000 per year" at={K6.twenty} size={48} />
-			<Mistake x={1240} y={500} text="16 ÷ 4,400 (people with it)" size={38} at={K6.not} cross={K6.share} note="the share of patients who die: a different measure" noteW={560} />
-			<Sx x={1240} y={460} text="not the people who had it" size={34} color={INK} hand at={K6.not} />
+			<Mistake x={1240} y={530} text="16 ÷ 4,400 (people with it)" size={38} at={K6.not} cross={K6.share} note="the share of patients who die: a different measure" noteW={560} />
+			<Sx x={1240} y={490} text="not the people who had it" size={34} color={INK} hand at={K6.not} />
 			<MeasuresBar y={930} h={110} size={34} cols={[{lit: ON, val: '200 per 100,000 per year', valAt: ON}, {lit: ON, val: '5.5% = 5,500 per 100,000', valAt: ON}, {lit: K6.third, val: '20 per 100,000 per year', valAt: K6.twenty + 20}]} />
 		</Svg>
 	);
@@ -107,7 +107,7 @@ export const SceneCrude: React.FC = () => {
 				const x = 720 + i * 100, base = 500, h = 230 * av[i];
 				return <g key={a}><rect x={x} y={base - h} width={64} height={h} rx={6} fill="none" stroke={INK_SOFT} strokeWidth={3} strokeDasharray="8 6" /><rect x={x} y={base - h * af} width={64} height={h * af} rx={6} fill={AMBER_INK} opacity={0.85} /><Sx x={x + 32} y={base + 36} text={a} size={30} color={INK} anchor="middle" weight={700} at={ON} /></g>;
 			})}
-			<GTag x={684} y={548} text="AIHW: cancer incidence by age" size={26} at={K8.older} />
+			<GTag x={684} y={234} text="AIHW: cancer incidence by age" size={26} at={K8.older} />
 			<Box2 x={1164} y={160} w={660} h={420} />
 			<Sx x={1188} y={212} text="Australia's age mix" size={36} color={BLUE} hand at={ON} />
 			<Pyramid x={1290} y={250} w={190} h={240} shape={mix(YOUNG, OLD, 0.25 * mt)} color="#7f9cbd" label="1995" bands o={0.35 + 0.65 * prog(f, K8.bigger, 14)} size={32} />
@@ -154,8 +154,8 @@ export const SceneCollect: React.FC = () => {
 			<Sx x={110} y={830} text="convert before you compare" size={44} color={BLUE} hand at={K9.convert} />
 			<Axes g={gl} yTicks={[0, 40, 80]} xTicks={[2000, 2010, 2020]} fmt={n => `${n}`} yLabel="new cases per 100,000 per year" yLabelPulse={K9.units} size={28} yLabelW={640} grid />
 			<Line g={gl} pts={pts} at={K9.line} dur={50} color="#3f6283" dots />
-			<Sx x={1000} y={gl.y + 120} text="line graph:" size={34} color={BLUE} anchor="end" hand at={K9.line} />
-			<Sx x={1000} y={gl.y + 160} text="change over time" size={30} color={INK} anchor="end" hand at={K9.line} />
+			<Sx x={1000} y={gl.y + 198} text="line graph:" size={34} color={BLUE} anchor="end" hand at={K9.line} />
+			<Sx x={1000} y={gl.y + 238} text="change over time" size={30} color={INK} anchor="end" hand at={K9.line} />
 			<Chip x={1440} y={gl.y + 6} text="screening starts: more cases found" size={28} color={AMBER_INK} at={K9.screening} />
 			{prog(f, K9.screening, 10) > 0.01 ? <line x1={1440} x2={1440} y1={gl.y + 60} y2={gl.y + gl.h} stroke={AMBER_INK} strokeWidth={3} strokeDasharray="8 6" opacity={prog(f, K9.screening, 12)} /> : null}
 			<Axes g={gb} yTicks={[0, 40, 80]} fmt={n => `${n}`} yLabel="new cases per 100,000 per year" yLabelPulse={K9.units + 10} size={28} yLabelW={640} />

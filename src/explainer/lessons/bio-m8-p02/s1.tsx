@@ -46,6 +46,12 @@ export const SceneHook: React.FC = () => {
 		<Svg>
 			<Title text="What does the bubble really measure?" />
 			<GTag x={1824} y={44} text="example data" size={28} anchor="end" />
+			{/* the zoomed plant and stand fade out above the heading band, so the kicker and title stay clear */}
+			<defs>
+				<linearGradient id="p02-hook-fade" gradientUnits="userSpaceOnUse" x1={0} y1={136} x2={0} y2={160}><stop offset={0} stopColor="#000" /><stop offset={1} stopColor="#fff" /></linearGradient>
+				<mask id="p02-hook-band" maskUnits="userSpaceOnUse" x={0} y={0} width={1920} height={1080}><rect x={0} y={0} width={1920} height={1080} fill="url(#p02-hook-fade)" /></mask>
+			</defs>
+			<g mask="url(#p02-hook-band)">
 			<Cam keys={[[0, 1, 960, 560], [K1.tiny + 10, 1, 960, 560], [K1.tiny + 46, 1.75, mx, my], [K1.fan - 40, 1.75, mx, my], [K1.fan - 4, 1, 960, 560]]}>
 				<rect x={560} y={940} width={1100} height={26} rx={10} fill="#e9e1d1" />
 				<Pot cx={H.cx} cy={H.cy} w={H.w} mm={mm} bubbleAt={K1.tiny} bubbleGlow={K1.tiny} />
@@ -54,6 +60,7 @@ export const SceneHook: React.FC = () => {
 					<Fan cx={400} cy={380} h={420} on={K1.fan + 6} to={[lv[0] - 60, lv[1] - 30]} />
 				</g>
 			</Cam>
+			</g>
 			<GTag x={600} y={150} text="water vapour: invisible" size={30} at={K1.leaving} out={K1.tiny} />
 			<Chip x={96} y={720} text="about 4 mm per minute (still air)" size={40} color={AMBER_INK} ink={INK} at={K1.four} />
 			<Chip x={96} y={806} text="with a fan: more than twice as fast" size={40} color={AMBER_INK} ink={INK} at={K1.twice} />
@@ -133,7 +140,7 @@ export const ScenePotometer: React.FC = () => {
 			<Pot cx={M3.cx} cy={M3.cy} w={M3.w} mm={mm} bubbleAt={K3.bubble} bubbleGlow={K3.bubble} nums={K3.scale} flow={{at: K3.column, out: K3.push - 4, speed: 1.3}} ends={{a: 2, b: 24, at: K3.rate, out: K3.push, label: 'distance in a set time'}} />
 			<T x={850} y={248} w={420} text="potometer: measures how fast a shoot takes up water" size={40} at={K3.device} />
 			<Ring cx={bx} cy={by} rx={70} ry={40} at={K3.sealed} out={K3.joined + 40} color={TEAL} />
-			<Ring cx={(c0 + c7) / 2} cy={cy} rx={(c0 - c7) / 2 + 30} ry={40} at={K3.narrow} out={K3.column} color={TEAL} />
+			<Ring cx={(c0 + c7) / 2} cy={cy + 18} rx={(c0 - c7) / 2 + 70} ry={74} at={K3.narrow} out={K3.column} color={TEAL} />
 			<Ring cx={rx} cy={ry + 50 * k + 20} rx={44} ry={90} at={K3.reservoir} color={TEAL} />
 			{push > 0.01 ? <g opacity={push} transform={`translate(0,${pd})`}>
 				<path d={`M${rx},${ry - 110} L${rx},${ry - 40}`} stroke={INK} strokeWidth={8} strokeLinecap="round" />
@@ -196,7 +203,7 @@ export const SceneAirtight: React.FC = () => {
 	const [fx, fy] = P(POT.farEnd[0], POT.farEnd[1]);
 	const [lx, ly] = P(POT.leaves[0], POT.leaves[1]);
 	const mm = mmKeys([[K4.enters + 20, -3], [K4.far + 20, 0]]);
-	const magO = vis(f, K4.then - 4, K4.settle + 30, 14);
+	const magO = vis(f, K4.then - 4, K4.settle - 14, 14);
 	const sk = 0.45, ssx = 455 - (690 - 420) * sk, ssy = 680 - (892 - 450) * sk;
 	const clockT = smooth(prog(f, K4.settle, 50));
 	return (

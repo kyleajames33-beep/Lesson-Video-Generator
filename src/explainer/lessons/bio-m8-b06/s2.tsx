@@ -79,7 +79,7 @@ export const SceneSilicosis: React.FC = () => {
 			<GroupTab lit={1} litAt={K7.env} />
 			<PicF p={P.lungs} x={LU.x} y={LU.y} h={LU.h} o={1 - q} />
 			<PicF p={P.silic} x={LU.x} y={LU.y} h={LU.h} o={q} />
-			<DustFlow tx={tx} ty0={ty0 - 60} ty1={ty1} pts={pts} at={K7.fine} every={3} o={1 - 0.6 * q} />
+			<DustFlow tx={tx} ty0={Math.max(ty0 - 60, 188)} ty1={ty1} pts={pts} at={K7.fine} every={3} o={1 - 0.6 * q} />
 			<Wr x={RX} y={250} text="engineered stone: fine silica dust" at={K7.cutting} size={38} color={INK} weight={800} />
 			<Wr x={RX} y={296} text="Australia banned new engineered stone benchtops, panels and slabs" at={K7.once} size={26} color="#3f3a33" weight={600} />
 			<Wr x={RX} y={330} text="from 1 July 2024; old stone and other silica work still carry risk" at={K7.once + 14} size={26} color="#3f3a33" weight={600} />

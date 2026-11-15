@@ -290,8 +290,8 @@ export const Survival: React.FC<{g: SG; at: number; size?: number; o?: number}> 
 			<DrawPath d={path(NEVER)} at={at} dur={24} color={INK_SOFT} width={4} dash="10 8" />
 			<DrawPath d={path(STOP30)} at={at} dur={24} color={TEAL} width={6} />
 			<DrawPath d={path(KEPT)} at={at} dur={24} color={AMBER_INK} width={6} />
-			<Sx x={sx(g, 90) - 4} y={sy(g, 26) - 30} text="never smoked" size={size} color={INK_SOFT} anchor="end" hand weight={700} at={at + 20} />
-			<Sx x={sx(g, 63)} y={sy(g, 70) - 34} text="stopped at about 30" size={size + 2} color={TEAL} anchor="start" hand weight={700} at={at + 22} />
+			<Sx x={g.x + g.w + 40} y={g.y + 50} text="never smoked" size={size} color={INK_SOFT} anchor="end" hand weight={700} at={at + 20} />
+			<Sx x={g.x + g.w + 40} y={g.y + 100} text="stopped at about 30" size={size + 2} color={TEAL} anchor="end" hand weight={700} at={at + 22} />
 			<Sx x={sx(g, 72)} y={sy(g, 40) + 14} text="kept smoking" size={size + 2} color={AMBER_INK} anchor="end" hand weight={700} at={at + 24} />
 		</g>
 	);

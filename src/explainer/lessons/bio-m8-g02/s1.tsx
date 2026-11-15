@@ -133,7 +133,7 @@ export const SceneQ1Mistake: React.FC = () => (
 		<Q1Col />
 		<Mistake x={790} y={170} text="the campaign raised returns by 9 points" size={42} at={ON} cross={KX.classic + 8} />
 		<PairBars x={880} base={720} h={330} bw={64} t={{aB: ON, aA: ON, bB: ON, bA: ON, brA: ON, brB: ON, diff: ON, pulseB: KX.regB, pulseD: KX.sep}} />
-		<Tag x={1300} y={560} w={330} text="change without the campaign" size={30} color={GREYT} at={KX.regB} />
+		<Tag x={1300} y={560} w={384} text="change without the campaign" size={30} color={GREYT} at={KX.regB} />
 		<PicH p={PL.kit} cx={1700} cy={420} h={230} />
 		<GTag x={1420} y={300} text="b13: SunSmart had no comparison group" size={26} at={KX.sep} />
 		<Framed x={790} y={914} text="about 7 points can be linked to the campaign" size={44} color={TEAL} at={ON} />

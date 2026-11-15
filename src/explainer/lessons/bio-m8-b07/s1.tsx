@@ -93,7 +93,7 @@ export const SceneHook: React.FC = () => {
 				<Sx x={tlx(TL1, 1965)} y={300} text="fibro widely used" size={32} color={GREYT} anchor="middle" hand at={-1000} />
 			</g>
 			<g opacity={prog(f, K1.y2003, 12) * (1 - 0.0 * pulse(f, 0, 1))}>
-				<DrawPath d={`M${tlx(TL1, 2003)},${270} L${tlx(TL1, 2003)},${500}`} at={K1.y2003} dur={12} color={RED} width={5} dash="12 8" />
+				<DrawPath d={`M${tlx(TL1, 2003)},${270} L${tlx(TL1, 2003)},${470}`} at={K1.y2003} dur={12} color={RED} width={5} dash="12 8" />
 				<Sx x={tlx(TL1, 2003) - 16} y={440} text="ban: 31 Dec 2003" size={42} color={RED} anchor="end" hand at={K1.y2003 + 6} />
 			</g>
 			<DropDots pts={DOTS1} at={K1.hundreds} step={3} r={10} color={AMBER_INK} />
@@ -184,8 +184,8 @@ export const SceneLung: React.FC = () => {
 				<Damage x={rungX(sx, dmg, pitch)} y={sy} o={1 - mut} pulse={pulse(f, K3.copied, 30)} r={12} />
 				{mut > 0.01 ? <rect x={rungX(sx, dmg, pitch) - 12} y={sy - 6} width={24} height={58} rx={6} fill={AMBER} stroke={AMBER_INK} strokeWidth={3} opacity={mut} /> : null}
 				<CopyFork x={fx} y={sy} gap={46} />
-				<RepairBlob x={rungX(sx, n - 2, pitch)} y={sy - 50} s={0.9} />
-				<Sx x={rungX(sx, n - 2, pitch)} y={sy + 110} text="repair" size={32} color={INK_SOFT} anchor="middle" hand at={-1000} />
+				<RepairBlob x={1700} y={sy - 50} s={0.9} />
+				<Sx x={1700} y={sy + 110} text="repair" size={32} color={INK_SOFT} anchor="middle" hand at={-1000} />
 			</g>
 			<GTag x={1090} y={530} text="Module 6: mutagens" size={28} at={K3.copied} />
 			<Sx x={1090} y={404} text="copied before it's repaired" size={38} color={INK} hand at={K3.copied} />
@@ -280,13 +280,13 @@ export const SceneVessels: React.FC = () => {
 			<Title text="Pathway 3: the arteries and the heart" />
 			<g transform={`translate(${HT.cx},${HT.cy}) scale(${s}) translate(${-HT.cx},${-HT.cy})`}><Pic p={PL.heart} cx={HT.cx} cy={HT.cy} w={HT.w} /></g>
 			<Zoomline from={hp(FP.coronary[0], FP.coronary[1])} to={[AR.cx - AR.w / 2 + 20, 420]} at={-1000} />
-			<Sx x={HT.cx} y={250} text="coronary artery" size={32} color={INK} anchor="middle" hand at={-1000} />
+			<Sx x={HT.cx} y={208} text="coronary artery" size={32} color={INK} anchor="middle" hand at={-1000} />
 			<PicPair a={PL.art} b={PL.artP} cx={AR.cx} cy={AR.cy} w={AR.w} at={K5.build} dur={44} />
 			{[0, 1, 2, 3].map(i => <path key={i} d={`M${lx - 80 + i * 46},${ly + 14 + i * 10} l10,-12 l10,12 l10,-12`} fill="none" stroke={RED} strokeWidth={4} strokeLinecap="round" opacity={vis(f, K5.damage + i * 4, K5.build + 30, 10)} />)}
 			<Lab x={1150} y={220} t="lining damaged" at={K5.damage} dim={K5.fatty} size={40} />
 			<GTag x={1150} y={244} text="endothelium" size={28} at={K5.damage + 20} out={K5.fatty} />
 			<Ptr a={[1140, 210]} b={[lx + 40, ly + 20]} at={K5.damage} out={K5.fatty} />
-			<Ptr a={[1140, 310]} b={[pqx + 30, pqy + 20]} at={K5.plaque} out={K5.carbon + 30} color={AMBER_INK} />
+			<Ptr a={[1132, 296]} b={[pqx + 30, pqy + 20]} at={K5.plaque} out={K5.carbon + 30} color={AMBER_INK} />
 			<T x={1150} y={320} w={680} text="plaque: fatty deposits and white blood cells narrow the artery" size={40} at={K5.plaque} out={K5.carbon + 30} color={INK} />
 			<g opacity={rbcOn}><Pic p={PL.rbc} cx={RB.cx} cy={RB.cy} w={RB.w} /></g>
 			{rbcOn > 0.01 ? cells.map(([x, y], i) => (

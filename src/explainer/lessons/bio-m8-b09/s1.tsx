@@ -139,7 +139,7 @@ export const SceneCycle: React.FC = () => {
 			<GTag x={1250} y={490} text="another check: copying finished?" size={28} at={K3.checkpoints + 30} />
 			<g opacity={0.35 + 0.65 * prog(f, K3.met, 14)}>
 				<Pic p={PL.meta} cx={1600} cy={720} w={250} />
-				<DrawPath d={`M${sp[0] + 30},${sp[1] - 10} Q1380,780 1470,740`} at={K3.met} dur={16} color={BLUE} width={4} dash="12 9" />
+				<DrawPath d={`M${sp[0] + 30},${sp[1] - 10} Q1290,920 1478,760`} at={K3.met} dur={16} color={BLUE} width={4} dash="12 9" />
 			</g>
 			<T x={1360} y={900} w={470} text="spindle checkpoint: every chromosome attached to both poles?" size={34} color={BLUE} at={K3.met} />
 			<GTag x={1360} y={980} text="Module 5" size={28} at={K3.met} />
@@ -168,7 +168,7 @@ export const SceneP53: React.FC = () => {
 		<Svg>
 			<Title text="p53: repair or self-destruct" />
 			<CycleRing g={RING4} size={26} labels={false} letters={false} dot={dot} gates={[{show: ON, lit: K4.stops, closed: K4.stops}, {show: ON}, {show: ON}]} />
-			<Sx x={430} y={250} text="cycle stopped" size={34} color={AMBER_INK} anchor="middle" hand at={K4.stops} out={K4.many} />
+			<Sx x={458} y={250} text="cycle stopped" size={34} color={AMBER_INK} anchor="middle" hand at={K4.stops} out={K4.many} />
 			<PicPair a={PL.inter} b={PL.apop} cx={C4.cx} cy={C4.cy} w={C4.w} at={K4.apop + 6} dur={50} />
 			{sp1.map(([x, y], i) => <Spark key={'a' + i} x={x} y={y} s={20} at={ON} gone={K4.fix + 4 + i * 4} />)}
 			{sp2.map(([x, y], i) => <Spark key={'b' + i} x={x} y={y} s={20} at={K4.too - 10 + i * 3} gone={K4.apop + 30} />)}

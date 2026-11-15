@@ -393,6 +393,8 @@ export const ConfTri: React.FC<{x: number; y: number; w: number; h: number; at?:
 	let cur = words.length ? words[0][0] : '?';
 	for (const [t, a] of words) if (f >= a) cur = t;
 	const pu = pulseAt === undefined ? 0 : pulse(f, pulseAt, 40);
+	// with a label under the apex, the links start below it so they don't run through the words
+	const sy = label ? ay + size * 1.95 + 22 : ay + 34;
 	const node = (cx: number, cy: number, t: string, col: string, fill: string) => {
 		const nw = mw(t, size, true, 700) + 40;
 		return <g><rect x={cx - nw / 2} y={cy - size * 0.85} width={nw} height={size * 1.7} rx={size * 0.85} fill={fill} stroke={col} strokeWidth={3} /><Sx x={cx} y={cy + size * 0.33} text={t} size={size} color={INK} anchor="middle" hand weight={700} at={-1000} /></g>;
@@ -400,8 +402,8 @@ export const ConfTri: React.FC<{x: number; y: number; w: number; h: number; at?:
 	return (
 		<g opacity={v} transform={pu > 0.01 ? `translate(${ax},${(ay + by) / 2}) scale(${1 + 0.05 * pu}) translate(${-ax},${-(ay + by) / 2})` : undefined}>
 			<line x1={lx} x2={rx} y1={by} y2={by} stroke={INK_SOFT} strokeWidth={4} strokeDasharray="10 8" />
-			<Arrow a={[ax - 40, ay + 34]} b={[lx + 20, by - 40]} color={GREYT} width={4} />
-			<Arrow a={[ax + 40, ay + 34]} b={[rx - 20, by - 40]} color={GREYT} width={4} />
+			<Arrow a={[ax - 40, sy]} b={[lx + 20, by - 40]} color={GREYT} width={4} />
+			<Arrow a={[ax + 40, sy]} b={[rx - 20, by - 40]} color={GREYT} width={4} />
 			{node(lx, by, 'energy drinks', BLUE, CARD)}
 			{node(rx, by, 'type 2 diabetes', BLUE, CARD)}
 			{node(ax, ay, cur, '#8d857a', GREY_FILL)}

@@ -104,8 +104,8 @@ export const SceneDesigns: React.FC = () => {
 					const tv = tg ? prog(f, K2.balance + (i % 5) * 4, 10) : 0;
 					return <g key={'r' + i}><circle cx={x} cy={y} r={22} fill={k > 0.5 ? (GRP[i] ? '#d9e8f6' : '#f6e4c4') : '#ece8df'} stroke={k > 0.5 ? (GRP[i] ? BLUE : AMBER_INK) : '#a8a092'} strokeWidth={2.5} />{tv > 0.01 ? <rect x={x + 8} y={y - 26} width={16} height={16} rx={3} fill={TAGC[(tg as [number, number])[1]]} opacity={tv} /> : null}</g>;
 				})}
-				<Sx x={1110} y={386} text="group A" size={34} color={AMBER_INK} anchor="middle" hand at={K2.decide + 40} />
-				<Sx x={1520} y={386} text="group B" size={34} color={BLUE} anchor="middle" hand at={K2.decide + 40} />
+				<Sx x={1110} y={362} text="group A" size={34} color={AMBER_INK} anchor="middle" hand at={K2.decide + 40} />
+				<Sx x={1520} y={362} text="group B" size={34} color={BLUE} anchor="middle" hand at={K2.decide + 40} />
 				{(['age', 'diet', 'genes'] as string[]).map((t, i) => <g key={t} opacity={prog(f, K2.balance + i * 6, 10)}><rect x={1720} y={430 + i * 56} width={20} height={20} rx={4} fill={TAGC[i]} /><Sx x={1748} y={448 + i * 56} text={t} size={30} color={INK} hand at={ON} /></g>)}
 				<Sx x={990} y={814} text="chance helps balance them; no guarantee" size={38} color={AMBER_INK} hand at={K2.balance + 20} />
 			</g>

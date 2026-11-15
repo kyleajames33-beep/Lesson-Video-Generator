@@ -149,7 +149,7 @@ export const SceneBeta: React.FC = () => {
 			<YearsStrip g={YS7} yr={yr} size={30} />
 			<Sx x={YS7.x + 40} y={YS7.y + 60} text="glucose held near normal" size={38} color={TEAL} hand at={K7.close} out={K7.over} />
 			<Chip x={YS7.x + 40} y={YS7.y + 84} text="no symptoms yet" size={34} color="#8d857a" ink={INK} at={K7.dont} out={K7.over} />
-			<Sx x={YS7.x + YS7.w - 10} y={YS7.y + 60} text="glucose stays high" size={40} color={AMBER_INK} anchor="end" hand at={K7.high} />
+			<Sx x={YS7.x + YS7.w - 10} y={YS7.y - 16} text="glucose stays high" size={40} color={AMBER_INK} anchor="end" hand at={K7.high} />
 			<Chip x={YS7.x + YS7.w - 10} y={YS7.y + 84} text="type 2 diabetes" size={36} color={AMBER_INK} ink={INK} anchor="end" at={K7.type2} />
 			<GTag x={96} y={810} text="type 1: immune cells destroy beta cells; not nutritional" size={26} at={K7.keep} />
 			<Sx x={760} y={660} text="years of high glucose damage blood vessels" size={40} color={INK} hand at={K7.damage} />

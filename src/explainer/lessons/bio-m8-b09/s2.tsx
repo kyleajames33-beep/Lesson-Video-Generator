@@ -166,15 +166,15 @@ export const SceneBenign: React.FC = () => {
 				{brk < 0.5 ? <DrawPath d={smoothPath(FP.bm.filter(([x]) => x > FP.gap[0] - 40 && x < FP.gap[1] + 40).map(([x, y]) => mR(x, y) as P2))} at={K9.bm + 10} dur={14} color="#2a8fd6" width={6} /> : null}
 			</g> : null}
 			<Ring cx={deep[0]} cy={deep[1] - 10} rx={70} ry={50} at={K9.break} color={AMBER_INK} width={5} />
-			<Ptr a={[deep[0] + 150, deep[1] + 120]} b={[deep[0] + 30, deep[1] + 20]} at={K9.bm + 40} color={AMBER_INK} />
-			<Sx x={deep[0] + 150} y={deep[1] + 160} text="breaks through" size={38} color={AMBER_INK} hand at={K9.bm + 40} />
+			<Ptr a={[BLK.r + 332, deep[1] - 6]} b={[deep[0] + 30, deep[1] + 20]} at={K9.bm + 40} color={AMBER_INK} />
+			<Sx x={BLK.r + 340} y={deep[1] + 6} text="breaks through" size={38} color={AMBER_INK} hand at={K9.bm + 40} />
 			{vp > 0.01 ? <rect x={BLK.r - 300} y={lyY - 60} width={560} height={120} rx={40} fill={AMBER} opacity={0.22 * vp} /> : null}
 			<g opacity={prog(f, K9.vessels, 12)}>
-				<DrawPath d={`M${BLK.r - 290},${lyY} C${BLK.r - 150},${lyY - 24} ${BLK.r},${lyY + 20} ${BLK.r + 160},${lyY - 10}`} at={K9.vessels} dur={20} color="#b7d6c8" width={10} />
-				<Sx x={BLK.r + 180} y={lyY + 10} text="lymph vessel" size={34} color={TEAL} hand at={K9.vessels + 8} />
+				<DrawPath d={`M${BLK.r - 290},${lyY} C${BLK.r - 150},${lyY - 24} ${BLK.r},${lyY + 20} ${BLK.r + 310},${lyY - 10}`} at={K9.vessels} dur={20} color="#b7d6c8" width={10} />
+				<Sx x={BLK.r + 340} y={lyY + 10} text="lymph vessel" size={34} color={TEAL} hand at={K9.vessels + 8} />
 			</g>
 			<T x={96} y={826} w={760} text="basement membrane: a thin sheet under the top layer of skin" size={36} color="#1f6fa8" at={K9.sheet} />
-			<GTag x={96} y={150} text="most moles never become melanoma" size={28} at={K9.stays} />
+			<GTag x={680} y={150} text="most moles never become melanoma" size={28} at={K9.stays} />
 			<GTag x={1000} y={846} text="lymph: fluid that drains back to the blood" size={28} at={K9.vessels + 20} />
 			<Chain lit={[ON, ON, ON, ON]} />
 		</Svg>
@@ -208,7 +208,7 @@ export const SceneMetastasis: React.FC = () => {
 				<line x1={snapA[0]} y1={snapA[1]} x2={lerp(snapA[0], snapB[0], 0.42)} y2={lerp(snapA[1], snapB[1], 0.42) - 8 * snap} stroke={RED_} strokeWidth={9} strokeLinecap="round" />
 				<line x1={lerp(snapA[0], snapB[0], 0.58)} y1={lerp(snapA[1], snapB[1], 0.58) + 8 * snap} x2={snapB[0]} y2={snapB[1]} stroke={RED_} strokeWidth={9} strokeLinecap="round" />
 			</g> : <line x1={snapA[0]} y1={snapA[1]} x2={snapB[0]} y2={snapB[1]} stroke={TEAL} strokeWidth={6} strokeLinecap="round" opacity={prog(f, K10.break, 10)} />}
-			{vis(f, K10.break, undefined, 10) > 0.01 ? <Sx x={snapA[0] - 30} y={snapA[1] + 80} text="links snap" size={32} color={RED_} hand at={K10.lost + 12} /> : null}
+			{vis(f, K10.break, undefined, 10) > 0.01 ? <g><Ptr a={[snapA[0] + 30, 176]} b={[lerp(snapA[0], snapB[0], 0.5), lerp(snapA[1], snapB[1], 0.5) - 18]} at={K10.lost + 12} color={RED_} /><Sx x={snapA[0] - 20} y={158} text="links snap" size={32} color={RED_} hand at={K10.lost + 12} /></g> : null}
 			{[0, 1, 2, 3, 4].map(i => {
 				const t0 = K10.most + i * 6;
 				const u = smooth(prog(f, t0, 60));
@@ -226,7 +226,7 @@ export const SceneMetastasis: React.FC = () => {
 				{[[PL.lungs, 1380], [PL.liver, 1560], [PL.brain, 1740]].map(([p, x], i) => <PicH key={i} p={p as typeof PL.lungs} cx={x as number} cy={790} h={i === 1 ? 90 : 120} />)}
 			</g>
 			{prog(f, K10.lungs, 10) > 0.01 ? <g opacity={prog(f, K10.lungs, 12)}>
-				{[1380, 1560, 1740].map((x, i) => <DrawPath key={i} d={`M1560,610 L${x},${720}`} at={K10.lungs + i * 5} dur={12} color={AMBER_INK} width={3} dash="8 7" />)}
+				{[1380, 1560, 1740].map((x, i) => <DrawPath key={i} d={`M1560,690 L${x},${720}`} at={K10.lungs + i * 5} dur={12} color={AMBER_INK} width={3} dash="8 7" />)}
 			</g> : null}
 			{STEPS.map(([t, k], i) => {
 				const a = K10[k];

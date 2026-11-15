@@ -100,11 +100,14 @@ export type Fill = {t: string; at: number};
 export const EvalStrip: React.FC<{x?: number; y?: number; w?: number; h?: number; fills: (Fill | undefined)[]; size?: number; pulseAt?: [number, number][]; o?: number}> = ({x = 790, y = 878, w = 1050, h = 160, fills, size = 28, pulseAt = [], o = 1}) => {
 	const f = useCurrentFrame();
 	if (o <= 0.01) return null;
-	const gap = 12, sw = (w - gap * 3) / 4;
+	const gap = 12, sw0 = (w - gap * 3) / 4;
+	// slot 2's heading ('what the evidence shows') is the longest: give it 12 px from slot 4 so it clears its border
+	const ws = [sw0, sw0 + 12, sw0, sw0 - 12];
 	return (
 		<g opacity={o}>
 			{SLOTS.map((lab, i) => {
-				const sx = x + i * (sw + gap);
+				const sx = x + ws.slice(0, i).reduce((a, b) => a + b + gap, 0);
+				const sw = ws[i];
 				const fl = fills[i];
 				const v = fl ? prog(f, fl.at, 12) : 0;
 				const pu = pulseAt.filter(p => p[0] === i).reduce((m, p) => Math.max(m, pulse(f, p[1], 40)), 0);
@@ -175,7 +178,7 @@ export const PairBars: React.FC<{x: number; base: number; h: number; bw?: number
 		const xx = bx(i1) + bw + 10;
 		return (
 			<g opacity={k}>
-				{pu > 0.01 ? <rect x={bx(i0) - 8} y={Y(v1) - 60} width={bw * 2 + gap + 72} height={Y(v0) - Y(v1) + 70} rx={12} fill={AMBER} opacity={0.3 * pu} /> : null}
+				{pu > 0.01 ? <rect x={bx(i0) - 8} y={Y(v1) - 60} width={bw * 2 + gap + 96} height={Y(v0) - Y(v1) + 70} rx={12} fill={AMBER} opacity={0.3 * pu} /> : null}
 				<path d={`M${xx},${Y(v0)} l10,0 L${xx + 10},${Y(v1)} l-10,0`} fill="none" stroke={col} strokeWidth={4} />
 				<Sx x={xx + 16} y={(Y(v0) + Y(v1)) / 2 + 12} text={label} size={size + 4} color={col} weight={800} at={-1000} />
 			</g>

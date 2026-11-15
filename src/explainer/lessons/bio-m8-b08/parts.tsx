@@ -102,7 +102,7 @@ export const YearsStrip: React.FC<{g: YS; yr: (f: number) => number; at?: number
 		<g opacity={v}>
 			<rect x={g.x} y={g.y} width={g.w} height={g.h} fill={CARD} opacity={0.9} />
 			<rect x={g.x} y={Y(0.38)} width={g.w} height={Y(0.22) - Y(0.38)} fill={TEAL} opacity={0.14} />
-			<Sx x={g.x + g.w - 8} y={Y(0.22) - 10} text="usual glucose range" size={size - 2} color={TEAL} anchor="end" hand at={-1000} />
+			<Sx x={g.x + g.w - 8} y={Y(0.22) + Math.round((size - 2) * 0.7) + 2} text="usual glucose range" size={size - 2} color={TEAL} anchor="end" hand at={-1000} />
 			<path d={`M${g.x},${g.y} L${g.x},${g.y + g.h} L${g.x + g.w},${g.y + g.h}`} fill="none" stroke={INK} strokeWidth={3.5} />
 			{[0, 5, 10, 15].map(t => <g key={t}><line x1={X(t)} x2={X(t)} y1={g.y + g.h} y2={g.y + g.h + 10} stroke={INK} strokeWidth={3} /><Sx x={X(t)} y={g.y + g.h + size * 1.3} text={`${t}`} size={size} color={INK} anchor="middle" weight={700} at={-1000} /></g>)}
 			<Sx x={g.x + g.w / 2} y={g.y + g.h + size * 2.5} text="years" size={size} color={INK} anchor="middle" weight={700} at={-1000} />

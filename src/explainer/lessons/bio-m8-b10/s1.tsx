@@ -172,7 +172,7 @@ export const ScenePrevalence: React.FC = () => {
 			<Title text="Worked: prevalence, two ways" />
 			<TaskStrip text="On 30 June 2025: what share of the city lives with type 2 diabetes?" at={ON} />
 			<BoardLeft top={260}>
-				<Givens x={124} y={490} w={540} size={36} lh={92} items={[
+				<Givens x={124} y={512} w={540} size={36} lh={92} items={[
 					{t: 'living with type 2 diabetes on 30 June 2025: 4,400 people', at: K5.living, pulse: [K5.over]},
 					{t: 'population: 80,000 people', at: ON, pulse: [K5.over + 10]},
 					{t: 'time window: 1 date', at: K5.june, pulse: [K5.day]},

@@ -133,8 +133,8 @@ export const SceneMeasures: React.FC = () => {
 				<Sx x={leafTop[0] + 60} y={leafTop[1] - 100} text="out: loss ≈ uptake" size={36} color={INK} hand at={ON} />
 			</g>
 			<g opacity={prog(f, K9.photo, 12)}>
-				<DrawPath d={`M${mid[0] + 10},${mid[1]} Q${mid[0] + 120},${mid[1] - 20} ${mid[0] + 190},${mid[1] - 120}`} at={K9.photo} dur={16} color={TEAL} width={4} />
-				<T x={mid[0] + 150} y={mid[1] - 150} w={330} text="a little used in photosynthesis or kept in cells" size={32} color={TEAL} />
+				<DrawPath d={`M${mid[0] + 10},${mid[1]} Q${mid[0] + 120},${mid[1] - 20} ${mid[0] + 186},${mid[1] - 88}`} at={K9.photo} dur={16} color={TEAL} width={4} />
+				<T x={mid[0] + 196} y={mid[1] - 150} w={330} text="a little used in photosynthesis or kept in cells" size={32} color={TEAL} />
 			</g>
 			<PicH p={PL.plant} cx={850} cy={790} h={250} />
 			<GTag x={850} y={930} text="not tested" size={30} anchor="middle" at={K9.roots} />

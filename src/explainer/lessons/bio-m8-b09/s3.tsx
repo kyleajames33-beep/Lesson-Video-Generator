@@ -133,7 +133,7 @@ export const SceneFeedbackTwo: React.FC = () => {
 			<P53 x={1690} y={230} s={34} o={1 - 0.7 * prog(f, KD.losing + 6, 14)} />
 			<AnsBox x={760} y={610} w={1064} h={150} label="answer (b)" size={40} hint="why it is unlikely to have spread" lines={[{t: 'not through the basement membrane: can’t reach blood or lymph vessels yet', at: KD.bm + 10}]} />
 			<Framed x={770} y={850} text="lost p53 → mutations build up" at={KD.build} size={42} />
-			<Mistake x={1300} y={800} text="cervical cancer is caught" size={36} at={KD.classic} cross={KD.catch} note="the virus is caught; the cancer comes from the cell’s own genes" noteW={520} />
+			<Mistake x={1300} y={892} text="cervical cancer is caught" size={36} at={KD.classic} cross={KD.catch} note="the virus is caught; the cancer comes from the cell’s own genes" noteW={520} />
 		</Svg>
 	);
 };

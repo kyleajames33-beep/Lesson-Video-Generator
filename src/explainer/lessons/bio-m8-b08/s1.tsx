@@ -65,7 +65,7 @@ export const SceneChain: React.FC = () => {
 		{head: 'nutrient', w: 336, showAt: K2.chain, litAt: K2.nutrient, thumbW: 130, rows: [{t: 'what is eaten', at: K2.nutrient + 6}], thumb: (x, y, w, h) => <PicH p={PL.bread} cx={x + w / 2} cy={y + h / 2} h={h * 0.44} />},
 		{head: 'normal job', w: 336, showAt: K2.chain + 8, litAt: K2.job, thumbW: 150, rows: [{t: 'its job in the body', at: K2.job + 6}], thumb: (x, y, w, h) => <g><Gear x={x + 44} y={y + h * 0.36} r={30} spin={spinA} grey={f >= K2.takes ? 1 : 0} /><Gear x={x + 104} y={y + h * 0.72} r={30} spin={-spinB} hot={f >= K2.over ? 1 : 0} /></g>},
 		{head: 'change', w: 336, showAt: K2.chain + 16, litAt: K2.changes, thumbW: 130, rows: [{t: 'too little, or too much?', at: K2.changes + 6}], thumb: (x, y, w, h) => <Pic p={PL.rbcFe} cx={x + w / 2} cy={y + h / 2} w={w * 0.92} />},
-		{head: 'effect', w: 336, showAt: K2.chain + 24, litAt: K2.effect, thumbW: 150, rows: [{t: 'the effect on health', at: K2.effect}], thumb: (x, y, w, h) => <g><PicH p={PL.legR} cx={x + 30} cy={y + h / 2} h={h * 0.9} /><PicH p={PL.pancreas} cx={x + 100} cy={y + h / 2} h={h * 0.3} /></g>},
+		{head: 'effect', w: 336, showAt: K2.chain + 24, litAt: K2.effect, thumbW: 150, rows: [{t: 'the effect on health', at: K2.effect}], thumb: (x, y, w, h) => <g><PicH p={PL.legR} cx={x + 30} cy={y + h / 2} h={h * 0.9} /><PicH p={PL.pancreas} cx={x + 82} cy={y + h / 2} h={h * 0.26} /></g>},
 	];
 	return (
 		<Svg>
@@ -78,7 +78,7 @@ export const SceneChain: React.FC = () => {
 				<Pic p={PL.artP} cx={1730} cy={300} w={200} />
 			</g>
 			<Sx x={480} y={312} text="too little" size={38} color={AMBER_INK} hand at={K2.little} />
-			<Sx x={1400} y={312} text="too much" size={38} color={AMBER_INK} anchor="end" hand at={K2.much} />
+			<Sx x={1350} y={312} text="too much" size={38} color={AMBER_INK} anchor="end" hand at={K2.much} />
 			<rect x={96} y={420} width={196} height={300} rx={18} fill={CARD} stroke={EDGE} strokeWidth={3} />
 			<BalanceBeam x={194} y={540} tilt={tiltSteps([[K2.little, -1], [K2.much, 1], [K2.takes, -1], [K2.over, 1]])} L={70} size={36} single />
 			<PathwayStrip x={310} y={420} h={300} boxes={boxes} gap={56} size={40} headSize={36} />
@@ -138,8 +138,8 @@ export const SceneIron: React.FC = () => {
 			<Title text="Iron: where did it go?" />
 			<PicPair a={PL.rbc} b={PL.rbcFe} cx={cx} cy={cy} w={w} at={K3.hb} dur={40} />
 			<GTag x={96} y={790} text="b06: the iron chain" size={30} />
-			<Ptr a={[700, 330]} b={pbPt(PL.rbc, cx, cy, w)(1077, 1024)} at={K3.smaller} out={K3.question} color={AMBER_INK} />
-			<Sx x={700} y={318} text="smaller, paler cells" size={40} color={AMBER_INK} hand at={K3.smaller} out={K3.question} />
+			<Ptr a={[700, 294]} b={pbPt(PL.rbc, cx, cy, w)(1077, 1024)} at={K3.smaller} out={K3.question} color={AMBER_INK} />
+			<Sx x={700} y={281} text="smaller, paler cells" size={40} color={AMBER_INK} hand at={K3.smaller} out={K3.question} />
 			<HbInset X={1090} Y={300} R={125} f0={K3.iron} little={K3.little} hb={K3.hb} from={pbPt(PL.rbc, cx, cy, w)(1077, 1024)} />
 			<g>
 				<Sx x={1270} y={212} text="haemoglobin" size={36} color={INK} hand at={-1000} />
