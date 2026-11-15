@@ -80,7 +80,7 @@ export const S07: React.FC = () => {
 			<Row x={96} y={344} at={k.set} size={52} dim={prog(fr, k.toget, 12)} small={42}>3 × 2<Pow>n − 1</Pow> &gt; 1000</Row>
 			<Row x={96} y={414} at={k.div + 40} size={52} dim={prog(fr, k.then, 12)} small={42}>2<Pow>n − 1</Pow> &gt; 1000/3</Row>
 			<Row x={96} y={484} at={k.logs} size={52} dim={prog(fr, k.son, 12)} small={42}>(n − 1) log 2 &gt; log(1000/3)</Row>
-			<Hand x={700} y={492} at={k.pos} size={42} color={AMBER}>log 2 &gt; 0: sign stays</Hand>
+			<Hand x={736} y={492} at={k.pos} size={42} color={AMBER}>log 2 &gt; 0: sign stays</Hand>
 			<Row x={96} y={556} at={k.then} size={50}>n − 1 &gt; log(1000/3) ÷ log 2 <span style={{color: POS, opacity: prog(fr, k.e838, 10)}}>≈ 8.38</span></Row>
 			<Row x={96} y={630} at={k.son} size={50}>n &gt; <span style={{color: POS}}>9.38</span></Row>
 			<AnswerBox x={96} y={712} at={k.tenth} size={54}>n = 10: the 10th term</AnswerBox>
