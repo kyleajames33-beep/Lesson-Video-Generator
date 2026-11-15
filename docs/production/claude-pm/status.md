@@ -8576,3 +8576,11 @@ bio-m8-b16: measured, 6010 characters, 5935 credits used, 14 scenes generated, 1
 chem-m8-c13: measured, 6193 characters, 6118 credits used, 16 scenes generated, 1 reused, 496.63 seconds. Report: docs/production/claude-pm/lessons/m8c13/measured/measured-report.json.
 
 Details and recording/dry-run checks: work/brief174/results.json and work/brief174/*.log. No design edits or commits. Human listening pending.
+
+Brief245 (root takeover): queued math-a12-s01 v1; work/release-queue/math-a12-s01-v1.json. Root sampled playback and sheet review pass; positions [{'id': 'PLMcUYX3DYIeY', 'position': 48}, {'id': 'PLXt0kIDaf1wI', 'position': 0}].
+
+## Root, 16 November 2026, morning
+- Biology M8: all 10 collision-fixed v2 masters checked and queued (b06-b11, g01, g02 published overnight; p02 and g03 queued; g03 v2 replaces public vFEJi_eng3g). Findings: work/brief245/root/bio-m8-ink-findings.md.
+- ElevenLabs: bio-m8-b12, b13, b14, b16 and chem-m8-c13 voiced (29,453 characters; commit 8049060e) after an independent readiness review (work/brief245/root/m8-voice-readiness.md). Still held: b15, b17 (owner cultural decisions); c10-c12 (measured spectra); c09 (brief not built yet).
+- Maths statistics: s01 built, graded A, rendered and queued; s02 and s03 graded A and rendering; s04-s06 and the five M8 lessons above are with two build agents.
+- Codex: resumes voicing s07 at 19:00 (Google quota). Do not render while root's chain is running (check tasklist).
