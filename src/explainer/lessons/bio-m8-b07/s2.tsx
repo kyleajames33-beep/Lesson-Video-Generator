@@ -33,7 +33,7 @@ export const SceneDose: React.FC = () => {
 			<g opacity={1 - prog(f, K6.ticket - 16, 14)}>
 				<PicH p={PL.lungsS} cx={1660} cy={600} h={360} />
 				<Wisps a={[1660, 330]} b={[1660, 500]} n={2} spread={16} width={6} />
-				<Sx x={1660} y={830} text="smoke in, every day" size={36} color={INK} anchor="middle" hand at={K6.smoking} />
+				<g opacity={1 - prog(f, K6.cancer + 14, 12)}><Sx x={1660} y={830} text="smoke in, every day" size={36} color={INK} anchor="middle" hand at={K6.smoking} /></g>
 			</g>
 			<T x={96} y={222} w={1300} text="dose: how much of the agent gets in, over how long" size={46} at={K6.dose} />
 			<Sx x={96} y={350} text="pack-years = packs per day × years" size={54} color={INK} weight={700} at={K6.pack} />
@@ -218,7 +218,7 @@ export const SceneVerdict: React.FC = () => {
 				<Sx x={GG.x} y={GG.y - 24} text="Australian adults who smoke daily (%)" size={32} color={INK} weight={700} at={-1000} />
 				<DrawPath d={ln(SMK)} at={K9.pop} dur={50} color={INK} width={6} />
 				<circle cx={ggx(2025)} cy={ggy(5.8)} r={12} fill={AMBER} stroke={AMBER_INK} strokeWidth={3} opacity={prog(f, K9.y2025, 10)} />
-				<Sx x={ggx(2025) - 10} y={ggy(5.8) - 26} text="2025: 5.8% of adults" size={36} color={AMBER_INK} anchor="end" hand at={K9.y2025} />
+				<Sx x={ggx(2025) - 18} y={ggy(5.8) + 38} text="2025: 5.8% of adults" size={32} color={AMBER_INK} anchor="end" hand at={K9.y2025} />
 				<DrawPath d={ln(LCM)} at={K9.lung} dur={50} color={TEAL} width={5} dash="14 9" />
 				<Sx x={ggx(2010)} y={ggy(25) - 10} text="lung cancer rate, men (shape)" size={30} color={TEAL} hand at={K9.lung + 20} />
 				<Sx x={ggx(2000)} y={ggy(36)} text="decades behind" size={38} color={AMBER_INK} anchor="middle" hand at={K9.decades} />
