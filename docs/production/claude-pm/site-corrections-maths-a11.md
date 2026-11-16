@@ -66,3 +66,4 @@ Full old text and corrections are in section 8 of the named packs (`pre-design/m
 - **S11-09** `working-with-functions/lesson15.sa.html`: "$y = a(x-r)^3 + k$ ... a single point of inflection" is 2017 wording. Use "The other syllabus form is $y = kx^3$".
 - **S11-10** `working-with-functions/lesson19.sa.html`, card 07: "The syllabus places this in MAV-11-01" should read "In Year 11 the optimum comes from the vertex".
 - **Minor:** lesson16's tangent definition should say a non-vertical line, for parabolas. Lesson04's "surge pricing" is really tiered pricing.
+- **Minor (w17 pack):** the tangent wording in working-with-functions should limit "meets the curve once" to non-vertical lines on a parabola (same as the lesson16 note above).
