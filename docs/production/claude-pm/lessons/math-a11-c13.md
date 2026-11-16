@@ -1,8 +1,18 @@
 # Maths A11 C13: Which differentiation rule, or combination, does a function need? Simplify first, then the last step done sets the outside rule, then work inwards layer by layer (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,554 characters by script (see "Narration length estimate"), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,561 characters by script (see "Narration length estimate"), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c13-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scenes 12 and 7 (claims about the rest of the year): **accepted**, reviewer's wording. Scene 12: "That's every rule for combining functions, and how to choose between them." Scene 7: "Later you'll meet new functions, like e to the x, and this same test still works on them."
+2. Optional, key note 1 (too long for one line): **accepted**: "Simplify first: x² · x³ = x⁵; 4/(x² + 1)³ = 4(x² + 1)⁻³." The middle trap stays in scene 3.
+3. Optional, feedback 1 (common-bottom step): **accepted**: unspoken row "= ((1 − 2x) − x)/√(1 − 2x)", hand tag "common bottom"; narration unchanged.
+
+Narration now 5,561 characters by script (Revision 1: 5,554), about 505 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Every changed value was rechecked with SymPy 1.14 (scratchpad `c-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-fourth video of Year 11 Mathematics Advanced (2024), outline order 44, Introduction to differentiation (Calculations with the derivative). Pre-design pack: `../pre-design/maths-a11/math-a11-c13.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson06.sa.html` (trap 01, x² · x³ = x⁵) and `lesson05.sa.html` (trap 2, x⁵ needs no chain rule). The site has no worked example on choosing a rule; the sorting set and both worked examples are original. Route entry: `math-a11-c13` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted pass-the-parcel (c12's brief) and a painted beach for the handoff (prefix `ma11-`); the decision tree, layers and rows coded.
 
@@ -86,7 +96,7 @@ Visual: the board clears row by row. Task strip: "Differentiate y = x(2x − 1)�
 Visual: clear change to the g01 board. Task strip, 44 px: "Differentiate y = 4/(x² + 1)³." A grey "÷: quotient?" chip writes and is struck through on "just a number", hand tag "number on top: rewrite". Rows, 52 px: "y = 4(x² + 1)⁻³" (the 4 grey, the power amber, the bracket blue), hand tag "4 rides along"; "dy/dx = 4 × (−3)(x² + 1)⁻⁴ × 2x"; on "fourth" "dy/dx = −24x/(x² + 1)⁴" (green frame). On "a lot more work" a dim grey column at the right shows the quotient route's first line "((x² + 1)³ · 0 − 4 · 6x(x² + 1)²)/(x² + 1)⁶", caption "same answer, more work". On "number" the decision tree's "Simplify first?" node flashes as a 260 px thumbnail.
 
 ### 7. memory aid
-> Here's the summary. What's done last is unwrapped first. Simplify if you can, find the last step, choose its rule, then work inwards, one layer at a **time**. Next year you'll meet new functions, and this same test still works on them.
+> Here's the summary. What's done last is unwrapped first. Simplify if you can, find the last step, choose its rule, then work inwards, one layer at a **time**. Later you'll meet new functions, like e to the x, and this same test still works on them.
 
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the parcel with its three layers lifting, beside "(x/(x + 1))³" with the ³ amber and the fraction blue. Main line, hand font 60 px: "What's done last is unwrapped first." On "time" the key line, 40 px: "Simplify → last step → its rule → work inwards." Hold about 2 s.
 
@@ -98,7 +108,7 @@ Visual: `QuestionCard`, 40 px, worded as printed: "Differentiate y = x√(1 − 
 ### 9. feedback 1 (brief)
 > The last step is multiplying, so use the product rule. v is one minus two x, to the half, and by the chain rule, v prime is minus one over the square root of one minus two **x**. So d y by d x is the square root of one minus two x, minus x over that square root. Over a common bottom, that's one minus three x, over the square root of one minus two **x**. Missing the chain rule's minus two is the **slip**.
 
-Visual: the card shrinks to the top (30 px). Layer card: "outside: × → product"; "v: chain". Rows, 44 px: "v = (1 − 2x)^½"; on "x" (first) "v′ = ½(1 − 2x)^(−½) × (−2) = −1/√(1 − 2x)" (blue); "dy/dx = √(1 − 2x) − x/√(1 − 2x)"; on "x" (second) "= (1 − 3x)/√(1 − 2x)" (green frame). On "slip" a red slip "v′ = ½(1 − 2x)^(−½)" writes and is crossed, caption "× (−2) missing". Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Layer card: "outside: × → product"; "v: chain". Rows, 44 px: "v = (1 − 2x)^½"; on "x" (first) "v′ = ½(1 − 2x)^(−½) × (−2) = −1/√(1 − 2x)" (blue); "dy/dx = √(1 − 2x) − x/√(1 − 2x)"; an unspoken row "= ((1 − 2x) − x)/√(1 − 2x)", hand tag "common bottom"; on "x" (second) "= (1 − 3x)/√(1 − 2x)" (green frame). On "slip" a red slip "v′ = ½(1 − 2x)^(−½)" writes and is crossed, caption "× (−2) missing". Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Differentiate y equals x squared minus one, all cubed, over two x plus one. Pause here to answer.
@@ -111,7 +121,7 @@ Visual: `QuestionCard`, 40 px: "Differentiate y = (x² − 1)³/(2x + 1)." Pictu
 Visual: the card shrinks to the top. Layer card: "outside: ÷ → quotient" (amber); "top: chain" (blue). Rows, 44 px: on "squared" "u′ = 3(x² − 1)² × 2x = 6x(x² − 1)²" (blue), "v′ = 2"; on "cubed" "top: (2x + 1) · 6x(x² − 1)² − 2(x² − 1)³"; "dy/dx = [6x(x² − 1)²(2x + 1) − 2(x² − 1)³]/(2x + 1)²" (green frame), with a grey line beneath, 32 px, not spoken: "= 2(x² − 1)²(5x² + 3x + 1)/(2x + 1)²". On "slip" a red slip "3(x² − 1)² × …: chain first" writes and is crossed, caption "last step is ÷". Hold about 1 s.
 
 ### 12. handoff
-> That's every rule for differentiating this year, and how to choose between them. Next, we use the derivative to read a graph. Here's a beach on a summer's day. The crowd grows through the morning and shrinks by the evening. At ten o'clock, is it growing or shrinking? At four? And when is it neither? That's **next**.
+> That's every rule for combining functions, and how to choose between them. Next, we use the derivative to read a graph. Here's a beach on a summer's day. The crowd grows through the morning and shrinks by the evening. At ten o'clock, is it growing or shrinking? At four? And when is it neither? That's **next**.
 
 Visual: the memory line shows small at the top (30 px), then fades. Board clear to the beach plate `ma11-beach-day-v1.png` (1,100 px) at the left with a coded counter "people on the beach". On "The crowd grows" a small crowd-time graph (8 am to 6 pm) draws at the right, rising then falling; on "ten o'clock" chip "10 am: growing?"; on "At four" chip "4 pm: shrinking?"; on "neither" chip at the top of the curve "neither?". On "next" chips "Next: the sign of f′" and "?". Hold about 2 s. This is c14's opening frame; scene 13 returns to it silently after the notes.
 
@@ -119,7 +129,7 @@ Visual: the memory line shows small at the top (30 px), then fades. Board clear 
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-- First, simplify if you can: x² · x³ = x⁵; (x³ + 1)/x = x² + x⁻¹; 4/(x² + 1)³ = 4(x² + 1)⁻³.
+- Simplify first: x² · x³ = x⁵; 4/(x² + 1)³ = 4(x² + 1)⁻³.
 - The last step done sets the rule: + or −, each term; ×, product; ÷, quotient.
 - A power or root of a bracket: chain rule. Plain x inside: no chain.
 - Then work inwards: each layer gets its own rule.
@@ -165,6 +175,7 @@ Model answer: quotient, with the chain rule in the numerator: u′ = 6x(x² − 
 
 Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex to re-check.
 
+- Revision 2: √(1 − 2x) − x/√(1 − 2x) = ((1 − 2x) − x)/√(1 − 2x) = (1 − 3x)/√(1 − 2x).
 - (x/(x + 1))³ → 3x²/(x + 1)⁴. At x = 1 the function is 1/8.
 - x(2x − 1)³ → (2x − 1)²(8x − 1); zeros 1/8, 1/2.
 - 4/(x² + 1)³ → −24x/(x² + 1)⁴.
@@ -179,7 +190,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,554 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the peel, the cards through the tree) and the 45 s notes scene: about 505 s. Characters per scene (1 to 13): 603, 583, 680, 701, 742, 624, 231, 113, 395, 107, 387, 313, 75. Speech before the notes is about 412 s, under the 570 s cap. Feedback speech: about 30 s and 29 s.
+Counted by script (narration blockquotes, bold markers removed): 5,561 characters (Revision 2; Revision 1 was 5,554). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the peel, the cards through the tree) and the 45 s notes scene: about 505 s. Characters per scene (1 to 13): 603, 583, 680, 701, 742, 624, 244, 113, 395, 107, 387, 307, 75. Speech before the notes is about 412 s, under the 570 s cap. Feedback speech: about 30 s and 29 s.
 
 Reserve trims if the voiced take runs long: scene 7's last sentence; scene 6's "and more places to slip"; scene 2's "because each piece is a function too".
 
@@ -266,4 +277,5 @@ Builds on: The chain, product and quotient rules. Next: Increasing, decreasing a
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c10 to c12 and c07; check that "the last thing you'd do with a number" is easy to apply, that the traps are seen as simplifying rather than as new rules, that each layer's rule is said before it is used, and that A2's long top is readable at 44 px), then the Codex maths check and error check, then voicing and a build to grade A.

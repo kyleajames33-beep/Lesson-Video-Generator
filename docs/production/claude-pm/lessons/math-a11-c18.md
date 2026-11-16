@@ -1,8 +1,18 @@
 # Maths A11 C18: How do displacement and velocity differ from distance and speed? Signed position from an origin, v = dx/dt = ẋ, speed as |v|, at rest when v = 0, and distance added leg by leg when a particle turns around (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
 Narration 5,539 characters by script (see "Narration length estimate"), 13 scene headings, about 504 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c18-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, open decision 2 (instant turns in the shuttle): **kept as written** on the reviewer's advice; open decision closed.
+
+No narration, visual or number change.
+
+Narration unchanged at 5,539 characters by script, about 504 s with holds. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-ninth video of Year 11 Mathematics Advanced (2024), outline order 49, Introduction to differentiation (The derivative as a rate of change); the last video of the differentiation strand. Pre-design pack: `../pre-design/maths-a11/math-a11-c18.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson16.sa.html` (`we-1`, x = t³ − 3t², v(4) = 24; `we-2`, at rest at t = 3, x = −4; `we-3`, change in displacement −5 m and distance 13 m, with the pack's correction; the "negative velocity is not slowing down" card; all with their numbers). Route entry: `math-a11-c18` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted shuttle-run strip (c17's brief); the particle track, graphs and bars coded; the final frame is coded algebra for e01.
 
@@ -180,7 +190,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,539 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the shuttle runs, the particle's run, the bars) and the 45 s notes scene: about 504 s. Characters per scene (1 to 13): 514, 754, 610, 519, 743, 722, 200, 211, 316, 216, 337, 322, 75. Speech before the notes is about 411 s, under the 570 s cap. Feedback speech: about 24 s and 25 s.
+Counted by script (narration blockquotes, bold markers removed): 5,539 characters (Revision 2, unchanged). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the shuttle runs, the particle's run, the bars) and the 45 s notes scene: about 504 s. Characters per scene (1 to 13): 514, 754, 610, 519, 743, 722, 200, 211, 316, 216, 337, 322, 75. Speech before the notes is about 411 s, under the 570 s cap. Feedback speech: about 24 s and 25 s.
 
 Reserve trims if the voiced take runs long: scene 3's "minus eight" sentence (keep the two dots); scene 2's "After two shuttles" sentence.
 
@@ -262,8 +272,9 @@ Builds on: What f′(c) means in a real situation. Next: Graphs of exponential f
 ## Open decisions
 
 - **1. The e01 join (root and the e01 designer).** The final frame is coded algebra (y = 2ˣ and an empty table for x = −2 to 3), matching the e01 pack's start without choosing e01's anchor (credit card, markdowns or mould). If the e01 designer wants its anchor in the frame, only scene 12's frame changes.
-- **2. Instant turns in the shuttle (learning review).** The shuttle's turns are shown as instant flips of a ±5 m/s arrow, an idealisation; the smooth turning is taught on `we-2`. If a reviewer finds the instant flip misleading, the dot can slow briefly at each line.
+- **2. Instant turns in the shuttle (learning review).** The shuttle's turns are shown as instant flips of a ±5 m/s arrow, an idealisation; the smooth turning is taught on `we-2`. If a reviewer finds the instant flip misleading, the dot can slow briefly at each line. **Settled by the learning review (Revision 2):** keep the instant flips.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c17, c02 and w30; check that the origin and positive direction are set before any signed value, that "x dot" is read as a rate with time, that the rest position is seen to come from x, and that "displacement at five seconds" and "change in displacement" stay distinct), then the Codex maths check and error check, then voicing and a build to grade A.

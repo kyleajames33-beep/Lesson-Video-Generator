@@ -1,8 +1,16 @@
 # Maths A11 C16: How do we find and justify the stationary points of a cubic? Solving f′(x) = 0, heights from f, a table of slopes for local maximum, local minimum or neither, and where the cubic increases and decreases (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,522 characters by script (see "Narration length estimate"), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,549 characters by script (see "Narration length estimate"), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c16-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, feedback 2 ("never negative" gives only zero or more): **accepted, adapted.** The reviewer's clause would take feedback 2 to about 30.7 s; the shorter "A square is never negative, and it's zero only at one, so d y by d x is positive on both sides." keeps it at about 29.3 s.
+
+Narration now 5,549 characters by script (Revision 1: 5,522), about 505 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-seventh video of Year 11 Mathematics Advanced (2024), outline order 47, Introduction to differentiation (Graphical applications of the derivative). Pre-design pack: `../pre-design/maths-a11/math-a11-c16.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson08.sa.html` (`we-1`, x³ − 3x², with the pack's classification step added; Q2, x³ at 0) and `lesson10.sa.html` (`we-2`, the same cubic's intervals). Route entry: `math-a11-c16` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted pump track (c15's brief) and a painted hot-air balloon for the handoff (prefix `ma11-`); every profile, table and row coded.
 
@@ -106,7 +114,7 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: "y′ = 6x² − 6x �
 Visual: `QuestionCard`, 40 px: "Show that y = x³ − 3x² + 3x has exactly one stationary point, and that it is neither a maximum nor a minimum." Picture slot: empty table. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 10. feedback 2 (brief)
-> d y by d x is three x squared minus six x plus three, which is three times x minus one, **squared**. That's zero only at x equals one, where y is one, so there's exactly one stationary point, one, **one**. A square is never negative, so d y by d x is positive on both sides. Up, flat, up: it's **neither**. Calling it a turning point because the gradient is zero is the **slip**.
+> d y by d x is three x squared minus six x plus three, which is three times x minus one, **squared**. That's zero only at x equals one, where y is one, so there's exactly one stationary point, one, **one**. A square is never negative, and it's zero only at one, so d y by d x is positive on both sides. Up, flat, up: it's **neither**. Calling it a turning point because the gradient is zero is the **slip**.
 
 Visual: the card shrinks to the top. Rows, 44 px: on "squared" "y′ = 3x² − 6x + 3 = 3(x − 1)²"; on "one" (last) "y′ = 0 only at x = 1; y(1) = 1: one stationary point (1, 1)"; hand tag "a square is never negative"; table "3 +, 0, 3 +" (x = 0, 1, 2), glyphs ╱ ─ ╱; on "neither" framed answer (green): "(1, 1): neither". On "slip" a red slip "y′ = 0, so a turning point" writes and is crossed. Hold about 1 s.
 
@@ -179,7 +187,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,522 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider, the table filling) and the 45 s notes scene: about 503 s. Characters per scene (1 to 12, with 3a and 3b counted separately): 521, 844, 650, 474, 879, 486, 165, 159, 367, 174, 363, 365, 75. Speech before the notes is about 410 s, under the 570 s cap. Feedback speech: about 28 s and 27 s.
+Counted by script (narration blockquotes, bold markers removed): 5,549 characters (Revision 2; Revision 1 was 5,522). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider, the table filling) and the 45 s notes scene: about 505 s. Characters per scene (1 to 12, with 3a and 3b counted separately): 521, 844, 650, 474, 879, 486, 165, 159, 367, 174, 390, 365, 75. Speech before the notes is about 412 s, under the 570 s cap. Feedback speech: about 28 s and 29.3 s.
 
 Reserve trims if the voiced take runs long: scene 5's last sentence; scene 1's "When you sketched cubics before" sentence (keep the thumbnail).
 
@@ -267,4 +275,5 @@ Builds on: Sketching the graph of f′. Next: What f′(c) means in a real situa
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c14, c07, w20 and w04; check that "justify" is felt as the table of slopes, that "local" is clear from the track's end, that test values are seen to stay between stationary points, and that "neither" is the third verdict, not an exception), then the Codex maths check and error check, then voicing and a build to grade A.

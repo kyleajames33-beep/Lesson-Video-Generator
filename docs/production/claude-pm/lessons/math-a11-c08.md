@@ -1,8 +1,16 @@
 # Maths A11 C08: How does the derivative give the tangent and normal at a point? The point from f, the gradient from f′, point-gradient form, the normal's negative reciprocal, a vertical normal, and a tangent that meets the curve again (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,565 characters by script (see "Narration length estimate"), 14 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,578 characters by script (see "Narration length estimate"), 14 scene headings, about 507 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c08-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, feedback 2 (the slip's reason is not spoken): **accepted, adapted.** The reviewer's "Flip the two, as well as changing its sign." would take feedback 2 from about 28.5 s to about 31.8 s; the shorter "Flip it too." after the slip gives the reason in speech at about 29.5 s. The caption "flip too: −½" stays.
+
+Narration now 5,578 characters by script (Revision 1: 5,565), about 507 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: thirty-ninth video of Year 11 Mathematics Advanced (2024), outline order 39, Introduction to differentiation. Pre-design pack: `../pre-design/maths-a11/math-a11-c08.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson14.sa.html` (`we-1`, tangent and normal to y = x² at x = 2, and Q1, y = x³ − 2x at x = 2, both with their numbers; the "normal" card's vertical-normal rule) and `lesson03.sa.html` (`we-3`, the same tangent). Route entry: `math-a11-c08` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted marble run (c07's brief) and a painted driveway for the handoff (prefix `ma11-`); every line, graph and working row coded.
 
@@ -114,7 +122,7 @@ Visual: the card shrinks to the top (30 px). Rows, 52 px: on "one" "(3, 1)" (tea
 Visual: `QuestionCard`, 40 px: "Find the equation of the normal to y = x² at the point (1, 1). Find the other point where the normal meets the curve." Picture: y = x² (x −2.5 to 2.5) with (1, 1) marked, no lines. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 12. feedback 2 (brief)
-> The gradient at one is two, so the normal's gradient is minus a **half**. The normal is y equals minus x on two, plus three on two. Set x squared equal to that, and you get two x squared plus x minus three equals zero, which is two x plus three, times x minus **one**. Besides x equals one, the other point is minus three on two, nine on **four**. A normal gradient of minus two is the **slip**.
+> The gradient at one is two, so the normal's gradient is minus a **half**. The normal is y equals minus x on two, plus three on two. Set x squared equal to that, and you get two x squared plus x minus three equals zero, which is two x plus three, times x minus **one**. Besides x equals one, the other point is minus three on two, nine on **four**. A normal gradient of minus two is the **slip**. Flip it too.
 
 Visual: the card shrinks to the top. Rows, 44 px: on "half" "m = 2, m_N = −½"; "y = −x/2 + 3/2" (amber dashed on the picture); "x² = −x/2 + 3/2 → 2x² + x − 3 = 0"; on "one" "(2x + 3)(x − 1) = 0"; on "four" "x = −3/2: (−3/2, 9/4)" (green frame), the point ringed on the picture. On "slip" a red slip "m_N = −2" writes and is crossed, caption "flip too: −½". Hold about 1 s.
 
@@ -187,7 +195,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,565 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the launch, the quarter turn, the extender) and the 45 s notes scene: about 506 s. Characters per scene (1 to 14): 424, 730, 674, 664, 493, 469, 454, 199, 162, 362, 168, 379, 312, 75. Speech before the notes is about 413 s, 64 s under the 570 s cap. Feedback speech: about 27 s and 28 s.
+Counted by script (narration blockquotes, bold markers removed): 5,578 characters (Revision 2; Revision 1 was 5,565). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the launch, the quarter turn, the extender) and the 45 s notes scene: about 507 s. Characters per scene (1 to 14): 424, 730, 674, 664, 493, 469, 454, 199, 162, 362, 168, 392, 312, 75. Speech before the notes is about 414 s, 63 s under the 570 s cap. Feedback speech: about 27 s and 29.5 s.
 
 Reserve trims if the voiced take runs long: scene 3's general-form sentence (keep the row); scene 5's normal sentence (keep the row).
 
@@ -276,4 +284,5 @@ Builds on: The power rule; point-gradient form; perpendicular lines. Next: Point
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c07, w10 and w11; check that "point from f, slope from f′" is applied without prompting in A1, that the quarter turn makes −1/m feel caused, and that the vertical normal is understood), then the Codex maths check and error check, then voicing and a build to grade A.

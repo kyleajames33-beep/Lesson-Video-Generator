@@ -1,8 +1,20 @@
 # Maths A11 C01: What does an average rate of change measure on a graph? A linear model's constant rate, the secant and its gradient, Δy/Δx with units, and average speed from a distance-time graph (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
 Narration 5,563 characters by script (see "Narration length estimate"), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c01-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+Verdict pass, no findings.
+
+- Open decision 3 (site link): **settled** by the reviewer; lesson01 is the right link.
+
+No narration, visual or number change.
+
+Narration unchanged at 5,563 characters by script, about 506 s with holds. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: thirty-second video of Year 11 Mathematics Advanced (2024), outline order 32, the first video of Introduction to differentiation. Pre-design pack: `../pre-design/maths-a11/math-a11-c01.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson01.sa.html` (SHA256 `00e3ba61…20a2`; `we-2` used with its numbers) and `lesson12.sa.html` (SHA256 `c1ad49f1…e1e3`; `we-1` re-set as a remote-control car, numbers unchanged). Route entry: `math-a11-c01` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; a painted coffee cart, a painted remote-control car on a painted track strip, and the reused jelly bean jar (prefix `ma11-`); every graph, secant and readout coded.
 
@@ -185,7 +197,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py` and `ca
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,563 characters. At 13.3 characters per second, plus 2 countdowns of 10 s (20 s), short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s, about 22 s of settling (the curve drawing, the secant sliding, the car's run), and the 45 s notes scene: about 506 s. Characters per scene (1 to 13): 569, 553, 693, 517, 722, 646, 180, 223, 375, 254, 386, 370, 75. Speech before the notes is about 413 s, 64 s under the 570 s cap. Feedback speech: about 28 s and 29 s.
+Counted by script (narration blockquotes, bold markers removed): 5,563 characters (Revision 2, unchanged). At 13.3 characters per second, plus 2 countdowns of 10 s (20 s), short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s, about 22 s of settling (the curve drawing, the secant sliding, the car's run), and the 45 s notes scene: about 506 s. Characters per scene (1 to 13): 569, 553, 693, 517, 722, 646, 180, 223, 375, 254, 386, 370, 75. Speech before the notes is about 413 s, 64 s under the 570 s cap. Feedback speech: about 28 s and 29 s.
 
 Reserve trims if the voiced take runs long: scene 2's second pair of points (keep the probe moving silently); scene 6's last sentence (keep the crossed slip on screen).
 
@@ -276,9 +288,10 @@ Builds on: Absolute value graphs; gradient of a line. Next: Instantaneous speed 
 
 - **1. Coffee near-context (root).** Year 12 f04's attempt 1 is a café selling coffees in an arithmetic series. c01's anchor is a cart's cumulative sales curve, a different idea; judged distinct.
 - **2. The car spans c01 and c02 (root).** The car is introduced in c01's speed scene and is c02's anchor, like w30 and w31's jar. If root wants c02 to have its own object, only c01's scenes 6 and 12 change.
-- **3. Site link.** c01 draws on lesson01 and lesson12; the description links lesson01. Confirm the playlist page.
+- **3. Site link.** c01 draws on lesson01 and lesson12; the description links lesson01. Confirm the playlist page. **Settled by the learning review (Revision 2):** the lesson01 link is right.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from w10 and w12; check that "average ignores the middle" is seen on the curve, that units are built visibly from the axes, and that A1's unit change is understood), then the Codex maths check and error check, then voicing and a build to grade A.
 - The sliding secant and the frozen line readout carry the explanation; judge them at playback speed. Every readout must be computed.

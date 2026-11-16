@@ -1,8 +1,17 @@
 # Maths A11 C09: Where does a curve have a given gradient, and what angle does it make? Solving f′(x) = m then using f, normals with a given gradient, and the angle of inclination with tan θ = m, including falling lines (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,513 characters by script (see "Narration length estimate"), 14 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,803 characters by script (see "Narration length estimate"), 14 scene headings, about 524 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c09-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, attempt 2 (obtuse angle to gradient is never taught): **accepted, adapted.** Reviewer's two sentences added to scene 6 before the forward reference ("Going the other way, an angle bigger than ninety degrees means a falling line. Take it from a hundred and eighty to get the acute angle, and the gradient is minus the tan of that."). The grey row uses θ = 120° → acute 60° → m = −tan 60° ≈ −1.73 instead of the reviewer's 135° → −1, because 135° is attempt 2's own angle and the row would hand students its first step. The memory card's second line and key note 4 now include "m = −tan(acute angle)", and scene 8's last sentence says it ("And for a falling line, work with the acute angle. Theta is a hundred and eighty minus it, and m is minus its tan."), cue "tan" (second). Key note 4 drops "(0° ≤ θ < 180°)" to stay on one line; the range stays on screen in scene 6's caption. Scene 4's reserve trim was not needed.
+2. Optional, scene 3 (the driveway breaks its own limit): **accepted**: "So this driveway breaks the rule between two and four metres along.", with a red hand tag "steeper than ¼ here" on the shaded stretch.
+
+Narration now 5,803 characters by script (Revision 1: 5,513), about 524 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Every changed value was rechecked with SymPy 1.14 (scratchpad `c-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: fortieth video of Year 11 Mathematics Advanced (2024), outline order 40, Introduction to differentiation; the last video of this design batch (c10 to c18 are another designer's). Pre-design pack: `../pre-design/maths-a11/math-a11-c09.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson14.sa.html` (`we-2`, y = x² at x = −1, about 117°, and `we-3`, the 45° point on y = x² − 4x, both with their numbers; `we-2`'s method changed to "180° minus the acute angle" by root ruling 2). Route entry: `math-a11-c09` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted driveway (c08's brief) and a marble-run badge (c07's brief) (prefix `ma11-`); every graph, triangle, arc and working row coded.
 
@@ -27,7 +36,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Large type, handwritten voice.** As c01. Hand tags: "run it backwards", "f′(x) = m", "two answers", "steeper than ¼", "then use f", "f, not f′", "normal → tangent first", "anticlockwise from +x", "opposite ÷ adjacent", "tan θ = m", "acute: tan α = 2", "θ = 180° − α", "0° ≤ θ < 180°", "angle → m first".
 - **Stage changes (standard item 2).** The driveway (1); the stacked rider and level line (2); g01 board, heights (3); the normal (4); the angle on the driveway (5); the falling tangent (6); g01 board, angle to point (7); framed card (8); question cards (9 to 12); the bracket to the fifth (13); key notes (14).
 - **Worked examples (g01 layout).** 2 and 3: the driveway, x = 2 and 4, heights 7/24 ≈ 0.29 m and 5/6 ≈ 0.83 m; crossed "f′(2) = ¼" as the height. 4: normal gradient −¼ on y = x² → tangent gradient 4 → (2, 4). 5: tan θ = ¼, θ ≈ 14°. 6: site `we-2`, y = x² at x = −1, m = −2, θ ≈ 117°; crossed "θ = −63°". 7: site `we-3`, 45° on y = x² − 4x → (2.5, −3.75).
-- **Memory aid.** Framed card: "Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f." Second line: "Falling line: θ = 180° − the acute angle."
+- **Memory aid.** Framed card: "Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f." Second line: "Falling line: θ = 180° − the acute angle; m = −tan(acute angle)."
 - **Visual surprise.** The riding tangent flashes twice on the driveway, at 2 m and 4 m, and the two flashes line up exactly with the two places the f′ graph crosses the level line.
 - **Site notes (pack section 8).** `we-2`'s method (tan⁻¹(−2) = −63.43°, then add 180°) is replaced by root ruling 2's method: the acute angle from tan α = 2, then θ = 180° − α. The calculator's −63° is shown as the crossed slip. No logged error affects this video.
 - **Plain meanings at first use.** Angle of inclination ("the angle a line makes with the positive direction of the x-axis, measured anticlockwise"); acute angle ("less than 90°"); inverse tan ("the calculator's tan⁻¹, which turns a tan value back into an angle", recalled from Year 10); parallel ("same gradient", recalled from w11).
@@ -67,9 +76,9 @@ Visual: opens on c08's final frame exactly (the driveway plate `ma11-driveway-v1
 Visual: stage change to the stacked panels (each 1,200 × 380 px). Top: the profile with the riding tangent and readout "gradient". Bottom: rows at the left, 52 px: on "two" "f′(x) = (18x − 3x²)/96 = (6x − x²)/32" (violet), hand tag "run it backwards"; "(6x − x²)/32 = ¼" (¼ amber), tag "f′(x) = m"; "6x − x² = 8"; "x² − 6x + 8 = 0"; "(x − 2)(x − 4) = 0"; on "four" "x = 2 or x = 4" (blue, green frame). On "twice" the bottom panel's f′ graph draws with the amber dashed level line at ¼; two dots land at x = 2 and x = 4; at the same moment the top rider stops at 2 m and 4 m, its tangent flashing green each time, hand tag "two answers". The profile between 2 and 4 shades, tag "steeper than ¼".
 
 ### 3. the heights come from f
-> Now find the heights, by putting x back into f, not f prime. f of two is thirty-six minus eight, over ninety-six, which is about zero point two nine metres. f of four is a hundred and forty-four minus sixty-four, over ninety-six, about zero point eight three **metres**. So the gradient is exactly a quarter two metres along, about zero point two nine metres up, and four metres along, about zero point eight three metres up. In between, the driveway is steeper than a quarter. Putting two into f prime is the slip. That just gives a quarter **back**.
+> Now find the heights, by putting x back into f, not f prime. f of two is thirty-six minus eight, over ninety-six, which is about zero point two nine metres. f of four is a hundred and forty-four minus sixty-four, over ninety-six, about zero point eight three **metres**. So the gradient is exactly a quarter two metres along, about zero point two nine metres up, and four metres along, about zero point eight three metres up. In between, the driveway is steeper than a quarter. So this driveway breaks the rule between two and four metres along. Putting two into f prime is the slip. That just gives a quarter **back**.
 
-Visual: clear change to the g01 board with the profile small at the right. Rows, 52 px: "f(2) = (36 − 8)/96 = 7/24 ≈ 0.29 m" (teal); on "metres" "f(4) = (144 − 64)/96 = 5/6 ≈ 0.83 m" (teal), hand tag "then use f". Framed answer (green): "(2, 0.29) and (4, 0.83), in metres". On the profile the two points ring and the shaded stretch between them pulses. On "back" a red slip "height = f′(2) = ¼" writes and is crossed, caption "f, not f′".
+Visual: clear change to the g01 board with the profile small at the right. Rows, 52 px: "f(2) = (36 − 8)/96 = 7/24 ≈ 0.29 m" (teal); on "metres" "f(4) = (144 − 64)/96 = 5/6 ≈ 0.83 m" (teal), hand tag "then use f". Framed answer (green): "(2, 0.29) and (4, 0.83), in metres". On the profile the two points ring and the shaded stretch between them pulses; on "breaks the rule" a red hand tag "steeper than ¼ here" over the shaded stretch. On "back" a red slip "height = f′(2) = ¼" writes and is crossed, caption "f, not f′".
 
 ### 4. normals with a given gradient
 > Normals work the same way, with one extra step. Suppose the normal must have gradient minus a quarter. Then the tangent's gradient is the negative reciprocal, which is **four**. On y equals x squared, solve two x equals four, so x is two, and the point is two, **four**. That's the end of the marble's track again. So for a normal, turn its gradient into the tangent's gradient first, then solve f prime of x equals that.
@@ -82,9 +91,9 @@ Visual: clear change: y = x² (equal units, x −1 to 3, y −1 to 6; 900 × 640
 Visual: stage change: an equal-scale inset of the driveway's tangent at x = 2 (1,000 × 640 px), the plate as a badge. `InclinationArc`: the amber arc opens anticlockwise from the positive x-axis to the tangent, hand tag "anticlockwise from +x"; the triangle under it, run "4" (blue), rise "1" (teal), labels "adjacent" and "opposite", hand tag "opposite ÷ adjacent". Row, 52 px: "tan θ = rise/run"; on "m" "tan θ = m" (framed, violet), hand tag "tan θ = m". Row: "tan θ = ¼, θ = tan⁻¹(¼)"; on "degrees" "θ ≈ 14°" (green frame). On the last sentence a small chip: "m = 1 → θ = 45°", with a 45° line drawn faintly.
 
 ### 6. falling lines: 180° minus the acute angle
-> What if the gradient is negative? Take y equals x squared at x equals minus one, where the gradient is minus two. The tangent falls, so it makes an acute angle with the x axis, on the left, and tan of that angle is two. That's about sixty-three point four **degrees**. But theta is measured anticlockwise from the positive x axis, so theta is the angle on the other side. It's a hundred and eighty minus sixty-three point four, about one hundred and seventeen **degrees**. A calculator gives minus sixty-three for the inverse tan of minus two, and that negative angle is the slip. Angles of inclination run from zero up to one hundred and eighty degrees. In the trigonometry videos, you'll see that tan of a hundred and seventeen degrees really is minus **two**.
+> What if the gradient is negative? Take y equals x squared at x equals minus one, where the gradient is minus two. The tangent falls, so it makes an acute angle with the x axis, on the left, and tan of that angle is two. That's about sixty-three point four **degrees**. But theta is measured anticlockwise from the positive x axis, so theta is the angle on the other side. It's a hundred and eighty minus sixty-three point four, about one hundred and seventeen **degrees**. A calculator gives minus sixty-three for the inverse tan of minus two, and that negative angle is the slip. Angles of inclination run from zero up to one hundred and eighty degrees. Going the other way, an angle bigger than ninety degrees means a falling line. Take it from a hundred and eighty to get the acute angle, and the gradient is minus the tan of that. In the trigonometry videos, you'll see that tan of a hundred and seventeen degrees really is minus **two**.
 
-Visual: clear change: y = x² (equal units, x −2.5 to 2, y −1 to 5; 1,100 × 720 px). The violet tangent at (−1, 1) falling, label "m = −2", meeting the x-axis at (−½, 0). `InclinationArc`: the grey acute angle α at the crossing, between the tangent and the negative x direction, with a triangle (run 1, rise 2), hand tag "acute: tan α = 2"; on "degrees" (first) "α ≈ 63.4°" (grey). Then the amber θ arc opens anticlockwise from the positive x-axis all the way round to the tangent, hand tag "θ = 180° − α"; on "degrees" (second) row 52 px "θ = 180° − 63.4° ≈ 117°" (green frame). On "that negative angle is the slip" a red slip "θ = tan⁻¹(−2) = −63°" writes and is crossed, caption "0° ≤ θ < 180°". On "two" a grey chip "trig videos: tan 117° = −2".
+Visual: clear change: y = x² (equal units, x −2.5 to 2, y −1 to 5; 1,100 × 720 px). The violet tangent at (−1, 1) falling, label "m = −2", meeting the x-axis at (−½, 0). `InclinationArc`: the grey acute angle α at the crossing, between the tangent and the negative x direction, with a triangle (run 1, rise 2), hand tag "acute: tan α = 2"; on "degrees" (first) "α ≈ 63.4°" (grey). Then the amber θ arc opens anticlockwise from the positive x-axis all the way round to the tangent, hand tag "θ = 180° − α"; on "degrees" (second) row 52 px "θ = 180° − 63.4° ≈ 117°" (green frame). On "that negative angle is the slip" a red slip "θ = tan⁻¹(−2) = −63°" writes and is crossed, caption "0° ≤ θ < 180°". On "Going the other way" a grey row, 44 px, under the green frame: "θ = 120° → acute 60° → m = −tan 60° ≈ −1.73", hand tag "angle → gradient, falling", with a small falling tangent and its 60° acute arc beside it. On "two" a grey chip "trig videos: tan 117° = −2".
 
 ### 7. worked example: from an angle to a point
 > Now both ideas together. Find the point on y equals x squared minus four x where the tangent makes an angle of forty-five degrees with the x axis. Forty-five degrees means m equals tan forty-five, which is **one**. f prime of x is two x minus four, so two x minus four equals one, and x is two point **five**. Then f of two point five is six point two five minus ten, which is minus three point seven **five**. So the point is two point five, minus three point seven five.
@@ -92,9 +101,9 @@ Visual: clear change: y = x² (equal units, x −2.5 to 2, y −1 to 5; 1,100 ×
 Visual: clear change to the g01 board. Task strip, 44 px: "Find the point on y = x² − 4x where the tangent makes an angle of 45° with the x-axis." Givens card: "θ = 45°" (amber). Rows, 52 px: on "one" "m = tan 45° = 1" (hand tag "angle → m first"); "f′(x) = 2x − 4 = 1"; on "five" "x = 2.5" (blue); on "five" (second) "f(2.5) = 6.25 − 10 = −3.75" (teal). Framed answer (green): "(2.5, −3.75)". Small plot at the right with the tangent at 45° and its amber arc.
 
 ### 8. memory aid
-> Here's the summary. Angle to gradient, use tan. Gradient to point, solve f prime of x equals m, then use f. And a falling line's angle is a hundred and eighty, minus the acute **one**.
+> Here's the summary. Angle to gradient, use tan. Gradient to point, solve f prime of x equals m, then use f. And for a falling line, work with the acute angle. Theta is a hundred and eighty minus it, and m is minus its **tan**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the driveway tangent with its amber arc, and a falling tangent with α and θ. Main line, hand font 56 px: "Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f." On "one" the second line, 40 px: "Falling line: θ = 180° − the acute angle." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: the driveway tangent with its amber arc, and a falling tangent with α and θ. Main line, hand font 56 px: "Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f." On "tan" (second) the second line, 40 px: "Falling line: θ = 180° − the acute angle; m = −tan(acute angle)." Hold about 2 s.
 
 ### 9. attempt 1 (countdown, 10 seconds)
 > Your turn. Find the points on y equals x cubed minus three x where the tangent is parallel to the line y equals nine x plus two. Pause here to answer.
@@ -128,7 +137,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 - Given gradient m: solve f′(x) = m, then find y from f (not f′).
 - Normal with gradient m: the tangent has gradient −1/m.
 - Angle of inclination θ: from the positive x-axis, anticlockwise; tan θ = m.
-- Falling line: θ = 180° − the acute angle (0° ≤ θ < 180°).
+- Falling line: θ = 180° − acute angle; m = −tan(acute angle).
 - Parallel lines have equal gradients; a quadratic f′ can give two points.
 
 Memory aid (framed card, right side, as in scene 8): *Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f.* The notes scene is 1,350 frames (45 s).
@@ -164,6 +173,7 @@ Model answer: 135° = 180° − 45°, so the tangent falls at 45° and m = −1.
 | Normal | m_N = −¼ → m_T = 4; 2x = 4; (2, 4) | 4 |
 | Angle | tan θ = ¼, θ ≈ 14°; m = 1 → 45° | 5 |
 | Site `we-2` | x² at −1: m = −2; α ≈ 63.4°; θ ≈ 117°; slip −63° | 6 |
+| Angle → gradient, falling | θ = 120°: acute 60°, m = −tan 60° ≈ −1.73 | 6 |
 | Site `we-3` | tan 45° = 1; 2x − 4 = 1, x = 2.5; f(2.5) = −3.75 | 7 |
 | A1 | 3x² − 3 = 9; x = ±2; (2, 2), (−2, −2) | 9, 10 |
 | A2 | m = −1; x = −3/2, y = −3/4; at 1: m = 4, θ ≈ 76° | 11, 12 |
@@ -176,6 +186,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex
 - f(x) = (9x² − x³)/96: f′(x) = −x(x − 6)/32; f′ = ¼ at x = 2, 4; f(2) = 7/24 ≈ 0.2917; f(4) = 5/6 ≈ 0.8333; f(6) = 9/8; f′(0) = f′(6) = 0; f′(3) = 9/32, tan⁻¹(9/32) ≈ 15.71°.
 - tan⁻¹(¼) ≈ 14.036°.
 - tan⁻¹ 2 ≈ 63.435°; 180° − 63.435° ≈ 116.565°.
+- Revision 2: θ = 120°: 180° − 120° = 60°; −tan 60° = −√3 ≈ −1.732. Check for A2: tan 135° = −1. Driveway breaks the limit: f′ > ¼ for 2 < x < 4 (f′(3) = 9/32). SymPy, scratchpad `c-rev2/verify.py`.
 - y = x² − 4x: 2x − 4 = 1 ⟹ x = 5/2; y = −15/4.
 - y = x³ − 3x: 3x² − 3 = 9 ⟹ x = ±2; y(2) = 2, y(−2) = −2.
 - y = x² + 2x: 2x + 2 = −1 ⟹ x = −3/2; y = −3/4; tan⁻¹ 4 ≈ 75.964°.
@@ -183,12 +194,12 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex
 
 ## Memory aid check
 
-- **"Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f."** Original. Meaning, as said in scene 8: an angle of inclination θ gives the gradient m = tan θ (for a falling line, m is minus tan of the acute angle); a gradient m gives the x values by solving f′(x) = m, and the points by substituting into f. Second line: θ = 180° − the acute angle for a falling line. Assumptions checked: 0° ≤ θ < 180°; θ = 90° (vertical) has no gradient and is excluded; "tan" here is Year 10 acute tan, with obtuse θ handled by the 180° rule (root ruling 2). It helps a new case: a tangent at 60° has m = tan 60° ≈ 1.73. Introduced after scenes 2 to 7.
+- **"Angle → gradient: tan. Gradient → point: solve f′(x) = m, then f."** Original. Meaning, as said in scene 8: an angle of inclination θ gives the gradient m = tan θ (for a falling line, m is minus tan of the acute angle); a gradient m gives the x values by solving f′(x) = m, and the points by substituting into f. Second line: for a falling line, θ = 180° − the acute angle and m = −tan(acute angle), which runs either way (scene 6 teaches both directions). Assumptions checked: 0° ≤ θ < 180°; θ = 90° (vertical) has no gradient and is excluded; "tan" here is Year 10 acute tan, with obtuse θ handled by the 180° rule (root ruling 2). It helps a new case: a tangent at 60° has m = tan 60° ≈ 1.73. Introduced after scenes 2 to 7.
 - **Considered, not used:** "tan θ = m, always" (true but students then apply tan⁻¹ to a negative m and get a negative angle; the card's second line prevents it).
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,513 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the riders, the level line, the arcs) and the 45 s notes scene: about 502 s. Characters per scene (1 to 14): 489, 610, 543, 413, 511, 750, 460, 180, 150, 392, 264, 364, 312, 75. Speech before the notes is about 409 s, 68 s under the 570 s cap. Feedback speech: about 29 s and 27 s.
+Counted by script (narration blockquotes, bold markers removed): 5,803 characters (Revision 2; Revision 1 was 5,513). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the riders, the level line, the arcs) and the 45 s notes scene: about 524 s. Characters per scene (1 to 14): 489, 610, 611, 413, 511, 930, 460, 222, 150, 392, 264, 364, 312, 75. Speech before the notes is about 431 s, 46 s under the 570 s cap. Feedback speech: about 29 s and 27 s.
 
 Reserve trims if the voiced take runs long: scene 4's marble sentence; scene 6's forward-reference sentence (keep the chip).
 
@@ -276,4 +287,5 @@ Builds on: Tangents and normals. Next: The chain rule.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c08, w04 and Year 10 tan; check that "run it backwards" is followed, that the two crossings on the f′ graph are linked to the two places on the driveway, that tan θ = m is established rather than announced, and that the 180° rule is clear without trigonometry), then the Codex maths check and error check, then voicing and a build to grade A.

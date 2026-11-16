@@ -1,8 +1,17 @@
 # Maths A11 C05: What is the derivative, and how do we write it? The gradient function f′(x), when a derivative exists, differentiation, and the notations f′(x), dy/dx, y′ and d/dx (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,564 characters by script (see "Narration length estimate"), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,596 characters by script (see "Narration length estimate"), 13 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c05-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 4 (the slide sentence implies a kink and a vertical drop on the slide; a vertical segment is not a function): **accepted**, reviewer's narration ("On a slide, that would be a sharp kink, or a spot where the chute turns straight down for an instant. This slide has neither, so its derivative exists all the way down."). The "vertical drop" inset is now a chute that steepens to vertical at one spot and eases out (the y = −∛x shape), never a vertical segment; on "This slide has neither" the insets dim and the dot rides the badge's smooth profile once, hand tag "smooth all the way". The rounded platform join is written into c04's plate brief (c04 owns the plate). Root ruling 3's "No corner, no cliff" is kept: "cliff" now means a vertical tangent, as ruled. The cue "On the slide" became "On a slide"; the Decisions and author note (b) use the new wording.
+2. Optional, open decision 2 (∛x): **accepted**: grey chip "∛8 = 2, ∛(−8) = −2" under the right panel; open decision closed. Open decision 1 ("cliff") is closed by the same review (kept).
+
+Narration now 5,596 characters by script (Revision 1: 5,564), about 508 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Every changed value was rechecked with SymPy 1.14 (scratchpad `c-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: thirty-sixth video of Year 11 Mathematics Advanced (2024), outline order 36, Introduction to differentiation. Pre-design pack: `../pre-design/maths-a11/math-a11-c05.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson03.sa.html` (key terms and notation; its worked examples belong to c06 and c08). Route entry: `math-a11-c05` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted water slide (c04's brief) and a painted water balloon on a balcony for the handoff (prefix `ma11-`); every graph, tracer and chip coded.
 
@@ -22,10 +31,10 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 
 ## Decisions
 
-- **Anchor: a water slide, side-on (painted plate, live).** Every point of the chute has its own steepness, so "the gradient at every point" is a list you could walk down the slide reading; a sharp kink and a sheer vertical drop are the two everyday shapes where "how steep is it here?" has no answer, which are exactly the definition's two exclusions. Games and leisure. The pack's anchor 1; no Year 12 or w-strand design uses a water slide (grep 16 Nov). The share-price app (pack anchor 2) was rejected: real price charts are made of corners, which fights the definition.
+- **Anchor: a water slide, side-on (painted plate, live).** Every point of the chute has its own steepness, so "the gradient at every point" is a list you could walk down the slide reading; a sharp kink and a chute that turns straight down for an instant are the two everyday shapes where "how steep is it here?" has no answer, which are exactly the definition's two exclusions. Games and leisure. The pack's anchor 1; no Year 12 or w-strand design uses a water slide (grep 16 Nov). The share-price app (pack anchor 2) was rejected: real price charts are made of corners, which fights the definition.
 - **Simulations (standard item 3).**
   1. **`PairedDerivativePanel`** (scene 2): top, y = x² with a point riding from x = −2.5 to 3 and its violet tangent; bottom, a second plot where a violet dot drops at each x with height equal to the tangent's gradient, leaving a trail that builds the line y = 2x. Live readouts "x" (blue), "height f(x)" (teal), "gradient" (violet).
-  2. **Slide rider** (scenes 1, 4): a dot rides the slide plate's traced profile (sidecar points, c04's brief) with its violet tangent and a live "steepness" readout; a coded "kink" and a coded "vertical drop" inset (small coded profiles beside the plate, not on it) show the two failures.
+  2. **Slide rider** (scenes 1, 4): a dot rides the slide plate's traced profile (sidecar points, c04's brief) with its violet tangent and a live "steepness" readout; a coded "kink" and a coded "straight down for an instant" inset (y = −∛x shape; small coded profiles beside the plate, not on it) show the two failures. The plate itself has neither: its platform-to-drop join is rounded (c04 asset brief, Revision 2).
   3. **Notation chips** (`NameSwapChips`, scene 5): four chips "f′(x)", "dy/dx", "y′", "d/dx(x²)" write on in turn, each then evaluating at x = 2 to "4" with a violet tick; the tracer's point sits at (2, 4) with its tangent.
 - **Colour roles (fixed, as c01 to c04).** x blue; heights f(x) **teal**; gradients f′(x) and tangents **violet**; secants amber (scene 4 corner only); answer green; mistake red, crossed slips only. f and f′ keep teal and violet in every row, so "how high" and "how steep" never share a colour.
 - **Large type, handwritten voice.** As c01. Hand tags: "one tangent, one dot", "y = 2x", "a new function", "the dash", "no single tangent", "vertical: no gradient", "one symbol", "with respect to x", "an instruction", "height", "slope", "flat = 0".
@@ -44,7 +53,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) Tracer: f′(x) = 2x; dots at −2, −1, 0, 1, 2, 3: −4, −2, 0, 2, 4, 6.
-  (b) Corner: |x − 2| has one-sided gradients −1 (left) and 1 (right) at 2. Vertical tangent: y = ∛x has y′ = 1/(3x^(2/3)), unbounded as x → 0; the tangent at (0, 0) is the y axis. "Vertical drop" on a slide: a model, not a claim about a real slide's design.
+  (b) Corner: |x − 2| has one-sided gradients −1 (left) and 1 (right) at 2. Vertical tangent: y = ∛x has y′ = 1/(3x^(2/3)), unbounded as x → 0; the tangent at (0, 0) is the y axis. "Straight down for an instant" on a slide: a model of a vertical tangent (the y = −∛x shape), not a vertical segment and not a claim about a real slide's design.
   (c) Example: f(−3) = 9, f′(−3) = −6.
   (d) A1: f(2) = 8, f′(2) = 12. A2: as above.
   (e) Pronunciations: "f prime of x"; "d y by d x"; "y prime"; "d by d x of x squared"; "the cube root of x".
@@ -75,9 +84,9 @@ Visual: clear change to `PairedDerivativePanel` (two stacked plots, each 1,200 �
 Visual: stage change to a definition card (1,500 px wide) over the dimmed tracer. Line 1, 52 px: "f′(x)" with the dash ringed, hand tag "the dash". Under it three name chips, 40 px: "the derivative of f", "the gradient function", "the derived function", joined by "=" signs. On "x" (bold) the definition, 44 px: "f′(x) = gradient of the tangent to y = f(x) at P(x, f(x))", the tracer's point and tangent flashing at P. On "differentiation" a chip, 44 px: "differentiation: finding f′(x)". Last row, 52 px: "f(x) = x² → f′(x) = 2x" (teal, violet).
 
 ### 4. when there's no derivative
-> There's one condition in that definition. The tangent has to exist, and it can't be vertical. Two shapes break it. First, a corner, like the absolute value of x minus two, at x equals two. The gradient is minus one from the left and one from the right, just like the corner in the last video. There's no single tangent, so there's no derivative **there**. Second, a vertical tangent, like the cube root of x at zero. The curve stands straight up at the origin, and the tangent is the y axis. A vertical line has no gradient, so again, no **derivative**. On the slide, that's a sharp kink, or a sheer vertical drop. Everywhere else, the slide is smooth and slanted, so its derivative exists.
+> There's one condition in that definition. The tangent has to exist, and it can't be vertical. Two shapes break it. First, a corner, like the absolute value of x minus two, at x equals two. The gradient is minus one from the left and one from the right, just like the corner in the last video. There's no single tangent, so there's no derivative **there**. Second, a vertical tangent, like the cube root of x at zero. The curve stands straight up at the origin, and the tangent is the y axis. A vertical line has no gradient, so again, no **derivative**. On a slide, that would be a sharp kink, or a spot where the chute turns straight down for an instant. This slide has neither, so its derivative exists all the way down.
 
-Visual: stage change: two panels side by side (each 860 × 560 px). The definition strip at the top gains "… if the tangent exists and is not vertical" (44 px), the condition ringed. Left: y = |x − 2| with `StudioOneSidedSecants` at 2: amber dashed secants "−1" from the left, "1" from the right; on "there" a red cross on a violet tangent that can't settle, hand tag "no single tangent". Right: y = ∛x; on "the tangent is the y axis" a violet line stands on the y axis; on "derivative" hand tag "vertical: no gradient" and a red cross over "gradient = ?". On "On the slide" the slide badge (400 px) appears between the panels with two coded insets beside it: a kinked chute (linked to the left panel) and a sheer vertical drop (linked to the right panel).
+Visual: stage change: two panels side by side (each 860 × 560 px). The definition strip at the top gains "… if the tangent exists and is not vertical" (44 px), the condition ringed. Left: y = |x − 2| with `StudioOneSidedSecants` at 2: amber dashed secants "−1" from the left, "1" from the right; on "there" a red cross on a violet tangent that can't settle, hand tag "no single tangent". Right: y = ∛x, with a grey chip "∛8 = 2, ∛(−8) = −2" (36 px) under the panel; on "the tangent is the y axis" a violet line stands on the y axis; on "derivative" hand tag "vertical: no gradient" and a red cross over "gradient = ?". On "On a slide" the slide badge (400 px) appears between the panels with two coded insets beside it: a kinked chute (linked to the left panel) and a chute that steepens until it points straight down at one spot and then eases out again (the shape of y = −∛x, linked to the right panel; never drawn as a vertical segment, which would not be a function). On "This slide has neither" both insets dim and the dot rides the badge's smooth profile once, top to pool, its violet tangent never standing up, hand tag "smooth all the way".
 
 ### 5. four ways to write it
 > There are four ways to write the derivative, and you'll need all of them. In exams, you'll see all four, sometimes in the same question. Function notation first. If f of x is x squared, then f prime of x is two x. If we write y equals x squared instead, the derivative is d y by d x, which equals two **x**. Read d y by d x as one symbol, the derivative of y with respect to x. It isn't a fraction to cancel. Later, with the chain rule, you'll see why it's written that way. There's also y prime, which is short for d y by d x. And d by d x, of x squared, means "the derivative of x squared". It's an instruction, like a verb. At x equals two, every one of them gives **four**.
@@ -168,6 +177,7 @@ Model answer: (a) No: the gradients from the left and right are −1 and 1, so t
 
 Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex to re-check.
 
+- Revision 2: ∛8 = 2, ∛(−8) = −2 (chip).
 - d/dx(x²) = 2x: values at −2, −1, 0, 1, 2, 3 are −4, −2, 0, 2, 4, 6.
 - (−3)² = 9; 2(−3) = −6.
 - x³: f(2) = 8; 3(2)² = 12.
@@ -181,7 +191,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,564 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the slide rider, the tracer, the chips) and the 45 s notes scene: about 506 s. Characters per scene (1 to 13): 513, 773, 604, 682, 669, 514, 179, 200, 375, 242, 392, 346, 75. Speech before the notes is about 413 s, 64 s under the 570 s cap. Feedback speech: about 28 s and 29 s.
+Counted by script (narration blockquotes, bold markers removed): 5,596 characters (Revision 2; Revision 1 was 5,564). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the slide rider, the tracer, the chips) and the 45 s notes scene: about 508 s. Characters per scene (1 to 13): 513, 773, 604, 714, 669, 514, 179, 200, 375, 242, 392, 346, 75. Speech before the notes is about 415 s, 62 s under the 570 s cap. Feedback speech: about 28 s and 29 s.
 
 Reserve trims if the voiced take runs long: scene 5's chain-rule sentence; scene 1's last-but-one sentence.
 
@@ -268,9 +278,10 @@ Builds on: Shrinking secants and the gradient at a point. Next: Differentiation 
 
 ## Open decisions
 
-- **1. "Cliff" in the memory aid (learning review).** It means a vertical tangent. If the reviewer finds students read it as a jump, change the second line to "No corner, no vertical tangent".
-- **2. ∛x familiarity.** Students meet cube roots in index laws (w01); the graph is shown, not assumed. If the reviewer finds it unfamiliar, add a one-line grey chip "∛8 = 2, ∛(−8) = −2".
+- **1. "Cliff" in the memory aid (learning review).** It means a vertical tangent. If the reviewer finds students read it as a jump, change the second line to "No corner, no vertical tangent". **Settled by the learning review (Revision 2):** "No corner, no cliff" is kept (root ruling 3); scene 4 now shows the cliff as a vertical tangent, never a vertical segment.
+- **2. ∛x familiarity.** Students meet cube roots in index laws (w01); the graph is shown, not assumed. If the reviewer finds it unfamiliar, add a one-line grey chip "∛8 = 2, ∛(−8) = −2". **Settled by the learning review (Revision 2):** the chip is added under the ∛x panel in scene 4.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c04; check that "a new function" is seen in the tracer, that the two exclusions are understood as "no single tangent" and "no gradient", and that the four notations are seen as one thing), then the Codex maths check and error check, then voicing and a build to grade A.

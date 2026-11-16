@@ -1,8 +1,17 @@
 # Maths A11 C03: How do we estimate a changing rate from a real-world graph? Non-linear models have changing rates, the tangent at each point, units and sign, and saying what the rate means (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
 Narration 5,596 characters by script (see "Narration length estimate"), 14 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c03-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 6 (the tangent's read points sit almost on the curve, at c01's secant ends): **accepted**, reviewer's wording and visual: read points about (6:30, 5) and (9:30, 192), legs "3 h" and "187 cups", row "187 ÷ 3 ≈ 62 cups per hour". Added the hand tag "on the tangent, not the curve" (the read points sit about 12 and 5 cups off the curve). The c01 chip stays. The spoken length is unchanged (197 characters either way).
+2. Optional, root ruling 2 on c01 to c09 ("model curve" tag): **accepted** (a root ruling not previously carried into the design). A grey hand tag "model curve" (34 px) writes near the cooling curve's tail in scene 1 and stays in scenes 3 and 5. No narration change.
+
+Narration unchanged at 5,596 characters by script, about 508 s with holds. Every changed value was rechecked with SymPy 1.14 (scratchpad `c-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: thirty-fourth video of Year 11 Mathematics Advanced (2024), outline order 34, Introduction to differentiation. Pre-design pack: `../pre-design/maths-a11/math-a11-c03.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson12.sa.html` (its "reading and interpreting a practical graph" card: flat means 0, negative means decreasing, steeper means faster; `we-3`'s draining tank is a secant and is not used). Route entry: `math-a11-c03` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted hot chocolate mug (c02's brief) and the reused coffee cart badge (c01) (prefix `ma11-`); every graph, tangent and readout coded.
 
@@ -43,7 +52,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (a) T(t) = 20 + 324/(t + 5); T′(t) = −324/(t + 5)². T(0) = 84.8, T′(0) = −12.96; T(4) = 56, T′(4) = −4; tangent T = 72 − 4t (72 at 0, 32 at 10); T(13) = 38, T′(13) = −1; tangent T = 51 − t (48 at 3, 28 at 23); T(10) = 41.6; secant [0, 10] −4.32; T′(30) ≈ −0.26. The rate magnitude falls with T − 20 (T′ = −(T − 20)²/324), so "closer to room temperature, cools more slowly" holds for the model. Real cooling is roughly exponential (Newton's law), which students meet in Year 12; the narration says only that it cools more slowly near room temperature.
   (b) Ice: tangent (0, 900) to (30, 300): −600/30 = −20 g/min. The curve drawn: m(t) = 1200 − 20t − ... (author: a decreasing convex curve through (10, 700) with gradient −20; m(t) = 700 − 20(t − 10) + 0.4(t − 10)² for 0 ≤ t ≤ 35, never negative on that domain: minimum 450 at t = 35); only the tangent and its two points matter.
   (c) Turnstiles: (10, 600) to (30, 2200): 1600/20 = 80; (40, 5000) to (60, 5600): 600/20 = 30; difference 50. The tangency points are (20, 1400) and (50, 5300), so the entry rate must peak in between (average 130 per minute from 20 to 50): the picture uses N′(t) = 10.707 + 186.22·exp(−((t − 31.93)/12)²) people per minute with N(20) = 1400 (rising throughout; about 870 inside at t = 0, gates opened earlier).
-  (c2) Cart (c01 model): C′(2) = 751/12 ≈ 62.6 cups per hour at 8 am; the read points (7, 36) and (9, 161) are on the tangent to within 0.1 cup; the narration says "about sixty-two".
+  (c2) Cart (c01 model): C′(2) = 751/12 ≈ 62.6 cups per hour at 8 am; the read points (6:30, 5) and (9:30, 192) are on the tangent to within 0.4 cup and sit visibly off the curve (Revision 2; c01's secant ends (7, 40) and (9, 160) are no longer used); the narration says "about sixty-two".
   (d) Pronunciations: "degrees Celsius per minute" once, then "degrees a minute"; "minus four"; "eighty-five" (rounded from 84.8, said "about").
   (e) Windows: mug plot t 0 to 30, T 0 to 90; A1 picture t 0 to 35, m 0 to 1000; A2 picture t 0 to 70, people 0 to 6000.
 
@@ -59,7 +68,7 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 ### 1. hook: fast, then slow
 > Here's that hot chocolate, cooling on the kitchen bench. Its temperature graph starts at about eighty-five degrees and falls towards room temperature, twenty **degrees**. Early on it drops fast. Later it barely changes. The thermometer drops quickly at first, then hardly at all. So "how fast is it cooling?" has a different answer at different **times**. And this time the rate isn't a speed, it's degrees per minute. That's what a rate of change is, how fast one quantity changes compared with another. How do we estimate a changing rate from a real-world graph?
 
-Visual: opens on c02's final frame exactly (the mug `ma11-hot-chocolate-mug-v1.png` with its steam wisp, the temperature-time plot with the cooling curve, the dashed violet tangent at t = 4 with "?", chips "Next: rates of other things" and "°C per minute?"). On the first sentence the chips fade; heading writes "A changing rate from a real graph?". The coded thermometer column appears beside the mug; a time cursor moves from 0, the column falling in step. On "degrees" a dashed grey line at T = 20 labelled "room: 20 °C". On "times" two small violet arrows by the thermometer at t = 2 (long) and t = 25 (short), hand tag "changes". The chip "How fast at one moment?" moves to the top right.
+Visual: opens on c02's final frame exactly (the mug `ma11-hot-chocolate-mug-v1.png` with its steam wisp, the temperature-time plot with the cooling curve, the dashed violet tangent at t = 4 with "?", chips "Next: rates of other things" and "°C per minute?"). On the first sentence the chips fade; heading writes "A changing rate from a real graph?". The coded thermometer column appears beside the mug; a time cursor moves from 0, the column falling in step. As the cooling curve first draws, a small grey hand tag "model curve" (34 px) writes near its tail (root ruling 2 on c01 to c09); it stays in scenes 3 and 5. On "degrees" a dashed grey line at T = 20 labelled "room: 20 °C". On "times" two small violet arrows by the thermometer at t = 2 (long) and t = 25 (short), hand tag "changes". The chip "How fast at one moment?" moves to the top right.
 
 ### 2. a line has one rate, a curve doesn't
 > First, compare a straight line with a curve. Here's the coffee cart's takings line again. Slide a point along it, and the rate stays at five dollars per cup, **everywhere**. Now slide the same point along the cooling curve, with its tangent. The tangent's gradient keeps changing, steep at first, then **flatter**. If you used one number for the whole curve, you'd be wrong almost everywhere. That's the big idea. When a model is linear, its rate of change is constant. When it isn't linear, the rate changes from point to point, and at each point it's the gradient of the tangent **there**.
@@ -69,7 +78,7 @@ Visual: clear change to two panels side by side (each 860 × 600 px). Left: c01'
 ### 3. estimating the rate at four minutes
 > Let's estimate the rate at four minutes. Draw the tangent at t equals four. It passes through zero, seventy-two and ten, **thirty-two**. Both points are on the tangent, and they're far apart. The rise is thirty-two minus seventy-two, which is minus forty degrees. The run is ten minutes. So the rate is minus forty over ten, minus four degrees Celsius per **minute**. The units come from the axes, degrees up, per minute along. And the minus sign means the temperature is **falling**. A positive gradient would mean it's warming up.
 
-Visual: clear change: the cooling plot large (1,200 × 760 px), the mug as a 260 px badge with its thermometer. `TangentReader` at t = 4: the violet tangent draws full length; on "thirty-two" ringed points (0, 72) and (10, 32), hand tag "on the tangent". Legs: run "10 min" (blue), rise "−40 °C" (teal, pointing down). Rows, 52 px: "(32 − 72)/(10 − 0) = −40/10"; on "minute" "= −4 °C per min" (green frame), "°C" teal over "min" blue, hand tag "°C per min". On "falling" hand tag "minus: falling", and the thermometer's arrow at t = 4 pulses.
+Visual: clear change: the cooling plot large (1,200 × 760 px), the grey "model curve" tag kept near its tail, the mug as a 260 px badge with its thermometer. `TangentReader` at t = 4: the violet tangent draws full length; on "thirty-two" ringed points (0, 72) and (10, 32), hand tag "on the tangent". Legs: run "10 min" (blue), rise "−40 °C" (teal, pointing down). Rows, 52 px: "(32 − 72)/(10 − 0) = −40/10"; on "minute" "= −4 °C per min" (green frame), "°C" teal over "min" blue, hand tag "°C per min". On "falling" hand tag "minus: falling", and the thermometer's arrow at t = 4 pulses.
 
 ### 4. say what it means, with one sign
 > Now say what it means, in words. At four minutes, the hot chocolate is cooling at about four degrees per **minute**. The word "cooling" already carries the minus sign. So don't write "cooling at minus four degrees a minute". That's a double negative, and it would mean warming **up**. Either give the rate as minus four, or say it's cooling at four. Not both. And always include the units, because "four" on its own could mean anything.
@@ -79,12 +88,12 @@ Visual: stage change to a sentence card (1,400 px wide), the plot dimmed behind.
 ### 5. a later time: flatter, slower
 > Now try thirteen minutes. The tangent there passes through three, forty-eight and twenty-three, **twenty-eight**. That's a fall of twenty degrees over twenty minutes, so minus one degree per **minute**. It's still cooling, but only a quarter as fast. Four degrees a minute at four minutes, and one degree a minute at thirteen. The steeper the tangent, the faster the change, whatever the units. Here the tangent is flatter because the drink is closer to room temperature, and the closer it gets, the more slowly it loses **heat**.
 
-Visual: the plot returns with the tangent at 4 kept in pale violet. `TangentReader` at t = 13: violet tangent; on "twenty-eight" ringed points (3, 48) and (23, 28), legs "20 min" (blue), "−20 °C" (teal). Row 52 px: on "minute" "rate at 13 min = −20/20 = −1 °C per min" (green frame). The two tangents' gradients sit side by side, 44 px: "t = 4: −4", "t = 13: −1", hand tag "steeper = faster". On "heat" the gap between the curve and the room line shrinks visibly at the two times (teal brackets "36 °C above room", "18 °C above room").
+Visual: the plot returns, with its grey "model curve" tag, and the tangent at 4 kept in pale violet. `TangentReader` at t = 13: violet tangent; on "twenty-eight" ringed points (3, 48) and (23, 28), legs "20 min" (blue), "−20 °C" (teal). Row 52 px: on "minute" "rate at 13 min = −20/20 = −1 °C per min" (green frame). The two tangents' gradients sit side by side, 44 px: "t = 4: −4", "t = 13: −1", hand tag "steeper = faster". On "heat" the gap between the curve and the room line shrinks visibly at the two times (teal brackets "36 °C above room", "18 °C above room").
 
 ### 6. a rising graph: the cart at eight o'clock
-> Rates can be positive too. Here's the coffee cart's sales curve again. At eight o'clock, in the middle of the rush, draw the tangent. It passes through about seven o'clock, thirty-six cups, and nine o'clock, a hundred and sixty-one **cups**. That's a rise of a hundred and twenty-five cups over two hours, about sixty-two cups an **hour**. So at eight, the cart is selling about sixty-two cups an hour. The gradient is positive because the total is **rising**. Your reading might differ by a cup or two, and that's fine. It's an **estimate**.
+> Rates can be positive too. Here's the coffee cart's sales curve again. At eight o'clock, in the middle of the rush, draw the tangent. It passes through about half past six, five cups, and half past nine, a hundred and ninety-two **cups**. That's a rise of a hundred and eighty-seven cups over three hours, about sixty-two cups an **hour**. So at eight, the cart is selling about sixty-two cups an hour. The gradient is positive because the total is **rising**. Your reading might differ by a cup or two, and that's fine. It's an **estimate**.
 
-Visual: clear change: c01's cart curve (clock 6 to 11, cups 0 to 250; 1,200 × 760 px), the cart badge (260 px) at the top left. `TangentReader` at 8 o'clock (t = 2): the violet tangent draws; on "cups" ringed read points at about (7, 36) and (9, 161), legs "2 h" (blue), "125 cups" (teal). Row 52 px: "125 ÷ 2 ≈ 62 cups per hour"; on "hour" green frame "about 62 cups per hour at 8 am". On "rising" hand tag "plus: rising" beside the rise leg, and a small grey chip "c01: average 7 to 9 = 60". On "estimate" a grey "±" tag on each read point.
+Visual: clear change: c01's cart curve (clock 6 to 11, cups 0 to 250; 1,200 × 760 px), the cart badge (260 px) at the top left. `TangentReader` at 8 o'clock (t = 2): the violet tangent draws; on "cups" ringed read points at about (6:30, 5) and (9:30, 192), each visibly off the curve (the curve is near 17 and 187 there), hand tag "on the tangent, not the curve"; legs "3 h" (blue), "187 cups" (teal). Row 52 px: "187 ÷ 3 ≈ 62 cups per hour"; on "hour" green frame "about 62 cups per hour at 8 am". On "rising" hand tag "plus: rising" beside the rise leg, and a small grey chip "c01: average 7 to 9 = 60". On "estimate" a grey "±" tag on each read point.
 
 ### 7. at a time, or from one time to another?
 > One trap. The question said "at four minutes", so it needs a tangent. A secant over the first ten minutes goes from about eighty-five degrees down to about forty-two. That's an average of about minus four point three degrees per minute. It's close, but it's the average over ten minutes, not the rate at **four**. "At" a time means a tangent. "From" one time "to" another means a **secant**. In an exam question, look for the word "at".
@@ -163,7 +172,7 @@ Model answer: t = 20: 1600/20 = 80 people per minute; t = 50: 600/20 = 30 people
 | t = 4 | tangent (0, 72), (10, 32): −40/10 = −4 °C/min | 3, 4, 6 |
 | t = 13 | tangent (3, 48), (23, 28): −20/20 = −1 °C/min; a quarter as fast | 5 |
 | Above room | 36 °C at t = 4, 18 °C at t = 13 | 5 |
-| Cart at 8 am | tangent through about (7, 36), (9, 161): 125/2 ≈ 62 cups/h (model C′(2) = 751/12 ≈ 62.6) | 6 |
+| Cart at 8 am | tangent through about (6:30, 5), (9:30, 192): 187/3 ≈ 62 cups/h (model C′(2) = 751/12 ≈ 62.6) | 6 |
 | Secant | (0, 84.8) to (10, 41.6): −4.32, "about −4.3" | 7 |
 | A1 | −600/30 = −20 g/min | 9, 10 |
 | A2 | 80, 30, difference 50 people/min | 11, 12 |
@@ -172,11 +181,12 @@ Model answer: t = 20: 1600/20 = 80 people per minute; t = 50: 600/20 = 30 people
 
 Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex to re-check.
 
+- Revision 2: cart tangent at 8 am read at t = ½ (6:30) and t = 7/2 (9:30): tangent values 37/8 = 4.625 and 1539/8 = 192.375; curve C(½) ≈ 16.72, C(7/2) ≈ 187.03; (192 − 5)/3 = 187/3 ≈ 62.3; model C′(2) = 751/12 ≈ 62.6 unchanged.
 - T(t) = 20 + 324/(t + 5): T(0) = 424/5 = 84.8; T(4) = 56; T(10) = 208/5 = 41.6; T(13) = 38; T′(0) = −12.96; T′(4) = −4; T′(13) = −1; T′(30) = −324/1225 ≈ −0.26.
 - Tangent at 4: 56 − 4(t − 4): 72 at 0, 32 at 10. Tangent at 13: 38 − (t − 13): 48 at 3, 28 at 23.
 - Secant [0, 10]: (41.6 − 84.8)/10 = −4.32.
 - Ice: −600/30 = −20; author curve m(t) = 700 − 20(t − 10) + 0.4(t − 10)²: m(10) = 700, m′(10) = −20.
-- Cart at t = 2 (8 am): C(2) = 197/2 = 98.5; C′(2) = 751/12 ≈ 62.58; tangent value at t = 1: 35.92 (about 36), at t = 3: 161.08 (about 161); (161 − 36)/2 = 62.5.
+- Cart at t = 2 (8 am): C(2) = 197/2 = 98.5; C′(2) = 751/12 ≈ 62.58; tangent value at t = ½ (6:30): 37/8 = 4.625 (about 5), at t = 7/2 (9:30): 1539/8 = 192.375 (about 192); curve there C(½) ≈ 16.72, C(7/2) ≈ 187.03; (192 − 5)/3 = 187/3 ≈ 62.3 (Revision 2, SymPy, scratchpad `c-rev2/verify.py`).
 - Turnstiles: 1600/20 = 80; 600/20 = 30; 80 − 30 = 50. Picture model (author): N′(t) = 10.707 + 186.22·exp(−((t − 31.93)/12)²), N(20) = 1400: N′(20) = 80, N′(50) = 30, N(50) = 5300, N′ > 0 throughout, N(0) ≈ 870.
 
 ## Memory aid check
@@ -186,7 +196,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c01c09/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,596 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the riders, the tangents drawing, the thermometer) and the 45 s notes scene: about 508 s. Characters per scene (1 to 14): 556, 579, 520, 428, 518, 526, 428, 226, 292, 374, 411, 368, 295, 75. Speech before the notes is about 415 s, 62 s under the 570 s cap. Feedback speech: about 28 s and 28 s.
+Counted by script (narration blockquotes, bold markers removed): 5,596 characters (Revision 2, unchanged). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the riders, the tangents drawing, the thermometer) and the 45 s notes scene: about 508 s. Characters per scene (1 to 14): 556, 579, 520, 428, 518, 526, 428, 226, 292, 374, 411, 368, 295, 75. Speech before the notes is about 415 s, 62 s under the 570 s cap. Feedback speech: about 28 s and 28 s.
 
 Reserve trims if the voiced take runs long: scene 1's "And this time the rate isn't a speed" sentence; scene 5's last clause.
 
@@ -270,4 +280,5 @@ Builds on: Instantaneous speed and the tangent. Next: Shrinking secants and the 
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c02; check that the side-by-side riders make "not constant" obvious, that the one-sign rule is clear, and that "at" against "from ... to" sticks), then the Codex maths check and error check, then voicing and a build to grade A.

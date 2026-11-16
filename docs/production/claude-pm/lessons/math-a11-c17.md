@@ -1,8 +1,16 @@
 # Maths A11 C17: What does f′(c) tell us about a real situation? f′(c) as the instantaneous rate of change with units and sign, and reading a quantity's graph and its rate graph together without algebra (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`, ruling 4 in particular). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`, ruling 4 in particular). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,526 characters by script (see "Narration length estimate"), 14 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,525 characters by script (see "Narration length estimate"), 14 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c17-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, scene 3a ("Same climbing speed"): **accepted**: "Same climbing rate, very different heights."
+
+Narration now 5,525 characters by script (Revision 1: 5,526), about 503 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-eighth video of Year 11 Mathematics Advanced (2024), outline order 48, Introduction to differentiation (The derivative as a rate of change). Pre-design pack: `../pre-design/maths-a11/math-a11-c17.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson12.sa.html` (`we-3`, the draining tank's average −50 L/min, used only as the model for "say what it means"; the steep-flat-steep revisit) and `lesson15.sa.html` (the height rule: where f is steepest, f′ is largest). Route entry: `math-a11-c17` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted hot-air balloon and paddock (c16's brief) and a painted shuttle-run strip for the handoff (prefix `ma11-`); every graph, cursor and readout coded.
 
@@ -66,7 +74,7 @@ Visual: opens on c16's final frame exactly (the paddock `ma11-launch-paddock-v1.
 Visual: clear change to the g01 board at the left (1,000 px), the climb graph at the right (t 0 to 40, h 0 to 700; 760 × 560 px) with the balloon as a badge. Task strip, 44 px: "h(t) = (60t² − t³)/50. Find h′(10) and say what it means." Rows, 52 px: "h′(t) = (120t − 3t²)/50" (violet); on "eighteen" "h′(10) = (1200 − 300)/50 = 18"; hand tag "rise ÷ run: m per min"; on "minute" framed answer (green): "At 10 min the balloon is climbing at 18 m per minute." The graph's violet tangent at t = 10 draws with readout "18 m/min", hand tag "at that instant". On "Compare the average" an amber secant from (0, 0) to (10, 100) with readout "100 ÷ 10 = 10 m/min", hand tag "average: secant". On "height" a red slip "h′(10) = 100 m" writes and is crossed, caption "100 m is h(10)".
 
 ### 3a. how fast, not how high
-> The rate tells you how fast, not how high. At thirty minutes, h prime is three thousand six hundred minus two thousand seven hundred, over fifty, which is eighteen again. But now the balloon is five hundred and forty metres **up**. Same climbing speed, very different heights. And at forty minutes, h prime is zero. The balloon has stopped climbing, at its highest point, six hundred and forty **metres**. The sign matters too. A positive rate means the height is increasing, and a negative rate means it's **decreasing**.
+> The rate tells you how fast, not how high. At thirty minutes, h prime is three thousand six hundred minus two thousand seven hundred, over fifty, which is eighteen again. But now the balloon is five hundred and forty metres **up**. Same climbing rate, very different heights. And at forty minutes, h prime is zero. The balloon has stopped climbing, at its highest point, six hundred and forty **metres**. The sign matters too. A positive rate means the height is increasing, and a negative rate means it's **decreasing**.
 
 Visual: the board clears row by row. Rows, 52 px: "h′(30) = (3600 − 2700)/50 = 18"; on "up" "h(30) = 540 m" (teal); two equal violet tangents at t = 10 and t = 30 with readouts "18 m/min" and the balloons at 100 m and 540 m side by side as badges, hand tag "how fast, not how high". Row: "h′(40) = 0"; on "metres" "h(40) = 640 m, the top" (green frame), a flat amber tangent at t = 40. On "decreasing" two small chips "+ climbing", "− falling", hand tag "+ climbing, − falling".
 
@@ -183,7 +191,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,526 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the cursor sweeps, the cover card) and the 45 s notes scene: about 503 s. Characters per scene (1 to 12, with 3a, 3b, 4a and 4b counted separately): 499, 755, 510, 451, 507, 413, 623, 137, 222, 379, 290, 326, 339, 75. Speech before the notes is about 410 s, under the 570 s cap. Feedback speech: about 28 s and 25 s.
+Counted by script (narration blockquotes, bold markers removed): 5,525 characters (Revision 2; Revision 1 was 5,526). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the cursor sweeps, the cover card) and the 45 s notes scene: about 503 s. Characters per scene (1 to 12, with 3a, 3b, 4a and 4b counted separately): 499, 755, 509, 451, 507, 413, 623, 137, 222, 379, 290, 326, 339, 75. Speech before the notes is about 410 s, under the 570 s cap. Feedback speech: about 28 s and 25 s.
 
 Reserve trims if the voiced take runs long: scene 2's "The balloon started slowly" sentence (keep the secant); scene 1's "drifts back down" sentence.
 
@@ -273,4 +281,5 @@ Builds on: Stationary points of a cubic. Next: Displacement and velocity.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c03, c15 and c07; check that the units are derived as rise over run, not announced, that the instantaneous-versus-average contrast is felt, that "how fast, not how high" lands with the two equal rates, and that the rate graph alone is enough to answer A2), then the Codex maths check and error check, then voicing and a build to grade A.

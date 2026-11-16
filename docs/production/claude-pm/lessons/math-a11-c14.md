@@ -1,8 +1,16 @@
 # Maths A11 C14: How does the sign of f′(x) show increasing, decreasing and stationary? f′(c) > 0, f′(c) < 0 and f′(c) = 0 at a point, solving f′(x) > 0 for where a function increases, and why a stationary point need not be a turn (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,560 characters by script (see "Narration length estimate"), 14 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,578 characters by script (see "Narration length estimate"), 14 scene headings, about 507 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c14-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, scene 5 (the sign rule is contradicted by c15's |x|): **accepted**, reviewer's wording ("For a polynomial, the sign of f prime can only change where f prime is zero, ..."); the teaching check carries the same condition.
+
+Narration now 5,578 characters by script (Revision 1: 5,560), about 507 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-fifth video of Year 11 Mathematics Advanced (2024), outline order 45, Introduction to differentiation (Graphical applications of the derivative). Pre-design pack: `../pre-design/maths-a11/math-a11-c14.md` (brief 243). Site lessons (read through the pack's quotations, read only): `introduction-to-differentiation/lesson10.sa.html` (`we-1`, x² − 4x + 3, and `we-2`, x³ − 3x², both with their numbers) and `lesson08.sa.html` (the stationary-point card). Route entry: `math-a11-c14` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted beach (c13's brief) and a painted garage with a roller door for the handoff (prefix `ma11-`); every graph, tangent and sign strip coded.
 
@@ -77,7 +85,7 @@ Visual: the rider moves to t = 5 and stops; its tangent lies flat and turns ambe
 Visual: the rider runs from 8 am to 6 pm again and paints a `SignStrip` under the graph as it goes: "+" (up token) from 0 to 5, an amber dot "0" at 5, "−" (down token) from 5 to 10; on "after" the strip completes. Rows, 44 px: "300 − 60t > 0 ⟺ t < 5: growing for 0 ≤ t < 5 (8 am to 1 pm)"; "300 − 60t < 0 ⟺ t > 5: shrinking for 5 < t ≤ 10 (1 pm to 6 pm)". On "stretch" the amber dot rings and both "<" signs at 5 are circled, hand tag "not counted". On "busiest moment" the counter's "790" and the strip's change point flash together.
 
 ### 5. worked example: a parabola
-> Here's the same idea without the beach. Where is f of x equals x squared minus four x plus three increasing, and where is it decreasing? f prime of x is two x minus four, which is zero at x equals **two**. That splits the number line in two. The sign of f prime can only change where f prime is zero, so one test value on each side is enough. f prime of one is minus two, so f is decreasing for x less than two. f prime of three is two, so f is increasing for x greater than **two**. And at x equals two, it's stationary.
+> Here's the same idea without the beach. Where is f of x equals x squared minus four x plus three increasing, and where is it decreasing? f prime of x is two x minus four, which is zero at x equals **two**. That splits the number line in two. For a polynomial, the sign of f prime can only change where f prime is zero, so one test value on each side is enough. f prime of one is minus two, so f is decreasing for x less than two. f prime of three is two, so f is increasing for x greater than **two**. And at x equals two, it's stationary.
 
 Visual: clear change to the g01 board with a small graph of y = x² − 4x + 3 at the right (420 px). Task strip, 44 px: "Find where f(x) = x² − 4x + 3 is increasing and where it is decreasing." Rows, 52 px: "f′(x) = 2x − 4"; on "two" (first) "f′(x) = 0 at x = 2" (amber dot on the graph), hand tag "split at the stationary x"; "f′(1) = −2 < 0: decreasing for x < 2" (down token), hand tag "test each side"; on "two" (second) "f′(3) = 2 > 0: increasing for x > 2" (up token), the sign strip "− 0 +" painting under the small graph. Framed answer (green): "decreasing for x < 2; increasing for x > 2; stationary at x = 2".
 
@@ -137,7 +145,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 13's frame exac
 
 ## Teaching checks
 
-- **Does it explain causes?** Why the sign of f′: it is the tangent's tilt (2). Why f′ = 0 means stationary: the tangent is flat (3). Why solve an inequality: f′ is a function whose sign we want (4). Why test between stationary x-values: the sign can only change at a zero of f′ (5, 6). Why x³'s flat point is not a turn: f′ keeps its sign (7).
+- **Does it explain causes?** Why the sign of f′: it is the tangent's tilt (2). Why f′ = 0 means stationary: the tangent is flat (3). Why solve an inequality: f′ is a function whose sign we want (4). Why test between stationary x-values: for a polynomial f′, the sign can only change at a zero of f′ (5, 6; said with that condition in scene 5, since c15's |x| breaks it). Why x³'s flat point is not a turn: f′ keeps its sign (7).
 - **Misconceptions addressed:** increasing judged by height (2, A1 crossed); one test value (6 crossed); every stationary point a turn (7); a stationary x inside an interval (4 tag); the inequality's direction (A2 crossed).
 - **Visual standard, item by item:** 1 the painted beach from the first frame with a live counter and rider, returning as a badge in 2 to 4; 2 a new stage every 25 to 60 s; 3 the crowd rider with a sign-coloured tangent and readouts, the progressively painted sign strip, the stacked f and f′ panels; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 boards in 5 and 6; 8 framed card and five bullets; 9 the busiest moment showing 0 people per hour.
 - **One idea at a time:** up and down at a point (2), flat (3), where over the day (4), a parabola (5), a cubic (6), a flat spot that is not a turn (7).
@@ -186,7 +194,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,560 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider's runs, the sign strip, the panels) and the 45 s notes scene: about 505 s. Characters per scene (1 to 14): 544, 814, 538, 542, 513, 713, 321, 150, 214, 339, 123, 347, 327, 75. Speech before the notes is about 412 s, under the 570 s cap. Feedback speech: about 25 s and 26 s.
+Counted by script (narration blockquotes, bold markers removed): 5,578 characters (Revision 2; Revision 1 was 5,560). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider's runs, the sign strip, the panels) and the 45 s notes scene: about 507 s. Characters per scene (1 to 14): 544, 814, 538, 542, 531, 713, 321, 150, 214, 339, 123, 347, 327, 75. Speech before the notes is about 414 s, under the 570 s cap. Feedback speech: about 25 s and 26 s.
 
 Reserve trims if the voiced take runs long: scene 3's balloon callback (keep the thumbnail); scene 6's "Testing minus one, one and three" sentence (keep the row).
 
@@ -277,4 +285,5 @@ Builds on: Choosing the right rule. Next: Sketching the graph of f′.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c05, c07 and w18; check that "increasing at a point" is understood as "going up as x passes c", that the 520-but-shrinking slip lands, that intervals exclude the stationary x-values, and that x³ is a clear warning without teaching c16's method), then the Codex maths check and error check, then voicing and a build to grade A.

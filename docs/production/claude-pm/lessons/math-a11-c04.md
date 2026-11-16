@@ -1,8 +1,18 @@
 # Maths A11 C04: How do shrinking secants find the gradient of a curve? The secant through P(c, f(c)) and Q(c + h, f(c + h)), tables of gradients as h shrinks from both sides, a graphing app, and a corner where it fails (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `w31.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
 Narration 5,537 characters by script (see "Narration length estimate"), 13 scene headings, about 504 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c04-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, open decision 2 (spreadsheet decimals): **kept as written** on the reviewer's advice (exact x³ values at 44 px); open decision closed.
+
+Knock-on from c05 finding 1 (not a c04 finding): the Codex asset brief for `ma11-water-slide-v1.png` now asks for a smooth rounded join between the flat start platform and the steep drop, no sharp corner anywhere, and a drop that never reaches vertical, because c05 now says "This slide has neither". The plate is not yet painted. No narration, visual or number change; the c04 to c05 join is unchanged.
+
+Narration unchanged at 5,537 characters by script, about 504 s with holds. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: thirty-fifth video of Year 11 Mathematics Advanced (2024), outline order 35, Introduction to differentiation. Pre-design pack: `../pre-design/maths-a11/math-a11-c04.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson13.sa.html` (SHA256 `bfaae610…5e33`; `we-1` table for x² at 2 and `we-2` x³ at 3 with h = 0.001 used with exact values; `we-3` |x| at 0 used). Route entry: `math-a11-c04` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the reused painted phone with a coded map and a coded graphing app (prefix `ma11-` for new plates; none new here except the handoff's water slide); every graph, secant, table and readout coded.
 
@@ -185,7 +195,7 @@ Recalculated with SymPy 1.14 and Python floats (16 Nov 2026, scratchpad `c01c09/
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,537 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the zooms, the table filling, the app tap) and the 45 s notes scene: about 504 s. Characters per scene (1 to 13): 501, 664, 745, 618, 691, 603, 164, 257, 350, 221, 393, 255, 75. Speech before the notes is about 411 s, 66 s under the 570 s cap. Feedback speech: about 26 s and 30 s.
+Counted by script (narration blockquotes, bold markers removed): 5,537 characters (Revision 2, unchanged). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the zooms, the table filling, the app tap) and the 45 s notes scene: about 504 s. Characters per scene (1 to 13): 501, 664, 745, 618, 691, 603, 164, 257, 350, 221, 393, 255, 75. Speech before the notes is about 411 s, 66 s under the 570 s cap. Feedback speech: about 26 s and 30 s.
 
 Reserve trims if the voiced take runs long: scene 2's last sentence (the car link); scene 5's calculator sentence (keep the grey row).
 
@@ -233,7 +243,7 @@ Additions:
 
 Read `docs/production/claude-pm/codex-prompts/00-standing-rules.md` first; the design is `docs/production/claude-pm/lessons/math-a11-c04.md`. Paint after the learning review and maths check pass and root gives the go-ahead, and before the c04 build (its final frame shows this plate). Save to `public/assets/maths/`. Transparent PNG with a true alpha channel; ink and watercolour in the house style, matched to `maths/ma11-jellybean-jar-v1.png`; no text, numbers, logos, people, hands, faces, glow or shadow. Never stretch.
 
-1. `ma11-water-slide-v1.png` (2400 × 1200 px): an open water-park slide seen exactly side-on, a single smooth chute: a short flat start platform at the top left, a steep drop, a long gentle middle that flattens, then a dip into a splash pool at the bottom right; supporting posts beneath; a little water running in the chute. Side-on so its top edge reads as a clean curve the code can trace (sidecar).
+1. `ma11-water-slide-v1.png` (2400 × 1200 px): an open water-park slide seen exactly side-on, a single smooth chute: a short flat start platform at the top left whose join into the steep drop is a smooth rounded bend (no sharp corner anywhere along the chute: c05 tells students this slide has no kink), a steep drop that never reaches vertical, a long gentle middle that flattens, then a dip into a splash pool at the bottom right; supporting posts beneath; a little water running in the chute. Side-on so its top edge reads as a clean curve the code can trace (sidecar).
 
 Sidecar JSON (`ma11-water-slide-v1.json`): 24 to 40 points along the chute's top edge in image pixels, left to right, for c05's rider and the coded profile. Report inspection on the paper background (`#f6f1e7`) at 600 px and full width, and the alpha check. Append the hand-in to `status.md`; write `docs/production/claude-pm/assets/ma11-c04-provenance.json`.
 
@@ -270,8 +280,9 @@ Builds on: Instantaneous speed; rates from real-world graphs. Next: The derivati
 ## Open decisions
 
 - **1. The corner here or in c05 (pack decision).** Kept here as the two-sided check, because the map's junction makes it visual; c05 recalls it in one sentence when the definition needs "if the tangent exists".
-- **2. Spreadsheet decimals.** The x³ rows show exact values (27.027009001) to avoid the site's rounded equals; if the learning review finds them too long on screen, show "27.00900…" with an ellipsis, never a rounded equals.
+- **2. Spreadsheet decimals.** The x³ rows show exact values (27.027009001) to avoid the site's rounded equals; if the learning review finds them too long on screen, show "27.00900…" with an ellipsis, never a rounded equals. **Settled by the learning review (Revision 2):** keep the exact values at 44 px.
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c02 and w08; check that the zoom makes "a curve has a gradient at a point" convincing, that h is understood as a step, that both sides are seen to agree, and that the corner's disagreement is seen), then the Codex maths check and error check, then voicing and a build to grade A.

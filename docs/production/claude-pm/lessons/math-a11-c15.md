@@ -1,8 +1,16 @@
 # Maths A11 C15: How do we sketch y = f′(x) from the graph of y = f(x)? Zeros under the flat points, sign from rising or falling, size from steepness, the degree dropping by one, and a break at a corner (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,523 characters by script (see "Narration length estimate"), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,525 characters by script (see "Narration length estimate"), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-c15-learning-review.md` (summary `../checks/m-a11-c01-c18-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md`. Resolution log: `../checks/m-a11-c01-c18-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, scene 4 ("About halfway" before an exact value): **accepted**: "Exactly halfway between its turns, at x equals a half."
+
+Narration now 5,525 characters by script (Revision 1: 5,523), about 503 s with holds (see "Narration length estimate"); within 5,500 to 6,800 and under 570 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: forty-sixth video of Year 11 Mathematics Advanced (2024), outline order 46, Introduction to differentiation (Graphical applications of the derivative). Pre-design pack: `../pre-design/maths-a11/math-a11-c15.md` (brief 243). Site lesson (read through the pack's quotations, read only): `introduction-to-differentiation/lesson15.sa.html` (`we-1`, a parabola with its minimum at x = 3; `we-2`, a cubic with a maximum at −1 and a minimum at 2; `we-3`, |x|; the "Fixing the skeleton" card; all used). Route entry: `math-a11-c15` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted garage and roller door (c14's brief) and a painted pump track for the handoff (prefix `ma11-`); every graph, tracer and drop line coded.
 
@@ -73,7 +81,7 @@ Visual: stage change: `PairedDerivativePanel` full width (each panel 1,400 × 34
 Visual: clear change: paired panels (each 1,200 × 340 px) with the question card at the left. Task strip, 44 px: "f is a parabola with a minimum at x = 3. Sketch y = f′(x)." Question 1: an amber drop line from (3, f(3)) to an amber dot at (3, 0) below. Question 2: "−" band left of 3; on "positive" "+" band right of 3. Question 3: the tracer rides f and the pen draws a rising line through (3, 0). On "one" framed answer (green): "f′: a rising line through (3, 0)", hand tag "degree drops by one" with "x² → x" beside it. On "Check with algebra" a grey row, 40 px: "f = (x − 3)² → f′ = 2x − 6 = 0 at x = 3 ✓".
 
 ### 4. worked example: a cubic
-> Here's a cubic with a maximum at x equals minus one and a minimum at x equals two. Two flat points, so f prime has two zeros, at minus one and **two**. f rises, then falls, then rises again, so f prime is positive, then negative, then positive. That's an upward parabola, cutting the axis at minus one and two. Where does f fall most steeply? About halfway between its turns, at x equals a half, so that's where f prime is **lowest**. A cubic gives a quadratic, so the degree drops by one again. In fact f prime must be a number times x plus one, times x minus two, which is exactly that parabola. Putting the zeros of f prime under the x intercepts of f is the slip. They go under the flat **points**.
+> Here's a cubic with a maximum at x equals minus one and a minimum at x equals two. Two flat points, so f prime has two zeros, at minus one and **two**. f rises, then falls, then rises again, so f prime is positive, then negative, then positive. That's an upward parabola, cutting the axis at minus one and two. Where does f fall most steeply? Exactly halfway between its turns, at x equals a half, so that's where f prime is **lowest**. A cubic gives a quadratic, so the degree drops by one again. In fact f prime must be a number times x plus one, times x minus two, which is exactly that parabola. Putting the zeros of f prime under the x intercepts of f is the slip. They go under the flat **points**.
 
 Visual: the panels clear and redraw. Task strip: "A cubic f has a maximum at x = −1 and a minimum at x = 2. Sketch y = f′(x)." Question 1: drop lines from the two turns; on "two" amber dots at (−1, 0) and (2, 0), hand tag "zeros under flat points". Question 2: bands "+ − +". Question 3: the tracer runs and the pen draws an upward parabola; on "lowest" its vertex at x = ½ rings, hand tag "steepest fall: lowest f′". On "In fact" a grey row, 40 px: "f′ = k(x + 1)(x − 2), k > 0". Framed answer (green): "f′: an upward parabola, zeros −1 and 2, lowest at x = ½". On "points" grey dashed lines from f's three x-intercepts drop to the axis and a red slip "zeros under the x-intercepts" writes and is crossed, hand tag "not under the intercepts".
 
@@ -181,7 +189,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,523 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the door's run, the tracer's passes) and the 45 s notes scene: about 503 s. Characters per scene (1 to 13): 502, 764, 585, 690, 655, 543, 243, 240, 341, 184, 361, 340, 75. Speech before the notes is about 410 s, under the 570 s cap. Feedback speech: about 26 s and 27 s.
+Counted by script (narration blockquotes, bold markers removed): 5,525 characters (Revision 2; Revision 1 was 5,523). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the door's run, the tracer's passes) and the 45 s notes scene: about 503 s. Characters per scene (1 to 13): 502, 764, 585, 692, 655, 543, 243, 240, 341, 184, 361, 340, 75. Speech before the notes is about 410 s, under the 570 s cap. Feedback speech: about 26 s and 27 s.
 
 Reserve trims if the voiced take runs long: scene 6's first three sentences (keep the inset); scene 4's degree sentence; scene 5's last sentence.
 
@@ -269,4 +277,5 @@ Builds on: Increasing, decreasing and stationary. Next: Stationary points of a c
 
 ## Review notes
 
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" at the top). Next: the Codex maths check and error check (brief 248), then voicing on the Google voice and a build on the studio kit to grade A, with a learning check on the exact voiced preview.
 - Revision 1 has had no independent review. Next: student learning review (trace from c14 and c05; check that the three questions are applied in order on each example, that "steepest, not highest" lands at the pause, that A2's vertex-form step is heard rather than skipped, and that the corner inset links back to the door), then the Codex maths check and error check, then voicing and a build to grade A.
