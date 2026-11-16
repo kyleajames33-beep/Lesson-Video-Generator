@@ -69,7 +69,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (b) Cookie, x/8 on [0, 4]: F(x) = x²/16 = (area within x)/(area of cookie) = πx²/16π; f′ = 1/8; mode 4; m = 2√2 ≈ 2.828; Q₁ = 2; Q₃ = 2√3 ≈ 3.464; IQR ≈ 1.464. Quarter widths 2, 0.828, 0.636, 0.536. Trap: x/8 = ½ gives x = 4 (the rim). A disc of radius 2 holds 4/16 = ¼ of the cookie, not half.
   (c) 3x²/8 on [0, 2]: F(x) = x³/8; mode 2, f(2) = 3/2; m = ∛4 ≈ 1.587; Q₁ = ∛2 ≈ 1.260.
   (d) A1: f′(x) = 12x(2 − 3x), zero at 0 and 2/3; f(2/3) = 16/9; mode 2/3.
-  (d2) Lifetime: F(l) = 1 − (4 − l)³/64; mode 0, f(0) = 3/16; m = 4 − ∛32 ≈ 0.8252 h ≈ 49.5 min.
+  (d2) Lifetime: F(l) = 1 − (4 − l)³/64; mode 0, f(0) = 3/4; m = 4 − ∛32 ≈ 0.8252 h ≈ 49.5 min.
   (e) A2: x² + 2x − 2 = 0, x = −1 ± √3; Q₁ = −1 + √3 ≈ 0.732; −1 − √3 rejected.
   (f) Pronunciations: "two root two"; "two root three"; "the cube root of four"; "root three minus one"; "F of m equals one half"; "pi x squared over pi times sixteen".
   (g) Windows: hump x −0.3 to 2.3, f y 0 to 1, F y 0 to 1.1; x/8 on x −0.3 to 4.3, f y 0 to 0.6, F y 0 to 1.1; 3x²/8 on x −0.2 to 2.2, f y 0 to 1.6; flat density on x 0 to 6, y 0 to 0.5.
@@ -127,7 +127,7 @@ Visual: clear change to the g01 board (new case). Task strip "Find the mode and 
 ### 9. in context: component lifetimes
 > Here's why the difference matters in a real problem. A component's lifetime, L hours, has density three times four minus l, all squared, over sixty four, for l from zero to four. That density is highest at zero and falls the whole way, so the mode is **zero**. Its F is one minus four minus l, cubed, over sixty four. Setting F equal to a half gives four minus m, cubed, equals thirty two. So m is four minus the cube root of thirty two, about zero point eight three **hours**. Half of these components fail in under fifty minutes, even though some last up to four hours. The most likely lifetime and the median answer different questions.
 
-Visual: clear change to the g01 board (new case). Task strip "Find the mode and the median lifetime." Givens card: "f(l) = 3(4 − l)²/64 and F(l) = 1 − (4 − l)³/64 for 0 ≤ l ≤ 4" (site lesson 10 Q2, numbers unchanged). Paired view on l from −0.3 to 4.3 (f y 0 to 0.25, F y 0 to 1.1). On "zero" a blue triangle at l = 0 (f(0) = 3/16, grey), row "f′(l) = −6(4 − l)/64 < 0 for l < 4: f decreasing; mode 0" in a green frame. Rows "1 − (4 − m)³/64 = ½ ⇒ (4 − m)³ = 32 ⇒ m = 4 − ∛32"; on "hours" the green frame "m ≈ 0.83 h", with the amber line at ½. On "fifty minutes" a grey readout "0.83 h ≈ 50 min", and the long thin tail of f out to 4 tints pale amber, hand tag "half fail early; some last 4 h".
+Visual: clear change to the g01 board (new case). Task strip "Find the mode and the median lifetime." Givens card: "f(l) = 3(4 − l)²/64 and F(l) = 1 − (4 − l)³/64 for 0 ≤ l ≤ 4" (site lesson 10 Q2, numbers unchanged). Paired view on l from −0.3 to 4.3 (f y 0 to 0.8, F y 0 to 1.1). On "zero" a blue triangle at l = 0 (f(0) = 3/4, grey), row "f′(l) = −6(4 − l)/64 < 0 for l < 4: f decreasing; mode 0" in a green frame. Rows "1 − (4 − m)³/64 = ½ ⇒ (4 − m)³ = 32 ⇒ m = 4 − ∛32"; on "hours" the green frame "m ≈ 0.83 h", with the amber line at ½. On "fifty minutes" a grey readout "0.83 h ≈ 50 min", and the long thin tail of f out to 4 tints pale amber, hand tag "half fail early; some last 4 h".
 
 ### 10. memory aid
 > Here's a way to keep them apart. The mode is the top of f. The median and quartiles go across from F. For the median, go across from one half, and down to the **axis**.

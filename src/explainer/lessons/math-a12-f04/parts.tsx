@@ -258,8 +258,8 @@ export const MiniBars: React.FC<{x: number; base: number; n: number; pitch: numb
 // ---------- the worded question at the top of a feedback scene ----------
 export type QPart = string | {u: string; at: number};
 /** The full question at 30 px in a strip; the listed phrases are underlined on their cues. */
-export const QStrip: React.FC<{parts: readonly QPart[]; y?: number}> = ({parts, y = 160}) => (
-	<div style={{position: 'absolute', left: 96, top: y, width: 1728, boxSizing: 'border-box', background: CARD, borderRadius: 18, borderLeft: `10px solid ${BROWN}`, boxShadow: CARD_SHADOW, padding: '12px 28px 16px', fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 32, lineHeight: 1.4, color: INK}}>
+export const QStrip: React.FC<{parts: readonly QPart[]; y?: number; size?: number}> = ({parts, y = 160, size = 32}) => (
+	<div style={{position: 'absolute', left: 96, top: y, width: 1728, boxSizing: 'border-box', background: CARD, borderRadius: 18, borderLeft: `10px solid ${BROWN}`, boxShadow: CARD_SHADOW, padding: '12px 28px 16px', fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: size, lineHeight: 1.4, color: INK}}>
 		{parts.map((p, i) => (typeof p === 'string' ? <span key={i}>{p}</span> : <MarkSpan key={i} kind="underline" at={p.at} color={AMBER_STROKE} width={5}><span style={{fontWeight: 800}}>{p.u}</span></MarkSpan>))}
 	</div>
 );
