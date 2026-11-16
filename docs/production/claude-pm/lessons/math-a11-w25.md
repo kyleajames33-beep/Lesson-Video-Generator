@@ -1,8 +1,16 @@
 # Maths A11 W25: How does solving a circle for y or x split it into semicircles? y = ±√(r² − x²), x = ±√(r² − y²), which halves are functions, and their domain and range (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,620 characters by script (build parser rules), 14 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,603 characters by script (build parser rules), 14 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w25-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, scene 3 (spoken intermediate decimals): **accepted** (root ruling: keep the real 4.9 m radius), reviewer's wording; the screen shows "y = √(4.9² − 3²)" then "≈ 3.87 m". Open decision 1 closed; the r = 5 fallback is not needed.
+
+Narration now 5,603 characters by script, about 511 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: twenty-fifth video of Year 11 Mathematics Advanced (2024), outline order 25, Working with functions. Pre-design pack: `../pre-design/maths-a11/math-a11-w25.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson23.sa.html` (Semicircles and Circles from a Graph, SHA256 `b7dc15292366027dfd91478ac966025c56a70a50311628c75ef66d2d70395bfa`; `we-1` and `we-2` used with the site's numbers unchanged; `we-3` was taught in w24). Its logged copy error S11-06 ("Each semicircle is a function") is not taught (Decisions). Route entry: `math-a11-w25` in `../../programme/maths-a11-route-inputs-2.json`. Visual system: maths studio kit; one painted plate of a netball court from above (prefix `ma11-`); the goal circles, semicircles, sweeps, shadows and algebra coded.
 
@@ -45,7 +53,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (b) Court: y = √(24.01 − x²); at x = 3, √15.01 = 3.8743 m (shown "≈ 3.87 m"); at x = 0, 4.9 m.
   (c) Right half check: x = √(25 − y²) at x = 3 gives y = ±4 (pack recalculation).
   (d) Endpoints: each semicircle includes its two endpoints on the cutting diameter (closed shadows).
-  (e) Pronunciations: "y equals plus or minus the root of r squared minus x squared"; "four point nine squared"; "twenty-four point oh one"; "fifteen point oh one"; "minus root five".
+  (e) Pronunciations: "y equals plus or minus the root of r squared minus x squared"; "four point nine squared" (24.01 and 15.01 are no longer spoken, Revision 2); "minus root five".
   (f) Windows: court plot in metres, x −8 to 8, y −1 to 8 (scene 3) and x −1 to 8, y −8 to 8 (scene 4), equal scale, registered to the plate's sidecar; split plots −7 to 7, equal scale.
 
 Main question: *A netball goal circle is half a circle. The equation x² + y² = r² draws the whole thing. How does solving a circle for y or x split it into semicircles?*
@@ -68,9 +76,9 @@ Visual: opens on w24's final frame exactly (the court plate `ma11-netball-court-
 Visual: clear change to an equal-scale plot (−7 to 7, 820 × 820 px) at the left with the circle x² + y² = 25 (ink) and a small court badge (220 px) at the top left. Rows at the right, 52 px, one at a time (site `we-1`): "x² + y² = 25"; on "squared" (first) "y² = 25 − x²"; on "squared" (second) "y = ±√(25 − x²)" with "±" ringed. On "The root sign on its own" a chip "√ : the non-negative root" (44 px), hand tag "+√: never negative", with the recall "√25 = 5, not ±5" in grey. On "semicircle" (first) `SemicircleSplit`: the circle splits along the x axis; the upper half slides up 40 px in amber with the label "y = √(25 − x²)", hand tag "top half". On "Check a point" the point (3, 4) marks on the amber half with the row "x = 3: y = √(25 − 9) = √16 = 4" (44 px). On "semicircle" (second) the lower half slides down 40 px in violet, label "y = −√(25 − x²)", hand tag "bottom half". On "cut along a diameter" the x axis between −5 and 5 glows as the diameter, chip "semicircle: half a circle".
 
 ### 3. the goal circle as a function
-> Back on the court. With the origin at the middle of the goal line, the court's half of the circle is y equals the root of four point nine squared minus x squared. Each x along the goal line gives exactly one y, so this upper semicircle is a **function**, and we can use it. How far out from the goal line is the circle, three metres along the line? Put x equals three. y is the root of twenty-four point oh one minus nine, which is the root of fifteen point oh one. That's about three point eight seven **metres**. Right in the middle, at x equals zero, it's the full four point **nine**, one whole radius out from the post.
+> Back on the court. With the origin at the middle of the goal line, the court's half of the circle is y equals the root of four point nine squared minus x squared. Each x along the goal line gives exactly one y, so this upper semicircle is a **function**, and we can use it. How far out from the goal line is the circle, three metres along the line? Put x equals three. y is the root of four point nine squared, minus three squared. On a calculator, that's about three point eight seven **metres**. Right in the middle, at x equals zero, it's the full four point **nine**, one whole radius out from the post.
 
-Visual: stage change to the court plate (about 1,200 px wide) with the goal line along the coded x axis (metres, −8 to 8) and the y axis up the court's centre line; the court's goal circle drawn as an amber upper semicircle, label "y = √(4.9² − x²)" (44 px). On "function" a short amber vertical line at x = 3 meets it once (green "1 hit"). On "Put x equals three" a blue tick at x = 3 on the goal line; rows at the right, 52 px: "y = √(24.01 − 3²)", "= √15.01"; on "metres" "≈ 3.87 m" (teal) and a teal dashed line rises from the tick to the circle, with a "3.87 m" tag. On "nine" a second teal dashed line rises from the origin to the top of the circle, tag "4.9 m". The off-court half stays hidden.
+Visual: stage change to the court plate (about 1,200 px wide) with the goal line along the coded x axis (metres, −8 to 8) and the y axis up the court's centre line; the court's goal circle drawn as an amber upper semicircle, label "y = √(4.9² − x²)" (44 px). On "function" a short amber vertical line at x = 3 meets it once (green "1 hit"). On "Put x equals three" a blue tick at x = 3 on the goal line; rows at the right, 52 px: "y = √(4.9² − 3²)"; on "metres" "≈ 3.87 m" (teal), with a small calculator chip "calc" beside it and a teal dashed line rises from the tick to the circle, with a "3.87 m" tag. On "nine" a second teal dashed line rises from the origin to the top of the circle, tag "4.9 m". The off-court half stays hidden.
 
 ### 4. solving for x: right and left
 > Now turn the court side on, so both goal lines are upright. At the left end, the goal circle bulges to the right, into the court. To describe that half, solve the circle for x instead. x squared equals r squared minus y squared, so x equals plus or minus the root of r squared minus y **squared**. The plus root gives x values of zero or more. That's the right **semicircle**. The minus root gives zero or less, the left semicircle. That's the shape at the other **end**, bulging left into the court from its own goal line.
@@ -188,9 +196,9 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `w24w31/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,620 characters**, 14 scene headings. Characters per scene (1 to 14): 516, 785, 612, 511, 535, 558, 553, 235, 138, 291, 144, 322, 345, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,603 characters**, 14 scene headings. Characters per scene (1 to 14): 516, 785, 595, 511, 535, 558, 553, 235, 138, 291, 144, 322, 345, 75.
 
-At 13.3 characters per second the speech before the notes is about 417 s. Holds and settling: 2 countdowns of 10 s (20 s); short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s; about 24 s of settling (the split along each axis, the court turning side on, the four-way sweep and the shadows); the notes scene is 45 s. Total **about 512 s (8 min 32 s)**, inside the 5,500 to 6,800 band and about 58 s under the 570 s cap.
+At 13.3 characters per second the speech before the notes is about 416 s. Holds and settling: 2 countdowns of 10 s (20 s); short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s; about 24 s of settling (the split along each axis, the court turning side on, the four-way sweep and the shadows); the notes scene is 45 s. Total **about 511 s (8 min 31 s)**, inside the 5,500 to 6,800 band and about 59 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 3's "one whole radius out from the post" (keep the 4.9 m tag); scene 5's "Only the top and bottom halves are." (keep the verdict chips).
 
@@ -278,11 +286,12 @@ Builds on: The equation of a circle (previous video); the vertical line test. Ne
 
 ## Open decisions
 
-- **1. Court decimals (learning review).** 4.9 m is the real radius, so scene 3 says "twenty-four point oh one" and "fifteen point oh one". If the reviewer finds the decimals distracting, the fallback keeps the court picture and moves the distance question to r = 5 (y = √(25 − 9) = 4), dropping the real radius from narration only.
+- **1. Court decimals (resolved, Revision 2).** Root ruling: keep the real 4.9 m radius. Scene 3 now says "the root of four point nine squared, minus three squared" and gives only the calculator result, about 3.87 m; 24.01 and 15.01 are no longer spoken. The r = 5 fallback is not needed.
 - **2. Site `we-1` on the stage (root).** It is taught in scene 2 on the split plot, not as a separate g01 board, because the split is the explanation; its numbers are unchanged.
 - **3. Where "functions of x" is said (learning review).** Scene 5 says the right half is "not a function of x". The reviewer checks that students do not hear "not a function at all" as permission to ignore x = √(r² − y²) as a graph.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w25-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w24 and w07; check that "the root sign means the positive root" lands before the split; that turning the court side on makes the x-forms feel needed; that the four-way sweep makes S11-06's correction visible; that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - The split and the sweep carry the explanation; judge them at playback speed. Each half must be drawn from its own equation.

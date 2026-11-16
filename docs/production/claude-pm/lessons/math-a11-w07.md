@@ -1,8 +1,17 @@
 # Maths A11 W07: What makes a relation a function? Relations as arrows between two sets, exactly one output for each input, four representations of one rule, and the vertical line test (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,526 characters by script (build parser rules), 14 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,516 characters by script (build parser rules), 14 scene headings, about 492 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w07-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Blocker, scene 3 (water taught as an input with no output): **accepted**, reviewer's replacement narration. Water is pointed out while the arrows still run from buttons to snacks (grey tag "no arrow in: allowed"); after the reversal it gets a red tag "input, no output: not allowed" as the reverse's second failure. Author note (a), the numbers table and the teaching checks updated.
+2. Should fix, attempt 1 and feedback 1 (about 32 s): **accepted** (root ruling: drop part (d)). The card, the attempt narration, the feedback sentence and mini diagram for (d), the model answer (now 3 marks), the Decisions and open decision 2 updated; feedback about 25 s.
+
+Narration now 5,516 characters by script, about 492 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: seventh video of Year 11 Mathematics Advanced (2024), outline order 7, Working with functions, Introduction to functions and relations. Pre-design pack: `../pre-design/maths-a11/math-a11-w07.md`. Site lesson (read through the pack, read only): `working-with-functions/lesson01.sa.html` (Functions & Relations), SHA256 `6c801a0d45246191bbd1238086f7b388f08d5afdb0e8cb43d96c000d3de15645`; its we-func-2 (x = y²) is used with the site's numbers unchanged; we-func-1 (evaluating f(x)) belongs to w08. The crosswalk's gap for `ci32f9832a` (no two-set arrow picture on the site) is filled with original teaching (the mapping diagram). Route entry: `math-a11-w07`. Visual system: maths studio kit; painted plates for the machine and snacks (prefix `ma11-`, plus reused plates); mapping diagrams, graphs and the sweeping line coded.
 
@@ -42,8 +51,8 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Learner question (outline, kept).** Answer chain: a relation is any set of arrows between two sets (2); a function allows exactly one arrow out of each input (3); direction matters (3); with numbers, one rule has four forms (4); on a graph, inputs are vertical lines, so one hit each (5, 6).
 - **Plain meanings at first use.** Set: "a collection of things, its elements". Relation: "an association between the elements of one set and the elements of another, drawn as arrows". Function: "a relation where each input has exactly one output". Input and output: "the element you start with" and "the element it's associated with". Ordered pair: "(input, output), input first". Vertical line test: "if any vertical line meets the graph more than once, it isn't a function".
 - **Domain left implicit.** "Each element of the first set" is said with the machine's buttons; the word "domain" waits for w09. The vertical line test is stated as "more than once", so lines that miss the graph (outside its domain) are not a failure (key note 4 says "at most once").
-- **Attempts (pack questions, original).** A1: which of {(1, 2), (2, 3), (3, 2)}, {(2, 1), (2, 5), (4, 0)}, y = x² − 1 and x² + y² = 9 are functions; answers a and c; crossed "(a) is not a function because 2 appears twice". A2: which of y = √(x + 4) and y² = x + 4 is a function, and why; crossed "they are the same graph, so both are functions".
-- **Mistake scene:** none separate. "A function can't repeat outputs" (3, 5, feedback 1 crossed); "a horizontal line test" (6 crossed); "every equation in x and y is a function" (5, the circle; A1 d); "√ gives ±" (feedback 2 crossed).
+- **Attempts (pack questions, original).** A1: which of {(1, 2), (2, 3), (3, 2)}, {(2, 1), (2, 5), (4, 0)}, and y = x² − 1 are functions (Revision 2: part (d), the circle, dropped); answers a and c; crossed "(a) is not a function because 2 appears twice". A2: which of y = √(x + 4) and y² = x + 4 is a function, and why; crossed "they are the same graph, so both are functions".
+- **Mistake scene:** none separate. "A function can't repeat outputs" (3, 5, feedback 1 crossed); "a horizontal line test" (6 crossed); "every equation in x and y is a function" (5 and 6a, the circle); "√ gives ±" (feedback 2 crossed).
 - **Handoff (outline next: w08, "What does f(x) mean, and how do we substitute into it?").** Scene 12 shows the machine with the chip "f(A1) = chips" and, beside it, the graph of y = x² with the point (3, 9) and the chip "f(3) = 9 ?", and the chip "Next: f(x), the value of f at x". This is the frame w08 should open on (open decision 1: w08 is designed by another designer at the same time).
 - **Site sources used:** lesson 1 `orient-and-recall`, `what-is-a-function` (one output per input, ordered pairs, input-output mapping), `worked-examples` (we-func-2), `traps-and-classify` (repeated outputs are fine; circles and sideways parabolas). The two-set association is original teaching (crosswalk gap for `ci32f9832a`).
 - **Site corrections:** none logged for lesson 1 in `../site-corrections-maths-a11.md`. The syllabus-alignment gap (relation defined only as ordered pairs on the site) is noted in the crosswalk; this video teaches the two-set picture.
@@ -51,7 +60,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Draft route entry (root to adopt).** id `math-a11-w07`; syllabusActions `ci32f9832a`, `cic0b5416c`, `ci9288f9fe`, `ci9bf331ec`; start "Recall plotting ordered pairs and drawing a graph from a table." Stop "Relation as an association between two sets; function as each input paired with exactly one output; four representations; the vertical line test." Next: "math-a11-w08: name the rule f and write f(x), the value of f at x".
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Machine mapping: A1 → chips, A2 → apple, B1 → chips, B2 → muesli bar (working); faulty B2 → muesli bar and water. Reverse: chips → A1 and B1.
+  (a) Machine mapping: A1 → chips, A2 → apple, B1 → chips, B2 → muesli bar (working); faulty B2 → muesli bar and water. Reverse: chips → A1 and B1; water → nothing (an input with no output, a second failure; Revision 2).
   (b) Card rule (w06): balance = 40 − 4t; pairs (0, 40), (1, 36), (2, 32), (3, 28); graph points only (t whole).
   (c) Graphs: y = x² (x from −3 to 3; y = 4 at x = ±2); x² + y² = 9 (x = 0: y = ±3; x = 2: y = ±√5; x = ±3: y = 0, one hit); x = y² (x = 4: y = ±2; x = 0: y = 0, one hit; x < 0: no hit). The sweep on the circle reports 1 hit at x = ±3 and 2 hits strictly between; "most lines meet it twice" is the scoped spoken claim.
   (d) A2: y = √(x + 4) has one output (√ is the non-negative root); y² = x + 4 at x = 0 gives y = ±2; at x = −4 one point (0).
@@ -77,9 +86,9 @@ Visual: opens on w06's handoff frame exactly (trips-to-balance table with arrows
 Visual: stage change to the `MappingDiagram` beside the machine (now 480 px at the left). Two ovals, 440 px tall: "buttons" (blue labels A1, A2, B1, B2) and "snacks" (teal labels chips, apple, muesli bar, water, each with a 70 px snack icon from its plate). Hand tag "a set: a collection". On "gives" `VendingPress` presses A1 and an ink arrow draws from A1 to chips. On "bar" A2, B1 and B2 (working) press in turn, each drawing its arrow as its snack drops. Hand tag "arrows: a relation". Water sits in the snack set with no arrow yet.
 
 ### 3. a function: exactly one output for each input
-> A function is a relation where each element of the first set is associated with exactly one element of the second. One input, exactly one output. Look at A1 and B1. They both give chips, and that's fine. Two buttons can share a snack, and it's still a **function**. But the faulty B2 has two arrows, one to the muesli bar and one to the water. One input with two outputs, so this relation is not a **function**. Now turn the arrows round, from snacks to buttons. Chips points to A1 and to B1, two outputs for one input. So the reverse is not a function, even though the original **was**. Direction matters. And water has no arrow pointing to it at all. That's fine too, because nothing says every output must be used.
+> A function is a relation where each element of the first set is associated with exactly one element of the second. One input, exactly one output. Look at A1 and B1. They both give chips, and that's fine. Two buttons can share a snack, and it's still a **function**. But the faulty B2 has two arrows, one to the muesli bar and one to the water. One input with two outputs, so this relation is not a **function**. Fix B2, so it only gives the muesli bar. Now notice water. No button gives it, and that's fine, because nothing says every output must be used. Now turn the arrows round, from snacks to buttons. Chips points to A1 and to B1, two outputs for one input. And water points nowhere, an input with no output. So the reverse is not a function, even though the original **was**. Direction matters.
 
-Visual: camera continue on the diagram. The definition writes at the top, 44 px: "Function: each input has exactly one output", hand tag "one input, one output". On "function" (first) the arrows A1 → chips and B1 → chips glow green together, hand tag "same snack: fine", and a green verdict chip "function ✓". On "function" (second) the faulty B2 is pressed again and a second arrow B2 → water draws red; the verdict chip turns red "not a function ✗", hand tag "two snacks: no". The red arrow fades back to the working machine (B2 → muesli bar only) and the verdict returns to green. On "Now turn the arrows round" the ovals swap sides and every arrow reverses; the ovals relabel "inputs: snacks" and "outputs: buttons". On "was" chips' two arrows (to A1 and B1) turn red, verdict "reverse: not a function ✗", hand tag "reverse: no longer a function". On "water has no arrow" water glows with a grey tag "no arrow in: allowed".
+Visual: camera continue on the diagram. The definition writes at the top, 44 px: "Function: each input has exactly one output", hand tag "one input, one output". On "function" (first) the arrows A1 → chips and B1 → chips glow green together, hand tag "same snack: fine", and a green verdict chip "function ✓". On "function" (second) the faulty B2 is pressed again and a second arrow B2 → water draws red; the verdict chip turns red "not a function ✗", hand tag "two snacks: no". On "Fix B2" the red arrow fades back to the working machine (B2 → muesli bar only) and the verdict returns to green "function ✓". On "Now notice water", with the arrows still running from buttons to snacks, water glows in the snacks (outputs) oval with a grey tag "no arrow in: allowed" (hand tag "outputs may go unused"). On "Now turn the arrows round" the grey tag fades, the ovals swap sides and every arrow reverses; the ovals relabel "inputs: snacks" and "outputs: buttons". While "Chips points to A1 and to B1" is spoken, chips' two arrows turn red. While "water points nowhere" is spoken, water (now in the inputs oval) gets a red tag "input, no output: not allowed". On "was" the verdict "reverse: not a function ✗" writes in red, hand tag "reverse: no longer a function", with both failures (chips' two red arrows, water's red tag) still lit.
 
 ### 4. one rule, four ways
 > In maths, the inputs and outputs are usually real numbers, an input x and an output y. A relation between them is a rule, and the same rule can be written four ways. Take the travel card from last time. As a formula, the balance is forty minus four t. As a table, zero trips gives forty, one gives thirty-six, and two gives **thirty-two**. As ordered pairs, with the input first, that's zero, forty, then one, thirty-six, and so **on**. And as a graph, those pairs become **points**. Four pictures of one rule, and in each one, every input has exactly one output. Whatever form a rule takes, the function test is the same.
@@ -107,14 +116,14 @@ Visual: clear change to a two-task board in the g01 style. Task 1 strip: "Is x²
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the machine badge (260 px) with A1 and B1 arrowed to chips in green and B2's two arrows in red. Main line, hand font 60 px: "One button, one snack." On "once" the key lines, 40 px: "Each input, exactly one output. Outputs may repeat." and "Any vertical line meets a function at most once." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
-> Your turn. Decide which of the four relations on the card are functions, and give a reason for each. Pause here to answer.
+> Your turn. Decide which of the three relations on the card are functions, and give a reason for each. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Which of the following relations are functions? Give a reason for each. (a) {(1, 2), (2, 3), (3, 2)} (b) {(2, 1), (2, 5), (4, 0)} (c) y = x² − 1 (d) x² + y² = 9". Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing (no graphs drawn).
+Visual: `QuestionCard`, 40 px: "Which of the following relations are functions? Give a reason for each. (a) {(1, 2), (2, 3), (3, 2)} (b) {(2, 1), (2, 5), (4, 0)} (c) y = x² − 1". Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing (no graphs drawn).
 
 ### 9. feedback 1 (brief)
-> A is a function. Each input, one, two and three, appears once. The output two is repeated, and that's **fine**. B is not, because the input two has two outputs, one and **five**. C is a function, because each x gives one value of x squared minus **one**. D is a circle, and x equals zero gives y equals three and minus three, so it's not a **function**. Saying A fails because two appears twice is the classic slip. Only repeated inputs **matter**.
+> A is a function. Each input, one, two and three, appears once. The output two is repeated, and that's **fine**. B is not, because the input two has two outputs, one and **five**. C is a function, because each x gives one value of x squared minus **one**. Saying A fails because two appears twice is the classic slip. Only repeated inputs **matter**.
 
-Visual: the card shrinks to the top; each part is underlined as it is used. On "fine" a mini mapping diagram for (a): inputs 1, 2, 3; outputs 2, 3; 1 and 3 both arrow to 2 (green), verdict "(a) function". On "five" the mini diagram for (b): input 2 with two red arrows to 1 and 5, verdict "(b) not a function". On "one" a small graph of y = x² − 1 with a sweeping line, "hits: 1", verdict "(c) function". On "function" a small circle with the line at x = 0, two red points, verdict "(d) not a function". On "matter" a red slip "(a) not a function: 2 appears twice" writes and is crossed, caption "repeated outputs are fine". Hold about 1 s.
+Visual: the card shrinks to the top; each part is underlined as it is used. On "fine" a mini mapping diagram for (a): inputs 1, 2, 3; outputs 2, 3; 1 and 3 both arrow to 2 (green), verdict "(a) function". On "five" the mini diagram for (b): input 2 with two red arrows to 1 and 5, verdict "(b) not a function". On "one" a small graph of y = x² − 1 with a sweeping line, "hits: 1", verdict "(c) function". On "matter" a red slip "(a) not a function: 2 appears twice" writes and is crossed, caption "repeated outputs are fine". Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. One of y equals root x plus four, and y squared equals x plus four, is a function. Which is it, and why? Pause here to answer.
@@ -147,19 +156,19 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 
 ## Teaching checks
 
-- **Does it explain causes?** Why a faulty button breaks the machine's usefulness: one input, two outputs (1, 3). Why sharing a snack is fine: each button still has one output (3). Why direction matters: the reversed arrows give chips two outputs (3). Why the vertical line test works: every input is a vertical line, so two hits mean two outputs for one input (5, 6). Why a horizontal line is the wrong test: inputs are not horizontal lines (6). Why a ± warns: it gives two y values for one x (6a). Why √(x + 4) is a function: √ means the non-negative root (feedback 2).
-- **Misconceptions addressed:** "functions can't repeat outputs" (3, 5, feedback 1 crossed); "horizontal line test" (6 crossed); "every x-y equation is a function" (5, A1 d); "√ gives ±" (feedback 2 crossed); "a relation is only a formula" (4).
+- **Does it explain causes?** Why a faulty button breaks the machine's usefulness: one input, two outputs (1, 3). Why sharing a snack is fine: each button still has one output (3). Why direction matters: the reversed arrows give chips two outputs and leave water, now an input, with none (3). Why an unused output is fine but an input with no output is not (3, Revision 2). Why the vertical line test works: every input is a vertical line, so two hits mean two outputs for one input (5, 6). Why a horizontal line is the wrong test: inputs are not horizontal lines (6). Why a ± warns: it gives two y values for one x (6a). Why √(x + 4) is a function: √ means the non-negative root (feedback 2).
+- **Misconceptions addressed:** "functions can't repeat outputs" (3, 5, feedback 1 crossed); "horizontal line test" (6 crossed); "every x-y equation is a function" (5, 6a); "√ gives ±" (feedback 2 crossed); "a relation is only a formula" (4).
 - **Visual standard, item by item:** 1 the painted machine and snacks from the first frame, returning in 2, 3, 5 (badge), 7 and 12; 2 a new stage every 30 to 60 s; 3 `VendingPress` building the mapping live, `VerticalLineSweep` with a live hit count, `FourWays` lighting one pair across four panels; 4 fixed colour roles; 5 large type; 6 hand tags; 7 g01 board with a framed answer and crossed slip; 8 framed card and five bullets; 9 the reversed arrows breaking the function, and the sweep never exceeding one hit on y = x².
 - **One idea at a time:** relation (2), then function (3), then representations (4), then the graph test (5, 6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 30 and 25 s (feedback 1 covers four parts; at the top of the owner's range).
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 25 s each (Revision 2: feedback 1 now covers three parts).
 - **Avoided double teaching:** w06's card rule is reused as a known rule; plotting points is recalled.
-- **Syllabus coverage:** `ci32f9832a` (2, 3); `cic0b5416c` (3, 4, 5, 6a); `ci9288f9fe` (4, 6a, A1 mixes pairs and formulas); `ci9bf331ec` (5, 6, A1 d, A2).
+- **Syllabus coverage:** `ci32f9832a` (2, 3); `cic0b5416c` (3, 4, 5, 6a); `ci9288f9fe` (4, 6a, A1 mixes pairs and formulas); `ci9bf331ec` (5, 6, A2).
 - **Out of scope by design:** f(x) notation (w08); domain and range (w09); inverses.
 
 ## Practice questions and model answers
 
-**Attempt 1 (scene 8; pack question 1, original, HSC style, 4 marks suggested, not an official marking scheme).** "Which of the following relations are functions? Give a reason for each. (a) {(1, 2), (2, 3), (3, 2)} (b) {(2, 1), (2, 5), (4, 0)} (c) y = x² − 1 (d) x² + y² = 9"
-Model answer: (a) function: each input appears once (the repeated output 2 is allowed). (b) not a function: input 2 has outputs 1 and 5. (c) function: each x gives one value of x² − 1. (d) not a function: x = 0 gives y = 3 and y = −3 (a vertical line meets the circle twice). Classic mistake (crossed): "(a) is not a function because 2 appears twice".
+**Attempt 1 (scene 8; pack question 1, original, HSC style, 3 marks suggested, not an official marking scheme).** "Which of the following relations are functions? Give a reason for each. (a) {(1, 2), (2, 3), (3, 2)} (b) {(2, 1), (2, 5), (4, 0)} (c) y = x² − 1" (part (d), x² + y² = 9, dropped in Revision 2: it repeated scene 5's own example)
+Model answer: (a) function: each input appears once (the repeated output 2 is allowed). (b) not a function: input 2 has outputs 1 and 5. (c) function: each x gives one value of x² − 1. Classic mistake (crossed): "(a) is not a function because 2 appears twice".
 
 **Attempt 2 (scene 10; pack question 2, original, HSC style, 2 marks suggested).** "One of y = √(x + 4) and y² = x + 4 is a function. State which one, and explain why the other is not."
 Model answer: y = √(x + 4) is a function: √ gives the non-negative root, so each x has one output. y² = x + 4 is not: at x = 0, y = 2 or y = −2, so the vertical line x = 0 meets it twice. Classic mistake (crossed): "they are the same graph, so both are functions".
@@ -168,13 +177,13 @@ Model answer: y = √(x + 4) is a function: √ gives the non-negative root, so 
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
-| Machine | A1 → chips, A2 → apple, B1 → chips, B2 → muesli bar; faulty B2 → muesli bar and water; reverse chips → A1, B1 | 1, 2, 3, 7, 12 |
+| Machine | A1 → chips, A2 → apple, B1 → chips, B2 → muesli bar; faulty B2 → muesli bar and water; reverse chips → A1, B1, water → nothing | 1, 2, 3, 7, 12 |
 | Card rule | 40 − 4t; (0, 40), (1, 36), (2, 32), (3, 28) | 4 |
 | y = x² | x = ±2 → 4; one hit everywhere | 5 |
-| Circle | x² + y² = 9: x = 0 → ±3; x = ±3 → 0 (one hit); two hits for −3 < x < 3 | 5, 9 |
+| Circle | x² + y² = 9: x = 0 → ±3; x = ±3 → 0 (one hit); two hits for −3 < x < 3 | 5, 6a |
 | we-func-2 (site) | x = y²; x = 4 → y = ±2; two hits | 6 |
 | Formula test | x² + y = 4 → y = 4 − x² (function); x² + y² = 9 → y = ±√(9 − x²) (not); table x 1, 2, 2 with y 5, 3, 7 (not) | 6a |
-| A1 | (a) function; (b) 2 → 1 and 5, not; (c) function; (d) x = 0 → ±3, not | 8, 9 |
+| A1 | (a) function; (b) 2 → 1 and 5, not; (c) function | 8, 9 |
 | A2 | √(x + 4) function; y² = x + 4 at x = 0: ±2, not | 10, 11 |
 | Handoff | f(A1) = chips; y = x², f(3) = 9 | 12 |
 
@@ -196,9 +205,9 @@ Recalculated with SymPy (16 Nov, scratchpad `checks2.py`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,526 characters**, 14 scene headings. Characters per scene (1 to 6, 6a, 7 to 13): 423, 415, 705, 610, 592, 486, 653, 184, 122, 428, 136, 337, 360, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,516 characters**, 14 scene headings. Characters per scene (1 to 6, 6a, 7 to 13): 423, 415, 789, 610, 592, 486, 653, 184, 123, 333, 136, 337, 360, 75.
 
-At 13.3 characters per second the speech before the notes is about 410 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (presses and drops, the reversal, the sweeps); notes 45 s. Total **about 493 s**, inside the band and under the cap.
+At 13.3 characters per second the speech before the notes is about 409 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (presses and drops, the reversal, the sweeps); notes 45 s. Total **about 492 s**, inside the band and under the cap.
 
 Reserve trims if the voiced take runs long: scene 1's "Press it again tomorrow, and it's chips again." (keep the repeat press, about 3 s); scene 4's "and so on" clause (about 1 s).
 
@@ -296,11 +305,12 @@ Builds on: Year 10 graphs and tables; the travel card rule (previous video). Nex
 ## Open decisions
 
 - **1. w07 to w08 join (root).** w08 is being designed at the same time by another designer. This design ends on the machine with "f(A1) = chips" beside y = x² with "f(3) = 9 ?". If w08's opening differs, root picks one: either w08 opens on this frame, or this scene 12's visual changes to w08's chosen opening (narration "f of three is the value of f at three" stays true either way). w08 should not reuse a vending machine as its own anchor.
-- **2. Feedback 1 length (root).** About 30 s for four parts, at the top of the owner's 15 to 30 s range. If it runs over in the voiced take, cut "Each input, one, two and three, appears once." (keep the diagram).
+- **2. Feedback 1 length (root).** Resolved in Revision 2: part (d) dropped (root ruling), about 25 s for three parts. If it still runs over in the voiced take, cut "Each input, one, two and three, appears once." (keep the diagram).
 - **3. Reused plates (root).** The chip bag (s09) and apple (s10) are reused as snacks; the anchor context (a vending machine) is new. Root to confirm this counts as plate reuse, not a shared anchor.
 - **4. Plate prefix `ma11-` (root),** as w01.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w07-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from Year 10 graphs only; check that the machine makes "exactly one output" concrete; that the reversal is a surprise rather than a confusion; that the step from buttons to real numbers in 4 is clear; that the sweep makes the vertical line test's reason visible), then the Codex maths check and error check, then voicing and a build to grade A.
 - The presses, the reversal and the sweeps carry the explanation; judge them at playback speed.

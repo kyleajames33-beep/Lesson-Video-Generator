@@ -1,8 +1,16 @@
 # Maths A11 W17: How do intersections solve f(x) = k and line-parabola systems? Level lines, substitution, tangents and two parabolas (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w17/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w17/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
 
-Narration 5,587 characters, 14 scene headings, about 507 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,526 characters, 14 scene headings, about 502 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w17-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, feedback 2 (about 33 s): **accepted**, reviewer's wording; the crossed slip keeps the detail. About 30 s.
+
+Narration now 5,526 characters by script, about 502 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: seventeenth video of the Year 11 Mathematics Advanced course (outline playlist order 17), after w16 (sketching parabolas and finding their equations) and before w18 (quadratic inequalities). Pre-design pack: `../pre-design/maths-a11/math-a11-w17.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson16.sa.html` (Intersections and Simultaneous Equations, SHA256 `6107881f3dbf6aef67f8062e189d685675ee4f90ebfb31194b44693f810ecd2b`, `we-2`, `we-3`, card 06). Every number recalculated with SymPy. Route entry: `math-a11-w17` in `../../programme/maths-a11-route-inputs-2.json`.
 
@@ -114,7 +122,7 @@ Visual: the card shrinks to the top (30 px). `GivensStrip`: "y = x² − 4x + 3"
 Visual: `QuestionCard`, 40 px, worded as printed: "Find where the parabolas y = x² − 2x − 3 and y = −x² + 4x + 5 intersect." The full question stays on screen. Picture slot: empty axes (x −3 to 6, y −5 to 10), no graphs. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 12. feedback 2 (brief)
-> Set them equal and bring everything to the left. Two x squared minus six x minus eight is zero, so x squared minus three x minus four is **zero**. That's x minus four, times x plus one, so x is four or minus **one**. In the first equation, four gives five, and minus one gives zero. So the points are four, five, and minus one, **zero**. If you got two x squared plus two x plus two and said they never meet, the signs didn't change when the terms **moved**.
+> Set them equal and bring everything to the left. Two x squared minus six x minus eight is zero, so x squared minus three x minus four is **zero**. That's x minus four, times x plus one, so x is four or minus **one**. In the first equation, four gives five, and minus one gives zero. So the points are four, five, and minus one, **zero**. If you decided they never meet, a sign didn't change when a term **moved**.
 
 Visual: the card shrinks to the top. `GivensStrip`: both equations (underlined as used). Rows, 52 px: "x² − 2x − 3 = −x² + 4x + 5"; "2x² − 6x − 8 = 0"; on "zero" "x² − 3x − 4 = 0"; on "one" "(x − 4)(x + 1) = 0 ⇒ x = 4 or −1"; rows "x = 4: y = 16 − 8 − 3 = 5", "x = −1: y = 1 + 2 − 3 = 0". On "zero" (last answer cue) framed answer (green): "(4, 5) and (−1, 0)"; the picture draws both parabolas with amber dots. On "moved" a red slip "2x² + 2x + 2 = 0, so they never meet" writes and is crossed (hand caption "change every sign"). Hold about 1 s.
 
@@ -194,9 +202,9 @@ Checked with SymPy 1.14 (16 Nov 2026, scratchpad `w15w23/verify.py`, 85 checks, 
 
 ## Narration length estimate
 
-Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,587 characters**, 14 scene headings. Characters per scene (1 to 14): 436, 699, 569, 504, 573, 713, 475, 181, 137, 308, 163, 442, 312, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,526 characters**, 14 scene headings. Characters per scene (1 to 14): 432, 699, 563, 504, 573, 707, 475, 181, 137, 308, 163, 397, 312, 75.
 
-At 13.3 characters per second the speech is about 420 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the level line's sweep (2), the landing rider (3), the sliding line (5) and the two flights with their difference curve (6), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 507 s (8 min 27 s)**, inside the 5,500 to 6,800 character band and about 63 s under the 570 s cap.
+At 13.3 characters per second the speech is about 415 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the level line's sweep (2), the landing rider (3), the sliding line (5) and the two flights with their difference curve (6), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 502 s (8 min 22 s)**, inside the 5,500 to 6,800 character band and about 68 s under the 570 s cap.
 
 Reserve trims, if the voiced takes run long, in this order: scene 2's "Any higher, and the line misses." (keep the vanishing dot); scene 6's last clause (keep the difference curve). Do not cut below 5,500 characters.
 
@@ -294,5 +302,6 @@ Builds on: simultaneous linear equations; the discriminant; sketching parabolas.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w17-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w13 and w14; check that "both true at once" is the reason for setting equal; that the start point x = 0 is explained, not ignored; that the merge at Δ = 0 is seen; that the cancelling case is a surprise, not a rule), then the Codex maths check and error check, then voicing and a build to grade A.
 - The level line, the landing and the sliding line carry the explanation; judge them at playback speed, not from stills. Every dot and readout must be computed from the same coefficients as the displayed graphs.

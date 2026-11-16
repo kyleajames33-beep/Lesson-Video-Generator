@@ -1,8 +1,16 @@
 # Maths A11 W14: Where are a function's zeros, and how does the discriminant place a parabola? Zeros, intercepts and f(0), factored form, and the discriminant with the sign of a (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models). Not voiced (no `math-a11-w14/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models). Not voiced (no `math-a11-w14/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
 
-Narration 5,713 characters, 14 scene headings, about 520 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,723 characters, 14 scene headings, about 521 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w14-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Optional, feedback 1 ("minus, times minus two, times five"): **accepted**: "That's the negative of minus two times five, so plus ten, and the point is zero, ten."
+
+Narration now 5,723 characters by script, about 521 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: fourteenth video of the Year 11 Mathematics Advanced course (outline playlist order 14), after w13 (break-even and simultaneous linear models) and before w15 (completing the square for the vertex and axis). Last video of this design batch. Pre-design pack: `../pre-design/maths-a11/math-a11-w14.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson13.sa.html` (Parabolas: Intercepts and the Discriminant, SHA256 `3cda738ba2076762faf65accb4b5107319c4f517e494f397e45ba8cfb49e9919`, `we-1`, `we-2`, `we-3`). Every number recalculated with SymPy. Route entry: `math-a11-w14` in `../../programme/maths-a11-route-inputs-1.json`.
 
@@ -106,7 +114,7 @@ Visual: stage change to the framed `MemoryAidCard` (about 1,300 × 600 px, doubl
 Visual: `QuestionCard`, 40 px, worded as printed: "Find all the intercepts of y = −(x − 2)(x + 5)." The full question stays on screen. Picture slot: empty axes (x −7 to 4, y −4 to 14) with no dots and no curve. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 10. feedback 1 (brief)
-> Set each bracket to zero: x is two, or x is minus **five**. For the y intercept, put x equals zero. That's minus, times minus two, times five, which is plus ten, so zero, **ten**. Saying x is minus two and five is wrong. Each intercept has the opposite sign to the number in its **bracket**.
+> Set each bracket to zero: x is two, or x is minus **five**. For the y intercept, put x equals zero. That's the negative of minus two times five, so plus ten, and the point is zero, **ten**. Saying x is minus two and five is wrong. Each intercept has the opposite sign to the number in its **bracket**.
 
 Visual: the card shrinks to the top (30 px). `GivensStrip`: "y = −(x − 2)(x + 5)" ("(x − 2)", "(x + 5)" and the leading "−" underlined as used). Rows, 52 px: "x − 2 = 0 ⇒ x = 2"; on "five" "x + 5 = 0 ⇒ x = −5", amber dots at 2 and −5. On "put x equals zero" "y = −(0 − 2)(0 + 5) = −(−10)"; on "ten" "= 10", blue dot at (0, 10). Framed answer (green): "(2, 0), (−5, 0), (0, 10)"; the downward parabola draws through them. On "bracket" a red slip "x = −2 and x = 5" writes and is crossed (hand caption "opposite sign"). Hold about 1 s.
 
@@ -191,9 +199,9 @@ Checked with SymPy 1.14 (16 Nov 2026, scratchpad `w08w14/verify.py`); Codex to r
 
 ## Narration length estimate
 
-Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,713 characters**, 14 scene headings. Characters per scene (1 to 14): 474, 512, 603, 518, 677, 580, 757, 259, 107, 279, 153, 388, 331, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,723 characters**, 14 scene headings. Characters per scene (1 to 14): 474, 512, 603, 518, 677, 580, 757, 259, 107, 289, 153, 388, 331, 75.
 
-At 13.3 characters per second the speech is about 430 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the plate cross-fades (1), the probe (2), the lit brackets (3, 4), the sag slider's three held states (5) and the side panels (7) about 25 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 520 s (8 min 40 s)**, inside the 5,500 to 6,800 character band and about 50 s under the 570 s cap.
+At 13.3 characters per second the speech is about 430 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the plate cross-fades (1), the probe (2), the lit brackets (3, 4), the sag slider's three held states (5) and the side panels (7) about 25 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 521 s (8 min 41 s)**, inside the 5,500 to 6,800 character band and about 49 s under the 570 s cap.
 
 Reserve trims, if the voiced takes run long, in this order: scene 5's "And all the while, the y intercept stays at one and a half." (keep the pulsing readout); scene 7's "A negative discriminant on its own doesn't prove it." (keep the crossed slip). Do not cut below 5,500 characters.
 
@@ -300,5 +308,6 @@ Builds on: the discriminant and the null factor law; f(x) notation. Next: Comple
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w14-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w05, w08 and w04; check that the general definition of a zero lands on the linear profit function before any parabola; that f(0) and the zeros are visibly different questions; that the brackets' sign flip is shown, not only said; that Δ crossing zero lines up with the touching plate at speed; that "both facts" is the reason, not a slogan; that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - The sag slider, the lit brackets and the probe carry the explanation; judge them at playback speed, not from stills. Every readout, dot and count must be computed from the same coefficients as the displayed curve.

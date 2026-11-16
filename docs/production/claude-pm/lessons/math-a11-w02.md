@@ -1,8 +1,18 @@
 # Maths A11 W02: Why must we factorise before we cancel an algebraic fraction? Factors against terms, expanding and factorising on a tile grid, special products, and simplifying, dividing and adding algebraic fractions with restrictions (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 6,246 characters by script (build parser rules), 16 scene headings, about 547 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,376 characters by script (build parser rules), 16 scene headings, about 557 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w02-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, scene 8 (restrictions without a reason): **accepted** (root ruling: keep all six examples). Reviewer's wording used; the final cue moves to "zero". The bottoms and the divisor's top glow amber in turn before the chips "x ≠ −2, 0, 2".
+2. Should fix, scene 6 ("outside numbers"): **accepted**, reviewer's wording.
+3. Optional, scene 6 (start the tile grid on "Split seven x"): **declined.** The tiles snapping into one rectangle at "Watch the tiles agree" is the scene's check and its small surprise; showing them during the split would spend it early and put the rows and the grid in competition.
+
+Narration now 6,376 characters by script, about 557 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: second video of Year 11 Mathematics Advanced (2024), outline order 2, Working with functions, Algebraic techniques. Pre-design pack: `../pre-design/maths-a11/math-a11-w02.md`. Site lessons (read through the pack, read only): `algebraic-techniques-and-inequalities/lesson05.sa.html` (Expanding, Factorising and Simplifying), SHA256 `0e683fa60184d6f6798f49a29d16bae2c41f828370a8b37d693697712b75a986`, and `lesson06.sa.html` (Algebraic Fractions), SHA256 `62919ffae4062b12aa329fd254b5558518d4760c9971bf482f57b740daf1ed2d`. All six site worked examples are used with the site's numbers unchanged. Route entry: `math-a11-w02` in `../../programme/maths-a11-route-inputs-1.json`. Visual system: maths studio kit; painted plates for the chocolate (prefix `ma11-`); tiles, algebra and readouts coded.
 
@@ -95,7 +105,7 @@ Visual: stage change to two coded tile grids side by side (each 560 px). Left: (
 Visual: clear change to the g01 board (AT05 we-1). Task strip: "Expand and simplify". Equation strip, 52 px: "(2x − 3)(x + 5) − (x − 1)²". Givens card, grouped: "product: (2x − 3)(x + 5)", "minus: (x − 1)²". On "fifteen" row 1 "(2x − 3)(x + 5) = 2x² + 10x − 3x − 15 = 2x² + 7x − 15". On "one" row 2 "(x − 1)² = x² − 2x + 1" with −2x violet. On "sixteen" row 3 "2x² + 7x − 15 − (x² − 2x + 1)" with a red-pencil arrow from the minus to every term inside, hand tag "every sign changes", then "= x² + 9x − 16" in a green answer frame. On "avoid" a red slip "(x − 1)² = x² − 1" writes and is crossed, caption "missing the middle term".
 
 ### 6. factorising: common factor, squares, trinomials
-> Factorising runs it backwards. Always take out a common factor first. Three x squared minus twenty-seven has a common factor of three, leaving x squared minus nine. That's x squared minus three squared, a difference of two squares, so it's three, times x minus three, times x plus **three**. Now a harder one, two x squared plus seven x plus three. Multiply the outside numbers, two times three, which is six. Find two numbers with product six and sum seven. They're six and **one**. Split seven x into six x plus x, take a common factor from each pair, and the same bracket appears twice. So it's two x plus one, times x plus **three**. Watch the tiles agree. Two squares, seven strips and three units snap into exactly one **rectangle**.
+> Factorising runs it backwards. Always take out a common factor first. Three x squared minus twenty-seven has a common factor of three, leaving x squared minus nine. That's x squared minus three squared, a difference of two squares, so it's three, times x minus three, times x plus **three**. Now a harder one, two x squared plus seven x plus three. Multiply the number in front of x squared by the number on its own, two times three, which is six. Find two numbers with product six and sum seven. They're six and **one**. Split seven x into six x plus x, take a common factor from each pair, and the same bracket appears twice. So it's two x plus one, times x plus **three**. Watch the tiles agree. Two squares, seven strips and three units snap into exactly one **rectangle**.
 
 Visual: clear change to a factorising board with two short tasks (AT05 we-2 and we-3). Task 1 strip: "Factorise fully: 3x² − 27". On "three" (first) rows: "= 3(x² − 9)" (3 teal, hand tag "common factor first"), "= 3(x − 3)(x + 3)" in a green frame, with the scene 4 strip's a² − b² row glowing. Task 1 shrinks to 32 px at the top. Task 2 strip: "Factorise: 2x² + 7x + 3". On "one" a small product-sum box, 44 px: "product 2 × 3 = 6, sum 7: 6 and 1", hand tag "product 6, sum 7". Rows: "2x² + 6x + x + 3", "= 2x(x + 3) + 1(x + 3)" with both (x + 3) blue, and on "three" (second) "= (2x + 1)(x + 3)" in a green frame. A red slip "(2x + 3)(x + 1)" writes and is crossed, caption "expand to check: 2x² + 5x + 3". On "rectangle" `AlgebraTileGrid` factorise mode at the right: two x² tiles, seven x strips and three units slide in and snap into one rectangle, sides labelled "2x + 1" and "x + 3" in blue, hand tag "one rectangle".
 
@@ -105,9 +115,9 @@ Visual: clear change to a factorising board with two short tasks (AT05 we-2 and 
 Visual: clear change to the g01 board (AT06 we-1). Task strip: "Simplify and state any restrictions". Equation strip: "(x² − 9)/(x² + x − 12)". Givens card: "top: x² − 9", "bottom: x² + x − 12". On "four" rows: "top = (x − 3)(x + 3)", "bottom = (x − 3)(x + 4)" (product-sum tag "−3 and 4"). On "cancels" both (x − 3) are boxed blue and cancel with a blue stroke; row "= (x + 3)/(x + 4)" in a green frame, hand tag "whole factor". On "quarters" a red slip "(x + 3)/(x + 4) = 3/4" writes and is crossed, caption "x is a term, not a factor"; `ValueTester` opens at the right: an x slider at 1 with three readouts, 52 px: "original 0.8", "(x + 3)/(x + 4) 0.8", "3/4 0.75" (red). The slider sweeps −6 to 6 (skipping x = 0 by a quick step) while the first two readouts move together and the red one never moves; scoped grey tag "3/4 is wrong for every other x". On "zero" the slider stops at 3 and then −4: the original readout reads "undefined" in amber. On "cancelling" the restriction chips "x ≠ 3, x ≠ −4" write in amber beside the answer frame, hand tag "restriction stays".
 
 ### 8. dividing
-> To divide by a fraction, multiply by its reciprocal, the fraction flipped. So x over x plus two, divided by x squared over x squared minus four, becomes a **times**. Flip first, then factorise. x squared minus four is x minus two, times x plus **two**. Cancel x plus two, and one x against x squared. That leaves x minus two, over x, with x not equal to minus two, zero or **two**.
+> To divide by a fraction, multiply by its reciprocal, the fraction flipped. So x over x plus two, divided by x squared over x squared minus four, becomes a **times**. Flip first, then factorise. x squared minus four is x minus two, times x plus **two**. Cancel x plus two, and one x against x squared. That leaves x minus two, over x. The restrictions come from every bottom, and from the fraction we divide by, which can't be zero. So x can't be minus two, two or **zero**.
 
-Visual: clear change to a short board (AT06 we-2). Task strip: "Simplify". Equation strip: "x/(x + 2) ÷ x²/(x² − 4)". On "times" row "= x/(x + 2) × (x² − 4)/x²" with the second fraction flipping on screen, hand tag "flip first". On "two" (in "x plus two") row "= x/(x + 2) × (x − 2)(x + 2)/x²". Then (x + 2) cancels blue, one x cancels against x² (x² shown as x · x, w01's tiles in miniature). On "two" (last) row "= (x − 2)/x" in a green frame with amber chips "x ≠ −2, 0, 2".
+Visual: clear change to a short board (AT06 we-2). Task strip: "Simplify". Equation strip: "x/(x + 2) ÷ x²/(x² − 4)". On "times" row "= x/(x + 2) × (x² − 4)/x²" with the second fraction flipping on screen, hand tag "flip first". On "two" (in "x plus two") row "= x/(x + 2) × (x − 2)(x + 2)/x²". Then (x + 2) cancels blue, one x cancels against x² (x² shown as x · x, w01's tiles in miniature). Then row "= (x − 2)/x" in a green frame. While the restriction sentence is spoken, the two original bottoms x + 2 and x² − 4 glow amber in turn (x ≠ −2, x ≠ ±2), then the divisor's top x² glows amber (x ≠ 0) with a hand tag "divisor can't be 0". On "zero" the amber chips "x ≠ −2, 0, 2" write beside the answer frame, hand tag "dividing adds restrictions".
 
 ### 9. adding with different denominators
 > Adding needs a common denominator, just like with numbers. Take three over x plus one, plus two over x minus one. The bottoms share no factor, so the common denominator is their **product**. Multiply each top by the factor it's missing, so it's three times x minus one, plus two times x plus **one**. Expand and collect the top, and you get five x minus one, over the product. Leave the bottom **factorised**, so you can still see any factor that might cancel.
@@ -213,9 +223,9 @@ Recalculated with SymPy (16 Nov, scratchpad `checks.py`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **6,246 characters**, 16 scene headings. Characters per scene (1 to 16): 450, 536, 643, 372, 484, 723, 637, 369, 448, 165, 128, 369, 110, 374, 363, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **6,376 characters**, 16 scene headings. Characters per scene (1 to 16): 450, 536, 643, 372, 484, 761, 637, 461, 448, 165, 128, 369, 110, 374, 363, 75.
 
-At 13.3 characters per second the speech before the notes is about 464 s. Holds: two 10 s countdowns, the memory-card hold (2 s), two feedback holds (2 s), the handoff hold (2 s), about 12 s of settling (sharing, the slider sweep, the snapping tiles, the tester sweep); the key-notes scene is 45 s. Total **about 547 s**, inside the band and under the 570 s cap.
+At 13.3 characters per second the speech before the notes is about 474 s. Holds: two 10 s countdowns, the memory-card hold (2 s), two feedback holds (2 s), the handoff hold (2 s), about 12 s of settling (sharing, the slider sweep, the snapping tiles, the tester sweep); the key-notes scene is 45 s. Total **about 557 s**, inside the band and under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 3's "Change x, and both forms still agree." (keep the slider sweep silent, about 3 s); scene 9's last clause "so you can still see any factor that might cancel" (keep the tag, about 3 s).
 
@@ -278,7 +288,7 @@ Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with a CAS, and every value in narration, screen text, attempts and key notes against "Numbers used".
 2. Confirm the block arithmetic and the grid regions (author note a) match the plate's 4 rows of 6.
 3. Confirm the value-tester claim is scoped: 3/4 matches (x + 3)/(x + 4) only at x = 0, and the screen tag says "every other x"; the slider does not stop at 0.
-4. Confirm every restriction (7, 8, feedback 1) is complete and comes from the original denominators.
+4. Confirm every restriction (7, 8, feedback 1) is complete and comes from the original denominators (and, in 8, from the divisor, which cannot be zero).
 5. Confirm the six site examples are unchanged from the pack and both attempts carry every demand.
 6. Confirm the syllabus quotes match the crosswalk exactly; no site module or outcome label in learner copy or metadata.
 7. Confirm no em dash (U+2014), Australian spelling, the narration counts by script and every bold cue quoted in its scene's Visual in spoken order.
@@ -314,5 +324,6 @@ Builds on: Index laws (previous video); Year 10 expanding. Next: Surds and conju
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w02-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w01 and Year 10 expanding only; check that the 80-square pile makes the factor-term difference stick; that the tile grid on the block is read as area, not as a counting trick; that the product-sum split is followable at playback speed; that restrictions feel necessary from the tester; that 8 and 9 are not rushed), then the Codex maths check and error check, then voicing and a build to grade A.
 - The sharing, the tile grid on the plate, the snapping rectangle and the tester carry the explanation; judge them at playback speed.

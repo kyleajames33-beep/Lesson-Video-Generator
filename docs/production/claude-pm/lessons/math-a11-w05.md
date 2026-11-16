@@ -1,8 +1,17 @@
 # Maths A11 W05: What does the discriminant tell us before we solve? Δ = b² − 4ac, two, equal or no real roots, rational or irrational roots, and unknown coefficients (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,561 characters by script (build parser rules), 14 scene headings, about 495 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,600 characters by script (build parser rules), 14 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w05-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, scene 4 (spoken money): **accepted**, reviewer's wording ("six dollars eighty-four ... to the cent").
+2. Optional, scene 13 ("flips the sign"): **accepted.** Spoken "flips the inequality sign"; the handoff chip reads "Next: why does dividing by a negative flip the inequality sign?". w06 opens on this frame without quoting the chip, so the join holds.
+
+Narration now 5,600 characters by script, about 498 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: fifth video of Year 11 Mathematics Advanced (2024), outline order 5, Working with functions, Algebraic techniques. Pre-design pack: `../pre-design/maths-a11/math-a11-w05.md`. Site lesson (read through the pack, read only): `algebraic-techniques-and-inequalities/lesson10.sa.html` (The Discriminant), SHA256 `29b461b91831254fd2a241c18f6008ea86660d180600c5dbfa1b956f8d96d5e7`; its three worked examples are used with the site's numbers unchanged, and its two logged copy errors (S11-01 and S11-02) are not taught (Decisions). Route entry: `math-a11-w05`. Visual system: maths studio kit; painted plate for the kayak hire (prefix `ma11-`); the discriminant dial, algebra and readouts coded.
 
@@ -40,7 +49,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **No graphs.** No parabola thumbnails are shown (the pack's optional preview is dropped) to keep the graph meaning for w14; the dial uses price chips, not curves.
 - **Attempts.** A1 (pack question 1, changed): "equal roots" instead of the pack's "real roots", because the pack's version needs (m − 2)² ≥ 16, a quadratic inequality taught in w18. Answer m = 6 or m = −2; crossed "m = 4 or 0" (used 4 for 4ac). A2 (pack question 2): 5x² − 2x − 3 = 0, Δ = 64, two distinct rational roots; crossed "Δ = −56" (the sign of c lost).
 - **Mistake scene:** none separate. Squaring a negative b without its sign (5 crossed); "Δ = 0 means no roots" (2, positively); one sign of k (6 crossed); "real roots means Δ > 0" (7, positively); perfect square without the rational condition (4, positively); a lost sign in 4ac (A1 and A2 crossed).
-- **Handoff (outline next: w06, "Why does multiplying by a negative flip an inequality?").** Scene 13 shows "Δ ≥ 0: 1600 − 8T ≥ 0", the row "−8T ≥ −1600" and "÷ (−8): T ? 200" with a red-pencil question mark on the inequality sign, beside a small jetty badge, and the chip "Next: why does dividing by a negative flip the sign?". This frame is w06's opening frame.
+- **Handoff (outline next: w06, "Why does multiplying by a negative flip an inequality?").** Scene 13 shows "Δ ≥ 0: 1600 − 8T ≥ 0", the row "−8T ≥ −1600" and "÷ (−8): T ? 200" with a red-pencil question mark on the inequality sign, beside a small jetty badge, and the chip "Next: why does dividing by a negative flip the inequality sign?". This frame is w06's opening frame.
 - **Site sources used:** lesson 10 `the-discriminant-is-what-sits` (Δ under the root), `what-the-discriminant-tells-you` (three cases, rational test, corrected per S11-01 and S11-02), `model` (we-1, we-2, we-3), traps (sign of b, k = ±6, ≥ for real roots).
 - **Entry knowledge (route):** w04 (the quadratic formula and √(b² − 4ac) inside it); w03 (rational and irrational numbers, surds).
 - **Draft route entry (root to adopt).** id `math-a11-w05`; syllabusActions `ci887fe9c5`; start "Recall the quadratic formula." Stop "Define the discriminant and use it for the number of real roots, equal roots, and rational versus irrational roots, including unknown-coefficient problems." Next: "math-a11-w06: 1600 − 8T ≥ 0 needs a division by −8".
@@ -76,7 +85,7 @@ Visual: stage change to the formula at 64 px, centred; b² − 4ac lifts out of 
 Visual: stage change to `DiscriminantDial`. The jetty thumbnail (300 px) at the top left. Givens strip: "a = 2", "b = −40", "c = T" (dashed amber). Row "Δ = (−40)² − 4(2)(T) = 1600 − 8T" (violet). On "eighty" an amber slider "target T" (900 px) sits at 210; readout "Δ = 1600 − 1680 = −80" with the red stop badge, hand tag "no price works". On "appear" the slider moves 210 → 200: Δ runs down to 0, and one green price chip "$10" rises from below the slider, hand tag "one price". The slider moves on to 192: Δ reads 64 and the chip splits into "$8" and "$12" that slide apart, hand tag "two prices"; on "Both make sense" the hires readout shows "$8 × 24 = 192" under the $8 chip and "$12 × 16 = 192" under the $12 chip. It continues to 150 (Δ 400; "$5" and "$15") and returns to 192 on "dollars". Then the slider runs back up past 200: the two chips slide together, merge into "$10" and drop away at 200.01; on the last sentence a green bracket marks "T ≤ 200" on the slider, hand tag "the most it can take". A grey tag: "a model: 40 − 2p hires a day".
 
 ### 4. rational or irrational roots
-> Delta tells us one more thing. When it's a perfect square, its root is a whole number. Then the formula only adds, subtracts and divides rational numbers, so the roots are rational, as long as a, b and c are rational. At one ninety-two, delta is sixty-four, which is eight squared, so the prices are whole dollars. At one eighty, delta is one hundred and sixty, which isn't a perfect square, so the prices are ten plus or minus root ten, irrational **numbers**. That's about six eighty-four, or thirteen sixteen, once you **round**.
+> Delta tells us one more thing. When it's a perfect square, its root is a whole number. Then the formula only adds, subtracts and divides rational numbers, so the roots are rational, as long as a, b and c are rational. At one ninety-two, delta is sixty-four, which is eight squared, so the prices are whole dollars. At one eighty, delta is one hundred and sixty, which isn't a perfect square, so the prices are ten plus or minus root ten, irrational **numbers**. That's about six dollars eighty-four, or thirteen dollars sixteen, once you **round** to the cent.
 
 Visual: camera continue on the dial; it shrinks to the left half. At the right, two short boards. Top: "T = 192: Δ = 64 = 8²", a teal "perfect square?" flag lights green, row "p = (40 ± 8)/4 = 12 or 8", hand tag "perfect square". Bottom on "numbers": "T = 180: Δ = 160", flag stays grey, row "p = (40 ± √160)/4 = 10 ± √10" (√10 in w03 blue), hand tag "irrational". On "round" grey readouts "≈ $6.84, $13.16". A 36 px condition chip under both, amber: "rational roots needs a, b, c rational", hand tag "rational a, b, c".
 
@@ -121,9 +130,9 @@ Visual: `QuestionCard`: "Without solving, describe the nature of the roots of 5x
 Visual: the card shrinks; `GivensStrip`: "a = 5", "b = −2", "c = −3" on "three", with "without solving" underlined. On "four" (sixty-four) row "Δ = (−2)² − 4(5)(−3) = 4 + 60 = 64". On "roots" row "64 > 0 and 64 = 8²: two distinct rational roots" in a green frame. On "missing" a red slip "Δ = 4 − 60 = −56" writes and is crossed, caption "−4(5)(−3) = +60". Hold about 1 s.
 
 ### 13. handoff
-> The kayak shop needs delta to be at least zero, so sixteen hundred minus eight T is greater than or equal to zero. Solving that means dividing both sides by minus eight, and with an inequality, that's not as simple as it looks. Next, why multiplying or dividing by a negative flips the **sign**.
+> The kayak shop needs delta to be at least zero, so sixteen hundred minus eight T is greater than or equal to zero. Solving that means dividing both sides by minus eight, and with an inequality, that's not as simple as it looks. Next, why multiplying or dividing by a negative flips the inequality **sign**.
 
-Visual: the memory line shows small at the top, then fades. Board: the jetty badge (300 px) at the left; rows at 52 px: "Δ ≥ 0", "1600 − 8T ≥ 0", "−8T ≥ −1600", then "÷ (−8): T ? 200" with the "?" in red pencil over the inequality sign. On "sign" the chip "Next: why does dividing by a negative flip the sign?". Hold about 2 s. This is w06's opening frame; scene 14 returns to it silently after the notes.
+Visual: the memory line shows small at the top, then fades. Board: the jetty badge (300 px) at the left; rows at 52 px: "Δ ≥ 0", "1600 − 8T ≥ 0", "−8T ≥ −1600", then "÷ (−8): T ? 200" with the "?" in red pencil over the inequality sign. On "sign" the chip "Next: why does dividing by a negative flip the inequality sign?". Hold about 2 s. This is w06's opening frame; scene 14 returns to it silently after the notes.
 
 ### 14. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book". Bullets 38 px in the left 58 to 60 per cent.
@@ -192,9 +201,9 @@ Recalculated with SymPy (16 Nov, scratchpad `checks2.py`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,561 characters**, 14 scene headings. Characters per scene (1 to 14): 559, 699, 759, 524, 545, 508, 483, 233, 141, 326, 122, 296, 291, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,600 characters**, 14 scene headings. Characters per scene (1 to 14): 559, 699, 759, 552, 545, 508, 483, 233, 141, 326, 122, 296, 302, 75.
 
-At 13.3 characters per second the speech before the notes is about 412 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the dial sweeps, the fork, the flag board); notes 45 s. Total **about 495 s**, inside the band and under the cap.
+At 13.3 characters per second the speech before the notes is about 415 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the dial sweeps, the fork, the flag board); notes 45 s. Total **about 498 s**, inside the band and under the cap.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence (keep the grey readouts); scene 1's "We could start solving." (about 2 s).
 
@@ -287,5 +296,6 @@ Builds on: Solving quadratic equations (previous video). Next: Linear inequaliti
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w05-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w04 only; check that "the part under the root" is enough to motivate Δ; that the dial makes "$200 is the most" feel discovered; that the rational condition is clear without the irrational-coefficient example), then the Codex maths check and error check, then voicing and a build to grade A.
 - The fork and the dial carry the explanation; judge them at playback speed. Every chip must be computed from the formula at the slider value.

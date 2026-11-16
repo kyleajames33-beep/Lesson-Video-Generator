@@ -1,8 +1,17 @@
 # Maths A11 W04: Which method solves a given quadratic most efficiently? Factorising and the null factor law, completing the square on tiles, the quadratic formula as completing the square done once, and choosing a method (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,563 characters by script (build parser rules), 14 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,654 characters by script (build parser rules), 14 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w04-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, scene 5 (derivation skips its hardest step): **accepted**, reviewer's wording; rows 1 and 2 now land on the new cue "across", and the unsimplified right side is spoken and glows.
+2. Should fix, scene 8 (memory aid drops a condition): **accepted.** Spoken "if a is one and b is even"; the card, the key-notes card, the Decisions and the memory aid check now say "a = 1 and b is even".
+
+Narration now 5,654 characters by script, about 503 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: fourth video of Year 11 Mathematics Advanced (2024), outline order 4, Working with functions, Algebraic techniques. Pre-design pack: `../pre-design/maths-a11/math-a11-w04.md`. Site lesson (read through the pack, read only): `algebraic-techniques-and-inequalities/lesson09.sa.html` (Solving Quadratic Equations), SHA256 `5b0c31212be6ff21324709e655a625ae5c60f5068bc724b50563966789a63eb5`. Site we-2 and we-3 are used with the site's numbers unchanged; site we-1 (x² − 5x + 6 = 0) is replaced in the teaching by the anchor's x² + 2x − 15 = 0, which teaches the same method and the null-factor trap (Decisions). Route entry: `math-a11-w04`. Visual system: maths studio kit; painted rug plate (prefix `ma11-`); tiles, the sizing simulation, algebra and the method chooser coded.
 
@@ -33,9 +42,9 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Large type, handwritten voice.** As w01. Hand tags: "never exact", "zero on one side", "one of them must be 0", "a width can't be negative", "missing corner", "+ 1 both sides", "keep ±", "half of 6 is 3", "same steps, letters", "signs attached", "factor of the whole top", "quickest", "neat", "always works".
 - **Stage changes (standard item 2):** rug and sizing slider (1); factorising board with the rug (2); tiles (3); g01 board (4); full-width derivation (5); g01 board (6); method chooser (7); memory card (8); question cards (9 to 12); the kayak handoff (13); key notes (14).
 - **Worked examples (g01 layout).** 2: the rug at 15 (crossed "x(x + 2) = 15, so x = 15 or x = 13", caption "null factor law needs 0"). 4: site we-2 (crossed "x = −3 + 2√3 only", caption "keep ±"). 6: site we-3 (crossed "(4 ± 2√6)/4 = 1 ± 2√6", caption "cancel a factor of the whole top", the w02 rule). Feedback scenes: givens strip, framed answer, one crossed slip each.
-- **Memory aid.** Framed card: "Factorise if you can. Complete the square if b is even. The formula always works." Key: "Keep the ±." Badge: the rug with its moved strip and missing corner.
+- **Memory aid.** Framed card: "Factorise if you can. Complete the square if a = 1 and b is even. The formula always works." Key: "Keep the ±." Badge: the rug with its moved strip and missing corner.
 - **Visual surprise.** Scene 1: the slider lands exactly on 15 but slides straight past 10. Scene 3: half the strip swings round and the gap is exactly a 1-by-1 corner, so the rug becomes a square with one tile missing.
-- **Method chooser wording.** "Complete the square if b is even" is stated as when it is neat (a = 1, b even), not as a rule; the formula "always works" for real roots and says when there are none (w05). The chooser is advice, not a requirement: a question that names a method must use it (A2).
+- **Method chooser wording.** "Complete the square if a = 1 and b is even" (Revision 2 wording) is stated as when it is neat (a = 1, b even), not as a rule; the formula "always works" for real roots and says when there are none (w05). The chooser is advice, not a requirement: a question that names a method must use it (A2).
 - **Learner question (outline, kept).** Answer chain: factorise when it factorises (2); otherwise build a square (3, 4); the formula is that square built once with letters (5, 6); choose by asking in order (7).
 - **Plain meanings at first use.** Quadratic equation: "an equation whose highest power of x is x squared". Null factor law: "if a product is zero, one of the factors is zero". Completing the square: "adding the missing corner so one side becomes a perfect square". Coefficients: "the numbers in front, read with their signs".
 - **Context checks in learner copy.** "A width can't be negative" is said when a root is rejected (2, 3), because the rejected root is a correct solution of the equation, not an error.
@@ -82,9 +91,9 @@ Visual: stage change to `CompleteSquareTiles` (tiles 520 px across). The rug's c
 Visual: clear change to the g01 board (site we-2). Task strip: "Solve, leaving your answer in exact form". Equation strip: "x² + 6x − 3 = 0". Givens card: "b = 6, so half of b = 3" (teal). A small `CompleteSquareTiles` thumbnail (260 px) shows two 3-by-x strips and the 3-by-3 violet corner of 9. Rows: "x² + 6x = 3"; on "sides" "x² + 6x + 9 = 3 + 9" with the 9s violet, hand tag "half of 6 is 3"; "(x + 3)² = 12"; on "three" (last bold before answers) "x + 3 = ±√12 = ±2√3" (a small w03 `RootExtract` step), "x = −3 ± 2√3" in a green frame. On "answers" a red slip "x = −3 + 2√3" writes and is crossed, caption "keep ±".
 
 ### 5. the formula is completing the square, done once
-> Completing the square works every time, so let's do it once and for all, with letters. Start with a x squared plus b x plus c equals zero. Divide by a, and move c over a across. Half of b over a is b over two a. Add its square to both sides, and the left side becomes x plus b over two a, all **squared**. Put the right side over four a squared, and it's b squared minus four a c, over four a **squared**. Take the square root, keeping plus or minus, then subtract b over two a. That's the quadratic formula. x equals minus b, plus or minus the root of b squared minus four a c, all over two **a**. It's completing the square, already done for you.
+> Completing the square works every time, so let's do it once and for all, with letters. Start with a x squared plus b x plus c equals zero. Divide every term by a, and move c over a **across**. Half of b over a is b over two a, so add its square to both sides. The left side becomes x plus b over two a, all **squared**. The right side is b squared over four a squared, minus c over a. Over a common denominator of four a squared, that's b squared minus four a c, over four a **squared**. Take the square root, keeping plus or minus, then subtract b over two a. That's the quadratic formula. x equals minus b, plus or minus the root of b squared minus four a c, all over two **a**. It's completing the square, already done for you.
 
-Visual: stage change to the full-width derivation board. Task strip: "Solve ax² + bx + c = 0 (a ≠ 0)" (a blue, b teal, c amber). Rows (author note b), one per cue, current 52 px, earlier rows 32 px and dimmed; beside each a hand tag repeating the scene 4 move: "÷ a", "half of b/a is b/2a", "+ (b/2a)² both sides" (violet), "same steps, letters". On "squared" row 3 "(x + b/2a)² = b²/4a² − c/a". On "squared" (second) row 4 "(x + b/2a)² = (b² − 4ac)/4a²". On "a" (last) row 6 "x = (−b ± √(b² − 4ac))/2a" in a large green frame (60 px) with ± violet; rows 1 to 5 shrink to a 30 px column at the left; a small grey tag "c over a, a ≠ 0".
+Visual: stage change to the full-width derivation board. Task strip: "Solve ax² + bx + c = 0 (a ≠ 0)" (a blue, b teal, c amber). Rows (author note b), one per cue, current 52 px, earlier rows 32 px and dimmed; beside each a hand tag repeating the scene 4 move: "÷ a", "half of b/a is b/2a", "+ (b/2a)² both sides" (violet), "same steps, letters". Row 0 "ax² + bx + c = 0" is already written as the equation strip. On "across" rows 1 and 2 write in turn: "x² + (b/a)x + c/a = 0" (hand tag "÷ a"), then "x² + (b/a)x = −c/a". On "squared" row 3 "(x + b/2a)² = b²/4a² − c/a" writes left side first; its right side "b²/4a² − c/a" glows teal while it is spoken, and a small grey tag "common denominator 4a²" writes under it. On "squared" (second) row 4 "(x + b/2a)² = (b² − 4ac)/4a²". On "a" (last) row 6 "x = (−b ± √(b² − 4ac))/2a" in a large green frame (60 px) with ± violet; rows 1 to 5 shrink to a 30 px column at the left; a small grey tag "c over a, a ≠ 0".
 
 ### 6. worked example: using the formula
 > So let's use it. Solve two x squared minus four x minus one equals zero. Read the coefficients with their signs attached. a is two, b is minus four, and c is minus **one**. So minus b is plus four. b squared is sixteen, and minus four a c is plus eight, so under the root it's twenty-**four**. That gives four, plus or minus root twenty-four, over four. Root twenty-four is two root six, and every term on top shares a factor of two with the four, so it's two plus or minus root six, over **two**. Cancelling the four with only the first term is the factors-not-terms mistake. You can only cancel a factor of the whole **top**.
@@ -97,9 +106,9 @@ Visual: clear change to the g01 board (site we-3). Task strip: "Solve, leaving y
 Visual: stage change to `DecisionTree` (1,300 × 600 px): question nodes "Factorises with whole numbers?" then "a = 1 and b even?", with three doors "factorise" (hand tag "quickest"), "complete the square" ("neat"), "formula" ("always works"). On "factorised" a chip "x² + 2x − 15 = 0" with the rug thumbnail travels down the tree to the first door, which lights green. On "square" "x² + 2x − 10 = 0" goes to the second door. On "formula" "2x² − 4x − 1 = 0" goes to the third. Then the rug-at-15 chip also drops through the formula door: a small row writes, 44 px, "x = (−2 ± √(4 + 60))/2 = (−2 ± 8)/2"; on "said" it resolves to "3 or −5" with a green tick beside the factorising door's "3 or −5", hand tag "same answers". A grey tag under the tree: "If a question names a method, use that one."
 
 ### 8. memory aid
-> Here's a way to remember the choice. Factorise if you can, complete the square if b is even, and the formula always works. And whichever you use, keep the plus or **minus**.
+> Here's a way to remember the choice. Factorise if you can, complete the square if a is one and b is even, and the formula always works. And whichever you use, keep the plus or **minus**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the rug badge (260 px) with its moved strip and violet corner. Main line, hand font 52 px over three short lines: "Factorise if you can. Complete the square if b is even. The formula always works." On "minus" the key line, 44 px: "Keep the ±." with ± violet. Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: the rug badge (260 px) with its moved strip and violet corner. Main line, hand font 52 px over three short lines: "Factorise if you can. Complete the square if a = 1 and b is even. The formula always works." On "minus" the key line, 44 px: "Keep the ±." with ± violet. Hold about 2 s.
 
 ### 9. attempt 1 (countdown, 10 seconds)
 > Your turn. Solve three x squared plus five x minus two equals zero. Pause here to answer.
@@ -136,7 +145,7 @@ Heading on screen: "Key notes: what to write in your book". Bullets 38 px in the
 - Keep ±. Cancel only a factor of the whole top.
 - Reject a root only when the context rules it out.
 
-Memory aid (framed card, right side, as in scene 8): *Factorise if you can. Complete the square if b is even. The formula always works.* Key: *Keep the ±.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 8): *Factorise if you can. Complete the square if a = 1 and b is even. The formula always works.* Key: *Keep the ±.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 13's frame exactly. This is the final frame and w05's opening frame.
 
@@ -189,14 +198,14 @@ Recalculated with SymPy (16 Nov, scratchpad `checks.py` and `checks2.py`); Codex
 
 ## Memory aid check
 
-- **"Factorise if you can. Complete the square if b is even. The formula always works. Keep the ±."** Original. Meaning, as said: a speed guide, not a rule. Assumptions checked: "complete the square if b is even" is aimed at a = 1 (scene 7 says "a equal to one, with an even b"; the card is shown right after that sentence); "always works" holds for any a ≠ 0, and when b² − 4ac < 0 the formula shows there are no real roots (w05, not claimed here). "Keep the ±" applies to completing the square and the formula. Introduced after all three methods.
+- **"Factorise if you can. Complete the square if a = 1 and b is even. The formula always works. Keep the ±."** Original. Meaning, as said: a speed guide, not a rule. Assumptions checked: the completing-the-square condition now states both parts, a = 1 and b even, in speech and on the card (Revision 2, learning review finding 2; scene 7 says "a equal to one, with an even b"); "always works" holds for any a ≠ 0, and when b² − 4ac < 0 the formula shows there are no real roots (w05, not claimed here). "Keep the ±" applies to completing the square and the formula. Introduced after all three methods.
 - **Considered, not used:** a song version of the formula (pop-goes-the-weasel; memorable but carries no reason, and the derivation already gives one).
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,563 characters**, 14 scene headings. Characters per scene (1 to 14): 544, 615, 689, 478, 636, 611, 596, 169, 89, 314, 132, 288, 327, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,654 characters**, 14 scene headings. Characters per scene (1 to 14): 544, 615, 689, 478, 714, 611, 596, 182, 89, 314, 132, 288, 327, 75.
 
-At 13.3 characters per second the speech before the notes is about 413 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the slider sweeps, the tile moves, the tree routing); notes 45 s. Total **about 496 s**, inside the band and under the cap.
+At 13.3 characters per second the speech before the notes is about 419 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the slider sweeps, the tile moves, the tree routing); notes 45 s. Total **about 503 s**, inside the band and under the cap.
 
 Reserve trims if the voiced take runs long: scene 5's last sentence (keep the tag "same steps, letters"); scene 1's "Both are quadratic equations, with x squared as the highest power, but they need different tools." shortened to "They need different tools." (keep the hand tag with the meaning).
 
@@ -292,5 +301,6 @@ Builds on: Factorising (w02) and surds (previous video). Next: The discriminant.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w04-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w02, w03 and Year 10; check that the slider makes "guessing never lands" concrete; that the moved strip makes the missing corner obvious; that the derivation is followable as a repeat of scene 4; that the chooser reads as advice), then the Codex maths check and error check, then voicing and a build to grade A.
 - The sizing slider, the tile moves and the tree routing carry the explanation; judge them at playback speed.

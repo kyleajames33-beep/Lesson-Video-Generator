@@ -1,8 +1,18 @@
 # Maths A11 W18: How does the parabola decide a quadratic inequality? Roots, a sketch, above or below, and interval notation (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w18/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w18/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
 
-Narration 5,572 characters, 14 scene headings, about 506 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,556 characters, 14 scene headings, about 505 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w18-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, feedback 2 (about 37 s): **accepted**, reviewer's replacement narration (about 30 s); the slip writes on "Joining them into one chain" and is crossed on "pieces".
+2. Optional, scene 4 (about 60 s): **no change**, as advised; check the pace on the voiced preview.
+- Length: the trim took the narration to 5,472 characters, under the 5,500 floor, so scene 7 gains one useful sentence on the touching case: "With greater than or equal to, two counts as well, so that one is true for every x." (5,556 characters).
+
+Narration now 5,556 characters by script, about 505 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: eighteenth video of the Year 11 Mathematics Advanced course (outline playlist order 18), after w17 (intersections) and before w19 (quadratic models and best values). Pre-design pack: `../pre-design/maths-a11/math-a11-w18.md` (brief 243). Site lesson (read through the pack's quotations, read only): `algebraic-techniques-and-inequalities/lesson11.sa.html` (Quadratic Inequalities, SHA256 `a02045bf8bc95df8ff59220b67d20606dc4ccce0f7f0b5d8952361501cb6adb4`, `we-1`, `we-2`, `we-3`). Every number recalculated with SymPy. Route entry: `math-a11-w18` in `../../programme/maths-a11-route-inputs-2.json`.
 
@@ -86,9 +96,9 @@ Visual: clear change to the g01 board with a small sign sweep at the right. Task
 Visual: clear change. Left: the strip "x² > 9" (60 px) and a tempting row "x > 3" in grey pencil. On "three" (first) the grey row writes. On "too" the sign sweep at the right (y = x² − 9): the rider jumps to x = −4, its stalk reads "16 − 9 = 7 > 0" in teal, and a green piece lights on the number line left of −3, hand tag "−4 works too". Rows, 52 px: "x² − 9 > 0", "(x − 3)(x + 3) > 0", amber roots ±3; on "three" (second) "x < −3 or x > 3" (green frame). On "both" the grey "x > 3" is crossed in red (caption "√ loses the negative side"), hand tag "both sides".
 
 ### 7. touching, and never meeting
-> Two more cases are worth seeing. What if the parabola only touches the axis? x minus two, all squared, greater than zero, is true for every x except **two**, where it's exactly zero. And what if it never meets the axis? x squared plus four has a negative discriminant and opens upwards, so it's always above. So x squared plus four greater than zero is true for all real **x**, and x squared plus four less than zero has no solution at **all**.
+> Two more cases are worth seeing. What if the parabola only touches the axis? x minus two, all squared, greater than zero, is true for every x except **two**, where it's exactly zero. With greater than or equal to, two counts as well, so that one is true for every x. And what if it never meets the axis? x squared plus four has a negative discriminant and opens upwards, so it's always above. So x squared plus four greater than zero is true for all real **x**, and x squared plus four less than zero has no solution at **all**.
 
-Visual: clear change to two side panels (each 860 × 560 px). Left: y = (x − 2)², touching the axis at a single amber dot (2, 0); strip "(x − 2)² > 0". On "two" the number line under it shades green everywhere with one open circle at 2, framed "all real x except x = 2", hand tag "touches". Right: y = x² + 4, wholly above its axis, with the w14 chip "Δ = −16 < 0, a > 0: wholly above" (violet and teal). On "x" (last but one bold) its number line shades green everywhere, framed "x² + 4 > 0: all real x", hand tag "always above". On "all" a second strip "x² + 4 < 0" with an empty number line, framed "no solution", hand tag "never below".
+Visual: clear change to two side panels (each 860 × 560 px). Left: y = (x − 2)², touching the axis at a single amber dot (2, 0); strip "(x − 2)² > 0". On "two" the number line under it shades green everywhere with one open circle at 2, framed "all real x except x = 2", hand tag "touches". While the "greater than or equal to" sentence is spoken, a small grey strip "(x − 2)² ≥ 0" writes under it and the open circle at 2 fills in (closed), grey tag "≥: all real x". Right: y = x² + 4, wholly above its axis, with the w14 chip "Δ = −16 < 0, a > 0: wholly above" (violet and teal). On "x" (last but one bold) its number line shades green everywhere, framed "x² + 4 > 0: all real x", hand tag "always above". On "all" a second strip "x² + 4 < 0" with an empty number line, framed "no solution", hand tag "never below".
 
 ### 8. memory aid
 > Here's a way to remember it. Sketch it, then read it. Make one side zero, find the roots, sketch the parabola, and read where it's above or below the axis. For an upward parabola, greater than zero is outside the roots, and less than zero is **between**.
@@ -111,9 +121,9 @@ Visual: the card shrinks to the top (30 px). `GivensStrip`: "6 + x − x² > 0",
 Visual: `QuestionCard`, 40 px, worded as printed: "Solve 2x² ≥ 5x + 3." The full question stays on screen. Picture slot: empty axes over a blank number line. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 12. feedback 2 (brief)
-> Make one side zero, so two x squared minus five x minus three is at least **zero**. That factors to two x plus one, times x minus three, so the roots are minus a half and **three**. It opens upwards, and we want on or above the axis, so outside the roots. x is less than or equal to minus a half, or greater than or equal to **three**. Writing minus a half is greater than or equal to x, which is greater than or equal to three, describes no number at all. An outside answer needs two separate **pieces**.
+> Make one side zero, so two x squared minus five x minus three is at least **zero**. That's two x plus one, times x minus three, so the roots are minus a half and **three**. It opens upwards, and we want on or above the axis, so it's outside the roots: x at most minus a half, or x at least **three**. Joining them into one chain describes no number at all. An outside answer needs two separate **pieces**.
 
-Visual: the card shrinks to the top. `GivensStrip`: "2x² ≥ 5x + 3". Rows, 52 px: on "zero" "2x² − 5x − 3 ≥ 0", hand tag "one side = 0"; on "three" (first) "(2x + 1)(x − 3) ≥ 0", amber roots at −½ and 3; the picture draws the curve and shades the two outer pieces with closed circles. On "three" (second) framed answer (green): "x ≤ −½ or x ≥ 3, that is (−∞, −½] ∪ [3, ∞)". On "pieces" a red slip "−½ ≥ x ≥ 3" writes and is crossed (hand caption "no number does this"). Hold about 1 s.
+Visual: the card shrinks to the top. `GivensStrip`: "2x² ≥ 5x + 3". Rows, 52 px: on "zero" "2x² − 5x − 3 ≥ 0", hand tag "one side = 0"; on "three" (first) "(2x + 1)(x − 3) ≥ 0", amber roots at −½ and 3; the picture draws the curve and shades the two outer pieces with closed circles. On "three" (second) framed answer (green): "x ≤ −½ or x ≥ 3, that is (−∞, −½] ∪ [3, ∞)". While "Joining them into one chain" is spoken, the red slip "−½ ≥ x ≥ 3" writes; on "pieces" it is crossed (hand caption "no number does this"). Hold about 1 s.
 
 ### 13. handoff
 > So the parabola decides. Make one side zero, find the roots, sketch, and read. And the hoodies? Any price from thirty to fifty dollars works. But which single price gives the most, and where do models like this come from? Here's a food truck setting the price of a tray of dumplings. How do quadratic models find a best **value**?
@@ -187,9 +197,9 @@ Checked with SymPy 1.14 (16 Nov 2026, scratchpad `w15w23/verify.py`, 85 checks, 
 
 ## Narration length estimate
 
-Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,572 characters**, 14 scene headings. Characters per scene (1 to 14): 469, 664, 524, 791, 500, 480, 432, 250, 123, 354, 95, 489, 326, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,556 characters**, 14 scene headings. Characters per scene (1 to 14): 469, 664, 524, 791, 500, 480, 516, 250, 123, 354, 95, 389, 326, 75.
 
-At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the sign sweeps (2, 3), the flip morph (4), the trap's second piece (6) and the two edge panels (7), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 506 s (8 min 26 s)**, inside the 5,500 to 6,800 character band and about 64 s under the 570 s cap.
+At 13.3 characters per second the speech is about 418 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the sign sweeps (2, 3), the flip morph (4), the trap's second piece (6) and the two edge panels (7), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 505 s (8 min 25 s)**, inside the 5,500 to 6,800 character band and about 65 s under the 570 s cap.
 
 Reserve trims, if the voiced takes run long, in this order: scene 7's first sentence (keep both panels); scene 13's "And the hoodies? Any price from thirty to fifty dollars works." (keep the badge). Do not cut below 5,500 characters.
 
@@ -283,5 +293,6 @@ Builds on: linear inequalities; interval notation; the discriminant and the sign
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w18-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w06, w09 and w14; check that the sweep builds the answer rather than illustrating a rule; that round and square brackets are tied to the circles; that the x² > 9 trap is fair; that the hoodie answer is said in context), then the Codex maths check and error check, then voicing and a build to grade A.
 - The sign sweep and the flip carry the explanation; judge them at playback speed, not from stills. Every shading, circle and readout must be computed from the same coefficients as the displayed curve.

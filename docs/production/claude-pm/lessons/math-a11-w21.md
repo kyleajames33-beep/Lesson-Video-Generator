@@ -1,8 +1,16 @@
 # Maths A11 W21: Why does y = k/x never meet its asymptotes? The hyperbola, two asymptotes with two reasons, the sign of k and behaviour at the ends (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w21/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w21/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
 
-Narration 5,569 characters, 14 scene headings, about 506 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,571 characters, 14 scene headings, about 506 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w21-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Optional, scene 1 ("asymptotes" before its definition): **accepted**: "..., the lines it creeps ever closer to?"
+
+Narration now 5,571 characters by script, about 506 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: twenty-first video of the Year 11 Mathematics Advanced course (outline playlist order 21), after w20 (cubic graphs) and before w22 (direct variation). Pre-design pack: `../pre-design/maths-a11/math-a11-w21.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson17.sa.html` (Reciprocal Functions, SHA256 `775d7599ee2da387a6d7223aa8d3d15b8ae7a5836a56608980936ff8853eedea`, card 05, `we-1`, `we-2`, `we-3`). Every number recalculated with SymPy. Route entry: `math-a11-w21` in `../../programme/maths-a11-route-inputs-2.json`.
 
@@ -58,7 +66,7 @@ Handoff: math-a11-w22: the car's braking distance at 60 and 120 km/h.
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed; see Decisions): x and speed blue; y and time teal; asymptotes amber dashed; k violet; quadrants a faint grey wash; answer green; mistake red, crossed slips only; curves ink. Type: current line and readouts 52 px; strips and givens 44 px; earlier lines 30 to 32 px dimmed; axis numbers at least 28 px; hand tags at least 34 px; question cards 40 px; nothing below 26 px; all text above y = 950. Every stage's main visual is solid from the stage's first frame. Header strip "MATHEMATICS ADVANCED · WORKING WITH FUNCTIONS"; scene headings in the hand font, 44 px.
 
 ### 1. hook: can the time reach zero?
-> Here's a phone downloading a six hundred megabyte update. The time it takes, in seconds, is six hundred divided by the speed, in megabytes a second. At ten, it takes sixty seconds. At twenty, thirty. At sixty, just ten. Faster speeds always cut the time, but can the time ever reach zero? And as the speed drops towards zero, what happens to the **time**? These are questions about y equals k over x. Why does it never meet its asymptotes?
+> Here's a phone downloading a six hundred megabyte update. The time it takes, in seconds, is six hundred divided by the speed, in megabytes a second. At ten, it takes sixty seconds. At twenty, thirty. At sixty, just ten. Faster speeds always cut the time, but can the time ever reach zero? And as the speed drops towards zero, what happens to the **time**? These are questions about y equals k over x. Why does it never meet its asymptotes, the lines it creeps ever closer to?
 
 Visual: opens on w20's final frame exactly (the phone `ma12-phone-v1.png` with its coded screen: progress bar, "600 MB update", "speed s = 10 MB/s", "time t = 600 ÷ s = 60 s"; small axes with points (10, 60), (20, 30), (60, 10); the two "?" marks; chips "Can the time reach 0?" and "Next: y = k/x"). On the first sentence the "Next" chip fades and the heading writes on "Never zero?". The download (simulation 3): on "At ten" the speed slider sits at 10 and the progress bar fills over 2 s (a time-lapse tag "× 30"); on "At twenty" the slider moves to 20, the readout "t = 30 s" and the bar fills faster; on "At sixty" "t = 10 s". The three points pulse. On "reach zero" the slider runs on towards 600 and the time readout shrinks (6, 1) but stays positive, hand tag "never 0?"; on "time" the slider runs back towards 0 and the readout climbs (60, 600, 6000) with the bar barely moving. On the last sentence the strip "y = k/x" writes (k violet) and the chip "asymptotes?" moves to the top right as the scene question.
 
@@ -187,7 +195,7 @@ Checked with SymPy 1.14 (16 Nov 2026, scratchpad `w15w23/verify.py`, 85 checks, 
 
 ## Narration length estimate
 
-Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,569 characters**, 14 scene headings. Characters per scene (1 to 14): 435, 553, 502, 553, 558, 525, 679, 202, 176, 384, 216, 409, 302, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,571 characters**, 14 scene headings. Characters per scene (1 to 14): 471, 535, 502, 553, 558, 525, 679, 202, 176, 384, 212, 397, 302, 75.
 
 At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the download time-lapses (1), the branch rider's race and rescale (2), the reason cards (3), the k slider through 0 (5) and the download slider (7), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 506 s (8 min 26 s)**, inside the 5,500 to 6,800 character band and about 64 s under the 570 s cap.
 
@@ -280,5 +288,6 @@ Builds on: domain and range; function notation. Next: Direct variation: how one 
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w21-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w09; check that the two asymptotes get two reasons, not one; that "approaches" and "∞" are given plain meanings; that the k slider at 0 explains k ≠ 0; that the download answer is said in words), then the Codex maths check and error check, then voicing and a build to grade A.
 - The branch rider and the download slider carry the explanation; judge them at playback speed, not from stills. Every readout and point must be computed from the same k as the displayed curve.

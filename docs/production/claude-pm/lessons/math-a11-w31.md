@@ -1,8 +1,17 @@
 # Maths A11 W31: How do V-shaped graphs solve absolute value equations? Graphing y = |ax + b| by folding and with an app, its vertex, symmetry, domain and range, and solving |ax + b| = k both ways (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,670 characters by script (build parser rules), 13 scene headings, about 517 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,522 characters by script (build parser rules), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w31-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Should fix, attempt 2 and feedback 2 (six demands): **accepted**, reviewer's card, attempt narration and feedback cuts (the cue is now "zero"); the axis, domain and range stay taught in scene 2 and w30. Model answer (2 marks), Decisions, response check, syllabus coverage and open decision 3 updated. Feedback about 22 s.
+2. Should fix, scene 4 ("one from the course"): **accepted**: "Here's another one."
+
+Narration now 5,522 characters by script, about 506 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: thirty-first video of Year 11 Mathematics Advanced (2024), outline order 31, Working with functions; the last video of the strand before differentiation (c01). Pre-design pack: `../pre-design/maths-a11/math-a11-w31.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson04.sa.html` (Piecewise & Absolute Value Functions, SHA256 `29324c638f5c3da48aa689e8a3e5d4ddb47c569fd633f0f68ef22b6121e8e780`; `we-pw-2` used with the site's numbers unchanged; card 06's |2x − 4| = 6 has the same answers (5 and −1) and is not used). Route entry: `math-a11-w31` in `../../programme/maths-a11-route-inputs-2.json`; `ci81e0ec50` (y = |x|) has moved to w30 (decision in `../checks/root-decisions-maths-a11-w24-w31.md`). Visual system: maths studio kit; a painted jelly bean jar and the reused phone (prefix `ma11-`); the fold, level line, app screen and algebra coded.
 
@@ -35,7 +44,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Visual surprise.** The part of the line below the axis folds up into the V, and as the level line slides down, its two meeting points slide together, merge at the vertex and vanish below it.
 - **Site notes (pack section 8).** Both site examples (`we-pw-2` and card 06) have answers 5 and −1; only `we-pw-2` is used, so the repeat does not look like a pattern. The graphical solution and the |ax + b| graph's features are original (crosswalk: partial). No S11 item applies.
 - **Plain meanings at first use.** Vertex ("the point of the V"); axis of symmetry ("the vertical line the V is the mirror image across"); graphing application ("graphing software or a calculator app"); level line ("the horizontal line y = k").
-- **Attempts (pack questions, original).** A1: |2x + 3| = 7 algebraically, checked on a graph: x = 2 or x = −5, vertex at −3/2; crossed "x = −2" (2x = −7 + 3). A2: y = |4 − 2x|: vertex (2, 0), axis x = 2, domain all real x, range y ≥ 0; solutions of |4 − 2x| = k: none for −1, one (x = 2) for 0, two (1/2 and 7/2) for 3; crossed "vertex at x = −2".
+- **Attempts (pack questions, original).** A1: |2x + 3| = 7 algebraically, checked on a graph: x = 2 or x = −5, vertex at −3/2; crossed "x = −2" (2x = −7 + 3). A2 (Revision 2, four demands): y = |4 − 2x|: vertex (2, 0); solutions of |4 − 2x| = k: none for −1, one (x = 2) for 0, two (1/2 and 7/2) for 3; crossed "vertex at x = −2".
 - **Mistake scene:** none separate. One case only (4 crossed); solutions accepted for k < 0 (6 crossed); the vertex at x = −b or b (A2 crossed); a V drawn below the axis or range all reals (2, positively); a sign slip moving b across (A1 crossed).
 - **Cause chain taught, in order:** (1) |ax + b| keeps each output's size and makes it non-negative, so the part of y = ax + b below the axis reflects up and the graph is a V (2); (2) the V's lowest point is where ax + b = 0, and the two arms are mirror images across the vertical line through it (2, 3); (3) |A| = k means A is k from zero, so A = k or A = −k, two cases (4); (4) graphically the solutions are where the V reaches height k, one on each arm, matching the two cases (5); (5) a level line at 0 touches only the vertex, and one below 0 misses the V, because an absolute value is never negative (5, 6).
 - **Entry knowledge (route):** w30 (|x| as distance, its piecewise definition and the graph y = |x|); w28 (graphing piecewise functions); w26 (symmetry); w17 (solving f(x) = k as an intersection with y = k).
@@ -76,7 +85,7 @@ Visual: clear change to a large plot (x −2 to 6, y −8 to 12; 1,200 × 760 px
 Visual: clear change to a plot at the left (x −7 to 3, y −1 to 9; 800 × 680 px). Rows at the top right, 52 px: "2x + 5 = 0"; on "half" (first) "x = −5/2", the vertex (−2.5, 0) marks, dashed axis x = −2.5. On "The y intercept" row "x = 0: y = |5| = 5", point (0, 5) on the amber side. On "five" (mirror) a violet dashed mirror arrow across the axis lands (−5, 5), row "mirror: (−5, 5)", hand tag "mirror the y-intercept"; the V draws through the three points (amber and violet arms). On "A graphing app" the reused phone (`maths/ma12-phone-v1.png`, 520 px tall) slides in at the right with `ScreenApp`: "abs(2x + 5)" types into the bar and the V draws on its axes; on "half" (second) the app's vertex tap reads "(−2.5, 0)", hand tag "check with an app".
 
 ### 4. solving with two cases
-> Now solve without the graph. If the absolute value of A is twenty, then A is twenty units from zero, so A is twenty, or A is minus twenty. Those are the two cases. For the jar, g minus three fifty is twenty, so g is three seventy. Or g minus three fifty is minus twenty, so g is three **thirty**. Exactly two answers, so there are no others. Here's one from the course. Solve the absolute value of three x minus six equals nine. Case one, three x minus six is nine, so three x is fifteen, and x is **five**. Case two, three x minus six is minus nine, so three x is minus three, and x is minus **one**. Check both. Three times five, minus six, is nine, and three times minus one, minus six, is minus nine, whose absolute value is nine. Stopping at x equals five is the slip. There are two **cases**.
+> Now solve without the graph. If the absolute value of A is twenty, then A is twenty units from zero, so A is twenty, or A is minus twenty. Those are the two cases. For the jar, g minus three fifty is twenty, so g is three seventy. Or g minus three fifty is minus twenty, so g is three **thirty**. Exactly two answers, so there are no others. Here's another one. Solve the absolute value of three x minus six equals nine. Case one, three x minus six is nine, so three x is fifteen, and x is **five**. Case two, three x minus six is minus nine, so three x is minus three, and x is minus **one**. Check both. Three times five, minus six, is nine, and three times minus one, minus six, is minus nine, whose absolute value is nine. Stopping at x equals five is the slip. There are two **cases**.
 
 Visual: clear change to the g01 board. Top strip, 44 px: "|A| = k (k ≥ 0) ⟹ A = k or A = −k", with a mini number line showing 20 and −20 both "20 from 0", hand tag "two cases". Jar rows (44 px, the jar badge beside them): "g − 350 = 20 ⟹ g = 370" (amber); on "thirty" "g − 350 = −20 ⟹ g = 330" (violet). Then the task strip, 44 px: "Solve |3x − 6| = 9." (site `we-pw-2`). Rows, 52 px: amber "3x − 6 = 9, 3x = 15"; on "five" "x = 5"; violet "3x − 6 = −9, 3x = −3"; on "one" "x = −1". Check rows (44 px): "|3(5) − 6| = |9| = 9 ✓", "|3(−1) − 6| = |−9| = 9 ✓", hand tag "check both". Framed answer (green): "x = 5 or x = −1". On "cases" a red slip "x = 5 only" writes and is crossed, caption "two cases: ±9".
 
@@ -106,14 +115,14 @@ Visual: `QuestionCard`, 40 px, worded as printed: "Solve |2x + 3| = 7 algebraica
 Visual: the card shrinks to the top (30 px). Rows, 52 px: amber "2x + 3 = 7, 2x = 4"; on "two" "x = 2"; violet "2x + 3 = −7, 2x = −10"; on "five" "x = −5". On "On the graph" the V y = |2x + 3| draws on the picture's axes with its vertex (−1.5, 0), the level line y = 7 and green dots at −5 and 2. Framed answer (green): "x = 2 or x = −5". On "ten" a red slip "2x = −7 + 3 = −4, x = −2" writes and is crossed, caption "2x = −7 − 3 = −10". Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
-> Last one. For y equals the absolute value of four minus two x, state the vertex, the axis of symmetry, the domain and the range. Then say how many solutions the absolute value of four minus two x equals k has, when k is minus one, zero and three. Pause here to answer.
+> Last one. For y equals the absolute value of four minus two x, state the vertex. Then say how many solutions the absolute value of four minus two x equals k has, when k is minus one, zero and three. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "For y = |4 − 2x|, state the vertex, the axis of symmetry, the domain and the range. How many solutions does |4 − 2x| = k have when k = −1, k = 0 and k = 3?" Picture slot: empty axes (x −1 to 5, y −2 to 6). Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
+Visual: `QuestionCard`, 40 px: "For y = |4 − 2x|, state the vertex. How many solutions does |4 − 2x| = k have when k = −1, k = 0 and k = 3?" Picture slot: empty axes (x −1 to 5, y −2 to 6). Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 11. feedback 2 (brief)
-> Four minus two x is zero at x equals two, so the vertex is two, zero, and the axis is x equals **two**. The domain is all real x, and the range is y of zero or more. For k equals minus one, there are no solutions. For zero, there's one, at x equals two. For three, there are two, a half and three and a **half**. Putting the vertex at minus two is the slip. Four minus two x is zero at plus **two**.
+> Four minus two x is zero at x equals two, so the vertex is two, **zero**. For k equals minus one, there are no solutions. For zero, there's one, at x equals two. For three, there are two, a half and three and a **half**. Putting the vertex at minus two is the slip. Four minus two x is zero at plus **two**.
 
-Visual: the card shrinks to the top. Rows, 52 px: "4 − 2x = 0 ⟹ x = 2"; on "two" "vertex (2, 0); axis x = 2", the V drawing on the picture with its dashed axis. Row "domain all real x; range y ≥ 0". On "For k equals minus one" `LevelLine` steps on the picture: k = −1 (no dots, "0"), k = 0 (one dot at the vertex, "1"), on "half" k = 3 (dots at 0.5 and 3.5, "2"). Framed answer (green): "vertex (2, 0), axis x = 2; domain all real x, range y ≥ 0; k = −1: none; k = 0: one (x = 2); k = 3: two (x = 1/2, 7/2)". On "two" (last) a red slip "vertex at x = −2" writes and is crossed, caption "4 − 2x = 0 at x = 2". Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 52 px: "4 − 2x = 0 ⟹ x = 2"; on "zero" "vertex (2, 0)", the V drawing on the picture with its dashed axis (not spoken). On "For k equals minus one" `LevelLine` steps on the picture: k = −1 (no dots, "0"), k = 0 (one dot at the vertex, "1"), on "half" k = 3 (dots at 0.5 and 3.5, "2"). Framed answer (green): "vertex (2, 0); k = −1: none; k = 0: one (x = 2); k = 3: two (x = 1/2, 7/2)". On "two" (last) a red slip "vertex at x = −2" writes and is crossed, caption "4 − 2x = 0 at x = 2". Hold about 1 s.
 
 ### 12. handoff
 > That's the end of this run on functions. So far, we've asked where a graph is, and what values it takes. The next question is how fast it changes. Look at the jar's V again. From three fifty to three seventy, it climbs twenty, over twenty guesses. That's a rise of one, for every one across. Next, the average rate of change, and what it measures on a **graph**.
@@ -140,9 +149,9 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Misconceptions addressed:** one case only (4 crossed); solutions for k < 0 (6 crossed); the vertex at −b or b (A2 crossed); the V below the axis, range all reals (2); a sign slip moving b across (A1 crossed); "always check" said and shown (4, 6).
 - **Visual standard, item by item:** 1 the painted jar from the first frame, returning as badges in 2, 4 and 12; 2 a new stage every 35 to 55 s; 3 `FoldUp`, `LevelLine` with a live count and readouts, the app screen; 4 fixed colour roles; 5 large type; 6 hand tags; 7 g01 boards in 4 and 6; 8 framed card and five bullets; 9 the fold, and the two meeting points sliding together, merging at the vertex and vanishing.
 - **One idea at a time:** the graph (2), sketching and the app (3), algebra (4), the graph's answer (5), the special cases (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 28 s and 30 s (A2 has six demands; the voiced check confirms the time).
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 28 s and 22 s (Revision 2: A2 cut to four demands, the vertex and three solution counts).
 - **Avoided double teaching:** |x| and its V (w30), piecewise graphs (w28), symmetry (w26) and f(x) = k as an intersection (w17) are recalled.
-- **Syllabus coverage:** `ci0614b169` without an application (2, 3, A2; key notes 1 to 3), with an application (3), symmetry, domain and range (2, 3, A2); `ci9fc969f0` algebraically (4, 6, A1; key notes 4, 5), graphically (1, 5, A1 check, A2).
+- **Syllabus coverage:** `ci0614b169` without an application (2, 3, A2; key notes 1 to 3), with an application (3), symmetry, domain and range (2, 3; taught there and in w30, so A2 no longer asks for them); `ci9fc969f0` algebraically (4, 6, A1; key notes 4, 5), graphically (1, 5, A1 check, A2).
 - **Out of scope by design:** inequalities; transformations of |x| (g strand).
 
 ## Practice questions and model answers
@@ -150,8 +159,8 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 **Attempt 1 (scene 8; pack question 1, original, HSC style, 2 marks suggested, not an official marking scheme).** "Solve |2x + 3| = 7 algebraically, and check your answers on a graph."
 Model answer: 2x + 3 = 7 gives x = 2; 2x + 3 = −7 gives x = −5. On the graph, y = |2x + 3| has its vertex at (−3/2, 0), and the line y = 7 meets it at x = −5 and x = 2. Classic mistake (crossed): "2x = −7 + 3, x = −2".
 
-**Attempt 2 (scene 10; pack question 2, original, HSC style, 3 marks suggested).** "For y = |4 − 2x|, state the vertex, the axis of symmetry, the domain and the range. How many solutions does |4 − 2x| = k have when k = −1, k = 0 and k = 3?"
-Model answer: vertex (2, 0); axis x = 2; domain all real x; range y ≥ 0. k = −1: none; k = 0: one (x = 2); k = 3: two (x = 1/2 and x = 7/2). Classic mistake (crossed): "vertex at x = −2".
+**Attempt 2 (scene 10; pack question 2, original, HSC style, 2 marks suggested).** "For y = |4 − 2x|, state the vertex. How many solutions does |4 − 2x| = k have when k = −1, k = 0 and k = 3?"
+Model answer: vertex (2, 0). k = −1: none; k = 0: one (x = 2); k = 3: two (x = 1/2 and x = 7/2). Classic mistake (crossed): "vertex at x = −2".
 
 ## Numbers used (author note: every value)
 
@@ -164,7 +173,7 @@ Model answer: vertex (2, 0); axis x = 2; domain all real x; range y ≥ 0. k = �
 | Level line | k = 9: x = −1, 5; k = 4: x = 2/3, 10/3 (grey 0.67, 3.33); k = 0: x = 2; k = −3: none | 5 |
 | Special cases | |2x + 1| = 0: x = −1/2; |x − 2| = −3: none; false cases 5, −1 give 3 | 6 |
 | A1 | x = 2, −5; vertex −3/2; crossed −2 | 8, 9 |
-| A2 | vertex (2, 0); axis x = 2; k = −1: 0; k = 0: x = 2; k = 3: x = 1/2, 7/2 | 10, 11 |
+| A2 | vertex (2, 0); k = −1: 0; k = 0: x = 2; k = 3: x = 1/2, 7/2 | 10, 11 |
 | Handoff | (350, 0) to (370, 20): rise 20, run 20, 1 | 12 |
 
 ## Numbers to verify (all values, repeated for Codex)
@@ -188,9 +197,9 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `w24w31/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,670 characters**, 13 scene headings. Characters per scene (1 to 13): 515, 726, 654, 782, 545, 534, 291, 140, 395, 268, 387, 358, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,522 characters**, 13 scene headings. Characters per scene (1 to 13): 515, 726, 654, 774, 545, 534, 291, 140, 395, 220, 295, 358, 75.
 
-At 13.3 characters per second the speech before the notes is about 421 s. Holds and settling: 2 countdowns of 10 s (20 s); short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s; about 25 s of settling (the fold, the three-point sketch and the app typing, the level line's sweep, and the special-case plots); the notes scene is 45 s. Total **about 517 s (8 min 37 s)**, inside the 5,500 to 6,800 band and about 53 s under the 570 s cap.
+At 13.3 characters per second the speech before the notes is about 410 s. Holds and settling: 2 countdowns of 10 s (20 s); short holds (memory card 2 s, feedback 1 s each, handoff 2 s) 6 s; about 25 s of settling (the fold, the three-point sketch and the app typing, the level line's sweep, and the special-case plots); the notes scene is 45 s. Total **about 506 s (8 min 26 s)**, inside the 5,500 to 6,800 band and about 64 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 4's spoken check of x = −1 (keep the check rows); scene 7's link to the discriminant (keep the badge).
 
@@ -279,9 +288,10 @@ Builds on: Absolute value and the graph of y = |x|; piecewise functions. Next: A
 
 - **1. The c01 join (root, and c01's future designer).** c01 has no pack or design yet. Scene 12 proposes c01's opening: the jar's V with a rise of 20 over a run of 20 on its right arm. If c01's designer chooses a different anchor, only scene 12's last two sentences and its frame change; the "how fast does it change?" question stays.
 - **2. "Lolly bag" (voice pilot).** Australian usage; keep.
-- **3. A2 feedback length (learning review).** Six demands make it about 30 s. If the voiced take runs long, the domain and range sentence moves to the framed answer only.
+- **3. A2 feedback length (resolved, Revision 2).** The card now asks for the vertex and three solution counts (four demands); the axis, domain and range are taught in scene 2 and w30, so they were dropped from A2. Feedback about 22 s.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w31-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from w30 and w17; check that the fold makes "never negative" visible; that the jar's two cases and the level line's two dots are seen as the same two answers; that k = 0 and k < 0 follow from the picture; that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - The fold and the level line carry the explanation; judge them at playback speed. Every dot, readout and count must be computed.

@@ -1,8 +1,17 @@
 # Maths A11 W06: Why does multiplying by a negative flip an inequality? Safe moves, the mirror through zero, solving linear inequalities, and graphing rays with open and closed circles (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (16 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, d01 Revision 6 and s01 Revision 4 patterns). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,597 characters by script (build parser rules), 14 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,606 characters by script (build parser rules), 14 scene headings, about 499 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (16 Nov): learning review resolved
+
+Review: `../checks/m-a11-w06-learning-review.md` (summary `../checks/m-a11-w01-w31-learning-review-summary.md`), with root's rulings of 16 Nov. Findings by the review's numbers:
+
+1. Optional, feedback 1 ("minus nothing"): **accepted**: "Five minus three times zero is five"; the test dot reads "5 − 3(0) = 5 ≤ 17 ✓".
+2. Optional, scene 5 (show "2x ≥ 6"): **no change needed**; the third number-line row already writes "2x − 1 ≥ 5, so 2x ≥ 6, x ≥ 3".
+
+Narration now 5,606 characters by script, about 499 s with holds (see "Narration length estimate"). Stage-plan times below are Revision 1 approximations; frames come from the recording's word timings. Every changed value was rechecked with SymPy (scratchpad `rev2_verify.py`); Codex's maths check remains the authority.
 
 Scope: sixth video of Year 11 Mathematics Advanced (2024), outline order 6, Working with functions, Linear functions group. Pre-design pack: `../pre-design/maths-a11/math-a11-w06.md`. Site lessons (read through the pack, read only): `algebraic-techniques-and-inequalities/lesson01.sa.html` (Solving Linear Inequalities), SHA256 `8c481deafc9189f66207b253265150a6138d24b296aba4f7eae82ee5dfb33e7c`, and `lesson02.sa.html` (Inequalities on a Number Line and in Interval Notation), SHA256 `39e6868303a0b8de20d67adf964532740cac4250810fdc641fdf27ec9ab71b28`. Site AT01 we-2 and we-3 and AT02 we-1 to we-3 are used with the site's numbers unchanged (AT02's as short demonstrations); AT01 we-1 (3x + 5 < 17) is left to the notes as no new idea. Route entry: `math-a11-w06`. Visual system: maths studio kit; painted plates for the travel card and reader (prefix `ma11-`); number lines, the multiplier dial and algebra coded.
 
@@ -107,9 +116,9 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: a small number li
 Visual: `QuestionCard`, 40 px: "Solve 5 − 3x ≤ 17 and graph the solution on a number line." An empty coded number line (−8 to 8) sits under the question. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 10. feedback 1 (brief)
-> Subtract five, so minus three x is at most **twelve**. Divide by minus three, and flip. x is greater than or equal to minus **four**. That's a closed circle at minus four, with an arrow to the **right**. Check zero. Five minus nothing is five, which is at most seventeen. If you wrote x is at most minus four, you forgot the **flip**.
+> Subtract five, so minus three x is at most **twelve**. Divide by minus three, and flip. x is greater than or equal to minus **four**. That's a closed circle at minus four, with an arrow to the **right**. Check zero. Five minus three times zero is five, which is at most seventeen. If you wrote x is at most minus four, you forgot the **flip**.
 
-Visual: the card shrinks; `GivensStrip`: "5 − 3x ≤ 17", "graph it". On "twelve" row "−3x ≤ 12". On "four" row "÷ (−3), flip: x ≥ −4" (≥ circled amber) in a green frame. On "right" the card's number line fills: closed circle at −4, blue ray right. On "Check zero" a green test dot at 0 with "5 − 0 = 5 ≤ 17 ✓". On "flip" a red slip "x ≤ −4" writes and is crossed, caption "÷ by −3 flips the sign". Hold about 1 s.
+Visual: the card shrinks; `GivensStrip`: "5 − 3x ≤ 17", "graph it". On "twelve" row "−3x ≤ 12". On "four" row "÷ (−3), flip: x ≥ −4" (≥ circled amber) in a green frame. On "right" the card's number line fills: closed circle at −4, blue ray right. On "Check zero" a green test dot at 0 with "5 − 3(0) = 5 ≤ 17 ✓". On "flip" a red slip "x ≤ −4" writes and is crossed, caption "÷ by −3 flips the sign". Hold about 1 s.
 
 ### 11. attempt 2 (countdown, 10 seconds)
 > Last one. Solve two x plus one, over three, is greater than x minus one. Pause here to answer.
@@ -192,9 +201,9 @@ Recalculated with SymPy (16 Nov, scratchpad `checks.py`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script with the build parser rules: **5,597 characters**, 14 scene headings. Characters per scene (1 to 14): 693, 569, 655, 614, 669, 477, 416, 192, 133, 318, 94, 378, 314, 75.
+Recounted for Revision 2 (16 Nov 2026). Counted by script with the build parser rules: **5,606 characters**, 14 scene headings. Characters per scene (1 to 14): 693, 569, 655, 614, 669, 477, 416, 192, 133, 327, 94, 378, 314, 75.
 
-At 13.3 characters per second the speech before the notes is about 415 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the taps, the fold, the dial sweep, the rays); notes 45 s. Total **about 498 s**, inside the band and under the cap.
+At 13.3 characters per second the speech before the notes is about 416 s. Holds: two 10 s countdowns, memory-card hold 2 s, feedback holds 2 s, handoff hold 2 s, about 12 s of settling (the taps, the fold, the dial sweep, the rays); notes 45 s. Total **about 499 s**, inside the band and under the cap.
 
 Reserve trims if the voiced take runs long: scene 1's first sentence shortened to "Last time, the kayak shop needed to divide by minus eight." (about 4 s); scene 5's last sentence (the AT02 we-3 line can stay silent on screen, about 8 s).
 
@@ -292,5 +301,6 @@ Builds on: Year 10 linear equations. Next: Relations and functions.
 
 ## Review notes
 
+- Revision 2 (16 Nov 2026): the independent learning review (`../checks/m-a11-w06-learning-review.md`) is resolved; see the Revision 2 section. Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1 has had no independent review. Next: student learning review (trace from Year 10 equations only; check that the mirror at k = −1 makes the swap visible, not just stated; that "more trips, less money" is understood as the same reason; that the dial is readable at playback speed; that the whole-number line is not taken as part of the inequality's answer), then the Codex maths check and error check, then voicing and a build to grade A.
 - The taps, the fold and the dial carry the explanation; judge them at playback speed.
