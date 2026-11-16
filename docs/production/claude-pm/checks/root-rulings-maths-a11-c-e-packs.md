@@ -36,3 +36,15 @@ All nine are accepted as first revisions for independent review.
 7. **c14 to c16 colours:** the builder checks that the up and down colours are distinct from the answer green. Each segment keeps its printed sign.
 8. The two feedbacks at about 30 s are confirmed on the voiced take, using the named trims if needed.
 9. **Site links:** use the same `.sa.html` lesson-link pattern as the w designs. The learning review checks each one.
+
+## Rulings on the e01 to e08 designs (17 November 2026)
+
+All eight are accepted as first revisions for independent review.
+
+1. **Magenta for k:** accepted. The builder checks at 400 px that it stays distinct from mistake red and gradient violet.
+2. **e08 bookend:** reusing e01's cards ("what's it worth?" then "when?") is accepted as a deliberate return, not a repeated anchor.
+3. **t01:** the t01 designer opens on e08's coded triangles frame, or changes only that scene.
+4. **e07 early-rounding warning:** move it to an author note. A difference in the 4th decimal place is too small to earn screen time.
+5. **e04:** the link to lesson05 and the named (not drawn) engineers are accepted.
+6. **e01:** keep the stated "say it doubles every year" model.
+7. **e02, "Euler":** the voicer respells it as "Oiler" in the Google request and reports it.
