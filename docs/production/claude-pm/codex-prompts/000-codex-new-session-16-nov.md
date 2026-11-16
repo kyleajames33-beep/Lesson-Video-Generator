@@ -19,6 +19,6 @@ Hard rules:
 2. **Brief 246** (measured spectra for Chemistry c10 to c12). Research only; run it while voicing waits for the quota.
 3. **Brief 242** (Year 11 upgrade error check and plates). Resume where the last `status.md` entry stopped (Chemistry M2 v11 on 14 November); `work/brief242/` holds the inventory and progress.
 4. **Brief 244** (Year 12 Physics upgrade plates: five QA checks and two new plates).
-5. **Brief 243** (Year 11 Mathematics Advanced crosswalk, outline and pre-design packs). Claude designs the Year 11 Maths course from this output, so start it as soon as 1 and 2 are waiting.
+5. **Brief 243** is now Claude's (root is doing the Year 11 Maths crosswalk and outline itself). Skip it.
 
 When a job is waiting (quota, plates rendering), move to the next one rather than idling. Report each finished step to `status.md` in one short block.
