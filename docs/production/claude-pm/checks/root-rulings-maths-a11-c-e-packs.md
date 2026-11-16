@@ -19,3 +19,20 @@ All nine are accepted as first revisions for independent review (learning review
 6. **c09 to c10:** the algebra-only handoff frame is accepted. The c10 designer opens on it.
 7. **Colour roles:** c10 to c18 adopt the c01 to c09 roles. No new scheme.
 8. The four feedbacks at about 30 s are confirmed on the voiced take, and each design's named trim is used if needed.
+
+## Rulings on the c10 to c18 designs (16 November 2026, late)
+
+All nine are accepted as first revisions for independent review.
+
+1. **c10:** add a small pond badge in scene 1 so the anchor shows early. Use the design's pond thumbnail; no narration change.
+2. **c12:** the game win rate is accepted.
+3. **c13:** pass-the-parcel is accepted as a metaphor for order of operations. It is distinct from s05's parcel delivery.
+4. **Near contexts confirmed distinct:**
+   - c15's roller door against c09's driveway
+   - c16's pump track against the Year 12 hiking profile
+   - c17's hot-air balloon against c06's water balloon
+5. **c11, c12 memory aids:** keep the wording shared with d07 and d08, so Year 12 recalls exactly what Year 11 taught.
+6. **c17:** the one-line bakery example is accepted, read as "about $1.20 more for one more loaf".
+7. **c14 to c16 colours:** the builder checks that the up and down colours are distinct from the answer green. Each segment keeps its printed sign.
+8. The two feedbacks at about 30 s are confirmed on the voiced take, using the named trims if needed.
+9. **Site links:** use the same `.sa.html` lesson-link pattern as the w designs. The learning review checks each one.
