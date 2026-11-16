@@ -98,7 +98,7 @@ const Handoff: React.FC<{chip: number; t1: number; t2: number; q: number}> = ({c
 		<Hand x={at(0.25, 0)[0]} y={at(0, 0.92)[1]} at={-300} size={44} color={CDF}>F(x) = P(X ≤ x)</Hand>
 		<Hand x={at(0.2, 0)[0]} y={at(0, 0.3)[1]} at={t1} size={42} color={AREA.ink}>climbs slowly</Hand>
 		<Hand x={at(1.45, 0)[0]} y={at(0, 0.82)[1]} at={t2} size={42} color={AREA.ink}>steeply</Hand>
-		<BoxCard x={1450} y={480} w={410} at={-300} size={36} title="F(x)"><div style={{color: CDF, fontWeight: 800}}>0 for x &lt; 0</div><div style={{color: CDF, fontWeight: 800}}>x²/9 for 0 ≤ x ≤ 3</div><div style={{color: CDF, fontWeight: 800}}>1 for x &gt; 3</div></BoxCard>
+		<BoxCard x={1450} y={480} w={410} at={-300} size={36} title="the CDF"><div style={{color: CDF, fontWeight: 800}}>0 for x &lt; 0</div><div style={{color: CDF, fontWeight: 800}}>x²/9 for 0 ≤ x ≤ 3</div><div style={{color: CDF, fontWeight: 800}}>1 for x &gt; 3</div></BoxCard>
 		<Chip x={1600} y={300} at={q} size={80} color={BROWN}>?</Chip>
 		<Hand x={1450} y={760} at={q} size={40} color={BROWN} w={410}>what does the steepness tell us?</Hand>
 	</>;

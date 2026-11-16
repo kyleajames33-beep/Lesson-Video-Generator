@@ -91,7 +91,7 @@ export const S05Handoff: React.FC<{chip: number; q1: number; q2: number; slide: 
 		<F9Plot {...HP} win={HW} fn={f3} xTicks={xTicksN([1, 2])} yTicks={[]} yLabel="f(x)" color={DENS.stroke} />
 		<Chip x={HM.pf(0.92, 0)[0]} y={HM.pf(0, 0.88)[1] - 30} at={q1} size={64} color={BROWN}>?</Chip>
 		<FrameSvg style={{opacity: prog(f, q2, 12)}}><line x1={lx} x2={lx} y1={ly0} y2={ly1} stroke={INK} strokeWidth={5} strokeDasharray="14 10" /><text x={lx} y={ly1 - 16} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 52, fill: BROWN}}>?</text></FrameSvg>
-		<BoxCard x={1450} y={420} w={410} at={-300} size={36} title="f(x)"><div style={{color: DENS.ink, fontWeight: 800}}>3x(2 − x)/4</div><div style={{color: DENS.ink, fontWeight: 800}}>for 0 ≤ x ≤ 2</div><div style={{color: DENS.ink, fontWeight: 800}}>0 elsewhere</div></BoxCard>
+		<BoxCard x={1450} y={420} w={410} at={-300} size={36} title="the density"><div style={{color: DENS.ink, fontWeight: 800}}>3x(2 − x)/4</div><div style={{color: DENS.ink, fontWeight: 800}}>for 0 ≤ x ≤ 2</div><div style={{color: DENS.ink, fontWeight: 800}}>0 elsewhere</div></BoxCard>
 		<Hand x={1450} y={660} at={q1} size={46} color={BROWN} w={410}>where is X most likely?</Hand>
 		<Hand x={1450} y={780} at={q2} size={46} color={BROWN} w={410}>where's the middle, half each side?</Hand>
 	</>;
