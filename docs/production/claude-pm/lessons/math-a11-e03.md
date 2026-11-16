@@ -1,8 +1,20 @@
 # Maths A11 E03: What is a logarithm, and how does it undo an exponential? logₐ y as an index, converting between index and log form, the natural log ln, and logₐ aˣ = x and a^(logₐ x) = x (design)
 
-Status: Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-c06.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-c06.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,573 characters by script (see "Narration length estimate"), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,834 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 526 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-e03-learning-review.md` (summary `../checks/m-a11-e01-e08-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md` and root's resolution brief of 17 Nov (every spoken "ln" is "the natural log of", introduced once in e03; review evidence paths). Resolution log: `../checks/m-a11-e01-e08-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 5 and the design notes ("ln" read aloud): **accepted, with root's ruling** instead of the reviewer's "ell en" option. Scene 5 now says "Log base e has its own name. We write this l n, the natural log." On that line the letters "ln" write with the hand tag "read: natural log". Every later narration says "the natural log of": scene 5 (the three identities, "a natural log key", "the natural log of five"), scene 6 ("the natural log of e to the seven", "e to the natural log of x") and feedback 1. The screen keeps "ln". The same rule is applied strand-wide (e04, e06, e07, e08; e02 and e05 already complied). Open decision 1 is closed and author note (f) is corrected.
+2. Should fix, scene 3 and A1 (c) (a fractional log asked but never shown): **accepted**, reviewer's sentence and row: "log₄ 2: 4^? = 2", "4^½ = √4 = 2" (grey chip "w01: a^½ = √a"), and on the new cue "half" "log₄ 2 = ½" (green frame), hand tag "a log can be a fraction". The memory aid check's claim ("scenes 3 and A1 (c) show both") is now true. The named trim (scene 1's free-pass sentence) was not needed; the count stays in range.
+3. Should fix, scene 5 (callback to x ≈ 1.61): **accepted**, reviewer's discovery wording ("Last time, the rider on e to the x stopped where the height was five. Where was that? At x equals about one point six one."). e02 now also shows "x ≈ 1.61" at that stop (e02 optional 4).
+
+Joins unchanged: scene 1 opens on e02's final frame and scene 12 is still e04's opening frame.
+
+Narration 5,834 characters by script (Revision 1: 5,573), about 526 s with holds; speech before the notes about 433 s, under the 570 s cap. Changed values were rechecked with SymPy 1.14 (scratchpad `e-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. The `learning_review` evidence path now reads `checks/m-a11-e03-learning-review.md`. Nothing recorded; human listening pending.
 
 Scope: fifty-second video of Year 11 Mathematics Advanced (2024), outline order 52, Exponential and logarithmic functions. Pre-design pack: `../pre-design/maths-a11/math-a11-e03.md` (brief 243). Site lesson (read through the pack's quotations, read only): `exponential-and-logarithmic-functions/lesson05.sa.html` (`we-1`, log₂ 8 = 3 and log₃ (1/9) = −2; `we-2`, log₅ x = 3 gives 125; the "What is a logarithm?" card on why the argument must be positive; all with their numbers). Route entry: `math-a11-e03` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted tournament noticeboard and trophy (e02's brief) and a painted ribbon with reused scissors for the handoff (prefix `ma11-`); every draw bracket, converter, ladder and working row coded.
 
@@ -27,7 +39,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   2. **Doubling ladder** (scenes 1, 2): rungs 1, 2, 4, 8, 16, 32, 64, 128 (teal) with rung numbers 0 to 7 (blue); a marker climbs to a given number and reads the rung count; 100 lands between rungs 6 and 7.
   3. **Two-way converter** (scenes 2 to 4): "2³ = 8" and "log₂ 8 = 3" with the base (amber), index (blue) and result (teal) sliding between the two forms on each cue.
 - **Colour roles (fixed for the e strand, as e01).** The index, which is the value of the log, **blue**; the result, which is the log's argument, **teal**; the base **amber**; answer green; mistake red, crossed slips only. In "logₐ y = x" the a is amber, the y teal and the x blue, exactly as in "aˣ = y".
-- **Large type, handwritten voice.** As e01. Hand tags: "rounds = power", "run 2ˣ backwards", "a log is a power", "base", "the power", "the result", "y > 0 only", "between 0 and 1: negative log", "index form", "log base e", "undo", "x > 0 here".
+- **Large type, handwritten voice.** As e01. Hand tags: "rounds = power", "run 2ˣ backwards", "a log is a power", "base", "the power", "the result", "y > 0 only", "between 0 and 1: negative log", "index form", "a log can be a fraction", "read: natural log", "log base e", "undo", "x > 0 here".
 - **Stage changes (standard item 2).** The tournament board (1); the ladder and the converter (2); g01 board, site `we-1` (3); g01 board, site `we-2` (4); the ln card with e02's eˣ graph (5); the undo machine (6); framed card (7); question cards (8 to 11); the ribbon plate (12); key notes (13).
 - **Worked examples (g01 layout).** 3: site `we-1`, log₂ 8 = 3 and log₃ (1/9) = −2; crossed "log₂ 8 = 4" (8 ÷ 2). 4: site `we-2`, log₅ x = 3 gives x = 125; crossed "x = 15" (5 × 3); then log₂ x = −3 gives 1/8 (original). 5: ln e = 1, ln 1 = 0, ln e⁴ = 4 (site drill "ln e⁷ = 7" pattern), and the ln key: ln 5 ≈ 1.609 (e02's height-5 point). 6: log₂ 2⁵ = 5, 2^(log₂ 6) = 6, ln e⁷ = 7 and e^(ln 4) = 4 (site drills).
 - **Memory aid.** Framed card: "A log is a power. logₐ y asks: a to what power gives y?" Second line: "Same three numbers: aˣ = y ⇔ logₐ y = x."
@@ -47,7 +59,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (c) ln 1 = 0, ln e = 1, ln e⁴ = 4; ln 5 = 1.6094 (e02 showed the point (1.61, 5) on eˣ).
   (d) log₂ 2⁵ = 5; 2^(log₂ 6) = 6; ln e⁷ = 7; e^(ln 4) = 4.
   (e) A1: 5³ = 125; 2⁻⁴ = 1/16; 9^(1/2) = 3; ln e⁻² = −2. A2: 3⁻² = 1/9; 10^(log₁₀ 7) = 7, log₄ 4³ = 3, sum 10.
-  (f) Pronunciations: "log base two of eight"; "log base three of one ninth"; "ell en" for ln (the site's "natural log of" is also fine; the narration says "the natural log of", then "ell en" once on screen read); "e to the ell en four" avoided, said "e to the power, natural log of four".
+  (f) Pronunciations: "log base two of eight"; "log base three of one ninth"; ln is read "the natural log of" everywhere (root's ruling, 17 Nov), after scene 5's one introduction "We write this l n, the natural log" (the voicer checks that "l n" is read as two letters); "e to the natural log of four".
   (g) A real 100-team knockout has 7 rounds with 28 first-round byes (128 − 100); only "some teams get a free pass" is said.
 
 Main question: *What is a logarithm, and how does it undo an exponential? If 2 to some power is 64, how do we name that power?*
@@ -70,9 +82,9 @@ Visual: opens on e02's final frame exactly (the noticeboard with the 8-team draw
 Visual: stage change: the board shrinks to a 280 px badge at the top left (the ladder small beside it). The converter at the centre, 72 px: "2³ = 8" with 2 amber, 3 blue, 8 teal, hand tags "base", "the power", "the result". On "three" the three numbers slide into "log₂ 8 = 3" (same colours; the 2 drops to a subscript), hand tag "a log is a power". A grey chip "w01: index form" under the first form, "log form" under the second. On "y" the general pair writes, 60 px: "aˣ = y ⇔ logₐ y = x" (a amber, x blue, y teal). On "positive, and not one" grey chip "a > 0, a ≠ 1 (as in e01)". On "always gives a positive number" a small graph of 2ˣ (520 × 380 px) with "range y > 0" shaded, chip "e01: aˣ > 0"; on "number" the rows "log₂ 0" and "log₂ (−4)" write in grey and are crossed, hand tag "y > 0 only". On "ten" grey chip "log y means log₁₀ y (calculator key)".
 
 ### 3. worked example: evaluating logs
-> Let's evaluate some. Log base two of eight. Ask, two to what power is eight? Two cubed is eight, so the answer is **three**. Dividing eight by two gives four, and that's the slip. A log isn't a division. Now log base three of a ninth. Three to what power is a ninth? A ninth is one over three squared, which is three to the minus two. So the log is minus **two**. A log can be negative. That happens whenever the number is between zero and **one**.
+> Let's evaluate some. Log base two of eight. Ask, two to what power is eight? Two cubed is eight, so the answer is **three**. Dividing eight by two gives four, and that's the slip. A log isn't a division. Now log base three of a ninth. Three to what power is a ninth? A ninth is one over three squared, which is three to the minus two. So the log is minus **two**. A log can be negative. That happens whenever the number is between zero and **one**. And a log can be a fraction. Log base four of two is a **half**, because four to the half is the square root of four, which is two.
 
-Visual: clear change to the full-width g01 board. Task strip, 44 px: "Evaluate log₂ 8 and log₃ (1/9)." Rows, current 52 px, earlier 32 px and dimmed: "log₂ 8: 2^? = 8"; "2³ = 8"; on "three" "log₂ 8 = 3" (green frame). On "Dividing" a red slip "8 ÷ 2 = 4" writes and is crossed, caption "a log is not a division". Second task: "log₃ (1/9): 3^? = 1/9"; "1/9 = 1/3² = 3⁻²" with grey chip "e01: a⁻ⁿ = 1/aⁿ"; on "two" "log₃ (1/9) = −2" (green frame). On "one" hand tag "between 0 and 1: negative log", and the ladder badge extends downward with rungs ½, ¼ at rung numbers −1, −2.
+Visual: clear change to the full-width g01 board. Task strip, 44 px: "Evaluate log₂ 8 and log₃ (1/9)." Rows, current 52 px, earlier 32 px and dimmed: "log₂ 8: 2^? = 8"; "2³ = 8"; on "three" "log₂ 8 = 3" (green frame). On "Dividing" a red slip "8 ÷ 2 = 4" writes and is crossed, caption "a log is not a division". Second task: "log₃ (1/9): 3^? = 1/9"; "1/9 = 1/3² = 3⁻²" with grey chip "e01: a⁻ⁿ = 1/aⁿ"; on "two" "log₃ (1/9) = −2" (green frame). On "one" hand tag "between 0 and 1: negative log", and the ladder badge extends downward with rungs ½, ¼ at rung numbers −1, −2. Third task: "log₄ 2: 4^? = 2"; "4^½ = √4 = 2" with grey chip "w01: a^½ = √a"; on "half" "log₄ 2 = ½" (green frame), hand tag "a log can be a fraction".
 
 ### 4. worked example: from log form to index form
 > Converting works the other way too. Solve log base five of x equals three. In index form, that says five cubed is **x**. So x is a hundred and twenty-**five**. Check it. Five cubed is a hundred and twenty-five, so log base five of a hundred and twenty-five is three. Multiplying five by three, to get fifteen, is the slip. The three is a power, not a **multiplier**. One more. Log base two of x equals minus three means x is two to the minus three, which is an **eighth**. A negative log gives a number between zero and one, just as we saw.
@@ -80,12 +92,12 @@ Visual: clear change to the full-width g01 board. Task strip, 44 px: "Evaluate l
 Visual: the board clears row by row (stage continues). Task strip: "Solve log₅ x = 3." The converter arrow from scene 2 slides in small: "logₐ y = x ⇔ aˣ = y". Rows, 52 px: "log₅ x = 3" (5 amber, x teal, 3 blue); on "x" "5³ = x" (index form), hand tag "index form"; on "five" "x = 125" (green frame). Grey row "check: log₅ 125 = 3 since 5³ = 125 ✓". On "multiplier" a red slip "x = 5 × 3 = 15" writes and is crossed, caption "3 is a power". Second task strip: "Solve log₂ x = −3." Rows: "x = 2⁻³"; on "eighth" "x = 1/8" (green frame), hand tag "between 0 and 1".
 
 ### 5. the natural log
-> Now the base that matters most. Remember e, about two point seven one eight. Log base e has its own name, the natural log, and its own short label, ln. So ln of a means log base e of **a**. It works exactly like any other log. ln of e is one, because e to the one is e. ln of one is zero, because e to the zero is one. And ln of e to the four is just **four**. Your calculator has an ln key. Try ln of five. It's about one point six zero nine. Remember the point on e to the x where the height was five? It was at x equals about one point six one. That x was ln of **five**.
+> Now the base that matters most. Remember e, about two point seven one eight. Log base e has its own name. We write this l n, the natural log. So the natural log of a means log base e of **a**. It works exactly like any other log. The natural log of e is one, because e to the one is e. The natural log of one is zero, because e to the zero is one. And the natural log of e to the four is just **four**. Your calculator has a natural log key. Try the natural log of five. It's about one point six zero nine. Last time, the rider on e to the x stopped where the height was five. Where was that? At x equals about one point six one. That x was the natural log of **five**.
 
-Visual: stage change: a card at the left (900 px), the e02 graph of y = eˣ at the right (700 × 520 px). Card, 60 px framed: on "a" "ln a = logₑ a" (e amber, a teal), hand tag "log base e". Rows, 52 px: "ln e = 1 (e¹ = e)"; "ln 1 = 0 (e⁰ = 1)"; on "four" "ln e⁴ = 4" (green frame). On "ln key" a coded calculator strip with the key "ln" presses: "ln 5 ≈ 1.609" (blue). On "height was five" the point (1.61, 5) on eˣ rings (from e02), a dashed drop to the x-axis lands at "1.609…"; on "five" label "x = ln 5", hand tag "the power that gives 5".
+Visual: stage change: a card at the left (900 px), the e02 graph of y = eˣ at the right (700 × 520 px). Card, 60 px framed: on "a" "ln a = logₑ a" (e amber, a teal), hand tag "log base e". Rows, 52 px: "ln e = 1 (e¹ = e)"; "ln 1 = 0 (e⁰ = 1)"; on "four" "ln e⁴ = 4" (green frame). On "We write this l n" the letters "ln" (60 px, amber) write with hand tag "read: natural log". On "natural log key" a coded calculator strip with the key "ln" presses: "ln 5 ≈ 1.609" (blue). On "height was five" the point (1.61, 5) on eˣ rings (e02's rider stop, with its "x ≈ 1.61" readout), a dashed drop to the x-axis lands at "1.609…"; on "five" label "x = ln 5", hand tag "the power that gives 5".
 
 ### 6. undoing each other
-> So raising to a power, and taking a log, undo each other. Start with five. Raise two to that power, to get thirty-two. Now take log base two of thirty-two. Two to what power is thirty-two? Five. You're back where you started. The two steps are a pair, like locking a door and unlocking it again. So log base a, of a to the x, is just x, for every real **x**. It works in the other order too. Start with six. Log base two of six is some power, and raising two to that power gives six again. So a to the log base a of x is x. This time x must be positive, because only positive numbers have logs. With base e, these say ln of e to the seven is seven, and e to the natural log of four is **four**. In general, e to the ln x is x, for any positive **x**.
+> So raising to a power, and taking a log, undo each other. Start with five. Raise two to that power, to get thirty-two. Now take log base two of thirty-two. Two to what power is thirty-two? Five. You're back where you started. The two steps are a pair, like locking a door and unlocking it again. So log base a, of a to the x, is just x, for every real **x**. It works in the other order too. Start with six. Log base two of six is some power, and raising two to that power gives six again. So a to the log base a of x is x. This time x must be positive, because only positive numbers have logs. With base e, these say the natural log of e to the seven is seven, and e to the natural log of four is **four**. In general, e to the natural log of x is x, for any positive **x**.
 
 Visual: stage change to the undo machine: two coded boxes joined by arrows, "raise a to the power" (left, amber) and "take logₐ" (right, amber), a token travelling through them. Token "5" (blue) enters the left box, leaves as "2⁵ = 32" (teal), enters the right box, leaves as "5" (blue) again; on "x" (first) the identity writes, 60 px framed: "logₐ aˣ = x, for all real x", hand tag "undo". Reverse: token "6" (teal) enters the log box, leaves as "log₂ 6" (blue, "≈ 2.585" small grey), enters the power box, leaves as "6"; identity "a^(logₐ x) = x, for x > 0", hand tag "x > 0 here". Base e rows, 52 px: "ln e⁷ = 7"; on "four" "e^(ln 4) = 4" (green frame); on "x" (last) "e^(ln x) = x, x > 0" (framed, 56 px).
 
@@ -100,7 +112,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the ladder small 
 Visual: `QuestionCard`, 40 px, worded as printed: "Evaluate: (a) log₅ 125 (b) log₂ (1/16) (c) log₉ 3 (d) ln(e⁻²)". The full question stays on screen. Picture slot: an empty converter "□^? = □". Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> Five cubed is a hundred and twenty-five, so the first is **three**. A sixteenth is two to the minus four, so the second is minus **four**. Nine to the power of a half is three, because a half power is a square root, so the third is a **half**. And ln of e to the minus two is minus **two**. Writing three for log base nine of three, by dividing, is the slip.
+> Five cubed is a hundred and twenty-five, so the first is **three**. A sixteenth is two to the minus four, so the second is minus **four**. Nine to the power of a half is three, because a half power is a square root, so the third is a **half**. And the natural log of e to the minus two is minus **two**. Writing three for log base nine of three, by dividing, is the slip.
 
 Visual: the card shrinks to the top (30 px). Rows, 44 px: on "three" "(a) 5³ = 125: 3" (green frame); on "four" "(b) 2⁻⁴ = 1/16: −4" (green frame); on "half" "(c) 9^½ = √9 = 3: ½" (green frame); on "two" "(d) −2" (green frame). On "the slip" a red slip "log₉ 3 = 9 ÷ 3 = 3" writes and is crossed, caption "9 to what power is 3?". Hold about 1 s.
 
@@ -170,6 +182,8 @@ Model answer: (a) x = 3⁻² = 1/9. (b) 7 + 3 = 10. Classic mistake (crossed): "
 
 Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `e01e08/verify.py`); Codex to re-check.
 
+- Revision 2 (17 Nov 2026, SymPy 1.14, scratchpad `e-rev2/verify.py`): log₄ 2 = 1/2; 4^(1/2) = 2.
+
 - 2³ = 8; 2⁶ = 64; 2⁷ = 128; log₂ 100 = 6.6439 (not shown).
 - log₂ 8 = 3; log₃ (1/9) = −2; 5³ = 125; 2⁻³ = 1/8.
 - ln 1 = 0; ln e = 1; ln e⁴ = 4; ln 5 = 1.6094.
@@ -183,7 +197,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `e01e08/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,573 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the draw playing out, the ladder, the converter slides, the undo tokens) and the 45 s notes scene: about 506 s. Characters per scene (1 to 13): 874, 793, 436, 524, 562, 738, 213, 181, 342, 163, 287, 385, 75. Speech before the notes is about 413 s, under the 570 s cap. Feedback speech: about 26 s and 22 s.
+Counted by script (narration blockquotes, bold markers removed; Revision 2 recount, 17 Nov, scratchpad `e-rev2/count.py`): 5,834 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the draw playing out, the ladder, the converter slides, the undo tokens) and the 45 s notes scene: about 526 s. Characters per scene (1 to 13): 874, 793, 564, 524, 657, 763, 213, 181, 355, 163, 287, 385, 75. Speech before the notes is about 433 s, under the 570 s cap. Feedback speech: about 27 s and 22 s.
 
 Reserve trims if the voiced take runs long: scene 1's "In a real draw you'd play seven rounds" sentence; scene 5's ln 5 callback pair (keep the calculator row).
 
@@ -210,7 +224,7 @@ Stage plan (approximate seconds):
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: e02's last frame continues into 1; 1 to 2 stage change; 2 to 3 clear change to the board; 3 to 4 board row clear; 4 to 5 stage change; 5 to 6 stage change; 6 to 7 camera pull back; attempts and feedback: the card shrinks to the top; 11 to 12 board clear; 12 to 13 fade, then a silent return.
 
-Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11e03-learning-review.md`, `science_check` = `checks/m-a11e03-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-e03-learning-review.md`, `science_check` = `checks/m-a11-e03-maths-check.md`.
 
 ## Assets
 
@@ -272,9 +286,10 @@ Builds on: Exponential graphs; the number e. Next: Solving aˣ = b with logarith
 
 ## Open decisions
 
-- **1. Reading "ln" aloud (voicer).** The narration says "the natural log of" throughout, which the Google voice reads cleanly; on screen it is "ln". If root prefers students to hear "ell en" as well, scene 5 can add "written ln, and often read ell en".
+- **1. Reading "ln" aloud (voicer).** **Closed (Revision 2, root's ruling):** scene 5 introduces the label once ("We write this l n, the natural log."); every other narration in the strand says "the natural log of". The screen keeps "ln".
 - **2. The 100-team draw (learning review).** "Some teams get a free pass" (byes) is one sentence. If it distracts, cut it (reserve trim) and keep "between six and seven".
 
 ## Review notes
 
 - Revision 1 has had no independent review. Next: student learning review (trace from e01, e02 and w01; check that the converter makes "a log is a power" stick, that negative logs feel caused, and that both identities are heard with base e), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" above and `../checks/m-a11-e01-e08-learning-review-resolution.md`). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A. The narration says "the natural log of" wherever ln is read, so the voicer needs no respelling for ln.

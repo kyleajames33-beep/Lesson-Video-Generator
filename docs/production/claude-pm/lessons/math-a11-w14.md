@@ -229,7 +229,7 @@ Stage plan (seconds from the estimate):
 
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 (`hold`) and key-notes (`hold`). Transitions (`pickTransition`): w13's last frame continues into scene 1 (camera continue; the hammock grows); 1 to 2 clear change (two graphs); 2 to 3 camera continue onto the dragging hammock; 3 to 4 clear change (new case); 4 to 5 clear change back to the hammock; 5 to 6 clear change (new case); 6 to 7 camera continue (the "above or below?" chip carries over); 7 to 8 camera pull back to the card; attempts and feedback: the card shrinks to the top; 12 to 13 board clear; 13 to 14 fade to the notes board, then a silent return to scene 13's frame.
 
-Holds: attempt-1, attempt-2 (10 s countdown after the speech, the ring shown full from "Pause here to answer."). key-notes is 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11w14-learning-review.md`, `science_check` = `checks/m-a11w14-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s countdown after the speech, the ring shown full from "Pause here to answer."). key-notes is 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-w14-learning-review.md`, `science_check` = `checks/m-a11-w14-maths-check.md`.
 
 ## Assets
 

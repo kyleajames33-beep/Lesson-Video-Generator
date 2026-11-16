@@ -220,7 +220,7 @@ Stage plan (seconds from the estimate):
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: w28's last frame continues into 1 (the staircase grows); 1 to 2 camera continue; 2 to 3 clear change (three panels); 3 to 4, 4 to 5, 5 to 6 clear change; 6 to 7 stage change to the slider; 7 to 8 camera pull back to the card; attempts and feedback: the card shrinks to the top; 12 to 13 board clear; 13 to 14 fade, then a silent return to scene 13's frame.
 
-Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11w29-learning-review.md`, `science_check` = `checks/m-a11w29-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-w29-learning-review.md`, `science_check` = `checks/m-a11-w29-maths-check.md`.
 
 ## Assets
 

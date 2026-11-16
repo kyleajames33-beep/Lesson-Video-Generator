@@ -1,8 +1,20 @@
 # Maths A11 E04: How do logarithms solve aˣ = b? y = aˣ is equivalent to x = logₐ y, exact answers, calculator values, and which values are rational or irrational (design)
 
-Status: Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-c06.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-c06.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,519 characters by script (see "Narration length estimate"), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,839 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 526 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-e04-learning-review.md` (summary `../checks/m-a11-e01-e08-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-c-e-packs.md` and root's resolution brief of 17 Nov (every spoken "ln" is "the natural log of", introduced once in e03; review evidence paths). Resolution log: `../checks/m-a11-e01-e08-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 6 and feedback 2 (the irrationality reason fails for fraction powers): **accepted, with root's ruling**. Scene 6 now says: "Suppose two to the power p over q made a hundred, with p and q whole numbers. Raise both sides to the power q. Then two to the p would equal a hundred to the q. But a hundred to the q has a factor of five, and two to the p never does, because it's only twos multiplied together. That's impossible." New bold cue "impossible". The reason card writes one line per step and strikes through "2ᵖ = 100^q" on that cue. Feedback 2 applies the same reason to 40 ("two to the p can never equal forty to the q, and no fraction power of two makes forty"), with the grey row "2ᵖ ≠ 40^q: 40^q has a factor 5". The model answer, the "Calculator and digital tools" decision, author note (e) and error-check item 3 match. Open decision 2 is closed.
+2. Should fix, attempt 1 picture (answer-bearing): **accepted, with root's ruling**. The countdown picture is y = 3ˣ with no level line, no marked height and no y-axis scale, so the crossing with 20 cannot be read. Feedback 1 adds the scale, draws the level line at 20 and drops it to 2.727 on "seven".
+3. Optional, scene 6 ("The same goes for e to the one point seven ..."): **applied**, reviewer's wording ("... are irrational too, though proving that is beyond this course"), with a grey note "proof beyond this course". Author note (e) records why (both follow from e being transcendental).
+
+Also: scene 4's "That's the ln key" is now "That's the natural log key on your calculator" (root's ln ruling). The memory aid check's scene reference is corrected (scene 7). Scene 6 is now 972 characters (about 73 s); its stage band in the plan is a Revision 1 approximation. Joins unchanged: scene 1 opens on e03's final frame and scene 12 is still e05's opening frame.
+
+Narration 5,839 characters by script (Revision 1: 5,519), about 526 s with holds; speech before the notes about 433 s, under the 570 s cap. Changed values were rechecked with SymPy 1.14 (scratchpad `e-rev2/verify.py`; see "Numbers to verify"); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. The `learning_review` evidence path now reads `checks/m-a11-e04-learning-review.md`. Nothing recorded; human listening pending.
 
 Scope: fifty-third video of Year 11 Mathematics Advanced (2024), outline order 53, Exponential and logarithmic functions. Pre-design pack: `../pre-design/maths-a11/math-a11-e04.md` (brief 243). Site lessons (read through the pack's quotations, read only): `exponential-and-logarithmic-functions/lesson08.sa.html` (the "2ˣ = 5" sentence; drill 2ˣ = 7 ≈ 2.807) and `lesson03.sa.html` ("Evaluating with technology": e^1.7 ≈ 5.4739, ln 12 ≈ 2.4849, ln 1 = 0 and log₂ 8 = 3 rational; "rounding is a decision you make and state"); lesson05's revisit (2ˣ = 100 ≈ 6.644). Route entry: `math-a11-e04` in `../../programme/maths-a11-route-inputs-3.json`. Visual system: maths studio kit; the painted ribbon (e03's brief) and reused scissors, and a painted slide rule for the handoff (prefix `ma11-`); every graph, level line, calculator screen and working row coded.
 
@@ -20,7 +32,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 ## Decisions
 
 - **Anchor: halving a 1 m ribbon (painted plate, live).** Cut a 1 m ribbon in half, keep one half, cut again: after n cuts the piece is 100 ÷ 2ⁿ cm, so "when is it 1 cm?" is 2ⁿ = 100, e03's unsolved equation (the 100-team tournament gives the same equation). The ribbon gets shorter on screen cut by cut (6 cuts: 1.56 cm; 7 cuts: 0.78 cm), so the exact answer log₂ 100 ≈ 6.64 has a visible meaning: the 7th cut is the one that takes it under 1 cm. Home; the pack's anchor 2. The pack's game upgrade costs (anchor 1) were not needed; games already anchor e02. No Year 12 or a11 design uses a ribbon being cut (grep 16 Nov: "ribbon" only in c12's parcel wrapping; "scissors" only w20's plate list). The cropped painted ribbon is the real object; it is never rescaled along one axis.
-- **Calculator and digital tools.** The narration says "your calculator's log key with a space for the base", and the screen shows a coded, unbranded calculator display (`ScreenApp`, calculator mode) with the template "log□(□)". Base e uses the ln key. "Digital tools" for rational or irrational: the calculator or app shows a long decimal, and the narration gives the reason that settles it (no power of 2 has a factor of 5), because a screen of digits alone cannot prove irrationality. The design says this plainly (scene 6).
+- **Calculator and digital tools.** The narration says "your calculator's log key with a space for the base", and the screen shows a coded, unbranded calculator display (`ScreenApp`, calculator mode) with the template "log□(□)". Base e uses the ln key. "Digital tools" for rational or irrational: the calculator or app shows a long decimal, and the narration gives the reason that settles it (if 2^(p/q) = 100 then 2ᵖ = 100^q, impossible because only the right side has a factor of 5), because a screen of digits alone cannot prove irrationality. The design says this plainly (scene 6).
 - **Simulations (standard item 3).**
   1. **Ribbon cuts** (scenes 1, 3): the scissors close over the ribbon; the kept piece is cropped to its true length (100, 50, 25, 12.5, 6.25, 3.13, 1.56, 0.78 cm on a coded ruler scaled from the sidecar); a "cuts: n" counter (blue) and "length: … cm" (teal).
   2. **Level line on 2ˣ** (scene 2, `StudioLevelLine`): y = 2ˣ (x 0 to 8, y 0 to 140); a level line at height b (teal) slides from 10 to 140, its meeting point dropping a dashed line to the x-axis with the readout "x = log₂ b"; at b = 100 it settles; slid below the axis (b = −5) it meets nothing, tag "no solution".
@@ -46,7 +58,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (b) 2⁵⁰ = 1.126 × 10¹⁵.
   (c) log₂ 7 = 2.80735; ln 5 = 1.60944; 5⁻² = 1/25. Slip: log₇ 2 = 0.356.
   (d) e^1.7 = 5.4739; ln 12 = 2.4849; ln 1 = 0; log₂ 8 = 3.
-  (e) Irrationality of log₂ 100: if log₂ 100 = p/q with whole numbers p, q > 0, then 2ᵖ = 100^q = 2^(2q) 5^(2q), impossible since the left side has no factor 5. The narration gives the one-sentence form.
+  (e) Irrationality of log₂ 100: if log₂ 100 = p/q with whole numbers p, q > 0, then 2ᵖ = 100^q = 2^(2q) 5^(2q), impossible since the left side has no factor 5. The narration gives this argument in plain words (scene 6), and feedback 2 applies it to 40. e^1.7 and ln 12 are irrational by results beyond this course (both follow from e being transcendental: e^1.7 = p/q would make e¹⁷ rational, and ln 12 = p/q would make eᵖ = 12^q); the narration says so rather than implying the factor-of-five reason covers them.
   (f) A1: log₃ 20 = 2.72683 (3⁹ … check 3^2.727 = 20.004); 3² = 9 < 20 < 27 = 3³. A2: 2ˣ = 8, x = 3; log₂ 40 = 5.32193, irrational (40 = 2³ × 5).
   (g) Pronunciations: "log base two of a hundred"; "six point six four four"; "two to the fifty"; "about a thousand trillion"; "log base three of twenty"; "five times two to the x".
   (h) Windows: scene 2 x 0 to 8, y 0 to 140 (and briefly −10 for the no-solution sweep).
@@ -76,7 +88,7 @@ Visual: stage change: the ribbon shrinks to a 300 px badge with "2ⁿ = 100" at 
 Visual: clear change: the calculator display (`ScreenApp`, calculator mode, 760 × 520 px) at the left, the ribbon and inset ruler at the right. The template "log□(□)" fills: base "2" (amber), argument "100" (teal); on "four" the display reads "6.643856189…" (blue) and a row writes, 52 px: "n = log₂ 100 ≈ 6.644" (green frame). On "raising it back" the display shows "2^6.644 = 100.01", hand tag "check: raise it back". On "centimetre" the ribbon's 6th and 7th pieces ring with "1.56 cm" and "0.78 cm", hand tag "7th cut".
 
 ### 4. worked example: three equations
-> Let's solve three more. First, two to the x equals seven. Two cubed is eight, so x is a little under three. Exactly, x is log base two of seven, which is about two point eight zero **seven**. Second, e to the x equals five. The base is e, so x is log base e of five, which is the natural log of five, about one point six zero **nine**. That's the ln key. Third, five to the x equals one over twenty-five. Twenty-five is five squared, so one over twenty-five is five to the minus two, and x is exactly minus **two**. Writing log base seven of two, for the first one, is the slip. The base stays the **base**.
+> Let's solve three more. First, two to the x equals seven. Two cubed is eight, so x is a little under three. Exactly, x is log base two of seven, which is about two point eight zero **seven**. Second, e to the x equals five. The base is e, so x is log base e of five, which is the natural log of five, about one point six zero **nine**. That's the natural log key on your calculator. Third, five to the x equals one over twenty-five. Twenty-five is five squared, so one over twenty-five is five to the minus two, and x is exactly minus **two**. Writing log base seven of two, for the first one, is the slip. The base stays the **base**.
 
 Visual: clear change to the full-width g01 board. Three task strips stacked, 44 px: "Solve: (a) 2ˣ = 7 (b) eˣ = 5 (c) 5ˣ = 1/25". Rows, current 52 px, earlier 32 px dimmed: "(a) 2³ = 8, so x < 3"; "x = log₂ 7"; on "seven" "≈ 2.807" (green frame). "(b) x = logₑ 5 = ln 5"; on "nine" "≈ 1.609" (green frame), hand tag "ln = logₑ", a small ln key strip pressing. "(c) 1/25 = 1/5² = 5⁻²"; on "two" "x = −2" (green frame), tag "exact". On "base" a red slip "x = log₇ 2" writes and is crossed, caption "base and number swapped".
 
@@ -86,9 +98,9 @@ Visual: clear change to the full-width g01 board. Three task strips stacked, 44 
 Visual: clear change: the board clears; task strip, 44 px: "Solve 100 × (½)ⁿ = 1." The ribbon badge returns at the top right with "100 cm × ½ each cut". Rows, 52 px: "100 × (½)ⁿ = 1" (100 magenta, ½ amber, n blue); hand tag "number in front: divide first"; on "hundredth" "(½)ⁿ = 0.01"; "n = log_½ 0.01" (½ amber); on "again" the calculator strip shows "log_0.5(0.01) = 6.643856…" and "n ≈ 6.644" (green frame). On "hundred" two small ladders side by side: halving 1 → ½ → … → 0.01 and doubling 1 → 2 → … → 100, the same 6.644 steps marked on both, hand tag "same number of steps".
 
 ### 6. exact or rounded?
-> Some answers came out exact, and some didn't. Use your calculator, or a graphing app, to look closer. Log base two of eight is exactly three, and the natural log of one is exactly zero. Those are rational, which means they can be written as a fraction of whole numbers. But log base two of a hundred shows six point six four three eight five six one eight nine seven, and it never settles. Here's why it can't be a fraction. No power of two, even a fraction power, can make a hundred, because a hundred has a factor of five, and powers of two never do. So it's irrational. Its decimals never end and never repeat. The same goes for e to the one point seven, and the natural log of twelve. So write the exact form first, then round it, and say how you **rounded**.
+> Some answers came out exact, and some didn't. Use your calculator, or a graphing app, to look closer. Log base two of eight is exactly three, and the natural log of one is exactly zero. Those are rational, which means they can be written as a fraction of whole numbers. But log base two of a hundred shows six point six four three eight five six one eight nine seven, and it never settles. Here's why it can't be a fraction. Suppose two to the power p over q made a hundred, with p and q whole numbers. Raise both sides to the power q. Then two to the p would equal a hundred to the q. But a hundred to the q has a factor of five, and two to the p never does, because it's only twos multiplied together. That's **impossible**. So it's irrational. Its decimals never end and never repeat. e to the one point seven and the natural log of twelve are irrational too, though proving that is beyond this course. So write the exact form first, then round it, and say how you **rounded**.
 
-Visual: stage change: the calculator display, now in a list mode, four lines with tags: "log₂ 8 = 3" (tag "exact", green outline), "ln 1 = 0" ("exact"); "log₂ 100 = 6.6438561897…" (tag "irrational, rounded", grey), digits scrolling; hand tag "never ends, never repeats". A reason card at the right, 44 px: "100 = 2² × 5²", "powers of 2: no factor 5", so "log₂ 100 is not p/q". Then "e^1.7 ≈ 5.4739" and "ln 12 ≈ 2.4849" add with "irrational, rounded" tags. On "rounded" a model line, 52 px: "n = log₂ 100 ≈ 6.644 (3 d.p.)", hand tag "write ≈ and the rounding".
+Visual: stage change: the calculator display, now in a list mode, four lines with tags: "log₂ 8 = 3" (tag "exact", green outline), "ln 1 = 0" ("exact"); "log₂ 100 = 6.6438561897…" (tag "irrational, rounded", grey), digits scrolling; hand tag "never ends, never repeats". A reason card at the right, 44 px, one line per spoken step: on "Suppose" "if 2^(p/q) = 100 (p, q whole)"; on "Raise both sides" "then 2ᵖ = 100^q"; "100^q has a factor 5 (100 = 2² × 5²); 2ᵖ never does"; on "impossible" the line "2ᵖ = 100^q" is struck through in red, and "so log₂ 100 is not p/q" writes. Then "e^1.7 ≈ 5.4739" and "ln 12 ≈ 2.4849" add with "irrational, rounded" tags and a small grey note "proof beyond this course". On "rounded" a model line, 52 px: "n = log₂ 100 ≈ 6.644 (3 d.p.)", hand tag "write ≈ and the rounding".
 
 ### 7. memory aid
 > Here's the summary. To solve a to the x equals b, ask, a to the what is b? The what is log base a of b. Write it exactly first. Then, if it's irrational, give a rounded value, with an approximately **sign**. And if there's a number in front of the power, divide it off first.
@@ -98,12 +110,12 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the level-line gr
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. Solve three to the x equals twenty. Give the exact answer, and its value to three decimal places. Between which two whole numbers must it lie? Pause here to answer.
 
-Visual: `QuestionCard`, 40 px, worded as printed: "Solve 3ˣ = 20, giving an exact answer and its value to 3 decimal places. Between which two whole numbers must it lie?" The full question stays on screen. Picture slot: y = 3ˣ (x 0 to 3.5) with a level line at 20 and no readout. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
+Visual: `QuestionCard`, 40 px, worded as printed: "Solve 3ˣ = 20, giving an exact answer and its value to 3 decimal places. Between which two whole numbers must it lie?" The full question stays on screen. Picture slot: y = 3ˣ (x 0 to 3.5), no level line, no marked height and no y-axis scale, so the meeting point with 20 cannot be read off. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
 > The exact answer is x equals log base three of twenty. On a calculator, that's about two point seven two **seven**. Check it: three to the two point seven two seven is twenty, near enough. It must lie between two and three, because three squared is nine and three cubed is twenty-seven, and twenty is in **between**. Dividing twenty by three is the slip.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: "x = log₃ 20" (exact); on "seven" "≈ 2.727 (3 d.p.)" (green frame), the drop line landing on the picture. On "between" "3² = 9 < 20 < 27 = 3³, so 2 < x < 3" (green frame). On "the slip" a red slip "x = 20/3" writes and is crossed, caption "÷ is not the inverse of a power". Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px: "x = log₃ 20" (exact); on "seven" "≈ 2.727 (3 d.p.)" (green frame); the picture's y-axis scale appears, a level line draws at 20 and its drop line lands at 2.727. On "between" "3² = 9 < 20 < 27 = 3³, so 2 < x < 3" (green frame). On "the slip" a red slip "x = 20/3" writes and is crossed, caption "÷ is not the inverse of a power". Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Solve five times two to the x equals forty. Then solve two to the x equals forty. Which answer is rational? Pause here to answer.
@@ -111,9 +123,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: "x = log₃ 20" (exact
 Visual: `QuestionCard`, 40 px: "Solve (a) 5 × 2ˣ = 40 and (b) 2ˣ = 40. Which answer is rational?" Picture slot: an empty calculator display. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> For the first, divide by five, so two to the x is eight, and x is exactly **three**. That's rational. For the second, x is log base two of forty, about five point three two **two**. Forty has a factor of five, so no power of two makes it, and that answer is irrational. Writing x equals twenty is the slip.
+> For the first, divide by five, so two to the x is eight, and x is exactly **three**. That's rational. For the second, x is log base two of forty, about five point three two **two**. Forty has a factor of five. So, for the same reason, two to the p can never equal forty to the q, and no fraction power of two makes forty. That answer is irrational. Writing x equals twenty is the slip.
 
-Visual: the card shrinks to the top. Rows, 44 px: "(a) 2ˣ = 40 ÷ 5 = 8"; on "three" "x = 3 (rational)" (green frame). "(b) x = log₂ 40"; on "two" "≈ 5.322 (irrational, rounded)" (green frame), "40 = 2³ × 5" grey. On "the slip" a red slip "x = 40 ÷ 2 = 20" writes and is crossed, caption "2²⁰ is over a million". Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: "(a) 2ˣ = 40 ÷ 5 = 8"; on "three" "x = 3 (rational)" (green frame). "(b) x = log₂ 40"; on "two" "≈ 5.322 (irrational, rounded)" (green frame), grey rows "40 = 2³ × 5" and "2ᵖ ≠ 40^q: 40^q has a factor 5". On "the slip" a red slip "x = 40 ÷ 2 = 20" writes and is crossed, caption "2²⁰ is over a million". Hold about 1 s.
 
 ### 12. handoff
 > So a log turns a power question into a number. Next, logs get even more useful. Before calculators, engineers multiplied with a slide rule. Slide one scale along the other, and two times three is found by adding two lengths, which lands on six. Adding lengths to multiply numbers? It sounds like a trick, but it works for any two numbers on the scales. Why? And what does it have to do with logs? That's **next**.
@@ -151,7 +163,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 Model answer: x = log₃ 20 ≈ 2.727. Since 3² = 9 < 20 < 27 = 3³, 2 < x < 3. Classic mistake (crossed): "x = 20/3".
 
 **Attempt 2 (scene 10; pack question 2, original, HSC style, 2 marks suggested).** "Solve (a) 5 × 2ˣ = 40 and (b) 2ˣ = 40. Which answer is rational?"
-Model answer: (a) 2ˣ = 8, x = 3, rational. (b) x = log₂ 40 ≈ 5.322, irrational (40 = 2³ × 5, so no rational power of 2 equals 40). Classic mistake (crossed): "x = 20".
+Model answer: (a) 2ˣ = 8, x = 3, rational. (b) x = log₂ 40 ≈ 5.322, irrational (if 2^(p/q) = 40, then 2ᵖ = 40^q, impossible because 40^q has a factor 5 and 2ᵖ does not). Classic mistake (crossed): "x = 20".
 
 ## Numbers used (author note: every value)
 
@@ -171,6 +183,8 @@ Model answer: (a) 2ˣ = 8, x = 3, rational. (b) x = log₂ 40 ≈ 5.322, irratio
 
 Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `e01e08/verify.py`); Codex to re-check.
 
+- Revision 2 (17 Nov 2026, SymPy 1.14, scratchpad `e-rev2/verify.py`): 100 = 2² × 5²; 40 = 2³ × 5. No 2ᵖ (p ≥ 1) is divisible by 5 (unique factorisation; checked to p = 60), so 2ᵖ = 100^q and 2ᵖ = 40^q have no whole-number solutions with q ≥ 1. Rechecked: log₂ 100 = 6.6438562; log₂ 40 = 5.32193; 3^2.727 = 20.004.
+
 - 100/2ⁿ for n = 0 to 7: 100, 50, 25, 12.5, 6.25, 3.125, 1.5625, 0.78125.
 - 2⁵⁰ = 1.13 × 10¹⁵. log₂ 100 = 6.64385618977472; 2^6.644 = 100.010.
 - log₂ 7 = 2.80735; ln 5 = 1.60944; 5⁻² = 1/25; log₇ 2 = 0.3562 (slip).
@@ -180,14 +194,14 @@ Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `e01e08/verify.py`); Codex
 
 ## Memory aid check
 
-- **"a to the what is b? The what is logₐ b."** Original. Meaning, as said in scene 6: the solution of aˣ = b is the index that turns a into b, which is logₐ b by definition. Assumptions checked: a > 0, a ≠ 1, b > 0 (key notes 1 and 2); it applies once the power stands alone (A2 (a) divides by 5 first, shown in feedback). It helps a new case: 10ˣ = 0.001 gives x = log₁₀ 0.001 = −3, exact. Introduced after scenes 1 to 5.
+- **"a to the what is b? The what is logₐ b."** Original. Meaning, as said in scene 7: the solution of aˣ = b is the index that turns a into b, which is logₐ b by definition. Assumptions checked: a > 0, a ≠ 1, b > 0 (key notes 1 and 2); it applies once the power stands alone (A2 (a) divides by 5 first, shown in feedback). It helps a new case: 10ˣ = 0.001 gives x = log₁₀ 0.001 = −3, exact. Introduced after scenes 1 to 5.
 - **Considered, not used:** "take the log of both sides" (needs the power law, e05 and e06).
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,519 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the ribbon cuts, the level line, the calculator digits) and the 45 s notes scene: about 502 s. Characters per scene (1 to 13): 684, 625, 462, 591, 685, 759, 271, 175, 346, 139, 298, 409, 75. Speech before the notes is about 409 s, under the 570 s cap. Feedback speech: about 26 s and 22 s.
+Counted by script (narration blockquotes, bold markers removed; Revision 2 recount, 17 Nov, scratchpad `e-rev2/count.py`): 5,839 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the ribbon cuts, the level line, the calculator digits) and the 45 s notes scene: about 526 s. Characters per scene (1 to 13): 684, 625, 462, 619, 685, 972, 271, 175, 346, 139, 377, 409, 75. Speech before the notes is about 433 s, under the 570 s cap. Feedback speech: about 26 s and 28 s.
 
-Reserve trims if the voiced take runs long: scene 5's "It has to" pair (keep the two ladders); scene 1's "Here's a tempting shortcut" lines (keep the crossed row); scene 6's "The same goes for" sentence (keep the tagged lines).
+Reserve trims if the voiced take runs long: scene 5's "It has to" pair (keep the two ladders); scene 1's "Here's a tempting shortcut" lines (keep the crossed row); scene 6's "e to the one point seven and the natural log of twelve are irrational too" sentence (keep the tagged lines and the grey note).
 
 ## Scene list and build ids
 
@@ -212,7 +226,7 @@ Stage plan (approximate seconds):
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: e03's last frame continues into 1; 1 to 2 stage change; 2 to 3 clear change; 3 to 4 clear change to the board; 4 to 5 board clear; 5 to 6 stage change; 6 to 7 camera pull back; attempts and feedback: the card shrinks to the top; 11 to 12 board clear; 12 to 13 fade, then a silent return.
 
-Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11e04-learning-review.md`, `science_check` = `checks/m-a11e04-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-e04-learning-review.md`, `science_check` = `checks/m-a11-e04-maths-check.md`.
 
 ## Assets
 
@@ -246,7 +260,7 @@ Sidecar JSON (`ma11-slide-rule-v1.json`): the groove's pixel rectangle on the bo
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with a CAS, and every value in narration, screen text, attempts and key notes against "Numbers used".
 2. Confirm the syllabus quotes match the route-inputs JSON exactly.
-3. Confirm the irrationality reason (no power of 2 has a factor 5) is correct as stated and that no calculator display alone is claimed as proof.
+3. Confirm the irrationality reason (2^(p/q) = 100 ⇒ 2ᵖ = 100^q, impossible because only the right side has a factor 5; the same for 40) is correct as stated, that e^1.7 and ln 12 are called irrational without a proof, and that no calculator display alone is claimed as proof.
 4. Confirm ln b / ln a and "take logs of both sides" do not appear (e06, e07).
 5. Confirm every rounded value carries "≈" and its rounding where a rounding is asked for.
 6. Confirm both attempts carry every demand and neither card nor picture shows an answer.
@@ -273,9 +287,10 @@ Builds on: What is a logarithm? Next: The log laws.
 ## Open decisions
 
 - **1. The site link (root).** The full-lesson link is lesson05 (the outline lists lesson05 and lesson08). lesson08's solving card uses ln b / ln a, which this video defers to e07, so lesson05 is the better match; root may prefer lesson08.
-- **2. The irrationality reason (learning review).** One sentence on the factor of 5 makes "irrational" caused, not just seen. If the reviewer finds it too fast for students starting Year 11, keep the tags and move the reason to an author note.
+- **2. The irrationality reason (learning review).** One sentence on the factor of 5 makes "irrational" caused, not just seen. If the reviewer finds it too fast for students starting Year 11, keep the tags and move the reason to an author note. **Closed (Revision 2):** keep the reason, corrected to the 2ᵖ = 100^q argument (learning review finding 1, root's ruling).
 - **3. "Engineers" in the handoff (root).** People are named in narration only, never drawn (as c10's dog walker). If root prefers no people at all, say "Before calculators, a slide rule multiplied numbers".
 
 ## Review notes
 
 - Revision 1 has had no independent review. Next: student learning review (trace from e03 and e01; check that the cut-by-cut ribbon makes 6 < n < 7 visible, that the level line makes "exactly one solution" caused, and that the rational or irrational decision is a reason, not a vibe), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" above and `../checks/m-a11-e01-e08-learning-review-resolution.md`). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A. The narration says "the natural log of" wherever ln is read, so the voicer needs no respelling for ln.

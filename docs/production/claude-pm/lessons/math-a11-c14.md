@@ -222,7 +222,7 @@ Stage plan (approximate seconds):
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: c13's last frame continues into 1; 1 to 2 stage change (the graph grows); 2 to 3 the rider moves on; 3 to 4 the rider reruns; 4 to 5 clear change to the board; 5 to 6 stage change; 6 to 7 clear change; 7 to 8 camera pull back; attempts and feedback: the card shrinks to the top; 12 to 13 board clear; 13 to 14 fade, then a silent return.
 
-Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11c14-learning-review.md`, `science_check` = `checks/m-a11c14-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-c14-learning-review.md`, `science_check` = `checks/m-a11-c14-maths-check.md`.
 
 ## Assets
 

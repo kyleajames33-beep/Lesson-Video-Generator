@@ -252,7 +252,7 @@ Stage plan (seconds from the estimate):
 
 Per-scene motion (schema 4): all scenes `motionRole: "explain"` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: w01's last frame continues into 1 (camera continue); 1 to 2 camera continue; 2 to 3 camera push onto the block; 3 to 4 clear change; 4 to 5, 5 to 6, 6 to 7 clear change (new task); 7 to 8 to 9 clear change; 9 to 10 clear change to the card; attempts and feedback: the card shrinks to the top; 14 to 15 board clear; 15 to 16 fade to the notes board, then a silent return to scene 15's frame.
 
-Holds: attempt-1, attempt-2 (10 s countdown after the speech). key-notes is 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11w02-rev1-learning-review.md`, `science_check` = `checks/m-a11w02-rev1-maths-check.md`.
+Holds: attempt-1, attempt-2 (10 s countdown after the speech). key-notes is 45 s (1,350 frames). Review evidence paths: `learning_review` = `checks/m-a11-w02-rev1-learning-review.md`, `science_check` = `checks/m-a11-w02-rev1-maths-check.md`.
 
 ## Assets
 
