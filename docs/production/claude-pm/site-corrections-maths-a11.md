@@ -67,3 +67,35 @@ Full old text and corrections are in section 8 of the named packs (`pre-design/m
 - **S11-10** `working-with-functions/lesson19.sa.html`, card 07: "The syllabus places this in MAV-11-01" should read "In Year 11 the optimum comes from the vertex".
 - **Minor:** lesson16's tangent definition should say a non-vertical line, for parabolas. Lesson04's "surge pricing" is really tiered pricing.
 - **Minor (w17 pack):** the tangent wording in working-with-functions should limit "meets the curve once" to non-vertical lines on a parabola (same as the lesson16 note above).
+
+## 6. Copy errors found while preparing c01 to c18 and e01 to e08 (16 November 2026)
+
+Twenty-one more site errors. Each has the exact old text and a correction in section 8 of its pack (`pre-design/maths-a11/math-a11-c*.md` and `-e*.md`).
+
+- **Differentiation lesson10 contradicts itself:**
+  - It defines decreasing with f′(x) < 0 for all x, yet says "decreasing on (−∞, 3)" across a stationary point.
+  - It says x³ is "always increasing".
+  - It makes an unsupported claim about losing marks for including an endpoint.
+- **Differentiation lesson08:**
+  - It defines a local maximum or minimum through the sign of f″ (Year 12, and not necessary).
+  - "Move 2" teaches the second derivative test.
+  - we-1 says "classify" but never does.
+- **Differentiation lesson05:**
+  - The odd-one-out question has more than one defensible answer (√(3x)).
+  - It makes an unsupported claim that answers in terms of u are "not accepted".
+- **Differentiation lesson03:**
+  - "Touches a curve at exactly one point" is false (the tangent to y = x³ at x = 1 meets the curve again at x = −2).
+  - "The two points become one" is also wrong.
+- **Differentiation lesson16:** −5 m is called "the displacement" but is the change in displacement.
+- **Differentiation lesson13:**
+  - The claim about a spreadsheet returning 0 at h = 10⁻¹⁴ is wrong (it gives about 4.09).
+  - Rounded values are written with equals signs.
+- **Differentiation lesson04:** the power-rule proof uses the binomial theorem (Extension 1).
+- **Differentiation lesson01:** a quick-check option prints its own working.
+- **Exponentials lesson06:**
+  - ln(2x) is a shift up by ln 2, not left.
+  - The points (2, 1) and (1/2, −1) hold only for base 2.
+- **Exponentials lesson01:** the paper-folding hook contradicts itself.
+- **Exponentials lesson02:** the horizontal-asymptote definition is wrong ("never crosses").
+- **Exponentials lesson03:** "Daily: $2.714" truncates 2.71457.
+- **Exponentials lessons 05 and 08:** "revisit" items refer to questions the openings never asked.

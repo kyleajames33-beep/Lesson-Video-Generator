@@ -1,0 +1,2788 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "brief": 243,
+  "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+  "syllabus": "Mathematics Advanced 11-12 (2024), Year 11",
+  "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout",
+  "officialEvidence": {
+    "source": "Fresh seven NSW Curriculum Year 11 focus-area pages, read 16 November 2026",
+    "year11Points": 201,
+    "crosswalk": "docs/production/programme/syllabus/maths-advanced-2024-y11-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+    "commitDate": "2026-11-16 11:01:17 +1100",
+    "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone and match the crosswalk inventory."
+  },
+  "recommendations": [
+    "Run the differentiation strand c01 to c18 in outline order, then e01 to e08. c01 opens on w31's proposed final frame (the jelly bean V, rise 20 over run 20); its straight arm is the linear case of ci41d3073a before curves.",
+    "Order clash for root: the site's product and quotient rule examples use e^x (lesson06 we-1, we-3, quick check, Q1, match items), but e^x is differentiated only in e02. The c11 and c12 packs use the polynomial items; alternatively move e01 and e02 before c11.",
+    "Order flag for root: obtuse angles of inclination (c09, ci70bdc1be) need tan beyond 90 degrees, which the trigonometry strand teaches after this one. Teach θ = 180° minus the acute angle with Year 10 tan, or move that part after t04.",
+    "Year 12 entry knowledge is delivered by: c05 (gradient as tangent slope, notation), c07 (cif6a6cb7d, ci1d192d62), c10 (ci00fa8fac in both forms, the u-substitution layout d01 quotes), c13 (cie3d91a6e), e01 (ci98f43d14), e02 (ciac4383bd, gradient = height), e03 (cic84a1659 and ci7cd97f8c with base e), e05 (log laws, ln(1/3) = -ln 3, log_a 1 = 0), e07 (ciae7673fb with b = e) and e08 (ci9eb0125c, the reflection d03 asks root to codename).",
+    "Possible splits if drafts run long: c07 (all real n into its own video), e06 (simplifying apart from solving). Possible merges: c02 with c03, c13 into c11 and c12.",
+    "Twenty-one new site findings are listed in the c01, c04 (two), c05 (two), c07, c10 (two), c14 (two), c16 (three), c18, e01 (two), e02, e03, e07 and e08 (two) packs (section 8) and are not yet in site-corrections-maths-a11.md."
+  ],
+  "part": 3,
+  "covers": "math-a11-c01 to math-a11-c18 (Introduction to differentiation) and math-a11-e01 to math-a11-e08 (Exponential and logarithmic functions)",
+  "subjects": {
+    "Mathematics Advanced": {
+      "year": 11,
+      "entries": [
+        {
+          "id": "math-a11-c01",
+          "playlistOrder": 32,
+          "mainLearnerQuestion": "What does an average rate of change measure on a graph?",
+          "syllabusActionIds": [
+            "ci8019730a",
+            "ci7d6c383e",
+            "ci34973239",
+            "ci41d3073a"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci8019730a",
+              "text": "Define the average rate of change of y with respect to x for a function y = f(x) over the domain [a, b] as Δy/Δx = (change in y)/(change in x), that is Δy/Δx = (f(b) - f(a))/(b - a), and recognise (f(b) - f(a))/(b - a) as the gradient of the secant through (a, f(a)) and (b, f(b)) on the graph of y = f(x)",
+              "sourceHtml": "<p>Define the <a class=\"glossary-link active\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7668149a-14c8-4ae7-94ca-1b3d59359748\" data-item-codename=\"glo_link__mav__average_rate_of_change\" data-item-id=\"7668149a-14c8-4ae7-94ca-1b3d59359748\" data-item-systemname=\"GLO Link: MAV: average rate of change\" data-item-type=\"link_glossary\">average rate of change</a> of <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span> with respect to <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span> for a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-codename=\"glo_link__shared__function\" data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-systemname=\"GLO Link: SHARED (MA): function\" data-item-type=\"link_glossary\">function</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span> over the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-codename=\"glo_link__shared__domain\" data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-systemname=\"GLO Link: SHARED: domain\" data-item-type=\"link_glossary\">domain</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mo>[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>]</mo></math></span> as <span class=\"math-tex\"><math aria-label=\"delta y over delta x equals the fraction with numerator change in y and denominator change in x\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n<mfrac>\n<mrow>\n<mi mathvariant=\"normal\">Δ</mi> \n<mi>y</mi>\n</mrow>\n<mrow>\n<mi mathvariant=\"normal\">Δ</mi> \n<mi>x</mi>\n</mrow>\n</mfrac>\n<mo>=</mo>\n<mfrac>\n<mrow>\n<mtext>change in </mtext> \n<mi>y</mi>\n</mrow>\n<mrow>\n<mtext>change in </mtext> \n<mi>x</mi>\n</mrow>\n</mfrac>\n</math></span>, that is <span class=\"math-tex\"><math aria-label=\"delta y over delta x equals the fraction with numerator f of b minus f of a and denominator b minus a\" xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n<mfrac>\n<mrow>\n<mi mathvariant=\"normal\">Δ</mi> \n<mi>y</mi>\n</mrow>\n<mrow>\n<mi mathvariant=\"normal\">Δ</mi> \n<mi>x</mi>\n</mrow>\n</mfrac>\n<mo>=</mo>\n<mfrac>\n<mrow>\n<mi>f</mi>\n<mfenced separators=\"|\">\n<mrow>\n<mi>b</mi>\n</mrow>\n</mfenced>\n<mo>-</mo>\n<mi>f</mi>\n<mo>(</mo>\n<mi>a</mi>\n<mo>)</mo>\n</mrow>\n<mrow>\n<mi>b</mi>\n<mo>-</mo>\n<mi>a</mi>\n</mrow>\n</mfrac>\n</math></span>, and recognise <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>b</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mo>(</mo><mi>a</mi><mo>)</mo></mrow><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow></mfrac></math></span> as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-codename=\"glo_link__shared__gradient\" data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-systemname=\"GLO Link: SHARED: gradient\" data-item-type=\"link_glossary\">gradient</a> of the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4f9acd0e-218a-44c8-b7ea-a759f03268ef\" data-item-codename=\"glo_link__shared__secant\" data-item-id=\"4f9acd0e-218a-44c8-b7ea-a759f03268ef\" data-item-systemname=\"GLO Link: SHARED: secant\" data-item-type=\"link_glossary\">secant</a> through <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><mi>a</mi><mo>,</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>a</mi></mrow></mfenced></mrow></mfenced></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><mi>b</mi><mo>,</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>b</mi></mrow></mfenced></mrow></mfenced></math></span> on the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-codename=\"glo_link__shared__graph\" data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-systemname=\"GLO Link: SHARED: graph\" data-item-type=\"link_glossary\">graph</a> of <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7d6c383e",
+              "text": "Recognise speed as a rate of change of distance with respect to time",
+              "sourceHtml": "<p>Recognise <a data-item-id=\"5d4e728f-c88f-424b-9cae-82742a507631\" href=\"\">speed</a> as a <a data-item-id=\"e142f6d8-f0f5-4c41-9c12-11e3787d4c04\" href=\"\">rate of change</a> of <a data-item-id=\"eaff39f1-b778-4dd2-9291-d74810b6f846\" href=\"\">distance</a> with respect to time</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci34973239",
+              "text": "Use the definition for average rate of change to determine the average speed of an object from a given distance–time graph",
+              "sourceHtml": "<p>Use the definition for average rate of change to determine the <a data-item-id=\"ea04a825-f3d7-4d6c-8ba1-50d2130b3470\" href=\"\">average</a> speed of an object from a given <a data-item-id=\"643e34ef-e459-4646-839e-8bb3706ab9e2\" href=\"\">distance–time graph</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci41d3073a",
+              "text": "Recognise when modelling with a linear function that its gradient is the rate of change and determine the rate of change for linear functions in practical situations",
+              "sourceHtml": "<p>Recognise when modelling with a <a data-item-id=\"635ba753-0148-4fc5-aec8-787fb8ada19b\" href=\"\">linear function</a> that its gradient is the rate of change and determine the rate of change for linear functions in practical situations</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "partial",
+              "siteGap": "The gradient of a linear model as its rate is taught in WF18. The differentiation lessons do not connect a constant rate to the linear case."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "average-and-instantaneous-rates",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "00e3ba61b1a4148dd39fd110dc76e8a765f7c928fedf3d72d2ba920e5d0320a2"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "average-and-instantaneous-rates",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "00e3ba61b1a4148dd39fd110dc76e8a765f7c928fedf3d72d2ba920e5d0320a2"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "steepness-is-the-rate",
+                "what-you-ll-master",
+                "average-rate-of-change-the",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-steep-flat-steep",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w10",
+              "text": "Gradient of a line through two points, (y2 - y1)/(x2 - x1)."
+            },
+            {
+              "source": "math-a11-w12",
+              "text": "A linear model y = mx + c whose gradient is a cost or amount per unit."
+            },
+            {
+              "source": "math-a11-w08",
+              "text": "Evaluating f(a) and f(b) from a rule."
+            },
+            {
+              "source": "math-a11-w31",
+              "text": "The V graph y = |g - 350| whose right arm rises 20 over a run of 20 (the handoff frame)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w31"
+          ],
+          "startBoundary": "Open on w31's final frame: the jelly bean V y = |g - 350| with its right arm from (350, 0) to (370, 20) and the rise-and-run triangle, \"rise ÷ run = 20 ÷ 20 = 1\". On a straight piece the rate is the same everywhere (the gradient, ci41d3073a). Then ask what \"how fast\" means when the graph curves.",
+          "stopBoundary": "Define the average rate of change of f over [a, b] as (f(b) - f(a))/(b - a), the gradient of the secant through (a, f(a)) and (b, f(b)); recognise speed as the rate of change of distance with time; find average speed from a distance-time graph with units; recognise that a linear model's gradient is its constant rate of change. Instantaneous speed and tangents start in c02.",
+          "nextHandoff": "math-a11-c02",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c02",
+          "playlistOrder": 33,
+          "mainLearnerQuestion": "How does a tangent capture speed at one instant?",
+          "syllabusActionIds": [
+            "ci6a71a44d",
+            "ci9f5aa4ac",
+            "ci8c73fdcb",
+            "ci0b795741"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci6a71a44d",
+              "text": "Describe the difference between the average speed of an object and its instantaneous speed",
+              "sourceHtml": "<p>Describe the difference between the average speed of an object and its instantaneous speed</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9f5aa4ac",
+              "text": "Determine that the instantaneous speed of an object at time t can be approximated by the average speed between its position at time t and its position some time later, and explain how this approximation can be improved",
+              "sourceHtml": "<div><span>Determine that the instantaneous speed of an object at time </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math></span><span> can be approximated by the average speed between its position at time </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math></span><span> and its position some time later, and explain how this approximation can be improved</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8c73fdcb",
+              "text": "Relate the instantaneous speed of an object to the gradient of the tangent at that point on its distance–time graph",
+              "sourceHtml": "<p>Relate the instantaneous speed of an object to the gradient of the <a data-item-id=\"b0380cb8-0ae4-4cab-8dfa-dc78d105351c\" href=\"\">tangent</a> at that point on its distance–time graph</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci0b795741",
+              "text": "Estimate the instantaneous speed of an object from its distance–time graph",
+              "sourceHtml": "<p>Estimate the instantaneous speed of an object from its distance–time graph</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "average-and-instantaneous-rates",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-3"
+            ],
+            "sha256": "00e3ba61b1a4148dd39fd110dc76e8a765f7c928fedf3d72d2ba920e5d0320a2"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "average-and-instantaneous-rates",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "00e3ba61b1a4148dd39fd110dc76e8a765f7c928fedf3d72d2ba920e5d0320a2"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "steepness-is-the-rate",
+                "what-you-ll-master",
+                "average-rate-of-change-the",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-steep-flat-steep",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c01",
+              "text": "Average rate of change as the gradient of a secant; average speed from a distance-time graph."
+            },
+            {
+              "source": "math-a11-w17",
+              "text": "A tangent to a parabola as a line that touches it at one point."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c01"
+          ],
+          "startBoundary": "Recall average speed as a secant gradient (c01), then ask what a speedometer reads at one instant.",
+          "stopBoundary": "Describe how average speed differs from instantaneous speed; approximate the instantaneous speed at time t by the average speed from t to a slightly later time and improve it by shortening the interval; relate instantaneous speed to the gradient of the tangent on a distance-time graph; estimate it from a drawn tangent using two far-apart points on the tangent. The general secant table with h and first principles are c04 and c06; non-distance contexts are c03.",
+          "nextHandoff": "math-a11-c03",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c03",
+          "playlistOrder": 34,
+          "mainLearnerQuestion": "How do we estimate a changing rate from a real-world graph?",
+          "syllabusActionIds": [
+            "ci7e80ed31",
+            "ci1a06a2ed"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci7e80ed31",
+              "text": "Recognise when modelling with a non-linear function that the rate of change is not constant and is represented by the gradient of the tangent to the curve at each point on the curve",
+              "sourceHtml": "<p>Recognise when modelling with a non-linear function that the rate of change is not <a data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" href=\"\">constant</a> and is represented by the gradient of the tangent to the curve at each point on the curve</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci1a06a2ed",
+              "text": "Estimate the instantaneous rate of change of a non-linear function at a given point from a given graph of a practical situation",
+              "sourceHtml": "<p>Estimate the <a data-item-id=\"49f8bb66-2638-4a5d-97b2-944c2115ae55\" href=\"\">instantaneous rate of change</a> of a non-linear function at a given point from a given graph of a practical situation</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "steepness-is-the-rate",
+              "what-you-ll-master",
+              "average-rate-of-change-the",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-steep-flat-steep",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "steepness-is-the-rate",
+                "what-you-ll-master",
+                "average-rate-of-change-the",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-steep-flat-steep",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c02",
+              "text": "Instantaneous speed as the gradient of the tangent, estimated from two points on a drawn tangent."
+            },
+            {
+              "source": "math-a11-c01",
+              "text": "Average rate of change with units from the axes."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c02"
+          ],
+          "startBoundary": "Recall the tangent gradient as the speed at an instant (c02), then leave distance-time graphs for other changing quantities.",
+          "stopBoundary": "Recognise that a non-linear model has a rate of change that is not constant, given at each point by the gradient of the tangent; estimate the instantaneous rate of change at a point from a given practical graph with units and a sign, and say what it means. Interpreting f'(c) from a formula and reading f and f' together are c17.",
+          "nextHandoff": "math-a11-c04",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c04",
+          "playlistOrder": 35,
+          "mainLearnerQuestion": "How do shrinking secants find the gradient of a curve?",
+          "syllabusActionIds": [
+            "ci447b12b9",
+            "cif58445af",
+            "ci8fd626a1"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci447b12b9",
+              "text": "Examine the gradient of a curve at a point on the curve using graphing applications",
+              "sourceHtml": "<p>Examine the gradient of a curve at a point on the curve using graphing applications</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cif58445af",
+              "text": "Approximate the gradient of a curve f(x) = x^n at a point P(c, f(c)) by considering the gradient of the secant through P and Q(c + h, f(c + h)) as the magnitude of h approaches zero, using graphing applications or a spreadsheet",
+              "sourceHtml": "<div><span>Approximate the gradient of a curve </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> at a point </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>c</mi><mo>,</mo><mi mathvariant=\"italic\">f</mi><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced></mrow></mfenced></math></span><span> by considering the gradient of the secant through </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>Q</mi><mfenced separators=\"|\"><mrow><mi>c</mi><mo>+</mo><mi>h</mi><mo>,</mo><mi mathvariant=\"italic\">f</mi><mfenced separators=\"|\"><mrow><mi>c</mi><mo>+</mo><mi>h</mi></mrow></mfenced></mrow></mfenced></math></span><span> as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/bbb23176-fffa-4a53-98d2-7dac65f64d93\" data-item-codename=\"glo_link__shared__magnitude\" data-item-id=\"bbb23176-fffa-4a53-98d2-7dac65f64d93\" data-item-systemname=\"GLO Link: SHARED: magnitude\" data-item-type=\"link_glossary\">magnitude</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math></span><span> approaches <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6cfd41c4-2461-433c-bcdb-8036c7b5343d\" data-item-codename=\"glo_link__mav__zero__of_a_function_\" data-item-id=\"6cfd41c4-2461-433c-bcdb-8036c7b5343d\" data-item-systemname=\"GLO Link: MAV: zero (of a function)\" data-item-type=\"link_glossary\">zero</a>, using graphing applications or a spreadsheet<br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8fd626a1",
+              "text": "Numerically estimate the value of the derivative at a point on the graph of a power of x, with and without the use of digital tools",
+              "sourceHtml": "<div><span>Numerically estimate the value of the derivative at a point on the graph of a power of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, with and without the use of digital tools</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "watch-the-secant-become-the",
+              "what-you-ll-master",
+              "building-the-table",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-three-chord-gradients",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "bfaae610853e1e55504c28dc9f7f62020ae926bded4dddd275e953f25c9e5e33"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "watch-the-secant-become-the",
+                "what-you-ll-master",
+                "building-the-table",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-three-chord-gradients",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "bfaae610853e1e55504c28dc9f7f62020ae926bded4dddd275e953f25c9e5e33"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c02",
+              "text": "Shrinking the interval improves an average speed towards the instantaneous speed."
+            },
+            {
+              "source": "math-a11-w08",
+              "text": "Evaluating f(c + h) by substitution."
+            },
+            {
+              "source": "math-a11-w29",
+              "text": "A corner in a graph such as |x| at 0."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c03"
+          ],
+          "startBoundary": "Recall that a shorter interval gives a better speed estimate (c02), then generalise the second point to Q(c + h, f(c + h)).",
+          "stopBoundary": "Approximate the gradient of f(x) = x^n at P(c, f(c)) by the secant through Q(c + h, f(c + h)) as h approaches zero, in a table (spreadsheet) and with a graphing application, using positive and negative h; numerically estimate the derivative at a point on a power of x with and without digital tools; note that a two-sided check can fail at a corner. The symbol f'(x) and its definition are c05; the algebraic limit is c06; the pattern nx^(n - 1) is c07.",
+          "nextHandoff": "math-a11-c05",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c05",
+          "playlistOrder": 36,
+          "mainLearnerQuestion": "What is the derivative, and how do we write it?",
+          "syllabusActionIds": [
+            "cie4815a8e",
+            "cicb34a73b",
+            "ci68ad7095",
+            "ci0ea72300",
+            "ci2f16a100"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cie4815a8e",
+              "text": "Define f'(x), for any function f(x) and any value x, to be the gradient of the tangent to the curve y = f(x) at the point P(x, f(x)) if the tangent exists and is not vertical",
+              "sourceHtml": "<div><span>Define </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span>, for any function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and any value </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, to be the gradient of the tangent to the curve </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> at the point </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>,</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> if the tangent exists and is not vertical</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "partial",
+              "siteGap": "The tangent-gradient definition is given, but the condition that the tangent must exist and not be vertical is not stated."
+            },
+            {
+              "id": "cicb34a73b",
+              "text": "Refer to f'(x) as the derivative of f(x) or the gradient, or derived, function of f(x)",
+              "sourceHtml": "<div><span>Refer to </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span><span> as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> or the gradient, or derived, function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci68ad7095",
+              "text": "Define differentiation as the process of finding the derivative of a function",
+              "sourceHtml": "<p>Define <a data-item-id=\"7a40deaa-1a5c-4df4-904b-197ec9a540af\" href=\"\">differentiation</a> as the process of finding the derivative of a function</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci0ea72300",
+              "text": "Use the notation dy/dx and y' for the derivative of y when y is a function of x",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>'</mo></math></span><span> for the derivative of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> is a function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci2f16a100",
+              "text": "Use the notation d/dx (f(x)) and f'(x) for the derivative of a function f(x)",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> for the derivative of a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "key-terms",
+              "the-derivative-as-the-gradient",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "0bd149c84e6fad8fd772dd1496c32d958b33d0ed116f7133834cb3e7043744e5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "key-terms",
+                "the-derivative-as-the-gradient",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "0bd149c84e6fad8fd772dd1496c32d958b33d0ed116f7133834cb3e7043744e5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c04",
+              "text": "Secant gradients settle on the gradient of the curve at a point as h shrinks; a corner gives two different one-sided values."
+            },
+            {
+              "source": "math-a11-w08",
+              "text": "Function notation f(x)."
+            },
+            {
+              "source": "math-a11-w10",
+              "text": "Vertical lines have no gradient."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c04"
+          ],
+          "startBoundary": "Recall that at each x the secants settle on one number (c04), then collect those numbers into a new function.",
+          "stopBoundary": "Define f'(x) as the gradient of the tangent to y = f(x) at P(x, f(x)), if the tangent exists and is not vertical; call f'(x) the derivative, gradient function or derived function; define differentiation as finding it; use the notations f'(x), d/dx(f(x)), dy/dx and y'. First principles algebra is c06; rules are c07.",
+          "nextHandoff": "math-a11-c06",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c06",
+          "playlistOrder": 37,
+          "mainLearnerQuestion": "How does first principles turn a secant into a derivative?",
+          "syllabusActionIds": [
+            "ci528c1909",
+            "ci608a8811",
+            "cie02570a8"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci528c1909",
+              "text": "Define the derivative of the function f(x) from first principles, as the limiting value of the gradient of the secant (f(x + h) - f(x))/h as h approaches zero, when this limiting value exists, and use the notation f'(x) = lim_(h → 0) (f(x + h) - f(x))/h",
+              "sourceHtml": "<div><span>Define the derivative of the function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> from first principles, as the limiting value of the gradient of the secant </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mi>h</mi></mrow></mfrac></math></span><span></span><span> </span><span>as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math></span><span> approaches zero, when this limiting value exists, and use the notation <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><munder><mrow><mi mathvariant=\"normal\">l</mi><mi mathvariant=\"normal\">i</mi><mi mathvariant=\"normal\">m</mi></mrow><mrow><mi>h</mi><mo>→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow></mfenced><mo>-</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow><mrow><mi>h</mi></mrow></mfrac></math></span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci608a8811",
+              "text": "Use first principles to find the derivative of quadratic functions",
+              "sourceHtml": "<div><span>Use first principles to find the derivative of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/819a09c0-5d7e-484b-9411-a14012e36270\" data-item-codename=\"glo_link__shared__quadratic_functions\" data-item-id=\"819a09c0-5d7e-484b-9411-a14012e36270\" data-item-systemname=\"GLO Link: SHARED: quadratic functions\" data-item-type=\"link_glossary\">quadratic functions</a><br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cie02570a8",
+              "text": "Find derivatives of constant and linear functions",
+              "sourceHtml": "<p>Find derivatives of constant and linear functions</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "key-terms",
+              "the-derivative-as-the-gradient",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "0bd149c84e6fad8fd772dd1496c32d958b33d0ed116f7133834cb3e7043744e5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "key-terms",
+                "the-derivative-as-the-gradient",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "0bd149c84e6fad8fd772dd1496c32d958b33d0ed116f7133834cb3e7043744e5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c05",
+              "text": "f'(x) as the gradient of the tangent; the notations f'(x) and dy/dx."
+            },
+            {
+              "source": "math-a11-c04",
+              "text": "The secant gradient (f(c + h) - f(c))/h and its settling value."
+            },
+            {
+              "source": "math-a11-w02",
+              "text": "Expanding brackets and factorising out a common factor before cancelling."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c05"
+          ],
+          "startBoundary": "Recall the secant gradient (f(x + h) - f(x))/h (c04) and the meaning of f'(x) (c05).",
+          "stopBoundary": "Define f'(x) = lim_(h -> 0) (f(x + h) - f(x))/h when the limit exists; use first principles to differentiate quadratics; find derivatives of constant and linear functions. The rules, including x^n for other powers, are c07.",
+          "nextHandoff": "math-a11-c07",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c07",
+          "playlistOrder": 38,
+          "mainLearnerQuestion": "Why does x^n differentiate to nx^(n-1), and how do sums and multiples follow?",
+          "syllabusActionIds": [
+            "cicccefba1",
+            "ci1d192d62",
+            "cif6a6cb7d"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cicccefba1",
+              "text": "Infer that nx^(n - 1) is the gradient of f(x) = x^n and verify the result using graphing applications",
+              "sourceHtml": "<div><span>Infer that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></span><span> is the gradient of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> and verify the result using graphing applications</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "partial",
+              "siteGap": "ID13 builds the secant table for x squared only. The pattern nx^(n-1) is stated as a rule in ID04 rather than inferred from several powers and verified with a graphing application."
+            },
+            {
+              "id": "ci1d192d62",
+              "text": "Use the formula d/dx (x^n) = nx^(n - 1) for all real values of n",
+              "sourceHtml": "<div><span>Use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi></mrow></msup><mo>)</mo><mo>=</mo><mi>n</mi><msup><mrow><mi>x</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></math></span><span> for all real values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cif6a6cb7d",
+              "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d/dx (f(x) + g(x)) = f'(x) + g'(x), and the derivative of a multiple of a function is the multiple of its derivative: d/dx (k ⋅ f(x)) = k ⋅ f'(x)",
+              "sourceHtml": "<div><span>Apply the fact that the derivative of a sum is the sum of the derivatives: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mo>=</mo><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>g</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math></span><span>, and the derivative of a multiple of a function is the multiple of its derivative: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>(</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>)</mo><mo>=</mo><mi>k</mi><mo>⋅</mo><mi>f</mi><mo>'</mo><mo>(</mo><mi>x</mi><mo>)</mo></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson04.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson04.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-three-differentiation-rules",
+              "what-you-will-master",
+              "how-differentiation-rules-work",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "c2c154f93574bd458ae02e34e419fe3471d614eb213dd7189c256ed6e7f2906a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson04.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson04.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-three-differentiation-rules",
+                "what-you-will-master",
+                "how-differentiation-rules-work",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "c2c154f93574bd458ae02e34e419fe3471d614eb213dd7189c256ed6e7f2906a"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson13.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "watch-the-secant-become-the",
+                "what-you-ll-master",
+                "building-the-table",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-three-chord-gradients",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "bfaae610853e1e55504c28dc9f7f62020ae926bded4dddd275e953f25c9e5e33"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c06",
+              "text": "First principles: x^2 gives 2x, a line gives its gradient, a constant gives 0."
+            },
+            {
+              "source": "math-a11-c04",
+              "text": "Numerical secant tables and a graphing application."
+            },
+            {
+              "source": "math-a11-w01",
+              "text": "Index laws for negative and fractional indices (sqrt x = x^(1/2), 1/x^2 = x^(-2))."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c06"
+          ],
+          "startBoundary": "Recall x^2 -> 2x and the secant tables (c04, c06), then tabulate gradients of x^3 and x^4 to find the pattern.",
+          "stopBoundary": "Infer that nx^(n - 1) is the gradient of x^n from x^1 to x^4 and verify it with a graphing application; use d/dx(x^n) = nx^(n - 1) for all real n after rewriting roots and reciprocals as powers; apply the sum rule and the constant multiple rule; evaluate a derivative at a point. Tangent equations are c08; the chain rule is c10.",
+          "nextHandoff": "math-a11-c08",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c08",
+          "playlistOrder": 39,
+          "mainLearnerQuestion": "How does the derivative give the tangent and normal at a point?",
+          "syllabusActionIds": [
+            "ci3d1a69e4"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci3d1a69e4",
+              "text": "Use the rules for differentiation to find equations of tangents and normals to a curve at points on the curve",
+              "sourceHtml": "<p>Use the rules for differentiation to find <a data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" href=\"\">equations</a> of tangents and <a data-item-id=\"b1954c59-df57-4732-bdd3-b95e50597207\" href=\"\">normals to a curve</a> at points on the curve</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "one-gradient-three-questions",
+              "what-you-ll-master",
+              "the-equation-of-a-tangent",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-two-gradients",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "e5fc501934a9611b5081c24b6c1462c65270d9681c6c819fd784369af8236e44"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "one-gradient-three-questions",
+                "what-you-ll-master",
+                "the-equation-of-a-tangent",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-two-gradients",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "e5fc501934a9611b5081c24b6c1462c65270d9681c6c819fd784369af8236e44"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "key-terms",
+                "the-derivative-as-the-gradient",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "0bd149c84e6fad8fd772dd1496c32d958b33d0ed116f7133834cb3e7043744e5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c07",
+              "text": "Differentiating polynomials and powers; f'(a) as the gradient at x = a."
+            },
+            {
+              "source": "math-a11-w10",
+              "text": "Point-gradient form y - y1 = m(x - x1)."
+            },
+            {
+              "source": "math-a11-w11",
+              "text": "Perpendicular gradients multiply to -1."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c07"
+          ],
+          "startBoundary": "Recall that f'(a) is the tangent's gradient (c05, c07) and the point-gradient form (w10).",
+          "stopBoundary": "Use the rules for differentiation to find equations of tangents and normals to a curve at points on it: the point from f, the gradient from f', the normal's gradient as the negative reciprocal, and a vertical normal when the tangent is horizontal. Points with a given gradient and angles are c09.",
+          "nextHandoff": "math-a11-c09",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c09",
+          "playlistOrder": 40,
+          "mainLearnerQuestion": "Where does a curve have a given gradient, and what angle does it make?",
+          "syllabusActionIds": [
+            "ci35f0bdbe",
+            "ci70bdc1be"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci35f0bdbe",
+              "text": "Find points on a curve where the tangent or normal has a given gradient",
+              "sourceHtml": "<p>Find points on a curve where the tangent or normal has a given gradient</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci70bdc1be",
+              "text": "Examine and use the relationship between the angle of inclination of a line or tangent to a curve, θ, with the positive x-axis, and the gradient, m, of that line or tangent, and establish that tan θ = m",
+              "sourceHtml": "<div><span>Examine and use the relationship between the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6e78ed95-c067-49a9-9777-d141ed4fe11a\" data-item-codename=\"glo_link__shared__angle_of_inclination\" data-item-id=\"6e78ed95-c067-49a9-9777-d141ed4fe11a\" data-item-systemname=\"GLO Link: SHARED: angle of inclination\" data-item-type=\"link_glossary\">angle of inclination</a> of a line or tangent to a curve, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>θ</mi><mo>,</mo></math></span><span> with the positive </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis, and the gradient, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math></span><span>, of that line or tangent, and establish that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>tan</mi></mrow><mo>⁡</mo><mrow><mi>θ</mi></mrow></mrow><mo>=</mo><mi>m</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "one-gradient-three-questions",
+              "what-you-ll-master",
+              "the-equation-of-a-tangent",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-two-gradients",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "e5fc501934a9611b5081c24b6c1462c65270d9681c6c819fd784369af8236e44"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson14.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "one-gradient-three-questions",
+                "what-you-ll-master",
+                "the-equation-of-a-tangent",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-two-gradients",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "e5fc501934a9611b5081c24b6c1462c65270d9681c6c819fd784369af8236e44"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c08",
+              "text": "The gradient of the tangent at x = a is f'(a)."
+            },
+            {
+              "source": "math-a11-w04",
+              "text": "Solving linear and quadratic equations."
+            },
+            {
+              "source": "Year 10",
+              "text": "tan θ = opposite/adjacent for acute angles and the calculator's inverse tan."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c08"
+          ],
+          "startBoundary": "Recall that f'(a) gives the tangent's gradient (c08); now run it backwards from a gradient to the point.",
+          "stopBoundary": "Find points on a curve where the tangent or normal has a given gradient (solve f'(x) = m, then use f for the y-value); establish tan θ = m for the angle of inclination θ with the positive x-axis (0° ≤ θ < 180°), and use it both ways. Equations of those tangents are optional; sign of f' is c14.",
+          "nextHandoff": "math-a11-c10",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c09.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c10",
+          "playlistOrder": 41,
+          "mainLearnerQuestion": "How does the chain rule handle a function inside a function?",
+          "syllabusActionIds": [
+            "ci00fa8fac"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci00fa8fac",
+              "text": "Apply the chain rule: if y is a differentiable function of u, and u is a differentiable function of x, then dy/dx = dy/du × du/dx or if h(x) = f(g(x)) for differentiable functions f(x) and g(x) then h'(x) = f'(g(x))g'(x)",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/115357c0-ab6d-427f-a909-dd8151b75985\" data-item-codename=\"glo_link__shared__chain_rule\" data-item-id=\"115357c0-ab6d-427f-a909-dd8151b75985\" data-item-systemname=\"GLO Link: SHARED: chain rule\" data-item-type=\"link_glossary\">chain rule</a>: if</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> y</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span>, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> is a differentiable function of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mi> </mi><mo>=</mo><mi> </mi><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">du</mi></mrow></mfrac><mo>×</mo><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced></math></span><span> for differentiable functions </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>g</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></mfenced><mi>g</mi></mrow><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></mrow></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+            "sectionIds": [
+              "orient",
+              "two-moves-decompose-then-multiply",
+              "what-you-ll-master",
+              "the-chain-rule-the-idea",
+              "model",
+              "apply",
+              "drill",
+              "concept",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-chain-1",
+              "we-chain-2",
+              "we-chain-3"
+            ],
+            "sha256": "b751ff6afb1735ea7237a5c070ee090b011f6f0088ba8b2c990d6ee2480baf66"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+              "sectionIds": [
+                "orient",
+                "two-moves-decompose-then-multiply",
+                "what-you-ll-master",
+                "the-chain-rule-the-idea",
+                "model",
+                "apply",
+                "drill",
+                "concept",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-chain-1",
+                "we-chain-2",
+                "we-chain-3"
+              ],
+              "sha256": "b751ff6afb1735ea7237a5c070ee090b011f6f0088ba8b2c990d6ee2480baf66"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c07",
+              "text": "The power rule for all real n and the constant multiple rule."
+            },
+            {
+              "source": "math-a11-w27",
+              "text": "Composite functions f(g(x)): the inner output becomes the outer input."
+            },
+            {
+              "source": "math-a11-c05",
+              "text": "The notations dy/dx and f'(x)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c09"
+          ],
+          "startBoundary": "Recall composite functions f(g(x)) (w27), then try (3x + 2)^5: expanding works but is slow, and the power rule alone gives the wrong answer.",
+          "stopBoundary": "Apply the chain rule in both forms: dy/dx = dy/du × du/dx with u the inner function, and h'(x) = f'(g(x))g'(x); back-substitute so the answer is in x; evaluate a gradient at a point; include roots and reciprocals of an inner function. Products and quotients are c11 and c12; the chain rule on e^(ax + b) is Year 12 d01.",
+          "nextHandoff": "math-a11-c11",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c10.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c11",
+          "playlistOrder": 42,
+          "mainLearnerQuestion": "How do both factors contribute to the derivative of a product?",
+          "syllabusActionIds": [
+            "ci72e90f3a"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci72e90f3a",
+              "text": "Apply the product rule: if y = uv, where u and v are both differentiable functions of x, then dy/dx = u dv/dx + v du/dx or if h(x) = f(x)g(x) for differentiable functions f(x) and g(x) then h'(x) = f(x)g'(x) + f'(x)g(x)",
+              "sourceHtml": "<p><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/34ebb454-26c9-49c1-bd02-739c32d6400a\" data-item-codename=\"glo_link__shared__product_rule\" data-item-id=\"34ebb454-26c9-49c1-bd02-739c32d6400a\" data-item-systemname=\"GLO Link: SHARED: product rule\" data-item-type=\"link_glossary\">product rule</a>: if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">uv</mi></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math></span><span> are both <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/18b38972-1a2a-4054-b0a3-eb923cd84043\" data-item-codename=\"glo_link__mav__differentiable\" data-item-id=\"18b38972-1a2a-4054-b0a3-eb923cd84043\" data-item-systemname=\"GLO Link: MAV: differentiable\" data-item-type=\"link_glossary\">differentiable</a> functions of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>=</mo><mi>u</mi><mfrac><mrow><mi mathvariant=\"italic\">dv</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>+</mo><mi>v</mi><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></math></span><span> or if <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span></span><span> for differentiable functions <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> then <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>+</mo><mi>f</mi><mi>'</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span> </span></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "the-product-and-quotient-rules",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "the-product-and-quotient-rules",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c07",
+              "text": "Sum, constant multiple and power rules."
+            },
+            {
+              "source": "math-a11-c10",
+              "text": "The chain rule for a power of a bracket."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c10"
+          ],
+          "startBoundary": "Ask whether the derivative of a product is the product of the derivatives, and test it on (x + 1)(x^2 - 2) by expanding.",
+          "stopBoundary": "Apply the product rule in both forms, dy/dx = u dv/dx + v du/dx and h'(x) = f(x)g'(x) + f'(x)g(x), with polynomial and power factors (one factor may need the chain rule); explain why both factors contribute. No e^x yet (e02 follows this strand). Quotients are c12; mixed rule choice is c13.",
+          "nextHandoff": "math-a11-c12",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c11.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c12",
+          "playlistOrder": 43,
+          "mainLearnerQuestion": "How do we differentiate a quotient?",
+          "syllabusActionIds": [
+            "cifb023b4e"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cifb023b4e",
+              "text": "Apply the quotient rule: if y = u/v, where u and v are both differentiable functions of x, then dy/dx = (v du/dx - u dv/dx)/(v^2) or if h(x) = (f(x))/(g(x)) then h'(x) = (g(x)f'(x) - f(x)g'(x))/([g(x)]^2)",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/048c348e-40a4-436f-bb30-3c83f0f2f72b\" data-item-codename=\"glo_link__shared__quotient_rule\" data-item-id=\"048c348e-40a4-436f-bb30-3c83f0f2f72b\" data-item-systemname=\"GLO Link: Shared: quotient rule\" data-item-type=\"link_glossary\">quotient rule</a>: if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>u</mi></mrow><mrow><mi>v</mi></mrow></mfrac></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>u</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>v</mi></math></span><span> are both differentiable functions of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>,</mo></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dy</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mfrac><mrow><mi mathvariant=\"italic\">du</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mo>-</mo><mi>u</mi><mfrac><mrow><mi mathvariant=\"italic\">dv</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac></mrow><mrow><msup><mrow><mi>v</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></mfrac></math></span><span> or if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathcolor=\"000000\">h</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">=</mo><mfrac><mrow><mi mathcolor=\"000000\">f</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow></mfrac></math></span><span> then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathcolor=\"000000\">h</mi><mrow><mo mathcolor=\"000000\">'</mo><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">=</mo><mfrac><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><msup><mrow><mi mathcolor=\"000000\">f</mi></mrow><mrow><mo mathcolor=\"000000\">'</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">-</mo><mi mathcolor=\"000000\">f</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><msup><mrow><mi mathcolor=\"000000\">g</mi></mrow><mrow><mo mathcolor=\"000000\">'</mo></mrow></msup><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced></mrow><mrow><mo mathcolor=\"000000\">[</mo><msup><mrow><mi mathcolor=\"000000\">g</mi><mfenced separators=\"|\"><mrow><mi mathcolor=\"000000\">x</mi></mrow></mfenced><mo mathcolor=\"000000\">]</mo></mrow><mrow><mn mathcolor=\"000000\">2</mn></mrow></msup></mrow></mfrac></mrow></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "the-product-and-quotient-rules",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2"
+            ],
+            "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "the-product-and-quotient-rules",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c11",
+              "text": "The product rule."
+            },
+            {
+              "source": "math-a11-c10",
+              "text": "The chain rule, including (g(x))^(-1)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c11"
+          ],
+          "startBoundary": "Recall the product rule (c11); a quotient u/v is the product u × v^(-1).",
+          "stopBoundary": "Apply the quotient rule in both forms, dy/dx = (v du/dx - u dv/dx)/v^2 and h'(x) = (g(x)f'(x) - f(x)g'(x))/[g(x)]^2, with polynomial numerators and denominators; simplify the numerator; find where the gradient is zero. No e^x yet. Choosing among rules is c13.",
+          "nextHandoff": "math-a11-c13",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c12.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c13",
+          "playlistOrder": 44,
+          "mainLearnerQuestion": "Which differentiation rule, or combination, does a function need?",
+          "syllabusActionIds": [
+            "cie3d91a6e"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cie3d91a6e",
+              "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function",
+              "sourceHtml": "<p>Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "the-product-and-quotient-rules",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson06.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "the-product-and-quotient-rules",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "cdd52dc796a9cfffc84e93d38c644c314106ba437b9c01ad4a59e7ae009112b1"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson05.sa.html",
+              "sectionIds": [
+                "orient",
+                "two-moves-decompose-then-multiply",
+                "what-you-ll-master",
+                "the-chain-rule-the-idea",
+                "model",
+                "apply",
+                "drill",
+                "concept",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "b751ff6afb1735ea7237a5c070ee090b011f6f0088ba8b2c990d6ee2480baf66"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c10",
+              "text": "The chain rule."
+            },
+            {
+              "source": "math-a11-c11",
+              "text": "The product rule."
+            },
+            {
+              "source": "math-a11-c12",
+              "text": "The quotient rule."
+            },
+            {
+              "source": "math-a11-c07",
+              "text": "Rewriting in index form and expanding before differentiating."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c12"
+          ],
+          "startBoundary": "Recall the three rules (c10 to c12) and ask how to tell which one a function needs.",
+          "stopBoundary": "Identify the outer structure of a function (sum, product, quotient, composite, or something to simplify first) and apply the product, quotient or chain rule, or a combination, to differentiate it. Exponential, log and trig derivatives are Year 12.",
+          "nextHandoff": "math-a11-c14",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c13.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c14",
+          "playlistOrder": 45,
+          "mainLearnerQuestion": "How does the sign of f'(x) show increasing, decreasing and stationary?",
+          "syllabusActionIds": [
+            "cie435d18f",
+            "cief55e727"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cie435d18f",
+              "text": "Interpret f(x) as increasing at x = c when f'(c) > 0 and decreasing at x = c when f'(c) < 0",
+              "sourceHtml": "<div><span>Interpret </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> as increasing at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>&gt;</mo><mn>0</mn></mrow></math></span><span> and decreasing at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>&lt;</mo><mn>0</mn></mrow></math></span></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cief55e727",
+              "text": "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x-axis, and recognise that f(x) is stationary at x = c when f'(c) = 0",
+              "sourceHtml": "<div><span>Describe the behaviour of a function at a point as stationary when the tangent at the point is <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-codename=\"glo_link__shared__parallel\" data-item-id=\"7836f68e-9321-45c3-82ba-66406bf2ee0a\" data-item-systemname=\"GLO Link: SHARED: parallel\" data-item-type=\"link_glossary\">parallel</a> to the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis, and recognise that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> is stationary at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span><span> when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mfenced separators=\"|\"><mrow><mi>c</mi></mrow></mfenced><mo>=</mo><mn>0</mn></mrow></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "increasing-and-decreasing-functions",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "917bb60210e0b1e8cdff4d1082b89ebbbd32ae7c1030c4f1e66933ca569d721e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "increasing-and-decreasing-functions",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "917bb60210e0b1e8cdff4d1082b89ebbbd32ae7c1030c4f1e66933ca569d721e"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "finding-and-classifying-stationary-points",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "121950491455e5c1c83231028697dd551c4a6121377471fb97b8858646a39cac"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c07",
+              "text": "Differentiating polynomials."
+            },
+            {
+              "source": "math-a11-c05",
+              "text": "f'(c) as the tangent gradient at x = c."
+            },
+            {
+              "source": "math-a11-w18",
+              "text": "Reading where a quadratic is positive or negative from its graph."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c13"
+          ],
+          "startBoundary": "Recall that f'(c) is the tangent's gradient at x = c (c05) and how to find where a quadratic is positive (w18).",
+          "stopBoundary": "Interpret f as increasing at x = c when f'(c) > 0 and decreasing when f'(c) < 0; describe f as stationary at x = c when the tangent is parallel to the x-axis, that is f'(c) = 0; find the x-values where a polynomial is increasing or decreasing by solving f'(x) > 0 or f'(x) < 0. Classifying stationary points of cubics is c16.",
+          "nextHandoff": "math-a11-c15",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c14.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c15",
+          "playlistOrder": 46,
+          "mainLearnerQuestion": "How do we sketch y = f'(x) from the graph of y = f(x)?",
+          "syllabusActionIds": [
+            "ci63650902"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci63650902",
+              "text": "Graph y = f'(x) for a given graph of a function y = f(x)",
+              "sourceHtml": "<div><span>Graph </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>f</mi></mrow><mrow><mo>'</mo></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> for a given graph of a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "read-the-steepness-plot-the",
+              "what-you-ll-master",
+              "from-shape-to-sign",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-sketch-of-y",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "2f6baee40eeee9ac7f227284fd382c332e6412b6ec7b7514c6e792fd8cd5c75b"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "read-the-steepness-plot-the",
+                "what-you-ll-master",
+                "from-shape-to-sign",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-sketch-of-y",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "2f6baee40eeee9ac7f227284fd382c332e6412b6ec7b7514c6e792fd8cd5c75b"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c14",
+              "text": "f' > 0 where f rises, f' < 0 where f falls, f' = 0 at stationary points."
+            },
+            {
+              "source": "math-a11-c05",
+              "text": "f' is itself a function with its own graph."
+            },
+            {
+              "source": "math-a11-w20",
+              "text": "Shapes of quadratic and cubic graphs."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c14"
+          ],
+          "startBoundary": "Recall the sign rules (c14); now draw f' as a graph instead of a sign strip.",
+          "stopBoundary": "Graph y = f'(x) from a given graph of y = f(x): zeros of f' under stationary points, sign from rising or falling, size from steepness (largest where f is steepest), the degree dropping by one for polynomials, and a break in f' at a corner of f. Reading physical meaning from both graphs is c17.",
+          "nextHandoff": "math-a11-c16",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c15.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c16",
+          "playlistOrder": 47,
+          "mainLearnerQuestion": "How do we find and justify the stationary points of a cubic?",
+          "syllabusActionIds": [
+            "ci6341be75"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci6341be75",
+              "text": "Identify stationary points on the graph of a cubic function, and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions",
+              "sourceHtml": "<div><span>Identify <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-codename=\"glo_link__mav__stationary_point\" data-item-id=\"415c8b90-520c-4c25-87b2-1aa8cba5f8bf\" data-item-systemname=\"GLO Link: MAV: stationary point\" data-item-type=\"link_glossary\">stationary points</a> on the graph of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-codename=\"glo_link__shared__cubic_function\" data-item-id=\"15daf7f9-ebc8-4e1a-8cf0-7c2f22bd3e73\" data-item-systemname=\"GLO Link: SHARED: cubic function\" data-item-type=\"link_glossary\">cubic function</a>, and the values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-will-master",
+              "finding-and-classifying-stationary-points",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "121950491455e5c1c83231028697dd551c4a6121377471fb97b8858646a39cac"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson08.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "finding-and-classifying-stationary-points",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "121950491455e5c1c83231028697dd551c4a6121377471fb97b8858646a39cac"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson10.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-will-master",
+                "increasing-and-decreasing-functions",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "917bb60210e0b1e8cdff4d1082b89ebbbd32ae7c1030c4f1e66933ca569d721e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c14",
+              "text": "Stationary when f'(c) = 0; increasing and decreasing from the sign of f'."
+            },
+            {
+              "source": "math-a11-c07",
+              "text": "Differentiating cubics."
+            },
+            {
+              "source": "math-a11-w20",
+              "text": "Graphs of cubics."
+            },
+            {
+              "source": "math-a11-w04",
+              "text": "Solving quadratic equations by factorising."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c15"
+          ],
+          "startBoundary": "Recall w20's cubic sketch, where the turning points could only be guessed, and the sign rules (c14).",
+          "stopBoundary": "For a cubic, find f'(x), solve f'(x) = 0 for the stationary points and their y-values, find where the cubic is increasing or decreasing, and justify each stationary point as a local maximum, local minimum or neither from the sign of f' on each side (a table of slopes). No second derivative (Year 12); no optimisation (Year 12).",
+          "nextHandoff": "math-a11-c17",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c16.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c17",
+          "playlistOrder": 48,
+          "mainLearnerQuestion": "What does f'(c) tell us about a real situation?",
+          "syllabusActionIds": [
+            "ci9d118719",
+            "ci8a2722e2"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci9d118719",
+              "text": "Interpret f'(c) as the instantaneous rate of change of the function f(x) at x = c",
+              "sourceHtml": "<div><span>Interpret </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mrow><mo>'</mo><mo>(</mo><mi>c</mi><mo>)</mo></mrow></math></span><span> as the instantaneous rate of change of the function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mi>c</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8a2722e2",
+              "text": "Use graphs of functions and their derivatives, without the use of algebraic techniques, to describe and interpret physical phenomena",
+              "sourceHtml": "<p>Use graphs of functions and their derivatives, without the use of algebraic techniques, to describe and interpret physical phenomena</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "partial",
+              "siteGap": "One practical graph (a draining tank) is interpreted. Describing physical phenomena from graphs of a function and its derivative together, without algebra, is not developed."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "steepness-is-the-rate",
+              "what-you-ll-master",
+              "average-rate-of-change-the",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-steep-flat-steep",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-3"
+            ],
+            "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson12.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "steepness-is-the-rate",
+                "what-you-ll-master",
+                "average-rate-of-change-the",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-steep-flat-steep",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "c1ad49f14f260138bda23457b5f2f0d83adf4dd8f26653448bceb8069880e1e3"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson15.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "read-the-steepness-plot-the",
+                "what-you-ll-master",
+                "from-shape-to-sign",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-sketch-of-y",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "2f6baee40eeee9ac7f227284fd382c332e6412b6ec7b7514c6e792fd8cd5c75b"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c03",
+              "text": "Estimating a rate from a tangent on a practical graph, with units."
+            },
+            {
+              "source": "math-a11-c15",
+              "text": "Sketching f' from f."
+            },
+            {
+              "source": "math-a11-c07",
+              "text": "Differentiating polynomials."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c16"
+          ],
+          "startBoundary": "Recall a tangent read off a practical graph (c03) and the paired f and f' graphs (c15).",
+          "stopBoundary": "Interpret f'(c) as the instantaneous rate of change of f at x = c, with units and sign in context, from a formula; use graphs of a function and its derivative together, without algebra, to describe a physical situation (when it is greatest, when it changes fastest, when it is steady). Motion with displacement and velocity is c18.",
+          "nextHandoff": "math-a11-c18",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c17.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-c18",
+          "playlistOrder": 49,
+          "mainLearnerQuestion": "How do displacement and velocity differ from distance and speed?",
+          "syllabusActionIds": [
+            "ci05229304",
+            "ci8a1ba332",
+            "ci1be28612"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci05229304",
+              "text": "Define and distinguish between displacement and distance and between velocity and speed",
+              "sourceHtml": "<p>Define and distinguish between <a data-item-id=\"d6776009-507b-420d-9a06-08a85cbcb791\" href=\"\">displacement</a> and distance and between <a data-item-id=\"a69a899f-dbed-40bc-822b-c65ab4ed5790\" href=\"\">velocity</a> and speed</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8a1ba332",
+              "text": "Use the notation dx/dt or ẋ to represent the velocity of a particle with displacement x from a point as a function of time t",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi mathvariant=\"italic\">dx</mi></mrow><mrow><mi mathvariant=\"italic\">dt</mi></mrow></mfrac></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover accent=\"true\"><mrow><mi>x</mi></mrow><mo>̇</mo></mover></math></span><span> to represent the velocity of a particle with displacement </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> from a point as a function of time </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>t</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci1be28612",
+              "text": "Solve problems by determining the velocity of a particle moving in a straight line, given its displacement from a point as a function of time",
+              "sourceHtml": "<p>Solve problems by determining the velocity of a particle moving in a straight line, given its displacement from a point as a function of time</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson16.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson16.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "sign-is-the-whole-difference",
+              "what-you-ll-master",
+              "displacement-against-distance",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-particle-that-went",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "0d028aec22c3977fb4e8fc6e79fa66670de22edf2cb712a874c1039fecea9c5a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/introduction-to-differentiation/lesson16.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/introduction-to-differentiation/lesson16.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "sign-is-the-whole-difference",
+                "what-you-ll-master",
+                "displacement-against-distance",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-particle-that-went",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "0d028aec22c3977fb4e8fc6e79fa66670de22edf2cb712a874c1039fecea9c5a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-c17",
+              "text": "f'(c) as an instantaneous rate with units."
+            },
+            {
+              "source": "math-a11-c02",
+              "text": "Speed as a rate; average against instantaneous."
+            },
+            {
+              "source": "math-a11-w30",
+              "text": "Absolute value as a distance (speed = |v|)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c17"
+          ],
+          "startBoundary": "Recall speed as a rate of change of distance (c01, c02), then put a sign on position.",
+          "stopBoundary": "Define and distinguish displacement and distance, and velocity and speed; use the notations dx/dt and ẋ for velocity; solve problems finding the velocity of a particle moving in a straight line from its displacement function, including when it is at rest, its direction, its speed, and the distance travelled when it turns around (stage by stage). Acceleration and integration are Year 12.",
+          "nextHandoff": "math-a11-e01",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-c18.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e01",
+          "playlistOrder": 50,
+          "mainLearnerQuestion": "How do the graphs of y = k a^x and y = k a^(-x) behave?",
+          "syllabusActionIds": [
+            "ci98f43d14",
+            "ci69738291"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci98f43d14",
+              "text": "Graph the exponential functions y = k(a^x) and y = k(a^(-x)) for constants a and k where a > 0, a ≠ 1 and k ≠ 0, and identify its asymptote, y-intercept, domain and range",
+              "sourceHtml": "<div><span>Graph the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8c7e319c-9b00-48fb-9cee-8efe079dec2a\" data-item-codename=\"glo_link__mav__exponential_function\" data-item-id=\"8c7e319c-9b00-48fb-9cee-8efe079dec2a\" data-item-systemname=\"GLO Link: MAV: exponential function\" data-item-type=\"link_glossary\">exponential functions</a></span> <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></mfenced><mi></mi></math></span> <span>for <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-codename=\"glo_link__shared__constant\" data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-systemname=\"GLO Link: SHARED: constant\" data-item-type=\"link_glossary\">constants</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span>, <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi></mi></math></span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">a</mi><mo>≠</mo><mn>1</mn><mi></mi></math></span> <span>and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>≠</mo><mn>0</mn></math></span><span>, and identify its <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-codename=\"glo_link__ma__asymptote\" data-item-id=\"ffa91227-ed83-453d-9f03-b87a4bc32b8d\" data-item-systemname=\"GLO Link: MA: asymptote\" data-item-type=\"link_glossary\">asymptote</a>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-<a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-codename=\"glo_link__shared__intercept\" data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-systemname=\"GLO Link: SHARED: intercept\" data-item-type=\"link_glossary\">intercept</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-codename=\"glo_link__shared__domain\" data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-systemname=\"GLO Link: SHARED: domain\" data-item-type=\"link_glossary\">domain</a> and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-codename=\"glo_link__shared__range__function_\" data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-systemname=\"GLO Link: SHARED: range (function)\" data-item-type=\"link_glossary\">range</a><br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci69738291",
+              "text": "Describe the behaviour of y = k(a^x) and y = k(a^(-x)) as x → ∞ and x → -∞",
+              "sourceHtml": "<div><span>Describe the behaviour of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></mfenced></math></span><span> as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>→</mo><mi mathvariant=\"normal\">∞</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>→</mo><mo>-</mo><mi mathvariant=\"normal\">∞</mi></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson01.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "what-is-an-exponential-function",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "06a097c97d0d7fd378a3a4b8ae1b71fe4a94584769cdc9a086a7a7141fcfd377"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-an-exponential-function",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "06a097c97d0d7fd378a3a4b8ae1b71fe4a94584769cdc9a086a7a7141fcfd377"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson02.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "key-features-and-transformations",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "935a7553cf5fdf177d348fa9f1d856ea28c54976a5a6e2fe32c01fe2720dbd8e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w01",
+              "text": "Index laws, including a^0 = 1 and a^(-n) = 1/a^n."
+            },
+            {
+              "source": "math-a11-w09",
+              "text": "Domain and range."
+            },
+            {
+              "source": "math-a11-w21",
+              "text": "Asymptotes, as on y = k/x."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-c18"
+          ],
+          "startBoundary": "Recall a^0 = 1 and a^(-n) = 1/a^n (w01), then tabulate 2^x for x = -2 to 3.",
+          "stopBoundary": "Graph y = k(a^x) and y = k(a^(-x)) for a > 0, a ≠ 1, k ≠ 0; identify the asymptote y = 0, the y-intercept (0, k), the domain (all real x) and range (y > 0 for k > 0, y < 0 for k < 0); describe the behaviour as x -> ∞ and x -> -∞; find k and a from two points. Translations such as a^(x - h) + c are graph transformations (g strand); e and gradients are e02.",
+          "nextHandoff": "math-a11-e02",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e02",
+          "playlistOrder": 51,
+          "mainLearnerQuestion": "What makes e the special base for exponentials?",
+          "syllabusActionIds": [
+            "ci93d02049",
+            "ci7e417be9",
+            "ciac4383bd"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci93d02049",
+              "text": "Examine the gradient of the tangent to the curve y = a^x at its y-intercept for varying values of a, and verify using graphing applications that there is a unique number e ≈ 2.71828182845..., such that the gradient of the tangent to y = e^x at x = 0 is 1, and call this number e Euler’s number",
+              "sourceHtml": "<div><span>Examine the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-codename=\"glo_link__shared__gradient\" data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-systemname=\"GLO Link: SHARED: gradient\" data-item-type=\"link_glossary\">gradient</a> of the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/b0380cb8-0ae4-4cab-8dfa-dc78d105351c\" data-item-codename=\"glo_link__shared__tangent\" data-item-id=\"b0380cb8-0ae4-4cab-8dfa-dc78d105351c\" data-item-systemname=\"GLO Link: SHARED: tangent\" data-item-type=\"link_glossary\">tangent</a> to the curve </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> at its </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept for varying values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, and verify using graphing applications that there is a unique number </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n<mi>e</mi>\n<mo>≈</mo>\n<mn>2.71828182845</mn>\n</math></span>...<span>, such that the gradient of the tangent to </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mn>0</mn></math></span><span> is 1, and call this number </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math></span><span> <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/1ece60b6-cb52-4b73-ac37-3ea7015f5bcc\" data-item-codename=\"glo_link__mav__euler_s_number\" data-item-id=\"1ece60b6-cb52-4b73-ac37-3ea7015f5bcc\" data-item-systemname=\"GLO Link: MAV: Euler's number\" data-item-type=\"link_glossary\">Euler’s number</a></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7e417be9",
+              "text": "Examine the gradient function of y = a^x with graphing applications and identify that the gradient function is d/dx (a^x) = ka^x, for some constant k depending only on a",
+              "sourceHtml": "<div><span>Examine the gradient <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-codename=\"glo_link__shared__function\" data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-systemname=\"GLO Link: SHARED (MA): function\" data-item-type=\"link_glossary\">function</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> with graphing applications and identify </span><span></span><span>that the gradient function is </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><mi>k</mi><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, for some constant </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span> depending only on </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "missing",
+              "siteGap": "No lesson shows that the gradient function of a^x is a constant multiple k a^x."
+            },
+            {
+              "id": "ciac4383bd",
+              "text": "Conclude that Euler’s number, e, is a unique number such that d/dx (e^x) = e^x, that is, e^x is its own derivative",
+              "sourceHtml": "<div><span>Conclude that Euler’s number, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>e</mi></math></span><span>, is a unique number such that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>d</mi></mrow><mrow><mi mathvariant=\"italic\">dx</mi></mrow></mfrac><mfenced separators=\"|\"><mrow><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mfenced><mo>=</mo><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span>, that is, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>e</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> is its own <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-codename=\"glo_link__shared__derivative\" data-item-id=\"ec10a389-1247-4726-9539-ac535c25b7bc\" data-item-systemname=\"GLO Link: SHARED: derivative\" data-item-type=\"link_glossary\">derivative</a></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "what-is-e",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "3205d5637f9643d0353d79d6efff112e7578bd304963e933fa1d81c855bd0f19"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-e",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "3205d5637f9643d0353d79d6efff112e7578bd304963e933fa1d81c855bd0f19"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e01",
+              "text": "Graphs of a^x: all pass through (0, 1)."
+            },
+            {
+              "source": "math-a11-c04",
+              "text": "Estimating a gradient at a point with secants or a graphing application."
+            },
+            {
+              "source": "math-a11-c05",
+              "text": "The gradient function f'(x)."
+            },
+            {
+              "source": "math-a11-c07",
+              "text": "The constant multiple rule."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e01"
+          ],
+          "startBoundary": "Recall that every y = a^x passes through (0, 1) (e01) and how a graphing application estimates a tangent's gradient (c04).",
+          "stopBoundary": "Examine the gradient of y = a^x at its y-intercept as a varies, and verify with a graphing application that a unique number e ≈ 2.71828 gives gradient 1 there (Euler's number); examine the gradient function of a^x and identify that it is k a^x with k depending only on a; conclude that d/dx(e^x) = e^x. Do not name k = ln a (Year 12 d02); no continuous compounding (not Year 11); no chain rule on e^(f(x)) (Year 12 d01).",
+          "nextHandoff": "math-a11-e03",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e03",
+          "playlistOrder": 52,
+          "mainLearnerQuestion": "What is a logarithm, and how does it undo an exponential?",
+          "syllabusActionIds": [
+            "ci604946ac",
+            "ci5994ec54",
+            "ci7cd97f8c",
+            "cic84a1659"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci604946ac",
+              "text": "Define the logarithm of a number y, where y > 0, to any positive base a as the index to which a is raised to give y",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/51a61ee7-855a-4875-a637-6b3424e7cb8f\" data-item-codename=\"glo_link__shared__logarithm\" data-item-id=\"51a61ee7-855a-4875-a637-6b3424e7cb8f\" data-item-systemname=\"GLO Link: SHARED: logarithm\" data-item-type=\"link_glossary\">logarithm</a> of a number </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>&gt;</mo><mn>0</mn></math></span><span>, to any positive base </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">a</mi></math></span> <span>as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/fbae9ef6-5ae3-45f0-b229-6a27797fae5d\" data-item-codename=\"glo_link__shared__index\" data-item-id=\"fbae9ef6-5ae3-45f0-b229-6a27797fae5d\" data-item-systemname=\"GLO Link: SHARED: index\" data-item-type=\"link_glossary\">index</a> to which </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> is raised to give </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci5994ec54",
+              "text": "Use the notation log_a y for the logarithm of y to the base a",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>y</mi></mrow></mrow></math></span><span> for the logarithm of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> to the base </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7cd97f8c",
+              "text": "Define the natural logarithm ln a = log_e a",
+              "sourceHtml": "<p>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-codename=\"glo_link__mav__natural_logarithm\" data-item-id=\"a4b6af41-fd2f-44fa-93a0-c22999ae697e\" data-item-systemname=\"GLO Link: MAV: natural logarithm\" data-item-type=\"link_glossary\">natural logarithm</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi mathvariant=\"normal\">ln</mi></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>e</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></math></span></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cic84a1659",
+              "text": "Recognise and use the logarithmic properties: log_a a^x = x for all real x, a^(log_a x) = x where x > 0",
+              "sourceHtml": "<div><span>Recognise and use the logarithmic properties: </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></mrow></mrow><mo>=</mo><mi>x</mi></math></span><span> for all real </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>a</mi></mrow><mrow><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow></msup><mo>=</mo><mi>x</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>&gt;</mo><mn>0</mn></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "what-is-a-logarithm",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "c5f53d12d728a75a0a8e8187d0188e05e56a1a150d2260bda7bedcde19338239"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-a-logarithm",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "c5f53d12d728a75a0a8e8187d0188e05e56a1a150d2260bda7bedcde19338239"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e01",
+              "text": "Values of a^x for integer and negative x."
+            },
+            {
+              "source": "math-a11-e02",
+              "text": "Euler's number e."
+            },
+            {
+              "source": "math-a11-w01",
+              "text": "Index laws."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e02"
+          ],
+          "startBoundary": "Recall a table of 2^x (e01), then run it backwards: which power of 2 gives 8? gives 100?",
+          "stopBoundary": "Define the logarithm of y > 0 to base a > 0 (a ≠ 1) as the index to which a is raised to give y; use the notation log_a y; define ln a = log_e a; evaluate logs by converting to index form; use log_a a^x = x for all real x and a^(log_a x) = x for x > 0. Solving a^x = b is e04; the laws are e05; graphs are e08.",
+          "nextHandoff": "math-a11-e04",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e04",
+          "playlistOrder": 53,
+          "mainLearnerQuestion": "How do logarithms solve a^x = b?",
+          "syllabusActionIds": [
+            "ci740d04cc",
+            "ci03c5d345"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci740d04cc",
+              "text": "Explain that y = a^x is equivalent to x = log_a y for a > 0 and a ≠ 1, and use the equivalence to solve equations of the form a^x = b, for a > 0",
+              "sourceHtml": "<div><span>Explain that </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> is <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ea23e207-f381-4891-bd05-7f9ffba786b3\" data-item-codename=\"glo_link__shared__equivalent\" data-item-id=\"ea23e207-f381-4891-bd05-7f9ffba786b3\" data-item-systemname=\"GLO Link: SHARED: equivalent\" data-item-type=\"link_glossary\">equivalent</a> to </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>y</mi></mrow></mrow></math></span><span> for </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn><mi> </mi></math></span><span>and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>≠</mo><mn>1</mn></math></span><span>, and use the equivalence to solve <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-codename=\"glo_link__shared__equation\" data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-systemname=\"GLO Link: SHARED: equation\" data-item-type=\"link_glossary\">equations</a> of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup><mo>=</mo><mi>b</mi></math></span><span>, for </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci03c5d345",
+              "text": "Use digital tools to determine rational and irrational values of exponential and logarithmic expressions",
+              "sourceHtml": "<p>Use digital tools to determine <a data-item-id=\"3ee3bd86-a244-4c99-a204-ee77040c9cfb\" href=\"\">rational</a> and <a data-item-id=\"934ab3d1-bf6f-4b0e-a98c-93a0416738de\" href=\"\">irrational</a> values of exponential and logarithmic <a data-item-id=\"097d642d-58b0-4c64-bc14-b017344d8dec\" href=\"\">expressions</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "partial",
+              "siteGap": "Calculator use appears (e^x key, ln and log keys). Using digital tools to tell rational from irrational values is not addressed."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "change-of-base-and-solving",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "change-of-base-and-solving",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-e",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "3205d5637f9643d0353d79d6efff112e7578bd304963e933fa1d81c855bd0f19"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e03",
+              "text": "log_a y as an index; converting between index and log form."
+            },
+            {
+              "source": "math-a11-e01",
+              "text": "Exponential graphs pass every positive height once."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e03"
+          ],
+          "startBoundary": "Recall that log_a y is the index that turns a into y (e03); the equation 2^x = 100 from e03's opening is still unsolved.",
+          "stopBoundary": "Explain that y = a^x is equivalent to x = log_a y (a > 0, a ≠ 1) and use it to solve a^x = b exactly; use a calculator (log or log_□ keys, or ln) to evaluate the answer; use digital tools to decide which exponential and log values are rational (exact) and which are irrational and must be rounded. Equations needing the log laws are e06; the change of base proof is e07.",
+          "nextHandoff": "math-a11-e05",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e05",
+          "playlistOrder": 54,
+          "mainLearnerQuestion": "How do the log laws follow from the index laws?",
+          "syllabusActionIds": [
+            "ci348896a1",
+            "ci55afa938"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci348896a1",
+              "text": "Derive the laws of logarithms from the laws of indices log_a m + log_a n = log_a (mn), log_a m - log_a n = log_a (m/n) and log_a (m^n) = nlog_a m",
+              "sourceHtml": "<div><span>Derive the laws of logarithms from the laws of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7c63e196-cb23-4023-8623-52a5594e7e98\" data-item-codename=\"glo_link__shared__indices\" data-item-id=\"7c63e196-cb23-4023-8623-52a5594e7e98\" data-item-systemname=\"GLO Link: SHARED: indices\" data-item-type=\"link_glossary\">indices</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>m</mi></mrow></mrow><mo>+</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>n</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mfenced separators=\"|\"><mrow><mi mathvariant=\"italic\">mn</mi></mrow></mfenced></mrow></mrow></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>m</mi></mrow></mrow><mo>-</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>n</mi></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mfenced separators=\"|\"><mrow><mfrac><mrow><mi>m</mi></mrow><mrow><mi>n</mi></mrow></mfrac></mrow></mfenced></mrow></mrow></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mfenced separators=\"|\"><mrow><msup><mrow><mi>m</mi></mrow><mrow><mi>n</mi></mrow></msup></mrow></mfenced></mrow></mrow><mo>=</mo><mi>n</mi><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>m</mi></mrow></mrow></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci55afa938",
+              "text": "Justify the logarithmic results log_a a = 1, log_a 1 = 0 and log_a (1/x) = -log_a x",
+              "sourceHtml": "<div><span>Justify the logarithmic results </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow><mo>=</mo><mn>1</mn></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mn>1</mn></mrow></mrow><mo>=</mo><mn>0</mn></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mfenced separators=\"|\"><mrow><mfrac><mrow><mn>1</mn></mrow><mrow><mi>x</mi></mrow></mfrac></mrow></mfenced></mrow></mrow><mo>=</mo><mo>-</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "partial",
+              "siteGap": "log_a a = 1 and log_a 1 = 0 are used. log_a(1/x) = -log_a x is not justified."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "why-do-the-log-laws",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "89d0377ec565b7286198c6d909f55b1c0cdfa8519432249e8bc3476259fe90fb"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "why-do-the-log-laws",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "89d0377ec565b7286198c6d909f55b1c0cdfa8519432249e8bc3476259fe90fb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e03",
+              "text": "Logs as indices; log_a a^x = x and a^(log_a x) = x."
+            },
+            {
+              "source": "math-a11-w01",
+              "text": "Index laws: a^m a^n = a^(m + n), a^m / a^n = a^(m - n), (a^m)^n = a^(mn), a^0 = 1."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e04"
+          ],
+          "startBoundary": "Recall the three index laws (w01) and that a log is an index (e03).",
+          "stopBoundary": "Derive log_a m + log_a n = log_a (mn), log_a m - log_a n = log_a (m/n) and log_a (m^n) = n log_a m from the index laws (m, n > 0); justify log_a a = 1, log_a 1 = 0 and log_a (1/x) = -log_a x. Using the laws to solve equations is e06.",
+          "nextHandoff": "math-a11-e06",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e06",
+          "playlistOrder": 55,
+          "mainLearnerQuestion": "How do the log laws simplify expressions and solve equations?",
+          "syllabusActionIds": [
+            "cia453eab7"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cia453eab7",
+              "text": "Apply the logarithmic laws and results to simplify expressions, solve equations and prove results, using digital tools where necessary",
+              "sourceHtml": "<p>Apply the logarithmic laws and results to simplify expressions, solve equations and prove results, using digital tools where necessary</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "change-of-base-and-solving",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "change-of-base-and-solving",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson07.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "why-do-the-log-laws",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "89d0377ec565b7286198c6d909f55b1c0cdfa8519432249e8bc3476259fe90fb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e05",
+              "text": "The three log laws and log_a 1 = 0, log_a a = 1."
+            },
+            {
+              "source": "math-a11-e04",
+              "text": "Solving a^x = b by the definition."
+            },
+            {
+              "source": "math-a11-w04",
+              "text": "Solving quadratics by factorising."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e05"
+          ],
+          "startBoundary": "Recall the three laws (e05); an equation like log_2 (x + 1) + log_2 (x - 1) = 3 now has a way in.",
+          "stopBoundary": "Apply the log laws and results to simplify expressions (expand and condense), solve log equations (combine, convert to index form, check every argument is positive) and exponential equations with different bases (take logs of both sides, power law), and prove simple results, using digital tools where necessary.",
+          "nextHandoff": "math-a11-e07",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e07",
+          "playlistOrder": 56,
+          "mainLearnerQuestion": "Why does the change of base rule work?",
+          "syllabusActionIds": [
+            "ciae7673fb"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ciae7673fb",
+              "text": "Prove the change of base rule log_a x = (log_b x)/(log_b a) and use it to solve problems",
+              "sourceHtml": "<p>Prove the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-codename=\"glo_link__mav__change_of_base_rule\" data-item-id=\"ec2d8985-4d7d-4745-a68a-24f59c4e0849\" data-item-systemname=\"GLO Link: MAV: change of base rule\" data-item-type=\"link_glossary\">change of base rule</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow><mo>=</mo><mfrac><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></mrow><mrow><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>b</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>a</mi></mrow></mrow></mrow></mfrac></math></span> and use it to solve problems</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "change-of-base-and-solving",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson08.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "change-of-base-and-solving",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "eeecfa03787ce802d5a5d42720268aa9104b31abf0db98f9d49400fa1f8f66d9"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e05",
+              "text": "The power law log_b (a^y) = y log_b a."
+            },
+            {
+              "source": "math-a11-e03",
+              "text": "Converting between log and index form."
+            },
+            {
+              "source": "math-a11-e04",
+              "text": "Exact log answers such as log_2 7."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e06"
+          ],
+          "startBoundary": "Recall that log_2 7 is exact but needs a value (e04), and the power law (e05).",
+          "stopBoundary": "Prove the change of base rule log_a x = log_b x / log_b a (let y = log_a x, so a^y = x; take log_b; use the power law; divide by log_b a, which is not 0 because a ≠ 1) and use it to evaluate logs and solve problems.",
+          "nextHandoff": "math-a11-e08",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-e08",
+          "playlistOrder": 57,
+          "mainLearnerQuestion": "How is the log graph a reflection of the exponential graph?",
+          "syllabusActionIds": [
+            "ci5d370004",
+            "ci9eb0125c"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci5d370004",
+              "text": "Graph the logarithmic function y = log_a x for a > 0 and a ≠ 1",
+              "sourceHtml": "<p>Graph the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e17e07c-cdbe-4cad-aef6-c53695a90456\" data-item-codename=\"glo_link__mav__logarithmic_function\" data-item-id=\"2e17e07c-cdbe-4cad-aef6-c53695a90456\" data-item-systemname=\"GLO Link: MAV: logarithmic function\" data-item-type=\"link_glossary\">logarithmic function</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mrow><mrow><msub><mrow><mi mathvariant=\"normal\">log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span> for <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>≠</mo><mn>1</mn></math></span></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9eb0125c",
+              "text": "Use graphing applications to identify the graphs of y = a^x and y = log_a x as reflections of each other in the line y = x, in cases where a > 1 and 0 < a < 1",
+              "sourceHtml": "<div><span>Use graphing applications to identify the graphs of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mrow><mrow><msub><mrow><mi>log</mi></mrow><mrow><mi>a</mi></mrow></msub></mrow><mo>⁡</mo><mrow><mi>x</mi></mrow></mrow></math></span><span> as <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8da1caff-101f-47bf-a460-4bbf60a7b308\" data-item-codename=\"glo_link__shared__reflection__ma_mav_me1_\" data-item-id=\"8da1caff-101f-47bf-a460-4bbf60a7b308\" data-item-systemname=\"GLO Link: SHARED (MA): reflection\" data-item-type=\"link_glossary\">reflections</a> of each other in the line </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>x</mi></math></span><span>, in cases where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>1</mn><mi mathvariant=\"normal\"></mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce",
+              "siteCoverage": "partial",
+              "siteGap": "The reflection in y = x is shown for a > 1. The case 0 < a < 1 is not shown."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "sketching-logarithmic-functions",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "0416384db2c1c0a896aea2f84b94e849ff20fcff7149a94db810ef41195ce5ca"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "sketching-logarithmic-functions",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "0416384db2c1c0a896aea2f84b94e849ff20fcff7149a94db810ef41195ce5ca"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson05.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-a-logarithm",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "c5f53d12d728a75a0a8e8187d0188e05e56a1a150d2260bda7bedcde19338239"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-e01",
+              "text": "Graphs of a^x for a > 1 and 0 < a < 1."
+            },
+            {
+              "source": "math-a11-e03",
+              "text": "log_a x as the index, so log_a a^x = x."
+            },
+            {
+              "source": "math-a11-w09",
+              "text": "Domain and range."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-e07"
+          ],
+          "startBoundary": "Recall the graph of 2^x and its table (e01); swap every pair (x, y) to (y, x).",
+          "stopBoundary": "Graph y = log_a x for a > 0, a ≠ 1: x-intercept (1, 0), vertical asymptote x = 0, domain x > 0, range all real y, increasing for a > 1 and decreasing for 0 < a < 1; use graphing applications to identify y = a^x and y = log_a x as reflections in y = x for a > 1 and for 0 < a < 1. Transformed log graphs are graph transformations; the derivative of ln x is Year 12 d03.",
+          "nextHandoff": "math-a11-t01",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-e08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}
