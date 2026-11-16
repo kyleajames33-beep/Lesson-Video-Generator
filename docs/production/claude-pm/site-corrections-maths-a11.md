@@ -54,3 +54,15 @@ Partial or missing points are listed with reasons in the crosswalk (`programme/s
 - All lessons carry old module numbers (m1 to m6) and site outcome codes (MAV-11-xx), not NESA codes. Sixty files carry a lesson id whose number differs from the file name (for example `working-with-functions/lesson06.sa.html` is `maths-adv-y11-m1-l07`).
 - The folder `algebraic-techniques-and-inequalities` is a content group of Working with functions, not a 2024 focus area.
 - The master plan counts 92 Year 11 Advanced lessons; the repo has 103 lesson files, 90 once the 13 retired pages are set aside.
+
+## 5. More copy errors found while preparing w15 to w31 (16 November 2026)
+
+Full old text and corrections are in section 8 of the named packs (`pre-design/maths-a11/`).
+
+- **S11-05** `working-with-functions/lesson16.sa.html`, card 05: "Find $a$ if $a(x+1)^2 = ax^2 + 4x + 1$ for all $x$" has no solution (the x terms give a = 2, the constants give a = 1). Use "$ax^2 + 4x + 2$" (a = 2).
+- **S11-06** `working-with-functions/lesson23.sa.html`, step `the-plus-or-minus-splits` and card 06: "Each semicircle is a function" is false for the left and right semicircles. Replace with: "The upper and lower semicircles are functions. The left and right semicircles are not functions of x, because a vertical line can cut them twice."
+- **S11-07** `working-with-functions/lesson06.sa.html`, card 06: doubling then adding a percentage tax equals adding the tax then doubling. Use "take $10 off and then add 10% GST, or add GST and then take $10 off: the first costs $1 more". Also change "order always matters" to "order usually matters".
+- **S11-08** `working-with-functions/lesson04.sa.html`: card 05's (a + b)² misconception box is unrelated to piecewise functions; replace it with choosing the rule at a boundary value. The model answer to Q2(c) should say "the price is constant within each age band and jumps by $20 at exactly 16".
+- **S11-09** `working-with-functions/lesson15.sa.html`: "$y = a(x-r)^3 + k$ ... a single point of inflection" is 2017 wording. Use "The other syllabus form is $y = kx^3$".
+- **S11-10** `working-with-functions/lesson19.sa.html`, card 07: "The syllabus places this in MAV-11-01" should read "In Year 11 the optimum comes from the vertex".
+- **Minor:** lesson16's tangent definition should say a non-vertical line, for parabolas. Lesson04's "surge pricing" is really tiered pricing.
