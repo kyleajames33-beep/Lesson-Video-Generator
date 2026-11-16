@@ -193,3 +193,7 @@ First release (17 Nov). Whole master sampled in 3 s windows (11 sheets). Bromoet
 ## chem-m8-c12 v1
 
 First release (17 Nov). Whole master sampled in 3 s windows (11 sheets). Combined-spectra feedback: 78 - 35 = 43 = C3H7, 2-chloropropane's two environments against 1-chloropropane's three, doublet 6H and septet 1H, "80 alone gives the formula" crossed. Ester-or-acid attempt holds the full question and the 1H spectrum with the 10 s countdown. Captions from the playback lesson (168 cues, 14,607 frames equal to master). Pass.
+
+## chem-m8-c04 v3
+
+Replaces the held private v2 (release hold M8-C04-CAPTION-ANSWER-OVERLAP, private upload qAWhDz3d1nk, never public). Root moved the feedback-1 working into the question card (table hidden in feedback; lines at y 620 and 690, framed answer at y 785, crossed "2.5 mg/L" with its note beside it), so nothing in the answer reaches the caption band; still checked at frame 12390 and in the v3 sheets (6:48 to 6:54). Whole master sampled in 3 s windows (11 sheets); all other scenes unchanged from v2 (A = εlc working, AAS chain, attempts with countdown). Captions from the playback lesson (174 cues, 15,705 frames equal to master). Logged for polish, not a hold: eleven older labels sit between y 960 and 1030 (s1.tsx 83, 119, 177, 212-213, 259; s2.tsx 39 ChainPills, 147, 239, 291, 322), placed before captions moved to YouTube CC; the release review passed them. Pass.

@@ -41,11 +41,11 @@ const Table1: React.FC = () => {
 		</g>
 	);
 };
-const Question1: React.FC<{marks?: QMark[]}> = ({marks}) => (
+const Question1: React.FC<{marks?: QMark[]; table?: boolean}> = ({marks, table = true}) => (
 	<>
 		<Card h={650} />
 		<QText q={Q1(marks)} x={140} y={250} w={1000} size={33} card={false} />
-		<Table1 />
+		{table ? <Table1 /> : null}
 		<CAxes g={G14} at={-1000} xLabel="Cu (mg/L)" yLabel="absorbance" xTicks={[0, 1, 2, 3, 4]} yTicks={[0, 0.1, 0.2, 0.3, 0.4]} fy={n => n.toFixed(1)} grid={{dx: 0.5, dy: 0.05}} size={28} card={false} />
 		<CSeg g={G14} a={[0, 0]} b={[4.4, 0.0902 * 4.4]} at={-1000} color={STD} width={4} />
 		<CPts g={G14} pts={CU_STD.map(([x, y]) => ({x, y, at: -1000}))} r={9} />
@@ -70,12 +70,12 @@ export const SceneFeedback1: React.FC = () => (
 			{phrase: 'an absorbance of 0.226.', at: K15.read + 4, color: SEL},
 			{phrase: 'A 10.00 mL portion of the runoff was diluted to 100.0 mL', at: K15.runoff, color: NAVY},
 			{phrase: 'concentration of copper in the original runoff,', at: K15.mult, color: TEAL},
-		]} />
+		]} table={false} />
 		<CRead g={G14} a={0.226} c={2.51} at={K15.across - 10} downAt={K15.down} value="about 2.5" size={30} />
-		<WLine x={140} y={880} size={38} items={[{t: `diluted: about 2.5${NB}mg/L`, at: K15.about}, {t: '(0.226 ÷ 0.0902 = 2.51)', at: K15.about + 20, color: INK_SOFT}]} />
-		<WLine x={140} y={948} size={38} items={[{t: 'dilution factor = 100.0 ÷ 10.00 =', at: K15.runoff}, {t: '10.0', at: K15.tenfold, color: TEAL}]} />
-		<Framed x={140} y={1030} text={`original: 2.51 × 10.0 ≈ 25${NB}mg/L`} at={K15.tf - 6} size={42} color={STD} />
-		<MistakeX x={1220} y={880} text={`2.5${NB}mg/L`} at={K15.stop} cross={K15.slip} note="the diluted value: multiply back" size={36} />
+		<WLine x={140} y={620} size={38} items={[{t: `diluted: about 2.5${NB}mg/L`, at: K15.about}, {t: '(0.226 ÷ 0.0902 = 2.51)', at: K15.about + 20, color: INK_SOFT}]} />
+		<WLine x={140} y={690} size={38} items={[{t: 'dilution factor = 100.0 ÷ 10.00 =', at: K15.runoff}, {t: '10.0', at: K15.tenfold, color: TEAL}]} />
+		<Framed x={140} y={785} text={`original: 2.51 × 10.0 ≈ 25${NB}mg/L`} at={K15.tf - 6} size={42} color={STD} />
+		<MistakeX x={820} y={700} text={`2.5${NB}mg/L`} at={K15.stop} cross={K15.slip} note="the diluted value: multiply back" size={36} />
 		{void K15.l1}{void K15.diluted}{void K15.l2}
 	</svg>
 );
