@@ -1,0 +1,347 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c09/lesson.json",
+    "lessonSha256": "4df06ae1cd367da63393097b18e95ee4a640d702cc9b0525ab57add958cf53c1"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "The stockroom has a bottle of unknown liquid. All you know is that each molecule contains carbon, hydrogen and one oxygen atom. You can't put one molecule on a balance. But a mass spectrometer does something cleverer. It breaks molecules into charged pieces and weighs every piece. The pattern of those masses is a mass spectrum, and each peak can rule possible structures out.",
+    "stopsAfter": "reading the molecular ion, mass gaps, the base peak and a halogen isotope pair; stating what remains possible.",
+    "nextLesson": "infrared spectroscopy (route chem-m8-c10)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c09.md"
+  ],
+  "teaching": {
+    "task": "An unknown liquid contains carbon, hydrogen and one oxygen per molecule. How can breaking its molecules into charged pieces, and weighing each piece, narrow down which structure it has?",
+    "causalExplanation": "(1) breaking molecules and weighing the charged pieces gives a pattern (1); (2) electrons knock an electron off, fields steer only ions, lighter ions bend more, neutral pieces are not seen (2); (3) m/z reads as mass for 1+ ions; relative abundance (3); (4) the molecular ion leads the cluster at the right, giving the molecular mass; the \"one O\" condition gives C4H8O; the M+1 bump is the same structure with one carbon-13 (4); (5) isomers share that mass, so the molecular ion can't separate them (5); (6) a bond breaks; the charged piece is detected, the neutral piece is not; the gap is the mass lost (6); (7) common gaps, and 29's two meanings (7); (8) the base peak is the tallest, set to 100%, often a stable fragment, and not the molecular ion (8); (9) butanone's fragments fit both sides of its C=O; fits, not proved (9); (10) chlorine and bromine isotope pairs (10); (11) what MS can't show (11); memory aid (12); attempts (13 to 16); decision rule and handoff (17); key notes (18).",
+    "conversationalApproach": "The stockroom has a bottle of unknown liquid. Here's how it weighs them. The detector's counts become a bar chart. Here's the spectrum of our unknown. But a mass of seventy-two doesn't finish the job. Inside the instrument, many molecular ions carry so much energy that a bond breaks. Some gaps turn up again and again. Now look at the tallest peak. Let's read the pieces. Some elements leave a signature. So what has the spectrum told us? The molecular ion gave the mass. Here's a line to remember: find the molecular ion cluster, and tallest is the base. Your turn. Eighty-six minus fifty-seven is twenty-nine, so an ethyl group broke off, leaving C two H five C O plus. Last one. The molecular ion is at ninety-four: the molecule containing bromine seventy-nine. So, when you meet a mass spectrum, work in this order.",
+    "openingDecision": "The stockroom has a bottle of unknown liquid. All you know is that each molecule contains carbon, hydrogen and one oxygen atom. You can't put one molecule on a balance. But a mass spectrometer does something cleverer. It breaks molecules into charged pieces and weighs every piece. The pattern of those masses is a mass spectrum, and each peak can rule possible structures out.",
+    "understandingCheck": "(A1) \"The mass spectrum shown is of one of two isomers, pentan-2-one or pentan-3-one (molar mass 86 g mol⁻¹). The base peak is at m/z = 57 and there is a strong peak at m/z = 29. Identify the compound. Justify your answer with reference to the fragments.\" The card shows the pentan-3-one spectrum (Numbers to verify) and the two names; no structures (students draw them from c01). Answer: pentan-3-one. 86 − 57 = 29, loss of C2H5, leaving C2H5CO⁺; pentan-3-one has an ethyl group on both sides of its C=O, so either break gives 57, and 29 is C2H5⁺; pentan-2-one would give a large 43 (CH3CO⁺, after loss of C3H7) and a 71 (after loss of CH3). Crossed mistake: \"loss of 29 is CHO, so it's an aldehyde\" (neither candidate has a CHO group; check which piece each candidate can lose). (A2, Revision 2) \"The mass spectrum of an organic compound shows two peaks of about equal height at m/z = 94 and m/z = 96, and a peak at m/z = 15. Naturally occurring bromine is about 51% bromine-79 and 49% bromine-81. Identify the molecular ion peak, explain the peak at m/z = 96, and identify the fragment responsible for the peak at m/z = 15.\" The card shows the bromomethane spectrum (measured heights pending, Numbers to verify). Answer: M⁺ at 94 (CH₃⁷⁹Br); 96 is its M+2 partner, the same structure with ⁸¹Br, about as tall because the two isotopes are about equally common; 94 − 15 = 79, loss of a Br atom, leaving CH₃⁺; consistent with bromomethane. Crossed mistake: \"96 is the molecular ion, because it's the furthest right\" (pre-design trap: isotope peak mistaken for the parent).",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:\n- proton and carbon-13 NMR\n- mass spectrometry\n- infrared spectroscopy (ACSCH130)\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "spectra are coded only (new stick-spectrum part; never an AI image of a spectrum); spectrum data are realistic for the named compound and listed under \"Numbers to verify\" for checking against NIST or SDBS; the instrument is painted plates (one existing exterior, one new cutaway); no people, hands or faces; molecules coded in the c08 structure style; at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question and its spectrum kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"usually\", \"fits\", \"points to\", \"narrows\").",
+    "transitionPlan": "heading writes on: \"What do the pieces weigh?\". the exterior plate cross-fades to the new m8-ms-cutaway-v1. the cutaway shrinks to a thumbnail at top right. the butanone stick spectrum (Numbers to verify) draws bar by bar from left to right, all bars teal, no labels yet. the candidate strip fills: butanone, butanal, 2-methylpropanal and but-3-en-2-ol as coded skeletal structures, each with a small \"72\" chip (grey chip \"c02: isomers\"). right card: break-and-weigh on a generic coded chain \"M⁺\": it snaps; the left piece gains \"+\" and drops onto a teal bar (tag \"fragment ion: detected\"); the right piece greys and floats up with a \"?\" mass chip (tag \"neutral piece: not detected\"). the right card becomes a four-row table, each row writing as spoken: \"15: CH₃\", \"17: OH\", \"29: C₂H₅ or CHO\", \"45: COOH\", each with a tiny coded fragment drawing. the table shrinks to the right edge. gap bracket 72 to 43 with chip \"− 29: C₂H₅ or CHO\" (bright); then gap bracket 72 to 57 with chip \"− 15: CH₃\" (the first bracket dims). the board clears to the chloromethane stick spectrum (Numbers to verify). the butanone spectrum returns small at left. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), including the full isotope sentence (\"about 51% bromine-79 and 49% bromine-81\"). the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"What do the pieces weigh?\". p03-dropper-bottle-v1.png (clear dropper bottle, blank label) at left with a coded \"?\" on its label and a coded chip \"C, H and one O\". On \"balance\" a small coded balance outline appears and is crossed. On \"mass spectrometer\" m8-mass-spectrometer-v1.png slides in at right (uniform scale, about 45% of frame width). On \"charged pieces\" a coded skeletal molecule above the bottle snaps into three pieces, two gaining a \"+\". On \"mass spectrum\" empty stick-spectrum axes write across the lower half. On \"out\" a short candidate strip of four grey \"?\" boxes writes along the top. Bright at the end: the heading, the axes, the strip.",
+      "teachingReason": "The stockroom has a bottle of unknown liquid.",
+      "narrationCue": "balance / mass spectrometer / charged pieces / mass spectrum / out",
+      "motionPurpose": "heading writes on: \"What do the pieces weigh?\". p03-dropper-bottle-v1.png (clear dropper bottle, blank label) at left with a coded \"?\" on its label and a coded chip \"C, H and one O\". On \"balance\" a small coded balance outline appears and is crossed. On \"mass spectrometer\" m8-mass-spectrometer-v1.png slides in at right (uniform scale, about 45% of frame width). On \"charged pieces\" a coded skeletal molecule above the bottle snaps into three pieces, two gaining a \"+\". On \"mass spectrum\" empty stick-spectrum axes write across the lower half. On \"out\" a short candidate strip of four grey \"?\" boxes writes along the top. Bright at the end: the heading, the axes, the strip.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"What do the pieces weigh?\". p03-dropper-bottle-v1.png (clear dropper bottle, blank label) at left with a coded \"?\" on its label and a coded chip \"C, H and one O\". On \"balance\" a small coded balance outline appears and is crossed. On \"mass spectrometer\" m8-mass-spectrometer-v1.png slides in at right (uniform scale, about 45% of frame width). On \"charged pieces\" a coded skeletal molecule above the bottle snaps into three pieces, two gaining a \"+\". On \"mass spectrum\" empty stick-spectrum axes write across the lower half. On \"out\" a short candidate strip of four grey \"?\" boxes writes along the top. Bright at the end: the heading, the axes, the strip.",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "m8-mass-spectrometer-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (an unknown, and a machine that weighs pieces): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "five-stages",
+      "visualDecision": "new",
+      "visualReference": "the exterior plate cross-fades to the new m8-ms-cutaway-v1.png (Codex asset brief item 1) at full width. Coded tags write one per clause on the plate's five zones, left to right: \"1 vaporise\", \"2 ionise\", \"3 accelerate\", \"4 deflect\", \"5 detect\" (the current tag bright, earlier ones dim). Ion flight: grey dots enter the inlet; an electron streak crosses the ionisation chamber and the dots turn \"+\" (grey chip under it: \"M + e⁻ → M⁺ + 2e⁻\"); dots speed up between the plates; on \"path\" three streams curve through the magnet, the lightest bending most (tags \"light\" and \"heavy\"); on \"count\" the detector flashes once per stream. On \"detected\" one grey neutral dot drifts straight on, misses the detector and fades (tag \"neutral: not steered\"). Bright at the end: the five tags (one item), the neutral tag.",
+      "teachingReason": "Here's how it weighs them.",
+      "narrationCue": "path / count / detected",
+      "motionPurpose": "the exterior plate cross-fades to the new m8-ms-cutaway-v1.png (Codex asset brief item 1) at full width. Coded tags write one per clause on the plate's five zones, left to right: \"1 vaporise\", \"2 ionise\", \"3 accelerate\", \"4 deflect\", \"5 detect\" (the current tag bright, earlier ones dim). Ion flight: grey dots enter the inlet; an electron streak crosses the ionisation chamber and the dots turn \"+\" (grey chip under it: \"M + e⁻ → M⁺ + 2e⁻\"); dots speed up between the plates; on \"path\" three streams curve through the magnet, the lightest bending most (tags \"light\" and \"heavy\"); on \"count\" the detector flashes once per stream. On \"detected\" one grey neutral dot drifts straight on, misses the detector and fades (tag \"neutral: not steered\"). Bright at the end: the five tags (one item), the neutral tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the exterior plate cross-fades to the new m8-ms-cutaway-v1.png (Codex asset brief item 1) at full width. Coded tags write one per clause on the plate's five zones, left to right: \"1 vaporise\", \"2 ionise\", \"3 accelerate\", \"4 deflect\", \"5 detect\" (the current tag bright, earlier ones dim). Ion flight: grey dots enter the inlet; an electron streak crosses the ionisation chamber and the dots turn \"+\" (grey chip under it: \"M + e⁻ → M⁺ + 2e⁻\"); dots speed up between the plates; on \"path\" three streams curve through the magnet, the lightest bending most (tags \"light\" and \"heavy\"); on \"count\" the detector flashes once per stream. On \"detected\" one grey neutral dot drifts straight on, misses the detector and fades (tag \"neutral: not steered\"). Bright at the end: the five tags (one item), the neutral tag.",
+      "motionTools": [
+        "m8-ms-cutaway-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "how it weighs them (five stages): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "reading-chart",
+      "visualDecision": "new",
+      "visualReference": "the cutaway shrinks to a thumbnail at top right. The empty stick-spectrum axes return at reading size. On \"m over z\" the x axis label writes \"m/z\" with a grey chip \"mass ÷ charge\"; on \"mass\" the chip adds \"charge 1+ → m/z = mass\". On \"relative abundance\" the y axis label writes \"relative abundance (%)\", and a single demo bar grows to 100 then fades. Bright at the end: the two axis labels.",
+      "teachingReason": "The detector's counts become a bar chart.",
+      "narrationCue": "m over z / mass / relative abundance",
+      "motionPurpose": "the cutaway shrinks to a thumbnail at top right. The empty stick-spectrum axes return at reading size. On \"m over z\" the x axis label writes \"m/z\" with a grey chip \"mass ÷ charge\"; on \"mass\" the chip adds \"charge 1+ → m/z = mass\". On \"relative abundance\" the y axis label writes \"relative abundance (%)\", and a single demo bar grows to 100 then fades. Bright at the end: the two axis labels.",
+      "motionRole": "explain",
+      "onScreenChange": "the cutaway shrinks to a thumbnail at top right. The empty stick-spectrum axes return at reading size. On \"m over z\" the x axis label writes \"m/z\" with a grey chip \"mass ÷ charge\"; on \"mass\" the chip adds \"charge 1+ → m/z = mass\". On \"relative abundance\" the y axis label writes \"relative abundance (%)\", and a single demo bar grows to 100 then fades. Bright at the end: the two axis labels.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading the chart: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "molecular-ion",
+      "visualDecision": "new",
+      "visualReference": "the butanone stick spectrum (Numbers to verify) draws bar by bar from left to right, all bars teal, no labels yet. On \"Start at the right\" a soft spotlight sweeps to the right end and rests on the 72 and 73 bars together (label \"M⁺ cluster\"). On \"seventy-two\" the 72 bar turns gold with label \"72: M⁺ (molecular ion)\" (bright). Right card: \"M⁺ = 72 → molecular mass 72\"; on \"sixteen\" the card writes \"72 − 16 (one O) = 56\", then \"56 = 4 C (48) + 8 H (8)\", then \"C₄H₈O\" (bright). A grey chip under the card: \"without the one O: 72 could also be C₅H₁₂\". On \"seventy-three\" the tiny 73 bar gets a grey label \"73: M+1, same structure, one ¹³C\". Bright at the end: the gold 72 bar, \"C₄H₈O\".",
+      "teachingReason": "Here's the spectrum of our unknown.",
+      "narrationCue": "Start at the right / seventy-two / sixteen / seventy-three",
+      "motionPurpose": "the butanone stick spectrum (Numbers to verify) draws bar by bar from left to right, all bars teal, no labels yet. On \"Start at the right\" a soft spotlight sweeps to the right end and rests on the 72 and 73 bars together (label \"M⁺ cluster\"). On \"seventy-two\" the 72 bar turns gold with label \"72: M⁺ (molecular ion)\" (bright). Right card: \"M⁺ = 72 → molecular mass 72\"; on \"sixteen\" the card writes \"72 − 16 (one O) = 56\", then \"56 = 4 C (48) + 8 H (8)\", then \"C₄H₈O\" (bright). A grey chip under the card: \"without the one O: 72 could also be C₅H₁₂\". On \"seventy-three\" the tiny 73 bar gets a grey label \"73: M+1, same structure, one ¹³C\". Bright at the end: the gold 72 bar, \"C₄H₈O\".",
+      "motionRole": "explain",
+      "onScreenChange": "the butanone stick spectrum (Numbers to verify) draws bar by bar from left to right, all bars teal, no labels yet. On \"Start at the right\" a soft spotlight sweeps to the right end and rests on the 72 and 73 bars together (label \"M⁺ cluster\"). On \"seventy-two\" the 72 bar turns gold with label \"72: M⁺ (molecular ion)\" (bright). Right card: \"M⁺ = 72 → molecular mass 72\"; on \"sixteen\" the card writes \"72 − 16 (one O) = 56\", then \"56 = 4 C (48) + 8 H (8)\", then \"C₄H₈O\" (bright). A grey chip under the card: \"without the one O: 72 could also be C₅H₁₂\". On \"seventy-three\" the tiny 73 bar gets a grey label \"73: M+1, same structure, one ¹³C\". Bright at the end: the gold 72 bar, \"C₄H₈O\".",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the molecular ion: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "same-mass",
+      "visualDecision": "new",
+      "visualReference": "the candidate strip fills: butanone, butanal, 2-methylpropanal and but-3-en-2-ol as coded skeletal structures, each with a small \"72\" chip (grey chip \"c02: isomers\"). On \"can't tell isomers apart\" all four stay lit and a bracket writes under them: \"all 72\". On \"peaks\" the smaller bars of the spectrum pulse teal once. Bright at the end: the strip and the bracket.",
+      "teachingReason": "But a mass of seventy-two doesn't finish the job.",
+      "narrationCue": "can't tell isomers apart / peaks",
+      "motionPurpose": "the candidate strip fills: butanone, butanal, 2-methylpropanal and but-3-en-2-ol as coded skeletal structures, each with a small \"72\" chip (grey chip \"c02: isomers\"). On \"can't tell isomers apart\" all four stay lit and a bracket writes under them: \"all 72\". On \"peaks\" the smaller bars of the spectrum pulse teal once. Bright at the end: the strip and the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the candidate strip fills: butanone, butanal, 2-methylpropanal and but-3-en-2-ol as coded skeletal structures, each with a small \"72\" chip (grey chip \"c02: isomers\"). On \"can't tell isomers apart\" all four stay lit and a bracket writes under them: \"all 72\". On \"peaks\" the smaller bars of the spectrum pulse teal once. Bright at the end: the strip and the bracket.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "same mass, different molecules: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bond-breaks",
+      "visualDecision": "new",
+      "visualReference": "right card: break-and-weigh on a generic coded chain \"M⁺\": it snaps; the left piece gains \"+\" and drops onto a teal bar (tag \"fragment ion: detected\"); the right piece greys and floats up with a \"?\" mass chip (tag \"neutral piece: not detected\"). On \"lost\" a gap bracket draws between the gold 72 bar and a teal bar, chip \"gap = mass lost\". Bright at the end: the two tags and the bracket chip.",
+      "teachingReason": "Inside the instrument, many molecular ions carry so much energy that a bond breaks.",
+      "narrationCue": "lost",
+      "motionPurpose": "right card: break-and-weigh on a generic coded chain \"M⁺\": it snaps; the left piece gains \"+\" and drops onto a teal bar (tag \"fragment ion: detected\"); the right piece greys and floats up with a \"?\" mass chip (tag \"neutral piece: not detected\"). On \"lost\" a gap bracket draws between the gold 72 bar and a teal bar, chip \"gap = mass lost\". Bright at the end: the two tags and the bracket chip.",
+      "motionRole": "explain",
+      "onScreenChange": "right card: break-and-weigh on a generic coded chain \"M⁺\": it snaps; the left piece gains \"+\" and drops onto a teal bar (tag \"fragment ion: detected\"); the right piece greys and floats up with a \"?\" mass chip (tag \"neutral piece: not detected\"). On \"lost\" a gap bracket draws between the gold 72 bar and a teal bar, chip \"gap = mass lost\". Bright at the end: the two tags and the bracket chip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a bond breaks: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "common-gaps",
+      "visualDecision": "new",
+      "visualReference": "the right card becomes a four-row table, each row writing as spoken: \"15: CH₃\", \"17: OH\", \"29: C₂H₅ or CHO\", \"45: COOH\", each with a tiny coded fragment drawing. On \"the same mass\" the 29 row shows \"C₂H₅: 24 + 5 = 29\" and \"CHO: 12 + 1 + 16 = 29\" (both bright, then dim). On \"two\" the 29 row keeps a violet outline. Bright at the end: the 29 row.",
+      "teachingReason": "Some gaps turn up again and again.",
+      "narrationCue": "the same mass / two",
+      "motionPurpose": "the right card becomes a four-row table, each row writing as spoken: \"15: CH₃\", \"17: OH\", \"29: C₂H₅ or CHO\", \"45: COOH\", each with a tiny coded fragment drawing. On \"the same mass\" the 29 row shows \"C₂H₅: 24 + 5 = 29\" and \"CHO: 12 + 1 + 16 = 29\" (both bright, then dim). On \"two\" the 29 row keeps a violet outline. Bright at the end: the 29 row.",
+      "motionRole": "explain",
+      "onScreenChange": "the right card becomes a four-row table, each row writing as spoken: \"15: CH₃\", \"17: OH\", \"29: C₂H₅ or CHO\", \"45: COOH\", each with a tiny coded fragment drawing. On \"the same mass\" the 29 row shows \"C₂H₅: 24 + 5 = 29\" and \"CHO: 12 + 1 + 16 = 29\" (both bright, then dim). On \"two\" the 29 row keeps a violet outline. Bright at the end: the 29 row.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "gaps you'll see often: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "base-peak",
+      "visualDecision": "new",
+      "visualReference": "the table shrinks to the right edge. On \"tallest\" the 43 bar brightens and a dashed line runs from its top to the 100 tick (label \"43: base peak, 100%\"). On \"not at seventy-two\" the gold 72 bar pulses. On \"often different\" a chip \"tallest = M⁺\" fades in and is crossed. On \"peaks\" two labels sit together: \"right-hand cluster: M⁺ (72)\" gold and \"tallest: base peak (43)\" teal. Bright at the end: the two labels.",
+      "teachingReason": "Now look at the tallest peak.",
+      "narrationCue": "tallest / not at seventy-two / often different / peaks",
+      "motionPurpose": "the table shrinks to the right edge. On \"tallest\" the 43 bar brightens and a dashed line runs from its top to the 100 tick (label \"43: base peak, 100%\"). On \"not at seventy-two\" the gold 72 bar pulses. On \"often different\" a chip \"tallest = M⁺\" fades in and is crossed. On \"peaks\" two labels sit together: \"right-hand cluster: M⁺ (72)\" gold and \"tallest: base peak (43)\" teal. Bright at the end: the two labels.",
+      "motionRole": "explain",
+      "onScreenChange": "the table shrinks to the right edge. On \"tallest\" the 43 bar brightens and a dashed line runs from its top to the 100 tick (label \"43: base peak, 100%\"). On \"not at seventy-two\" the gold 72 bar pulses. On \"often different\" a chip \"tallest = M⁺\" fades in and is crossed. On \"peaks\" two labels sit together: \"right-hand cluster: M⁺ (72)\" gold and \"tallest: base peak (43)\" teal. Bright at the end: the two labels.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the base peak: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "butanone-pieces",
+      "visualDecision": "new",
+      "visualReference": "gap bracket 72 to 43 with chip \"− 29: C₂H₅ or CHO\" (bright); then gap bracket 72 to 57 with chip \"− 15: CH₃\" (the first bracket dims). On \"other\" butanone draws large in the right third, its two C–C bonds beside the C=O ringed. On \"forty-three\" break-and-weigh at the ethyl side: CH₃CO⁺ drops onto the 43 bar (label \"CH₃CO⁺ = 43\"), the ethyl piece floats off grey; on \"fifty-seven\" the other side: C₂H₅CO⁺ drops onto 57 (label \"C₂H₅CO⁺ = 57\"), the methyl floats off. On \"ethyl ion\" the 29 bar gets \"C₂H₅⁺\". On \"fits butanone\" the strip's butanone glows; on \"butanal\" butanal glows too with a grey tag \"also 72 and 43 (C₃H₇⁺)\"; 2-methylpropanal and but-3-en-2-ol stay lit but dim, with a grey tag \"still to test\". On \"left\" a grey chip \"IR, NMR: next\" slides in. Bright at the end: the two fragment labels, the glowing pair.",
+      "teachingReason": "Let's read the pieces.",
+      "narrationCue": "other / forty-three / fifty-seven / ethyl ion / fits butanone / butanal / left",
+      "motionPurpose": "gap bracket 72 to 43 with chip \"− 29: C₂H₅ or CHO\" (bright); then gap bracket 72 to 57 with chip \"− 15: CH₃\" (the first bracket dims). On \"other\" butanone draws large in the right third, its two C–C bonds beside the C=O ringed. On \"forty-three\" break-and-weigh at the ethyl side: CH₃CO⁺ drops onto the 43 bar (label \"CH₃CO⁺ = 43\"), the ethyl piece floats off grey; on \"fifty-seven\" the other side: C₂H₅CO⁺ drops onto 57 (label \"C₂H₅CO⁺ = 57\"), the methyl floats off. On \"ethyl ion\" the 29 bar gets \"C₂H₅⁺\". On \"fits butanone\" the strip's butanone glows; on \"butanal\" butanal glows too with a grey tag \"also 72 and 43 (C₃H₇⁺)\"; 2-methylpropanal and but-3-en-2-ol stay lit but dim, with a grey tag \"still to test\". On \"left\" a grey chip \"IR, NMR: next\" slides in. Bright at the end: the two fragment labels, the glowing pair.",
+      "motionRole": "explain",
+      "onScreenChange": "gap bracket 72 to 43 with chip \"− 29: C₂H₅ or CHO\" (bright); then gap bracket 72 to 57 with chip \"− 15: CH₃\" (the first bracket dims). On \"other\" butanone draws large in the right third, its two C–C bonds beside the C=O ringed. On \"forty-three\" break-and-weigh at the ethyl side: CH₃CO⁺ drops onto the 43 bar (label \"CH₃CO⁺ = 43\"), the ethyl piece floats off grey; on \"fifty-seven\" the other side: C₂H₅CO⁺ drops onto 57 (label \"C₂H₅CO⁺ = 57\"), the methyl floats off. On \"ethyl ion\" the 29 bar gets \"C₂H₅⁺\". On \"fits butanone\" the strip's butanone glows; on \"butanal\" butanal glows too with a grey tag \"also 72 and 43 (C₃H₇⁺)\"; 2-methylpropanal and but-3-en-2-ol stay lit but dim, with a grey tag \"still to test\". On \"left\" a grey chip \"IR, NMR: next\" slides in. Bright at the end: the two fragment labels, the glowing pair.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading butanone's pieces: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "isotope-pairs",
+      "visualDecision": "new",
+      "visualReference": "the board clears to the chloromethane stick spectrum (Numbers to verify). Grey chip at top: \"Cl: ³⁵Cl 75%, ³⁷Cl 25% (about 3 : 1)\". On \"fifty\" the 50 bar turns gold (label \"CH₃³⁵Cl⁺ = 50\"); on \"fifty-two\" the 52 bar turns violet (label \"CH₃³⁷Cl⁺ = 52\"); a ratio bracket writes \"about 3 : 1\". On \"one chlorine\" a chip \"pair 2 apart, 3 : 1 → one Cl\" (bright). On \"height\" a small inset writes beside it: two equal violet and gold bars, tag \"one Br: pair 2 apart, about 1 : 1 (⁷⁹Br, ⁸¹Br)\". On \"same structure\" the 52 label adds \"M+2: same structure, heavier isotope\", and a grey chip \"peaks use isotope masses (35, 37), not 35.5\". Bright at the end: the Cl chip, the Br inset.",
+      "teachingReason": "Some elements leave a signature.",
+      "narrationCue": "fifty / fifty-two / one chlorine / height / same structure",
+      "motionPurpose": "the board clears to the chloromethane stick spectrum (Numbers to verify). Grey chip at top: \"Cl: ³⁵Cl 75%, ³⁷Cl 25% (about 3 : 1)\". On \"fifty\" the 50 bar turns gold (label \"CH₃³⁵Cl⁺ = 50\"); on \"fifty-two\" the 52 bar turns violet (label \"CH₃³⁷Cl⁺ = 52\"); a ratio bracket writes \"about 3 : 1\". On \"one chlorine\" a chip \"pair 2 apart, 3 : 1 → one Cl\" (bright). On \"height\" a small inset writes beside it: two equal violet and gold bars, tag \"one Br: pair 2 apart, about 1 : 1 (⁷⁹Br, ⁸¹Br)\". On \"same structure\" the 52 label adds \"M+2: same structure, heavier isotope\", and a grey chip \"peaks use isotope masses (35, 37), not 35.5\". Bright at the end: the Cl chip, the Br inset.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to the chloromethane stick spectrum (Numbers to verify). Grey chip at top: \"Cl: ³⁵Cl 75%, ³⁷Cl 25% (about 3 : 1)\". On \"fifty\" the 50 bar turns gold (label \"CH₃³⁵Cl⁺ = 50\"); on \"fifty-two\" the 52 bar turns violet (label \"CH₃³⁷Cl⁺ = 52\"); a ratio bracket writes \"about 3 : 1\". On \"one chlorine\" a chip \"pair 2 apart, 3 : 1 → one Cl\" (bright). On \"height\" a small inset writes beside it: two equal violet and gold bars, tag \"one Br: pair 2 apart, about 1 : 1 (⁷⁹Br, ⁸¹Br)\". On \"same structure\" the 52 label adds \"M+2: same structure, heavier isotope\", and a grey chip \"peaks use isotope masses (35, 37), not 35.5\". Bright at the end: the Cl chip, the Br inset.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "chlorine and bromine leave a signature: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "ms-limits",
+      "visualDecision": "adjust",
+      "visualReference": "the butanone spectrum returns small at left. A three-row card writes: \"mass ✓ (M⁺)\", \"pieces ✓ (gaps)\", \"Cl or Br ✓ (isotope pairs)\"; then two grey rows: \"functional group ✗\", \"how atoms connect ✗\". On \"job\" a chip row writes: \"MS: mass → IR: groups → NMR: map\" (grey chip \"c08: tests show groups too\"). Bright at the end: the two grey rows and the chip row.",
+      "teachingReason": "So what has the spectrum told us? The molecular ion gave the mass.",
+      "narrationCue": "job",
+      "motionPurpose": "the butanone spectrum returns small at left. A three-row card writes: \"mass ✓ (M⁺)\", \"pieces ✓ (gaps)\", \"Cl or Br ✓ (isotope pairs)\"; then two grey rows: \"functional group ✗\", \"how atoms connect ✗\". On \"job\" a chip row writes: \"MS: mass → IR: groups → NMR: map\" (grey chip \"c08: tests show groups too\"). Bright at the end: the two grey rows and the chip row.",
+      "motionRole": "explain",
+      "onScreenChange": "the butanone spectrum returns small at left. A three-row card writes: \"mass ✓ (M⁺)\", \"pieces ✓ (gaps)\", \"Cl or Br ✓ (isotope pairs)\"; then two grey rows: \"functional group ✗\", \"how atoms connect ✗\". On \"job\" a chip row writes: \"MS: mass → IR: groups → NMR: map\" (grey chip \"c08: tests show groups too\"). Bright at the end: the two grey rows and the chip row.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what mass spectrometry can't tell you: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line: \"Find the molecular-ion cluster. Tallest is the base.\" Under it the butanone spectrum, the 72 and 73 bars bracketed with an arrow labelled \"M⁺ cluster: M = 72 (73 is M+1)\", the 43 bar with an arrow \"tallest\". A small inset beside it repeats chloromethane's 50 and 52 pair with the bracket \"M⁺ cluster: M = 50 (52 is M+2)\". On \"subtract\" a gap bracket 72 to 43 \"− 29\". Small grey second line: \"Then subtract to find what broke off.\" Hold about 2 seconds.",
+      "teachingReason": "Here's a line to remember: find the molecular ion cluster, and tallest is the base.",
+      "narrationCue": "subtract",
+      "motionPurpose": "the board clears. Handwritten line: \"Find the molecular-ion cluster. Tallest is the base.\" Under it the butanone spectrum, the 72 and 73 bars bracketed with an arrow labelled \"M⁺ cluster: M = 72 (73 is M+1)\", the 43 bar with an arrow \"tallest\". A small inset beside it repeats chloromethane's 50 and 52 pair with the bracket \"M⁺ cluster: M = 50 (52 is M+2)\". On \"subtract\" a gap bracket 72 to 43 \"− 29\". Small grey second line: \"Then subtract to find what broke off.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Find the molecular-ion cluster. Tallest is the base.\" Under it the butanone spectrum, the 72 and 73 bars bracketed with an arrow labelled \"M⁺ cluster: M = 72 (73 is M+1)\", the 43 bar with an arrow \"tallest\". A small inset beside it repeats chloromethane's 50 and 52 pair with the bracket \"M⁺ cluster: M = 50 (52 is M+2)\". On \"subtract\" a gap bracket 72 to 43 \"− 29\". Small grey second line: \"Then subtract to find what broke off.\" Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The pentan-3-one stick spectrum sits under the text with m/z labels on the 29, 57 and 86 bars only. Two names, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no brackets, no fragment labels).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The pentan-3-one stick spectrum sits under the text with m/z labels on the 29, 57 and 86 bars only. Two names, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no brackets, no fragment labels).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The pentan-3-one stick spectrum sits under the text with m/z labels on the 29, 57 and 86 bars only. Two names, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no brackets, no fragment labels).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"twenty-nine\" \"base peak is at m/z = 57\" and \"molar mass 86\" are underlined and a gap bracket 86 to 57 writes \"− 29\". Pentan-3-one draws at right with both ethyl–C=O bonds ringed; on \"either break\" one C₂H₅CO⁺ drops onto 57, and \"strong peak at m/z = 29\" is underlined as the 29 bar gets \"C₂H₅⁺\" (no narration). On \"Pentan-2-one\" its structure writes small with a dashed grey bar at 43 (tag \"expected: CH₃CO⁺ = 43\") over the actual spectrum, where 43 is small. On \"pentan-3-one\" its structure glows (bright). On \"slip\" a chip \"− 29 = CHO, so an aldehyde\" fades in and is crossed (caption \"check which piece each candidate can lose\"). Hold about 1 second.",
+      "teachingReason": "Eighty-six minus fifty-seven is twenty-nine, so an ethyl group broke off, leaving C two H five C O plus.",
+      "narrationCue": "twenty-nine / either break / Pentan-2-one / pentan-3-one / slip",
+      "motionPurpose": "the card stays, shrunk to the top. On \"twenty-nine\" \"base peak is at m/z = 57\" and \"molar mass 86\" are underlined and a gap bracket 86 to 57 writes \"− 29\". Pentan-3-one draws at right with both ethyl–C=O bonds ringed; on \"either break\" one C₂H₅CO⁺ drops onto 57, and \"strong peak at m/z = 29\" is underlined as the 29 bar gets \"C₂H₅⁺\" (no narration). On \"Pentan-2-one\" its structure writes small with a dashed grey bar at 43 (tag \"expected: CH₃CO⁺ = 43\") over the actual spectrum, where 43 is small. On \"pentan-3-one\" its structure glows (bright). On \"slip\" a chip \"− 29 = CHO, so an aldehyde\" fades in and is crossed (caption \"check which piece each candidate can lose\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"twenty-nine\" \"base peak is at m/z = 57\" and \"molar mass 86\" are underlined and a gap bracket 86 to 57 writes \"− 29\". Pentan-3-one draws at right with both ethyl–C=O bonds ringed; on \"either break\" one C₂H₅CO⁺ drops onto 57, and \"strong peak at m/z = 29\" is underlined as the 29 bar gets \"C₂H₅⁺\" (no narration). On \"Pentan-2-one\" its structure writes small with a dashed grey bar at 43 (tag \"expected: CH₃CO⁺ = 43\") over the actual spectrum, where 43 is small. On \"pentan-3-one\" its structure glows (bright). On \"slip\" a chip \"− 29 = CHO, so an aldehyde\" fades in and is crossed (caption \"check which piece each candidate can lose\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), including the full isotope sentence (\"about 51% bromine-79 and 49% bromine-81\"). The bromomethane stick spectrum (Numbers to verify; measured NIST heights required before drawing) sits under the text with m/z labels on 15, 94 and 96 only. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), including the full isotope sentence (\"about 51% bromine-79 and 49% bromine-81\"). The bromomethane stick spectrum (Numbers to verify; measured NIST heights required before drawing) sits under the text with m/z labels on 15, 94 and 96 only. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), including the full isotope sentence (\"about 51% bromine-79 and 49% bromine-81\"). The bromomethane stick spectrum (Numbers to verify; measured NIST heights required before drawing) sits under the text with m/z labels on 15, 94 and 96 only. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"ninety-four\" \"m/z = 94\" is underlined and the 94 bar turns gold (\"CH₃⁷⁹Br⁺\", label \"M\"). On \"M plus two partner\" \"m/z = 96\", \"about equal height\" and \"51% bromine-79 and 49% bromine-81\" are underlined; the 96 bar turns violet (\"CH₃⁸¹Br⁺\", label \"M+2\"). On \"seventy-nine\" \"m/z = 15\" is underlined and a gap bracket 94 to 15 writes \"− 79: Br\"; the 15 bar gets \"CH₃⁺\". Bromomethane draws small at right with the tag \"fits bromomethane\" (no narration). On \"trap\" a chip \"96 = M⁺ (furthest right)\" fades in and is crossed (caption \"M+2 is the same structure, heavier Br\"). Hold about 1 second.",
+      "teachingReason": "The molecular ion is at ninety-four: the molecule containing bromine seventy-nine.",
+      "narrationCue": "ninety-four / M plus two partner / seventy-nine / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"ninety-four\" \"m/z = 94\" is underlined and the 94 bar turns gold (\"CH₃⁷⁹Br⁺\", label \"M\"). On \"M plus two partner\" \"m/z = 96\", \"about equal height\" and \"51% bromine-79 and 49% bromine-81\" are underlined; the 96 bar turns violet (\"CH₃⁸¹Br⁺\", label \"M+2\"). On \"seventy-nine\" \"m/z = 15\" is underlined and a gap bracket 94 to 15 writes \"− 79: Br\"; the 15 bar gets \"CH₃⁺\". Bromomethane draws small at right with the tag \"fits bromomethane\" (no narration). On \"trap\" a chip \"96 = M⁺ (furthest right)\" fades in and is crossed (caption \"M+2 is the same structure, heavier Br\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"ninety-four\" \"m/z = 94\" is underlined and the 94 bar turns gold (\"CH₃⁷⁹Br⁺\", label \"M\"). On \"M plus two partner\" \"m/z = 96\", \"about equal height\" and \"51% bromine-79 and 49% bromine-81\" are underlined; the 96 bar turns violet (\"CH₃⁸¹Br⁺\", label \"M+2\"). On \"seventy-nine\" \"m/z = 15\" is underlined and a gap bracket 94 to 15 writes \"− 79: Br\"; the 15 bar gets \"CH₃⁺\". Bromomethane draws small at right with the tag \"fits bromomethane\" (no narration). On \"trap\" a chip \"96 = M⁺ (furthest right)\" fades in and is crossed (caption \"M+2 is the same structure, heavier Br\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A four-step strip builds one step per clause at reading size: \"1 M⁺ cluster at the right: M, then M+1 or M+2 partners\" → \"2 isotope partner? 3 : 1 Cl, 1 : 1 Br\" → \"3 subtract: gap = piece lost\" → \"4 which candidates fit? what's still possible?\". On \"Next\" a chip \"Next: What bonds can an IR spectrum reveal?\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, when you meet a mass spectrum, work in this order.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A four-step strip builds one step per clause at reading size: \"1 M⁺ cluster at the right: M, then M+1 or M+2 partners\" → \"2 isotope partner? 3 : 1 Cl, 1 : 1 Br\" → \"3 subtract: gap = piece lost\" → \"4 which candidates fit? what's still possible?\". On \"Next\" a chip \"Next: What bonds can an IR spectrum reveal?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-step strip builds one step per clause at reading size: \"1 M⁺ cluster at the right: M, then M+1 or M+2 partners\" → \"2 isotope partner? 3 : 1 Cl, 1 : 1 Br\" → \"3 subtract: gap = piece lost\" → \"4 which candidates fit? what's still possible?\". On \"Next\" a chip \"Next: What bonds can an IR spectrum reveal?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c09-learning-review.md",
+      "sha256": "2dceb45167b55f271fe246d4be4930e24fdf3c7aff6a61c4056ed538265ed8f7"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c09-claude-science-check.md",
+      "sha256": "b349e44d33683215df98fc2b0627e09331eda0a9c6745e20907e8828527ccca9"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

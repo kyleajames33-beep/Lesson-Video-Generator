@@ -10,8 +10,8 @@ function run(args,label){if(args[0]==='python')args[0]='C:/Users/kygs/AppData/Lo
 const spendPath='work/brief245/root/spend-elevenlabs.json';
 if(!fs.existsSync(spendPath))fs.writeFileSync(spendPath,JSON.stringify({run:'root 16 Nov',ownerEstimateCredits:70000,reserveCharacters:5000,cap:40000,cumulativeBilledCharacters:0,lessons:[],requests:[]},null,2));
 const spend=()=>JSON.parse(fs.readFileSync(spendPath,'utf8'));
-async function balance(){return 40000-spend().cumulativeBilledCharacters;}
-const cycle1=['bio-m8-b12','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13'];const cycle1old=['bio-m8-g03','bio-m8-p01','chem-m5-g02','bio-m8-p02','chem-m8-p03','bio-m8-b06','chem-m8-c04','bio-m8-b07','chem-m8-p04','bio-m8-b08','chem-m8-g02','bio-m8-b09','chem-m8-c05','bio-m8-b10','chem-m8-c06','bio-m8-b11','chem-m8-c08','bio-m8-g01','chem-m8-p05'];
+async function balance(){return (spend().cap??40000)-spend().cumulativeBilledCharacters;}
+const cycle1=['chem-m8-c09','chem-m8-c10','chem-m8-c11a','chem-m8-c11b','chem-m8-c12'];const cycle1nov16a=['bio-m8-b12','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13'];const cycle1old=['bio-m8-g03','bio-m8-p01','chem-m5-g02','bio-m8-p02','chem-m8-p03','bio-m8-b06','chem-m8-c04','bio-m8-b07','chem-m8-p04','bio-m8-b08','chem-m8-g02','bio-m8-b09','chem-m8-c05','bio-m8-b10','chem-m8-c06','bio-m8-b11','chem-m8-c08','bio-m8-g01','chem-m8-p05'];
 const cycle2=['bio-m8-b12','chem-m8-c09','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13','bio-m8-g02'];
 let remaining,initial,active=null,stopReason='';
 try{

@@ -1,0 +1,160 @@
+{
+  "title": "How does proton NMR reveal hydrogen environments? Signals count environments, areas count hydrogens, and lines count neighbours plus one",
+  "subtitle": "Carbon-13 told you ethanol has two kinds of carbon. Its proton spectrum shows three signals, of different sizes, and two are split. What does each feature tell you?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 18.5,
+  "lessonIntent": "counting hydrogen environments; reading a given shift; using areas as a ratio scaled by the formula; explaining and applying the n+1 rule, with the O–H and equivalence limits; reading and predicting a whole spectrum; the ethyl and lone CH₃ patterns.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Carbon-13 told you ethanol has two kinds of carbon. Now look at its proton NMR spectrum. There are three signals, they're different sizes, and two of them are split into little clusters of lines. Each of those features is a separate clue. Read all three, and the spectrum tells you not just which hydrogens are there, but how they're joined."
+      }
+    },
+    {
+      "id": "same-rules",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Proton NMR works the same way as carbon-13, but it watches hydrogen-1 nuclei, called protons here. Electrons shield each hydrogen, nearby electronegative atoms deshield it, and TMS still sets zero. The scale is much shorter, though, from 0 to about 12 ppm. Proton shifts aren't on the data sheet, so an exam question gives you any values you need."
+      }
+    },
+    {
+      "id": "signals",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "First clue: the number of signals. Hydrogens in identical surroundings give one signal, so the signals count the hydrogen environments. In ethanol, the three hydrogens on the end carbon are all alike, and the two on the middle carbon are alike. The O H hydrogen is on its own. That's three environments, so three signals. Symmetry merges hydrogens too, just as it merged carbons."
+      }
+    },
+    {
+      "id": "shift",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Second, where each signal sits. The C H two hydrogens are on the carbon bonded to oxygen. The oxygen pulls electrons away, so they're deshielded, and they appear near 3.7 ppm. The C H three hydrogens are further from the oxygen, so they sit near 1.2. Hydrogens close to an oxygen, a C equals O or a halogen usually land further left."
+      }
+    },
+    {
+      "id": "integration",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Third, how big each signal is. The area under a signal is proportional to the number of hydrogens that make it. The machine draws an integration line that steps up at each signal, and the step heights compare the areas. For ethanol, they come out three to two to one, matching the C H three, the C H two and the O H. It's the area that counts, not the height of the tallest line. And areas give a ratio, not the actual numbers."
+      }
+    },
+    {
+      "id": "why-split",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now the clusters of lines. Each hydrogen on the next carbon is a tiny magnet too. It either lines up with the field, adding a little to it, or against it, taking a little away. Look at the C H three in ethanol. Its two neighbours can be both with, one with and one against, which can happen two ways, or both against. That's three slightly different fields, so the signal splits into three lines, with the middle one twice as tall."
+      }
+    },
+    {
+      "id": "n-plus-one",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That's the n plus one rule. For simple spectra like these, a hydrogen with n equivalent neighbours on the next carbon gives n plus one lines. The C H three has two neighbours, so it's a triplet. The C H two has three neighbours on the methyl side, so it's a quartet. Hydrogens in the same environment don't split each other. And the O H hydrogen swaps between molecules so fast that it usually shows as one line, called a singlet, and doesn't split its neighbours."
+      }
+    },
+    {
+      "id": "bromoethane",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's read one from scratch. A compound C two H five Br gives two signals, so it has two hydrogen environments. The areas are three to two. The smaller signal, near 3.4, is a quartet, so those two hydrogens have three neighbours. The larger, near 1.7, is a triplet, so those three hydrogens have two neighbours. A C H three next to a C H two is an ethyl group, so this is bromoethane. The C H two sits further left because it's bonded to the bromine."
+      }
+    },
+    {
+      "id": "quartet-trap",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the classic trap. A quartet doesn't mean four hydrogens. The number of lines counts the neighbours, plus one. The area counts the hydrogens in the signal itself. So in bromoethane, the quartet is two hydrogens, and the triplet is three. Keep the two questions apart: how many lines, then how big an area."
+      }
+    },
+    {
+      "id": "ethyl-ethanoate",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now a molecule with a surprise. Ethyl ethanoate gives three signals, in the ratio three to two to three. The quartet near 4.1 and the triplet near 1.3 are the ethyl group, and the quartet sits far left because its carbon is bonded to the ester oxygen. The third signal, near 2.0, is a singlet with three hydrogens. A C H three with no hydrogens on the next atom has nothing to split it, and this one sits beside the C equals O."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "One line for the three clues: signals, areas, neighbours plus one. Signals count environments, areas compare hydrogens, and lines count equivalent neighbours, plus one."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. Predict the proton NMR spectrum of methyl propanoate. Give the number of signals, their relative areas and the splitting of each, with reasons. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Three signals, in the ratio three to two to three. The C H three on the oxygen has no hydrogens next door, so it's a singlet. The C H two has three neighbours, so it's a quartet, and the end C H three has two, so it's a triplet. Counting the methyl hydrogens across the ester link as neighbours is the slip: they're not on the next carbon."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A compound C five H ten O gives just two proton signals: a triplet at 1.05 ppm with relative area 3, and a quartet at 2.44 ppm with relative area 2. Identify the compound from the four on the card, and justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's pentan-3-one. A triplet and a quartet in a three to two ratio suggest an ethyl group. But the formula has ten hydrogens, so the real numbers are six and four, which means two identical ethyl groups. Of these candidates, only the symmetrical pentan-3-one gives two signals, and the quartet at 2.44 fits a C H two next to the C equals O. Reading three to two as five hydrogens, and one ethyl group, is the trap."
+      }
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, with a proton spectrum, ask four questions. How many signals? Where does each one sit? How big is each area? And how many lines? Then build a structure that explains every one. Next, you'll combine mass spectrometry, infrared and both kinds of NMR to identify a single molecule."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

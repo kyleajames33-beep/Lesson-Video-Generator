@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C10-claude-2026-11-16-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c10/lesson.json",
+  "lessonSha256": "9542cc7f0343fe250a31203d07739eb2ea452b275c04d8af2065ce90328db0ad",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c10/lesson.production-brief.json",
+    "sha256": "3fb4377630ffd1a1d7680d0a7ba4a811002346ba29fdaad2d18cdc0caacf193f"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Remember the bottle that gave no change in all three tests? It could be cyclohexane, or it could be 2-methylpropan-2-ol, a tertiary alcohol that leaves dichromate orange. But one of them has an O H group and the other doesn't. An infrared spectrum shows bonds directly, so it can settle this quickly.",
+      "hash": "28f69e8a4b9a",
+      "textSha256": "28f69e8a4b9aec7e52349391a12213967156de7567d8f6586ac6aab84f34f822",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/hook.28f69e8a4b9a.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/hook.28f69e8a4b9a.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/hook.28f69e8a4b9a.generation.json",
+      "plannedRequestSha256": "7cda9da0afdb40b91418e2e46437ea0ca6ab13b409b49e52b8a8bd3d836b18c1"
+    },
+    {
+      "id": "bonds-vibrate",
+      "parentSceneId": "bonds-vibrate",
+      "text": "Every covalent bond vibrates, a bit like two balls joined by a spring. The bond stretches and squashes, and it can bend. Each kind of bond has its own natural rate of vibration. Shine infrared light through a sample, and a bond absorbs the infrared that matches its rate. That light doesn't come out the other side, so the instrument records a dip.",
+      "hash": "d8de37f1e9d0",
+      "textSha256": "d8de37f1e9d08909231d852ee4df41da4bcc81457be7b735d56ab9085cf944f2",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bonds-vibrate.d8de37f1e9d0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bonds-vibrate.d8de37f1e9d0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bonds-vibrate.d8de37f1e9d0.generation.json",
+      "plannedRequestSha256": "8f91cc88afd12b31c657cafa9df7519b9ec885753c782e3d54c2c94b8db9739f"
+    },
+    {
+      "id": "reading-chart",
+      "parentSceneId": "reading-chart",
+      "text": "Up the side is transmittance, the percentage of light that gets through. An absorption shows up as a dip pointing down. Along the bottom is wavenumber, in reciprocal centimetres. It's the number of waves that fit in one centimetre, and a higher wavenumber means more energy. Notice that the scale runs backwards, from four thousand on the left to about five hundred on the right.",
+      "hash": "05c34e298999",
+      "textSha256": "05c34e2989993add8f5fad3785af00a7479d8c26b9e0747a13a1aacf181a6b6a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/reading-chart.05c34e298999.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/reading-chart.05c34e298999.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/reading-chart.05c34e298999.generation.json",
+      "plannedRequestSha256": "3320005160ce7d18abb337bfa156aa0a804fe0bbbd367c4e4aed342c86f4454a"
+    },
+    {
+      "id": "what-sets-position",
+      "parentSceneId": "what-sets-position",
+      "text": "Think of the spring again. The atoms are the balls, and the bond is the spring. A stiffer spring vibrates faster, so a stronger bond absorbs at a higher wavenumber. So a C equals O double bond sits near seventeen hundred, above a C O single bond. Lighter balls vibrate faster too. Hydrogen is the lightest atom, so bonds to hydrogen sit at the high end, near three thousand and above. The analogy has a limit: a spring can vibrate with any energy, but a bond only absorbs particular ones.",
+      "hash": "eda0d0c7990d",
+      "textSha256": "eda0d0c7990df7db7d8c2bea0fe7f2440f206d52ea7a9334b5e8f22805ec1f1e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/what-sets-position.eda0d0c7990d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/what-sets-position.eda0d0c7990d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/what-sets-position.eda0d0c7990d.generation.json",
+      "plannedRequestSha256": "3c5942718fc72064620aa88170b94e48fa382b8cc00b95d5920666c1fa15a3fa"
+    },
+    {
+      "id": "data-sheet",
+      "parentSceneId": "data-sheet",
+      "text": "You don't need to memorise where each bond absorbs, because the data sheet gives the ranges. Your job is to match a dip to a range, and then use the shape and the combination of dips. Four rows do most of the work: O H, C H, C equals O and N H, with help from C O.",
+      "hash": "86b72a73311c",
+      "textSha256": "86b72a73311c5664c04b186ce37d8ece89627dcbf268ffe4af6bb5cb74e84281",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/data-sheet.86b72a73311c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/data-sheet.86b72a73311c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/data-sheet.86b72a73311c.generation.json",
+      "plannedRequestSha256": "0e8647af7492034d5d38fa20a41fe16f0eb81ff9158e5a11da15e51716f0946c"
+    },
+    {
+      "id": "ch-everywhere",
+      "parentSceneId": "ch-everywhere",
+      "text": "Start with C H. Almost every organic molecule has C H bonds, so almost every spectrum has sharp dips just below three thousand. Here's cyclohexane: it shows strong C H dips and very little else above fifteen hundred. So it rarely decides anything. Note it, and look past it.",
+      "hash": "13eeaa82d0fd",
+      "textSha256": "13eeaa82d0fd75ce3fb981777870115daa839b2f517e54f80578e165d9e88f96",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/ch-everywhere.13eeaa82d0fd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/ch-everywhere.13eeaa82d0fd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/ch-everywhere.13eeaa82d0fd.generation.json",
+      "plannedRequestSha256": "52a7d91f34791d087c8154c8c328c59d858bf8d816a681c4f52ec96ebcb721b5"
+    },
+    {
+      "id": "alcohol-oh",
+      "parentSceneId": "alcohol-oh",
+      "text": "Now the O H in an alcohol. Alcohol molecules hydrogen bond to each other, and each hydrogen bond weakens its O H by a slightly different amount. So the O H bonds absorb over a spread of wavenumbers, and you get one broad, rounded band between about thirty-two hundred and thirty-five hundred. In ethanol it's centred near thirty-three forty.",
+      "hash": "27cc39a69a16",
+      "textSha256": "27cc39a69a1639c8d22f894d7d0fc6f9840d7519d2416c0a18d098b58ac616ff",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/alcohol-oh.27cc39a69a16.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/alcohol-oh.27cc39a69a16.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/alcohol-oh.27cc39a69a16.generation.json",
+      "plannedRequestSha256": "789bec3b825a6c896cfc40630e07a08c43eb798d83ae3467cde5d391e0b030a2"
+    },
+    {
+      "id": "acid-oh",
+      "parentSceneId": "acid-oh",
+      "text": "A carboxylic acid has an O H too. Acid molecules pair up, held by two strong hydrogen bonds. That weakens each O H even more, and over a wider range, so the band sits lower and is very broad, from about twenty-five hundred to three thousand, running right over the C H dips. An acid also brings a strong C equals O near seventeen ten. So a very broad O H plus a C equals O points to an acid.",
+      "hash": "6ec630e04933",
+      "textSha256": "6ec630e0493376e2fc191eedf1900797474ffd4297df7052c5390d629dbfde82",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/acid-oh.6ec630e04933.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/acid-oh.6ec630e04933.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/acid-oh.6ec630e04933.generation.json",
+      "plannedRequestSha256": "4f295728c5b1db1b444c9cdcc19de90cd8a6c448d3187d8dee743446ecda139e"
+    },
+    {
+      "id": "carbonyl",
+      "parentSceneId": "carbonyl",
+      "text": "The C equals O dip is one of the easiest to spot: strong and sharp, between sixteen eighty and seventeen fifty. Propanone, a ketone, shows it at about seventeen fifteen, with no O H band at all. But ketones, aldehydes, esters and acids all have a C equals O. So this dip tells you there's a carbonyl group, not which kind. The other dips, and the formula, help you decide.",
+      "hash": "74ccc7dc5253",
+      "textSha256": "74ccc7dc52536349126aa3f586d44357b32926d8e1acbad7425a28cbd33b0ef9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/carbonyl.74ccc7dc5253.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/carbonyl.74ccc7dc5253.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/carbonyl.74ccc7dc5253.generation.json",
+      "plannedRequestSha256": "48d686425ff9d80ef215298b3e43bc33d420c8d96b258a747fa4d2d7be2a5246"
+    },
+    {
+      "id": "nh",
+      "parentSceneId": "nh",
+      "text": "Primary and secondary amines have N H bonds, which absorb from thirty-three hundred to thirty-five hundred, overlapping the alcohol O H range. But an N H dip is narrower and weaker than an O H band. Propan-1-amine, with an N H two group, shows two N H bands.",
+      "hash": "8086a2bf2023",
+      "textSha256": "8086a2bf2023abd1b623244773f6b94a1f990faf3ba1c87bbf414645a4227d5f",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/nh.8086a2bf2023.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/nh.8086a2bf2023.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/nh.8086a2bf2023.generation.json",
+      "plannedRequestSha256": "184478aebecc4326fe369061749a3e0f317eaed72f417ee251b89e266efb72a4"
+    },
+    {
+      "id": "fingerprint",
+      "parentSceneId": "fingerprint",
+      "text": "Below about fifteen hundred, the spectrum gets crowded. Whole groups of atoms vibrate together, and every molecule makes its own pattern, so it's called the fingerprint region. Propan-1-ol and propan-2-ol have the same kinds of bond, so they show the same bands above fifteen hundred, but their fingerprints differ. Use it to match a known spectrum, and to pick out a strong C O band between one thousand and thirteen hundred.",
+      "hash": "91bf17b7a114",
+      "textSha256": "91bf17b7a1148fce732f6396b7086f7a3f1ad718a2c4e047db73df4426323b48",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/fingerprint.91bf17b7a114.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/fingerprint.91bf17b7a114.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/fingerprint.91bf17b7a114.generation.json",
+      "plannedRequestSha256": "e82ffce1a0b90fdfa3b04c636516e5a613b2022415fcf2231521c4df2540b874"
+    },
+    {
+      "id": "routine",
+      "parentSceneId": "routine",
+      "text": "So here's a routine. Scan from the left. Is there a broad O H around thirty-three hundred? A very broad one, from twenty-five hundred to three thousand? A strong C equals O near seventeen hundred? A strong C O between one thousand and thirteen hundred? And a missing band is evidence too. No dip between sixteen eighty and seventeen fifty rules out the carbonyl candidates on your list.",
+      "hash": "c4aa61a2b965",
+      "textSha256": "c4aa61a2b9650173cff4e24620d7108019dd1e0883d80417590c7d474f311338",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/routine.c4aa61a2b965.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/routine.c4aa61a2b965.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/routine.c4aa61a2b965.generation.json",
+      "plannedRequestSha256": "afe6fd19273136234f457ad8db49cfad1efd34078816394ee07a9e0d99ac8b83"
+    },
+    {
+      "id": "bottle-y",
+      "parentSceneId": "bottle-y",
+      "text": "Back to the bottle. Its spectrum has a broad, rounded band centred near thirty-three seventy. That's an alcohol O H. There's no C equals O dip, and there's a strong band near twelve hundred, in the C O range. Cyclohexane has no O H and no C O, so it can't give these dips. The bottle holds 2-methylpropan-2-ol. The spectrum found the O H that the tests couldn't see.",
+      "hash": "72d36468732d",
+      "textSha256": "72d36468732da36a4cbe98340543ea2927e2eca6d281f79d6abe87b03456df3b",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bottle-y.72d36468732d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bottle-y.72d36468732d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/bottle-y.72d36468732d.generation.json",
+      "plannedRequestSha256": "37efc992958afb4e72d48161534cbd47af567ee76eeb3dc268c9944547aaa7cf"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here's a picture to remember: beard plus sword means acid. The very broad acid O H hangs down like a beard, and the sharp C equals O is the sword. A rounded O H with no sword points to an alcohol.",
+      "hash": "b624d75d843c",
+      "textSha256": "b624d75d843c9d21b489c7f003b82b164c2319f7b84f04199389657d6b3df7ce",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/memory-aid.b624d75d843c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/memory-aid.b624d75d843c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/memory-aid.b624d75d843c.generation.json",
+      "plannedRequestSha256": "b0531463b60d791fe3a49fa8726f6cbc0b21bb694da64c24e2dd5d7c7a64b588"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. Compound X is either butanoic acid or ethyl ethanoate. Use the spectrum and the band values on the card to identify X, and justify your answer. Pause here to answer.",
+      "hash": "e7ebdada2805",
+      "textSha256": "e7ebdada28054ea92d131602890b21b67760f3cbe4e940b3d290fb722585786c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-1.e7ebdada2805.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-1.e7ebdada2805.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-1.e7ebdada2805.generation.json",
+      "plannedRequestSha256": "19a827f7700a1b5088e1715b2056d28612e2ddef833d1866a1363f86761a9b06"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Both candidates have a C equals O, so the dip at seventeen forty doesn't decide. The missing band does. An acid would show a very broad O H from twenty-five hundred to three thousand, and X has none. The C O dips at twelve forty and ten fifty fit an ester. So X is ethyl ethanoate. Calling it an acid because it has C equals O and C O is the slip: no beard, no acid.",
+      "hash": "04bf91d5fe88",
+      "textSha256": "04bf91d5fe88c49e0b354e995a292655fbd85084f1a7c1b222fc272c88d43c99",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-1.04bf91d5fe88.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-1.04bf91d5fe88.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-1.04bf91d5fe88.generation.json",
+      "plannedRequestSha256": "8b023ffbd1cb1230ec2fb54fc7f91c0def6466b955758f93cf692ce94b281c72"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Liquid Z is either an alcohol or an aldehyde, and it turns acidified dichromate green. Use the spectrum on the card to identify the type of compound, and explain why the dichromate result alone couldn't. Pause here to answer.",
+      "hash": "76dbb5fc9cf0",
+      "textSha256": "76dbb5fc9cf0d5e13610c1a90d2ae6d3cbd48966b55f209b8203fe324cf3dda6",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-2.76dbb5fc9cf0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-2.76dbb5fc9cf0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/attempt-2.76dbb5fc9cf0.generation.json",
+      "plannedRequestSha256": "8477a1c0818edf243647a40f826399c94075365b05b7a60908ea0a7eb421ba8c"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "Green only shows something was oxidised, and aldehydes do that as well as primary and secondary alcohols. Nothing between sixteen eighty and seventeen fifty means no C equals O, so Z isn't an aldehyde. The broad band at thirty-three thirty is an alcohol O H. So Z is a primary or secondary alcohol. Calling the dips near twenty-nine sixty the O H is the trap: they're C H.",
+      "hash": "e567b8b234bb",
+      "textSha256": "e567b8b234bb34b3db3bfb8b55070b00534f07ceca43773d6b2aff6adc96ebfc",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-2.e567b8b234bb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-2.e567b8b234bb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/feedback-2.e567b8b234bb.generation.json",
+      "plannedRequestSha256": "323dee6bfc1f6e33931200cce45126ed68e4e98c9a2b0e4eb555fe0137cfec2c"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, when you meet an infrared spectrum, scan from left to right. Check the O H region and its shape, then the C equals O, then the C O. Name each bond from the data sheet, say what's missing, and combine it with the formula and the mass. Next, NMR, which shows how the carbon and hydrogen atoms are arranged.",
+      "hash": "9df677479332",
+      "textSha256": "9df67747933200353034ff0c69a5c3784b35079d76f1e5d5346cf44ffc05f4d5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/decision-handoff.9df677479332.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/decision-handoff.9df677479332.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/decision-handoff.9df677479332.generation.json",
+      "plannedRequestSha256": "a6e252669377a7363a463fc892d3020afa494d7b93ce389d738550016255c5ff"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C10-claude-2026-11-16-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

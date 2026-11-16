@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C12-claude-2026-11-16-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c12/lesson.json",
+  "lessonSha256": "6fd3ff6aa54dc1d950764672372f959b409139d2f34ab90081e7a2276ca4adad",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c12/lesson.production-brief.json",
+    "sha256": "dd225b556264e5d2f70a490e13ddef12891076135755a25ee2b19649d4b19464"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "Remember the stockroom bottle from the mass spectrometry video? Its molecular ion was at seventy-two, and four candidate structures were still in the running. That spectrum couldn't finish the job, and no single spectrum can. But now you've met infrared and both kinds of NMR. Put the evidence together, and only one structure should survive.",
+      "hash": "d026837c4ec0",
+      "textSha256": "d026837c4ec0708040d615301fb38399388c9dd4f10410cdcd0c9e3ea74200a0",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/hook.d026837c4ec0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/hook.d026837c4ec0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/hook.d026837c4ec0.generation.json",
+      "plannedRequestSha256": "158d4d18d7d7f07fe349101b5d0cfb14965081321671d943c67aba0511745e21"
+    },
+    {
+      "id": "technique-roles",
+      "parentSceneId": "technique-roles",
+      "text": "Each technique answers a different question. Mass spectrometry asks how heavy the molecule is, and which pieces break off. Infrared asks which bonds are there, and which are missing. Carbon-13 NMR counts the kinds of carbon. Proton NMR shows the kinds of hydrogen, how many of each, and how many neighbours they have. A good order to start with is mass, then groups, then the map. The right structure has to agree with every one of them.",
+      "hash": "c2a4c459bb3b",
+      "textSha256": "c2a4c459bb3b4092f1fb1a97c7badc7254a8932becd2e24b5e359802a2f14b2d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/technique-roles.c2a4c459bb3b.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/technique-roles.c2a4c459bb3b.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/technique-roles.c2a4c459bb3b.generation.json",
+      "plannedRequestSha256": "f0a51a5839d8b2ebceb58c4cd44b459127b02c106d851c15db4969eea840558e"
+    },
+    {
+      "id": "mass-formula",
+      "parentSceneId": "mass-formula",
+      "text": "Step one, the mass. The molecular ion at seventy-two gives the molecular mass. But on its own, seventy-two could also be C five H twelve, with no oxygen at all. We were told each molecule has one oxygen, and that's what turns seventy-two into C four H eight O. So the mass narrows the formula, and the elements present fix it.",
+      "hash": "4d3d70215e59",
+      "textSha256": "4d3d70215e5951bc18aa5f6ff9f4ee4ef39bf3c8ae12a5ae3e9092b36a5fb528",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/mass-formula.4d3d70215e59.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/mass-formula.4d3d70215e59.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/mass-formula.4d3d70215e59.generation.json",
+      "plannedRequestSha256": "b1e32b3619ba25e1072bfd797981eed73665a53e4906ce5fa4678d84218340c7"
+    },
+    {
+      "id": "ir-groups",
+      "parentSceneId": "ir-groups",
+      "text": "Step two, the bonds. The infrared spectrum has a strong, sharp dip at seventeen fifteen, so there's a C equals O. Just as useful is what's missing. There's no broad band between thirty-two thirty and thirty-five fifty, so there's no O H. That rules out but-3-en-2-ol. The one oxygen must be in the C equals O, so this is an aldehyde or a ketone. With four carbons, there are only three of those: butanone, butanal and 2-methylpropanal.",
+      "hash": "87b6509f5d7d",
+      "textSha256": "87b6509f5d7d2c3cf8b1916d3c9358454fff34ef1e28557bbf83a3c2c8caf48a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/ir-groups.87b6509f5d7d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/ir-groups.87b6509f5d7d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/ir-groups.87b6509f5d7d.generation.json",
+      "plannedRequestSha256": "3a2e94c780bca803c9cc4e1727b14db0e689d21b0283f9e16639bb24aa6abfd9"
+    },
+    {
+      "id": "carbon-map",
+      "parentSceneId": "carbon-map",
+      "text": "Step three, the carbon map. The carbon-13 spectrum shows four peaks, so there are four different carbon environments. In 2-methylpropanal, the two methyl carbons swap places, so it would give only three peaks. That one's out. The peak near two hundred and nine is the C equals O carbon. But the data sheet range for aldehydes and ketones covers both, so this peak can't decide between the last two.",
+      "hash": "50fb4b4cfd64",
+      "textSha256": "50fb4b4cfd643a8c25266bb63def936f69a23c9db7e912d7c0ab1dc517bee88d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/carbon-map.50fb4b4cfd64.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/carbon-map.50fb4b4cfd64.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/carbon-map.50fb4b4cfd64.generation.json",
+      "plannedRequestSha256": "e563b0617ae24cbfca6bdea326625091ab3cdbd794a0341b255249de2c90dbcd"
+    },
+    {
+      "id": "proton-map",
+      "parentSceneId": "proton-map",
+      "text": "Step four, the hydrogens. There are three signals, with areas two to three to three. That adds up to eight, the same as the formula, so these are the real numbers. A quartet with two hydrogens and a triplet with three is an ethyl group. The third signal is a singlet with three hydrogens: a C H three with no hydrogens next door. At about 2.1, it fits a C H three beside the C equals O.",
+      "hash": "2938a303efa8",
+      "textSha256": "2938a303efa8b6bbce5af0f1017d81e9a18612618930b5e0cab752e35096c651",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/proton-map.2938a303efa8.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/proton-map.2938a303efa8.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/proton-map.2938a303efa8.generation.json",
+      "plannedRequestSha256": "7ca0bcff6985a3a62cce100cf17aaa8ad82e3503b6dfbbf43697bda3407ef0c8"
+    },
+    {
+      "id": "assemble",
+      "parentSceneId": "assemble",
+      "text": "Now build it. You have an ethyl group, a C H three with no neighbours, and a C equals O, which makes four carbons. There's only one way to join them: the C H three on one side of the C equals O, and the ethyl group on the other. That's butanone.",
+      "hash": "502e07b9a686",
+      "textSha256": "502e07b9a686783499ad1ade18012d8261a77b6c3a6e693459c312be6c597f5c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/assemble.502e07b9a686.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/assemble.502e07b9a686.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/assemble.502e07b9a686.generation.json",
+      "plannedRequestSha256": "3871ea488be0113b38c52fd4b2ce0746df82e84f11055ba200d913e4d66cfe7a"
+    },
+    {
+      "id": "rival-isomer",
+      "parentSceneId": "rival-isomer",
+      "text": "But could it still be butanal? Test it the other way round. Predict what butanal would show, then look for it. Butanal has a hydrogen on its C equals O carbon, and that gives a signal far left, near 9.8 ppm. It would also give four proton signals, and no singlet with three hydrogens. This spectrum has none of that. One clear contradiction is enough to rule a structure out, even when other clues fit.",
+      "hash": "eae823f99b17",
+      "textSha256": "eae823f99b17a464f140d008fe03575b1828a1dfce2fb1c32ec321f6c863a00e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/rival-isomer.eae823f99b17.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/rival-isomer.eae823f99b17.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/rival-isomer.eae823f99b17.generation.json",
+      "plannedRequestSha256": "1f88c007ca7737302fb0c73eb29b778596e0841a6c338b6dac95307c764b552b"
+    },
+    {
+      "id": "check-every-clue",
+      "parentSceneId": "check-every-clue",
+      "text": "Then check butanone against every clue. It's like a crossword: each answer has to fit every answer that crosses it. Butanone weighs seventy-two. Its pieces explain the peaks at forty-three and fifty-seven. It has a C equals O and no O H, four kinds of carbon, and three kinds of hydrogen in the ratio two to three to three. Every spectrum agrees, so butanone is strongly supported. That's the bottle solved.",
+      "hash": "46ac8b045d6d",
+      "textSha256": "46ac8b045d6d8a465a45d6ec2fe10e54ac0f8a737685fc6d792443f4cf4fee2a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/check-every-clue.46ac8b045d6d.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/check-every-clue.46ac8b045d6d.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/check-every-clue.46ac8b045d6d.generation.json",
+      "plannedRequestSha256": "a839448a95cdddc58456fdb483fce162b9da7ef1e8728ccc95116051f8329d52"
+    },
+    {
+      "id": "corroborate",
+      "parentSceneId": "corroborate",
+      "text": "Sometimes one technique settles it fast. Ethanoic acid and methyl methanoate are both C two H four O two, with a molecular ion at sixty. The acid shows a very broad O H band from twenty-five hundred to three thousand, and the ester has none. That one band decides. A second technique should agree: in the proton spectrum, the acid's O H hydrogen sits beyond ten ppm, while the ester's H C O O hydrogen sits near eight. Two independent clues pointing the same way make a much stronger case than one.",
+      "hash": "606724a4b4c0",
+      "textSha256": "606724a4b4c066e98e26ff2a91a7f0de8838b879daba57e1c6af938f652c8736",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/corroborate.606724a4b4c0.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/corroborate.606724a4b4c0.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/corroborate.606724a4b4c0.generation.json",
+      "plannedRequestSha256": "707fa46b7c7cb04d81059578ed811ff79c888dd8a0a9f4c60bc178cb6bea2cc2"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "One line to keep: mass, groups, map, then check every clue. And remember, one contradiction rules a structure out.",
+      "hash": "b6a511409e75",
+      "textSha256": "b6a511409e75b9ea1b93cda448c767077ab6455c6e2dd55f0a17d02180fd28ef",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/memory-aid.b6a511409e75.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/memory-aid.b6a511409e75.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/memory-aid.b6a511409e75.generation.json",
+      "plannedRequestSha256": "b37184b96ecaf36ec010318c4a9858a2d2d7ab61408c6a7bc32d399eb175bcb9"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. This compound contains only carbon, hydrogen and chlorine. Use its mass spectrum and both NMR spectra to identify it, and justify your answer with each spectrum. Pause here to answer.",
+      "hash": "b29985102621",
+      "textSha256": "b299851026214e819f27b7a37cafd98309486b960f6a0720275c38b8241aceb4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-1.b29985102621.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-1.b29985102621.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-1.b29985102621.generation.json",
+      "plannedRequestSha256": "fabe38ba99c712fb2e5206ec32da6255cec352e79d631a45c67ea3cc3a45fedf"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "It's 2-chloropropane. Peaks at seventy-eight and eighty, three to one, mean one chlorine, and seventy-eight minus thirty-five leaves C three H seven. Only two carbon peaks means symmetry, so it isn't 1-chloropropane. The doublet's six hydrogens have one neighbour, and the septet's one hydrogen has six. Using eighty alone for the formula is the slip: it's the chlorine-37 M plus two partner.",
+      "hash": "5bd5178d5dc7",
+      "textSha256": "5bd5178d5dc7a33be829f52e57f40c3bae30301e00d40fc37e47354115e54da5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-1.5bd5178d5dc7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-1.5bd5178d5dc7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-1.5bd5178d5dc7.generation.json",
+      "plannedRequestSha256": "12c5f7acff716147293e8fdb1c4304fd59d78eaa3ff135dc0fb90c67cdc606a1"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. Compound Z is C five H ten O two, and it's one of the four compounds on the card. Use the infrared and proton NMR data to identify it, and justify your answer. Pause here to answer.",
+      "hash": "9ef87addcc28",
+      "textSha256": "9ef87addcc2833cd312979b0e0fab020370258a75aa08b235874aa57ee93158e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-2.9ef87addcc28.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-2.9ef87addcc28.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/attempt-2.9ef87addcc28.generation.json",
+      "plannedRequestSha256": "9fc0f3fc25fd166353da4f52b55e87728e8fcaca4200a08087a9f55e4146afb9"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "It's ethyl propanoate. There's no broad band from twenty-five hundred to thirty-five fifty, so no O H, which rules out pentanoic acid. Two quartets and two triplets mean two separate ethyl groups. The quartet at 4.12 is on the ester oxygen, and the one at 2.32 sits beside the C equals O. Thinking any O C H two also fits propyl ethanoate is the trap: a quartet needs a C H three next door.",
+      "hash": "4bf02bcbe551",
+      "textSha256": "4bf02bcbe551578c0f355deeec81878e8962a4a3078d8f0b5316a60777dad768",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-2.4bf02bcbe551.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-2.4bf02bcbe551.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/feedback-2.4bf02bcbe551.generation.json",
+      "plannedRequestSha256": "4293d59a07697e61192560678bf8c96c2fe1b8392b618aadb8f15d766fb93033"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, when you're given several spectra, take them in order. Mass and the elements for the formula. Infrared for the groups, present and missing. Carbon-13 for the kinds of carbon, and proton NMR for the hydrogens and their neighbours. Build a structure, then try the closest isomer and look for a contradiction. Next, practice questions that mix chemical tests with spectra.",
+      "hash": "86b3088a26a7",
+      "textSha256": "86b3088a26a7bd4b2ed16ae07bb833bc1ce8587c2fd53db18d1f558005b71690",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/decision-handoff.86b3088a26a7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/decision-handoff.86b3088a26a7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/decision-handoff.86b3088a26a7.generation.json",
+      "plannedRequestSha256": "4390a7afb9f9d64caf158a8b7e60d5ed96b36d86901e306c39e0e161a0df96bc"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C12-claude-2026-11-16-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

@@ -33,3 +33,7 @@ Resolved in `../lessons/chem-m8-c11a.md` Revision 2 (31 Oct; root resolver, Clau
 | 3 | Open (blocker; partly fixed) | The confirmed environment counts and the data sheet match (2024 paper, page 42) are recorded under Numbers to verify. Every shift is now marked provisional, with a build gate: no spectrum is drawn and no shift voiced until each compound has an inspected database record with accession and solvent, and any value more than 1 ppm off changes. Open for the Codex error check. |
 
 Consistency with C09, C10 and C11b: the propanols, ethanol and ethyl ethanoate carry no conflicting carbon data across the set; the sample tube plate is shared with C11b unchanged.
+
+## Resolution update, Revision 4 (16 Nov 2026)
+
+Finding S3 (inspected carbon-13 records for every shift): data supplied. Brief 246 (`chem-m8-c10-c12-measured-spectra.md`) gives measured records for the held values, and `../lessons/chem-m8-c11a.md` Revision 4 applies them (author: Claude designer; the change list is in that design's "Revision 4 (16 Nov): measured spectra applied" section). Any remaining items are listed there as open items, and none is a drawn, printed or spoken value. This note records the author's resolution only. Independent confirmation is root's readiness review, which is pending.

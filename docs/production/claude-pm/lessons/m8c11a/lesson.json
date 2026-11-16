@@ -1,0 +1,160 @@
+{
+  "title": "How does carbon-13 NMR count carbon environments? Shielding sets the shift, symmetry merges carbons, and the data sheet names each peak",
+  "subtitle": "Propan-1-ol and propan-2-ol share a formula, a molecular ion and an O–H band. How can carbon-13 NMR tell them apart at a glance?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 18,
+  "lessonIntent": "explaining resonance and shielding in a sentence each; reading the ppm scale; counting carbon environments with symmetry; explaining single lines and why heights aren't counts; assigning shifts from the data sheet; choosing between candidates with the count, shifts and formula.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Propan-1-ol and propan-2-ol share the formula C three H eight O, so in a mass spectrum both molecular ions sit at 60. Both are alcohols, so both infrared spectra show the broad O H band. So how do you tell them apart? Run a carbon-13 NMR spectrum. One gives three peaks, and the other gives two. By the end of this video, you'll know which is which, and why."
+      }
+    },
+    {
+      "id": "tiny-magnets",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "NMR stands for nuclear magnetic resonance. Some nuclei, like hydrogen-1 and carbon-13, behave like tiny bar magnets. Ordinary carbon-12 doesn't, so the machine can't see it. Put the sample in a very strong magnet, and these tiny magnets line up either with the field or against it. Lining up against it takes a little more energy. A pulse of radio waves at exactly the right frequency flips them, and that absorption is the resonance the machine detects."
+      }
+    },
+    {
+      "id": "shielding",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the useful part. Every nucleus sits inside a cloud of electrons, and those electrons shield it a little from the big magnet. Now bond that carbon to an oxygen. Oxygen is electronegative, so it pulls electron density away, and the carbon feels more of the field. We say it's deshielded. It needs a slightly higher frequency to flip, so its peak lands in a different place."
+      }
+    },
+    {
+      "id": "scale-tms",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "That position is the chemical shift, measured in parts per million, or ppm. The scale runs backwards, from right to left. Zero is set by a reference compound called TMS, which is added to the sample, and its peak isn't counted. The more deshielded a carbon is, the further left its peak sits. For carbon-13, nearly every peak lands between 0 and about 220 ppm."
+      }
+    },
+    {
+      "id": "environments",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what makes two carbons give the same peak? They need identical surroundings, which chemists call the same environment. In ethanol, one carbon is bonded to the oxygen and the other isn't. They're in different environments, so the spectrum shows two peaks. The carbon next to the oxygen is deshielded, so it sits further left, near 58 ppm. The other sits near 18. That's the key rule: count the peaks, and you've counted the carbon environments."
+      }
+    },
+    {
+      "id": "symmetry",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Back to the propanols. In propan-1-ol, the O H sits on the end carbon. Each of the three carbons has a different set of neighbours, so you get three peaks. In propan-2-ol, the O H sits on the middle carbon. Draw a mirror line through it, and the two end carbons swap places. Carbons that swap share one environment, so propan-2-ol gives just two peaks. Same formula, different count."
+      }
+    },
+    {
+      "id": "swap-test",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Try the swap test on two ketones. Butan-2-one has its C equals O on the second carbon. Walk in from each end and the routes differ, so all four carbons are different, giving four peaks. Pentan-3-one has five carbons, but its C equals O sits right in the middle. The two sides match, so it gives only three peaks. Counting carbon atoms isn't the same as counting environments."
+      }
+    },
+    {
+      "id": "single-lines",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "You might expect a taller peak to mean more carbons. Not here. Only about one carbon atom in a hundred is carbon-13, so two of them are rarely bonded together. The machine is also run so that neighbouring hydrogens can't split the carbon signals, which is called decoupling. So each environment shows as one sharp line. Peak heights in carbon-13 aren't reliable counts, so don't read them as ratios. Count the lines, and read where they sit."
+      }
+    },
+    {
+      "id": "data-sheet",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Where a peak sits tells you what kind of carbon it is. You don't need to memorise the ranges, because they're printed on the data sheet. Take ethyl ethanoate, an ester with four carbon environments. The peak at 171 falls in the ester and acid range, 160 to 185, so it's the C equals O carbon. The peak at 60 falls in the C O range, 50 to 90, so it's the carbon bonded to the ester oxygen. The peaks at 21 and 14 are alkyl carbons, further from the oxygens, on the right."
+      }
+    },
+    {
+      "id": "overlap",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The ranges overlap, so one shift can fit more than one kind of carbon. A peak at 21 fits plain alkyl, and it also fits a carbon next to a C equals O. A peak at 70 could be a carbon bonded to oxygen, or one bonded to chlorine or bromine. So check the formula. If there's no chlorine or bromine in it, the 70 points to a C O carbon. A shift narrows the choices, and the count and the formula finish the job."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Two lines to keep. Carbons that swap places share a peak. And further left means more deshielded, so check the data sheet to name each peak's group."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. The four alcohols on the card all have the formula C four H ten O. One of them gives a carbon-13 spectrum with just two peaks, at 69 and 31 ppm. Which alcohol is it, and why? Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's 2-methylpropan-2-ol. Its three methyl groups all swap places around the central carbon, so they give one peak, at 31. The central carbon carries the O H, so it sits in the C O range, at 69. Butan-1-ol and butan-2-ol give four peaks, and 2-methylpropan-1-ol gives three. Expecting four peaks from four carbons is the slip."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A compound with the formula C three H six O two is either propanoic acid or methyl ethanoate. Its carbon-13 spectrum has peaks at 171, 52 and 21 ppm. Identify the compound, and use the data sheet to justify your answer. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "It's methyl ethanoate. The peak at 171 is a C equals O carbon, but the 160 to 185 range covers acids and esters, so it can't decide. The peak at 52 does. It sits in the C O range, so one carbon is joined to an oxygen by a single bond, and that's the ester's methyl group. Propanoic acid has no peak in that range. Calling 171 an acid is the trap."
+      }
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, with a carbon-13 spectrum, count the peaks to count the carbon environments, and use symmetry to merge carbons that swap. Then read each shift off the data sheet, and let the formula settle any overlap. Next, proton NMR, where the peaks carry even more: how many hydrogens there are, and who their neighbours are."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

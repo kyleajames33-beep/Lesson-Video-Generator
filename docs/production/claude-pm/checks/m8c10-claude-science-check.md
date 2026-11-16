@@ -44,3 +44,7 @@ Resolved in `../lessons/chem-m8-c10.md` Revision 2 (31 Oct; root resolver, Claud
 | 6 | Fixed (as supplied) | Numbers to verify now gives the measured centres and actual %T for cyclohexane (Coblentz 6045), 2-methylpropan-2-ol (6880) and butan-1-ol (6915), including the missing deep features (for example 1235 and 909 for 2-methylpropan-2-ol; 1427, 1106 and 1004 for butan-1-ol). The draw rule is the point CSVs. Narrated values (3370, 1200, card 3330 and 1070) stay within 15 cm⁻¹. |
 
 Open for the Codex error check: measured traces for ethanol, ethanoic acid, propanone, propan-1-amine, propan-1-ol, propan-2-ol and ethyl ethanoate. Consistency with C09, C11a and C11b: compounds shared across the set (ethanol, the propanols, ethyl ethanoate, butan-1-ol) carry no conflicting values.
+
+## Resolution update, Revision 4 (16 Nov 2026)
+
+Finding 3 (measured traces for seven compounds): data supplied. Brief 246 (`chem-m8-c10-c12-measured-spectra.md`) gives measured records for the held values, and `../lessons/chem-m8-c10.md` Revision 4 applies them (author: Claude designer; the change list is in that design's "Revision 4 (16 Nov): measured spectra applied" section). Any remaining items are listed there as open items, and none is a drawn, printed or spoken value. This note records the author's resolution only. Independent confirmation is root's readiness review, which is pending.

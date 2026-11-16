@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c12/lesson.json",
+    "lessonSha256": "6fd3ff6aa54dc1d950764672372f959b409139d2f34ab90081e7a2276ca4adad"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Remember the stockroom bottle from the mass spectrometry video? Its molecular ion was at seventy-two, and four candidate structures were still in the running. That spectrum couldn't finish the job, and no single spectrum can. But now you've met infrared and both kinds of NMR. Put the evidence together, and only one structure should survive.",
+    "stopsAfter": "giving each technique its question; using mass with the elements present; using present and missing IR bands; counting carbon environments; matching proton areas to the formula and reading patterns; assembling a structure; ruling out a close isomer by a predicted contradiction; checking every clue; recognising corroboration.",
+    "nextLesson": "integrated structure practice with chemical tests and spectra (route chem-m8-g03)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c12.md"
+  ],
+  "teaching": {
+    "task": "The stockroom bottle from the mass spectrometry video still has four candidates. How do you use every spectrum together so that only one structure survives?",
+    "causalExplanation": "(1) one spectrum left four candidates; the right structure must fit every spectrum (1); (2) each technique answers one question; a good order (2); (3) the mass narrows the formula; the stated oxygen fixes it (3); (4) a C=O dip and a missing O–H band rule out the alcohol and leave three carbonyl isomers (4); (5) four ¹³C peaks rule out the symmetrical 2-methylpropanal; the carbonyl peak can't separate aldehyde from ketone (5); (6) proton areas match the formula's 8 H; the ethyl pattern and the lone CH₃ singlet (6); (7) the pieces join one way: butanone (7); (8) predict the close isomer's spectrum and find the contradiction (8); (9) check every clue; strongly supported (9); (10) one band decides, a second technique agrees (10); memory aid (11); attempts (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "Remember the stockroom bottle from the mass spectrometry video? Its molecular ion was at seventy-two, and four candidate structures were still in the running. Each technique answers a different question. Step one, the mass. Step two, the bonds. Step three, the carbon map. Step four, the hydrogens. Now build it. But could it still be butanal? Test it the other way round. Then check butanone against every clue. Sometimes one technique settles it fast. One line to keep: mass, groups, map, then check every clue. Your turn. It's 2-chloropropane. Last one. It's ethyl propanoate. So, when you're given several spectra, take them in order.",
+    "openingDecision": "Remember the stockroom bottle from the mass spectrometry video? Its molecular ion was at seventy-two, and four candidate structures were still in the running. That spectrum couldn't finish the job, and no single spectrum can. But now you've met infrared and both kinds of NMR. Put the evidence together, and only one structure should survive.",
+    "understandingCheck": "Your turn. This compound contains only carbon, hydrogen and chlorine. Use its mass spectrum and both NMR spectra to identify it, and justify your answer with each spectrum. Pause here to answer. Last one. Compound Z is C five H ten O two, and it's one of the four compounds on the card. Use the infrared and proton NMR data to identify it, and justify your answer. Pause here to answer.",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:\n- proton and carbon-13 NMR\n- mass spectrometry\n- infrared spectroscopy (ACSCH130)\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "spectra are coded diagrams only, using the components the c09 to c11b designs specify (c09's stick spectrum and gap bracket; c10's IR trace, band marker, range shade, empty-range shade and data sheet card; c11a's NmrSpectrum in carbon mode with environment rings and data sheet card; c11b's proton mode with multiplets, environment brackets and the integration line), never AI images; every spectrum's values are realistic for the named compound and every drawn peak is listed under \"Numbers to verify\"; the bottle and the three instruments are existing painted plates listed by filename, never stretched; molecules from the coded molecule kit; no people, hands or faces; at most about three bright text items, earlier deductions kept on screen but dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question and its data kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"fits\", \"strongly supported\", \"rules out\" only for a stated candidate that would give a contradicting signal).",
+    "transitionPlan": "heading writes on: \"Which structure fits every clue?\". the instrument plates shrink to the ledger rows, one beside each label. the butanone stick spectrum fills the dock (Numbers to verify; c09 values), its 72 bar gold. butanone's IR trace draws left to right in the dock (Numbers to verify), with c10's IR data sheet card small at the upper right, only the C=O and O–H rows bright. butanone's ¹³C spectrum draws right to left in the dock (four lines near 209, 37, 29 and 8; TMS grey at 0; Numbers to verify), the lines grey at first. butanone's proton spectrum draws in the dock (quartet near 2. the right card clears. butanal enlarges from the strip, its CHO hydrogen ringed. butanone sits centre right; the four ledger rows brighten one at a time as each clue is spoken, and a thin line runs from each row to the part of butanone it explains: \"MS\" to the whole molecule (\"72\"), then the two C–C bonds beside the C=O (\"43, 57\": c09's two break points, grey chip \"c09\"); \"IR\" to the C=O; \"¹³C\" to its four carbons ringed in four colours; \"¹H\" to its three hydrogen sets. the board clears. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions): the formula, the four names as a compact list (one line each), the IR as its two printed observations (no IR trace), the four proton signals with shifts, splitting and areas, and the two printed shift notes. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Which structure fits every clue?\". p03-dropper-bottle-v1.png at left with its coded \"?\" label and chip \"C, H and one O\" (as c09). On \"seventy-two\" a thumbnail of c09's butanone stick spectrum slides in under the bottle with its gold 72 bar (grey chip \"c09\"). On \"four candidate structures\" c09's candidate strip writes along the top: butanone, butanal, 2-methylpropanal, but-3-en-2-ol, each with a small \"72\" chip, all lit. On \"infrared and both kinds of NMR\" three small instrument plates slide in at the right, the same height: m8-ir-spectrometer-v1.png, m8-nmr-machine-v1.png and, beside them, m8-mass-spectrometer-v1.png (uniform scale only). On \"survive\" the evidence ledger draws at the right edge with four empty rows: \"MS\", \"IR\", \"¹³C\", \"¹H\". Bright at the end: the strip and the empty ledger.",
+      "teachingReason": "Remember the stockroom bottle from the mass spectrometry video? Its molecular ion was at seventy-two, and four candidate structures were still in the running.",
+      "narrationCue": "seventy-two / four candidate structures / infrared and both kinds of NMR / survive",
+      "motionPurpose": "heading writes on: \"Which structure fits every clue?\". p03-dropper-bottle-v1.png at left with its coded \"?\" label and chip \"C, H and one O\" (as c09). On \"seventy-two\" a thumbnail of c09's butanone stick spectrum slides in under the bottle with its gold 72 bar (grey chip \"c09\"). On \"four candidate structures\" c09's candidate strip writes along the top: butanone, butanal, 2-methylpropanal, but-3-en-2-ol, each with a small \"72\" chip, all lit. On \"infrared and both kinds of NMR\" three small instrument plates slide in at the right, the same height: m8-ir-spectrometer-v1.png, m8-nmr-machine-v1.png and, beside them, m8-mass-spectrometer-v1.png (uniform scale only). On \"survive\" the evidence ledger draws at the right edge with four empty rows: \"MS\", \"IR\", \"¹³C\", \"¹H\". Bright at the end: the strip and the empty ledger.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Which structure fits every clue?\". p03-dropper-bottle-v1.png at left with its coded \"?\" label and chip \"C, H and one O\" (as c09). On \"seventy-two\" a thumbnail of c09's butanone stick spectrum slides in under the bottle with its gold 72 bar (grey chip \"c09\"). On \"four candidate structures\" c09's candidate strip writes along the top: butanone, butanal, 2-methylpropanal, but-3-en-2-ol, each with a small \"72\" chip, all lit. On \"infrared and both kinds of NMR\" three small instrument plates slide in at the right, the same height: m8-ir-spectrometer-v1.png, m8-nmr-machine-v1.png and, beside them, m8-mass-spectrometer-v1.png (uniform scale only). On \"survive\" the evidence ledger draws at the right edge with four empty rows: \"MS\", \"IR\", \"¹³C\", \"¹H\". Bright at the end: the strip and the empty ledger.",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "m8-ir-spectrometer-v1.png",
+        "m8-nmr-machine-v1.png",
+        "m8-mass-spectrometer-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (the bottle comes back): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "technique-roles",
+      "visualDecision": "new",
+      "visualReference": "the instrument plates shrink to the ledger rows, one beside each label. As each technique is named, its ledger row widens briefly and a grey question writes in it: \"MS: how heavy? which pieces?\"; \"IR: which bonds? which missing?\"; \"¹³C: how many kinds of C?\"; \"¹H: which H, how many, how many neighbours?\". On \"map\" a chip row writes under the heading: \"mass → groups → map\" (bright; grey chip \"c09: MS: mass → IR: groups → NMR: map\"). On \"every one of them\" a thin bracket joins all four rows, tag \"one structure fits all\". Bright at the end: the chip row and the bracket.",
+      "teachingReason": "Each technique answers a different question.",
+      "narrationCue": "map / every one of them",
+      "motionPurpose": "the instrument plates shrink to the ledger rows, one beside each label. As each technique is named, its ledger row widens briefly and a grey question writes in it: \"MS: how heavy? which pieces?\"; \"IR: which bonds? which missing?\"; \"¹³C: how many kinds of C?\"; \"¹H: which H, how many, how many neighbours?\". On \"map\" a chip row writes under the heading: \"mass → groups → map\" (bright; grey chip \"c09: MS: mass → IR: groups → NMR: map\"). On \"every one of them\" a thin bracket joins all four rows, tag \"one structure fits all\". Bright at the end: the chip row and the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the instrument plates shrink to the ledger rows, one beside each label. As each technique is named, its ledger row widens briefly and a grey question writes in it: \"MS: how heavy? which pieces?\"; \"IR: which bonds? which missing?\"; \"¹³C: how many kinds of C?\"; \"¹H: which H, how many, how many neighbours?\". On \"map\" a chip row writes under the heading: \"mass → groups → map\" (bright; grey chip \"c09: MS: mass → IR: groups → NMR: map\"). On \"every one of them\" a thin bracket joins all four rows, tag \"one structure fits all\". Bright at the end: the chip row and the bracket.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one question for each technique: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "mass-formula",
+      "visualDecision": "new",
+      "visualReference": "the butanone stick spectrum fills the dock (Numbers to verify; c09 values), its 72 bar gold. Right card: \"M⁺ = 72\"; then two lines side by side: \"C₅H₁₂ = 72 (no O)\" and \"C₄H₈O = 72 (one O)\". On \"one oxygen\" the bottle chip \"C, H and one O\" pulses and underlines; \"C₅H₁₂\" greys with a strike; \"C₄H₈O\" brightens. On \"fix\" a crossed chip fades in: \"the mass fixes the formula\" (caption \"mass narrows it; the elements fix it\"). The spectrum shrinks into the \"MS\" ledger row, which writes \"72 → C₄H₈O\". Bright at the end: \"C₄H₈O\" and the ledger row.",
+      "teachingReason": "Step one, the mass.",
+      "narrationCue": "one oxygen / fix",
+      "motionPurpose": "the butanone stick spectrum fills the dock (Numbers to verify; c09 values), its 72 bar gold. Right card: \"M⁺ = 72\"; then two lines side by side: \"C₅H₁₂ = 72 (no O)\" and \"C₄H₈O = 72 (one O)\". On \"one oxygen\" the bottle chip \"C, H and one O\" pulses and underlines; \"C₅H₁₂\" greys with a strike; \"C₄H₈O\" brightens. On \"fix\" a crossed chip fades in: \"the mass fixes the formula\" (caption \"mass narrows it; the elements fix it\"). The spectrum shrinks into the \"MS\" ledger row, which writes \"72 → C₄H₈O\". Bright at the end: \"C₄H₈O\" and the ledger row.",
+      "motionRole": "explain",
+      "onScreenChange": "the butanone stick spectrum fills the dock (Numbers to verify; c09 values), its 72 bar gold. Right card: \"M⁺ = 72\"; then two lines side by side: \"C₅H₁₂ = 72 (no O)\" and \"C₄H₈O = 72 (one O)\". On \"one oxygen\" the bottle chip \"C, H and one O\" pulses and underlines; \"C₅H₁₂\" greys with a strike; \"C₄H₈O\" brightens. On \"fix\" a crossed chip fades in: \"the mass fixes the formula\" (caption \"mass narrows it; the elements fix it\"). The spectrum shrinks into the \"MS\" ledger row, which writes \"72 → C₄H₈O\". Bright at the end: \"C₄H₈O\" and the ledger row.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step one: the mass narrows the formula: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "ir-groups",
+      "visualDecision": "new",
+      "visualReference": "butanone's IR trace draws left to right in the dock (Numbers to verify), with c10's IR data sheet card small at the upper right, only the C=O and O–H rows bright. On \"seventeen fifteen\" the 1715 dip gets a red band marker \"C=O, 1715\" (bright). On \"what's missing\" the range 3230 to 3550 shades with the chip \"no broad band: no O–H\" (grey chip \"c10: a missing band rules a group out\"); the weak 3416 dip inside it gets a small grey chip \"weak, narrow: not an O–H band\" (Revision 4: not an empty-range shade, because the measured trace has that weak dip). On \"but-3-en-2-ol\" its card in the strip shows its O–H ringed violet, then greys with a strike, tag \"needs an O–H band\". On \"aldehyde or a ketone\" the three remaining structures each get their C=O ringed red. On \"2-methylpropanal\" a grey tag under the strip: \"C₄H₈O with a C=O: only these 3\" (grey chip \"c02: isomers\"). The trace shrinks into the \"IR\" row: \"C=O ✓, O–H ✗\". Bright at the end: the C=O marker, the \"no broad band\" chip and three lit candidates.",
+      "teachingReason": "Step two, the bonds.",
+      "narrationCue": "seventeen fifteen / what's missing / but-3-en-2-ol / aldehyde or a ketone / 2-methylpropanal",
+      "motionPurpose": "butanone's IR trace draws left to right in the dock (Numbers to verify), with c10's IR data sheet card small at the upper right, only the C=O and O–H rows bright. On \"seventeen fifteen\" the 1715 dip gets a red band marker \"C=O, 1715\" (bright). On \"what's missing\" the range 3230 to 3550 shades with the chip \"no broad band: no O–H\" (grey chip \"c10: a missing band rules a group out\"); the weak 3416 dip inside it gets a small grey chip \"weak, narrow: not an O–H band\" (Revision 4: not an empty-range shade, because the measured trace has that weak dip). On \"but-3-en-2-ol\" its card in the strip shows its O–H ringed violet, then greys with a strike, tag \"needs an O–H band\". On \"aldehyde or a ketone\" the three remaining structures each get their C=O ringed red. On \"2-methylpropanal\" a grey tag under the strip: \"C₄H₈O with a C=O: only these 3\" (grey chip \"c02: isomers\"). The trace shrinks into the \"IR\" row: \"C=O ✓, O–H ✗\". Bright at the end: the C=O marker, the \"no broad band\" chip and three lit candidates.",
+      "motionRole": "explain",
+      "onScreenChange": "butanone's IR trace draws left to right in the dock (Numbers to verify), with c10's IR data sheet card small at the upper right, only the C=O and O–H rows bright. On \"seventeen fifteen\" the 1715 dip gets a red band marker \"C=O, 1715\" (bright). On \"what's missing\" the range 3230 to 3550 shades with the chip \"no broad band: no O–H\" (grey chip \"c10: a missing band rules a group out\"); the weak 3416 dip inside it gets a small grey chip \"weak, narrow: not an O–H band\" (Revision 4: not an empty-range shade, because the measured trace has that weak dip). On \"but-3-en-2-ol\" its card in the strip shows its O–H ringed violet, then greys with a strike, tag \"needs an O–H band\". On \"aldehyde or a ketone\" the three remaining structures each get their C=O ringed red. On \"2-methylpropanal\" a grey tag under the strip: \"C₄H₈O with a C=O: only these 3\" (grey chip \"c02: isomers\"). The trace shrinks into the \"IR\" row: \"C=O ✓, O–H ✗\". Bright at the end: the C=O marker, the \"no broad band\" chip and three lit candidates.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step two: a C=O, and no O–H: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "carbon-map",
+      "visualDecision": "adjust",
+      "visualReference": "butanone's ¹³C spectrum draws right to left in the dock (four lines near 209, 37, 29 and 8; TMS grey at 0; Numbers to verify), the lines grey at first. On \"four peaks\" four brackets write over them, tag \"4 environments\". On \"swap places\" 2-methylpropanal enlarges from the strip with c11a's mirror line and its two CH₃ carbons sliding along a swap arc (grey chip \"c11a: carbons that swap share a peak\"); tag \"3 peaks expected\"; it returns to the strip greyed with a strike, tag \"3 ≠ 4\". On \"two hundred and nine\" the 209 line takes a red tag \"C=O carbon\"; c11a's ¹³C data sheet card appears small, its \"aldehydes and ketones 190 to 220\" row lit, with butanone and butanal both joined to it by thin lines. On \"two\" the two lit candidates pulse. The spectrum shrinks into the \"¹³C\" row: \"4 environments\". Bright at the end: the \"190 to 220\" row and the two lit candidates.",
+      "teachingReason": "Step three, the carbon map.",
+      "narrationCue": "four peaks / swap places / two hundred and nine / two",
+      "motionPurpose": "butanone's ¹³C spectrum draws right to left in the dock (four lines near 209, 37, 29 and 8; TMS grey at 0; Numbers to verify), the lines grey at first. On \"four peaks\" four brackets write over them, tag \"4 environments\". On \"swap places\" 2-methylpropanal enlarges from the strip with c11a's mirror line and its two CH₃ carbons sliding along a swap arc (grey chip \"c11a: carbons that swap share a peak\"); tag \"3 peaks expected\"; it returns to the strip greyed with a strike, tag \"3 ≠ 4\". On \"two hundred and nine\" the 209 line takes a red tag \"C=O carbon\"; c11a's ¹³C data sheet card appears small, its \"aldehydes and ketones 190 to 220\" row lit, with butanone and butanal both joined to it by thin lines. On \"two\" the two lit candidates pulse. The spectrum shrinks into the \"¹³C\" row: \"4 environments\". Bright at the end: the \"190 to 220\" row and the two lit candidates.",
+      "motionRole": "explain",
+      "onScreenChange": "butanone's ¹³C spectrum draws right to left in the dock (four lines near 209, 37, 29 and 8; TMS grey at 0; Numbers to verify), the lines grey at first. On \"four peaks\" four brackets write over them, tag \"4 environments\". On \"swap places\" 2-methylpropanal enlarges from the strip with c11a's mirror line and its two CH₃ carbons sliding along a swap arc (grey chip \"c11a: carbons that swap share a peak\"); tag \"3 peaks expected\"; it returns to the strip greyed with a strike, tag \"3 ≠ 4\". On \"two hundred and nine\" the 209 line takes a red tag \"C=O carbon\"; c11a's ¹³C data sheet card appears small, its \"aldehydes and ketones 190 to 220\" row lit, with butanone and butanal both joined to it by thin lines. On \"two\" the two lit candidates pulse. The spectrum shrinks into the \"¹³C\" row: \"4 environments\". Bright at the end: the \"190 to 220\" row and the two lit candidates.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step three: four kinds of carbon: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "proton-map",
+      "visualDecision": "new",
+      "visualReference": "butanone's proton spectrum draws in the dock (quartet near 2.4, singlet near 2.1, triplet near 1.1; zoomed 0 to 5 ppm window; Numbers to verify), then the integration line steps up with tags \"2\", \"3\", \"3\". On \"adds up to eight\" a small sum writes: \"2 + 3 + 3 = 8 = H in C₄H₈O\" (grey chip \"c11b: the formula sets the real numbers\"). On \"ethyl group\" the quartet turns amber and the triplet teal, and c11b's pattern chip writes: \"ethyl: triplet 3H + quartet 2H\". On \"singlet\" the singlet turns violet; c11b's second pattern chip writes: \"CH₃ singlet: no H next door\". On \"O\" a small grey tag \"beside C=O: about 2.1\" writes by the singlet. The spectrum shrinks into the \"¹H\" row: \"ethyl + lone CH₃\". Bright at the end: the two pattern chips.",
+      "teachingReason": "Step four, the hydrogens.",
+      "narrationCue": "adds up to eight / ethyl group / singlet / O",
+      "motionPurpose": "butanone's proton spectrum draws in the dock (quartet near 2.4, singlet near 2.1, triplet near 1.1; zoomed 0 to 5 ppm window; Numbers to verify), then the integration line steps up with tags \"2\", \"3\", \"3\". On \"adds up to eight\" a small sum writes: \"2 + 3 + 3 = 8 = H in C₄H₈O\" (grey chip \"c11b: the formula sets the real numbers\"). On \"ethyl group\" the quartet turns amber and the triplet teal, and c11b's pattern chip writes: \"ethyl: triplet 3H + quartet 2H\". On \"singlet\" the singlet turns violet; c11b's second pattern chip writes: \"CH₃ singlet: no H next door\". On \"O\" a small grey tag \"beside C=O: about 2.1\" writes by the singlet. The spectrum shrinks into the \"¹H\" row: \"ethyl + lone CH₃\". Bright at the end: the two pattern chips.",
+      "motionRole": "explain",
+      "onScreenChange": "butanone's proton spectrum draws in the dock (quartet near 2.4, singlet near 2.1, triplet near 1.1; zoomed 0 to 5 ppm window; Numbers to verify), then the integration line steps up with tags \"2\", \"3\", \"3\". On \"adds up to eight\" a small sum writes: \"2 + 3 + 3 = 8 = H in C₄H₈O\" (grey chip \"c11b: the formula sets the real numbers\"). On \"ethyl group\" the quartet turns amber and the triplet teal, and c11b's pattern chip writes: \"ethyl: triplet 3H + quartet 2H\". On \"singlet\" the singlet turns violet; c11b's second pattern chip writes: \"CH₃ singlet: no H next door\". On \"O\" a small grey tag \"beside C=O: about 2.1\" writes by the singlet. The spectrum shrinks into the \"¹H\" row: \"ethyl + lone CH₃\". Bright at the end: the two pattern chips.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "step four: the hydrogens and their neighbours: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "assemble",
+      "visualDecision": "new",
+      "visualReference": "the right card clears. Piece assembly: three coded pieces write in a row: an ethyl group (teal and amber hydrogens), a CH₃ (violet hydrogens) and a C=O (red). Each piece shows its free bonds as short stubs: one on the ethyl group, one on the CH₃, two on the C=O carbon. On \"only one way\" the CH₃ and the ethyl slide onto the two stubs of the C=O and bond (tag \"2 free bonds on C=O, 1 on each end piece\"). On \"butanone\" the finished molecule draws as the kit's full structure with its hydrogens ringed in their signal colours, and the strip's butanone glows. Butanal stays lit but dim beside it. Bright at the end: butanone with its rings.",
+      "teachingReason": "Now build it.",
+      "narrationCue": "only one way / butanone",
+      "motionPurpose": "the right card clears. Piece assembly: three coded pieces write in a row: an ethyl group (teal and amber hydrogens), a CH₃ (violet hydrogens) and a C=O (red). Each piece shows its free bonds as short stubs: one on the ethyl group, one on the CH₃, two on the C=O carbon. On \"only one way\" the CH₃ and the ethyl slide onto the two stubs of the C=O and bond (tag \"2 free bonds on C=O, 1 on each end piece\"). On \"butanone\" the finished molecule draws as the kit's full structure with its hydrogens ringed in their signal colours, and the strip's butanone glows. Butanal stays lit but dim beside it. Bright at the end: butanone with its rings.",
+      "motionRole": "explain",
+      "onScreenChange": "the right card clears. Piece assembly: three coded pieces write in a row: an ethyl group (teal and amber hydrogens), a CH₃ (violet hydrogens) and a C=O (red). Each piece shows its free bonds as short stubs: one on the ethyl group, one on the CH₃, two on the C=O carbon. On \"only one way\" the CH₃ and the ethyl slide onto the two stubs of the C=O and bond (tag \"2 free bonds on C=O, 1 on each end piece\"). On \"butanone\" the finished molecule draws as the kit's full structure with its hydrogens ringed in their signal colours, and the strip's butanone glows. Butanal stays lit but dim beside it. Bright at the end: butanone with its rings.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "putting the pieces together: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "rival-isomer",
+      "visualDecision": "adjust",
+      "visualReference": "butanal enlarges from the strip, its CHO hydrogen ringed. The proton spectrum returns full size in the dock with its window widened to 0 to 11 ppm. On \"predict\" an isomer prediction overlay draws dashed and grey over the real spectrum: a signal near 9.8 (tag \"given: an H on a C=O carbon, about 9.5 to 10 ppm\"), and four predicted signal brackets. On \"none of that\" each predicted feature that is missing from the real data is ringed and tagged in turn: the 9.8 region \"not there\", the predicted fourth signal \"not there\", the real singlet tagged \"butanal has no 3H singlet\". On \"contradiction\" butanal greys with a strike in the strip. On \"fit\" a crossed chip fades in: \"most clues fit, so it's fine\" (caption \"one contradiction rules it out\"). Bright at the end: the \"not there\" tags and the crossed chip.",
+      "teachingReason": "But could it still be butanal? Test it the other way round.",
+      "narrationCue": "predict / none of that / contradiction / fit",
+      "motionPurpose": "butanal enlarges from the strip, its CHO hydrogen ringed. The proton spectrum returns full size in the dock with its window widened to 0 to 11 ppm. On \"predict\" an isomer prediction overlay draws dashed and grey over the real spectrum: a signal near 9.8 (tag \"given: an H on a C=O carbon, about 9.5 to 10 ppm\"), and four predicted signal brackets. On \"none of that\" each predicted feature that is missing from the real data is ringed and tagged in turn: the 9.8 region \"not there\", the predicted fourth signal \"not there\", the real singlet tagged \"butanal has no 3H singlet\". On \"contradiction\" butanal greys with a strike in the strip. On \"fit\" a crossed chip fades in: \"most clues fit, so it's fine\" (caption \"one contradiction rules it out\"). Bright at the end: the \"not there\" tags and the crossed chip.",
+      "motionRole": "explain",
+      "onScreenChange": "butanal enlarges from the strip, its CHO hydrogen ringed. The proton spectrum returns full size in the dock with its window widened to 0 to 11 ppm. On \"predict\" an isomer prediction overlay draws dashed and grey over the real spectrum: a signal near 9.8 (tag \"given: an H on a C=O carbon, about 9.5 to 10 ppm\"), and four predicted signal brackets. On \"none of that\" each predicted feature that is missing from the real data is ringed and tagged in turn: the 9.8 region \"not there\", the predicted fourth signal \"not there\", the real singlet tagged \"butanal has no 3H singlet\". On \"contradiction\" butanal greys with a strike in the strip. On \"fit\" a crossed chip fades in: \"most clues fit, so it's fine\" (caption \"one contradiction rules it out\"). Bright at the end: the \"not there\" tags and the crossed chip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "could it still be butanal?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "check-every-clue",
+      "visualDecision": "new",
+      "visualReference": "butanone sits centre right; the four ledger rows brighten one at a time as each clue is spoken, and a thin line runs from each row to the part of butanone it explains: \"MS\" to the whole molecule (\"72\"), then the two C–C bonds beside the C=O (\"43, 57\": c09's two break points, grey chip \"c09\"); \"IR\" to the C=O; \"¹³C\" to its four carbons ringed in four colours; \"¹H\" to its three hydrogen sets. On \"crossword\" a small coded crossword grid writes beside the ledger: four answers across and down meeting at the word \"butanone\"; where they cross, the shared square lights. On \"strongly supported\" every ledger row gets a tick. On \"solved\" the bottle's \"?\" label becomes \"butanone\". Bright at the end: the ticked ledger and the labelled bottle.",
+      "teachingReason": "Then check butanone against every clue.",
+      "narrationCue": "crossword / strongly supported / solved",
+      "motionPurpose": "butanone sits centre right; the four ledger rows brighten one at a time as each clue is spoken, and a thin line runs from each row to the part of butanone it explains: \"MS\" to the whole molecule (\"72\"), then the two C–C bonds beside the C=O (\"43, 57\": c09's two break points, grey chip \"c09\"); \"IR\" to the C=O; \"¹³C\" to its four carbons ringed in four colours; \"¹H\" to its three hydrogen sets. On \"crossword\" a small coded crossword grid writes beside the ledger: four answers across and down meeting at the word \"butanone\"; where they cross, the shared square lights. On \"strongly supported\" every ledger row gets a tick. On \"solved\" the bottle's \"?\" label becomes \"butanone\". Bright at the end: the ticked ledger and the labelled bottle.",
+      "motionRole": "explain",
+      "onScreenChange": "butanone sits centre right; the four ledger rows brighten one at a time as each clue is spoken, and a thin line runs from each row to the part of butanone it explains: \"MS\" to the whole molecule (\"72\"), then the two C–C bonds beside the C=O (\"43, 57\": c09's two break points, grey chip \"c09\"); \"IR\" to the C=O; \"¹³C\" to its four carbons ringed in four colours; \"¹H\" to its three hydrogen sets. On \"crossword\" a small coded crossword grid writes beside the ledger: four answers across and down meeting at the word \"butanone\"; where they cross, the shared square lights. On \"strongly supported\" every ledger row gets a tick. On \"solved\" the bottle's \"?\" label becomes \"butanone\". Bright at the end: the ticked ledger and the labelled bottle.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "check every clue: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "corroborate",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Two candidate cards: ethanoic acid and methyl methanoate, each with a \"C₂H₄O₂, 60\" chip (grey chip \"c09: same molecular ion\"). Two mini IR traces write under them side by side (Numbers to verify): the acid's very broad band shaded violet across its recorded envelope (Revision 4: A306-IR) with c10's \"beard + sword\" chip (grey chip \"c10\"), and a thin bracket over 2500 to 3000 labelled \"data sheet: 2500 to 3000\" (Revision 2, science S3); the ester's same region shades with the chip \"no very broad O–H\" (Revision 4: its weak 3442 and 3569 dips are drawn, unlabelled, so the region is not shown as empty). On \"decides\" the acid card ticks. On \"second technique\" two mini proton spectra write beneath (acid: CH₃ singlet near 2.1, O–H singlet near 11.5 tagged \"position varies\"; ester: OCH₃ singlet near 3.8, HCOO singlet near 8.1); the acid's O–H signal and the ester's 8.1 signal ring, with given-shift tags \"acid O–H: beyond 10\" and \"HCOO: about 8\". On \"one\" a chip writes: \"two independent techniques agree → a stronger case\" (bright). Bright at the end: the chip and the acid card's two ticks.",
+      "teachingReason": "Sometimes one technique settles it fast.",
+      "narrationCue": "decides / second technique / one",
+      "motionPurpose": "the board clears. Two candidate cards: ethanoic acid and methyl methanoate, each with a \"C₂H₄O₂, 60\" chip (grey chip \"c09: same molecular ion\"). Two mini IR traces write under them side by side (Numbers to verify): the acid's very broad band shaded violet across its recorded envelope (Revision 4: A306-IR) with c10's \"beard + sword\" chip (grey chip \"c10\"), and a thin bracket over 2500 to 3000 labelled \"data sheet: 2500 to 3000\" (Revision 2, science S3); the ester's same region shades with the chip \"no very broad O–H\" (Revision 4: its weak 3442 and 3569 dips are drawn, unlabelled, so the region is not shown as empty). On \"decides\" the acid card ticks. On \"second technique\" two mini proton spectra write beneath (acid: CH₃ singlet near 2.1, O–H singlet near 11.5 tagged \"position varies\"; ester: OCH₃ singlet near 3.8, HCOO singlet near 8.1); the acid's O–H signal and the ester's 8.1 signal ring, with given-shift tags \"acid O–H: beyond 10\" and \"HCOO: about 8\". On \"one\" a chip writes: \"two independent techniques agree → a stronger case\" (bright). Bright at the end: the chip and the acid card's two ticks.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Two candidate cards: ethanoic acid and methyl methanoate, each with a \"C₂H₄O₂, 60\" chip (grey chip \"c09: same molecular ion\"). Two mini IR traces write under them side by side (Numbers to verify): the acid's very broad band shaded violet across its recorded envelope (Revision 4: A306-IR) with c10's \"beard + sword\" chip (grey chip \"c10\"), and a thin bracket over 2500 to 3000 labelled \"data sheet: 2500 to 3000\" (Revision 2, science S3); the ester's same region shades with the chip \"no very broad O–H\" (Revision 4: its weak 3442 and 3569 dips are drawn, unlabelled, so the region is not shown as empty). On \"decides\" the acid card ticks. On \"second technique\" two mini proton spectra write beneath (acid: CH₃ singlet near 2.1, O–H singlet near 11.5 tagged \"position varies\"; ester: OCH₃ singlet near 3.8, HCOO singlet near 8.1); the acid's O–H signal and the ester's 8.1 signal ring, with given-shift tags \"acid O–H: beyond 10\" and \"HCOO: about 8\". On \"one\" a chip writes: \"two independent techniques agree → a stronger case\" (bright). Bright at the end: the chip and the acid card's two ticks.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one band decides, another agrees: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line: \"Mass, groups, map, then check every clue.\" Under each word, a small icon from this video: the gold 72 bar (mass), the red C=O marker (groups), four carbon rings and the integration line (map), and the ticked ledger (check). On \"out\" a second line writes: \"One contradiction rules a structure out.\" Hold about 2 seconds.",
+      "teachingReason": "One line to keep: mass, groups, map, then check every clue.",
+      "narrationCue": "out",
+      "motionPurpose": "the board clears. Handwritten line: \"Mass, groups, map, then check every clue.\" Under each word, a small icon from this video: the gold 72 bar (mass), the red C=O marker (groups), four carbon rings and the integration line (map), and the ticked ledger (check). On \"out\" a second line writes: \"One contradiction rules a structure out.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Mass, groups, map, then check every clue.\" Under each word, a small icon from this video: the gold 72 bar (mass), the red C=O marker (groups), four carbon rings and the integration line (map), and the ticked ledger (check). On \"out\" a second line writes: \"One contradiction rules a structure out.\" Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Below it, three small coded spectra side by side at readable size: the stick spectrum (78 and 80 labelled; Numbers to verify), the ¹³C spectrum (two lines, 54 and 27 labelled) and the proton spectrum (a septet and a doublet with integration tags \"1\" and \"6\"). No structures, no candidate names. The full question and all three spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Below it, three small coded spectra side by side at readable size: the stick spectrum (78 and 80 labelled; Numbers to verify), the ¹³C spectrum (two lines, 54 and 27 labelled) and the proton spectrum (a septet and a doublet with integration tags \"1\" and \"6\"). No structures, no candidate names. The full question and all three spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". Below it, three small coded spectra side by side at readable size: the stick spectrum (78 and 80 labelled; Numbers to verify), the ¹³C spectrum (two lines, 54 and 27 labelled) and the proton spectrum (a septet and a doublet with integration tags \"1\" and \"6\"). No structures, no candidate names. The full question and all three spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"seventy-eight and eighty\" those values and \"about 3 : 1\" underline; a gap bracket 78 to 43 writes on the stick spectrum with the chip \"− 35: Cl\" and a line \"78 − 35 = 43 = C₃H₇ → C₃H₇Cl\". On \"symmetry\" \"two peaks\" underlines; 2-chloropropane and 1-chloropropane write side by side, 2-chloropropane with its mirror line and the two CH₃ carbons ringed one colour (tag \"2 environments\"), 1-chloropropane with three rings (tag \"3\"), which greys. On \"six\" \"doublet ... relative area 6\" and \"septet (seven lines) ... relative area 1\" underline; the six CH₃ hydrogens ring teal and the CH hydrogen amber, tags \"1 neighbour → 2 lines\" and \"6 neighbours → 7 lines\". On \"slip\" a chip \"80 alone gives the formula\" fades in and is crossed (caption \"both are whole molecules: 78 = M (³⁵Cl), 80 = M+2 (³⁷Cl)\"). Hold about 1 second.",
+      "teachingReason": "It's 2-chloropropane.",
+      "narrationCue": "seventy-eight and eighty / symmetry / six / slip",
+      "motionPurpose": "the card stays, shrunk to the top. On \"seventy-eight and eighty\" those values and \"about 3 : 1\" underline; a gap bracket 78 to 43 writes on the stick spectrum with the chip \"− 35: Cl\" and a line \"78 − 35 = 43 = C₃H₇ → C₃H₇Cl\". On \"symmetry\" \"two peaks\" underlines; 2-chloropropane and 1-chloropropane write side by side, 2-chloropropane with its mirror line and the two CH₃ carbons ringed one colour (tag \"2 environments\"), 1-chloropropane with three rings (tag \"3\"), which greys. On \"six\" \"doublet ... relative area 6\" and \"septet (seven lines) ... relative area 1\" underline; the six CH₃ hydrogens ring teal and the CH hydrogen amber, tags \"1 neighbour → 2 lines\" and \"6 neighbours → 7 lines\". On \"slip\" a chip \"80 alone gives the formula\" fades in and is crossed (caption \"both are whole molecules: 78 = M (³⁵Cl), 80 = M+2 (³⁷Cl)\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"seventy-eight and eighty\" those values and \"about 3 : 1\" underline; a gap bracket 78 to 43 writes on the stick spectrum with the chip \"− 35: Cl\" and a line \"78 − 35 = 43 = C₃H₇ → C₃H₇Cl\". On \"symmetry\" \"two peaks\" underlines; 2-chloropropane and 1-chloropropane write side by side, 2-chloropropane with its mirror line and the two CH₃ carbons ringed one colour (tag \"2 environments\"), 1-chloropropane with three rings (tag \"3\"), which greys. On \"six\" \"doublet ... relative area 6\" and \"septet (seven lines) ... relative area 1\" underline; the six CH₃ hydrogens ring teal and the CH hydrogen amber, tags \"1 neighbour → 2 lines\" and \"6 neighbours → 7 lines\". On \"slip\" a chip \"80 alone gives the formula\" fades in and is crossed (caption \"both are whole molecules: 78 = M (³⁵Cl), 80 = M+2 (³⁷Cl)\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions): the formula, the four names as a compact list (one line each), the IR as its two printed observations (no IR trace), the four proton signals with shifts, splitting and areas, and the two printed shift notes. Beside it, the proton spectrum alone, at reading size (Numbers to verify). No type is shrunk to fit; check the exact card at phone size in the voiced preview (Revision 2, learning L2). The full question and both spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures).",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions): the formula, the four names as a compact list (one line each), the IR as its two printed observations (no IR trace), the four proton signals with shifts, splitting and areas, and the two printed shift notes. Beside it, the proton spectrum alone, at reading size (Numbers to verify). No type is shrunk to fit; check the exact card at phone size in the voiced preview (Revision 2, learning L2). The full question and both spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures).",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions): the formula, the four names as a compact list (one line each), the IR as its two printed observations (no IR trace), the four proton signals with shifts, splitting and areas, and the two printed shift notes. Beside it, the proton spectrum alone, at reading size (Numbers to verify). No type is shrunk to fit; check the exact card at phone size in the voiced preview (Revision 2, learning L2). The full question and both spectra stay on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"no broad band\" the printed line \"no broad absorption between 2500 and 3550\" underlines and a \"none\" chip writes beside it; pentanoic acid greys. \"1740\" underlines with a small tag \"ester C=O\". On \"two separate ethyl groups\" the four signals underline; the two quartets turn amber and the two triplets teal, paired by brackets, chip \"2 × ethyl\". On \"O\" \"4.0 to 4.2\" and \"2.0 to 2.7\" in the printed notes underline; ethyl propanoate writes with hydrogens, OCH₂ amber with tag \"4.12\", CH₂C=O amber with tag \"2.32\"; methyl butanoate and propyl ethanoate grey with tags \"one ethyl-type end + a CH₃ singlet\". On \"trap\" a chip \"4.1 = O–CH₂, so propyl ethanoate fits\" fades in and is crossed (caption \"its O–CH₂ has 2 neighbours: a triplet\"). Hold about 1 second.",
+      "teachingReason": "It's ethyl propanoate.",
+      "narrationCue": "no broad band / two separate ethyl groups / O / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"no broad band\" the printed line \"no broad absorption between 2500 and 3550\" underlines and a \"none\" chip writes beside it; pentanoic acid greys. \"1740\" underlines with a small tag \"ester C=O\". On \"two separate ethyl groups\" the four signals underline; the two quartets turn amber and the two triplets teal, paired by brackets, chip \"2 × ethyl\". On \"O\" \"4.0 to 4.2\" and \"2.0 to 2.7\" in the printed notes underline; ethyl propanoate writes with hydrogens, OCH₂ amber with tag \"4.12\", CH₂C=O amber with tag \"2.32\"; methyl butanoate and propyl ethanoate grey with tags \"one ethyl-type end + a CH₃ singlet\". On \"trap\" a chip \"4.1 = O–CH₂, so propyl ethanoate fits\" fades in and is crossed (caption \"its O–CH₂ has 2 neighbours: a triplet\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"no broad band\" the printed line \"no broad absorption between 2500 and 3550\" underlines and a \"none\" chip writes beside it; pentanoic acid greys. \"1740\" underlines with a small tag \"ester C=O\". On \"two separate ethyl groups\" the four signals underline; the two quartets turn amber and the two triplets teal, paired by brackets, chip \"2 × ethyl\". On \"O\" \"4.0 to 4.2\" and \"2.0 to 2.7\" in the printed notes underline; ethyl propanoate writes with hydrogens, OCH₂ amber with tag \"4.12\", CH₂C=O amber with tag \"2.32\"; methyl butanoate and propyl ethanoate grey with tags \"one ethyl-type end + a CH₃ singlet\". On \"trap\" a chip \"4.1 = O–CH₂, so propyl ethanoate fits\" fades in and is crossed (caption \"its O–CH₂ has 2 neighbours: a triplet\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. The evidence ledger returns full width as a five-row card, one row per clause: \"Mass + elements → formula\" → \"IR → groups present and missing\" → \"¹³C → kinds of carbon\" → \"¹H → hydrogens, areas, neighbours\" → \"Build it, then try the closest isomer: find the contradiction.\" On \"Next\" a chip \"Next: integrated structure practice (tests + spectra)\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, when you're given several spectra, take them in order.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. The evidence ledger returns full width as a five-row card, one row per clause: \"Mass + elements → formula\" → \"IR → groups present and missing\" → \"¹³C → kinds of carbon\" → \"¹H → hydrogens, areas, neighbours\" → \"Build it, then try the closest isomer: find the contradiction.\" On \"Next\" a chip \"Next: integrated structure practice (tests + spectra)\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. The evidence ledger returns full width as a five-row card, one row per clause: \"Mass + elements → formula\" → \"IR → groups present and missing\" → \"¹³C → kinds of carbon\" → \"¹H → hydrogens, areas, neighbours\" → \"Build it, then try the closest isomer: find the contradiction.\" On \"Next\" a chip \"Next: integrated structure practice (tests + spectra)\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c12-learning-review.md",
+      "sha256": "9e5cce2a08051f9cee970a5755e801211abcd3ff5d77051754ede5b1dd2cd415"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c12-claude-science-check.md",
+      "sha256": "d2c56326d6c9e6f701a5e0e80d9c042b599338a19e88006bfd7915b99a66483e"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

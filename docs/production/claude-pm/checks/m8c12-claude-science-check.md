@@ -39,3 +39,7 @@ Resolved in `../lessons/chem-m8-c12.md` Revision 2 (31 Oct; root resolver, Claud
 | 3 | Optional: scene 10 data-sheet window | Taken (screen only). A thin bracket "data sheet: 2500 to 3000" sits over the acid's band, which is still drawn to 3300. No narration change. | Scene 10 visual |
 
 Open item for the Codex error check: measured, solvent-labelled ¹H and ¹³C shifts for every compound under Numbers to verify, and liquid-film IR values for butanone, ethanoic acid, methyl methanoate and ethyl propanoate. Recording stays held until these are recorded.
+
+## Resolution update, Revision 4 (16 Nov 2026)
+
+Finding 1, the held part (measured NMR shifts and liquid-film IR values): data supplied. Brief 246 (`chem-m8-c10-c12-measured-spectra.md`) gives measured records for the held values, and `../lessons/chem-m8-c12.md` Revision 4 applies them (author: Claude designer; the change list is in that design's "Revision 4 (16 Nov): measured spectra applied" section). Any remaining items are listed there as open items, and none is a drawn, printed or spoken value. This note records the author's resolution only. Independent confirmation is root's readiness review, which is pending.

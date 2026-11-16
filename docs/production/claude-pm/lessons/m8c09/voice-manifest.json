@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "compositionId": "Chemistry-Y12-M8-C09-claude-2026-11-16-take01",
+  "lessonPath": "docs/production/claude-pm/lessons/m8c09/lesson.json",
+  "lessonSha256": "4df06ae1cd367da63393097b18e95ee4a640d702cc9b0525ab57add958cf53c1",
+  "fps": 30,
+  "voiceSelection": {
+    "voiceName": "Simon - Australian male",
+    "voiceId": "cOEV2DrZBBGNLpE74kQu",
+    "modelId": "eleven_v4",
+    "requiredAccent": "Australian",
+    "selectionBasis": "Established project narrator and accepted settings. Fresh take delivery requires human listening."
+  },
+  "requestOptions": {
+    "stability": 0.35,
+    "similarity": 0.75
+  },
+  "recordingBrief": {
+    "path": "docs/production/claude-pm/lessons/m8c09/lesson.production-brief.json",
+    "sha256": "4a92d13bee79810a8dcda6f1a2640c303b6dc62ce3c837e2020d727c139814bb"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "parentSceneId": "hook",
+      "text": "The stockroom has a bottle of unknown liquid. All you know is that each molecule contains carbon, hydrogen and one oxygen atom. You can't put one molecule on a balance. But a mass spectrometer does something cleverer. It breaks molecules into charged pieces and weighs every piece. The pattern of those masses is a mass spectrum, and each peak can rule possible structures out.",
+      "hash": "9d8bfad8a814",
+      "textSha256": "9d8bfad8a81436f595b24ba578796b6dda16d2678ad793d1803f616477878375",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/hook.9d8bfad8a814.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/hook.9d8bfad8a814.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/hook.9d8bfad8a814.generation.json",
+      "plannedRequestSha256": "8e760e1b631768e92a3e3e873235cf8fe7e4c94d0229c7b45c16ad4db1da338e"
+    },
+    {
+      "id": "five-stages",
+      "parentSceneId": "five-stages",
+      "text": "Here's how it weighs them. The sample is turned into a gas. A beam of fast electrons knocks one electron off some of the molecules, so they become positive ions. An electric field speeds the ions up, and then a magnetic field bends their path. Light ions bend more than heavy ones, so the instrument can sort them by mass and count each kind. Only charged particles are steered, so a neutral piece is never detected.",
+      "hash": "8eda6bf36cf9",
+      "textSha256": "8eda6bf36cf965e550a8d2199a95fd3a7a5ee3c86d2ab9f847ad1d8b9352d79a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/five-stages.8eda6bf36cf9.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/five-stages.8eda6bf36cf9.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/five-stages.8eda6bf36cf9.generation.json",
+      "plannedRequestSha256": "2e081448bf5346d4e2fbd316e70d9f99b346869c55f7eca59d51bcfe687d9b7c"
+    },
+    {
+      "id": "reading-chart",
+      "parentSceneId": "reading-chart",
+      "text": "The detector's counts become a bar chart. Across the bottom is m over z, the mass of each ion divided by its charge. Almost every ion here carries a charge of one plus, so you can read m over z as the ion's mass. Up the side is relative abundance: how many ions of each mass arrived, compared with the most common one.",
+      "hash": "da80b0e4fc78",
+      "textSha256": "da80b0e4fc78bf27a25566bd7e38db35ba36f6c31ff44870774585f4e4ec314c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/reading-chart.da80b0e4fc78.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/reading-chart.da80b0e4fc78.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/reading-chart.da80b0e4fc78.generation.json",
+      "plannedRequestSha256": "2098fa6a382625be2b1ccd073ebd6189da9e009750bc78efc18c87a4505995dc"
+    },
+    {
+      "id": "molecular-ion",
+      "parentSceneId": "molecular-ion",
+      "text": "Here's the spectrum of our unknown. Start at the right, with the molecular ion cluster. Its main peak is at seventy-two. That's the molecular ion: the whole molecule, minus one tiny electron, so seventy-two is the molecular mass. One oxygen accounts for sixteen, which leaves fifty-six, and that fits four carbons and eight hydrogens: C four H eight O. The tiny bump at seventy-three is the same structure, but with one heavier carbon thirteen atom.",
+      "hash": "4cf55ece6021",
+      "textSha256": "4cf55ece6021eec3da04961b057c305779bbfec774031243d3bdf195275d7263",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/molecular-ion.4cf55ece6021.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/molecular-ion.4cf55ece6021.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/molecular-ion.4cf55ece6021.generation.json",
+      "plannedRequestSha256": "6e18a0fbd5aff5da602f659e40dd3633fca85463de3be9fef6b5b53bc831461a"
+    },
+    {
+      "id": "same-mass",
+      "parentSceneId": "same-mass",
+      "text": "But a mass of seventy-two doesn't finish the job. From the isomers lesson, C four H eight O fits butanone, butanal and several other structures, and every one of them weighs seventy-two. The molecular ion can't tell isomers apart. For that, you need the smaller peaks.",
+      "hash": "2ccfca788641",
+      "textSha256": "2ccfca78864107b179491a472274812a819f715a45141bc3d3b03fb529e5d4e1",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/same-mass.2ccfca788641.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/same-mass.2ccfca788641.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/same-mass.2ccfca788641.generation.json",
+      "plannedRequestSha256": "372faeb2b9961e09c1ea9cdf425d7b1a839ecae8144759f4f444c4f3c1b2904b"
+    },
+    {
+      "id": "bond-breaks",
+      "parentSceneId": "bond-breaks",
+      "text": "Inside the instrument, many molecular ions carry so much energy that a bond breaks. One piece keeps the positive charge, and the other leaves as a neutral piece. The charged piece is detected and makes its own peak. The neutral piece is never seen. So the gap between the molecular ion and a fragment peak is the mass of the piece that was lost.",
+      "hash": "2eedbe1fc938",
+      "textSha256": "2eedbe1fc938939f59489a7e8adfa41627cb05f5a0b0e330feb82d061a74f408",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/bond-breaks.2eedbe1fc938.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/bond-breaks.2eedbe1fc938.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/bond-breaks.2eedbe1fc938.generation.json",
+      "plannedRequestSha256": "a03d6db5e409c43d922b1d579888e2af7ed3e53ef74aa073f13ce2c4e2caef77"
+    },
+    {
+      "id": "common-gaps",
+      "parentSceneId": "common-gaps",
+      "text": "Some gaps turn up again and again. A gap of fifteen is a methyl group, C H three. Seventeen is an O H. Twenty-nine is an ethyl group, C two H five, but it could also be C H O, which has the same mass. And forty-five is C O O H. So a gap narrows the choices, and sometimes it leaves two.",
+      "hash": "236f15e16b07",
+      "textSha256": "236f15e16b07a0f6722a1d9193171992d7a2dbba641eac10c950c9f4f2cf49d5",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/common-gaps.236f15e16b07.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/common-gaps.236f15e16b07.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/common-gaps.236f15e16b07.generation.json",
+      "plannedRequestSha256": "4e088cfd441403af83748b581f352f862aa8882f7183bbc481004cb219121063"
+    },
+    {
+      "id": "base-peak",
+      "parentSceneId": "base-peak",
+      "text": "Now look at the tallest peak. It's at forty-three, not at seventy-two. The tallest peak is called the base peak, and the chart sets it to one hundred per cent. It's the most abundant ion, often a fragment that's stable enough to survive the trip. The molecular ion leads the cluster at the right, the base peak is the tallest, and they're often different peaks.",
+      "hash": "dc59bc0c7370",
+      "textSha256": "dc59bc0c73705c3453a829e438170492ba38a6fd57a0dedb975b6f857553b0a3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/base-peak.dc59bc0c7370.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/base-peak.dc59bc0c7370.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/base-peak.dc59bc0c7370.generation.json",
+      "plannedRequestSha256": "03ebdc7d8bc477325c6e65a93c3ff3b31d0ab0e9c5c5f1d242e7d3ca7e5e6efe"
+    },
+    {
+      "id": "butanone-pieces",
+      "parentSceneId": "butanone-pieces",
+      "text": "Let's read the pieces. Seventy-two minus forty-three is twenty-nine, so the molecule lost an ethyl group, or C H O. Seventy-two minus fifty-seven is fifteen, so it also lost a methyl group. Butanone has a methyl group on one side of its C equals O and an ethyl group on the other. Break either bond and you get forty-three, C H three C O plus, or fifty-seven, C two H five C O plus. The small peak at twenty-nine is the ethyl ion itself. Every peak fits butanone. But butanal gives peaks at seventy-two and forty-three too, so this spectrum narrows the list without proving it. The next techniques test what's left.",
+      "hash": "28afbbaffadd",
+      "textSha256": "28afbbaffadd8e690a05ca6ed286eea2e8398f621aa06cdfa9e1841490cb17c9",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/butanone-pieces.28afbbaffadd.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/butanone-pieces.28afbbaffadd.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/butanone-pieces.28afbbaffadd.generation.json",
+      "plannedRequestSha256": "8867fc8915c451c939a240c0f542c69f96475f16a72f770048ed811408d88f76"
+    },
+    {
+      "id": "isotope-pairs",
+      "parentSceneId": "isotope-pairs",
+      "text": "Some elements leave a signature. Chlorine atoms come in two masses, thirty-five and thirty-seven, roughly three to one. So chloromethane shows its molecular ion twice: at fifty, and at fifty-two, about a third as tall. Two peaks two apart, three to one, points to one chlorine. Bromine's two isotopes are nearly equal, so one bromine gives two peaks of about the same height. The higher peak has the same structure, with the heavier isotope.",
+      "hash": "186665928c87",
+      "textSha256": "186665928c87a2c6957ae6c0b1c1abef1e26489987f7c1a3c5e2ed66d219beab",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/isotope-pairs.186665928c87.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/isotope-pairs.186665928c87.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/isotope-pairs.186665928c87.generation.json",
+      "plannedRequestSha256": "57749470b81bfe6a5110fad65fc256d558b8c0dc0cb9a29324d9272b36bf99df"
+    },
+    {
+      "id": "ms-limits",
+      "parentSceneId": "ms-limits",
+      "text": "So what has the spectrum told us? The molecular ion gave the mass. The fragments showed which pieces can break off, and an isotope pair can flag chlorine or bromine. But it hasn't shown which functional group is present, or exactly how the atoms connect. Mass spectrometry narrows the list. Infrared and NMR finish the job.",
+      "hash": "e2cf0ad69b51",
+      "textSha256": "e2cf0ad69b51cb4a81709fcf0cd8bdf9a0d90345ae0cba6489a67bd76b1c182c",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/ms-limits.e2cf0ad69b51.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/ms-limits.e2cf0ad69b51.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/ms-limits.e2cf0ad69b51.generation.json",
+      "plannedRequestSha256": "b5d10e593fd81f24f7dae79671456c2c19999c2e7e0dbe223a8ec00fea659ad9"
+    },
+    {
+      "id": "memory-aid",
+      "parentSceneId": "memory-aid",
+      "text": "Here's a line to remember: find the molecular ion cluster, and tallest is the base. Read the mass from the cluster, then subtract to find what broke off.",
+      "hash": "3cbca3a41beb",
+      "textSha256": "3cbca3a41beb48499da610c94ec9430b25e67eeeabf578f9863565dbf3fd7b6d",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/memory-aid.3cbca3a41beb.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/memory-aid.3cbca3a41beb.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/memory-aid.3cbca3a41beb.generation.json",
+      "plannedRequestSha256": "d20cc996276d14a4f08a081364ff430137078229f5ae2f54b4ad804c4f02cad0"
+    },
+    {
+      "id": "attempt-1",
+      "parentSceneId": "attempt-1",
+      "text": "Your turn. The spectrum on the card is either pentan-2-one or pentan-3-one, two isomers with a molar mass of eighty-six. Its base peak is at fifty-seven, with a strong peak at twenty-nine. Identify the compound, and justify your answer using the fragments. Pause here to answer.",
+      "hash": "9b40eaa909e7",
+      "textSha256": "9b40eaa909e7ade82bd4338bd3c236e8cfa202dd493480cc47692b5c6eadd9a3",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-1.9b40eaa909e7.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-1.9b40eaa909e7.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-1.9b40eaa909e7.generation.json",
+      "plannedRequestSha256": "56c1ebe6aaa981ca8a4eb4396c7e76b80dd6c0ec12e90dba3ed69c15280f20a5"
+    },
+    {
+      "id": "feedback-1",
+      "parentSceneId": "feedback-1",
+      "text": "Eighty-six minus fifty-seven is twenty-nine, so an ethyl group broke off, leaving C two H five C O plus. Pentan-3-one has an ethyl group on both sides of its C equals O, so either break gives fifty-seven. Pentan-2-one would give a big peak at forty-three instead. So it's pentan-3-one. Reading the gap as C H O and calling it an aldehyde is the slip: neither candidate has one.",
+      "hash": "2dd90f5b5706",
+      "textSha256": "2dd90f5b5706c22d657c69df72393f1329f84d54c6242452b0ccaf26c1d8a48e",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-1.2dd90f5b5706.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-1.2dd90f5b5706.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-1.2dd90f5b5706.generation.json",
+      "plannedRequestSha256": "198634f37d3ebd53510f00e348fddb32e00a8f2e917aed41809cea3d71d36fab"
+    },
+    {
+      "id": "attempt-2",
+      "parentSceneId": "attempt-2",
+      "text": "Last one. A compound's spectrum has two peaks of about equal height at ninety-four and ninety-six, and a peak at fifteen. Bromine atoms are about half bromine seventy-nine and half bromine eighty-one. Identify the molecular ion, explain the peak at ninety-six, and identify the fragment at fifteen. Pause here to answer.",
+      "hash": "62b0220a7c40",
+      "textSha256": "62b0220a7c40e31d00566369460fb1919bb1d390eca4441724cf55c81c5387e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-2.62b0220a7c40.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-2.62b0220a7c40.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/attempt-2.62b0220a7c40.generation.json",
+      "plannedRequestSha256": "70d949350345da13bd425af89da73893e262449866b2c577237f32e235914b32"
+    },
+    {
+      "id": "feedback-2",
+      "parentSceneId": "feedback-2",
+      "text": "The molecular ion is at ninety-four: the molecule containing bromine seventy-nine. Ninety-six is its M plus two partner, the same structure with bromine eighty-one, about as tall, because the two isotopes are about equally common. Ninety-four minus fifteen is seventy-nine, so a bromine atom broke off, leaving C H three plus. Picking ninety-six as the molecular ion because it's furthest right is the trap.",
+      "hash": "8e5e2e626431",
+      "textSha256": "8e5e2e6264315610993b2c441a4b78a6eaffe95a51629fb5330e2aecbd6a1490",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-2.8e5e2e626431.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-2.8e5e2e626431.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/feedback-2.8e5e2e626431.generation.json",
+      "plannedRequestSha256": "4254e1e09516abeebc8968740b44dd94e944dcca8117f828b2b6fe330d4a61d4"
+    },
+    {
+      "id": "decision-handoff",
+      "parentSceneId": "decision-handoff",
+      "text": "So, when you meet a mass spectrum, work in this order. Find the molecular ion at the right, and check for an isotope partner. Subtract to find the pieces lost, and ask which candidate structures could lose them. Then say what's still possible. Next, infrared spectroscopy, which shows the bonds, and so the functional groups, a molecule contains.",
+      "hash": "7cbfab6db85c",
+      "textSha256": "7cbfab6db85c40bbc3e3a922fca2a5db72c111a58886f7c46efbda78a222ea6a",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/decision-handoff.7cbfab6db85c.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/decision-handoff.7cbfab6db85c.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/decision-handoff.7cbfab6db85c.generation.json",
+      "plannedRequestSha256": "b64b04bd0637e4041de63e45f08e6d20ef3171ec6e9d5d721dd78e4b812d9d11"
+    },
+    {
+      "id": "key-notes",
+      "parentSceneId": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "hash": "231477bff795",
+      "textSha256": "231477bff795616f1e571b2d6f8df32f5730a06c8f51e74db6c01757527f83e4",
+      "audioFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/key-notes.231477bff795.mp3",
+      "alignmentFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/key-notes.231477bff795.alignment.json",
+      "generationFile": "public/audio/Chemistry-Y12-M8-C09-claude-2026-11-16-take01/key-notes.231477bff795.generation.json",
+      "plannedRequestSha256": "70a8df747c89189aa2dfc7effdba9fd5bf3249bc9f1ba1c2c388249515ccd9ad"
+    }
+  ]
+}

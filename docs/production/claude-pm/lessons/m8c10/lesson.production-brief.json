@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c10/lesson.json",
+    "lessonSha256": "9542cc7f0343fe250a31203d07739eb2ea452b275c04d8af2065ce90328db0ad"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Remember the bottle that gave no change in all three tests? It could be cyclohexane, or it could be 2-methylpropan-2-ol, a tertiary alcohol that leaves dichromate orange. But one of them has an O H group and the other doesn't. An infrared spectrum shows bonds directly, so it can settle this quickly.",
+    "stopsAfter": "reading the axes, assigning O–H (alcohol and acid), C–H, C=O, N–H and C–O, using shape, combination and missing bands, and stating what IR cannot show.",
+    "nextLesson": "NMR (route chem-m8-c11, delivered as c11a then c11b)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c10.md"
+  ],
+  "teaching": {
+    "task": "One bottle gave no change in all three tests, so it could be cyclohexane or a tertiary alcohol. How can shining infrared light through the sample show which bonds are there?",
+    "causalExplanation": "(1) the tests stalled; IR shows bonds directly (1); (2) bonds vibrate; a bond absorbs the infrared that matches its vibration, so a dip appears (2); (3) transmittance, dips down, wavenumber backwards (3); (4) stiffer bonds and lighter atoms vibrate faster, so higher wavenumber; where the spring analogy breaks (4); (5) the data sheet gives the ranges; four rows do most of the work (5); (6) C–H is nearly everywhere, so it rarely decides (6); (7) alcohol O–H: hydrogen bonds weaken each O–H by different amounts, so the band is broad (7); (8) acid O–H: paired molecules, two hydrogen bonds, lower and very broad, plus a C=O (8); (9) C=O strong and sharp; shows a carbonyl, not which kind (9); (10) N–H narrower and weaker (10); (11) fingerprint region: match, don't assign; a strong C–O still useful (11); (12) the routine and a missing band as evidence (12); (13) bottle Y solved (13); memory aid (14); attempts (15 to 18); decision rule and handoff (19); key notes (20).",
+    "conversationalApproach": "Remember the bottle that gave no change in all three tests? It could be cyclohexane, or it could be 2-methylpropan-2-ol, a tertiary alcohol that leaves dichromate orange. Every covalent bond vibrates, a bit like two balls joined by a spring. Up the side is transmittance, the percentage of light that gets through. Think of the spring again. You don't need to memorise where each bond absorbs, because the data sheet gives the ranges. Start with C H. Now the O H in an alcohol. A carboxylic acid has an O H too. The C equals O dip is one of the easiest to spot: strong and sharp, between sixteen eighty and seventeen fifty. Primary and secondary amines have N H bonds, which absorb from thirty-three hundred to thirty-five hundred, overlapping the alcohol O H range. Below about fifteen hundred, the spectrum gets crowded. So here's a routine. Back to the bottle. Here's a picture to remember: beard plus sword means acid. Your turn. Both candidates have a C equals O, so the dip at seventeen forty doesn't decide. Last one. Green only shows something was oxidised, and aldehydes do that as well as primary and secondary alcohols. So, when you meet an infrared spectrum, scan from left to right.",
+    "openingDecision": "Remember the bottle that gave no change in all three tests? It could be cyclohexane, or it could be 2-methylpropan-2-ol, a tertiary alcohol that leaves dichromate orange. But one of them has an O H group and the other doesn't. An infrared spectrum shows bonds directly, so it can settle this quickly.",
+    "understandingCheck": "Your turn. Compound X is either butanoic acid or ethyl ethanoate. Use the spectrum and the band values on the card to identify X, and justify your answer. Pause here to answer. Last one. Liquid Z is either an alcohol or an aldehyde, and it turns acidified dichromate green. Use the spectrum on the card to identify the type of compound, and explain why the dichromate result alone couldn't. Pause here to answer.",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:\n- proton and carbon-13 NMR\n- mass spectrometry\n- infrared spectroscopy (ACSCH130)\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "spectra are coded only (new IR trace part; never an AI image of a spectrum); every spectrum is realistic for its named compound and each band is listed under \"Numbers to verify\" for checking against NIST or SDBS; the instrument is one existing painted plate; the vibrating bond is a coded abstract diagram (balls and spring, no people); no people, hands or faces; at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question and its spectrum or band list kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"points to\", \"supports\", \"fits\", \"rules out\" only for a missing band against a stated candidate list).",
+    "transitionPlan": "heading writes on: \"Which bonds are in there?\". the instrument plate shrinks to the top right. the axes return at reading size. two vibrating bonds side by side: a thick spring (tag \"C=O: stronger\") vibrating faster than a thin one (\"C–O\"); markers drop onto the axis at about 1715 (red) and about 1100 (amber). the data sheet card writes at right as nine rows (the full table under Decisions), all grey. the cyclohexane IR trace draws (Numbers to verify). the ethanol IR trace draws. the ethanol trace dims and shrinks to a thumbnail above; the ethanoic acid IR trace draws. the propanone IR trace draws. the propan-1-amine IR trace draws; the ethanol thumbnail returns small above it. the propan-1-ol and propan-2-ol IR traces draw one above the other, aligned on the same x axis (structures in the lower strip; grey chip \"c02: position isomers\"). the board clears to empty IR axes with four range shades writing in turn, left to right, one per question, each with a numbered chip: \"1 O–H (alcohol): 3230 to 3550, broad?\" (violet), \"2 O–H (acid): 2500 to 3000, very broad?\" (violet), \"3 C=O: 1680 to 1750, strong?\" (red), \"4 C–O: 1000 to 1300, strong?\" (amber). the bottle Y plate and its three chips return small at left. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions). the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"Which bonds are in there?\". p03-dropper-bottle-v1.png with the coded label \"Y\" (as in c08 scene 10) at left, with three result chips beside it: \"no fizz\", \"stays orange\", \"stays orange\" (grey chip \"c08\"). On \"cyclohexane\" and \"2-methylpropan-2-ol\" the two coded structures write in the lower strip, the alcohol's OH ringed violet; a bracket \"tests can't tell\" writes under both. On \"infrared spectrum\" m8-ir-spectrometer-v1.png slides in at right (uniform scale, about 40% of frame width), and empty IR axes write across the upper area. On \"quickly\" a \"?\" sits on the axes. Bright at the end: the heading, the two structures with the bracket.",
+      "teachingReason": "Remember the bottle that gave no change in all three tests? It could be cyclohexane, or it could be 2-methylpropan-2-ol, a tertiary alcohol that leaves dichromate orange.",
+      "narrationCue": "cyclohexane / infrared spectrum / quickly",
+      "motionPurpose": "heading writes on: \"Which bonds are in there?\". p03-dropper-bottle-v1.png with the coded label \"Y\" (as in c08 scene 10) at left, with three result chips beside it: \"no fizz\", \"stays orange\", \"stays orange\" (grey chip \"c08\"). On \"cyclohexane\" and \"2-methylpropan-2-ol\" the two coded structures write in the lower strip, the alcohol's OH ringed violet; a bracket \"tests can't tell\" writes under both. On \"infrared spectrum\" m8-ir-spectrometer-v1.png slides in at right (uniform scale, about 40% of frame width), and empty IR axes write across the upper area. On \"quickly\" a \"?\" sits on the axes. Bright at the end: the heading, the two structures with the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"Which bonds are in there?\". p03-dropper-bottle-v1.png with the coded label \"Y\" (as in c08 scene 10) at left, with three result chips beside it: \"no fizz\", \"stays orange\", \"stays orange\" (grey chip \"c08\"). On \"cyclohexane\" and \"2-methylpropan-2-ol\" the two coded structures write in the lower strip, the alcohol's OH ringed violet; a bracket \"tests can't tell\" writes under both. On \"infrared spectrum\" m8-ir-spectrometer-v1.png slides in at right (uniform scale, about 40% of frame width), and empty IR axes write across the upper area. On \"quickly\" a \"?\" sits on the axes. Bright at the end: the heading, the two structures with the bracket.",
+      "motionTools": [
+        "p03-dropper-bottle-v1.png",
+        "m8-ir-spectrometer-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (bottle Y, unsolved): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bonds-vibrate",
+      "visualDecision": "new",
+      "visualReference": "the instrument plate shrinks to the top right. Centre: the vibrating bond (two coded balls, a coded spring) stretches and squashes, then bends; tags \"stretch\", \"bend\" write as spoken. On \"infrared light\" a coded wavy beam crosses from left to right through a coded sample cell; one band of the beam (a teal stripe) is absorbed at the bond, and the beam leaving the right has a gap in it. On \"dip\" the gap maps down onto the empty axes as a single coded dip (tag \"absorbed here\"). Bright at the end: the vibrating bond, the dip.",
+      "teachingReason": "Every covalent bond vibrates, a bit like two balls joined by a spring.",
+      "narrationCue": "infrared light / dip",
+      "motionPurpose": "the instrument plate shrinks to the top right. Centre: the vibrating bond (two coded balls, a coded spring) stretches and squashes, then bends; tags \"stretch\", \"bend\" write as spoken. On \"infrared light\" a coded wavy beam crosses from left to right through a coded sample cell; one band of the beam (a teal stripe) is absorbed at the bond, and the beam leaving the right has a gap in it. On \"dip\" the gap maps down onto the empty axes as a single coded dip (tag \"absorbed here\"). Bright at the end: the vibrating bond, the dip.",
+      "motionRole": "explain",
+      "onScreenChange": "the instrument plate shrinks to the top right. Centre: the vibrating bond (two coded balls, a coded spring) stretches and squashes, then bends; tags \"stretch\", \"bend\" write as spoken. On \"infrared light\" a coded wavy beam crosses from left to right through a coded sample cell; one band of the beam (a teal stripe) is absorbed at the bond, and the beam leaving the right has a gap in it. On \"dip\" the gap maps down onto the empty axes as a single coded dip (tag \"absorbed here\"). Bright at the end: the vibrating bond, the dip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "bonds vibrate: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "reading-chart",
+      "visualDecision": "new",
+      "visualReference": "the axes return at reading size. On \"transmittance\" the y label writes \"transmittance (%)\" with 100 at the top and 0 at the bottom; on \"down\" the demo dip pulses and an arrow labels it \"dip = absorbed\" (grey chip \"not a peak\"). On \"wavenumber\" the x label writes \"wavenumber (cm⁻¹)\", with a grey chip \"waves per cm, not wavelength\"; on \"more energy\" a small grey arrow \"higher energy\" points left. On \"right\" the tick labels write 4000, 3000, 2000, 1500, 1000, 500 from left to right, and a large arrow sweeps right to left over them (tag \"runs backwards\"). Bright at the end: the two axis labels and the \"runs backwards\" tag.",
+      "teachingReason": "Up the side is transmittance, the percentage of light that gets through.",
+      "narrationCue": "transmittance / down / wavenumber / more energy / right",
+      "motionPurpose": "the axes return at reading size. On \"transmittance\" the y label writes \"transmittance (%)\" with 100 at the top and 0 at the bottom; on \"down\" the demo dip pulses and an arrow labels it \"dip = absorbed\" (grey chip \"not a peak\"). On \"wavenumber\" the x label writes \"wavenumber (cm⁻¹)\", with a grey chip \"waves per cm, not wavelength\"; on \"more energy\" a small grey arrow \"higher energy\" points left. On \"right\" the tick labels write 4000, 3000, 2000, 1500, 1000, 500 from left to right, and a large arrow sweeps right to left over them (tag \"runs backwards\"). Bright at the end: the two axis labels and the \"runs backwards\" tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the axes return at reading size. On \"transmittance\" the y label writes \"transmittance (%)\" with 100 at the top and 0 at the bottom; on \"down\" the demo dip pulses and an arrow labels it \"dip = absorbed\" (grey chip \"not a peak\"). On \"wavenumber\" the x label writes \"wavenumber (cm⁻¹)\", with a grey chip \"waves per cm, not wavelength\"; on \"more energy\" a small grey arrow \"higher energy\" points left. On \"right\" the tick labels write 4000, 3000, 2000, 1500, 1000, 500 from left to right, and a large arrow sweeps right to left over them (tag \"runs backwards\"). Bright at the end: the two axis labels and the \"runs backwards\" tag.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading the chart: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "what-sets-position",
+      "visualDecision": "new",
+      "visualReference": "two vibrating bonds side by side: a thick spring (tag \"C=O: stronger\") vibrating faster than a thin one (\"C–O\"); markers drop onto the axis at about 1715 (red) and about 1100 (amber). Then a pair with a tiny ball (\"C–H\": H is light) vibrating fastest, marker near 2950 (grey), with \"O–H\" and \"N–H\" markers writing beside it near 3300 (violet, blue). A grey card writes: \"stronger bond → higher wavenumber; lighter atom → higher wavenumber\". On \"ones\" a grey chip \"only particular energies absorbed\" writes under the springs. Bright at the end: the grey card.",
+      "teachingReason": "Think of the spring again.",
+      "narrationCue": "ones",
+      "motionPurpose": "two vibrating bonds side by side: a thick spring (tag \"C=O: stronger\") vibrating faster than a thin one (\"C–O\"); markers drop onto the axis at about 1715 (red) and about 1100 (amber). Then a pair with a tiny ball (\"C–H\": H is light) vibrating fastest, marker near 2950 (grey), with \"O–H\" and \"N–H\" markers writing beside it near 3300 (violet, blue). A grey card writes: \"stronger bond → higher wavenumber; lighter atom → higher wavenumber\". On \"ones\" a grey chip \"only particular energies absorbed\" writes under the springs. Bright at the end: the grey card.",
+      "motionRole": "explain",
+      "onScreenChange": "two vibrating bonds side by side: a thick spring (tag \"C=O: stronger\") vibrating faster than a thin one (\"C–O\"); markers drop onto the axis at about 1715 (red) and about 1100 (amber). Then a pair with a tiny ball (\"C–H\": H is light) vibrating fastest, marker near 2950 (grey), with \"O–H\" and \"N–H\" markers writing beside it near 3300 (violet, blue). A grey card writes: \"stronger bond → higher wavenumber; lighter atom → higher wavenumber\". On \"ones\" a grey chip \"only particular energies absorbed\" writes under the springs. Bright at the end: the grey card.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "what sets the position: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "data-sheet",
+      "visualDecision": "new",
+      "visualReference": "the data sheet card writes at right as nine rows (the full table under Decisions), all grey. On \"Four rows\" the two O–H rows (violet), C–H (grey, brightened), C=O (red) and N–H (blue) light; on \"O\" the C–O row lights amber. The C≡N, C=C and C–C rows stay dim. Grey tag on the card: \"HSC data sheet\". Bright at the end: the five lit rows.",
+      "teachingReason": "You don't need to memorise where each bond absorbs, because the data sheet gives the ranges.",
+      "narrationCue": "Four rows / O",
+      "motionPurpose": "the data sheet card writes at right as nine rows (the full table under Decisions), all grey. On \"Four rows\" the two O–H rows (violet), C–H (grey, brightened), C=O (red) and N–H (blue) light; on \"O\" the C–O row lights amber. The C≡N, C=C and C–C rows stay dim. Grey tag on the card: \"HSC data sheet\". Bright at the end: the five lit rows.",
+      "motionRole": "explain",
+      "onScreenChange": "the data sheet card writes at right as nine rows (the full table under Decisions), all grey. On \"Four rows\" the two O–H rows (violet), C–H (grey, brightened), C=O (red) and N–H (blue) light; on \"O\" the C–O row lights amber. The C≡N, C=C and C–C rows stay dim. Grey tag on the card: \"HSC data sheet\". Bright at the end: the five lit rows.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the data sheet: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "ch-everywhere",
+      "visualDecision": "new",
+      "visualReference": "the cyclohexane IR trace draws (Numbers to verify). On \"just below three thousand\" band markers ring 2925 and 2850 (grey), and the C–H range shade (2850 to 3300) lightens behind them. On \"very little else\" the 3230 to 3550 and 1680 to 1750 regions show empty-range shades with \"none\" chips. On \"past\" the C–H markers dim. Bright at the end: the two empty-range chips.",
+      "teachingReason": "Start with C H.",
+      "narrationCue": "just below three thousand / very little else / past",
+      "motionPurpose": "the cyclohexane IR trace draws (Numbers to verify). On \"just below three thousand\" band markers ring 2925 and 2850 (grey), and the C–H range shade (2850 to 3300) lightens behind them. On \"very little else\" the 3230 to 3550 and 1680 to 1750 regions show empty-range shades with \"none\" chips. On \"past\" the C–H markers dim. Bright at the end: the two empty-range chips.",
+      "motionRole": "explain",
+      "onScreenChange": "the cyclohexane IR trace draws (Numbers to verify). On \"just below three thousand\" band markers ring 2925 and 2850 (grey), and the C–H range shade (2850 to 3300) lightens behind them. On \"very little else\" the 3230 to 3550 and 1680 to 1750 regions show empty-range shades with \"none\" chips. On \"past\" the C–H markers dim. Bright at the end: the two empty-range chips.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "C–H, nearly everywhere: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "alcohol-oh",
+      "visualDecision": "adjust",
+      "visualReference": "the ethanol IR trace draws. Lower strip: ethanol's structure with OH ringed violet; three coded ethanol molecules then sit side by side with dotted hydrogen bonds between OH groups, each O–H spring drawn a slightly different length (grey chip \"M7: hydrogen bonding\"). On \"spread\" a fan of thin violet lines, each a slightly different wavenumber, merges into the broad band. On \"forty\" band marker \"≈ 3340: O–H (alcohol), broad\" (violet, bright) and the 3230 to 3550 range shade. A beat later (no narration) band marker \"≈ 1050: C–O\" (amber, dim; it returns in scene 11). Bright at the end: the O–H marker, the C–O marker.",
+      "teachingReason": "Now the O H in an alcohol.",
+      "narrationCue": "spread / forty",
+      "motionPurpose": "the ethanol IR trace draws. Lower strip: ethanol's structure with OH ringed violet; three coded ethanol molecules then sit side by side with dotted hydrogen bonds between OH groups, each O–H spring drawn a slightly different length (grey chip \"M7: hydrogen bonding\"). On \"spread\" a fan of thin violet lines, each a slightly different wavenumber, merges into the broad band. On \"forty\" band marker \"≈ 3340: O–H (alcohol), broad\" (violet, bright) and the 3230 to 3550 range shade. A beat later (no narration) band marker \"≈ 1050: C–O\" (amber, dim; it returns in scene 11). Bright at the end: the O–H marker, the C–O marker.",
+      "motionRole": "explain",
+      "onScreenChange": "the ethanol IR trace draws. Lower strip: ethanol's structure with OH ringed violet; three coded ethanol molecules then sit side by side with dotted hydrogen bonds between OH groups, each O–H spring drawn a slightly different length (grey chip \"M7: hydrogen bonding\"). On \"spread\" a fan of thin violet lines, each a slightly different wavenumber, merges into the broad band. On \"forty\" band marker \"≈ 3340: O–H (alcohol), broad\" (violet, bright) and the 3230 to 3550 range shade. A beat later (no narration) band marker \"≈ 1050: C–O\" (amber, dim; it returns in scene 11). Bright at the end: the O–H marker, the C–O marker.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "alcohol O–H: broad and rounded: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "acid-oh",
+      "visualDecision": "new",
+      "visualReference": "the ethanol trace dims and shrinks to a thumbnail above; the ethanoic acid IR trace draws. Lower strip: two ethanoic acid molecules facing each other with two dotted hydrogen bonds between their COOH groups (tag \"pair: two hydrogen bonds\"). On \"very broad\" band marker spanning 2500 to 3000 \"O–H (acid), very broad\" (violet) with the C–H dips visible as small notches on top of it. On \"seventeen ten\" band marker \"≈ 1715: C=O\" (red). On \"points to an acid\" a two-chip line writes: \"very broad O–H + C=O → carboxylic acid\" (bright). A beat later (no narration) the ethanol thumbnail and the acid trace sit together with their O–H bands shaded, tag \"same bond, different shape and place\". Bright at the end: the two-chip line and the comparison tag.",
+      "teachingReason": "A carboxylic acid has an O H too.",
+      "narrationCue": "very broad / seventeen ten / points to an acid",
+      "motionPurpose": "the ethanol trace dims and shrinks to a thumbnail above; the ethanoic acid IR trace draws. Lower strip: two ethanoic acid molecules facing each other with two dotted hydrogen bonds between their COOH groups (tag \"pair: two hydrogen bonds\"). On \"very broad\" band marker spanning 2500 to 3000 \"O–H (acid), very broad\" (violet) with the C–H dips visible as small notches on top of it. On \"seventeen ten\" band marker \"≈ 1715: C=O\" (red). On \"points to an acid\" a two-chip line writes: \"very broad O–H + C=O → carboxylic acid\" (bright). A beat later (no narration) the ethanol thumbnail and the acid trace sit together with their O–H bands shaded, tag \"same bond, different shape and place\". Bright at the end: the two-chip line and the comparison tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the ethanol trace dims and shrinks to a thumbnail above; the ethanoic acid IR trace draws. Lower strip: two ethanoic acid molecules facing each other with two dotted hydrogen bonds between their COOH groups (tag \"pair: two hydrogen bonds\"). On \"very broad\" band marker spanning 2500 to 3000 \"O–H (acid), very broad\" (violet) with the C–H dips visible as small notches on top of it. On \"seventeen ten\" band marker \"≈ 1715: C=O\" (red). On \"points to an acid\" a two-chip line writes: \"very broad O–H + C=O → carboxylic acid\" (bright). A beat later (no narration) the ethanol thumbnail and the acid trace sit together with their O–H bands shaded, tag \"same bond, different shape and place\". Bright at the end: the two-chip line and the comparison tag.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "acid O–H: very broad, and a C=O: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "carbonyl",
+      "visualDecision": "new",
+      "visualReference": "the propanone IR trace draws. On \"strong and sharp\" band marker \"≈ 1715: C=O\" (red, bright) with the 1680 to 1750 range shade; on \"no O H band\" the 3230 to 3550 and 2500 to 3000 regions shade with \"no broad O–H\" chips (Revision 4: not empty-range shades, because the measured trace has sharp C–H dips near 3005, 2966 and 2925 and a weak dip at 3414); the 3414 dip gets a small grey chip \"weak, narrow: not an O–H band\" (no narration). On \"kind\" four small coded structures write in the lower strip, each with its C=O ringed red: propanone (ketone), propanal (aldehyde), methyl ethanoate (ester), ethanoic acid (acid), and a bracket \"all have C=O\". Bright at the end: the C=O marker, the bracket.",
+      "teachingReason": "The C equals O dip is one of the easiest to spot: strong and sharp, between sixteen eighty and seventeen fifty.",
+      "narrationCue": "strong and sharp / no O H band / kind",
+      "motionPurpose": "the propanone IR trace draws. On \"strong and sharp\" band marker \"≈ 1715: C=O\" (red, bright) with the 1680 to 1750 range shade; on \"no O H band\" the 3230 to 3550 and 2500 to 3000 regions shade with \"no broad O–H\" chips (Revision 4: not empty-range shades, because the measured trace has sharp C–H dips near 3005, 2966 and 2925 and a weak dip at 3414); the 3414 dip gets a small grey chip \"weak, narrow: not an O–H band\" (no narration). On \"kind\" four small coded structures write in the lower strip, each with its C=O ringed red: propanone (ketone), propanal (aldehyde), methyl ethanoate (ester), ethanoic acid (acid), and a bracket \"all have C=O\". Bright at the end: the C=O marker, the bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the propanone IR trace draws. On \"strong and sharp\" band marker \"≈ 1715: C=O\" (red, bright) with the 1680 to 1750 range shade; on \"no O H band\" the 3230 to 3550 and 2500 to 3000 regions shade with \"no broad O–H\" chips (Revision 4: not empty-range shades, because the measured trace has sharp C–H dips near 3005, 2966 and 2925 and a weak dip at 3414); the 3414 dip gets a small grey chip \"weak, narrow: not an O–H band\" (no narration). On \"kind\" four small coded structures write in the lower strip, each with its C=O ringed red: propanone (ketone), propanal (aldehyde), methyl ethanoate (ester), ethanoic acid (acid), and a bracket \"all have C=O\". Bright at the end: the C=O marker, the bracket.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "C=O: strong, sharp, but which kind?: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "nh",
+      "visualDecision": "adjust",
+      "visualReference": "the propan-1-amine IR trace draws; the ethanol thumbnail returns small above it. On \"overlapping\" the N–H range (3300 to 3500, blue) and the alcohol O–H range (3230 to 3550, violet) shade together. On \"bands\" band markers ring the two N–H bands (blue, tag \"N–H: two narrow bands (NH₂)\") and the ethanol thumbnail's broad O–H rings violet (tag \"O–H: one broad band\"). Lower strip: propan-1-amine with NH₂ ringed blue (grey chips \"M7: amines\" and \"tertiary amines: no N–H\"). Bright at the end: the two tags.",
+      "teachingReason": "Primary and secondary amines have N H bonds, which absorb from thirty-three hundred to thirty-five hundred, overlapping the alcohol O H range.",
+      "narrationCue": "overlapping / bands",
+      "motionPurpose": "the propan-1-amine IR trace draws; the ethanol thumbnail returns small above it. On \"overlapping\" the N–H range (3300 to 3500, blue) and the alcohol O–H range (3230 to 3550, violet) shade together. On \"bands\" band markers ring the two N–H bands (blue, tag \"N–H: two narrow bands (NH₂)\") and the ethanol thumbnail's broad O–H rings violet (tag \"O–H: one broad band\"). Lower strip: propan-1-amine with NH₂ ringed blue (grey chips \"M7: amines\" and \"tertiary amines: no N–H\"). Bright at the end: the two tags.",
+      "motionRole": "explain",
+      "onScreenChange": "the propan-1-amine IR trace draws; the ethanol thumbnail returns small above it. On \"overlapping\" the N–H range (3300 to 3500, blue) and the alcohol O–H range (3230 to 3550, violet) shade together. On \"bands\" band markers ring the two N–H bands (blue, tag \"N–H: two narrow bands (NH₂)\") and the ethanol thumbnail's broad O–H rings violet (tag \"O–H: one broad band\"). Lower strip: propan-1-amine with NH₂ ringed blue (grey chips \"M7: amines\" and \"tertiary amines: no N–H\"). Bright at the end: the two tags.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "N–H: narrower and weaker: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "fingerprint",
+      "visualDecision": "new",
+      "visualReference": "the propan-1-ol and propan-2-ol IR traces draw one above the other, aligned on the same x axis (structures in the lower strip; grey chip \"c02: position isomers\"). On \"fifteen hundred\" a vertical line at 1500 writes and the region to its right shades (tag \"fingerprint region\"). On \"same bands\" the regions left of 1500 pulse together (the broad O–H and the C–H cluster in both; their C–H depths differ, so the tag is \"same bands\", not \"identical\"); on \"fingerprints differ\" the regions right of 1500 pulse, with a grey tag \"different patterns\". On \"match\" a chip \"assign every dip\" fades in and is crossed. On \"hundred\" each trace's strongest dip inside 1000 to 1300 is ringed amber (about 1055 and about 1129, tagged \"≈ 1060\" and \"≈ 1130\"). Bright at the end: the fingerprint tag, the crossed chip.",
+      "teachingReason": "Below about fifteen hundred, the spectrum gets crowded.",
+      "narrationCue": "fifteen hundred / same bands / fingerprints differ / match / hundred",
+      "motionPurpose": "the propan-1-ol and propan-2-ol IR traces draw one above the other, aligned on the same x axis (structures in the lower strip; grey chip \"c02: position isomers\"). On \"fifteen hundred\" a vertical line at 1500 writes and the region to its right shades (tag \"fingerprint region\"). On \"same bands\" the regions left of 1500 pulse together (the broad O–H and the C–H cluster in both; their C–H depths differ, so the tag is \"same bands\", not \"identical\"); on \"fingerprints differ\" the regions right of 1500 pulse, with a grey tag \"different patterns\". On \"match\" a chip \"assign every dip\" fades in and is crossed. On \"hundred\" each trace's strongest dip inside 1000 to 1300 is ringed amber (about 1055 and about 1129, tagged \"≈ 1060\" and \"≈ 1130\"). Bright at the end: the fingerprint tag, the crossed chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the propan-1-ol and propan-2-ol IR traces draw one above the other, aligned on the same x axis (structures in the lower strip; grey chip \"c02: position isomers\"). On \"fifteen hundred\" a vertical line at 1500 writes and the region to its right shades (tag \"fingerprint region\"). On \"same bands\" the regions left of 1500 pulse together (the broad O–H and the C–H cluster in both; their C–H depths differ, so the tag is \"same bands\", not \"identical\"); on \"fingerprints differ\" the regions right of 1500 pulse, with a grey tag \"different patterns\". On \"match\" a chip \"assign every dip\" fades in and is crossed. On \"hundred\" each trace's strongest dip inside 1000 to 1300 is ringed amber (about 1055 and about 1129, tagged \"≈ 1060\" and \"≈ 1130\"). Bright at the end: the fingerprint tag, the crossed chip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the fingerprint region: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "routine",
+      "visualDecision": "new",
+      "visualReference": "the board clears to empty IR axes with four range shades writing in turn, left to right, one per question, each with a numbered chip: \"1 O–H (alcohol): 3230 to 3550, broad?\" (violet), \"2 O–H (acid): 2500 to 3000, very broad?\" (violet), \"3 C=O: 1680 to 1750, strong?\" (red), \"4 C–O: 1000 to 1300, strong?\" (amber). On \"missing band\" the C=O shade turns to an empty-range shade with \"none → rule out the C=O candidates on your list\" (bright); on \"list\" a small candidate strip writes under it (ketone, aldehyde, ester, acid struck; alcohol and alkane kept), grey tag \"data-sheet range\". Bright at the end: the four numbered chips and the \"none\" line.",
+      "teachingReason": "So here's a routine.",
+      "narrationCue": "missing band / list",
+      "motionPurpose": "the board clears to empty IR axes with four range shades writing in turn, left to right, one per question, each with a numbered chip: \"1 O–H (alcohol): 3230 to 3550, broad?\" (violet), \"2 O–H (acid): 2500 to 3000, very broad?\" (violet), \"3 C=O: 1680 to 1750, strong?\" (red), \"4 C–O: 1000 to 1300, strong?\" (amber). On \"missing band\" the C=O shade turns to an empty-range shade with \"none → rule out the C=O candidates on your list\" (bright); on \"list\" a small candidate strip writes under it (ketone, aldehyde, ester, acid struck; alcohol and alkane kept), grey tag \"data-sheet range\". Bright at the end: the four numbered chips and the \"none\" line.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to empty IR axes with four range shades writing in turn, left to right, one per question, each with a numbered chip: \"1 O–H (alcohol): 3230 to 3550, broad?\" (violet), \"2 O–H (acid): 2500 to 3000, very broad?\" (violet), \"3 C=O: 1680 to 1750, strong?\" (red), \"4 C–O: 1000 to 1300, strong?\" (amber). On \"missing band\" the C=O shade turns to an empty-range shade with \"none → rule out the C=O candidates on your list\" (bright); on \"list\" a small candidate strip writes under it (ketone, aldehyde, ester, acid struck; alcohol and alkane kept), grey tag \"data-sheet range\". Bright at the end: the four numbered chips and the \"none\" line.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a routine that doesn't miss anything: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bottle-y",
+      "visualDecision": "new",
+      "visualReference": "the bottle Y plate and its three chips return small at left. The 2-methylpropan-2-ol IR trace draws (labelled only \"bottle Y\"); the cyclohexane trace from scene 6 sits faint beneath it on the same axis. Step 1 chip lights: band marker \"≈ 3370: O–H (alcohol), broad\" (violet). Step 3 chip: empty-range shade \"none\". Step 4 chip: band marker \"≈ 1200: C–O\" (amber). On \"can't give these dips\" cyclohexane's structure greys and strikes in the lower strip. On \"2-methylpropan-2-ol\" its structure glows, OH ringed violet, and the bottle label writes \"2-methylpropan-2-ol\". On \"see\" a grey line writes: \"tests: no 1° or 2° alcohol. IR: an O–H is there.\" Bright at the end: the three step markers and the glowing structure.",
+      "teachingReason": "Back to the bottle.",
+      "narrationCue": "can't give these dips / 2-methylpropan-2-ol / see",
+      "motionPurpose": "the bottle Y plate and its three chips return small at left. The 2-methylpropan-2-ol IR trace draws (labelled only \"bottle Y\"); the cyclohexane trace from scene 6 sits faint beneath it on the same axis. Step 1 chip lights: band marker \"≈ 3370: O–H (alcohol), broad\" (violet). Step 3 chip: empty-range shade \"none\". Step 4 chip: band marker \"≈ 1200: C–O\" (amber). On \"can't give these dips\" cyclohexane's structure greys and strikes in the lower strip. On \"2-methylpropan-2-ol\" its structure glows, OH ringed violet, and the bottle label writes \"2-methylpropan-2-ol\". On \"see\" a grey line writes: \"tests: no 1° or 2° alcohol. IR: an O–H is there.\" Bright at the end: the three step markers and the glowing structure.",
+      "motionRole": "explain",
+      "onScreenChange": "the bottle Y plate and its three chips return small at left. The 2-methylpropan-2-ol IR trace draws (labelled only \"bottle Y\"); the cyclohexane trace from scene 6 sits faint beneath it on the same axis. Step 1 chip lights: band marker \"≈ 3370: O–H (alcohol), broad\" (violet). Step 3 chip: empty-range shade \"none\". Step 4 chip: band marker \"≈ 1200: C–O\" (amber). On \"can't give these dips\" cyclohexane's structure greys and strikes in the lower strip. On \"2-methylpropan-2-ol\" its structure glows, OH ringed violet, and the bottle label writes \"2-methylpropan-2-ol\". On \"see\" a grey line writes: \"tests: no 1° or 2° alcohol. IR: an O–H is there.\" Bright at the end: the three step markers and the glowing structure.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "bottle Y, solved: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line: \"Beard + sword = acid.\" Under it the ethanoic acid trace with its very broad O–H shaded violet (tag \"beard\") and its 1715 dip ringed red (tag \"sword\"). On \"alcohol\" the ethanol thumbnail appears beside it, its rounded O–H shaded (tag \"rounded, no sword: alcohol\"). Hold about 2 seconds.",
+      "teachingReason": "Here's a picture to remember: beard plus sword means acid.",
+      "narrationCue": "alcohol",
+      "motionPurpose": "the board clears. Handwritten line: \"Beard + sword = acid.\" Under it the ethanoic acid trace with its very broad O–H shaded violet (tag \"beard\") and its 1715 dip ringed red (tag \"sword\"). On \"alcohol\" the ethanol thumbnail appears beside it, its rounded O–H shaded (tag \"rounded, no sword: alcohol\"). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Beard + sword = acid.\" Under it the ethanoic acid trace with its very broad O–H shaded violet (tag \"beard\") and its 1715 dip ringed red (tag \"sword\"). On \"alcohol\" the ethanol thumbnail appears beside it, its rounded O–H shaded (tag \"rounded, no sword: alcohol\"). Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The ethyl ethanoate IR trace sits under the text with no markers; the data sheet card sits small at the right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no range shades, no structures).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The ethyl ethanoate IR trace sits under the text with no markers; the data sheet card sits small at the right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no range shades, no structures).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The ethyl ethanoate IR trace sits under the text with no markers; the data sheet card sits small at the right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no range shades, no structures).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"seventeen forty\" \"a strong sharp absorption at 1740 cm⁻¹\" is underlined and the band ringed red (tag \"both have C=O\"). On \"missing band\" \"no broad absorption between 2500 and 3550 cm⁻¹\" is underlined and the 2500 to 3000 range shades with the chip \"no broad band: only sharp C–H dips, no acid O–H\" (Revision 4: not an empty-range shade, because the measured trace has its C–H dip at 2989 inside that range). On \"ester\" \"1240 cm⁻¹ and 1050 cm⁻¹\" are underlined and both bands ringed amber. On \"ethyl ethanoate\" its structure writes in the lower strip and glows; butanoic acid writes beside it and strikes. On \"slip\" a chip \"C=O + C–O, so an acid\" fades in and is crossed (caption \"no beard, no acid\"). Hold about 1 second.",
+      "teachingReason": "Both candidates have a C equals O, so the dip at seventeen forty doesn't decide.",
+      "narrationCue": "seventeen forty / missing band / ester / ethyl ethanoate / slip / no beard, no acid",
+      "motionPurpose": "the card stays, shrunk to the top. On \"seventeen forty\" \"a strong sharp absorption at 1740 cm⁻¹\" is underlined and the band ringed red (tag \"both have C=O\"). On \"missing band\" \"no broad absorption between 2500 and 3550 cm⁻¹\" is underlined and the 2500 to 3000 range shades with the chip \"no broad band: only sharp C–H dips, no acid O–H\" (Revision 4: not an empty-range shade, because the measured trace has its C–H dip at 2989 inside that range). On \"ester\" \"1240 cm⁻¹ and 1050 cm⁻¹\" are underlined and both bands ringed amber. On \"ethyl ethanoate\" its structure writes in the lower strip and glows; butanoic acid writes beside it and strikes. On \"slip\" a chip \"C=O + C–O, so an acid\" fades in and is crossed (caption \"no beard, no acid\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"seventeen forty\" \"a strong sharp absorption at 1740 cm⁻¹\" is underlined and the band ringed red (tag \"both have C=O\"). On \"missing band\" \"no broad absorption between 2500 and 3550 cm⁻¹\" is underlined and the 2500 to 3000 range shades with the chip \"no broad band: only sharp C–H dips, no acid O–H\" (Revision 4: not an empty-range shade, because the measured trace has its C–H dip at 2989 inside that range). On \"ester\" \"1240 cm⁻¹ and 1050 cm⁻¹\" are underlined and both bands ringed amber. On \"ethyl ethanoate\" its structure writes in the lower strip and glows; butanoic acid writes beside it and strikes. On \"slip\" a chip \"C=O + C–O, so an acid\" fades in and is crossed (caption \"no beard, no acid\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions). The butan-1-ol IR trace sits under the text, labelled only \"Z\", with no markers; the data sheet card small at right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions). The butan-1-ol IR trace sits under the text, labelled only \"Z\", with no markers; the data sheet card small at right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions). The butan-1-ol IR trace sits under the text, labelled only \"Z\", with no markers; the data sheet card small at right. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. On \"oxidised\" \"turns warm acidified potassium dichromate from orange to green\" is underlined; a grey chip \"green: 1° or 2° alcohol, or an aldehyde (c08)\". On \"no C equals O\" \"no absorption between 1680 and 1750 cm⁻¹\" is underlined and that range gets an empty-range shade \"none: no C=O\"; the \"aldehyde\" option strikes. On \"alcohol O H\" \"broad absorption centred at 3330 cm⁻¹\" is underlined, the band ringed violet; \"1070 cm⁻¹\" is underlined and ringed amber (tag \"C–O\", no narration). On \"alcohol\" a result chip \"1° or 2° alcohol\" glows (bright). On \"trap\" a chip \"2960 = O–H\" fades in and is crossed (caption \"2960 is C–H\"). Hold about 1 second.",
+      "teachingReason": "Green only shows something was oxidised, and aldehydes do that as well as primary and secondary alcohols.",
+      "narrationCue": "oxidised / no C equals O / alcohol O H / alcohol / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"oxidised\" \"turns warm acidified potassium dichromate from orange to green\" is underlined; a grey chip \"green: 1° or 2° alcohol, or an aldehyde (c08)\". On \"no C equals O\" \"no absorption between 1680 and 1750 cm⁻¹\" is underlined and that range gets an empty-range shade \"none: no C=O\"; the \"aldehyde\" option strikes. On \"alcohol O H\" \"broad absorption centred at 3330 cm⁻¹\" is underlined, the band ringed violet; \"1070 cm⁻¹\" is underlined and ringed amber (tag \"C–O\", no narration). On \"alcohol\" a result chip \"1° or 2° alcohol\" glows (bright). On \"trap\" a chip \"2960 = O–H\" fades in and is crossed (caption \"2960 is C–H\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"oxidised\" \"turns warm acidified potassium dichromate from orange to green\" is underlined; a grey chip \"green: 1° or 2° alcohol, or an aldehyde (c08)\". On \"no C equals O\" \"no absorption between 1680 and 1750 cm⁻¹\" is underlined and that range gets an empty-range shade \"none: no C=O\"; the \"aldehyde\" option strikes. On \"alcohol O H\" \"broad absorption centred at 3330 cm⁻¹\" is underlined, the band ringed violet; \"1070 cm⁻¹\" is underlined and ringed amber (tag \"C–O\", no narration). On \"alcohol\" a result chip \"1° or 2° alcohol\" glows (bright). On \"trap\" a chip \"2960 = O–H\" fades in and is crossed (caption \"2960 is C–H\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. c09's step strip builds one step per clause at reading size: \"1 O–H? broad (alcohol) or very broad with C=O (acid)\" → \"2 C=O? strong, sharp, 1680 to 1750\" → \"3 C–O? 1000 to 1300\" → \"4 name each bond; say what's missing; combine with formula and MS\". On \"Next\" a chip \"Next: How does NMR reveal carbon environments?\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, when you meet an infrared spectrum, scan from left to right.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. c09's step strip builds one step per clause at reading size: \"1 O–H? broad (alcohol) or very broad with C=O (acid)\" → \"2 C=O? strong, sharp, 1680 to 1750\" → \"3 C–O? 1000 to 1300\" → \"4 name each bond; say what's missing; combine with formula and MS\". On \"Next\" a chip \"Next: How does NMR reveal carbon environments?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. c09's step strip builds one step per clause at reading size: \"1 O–H? broad (alcohol) or very broad with C=O (acid)\" → \"2 C=O? strong, sharp, 1680 to 1750\" → \"3 C–O? 1000 to 1300\" → \"4 name each bond; say what's missing; combine with formula and MS\". On \"Next\" a chip \"Next: How does NMR reveal carbon environments?\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c10-learning-review.md",
+      "sha256": "04045f5789b2ab973c5cbb71566813a1ef25eef46f091323a5f4f0d82f7bf53f"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c10-claude-science-check.md",
+      "sha256": "022a2a6ef8a65425dd937355bbad708668afa90a50f0df7b3e6f223105eac644"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

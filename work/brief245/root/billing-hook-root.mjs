@@ -7,7 +7,7 @@ globalThis.fetch=async (url,options)=>{
  const body=JSON.parse(options.body),sent=body.inputs.reduce((n,input)=>n+input.text.length,0);
  let spend=JSON.parse(fs.readFileSync(ledger,'utf8'));
  if(spend.requests.some(r=>r.status==='pending'||r.status==='unknown'))throw Error('Unresolved earlier paid request. Stop without retry');
- if(spend.cumulativeBilledCharacters+sent>40000)throw Error('40000-character run budget reached');
+ if(spend.cumulativeBilledCharacters+sent>(spend.cap??40000))throw Error('run budget reached (cap '+(spend.cap??40000)+')');
  const row={lesson:process.env.BRIEF194_LESSON,scene:process.env.BRIEF194_SCENE,sentCharacters:sent,textSha256:crypto.createHash('sha256').update(body.inputs.map(input=>input.text).join('')).digest('hex'),startedAt:new Date().toISOString(),status:'pending'};
  spend.requests.push(row);
  const save=()=>{

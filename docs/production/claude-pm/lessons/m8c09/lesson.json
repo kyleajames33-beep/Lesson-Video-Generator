@@ -1,0 +1,168 @@
+{
+  "title": "How does mass spectrometry constrain a structure? Weigh the pieces: the molecular ion gives the mass, the gaps give what broke off",
+  "subtitle": "An unknown liquid contains carbon, hydrogen and one oxygen per molecule. How can breaking its molecules into charged pieces, and weighing each piece, narrow down which structure it has?",
+  "subject": "Chemistry",
+  "yearLevel": 12,
+  "module": 8,
+  "lesson": 16,
+  "lessonIntent": "reading the molecular ion, mass gaps, the base peak and a halogen isotope pair; stating what remains possible.",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "introDurationInFrames": 0,
+  "productionRole": "production-draft",
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The stockroom has a bottle of unknown liquid. All you know is that each molecule contains carbon, hydrogen and one oxygen atom. You can't put one molecule on a balance. But a mass spectrometer does something cleverer. It breaks molecules into charged pieces and weighs every piece. The pattern of those masses is a mass spectrum, and each peak can rule possible structures out."
+      }
+    },
+    {
+      "id": "five-stages",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's how it weighs them. The sample is turned into a gas. A beam of fast electrons knocks one electron off some of the molecules, so they become positive ions. An electric field speeds the ions up, and then a magnetic field bends their path. Light ions bend more than heavy ones, so the instrument can sort them by mass and count each kind. Only charged particles are steered, so a neutral piece is never detected."
+      }
+    },
+    {
+      "id": "reading-chart",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The detector's counts become a bar chart. Across the bottom is m over z, the mass of each ion divided by its charge. Almost every ion here carries a charge of one plus, so you can read m over z as the ion's mass. Up the side is relative abundance: how many ions of each mass arrived, compared with the most common one."
+      }
+    },
+    {
+      "id": "molecular-ion",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's the spectrum of our unknown. Start at the right, with the molecular ion cluster. Its main peak is at seventy-two. That's the molecular ion: the whole molecule, minus one tiny electron, so seventy-two is the molecular mass. One oxygen accounts for sixteen, which leaves fifty-six, and that fits four carbons and eight hydrogens: C four H eight O. The tiny bump at seventy-three is the same structure, but with one heavier carbon thirteen atom."
+      }
+    },
+    {
+      "id": "same-mass",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "But a mass of seventy-two doesn't finish the job. From the isomers lesson, C four H eight O fits butanone, butanal and several other structures, and every one of them weighs seventy-two. The molecular ion can't tell isomers apart. For that, you need the smaller peaks."
+      }
+    },
+    {
+      "id": "bond-breaks",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Inside the instrument, many molecular ions carry so much energy that a bond breaks. One piece keeps the positive charge, and the other leaves as a neutral piece. The charged piece is detected and makes its own peak. The neutral piece is never seen. So the gap between the molecular ion and a fragment peak is the mass of the piece that was lost."
+      }
+    },
+    {
+      "id": "common-gaps",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Some gaps turn up again and again. A gap of fifteen is a methyl group, C H three. Seventeen is an O H. Twenty-nine is an ethyl group, C two H five, but it could also be C H O, which has the same mass. And forty-five is C O O H. So a gap narrows the choices, and sometimes it leaves two."
+      }
+    },
+    {
+      "id": "base-peak",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Now look at the tallest peak. It's at forty-three, not at seventy-two. The tallest peak is called the base peak, and the chart sets it to one hundred per cent. It's the most abundant ion, often a fragment that's stable enough to survive the trip. The molecular ion leads the cluster at the right, the base peak is the tallest, and they're often different peaks."
+      }
+    },
+    {
+      "id": "butanone-pieces",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Let's read the pieces. Seventy-two minus forty-three is twenty-nine, so the molecule lost an ethyl group, or C H O. Seventy-two minus fifty-seven is fifteen, so it also lost a methyl group. Butanone has a methyl group on one side of its C equals O and an ethyl group on the other. Break either bond and you get forty-three, C H three C O plus, or fifty-seven, C two H five C O plus. The small peak at twenty-nine is the ethyl ion itself. Every peak fits butanone. But butanal gives peaks at seventy-two and forty-three too, so this spectrum narrows the list without proving it. The next techniques test what's left."
+      }
+    },
+    {
+      "id": "isotope-pairs",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Some elements leave a signature. Chlorine atoms come in two masses, thirty-five and thirty-seven, roughly three to one. So chloromethane shows its molecular ion twice: at fifty, and at fifty-two, about a third as tall. Two peaks two apart, three to one, points to one chlorine. Bromine's two isotopes are nearly equal, so one bromine gives two peaks of about the same height. The higher peak has the same structure, with the heavier isotope."
+      }
+    },
+    {
+      "id": "ms-limits",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So what has the spectrum told us? The molecular ion gave the mass. The fragments showed which pieces can break off, and an isotope pair can flag chlorine or bromine. But it hasn't shown which functional group is present, or exactly how the atoms connect. Mass spectrometry narrows the list. Infrared and NMR finish the job."
+      }
+    },
+    {
+      "id": "memory-aid",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here's a line to remember: find the molecular ion cluster, and tallest is the base. Read the mass from the cluster, then subtract to find what broke off."
+      }
+    },
+    {
+      "id": "attempt-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Your turn. The spectrum on the card is either pentan-2-one or pentan-3-one, two isomers with a molar mass of eighty-six. Its base peak is at fifty-seven, with a strong peak at twenty-nine. Identify the compound, and justify your answer using the fragments. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-1",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Eighty-six minus fifty-seven is twenty-nine, so an ethyl group broke off, leaving C two H five C O plus. Pentan-3-one has an ethyl group on both sides of its C equals O, so either break gives fifty-seven. Pentan-2-one would give a big peak at forty-three instead. So it's pentan-3-one. Reading the gap as C H O and calling it an aldehyde is the slip: neither candidate has one."
+      }
+    },
+    {
+      "id": "attempt-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Last one. A compound's spectrum has two peaks of about equal height at ninety-four and ninety-six, and a peak at fifteen. Bromine atoms are about half bromine seventy-nine and half bromine eighty-one. Identify the molecular ion, explain the peak at ninety-six, and identify the fragment at fifteen. Pause here to answer."
+      },
+      "responseHold": {
+        "startFrame": 0,
+        "endFrame": 300
+      }
+    },
+    {
+      "id": "feedback-2",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "The molecular ion is at ninety-four: the molecule containing bromine seventy-nine. Ninety-six is its M plus two partner, the same structure with bromine eighty-one, about as tall, because the two isotopes are about equally common. Ninety-four minus fifteen is seventy-nine, so a bromine atom broke off, leaving C H three plus. Picking ninety-six as the molecular ion because it's furthest right is the trap."
+      }
+    },
+    {
+      "id": "decision-handoff",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "So, when you meet a mass spectrum, work in this order. Find the molecular ion at the right, and check for an isotope partner. Subtract to find the pieces lost, and ask which candidate structures could lose them. Then say what's still possible. Next, infrared spectroscopy, which shows the bonds, and so the functional groups, a molecule contains."
+      }
+    },
+    {
+      "id": "key-notes",
+      "type": "concept",
+      "durationInFrames": 300,
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      }
+    }
+  ]
+}

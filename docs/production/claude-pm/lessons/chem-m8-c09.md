@@ -1,6 +1,8 @@
 # M8 C09: How does mass spectrometry constrain a structure? Weigh the pieces: the molecular ion gives the mass, the gaps give what broke off (design)
 
-Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice once the SDBS cross-check decision is made (root); bromomethane plot verified.
+Status: Ready to voice (root, 16 Nov: independent readiness review passed, work/brief245/root/m8-voice-readiness-c09-c12.md). Earlier status: Revision 3 (1 Nov), status updated 16 Nov: Codex error check 122 resolved (no errors); bromomethane plot verified; root decision of 6 November (brief 220): the NIST 70 eV records in this design are the primary measured source and the SDBS cross-check is not required for recording. Narration unchanged (6,155 characters). Production brief built 16 Nov in `m8c09/`; ready to voice once root's independent readiness review passes.
+
+Earlier status, Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice once the SDBS cross-check decision is made (root); bromomethane plot verified.
 
 Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check (including the bromomethane NIST record) before voicing.
 

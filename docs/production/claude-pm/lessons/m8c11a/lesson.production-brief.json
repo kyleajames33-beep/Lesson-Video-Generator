@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c11a/lesson.json",
+    "lessonSha256": "8fa3ee0b3ef122498374d50c65afc2ffada3f8c1395c7b051bccd09dd2ad6810"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Propan-1-ol and propan-2-ol share the formula C three H eight O, so in a mass spectrum both molecular ions sit at 60. Both are alcohols, so both infrared spectra show the broad O H band. So how do you tell them apart? Run a carbon-13 NMR spectrum. One gives three peaks, and the other gives two. By the end of this video, you'll know which is which, and why.",
+    "stopsAfter": "explaining resonance and shielding in a sentence each; reading the ppm scale; counting carbon environments with symmetry; explaining single lines and why heights aren't counts; assigning shifts from the data sheet; choosing between candidates with the count, shifts and formula.",
+    "nextLesson": "proton NMR (route chem-m8-c11b)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c11a.md"
+  ],
+  "teaching": {
+    "task": "Propan-1-ol and propan-2-ol share a formula, a molecular ion and an O–H band. How can carbon-13 NMR tell them apart at a glance?",
+    "causalExplanation": "(1) a formula, a molecular ion and an O–H band can match; carbon-13 NMR counts something else (1); (2) ¹³C and ¹H nuclei act as tiny magnets; in a strong field they line up with or against it; the right radio frequency flips them: resonance (2); (3) electrons shield a nucleus; oxygen pulls electron density away, so the carbon is deshielded and needs a slightly higher frequency (3); (4) that position is the chemical shift, in ppm, read right to left from TMS at zero; deshielded means further left; carbon-13 runs to about 220 (4); (5) carbons in identical surroundings share an environment and a peak; ethanol: two (5); (6) symmetry: carbons that swap share a peak; propan-1-ol three, propan-2-ol two (6); (7) the swap test on butan-2-one and pentan-3-one; atoms are not environments (7); (8) each environment is one line, and heights aren't counts, with the causes (8); (9) shifts read off the data sheet: ethyl ethanoate (9); (10) ranges overlap; the formula and the other peaks settle it (10); memory aid (11); attempts (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "Propan-1-ol and propan-2-ol share the formula C three H eight O, so in a mass spectrum both molecular ions sit at 60. NMR stands for nuclear magnetic resonance. Here's the useful part. That position is the chemical shift, measured in parts per million, or ppm. So what makes two carbons give the same peak? They need identical surroundings, which chemists call the same environment. Back to the propanols. Try the swap test on two ketones. You might expect a taller peak to mean more carbons. Where a peak sits tells you what kind of carbon it is. The ranges overlap, so one shift can fit more than one kind of carbon. Two lines to keep. Your turn. It's 2-methylpropan-2-ol. Last one. It's methyl ethanoate. So, with a carbon-13 spectrum, count the peaks to count the carbon environments, and use symmetry to merge carbons that swap.",
+    "openingDecision": "Propan-1-ol and propan-2-ol share the formula C three H eight O, so in a mass spectrum both molecular ions sit at 60. Both are alcohols, so both infrared spectra show the broad O H band. So how do you tell them apart? Run a carbon-13 NMR spectrum. One gives three peaks, and the other gives two. By the end of this video, you'll know which is which, and why.",
+    "understandingCheck": "(A1) \"The four alcohols below all have the molecular formula C₄H₁₀O: butan-1-ol, butan-2-ol, 2-methylpropan-1-ol, 2-methylpropan-2-ol. One of them gives a ¹³C NMR spectrum with two peaks, at 69 ppm and 31 ppm. Identify the alcohol, and explain the number of peaks and their chemical shifts.\" Answer: 2-methylpropan-2-ol; its three CH₃ carbons swap places around the central carbon (one environment, 31 ppm, alkyl); the central carbon carries the OH (C–O range 50 to 90, 69 ppm); butan-1-ol and butan-2-ol give four peaks, 2-methylpropan-1-ol three. Crossed mistake: \"four carbons, so four peaks\". (A2) \"A compound with molecular formula C₃H₆O₂ is either propanoic acid or methyl ethanoate. Its ¹³C NMR spectrum shows three peaks, at 171 ppm, 52 ppm and 21 ppm. Identify the compound. Justify your answer using the ¹³C NMR chemical shift data on the data sheet.\" Answer: methyl ethanoate; 171 is a C=O carbon, but 160 to 185 covers both acids and esters, so it can't decide; 52 lies in the C–O range (50 to 90), a carbon singly bonded to oxygen (the ester's OCH₃); propanoic acid has no peak in that range (about 181, 28 and 9). Crossed mistake: \"171 ppm, so it's an acid\".",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:\n- proton and carbon-13 NMR\n- mass spectrometry\n- infrared spectroscopy (ACSCH130)\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "the NMR machine and the sample tube as painted plates listed by filename, never stretched; spectra are coded diagrams only (the new NmrSpectrum component), with realistic shifts for the named compounds, never AI images; molecules come from the coded molecule kit (src/explainer/lessons/chem-m7-c01/molecules.tsx), with each carbon environment ringed in the same colour as its peak; nuclear magnets, field lines and electron clouds coded as abstract diagrams; no people, hands or faces (the tube drops into the magnet as coded motion); at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"usually\", \"points to\", \"fits\").",
+    "transitionPlan": "heading writes on: \"How many kinds of carbon?\". the board clears. the board clears. the baseline grows into the NmrSpectrum axis across the lower half: numbers write on from right to left, 0 at the right, then 20, 40 . ethanol (kit skeletal, OH labelled) writes at left. the two propanols return from the hook, larger. the board clears to two kit structures. propan-2-ol's spectrum enlarges. the board clears. the data sheet card stays. the board clears. the board clears. the card stays, shrunk to the top. question card, worded as printed (A2 under Decisions), with the data sheet card beside it (the data sheet is part of the exam conditions, all rows equally dim; nothing highlighted). the card stays, shrunk to the top; the data sheet card stays at the right. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"How many kinds of carbon?\". Two kit skeletal structures write side by side: propan-1-ol (left) and propan-2-ol (right), OH labelled, no environment colours yet. Under both, one shared grey chip \"C₃H₈O\". On \"60\" a small grey card \"molecular ion: m/z 60\" writes under each with a \"c09\" chip; on \"O H band\" a small grey card \"IR: broad O–H band\" with a \"c10\" chip writes under each, and an equals sign glows between the pairs. On \"carbon-13\" m8-nmr-machine-v1.png slides in small at the right edge. On \"three peaks\" a coded mini spectrum draws under the left structure (three grey lines, no axis numbers); on \"two\" one draws under the right (two lines). A \"?\" chip sits between them: which is which. Bright at the end: the two mini spectra and the \"?\" (one item each).",
+      "teachingReason": "Propan-1-ol and propan-2-ol share the formula C three H eight O, so in a mass spectrum both molecular ions sit at 60.",
+      "narrationCue": "60 / O H band / carbon-13 / three peaks / two",
+      "motionPurpose": "heading writes on: \"How many kinds of carbon?\". Two kit skeletal structures write side by side: propan-1-ol (left) and propan-2-ol (right), OH labelled, no environment colours yet. Under both, one shared grey chip \"C₃H₈O\". On \"60\" a small grey card \"molecular ion: m/z 60\" writes under each with a \"c09\" chip; on \"O H band\" a small grey card \"IR: broad O–H band\" with a \"c10\" chip writes under each, and an equals sign glows between the pairs. On \"carbon-13\" m8-nmr-machine-v1.png slides in small at the right edge. On \"three peaks\" a coded mini spectrum draws under the left structure (three grey lines, no axis numbers); on \"two\" one draws under the right (two lines). A \"?\" chip sits between them: which is which. Bright at the end: the two mini spectra and the \"?\" (one item each).",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"How many kinds of carbon?\". Two kit skeletal structures write side by side: propan-1-ol (left) and propan-2-ol (right), OH labelled, no environment colours yet. Under both, one shared grey chip \"C₃H₈O\". On \"60\" a small grey card \"molecular ion: m/z 60\" writes under each with a \"c09\" chip; on \"O H band\" a small grey card \"IR: broad O–H band\" with a \"c10\" chip writes under each, and an equals sign glows between the pairs. On \"carbon-13\" m8-nmr-machine-v1.png slides in small at the right edge. On \"three peaks\" a coded mini spectrum draws under the left structure (three grey lines, no axis numbers); on \"two\" one draws under the right (two lines). A \"?\" chip sits between them: which is which. Bright at the end: the two mini spectra and the \"?\" (one item each).",
+      "motionTools": [
+        "m8-nmr-machine-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (two alcohols, one formula): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "tiny-magnets",
+      "visualDecision": "new",
+      "visualReference": "the board clears. m8-nmr-machine-v1.png at left, larger; a coded cutaway window opens on its body showing the magnet bore (two pole faces, coded field lines). m8-nmr-sample-tube-v1.png (new) descends into the bore (coded motion). Right half: a zoom bubble from the tube shows a few coded nuclei as small arrows; on \"carbon-12\" one grey dot with no arrow gets a grey tag \"¹²C: not seen\"; on \"with the field or against it\" the arrows settle nearly half and half, with only one more arrow with the field than against it (tags \"with: lower energy\", \"against: higher energy\" as two short lines on a small two-level ladder; grey tag \"only a tiny excess with the field\"). On \"radio waves\" a coded squiggle crosses the bubble; on \"resonance\" one \"with\" arrow flips to \"against\" and flashes; tag \"absorbs radio waves: resonance\" (bright). Bright at the end: the flipped arrow and its tag.",
+      "teachingReason": "NMR stands for nuclear magnetic resonance.",
+      "narrationCue": "carbon-12 / with the field or against it / radio waves / resonance",
+      "motionPurpose": "the board clears. m8-nmr-machine-v1.png at left, larger; a coded cutaway window opens on its body showing the magnet bore (two pole faces, coded field lines). m8-nmr-sample-tube-v1.png (new) descends into the bore (coded motion). Right half: a zoom bubble from the tube shows a few coded nuclei as small arrows; on \"carbon-12\" one grey dot with no arrow gets a grey tag \"¹²C: not seen\"; on \"with the field or against it\" the arrows settle nearly half and half, with only one more arrow with the field than against it (tags \"with: lower energy\", \"against: higher energy\" as two short lines on a small two-level ladder; grey tag \"only a tiny excess with the field\"). On \"radio waves\" a coded squiggle crosses the bubble; on \"resonance\" one \"with\" arrow flips to \"against\" and flashes; tag \"absorbs radio waves: resonance\" (bright). Bright at the end: the flipped arrow and its tag.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. m8-nmr-machine-v1.png at left, larger; a coded cutaway window opens on its body showing the magnet bore (two pole faces, coded field lines). m8-nmr-sample-tube-v1.png (new) descends into the bore (coded motion). Right half: a zoom bubble from the tube shows a few coded nuclei as small arrows; on \"carbon-12\" one grey dot with no arrow gets a grey tag \"¹²C: not seen\"; on \"with the field or against it\" the arrows settle nearly half and half, with only one more arrow with the field than against it (tags \"with: lower energy\", \"against: higher energy\" as two short lines on a small two-level ladder; grey tag \"only a tiny excess with the field\"). On \"radio waves\" a coded squiggle crosses the bubble; on \"resonance\" one \"with\" arrow flips to \"against\" and flashes; tag \"absorbs radio waves: resonance\" (bright). Bright at the end: the flipped arrow and its tag.",
+      "motionTools": [
+        "m8-nmr-machine-v1.png",
+        "m8-nmr-sample-tube-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "nuclei as tiny magnets: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "shielding",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Left: one carbon (kit atom) with a soft coded electron halo; field lines pass round it, thinned by the halo; tag \"electrons shield\" (grey chip \"shielded\"). On \"oxygen\" an O atom bonds on the right (kit OXY colour); the halo stretches towards O and thins on the carbon's far side; an arrow of electron density points to O. On \"deshielded\" more field lines reach the carbon; tag \"deshielded\" (bright). On \"higher frequency\" two radio squiggles appear, the lower one for the shielded carbon (faded copy) and a slightly tighter one for the deshielded carbon. On \"place\" a short spectrum baseline writes under them with two lines, the deshielded one to the left (no numbers yet). Bright at the end: the \"deshielded\" tag and the two lines.",
+      "teachingReason": "Here's the useful part.",
+      "narrationCue": "oxygen / deshielded / higher frequency / place",
+      "motionPurpose": "the board clears. Left: one carbon (kit atom) with a soft coded electron halo; field lines pass round it, thinned by the halo; tag \"electrons shield\" (grey chip \"shielded\"). On \"oxygen\" an O atom bonds on the right (kit OXY colour); the halo stretches towards O and thins on the carbon's far side; an arrow of electron density points to O. On \"deshielded\" more field lines reach the carbon; tag \"deshielded\" (bright). On \"higher frequency\" two radio squiggles appear, the lower one for the shielded carbon (faded copy) and a slightly tighter one for the deshielded carbon. On \"place\" a short spectrum baseline writes under them with two lines, the deshielded one to the left (no numbers yet). Bright at the end: the \"deshielded\" tag and the two lines.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Left: one carbon (kit atom) with a soft coded electron halo; field lines pass round it, thinned by the halo; tag \"electrons shield\" (grey chip \"shielded\"). On \"oxygen\" an O atom bonds on the right (kit OXY colour); the halo stretches towards O and thins on the carbon's far side; an arrow of electron density points to O. On \"deshielded\" more field lines reach the carbon; tag \"deshielded\" (bright). On \"higher frequency\" two radio squiggles appear, the lower one for the shielded carbon (faded copy) and a slightly tighter one for the deshielded carbon. On \"place\" a short spectrum baseline writes under them with two lines, the deshielded one to the left (no numbers yet). Bright at the end: the \"deshielded\" tag and the two lines.",
+      "motionTools": [
+        "OXY",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "electrons shield: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "scale-tms",
+      "visualDecision": "new",
+      "visualReference": "the baseline grows into the NmrSpectrum axis across the lower half: numbers write on from right to left, 0 at the right, then 20, 40 ... up to 220 at the left; label \"chemical shift, δ (ppm)\". On \"TMS\" a small grey line draws at 0 with the tag \"TMS: sets zero, not counted\". On \"left\" a coded arrow runs along the axis from right to left, labelled \"more deshielded\" (bright). On \"220\" the axis end glows. Bright at the end: the arrow label and \"0 to about 220 ppm\".",
+      "teachingReason": "That position is the chemical shift, measured in parts per million, or ppm.",
+      "narrationCue": "TMS / left / 220",
+      "motionPurpose": "the baseline grows into the NmrSpectrum axis across the lower half: numbers write on from right to left, 0 at the right, then 20, 40 ... up to 220 at the left; label \"chemical shift, δ (ppm)\". On \"TMS\" a small grey line draws at 0 with the tag \"TMS: sets zero, not counted\". On \"left\" a coded arrow runs along the axis from right to left, labelled \"more deshielded\" (bright). On \"220\" the axis end glows. Bright at the end: the arrow label and \"0 to about 220 ppm\".",
+      "motionRole": "explain",
+      "onScreenChange": "the baseline grows into the NmrSpectrum axis across the lower half: numbers write on from right to left, 0 at the right, then 20, 40 ... up to 220 at the left; label \"chemical shift, δ (ppm)\". On \"TMS\" a small grey line draws at 0 with the tag \"TMS: sets zero, not counted\". On \"left\" a coded arrow runs along the axis from right to left, labelled \"more deshielded\" (bright). On \"220\" the axis end glows. Bright at the end: the arrow label and \"0 to about 220 ppm\".",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the scale and TMS: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "environments",
+      "visualDecision": "new",
+      "visualReference": "ethanol (kit skeletal, OH labelled) writes at left. On \"bonded to the oxygen\" C1 gets a teal ring; on \"the other isn't\" C2 an amber ring. The spectrum (0 to 220, TMS grey) draws two lines: teal at 58, amber at 18, each landing as its carbon is named; value tags \"58\" and \"18\". A colour connector runs from each ring to its line. On \"environments\" a rule card writes in the right half: \"number of peaks = number of carbon environments\" (bright). Bright at the end: the rule card and the two coloured lines.",
+      "teachingReason": "So what makes two carbons give the same peak? They need identical surroundings, which chemists call the same environment.",
+      "narrationCue": "bonded to the oxygen / the other isn't / environments",
+      "motionPurpose": "ethanol (kit skeletal, OH labelled) writes at left. On \"bonded to the oxygen\" C1 gets a teal ring; on \"the other isn't\" C2 an amber ring. The spectrum (0 to 220, TMS grey) draws two lines: teal at 58, amber at 18, each landing as its carbon is named; value tags \"58\" and \"18\". A colour connector runs from each ring to its line. On \"environments\" a rule card writes in the right half: \"number of peaks = number of carbon environments\" (bright). Bright at the end: the rule card and the two coloured lines.",
+      "motionRole": "explain",
+      "onScreenChange": "ethanol (kit skeletal, OH labelled) writes at left. On \"bonded to the oxygen\" C1 gets a teal ring; on \"the other isn't\" C2 an amber ring. The spectrum (0 to 220, TMS grey) draws two lines: teal at 58, amber at 18, each landing as its carbon is named; value tags \"58\" and \"18\". A colour connector runs from each ring to its line. On \"environments\" a rule card writes in the right half: \"number of peaks = number of carbon environments\" (bright). Bright at the end: the rule card and the two coloured lines.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "environments: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "symmetry",
+      "visualDecision": "new",
+      "visualReference": "the two propanols return from the hook, larger. Both molecules are drawn in full (every C, H and O atom and every bond, the OH labelled). Propan-1-ol: on \"a different set of neighbours\" a faint copy of the whole structure flips end to end over it and does not match (the OH lands on C3; red outline on the mismatched OH, tag \"ends differ\"), then fades; C1 teal, C2 amber, C3 violet as \"three carbons\" is said; its spectrum (small, under it) draws teal 64, amber 26, violet 10. Propan-2-ol: a dashed mirror line draws vertically through C2 on \"mirror line\"; on \"swap places\" a faint copy of the whole labelled structure reflects across the line and lands exactly on the original, every atom matching, the OH still on C2 (tag \"whole structure matches\"), then the two end carbons ring teal; C2 rings amber; its spectrum draws teal 25 and amber 64. On \"two\" the hook's \"?\" chip resolves: \"3 peaks: propan-1-ol\", \"2 peaks: propan-2-ol\" (bright). Bright at the end: the two resolved labels and the mirror line.",
+      "teachingReason": "Back to the propanols.",
+      "narrationCue": "a different set of neighbours / mirror line / swap places / two",
+      "motionPurpose": "the two propanols return from the hook, larger. Both molecules are drawn in full (every C, H and O atom and every bond, the OH labelled). Propan-1-ol: on \"a different set of neighbours\" a faint copy of the whole structure flips end to end over it and does not match (the OH lands on C3; red outline on the mismatched OH, tag \"ends differ\"), then fades; C1 teal, C2 amber, C3 violet as \"three carbons\" is said; its spectrum (small, under it) draws teal 64, amber 26, violet 10. Propan-2-ol: a dashed mirror line draws vertically through C2 on \"mirror line\"; on \"swap places\" a faint copy of the whole labelled structure reflects across the line and lands exactly on the original, every atom matching, the OH still on C2 (tag \"whole structure matches\"), then the two end carbons ring teal; C2 rings amber; its spectrum draws teal 25 and amber 64. On \"two\" the hook's \"?\" chip resolves: \"3 peaks: propan-1-ol\", \"2 peaks: propan-2-ol\" (bright). Bright at the end: the two resolved labels and the mirror line.",
+      "motionRole": "explain",
+      "onScreenChange": "the two propanols return from the hook, larger. Both molecules are drawn in full (every C, H and O atom and every bond, the OH labelled). Propan-1-ol: on \"a different set of neighbours\" a faint copy of the whole structure flips end to end over it and does not match (the OH lands on C3; red outline on the mismatched OH, tag \"ends differ\"), then fades; C1 teal, C2 amber, C3 violet as \"three carbons\" is said; its spectrum (small, under it) draws teal 64, amber 26, violet 10. Propan-2-ol: a dashed mirror line draws vertically through C2 on \"mirror line\"; on \"swap places\" a faint copy of the whole labelled structure reflects across the line and lands exactly on the original, every atom matching, the OH still on C2 (tag \"whole structure matches\"), then the two end carbons ring teal; C2 rings amber; its spectrum draws teal 25 and amber 64. On \"two\" the hook's \"?\" chip resolves: \"3 peaks: propan-1-ol\", \"2 peaks: propan-2-ol\" (bright). Bright at the end: the two resolved labels and the mirror line.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "symmetry merges carbons: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "swap-test",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears to two kit structures. Butan-2-one: two coded \"walk\" arrows trace in from each end and stop at different distances from the C=O; the four carbons ring teal, amber, violet, rust one at a time; a chip \"4 peaks\". Pentan-3-one: the mirror line draws through the C=O carbon; the swap arc pairs C1 with C5 (teal) and C2 with C4 (amber); C3 rings violet; chip \"5 carbons, 3 peaks\" on \"three\". No spectra here (the count is the point). On \"environments\" the propan-2-ol rule chip returns small: \"atoms ≠ environments\" (bright). Bright at the end: the two count chips and the rule chip.",
+      "teachingReason": "Try the swap test on two ketones.",
+      "narrationCue": "three / environments",
+      "motionPurpose": "the board clears to two kit structures. Butan-2-one: two coded \"walk\" arrows trace in from each end and stop at different distances from the C=O; the four carbons ring teal, amber, violet, rust one at a time; a chip \"4 peaks\". Pentan-3-one: the mirror line draws through the C=O carbon; the swap arc pairs C1 with C5 (teal) and C2 with C4 (amber); C3 rings violet; chip \"5 carbons, 3 peaks\" on \"three\". No spectra here (the count is the point). On \"environments\" the propan-2-ol rule chip returns small: \"atoms ≠ environments\" (bright). Bright at the end: the two count chips and the rule chip.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to two kit structures. Butan-2-one: two coded \"walk\" arrows trace in from each end and stop at different distances from the C=O; the four carbons ring teal, amber, violet, rust one at a time; a chip \"4 peaks\". Pentan-3-one: the mirror line draws through the C=O carbon; the swap arc pairs C1 with C5 (teal) and C2 with C4 (amber); C3 rings violet; chip \"5 carbons, 3 peaks\" on \"three\". No spectra here (the count is the point). On \"environments\" the propan-2-ol rule chip returns small: \"atoms ≠ environments\" (bright). Bright at the end: the two count chips and the rule chip.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the swap test on two ketones: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "single-lines",
+      "visualDecision": "new",
+      "visualReference": "propan-2-ol's spectrum enlarges. Its teal line (two carbons) is drawn slightly shorter than nothing would suggest (heights deliberately unequal; author note d); a grey chip \"2 carbons\" hangs on the teal line and \"1 carbon\" on the amber one, and a crossed chip \"taller = more carbons\" fades in and is crossed on \"Not here\". On \"one in a hundred\" inset 1 (boxed at the upper left) shows a coded grid of 100 small grey dots with one coloured dot (tags \"¹³C about 1.1%\" and \"reason 1: ¹³C rarely next to ¹³C\"). On \"decoupling\" inset 2, in its own box at the upper right with a gap between the two, shows a split cluster of grey lines collapsing into one sharp line (tags \"reason 2: decoupling\" and \"hydrogens don't split the line\"). Inset 1 dims before inset 2 appears. On \"sit\" the rule card adds a second line: \"heights are not carbon counts\" (bright). Bright at the end: the two rule lines.",
+      "teachingReason": "You might expect a taller peak to mean more carbons.",
+      "narrationCue": "Not here / decoupling / sit",
+      "motionPurpose": "propan-2-ol's spectrum enlarges. Its teal line (two carbons) is drawn slightly shorter than nothing would suggest (heights deliberately unequal; author note d); a grey chip \"2 carbons\" hangs on the teal line and \"1 carbon\" on the amber one, and a crossed chip \"taller = more carbons\" fades in and is crossed on \"Not here\". On \"one in a hundred\" inset 1 (boxed at the upper left) shows a coded grid of 100 small grey dots with one coloured dot (tags \"¹³C about 1.1%\" and \"reason 1: ¹³C rarely next to ¹³C\"). On \"decoupling\" inset 2, in its own box at the upper right with a gap between the two, shows a split cluster of grey lines collapsing into one sharp line (tags \"reason 2: decoupling\" and \"hydrogens don't split the line\"). Inset 1 dims before inset 2 appears. On \"sit\" the rule card adds a second line: \"heights are not carbon counts\" (bright). Bright at the end: the two rule lines.",
+      "motionRole": "explain",
+      "onScreenChange": "propan-2-ol's spectrum enlarges. Its teal line (two carbons) is drawn slightly shorter than nothing would suggest (heights deliberately unequal; author note d); a grey chip \"2 carbons\" hangs on the teal line and \"1 carbon\" on the amber one, and a crossed chip \"taller = more carbons\" fades in and is crossed on \"Not here\". On \"one in a hundred\" inset 1 (boxed at the upper left) shows a coded grid of 100 small grey dots with one coloured dot (tags \"¹³C about 1.1%\" and \"reason 1: ¹³C rarely next to ¹³C\"). On \"decoupling\" inset 2, in its own box at the upper right with a gap between the two, shows a split cluster of grey lines collapsing into one sharp line (tags \"reason 2: decoupling\" and \"hydrogens don't split the line\"). Inset 1 dims before inset 2 appears. On \"sit\" the rule card adds a second line: \"heights are not carbon counts\" (bright). Bright at the end: the two rule lines.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "one line each, and heights aren't counts: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "data-sheet",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Right half: the data sheet card writes, all rows dim, title \"¹³C chemical shifts (data sheet)\". Left: ethyl ethanoate (kit skeletal, CH₃C(=O)OCH₂CH₃). Lower half: the spectrum draws its four lines grey at 171, 60, 21, 14. On \"171\" the \"esters, acids 160 to 185\" row brightens, a connector runs to the 171 line, the line turns rust and the C=O carbon rings rust. On \"60\" the \"C–O 50 to 90\" row brightens (171's row dims), the 60 line turns violet and the OCH₂ carbon rings violet. On \"21 and 14\" the \"alkyl 5 to 40\" row brightens and the two lines turn amber (21, the CH₃ on the C=O) and teal (14, the end CH₃) as their carbons ring. Bright at the end: the alkyl row and the four coloured lines.",
+      "teachingReason": "Where a peak sits tells you what kind of carbon it is.",
+      "narrationCue": "171 / 60 / 21 and 14",
+      "motionPurpose": "the board clears. Right half: the data sheet card writes, all rows dim, title \"¹³C chemical shifts (data sheet)\". Left: ethyl ethanoate (kit skeletal, CH₃C(=O)OCH₂CH₃). Lower half: the spectrum draws its four lines grey at 171, 60, 21, 14. On \"171\" the \"esters, acids 160 to 185\" row brightens, a connector runs to the 171 line, the line turns rust and the C=O carbon rings rust. On \"60\" the \"C–O 50 to 90\" row brightens (171's row dims), the 60 line turns violet and the OCH₂ carbon rings violet. On \"21 and 14\" the \"alkyl 5 to 40\" row brightens and the two lines turn amber (21, the CH₃ on the C=O) and teal (14, the end CH₃) as their carbons ring. Bright at the end: the alkyl row and the four coloured lines.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Right half: the data sheet card writes, all rows dim, title \"¹³C chemical shifts (data sheet)\". Left: ethyl ethanoate (kit skeletal, CH₃C(=O)OCH₂CH₃). Lower half: the spectrum draws its four lines grey at 171, 60, 21, 14. On \"171\" the \"esters, acids 160 to 185\" row brightens, a connector runs to the 171 line, the line turns rust and the C=O carbon rings rust. On \"60\" the \"C–O 50 to 90\" row brightens (171's row dims), the 60 line turns violet and the OCH₂ carbon rings violet. On \"21 and 14\" the \"alkyl 5 to 40\" row brightens and the two lines turn amber (21, the CH₃ on the C=O) and teal (14, the end CH₃) as their carbons ring. Bright at the end: the alkyl row and the four coloured lines.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading shifts off the data sheet: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "overlap",
+      "visualDecision": "new",
+      "visualReference": "the data sheet card stays. On \"21\" two rows brighten together, \"alkyl 5 to 40\" and \"R–C–C(=O) 20 to 50\", with a bracket on the overlap at 20 to 40 (tag \"both fit\"). They dim. On \"70\" a single grey line draws on a fresh small axis; rows \"C–O 50 to 90\" and \"R–C–Cl or R–C–Br 10 to 70\" brighten with the overlap bracketed. On \"check the formula\" a formula chip writes, \"C₄H₁₀O\"; the Cl/Br row crosses out; the C–O row stays lit (tag \"no Cl or Br → C–O\"). On \"job\" a three-part chip row writes: \"count + shifts + formula\" (bright). Bright at the end: the chip row and the C–O row.",
+      "teachingReason": "The ranges overlap, so one shift can fit more than one kind of carbon.",
+      "narrationCue": "21 / 70 / check the formula / job",
+      "motionPurpose": "the data sheet card stays. On \"21\" two rows brighten together, \"alkyl 5 to 40\" and \"R–C–C(=O) 20 to 50\", with a bracket on the overlap at 20 to 40 (tag \"both fit\"). They dim. On \"70\" a single grey line draws on a fresh small axis; rows \"C–O 50 to 90\" and \"R–C–Cl or R–C–Br 10 to 70\" brighten with the overlap bracketed. On \"check the formula\" a formula chip writes, \"C₄H₁₀O\"; the Cl/Br row crosses out; the C–O row stays lit (tag \"no Cl or Br → C–O\"). On \"job\" a three-part chip row writes: \"count + shifts + formula\" (bright). Bright at the end: the chip row and the C–O row.",
+      "motionRole": "explain",
+      "onScreenChange": "the data sheet card stays. On \"21\" two rows brighten together, \"alkyl 5 to 40\" and \"R–C–C(=O) 20 to 50\", with a bracket on the overlap at 20 to 40 (tag \"both fit\"). They dim. On \"70\" a single grey line draws on a fresh small axis; rows \"C–O 50 to 90\" and \"R–C–Cl or R–C–Br 10 to 70\" brighten with the overlap bracketed. On \"check the formula\" a formula chip writes, \"C₄H₁₀O\"; the Cl/Br row crosses out; the C–O row stays lit (tag \"no Cl or Br → C–O\"). On \"job\" a three-part chip row writes: \"count + shifts + formula\" (bright). Bright at the end: the chip row and the C–O row.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "ranges overlap: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line 1: \"Carbons that swap share a peak.\" Under it, propan-2-ol with the mirror line and the swap arc replaying once. Handwritten line 2: \"Further left: more deshielded. Check the data-sheet group.\" Under it, the axis with an arrow from right to left, and the data sheet card small beside it with its rows lighting one by one as their ranges shade on the axis (C–O 50 to 90 amber, C=C and aromatic 90 to 160 grey, C=O 160 to 220 rust; tag \"different groups, different reasons\"). Hold about 2 seconds.",
+      "teachingReason": "Two lines to keep.",
+      "narrationCue": "Two lines to keep",
+      "motionPurpose": "the board clears. Handwritten line 1: \"Carbons that swap share a peak.\" Under it, propan-2-ol with the mirror line and the swap arc replaying once. Handwritten line 2: \"Further left: more deshielded. Check the data-sheet group.\" Under it, the axis with an arrow from right to left, and the data sheet card small beside it with its rows lighting one by one as their ranges shade on the axis (C–O 50 to 90 amber, C=C and aromatic 90 to 160 grey, C=O 160 to 220 rust; tag \"different groups, different reasons\"). Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line 1: \"Carbons that swap share a peak.\" Under it, propan-2-ol with the mirror line and the swap arc replaying once. Handwritten line 2: \"Further left: more deshielded. Check the data-sheet group.\" Under it, the axis with an arrow from right to left, and the data sheet card small beside it with its rows lighting one by one as their ranges shade on the axis (C–O 50 to 90 amber, C=C and aromatic 90 to 160 grey, C=O 160 to 220 rust; tag \"different groups, different reasons\"). Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no data sheet card, no mirror lines).",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no data sheet card, no mirror lines).",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The four names only, no structures. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no data sheet card, no mirror lines).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top. The four names gain small kit structures. On \"swap places\" \"two peaks\" is underlined; 2-methylpropan-2-ol is drawn in full; a faint copy of the whole structure turns a third of a turn about the central carbon and lands exactly on the original, OH still on the centre (tag \"whole structure matches\"), and its three CH₃ carbons ring teal; \"31 ppm\" is underlined and a teal line draws on a small axis. On \"69\" \"69 ppm\" is underlined, the central carbon rings amber and an amber line draws at 69 (tag \"C–O 50 to 90\"). On \"four peaks\" chips \"4\", \"4\", \"3\" write under the other three structures and they dim. On \"slip\" a chip \"4 carbons, so 4 peaks\" fades in and is crossed (caption \"count environments, not atoms\"). Hold about 1 second.",
+      "teachingReason": "It's 2-methylpropan-2-ol.",
+      "narrationCue": "swap places / 69 / four peaks / slip",
+      "motionPurpose": "the card stays, shrunk to the top. The four names gain small kit structures. On \"swap places\" \"two peaks\" is underlined; 2-methylpropan-2-ol is drawn in full; a faint copy of the whole structure turns a third of a turn about the central carbon and lands exactly on the original, OH still on the centre (tag \"whole structure matches\"), and its three CH₃ carbons ring teal; \"31 ppm\" is underlined and a teal line draws on a small axis. On \"69\" \"69 ppm\" is underlined, the central carbon rings amber and an amber line draws at 69 (tag \"C–O 50 to 90\"). On \"four peaks\" chips \"4\", \"4\", \"3\" write under the other three structures and they dim. On \"slip\" a chip \"4 carbons, so 4 peaks\" fades in and is crossed (caption \"count environments, not atoms\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. The four names gain small kit structures. On \"swap places\" \"two peaks\" is underlined; 2-methylpropan-2-ol is drawn in full; a faint copy of the whole structure turns a third of a turn about the central carbon and lands exactly on the original, OH still on the centre (tag \"whole structure matches\"), and its three CH₃ carbons ring teal; \"31 ppm\" is underlined and a teal line draws on a small axis. On \"69\" \"69 ppm\" is underlined, the central carbon rings amber and an amber line draws at 69 (tag \"C–O 50 to 90\"). On \"four peaks\" chips \"4\", \"4\", \"3\" write under the other three structures and they dim. On \"slip\" a chip \"4 carbons, so 4 peaks\" fades in and is crossed (caption \"count environments, not atoms\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions), with the data sheet card beside it (the data sheet is part of the exam conditions, all rows equally dim; nothing highlighted). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions), with the data sheet card beside it (the data sheet is part of the exam conditions, all rows equally dim; nothing highlighted). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions), with the data sheet card beside it (the data sheet is part of the exam conditions, all rows equally dim; nothing highlighted). The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top; the data sheet card stays at the right. On \"171\" \"171 ppm\" is underlined and the \"esters, acids 160 to 185\" row brightens (tag \"both candidates\"). On \"52\" \"52 ppm\" is underlined and the \"C–O 50 to 90\" row brightens; methyl ethanoate's kit structure writes with its OCH₃ carbon ringed violet. On \"no peak in that range\" propanoic acid's structure writes small with grey value tags \"about 181, 28, 9\" and dims. On \"trap\" a chip \"171 ppm, so an acid\" fades in and is crossed (caption \"160 to 185: acids and esters\"). Hold about 1 second.",
+      "teachingReason": "It's methyl ethanoate.",
+      "narrationCue": "171 / 52 / no peak in that range / trap",
+      "motionPurpose": "the card stays, shrunk to the top; the data sheet card stays at the right. On \"171\" \"171 ppm\" is underlined and the \"esters, acids 160 to 185\" row brightens (tag \"both candidates\"). On \"52\" \"52 ppm\" is underlined and the \"C–O 50 to 90\" row brightens; methyl ethanoate's kit structure writes with its OCH₃ carbon ringed violet. On \"no peak in that range\" propanoic acid's structure writes small with grey value tags \"about 181, 28, 9\" and dims. On \"trap\" a chip \"171 ppm, so an acid\" fades in and is crossed (caption \"160 to 185: acids and esters\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top; the data sheet card stays at the right. On \"171\" \"171 ppm\" is underlined and the \"esters, acids 160 to 185\" row brightens (tag \"both candidates\"). On \"52\" \"52 ppm\" is underlined and the \"C–O 50 to 90\" row brightens; methyl ethanoate's kit structure writes with its OCH₃ carbon ringed violet. On \"no peak in that range\" propanoic acid's structure writes small with grey value tags \"about 181, 28, 9\" and dims. On \"trap\" a chip \"171 ppm, so an acid\" fades in and is crossed (caption \"160 to 185: acids and esters\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A three-step card writes, one line per clause: \"1 Count peaks = carbon environments (swap test)\" → \"2 Read each shift off the data sheet\" → \"3 Check the count and shifts against the formula\". Ethyl ethanoate's coloured spectrum sits small beneath it. On \"Next\" a chip \"Next: proton NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, with a carbon-13 spectrum, count the peaks to count the carbon environments, and use symmetry to merge carbons that swap.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A three-step card writes, one line per clause: \"1 Count peaks = carbon environments (swap test)\" → \"2 Read each shift off the data sheet\" → \"3 Check the count and shifts against the formula\". Ethyl ethanoate's coloured spectrum sits small beneath it. On \"Next\" a chip \"Next: proton NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A three-step card writes, one line per clause: \"1 Count peaks = carbon environments (swap test)\" → \"2 Read each shift off the data sheet\" → \"3 Check the count and shifts against the formula\". Ethyl ethanoate's coloured spectrum sits small beneath it. On \"Next\" a chip \"Next: proton NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c11a-learning-review.md",
+      "sha256": "76a4a237207795757fb5211a78e7725262c1e419e3483424fe0bbff3462c4924"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c11a-claude-science-check.md",
+      "sha256": "f66450a841f80e290060e046397fda1a4d2a2cf5f2fd4e0a44f27918b2955935"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Pending scaffold, not approval. Fill the teaching and scene decisions before recording; review the exact voiced revision before a full export."
+}

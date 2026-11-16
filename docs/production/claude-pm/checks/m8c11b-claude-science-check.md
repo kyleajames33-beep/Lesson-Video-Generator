@@ -30,3 +30,7 @@ Resolved in `../lessons/chem-m8-c11b.md` Revision 2 (31 Oct; root resolver, Clau
 | 3 | Fixed (as proposed, reworded) | Feedback 2: "Of these candidates, only the symmetrical pentan-3-one gives two signals". |
 
 Consistency with C09 to C11a: ethanol, ethyl ethanoate and the shared sample tube plate match C11a; no proton values appear in C09 or C10.
+
+## Resolution update, Revision 4 (16 Nov 2026)
+
+Finding S2 (inspected proton records with solvent and field): data supplied. Brief 246 (`chem-m8-c10-c12-measured-spectra.md`) gives measured records for the held values, and `../lessons/chem-m8-c11b.md` Revision 4 applies them (author: Claude designer; the change list is in that design's "Revision 4 (16 Nov): measured spectra applied" section). Any remaining items are listed there as open items, and none is a drawn, printed or spoken value. This note records the author's resolution only. Independent confirmation is root's readiness review, which is pending.

@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 4,
+  "source": {
+    "lessonPath": "docs/production/claude-pm/lessons/m8c11b/measured/lesson.json",
+    "lessonSha256": "fe5d809dca7e6e838e616e18cc6cde5af10421e0f278c5ef5ded1a5a2a4076ec"
+  },
+  "progression": {
+    "planPath": "docs/production/course-progression-plan-2026-10-09.md",
+    "prerequisiteKnowledge": "see Scope.",
+    "startsWith": "Carbon-13 told you ethanol has two kinds of carbon. Now look at its proton NMR spectrum. There are three signals, they're different sizes, and two of them are split into little clusters of lines. Each of those features is a separate clue. Read all three, and the spectrum tells you not just which hydrogens are there, but how they're joined.",
+    "stopsAfter": "counting hydrogen environments; reading a given shift; using areas as a ratio scaled by the formula; explaining and applying the n+1 rule, with the O–H and equivalence limits; reading and predicting a whole spectrum; the ethyl and lone CH₃ patterns.",
+    "nextLesson": "combining MS, IR and NMR (route chem-m8-c12)."
+  },
+  "researchReferences": [
+    "docs/research/hsc-video-production-standard-2026-10-02.md",
+    "docs/production/teaching-templates.md",
+    "docs/animation-planning.md",
+    "docs/production/motion-design-standard.md",
+    "docs/production/claude-pm/teaching-playbook.md",
+    "docs/production/claude-pm/lessons/chem-m8-c11b.md"
+  ],
+  "teaching": {
+    "task": "Carbon-13 told you ethanol has two kinds of carbon. Its proton spectrum shows three signals, of different sizes, and two are split. What does each feature tell you?",
+    "causalExplanation": "(1) the proton spectrum shows three features, each a clue (1); (2) same shielding idea, 0 to 12 ppm, shifts given in the question (2); (3) hydrogens in identical surroundings share a signal; symmetry merges them; ethanol three (3); (4) the CH₂ next to oxygen is deshielded, so further left (4); (5) area is proportional to the number of hydrogens; integration line; areas, not heights; a ratio, not the numbers (5); (6) neighbouring hydrogens add to or subtract from the field, so two neighbours give three lines (6); (7) n+1; who counts as a neighbour; O–H singlet (7); (8) bromoethane read from scratch (8); (9) a quartet is not four hydrogens (9); (10) ethyl ethanoate: the lone CH₃ singlet and the ester oxygen (10); memory aid (11); attempts (12 to 15); decision rule and handoff (16); key notes (17).",
+    "conversationalApproach": "Carbon-13 told you ethanol has two kinds of carbon. Proton NMR works the same way as carbon-13, but it watches hydrogen-1 nuclei, called protons here. First clue: the number of signals. Second, where each signal sits. Third, how big each signal is. Now the clusters of lines. That's the n plus one rule. Let's read one from scratch. Here's the classic trap. Now a molecule with a surprise. One line for the three clues: signals, areas, neighbours plus one. Your turn. Three signals, in the ratio three to two to three. Last one. It's pentan-3-one. So, with a proton spectrum, ask four questions.",
+    "openingDecision": "Carbon-13 told you ethanol has two kinds of carbon. Now look at its proton NMR spectrum. There are three signals, they're different sizes, and two of them are split into little clusters of lines. Each of those features is a separate clue. Read all three, and the spectrum tells you not just which hydrogens are there, but how they're joined.",
+    "understandingCheck": "(A1) \"Predict the ¹H NMR spectrum of methyl propanoate, CH₃CH₂COOCH₃. State the number of signals, their relative areas and the splitting of each signal. Justify your answer.\" Answer: three signals, 3 : 2 : 3; OCH₃ singlet (no hydrogens on the next atom; the oxygen carries none); CH₂ quartet (three neighbours on the CH₃); CH₃ triplet (two neighbours on the CH₂). Crossed mistake: \"CH₂ is a sextet: counted the OCH₃ hydrogens too\" (hydrogens across the C=O and the ester oxygen are not on the next carbon). (A2) \"A compound with molecular formula C₅H₁₀O is one of: pentan-2-one, pentan-3-one, pentanal, 3-methylbutan-2-one. Its ¹H NMR spectrum shows two signals: a triplet at 1.05 ppm with relative area 3, and a quartet at 2.44 ppm with relative area 2. (A CH₂ next to a C=O group appears at about 2.0 to 2.7 ppm.) Identify the compound. Justify your answer using the number of signals, the relative areas and the splitting.\" Answer: pentan-3-one; triplet and quartet in 3 : 2 is an ethyl pattern; ten hydrogens make the real numbers 6 and 4, so two identical ethyl groups; two signals mean symmetry; the 2.44 quartet fits CH₂ beside the C=O; the others give four, five and three signals. Crossed mistake: \"3 : 2 means five hydrogens, so one ethyl group\".",
+    "curriculumScope": "Syllabus dotpoint (as printed; NSW Chemistry Stage 6, 2017, p58; C8-IQ2-02 is this project's local catalogue ID, not a code printed in the syllabus), quoted from ../../programme/syllabus/chem-2017-y12.json:\n\n\"investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to:\n- proton and carbon-13 NMR\n- mass spectrometry\n- infrared spectroscopy (ACSCH130)\""
+  },
+  "design": {
+    "renderer": "src/explainer/ExplainerVideo.tsx",
+    "visualSystem": "the NMR machine and the sample tube as painted plates listed by filename (both from c11a), never stretched; spectra are coded diagrams only (c11a's NmrSpectrum component in proton mode), with realistic shifts for the named compounds, never AI images; molecules come from the coded molecule kit (src/explainer/lessons/chem-m7-c01/molecules.tsx), drawn with their hydrogens where hydrogens are the subject, each hydrogen environment ringed in the same colour as its signal; nuclear magnets coded as abstract arrows; no people, hands or faces; at most about three bright text items, earlier lines dim; one reasoning stage at a time; \"Pause here to answer.\" then a 10 s countdown with the full worded question kept on screen; no givens card, givens underlined in the feedback as they are used; brief feedback (answer, key reason, one crossed mistake, about 15 to 30 s); original HSC-style questions only; Australian spelling; no em dashes; conversational narration; no absolute claims (\"usually\", \"fits\").",
+    "transitionPlan": "heading writes on: \"What do the hydrogens tell you?\". m8-nmr-machine-v1. ethanol redraws with all hydrogens (kit FullMol). the amber CH₂ hydrogens pulse; c11a's electron cloud halo appears on that carbon, thinning towards O (small, grey chip \"c11a: deshielded\"); the amber quartet gets the value tag \"about 3. the integration line draws from right to left over the spectrum, stepping up at each signal; each step fills in its colour; number tags \"3\" (teal), \"2\" (amber), \"1\" (violet) write beside the steps as spoken. the board clears to a close-up: ethanol's CH₃ carbon (teal hydrogens) on the left and the CH₂ carbon with its two amber hydrogens on the right, each amber hydrogen carrying a small coded magnet arrow. a rule card writes: \"simple spectra: n equivalent neighbours → n + 1 lines\" (bright). the board clears. the bromoethane quartet enlarges. the board clears. the board clears. the board clears. the card stays, shrunk to the top; \"number of signals\", \"relative areas\" and \"splitting\" are underlined as each is answered. question card, worded as printed (A2 under Decisions): the formula, the four names, both signals with shifts, splitting and areas, and the printed shift note \"(A CH₂ next to a C=O group appears at about 2. the card stays, shrunk to the top. the board clears. Heading on screen: \"Key notes: what to write in your book\"."
+  },
+  "scenes": [
+    {
+      "sceneId": "hook",
+      "visualDecision": "new",
+      "visualReference": "heading writes on: \"What do the hydrogens tell you?\". Left: ethanol (kit skeletal) with c11a's two coloured carbon rings and its small two-line carbon spectrum beneath (grey chip \"c11a: 2 carbon environments\"). On \"proton NMR spectrum\" the carbon spectrum slides up and dims; the proton spectrum draws across the lower half (0 to 5 ppm window, TMS grey at 0): a quartet near 3.7, a singlet near 2.6 (grey tag \"O–H: position varies\"), a triplet near 1.2, all grey. On \"three signals\" three brackets write over them; on \"different sizes\" a faint integration line steps across; on \"clusters of lines\" the quartet and triplet pulse. Three small \"?\" chips write in the right half: \"how many signals?\", \"how big?\", \"how many lines?\". Bright at the end: the three \"?\" chips.",
+      "teachingReason": "Carbon-13 told you ethanol has two kinds of carbon.",
+      "narrationCue": "proton NMR spectrum / three signals / different sizes / clusters of lines",
+      "motionPurpose": "heading writes on: \"What do the hydrogens tell you?\". Left: ethanol (kit skeletal) with c11a's two coloured carbon rings and its small two-line carbon spectrum beneath (grey chip \"c11a: 2 carbon environments\"). On \"proton NMR spectrum\" the carbon spectrum slides up and dims; the proton spectrum draws across the lower half (0 to 5 ppm window, TMS grey at 0): a quartet near 3.7, a singlet near 2.6 (grey tag \"O–H: position varies\"), a triplet near 1.2, all grey. On \"three signals\" three brackets write over them; on \"different sizes\" a faint integration line steps across; on \"clusters of lines\" the quartet and triplet pulse. Three small \"?\" chips write in the right half: \"how many signals?\", \"how big?\", \"how many lines?\". Bright at the end: the three \"?\" chips.",
+      "motionRole": "explain",
+      "onScreenChange": "heading writes on: \"What do the hydrogens tell you?\". Left: ethanol (kit skeletal) with c11a's two coloured carbon rings and its small two-line carbon spectrum beneath (grey chip \"c11a: 2 carbon environments\"). On \"proton NMR spectrum\" the carbon spectrum slides up and dims; the proton spectrum draws across the lower half (0 to 5 ppm window, TMS grey at 0): a quartet near 3.7, a singlet near 2.6 (grey tag \"O–H: position varies\"), a triplet near 1.2, all grey. On \"three signals\" three brackets write over them; on \"different sizes\" a faint integration line steps across; on \"clusters of lines\" the quartet and triplet pulse. Three small \"?\" chips write in the right half: \"how many signals?\", \"how big?\", \"how many lines?\". Bright at the end: the three \"?\" chips.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "hook (one molecule, more clues): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "same-rules",
+      "visualDecision": "new",
+      "visualReference": "m8-nmr-machine-v1.png small at upper right with m8-nmr-sample-tube-v1.png dropping in (one short replay of c11a's motion; grey chip \"c11a\"). The spectrum axis redraws as 12 to 0 ppm (tag \"¹H: 0 to about 12 ppm\"), then a ghost of c11a's 220 to 0 axis slides in above it for one beat and fades (tag \"¹³C: 0 to about 220\"). Three recall chips write in a column: \"electrons shield\", \"electronegative atoms deshield → left\", \"TMS = 0, not counted\". On \"need\" a card writes: \"¹H shifts: given in the question, not on the data sheet\" (bright). The axis then zooms to 5 to 0 ppm (tag \"zoomed: 0 to 5 ppm\"). Bright at the end: the card.",
+      "teachingReason": "Proton NMR works the same way as carbon-13, but it watches hydrogen-1 nuclei, called protons here.",
+      "narrationCue": "need",
+      "motionPurpose": "m8-nmr-machine-v1.png small at upper right with m8-nmr-sample-tube-v1.png dropping in (one short replay of c11a's motion; grey chip \"c11a\"). The spectrum axis redraws as 12 to 0 ppm (tag \"¹H: 0 to about 12 ppm\"), then a ghost of c11a's 220 to 0 axis slides in above it for one beat and fades (tag \"¹³C: 0 to about 220\"). Three recall chips write in a column: \"electrons shield\", \"electronegative atoms deshield → left\", \"TMS = 0, not counted\". On \"need\" a card writes: \"¹H shifts: given in the question, not on the data sheet\" (bright). The axis then zooms to 5 to 0 ppm (tag \"zoomed: 0 to 5 ppm\"). Bright at the end: the card.",
+      "motionRole": "explain",
+      "onScreenChange": "m8-nmr-machine-v1.png small at upper right with m8-nmr-sample-tube-v1.png dropping in (one short replay of c11a's motion; grey chip \"c11a\"). The spectrum axis redraws as 12 to 0 ppm (tag \"¹H: 0 to about 12 ppm\"), then a ghost of c11a's 220 to 0 axis slides in above it for one beat and fades (tag \"¹³C: 0 to about 220\"). Three recall chips write in a column: \"electrons shield\", \"electronegative atoms deshield → left\", \"TMS = 0, not counted\". On \"need\" a card writes: \"¹H shifts: given in the question, not on the data sheet\" (bright). The axis then zooms to 5 to 0 ppm (tag \"zoomed: 0 to 5 ppm\"). Bright at the end: the card.",
+      "motionTools": [
+        "m8-nmr-machine-v1.png",
+        "m8-nmr-sample-tube-v1.png",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "same rules, new nucleus: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "signals",
+      "visualDecision": "new",
+      "visualReference": "ethanol redraws with all hydrogens (kit FullMol). On \"end carbon\" the three CH₃ hydrogens ring teal together; on \"middle carbon\" the two CH₂ hydrogens ring amber; on \"on its own\" the O–H hydrogen rings violet. The spectrum's three signals take the matching colours as each set is named (triplet teal, quartet amber, singlet violet), with connectors. On \"three signals\" a rule card writes: \"number of signals = number of H environments\" (bright). On \"carbons\" a small grey propan-2-ol with its mirror line flashes from c11a (tag \"6 CH₃ hydrogens: one signal\"). Bright at the end: the rule card and the three coloured signals.",
+      "teachingReason": "First clue: the number of signals.",
+      "narrationCue": "end carbon / middle carbon / on its own / three signals / carbons",
+      "motionPurpose": "ethanol redraws with all hydrogens (kit FullMol). On \"end carbon\" the three CH₃ hydrogens ring teal together; on \"middle carbon\" the two CH₂ hydrogens ring amber; on \"on its own\" the O–H hydrogen rings violet. The spectrum's three signals take the matching colours as each set is named (triplet teal, quartet amber, singlet violet), with connectors. On \"three signals\" a rule card writes: \"number of signals = number of H environments\" (bright). On \"carbons\" a small grey propan-2-ol with its mirror line flashes from c11a (tag \"6 CH₃ hydrogens: one signal\"). Bright at the end: the rule card and the three coloured signals.",
+      "motionRole": "explain",
+      "onScreenChange": "ethanol redraws with all hydrogens (kit FullMol). On \"end carbon\" the three CH₃ hydrogens ring teal together; on \"middle carbon\" the two CH₂ hydrogens ring amber; on \"on its own\" the O–H hydrogen rings violet. The spectrum's three signals take the matching colours as each set is named (triplet teal, quartet amber, singlet violet), with connectors. On \"three signals\" a rule card writes: \"number of signals = number of H environments\" (bright). On \"carbons\" a small grey propan-2-ol with its mirror line flashes from c11a (tag \"6 CH₃ hydrogens: one signal\"). Bright at the end: the rule card and the three coloured signals.",
+      "motionTools": [
+        "FullMol",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "clue one: how many signals: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "shift",
+      "visualDecision": "new",
+      "visualReference": "the amber CH₂ hydrogens pulse; c11a's electron cloud halo appears on that carbon, thinning towards O (small, grey chip \"c11a: deshielded\"); the amber quartet gets the value tag \"about 3.7\". The teal CH₃ hydrogens pulse; the teal triplet gets \"about 1.2\". The violet singlet gets a grey tag \"O–H: position varies\". On \"left\" a card writes: \"near O, C=O or a halogen → further left\" (bright), and the right-to-left arrow under the axis glows. Bright at the end: the card and the two value tags.",
+      "teachingReason": "Second, where each signal sits.",
+      "narrationCue": "left",
+      "motionPurpose": "the amber CH₂ hydrogens pulse; c11a's electron cloud halo appears on that carbon, thinning towards O (small, grey chip \"c11a: deshielded\"); the amber quartet gets the value tag \"about 3.7\". The teal CH₃ hydrogens pulse; the teal triplet gets \"about 1.2\". The violet singlet gets a grey tag \"O–H: position varies\". On \"left\" a card writes: \"near O, C=O or a halogen → further left\" (bright), and the right-to-left arrow under the axis glows. Bright at the end: the card and the two value tags.",
+      "motionRole": "explain",
+      "onScreenChange": "the amber CH₂ hydrogens pulse; c11a's electron cloud halo appears on that carbon, thinning towards O (small, grey chip \"c11a: deshielded\"); the amber quartet gets the value tag \"about 3.7\". The teal CH₃ hydrogens pulse; the teal triplet gets \"about 1.2\". The violet singlet gets a grey tag \"O–H: position varies\". On \"left\" a card writes: \"near O, C=O or a halogen → further left\" (bright), and the right-to-left arrow under the axis glows. Bright at the end: the card and the two value tags.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "clue two: where each signal sits: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "integration",
+      "visualDecision": "new",
+      "visualReference": "the integration line draws from right to left over the spectrum, stepping up at each signal; each step fills in its colour; number tags \"3\" (teal), \"2\" (amber), \"1\" (violet) write beside the steps as spoken. On \"not the height of the tallest line\" the singlet (a single tall line) and the quartet (shorter lines, larger total area) are both outlined; a shaded area fills under each; a chip \"tallest line = most H\" fades in and is crossed. On \"numbers\" a card writes: \"areas → a ratio of H, not the numbers\" (bright). Bright at the end: the three step tags and the card.",
+      "teachingReason": "Third, how big each signal is.",
+      "narrationCue": "not the height of the tallest line / numbers",
+      "motionPurpose": "the integration line draws from right to left over the spectrum, stepping up at each signal; each step fills in its colour; number tags \"3\" (teal), \"2\" (amber), \"1\" (violet) write beside the steps as spoken. On \"not the height of the tallest line\" the singlet (a single tall line) and the quartet (shorter lines, larger total area) are both outlined; a shaded area fills under each; a chip \"tallest line = most H\" fades in and is crossed. On \"numbers\" a card writes: \"areas → a ratio of H, not the numbers\" (bright). Bright at the end: the three step tags and the card.",
+      "motionRole": "explain",
+      "onScreenChange": "the integration line draws from right to left over the spectrum, stepping up at each signal; each step fills in its colour; number tags \"3\" (teal), \"2\" (amber), \"1\" (violet) write beside the steps as spoken. On \"not the height of the tallest line\" the singlet (a single tall line) and the quartet (shorter lines, larger total area) are both outlined; a shaded area fills under each; a chip \"tallest line = most H\" fades in and is crossed. On \"numbers\" a card writes: \"areas → a ratio of H, not the numbers\" (bright). Bright at the end: the three step tags and the card.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "clue three: how big each signal is: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "why-split",
+      "visualDecision": "new",
+      "visualReference": "the board clears to a close-up: ethanol's CH₃ carbon (teal hydrogens) on the left and the CH₂ carbon with its two amber hydrogens on the right, each amber hydrogen carrying a small coded magnet arrow. Right half: a tally strip. On \"both with\" both arrows point with the field (strip row \"with, with\": field nudged up). On \"one with and one against\" two rows write: \"with, against\" and \"against, with\" (bracketed \"2 ways\"). On \"both against\" the last row writes (field nudged down). On \"three slightly different fields\" the three field levels become three lines rising from a baseline in the zoomed teal signal, heights 1, 2, 1 (the middle line grows twice as tall as its row count is said). Bright at the end: the three lines and the \"2 ways\" bracket.",
+      "teachingReason": "Now the clusters of lines.",
+      "narrationCue": "both with / one with and one against / both against / three slightly different fields",
+      "motionPurpose": "the board clears to a close-up: ethanol's CH₃ carbon (teal hydrogens) on the left and the CH₂ carbon with its two amber hydrogens on the right, each amber hydrogen carrying a small coded magnet arrow. Right half: a tally strip. On \"both with\" both arrows point with the field (strip row \"with, with\": field nudged up). On \"one with and one against\" two rows write: \"with, against\" and \"against, with\" (bracketed \"2 ways\"). On \"both against\" the last row writes (field nudged down). On \"three slightly different fields\" the three field levels become three lines rising from a baseline in the zoomed teal signal, heights 1, 2, 1 (the middle line grows twice as tall as its row count is said). Bright at the end: the three lines and the \"2 ways\" bracket.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears to a close-up: ethanol's CH₃ carbon (teal hydrogens) on the left and the CH₂ carbon with its two amber hydrogens on the right, each amber hydrogen carrying a small coded magnet arrow. Right half: a tally strip. On \"both with\" both arrows point with the field (strip row \"with, with\": field nudged up). On \"one with and one against\" two rows write: \"with, against\" and \"against, with\" (bracketed \"2 ways\"). On \"both against\" the last row writes (field nudged down). On \"three slightly different fields\" the three field levels become three lines rising from a baseline in the zoomed teal signal, heights 1, 2, 1 (the middle line grows twice as tall as its row count is said). Bright at the end: the three lines and the \"2 ways\" bracket.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "why signals split: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "n-plus-one",
+      "visualDecision": "new",
+      "visualReference": "a rule card writes: \"simple spectra: n equivalent neighbours → n + 1 lines\" (bright). Back to the full ethanol spectrum. On \"two neighbours\" the two amber hydrogens pulse and the teal signal gets \"2 + 1 = 3: triplet\". On \"three neighbours\" the three teal hydrogens pulse and the amber signal gets \"3 + 1 = 4: quartet\" (the 1 : 3 : 3 : 1 heights drawn, not labelled). On \"same environment\" a small grey chip \"equivalent H: no splitting\" writes beside the teal set. On \"singlet\" the violet O–H hydrogen flickers between two coded ethanol outlines (swap motion), and the violet signal gets \"singlet\"; a dotted link from O–H to the CH₂ is drawn and crossed (tag \"doesn't split its neighbours\"). A small names chip writes: \"1 singlet, 2 doublet, 3 triplet, 4 quartet\". Bright at the end: the rule card and the three multiplicity tags.",
+      "teachingReason": "That's the n plus one rule.",
+      "narrationCue": "two neighbours / three neighbours / same environment / singlet",
+      "motionPurpose": "a rule card writes: \"simple spectra: n equivalent neighbours → n + 1 lines\" (bright). Back to the full ethanol spectrum. On \"two neighbours\" the two amber hydrogens pulse and the teal signal gets \"2 + 1 = 3: triplet\". On \"three neighbours\" the three teal hydrogens pulse and the amber signal gets \"3 + 1 = 4: quartet\" (the 1 : 3 : 3 : 1 heights drawn, not labelled). On \"same environment\" a small grey chip \"equivalent H: no splitting\" writes beside the teal set. On \"singlet\" the violet O–H hydrogen flickers between two coded ethanol outlines (swap motion), and the violet signal gets \"singlet\"; a dotted link from O–H to the CH₂ is drawn and crossed (tag \"doesn't split its neighbours\"). A small names chip writes: \"1 singlet, 2 doublet, 3 triplet, 4 quartet\". Bright at the end: the rule card and the three multiplicity tags.",
+      "motionRole": "explain",
+      "onScreenChange": "a rule card writes: \"simple spectra: n equivalent neighbours → n + 1 lines\" (bright). Back to the full ethanol spectrum. On \"two neighbours\" the two amber hydrogens pulse and the teal signal gets \"2 + 1 = 3: triplet\". On \"three neighbours\" the three teal hydrogens pulse and the amber signal gets \"3 + 1 = 4: quartet\" (the 1 : 3 : 3 : 1 heights drawn, not labelled). On \"same environment\" a small grey chip \"equivalent H: no splitting\" writes beside the teal set. On \"singlet\" the violet O–H hydrogen flickers between two coded ethanol outlines (swap motion), and the violet signal gets \"singlet\"; a dotted link from O–H to the CH₂ is drawn and crossed (tag \"doesn't split its neighbours\"). A small names chip writes: \"1 singlet, 2 doublet, 3 triplet, 4 quartet\". Bright at the end: the rule card and the three multiplicity tags.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "the n plus one rule: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "bromoethane",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Formula chip \"C₂H₅Br\" at top-left. The spectrum draws (grey): a quartet near 3.4 and a triplet near 1.7, with integration steps tagged \"2\" and \"3\". One reasoning line writes per sentence in the right half: \"2 signals → 2 H environments\"; \"areas 3 : 2\"; \"quartet, 2H → 3 neighbours\" (the quartet turns amber); \"triplet, 3H → 2 neighbours\" (the triplet turns teal); earlier lines dim as each new one writes. On \"ethyl group\" bromoethane writes with hydrogens (kit FullMol with Br; see Open decisions), CH₃ hydrogens teal, CH₂ hydrogens amber; pattern chip \"ethyl: triplet 3H + quartet 2H\" (bright). On \"bromine\" the Br pulses and an arrow of electron density points to it. Bright at the end: the pattern chip and bromoethane.",
+      "teachingReason": "Let's read one from scratch.",
+      "narrationCue": "ethyl group / bromine",
+      "motionPurpose": "the board clears. Formula chip \"C₂H₅Br\" at top-left. The spectrum draws (grey): a quartet near 3.4 and a triplet near 1.7, with integration steps tagged \"2\" and \"3\". One reasoning line writes per sentence in the right half: \"2 signals → 2 H environments\"; \"areas 3 : 2\"; \"quartet, 2H → 3 neighbours\" (the quartet turns amber); \"triplet, 3H → 2 neighbours\" (the triplet turns teal); earlier lines dim as each new one writes. On \"ethyl group\" bromoethane writes with hydrogens (kit FullMol with Br; see Open decisions), CH₃ hydrogens teal, CH₂ hydrogens amber; pattern chip \"ethyl: triplet 3H + quartet 2H\" (bright). On \"bromine\" the Br pulses and an arrow of electron density points to it. Bright at the end: the pattern chip and bromoethane.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Formula chip \"C₂H₅Br\" at top-left. The spectrum draws (grey): a quartet near 3.4 and a triplet near 1.7, with integration steps tagged \"2\" and \"3\". One reasoning line writes per sentence in the right half: \"2 signals → 2 H environments\"; \"areas 3 : 2\"; \"quartet, 2H → 3 neighbours\" (the quartet turns amber); \"triplet, 3H → 2 neighbours\" (the triplet turns teal); earlier lines dim as each new one writes. On \"ethyl group\" bromoethane writes with hydrogens (kit FullMol with Br; see Open decisions), CH₃ hydrogens teal, CH₂ hydrogens amber; pattern chip \"ethyl: triplet 3H + quartet 2H\" (bright). On \"bromine\" the Br pulses and an arrow of electron density points to it. Bright at the end: the pattern chip and bromoethane.",
+      "motionTools": [
+        "FullMol",
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "reading one from scratch: bromoethane: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "quartet-trap",
+      "visualDecision": "new",
+      "visualReference": "the bromoethane quartet enlarges. A chip \"quartet = 4 H\" fades in and is crossed. Two arrows split from the quartet: one to its four lines, labelled \"lines: 3 neighbours + 1\", one to its shaded area and integration step, labelled \"area: 2 H here\". The same pair writes small for the triplet (\"lines: 2 + 1\"; \"area: 3 H\"). On \"area\" a two-question card writes: \"How many lines? → neighbours. How big an area? → hydrogens.\" (bright). Bright at the end: the card.",
+      "teachingReason": "Here's the classic trap.",
+      "narrationCue": "area",
+      "motionPurpose": "the bromoethane quartet enlarges. A chip \"quartet = 4 H\" fades in and is crossed. Two arrows split from the quartet: one to its four lines, labelled \"lines: 3 neighbours + 1\", one to its shaded area and integration step, labelled \"area: 2 H here\". The same pair writes small for the triplet (\"lines: 2 + 1\"; \"area: 3 H\"). On \"area\" a two-question card writes: \"How many lines? → neighbours. How big an area? → hydrogens.\" (bright). Bright at the end: the card.",
+      "motionRole": "explain",
+      "onScreenChange": "the bromoethane quartet enlarges. A chip \"quartet = 4 H\" fades in and is crossed. Two arrows split from the quartet: one to its four lines, labelled \"lines: 3 neighbours + 1\", one to its shaded area and integration step, labelled \"area: 2 H here\". The same pair writes small for the triplet (\"lines: 2 + 1\"; \"area: 3 H\"). On \"area\" a two-question card writes: \"How many lines? → neighbours. How big an area? → hydrogens.\" (bright). Bright at the end: the card.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "a quartet isn't four hydrogens: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "ethyl-ethanoate",
+      "visualDecision": "adjust",
+      "visualReference": "the board clears. Ethyl ethanoate writes with hydrogens; c11a's small carbon spectrum of it sits at the upper right (grey chip \"c11a: 4 carbon environments\"). The proton spectrum draws: quartet near 4.1, singlet near 2.0, triplet near 1.3, integration steps \"2\", \"3\", \"3\". On \"ethyl group\" the OCH₂ hydrogens ring amber and the end CH₃ teal, the quartet and triplet colour to match, and the ethyl pattern chip returns. On \"ester oxygen\" the ester O pulses. On \"singlet\" the CH₃C=O hydrogens ring violet and the singlet turns violet; on \"nothing to split it\" the C=O carbon gets a grey tag \"no H here\". Pattern chip \"CH₃ singlet: no H next door\" writes (bright). Bright at the end: the two pattern chips.",
+      "teachingReason": "Now a molecule with a surprise.",
+      "narrationCue": "ethyl group / ester oxygen / singlet / nothing to split it",
+      "motionPurpose": "the board clears. Ethyl ethanoate writes with hydrogens; c11a's small carbon spectrum of it sits at the upper right (grey chip \"c11a: 4 carbon environments\"). The proton spectrum draws: quartet near 4.1, singlet near 2.0, triplet near 1.3, integration steps \"2\", \"3\", \"3\". On \"ethyl group\" the OCH₂ hydrogens ring amber and the end CH₃ teal, the quartet and triplet colour to match, and the ethyl pattern chip returns. On \"ester oxygen\" the ester O pulses. On \"singlet\" the CH₃C=O hydrogens ring violet and the singlet turns violet; on \"nothing to split it\" the C=O carbon gets a grey tag \"no H here\". Pattern chip \"CH₃ singlet: no H next door\" writes (bright). Bright at the end: the two pattern chips.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Ethyl ethanoate writes with hydrogens; c11a's small carbon spectrum of it sits at the upper right (grey chip \"c11a: 4 carbon environments\"). The proton spectrum draws: quartet near 4.1, singlet near 2.0, triplet near 1.3, integration steps \"2\", \"3\", \"3\". On \"ethyl group\" the OCH₂ hydrogens ring amber and the end CH₃ teal, the quartet and triplet colour to match, and the ethyl pattern chip returns. On \"ester oxygen\" the ester O pulses. On \"singlet\" the CH₃C=O hydrogens ring violet and the singlet turns violet; on \"nothing to split it\" the C=O carbon gets a grey tag \"no H here\". Pattern chip \"CH₃ singlet: no H next door\" writes (bright). Bright at the end: the two pattern chips.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "ethyl ethanoate: a lone methyl: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "memory-aid",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Handwritten line: \"Signals, areas, neighbours + 1.\" Under each phrase, a small icon from this video: three brackets (signals), an integration step (areas), a quartet (neighbours + 1). Under the line, three small labels write one per clause: \"signals: environments\", \"areas: compare H (formula gives the numbers)\", \"lines: equivalent neighbours + 1\". On \"areas compare\" feedback 2's \"3 : 2 = 6 : 4 (10 H)\" scaling line appears small beside the integration icon (tag \"see attempt 2\"). Small grey second line: \"A quartet is not four hydrogens.\" Hold about 2 seconds.",
+      "teachingReason": "One line for the three clues: signals, areas, neighbours plus one.",
+      "narrationCue": "areas compare",
+      "motionPurpose": "the board clears. Handwritten line: \"Signals, areas, neighbours + 1.\" Under each phrase, a small icon from this video: three brackets (signals), an integration step (areas), a quartet (neighbours + 1). Under the line, three small labels write one per clause: \"signals: environments\", \"areas: compare H (formula gives the numbers)\", \"lines: equivalent neighbours + 1\". On \"areas compare\" feedback 2's \"3 : 2 = 6 : 4 (10 H)\" scaling line appears small beside the integration icon (tag \"see attempt 2\"). Small grey second line: \"A quartet is not four hydrogens.\" Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. Handwritten line: \"Signals, areas, neighbours + 1.\" Under each phrase, a small icon from this video: three brackets (signals), an integration step (areas), a quartet (neighbours + 1). Under the line, three small labels write one per clause: \"signals: environments\", \"areas: compare H (formula gives the numbers)\", \"lines: equivalent neighbours + 1\". On \"areas compare\" feedback 2's \"3 : 2 = 6 : 4 (10 H)\" scaling line appears small beside the integration icon (tag \"see attempt 2\"). Small grey second line: \"A quartet is not four hydrogens.\" Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "memory aid: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-1",
+      "visualDecision": "new",
+      "visualReference": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The condensed formula CH₃CH₂COOCH₃ as printed; no structure with hydrogens ringed, no spectrum. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "teachingReason": "Your turn.",
+      "narrationCue": "Your turn",
+      "motionPurpose": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The condensed formula CH₃CH₂COOCH₃ as printed; no structure with hydrogens ringed, no spectrum. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionRole": "hold",
+      "onScreenChange": "the board clears. Question card, worded as printed (A1 under Decisions), with the tag \"HSC-style question, written for HSCScience\". The condensed formula CH₃CH₂COOCH₃ as printed; no structure with hydrogens ringed, no spectrum. The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 1 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-1",
+      "visualDecision": "new",
+      "visualReference": "the card stays, shrunk to the top; \"number of signals\", \"relative areas\" and \"splitting\" are underlined as each is answered. Methyl propanoate writes with hydrogens; on \"three signals\" the OCH₃ hydrogens ring violet, CH₂ amber, CH₃ teal. A predicted spectrum draws: violet singlet near 3.7, amber quartet near 2.3, teal triplet near 1.1, integration \"3\", \"2\", \"3\". On \"singlet\" the violet signal is tagged \"no H next door\"; on \"triplet\" the teal signal \"2 + 1\". On \"slip\" a chip \"CH₂ is a sextet: counted the OCH₃ hydrogens\" fades in and is crossed (caption \"neighbours = H on the next carbon\"). Hold about 1 second.",
+      "teachingReason": "Three signals, in the ratio three to two to three.",
+      "narrationCue": "three signals / singlet / triplet / slip",
+      "motionPurpose": "the card stays, shrunk to the top; \"number of signals\", \"relative areas\" and \"splitting\" are underlined as each is answered. Methyl propanoate writes with hydrogens; on \"three signals\" the OCH₃ hydrogens ring violet, CH₂ amber, CH₃ teal. A predicted spectrum draws: violet singlet near 3.7, amber quartet near 2.3, teal triplet near 1.1, integration \"3\", \"2\", \"3\". On \"singlet\" the violet signal is tagged \"no H next door\"; on \"triplet\" the teal signal \"2 + 1\". On \"slip\" a chip \"CH₂ is a sextet: counted the OCH₃ hydrogens\" fades in and is crossed (caption \"neighbours = H on the next carbon\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top; \"number of signals\", \"relative areas\" and \"splitting\" are underlined as each is answered. Methyl propanoate writes with hydrogens; on \"three signals\" the OCH₃ hydrogens ring violet, CH₂ amber, CH₃ teal. A predicted spectrum draws: violet singlet near 3.7, amber quartet near 2.3, teal triplet near 1.1, integration \"3\", \"2\", \"3\". On \"singlet\" the violet signal is tagged \"no H next door\"; on \"triplet\" the teal signal \"2 + 1\". On \"slip\" a chip \"CH₂ is a sextet: counted the OCH₃ hydrogens\" fades in and is crossed (caption \"neighbours = H on the next carbon\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 1 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "attempt-2",
+      "visualDecision": "new",
+      "visualReference": "question card, worded as printed (A2 under Decisions): the formula, the four names, both signals with shifts, splitting and areas, and the printed shift note \"(A CH₂ next to a C=O group appears at about 2.0 to 2.7 ppm.)\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no spectrum).",
+      "teachingReason": "Last one.",
+      "narrationCue": "Last one",
+      "motionPurpose": "question card, worded as printed (A2 under Decisions): the formula, the four names, both signals with shifts, splitting and areas, and the printed shift note \"(A CH₂ next to a C=O group appears at about 2.0 to 2.7 ppm.)\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no spectrum).",
+      "motionRole": "hold",
+      "onScreenChange": "question card, worded as printed (A2 under Decisions): the formula, the four names, both signals with shifts, splitting and areas, and the printed shift note \"(A CH₂ next to a C=O group appears at about 2.0 to 2.7 ppm.)\". The full question stays on screen. Countdown ring for 10 seconds with \"Pause here to answer.\" Nothing answer-bearing (no structures, no spectrum).",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on",
+        "Countdown"
+      ],
+      "holdPurpose": "attempt 2 (countdown, 10 seconds): Keep the full question visible during the countdown."
+    },
+    {
+      "sceneId": "feedback-2",
+      "visualDecision": "adjust",
+      "visualReference": "the card stays, shrunk to the top. On \"ethyl group\" \"triplet\" and \"quartet\" are underlined, and the ethyl pattern chip returns with a grey tag \"a candidate pattern: check the other clues\". On \"ten hydrogens\" \"C₅H₁₀O\" and \"relative area 3 ... 2\" are underlined; a small line writes \"3 : 2 = 6 : 4 (10 H)\". On \"only the symmetrical pentan-3-one\" \"two signals\" is underlined and pentan-3-one writes with hydrogens, the mirror line through C=O, both CH₃ sets teal, both CH₂ sets amber. On \"2.44\" \"2.44 ppm\" and the printed note are underlined. The other three names get grey chips \"4 signals\", \"5 signals\", \"3 signals\" and dim. On \"trap\" a chip \"3 : 2 means 5 H, one ethyl group\" fades in and is crossed (caption \"the formula sets the real numbers\"). Hold about 1 second.",
+      "teachingReason": "It's pentan-3-one.",
+      "narrationCue": "ethyl group / ten hydrogens / only the symmetrical pentan-3-one / 2.44 / trap",
+      "motionPurpose": "the card stays, shrunk to the top. On \"ethyl group\" \"triplet\" and \"quartet\" are underlined, and the ethyl pattern chip returns with a grey tag \"a candidate pattern: check the other clues\". On \"ten hydrogens\" \"C₅H₁₀O\" and \"relative area 3 ... 2\" are underlined; a small line writes \"3 : 2 = 6 : 4 (10 H)\". On \"only the symmetrical pentan-3-one\" \"two signals\" is underlined and pentan-3-one writes with hydrogens, the mirror line through C=O, both CH₃ sets teal, both CH₂ sets amber. On \"2.44\" \"2.44 ppm\" and the printed note are underlined. The other three names get grey chips \"4 signals\", \"5 signals\", \"3 signals\" and dim. On \"trap\" a chip \"3 : 2 means 5 H, one ethyl group\" fades in and is crossed (caption \"the formula sets the real numbers\"). Hold about 1 second.",
+      "motionRole": "explain",
+      "onScreenChange": "the card stays, shrunk to the top. On \"ethyl group\" \"triplet\" and \"quartet\" are underlined, and the ethyl pattern chip returns with a grey tag \"a candidate pattern: check the other clues\". On \"ten hydrogens\" \"C₅H₁₀O\" and \"relative area 3 ... 2\" are underlined; a small line writes \"3 : 2 = 6 : 4 (10 H)\". On \"only the symmetrical pentan-3-one\" \"two signals\" is underlined and pentan-3-one writes with hydrogens, the mirror line through C=O, both CH₃ sets teal, both CH₂ sets amber. On \"2.44\" \"2.44 ppm\" and the printed note are underlined. The other three names get grey chips \"4 signals\", \"5 signals\", \"3 signals\" and dim. On \"trap\" a chip \"3 : 2 means 5 H, one ethyl group\" fades in and is crossed (caption \"the formula sets the real numbers\"). Hold about 1 second.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "feedback 2 (brief): Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "decision-handoff",
+      "visualDecision": "new",
+      "visualReference": "the board clears. A four-row card writes, one row per question: \"How many signals? → H environments\" → \"Where? → near O, C=O, halogen = left (shifts given)\" → \"How big? → ratio of H (scale by the formula)\" → \"How many lines? → neighbours + 1\". A last row: \"Build one structure that explains every clue.\" On \"Next\" a chip \"Next: combining MS, IR and NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "teachingReason": "So, with a proton spectrum, ask four questions.",
+      "narrationCue": "Next",
+      "motionPurpose": "the board clears. A four-row card writes, one row per question: \"How many signals? → H environments\" → \"Where? → near O, C=O, halogen = left (shifts given)\" → \"How big? → ratio of H (scale by the formula)\" → \"How many lines? → neighbours + 1\". A last row: \"Build one structure that explains every clue.\" On \"Next\" a chip \"Next: combining MS, IR and NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "motionRole": "explain",
+      "onScreenChange": "the board clears. A four-row card writes, one row per question: \"How many signals? → H environments\" → \"Where? → near O, C=O, halogen = left (shifts given)\" → \"How big? → ratio of H (scale by the formula)\" → \"How many lines? → neighbours + 1\". A last row: \"Build one structure that explains every clue.\" On \"Next\" a chip \"Next: combining MS, IR and NMR\" slides in at the lower right. Hold about 2 seconds.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "decision rule and handoff: Hold the final state described in the visual plan."
+    },
+    {
+      "sceneId": "key-notes",
+      "visualDecision": "new",
+      "visualReference": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "teachingReason": "Here are the key notes.",
+      "narrationCue": "Here are the key notes",
+      "motionPurpose": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionRole": "hold",
+      "onScreenChange": "Heading on screen: \"Key notes: what to write in your book\". > Here are the key notes. Pause the video if you need more time to copy them.",
+      "motionTools": [
+        "DrawPath",
+        "HandText write-on"
+      ],
+      "holdPurpose": "key notes (quiet, hold about 60 seconds): Hold the final state described in the visual plan."
+    }
+  ],
+  "studentLearningReview": {
+    "status": "pass",
+    "reviewer": "Independent Claude Sonnet student-learning reviewer (AI source review, re-review pass; findings resolved in the design)",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c11b-learning-review.md",
+      "sha256": "e6e52b5bf386cc212a5378415c252f481a58b62114e08a40b2cb4caddc152d84"
+    }
+  },
+  "scriptReview": {
+    "status": "pass",
+    "reviewer": "Claude science check (web-sourced), findings resolved; Codex check pending before render",
+    "evidence": {
+      "path": "docs/production/claude-pm/checks/m8c11b-claude-science-check.md",
+      "sha256": "2d705df420b41d44f74883428e1b1ae026c9eeab0638990d7e35e02af9421d96"
+    }
+  },
+  "voicedPreview": {
+    "status": "pending",
+    "reviewer": "",
+    "mode": "",
+    "inputSnapshotPath": "",
+    "evidence": null,
+    "studentLearningReview": {
+      "status": "pending",
+      "reviewer": "",
+      "evidence": null
+    },
+    "humanListening": {
+      "status": "pending",
+      "reviewer": "",
+      "mode": "human-listening",
+      "evidence": null
+    }
+  },
+  "limitation": "Same independently reviewed narration, new measured media and cues. Exact voiced source/timing, continuous playback, caption fit and human listening pending."
+}
