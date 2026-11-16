@@ -33,10 +33,13 @@ if (exp.timeline?.durationInFrames && exp.timeline.durationInFrames !== frames) 
 // 2. Publication metadata from the design.
 const design = fs.readFileSync(`docs/production/claude-pm/lessons/${key}.md`, 'utf8');
 const sec = design.slice(design.indexOf('## YouTube metadata'));
-const title = sec.match(/Title:\**\s*"?(.+?)"?\s*\(\d+ characters/)[1].trim();
-const dm = sec.match(/Description:\**\s*\n\s*\n\s*"([\s\S]*?#HSCScience)"/);
+// Two draft formats: quoted bullets ("- Title: "..." (N characters") or plain lines ("Title: ...", "Description: ..." to the #HSCScience line).
+const tq = sec.match(/Title:\**\s*"?(.+?)"?\s*\(\d+ characters/) ?? sec.match(/^Title:\s*(.+?)\s*$/m);
+if (!tq) throw new Error('title not found');
+const title = tq[1].trim();
+const dm = sec.match(/Description:\**\s*\n\s*\n\s*"([\s\S]*?#HSCScience)"/) ?? sec.match(/^Description:\s*([\s\S]*?#HSCScience[^\n]*)/m);
 if (!dm) throw new Error('description not found');
-const description = dm[1].split('\n').map((l) => l.replace(/^  /, '').trimEnd()).join('\n');
+const description = dm[1].split('\n').map((l) => l.replace(/^  /, '').trimEnd()).join('\n').replace(/"\s*$/, '').trim();
 for (const t of [title, description]) if (/[—�]/.test(t)) throw new Error('em dash or bad char');
 if (title.length > 100 || description.length > 5000) throw new Error('length');
 if (!/Syllabus dotpoint/.test(description)) throw new Error('no dotpoint');

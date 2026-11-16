@@ -63,3 +63,15 @@ Source: C:/Users/kygs/AppData/Local/Temp/claude/maths-repair/ink/<id>.txt and <i
 
 ## Totals
 b08 5, b09 8, b10 4, b11 6, g01 1, g02 1 (+2 marginal), p02 4, b06 1, b07 5 (+1 marginal). g03 queued (sampled; it was never ink-checked: add it to the next sweep).
+
+## Re-check after fixes (16 Nov, 02:09 onward)
+- b06: 0 runs. Clean.
+- b07: only accepted items left (red strikes, "2020", countdown label) plus a 9 px single-frame graze of the red-cell plate fading in under "narrow the artery" at 139 s. Clean.
+- b08: only the accepted 5 px 'too little' graze, red strikes, and 4 px single-frame grey proximities to 'usual glucose range' (199, 228 s). Clean.
+- b09: only red strikes and the accepted 8 px pill edge near 'cancer risk'. Clean (all 8 collisions cleared).
+- b10: only the three red strikes. Clean.
+- b11: only red strikes and the accepted map labels on the map plates. Clean. (Playback check: the survival labels now sit above the curves; confirm they still read as naming their lines.)
+- g01: confounder links cleared; only givens underline, '38' and red strikes. Clean.
+- g02: '≈ 7', '+2' and the evidence heading cleared; only accepted underlines, red strikes and small border proximities. Clean.
+- p02: heading, '70', 'steady rate first' and the leaf/stem labels cleared; only red strikes, givens underline and small accepted proximities. Clean. (Playback check: the plant's top fade during the hook zoom.)
+- g03 (first check; already public): real collisions: banana plate over "Classify it" (14-23 s) and "R (ethylene)" (390-403 s); red cut-X on "receptors" (71-133 s); loop arrows through "response" (71-149 s). Accepted: moving glucose dots across "muscle"/"liver" (1 s), red strikes, underline. Fix agent running; v2 will replace the public v1 (queue file sets "replaces").

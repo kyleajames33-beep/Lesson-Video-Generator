@@ -22,6 +22,8 @@ const pub = items.filter((i) => i.status?.privacyStatus === 'public').map((i) =>
 // Map videoId -> master/captions from every record we keep.
 const map = new Map();
 const add = (v, o) => { if (!v || !/^[\w-]{11}$/.test(v)) return; const m = map.get(v) ?? {}; for (const [k, x] of Object.entries(o)) if (x && !m[k]) m[k] = x; map.set(v, m); };
+// Root 17 Nov: manual overrides (recovered masters), applied first.
+for (const [v, o] of Object.entries(read('work/brief245/root/bunny-plan-overrides.json'))) if (!v.startsWith('_')) map.set(v, {...o});
 const walk = (o) => {
 	if (Array.isArray(o)) return o.forEach(walk);
 	if (!o || typeof o !== 'object') return;
@@ -73,7 +75,7 @@ const capFor = (lesson) => {
 const plan = [], problems = [];
 for (const p of pub) {
 	const m = map.get(p.videoId) ?? {};
-	let master = resolveFile(m.master), how = master ? 'record' : null, why = 'no master file mapped';
+	let master = m.masterAbs && fs.existsSync(m.masterAbs) ? m.masterAbs : resolveFile(m.master), how = master ? (m.masterAbs ? 'override' : 'record') : null, why = 'no master file mapped';
 	if (!master && m.lesson) {
 		const vs = versions(m.lesson);
 		if (vs.length === 1) { master = vs[0].file; how = 'only version'; }

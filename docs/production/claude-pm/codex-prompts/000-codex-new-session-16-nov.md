@@ -22,4 +22,10 @@ Hard rules:
 4. **Brief 244** (Year 12 Physics upgrade plates: five QA checks and two new plates).
 5. **Brief 243** is now Claude's (root is doing the Year 11 Maths crosswalk and outline itself). Skip it.
 
+**Update, 17 November (root).** Voicing order after the Year 12 Maths list in job 1 is finished:
+1. Resume **brief 236** (Year 11 Chemistry wave 1) at `chem-y11-m1-v03`, keeping its settings and ledger. v01 and v02 are done and are being built now. Year 11 Chemistry ranks ahead of Year 11 Maths in the course priority.
+2. Then voice briefs 247 and 248 (Year 11 Maths).
+
+Non-voicing work in gaps stays as listed: 247 and 248 steps 1 to 3, then 244 and 242.
+
 When a job is waiting (quota, plates rendering), move to the next one rather than idling. Report each finished step to `status.md` in one short block.
