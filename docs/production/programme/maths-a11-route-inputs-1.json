@@ -1,0 +1,1528 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "brief": 243,
+  "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+  "syllabus": "Mathematics Advanced 11-12 (2024), Year 11",
+  "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout",
+  "officialEvidence": {
+    "source": "Fresh seven NSW Curriculum Year 11 focus-area pages, read 16 November 2026",
+    "year11Points": 201,
+    "crosswalk": "docs/production/programme/syllabus/maths-advanced-2024-y11-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+    "commitDate": "2026-11-16 11:01:17 +1100",
+    "note": "No local site checkout exists on this machine; paths are repo paths at this commit."
+  },
+  "recommendations": [
+    "Teach the algebra toolkit (w01 to w06) before function language (w07 to w09), then lines (w10 to w13) and parabola intercepts (w14).",
+    "Interval notation is taught in the site's inequality lesson (AT02) but the syllabus places it with domain and range; this route defers it to w09.",
+    "w07 needs original two-set (arrow diagram) teaching; the site defines a relation only as ordered pairs.",
+    "w14 opens the parabola sequence; vertex form (w15) follows."
+  ],
+  "subjects": {
+    "Mathematics Advanced": {
+      "year": 11,
+      "entries": [
+        {
+          "id": "math-a11-w01",
+          "playlistOrder": 1,
+          "mainLearnerQuestion": "How do index laws handle negative, zero and fractional powers?",
+          "syllabusActionIds": [
+            "cib0d54c54"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cib0d54c54",
+              "text": "Use index laws to simplify expressions and solve problems involving positive, negative, zero or fractional indices",
+              "sourceHtml": "<p>Use <a data-item-id=\"fbae9ef6-5ae3-45f0-b229-6a27797fae5d\" href=\"\">index</a> laws to simplify <a data-item-id=\"097d642d-58b0-4c64-bc14-b017344d8dec\" href=\"\">expressions</a> and solve problems involving positive, negative, <a data-item-id=\"6cfd41c4-2461-433c-bcdb-8036c7b5343d\" href=\"\">zero</a> or fractional <a data-item-id=\"7c63e196-cb23-4023-8623-52a5594e7e98\" href=\"\">indices</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson04.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson04.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "one-idea-behind-every-index",
+              "what-you-ll-master",
+              "multiplying-dividing-and-raising-a",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-folded-paper",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "a050fa60ed543d87c921cd89e411f475c7e0c5c9bbe3606a749e82120ec103ec"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson04.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson04.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "one-idea-behind-every-index",
+                "what-you-ll-master",
+                "multiplying-dividing-and-raising-a",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-folded-paper",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "a050fa60ed543d87c921cd89e411f475c7e0c5c9bbe3606a749e82120ec103ec"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Positive integer indices, a^m x a^n = a^(m+n) for whole-number powers, square and cube roots."
+            }
+          ],
+          "prerequisiteVideos": [],
+          "startBoundary": "Recall that an index counts repeated factors of the same base.",
+          "stopBoundary": "Derive a^0 = 1 and a^(-n) = 1/a^n from the division law, meet a^(1/n) as a root, then simplify and evaluate with mixed indices. Stop before surds (w03) and logarithms (e03).",
+          "nextHandoff": "math-a11-w02",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w02",
+          "playlistOrder": 2,
+          "mainLearnerQuestion": "Why must we factorise before we cancel an algebraic fraction?",
+          "syllabusActionIds": [
+            "ci3ccce138",
+            "ci9c1a8604"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci3ccce138",
+              "text": "Expand, factorise and simplify algebraic expressions",
+              "sourceHtml": "<p>Expand, <a data-item-id=\"38ee059d-b2f6-4576-ba75-206358aefb57\" href=\"\">factorise</a> and simplify <a data-item-id=\"1f875991-4114-406f-9bec-70b4e9c8020a\" href=\"\">algebraic expressions</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9c1a8604",
+              "text": "Simplify expressions involving algebraic fractions",
+              "sourceHtml": "<p>Simplify expressions involving <a data-item-id=\"df09cc6e-0f3d-490b-a96d-e2723be7bbc3\" href=\"\">algebraic fractions</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson05.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "expanding-and-factorising-are-inverse",
+              "what-you-ll-master",
+              "expanding-and-the-three-special",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-squared-bracket",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "0e683fa60184d6f6798f49a29d16bae2c41f828370a8b37d693697712b75a986"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson05.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "expanding-and-factorising-are-inverse",
+                "what-you-ll-master",
+                "expanding-and-the-three-special",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-squared-bracket",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "0e683fa60184d6f6798f49a29d16bae2c41f828370a8b37d693697712b75a986"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson06.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "factorise-first-then-cancel-factors",
+                "what-you-ll-master",
+                "simplifying-by-factorising",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-illegal-cancellation",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "62919ffae4062b12aa329fd254b5558518d4760c9971bf482f57b740daf1ed2d"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w01",
+              "text": "Index laws, including x^2 / x = x."
+            },
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Expanding binomial products and simple factorising."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w01"
+          ],
+          "startBoundary": "Recall expanding a binomial product and that a fraction cancels only by a common factor.",
+          "stopBoundary": "Expand and factorise (common factor, difference of two squares, trinomials with a leading coefficient), then simplify, divide and add algebraic fractions with restrictions stated. Stop before completing the square (w04, w15).",
+          "nextHandoff": "math-a11-w03",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w03",
+          "playlistOrder": 3,
+          "mainLearnerQuestion": "How does a conjugate clear a surd from a denominator?",
+          "syllabusActionIds": [
+            "ci554a24b4",
+            "ci1ca81758"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci554a24b4",
+              "text": "Expand and simplify expressions involving surds",
+              "sourceHtml": "<p>Expand and simplify expressions involving <a data-item-id=\"aa5f18c0-03c9-480d-8c5f-f07788081951\" href=\"\">surds</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci1ca81758",
+              "text": "Identify a conjugate of √a ± √b, and rationalise the denominators of expressions of the form a/(√b ± √c) and (√a ± √d)/(√b ± √c), where a, b, c and d are positive rational numbers",
+              "sourceHtml": "<div><span>Identify a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6e1bafea-503d-4640-be0e-60f166d33da7\" data-item-codename=\"glo_link__shared__conjugate\" data-item-id=\"6e1bafea-503d-4640-be0e-60f166d33da7\" data-item-systemname=\"GLO Link: SHARED: conjugate\" data-item-type=\"link_glossary\">conjugate</a> of <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><msqrt><mi>a</mi></msqrt><mo>±</mo><msqrt><mi>b</mi></msqrt></math></span>,</span><span> and rationalise the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4a8e14ae-919f-4ec7-aa6f-8a9a781268d6\" data-item-codename=\"glo_link__shared__denominator\" data-item-id=\"4a8e14ae-919f-4ec7-aa6f-8a9a781268d6\" data-item-systemname=\"GLO Link: SHARED: denominator\" data-item-type=\"link_glossary\">denominators</a> of expressions of the form <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>a</mi></mrow><mrow><msqrt><mi>b</mi></msqrt><mo>±</mo><msqrt><mi>c</mi></msqrt></mrow></mfrac></math></span> </span><span>and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><msqrt><mi>a</mi></msqrt><mo>±</mo><msqrt><mi>d</mi></msqrt></mrow><mrow><msqrt><mi>b</mi></msqrt><mo>±</mo><msqrt><mi>c</mi></msqrt></mrow></mfrac></math></span>,</span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>d</mi></math></span><span> are positive <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/3ee3bd86-a244-4c99-a204-ee77040c9cfb\" data-item-codename=\"glo_link__shared__rational_number\" data-item-id=\"3ee3bd86-a244-4c99-a204-ee77040c9cfb\" data-item-systemname=\"GLO Link: SHARED: rational number\" data-item-type=\"link_glossary\">rational numbers</a></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson07.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson07.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "simplifying-a-surd-means-extracting",
+              "what-you-ll-master",
+              "what-a-surd-is-and",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-estimate-of-sqrt",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "9309a9d4923d344bdfb48024511a32effc3aa9866318162308513c539b882e32"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson07.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "simplifying-a-surd-means-extracting",
+                "what-you-ll-master",
+                "what-a-surd-is-and",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-estimate-of-sqrt",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "9309a9d4923d344bdfb48024511a32effc3aa9866318162308513c539b882e32"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson08.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "the-conjugate-kills-the-surd",
+                "what-you-ll-master",
+                "rationalising-a-single-surd-denominator",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-prediction",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "443178745beb83087ceaeb3a05e930e930d21298481b556c5ff11f8af218bf86"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w01",
+              "text": "a^(1/2) as a square root."
+            },
+            {
+              "source": "math-a11-w02",
+              "text": "Expanding binomials and difference of two squares."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w02"
+          ],
+          "startBoundary": "Recall that the square root of a product is the product of square roots, and difference of two squares.",
+          "stopBoundary": "Simplify, add, multiply and expand surds; rationalise single-surd and binomial-surd denominators using a conjugate, a, b, c, d positive rationals. Stop before solving quadratics (w04).",
+          "nextHandoff": "math-a11-w04",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w04",
+          "playlistOrder": 4,
+          "mainLearnerQuestion": "Which method solves a given quadratic most efficiently?",
+          "syllabusActionIds": [
+            "cia7d436df"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cia7d436df",
+              "text": "Solve quadratic equations ax^2 + bx + c = 0 by factorisation, completing the square and using the quadratic formula x = (-b ± √(b^2 - 4ac))/(2a) where a, b and c are real numbers and a ≠ 0",
+              "sourceHtml": "<div><span>Solve <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/d17c59ae-1d9e-42ee-9d2e-77e36add93e3\" data-item-codename=\"glo_link__shared__quadratic_equation\" data-item-id=\"d17c59ae-1d9e-42ee-9d2e-77e36add93e3\" data-item-systemname=\"GLO Link: SHARED: quadratic equation\" data-item-type=\"link_glossary\">quadratic equations</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi mathvariant=\"italic\">bx</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math></span><span> by factorisation, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/f0db7511-db67-4674-9e68-296a792c2658\" data-item-codename=\"glo_link__mav__completing_the_square\" data-item-id=\"f0db7511-db67-4674-9e68-296a792c2658\" data-item-systemname=\"GLO Link: MAV: completing the square\" data-item-type=\"link_glossary\">completing the square</a> and using the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/233f73e8-9c28-4fc5-a6f7-dc2e6d3c9aa4\" data-item-codename=\"glo_link__shared__quadratic_formula\" data-item-id=\"233f73e8-9c28-4fc5-a6f7-dc2e6d3c9aa4\" data-item-systemname=\"GLO Link: SHARED: quadratic formula\" data-item-type=\"link_glossary\">quadratic formula</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>=</mo><mfrac><mrow><mo>-</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>4</mn><mi mathvariant=\"italic\">ac</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math></span><span> are <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/afaa7a3a-d430-4c9c-9376-7d461913c672\" data-item-codename=\"glo_link__shared__real_number\" data-item-id=\"afaa7a3a-d430-4c9c-9376-7d461913c672\" data-item-systemname=\"GLO Link: Shared: real number\" data-item-type=\"link_glossary\">real numbers</a> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>≠</mo><mn>0</mn></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson09.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson09.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "three-methods-and-when-to",
+              "what-you-ll-master",
+              "solving-by-factorisation",
+              "the-quadratic-formula-and-choosing",
+              "model",
+              "quick-fire-practice",
+              "revisit-x-2-9",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "5b0c31212be6ff21324709e655a625ae5c60f5068bc724b50563966789a63eb5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson09.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson09.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "three-methods-and-when-to",
+                "what-you-ll-master",
+                "solving-by-factorisation",
+                "the-quadratic-formula-and-choosing",
+                "model",
+                "quick-fire-practice",
+                "revisit-x-2-9",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "5b0c31212be6ff21324709e655a625ae5c60f5068bc724b50563966789a63eb5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w02",
+              "text": "Factorising trinomials."
+            },
+            {
+              "source": "math-a11-w03",
+              "text": "Simplifying surds."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w03"
+          ],
+          "startBoundary": "Recall factorising a trinomial and the null factor law.",
+          "stopBoundary": "Solve ax^2 + bx + c = 0 by factorising, completing the square and the quadratic formula, and choose a method. Show the formula as completing the square done once. Stop before the discriminant (w05) and vertex form for graphs (w15).",
+          "nextHandoff": "math-a11-w05",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w05",
+          "playlistOrder": 5,
+          "mainLearnerQuestion": "What does the discriminant tell us before we solve?",
+          "syllabusActionIds": [
+            "ci887fe9c5"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci887fe9c5",
+              "text": "Define the discriminant as Δ = b^2 - 4ac and use it to solve problems involving the number of real roots of a quadratic equation and determine the conditions for roots to be equal, distinct, real or rational",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e00ed810-9325-4b3a-9cad-a77197026742\" data-item-codename=\"glo_link__shared__discriminant\" data-item-id=\"e00ed810-9325-4b3a-9cad-a77197026742\" data-item-systemname=\"GLO Link: SHARED: discriminant\" data-item-type=\"link_glossary\">discriminant</a> as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"normal\">Δ</mi><mo>=</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>4</mn><mi mathvariant=\"italic\">ac</mi></math></span><span> and use it to solve problems involving the number of real <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6b9e9c4f-a38f-4d24-9f09-004924264a5c\" data-item-codename=\"glo_link__shared__root\" data-item-id=\"6b9e9c4f-a38f-4d24-9f09-004924264a5c\" data-item-systemname=\"GLO Link: Shared: root\" data-item-type=\"link_glossary\">roots</a> of a quadratic equation and determine the conditions for roots to be <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/0fa90b26-99ab-4cef-9e3b-2e14714c537f\" data-item-codename=\"glo_link__shared__equal\" data-item-id=\"0fa90b26-99ab-4cef-9e3b-2e14714c537f\" data-item-systemname=\"GLO Link: SHARED: equal\" data-item-type=\"link_glossary\">equal</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c5c820a0-8213-4249-984f-f03f50cb725e\" data-item-codename=\"glo_link__shared__distinct\" data-item-id=\"c5c820a0-8213-4249-984f-f03f50cb725e\" data-item-systemname=\"GLO Link: SHARED: distinct\" data-item-type=\"link_glossary\">distinct</a>, real or rational</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson10.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson10.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "the-discriminant-is-what-sits",
+              "what-you-ll-master",
+              "what-the-discriminant-tells-you",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-prediction",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "29b461b91831254fd2a241c18f6008ea86660d180600c5dbfa1b956f8d96d5e7"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson10.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "the-discriminant-is-what-sits",
+                "what-you-ll-master",
+                "what-the-discriminant-tells-you",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-prediction",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "29b461b91831254fd2a241c18f6008ea86660d180600c5dbfa1b956f8d96d5e7"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w04",
+              "text": "The quadratic formula and the sqrt(b^2 - 4ac) inside it."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w04"
+          ],
+          "startBoundary": "Recall the quadratic formula.",
+          "stopBoundary": "Define the discriminant and use it for the number of real roots, equal roots, and rational versus irrational roots, including unknown-coefficient problems. Graph position stays for w14.",
+          "nextHandoff": "math-a11-w06",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w06",
+          "playlistOrder": 6,
+          "mainLearnerQuestion": "Why does multiplying by a negative flip an inequality?",
+          "syllabusActionIds": [
+            "ci6e28857f"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci6e28857f",
+              "text": "Solve linear inequalities and graph the solution on a number line",
+              "sourceHtml": "<p>Solve <a data-item-id=\"3475db1c-8ff5-4a49-b2c7-e845b22584d5\" href=\"\">linear</a> <a data-item-id=\"ed7e8a3b-2576-49b9-98a6-094059f2f1bc\" href=\"\">inequalities</a> and graph the solution on a number line</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson01.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "solving-inequalities-the-flip-rule",
+              "what-you-ll-master",
+              "one-step-and-two-step",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-wage-problem",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "8c481deafc9189f66207b253265150a6138d24b296aba4f7eae82ee5dfb33e7c"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson01.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "solving-inequalities-the-flip-rule",
+                "what-you-ll-master",
+                "one-step-and-two-step",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-wage-problem",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "8c481deafc9189f66207b253265150a6138d24b296aba4f7eae82ee5dfb33e7c"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson02.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "open-circle-closed-circle-and",
+                "what-you-ll-master",
+                "drawing-inequalities-on-a-number",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-speed-limit",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "39e6868303a0b8de20d67adf964532740cac4250810fdc641fdf27ec9ab71b28"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Solving linear equations; the number line."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w05"
+          ],
+          "startBoundary": "Recall solving a two-step linear equation.",
+          "stopBoundary": "Solve linear inequalities, explain the flip when multiplying or dividing by a negative, and graph solutions on a number line with open and closed circles. Interval notation waits for w09.",
+          "nextHandoff": "math-a11-w07",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w07",
+          "playlistOrder": 7,
+          "mainLearnerQuestion": "What makes a relation a function?",
+          "syllabusActionIds": [
+            "ci32f9832a",
+            "cic0b5416c",
+            "ci9288f9fe",
+            "ci9bf331ec"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci32f9832a",
+              "text": "Describe a relation between two sets as an association between the elements of one set and the elements of the other set",
+              "sourceHtml": "<p>Describe a <a data-item-id=\"b1b90ec1-08fc-4bc7-b63a-159f7d857678\" href=\"\">relation</a> between two <a data-item-id=\"f9079722-8891-4a9d-aac9-651606c27c24\" href=\"\">sets</a> as an <a data-item-id=\"3e30f011-13ea-496e-a69f-f3e601b1e0ae\" href=\"\">association</a> between the <a data-item-id=\"de323ddc-16db-447f-a6a0-e6ae5aa71b8d\" href=\"\">elements</a> of one set and the elements of the other set</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "partial",
+              "siteGap": "A relation is defined as a set of ordered pairs and an input-output mapping. The idea of an association between the elements of two sets is not shown explicitly (no two-set arrow picture)."
+            },
+            {
+              "id": "cic0b5416c",
+              "text": "Define a real function f of a real variable x as a relation where each element x of a given set is associated with exactly one element y of the second set",
+              "sourceHtml": "<div><span>Define a real <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-codename=\"glo_link__shared__function\" data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" data-item-systemname=\"GLO Link: SHARED (MA): function\" data-item-type=\"link_glossary\">function</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span><span> of a real <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-codename=\"glo_link__shared__variable__algebra_\" data-item-id=\"8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-systemname=\"GLO Link: SHARED: variable (algebra)\" data-item-type=\"link_glossary\">variable</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> as a relation where each element </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> of a given set is associated with exactly one element </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> of the second set </span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9288f9fe",
+              "text": "Recognise that a relation is a rule which can be represented by an algebraic formula, a table of values, a set of ordered pairs (x, y) or a graph",
+              "sourceHtml": "<div><span>Recognise that a relation is a rule which can be represented by an algebraic formula, a table of values, a set of ordered pairs </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></mfenced></math></span><span> or a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-codename=\"glo_link__shared__graph\" data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-systemname=\"GLO Link: SHARED: graph\" data-item-type=\"link_glossary\">graph</a><br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9bf331ec",
+              "text": "Apply the vertical line test on the graph of a relation to determine whether it represents a function",
+              "sourceHtml": "<p>Apply the <a data-item-id=\"02d1493e-e0f4-45d2-910b-18fb75534e9e\" href=\"\">vertical line test</a> on the graph of a relation to determine whether it represents a function</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+            "sectionIds": [
+              "orient-and-recall",
+              "what-is-a-function",
+              "function-notation",
+              "worked-examples",
+              "traps-and-classify",
+              "drill-and-consolidate",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-func-2"
+            ],
+            "sha256": "6c801a0d45246191bbd1238086f7b388f08d5afdb0e8cb43d96c000d3de15645"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+              "sectionIds": [
+                "orient-and-recall",
+                "what-is-a-function",
+                "function-notation",
+                "worked-examples",
+                "traps-and-classify",
+                "drill-and-consolidate",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-func-2"
+              ],
+              "sha256": "6c801a0d45246191bbd1238086f7b388f08d5afdb0e8cb43d96c000d3de15645"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Plotting points and reading graphs; tables of values."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w06"
+          ],
+          "startBoundary": "Recall plotting ordered pairs and drawing a graph from a table.",
+          "stopBoundary": "Relation as an association between two sets; function as each input paired with exactly one output; four representations; the vertical line test. Notation f(x) waits for w08.",
+          "nextHandoff": "math-a11-w08",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w08",
+          "playlistOrder": 8,
+          "mainLearnerQuestion": "What does f(x) mean, and how do we substitute into it?",
+          "syllabusActionIds": [
+            "ci5022c700",
+            "ci5a13079c",
+            "cifb29dab7"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci5022c700",
+              "text": "Use the notation f(x) to identify the unique value of y associated with x when working with functions, and refer to it as the value of f at x",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span><span> to identify the unique value of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> associated with </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> when working with functions, and refer to it as the value of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span><span> at </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci5a13079c",
+              "text": "Refer to x in a function y = f(x) as the independent variable of the function, and refer to y as the dependent variable",
+              "sourceHtml": "<div><span>Refer to </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> in a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/34ff576c-150f-4dd1-b2cb-cfe20d7d7827\" data-item-codename=\"glo_link__shared__independent_variable\" data-item-id=\"34ff576c-150f-4dd1-b2cb-cfe20d7d7827\" data-item-systemname=\"GLO Link: SHARED: independent variable (MA)\" data-item-type=\"link_glossary\">independent variable</a> of the function, and refer to </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/504084b2-e45a-4439-baf4-7db9bf721604\" data-item-codename=\"glo_link__shared__maths___dependent_variable\" data-item-id=\"504084b2-e45a-4439-baf4-7db9bf721604\" data-item-systemname=\"GLO Link: SHARED (MATHS): dependent variable\" data-item-type=\"link_glossary\">dependent variable</a><br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cifb29dab7",
+              "text": "Substitute numeric and algebraic expressions into the formulas of functions",
+              "sourceHtml": "<p>Substitute numeric and algebraic expressions into the formulas of functions</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+            "sectionIds": [
+              "orient-and-recall",
+              "what-is-a-function",
+              "function-notation",
+              "worked-examples",
+              "traps-and-classify",
+              "drill-and-consolidate",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-func-1"
+            ],
+            "sha256": "6c801a0d45246191bbd1238086f7b388f08d5afdb0e8cb43d96c000d3de15645"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson01.sa.html",
+              "sectionIds": [
+                "orient-and-recall",
+                "what-is-a-function",
+                "function-notation",
+                "worked-examples",
+                "traps-and-classify",
+                "drill-and-consolidate",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-func-1"
+              ],
+              "sha256": "6c801a0d45246191bbd1238086f7b388f08d5afdb0e8cb43d96c000d3de15645"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson02.sa.html",
+              "sectionIds": [
+                "orient",
+                "evaluating-functions",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-l02-1",
+                "we-l02-2"
+              ],
+              "sha256": "78aa545cfc48ca43cf45911ee9fd04c07c518a489fb6c037d779c6564318e77a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w07",
+              "text": "Function as one output per input."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w07"
+          ],
+          "startBoundary": "Recall the one-input-one-output rule.",
+          "stopBoundary": "Read f(x) as the value of f at x; name independent and dependent variables; substitute numbers and expressions with brackets. The difference quotient example (we-l02-3) is deferred to c06.",
+          "nextHandoff": "math-a11-w09",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w09",
+          "playlistOrder": 9,
+          "mainLearnerQuestion": "Which inputs can a function accept, and which outputs can it give?",
+          "syllabusActionIds": [
+            "ci7b72a364",
+            "ci0d9e1578",
+            "ms_s6_y11_recognise_domains_and_ranges_of_function",
+            "ci0c0bc407"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci7b72a364",
+              "text": "Define the domain of a function f as the set of real numbers on which f is defined",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-codename=\"glo_link__shared__domain\" data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" data-item-systemname=\"GLO Link: SHARED: domain\" data-item-type=\"link_glossary\">domain</a> of a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span><span> as the set of real numbers on which </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span><span> is defined</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci0d9e1578",
+              "text": "Define the range of a function f as the set of values of f(x) obtained as x varies over the domain of f",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-codename=\"glo_link__shared__range__function_\" data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" data-item-systemname=\"GLO Link: SHARED: range (function)\" data-item-type=\"link_glossary\">range</a> of a function </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span><span> as the set of values of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></math></span><span> obtained as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> varies over the domain of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ms_s6_y11_recognise_domains_and_ranges_of_function",
+              "text": "Recognise domains and ranges of functions and relations given in interval notation, as inequalities and as worded descriptions",
+              "sourceHtml": "<p>Recognise domains and ranges of functions and relations given in <a data-item-id=\"74ab173a-69c2-4f68-a459-d29bc3ef7ca7\" href=\"\">interval notation</a>, as inequalities and as worded descriptions</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci0c0bc407",
+              "text": "Determine and describe the domain and range of functions and relations, using interval notation, inequalities or worded descriptions",
+              "sourceHtml": "<p>Determine and describe the domain and range of functions and relations, using interval notation, inequalities or worded descriptions</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "domain-interval-notation",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-l03-1",
+              "we-l03-2",
+              "we-l03-3"
+            ],
+            "sha256": "9367d5636a0259dcd79a77cc5688d658f87267b1744bc93ce61f9fa4552974e2"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "domain-interval-notation",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-l03-1",
+                "we-l03-2",
+                "we-l03-3"
+              ],
+              "sha256": "9367d5636a0259dcd79a77cc5688d658f87267b1744bc93ce61f9fa4552974e2"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w08",
+              "text": "f(x) notation and substitution."
+            },
+            {
+              "source": "math-a11-w06",
+              "text": "Solving linear inequalities."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w08"
+          ],
+          "startBoundary": "Recall solving a linear inequality and substituting into f(x).",
+          "stopBoundary": "Domain and range of functions from formulas and graphs, written in interval notation, as inequalities and in words; natural restrictions from denominators and square roots. Relations' domain and range wait for the circle video (w24). Log domains wait for e03.",
+          "nextHandoff": "math-a11-w10",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w09.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w10",
+          "playlistOrder": 10,
+          "mainLearnerQuestion": "How do two points, or a point and a gradient, fix a straight line?",
+          "syllabusActionIds": [
+            "ci7f902bc1",
+            "ci2edbbb14",
+            "cibddcc59d",
+            "ci3ed3083c"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci7f902bc1",
+              "text": "Determine the equations of straight lines in gradient–intercept form y = mx + c with gradient m and y-intercept c",
+              "sourceHtml": "<p>Determine the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-codename=\"glo_link__shared__equation\" data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-systemname=\"GLO Link: SHARED: equation\" data-item-type=\"link_glossary\">equations</a> of straight lines in <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c6747241-22af-4133-b2d9-ca819954f156\" data-item-codename=\"glo_link__shared__gradient_intercept_form\" data-item-id=\"c6747241-22af-4133-b2d9-ca819954f156\" data-item-systemname=\"GLO Link: SHARED: gradient–intercept form\" data-item-type=\"link_glossary\">gradient–intercept form</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>m</mi><mi>x</mi><mo>+</mo><mi>c</mi></math></span> with <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-codename=\"glo_link__shared__gradient\" data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-systemname=\"GLO Link: SHARED: gradient\" data-item-type=\"link_glossary\">gradient</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span>-intercept <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math></span></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": "Site writes gradient-intercept form as y = mx + b; the syllabus uses y = mx + c."
+            },
+            {
+              "id": "ci2edbbb14",
+              "text": "Determine the equations of straight lines in general form ax + by + c = 0, where a, b and c are constants",
+              "sourceHtml": "<p>Determine the equations of straight lines in <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/307d88a6-48bd-4ef0-8956-430c772de114\" data-item-codename=\"glo_link__mav__general_form__of_a_straight_line_\" data-item-id=\"307d88a6-48bd-4ef0-8956-430c772de114\" data-item-systemname=\"GLO Link: MAV: general form (of a straight line)\" data-item-type=\"link_glossary\">general form</a> <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math></span>, where <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span>, <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span> and <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math></span> are <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-codename=\"glo_link__shared__constant\" data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-systemname=\"GLO Link: SHARED: constant\" data-item-type=\"link_glossary\">constants</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cibddcc59d",
+              "text": "Determine the equation of a straight line passing through a point (x_1, y_1) with gradient m using the point–gradient formula y - y_1 = m(x - x_1)",
+              "sourceHtml": "<div>\n<p><span>Determine the equation of a straight line </span><span>passing through </span><span>a point <span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>,</mo><msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></math></span></span><span> with gradient </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math></span><span> using the </span><span>point–gradient formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>-</mo><msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>=</mo><mi>m</mi><mfenced separators=\"|\"><mrow><mi>x</mi><mo>-</mo><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></math></span><span></span></p>\n</div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci3ed3083c",
+              "text": "Determine the equation of a straight line passing through two points (x_1, y_1) and (x_2, y_2) by calculating its gradient m using the formula m = (y_2 - y_1)/(x_2 - x_1)",
+              "sourceHtml": "<div>\n<p><span>Determine the equation of a straight line passing through two points </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub><mo>,</mo><msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced separators=\"|\"><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msub><mo>,</mo><msub><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msub></mrow></mfenced></math></span><span> by calculating its gradient </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math></span><span> using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mrow><mi>y</mi></mrow><mrow><mn>2</mn><mi> </mi></mrow></msub><mo>-</mo><mi> </mi><msub><mrow><mi>y</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msub><mrow><mi>x</mi></mrow><mrow><mn>2</mn><mi> </mi></mrow></msub><mo>-</mo><mi> </mi><msub><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow></mfrac></math></span><span></span></p>\n</div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson09.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson09.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "gradient-is-rise-over-run",
+              "what-you-ll-master",
+              "calculating-a-gradient",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-two-ramps",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "bd2064a6323b63df8d1a2511dec234a3322d61fa51a3e3bb7cee29336301e2ad"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson09.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson09.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "gradient-is-rise-over-run",
+                "what-you-ll-master",
+                "calculating-a-gradient",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-two-ramps",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "bd2064a6323b63df8d1a2511dec234a3322d61fa51a3e3bb7cee29336301e2ad"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson10.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "one-point-and-a-gradient",
+                "what-you-ll-master",
+                "from-a-point-and-a",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-reasoning",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "a7a783ecd97b1ffa393d96207b177eb80d4acd338ce57f32c8620376da4284fb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Gradient as rise over run; plotting lines."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w09"
+          ],
+          "startBoundary": "Recall gradient as rise over run.",
+          "stopBoundary": "Gradient from two points; gradient-intercept and general form; point-gradient formula; the line through two points; collinearity as a check. Intercepts, graphing and parallel or perpendicular lines are w11.",
+          "nextHandoff": "math-a11-w11",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w10.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w11",
+          "playlistOrder": 11,
+          "mainLearnerQuestion": "How do intercepts draw a line and gradients compare two lines?",
+          "syllabusActionIds": [
+            "cicbb8a9c7",
+            "ci13d47f71",
+            "cif0d11ebe"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cicbb8a9c7",
+              "text": "Determine the x-intercept and y-intercept of a straight line given its equation",
+              "sourceHtml": "<div><span>Determine the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-intercept and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept of a straight line given its equation</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci13d47f71",
+              "text": "Choose and apply appropriate techniques to graph a straight line given its equation",
+              "sourceHtml": "<p>Choose and apply appropriate techniques to graph a straight line given its equation</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cif0d11ebe",
+              "text": "Find the equation of a line that is parallel or perpendicular to a given line",
+              "sourceHtml": "<p>Find the equation of a line that is <a data-item-id=\"7836f68e-9321-45c3-82ba-66406bf2ee0a\" href=\"\">parallel</a> or <a data-item-id=\"6405a8a9-f55e-40e8-97d5-59fe5a27c589\" href=\"\">perpendicular</a> to a given line</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson11.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson11.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "intercepts-to-draw-it-gradients",
+              "what-you-ll-master",
+              "intercepts-and-graphing-from-them",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-perpendicular-sketch",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "41e2f53dd5e11718f5211772443c8d2b9a51ee806dd08d45d288966d426ac58a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson11.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson11.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "intercepts-to-draw-it-gradients",
+                "what-you-ll-master",
+                "intercepts-and-graphing-from-them",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-perpendicular-sketch",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "41e2f53dd5e11718f5211772443c8d2b9a51ee806dd08d45d288966d426ac58a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w10",
+              "text": "Line equations in three forms."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w10"
+          ],
+          "startBoundary": "Recall gradient-intercept and general form.",
+          "stopBoundary": "Intercepts from an equation, choosing a graphing method, parallel lines (equal gradients) and perpendicular lines (m1 m2 = -1).",
+          "nextHandoff": "math-a11-w12",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w11.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w12",
+          "playlistOrder": 12,
+          "mainLearnerQuestion": "How do we build a linear model or inequality from a real situation?",
+          "syllabusActionIds": [
+            "ci4cd0c8d9",
+            "ci7fdca2b4"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci4cd0c8d9",
+              "text": "Construct and use linear functions to model and solve problems in real-world situations, identifying the independent and dependent variables and any restrictions on these variables, and justify conclusions in the context of the problem",
+              "sourceHtml": "<p>Construct and use linear functions to model and solve problems in real-world situations, identifying the independent and dependent variables and any restrictions on these variables, and justify conclusions in the context of the problem</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7fdca2b4",
+              "text": "Use linear inequalities to model and solve problems in real-world situations, and justify conclusions in the context of the problem",
+              "sourceHtml": "<p>Use linear inequalities to model and solve problems in real-world situations, and justify conclusions in the context of the problem</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "name-it-restrict-it-then",
+              "what-you-ll-master",
+              "building-the-model-and-naming",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-plumber",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-3"
+            ],
+            "sha256": "cce25d1b6c1b41586c2bd6711af9c183378ef0230354350ff07f89682b88b690"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "name-it-restrict-it-then",
+                "what-you-ll-master",
+                "building-the-model-and-naming",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-plumber",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "cce25d1b6c1b41586c2bd6711af9c183378ef0230354350ff07f89682b88b690"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/algebraic-techniques-and-inequalities/lesson03.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "keyword-translation-strategy",
+                "what-you-ll-master",
+                "translating-keywords-to-inequalities",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-taxi-problem",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "2f8f0de688559310dc105e02196b32fa642288c9357a6759dbe7617ce6cdbecf"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w10",
+              "text": "Gradient and intercept meaning."
+            },
+            {
+              "source": "math-a11-w06",
+              "text": "Solving linear inequalities."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w11"
+          ],
+          "startBoundary": "Recall gradient and intercept of a line and solving an inequality.",
+          "stopBoundary": "Build a linear model from words with named independent and dependent variables, units and restrictions; turn a budget or limit into a linear inequality; justify the answer in context, including rounding direction. Two-line comparisons are w13.",
+          "nextHandoff": "math-a11-w13",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w12.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w13",
+          "playlistOrder": 13,
+          "mainLearnerQuestion": "Where do two linear models meet, and what does the meeting point mean?",
+          "syllabusActionIds": [
+            "ci83587815",
+            "cicb50e7a8"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci83587815",
+              "text": "Solve practical problems involving a pair of simultaneous linear equations both algebraically and graphically, with and without graphing applications, and justify conclusions in the context of the problem",
+              "sourceHtml": "<p>Solve practical problems involving a pair of simultaneous <a data-item-id=\"c2ddc2bd-4641-4cf1-9ae8-1eb401fb928b\" href=\"\">linear equations</a> both algebraically and graphically, with and without graphing applications, and justify conclusions in the context of the problem</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "partial",
+              "siteGap": "Simultaneous linear equations appear inside break-even and intersection work. A general practical pair-of-lines problem solved both algebraically and graphically, with and without a graphing application, is not worked as its own task."
+            },
+            {
+              "id": "cicb50e7a8",
+              "text": "Construct and use simultaneous equations to model and solve a problem where cost and revenue are represented by linear equations, identify and analyse the break-even point, and justify conclusions in the context of the problem",
+              "sourceHtml": "<p>Construct and use simultaneous equations to model and solve a problem where <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">cost</a> and <a data-item-id=\"ad24a683-8502-4c6c-bc86-f1660f225e55\" href=\"\">revenue</a> are represented by linear equations, identify and analyse the <a data-item-id=\"f0f933e6-32b5-4763-8829-1b24cc6a27a6\" href=\"\">break-even point</a>, and justify conclusions in the context of the problem</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson19.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson19.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "where-revenue-catches-cost",
+              "what-you-ll-master",
+              "cost-revenue-and-the-break",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-estimate",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "40f59eeef05d66d2740baa2c326bbeabe6f4c5ba9c4782607d60b13620b94cc4"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson19.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson19.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "where-revenue-catches-cost",
+                "what-you-ll-master",
+                "cost-revenue-and-the-break",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-estimate",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "40f59eeef05d66d2740baa2c326bbeabe6f4c5ba9c4782607d60b13620b94cc4"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson18.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "name-it-restrict-it-then",
+                "what-you-ll-master",
+                "building-the-model-and-naming",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-plumber",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "cce25d1b6c1b41586c2bd6711af9c183378ef0230354350ff07f89682b88b690"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson16.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson16.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "solving-is-intersecting",
+                "what-you-ll-master",
+                "equal-quadratics-and-equating-coefficients",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-two-lines",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "6107881f3dbf6aef67f8062e189d685675ee4f90ebfb31194b44693f810ecd2b"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w12",
+              "text": "Building linear models."
+            },
+            {
+              "source": "Stage 5 (Year 10)",
+              "text": "Solving a pair of simultaneous linear equations by substitution or elimination."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w12"
+          ],
+          "startBoundary": "Recall solving two linear equations simultaneously.",
+          "stopBoundary": "Solve a pair of linear models algebraically and graphically (with and without a graphing application), interpret the intersection, and analyse cost, revenue and the break-even point with whole-item rounding. Quadratic revenue (WF19 we-3) waits for w19.",
+          "nextHandoff": "math-a11-w14",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w13.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-w14",
+          "playlistOrder": 14,
+          "mainLearnerQuestion": "Where are a function's zeros, and how does the discriminant place a parabola?",
+          "syllabusActionIds": [
+            "ci9169adaa",
+            "ci40fe4286",
+            "ci7b0b3647",
+            "cicd85f895"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci9169adaa",
+              "text": "Refer to a value in the domain of a function at which the function is 0 as a zero of the function",
+              "sourceHtml": "<p>Refer to a value in the domain of a function at which the function is 0 as a zero of the function</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": "The zero of a function is taught through parabola intercepts, not as a general definition in the functions lessons."
+            },
+            {
+              "id": "ci40fe4286",
+              "text": "Recognise that the x-intercepts of the graph of y = f(x) are its zeroes, the solutions of f(x) = 0, and that the y-intercept is f(0)",
+              "sourceHtml": "<div><span>Recognise that the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-<a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-codename=\"glo_link__shared__intercept\" data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-systemname=\"GLO Link: SHARED: intercept\" data-item-type=\"link_glossary\">intercepts</a> of the graph of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced></math></span> <span>are its zeroes, the solutions of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mi>x</mi></mrow></mfenced><mo>=</mo><mn>0</mn></math></span><span>, and that the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept is </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>f</mi><mfenced separators=\"|\"><mrow><mn>0</mn></mrow></mfenced></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "partial",
+              "siteGap": "x-intercepts as zeros are taught for parabolas. The general statement that the y-intercept is f(0) appears only as a fixed-fee remark in WF02."
+            },
+            {
+              "id": "ci7b0b3647",
+              "text": "Identify the x-intercepts of a parabola whose quadratic function is expressed in factored form",
+              "sourceHtml": "<div><span>Identify the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-intercepts of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/fca3dd5a-a4f4-4b6e-9b73-49c0d95e42fd\" data-item-codename=\"glo_link__shared__parabola\" data-item-id=\"fca3dd5a-a4f4-4b6e-9b73-49c0d95e42fd\" data-item-systemname=\"GLO Link: SHARED: parabola\" data-item-type=\"link_glossary\">parabola</a> whose <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/819a09c0-5d7e-484b-9411-a14012e36270\" data-item-codename=\"glo_link__shared__quadratic_functions\" data-item-id=\"819a09c0-5d7e-484b-9411-a14012e36270\" data-item-systemname=\"GLO Link: SHARED: quadratic functions\" data-item-type=\"link_glossary\">quadratic function</a> is expressed in factored form</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cicd85f895",
+              "text": "Use the discriminant to determine the number of x-intercepts on a parabola and justify its position in relation to the x-axis",
+              "sourceHtml": "<div><span>Use the discriminant to determine the number of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-intercepts on a parabola and justify its position in relation to the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa3d488ed2",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson13.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson13.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "zero-product-zero-height",
+              "what-you-ll-master",
+              "intercepts-from-factored-form",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-prediction",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "3cda738ba2076762faf65accb4b5107319c4f517e494f397e45ba8cfb49e9919"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/working-with-functions/lesson13.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/working-with-functions/lesson13.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "zero-product-zero-height",
+                "what-you-ll-master",
+                "intercepts-from-factored-form",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-prediction",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "3cda738ba2076762faf65accb4b5107319c4f517e494f397e45ba8cfb49e9919"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w05",
+              "text": "The discriminant counts real roots."
+            },
+            {
+              "source": "math-a11-w08",
+              "text": "f(0) and substitution."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-w13"
+          ],
+          "startBoundary": "Recall the null factor law and the discriminant.",
+          "stopBoundary": "Define a zero of a function; x-intercepts as zeros and y-intercept as f(0); intercepts of a parabola in factored form; the discriminant with the sign of a placing the parabola relative to the x-axis (crosses, touches, wholly above or below). Vertex and axis are w15.",
+          "nextHandoff": "math-a11-w15",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-w14.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}

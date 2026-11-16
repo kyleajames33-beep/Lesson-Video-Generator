@@ -1,0 +1,3991 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-16",
+  "brief": 243,
+  "purpose": "Proposed whole-course outline for Claude; not a canonical route, design or coverage approval",
+  "syllabus": "Mathematics Advanced 11-12 (2024), Year 11",
+  "identifierPolicy": "Exact CMS codenames; retain sourceHtml (crosswalk) for official mathematical layout",
+  "idPrefixMapping": [
+    {
+      "prefix": "math-a11-w",
+      "strand": "Working with functions",
+      "focusAreas": [
+        "Working with functions"
+      ],
+      "note": "Algebraic techniques first, then functions, lines, quadratics, other graphs and properties."
+    },
+    {
+      "prefix": "math-a11-t",
+      "strand": "Trigonometry",
+      "focusAreas": [
+        "Trigonometry and measure of angles",
+        "Trigonometric identities and equations"
+      ],
+      "note": "One numbering across both trigonometry focus areas; each video records its own focus area."
+    },
+    {
+      "prefix": "math-a11-c",
+      "strand": "Introduction to differentiation",
+      "focusAreas": [
+        "Introduction to differentiation"
+      ],
+      "note": "c for calculus, as the brief suggests. Year 12 keeps d for its differential calculus."
+    },
+    {
+      "prefix": "math-a11-e",
+      "strand": "Exponential and logarithmic functions",
+      "focusAreas": [
+        "Exponential and logarithmic functions"
+      ],
+      "note": null
+    },
+    {
+      "prefix": "math-a11-g",
+      "strand": "Graph transformations",
+      "focusAreas": [
+        "Graph transformations"
+      ],
+      "note": "g is free in the Year 11 namespace (Year 12 uses math-a12-g for practice). Year 11 practice uses p."
+    },
+    {
+      "prefix": "math-a11-s",
+      "strand": "Probability and data",
+      "focusAreas": [
+        "Probability and data"
+      ],
+      "note": null
+    },
+    {
+      "prefix": "math-a11-p",
+      "strand": "Optional mixed practice",
+      "focusAreas": [],
+      "note": "Claims no content points."
+    }
+  ],
+  "recommendedStrandOrder": [
+    "Working with functions (w01-w31)",
+    "Introduction to differentiation (c01-c18)",
+    "Exponential and logarithmic functions (e01-e08)",
+    "Trigonometry (t01-t16, both trig focus areas)",
+    "Graph transformations (g01-g06)",
+    "Probability and data (s01-s11), can run in parallel at any point",
+    "Optional mixed practice (p01-p03)"
+  ],
+  "orderReasons": [
+    "Working with functions comes first: index laws, factorising, surds, quadratics, function notation, domain and line equations are used by every later strand.",
+    "Differentiation comes next because it needs only functions, lines (tangents and normals) and index laws, and because the Year 12 videos already designed and built (math-a12-d01 onward) assume Year 11 differentiation. The Year 11 videos they lean on (c07, c10, e01, e02) should exist early.",
+    "Exponentials and logarithms follow differentiation because the 2024 syllabus defines e through the gradient of y = a^x at x = 0, which needs tangent gradients (c04 to c07).",
+    "Trigonometry is self-contained after Stage 5 and functions. Year 12 trig derivatives (d05) and trig transformations (t01 to t03) need it, so it must precede those in the playlist, but not the calculus strands.",
+    "Graph transformations need the graphs they act on: parabolas, cubics, hyperbolas, absolute value, circles, exponentials and logs. Year 12 t01 then extends the same principles to trig graphs.",
+    "Probability and data has no calculus or trig prerequisite and can be produced in parallel. Year 12 random variables need it.",
+    "The 2024 syllabus lists the focus areas in the order functions, trig measure, trig identities, differentiation, exponentials, transformations, probability. That listing is not a mandated teaching order; this order follows prerequisites and the existing Year 12 dependencies."
+  ],
+  "videos": [
+    {
+      "id": "math-a11-w01",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do index laws handle negative, zero and fractional powers?",
+      "syllabusActionIds": [
+        "cib0d54c54"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 1
+    },
+    {
+      "id": "math-a11-w02",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Why must we factorise before we cancel an algebraic fraction?",
+      "syllabusActionIds": [
+        "ci3ccce138",
+        "ci9c1a8604"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson05.sa.html",
+        "algebraic-techniques-and-inequalities/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 2
+    },
+    {
+      "id": "math-a11-w03",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does a conjugate clear a surd from a denominator?",
+      "syllabusActionIds": [
+        "ci554a24b4",
+        "ci1ca81758"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson07.sa.html",
+        "algebraic-techniques-and-inequalities/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 3
+    },
+    {
+      "id": "math-a11-w04",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Which method solves a given quadratic most efficiently?",
+      "syllabusActionIds": [
+        "cia7d436df"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson09.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 4
+    },
+    {
+      "id": "math-a11-w05",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "What does the discriminant tell us before we solve?",
+      "syllabusActionIds": [
+        "ci887fe9c5"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson10.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 5
+    },
+    {
+      "id": "math-a11-w06",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Why does multiplying by a negative flip an inequality?",
+      "syllabusActionIds": [
+        "ci6e28857f"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson01.sa.html",
+        "algebraic-techniques-and-inequalities/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 6
+    },
+    {
+      "id": "math-a11-w07",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "What makes a relation a function?",
+      "syllabusActionIds": [
+        "ci32f9832a",
+        "cic0b5416c",
+        "ci9288f9fe",
+        "ci9bf331ec"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson01.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 7
+    },
+    {
+      "id": "math-a11-w08",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "What does f(x) mean, and how do we substitute into it?",
+      "syllabusActionIds": [
+        "ci5022c700",
+        "ci5a13079c",
+        "cifb29dab7"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson01.sa.html",
+        "working-with-functions/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 8
+    },
+    {
+      "id": "math-a11-w09",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Which inputs can a function accept, and which outputs can it give?",
+      "syllabusActionIds": [
+        "ci7b72a364",
+        "ci0d9e1578",
+        "ms_s6_y11_recognise_domains_and_ranges_of_function",
+        "ci0c0bc407"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 9
+    },
+    {
+      "id": "math-a11-w10",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do two points, or a point and a gradient, fix a straight line?",
+      "syllabusActionIds": [
+        "ci7f902bc1",
+        "ci2edbbb14",
+        "cibddcc59d",
+        "ci3ed3083c"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson09.sa.html",
+        "working-with-functions/lesson10.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 10
+    },
+    {
+      "id": "math-a11-w11",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do intercepts draw a line and gradients compare two lines?",
+      "syllabusActionIds": [
+        "cicbb8a9c7",
+        "ci13d47f71",
+        "cif0d11ebe"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson11.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 11
+    },
+    {
+      "id": "math-a11-w12",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do we build a linear model or inequality from a real situation?",
+      "syllabusActionIds": [
+        "ci4cd0c8d9",
+        "ci7fdca2b4"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson18.sa.html",
+        "algebraic-techniques-and-inequalities/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 12
+    },
+    {
+      "id": "math-a11-w13",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Where do two linear models meet, and what does the meeting point mean?",
+      "syllabusActionIds": [
+        "ci83587815",
+        "cicb50e7a8"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson19.sa.html",
+        "working-with-functions/lesson18.sa.html",
+        "working-with-functions/lesson16.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 13
+    },
+    {
+      "id": "math-a11-w14",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Where are a function's zeros, and how does the discriminant place a parabola?",
+      "syllabusActionIds": [
+        "ci9169adaa",
+        "ci40fe4286",
+        "ci7b0b3647",
+        "cicd85f895"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson13.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 14
+    },
+    {
+      "id": "math-a11-w15",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does completing the square reveal the vertex and axis of a parabola?",
+      "syllabusActionIds": [
+        "ci9c3bd164",
+        "ci9f2c04cb"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson14.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 15
+    },
+    {
+      "id": "math-a11-w16",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do key features build a parabola, and how do we work back to its equation?",
+      "syllabusActionIds": [
+        "cice1a96a6",
+        "cif56630dd",
+        "ci3086d97f"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson15.sa.html",
+        "working-with-functions/lesson16.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 16
+    },
+    {
+      "id": "math-a11-w17",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do intersections solve f(x) = k and line-parabola systems?",
+      "syllabusActionIds": [
+        "cie66d7ae0",
+        "ci6d7b74df"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson16.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 17
+    },
+    {
+      "id": "math-a11-w18",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does the parabola decide a quadratic inequality?",
+      "syllabusActionIds": [
+        "cie9a8bd69"
+      ],
+      "siteSources": [
+        "algebraic-techniques-and-inequalities/lesson11.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 18
+    },
+    {
+      "id": "math-a11-w19",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do quadratic models find a best value in context?",
+      "syllabusActionIds": [
+        "ci6ee9e4ed"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson19.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 19
+    },
+    {
+      "id": "math-a11-w20",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do the factors of a cubic shape its graph?",
+      "syllabusActionIds": [
+        "ci5c1f54ca"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson15.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 20
+    },
+    {
+      "id": "math-a11-w21",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Why does y = k/x never meet its asymptotes?",
+      "syllabusActionIds": [
+        "cie579a8c2",
+        "cibf45b7e8"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson17.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 21
+    },
+    {
+      "id": "math-a11-w22",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does one pair of values fix a direct variation model y = kx^n?",
+      "syllabusActionIds": [
+        "ci388144c4",
+        "ci52779ff4",
+        "ci70194fe3"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson20.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 22
+    },
+    {
+      "id": "math-a11-w23",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does inverse variation y = k/x^n differ from direct variation?",
+      "syllabusActionIds": [
+        "cie81af7cc",
+        "ci52779ff4",
+        "ci70194fe3"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson21.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 23
+    },
+    {
+      "id": "math-a11-w24",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does Pythagoras give the equation of a circle centred at the origin?",
+      "syllabusActionIds": [
+        "ci6022d0ef",
+        "cib62f4915",
+        "ci7cdb9b15",
+        "ci4d0e93cc"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson22.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 24
+    },
+    {
+      "id": "math-a11-w25",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How does solving a circle for y or x split it into semicircles?",
+      "syllabusActionIds": [
+        "ci86be862c"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson23.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 25
+    },
+    {
+      "id": "math-a11-w26",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do symmetry tests tell even, odd and neither functions apart?",
+      "syllabusActionIds": [
+        "cib9db148d",
+        "cif29d187f",
+        "ci05dfc018"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 26
+    },
+    {
+      "id": "math-a11-w27",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "What happens when one function's output becomes another's input?",
+      "syllabusActionIds": [
+        "ci51d03f31",
+        "ci82a0c261"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 27
+    },
+    {
+      "id": "math-a11-w28",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do we read and graph a function defined in pieces?",
+      "syllabusActionIds": [
+        "ci5b30234d",
+        "ci088a8d02"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 28
+    },
+    {
+      "id": "math-a11-w29",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Where does a function break, and what makes it continuous?",
+      "syllabusActionIds": [
+        "ci903515d1",
+        "ci1486e4cc",
+        "ci91b5bbaa"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 29
+    },
+    {
+      "id": "math-a11-w30",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "Why is absolute value a distance, and why does it need two cases?",
+      "syllabusActionIds": [
+        "cib39edbb7",
+        "ci25113162",
+        "cidb25f0cc"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 30
+    },
+    {
+      "id": "math-a11-w31",
+      "strand": "Working with functions",
+      "focusArea": "Working with functions",
+      "mainLearnerQuestion": "How do V-shaped graphs solve absolute value equations?",
+      "syllabusActionIds": [
+        "ci81e0ec50",
+        "ci0614b169",
+        "ci9fc969f0"
+      ],
+      "siteSources": [
+        "working-with-functions/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 31
+    },
+    {
+      "id": "math-a11-c01",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "What does an average rate of change measure on a graph?",
+      "syllabusActionIds": [
+        "ci8019730a",
+        "ci7d6c383e",
+        "ci34973239",
+        "ci41d3073a"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson01.sa.html",
+        "introduction-to-differentiation/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 32
+    },
+    {
+      "id": "math-a11-c02",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How does a tangent capture speed at one instant?",
+      "syllabusActionIds": [
+        "ci6a71a44d",
+        "ci9f5aa4ac",
+        "ci8c73fdcb",
+        "ci0b795741"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson01.sa.html",
+        "introduction-to-differentiation/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 33
+    },
+    {
+      "id": "math-a11-c03",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do we estimate a changing rate from a real-world graph?",
+      "syllabusActionIds": [
+        "ci7e80ed31",
+        "ci1a06a2ed"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 34
+    },
+    {
+      "id": "math-a11-c04",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do shrinking secants find the gradient of a curve?",
+      "syllabusActionIds": [
+        "ci447b12b9",
+        "cif58445af",
+        "ci8fd626a1"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson13.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 35
+    },
+    {
+      "id": "math-a11-c05",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "What is the derivative, and how do we write it?",
+      "syllabusActionIds": [
+        "cie4815a8e",
+        "cicb34a73b",
+        "ci68ad7095",
+        "ci0ea72300",
+        "ci2f16a100"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 36
+    },
+    {
+      "id": "math-a11-c06",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How does first principles turn a secant into a derivative?",
+      "syllabusActionIds": [
+        "ci528c1909",
+        "ci608a8811",
+        "cie02570a8"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 37
+    },
+    {
+      "id": "math-a11-c07",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "Why does x^n differentiate to nx^(n-1), and how do sums and multiples follow?",
+      "syllabusActionIds": [
+        "cicccefba1",
+        "ci1d192d62",
+        "cif6a6cb7d"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson13.sa.html",
+        "introduction-to-differentiation/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 38
+    },
+    {
+      "id": "math-a11-c08",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How does the derivative give the tangent and normal at a point?",
+      "syllabusActionIds": [
+        "ci3d1a69e4"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson14.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 39
+    },
+    {
+      "id": "math-a11-c09",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "Where does a curve have a given gradient, and what angle does it make?",
+      "syllabusActionIds": [
+        "ci35f0bdbe",
+        "ci70bdc1be"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson14.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 40
+    },
+    {
+      "id": "math-a11-c10",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How does the chain rule handle a function inside a function?",
+      "syllabusActionIds": [
+        "ci00fa8fac"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 41
+    },
+    {
+      "id": "math-a11-c11",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do both factors contribute to the derivative of a product?",
+      "syllabusActionIds": [
+        "ci72e90f3a"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 42
+    },
+    {
+      "id": "math-a11-c12",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do we differentiate a quotient?",
+      "syllabusActionIds": [
+        "cifb023b4e"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 43
+    },
+    {
+      "id": "math-a11-c13",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "Which differentiation rule, or combination, does a function need?",
+      "syllabusActionIds": [
+        "cie3d91a6e"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson05.sa.html",
+        "introduction-to-differentiation/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 44
+    },
+    {
+      "id": "math-a11-c14",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How does the sign of f'(x) show increasing, decreasing and stationary?",
+      "syllabusActionIds": [
+        "cie435d18f",
+        "cief55e727"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson10.sa.html",
+        "introduction-to-differentiation/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 45
+    },
+    {
+      "id": "math-a11-c15",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do we sketch y = f'(x) from the graph of y = f(x)?",
+      "syllabusActionIds": [
+        "ci63650902"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson15.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 46
+    },
+    {
+      "id": "math-a11-c16",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do we find and justify the stationary points of a cubic?",
+      "syllabusActionIds": [
+        "ci6341be75"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson08.sa.html",
+        "introduction-to-differentiation/lesson10.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 47
+    },
+    {
+      "id": "math-a11-c17",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "What does f'(c) tell us about a real situation?",
+      "syllabusActionIds": [
+        "ci9d118719",
+        "ci8a2722e2"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson12.sa.html",
+        "introduction-to-differentiation/lesson15.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 48
+    },
+    {
+      "id": "math-a11-c18",
+      "strand": "Introduction to differentiation",
+      "focusArea": "Introduction to differentiation",
+      "mainLearnerQuestion": "How do displacement and velocity differ from distance and speed?",
+      "syllabusActionIds": [
+        "ci05229304",
+        "ci8a1ba332",
+        "ci1be28612"
+      ],
+      "siteSources": [
+        "introduction-to-differentiation/lesson16.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 49
+    },
+    {
+      "id": "math-a11-e01",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "How do the graphs of y = k a^x and y = k a^(-x) behave?",
+      "syllabusActionIds": [
+        "ci98f43d14",
+        "ci69738291"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson01.sa.html",
+        "exponential-and-logarithmic-functions/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 50
+    },
+    {
+      "id": "math-a11-e02",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "What makes e the special base for exponentials?",
+      "syllabusActionIds": [
+        "ci93d02049",
+        "ci7e417be9",
+        "ciac4383bd"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 51
+    },
+    {
+      "id": "math-a11-e03",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "What is a logarithm, and how does it undo an exponential?",
+      "syllabusActionIds": [
+        "ci604946ac",
+        "ci5994ec54",
+        "ci7cd97f8c",
+        "cic84a1659"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 52
+    },
+    {
+      "id": "math-a11-e04",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "How do logarithms solve a^x = b?",
+      "syllabusActionIds": [
+        "ci740d04cc",
+        "ci03c5d345"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson05.sa.html",
+        "exponential-and-logarithmic-functions/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 53
+    },
+    {
+      "id": "math-a11-e05",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "How do the log laws follow from the index laws?",
+      "syllabusActionIds": [
+        "ci348896a1",
+        "ci55afa938"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson07.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 54
+    },
+    {
+      "id": "math-a11-e06",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "How do the log laws simplify expressions and solve equations?",
+      "syllabusActionIds": [
+        "cia453eab7"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson07.sa.html",
+        "exponential-and-logarithmic-functions/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 55
+    },
+    {
+      "id": "math-a11-e07",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "Why does the change of base rule work?",
+      "syllabusActionIds": [
+        "ciae7673fb"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 56
+    },
+    {
+      "id": "math-a11-e08",
+      "strand": "Exponential and logarithmic functions",
+      "focusArea": "Exponential and logarithmic functions",
+      "mainLearnerQuestion": "How is the log graph a reflection of the exponential graph?",
+      "syllabusActionIds": [
+        "ci5d370004",
+        "ci9eb0125c"
+      ],
+      "siteSources": [
+        "exponential-and-logarithmic-functions/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 57
+    },
+    {
+      "id": "math-a11-t01",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How do two special triangles give exact values at 30, 45 and 60 degrees?",
+      "syllabusActionIds": [
+        "ci83df430f"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 58
+    },
+    {
+      "id": "math-a11-t02",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How do we solve right-triangle problems with bearings and elevation?",
+      "syllabusActionIds": [
+        "ci61c6fa90"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson09.sa.html",
+        "trigonometry-and-measure-of-angles/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 59
+    },
+    {
+      "id": "math-a11-t03",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How does a point on a circle define trig ratios for any angle?",
+      "syllabusActionIds": [
+        "ci50c304a5",
+        "ci95d785c0",
+        "cif067a2a2",
+        "cieed954eb"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 60
+    },
+    {
+      "id": "math-a11-t04",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How do related angles and signs give trig values in every quadrant?",
+      "syllabusActionIds": [
+        "ci535e2340",
+        "cid118da07",
+        "ci7bdc1767"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson03.sa.html",
+        "trigonometry-and-measure-of-angles/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 61
+    },
+    {
+      "id": "math-a11-t05",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "Why does the sine rule work, and when does the area formula apply?",
+      "syllabusActionIds": [
+        "ci96840b09",
+        "ci5fb5a13c"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 62
+    },
+    {
+      "id": "math-a11-t06",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How does the cosine rule correct Pythagoras for any triangle?",
+      "syllabusActionIds": [
+        "ci96840b09",
+        "ci5fb5a13c"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson07.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 63
+    },
+    {
+      "id": "math-a11-t07",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "When can the sine rule give two triangles, and which rule fits a problem?",
+      "syllabusActionIds": [
+        "ci44ad375d",
+        "ci5fb5a13c"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson08.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 64
+    },
+    {
+      "id": "math-a11-t08",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "Why is a radian the natural unit for angles?",
+      "syllabusActionIds": [
+        "ci53fbdcff",
+        "ci6db63911",
+        "cied74df46",
+        "ciccaa78be"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson01.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 65
+    },
+    {
+      "id": "math-a11-t09",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "How do radians simplify arc length, sector area and segment area?",
+      "syllabusActionIds": [
+        "cib55a24b7",
+        "ci56cda609",
+        "cibf527c60"
+      ],
+      "siteSources": [
+        "trigonometry-and-measure-of-angles/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 66
+    },
+    {
+      "id": "math-a11-t10",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometry and measure of angles",
+      "mainLearnerQuestion": "What do the graphs of sin, cos and tan show about their behaviour?",
+      "syllabusActionIds": [
+        "cid79268a8"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson04.sa.html",
+        "trigonometric-identities-and-equations/lesson05.sa.html",
+        "trigonometric-identities-and-equations/lesson06.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 67
+    },
+    {
+      "id": "math-a11-t11",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "What are sec, cosec and cot in a right-angled triangle?",
+      "syllabusActionIds": [
+        "ci47b993f2",
+        "ci0e59b7f1",
+        "cid1300c17"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson01.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 68
+    },
+    {
+      "id": "math-a11-t12",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "How do the reciprocal ratios extend to any angle, and where are they undefined?",
+      "syllabusActionIds": [
+        "ci15aca25e",
+        "cicf5015c7",
+        "ci6990d1da",
+        "ci3c95dfdc"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson01.sa.html",
+        "trigonometric-identities-and-equations/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 69
+    },
+    {
+      "id": "math-a11-t13",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "Why does a ratio of an angle equal the co-ratio of its complement?",
+      "syllabusActionIds": [
+        "cic43f35f1",
+        "ci3f6f944a"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 70
+    },
+    {
+      "id": "math-a11-t14",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "How do the Pythagorean identities prove further identities?",
+      "syllabusActionIds": [
+        "cif79ffa41",
+        "ci1ff2042e"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson02.sa.html",
+        "trigonometric-identities-and-equations/lesson10.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 71
+    },
+    {
+      "id": "math-a11-t15",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "How do we find every solution of a trig equation in a domain?",
+      "syllabusActionIds": [
+        "ci84d04f4e"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson08.sa.html",
+        "trigonometric-identities-and-equations/lesson11.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 72
+    },
+    {
+      "id": "math-a11-t16",
+      "strand": "Trigonometry",
+      "focusArea": "Trigonometric identities and equations",
+      "mainLearnerQuestion": "How do trig equations that reduce to quadratics get solved?",
+      "syllabusActionIds": [
+        "ci24474f01"
+      ],
+      "siteSources": [
+        "trigonometric-identities-and-equations/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 73
+    },
+    {
+      "id": "math-a11-g01",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "Which way does replacing x by x - a move a graph?",
+      "syllabusActionIds": [
+        "cia7e452b4"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson01.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 74
+    },
+    {
+      "id": "math-a11-g02",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "How do -x and -y reflect a graph?",
+      "syllabusActionIds": [
+        "cifbd84c1c"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 75
+    },
+    {
+      "id": "math-a11-g03",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "How does replacing x by x/k or y by y/l stretch a graph?",
+      "syllabusActionIds": [
+        "cic990ec79",
+        "cide27d1f1",
+        "ci950cc744"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 76
+    },
+    {
+      "id": "math-a11-g04",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "Why does the order of transformations matter?",
+      "syllabusActionIds": [
+        "ci063bd03f",
+        "cid4fd3807"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 77
+    },
+    {
+      "id": "math-a11-g05",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "How do we track domain, range, intercepts and asymptotes through transformations?",
+      "syllabusActionIds": [
+        "cid4fd3807"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson05.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 78
+    },
+    {
+      "id": "math-a11-g06",
+      "strand": "Graph transformations",
+      "focusArea": "Graph transformations",
+      "mainLearnerQuestion": "How does translation find the centre and radius of a circle?",
+      "syllabusActionIds": [
+        "ci84f96bc4",
+        "cid118e6e7",
+        "ci95f9075b"
+      ],
+      "siteSources": [
+        "graph-transformations/lesson07.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 79
+    },
+    {
+      "id": "math-a11-s01",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do we describe a collection precisely with set notation?",
+      "syllabusActionIds": [
+        "ci04bd3585",
+        "ciea6f77dc",
+        "ci2b2bf2be",
+        "ci2a98c57c",
+        "ci8e00ae50"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson11.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 80
+    },
+    {
+      "id": "math-a11-s02",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do intersections, unions and Venn diagrams sort overlapping sets?",
+      "syllabusActionIds": [
+        "cifa472d11",
+        "ci4459a28c",
+        "cie7ef57c5",
+        "ci7c446d9f"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson12.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 81
+    },
+    {
+      "id": "math-a11-s03",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "Why do we subtract the overlap when counting a union?",
+      "syllabusActionIds": [
+        "ci5cd67d77"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson13.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 82
+    },
+    {
+      "id": "math-a11-s04",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do sample spaces and events give a probability?",
+      "syllabusActionIds": [
+        "cib914fe5d",
+        "ci6948e56d",
+        "ci851335dd",
+        "cid1a19692"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson01.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 83
+    },
+    {
+      "id": "math-a11-s05",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do the complement and addition rules work on a Venn diagram?",
+      "syllabusActionIds": [
+        "ci4917e349",
+        "ci8c8dbc06"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson02.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 84
+    },
+    {
+      "id": "math-a11-s06",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do arrays and tree diagrams organise multistage events?",
+      "syllabusActionIds": [
+        "ci1f69f91f"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson02.sa.html",
+        "probability-and-data/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 85
+    },
+    {
+      "id": "math-a11-s07",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How does knowing B happened change the probability of A?",
+      "syllabusActionIds": [
+        "ci6b22bb73",
+        "ci720126e5",
+        "cidbe2315d",
+        "cif285e1d9"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson03.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 86
+    },
+    {
+      "id": "math-a11-s08",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "When are two events independent, and how do we prove it?",
+      "syllabusActionIds": [
+        "ci3b004211",
+        "cifa01f762",
+        "ci3243e129",
+        "ci4e7d5072"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson04.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 87
+    },
+    {
+      "id": "math-a11-s09",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "What makes a random variable discrete or continuous?",
+      "syllabusActionIds": [
+        "cic2a3e877",
+        "ci21d3c041"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson14.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 88
+    },
+    {
+      "id": "math-a11-s10",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do frequency tables turn data into probability estimates?",
+      "syllabusActionIds": [
+        "ci1c297b6d",
+        "cifa805794"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson15.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 89
+    },
+    {
+      "id": "math-a11-s11",
+      "strand": "Probability and data",
+      "focusArea": "Probability and data",
+      "mainLearnerQuestion": "How do histograms and polygons show the mode and median?",
+      "syllabusActionIds": [
+        "ci10643b1a"
+      ],
+      "siteSources": [
+        "probability-and-data/lesson15.sa.html",
+        "probability-and-data/lesson07.sa.html"
+      ],
+      "status": "proposed-not-designed",
+      "playlistOrder": 90
+    },
+    {
+      "id": "math-a11-p01",
+      "strand": "Optional mixed practice",
+      "focusArea": null,
+      "mainLearnerQuestion": "Which algebra, line or quadratic tool does an unseen functions problem need?",
+      "syllabusActionIds": [],
+      "siteSources": [],
+      "status": "optional-claims-no-ownership",
+      "playlistOrder": 91
+    },
+    {
+      "id": "math-a11-p02",
+      "strand": "Optional mixed practice",
+      "focusArea": null,
+      "mainLearnerQuestion": "Which trig ratio, rule or identity does an unseen triangle or equation need?",
+      "syllabusActionIds": [],
+      "siteSources": [],
+      "status": "optional-claims-no-ownership",
+      "playlistOrder": 92
+    },
+    {
+      "id": "math-a11-p03",
+      "strand": "Optional mixed practice",
+      "focusArea": null,
+      "mainLearnerQuestion": "Which derivative rule, log law or probability rule does an unseen problem need?",
+      "syllabusActionIds": [],
+      "siteSources": [],
+      "status": "optional-claims-no-ownership",
+      "playlistOrder": 93
+    }
+  ],
+  "contentPointOwners": {
+    "cib0d54c54": [
+      "math-a11-w01"
+    ],
+    "ci3ccce138": [
+      "math-a11-w02"
+    ],
+    "ci9c1a8604": [
+      "math-a11-w02"
+    ],
+    "ci554a24b4": [
+      "math-a11-w03"
+    ],
+    "ci1ca81758": [
+      "math-a11-w03"
+    ],
+    "cia7d436df": [
+      "math-a11-w04"
+    ],
+    "ci887fe9c5": [
+      "math-a11-w05"
+    ],
+    "ci6e28857f": [
+      "math-a11-w06"
+    ],
+    "ci32f9832a": [
+      "math-a11-w07"
+    ],
+    "cic0b5416c": [
+      "math-a11-w07"
+    ],
+    "ci9288f9fe": [
+      "math-a11-w07"
+    ],
+    "ci9bf331ec": [
+      "math-a11-w07"
+    ],
+    "ci5022c700": [
+      "math-a11-w08"
+    ],
+    "ci5a13079c": [
+      "math-a11-w08"
+    ],
+    "cifb29dab7": [
+      "math-a11-w08"
+    ],
+    "ci7b72a364": [
+      "math-a11-w09"
+    ],
+    "ci0d9e1578": [
+      "math-a11-w09"
+    ],
+    "ms_s6_y11_recognise_domains_and_ranges_of_function": [
+      "math-a11-w09"
+    ],
+    "ci0c0bc407": [
+      "math-a11-w09"
+    ],
+    "ci7f902bc1": [
+      "math-a11-w10"
+    ],
+    "ci2edbbb14": [
+      "math-a11-w10"
+    ],
+    "cibddcc59d": [
+      "math-a11-w10"
+    ],
+    "ci3ed3083c": [
+      "math-a11-w10"
+    ],
+    "cicbb8a9c7": [
+      "math-a11-w11"
+    ],
+    "ci13d47f71": [
+      "math-a11-w11"
+    ],
+    "cif0d11ebe": [
+      "math-a11-w11"
+    ],
+    "ci4cd0c8d9": [
+      "math-a11-w12"
+    ],
+    "ci7fdca2b4": [
+      "math-a11-w12"
+    ],
+    "ci83587815": [
+      "math-a11-w13"
+    ],
+    "cicb50e7a8": [
+      "math-a11-w13"
+    ],
+    "ci9169adaa": [
+      "math-a11-w14"
+    ],
+    "ci40fe4286": [
+      "math-a11-w14"
+    ],
+    "ci7b0b3647": [
+      "math-a11-w14"
+    ],
+    "cicd85f895": [
+      "math-a11-w14"
+    ],
+    "ci9c3bd164": [
+      "math-a11-w15"
+    ],
+    "ci9f2c04cb": [
+      "math-a11-w15"
+    ],
+    "cice1a96a6": [
+      "math-a11-w16"
+    ],
+    "cif56630dd": [
+      "math-a11-w16"
+    ],
+    "ci3086d97f": [
+      "math-a11-w16"
+    ],
+    "cie66d7ae0": [
+      "math-a11-w17"
+    ],
+    "ci6d7b74df": [
+      "math-a11-w17"
+    ],
+    "cie9a8bd69": [
+      "math-a11-w18"
+    ],
+    "ci6ee9e4ed": [
+      "math-a11-w19"
+    ],
+    "ci5c1f54ca": [
+      "math-a11-w20"
+    ],
+    "cie579a8c2": [
+      "math-a11-w21"
+    ],
+    "cibf45b7e8": [
+      "math-a11-w21"
+    ],
+    "ci388144c4": [
+      "math-a11-w22"
+    ],
+    "ci52779ff4": [
+      "math-a11-w22",
+      "math-a11-w23"
+    ],
+    "ci70194fe3": [
+      "math-a11-w22",
+      "math-a11-w23"
+    ],
+    "cie81af7cc": [
+      "math-a11-w23"
+    ],
+    "ci6022d0ef": [
+      "math-a11-w24"
+    ],
+    "cib62f4915": [
+      "math-a11-w24"
+    ],
+    "ci7cdb9b15": [
+      "math-a11-w24"
+    ],
+    "ci4d0e93cc": [
+      "math-a11-w24"
+    ],
+    "ci86be862c": [
+      "math-a11-w25"
+    ],
+    "cib9db148d": [
+      "math-a11-w26"
+    ],
+    "cif29d187f": [
+      "math-a11-w26"
+    ],
+    "ci05dfc018": [
+      "math-a11-w26"
+    ],
+    "ci51d03f31": [
+      "math-a11-w27"
+    ],
+    "ci82a0c261": [
+      "math-a11-w27"
+    ],
+    "ci5b30234d": [
+      "math-a11-w28"
+    ],
+    "ci088a8d02": [
+      "math-a11-w28"
+    ],
+    "ci903515d1": [
+      "math-a11-w29"
+    ],
+    "ci1486e4cc": [
+      "math-a11-w29"
+    ],
+    "ci91b5bbaa": [
+      "math-a11-w29"
+    ],
+    "cib39edbb7": [
+      "math-a11-w30"
+    ],
+    "ci25113162": [
+      "math-a11-w30"
+    ],
+    "cidb25f0cc": [
+      "math-a11-w30"
+    ],
+    "ci81e0ec50": [
+      "math-a11-w31"
+    ],
+    "ci0614b169": [
+      "math-a11-w31"
+    ],
+    "ci9fc969f0": [
+      "math-a11-w31"
+    ],
+    "ci8019730a": [
+      "math-a11-c01"
+    ],
+    "ci7d6c383e": [
+      "math-a11-c01"
+    ],
+    "ci34973239": [
+      "math-a11-c01"
+    ],
+    "ci41d3073a": [
+      "math-a11-c01"
+    ],
+    "ci6a71a44d": [
+      "math-a11-c02"
+    ],
+    "ci9f5aa4ac": [
+      "math-a11-c02"
+    ],
+    "ci8c73fdcb": [
+      "math-a11-c02"
+    ],
+    "ci0b795741": [
+      "math-a11-c02"
+    ],
+    "ci7e80ed31": [
+      "math-a11-c03"
+    ],
+    "ci1a06a2ed": [
+      "math-a11-c03"
+    ],
+    "ci447b12b9": [
+      "math-a11-c04"
+    ],
+    "cif58445af": [
+      "math-a11-c04"
+    ],
+    "ci8fd626a1": [
+      "math-a11-c04"
+    ],
+    "cie4815a8e": [
+      "math-a11-c05"
+    ],
+    "cicb34a73b": [
+      "math-a11-c05"
+    ],
+    "ci68ad7095": [
+      "math-a11-c05"
+    ],
+    "ci0ea72300": [
+      "math-a11-c05"
+    ],
+    "ci2f16a100": [
+      "math-a11-c05"
+    ],
+    "ci528c1909": [
+      "math-a11-c06"
+    ],
+    "ci608a8811": [
+      "math-a11-c06"
+    ],
+    "cie02570a8": [
+      "math-a11-c06"
+    ],
+    "cicccefba1": [
+      "math-a11-c07"
+    ],
+    "ci1d192d62": [
+      "math-a11-c07"
+    ],
+    "cif6a6cb7d": [
+      "math-a11-c07"
+    ],
+    "ci3d1a69e4": [
+      "math-a11-c08"
+    ],
+    "ci35f0bdbe": [
+      "math-a11-c09"
+    ],
+    "ci70bdc1be": [
+      "math-a11-c09"
+    ],
+    "ci00fa8fac": [
+      "math-a11-c10"
+    ],
+    "ci72e90f3a": [
+      "math-a11-c11"
+    ],
+    "cifb023b4e": [
+      "math-a11-c12"
+    ],
+    "cie3d91a6e": [
+      "math-a11-c13"
+    ],
+    "cie435d18f": [
+      "math-a11-c14"
+    ],
+    "cief55e727": [
+      "math-a11-c14"
+    ],
+    "ci63650902": [
+      "math-a11-c15"
+    ],
+    "ci6341be75": [
+      "math-a11-c16"
+    ],
+    "ci9d118719": [
+      "math-a11-c17"
+    ],
+    "ci8a2722e2": [
+      "math-a11-c17"
+    ],
+    "ci05229304": [
+      "math-a11-c18"
+    ],
+    "ci8a1ba332": [
+      "math-a11-c18"
+    ],
+    "ci1be28612": [
+      "math-a11-c18"
+    ],
+    "ci98f43d14": [
+      "math-a11-e01"
+    ],
+    "ci69738291": [
+      "math-a11-e01"
+    ],
+    "ci93d02049": [
+      "math-a11-e02"
+    ],
+    "ci7e417be9": [
+      "math-a11-e02"
+    ],
+    "ciac4383bd": [
+      "math-a11-e02"
+    ],
+    "ci604946ac": [
+      "math-a11-e03"
+    ],
+    "ci5994ec54": [
+      "math-a11-e03"
+    ],
+    "ci7cd97f8c": [
+      "math-a11-e03"
+    ],
+    "cic84a1659": [
+      "math-a11-e03"
+    ],
+    "ci740d04cc": [
+      "math-a11-e04"
+    ],
+    "ci03c5d345": [
+      "math-a11-e04"
+    ],
+    "ci348896a1": [
+      "math-a11-e05"
+    ],
+    "ci55afa938": [
+      "math-a11-e05"
+    ],
+    "cia453eab7": [
+      "math-a11-e06"
+    ],
+    "ciae7673fb": [
+      "math-a11-e07"
+    ],
+    "ci5d370004": [
+      "math-a11-e08"
+    ],
+    "ci9eb0125c": [
+      "math-a11-e08"
+    ],
+    "ci83df430f": [
+      "math-a11-t01"
+    ],
+    "ci61c6fa90": [
+      "math-a11-t02"
+    ],
+    "ci50c304a5": [
+      "math-a11-t03"
+    ],
+    "ci95d785c0": [
+      "math-a11-t03"
+    ],
+    "cif067a2a2": [
+      "math-a11-t03"
+    ],
+    "cieed954eb": [
+      "math-a11-t03"
+    ],
+    "ci535e2340": [
+      "math-a11-t04"
+    ],
+    "cid118da07": [
+      "math-a11-t04"
+    ],
+    "ci7bdc1767": [
+      "math-a11-t04"
+    ],
+    "ci96840b09": [
+      "math-a11-t05",
+      "math-a11-t06"
+    ],
+    "ci5fb5a13c": [
+      "math-a11-t05",
+      "math-a11-t06",
+      "math-a11-t07"
+    ],
+    "ci44ad375d": [
+      "math-a11-t07"
+    ],
+    "ci53fbdcff": [
+      "math-a11-t08"
+    ],
+    "ci6db63911": [
+      "math-a11-t08"
+    ],
+    "cied74df46": [
+      "math-a11-t08"
+    ],
+    "ciccaa78be": [
+      "math-a11-t08"
+    ],
+    "cib55a24b7": [
+      "math-a11-t09"
+    ],
+    "ci56cda609": [
+      "math-a11-t09"
+    ],
+    "cibf527c60": [
+      "math-a11-t09"
+    ],
+    "cid79268a8": [
+      "math-a11-t10"
+    ],
+    "ci47b993f2": [
+      "math-a11-t11"
+    ],
+    "ci0e59b7f1": [
+      "math-a11-t11"
+    ],
+    "cid1300c17": [
+      "math-a11-t11"
+    ],
+    "ci15aca25e": [
+      "math-a11-t12"
+    ],
+    "cicf5015c7": [
+      "math-a11-t12"
+    ],
+    "ci6990d1da": [
+      "math-a11-t12"
+    ],
+    "ci3c95dfdc": [
+      "math-a11-t12"
+    ],
+    "cic43f35f1": [
+      "math-a11-t13"
+    ],
+    "ci3f6f944a": [
+      "math-a11-t13"
+    ],
+    "cif79ffa41": [
+      "math-a11-t14"
+    ],
+    "ci1ff2042e": [
+      "math-a11-t14"
+    ],
+    "ci84d04f4e": [
+      "math-a11-t15"
+    ],
+    "ci24474f01": [
+      "math-a11-t16"
+    ],
+    "cia7e452b4": [
+      "math-a11-g01"
+    ],
+    "cifbd84c1c": [
+      "math-a11-g02"
+    ],
+    "cic990ec79": [
+      "math-a11-g03"
+    ],
+    "cide27d1f1": [
+      "math-a11-g03"
+    ],
+    "ci950cc744": [
+      "math-a11-g03"
+    ],
+    "ci063bd03f": [
+      "math-a11-g04"
+    ],
+    "cid4fd3807": [
+      "math-a11-g04",
+      "math-a11-g05"
+    ],
+    "ci84f96bc4": [
+      "math-a11-g06"
+    ],
+    "cid118e6e7": [
+      "math-a11-g06"
+    ],
+    "ci95f9075b": [
+      "math-a11-g06"
+    ],
+    "ci04bd3585": [
+      "math-a11-s01"
+    ],
+    "ciea6f77dc": [
+      "math-a11-s01"
+    ],
+    "ci2b2bf2be": [
+      "math-a11-s01"
+    ],
+    "ci2a98c57c": [
+      "math-a11-s01"
+    ],
+    "ci8e00ae50": [
+      "math-a11-s01"
+    ],
+    "cifa472d11": [
+      "math-a11-s02"
+    ],
+    "ci4459a28c": [
+      "math-a11-s02"
+    ],
+    "cie7ef57c5": [
+      "math-a11-s02"
+    ],
+    "ci7c446d9f": [
+      "math-a11-s02"
+    ],
+    "ci5cd67d77": [
+      "math-a11-s03"
+    ],
+    "cib914fe5d": [
+      "math-a11-s04"
+    ],
+    "ci6948e56d": [
+      "math-a11-s04"
+    ],
+    "ci851335dd": [
+      "math-a11-s04"
+    ],
+    "cid1a19692": [
+      "math-a11-s04"
+    ],
+    "ci4917e349": [
+      "math-a11-s05"
+    ],
+    "ci8c8dbc06": [
+      "math-a11-s05"
+    ],
+    "ci1f69f91f": [
+      "math-a11-s06"
+    ],
+    "ci6b22bb73": [
+      "math-a11-s07"
+    ],
+    "ci720126e5": [
+      "math-a11-s07"
+    ],
+    "cidbe2315d": [
+      "math-a11-s07"
+    ],
+    "cif285e1d9": [
+      "math-a11-s07"
+    ],
+    "ci3b004211": [
+      "math-a11-s08"
+    ],
+    "cifa01f762": [
+      "math-a11-s08"
+    ],
+    "ci3243e129": [
+      "math-a11-s08"
+    ],
+    "ci4e7d5072": [
+      "math-a11-s08"
+    ],
+    "cic2a3e877": [
+      "math-a11-s09"
+    ],
+    "ci21d3c041": [
+      "math-a11-s09"
+    ],
+    "ci1c297b6d": [
+      "math-a11-s10"
+    ],
+    "cifa805794": [
+      "math-a11-s10"
+    ],
+    "ci10643b1a": [
+      "math-a11-s11"
+    ]
+  },
+  "unownedContentPointIds": [],
+  "sharedOwnership": {
+    "ci52779ff4": [
+      "math-a11-w22",
+      "math-a11-w23"
+    ],
+    "ci70194fe3": [
+      "math-a11-w22",
+      "math-a11-w23"
+    ],
+    "ci96840b09": [
+      "math-a11-t05",
+      "math-a11-t06"
+    ],
+    "ci5fb5a13c": [
+      "math-a11-t05",
+      "math-a11-t06",
+      "math-a11-t07"
+    ],
+    "cid4fd3807": [
+      "math-a11-g04",
+      "math-a11-g05"
+    ]
+  },
+  "year12Dependencies": {
+    "note": "Year 11 points that Year 12 routes name as entry knowledge, with the Year 11 video that owns each. math-a12-d01 relies on the four marked d01.",
+    "d01": [
+      {
+        "id": "ciac4383bd",
+        "text": "Conclude that Euler’s number, e, is a unique number such that d/dx (e^x) = e^x, that is, e^x is its own derivative",
+        "year11Owner": [
+          "math-a11-e02"
+        ]
+      },
+      {
+        "id": "ci00fa8fac",
+        "text": "Apply the chain rule: if y is a differentiable function of u, and u is a differentiable function of x, then dy/dx = dy/du × du/dx or if h(x) = f(g(x)) for differentiable functions f(x) and g(x) then h'(x) = f'(g(x))g'(x)",
+        "year11Owner": [
+          "math-a11-c10"
+        ]
+      },
+      {
+        "id": "cif6a6cb7d",
+        "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d/dx (f(x) + g(x)) = f'(x) + g'(x), and the derivative of a multiple of a function is the multiple of its derivative: d/dx (k ⋅ f(x)) = k ⋅ f'(x)",
+        "year11Owner": [
+          "math-a11-c07"
+        ]
+      },
+      {
+        "id": "ci98f43d14",
+        "text": "Graph the exponential functions y = k(a^x) and y = k(a^(-x)) for constants a and k where a > 0, a ≠ 1 and k ≠ 0, and identify its asymptote, y-intercept, domain and range",
+        "year11Owner": [
+          "math-a11-e01"
+        ]
+      }
+    ],
+    "all": [
+      {
+        "id": "ciac4383bd",
+        "text": "Conclude that Euler’s number, e, is a unique number such that d/dx (e^x) = e^x, that is, e^x is its own derivative",
+        "year12Videos": [
+          "math-a12-d01",
+          "math-a12-d02",
+          "math-a12-d03"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e02"
+        ]
+      },
+      {
+        "id": "ci00fa8fac",
+        "text": "Apply the chain rule: if y is a differentiable function of u, and u is a differentiable function of x, then dy/dx = dy/du × du/dx or if h(x) = f(g(x)) for differentiable functions f(x) and g(x) then h'(x) = f'(g(x))g'(x)",
+        "year12Videos": [
+          "math-a12-d01",
+          "math-a12-d02",
+          "math-a12-d03",
+          "math-a12-d06",
+          "math-a12-d07",
+          "math-a12-d11 to d19",
+          "math-a12-i08",
+          "math-a12-i09"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c10"
+        ]
+      },
+      {
+        "id": "cif6a6cb7d",
+        "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d/dx (f(x) + g(x)) = f'(x) + g'(x), and the derivative of a multiple of a function is the multiple of its derivative: d/dx (k ⋅ f(x)) = k ⋅ f'(x)",
+        "year12Videos": [
+          "math-a12-d01",
+          "math-a12-d04",
+          "math-a12-i01 to i14"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c07"
+        ]
+      },
+      {
+        "id": "ci98f43d14",
+        "text": "Graph the exponential functions y = k(a^x) and y = k(a^(-x)) for constants a and k where a > 0, a ≠ 1 and k ≠ 0, and identify its asymptote, y-intercept, domain and range",
+        "year12Videos": [
+          "math-a12-d01",
+          "math-a12-i11",
+          "math-a12-t04"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e01"
+        ]
+      },
+      {
+        "id": "ci1d192d62",
+        "text": "Use the formula d/dx (x^n) = nx^(n - 1) for all real values of n",
+        "year12Videos": [
+          "math-a12-d09",
+          "math-a12-d10",
+          "math-a12-i01 to i14"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c07"
+        ]
+      },
+      {
+        "id": "cie3d91a6e",
+        "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function",
+        "year12Videos": [
+          "math-a12-d06 to d08",
+          "math-a12-d11 to d19"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c13"
+        ]
+      },
+      {
+        "id": "ci72e90f3a",
+        "text": "Apply the product rule: if y = uv, where u and v are both differentiable functions of x, then dy/dx = u dv/dx + v du/dx or if h(x) = f(x)g(x) for differentiable functions f(x) and g(x) then h'(x) = f(x)g'(x) + f'(x)g(x)",
+        "year12Videos": [
+          "math-a12-d07"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c11"
+        ]
+      },
+      {
+        "id": "cifb023b4e",
+        "text": "Apply the quotient rule: if y = u/v, where u and v are both differentiable functions of x, then dy/dx = (v du/dx - u dv/dx)/(v^2) or if h(x) = (f(x))/(g(x)) then h'(x) = (g(x)f'(x) - f(x)g'(x))/([g(x)]^2)",
+        "year12Videos": [
+          "math-a12-d08"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c12"
+        ]
+      },
+      {
+        "id": "ci3d1a69e4",
+        "text": "Use the rules for differentiation to find equations of tangents and normals to a curve at points on the curve",
+        "year12Videos": [
+          "math-a12-d08"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c08"
+        ]
+      },
+      {
+        "id": "ci447b12b9",
+        "text": "Examine the gradient of a curve at a point on the curve using graphing applications",
+        "year12Videos": [
+          "math-a12-d05"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c04"
+        ]
+      },
+      {
+        "id": "cie4815a8e",
+        "text": "Define f'(x), for any function f(x) and any value x, to be the gradient of the tangent to the curve y = f(x) at the point P(x, f(x)) if the tangent exists and is not vertical",
+        "year12Videos": [
+          "math-a12-d05"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c05"
+        ]
+      },
+      {
+        "id": "cie435d18f",
+        "text": "Interpret f(x) as increasing at x = c when f'(c) > 0 and decreasing at x = c when f'(c) < 0",
+        "year12Videos": [
+          "math-a12-d09"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c14"
+        ]
+      },
+      {
+        "id": "cief55e727",
+        "text": "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x-axis, and recognise that f(x) is stationary at x = c when f'(c) = 0",
+        "year12Videos": [
+          "math-a12-d09",
+          "math-a12-d10"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c14"
+        ]
+      },
+      {
+        "id": "ci6341be75",
+        "text": "Identify stationary points on the graph of a cubic function, and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions",
+        "year12Videos": [
+          "math-a12-d09",
+          "math-a12-d10"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c16"
+        ]
+      },
+      {
+        "id": "ci7cd97f8c",
+        "text": "Define the natural logarithm ln a = log_e a",
+        "year12Videos": [
+          "math-a12-d03",
+          "math-a12-d04"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e03"
+        ]
+      },
+      {
+        "id": "ci9eb0125c",
+        "text": "Use graphing applications to identify the graphs of y = a^x and y = log_a x as reflections of each other in the line y = x, in cases where a > 1 and 0 < a < 1",
+        "year12Videos": [
+          "math-a12-d03"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e08"
+        ]
+      },
+      {
+        "id": "ciae7673fb",
+        "text": "Prove the change of base rule log_a x = (log_b x)/(log_b a) and use it to solve problems",
+        "year12Videos": [
+          "math-a12-d02",
+          "math-a12-d04"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e07"
+        ]
+      },
+      {
+        "id": "cic84a1659",
+        "text": "Recognise and use the logarithmic properties: log_a a^x = x for all real x, a^(log_a x) = x where x > 0",
+        "year12Videos": [
+          "math-a12-d02",
+          "math-a12-d03",
+          "math-a12-i11",
+          "math-a12-t04"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e03"
+        ]
+      },
+      {
+        "id": "ci5d370004",
+        "text": "Graph the logarithmic function y = log_a x for a > 0 and a ≠ 1",
+        "year12Videos": [
+          "math-a12-i11"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-e08"
+        ]
+      },
+      {
+        "id": "ciccaa78be",
+        "text": "Convert between degrees and radians and find the exact sine, cosine and tangent ratios for integer multiples of π/6 and π/4",
+        "year12Videos": [
+          "math-a12-d05",
+          "math-a12-t01",
+          "math-a12-t02",
+          "math-a12-t03"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-t08"
+        ]
+      },
+      {
+        "id": "cid79268a8",
+        "text": "Graph y = sin x, y = cos x and y = tan x over domains given in degrees or radians, showing intercepts with the x-axis and y-axis and any asymptotes, determine their domains and ranges, and period and amplitude where appropriate, and whether each is even or odd or neither",
+        "year12Videos": [
+          "math-a12-d05",
+          "math-a12-i12",
+          "math-a12-t01",
+          "math-a12-t02"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-t10"
+        ]
+      },
+      {
+        "id": "ci05229304",
+        "text": "Define and distinguish between displacement and distance and between velocity and speed",
+        "year12Videos": [
+          "math-a12-i13",
+          "math-a12-i14"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c18"
+        ]
+      },
+      {
+        "id": "ci8a1ba332",
+        "text": "Use the notation dx/dt or ẋ to represent the velocity of a particle with displacement x from a point as a function of time t",
+        "year12Videos": [
+          "math-a12-i14"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c18"
+        ]
+      },
+      {
+        "id": "ci1be28612",
+        "text": "Solve problems by determining the velocity of a particle moving in a straight line, given its displacement from a point as a function of time",
+        "year12Videos": [
+          "math-a12-i14"
+        ],
+        "evidence": "route",
+        "year11Owner": [
+          "math-a11-c18"
+        ]
+      },
+      {
+        "id": "cib0d54c54",
+        "text": "Use index laws to simplify expressions and solve problems involving positive, negative, zero or fractional indices",
+        "year12Videos": [
+          "math-a12-t04",
+          "math-a12-f01 to f15"
+        ],
+        "evidence": "free-text entry knowledge (index laws), mapped here",
+        "year11Owner": [
+          "math-a11-w01"
+        ]
+      },
+      {
+        "id": "ci84d04f4e",
+        "text": "Solve equations involving trigonometric ratios of angles, specified in degrees or radians, on a restricted domain",
+        "year12Videos": [
+          "math-a12-t02",
+          "math-a12-t03"
+        ],
+        "evidence": "free-text entry knowledge (Year 11 trig equations), mapped here",
+        "year11Owner": [
+          "math-a11-t15"
+        ]
+      },
+      {
+        "id": "cia7e452b4",
+        "text": "Establish using graphing applications that replacing x by x - a in the equation of a graph corresponds to a horizontal translation of a graph by a, that replacing y by y - b corresponds to a vertical translation by b, and recognise that the sign of a and b determines the direction of the translation",
+        "year12Videos": [
+          "math-a12-t01"
+        ],
+        "evidence": "free-text entry knowledge (Year 11 transformations), mapped here",
+        "year11Owner": [
+          "math-a11-g01"
+        ]
+      },
+      {
+        "id": "cifbd84c1c",
+        "text": "Establish using graphing applications that replacing x by -x in the equation of a graph corresponds to the reflection of the graph in the y-axis, and that replacing y by -y corresponds to a reflection in the x-axis",
+        "year12Videos": [
+          "math-a12-t01"
+        ],
+        "evidence": "free-text, mapped here",
+        "year11Owner": [
+          "math-a11-g02"
+        ]
+      },
+      {
+        "id": "cide27d1f1",
+        "text": "Establish using graphing applications that replacing x by x/k in the equation of a graph corresponds to a horizontal dilation of a graph by a factor of k, that replacing y by y/l corresponds to a vertical dilation by a factor of l, and determine the effects on the graph when the magnitude of the dilation factor lies between 0 and 1",
+        "year12Videos": [
+          "math-a12-t01"
+        ],
+        "evidence": "free-text, mapped here",
+        "year11Owner": [
+          "math-a11-g03"
+        ]
+      },
+      {
+        "id": "ci063bd03f",
+        "text": "Recognise that the order in which individual transformations are applied to functions is important",
+        "year12Videos": [
+          "math-a12-t01"
+        ],
+        "evidence": "free-text, mapped here",
+        "year11Owner": [
+          "math-a11-g04"
+        ]
+      },
+      {
+        "id": "ci851335dd",
+        "text": "Define the probability of each outcome to be 1/(|S|) when all the outcomes are equally likely and the probability of the event A to be P(A) = (|A|)/(|S|)",
+        "year12Videos": [
+          "math-a12-s01 to s12"
+        ],
+        "evidence": "inferred: Year 12 random variables build on Year 11 probability",
+        "year11Owner": [
+          "math-a11-s04"
+        ]
+      },
+      {
+        "id": "cic2a3e877",
+        "text": "Define a random variable as a variable whose value is the outcome of a random experiment",
+        "year12Videos": [
+          "math-a12-s01"
+        ],
+        "evidence": "inferred",
+        "year11Owner": [
+          "math-a11-s09"
+        ]
+      },
+      {
+        "id": "ci21d3c041",
+        "text": "Compare discrete random variables with continuous random variables, describe their differences, and give practical examples of each",
+        "year12Videos": [
+          "math-a12-s01",
+          "math-a12-s04"
+        ],
+        "evidence": "inferred",
+        "year11Owner": [
+          "math-a11-s09"
+        ]
+      },
+      {
+        "id": "ci10643b1a",
+        "text": "Graph the frequency, relative frequency, and cumulative frequency histograms and polygons of datasets, using spreadsheets or graphing applications, and identify the mode and median from the graphs, and from tables",
+        "year12Videos": [
+          "math-a12-s01",
+          "math-a12-s06"
+        ],
+        "evidence": "inferred",
+        "year11Owner": [
+          "math-a11-s11"
+        ]
+      }
+    ]
+  },
+  "sourcePoints": [
+    {
+      "id": "cib0d54c54",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Use index laws to simplify expressions and solve problems involving positive, negative, zero or fractional indices"
+    },
+    {
+      "id": "ci3ccce138",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Expand, factorise and simplify algebraic expressions"
+    },
+    {
+      "id": "ci9c1a8604",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Simplify expressions involving algebraic fractions"
+    },
+    {
+      "id": "ci554a24b4",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Expand and simplify expressions involving surds"
+    },
+    {
+      "id": "ci1ca81758",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Identify a conjugate of √a ± √b, and rationalise the denominators of expressions of the form a/(√b ± √c) and (√a ± √d)/(√b ± √c), where a, b, c and d are positive rational numbers"
+    },
+    {
+      "id": "cia7d436df",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Solve quadratic equations ax^2 + bx + c = 0 by factorisation, completing the square and using the quadratic formula x = (-b ± √(b^2 - 4ac))/(2a) where a, b and c are real numbers and a ≠ 0"
+    },
+    {
+      "id": "ci887fe9c5",
+      "focusArea": "Working with functions",
+      "group": "Algebraic techniques",
+      "text": "Define the discriminant as Δ = b^2 - 4ac and use it to solve problems involving the number of real roots of a quadratic equation and determine the conditions for roots to be equal, distinct, real or rational"
+    },
+    {
+      "id": "ci32f9832a",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Describe a relation between two sets as an association between the elements of one set and the elements of the other set"
+    },
+    {
+      "id": "cic0b5416c",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Define a real function f of a real variable x as a relation where each element x of a given set is associated with exactly one element y of the second set"
+    },
+    {
+      "id": "ci9288f9fe",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Recognise that a relation is a rule which can be represented by an algebraic formula, a table of values, a set of ordered pairs (x, y) or a graph"
+    },
+    {
+      "id": "ci5022c700",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Use the notation f(x) to identify the unique value of y associated with x when working with functions, and refer to it as the value of f at x"
+    },
+    {
+      "id": "ci5a13079c",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Refer to x in a function y = f(x) as the independent variable of the function, and refer to y as the dependent variable"
+    },
+    {
+      "id": "cifb29dab7",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Substitute numeric and algebraic expressions into the formulas of functions"
+    },
+    {
+      "id": "ci9bf331ec",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Apply the vertical line test on the graph of a relation to determine whether it represents a function"
+    },
+    {
+      "id": "ci7b72a364",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Define the domain of a function f as the set of real numbers on which f is defined"
+    },
+    {
+      "id": "ci0d9e1578",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Define the range of a function f as the set of values of f(x) obtained as x varies over the domain of f"
+    },
+    {
+      "id": "ci9169adaa",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Refer to a value in the domain of a function at which the function is 0 as a zero of the function"
+    },
+    {
+      "id": "ci40fe4286",
+      "focusArea": "Working with functions",
+      "group": "Introduction to functions and relations",
+      "text": "Recognise that the x-intercepts of the graph of y = f(x) are its zeroes, the solutions of f(x) = 0, and that the y-intercept is f(0)"
+    },
+    {
+      "id": "ci7f902bc1",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Determine the equations of straight lines in gradient–intercept form y = mx + c with gradient m and y-intercept c"
+    },
+    {
+      "id": "ci2edbbb14",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Determine the equations of straight lines in general form ax + by + c = 0, where a, b and c are constants"
+    },
+    {
+      "id": "cibddcc59d",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Determine the equation of a straight line passing through a point (x_1, y_1) with gradient m using the point–gradient formula y - y_1 = m(x - x_1)"
+    },
+    {
+      "id": "ci3ed3083c",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Determine the equation of a straight line passing through two points (x_1, y_1) and (x_2, y_2) by calculating its gradient m using the formula m = (y_2 - y_1)/(x_2 - x_1)"
+    },
+    {
+      "id": "cicbb8a9c7",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Determine the x-intercept and y-intercept of a straight line given its equation"
+    },
+    {
+      "id": "ci13d47f71",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Choose and apply appropriate techniques to graph a straight line given its equation"
+    },
+    {
+      "id": "cif0d11ebe",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Find the equation of a line that is parallel or perpendicular to a given line"
+    },
+    {
+      "id": "ci6e28857f",
+      "focusArea": "Working with functions",
+      "group": "Linear functions",
+      "text": "Solve linear inequalities and graph the solution on a number line"
+    },
+    {
+      "id": "ci7b0b3647",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Identify the x-intercepts of a parabola whose quadratic function is expressed in factored form"
+    },
+    {
+      "id": "cicd85f895",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Use the discriminant to determine the number of x-intercepts on a parabola and justify its position in relation to the x-axis"
+    },
+    {
+      "id": "ci9c3bd164",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Show by completing the square on the general quadratic y = ax^2 + bx + c that the axis of symmetry is x = -b/(2a) where a, b and c are constants"
+    },
+    {
+      "id": "ci9f2c04cb",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Identify the axis of symmetry and vertex of a parabola by completing the square on its quadratic function"
+    },
+    {
+      "id": "cice1a96a6",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Choose and apply appropriate techniques to graph a parabola of the form y = ax^2 + bx + c by identifying its x-intercepts if they exist, its y-intercept, its axis of symmetry using x = -b/(2a) and its vertex"
+    },
+    {
+      "id": "cif56630dd",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Find the equation of a parabola given sufficient graphical features"
+    },
+    {
+      "id": "ci3086d97f",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Use the fact that two quadratic functions are equal for all values of x if and only if the corresponding coefficients are equal to solve related problems"
+    },
+    {
+      "id": "cie66d7ae0",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Recognise that solving f(x) = k for some constant k corresponds to finding the x-coordinate(s) of the intersection of the graphs y = f(x) and y = k"
+    },
+    {
+      "id": "ci6d7b74df",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Solve problems by finding the solution to simultaneous equations involving a linear and a quadratic function, or two quadratic functions, both algebraically and graphically"
+    },
+    {
+      "id": "cie9a8bd69",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Solve quadratic inequalities"
+    },
+    {
+      "id": "ci5c1f54ca",
+      "focusArea": "Working with functions",
+      "group": "Quadratic and cubic functions",
+      "text": "Recognise and graph cubic functions of the form f(x) = kx^3 and f(x) = k(x - a)(x - b)(x - c), where a, b, c and k are constants and k ≠ 0"
+    },
+    {
+      "id": "cie579a8c2",
+      "focusArea": "Working with functions",
+      "group": "Reciprocal functions",
+      "text": "Graph functions of the form f(x) = k/x, where k is a constant and k ≠ 0, and identify their hyperbolic shape and their asymptotes"
+    },
+    {
+      "id": "cibf45b7e8",
+      "focusArea": "Working with functions",
+      "group": "Reciprocal functions",
+      "text": "Describe the behaviour of f(x) = k/x as x → ∞ and x → -∞"
+    },
+    {
+      "id": "ci4cd0c8d9",
+      "focusArea": "Working with functions",
+      "group": "Constructing and using functions",
+      "text": "Construct and use linear functions to model and solve problems in real-world situations, identifying the independent and dependent variables and any restrictions on these variables, and justify conclusions in the context of the problem"
+    },
+    {
+      "id": "ci7fdca2b4",
+      "focusArea": "Working with functions",
+      "group": "Constructing and using functions",
+      "text": "Use linear inequalities to model and solve problems in real-world situations, and justify conclusions in the context of the problem"
+    },
+    {
+      "id": "ci83587815",
+      "focusArea": "Working with functions",
+      "group": "Constructing and using functions",
+      "text": "Solve practical problems involving a pair of simultaneous linear equations both algebraically and graphically, with and without graphing applications, and justify conclusions in the context of the problem"
+    },
+    {
+      "id": "cicb50e7a8",
+      "focusArea": "Working with functions",
+      "group": "Constructing and using functions",
+      "text": "Construct and use simultaneous equations to model and solve a problem where cost and revenue are represented by linear equations, identify and analyse the break-even point, and justify conclusions in the context of the problem"
+    },
+    {
+      "id": "ci6ee9e4ed",
+      "focusArea": "Working with functions",
+      "group": "Constructing and using functions",
+      "text": "Model and solve practical problems involving quadratic functions and justify conclusions in the context of the problem"
+    },
+    {
+      "id": "ci388144c4",
+      "focusArea": "Working with functions",
+      "group": "Direct and inverse variation",
+      "text": "Develop models of the form y = kx^n, where k is a non-zero constant, from descriptions of situations in which one quantity varies directly with another"
+    },
+    {
+      "id": "cie81af7cc",
+      "focusArea": "Working with functions",
+      "group": "Direct and inverse variation",
+      "text": "Develop the model y = k/(x^n), where k is a non-zero constant, from descriptions of situations in which one quantity varies inversely with another"
+    },
+    {
+      "id": "ci52779ff4",
+      "focusArea": "Working with functions",
+      "group": "Direct and inverse variation",
+      "text": "Evaluate k in the equations y = kx^n and y = k/(x^n), given one pair of values for the variables, and use the resulting formula to find other values of the variables"
+    },
+    {
+      "id": "ci70194fe3",
+      "focusArea": "Working with functions",
+      "group": "Direct and inverse variation",
+      "text": "Analyse and solve problems involving direct and inverse variation"
+    },
+    {
+      "id": "ci6022d0ef",
+      "focusArea": "Working with functions",
+      "group": "Circles and semicircles",
+      "text": "Derive the equation of a circle of radius r with centre at the origin by considering Pythagoras’ theorem"
+    },
+    {
+      "id": "cib62f4915",
+      "focusArea": "Working with functions",
+      "group": "Circles and semicircles",
+      "text": "Graph circles of the form x^2 + y^2 = r^2 from their equations"
+    },
+    {
+      "id": "ci7cdb9b15",
+      "focusArea": "Working with functions",
+      "group": "Circles and semicircles",
+      "text": "Determine the equation of a circle of the form x^2 + y^2 = r^2 given its graph"
+    },
+    {
+      "id": "ci86be862c",
+      "focusArea": "Working with functions",
+      "group": "Circles and semicircles",
+      "text": "Identify and graph the semicircles y = √(r^2 - x^2), y = -√(r^2 - x^2), x = √(r^2 - y^2) and x = -√(r^2 - y^2)"
+    },
+    {
+      "id": "ci4d0e93cc",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Extend the definitions of domain and range to relations"
+    },
+    {
+      "id": "ms_s6_y11_recognise_domains_and_ranges_of_function",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Recognise domains and ranges of functions and relations given in interval notation, as inequalities and as worded descriptions"
+    },
+    {
+      "id": "ci0c0bc407",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Determine and describe the domain and range of functions and relations, using interval notation, inequalities or worded descriptions"
+    },
+    {
+      "id": "cib9db148d",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Define a function to be even if its graph is unchanged under reflection in the y-axis, and odd if its graph is unchanged under rotation of 180° about the origin"
+    },
+    {
+      "id": "cif29d187f",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Develop and use the tests that a function f(x) is odd if f(-x) = -f(x) and a function f(x) is even if f(-x) = f(x)"
+    },
+    {
+      "id": "ci05dfc018",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Solve problems involving even and odd functions"
+    },
+    {
+      "id": "ci51d03f31",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Use the composite function f(g(x)), where the output of g(x) becomes the input of f(x)"
+    },
+    {
+      "id": "ci82a0c261",
+      "focusArea": "Working with functions",
+      "group": "Properties of functions, relations and graphs",
+      "text": "Determine the equations of composite functions"
+    },
+    {
+      "id": "ci5b30234d",
+      "focusArea": "Working with functions",
+      "group": "Piecewise-defined functions",
+      "text": "Interpret piecewise-defined functions, where the function is defined differently in different parts of the domain"
+    },
+    {
+      "id": "ci088a8d02",
+      "focusArea": "Working with functions",
+      "group": "Piecewise-defined functions",
+      "text": "Graph piecewise-defined functions involving functions covered in the scope of the Mathematics Advanced course, test if they are even or odd, and determine the domain and range"
+    },
+    {
+      "id": "ci903515d1",
+      "focusArea": "Working with functions",
+      "group": "Piecewise-defined functions",
+      "text": "Define informally that a function is continuous at a point if the curve can be drawn through the point without lifting the pen off the paper"
+    },
+    {
+      "id": "ci1486e4cc",
+      "focusArea": "Working with functions",
+      "group": "Piecewise-defined functions",
+      "text": "Identify points where piecewise-defined functions and other functions are not continuous"
+    },
+    {
+      "id": "ci91b5bbaa",
+      "focusArea": "Working with functions",
+      "group": "Piecewise-defined functions",
+      "text": "Define a discontinuity of a function informally as a point where the function is not continuous"
+    },
+    {
+      "id": "cib39edbb7",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Define the absolute value |x| of a number x, also known as the magnitude of x, to be the distance from the origin to x on the number line"
+    },
+    {
+      "id": "ci25113162",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Establish and use the piecewise definition |x| = {x, for x ≥ 0; -x, for x < 0"
+    },
+    {
+      "id": "cidb25f0cc",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Show using numerical substitutions that √(x^2) = |x| and use the result"
+    },
+    {
+      "id": "ci81e0ec50",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Graph the function y = |x|, describe its symmetry, and identify its domain and range"
+    },
+    {
+      "id": "ci0614b169",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Graph y = |ax + b| with and without graphing applications, and identify its symmetry, domain and range"
+    },
+    {
+      "id": "ci9fc969f0",
+      "focusArea": "Working with functions",
+      "group": "Absolute value functions",
+      "text": "Solve absolute value equations of the form |ax + b| = k algebraically and graphically"
+    },
+    {
+      "id": "ci83df430f",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with acute angles",
+      "text": "Use Pythagoras’ theorem to find the exact sine, cosine and tangent ratios for angles of 30°, 45° and 60°"
+    },
+    {
+      "id": "ci61c6fa90",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with acute angles",
+      "text": "Apply trigonometry to solve problems involving right-angled triangles in two dimensions, true and compass bearings, and angles of elevation and depression"
+    },
+    {
+      "id": "ci50c304a5",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Represent angles of any magnitude using rays from the origin in the Cartesian plane and describe how one ray represents infinitely many angles"
+    },
+    {
+      "id": "ci95d785c0",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Develop the definitions cos θ = x/r, sin θ = y/r and tan θ = y/x, where (x, y) is a point on the circle of radius r, centred at the origin, and θ is the angle between the positive x-axis and the radius drawn to this point"
+    },
+    {
+      "id": "cif067a2a2",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Use the definitions cos θ = x/r, sin θ = y/r and tan θ = y/x to evaluate sin θ, cos θ and tan θ where θ is a multiple of 90°, and identify the values of θ for which these ratios are undefined"
+    },
+    {
+      "id": "cieed954eb",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Extend and apply the definitions cos θ = x/r, sin θ = y/r and tan θ = y/x for angles of any magnitude"
+    },
+    {
+      "id": "ci535e2340",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Identify the related angle of an angle of any magnitude, excluding multiples of 90°, as the acute angle between the ray and the x-axis and obtain the values of the trigonometric functions of an angle of any magnitude from the trigonometric functions of the related angle"
+    },
+    {
+      "id": "cid118da07",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Develop and use the trigonometric ratios for angles that can be written in the form θ = 180° ± A, and θ = 360° - A, where 0° < A < 90°"
+    },
+    {
+      "id": "ci7bdc1767",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Establish and use the results cos (-θ) = cos θ, sin (-θ) = -sin θ and tan (-θ) = -tan θ"
+    },
+    {
+      "id": "ci96840b09",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Examine the proof of the sine rule a/(sin A) = b/(sin B) = c/(sin C), cosine rule c^2 = a^2 + b^2 - 2ab cos C and the area of a triangle formula A = 1/2 ab sin C for a given triangle ABC"
+    },
+    {
+      "id": "ci44ad375d",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Use graphing applications or geometric construction to examine the ambiguous case of the sine rule, in which there are two possible solutions for an angle, and the condition for it to arise"
+    },
+    {
+      "id": "ci5fb5a13c",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Trigonometry with angles of any magnitude",
+      "text": "Apply the sine rule, cosine rule and formula for the area of a triangle to solve problems where angles are measured in degrees, or degrees and minutes"
+    },
+    {
+      "id": "ci53fbdcff",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Recognise that both ratios (arc length)/(circumference) and (area of sector)/(area of circle) are equal to θ/(one revolution) where θ is the angle at the centre of a circle subtended by the arc"
+    },
+    {
+      "id": "ci6db63911",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Define the angle size of θ in radian measure as the ratio (arc length)/(radius of a circle)"
+    },
+    {
+      "id": "cied74df46",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Explain why 360° = 2π radians and 1 radian = 180/π degrees"
+    },
+    {
+      "id": "ciccaa78be",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Convert between degrees and radians and find the exact sine, cosine and tangent ratios for integer multiples of π/6 and π/4"
+    },
+    {
+      "id": "cid79268a8",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Graph y = sin x, y = cos x and y = tan x over domains given in degrees or radians, showing intercepts with the x-axis and y-axis and any asymptotes, determine their domains and ranges, and period and amplitude where appropriate, and whether each is even or odd or neither"
+    },
+    {
+      "id": "cib55a24b7",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Establish and use the formula l = rθ for the length l of arc subtending an angle θ in radians at the centre of a circle of radius r"
+    },
+    {
+      "id": "ci56cda609",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Prove and use the formula A = 1/2 r^2θ for the area of a sector with angle θ in radians at the centre of a circle of radius r"
+    },
+    {
+      "id": "cibf527c60",
+      "focusArea": "Trigonometry and measure of angles",
+      "group": "Radians",
+      "text": "Solve problems involving arc lengths and areas of major and minor sectors and segments"
+    },
+    {
+      "id": "ci47b993f2",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Define the trigonometric functions sec θ, cosec θ and cot θ for acute angles θ using ratios of sides in a right-angled triangle"
+    },
+    {
+      "id": "ci0e59b7f1",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Find the exact secant, cosecant and cotangent ratios for angles of 30°, 45° and 60°"
+    },
+    {
+      "id": "cid1300c17",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Justify the values of sec θ, cosec θ and cot θ at 0° and 90° by examining the ratios of sides in a right-angled triangle as θ tends to 0° and 90°"
+    },
+    {
+      "id": "ci15aca25e",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Develop the definitions sec θ = r/x, cosec θ = r/y and cot θ = x/y using a circle of radius r centred at the origin"
+    },
+    {
+      "id": "cicf5015c7",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Establish the reciprocal ratios sec A = 1/(cos A), cosec A = 1/(sin A), and cot A = 1/(tan A), identifying the angles to be excluded in each identity"
+    },
+    {
+      "id": "ci6990d1da",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Determine the exact value of the secant, cosecant and cotangent ratios for angles that are integer multiples of π/6 and π/4, if they exist"
+    },
+    {
+      "id": "ci3c95dfdc",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Establish the identities tan θ = (sin θ)/(cos θ) and cot θ = (cos θ)/(sin θ), identifying the angles to be excluded in each identity"
+    },
+    {
+      "id": "cic43f35f1",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Prove the complementary angle identities sin (90° - θ) = cos θ, cos (90° - θ) = sin θ, tan (90° - θ) = cot θ, cot (90° - θ) = tan θ, sec (90° - θ) = cosec θ and cosec (90° - θ) = sec θ identifying the angles to be excluded in each identity"
+    },
+    {
+      "id": "ci3f6f944a",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Evaluate trigonometric expressions using angles of any magnitude and complementary angle identities"
+    },
+    {
+      "id": "ci84d04f4e",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Solve equations involving trigonometric ratios of angles, specified in degrees or radians, on a restricted domain"
+    },
+    {
+      "id": "cif79ffa41",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Prove the Pythagorean identity cos^2 x + sin^2 x = 1, and the identities 1 + tan^2 x = sec^2 x and 1 + cot^2 x = cosec^2 x"
+    },
+    {
+      "id": "ci1ff2042e",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Apply trigonometric identities to solve problems, simplify expressions and prove further trigonometric identities using substitution and/or reduction to sin x and cos x"
+    },
+    {
+      "id": "ci24474f01",
+      "focusArea": "Trigonometric identities and equations",
+      "group": null,
+      "text": "Solve problems involving trigonometric equations, including those that reduce to quadratic equations, on a restricted domain"
+    },
+    {
+      "id": "ci8019730a",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Define the average rate of change of y with respect to x for a function y = f(x) over the domain [a, b] as Δy/Δx = (change in y)/(change in x), that is Δy/Δx = (f(b) - f(a))/(b - a), and recognise (f(b) - f(a))/(b - a) as the gradient of the secant through (a, f(a)) and (b, f(b)) on the graph of y = f(x)"
+    },
+    {
+      "id": "ci7d6c383e",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Recognise speed as a rate of change of distance with respect to time"
+    },
+    {
+      "id": "ci34973239",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Use the definition for average rate of change to determine the average speed of an object from a given distance–time graph"
+    },
+    {
+      "id": "ci6a71a44d",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Describe the difference between the average speed of an object and its instantaneous speed"
+    },
+    {
+      "id": "ci9f5aa4ac",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Determine that the instantaneous speed of an object at time t can be approximated by the average speed between its position at time t and its position some time later, and explain how this approximation can be improved"
+    },
+    {
+      "id": "ci8c73fdcb",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Relate the instantaneous speed of an object to the gradient of the tangent at that point on its distance–time graph"
+    },
+    {
+      "id": "ci0b795741",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Estimate the instantaneous speed of an object from its distance–time graph"
+    },
+    {
+      "id": "ci41d3073a",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Recognise when modelling with a linear function that its gradient is the rate of change and determine the rate of change for linear functions in practical situations"
+    },
+    {
+      "id": "ci7e80ed31",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Recognise when modelling with a non-linear function that the rate of change is not constant and is represented by the gradient of the tangent to the curve at each point on the curve"
+    },
+    {
+      "id": "ci1a06a2ed",
+      "focusArea": "Introduction to differentiation",
+      "group": "Estimating change",
+      "text": "Estimate the instantaneous rate of change of a non-linear function at a given point from a given graph of a practical situation"
+    },
+    {
+      "id": "ci447b12b9",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Examine the gradient of a curve at a point on the curve using graphing applications"
+    },
+    {
+      "id": "cif58445af",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Approximate the gradient of a curve f(x) = x^n at a point P(c, f(c)) by considering the gradient of the secant through P and Q(c + h, f(c + h)) as the magnitude of h approaches zero, using graphing applications or a spreadsheet"
+    },
+    {
+      "id": "cicccefba1",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Infer that nx^(n - 1) is the gradient of f(x) = x^n and verify the result using graphing applications"
+    },
+    {
+      "id": "cie4815a8e",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Define f'(x), for any function f(x) and any value x, to be the gradient of the tangent to the curve y = f(x) at the point P(x, f(x)) if the tangent exists and is not vertical"
+    },
+    {
+      "id": "cicb34a73b",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Refer to f'(x) as the derivative of f(x) or the gradient, or derived, function of f(x)"
+    },
+    {
+      "id": "ci68ad7095",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Define differentiation as the process of finding the derivative of a function"
+    },
+    {
+      "id": "cie02570a8",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Find derivatives of constant and linear functions"
+    },
+    {
+      "id": "ci528c1909",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Define the derivative of the function f(x) from first principles, as the limiting value of the gradient of the secant (f(x + h) - f(x))/h as h approaches zero, when this limiting value exists, and use the notation f'(x) = lim_(h → 0) (f(x + h) - f(x))/h"
+    },
+    {
+      "id": "ci608a8811",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative",
+      "text": "Use first principles to find the derivative of quadratic functions"
+    },
+    {
+      "id": "ci0ea72300",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Use the notation dy/dx and y' for the derivative of y when y is a function of x"
+    },
+    {
+      "id": "ci2f16a100",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Use the notation d/dx (f(x)) and f'(x) for the derivative of a function f(x)"
+    },
+    {
+      "id": "ci1d192d62",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Use the formula d/dx (x^n) = nx^(n - 1) for all real values of n"
+    },
+    {
+      "id": "cif6a6cb7d",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Apply the fact that the derivative of a sum is the sum of the derivatives: d/dx (f(x) + g(x)) = f'(x) + g'(x), and the derivative of a multiple of a function is the multiple of its derivative: d/dx (k ⋅ f(x)) = k ⋅ f'(x)"
+    },
+    {
+      "id": "ci3d1a69e4",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Use the rules for differentiation to find equations of tangents and normals to a curve at points on the curve"
+    },
+    {
+      "id": "ci35f0bdbe",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Find points on a curve where the tangent or normal has a given gradient"
+    },
+    {
+      "id": "ci70bdc1be",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Examine and use the relationship between the angle of inclination of a line or tangent to a curve, θ, with the positive x-axis, and the gradient, m, of that line or tangent, and establish that tan θ = m"
+    },
+    {
+      "id": "ci72e90f3a",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Apply the product rule: if y = uv, where u and v are both differentiable functions of x, then dy/dx = u dv/dx + v du/dx or if h(x) = f(x)g(x) for differentiable functions f(x) and g(x) then h'(x) = f(x)g'(x) + f'(x)g(x)"
+    },
+    {
+      "id": "cifb023b4e",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Apply the quotient rule: if y = u/v, where u and v are both differentiable functions of x, then dy/dx = (v du/dx - u dv/dx)/(v^2) or if h(x) = (f(x))/(g(x)) then h'(x) = (g(x)f'(x) - f(x)g'(x))/([g(x)]^2)"
+    },
+    {
+      "id": "ci00fa8fac",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Apply the chain rule: if y is a differentiable function of u, and u is a differentiable function of x, then dy/dx = dy/du × du/dx or if h(x) = f(g(x)) for differentiable functions f(x) and g(x) then h'(x) = f'(g(x))g'(x)"
+    },
+    {
+      "id": "cie3d91a6e",
+      "focusArea": "Introduction to differentiation",
+      "group": "Calculations with the derivative",
+      "text": "Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function"
+    },
+    {
+      "id": "cie435d18f",
+      "focusArea": "Introduction to differentiation",
+      "group": "Graphical applications of the derivative",
+      "text": "Interpret f(x) as increasing at x = c when f'(c) > 0 and decreasing at x = c when f'(c) < 0"
+    },
+    {
+      "id": "cief55e727",
+      "focusArea": "Introduction to differentiation",
+      "group": "Graphical applications of the derivative",
+      "text": "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x-axis, and recognise that f(x) is stationary at x = c when f'(c) = 0"
+    },
+    {
+      "id": "ci63650902",
+      "focusArea": "Introduction to differentiation",
+      "group": "Graphical applications of the derivative",
+      "text": "Graph y = f'(x) for a given graph of a function y = f(x)"
+    },
+    {
+      "id": "ci8fd626a1",
+      "focusArea": "Introduction to differentiation",
+      "group": "Graphical applications of the derivative",
+      "text": "Numerically estimate the value of the derivative at a point on the graph of a power of x, with and without the use of digital tools"
+    },
+    {
+      "id": "ci6341be75",
+      "focusArea": "Introduction to differentiation",
+      "group": "Graphical applications of the derivative",
+      "text": "Identify stationary points on the graph of a cubic function, and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions"
+    },
+    {
+      "id": "ci9d118719",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative as a rate of change",
+      "text": "Interpret f'(c) as the instantaneous rate of change of the function f(x) at x = c"
+    },
+    {
+      "id": "ci05229304",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative as a rate of change",
+      "text": "Define and distinguish between displacement and distance and between velocity and speed"
+    },
+    {
+      "id": "ci8a2722e2",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative as a rate of change",
+      "text": "Use graphs of functions and their derivatives, without the use of algebraic techniques, to describe and interpret physical phenomena"
+    },
+    {
+      "id": "ci8a1ba332",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative as a rate of change",
+      "text": "Use the notation dx/dt or ẋ to represent the velocity of a particle with displacement x from a point as a function of time t"
+    },
+    {
+      "id": "ci1be28612",
+      "focusArea": "Introduction to differentiation",
+      "group": "The derivative as a rate of change",
+      "text": "Solve problems by determining the velocity of a particle moving in a straight line, given its displacement from a point as a function of time"
+    },
+    {
+      "id": "ci98f43d14",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Exponential functions",
+      "text": "Graph the exponential functions y = k(a^x) and y = k(a^(-x)) for constants a and k where a > 0, a ≠ 1 and k ≠ 0, and identify its asymptote, y-intercept, domain and range"
+    },
+    {
+      "id": "ci69738291",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Exponential functions",
+      "text": "Describe the behaviour of y = k(a^x) and y = k(a^(-x)) as x → ∞ and x → -∞"
+    },
+    {
+      "id": "ci93d02049",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Exponential functions",
+      "text": "Examine the gradient of the tangent to the curve y = a^x at its y-intercept for varying values of a, and verify using graphing applications that there is a unique number e ≈ 2.71828182845..., such that the gradient of the tangent to y = e^x at x = 0 is 1, and call this number e Euler’s number"
+    },
+    {
+      "id": "ci7e417be9",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Exponential functions",
+      "text": "Examine the gradient function of y = a^x with graphing applications and identify that the gradient function is d/dx (a^x) = ka^x, for some constant k depending only on a"
+    },
+    {
+      "id": "ciac4383bd",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Exponential functions",
+      "text": "Conclude that Euler’s number, e, is a unique number such that d/dx (e^x) = e^x, that is, e^x is its own derivative"
+    },
+    {
+      "id": "ci604946ac",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Define the logarithm of a number y, where y > 0, to any positive base a as the index to which a is raised to give y"
+    },
+    {
+      "id": "ci5994ec54",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Use the notation log_a y for the logarithm of y to the base a"
+    },
+    {
+      "id": "ci7cd97f8c",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Define the natural logarithm ln a = log_e a"
+    },
+    {
+      "id": "ci03c5d345",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Use digital tools to determine rational and irrational values of exponential and logarithmic expressions"
+    },
+    {
+      "id": "ci740d04cc",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Explain that y = a^x is equivalent to x = log_a y for a > 0 and a ≠ 1, and use the equivalence to solve equations of the form a^x = b, for a > 0"
+    },
+    {
+      "id": "cic84a1659",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Recognise and use the logarithmic properties: log_a a^x = x for all real x, a^(log_a x) = x where x > 0"
+    },
+    {
+      "id": "ci348896a1",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Derive the laws of logarithms from the laws of indices log_a m + log_a n = log_a (mn), log_a m - log_a n = log_a (m/n) and log_a (m^n) = nlog_a m"
+    },
+    {
+      "id": "ci55afa938",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Justify the logarithmic results log_a a = 1, log_a 1 = 0 and log_a (1/x) = -log_a x"
+    },
+    {
+      "id": "cia453eab7",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Apply the logarithmic laws and results to simplify expressions, solve equations and prove results, using digital tools where necessary"
+    },
+    {
+      "id": "ciae7673fb",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Prove the change of base rule log_a x = (log_b x)/(log_b a) and use it to solve problems"
+    },
+    {
+      "id": "ci5d370004",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Graph the logarithmic function y = log_a x for a > 0 and a ≠ 1"
+    },
+    {
+      "id": "ci9eb0125c",
+      "focusArea": "Exponential and logarithmic functions",
+      "group": "Logarithmic functions",
+      "text": "Use graphing applications to identify the graphs of y = a^x and y = log_a x as reflections of each other in the line y = x, in cases where a > 1 and 0 < a < 1"
+    },
+    {
+      "id": "cifbd84c1c",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Establish using graphing applications that replacing x by -x in the equation of a graph corresponds to the reflection of the graph in the y-axis, and that replacing y by -y corresponds to a reflection in the x-axis"
+    },
+    {
+      "id": "cia7e452b4",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Establish using graphing applications that replacing x by x - a in the equation of a graph corresponds to a horizontal translation of a graph by a, that replacing y by y - b corresponds to a vertical translation by b, and recognise that the sign of a and b determines the direction of the translation"
+    },
+    {
+      "id": "cic990ec79",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Describe a horizontal dilation as a stretch from the y-axis and a vertical dilation as a stretch from the x-axis"
+    },
+    {
+      "id": "cide27d1f1",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Establish using graphing applications that replacing x by x/k in the equation of a graph corresponds to a horizontal dilation of a graph by a factor of k, that replacing y by y/l corresponds to a vertical dilation by a factor of l, and determine the effects on the graph when the magnitude of the dilation factor lies between 0 and 1"
+    },
+    {
+      "id": "ci950cc744",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Establish, using graphing applications, replacing x by x/k and replacing y by y/k in the equation of a graph corresponds to a dilation by a factor of k, that is, an enlargement of the graph when k > 1 and a reduction of the graph when 0 < k < 1"
+    },
+    {
+      "id": "cid4fd3807",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Apply reflections, translations and dilations to functions within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the domain and range of the transformed graph, any intercepts, asymptotes and discontinuities where appropriate, and describe which transformations have been applied"
+    },
+    {
+      "id": "ci84f96bc4",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Use the principles of translations to identify the centre, radius, domain and range of graphs of circles in the form (x - a)^2 + (y - b)^2 = r^2, where a, b and r are constants"
+    },
+    {
+      "id": "cid118e6e7",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Find the centre and radius of circles of the form x^2 + y^2 + ax + by + c = 0, where a, b and c are constants, by completing the squares"
+    },
+    {
+      "id": "ci95f9075b",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Graph circles given their equations and find the equation of a circle from its graph"
+    },
+    {
+      "id": "ci063bd03f",
+      "focusArea": "Graph transformations",
+      "group": null,
+      "text": "Recognise that the order in which individual transformations are applied to functions is important"
+    },
+    {
+      "id": "ci04bd3585",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define a set as a collection of objects, called the elements of the set, and represent a set using notation such as {2,3,5,7} and {0,2,4,6, …}"
+    },
+    {
+      "id": "ciea6f77dc",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Use the notation n(A) or |A| to represent the number of elements in a finite set A"
+    },
+    {
+      "id": "ci2b2bf2be",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define the empty set as the set with no elements, denoted in set notation as ∅"
+    },
+    {
+      "id": "ci2a98c57c",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Use the notation A̅, A' or A^c to represent the complement of a set A with respect to some universal set U"
+    },
+    {
+      "id": "ci8e00ae50",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define A to be a subset of B if all the elements of A are elements of B"
+    },
+    {
+      "id": "cifa472d11",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define the intersection A ∩ B of sets A and B to be the set of elements that are in A and in B"
+    },
+    {
+      "id": "ci4459a28c",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define the union A ∪ B of sets A and B to be the set of elements that are in A or in B"
+    },
+    {
+      "id": "cie7ef57c5",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Define sets A and B to be disjoint if A ∩ B = ∅, that is, they have no elements in common"
+    },
+    {
+      "id": "ci7c446d9f",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Use Venn diagrams in practical situations to represent and interpret sets that may intersect in various ways within a universal set"
+    },
+    {
+      "id": "ci5cd67d77",
+      "focusArea": "Probability and data",
+      "group": "Sets and set notation",
+      "text": "Establish and use the rule |A ∪ B| = |A| + |B| - |A ∩ B|"
+    },
+    {
+      "id": "cib914fe5d",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Define an experiment or a trial to be any procedure that can be infinitely repeated and has a well-defined set of possible outcomes known as the sample space, denoted S"
+    },
+    {
+      "id": "ci6948e56d",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Identify an event A as a subset A of the sample space S"
+    },
+    {
+      "id": "ci851335dd",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Define the probability of each outcome to be 1/(|S|) when all the outcomes are equally likely and the probability of the event A to be P(A) = (|A|)/(|S|)"
+    },
+    {
+      "id": "cid1a19692",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Interpret the notation A̅ to be the event ‘ A does not occur’, interpret A ∩ B to be the event ‘ A and B both occur’, and interpret A ∪ B to be the event ‘ A or B occurs’"
+    },
+    {
+      "id": "ci4917e349",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Use Venn diagrams to represent the relationship between events within the same sample space, including mutually exclusive events, that is, events that as subsets of the sample space are disjoint"
+    },
+    {
+      "id": "ci8c8dbc06",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Establish and use the rules P(A̅) = 1 - P(A) and P(A ∪ B) = P(A) + P(B) - P(A ∩ B)"
+    },
+    {
+      "id": "ci1f69f91f",
+      "focusArea": "Probability and data",
+      "group": "Probability",
+      "text": "Use arrays and tree diagrams to determine the outcomes and probabilities for multistage events"
+    },
+    {
+      "id": "ci6b22bb73",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Define conditional probability as the probability that an event A occurs given that another event B has already occurred, and use the notation P(A|B)"
+    },
+    {
+      "id": "ci720126e5",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Examine conditional probability by restricting the sample space and event spaces in a Venn diagram, using a two-way table, a tree diagram and other arrays"
+    },
+    {
+      "id": "cidbe2315d",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Establish that P(A|B) = (|A ∩ B|)/(|B|) when all outcomes are equally likely by restricting the sample space and event space, and hence P(A|B) = (P(A ∩ B))/(P(B)), provided |B| ≠ 0"
+    },
+    {
+      "id": "cif285e1d9",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Use the formulas for P(A|B) to solve practical problems involving conditional probability"
+    },
+    {
+      "id": "ci3b004211",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Define two events to be independent if the occurrence of one event does not affect the probability that the other event occurs"
+    },
+    {
+      "id": "cifa01f762",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Explain that two events A and B are independent means P(A|B) = P(A) and P(B|A) = P(B), and show algebraically that if one of these formulas is true, then the other is also true"
+    },
+    {
+      "id": "ci3243e129",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Use the formula P(A|B) = (P(A ∩ B))/(P(B)), and the test P(A|B) = P(A) for independence to prove that if two events are independent, then P(A ∩ B) = P(A) × P(B), and to prove conversely that if P(A ∩ B) = P(A) × P(B), then A and B are independent"
+    },
+    {
+      "id": "ci4e7d5072",
+      "focusArea": "Probability and data",
+      "group": "Conditional probability",
+      "text": "Solve practical problems involving independent events"
+    },
+    {
+      "id": "cic2a3e877",
+      "focusArea": "Probability and data",
+      "group": "Data",
+      "text": "Define a random variable as a variable whose value is the outcome of a random experiment"
+    },
+    {
+      "id": "ci21d3c041",
+      "focusArea": "Probability and data",
+      "group": "Data",
+      "text": "Compare discrete random variables with continuous random variables, describe their differences, and give practical examples of each"
+    },
+    {
+      "id": "ci1c297b6d",
+      "focusArea": "Probability and data",
+      "group": "Data",
+      "text": "Organise finite datasets using a table or a spreadsheet, listing the values, frequency, relative frequency, cumulative frequency, and cumulative relative frequency"
+    },
+    {
+      "id": "ci10643b1a",
+      "focusArea": "Probability and data",
+      "group": "Data",
+      "text": "Graph the frequency, relative frequency, and cumulative frequency histograms and polygons of datasets, using spreadsheets or graphing applications, and identify the mode and median from the graphs, and from tables"
+    },
+    {
+      "id": "cifa805794",
+      "focusArea": "Probability and data",
+      "group": "Data",
+      "text": "Use the relative frequency to estimate the probability of results in experiments"
+    }
+  ],
+  "siteMissingOrPartial": [
+    {
+      "id": "ci32f9832a",
+      "status": "partial",
+      "gap": "A relation is defined as a set of ordered pairs and an input-output mapping. The idea of an association between the elements of two sets is not shown explicitly (no two-set arrow picture)."
+    },
+    {
+      "id": "ci40fe4286",
+      "status": "partial",
+      "gap": "x-intercepts as zeros are taught for parabolas. The general statement that the y-intercept is f(0) appears only as a fixed-fee remark in WF02."
+    },
+    {
+      "id": "ci83587815",
+      "status": "partial",
+      "gap": "Simultaneous linear equations appear inside break-even and intersection work. A general practical pair-of-lines problem solved both algebraically and graphically, with and without a graphing application, is not worked as its own task."
+    },
+    {
+      "id": "ci388144c4",
+      "status": "partial",
+      "gap": "Only y = kx (n = 1) is taught. The syllabus model is y = kx^n."
+    },
+    {
+      "id": "cie81af7cc",
+      "status": "partial",
+      "gap": "Only y = k/x (n = 1) is taught. The syllabus model is y = k/x^n."
+    },
+    {
+      "id": "ci52779ff4",
+      "status": "partial",
+      "gap": "Finding k from one pair is taught for n = 1 only."
+    },
+    {
+      "id": "ci088a8d02",
+      "status": "partial",
+      "gap": "Graphing and domain/range of piecewise functions are taught. Testing a piecewise function for even or odd symmetry is not."
+    },
+    {
+      "id": "cidb25f0cc",
+      "status": "missing",
+      "gap": "No lesson shows by numerical substitution that the square root of x squared equals |x|."
+    },
+    {
+      "id": "ci0614b169",
+      "status": "partial",
+      "gap": "Graphs of y = |ax + b| with symmetry, domain and range are not developed as a set task; GT06, which graphs absolute value transformations, is retired as Extension 1 content."
+    },
+    {
+      "id": "ci9fc969f0",
+      "status": "partial",
+      "gap": "Solved algebraically (ax + b = c or ax + b = -c). The graphical solution (intersection with y = k) is not taught."
+    },
+    {
+      "id": "ci50c304a5",
+      "status": "partial",
+      "gap": "Coterminal angles and the terminal side are named, but the idea that one ray represents infinitely many angles is not developed in degrees on the Cartesian plane."
+    },
+    {
+      "id": "ci95d785c0",
+      "status": "partial",
+      "gap": "Only the unit circle (r = 1) is used. The definitions cos = x/r, sin = y/r, tan = y/x on a circle of radius r are not developed."
+    },
+    {
+      "id": "cif067a2a2",
+      "status": "partial",
+      "gap": "Values at multiples of 90 degrees and undefined tan are given in the domain-and-range lesson, not evaluated from the x/r, y/r, y/x definitions."
+    },
+    {
+      "id": "ci7bdc1767",
+      "status": "partial",
+      "gap": "cos(-x) = cos x and tan(-x) = -tan x appear as even/odd graph facts. The three results are not established together from the circle definitions."
+    },
+    {
+      "id": "ci47b993f2",
+      "status": "partial",
+      "gap": "Reciprocal functions are defined as 1/sin, 1/cos, 1/tan. They are not defined first as side ratios (hypotenuse/adjacent and so on) for acute angles."
+    },
+    {
+      "id": "cid1300c17",
+      "status": "missing",
+      "gap": "No lesson justifies sec, cosec and cot at 0 and 90 degrees by letting a right-angled triangle tend to those angles."
+    },
+    {
+      "id": "ci15aca25e",
+      "status": "missing",
+      "gap": "The definitions sec = r/x, cosec = r/y, cot = x/y on a circle of radius r are not developed."
+    },
+    {
+      "id": "ci41d3073a",
+      "status": "partial",
+      "gap": "The gradient of a linear model as its rate is taught in WF18. The differentiation lessons do not connect a constant rate to the linear case."
+    },
+    {
+      "id": "cicccefba1",
+      "status": "partial",
+      "gap": "ID13 builds the secant table for x squared only. The pattern nx^(n-1) is stated as a rule in ID04 rather than inferred from several powers and verified with a graphing application."
+    },
+    {
+      "id": "cie4815a8e",
+      "status": "partial",
+      "gap": "The tangent-gradient definition is given, but the condition that the tangent must exist and not be vertical is not stated."
+    },
+    {
+      "id": "ci8a2722e2",
+      "status": "partial",
+      "gap": "One practical graph (a draining tank) is interpreted. Describing physical phenomena from graphs of a function and its derivative together, without algebra, is not developed."
+    },
+    {
+      "id": "ci7e417be9",
+      "status": "missing",
+      "gap": "No lesson shows that the gradient function of a^x is a constant multiple k a^x."
+    },
+    {
+      "id": "ci03c5d345",
+      "status": "partial",
+      "gap": "Calculator use appears (e^x key, ln and log keys). Using digital tools to tell rational from irrational values is not addressed."
+    },
+    {
+      "id": "ci55afa938",
+      "status": "partial",
+      "gap": "log_a a = 1 and log_a 1 = 0 are used. log_a(1/x) = -log_a x is not justified."
+    },
+    {
+      "id": "ci9eb0125c",
+      "status": "partial",
+      "gap": "The reflection in y = x is shown for a > 1. The case 0 < a < 1 is not shown."
+    },
+    {
+      "id": "cide27d1f1",
+      "status": "partial",
+      "gap": "Dilations are taught as y = af(x) and y = f(bx). The syllabus framing (replace x by x/k, y by y/l, factor k or l) is not used, so the factor-versus-coefficient link needs teaching."
+    },
+    {
+      "id": "ci950cc744",
+      "status": "missing",
+      "gap": "No lesson treats replacing both x by x/k and y by y/k as an enlargement or reduction by factor k."
+    },
+    {
+      "id": "ci1f69f91f",
+      "status": "partial",
+      "gap": "Tree diagrams appear as a multiplication-rule note and in practice questions. Arrays (two-dice grids) and tree diagrams for multistage events are not taught as their own method."
+    },
+    {
+      "id": "cifa01f762",
+      "status": "missing",
+      "gap": "No lesson shows algebraically that P(A|B) = P(A) implies P(B|A) = P(B)."
+    },
+    {
+      "id": "ci3243e129",
+      "status": "partial",
+      "gap": "The product rule for independent events is stated and used. The proof in both directions from the conditional formula is not worked."
+    },
+    {
+      "id": "ci10643b1a",
+      "status": "partial",
+      "gap": "PD07 teaches histograms with frequency density plus box plots and stem-and-leaf plots (not 2024 Year 11). Relative and cumulative frequency histograms and polygons, and reading the mode and median from them, are not taught together."
+    }
+  ],
+  "packSelection": [
+    "math-a11-w01",
+    "math-a11-w02",
+    "math-a11-w03",
+    "math-a11-w04",
+    "math-a11-w05",
+    "math-a11-w06",
+    "math-a11-w07",
+    "math-a11-w08",
+    "math-a11-w09",
+    "math-a11-w10",
+    "math-a11-w11",
+    "math-a11-w12",
+    "math-a11-w13",
+    "math-a11-w14"
+  ],
+  "totals": {
+    "contentVideos": 90,
+    "optionalPractice": 3,
+    "byStrand": {
+      "Working with functions": 31,
+      "Trigonometry": 16,
+      "Introduction to differentiation": 18,
+      "Exponential and logarithmic functions": 8,
+      "Graph transformations": 6,
+      "Probability and data": 11
+    }
+  }
+}
