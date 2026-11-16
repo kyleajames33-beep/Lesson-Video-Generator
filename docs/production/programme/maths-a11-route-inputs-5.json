@@ -1,0 +1,1821 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-17",
+  "brief": 243,
+  "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+  "syllabus": "Mathematics Advanced 11-12 (2024), Year 11",
+  "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout",
+  "officialEvidence": {
+    "source": "Crosswalk of the seven NSW Curriculum Year 11 focus-area pages, read 16 November 2026",
+    "year11Points": 201,
+    "crosswalk": "docs/production/programme/syllabus/maths-advanced-2024-y11-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+    "commitDate": "2026-11-16 11:01:17 +1100",
+    "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone and match the crosswalk inventory."
+  },
+  "recommendations": [
+    "Run g01 to g06 in outline order after the trigonometry strand, then s01 to s11. Probability needs nothing from the other strands except fractions and listing, so s01 to s11 can be designed in parallel with any strand.",
+    "Joins: g01 opens on a parent graph from w15 (its join from t16 is fixed when t16 is designed); g02 to g06 each open on the previous final frame; s01 follows g06 in the playlist but starts a new topic, so its opening does not depend on g06.",
+    "Shared point cid4fd3807: g04 owns the function rule after a described sequence and describing the transformations; g05 owns domain, range, intercepts, asymptotes and discontinuities of the result.",
+    "Year 12 entry knowledge delivered here: g01 to g04 (translations, reflections, dilations and their order, read as y = k f(a(x + b)) + c with the inside factored first; Year 12 t01, d02, d13); s04 (sample spaces, P(A) = |A|/|S|), s05 (complement rule, Year 12 s04), s06 (the two-dice array, Year 12 s02), s09 (random variables, Year 12 s01), s10 (relative frequency, Year 12 s01) and s11 (histograms, Year 12 s01 and s04).",
+    "Possible splits if drafts run long: g05 (polynomials and |x| apart from hyperbolas, exponentials and logs), s07 (counting form and Venn restriction apart from two-way tables and trees), s08 (the two proofs apart from practical problems). Possible merge: s02 with s03.",
+    "Thirteen site findings are logged as S11-G01 to S11-G06 and S11-P01 to S11-P07 in section 8 of site-corrections-maths-a11.md (three of them minor); notation differences and content gaps are listed there too."
+  ],
+  "part": 5,
+  "covers": "math-a11-g01 to math-a11-g06 (Graph transformations) and math-a11-s01 to math-a11-s11 (Probability and data)",
+  "subjects": {
+    "Mathematics Advanced": {
+      "year": 11,
+      "entries": [
+        {
+          "id": "math-a11-g01",
+          "playlistOrder": 74,
+          "mainLearnerQuestion": "Which way does replacing x by x - a move a graph?",
+          "syllabusActionIds": [
+            "cia7e452b4"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cia7e452b4",
+              "text": "Establish using graphing applications that replacing x by x - a in the equation of a graph corresponds to a horizontal translation of a graph by a, that replacing y by y - b corresponds to a vertical translation by b, and recognise that the sign of a and b determines the direction of the translation",
+              "sourceHtml": "<div><span>Establish using graphing applications that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi><mo>-</mo><mi>a</mi></math></span><span> in the equation of a graph corresponds to a horizontal translation of a graph by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>-</mo><mi>b</mi></math></span><span> corresponds to a vertical <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/600465d8-63fb-4cc0-aae2-ecb47e8f335e\" data-item-codename=\"glo_link__shared__translation_600465d\" data-item-id=\"600465d8-63fb-4cc0-aae2-ecb47e8f335e\" data-item-systemname=\"GLO Link: SHARED: translation (Math)\" data-item-type=\"link_glossary\">translation</a> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span>, and recognise that the sign of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span> determines the direction of the translation</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson01.sa.html",
+            "sectionIds": [
+              "orient",
+              "establish-it-yourself-with-a",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-trans-1",
+              "we-trans-2",
+              "we-trans-3"
+            ],
+            "sha256": "19d287adf661187aa6e6afae044cceba27b10c23707586ae9d626c0ab3f0f32b"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "establish-it-yourself-with-a",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-trans-1",
+                "we-trans-2",
+                "we-trans-3"
+              ],
+              "sha256": "19d287adf661187aa6e6afae044cceba27b10c23707586ae9d626c0ab3f0f32b"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w15",
+              "text": "Vertex form y = a(x - h)^2 + k with vertex (h, k)."
+            },
+            {
+              "source": "math-a11-w21",
+              "text": "y = k/x with asymptotes x = 0 and y = 0."
+            },
+            {
+              "source": "math-a11-w31",
+              "text": "Graphs of y = |x| and y = |ax + b| and their vertex."
+            },
+            {
+              "source": "math-a11-e01",
+              "text": "Graphs of y = a^x with asymptote y = 0."
+            },
+            {
+              "source": "math-a11-w09",
+              "text": "Domain and range in interval notation."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-t16"
+          ],
+          "startBoundary": "A parent graph students already know, y = x^2 with its vertex at the origin (w15), and the question \"does replacing x by x - 3 move it left or right?\". The join from t16 is fixed when t16 is designed; g01 needs nothing from trigonometry.",
+          "stopBoundary": "Establish with a graphing application that replacing x by x - a in the equation of a graph is a horizontal translation by a and replacing y by y - b is a vertical translation by b, the sign of a and b giving the direction; apply it to y = x^2, |x|, 1/x and a^x (vertex, asymptotes and key points move with the graph; domain and range follow). Reflections are g02, dilations g03, sequences g04.",
+          "nextHandoff": "math-a11-g02",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Teach the syllabus \"replace y by y - b\" form beside y = f(x) + b: both translations then share one rule (a minus sign moves the graph the positive way). Log S11-G01 before reusing site card 06.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-g02",
+          "playlistOrder": 75,
+          "mainLearnerQuestion": "How do -x and -y reflect a graph?",
+          "syllabusActionIds": [
+            "cifbd84c1c"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cifbd84c1c",
+              "text": "Establish using graphing applications that replacing x by -x in the equation of a graph corresponds to the reflection of the graph in the y-axis, and that replacing y by -y corresponds to a reflection in the x-axis",
+              "sourceHtml": "<div><span>Establish using graphing applications that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mi>x</mi></math></span><span> in the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-codename=\"glo_link__shared__equation\" data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-systemname=\"GLO Link: SHARED: equation\" data-item-type=\"link_glossary\">equation</a> of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-codename=\"glo_link__shared__graph\" data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" data-item-systemname=\"GLO Link: SHARED: graph\" data-item-type=\"link_glossary\">graph</a> corresponds to the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8da1caff-101f-47bf-a460-4bbf60a7b308\" data-item-codename=\"glo_link__shared__reflection__ma_mav_me1_\" data-item-id=\"8da1caff-101f-47bf-a460-4bbf60a7b308\" data-item-systemname=\"GLO Link: SHARED (MA): reflection\" data-item-type=\"link_glossary\">reflection</a> of the graph in the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-axis, and that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>-</mo><mi>y</mi></math></span><span>  </span><span>corresponds to a reflection in the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis </span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson02.sa.html",
+            "sectionIds": [
+              "orient",
+              "establish-it-yourself-with-a",
+              "apply",
+              "model",
+              "apply-apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-refl-1",
+              "we-refl-2",
+              "we-refl-3"
+            ],
+            "sha256": "fe58da094ef25c7cd8256209ed8052422ee5eb92a3f2c5c300c6fd3ac721ff6e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson02.sa.html",
+              "sectionIds": [
+                "orient",
+                "establish-it-yourself-with-a",
+                "apply",
+                "model",
+                "apply-apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-refl-1",
+                "we-refl-2",
+                "we-refl-3"
+              ],
+              "sha256": "fe58da094ef25c7cd8256209ed8052422ee5eb92a3f2c5c300c6fd3ac721ff6e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-g01",
+              "text": "Replacing x or y in an equation; images of points under a translation."
+            },
+            {
+              "source": "math-a11-w26",
+              "text": "Even and odd functions: unchanged by reflection in the y-axis or by a half-turn."
+            },
+            {
+              "source": "math-a11-e01",
+              "text": "y = k a^(-x) as the reflection of y = k a^x."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g01"
+          ],
+          "startBoundary": "g01's final frame (a point and its translated image); now replace x by -x instead.",
+          "stopBoundary": "Establish with a graphing application that replacing x by -x reflects a graph in the y-axis and replacing y by -y reflects it in the x-axis; find images of points ((x, y) to (-x, y) and (x, -y)) and the equation of a reflected graph (every x replaced, in brackets); both together give (x, y) to (-x, -y). Even and odd tests stay in w26 (referenced, not re-taught).",
+          "nextHandoff": "math-a11-g03",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Teach the syllabus \"replace y by -y\" form beside y = -f(x). Link to w26 by one frame, not a re-teach.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-g03",
+          "playlistOrder": 76,
+          "mainLearnerQuestion": "How does replacing x by x/k or y by y/l stretch a graph?",
+          "syllabusActionIds": [
+            "cic990ec79",
+            "cide27d1f1",
+            "ci950cc744"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cic990ec79",
+              "text": "Describe a horizontal dilation as a stretch from the y-axis and a vertical dilation as a stretch from the x-axis",
+              "sourceHtml": "<div><span>Describe a horizontal <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5eb2f9b6-c096-4fbb-8274-ff2aaf2b0187\" data-item-codename=\"glo_link__shared__dilation\" data-item-id=\"5eb2f9b6-c096-4fbb-8274-ff2aaf2b0187\" data-item-systemname=\"GLO Link: SHARED: dilation\" data-item-type=\"link_glossary\">dilation</a> as a stretch from the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-axis and a vertical dilation as a stretch from the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-axis</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cide27d1f1",
+              "text": "Establish using graphing applications that replacing x by x/k in the equation of a graph corresponds to a horizontal dilation of a graph by a factor of k, that replacing y by y/l corresponds to a vertical dilation by a factor of l, and determine the effects on the graph when the magnitude of the dilation factor lies between 0 and 1",
+              "sourceHtml": "<div><span>Establish using graphing applications that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>x</mi></mrow><mrow><mi>k</mi></mrow></mfrac></math></span><span> in the equation of a graph corresponds to a horizontal dilation of a graph by a factor of </span><span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span>, that replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>y</mi></mrow><mrow><mi>l</mi></mrow></mfrac></math></span><span> corresponds to a vertical dilation by a factor of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>l</mi></math></span><span>, and determine the effects on the graph when the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/bbb23176-fffa-4a53-98d2-7dac65f64d93\" data-item-codename=\"glo_link__shared__magnitude\" data-item-id=\"bbb23176-fffa-4a53-98d2-7dac65f64d93\" data-item-systemname=\"GLO Link: SHARED: magnitude\" data-item-type=\"link_glossary\">magnitude</a> of the dilation factor lies between 0 and 1<br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "partial",
+              "siteGap": "Dilations are taught as y = af(x) and y = f(bx). The syllabus framing (replace x by x/k, y by y/l, factor k or l) is not used, so the factor-versus-coefficient link needs teaching."
+            },
+            {
+              "id": "ci950cc744",
+              "text": "Establish, using graphing applications, replacing x by x/k and replacing y by y/k in the equation of a graph corresponds to a dilation by a factor of k, that is, an enlargement of the graph when k > 1 and a reduction of the graph when 0 < k < 1",
+              "sourceHtml": "<div><span>Establish, using graphing applications, replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>x</mi></mrow><mrow><mi>k</mi></mrow></mfrac></math></span><span> and replacing </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> by </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>y</mi></mrow><mrow><mi>k</mi></mrow></mfrac></math></span><span> in the equation of a graph corresponds to a dilation by a factor of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span>, that is, an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c8e753c4-811f-42e7-a23b-05c42c480a9f\" data-item-codename=\"glo_link__shared__enlargement\" data-item-id=\"c8e753c4-811f-42e7-a23b-05c42c480a9f\" data-item-systemname=\"GLO Link: SHARED: enlargement\" data-item-type=\"link_glossary\">enlargement</a> of the graph when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi><mo>&gt;</mo><mn>1</mn></math></span><span> and a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/56e7899f-613a-41ee-a86a-d321a74c0d5a\" data-item-codename=\"glo_link__mav__reduction\" data-item-id=\"56e7899f-613a-41ee-a86a-d321a74c0d5a\" data-item-systemname=\"GLO Link: MAV: reduction\" data-item-type=\"link_glossary\">reduction</a> of the graph when </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>0</mn><mo>&lt;</mo><mi>k</mi><mo>&lt;</mo><mn>1</mn></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "missing",
+              "siteGap": "No lesson treats replacing both x by x/k and y by y/k as an enlargement or reduction by factor k."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "establish-it-yourself-with-a",
+              "apply",
+              "model",
+              "apply-apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-dil-1",
+              "we-dil-2",
+              "we-dil-3"
+            ],
+            "sha256": "fe6e40320e4db37743ff21d89b66c887a0fac386447e86e77b7c2b1c6b864bfb"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "establish-it-yourself-with-a",
+                "apply",
+                "model",
+                "apply-apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-dil-1",
+                "we-dil-2",
+                "we-dil-3"
+              ],
+              "sha256": "fe6e40320e4db37743ff21d89b66c887a0fac386447e86e77b7c2b1c6b864bfb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-g01",
+              "text": "Replacing x or y in an equation moves every point the same way."
+            },
+            {
+              "source": "math-a11-g02",
+              "text": "Images of points under a reflection."
+            },
+            {
+              "source": "math-a11-w24",
+              "text": "x^2 + y^2 = r^2 is the circle of radius r centred at the origin."
+            },
+            {
+              "source": "math-a11-w15",
+              "text": "y = ax^2 is narrower or wider than y = x^2."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g02"
+          ],
+          "startBoundary": "g02's final frame; a graph and the y-axis held fixed while every point moves away from it.",
+          "stopBoundary": "Describe a horizontal dilation as a stretch from the y-axis and a vertical dilation as a stretch from the x-axis; establish with a graphing application that replacing x by x/k is a horizontal dilation by factor k and replacing y by y/l a vertical dilation by factor l, including factors between 0 and 1 (compressions) and y = f(bx) as factor 1/b; establish that replacing x by x/k and y by y/k together is a dilation by factor k, an enlargement for k > 1 and a reduction for 0 < k < 1 (the unit circle becomes the circle of radius k). Combining with translations is g04.",
+          "nextHandoff": "math-a11-g04",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. ci950cc744 (enlargement) has no site teaching; cide27d1f1 needs the factor-against-coefficient link. Year 12 d02 and d13 already say \"scaled horizontally by the factor 1/ln 2\": deliver that factor language. Log S11-G02.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-g04",
+          "playlistOrder": 77,
+          "mainLearnerQuestion": "Why does the order of transformations matter?",
+          "syllabusActionIds": [
+            "ci063bd03f",
+            "cid4fd3807"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci063bd03f",
+              "text": "Recognise that the order in which individual transformations are applied to functions is important",
+              "sourceHtml": "<p>Recognise that the order in which individual transformations are applied to functions is important</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cid4fd3807",
+              "text": "Apply reflections, translations and dilations to functions within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the domain and range of the transformed graph, any intercepts, asymptotes and discontinuities where appropriate, and describe which transformations have been applied",
+              "sourceHtml": "<p>Apply reflections, translations and dilations to <a data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" href=\"\">functions</a> within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the <a data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" href=\"\">domain</a> and <a data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" href=\"\">range</a> of the transformed graph, any <a data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" href=\"\">intercepts</a>, <a data-item-id=\"ffa91227-ed83-453d-9f03-b87a4bc32b8d\" href=\"\">asymptotes</a> and <a data-item-id=\"9a8a5201-fdcf-4e4a-a11f-c777fe4fb5b9\" href=\"\">discontinuities</a> where appropriate, and describe which <a data-item-id=\"f1a8a12d-3ded-46c0-98b1-6c379f807758\" href=\"\">transformations</a> have been applied</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson04.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson04.sa.html",
+            "sectionIds": [
+              "orient",
+              "establish-it-yourself-with-a",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-ct-1",
+              "we-ct-2",
+              "we-ct-3"
+            ],
+            "sha256": "eb7f95b26d45d7ab5371941cd2c9975179813455dd21707ba2e7fb4f3440e2b0"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson04.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson04.sa.html",
+              "sectionIds": [
+                "orient",
+                "establish-it-yourself-with-a",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-ct-1",
+                "we-ct-2",
+                "we-ct-3"
+              ],
+              "sha256": "eb7f95b26d45d7ab5371941cd2c9975179813455dd21707ba2e7fb4f3440e2b0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-g01",
+              "text": "Translations by replacing x by x - a and y by y - b."
+            },
+            {
+              "source": "math-a11-g02",
+              "text": "Reflections by replacing x by -x and y by -y."
+            },
+            {
+              "source": "math-a11-g03",
+              "text": "Dilations by replacing x by x/k and y by y/l."
+            },
+            {
+              "source": "math-a11-w27",
+              "text": "Composite functions: the order usually matters."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g03"
+          ],
+          "startBoundary": "Two copies of y = x^2 given the same two moves in opposite orders, ending at different vertices.",
+          "stopBoundary": "Recognise that the order of transformations matters (a translation and a dilation along the same axis do not commute; moves along different axes do); write the function rule after a described sequence of reflections, dilations and translations (not trigonometric functions), and describe the sequence from a rule by factoring the inside first (dilate, then translate). This video owns the \"determine the function rule\" and \"describe which transformations have been applied\" parts of cid4fd3807; domain, range, intercepts, asymptotes and discontinuities are g05.",
+          "nextHandoff": "math-a11-g05",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Year 12 t01 assumes this video: it reads y = k f(a(x + b)) + c (the 2024 Year 12 form), factors the inside first and dilates before translating. Prefer that form, or name the site form a f(b(x - h)) + k only with a warning about the letters. Log S11-G03 and S11-G04 before reusing site cards.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-g05",
+          "playlistOrder": 78,
+          "mainLearnerQuestion": "How do we track domain, range, intercepts and asymptotes through transformations?",
+          "syllabusActionIds": [
+            "cid4fd3807"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cid4fd3807",
+              "text": "Apply reflections, translations and dilations to functions within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the domain and range of the transformed graph, any intercepts, asymptotes and discontinuities where appropriate, and describe which transformations have been applied",
+              "sourceHtml": "<p>Apply reflections, translations and dilations to <a data-item-id=\"5d9735b9-4f21-4410-a8cb-c2cf240c284c\" href=\"\">functions</a> within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the <a data-item-id=\"2e6f932b-428b-4e34-8c13-895ad02ff762\" href=\"\">domain</a> and <a data-item-id=\"00a93433-fb5d-4fcf-905a-6e31d7603163\" href=\"\">range</a> of the transformed graph, any <a data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" href=\"\">intercepts</a>, <a data-item-id=\"ffa91227-ed83-453d-9f03-b87a4bc32b8d\" href=\"\">asymptotes</a> and <a data-item-id=\"9a8a5201-fdcf-4e4a-a11f-c777fe4fb5b9\" href=\"\">discontinuities</a> where appropriate, and describe which <a data-item-id=\"f1a8a12d-3ded-46c0-98b1-6c379f807758\" href=\"\">transformations</a> have been applied</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson05.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-key-feature-method",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-sk-1",
+              "we-sk-2",
+              "we-sk-3"
+            ],
+            "sha256": "95abaf977c1895cba560d775df2ac26d5214a16e1b8c18a1ec5889eca86f59f2"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson05.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-key-feature-method",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-sk-1",
+                "we-sk-2",
+                "we-sk-3"
+              ],
+              "sha256": "95abaf977c1895cba560d775df2ac26d5214a16e1b8c18a1ec5889eca86f59f2"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/exponential-and-logarithmic-functions/lesson06.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "sketching-logarithmic-functions",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "0416384db2c1c0a896aea2f84b94e849ff20fcff7149a94db810ef41195ce5ca"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-g04",
+              "text": "Writing and reading a sequence of transformations."
+            },
+            {
+              "source": "math-a11-w21",
+              "text": "Asymptotes of y = k/x."
+            },
+            {
+              "source": "math-a11-e01",
+              "text": "Asymptote y = 0 of y = a^x."
+            },
+            {
+              "source": "math-a11-e08",
+              "text": "Asymptote x = 0 and domain x > 0 of y = log_a x."
+            },
+            {
+              "source": "math-a11-w29",
+              "text": "Discontinuities."
+            },
+            {
+              "source": "math-a11-w09",
+              "text": "Domain and range."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g04"
+          ],
+          "startBoundary": "g04's final rule, for example y = 3/(x - 2) + 1, with the parent y = 1/x ghosted behind it.",
+          "stopBoundary": "For a transformed function within the course (parabola, cubic, |x|, hyperbola, exponential, logarithm; not trigonometric), determine the rule and graph, the domain and range, intercepts, asymptotes and discontinuities, and describe the transformations applied: carry key points and asymptotes from the parent, then find intercepts by solving (a vertical change moves x-intercepts in a way the parent's intercepts cannot predict). This video owns those parts of cid4fd3807. Circles are g06.",
+          "nextHandoff": "math-a11-g06",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Uses the log examples that e08 deferred to this strand (exponentials lesson06 we-2 and we-3, drill 3). Log S11-G05 (a wrong model answer) and S11-G06 before reusing site copy.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-g06",
+          "playlistOrder": 79,
+          "mainLearnerQuestion": "How does translation find the centre and radius of a circle?",
+          "syllabusActionIds": [
+            "ci84f96bc4",
+            "cid118e6e7",
+            "ci95f9075b"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci84f96bc4",
+              "text": "Use the principles of translations to identify the centre, radius, domain and range of graphs of circles in the form (x - a)^2 + (y - b)^2 = r^2, where a, b and r are constants",
+              "sourceHtml": "<div><span>Use the principles of translations to identify the centre, radius, domain and range of graphs of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/85e16edb-42a4-4df8-9a6f-672ef71e42d8\" data-item-codename=\"glo_link__shared__circle\" data-item-id=\"85e16edb-42a4-4df8-9a6f-672ef71e42d8\" data-item-systemname=\"GLO Link: SHARED: circle\" data-item-type=\"link_glossary\">circles</a> in the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mi>a</mi><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>-</mo><mi>b</mi><mo>)</mo></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><msup><mrow><mi>r</mi></mrow><mrow><mn>2</mn></mrow></msup></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> are <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-codename=\"glo_link__shared__constant\" data-item-id=\"da2f75f7-e0b5-47be-a3f6-4534e47a9291\" data-item-systemname=\"GLO Link: SHARED: constant\" data-item-type=\"link_glossary\">constants</a></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cid118e6e7",
+              "text": "Find the centre and radius of circles of the form x^2 + y^2 + ax + by + c = 0, where a, b and c are constants, by completing the squares",
+              "sourceHtml": "<div><span>Find the centre and radius of circles of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi mathvariant=\"italic\">ax</mi><mo>+</mo><mi mathvariant=\"italic\">by</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>c</mi></math></span><span> are constants, by <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/f0db7511-db67-4674-9e68-296a792c2658\" data-item-codename=\"glo_link__mav__completing_the_square\" data-item-id=\"f0db7511-db67-4674-9e68-296a792c2658\" data-item-systemname=\"GLO Link: MAV: completing the square\" data-item-type=\"link_glossary\">completing the squares</a></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci95f9075b",
+              "text": "Graph circles given their equations and find the equation of a circle from its graph",
+              "sourceHtml": "<p>Graph circles given their equations and find the equation of a circle from its graph</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fae9d6fbd3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson07.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson07.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "a-circle-is-the-unit",
+              "what-you-ll-master",
+              "reading-the-centre-and-radius",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-prediction",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "3eebd7c51ee25a7eaba038edd1b50cdc7d946add794e61c104c5453e4f8cb63a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/graph-transformations/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/graph-transformations/lesson07.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "a-circle-is-the-unit",
+                "what-you-ll-master",
+                "reading-the-centre-and-radius",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-prediction",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "3eebd7c51ee25a7eaba038edd1b50cdc7d946add794e61c104c5453e4f8cb63a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-w24",
+              "text": "x^2 + y^2 = r^2 from Pythagoras; radius as the root of the right side; domain and range of a relation; the equation from a point."
+            },
+            {
+              "source": "math-a11-w15",
+              "text": "Completing the square."
+            },
+            {
+              "source": "math-a11-g01",
+              "text": "Replacing x by x - a and y by y - b translates a graph."
+            },
+            {
+              "source": "math-a11-g03",
+              "text": "x^2 + y^2 = r^2 is the unit circle enlarged by factor r."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g05"
+          ],
+          "startBoundary": "w24's circle x^2 + y^2 = r^2 (not re-derived) and g01's rule, applied to both x and y at once.",
+          "stopBoundary": "Use translations to identify the centre (a, b), radius r, domain [a - r, a + r] and range [b - r, b + r] of (x - a)^2 + (y - b)^2 = r^2; find the centre and radius of x^2 + y^2 + ax + by + c = 0 by completing both squares; graph circles from their equations and find the equation of a circle from its graph (centre and radius, or centre and one point). Semicircles stay in w25.",
+          "nextHandoff": "math-a11-s01",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Builds on w24 without re-deriving the origin circle. The syllabus reuses a and b with two meanings in ci84f96bc4 and cid118e6e7: in the general form the centre is (-a/2, -b/2). Next is the probability strand.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-g06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s01",
+          "playlistOrder": 80,
+          "mainLearnerQuestion": "How do we describe a collection precisely with set notation?",
+          "syllabusActionIds": [
+            "ci04bd3585",
+            "ciea6f77dc",
+            "ci2b2bf2be",
+            "ci2a98c57c",
+            "ci8e00ae50"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci04bd3585",
+              "text": "Define a set as a collection of objects, called the elements of the set, and represent a set using notation such as {2,3,5,7} and {0,2,4,6, …}",
+              "sourceHtml": "<div><span>Define a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/f9079722-8891-4a9d-aac9-651606c27c24\" data-item-codename=\"glo_link__shared__set\" data-item-id=\"f9079722-8891-4a9d-aac9-651606c27c24\" data-item-systemname=\"GLO Link: SHARED: set\" data-item-type=\"link_glossary\">set</a> as a collection of objects, called the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/de323ddc-16db-447f-a6a0-e6ae5aa71b8d\" data-item-codename=\"glo_link__shared__element_s_\" data-item-id=\"de323ddc-16db-447f-a6a0-e6ae5aa71b8d\" data-item-systemname=\"GLO Link: SHARED: element(s)\" data-item-type=\"link_glossary\">elements</a> of the set, and represent a set using notation such as </span><span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"}\" open=\"{\" separators=\"|\"><mrow><mn>2,3,5,7</mn></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mo>{</mo><mn>0,2,4,6</mn><mo>,</mo><mo>…</mo><mo>}</mo></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ciea6f77dc",
+              "text": "Use the notation n(A) or |A| to represent the number of elements in a finite set A",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math></span><span> to represent the number of elements in a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-codename=\"glo_link__shared__finite\" data-item-id=\"e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-systemname=\"GLO Link: SHARED: finite\" data-item-type=\"link_glossary\">finite</a> set </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": "Site uses n(A); the syllabus allows n(A) or |A|."
+            },
+            {
+              "id": "ci2b2bf2be",
+              "text": "Define the empty set as the set with no elements, denoted in set notation as ∅",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/254a3d24-199d-4411-9815-15f7b6bc82b0\" data-item-codename=\"glo_link__mav__empty_set\" data-item-id=\"254a3d24-199d-4411-9815-15f7b6bc82b0\" data-item-systemname=\"GLO Link: MAV: empty set\" data-item-type=\"link_glossary\">empty set</a> as the set with no elements, denoted in set notation as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>∅</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci2a98c57c",
+              "text": "Use the notation A̅, A' or A^c to represent the complement of a set A with respect to some universal set U",
+              "sourceHtml": "<div><span>Use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover accent=\"true\"><mrow><mi>A</mi></mrow><mo>¯</mo></mover></math></span><span>, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>'</mo></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>A</mi></mrow><mrow><mi>c</mi></mrow></msup></math></span><span> to represent the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/63ee182b-ff75-4d05-8ba0-edae30c97061\" data-item-codename=\"glo_link__shared__complement\" data-item-id=\"63ee182b-ff75-4d05-8ba0-edae30c97061\" data-item-systemname=\"GLO Link: SHARED: complement\" data-item-type=\"link_glossary\">complement</a> of a set </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> with respect to some <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/1943e6fb-cc21-409e-8c62-0e562b8eb97a\" data-item-codename=\"glo_link__mav__universal_set\" data-item-id=\"1943e6fb-cc21-409e-8c62-0e562b8eb97a\" data-item-systemname=\"GLO Link: MAV: universal set\" data-item-type=\"link_glossary\">universal set</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>U</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8e00ae50",
+              "text": "Define A to be a subset of B if all the elements of A are elements of B",
+              "sourceHtml": "<div><span>Define </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> to be a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/43249f35-c3cc-434a-9247-4116cc42c6d2\" data-item-codename=\"glo_link__shared__subset\" data-item-id=\"43249f35-c3cc-434a-9247-4116cc42c6d2\" data-item-systemname=\"GLO Link: SHARED: subset\" data-item-type=\"link_glossary\">subset</a> of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> if all the elements of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> are elements of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson11.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson11.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "a-collection-written-precisely",
+              "what-you-ll-master",
+              "writing-sets-and-counting-elements",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-two-sets",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "03640a2ccb4d60e33e1c80624211517cc89d6b82df28f8e00dbaf7187f2ce411"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson11.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson11.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "a-collection-written-precisely",
+                "what-you-ll-master",
+                "writing-sets-and-counting-elements",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-two-sets",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "03640a2ccb4d60e33e1c80624211517cc89d6b82df28f8e00dbaf7187f2ce411"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "Years 7 to 10",
+              "text": "Factors, multiples, primes, even and odd numbers."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-g06"
+          ],
+          "startBoundary": "A collection described in words (the even numbers from 1 to 11) and the same collection written in braces.",
+          "stopBoundary": "Define a set and its elements, writing finite and infinite sets in braces ({2, 3, 5, 7}, {0, 2, 4, 6, ...}); use n(A) or |A| for the number of elements of a finite set; define the empty set (no elements, written with the empty-set symbol); use A-bar, A' or A^c for the complement within a stated universal set U; define a subset. Intersection, union and Venn diagrams are s02.",
+          "nextHandoff": "math-a11-s02",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Show |A| beside n(A) and U for the universal set (the site writes only n(A) and the Greek xi).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s02",
+          "playlistOrder": 81,
+          "mainLearnerQuestion": "How do intersections, unions and Venn diagrams sort overlapping sets?",
+          "syllabusActionIds": [
+            "cifa472d11",
+            "ci4459a28c",
+            "cie7ef57c5",
+            "ci7c446d9f"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cifa472d11",
+              "text": "Define the intersection A ∩ B of sets A and B to be the set of elements that are in A and in B",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/3e8d5a4c-1550-46e4-b359-1ec1c2c8280e\" data-item-codename=\"glo_link__mav__intersection__sets_\" data-item-id=\"3e8d5a4c-1550-46e4-b359-1ec1c2c8280e\" data-item-systemname=\"GLO Link: MAV: intersection (sets)\" data-item-type=\"link_glossary\">intersection</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>∩</mo><mi>B</mi></math></span><span> of sets </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> to be the set of elements that are in </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and in </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci4459a28c",
+              "text": "Define the union A ∪ B of sets A and B to be the set of elements that are in A or in B",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/d0d6093d-d463-4796-923f-1dccf9830a2a\" data-item-codename=\"glo_link__mav__union__of_sets_\" data-item-id=\"d0d6093d-d463-4796-923f-1dccf9830a2a\" data-item-systemname=\"GLO Link: MAV: union (of sets)\" data-item-type=\"link_glossary\">union</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>∪</mo><mi>B</mi></math></span><span> of sets </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> to be the set of elements that are in </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> or in </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cie7ef57c5",
+              "text": "Define sets A and B to be disjoint if A ∩ B = ∅, that is, they have no elements in common",
+              "sourceHtml": "<div><span>Define sets </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> to be <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/fc983572-b22a-4162-8aa3-77b90809d637\" data-item-codename=\"glo_link__mav__disjoint__sets_\" data-item-id=\"fc983572-b22a-4162-8aa3-77b90809d637\" data-item-systemname=\"GLO Link: MAV: disjoint (sets)\" data-item-type=\"link_glossary\">disjoint</a> if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mi>∅</mi></math></span><span>, that is, they have no elements in common</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7c446d9f",
+              "text": "Use Venn diagrams in practical situations to represent and interpret sets that may intersect in various ways within a universal set",
+              "sourceHtml": "<p>Use <a data-item-id=\"dbb174d1-785d-44a4-ab09-55660ef571d9\" href=\"\">Venn diagrams</a> in practical situations to represent and interpret sets that may intersect in various ways within a universal set</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson12.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson12.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "and-or-and-the-picture",
+              "what-you-ll-master",
+              "intersection-and-union",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-music-and-art",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "57d18d97e45a58432cee634d63698d1266ae976eb67e12485998fef2e62d453b"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson12.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "and-or-and-the-picture",
+                "what-you-ll-master",
+                "intersection-and-union",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-music-and-art",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "57d18d97e45a58432cee634d63698d1266ae976eb67e12485998fef2e62d453b"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s01",
+              "text": "Sets, |A|, the universal set, complements and subsets."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s01"
+          ],
+          "startBoundary": "s01's universal set with two sets that share some elements.",
+          "stopBoundary": "Define A intersect B (elements in A and in B) and A union B (elements in A or in B, inclusive or); define disjoint sets (intersection empty); draw and read two-set Venn diagrams inside a universal set from practical information, filling the overlap first and checking that the regions add to |U|. The counting rule as a formula is s03.",
+          "nextHandoff": "math-a11-s03",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s03",
+          "playlistOrder": 82,
+          "mainLearnerQuestion": "Why do we subtract the overlap when counting a union?",
+          "syllabusActionIds": [
+            "ci5cd67d77"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci5cd67d77",
+              "text": "Establish and use the rule |A ∪ B| = |A| + |B| - |A ∩ B|",
+              "sourceHtml": "<div><span>Establish and use the rule </span><span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>+</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>-</mo><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></mfenced></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson13.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson13.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "add-then-take-the-overlap",
+              "what-you-ll-master",
+              "establishing-the-rule",
+              "model",
+              "quick-fire-practice",
+              "revisit-the-soccer-and-netball",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "68da3fe3e0bf8c05ecbad8f13aed03bd0eee8f29610836ffc6405f7c995fac38"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson13.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson13.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "add-then-take-the-overlap",
+                "what-you-ll-master",
+                "establishing-the-rule",
+                "model",
+                "quick-fire-practice",
+                "revisit-the-soccer-and-netball",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "68da3fe3e0bf8c05ecbad8f13aed03bd0eee8f29610836ffc6405f7c995fac38"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s02",
+              "text": "Venn diagrams with an overlap filled first."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s02"
+          ],
+          "startBoundary": "Two set totals that add to more than the whole group.",
+          "stopBoundary": "Establish |A ∪ B| = |A| + |B| - |A ∩ B| because adding the totals counts the overlap twice; use it to find any one of the four quantities, the number in neither (|U| - |A ∪ B|) and the disjoint case. Probability starts in s04.",
+          "nextHandoff": "math-a11-s04",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Write the rule in the syllabus |A| form (the site uses n(A) only).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s04",
+          "playlistOrder": 83,
+          "mainLearnerQuestion": "How do sample spaces and events give a probability?",
+          "syllabusActionIds": [
+            "cib914fe5d",
+            "ci6948e56d",
+            "ci851335dd",
+            "cid1a19692"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cib914fe5d",
+              "text": "Define an experiment or a trial to be any procedure that can be infinitely repeated and has a well-defined set of possible outcomes known as the sample space, denoted S",
+              "sourceHtml": "<div><span>Define an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/dc261d21-472b-46ba-b2aa-b1e4da8ccc7f\" data-item-codename=\"glo_link__shared__experiment__random_\" data-item-id=\"dc261d21-472b-46ba-b2aa-b1e4da8ccc7f\" data-item-systemname=\"GLO Link: SHARED: experiment (random)\" data-item-type=\"link_glossary\">experiment</a> or a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/81f8d6e1-34b7-4b5c-b461-da4fec2964da\" data-item-codename=\"glo_link__shared__trial\" data-item-id=\"81f8d6e1-34b7-4b5c-b461-da4fec2964da\" data-item-systemname=\"GLO Link: SHARED: trial\" data-item-type=\"link_glossary\">trial</a> to be any procedure that can be <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/deda32d7-681e-42c2-846d-e5c9c2ee2cf1\" data-item-codename=\"glo_link__shared__infinite\" data-item-id=\"deda32d7-681e-42c2-846d-e5c9c2ee2cf1\" data-item-systemname=\"GLO Link: SHARED: infinite\" data-item-type=\"link_glossary\">infinitely</a> repeated and has a well-defined set of possible <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/efd3aeef-e175-4f4d-93ad-3822b32b4130\" data-item-codename=\"glo_link__shared__outcome\" data-item-id=\"efd3aeef-e175-4f4d-93ad-3822b32b4130\" data-item-systemname=\"GLO Link: SHARED: outcome\" data-item-type=\"link_glossary\">outcomes</a> known as the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ebdd8b00-1c2c-46a7-9b4b-76ade7c03ed3\" data-item-codename=\"glo_link__shared__sample\" data-item-id=\"ebdd8b00-1c2c-46a7-9b4b-76ade7c03ed3\" data-item-systemname=\"GLO Link: SHARED: sample\" data-item-type=\"link_glossary\">sample</a> space, denoted </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci6948e56d",
+              "text": "Identify an event A as a subset A of the sample space S",
+              "sourceHtml": "<div><span>Identify an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-codename=\"glo_link__shared__event\" data-item-id=\"c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-systemname=\"GLO Link: SHARED: event\" data-item-type=\"link_glossary\">event</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> as a subset </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> of the sample space </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci851335dd",
+              "text": "Define the probability of each outcome to be 1/(|S|) when all the outcomes are equally likely and the probability of the event A to be P(A) = (|A|)/(|S|)",
+              "sourceHtml": "<div><span>Define the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-codename=\"glo_link__shared__probability\" data-item-id=\"73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-systemname=\"GLO Link: SHARED: probability\" data-item-type=\"link_glossary\">probability</a> of each outcome to be </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>1</mn></mrow><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>S</mi></mrow></mfenced></mrow></mfrac></math></span><span> when all the outcomes are <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-codename=\"glo_link__shared__equally_likely_outcomes\" data-item-id=\"aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-systemname=\"GLO Link: SHARED: equally likely outcomes\" data-item-type=\"link_glossary\">equally likely</a> and the probability of the event </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> to be </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\">\n<mi>P</mi>\n<mfenced separators=\"|\">\n<mrow>\n<mi>A</mi>\n</mrow>\n</mfenced>\n<mo>=</mo>\n<mfrac>\n<mrow>\n<mfenced close=\"|\" open=\"|\" separators=\"|\">\n<mrow>\n<mi>A</mi>\n</mrow>\n</mfenced>\n</mrow>\n<mrow>\n<mfenced close=\"|\" open=\"|\" separators=\"|\">\n<mrow>\n<mi>S</mi>\n</mrow>\n</mfenced>\n</mrow>\n</mfrac>\n</math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cid1a19692",
+              "text": "Interpret the notation A̅ to be the event ‘ A does not occur’, interpret A ∩ B to be the event ‘ A and B both occur’, and interpret A ∪ B to be the event ‘ A or B occurs’",
+              "sourceHtml": "<div><span>Interpret the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mover accent=\"true\"><mrow><mi>A</mi></mrow><mo>¯</mo></mover></math></span><span> to be the event ‘</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> does not occur’, interpret </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>∩</mo><mi>B</mi></math></span><span> to be the event ‘</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> both occur’, and interpret </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>∪</mo><mi>B</mi></math></span><span> to be the event ‘</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> or </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> occurs’</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "sample-space-and-events",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-3"
+            ],
+            "sha256": "c586ea3ff43c6df946cd1bb96dbd52e4feba58113fa6ee447b78cb3d6f1c7b78"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "sample-space-and-events",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "c586ea3ff43c6df946cd1bb96dbd52e4feba58113fa6ee447b78cb3d6f1c7b78"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s01",
+              "text": "Sets, subsets and complements."
+            },
+            {
+              "source": "math-a11-s02",
+              "text": "Intersection and union."
+            },
+            {
+              "source": "Years 7 to 10",
+              "text": "Simple probability as a fraction for equally likely outcomes."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s03"
+          ],
+          "startBoundary": "s03's sets, now filled with the outcomes of an experiment.",
+          "stopBoundary": "Define an experiment or trial (a procedure that can be repeated indefinitely with a well-defined set of outcomes) and its sample space S; identify an event as a subset of S; for equally likely outcomes, each outcome has probability 1/|S| and P(A) = |A|/|S|; interpret A-bar as \"A does not occur\", A ∩ B as \"A and B both occur\" and A ∪ B as \"A or B occurs\", finding each by counting a listed sample space. The complement and addition rules are s05; arrays and trees s06.",
+          "nextHandoff": "math-a11-s05",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. The site's we-1 and we-3 use the addition rule (s05); here use only their sample-space counts. Year 12 s01 and s02 assume equally likely outcomes, P(A) = favourable / total and listed sample spaces.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s05",
+          "playlistOrder": 84,
+          "mainLearnerQuestion": "How do the complement and addition rules work on a Venn diagram?",
+          "syllabusActionIds": [
+            "ci4917e349",
+            "ci8c8dbc06"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci4917e349",
+              "text": "Use Venn diagrams to represent the relationship between events within the same sample space, including mutually exclusive events, that is, events that as subsets of the sample space are disjoint",
+              "sourceHtml": "<p>Use Venn diagrams to represent the relationship between events within the same sample space, including <a data-item-id=\"bcc65170-71a1-4802-8da6-740ac33f78a3\" href=\"\">mutually exclusive events</a>, that is, events that as subsets of the sample space are disjoint</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8c8dbc06",
+              "text": "Establish and use the rules P(A̅) = 1 - P(A) and P(A ∪ B) = P(A) + P(B) - P(A ∩ B)",
+              "sourceHtml": "<div><span>Establish and use the rules </span><span class=\"math-tex\"><math xmlns:m=\"http://schemas.openxmlformats.org/officeDocument/2006/math\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n<mi>P</mi>\n<mfenced separators=\"|\">\n<mrow>\n<mover accent=\"true\">\n<mrow>\n<mi>A</mi>\n</mrow>\n<mo>¯</mo>\n</mover>\n</mrow></mfenced>\n<mo>=</mo>\n<mn>1</mn>\n<mo>-</mo>\n<mi>P</mi>\n<mfenced separators=\"|\">\n<mrow>\n<mi>A</mi>\n</mrow>\n</mfenced>\n</math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>+</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>-</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo></math></span><span></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "the-addition-rule-for-p",
+              "model",
+              "the-power-of-complementary-events",
+              "apply",
+              "concept",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "fd871e534b47078ec8eae5d61d76a7168f25cddef525e3b779105c6df9629455"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "the-addition-rule-for-p",
+                "model",
+                "the-power-of-complementary-events",
+                "apply",
+                "concept",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "fd871e534b47078ec8eae5d61d76a7168f25cddef525e3b779105c6df9629455"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "sample-space-and-events",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "c586ea3ff43c6df946cd1bb96dbd52e4feba58113fa6ee447b78cb3d6f1c7b78"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s03",
+              "text": "The counting rule."
+            },
+            {
+              "source": "math-a11-s04",
+              "text": "P(A) = |A|/|S| and events as sets."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s04"
+          ],
+          "startBoundary": "s04's sample space drawn as a Venn diagram.",
+          "stopBoundary": "Use Venn diagrams for events in one sample space, including mutually exclusive events (disjoint subsets); establish P(A-bar) = 1 - P(A) and P(A ∪ B) = P(A) + P(B) - P(A ∩ B) from the counting rules and use them, including with probabilities not from equally likely outcomes. Multistage events are s06; conditional probability s07.",
+          "nextHandoff": "math-a11-s06",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Lesson02's multiplication rule, conditional notation and \"at least one\" items belong to s06 to s08. Year 12 s04 assumes the complement rule.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s06",
+          "playlistOrder": 85,
+          "mainLearnerQuestion": "How do arrays and tree diagrams organise multistage events?",
+          "syllabusActionIds": [
+            "ci1f69f91f"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci1f69f91f",
+              "text": "Use arrays and tree diagrams to determine the outcomes and probabilities for multistage events",
+              "sourceHtml": "<p>Use <a data-item-id=\"ae90c167-bde6-4f7f-aca5-2e0735f29c3e\" href=\"\">arrays</a> and <a data-item-id=\"d5c3e90b-2e44-4dc7-a793-6623fcac0f23\" href=\"\">tree diagrams</a> to determine the outcomes and probabilities for <a data-item-id=\"8124ff71-2629-4d75-894c-b7baff15bc41\" href=\"\">multistage events</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "partial",
+              "siteGap": "Tree diagrams appear as a multiplication-rule note and in practice questions. Arrays (two-dice grids) and tree diagrams for multistage events are not taught as their own method."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "the-addition-rule-for-p",
+              "model",
+              "the-power-of-complementary-events",
+              "apply",
+              "concept",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-3"
+            ],
+            "sha256": "fd871e534b47078ec8eae5d61d76a7168f25cddef525e3b779105c6df9629455"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson02.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "the-addition-rule-for-p",
+                "model",
+                "the-power-of-complementary-events",
+                "apply",
+                "concept",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "fd871e534b47078ec8eae5d61d76a7168f25cddef525e3b779105c6df9629455"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-conditional-probability",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "2ffabffce57e32867b9b07baebb196e3824f84f98a1467a12def2c8336cd66e0"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson01.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "sample-space-and-events",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "c586ea3ff43c6df946cd1bb96dbd52e4feba58113fa6ee447b78cb3d6f1c7b78"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s04",
+              "text": "Listing a sample space and P(A) = |A|/|S|."
+            },
+            {
+              "source": "math-a11-s05",
+              "text": "Complement and addition rules."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s05"
+          ],
+          "startBoundary": "Two dice rolled together: list the outcomes so that none is missed.",
+          "stopBoundary": "Use arrays (two stages, equally likely: two dice, a die and a coin) and tree diagrams (several stages, with or without replacement) to determine the outcomes and probabilities of multistage events; multiply along a branch and add the branches that make the event, justified by counting the ordered outcomes. P(A|B) notation is s07; the independence test is s08.",
+          "nextHandoff": "math-a11-s07",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. ci1f69f91f is partial on the site (no lesson teaches arrays and trees as a method). Year 12 s02 draws the 6 x 6 two-dice table as known; deliver it here.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s07",
+          "playlistOrder": 86,
+          "mainLearnerQuestion": "How does knowing B happened change the probability of A?",
+          "syllabusActionIds": [
+            "ci6b22bb73",
+            "ci720126e5",
+            "cidbe2315d",
+            "cif285e1d9"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci6b22bb73",
+              "text": "Define conditional probability as the probability that an event A occurs given that another event B has already occurred, and use the notation P(A|B)",
+              "sourceHtml": "<div><span>Define <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/68bed1fa-70dc-4cda-8930-879e7cb3856a\" data-item-codename=\"glo_link__shared__conditional_probability\" data-item-id=\"68bed1fa-70dc-4cda-8930-879e7cb3856a\" data-item-systemname=\"GLO Link: SHARED: conditional probability\" data-item-type=\"link_glossary\">conditional probability</a> as the probability that an event </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> occurs given that another event </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> has already occurred, and use the notation </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>(</mo><mi>A</mi><mfenced close=\"\" open=\"|\" separators=\"|\"><mrow><mi>B</mi><mo>)</mo></mrow></mfenced></math></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci720126e5",
+              "text": "Examine conditional probability by restricting the sample space and event spaces in a Venn diagram, using a two-way table, a tree diagram and other arrays",
+              "sourceHtml": "<p>Examine conditional probability by restricting the sample space and event spaces in a Venn diagram, using a <a data-item-id=\"b5f04558-1c88-4314-a424-03c98077de44\" href=\"\">two-way table</a>, a tree diagram and other arrays</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cidbe2315d",
+              "text": "Establish that P(A|B) = (|A ∩ B|)/(|B|) when all outcomes are equally likely by restricting the sample space and event space, and hence P(A|B) = (P(A ∩ B))/(P(B)), provided |B| ≠ 0",
+              "sourceHtml": "<p>Establish that <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></mfenced></mrow><mrow><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced></mrow></mfrac></math></span> when all outcomes are equally likely by restricting the sample space and event space, and hence <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mfrac><mi></mi></math></span>, provided <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfenced close=\"|\" open=\"|\" separators=\"|\"><mrow><mi>B</mi></mrow></mfenced><mo>≠</mo><mn>0</mn></math></span></p>\n<p></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cif285e1d9",
+              "text": "Use the formulas for P(A|B) to solve practical problems involving conditional probability",
+              "sourceHtml": "<div><span>Use the formulas for </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mo>(</mo><mi>A</mi><mo>|</mo><mi>B</mi><mo>)</mo></math></span><span> to solve practical problems involving conditional probability</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-moves",
+              "what-you-ll-master",
+              "what-is-conditional-probability",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "2ffabffce57e32867b9b07baebb196e3824f84f98a1467a12def2c8336cd66e0"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson03.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-moves",
+                "what-you-ll-master",
+                "what-is-conditional-probability",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "2ffabffce57e32867b9b07baebb196e3824f84f98a1467a12def2c8336cd66e0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s05",
+              "text": "Venn diagrams of events and the addition rule."
+            },
+            {
+              "source": "math-a11-s06",
+              "text": "Arrays and tree diagrams."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s06"
+          ],
+          "startBoundary": "s06's two-dice array, with one fact revealed about the roll.",
+          "stopBoundary": "Define P(A|B), the probability that A occurs given that B has already occurred; restrict the sample space in a Venn diagram, a two-way table, a tree and an array; establish P(A|B) = |A ∩ B|/|B| for equally likely outcomes and hence P(A|B) = P(A ∩ B)/P(B), provided |B| is not 0; solve practical problems, keeping P(A|B) and P(B|A) apart. Independence is s08.",
+          "nextHandoff": "math-a11-s08",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. The counting form |A ∩ B|/|B| needs original teaching (the site starts from probabilities). Log S11-P01.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s08",
+          "playlistOrder": 87,
+          "mainLearnerQuestion": "When are two events independent, and how do we prove it?",
+          "syllabusActionIds": [
+            "ci3b004211",
+            "cifa01f762",
+            "ci3243e129",
+            "ci4e7d5072"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci3b004211",
+              "text": "Define two events to be independent if the occurrence of one event does not affect the probability that the other event occurs",
+              "sourceHtml": "<p>Define two events to be <a data-item-id=\"6a90e8d1-faab-42d8-ba5b-d609e9971822\" href=\"\">independent</a> if the occurrence of one event does not affect the probability that the other event occurs</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cifa01f762",
+              "text": "Explain that two events A and B are independent means P(A|B) = P(A) and P(B|A) = P(B), and show algebraically that if one of these formulas is true, then the other is also true",
+              "sourceHtml": "<div><span>Explain that two events </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> are independent <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/2c1494c6-6322-4e86-a08c-32bb66158a71\" data-item-codename=\"glo_link__shared__mean\" data-item-id=\"2c1494c6-6322-4e86-a08c-32bb66158a71\" data-item-systemname=\"GLO Link: SHARED: mean\" data-item-type=\"link_glossary\">means</a></span> <span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>B</mi></mrow><mrow><mi>A</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>B</mi></mrow></mfenced></math></span><span>, and show algebraically that if one of these formulas is true, then the other is also true</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "missing",
+              "siteGap": "No lesson shows algebraically that P(A|B) = P(A) implies P(B|A) = P(B)."
+            },
+            {
+              "id": "ci3243e129",
+              "text": "Use the formula P(A|B) = (P(A ∩ B))/(P(B)), and the test P(A|B) = P(A) for independence to prove that if two events are independent, then P(A ∩ B) = P(A) × P(B), and to prove conversely that if P(A ∩ B) = P(A) × P(B), then A and B are independent",
+              "sourceHtml": "<div><span>Use the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>|</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mi>P</mi><mo>(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo>)</mo></mrow><mrow><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></mrow></mfrac></math></span><span>, and the test </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow><mrow><mi>B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced></math></span><span> for independence to prove that if two events are independent, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>×</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></math></span><span>, and to prove <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/d6b79bb4-cd94-48f3-9271-5278784a780e\" data-item-codename=\"glo_link__shared__converse\" data-item-id=\"d6b79bb4-cd94-48f3-9271-5278784a780e\" data-item-systemname=\"GLO Link: SHARED: converse\" data-item-type=\"link_glossary\">conversely</a> that if </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>A</mi></mrow></mfenced><mo>×</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></math></span><span>, then </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>B</mi></math></span><span> are independent<br/></span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "partial",
+              "siteGap": "The product rule for independent events is stated and used. The proof in both directions from the conditional formula is not worked."
+            },
+            {
+              "id": "ci4e7d5072",
+              "text": "Solve practical problems involving independent events",
+              "sourceHtml": "<p>Solve practical problems involving independent events</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson04.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson04.sa.html",
+            "sectionIds": [
+              "orient",
+              "the-two-definitions-side-by",
+              "what-you-ll-master",
+              "independence-no-information-shared",
+              "model",
+              "apply",
+              "drill",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "e6a1104d0c443b5f7101bf09cad903cbf880ade68e124d072f15d5cbfce5c283"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson04.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson04.sa.html",
+              "sectionIds": [
+                "orient",
+                "the-two-definitions-side-by",
+                "what-you-ll-master",
+                "independence-no-information-shared",
+                "model",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "e6a1104d0c443b5f7101bf09cad903cbf880ade68e124d072f15d5cbfce5c283"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s07",
+              "text": "P(A|B) = P(A ∩ B)/P(B)."
+            },
+            {
+              "source": "math-a11-s05",
+              "text": "Mutually exclusive events."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s07"
+          ],
+          "startBoundary": "Two events where knowing one changes nothing about the other (the die's \"even\" and \"greater than 4\").",
+          "stopBoundary": "Define independent events (the occurrence of one does not affect the probability of the other); explain that independence means P(A|B) = P(A) and P(B|A) = P(B) and show algebraically that one implies the other; prove that independence gives P(A ∩ B) = P(A) x P(B) and the converse; solve practical problems; contrast with mutually exclusive events. Random variables are s09.",
+          "nextHandoff": "math-a11-s09",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. cifa01f762 is missing and ci3243e129 partial on the site: both proofs are original teaching. Log S11-P06.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s09",
+          "playlistOrder": 88,
+          "mainLearnerQuestion": "What makes a random variable discrete or continuous?",
+          "syllabusActionIds": [
+            "cic2a3e877",
+            "ci21d3c041"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cic2a3e877",
+              "text": "Define a random variable as a variable whose value is the outcome of a random experiment",
+              "sourceHtml": "<p>Define a <a data-item-id=\"0e972d96-9e19-4b60-9572-b0c587d93dba\" href=\"\">random variable</a> as a <a data-item-id=\"c3a28ce2-a59d-4443-bfa3-4b11afa134f2\" href=\"\">variable</a> whose value is the outcome of a random experiment</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci21d3c041",
+              "text": "Compare discrete random variables with continuous random variables, describe their differences, and give practical examples of each",
+              "sourceHtml": "<p>Compare <a data-item-id=\"3cf56021-b202-4cfc-9410-60acb1cc5fa4\" href=\"\">discrete random variables</a> with <a data-item-id=\"50f9e92f-2ae9-464a-8def-aef4eb83280a\" href=\"\">continuous random variables</a>, describe their differences, and give practical examples of each</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson14.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson14.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "countable-list-or-an-interval",
+              "what-you-ll-master",
+              "what-a-random-variable-is",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-two-experiments",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "3709ab337da61d80a4c394f4909d73d1f358e38fde7d4845ea44eec10ee51f2e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson14.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson14.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "countable-list-or-an-interval",
+                "what-you-ll-master",
+                "what-a-random-variable-is",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-two-experiments",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "3709ab337da61d80a4c394f4909d73d1f358e38fde7d4845ea44eec10ee51f2e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s04",
+              "text": "Experiments, outcomes and P(A)."
+            },
+            {
+              "source": "math-a11-s06",
+              "text": "The two-dice array."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s08"
+          ],
+          "startBoundary": "One experiment, two numbers recorded: a count and a measurement.",
+          "stopBoundary": "Define a random variable as a variable whose value is the outcome of a random experiment (X for the variable, x for a value, P(X = x)); compare discrete random variables (values that can be listed, usually counted, possibly infinitely many) with continuous ones (any value in an interval, usually measured), with practical examples of each. Distributions and densities are Year 12 s01 to s06; P(X = x) = 0 for a continuous variable is Year 12 s04.",
+          "nextHandoff": "math-a11-s10",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Year 12 s01 builds discrete distributions on this definition. Log S11-P02 before reusing card 07.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s09.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s10",
+          "playlistOrder": 89,
+          "mainLearnerQuestion": "How do frequency tables turn data into probability estimates?",
+          "syllabusActionIds": [
+            "ci1c297b6d",
+            "cifa805794"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci1c297b6d",
+              "text": "Organise finite datasets using a table or a spreadsheet, listing the values, frequency, relative frequency, cumulative frequency, and cumulative relative frequency",
+              "sourceHtml": "<p>Organise finite datasets using a table or a spreadsheet, listing the values, <a data-item-id=\"bc990dab-11fb-4113-b4e1-a7d2362eb1ca\" href=\"\">frequency</a>, <a data-item-id=\"625b1ad1-120c-4184-a8fb-0220b46240e4\" href=\"\">relative frequency</a>, <a data-item-id=\"afffe6e1-0cf5-4048-99ae-03e33c189b92\" href=\"\">cumulative frequency</a>, and cumulative relative frequency</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cifa805794",
+              "text": "Use the relative frequency to estimate the probability of results in experiments",
+              "sourceHtml": "<p>Use the relative frequency to estimate the probability of results in experiments</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "four-columns-four-questions",
+              "what-you-ll-master",
+              "building-the-table",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-dice-estimate",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "29ad8f2a702a9afc03cee2333de3b998523b222f8688ad89182988b8fbb8bd1c"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "four-columns-four-questions",
+                "what-you-ll-master",
+                "building-the-table",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-dice-estimate",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "29ad8f2a702a9afc03cee2333de3b998523b222f8688ad89182988b8fbb8bd1c"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s04",
+              "text": "P(A) for equally likely outcomes."
+            },
+            {
+              "source": "math-a11-s09",
+              "text": "Discrete random variables."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s09"
+          ],
+          "startBoundary": "A spinner spun 40 times and the raw list of results.",
+          "stopBoundary": "Organise a finite dataset in a table or a spreadsheet listing the values, frequency, relative frequency, cumulative frequency and cumulative relative frequency; use relative frequency to estimate the probability of results in experiments, with more trials usually giving a more reliable estimate. Graphs of these columns and the mode and median are s11.",
+          "nextHandoff": "math-a11-s11",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. Show the spreadsheet formulas (the syllabus names spreadsheets). Year 12 s01 assumes relative frequency as an estimate.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s10.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-a11-s11",
+          "playlistOrder": 90,
+          "mainLearnerQuestion": "How do histograms and polygons show the mode and median?",
+          "syllabusActionIds": [
+            "ci10643b1a"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci10643b1a",
+              "text": "Graph the frequency, relative frequency, and cumulative frequency histograms and polygons of datasets, using spreadsheets or graphing applications, and identify the mode and median from the graphs, and from tables",
+              "sourceHtml": "<p>Graph the frequency, relative frequency, and <a data-item-id=\"cf8a1d8b-04f5-45fd-925f-d87235c0e84d\" href=\"\">cumulative frequency histograms</a> and <a data-item-id=\"97f4a7e4-0d3f-4add-96ea-ad82ef8e35c3\" href=\"\">polygons</a> of datasets, using spreadsheets or graphing applications, and identify the <a data-item-id=\"36cea914-6762-4653-babb-217290266149\" href=\"\">mode</a> and <a data-item-id=\"c8bd5f36-3c30-4bb9-b84e-df1a1819a46f\" href=\"\">median</a> from the graphs, and from tables</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5",
+              "siteCoverage": "partial",
+              "siteGap": "PD07 teaches histograms with frequency density plus box plots and stem-and-leaf plots (not 2024 Year 11). Relative and cumulative frequency histograms and polygons, and reading the mode and median from them, are not taught together."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+            "sectionIds": [
+              "recall-your-gut-answer-first",
+              "four-columns-four-questions",
+              "what-you-ll-master",
+              "building-the-table",
+              "model",
+              "quick-fire-practice",
+              "revisit-your-dice-estimate",
+              "practice-mc",
+              "practice-short-answer",
+              "review-and-complete"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-3"
+            ],
+            "sha256": "29ad8f2a702a9afc03cee2333de3b998523b222f8688ad89182988b8fbb8bd1c"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html",
+              "sectionIds": [
+                "recall-your-gut-answer-first",
+                "four-columns-four-questions",
+                "what-you-ll-master",
+                "building-the-table",
+                "model",
+                "quick-fire-practice",
+                "revisit-your-dice-estimate",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-3"
+              ],
+              "sha256": "29ad8f2a702a9afc03cee2333de3b998523b222f8688ad89182988b8fbb8bd1c"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-advanced/year11/probability-and-data/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson07.sa.html",
+              "sectionIds": [
+                "orient",
+                "histograms-and-frequency-density",
+                "model",
+                "box-plots",
+                "apply",
+                "drill",
+                "practice-mc",
+                "practice-short-answer",
+                "review-and-complete"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "09d70eeb94e12cc97da00442fdbbd2abc8e87d1d67b17bb5ae8f29be1e547508"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-a11-s10",
+              "text": "Frequency, relative frequency and cumulative columns."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-a11-s10"
+          ],
+          "startBoundary": "s10's finished spinner table, turned into bars.",
+          "stopBoundary": "Graph frequency, relative frequency and cumulative frequency histograms and polygons of datasets with a spreadsheet or graphing application, for single values and for grouped data; identify the mode (tallest bar or modal class) and the median (the value at half the total on the cumulative graph or column) from the graphs and from tables. Box plots, quartiles and frequency density are not in this boundary.",
+          "nextHandoff": "math-a11-p01",
+          "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Old module labels are not the route. Claude chooses final splits and length. ci10643b1a is partial on the site: lesson07 teaches frequency density and box plots (not 2024 Year 11), so only its frequency polygon and ogive cards are context. Log S11-P03 to S11-P05. After s11 the course moves to the optional practice p01 to p03, then Year 12 (math-a12-d01); Year 12 s01 and s04 use these histograms.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-a11/math-a11-s11.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}
