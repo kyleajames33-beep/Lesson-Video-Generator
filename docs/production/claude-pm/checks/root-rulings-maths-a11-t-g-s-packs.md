@@ -21,3 +21,11 @@ Root read both pack reports (trigonometry t01 to t16, route inputs 4; transforma
 12. **s09.** Teach the correct reason that P(X = x) = 0 for a continuous variable (probability comes from area over an interval, and a single value has no width), never the site's "infinitely many values" reason (S11-P02).
 13. **s11.** Use the corrected quartiles (S11-P03 to S11-P05).
 14. **Year 12.** The packs' Year 12 delivery notes (g01 to g05, s04, s05, s06, s09 to s11) are requirements.
+
+## Rulings on the t01 to t08 designs (17 November)
+15. **t01, two plates.** Accepted (sandwich and rack each carry a different special triangle).
+16. **t02 scope.** Keep one video. The learning review may recommend splitting bearings out; root decides on that finding. The YouTube link uses lesson09 (bearings and elevation), with lesson04 cited in the design only.
+17. **t03, reading 60° from the drawing.** Accepted if narration says "the angle the arm makes with the x-axis" in plain words; t04 then names it the related angle.
+18. **t04, ASTC.** Spell it out once as the Sydney mnemonic "All Stations To Central" (owner values memory aids), then use the letters.
+19. **t06, the yacht returns.** Accepted as a deliberate callback to t02 (same boat, new journey that Pythagoras cannot handle), not a repeated anchor.
+20. **t08 key notes.** Yes: put the table of multiples of π/6 and π/4 on the key-notes screen.
