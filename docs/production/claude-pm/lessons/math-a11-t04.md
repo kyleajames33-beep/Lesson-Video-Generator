@@ -1,8 +1,18 @@
 # Maths A11 T04: How do related angles and signs give trig values in every quadrant? The related angle, 180° − A, 180° + A and 360° − A, signs from x and y (ASTC), a second ratio from one ratio, and cos(−θ), sin(−θ), tan(−θ) (design)
 
-Status: Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Designer's decisions for t01 to t08: `../checks/root-decisions-maths-a11-t01-t08.md`. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Designer's decisions for t01 to t08: `../checks/root-decisions-maths-a11-t01-t08.md`. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,467 characters by script (see "Narration length estimate"), 13 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,667 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov 2026): learning review resolved
+
+Review: `../checks/m-a11-t04-learning-review.md` (summary `../checks/m-a11-t01-t08-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-t-g-s-packs.md` (17 and 18) and root's resolution brief of 17 Nov (decision 2 on t04). Resolution log: `../checks/m-a11-t01-t08-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 2 (the copy forms are announced, and t03's 60° is not named): **accepted**, as root's decision 2 frames it. Scene 2 now names t03's case first ("Last time, a hundred and twenty degrees made sixty degrees with the negative x-axis, so its related angle is sixty degrees", grey chip "t03: 120° → 60°"). Each copy form is then caused by the mirror that makes it, on the circle picture: the mirror in the y-axis puts the copy "A short of a half turn" (180° − A), the mirror in the x-axis takes it "A past a half turn" (180° + A), and one more mirror puts it "A short of a full turn" (360° − A). Visual: on each copy a short blue bracket of size A runs from the 180° (or 360°) mark to the copy's ray, beside its label, and the mirror line that made it flashes.
+2. Should fix, scene 7 and the memory card (ruling 18): **accepted** as root's decision 2. "All Stations To Central" is now said once in narration, in scene 3 after the signs. Scene 7 says "A, S, T, C tells you the positive ratios, quadrant by quadrant." The framed card keeps the words on screen ("... sign from the quadrant: All Stations To Central."), which root's decision 2 allows as the memory aid's written form.
+3. Should fix, feedbacks 1 and 2 (lines hard to hear): **accepted**, reviewer's wording. Feedback 1 gives tan 135° = −1 its reason ("from the second quadrant") and then the sign flip ("A minus angle flips its sign, so here it's plus one"), with no spoken "minus minus"; the reviewer's wording was shortened to keep the feedback no longer than Revision 1's. Feedback 2 says "Pythagoras gives fifteen for the third side" instead of "two eighty-nine minus sixty-four". The rows on screen are unchanged. Each replacement is about the same length as the line it replaces (see "Narration length estimate").
+
+Open decisions 1 (ASTC, decision 2), 2 (pace: the review found scene 5 not rushed) and 3 (feedback lengths) are closed. Length: 5,667 characters (Revision 1: 5,467), about 511 s with holds and about 420 s of speech before the notes, both under the 570 s cap. Changed values were rechecked with SymPy (`work/brief-resolve-t/verify.py`). Nothing recorded; human listening pending.
 
 Scope: sixty-first video of Year 11 Mathematics Advanced (2024), outline order 61, Trigonometry and measure of angles (Trigonometry with angles of any magnitude). Pre-design pack: `../pre-design/maths-a11/math-a11-t04.md` (brief 243). Site lessons (read through the pack's quotations, read only): `trigonometry-and-measure-of-angles/lesson05.sa.html` (card 05 related angles; card 06 cos 150°; drill tan 300°; all with their numbers), `lesson03.sa.html` (`we-2`, sin θ = −3/5 in the fourth quadrant gives cos θ = 4/5; `we-3`, cos(−45°)), and `trigonometric-identities-and-equations/lesson06.sa.html` (`we-1`, tan(−60°) = −√3). Route entry: `math-a11-t04` in `../../programme/maths-a11-route-inputs-4.json`. Visual system: maths studio kit; a painted wall clock (prefix `ma11-`), and a painted landscape with two fire lookout towers for the handoff; every circle, wedge, sign strip and working row coded.
 
@@ -26,7 +36,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   2. **Sign strip** (scene 3): the circle's quadrants fill with the signs of x and y, then each quadrant's positive ratios light; the letters A, S, T, C write after the reasons.
   3. **x-axis mirror** (scene 6): the point at θ reflects to −θ; x holds still (violet readout constant), y flips (amber readout changes sign), and the three ratio readouts show cos unchanged, sin and tan negated; a slider sweeps θ and the relation holds for every angle.
 - **Colour roles (the strand's, t01 to t04).** The angle **blue** (the related angle a lighter blue); y **amber**; x **violet**; r **ink**; ratio values **teal**; signs: "+" and "−" in ink inside the quadrants; answer green; mistake red, crossed slips only; axes and mirrors dashed grey.
-- **Large type, handwritten voice.** As t01. Hand tags: "mirror sets of four", "acute, to the x-axis", "same triangle", "180° − A", "180° + A", "360° − A", "only the sign changes", "x −, y +", "y/x: − ÷ − = +", "All Stations To Central", "size from A, sign from the quadrant", "related angle: always positive", "draw the triangle", "the quadrant picks the sign", "x stays, y flips", "cos keeps its sign".
+- **Large type, handwritten voice.** As t01. Hand tags: "mirror sets of four", "acute, to the x-axis", "t03: 120° → 60°", "same triangle", "A short of a half turn", "A past a half turn", "A short of a full turn", "180° − A", "180° + A", "360° − A", "only the sign changes", "x −, y +", "y/x: − ÷ − = +", "All Stations To Central", "size from A, sign from the quadrant", "related angle: always positive", "draw the triangle", "the quadrant picks the sign", "x stays, y flips", "cos keeps its sign".
 - **Stage changes (standard item 2).** t03's frame and the clock (1); the related angle and its copies (2); the sign strip (3); g01 board, cos 150° and tan 300° (4); g01 board, one ratio to another (5); the x-axis mirror (6); framed card (7); question cards (8 to 11); the fire towers (12); key notes (13).
 - **Worked examples (g01 layout).** 4: site card 06, cos 150° = −√3/2; site drill, tan 300° = −√3; crossed "related angle −30°". 5: site lesson03 `we-2`, sin θ = −3/5 in the fourth quadrant, cos θ = 4/5 (by the triangle, not the identity); crossed "−4/5". 6: site `we-3`, cos(−45°) = √2/2, and TI06 `we-1`, tan(−60°) = −√3; crossed "sin(−30°) = 1/2".
 - **Memory aid.** Framed card: "Size from the related angle, sign from the quadrant: All Stations To Central." Second line: "−θ mirrors in the x-axis: cos keeps its sign, sin and tan flip."
@@ -47,7 +57,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (d) cos(−45°) = √2/2; tan(−60°) = −√3; sin(−30°) = −1/2.
   (e) A1: sin 240° = −√3/2; cos 300° = 1/2; tan(−135°) = −tan 135° = 1; total (1 − √3)/2 ≈ −0.366. Slip: tan(−135°) taken as −1 gives −(3 + √3)/2.
   (f) A2: 8, 15, 17 (17² − 8² = 225); third quadrant: sin θ = −15/17, tan θ = 15/8.
-  (g) Pronunciations: "a hundred and eighty minus A"; "minus root three over two"; "four fifths"; "minus eight seventeenths"; "fifteen eighths"; "All Stations To Central" spoken once as a phrase after the letters.
+  (g) Pronunciations: "a hundred and eighty minus A"; "minus root three over two"; "four fifths"; "minus eight seventeenths"; "fifteen eighths"; "All Stations To Central" spoken once as a phrase after the letters (scene 3 only; Revision 2); the framed card shows it as written text (root's decision 2).
   (h) Windows: circle radius 2 at 220 px per unit; the clock plate's centre on the origin, its marks' angles from the sidecar.
 
 Main question: *How do related angles and signs give trig values in every quadrant? Is sin 150° really sin 30°?*
@@ -65,9 +75,9 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 Visual: opens on t03's final frame exactly (circle of radius 2, rays at 30° and 150°, dashed level line, amber heights, chips "same height", "sin 150° = sin 30°?", "Next: every quadrant", "?"). On the first sentence the "Next" chips fade. On "wall clock" the clock plate `ma11-wall-clock-v1.png` (760 px) fades in behind the circle, its centre on the origin; small coded hour labels "12", "2", "3", "10" (ink, 30 px) sit beside the marks. A dashed grey line from twelve to six draws as the mirror. On "degrees" the two rays light on the two and ten o'clock marks. On "again" two more blue rays draw to the four and eight o'clock marks, with their points at equal depth, hand tag "mirror sets of four". On "quadrant" heading "Related angles and signs", and the question chip "sin 150° = sin 30°?" moves to the top right.
 
 ### 2. the related angle
-> The x and y axes cut the plane into four quadrants, quarters numbered one to four, anticlockwise from the top right. For any angle that isn't a multiple of ninety degrees, the related angle is the acute angle between its ray and the x-axis. Always the x-axis, never the y-axis. Take an acute angle A, say thirty degrees, with its triangle, and reflect it in the **axes**. In the second quadrant you get a hundred and eighty minus A, a hundred and fifty degrees. In the third, a hundred and eighty plus A, two hundred and ten degrees. In the fourth, three sixty minus A, three hundred and thirty **degrees**. Each copy has the same triangle, so x and y have the same sizes. Only their **signs** change.
+> The x and y axes cut the plane into four quadrants, quarters numbered one to four, anticlockwise from the top right. For any angle that isn't a multiple of ninety degrees, the related angle is the acute angle between its ray and the x-axis. Always the x-axis, never the y-axis. Last time, a hundred and twenty degrees made sixty degrees with the negative x-axis, so its related angle is sixty degrees. Now take an acute angle A, say thirty degrees, with its triangle, and reflect it in the **axes**. The mirror in the y-axis puts the copy A short of a half turn, so it's a hundred and eighty minus A, a hundred and fifty degrees. The mirror in the x-axis takes that copy A past a half turn, a hundred and eighty plus A, two hundred and ten degrees. One more mirror puts it A short of a full turn, three sixty minus A, three hundred and thirty **degrees**. Each copy has the same triangle, so x and y have the same sizes. Only their **signs** change.
 
-Visual: stage change: the clock plate dims to 40 per cent behind a larger circle (radius 2, 220 px per unit); quadrant labels "1", "2", "3", "4" write anticlockwise from the top right (44 px). On "related angle" the 150° ray's acute angle to the negative x-axis fills light blue, hand tag "acute, to the x-axis"; a grey ghost of the angle to the y-axis is crossed. A 30° wedge "A" (blue) with its triangle (x violet, y amber, r ink) sits in quadrant 1. On "axes" it reflects in the y-axis to quadrant 2 (label "180° − A = 150°", hand tag "180° − A"), then in the x-axis to quadrant 3 ("180° + A = 210°", "180° + A"), then in the y-axis to quadrant 4 ("360° − A = 330°", "360° − A"); on "degrees" the four copies sit on the clock's two, ten, eight and four o'clock marks, hand tag "same triangle". Readouts beside each copy: "x = ±√3, y = ±1". On "signs" the ± signs ring, hand tag "only the sign changes".
+Visual: stage change: the clock plate dims to 40 per cent behind a larger circle (radius 2, 220 px per unit); quadrant labels "1", "2", "3", "4" write anticlockwise from the top right (44 px). On "related angle" the 150° ray's acute angle to the negative x-axis fills light blue, hand tag "acute, to the x-axis"; a grey ghost of the angle to the y-axis is crossed. On "Last time" t03's 120° ray draws faintly with its 60° to the negative x-axis filled light blue, grey chip "t03: 120° → 60°", then fades. A 30° wedge "A" (blue) with its triangle (x violet, y amber, r ink) sits in quadrant 1. On "axes" the y-axis mirror flashes and the wedge reflects to quadrant 2 (label "180° − A = 150°"); on "A short of a half turn" a short blue bracket of size A runs from the 180° mark to the copy's ray, hand tags "A short of a half turn" and "180° − A". On "The mirror in the x-axis" the x-axis mirror flashes and the copy reflects to quadrant 3 ("180° + A = 210°"), its bracket running from the 180° mark the other way, hand tags "A past a half turn" and "180° + A". On "One more mirror" the y-axis mirror flashes and the copy reflects to quadrant 4 ("360° − A = 330°"), its bracket ending at the 360° mark, hand tags "A short of a full turn" and "360° − A"; on "degrees" the four copies sit on the clock's two, ten, eight and four o'clock marks, hand tag "same triangle". Readouts beside each copy: "x = ±√3, y = ±1". On "signs" the ± signs ring, hand tag "only the sign changes".
 
 ### 3. signs from x and y
 > So the size of every ratio comes from the related angle, and the sign comes from x and y. In the first quadrant, x and y are both positive, so all three ratios are positive. In the second, x is negative and y is positive, so only sine, y over r, is positive. In the third, both are negative, so y over x is positive, and only tangent is. In the fourth, x is positive, so only cosine is. Going round from the first quadrant, that's all, sine, tangent, cosine. A, S, T, C. All Stations To **Central**.
@@ -90,7 +100,7 @@ Visual: clear change: the g01 board with the circle at the left. Task strip, 44 
 Visual: stage change: the circle at the left with the point at θ = 30° and its mirror at −30° (x-axis mirror dashed grey); readouts at the right, 44 px: "x" (violet) unchanged, "y" (amber) changing sign, hand tag "x stays, y flips". Rows, 52 px, writing as named: "cos(−θ) = cos θ", "sin(−θ) = −sin θ", on "theta" "tan(−θ) = −tan θ" (framed); hand tag "cos keeps its sign". A slider sweeps θ round the circle and the mirror point follows, the three relations ticking "✓" at 100° and 250°. Rows: "cos(−45°) = cos 45° = √2/2"; "tan(−60°) = −tan 60° = −√3" (green frames). On "slip" a red slip "sin(−30°) = 1/2" writes and is crossed, caption "y flips: −1/2".
 
 ### 7. memory aid
-> Here's the summary. Find the related angle to the x-axis and use its value, then choose the sign. All Stations To Central tells you the positive ratios, quadrant by quadrant. And a negative angle mirrors in the x-axis, so only cosine keeps its **sign**.
+> Here's the summary. Find the related angle to the x-axis and use its value, then choose the sign. A, S, T, C tells you the positive ratios, quadrant by quadrant. And a negative angle mirrors in the x-axis, so only cosine keeps its **sign**.
 
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the circle with A, S, T, C and the clock badge. Main line, hand font 56 px: "Size from the related angle, sign from the quadrant: All Stations To Central." On "sign" the key line, 40 px: "−θ mirrors in the x-axis: cos keeps its sign, sin and tan flip." Hold about 2 s.
 
@@ -100,7 +110,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the circle with A
 Visual: `QuestionCard`, 40 px, worded as printed: "Find the exact value of sin 240° − cos 300° + tan(−135°)." The full question stays on screen. Picture slot: an empty circle with quadrant numbers only (no ASTC letters). Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> Sine two forty degrees is in the third quadrant, so it's minus root three over two. Cosine three hundred degrees is in the fourth, so it's plus a half. Tangent of minus one thirty-five degrees is minus tangent one thirty-five, which is minus minus one, so plus **one**. Altogether, that's one minus root three, all over **two**. Taking that tangent as minus one is the **slip**.
+> Sine two forty degrees is minus root three over two, in the third quadrant. Cosine three hundred degrees is plus a half, in the fourth. Tangent a hundred and thirty-five degrees is minus one, from the second quadrant. A minus angle flips its sign, so here it's plus **one**. That's one minus root three, all over **two**. Taking that tangent as minus one is the **slip**.
 
 Visual: the card shrinks to the top (30 px). Rows, 44 px: "sin 240° = −sin 60° = −√3/2"; "cos 300° = +cos 60° = 1/2"; on "one" "tan(−135°) = −tan 135° = −(−1) = 1"; on "two" "−√3/2 − 1/2 + 1 = (1 − √3)/2" (green frame). On "slip" a red slip "tan(−135°) = −1" writes and is crossed, caption "tan 135° is already −1". Hold about 1 s.
 
@@ -110,7 +120,7 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: "sin 240° = −sin 60
 Visual: `QuestionCard`, 40 px: "Given cos θ = −8/17 and 180° < θ < 270°, find the exact values of sin θ and tan θ." Picture: an empty circle with quadrant numbers only. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> That's the third quadrant, where x and y are both negative. With x as minus eight and r as seventeen, the third side is the root of two eighty-nine minus sixty-four, fifteen, so y is minus **fifteen**. Sine theta is minus fifteen seventeenths, and tangent theta is minus fifteen over minus eight, fifteen **eighths**. A negative tangent is the **slip**, since tangent is positive in the third quadrant.
+> That's the third quadrant, where x and y are both negative. With x as minus eight and r as seventeen, Pythagoras gives fifteen for the third side, so y is minus **fifteen**. Sine theta is minus fifteen seventeenths, and tangent theta is minus fifteen over minus eight, fifteen **eighths**. A negative tangent is the **slip**, since tangent is positive in the third quadrant.
 
 Visual: the card shrinks to the top. A triangle draws in quadrant 3: x = −8 (violet), r = 17 (ink). Rows, 44 px: on "fifteen" "y = −√(17² − 8²) = −15" (amber); "sin θ = −15/17"; on "eighths" "tan θ = (−15)/(−8) = 15/8" (green frame round both). On "slip" a red slip "tan θ = −15/8" writes and is crossed, caption "T: tan + in quadrant 3". Hold about 1 s.
 
@@ -135,12 +145,12 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 
 ## Teaching checks
 
-- **Does it explain causes?** Why 150° and 30° share a sine: mirror images share a height (1). Why the related angle works: the copied triangle has the same side sizes (2). Why each quadrant's signs: x and y's signs (3). Why the second ratio's sign: the quadrant fixes x (5). Why cos(−θ) = cos θ: the x-axis mirror keeps x (6).
+- **Does it explain causes?** Why 150° and 30° share a sine: mirror images share a height (1). Why the related angle works: the copied triangle has the same side sizes (2). Why 180° − A, 180° + A and 360° − A: each mirror leaves the copy A short of or past a half or full turn (2). Why tan(−135°) = +1: tan 135° = −1 from the second quadrant, and −θ flips the sign (feedback 1). Why each quadrant's signs: x and y's signs (3). Why the second ratio's sign: the quadrant fixes x (5). Why cos(−θ) = cos θ: the x-axis mirror keeps x (6).
 - **Misconceptions addressed:** a negative related angle (4 crossed); the wrong sign from Pythagoras (5 crossed); sin(−θ) = sin θ (6 crossed); a double negative (A1 crossed); a negative third-quadrant tangent (A2 crossed); measuring to the y-axis (2, crossed ghost).
 - **Visual standard, item by item:** 1 the clock in scene 1 (after t03's coded opening), behind the circle in 2 and as a badge on the card; 2 a new stage every 35 to 60 s; 3 the mirror copies, the sign strip, the x-axis mirror with a sweep; 4 fixed roles (x violet, y amber); 5 large type; 6 hand tags; 7 g01 boards in 4 and 5; 8 framed card and five bullets; 9 one wedge landing on three clock marks.
 - **One idea at a time:** the mirror (1), related angles (2), signs (3), values (4), one ratio to another (5), negative angles (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 28 s and 29 s.
-- **Avoided double teaching:** the circle definitions (t03) and exact values (t01) are recalled by chip; t03's 120° is not redone.
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 27 s and 27 s.
+- **Avoided double teaching:** the circle definitions (t03) and exact values (t01) are recalled by chip; t03's 120° is named as a related angle in one sentence (ruling 17), not redone.
 - **Syllabus coverage:** `ci535e2340` (2, 4, A1; key notes 1, 2); `cid118da07` (2 to 5, A1, A2; key notes 2 to 4); `ci7bdc1767` (6, A1; key note 5).
 - **Out of scope by design:** radians (t08); the identity sin² θ + cos² θ = 1 (t14); equations (t15).
 
@@ -157,6 +167,7 @@ Model answer: draw the triangle 8, 15, 17 (8² + 15² = 17²). In the third quad
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Clock | 2 o'clock 30°, 10 o'clock 150°; 4 and 8 o'clock (330°, 210°) | 1, 2 |
+| t03's case | 120°: related angle 180° − 120° = 60° | 2 |
 | Copies of 30° | 150°, 210°, 330°; x = ±√3, y = ±1 on r = 2 | 2 |
 | Card 06, drill | cos 150° = −√3/2 (related 30°); tan 300° = −√3 (related 60°); slip −30° | 4 |
 | `we-2` | y = −3, r = 5, x = 4; cos θ = 4/5; slip −4/5 | 5 |
@@ -167,7 +178,7 @@ Model answer: draw the triangle 8, 15, 17 (8² + 15² = 17²). In the third quad
 
 ## Numbers to verify (all values, repeated for Codex)
 
-Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `t01t08/verify.py`); Codex to re-check.
+Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `t01t08/verify.py`; Revision 2's changed values in `work/brief-resolve-t/verify.py`); Codex to re-check.
 
 - cos 150° = −√3/2; sin 150° = 1/2; tan 300° = −√3; sin 210° = −1/2; cos 330° = √3/2.
 - √(25 − 9) = 4; cos θ = 4/5.
@@ -175,18 +186,20 @@ Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `t01t08/verify.py`); Codex
 - sin 240° − cos 300° + tan(−135°) = (1 − √3)/2 = −0.36603; slip value −(3 + √3)/2.
 - √(17² − 8²) = 15; sin θ = −15/17; tan θ = 15/8.
 - Radius 2 copies of 30°: (±√3, ±1).
+- 180 − 120 = 60; reflections of 30°: in the y-axis 150°, then the x-axis 210°, then the y-axis 330° (Revision 2).
+- tan 135° = −1; tan(−135°) = 1; √(17² − 8²) = 15 (Revision 2 wording).
 
 ## Memory aid check
 
-- **"Size from the related angle, sign from the quadrant: All Stations To Central."** "All Stations To Central" is a common Australian expansion of ASTC (a Sydney train announcement); the letters are introduced only after the signs of x and y are worked out in scene 3. Meaning: for an angle not on an axis, |sin θ|, |cos θ| and |tan θ| equal the ratios of the related angle; the quadrant's letter names which ratios are positive (A: all, S: sin, T: tan, C: cos, in quadrants 1 to 4). Assumptions checked: angles in standard position from the positive x-axis, anticlockwise numbering of quadrants (scene 2); angles on the axes are excluded (the syllabus's "excluding multiples of 90°"). It helps a new case: cos 225° is in quadrant 3 (T), so cosine is negative: −cos 45° = −√2/2.
+- **"Size from the related angle, sign from the quadrant: All Stations To Central."** "All Stations To Central" is a common Australian expansion of ASTC (a Sydney train announcement); the letters are introduced only after the signs of x and y are worked out in scene 3, and the phrase is spoken once, there (ruling 18; root's decision 2 lets the card keep it as written text). Meaning: for an angle not on an axis, |sin θ|, |cos θ| and |tan θ| equal the ratios of the related angle; the quadrant's letter names which ratios are positive (A: all, S: sin, T: tan, C: cos, in quadrants 1 to 4). Assumptions checked: angles in standard position from the positive x-axis, anticlockwise numbering of quadrants (scene 2); angles on the axes are excluded (the syllabus's "excluding multiples of 90°"). It helps a new case: cos 225° is in quadrant 3 (T), so cosine is negative: −cos 45° = −√2/2.
 - **Second line: "−θ mirrors in the x-axis: cos keeps its sign, sin and tan flip."** Holds for every θ (the reflection keeps x and negates y).
 - **Considered, not used:** "All Students Take Calculus" (a common alternative; decisions file, open question 2).
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed; scratchpad `t01t08/count.py`, which reproduces e08's 5,632 and c10's 5,915): 5,467 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the mirror copies, the sign strip, the x-axis sweep) and the 45 s notes scene: about 496 s. Characters per scene (1 to 13): 621, 689, 495, 752, 523, 561, 249, 187, 366, 207, 390, 352, 75. Speech before the notes is about 405 s, under the 570 s cap. Feedback speech: about 28 s and 29 s.
+Counted by script (narration blockquotes inside each numbered scene, bold markers removed; `work/brief-resolve-t/count.py`, which reproduces e08's 5,632 and c10's 5,915): 5,667 characters in Revision 2 (Revision 1: 5,467). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the mirror copies, the sign strip, the x-axis sweep) and the 45 s notes scene: about 511 s. Characters per scene (1 to 13): 621, 937, 495, 752, 523, 561, 236, 187, 359, 207, 362, 352, 75. Speech before the notes is about 420 s, and the whole video with holds about 511 s, both under the 570 s cap. Feedback speech: about 27 s and 27 s.
 
-Reserve trims if the voiced take runs long: scene 6's "That holds for every angle" (keep the sweep); feedback 1's "which is minus minus one," (keep the row) if it measures over 30 s.
+Reserve trims if the voiced take runs long: scene 6's "That holds for every angle" (keep the sweep); scene 2's "Always the x-axis, never the y-axis." (keep the crossed ghost).
 
 ## Scene list and build ids
 
@@ -194,7 +207,7 @@ Lesson key `m-a11t04` (route math-a11-t04). Explainer folder `src/explainer/less
 
 In order (13 scene headings): hook-same-height, related-angle, signs-astc, example-cos150-tan300, one-ratio-to-another, negative-angles, memory-aid, attempt-1, feedback-1, attempt-2, feedback-2, handoff, key-notes.
 
-Stage plan (approximate seconds):
+Stage plan (approximate seconds; Revision 1 times, not re-timed for Revision 2's additions; frames come from the recording's word timings):
 
 | Time (approx.) | Scenes | Stage |
 | --- | --- | --- |
@@ -270,10 +283,10 @@ Builds on: Trig ratios for any angle on a circle. Next: The sine rule and the ar
 
 ## Open decisions
 
-- **1. The ASTC expansion (root; decisions file, open question 2).** "All Stations To Central" is spoken once, after the reasons.
-- **2. Pace (learning review).** Three content points in one video. Scenes 5 and 6 are each about 35 to 45 s; if the review finds 5 rushed, move the second-ratio example into the practice video and keep A2's demand taught by one sentence in scene 4.
-- **3. Feedback lengths.** Feedback 1 (three terms and a double negative, about 28 s) and feedback 2 (about 29 s) sit near the 30 s limit; the named trim applies on the voiced take.
+- **1. The ASTC expansion (root; decisions file, open question 2).** Closed by ruling 18 and root's decision 2: spoken once, in scene 3, after the reasons; the framed card keeps the words on screen.
+- **2. Pace (learning review).** Closed: the review found scene 5 not rushed; no change.
+- **3. Feedback lengths.** Closed: the replacement lines keep both feedbacks at about the Revision 1 length (see "Narration length estimate"); measure on the voiced take.
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (trace from t03 and t01; check that the mirror copies make "same size, different sign" visible, that ASTC arrives as a summary of the signs, that the triangle method in scene 5 is enough for A2, and that the x-axis mirror makes all three negative-angle results feel caused), then the Codex maths check and error check, then voicing on the Google voice and a build to grade A.
+- Revision 1 had its independent student learning review on 17 Nov (`../checks/m-a11-t04-learning-review.md`): should-fix, 0 blockers, 3 should fix. Revision 2 resolves all three (see "Revision 2" above). Next: Codex maths check and error check on Revision 2, then voicing on the Google voice and a build to grade A; the exact voiced preview needs the repeat learning check before full export.
