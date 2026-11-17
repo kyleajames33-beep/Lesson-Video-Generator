@@ -1,28 +1,30 @@
-# Designer decisions: Year 11 Maths Advanced s01 to s11 (Revision 1, 17 November 2026)
+# Designer decisions: Year 11 Maths Advanced s01 to s11 (Revision 2, 17 November 2026)
+
+**Revision 2 (17 Nov 2026): learning review resolved.** The independent learning review (`m-a11-s01-s11-learning-review-summary.md`, 0 blockers, 16 should fix, 18 optional) is resolved in all eleven designs; the log is `m-a11-s01-s11-learning-review-resolution.md`. Root's four decisions are applied: s06's coded counters and tree branches are neutral and lettered (the painted bag is unchanged); "not a subset" is ⊈ throughout (the crosswalk writes no symbol); s10 shows "=B3/B5" with no "$"; and s05 A1's crossed slip is described below as the narration says it. The length table is updated to Revision 2; the rest of this file is the Revision 1 record, corrected where a Revision 2 change makes it wrong. Nothing recorded; human listening pending.
 
 Written by the s01 to s11 designer (Claude) for root. The designs are `../lessons/math-a11-s01.md` to `math-a11-s11.md`, the whole Probability and data strand (outline orders 80 to 90), ending the Year 11 core course. They follow the Year 12 Maths standard (`../maths-visual-standard.md`), the accepted Year 11 designs (e08, c10 and w14 read closely), root's acceptance rulings for w01 to w31, root's rulings on the c and e packs, root's rulings on the t, g and s packs (`root-rulings-maths-a11-t-g-s-packs.md`, rulings 8 to 14 bind this strand), the c and e learning-review resolutions, the kit list `maths-a11-kit-needs-g-s.md` and section 8 of `../site-corrections-maths-a11.md`. The Year 12 statistics designs (`math-a12-s01.md` to `s12.md`) were read for their entry knowledge and anchors. Documents only: no node, Remotion, build, render, speech, commit or sub-agent. s02 to s11 were written first; s01 was written last, after g06's final frame appeared on disk.
 
-## Length and timing (counted by script)
+## Length and timing (counted by script; Revision 2 figures, `work/brief-resolve-s/count.py`)
 
 Narration blockquotes, bold markers removed, 13.3 characters per second; totals add 2 × 10 s countdowns, about 6 s of short holds, 18 to 22 s of settling and the 45 s notes scene.
 
 | Video | Characters | Scene headings | Speech before notes | Total | Feedback 1, 2 |
 | --- | --- | --- | --- | --- | --- |
-| s01 sets and set notation | 5,015 | 13 | 371 s | about 460 s | 23 s, 25 s |
-| s02 intersection, union, Venn | 5,219 | 12 | 387 s | about 478 s | 26 s, 25 s |
-| s03 the counting rule | 5,002 | 14 | 370 s | about 461 s | 25 s, 24 s |
-| s04 sample spaces and events | 5,058 | 13 | 375 s | about 466 s | 26 s, 28 s |
-| s05 complement and addition rules | 5,078 | 13 | 376 s | about 467 s | 29 s, 23 s |
-| s06 arrays and trees | 5,500 | 14 | 408 s | about 499 s | 23 s, 23 s |
-| s07 conditional probability | 5,205 | 13 | 386 s | about 475 s | 26 s, 25 s |
-| s08 independence | 5,516 | 14 | 409 s | about 498 s | 25 s, 28 s |
-| s09 random variables | 5,023 | 13 | 372 s | about 461 s | 23 s, 26 s |
-| s10 frequency tables | 5,054 | 13 | 374 s | about 467 s | 27 s, 19 s |
-| s11 histograms, mode, median | 5,377 | 14 | 399 s | about 490 s | 27 s, 29 s |
+| s01 sets and set notation | 5,059 | 13 | 375 s | about 463 s | 23 s, 25 s |
+| s02 intersection, union, Venn | 5,399 | 12 | 400 s | about 493 s | 26 s, 25 s |
+| s03 the counting rule | 5,030 | 14 | 373 s | about 463 s | 25 s, 24 s |
+| s04 sample spaces and events | 5,212 | 13 | 386 s | about 479 s | 27 s, 28 s |
+| s05 complement and addition rules | 5,214 | 13 | 386 s | about 477 s | 29 s, 23 s |
+| s06 arrays and trees | 5,758 | 14 | 427 s | about 521 s | 24 s, 23 s |
+| s07 conditional probability | 5,260 | 13 | 390 s | about 479 s | 26 s, 25 s |
+| s08 independence | 5,637 | 14 | 418 s | about 509 s | 25 s, 28 s |
+| s09 random variables | 5,212 | 13 | 386 s | about 476 s | 23 s, 26 s |
+| s10 frequency tables | 5,083 | 13 | 377 s | about 469 s | 27 s, 19 s |
+| s11 histograms, mode, median | 5,684 | 14 | 422 s | about 514 s | 27 s, 28 s |
 
 All are within the brief's 5,000 to 7,000 characters and well under 570 s. They sit at the low end of the band, below the 5,500 floor that the w, c and e rounds used; the probability ideas here are shorter to say than calculus or log working, and the extra settling time goes to simulations. If root wants the 5,500 floor, each design names where to add (a second worked board in s03, s04, s09 and s10 would be the natural places). Every feedback is under 30 s by estimate (s05 feedback 1 and s11 feedback 2 are closest, at about 29 s). s10's feedback 1 was cut from about 35 s to 27 s by reading one relative frequency aloud and leaving the full columns on screen.
 
-Mechanical checks run (scratchpad `s-designs/count.py`, `fill.py`, `quotes.py`): no U+2014 or U+2013 in any of the eleven files; every bold cue appears quoted in its scene's Visual, in spoken order; no "color", "center", "-ize" spelling or "nought"; decimals spoken "zero point"; every syllabus quote in each design and its YouTube description matches `programme/maths-a11-route-inputs-5.json` exactly (the crosswalk text is identical). Every number recalculated with Python (fractions, sets, itertools) and SymPy 1.14 (`s-designs/verify.py`, 47 checks, all pass) and listed under each design's "Numbers to verify". Titles are 62 to 96 characters.
+Mechanical checks run (scratchpad `s-designs/count.py`, `fill.py`, `quotes.py`): no U+2014 or U+2013 in any of the eleven files; every bold cue appears quoted in its scene's Visual, in spoken order; no "color", "center", "-ize" spelling or "nought"; decimals spoken "zero point"; every syllabus quote in each design and its YouTube description matches `programme/maths-a11-route-inputs-5.json` exactly (the crosswalk text is identical). Every number recalculated with Python (fractions, sets, itertools) and SymPy 1.14 (`s-designs/verify.py`, 47 checks, all pass) and listed under each design's "Numbers to verify". Titles are 62 to 83 characters (Revision 2; s01 now 64).
 
 ## Anchors (one per video, everyday, no gambling, no repeats)
 
@@ -73,26 +75,28 @@ Every route start boundary is honoured: s04 starts from "s03's sets, now filled 
 
 ## Colour roles across s01 to s11 (proposed for the strand)
 
-Sets and events: A blue, B (or the given event) teal, A ∩ B violet, complements and "neither" amber, U or S ink. Multistage (s06): first stage blue, second teal, the event's cells or paths violet. Data (s09 to s11): discrete and frequency blue, continuous and relative frequency teal, cumulative frequency violet, cumulative relative frequency amber. Answers green, mistakes red throughout. These follow the functions strand's blue and teal pair where a design has two main roles.
+Sets and events: A blue, B (or the given event) teal, A ∩ B violet, complements and "neither" amber, U or S ink. Multistage (s06): first stage blue, second teal, the event's cells or paths violet. Counters (s06 scene 7 and A2, root's decision in Revision 2): coded counter tokens and tree branches are neutral grey, lettered "R", "B", "G" or "Y" in ink, never in a role colour; the painted bag keeps real counters. Data (s09 to s11): discrete and frequency blue, continuous and relative frequency teal, cumulative frequency violet, cumulative relative frequency amber. Answers green, mistakes red throughout. These follow the functions strand's blue and teal pair where a design has two main roles.
 
 ## Departures from the packs and site, with reasons
 
 1. **s02 and s03 stay separate** (root ruling 10), as the route's possible merge was declined.
 2. **No splits.** s07 and s08 were tested against ruling 2 (via ruling 11): s07 shows all four representations and both forms of the formula in about 386 s of speech; s08 has both proofs and two practical problems in about 409 s. s06 has the most teaching scenes (seven) and still runs about 408 s; its three-coin scene is the named first trim.
 3. **s04 attempt 2 and s06 scene 6 both use three coins.** s04 lists the eight outcomes; s06 recovers them with a tree and says so. This is a deliberate callback, not a repeat.
-4. **s05 A1's crossed slip** is "neither = 1 − 0.45 − 0.35" (overlap forgotten), not the pack's "0.45 × 0.35", which assumes independence before s08.
+4. **s05 A1's crossed slip** is "neither = 1 − 0.45 − 0.35" (it takes the overlap away twice, as the narration says; Revision 2 wording), not the pack's "0.45 × 0.35", which assumes independence before s08.
 5. **s07 A1 and s08 A2 are original.** The packs' question 1 (delivery app) and question 2 (alarms) became the anchors' worked examples, so each attempt uses a new context with the same method (online returns; a juice-bar two-way table, the s08 pack's anchor 2).
 6. **s09 and root ruling 12.** The s09 pack said to leave P(X = x) = 0 to Year 12 s04; root ruled to teach the correct reason. s09 scene 5 gives it in two sentences ("probability belongs to stretches of values ... a single exact value is a stretch with no width"), with no area, density or CDF, and points to Year 12. It never uses the site's "infinitely many values" reason (S11-P02), and scene 4 shows why that reason fails.
 7. **s09 "the variable is a choice"** uses "the larger number" instead of the site's "the difference", because A2 uses the difference.
 8. **s11 uses the pack's question 2 data as the worked example** (the ride) and the site's card 05 table as attempt 2 ("an online quiz"; numbers unchanged). The single-value median is read from a cumulative histogram (exact for whole numbers); the grouped median from a cumulative polygon at upper boundaries (an estimate).
 9. **s02 adds U = {1, ..., 7}** to site `we-1` so all four Venn regions are non-empty.
-10. **Site contexts re-set, numbers unchanged:** s02 `we-2` as fifty cones. Other site examples keep their own contexts (music and art, soccer and netball, dogs and cats in s03; French and German in s08).
+10. **Site contexts re-set, numbers unchanged:** s02 `we-2` as fifty cones. Other site examples keep their own contexts (music and visual arts, lettered M and V in Revision 2, soccer and netball, dogs and cats in s03; French and German in s08).
 
 ## Site findings
 
-S11-P01 (s07), S11-P02 (s09), S11-P06 (s08) and S11-P07 (s05) are avoided as described in each design; S11-P03 to S11-P05 (s11, box plots and quartiles) are not used because no quartile is taught (root ruling 13 would apply if they were). The gambling copy in lesson01 (Oz Lotto) and lesson04 (lottery draws) is left out (root ruling 8). Notation follows ruling 9: U, |A| (n(A) named once in s01 and s03), A̅ (A′ and Aᶜ named once in s01), |A|/|S| in s04. No new site error was found.
+S11-P01 (s07), S11-P02 (s09), S11-P06 (s08) and S11-P07 (s05) are avoided as described in each design; S11-P03 to S11-P05 (s11, box plots and quartiles) are not used because no quartile is taught (root ruling 13 would apply if they were). The gambling copy in lesson01 (Oz Lotto) and lesson04 (lottery draws) is left out (root ruling 8). Notation follows ruling 9: U, |A| (n(A) named once in s01 and s03), A̅ (A′ and Aᶜ named once in s01), |A|/|S| in s04, and ⊈ for "not a subset" (Revision 2, root's decision; only s01 writes it). No new site error was found.
 
 ## Open questions for root
+
+All seven are closed: 1 by ruling 35 (no padding; the review found no practice gap), 2 by ruling 43, 3 by ruling 45, 4 by ruling 39, 5 by ruling 42, 6 is a plate count with no learning question (unchanged), 7 by ruling 36 (s01 now uses the 65-character title). The Revision 1 text is kept below for the record.
 
 1. **Length floor.** All eleven are 5,000 to 5,516 characters (the brief's band), below the 5,500 floor of earlier rounds. Accept, or ask for a second worked board in the shortest four (s01, s03, s09, s10)?
 2. **s09 and ruling 12.** Is the two-sentence "no width" reason what root intended, or should s09 do more (which would move into Year 12 s04's content)?
@@ -112,4 +116,4 @@ All eleven aim at the 16-frame grade-A bar: a painted object in the opening seco
 
 ## Next
 
-Independent student learning review of all eleven (brief 247 style), then the Codex maths check and error check, then plates (in join order), voicing on the Google voice and builds to grade A. Nothing recorded; human listening pending.
+Revision 2: the learning review is resolved. Next: the Codex maths check and error check, then the Codex maths check and error check, then plates (in join order), voicing on the Google voice and builds to grade A. Nothing recorded; human listening pending.

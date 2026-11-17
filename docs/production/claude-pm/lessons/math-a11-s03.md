@@ -1,8 +1,19 @@
 # Maths A11 S03: Why do we subtract the overlap when counting a union? The double count, |A ∪ B| = |A| + |B| − |A ∩ B|, finding any one of four numbers, the number in neither, and the disjoint case (design)
 
-Status: Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md`, `../checks/root-rulings-maths-a11-c-e-packs.md` and `../checks/root-rulings-maths-a11-t-g-s-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md`, `../checks/root-rulings-maths-a11-c-e-packs.md` and `../checks/root-rulings-maths-a11-t-g-s-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,002 characters by script (see "Narration length estimate"), 14 scene headings, about 461 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,030 characters by script (see "Narration length estimate"; Revision 2), 14 scene headings, about 463 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov 2026): learning review resolved
+
+Review: `../checks/m-a11-s03-learning-review.md` (summary `../checks/m-a11-s01-s11-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-t-g-s-packs.md` and root's resolution brief of 17 Nov. Resolution log: `../checks/m-a11-s01-s11-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 4 (A means art one scene after A meant the first set): **accepted**, reviewer's letters. "Twenty study visual arts"; givens "|M| = 30", "|V| = 20", "|M ∩ V| = 8" with a grey key "M: music, V: visual arts"; the strip "|M ∪ V| = |M| + |V| − |M ∩ V|" sits term for term under scene 3's rule card (M where A was, V where B was).
+2. Optional, scene 4 ("In a group"): **applied** ("In a group of students").
+
+Open decisions closed: see "Open decisions". Joins unchanged: scene 1 still opens on the previous design's final frame, and the handoff scene is still the next design's opening frame (no finding touched a joined frame). Changed and new values are rechecked in `work/brief-resolve-s/verify.py` (SymPy 1.14 and fractions, `python -I`).
+
+Narration 5,030 characters by script (Revision 1: 5,002), about 463 s with holds; speech before the notes about 373 s, under the 570 s cap. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: eighty-second video of Year 11 Mathematics Advanced (2024), outline order 82, Probability and data (Sets and set notation). Pre-design pack: `../pre-design/maths-a11/math-a11-s03.md` (brief 243). Site lesson (read through the pack's quotations, read only): `probability-and-data/lesson13.sa.html` (`we-1`, 30 music, 20 art, 8 both; `we-2`, a class of 25 with 14 soccer and 16 netball; `we-3`, 80 people with 45 dogs, 32 cats and 15 both; card 05's "counted twice" reason; all with their numbers). Route entry: `math-a11-s03` in `../../programme/maths-a11-route-inputs-5.json`. Visual system: maths studio kit; a painted library trolley (prefix `ma11-`, introduced on s02's final frame) and a painted gumball machine for the handoff; every bar, tick, Venn diagram and row coded.
 
@@ -71,9 +82,9 @@ Visual: the bars stay at the top (600 px); stage change below: a `VennDiagram` (
 Visual: stage change: the rule card, 56 px, centre: "|A ∪ B| = |A| + |B| − |A ∩ B|", each term in its colour (A blue, B teal, A ∩ B violet, A ∪ B ink); on "B" the "− |A ∩ B|" term rings, tag "take one copy away". Grey chip under it "n(A) = |A|: the number of elements". On "once" a library row writes beneath: "36 = 26 + 19 − 9" and the 9 overlap dots (small Venn, top right) lose one tick each, the live count "ticks: 45 → 36"; tag "each member once". On "fourth" the four slots of the rule glow in turn (four-number dial).
 
 ### 4. worked example 1: at least one
-> In a group, thirty study music, twenty study art, and eight study both. How many study at least one of the two? At least one means music, or art, or both, and that's the union. So it's thirty plus twenty, minus eight, which is forty-**two**. Saying fifty is the slip. The eight who do both would be counted **twice**.
+> In a group of students, thirty study music, twenty study visual arts, and eight study both. How many study at least one of the two? At least one means music, or visual arts, or both, and that's the union. So it's thirty plus twenty, minus eight, which is forty-**two**. Saying fifty is the slip. The eight who do both would be counted **twice**.
 
-Visual: clear change to a g01 board: task strip, 44 px, "How many study at least one of the two?"; givens card "|M| = 30" (blue), "|A| = 20" (teal), "|M ∩ A| = 8" (violet); equation strip "|M ∪ A| = |M| + |A| − |M ∩ A|"; tag "at least one = union". Row, 52 px: "|M ∪ A| = 30 + 20 − 8"; on "two" the green frame "= 42 students". A small Venn diagram at the right fills 22, 8, 12. On "twice" a red slip "30 + 20 = 50" writes and is crossed, caption "the 8 counted twice".
+Visual: clear change to a g01 board: task strip, 44 px, "How many study at least one of the two?"; givens card "|M| = 30" (blue), "|V| = 20" (teal), "|M ∩ V| = 8" (violet), with the grey key "M: music, V: visual arts"; equation strip "|M ∪ V| = |M| + |V| − |M ∩ V|", placed term for term under scene 3's rule card (M where A was, V where B was); tag "at least one = union". Row, 52 px: "|M ∪ V| = 30 + 20 − 8"; on "two" the green frame "= 42 students". A small Venn diagram at the right fills 22, 8, 12. On "twice" a red slip "30 + 20 = 50" writes and is crossed, caption "the 8 counted twice".
 
 ### 5. worked example 2: finding the overlap
 > In a class of twenty-five, every student plays soccer or netball, or both. Fourteen play soccer, and sixteen play netball. How many play both? Everyone plays at least one, so the union is the whole class, twenty-five. Put that into the rule. Twenty-five equals fourteen plus sixteen, minus the overlap. Fourteen plus sixteen is thirty, so the overlap is thirty minus twenty-five, which is **five**. It's how far the totals go past the class. Writing twenty-five minus fourteen minus sixteen gives minus five, and a count can't be **negative**.
@@ -182,7 +193,7 @@ Recalculated with Python and SymPy 1.14 (17 Nov 2026, scratchpad `s-designs/veri
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed; 17 Nov, scratchpad `s-designs/count.py`): 5,002 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the bars, the tick counter, the pull-apart) and the 45 s notes scene: about 461 s. Characters per scene (1 to 14): 415, 612, 521, 309, 535, 479, 465, 178, 196, 339, 248, 323, 307, 75. Speech before the notes is about 370 s, under the 570 s cap. Feedback speech: about 25 s and 24 s.
+Revision 2 recount (narration blockquotes, bold markers removed; `work/brief-resolve-s/count.py`, which reproduces e08's 5,632): 5,030 characters (Revision 1: 5,002). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the bars, the tick counter, the pull-apart) and the 45 s notes scene: about 463 s. Characters per scene (1 to 14): 415, 612, 521, 337, 535, 479, 465, 178, 196, 339, 248, 323, 307, 75. Speech before the notes is about 373 s, under the 570 s cap. Feedback speech: about 25 s and 24 s.
 
 Reserve trims if the voiced take runs long: scene 6's region check sentence (keep the check row); scene 3's "Some books write n of A" sentence (keep the chip).
 
@@ -265,8 +276,11 @@ Builds on: Intersection, union and Venn diagrams. Next: Sample spaces and probab
 
 ## Open decisions
 
-- **1. Site contexts kept for the worked examples (learning review).** The three boards keep the site's music and art, soccer and netball, and dogs and cats with their numbers, while the library carries the cause. The reviewer may prefer one board re-set into the library; the numbers would not change.
+Closed in Revision 2 by root ruling 38 and the review (keep the site contexts; the library carries the cause). The second board's letters are now M and V (finding 1). The Revision 1 text is kept below for the record.
+
+- **1. Site contexts kept for the worked examples (learning review).** The three boards keep the site's music and visual arts (lettered M and V, Revision 2), soccer and netball, and dogs and cats with their numbers, while the library carries the cause. The reviewer may prefer one board re-set into the library; the numbers would not change.
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (trace from s02; check that the overshoot and the ticks make "counted twice" a reason before the formula, that "everyone is in at least one" is seen as the condition in scene 5, and that "neither" is clearly the outside region), then the Codex maths check and error check, then voicing on the Google voice and a build to grade A.
+- Revision 2: the independent learning review (`../checks/m-a11-s03-learning-review.md`, should-fix, 0 blockers) is resolved; see "Revision 2" at the top. Next: the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 1 (superseded note): Revision 1 has had no independent review. Next: student learning review (trace from s02; check that the overshoot and the ticks make "counted twice" a reason before the formula, that "everyone is in at least one" is seen as the condition in scene 5, and that "neither" is clearly the outside region), then the Codex maths check and error check, then voicing on the Google voice and a build to grade A.
