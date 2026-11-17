@@ -1,0 +1,27 @@
+// Every cue phrase for math-a12-s10, resolved once at load against the measured word timings (a missing phrase
+// throws here, before any scene renders). Repeated words name their occurrence: [phrase, n].
+import {cue} from './common';
+
+const C = <K extends string>(id: string, map: Record<K, string | [string, number]>): Record<K, number> => {
+	const out = {} as Record<K, number>;
+	for (const [k, v] of Object.entries(map) as [K, string | [string, number]][]) out[k] = Array.isArray(v) ? cue(id, v[0], v[1]) : cue(id, v);
+	return out;
+};
+
+export const K1 = C('scene-01', {mark: 'Mark one sigma', marks: 'those marks', formula: 'no simple area', calc: 'graphing calculator', apples: 'apples by mass', mean: 'mean one hundred', fifteen: 'deviation fifteen', then: "Then we'll", all: 'at all'});
+export const K2 = C('scene-02', {fn: 'density function', job: 'has a job', power: 'power of e', same: 'The same distance', sym: 'symmetric', further: 'Further out', zero: 'towards zero', but: 'But e', axis: 'the axis', number: 'The number in', one: 'exactly one', apples: 'For the apples', two: 'two sigma squared is', fifty: ['fifty', 1]});
+export const K3 = C('scene-03', {where: "Where's the highest", chain: 'chain rule', itself: 'itself', since: 'Since f', positive: 'always positive', sign: 'the sign of the gradient', left: 'Left of the mean', rises: 'curve rises', right: 'Right of the mean', falls: 'curve falls', all: 'It rises all', global: 'global maximum', height: 'Its height', pi: 'pi'});
+export const K4 = C('scene-04', {now: 'Now the points', product: 'product rule', factorise: 'factorise', again: 'Again f', bracket: 'this bracket', zero: "It's zero", sigma: 'plus or minus sigma', between: 'Between those', peak: 'the peak', outside: 'Outside them', out: 'flatten out', changes: 'The concavity changes', inflect: ['points of inflection', 2], five: 'one sixty-five', so: 'So one sigma', bend: 'its bend'});
+export const K5 = C('scene-05', {back: 'Back to', ask: 'Ask the calculator', works: 'It works out', seven: ['seven', 1], model: 'in the model', widen: 'Widen the band', five: ['five', 2], three: 'three sigma gives', seven3: ['three', 2], use: 'If you use', did: 'you did'});
+export const K6 = C('scene-06', {is: 'Is that just', bags: 'chip bags', from: 'From one seventy-one', again: 'again', why: "Here's why", slides: 'slides the bell', stretches: 'stretches it', squashes: 'squashes it', change: "doesn't change", measured: 'Measured in sigmas', every: 'every normal curve', curve: ['same curve', 1]});
+export const K7 = C('scene-07', {rule: 'empirical rule', any: 'For any normal', s68: ['sixty-eight', 1], s95: 'ninety-five', s997: 'ninety-nine', three: 'within three', approx: "They're approximate", calc: 'the calculator gave', sym: 'Symmetry gives', out1: 'Outside one sigma', sixteen: 'sixteen percent', out2: 'Outside two sigma', half: 'two and a half', out3: 'Outside three sigma', side3: ['each side', 2]});
+export const K8 = C('scene-08', {heights: 'Heights of', eight: 'deviation eight', what: 'What percentage are between', s178: 'one seventy-eight', either: 'eight either side', p68: 'about sixty-eight', taller: 'taller than', s186: 'one eighty-six', two: 'two eights above', outside: 'Outside two sigma', half: 'half of that', p25: 'about two point five'});
+export const K9 = C('scene-09', {judge: 'helps you judge', s196: ['one ninety-six', 1], three: 'Three sigma above', s194: 'one ninety-four', only: 'Only about', fewer: 'even fewer', very: 'Very unusual', now: 'Now the small', juice: 'go to juice', sits: 'One thirty sits', below2: ['below', 2], so: 'So that tail', percent: 'sixteen percent', actual: 'For an actual', thirty: 'left of one thirty'});
+export const K10 = C('scene-10', {cdf: 'cumulative distribution', capF: 'Capital F', left: 'area to the left', graph: 'Graph it', shape: 'S shape', starts: 'It starts', half: 'exactly a half', side: 'each side', slope: 'Its slope', highest: 'is highest', levels: 'levels off', at130: 'At one thirty', reads: 'calculator reads', two: ['one two', 1], model: 'the model says'});
+export const K11 = C('scene-11', {here: "Here's a way", s68: 'Sixty-eight', s95: 'ninety-five', s997: 'ninety-nine', forOne: 'for one', tail: 'for a tail', outside: "what's outside", halve: 'halve it'});
+export const K12 = C('scene-12', {your: 'Your turn', use: 'Use the empirical', pause: 'Pause here'});
+export const K13 = C('scene-13', {second: 'The second number', six: 'sigma is six', s68: 'Sixty-eight and', twoSig: 'two sigma', p95: 'about ninety-five', s86: 'Eighty-six is', outside: 'Outside one sigma', half: 'half of that', p16: 'about sixteen', wrong: 'Thirty-two percent is', tails: 'both tails'});
+export const K14 = C('scene-14', {last: 'Last one', read: 'Read the features', pause: 'Pause here'});
+export const K15 = C('scene-15', {match: 'Match it', mean: 'The mean is', front: 'number in front', five: 'sigma is five', global: 'The global maximum', pi: 'pi', points: 'The points of', s45: 'forty-five', forty: 'Forty plus', fifty: 'Fifty is', squared: ['not sigma squared', 1]});
+export const K16 = C('scene-16', {so: 'So the calculator', peaks: 'peaks', bends: 'bends', verifies: 'verifies', graphs: 'graphs the CDF', next: 'Next', snapper: 'snapper is five', jetty: 'jetty', perch: 'golden perch', river: 'river', which: 'Which catch', each: 'beyond each'});
+export const K17 = C('scene-17', {here: 'Here are the key', pause: 'Pause the video'});
