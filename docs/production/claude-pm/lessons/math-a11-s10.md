@@ -32,7 +32,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 ## Decisions
 
 - **Anchor: a homemade spinner whose sector sizes nobody measured (reused painted spinner with coded sectors, live).** The only way to learn its chances is to spin it and count, which is exactly why relative frequency estimates probability. Its 40 results are the site's `we-1` data, unchanged. Games (no stake; root ruling 8). The spinner plates exist (Year 12, inspected: a blank disc with a centre pin and a separate pointer), so the sectors are coded. The die appears only as the site's `we-2` comparison; Year 12 s01 owns the die rolled 200 times as an anchor (pack decision).
-- **Spreadsheet (syllabus "a table or a spreadsheet"; the site shows none).** A coded, unbranded grid with column letters A to E and row numbers 1 to 5; selecting a cell shows its formula in a formula bar ("=B2/B$5", "=D2+B3", "=D3/B5"). The narration says "In a spreadsheet".
+- **Spreadsheet (syllabus "a table or a spreadsheet"; the site shows none).** A coded, unbranded grid with column letters A to E and row numbers 1 to 5; selecting a cell shows its formula in a formula bar ("=B2/B5", "=D2+B3", "=D3/B5"). The narration says "In a spreadsheet".
 - **Simulations (standard item 3).**
   1. **Spin and sort** (scenes 1, 2): the pointer spins; each of the 40 results in the raw strip flies into its row and lights a tally; a "results placed: 40 of 40" counter checks that none is missed or doubled.
   2. **Running total fill** (scene 4): each cumulative cell is built by an arrow from the cell above plus the frequency beside it.
@@ -233,7 +233,7 @@ Coded: the spinner's sectors, the raw list, tallies, the table and spreadsheet w
 Uses: `SpinnerSectors`, `OutcomeSort`, `ScreenApp` (spreadsheet frame), `ChanceShareGraph` and `chance.ts` (`runTrials`, `weighted`), `WorkingBoard`, `PlateImg`, `HandTag`, `MistakeCard`, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions:
-1. **`FrequencyTable`** (kit list item 12; also s11): a spreadsheet-style table with columns value, frequency, relative frequency, cumulative frequency and cumulative relative frequency, filling column by column; a formula bar shows the selected cell's formula (=B3/B$5, =D2+B3); a column-sum check. Check: every cell equals its formula's value; the relative column sums to 1.
+1. **`FrequencyTable`** (kit list item 12; also s11): a spreadsheet-style table with columns value, frequency, relative frequency, cumulative frequency and cumulative relative frequency, filling column by column; a formula bar shows the selected cell's formula (=B3/B5, =D2+B3); a column-sum check. Check: every cell equals its formula's value; the relative column sums to 1.
 2. **Spin and sort** (small): raw results fly from a strip into table rows with tallies and a placed counter.
 
 ## Codex asset brief
