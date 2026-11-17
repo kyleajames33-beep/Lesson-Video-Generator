@@ -16,3 +16,20 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 10. **Notation:** the syllabus letters on screen (y = a^x in a05, y = k·a^x in a06), not the site's A·b^x.
 11. **Site examples:** do not use the science or sensitive site examples (bacteria, a drug dose, a bushfire, Boyle's Law) as worked examples; the site's beyond-syllabus x = −b/(2a) in a09 stays out of the videos.
 12. **a06's car example** may preview depreciation in one sentence only; math-s12-i10 teaches it.
+
+## Rulings on the a01 to a06 designs (18 November 2026)
+13. **a01's Standard 1 chip** (grey, pointing Standard 1 viewers to a03): keep it.
+14. **a02a's drill pair** replacing the site's drill 2: accepted. **a04b's $130 tickets** (break-even 144.4, with $135 as the change-one-number demonstration): accepted.
+15. **a05 title:** use the shorter alternative.
+16. **Descriptions:** the 2024 Standard crosswalk has no published content-point codes, so descriptions quote the exact wording under separate Standard 2 and Standard 1 headings with the syllabus links; internal codenames stay in the designs only.
+17. **Plates:** each new `ms12-` plate is painted one video early, because final frames show the next video's anchor.
+18. **a06 to a07 join:** a07 opens on a06's final frame and answers the 200-year question (about 92.3 million, plainly impossible) in a sentence or two before its own anchor.
+
+## Rulings on the a07 to a13 designs (18 November 2026)
+19. **a07:** the city as the teaching example and the sneakers in attempt 1: accepted.
+20. **a09** opens on a08's two-route frame: accepted (Standard 2 students who skip a08 lose nothing; the frame is self-explanatory).
+21. **a10's foam rocket** replacing the firework: accepted. **a11a's lemonade stall** stays.
+22. **a11b valid widths:** write 0 < w < 10 (a rectangle needs a positive width), and say in one plain sentence why the ends are left out.
+23. **a12:** show both branches of the hyperbola once (the full graph of y = k/x), then work in the first quadrant for the holiday-house context, saying why negative values make no sense here.
+24. **Descriptions:** no codenames (ruling 16); a07 to a13 descriptions drop the bracketed codenames.
+25. **Reuse** of the mowers (a04a, a13) and the red hatchback across a06 and a07 is a deliberate callback, accepted.
