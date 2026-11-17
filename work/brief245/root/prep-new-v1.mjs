@@ -9,7 +9,7 @@ import {execFileSync} from 'node:child_process';
 import {loadConfig, totalFrames} from '../../../scripts/lib/explainer-common.mjs';
 
 const key = process.argv[2], rev = process.argv[3] || 'v1';
-if (!/^(bio|chem)-m8-[a-z]\d\d[a-z]?$/.test(key)) throw new Error('lesson id');
+if (!/^((bio|chem)-m8-[a-z]\d\d[a-z]?|chem-y11-m\d-v\d\d)$/.test(key)) throw new Error('lesson id');
 const sha = (p) => crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const id = `Explainer-${key}`;
 const master = `out/explainer/${id}/${id}-${rev}.mp4`;
@@ -42,7 +42,7 @@ if (!dm) throw new Error('description not found');
 const description = dm[1].split('\n').map((l) => l.replace(/^  /, '').trimEnd()).join('\n').replace(/"\s*$/, '').trim();
 for (const t of [title, description]) if (/[—�]/.test(t)) throw new Error('em dash or bad char');
 if (title.length > 100 || description.length > 5000) throw new Error('length');
-if (!/Syllabus dotpoint/.test(description)) throw new Error('no dotpoint');
+if (!/Syllabus (dotpoint|content)/.test(description)) throw new Error('no dotpoint');
 fs.writeFileSync(`${w}/publication-metadata.json`, JSON.stringify({lessonId: key, title, titleCharacters: title.length, description,
 	metadataSource: `docs/production/claude-pm/lessons/${key}.md`, metadataSourceSha256: sha(`docs/production/claude-pm/lessons/${key}.md`)}, null, 2));
 

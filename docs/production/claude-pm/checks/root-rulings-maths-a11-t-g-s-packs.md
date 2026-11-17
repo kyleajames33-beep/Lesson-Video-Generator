@@ -29,3 +29,13 @@ Root read both pack reports (trigonometry t01 to t16, route inputs 4; transforma
 18. **t04, ASTC.** Spell it out once as the Sydney mnemonic "All Stations To Central" (owner values memory aids), then use the letters.
 19. **t06, the yacht returns.** Accepted as a deliberate callback to t02 (same boat, new journey that Pythagoras cannot handle), not a repeated anchor.
 20. **t08 key notes.** Yes: put the table of multiples of π/6 and π/4 on the key-notes screen.
+
+## Rulings on the t09 to t16 designs (17 November)
+21. **Splits accepted:** t14a, t14b, t15a, t15b (each combined video would be about 10,000 characters). The course now has 18 trigonometry videos; outline order numbers 71 and 72 each carry an a and b part, and playlist order follows t13, t14a, t14b, t15a, t15b, t16. t12 stays one video.
+22. **t09, two anchors** (the pizza from t08, then the drop-leaf table for segments): accepted.
+23. **t10, the torch plate** from Year 12: accepted as plate reuse (a new context: a beam sweeping along a fence for tan).
+24. **The wall clock in t14b, t15a and t15b:** accepted as a deliberate callback to t04's mirror pairs.
+25. **t14b opening:** keep the graphing-app surprise, shown on the existing phone plate so a painted object is on screen from the first frame.
+26. **Spoken names:** "secant", "cosecant" and "cotangent" in full, as designed.
+27. **Colour:** sine stays amber on circles and triangles and teal on graphs, as designed (they never share a frame). The builder must keep each role consistent within a video. t13's magenta for 90° − θ must differ clearly from the mistake red; the builder checks it on the sheet.
+28. **t15b length** (4,723 characters): accepted; do not pad.
