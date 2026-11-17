@@ -229,3 +229,7 @@ Whole master sampled in 3 s windows (10 sheets). Snapper and perch compared by z
 ## math-a12-s12 v2, root, 18 Nov
 
 v1 was never queued: root found the kit FillDial's "μ = …" label drawn across the painted filling head (duplicating the readout card); v2 hides it (FillDial `dial.label: false`, default unchanged for other lessons). Whole master sampled in 3 s windows (10 sheets): the dial out and back with simulated short counts (19, 6, 2, 2 of 200), the table read backwards (target 0.9900, 2.32 and 2.33 compared, P(Z < 2.33) ≈ 0.99), μ = 508.64 mL, bolts σ and cereal σ with the halfway target, two ways to reach 0.5%, attempts with countdown, feedback with the crossed slip, key notes. Picture scan 0 flags, font scan 0 flags. Pass.
+
+## bio-m8-b15 v1
+
+First release (18 Nov; owner decision 18 Nov: kept general, no community context). Whole master sampled in 3 s windows (11 sheets): the pathway strip follows the sound; ear section with the ossicles ringed in turn and "same push, smaller area: more pressure"; the uncoiled cochlea, hair cells, channels open and the signal; conductive against sensorineural breaks on the strip; hearing aid, cochlear implant and bone conduction implant, each mapped onto the strip; the Melbourne 1978 timeline with limits; the balance ("matched, not ranked"); the otosclerosis and factory-noise questions with countdowns; feedback with "choose the most advanced device" crossed; decision rule and key notes. Captions from the playback lesson (166 cues, 14,535 frames equal to master). Pass.
