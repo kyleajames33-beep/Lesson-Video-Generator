@@ -225,3 +225,7 @@ Whole master sampled in 3 s windows (11 sheets). Opens on s09's handoff; each pa
 ## math-a12-s11 v1, root, 18 Nov
 
 Whole master sampled in 3 s windows (10 sheets). Snapper and perch compared by z (1.25 and 1.6), the standard normal with both tails kept as the curves squeeze, the left-area table read with the 1 − table step, Alex and Blake by z, the mirror tail, bolts and bottles; attempts and feedback (raw-marks slip crossed). Picture scan: one "possible-blank" flag at 352.7 s, checked: a mid cross-fade from "Check your working" to "Last one", not a defect. Font scan 0 flags. Pass.
+
+## math-a12-s12 v2, root, 18 Nov
+
+v1 was never queued: root found the kit FillDial's "μ = …" label drawn across the painted filling head (duplicating the readout card); v2 hides it (FillDial `dial.label: false`, default unchanged for other lessons). Whole master sampled in 3 s windows (10 sheets): the dial out and back with simulated short counts (19, 6, 2, 2 of 200), the table read backwards (target 0.9900, 2.32 and 2.33 compared, P(Z < 2.33) ≈ 0.99), μ = 508.64 mL, bolts σ and cereal σ with the halfway target, two ways to reach 0.5%, attempts with countdown, feedback with the crossed slip, key notes. Picture scan 0 flags, font scan 0 flags. Pass.
