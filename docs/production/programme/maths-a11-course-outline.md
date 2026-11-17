@@ -66,7 +66,8 @@ Brief 243 research, 16 November 2026. All 201 official Year 11 points (2024 syll
 | 56 | math-a11-e07 | Why does the change of base rule work? | ciae7673fb | exponential-and-logarithmic-functions/lesson08.sa.html | Exponential and logarithmic functions |
 | 57 | math-a11-e08 | How is the log graph a reflection of the exponential graph? | ci5d370004, ci9eb0125c | exponential-and-logarithmic-functions/lesson06.sa.html | Exponential and logarithmic functions |
 | 58 | math-a11-t01 | How do two special triangles give exact values at 30, 45 and 60 degrees? | ci83df430f | trigonometry-and-measure-of-angles/lesson05.sa.html | Trigonometry |
-| 59 | math-a11-t02 | How do we solve right-triangle problems with bearings and elevation? | ci61c6fa90 | trigonometry-and-measure-of-angles/lesson09.sa.html; trigonometry-and-measure-of-angles/lesson04.sa.html | Trigonometry |
+| 59a | math-a11-t02a | How do angles of elevation and depression solve right-triangle problems? | ci61c6fa90 | trigonometry-and-measure-of-angles/lesson09.sa.html; trigonometry-and-measure-of-angles/lesson04.sa.html | Trigonometry |
+| 59b | math-a11-t02b | How do compass and true bearings describe a journey? | ci61c6fa90 | trigonometry-and-measure-of-angles/lesson09.sa.html | Trigonometry |
 | 60 | math-a11-t03 | How does a point on a circle define trig ratios for any angle? | ci50c304a5, ci95d785c0, cif067a2a2, cieed954eb | trigonometry-and-measure-of-angles/lesson03.sa.html | Trigonometry |
 | 61 | math-a11-t04 | How do related angles and signs give trig values in every quadrant? | ci535e2340, cid118da07, ci7bdc1767 | trigonometry-and-measure-of-angles/lesson03.sa.html; trigonometry-and-measure-of-angles/lesson05.sa.html | Trigonometry |
 | 62 | math-a11-t05 | Why does the sine rule work, and when does the area formula apply? | ci96840b09, ci5fb5a13c | trigonometry-and-measure-of-angles/lesson06.sa.html | Trigonometry |
@@ -78,8 +79,10 @@ Brief 243 research, 16 November 2026. All 201 official Year 11 points (2024 syll
 | 68 | math-a11-t11 | What are sec, cosec and cot in a right-angled triangle? | ci47b993f2, ci0e59b7f1, cid1300c17 | trigonometric-identities-and-equations/lesson01.sa.html | Trigonometry |
 | 69 | math-a11-t12 | How do the reciprocal ratios extend to any angle, and where are they undefined? | ci15aca25e, cicf5015c7, ci6990d1da, ci3c95dfdc | trigonometric-identities-and-equations/lesson01.sa.html; trigonometric-identities-and-equations/lesson04.sa.html | Trigonometry |
 | 70 | math-a11-t13 | Why does a ratio of an angle equal the co-ratio of its complement? | cic43f35f1, ci3f6f944a | trigonometric-identities-and-equations/lesson03.sa.html | Trigonometry |
-| 71 | math-a11-t14 | How do the Pythagorean identities prove further identities? | cif79ffa41, ci1ff2042e | trigonometric-identities-and-equations/lesson02.sa.html; trigonometric-identities-and-equations/lesson10.sa.html | Trigonometry |
-| 72 | math-a11-t15 | How do we find every solution of a trig equation in a domain? | ci84d04f4e | trigonometric-identities-and-equations/lesson08.sa.html; trigonometric-identities-and-equations/lesson11.sa.html | Trigonometry |
+| 71a | math-a11-t14a | How do the Pythagorean identities prove further identities? | cif79ffa41, ci1ff2042e | trigonometric-identities-and-equations/lesson02.sa.html; trigonometric-identities-and-equations/lesson10.sa.html | Trigonometry |
+| 71b | math-a11-t14b | How do the Pythagorean identities prove further identities? | cif79ffa41, ci1ff2042e | trigonometric-identities-and-equations/lesson02.sa.html; trigonometric-identities-and-equations/lesson10.sa.html | Trigonometry |
+| 72a | math-a11-t15a | How do we find every solution of a trig equation in a domain? | ci84d04f4e | trigonometric-identities-and-equations/lesson08.sa.html; trigonometric-identities-and-equations/lesson11.sa.html | Trigonometry |
+| 72b | math-a11-t15b | How do we find every solution of a trig equation in a domain? | ci84d04f4e | trigonometric-identities-and-equations/lesson08.sa.html; trigonometric-identities-and-equations/lesson11.sa.html | Trigonometry |
 | 73 | math-a11-t16 | How do trig equations that reduce to quadratics get solved? | ci24474f01 | trigonometric-identities-and-equations/lesson12.sa.html | Trigonometry |
 | 74 | math-a11-g01 | Which way does replacing x by x - a move a graph? | cia7e452b4 | graph-transformations/lesson01.sa.html | Graph transformations |
 | 75 | math-a11-g02 | How do -x and -y reflect a graph? | cifbd84c1c | graph-transformations/lesson02.sa.html | Graph transformations |
@@ -106,7 +109,7 @@ Brief 243 research, 16 November 2026. All 201 official Year 11 points (2024 syll
 
 math-a12-d01 relies on: `ciac4383bd` (math-a11-e02); `ci00fa8fac` (math-a11-c10); `cif6a6cb7d` (math-a11-c07); `ci98f43d14` (math-a11-e01).
 
-Across the Year 12 routes, the assumed Year 11 points and their owners are: `ciac4383bd` (math-a11-e02); `ci00fa8fac` (math-a11-c10); `cif6a6cb7d` (math-a11-c07); `ci98f43d14` (math-a11-e01); `ci1d192d62` (math-a11-c07); `cie3d91a6e` (math-a11-c13); `ci72e90f3a` (math-a11-c11); `cifb023b4e` (math-a11-c12); `ci3d1a69e4` (math-a11-c08); `ci447b12b9` (math-a11-c04); `cie4815a8e` (math-a11-c05); `cie435d18f` (math-a11-c14); `cief55e727` (math-a11-c14); `ci6341be75` (math-a11-c16); `ci7cd97f8c` (math-a11-e03); `ci9eb0125c` (math-a11-e08); `ciae7673fb` (math-a11-e07); `cic84a1659` (math-a11-e03); `ci5d370004` (math-a11-e08); `ciccaa78be` (math-a11-t08); `cid79268a8` (math-a11-t10); `ci05229304` (math-a11-c18); `ci8a1ba332` (math-a11-c18); `ci1be28612` (math-a11-c18). Free-text entry knowledge maps to index laws (w01), trig equations (t15) and transformations (g01 to g04). Year 12 random variables will lean on s04, s09 to s11 (inferred).
+Across the Year 12 routes, the assumed Year 11 points and their owners are: `ciac4383bd` (math-a11-e02); `ci00fa8fac` (math-a11-c10); `cif6a6cb7d` (math-a11-c07); `ci98f43d14` (math-a11-e01); `ci1d192d62` (math-a11-c07); `cie3d91a6e` (math-a11-c13); `ci72e90f3a` (math-a11-c11); `cifb023b4e` (math-a11-c12); `ci3d1a69e4` (math-a11-c08); `ci447b12b9` (math-a11-c04); `cie4815a8e` (math-a11-c05); `cie435d18f` (math-a11-c14); `cief55e727` (math-a11-c14); `ci6341be75` (math-a11-c16); `ci7cd97f8c` (math-a11-e03); `ci9eb0125c` (math-a11-e08); `ciae7673fb` (math-a11-e07); `cic84a1659` (math-a11-e03); `ci5d370004` (math-a11-e08); `ciccaa78be` (math-a11-t08); `cid79268a8` (math-a11-t10); `ci05229304` (math-a11-c18); `ci8a1ba332` (math-a11-c18); `ci1be28612` (math-a11-c18). Free-text entry knowledge maps to index laws (w01), trig equations (t15a and t15b) and transformations (g01 to g04). Year 12 random variables will lean on s04, s09 to s11 (inferred).
 
 ## Notes
 
@@ -114,3 +117,6 @@ Across the Year 12 routes, the assumed Year 11 points and their owners are: `cia
 - Points shared by two videos: the sine rule, cosine rule and area proofs (ci96840b09, ci5fb5a13c) span t05 to t07; direct and inverse variation (ci52779ff4, ci70194fe3) span w22 and w23; cid4fd3807 spans g04 and g05.
 - The first 14 packs (w01 to w14) are in claude-pm/pre-design/maths-a11/. Route inputs are in maths-a11-route-inputs-1.json.
 - Site lessons with no 2024 Year 11 home (retired or out of scope) are not used as sources. They are listed in the crosswalk inventory.
+
+
+Root, 17 Nov: design splits (t02 into t02a and t02b; t14 and t15 into a and b parts) are applied above; the a and b rows share the outline number. Learner questions for the split rows are in each design. The route inputs JSON keep the original single entries; for ownership and order, this table and the designs win.

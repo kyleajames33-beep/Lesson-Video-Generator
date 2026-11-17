@@ -28,4 +28,6 @@ Hard rules:
 
 Non-voicing work in gaps stays as listed: 247 and 248 steps 1 to 3, then 244 and 242.
 
+**Added 17 November: brief 249** (`codex-prompts/249-maths-a11-t-g-s-check-plates-voice.md`): the remaining 36 Year 11 Maths designs (trigonometry, transformations, probability), all learning-review resolved. Maths check, anchor check and plates in gaps after 247 and 248 steps 1 to 3; voice after 247 and 248.
+
 When a job is waiting (quota, plates rendering), move to the next one rather than idling. Report each finished step to `status.md` in one short block.
