@@ -14,7 +14,7 @@ Review: `../checks/m-s12-a07-learning-review.md` (summary `../checks/m-s12-a07-a
 4. Optional, scene 6 ("Lines can also run below zero" with no example): **applied**, made concrete with the reviewer's sentence: "And a falling line, like data left on a phone at two gigabytes a day, would run below zero, which can't happen." The grey sketch is tagged "data left: below 0 GB?". It also previews a08's phone for Standard 1 viewers. Key note 5 keeps "or zero".
 5. Optional, attempt 1 ("week one hundred and fifty-six" is t = 155): **applied**. Narration "a hundred and fifty-six weeks later, about three years on"; card "(a) Use the model to predict the weekly orders 156 weeks later (t = 156, about three years)"; feedback 1 "a hundred and fifty-six weeks is far outside the data". The answer (about 573 million) does not change.
 
-Root's decisions: the red hatchback stays in scene 5 (decision 4: a06, a07 and a13 only). Ruling 24: the description's bracketed codenames are removed, using the a01 to a06 heading form. Open decisions closed: 1 (ruling 18, the join; ruling 19, the city teaches), 2 (finding 1 applied), 3 (the review found the illustration clearly labelled), 4 (ruling 19). Joins unchanged: scene 1 opens on a06 scene 12 as written in `math-s12-a06.md` (rechecked against a06 Revision 2, which leaves scene 12 unchanged); scene 12 is still a08's opening frame. No number changed; the attempt 1 wording change does not change its value (rechecked in `work/brief-resolve-standard-a2/verify.py`).
+Root's decisions: the red hatchback stays in scene 5 (decision 4: a06, a07 and a13 only). Ruling 24: the description's bracketed codenames are removed, using the a01 to a06 heading form.The description's "Builds on" line now uses a06's and a05's Revision 2 titles. Open decisions closed: 1 (ruling 18, the join; ruling 19, the city teaches), 2 (finding 1 applied), 3 (the review found the illustration clearly labelled), 4 (ruling 19). Joins unchanged: scene 1 opens on a06 scene 12 as written in `math-s12-a06.md` (rechecked against a06 Revision 2, which leaves scene 12 unchanged); scene 12 is still a08's opening frame. No number changed; the attempt 1 wording change does not change its value (rechecked in `work/brief-resolve-standard-a2/verify.py`).
 
 Narration 6,062 characters by script (Revision 1: 5,696), about 545 s with holds; speech before the notes about 450 s, under the 570 s cap. Scene 6 is now the longest scene (858 characters, about 65 s, four on-screen stages). Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
@@ -273,7 +273,7 @@ Syllabus content, Standard 1:
 "Identify the strengths and limitations of linear and exponential models in given practical contexts"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb (Standard 1)
 
-Builds on: Exponential models. Next (Standard 1): Sketching graphs from real-life stories. Next (Standard 2): Parabolas, the vertex and axis of symmetry.
+Builds on: Exponential Models: y = ka^x (Standard 2); Exponential Graphs: y = a^x and y = a^(−x) (Standard 1). Next (Standard 1): Sketching graphs from real-life stories. Next (Standard 2): Parabolas, the vertex and axis of symmetry.
 
 #Year12Maths #MathsStandard #ExponentialModels #HSCScience
 

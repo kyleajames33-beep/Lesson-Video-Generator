@@ -2,6 +2,17 @@
 
 18 November 2026. Design author's handover to root for `lessons/math-s12-a07.md`, `a08.md`, `a09.md`, `a10.md`, `a11a.md`, `a11b.md`, `a12.md` and `a13.md` (Revision 1 each). Documents only: no speech, build, render, plate or commit, and no sub-agent. Inputs: the packs `pre-design/maths-standard/math-s12-a07.md` to `a13.md`, `programme/maths-standard-route-inputs-1.json`, `programme/syllabus/maths-standard-2024-crosswalk.json`, `checks/maths-standard-kit-needs-a.md`, `checks/root-rulings-maths-standard-outline.md` (rulings 1 to 12, binding), `site-corrections-maths-standard.md`, the format of `lessons/math-a11-e08.md`, `w14.md` and `g01.md` (Revision 2), `maths-visual-standard.md`, `AGENTS.md`, the w-strand learning-review resolution, and (for the a06 join and the shared conventions) `lessons/math-s12-a06.md` and `checks/root-decisions-maths-s12-a01-a06.md`. a08 to a13 were written first; a07 was written last, first with a provisional opening, then rewritten to open on a06's final frame once a06 and its decisions file appeared.
 
+## Revision 2 update (18 Nov 2026)
+
+All eight designs are now at "Revision 2 (18 Nov 2026): learning review resolved". The log is `m-s12-a07-a13-learning-review-resolution.md`. What changed here:
+
+- Characters (sum of the scene strings, `work/brief-resolve-standard-a2/count.py`, which reproduces e08's 5,632): a07 6,062; a08 5,700; a09 5,868; a10 5,348; a11a 5,395; a11b 5,503; a12 5,694; a13 5,401. With holds about 545, 516, 529, 492, 495, 503, 518 and 496 s; all under 570 s.
+- Join 8 (a12 to a13) changed under root's decision 4: a12's final frame is the country road with the reused road sign `ma11-road-sign-post-v1.png` (coded "Lakeside", no distance) and no vehicle; a13 opens on it and drives the red hatchback in on its first sentence. Every other join is unchanged. a06 Revision 2 leaves its scene 12 (a07's opening frame) unchanged.
+- Open questions closed: 1 by ruling 24 (descriptions now use the a01 to a06 heading form, with no codenames); 2 by rulings 9 and 20; 3 by ruling 23 and root's decision 2 (both branches once; the app's k slider stays positive); 4 by ruling 19; 5 stands (no tax or levy rates); 6 (lengths) by the review; 7 stays a website note; 8 by ruling 25; 9 by root's decision 4 (hatchback in a06, a07 and a13 only; a08 scene 6 now uses `ma12-motorbike-v1.png`, a11a scene 4 `ma11-trade-van-v1.png`); 10 stands (plate paint order).
+- a11b's patch is now 0 < w < 10 and 0 < A ≤ 25 (ruling 22); the rocket keeps 0 ≤ t ≤ 4 (root's decision 1). a13 keeps "average speed", defines it in scene 1 and recasts the limitation (root's decision 3).
+
+The Revision 1 text below is kept for the record.
+
 ## 1. Summary
 
 | Design | Characters | About (s, with holds) | Scenes | Courses | Anchor | New plate |

@@ -35,3 +35,5 @@ When a job is waiting (quota, plates rendering), move to the next one rather tha
 **Root, 17 Nov evening:** the brief 249 plate findings are ruled in `checks/root-rulings-maths-a11-t-g-s-packs.md` rulings 46 (t05 fire towers: natural scene, triangle is a coded overlay, not registered) and 47 (wall clock: qualified plate accepted; hands and arcs coded from the measured centre). Continue as planned.
 
 **Root, 18 Nov:** brief 250 (`codex-prompts/250-cultural-general-error-check.md`): error check of four designs made general by owner decision. Text-only; do it in a gap after the 19 missing plates.
+
+**Root, 18 Nov:** brief 251 (`codex-prompts/251-maths-standard-a-check-plates-voice.md`): the first 16 Year 12 Maths Standard designs. Steps 1 to 3 (maths check, anchors, plates) in gaps after the 19 Year 11 Maths plates and brief 250; voice after the Year 11 Maths voicing.

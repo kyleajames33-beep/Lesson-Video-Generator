@@ -12,7 +12,7 @@ Review: `../checks/m-s12-a09-learning-review.md` (summary `../checks/m-s12-a07-a
 2. Optional, scene 1 ("Here's that footbridge"): **applied**. "Here's a footbridge." suits Standard 2 students who skipped a08 as well as those who watched it (ruling 20).
 3. Optional, scene 6 and feedback 2 ("A is minus one" heard as the article): **applied**. Scene 6 now says "a, the number in front of x squared, is minus one". Pronunciation note (f) tells the voice to say the letter "ay" in scenes 5, 6 and feedback 2; feedback 2's words are unchanged, so its length stays about 24 s.
 
-Open decisions closed: 1 (ruling 20), 2 (the review: keep the hanger numbers as x). Ruling 24: the description's three bracketed codenames are removed. Joins unchanged: scene 1 opens on a08's two-route frame and scene 12 is a10's opening frame. No number changed; the new readout (a x² = ±9 at x = 3 for a = ±1) is rechecked in `work/brief-resolve-standard-a2/verify.py`.
+Open decisions closed: 1 (ruling 20), 2 (the review: keep the hanger numbers as x). Ruling 24: the description's three bracketed codenames are removed. The "Builds on" line now uses a05's Revision 2 title. Joins unchanged: scene 1 opens on a08's two-route frame and scene 12 is a10's opening frame. No number changed; the new readout (a x² = ±9 at x = 3 for a = ±1) is rechecked in `work/brief-resolve-standard-a2/verify.py`.
 
 Narration 5,868 characters by script (Revision 1: 5,672), about 529 s with holds; speech before the notes about 435 s, under the 570 s cap. Scene 5 is now 803 characters (about 61 s). Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
@@ -279,7 +279,7 @@ Syllabus content, Standard 2 (NSW Mathematics Standard 11-12, 2024):
 "Graph a quadratic relationship of the form y = ax^2 + bx + c using graphing applications"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a
 
-Builds on: Exponential tables and graphs. Next: How the x-intercepts locate the vertex.
+Builds on: Exponential Graphs: y = a^x and y = a^(−x). Next: How the x-intercepts locate the vertex.
 
 #Year12Maths #MathsStandard #Parabolas #HSCScience
 

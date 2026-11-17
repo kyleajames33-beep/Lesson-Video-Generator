@@ -36,3 +36,4 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 
 ## Rulings on the a01 to a06 resolution (18 November 2026)
 26. Accepted: a04a scene 4 gives the pay-back reason first, then the equation for Standard 2; chips quote titles without the "| Year 12 Maths Standard" suffix; a02b practises single-equation multiplying only; a06's title is "Exponential Models: y = ka^x | Year 12 Maths Standard"; the thin margins (a01, a03, a05, a06) stand, to be measured on the voiced take.
+27. Accepted (a07 to a13 resolution): a07 at 6,062 characters (measure on the voiced take; the phone-data sentence is the first trim); a12's invented "Lakeside" sign; the trade van plate in a08 and a11a (plate reuse); a11b scene 3 with its named reserve trim.
