@@ -32,3 +32,7 @@ export * from './exact-surd';
 export * from './a11-algebra-parts';
 export * from './a11-function-parts';
 export * from './a11-graph-parts';
+// Year 11 Advanced wave 2 (brief 245, maths-a11-kit-needs.md trigonometry items 1 to 6): t01 to t16 parts.
+export * from './a11-trig-circle';
+export * from './a11-trig-triangle';
+export * from './a11-trig-bearings';
