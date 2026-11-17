@@ -98,3 +98,169 @@ Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standa
 - Old text: "A farmer has 80 m of fencing to enclose a rectangular paddock. One side is the barn wall (free). The area is modelled by $A = 40w - w^2$ where $w$ is the width of the paddock in metres."
 - Correction: "A farmer has 80 m of fencing to enclose a rectangular paddock on all four sides. The area is modelled by $A = 40w - w^2$ where $w$ is the width of the paddock in metres."
 - Reason: $A = 40w - w^2 = w(40 - w)$ is a rectangle whose four sides use the 80 m ($2w + 2(40 - w) = 80$), which is how card 05 explains $w = 40$ ("all fence used in width, none left for length"). With a barn wall as one side, the area would be $w(80 - 2w)$ (maximum $800$ m² at $w = 20$), not $40w - w^2$ (maximum 400 m²). All the lesson's later numbers (400 m² at 20 m, $-500$ m² at 50 m, $0 \leq w \leq 40$) are correct for the four-sided paddock, so only the hook needs to change.
+
+## 5. Findings from the Year 12 Investment and loans packs, i01 to i11 (18 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standard/year12/investment-and-loans/` (lessons 03, 05, 06, 07, 11, 14 and 15; SHA256 values in `programme/maths-standard-route-inputs-2.json`). No site file was changed. Every value below was recalculated with SymPy 1.14.0 (`work/brief-standard-i1/recalc.py`, output in `recalc-output.txt`). Packs: `pre-design/maths-standard/math-s12-i01.md` to `i11.md`. Lessons 05, 14 and 15 had no numerical errors.
+
+### MS-11. A monthly compounding answer is rounded too early
+
+- Lesson: `year12/investment-and-loans/lesson06.sa.html`, worked example `we-2`, step 2.
+- Old text: "$A = 5000 \times (1.005)^{36} = 5000 \times 1.1967 = \$5983.50$"
+- Correction: "$A = 5000 \times (1.005)^{36} = \$5983.40$" (keep the full calculator value of $(1.005)^{36} = 1.196680\ldots$ until the last line).
+- Reason: $5000 \times 1.005^{36} = 5983.4026$, so $5983.40 to the cent. Rounding the factor to 1.1967 first moves the answer by 10 cents.
+
+### MS-12. A quarterly compounding answer is given to the dollar from a rounded factor
+
+- Lesson: `lesson06.sa.html`, worked example `we-1`, step 3.
+- Old text: "$A = 10\,000 \times 1.4859 = \$14\,859$" with the note "Calculate $(1.02)^{20} \approx 1.4859$"
+- Correction: "$A = 10\,000 \times (1.02)^{20} = \$14\,859.47$" and "Keep the full value of $(1.02)^{20}$ in the calculator".
+- Reason: $10\,000 \times 1.02^{20} = 14\,859.47$. The lesson's other money answers are given to the cent (\$9671.41, \$2315.25), and the lesson tells students to round only at the end.
+
+### MS-13. The revisit card truncates the 20-year values
+
+- Lesson: `lesson06.sa.html`, card 10 (Revisit your thinking).
+- Old text: "After 20 years: compound gives $5000 \times (1.06)^{20} = \$16\,035$ vs simple $5000(1 + 0.06 \times 20) = \$11\,000$, a $5,035 difference."
+- Correction: "After 20 years: compound gives $5000 \times (1.06)^{20} = \$16\,035.68$ vs simple $5000(1 + 0.06 \times 20) = \$11\,000$, a $5035.68 difference."
+- Reason: $5000 \times 1.06^{20} = 16\,035.677$. To the dollar it is $16 036, not $16 035; to the cent it is $16 035.68.
+
+### MS-14. The "true rate" answer repeats the flat rate the lesson warns against
+
+- Lesson: `lesson07.sa.html`, comprehensive answers, Drill 2 (the $2000 purchase with a $200 fee repaid over 12 months).
+- Old text: "Drill 2: Total = $\$2,200$. True rate = $\$200$ on $2,000 over 1 year = 10% (flat rate). Misleading because "0% interest" hides the fee which is functionally interest."
+- Correction: "Drill 2: Total = $2200. The flat rate is $200 ÷ $2000 = 10% for one year, but the $2000 is repaid in 12 monthly payments of $183.33, so on average only about half of it is owed. The true rate is about 18% p.a. (about 1.5% a month), nearly double the flat rate. Misleading because "0% interest" hides the fee, which works as interest."
+- Reason: question (b) asks for the true annual rate, and the lesson's own rule (card 06 and Trap 03) is that the true rate of a flat-rate charge is roughly double. Solving $2000 = 183.33 \times \frac{1 - (1 + i)^{-12}}{i}$ gives $i = 1.498\%$ a month, 17.97% p.a. nominal (19.53% effective). (The lesson's other flat-rate claims check: 14.35% for card 06, 12.50% for `we-2` and 10.97% for SA 2 are inside or beside the quoted ranges.)
+
+### MS-15. An ETF future value is rounded to the wrong hundred
+
+- Lesson: `lesson11.sa.html`, worked example `we-2`, step 4.
+- Old text: "$FV_{\text{ETF}} = 350 \times \dfrac{(1.004667)^{480}-1}{0.004667} \approx \$625\,800$"
+- Correction: "$FV_{\text{ETF}} = 350 \times \dfrac{(1.004667)^{480}-1}{0.004667} \approx \$625\,900$"
+- Reason: the expression as written equals $625 905.54. "Super wins by ≈ $2.36M" is unchanged.
+
+### MS-16. The employer super contribution uses an old rate
+
+- Lesson: `lesson11.sa.html`, short answer SA 3 (and `we-2`, which uses the same figures).
+- Old text: "A 25-year-old earns $\$60,000$ and contributes $\$500$/month to super. Their employer contributes $\$575$/month."
+- Correction: "A 25-year-old earns $60,000 and contributes $500/month to super. Their employer contributes $600/month." Then SA 3 (a): "$1100/month ... FV = $1100 × [(1.006)^480 − 1]/0.006 ≈ $3,054,600", and the same $600 in `we-2`.
+- Reason: $575 × 12 = $6900 is 11.5% of $60 000, the super guarantee rate for 2024-25. The rate has been 12% since 1 July 2025 (ATO, super guarantee percentage), so the employer pays $7200 a year, $600 a month. Recalculated: $1100 × [(1.006)^480 − 1] ÷ 0.006 = $3 054 631.89. This content is marked beyond the syllabus on the page, so the fix is low priority, but the site's money figures should match the current year.
+
+### MS-17. A "Common error" box states a correct fact
+
+- Lesson: `lesson03.sa.html`, card "Straight-Line Depreciation", the box after "Must do".
+- Old text: "Common error: Straight-line depreciation uses a fixed dollar amount each year; it may be expressed as a fixed percentage of the original value. If $D = \$2{,}500$ per year, the asset loses $2,500 every year regardless of its current value. Applying a percentage to the current value each year is declining balance depreciation, a different formula."
+- Correction: "Common error: taking a percentage of the current value each year when the question describes straight-line depreciation. Straight-line depreciation removes a fixed dollar amount each year (sometimes stated as a fixed percentage of the original value). If $D = \$2{,}500$ per year, the asset loses $2,500 every year regardless of its current value. Taking a percentage of the current value each year is declining balance depreciation, a different formula."
+- Reason: the box is labelled as an error, but its first sentence is the correct rule, so a student can read the rule as the mistake. Name the mistake first.
+
+### MS-18. A comparison sentence has no example to refer to
+
+- Lesson: `lesson03.sa.html`, card "Straight-Line Depreciation", the line before the summary.
+- Old text: "In this example declining balance falls faster initially; the comparison depends on the rates chosen."
+- Correction: delete it here, or move it to the spreadsheet card ("Modelling both methods in a spreadsheet"), where the $40 000 example shows declining balance falling faster in years 1 to 3.
+- Reason: the straight-line card has no declining-balance example, so "this example" points at nothing.
+
+### Teaching gaps (owner decision)
+
+These are gaps, not copy errors. The packs plan original teaching for them.
+
+- Present value and the interest rate (`ci64a24122`, `cib6fe9f5b`): the syllabus asks students to calculate "the future value, present value or interest rate" of a compound interest investment. `lesson06.sa.html` only calculates future values; no example finds PV = FV ÷ (1 + r)^n or the rate from PV, FV and n. The crosswalk records the point as covered.
+- Inflation as compound growth (`ci1256741b`, `cicf066fd6`): `lesson11.sa.html` treats inflation only through "real return = nominal return − inflation rate", an approximation it does not label as one. No lesson grows a price with FV = PV(1 + r)^n.
+- Appreciation (same points; already listed in section 2): no lesson in the folder mentions it.
+- Graph comparisons with digital tools: `lesson05.sa.html` states that simple interest graphs are straight lines but never compares two graphs for different rates or times (`ci04f3e92c`, `ci32753eab`); `lesson14.sa.html` graphs a share price by hand only (`cie1731909` says "with and without using digital tools"); `lesson06.sa.html` uses a spreadsheet only for simple against compound, not for varying the rate, term or compounding period (`ciaa253014`).
+
+### Structure notes
+
+- Notation differs between lessons and from the syllabus: lessons 05 and 06 write $A = P(1 + rn)$ and $A = P(1 + r)^n$; lesson11 card 08 writes $FV = PV(1+r)^n$, as the syllabus does. The videos use the syllabus letters.
+- `lesson06.sa.html` teaches the effective annual rate (card 07, `we-1` step 4, `we-2` step 3, SA 1 (c), SA 2, SA 3 (b)) with no "beyond the syllabus" notice, while `lesson07.sa.html` carries one. The 2024 Standard points ask only for the effect of the compounding period on the future value. `lesson03.sa.html` is titled "Depreciation | Declining Balance Method" and labelled "Year 11 review 1 of 2", although it teaches both methods for the Year 12 points.
+
+## 6. Findings from the Year 12 Investment, loans and annuities packs, i12 to i23 (18 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-standard/year12/investment-and-loans/` (lessons 07, 08, 09, 10 and 12) and `subjects/maths-standard/year12/annuities/` (lessons 01, 02 and 03); SHA256 values in `programme/maths-standard-route-inputs-3.json`. No site file was changed. Every value below was recalculated with SymPy 1.14.0 (`work/brief-standard-i2/recalc.py`, output in `recalc-output.txt`; where a balance is run month by month, interest is rounded to the cent each period). Packs: `pre-design/maths-standard/math-s12-i12.md` to `i23.md`. Lessons 07, 08 (apart from method, MS-24) and 09 had no numerical errors in the parts checked.
+
+### MS-19. The credit card hook gives the figures of a different example
+
+- Lesson: `year12/investment-and-loans/lesson10.sa.html`, opening paragraph.
+- Old text: "You buy a $\$2000$ television on your credit card. The minimum payment is $\$60$/month. The interest rate is 19.99% p.a. How long will it take to pay off? How much will you pay in total? The answer shocks most people: over 9 years and more than $6600 total, more than triple the original price."
+- Correction: "... The answer surprises most people: about 4 years and 2 months, and nearly $\$2950$ in total, almost $\$950$ of it interest." (Or keep the 9-year figures and change the example to the lesson's own "$\$3000$ ... at 20% p.a. ... $\$60$/month".)
+- Reason: $2000 at 19.99% p.a. (÷ 12 a month) with $60 a month takes 50 payments, total $2942.85, interest $942.85. "Over 9 years" and about $6504 belong to the $3000 example in card 06; "more than $6600" matches neither.
+
+### MS-20. Credit card interest "for a given number of days" is taught as simple interest
+
+- Lesson: `lesson10.sa.html`, card 02 ("Daily interest: $I = \text{Balance} \times \dfrac{r}{365} \times \text{days}$"), card 05 and Trap 01.
+- Old text (card 05): "Daily interest $= 2000 \times \dfrac{0.1999}{365} = \$1.095$/day. Monthly interest $\approx 1.095 \times 30 = \$32.85$/month".
+- Correction: add the compound form the syllabus names (Standard 2 `ci13e98315`, Standard 1 `ci2dbee6b0`: "Calculate the compound interest charged ... for a given number of days"): "Compounded daily for 30 days: $I = 2000\left(1 + \dfrac{0.1999}{365}\right)^{30} - 2000 = \$33.12$." If the simple daily method is kept, label it as simple interest and give its 30-day value as $\$32.86$ (1.0953425 × 30), not $\$32.85$ (which comes from rounding the daily figure first).
+- Reason: the syllabus asks for compound interest over a number of days; the lesson's only day-count formula is simple interest, although card 02 itself says daily compounding raises the effective rate.
+
+### MS-21. A minimum-payment answer is not supported by the question
+
+- Lesson: `lesson10.sa.html`, comprehensive answers, SA 1 (c).
+- Old text: "(c) n ≈ 280 months (~23 years) [1]."
+- Correction: "(c) Paying a fixed $\$112.50$ each month: about 67 months (5.6 years)." If the intended minimum is "2.5% of the balance or $\$25$, whichever is greater", say so in the question and give "about 238 months (almost 20 years)".
+- Reason: $4500 at 19.99% p.a. (÷ 12) with $112.50 a month clears in 67 payments; with a 2.5% minimum and a $25 floor it takes 238. Neither gives 280.
+
+### MS-22. The $150-a-month comparison is a little low
+
+- Lesson: `lesson10.sa.html`, card 06 ("The minimum payment trap").
+- Old text: "Comparison, paying $150/month instead: Paid off in approximately 24 months. Total paid $\approx \$3600$. Saves nearly $\$3000$ and 7 years."
+- Correction: "Comparison, paying $150/month instead: paid off in about 25 months. Total paid $\approx \$3680$. Saves about $\$2800$ and 7 years."
+- Reason: $3000 at 20% p.a. (÷ 12) with $150 a month takes 25 payments, total $3679.80, against $6504.24 for the $60 minimum: a saving of $2824.44.
+
+### MS-23. Two cards give different interest for the same balance transfer
+
+- Lesson: `lesson10.sa.html`, `we-2` step 3 ("Total interest ≈ $\$632$ over 12 months at $\$400$/month") and card 08 ("Interest saved at 20% over 12 months $\approx \$550$. Minus $\$100$ fee $= \$450$ net saving").
+- Correction (card 08): "Interest saved at 20% over 12 months $\approx \$632$. Minus $\$100$ fee $= \$532$ net saving", matching `we-2`.
+- Reason: $5000 at 20% p.a. (÷ 12) with $400 a month accrues $631.57 of interest in 12 months. Balance transfers are not a 2024 point, so this is low priority.
+
+### MS-24. Loan and annuity answers use methods outside Standard 2
+
+- Lessons: `lesson08.sa.html` (card 02, card 05, `we-1`, `we-2` step 4, SA 2 (b)), `lesson10.sa.html` (card 06, revisit card), `lesson12.sa.html` (card 06), `annuities/lesson02.sa.html` (card 05, "Finding the required payment").
+- Old text (examples): "$M = PV \times \dfrac{r}{1 - (1+r)^{-n}}$"; "$n = \ln(0.6719)/\ln(1.008) \times (-1)$"; "$n = \dfrac{\ln 1.1\overline{6}}{\ln 1.004} \approx 38.7 \text{ months}$".
+- Correction (owner decision): mark the repayment formula and every logarithm step "Beyond the syllabus" (as lessons 07, 09, 12 and annuities 01 and 02 already do for their own extensions), and give the Standard 2 route beside each: a table of repayments per $1000 or a present value interest factor for the repayment; a spreadsheet's row count, a loan calculator or a supplied graph for the term.
+- Reason: Standard 2 has no logarithms and its reference sheet has no loan repayment formula; the 2024 points ask for tables, spreadsheets, graphs and digital tools ("using a graph or by calculation", "using a table of interest factors").
+
+### MS-25. A mortgage repayment is rounded down
+
+- Lesson: `annuities/lesson03.sa.html`, `we-2` steps 2 and 3.
+- Old text: "$= \$2{,}098.64$/month" and "Total $= 2098.64 \times 360 = \$755{,}510$. Interest $= \$355{,}510$"
+- Correction: "$= \$2{,}098.66$/month" and "Total $= 2098.66 \times 360 = \$755{,}517.60$. Interest $= \$355{,}517.60$"
+- Reason: $400000 \times 0.004 \div (1 - 1.004^{-360}) = 2098.6614$. `investment-and-loans/lesson08.sa.html` card 06 gives the same loan correctly as $2098.66.
+
+### MS-26. The 20-year repayment contradicts the lesson's own answer
+
+- Lesson: `annuities/lesson03.sa.html`, card 07 ("Comparing loan options, term vs total interest").
+- Old text: "20-year term: ... $= \$1{,}168.11$/month. Total $= \$280{,}346$. Interest $= \$100{,}346$." and "Saving: $\$29{,}072$ in interest"
+- Correction: "20-year term: ... $= \$1{,}168.12$/month. Total $\approx \$280{,}350$. Interest $\approx \$100{,}350$." and "Saving: about $\$29{,}068$ in interest"
+- Reason: the exact repayment is $1168.1234; SA 1 in the same lesson gives $1168.12 and a total of $280 350. The 25-year figures ($1031.39, $309 418) are right when the unrounded repayment is used.
+
+### MS-27. A required super contribution is rounded too early
+
+- Lesson: `annuities/lesson02.sa.html`, `we-2` steps 3 and 4.
+- Old text: "$(1.006)^{180} = 2.935$, so $M = \dfrac{600}{1.935} = \$310.08$/month" and "Total deposited $= 310.08 \times 180 = \$55{,}814$. Interest $= 100000 - 55814 = \$44{,}186$"
+- Correction: "$(1.006)^{180} = 2.935192\ldots$, so $M = \$310.05$/month" and "Total deposited $= 310.05 \times 180 = \$55{,}809$. Interest $= \$44{,}191$"
+- Reason: $100000 \times 0.006 \div (1.006^{180} - 1) = 310.0467$. Rounding $(1.006)^{180}$ to 2.935 moves the answer by 3 cents a month.
+
+### MS-28. The salary-sacrifice example ignores the contributions tax it mentions
+
+- Lesson: `investment-and-loans/lesson12.sa.html`, card 08 ("Superannuation versus after-tax investing").
+- Old text: "Super option: Contribution is pre-tax. $M = 500$" ... "$\approx 500 \times 1801 = \$900{,}400$" and "Difference: Super wins by approximately $\$445{,}000$".
+- Correction: "Super option: the fund deducts 15% contributions tax, so $M = 500 \times 0.85 = 425$" ... "$\approx 425 \times 1801.05 = \$765{,}400$" and "Difference: super wins by approximately $\$310{,}000$".
+- Reason: the card's own problem says the contribution is "taxed at 15%", and SA 3 in the same lesson deducts it ($300 becomes $255). $425 × 1801.0546 = $765 448.21; the shares figure ($455 027.54) is right. ($500 × 1801.0546 = $900 527.30, so "$900,400" is also low.)
+
+### MS-29. Gap: no table of interest factors
+
+- Lessons: `annuities/lesson02.sa.html` and `lesson03.sa.html` declare "Using a table of interest factors, calculate the future value or present value of an annuity" (`ci8032ba07`), and lesson02's notice says the exam "supplies factor tables", but no page shows a future value or present value interest factor table; every example uses the closed-form formula. `cifb9dd435` (contribution and single sum from a table) is also taught by formula only, and its single-sum half is not taught at all. `ci025a6c75` (varying the amount initially invested, the payment, the rate and the duration "using digital tools") is taught only through duration (lesson02 card 07), with no digital tool and no amount initially invested.
+- Suggested addition: a future value and a present value interest factor table (rates per period across, periods down, 4 decimal places), with one lookup example each using the lessons' own numbers ($2000 a year at 5% for 4 years: FV factor 4.3101; $500 a month at 0.5% for 60 months: PV factor 51.7256), a single-sum example, and a spreadsheet with four input cells. Tables to 4 decimal places are in `work/brief-standard-i2/factor-tables-output.txt` in the video repo.
+
+### MS-30. Gap: credit card fees, the rate comparison, a statement and credit choices
+
+- Lesson: `investment-and-loans/lesson10.sa.html`. The lesson names no credit card fee except the balance transfer fee (no annual, late payment, cash advance or foreign transaction fee: `ci435086e3`, `ci8a052732`), never compares a card's rate with other loan types in numbers (`ci3480c9ff`, `ci9715d6e5`), shows no credit card statement although the syllabus asks students to "Interpret a credit card statement" (`cife5c18db`, `ci42184aca`), and never sorts goals into short, medium and long term or compares a card with a personal loan for them (`ci3e2e1f21`, `ci52cad03f`; the crosswalk marks both partial).
+- Suggested addition: a fees list with what triggers each fee; a rate ladder (home loan, personal loan, low-rate card, standard card) from RBA tables F5 and F8 with the month named; an unbranded statement with the minimum repayment warning; one worked card-against-personal-loan comparison (lesson12's drill 1 (b) has the numbers but no answer: $94.01 a month, interest $384.36 on the 8% loan, against 46 months and $1315.72 on the card).
+
+### MS-31. Gap: no withdrawal annuity
+
+- Lesson: `annuities/lesson01.sa.html`. `cibac40b05` defines an annuity as regular contributions "or as a single sum investment from which regular equal withdrawals are made". The lesson's tables model contributions only.
+- Suggested addition: a four-row withdrawal table, for example $10 000 at 4% p.a. with $2500 withdrawn at the end of each year: closing balances $7900.00, $5716.00, $3444.64, $1082.43.
+
+### MS-32. Owner note: lottery contexts
+
+- Lessons: `annuities/lesson01.sa.html` (opening paragraph) and `annuities/lesson03.sa.html` (hook, card 01, card 08, revisit card, SA 2) frame present value as a lottery prize choice. The videos do not use these (root ruling 6: no gambling). The owner may prefer a non-gambling choice on the site too, for example a retention bonus paid yearly or as one sum now.

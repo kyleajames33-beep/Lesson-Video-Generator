@@ -1,0 +1,1223 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "brief": "Maths Standard start (root request, 18 November 2026), methods of brief 243",
+  "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+  "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+  "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+  "officialEvidence": {
+    "source": "NSW Curriculum Year 12 Standard 2 Investment and loans and Annuities pages and Year 12 Standard 1 Depreciation and loans page, as recorded in the crosswalk (read 18 November 2026)",
+    "year12Standard2Points": 18,
+    "year12Standard1Points": 10,
+    "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+    "commitDate": "2026-11-16 11:01:17 +1100",
+    "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 18 November 2026 and match the crosswalk inventory. Investment and loans lessons 07, 08, 09, 10 and 12 and Annuities lessons 01, 02 and 03 use data-step-id sections; worked examples are we-1 and we-2 inside them."
+  },
+  "recommendations": [
+    "Run i12 to i23 in outline order. Standard 2 students take all twelve. Standard 1 students take i12, i13, i14, i16, i17 and i18, then go to math-s12-t01 (i15 and the Annuities videos i19 to i23 are Standard 2 only). i16 must open without i15, and i18 needs a final frame that serves both paths.",
+    "Joins: i12 opens on math-s12-i11's proposed final frame (a price tag with \"buy now, pay later?\"); this part proposes hanging it on the $3 000 e-bike of the site's BNPL table. Provisional until both designs agree. i23 hands to math-s12-t01 with a right-angled roof triangle on the house from i18.",
+    "Pace flags (gentler Standard pace): i17 is at risk (daily compound interest, a statement and minimum payments); suggested split i17a and i17b. i14 and i23 should be watched. The others fit 7 to 9 minutes.",
+    "Method: Standard 2 has no logarithms and no loan repayment formula. Repayments come from a table of repayments per $1 000 or a loan calculator; terms and amounts owing from a spreadsheet or a supplied graph; annuity values from future value and present value interest factor tables (generated to 4 d.p. in work/brief-standard-i2/factor-tables-output.txt). Credit card day-count interest is compound: I = P(1 + r/365)^n - P.",
+    "Money figures (root ruling 5), read 18 November 2026: RBA F5 October 2026 (credit cards standard 21.74% p.a., low rate 13.49%, banks' discounted owner-occupier variable 7.05%); RBA F8 September 2026 (credit card balances incurring interest 18.91%, new fixed-rate personal term loans 10.39%); RBA F4 October 2026 (bonus savings 5.05%, online savings 3.30%, 1-year term deposits 5.00%); Moneysmart on BNPL fees and credit card interest-free days; ASIC on BNPL credit licensing from June 2025 and the minimum repayment warning; ATO: super guarantee 12% for 2026-27 and Payday Super from 1 July 2026. Each video says once that rates change.",
+    "Fourteen new site findings are logged as MS-19 to MS-32 in docs/production/claude-pm/site-corrections-maths-standard.md (section 6): five numerical errors in lesson10 (MS-19, MS-21, MS-22, MS-23, with MS-20 the simple-interest method), one method finding across lessons 08, 10, 12 and annuities 02 (MS-24), three rounding errors in annuities 02 and 03 (MS-25 to MS-27), one in lesson12 (MS-28), three gaps (MS-29 factor tables, MS-30 credit card fees, rates, statement and goals, MS-31 withdrawal annuity) and one owner note on lottery contexts (MS-32).",
+    "Outline problem: the outline table puts Trigonometry (rows 37 to 47) straight after this strand, but the outline's recommended Year 12 strand order puts Ratios and rates (rows 48 to 61) before Trigonometry. i23's final frame follows the table (math-s12-t01) as briefed; root should settle the order.",
+    "Kit needs for i12 to i23 are in docs/production/claude-pm/checks/maths-standard-kit-needs-i.md (section \"i12 to i23\"); the main new parts are InterestFactorTable, ReducingBalanceTable and CreditCardStatement."
+  ],
+  "part": 3,
+  "covers": "math-s12-i12 to math-s12-i23 (Year 12 Investment, loans and annuities part 2: loans, buy now pay later, credit cards and annuities; Standard 2 and Standard 1)",
+  "subjects": {
+    "Mathematics Standard": {
+      "year": 12,
+      "entries": [
+        {
+          "id": "math-s12-i12",
+          "playlistOrder": 25,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "What do buy now pay later, short-term and long-term loans really cost?",
+          "syllabusActionIds": [
+            "ciad381478",
+            "ci9fb7eb0d"
+          ],
+          "standard2ActionIds": [
+            "ciad381478"
+          ],
+          "standard1ActionIds": [
+            "ci9fb7eb0d"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ciad381478",
+              "course": "Year 12 Standard 2",
+              "text": "Compare and analyse the costs associated with buy now, pay later, short term and long term loans",
+              "sourceHtml": "<p>Compare and analyse the costs associated with <a data-item-id=\"7129b4fc-b867-4c2b-a402-d5e656c34740\" href=\"\"><em>buy now</em>, <em>pay later</em></a>, short term and long term <a data-item-id=\"40ba7f31-446b-4516-a811-4ad333acd142\" href=\"\">loans</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9fb7eb0d",
+              "course": "Year 12 Standard 1",
+              "text": "Compare and analyse the costs associated with buy now, pay later, short term and long term loans",
+              "sourceHtml": "<p>Compare and analyse the <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">costs</a> associated with <a data-item-id=\"7129b4fc-b867-4c2b-a402-d5e656c34740\" href=\"\"><em>buy now</em>, <em>pay later</em></a>, short term and long term <a data-item-id=\"40ba7f31-446b-4516-a811-4ad333acd142\" href=\"\">loans</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+            "sectionIds": [
+              "compare-loans-and-terms"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "sectionIds": [
+                "compare-loans-and-terms"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s11-m03",
+              "text": "cif403be54: buy now, pay later costs (account and late fees) (outline dependency list)."
+            },
+            {
+              "source": "math-s11-m04",
+              "text": "ci6124d502, ci039eaed1: buying on terms and comparing total costs (outline dependency list)."
+            },
+            {
+              "source": "math-s12-i01",
+              "text": "cif2fdb59a (S1 ci9ef22098): interest as the price of borrowing over time."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i11"
+          ],
+          "startBoundary": "Provisional, to agree with the i11 design: i11's proposed final frame (a price tag, \"buy now, pay later?\", \"Next: the real cost of borrowing\") hangs on a $3 000 e-bike; three ways to pay fan out from it: BNPL over 12 months, a 2-year loan, a 5-year loan.",
+          "stopBoundary": "Compare BNPL, a short-term and a long-term loan for the same purchase by total paid and the extra above the price (interest or fees), not by the repayment; explain why a longer term at the same rate costs more interest; explain that BNPL is interest-free only while every instalment is on time, and that late fees, account fees and post-period interest make it dear; choose and justify for a situation. Repayments are supplied. The month-by-month balance is i13.",
+          "nextHandoff": "math-s12-i13",
+          "advancedReuseCandidates": [],
+          "recommendation": "Keep the site's $3 000 table exactly (BNPL $250 x 12; $141.22 x 24; $66.73 x 60). Recall Year 11 m03 in one sentence; do not re-teach BNPL fees. Add one account-fee stamp, and say once that rates and fees change (RBA F8 September 2026 new fixed-rate personal loans 10.39% p.a.; BNPL credit licensing from June 2025).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i12.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i13",
+          "playlistOrder": 26,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How does a reducing balance loan change from one period to the next?",
+          "syllabusActionIds": [
+            "ci94e049c3",
+            "cibb416d3e",
+            "cib9ea7be8",
+            "cica72a281"
+          ],
+          "standard2ActionIds": [
+            "ci94e049c3",
+            "cibb416d3e"
+          ],
+          "standard1ActionIds": [
+            "cib9ea7be8",
+            "cica72a281"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci94e049c3",
+              "course": "Year 12 Standard 2",
+              "text": "Model a reducing balance loan as an application of compound interest with periodic repayments in tabular form for up to four time periods, with and without using digital tools",
+              "sourceHtml": "<p>Model a <a data-item-id=\"4734c6ca-f40b-4c66-9a8a-3e1780773c57\" href=\"\">reducing balance loan</a> as an application of compound interest with periodic <a data-item-id=\"938aef6b-1816-4fec-9b31-d5190df15ab8\" href=\"\">repayments</a> in tabular form for up to four time periods, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cibb416d3e",
+              "course": "Year 12 Standard 2",
+              "text": "Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts",
+              "sourceHtml": "<p>Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cib9ea7be8",
+              "course": "Year 12 Standard 1",
+              "text": "Model a reducing balance loan as an application of compound interest, given the interest rate per time period, with periodic repayments, using a table for up to three time periods",
+              "sourceHtml": "<p>Model a <a data-item-id=\"4734c6ca-f40b-4c66-9a8a-3e1780773c57\" href=\"\">reducing balance loan</a> as an application of compound interest, given the <a data-item-id=\"a23ae884-0691-4afd-aa44-431ef67e8fcc\" href=\"\">interest rate</a> per time period, with periodic <a data-item-id=\"938aef6b-1816-4fec-9b31-d5190df15ab8\" href=\"\">repayments</a>, using a table for up to three time periods</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cica72a281",
+              "course": "Year 12 Standard 1",
+              "text": "Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts",
+              "sourceHtml": "<p>Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson09.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson09.sa.html",
+            "sectionIds": [
+              "reducing-balance-loans",
+              "drill-and-revisit-reducing-balance"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "635c4a42aa2d954f404df8cd664221d1ca8b2ebe7085c1563152c4cac7d206ff"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson09.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson09.sa.html",
+              "sectionIds": [
+                "reducing-balance-loans",
+                "drill-and-revisit-reducing-balance"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "635c4a42aa2d954f404df8cd664221d1ca8b2ebe7085c1563152c4cac7d206ff"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "sectionIds": [
+                "read-an-amortisation-schedule",
+                "drill-and-revisit-amortisation"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "ci64a24122 (S1 cib6fe9f5b): compound interest, the balance multiplied by 1 + r each period."
+            },
+            {
+              "source": "math-s12-i12",
+              "text": "ciad381478 (S1 ci9fb7eb0d): total cost of a loan; repayments taken as given."
+            },
+            {
+              "source": "math-s12-a04",
+              "text": "ci7ff6c8c4 and the a04b split: a spreadsheet with cell formulas and fill-down (Year 11 first spreadsheet: math-s11-l05)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i12"
+          ],
+          "startBoundary": "i12 ends on the e-bike's 2-year loan ($3 000, $141.22 a month): where does each repayment go? Three rows of that loan open the table.",
+          "stopBoundary": "Model a reducing balance loan in a table, one row per period: interest = balance x rate per period, add it, subtract the repayment, carry the end balance down (three rows for Standard 1, four for Standard 2); explain why the interest falls while the repayment stays fixed; build it in a spreadsheet with next opening = last closing (=E2) and fill down; change one cell to answer a new question. Extra repayments are i14; repayment, owing, total and term are i15.",
+          "nextHandoff": "math-s12-i14",
+          "advancedReuseCandidates": [
+            "math-a12-f09"
+          ],
+          "recommendation": "Spine: the site's spreadsheet ($20 000, 0.5% a month, $600; rows to $17 984.95). Add-then-subtract table on screen; the site's principal-repaid split as a bar. No repayment formula. Show the monthly rate already converted for Standard 1.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i13.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i14",
+          "playlistOrder": 27,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How do extra repayments, lump sums and paying more often shorten a loan?",
+          "syllabusActionIds": [
+            "ci668ed87c",
+            "ci69b1ad8f"
+          ],
+          "standard2ActionIds": [
+            "ci668ed87c"
+          ],
+          "standard1ActionIds": [
+            "ci69b1ad8f"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci668ed87c",
+              "course": "Year 12 Standard 2",
+              "text": "Examine the effect of changing the repayment frequency, additional repayments or a lump-sum payment on the term and cost of a loan using a graph or by calculation",
+              "sourceHtml": "<p>Examine the effect of changing the repayment frequency, additional repayments or a <a data-item-id=\"8ce981c6-e4bb-4840-8416-a81bf7664567\" href=\"\">lump-sum payment</a> on the term and cost of a loan using a graph or by calculation</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "Covered; the new term is found with logarithms on the site (MS-24); the video uses a spreadsheet or a graph, and adds a lump-sum example (the site has none)."
+            },
+            {
+              "id": "ci69b1ad8f",
+              "course": "Year 12 Standard 1",
+              "text": "Examine the effect of changing the repayment frequency, making additional repayments or a making a lump-sum payment on the term and cost of repaying a loan",
+              "sourceHtml": "<p>Examine the effect of changing the repayment frequency, making additional repayments or a making a <a data-item-id=\"8ce981c6-e4bb-4840-8416-a81bf7664567\" href=\"\">lump-sum payment</a> on the term and cost of repaying a loan</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": "As ci668ed87c: no lump-sum example on the site."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+            "sectionIds": [
+              "make-extra-repayments",
+              "compare-loans-and-terms",
+              "practise-amortisation"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2"
+            ],
+            "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "sectionIds": [
+                "make-extra-repayments",
+                "compare-loans-and-terms",
+                "practise-amortisation"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i13",
+              "text": "ci94e049c3, cibb416d3e (S1 cib9ea7be8, cica72a281): the period table and its spreadsheet."
+            },
+            {
+              "source": "math-s12-i12",
+              "text": "ciad381478: total cost = total paid minus amount borrowed."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i13"
+          ],
+          "startBoundary": "i13 ends on its spreadsheet with the repayment cell changed from $600 to $700: 37 months becomes 31. Why does a small change matter so much, and what else does it?",
+          "stopBoundary": "Explain that every dollar above the period's interest reduces the balance and every later interest charge; show with a spreadsheet, a calculation or a given graph how a regular extra repayment, a lump sum and fortnightly half-payments (13 monthly repayments a year) shorten the term and cut total interest; read the new term and saving; say why early extra payments save more. No logarithms.",
+          "nextHandoff": "math-s12-i15",
+          "advancedReuseCandidates": [
+            "math-a12-f10"
+          ],
+          "recommendation": "Spine: site we-2 ($15 000 at 9.6% p.a., $315.76; +$50 gives 50 payments and saves $693.64). Add an original lump sum ($2 000 at month 12: 52 payments, saves $839.31). Avoid the $400 000 mortgage as the spine (Advanced f10's anchor). Pace: watch; fortnightly can move to a practice question.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i14.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i15",
+          "playlistOrder": 28,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How do we find the repayment, amount owing, total paid and time to repay a loan?",
+          "syllabusActionIds": [
+            "ci659a906b"
+          ],
+          "standard2ActionIds": [
+            "ci659a906b"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci659a906b",
+              "course": "Year 12 Standard 2",
+              "text": "Solve problems involving reducing balance loans including calculating the total amount paid, monthly repayments, amount still owing and the time taken to repay the loan",
+              "sourceHtml": "<p>Solve problems involving reducing balance loans including calculating the total amount paid, monthly repayments, amount still owing and the time taken to repay the loan</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "Covered by formula and logarithms, which Standard 2 does not use (MS-24); the video uses tables, spreadsheets and graphs."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+            "sectionIds": [
+              "a-systematic-approach",
+              "the-car-purchase-decision"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "cb32815eed2123cd6997f15a0617b992061ed309b103cc18d7e601b008fd4acb"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "sectionIds": [
+                "a-systematic-approach",
+                "the-car-purchase-decision"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "cb32815eed2123cd6997f15a0617b992061ed309b103cc18d7e601b008fd4acb"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson08.sa.html",
+              "sectionIds": [
+                "compare-loans-and-terms"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "13b6a566e1fce40d02e973d1b5dcb86cb64a519b15c9c123b15afae5766541e0"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i13",
+              "text": "ci94e049c3, cibb416d3e: the period table and spreadsheet."
+            },
+            {
+              "source": "math-s12-i14",
+              "text": "ci668ed87c: a spreadsheet or graph gives a new term."
+            },
+            {
+              "source": "math-s12-i04",
+              "text": "ciaa253014: rate per period and number of periods."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i14"
+          ],
+          "startBoundary": "i14 ends on the camper loan's two balance curves landing at 61 and 50 payments. Four questions remain for any loan: repayment, total paid, amount still owing, time to repay.",
+          "stopBoundary": "Find the monthly repayment from a table of repayments per $1 000 (or a loan calculator); the total paid and interest; the amount owing after a number of payments from the spreadsheet row or a graph; the time to repay by counting rows to zero (smaller last payment); a four-step routine (what is asked, givens with units, tool, sentence). No formula, no logarithms. PV factors are i20.",
+          "nextHandoff": "math-s12-i16",
+          "advancedReuseCandidates": [
+            "math-a12-f11"
+          ],
+          "recommendation": "Spine: lesson12's $25 000 at 7.2% p.a. over 5 years ($497.39; table value 19.8957 per $1 000; owing $16 061.23 after 24 payments by spreadsheet). Do not use lesson08's $250 000 mortgage as a home loan (unrealistic for NSW 2026, ruling 5). Standard 2 only: i16 must not depend on this video.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i15.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i16",
+          "playlistOrder": 29,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "Why is a credit card a reducing balance loan, and what do its fees and interest-free period mean?",
+          "syllabusActionIds": [
+            "ci213a72e9",
+            "ci3480c9ff",
+            "ci435086e3",
+            "ci23d33e6f",
+            "ci9715d6e5",
+            "ci8a052732"
+          ],
+          "standard2ActionIds": [
+            "ci213a72e9",
+            "ci3480c9ff",
+            "ci435086e3"
+          ],
+          "standard1ActionIds": [
+            "ci23d33e6f",
+            "ci9715d6e5",
+            "ci8a052732"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci213a72e9",
+              "course": "Year 12 Standard 2",
+              "text": "Explain how credit cards are an example of a reducing balance loan",
+              "sourceHtml": "<p>Explain how <a data-item-id=\"7f4841e1-705f-4fe0-a9c6-23e3567d3ab2\" href=\"\">credit cards</a> are an example of a reducing balance loan</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci3480c9ff",
+              "course": "Year 12 Standard 2",
+              "text": "Compare credit card interest rates with interest rates for other loan types",
+              "sourceHtml": "<p>Compare credit card interest rates with interest rates for other loan types</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "The site gives no numerical comparison of card rates with other loan types (MS-30)."
+            },
+            {
+              "id": "ci435086e3",
+              "course": "Year 12 Standard 2",
+              "text": "Identify the various fees and charges associated with credit card usage, and understand the meaning of an interest-free period",
+              "sourceHtml": "<p>Identify the various fees and charges associated with credit card usage, and understand the meaning of an <a data-item-id=\"b3dad9d9-11c1-4bec-a697-219016a1ffe2\" href=\"\">interest-free period</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "The site names no fee other than the balance transfer fee (MS-30); the interest-free period is covered."
+            },
+            {
+              "id": "ci23d33e6f",
+              "course": "Year 12 Standard 1",
+              "text": "Explain how credit cards are an example of a reducing balance loan",
+              "sourceHtml": "<p>Explain how <a data-item-id=\"7f4841e1-705f-4fe0-a9c6-23e3567d3ab2\" href=\"\">credit cards</a> are an example of a reducing balance loan</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9715d6e5",
+              "course": "Year 12 Standard 1",
+              "text": "Compare credit card interest rates with interest rates for other loan types",
+              "sourceHtml": "<p>Compare credit card interest rates with interest rates for other loan types</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": "As ci3480c9ff (MS-30)."
+            },
+            {
+              "id": "ci8a052732",
+              "course": "Year 12 Standard 1",
+              "text": "Identify the various fees and charges associated with credit card usage, and explain the meaning of an interest-free period",
+              "sourceHtml": "<p>Identify the various fees and charges associated with credit card usage, and explain the meaning of an <a data-item-id=\"b3dad9d9-11c1-4bec-a697-219016a1ffe2\" href=\"\">interest-free period</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": "As ci435086e3 (MS-30)."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "sectionIds": [
+              "orient-to-credit-cards",
+              "how-credit-card-interest-works",
+              "balance-transfers",
+              "practise-credit-cards"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "sectionIds": [
+                "orient-to-credit-cards",
+                "how-credit-card-interest-works",
+                "balance-transfers",
+                "practise-credit-cards"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i13",
+              "text": "ci94e049c3 (S1 cib9ea7be8): interest on the balance owing each period; repayments reduce it."
+            },
+            {
+              "source": "math-s12-i12",
+              "text": "ciad381478 (S1 ci9fb7eb0d): BNPL, short and long loans and total cost."
+            },
+            {
+              "source": "math-s11-m03",
+              "text": "cif403be54: fees that make interest-free cost money."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i15",
+            "math-s12-i14"
+          ],
+          "startBoundary": "A plain card and a $2 000 balance drop onto the i13 reducing-balance table, which gains a 'new purchases' column. Works for Standard 2 (from i15) and Standard 1 (from i14).",
+          "stopBoundary": "Explain that a credit card is a reducing balance loan with a reusable limit (interest on the balance owed after any interest-free period, repayments reduce it, purchases add to it); compare a card's rate with a low-rate card, personal, car and home loans (annual rates and one month's interest on the same balance); identify the common fees and what triggers each (annual, late payment, cash advance with interest from day one, foreign transaction, over-limit, balance transfer); explain the interest-free period (up to about 44 to 55 days on purchases, only if the whole closing balance is paid by the due date; none on cash advances). Daily interest and statements are i17.",
+          "nextHandoff": "math-s12-i17",
+          "advancedReuseCandidates": [],
+          "recommendation": "Fees and the rate ladder are original teaching (site gap MS-30). Rates: RBA F5 October 2026 (standard card 21.74%, low-rate 13.49%, discounted owner-occupier 7.05%) and RBA F8 September 2026 (balances incurring interest 18.91%, new fixed-rate personal 10.39%). Say once that rates change.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i16.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i17",
+          "playlistOrder": 30,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How is credit card interest charged by the day, and what does paying only the minimum cost?",
+          "syllabusActionIds": [
+            "cife5c18db",
+            "ci13e98315",
+            "ci42184aca",
+            "ci2dbee6b0"
+          ],
+          "standard2ActionIds": [
+            "cife5c18db",
+            "ci13e98315"
+          ],
+          "standard1ActionIds": [
+            "ci42184aca",
+            "ci2dbee6b0"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cife5c18db",
+              "course": "Year 12 Standard 2",
+              "text": "Interpret a credit card statement, examining the implications of only making the minimum payment",
+              "sourceHtml": "<p>Interpret a credit card statement, examining the implications of only making the <a data-item-id=\"08ec5c33-3988-4891-ae45-44e70e4bb2e7\" href=\"\">minimum payment</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "The site shows no credit card statement (MS-30); the minimum-payment table is covered. An original unbranded statement is needed."
+            },
+            {
+              "id": "ci13e98315",
+              "course": "Year 12 Standard 2",
+              "text": "Calculate the compound interest charged on a purchase, transaction or outstanding balance for a given number of days, with and without using digital tools",
+              "sourceHtml": "<p>Calculate the compound interest charged on a purchase, <a data-item-id=\"3ede57ff-d618-4084-9158-f2f97828b9bd\" href=\"\">transaction</a> or outstanding <a data-item-id=\"f3fa1459-55cd-46c7-9855-0f3ee004ca49\" href=\"\">balance</a> for a given number of days, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": "The site teaches day-count interest as simple interest (Balance × r ÷ 365 × days); the syllabus asks for compound interest over a number of days (MS-20). Original teaching of I = P(1 + r/365)^n − P."
+            },
+            {
+              "id": "ci42184aca",
+              "course": "Year 12 Standard 1",
+              "text": "Interpret a credit card statement, examining the implications of only making the minimum payment",
+              "sourceHtml": "<p>Interpret a credit card statement, examining the implications of only making the <a data-item-id=\"08ec5c33-3988-4891-ae45-44e70e4bb2e7\" href=\"\">minimum payment</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": "As cife5c18db (MS-30)."
+            },
+            {
+              "id": "ci2dbee6b0",
+              "course": "Year 12 Standard 1",
+              "text": "Calculate the compound interest charged on a transaction or outstanding balance for a given number of days",
+              "sourceHtml": "<p>Calculate the compound interest charged on a <a data-item-id=\"3ede57ff-d618-4084-9158-f2f97828b9bd\" href=\"\">transaction</a> or outstanding <a data-item-id=\"f3fa1459-55cd-46c7-9855-0f3ee004ca49\" href=\"\">balance</a> for a given number of days</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": "As ci13e98315: the site uses simple daily interest (MS-20)."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "sectionIds": [
+              "how-credit-card-interest-works",
+              "the-minimum-payment-trap",
+              "balance-transfers",
+              "avoid-the-credit-card-traps",
+              "drill-and-revisit-credit-cards",
+              "practise-credit-cards"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "sectionIds": [
+                "how-credit-card-interest-works",
+                "the-minimum-payment-trap",
+                "balance-transfers",
+                "avoid-the-credit-card-traps",
+                "drill-and-revisit-credit-cards",
+                "practise-credit-cards"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "ci64a24122 (S1 cib6fe9f5b): FV = PV(1 + r)^n; compound interest = FV - PV."
+            },
+            {
+              "source": "math-s12-i16",
+              "text": "ci213a72e9, ci435086e3 (S1 ci23d33e6f, ci8a052732): a card as a reducing balance loan; the interest-free period ends if the balance is not paid in full."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i16"
+          ],
+          "startBoundary": "i16 ends on the statement-cycle timeline with a partly paid balance: the interest-free bracket breaks and daily interest ticks start from the purchase date. This video counts the ticks.",
+          "stopBoundary": "Calculate interest on a purchase or balance for a given number of days with daily compounding, I = P(1 + r/365)^n - P, by calculator and (Standard 2) in a spreadsheet; read a credit card statement (opening balance, purchases, payments, interest, fees, closing balance, minimum payment, due date, minimum repayment warning); explain with a table and the warning's numbers why minimum-only payments take years and can cost more interest than the debt, and what a larger fixed payment changes. Credit choices for goals are i18.",
+          "nextHandoff": "math-s12-i18",
+          "advancedReuseCandidates": [],
+          "recommendation": "Pace flag: suggested split i17a (daily compound interest: ci13e98315, ci2dbee6b0) and i17b (the statement and minimum payment: cife5c18db, ci42184aca), both S1 and S2. Use compound daily interest ($2 000 at 19.99% for 30 days: $33.12), not the site's simple form (MS-20). Correct the hook's figures (MS-19: $2 000 at $60 a month takes 50 payments, $942.85 interest).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i17.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i18",
+          "playlistOrder": 31,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "Credit card or personal loan: which suits a short, medium or long-term goal?",
+          "syllabusActionIds": [
+            "ci3e2e1f21",
+            "ci52cad03f"
+          ],
+          "standard2ActionIds": [
+            "ci3e2e1f21"
+          ],
+          "standard1ActionIds": [
+            "ci52cad03f"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci3e2e1f21",
+              "course": "Year 12 Standard 2",
+              "text": "Compare credit options to best manage finances to meet short-term, medium-term and long-term goals, such as credit cards and personal loans",
+              "sourceHtml": "<p>Compare credit options to best manage finances to meet short-term, medium-term and long-term goals, such as credit cards and personal loans</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "partial",
+              "siteGap": "Partial: the site never sorts goals into short, medium and long term and never compares a card with a personal loan in numbers (MS-30). Original teaching from the syllabus."
+            },
+            {
+              "id": "ci52cad03f",
+              "course": "Year 12 Standard 1",
+              "text": "Compare credit cards and personal loans as options to meet short-term, medium-term and long-term financial goals",
+              "sourceHtml": "<p>Compare credit cards and personal loans as options to meet short-term, medium-term and long-term financial goals</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "partial",
+              "siteGap": "As ci3e2e1f21 (MS-30)."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+            "sectionIds": [
+              "orient-to-credit-cards"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson10.sa.html",
+              "sectionIds": [
+                "orient-to-credit-cards"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "9dfbd06d389ddb8e49b8223ac80ece3589e8950fa990e7486dbf0753bf9253c5"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson07.sa.html",
+              "sectionIds": [
+                "work-the-rate-comparisons"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "307eb5dd6a8211de8cfe476fbccd6313f2ca79328264c1da00389979b5646ce3"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "sectionIds": [
+                "orient-to-mixed-problems",
+                "drill-mixed-problems"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "cb32815eed2123cd6997f15a0617b992061ed309b103cc18d7e601b008fd4acb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i12",
+              "text": "ciad381478 (S1 ci9fb7eb0d): total cost of BNPL, short and long loans."
+            },
+            {
+              "source": "math-s12-i16",
+              "text": "ci3480c9ff, ci435086e3 (S1 ci9715d6e5, ci8a052732): card rates, fees, interest-free period."
+            },
+            {
+              "source": "math-s12-i17",
+              "text": "cife5c18db, ci13e98315 (S1 ci42184aca, ci2dbee6b0): the cost of minimum payments."
+            },
+            {
+              "source": "math-s11-m09",
+              "text": "ci3d78450e: budgeting, saving and an emergency fund."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i17"
+          ],
+          "startBoundary": "i17 ends on the minimum repayment warning ('31 years and 9 months'): a card is a poor tool for a debt that lasts years. Which credit tool fits which goal?",
+          "stopBoundary": "Sort goals by time (short: within about a year; medium: about one to five years; long: more than five years, a home loan, not a card or personal loan); compare a card and a personal loan on the same amount by total interest at the same repayment; state when each suits (card cleared in the interest-free period; personal loan with fixed rate, term and repayment for medium-term costs; saving or a home loan for long-term goals); weigh fees, flexibility and the open limit; justify a choice with numbers.",
+          "nextHandoff": "math-s12-i19",
+          "advancedReuseCandidates": [],
+          "recommendation": "Mostly original teaching (both points partial; MS-30). Teaching comparison: $6 000 car repair, personal loan 12% over 2 years ($282.44, interest $778.56) against a card at 21% paying the same (27 months, interest $1 567.97). Final frame must serve both paths: Standard 2 continues to i19, Standard 1 leaves for math-s12-t01.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i18.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i19",
+          "playlistOrder": 32,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "What is an annuity, and how does its balance build period by period?",
+          "syllabusActionIds": [
+            "cibac40b05",
+            "ci198f30b4",
+            "ci75f171a2"
+          ],
+          "standard2ActionIds": [
+            "cibac40b05",
+            "ci198f30b4",
+            "ci75f171a2"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cibac40b05",
+              "course": "Year 12 Standard 2",
+              "text": "Identify an annuity as an investment account with regular, equal contributions and interest compounding at the end of each period, or as a single sum investment from which regular equal withdrawals are made",
+              "sourceHtml": "<p>Identify an <a data-item-id=\"da069c10-bf6a-4115-a1c2-b5061ff9923c\" href=\"\">annuity</a> as an investment account with regular, equal <a data-item-id=\"303edba0-bed8-4b6f-8161-95ae906640e6\" href=\"\">contributions</a> and <a data-item-id=\"f32be3a3-a48e-4287-b1f9-8312ed3f514e\" href=\"\">interest</a> compounding at the end of each period, or as a single sum <a data-item-id=\"964c68fd-58e1-498e-9530-13523f44e12e\" href=\"\">investment</a> from which regular equal <a data-item-id=\"04324eee-6bc1-41f3-9027-35d37388799f\" href=\"\">withdrawals</a> are made</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": "The withdrawal form (\"a single sum investment from which regular equal withdrawals are made\") has no table on the site (MS-31)."
+            },
+            {
+              "id": "ci198f30b4",
+              "course": "Year 12 Standard 2",
+              "text": "Model an annuity in tabular form for up to four time periods",
+              "sourceHtml": "<p>Model an annuity in tabular form for up to four time periods</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci75f171a2",
+              "course": "Year 12 Standard 2",
+              "text": "Use a spreadsheet to model an annuity",
+              "sourceHtml": "<p>Use a spreadsheet to model an annuity</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+            "sectionIds": [
+              "orient-annuity-model",
+              "define-annuity-structure",
+              "model-annuity-periods"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "sectionIds": [
+                "orient-annuity-model",
+                "define-annuity-structure",
+                "model-annuity-periods"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "ci64a24122: compound interest per period."
+            },
+            {
+              "source": "math-s12-i13",
+              "text": "ci94e049c3, cibb416d3e: a period table and its spreadsheet (next opening = last closing)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i18"
+          ],
+          "startBoundary": "i18 ends on the long-term zone: a house and 'save a deposit'. The i13 table returns with 'Repayment' crossed out and 'Contribution' written in.",
+          "stopBoundary": "Identify an annuity in both forms (regular equal contributions with interest compounding at the end of each period; a single sum with regular equal withdrawals); model each in a table for up to four periods (the first contribution period earns no interest); build the contribution table in a spreadsheet (B3 = E2, fill down) and check it with a zero rate; explain why the final balance exceeds the total contributed. Factor tables are i20.",
+          "nextHandoff": "math-s12-i20",
+          "advancedReuseCandidates": [
+            "math-a12-f12"
+          ],
+          "recommendation": "Keep the site's $2 000 a year at 5% for 4 years (closing $8 620.25). Add an original withdrawal table ($10 000 at 4% p.a., $2 500 a year: $7 900.00, $5 716.00, $3 444.64, $1 082.43; MS-31). No closed-form formulas; no annuity due; no lottery hook (ruling 6).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i19.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i20",
+          "playlistOrder": 33,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How does a table of interest factors give an annuity's future or present value?",
+          "syllabusActionIds": [
+            "ci8032ba07"
+          ],
+          "standard2ActionIds": [
+            "ci8032ba07"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci8032ba07",
+              "course": "Year 12 Standard 2",
+              "text": "Using a table of interest factors, calculate the future value or present value of an annuity",
+              "sourceHtml": "<p>Using a table of <a data-item-id=\"9b24a09a-0d6e-4ab0-bbec-73c502f98e5f\" href=\"\">interest factors</a>, calculate the <a data-item-id=\"6cc33933-b019-46d3-acf2-a705a835c303\" href=\"\">future value</a> or <a data-item-id=\"e9284b7b-68c6-4271-b8c8-27564d5179c1\" href=\"\">present value</a> of an annuity</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": "The site never shows a table of interest factors; every example uses the closed-form formula (MS-29)."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "sectionIds": [
+              "orient-future-value",
+              "calculate-future-value",
+              "work-future-value-examples"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "sectionIds": [
+                "orient-future-value",
+                "calculate-future-value",
+                "work-future-value-examples"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson03.sa.html",
+              "sectionIds": [
+                "calculate-present-value"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "fa5d9f7646cbd109db123d5bb1ce82d59a356e7178796115989f6bccffc76986"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "sectionIds": [
+                "model-annuity-periods",
+                "compare-present-value"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i19",
+              "text": "cibac40b05, ci198f30b4: what an annuity is; the four-period table."
+            },
+            {
+              "source": "math-s12-i04",
+              "text": "ciaa253014: rate per period and number of periods."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i19"
+          ],
+          "startBoundary": "i19 ends on the summer-job table ($2 000 a year at 5%, $8 620.25) and a '40 years?' chip: forty rows is too many, so a table of factors does it in one multiplication.",
+          "stopBoundary": "Explain the FV interest factor (what $1 contributions at the end of each period grow to) and the PV interest factor (the single amount today worth the same as $1 a period); read a factor by rate per period and number of periods; FV = contribution x FV factor, PV = payment x PV factor; check 4.3101 x $2 000 = $8 620.20 against the table's $8 620.25 (rounded factor); choose FV or PV from the wording. Contributions for a goal are i21.",
+          "nextHandoff": "math-s12-i21",
+          "advancedReuseCandidates": [],
+          "recommendation": "Tables only (site gap MS-29: no factor table on any page). Factors to 4 d.p. are in work/brief-standard-i2/factor-tables-output.txt. Site examples on table columns: 5% n = 4 (4.3101); 0.5% n = 24 (25.4320), n = 36 (PV 32.8710), n = 60 (PV 51.7256).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i20.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i21",
+          "playlistOrder": 34,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How much must we put in to reach a savings goal?",
+          "syllabusActionIds": [
+            "cifb9dd435"
+          ],
+          "standard2ActionIds": [
+            "cifb9dd435"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cifb9dd435",
+              "course": "Year 12 Standard 2",
+              "text": "Using a table of interest factors, determine the contribution amount required to achieve a given future value or the single sum contribution required to produce an equivalent future value for any given annuity",
+              "sourceHtml": "<p>Using a table of interest factors, determine the contribution amount required to achieve a given future value or the single sum contribution required to produce an <a data-item-id=\"ea23e207-f381-4891-bd05-7f9ffba786b3\" href=\"\">equivalent</a> future value for any given annuity</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": "No factor table (MS-29), and the single-sum half is not taught at all."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "sectionIds": [
+              "calculate-future-value",
+              "work-future-value-examples",
+              "apply-future-value"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2"
+            ],
+            "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "sectionIds": [
+                "calculate-future-value",
+                "work-future-value-examples",
+                "apply-future-value"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2"
+              ],
+              "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i20",
+              "text": "ci8032ba07: reading FV and PV interest factors."
+            },
+            {
+              "source": "math-s12-i02",
+              "text": "ci64a24122: PV = FV / (1 + r)^n for a single sum."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i20"
+          ],
+          "startBoundary": "i20 ends with 'contribution x factor = future value' and a saver's $13 524.45. Turn it round: the goal is known, the contribution is the question mark.",
+          "stopBoundary": "Find the regular contribution for a goal (goal / FV factor, rounded up to reach the goal); find the single sum now that produces the same future value as a given annuity (contribution x PV factor, or FV / (1 + r)^n) and check it by growing it forward; explain why the single sum is less than the total contributions. The effect of each input is i22.",
+          "nextHandoff": "math-s12-i22",
+          "advancedReuseCandidates": [],
+          "recommendation": "Site card 05 ($50 000 in 8 years at 5.4%: factor 119.7429, $417.56; round up to $417.57, since $417.56 is 15 cents short). Single sum $32 491.94 (original). Correct we-2's $310.08 to $310.05 if used (MS-27).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i21.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i22",
+          "playlistOrder": 35,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How do the starting amount, payment, rate and term change an annuity's value?",
+          "syllabusActionIds": [
+            "ci025a6c75"
+          ],
+          "standard2ActionIds": [
+            "ci025a6c75"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci025a6c75",
+              "course": "Year 12 Standard 2",
+              "text": "Examine the effect of varying the amount initially invested, the value of the periodic payment, the interest rate and the duration of the annuity on the total value of the investment, using digital tools",
+              "sourceHtml": "<p>Examine the effect of varying the amount initially invested, the value of the periodic payment, the <a data-item-id=\"a23ae884-0691-4afd-aa44-431ef67e8fcc\" href=\"\">interest rate</a> and the duration of the annuity on the total value of the investment, using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": "Only duration is varied on the site, with no digital tool and no amount initially invested (MS-29)."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+            "sectionIds": [
+              "orient-future-value",
+              "analyse-starting-early",
+              "apply-future-value"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson02.sa.html",
+              "sectionIds": [
+                "orient-future-value",
+                "analyse-starting-early",
+                "apply-future-value"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "sectionIds": [
+                "model-annuity-periods"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i19",
+              "text": "ci75f171a2: an annuity spreadsheet."
+            },
+            {
+              "source": "math-s12-i20",
+              "text": "ci8032ba07: FV with factors."
+            },
+            {
+              "source": "math-s12-i02",
+              "text": "ci64a24122: a single sum grows by (1 + r)^n."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i21"
+          ],
+          "startBoundary": "i21 ends with two timelines (many deposits, or one single sum) arriving at the same $50 000: the starting amount matters as well as the deposits.",
+          "stopBoundary": "With a spreadsheet of four input cells (amount initially invested, payment, rate per period, number of periods), change one input at a time and record the final value; explain each effect (payment scales; an initial amount adds itself grown by (1 + r)^n; rate and especially duration grow the value more than in proportion); compare total contributed with final value; say why starting early matters.",
+          "nextHandoff": "math-s12-i23",
+          "advancedReuseCandidates": [
+            "math-a12-f14"
+          ],
+          "recommendation": "Base case $100 a month, 0.5%, 120 months: $16 387.93; $200: $32 775.87; 240 months: $46 204.09; 1%: $23 003.87; +$2 000 initially: $20 026.73. Site card 07 (starting at 25 against 35) as the duration story. Use a spreadsheet, not Advanced f14's phone app.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i22.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i23",
+          "playlistOrder": 36,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How do annuities answer superannuation, savings and loan decisions?",
+          "syllabusActionIds": [
+            "cieeb45b0f"
+          ],
+          "standard2ActionIds": [
+            "cieeb45b0f"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cieeb45b0f",
+              "course": "Year 12 Standard 2",
+              "text": "Solve annuity problems involving financial decisions regarding superannuation, savings accounts and loans",
+              "sourceHtml": "<p>Solve annuity problems involving financial decisions regarding <a data-item-id=\"040165c6-7093-4206-9150-4b1155dfaeef\" href=\"\">superannuation</a>, savings accounts and <a data-item-id=\"40ba7f31-446b-4516-a811-4ad333acd142\" href=\"\">loans</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+            "sectionIds": [
+              "define-annuity-structure",
+              "work-annuity-examples"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson01.sa.html",
+              "sectionIds": [
+                "define-annuity-structure",
+                "work-annuity-examples"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/annuities/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/annuities/lesson03.sa.html",
+              "sectionIds": [
+                "calculate-present-value",
+                "work-loan-examples"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "fa5d9f7646cbd109db123d5bb1ce82d59a356e7178796115989f6bccffc76986"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson12.sa.html",
+              "sectionIds": [
+                "the-car-purchase-decision",
+                "work-examples-and-superannuation"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "cb32815eed2123cd6997f15a0617b992061ed309b103cc18d7e601b008fd4acb"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i20",
+              "text": "ci8032ba07: FV and PV with factor tables."
+            },
+            {
+              "source": "math-s12-i21",
+              "text": "cifb9dd435: contribution for a goal."
+            },
+            {
+              "source": "math-s12-i22",
+              "text": "ci025a6c75: the effect of each input."
+            },
+            {
+              "source": "math-s12-i15",
+              "text": "ci659a906b: repayment, total paid and amount owing."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i22"
+          ],
+          "startBoundary": "i22 ends on two savers' balance curves pulling apart. The same mathematics decides three real questions: super from a first job, saving or borrowing for a car, and how much a repayment can borrow.",
+          "stopBoundary": "Solve three decisions with annuity tools: superannuation (12% of ordinary pay each payday in 2026-27, less 15% contributions tax, as an annuity; FV from a table or spreadsheet; starting early); a savings account against a loan for the same goal (time to save against interest paid); a loan as a present value (most that can be borrowed = repayment x PV factor). State each decision in a sentence with a number and one non-money factor. Final frame hands to the next strand.",
+          "nextHandoff": "math-s12-t01",
+          "advancedReuseCandidates": [],
+          "recommendation": "No lottery (ruling 6). Correct lesson12 card 08's missing 15% contributions tax if used (MS-28). Super facts: ATO, SG 12% for 2026-27, Payday Super from 1 July 2026. Final frame: the house with a 35-degree right-angled roof triangle for math-s12-t01 (outline row 37); root to settle the strand-order conflict (recommended order puts Ratios and rates before Trigonometry).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i23.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}

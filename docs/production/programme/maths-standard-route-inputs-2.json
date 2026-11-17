@@ -1,0 +1,1193 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-18",
+  "brief": "Maths Standard start (root request, 18 November 2026), methods of brief 243",
+  "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+  "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+  "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+  "officialEvidence": {
+    "source": "NSW Curriculum Year 12 Standard 2 Investment and loans page and Year 12 Standard 1 Investment and Depreciation and loans pages, as recorded in the crosswalk (read 18 November 2026)",
+    "year12Standard2Points": 18,
+    "year12Standard1Points": 13,
+    "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+    "commitDate": "2026-11-16 11:01:17 +1100",
+    "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 18 November 2026 and match the crosswalk inventory. Investment and loans lessons 03, 05, 06, 07, 11, 14 and 15 use data-step-id sections. Lessons 01 and 02 are retired duplicates of 05 and 06 and are not used; lesson04 (an exam-practice page) is not used."
+  },
+  "recommendations": [
+    "Run i01 to i11 in outline order. Standard 2 students take all eleven. Standard 1 students take i01, i02, i03, i05, i08, i09, i10 and i11 (i04, i06 and i07 are Standard 2 only); in i08 the shares row is marked Standard 2.",
+    "Joins: i01 opens on math-s12-a13's final frame (the coin jar beside empty axes), which matches a08's right panel, so both courses arrive at the same picture. i05 and i08 must stand without i04, i06 and i07, because Standard 1 viewers arrive from i03 and i05.",
+    "Pace flags (gentler Standard pace): i02 is likely to need a split into i02a (future value) and i02b (present value and the rate); i04 and i06 are at risk and have suggested splits; i08 and i10 should be watched (i10 runs long only if the site's rate-finding example is kept).",
+    "Notation: use the syllabus letters on screen, FV = PV(1 + r)^n, I = Prn, S = V_0 - Dn and S = V_0(1 - r)^n. Site lessons 05 and 06 write A = P(1 + rn) and A = P(1 + r)^n; lesson11 already uses FV = PV(1 + r)^n.",
+    "Beyond the syllabus on the site, kept out of the videos: effective annual rate (lesson06 card 07, lesson07), flat-rate loan true rates and the Rule of 72 with logarithms (lesson07), superannuation, ETF and tax modelling (lesson11 we-2, SA 2, SA 3).",
+    "Money figures (root ruling 5): RBA cash rate 4.85% from 3 November 2026; ABS CPI 4.3% in the year to September 2026; top 12-month term deposits about 5.5% to 5.7% p.a. and bonus savings rates about 5.5% to 6.5% p.a. in November 2026; 2026-27 NSW transfer duty table (Revenue NSW); a major broker's current tiers ($5 to $29.95 flat, 0.12% above $25 000); ATO diminishing value rate for cars 25% (200% of an 8-year effective life). Sources are listed in each pack. Each video says once that rates and fees change.",
+    "New site findings are logged as MS-11 to MS-18 in docs/production/claude-pm/site-corrections-maths-standard.md (section 5): three compound-interest rounding errors in lesson06 (MS-11 to MS-13), a wrong answer in lesson07 (MS-14), a rounding slip and a dated super figure in lesson11 (MS-15, MS-16) and two copy problems in lesson03 (MS-17, MS-18), followed by four teaching gaps (present value and rate, inflation as compound growth, appreciation, graph comparisons with digital tools) and two structure notes.",
+    "Kit needs for i01 to i11 are in docs/production/claude-pm/checks/maths-standard-kit-needs-i.md; the main new parts are a share table and an interest-block stack, plus SpreadsheetGrid from the a-strand list."
+  ],
+  "part": 2,
+  "covers": "math-s12-i01 to math-s12-i11 (Year 12 Investment and loans, investment and depreciation, Standard 2 and Standard 1)",
+  "subjects": {
+    "Mathematics Standard": {
+      "year": 12,
+      "entries": [
+        {
+          "id": "math-s12-i01",
+          "playlistOrder": 14,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How does simple interest grow, and what does its graph look like?",
+          "syllabusActionIds": [
+            "cif2fdb59a",
+            "ciddd3a836",
+            "ci04f3e92c",
+            "ci9ef22098",
+            "ci74c61185",
+            "ci32753eab"
+          ],
+          "standard2ActionIds": [
+            "cif2fdb59a",
+            "ciddd3a836",
+            "ci04f3e92c"
+          ],
+          "standard1ActionIds": [
+            "ci9ef22098",
+            "ci74c61185",
+            "ci32753eab"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cif2fdb59a",
+              "course": "Year 12 Standard 2",
+              "text": "Calculate simple interest for different rates and time periods using the formula I = Prn where I = simple interest, P = principal, r = interest rate per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Calculate <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ff8dd933-e596-4dcf-b89f-f7c42e6c5aa4\" data-item-codename=\"glo_link__shared__simple_interest\" data-item-id=\"ff8dd933-e596-4dcf-b89f-f7c42e6c5aa4\" data-item-systemname=\"GLO Link: SHARED: simple interest\" data-item-type=\"link_glossary\">simple interest</a> for different rates and time periods using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mi mathvariant=\"italic\">Prn </mi></math></span><span>where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi></math></span><span> = simple interest, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math></span><span> = principal,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> </span><span>= <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a23ae884-0691-4afd-aa44-431ef67e8fcc\" data-item-codename=\"glo_link__shared__interest_rate\" data-item-id=\"a23ae884-0691-4afd-aa44-431ef67e8fcc\" data-item-systemname=\"GLO Link: SHARED: interest rate\" data-item-type=\"link_glossary\">interest rate</a> per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ciddd3a836",
+              "course": "Year 12 Standard 2",
+              "text": "Solve problems involving simple interest in a variety of contexts",
+              "sourceHtml": "<p>Solve problems involving simple interest in a variety of contexts</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci04f3e92c",
+              "course": "Year 12 Standard 2",
+              "text": "Compare simple interest graphs for different interest rates and time periods, with and without using digital tools",
+              "sourceHtml": "<p>Compare simple interest <a data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" href=\"\">graphs</a> for different interest rates and time periods, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9ef22098",
+              "course": "Year 12 Standard 1",
+              "text": "Calculate simple interest for different interest rates and time periods using the formula I = Prn where I = simple interest, P = principal, r = interest rate per time period and n = number of time periods",
+              "sourceHtml": "<div><a name=\"_Hlk130469933\"></a><span>Calculate <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ff8dd933-e596-4dcf-b89f-f7c42e6c5aa4\" data-item-codename=\"glo_link__shared__simple_interest\" data-item-id=\"ff8dd933-e596-4dcf-b89f-f7c42e6c5aa4\" data-item-systemname=\"GLO Link: SHARED: simple interest\" data-item-type=\"link_glossary\">simple interest</a> for different <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a23ae884-0691-4afd-aa44-431ef67e8fcc\" data-item-codename=\"glo_link__shared__interest_rate\" data-item-id=\"a23ae884-0691-4afd-aa44-431ef67e8fcc\" data-item-systemname=\"GLO Link: SHARED: interest rate\" data-item-type=\"link_glossary\">interest rates</a> and time periods using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi><mo>=</mo><mi mathvariant=\"italic\">Prn </mi></math></span><span>where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>I</mi></math></span><span> = simple interest, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi></math></span><span> = principal,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">r </mi></math></span><span>= interest rate per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci74c61185",
+              "course": "Year 12 Standard 1",
+              "text": "Solve problems involving simple interest in a variety of contexts",
+              "sourceHtml": "<p>Solve problems involving simple interest in a variety of contexts</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci32753eab",
+              "course": "Year 12 Standard 1",
+              "text": "Compare simple interest graphs for different interest rates and time periods, with and without using digital tools",
+              "sourceHtml": "<p>Compare simple interest <a data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" href=\"\">graphs</a> for different interest rates and time periods, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson05.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson05.sa.html",
+            "sectionIds": [
+              "orient-to-simple-interest",
+              "see-money-grow-in-a-straight-line",
+              "rearrange-the-interest-formula",
+              "work-examples-and-drill",
+              "avoid-the-interest-traps",
+              "revisit-simple-interest-thinking"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "15a2692f977fe80811f2a7f0f628cac8369b7990d2f5bccfcbd22d01ac1c63aa"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson05.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson05.sa.html",
+              "sectionIds": [
+                "orient-to-simple-interest",
+                "see-money-grow-in-a-straight-line",
+                "rearrange-the-interest-formula",
+                "work-examples-and-drill",
+                "avoid-the-interest-traps",
+                "revisit-simple-interest-thinking"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "15a2692f977fe80811f2a7f0f628cac8369b7990d2f5bccfcbd22d01ac1c63aa"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s11-m01",
+              "text": "cib256693a: percentages of an amount and percentage increase (a rate as a decimal)."
+            },
+            {
+              "source": "math-s11-f01",
+              "text": "ci7f303375: substituting into a formula."
+            },
+            {
+              "source": "math-s11-l03",
+              "text": "cib2d6c0df: a linear model, gradient as a rate of change and intercept as a starting value."
+            },
+            {
+              "source": "math-s12-a13",
+              "text": "Final frame: the coin jar beside empty axes, \"the same amount added each year: what shape?\" (Standard 1 viewers arrive from a08's matching right panel)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-a13"
+          ],
+          "startBoundary": "a13's final frame (the coin jar beside empty axes, \"the same amount added each year: what shape?\"). The same interest lands in the jar every year, so the answer is a straight line.",
+          "stopBoundary": "Simple interest as interest worked out on the original principal only, the same dollar amount every period (interest paid out, never earning interest itself); I = Prn with r as a decimal per period and n in the same units; the total A = P + I; finding P, r or n from three given values (site card 06); the graph of the total against time as a straight line starting at P with a gradient of Pr dollars a period; comparing two simple interest graphs for different rates (steeper line) and different starting amounts or time periods, by hand and with a graphing app or spreadsheet. Compound interest is i02.",
+          "nextHandoff": "math-s12-i02",
+          "advancedReuseCandidates": [],
+          "recommendation": "Keep the site's numbers ($2000 at 6% for 3 years; $5000 at 4% for 3 years; we-1 and we-2). The site barely teaches the graph comparison (ci04f3e92c, ci32753eab): add two or three lines on one set of axes, by hand and in an app. Open on a13's coin jar and answer its question. Pace: watch (three points, but each is short).",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i01.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i02",
+          "playlistOrder": 15,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How does compound interest earn interest on interest?",
+          "syllabusActionIds": [
+            "ci64a24122",
+            "cib6fe9f5b"
+          ],
+          "standard2ActionIds": [
+            "ci64a24122"
+          ],
+          "standard1ActionIds": [
+            "cib6fe9f5b"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci64a24122",
+              "course": "Year 12 Standard 2",
+              "text": "Calculate the future value, present value or interest rate of a compound interest investment using the formula FV = PV(1 + r)^n where FV = future value of the investment, PV = present value of the investment, r = interest rate per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6cc33933-b019-46d3-acf2-a705a835c303\" data-item-codename=\"glo_link__shared__future_value\" data-item-id=\"6cc33933-b019-46d3-acf2-a705a835c303\" data-item-systemname=\"GLO Link: SHARED: future value\" data-item-type=\"link_glossary\">future value</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e9284b7b-68c6-4271-b8c8-27564d5179c1\" data-item-codename=\"glo_link__mst__present_value\" data-item-id=\"e9284b7b-68c6-4271-b8c8-27564d5179c1\" data-item-systemname=\"GLO Link: MST: present value\" data-item-type=\"link_glossary\">present value</a> or interest rate of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/673a3396-3708-47a2-b06a-0fe2cc0d7a77\" data-item-codename=\"glo_link__shared__compound_interest\" data-item-id=\"673a3396-3708-47a2-b06a-0fe2cc0d7a77\" data-item-systemname=\"GLO Link: SHARED: compound interest\" data-item-type=\"link_glossary\">compound interest</a> <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/964c68fd-58e1-498e-9530-13523f44e12e\" data-item-codename=\"glo_link__shared__investment\" data-item-id=\"964c68fd-58e1-498e-9530-13523f44e12e\" data-item-systemname=\"GLO Link: SHARED: investment\" data-item-type=\"link_glossary\">investment</a> using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">FV</mi><mo>=</mo><mi mathvariant=\"italic\">PV</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">FV</mi></math></span><span> </span><span>= future value of the investment,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">PV</mi></math></span><span> </span><span>= present value of the investment,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> </span><span>= interest rate per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cib6fe9f5b",
+              "course": "Year 12 Standard 1",
+              "text": "Calculate the future value, present value or interest rate of a compound interest investment using the formula FV = PV(1 + r)^n where FV = future value of the investment, PV = present value of the investment, r = interest rate per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/6cc33933-b019-46d3-acf2-a705a835c303\" data-item-codename=\"glo_link__shared__future_value\" data-item-id=\"6cc33933-b019-46d3-acf2-a705a835c303\" data-item-systemname=\"GLO Link: SHARED: future value\" data-item-type=\"link_glossary\">future value</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e9284b7b-68c6-4271-b8c8-27564d5179c1\" data-item-codename=\"glo_link__mst__present_value\" data-item-id=\"e9284b7b-68c6-4271-b8c8-27564d5179c1\" data-item-systemname=\"GLO Link: MST: present value\" data-item-type=\"link_glossary\">present value</a> or interest rate of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/673a3396-3708-47a2-b06a-0fe2cc0d7a77\" data-item-codename=\"glo_link__shared__compound_interest\" data-item-id=\"673a3396-3708-47a2-b06a-0fe2cc0d7a77\" data-item-systemname=\"GLO Link: SHARED: compound interest\" data-item-type=\"link_glossary\">compound interest</a> <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/964c68fd-58e1-498e-9530-13523f44e12e\" data-item-codename=\"glo_link__shared__investment\" data-item-id=\"964c68fd-58e1-498e-9530-13523f44e12e\" data-item-systemname=\"GLO Link: SHARED: investment\" data-item-type=\"link_glossary\">investment</a> using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">FV</mi><mo>=</mo><mi mathvariant=\"italic\">PV</mi><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">FV</mi></math></span><span> </span><span>= future value of the investment,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">PV</mi></math></span><span> </span><span>= present value of the investment,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> = interest rate per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "sectionIds": [
+              "orient-to-compound-interest",
+              "earn-interest-on-interest",
+              "avoid-the-compounding-traps"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "sectionIds": [
+                "orient-to-compound-interest",
+                "earn-interest-on-interest",
+                "avoid-the-compounding-traps"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i01",
+              "text": "Simple interest: interest on the principal only, a straight-line graph."
+            },
+            {
+              "source": "math-s12-a06",
+              "text": "An exponential model y = k a^x with a = 1 + r (Standard 2; Standard 1 met y = a^x tables in a05)."
+            },
+            {
+              "source": "math-s11-m01",
+              "text": "cib256693a: a 5% increase multiplies by 1.05."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i01"
+          ],
+          "startBoundary": "i01's interest was paid out, so the balance stayed at the principal. Leave the interest in the account instead, and next year's interest is worked out on a bigger balance.",
+          "stopBoundary": "Compound interest as interest added to the balance and then earning interest itself; year-by-year multiplying by (1 + r) (site card 05: $2000 at 5% for 3 years) leading to FV = PV(1 + r)^n with r and n per compounding period (syllabus letters); interest = FV − PV; present value as the amount to invest now, PV = FV ÷ (1 + r)^n; the interest rate per period from PV, FV and n by working backwards (calculator root or trial, Standard 2 and Standard 1 both require it). Effect of changing the compounding period and the per-period rate r ÷ 12 is i04; inflation and appreciation are i03; the simple-versus-compound graph comparison is i05.",
+          "nextHandoff": "math-s12-i03",
+          "advancedReuseCandidates": [
+            "math-a12-f08"
+          ],
+          "recommendation": "Pace flag: future value, present value and the interest rate are three calculations, and the site teaches only the first (no PV or rate example; logged as a site gap). Likely split for a gentler pace: i02a (interest on interest; FV) and i02b (working backwards: PV and the rate). Use FV and PV on screen (syllabus), not the site's A and P. Effective annual rate (site card 07) is beyond the 2024 syllabus: leave it out.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i02.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i03",
+          "playlistOrder": 16,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How do inflation and appreciation use the compound interest formula?",
+          "syllabusActionIds": [
+            "ci1256741b",
+            "cicf066fd6"
+          ],
+          "standard2ActionIds": [
+            "ci1256741b"
+          ],
+          "standard1ActionIds": [
+            "cicf066fd6"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci1256741b",
+              "course": "Year 12 Standard 2",
+              "text": "Solve problems involving compound interest in a variety of contexts, including inflation and appreciation",
+              "sourceHtml": "<p>Solve problems involving compound interest in a variety of contexts, including <a data-item-id=\"165fe8db-c2ea-44d4-80d1-f52aae60dc84\" href=\"\">inflation</a> and <a data-item-id=\"3c54c871-a4e1-4f63-9a7a-650915177162\" href=\"\">appreciation</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "partial",
+              "siteGap": "Compound interest and inflation are taught; appreciation is not."
+            },
+            {
+              "id": "cicf066fd6",
+              "course": "Year 12 Standard 1",
+              "text": "Solve problems involving compound interest in a variety of contexts, including inflation and appreciation",
+              "sourceHtml": "<p>Solve problems involving compound interest in a variety of contexts, including <a data-item-id=\"165fe8db-c2ea-44d4-80d1-f52aae60dc84\" href=\"\">inflation</a> and <a data-item-id=\"3c54c871-a4e1-4f63-9a7a-650915177162\" href=\"\">appreciation</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "partial",
+              "siteGap": "Compound interest and inflation are taught; appreciation is not."
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+            "sectionIds": [
+              "orient-to-investment-strategies",
+              "compare-investments-beyond-the-rate",
+              "avoid-the-inflation-traps"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "3b17ea73c3ff3b8f2da6488fb83be639d528b8811a78e96019617f53e56962b4"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+              "sectionIds": [
+                "orient-to-investment-strategies",
+                "compare-investments-beyond-the-rate",
+                "avoid-the-inflation-traps"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "3b17ea73c3ff3b8f2da6488fb83be639d528b8811a78e96019617f53e56962b4"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "sectionIds": [
+                "earn-interest-on-interest"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "FV = PV(1 + r)^n for an investment."
+            },
+            {
+              "source": "math-s11-m01",
+              "text": "cib256693a: percentage increase."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i02"
+          ],
+          "startBoundary": "i02's formula grew money in a bank. The same multiply-every-year pattern also grows prices (inflation) and the value of things people own (appreciation).",
+          "stopBoundary": "Inflation as prices rising by a percentage each year, so a future price is FV = PV(1 + r)^n with r the inflation rate; what a dollar buys falls as prices rise; appreciation as an asset's value rising by a percentage each year (property, a collectable instrument), worked with the same formula; finding a past price or value by working backwards (PV) where useful; a short real-return comparison (an investment earning less than inflation loses buying power) without relying on the subtraction rule as exact. Depreciation (the falling direction) is i09 to i11.",
+          "nextHandoff": "math-s12-i04 (Standard 2); math-s12-i05 (Standard 1)",
+          "advancedReuseCandidates": [],
+          "recommendation": "Site gap: the site has no inflation-as-compound-growth example and no appreciation at all (crosswalk partial; logged). Teach both from the syllabus with original, sourced 2026 figures (ABS CPI 4.3% in the year to September 2026); keep lesson11's real-return numbers only as a brief contrast. Pace: not at risk.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i03.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i04",
+          "playlistOrder": 17,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How do the rate, the term and the compounding period change an investment?",
+          "syllabusActionIds": [
+            "ciaa253014"
+          ],
+          "standard2ActionIds": [
+            "ciaa253014"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ciaa253014",
+              "course": "Year 12 Standard 2",
+              "text": "Examine the effect of varying the interest rate, the term or the compounding period on the future value of an investment, with and without using digital tools",
+              "sourceHtml": "<p>Examine the effect of varying the interest rate, the term or the compounding period on the future value of an investment, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "sectionIds": [
+              "compounding-frequency",
+              "work-examples-and-drill-compound",
+              "avoid-the-compounding-traps"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2"
+            ],
+            "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "sectionIds": [
+                "compounding-frequency",
+                "work-examples-and-drill-compound",
+                "avoid-the-compounding-traps"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2"
+              ],
+              "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson07.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson07.sa.html",
+              "sectionIds": [
+                "effective-versus-nominal-rates",
+                "work-the-rate-comparisons"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "307eb5dd6a8211de8cfe476fbccd6313f2ca79328264c1da00389979b5646ce3"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "FV = PV(1 + r)^n, per-period r and n."
+            },
+            {
+              "source": "math-s12-i03",
+              "text": "The same formula for prices and values."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i03"
+          ],
+          "startBoundary": "i02 and i03 compounded once a year. Banks also compound monthly or quarterly, and offer different rates and terms. Change one thing at a time and watch the future value.",
+          "stopBoundary": "Change one input at a time with the rest fixed: a higher rate gives a higher FV; a longer term gives a higher FV and the extra grows faster than the time (doubling the term more than doubles the interest); more frequent compounding with the same annual rate gives a slightly higher FV, using r ÷ k per period and n × k periods (k = 12 monthly, 4 quarterly, 2 half-yearly); by hand and with a digital tool (a spreadsheet or calculator app with one input changed). Effective annual rate, flat-rate loans and the Rule of 72 (site lesson07) are beyond the 2024 Standard syllabus and are not taught.",
+          "nextHandoff": "math-s12-i05",
+          "advancedReuseCandidates": [
+            "math-a12-f14"
+          ],
+          "recommendation": "Use lesson06's numbers (card 06: $8000 at 4.8% half-yearly for 4 years; we-1 $10 000 at 8% quarterly; we-2 $5000 at 6% monthly, correct value $5983.40, not the site's $5983.50; drill 2(b) annual against monthly over 20 years). Pace flag: three variables plus the per-period conversion and a digital tool; watch, and split into i04a (rate and term) and i04b (compounding period) only if the design passes 570 s.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i04.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i05",
+          "playlistOrder": 18,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "Why does compound interest pull ahead of simple interest, and how does a spreadsheet show it?",
+          "syllabusActionIds": [
+            "ci75558132",
+            "cie4f17f46",
+            "ci5c8c3f23",
+            "ci617494ea",
+            "ciebe69650"
+          ],
+          "standard2ActionIds": [
+            "ci75558132",
+            "cie4f17f46",
+            "ci5c8c3f23"
+          ],
+          "standard1ActionIds": [
+            "ci617494ea",
+            "ciebe69650"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci75558132",
+              "course": "Year 12 Standard 2",
+              "text": "Compare the growth of simple interest and compound interest investments numerically and graphically, with and without using digital tools",
+              "sourceHtml": "<p>Compare the growth of simple interest and compound interest investments numerically and graphically, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cie4f17f46",
+              "course": "Year 12 Standard 2",
+              "text": "Recognise that simple interest graphs are linear and compound interest graphs are exponential",
+              "sourceHtml": "<p>Recognise that simple interest graphs are <a data-item-id=\"3475db1c-8ff5-4a49-b2c7-e845b22584d5\" href=\"\">linear</a> and compound interest graphs are exponential</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci5c8c3f23",
+              "course": "Year 12 Standard 2",
+              "text": "Use a spreadsheet to numerically and graphically model investments using both simple and compound interest",
+              "sourceHtml": "<p>Use a spreadsheet to numerically and graphically model investments using both simple and compound interest</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci617494ea",
+              "course": "Year 12 Standard 1",
+              "text": "Compare the growth of simple interest and compound interest investments either numerically or from a given graph",
+              "sourceHtml": "<p>Compare the growth of simple interest and compound interest investments either numerically or from a given graph</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ciebe69650",
+              "course": "Year 12 Standard 1",
+              "text": "Use a spreadsheet to model investments using both simple and compound interest",
+              "sourceHtml": "<p>Use a spreadsheet to model investments using both simple and compound interest</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+            "sectionIds": [
+              "earn-interest-on-interest",
+              "avoid-the-compounding-traps"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [],
+            "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson06.sa.html",
+              "sectionIds": [
+                "earn-interest-on-interest",
+                "avoid-the-compounding-traps"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "1940cca09f6a14b6bf7159efdce0cf1be5dc27545bd72bf6dcef668cb7635c6e"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i01",
+              "text": "Simple interest, a straight-line graph."
+            },
+            {
+              "source": "math-s12-i02",
+              "text": "Compound interest, FV = PV(1 + r)^n."
+            },
+            {
+              "source": "math-s12-a05",
+              "text": "Linear tables add the same amount; exponential tables multiply by the same number."
+            },
+            {
+              "source": "math-s12-a04b",
+              "text": "A spreadsheet with a formula filled down (Standard 1 met it in a04b)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i02",
+            "math-s12-i03"
+          ],
+          "startBoundary": "Same principal, same rate, two accounts: one pays the interest out (i01), one leaves it in (i02). Put them side by side, year after year.",
+          "stopBoundary": "Compare simple and compound growth numerically (a year-by-year table) and graphically: simple interest graphs are straight lines (the same interest each year, linear) and compound interest graphs are curves that bend upward (exponential, interest on interest); both start at the principal and agree after one year, then compound pulls ahead; build the comparison in a spreadsheet (year column filled down, =P+P*r*n and =P*(1+r)^n, then a line graph); use a given graph to compare. Standard 1 compares numerically or from a given graph and uses the spreadsheet.",
+          "nextHandoff": "math-s12-i06 (Standard 2); math-s12-i08 (Standard 1)",
+          "advancedReuseCandidates": [],
+          "recommendation": "Keep lesson06 card 08's spreadsheet exactly ($5000 at 6% for 5 years; $191.13 apart at year 5) and its year-1 check; card 05's $300 against $315.25; the revisit's 20-year gap ($11 000 against $16 035.68, the site truncates to $16 035). Needs the SpreadsheetGrid kit part (maths-standard-kit-needs-a.md). Standard 1 viewers arrive from i03, so do not rely on i04. Pace: not at risk.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i05.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i06",
+          "playlistOrder": 19,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "How do we read share prices and calculate dividends and dividend yield?",
+          "syllabusActionIds": [
+            "cieba53790",
+            "cie1731909",
+            "ci8a691aa3"
+          ],
+          "standard2ActionIds": [
+            "cieba53790",
+            "cie1731909",
+            "ci8a691aa3"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cieba53790",
+              "course": "Year 12 Standard 2",
+              "text": "Interpret and analyse tables and graphs about the value of share",
+              "sourceHtml": "<p>Interpret and analyse tables and graphs about the value of <a data-item-id=\"822d000b-7713-43b6-83a9-3ba7a1f9b27f\" href=\"\">share</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cie1731909",
+              "course": "Year 12 Standard 2",
+              "text": "Graph and interpret the value of a share over time, with and without using digital tools",
+              "sourceHtml": "<p>Graph and interpret the value of a share over time, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci8a691aa3",
+              "course": "Year 12 Standard 2",
+              "text": "Calculate the dividend paid and the dividend yield on shares (excluding franked dividends)",
+              "sourceHtml": "<p>Calculate the <a data-item-id=\"9e47843c-643a-4b3c-832a-73a6c462ba68\" href=\"\">dividend</a> paid and the <a data-item-id=\"36091d41-ba70-4cd2-b290-7c6160821489\" href=\"\">dividend yield</a> on shares (excluding franked dividends)</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson14.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson14.sa.html",
+            "sectionIds": [
+              "orient-to-shares-and-dividends",
+              "read-a-share-table",
+              "work-the-share-examples",
+              "avoid-the-yield-traps",
+              "drill-and-revisit-shares"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "83d9524b6a12192ae23697c958efe92e39456423e8ef6b35a4288b20e5aeab9a"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson14.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson14.sa.html",
+              "sectionIds": [
+                "orient-to-shares-and-dividends",
+                "read-a-share-table",
+                "work-the-share-examples",
+                "avoid-the-yield-traps",
+                "drill-and-revisit-shares"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "83d9524b6a12192ae23697c958efe92e39456423e8ef6b35a4288b20e5aeab9a"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i05",
+              "text": "Comparing two investments by their growth."
+            },
+            {
+              "source": "math-s11-m01",
+              "text": "cib256693a: percentage change from a starting value."
+            },
+            {
+              "source": "math-s11-l01",
+              "text": "Reading a graph over time."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i05"
+          ],
+          "startBoundary": "Bank accounts grow at a rate set in advance. A share is different: it is a small part-ownership of a company, and its price moves every day.",
+          "stopBoundary": "A share as part-ownership of a company; two separate returns: the price changing (only banked when sold) and dividends (cash paid per share, quoted in cents); risk named plainly: prices can fall below what was paid and dividends can be cut, nothing is guaranteed; reading a share table row (Last, Change, High, Low, Div, Yield); dividend paid = number of shares × dividend per share; dividend yield = dividend per share ÷ current price × 100% (no franking); graphing a share price over time by hand and with a spreadsheet or app, and describing the trend, the highest and lowest points and the falls inside a rise; percentage change from the first price. Brokerage is i07.",
+          "nextHandoff": "math-s12-i07",
+          "advancedReuseCandidates": [],
+          "recommendation": "Mirror lesson14's numbers exactly (Brindle Ltd row: $44.60, 162c, 3.63%; Kalina: 850 shares, 24c, $6.40, $204.00 and 3.75%; we-3 prices $3.20 to $3.95, 23.44%; the hook: 30c at $6.00 then $7.50, yield 5% then 4%). Invented company names only. No gambling framing: shares are investments with real risk. The site shows no digital-tool graph (cie1731909 \"with and without using digital tools\"); add a spreadsheet chart. Pace flag: three points; split into i06a (dividends and yield from a share table) and i06b (share price graphs over time) only if the design passes 570 s.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i06.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i07",
+          "playlistOrder": 20,
+          "course": "Year 12 Standard 2 only",
+          "mainLearnerQuestion": "What does it really cost to buy shares once brokerage is added?",
+          "syllabusActionIds": [
+            "ci143c3551"
+          ],
+          "standard2ActionIds": [
+            "ci143c3551"
+          ],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci143c3551",
+              "course": "Year 12 Standard 2",
+              "text": "Solve problems involving calculation of brokerage costs and total costs of purchasing shares",
+              "sourceHtml": "<p>Solve problems involving calculation of <a data-item-id=\"82ec330d-698b-4bde-ac3a-0e7807d63070\" href=\"\">brokerage</a> <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">costs</a> and total costs of purchasing shares</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+            "sectionIds": [
+              "orient-to-buying-shares",
+              "apply-the-greater-of-rule",
+              "work-the-brokerage-examples",
+              "avoid-the-brokerage-traps",
+              "drill-and-revisit-buying-shares"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1",
+              "we-2",
+              "we-3"
+            ],
+            "sha256": "8dbb9c452ae7fc68830e5346361d39507f955c0418e81037967c0a47b59faa29"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+              "sectionIds": [
+                "orient-to-buying-shares",
+                "apply-the-greater-of-rule",
+                "work-the-brokerage-examples",
+                "avoid-the-brokerage-traps",
+                "drill-and-revisit-buying-shares"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1",
+                "we-2",
+                "we-3"
+              ],
+              "sha256": "8dbb9c452ae7fc68830e5346361d39507f955c0418e81037967c0a47b59faa29"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i06",
+              "text": "Share prices, the share table and the trade value (shares × price)."
+            },
+            {
+              "source": "math-s11-m01",
+              "text": "cib256693a: a percentage of an amount."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i06"
+          ],
+          "startBoundary": "i06 read the price on the screen. Buying at that price costs more, because a broker charges a fee on every trade.",
+          "stopBoundary": "Brokerage as the broker's fee on each trade; trade value = number of shares × price; a flat fee, a percentage of the trade value, or \"the greater of\" the two (work out both, take the larger); total cost of buying = trade value + brokerage; brokerage as a percentage of the trade value (why a fee matters more on a small parcel); the trade value where the two rules cost the same (site hook, $29 950); one short round trip (selling subtracts the fee) as the reason a price rise must first cover two fees. Comparing investment types is i08.",
+          "nextHandoff": "math-s12-i08",
+          "advancedReuseCandidates": [],
+          "recommendation": "Keep lesson15's numbers exactly (Nadia, Theo, Sam; $29 950). The site's fees ($19.95, $29.95, 0.10% to 0.12%) match a major Australian broker's current tiers; say once that fees vary and change. The syllabus point is about purchasing; keep selling to one round-trip beat. Pace: not at risk.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i07.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i08",
+          "playlistOrder": 21,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "Savings account, term deposit, shares or property: which investment suits which goal?",
+          "syllabusActionIds": [
+            "ci14eee60d",
+            "ci73459ef5"
+          ],
+          "standard2ActionIds": [
+            "ci14eee60d"
+          ],
+          "standard1ActionIds": [
+            "ci73459ef5"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci14eee60d",
+              "course": "Year 12 Standard 2",
+              "text": "Compare and contrast savings accounts, term deposits, shares and buying property as investment strategies",
+              "sourceHtml": "<p>Compare and contrast savings accounts, <a data-item-id=\"4acda2fa-cc7b-43ec-809c-b555ba41e3c2\" href=\"\">term deposits</a>, shares and buying property as investment strategies</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci73459ef5",
+              "course": "Year 12 Standard 1",
+              "text": "Compare and contrast savings accounts, term deposits and buying property as investment strategies",
+              "sourceHtml": "<p>Compare and contrast savings accounts, <a data-item-id=\"4acda2fa-cc7b-43ec-809c-b555ba41e3c2\" href=\"\">term deposits</a> and buying property as investment strategies</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+            "sectionIds": [
+              "compare-investments-beyond-the-rate",
+              "risk-return-and-time-horizon",
+              "work-the-comparison-activities"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "3b17ea73c3ff3b8f2da6488fb83be639d528b8811a78e96019617f53e56962b4"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson11.sa.html",
+              "sectionIds": [
+                "compare-investments-beyond-the-rate",
+                "risk-return-and-time-horizon",
+                "work-the-comparison-activities"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "3b17ea73c3ff3b8f2da6488fb83be639d528b8811a78e96019617f53e56962b4"
+            },
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson15.sa.html",
+              "sectionIds": [
+                "drill-and-revisit-buying-shares",
+                "practise-buying-shares"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [],
+              "sha256": "8dbb9c452ae7fc68830e5346361d39507f955c0418e81037967c0a47b59faa29"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i02",
+              "text": "FV = PV(1 + r)^n."
+            },
+            {
+              "source": "math-s12-i03",
+              "text": "Inflation and appreciation."
+            },
+            {
+              "source": "math-s12-i06",
+              "text": "Shares: price risk and dividends (Standard 2)."
+            },
+            {
+              "source": "math-s12-i07",
+              "text": "Brokerage as a cost of entry (Standard 2)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i07 (Standard 2)",
+            "math-s12-i05 (Standard 1)"
+          ],
+          "startBoundary": "Four places to put the same money. The rate is only one column; the goal and the time frame decide which column matters.",
+          "stopBoundary": "Compare and contrast savings accounts, term deposits, shares and property on return (calculated where possible with FV = PV(1 + r)^n), risk to the money put in, access (liquidity: how fast it turns back into cash) and cost to enter (none, brokerage, NSW transfer duty and fees); match an investment to a stated goal and time frame; write a two-sided comparison. Standard 1 compares savings accounts, term deposits and property only; the shares row is marked Standard 2. Loans are the next strand section (math-s12-i12, another author).",
+          "nextHandoff": "math-s12-i09",
+          "advancedReuseCandidates": [],
+          "recommendation": "Use lesson15 SA 3's numbers ($50 000 for 5 years: $61 419.83 at 4.2%, $63 208.64 at 4.8%, $1788.81 apart) and lesson15 card 10's four-measure table; cite 2026-27 NSW transfer duty (Revenue NSW). Leave out lesson11's super, ETF and tax modelling (marked beyond the syllabus by the site) and cryptocurrency. Pace: watch (four investments, four measures); keep calculation to two FV lines and one duty line.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i08.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i09",
+          "playlistOrder": 22,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How does straight-line depreciation work?",
+          "syllabusActionIds": [
+            "cid762df37",
+            "ci34b68cb8"
+          ],
+          "standard2ActionIds": [
+            "cid762df37"
+          ],
+          "standard1ActionIds": [
+            "ci34b68cb8"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cid762df37",
+              "course": "Year 12 Standard 2",
+              "text": "Apply the straight-line depreciation method to calculate the depreciation of an asset using the formula S = V_0 - Dn where S = salvage value, V_0 = initial value of the asset, D = depreciation amount per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/90ae83a4-eb57-4753-8769-6d0d4873450c\" data-item-codename=\"glo_link__mst__straight_line_depreciation\" data-item-id=\"90ae83a4-eb57-4753-8769-6d0d4873450c\" data-item-systemname=\"GLO Link: MST: straight-line depreciation\" data-item-type=\"link_glossary\">straight-line depreciation</a> method to calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/737ca905-7594-4e9e-9d16-e8c69cb761bd\" data-item-codename=\"glo_link__shared__depreciation\" data-item-id=\"737ca905-7594-4e9e-9d16-e8c69cb761bd\" data-item-systemname=\"GLO Link: SHARED: depreciation\" data-item-type=\"link_glossary\">depreciation</a> of an asset using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>-</mo><mi mathvariant=\"italic\">Dn</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span><span> </span><span>= <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/85312c26-f411-4eb5-9236-2a53c764b6ff\" data-item-codename=\"glo_link__mst__salvage_value\" data-item-id=\"85312c26-f411-4eb5-9236-2a53c764b6ff\" data-item-systemname=\"GLO Link: MST: salvage value\" data-item-type=\"link_glossary\">salvage value</a>,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub><mi> </mi></math></span><span>= initial value of the asset,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>D</mi></math></span><span> </span><span>= depreciation amount per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci34b68cb8",
+              "course": "Year 12 Standard 1",
+              "text": "Apply the straight-line depreciation method to calculate the depreciation of an asset using the formula S = V_0 - Dn where S = salvage value, V_0 = initial value of the asset, D = depreciation amount per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/90ae83a4-eb57-4753-8769-6d0d4873450c\" data-item-codename=\"glo_link__mst__straight_line_depreciation\" data-item-id=\"90ae83a4-eb57-4753-8769-6d0d4873450c\" data-item-systemname=\"GLO Link: MST: straight-line depreciation\" data-item-type=\"link_glossary\">straight-line depreciation</a> method to calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/737ca905-7594-4e9e-9d16-e8c69cb761bd\" data-item-codename=\"glo_link__shared__depreciation\" data-item-id=\"737ca905-7594-4e9e-9d16-e8c69cb761bd\" data-item-systemname=\"GLO Link: SHARED: depreciation\" data-item-type=\"link_glossary\">depreciation</a> of an asset using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub><mo>-</mo><mi mathvariant=\"italic\">Dn</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span><span> </span><span>= <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/85312c26-f411-4eb5-9236-2a53c764b6ff\" data-item-codename=\"glo_link__mst__salvage_value\" data-item-id=\"85312c26-f411-4eb5-9236-2a53c764b6ff\" data-item-systemname=\"GLO Link: MST: salvage value\" data-item-type=\"link_glossary\">salvage value</a>,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub></math></span><span> </span><span>= initial value of the asset,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>D</mi></math></span><span> </span><span>= depreciation amount per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "sectionIds": [
+              "orient-to-depreciation",
+              "straight-line-depreciation",
+              "work-four-depreciation-examples",
+              "avoid-the-depreciation-traps",
+              "drill-and-revisit-depreciation"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-1"
+            ],
+            "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "sectionIds": [
+                "orient-to-depreciation",
+                "straight-line-depreciation",
+                "work-four-depreciation-examples",
+                "avoid-the-depreciation-traps",
+                "drill-and-revisit-depreciation"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-1"
+              ],
+              "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i01",
+              "text": "Simple interest: the same amount each year, a straight-line graph."
+            },
+            {
+              "source": "math-s12-a06",
+              "text": "One-sentence depreciation preview (root ruling 12; Standard 2 only)."
+            },
+            {
+              "source": "math-s11-l03",
+              "text": "cib2d6c0df: a linear model with a negative gradient."
+            },
+            {
+              "source": "math-s11-f02",
+              "text": "ci2acef85d: solving a linear equation."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i08"
+          ],
+          "startBoundary": "Investments grow. Most things a worker or a business buys do the opposite: tools, gear and vehicles lose value as they are used.",
+          "stopBoundary": "Depreciation as the loss in value of an asset over time; straight-line depreciation S = V_0 − Dn (syllabus letters): the same dollar amount D lost each period, so the graph is a straight line falling from V_0 with gradient −D (simple interest in reverse); find S after n years; find D from the start and end values, D = (V_0 − S) ÷ n; find when the value first falls below a level and round up to whole years (site we-1); salvage value means the modelled value, not a guaranteed sale price. Declining balance is i10; comparing the methods and the spreadsheet is i11.",
+          "nextHandoff": "math-s12-i10",
+          "advancedReuseCandidates": [],
+          "recommendation": "Teaches depreciation fully (root ruling 12: a06 only previewed it). Keep lesson03's numbers (card: $24 000 losing $3000 a year; we-1: $85 000 losing $7400 a year, $40 600 after 6 years, below $30 000 after 8 complete years; drills). Pace: not at risk.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i09.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i10",
+          "playlistOrder": 23,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "How does declining-balance depreciation work, and why does it look like compound interest?",
+          "syllabusActionIds": [
+            "cif830811b",
+            "ciffbbac75",
+            "cid65c76c0"
+          ],
+          "standard2ActionIds": [
+            "cif830811b"
+          ],
+          "standard1ActionIds": [
+            "ciffbbac75",
+            "cid65c76c0"
+          ],
+          "syllabusActions": [
+            {
+              "id": "cif830811b",
+              "course": "Year 12 Standard 2",
+              "text": "Apply the declining balance method to calculate the depreciation of an asset using the formula S = V_0(1 - r)^n where S = salvage value, V_0 = initial value of the asset, r = depreciation rate per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Apply the declining balance method to calculate the depreciation of an asset using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>-</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span><span> </span><span>= salvage value,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub></math></span><span> </span><span>= initial value of the asset,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> </span><span>= depreciation <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/1b90898f-0cd8-4378-9e48-96acef2a41b3\" data-item-codename=\"glo_link__shared__rate\" data-item-id=\"1b90898f-0cd8-4378-9e48-96acef2a41b3\" data-item-systemname=\"GLO Link: Shared: rate\" data-item-type=\"link_glossary\">rate</a> per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ciffbbac75",
+              "course": "Year 12 Standard 1",
+              "text": "Apply the declining balance method to calculate the depreciation of an asset using the formula S = V_0(1 - r)^n where S = salvage value, V_0 = initial value of the asset, r = depreciation rate per time period and n = number of time periods",
+              "sourceHtml": "<div><span>Apply the declining balance method to calculate the depreciation of an asset using the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi><mo>=</mo><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub><msup><mrow><mfenced separators=\"|\"><mrow><mn>1</mn><mo>-</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>S</mi></math></span><span> </span><span>= salvage value,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mrow><mi>V</mi></mrow><mrow><mn>0</mn></mrow></msub></math></span><span> </span><span>= initial value of the asset,</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span> </span><span>= depreciation <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/1b90898f-0cd8-4378-9e48-96acef2a41b3\" data-item-codename=\"glo_link__shared__rate\" data-item-id=\"1b90898f-0cd8-4378-9e48-96acef2a41b3\" data-item-systemname=\"GLO Link: Shared: rate\" data-item-type=\"link_glossary\">rate</a> per time period and</span><span> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> </span><span>= number of time periods</span></div>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cid65c76c0",
+              "course": "Year 12 Standard 1",
+              "text": "Explain the similarities and differences between the declining balance formula and the compound interest formula",
+              "sourceHtml": "<p>Explain the similarities and differences between the declining balance formula and the <a data-item-id=\"673a3396-3708-47a2-b06a-0fe2cc0d7a77\" href=\"\">compound interest</a> formula</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "sectionIds": [
+              "orient-to-depreciation",
+              "declining-balance-depreciation",
+              "work-four-depreciation-examples",
+              "avoid-the-depreciation-traps"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-2",
+              "we-4"
+            ],
+            "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "sectionIds": [
+                "orient-to-depreciation",
+                "declining-balance-depreciation",
+                "work-four-depreciation-examples",
+                "avoid-the-depreciation-traps"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-2",
+                "we-4"
+              ],
+              "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i09",
+              "text": "Straight-line depreciation, S = V_0 − Dn."
+            },
+            {
+              "source": "math-s12-i02",
+              "text": "FV = PV(1 + r)^n."
+            },
+            {
+              "source": "math-s12-a06",
+              "text": "Decay as multiplying by 1 − r each step (Standard 2)."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i09"
+          ],
+          "startBoundary": "i09 took the same dollars off every year. A new car does not lose $6000 a year for ever: it loses a percentage of whatever it is worth now.",
+          "stopBoundary": "Declining-balance depreciation S = V_0(1 − r)^n: the same percentage of the current value lost each period, so the dollar loss shrinks every year and the graph is a decay curve that never reaches zero in the model; the multiplier 1 − r (18% gives 0.82); total depreciation = V_0 − S, never r × n × V_0; similarities with compound interest (same structure, a power of n, the same calculator steps) and differences (1 − r against 1 + r; value falls, the dollar change shrinks rather than grows). Finding r from two values is optional practice, not required by the syllabus wording. Comparing with straight-line is i11.",
+          "nextHandoff": "math-s12-i11",
+          "advancedReuseCandidates": [
+            "math-a12-f08"
+          ],
+          "recommendation": "Keep lesson03's numbers ($32 000 at 18% for 4 years, $14 467.90, the site rounds to $14 468; we-2 $38 500 at 22% for 3 years, $18 270.25 and $20 229.75). The compound-interest comparison is a Standard 1 point (cid65c76c0); give it its own scene. A real anchor: the ATO's diminishing value rate for a car is 200% ÷ 8-year effective life = 25%. Pace flag: if we-4 (finding the rate with a fourth root) is kept, the video runs long; move it to a practice question or leave it out.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i10.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        },
+        {
+          "id": "math-s12-i11",
+          "playlistOrder": 24,
+          "course": "Year 12 Standard 1 and Standard 2",
+          "mainLearnerQuestion": "Which depreciation method loses value faster, and how does a spreadsheet compare them?",
+          "syllabusActionIds": [
+            "ci776a0f04",
+            "ci4311f343",
+            "ci7395c156",
+            "ci4d802367"
+          ],
+          "standard2ActionIds": [
+            "ci776a0f04",
+            "ci4311f343"
+          ],
+          "standard1ActionIds": [
+            "ci7395c156",
+            "ci4d802367"
+          ],
+          "syllabusActions": [
+            {
+              "id": "ci776a0f04",
+              "course": "Year 12 Standard 2",
+              "text": "Compare straight-line depreciation and declining balance depreciation both numerically and graphically, with and without using digital tools",
+              "sourceHtml": "<p>Compare straight-line depreciation and <a data-item-id=\"ee9081aa-fa88-4abf-85d2-57d9541aa285\" href=\"\">declining balance depreciation</a> both numerically and graphically, with and without using digital tools</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci4311f343",
+              "course": "Year 12 Standard 2",
+              "text": "Use a spreadsheet to numerically and graphically model depreciation using the straight-line and declining balance methods",
+              "sourceHtml": "<p>Use a spreadsheet to numerically and graphically model depreciation using the straight-line and declining balance methods</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci7395c156",
+              "course": "Year 12 Standard 1",
+              "text": "Compare straight-line depreciation and declining balance depreciation either numerically or from a given graph",
+              "sourceHtml": "<p>Compare straight-line depreciation and <a data-item-id=\"ee9081aa-fa88-4abf-85d2-57d9541aa285\" href=\"\">declining balance depreciation</a> either numerically or from a given <a data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" href=\"\">graph</a></p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci4d802367",
+              "course": "Year 12 Standard 1",
+              "text": "Use a spreadsheet to model depreciation using the straight-line and declining balance methods",
+              "sourceHtml": "<p>Use a spreadsheet to model depreciation using the straight-line and declining balance methods</p>",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "sourceLesson": {
+            "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+            "sectionIds": [
+              "work-four-depreciation-examples",
+              "drill-and-revisit-depreciation",
+              "practise-depreciation"
+            ],
+            "sectionSelector": "data-step-id",
+            "exampleIds": [
+              "we-3"
+            ],
+            "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+          },
+          "sourceLessons": [
+            {
+              "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "url": "https://hscscience.com.au/subjects/maths-standard/year12/investment-and-loans/lesson03.sa.html",
+              "sectionIds": [
+                "work-four-depreciation-examples",
+                "drill-and-revisit-depreciation",
+                "practise-depreciation"
+              ],
+              "sectionSelector": "data-step-id",
+              "exampleIds": [
+                "we-3"
+              ],
+              "sha256": "ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131"
+            }
+          ],
+          "entryKnowledge": [
+            {
+              "source": "math-s12-i09",
+              "text": "Straight-line depreciation."
+            },
+            {
+              "source": "math-s12-i10",
+              "text": "Declining-balance depreciation."
+            },
+            {
+              "source": "math-s12-i05",
+              "text": "A spreadsheet comparing two growth columns and a line graph."
+            }
+          ],
+          "prerequisiteVideos": [
+            "math-s12-i10"
+          ],
+          "startBoundary": "Two methods, one asset. Which writes off more value early, which later, and where do their graphs cross?",
+          "stopBoundary": "Compare straight-line and declining-balance depreciation numerically (values after n years; the difference) and graphically (a straight line against a curve that falls fast then flattens; the crossing point and what it means); model both in a spreadsheet (year column, =V0-D*n and =V0*(1-r)^n, filled down, then a line graph); read a given graph. Standard 2 does both by hand and with digital tools; Standard 1 compares numerically or from a given graph and uses the spreadsheet. Loans (buy now pay later) start at math-s12-i12, written by another author.",
+          "nextHandoff": "math-s12-i12",
+          "advancedReuseCandidates": [],
+          "recommendation": "Keep lesson03's spreadsheet exactly ($40 000: $6000 a year against 20%; declining balance below the line for years 1 to 3, above from year 4) and we-3 ($16 000: $7000 against $7526.83, $526.83 apart). Needs SpreadsheetGrid. Pace: not at risk.",
+          "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-i11.md",
+          "status": "research-input-for-Claude-not-approved-route"
+        }
+      ]
+    }
+  }
+}

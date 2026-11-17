@@ -37,3 +37,11 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 ## Rulings on the a01 to a06 resolution (18 November 2026)
 26. Accepted: a04a scene 4 gives the pay-back reason first, then the equation for Standard 2; chips quote titles without the "| Year 12 Maths Standard" suffix; a02b practises single-equation multiplying only; a06's title is "Exponential Models: y = ka^x | Year 12 Maths Standard"; the thin margins (a01, a03, a05, a06) stand, to be measured on the voiced take.
 27. Accepted (a07 to a13 resolution): a07 at 6,062 characters (measure on the voiced take; the phone-data sentence is the first trim); a12's invented "Lakeside" sign; the trade van plate in a08 and a11a (plate reuse); a11b scene 3 with its named reserve trim.
+
+## Rulings on the i-strand packs (18 November 2026)
+28. **Year 12 strand order** follows the outline's recommended order, not its table order: algebraic relationships, money (i), ratios and rates (r), trigonometry (t), then bivariate data, probability, the normal distribution, critical path analysis, network flow. So i23 hands to math-s12-r01, and the Standard 1 path ends the money strand at i18, which also hands to r01.
+29. **Splits:** i02 into i02a (future value) and i02b (working backwards: present value and the rate); i17 into i17a (daily compound interest) and i17b (the statement and the minimum payment). i04 and i06 split only if a design cannot be taught well under 570 s.
+30. **Standard 1 path** through the strand: i01 to i03, i05, i08 to i14, i16 to i18 (Standard 2 only: i04, i06, i07, i15, i19 to i23). i16 must open without assuming i15; i18's final frame serves both courses.
+31. **i11 to i12 join:** the i12 designer opens on i11's final frame as designed (the e-bike with a "buy now, pay later?" tag); the two designers agree it in their decisions files.
+32. **Money sources:** each design cites the dated source of every rate or fee it states (RBA, ABS CPI, Revenue NSW, ATO, Moneysmart, a named broker's published tiers); Codex re-verifies them in the maths check. Lottery and gambling hooks are excluded (ruling 6).
+33. **Beyond-syllabus methods** (logarithms to find a term, the Advanced geometric-series annuity formula, effective annual rate, the Rule of 72) stay out of the videos; terms are found from tables, spreadsheets or a financial calculator as the syllabus intends.
