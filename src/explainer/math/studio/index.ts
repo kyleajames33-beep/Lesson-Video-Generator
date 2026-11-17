@@ -36,3 +36,7 @@ export * from './a11-graph-parts';
 export * from './a11-trig-circle';
 export * from './a11-trig-triangle';
 export * from './a11-trig-bearings';
+// Year 11 Advanced wave 3 (brief 245, maths-a11-kit-needs-g-s.md items 1 to 14 and CircleTracer): g01 to g06 and s01 to s11 parts.
+export * from './a11-transform-parts';
+export * from './a11-prob-parts';
+export * from './a11-data-parts';
