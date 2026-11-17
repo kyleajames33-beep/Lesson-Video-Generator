@@ -54,7 +54,9 @@ const KindsPanel: React.FC<{f0: number; at?: number; cText?: string; pulse?: num
 	const f = useCurrentFrame();
 	const ra = useRun(RUN_A), rb = useRun(RUN_B), rc = useRun(RUN_C);
 	const sf = f + f0;
-	const vals = [`${kindsOf(ra, sf)}`, `${kindsOf(rb, sf)}`, cText ?? `${kindsOf(rc, sf)}`];
+	// Root (17 Nov): air has four kinds; before the ring tally completes, show "?" rather than a partial live count.
+	const kc = kindsOf(rc, sf);
+	const vals = [`${kindsOf(ra, sf)}`, `${kindsOf(rb, sf)}`, cText ?? (kc >= 4 ? `${kc}` : '?')];
 	const o = prog(f, at, 14);
 	if (o <= 0.005) return null;
 	return (
