@@ -2,7 +2,7 @@
 
 Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Opens on t08's final frame as described in `../checks/root-decisions-maths-a11-t01-t08.md`. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 6,076 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 548 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,084 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 548 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 ## Revision 2 (17 Nov): learning review resolved
 
@@ -15,9 +15,11 @@ Review: `../checks/m-a11-t09-learning-review.md` (summary `../checks/m-a11-t09-t
 5. Optional, feedback 2 (a bracket and a unit lost by ear): **applied**, adapted. "times, in brackets," and "about ninety-one square centimetres" are said; "That's" and "Writing" are cut. "is the rest" is kept, because it is the key reason for the major segment. Feedback 2 is about 29 s.
 6. Optional, scene 6 ("the reflex angle"): **applied** ("the angle the long way round").
 
+Root's "over" ruling: feedback 1's two "four thirds" readings are now "four over three". Root's radians ruling: every radian answer already says "radians".
+
 Joins: scene 1 still opens on t08's final frame, and the final frame (scene 12, with the tuning fork plate) is unchanged; per root's ruling, t10 now opens with the fork already on screen.
 
-Narration 6,076 characters by script (Revision 1: 5,731), about 548 s with holds; speech before the notes about 451 s, under the 570 s cap. The longest scene is now scene 5 (1,064 characters, about 80 s; it has five visual beats on one table stage), with a named reserve trim. Changed values were rechecked with SymPy 1.14 (`work/brief-resolve-t2/verify.py`); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
+Narration 6,084 characters by script (Revision 1: 5,731), about 548 s with holds; speech before the notes about 452 s, under the 570 s cap. The longest scene is now scene 5 (1,064 characters, about 80 s; it has five visual beats on one table stage), with a named reserve trim. Changed values were rechecked with SymPy 1.14 (`work/brief-resolve-t2/verify.py`); Codex's maths check remains the authority. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: sixty-sixth video of Year 11 Mathematics Advanced (2024), outline order 66, Trigonometry and measure of angles (Radians). Pre-design pack: `../pre-design/maths-a11/math-a11-t09.md` (brief 243). Site lessons (read through the pack's quotations, read only): `trigonometry-and-measure-of-angles/lesson02.sa.html` (card 05, l = rθ and A = ½r²θ by the fraction of the circle; card 06, the segment as sector minus triangle; `we-1`, r = 8, θ = π/4; `we-3`, area 27π, θ = π/2, r = 6√3; all with their numbers; trap 01 with its correction) and `trigonometric-identities-and-equations/lesson10.sa.html` (the arc, sector and segment short answer, used as a check only). Route entry: `math-a11-t09` in `../../programme/maths-a11-route-inputs-4.json`. Visual system: maths studio kit; the painted pizza from t08 (w09's plate), a new painted drop-leaf table, and the phone and tuning fork for the handoff; every arc, sector, triangle, segment and row coded.
 
@@ -114,7 +116,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the straightened 
 Visual: `QuestionCard`, 40 px, worded as printed: "A sector of a circle has radius 15 cm and perimeter 50 cm. Find the angle at the centre in radians, and the area of the sector." The full question stays on screen. Picture slot: a coded sector with both radii labelled "15 cm", the angle "θ" and the arc unlabelled. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> The perimeter is two radii plus the arc, so the arc is fifty minus thirty, twenty **centimetres**. Theta is l over r, twenty over fifteen, which is four thirds radians. The area is a half times two hundred and twenty-five, times four thirds, which is a hundred and fifty square **centimetres**. Forgetting the two radii, and using an arc of fifty, is the slip.
+> The perimeter is two radii plus the arc, so the arc is fifty minus thirty, twenty **centimetres**. Theta is l over r, twenty over fifteen, which is four over three radians. The area is a half times two hundred and twenty-five, times four over three, which is a hundred and fifty square **centimetres**. Forgetting the two radii, and using an arc of fifty, is the slip.
 
 Visual: the card shrinks to the top (30 px). Rows, 44 px: "l = 50 − 2 × 15"; on "centimetres" "l = 20 cm", the picture's arc labelling "20 cm"; "θ = 20/15 = 4/3"; on "centimetres" (last) "A = ½ × 15² × 4/3 = 150 cm²" (green frame, with "θ = 4/3" in the same frame). On "Forgetting" a red slip "l = 50" writes and is crossed, caption "perimeter = 2r + l". Hold about 1 s.
 
@@ -153,7 +155,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Misconceptions addressed:** degrees in l = rθ (2 crossed); A = r²θ (3 crossed); sin θ in degree mode (5); the perimeter without the radii (A1 crossed); minor for major (6 crossed); the triangle subtracted from the major part (A2 crossed).
 - **Visual standard, item by item:** 1 the pizza from the first frame (t08's frame), the table from scene 5; 2 a new stage every 35 to 60 s; 3 the arc straightening, the sector sweep with its fraction bar, the segment lift-out and major toggle; 4 fixed roles (t08's, plus segment amber and major violet); 5 large type; 6 hand tags; 7 g01 boards in 2 to 6; 8 framed card and five bullets; 9 the triangle lifting out to leave exactly the leaf.
 - **One idea at a time:** one step (1), arc and perimeter (2), sector proof (3), backwards (4), segment (5), major parts (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 26 s and 29 s.
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 27 s and 29 s.
 - **Avoided double teaching:** t08's radians and fractions of a turn, t05's area rule and Stage 5's circle formulas are recalled in a phrase or grey chip.
 - **Syllabus coverage:** `cib55a24b7` (1, 2, A1; key notes 1, 3); `ci56cda609` (3, 4, A1; key note 2: proved and used); `cibf527c60` (4 to 6, A1, A2; key notes 4, 5): arc lengths, minor and major sectors and segments.
 - **Out of scope by design:** trig graphs (t10).
@@ -197,7 +199,7 @@ Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `t/verify.py`); Codex to r
 
 ## Narration length estimate
 
-Revision 2, counted by script (narration blockquotes, bold markers removed; `work/brief-resolve-t2/count.py`): 6,076 characters (Revision 1: 5,731). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the arc straightening, the sector sweep, the triangle lift-out, the major toggle) and the 45 s notes scene: about 548 s. Characters per scene (1 to 13): 539, 934, 619, 496, 1,064, 638, 219, 197, 352, 204, 390, 349, 75. Speech before the notes is about 451 s, under the 570 s cap. Feedback speech: about 26 s and 29 s.
+Revision 2, counted by script (narration blockquotes, bold markers removed; `work/brief-resolve-t2/count.py`): 6,084 characters (Revision 1: 5,731). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the arc straightening, the sector sweep, the triangle lift-out, the major toggle) and the 45 s notes scene: about 548 s. Characters per scene (1 to 13): 539, 934, 619, 496, 1,064, 638, 219, 197, 360, 204, 390, 349, 75. Speech before the notes is about 452 s, under the 570 s cap. Feedback speech: about 27 s and 29 s.
 
 Reserve trims if the voiced take runs long: scene 2's perimeter sentence moves to the screen only (keep the row and tag, silent); scene 6's "It's whatever the leaf isn't" (keep the violet glow); scene 5's ", from last time's exact values," (the t08 chip carries it).
 

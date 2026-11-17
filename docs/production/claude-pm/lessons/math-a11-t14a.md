@@ -1,8 +1,22 @@
 # Maths A11 T14a: Where do the Pythagorean identities come from, and how do they give one ratio from another? cos² θ + sin² θ = 1 from the circle, 1 + tan² θ = sec² θ and 1 + cot² θ = cosec² θ by dividing, finding a ratio with the quadrant choosing the sign, and a first simplification (design)
 
-Status: Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. This is the first of two videos split from the outline's t14 (see `../checks/root-decisions-maths-a11-t09-t16.md`, split 1). Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. This is the first of two videos split from the outline's t14 (see `../checks/root-decisions-maths-a11-t09-t16.md`, split 1). Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,176 characters by script (see "Narration length estimate"), 13 scene headings, about 480 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,489 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 504 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (17 Nov): learning review resolved
+
+Review: `../checks/m-a11-t14a-learning-review.md` (summary `../checks/m-a11-t09-t16-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-a11-t-g-s-packs.md` and root's resolution brief of 17 Nov (ruling 25 layout; fractions read "over"; "radians" said after a radian answer). Resolution log: `../checks/m-a11-t09-t16-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 12 and the t14b join (root ruling 25 not applied): **accepted**, with root's layout. The phone plate `ma12-phone-v1.png` (portrait, 520 px) stays at the left with a coded miniature of the app on its screen, and a thin grey cone links it to a wide landscape "app view" panel (`ScreenApp`, 1,280 × 720 px) that shows the same screen enlarged, so the graphs have room. The handoff decision, scene 12's visual, the assets list and the kit additions are updated. This final frame is word for word t14b's boundary (t14b Revision 2), so the join stays exact.
+2. Should fix, scene 3 (three rescaled triangles at once, sides unexplained): **accepted**, adapted. One triangle only, after the first division, with the reason said: "Shrink the triangle so the adjacent side is one. Then opposite over adjacent is just the opposite side, so that side is tangent theta. And hypotenuse over adjacent is just the hypotenuse, so it's secant theta. Pythagoras gives one plus tangent squared equals secant squared." (The reviewer's wording, with "opposite over adjacent is just the opposite side" added so the label has a cause.) The "In pictures" sentence is cut; the other two triangles stay small and silent on the memory card. This answers the review note on crowding.
+3. Optional, "five on four": **applied** as root ruled. Every fraction in the narration is now read "over" (22 changes in scenes 4, 5, attempt 1 and feedback 1), and author note (f) is updated.
+4. Optional, scene 5 ("Then sine theta is tangent theta times cosine theta"): **applied** ("because tangent is sine over cosine"), with a grey chip "t12: tan = sin/cos".
+5. Optional, attempt 2's spoken bracket: **applied** ("times, in brackets, one plus cotangent squared theta").
+
+Root's radians ruling: no answer in this video is a radian angle (scene 5's interval already says "radians"). Open decision 1 (the split) is closed by root ruling 21; open decision 2 (pan law) is closed: the review agreed with "one common design". Joins: scene 1 still opens on t13's final frame; the final frame changes to the ruling 25 layout together with t14b's opening.
+
+Narration 5,489 characters by script (Revision 1: 5,176), about 504 s with holds; speech before the notes about 407 s, under the 570 s cap. No value changed. Nothing recorded; human listening pending.
 
 Scope: seventy-first video of Year 11 Mathematics Advanced (2024), outline order 71 (first part), Trigonometric identities and equations. Pre-design pack: `../pre-design/maths-a11/math-a11-t14.md` (brief 243). Site lesson (read through the pack's quotations, read only): `trigonometric-identities-and-equations/lesson02.sa.html` (card 05, deriving the identities; card 07, sec θ = 5/4 acute gives tan θ = 3/4; card 08, (sec² θ − 1)/tan θ = tan θ; drill 5, sin² θ(1 + cot² θ) = 1; short answer 2, tan θ = −4/3 in the fourth quadrant gives cos θ = 3/5 and sin θ = −4/5; all with their numbers). Route entry: `math-a11-t14` in `../../programme/maths-a11-route-inputs-4.json`. Visual system: maths studio kit; a painted mixing-desk channel and a pair of studio speakers for the anchor; every circle, triangle, meter, readout and row coded.
 
@@ -23,11 +37,11 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Simulations (standard item 3).**
   1. **Pan knob** (scene 1; `ParameterSlider` dressed as the knob): the knob turns from 0° to 90°; two coded level meters over the speakers rise and fall (left violet, cos θ; right amber, sin θ); `LiveReadoutBoard`, 52 px: "θ", "left = cos θ", "right = sin θ", "left² + right² = 1.000" (teal, never changing).
   2. **Divide through** (`AlignedAlgebra`; scenes 2, 3): every term of x² + y² = r² gains "÷ r²" and collapses to (x/r)² + (y/r)² = 1, then each fraction morphs into cos θ and sin θ; the same move dividing by cos² θ and by sin² θ.
-  3. **Rescaled triangles** (`StudioTriangle` scale modes, new; scene 3): t03's triangle scaled so the hypotenuse is 1 (sides cos θ, sin θ, 1), the adjacent side is 1 (sides 1, tan θ, sec θ) and the opposite side is 1 (cot θ, 1, cosec θ); a Pythagoras square on each confirms the identity.
+  3. **Rescaled triangle** (`StudioTriangle` scale modes, new; scene 3, Revision 2): t03's triangle shrunk so the adjacent side is 1 (sides 1, tan θ, sec θ), with the reason said aloud; a Pythagoras square on each side confirms 1 + tan² θ = sec² θ. The three rescalings (hypotenuse 1, adjacent 1, opposite 1) appear only small and silent on the memory card.
   4. **Quadrant chooser** (scene 5): a ± chip lands on t04's quadrant badge for the fourth quadrant, which keeps "+" for sec and cos and "−" for sin.
 - **Colour roles (fixed for this video, as t11 to t13).** The angle θ **blue**; ratio values **teal**; x and cos (the left meter) **violet**; y and sin (the right meter) **amber**; r ink; the squares of each ratio keep its colour; "≠ 0" conditions grey; answer green; mistake red, crossed slips only.
 - **Large type, handwritten voice.** As e08 (current lines and readouts 52 px, strips 44 px, nothing below 26 px, all text above y = 950). Hand tags: "never moves", "÷ r²", "cos² θ = (cos θ)²", "every θ", "÷ cos² θ: cos θ ≠ 0", "÷ sin² θ: sin θ ≠ 0", "tan with sec", "cot with cosec", "same identity", "acute: +", "IV: x > 0", "quadrant picks", "check: 16 + 9 = 25".
-- **Stage changes (standard item 2).** t13's frame, the pan knob and speakers (1); the circle dividing through (2); the three rescaled triangles (3); g01 board, sec θ = 5/4 (4); g01 board with the quadrant badge, tan θ = −4/3 (5); g01 board, a simplification (6); framed card (7); question cards (8 to 11); the graphing app for t14b (12); key notes (13).
+- **Stage changes (standard item 2).** t13's frame, the pan knob and speakers (1); the circle dividing through (2); the two divisions and one rescaled triangle (3); g01 board, sec θ = 5/4 (4); g01 board with the quadrant badge, tan θ = −4/3 (5); g01 board, a simplification (6); framed card (7); question cards (8 to 11); the phone and its app view for t14b (12); key notes (13).
 - **Worked examples (g01 layout).** 4: site card 07: sec θ = 5/4, θ acute: tan θ = 3/4. 5: site short answer 2: tan θ = −4/3, 3π/2 < θ < 2π: sec θ = 5/3, cos θ = 3/5, sin θ = −4/5. 6: site card 08: (sec² θ − 1)/tan θ = tan θ. Crossed slips: "1 + tan² θ = cosec² θ" (3), "sin θ = ±4/5" (5), "cot θ = 12/5" (A1), "sin² θ sec² θ" (A2).
 - **Memory aid.** Framed card: "Divide the circle's Pythagoras by r²: cos² θ + sin² θ = 1. Divide again by cos² θ or sin² θ." Second line: "Tan with sec, cot with cosec. The quadrant picks the sign."
 - **Visual surprise.** The pan readout "left² + right² = 1.000" sits completely still while both meters swing; then dividing the circle's equation by r² turns it into the same "= 1".
@@ -38,7 +52,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Cause chain taught, in order:** (1) the squared levels add to 1 in the pan knob (1); (2) because x² + y² = r² for every point on a circle, and dividing by r² gives (x/r)² + (y/r)² = 1, so cos² θ + sin² θ = 1 for every θ (2); (3) dividing that by cos² θ (where cos θ ≠ 0) or sin² θ (where sin θ ≠ 0) gives the other two, each also Pythagoras in a rescaled triangle (3); (4) an identity with two ratios in it turns one known ratio into the other's square (4); (5) the square root gives ±, and the quadrant's signs of x and y pick one (5); (6) a known identity can replace part of an expression (6).
 - **Entry knowledge (route):** t03 (x² + y² = r²; cos θ = x/r, sin θ = y/r); t12 (reciprocal identities, tan = sin/cos, cot = cos/sin, and their excluded angles); t04 (quadrant signs); w02 (algebraic fractions).
 - **What later videos rely on.** t14b proves further identities with these three and the five from t12. t16 uses sin² θ = 1 − cos² θ and cos² θ = 1 − sin² θ to reduce mixed equations. Year 12 uses sin² x + cos² x = 1 in calculus (recalled there).
-- **Handoff (to math-a11-t14b, "How do we prove further trig identities?").** Scene 12: a coded graphing-app screen (`ScreenApp`, unbranded) plotting y = tan x + cot x (teal) and y = sec x cosec x (violet, dashed) for −π < x < π, the two graphs lying exactly on top of each other; chips "same graph?", "is that a proof?", "Next: proving identities" and "?". This is t14b's opening frame.
+- **Handoff (to math-a11-t14b, "How do we prove further trig identities?").** Scene 12 (root ruling 25 layout, Revision 2): the phone plate `ma12-phone-v1.png` (portrait, 520 px tall) at the left, centred at about (250, 540), its screen showing a coded miniature of the graphing app (input bar and both graphs, small); a thin grey cone (two hairlines with a 10 per cent grey fill) widens from the phone's screen to a wide coded "app view" panel at the right (`ScreenApp` landscape, 1,280 × 720 px, unbranded, left edge at x ≈ 560 px) showing the same screen enlarged: an input bar with the two entries "y = tan x + cot x" and "y = sec x cosec x", and the graphs y = tan x + cot x (teal) and y = sec x cosec x (violet, dashed) for −π < x < π, lying exactly on top of each other with gaps at the multiples of π/2; the phone's miniature mirrors the panel at every moment; chips "same graph?" and "is that a proof?" under the panel, then "Next: proving identities" and "?". This is t14b's opening frame, word for word the same as t14b's boundary.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) Pan law: L = cos θ, R = sin θ, 0° ≤ θ ≤ 90°; power ∝ L² + R² = 1. At 30°: 0.866 and 0.5, squares 0.75 and 0.25; at 45°: 0.7071 each, squares 0.5. Other pan laws (linear, −4.5 dB) are not mentioned on screen; "one common design" covers it.
@@ -46,7 +60,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (c) Short answer 2: sec² θ = 25/9; sec θ = 5/3 (fourth quadrant); cos θ = 3/5; sin θ = tan θ cos θ = −4/5; check 16/25 + 9/25 = 1.
   (d) Card 08: (sec² θ − 1)/tan θ = tan θ (cos θ ≠ 0, tan θ ≠ 0).
   (e) A1: 1 + cot² θ = 169/25; cot² θ = 144/25; cot θ = −12/5 (x > 0, y < 0). A2: sin² θ cosec² θ = 1 (sin θ ≠ 0).
-  (f) Pronunciations: "cosine squared theta" for cos² θ; "five on four"; "twenty-five on sixteen"; "three pi over two radians"; "one hundred and sixty-nine on twenty-five".
+  (f) Pronunciations: "cosine squared theta" for cos² θ; "five over four"; "twenty-five over sixteen"; "three pi over two radians"; "one hundred and sixty-nine over twenty-five" (Revision 2: fractions are read "over", root's ruling; Revision 1 said "on"); "times, in brackets," before a bracketed factor.
   (g) The app's window −π < x < π omits the excluded points (multiples of π/2); both graphs are drawn with gaps there.
 
 Main question: *Where do the Pythagorean identities come from, and how do they give one ratio from another? Why does a pan knob's sound stay equally loud as it moves across?*
@@ -69,19 +83,19 @@ Visual: opens on t13's final frame exactly (the circle with (x, y) and sides x, 
 Visual: stage change: the circle (radius r, 600 px) at the left with the point (x, y) and its drop triangle (x violet, y amber, r ink); the desk shrinks to a 240 px badge at the top right with its teal "= 1.000". Rows at the right (`AlignedAlgebra`), 52 px: "x² + y² = r²"; on "Divide" each term gains "÷ r²", hand tag "÷ r²"; on "one" "(x/r)² + (y/r)² = 1"; the fractions morph into "cos θ" (violet) and "sin θ" (amber): "cos² θ + sin² θ = 1" (green frame); hand tag "cos² θ = (cos θ)²". On "excluded" the point sweeps once round the circle, the identity staying lit, hand tag "every θ". The desk badge's "= 1.000" pulses once.
 
 ### 3. two more by dividing again
-> Two more come from dividing again. Divide every term by cosine squared theta, which we can only do where cosine theta isn't zero. Cosine squared over cosine squared is one. Sine squared over cosine squared is tangent squared. And one over cosine squared is secant squared. So one plus tangent squared theta equals secant squared **theta**. Divide by sine squared theta instead, where sine theta isn't zero, and you get one plus cotangent squared theta equals cosecant squared **theta**. In pictures, each identity is Pythagoras in one triangle, scaled so a different side is one. Notice the pairs: tangent goes with secant, and cotangent goes with cosecant. Writing one plus tangent squared equals cosecant squared is the **slip**.
+> Two more come from dividing again. Divide every term by cosine squared theta, which we can only do where cosine theta isn't zero. Cosine squared over cosine squared is one. Sine squared over cosine squared is tangent squared. And one over cosine squared is secant squared. So one plus tangent squared theta equals secant squared **theta**. Here's the same thing in a picture. Shrink the triangle so the adjacent side is one. Then opposite over adjacent is just the opposite side, so that side is tangent theta. And hypotenuse over adjacent is just the hypotenuse, so it's secant theta. Pythagoras gives one plus tangent squared equals secant **squared**. Divide by sine squared theta instead, where sine theta isn't zero, and you get one plus cotangent squared theta equals cosecant squared **theta**. Notice the pairs: tangent goes with secant, and cotangent goes with cosecant. Writing one plus tangent squared equals cosecant squared is the **slip**.
 
-Visual: clear change: the identity "cos² θ + sin² θ = 1" at the top (44 px); two working columns below, 52 px. Left: "÷ cos² θ" with grey "cos θ ≠ 0", hand tag "÷ cos² θ: cos θ ≠ 0"; terms "cos² θ/cos² θ + sin² θ/cos² θ = 1/cos² θ" collapse to "1 + tan² θ = sec² θ" on "theta" (green frame), grey chip "t12: tan = sin/cos, sec = 1/cos". Right, on "Divide by sine squared": "÷ sin² θ" with "sin θ ≠ 0", collapsing to "cot² θ + 1 = cosec² θ", rewritten "1 + cot² θ = cosec² θ" on "theta" (green frame). On "In pictures" three rescaled triangles draw in a row (`StudioTriangle` scale modes), each with a small square on each side: hypotenuse 1: sides "cos θ, sin θ, 1"; adjacent 1: "1, tan θ, sec θ"; opposite 1: "cot θ, 1, cosec θ"; each lights beside its identity. On "pairs" the pairs ring: "tan with sec", "cot with cosec" (hand tags). On "slip" a red slip "1 + tan² θ = cosec² θ" writes and is crossed, caption "tan goes with sec".
+Visual: clear change: the identity "cos² θ + sin² θ = 1" at the top (44 px); two working columns below, 52 px, the right column empty at first. Left: "÷ cos² θ" with grey "cos θ ≠ 0", hand tag "÷ cos² θ: cos θ ≠ 0"; terms "cos² θ/cos² θ + sin² θ/cos² θ = 1/cos² θ" collapse to "1 + tan² θ = sec² θ" on "theta" (green frame), grey chip "t12: tan = sin/cos, sec = 1/cos". (Revision 2: one triangle only.) On "Shrink the triangle" one triangle draws in the empty right half (`StudioTriangle` scale mode, 420 px): t03's triangle with sides "cos θ", "sin θ", "1" shrinks as every side is divided by cos θ, grey tag "every side ÷ cos θ"; on "opposite side" its labels become "adjacent 1" (violet) and "opposite tan θ" (amber), on "hypotenuse" "hypotenuse sec θ" (ink); on "squared" a small square on each side and "1² + tan² θ = sec² θ" lights, linked by a thin line to the left column's identity. The other two rescalings are not drawn here; they appear small and silent on the memory card. On "Divide by sine squared" the triangle shrinks to a 180 px badge under the left column, and the right column writes: "÷ sin² θ" with "sin θ ≠ 0", collapsing to "cot² θ + 1 = cosec² θ", rewritten "1 + cot² θ = cosec² θ" on "theta" (green frame). On "pairs" the pairs ring: "tan with sec", "cot with cosec" (hand tags). On "slip" a red slip "1 + tan² θ = cosec² θ" writes and is crossed, caption "tan goes with sec".
 
 ### 4. worked example: one ratio from another
-> Now use them to find one ratio from another. If secant theta is five on four, and theta is acute, find tangent theta. Secant and tangent sit in the same identity. So one plus tangent squared theta equals five on four, squared, which is twenty-five on **sixteen**. Take away one, and tangent squared theta is nine on sixteen. So tangent theta is plus or minus three on four. But theta is acute, so tangent is positive, and tangent theta is three on **four**. Check it in a triangle: hypotenuse five, adjacent four, so the opposite side is three.
+> Now use them to find one ratio from another. If secant theta is five over four, and theta is acute, find tangent theta. Secant and tangent sit in the same identity. So one plus tangent squared theta equals five over four, squared, which is twenty-five over **sixteen**. Take away one, and tangent squared theta is nine over sixteen. So tangent theta is plus or minus three over four. But theta is acute, so tangent is positive, and tangent theta is three over **four**. Check it in a triangle: hypotenuse five, adjacent four, so the opposite side is three.
 
 Visual: clear change to the full-width g01 board (`WorkingBoard`). Task strip, 44 px: "If sec θ = 5/4 and θ is acute, find tan θ." Equation strip: "1 + tan² θ = sec² θ", hand tag "same identity". Givens card: "sec θ = 5/4" (violet), "θ acute" (blue). Rows, current 52 px, earlier 32 px dimmed: "1 + tan² θ = (5/4)²"; on "sixteen" "= 25/16"; "tan² θ = 25/16 − 1 = 9/16"; "tan θ = ±3/4"; on "four" "θ acute, so tan θ = 3/4" (green frame), hand tag "acute: +". On "Check it in a triangle" a small coded triangle at the right: hypotenuse 5, adjacent 4, opposite 3 (amber), "tan θ = 3/4 ✓".
 
 ### 5. worked example: the quadrant picks the sign
-> When the angle isn't acute, the quadrant does the choosing. If tangent theta is minus four on three, and theta is between three pi over two and two pi radians, find sine theta and cosine theta. First, secant squared theta is one plus sixteen on nine, which is twenty-five on **nine**. So secant theta is plus or minus five on three. Theta is in the fourth quadrant, where x is positive, so cosine and secant are positive. Secant theta is five on three, and cosine theta is three on **five**. Then sine theta is tangent theta times cosine theta, minus four on three, times three on five, which is minus four on **five**. Check: sixteen on twenty-five plus nine on twenty-five is one. Leaving plus or minus in the answer is the **slip**. The quadrant has already picked.
+> When the angle isn't acute, the quadrant does the choosing. If tangent theta is minus four over three, and theta is between three pi over two and two pi radians, find sine theta and cosine theta. First, secant squared theta is one plus sixteen over nine, which is twenty-five over **nine**. So secant theta is plus or minus five over three. Theta is in the fourth quadrant, where x is positive, so cosine and secant are positive. Secant theta is five over three, and cosine theta is three over **five**. Then sine theta is tangent theta times cosine theta, because tangent is sine over cosine, minus four over three, times three over five, which is minus four over **five**. Check: sixteen over twenty-five plus nine over twenty-five is one. Leaving plus or minus in the answer is the **slip**. The quadrant has already picked.
 
-Visual: the board clears row by row (stage continues); t04's quadrant badge (a small circle with I to IV and the signs of x and y) at the right. Task strip: "If tan θ = −4/3 and 3π/2 < θ < 2π, find sin θ and cos θ." Givens card: "tan θ = −4/3" (teal), "3π/2 < θ < 2π: quadrant IV" (blue), grey chip "t04". Rows, 52 px: "sec² θ = 1 + tan² θ = 1 + 16/9"; on "nine" "= 25/9"; "sec θ = ±5/3"; the badge's quadrant IV lights with "x > 0, y < 0", hand tag "IV: x > 0"; the ± chip lands on the badge and keeps "+" (quadrant chooser); "sec θ = 5/3", on "five" "cos θ = 3/5" (green frame); "sin θ = tan θ cos θ = (−4/3)(3/5)"; on "five" (last) "sin θ = −4/5" (green frame), hand tag "quadrant picks". Grey row "check: 16/25 + 9/25 = 1 ✓". On "slip" a red slip "sin θ = ±4/5" writes and is crossed, caption "IV: sin θ < 0".
+Visual: the board clears row by row (stage continues); t04's quadrant badge (a small circle with I to IV and the signs of x and y) at the right. Task strip: "If tan θ = −4/3 and 3π/2 < θ < 2π, find sin θ and cos θ." Givens card: "tan θ = −4/3" (teal), "3π/2 < θ < 2π: quadrant IV" (blue), grey chip "t04". Rows, 52 px: "sec² θ = 1 + tan² θ = 1 + 16/9"; on "nine" "= 25/9"; "sec θ = ±5/3"; the badge's quadrant IV lights with "x > 0, y < 0", hand tag "IV: x > 0"; the ± chip lands on the badge and keeps "+" (quadrant chooser); "sec θ = 5/3", on "five" "cos θ = 3/5" (green frame); "sin θ = tan θ cos θ = (−4/3)(3/5)" with grey chip "t12: tan = sin/cos"; on "five" (last) "sin θ = −4/5" (green frame), hand tag "quadrant picks". Grey row "check: 16/25 + 9/25 = 1 ✓". On "slip" a red slip "sin θ = ±4/5" writes and is crossed, caption "IV: sin θ < 0".
 
 ### 6. a first simplification
 > The identities also simplify expressions. Simplify secant squared theta minus one, all over tangent theta. From the second identity, secant squared theta minus one is tangent squared theta. So we have tangent squared theta over tangent theta, which is just tangent **theta**, wherever the original expression exists.
@@ -94,17 +108,17 @@ Visual: the board clears (stage continues). Task strip: "Simplify (sec² θ − 
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the three rescaled triangles small, and the pan readout "= 1.000". Main line, hand font 56 px: "Divide the circle's Pythagoras by r²: cos² θ + sin² θ = 1. Divide again by cos² θ or sin² θ." On "cosecant" the key line, 40 px: "Tan with sec, cot with cosec. The quadrant picks the sign." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
-> Your turn. Given that cosecant theta is minus thirteen on five, and theta is between two hundred and seventy and three hundred and sixty degrees, find the exact value of cotangent theta. Pause here to answer.
+> Your turn. Given that cosecant theta is minus thirteen over five, and theta is between two hundred and seventy and three hundred and sixty degrees, find the exact value of cotangent theta. Pause here to answer.
 
 Visual: `QuestionCard`, 40 px, worded as printed: "Given cosec θ = −13/5 and 270° < θ < 360°, find the exact value of cot θ." The full question stays on screen. Picture slot: t04's quadrant badge, unlit. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> One plus cotangent squared theta equals one hundred and sixty-nine on twenty-five, so cotangent squared theta is one hundred and forty-four on twenty-**five**, and cotangent theta is plus or minus twelve on five. In the fourth quadrant, x is positive and y is negative, so cotangent, x over y, is negative. It's minus twelve on **five**. Keeping the plus sign is the slip.
+> One plus cotangent squared theta equals one hundred and sixty-nine over twenty-five, so cotangent squared theta is one hundred and forty-four over twenty-**five**, and cotangent theta is plus or minus twelve over five. In the fourth quadrant, x is positive and y is negative, so cotangent, x over y, is negative. It's minus twelve over **five**. Keeping the plus sign is the slip.
 
 Visual: the card shrinks to the top (30 px). Rows, 44 px: "1 + cot² θ = cosec² θ = 169/25"; on "five" "cot² θ = 144/25, cot θ = ±12/5"; the badge's quadrant IV lights "x > 0, y < 0: x/y < 0"; on "five" (last) "cot θ = −12/5" (green frame). On "Keeping" a red slip "cot θ = 12/5" writes and is crossed, caption "IV: cot θ < 0". Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
-> Last one. Simplify sine squared theta, times one plus cotangent squared theta. Pause here to answer.
+> Last one. Simplify sine squared theta, times, in brackets, one plus cotangent squared theta. Pause here to answer.
 
 Visual: `QuestionCard`, 40 px: "Simplify sin² θ(1 + cot² θ)." Picture slot: empty. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
@@ -116,7 +130,7 @@ Visual: the card shrinks to the top. Rows, 44 px: "1 + cot² θ = cosec² θ"; o
 ### 12. handoff
 > These identities can do more than find values. They can prove that two expressions are equal for every angle. Here's a graphing app, plotting tangent x plus cotangent x, and secant x times cosecant x. The two graphs land exactly on top of each other. Is that a proof? And if it isn't, how do we prove it? That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to a coded graphing-app screen (`ScreenApp`, 1,300 × 760 px, unbranded, an input bar showing the two entries): "y = tan x + cot x" (teal) draws first for −π < x < π, then "y = sec x cosec x" (violet, dashed) draws over it and lands exactly on it, gaps at the multiples of π/2. Chips "same graph?" and "is that a proof?". On "next" chips "Next: proving identities" and "?". Hold about 2 s. This is t14b's opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear. On "graphing app" the phone plate `ma12-phone-v1.png` (portrait, 520 px tall) slides in at the left, centred at about (250, 540), its screen lit with a coded miniature of the app; the thin grey cone (two hairlines, 10 per cent grey fill) opens from the phone's screen to the wide "app view" panel at the right (`ScreenApp` landscape, 1,280 × 720 px, unbranded, left edge at x ≈ 560 px), which shows the same screen enlarged (root ruling 25 layout). In the panel's input bar the two entries type in; "y = tan x + cot x" (teal) draws first for −π < x < π, then "y = sec x cosec x" (violet, dashed) draws over it and lands exactly on it, gaps at the multiples of π/2; the phone's miniature mirrors every step. Chips "same graph?" and "is that a proof?" under the panel. On "next" chips "Next: proving identities" and "?". Hold about 2 s. This is t14b's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -136,9 +150,9 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 
 - **Does it explain causes?** Why the pan total stays at 1: it is cos² θ + sin² θ (1). Why that is 1: the circle's Pythagoras divided by r² (2). Why the other two hold and where: divide by cos² θ or sin² θ, which must not be 0 (3). Why an identity finds a ratio: it links two ratios (4). Why the quadrant decides: the square root gives ±, and x and y have known signs there (5).
 - **Misconceptions addressed:** tan paired with cosec (3 crossed); a dropped 1 (3 tags); ± kept (5 crossed, A1 crossed); division without its condition (3); the wrong partner (A2 crossed).
-- **Visual standard, item by item:** 1 the desk and speakers inside the first 15 s (t13's frame, then the plates), returning as a badge in 2; 2 a new stage every 30 to 60 s; 3 the pan knob with live meters and the still total, the divide-through morph, the rescaled triangles; 4 fixed roles (cos violet, sin amber, as t11 to t13); 5 large type; 6 hand tags; 7 g01 boards in 4 to 6; 8 framed card and five bullets; 9 the total that never moves.
+- **Visual standard, item by item:** 1 the desk and speakers inside the first 15 s (t13's frame, then the plates), returning as a badge in 2; 2 a new stage every 30 to 60 s; 3 the pan knob with live meters and the still total, the divide-through morph, the rescaled triangle; 4 fixed roles (cos violet, sin amber, as t11 to t13); 5 large type; 6 hand tags; 7 g01 boards in 4 to 6; 8 framed card and five bullets; 9 the total that never moves.
 - **One idea at a time:** the pan total (1), the first identity (2), the other two (3), a ratio from a ratio (4), the quadrant's sign (5), one simplification (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 27 s and 21 s.
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 28 s and 21 s.
 - **Avoided double teaching:** t03's x² + y² = r², t04's signs and t12's identities are recalled in a phrase or grey chip.
 - **Syllabus coverage:** `cif79ffa41` (2, 3; key notes 1 to 3); `ci1ff2042e` (4 to 6, A1, A2; key notes 4, 5), with proving further identities in t14b.
 - **Out of scope by design:** proofs of further identities (t14b); equations (t16).
@@ -183,9 +197,9 @@ Recalculated with SymPy 1.14 (17 Nov 2026, scratchpad `t/verify.py`); Codex to r
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed; scratchpad `t/count.py`): 5,176 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the knob sweep, the divide-through morph, the triangles) and the 45 s notes scene: about 480 s. Characters per scene (1 to 13): 704, 557, 719, 536, 752, 312, 256, 208, 364, 100, 276, 317, 75. Speech before the notes is about 383 s, under the 570 s cap. Feedback speech: about 27 s and 21 s.
+Revision 2, counted by script (narration blockquotes, bold markers removed; `work/brief-resolve-t2/count.py`): 5,489 characters (Revision 1: 5,176). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the knob sweep, the divide-through morph, the triangle shrink) and the 45 s notes scene: about 504 s. Characters per scene (1 to 13): 704, 557, 937, 548, 811, 312, 256, 210, 372, 114, 276, 317, 75. Speech before the notes is about 407 s, under the 570 s cap. Feedback speech: about 28 s and 21 s.
 
-Reserve trims if the voiced take runs long: scene 4's triangle check sentence (keep the small triangle, silent); scene 5's "Check:" sentence (keep the grey row).
+Reserve trims if the voiced take runs long: scene 4's triangle check sentence (keep the small triangle, silent); scene 5's "Check:" sentence (keep the grey row); scene 3's "Here's the same thing in a picture." (the triangle's motion carries it).
 
 ## Scene list and build ids
 
@@ -199,13 +213,13 @@ Stage plan (approximate seconds):
 | --- | --- | --- |
 | 0 to 50 s | 1 | The pan knob and speakers, the still total |
 | 50 to 100 s | 2 | The circle divided by r² |
-| 100 to 160 s | 3 | Two more identities; rescaled triangles |
+| 100 to 165 s | 3 | Two more identities; one rescaled triangle |
 | 160 to 205 s | 4 | g01 board: sec θ = 5/4 |
 | 205 to 265 s | 5 | g01 board with the quadrant badge |
 | 265 to 285 s | 6 | g01 board: a simplification |
 | 285 to 305 s | 7 | Framed memory card |
 | 305 to 390 s | 8 to 11 | Question cards and countdowns, then feedback |
-| 390 to 418 s | 12 | The graphing app (t14b's frame) |
+| 390 to 418 s | 12 | The phone and its app view (t14b's frame) |
 | 418 to 463 s | 13 | Key notes, then a silent return to scene 12's frame |
 
 Per-scene motion (schema 4): all `explain` except attempt-1, attempt-2 and key-notes (`hold`). Transitions: t13's last frame continues into 1; 1 to 2 stage change; 2 to 3 clear change; 3 to 4 clear change to the board; 4 to 5 and 5 to 6 board row clears; 6 to 7 camera pull back; attempts and feedback: the card shrinks to the top; 11 to 12 board clear; 12 to 13 fade, then a silent return.
@@ -214,11 +228,13 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 ## Assets
 
-Inspected before choosing (17 Nov 2026, `public/assets`, file list): no mixing desk, pan knob or studio speaker plate exists (`ma12-headphones-v1.png` is headphones, not two speakers).
+Inspected before choosing (17 Nov 2026, `public/assets`, file list; Revision 2 adds `ma12-phone-v1.png`, portrait, blank dark screen, as inspected for t09 and t10): no mixing desk, pan knob or studio speaker plate exists (`ma12-headphones-v1.png` is headphones, not two speakers).
+
+Reused (Revision 2, root ruling 25): `ma12-phone-v1.png` (scene 12, the handoff frame).
 
 Need (painted, new; see the Codex asset brief): `ma11-mixing-desk-channel-v1.png`, `ma11-studio-speakers-v1.png`.
 
-Coded: the knob ring, meters and readouts, the circle, algebra, rescaled triangles, quadrant badge, board rows, the app screen and graphs, countdown, key notes.
+Coded: the knob ring, meters and readouts, the circle, algebra, the rescaled triangle, quadrant badge, board rows, the phone's miniature screen, the cone and the app view panel with its graphs, countdown, key notes.
 
 ### Studio kit use and additions
 
@@ -227,6 +243,7 @@ Uses: `ParameterSlider`, `LiveReadoutBoard`, `AlignedAlgebra`, `StudioTriangle` 
 Additions:
 1. **Level meters on a plate** (small): two coded vertical bar meters anchored to the speaker cones (sidecar), heights cos θ and sin θ, driven by the knob's θ.
 2. **Quadrant badge with a ± chooser** (small): t04's badge; a "±" chip lands on a quadrant and resolves to "+" or "−" for the named ratio from the signs of x and y there.
+3. **Phone with app view** (small, shared with t14b; Revision 2, root ruling 25): the phone plate with a coded miniature screen, a thin cone to a landscape `ScreenApp` panel, and the miniature mirroring the panel. t14b reuses it in scenes 1 and 6.
 
 ## Codex asset brief (Maths A11 T14a, a mixing-desk channel with a pan knob, and a pair of studio speakers)
 
@@ -268,9 +285,11 @@ Builds on: Complementary angle identities; sec, cosec and cot for any angle. Nex
 
 ## Open decisions
 
+- Closed in Revision 2: decision 1 by root ruling 21 (splits accepted); decision 2 by the learning review (keep "one common design").
 - **1. The split (root).** t14 is split into t14a (this video) and t14b (proving further identities); see the decisions file. Root may rename the ids (for example t14 and t14-2) to fit the course outline's numbering.
 - **2. The pan law (root).** "One common design" is said aloud; the sine-cosine law is a real, widely used pan law, but not the only one. If root prefers no real-world claim, the anchor can be the pack's 1 km walk in any direction (east part and north part, squared and added), with a new plate.
 
 ## Review notes
 
-- Revision 1 has had no independent review. Next: student learning review (trace from t03, t04, t12 and w02; check that the pan total makes "= 1" feel surprising before it is explained, that the division by r² is clearly the reason, that the rescaled triangles help rather than crowd scene 3, and that the quadrant step is caused, not a rule), then the Codex maths check and error check, then voicing on the Google voice and a build to grade A.
+- Revision 2 (17 Nov): the independent learning review (`../checks/m-a11-t14a-learning-review.md`) is resolved; see "Revision 2" at the top. Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A.
+- Revision 1 note, kept for history: Revision 1 has had no independent review. Next: student learning review (trace from t03, t04, t12 and w02; check that the pan total makes "= 1" feel surprising before it is explained, that the division by r² is clearly the reason, that the rescaled triangles help rather than crowd scene 3, and that the quadrant step is caused, not a rule), then the Codex maths check and error check, then voicing on the Google voice and a build to grade A.
