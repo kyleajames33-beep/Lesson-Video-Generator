@@ -47,3 +47,16 @@ Root read both pack reports (trigonometry t01 to t16, route inputs 4; transforma
 32. **g02 hook:** "Invert sounds just the same" may stay only if narration says why in one plain sentence (flipping every value up and down leaves the pattern of the wave unchanged to the ear); otherwise cut it.
 33. **g04 and g05** both quote the shared point in their descriptions: accepted.
 34. **g06 attempt 2** ("show it passes through (6, 0)"): accepted.
+
+## Rulings on the s01 to s11 designs (17 November)
+35. **Length.** 5,000 to 5,516 characters (about 460 to 500 s) is inside the owner's 5 to 10 minute target. Do not pad. The learning review may ask for an extra worked example only where a student would otherwise lack practice for the attempt.
+36. **s01 title:** use the 65-character alternative.
+37. **s02:** the added U = {1, ..., 7} and the cap-and-cup naming are accepted.
+38. **s03:** keep the library throughout; no re-set site example.
+39. **s04:** the die and coin are neutral sample-space objects (ruling 8), not a shared anchor with Year 12 s01.
+40. **s05:** crossing out "forgot the overlap" (not an independence product before s08) is accepted.
+41. **s07:** the app at about 135 s after the dice opening is accepted if the dice opening is itself a real question (the review judges pace).
+42. **s08:** the seeded simulation labelled as an illustration is accepted.
+43. **s09:** two sentences ("a single exact value has no width", so its probability is zero; probability comes from intervals) meet ruling 12. Area and density belong to Year 12.
+44. **s10:** the half-spinner supposition, stated after the estimate, is accepted.
+45. **s11 closing frame:** accepted (points to the Year 12 Maths playlist; no promise of p01 to p03).
