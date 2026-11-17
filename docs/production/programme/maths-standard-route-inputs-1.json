@@ -1,0 +1,1522 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-18",
+ "brief": "Maths Standard start (root request, 18 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 12 Standard 2 and Standard 1 Algebraic relationships pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year12Standard2Points": 25,
+  "year12Standard1Points": 8,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 18 November 2026 and match the crosswalk inventory. The six Algebraic relationships lessons use the older page format with no data-step-id sections; sectionIds are slugs of their numbered card headings."
+ },
+ "recommendations": [
+  "Run a01 to a13 in outline order. Standard 1 students take a01, a03, a04, a05, a07 and a08, then go to math-s12-i01; Standard 2 students take a01 to a07 and a09 to a13 (a08 optional).",
+  "Pace flags (gentler Standard pace): a02, a04 and a11 are at risk of rushing; suggested splits are in their packs and entries. a05 should be watched.",
+  "Standard 1 coverage: a03 and a04 must show the graph route in every worked example, because Standard 1 does not learn the algebraic methods (a02).",
+  "Notation: the syllabus uses y = a^x, y = a^(-x) (a05) and y = k a^x, y = k a^(-x) (a06); the site uses A b^x. Use the syllabus letters on screen.",
+  "Seven new site findings are logged as MS-04 to MS-10 in docs/production/claude-pm/site-corrections-maths-standard.md (section 4): two in lesson02, four in lesson03 (MS-06 to MS-09, with MS-08 also covering lesson06 and curriculum-map.json) and one in lesson05.",
+  "Kit needs for this strand are in docs/production/claude-pm/checks/maths-standard-kit-needs-a.md; the main new part is a generic coded spreadsheet, which Year 11 Standard also needs many times."
+ ],
+ "part": 1,
+ "covers": "math-s12-a01 to math-s12-a13 (Year 12 Algebraic relationships, Standard 2 and Standard 1)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 12,
+   "entries": [
+    {
+     "id": "math-s12-a01",
+     "playlistOrder": 1,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do two lines on a graph solve a pair of simultaneous equations?",
+     "syllabusActionIds": [
+      "cibad31b48",
+      "ci32b65c45",
+      "ci119862f0",
+      "ci8debaa08",
+      "ci8615a466"
+     ],
+     "standard2ActionIds": [
+      "cibad31b48",
+      "ci32b65c45"
+     ],
+     "standard1ActionIds": [
+      "ci119862f0",
+      "ci8debaa08",
+      "ci8615a466"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cibad31b48",
+       "course": "Year 12 Standard 2",
+       "text": "Graph two linear equations and identify the point of intersection, with and without using graphing applications",
+       "sourceHtml": "<p>Graph two <a data-item-id=\"c2ddc2bd-4641-4cf1-9ae8-1eb401fb928b\" href=\"\">linear equations</a> and identify the <a data-item-id=\"0a2b3be5-2507-45a2-9030-fec6d4bfb969\" href=\"\">point of intersection</a>, with and without using graphing applications</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci32b65c45",
+       "course": "Year 12 Standard 2",
+       "text": "Solve a pair of simultaneous linear equations using graphical and algebraic methods",
+       "sourceHtml": "<p>Solve a pair of simultaneous linear equations using graphical and algebraic methods</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci119862f0",
+       "course": "Year 12 Standard 1",
+       "text": "Graph two linear equations using a table of values or a graphing application and identify the point of intersection",
+       "sourceHtml": "<p>Graph two <a data-item-id=\"c2ddc2bd-4641-4cf1-9ae8-1eb401fb928b\" href=\"\">linear equations</a> using a table of values or a graphing application and identify the <a data-item-id=\"0a2b3be5-2507-45a2-9030-fec6d4bfb969\" href=\"\">point of intersection</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8debaa08",
+       "course": "Year 12 Standard 1",
+       "text": "Solve a pair of simultaneous linear equations by finding the point of intersection of their graphs, with and without graphing applications",
+       "sourceHtml": "<p>Solve a pair of simultaneous linear equations by finding the point of intersection of their graphs, with and without graphing applications</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8615a466",
+       "course": "Year 12 Standard 1",
+       "text": "Determine and interpret the point of intersection of two linear graphs in a variety of practical contexts",
+       "sourceHtml": "<p>Determine and interpret the point of intersection of two <a data-item-id=\"3475db1c-8ff5-4a49-b2c7-e845b22584d5\" href=\"\">linear</a> graphs in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-idea",
+       "card-05-graphical-method",
+       "card-06-substitution-method",
+       "card-07-elimination-method",
+       "worked-examples",
+       "quick-fire-practice",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "f24d31f47587a9f1f357b5c0a6ee5606c03489e8e85575ad52f89e1a117d7f4a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-05-graphical-method",
+        "card-06-substitution-method",
+        "card-07-elimination-method",
+        "worked-examples",
+        "quick-fire-practice",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "f24d31f47587a9f1f357b5c0a6ee5606c03489e8e85575ad52f89e1a117d7f4a"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l02",
+       "text": "ciafd3b572: the equation y = mx + c, with m the gradient and c the y-intercept."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ci5ff71229: constructing a straight-line graph with and without graphing applications (from a table of values)."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48 and cic0a28004: the y-intercept and gradient from a graph or an equation."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substituting values to check a point in an equation."
+      }
+     ],
+     "prerequisiteVideos": [],
+     "startBoundary": "Recall one line drawn from y = mx + c and a short table (math-s11-l02); every point on the line makes its equation true.",
+     "stopBoundary": "Draw two lines from tables of values (or type them into a graphing app), read the point of intersection, say why it is the solution of both equations, check it by substituting into both, and read what the crossing means in one practical context (two plans that cost the same). Parallel lines (no solution) and the same line twice (every point a solution) are named briefly. Substitution and elimination are a02; writing the equations from a worded problem is a03; break-even is a04.",
+     "nextHandoff": "math-s12-a02",
+     "advancedReuseCandidates": [
+      "math-a11-w13"
+     ],
+     "recommendation": "Keep the focused boundary and the site's exact worked-example numbers. Partial or missing site coverage needs original teaching. Claude chooses final splits and length.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a02",
+     "playlistOrder": 2,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we solve simultaneous equations with algebra instead of a graph?",
+     "syllabusActionIds": [
+      "ci32b65c45"
+     ],
+     "standard2ActionIds": [
+      "ci32b65c45"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci32b65c45",
+       "course": "Year 12 Standard 2",
+       "text": "Solve a pair of simultaneous linear equations using graphical and algebraic methods",
+       "sourceHtml": "<p>Solve a pair of simultaneous linear equations using graphical and algebraic methods</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-idea",
+       "card-05-graphical-method",
+       "card-06-substitution-method",
+       "card-07-elimination-method",
+       "worked-examples",
+       "quick-fire-practice",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "f24d31f47587a9f1f357b5c0a6ee5606c03489e8e85575ad52f89e1a117d7f4a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-05-graphical-method",
+        "card-06-substitution-method",
+        "card-07-elimination-method",
+        "worked-examples",
+        "quick-fire-practice",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "f24d31f47587a9f1f357b5c0a6ee5606c03489e8e85575ad52f89e1a117d7f4a"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a01",
+       "text": "The point of intersection is the pair that makes both equations true; check in both."
+      },
+      {
+       "source": "math-s11-f02",
+       "text": "ci2acef85d: solving a linear equation."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: changing the subject, used to isolate one letter."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a01"
+     ],
+     "startBoundary": "a01's lines y = 2x − 1 and y = −x + 5 crossed at a whole-number point that was easy to read; now a pair whose crossing sits between grid lines, so reading the graph only gives an estimate.",
+     "stopBoundary": "Solve a pair exactly by algebra: when both equations start \"y =\", set the right-hand sides equal; otherwise substitute one rearranged equation into the other; or eliminate one letter by adding or subtracting the equations (multiplying one equation first only when needed). Find the second value by substituting back, then check both values in both original equations. Writing the equations from a worded problem is a03.",
+     "nextHandoff": "math-s12-a03",
+     "advancedReuseCandidates": [
+      "math-a11-w13"
+     ],
+     "recommendation": "Pace flag: three algebraic moves (equate, substitute, eliminate). If the draft runs long, split into a02a (substitution, including equating two y = expressions) and a02b (elimination). Keep the site's exact numbers.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a03",
+     "playlistOrder": 3,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we build simultaneous equations from a real situation and interpret the answer?",
+     "syllabusActionIds": [
+      "cicd165702",
+      "ci5f61f6ec",
+      "ci8615a466"
+     ],
+     "standard2ActionIds": [
+      "cicd165702",
+      "ci5f61f6ec"
+     ],
+     "standard1ActionIds": [
+      "ci8615a466"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cicd165702",
+       "course": "Year 12 Standard 2",
+       "text": "Develop a pair of simultaneous linear equations to model a practical situation",
+       "sourceHtml": "<p>Develop a pair of simultaneous linear equations to model a practical situation</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci5f61f6ec",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical problems that involve simultaneous linear equations",
+       "sourceHtml": "<p>Solve practical problems that involve simultaneous linear equations</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8615a466",
+       "course": "Year 12 Standard 1",
+       "text": "Determine and interpret the point of intersection of two linear graphs in a variety of practical contexts",
+       "sourceHtml": "<p>Determine and interpret the point of intersection of two <a data-item-id=\"3475db1c-8ff5-4a49-b2c7-e845b22584d5\" href=\"\">linear</a> graphs in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-idea",
+       "card-04-key-terms",
+       "card-05-setting-up-from-words",
+       "card-06-break-even",
+       "card-07-spreadsheet-break-even",
+       "worked-examples",
+       "quick-fire-practice",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "779d05e6c788c6a7e3bdb540129e1209467a8d4f143da218463f9865f601691f"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-04-key-terms",
+        "card-05-setting-up-from-words",
+        "card-06-break-even",
+        "card-07-spreadsheet-break-even",
+        "worked-examples",
+        "quick-fire-practice",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "779d05e6c788c6a7e3bdb540129e1209467a8d4f143da218463f9865f601691f"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson01.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-05-graphical-method",
+        "card-06-substitution-method",
+        "card-07-elimination-method",
+        "worked-examples",
+        "quick-fire-practice",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [],
+       "sha256": "f24d31f47587a9f1f357b5c0a6ee5606c03489e8e85575ad52f89e1a117d7f4a"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a01",
+       "text": "Reading and checking a crossing (Standard 1 route)."
+      },
+      {
+       "source": "math-s12-a02",
+       "text": "Substitution and elimination (Standard 2 route)."
+      },
+      {
+       "source": "math-s11-f02",
+       "text": "ci2acef85d: a word problem as a linear equation, solved and interpreted."
+      },
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: linear models; gradient as a rate, intercept as a starting value."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a02"
+     ],
+     "startBoundary": "Recall the café from a02 in reverse: the equations were given there. Now the words come first and we have to write the equations ourselves.",
+     "stopBoundary": "Name the two unknowns with their units; find the two facts in the words and turn each into one equation (often a total count and a total value); solve by graph (both courses) or algebra (Standard 2); answer in a sentence with units; check that the answer makes sense (whole numbers, not negative, and it fits both facts). Interpret a crossing of two practical lines. Break-even with cost and revenue is a04.",
+     "nextHandoff": "math-s12-a04",
+     "advancedReuseCandidates": [
+      "math-a11-w13"
+     ],
+     "recommendation": "Every worked example needs a graph route for Standard 1 as well as the algebra for Standard 2. Keep the site's exact numbers (theatre we-1).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a04",
+     "playlistOrder": 4,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "Where is the break-even point, and what does it say about profit and loss?",
+     "syllabusActionIds": [
+      "ci7ff6c8c4",
+      "ciaa0d09e2",
+      "cic9643bd9",
+      "ci8b3fb7f8"
+     ],
+     "standard2ActionIds": [
+      "ci7ff6c8c4",
+      "ciaa0d09e2"
+     ],
+     "standard1ActionIds": [
+      "cic9643bd9",
+      "ci8b3fb7f8"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci7ff6c8c4",
+       "course": "Year 12 Standard 2",
+       "text": "Use simultaneous equations to model and analyse the break-even point where cost and revenue are represented by linear equations",
+       "sourceHtml": "<p>Use <a data-item-id=\"f94aff5c-ee96-4aa3-8bbf-15ace436922d\" href=\"\">simultaneous equations</a> to model and analyse the <a data-item-id=\"f0f933e6-32b5-4763-8829-1b24cc6a27a6\" href=\"\">break-even point</a> where <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">cost</a> and <a data-item-id=\"ad24a683-8502-4c6c-bc86-f1660f225e55\" href=\"\">revenue</a> are represented by linear equations</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ciaa0d09e2",
+       "course": "Year 12 Standard 2",
+       "text": "Identify the break-even point and solve problems involving profit and loss using a spreadsheet",
+       "sourceHtml": "<p>Identify the break-even point and solve problems involving <a data-item-id=\"02126b1c-7e62-4d13-a354-8e20e0fde9d9\" href=\"\">profit</a> and <a data-item-id=\"5055083a-105f-4d61-b2da-ae1727c8926f\" href=\"\">loss</a> using a spreadsheet</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cic9643bd9",
+       "course": "Year 12 Standard 1",
+       "text": "Use simultaneous equations to model and analyse the break-even point of a problem where cost and revenue are represented by linear equations",
+       "sourceHtml": "<p>Use <a data-item-id=\"f94aff5c-ee96-4aa3-8bbf-15ace436922d\" href=\"\">simultaneous equations</a> to model and analyse the <a data-item-id=\"f0f933e6-32b5-4763-8829-1b24cc6a27a6\" href=\"\">break-even point</a> of a problem where <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">cost</a> and <a data-item-id=\"ad24a683-8502-4c6c-bc86-f1660f225e55\" href=\"\">revenue</a> are represented by linear equations</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8b3fb7f8",
+       "course": "Year 12 Standard 1",
+       "text": "Identify the break-even point and solve problems involving profit and loss by using a spreadsheet to model the problem",
+       "sourceHtml": "<p>Identify the break-even point and solve problems involving <a data-item-id=\"02126b1c-7e62-4d13-a354-8e20e0fde9d9\" href=\"\">profit</a> and <a data-item-id=\"5055083a-105f-4d61-b2da-ae1727c8926f\" href=\"\">loss</a> by using a spreadsheet to model the problem</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-idea",
+       "card-04-key-terms",
+       "card-05-setting-up-from-words",
+       "card-06-break-even",
+       "card-07-spreadsheet-break-even",
+       "worked-examples",
+       "quick-fire-practice",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "779d05e6c788c6a7e3bdb540129e1209467a8d4f143da218463f9865f601691f"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson02.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-04-key-terms",
+        "card-05-setting-up-from-words",
+        "card-06-break-even",
+        "card-07-spreadsheet-break-even",
+        "worked-examples",
+        "quick-fire-practice",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "779d05e6c788c6a7e3bdb540129e1209467a8d4f143da218463f9865f601691f"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a03",
+       "text": "Two facts become two equations; interpreting a crossing."
+      },
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: fixed cost as the intercept, cost per item as the rate."
+      },
+      {
+       "source": "math-s11-m01",
+       "text": "cib256693a: profit and loss."
+      },
+      {
+       "source": "math-s11-f08",
+       "text": "ciffbbbd58: spreadsheet formulas."
+      },
+      {
+       "source": "math-s11-l05",
+       "text": "ci80b8ed46: a linear model in a spreadsheet."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a03"
+     ],
+     "startBoundary": "A small business's two lines, cost and revenue, on a03's graph style; name fixed cost (where cost starts), variable cost (its gradient) and revenue (starts at zero).",
+     "stopBoundary": "Write C = fixed + variable × n and R = price × n; the break-even point is where C = R (profit zero), found from the graph, by algebra (Standard 2) and in a spreadsheet; profit = R − C is negative (a loss) below break-even and positive above it; when the break-even quantity is not a whole number, round up to the first whole number that makes a profit; find the profit or loss at a given quantity. Build a spreadsheet with columns for n, cost, revenue and profit, and read the row where profit changes sign. Non-linear profit (a parabola with two break-even points) is a11.",
+     "nextHandoff": "math-s12-a05",
+     "advancedReuseCandidates": [
+      "math-a11-w13"
+     ],
+     "recommendation": "Pace flag: break-even by graph and algebra, rounding up and building a spreadsheet. If the draft runs long, split into a04a (break-even, profit and loss) and a04b (break-even in a spreadsheet); both keep Standard 1 and Standard 2 codes. Use the corrected food stall wording (MS-04, MS-05).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a05",
+     "playlistOrder": 5,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do tables, graphs and equations show exponential growth and decay?",
+     "syllabusActionIds": [
+      "cidb32c4b8",
+      "ci8b7a1643",
+      "ci3bda1c7e"
+     ],
+     "standard2ActionIds": [
+      "cidb32c4b8",
+      "ci8b7a1643"
+     ],
+     "standard1ActionIds": [
+      "ci3bda1c7e"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cidb32c4b8",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that an exponential relationship can be represented by an equation, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations",
+       "sourceHtml": "<p>Recognise that an <a data-item-id=\"9bc9b3ba-024c-491d-b5f8-0fda83ca36b0\" href=\"\">exponential relationship</a> can be represented by an <a data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" href=\"\">equation</a>, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8b7a1643",
+       "course": "Year 12 Standard 2",
+       "text": "Graph an exponential relationship of the form y = a^x and y = a^(-x), where a > 0, with and without using graphing applications",
+       "sourceHtml": "<div><span>Graph an exponential relationship of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mo>-</mo><mi>x</mi></mrow></msup><mi> </mi></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span><span>, with and without using graphing applications </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci3bda1c7e",
+       "course": "Year 12 Standard 1",
+       "text": "Construct a linear or exponential graph using a table of values or graphing application to make predictions in practical contexts",
+       "sourceHtml": "<p>Construct a linear or exponential graph using a table of values or graphing application to make predictions in practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-formula",
+       "card-04-key-terms",
+       "card-05-representing-exponential",
+       "card-06-graphing-exponential",
+       "card-07-exponential-models",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-formula",
+        "card-04-key-terms",
+        "card-05-representing-exponential",
+        "card-06-graphing-exponential",
+        "card-07-exponential-models",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substituting numbers into linear and non-linear expressions (outline dependency list)."
+      },
+      {
+       "source": "math-s11-m01",
+       "text": "cib256693a: percentage increase and decrease (outline dependency list)."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ci5ff71229: constructing a graph from a table, with and without graphing applications."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a04"
+     ],
+     "startBoundary": "a04's lines added the same amount each step. Now a table where each step multiplies by the same number instead.",
+     "stopBoundary": "Recognise exponential change as \"multiply by the same number each step\" (a constant ratio in a table), against linear change as \"add the same amount each step\"; move between the equation, a table, a set of ordered pairs and a graph; graph y = a^x and y = a^(−x) (a > 0) by hand from a table and with an app: y-intercept 1, the x-axis as a line the curve gets close to but never meets, rising for growth and falling for decay, and y = a^(−x) as the mirror image of y = a^x in the y-axis; make a prediction from a table or graph (Standard 1). Building a model y = k a^x from a story and interpreting k is a06; limitations are a07.",
+     "nextHandoff": "math-s12-a06",
+     "advancedReuseCandidates": [
+      "math-a11-e01"
+     ],
+     "recommendation": "Use the syllabus letters y = a^x and y = a^(-x) on screen (site: A b^x). Keep a linear table beside the exponential one so Standard 1 (ci3bda1c7e) is fully served.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a06",
+     "playlistOrder": 6,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we build an exponential model, and what does its starting value mean?",
+     "syllabusActionIds": [
+      "ci649c035d",
+      "ci7d79f487"
+     ],
+     "standard2ActionIds": [
+      "ci649c035d",
+      "ci7d79f487"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci649c035d",
+       "course": "Year 12 Standard 2",
+       "text": "Construct and analyse an exponential model of the form y = ka^x and y = ka^(-x), where a > 0 and k is a constant, to solve practical growth or decay problems",
+       "sourceHtml": "<div><span>Construct and analyse an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c2b9ed7c-1c7a-4249-89ce-377796ebe7c9\" data-item-codename=\"glo_link__mst__exponential_model\" data-item-id=\"c2b9ed7c-1c7a-4249-89ce-377796ebe7c9\" data-item-systemname=\"GLO Link: MST: exponential model\" data-item-type=\"link_glossary\">exponential model</a> of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><msup><mrow><mi>a</mi></mrow><mrow><mi>x</mi></mrow></msup></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>k</mi><msup><mrow><mi>a</mi></mrow><mrow><mo>-</mo><mi>x</mi></mrow></msup></math></span><span> , where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>&gt;</mo><mn>0</mn></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">k </mi></math></span><span>is a constant, to solve practical growth or decay problems</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci7d79f487",
+       "course": "Year 12 Standard 2",
+       "text": "Interpret the meaning of the intercept of an exponential graph in a variety of contexts",
+       "sourceHtml": "<p>Interpret the meaning of the <a data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" href=\"\">intercept</a> of an exponential graph in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-formula",
+       "card-04-key-terms",
+       "card-05-representing-exponential",
+       "card-06-graphing-exponential",
+       "card-07-exponential-models",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-formula",
+        "card-04-key-terms",
+        "card-05-representing-exponential",
+        "card-06-graphing-exponential",
+        "card-07-exponential-models",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a05",
+       "text": "Constant ratio; graphs of a^x and a^(-x)."
+      },
+      {
+       "source": "math-s11-m01",
+       "text": "cib256693a: a percentage change as a multiplier."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substitution with powers."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a05"
+     ],
+     "startBoundary": "a05's y = 2^x always started at 1. Real things start somewhere else: a price, a rent, a car's value. Multiply the whole curve by that starting amount.",
+     "stopBoundary": "Build y = k a^x from a story: k is the starting amount (the value at x = 0, the vertical intercept) and a is the multiplier for each step (1 + r for growth by r, 1 − r for decay by r); recognise decay written either as k a^x with 0 < a < 1 or as k a^(−x) with a > 1; use the model to predict with a calculator and round as the context needs; interpret the intercept in words with units. Limitations of exponential models are a07. Compound interest and declining-balance depreciation formulas are taught later in the investment strand (math-s12-i02, i03 and i10); this video only uses the general model.",
+     "nextHandoff": "math-s12-a07",
+     "advancedReuseCandidates": [
+      "math-a11-e01"
+     ],
+     "recommendation": "Use y = k a^x on screen. we-3 (b) answer is $8,898, not $8,897 (MS-06). Do not use the site's drug or bushfire short answers as worked examples.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a07",
+     "playlistOrder": 7,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "Where do linear and exponential models stop matching reality?",
+     "syllabusActionIds": [
+      "ci5c87181e",
+      "cid72ff748"
+     ],
+     "standard2ActionIds": [
+      "ci5c87181e"
+     ],
+     "standard1ActionIds": [
+      "cid72ff748"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci5c87181e",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the limitations of exponential models in practical contexts",
+       "sourceHtml": "<p>Explain the limitations of exponential models in practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cid72ff748",
+       "course": "Year 12 Standard 1",
+       "text": "Identify the strengths and limitations of linear and exponential models in given practical contexts",
+       "sourceHtml": "<p>Identify the strengths and limitations of linear and <a data-item-id=\"c2b9ed7c-1c7a-4249-89ce-377796ebe7c9\" href=\"\">exponential models</a> in given practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "partial",
+       "siteGap": "Exponential limitations are taught in lesson03; strengths of either model and limitations of linear models are not revisited in Year 12 (original teaching for Standard 1)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-formula",
+       "card-04-key-terms",
+       "card-05-representing-exponential",
+       "card-06-graphing-exponential",
+       "card-07-exponential-models",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-formula",
+        "card-04-key-terms",
+        "card-05-representing-exponential",
+        "card-06-graphing-exponential",
+        "card-07-exponential-models",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "f8c86393c1deaadd77ae8585d6c8d8473dad655d6c287e794bdf184991d21b60"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a06",
+       "text": "y = k a^x models and predictions (Standard 2 route)."
+      },
+      {
+       "source": "math-s12-a05",
+       "text": "Exponential tables and graphs (Standard 1 route)."
+      },
+      {
+       "source": "math-s11-l04",
+       "text": "ci4777471a and ci1b3cf962: interpolation, extrapolation and limitations of a linear model."
+      },
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: linear models in context."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a06"
+     ],
+     "startBoundary": "a06's population model predicted 452 000 people in 20 years. Push the same model to 200 years and the answer is absurd. When does a good model stop being good?",
+     "stopBoundary": "Explain a model's limitations in context: an exponential model assumes the same percentage change every step, grows without any upper limit, and (for decay) never reaches zero; predictions far outside the data (extrapolation) are less reliable than ones inside it; a limitation names the model's assumption and says why that assumption fails in this context. Standard 1 also: a strength of a linear model (simple, constant rate, easy to predict inside the data) and of an exponential model (it captures growth that speeds up, or decay that slows down), and a linear model's limitations (values below zero, rates that change). Graphing a description from words is a08.",
+     "nextHandoff": "math-s12-a08 (Standard 1); math-s12-a09 (Standard 2)",
+     "advancedReuseCandidates": [],
+     "recommendation": "cid72ff748 is partial: strengths and linear limitations are original teaching. The population simulation (runLogistic, GrowthGraph) can draw a levelling-off curve with lesson labels.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a08",
+     "playlistOrder": 8,
+     "course": "Year 12 Standard 1 (optional for Standard 2)",
+     "mainLearnerQuestion": "How do we sketch a graph that tells the story of a real situation?",
+     "syllabusActionIds": [
+      "cice949e38"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [
+      "cice949e38"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cice949e38",
+       "course": "Year 12 Standard 1",
+       "text": "Represent the description of a real-world situation graphically",
+       "sourceHtml": "<p>Represent the description of a real-world situation graphically</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb",
+       "siteCoverage": "missing",
+       "siteGap": "No site lesson teaches drawing a graph from a description of a real situation; the site has no Standard 1 pages. Root ruling 3: teach from the syllabus alone."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a07",
+       "text": "Shapes of linear and exponential change; models that go flat at a cap."
+      },
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: gradient as a rate of change, intercept as a starting value."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48: reading gradient from a graph (steeper means faster)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a07"
+     ],
+     "startBoundary": "a07 ended on a model that goes flat at a cap. A graph can tell a whole story: going up, staying level, going down. Read a story, then draw it.",
+     "stopBoundary": "Turn a description into a sketch: choose and label the axes (time usually across), mark the starting value, then for each part of the story decide whether the quantity rises, falls or stays the same, and whether it changes steadily (a straight piece) or speeds up or slows down (a curved piece); steeper means faster; a flat piece means no change; join pieces without gaps when the quantity cannot jump. Match descriptions to graphs. Exact distance-time calculations are math-s12-r12.",
+     "nextHandoff": "math-s12-a09 (Standard 2 optional route); math-s12-i01 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 1 only (optional for Standard 2). Syllabus-only exception (root ruling 3). Distance-time graphs are math-s12-r12, later; do not rely on them.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a09",
+     "playlistOrder": 9,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What shape does a quadratic make, and where are its vertex and axis of symmetry?",
+     "syllabusActionIds": [
+      "ci0ba98146",
+      "cie98a4311",
+      "ci468232d2"
+     ],
+     "standard2ActionIds": [
+      "ci0ba98146",
+      "cie98a4311",
+      "ci468232d2"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci0ba98146",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that a quadratic relationship can be represented by an equation, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations",
+       "sourceHtml": "<p>Recognise that a <a data-item-id=\"7315b341-629f-4d7f-811c-cc50d40f2dc8\" href=\"\">quadratic relationship</a> can be represented by an equation, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cie98a4311",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise the parabolic shape of a quadratic relationship, noting its vertex and axis of symmetry",
+       "sourceHtml": "<p>Recognise the parabolic shape of a quadratic relationship, noting its <a data-item-id=\"05838e7d-68d5-446a-baa8-d387d071441e\" href=\"\">vertex</a> and <a data-item-id=\"8d01a7e7-b6de-4a2b-be7f-b4b8090cfbe1\" href=\"\">axis of symmetry</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci468232d2",
+       "course": "Year 12 Standard 2",
+       "text": "Graph a quadratic relationship of the form y = ax^2 + bx + c using graphing applications",
+       "sourceHtml": "<div><span>Graph a quadratic relationship of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi mathvariant=\"italic\">bx</mi><mo>+</mo><mi>c</mi></math></span><span> using graphing applications</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-features",
+       "card-04-key-terms",
+       "card-05-representing-quadratic",
+       "card-06-graphing-parabolas",
+       "card-07-quadratic-graphs-in-context",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "88a40a5aff6c6e61711f564af8c084016ceceaf2e53cdb659c20213eac9dff74"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-features",
+        "card-04-key-terms",
+        "card-05-representing-quadratic",
+        "card-06-graphing-parabolas",
+        "card-07-quadratic-graphs-in-context",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "88a40a5aff6c6e61711f564af8c084016ceceaf2e53cdb659c20213eac9dff74"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a05",
+       "text": "Moving between equation, table, ordered pairs and graph."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substituting into non-linear expressions (x^2 with negative x)."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: formulas of the form y = ax^2 + c."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ci5ff71229: graphing with and without graphing applications."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a07"
+     ],
+     "startBoundary": "a05 told exponential from linear by the pattern in a table. A third table pattern: values that fall, turn and rise again, the same on both sides.",
+     "stopBoundary": "Recognise a quadratic from its equation (an x^2 term, the highest power), a table (values symmetric about a middle x; second differences constant as an optional check) or a graph (a parabola); move between the four representations; the vertex is the turning point (a minimum if a > 0, a maximum if a < 0); the axis of symmetry is the vertical line x = (vertex x-value) through it; read the vertex and axis from a symmetric table or a graph; graph y = ax^2 + bx + c with a graphing app and read off the vertex. Intercepts and the midpoint method are a10; practical problems are a11.",
+     "nextHandoff": "math-s12-a10",
+     "advancedReuseCandidates": [
+      "math-a11-w14",
+      "math-a11-w16"
+     ],
+     "recommendation": "Lead with symmetry in the table; second differences are an optional check. Do not use lesson04 SA 2 (finds the equation and uses x = -b/(2a), beyond Standard 2).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a09.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a10",
+     "playlistOrder": 10,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do the x-intercepts of a parabola locate its vertex?",
+     "syllabusActionIds": [
+      "ci75131568",
+      "ciea5db2d8"
+     ],
+     "standard2ActionIds": [
+      "ci75131568",
+      "ciea5db2d8"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci75131568",
+       "course": "Year 12 Standard 2",
+       "text": "Identify the x-intercepts and y-intercept of a parabola from a graph",
+       "sourceHtml": "<div><span>Identify the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-intercepts and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/fca3dd5a-a4f4-4b6e-9b73-49c0d95e42fd\" data-item-codename=\"glo_link__shared__parabola\" data-item-id=\"fca3dd5a-a4f4-4b6e-9b73-49c0d95e42fd\" data-item-systemname=\"GLO Link: SHARED: parabola\" data-item-type=\"link_glossary\">parabola</a> from a graph </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ciea5db2d8",
+       "course": "Year 12 Standard 2",
+       "text": "Determine the axis of symmetry and vertex of a parabola using the midpoint of the x-intercepts shown on a graph",
+       "sourceHtml": "<div><span>Determine the axis of symmetry and vertex of a parabola using the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5945ada3-b4f3-4f60-8445-1b034a5ccfb9\" data-item-codename=\"glo_link__shared__midpoint\" data-item-id=\"5945ada3-b4f3-4f60-8445-1b034a5ccfb9\" data-item-systemname=\"GLO Link: SHARED: midpoint\" data-item-type=\"link_glossary\">midpoint</a> of the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span>-intercepts shown on a graph</span></div>\n\n\n\n\n\n",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-features",
+       "card-04-key-terms",
+       "card-05-representing-quadratic",
+       "card-06-graphing-parabolas",
+       "card-07-quadratic-graphs-in-context",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "88a40a5aff6c6e61711f564af8c084016ceceaf2e53cdb659c20213eac9dff74"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-features",
+        "card-04-key-terms",
+        "card-05-representing-quadratic",
+        "card-06-graphing-parabolas",
+        "card-07-quadratic-graphs-in-context",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "88a40a5aff6c6e61711f564af8c084016ceceaf2e53cdb659c20213eac9dff74"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a09",
+       "text": "Parabola, vertex, axis of symmetry."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48: reading the y-intercept from a graph."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substituting the axis value to find the vertex height."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a09"
+     ],
+     "startBoundary": "a09 found the axis from a symmetric table. Exam graphs often show only where the curve crosses the axes. The two x-intercepts are a matching pair, so the axis is exactly halfway between them.",
+     "stopBoundary": "Read the x-intercepts (where y = 0) and the y-intercept (where x = 0) from a graph; for y = ax^2 + bx + c the y-intercept is c; the axis of symmetry is x = (x1 + x2)/2, the midpoint of the x-intercepts; substitute that x into the equation (or read the graph) to find the vertex's y-value; state the vertex as a point and say whether it is a maximum or a minimum. Meaning in a practical context and valid values are a11.",
+     "nextHandoff": "math-s12-a11",
+     "advancedReuseCandidates": [
+      "math-a11-w15"
+     ],
+     "recommendation": "Read intercepts from the graph (\"shown on a graph\"); factorising is an optional check, not a Standard skill.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a10.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a11",
+     "playlistOrder": 11,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we use a quadratic graph to solve a practical problem, and where does the model stop working?",
+     "syllabusActionIds": [
+      "ci73f0af63",
+      "cic7ff4ee6",
+      "ci88f43c88"
+     ],
+     "standard2ActionIds": [
+      "ci73f0af63",
+      "cic7ff4ee6",
+      "ci88f43c88"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci73f0af63",
+       "course": "Year 12 Standard 2",
+       "text": "Analyse a given graph of a quadratic relationship and use it to solve practical problems",
+       "sourceHtml": "<p>Analyse a given graph of a quadratic relationship and use it to solve practical problems</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cic7ff4ee6",
+       "course": "Year 12 Standard 2",
+       "text": "Interpret the meaning of the intercepts and vertex of a parabola in a variety of contexts",
+       "sourceHtml": "<p>Interpret the meaning of the intercepts and vertex of a parabola in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci88f43c88",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the limitations of a model of a quadratic relationship in a practical context and consider the values for x and y for which the quadratic model is valid",
+       "sourceHtml": "<div><span>Explain the limitations of a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/05202dce-3f5c-4dbc-9015-3c39d2de8ed0\" data-item-codename=\"glo_link__shared__model\" data-item-id=\"05202dce-3f5c-4dbc-9015-3c39d2de8ed0\" data-item-systemname=\"GLO Link: SHARED: model\" data-item-type=\"link_glossary\">model</a> of a quadratic relationship in a practical context and consider the values for </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span> for which the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5ca7885c-f5f6-4ae2-a931-6e57f53a1ba1\" data-item-codename=\"glo_link__mst__quadratic_model\" data-item-id=\"5ca7885c-f5f6-4ae2-a931-6e57f53a1ba1\" data-item-systemname=\"GLO Link: MST: quadratic model\" data-item-type=\"link_glossary\">quadratic model</a> is valid </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-idea",
+       "card-04-key-terms",
+       "card-05-interpreting-intercepts-vertex",
+       "card-06-valid-domain-limitations",
+       "card-07-solving-from-graph",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "30c7a2925ec1ac3e017ed94b684891e5f2af67b59c91252a25b6808c6dbc666f"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-idea",
+        "card-04-key-terms",
+        "card-05-interpreting-intercepts-vertex",
+        "card-06-valid-domain-limitations",
+        "card-07-solving-from-graph",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "30c7a2925ec1ac3e017ed94b684891e5f2af67b59c91252a25b6808c6dbc666f"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-features",
+        "card-04-key-terms",
+        "card-05-representing-quadratic",
+        "card-06-graphing-parabolas",
+        "card-07-quadratic-graphs-in-context",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2"
+       ],
+       "sha256": "88a40a5aff6c6e61711f564af8c084016ceceaf2e53cdb659c20213eac9dff74"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a10",
+       "text": "Intercepts and the vertex by the midpoint."
+      },
+      {
+       "source": "math-s12-a04",
+       "text": "Break-even as profit = 0."
+      },
+      {
+       "source": "math-s12-a07",
+       "text": "A limitation names an assumption and why it fails."
+      },
+      {
+       "source": "math-s11-l04",
+       "text": "ci1b3cf962: limitations of a linear model."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a10"
+     ],
+     "startBoundary": "a10's firework: the numbers 0, 8, 4 and 80 were found, but what do they mean, and what happens to the model after t = 8?",
+     "stopBoundary": "On a given practical graph, say what the y-intercept, each x-intercept and the vertex mean, with units; answer the four usual questions: the greatest or least value (the vertex), when the quantity is zero (an x-intercept), the value at a given x (read up and across), and when the quantity is above a level (draw the horizontal line y = k and read the two crossings); state the valid values of x and of y for the model (usually between the x-intercepts, never negative time or area) with a reason; give a limitation in context (the assumption and why it fails). Inverse variation is a12.",
+     "nextHandoff": "math-s12-a12",
+     "advancedReuseCandidates": [
+      "math-a11-w19"
+     ],
+     "recommendation": "Pace flag: three points and four question types. If the draft runs long, split into a11a (reading a practical quadratic graph: ci73f0af63, cic7ff4ee6) and a11b (valid values and limitations: ci88f43c88). Correct the paddock hook (MS-10).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a11.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a12",
+     "playlistOrder": 12,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What is inverse variation, and why is its graph a hyperbola?",
+     "syllabusActionIds": [
+      "cia6ad469c",
+      "cib706ce50",
+      "ci8731b977"
+     ],
+     "standard2ActionIds": [
+      "cia6ad469c",
+      "cib706ce50",
+      "ci8731b977"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cia6ad469c",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that inverse variation is represented by a reciprocal relationship of the form y = k/x, where k is the constant of variation",
+       "sourceHtml": "<div><span>Recognise that <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/82bbae0f-b592-4ebe-b855-c76aa37d6ac4\" data-item-codename=\"glo_link__shared__inverse_variation\" data-item-id=\"82bbae0f-b592-4ebe-b855-c76aa37d6ac4\" data-item-systemname=\"GLO Link: SHARED: inverse variation\" data-item-type=\"link_glossary\">inverse variation</a> is represented by a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/67155073-73c1-460c-b767-8ceca4abb7c0\" data-item-codename=\"glo_link__mst__reciprocal_relationship\" data-item-id=\"67155073-73c1-460c-b767-8ceca4abb7c0\" data-item-systemname=\"GLO Link: MST: reciprocal relationship\" data-item-type=\"link_glossary\">reciprocal relationship</a> of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>k</mi></mrow><mrow><mi>x</mi></mrow></mfrac></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">k </mi></math></span><span>is the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/d03a202a-085d-4c03-8d30-679a56fed896\" data-item-codename=\"glo_link__mst__constant_of_variation\" data-item-id=\"d03a202a-085d-4c03-8d30-679a56fed896\" data-item-systemname=\"GLO Link: MST: constant of variation\" data-item-type=\"link_glossary\">constant of variation</a></span></div>\n\n\n\n\n\n",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib706ce50",
+       "course": "Year 12 Standard 2",
+       "text": "Identify the hyperbolic shape of a reciprocal graph",
+       "sourceHtml": "<p>Identify the <a data-item-id=\"592e86c0-b16f-4d3a-baa2-c77a7f0e8685\" href=\"\">hyperbolic</a> shape of a reciprocal graph</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8731b977",
+       "course": "Year 12 Standard 2",
+       "text": "Graph a reciprocal relationship of the form y = k/x, with and without using graphing applications",
+       "sourceHtml": "<div><span>Graph a reciprocal relationship of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>k</mi></mrow><mrow><mi>x</mi></mrow></mfrac></math></span><span>, with and without using graphing applications</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-formula",
+       "card-04-key-terms",
+       "card-05-recognising-graphing",
+       "card-06-constructing-solving",
+       "card-07-limitations",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-2"
+      ],
+      "sha256": "dc844c74fcc51b59220bcb0b550bd4239777d71896c2797e95ce151d18873622"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-formula",
+        "card-04-key-terms",
+        "card-05-recognising-graphing",
+        "card-06-constructing-solving",
+        "card-07-limitations",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-2"
+       ],
+       "sha256": "dc844c74fcc51b59220bcb0b550bd4239777d71896c2797e95ce151d18873622"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l06",
+       "text": "cie0224c11: direct variation y = kx gives a straight line (outline dependency list)."
+      },
+      {
+       "source": "math-s11-l06",
+       "text": "ci6f88d684: k as the constant of variation, through the origin."
+      },
+      {
+       "source": "math-s11-l07",
+       "text": "cifb738725: graphing y = kx."
+      },
+      {
+       "source": "math-s12-a05",
+       "text": "A curve that approaches an axis but never meets it."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a11"
+     ],
+     "startBoundary": "Year 11's direct variation: double one quantity and the other doubles (y = kx, a straight line through the origin). Now the opposite: double one and the other halves.",
+     "stopBoundary": "Recognise inverse variation: x × y stays the same (the constant of variation k), so y = k/x; test a table by multiplying each pair; find k from one pair; graph y = k/x from a table by hand and with an app, avoiding x = 0; the graph is a hyperbola with two separate branches that approach both axes (x = 0 and y = 0) but never meet them; for k > 0 the branches are in the first and third quadrants, for k < 0 in the second and fourth; in practical problems only the first-quadrant branch is used. Building and using models to solve problems, and their limitations, are a13.",
+     "nextHandoff": "math-s12-a13",
+     "advancedReuseCandidates": [
+      "math-a11-w21",
+      "math-a11-w23"
+     ],
+     "recommendation": "Constant-product rectangle as the central visual. Do not use Boyle's Law or \"density-area\" from card 06.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a12.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-a13",
+     "playlistOrder": 13,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we build and use a reciprocal model, and where does it fail?",
+     "syllabusActionIds": [
+      "ci0021fc94",
+      "cib9514f33",
+      "cib10770ae"
+     ],
+     "standard2ActionIds": [
+      "ci0021fc94",
+      "cib9514f33",
+      "cib10770ae"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci0021fc94",
+       "course": "Year 12 Standard 2",
+       "text": "Construct a reciprocal model of the form y = k/x to analyse inverse variation problems",
+       "sourceHtml": "<div><span>Construct a reciprocal model of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>k</mi></mrow><mrow><mi>x</mi></mrow></mfrac></math></span><span> to analyse inverse variation problems </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib9514f33",
+       "course": "Year 12 Standard 2",
+       "text": "Solve inverse variation problems graphically, or algebraically given the value of two of the variables in y = k/x",
+       "sourceHtml": "<div><span>Solve inverse variation problems graphically, or algebraically given the value of two of the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-codename=\"glo_link__shared__variable__algebra_\" data-item-id=\"8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-systemname=\"GLO Link: SHARED: variable (algebra)\" data-item-type=\"link_glossary\">variables</a> in </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mfrac><mrow><mi>k</mi></mrow><mrow><mi>x</mi></mrow></mfrac></math></span><span></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib10770ae",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the limitations of reciprocal models in practical inverse variation problems",
+       "sourceHtml": "<p>Explain the limitations of reciprocal models in practical inverse variation problems</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+      "sectionIds": [
+       "card-01-recall",
+       "card-02-key-formula",
+       "card-04-key-terms",
+       "card-05-recognising-graphing",
+       "card-06-constructing-solving",
+       "card-07-limitations",
+       "worked-examples",
+       "card-08-revisit",
+       "short-answer"
+      ],
+      "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "dc844c74fcc51b59220bcb0b550bd4239777d71896c2797e95ce151d18873622"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html",
+       "sectionIds": [
+        "card-01-recall",
+        "card-02-key-formula",
+        "card-04-key-terms",
+        "card-05-recognising-graphing",
+        "card-06-constructing-solving",
+        "card-07-limitations",
+        "worked-examples",
+        "card-08-revisit",
+        "short-answer"
+       ],
+       "sectionSelector": "none: older page format with no data-step-id; sectionIds are slugs of the page's numbered card headings, in page order",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "dc844c74fcc51b59220bcb0b550bd4239777d71896c2797e95ce151d18873622"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-a12",
+       "text": "y = k/x, the constant product, the hyperbola."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: changing the subject (x = k/y)."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substitution."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-a12"
+     ],
+     "startBoundary": "a12's holiday-house cost: the total stayed fixed while the share changed. Now we build such a model from one fact and use it.",
+     "stopBoundary": "Construct y = k/x for a practical situation: name the two quantities and their units, find k by multiplying one known pair (k is the fixed total, such as a distance or a cost), and write the model; solve for one variable given the other, algebraically (substitute and rearrange, k = xy, x = k/y) or by reading the graph; round in context (round up when a whole number of people, boxes or machines is needed); explain limitations: x = 0 is impossible, very small x gives impossibly large y, fractional answers may be meaningless, and the product may not really stay constant (set-up time, people getting in each other's way). The strand ends here; next is the investment strand.",
+     "nextHandoff": "math-s12-i01",
+     "advancedReuseCandidates": [
+      "math-a11-w23"
+     ],
+     "recommendation": "Main example we-1 (car, 120 km). Reuse we-3's structure with an everyday context, not Boyle's Law. Last video of the strand.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-a13.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}
