@@ -65,3 +65,5 @@ The joins are drawn to match:
 
 - Upload, publish or edit anything in YouTube Studio for videos in this queue.
 - Change a queue file after `"checks": "pass"` is written. If you later find a defect, write `work/release-queue/<lesson>-<rev>.HOLD.txt` saying why. The release chat skips any video with a HOLD file.
+
+**Root, 17 Nov:** `math-a12-t01`, `math-a12-t02`, `math-a12-t03` built (graded A, checker pass) and ready to render.
