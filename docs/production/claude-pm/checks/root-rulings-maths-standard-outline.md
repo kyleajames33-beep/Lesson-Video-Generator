@@ -33,3 +33,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 23. **a12:** show both branches of the hyperbola once (the full graph of y = k/x), then work in the first quadrant for the holiday-house context, saying why negative values make no sense here.
 24. **Descriptions:** no codenames (ruling 16); a07 to a13 descriptions drop the bracketed codenames.
 25. **Reuse** of the mowers (a04a, a13) and the red hatchback across a06 and a07 is a deliberate callback, accepted.
+
+## Rulings on the a01 to a06 resolution (18 November 2026)
+26. Accepted: a04a scene 4 gives the pay-back reason first, then the equation for Standard 2; chips quote titles without the "| Year 12 Maths Standard" suffix; a02b practises single-equation multiplying only; a06's title is "Exponential Models: y = ka^x | Year 12 Maths Standard"; the thin margins (a01, a03, a05, a06) stand, to be measured on the voiced take.
