@@ -31,3 +31,5 @@ Non-voicing work in gaps stays as listed: 247 and 248 steps 1 to 3, then 244 and
 **Added 17 November: brief 249** (`codex-prompts/249-maths-a11-t-g-s-check-plates-voice.md`): the remaining 36 Year 11 Maths designs (trigonometry, transformations, probability), all learning-review resolved. Maths check, anchor check and plates in gaps after 247 and 248 steps 1 to 3; voice after 247 and 248.
 
 When a job is waiting (quota, plates rendering), move to the next one rather than idling. Report each finished step to `status.md` in one short block.
+
+**Root, 17 Nov evening:** the brief 249 plate findings are ruled in `checks/root-rulings-maths-a11-t-g-s-packs.md` rulings 46 (t05 fire towers: natural scene, triangle is a coded overlay, not registered) and 47 (wall clock: qualified plate accepted; hands and arcs coded from the measured centre). Continue as planned.

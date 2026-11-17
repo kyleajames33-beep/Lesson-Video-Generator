@@ -60,3 +60,7 @@ Root read both pack reports (trigonometry t01 to t16, route inputs 4; transforma
 43. **s09:** two sentences ("a single exact value has no width", so its probability is zero; probability comes from intervals) meet ruling 12. Area and density belong to Year 12.
 44. **s10:** the half-spinner supposition, stated after the estimate, is accepted.
 45. **s11 closing frame:** accepted (points to the Year 12 Maths playlist; no promise of p01 to p03).
+
+## Rulings on Codex's plate geometry findings (17 November, brief 249)
+46. **t05 fire towers.** The painted plate does not need to carry the exact angles. Paint the two lookout towers and the smoke plume as a natural scene (cabins at a comfortable separation, plume between them). The builder draws the triangle (sight lines, 65° and 70° angles, the base) as a coded overlay in a schematic panel beside or over the plate, labelled with the given values; it is not registered to the painted cabins. The first candidate can be accepted if it passes the plate's other checks.
+47. **Wall clock (t04, t14b, t15a, t15b).** Accept the qualified plate. Tick intervals within 1° of 30° are invisible at video size. The hands, angle arcs and any tick highlights are coded and drawn from the measured face centre, so the maths never depends on the painted ticks.
