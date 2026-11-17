@@ -127,7 +127,7 @@ Q is calculated exactly like K, but with the current concentrations. The reactio
 
 ### Dissolution and the cycad example (Aboriginal and Torres Strait Islander knowledge)
 
-**"Running water keeps the toxin dissolving."** *Insight*
+**"Running water keeps the toxin leaving."** *Insight*
 Cycad seeds contain water-soluble toxins such as cycasin. Crushed seeds soaked in running water keep losing dissolved toxin, because the flowing water keeps the toxin concentration around them low. Dissolving never reaches equilibrium, so more toxin keeps leaving the seed. This connects solubility and equilibrium to a long-practised processing method.
 
 ### Solubility rules

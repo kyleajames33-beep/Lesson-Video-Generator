@@ -33,3 +33,5 @@ Non-voicing work in gaps stays as listed: 247 and 248 steps 1 to 3, then 244 and
 When a job is waiting (quota, plates rendering), move to the next one rather than idling. Report each finished step to `status.md` in one short block.
 
 **Root, 17 Nov evening:** the brief 249 plate findings are ruled in `checks/root-rulings-maths-a11-t-g-s-packs.md` rulings 46 (t05 fire towers: natural scene, triangle is a coded overlay, not registered) and 47 (wall clock: qualified plate accepted; hands and arcs coded from the measured centre). Continue as planned.
+
+**Root, 18 Nov:** brief 250 (`codex-prompts/250-cultural-general-error-check.md`): error check of four designs made general by owner decision. Text-only; do it in a gap after the 19 missing plates.
