@@ -39,3 +39,11 @@ Root read both pack reports (trigonometry t01 to t16, route inputs 4; transforma
 26. **Spoken names:** "secant", "cosecant" and "cotangent" in full, as designed.
 27. **Colour:** sine stays amber on circles and triangles and teal on graphs, as designed (they never share a frame). The builder must keep each role consistent within a video. t13's magenta for 90° − θ must differ clearly from the mistake red; the builder checks it on the sheet.
 28. **t15b length** (4,723 characters): accepted; do not pad.
+
+## Rulings on the g01 to g06 designs (17 November)
+29. **g01 join:** the recolour of t16's two blue boxes to teal on g01's first sentence is accepted.
+30. **Notation:** numbers only in g01 to g03; the Year 12 form y = k f(a(x + b)) + c first appears in g04. The syllabus letters k and l stay off screen (descriptions still quote the syllabus wording exactly).
+31. **Colours:** the strand uses Year 12 t01's transformation colours (blue and teal horizontal, amber and violet vertical) so that Year 12 recognises them. This overrides "inputs blue, outputs teal" for this strand only.
+32. **g02 hook:** "Invert sounds just the same" may stay only if narration says why in one plain sentence (flipping every value up and down leaves the pattern of the wave unchanged to the ear); otherwise cut it.
+33. **g04 and g05** both quote the shared point in their descriptions: accepted.
+34. **g06 attempt 2** ("show it passes through (6, 0)"): accepted.
