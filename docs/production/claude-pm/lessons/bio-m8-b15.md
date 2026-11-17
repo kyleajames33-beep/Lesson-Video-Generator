@@ -1,6 +1,6 @@
 # B8-15: How can technology assist hearing loss? The sound pathway, conductive and sensorineural loss, hearing aids, cochlear implants and bone conduction implants (design)
 
-Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice after the owner decision on otitis media context (owner-decisions-cultural-2026-10-31.md item 2).
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice. Owner decision 18 Nov 2026: item 2(a), keep it general (no community context).
 
 Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. The owner's cultural review hold (Decisions, "Cultural content (flag for the owner)") is unchanged and still open.
 
@@ -69,7 +69,7 @@ The video has 15 voiced scene files (1 to 9, 10a, 10b, 10c, 10d, 11 and the note
 ### 1. hook (louder isn't clearer)
 > Turn a hearing aid up as far as it'll go, and some people still can't make out a single word. Volume isn't their problem. Somewhere between the air and the brain, one part has stopped working, and a device only helps if it gets the signal past that part. In 1978, a team in Melbourne found a way past one of those breaks. So how can technology assist hearing loss?
 
-Visual: no people. Centre: `m8-hearing-aid-v1.png` alone, medium. A coded volume bar beside it climbs to full on "as far as it'll go"; coded sound waves leave the aid's earpiece, growing taller. On "can't make out a single word" a speech-bubble outline beside the waves fills with scrambled grey letter shapes (no readable words). On "one part has stopped working" the aid slides left and `m8-ear-cutaway-v1.png` fades in at the centre with one region (the cochlea) dimmed and a small "?" chip. On "In 1978, a team in Melbourne" a grey tag writes "Melbourne, 1978" beside a small `m8-cochlear-implant-v1.png` thumbnail. The heading writes: "How can technology assist hearing loss?" At most three bright text items. Hold one second.
+Visual: Centre: `m8-hearing-aid-v1.png` alone, medium. A coded volume bar beside it climbs to full on "as far as it'll go"; coded sound waves leave the aid's earpiece, growing taller. On "can't make out a single word" a speech-bubble outline beside the waves fills with scrambled grey letter shapes (no readable words). On "one part has stopped working" the aid slides left and `m8-ear-cutaway-v1.png` fades in at the centre with one region (the cochlea) dimmed and a small "?" chip. On "In 1978, a team in Melbourne" a grey tag writes "Melbourne, 1978" beside a small `m8-cochlear-implant-v1.png` thumbnail. The heading writes: "How can technology assist hearing loss?" At most three bright text items. Hold one second. No people.
 
 ### 2. outer and middle ear
 > Let's follow the sound. The outer ear funnels sound waves down the ear canal to the **eardrum**, a thin membrane that vibrates with them. Behind it, in the middle ear, three tiny bones called the **ossicles** pass that vibration along: malleus, incus, then stapes. The stapes pushes on a small window into the inner ear. That window is much smaller than the eardrum, so the pressure is concentrated, and that's what moves the fluid inside.

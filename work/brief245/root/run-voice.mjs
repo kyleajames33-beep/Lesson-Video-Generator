@@ -11,13 +11,13 @@ const spendPath='work/brief245/root/spend-elevenlabs.json';
 if(!fs.existsSync(spendPath))fs.writeFileSync(spendPath,JSON.stringify({run:'root 16 Nov',ownerEstimateCredits:70000,reserveCharacters:5000,cap:40000,cumulativeBilledCharacters:0,lessons:[],requests:[]},null,2));
 const spend=()=>JSON.parse(fs.readFileSync(spendPath,'utf8'));
 async function balance(){return (spend().cap??40000)-spend().cumulativeBilledCharacters;}
-const cycle1=['chem-m8-c09','chem-m8-c10','chem-m8-c11a','chem-m8-c11b','chem-m8-c12'];const cycle1nov16a=['bio-m8-b12','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13'];const cycle1old=['bio-m8-g03','bio-m8-p01','chem-m5-g02','bio-m8-p02','chem-m8-p03','bio-m8-b06','chem-m8-c04','bio-m8-b07','chem-m8-p04','bio-m8-b08','chem-m8-g02','bio-m8-b09','chem-m8-c05','bio-m8-b10','chem-m8-c06','bio-m8-b11','chem-m8-c08','bio-m8-g01','chem-m8-p05'];
+const cycle1=['bio-m8-b15','bio-m8-b17'];const cycle1nov17=['chem-m8-c09','chem-m8-c10','chem-m8-c11a','chem-m8-c11b','chem-m8-c12'];const cycle1nov16a=['bio-m8-b12','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13'];const cycle1old=['bio-m8-g03','bio-m8-p01','chem-m5-g02','bio-m8-p02','chem-m8-p03','bio-m8-b06','chem-m8-c04','bio-m8-b07','chem-m8-p04','bio-m8-b08','chem-m8-g02','bio-m8-b09','chem-m8-c05','bio-m8-b10','chem-m8-c06','bio-m8-b11','chem-m8-c08','bio-m8-g01','chem-m8-p05'];
 const cycle2=['bio-m8-b12','chem-m8-c09','bio-m8-b13','bio-m8-b14','bio-m8-b16','chem-m8-c13','bio-m8-g02'];
 let remaining,initial,active=null,stopReason='';
 try{
  remaining=initial=await balance('balance');
  for(const name of cycle1){
-  if(remaining<5000){stopReason='Credit reserve reached';break;}
+  if(remaining<1000){stopReason='Cap reached (the cap already excludes the owner reserve)';break;}
   const design=`${base}/lessons/${name}.md`,text=fs.readFileSync(design,'utf8'),status=text.split(/\r?\n/).find(l=>l.startsWith('Status:'))??'';
   if(!/ready to voice/i.test(status)||/cultural hold|recording hold/i.test(status)){results.push({name,status:'skipped-status-hold',statusLine:status});continue;}
   if(name!=='bio-m8-g03'&&!run(['python',`work/brief174/gen174.py`,name],name+'-config')){results.push({name,status:'skipped-config-error'});continue;}
@@ -48,7 +48,8 @@ try{
   if(!counts.includes(chars)){results.push({name,key,status:'skipped-character-count-mismatch',characters:chars,declaredCounts:counts});continue;}
   let ledger=spend();ledger.lessons.push({name,key,dryRunNarrationCharacters:chars,missingCharacters:newChars,reused:manifest.scenes.length-todo.length,checkedAt:new Date().toISOString()});fs.writeFileSync(spendPath,JSON.stringify(ledger,null,2)+'\n');
   remaining=await balance();
-  if(remaining-newChars<5000){stopReason=`Stop before ${name}: ${newChars} new characters would cross the 5000-credit reserve`;results.push({name,key,status:'deferred-credit-reserve',characters:chars,newChars,remaining});break;}
+  if(remaining-newChars<0){ // Root 18 Nov: the cap already excludes the 5,000 owner reserve; do not double-count it
+  stopReason=`Stop before ${name}: ${newChars} new characters would cross the 5000-credit reserve`;results.push({name,key,status:'deferred-credit-reserve',characters:chars,newChars,remaining});break;}
   const before=remaining;let generated=0;active={name,key,characters:chars,before,missingAtStart:todo.map(s=>s.audioFile),sceneCount:manifest.scenes.length};
   // One-scene invocations make any first error stop the whole wave; the legacy generator otherwise continues.
   for(const scene of manifest.scenes){process.env.BRIEF194_LESSON=name;process.env.BRIEF194_SCENE=scene.id;if(!run([...args,`--scene=${scene.id}`],name+'-voice-'+scene.id))throw Error(`${name}: generation stopped on ${scene.id}. No retry.`);if(todo.some(s=>s.id===scene.id))generated++;}

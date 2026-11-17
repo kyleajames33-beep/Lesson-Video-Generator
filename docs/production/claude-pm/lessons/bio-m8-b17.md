@@ -1,6 +1,6 @@
 # B8-17: What can replace lost kidney function? Kidney failure, haemodialysis, peritoneal dialysis and transplantation compared (design)
 
-Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice after the owner decision on remote and community kidney context (item 3).
+Status: Revision 3 (1 Nov): Codex error check 122 resolved (no errors); ready to voice. Owner decision 18 Nov 2026: item 3(a), keep it general (no community context).
 
 Earlier status, Revision 2 (31 Oct): learning review and science check resolved; needs Codex error check before voicing. **Cultural review flag (unchanged):** see Decisions (L20's remote access point and L15's kidney disease content are not written here).
 
@@ -68,7 +68,7 @@ The video has 15 voiced scene files (1 to 9, 10a, 10b, 10c, 10d, 11 and the note
 ### 1. hook (why not one clean-out?)
 > If dialysis can clean waste out of the blood, why does someone with failed kidneys need it three times a week, for years, instead of one good clean-out? In Australia, more than fifteen thousand people are on dialysis, and roughly a thousand kidney transplants are done each year. So what can replace lost kidney function?
 
-Visual: no people. Centre: a coded week calendar strip (Mon to Sun) with three amber blocks on Monday, Wednesday and Friday (label "dialysis sessions"); on "three times a week, for years" the strip duplicates and stacks into many weeks fading down the frame. On "one good clean-out" a single amber block appears alone with a "?" chip. On "more than fifteen thousand people" a coded count chip writes "15,623 on dialysis (31 Dec 2023)" and on "roughly a thousand kidney transplants" a second "1,088 kidney transplants in 2023" (grey tag "ANZDATA Annual Report 2024"; Revision 2, science S3). On "replace lost kidney function" `m8-kidney-nephron-v1.png` enters (kidney half, cropped by `Cam`). The heading writes: "What can replace lost kidney function?" At most three bright text items. Hold one second.
+Visual: Centre: a coded week calendar strip (Mon to Sun) with three amber blocks on Monday, Wednesday and Friday (label "dialysis sessions"); on "three times a week, for years" the strip duplicates and stacks into many weeks fading down the frame. On "one good clean-out" a single amber block appears alone with a "?" chip. On "more than fifteen thousand people" a coded count chip writes "15,623 on dialysis (31 Dec 2023)" and on "roughly a thousand kidney transplants" a second "1,088 kidney transplants in 2023" (grey tag "ANZDATA Annual Report 2024"; Revision 2, science S3). On "replace lost kidney function" `m8-kidney-nephron-v1.png` enters (kidney half, cropped by `Cam`). The heading writes: "What can replace lost kidney function?" At most three bright text items. Hold one second. No people.
 
 ### 2. the kidney's jobs
 > Remember the nephrons from the water balance video: blood is filtered, then the useful parts are taken back. Working nonstop, that removes **urea**, a waste made when your body breaks down protein, and keeps water, salts like potassium, and acidity in range. The kidneys also release a hormone that tells bone marrow to make red blood cells, and they activate vitamin D. As with the ear and eye, ask which jobs have failed.
