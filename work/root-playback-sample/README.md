@@ -205,3 +205,15 @@ First release (17 Nov). v1 was never queued: root found jar C's "kinds of partic
 ## chem-y11-m1-v02 v1
 
 First release (17 Nov). Whole master sampled in 3 s windows (11 sheets): pure water holds at 100 °C while salt water creeps, physical properties and the data table, the live heating model with the molecules view, consistent isn't proof (pressure stated, two independent properties), the mystery white solid matched on two properties ("very likely NaCl (not certain)", "801 °C so it must be NaCl" crossed), sublimation at about −78 °C, attempts with countdown, feedback with "chemical: a gas formed" crossed, the sand and salt handoff and key notes. Captions from the playback lesson (185 cues, 14,443 frames equal to master). Pass. Held for the same playlist decision.
+
+## math-a12-t01 v1, root, 17 Nov
+
+Whole master sampled in 3 s windows (11 sheets, sample-any). Opens on i05's rectangles (design: production order) and clears to y = cos x; the buoy traces the wave at half speed, then morphs to 2cos(x − π/3) + 1 with the orange buoy reaching each crest π/3 s later and "(π/3, 3)" ringed; transform panel sliders with live amplitude, period, shift, midline and range; tan follows the same rules; factor-first worked example; memory aid; buoy attempt with countdown and brief feedback. Picture scan 0 flags, font scan 0 flags. Pass.
+
+## math-a12-t02 v1, root, 17 Nov
+
+Whole master sampled in 3 s windows (11 sheets). Opens on t01's daylight frame; the u-window slides, solves and slides back with out-of-window values crossed; 2sin 2x = √3 doubles the window to 4π with "2 cycles: expect 4" and the four solutions placed one at a time (a 12 s hold on the question before the window, judged a deliberate thinking hold); closed ends, tan one crossing per branch, the graphing-app check; attempts with countdown; feedback with the crossed slip. Picture scan 0 flags, font scan 0 flags. Pass.
+
+## math-a12-t03 v1, root, 17 Nov
+
+Whole master sampled in 3 s windows (11 sheets). The tide board model built slot by slot (middle, half, period, start) with the water band following the measured rows; h(4) worked with the crossed "inside is πt/6, not t"; 5.25 m solved with both times; the turning wheel h(t) = 12 − 10cos(πt/30) with the projector and the 17 m exact solve (t = 20 or 40, "t = 20 only" crossed); memory aid builds line by line; attempts with countdown; phone storage handoff. Picture scan 0 flags, font scan 0 flags. Pass.
