@@ -217,3 +217,11 @@ Whole master sampled in 3 s windows (11 sheets). Opens on t01's daylight frame; 
 ## math-a12-t03 v1, root, 17 Nov
 
 Whole master sampled in 3 s windows (11 sheets). The tide board model built slot by slot (middle, half, period, start) with the water band following the measured rows; h(4) worked with the crossed "inside is πt/6, not t"; 5.25 m solved with both times; the turning wheel h(t) = 12 − 10cos(πt/30) with the projector and the 17 m exact solve (t = 20 or 40, "t = 20 only" crossed); memory aid builds line by line; attempts with countdown; phone storage handoff. Picture scan 0 flags, font scan 0 flags. Pass.
+
+## math-a12-s10 v1, root, 18 Nov
+
+Whole master sampled in 3 s windows (11 sheets). Opens on s09's handoff; each part of the density formula glows on its cue; f′ and f″ worked to the maximum and the inflections at μ ± σ; the calculator reads 0.6827, 0.9545, 0.9973 as the band slider steps out; the bags' bell is slid and stretched onto the apples' bell (0.6827 for both); the empirical rule; the CDF sweep; attempts with countdown and brief feedback (crossed slips). Picture scan 0 flags, font scan 0 flags. Pass.
+
+## math-a12-s11 v1, root, 18 Nov
+
+Whole master sampled in 3 s windows (10 sheets). Snapper and perch compared by z (1.25 and 1.6), the standard normal with both tails kept as the curves squeeze, the left-area table read with the 1 − table step, Alex and Blake by z, the mirror tail, bolts and bottles; attempts and feedback (raw-marks slip crossed). Picture scan: one "possible-blank" flag at 352.7 s, checked: a mid cross-fade from "Check your working" to "Last one", not a defect. Font scan 0 flags. Pass.

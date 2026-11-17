@@ -53,7 +53,7 @@ export const DIAL_POS = {cx: HEAD_POS.x + (DIAL.c[0] - HEAD.box[0]) * s, cy: MAC
 export const Machine: React.FC<{mu: number; shown: number; at?: number; out?: number}> = ({mu, shown, at = -30, out}) => (
 	<FillDial x={MACH.x} y={BOTTLE_Y} width={MACH.width} mu={mu} sigma={8} limit={490} zs={ZS} shown={shown} levelRange={[380, 520]}
 		bottle={{plate: BOTTLE, interior: BOTTLE_IN}} bottleW={MACH.bottleW} spacing={120} visible={7}
-		dial={{cx: DIAL_POS.cx, cy: DIAL_POS.cy, r: DIAL_POS.r * 0.82, range: [490, 520]}} head={{plate: HEAD, x: HEAD_POS.x, y: HEAD_POS.y, w: HEAD_POS.w}} at={at} out={out} />
+		dial={{cx: DIAL_POS.cx, cy: DIAL_POS.cy, r: DIAL_POS.r * 0.82, range: [490, 520], label: false}} head={{plate: HEAD, x: HEAD_POS.x, y: HEAD_POS.y, w: HEAD_POS.w}} at={at} out={out} />
 );
 /** Bottles passed under the head: `per` frames for a run of 200 starting at `from`. */
 export const runShown = (f: number, from: number, per = 120) => Math.max(0, Math.min(200, ((f - from) / per) * 200));

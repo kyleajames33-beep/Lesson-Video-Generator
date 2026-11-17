@@ -338,7 +338,7 @@ export const BagFill: React.FC<{
 export const FillDial: React.FC<{
 	x: number; y: number; width?: number; mu: number; sigma: number; limit: number; zs: readonly number[]; shown: number; levelRange: Range;
 	levelAt?: (i: number) => number; bottle?: {plate: PlateSpec; interior: readonly [number, number, number, number]}; bottleW?: number; spacing?: number; visible?: number;
-	dial?: {cx: number; cy: number; r: number; range: Range}; head?: {plate: PlateSpec; x: number; y: number; w: number};
+	dial?: {cx: number; cy: number; r: number; range: Range; label?: boolean}; head?: {plate: PlateSpec; x: number; y: number; w: number};
 	readout?: {x: number; y: number; width?: number}; unit?: string; at?: number; out?: number;
 }> = ({x, y, width = 1200, mu, sigma, limit, zs, shown, levelRange, levelAt, bottle, bottleW = 90, spacing = 150, visible = 8, dial, head, readout, unit = 'mL', at = 0, out}) => {
 	usePlatePreload([...(bottle ? [bottle.plate.src] : []), ...(head ? [head.plate.src] : [])]);
@@ -380,7 +380,7 @@ export const FillDial: React.FC<{
 				{Array.from({length: 9}, (_, k) => {const a = (-140 + 35 * k) * Math.PI / 180; return <line key={k} x1={dial.cx + Math.sin(a) * dial.r * 0.78} y1={dial.cy - Math.cos(a) * dial.r * 0.78} x2={dial.cx + Math.sin(a) * dial.r * 0.92} y2={dial.cy - Math.cos(a) * dial.r * 0.92} stroke={INK} strokeWidth={3} />;})}
 				<line x1={dial.cx} y1={dial.cy} x2={dial.cx + Math.sin(dAng) * dial.r * 0.75} y2={dial.cy - Math.cos(dAng) * dial.r * 0.75} stroke={MATH_GRADIENT} strokeWidth={9} strokeLinecap="round" />
 				<circle cx={dial.cx} cy={dial.cy} r={12} fill={MATH_GRADIENT} />
-				<text x={dial.cx} y={dial.cy + dial.r + 44} textAnchor="middle" style={TXT(34, MATH_GRADIENT, 800)}>{`μ = ${fmtNum(mu, 2)}`}</text>
+				{dial.label === false ? null : <text x={dial.cx} y={dial.cy + dial.r + 44} textAnchor="middle" style={TXT(34, MATH_GRADIENT, 800)}>{`μ = ${fmtNum(mu, 2)}`}</text>}
 			</g> : null}
 		</FrameSvg>
 		{readout ? <LiveReadoutBoard x={readout.x} y={readout.y} width={readout.width ?? 480} at={at} out={out} rows={[
