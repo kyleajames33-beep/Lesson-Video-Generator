@@ -27,3 +27,8 @@ export * from './dist-parts';
 export * from './normal-parts';
 export * from './finance-parts';
 export * from './trig-parts';
+// Year 11 Advanced wave 1 (brief 245, maths-a11-kit-needs.md): w01 to w14 parts and the surd formatter.
+export * from './exact-surd';
+export * from './a11-algebra-parts';
+export * from './a11-function-parts';
+export * from './a11-graph-parts';
