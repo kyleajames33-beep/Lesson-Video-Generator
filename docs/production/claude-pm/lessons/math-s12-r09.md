@@ -256,7 +256,7 @@ Error-only check (report errors; do not restyle or rewrite):
 
 Title: Ratios vs Rates and Unit Rates | Year 12 Maths Standard
 
-(Title length: 56 characters.)
+(Title length: 55 characters.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html
 
