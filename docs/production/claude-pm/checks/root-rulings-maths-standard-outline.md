@@ -107,3 +107,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 
 ## Rulings on the z01 to z06 designs (19 November 2026)
 75. Accepted: z01's loaf frequencies changed so σ = 5 g throughout; z02's test-mark example; z03's original swim time and the omission of the all-equal example; z04's fast-bowler attempt; z05's "less than 46 minutes" attempt; p08's loaf plate across the strand and the new bread rack plate in z05. **z05's student-heights example** is replaced by a context with no people (for example parcel weights or a bottle fill), keeping the numbers. **z06's final frame** (the bakery-café "Morning jobs" chalkboard) opens c01a exactly.
+
+## Rulings on the p01 to p08 designs (19 November 2026)
+76. Accepted: p01's die in place of the sunrise chip; p02's corrected attempt 2 slip (1/5); p03's short "without replacement" scene for Standard 1; p05's seeded run (0.7, 0.54, 0.507); p06 at 4,981 characters with staged monthly values labelled; p07's 12 s bridge scene (first trim); p08 briefs the bread loaf (z01 does not), uses the produce scale plate for z01's bench, and asks "Of whom?" among its five questions.
