@@ -45,3 +45,10 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 31. **i11 to i12 join:** the i12 designer opens on i11's final frame as designed (the e-bike with a "buy now, pay later?" tag); the two designers agree it in their decisions files.
 32. **Money sources:** each design cites the dated source of every rate or fee it states (RBA, ABS CPI, Revenue NSW, ATO, Moneysmart, a named broker's published tiers); Codex re-verifies them in the maths check. Lottery and gambling hooks are excluded (ruling 6).
 33. **Beyond-syllabus methods** (logarithms to find a term, the Advanced geometric-series annuity formula, effective annual rate, the Rule of 72) stay out of the videos; terms are found from tables, spreadsheets or a financial calculator as the syllabus intends.
+
+## Rulings on the i01 to i11 designs (18 November 2026)
+34. **i06 split** into i06a (share tables, dividends, yield) and i06b (a share's value over time): accepted. i04 stays one video. i04 attempt 1's $4,000 (no rounding ambiguity) and i05's check at years 0 and 1: accepted.
+35. **i08:** use current rates with dated sources (ruling 32), not the site's 4.2% and 4.8%. **i03's CPI figure** is re-checked against the latest ABS release at build time.
+36. **Spoken subscripts:** "V nought" with its plain meaning ("V nought, the starting value") at first use.
+37. **Titles over 80 characters:** use the designs' shorter alternatives. **Invented company names:** Codex confirms they are not real ASX listings in the maths check. **i07's key note** "flat fee ÷ rate" stays.
+38. **i03's two-route final frame** (Standard 2 to i04, Standard 1 to i05) and i11's final frame (the e-bike with a "buy now, pay later?" tag) are accepted.
