@@ -264,3 +264,59 @@ Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-stand
 ### MS-32. Owner note: lottery contexts
 
 - Lessons: `annuities/lesson01.sa.html` (opening paragraph) and `annuities/lesson03.sa.html` (hook, card 01, card 08, revisit card, SA 2) frame present value as a lottery prize choice. The videos do not use these (root ruling 6: no gambling). The owner may prefer a non-gambling choice on the site too, for example a retention bonus paid yearly or as one sum now.
+
+## 7. Findings from the Year 12 Ratios and rates packs, r01 to r14 (18 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standard/year12/ratios-and-rates/` (lessons 01 to 05) and `year11/applications-of-measurement/` (lessons 10 and 12); SHA256 values in `programme/maths-standard-route-inputs-4.json`. No site file was changed. Every value below was recalculated with SymPy 1.14.0 (`work/brief-standard-r/recalc.py`, output in `recalc-output.txt`). Packs: `pre-design/maths-standard/math-s12-r01.md` to `r14.md`. Every worked answer, drill answer and short-answer answer in the five lessons matched; the findings are explanations, contradictions, gaps and an owner note.
+
+### MS-33. Owner note: a lottery hook
+
+- Lesson: `year12/ratios-and-rates/lesson02.sa.html`, hook, card 01, worked example 3 ("the lottery ticket") and the revisit card.
+- Old text: "Two friends put in $\$50$ and $\$30$ to buy a lottery ticket. It wins $\$480$."
+- Suggested change: keep the numbers in a non-gambling story, for example "Two friends put in $\$50$ and $\$30$ to buy cold drinks to sell at a junior footy carnival. They take $\$480$. Splitting it evenly feels unfair. How much should each get?" The working ($300 and $180) is unchanged.
+- Reason: the videos do not use gambling contexts (root ruling 6; see MS-32 for the same note on the annuities lessons).
+
+### MS-34. A distractor explanation gives the wrong reason
+
+- Lesson: `year12/ratios-and-rates/lesson05.sa.html`, comprehensive answers, drill 4 ("A $2\text{ kW}$ heater runs for $3$ hours. Electricity costs $\$0.28$ per kWh").
+- Old text: "Option C is the answer you get if you forget that the price is per kilowatt hour and treat it as cents."
+- Correction: "Option C ($\$16.80$) multiplies by $2.8$ instead of $0.28$, a decimal slip that makes the cost ten times too big."
+- Reason: $6 \times 2.8 = 16.80$. Treating the price as 28 cents gives $6 \times 28 = 168$ cents $= \$1.68$, which is the correct answer, not option C.
+
+### MS-35. Gap: converting a rate's units
+
+- Lesson: `year12/ratios-and-rates/lesson01.sa.html`. The syllabus asks students to "Convert between rates" (Standard 2 `cib0e451ed`, Standard 1 `ci088435d6`; the crosswalk records both as covered). The lesson converts minutes to hours inside speed problems and changes one drip rate from L/min to L/day in a drill answer, but no card or worked example converts both units of a rate (for example 90 km/h to 25 m/s, $\$4.50$/kg to 45 c/100 g, or 0.3 L/min to 18 L/h).
+- Suggested addition: a short card "Convert the top unit, then the bottom unit" with one speed example (km/h to m/s, with the reason before the ÷ 3.6 shortcut) and one price example.
+- Structure note on the same page: card 04 lists "Scale" as a key term ("A ratio that compares measurements on a map or diagram to real-world measurements"), which belongs to lesson03 and is not used in lesson01.
+
+### MS-36. Gap: building-plan symbols
+
+- Lesson: `year12/ratios-and-rates/lesson03.sa.html`. Standard 2 `ci6a191fab` and Standard 1 `ci16ea39e5` say "building plans with commonly used symbols". No card, worked example or drill shows or names a plan symbol (wall, door and its swing, window, sliding door, north point, dimension line); the crosswalk records both points as covered.
+- Suggested addition: a labelled plan with five or six symbols and one question that needs a symbol to answer (for example, subtracting a door and a window from a wall area for paint).
+
+### MS-37. Gap: plans, photos, maps, perimeter and radial surveys in the trapezoidal and rainfall points
+
+- Lesson: `year12/ratios-and-rates/lesson04.sa.html`. Standard 2 `cie48a6b84` asks for "the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"; `ci5d0f766d` asks for rainfall volume using V = Ah from the same sources. Every example gives the offsets or the area directly in metres: none reads them from a plan, photo or map with a scale, none finds a perimeter, and none uses a radial survey.
+- Notation: the syllabus writes $V = Ah$ with $h$ the depth of rain. The lesson writes $V = A \times d$ (card 06) while using $h$ for the strip width in the trapezoidal rule. Suggested: use $V = Ah$ as written and say once that $h$ means the rain's depth there.
+- Suggested addition: one worked example that measures offsets on a scaled aerial photo or site plan (for example 1 : 1000, so 1 cm is 10 m), finds the area, the fencing perimeter of the straight sides, and the rain volume on the same block. Radial surveys need the Trigonometry lessons (sine area rule, cosine rule; `cibe642c8e`); a cross-reference from the Trigonometry radial-survey lesson would close that part.
+
+### MS-38. A distractor explanation says the opposite of what happens
+
+- Lesson: `year12/ratios-and-rates/lesson04.sa.html`, comprehensive answers, drill 5 ("A rainfall of $25\text{ mm}$ is written in metres as").
+- Old text: "Option B divides by $100$ instead of $1000$, which is the error that turns a full tank into an empty one."
+- Correction: "Option B divides by $100$ instead of $1000$. That makes the rain ten times too deep, so the volume comes out ten times too big: a tank you think will overflow may get only a tenth of that water."
+- Reason: 0.25 m is ten times 0.025 m; the slip overestimates the water, it does not empty the tank.
+
+### MS-39. A unit rule contradicts its own worked example, and an unrealistic room
+
+- Lesson: `year12/ratios-and-rates/lesson03.sa.html`, card 04 and worked example 2.
+- Old text (card 04): "Going out to the real world you multiply by $n$. Coming back to the drawing you divide by $n$. Convert the units only after that, never before." Worked example 2 then says: "Here the real length is given in metres, so convert it to centimetres before dividing."
+- Correction: "Going out to the real world, multiply by $n$ first and convert the units after. Coming back to the drawing, convert the real length to the drawing's unit first, then divide by $n$."
+- Reason: the rule as written is only true in one direction; worked example 2, drill 2 and SA 1 (b) all (correctly) convert before dividing.
+- Owner note on the same lesson: the apply-plans fill-the-gaps task ("A bedroom measures $4.4\text{ cm}$ by $3.0\text{ cm}$ on a plan drawn at $1:50$") gives a bedroom of 2.2 m by 1.5 m (3.3 m²), shorter than a single bed. The arithmetic is right; $1:100$ (4.4 m by 3.0 m, 13.2 m², $\$528$ of carpet at $\$40$) would be realistic.
+
+### MS-40. The kettle example uses two electricity prices; site prices are below current caps
+
+- Lesson: `year11/applications-of-measurement/lesson12.sa.html`. The hook and the revisit card price the 2400 W kettle at "30 cents per kWh" ($\approx \$13.14$ a year); `we-3` prices the same kettle at "32 cents per kWh" ($\approx \$14$ a year).
+- Correction: use one price in all three places (the revisit card should answer the hook's own question with the same price as `we-3`, or the hook should say 32 cents).
+- Price note (not an error): the lessons use 28 to 32 cents per kWh (`year12/ratios-and-rates/lesson05.sa.html` drills and SA; Year 11 lesson12). The AER Default Market Offer for 2026-27 (final determination, May 2026) caps the NSW residential flat-rate usage price at 33.14 c/kWh (Ausgrid), 33.73 (Endeavour) and 35.01 (Essential), as reported by Canstar on 26 May 2026 (to be re-verified against the AER document). The site may want one dated, sourced price line where prices appear.

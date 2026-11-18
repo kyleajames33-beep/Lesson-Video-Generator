@@ -58,3 +58,10 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 40. **i21:** change the worked goal so it uses a standard interest-factor table column (avoid the unusual 0.45% column); keep the site's method.
 41. **i17b's 3-year line:** Codex verifies against current Australian credit card statement rules (the minimum repayment warning) in the maths check; if the rule differs, the learning-review resolution corrects it.
 42. **i18 teaser for r01** stays provisional until r01 is designed; the kit-needs file's "to t01" handoff is superseded by ruling 28.
+
+## Rulings on the r-strand packs (18 November 2026)
+43. **Radial surveys:** r07 names radial surveys in one sentence (what they are) and teaches the plan, photo, map and perimeter methods; t10 teaches the radial survey area (needing the triangle area and cosine rules from t06 to t09) with a callback to r07's land and r08's rainfall. The t-strand packs must include this.
+44. **Splits accepted:** r06 into r06a and r06b; r12 into r12a and r12b (as the packs propose). r07 and r10 stay one video unless a design cannot fit under 570 s.
+45. **Joins:** both i18 (Standard 1) and i23 (Standard 2) end on the cordial jug that r01 opens on; the house roof triangle ends r13 (Standard 1) and r14 (Standard 2) and opens t01.
+46. **Playlist order (ruling 28):** in the Year 12 Standard playlist, r01 to r14 come before t01 to t11. The outline table's order numbers are superseded by this ruling; designs and route inputs use the ruled order.
+47. **Prices:** petrol about $2.25 a litre (NRMA weekly report, 9 Nov 2026) and electricity about 33 c/kWh (AER default market offer 2026-27, Ausgrid flat rate) are accepted as dated examples; Codex confirms both against the primary sources in the maths check.

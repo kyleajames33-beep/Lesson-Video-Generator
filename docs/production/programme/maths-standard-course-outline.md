@@ -228,3 +228,6 @@ Candidates only. Do not assume reuse: Standard students need a gentler pace, few
 - Sensitive contexts: BAC (f05, f06) and medication dosage (f07) need careful framing; tax, Medicare and stamp duty videos must name the financial year of every rate. See `sensitiveContexts` in the JSON.
 - The site has no lesson for 12 Year 11 points and teaches 17 more only in part, mostly the BAC and medication formulas, spreadsheet tasks, VAT, metric prefixes, survey design and infographics. Those designs use the syllabus alone for the missing parts.
 - Site lessons outside the 2024 points (networks lessons 2 and 3, measurement lessons 10 to 12, data-analysis lesson 8, two retired investment lessons) are not used as sources except where a Year 12 action matches.
+
+
+**Root, 18 Nov (rulings 28 and 46):** in the Year 12 playlist, ratios and rates (r01 to r14) come before trigonometry (t01 to t11), following the recommended strand order; the table's order numbers for those rows are superseded.

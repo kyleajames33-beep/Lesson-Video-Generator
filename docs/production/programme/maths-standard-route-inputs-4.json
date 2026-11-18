@@ -1,0 +1,1402 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-18",
+ "brief": "Maths Standard start (root request, 18 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 12 Standard 2 and Standard 1 Ratios and rates pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year12Standard2Points": 21,
+  "year12Standard1Points": 16,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 18 November 2026 and match the crosswalk inventory. All five Ratios and rates lessons and Year 11 Applications of measurement lessons 10 and 12 use data-step-id sections. Lesson01 and the two Year 11 lessons label worked examples we-1 to we-3; lessons 02 to 05 number their worked examples on the page with no ids (exampleIds empty; the packs cite them as 'worked example N')."
+ },
+ "recommendations": [
+  "Run r01 to r14 in outline order, after the money strand and before Trigonometry (root ruling 28). Standard 2 students take all fourteen. Standard 1 students take r01, r02, r04, r06, r09, r10, r11, r12 and r13, then go to math-s12-t01 (r03, r05, r07, r08 and r14 are Standard 2 only).",
+  "Joins: r01 opens on the cordial jug that ends i23 (Standard 2) and i18's right panel (Standard 1), as i18's Revision 1 design proposes; i23 has no design yet, so its final frame must repeat that panel. Two-route final frames (ruling 38 pattern) after r02 (to r03 or r04), r04 (to r05 or r06), r06 (to r07 or r09) and r13 (to r14 or t01). r04, r06 and r09 must open without assuming r03, r05 and r07 to r08. r14 and r13's Standard 1 panel both end on the house roof triangle for t01, which moves the roof triangle from i23's pack proposal to this strand's end.",
+  "Pace flags (gentler Standard pace): r06 at risk (suggested split r06a and r06b); r07, r10 and r12 to watch. The rest fit 6 to 9 minutes.",
+  "Outline problem: r07 and r08's syllabus points name a radial survey, but radial surveys (cibe642c8e) and the triangle area and cosine rules they need sit in Trigonometry (t06 to t10), which now runs after this strand. Proposal: r07 and r08 teach site plans, aerial photos and maps; t10 adds one radial-survey area (and a rainfall volume on it) as a callback. Root to rule.",
+  "Site findings: MS-33 to MS-40 appended to docs/production/claude-pm/site-corrections-maths-standard.md, section 7 (the lottery hook, two wrong distractor explanations, a contradictory unit rule, mismatched kettle prices, gaps for plan symbols, rate conversion and the plan, photo and radial-survey part of r07 and r08).",
+  "Money and prices (rulings 5 and 32), read 18 November 2026: electricity usage about 33 c/kWh (AER Default Market Offer 2026-27 final determination, May 2026: Ausgrid flat-rate cap 33.14 c/kWh, Endeavour 33.73, Essential 35.01; as reported by Canstar, 26 May 2026; Codex re-verifies against the AER PDF); petrol about $2.25 a litre (NRMA weekly fuel report, 9 November 2026: Sydney regular unleaded average 225.3 c/L). Shop prices in anchors are realistic NSW 2026 examples, labelled as examples. No gambling (ruling 6).",
+  "Kit needs for this strand are in docs/production/claude-pm/checks/maths-standard-kit-needs-r.md; the main new parts are a part-bar for ratios (RatioBar), a scaled plan board with a ruler (ScalePlan) and a distance-time graph driven by TripSim."
+ ],
+ "part": 4,
+ "covers": "math-s12-r01 to math-s12-r14 (Year 12 Ratios and rates, Standard 2 and Standard 1)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 12,
+   "entries": [
+    {
+     "id": "math-s12-r01",
+     "playlistOrder": 48,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do ratios relate to fractions, and how do we simplify them?",
+     "syllabusActionIds": [
+      "cie93c27e5",
+      "ci990d9b85",
+      "cic5bd20ef",
+      "ci6765dce9",
+      "cib1e88569",
+      "ci93a4e9e1"
+     ],
+     "standard2ActionIds": [
+      "cie93c27e5",
+      "ci990d9b85",
+      "cic5bd20ef"
+     ],
+     "standard1ActionIds": [
+      "ci6765dce9",
+      "cib1e88569",
+      "ci93a4e9e1"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cie93c27e5",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise ratios and explain their relationship with fractions",
+       "sourceHtml": "<p>Recognise <a data-item-id=\"eef715b3-836a-4b72-9357-d4cc685ffd4a\" href=\"\">ratios</a> and explain their relationship with fractions</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci990d9b85",
+       "course": "Year 12 Standard 2",
+       "text": "Express a ratio in simplest form",
+       "sourceHtml": "<p>Express a ratio in simplest form</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cic5bd20ef",
+       "course": "Year 12 Standard 2",
+       "text": "Determine the ratio of two quantities",
+       "sourceHtml": "<p>Determine the ratio of two quantities</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci6765dce9",
+       "course": "Year 12 Standard 1",
+       "text": "Recognise ratios and explain their relationship with fractions",
+       "sourceHtml": "<p>Recognise <a data-item-id=\"eef715b3-836a-4b72-9357-d4cc685ffd4a\" href=\"\">ratios</a> and explain their relationship with fractions</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib1e88569",
+       "course": "Year 12 Standard 1",
+       "text": "Express a ratio in simplest form",
+       "sourceHtml": "<p>Express a ratio in simplest form</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci93a4e9e1",
+       "course": "Year 12 Standard 1",
+       "text": "Determine the ratio of two quantities",
+       "sourceHtml": "<p>Determine the ratio of two quantities</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "preview-vocabulary",
+       "build-foundation",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "bec8335237bd4ca6f453861933786a2bb3342fc253d434e9b3e50766cf58692d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "preview-vocabulary",
+        "build-foundation",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "bec8335237bd4ca6f453861933786a2bb3342fc253d434e9b3e50766cf58692d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a01",
+       "text": "ci29461234 and ci529c4c4e: converting length and capacity units (same unit before a ratio)."
+      },
+      {
+       "source": "math-s11-m01",
+       "text": "cib256693a: fractions and percentages of an amount (assumed number sense)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-i23",
+      "math-s12-i18"
+     ],
+     "startBoundary": "Opens on the money strand's last frame: i23 (Standard 2) and the right panel of i18 (Standard 1) both end on the water jug with a darker cordial layer and the chip \"how much of the jug is cordial?\". Same picture for both courses.",
+     "stopBoundary": "A ratio compares quantities in the same unit (a:b, order matters); a fraction compares a part with the whole, so in a:b the first part is a/(a + b) of the whole; equivalent ratios and simplest form by dividing every term by the HCF; the ratio of two quantities after converting to one unit (250 g : 1 kg = 1 : 4). Dividing a quantity in a ratio is r02.",
+     "nextHandoff": "math-s12-r02",
+     "advancedReuseCandidates": [],
+     "recommendation": "Join: the cordial jug (250 mL cordial to 1 L water = 1 : 4, cordial is 1/5 of the jug). Keep the site's 18:24, 250 g : 1 kg and 84 cm : 1.4 m numbers. Teach the two fraction questions apart: part of the whole (3/7) and one part compared with the other (3/4). The site's lottery hook is not used (ruling 6; MS-33). Standard 1 and Standard 2 wording identical.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r02",
+     "playlistOrder": 49,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we share a quantity in a given ratio?",
+     "syllabusActionIds": [
+      "cibeb03f49",
+      "cid7c41f39",
+      "cifec5763c",
+      "ci694b1fa7"
+     ],
+     "standard2ActionIds": [
+      "cibeb03f49",
+      "cid7c41f39"
+     ],
+     "standard1ActionIds": [
+      "cifec5763c",
+      "ci694b1fa7"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cibeb03f49",
+       "course": "Year 12 Standard 2",
+       "text": "Divide a quantity in a given ratio",
+       "sourceHtml": "<p>Divide a quantity in a given ratio</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cid7c41f39",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical problems involving ratios",
+       "sourceHtml": "<p>Solve practical problems involving ratios</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cifec5763c",
+       "course": "Year 12 Standard 1",
+       "text": "Divide a quantity in a given ratio",
+       "sourceHtml": "<p>Divide a quantity in a given ratio</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci694b1fa7",
+       "course": "Year 12 Standard 1",
+       "text": "Solve practical problems involving ratios",
+       "sourceHtml": "<p>Solve practical problems involving ratios</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+      "sectionIds": [
+       "divide-in-a-ratio",
+       "apply-ratios",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "bec8335237bd4ca6f453861933786a2bb3342fc253d434e9b3e50766cf58692d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "sectionIds": [
+        "divide-in-a-ratio",
+        "apply-ratios",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "bec8335237bd4ca6f453861933786a2bb3342fc253d434e9b3e50766cf58692d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r01",
+       "text": "cie93c27e5, ci990d9b85, cic5bd20ef: a ratio, its fractions of the whole, simplest form."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r01"
+     ],
+     "startBoundary": "r01 ends with the cordial jug's 1 : 4 shown as five equal parts. Now a total is known and has to be shared.",
+     "stopBoundary": "Divide a quantity in a ratio with two or three terms: count the parts, find one part, multiply out, check the shares add to the total; problems that give one share instead of the total (12 kg of sand is 3 parts); order of the terms; units on the answer; scaling a recipe up or down by the same factor. Two-route final frame: Standard 2 to r03, Standard 1 to r04.",
+     "nextHandoff": "math-s12-r03 (Standard 2); math-s12-r04 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Replace the site's $480 lottery prize with the same numbers in a non-gambling context (two cousins put in $50 and $30 for cold drinks to sell at a junior footy carnival and take $480; ruling 6, MS-33). Keep 63 kg 2:3:4, $720 3:5, the 1:3 concrete mix and the 6:2:1 biscuit recipe. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r03",
+     "playlistOrder": 50,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does capture-recapture estimate a population we cannot count?",
+     "syllabusActionIds": [
+      "ci4c6fcd26"
+     ],
+     "standard2ActionIds": [
+      "ci4c6fcd26"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci4c6fcd26",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical ratio problems involving the capture-recapture technique",
+       "sourceHtml": "<p>Solve practical ratio problems involving the <a data-item-id=\"064c3046-3b3a-4552-b745-5bd14361ef37\" href=\"\">capture-recapture technique</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "preview-vocabulary",
+       "build-capture-recapture",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "63cb6c30c9fee31260376a9db48b408e0364878cc4de6ca0fd84b9563aef6871"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "preview-vocabulary",
+        "build-capture-recapture",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "63cb6c30c9fee31260376a9db48b408e0364878cc4de6ca0fd84b9563aef6871"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r01",
+       "text": "cie93c27e5: a ratio as a fraction (marked out of caught)."
+      },
+      {
+       "source": "math-s12-r02",
+       "text": "cid7c41f39: solving a practical ratio problem."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r02"
+     ],
+     "startBoundary": "r02's two-route frame; Standard 2 continues here. Nobody can count every fish in a lake.",
+     "stopBoundary": "Capture-recapture as two equal fractions, m2/n2 = n1/N (the share marked in the second catch matches the share marked in the whole lake), solved for N ≈ n1 × n2 / m2; the estimate is a whole number of animals; the assumptions (marked animals mix back evenly, marking does not change the chance of capture, no births, deaths or movement between catches) and which way the estimate moves when one fails. Final frame hands to r04 and must not be assumed by r04 (Standard 1 skips this video).",
+     "nextHandoff": "math-s12-r04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only. Lead with the fishing-lake survey (the site's 40, 50, 8 gives 250). Science-adjacent by nature: frame it as a fishing club or council survey, not a biology lesson. Keep the possum (720) and koala (300) numbers for practice only if a second example is needed.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r04",
+     "playlistOrder": 51,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How does a map scale turn map distances into real distances?",
+     "syllabusActionIds": [
+      "ci58f841f3",
+      "ci0774b65d"
+     ],
+     "standard2ActionIds": [
+      "ci58f841f3"
+     ],
+     "standard1ActionIds": [
+      "ci0774b65d"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci58f841f3",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the relationship between ratios and map scales and apply this relationship to solve problems in a variety of practical contexts",
+       "sourceHtml": "<p>Explain the relationship between ratios and map <a data-item-id=\"5c713a5e-7b55-4cf4-a2fe-f489e67c8ee3\" href=\"\">scales</a> and apply this relationship to solve problems in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci0774b65d",
+       "course": "Year 12 Standard 1",
+       "text": "Explain the relationship between ratios and map scales and apply this relationship to solve problems in a variety of practical contexts",
+       "sourceHtml": "<p>Explain the relationship between ratios and map <a data-item-id=\"5c713a5e-7b55-4cf4-a2fe-f489e67c8ee3\" href=\"\">scales</a> and apply this relationship to solve problems in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "preview-vocabulary",
+       "build-foundation",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "preview-vocabulary",
+        "build-foundation",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/applications-of-measurement/lesson10.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/applications-of-measurement/lesson10.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "reading-a-scale-the",
+        "worked-examples-3-in",
+        "common-errors-the-traps"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-3"
+       ],
+       "sha256": "680d6a94e632360715fe510fdc73e4cdc00e75cf636782534f8e07ce47679fcb"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a01",
+       "text": "ci29461234: converting mm, cm, m and km."
+      },
+      {
+       "source": "math-s11-a02",
+       "text": "ci2d6e3fa8: area conversions (only if the area note is used)."
+      },
+      {
+       "source": "math-s12-r01",
+       "text": "cie93c27e5: a ratio compares quantities in the same unit."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r02"
+     ],
+     "startBoundary": "Opens on r03's final frame for Standard 2 and works for Standard 1 arriving from r02: a bushwalking map with a 1 : 25 000 scale in the corner and a track traced in red. The frame needs no capture-recapture knowledge.",
+     "stopBoundary": "A map scale 1 : n is a ratio with no units (1 of anything on the map stands for n of the same thing on the ground); map to real by multiplying by n, real to map by dividing, convert units last; a scale bar and finding n from a measured pair (n = real ÷ map in the same unit); using the real distance in a travel-time problem. Area scale factor n² is an optional one-line note, not taught.",
+     "nextHandoff": "math-s12-r05 (Standard 2); math-s12-r06 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's 6.4 cm at 1 : 50 000 = 3.2 km, 8 cm at 1 : 25 000 = 2 km and 7.5 cm at 1 : 100 000 = 7.5 km (with the 25-minute ride). Two-route final frame: Standard 2 to r05 (construct a drawing), Standard 1 to r06 (plans).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r05",
+     "playlistOrder": 52,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we construct a scale drawing?",
+     "syllabusActionIds": [
+      "ci9857fa6f"
+     ],
+     "standard2ActionIds": [
+      "ci9857fa6f"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci9857fa6f",
+       "course": "Year 12 Standard 2",
+       "text": "Construct scale drawings, with and without using digital tools",
+       "sourceHtml": "<p>Construct <a data-item-id=\"9dff933f-9770-48a8-a6e8-1dc2ec70b467\" href=\"\">scale drawings</a>, with and without using digital tools</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "sectionIds": [
+       "construct-scale-drawings",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "sectionIds": [
+        "construct-scale-drawings",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r04",
+       "text": "ci58f841f3: plan length = real length ÷ n, units converted first to the drawing unit."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r04"
+     ],
+     "startBoundary": "r04's two-route frame; Standard 2 continues here. Reading a scale drawing is done; now draw one that fits the page.",
+     "stopBoundary": "Choose a scale: divide each real length by the space available, take the larger factor, round up to a friendly scale (rounding up still fits); convert every real length with the same factor and rule it; label plan and real lengths; the same drawing in a digital tool (set the scale, type real sizes) as a check. Final frame hands to r06 and must not be assumed by r06 (Standard 1 skips this video).",
+     "nextHandoff": "math-s12-r06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only. Keep the site's 6 m by 4 m room into a 15 cm by 10 cm box (1 : 40 exactly, choose 1 : 50, 12 cm by 8 cm). Digital tool shown unbranded (a coded drawing app or SpreadsheetGrid as squared paper). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r06",
+     "playlistOrder": 53,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do building plans let us estimate materials and costs?",
+     "syllabusActionIds": [
+      "ci6a191fab",
+      "ci16ea39e5",
+      "ci60e22975"
+     ],
+     "standard2ActionIds": [
+      "ci6a191fab"
+     ],
+     "standard1ActionIds": [
+      "ci16ea39e5",
+      "ci60e22975"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci6a191fab",
+       "course": "Year 12 Standard 2",
+       "text": "Estimate and compare quantities, materials and costs using measurements taken from scale drawings and building plans with commonly used symbols",
+       "sourceHtml": "<p>Estimate and compare quantities, materials and <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">costs</a> using measurements taken from scale drawings and building plans with commonly used symbols</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": "The site's plan examples never show or name a plan symbol (door swing, window, sliding door, north point, dimension line); 'with commonly used symbols' needs original teaching (MS-36)."
+      },
+      {
+       "id": "ci16ea39e5",
+       "course": "Year 12 Standard 1",
+       "text": "Obtain measurements from scale drawings and building plans with commonly used symbols to solve problems in a variety of practical contexts",
+       "sourceHtml": "<p>Obtain measurements from <a data-item-id=\"9dff933f-9770-48a8-a6e8-1dc2ec70b467\" href=\"\">scale drawings</a> and building plans with commonly used symbols to solve problems in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": "As ci6a191fab: no plan symbols on the site (MS-36)."
+      },
+      {
+       "id": "ci60e22975",
+       "course": "Year 12 Standard 1",
+       "text": "Estimate and compare quantities, materials and costs using measurements taken from scale drawings",
+       "sourceHtml": "<p>Estimate and compare quantities, materials and <a data-item-id=\"f329ba7d-b9c0-4dc3-9627-716c30275688\" href=\"\">costs</a> using measurements taken from scale drawings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "apply-plans",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson03.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "apply-plans",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "6b9c0cef9af224777799292c5c7187a701cdd609f9d5a0df5680ac04b38efd05"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r04",
+       "text": "ci58f841f3 / ci0774b65d: plan × n = real."
+      },
+      {
+       "source": "math-s11-a05",
+       "text": "ci139f00a0: areas and perimeters of rectangles and composite shapes."
+      },
+      {
+       "source": "math-s11-a02",
+       "text": "ci2d6e3fa8: area units."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r04"
+     ],
+     "startBoundary": "Opens on r05's final frame for Standard 2 and works for Standard 1 arriving from r04: a 1 : 100 floor plan of a small unit, kitchen bench highlighted, \"$320 a metre: what will it cost?\". No r05 knowledge assumed.",
+     "stopBoundary": "Read a building plan: walls, door swings, windows, sliding doors, the north point and dimension lines (plain meanings); scale each side before finding an area (never scale the area); use the rate's unit to decide length or area (per metre, per square metre); materials and costs with real-world rounding (tiles bought by the box with a waste allowance, paint by the tin after subtracting doors and windows and allowing two coats); compare two quotes. The benchtop hook ($1152) and the tiled floor ($819) are the site's.",
+     "nextHandoff": "math-s12-r07 (Standard 2); math-s12-r09 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Pace flag: at risk. Symbols, floor area, flooring cost, wall paint and comparison exceed a gentle 9.5 minutes. Suggested split only if the design runs long: r06a (reading a plan and its symbols; floor areas and flooring costs) and r06b (walls and paint; comparing quotes). Plan symbols are a site gap (MS-36). Two-route final frame: Standard 2 to r07, Standard 1 to r09.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r07",
+     "playlistOrder": 54,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the trapezoidal rule find an area of land from a plan, photo or survey?",
+     "syllabusActionIds": [
+      "cie48a6b84"
+     ],
+     "standard2ActionIds": [
+      "cie48a6b84"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cie48a6b84",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale",
+       "sourceHtml": "<p>Calculate the perimeter, or area of a section of land using the <a data-item-id=\"6eaeee4a-3143-4b20-9bd2-993eec45719c\" href=\"\">Trapezoidal rule</a> where appropriate, from a site plan, an aerial photograph, a <a data-item-id=\"93aa649d-06f6-4297-95e8-840f92b13162\" href=\"\">radial survey</a> or a map that includes a scale</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": "Only the area by the trapezoidal rule from given offsets is taught. No perimeter, no site plan or aerial photograph with a scale, no map; radial surveys are a Trigonometry point (cibe642c8e, math-s12-t10) taught after this strand (MS-37)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "preview-vocabulary",
+       "build-foundation",
+       "apply-offsets",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "52b3005678070d3df04c785b201b8d82c956eb7d48e62e4c00c9ca577d807328"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "preview-vocabulary",
+        "build-foundation",
+        "apply-offsets",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "52b3005678070d3df04c785b201b8d82c956eb7d48e62e4c00c9ca577d807328"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a11",
+       "text": "ci3786e651: the trapezoidal rule A ≈ (h/2)(d_f + d_l), up to four applications."
+      },
+      {
+       "source": "math-s11-a07",
+       "text": "ci05a36ac3: perimeters and areas of irregular blocks by dissection."
+      },
+      {
+       "source": "math-s12-r04",
+       "text": "ci58f841f3: map or plan length × n = real length."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r06"
+     ],
+     "startBoundary": "r06's two-route frame; Standard 2 continues here. A real block of land has a creek for a back fence: no formula fits it.",
+     "stopBoundary": "Recall the trapezoidal rule from Year 11 in one step (one application, the site's 112 m²) and the repeated form (ends once, middles twice: 150 m², 1170 m²); new here: take the offsets and strip width from a site plan, an aerial photograph or a map with a scale, scale them to real lengths first, then apply the rule; the perimeter of the straight boundaries from the plan (fencing); why the answer is an estimate and how more offsets help. Radial surveys are named and deferred to math-s12-t10.",
+     "nextHandoff": "math-s12-r08",
+     "advancedReuseCandidates": [],
+     "recommendation": "Outline problem: a radial survey needs triangle areas and the cosine rule (Trigonometry, math-s12-t06 to t10), which ruling 28 places after this strand; teach site plan, aerial photo and map here and give the radial-survey case to t10 (MS-37). Spoken subscripts as ruling 36 ('d f, the first offset'). Pace: watch (fits if the Year 11 rule is recalled, not re-taught).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r08",
+     "playlistOrder": 55,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How much water falls on a roof or a block of land in a storm?",
+     "syllabusActionIds": [
+      "ci5d0f766d"
+     ],
+     "standard2ActionIds": [
+      "ci5d0f766d"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci5d0f766d",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate the volume of rainfall over an area using V = Ah, where V is the volume, A is the area of land and h is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale",
+       "sourceHtml": "<div><span>Calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/f98bda41-c828-4e21-a3a7-4c0814213439\" data-item-codename=\"glo_link__shared__volume\" data-item-id=\"f98bda41-c828-4e21-a3a7-4c0814213439\" data-item-systemname=\"GLO Link: SHARED: volume\" data-item-type=\"link_glossary\">volume</a> of rainfall over an area using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi><mo>=</mo><mi mathvariant=\"italic\">Ah</mi></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>V</mi></math></span><span> is the volume, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi></math></span><span> is the area of land and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>h</mi></math></span><span> is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": "Covered for a rectangle roof and a trapezoidal paddock; the area never comes from a scaled plan, photo or map, and the site writes V = A x d (with h used for the strip width), not the syllabus V = Ah (MS-37)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+      "sectionIds": [
+       "connect-rainfall-volume",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "52b3005678070d3df04c785b201b8d82c956eb7d48e62e4c00c9ca577d807328"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html",
+       "sectionIds": [
+        "connect-rainfall-volume",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "52b3005678070d3df04c785b201b8d82c956eb7d48e62e4c00c9ca577d807328"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a03",
+       "text": "ci880a544f: 1 m³ = 1000 L = 1 kL."
+      },
+      {
+       "source": "math-s11-a01",
+       "text": "ci29461234: 1 mm = 0.001 m."
+      },
+      {
+       "source": "math-s12-r07",
+       "text": "cie48a6b84: an area estimated from a scaled plan or photo."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r07"
+     ],
+     "startBoundary": "r07 ends on the farm dam's estimated area. Rainfall is reported as a depth: what does 25 mm on a roof actually give?",
+     "stopBoundary": "Rain as a very flat box: V = Ah with A the area in m² and h the depth converted from mm to m; m³ to litres; areas from a rectangle, a scaled plan or the trapezoidal rule (then the volume is an estimate too); tank capacity and overflow questions. Final frame hands to r09 for both courses (Standard 1 arrives at r09 from r06).",
+     "nextHandoff": "math-s12-r09",
+     "advancedReuseCandidates": [],
+     "recommendation": "Use the syllabus letters V = Ah (h is the depth of rain here, not the strip width of r07; say so once). Keep the site's 2400 L roof and 5000 L tank overflow (1480 L). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r09",
+     "playlistOrder": 56,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How is a rate different from a ratio, and how do unit rates make comparisons fair?",
+     "syllabusActionIds": [
+      "ci5abc5522",
+      "ci26fe7fac",
+      "ci3d090d63",
+      "ci7b67ed32",
+      "cia705b6e3",
+      "cicd810e2c"
+     ],
+     "standard2ActionIds": [
+      "ci5abc5522",
+      "ci26fe7fac",
+      "ci3d090d63"
+     ],
+     "standard1ActionIds": [
+      "ci7b67ed32",
+      "cia705b6e3",
+      "cicd810e2c"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci5abc5522",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the difference between ratios and rates",
+       "sourceHtml": "<p>Explain the difference between ratios and <a data-item-id=\"1b90898f-0cd8-4378-9e48-96acef2a41b3\" href=\"\">rates</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci26fe7fac",
+       "course": "Year 12 Standard 2",
+       "text": "Represent given information as a unit rate",
+       "sourceHtml": "<p>Represent given information as a unit rate</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci3d090d63",
+       "course": "Year 12 Standard 2",
+       "text": "Make comparisons between rates in a variety of practical contexts",
+       "sourceHtml": "<p>Make comparisons between rates in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci7b67ed32",
+       "course": "Year 12 Standard 1",
+       "text": "Explain the difference between ratios and rates",
+       "sourceHtml": "<p>Explain the difference between ratios and <a data-item-id=\"1b90898f-0cd8-4378-9e48-96acef2a41b3\" href=\"\">rates</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cia705b6e3",
+       "course": "Year 12 Standard 1",
+       "text": "Represent given information as a unit rate",
+       "sourceHtml": "<p>Represent given information as a unit rate</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cicd810e2c",
+       "course": "Year 12 Standard 1",
+       "text": "Make comparisons between rates in a variety of practical contexts",
+       "sourceHtml": "<p>Make comparisons between rates in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "guided-drill"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "guided-drill"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson02.sa.html",
+       "sectionIds": [
+        "preview-vocabulary"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "bec8335237bd4ca6f453861933786a2bb3342fc253d434e9b3e50766cf58692d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r01",
+       "text": "cie93c27e5: a ratio compares quantities in the same unit."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "ci80921f0a: hourly pay (an everyday rate)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r01"
+     ],
+     "startBoundary": "Opens on r08's final frame for Standard 2 and works for Standard 1 arriving from r06: two pay slips side by side, $336 for 8 hours and $270 for 6 hours, \"who is paid more?\". No r07 or r08 knowledge assumed.",
+     "stopBoundary": "A rate compares quantities with different units (dollars per hour, litres per minute, goals per game); a ratio compares the same unit and has no units; a unit rate is the amount for one of the second unit, found by division; comparing rates fairly by bringing both to the same unit rate. Best buys (r11), conversions (r10), speed graphs (r12) and fuel (r13) come later.",
+     "nextHandoff": "math-s12-r10",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's $336 for 8 h ($42/h) against $270 for 6 h ($45/h), the 420 pages in 7 minutes and 15 L/min. Lesson01 has no ratio-against-rate contrast beyond its definition; lesson02's key term supplies the ratio half. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r09.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r10",
+     "playlistOrder": 57,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we convert a rate into different units and use it to solve problems?",
+     "syllabusActionIds": [
+      "cib0e451ed",
+      "ciff825a61",
+      "ci088435d6",
+      "ci4b3c5e42"
+     ],
+     "standard2ActionIds": [
+      "cib0e451ed",
+      "ciff825a61"
+     ],
+     "standard1ActionIds": [
+      "ci088435d6",
+      "ci4b3c5e42"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cib0e451ed",
+       "course": "Year 12 Standard 2",
+       "text": "Convert between rates",
+       "sourceHtml": "<p>Convert between rates</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": "The site converts time units inside speed problems and one drip rate (L/min to L/day) in a drill answer, but never teaches converting a compound rate such as km/h to m/s or $/kg to c/g (MS-35)."
+      },
+      {
+       "id": "ciff825a61",
+       "course": "Year 12 Standard 2",
+       "text": "Use rates to solve problems in a variety of practical contexts",
+       "sourceHtml": "<p>Use rates to solve problems in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci088435d6",
+       "course": "Year 12 Standard 1",
+       "text": "Convert between rates",
+       "sourceHtml": "<p>Convert between rates</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": "As cib0e451ed (MS-35)."
+      },
+      {
+       "id": "ci4b3c5e42",
+       "course": "Year 12 Standard 1",
+       "text": "Use rates to solve problems in a variety of practical contexts",
+       "sourceHtml": "<p>Use rates to solve problems in a variety of practical contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "sectionIds": [
+       "build-foundation",
+       "work-examples",
+       "avoid-common-errors",
+       "guided-drill"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2"
+      ],
+      "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "build-foundation",
+        "work-examples",
+        "avoid-common-errors",
+        "guided-drill"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r09",
+       "text": "ci26fe7fac: a unit rate."
+      },
+      {
+       "source": "math-s11-t01",
+       "text": "cic8bbf9d6: seconds, minutes and hours."
+      },
+      {
+       "source": "math-s11-a01",
+       "text": "ci29461234 and ci529c4c4e: length and capacity units."
+      },
+      {
+       "source": "math-s11-f04",
+       "text": "ci61d581aa: speed = distance/time."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r09"
+     ],
+     "startBoundary": "r09 ends on a unit rate with a unit that is not the one the question wants (a dripping tap at 0.3 L per minute: how much in a year?).",
+     "stopBoundary": "Convert a rate by converting its top unit and its bottom unit separately (0.3 L/min = 18 L/h = 432 L/day; 90 km/h = 90 000 m per 3600 s = 25 m/s; 12 km/h is a 5-minute kilometre); use a rate to find a total or a time (unitary method: rate × amount, amount ÷ rate); time in hours and minutes; units as the check. Speed graphs are r12.",
+     "nextHandoff": "math-s12-r11",
+     "advancedReuseCandidates": [],
+     "recommendation": "Rate conversion is a site gap (MS-35): teach the two-unit conversion from the syllabus. Keep the site's 0.3 L/min tap (432 L a day) and pump (60 L/min, 60 minutes for 3600 L). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r10.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r11",
+     "playlistOrder": 58,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "Which pack is the best buy?",
+     "syllabusActionIds": [
+      "cibecf9f22",
+      "cie8590152"
+     ],
+     "standard2ActionIds": [
+      "cibecf9f22"
+     ],
+     "standard1ActionIds": [
+      "cie8590152"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cibecf9f22",
+       "course": "Year 12 Standard 2",
+       "text": "Compare unit prices to determine best buys",
+       "sourceHtml": "<p>Compare <a data-item-id=\"bf8eac05-b182-4aea-8e66-3a5d0ca9da9c\" href=\"\">unit prices</a> to determine <a data-item-id=\"a6c257b6-f1ae-41be-a3b3-68ba2bd93f20\" href=\"\">best buys</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cie8590152",
+       "course": "Year 12 Standard 1",
+       "text": "Compare unit prices to determine best buys",
+       "sourceHtml": "<p>Compare <a data-item-id=\"bf8eac05-b182-4aea-8e66-3a5d0ca9da9c\" href=\"\">unit prices</a> to determine <a data-item-id=\"a6c257b6-f1ae-41be-a3b3-68ba2bd93f20\" href=\"\">best buys</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "work-examples",
+       "avoid-common-errors",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "work-examples",
+        "avoid-common-errors",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r09",
+       "text": "ci26fe7fac: a unit rate."
+      },
+      {
+       "source": "math-s12-r10",
+       "text": "cib0e451ed: converting a rate's units (per kg to per 100 g)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r10"
+     ],
+     "startBoundary": "r10 ends at a supermarket shelf: flour, 2 kg for $3.80 and 5 kg for $8.75.",
+     "stopBoundary": "Unit price = price ÷ quantity in a common unit (per kg, per 100 g, per litre, per 100 mL, per GB); the lowest unit price is the best value; convert to the same unit before comparing; the shelf label's own unit price; when the best value is not the best buy (more than you will use, waste, cash today). Fuel costs are r13.",
+     "nextHandoff": "math-s12-r12",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's flour ($1.90 against $1.75 per kg), juice ($2.24 against $2.10 per L), coffee and olive oil ($1.72, $1.52, $1.60 per 100 mL) numbers. Shelf unit pricing is required for larger grocery retailers under the Unit Pricing Code (ACCC; Codex re-verifies the current code and date). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r11.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r12",
+     "playlistOrder": 59,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "What does a distance-time graph tell us about a journey?",
+     "syllabusActionIds": [
+      "cic3bbd162",
+      "ci30ebbe40"
+     ],
+     "standard2ActionIds": [
+      "cic3bbd162"
+     ],
+     "standard1ActionIds": [
+      "ci30ebbe40"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cic3bbd162",
+       "course": "Year 12 Standard 2",
+       "text": "Interpret and analyse distance–time graphs to solve problems related to speed, distance and time",
+       "sourceHtml": "<p>Interpret and analyse <a data-item-id=\"643e34ef-e459-4646-839e-8bb3706ab9e2\" href=\"\">distance–time graphs</a> to solve problems related to <a data-item-id=\"5d4e728f-c88f-424b-9cae-82742a507631\" href=\"\">speed</a>, <a data-item-id=\"eaff39f1-b778-4dd2-9291-d74810b6f846\" href=\"\">distance</a> and time</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "partial",
+       "siteGap": "Speed, distance and time problems are taught; distance-time graphs are not (crosswalk). Original teaching from the syllabus."
+      },
+      {
+       "id": "ci30ebbe40",
+       "course": "Year 12 Standard 1",
+       "text": "Interpret and analyse distance–time graphs to solve problems related to speed, distance and time",
+       "sourceHtml": "<p>Interpret and analyse <a data-item-id=\"643e34ef-e459-4646-839e-8bb3706ab9e2\" href=\"\">distance–time graphs</a> to solve problems related to <a data-item-id=\"5d4e728f-c88f-424b-9cae-82742a507631\" href=\"\">speed</a>, <a data-item-id=\"eaff39f1-b778-4dd2-9291-d74810b6f846\" href=\"\">distance</a> and time</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "partial",
+       "siteGap": "As cic3bbd162."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "work-examples",
+       "avoid-common-errors",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2"
+      ],
+      "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "work-examples",
+        "avoid-common-errors",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f04",
+       "text": "ci61d581aa: speed = distance/time with unit changes."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48: gradient from a graph (rise over run)."
+      },
+      {
+       "source": "math-s12-r10",
+       "text": "cib0e451ed: minutes to hours inside a rate."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r11"
+     ],
+     "startBoundary": "Opens on r11's final frame: a road-trip receipt card, \"Sydney to Melbourne, 880 km\". A journey can be drawn.",
+     "stopBoundary": "Read a distance-time graph: distance from the start up the side, time along the bottom; a steeper line is faster; the gradient is the speed (rise in km over run in h); a flat section is a stop; a line coming down is the return trip; average speed = total distance ÷ total time (not the mean of the speeds); two journeys on one graph and where they cross (one catches the other). Draw the site's Sydney-Melbourne trip (4 h at 100 km/h, 45-minute stop, 5 h 20 min at 90 km/h: 10 h 5 min).",
+     "nextHandoff": "math-s12-r13",
+     "advancedReuseCandidates": [],
+     "recommendation": "Site gap (crosswalk partial): the site has no graphs; original teaching from the syllabus with the site's SA 4 trip as the worked example. Pace flag: watch; suggested split only if long: r12a (reading one journey) and r12b (average speed and two journeys). TripSim (rig.tsx) can drive the car and the graph from one trip state.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r12.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r13",
+     "playlistOrder": 60,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How does fuel consumption compare the efficiency of two vehicles?",
+     "syllabusActionIds": [
+      "cid3ee9707",
+      "ci1cf760e0"
+     ],
+     "standard2ActionIds": [
+      "cid3ee9707"
+     ],
+     "standard1ActionIds": [
+      "ci1cf760e0"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cid3ee9707",
+       "course": "Year 12 Standard 2",
+       "text": "Examine fuel consumption rates to compare the efficiency of vehicles",
+       "sourceHtml": "<p>Examine <a data-item-id=\"d9080984-2f08-43d5-9d7f-cb0589e49a5a\" href=\"\">fuel consumption rates</a> to compare the efficiency of vehicles</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci1cf760e0",
+       "course": "Year 12 Standard 1",
+       "text": "Examine fuel consumption rates to compare the efficiency of vehicles",
+       "sourceHtml": "<p>Examine <a data-item-id=\"d9080984-2f08-43d5-9d7f-cb0589e49a5a\" href=\"\">fuel consumption rates</a> to compare the efficiency of vehicles</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "work-examples",
+       "avoid-common-errors",
+       "guided-drill",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "work-examples",
+        "avoid-common-errors",
+        "guided-drill",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r09",
+       "text": "ci26fe7fac: a unit rate."
+      },
+      {
+       "source": "math-s12-r12",
+       "text": "cic3bbd162: a road trip's distance."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r12"
+     ],
+     "startBoundary": "r12 ends with the Sydney-Melbourne car on the graph and a fuel gauge chip: \"how much fuel did that take?\".",
+     "stopBoundary": "Fuel consumption in L/100 km (litres used for every 100 km, a lower number is more efficient); fuel used = consumption × distance ÷ 100; cost = litres × price per litre; find consumption from a fill-up (litres ÷ km × 100); range on a full tank; compare two vehicles over the same distance in litres and dollars. Two-route final frame: Standard 2 to r14, Standard 1 to math-s12-t01.",
+     "nextHandoff": "math-s12-r14 (Standard 2); math-s12-t01 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's 8.5 L/100 km over 420 km at $2.05 (35.7 L, $73.19) and SA 6 (7.8 L/100 km, 520 km, 40.56 L, $85.18, range 769 km); label site prices as the site's and anchors at about $2.25 a litre (NRMA weekly report, 9 November 2026: Sydney regular unleaded 225.3 c/L). Last Ratios and rates video for Standard 1 (two-route frame, ruling 38 pattern). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r13.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-r14",
+     "playlistOrder": 61,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do watts, kilowatts and kilowatt hours set the cost of running an appliance?",
+     "syllabusActionIds": [
+      "ci09a38a5a",
+      "ci81925dcf"
+     ],
+     "standard2ActionIds": [
+      "ci09a38a5a",
+      "ci81925dcf"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci09a38a5a",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise and convert between watts (W) and kilowatts (kW) using 1000 W = 1 kW",
+       "sourceHtml": "<div><span>Recognise and convert between watts (W) and kilowatts (kW) using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1000</mn><mi> </mi><mi mathvariant=\"normal\">W</mi><mo>=</mo><mn>1</mn><mi> </mi><mi>kW</mi></math></span><span></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci81925dcf",
+       "course": "Year 12 Standard 2",
+       "text": "Apply units of energy to calculate kilowatt hours and solve problems involving the consumption of energy",
+       "sourceHtml": "<p>Apply units of energy to calculate <a data-item-id=\"2c941e7b-b69e-48c9-9637-e56d29fd2d16\" href=\"\">kilowatt hours</a> and solve problems involving the consumption of energy</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+      "sectionIds": [
+       "preview-vocabulary",
+       "connect-power-and-energy",
+       "apply-electricity-costs",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "63cb6c30c9fee31260376a9db48b408e0364878cc4de6ca0fd84b9563aef6871"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson05.sa.html",
+       "sectionIds": [
+        "preview-vocabulary",
+        "connect-power-and-energy",
+        "apply-electricity-costs",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "63cb6c30c9fee31260376a9db48b408e0364878cc4de6ca0fd84b9563aef6871"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/applications-of-measurement/lesson12.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/applications-of-measurement/lesson12.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-unit-hierarchies-mass",
+        "worked-examples-3-in",
+        "common-errors-the-3"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "128444abecf6755084662e873febb956eec2515a8e6ef8f19f56f9fe08381502"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-r10",
+       "text": "cib0e451ed: converting a rate's units (minutes to hours)."
+      },
+      {
+       "source": "math-s12-r09",
+       "text": "ci26fe7fac: price per unit (cents per kWh)."
+      },
+      {
+       "source": "math-s11-a04",
+       "text": "ci7526e53a: the prefix kilo- = 1000."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r13"
+     ],
+     "startBoundary": "r13's two-route frame; Standard 2 continues here. A phone on its charger and a heater plug into the same power point: which costs more to run?",
+     "stopBoundary": "Watts measure how fast an appliance uses energy; 1000 W = 1 kW; energy in kilowatt hours = kW × hours; cost = kWh × price per kWh; days and hours per day; comparing appliances (a lower-power appliance on for longer can cost more); reading the usage price from a bill. Prices: about 33 c per kWh (AER Default Market Offer 2026-27, Ausgrid residential flat-rate usage cap 33.14 c/kWh); say once that prices change and differ by retailer. Final frame hands to math-s12-t01.",
+     "nextHandoff": "math-s12-t01",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's 2400 W heater for 5 h at $0.32 ($3.84), the ten 60 W bulbs ($1.44) and the two-heater comparison (12 against 12.6 kWh a day). Final frame: the house with rooftop solar, its roof drawn as a right-angled triangle (35 degrees at the eave, '?' on the height), chip 'Next: right-angled triangles', so t01 opens on the same picture as r13's Standard 1 panel. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-r14.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}
