@@ -41,3 +41,5 @@ When a job is waiting (quota, plates rendering), move to the next one rather tha
 **Root, 18 Nov evening:** brief 252 (`codex-prompts/252-maths-standard-i-check-plates-voice.md`): the 26 Maths Standard money designs. Steps 1 to 3 after brief 251's steps 1 to 3; voice after brief 251.
 
 **Root, 18 Nov evening:** brief 253 (`codex-prompts/253-maths-standard-r-check-plates-voice.md`): the 16 Maths Standard ratios and rates designs. Steps 1 to 3 after brief 252's steps 1 to 3; voice after brief 252 (r13 and r14 wait for t01).
+
+**Root, 18 Nov night:** brief 254 (`codex-prompts/254-maths-standard-t-check-plates-voice.md`): the 12 Maths Standard trigonometry designs. Steps 1 to 3 after brief 253's; voice after brief 253. r13 and r14 are cleared to voice.

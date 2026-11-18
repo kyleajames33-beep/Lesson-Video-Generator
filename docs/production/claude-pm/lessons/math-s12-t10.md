@@ -1,10 +1,24 @@
 # Maths S12 T10: How does a compass radial survey map a block of land? A field book of bearings and distances from one point, the survey drawn to scale, angles at O as differences of bearings (and across north), the 360° check, the area as a sum of ½ab sin C triangles, a boundary by the cosine rule, the perimeter, and the rain on the surveyed land (design)
 
-Status: Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r07.md`, `r13.md`, `a04a.md`, Revision 2 each, and the r-strand resolution logs) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 60; ruling 43: t10 teaches the radial survey area, opening on r07's radial sketch with a callback to r08's rainfall). No Advanced design teaches radial surveys. Standard 2 only. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r07.md`, `r13.md`, `a04a.md`, Revision 2 each, and the r-strand resolution logs) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 60; ruling 43: t10 teaches the radial survey area, opening on r07's radial sketch with a callback to r08's rainfall). No Advanced design teaches radial surveys. Standard 2 only. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,709 characters by script (see "Narration length estimate"), 13 scene headings, about 519 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,855 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 530 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
-Scope: ruled playlist order 60 (ruling 58). **Standard 2 only.** Pre-design pack: `../pre-design/maths-standard/math-s12-t10.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/trigonometry/lesson08.sa.html` (SHA256 `a5110b3ea364f9718647b9c37bbf0cd1fc8cb96e995362672314aec84ddc43f9`; card 02 "the true bearing of that corner from O, and the distance to it", "Every pair of neighbouring corners forms a triangle with O ... That is SAS, every single time", "The angles at O go all the way round, so they must add to 360°"; card 05's four steps and "Take what is left of the circle after the last bearing, 360° minus it, and add the first bearing to that"; `we-1` (87°, 86°, 91°, 96°; "it checks your arithmetic, not the surveyor's readings"), `we-2` (11 738 m², "About 1.17 hectares"), `we-3` (AB = 107.25 m); traps 01 to 03). Site correction MS-46 (`../site-corrections-maths-standard.md` section 8): the site never draws a survey to scale and has no link to the rainfall lesson; both are original here (scene 2 and scene 6). Route entry: `math-s12-t10` in `../../programme/maths-standard-route-inputs-5.json`. Visual system: maths studio kit; r07's coded radial sketch; the farm top-view plate (t04's) as a badge; the survey, field book, protractor, ruler and triangles coded; r08's coded rain slab.
+## Revision 2 (18 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-t10-learning-review.md` (summary `../checks/m-s12-t06-t11-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-standard-outline.md` (1 to 62) and root's resolution brief of 18 Nov. Resolution log: `../checks/m-s12-t06-t11-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 1 ("from the land and rainfall videos"): **accepted** (root's decision 6). Scene 1 now credits each video for what it taught: "Remember this? A radial survey, from the land area video." (r07 scene 7 names the radial survey) and "Later, the storm from the rainfall video comes back too." (r08's 25 mm storm, which scene 6 brings back). r08 is no longer credited with the radial survey.
+2. Should fix, the description and Syllabus section (ruling 61): **accepted** (root's decision 6). The description's "Also the radial survey parts of: ..." line is removed, so only `cibe642c8e` is quoted. The Syllabus section now says r07's and r08's points are served as callbacks (ruling 43) and are not quoted. Codex error-check item 2 now reads "confirm only `cibe642c8e` is quoted". Open decision 3 is closed. The "Builds on" line keeps "the land area and rainfall videos". The "Next" line quotes t11's new title (root's decision 3).
+3. Optional, scene 1 (the word "compass" never explained): **applied**, reviewer's sentence ("Because the directions come from a compass as true bearings, it's called a compass radial survey."), with the hand tag "compass: true bearings" on the new cue "compass".
+
+Housekeeping: the farm plate is named `ms12-farm-top-v1.png` (root's decision 4) in the scope, assets and asset-brief lines.
+
+Joins: scene 1 still opens on t09's final frame (unchanged). Scene 12 is unchanged and is still t11's opening frame.
+
+Length: the fixes add 146 characters (about 11 s). Narration 5,855 characters by script (Revision 1: 5,709), about 530 s with holds, about 40 s under the cap. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
+
+Scope: ruled playlist order 60 (ruling 58). **Standard 2 only.** Pre-design pack: `../pre-design/maths-standard/math-s12-t10.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/trigonometry/lesson08.sa.html` (SHA256 `a5110b3ea364f9718647b9c37bbf0cd1fc8cb96e995362672314aec84ddc43f9`; card 02 "the true bearing of that corner from O, and the distance to it", "Every pair of neighbouring corners forms a triangle with O ... That is SAS, every single time", "The angles at O go all the way round, so they must add to 360°"; card 05's four steps and "Take what is left of the circle after the last bearing, 360° minus it, and add the first bearing to that"; `we-1` (87°, 86°, 91°, 96°; "it checks your arithmetic, not the surveyor's readings"), `we-2` (11 738 m², "About 1.17 hectares"), `we-3` (AB = 107.25 m); traps 01 to 03). Site correction MS-46 (`../site-corrections-maths-standard.md` section 8): the site never draws a survey to scale and has no link to the rainfall lesson; both are original here (scene 2 and scene 6). Route entry: `math-s12-t10` in `../../programme/maths-standard-route-inputs-5.json`. Visual system: maths studio kit; r07's coded radial sketch; the farm top-view plate `ms12-farm-top-v1.png` (briefed in t03; root's decision 4) as a badge; the survey, field book, protractor, ruler and triangles coded; r08's coded rain slab.
 
 Owner rules applied: as r07 (plates for real objects, code for plans and surveys; no people, hands or faces (the surveyor stays in the words); one question; one stage at a time; words before symbols; "sine", "cosine" spoken; every angle and bearing with "degrees" ("zero four one degrees true"); g01 worked example; two attempts with "Pause here to answer." and 10 s countdowns; brief feedback with one crossed slip; five key notes with a framed card; everyday anchors (a farm paddock and last night's rain, a council park); Australian spelling; no em dashes; conversational narration).
 
@@ -13,7 +27,7 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 12, Trigonometry
 Standard 2:
 - `cibe642c8e`: "Construct and interpret compass radial surveys and solve related problems"
 
-Also served here by ruling 43 (owned by r07 and r08 in the route; named in the description as covered, not as this video's points): "Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale" (the radial survey case) and "Calculate the volume of rainfall over an area using V = Ah, where V is the volume, A is the area of land and h is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale" (the radial survey case).
+Also served here as callbacks by ruling 43, not quoted (ruling 61: the description quotes only t10's own point): the radial survey case of r07's perimeter and area point and of r08's rainfall volume point. Both points are owned by r07 and r08 in the route and are named in the narration only (scenes 1 and 6).
 
 Standard 1: no matching content point.
 
@@ -38,7 +52,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Stage changes (standard item 2).** t09's frame and the field book (1); construction (2); angles at O (3); g01 board (4); boundary and perimeter (5); rain (6); framed card (7); question cards (8 to 11); four strand cards for t11 (12); key notes (13).
 - **Memory aid.** Framed card: "Bearings in, angles at O out, check 360°." Key line: "Each triangle: ½ab sin C for area, the cosine rule for a fence."
 - **Visual surprise.** The paddock's outline appears only when the last corner is joined: the shape was hidden in the table all along.
-- **Plain meanings at first use.** Radial survey ("from one point inside the land, the direction and distance to each corner"); compass radial survey ("the directions are true bearings from a compass"); field book ("the table where the readings are written"); perimeter (recalled from r07: "the distance around the boundary").
+- **Plain meanings at first use.** Radial survey ("from one point inside the land, the direction and distance to each corner"); compass radial survey ("the directions are true bearings from a compass", said in scene 1 in Revision 2); field book ("the table where the readings are written"); perimeter (recalled from r07: "the distance around the boundary").
 - **Mistake scene:** none separate. Subtracting straight across north (3 crossed, A1 crossed); a bearing as the angle (4 crossed); trusting 360° as proof (3 said); rounding each triangle (4 said); 18 for 0.018 (A2 crossed).
 - **Cause chain taught, in order:** (1) a bearing and a distance fix where each corner is, so the table holds the whole shape, which a scale drawing shows (1, 2); (2) two neighbouring rays and their angle make a triangle with O; both bearings are measured from the same north, so the angle between the rays is their difference (3); (3) across north the clockwise turn wraps past 360°, so it is the part up to north plus the part after it (3); (4) the angles fill the full turn, so they add to 360°, but a misread bearing would still give 360° (3); (5) each triangle has two sides and the angle between them, so ½ab sin C, and the land is all the triangles together (4); (6) the same two sides and angle give the boundary between them by the cosine rule (5); (7) rain stands at one depth over the whole area, so V = Ah, with h in metres to match square metres (6).
 - **Entry knowledge (route):** t04 (true bearings); t08 (cosine rule); t09 (½ab sin C); r07 (radial surveys named); r08 (V = Ah); r05 (scale drawings). Recalled in a phrase or grey chip.
@@ -64,9 +78,9 @@ Handoff: math-s12-t11: "four triangles from the topic: which rule fits?"
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bearings blue; distances ink; angles at O amber; area chips pale blue; boundary teal; rain teal with depth amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the survey we left for later
-> Remember this? A radial survey, from the land and rainfall videos. It needed triangle rules, and now we have them. Here's how one works. A surveyor stands at one point inside the land, called O. For each corner, they write down just two things, the true bearing of that corner from O, and its distance. Here's a farm paddock with four corners, A, B, C and D, and its field book. The same idea works for any number of corners. So how does a compass radial survey map this paddock, and find its **area**?
+> Remember this? A radial survey, from the land area video. It needed triangle rules, and now we have them. Later, the storm from the rainfall video comes back too. Here's how one works. A surveyor stands at one point inside the land, called O. For each corner, they write down just two things, the true bearing of that corner from O, and its distance. Because the directions come from a **compass** as true bearings, it's called a compass radial survey. Here's a farm paddock with four corners, A, B, C and D, and its field book. The same idea works for any number of corners. So how does a compass radial survey map this paddock, and find its **area**?
 
-Visual: opens on t09's final frame exactly. On the first sentence the "Next" chip and the three icons fade; the five-sided sketch pulses. On "point inside the land" O rings, hand tag "one point, every corner". On "true bearing" one ray's bearing box fills blue with a sample "?°T" and its distance box ink "? m", hand tag "bearing and distance". On "four corners" the sketch slides to a 300 px badge (top left) and a coded field book table writes on at the left, 44 px: "Corner | True bearing | Distance": "A | 041°T | 85 m", "B | 128°T | 70 m", "C | 214°T | 96 m", "D | 305°T | 60 m" (bearings blue); the farm plate as a 300 px badge beside it. On "area" heading "Compass radial surveys" writes on, and the chip "how much land, from one point?" moves to the top right.
+Visual: opens on t09's final frame exactly. On the first sentence the "Next" chip and the three icons fade; the five-sided sketch pulses, and a grey chip "r07: land area" writes under "from Ratios and rates". On "storm" a small grey chip "r08: rainfall" appears beside it and fades after the sentence. On "point inside the land" O rings, hand tag "one point, every corner". On "true bearing" one ray's bearing box fills blue with a sample "?°T" and its distance box ink "? m", hand tag "bearing and distance". On "compass" a small coded compass needle swings to north at O and the bearing box's "°T" rings blue, hand tag "compass: true bearings". On "four corners" the sketch slides to a 300 px badge (top left) and a coded field book table writes on at the left, 44 px: "Corner | True bearing | Distance": "A | 041°T | 85 m", "B | 128°T | 70 m", "C | 214°T | 96 m", "D | 305°T | 60 m" (bearings blue); the farm plate as a 300 px badge beside it. On "area" heading "Compass radial surveys" writes on, and the chip "how much land, from one point?" moves to the top right.
 
 ### 2. drawing the survey to scale
 > First, draw it. Use a scale of one centimetre to ten metres. Mark O, and draw a north line. Corner A is on a bearing of zero four one degrees true, so turn the protractor forty-one degrees clockwise from north, and draw the ray. A is eighty-five metres away, so measure eight point five centimetres along **it**. Do the same for B, C and D, at their bearings and **lengths**. Then join the corners in order, A to B to C to D, and back to A. There's the paddock, built from the **table**.
@@ -189,11 +203,11 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `t/verify.py`, `python -I`
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `t/count.py`, the method of `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632): **5,709 characters**, 13 scene headings. Characters per scene (1 to 13): 498, 475, 788, 795, 544, 468, 215, 443, 341, 455, 379, 233, 75.
+Revision 2, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-resolve-standard-t2/count.py`, which reproduces e08's 5,632): **5,855 characters** (Revision 1: 5,709), 13 scene headings. Characters per scene (1 to 13): 644, 475, 788, 795, 544, 468, 215, 443, 341, 455, 379, 233, 75.
 
-At 13.3 characters per second the speech is about 429 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the construction (2), the arcs and 360° ring (3), the stacking chips (4), the side table (5) and the rain slab (6) about 25 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 519 s**, about 51 s under the cap. Feedback speech: about 26 s and 29 s.
+At 13.3 characters per second the speech is about 440 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the construction (2), the arcs and 360° ring (3), the stacking chips (4), the side table (5) and the rain slab (6) about 25 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 530 s**, about 40 s under the cap. Feedback speech: about 26 s and 29 s.
 
-Reserve trims if the voiced take runs long (not expected): scene 1's "The same idea works for any number of corners." (about 3 s; the memory card still shows it); scene 5's perimeter sentence shortened to "Add all four fences for the perimeter, about four hundred and forty-five metres." (about 3 s); scene 3's "They do." (about 1 s).
+Reserve trims if the voiced take runs long (not expected): scene 1's "The same idea works for any number of corners." (about 3 s; the memory card still shows it); scene 1's "Later, the storm from the rainfall video comes back too." (about 4 s; scene 6 still credits the rainfall video); scene 5's perimeter sentence shortened to "Add all four fences for the perimeter, about four hundred and forty-five metres." (about 3 s); scene 3's "They do." (about 1 s).
 
 ## Scene list and build ids
 
@@ -224,7 +238,7 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 Inspected before choosing (18 Nov 2026): no radial-survey or sprinkler plate exists (listed `public/assets/maths/`); the pack's optional council-park plate is not needed (A1 is a table and a sketch, as HSC papers set it).
 
-Need: no new plate. Shared: the farm top-view plate (t04's) as a badge; r07's coded radial sketch; r08's coded rain gauge and rain slab.
+Need: no new plate. Shared: the farm top-view plate `ms12-farm-top-v1.png` (briefed in t03) as a badge; r07's coded radial sketch; r08's coded rain gauge and rain slab.
 
 Coded: the field book, the survey, protractor and ruler, arcs and ring, triangles and chips, the side table, the rain slab, the board, question cards, the countdown, hand tags, the framed card and key notes, the four strand cards.
 
@@ -236,13 +250,13 @@ Additions (kit-needs row t10): **RadialSurvey** (the strand's main new part, as 
 
 ## Codex asset brief (Maths S12 T10)
 
-No new plate. Before the t10 build, confirm r07's radial sketch component and r08's rain slab exist in the built kit (or are built first), and that the farm plate reads as a 300 px badge. Report in `status.md`.
+No new plate. Before the t10 build, confirm r07's radial sketch component and r08's rain slab exist in the built kit (or are built first), and that `ms12-farm-top-v1.png` reads as a 300 px badge. Report in `status.md`.
 
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with a CAS, and every value in narration, screen text, attempts and key notes against "Numbers used".
-2. Confirm the syllabus quote matches the route-inputs JSON exactly and is labelled Standard 2 only, and the two ruling 43 lines quote r07's and r08's points exactly.
+2. Confirm only `cibe642c8e` is quoted, that it matches the route-inputs JSON exactly and is labelled Standard 2 only (ruling 61: r07's and r08's points are callbacks in the narration, not quoted).
 3. Confirm the site's values are kept (87°, 86°, 91°, 96°; 11 738 m²; 1.17 ha; 107.25 m) and the scale drawing is 1 cm : 10 m.
 4. Confirm the rain uses r08's wording (V = Ah, h the depth of rain in metres) and 25 mm (r08's storm).
 5. Confirm every bearing is spoken "... degrees true" and every angle with "degrees", and areas are rounded only at the end.
@@ -262,19 +276,19 @@ From one point inside a paddock, a surveyor records the true bearing and distanc
 Mathematics Standard 11-12 (2024 syllabus), Year 12, Trigonometry. For Standard 2.
 Syllabus content, Standard 2 (NSW Mathematics Standard 11-12, 2024):
 "Construct and interpret compass radial surveys and solve related problems"
-Also the radial survey parts of: "Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale" and "Calculate the volume of rainfall over an area using V = Ah, where V is the volume, A is the area of land and h is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae
 
-Builds on: Area of Any Triangle: A = ½ab sin C, the cosine rule, true bearings, and the land area and rainfall videos. Next: the choosing-the-rule video (title set by its design).
+Builds on: Area of Any Triangle: A = ½ab sin C, the cosine rule, true bearings, and the land area and rainfall videos. Next: Choosing the Trig Rule: Bearings and Elevation.
 
 #Year12Maths #MathsStandard #RadialSurvey #HSCScience
 
 ## Open decisions
 
-- **1. Five corners to four (root).** t09's final frame shows r07's five-sided sketch (ruling 43's callback); t10 teaches on the site's four-cornered paddock and returns the five-sided sketch only in the memory card ("any number of corners"). If root wants the five-sided block itself surveyed, a five-row field book replaces the site's paddock and the video runs about 40 s longer.
+- **1. Five corners to four (root).** Closed by ruling 61 (accepted). Revision 1 text: t09's final frame shows r07's five-sided sketch (ruling 43's callback); t10 teaches on the site's four-cornered paddock and returns the five-sided sketch only in the memory card ("any number of corners"). If root wants the five-sided block itself surveyed, a five-row field book replaces the site's paddock and the video runs about 40 s longer.
 - **2. Perimeter by table.** Three of the four boundaries are shown as results, not worked (pack decision); the method is the one worked for AB.
-- **3. Ruling 43 lines in the description.** The description quotes r07's and r08's points as "also the radial survey parts of", without codenames (ruling 16). Root may prefer to name them only in the body text.
+- **3. Ruling 43 lines in the description.** Closed in Revision 2 by ruling 61 (root's decision 6): the description quotes only `cibe642c8e`; r07 and r08 are named in the narration as callbacks. Revision 1 text, kept for the record: the description quoted r07's and r08's points as "also the radial survey parts of", without codenames (ruling 16).
 
 ## Review notes
 
+- Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" at the top). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t04, t08, t09, r07 and r08; check that the construction is clear at playback speed, that the across-north angle is caused (two parts) and the 360° check's limit is plain, that the board shows one triangle at a time, that the rain is a callback rather than a re-teach, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
