@@ -1,0 +1,1705 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-19",
+ "brief": "Maths Standard bivariate data and probability (root request, 19 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 12 Standard 2 and Standard 1 Bivariate data analysis and Relative frequency and probability pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year12Standard2Points": 25,
+  "year12Standard1Points": 19,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 19 November 2026 and match the crosswalk inventory. Bivariate data analysis lessons 04 to 11 (numbered L01 to L08 on the page, MS-69) and Relative frequency and probability lessons 01 to 04 use data-step-id sections and label worked examples we-1 to we-3 (bivariate lesson11 has we-1 only)."
+ },
+ "recommendations": [
+  "Run b01 to b07 then p01 to p08 after Trigonometry (root rulings 28 and 46: playlist positions 62 to 76, as the outline table). Standard 2 students take all fifteen. Standard 1 students take b01 to b04, b07, p01 to p03, p05, p06 and p08 (ten videos); b05, b06, p04 and p07 are Standard 2 only. Split parts, if root accepts them, share their number.",
+  "Joins: b01 opens on t11's final frame (ruling 64) and confirms the beach kiosk board as its opening picture (ruling 59 closed by this pack): headings 'top temperature (°C)' and 'ice creams sold', five rows filled in b01 with the site's own lesson08 activity data (18, 22, 25, 28, 32°C; 40, 60, 75, 90, 120 ice creams), so one dataset carries b01 to b07. t05's Standard 1 panel is the same board. b07 ends on the kiosk board with tomorrow's forecast ('20% chance of rain'), which opens p01. p08 ends two ways: Standard 2 to math-s12-z01 (its pack's bakery loaves, accepted here), Standard 1 to the end of Year 12 content.",
+  "Two-route final frames (ruling 38 pattern): b04 (Standard 2 to b05, Standard 1 to b07), p03 (Standard 2 to p04, Standard 1 to p05), p06 (Standard 2 to p07, Standard 1 to p08) and p08 (Standard 2 to z01, Standard 1 done). Where a Standard 2 video rejoins the Standard 1 path (b06 to b07, p04 to p05, p07 to p08), its final frame repeats the Standard 1 panel exactly, so the next video has one opening.",
+  "Outline problem (entry knowledge): the brief asks for Year 11 Standard data and probability points, but the 2024 Year 11 Standard course has no probability focus area. p01 assumes Stage 4 and 5 chance only (as t01 did for trigonometry). The outline's dependency list (b01: cic8a0b6e9; b04: ci94641a48, cic0a28004, ci4777471a) is right; b07 also builds on ci4777471a and ci1b3cf962 (math-s11-l04), which the list attaches only to b04.",
+  "Notation (decision for Claude): the site writes the line as y = mx + b (lesson08) and y = a + bx (lesson09) and says 'the HSC uses y = a + bx'; the 2024 bivariate points name no form, and Year 11 teaches y = mx + c (ciafd3b572). Suggested: y = mx + c on screen throughout, with the calculator's A + Bx read as 'A is the intercept, B is the gradient' (MS-63).",
+  "Pace flags (gentler Standard pace): b04 at risk (suggested split b04a, both courses, and b04b, Standard 2 only); b02, b06, p03, p04, p07 and p08 to watch; b01, b03, b05, b07, p01, p02 and p05 fit 6 to 9 minutes; p06 is short (no padding).",
+  "Advanced reuse (ruling 7): the Year 11 Advanced probability kit (OutcomeArray, ProbabilityTree, VennDiagram, TwoWayTable in a11-prob-parts.tsx; RollSimulator, ProbabilityBars, SpinnerSectors and OutcomeGrid in prob-parts.tsx; RunningMeanTrace in spread-parts.tsx; seededRandom and tallyOf in stat-math.ts) covers the probability strand. Advanced anchors are not reused (water polo caps, two-scoop ice cream cones, a library, a gumball machine, a hotel's rooms, traffic lights, a food delivery app, two alarms, mandarins, a homemade spinner, a theme-park ride, a board-game die rolled 200 times, a tear-off calendar, pet insurance, sprinters, a parcel tracker, a cookie, a bus every ten minutes, a running playlist, chip bags, apples, fishing catches, a bottle filler). No Advanced video teaches scatter plots, correlation or regression, so the bivariate strand needs a new ScatterBoard.",
+  "No gambling (ruling 6): probability uses neutral objects (marbles, coins, dice, spinners, counters) and everyday events (forecasts, rideshares, canteen choices, sport shots). The site's raffle (lesson03 SA 2) and 52-card deck (lesson01 we-2) are left out. All new data in the packs are invented and labelled as such; no real dataset is quoted without a dated source.",
+  "Site findings: MS-60 to MS-69 appended to docs/production/claude-pm/site-corrections-maths-standard.md, section 10 (three strength scales for r, a categorical variable given an r, a missing one-variable contrast and non-linear form, mixed line notation with b meaning two things, a pause card contradicting the beyond-syllabus notice, an impossible baby-height model, an electricity model that runs the wrong way for summer, a muddled causal checklist and drowning contexts, P(B|A) notation, gambling and medical contexts, and mismatched lesson numbering and unsourced hooks). Every site worked value was recalculated and matches.",
+  "Kit needs for both strands are in docs/production/claude-pm/checks/maths-standard-kit-needs-b-p.md; the main new part is a ScatterBoard (table rows lifting into points, form, direction and strength cues, a line by eye with an above-and-below counter, the mean point, a digital trendline, an r dial, interpolation and extrapolation zones), with a STAT-mode option on StudioToolPanel and a ChanceLine and ClaimCard for the probability strand."
+ ],
+ "part": 6,
+ "covers": "math-s12-b01 to math-s12-b07 (Year 12 Bivariate data analysis) and math-s12-p01 to math-s12-p08 (Year 12 Relative frequency and probability), Standard 2 and Standard 1",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 12,
+   "entries": [
+    {
+     "id": "math-s12-b01",
+     "playlistOrder": 62,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "When do we need bivariate data, and which variable is independent?",
+     "syllabusActionIds": [
+      "ci91fdb0d7",
+      "cibbeaeac3",
+      "cif80a9d87",
+      "ci2a5afecd"
+     ],
+     "standard2ActionIds": [
+      "ci91fdb0d7",
+      "cibbeaeac3"
+     ],
+     "standard1ActionIds": [
+      "cif80a9d87",
+      "ci2a5afecd"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci91fdb0d7",
+       "course": "Year 12 Standard 2",
+       "text": "Distinguish between situations involving one-variable data and bivariate data and explain when each is needed",
+       "sourceHtml": "<p>Distinguish between situations involving one-variable <a data-item-id=\"5551f3b1-f9bb-459c-a1ac-01931cc54368\" href=\"\">data</a> and <a data-item-id=\"66c243ea-7db9-44a4-a669-1308d4c88ea6\" href=\"\">bivariate data</a> and explain when each is needed</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Recorded as covered, but lesson04 defines bivariate data without ever contrasting it with one-variable data or saying when each is needed; b01 adds that contrast from the syllabus (MS-61)."
+      },
+      {
+       "id": "cibbeaeac3",
+       "course": "Year 12 Standard 2",
+       "text": "Identify the independent and dependent variables within a bivariate dataset where appropriate",
+       "sourceHtml": "<p>Identify the <a data-item-id=\"34ff576c-150f-4dd1-b2cb-cfe20d7d7827\" href=\"\">independent</a> and <a data-item-id=\"504084b2-e45a-4439-baf4-7db9bf721604\" href=\"\">dependent variables</a> within a bivariate <a data-item-id=\"ee4c5696-bb05-4660-b565-cf5ec9dbb64c\" href=\"\">dataset</a> where appropriate</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cif80a9d87",
+       "course": "Year 12 Standard 1",
+       "text": "Distinguish between situations involving one-variable data and bivariate data and explain when each is needed",
+       "sourceHtml": "<p>Distinguish between situations involving one-variable <a data-item-id=\"5551f3b1-f9bb-459c-a1ac-01931cc54368\" href=\"\">data</a> and <a data-item-id=\"66c243ea-7db9-44a4-a669-1308d4c88ea6\" href=\"\">bivariate data</a> and explain when each is needed</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": "As ci91fdb0d7 (MS-61)."
+      },
+      {
+       "id": "ci2a5afecd",
+       "course": "Year 12 Standard 1",
+       "text": "Identify the independent and dependent variables within a bivariate dataset where appropriate",
+       "sourceHtml": "<p>Identify the <a data-item-id=\"34ff576c-150f-4dd1-b2cb-cfe20d7d7827\" href=\"\">independent</a> and <a data-item-id=\"504084b2-e45a-4439-baf4-7db9bf721604\" href=\"\">dependent variables</a> within a bivariate <a data-item-id=\"ee4c5696-bb05-4660-b565-cf5ec9dbb64c\" href=\"\">dataset</a> where appropriate</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+      "sectionIds": [
+       "orient-bivariate-data",
+       "construct-scatterplots",
+       "interpret-points-context",
+       "work-scatterplot-examples",
+       "apply-bivariate-foundations",
+       "answer-bivariate-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "e0f45f2c42a726eb6e800d9009a241fe57167702542e7e9ea58063cfa88cb665"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+       "sectionIds": [
+        "orient-bivariate-data",
+        "construct-scatterplots",
+        "interpret-points-context",
+        "work-scatterplot-examples",
+        "apply-bivariate-foundations",
+        "answer-bivariate-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "e0f45f2c42a726eb6e800d9009a241fe57167702542e7e9ea58063cfa88cb665"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-d05",
+       "text": "cic8a0b6e9: numerical and categorical variables (outline dependency list); ci038853db discrete and continuous, recalled in a phrase."
+      },
+      {
+       "source": "math-s11-d11",
+       "text": "ciaf232c38: mean, median and mode, and math-s11-d06 to d16 displays (histogram, dot plot, box plot) as the one-variable tools, recalled in a grey chip."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48: reading a point (x, y) on a graph."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t11",
+      "math-s12-t05"
+     ],
+     "startBoundary": "Opens on t11's final frame exactly (ruling 64): the kiosk plate ms12-beach-kiosk-v1.png, the chalk board with the headings 'top temperature (°C)' and 'ice creams sold', five empty ruled rows, no title, no values, the chip 'hotter day, more ice creams?', the grey chip 'Trigonometry: done', the label 'Next: bivariate data', chips 'Next' and '?', the group scaled by 1.3. Standard 1 viewers arrive from t05's right panel, the same board with 'Right-angled triangles: done'; the grey chip and label fade on the first sentence, so both arrivals look the same within a second. This pack confirms the board (ruling 59).",
+     "stopBoundary": "One-variable data (one measurement per day: the ice creams alone, answered with Year 11 tools) against bivariate data (two measurements on each day, kept as a pair); when each is needed (a question about one quantity's typical value or spread, or a question about whether two quantities go together); the independent variable (the one that may explain or predict, on the horizontal axis) and the dependent variable (the response, on the vertical axis), 'where appropriate': some pairs have no natural direction, so choose by what is being predicted (site we-2); one pair as one point, read back in words with units. Stops before plotting the whole set and describing it (b02).",
+     "nextHandoff": "math-s12-b02",
+     "advancedReuseCandidates": [],
+     "recommendation": "Confirm the kiosk board as b01's opening picture and fill its five rows with the beach kiosk board (the site's lesson08 activity data, now the kiosk's five days: 18°C 40, 22°C 60, 25°C 75, 28°C 90, 32°C 120 ice creams), so one dataset runs through b01 to b07. Keep the site's points (4, 72), (28, 350) and (15, 42) as reading examples, the café's hot coffee (12 to 28°C, 95 to 38 cups) for an independent-variable decision, and the shoe size and reading speed case for 'where appropriate'. One-variable against bivariate is not taught on the site (MS-61): original teaching from the syllabus. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b02",
+     "playlistOrder": 63,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we draw a scatter plot and describe its form, direction and strength?",
+     "syllabusActionIds": [
+      "ci7511e8f1",
+      "ci8c04e655",
+      "ci2b7391e9",
+      "ci865ac4ef",
+      "ci999efce4",
+      "cic75eb64e"
+     ],
+     "standard2ActionIds": [
+      "ci7511e8f1",
+      "ci8c04e655",
+      "ci2b7391e9"
+     ],
+     "standard1ActionIds": [
+      "ci865ac4ef",
+      "ci999efce4",
+      "cic75eb64e"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci7511e8f1",
+       "course": "Year 12 Standard 2",
+       "text": "Represent a bivariate dataset using a scatter plot",
+       "sourceHtml": "<p>Represent a bivariate dataset using a <a data-item-id=\"e086bbae-f0eb-443b-87ae-04c8baec965f\" href=\"\">scatter plot</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci8c04e655",
+       "course": "Year 12 Standard 2",
+       "text": "Describe the form of a dataset as linear or non-linear based on the association between two variables",
+       "sourceHtml": "<p>Describe the form of a dataset as linear or non-linear based on the <a data-item-id=\"3e30f011-13ea-496e-a69f-f3e601b1e0ae\" href=\"\">association</a> between two variables</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Partial in practice: lessons 04 and 05 describe direction and strength and say 'linear', but no example shows a non-linear (curved) form, and a lesson05 'does not belong' item treats 'Curved' as not a description (MS-62). b02 adds one curved dataset."
+      },
+      {
+       "id": "ci2b7391e9",
+       "course": "Year 12 Standard 2",
+       "text": "Describe the strength of a linear relationship between two variables as strong, moderate or weak, and its direction as positive or negative",
+       "sourceHtml": "<p>Describe the strength of a <a data-item-id=\"a3428885-8f27-454e-901c-b4a83a4f9be8\" href=\"\">linear relationship</a> between two variables as strong, moderate or weak, and its direction as positive or negative</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci865ac4ef",
+       "course": "Year 12 Standard 1",
+       "text": "Represent a bivariate dataset using a scatter plot",
+       "sourceHtml": "<p>Represent a bivariate dataset using a <a data-item-id=\"e086bbae-f0eb-443b-87ae-04c8baec965f\" href=\"\">scatter plot</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci999efce4",
+       "course": "Year 12 Standard 1",
+       "text": "Describe the form of a dataset as linear or non-linear based on the association between two variables",
+       "sourceHtml": "<p>Describe the form of a dataset as linear or non-linear based on the <a data-item-id=\"3e30f011-13ea-496e-a69f-f3e601b1e0ae\" href=\"\">association</a> between two variables</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": "As ci8c04e655 (MS-62)."
+      },
+      {
+       "id": "cic75eb64e",
+       "course": "Year 12 Standard 1",
+       "text": "Describe the strength of a linear relationship between two variables as strong, moderate or weak, and its direction as positive or negative",
+       "sourceHtml": "<p>Describe the strength of a <a data-item-id=\"a3428885-8f27-454e-901c-b4a83a4f9be8\" href=\"\">linear relationship</a> between two variables as strong, moderate or weak, and its direction as positive or negative</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+      "sectionIds": [
+       "construct-scatterplots",
+       "read-scatter-patterns",
+       "work-scatterplot-examples",
+       "apply-bivariate-foundations"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "e0f45f2c42a726eb6e800d9009a241fe57167702542e7e9ea58063cfa88cb665"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson04.sa.html",
+       "sectionIds": [
+        "construct-scatterplots",
+        "read-scatter-patterns",
+        "work-scatterplot-examples",
+        "apply-bivariate-foundations"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "e0f45f2c42a726eb6e800d9009a241fe57167702542e7e9ea58063cfa88cb665"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson05.sa.html",
+       "sectionIds": [
+        "orient-correlation-language",
+        "identify-correlation-direction",
+        "judge-correlation-strength",
+        "describe-correlation-fully",
+        "work-correlation-examples",
+        "apply-correlation-language",
+        "answer-correlation-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "cc3e13287cf73ec1eefa4b9836449711f760745f75392af9133574703cf95945"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-b01",
+       "text": "ci91fdb0d7, cibbeaeac3 (S1: cif80a9d87, ci2a5afecd): bivariate pairs, independent on x, a pair as a point."
+      },
+      {
+       "source": "math-s11-d18",
+       "text": "ci72ffda24: clusters, gaps and outliers, recalled in a phrase for the unusual point."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ciafd3b572: a straight line on a graph, for 'close to a straight line'."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b01"
+     ],
+     "startBoundary": "b01's final frame (proposed): the kiosk board full, beside empty axes 'top temperature (°C)' and 'ice creams sold', the first row lifting off the board as a point: 'what shape do the five days make?'.",
+     "stopBoundary": "Plot a bivariate dataset on labelled axes with scales that fit the data (not starting at zero when the values sit in a narrow band); form: linear (the points hug a straight line) or non-linear (a curve); direction: positive, negative or none; strength of a linear pattern: strong, moderate or weak, judged by how close the points sit to a straight line, not by how steep it is; a full sentence with both variable names ('there is a strong positive linear relationship between top temperature and ice creams sold'); an outlier named in context. Not taught: r (b05) and causation (b03).",
+     "nextHandoff": "math-s12-b03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's study-hours data (1 to 5 h, 45 to 80%) as the first plot, the café's hot coffee for a strong negative, and the site's lesson05 descriptions (we-2 matching, we-3 moderate positive). Add one non-linear set from the syllabus (MS-62; invented: a new café's weekly customers levelling off). Pace: watch (plotting plus three descriptors); trim the second plot before splitting.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b03",
+     "playlistOrder": 64,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "Does correlation mean one thing causes the other?",
+     "syllabusActionIds": [
+      "ci467160a5",
+      "cid820b203",
+      "ci3993719b",
+      "ci022a6fb8"
+     ],
+     "standard2ActionIds": [
+      "ci467160a5",
+      "cid820b203"
+     ],
+     "standard1ActionIds": [
+      "ci3993719b",
+      "ci022a6fb8"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci467160a5",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the difference between variables that show correlation and those that have a causal relationship",
+       "sourceHtml": "<p>Explain the difference between <a data-item-id=\"c3a28ce2-a59d-4443-bfa3-4b11afa134f2\" href=\"\">variables</a> that show <a data-item-id=\"ad3654f3-f298-4dbb-9b3a-64506223781c\" href=\"\">correlation</a> and those that have a <a data-item-id=\"5487331f-2bd9-4ad2-8613-fa8434620413\" href=\"\">causal</a> relationship</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; lesson07 uses drownings and deaths as its main contexts (owner note MS-64), which the videos replace."
+      },
+      {
+       "id": "cid820b203",
+       "course": "Year 12 Standard 2",
+       "text": "Analyse relationships between independent and dependent variables that may be described as causal",
+       "sourceHtml": "<p>Analyse relationships between independent and dependent variables that may be described as causal</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci3993719b",
+       "course": "Year 12 Standard 1",
+       "text": "Explain the difference between variables that show correlation and those that have a causal relationship",
+       "sourceHtml": "<p>Explain the difference between <a data-item-id=\"c3a28ce2-a59d-4443-bfa3-4b11afa134f2\" href=\"\">variables</a> that show <a data-item-id=\"ad3654f3-f298-4dbb-9b3a-64506223781c\" href=\"\">correlation</a> and those that have a <a data-item-id=\"5487331f-2bd9-4ad2-8613-fa8434620413\" href=\"\">causal</a> relationship</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": "As ci467160a5 (MS-64)."
+      },
+      {
+       "id": "ci022a6fb8",
+       "course": "Year 12 Standard 1",
+       "text": "Analyse relationships between independent and dependent variables that may be described as causal",
+       "sourceHtml": "<p>Analyse relationships between independent and dependent variables that may be described as causal</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson07.sa.html",
+      "sectionIds": [
+       "orient-causation-correlation",
+       "distinguish-causal-claims",
+       "identify-confounders",
+       "evaluate-causal-evidence",
+       "work-causation-examples",
+       "apply-causal-reasoning",
+       "answer-causation-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "69ac1488e2ff9e0255bd5921c00d350e4340d235dd6b0f53194142e198cd0177"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson07.sa.html",
+       "sectionIds": [
+        "orient-causation-correlation",
+        "distinguish-causal-claims",
+        "identify-confounders",
+        "evaluate-causal-evidence",
+        "work-causation-examples",
+        "apply-causal-reasoning",
+        "answer-causation-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "69ac1488e2ff9e0255bd5921c00d350e4340d235dd6b0f53194142e198cd0177"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-b02",
+       "text": "ci2b7391e9 (S1: cic75eb64e): strength and direction in a full sentence."
+      },
+      {
+       "source": "math-s11-d04",
+       "text": "ci4c7cc505: experiments and observational studies as ways of collecting data, recalled in a phrase."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b02"
+     ],
+     "startBoundary": "b02's final frame (proposed): the kiosk scatter plot (strong positive) with a second column chalked on the board, 'sunscreen sold', rising too: 'do ice creams make people buy sunscreen?'.",
+     "stopBoundary": "Correlation (two variables tend to move together) against causation (changing one makes the other change); three ways a correlation can appear without one causing the other: a third (confounding) variable driving both (hot weather drives ice creams and sunscreen; population drives fire stations and house-fire deaths, site we-1), cause running the other way, and coincidence; a relationship that may be described as causal (a rideshare fare rises with distance because the fare is charged per kilometre); what would support a causal claim (a controlled experiment that changes one thing on purpose). Stops before lines of best fit (b04).",
+     "nextHandoff": "math-s12-b04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Replace the site's ice cream and drowning example (owner note MS-64) with ice creams and sunscreen at the kiosk, both driven by hot weather; keep the site's fire stations (population), shoe size and reading (age) and coffee headline (an observational study). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b04",
+     "playlistOrder": 65,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we draw a line of best fit and read its equation from the graph?",
+     "syllabusActionIds": [
+      "cid27cc8e6",
+      "ci880296d0",
+      "ci1a3b6d30"
+     ],
+     "standard2ActionIds": [
+      "cid27cc8e6",
+      "ci880296d0"
+     ],
+     "standard1ActionIds": [
+      "ci1a3b6d30"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cid27cc8e6",
+       "course": "Year 12 Standard 2",
+       "text": "Create a line of best fit on a scatter plot for a bivariate dataset, by eye and with digital tools",
+       "sourceHtml": "<p>Create a <a data-item-id=\"6c2f8504-5a3a-4f1c-89dd-1d60effc1927\" href=\"\">line of best fit</a> on a scatter plot for a bivariate dataset, by eye and with digital tools</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci880296d0",
+       "course": "Year 12 Standard 2",
+       "text": "Determine and interpret the intercept and gradient of the line of best fit from a given graph to form an equation of the line",
+       "sourceHtml": "<p>Determine and interpret the <a data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" href=\"\">intercept</a> and <a data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" href=\"\">gradient</a> of the line of best fit from a given <a data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" href=\"\">graph</a> to form an <a data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" href=\"\">equation</a> of the line</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; lessons 08 and 09 use three notations (y = mx + b, y = a + bx, y = mx + c), with b meaning the intercept in one and the gradient in the other (MS-63)."
+      },
+      {
+       "id": "ci1a3b6d30",
+       "course": "Year 12 Standard 1",
+       "text": "Create a line of best fit on a scatter plot for a bivariate dataset, by eye and with digital tools",
+       "sourceHtml": "<p>Create a <a data-item-id=\"6c2f8504-5a3a-4f1c-89dd-1d60effc1927\" href=\"\">line of best fit</a> on a scatter plot for a bivariate dataset, by eye and with digital tools</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+      "sectionIds": [
+       "orient-best-fit-lines",
+       "draw-best-fit-line",
+       "read-line-equation",
+       "predict-from-line",
+       "use-digital-fit-tools",
+       "apply-best-fit-lines",
+       "answer-best-fit-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "7707be28d68f12da65dbf15206e29b9058bb91662bd8ca6d626f53f7e51c30a1"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+       "sectionIds": [
+        "orient-best-fit-lines",
+        "draw-best-fit-line",
+        "read-line-equation",
+        "predict-from-line",
+        "use-digital-fit-tools",
+        "apply-best-fit-lines",
+        "answer-best-fit-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "7707be28d68f12da65dbf15206e29b9058bb91662bd8ca6d626f53f7e51c30a1"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48, cic0a28004: gradient (rise over run) and y-intercept from a graph (outline dependency list)."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ciafd3b572: y = mx + c."
+      },
+      {
+       "source": "math-s11-d11",
+       "text": "ciaf232c38: the mean, for the mean point (x̄, ȳ)."
+      },
+      {
+       "source": "math-s12-b02",
+       "text": "ci7511e8f1 (S1: ci865ac4ef): the scatter plot."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b03"
+     ],
+     "startBoundary": "b03's final frame (proposed): the kiosk scatter with a clear ruler lying across the cloud of points: 'one line through the middle?'.",
+     "stopBoundary": "A line of best fit by eye: follow the trend, roughly as many points above as below, through or near the mean point (x̄, ȳ), across the range of the data; the same line from digital tools (a spreadsheet scatter chart with a linear trendline and its equation, or a graphing app); Standard 2: the y-intercept and gradient read from two points on the drawn line, the equation, and what the gradient and intercept mean in context (about 6 more ice creams for each extra degree; −73 ice creams at 0°C means nothing). Reading a prediction off the line is shown once and handed to b07. Two-route final frame: Standard 2 to b05, Standard 1 to b07.",
+     "nextHandoff": "math-s12-b05 (Standard 2); math-s12-b07 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's kiosk activity exactly: mean point (25, 77), the line through (18, 35) and (32, 119), y = 6x − 73, 89 ice creams at 27°C, gradient 6 per degree (three points above, two below, deviations sum to 0); and the site's spreadsheet trendline for the eight students' work hours, y = −1.7x + 89.3 through (9, 74). Notation decision: write lines as y = mx + c (Year 11's ciafd3b572), not the site's y = mx + b (MS-63). Standard 1 owns only ci1a3b6d30 (create the line). Pace: at risk; suggested split b04a (draw the line by eye and with digital tools; both courses; two-route frame) and b04b (equation and meaning from the graph; Standard 2 only), sharing number 65.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b05",
+     "playlistOrder": 66,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What does Pearson's correlation coefficient measure?",
+     "syllabusActionIds": [
+      "ci5401622a"
+     ],
+     "standard2ActionIds": [
+      "ci5401622a"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci5401622a",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate and interpret Pearson’s correlation coefficient (r) for a bivariate dataset using a scientific calculator to quantify the strength of a linear association between the two variables",
+       "sourceHtml": "<div><span>Calculate and interpret <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/48089671-14a6-4b5d-906b-53ea8334820d\" data-item-codename=\"glo_link__mst__pearson_s_correlation_coefficient\" data-item-id=\"48089671-14a6-4b5d-906b-53ea8334820d\" data-item-systemname=\"GLO Link: MST: Pearson’s correlation coefficient\" data-item-type=\"link_glossary\">Pearson’s correlation coefficient</a> (</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>r</mi></math></span><span>) for a bivariate dataset using a scientific calculator to quantify the strength of a linear association between the two variables</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; lesson06 gives three different strength scales for r (MS-60)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson06.sa.html",
+      "sectionIds": [
+       "orient-pearsons-r",
+       "read-r-sign-magnitude",
+       "interpret-r-context",
+       "recognise-r-limitations",
+       "calculate-r",
+       "apply-pearsons-r",
+       "answer-pearson-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "8da067542fa595762ce4f38f929b9535c0374a304c24d7426a8b137fe0154146"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson06.sa.html",
+       "sectionIds": [
+        "orient-pearsons-r",
+        "read-r-sign-magnitude",
+        "interpret-r-context",
+        "recognise-r-limitations",
+        "calculate-r",
+        "apply-pearsons-r",
+        "answer-pearson-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "8da067542fa595762ce4f38f929b9535c0374a304c24d7426a8b137fe0154146"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-b02",
+       "text": "ci8c04e655, ci2b7391e9: form, direction and strength described in words."
+      },
+      {
+       "source": "math-s12-b03",
+       "text": "ci467160a5: correlation is not causation."
+      },
+      {
+       "source": "math-s11-d13",
+       "text": "ci14ad4af7: two-variable calculator statistics follow the same STAT mode used for σ in Year 11."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b04"
+     ],
+     "startBoundary": "b04's Standard 2 panel (proposed): the kiosk scatter with its line of best fit and a dial from −1 to 1 beside it, needle hidden: 'how strong, as one number?'.",
+     "stopBoundary": "Pearson's correlation coefficient r: between −1 and 1; its sign gives the direction and its size the strength of a linear association; r = 1, −1 and 0 as pictures; one strength guide used consistently (|r| from 0.8 strong, 0.5 to 0.8 moderate, below 0.5 weak, as a guide, not a rule); r from a scientific calculator in two-variable STAT mode (enter the pairs, read r), reported to two decimal places; two checks (r stays between −1 and 1; its sign matches the plot); limits: r measures straight-line association only (a curve can have a high r or an r near 0), one outlier can move it a lot, and a large r does not show cause. Stops before the least-squares line (b06).",
+     "nextHandoff": "math-s12-b06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only. Keep the site's eight students (work hours, exam mark) r = −0.8995554..., reported −0.90 (strong negative), its interpretations (0.72, −0.95, matching 0.95, −0.45, 0.02) and its explorer data (r = 0.9857 falling to 0.5816 when the 2-hour student's 45 becomes 95). Use one strength guide (MS-60 records three on the page). Calculator unbranded: menus differ, so name the three things to find (two-variable mode, the data table, the results screen). Kiosk r = 0.9949. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b06",
+     "playlistOrder": 67,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does a calculator or spreadsheet find the least-squares regression line?",
+     "syllabusActionIds": [
+      "ci9bd861ac",
+      "ci3f69b9d4"
+     ],
+     "standard2ActionIds": [
+      "ci9bd861ac",
+      "ci3f69b9d4"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci9bd861ac",
+       "course": "Year 12 Standard 2",
+       "text": "Determine the equation of the least-squares regression line for a bivariate dataset using a scientific calculator",
+       "sourceHtml": "<p>Determine the equation of the <a data-item-id=\"9bdc8ee4-badd-4ad2-8f6e-7ef0ddb58509\" href=\"\">least-squares regression line</a> for a bivariate dataset using a scientific calculator</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; see the notation note on ci880296d0 (MS-63)."
+      },
+      {
+       "id": "ci3f69b9d4",
+       "course": "Year 12 Standard 2",
+       "text": "Use a spreadsheet to construct a scatter plot and the least-squares regression line for a bivariate dataset",
+       "sourceHtml": "<p>Use a spreadsheet to construct a scatter plot and the least-squares regression line for a bivariate dataset</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson09.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson09.sa.html",
+      "sectionIds": [
+       "orient-least-squares",
+       "read-regression-equation",
+       "interpret-regression-gradient",
+       "interpret-regression-intercept",
+       "calculate-regression-line",
+       "apply-least-squares",
+       "answer-regression-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "948f42051ae738969aa5746047525daed596ba5906c1195b0b44a629736b6bb6"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson09.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson09.sa.html",
+       "sectionIds": [
+        "orient-least-squares",
+        "read-regression-equation",
+        "interpret-regression-gradient",
+        "interpret-regression-intercept",
+        "calculate-regression-line",
+        "apply-least-squares",
+        "answer-regression-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "948f42051ae738969aa5746047525daed596ba5906c1195b0b44a629736b6bb6"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson08.sa.html",
+       "sectionIds": [
+        "use-digital-fit-tools"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "7707be28d68f12da65dbf15206e29b9058bb91662bd8ca6d626f53f7e51c30a1"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-b05",
+       "text": "ci5401622a: two-variable STAT mode and r."
+      },
+      {
+       "source": "math-s12-b04",
+       "text": "cid27cc8e6, ci880296d0: a line of best fit by eye, its gradient and intercept in context."
+      },
+      {
+       "source": "math-s11-d07",
+       "text": "cia127389f: spreadsheet graphs (Year 11 spreadsheets, a site gap logged in section 2)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b05"
+     ],
+     "startBoundary": "b05's final frame (proposed): the calculator's results screen for the kiosk data with r lit and two more lines, A and B, still dim: 'what are A and B?'.",
+     "stopBoundary": "The least-squares regression line as the one line a calculator or spreadsheet gives from the data, the same for everyone (in words: it makes the squared vertical gaps from the points as small as possible; no formula); on a scientific calculator: the A + Bx setting, A is the intercept and B the gradient, written as y = A + Bx and as y = mx + c; in a spreadsheet: a scatter chart with a linear trendline and its equation, and SLOPE, INTERCEPT and CORREL with the y range first in SLOPE and INTERCEPT; the mean-point check (the line passes exactly through (x̄, ȳ)); gradient and intercept read in context; comparing it with b04's line by eye. Predictions and their reliability are b07.",
+     "nextHandoff": "math-s12-b07",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only. Keep the site's eight students: A = 89.3, B = −1.7, y = 89.3 − 1.7x, check 89.3 − 1.7 × 9 = 74; CORREL −0.8996; reversed arguments give SLOPE −0.476 and a check cell of 39.94 against 74. Kiosk least-squares line y = −63.09 + 5.60x against the by-eye y = 6x − 73. The site's b = r × s_y ÷ s_x formulas stay out (the site itself calls them beyond the syllabus; MS-65). Pace: watch (calculator and spreadsheet in one video).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-b07",
+     "playlistOrder": 68,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "When can we trust a prediction from a line of best fit?",
+     "syllabusActionIds": [
+      "cic2eef7f5",
+      "cif0057f69"
+     ],
+     "standard2ActionIds": [
+      "cic2eef7f5"
+     ],
+     "standard1ActionIds": [
+      "cif0057f69"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cic2eef7f5",
+       "course": "Year 12 Standard 2",
+       "text": "Examine lines of best fit to make predictions and recognise limitations of interpolation and extrapolation for bivariate datasets within a variety of contexts",
+       "sourceHtml": "<p>Examine lines of best fit to make predictions and recognise limitations of <a data-item-id=\"1b393be2-7d6a-43e2-a2c2-90e460ac7b77\" href=\"\">interpolation</a> and <a data-item-id=\"078bda43-5b72-4881-b52c-4216f23955ac\" href=\"\">extrapolation</a> for bivariate datasets within a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fadb5e412c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cif0057f69",
+       "course": "Year 12 Standard 1",
+       "text": "Examine lines of best fit to make predictions and recognise limitations of interpolation and extrapolation for bivariate datasets within a variety of contexts",
+       "sourceHtml": "<p>Examine lines of best fit to make predictions and recognise limitations of <a data-item-id=\"1b393be2-7d6a-43e2-a2c2-90e460ac7b77\" href=\"\">interpolation</a> and <a data-item-id=\"078bda43-5b72-4881-b52c-4216f23955ac\" href=\"\">extrapolation</a> for bivariate datasets within a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf283a852",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson10.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson10.sa.html",
+      "sectionIds": [
+       "orient-regression-predictions",
+       "use-interpolation",
+       "recognise-extrapolation",
+       "communicate-reliability",
+       "work-prediction-examples",
+       "apply-regression-predictions",
+       "answer-prediction-questions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "5b19f84b3e7b30a36853a5f0e66aa5a412253b3f22a5ef96180339fb2d98f789"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson10.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson10.sa.html",
+       "sectionIds": [
+        "orient-regression-predictions",
+        "use-interpolation",
+        "recognise-extrapolation",
+        "communicate-reliability",
+        "work-prediction-examples",
+        "apply-regression-predictions",
+        "answer-prediction-questions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "5b19f84b3e7b30a36853a5f0e66aa5a412253b3f22a5ef96180339fb2d98f789"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/bivariate-data-analysis/lesson11.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/bivariate-data-analysis/lesson11.sa.html",
+       "sectionIds": [
+        "organise-five-step-analysis",
+        "avoid-analysis-errors",
+        "study-complete-response"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "881f752446de3264f145e7f6127e495984d4d2d0ed9eb60bc320ff55c9728004"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l04",
+       "text": "ci4777471a, ci1b3cf962: interpolate and extrapolate from a linear model, and its limits (outline dependency list)."
+      },
+      {
+       "source": "math-s12-b04",
+       "text": "ci1a3b6d30 (S2: cid27cc8e6): a line of best fit, by eye or digital."
+      },
+      {
+       "source": "math-s12-b06",
+       "text": "ci9bd861ac (Standard 2 only): the least-squares equation; Standard 1 reads predictions from the graph."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b06",
+      "math-s12-b04"
+     ],
+     "startBoundary": "One frame shared by b06's final frame and b04's Standard 1 panel (proposed): the kiosk scatter and its line of best fit (no equation shown), the line running on dashed past both ends, with tags '10°C?' and '45°C?': 'can we trust these?'.",
+     "stopBoundary": "Predict from a line of best fit, by reading the graph (both courses) or by substituting into the equation (Standard 2); interpolation (inside the data's x range) against extrapolation (outside it); why extrapolation is less reliable (the pattern was only seen inside the range; it may bend, level off or stop making sense), and more so the further out; reliability also depends on how strong the relationship is; nonsense as a warning sign (negative ice creams at 10°C); a complete reliability comment (type, reason, strength). Final frame hands to p01.",
+     "nextHandoff": "math-s12-p01",
+     "advancedReuseCandidates": [],
+     "recommendation": "Kiosk: y = 6x − 73 gives 89 at 27°C (interpolation), −13 at 10°C and 197 at 45°C (extrapolation; the data run from 18 to 32°C). Keep the site's y = 42 + 3.5x (data 2 to 9 h): 63% at 6 h, 112% at 20 h; and lesson11 we-1 (y = 84 − 1.5x, 2 to 20 h, 66 at 12 h, strong r = −0.86). The site's electricity example (demand falling as summer heat rises) is not used (MS-67). Standard 1 path: arrives from b04's Standard 1 panel; every prediction has a graph-reading route. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-b07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p01",
+     "playlistOrder": 69,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we measure chance from 0 to 1 and list every possible outcome?",
+     "syllabusActionIds": [
+      "ci2b76fece",
+      "cibe388b4c",
+      "ci035d42a7",
+      "ci5fa76f76",
+      "ci756e932d",
+      "ci69aa1698"
+     ],
+     "standard2ActionIds": [
+      "ci2b76fece",
+      "cibe388b4c",
+      "ci035d42a7"
+     ],
+     "standard1ActionIds": [
+      "ci5fa76f76",
+      "ci756e932d",
+      "ci69aa1698"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci2b76fece",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that probabilities range from 0 (impossible) to 1 (certain) and can be represented as fractions, decimals and percentages",
+       "sourceHtml": "<p>Recognise that probabilities range from 0 (impossible) to 1 (certain) and can be represented as fractions, decimals and percentages</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cibe388b4c",
+       "course": "Year 12 Standard 2",
+       "text": "Identify and define the sample space as the set of all possible outcomes of a chance experiment",
+       "sourceHtml": "<p>Identify and define the sample space as the set of all possible <a data-item-id=\"efd3aeef-e175-4f4d-93ad-3822b32b4130\" href=\"\">outcomes</a> of a <a data-item-id=\"64210efb-82d6-4980-90c4-300255e46d65\" href=\"\">chance</a> <a data-item-id=\"dc261d21-472b-46ba-b2aa-b1e4da8ccc7f\" href=\"\">experiment</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci035d42a7",
+       "course": "Year 12 Standard 2",
+       "text": "Determine the number of outcomes for an experiment",
+       "sourceHtml": "<p>Determine the number of outcomes for an experiment</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci5fa76f76",
+       "course": "Year 12 Standard 1",
+       "text": "Recognise that probabilities range from 0 (impossible) to 1 (certain) and can be represented as fractions, decimals and percentages",
+       "sourceHtml": "<p>Recognise that probabilities range from 0 (impossible) to 1 (certain) and can be represented as fractions, decimals and percentages</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci756e932d",
+       "course": "Year 12 Standard 1",
+       "text": "Identify and define the sample space as the set of all possible outcomes of a chance experiment",
+       "sourceHtml": "<p>Identify and define the sample space as the set of all possible <a data-item-id=\"efd3aeef-e175-4f4d-93ad-3822b32b4130\" href=\"\">outcomes</a> of a <a data-item-id=\"64210efb-82d6-4980-90c4-300255e46d65\" href=\"\">chance</a> <a data-item-id=\"dc261d21-472b-46ba-b2aa-b1e4da8ccc7f\" href=\"\">experiment</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci69aa1698",
+       "course": "Year 12 Standard 1",
+       "text": "Determine the number of outcomes for an experiment",
+       "sourceHtml": "<p>Determine the number of outcomes for an experiment</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "apply-method",
+       "work-examples"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-3"
+      ],
+      "sha256": "0c40604b72edc6425e49660a3cd0f5055fa101111b172de7d44666c0d5bba9f5"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "apply-method",
+        "work-examples"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-3"
+       ],
+       "sha256": "0c40604b72edc6425e49660a3cd0f5055fa101111b172de7d44666c0d5bba9f5"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 4 and 5",
+       "text": "Chance language and simple probability from Years 7 to 10. The 2024 Year 11 Standard course has no probability point, so nothing from Year 11 is assumed (outline dependency list)."
+      },
+      {
+       "source": "math-s11-m01",
+       "text": "cib256693a: percentages, for fraction, decimal and percentage forms (recalled in a phrase)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-b07"
+     ],
+     "startBoundary": "b07's final frame (proposed): the kiosk board with tomorrow's forecast pinned to it, 'top 30°C' and a cloud chip '20% chance of rain': 'what does 20% mean?'.",
+     "stopBoundary": "Probability as a number from 0 (impossible) to 1 (certain) on a chance line, written as a fraction, a decimal or a percentage (with conversions); experiment, trial and outcome; the sample space as the list of all possible outcomes (a die, the site's spinner, the site's bag of 3 red, 5 blue and 2 yellow marbles as ten separate marbles); the number of outcomes for an experiment, by listing, and by multiplying the choices at each step when listing is too long (two coins: 4; a lunch deal of 3 mains and 2 drinks: 6; a 4-digit PIN: 10 000). Stops before P = favourable ÷ total (p02).",
+     "nextHandoff": "math-s12-p02",
+     "advancedReuseCandidates": [
+      "math-a11-s04"
+     ],
+     "recommendation": "Keep the site's marble bag (n(S) = 10), die (S = {1, 2, 3, 4, 5, 6}), two coins (HH, HT, TH, TT) and the 3/5 = 0.6 = 60% conversion. The forecast chip opens the video; its exact meaning needs a dated Bureau of Meteorology source before it is narrated (Codex; the BOM site refuses automated reads). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p02",
+     "playlistOrder": 70,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do we find a probability from equally likely outcomes, and the chance it does not happen?",
+     "syllabusActionIds": [
+      "ci6224eb8c",
+      "ci566abb19",
+      "ci7cb75229",
+      "ciefced297"
+     ],
+     "standard2ActionIds": [
+      "ci6224eb8c",
+      "ci566abb19"
+     ],
+     "standard1ActionIds": [
+      "ci7cb75229",
+      "ciefced297"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci6224eb8c",
+       "course": "Year 12 Standard 2",
+       "text": "Express the probability of an event that has a finite number of equally likely outcomes, as P(event) = (number of favourable outcomes)/(total number of outcomes)",
+       "sourceHtml": "<div><span>Express the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-codename=\"glo_link__shared__probability\" data-item-id=\"73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-systemname=\"GLO Link: SHARED: probability\" data-item-type=\"link_glossary\">probability</a> of an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-codename=\"glo_link__shared__event\" data-item-id=\"c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-systemname=\"GLO Link: SHARED: event\" data-item-type=\"link_glossary\">event</a> that has a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-codename=\"glo_link__shared__finite\" data-item-id=\"e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-systemname=\"GLO Link: SHARED: finite\" data-item-type=\"link_glossary\">finite</a> number of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-codename=\"glo_link__shared__equally_likely_outcomes\" data-item-id=\"aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-systemname=\"GLO Link: SHARED: equally likely outcomes\" data-item-type=\"link_glossary\">equally likely outcomes</a>, as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">P </mi><mfenced separators=\"|\"><mrow><mi>event</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mi>number of favourable outcomes</mi></mrow><mrow><mi>total number of outcomes</mi></mrow></mfrac></math></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci566abb19",
+       "course": "Year 12 Standard 2",
+       "text": "Apply P(an event does not occur) = 1 - P(the event does occur) to calculate the probability of the complement of an event",
+       "sourceHtml": "<div><span>Apply </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">P </mi><mfenced separators=\"|\"><mrow><mi>an event does not occur</mi></mrow></mfenced><mo>=</mo><mn>1</mn><mo>-</mo><mi mathvariant=\"italic\">P </mi><mfenced separators=\"|\"><mrow><mi>the event does occur</mi></mrow></mfenced></math></span><span> to calculate the probability of the complement of an event</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci7cb75229",
+       "course": "Year 12 Standard 1",
+       "text": "Express the probability of an event that has a finite number of equally likely outcomes, as P(event) = (number of favourable outcomes)/(total number of outcomes)",
+       "sourceHtml": "<div><span>Express the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-codename=\"glo_link__shared__probability\" data-item-id=\"73bdfca6-7555-40ec-a1b7-0e69343318ac\" data-item-systemname=\"GLO Link: SHARED: probability\" data-item-type=\"link_glossary\">probability</a> of an <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-codename=\"glo_link__shared__event\" data-item-id=\"c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-systemname=\"GLO Link: SHARED: event\" data-item-type=\"link_glossary\">event</a> that has a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-codename=\"glo_link__shared__finite\" data-item-id=\"e5a0d83e-6a21-4938-8c8e-9fed094a9cde\" data-item-systemname=\"GLO Link: SHARED: finite\" data-item-type=\"link_glossary\">finite</a> number of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-codename=\"glo_link__shared__equally_likely_outcomes\" data-item-id=\"aff3892c-4c9c-4ef2-9764-de2241ae8fad\" data-item-systemname=\"GLO Link: SHARED: equally likely outcomes\" data-item-type=\"link_glossary\">equally likely outcomes</a>, as </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>event</mi></mrow></mfenced><mo>=</mo><mfrac><mrow><mi>number of favourable outcomes</mi></mrow><mrow><mi>total number of outcomes</mi></mrow></mfrac></math></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ciefced297",
+       "course": "Year 12 Standard 1",
+       "text": "Apply P(an event does not occur) = 1 - P(the event does occur) to calculate the probability of the complement of an event",
+       "sourceHtml": "<div><span>Apply </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi>an event does not occur</mi></mrow></mfenced><mo>=</mo><mn>1</mn><mo>-</mo><mi>P</mi><mfenced separators=\"|\"><mrow><mi>the event does occur</mi></mrow></mfenced><mi> </mi></math></span><span>to calculate the probability of the complement of an event</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "connect-method",
+       "apply-method",
+       "work-examples",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-3"
+      ],
+      "sha256": "0c40604b72edc6425e49660a3cd0f5055fa101111b172de7d44666c0d5bba9f5"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "connect-method",
+        "apply-method",
+        "work-examples",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-3"
+       ],
+       "sha256": "0c40604b72edc6425e49660a3cd0f5055fa101111b172de7d44666c0d5bba9f5"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p01",
+       "text": "ci2b76fece, cibe388b4c, ci035d42a7: the 0 to 1 scale, the sample space and counting outcomes."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p01"
+     ],
+     "startBoundary": "p01's final frame (proposed): the marble bag opened into its ten marbles laid in a row (3 red, 5 blue, 2 yellow): 'how likely is blue?'.",
+     "stopBoundary": "P(event) = number of favourable outcomes ÷ total number of outcomes, only when the outcomes are equally likely (the ten marbles are; the three colours are not); simplify and convert; the complement: P(not E) = 1 − P(E), and when it is quicker than counting; an impossible event (a green marble, 0) and a certain one. Stops before two-stage events (p03).",
+     "nextHandoff": "math-s12-p03",
+     "advancedReuseCandidates": [
+      "math-a11-s04",
+      "math-a11-s05"
+     ],
+     "recommendation": "Keep the site's marbles (P(blue) = 1/2, P(not blue) = 1/2, P(green) = 0), die (P(even) = 1/2, P(not a 6) = 5/6), class of 30 (12 study French: 2/5 = 0.4 = 40%, complement 3/5), box of 15 balls (7/15, 11/15) and STATISTICS (3/10). The 52-card deck (site we-2) is left out (neutral objects, ruling 6). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p03",
+     "playlistOrder": 71,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do arrays and tree diagrams list the outcomes of a two-stage event?",
+     "syllabusActionIds": [
+      "cice3fd0ea",
+      "ci381dd4c8"
+     ],
+     "standard2ActionIds": [
+      "cice3fd0ea"
+     ],
+     "standard1ActionIds": [
+      "ci381dd4c8"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cice3fd0ea",
+       "course": "Year 12 Standard 2",
+       "text": "Construct and use arrays, tree diagrams and probability trees to determine the outcomes and probabilities for multistage events",
+       "sourceHtml": "<p>Construct and use <a data-item-id=\"ae90c167-bde6-4f7f-aca5-2e0735f29c3e\" href=\"\">arrays</a>, <a data-item-id=\"d5c3e90b-2e44-4dc7-a793-6623fcac0f23\" href=\"\">tree diagrams</a> and <a data-item-id=\"4ac5c018-ba7a-4328-88a6-4e2473217d3c\" href=\"\">probability trees</a> to determine the outcomes and probabilities for <a data-item-id=\"8124ff71-2629-4d75-894c-b7baff15bc41\" href=\"\">multistage events</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci381dd4c8",
+       "course": "Year 12 Standard 1",
+       "text": "Represent equally likely outcomes using arrays and tree diagrams to solve problems, involving replacement where applicable, in two-stage events",
+       "sourceHtml": "<p>Represent equally likely outcomes using <a data-item-id=\"ae90c167-bde6-4f7f-aca5-2e0735f29c3e\" href=\"\">arrays</a> and <a data-item-id=\"d5c3e90b-2e44-4dc7-a793-6623fcac0f23\" href=\"\">tree diagrams</a> to solve problems, involving replacement where applicable, in two-stage events</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "connect-method",
+       "work-examples",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "f2d0f17211bb6d5de203f1a688928e6c50b670045821a64fc953d8291f1f762d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "connect-method",
+        "work-examples",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "f2d0f17211bb6d5de203f1a688928e6c50b670045821a64fc953d8291f1f762d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p02",
+       "text": "ci6224eb8c, ci566abb19 (S1: ci7cb75229, ciefced297): favourable ÷ total, the complement."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p02"
+     ],
+     "startBoundary": "p02's final frame (proposed): a school canteen's lunch-deal board, 3 mains and 4 drinks, one of each picked at random: 'how many different lunches?'.",
+     "stopBoundary": "A two-stage event; an array (one stage across, the other down; every cell one outcome) and a tree diagram (one branch per outcome at each stage; every path one outcome), with replacement (the second draw starts from the full bag); probabilities by counting equally likely cells or paths; the multiplication principle for the total. Standard 1 stops here (two-stage, equally likely). Standard 2's branch probabilities and multiplying along a path are p04. Two-route final frame: Standard 2 to p04, Standard 1 to p05.",
+     "nextHandoff": "math-s12-p04 (Standard 2); math-s12-p05 (Standard 1)",
+     "advancedReuseCandidates": [
+      "math-a11-s06"
+     ],
+     "recommendation": "Keep the site's die and coin array (n(S) = 12, P(head and even) = 3/12 = 1/4, P(tail or less than 3) = 8/12 = 2/3) and the bag of 3 blue and 2 red with replacement, drawn as five lettered marbles so all 25 ordered pairs are equally likely (BB 9/25, at least one blue 21/25). Shares cice3fd0ea with p04. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p04",
+     "playlistOrder": 72,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do probability trees and P(A and B) = P(A) x P(B) handle multistage events?",
+     "syllabusActionIds": [
+      "cice3fd0ea",
+      "ci90a4b4a6"
+     ],
+     "standard2ActionIds": [
+      "cice3fd0ea",
+      "ci90a4b4a6"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cice3fd0ea",
+       "course": "Year 12 Standard 2",
+       "text": "Construct and use arrays, tree diagrams and probability trees to determine the outcomes and probabilities for multistage events",
+       "sourceHtml": "<p>Construct and use <a data-item-id=\"ae90c167-bde6-4f7f-aca5-2e0735f29c3e\" href=\"\">arrays</a>, <a data-item-id=\"d5c3e90b-2e44-4dc7-a793-6623fcac0f23\" href=\"\">tree diagrams</a> and <a data-item-id=\"4ac5c018-ba7a-4328-88a6-4e2473217d3c\" href=\"\">probability trees</a> to determine the outcomes and probabilities for <a data-item-id=\"8124ff71-2629-4d75-894c-b7baff15bc41\" href=\"\">multistage events</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci90a4b4a6",
+       "course": "Year 12 Standard 2",
+       "text": "Determine the probabilities of outcomes for multistage events using P(A and B) = P(A) × P(B)",
+       "sourceHtml": "<div><span>Determine the probabilities of outcomes for multistage events using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>P</mi><mfenced separators=\"|\"><mrow><mi mathvariant=\"italic\">A and B</mi></mrow></mfenced><mo>=</mo><mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>×</mo><mi>P</mi><mo>(</mo><mi>B</mi><mo>)</mo></math></span><span></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; lesson02 also writes P(A and B) = P(A) x P(B|A), conditional notation the Standard syllabus does not use (MS-66)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "connect-method",
+       "apply-method",
+       "work-examples",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "f2d0f17211bb6d5de203f1a688928e6c50b670045821a64fc953d8291f1f762d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson02.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "connect-method",
+        "apply-method",
+        "work-examples",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "f2d0f17211bb6d5de203f1a688928e6c50b670045821a64fc953d8291f1f762d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p03",
+       "text": "cice3fd0ea: arrays and tree diagrams for two-stage events."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p03"
+     ],
+     "startBoundary": "p03's Standard 2 panel (proposed): the 3 blue, 2 red tree from p03 with its four paths, the branch labels replaced by '?': 'can we write a probability on each branch?'.",
+     "stopBoundary": "A probability tree: a probability on each branch, the branches from one point add to 1; multiply along a path for one outcome, P(A and B) = P(A) × P(B); add the paths that make an event; all the paths add to 1 (the check); without replacement, the second-stage branches change because the bag has changed; three stages (three coins, 8 paths); unequal everyday chances (a bus and a train each on time). Ends on a frame shared with p03's Standard 1 panel.",
+     "nextHandoff": "math-s12-p05",
+     "advancedReuseCandidates": [
+      "math-a11-s06"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's with-replacement tree (9/25, 6/25, 6/25, 4/25; same colour 13/25; at least one blue 21/25) and without-replacement tree (2 red, 3 blue: 1/10, 3/10, 3/10, 3/10; one of each 3/5). Describe the changed branches in words, not with P(B|A) (MS-66). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p05",
+     "playlistOrder": 73,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How does relative frequency estimate a probability, and why do more trials help?",
+     "syllabusActionIds": [
+      "ci6ac4e336",
+      "ci74635662",
+      "cid7b76603",
+      "ci35f2f92d"
+     ],
+     "standard2ActionIds": [
+      "ci6ac4e336",
+      "ci74635662"
+     ],
+     "standard1ActionIds": [
+      "cid7b76603",
+      "ci35f2f92d"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci6ac4e336",
+       "course": "Year 12 Standard 2",
+       "text": "Use relative frequency as an estimate of probability",
+       "sourceHtml": "<p>Use <a data-item-id=\"625b1ad1-120c-4184-a8fb-0220b46240e4\" href=\"\">relative frequency</a> as an estimate of probability</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci74635662",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that increasing the number of trials produces relative frequencies that become closer in value to the theoretical probability",
+       "sourceHtml": "<p>Recognise that increasing the number of <a data-item-id=\"81f8d6e1-34b7-4b5c-b461-da4fec2964da\" href=\"\">trials</a> produces relative frequencies that become closer in value to the theoretical probability</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cid7b76603",
+       "course": "Year 12 Standard 1",
+       "text": "Use relative frequency as an estimate of probability",
+       "sourceHtml": "<p>Use <a data-item-id=\"625b1ad1-120c-4184-a8fb-0220b46240e4\" href=\"\">relative frequency</a> as an estimate of probability</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci35f2f92d",
+       "course": "Year 12 Standard 1",
+       "text": "Recognise that increasing the number of trials produces relative frequencies that become closer in value to the theoretical probability",
+       "sourceHtml": "<p>Recognise that increasing the number of <a data-item-id=\"81f8d6e1-34b7-4b5c-b461-da4fec2964da\" href=\"\">trials</a> produces relative frequencies that become closer in value to the theoretical probability</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "connect-method",
+       "work-examples",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "c4bc0a8be472985d5ab73cee5788544d8964388f601086399c668560d7ed5f3b"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "connect-method",
+        "work-examples",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "c4bc0a8be472985d5ab73cee5788544d8964388f601086399c668560d7ed5f3b"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p02",
+       "text": "ci6224eb8c (S1: ci7cb75229): theoretical probability from equally likely outcomes."
+      },
+      {
+       "source": "math-s11-d06",
+       "text": "cia7a007a6: frequency tables (a tally of results)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p04",
+      "math-s12-p03"
+     ],
+     "startBoundary": "One frame shared by p04's final frame and p03's Standard 1 panel (proposed): a coin and a tally card '10 flips: 7 heads': 'is this coin unfair?'.",
+     "stopBoundary": "Relative frequency = number of times the event happened ÷ number of trials, as an estimate of a probability, especially when no theoretical probability exists (how often a rideshare arrives within 5 minutes); more trials give relative frequencies that settle closer to the theoretical probability (a running proportion drawn live), but no finite run is guaranteed and the next flip is not 'due'; comparing an estimate with a theoretical value. Stops before expected frequency (p06).",
+     "nextHandoff": "math-s12-p06",
+     "advancedReuseCandidates": [
+      "math-a11-s10"
+     ],
+     "recommendation": "Keep the site's coin (7/10 = 0.7 against 5037/10 000 = 0.5037), the die rolled 120 times (22, 18, 24, 19, 21, 16; all within 0.034 of 1/6) and the spinner (28/80 = 0.35 against 0.30). A live simulation shows the settling. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p06",
+     "playlistOrder": 74,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How many times should we expect an event to happen?",
+     "syllabusActionIds": [
+      "cib9b655d5",
+      "cif251c60d"
+     ],
+     "standard2ActionIds": [
+      "cib9b655d5"
+     ],
+     "standard1ActionIds": [
+      "cif251c60d"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cib9b655d5",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate the expected frequency of an event occurring using np where n is the number of times an experiment is repeated, and p is the probability that the event occurs on each of those times",
+       "sourceHtml": "<div><span>Calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/744ec7d7-0da5-4e0b-9701-fa10578877d7\" data-item-codename=\"glo_link__shared__expected_frequency\" data-item-id=\"744ec7d7-0da5-4e0b-9701-fa10578877d7\" data-item-systemname=\"GLO Link: SHARED: expected frequency\" data-item-type=\"link_glossary\">expected frequency</a> of an event occurring using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">np</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> is the number of times an experiment is repeated, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math></span><span> is the probability that the event occurs on each of those times</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cif251c60d",
+       "course": "Year 12 Standard 1",
+       "text": "Calculate the expected frequency of an event occurring using np where n is the number of times an experiment is repeated, and p is the probability that the event occurs each of those times",
+       "sourceHtml": "<div><span>Calculate the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/744ec7d7-0da5-4e0b-9701-fa10578877d7\" data-item-codename=\"glo_link__shared__expected_frequency\" data-item-id=\"744ec7d7-0da5-4e0b-9701-fa10578877d7\" data-item-systemname=\"GLO Link: SHARED: expected frequency\" data-item-type=\"link_glossary\">expected frequency</a> of an event occurring using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">np</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>n</mi></math></span><span> is the number of times an experiment is repeated, and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>p</mi></math></span><span> is the probability that the event occurs each of those times</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "apply-method",
+       "work-examples",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "c4bc0a8be472985d5ab73cee5788544d8964388f601086399c668560d7ed5f3b"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "apply-method",
+        "work-examples",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "c4bc0a8be472985d5ab73cee5788544d8964388f601086399c668560d7ed5f3b"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p05",
+       "text": "ci6ac4e336, ci74635662 (S1: cid7b76603, ci35f2f92d): relative frequency as an estimate."
+      },
+      {
+       "source": "math-s12-p02",
+       "text": "ci6224eb8c: theoretical probability."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p05"
+     ],
+     "startBoundary": "p05's final frame (proposed): the rideshare app's record '40 of the last 50 rides arrived within 5 minutes' and a calendar of 30 upcoming trips: 'how many on time?'.",
+     "stopBoundary": "Expected frequency = np (n trials, probability p each time), with p from theory or from a relative frequency; the answer is a long-run average, not a promise, and can be a decimal; using it to plan (stock, staff, spares). Two-route final frame: Standard 2 to p07, Standard 1 to p08.",
+     "nextHandoff": "math-s12-p07 (Standard 2); math-s12-p08 (Standard 1)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's 120 rolls → 20 sixes, 100 rolls → about 16.7, 2% of 500 bulbs → 10 and the factory's 15 faults in 500 → 60 expected in 2000. The site's raffle (SA 2), drug trial (SA 3) and genetic marker (we-2) are left out (owner note MS-68). Pace: fits, short; no padding (ruling 52 pattern).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p07",
+     "playlistOrder": 75,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do Venn diagrams and two-way tables sort two attributes?",
+     "syllabusActionIds": [
+      "cidbbb1a76"
+     ],
+     "standard2ActionIds": [
+      "cidbbb1a76"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cidbbb1a76",
+       "course": "Year 12 Standard 2",
+       "text": "Construct and interpret Venn diagrams and two-way tables from given information, limited to combinations of two attributes, and use them to solve problems in a variety of contexts",
+       "sourceHtml": "<p>Construct and interpret <a data-item-id=\"dbb174d1-785d-44a4-ab09-55660ef571d9\" href=\"\">Venn diagrams</a> and <a data-item-id=\"b5f04558-1c88-4314-a424-03c98077de44\" href=\"\">two-way tables</a> from given information, limited to combinations of two attributes, and use them to solve problems in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "build-foundation",
+       "connect-method",
+       "work-examples",
+       "independent-practice",
+       "retrieve-and-finish"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "3f929df61cb96675dc079f04a09bc5e5898e594c5b01aa52d24b08157b4d321d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "connect-method",
+        "work-examples",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "3f929df61cb96675dc079f04a09bc5e5898e594c5b01aa52d24b08157b4d321d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p02",
+       "text": "ci6224eb8c, ci566abb19: favourable ÷ total, and the complement for 'neither'."
+      },
+      {
+       "source": "math-s11-d07",
+       "text": "cic1f6796f: categorical data in tables."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p06"
+     ],
+     "startBoundary": "p06's Standard 2 panel (proposed): a canteen survey card, 'bought lunch?' and 'bought recess?', with some students ticking both: 'how do we count the overlap once?'.",
+     "stopBoundary": "Two attributes; a Venn diagram (two overlapping circles in a rectangle; fill the overlap first, then each 'only' region, then 'neither'); a two-way table (four cells, row and column totals, a grand total; missing values by subtraction); moving between the two; probabilities from a region or cell ÷ the total; 'of those who...' fractions read from one row or column; 'at least one', 'exactly one' and 'neither' in words. Ends on a frame shared with p06's Standard 1 panel.",
+     "nextHandoff": "math-s12-p08",
+     "advancedReuseCandidates": [
+      "math-a11-s02"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's class of 30 (12 sport, 10 music, 5 both: 7, 5, 5, 13; at least one 17/30), the cohort of 120 (52, 20, 28, 20; 13/30, 5/6, 1/6) and the 150-person exercise and diet table (8/15, 55/80 = 11/16, 1/3). Advanced a11-s02 (two-scoop cones), s03 (library) and s05 (hotel rooms) anchors are not reused. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-p08",
+     "playlistOrder": 76,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do the media, governments and companies use probability to make decisions?",
+     "syllabusActionIds": [
+      "cid7bfe21e",
+      "cidcff3c3e"
+     ],
+     "standard2ActionIds": [
+      "cid7bfe21e"
+     ],
+     "standard1ActionIds": [
+      "cidcff3c3e"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cid7bfe21e",
+       "course": "Year 12 Standard 2",
+       "text": "Examine the use of statistics and the associated probabilities in shaping decisions made by the media, governments and companies",
+       "sourceHtml": "<p>Examine the use of statistics and the associated probabilities in shaping decisions made by the media, governments and companies</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fae778ced4",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cidcff3c3e",
+       "course": "Year 12 Standard 1",
+       "text": "Examine the use of statistics and the associated probabilities in shaping decisions made by the media, governments and companies",
+       "sourceHtml": "<p>Examine the use of statistics and the associated probabilities in shaping decisions made by the media, governments and companies</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa473a4513",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "apply-method",
+       "work-examples",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "3f929df61cb96675dc079f04a09bc5e5898e594c5b01aa52d24b08157b4d321d"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson04.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "apply-method",
+        "work-examples",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "3f929df61cb96675dc079f04a09bc5e5898e594c5b01aa52d24b08157b4d321d"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/relative-frequency-and-probability/lesson03.sa.html",
+       "sectionIds": [
+        "apply-method"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "c4bc0a8be472985d5ab73cee5788544d8964388f601086399c668560d7ed5f3b"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-p05",
+       "text": "ci6ac4e336: relative frequency as an estimate (a survey result is one)."
+      },
+      {
+       "source": "math-s12-p06",
+       "text": "cib9b655d5: expected frequency, as companies use it."
+      },
+      {
+       "source": "math-s11-d03",
+       "text": "ci3d27ce1c, ciefb0c944: sampling methods and representative samples (self-selected samples)."
+      },
+      {
+       "source": "math-s11-d10",
+       "text": "ciebdc8d60: how a display can mislead."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p07",
+      "math-s12-p06"
+     ],
+     "startBoundary": "One frame shared by p07's final frame and p06's Standard 1 panel (proposed): a phone showing an invented app advertisement, '4 out of 5 users sleep better!', with a small grey footnote '25 volunteers': 'should we believe it?'.",
+     "stopBoundary": "How media, governments and companies use statistics and probabilities to make and sell decisions; five questions for any claim (how many were asked, how they were chosen, a percentage of what, relative or absolute change, who ran or paid for it); relative against absolute risk (2% to 1% is 'halved' but one percentage point); a survey percentage as a relative frequency from a sample; companies planning with expected frequency (warranties, spares, staffing); a government decision from data (invented, labelled). Two-route final frame (accepting the z01 pack's proposal): left, 'Standard 2: next, the normal distribution', a bakery's quality sheet with 200 loaves labelled 700 g weighed, the masses dropping into a coded histogram, 'what shape is this?'; right, a grey chip 'Standard 1: Year 12 course complete' pointing to the Year 12 Standard playlist.",
+     "nextHandoff": "math-s12-z01 (Standard 2); Standard 1: end of Year 12 content (optional practice math-s12-x02)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's fitness app (12 of 30 self-selected volunteers, 40%), supplement headline (80% of 25 online volunteers) and relative risk (2% to 1%). Every claim in the video is invented and labelled, unless Codex supplies a dated source. Last Year 12 content video for Standard 1 (Standard 1 has no normal distribution, critical path or network flow). The final frame's left panel is z01's opening as its pack proposes (the loaves; invented, labelled). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-p08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}
