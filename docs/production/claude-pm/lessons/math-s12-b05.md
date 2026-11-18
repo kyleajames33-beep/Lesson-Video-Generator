@@ -1,8 +1,19 @@
 # Maths S12 B05: What does Pearson's correlation coefficient measure? r between −1 and 1, sign for direction and size for strength, one guide for the words, r from a scientific calculator, two checks, and r's limits (curves, outliers, cause) (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `a04b.md`, Revision 2 each, and the t-strand resolution logs, in particular the t01b calculator-key finding) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 69). Designer's decisions for b01 to b07: `../checks/root-decisions-maths-s12-b01-b07.md`. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `a04b.md`, Revision 2 each, and the t-strand resolution logs, in particular the t01b calculator-key finding) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 69). Designer's decisions for b01 to b07: `../checks/root-decisions-maths-s12-b01-b07.md`. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,542 characters by script (see "Narration length estimate"), 16 scene headings, about 518 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,653 characters by script (see "Narration length estimate"; Revision 2), 16 scene headings, about 526 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-b05-learning-review.md` (verdict pass; summary `../checks/m-s12-b01-b07-learning-review-summary.md`), with root's rulings 1 to 77 and root's resolution brief of 19 Nov (decision 5: optional findings applied when they help and cost little). Resolution log: `../checks/m-s12-b01-b07-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, scene 9 (why one point moves r so much): **applied**, reviewer's sentence with "That's because" in front. "That's because r is worked out from every point, so one point far from the line pulls it a long way." All ten points pulse once on "worked out from every point", then the moved point's gap to the line draws as a long grey stick. This matches cause chain step 7, which already said it.
+2. Optional, scene 8 ("which looks strong"): **applied**, reviewer's wording. "Its r is zero point nine two, which the guide calls strong, but the pattern is clearly a curve." The guide strip's "strong" lights beside the dial readout. The lesson that the guide applies only after the plot shows a straight-line form is now explicit.
+
+Joins unchanged: scene 1 opens on b04b's final frame, and scene 15's frame (b06's opening) is unchanged.
+
+Narration 5,653 characters by script (Revision 1: 5,542), about 526 s with holds; feedback unchanged (about 28 s and 25 s). Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: Bivariate data analysis, playlist order 66. **Standard 2 only.** Standard 1 viewers go from b04a to b07. Pre-design pack: `../pre-design/maths-standard/math-s12-b05.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/bivariate-data-analysis/lesson06.sa.html` (SHA256 `8da067542fa595762ce4f38f929b9535c0374a304c24d7426a8b137fe0154146`; card 02, "Sign gives direction; magnitude gives strength"; card 05's guide table, "These are guidelines, not strict rules"; card 07, "r only measures linear relationships" and "Outliers can distort r"; card 08's eight students, "r = −0.8995554…, which you report as r = −0.90", the two checks, and "Menus differ, the three things you are hunting never do"; the Correlation Explorer's ten points, SHA256 `d88599b655b50db6d9e6d7a6bf5dfca82a4f1e376ed944532f5dd723b8c412e1`, with (2, 45) moved to (2, 95)). One guide is used (MS-60); the explorer's 0.9 "very strong" label and card 06's "HSC uses two thresholds" are not used; no r is given for a categorical variable (MS-60). Route entry: `math-s12-b05` in `../../programme/maths-standard-route-inputs-6.json`. Visual system: maths studio kit; the kiosk and calculator plates; the dial, scatter plots and calculator screens coded and unbranded.
 
@@ -98,14 +109,14 @@ Visual: clear change to the g01 board. Task strip, 44 px: "Eight Year 12 student
 Visual: camera continue. Two stamps write beside the board, 44 px: "check: −1 ≤ r ≤ 1" (on "one point one two" a red "r = 1.12" bounces off the dial's end, crossed) and "check: sign matches the plot" (the falling scatter beside "−0.90", tick) (hand tags "check: −1 to 1", "check: sign matches"). On "entered" the calculator's table pulses.
 
 ### 8. what r can't see: curves
-> Now the limits. r only measures how close the points are to a straight line. Remember the coffee cart's customers, rising and then levelling off? Its r is zero point nine two, which looks strong, but the pattern is clearly a curve. And a U shaped pattern can have an r of zero, even though the variables are clearly related. So always look at the scatter plot first. A high r doesn't prove the form is **linear**.
+> Now the limits. r only measures how close the points are to a straight line. Remember the coffee cart's customers, rising and then levelling off? Its r is zero point nine two, which the guide calls strong, but the pattern is clearly a curve. And a U shaped pattern can have an r of zero, even though the variables are clearly related. So always look at the scatter plot first. A high r doesn't prove the form is **linear**.
 
-Visual: stage change. Two plots side by side (about 860 × 560 px each). Left: the coffee cart (b02; plate `maths/ma11-coffee-cart-v1.png` small, "invented data"), its curved guide, dial readout "r = 0.92" (hand tag "curve, but high r"). Right: a U-shaped scatter of seven points ("invented data") with a curved guide and a dial readout "r = 0" (hand tag "U shape: r ≈ 0"). On "linear" a caption, 40 px: "plot first: r only measures straight-line fit" (hand tag "plot first").
+Visual: stage change. Two plots side by side (about 860 × 560 px each). Left: the coffee cart (b02; plate `maths/ma11-coffee-cart-v1.png` small, "invented data"), its curved guide, dial readout "r = 0.92" with the guide strip's "strong" lit beside it (Revision 2) (hand tag "curve, but high r"). Right: a U-shaped scatter of seven points ("invented data") with a curved guide and a dial readout "r = 0" (hand tag "U shape: r ≈ 0"). On "linear" a caption, 40 px: "plot first: r only measures straight-line fit" (hand tag "plot first").
 
 ### 9. one point can move r a lot
-> One point can also move r a long way. Here are ten students' study hours and exam scores, and r is zero point nine nine. Now move just one point, the student who studied two hours, from forty-five up to ninety-five. The needle swings down to zero point five eight, which is only moderate. One unusual point changed the whole **description**. And remember, even a large r doesn't show that one thing causes the **other**.
+> One point can also move r a long way. Here are ten students' study hours and exam scores, and r is zero point nine nine. Now move just one point, the student who studied two hours, from forty-five up to ninety-five. The needle swings down to zero point five eight, which is only moderate. That's because r is worked out from every point, so one point far from the line pulls it a long way. One unusual point changed the whole **description**. And remember, even a large r doesn't show that one thing causes the **other**.
 
-Visual: stage change: simulation 2. A scatter of ten points (about 1,100 × 680 px; "study hours" amber 0 to 13, "exam score" teal 40 to 100 with a break mark), the dial beside it reading "r = 0.99" in "strong". On "from forty-five" the point at (2, 45) rises live to (2, 95) with a grey trail; the needle swings and the readout falls to "r = 0.58", the guide band switching to "moderate" (hand tag "one point moved it"). On "description" the moved point rings grey. On "other" grey chip "b03: correlation isn't cause".
+Visual: stage change: simulation 2. A scatter of ten points (about 1,100 × 680 px; "study hours" amber 0 to 13, "exam score" teal 40 to 100 with a break mark), the dial beside it reading "r = 0.99" in "strong". On "from forty-five" the point at (2, 45) rises live to (2, 95) with a grey trail; the needle swings and the readout falls to "r = 0.58", the guide band switching to "moderate" (hand tag "one point moved it"). On "worked out from every point" all ten points pulse once, then the moved point's vertical gap to the line draws as a long grey stick (Revision 2). On "description" the moved point rings grey. On "other" grey chip "b03: correlation isn't cause".
 
 ### 10. memory aid
 > Here's the summary. The sign is the direction, the size is the strength, and r only measures straight-line **patterns**.
@@ -203,9 +214,9 @@ Recalculated with Python `statistics.correlation` and exact fractions (19 Nov 20
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `b/count.py`, which reproduces e08's 5,632): **5,542 characters**, 16 scene headings. Characters per scene (1 to 16): 315, 425, 314, 285, 527, 713, 309, 409, 412, 116, 306, 367, 442, 335, 192, 75.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632): **5,653 characters** (Revision 2; Revision 1: 5,542), 16 scene headings. Characters per scene (1 to 16): 315, 425, 314, 285, 527, 713, 309, 419, 513, 116, 306, 367, 442, 335, 192, 75.
 
-At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the morph (3), the table filling (5, 6), the plots (8), the drag (9) and the drawn feedback plots (14) about 36 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 518 s**, under the 570 s cap. Feedback speech: about 28 s and 25 s.
+At 13.3 characters per second the speech is about 425 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the morph (3), the table filling (5, 6), the plots (8), the drag (9) and the drawn feedback plots (14) about 36 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 526 s** (Revision 2; Revision 1 about 518 s), under the 570 s cap. Feedback speech: about 28 s and 25 s.
 
 Reserve trims if the voiced take runs long: scene 7 can shrink to "Two quick checks: r is never outside minus one to one, and its sign must match the plot." (about 8 s); scene 2's coefficient sentence (about 4 s); scene 9's last sentence (about 5 s; the grey chip stays).
 
@@ -284,9 +295,10 @@ Builds on: Line of Best Fit: Gradient, Intercept and Equation, and Correlation v
 
 ## Open decisions
 
-- **1. A1's data (root).** The pack's six-student data give r = −0.90, the same as the worked example; the new invented data give −0.69 (moderate), so the attempt practises a different band and a rounding decision.
-- **2. Guide boundaries (root).** 0.8 and 0.5 (the site's card 05 table, simplified to three words); labelled a guide. If root prefers four bands, scenes 4 and 16 change.
+- **1. A1's data (root). Closed: ruling 77 accepts the new invented attempt data.** The pack's six-student data give r = −0.90, the same as the worked example; the new invented data give −0.69 (moderate), so the attempt practises a different band and a rounding decision.
+- **2. Guide boundaries (root). Closed: ruling 77 accepts the single guide (strong 0.8 and above, moderate 0.5 to 0.8, weak below 0.5).** 0.8 and 0.5 (the site's card 05 table, simplified to three words); labelled a guide. If root prefers four bands, scenes 4 and 16 change.
 
 ## Review notes
 
+- Revision 2 (19 Nov 2026): learning review resolved (pass; 2 optional applied; see "Revision 2"). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A.
 - Revision 1. Next: student learning review (trace from b04b; check that r's meaning is said before the symbol, that the morph makes sign and size visible, that the calculator is followable without one model's keys, that the checks and limits are each shown, that both cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

@@ -2,32 +2,36 @@
 
 19 November 2026. Design author's handover to root for `lessons/math-s12-b01.md`, `b02.md`, `b03.md`, `b04a.md`, `b04b.md`, `b05.md`, `b06.md` and `b07.md` (Revision 1 each). Documents only: no speech, build, render, plate or commit, and no sub-agent. Inputs: the packs `pre-design/maths-standard/math-s12-b01.md` to `b07.md`, `programme/maths-standard-route-inputs-6.json`, `checks/maths-standard-kit-needs-b-p.md`, `checks/root-rulings-maths-standard-outline.md` (rulings 1 to 69, binding; 59, 64, 65, 66, 67, 68 and 69 in particular), `site-corrections-maths-standard.md` (section 10, MS-60 to MS-69), the format of `lessons/math-s12-r12a.md`, `t05.md` and `a04b.md` (Revision 2) with the t-strand learning-review summaries and resolution logs, `lessons/math-s12-t11.md` and `t05.md` (b01's opening), `maths-visual-standard.md` and `AGENTS.md`. b07 was written second (after b01) so that section 3 below, p01's opening frame, was fixed early for the p-strand author; it has not changed since.
 
+**Revision 2 (19 Nov 2026): learning review resolved.** All eight designs now carry a Revision 2 section and the Status "Revision 2 (19 Nov 2026): learning review resolved", following `m-s12-b01-b07-learning-review-summary.md`, the per-design reviews and root's five binding decisions of 19 Nov. The full log is `m-s12-b01-b07-learning-review-resolution.md`. Root's decisions as applied: (1) b04a scene 4 says the gaps always balance through the mean point, even for a flat line, and the ruler turns until it follows the trend; the changed ScatterBoard pivot is recorded in `maths-standard-kit-needs-b-p.md`; (2) b06 keeps the data in columns A and B, adds "These are just column letters, not the calculator's A and B" with grey column letters, says why the gaps are squared, and says "the check is passed"; (3) the canteen line through the first and last points stays (b04a attempt 2, b07 attempt 1), with b04a's feedback 2 saying it is still fair because it follows the trend; (4) b07 scene 7 is one scene with two board stages and a task strip holding only the demand, and b07's description names p01's title; (5) every other should-fix is applied, and every optional is applied except b04b's spoken sentence (shown on screen instead, to keep feedback 2 at 30 s). b01's opening (t11's final frame) and b07's final frame (section 3, p01's opening) are unchanged; no other join changed. Sections 1 and 6 below are updated; the Revision 1 text elsewhere is kept for the record.
+
 ## 1. Summary
 
 | Design | Course | Characters | About (s, with holds) | Scenes | Anchor | New plate briefed here |
 | --- | --- | --- | --- | --- | --- | --- |
-| b01 one variable or two; independent variable | S1, S2 | 5,133 | 485 | 14 | the kiosk board (18°C 40 to 32°C 120) | none (kiosk confirmed, with an addendum to t05's brief) |
-| b02 scatter plots: form, direction, strength | S1, S2 | 5,041 | 478 | 15 | the kiosk's five points; a coffee cart's levelling curve | `ms12-sunscreen-bottle-v1.png` (final frame; used in b03) |
-| b03 correlation and causation | S1, S2 | 5,039 | 474 | 15 | ice creams against sunscreen, hot weather driving both | none |
-| b04a drawing a line of best fit | S1, S2 | 5,045 | 478 | 15 | the kiosk's line through (18, 35), (32, 119); mean point (25, 77) | none |
-| b04b gradient, intercept, equation | S2 | 5,096 | 480 | 15 | y = 6x − 73: 6 ice creams per °C; −73 means nothing | none |
-| b05 Pearson's r | S2 | 5,542 | 518 | 16 | the kiosk on a dial, r = 0.99; work hours r = −0.90 | none |
-| b06 least-squares line, calculator and spreadsheet | S2 | 5,502 | 515 | 15 | the kiosk's A and B: y = 5.60x − 63.09; work hours y = −1.7x + 89.3 | none |
-| b07 interpolation and extrapolation | S1, S2 | 6,019 | 547 | 15 | the kiosk's line at 27°C (89), 10°C (−13), 45°C (197) | none |
+| b01 one variable or two; independent variable | S1, S2 | 5,229 | 492 | 14 | the kiosk board (18°C 40 to 32°C 120) | none (kiosk confirmed, with an addendum to t05's brief) |
+| b02 scatter plots: form, direction, strength | S1, S2 | 5,111 | 483 | 15 | the kiosk's five points; a coffee cart's levelling curve | `ms12-sunscreen-bottle-v1.png` (final frame; used in b03) |
+| b03 correlation and causation | S1, S2 | 5,239 | 489 | 15 | ice creams against sunscreen, hot weather driving both | none |
+| b04a drawing a line of best fit | S1, S2 | 5,292 | 499 | 15 | the kiosk's line through (18, 35), (32, 119); mean point (25, 77) | none |
+| b04b gradient, intercept, equation | S2 | 5,124 | 482 | 15 | y = 6x − 73: 6 ice creams per °C; −73 means nothing | none |
+| b05 Pearson's r | S2 | 5,653 | 526 | 16 | the kiosk on a dial, r = 0.99; work hours r = −0.90 | none |
+| b06 least-squares line, calculator and spreadsheet | S2 | 5,763 | 537 | 15 | the kiosk's A and B: y = 5.60x − 63.09; work hours y = −1.7x + 89.3 | none |
+| b07 interpolation and extrapolation | S1, S2 | 5,967 | 547 | 15 | the kiosk's line at 27°C (89), 10°C (−13), 45°C (197) | none |
 
 Characters are the sum of the scene strings (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed), counted with scratchpad `b/count.py` (a copy of `work/brief-resolve-standard-a1/count.py`; it reproduces e08's 5,632). Times use 13.3 characters per second plus two 10 s countdowns, about 6 s of short holds, 26 to 36 s of settling and the 45 s notes scene. All eight are under 570 s (longest b07, about 547 s, 23 s margin with three named trims; shortest b03, about 474 s). b02, b03, b04a and b04b sit just above 5,000; none is padded.
 
-Characters per scene (1 to last):
-- b01: 450, 530, 400, 544, 596, 522, 459, 138, 426, 334, 247, 297, 115, 75
-- b02: 366, 520, 483, 408, 342, 343, 370, 375, 146, 330, 357, 446, 296, 184, 75
-- b03: 348, 470, 465, 405, 253, 467, 596, 237, 136, 398, 323, 322, 315, 229, 75
-- b04a: 340, 378, 417, 635, 322, 502, 270, 353, 96, 388, 298, 295, 353, 323, 75
-- b04b: 298, 341, 563, 285, 540, 555, 285, 369, 170, 356, 385, 310, 397, 167, 75
-- b05: 315, 425, 314, 285, 527, 713, 309, 409, 412, 116, 306, 367, 442, 335, 192, 75
-- b06: 375, 466, 402, 386, 403, 751, 284, 515, 148, 358, 356, 376, 363, 244, 75
-- b07: 270, 434, 580, 440, 442, 513, 982, 282, 144, 411, 399, 373, 386, 288, 75
+The table shows Revision 2 values (recounted with `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632). Revision 1 values were 5,133 (485 s), 5,041 (478 s), 5,039 (474 s), 5,045 (478 s), 5,096 (480 s), 5,542 (518 s), 5,502 (515 s) and 6,019 (547 s). All eight remain under 570 s; the longest is still b07 (about 547 s), then b06 (about 537 s).
 
-Every feedback scene is at most 399 characters (about 30 s; longest b07 feedback 1). The longest single scene is b07 scene 7 (982, about 74 s: one g01 board, both parts of the streaming-battery example). Scripted checks on all eight: 0 em dashes (designs and this file), 0 digits in narration, every bold cue quoted in its scene's Visual, every attempt narration ending "Pause here to answer.", every description ending #HSCScience with no codenames and the syllabus wording under a Standard 2 heading (and a Standard 1 heading where the point exists). Titles are 49 to 78 characters. Every value under each design's "Numbers to verify" was recalculated with exact fractions and Python `statistics` (scratchpad `b/verify.py`, run with `python -I`; 0 failures after five display values were corrected to the script's output); Codex's maths check remains the authority.
+Characters per scene (1 to last), Revision 2:
+- b01: 450, 530, 400, 544, 596, 618, 459, 138, 426, 334, 247, 297, 115, 75
+- b02: 366, 551, 483, 408, 381, 343, 370, 375, 146, 330, 357, 446, 296, 184, 75
+- b03: 348, 470, 465, 460, 324, 467, 670, 237, 136, 398, 323, 322, 315, 229, 75
+- b04a: 340, 378, 417, 838, 322, 502, 270, 353, 96, 388, 298, 295, 397, 323, 75
+- b04b: 298, 341, 591, 285, 540, 555, 285, 369, 170, 356, 385, 310, 397, 167, 75
+- b05: 315, 425, 314, 285, 527, 713, 309, 419, 513, 116, 306, 367, 442, 335, 192, 75
+- b06: 375, 609, 402, 443, 403, 751, 345, 515, 148, 358, 356, 376, 363, 244, 75
+- b07: 270, 434, 580, 440, 442, 513, 982, 282, 144, 411, 399, 321, 386, 288, 75
+
+Every feedback scene is at most 399 characters (about 30 s; longest b07 feedback 1). The longest single scene is b07 scene 7 (982, about 74 s: one g01 board, both parts of the streaming-battery example, run as two board stages in Revision 2), then b04a scene 4 (838, about 63 s in Revision 2: the mean point worked, then the pivot). Scripted checks on all eight: 0 em dashes (designs and this file), 0 digits in narration, every bold cue quoted in its scene's Visual, every attempt narration ending "Pause here to answer.", every description ending #HSCScience with no codenames and the syllabus wording under a Standard 2 heading (and a Standard 1 heading where the point exists). Titles are 49 to 78 characters. Every value under each design's "Numbers to verify" was recalculated with exact fractions and Python `statistics` (scratchpad `b/verify.py`, run with `python -I`; 0 failures after five display values were corrected to the script's output); Codex's maths check remains the authority.
 
 ## 2. Joins (every opening and final frame)
 
@@ -78,7 +82,7 @@ Temperature, the x variable, the run and the independent variable amber; ice cre
 
 ## 6. Kit needs (as `maths-standard-kit-needs-b-p.md`, confirmed by these designs)
 
-- **ScatterBoard** (main new part, first used in b01): the board of pairs with links, shuffle and column swap, rows flying to points; axes that rescale with break marks and can stretch back to 0; a strength band; straight and curved guides with gap sticks; a draggable ruler with an above-and-below counter, gap sticks and running totals; a mean-point pin; a second line; squared-gap squares with a live total; a live r readout driving `TargetDial`; a data-range band with solid and dashed line segments and a reading guide whose tag flips between interpolation and extrapolation; a likely-range bar.
+- **ScatterBoard** (main new part, first used in b01; Revision 2: the mean-point pivot keeps the two gap totals equal at every angle, as recorded in the kit-needs file): the board of pairs with links, shuffle and column swap, rows flying to points; axes that rescale with break marks and can stretch back to 0; a strength band; straight and curved guides with gap sticks; a draggable ruler with an above-and-below counter, gap sticks and running totals; a mean-point pin; a second line; squared-gap squares with a live total; a live r readout driving `TargetDial`; a data-range band with solid and dashed line segments and a reading guide whose tag flips between interpolation and extrapolation; a likely-range bar.
 - **StudioToolPanel STAT mode** (b05, b06): mode menu, two-column table, results screen with A, B and r lines that light or dim, fitted to the calculator plate's screen.
 - **SpreadsheetGrid** (already a listed need): scatter chart, linear trendline with an optional equation label, formula bar with SLOPE, INTERCEPT and CORREL, a check cell and the argument-order swap.
 - Small: DriverArrows as a tag pattern with a driver slider (b03); random assignment of tokens into trays with counts (b03); the sliding rise-over-run triangle with a fixed ratio (b04b); a mirrored guide strip under the dial (b05); the freezer gauge on `TrackerFill` (b07).
