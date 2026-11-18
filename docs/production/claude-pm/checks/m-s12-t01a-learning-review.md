@@ -1,0 +1,35 @@
+# Maths S12 t01a Revision 1: independent learning review
+
+18 November 2026. Design `lessons/math-s12-t01a.md`, "How do sine, cosine and tangent find a missing side of a right-angled triangle?" Source SHA256 `aed8e6f09d89fb22b2cb1a372628f466742e352d351ead64ba99488261e8b0c1`.
+
+Written design reviewed (narration, visual descriptions, question cards, feedback, key notes and decisions) by tracing it from its stated entry knowledge (Year 11 Standard a06 Pythagoras and f03 changing the subject; no trigonometry at all, because Year 11 Standard has none) as a Mathematics Standard student starting Year 12, arriving from r14 (Standard 2) or r13's Standard 1 panel. Standard 1 and Standard 2 share every word. No built preview, plate inspection, playback or human listening is claimed; pace figures are speech-only estimates at 13.3 characters a second and need measuring on the Google voice. An AI beginner-perspective review identifies likely problems; it is not evidence that real students learned.
+
+**Verdict: should-fix** (0 blockers, 4 should fix, 1 optional).
+
+This is a strong first trigonometry video. The reason comes before the names: the roof triangle scales from 2 m to 10 m while "height ÷ slope = 0.5736" holds still, so "ratio" means something before "sine" does. Hypotenuse, opposite and adjacent each get a plain meaning first ("across from our angle", "touches our angle, and isn't the hypotenuse"), and the label swap at the top corner shows why sides are named from the angle in use. Multiply and divide are reasons, not rules ("the unknown is on top, so multiply both sides"; "multiply both sides by H, then divide both sides by cosine forty-eight degrees"), and every crossed slip is caught by a check the student can use again (a hypotenuse shorter than a leg). Degree mode is said once, with the "sine ninety gives one" test. Recalculated with SymPy 1.14 (`work/brief-review-standard-t1/verify.py`, `python -I`, 0 failures): sin 35° = 0.573576, cos 35° = 0.819152, tan 35° = 0.700208; 5.5 sin 35° = 3.154670 (3.15 m), 5.5 cos 35° = 4.505336 (4.51 m), their ratio 0.700208; 0.57 × 5.5 = 3.135; 2 sin 35° = 1.147153, 10 sin 35° = 5.735764; sin(35 rad) = −0.428183; sin 90° = 1; cos 48° = 0.669131, 9 ÷ cos 48° = 13.450289, 9 cos 48° = 6.022175; 4.5 tan 65° = 9.650281, 4.5 sin 65° = 4.078385; sin 58° = 0.848048, 2.4 ÷ sin 58° = 2.830028, 2.4 sin 58° = 2.035315; the memory-aid case 12 sin 70° = 11.28. All correct.
+
+## Findings
+
+1. **Should fix, scene 2 (why the same angle gives the same ratio).** "The sides change, but the shape doesn't. So if you divide the height by the sloping side, you always get the same number." A student who has never met similar triangles asks: why does the same shape mean the same division? The examples show it is true, not why. Fix. Narration, after "but the shape doesn't": "Make it twice as big, and the height and the sloping side both double, so height divided by slope stays the same. Halve it, and both halve." Also say "keep the thirty-five degree angle and the right angle" in the first sentence, so the shape really is fixed. Visual: on "twice as big" a "×2" hand tag on both the height and the slope of a ghost copy. Students should understand that scaling multiplies both sides by the same number, which cancels when one is divided by the other. About 7 s.
+
+2. **Should fix, scene 2 (the ghost labels do not divide to what they say).** The ghost tag "1.15 ÷ 2 = 0.57" is false as written: 1.15 ÷ 2 = 0.575, which a student checking on a calculator rounds to 0.58, in the very scene that claims the ratio never changes. Fix: tag the ghosts with four-decimal heights to match the readout, "1.1472 ÷ 2 = 0.5736" and "5.7358 ÷ 10 = 0.5736" (both checked in `suggested.py`). Keep the spoken "about one point one five" and "about five point seven four". No time change.
+
+3. **Should fix, scene 4 ("In the wrong mode, sine thirty-five gives a negative number").** True for radian mode at 35, but students will take "positive means the mode is right". It is not: in radian mode sin 58 = 0.993, so attempt 2 gives a believable 2.42 m; gradian mode gives sin 35 = 0.522, also positive. Fix. Narration: "In radian mode, sine thirty-five even comes out negative, and a ratio of two lengths can't be negative. But a wrong-mode answer can also look normal, so trust the sine ninety check. Look for a small D at the top of the screen." Visual: keep the RAD flip and the crossed −0.4281; on "look normal" a grey row "RAD: 2.4 ÷ sin 58 = 2.42 (looks fine, but wrong)". Students should understand that the sine-ninety test, not the sign of the answer, confirms degree mode. About 6 s.
+
+4. **Should fix, scene 5 (crowded frame).** The house plate at about 900 px, the coded triangle at about 700 px and 52 px rows "at the right" leave about 320 px for rows such as "h = 5.5 × sin 35°" (about 480 px at 52 px). Something will shrink or overlap. Fix: keep the house as the 300 px badge from scene 2 (top left), with "3.15 m" and "4.51 m" writing onto the badge's triangle as they are found; the coded triangle at about 700 px on the left; rows from about x = 820. The same repair applies to t01b scene 3.
+
+5. **Optional, scene 4 (one long scene).** At 790 characters (about 59 s plus calculator settling) it carries the three ratios, SOH CAH TOA, θ, the calculator and the mode check. Consider starting scene 5 with "On a calculator, sine thirty-five degrees is zero point five seven three six..." and the mode check, so the ratio names settle before the calculator arrives. Also listen for how the Google voice reads "sin, cos and tan" in "On screen they're shortened to sin, cos and tan"; if "cos" comes out as "because", spell it as "coz" in the speech text only.
+
+## Joins
+
+r13 / r14 to t01a: matches. r14's scene 12 and r13's Standard 1 panel describe the same house plate, amber triangle, "35°", "?", "not to scale", "Ratios and rates: done" and "Next" chips, and "Here's the house from last time" is true for both courses. The roof angle is confirmed at 35° (rulings 56, 62), so r13 and r14 can be voiced. t01a to t01b: scene 12's frame ("3.15 m", "4.51 m", the "?" card over 35°) is t01b's stated opening frame; no angle value is shown.
+
+## Practice and feedback
+
+Both cards keep the full worded question on screen through the 10 s countdown, and neither picture carries an answer (A1 shows "h", A2 shows "r"). A1 (tangent, unknown on top) and A2 (sine, unknown underneath) practise the two cases taught, with different ratios from the worked examples. Each feedback gives the answer, the reason (which sides, which ratio, which way to solve), short working and one crossed slip with a reason a student can reuse ("no hypotenuse"; "shorter than the pole"), at about 27 s and 28 s. A pole's wire and a shade-sail rope are fair everyday anchors; no safety rule is claimed, so no source is needed.
+
+## Key notes and length
+
+The five notes are the essentials and short. About 504 s with holds; findings 1 and 3 add about 13 s, about 517 s, well under 570 s.
+
+No speech, design edits, builds or commits were made.
