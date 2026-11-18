@@ -110,3 +110,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 
 ## Rulings on the p01 to p08 designs (19 November 2026)
 76. Accepted: p01's die in place of the sunrise chip; p02's corrected attempt 2 slip (1/5); p03's short "without replacement" scene for Standard 1; p05's seeded run (0.7, 0.54, 0.507); p06 at 4,981 characters with staged monthly values labelled; p07's 12 s bridge scene (first trim); p08 briefs the bread loaf (z01 does not), uses the produce scale plate for z01's bench, and asks "Of whom?" among its five questions.
+
+## Rulings on the b01 to b07 designs (19 November 2026)
+77. Accepted: the rideshare callbacks (b03, b04b, b06); the new sunscreen bottle plate; b03 keeps the site's imagined country-names coincidence; ruling 65 read as b04a by eye and digitally (named "least squares" once) with the calculator's A and B in b06; b04b's chosen axes and crossed false intercept; b05's single strength guide (strong 0.8 and above, moderate 0.5 to 0.8, weak below 0.5, the same sign rule both ways) and its new invented attempt data; b06's "squares shrinking" picture; b07's final frame (p01 opens on it); b01's three additions to the kiosk plate brief (t05 paints it with them).
