@@ -84,3 +84,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 58. **Playlist numbers (ruling 46):** r01 to r14 occupy 37 to 50 and t01 to t11 occupy 51 to 61 (t01a and t01b share 51). Where an older file (route inputs 4, the outline JSON, a design's "playlistOrder") disagrees, the ruled order wins; Codex flags but does not hold on it.
 59. **t05 two-route frame** (Standard 2 to t06, Standard 1 to bivariate b01) and t11's final frame show b01's opening picture; the beach kiosk board (temperature against ice creams sold) is provisional until the b01 pack exists.
 60. **Left out, as the syllabus says:** the ambiguous case of the sine rule (t07); the site's two-angle simultaneous-equation method (t03).
+
+## Rulings on the t06 to t11 designs (18 November 2026)
+61. Accepted: t07's swapped sail edges (the first angle has one answer); t08 as one video; t09 at 4,954 characters; t10 worked on the four-cornered paddock after r07's five-sided sketch; the dropped attempt parts (t09, t10, t11) for brief feedback. **t10's description quotes only t10's own syllabus points** (r07 and r08 are named in narration as callbacks, not in the description). t09's spray rate and fabric price stay labelled examples; Codex finds dated sources (ruling 51 pattern). t06's opening matches t05's final frame once t05 is written (fixed in the learning-review resolution).
