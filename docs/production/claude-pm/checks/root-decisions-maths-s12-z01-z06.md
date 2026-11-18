@@ -4,7 +4,24 @@
 
 Every value was recalculated with exact fractions and `statistics` in Python 3.14 (scratchpad `z/verify.py` and `z/search.py`, run with `python -I`, 0 failures). Narration was counted by script (scratchpad `z/count.py`, the method of `work/brief-resolve-standard-t1/count.py`, which reproduces e08's 5,632). Every bold cue is quoted in its scene's Visual in spoken order (`z/cues.py`, no misses), the syllabus quotes in each description match the route-inputs JSON exactly (checked by script), and no design contains an em dash. Seconds are speech at 13.3 characters a second plus countdowns, holds, settling and the 45 s notes scene; measure on the Google voice.
 
-## Summary
+## Revision 2 (19 Nov 2026): learning review resolved
+
+All six designs are at Revision 2 after the independent learning review (`m-s12-z01-z06-learning-review-summary.md` and the per-design files), resolved under root's binding decisions of 19 Nov. Resolution log: `m-s12-z01-z06-learning-review-resolution.md`. Recounted by `work/brief-resolve-standard-z/count.py` (reproduces e08's 5,632); changed numbers rechecked by `work/brief-resolve-standard-z/verify.py` (`python -I`, 0 failures). The Revision 1 text below is kept for the record; where it differs, this section and the designs govern.
+
+| Design | Characters (Rev 1 → Rev 2) | About (s, with holds) | What changed |
+| --- | --- | --- | --- |
+| z01 | 5,069 → 5,477 | 530 | the fold reason for mean = median = mode; heavier and lighter pushes; **1,000 imagined loaves** (not 2,000), seeded so z04 counts 683, 954, 997; feedback 1 slip "(b) negatively skewed"; feedback 2 slip "(a) Farm A: its curve is higher" |
+| z02 | 5,057 → 5,499 | 524 | σ = 20 against σ = 1 ghost bells (why the spread is the ruler); A2 (b) says "using this mean and standard deviation"; 704 g worked aloud; "three fifths" |
+| z03 | 5,126 → 5,307 | 504 | the times version of the sentence frame in scene 6; key note 5 "saying which way is better"; "relative to her class" in plain words; the long jump's subtraction spoken |
+| z04 | 5,079 → 5,348 | 515 | z01's 1,000 imagined loaves counted inside the bands (683, 954, 997); "same bell, slid and stretched"; "+27 (both sides)"; thin-piece labels outside the curve |
+| z05 | 5,141 → 5,160 | 505 | **600 Christmas trees at a tree farm** replace the student heights (every number kept); area linked to z01's columns; scene 4 shows only each sum's pieces; the 400-loaf day lands on **11**, not 10; scene 4's "above" against "away" sentences trimmed |
+| z06 | 5,033 → 5,343 | 520 | one unusual loaf is set aside and **weighed again** (the oven is checked only for an unusual batch); "fewer than 2.5% that heavy or heavier"; **five ordinary days (18, 23, 16, 21, 25)** before yesterday's 46; "z from −2 to 2" at the gate |
+
+Joins: unchanged. z01 still opens on p08's final frame exactly (p08's decisions file section 8 is on disk and matches, so section 1's re-check is done), and z06's final frame (section 3, the "Morning jobs" board and its lead-in) is unchanged, so c01a opens on it. Every other join in section 2 is unchanged.
+
+Items below that change: section 4 item 2 (2,000 imagined loaves → 1,000, root's decision 2); section 4 item 6 (z05's "above" against "away from" sentences are trimmed in Revision 2; z06 carries both tails); section 5 (no example now concerns people: z05's worked example is Christmas trees); section 7 (z04 adds a dot-strip counter to `BandSlider`; z05's gate-and-tray check lands on 11; z06's batch counter shows five earlier days as ticks); section 9 items 1, 2, 4 and 5 are closed (ruling 75 and root's decisions 1 to 3); item 3 is confirmed by ruling 75 and stays provisional only on c01a's side.
+
+## Summary (Revision 1)
 
 | Design | Characters | About (s, with holds) | Scenes | Course | Anchor | New plate briefed here | Open question |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -56,18 +73,18 @@ z06 scene 12, held about 2 s, then returned to silently after the notes (scene 1
 ## 4. Departures from the packs (each recorded in its design)
 
 1. **z01's loaves:** frequencies 1, 9, 50, 81, 47, 10, 2 (mean 710.05 g, median 710, mode 710, σ 4.9997 g) replace the pack's 3, 15, 40, 84, 42, 13, 3 (mean 709.95 g, σ 5.57 g), so the 200 loaves have the σ of 5 g that z02 to z06 use. The three centres still differ slightly.
-2. **z01:** the bell is shown from 2,000 imagined loaves in 1 g columns (seeded, drawing only) after the 200 real-looking ones; A2 is an original egg-farm graph because the pack's two ovens (σ 4 and 9 g) teach scene 6; the pack's state-wide test anchor and PegBoard are not used.
+2. **z01:** the bell is shown from 2,000 imagined loaves in 1 g columns (seeded, drawing only; **Revision 2: 1,000**, so the 1 g columns stand as tall as the 200 loaves' 5 g columns and z04 counts the same set) after the 200 real-looking ones; A2 is an original egg-farm graph because the pack's two ovens (σ 4 and 9 g) teach scene 6; the pack's state-wide test anchor and PegBoard are not used.
 3. **z02:** the worked example is the site's SA 1 (ii) set as a test (−1.17), with the site's 88 (z = 2) as a quick check; the step back uses the site's fill the gap (50); the IQ and height examples are not used.
 4. **z03:** an original swimming time (34.5 s, mean 36.0, SD 1.0, z = −1.5) teaches "lower is better" before attempt 2; the site's activity 2 is the worked ranking (Tom, Sarah, Emma, computed; the site gives none); the site's SA 2 (all z = 1.0) and the pack's basketball and netball pair are left out for pace.
 5. **z04:** A1 is the pack's fast bowler (124 to 140 km/h; 68%) because the pack's question 1 repeats the loaves' bands; the worked example extends the site's `we-1` (a) to "middle 95%" and "72 to 82" (34%); the skewed taps return from z01 (80 of 100 within ±σ).
-6. **z05:** no split; attempt 1 asks "less than 46 minutes" (0.975), not the pack's 37 to 46 minutes (81.5%, the worked example's shape); "above" against "away from" the mean (16% and 32%) is added to scene 4; the site's rice bags (30 of 1,200) are author notes only.
+6. **z05:** no split; attempt 1 asks "less than 46 minutes" (0.975), not the pack's 37 to 46 minutes (81.5%, the worked example's shape); "above" against "away from" the mean (16% and 32%) is added to scene 4 (trimmed in Revision 2, review finding 5); the site's rice bags (30 of 1,200) are author notes only.
 7. **z06:** the juice bottles are the worked example (the site's bolt and battery repeat the same step); "less extreme" (the middle 95%) is said, from the syllabus wording; the pack's simulator reaction time is not used (its "assume normal" caveat would cost time); a batch judgement (46 outside, about 20 expected) covers "sets of data".
 8. **Plates (ruling 17):** the loaf is p08's brief; the rack is briefed in z05, where it first appears; the café counter in z06 for c01a. The pack's "new bench scale" is the existing `ma11-produce-scale-v1.png` (p08's choice, kept).
 
 ## 5. Sources to confirm (Codex maths check)
 
 - No prices, rates, fees or official statistics appear in z01 to z06 (rulings 5 and 32 do not apply). Every dataset is invented and labelled (z01's description says so).
-- The site's height hook (MS-57) is not used. The z05 heights example is the site's lesson03 `we-1` numbers on a coded bell, not a claim about real students.
+- The site's height hook (MS-57) is not used. The z05 heights example is the site's lesson03 `we-1` numbers on a coded bell, not a claim about real students. **Revision 2:** set as the heights of 600 Christmas trees at a tree farm (ruling 75), so no example concerns people.
 - The z02 syllabus text writes "(x - μ)/σ" with a hyphen in the route JSON; descriptions quote it as is. Codex reports if the NESA page uses a minus sign.
 
 ## 6. Site corrections applied
@@ -86,10 +103,10 @@ As `maths-standard-kit-needs-z-c-f.md`, with these uses and small additions reco
 
 ## 9. For root
 
-1. **z01's loaves** (section 4, item 1): accept the changed frequencies so σ is 5 g across the strand, or keep the pack's (σ 5.57 g) and say "about 5.6 g" in z01 with 5 g as "the bakery's long-run figure" in z02 to z06.
-2. **p08 → z01** (section 1): confirm against p08's decisions file section 8 when it exists; ask p08's author to drop the first 12 blocks into classes consistent with z01's frequencies (suggested list in section 1).
-3. **z06's final frame** (section 3): confirm for the c01a designer (the jobs with times, no letters).
-4. **z05's heights example:** keep the site's lesson03 `we-1` as numbers only, or ask for a non-people context (a new example would be needed).
-5. **z03's swim and z06's batch judgement** (original additions): accept, or trim (about 30 s and 35 s).
+1. **z01's loaves** (section 4, item 1; closed, ruling 75): accept the changed frequencies so σ is 5 g across the strand, or keep the pack's (σ 5.57 g) and say "about 5.6 g" in z01 with 5 g as "the bakery's long-run figure" in z02 to z06.
+2. **p08 → z01** (section 1; closed in Revision 2: p08's section 8 matches): confirm against p08's decisions file section 8 when it exists; ask p08's author to drop the first 12 blocks into classes consistent with z01's frequencies (suggested list in section 1).
+3. **z06's final frame** (section 3; confirmed, ruling 75; unchanged in Revision 2): confirm for the c01a designer (the jobs with times, no letters).
+4. **z05's heights example** (closed: Christmas trees, ruling 75 and root's decision 1): keep the site's lesson03 `we-1` as numbers only, or ask for a non-people context (a new example would be needed).
+5. **z03's swim and z06's batch judgement** (original additions; closed, both kept, the batch now shown against five ordinary days): accept, or trim (about 30 s and 35 s).
 
 Nothing recorded; human listening pending.
