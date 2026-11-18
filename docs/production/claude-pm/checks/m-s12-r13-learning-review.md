@@ -1,0 +1,31 @@
+# Maths S12 r13 Revision 1: independent learning review
+
+18 November 2026. Design `lessons/math-s12-r13.md`, "How does fuel consumption compare the efficiency of two vehicles?" Source SHA256 `48ef9200f705a64ac9538bbd1696af76831b0579c1a4a8458d716096a9119706`.
+
+Written design reviewed (narration, visual descriptions, question cards, feedback, key notes and decisions) by tracing it from its stated entry knowledge (r09: a unit rate; r12a and r12b: a trip's distance; r11: price per unit) as a Mathematics Standard student starting Year 12, for both courses, and checking the two-route ending as a Standard 1 student leaving the strand. No built preview, plate inspection, playback or human listening is claimed; pace figures are speech-only estimates at 13.3 characters a second and need measuring on the Google voice. An AI beginner-perspective review identifies likely problems; it is not evidence that real students learned.
+
+**Verdict: should-fix** (0 blockers, 2 should fix, 1 optional).
+
+This is a good design. "Count the hundreds of kilometres first" turns ÷ 100 into a reason, and the block ruler makes it visible: each 100 km block drops a 7.5 L chunk, with a 0.8 block at the end. "Lower is better" is given its cause (less fuel for the same distance) and contrasted with r09's pay per hour, where bigger wins. The fill-up gives the label caveat a number (8.0 against 7.5), and the SUV comparison holds distance and price fixed and says why. The price is dated and sourced on screen and said once to change (rulings 5, 32, 47), and A2 uses one fuel at the ruled price (ruling 52). Recalculated with SymPy 1.14 (`work/brief-review-standard-r2/verify.py`, `python -I`): 66 L, $148.50, $49.50 each, slip 6600 L; `we-3` at 35.7 L, $73.185 ($73.19), slip $17.425 ($17.43); fill-up 600 km, 8.0 L/100 km, range 562.5 km; SUV 79.2 L, $178.20, 13.2 L and $29.70; A1 at 548 km, 7.007 (7.0), slip 14.27; A2 at 915 L, 1410 L, $1113.75 (also $3172.50 − $2058.75), slip 91 500; the memory-aid case, 14.5 L. All correct.
+
+## Findings
+
+1. **Should fix, scene 2 (why litres per hundred kilometres, not per kilometre).** "In Australia, fuel use is given as a rate, litres per hundred kilometres" states the unit without a reason. A student who has just met unit rates (the amount for one) will ask why this rate is not per one kilometre. r11 already gave the answer in another setting (per 100 g avoids tiny numbers). Fix, after the first sentence: "Per kilometre, it would be a tiny number, zero point zero seven five litres. So, like per hundred grams for coffee, a hundred kilometres gives a handier number." Screen: a grey row "7.5 L ÷ 100 = 0.075 L per km" that dims as the 100 km block lights, grey chip "r11: a handy unit". Students should understand that L/100 km is an ordinary rate with a convenient amount on the bottom, which also makes "count the hundreds" in scene 3 feel natural. Time: about 12 s.
+
+2. **Should fix, scene 6 and feedback 1 (the fill-up formula is asserted, and why refill litres equal litres used is not said).** "Litres divided by kilometres, times a hundred, is eight litres per hundred kilometres" gives a recipe in a video whose method so far is "count the hundreds"; the student also is not told why the 48 L that go in at the second fill-up are the litres the car used. Fix, scene 6: "The litres it takes to fill up again are the litres the car used. Six hundred kilometres is six hundreds, so forty-eight divided by six is eight litres per hundred kilometres, more than the label's seven point five." Screen: "600 km = 6 hundreds", "48 ÷ 6 = 8.0 L/100 km" (keep "48 ÷ 600 × 100" as a small grey second line, since that is the key-note form). Feedback 1 then follows the same route: "The distance is the difference, five hundred and forty-eight kilometres, which is five point four eight hundreds. Thirty-eight point four divided by five point four eight is about seven point zero litres per hundred kilometres." The rest of feedback 1 is unchanged. Students should be able to find consumption by the same "count the hundreds" idea in both directions. Time: about 7 s in scene 6 and 1 s in feedback 1 (about 32 s, at the edge of the 30 s guide).
+
+3. **Optional, scene 6 (range is a number without a step).** "A forty-five litre tank would last about five hundred and sixty kilometres" gives no working, and range is outside the syllabus wording. With findings 1 and 2 adding about 20 s, take this named reserve trim (open decision 3). If it stays, say "forty-five litres is about five and a half lots of eight litres, so about five hundred and sixty kilometres" (45 ÷ 8 = 5.625).
+
+## Joins
+
+r12b to r13 matches (the hatchback, the small trip graph, "880 km driven", the fuel gauge near E; scene 1 asks the same question). r13 to r14 (Standard 2): the left panel (phone dock and panel heater on a power board, "which costs more to run?") is r14's opening, and r14 fades the right panel on its first sentence. r13 to t01 (Standard 1, ruling 45): the right panel is the house with the amber roof triangle, "35°", "?" and "not to scale" (ruling 53). The narration ("If you're doing Standard 1, rates are done, and next is right-angled triangles, starting with how high this roof is") is self-explanatory for a Standard 1 student leaving the strand. math-s12-t01 is not designed yet, so this half of the join can only be confirmed when t01 opens on this exact panel; ruling 53 allows t01 to change the angle, in which case only the label changes here and in r14.
+
+## Practice and feedback
+
+Both cards keep the full worded question on screen through the 10 s countdown; A1's picture shows only the two odometer readings and the litres, and A2's shows only the two vehicles and their labels. Each feedback gives the answer, the reason, short working and one crossed slip (about 31 s each, at the edge of the guide). A1 (c) asks for a judgement and the feedback gives the reason ("more than six point two, so it's less efficient").
+
+## Key notes and length
+
+Five useful notes; note 4 states the fill-up formula, which finding 2 makes reachable. About 528 s with holds; findings 1 and 2 add about 20 s, to about 548 s, under 570 s with a 22 s margin. Taking finding 3's trim gives back about 5 s. Measure on the voiced take.
+
+No speech, design edits, builds or commits were made.
