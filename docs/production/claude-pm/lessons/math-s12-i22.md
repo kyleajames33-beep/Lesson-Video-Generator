@@ -1,8 +1,17 @@
 # Maths S12 I22: How do the starting amount, payment, rate and term change an annuity's value? One input at a time in a spreadsheet, and why time beats everything (design)
 
-Status: Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings 1 to 33 (`../checks/root-rulings-maths-standard-outline.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings 1 to 33 (`../checks/root-rulings-maths-standard-outline.md`). Not voiced. Next: Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,642 characters by script (see "Narration length estimate"), 14 scene headings, about 524 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,642 characters by script (see "Narration length estimate"; Revision 2), 14 scene headings, about 524 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (18 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-i22-learning-review.md` (summary `../checks/m-s12-i12-i23-learning-review-summary.md`), with root's rulings 1 to 42 in `../checks/root-rulings-maths-standard-outline.md` and root's resolution brief of 18 Nov. Resolution log: `../checks/m-s12-i12-i23-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, key note 3 ("more than in proportion" read as the value): **accepted**. Key note 3 is "Longer time or higher rate: the interest grows more than in proportion." Scene 8 adds "in the interest": "interest on interest makes the difference in the interest bigger than you'd expect".
+2. Optional, scene 7 ("the example from the lesson notes"): **applied**. "Here's a classic example." It saves exactly the characters scene 8 gains, so the total is unchanged.
+
+Narration 5,642 characters by script (Revision 1: 5,642), about 524 s with holds, 46 s under the 570 s cap. Changed money was rechecked with SymPy (`work/brief-resolve-standard-i2/verify.py`, `python -I`). Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: Year 12 Mathematics Standard (2024), outline playlist order 35, Annuities. **Standard 2 only.** "Using digital tools" is part of the point, so the main tool is a spreadsheet with four input cells, plus one look at an unbranded online savings calculator. No formula is shown; every value comes from the spreadsheet (root ruling 33). Pre-design pack: `../pre-design/maths-standard/math-s12-i22.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/annuities/lesson02.sa.html` (SHA256 `7507f0b0368b652290ae14ed4768d709dd55e5448c5f224999d1e195c4aa708a`; card 07's two investors, $200 a month at 6% from 25 and from 35) and `lesson01.sa.html` (SHA256 `10e58b7c910545878083156e34cbb6a9d719081a8e75cbaf7862ff18d28a83a4`; card 08's "raise the contribution, lengthen the term, change the rate"). The site never varies the amount initially invested and shows no digital tool (MS-29), so those parts are original. Route entry: `math-s12-i22` in `../../programme/maths-standard-route-inputs-3.json`. Visual system: maths studio kit; the pay envelope plate; the spreadsheet, results log, bars, calculator window and curves coded.
 
@@ -91,12 +100,12 @@ Visual: stage change: the input panel full width; the periods cell resets to "12
 Visual: camera continue. The "amount initially invested" cell glows gold and changes "$0" to "$2,000" (teal); the shimmer runs. On "three" the output reads "$20,026.73"; log row "start $2,000 | $20,026.73 | $14,000 | $6,026.73". A teal row, 44 px: "the $2,000 grows to 2,000 × 1.005¹²⁰ ≈ $3,639", grey chips "i02: a single sum grows" and "i21: the single sum". On "way" the bar shows a teal block grown into a larger teal block on top of the base bar, hand tag "a head start earns all the way".
 
 ### 7. starting early
-> So which change is the most powerful? Usually it's time. Here's the example from the lesson notes. Two savers each put in two hundred dollars a month at six per cent a year. One starts at twenty-five, the other at thirty-five, and both stop at **sixty-five**. The early starter ends with about three hundred and ninety-eight thousand dollars. The later one ends with about two hundred and one thousand. The early starter only put in twenty-four thousand dollars more, but ends up with nearly double. Those ten extra years at the start earn interest for the longest **time**.
+> So which change is the most powerful? Usually it's time. Here's a classic example. Two savers each put in two hundred dollars a month at six per cent a year. One starts at twenty-five, the other at thirty-five, and both stop at **sixty-five**. The early starter ends with about three hundred and ninety-eight thousand dollars. The later one ends with about two hundred and one thousand. The early starter only put in twenty-four thousand dollars more, but ends up with nearly double. Those ten extra years at the start earn interest for the longest **time**.
 
 Visual: stage change: two account-book icons labelled "saver 1: from 25" and "saver 2: from 35" (coded, no people). The graph (simulation 3; age 25 to 65, $0 to $400,000): saver 1's curve starts at 25, saver 2's at 35; on "sixty-five" both run to 65, the first pulling away; end labels "$398,298.15" and "$200,903.01" (blue). Row, 44 px: "put in: $96,000 against $72,000"; the gap bracketed "nearly double", hand tag "10 years earlier: nearly double". On "time" the first ten years of saver 1's curve ring amber, hand tag "compare what went in".
 
 ### 8. memory aid
-> Here's the summary. Double the payment, and the value doubles. But give it more time, or a better rate, and interest on interest makes the difference bigger than you'd expect. Payment scales. Time **compounds**.
+> Here's the summary. Double the payment, and the value doubles. But give it more time, or a better rate, and interest on interest makes the difference in the interest bigger than you'd expect. Payment scales. Time **compounds**.
 
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the results log's five split bars small. Main line, hand font 56 px: "Payment scales. Time compounds." On "compounds" the key line, 40 px: "Change one input at a time, and compare what went in with what came out." Hold about 2 s.
 
@@ -131,7 +140,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 - Change one input at a time; compare with the base case.
 - Double the payment: the value exactly doubles.
-- Longer time or higher rate: more than in proportion.
+- Longer time or higher rate: the interest grows more than in proportion.
 - An initial amount earns interest for the whole term.
 - Starting early is usually the biggest change.
 
@@ -188,7 +197,7 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12i/verify.py`, run with
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632): **5,642 characters**, 14 scene headings. Characters per scene are in `../checks/root-decisions-maths-s12-i12-i23.md`, section 1.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632): **5,642 characters** (Revision 2; Revision 1: 5,642), 14 scene headings. Characters per scene are in `../checks/root-decisions-maths-s12-i12-i23.md`, section 1.
 
 At 13.3 characters per second the speech is about 424 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for each recalculation shimmer and bar (2 to 6) and the curves (7) about 34 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 524 s (8 min 44 s)**, 46 s under the 570 s cap. Feedback speech: about 31 s and 25 s.
 
@@ -279,5 +288,7 @@ Builds on: Annuities: The Contribution Needed for a Savings Goal. Next: Annuitie
 - **2. The starting-early story uses the site's card 07** ($200 a month, ages 25 and 35). Confirm, or use A2's figures only.
 
 ## Review notes
+
+- Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" at the top and `../checks/m-s12-i12-i23-learning-review-resolution.md`). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A.
 
 - Revision 1. Next: student learning review (trace from i21 for a Standard 2 student; check that "one input at a time" is a reason and not a rule, that the bars make "scales" against "compounds" visible, that the head start is linked to i21's single sum, that the savers are clearly not people, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
