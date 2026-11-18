@@ -104,3 +104,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 72. **Continuity anchors:** the bakery loaves through the normal distribution videos and the café and shed through critical path are deliberate callbacks; each video still has its own worked example.
 73. **f04** is the last core Year 12 Standard video: it ends on "core videos complete" and points to the Year 12 Maths Standard playlist, with no promise of future videos.
 74. **Site errors** MS-47 to MS-59 (normal distribution and networks) are never taught; the corrected critical-path diagram total (7, not 12) and the saturated-edges path-order warning are taught correctly.
+
+## Rulings on the z01 to z06 designs (19 November 2026)
+75. Accepted: z01's loaf frequencies changed so σ = 5 g throughout; z02's test-mark example; z03's original swim time and the omission of the all-equal example; z04's fast-bowler attempt; z05's "less than 46 minutes" attempt; p08's loaf plate across the strand and the new bread rack plate in z05. **z05's student-heights example** is replaced by a context with no people (for example parcel weights or a bottle fill), keeping the numbers. **z06's final frame** (the bakery-café "Morning jobs" chalkboard) opens c01a exactly.
