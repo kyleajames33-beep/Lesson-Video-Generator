@@ -1,8 +1,21 @@
 # Maths S12 R11: Which pack is the best buy? Unit price as a rate, price ÷ quantity in a common unit, a handy unit such as per 100 g, the same unit first, reading shelf labels, and when the best value is not the best buy (design)
 
-Status: Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a06.md`, `i09.md`, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 47). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a06.md`, `i09.md`, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 47). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,028 characters by script (see "Narration length estimate"), 13 scene headings, about 469 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,199 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 484 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (18 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-r11-learning-review.md` (summary `../checks/m-s12-r08-r14-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-standard-outline.md` (1 to 53) and root's resolution brief of 18 Nov. Resolution log: `../checks/m-s12-r08-r14-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 5 (the label-unit trap shown but never said; its number clashed with the first juice): **accepted**, reviewer's wording (root's decision 3: the third juice is named). After "two dollars ten per litre": "Say a third juice shows twenty-two cents per hundred millilitres. That looks cheaper, but a litre is ten lots of a hundred millilitres, so it's two dollars twenty a litre, dearer than two dollars ten." The general rule follows as "So check the units on every label. If one says per litre and another says per hundred millilitres, convert one before you compare." The labels are now "Juice A", "Juice B" and "Juice C: $0.22 per 100 mL"; Juice A's label slides out as C arrives, so C is compared only with B's green $2.10. On "ten lots" the "× 10" arrow turns C into "$2.20 per 1 L"; on the new bold cue "dearer" an amber bracket "+10c a litre" sits between C and B. Juice C is added to "Numbers used" and "Numbers to verify".
+2. Optional, open decision 1 (shelf-label wording): **applied as root's decision 2**. The narration keeps "Supermarket shelf labels usually print the unit price". Author note (d2) and Codex error check 4 now say that Codex may allow "big supermarkets have to show it" if it confirms the Grocery Unit Pricing Code's coverage, and records the choice. Open decision 1 is closed.
+
+Feedback 2 (about 31 s in Revision 1) is trimmed to 399 characters (about 30 s): "Thirty dollars over" becomes "Thirty over", "per gigabyte" becomes "a gigabyte" once, and "for its lower price per gigabyte" becomes "for its price per gigabyte". The answer, reason and slip are unchanged.
+
+Length: narration 5,199 characters by script (Revision 1: 5,028), about 484 s with holds (about 2 s more settling for Juice C). Feedbacks about 22 s and 30 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings.
+
+Joins unchanged: scene 1 is still r10's final frame, and scene 12 is still r12a's opening frame. New cue: "dearer" (scene 5); new hand tag "looks cheaper". No em dash (U+2014); every bold cue is quoted in its scene's Visual in spoken order (checked by script, `work/brief-resolve-standard-r2/cues.py`). Changed values rechecked with SymPy (`work/brief-resolve-standard-r2/verify.py`, `python -I`). Nothing recorded; human listening pending.
 
 Scope: eleventh video of the Year 12 Ratios and rates strand, playlist order 58 (route inputs 4). Shared by Standard 1 and Standard 2 (identical wording). Pre-design pack: `../pre-design/maths-standard/math-s12-r11.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/ratios-and-rates/lesson01.sa.html` (SHA256 `05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381`; the hook, "Supermarket A sells 2 kg of flour for $3.80. Supermarket B sells 5 kg for $8.75. Which is better value?", and its revisit, "$1.90/kg ... $1.75/kg ... cheaper per kilogram despite having the higher total price"; card 05, "find the cost per gram or per unit, then the cheapest rate wins"; `we-1`, orange juice, 1.25 L for $2.80 and 2 L for $4.20, $2.24 and $2.10 per litre; Trap 03, "A larger pack is not automatically cheaper per unit"; quick-fire 3, coffee, 400 g for $7.60 and 600 g for $11.10; SA 5, 375 mL for $6.45, 750 mL for $11.40 and 1.5 L for $24.00, per 100 mL $1.72, $1.52, $1.60). Route entry: `math-s12-r11` in `../../programme/maths-standard-route-inputs-4.json`. Visual system: maths studio kit; the flour bags plate (painted under r10's brief) as the anchor; the phone and hatchback plates reused; shelf labels, blocks and boards coded.
 
@@ -25,7 +38,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Anchor: the site's flour (painted plate, live).** 2 kg for $3.80 against 5 kg for $8.75: $1.90 against $1.75 per kg; the bag with the higher price tag is the cheaper flour; at the small bag's rate 5 kg would cost $9.50, so the big bag saves 75 cents. Shopping. Plate: `ms12-flour-bags-v1.png` (briefed in r10). No supermarket name (the site's "Supermarket A" and "B" become two bags on one shelf).
 - **Handy unit: the site's coffee (quick-fire 3).** 1.9 cents a gram against 1.85, read as $1.90 and $1.85 per 100 g.
 - **Worked example: the site's SA 5 (olive oil, per 100 mL).** 375 mL, 750 mL and 1.5 L: $1.72, $1.52 and $1.60 per 100 mL; the middle bottle wins; crossed "1.5 L, the biggest" (caption "$1.60 is more than $1.52"). The route names the product as olive oil.
-- **Shelf labels: the site's `we-1` (juice).** $2.24 and $2.10 per litre, read off two coded, unbranded shelf labels (ShelfLabel). Narration says labels "usually" print the unit price; it does not cite the Unit Pricing Code (pack section 7; Codex re-verifies the Code before any stronger claim).
+- **Shelf labels: the site's `we-1` (juice).** $2.24 and $2.10 per litre, read off two coded, unbranded shelf labels (ShelfLabel), named Juice A and Juice B; Revision 2 adds an original Juice C at $0.22 per 100 mL ($2.20 per litre), said aloud, to show the label-unit trap. Narration says labels "usually" print the unit price; it does not cite the Unit Pricing Code (pack section 7; Codex re-verifies the Code before any stronger claim).
 - **Best value against best buy (pack decision).** One short scene with the same flour: stale flour, money today, and paying for what you use.
 - **Site notes (pack section 8).** No error in the parts used. The site's numbers are kept throughout.
 - **Join.** Scene 1 opens on r10's final frame exactly.
@@ -36,7 +49,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   3. **ShelfLabel flips** (scenes 4, 5; new kit part): each label flips from its price to its unit-price line; the lowest rings green.
   4. **100 mL blocks** (scene 4): each bottle's quantity bar cuts into 100 mL blocks (3.75, 7.5 and 15 blocks), the price spreading across them.
 - **Colour roles (fixed for r09 to r11).** Price **teal**; quantity **violet**; unit price **amber**; best value **green**; mistake **red**, crossed slips only.
-- **Large type, handwritten voice.** As a04a. Hand tags: "lower tag", "more flour", "price ÷ quantity", "per 1 kg", "cheaper flour", "saves 75c", "tiny numbers", "handy unit: per 100 g", "same unit first", "count the 100 mLs", "bigger isn't always cheaper", "printed for you", "same unit on both?", "stale before it's used", "money today", "for what you'll use". At most two live at once.
+- **Large type, handwritten voice.** As a04a. Hand tags: "lower tag", "more flour", "price ÷ quantity", "per 1 kg", "cheaper flour", "saves 75c", "tiny numbers", "handy unit: per 100 g", "same unit first", "count the 100 mLs", "bigger isn't always cheaper", "printed for you", "looks cheaper", "same unit on both?", "stale before it's used", "money today", "for what you'll use". At most two live at once.
 - **Stage changes (standard item 2).** r10's frame and the flour (1); price blocks and the buying race (2); the coffee per 100 g (3); g01 board, the olive oil (4); the juice labels (5); best value against best buy (6); framed card (7); question cards (8 to 11); the road trip for r12a (12); key notes (13).
 - **Worked example (g01 layout).** Scene 4: task strip "Olive oil is sold in three sizes: 375 mL for $6.45, 750 mL for $11.40 and 1.5 L for $24.00. (a) Find the cost per 100 mL for each size. (b) State which size offers the best value." (site SA 5); givens card "375 mL: $6.45", "750 mL: $11.40", "1.5 L: $24.00" (quantities violet, prices teal); rows "1.5 L = 1500 mL"; "100 mL lots: 3.75, 7.5, 15"; "6.45 ÷ 3.75 = $1.72", "11.40 ÷ 7.5 = $1.52", "24.00 ÷ 15 = $1.60"; framed answer "750 mL, $1.52 per 100 mL"; crossed slip "1.5 L, the biggest" (caption "$1.60 is more than $1.52").
 - **Memory aid.** Framed card: "Unit price = price ÷ quantity. Lowest wins." Key line: "Same unit first. Best value is the best buy only if you'll use it."
@@ -52,7 +65,8 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (a) Flour: 3.80 ÷ 2 = 1.90; 8.75 ÷ 5 = 1.75; 1.90 × 5 = 9.50; 9.50 − 8.75 = 0.75; difference 0.15 per kg.
   (b) Coffee: 7.60 ÷ 400 = 0.019 $/g; 11.10 ÷ 600 = 0.0185 $/g; per 100 g: 7.60 ÷ 4 = 1.90, 11.10 ÷ 6 = 1.85.
   (c) Olive oil: 6.45 ÷ 3.75 = 1.72; 11.40 ÷ 7.5 = 1.52; 24.00 ÷ 15 = 1.60; 1.60 − 1.52 = 0.08.
-  (d) Juice: 2.80 ÷ 1.25 = 2.24; 4.20 ÷ 2 = 2.10.
+  (d) Juice: 2.80 ÷ 1.25 = 2.24; 4.20 ÷ 2 = 2.10; Juice C 0.22 × 10 = 2.20 per litre, 10c a litre dearer than B (Revision 2).
+  (d2) Shelf-label wording (root's decision 2, Revision 2): narration keeps "Supermarket shelf labels usually print the unit price". If Codex's maths check confirms that the Grocery Unit Pricing Code requires the large grocery retailers it covers to show unit prices, Codex may allow the stronger line "Big supermarkets have to show it" in place of "usually" (for example: "Big supermarkets have to print the unit price for you, in small type under the main price."). Codex records which wording it allowed; without that confirmation, "usually" stays.
   (e) A1: 2.60; 11.50 ÷ 5 = 2.30; 24.00 ÷ 10 = 2.40. A2: 30 ÷ 35 = 0.857 (86c); 45 ÷ 60 = 0.75; 45 − 30 = 15.
   (f) Pronunciations: "a dollar ninety per kilogram"; "one point nine cents"; "three hundred and seventy-five millilitres"; "eighty-six cents".
   (g) Prices are realistic NSW 2026 examples, labelled as examples on screen ("example prices"); the site's numbers are kept.
@@ -87,9 +101,9 @@ Visual: stage change: two coded coffee packs as quantity strips (violet), "400 g
 Visual: clear change to the g01 board. Task strip, 44 px: "Olive oil is sold in three sizes: 375 mL for $6.45, 750 mL for $11.40 and 1.5 L for $24.00. (a) Find the cost per 100 mL for each size. (b) State which size offers the best value." (site SA 5). Givens card, 44 px: "375 mL: $6.45", "750 mL: $11.40", "1.5 L: $24.00" (quantities violet, prices teal). On "millilitres" row, 52 px: "1.5 L = 1500 mL" (grey chip "r10: × 1000"), hand tag "same unit first". On "count the hundreds" the three quantity strips cut into 100 mL blocks (simulation 4): "3.75", "7.5", "15" (hand tag "count the 100 mLs"). On "sixty" rows, 52 px: "6.45 ÷ 3.75 = $1.72", "11.40 ÷ 7.5 = $1.52", "24.00 ÷ 15 = $1.60" (amber). On "value" framed answer (green) "750 mL: $1.52 per 100 mL". On "biggest bottle" a red slip "1.5 L, the biggest" writes; on "cheaper" it is crossed (caption "$1.60 is more than $1.52"), hand tag "bigger isn't always cheaper".
 
 ### 5. read the shelf label
-> You don't always have to divide. Supermarket shelf labels usually print the unit price for you, in small type under the main price. Here's orange juice. One point two five litres for two dollars eighty shows two dollars twenty-four per **litre**. Two litres for four dollars twenty shows two dollars ten per **litre**. Just check that both labels use the same unit. If one says per litre and the other says per hundred millilitres, convert one before you **compare**.
+> You don't always have to divide. Supermarket shelf labels usually print the unit price for you, in small type under the main price. Here's orange juice. One point two five litres for two dollars eighty shows two dollars twenty-four per **litre**. Two litres for four dollars twenty shows two dollars ten per **litre**. Say a third juice shows twenty-two cents per hundred millilitres. That looks cheaper, but a litre is ten lots of a hundred millilitres, so it's two dollars twenty a litre, **dearer** than two dollars ten. So check the units on every label. If one says per litre and another says per hundred millilitres, convert one before you **compare**.
 
-Visual: stage change: two coded, unbranded shelf labels (ShelfLabel, simulation 3), each about 700 × 300 px: "Orange juice 1.25 L, $2.80" and "Orange juice 2 L, $4.20" (teal price, violet size), with a small amber unit-price line. On "small type" the first label's unit-price line enlarges, hand tag "printed for you". On "litre" (first bold) the first label flips to "$2.24 per 1 L" (amber, 52 px); on "litre" (second bold) the second flips to "$2.10 per 1 L", ringed green. On "same unit" a third label slides in, "$0.22 per 100 mL", greyed, beside a "$2.10 per 1 L" label; on "compare" a "× 10" arrow turns it into "$2.20 per 1 L", hand tag "same unit on both?". Site `we-1` numbers.
+Visual: stage change: two coded, unbranded shelf labels (ShelfLabel, simulation 3), each about 700 × 300 px: "Juice A: orange juice 1.25 L, $2.80" and "Juice B: orange juice 2 L, $4.20" (teal price, violet size), with a small amber unit-price line. On "small type" the first label's unit-price line enlarges, hand tag "printed for you". On "litre" (first bold) the first label flips to "$2.24 per 1 L" (amber, 52 px); on "litre" (second bold) the second flips to "$2.10 per 1 L", ringed green. On "third juice" a third label slides in at the right, "Juice C: $0.22 per 100 mL" (its "per 100 mL" violet), and Juice A's label slides out so only B and C stand side by side. On "looks cheaper" the "$0.22" pulses, hand tag "looks cheaper"; on "ten lots" a "× 10" arrow (amber) runs from "100 mL" to "1 L" and from "$0.22" to "$2.20", and the label becomes "$2.20 per 1 L"; on "dearer" it sits beside the green "$2.10 per 1 L", an amber bracket "+10c a litre" between them. On "check the units" both labels' unit lines ring, hand tag "same unit on both?"; on "compare" the bracket and tag hold. Site `we-1` numbers for A and B; Juice C is an original example (Revision 2).
 
 ### 6. best value or best buy?
 > The best value isn't always the best buy. If you only bake once a month, five kilograms of flour could go stale, or get weevils, before you finish it. The bigger bag also costs more money today, even if it saves later. A lower unit price only saves money on what you actually use. So the best buy is the best value, for an amount you'll really **use**.
@@ -117,7 +131,7 @@ Visual: the card shrinks to the top (30 px). On "kilogram" rows, 44 px: "2.60 ÷
 Visual: `QuestionCard`, 40 px: "A prepaid phone provider offers $30 for 35 GB of data or $45 for 60 GB, each lasting 28 days. (a) Find the cost per GB of each recharge. (b) Which recharge is better value per GB? (c) Someone uses about 20 GB every 28 days. Which recharge should they buy? Explain." Picture slot: the phone plate `ma12-phone-v1.png` (about 360 px tall) beside two coded recharge tags "$30: 35 GB" and "$45: 60 GB". Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> Thirty dollars over thirty-five gigabytes is about eighty-six cents per gigabyte. Forty-five over sixty is seventy-five **cents**. So the forty-five dollar recharge is better value. But someone using twenty gigabytes should buy the thirty dollar one. It covers their data and costs fifteen dollars **less**. Picking the forty-five dollar one for its lower price per gigabyte is the slip. They'd pay for data they never **use**.
+> Thirty over thirty-five gigabytes is about eighty-six cents a gigabyte. Forty-five over sixty is seventy-five **cents**. So the forty-five dollar recharge is better value. But someone using twenty gigabytes should buy the thirty dollar one. It covers their data and costs fifteen dollars **less**. Picking the forty-five dollar one for its price per gigabyte is the slip. They'd pay for data they never **use**.
 
 Visual: the card shrinks to the top. Rows, 44 px: "30 ÷ 35 ≈ $0.86 per GB"; on "cents" "45 ÷ 60 = $0.75 per GB" (amber), "(b) $45 recharge". On "less" framed answer (green) "(c) $30: covers 20 GB, $15 less". On "slip" a red slip "$45, because it's cheaper per GB" writes; on "use" it is crossed (caption "pays for data they won't use"). Hold about 1 s.
 
@@ -143,10 +157,10 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Teaching checks
 
 - **Does it explain causes?** Why tags mislead: different amounts (1). Why divide: the price of one unit compares every pack the same way (2). Why per 100 g: the same order with readable numbers (3). Why convert first: otherwise the division mixes units (4, 5). Why best value is not always the best buy: savings only count on what is used, and the money goes now (6).
-- **Misconceptions addressed:** the lower tag (1, 2); the biggest pack (4 crossed, A1 crossed); per litre against per 100 mL (5); rounding tiny unit prices (3); best value called the best buy (6, A2 crossed).
+- **Misconceptions addressed:** the lower tag (1, 2); the biggest pack (4 crossed, A1 crossed); per litre against per 100 mL (5, said with Juice C in Revision 2); rounding tiny unit prices (3); best value called the best buy (6, A2 crossed).
 - **Visual standard, item by item:** 1 the flour bags from the first frame and again in 6; 2 a new stage every 30 to 70 s; 3 the price blocks, the buying race with live readouts, the flipping shelf labels, the 100 mL blocks; 4 fixed roles (price teal, quantity violet, unit price amber, best green); 5 large type; 6 hand tags; 7 g01 board in 4; 8 framed card and five bullets; 9 the bag with the higher tag showing the shorter block.
 - **One idea at a time:** unit price (2), a handy unit (3), the same unit first (4), labels (5), best buy (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 22 s and 31 s.
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 22 s and 30 s (Revision 2).
 - **Avoided double teaching:** r09's unit rate is the method; r10's L to mL is a grey chip.
 - **Standard 1 path:** identical.
 - **Syllabus coverage:** "Compare unit prices to determine best buys" (2 to 6, A1, A2; all five key notes).
@@ -167,7 +181,7 @@ Model answer: (a) $30 ÷ 35 ≈ $0.86 per GB; $45 ÷ 60 = $0.75 per GB. (b) The 
 | Flour (site hook) | 3.80 ÷ 2 = 1.90; 8.75 ÷ 5 = 1.75; 15c a kg; 1.90 × 5 = 9.50; saves 0.75 | 1, 2, 6 |
 | Coffee (site quick-fire 3) | 0.019 and 0.0185 $/g; 7.60 ÷ 4 = 1.90; 11.10 ÷ 6 = 1.85 per 100 g; 5c | 3 |
 | Olive oil (site SA 5) | 1.5 L = 1500 mL; 3.75, 7.5, 15 lots; 1.72, 1.52, 1.60; 8c | 4 |
-| Juice (site `we-1`) | 2.80 ÷ 1.25 = 2.24; 4.20 ÷ 2 = 2.10; $0.22 per 100 mL × 10 = $2.20 per L (label-unit illustration) | 5 |
+| Juice (site `we-1`, A and B; Juice C original) | 2.80 ÷ 1.25 = 2.24; 4.20 ÷ 2 = 2.10; Juice C $0.22 per 100 mL × 10 = $2.20 per L, 10c a litre more than $2.10 | 5 |
 | A1 | 2.60; 2.30; 2.40 | 8, 9 |
 | A2 | 30 ÷ 35 ≈ 0.86; 45 ÷ 60 = 0.75; $15 | 10, 11 |
 | Handoff | 880 km; 100 km/h for 400 km; 45-minute stop; 90 km/h (no line drawn) | 12 |
@@ -179,7 +193,7 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12r/verify.py`, run with
 - 3.80/2 = 1.90; 8.75/5 = 1.75; 1.90 × 5 = 9.50; 9.50 − 8.75 = 0.75.
 - 7.60/400 = 0.019; 11.10/600 = 0.0185; 7.60/4 = 1.90; 11.10/6 = 1.85.
 - 6.45/3.75 = 1.72; 11.40/7.5 = 1.52; 24.00/15 = 1.60.
-- 2.80/1.25 = 2.24; 4.20/2 = 2.10.
+- 2.80/1.25 = 2.24; 4.20/2 = 2.10; 0.22 × 10 = 2.20; 2.20 − 2.10 = 0.10 (Revision 2, `work/brief-resolve-standard-r2/verify.py`).
 - 11.50/5 = 2.30; 24.00/10 = 2.40; 30/35 = 0.857; 45/60 = 0.75; 45 − 30 = 15.
 
 ## Memory aid check
@@ -189,9 +203,9 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12r/verify.py`, run with
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s12r/check.py`, which reproduces e08's 5,632): **5,028 characters**, 13 scene headings. Characters per scene (1 to 13): 370, 554, 535, 845, 455, 348, 189, 275, 291, 351, 415, 325, 75.
+Revision 2, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-resolve-standard-r2/count.py`, which reproduces e08's 5,632): **5,199 characters**, 13 scene headings. Characters per scene (1 to 13): 370, 554, 535, 845, 642, 348, 189, 275, 291, 351, 399, 325, 75. Revision 1 was 5,028 (scene 5 455, scene 11 415).
 
-At 13.3 characters per second the speech is about 378 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the price blocks and race (2), the 100 mL blocks (4), the flipping labels (5) and the calendar (6) about 26 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 469 s**, under the 570 s cap. Feedback speech: about 22 s and 31 s.
+At 13.3 characters per second the speech is about 391 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the price blocks and race (2), the 100 mL blocks (4), the flipping labels (5) and the calendar (6) about 26 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Revision 2 adds about 2 s of settling for Juice C's label. Total **about 484 s** (Revision 1: about 469 s), under the 570 s cap. Feedback speech: about 22 s and 30 s.
 
 Reserve trims if the voiced take runs long: scene 1's "A few cents on every kilogram adds up over a year of shopping, so it's worth knowing how to check." (keep it if possible: it is the why-it-matters line); scene 3's "which is hard to read and easy to round badly".
 
@@ -246,7 +260,7 @@ Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with a CAS, and every value in narration, screen text, attempts and key notes against "Numbers used".
 2. Confirm the two syllabus quotes match the route-inputs JSON exactly, with the Standard 1 and Standard 2 labels correct.
 3. Confirm the site's flour, coffee, olive oil (SA 5) and juice (`we-1`) numbers and answers are kept.
-4. Check the claim "shelf labels usually print the unit price" against the current Grocery Unit Pricing Code (ACCC) and report whether stronger wording is supported; no retailer is named.
+4. Check the claim "shelf labels usually print the unit price" against the current Grocery Unit Pricing Code (ACCC) and report whether stronger wording is supported; no retailer is named. If the Code's coverage is confirmed, Codex may allow "Big supermarkets have to show it" (author note (d2)) and records the choice.
 5. Confirm both attempts carry every demand and neither card nor picture shows an answer (A1's tags show no unit price).
 6. Confirm scene 1 opens on r10's final frame and scene 12's axes are empty.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
@@ -274,9 +288,10 @@ Builds on: Converting Rates and Using Them to Solve Problems. Next: Distance-Tim
 
 ## Open decisions
 
-- **1. Shelf-label wording (Codex).** "usually print the unit price" stays unless the maths check confirms the Unit Pricing Code's current coverage; then root may allow "big supermarkets must show the unit price".
+- **1. Shelf-label wording (Codex).** "usually print the unit price" stays unless the maths check confirms the Unit Pricing Code's current coverage; then root may allow "big supermarkets must show the unit price". Closed in Revision 2 by root's decision 2: keep "usually"; Codex may allow "big supermarkets have to show it" if it confirms the Code's coverage (author note (d2)).
 - **2. A1 without part (c) (root).** The pack's rice question (c) (a reason the best value isn't the best buy) is left out of A1 to keep its feedback under 30 s; A2 (c) asks the same idea with the recharge.
 
 ## Review notes
 
+- Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" at the top). Next: Codex maths check (including the shelf-label wording) and error check, then voicing on the Google voice and a build to grade A.
 - Revision 1. Next: student learning review (trace from r10; check that "unit price" is understood as a rate before the coffee and oil, that the per-100 g step reads as choice and not a new rule, that the 100 mL counts (3.75, 7.5, 15) are explained by the blocks, that the best-buy scene is short and not preachy, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

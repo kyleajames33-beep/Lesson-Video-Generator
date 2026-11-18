@@ -39,3 +39,5 @@ When a job is waiting (quota, plates rendering), move to the next one rather tha
 **Root, 18 Nov:** brief 251 (`codex-prompts/251-maths-standard-a-check-plates-voice.md`): the first 16 Year 12 Maths Standard designs. Steps 1 to 3 (maths check, anchors, plates) in gaps after the 19 Year 11 Maths plates and brief 250; voice after the Year 11 Maths voicing.
 
 **Root, 18 Nov evening:** brief 252 (`codex-prompts/252-maths-standard-i-check-plates-voice.md`): the 26 Maths Standard money designs. Steps 1 to 3 after brief 251's steps 1 to 3; voice after brief 251.
+
+**Root, 18 Nov evening:** brief 253 (`codex-prompts/253-maths-standard-r-check-plates-voice.md`): the 16 Maths Standard ratios and rates designs. Steps 1 to 3 after brief 252's steps 1 to 3; voice after brief 252 (r13 and r14 wait for t01).
