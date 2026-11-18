@@ -1,8 +1,22 @@
 # Maths S12 I10: How does declining-balance depreciation work, and why does it look like compound interest? A percentage of the current value, the part kept (1 − r), S = V₀(1 − r)ⁿ, shrinking yearly losses, a curve that never reaches zero, and the formula beside FV = PV(1 + r)ⁿ (design)
 
-Status: Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 33; ruling 33 keeps finding r with a root out of this video's demands; ruling 30: on both paths). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 33; ruling 33 keeps finding r with a root out of this video's demands; ruling 30: on both paths). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,001 characters by script (see "Narration length estimate"), 12 scene headings, about 465 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,093 characters by script (see "Narration length estimate"; Revision 2), 12 scene headings, about 472 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (18 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-i10-learning-review.md` (summary `../checks/m-s12-i01-i11-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-standard-outline.md` (1 to 42) and root's resolution brief of 18 Nov. Resolution log: `../checks/m-s12-i01-i11-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 3 ("V nought" without its meaning, ruling 36): **accepted**, reviewer's wording. "S equals V nought, the starting value, times one minus r, to the power of n." The formula strip's V₀ drops a 36 px tag "V₀: the starting value" beside "1 − r: the part kept".
+2. Optional, scene 3 (the r × n × V₀ slip has no reason yet): **applied**. "... is the **slip**, because after the first year, it's twenty-two per cent of a smaller value." Hand tag "a % of a smaller value" on the crossed slip.
+3. Optional, attempt 2 (a 15% investment): **applied**, reviewer's 8%. "Five thousand dollars is invested at eight per cent a year compound interest, and a five-thousand-dollar machine depreciates at eight per cent a year declining balance." Answers $5,832.00 and $4,232.00; feedback 2 says "five thousand eight hundred and thirty-two dollars" and "four thousand two hundred and thirty-two **dollars**" (the cue "dollars" replaces "fifty"); the crossed slip is "machine: 5000 × 1.08²" (caption "depreciation keeps 92%: × 0.92"). The card, model answer, decisions and numbers are updated.
+
+Length: findings 1 and 2 add about 7 s; finding 3 is about the same length. No trim is needed.
+
+Open decisions closed: 2. Decision 1 is backed by the review and left for root to confirm. Joins unchanged.
+
+Narration 5,093 characters by script (Revision 1: 5,001), about 472 s with holds; speech before the notes about 427 s, under the 570 s cap. Feedback speech about 28 s and 29 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Changed values are checked in `work/brief-resolve-standard-i1/verify.py` (SymPy 1.14, `python -I`). Nothing recorded; human listening pending.
 
 Scope: twelfth video of the Year 12 Investment and loans strand, outline playlist order 23. Shared by Standard 1 and Standard 2. The comparison with the compound interest formula is a Standard 1 point in wording (`cid65c76c0`); both courses see it, because it explains the formula. Pre-design pack: `../pre-design/maths-standard/math-s12-i10.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/investment-and-loans/lesson03.sa.html` (SHA256 `ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131`; "reduces the asset's value by a fixed percentage of its current value each period, so the dollar amount of depreciation decreases"; "The multiplier is (1 − r), e.g. 1 − 0.18 = 0.82"; the Insight box, "structurally identical to A = P(1 + r)ⁿ ... just subtraction instead of addition inside the bracket"; "Model limits ... S approaches zero but does not reach it"; `we-2`, a $38,500 vehicle at 22% p.a. declining balance, $18,270.25 after 3 years and $20,229.75 total; Traps 02 and 03). `we-4` (finding r) is left out (pack pace flag; the syllabus asks to calculate the depreciation). Route entry: `math-s12-i10` in `../../programme/maths-standard-route-inputs-2.json`. Visual system: maths studio kit; the ute (painted for i09's final frame) as the anchor; the reused delivery van in the final frame; ladders, bars, curves and the formula twin coded.
 
@@ -41,7 +55,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Visual surprise.** The same ladder as i02a, run with × 0.78, makes losses that shrink while compound interest's gains grow (scenes 4, 5); the curve rides on towards the axis and never touches it (scene 4).
 - **Site notes (pack section 8).** No numerical error in the declining-balance parts of lesson03. Trap 02 (1 + r) is crossed in scene 2; Trap 03 (r × n × V₀) in scene 3. `we-4` (a fourth root for r) is left out (pack; ruling 33's spirit for Standard). The card's $32,000 at 18% is not used (a06 used 18% on a car).
 - **Plain meanings at first use.** Declining balance ("the same percentage of the current value taken off each period"); depreciation rate r ("the percentage lost each period, as a decimal"); the part kept ("100% minus the rate").
-- **Attempts.** A1 (pack question 1 numbers, on a food truck so the anchor is not repeated): $46,000 at 20%: $23,552 after 3 years; total $22,448; crossed "0.2 × 3 × 46 000 = $27 600" (caption "total depreciation = V₀ − S"). A2 (pack question 2): $5,000 invested at 15% p.a. compound and a $5,000 machine at 15% declining balance: $6,612.50 and $3,612.50; one similarity and one difference; crossed "5000 × 1.15² for the machine" (caption "depreciation keeps 85%: × 0.85").
+- **Attempts.** A1 (pack question 1 numbers, on a food truck so the anchor is not repeated): $46,000 at 20%: $23,552 after 3 years; total $22,448; crossed "0.2 × 3 × 46 000 = $27 600" (caption "total depreciation = V₀ − S"). A2 (pack question 2): $5,000 invested at 8% p.a. compound (Revision 2; Revision 1 used 15%) and a $5,000 machine at 8% declining balance: $5,832.00 and $4,232.00; one similarity and one difference; crossed "5000 × 1.08² for the machine" (caption "depreciation keeps 92%: × 0.92").
 - **Mistake scene:** none separate. 1 + r as the multiplier (2 crossed, A2 crossed); r itself as the multiplier (2, said); r × n × V₀ for the total (3 crossed, A1 crossed); expecting zero after 100 ÷ r years (4, said); "the two formulas are the same" (5).
 - **Cause chain taught, in order:** (1) a ute's value falls fastest when it is newest, so a percentage of the current value fits better than a fixed dollar amount (1); (2) losing r% keeps 100% − r%, so each year multiplies by 1 − r (2); (3) n years are n multiplications, so S = V₀(1 − r)ⁿ, and the total lost is what it started at minus what is left (3); (4) each loss is r times a smaller value, so the losses shrink and the curve flattens (4); (5) multiplying a positive value by 0.78 never gives zero, so the model never reaches zero, though a real ute is eventually sold or scrapped (4); (6) the compound interest formula has the same shape, a start times a multiplier to the power n, but adds r, so its value and its yearly changes grow, while declining balance subtracts r, so its value and its yearly changes shrink (5).
 - **Entry knowledge (route):** i09 (V₀, S, n, total depreciation; a straight line); i02a (FV = PV(1 + r)ⁿ); a05 (an exponential decay curve, both courses); a06 (Standard 2 only: the part kept). Recalled in a phrase or grey chip.
@@ -52,7 +66,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (a) Ute: 38 500 × 0.78ⁿ: 30 030, 23 423.4, 18 270.252 (n = 1 to 3); n = 10: 3209.2737; losses 8470, 6606.60, 5153.148 ≈ 5153.15; total 20 229.748 ≈ 20 229.75 (8470 + 6606.60 + 5153.15 = 20 229.75). Slips: 0.22 × 3 × 38 500 = 25 410; 38 500 × 1.22³ = 69 910.15; 38 500 × 0.22³ = 409.95.
   (b) Twin: 10 000 × 1.2ⁿ: 12 000, 14 400, 17 280; 10 000 × 0.8ⁿ: 8000, 6400, 5120.
   (c) A1: 46 000 × 0.8³ = 23 552; total 22 448; slip 27 600.
-  (d) A2: 5000 × 1.15² = 6612.50; 5000 × 0.85² = 3612.50.
+  (d) A2 (Revision 2, 8%): 5000 × 1.08² = 5832.00; 5000 × 0.92² = 4232.00.
   (e) ATO sentence: 200% ÷ 8 = 25% (no calculation shown).
   (f) Pronunciations: "S equals V nought times one minus r, to the power of n"; "zero point seven eight"; "eighteen thousand two hundred and seventy dollars and twenty-five cents".
 
@@ -76,9 +90,9 @@ Visual: opens on i09's final frame exactly (the ute with "new: $38,500", the emp
 Visual: stage change: the ute (600 px) at the top left with its tag; the ladder (simulation 1), 52 px, across the middle: "$38,500" (violet) "→ × 0.78 → $30,030 → × 0.78 → $23,423.40 → × 0.78 → $18,270.25". On "cent" (first bold) a bar under the first rung, 100% wide: 78% olive "kept", 22% grey "lost", row "100% − 22% = 78%", hand tag "the part kept"; grey chip "Standard 2, a06: the part you keep". On "eight" "= 0.78" (amber), hand tag "× 0.78 each year". On "thirty thousand and thirty" the first rung fills and the ute's tag rewrites; then "$23,423.40". On "cents" "$18,270.25" (framed green). On "slip" a red slip "38 500 × 1.22³" writes and is crossed (caption "1.22 means growth: keep 78%, × 0.78").
 
 ### 3. the formula and the total
-> Three years, three multiplications, so the formula is S equals V nought times one minus r, to the power of n. Here, r is the rate as a decimal, and one minus r is the part kept. For the ute, S is thirty-eight thousand five hundred times zero point seven eight cubed, eighteen thousand two hundred and seventy dollars and twenty-five **cents**. The total depreciation is still what it started at, minus what's left. Thirty-eight thousand five hundred minus eighteen thousand two hundred and seventy dollars twenty-five is twenty thousand two hundred and twenty-nine dollars and seventy-five **cents**. Taking twenty-two per cent, times three, of the price is the **slip**.
+> Three years, three multiplications, so the formula is S equals V nought, the starting value, times one minus r, to the power of n. Here, r is the rate as a decimal, and one minus r is the part kept. For the ute, S is thirty-eight thousand five hundred times zero point seven eight cubed, eighteen thousand two hundred and seventy dollars and twenty-five **cents**. The total depreciation is still what it started at, minus what's left. Thirty-eight thousand five hundred minus eighteen thousand two hundred and seventy dollars twenty-five is twenty thousand two hundred and twenty-nine dollars and seventy-five **cents**. Taking twenty-two per cent, times three, of the price is the **slip**, because after the first year, it's twenty-two per cent of a smaller value.
 
-Visual: clear change to the g01 board, the ute (300 px) at the top right. Task strip, 44 px: "A ute is bought new for $38 500 and depreciates at 22% p.a. using the declining-balance method. Find (a) its value after 3 years (b) the total depreciation." (site `we-2`). Formula strip, 52 px: "S = V₀(1 − r)ⁿ" (V₀ violet, 1 − r amber), tags "S: value after n years", "1 − r: the part kept". Givens card, 44 px: "V₀ = $38 500" (violet), "r = 22% = 0.22, keep 0.78" (amber), "n = 3". Rows, 52 px: "S = 38 500 × 0.78³ = 18 270.252"; on "cents" (first) "≈ $18 270.25" (framed green). On "what it started at, minus what's left" grey chip "i09: total = V₀ − S", hand tag "total = V₀ − S". On "cents" (second) "38 500 − 18 270.25 = $20 229.75" (framed green). On "slip" a red slip "0.22 × 3 × 38 500 = $25 410" writes and is crossed (caption "total depreciation = V₀ − S").
+Visual: clear change to the g01 board, the ute (300 px) at the top right. Task strip, 44 px: "A ute is bought new for $38 500 and depreciates at 22% p.a. using the declining-balance method. Find (a) its value after 3 years (b) the total depreciation." (site `we-2`). Formula strip, 52 px: "S = V₀(1 − r)ⁿ" (V₀ violet, 1 − r amber), tags "S: value after n years", "V₀: the starting value" (36 px, on "the starting value"; Revision 2, review finding 1, ruling 36), "1 − r: the part kept". Givens card, 44 px: "V₀ = $38 500" (violet), "r = 22% = 0.22, keep 0.78" (amber), "n = 3". Rows, 52 px: "S = 38 500 × 0.78³ = 18 270.252"; on "cents" (first) "≈ $18 270.25" (framed green). On "what it started at, minus what's left" grey chip "i09: total = V₀ − S", hand tag "total = V₀ − S". On "cents" (second) "38 500 − 18 270.25 = $20 229.75" (framed green). On "slip" a red slip "0.22 × 3 × 38 500 = $25 410" writes and is crossed (caption "total depreciation = V₀ − S"); on "smaller value" hand tag "a % of a smaller value" (Revision 2, review finding 2).
 
 ### 4. shrinking losses, and a curve
 > Look at what's lost each year. Eight thousand four hundred and seventy dollars in year one, then six thousand six hundred and six dollars sixty, then five thousand one hundred and fifty-three dollars fifteen. The losses **shrink**, because each one is twenty-two per cent of a smaller value. So the graph is a curve. It falls steeply at first, then flattens **out**. After ten years, the model still says about three thousand two hundred dollars. Seventy-eight per cent of something is never zero, so in the model, the value never reaches **zero**. A real ute, of course, gets sold or scrapped.
@@ -106,14 +120,14 @@ Visual: `QuestionCard`, 40 px, worded as printed: "A food truck is bought for $4
 Visual: the card shrinks to the top (30 px). Rows, 44 px: "keep 100% − 20% = 80% = 0.8" (amber); "S = 46 000 × 0.8³"; on "dollars" (first) "= $23 552" (framed green). On "dollars" (second) "46 000 − 23 552 = $22 448" (framed green). On "slip" a red slip "0.2 × 3 × 46 000 = $27 600" writes and is crossed (caption "total depreciation = V₀ − S"). Hold about 1 s.
 
 ### 9. attempt 2 (countdown, 10 seconds)
-> Last one. Five thousand dollars is invested at fifteen per cent a year compound interest, and a five-thousand-dollar machine depreciates at fifteen per cent a year declining balance. Find each value after two years. Then describe one similarity and one difference between the two formulas. Pause here to answer.
+> Last one. Five thousand dollars is invested at eight per cent a year compound interest, and a five-thousand-dollar machine depreciates at eight per cent a year declining balance. Find each value after two years. Then describe one similarity and one difference between the two formulas. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "$5000 is invested at 15% p.a. compound interest, and a $5000 machine depreciates at 15% p.a. declining balance. (a) Find each value after 2 years. (b) Describe one similarity and one difference between the two formulas." Picture slot: empty axes, n 0 to 2 years, $0 to $7,000. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "$5000 is invested at 8% p.a. compound interest, and a $5000 machine depreciates at 8% p.a. declining balance. (a) Find each value after 2 years. (b) Describe one similarity and one difference between the two formulas." Picture slot: empty axes, n 0 to 2 years, $0 to $7,000. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 10. feedback 2 (brief)
-> The investment is five thousand times one point one five squared, six thousand six hundred and twelve dollars fifty. The machine is five thousand times zero point eight five squared, three thousand six hundred and twelve dollars **fifty**. Both are a start times a multiplier to the power n. But one plus r grows, and one minus r **falls**. Using one point one five for the machine is the **slip**.
+> The investment is five thousand times one point zero eight squared, five thousand eight hundred and thirty-two dollars. The machine is five thousand times zero point nine two squared, four thousand two hundred and thirty-two **dollars**. Both are a start times a multiplier to the power n. But one plus r grows, and one minus r **falls**. Using one point zero eight for the machine is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: "5000 × 1.15² = $6612.50" (teal, framed green); on "fifty" "5000 × 0.85² = $3612.50" (olive, framed green). On "falls" the twin formulas with "start × multiplier to the power n" (similarity) and "+ grows, − falls" (difference) framed green. On "slip" a red slip "machine: 5000 × 1.15²" writes and is crossed (caption "depreciation keeps 85%: × 0.85"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: "5000 × 1.08² = $5832.00" (teal, framed green); on "dollars" "5000 × 0.92² = $4232.00" (olive, framed green). On "falls" the twin formulas with "start × multiplier to the power n" (similarity) and "+ grows, − falls" (difference) framed green. On "slip" a red slip "machine: 5000 × 1.08²" writes and is crossed (caption "depreciation keeps 92%: × 0.92"). Hold about 1 s.
 
 ### 11. handoff
 > So now there are two ways to depreciate. Straight-line takes the same dollars every year, and declining balance the same percentage. Here's a delivery van, forty thousand dollars. One method takes six thousand a year, and the other twenty per cent a year. Which one loses value faster? That's **next**.
@@ -151,8 +165,8 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 11's frame exac
 **Attempt 1 (scene 7; pack question 1 numbers, original context, HSC style, 2 marks suggested, not an official marking scheme).** "A food truck is bought for $46 000. It depreciates at 20% p.a. using the declining-balance method. (a) Find its value after 3 years. (b) Find the total depreciation over the 3 years."
 Model answer: (a) S = 46 000 × 0.8³ = $23 552. (b) 46 000 − 23 552 = $22 448. Classic mistake (crossed): "0.2 × 3 × 46 000 = $27 600".
 
-**Attempt 2 (scene 9; pack question 2, 3 marks suggested).** "$5000 is invested at 15% p.a. compound interest, and a $5000 machine depreciates at 15% p.a. declining balance. (a) Find each value after 2 years. (b) Describe one similarity and one difference between the two formulas."
-Model answer: (a) Investment: 5000 × 1.15² = $6612.50; machine: 5000 × 0.85² = $3612.50. (b) Similarity: both are a starting value times a multiplier to the power n (the same calculator steps). Difference: compound interest multiplies by 1 + r, so the value grows by more each year; declining balance multiplies by 1 − r, so the value falls by less each year. Classic mistake (crossed): "machine: 5000 × 1.15²". (15% is a high investment rate, chosen so the two values separate clearly.)
+**Attempt 2 (scene 9; pack question 2 with 8% in place of 15% (Revision 2, review finding 3), 3 marks suggested).** "$5000 is invested at 8% p.a. compound interest, and a $5000 machine depreciates at 8% p.a. declining balance. (a) Find each value after 2 years. (b) Describe one similarity and one difference between the two formulas."
+Model answer: (a) Investment: 5000 × 1.08² = $5832.00; machine: 5000 × 0.92² = $4232.00. (b) Similarity: both are a starting value times a multiplier to the power n (the same calculator steps). Difference: compound interest multiplies by 1 + r, so the value grows by more each year; declining balance multiplies by 1 − r, so the value falls by less each year. Classic mistake (crossed): "machine: 5000 × 1.08²". (Revision 2: 8% replaces Revision 1's 15%, which is far above any savings or deposit rate in November 2026; the values still separate clearly.)
 
 ## Numbers used (author note: every value)
 
@@ -161,7 +175,7 @@ Model answer: (a) Investment: 5000 × 1.15² = $6612.50; machine: 5000 × 0.85²
 | Ute | 30 030; 23 423.40; 18 270.25; losses 8470, 6606.60, 5153.15; total 20 229.75; 10 years ≈ 3209.27; slips 25 410, 38 500 × 1.22³ | 1 to 4 |
 | Twin | 12 000, 14 400, 17 280 (+2000, +2400, +2880); 8000, 6400, 5120 (−2000, −1600, −1280) | 5 |
 | A1 | 23 552; 22 448; slip 27 600 | 7, 8 |
-| A2 | 6612.50; 3612.50 | 9, 10 |
+| A2 | 5832.00; 4232.00 | 9, 10 |
 | Handoff | $40,000; $6,000 a year; 20% a year (labels) | 11 |
 
 ## Numbers to verify (all values, repeated for Codex)
@@ -172,7 +186,7 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12i/verify.py`, run with
 - 0.22 × 3 × 38 500 = 25 410; 38 500 × 1.22³ = 69 910.148.
 - 10 000 × 1.2ⁿ: 12 000, 14 400, 17 280; 10 000 × 0.8ⁿ: 8000, 6400, 5120.
 - 46 000 × 0.8³ = 23 552; 46 000 − 23 552 = 22 448; 0.2 × 3 × 46 000 = 27 600.
-- 5000 × 1.15² = 6612.5; 5000 × 0.85² = 3612.5.
+- 5000 × 1.08² = 5832; 5000 × 0.92² = 4232.
 
 ## Memory aid check
 
@@ -181,11 +195,11 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12i/verify.py`, run with
 
 ## Narration length estimate
 
-Revision 1, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s12i/count.py`, a copy of `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632).
+Revision 2, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s12i/count.py`, a copy of `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632).
 
-**5,001 characters**, 12 scene headings. Characters per scene (1 to 12): 504, 604, 659, 582, 708, 250, 254, 370, 311, 386, 298, 75.
+**5,093 characters** (Revision 1: 5,001), 12 scene headings. Characters per scene (1 to 12): 504, 604, 755, 582, 708, 250, 254, 370, 307, 386, 298, 75.
 
-At 13.3 characters per second the speech is about 376 s. Total with the holds and settling below **about 465 s (7 min 45 s)**, 105 s under the 570 s cap; speech and holds before the notes about 420 s.
+At 13.3 characters per second the speech is about 383 s. Total with the holds and settling below **about 472 s (7 min 52 s)**, 98 s under the 570 s cap; speech and holds before the notes about 427 s.
 
 Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the ladder (2), the bars and the riding dot (4) and the twin lighting (5) about 24 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more.
 
@@ -256,9 +270,9 @@ Builds on: Straight-Line Depreciation: S = V₀ − Dn. Next: Straight-Line vs D
 
 ## Open decisions
 
-- **1. `we-4` left out (root).** Finding r from two values needs a fourth root; the syllabus asks only to calculate the depreciation, and the pack flags pace. If root wants it, it can be an optional Standard 2 practice item using i02b's root-key method.
-- **2. The ute for `we-2` (learning review).** The site's vehicle is unspecified; the ute links to i09's final frame and the pack's question 1. A1 moved to a food truck to avoid repeating the anchor.
+- **1. `we-4` left out (root).** Revision 2: the review agreed `we-4` stays out; still for root to confirm. Revision 1 text: Finding r from two values needs a fourth root; the syllabus asks only to calculate the depreciation, and the pack flags pace. If root wants it, it can be an optional Standard 2 practice item using i02b's root-key method.
+- **2. The ute for `we-2` (learning review).** Closed in Revision 2: the review raised no concern. Revision 1 text: The site's vehicle is unspecified; the ute links to i09's final frame and the pack's question 1. A1 moved to a food truck to avoid repeating the anchor.
 
 ## Review notes
 
-- Revision 1. Next: student learning review (trace from i09; check that "a percentage of what it's worth now" lands as the reason for the method, that the part kept comes before 0.78, that total = V₀ − S survives the r × n × V₀ temptation, that "never reaches zero" is clearly a model statement, that the twin scene gives a Standard 1 student words for "explain the similarities and differences", that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 resolves the student learning review (`../checks/m-s12-i10-learning-review.md`). Next: Codex maths check and error check, then voicing and a build to grade A. Revision 1 note: Next: student learning review (trace from i09; check that "a percentage of what it's worth now" lands as the reason for the method, that the part kept comes before 0.78, that total = V₀ − S survives the r × n × V₀ temptation, that "never reaches zero" is clearly a model statement, that the twin scene gives a Standard 1 student words for "explain the similarities and differences", that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

@@ -1,8 +1,23 @@
 # Maths S12 I09: How does straight-line depreciation work? The same dollars off every year, S = V₀ − Dn, total depreciation, a falling straight line that stops at zero, "first falls below" rounded up, and finding D (design)
 
-Status: Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 33; ruling 12: a06 only previewed depreciation, so this video teaches it from the start; ruling 30: on both paths). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (18 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a04a.md`, `a04b.md`, `a06.md`, each at Revision 2, and the faults logged in `../checks/m-s12-a01-a06-learning-review-resolution.md`) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 33; ruling 12: a06 only previewed depreciation, so this video teaches it from the start; ruling 30: on both paths). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,168 characters by script (see "Narration length estimate"), 13 scene headings, about 478 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,228 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 482 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (18 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-i09-learning-review.md` (summary `../checks/m-s12-i01-i11-learning-review-summary.md`), with root's rulings in `../checks/root-rulings-maths-standard-outline.md` (1 to 42) and root's resolution brief of 18 Nov. Resolution log: `../checks/m-s12-i01-i11-learning-review-resolution.md`. Findings by the review's numbers:
+
+The review passed this design (0 blockers, 0 should fix). Its two optional findings:
+
+1. Optional, scene 5 ("So seven years isn't enough"): **applied**, reviewer's wording. "Seven drops only take off fifty-one thousand eight hundred, so seven years isn't enough." A grey row "7 × 7400 = 51 800 < 55 000" comes before the round-up strip.
+2. Optional, key note 4 (an exact division): **applied** on screen only. Key note 4 now reads "divide the drop by D, round up, check both sides (exactly a whole number: one more year)". The key-notes line spoken in scene 13 is unchanged.
+
+Length: finding 1 adds about 4 s. No trim is needed.
+
+Open decisions closed: 1 (ruling 36). Still open: 2 (the title's Unicode subscript). Joins unchanged: the description's "Builds on" line names i08 by its Revision 2 title.
+
+Narration 5,228 characters by script (Revision 1: 5,168), about 482 s with holds; speech before the notes about 437 s, under the 570 s cap. Feedback speech about 30 s and 24 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Changed values are checked in `work/brief-resolve-standard-i1/verify.py` (SymPy 1.14, `python -I`). Nothing recorded; human listening pending.
 
 Scope: eleventh video of the Year 12 Investment and loans strand, outline playlist order 22. Shared by Standard 1 and Standard 2 (identical content; Standard 2 Investment and loans, Standard 1 Depreciation and loans). Pre-design pack: `../pre-design/maths-standard/math-s12-i09.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/investment-and-loans/lesson03.sa.html` (SHA256 `ec39ed540dbf06830d2fc9f00f56459edd17426cb88ac8acb5f849bb23ca9131`; the recall question "Does it lose another $6,000 in year two, or something different?"; "Straight-line: S = V₀ − Dn loses the same dollar amount D each year, linear, like simple interest in reverse"; "Total depreciation = V₀ − S"; the salvage value note ("need not equal market price"); "D = (V₀ − Sₙ) ÷ n"; `we-1`, the $85,000 equipment at $7,400 a year, $40,600 after 6 years and "first fall below $30,000" after 8 complete years with its two-sided check; drill 1, $6,200 at $540 a year, $3,500 after 5 years; drill 3, $50,000 to $18,000 in 8 years, D = $4,000). Route entry: `math-s12-i09` in `../../programme/maths-standard-route-inputs-2.json`. Visual system: maths studio kit; the tool box (painted for i08's final frame) as the anchor, one new plate for `we-1` (a mini excavator) and one for i10's anchor in the final frame (a ute); value bars, graphs and boards coded.
 
@@ -87,9 +102,9 @@ Visual: stage change: the formula strip, 64 px: "S = V₀ − Dn" (V₀ violet, 
 Visual: stage change: axes (n 0 to 12 years, value $0 to $7,000) at the right 65 per cent (simulation 2); the bar at the left. Each year's bar height becomes a point; on "year" (bold) a blue line falls through them, hand tag "falls by D a year", a step triangle "−$540". On "simple interest in reverse" a grey ghost of a rising line from i01 appears, mirrored about the start, with a chip "i01: simple interest"; hand tag "simple interest in reverse"; the ghost fades. On "reaches zero" the line runs to (11.48, 0); on "there" it stops at the axis, hand tag "stops at $0", grey row "6200 ÷ 540 ≈ 11.5 years". On "the model says" hand tag "a model, not a sale price".
 
 ### 5. worked example: when does it first fall below?
-> Here's a bigger example. A landscaping business buys a mini excavator for eighty-five thousand dollars. It depreciates by seven thousand four hundred a year, straight-line. Find its value after six years, and after how many complete years it first falls below thirty thousand. After six years, it's eighty-five thousand minus seven thousand four hundred times six, forty thousand six hundred **dollars**. To fall below thirty thousand, it has to lose more than fifty-five thousand. Fifty-five thousand divided by seven thousand four hundred is seven point four **three**. So seven years isn't enough. Check. After seven years, it's thirty-three thousand two hundred, still **above**. After eight, it's twenty-five thousand eight hundred, **below**. So the answer is eight complete years. Answering seven is the **slip**.
+> Here's a bigger example. A landscaping business buys a mini excavator for eighty-five thousand dollars. It depreciates by seven thousand four hundred a year, straight-line. Find its value after six years, and after how many complete years it first falls below thirty thousand. After six years, it's eighty-five thousand minus seven thousand four hundred times six, forty thousand six hundred **dollars**. To fall below thirty thousand, it has to lose more than fifty-five thousand. Fifty-five thousand divided by seven thousand four hundred is seven point four **three**. Seven drops only take off fifty-one thousand eight hundred, so seven years isn't enough. Check. After seven years, it's thirty-three thousand two hundred, still **above**. After eight, it's twenty-five thousand eight hundred, **below**. So the answer is eight complete years. Answering seven is the **slip**.
 
-Visual: clear change to the g01 board, the excavator `ms12-mini-excavator-v1.png` (600 px wide) at the top right with "$85,000". Task strip, 44 px: "A mini excavator was bought for $85 000. It depreciates by $7400 per year using the straight-line method. (a) Find its value after 6 years. (b) After how many complete years does its value first fall below $30 000?" (site `we-1`). Givens card, 44 px: "V₀ = $85 000" (violet), "D = $7400" (blue). Rows, 52 px: "(a) S = 85 000 − 7400 × 6"; on "dollars" "= $40 600" (framed green). On "more than fifty-five thousand" "(b) drop needed: 85 000 − 30 000 = $55 000", hand tag "how many $7,400 drops?". On "three" "55 000 ÷ 7400 ≈ 7.43"; a small graph (n 0 to 10, $0 to $90,000) with a dashed amber level at $30,000 and the crossing ringed at n ≈ 7.43 (simulation 3). A grey row tagged "Standard 2", 32 px, not spoken: "85 000 − 7400n < 30 000, n > 7.43". On "above" a round-up strip from 7 to 8: "n = 7: 85 000 − 7400 × 7 = $33 200 (above)"; on "below" (bold) "n = 8: $25 800 (below)", hand tags "check both sides" and "round up"; framed answer "8 complete years". On "slip" a red slip "7 years" writes and is crossed (caption "after 7 years it's still $33 200: round up").
+Visual: clear change to the g01 board, the excavator `ms12-mini-excavator-v1.png` (600 px wide) at the top right with "$85,000". Task strip, 44 px: "A mini excavator was bought for $85 000. It depreciates by $7400 per year using the straight-line method. (a) Find its value after 6 years. (b) After how many complete years does its value first fall below $30 000?" (site `we-1`). Givens card, 44 px: "V₀ = $85 000" (violet), "D = $7400" (blue). Rows, 52 px: "(a) S = 85 000 − 7400 × 6"; on "dollars" "= $40 600" (framed green). On "more than fifty-five thousand" "(b) drop needed: 85 000 − 30 000 = $55 000", hand tag "how many $7,400 drops?". On "three" "55 000 ÷ 7400 ≈ 7.43"; a small graph (n 0 to 10, $0 to $90,000) with a dashed amber level at $30,000 and the crossing ringed at n ≈ 7.43 (simulation 3). A grey row tagged "Standard 2", 32 px, not spoken: "85 000 − 7400n < 30 000, n > 7.43". On "Seven drops" a grey row, 36 px, "7 × 7400 = 51 800 < 55 000" (Revision 2, review finding 1). On "above" a round-up strip from 7 to 8: "n = 7: 85 000 − 7400 × 7 = $33 200 (above)"; on "below" (bold) "n = 8: $25 800 (below)", hand tags "check both sides" and "round up"; framed answer "8 complete years". On "slip" a red slip "7 years" writes and is crossed (caption "after 7 years it's still $33 200: round up").
 
 ### 6. finding D
 > Sometimes you know the start and the end, and need D. An asset is bought for fifty thousand dollars, and after eight years, its salvage value is eighteen thousand. It lost thirty-two thousand dollars, in eight equal **steps**. So each step is thirty-two thousand divided by eight, four thousand dollars a **year**. Check it. Fifty thousand minus four thousand times eight is eighteen **thousand**.
@@ -133,7 +148,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 - Straight-line: the same $D lost every period.
 - S = V₀ − Dn (S salvage value, V₀ starting value).
 - Total depreciation = V₀ − S = Dn. D = (V₀ − S) ÷ n.
-- "First below": divide the drop by D, round up, check both sides.
+- "First below": divide the drop by D, round up, check both sides (exactly a whole number: one more year).
 - Graph: a straight line down from V₀; stops at $0.
 
 Memory aid (framed card, right side, as in scene 7): *Straight-line: the same dollars off every year.* Key: *S = V₀ − Dn. Total depreciation = V₀ − S = Dn. A straight line down from V₀, stopping at $0.* The notes scene is 1,350 frames (45 s).
@@ -188,11 +203,11 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12i/verify.py`, run with
 
 ## Narration length estimate
 
-Revision 1, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s12i/count.py`, a copy of `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632).
+Revision 2, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s12i/count.py`, a copy of `work/brief-resolve-standard-a1/count.py`, which reproduces e08's 5,632).
 
-**5,168 characters**, 13 scene headings. Characters per scene (1 to 13): 540, 506, 571, 485, 800, 385, 236, 328, 393, 268, 322, 259, 75.
+**5,228 characters** (Revision 1: 5,168), 13 scene headings. Characters per scene (1 to 13): 540, 506, 571, 485, 860, 385, 236, 328, 393, 268, 322, 259, 75.
 
-At 13.3 characters per second the speech is about 389 s. Total with the holds and settling below **about 478 s (7 min 58 s)**, 92 s under the 570 s cap; speech and holds before the notes about 433 s.
+At 13.3 characters per second the speech is about 393 s. Total with the holds and settling below **about 482 s (8 min 2 s)**, 88 s under the 570 s cap; speech and holds before the notes about 437 s.
 
 Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the chunks (2), the line (4), the round-up strip (5) and the steps (6) about 24 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more.
 
@@ -261,15 +276,15 @@ Syllabus content, Standard 1:
 "Apply the straight-line depreciation method to calculate the depreciation of an asset using the formula S = V_0 - Dn where S = salvage value, V_0 = initial value of the asset, D = depreciation amount per time period and n = number of time periods"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb (Standard 1)
 
-Builds on: Savings, Term Deposits, Shares or Property: Which Investment? Next: Declining Balance Depreciation and Compound Interest.
+Builds on: Choosing an Investment Strategy. Next: Declining Balance Depreciation and Compound Interest.
 
 #Year12Maths #MathsStandard #Depreciation #HSCScience
 
 ## Open decisions
 
-- **1. "V nought" (root).** The narration reads V₀ once as "V nought", then says "the starting value". Some teachers say "V zero" or "V sub zero"; confirm the reading.
+- **1. "V nought" (root).** Closed in Revision 2: ruling 36 ("V nought, the starting value" at first use, as scene 3 already says). Revision 1 text: The narration reads V₀ once as "V nought", then says "the starting value". Some teachers say "V zero" or "V sub zero"; confirm the reading.
 - **2. Title subscript.** The title uses "V₀" (a Unicode subscript); if YouTube or search tools mangle it, use "S = V0 − Dn".
 
 ## Review notes
 
-- Revision 1. Next: student learning review (trace from i08; check that the equal chunks make S = V₀ − Dn obvious before the letters, that V₀ − S and Dn read as the same total, that the stop at zero and "not a sale price" are clear, that the round-up check is followable without an inequality, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 resolves the student learning review (`../checks/m-s12-i09-learning-review.md`). Next: Codex maths check and error check, then voicing and a build to grade A. Revision 1 note: Next: student learning review (trace from i08; check that the equal chunks make S = V₀ − Dn obvious before the letters, that V₀ − S and Dn read as the same total, that the stop at zero and "not a sale price" are clear, that the round-up check is followable without an inequality, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
