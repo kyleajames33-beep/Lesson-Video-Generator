@@ -1,0 +1,1175 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-18",
+ "brief": "Maths Standard start (root request, 18 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 and Standard 1",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); syllabusActions carries both, each with its course.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 12 Standard 2 Trigonometry and Standard 1 Right-angled triangles pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year12Standard2Points": 10,
+  "year12Standard1Points": 5,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 18 November 2026 and match the crosswalk inventory. All eight Trigonometry lessons and Year 11 Applications of measurement lesson03 use data-step-id sections and label worked examples we-1 to we-3 (lesson04 also we-4). Lessons 01 to 05 are titled Year 11, Module 2 on the page (MS-44); they are the Year 12 trigonometry lessons."
+ },
+ "recommendations": [
+  "Run t01 to t11 after Ratios and rates and before Bivariate data (root rulings 28 and 46). Standard 2 students take all eleven. Standard 1 students take t01 to t05 (their Right-angled triangles focus area), then go to math-s12-b01; t06 to t11 are Standard 2 only.",
+  "Playlist order: ruling 46 puts r01 to r14 before t01 to t11 and supersedes the outline table's numbers, so this file uses the ruled positions: a01 to a13 = 1 to 13, i01 to i23 = 14 to 36, r01 to r14 = 37 to 50, t01 to t11 = 51 to 61 (split parts share their number). Outline problem: maths-standard-route-inputs-4.json and the outline JSON still give r01 to r14 as 48 to 61 and t01 to t11 as 37 to 47; the r13 design cites 'playlist order 60'. Root to confirm the renumbering and correct those two files (b01 stays 62).",
+  "Joins: t01 opens on the house roof triangle that ends r14 and r13's Standard 1 panel (ruling 45); the roof angle is confirmed at 35° (ruling 55: the site's own trigonometry hook angle; r14 already speaks it; the 'not to scale' tag covers the painted 24°), so r13 and r14 can be voiced once the t01 design confirms it. t05 ends on a two-route frame (Standard 2 to t06's river; Standard 1 to b01). t10 opens on r07's radial-survey sketch and closes r08's rainfall loop (ruling 43). t11's final frame is b01's opening picture, identical to t05's Standard 1 panel (proposal: a beach kiosk's board pairing daily top temperature with ice creams sold, the site's bivariate lesson04 example; provisional until the b01 pack exists).",
+  "Outline problem (entry knowledge): the brief asks for 'Year 11 Standard right-angled trig points', but the 2024 Year 11 Standard course has none (Applications of measurement stops at Pythagoras, cib49e1f1d). The outline's dependency list (Pythagoras and changing the subject) is right; t01 introduces sin, cos and tan from the start, which is why it is flagged at risk.",
+  "Pace flags (gentler Standard pace): t01 at risk (suggested split t01a and t01b); t03, t05, t08 and t10 to watch; t02, t04, t06, t07, t09 and t11 fit 6 to 9 minutes.",
+  "Advanced reuse (ruling 7): kit and plates from the Year 11 Advanced trigonometry videos (StudioTriangle, ElevationView, BearingRose, BearingJourney, HingeBars, StudioCirclePoint, MinutesDial) cover most visuals; Advanced anchors are not reused (a yacht under a cliff and at sea, fire lookout towers, a garden bed, a phone tower's range, a sandwich and a pool rack, a flying fox). Site worked examples that happen to share an Advanced object (the site's yacht, cliff and garden bed) keep their numbers on coded diagrams only. The drone (Advanced a12-d12, a camera-tilt rate) and the entrance ramp (Advanced w10's gradient) are flagged where the packs use their plates.",
+  "Site findings: MS-41 to MS-46 appended to docs/production/claude-pm/site-corrections-maths-standard.md, section 8 (five last-digit rounding slips, one quick-match option, a misleading depression-angle sentence, Year 11 labels on five Year 12 pages, two methods heavier than Standard needs, and gaps for Year 12 Pythagoras practice, named compass directions and constructing a radial survey).",
+  "Kit needs for this strand are in docs/production/claude-pm/checks/maths-standard-kit-needs-t.md; the main new part is a RadialSurvey board (field book to rays, angle arcs, the 360° ring, area chips with a running total and a boundary), with MapPins for landmark bearings and small readout options on the existing Advanced parts."
+ ],
+ "part": 5,
+ "covers": "math-s12-t01 to math-s12-t11 (Year 12 Trigonometry, Standard 2, and Right-angled triangles, Standard 1)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 12,
+   "entries": [
+    {
+     "id": "math-s12-t01",
+     "playlistOrder": 51,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do sine, cosine and tangent find a missing side of a right-angled triangle?",
+     "syllabusActionIds": [
+      "ci74344e24",
+      "ci07db556a"
+     ],
+     "standard2ActionIds": [
+      "ci74344e24"
+     ],
+     "standard1ActionIds": [
+      "ci07db556a"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci74344e24",
+       "course": "Year 12 Standard 2",
+       "text": "Apply trigonometric ratios to right-angled triangles to find either the lengths of unknown sides or the size of unknown angles in both degrees, and degrees and minutes",
+       "sourceHtml": "<p>Apply <a data-item-id=\"ee6f553b-9ecf-42e4-b8ad-c2dad9958bdf\" href=\"\">trigonometric ratios</a> to right-angled triangles to find either the lengths of unknown sides or the size of unknown <a data-item-id=\"0750638a-4839-4747-9e28-e0af3e78285f\" href=\"\">angles</a> in both <a data-item-id=\"f5d5a024-00e3-4b9f-a955-cdd2f44845b4\" href=\"\">degrees</a>, and degrees and <a data-item-id=\"5a008a39-2cbb-4077-a61d-97bdfbb6dcc8\" href=\"\">minutes</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci07db556a",
+       "course": "Year 12 Standard 1",
+       "text": "Apply trigonometric ratios to find the lengths of unknown sides in right-angled triangles given an angle in both degrees, and degrees and minutes",
+       "sourceHtml": "<p>Apply <a data-item-id=\"ee6f553b-9ecf-42e4-b8ad-c2dad9958bdf\" href=\"\">trigonometric ratios</a> to find the lengths of unknown sides in right-angled triangles given an <a data-item-id=\"0750638a-4839-4747-9e28-e0af3e78285f\" href=\"\">angle</a> in both <a data-item-id=\"f5d5a024-00e3-4b9f-a955-cdd2f44845b4\" href=\"\">degrees</a>, and degrees and <a data-item-id=\"5a008a39-2cbb-4077-a61d-97bdfbb6dcc8\" href=\"\">minutes</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+      "sectionIds": [
+       "orient-to-trigonometry",
+       "label-any-triangle",
+       "work-three-ratio-examples",
+       "avoid-the-ratio-traps",
+       "drill-the-ratios",
+       "revisit-trigonometry-thinking",
+       "practise-trigonometry-ratios"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "bbddb5ce1c17fbe9cad548c75ca6a38af0b1b0f4fe6817dbe5f126488ac290bd"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+       "sectionIds": [
+        "orient-to-trigonometry",
+        "label-any-triangle",
+        "work-three-ratio-examples",
+        "avoid-the-ratio-traps",
+        "drill-the-ratios",
+        "revisit-trigonometry-thinking",
+        "practise-trigonometry-ratios"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "bbddb5ce1c17fbe9cad548c75ca6a38af0b1b0f4fe6817dbe5f126488ac290bd"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson02.sa.html",
+       "sectionIds": [
+        "orient-to-unknown-sides",
+        "label-before-you-solve",
+        "work-three-side-examples",
+        "avoid-the-side-traps",
+        "drill-unknown-sides",
+        "revisit-unknown-sides",
+        "practise-unknown-sides"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "42bde378ce705b9019cb1ea6cfd2b1e31b3c0f109f7e1dd75500d13ace6e6c8f"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a06",
+       "text": "cib49e1f1d: Pythagoras' theorem; the hypotenuse is the longest side, opposite the right angle."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: changing the subject of a formula (the unknown underneath)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-r14",
+      "math-s12-r13"
+     ],
+     "startBoundary": "Opens on the final frame shared by r14 (Standard 2) and r13's Standard 1 panel (rulings 45 and 53): the house plate with the coded right-angled roof triangle, 35° at the eave, '?' on the height, the grey tag 'not to scale'. Roof angle confirmed at 35° (ruling 55): it is the site's own trigonometry hook angle and r14 already speaks it.",
+     "stopBoundary": "Label O, A and H from a chosen angle; why a ratio of two sides depends only on the angle (any 35° right-angled triangle has opposite ÷ hypotenuse ≈ 0.5736); sin, cos and tan (SOH CAH TOA); choose the ratio from the two sides involved; unknown on top and unknown underneath, with the 'hypotenuse is longest' check; an angle given in degrees and minutes typed as degrees + minutes ÷ 60; degree mode; round at the end. Finding an angle is t02.",
+     "nextHandoff": "math-s12-t02",
+     "advancedReuseCandidates": [],
+     "recommendation": "The 2024 Year 11 Standard course has no trigonometric-ratio point, so this video introduces sin, cos and tan from the start. Keep the site's 15 sin 32° = 7.95 cm, 9 ÷ cos 48° = 13.45 m and 18 sin 38° = 11.08 m; lesson02 we-3's ladder is 5.14 m, not the site's 5.15 (MS-41). Roof anchor: a 5.5 m slope at 35°, height 3.15 m, run 4.51 m. Pace: at risk; suggested split t01a (labelling, why the ratio is fixed, unknown on top) and t01b (unknown underneath, degrees and minutes, degree mode) only if a design cannot be taught under 570 s.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t02",
+     "playlistOrder": 52,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do inverse trig ratios find a missing angle in degrees and minutes?",
+     "syllabusActionIds": [
+      "ci74344e24",
+      "cif8689656"
+     ],
+     "standard2ActionIds": [
+      "ci74344e24"
+     ],
+     "standard1ActionIds": [
+      "cif8689656"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci74344e24",
+       "course": "Year 12 Standard 2",
+       "text": "Apply trigonometric ratios to right-angled triangles to find either the lengths of unknown sides or the size of unknown angles in both degrees, and degrees and minutes",
+       "sourceHtml": "<p>Apply <a data-item-id=\"ee6f553b-9ecf-42e4-b8ad-c2dad9958bdf\" href=\"\">trigonometric ratios</a> to right-angled triangles to find either the lengths of unknown sides or the size of unknown <a data-item-id=\"0750638a-4839-4747-9e28-e0af3e78285f\" href=\"\">angles</a> in both <a data-item-id=\"f5d5a024-00e3-4b9f-a955-cdd2f44845b4\" href=\"\">degrees</a>, and degrees and <a data-item-id=\"5a008a39-2cbb-4077-a61d-97bdfbb6dcc8\" href=\"\">minutes</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cif8689656",
+       "course": "Year 12 Standard 1",
+       "text": "Apply trigonometric ratios to find the size of unknown angles in right-angled triangles, in both degrees, and degrees and minutes",
+       "sourceHtml": "<p>Apply trigonometric ratios to find the size of unknown angles in right-angled triangles, in both degrees, and degrees and minutes</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson03.sa.html",
+      "sectionIds": [
+       "orient-to-inverse-trig",
+       "reverse-the-process",
+       "work-three-angle-examples",
+       "avoid-the-inverse-traps",
+       "drill-unknown-angles",
+       "revisit-unknown-angles",
+       "practise-unknown-angles"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "f0782a717286d6c886a2e69e9adc65b400fe5b7378ecd4a2858f24cc9d8fc57a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson03.sa.html",
+       "sectionIds": [
+        "orient-to-inverse-trig",
+        "reverse-the-process",
+        "work-three-angle-examples",
+        "avoid-the-inverse-traps",
+        "drill-unknown-angles",
+        "revisit-unknown-angles",
+        "practise-unknown-angles"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "f0782a717286d6c886a2e69e9adc65b400fe5b7378ecd4a2858f24cc9d8fc57a"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson01.sa.html",
+       "sectionIds": [
+        "work-three-ratio-examples"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "bbddb5ce1c17fbe9cad548c75ca6a38af0b1b0f4fe6817dbe5f126488ac290bd"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t01",
+       "text": "ci74344e24 and ci07db556a: labelling, the three ratios, degrees and minutes as degrees + minutes ÷ 60."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t01"
+     ],
+     "startBoundary": "t01's final frame (proposed): the roof triangle with its sides known (3.15 m up, 4.51 m across) and the angle hidden: 'could we get the 35° back?'.",
+     "stopBoundary": "Inverse ratios undo a ratio: write the ratio from two known sides, then sin⁻¹, cos⁻¹ or tan⁻¹; decimal degrees to degrees and minutes (decimal part × 60, nearest minute); the other acute angle as 90° minus the first; a practical angle (ladder, ramp, roof pitch). Elevation and depression by name are t03.",
+     "nextHandoff": "math-s12-t03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's sin⁻¹(7/11) = 39°31', tan⁻¹(45/60) = 36°52', and legs 8 and 15 (28°4', 61°56'); lesson01 we-3's tan⁻¹ 0.842 = 40°6'. The entrance-ramp plate is Advanced w10's anchor: practice-question picture only. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t03",
+     "playlistOrder": 53,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do Pythagoras and trig solve height and distance problems with angles of elevation and depression?",
+     "syllabusActionIds": [
+      "cif644212f",
+      "ci0f40c78b",
+      "cid1949529"
+     ],
+     "standard2ActionIds": [
+      "cif644212f"
+     ],
+     "standard1ActionIds": [
+      "ci0f40c78b",
+      "cid1949529"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cif644212f",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled and non-right-angled triangles, angles of elevation and depression, and true bearings and compass bearings",
+       "sourceHtml": "<p>Solve practical problems involving <a data-item-id=\"90551500-f4d8-464c-8874-39e967e73677\" href=\"\">Pythagoras’ theorem</a>, the trigonometry of right-angled and non-right-angled triangles, <a data-item-id=\"102fd6ad-433d-4929-8152-253b3cfaa85f\" href=\"\">angles of elevation</a> and <a data-item-id=\"273370c2-18db-4320-8b9e-6242d1e70eab\" href=\"\">depression</a>, and true bearings and compass bearings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci0f40c78b",
+       "course": "Year 12 Standard 1",
+       "text": "Apply Pythagoras’ theorem to solve practical problems in two dimensions",
+       "sourceHtml": "<p>Apply <a data-item-id=\"90551500-f4d8-464c-8874-39e967e73677\" href=\"\">Pythagoras’ theorem</a> to solve practical problems in two dimensions</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": "The crosswalk's evidence (lesson04 use-two-observations) has no Pythagoras; no Year 12 lesson sets a practical two-dimensional Pythagoras problem apart from lesson05 we-3. t03 recalls Year 11 lesson03 and adds one practical use (MS-46)."
+      },
+      {
+       "id": "cid1949529",
+       "course": "Year 12 Standard 1",
+       "text": "Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled triangles, angles of elevation and depression, and true bearings and compass bearings",
+       "sourceHtml": "<p>Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled triangles, <a data-item-id=\"102fd6ad-433d-4929-8152-253b3cfaa85f\" href=\"\">angles of elevation</a> and <a data-item-id=\"273370c2-18db-4320-8b9e-6242d1e70eab\" href=\"\">depression</a>, and true bearings and compass bearings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": "As ci0f40c78b for the Pythagoras part (MS-46). Elevation, depression and bearings are covered by lessons 04 and 05."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson04.sa.html",
+      "sectionIds": [
+       "orient-to-elevation-and-depression",
+       "look-up-and-look-down",
+       "work-three-sightline-examples",
+       "avoid-the-sightline-traps",
+       "drill-elevation-and-depression",
+       "revisit-elevation-and-depression",
+       "practise-elevation-and-depression"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "4e23fb50272901b0c90e2685cc1f47bb90752d8588b9099f26dbc57bfe02ba9a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson04.sa.html",
+       "sectionIds": [
+        "orient-to-elevation-and-depression",
+        "look-up-and-look-down",
+        "work-three-sightline-examples",
+        "avoid-the-sightline-traps",
+        "drill-elevation-and-depression",
+        "revisit-elevation-and-depression",
+        "practise-elevation-and-depression"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "4e23fb50272901b0c90e2685cc1f47bb90752d8588b9099f26dbc57bfe02ba9a"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/applications-of-measurement/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/applications-of-measurement/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "worked-examples-3-in"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "d455522169e2dd699c8d6dc70c7560c521f05015ae71e2e030ec231e2f02ee01"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a06",
+       "text": "cib49e1f1d: Pythagoras' theorem (recalled, not re-taught)."
+      },
+      {
+       "source": "math-s12-t01",
+       "text": "ci74344e24, ci07db556a: a side from a ratio."
+      },
+      {
+       "source": "math-s12-t02",
+       "text": "cif8689656: an angle from two sides, degrees and minutes."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t02"
+     ],
+     "startBoundary": "t02's final frame (proposed): a drone over a sports field with a coded sight line from the corner flag: 'how far away, and at what angle?'.",
+     "stopBoundary": "Pythagoras (two sides, no angle) or a trig ratio (an angle involved); the horizontal reference line first; angles of elevation and depression measured from the horizontal; the depression angle equals the elevation angle at the bottom (parallel horizontals, alternate angles); tan for height and horizontal distance, sin or cos with a sight line; a height on a height; a two-step problem with two depression angles and a subtraction. Not taught: the two-observation simultaneous equation (lesson04 we-4).",
+     "nextHandoff": "math-s12-t04",
+     "advancedReuseCandidates": [
+      "math-a11-t02a"
+     ],
+     "recommendation": "Carries the Standard 1-only point ci0f40c78b (Pythagoras in practical two-dimensional problems): one recall scene and one practical use (the drone's 85 m sight line). Keep the site's 45 tan 38° = 35.16 m, 80 ÷ tan 24° = 179.68 m (site 179.69, MS-41) and the antenna's 34°44'. Advanced t02a's cliff and yacht are its anchor: site cliff numbers on coded diagrams only. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t04",
+     "playlistOrder": 54,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do true bearings and compass bearings describe a direction?",
+     "syllabusActionIds": [
+      "ci065df8b3",
+      "ci0b85c453"
+     ],
+     "standard2ActionIds": [
+      "ci065df8b3"
+     ],
+     "standard1ActionIds": [
+      "ci0b85c453"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci065df8b3",
+       "course": "Year 12 Standard 2",
+       "text": "Identify and interpret true bearings and compass bearings and convert between them",
+       "sourceHtml": "<p>Identify and interpret <a data-item-id=\"a764069b-b2a3-4209-8041-258e3d12ce7f\" href=\"\">true bearings</a> and <a data-item-id=\"de249e0e-50a4-4fd6-afe6-7222dc3d2ab5\" href=\"\">compass bearings</a> and convert between them</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; the named directions NE, SE, SW, NW are used in the hook without being converted until the revisit card (MS-46)."
+      },
+      {
+       "id": "ci0b85c453",
+       "course": "Year 12 Standard 1",
+       "text": "Identify and interpret true bearings and compass bearings and convert between them",
+       "sourceHtml": "<p>Identify and interpret <a data-item-id=\"a764069b-b2a3-4209-8041-258e3d12ce7f\" href=\"\">true bearings</a> and <a data-item-id=\"de249e0e-50a4-4fd6-afe6-7222dc3d2ab5\" href=\"\">compass bearings</a> and convert between them</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": "As ci065df8b3."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+      "sectionIds": [
+       "orient-to-bearings",
+       "convert-between-bearing-systems",
+       "work-three-bearing-examples",
+       "avoid-the-bearing-traps",
+       "drill-bearings",
+       "practise-bearings"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "cbe50a5103ae73d7ccf3e52295c9921083fd3f0b4e3c0e8d9df21119d20c7918"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+       "sectionIds": [
+        "orient-to-bearings",
+        "convert-between-bearing-systems",
+        "work-three-bearing-examples",
+        "avoid-the-bearing-traps",
+        "drill-bearings",
+        "practise-bearings"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "cbe50a5103ae73d7ccf3e52295c9921083fd3f0b4e3c0e8d9df21119d20c7918"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 4",
+       "text": "Angles in a full turn (360°), a straight angle (180°) and a right angle, recalled in a phrase. No Year 11 point is assumed (outline dependency list)."
+      },
+      {
+       "source": "math-s12-t03",
+       "text": "Prior video; no trigonometry is needed in this one."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t03"
+     ],
+     "startBoundary": "t03's final frame (proposed): a farm from above, the homestead with a north arrow and three landmarks (dam, shearing shed, gate) with 'which way?' chips.",
+     "stopBoundary": "True bearings (clockwise from north, three digits, T); compass bearings (from N or S towards E or W); NE, SE, SW, NW as 045°T, 135°T, 225°T, 315°T in one line; converting in each quadrant by sketch; the bearing back (180° more or less); 'the bearing of A from B' is measured at B. Using bearings in triangles is t05.",
+     "nextHandoff": "math-s12-t05",
+     "advancedReuseCandidates": [
+      "math-a11-t02b"
+     ],
+     "recommendation": "Keep the site's 155°T = S25°E, N65°W = 295°T, S40°E = 140°T and 112°T = S68°E with back bearing 292°T. Anchors: farm landmarks from the homestead, a harbour ferry, a southerly wind (named from where it comes). No yacht (Advanced t02b). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t05",
+     "playlistOrder": 55,
+     "course": "Year 12 Standard 1 and Standard 2",
+     "mainLearnerQuestion": "How do bearings and right-angled triangles solve a navigation problem?",
+     "syllabusActionIds": [
+      "cif644212f",
+      "cid1949529"
+     ],
+     "standard2ActionIds": [
+      "cif644212f"
+     ],
+     "standard1ActionIds": [
+      "cid1949529"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cif644212f",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled and non-right-angled triangles, angles of elevation and depression, and true bearings and compass bearings",
+       "sourceHtml": "<p>Solve practical problems involving <a data-item-id=\"90551500-f4d8-464c-8874-39e967e73677\" href=\"\">Pythagoras’ theorem</a>, the trigonometry of right-angled and non-right-angled triangles, <a data-item-id=\"102fd6ad-433d-4929-8152-253b3cfaa85f\" href=\"\">angles of elevation</a> and <a data-item-id=\"273370c2-18db-4320-8b9e-6242d1e70eab\" href=\"\">depression</a>, and true bearings and compass bearings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cid1949529",
+       "course": "Year 12 Standard 1",
+       "text": "Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled triangles, angles of elevation and depression, and true bearings and compass bearings",
+       "sourceHtml": "<p>Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled triangles, <a data-item-id=\"102fd6ad-433d-4929-8152-253b3cfaa85f\" href=\"\">angles of elevation</a> and <a data-item-id=\"273370c2-18db-4320-8b9e-6242d1e70eab\" href=\"\">depression</a>, and true bearings and compass bearings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9c5d0bea",
+       "siteCoverage": "covered",
+       "siteGap": "As ci0f40c78b for the Pythagoras part (MS-46). Elevation, depression and bearings are covered by lessons 04 and 05."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+      "sectionIds": [
+       "orient-to-bearings",
+       "work-three-bearing-examples",
+       "avoid-the-bearing-traps",
+       "drill-bearings",
+       "revisit-bearings",
+       "practise-bearings"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "cbe50a5103ae73d7ccf3e52295c9921083fd3f0b4e3c0e8d9df21119d20c7918"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson05.sa.html",
+       "sectionIds": [
+        "orient-to-bearings",
+        "work-three-bearing-examples",
+        "avoid-the-bearing-traps",
+        "drill-bearings",
+        "revisit-bearings",
+        "practise-bearings"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "cbe50a5103ae73d7ccf3e52295c9921083fd3f0b4e3c0e8d9df21119d20c7918"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson02.sa.html",
+       "sectionIds": [
+        "practise-unknown-sides"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "42bde378ce705b9019cb1ea6cfd2b1e31b3c0f109f7e1dd75500d13ace6e6c8f"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t04",
+       "text": "ci065df8b3, ci0b85c453: true and compass bearings, the bearing back."
+      },
+      {
+       "source": "math-s12-t01",
+       "text": "ci74344e24: a side from a ratio; t02 an angle from two sides."
+      },
+      {
+       "source": "math-s11-a06",
+       "text": "cib49e1f1d: Pythagoras (recalled in t03)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t04"
+     ],
+     "startBoundary": "t04's final frame (proposed): the farm map, a ute track due north from the homestead then due east to the far gate: 'how far in a straight line, and on what bearing?'.",
+     "stopBoundary": "A north line at every turning point; the angle inside the triangle from the bearing; right-angled two-leg journeys by Pythagoras and tan⁻¹, then a three-digit true bearing and the bearing back; one leg split into its north-south and east-west parts with sin and cos of the angle from the N-S line; two legs whose bearings differ by 90°. Two-route final frame: Standard 2 to t06 (the site's river hook), Standard 1 to math-s12-b01. Not taught: non-right turns (t08, t11).",
+     "nextHandoff": "math-s12-t06 (Standard 2); math-s12-b01 (Standard 1)",
+     "advancedReuseCandidates": [
+      "math-a11-t02b"
+     ],
+     "recommendation": "Last Trigonometry video for Standard 1. Keep the site's 85 km on 130°T (65.11 km E, 54.64 km S) and the 20 km on 040°T then 15 km on 130°T (25 km, back 257°T), found from the right angle at the turn (angle BPC = tan⁻¹(15/20), bearing 077°T) rather than the site's components (MS-45). The right panel is b01's opening and must match t11's final frame (proposal: a beach kiosk's board pairing daily top temperature with ice creams sold, the site's bivariate lesson04 example; the b01 designer confirms). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t06",
+     "playlistOrder": 56,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the sine rule find a missing side in any triangle?",
+     "syllabusActionIds": [
+      "ci26620302"
+     ],
+     "standard2ActionIds": [
+      "ci26620302"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci26620302",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the sine rule a/(sin A) = b/(sin B) = c/(sin C) in a given triangle ABC to find the value of an unknown side",
+       "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/49b89106-798d-4fea-8ab2-be999d34cb24\" data-item-codename=\"glo_link__shared__sine_rule\" data-item-id=\"49b89106-798d-4fea-8ab2-be999d34cb24\" data-item-systemname=\"GLO Link: Shared: sine rule\" data-item-type=\"link_glossary\">sine rule</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mi>a</mi></mrow><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>A</mi></mrow></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>b</mi></mrow><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>B</mi></mrow></mrow><mi> </mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>c</mi></mrow><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>C</mi></mrow></mrow></mrow></mfrac></math></span><span>  </span><span>in a given triangle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">ABC </mi></math></span><span>to find the value of an unknown side</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+      "sectionIds": [
+       "orient-to-the-sine-rule",
+       "choose-the-arrangement",
+       "work-three-sine-rule-examples",
+       "avoid-the-sine-rule-traps",
+       "drill-the-sine-rule",
+       "revisit-the-sine-rule",
+       "practise-the-sine-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "838dc6e4c296b0ab2fbc03de12083acee190e4cbd7b5d30b306856eadeb46f13"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "sectionIds": [
+        "orient-to-the-sine-rule",
+        "choose-the-arrangement",
+        "work-three-sine-rule-examples",
+        "avoid-the-sine-rule-traps",
+        "drill-the-sine-rule",
+        "revisit-the-sine-rule",
+        "practise-the-sine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "838dc6e4c296b0ab2fbc03de12083acee190e4cbd7b5d30b306856eadeb46f13"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t01",
+       "text": "ci74344e24: sin of an angle; labelling sides from an angle."
+      },
+      {
+       "source": "Stage 4",
+       "text": "Angle sum of a triangle, 180°."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: changing the subject (only if the unknown is set underneath)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t05"
+     ],
+     "startBoundary": "t05's Standard 2 panel: the river top view, a 500 m baseline and angles of 60° and 85°, 'no right angle: how far?' (the site lesson06 hook).",
+     "stopBoundary": "Side a opposite angle A; the sine rule in words; the matched pair that starts it; a side with the unknown on top; the third angle first when the known side has no known opposite angle; the checks (bigger angle, bigger side; equal products). Finding an angle is t07. Proof optional (a height written two ways).",
+     "nextHandoff": "math-s12-t07",
+     "advancedReuseCandidates": [
+      "math-a11-t05"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's b = 12 sin 75° ÷ sin 40° = 18.03, a = 20 sin 52° ÷ sin 67° = 17.12 and the river's 755 m. Advanced t05's fire towers are its anchor and are not used. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t07",
+     "playlistOrder": 57,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the sine rule find a missing angle, including an obtuse one?",
+     "syllabusActionIds": [
+      "ci50b6961b",
+      "ci6b083940"
+     ],
+     "standard2ActionIds": [
+      "ci50b6961b",
+      "ci6b083940"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci50b6961b",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the sine rule (sin A)/a = (sin B)/b = (sin C)/c in a given triangle ABC to find the value of an unknown angle, excluding the ambiguous case",
+       "sourceHtml": "<div><span>Apply the sine rule </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>A</mi></mrow></mrow></mrow><mrow><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>B</mi></mrow></mrow></mrow><mrow><mi mathvariant=\"italic\"> b</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>C</mi></mrow></mrow></mrow><mrow><mi>c</mi></mrow></mfrac></math></span><span>  </span><span>in a given triangle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">ABC </mi></math></span><span>to find the value of an unknown angle, excluding the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c7cc72a7-6684-49b6-9b16-f234d8e8fa83\" data-item-codename=\"glo_link__shared__ambiguous_case__of_the_sine_rule\" data-item-id=\"c7cc72a7-6684-49b6-9b16-f234d8e8fa83\" data-item-systemname=\"GLO Link: SHARED: ambiguous case (of the sine rule)\" data-item-type=\"link_glossary\">ambiguous case</a><br/></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci6b083940",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the sine rule in a given triangle to find the value of an unknown angle, given that the unknown angle is obtuse",
+       "sourceHtml": "<p>Apply the sine rule in a given triangle to find the value of an unknown angle, given that the unknown angle is <a data-item-id=\"3fb1dbb7-6268-48c4-b2e5-55b79fc60b44\" href=\"\">obtuse</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+      "sectionIds": [
+       "orient-to-the-sine-rule",
+       "choose-the-arrangement",
+       "work-three-sine-rule-examples",
+       "avoid-the-sine-rule-traps",
+       "drill-the-sine-rule",
+       "practise-the-sine-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "838dc6e4c296b0ab2fbc03de12083acee190e4cbd7b5d30b306856eadeb46f13"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "sectionIds": [
+        "orient-to-the-sine-rule",
+        "choose-the-arrangement",
+        "work-three-sine-rule-examples",
+        "avoid-the-sine-rule-traps",
+        "drill-the-sine-rule",
+        "practise-the-sine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "838dc6e4c296b0ab2fbc03de12083acee190e4cbd7b5d30b306856eadeb46f13"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t06",
+       "text": "ci26620302: the sine rule and the matched pair."
+      },
+      {
+       "source": "math-s12-t02",
+       "text": "cif8689656, ci74344e24: sin⁻¹ and degrees and minutes."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t06"
+     ],
+     "startBoundary": "t06's final frame (proposed): a triangular shade sail with two edges and one corner angle labelled, the far corner '? (acute)'.",
+     "stopBoundary": "The flipped rule with sines on top for an unknown angle; sin⁻¹ and degrees and minutes; one sine fits two angles between 0° and 180° (sin θ = sin(180° − θ)); the calculator gives the acute one; if the question says obtuse, 180° minus it; check the angle sum. The ambiguous case is not taught (syllabus exclusion).",
+     "nextHandoff": "math-s12-t08",
+     "advancedReuseCandidates": [
+      "math-a11-t05",
+      "math-a11-t07"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's we-3: 55°57' (acute) and 119°19' (obtuse). Do not reuse Advanced t07's ambiguous-case construction. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t08",
+     "playlistOrder": 58,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the cosine rule find a missing side or angle?",
+     "syllabusActionIds": [
+      "ci431f9599",
+      "ci3e1d3a01"
+     ],
+     "standard2ActionIds": [
+      "ci431f9599",
+      "ci3e1d3a01"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci431f9599",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the cosine rule c^2 = a^2 + b^2 - 2ab cos C in a given triangle ABC to find the value of an unknown side",
+       "sourceHtml": "<div><span>Apply the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/f3738d31-a955-452f-a4a4-873dff287af5\" data-item-codename=\"glo_link__shared__cosine_rule\" data-item-id=\"f3738d31-a955-452f-a4a4-873dff287af5\" data-item-systemname=\"GLO Link: SHARED: cosine rule\" data-item-type=\"link_glossary\">cosine rule</a> </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>-</mo><mn>2</mn><mi mathvariant=\"italic\">ab</mi><mrow><mrow><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>C</mi></mrow></mrow></math></span><span> in a given triangle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">ABC </mi></math></span><span>to find the value of an unknown side </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci3e1d3a01",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the cosine rule cos C = (a^2 + b^2 - c^2)/(2ab) in a given triangle ABC to find the value of an unknown angle",
+       "sourceHtml": "<div><span>Apply the cosine rule </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mrow><mi>cos</mi></mrow><mo>⁡</mo><mrow><mi>C</mi></mrow></mrow><mo>=</mo><mfrac><mrow><msup><mrow><mi>a</mi></mrow><mrow><mn>2</mn></mrow></msup><mi> </mi><mo>+</mo><mi> </mi><msup><mrow><mi>b</mi></mrow><mrow><mn>2</mn><mi> </mi></mrow></msup><mo>-</mo><mi> </mi><msup><mrow><mi>c</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow><mrow><mn>2</mn><mi mathvariant=\"italic\">ab</mi></mrow></mfrac></math></span><span>  </span><span>in a given triangle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">ABC</mi></math></span><span> to find the value of an unknown angle</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "sectionIds": [
+       "orient-to-the-cosine-rule",
+       "choose-your-rule",
+       "work-three-cosine-rule-examples",
+       "avoid-the-cosine-rule-traps",
+       "drill-the-cosine-rule",
+       "revisit-the-cosine-rule",
+       "practise-the-cosine-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "sectionIds": [
+        "orient-to-the-cosine-rule",
+        "choose-your-rule",
+        "work-three-cosine-rule-examples",
+        "avoid-the-cosine-rule-traps",
+        "drill-the-cosine-rule",
+        "revisit-the-cosine-rule",
+        "practise-the-cosine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t06",
+       "text": "ci26620302, ci50b6961b: the sine rule needs a matched pair."
+      },
+      {
+       "source": "math-s11-a06",
+       "text": "cib49e1f1d: Pythagoras, which the cosine rule extends."
+      },
+      {
+       "source": "math-s12-t02",
+       "text": "cif8689656: an inverse ratio, degrees and minutes."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t07"
+     ],
+     "startBoundary": "t07's final frame (proposed): the site's paddock, two fences of 240 m and 180 m meeting at 110°, the third side '? m of wire'.",
+     "stopBoundary": "The included angle; SAS: c² = a² + b² − 2ab cos C, then a square root; Pythagoras with a correction (zero at 90°); an obtuse included angle makes the term add; SSS: cos C = (a² + b² − c²) ÷ 2ab with c opposite the wanted angle; a negative cosine means obtuse, returned directly; the largest angle faces the longest side; choosing between the sine and cosine rules. Area is t09.",
+     "nextHandoff": "math-s12-t09",
+     "advancedReuseCandidates": [
+      "math-a11-t06"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's a = 8.06 cm (b = 8, c = 11, A = 47°), 108°2' (7, 9, 13) and the paddock's 346 m. Advanced t06's yacht journey is its anchor and is not used. Pace: watch (split t08a and t08b only if a design cannot fit under 570 s).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t09",
+     "playlistOrder": 59,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does A = (1/2)ab sin C find the area of any triangle?",
+     "syllabusActionIds": [
+      "ci30a047f1"
+     ],
+     "standard2ActionIds": [
+      "ci30a047f1"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci30a047f1",
+       "course": "Year 12 Standard 2",
+       "text": "Apply the formula A = (1/2)ab sin C, where a and b are the sides that form the included angle C in a given triangle ABC, to solve problems in a range of contexts",
+       "sourceHtml": "<div><span>Apply the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>A</mi><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mi mathvariant=\"italic\">ab</mi><mrow><mrow><mi>sin</mi></mrow><mo>⁡</mo><mrow><mi>C</mi></mrow></mrow></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">a </mi></math></span><span>and</span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\"> b </mi></math></span><span> are the sides that form the included angle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>C</mi></math></span><span> in a given triangle </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">ABC</mi></math></span><span>, to solve problems in a range of contexts</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "sectionIds": [
+       "orient-to-the-cosine-rule",
+       "choose-your-rule",
+       "work-three-cosine-rule-examples",
+       "avoid-the-cosine-rule-traps",
+       "drill-the-cosine-rule",
+       "revisit-the-cosine-rule",
+       "practise-the-cosine-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "sectionIds": [
+        "orient-to-the-cosine-rule",
+        "choose-your-rule",
+        "work-three-cosine-rule-examples",
+        "avoid-the-cosine-rule-traps",
+        "drill-the-cosine-rule",
+        "revisit-the-cosine-rule",
+        "practise-the-cosine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-a05",
+       "text": "ci139f00a0: area of a triangle, half base times perpendicular height."
+      },
+      {
+       "source": "math-s12-t08",
+       "text": "ci431f9599: the included angle; the cosine rule when an angle must be found first."
+      },
+      {
+       "source": "math-s12-t01",
+       "text": "ci74344e24: opposite = hypotenuse × sin θ (the height)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t08"
+     ],
+     "startBoundary": "t08's final frame (proposed): the paddock with its 346 m fence drawn and the site hook's second question, 'how much spray does the paddock take?'.",
+     "stopBoundary": "Half base times height with the height as b sin C, so area = ½ab sin C with C between a and b; no height measured; an obtuse angle works the same; the largest area at 90°; the angle first when it is not between the known sides; m² and hectares; a cost from an area. Radial surveys are t10.",
+     "nextHandoff": "math-s12-t10",
+     "advancedReuseCandidates": [
+      "math-a11-t05"
+     ],
+     "recommendation": "Standard 2 only. Keep the site's garden bed 63 sin 63° = 56.13 m² (numbers only; Advanced t05 uses a garden bed as its anchor) and the paddock's 20 297 m², about 2.03 ha. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t09.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t10",
+     "playlistOrder": 60,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does a compass radial survey map a block of land?",
+     "syllabusActionIds": [
+      "cibe642c8e"
+     ],
+     "standard2ActionIds": [
+      "cibe642c8e"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cibe642c8e",
+       "course": "Year 12 Standard 2",
+       "text": "Construct and interpret compass radial surveys and solve related problems",
+       "sourceHtml": "<p>Construct and interpret compass <a data-item-id=\"93aa649d-06f6-4297-95e8-840f92b13162\" href=\"\">radial surveys</a> and solve related problems</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": "Interpret and solve are covered; construct is partial: lesson08 lists drawing the survey as step 1 but no example draws one to scale (MS-46). The radial-survey area deferred from r07 (cie48a6b84) and a rainfall callback (ci5d0f766d) are added here (root ruling 43)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+      "sectionIds": [
+       "orient-to-radial-surveys",
+       "work-the-survey-method",
+       "work-three-survey-examples",
+       "avoid-the-survey-traps",
+       "drill-radial-surveys",
+       "revisit-radial-surveys",
+       "practise-radial-surveys"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "a5110b3ea364f9718647b9c37bbf0cd1fc8cb96e995362672314aec84ddc43f9"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+       "sectionIds": [
+        "orient-to-radial-surveys",
+        "work-the-survey-method",
+        "work-three-survey-examples",
+        "avoid-the-survey-traps",
+        "drill-radial-surveys",
+        "revisit-radial-surveys",
+        "practise-radial-surveys"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "a5110b3ea364f9718647b9c37bbf0cd1fc8cb96e995362672314aec84ddc43f9"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t04",
+       "text": "ci065df8b3: true bearings."
+      },
+      {
+       "source": "math-s12-t08",
+       "text": "ci431f9599: a side from SAS by the cosine rule."
+      },
+      {
+       "source": "math-s12-t09",
+       "text": "ci30a047f1: area from two sides and the included angle."
+      },
+      {
+       "source": "math-s12-r07",
+       "text": "cie48a6b84: radial surveys named in one sentence and deferred to this video (ruling 43)."
+      },
+      {
+       "source": "math-s12-r08",
+       "text": "ci5d0f766d: volume of rainfall V = Ah, h the depth of rain in metres (25 mm on the dam)."
+      },
+      {
+       "source": "math-s12-r05",
+       "text": "ci9857fa6f: constructing a scale drawing (the construct step)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t09"
+     ],
+     "startBoundary": "t09's final frame (proposed, ruling 43 callback): r07's scene 7 radial-survey sketch returns (a point inside a five-sided block, rays to the corners, blank bearing and distance boxes) with r07's grey chip 'radial survey: in Trigonometry' turning green.",
+     "stopBoundary": "A compass radial survey records a true bearing and a distance from one point O to each corner; construct the diagram to scale from the field book; angles at O as differences of bearings, with the wrap-around angle across north; the 360° check (it checks the subtractions, not the readings); each triangle is SAS: area ½ab sin C, total by adding; a boundary by the cosine rule; the perimeter as the sum; rain on the surveyed block by V = Ah (r08 callback). Mixed problems are t11.",
+     "nextHandoff": "math-s12-t11",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only. Root ruling 43: teaches the radial-survey area that r07 deferred (cie48a6b84 stays owned by r07) with a callback to r07's land and r08's rainfall: 25 mm on the site's 11 738 m² paddock is 293.46 m³, about 293 kL. Keep the site's survey (87°, 86°, 91°, 96°; 11 738 m²; AB = 107.25 m). Main new kit part: RadialSurvey. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t10.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-t11",
+     "playlistOrder": 61,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "Which rule fits a practical problem with a non-right-angled triangle?",
+     "syllabusActionIds": [
+      "cif644212f"
+     ],
+     "standard2ActionIds": [
+      "cif644212f"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cif644212f",
+       "course": "Year 12 Standard 2",
+       "text": "Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled and non-right-angled triangles, angles of elevation and depression, and true bearings and compass bearings",
+       "sourceHtml": "<p>Solve practical problems involving <a data-item-id=\"90551500-f4d8-464c-8874-39e967e73677\" href=\"\">Pythagoras’ theorem</a>, the trigonometry of right-angled and non-right-angled triangles, <a data-item-id=\"102fd6ad-433d-4929-8152-253b3cfaa85f\" href=\"\">angles of elevation</a> and <a data-item-id=\"273370c2-18db-4320-8b9e-6242d1e70eab\" href=\"\">depression</a>, and true bearings and compass bearings</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa6dd765ae",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+      "sectionIds": [
+       "choose-your-rule",
+       "drill-the-cosine-rule",
+       "practise-the-cosine-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson07.sa.html",
+       "sectionIds": [
+        "choose-your-rule",
+        "drill-the-cosine-rule",
+        "practise-the-cosine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "f5b3fa68203801b3bf3a6143e88e7e2b1b83f6c65558b093d19799c4b7193809"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson08.sa.html",
+       "sectionIds": [
+        "orient-to-radial-surveys",
+        "practise-radial-surveys"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "a5110b3ea364f9718647b9c37bbf0cd1fc8cb96e995362672314aec84ddc43f9"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/trigonometry/lesson06.sa.html",
+       "sectionIds": [
+        "practise-the-sine-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "838dc6e4c296b0ab2fbc03de12083acee190e4cbd7b5d30b306856eadeb46f13"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-t03",
+       "text": "cif644212f: elevation and depression."
+      },
+      {
+       "source": "math-s12-t05",
+       "text": "cif644212f: bearings in triangles, north lines at every point."
+      },
+      {
+       "source": "math-s12-t06",
+       "text": "ci26620302, ci50b6961b, ci6b083940: the sine rule."
+      },
+      {
+       "source": "math-s12-t08",
+       "text": "ci431f9599, ci3e1d3a01: the cosine rule."
+      },
+      {
+       "source": "math-s12-t09",
+       "text": "ci30a047f1: the area rule."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-t10"
+     ],
+     "startBoundary": "t10's final frame (proposed): four small cards from the strand (a right-angled roof, the river, the hinged paddock, a radial survey) with 'which rule?'.",
+     "stopBoundary": "A decision path as questions: a right angle? (Pythagoras, SOH CAH TOA); a side with its opposite angle? (sine rule); two sides and the angle between, or three sides? (cosine rule); an area? (½ab sin C). Drawing the triangle from words (north lines, the horizontal); bearings into angles inside the triangle at a turning point; multi-step problems carrying one result into the next. Final frame hands to math-s12-b01.",
+     "nextHandoff": "math-s12-b01",
+     "advancedReuseCandidates": [
+      "math-a11-t07"
+     ],
+     "recommendation": "Standard 2 only; last Trigonometry video. Keep the site's lesson07 Q3 (40.5 km, 092°T) and lesson08 Q3 (424.0 m, 59.6 m). Final frame: b01's opening picture, identical to t05's Standard 1 panel (proposal: a beach kiosk's board pairing each day's top temperature with ice creams sold; provisional until the b01 pack, ruling 42 pattern). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-t11.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}

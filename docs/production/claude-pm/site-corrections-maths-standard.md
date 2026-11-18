@@ -323,3 +323,49 @@ Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standa
 
 ## Note for the site (root, 18 Nov 2026)
 - **i21 (annuities, savings goal):** the video uses a standard interest-factor table column (6% a year compounded monthly: $407.08 a month for $50,000 in 8 years) instead of the site lesson's 5.4% ($417.57), which needs an unusual 0.45% column. Consider aligning the site example, or adding a line that both methods are the same with different rates.
+
+## 8. Findings from the Year 12 Trigonometry packs, t01 to t11 (18 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standard/year12/trigonometry/` (lessons 01 to 08) and `year11/applications-of-measurement/lesson03.sa.html`; SHA256 values in `programme/maths-standard-route-inputs-5.json`. No site file was changed. Every worked answer, drill answer and short-answer answer in the eight lessons was recalculated with SymPy 1.14.0 (`work/brief-standard-t/recalc.py`, output in `recalc-output.txt`). Packs: `pre-design/maths-standard/math-s12-t01.md` to `t11.md`. Lessons 03, 05, 06, 07 and 08 had no numerical errors; the findings are rounding slips, one distractor value, one misleading sentence, page labels, method notes and gaps.
+
+### MS-41. Answers rounded from rounded trig values give a wrong last digit
+
+- Lessons and old text:
+  - `year12/trigonometry/lesson02.sa.html`, `we-3`: "$H = \dfrac{O}{\sin\theta} = \dfrac{4.6}{\sin 63.4°} \approx \dfrac{4.6}{0.8942} \approx 5.15 \text{ m}$"
+  - `year12/trigonometry/lesson04.sa.html`, `we-2`: "$x = \dfrac{80}{0.44522\ldots} \approx 179.69 \text{ m}$"
+  - `year12/trigonometry/lesson01.sa.html`, comprehensive answers: "7: $H = 8/\cos 42° = 10.76\text{ cm}$" and "10: $A = 5/\tan 22° = 12.37\text{ m}$"
+  - `year12/trigonometry/lesson02.sa.html`, revisit card: "$H = \frac{1.2}{\sin 15°} \approx \frac{1.2}{0.2588} \approx 4.63$ m."
+- Correction: 5.14 m; 179.68 m; 10.77 cm; 12.38 m; 4.64 m.
+- Reason: 4.6 ÷ sin 63.4° = 5.1445; 80 ÷ tan 24° = 179.6829; 8 ÷ cos 42° = 10.7651; 5 ÷ tan 22° = 12.3754; 1.2 ÷ sin 15° = 4.6364. Each printed value is one in the last place, from rounding the trig value (or truncating) before dividing. The lessons' own rule is "Round to 2 d.p. at the final step only" (lesson01 `we-1`).
+
+### MS-42. A quick-match option is one hundredth out
+
+- Lesson: `year12/trigonometry/lesson02.sa.html`, `drill-unknown-sides`, quick match ("The wire makes an angle of 65° with the ground and is anchored 4.5 m from the base. The height of the pole is closest to:").
+- Old text: "B, 9.64 m"
+- Correction: "B, 9.65 m"
+- Reason: 4.5 × tan 65° = 9.6503. The option is still the closest, but the printed value is not the answer to two decimal places.
+
+### MS-43. The angle of depression is said to lie inside the triangle
+
+- Lesson: `year12/trigonometry/lesson02.sa.html`, `avoid-the-side-traps`, trap 03.
+- Old text: "The angle of depression from the top equals the angle of elevation from the bottom (alternate angles). Both give the same angle inside the right-angled triangle do not subtract from 90°."
+- Correction: "The angle of depression from the top equals the angle of elevation from the bottom (alternate angles). So put the angle at the bottom of the triangle and use it as it is; do not subtract it from 90°."
+- Reason: the angle of depression lies outside the triangle, between the horizontal at the top and the line of sight; the triangle's angle at the top is 90° minus it. As written, the sentence (which also lacks a full stop) can lead students to place the depression angle at the top corner. Lesson04's card 02 ("redraw the triangle using the equal elevation angle at the base") says it correctly.
+
+### MS-44. Five Year 12 trigonometry pages are labelled Year 11, Module 2
+
+- Lessons: `year12/trigonometry/lesson01.sa.html` to `lesson05.sa.html`.
+- Old text: page titles "... | HSC Maths Standard Year 11 | HSCScience", header chip "Maths Std · Y11", position "Module 2 · L4 of 22" (lesson01), "L14 of 22" to "L17 of 22" (lessons 02 to 05); lesson05's boss battle: "The ultimate Module 2 challenge, use all your measurement knowledge to defeat the boss. Pool: lessons 1–17."
+- Correction: label them Year 12 (as lessons 06 to 08 are: "| HSC Maths Standard Year 12 |", "Maths Std · Y12"), remove the Module 2 position, and describe lesson05's boss pool by the trigonometry lessons it draws on.
+- Reason: right-angled trigonometry, elevation, depression and bearings are Year 12 points in the 2024 course (Standard 2 Trigonometry, Standard 1 Right-angled triangles); the Year 11 Applications of measurement points stop at Pythagoras. Section 3 already lists these pages' stale `maths-std-y11-m2-*` ids; the visible labels are the student-facing part of the same issue.
+
+### MS-45. Owner note: two methods heavier than Standard 2 needs
+
+- `year12/trigonometry/lesson04.sa.html`, `use-two-observations` (`we-4`, drill 5, SA 3): the two-observation problem is solved by equating $h = d\tan 52°$ and $h = (d+30)\tan 38°$ and collecting the $d$ terms. The answers are right (47.00 m and 60.16 m; 38.48 m and 54.95 m). The algebra is beyond what the point asks and harder than the lesson's SA 2, which solves a two-angle problem as two separate right-angled triangles. Suggested: keep the two-triangle subtraction as the main method and mark the simultaneous version as an extension.
+- `year12/trigonometry/lesson05.sa.html`, `we-3` (b) and Q3 (c): the bearing is found from north and east components (and, in Q3, coordinates). Both triangles are right-angled at the turning point, so the bearing comes straight from the triangle: in `we-3`, angle BPC = tan⁻¹(15/20) = 36.87°, bearing 040° + 36.87° = 077°T, back 257°T; in Q3, triangle PBQ is isosceles and right-angled, so angle BPQ = 45° and the bearing of Q from P is 230° − 45° = 185°T. Suggested: show the triangle method first (same answers).
+
+### MS-46. Gaps: Pythagoras practice in Year 12, the named compass directions, and constructing a radial survey
+
+- Pythagoras (Standard 1 `ci0f40c78b`, and the Pythagoras part of `cid1949529` and Standard 2 `cif644212f`): the crosswalk's evidence for these points is lesson04 `use-two-observations`, which has no Pythagoras. No Year 12 lesson sets a practical two-dimensional Pythagoras problem except lesson05 `we-3` (two perpendicular legs). Suggested: one practical problem in lesson04 that needs Pythagoras and an angle of elevation together (for example a drone 40 m up and 75 m along the ground: 85 m away, at 28°4').
+- Named directions: lesson05's hook says "northeast" and "southeast", and only the revisit card turns them into 045°T and 135°T. Suggested: one line in card 02 giving NE, SE, SW and NW as 045°T, 135°T, 225°T and 315°T.
+- Radial surveys (`cibe642c8e`, "Construct and interpret"): lesson08's step 1 says "Draw $O$, mark north, and draw each radial line at its bearing with its length", but no example draws a survey to scale from the field book. Suggested: one scaled construction (for example 1 cm : 10 m with a protractor), and a cross-reference to the rainfall lesson (`ratios-and-rates/lesson04.sa.html`; see MS-37): 25 mm on the 11 738 m² paddock is V = Ah = 293.46 m³, about 293 kL.

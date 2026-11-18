@@ -77,3 +77,10 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 53. **Roof angle (r13, r14, t01):** the house plate's roof is about 24°. Final frames label the triangle "35°" with a "not to scale" tag (HSC style); the coded triangle overlay, not the painting, carries the angle. The t01 designer may change the angle, in which case only r13's and r14's labels change.
 54. Accepted (r01 to r07 resolution): r03's 14 s letter sentence; r07's 5 s margin (first further cut named in the design if the voiced take runs over); r06b's 60.26 and 47.06; r06a's chip "example prices: check a current quote"; r04's "convert, then ÷ n" kept as advice.
 55. Accepted (r08 to r14 resolution): r09 at 4,883 characters (like r08 and r12b, no padding); r10 scene 3 and r14 scene 6 with their named trims in reserve. **r14 speaks "thirty-five degrees"**, so r13 and r14 are voiced only after t01 is designed and confirms the roof angle (or the line is changed first).
+
+## Rulings on the t-strand packs (18 November 2026)
+56. **Roof angle confirmed at 35°** (the site's trigonometry opening angle); the "not to scale" tag covers the painting. r13 and r14 may be voiced once t01a's design is written (ruling 55 satisfied by this ruling plus the t01a design).
+57. **t01 splits** into t01a (sine, cosine and tangent from scratch: naming sides, finding a side) and t01b (finding an angle, and the roof and shed applications), because Year 11 Standard has no trigonometry. Other videos split only if a design cannot fit under 570 s.
+58. **Playlist numbers (ruling 46):** r01 to r14 occupy 37 to 50 and t01 to t11 occupy 51 to 61 (t01a and t01b share 51). Where an older file (route inputs 4, the outline JSON, a design's "playlistOrder") disagrees, the ruled order wins; Codex flags but does not hold on it.
+59. **t05 two-route frame** (Standard 2 to t06, Standard 1 to bivariate b01) and t11's final frame show b01's opening picture; the beach kiosk board (temperature against ice creams sold) is provisional until the b01 pack exists.
+60. **Left out, as the syllabus says:** the ambiguous case of the sine rule (t07); the site's two-angle simultaneous-equation method (t03).
