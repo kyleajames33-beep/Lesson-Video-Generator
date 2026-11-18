@@ -52,3 +52,9 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 36. **Spoken subscripts:** "V nought" with its plain meaning ("V nought, the starting value") at first use.
 37. **Titles over 80 characters:** use the designs' shorter alternatives. **Invented company names:** Codex confirms they are not real ASX listings in the maths check. **i07's key note** "flat fee ÷ rate" stays.
 38. **i03's two-route final frame** (Standard 2 to i04, Standard 1 to i05) and i11's final frame (the e-bike with a "buy now, pay later?" tag) are accepted.
+
+## Rulings on the i12 to i23 designs (18 November 2026)
+39. Accepted as designed: the e-bike as i12 and i13's anchor; i13's spreadsheet (add interest, then subtract the repayment); i14's two-route final frame (Standard 2 to i15, Standard 1 to i16); i15's original repayments-per-$1,000 table; i16's monthly 21% ÷ 12 illustration with the narration saying cards really charge daily; i17a's spreadsheet scene open to Standard 1 students; one pay-envelope plate for i19 to i22; i20 building a factor from i19's own table (inside ruling 33); i22's 3% rate; i23's 5.4% super return labelled as an assumption after fees.
+40. **i21:** change the worked goal so it uses a standard interest-factor table column (avoid the unusual 0.45% column); keep the site's method.
+41. **i17b's 3-year line:** Codex verifies against current Australian credit card statement rules (the minimum repayment warning) in the maths check; if the rule differs, the learning-review resolution corrects it.
+42. **i18 teaser for r01** stays provisional until r01 is designed; the kit-needs file's "to t01" handoff is superseded by ruling 28.
