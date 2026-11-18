@@ -1,8 +1,19 @@
 # Maths S12 C02: How do forward and backward scans find the earliest and latest start times? Earliest times left to right (wait for the slowest), the finish as the shortest project time, latest times right to left (don't hold anyone up), and each activity's EST and LST (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c01b's final frame (`math-s12-c01b.md` scene 12) and root's Standard rulings (1 to 76; ruling 72, the café and the shed; ruling 74, site errors never taught). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c01b's final frame (`math-s12-c01b.md` scene 12) and root's Standard rulings (1 to 76; ruling 72, the café and the shed; ruling 74, site errors never taught). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,031 characters by script (see "Narration length estimate"), 13 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,030 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-c02-learning-review.md` (summary `../checks/m-s12-c01-f04-learning-review-summary.md`), with root's rulings 1 to 81 in `../checks/root-rulings-maths-standard-outline.md` and root's resolution brief of 19 Nov. Resolution log: `../checks/m-s12-c01-f04-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 12 (the handoff primes MS-53): **accepted**, reviewer's wording with the bold cue kept. "Some events have the same earliest and latest times, and some don't. Which jobs have room to move, and which can't **slip** at all without making the whole build late?" "That difference tells us" and the repeat "So which jobs can't slip?" are cut, so no difference between an event's two times is offered as float (ruling 74). The soft rings stay on the boxes, and arrows B and F now ring softly on "room to move" (no number or tag), so attention moves to the activities. Those two rings fade on "slip", so the final frame is unchanged.
+2. Optional, scene 6 (the pies' window): **applied**, reviewer's reason in the sentence's own subject ("because their EST is ten and their LST is twenty"), with a chip "D: EST 10, LST 20" sliding from scene 5's table to the bracket's ends. No reserve trim was needed.
+
+Open decisions: 1 is closed (ruling 81: the shed keeps its dummy); 2 (no second worked network) is unruled and the review did not object. Joins unchanged: scene 1 opens on c01b's final frame, and scene 12's final frame (c03's opening) is unchanged.
+
+Narration 5,030 characters by script (Revision 1: 5,031), about 493 s with holds, 77 s under the 570 s cap; feedback speech about 26 s and 26 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: third video of the Critical path analysis strand, playlist order 84. **Standard 2 only.** Pre-design pack: `../pre-design/maths-standard/math-s12-c02.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/critical-path-analysis/lesson02.sa.html` (SHA256 `8942c2958c33dd25018d79f76c9a8ec7d52ec4fdffbff0198f9afe4ef471d3a3`; card 1, "If two or more paths arrive at the same node, take the maximum you must wait for all predecessors to finish."; card 2, "Why minimum? If one successor needs you by day 5 and another by day 8, you must start by day 5 to avoid delay."; the split node boxes). Also `lesson05.sa.html` Worked Example 2 (scans through a dummy: "Node 1(0,0), Node 2(4,4), Node 3(4,4), Node 4(9,9)"). Route entry: `math-s12-c02` in `../../programme/maths-standard-route-inputs-7.json`. Visual system: maths studio kit; the café's network (c01b's final frame) as the anchor; a café clock strip; networks coded, HSC style.
 
@@ -83,9 +94,9 @@ Visual: simulation 2. The violet front starts at event 5 (hand tag "latest witho
 Visual: clear change to the g01 board. Task strip, 44 px: "Find the EST and LST of each activity in the café project." Givens card (left, about 820 × 420 px): the café network with every box filled (teal and violet halves). Two definition strips, 40 px: "EST = earliest time at the activity's start event" (teal) and "LST = latest time at its end event − duration" (violet), each writing on its spoken words (hand tags "EST: start event", "LST: end event − duration"). Working rows at the right, 48 px: "A: EST 0, LST 15 − 10 = 5"; "B: 0, 15 − 15 = 0"; "C: 15, 40 − 25 = 15"; "D: EST 10" (event 2's left half lifts teal); on "twenty" (bold) "LST 40 − 20 = 20" (event 4's right half lifts violet, the 20 on arrow D subtracts). On "isn't the fifteen" a red slip "D's LST = 15" writes beside row D; on "dummy" (first, in "set by the dummy") it is crossed (caption "15 is event 2's latest time, set by the dummy: D's LST = 40 − 20 = 20"; hand tag "the 15 is the dummy's"). On "forty" (second bold) "E: 40, 50 − 10 = 40", and the framed table writes (green, 40 px): "A 0, 5 | B 0, 0 | C 15, 15 | D 10, 20 | E 40, 40" (EST teal, LST violet).
 
 ### 6. two checks
-> Two quick checks keep a scan honest. The backward scan always starts from the finish time, never from zero. And when you get back to the start, its latest time should come out as zero. If it doesn't, an arrow was missed somewhere. On the café's clock, that means the pies can start any time from ten past six to twenty past six, and the doors still open at ten to **seven**.
+> Two quick checks keep a scan honest. The backward scan always starts from the finish time, never from zero. And when you get back to the start, its latest time should come out as zero. If it doesn't, an arrow was missed somewhere. On the café's clock, that means the pies can start any time from ten past six to twenty past six, because their EST is ten and their LST is twenty, and the doors still open at ten to **seven**.
 
-Visual: stage change. The café network small at the top (about 1,000 × 380 px) with the clock strip enlarged below it (about 1,500 px). On "never from zero" a red ghost "0" in event 5's right half, crossed at once (hand tag "start from the finish, not 0"). On "come out as zero" event 1's right half "0" rings green. On "the pies can start" a violet-and-teal bracket on the clock strip for D's start from 6:10 to 6:20, with D's arrow glowing. On "seven" the "open 6:50 am" sign on the café badge pulses.
+Visual: stage change. The café network small at the top (about 1,000 × 380 px) with the clock strip enlarged below it (about 1,500 px). On "never from zero" a red ghost "0" in event 5's right half, crossed at once (hand tag "start from the finish, not 0"). On "come out as zero" event 1's right half "0" rings green. On "the pies can start" a violet-and-teal bracket on the clock strip for D's start from 6:10 to 6:20, with D's arrow glowing. On "their EST is ten" a small chip "D: EST 10, LST 20" (teal 10, violet 20) slides from scene 5's table to the bracket's ends. On "seven" the "open 6:50 am" sign on the café badge pulses.
 
 ### 7. memory aid
 > Here's the summary. Forwards, take the largest. Backwards, take the **smallest**. Then an activity's EST comes from its start event, and its LST is its end event's latest time, minus its duration.
@@ -113,9 +124,9 @@ Visual: `QuestionCard`, 40 px: "The network shows the same plumber's job (durati
 Visual: the card shrinks to the top. A violet front from event 6: "15"; on "eleven" (bold) "15 − 4" and event 5 "11", row "F: 11"; "D: 11 − 5 = 6", "E: 11 − 2 = 9" (event 4 "9"); "C: 9 − 3 = 6", "B: 6 − 6 = 0" (event 3 "6"); event 2 "min(6 − 0, 9 − 3) = 6"; on "two" (bold) "A: 6 − 4 = 2". Framed (green): "LST: A 2, B 0, C 6, D 6, E 9, F 11." On "slip" a red slip "A's LST = 0"; on "spare" it is crossed (caption "event 2's latest is 6, so A's LST = 6 − 4 = 2"). Hold about 1 s.
 
 ### 12. handoff: which jobs can't slip?
-> Here's a new project, a backyard shed, with durations in days and both scans already done. Look at the boxes. Some events have the same earliest and latest times, and some don't. That difference tells us which jobs have room to move, and which can't slip at all without making the whole build late. So which jobs can't **slip**?
+> Here's a new project, a backyard shed, with durations in days and both scans already done. Look at the boxes. Some events have the same earliest and latest times, and some don't. Which jobs have room to move, and which can't **slip** at all without making the whole build late?
 
-Visual: board clear to the final frame (decisions file section 2). The shed plate `ms12-backyard-shed-v1.png` at the left (about 620 px); the shed's network at the right (about 1,150 × 520 px): "A 1" clear the site 1→2, "C 1" pour the slab 2→3, "D 3" slab cures 3→4, "B 4" kit delivery 1→4, "E 2" walls and roof 4→5, "F 1" door and window 5→6, "G 2" paint 5→7, dummy 6→7; on "both scans already done" the boxes fill (teal and violet): 1 (0 | 0), 2 (1 | 1), 3 (2 | 2), 4 (5 | 5), 5 (7 | 7), 6 (8 | 9), 7 (9 | 9). On "same earliest and latest" the matching boxes ring softly; on "some don't" event 6's box rings. On "slip" (bold) chips "which jobs can't slip?" (40 px), "Next" and "?", and a small chip "shed: days". No float or critical path is shown. Hold about 2 s. This is c03's opening; scene 13 returns to it silently after the notes.
+Visual: board clear to the final frame (decisions file section 2). The shed plate `ms12-backyard-shed-v1.png` at the left (about 620 px); the shed's network at the right (about 1,150 × 520 px): "A 1" clear the site 1→2, "C 1" pour the slab 2→3, "D 3" slab cures 3→4, "B 4" kit delivery 1→4, "E 2" walls and roof 4→5, "F 1" door and window 5→6, "G 2" paint 5→7, dummy 6→7; on "both scans already done" the boxes fill (teal and violet): 1 (0 | 0), 2 (1 | 1), 3 (2 | 2), 4 (5 | 5), 5 (7 | 7), 6 (8 | 9), 7 (9 | 9). On "same earliest and latest" the matching boxes ring softly; on "some don't" event 6's box rings. On "room to move" arrows B (kit delivery) and F (door and window) ring softly too, so attention moves to the jobs (no number or tag on them; they fade on "slip"). On "slip" (bold) chips "which jobs can't slip?" (40 px), "Next" and "?", and a small chip "shed: days". No float or critical path is shown. Hold about 2 s. This is c03's opening; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -168,6 +179,7 @@ Recalculated in Python 3.14 (19 Nov 2026, scratchpad `cf/verify.py`, `python -I`
 - Café events: earliest {1: 0, 2: 10, 3: 15, 4: 40, 5: 50}; latest {1: 0, 2: 15, 3: 15, 4: 40, 5: 50}. Activities EST/LST: A 0/5, B 0/0, C 15/15, D 10/20, E 40/40.
 - Plumber events: earliest {1: 0, 2: 4, 3: 6, 4: 7, 5: 11, 6: 15}; latest {1: 0, 2: 6, 3: 6, 4: 9, 5: 11, 6: 15}. EST/LST: A 0/2, B 0/0, C 4/6, D 6/6, E 7/9, F 11/11.
 - Shed events: earliest {1: 0, 2: 1, 3: 2, 4: 5, 5: 7, 6: 8, 7: 9}; latest {1: 0, 2: 1, 3: 2, 4: 5, 5: 7, 6: 9, 7: 9}.
+- Revision 2 (`work/brief-resolve-standard-cf/verify.py`, `python -I`, 46 checks, 0 failures): the pies' EST 10 and LST 20 (6:10 to 6:20 am) and float 10, against event 2's gap of 5: the handoff no longer invites that gap to be read as float.
 
 ## Memory aid check
 
@@ -175,6 +187,8 @@ Recalculated in Python 3.14 (19 Nov 2026, scratchpad `cf/verify.py`, `python -I`
 - **Considered, not used:** "Max forwards, min backwards" (shorter, but students mix up which "time" each applies to; the card says "take").
 
 ## Narration length estimate
+
+Revision 2, counted by script (`work/brief-resolve-standard-cf/count.py`, the sum of the scene strings, which reproduces e08's 5,632): **5,030 characters** (Revision 1: 5,031), 13 scene headings. Characters per scene (1 to 13): 542, 474, 460, 653, 656, 420, 192, 417, 344, 181, 343, 273, 75. Speech about 378 s; holds and settling unchanged from Revision 1 (below); total **about 493 s**, 77 s under the 570 s cap. Feedback speech: about 26 s and 26 s. The Revision 1 paragraph below is kept for the record.
 
 Counted by script (scratchpad `cf/count.py`, the method of `work/brief-resolve-standard-t1/count.py`, which reproduces e08's 5,632): **5,031 characters**, 13 scene headings. Characters per scene (1 to 13): 542, 474, 460, 653, 656, 370, 192, 417, 344, 181, 343, 324, 75.
 
@@ -264,9 +278,10 @@ Builds on: Dummy Activities in Network Diagrams. Next: The Critical Path and Flo
 
 ## Open decisions
 
-- **1. The shed as c03's anchor (root; ruling 72).** The shed needs a dummy for F and G (they would share both events); the final frame draws it. If root prefers no dummy in the shed, F can be dropped (the paths and floats in c03 then change).
+- **1. The shed as c03's anchor (root; ruling 72).** Closed in Revision 2: ruling 81 (the shed keeps its dummy). Revision 1 text: The shed needs a dummy for F and G (they would share both events); the final frame draws it. If root prefers no dummy in the shed, F can be dropped (the paths and floats in c03 then change).
 - **2. No second worked network (pack's first trim).** The site's Worked Example 3 appears in c03 instead.
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s12-c02-learning-review.md`). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from c01b; check that "earliest time we can reach this event" lands before EST, that the dummy's "+0" and "−0" are clear, that "don't hold anyone up" explains the smallest, that D's 20 against 15 is followable, that A2 is reachable without a worked backward example on a second network, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

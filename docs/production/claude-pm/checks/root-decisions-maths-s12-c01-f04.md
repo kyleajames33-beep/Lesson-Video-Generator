@@ -4,7 +4,31 @@
 
 Every network value was recalculated in Python 3.14 (scratchpad `cf/verify.py`, run with `python -I`; output `cf/verify-output.txt`): activity scans (EST, EFT, LST, LFT, float), event scans, every path, and every change case for the critical path videos; every source-to-sink cut, an independent maximum flow by augmenting paths, and each path-by-path saturated edges run for the flow videos. All pack values and all site values used were reproduced. Narration was counted by script (scratchpad `cf/count.py`, the method of `work/brief-resolve-standard-t1/count.py`, which reproduces z06's 5,033 and so e08's method); every bold cue is quoted in its scene's Visual in spoken order (checked by the same script, no misses); the syllabus quotes in each description and each design's syllabus list match the route-inputs JSON exactly (checked by script); no design contains an em dash. Seconds are speech at 13.3 characters a second plus countdowns, holds, settling and the 45 s notes scene; measure on the Google voice.
 
-## Summary
+## Revision 2 (19 Nov 2026): learning review resolved
+
+All eleven designs are at Revision 2 after the independent learning review (`m-s12-c01-f04-learning-review-summary.md` and the per-design files), resolved under root's binding decisions of 19 Nov. Resolution log: `m-s12-c01-f04-learning-review-resolution.md`. Recounted by `work/brief-resolve-standard-cf/count.py` (the sum of the scene strings; reproduces e08's 5,632); changed numbers rechecked by `work/brief-resolve-standard-cf/verify.py` (`python -I`, 46 checks, 0 failures); bold cues in spoken order and no em dash (`work/brief-resolve-standard-cf/cues.py`). The Revision 1 text below is kept for the record; where it differs, this section and the designs govern.
+
+| Design | Characters (Rev 1 → Rev 2) | About (s, with holds) | What changed |
+| --- | --- | --- | --- |
+| c01a | 5,014 → 5,097 | 493 | an event is "the moment when every arrow arriving there has finished", so every arrow leaving waits for every arrow arriving; why B can't end at event 2 or 3 |
+| c01b | 5,009 → 5,077 | 492 | a dummy "adds no time of its own, so when we work out times, it counts as zero"; the fit-out's reason made concrete ("the job from event two to event four" would have two answers); the dummy stays (root's decision 3) |
+| c02 | 5,031 → 5,030 | 493 | the handoff asks which jobs have room to move without saying the event gap tells us (ruling 74, MS-53); arrows B and F ring; the pies' window gets its reason (EST 10, LST 20) |
+| c03 | 5,017 → 5,179 | 504 | feedback 2's slip is now "G has no float because it's the last job" (F is a last job too, float 1); the kit's float from its 8-day path; key note 5 "Non-critical jobs one after another share float" |
+| c04 | 5,041 → 5,173 | 504 | why bars start at the EST ("any spare time it has comes after its bar"); feedback 1 gives the garden's ESTs first |
+| c05 | 5,016 → 5,016 | 497 | a "kit: 5 days" tag in scene 6; **the shorter title** "When an Activity Takes Longer or Shorter" (ruling 81) |
+| c06 | 5,017 → 5,008 | 491 | **finish cell E10**; F6 and F8 are =E10, so the LFT column holds only MINs and single references and "MIN coming up" holds; no dollar-sign chip; the site's =MAX($E$2:$E$8) is an author note (root's decision 2) |
+| f01 | 5,088 → 5,121 | 500 | A's counters stay equal at 110 and the queue sits on the walkway outside A; the traced route crosses the {S, B} cut forwards, back, forwards |
+| f02 | 5,006 → 5,282 | 512 | why the first order jams (its link path used 5 of B→T's 9, which B's own flow needed) and the habit "direct paths first, the link for what's left, then a cut"; "(other orders give the same flow)" |
+| f03 | 5,004 → 5,207 | 506 | the full roads after the run are exactly cut two's roads, "a wall across the network"; the eight cut sums are no longer spoken in a row |
+| f04 | 5,027 → 5,161 | 503 | "If the fans arrive evenly" said once (ruling 81); the playlist line is "Find the rest of Year 12 Maths Standard in the playlist" (root's decision 1); why twenty, not ten |
+
+Every design stays under 570 s (the smallest margin is f02, about 58 s). Every feedback is 30 s of speech or less (the longest: c04 feedback 1, 394 characters, about 29.6 s, and f04 feedback 2, 387, about 29 s). The longest single scenes are now f04 scene 2 (876 characters, about 66 s), f02 scene 6 (817, about 61 s) and c03 scene 4 (804, about 60 s), each one board or one method stage.
+
+Joins: unchanged. c01a still opens on z06's final frame exactly, and every final frame in section 2 is unchanged (c02's new rings on B and F fade before its final frame). f04's final frame (section 3) changes only in its last screen line and the matching spoken sentence.
+
+Items below that change: section 3 (the playlist line); section 4, item 7 (c06's no-successor cells are now =E10; the site's form is an author note); section 9 items 1, 2, 4, 5 and 6 are closed (ruling 81 and root's decision 1); item 3 is decided for the design (keep the dummy, root's decision 3) and still waits for Codex's HSC check.
+
+## Summary (Revision 1)
 
 | Design | Characters | About (s, with holds) | Scenes | Anchor and result | New plate briefed here | Open question |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -47,7 +71,7 @@ All frames 1920 × 1080; text above y = 950. Each is held about 2 s at the end o
 
 ## 3. f04's final frame: the core Year 12 course closes (ruling 73)
 
-Header "MATHEMATICS STANDARD". The stadium plate at the left (about 900 px) with the north gate drawn wider (A→T "100"), dots streaming through both gates, a teal counter "210 per minute" beside a dashed "200"; at the right a coded playlist card (about 820 × 640 px) headed "Year 12 Maths Standard playlist" with nine ticked strand lines ("Algebraic relationships", "Money: investments and loans", "Ratios and rates", "Trigonometry", "Bivariate data", "Probability", "The normal distribution", "Critical path analysis", "Network flow") and "revise any video, any time"; banner "Year 12 Maths Standard: core videos complete"; line "Find every video in the Year 12 Maths Standard playlist". No "Next" chip; nothing about future videos, exam dates or results. Spoken: "Back on grand final day, the north gate is widened, and two hundred and ten fans a minute stream in, more than the two hundred needed. And with that, the core Year 12 Maths Standard course is complete. Every video is in the Year 12 Maths Standard playlist, so go back to any topic, any time, and keep practising. Well done for working through it all." The pack's "icons for the ten focus areas" become text lines matching p08's Standard 1 card (no coded icons; owner rule on basic coded icons).
+Header "MATHEMATICS STANDARD". The stadium plate at the left (about 900 px) with the north gate drawn wider (A→T "100"), dots streaming through both gates, a teal counter "210 per minute" beside a dashed "200"; at the right a coded playlist card (about 820 × 640 px) headed "Year 12 Maths Standard playlist" with nine ticked strand lines ("Algebraic relationships", "Money: investments and loans", "Ratios and rates", "Trigonometry", "Bivariate data", "Probability", "The normal distribution", "Critical path analysis", "Network flow") and "revise any video, any time"; banner "Year 12 Maths Standard: core videos complete"; line "Find every video in the Year 12 Maths Standard playlist" (**Revision 2:** "Find the rest of Year 12 Maths Standard in the playlist", root's decision 1). No "Next" chip; nothing about future videos, exam dates or results. Spoken: "Back on grand final day, the north gate is widened, and two hundred and ten fans a minute stream in, more than the two hundred needed. And with that, the core Year 12 Maths Standard course is complete. Every video is in the Year 12 Maths Standard playlist, so go back to any topic, any time, and keep practising. Well done for working through it all." (**Revision 2:** the third sentence is "You'll find the rest of Year 12 Maths Standard in the playlist, so go back to any topic, any time, and keep practising.", so nothing claims that every video is already public.) The pack's "icons for the ten focus areas" become text lines matching p08's Standard 1 card (no coded icons; owner rule on basic coded icons).
 
 ## 4. Departures from the packs (each recorded in its design)
 
@@ -57,7 +81,7 @@ Header "MATHEMATICS STANDARD". The stadium plate at the left (about 900 px) with
 4. **c03:** the shed is the anchor; the site's lesson03 Worked Example 2 is the worked example (shared float) and lesson05 Worked Example 1 the tie; one float formula (LST − EST) on screen.
 5. **c04:** the formal's scans are given in scene 2 (grey chips); the site's lesson04 Worked Example 2 (reading a bar) is the worked example.
 6. **c05:** the fast-setting mix (pack question 2) becomes the worked example; A1 is pack question 1 (a) and (b) only; A2 is new, the café's slow oven (6:53 am); "crashing" named once.
-7. **c06:** the formal is modelled in the sheet (it matches c04's chart); the site's card 4 table is both attempts (its "Now solve with it" is A2); the site's column letters (F LFT, G LST) override the kit list's order; the pack's "rows out of order break MAX" is reworded (spreadsheets recalculate by dependency).
+7. **c06:** the formal is modelled in the sheet (it matches c04's chart); the site's card 4 table is both attempts (its "Now solve with it" is A2); the site's column letters (F LFT, G LST) override the kit list's order; the pack's "rows out of order break MAX" is reworded (spreadsheets recalculate by dependency). **Revision 2:** the finish cell is E10 (=MAX(E2:E8)) and the two no-successor LFT cells (F6, F8) are =E10, not the site's =MAX($E$2:$E$8) (same values; the site's form is an author note only; root's decision 2).
 8. **f01:** the site's `we-3` is the worked example (table to network); `we-1` is A1 in the pack's question 1 form; the site's cut example (MS-56) is not used; cuts are taught on the stadium.
 9. **f02:** the site's card 07 full example is the worked example; A2 is new (the stadium with a given path order, reaching 190).
 10. **f03:** the site's `we-1` (four cuts) is the worked example; the shortcut scene uses the stadium's 190 from f02.
@@ -86,11 +110,11 @@ As `maths-standard-kit-needs-z-c-f.md`, with these first uses recorded in each d
 
 ## 9. For root
 
-1. **c01a's split of the café** (section 4, item 1): accept that c01a builds the café's table but teaches drawing on the market stall, leaving the café's snag as the cliffhanger for c01b; or teach the café's dummy in c01a (which undoes ruling 70's split).
-2. **The shed's dummy** (c02 to c05): F and G would share both events, so the shed carries a dummy under ruling 71. Accept, or drop F (the door) from the shed, which changes c03's paths (three, not four) and c05's door cases.
-3. **Ruling 71 confirmation** (section 5): Codex reports the HSC convention for parallel activities before voicing c01b.
-4. **Long titles:** c05 is 83 characters (over 80) and f04 is 79; both designs give a shorter alternative in their open decisions. Choose for c05; f04 may stay.
-5. **The course-close card** (section 3): confirm the nine strand names against the playlist's real section names; confirm "Well done for working through it all" as the course's last spoken line.
-6. **f01 to f03 at 14 scene headings:** accept (each has one extra short stage: f01's ceiling, f02's cut check, f03's shortcut), or merge as their open decisions name.
+1. **c01a's split of the café** (section 4, item 1; closed, ruling 81): accept that c01a builds the café's table but teaches drawing on the market stall, leaving the café's snag as the cliffhanger for c01b; or teach the café's dummy in c01a (which undoes ruling 70's split).
+2. **The shed's dummy** (c02 to c05; closed, ruling 81: the shed keeps its dummy): F and G would share both events, so the shed carries a dummy under ruling 71. Accept, or drop F (the door) from the shed, which changes c03's paths (three, not four) and c05's door cases.
+3. **Ruling 71 confirmation** (section 5; decided for the design in Revision 2, root's decision 3: c01b keeps the dummy and adds a parallel-arrows sentence only if Codex's check requires it; Codex's check still pending): Codex reports the HSC convention for parallel activities before voicing c01b.
+4. **Long titles** (closed, ruling 81: c05 now uses the shorter title, 67 characters; f04 stays at 79): c05 is 83 characters (over 80) and f04 is 79; both designs give a shorter alternative in their open decisions. Choose for c05; f04 may stay.
+5. **The course-close card** (section 3; closed: the nine strand names stand, root's decision 1; "Well done for working through it all" confirmed, ruling 81): confirm the nine strand names against the playlist's real section names; confirm "Well done for working through it all" as the course's last spoken line.
+6. **f01 to f03 at 14 scene headings** (closed, ruling 81): accept (each has one extra short stage: f01's ceiling, f02's cut check, f03's shortcut), or merge as their open decisions name.
 
 Nothing recorded; human listening pending.

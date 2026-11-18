@@ -43,3 +43,5 @@ When a job is waiting (quota, plates rendering), move to the next one rather tha
 **Root, 18 Nov evening:** brief 253 (`codex-prompts/253-maths-standard-r-check-plates-voice.md`): the 16 Maths Standard ratios and rates designs. Steps 1 to 3 after brief 252's steps 1 to 3; voice after brief 252 (r13 and r14 wait for t01).
 
 **Root, 18 Nov night:** brief 254 (`codex-prompts/254-maths-standard-t-check-plates-voice.md`): the 12 Maths Standard trigonometry designs. Steps 1 to 3 after brief 253's; voice after brief 253. r13 and r14 are cleared to voice.
+
+**Root, 19 Nov:** brief 255 (`codex-prompts/255-maths-standard-b-p-z-c-f-check-plates-voice.md`): the last 42 Year 12 Maths Standard designs. Steps 1 to 3 after brief 254's; voice after brief 254. Year 12 Maths Standard is now fully designed and reviewed (briefs 251 to 255).

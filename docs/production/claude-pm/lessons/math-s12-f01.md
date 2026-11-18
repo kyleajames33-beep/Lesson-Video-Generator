@@ -1,8 +1,19 @@
 # Maths S12 F01: How do source, sink, capacity and cuts describe a flow network? Directed edges with capacities as limits, the source and the sink, inflow equals outflow in the middle, a table drawn as a network, and a cut whose capacity counts only the edges crossing forwards (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c06's final frame (`math-s12-c06.md` scene 12) and root's Standard rulings (1 to 76; ruling 74, site errors never taught; MS-56's cut note). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c06's final frame (`math-s12-c06.md` scene 12) and root's Standard rulings (1 to 76; ruling 74, site errors never taught; MS-56's cut note). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,088 characters by script (see "Narration length estimate"), 14 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,121 characters by script (see "Narration length estimate"; Revision 2), 14 scene headings, about 500 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-f01-learning-review.md` (summary `../checks/m-s12-c01-f04-learning-review-summary.md`), with root's rulings 1 to 81 in `../checks/root-rulings-maths-standard-outline.md` and root's resolution brief of 19 Nov. Resolution log: `../checks/m-s12-c01-f04-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Should fix, scene 4 (the queue picture breaks "inflow = outflow"): **accepted**, reviewer's narration with the bold cue kept: "So at most a hundred and ten people a minute can get through it, and the other ten a minute would **queue** on the walkway, outside the concourse." A's in and out counters stay equal at 110 throughout, and the ten a minute that can't get in gather on the S→A walkway outside A's entrance (hand tag "can't get in yet", replacing "120 in, only 110 out"). Simulation 2, the visual surprise, the stage list, the stage plan, the visual-standard line and the kit note now describe the queue outside A.
+2. Optional, scene 7 (one route crossing a cut): **applied**, time neutral. On "has to cross every cut" the dot traces S→A→B→T. On the 230 cut ({S, B}) it lights forwards on S→A, grey backwards on A→B, and forwards again on B→T.
+
+Open decisions: 1 is closed (ruling 81: f01 to f03 at 14 scene headings); 2 is unruled and the review did not object. Joins unchanged: scene 1 opens on c06's final frame, and scene 13 (f02's opening) is unchanged.
+
+Narration 5,121 characters by script (Revision 1: 5,088), about 500 s with holds, 70 s under the 570 s cap; feedback speech about 23 s and 20 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: first video of the Network flow strand, playlist order 89. **Standard 2 only** (Standard 1 has no network flow; ruling 68). Pre-design pack: `../pre-design/maths-standard/math-s12-f01.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year12/network-flow/lesson01.sa.html` (SHA256 `ff2e356c61e1ecd75877952bd054e101b212c33325ddc9283c6f178913496b5c`; card 02, "Source ($S$): outflow only, where flow enters the network. Sink ($T$): inflow only, where flow exits. Edge capacity: maximum flow an edge can carry. Cut: a set of edges whose removal disconnects $S$ from $T$."; "Cut capacity: Add the capacities of all edges in the cut (edges going FROM the $S$-side TO the $T$-side only, edges going the other way are not in the cut)."; `we-1` (capacity into C 13, out 10); `we-3`, the water pipeline "Pipe 1 S→A (20 ML/day), Pipe 2 S→B (15 ML/day), Pipe 3 A→C (12 ML/day), Pipe 4 A→B (8 ML/day), Pipe 5 B→C (10 ML/day), Pipe 6 B→T (9 ML/day), Pipe 7 C→T (18 ML/day)"). Route entry: `math-s12-f01` in `../../programme/maths-standard-route-inputs-7.json`. Visual system: maths studio kit; the stadium and station plaza (c06's final frame) as the anchor; flow networks coded over the plate, with moving dots (never drawn people).
 
@@ -27,15 +38,15 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Site `we-1` as attempt 1** (capacity into C 13, out of C 10), in the pack's question 1 form; pack question 2 (a back edge across a cut, 18) as attempt 2.
 - **Simulations (standard item 3).**
   1. **FlowNetwork over the plate** (scenes 1 to 4, 6, 7; new kit part): coded edges as tubes along the painted walkways; teal dots move along each edge at a rate proportional to its current flow; a capacity label (blue) on each; at A, an in and out counter.
-  2. **Pooling at the north concourse** (scene 4): dots arrive at A at up to 120 a minute but leave at only 110; ten a minute gather into a small queue patch at A's entrance, showing why inflow can't stay above outflow.
+  2. **Queue outside the north concourse** (scene 4; Revision 2, review finding 1): up to 120 a minute crowd onto the S→A walkway, but A's in and out counters stay equal at 110; the other ten a minute gather into a queue patch on the walkway outside A's entrance. Inflow = outflow always holds, and a capacity into a point limits nothing on its own.
   3. **TableToNetwork** (scene 5; new kit part): each table row lights and its arrow draws from the From point to the To point with its capacity.
   4. **CutLine** (scenes 6, 7; new kit part): a freehand violet line; the source side tints pale violet; crossing edges glow violet (counted) or grey with a small back arrow and "not counted"; a live sum.
 - **Colour roles (fixed for f01 to f04).** Capacity blue; flow teal (dots, flow numbers); saturated edges amber with a tick and "full" (f02 on); cut lines, counted edges and cut sums violet; back edges grey, "not counted"; the source side pale violet tint; demand dashed ink, spare olive, shortfall amber (f04); answer green; mistake red, crossed slips only.
-- **Large type, handwritten voice.** Capacity labels 40 px; counters 44 px; table rows 40 px. Hand tags: "one way only", "a limit, not a count", "source: flow only leaves", "sink: flow only arrives", "in = out", "120 in, only 110 out", "From → To", "7 rows, 7 arrows", "every route crosses", "forwards only", "back: not counted", "a ceiling". At most two live at once.
-- **Stage changes (standard item 2).** c06's frame (1); edges and capacity (2); source and sink (3); inflow, outflow and the queue at A (4); g01 board, the water pipeline (5); cuts on the stadium (6); every cut as a ceiling (7); framed card (8); question cards (9 to 12); the festival's empty pipes (13); key notes (14).
+- **Large type, handwritten voice.** Capacity labels 40 px; counters 44 px; table rows 40 px. Hand tags: "one way only", "a limit, not a count", "source: flow only leaves", "sink: flow only arrives", "in = out", "can't get in yet", "From → To", "7 rows, 7 arrows", "every route crosses", "forwards only", "back: not counted", "a ceiling". At most two live at once.
+- **Stage changes (standard item 2).** c06's frame (1); edges and capacity (2); source and sink (3); inflow, outflow and the queue outside A (4); g01 board, the water pipeline (5); cuts on the stadium (6); every cut as a ceiling (7); framed card (8); question cards (9 to 12); the festival's empty pipes (13); key notes (14).
 - **Worked example (g01 layout).** Scene 5: task strip "Draw the weighted, directed network for the town's water pipeline."; givens card: the table (From, To, Capacity (ML per day): S A 20; S B 15; A C 12; A B 8; B C 10; B T 9; C T 18); the network at the right, S left, T right, A, B, C between; a check "7 rows, 7 arrows"; framed answer (the drawn network, green outline); crossed slip "A→B drawn as B→A" (caption "From is the tail, To is the head").
 - **Memory aid.** Framed card: "In = out in the middle. Cuts count forwards only." Key line: "No flow can be bigger than any cut."
-- **Visual surprise.** Dots pool at the north concourse's entrance when 120 a minute meet 110 a minute of exits (4).
+- **Visual surprise.** Dots queue on the walkway outside the north concourse when 120 a minute could arrive but only 110 a minute can leave, while A's in and out counters never differ (4).
 - **Plain meanings at first use.** Edge ("a walkway, pipe or road"); directed ("one way only"); capacity ("the most it can carry per minute, or per hour"); flow network ("a network where something moves through it"); source ("where the flow starts"); sink ("where it ends"); inflow and outflow ("the flow coming in and going out at a point"); cut ("a line that splits the points into a source side and a sink side, so every route from S to T crosses it").
 - **Attempts (original wording, HSC style).** A1 (site `we-1`, pack question 1's form): S→A 12, S→B 8, A→C 6, B→C 7, A→T 5, C→T 10 (kL per hour); (a) draw, (b) source and sink, (c) capacity into and out of C, can it all pass; 13 in, 10 out, no; crossed "yes: 13 can arrive" (caption "only 10 can leave C"). A2 (pack question 2): the cut {S, A} | {B, C, T}: 7 + 6 + 5 = 18; crossed "21, adding B→A" (caption "B→A crosses backwards: not counted").
 - **Mistake scene:** none separate. Capacity read as the actual flow (2, said); an arrow drawn the wrong way (5 crossed); a back edge counted in a cut (6, said; A2 crossed); more in than can go out (4; A1 crossed); an edge wholly on one side counted (6, said).
@@ -76,9 +87,9 @@ Visual: stage change: simulation 1. The plate dims slightly; the coded edges thi
 Visual: camera continue. On "source" the plaza node "S" rings and gains a tag "source" (40 px; hand tag "source: flow only leaves"), its two arrows glowing outwards. On "sink" "T" rings, tag "sink" (hand tag "sink: flow only arrives"), its two arrows glowing inwards. On "through" (bold) A and B pulse as dots pass through them.
 
 ### 4. what goes in comes out
-> At a point in the middle, the flow coming in is its inflow, and the flow going out is its outflow. People don't pile up inside the north concourse forever, so whatever flows in must flow out. Inflow equals outflow. Now look at the capacities around the north concourse. Up to a hundred and twenty people a minute can arrive, but the two ways out take only thirty plus eighty, a hundred and **ten**. So at most a hundred and ten people a minute can get through it, and the extra ten a minute would just **queue**.
+> At a point in the middle, the flow coming in is its inflow, and the flow going out is its outflow. People don't pile up inside the north concourse forever, so whatever flows in must flow out. Inflow equals outflow. Now look at the capacities around the north concourse. Up to a hundred and twenty people a minute can arrive, but the two ways out take only thirty plus eighty, a hundred and **ten**. So at most a hundred and ten people a minute can get through it, and the other ten a minute would **queue** on the walkway, outside the concourse.
 
-Visual: camera push in on A (the north concourse; about 1.4 zoom). On "inflow" a teal counter "in" at A's entrance; on "outflow" a counter "out" at its exits. On "Inflow equals outflow" both counters read the same running number (hand tag "in = out"). On "capacities around the north concourse" the labels "120", "30" and "80" glow blue; on "ten" (bold) a row writes, 44 px: "capacity into A: 120; capacity out of A: 30 + 80 = 110". Simulation 2: on "queue" (bold) the inflow is pushed to 120 a minute; the exits carry 110 and ten dots a minute gather into a growing patch at A's entrance (hand tag "120 in, only 110 out").
+Visual: camera push in on A (the north concourse; about 1.4 zoom). On "inflow" a teal counter "in" at A's entrance; on "outflow" a counter "out" at its exits. On "Inflow equals outflow" both counters read the same running number (hand tag "in = out"). On "capacities around the north concourse" the labels "120", "30" and "80" glow blue; on "ten" (bold) a row writes, 44 px: "capacity into A: 120; capacity out of A: 30 + 80 = 110". Simulation 2: on "get through it" dots crowd onto the S→A walkway at up to 120 a minute; A's two counters stay equal at 110 throughout ("in 110", "out 110"). On "queue" (bold) the ten a minute that can't get in gather into a growing patch on the S→A walkway, outside A's entrance (hand tag "can't get in yet"); on "outside the concourse" the patch pulses once while A's counters still read the same.
 
 ### 5. worked example: a table to a network
 > Here's a worked example. A town's water comes through seven pipes, and the table lists each one, where it starts, where it goes, and its capacity in megalitres a day. Put the source on the left and the sink on the right, with A, B and C in between. Then draw one arrow for each row, from the From point to the To point, and write the capacity on it. S to A is twenty, and S to B is fifteen. A to C is twelve, A to B is eight, B to C is ten, B to T is nine, and C to T is **eighteen**. Last, check the count, seven rows and seven **arrows**. Drawing an arrow the wrong way round is the classic slip. The From column is always the arrow's **tail**.
@@ -93,7 +104,7 @@ Visual: stage change: back to the full stadium (the plate at about 1,300 px), si
 ### 7. every cut is a ceiling
 > Why do cuts matter? Every fan going from the plaza to the stands has to cross every cut, going forwards, so the flow can never be bigger than any cut's capacity. The cut around the plaza and both concourses crosses just the two gates, eighty plus a hundred and ten, a hundred and **ninety**. So however the crowd moves, no more than a hundred and ninety people a minute can reach the stands. Whether they can really reach that many is our next **question**.
 
-Visual: camera continue. On "has to cross every cut" three faint violet cut lines show at once (210, 230 and a new one), and a dot's route lights a crossing on each. On "the plaza and both concourses" the line wraps S, A and B; A→T and B→T glow violet ("80 + 110"); on "ninety" (bold) "= 190". On "no more than" a horizontal violet bar "ceiling: 190 per minute" appears over the stands (hand tag "a ceiling"). On "question" (bold) a grey "?" sits on the bar.
+Visual: camera continue. On "has to cross every cut" three faint violet cut lines show at once (210, 230 and a new one), and a dot traces S→A→B→T, lighting each crossing; on the 230 cut ({S, B}) it lights forwards on S→A, grey backwards on A→B, and forwards again on B→T. On "the plaza and both concourses" the line wraps S, A and B; A→T and B→T glow violet ("80 + 110"); on "ninety" (bold) "= 190". On "no more than" a horizontal violet bar "ceiling: 190 per minute" appears over the stands (hand tag "a ceiling"). On "question" (bold) a grey "?" sits on the bar.
 
 ### 8. memory aid
 > Here's the summary. Flow leaves the source and arrives at the sink, and in between, what goes in comes out. A cut counts only the edges crossing forwards, from the source side to the sink **side**.
@@ -143,7 +154,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 13's frame exac
 
 - **Does it explain causes?** Why capacity is a limit (2). Why nothing flows into the source or out of the sink (3). Why inflow = outflow: nothing is stored, and the extra queues (4). Why a back edge doesn't count: flow along it moves towards the source side (6). Why every cut is a ceiling: every route crosses it forwards (7).
 - **Misconceptions addressed:** capacity read as flow (2); an arrow reversed (5); a back edge counted (6, A2); more in than can go out (4, A1); an edge on one side counted (6, said).
-- **Visual standard, item by item:** 1 the stadium plate, the festival tank plate; 2 a new stage every 30 to 60 s; 3 moving dots with counters, the queue at A, rows drawing arrows, the cut line with live sums; 4 fixed roles with words; 5 large type; 6 hand tags; 7 g01 board in 5; 8 framed card and five bullets; 9 the dots pooling at A.
+- **Visual standard, item by item:** 1 the stadium plate, the festival tank plate; 2 a new stage every 30 to 60 s; 3 moving dots with counters, the queue outside A, rows drawing arrows, the cut line with live sums; 4 fixed roles with words; 5 large type; 6 hand tags; 7 g01 board in 5; 8 framed card and five bullets; 9 the dots queuing outside A while its counters stay equal.
 - **One idea at a time:** capacity (2), source and sink (3), in = out (4), table to network (5), cuts (6), ceilings (7).
 - **Response opportunity:** two unseen HSC-style tasks with every demand and given visible; 10 s each; feedback about 23 s and 20 s.
 - **Avoided double teaching:** Year 11 directed networks are a grey chip.
@@ -178,6 +189,7 @@ Recalculated in Python 3.14 (19 Nov 2026, scratchpad `cf/verify.py`, `python -I`
 - Site we-1: into C 13, out of C 10 (the smallest cut 15; not said).
 - A2: cut {S, A} = 18 (smallest cut of the network 13; not said).
 - Site we-3: 7 edges as listed.
+- Revision 2 (`work/brief-resolve-standard-cf/verify.py`, `python -I`, 46 checks, 0 failures): A's in and out counters both 110; the queue is 120 − 110 = 10 a minute on the S→A walkway; the route S→A→B→T crosses the cut {S, B} forwards, backwards, forwards; cuts 210, 200, 230, 190 and the maximum 190 unchanged.
 
 ## Memory aid check
 
@@ -185,6 +197,8 @@ Recalculated in Python 3.14 (19 Nov 2026, scratchpad `cf/verify.py`, `python -I`
 - **Considered, not used:** "Cut the pipes, count the pipes" (invites counting back edges).
 
 ## Narration length estimate
+
+Revision 2, counted by script (`work/brief-resolve-standard-cf/count.py`, the sum of the scene strings, which reproduces e08's 5,632): **5,121 characters** (Revision 1: 5,088), 14 scene headings. Characters per scene (1 to 14): 363, 426, 307, 537, 634, 688, 449, 193, 400, 311, 194, 272, 272, 75. Speech about 385 s; holds and settling unchanged from Revision 1 (below); total **about 500 s**, 70 s under the 570 s cap. Feedback speech: about 23 s and 20 s. The Revision 1 paragraph below is kept for the record.
 
 Counted by script (scratchpad `cf/count.py`, the method of `work/brief-resolve-standard-t1/count.py`, which reproduces e08's 5,632): **5,088 characters**, 14 scene headings. Characters per scene (1 to 14): 363, 426, 307, 504, 634, 688, 449, 193, 400, 311, 194, 272, 272, 75.
 
@@ -205,7 +219,7 @@ Stage plan (approximate seconds):
 | 0 to 25 s | 1 | c06's frame; the stadium |
 | 25 to 60 s | 2 | Edges and capacity |
 | 60 to 80 s | 3 | Source and sink |
-| 80 to 125 s | 4 | In = out; the queue at A |
+| 80 to 125 s | 4 | In = out; the queue outside A |
 | 125 to 185 s | 5 | g01 board: the water pipeline |
 | 185 to 240 s | 6 | Cuts and the back edge |
 | 240 to 270 s | 7 | Every cut is a ceiling |
@@ -232,7 +246,7 @@ Uses: `PlateImg`, `HandTag`, `DrawnMark`, the g01 `WorkingBoard` parts, `MemoryA
 
 Additions (kit-needs file, network flow items 1 to 3 and 5):
 1. **FlowModel** (logic): edges with capacities; flows per edge; every source-to-sink cut with its forward capacity; the maximum flow by augmenting paths (checking only). Must match `cf/verify.py` on the stadium (190), the festival (17) and A2's network.
-2. **FlowNetwork**: edges as tubes over a plate or plain; blue capacity labels; teal dots at a rate proportional to flow; in and out counters at a point; a queue patch where inflow exceeds what can leave.
+2. **FlowNetwork**: edges as tubes over a plate or plain; blue capacity labels; teal dots at a rate proportional to flow; in and out counters at a point; a queue patch on a walkway outside a point when arrivals exceed what can leave (the point's in and out counters stay equal).
 3. **CutLine**: a freehand violet line; a pale violet source-side tint; crossing edges glowing violet (counted) or grey with a back arrow (not counted); a live sum.
 4. **TableToNetwork**: From, To, Capacity rows lighting and drawing their arrows (PrecedenceTable's row style).
 
@@ -277,9 +291,10 @@ Builds on: Critical Path Analysis in a Spreadsheet. Next: The Saturated Edges Me
 
 ## Open decisions
 
-- **1. Fourteen scene headings (root).** f01 carries two syllabus points and seven ideas; scene 7 (cuts as ceilings) is its own short stage so the 190 ceiling lands before f02. It can merge into scene 6 if the voiced take runs long.
+- **1. Fourteen scene headings (root).** Closed in Revision 2: ruling 81. Revision 1 text: f01 carries two syllabus points and seven ideas; scene 7 (cuts as ceilings) is its own short stage so the 190 ceiling lands before f02. It can merge into scene 6 if the voiced take runs long.
 - **2. "No more than 190" (root).** The stadium's smallest cut is said as a ceiling only; f02's A2 reaches 190 with the method and f03 names the theorem.
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s12-f01-learning-review.md`). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from c06 for a student with only Year 11 networks; check that "a limit, not a count" lands with the trickle, that the queue at A makes in = out believable, that the From → To rule is enough for A1, that the back-edge rule is clear before A2, that "every cut is a ceiling" is reasoned, not asserted, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

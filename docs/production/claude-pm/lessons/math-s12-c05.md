@@ -1,8 +1,18 @@
 # Maths S12 C05: What happens to the finish time when one activity speeds up or slows down? A critical job changes the finish day for day, a non-critical job uses its float first, a saving lasts only until another path takes over, and two critical paths must both be shortened (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c04's final frame (`math-s12-c04.md` scene 12) and root's Standard rulings (1 to 76; ruling 72, the shed and the café). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-r12a.md`, `t05.md`, `i09.md` at Revision 2, and their resolution logs), c04's final frame (`math-s12-c04.md` scene 12) and root's Standard rulings (1 to 76; ruling 72, the shed and the café). Designer's decisions for c01a to f04, including every join: `../checks/root-decisions-maths-s12-c01-f04.md`. Next: student learning review, then the Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,016 characters by script (see "Narration length estimate"), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,016 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s12-c05-learning-review.md` (summary `../checks/m-s12-c01-f04-learning-review-summary.md`), with root's rulings 1 to 81 in `../checks/root-rulings-maths-standard-outline.md` and root's resolution brief of 19 Nov. Resolution log: `../checks/m-s12-c01-f04-learning-review-resolution.md`. Findings by the review's numbers:
+
+1. Optional, scene 6 (which shed is on screen): **applied**, time neutral. A small grey tag on B's bar, "kit: 5 days (two critical paths)", holds from "Remember the late kit" until the reset, and fades with it.
+
+Housekeeping: ruling 81 accepts the shorter title, now on the Title line: "When an Activity Takes Longer or Shorter | Year 12 Maths Standard 2" (67 characters by script). c04's "Next" line and c06's "Builds on" line name it. Open decisions: 2 is closed (ruling 81); 1 (A1's dropped part (c)) is unruled and the review did not ask for it. Narration unchanged. Joins unchanged: scene 1 opens on c04's final frame, and scene 12 (c06's opening) is unchanged.
+
+Narration 5,016 characters by script (Revision 1: 5,016), about 497 s with holds, 73 s under the 570 s cap; feedback speech about 21 s and 26 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: sixth video of the Critical path analysis strand, playlist order 87. **Standard 2 only.** Pre-design pack: `../pre-design/maths-standard/math-s12-c05.md`. Site lessons (read through the pack's quotations, read only): `maths-standard/year12/critical-path-analysis/lesson04.sa.html` (SHA256 `d0e1166464da1c40cb45571fc94734b73b5ed926c330a6ab2c3706cc37d5663a`; `crash-critical-path`, Worked Example 3, "Crash A by 2 days: critical path → 10 days"), `lesson03.sa.html` (SHA256 `562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a`; "F has 1 day of float, so that one extra day is exactly absorbed ... Push F to 7 and the project slips to 15"), `lesson05.sa.html` (SHA256 `5e734b49509d875811ac31b4927d901c9e4e29f36aa754a6a13470d2ff7b51ac`; crashing with two critical paths) and `lesson06.sa.html` (SHA256 `0b95600b48eedf7c1d576de4fb431270d6e793d09d2bd9840e717ee725eec3e6`; "R has 2 weeks float ... Project not delayed ... However, R now has zero float"). Route entry: `math-s12-c05` in `../../programme/maths-standard-route-inputs-7.json`. Visual system: maths studio kit; the shed's Gantt chart under a rain cloud (c04's final frame) as the anchor; network, Gantt chart and path bars driven by one project state.
 
@@ -86,7 +96,7 @@ Visual: clear change to the g01 board. Task strip, 44 px: "A fast-setting mix cu
 ### 6. two more cases
 > Two more cases, both about speeding up. Shortening a job that isn't critical changes nothing. If the kit came in three days, the slab's path still takes nine, so the finish stays at **nine**. And when there are two critical paths, shortening just one of them doesn't help either. Remember the late kit, when both paths took nine days? Cut a day off the curing then, and the kit's path still takes nine, so the finish doesn't move. To save time, you have to shorten every critical path at **once**. Shortening the walls, which sit on both paths, would save a day.
 
-Visual: stage change: the chart, the network and the stack together (as in 2). On "three days" the handle shrinks B from 4 to 3; B's window grows to 2; on "nine" (bold) the finish line stays at 9 with a green tick (hand tag "not critical: no change"); B returns to 4. On "Remember the late kit" B grows to 5 again; both critical paths amber, the crown split. On "Cut a day off the curing" D shrinks from 3 to 2: the slab's path drops to 8, the crown stays on B-E-G at 9, and the finish line stays at 9. On "once" a bracket links the two amber paths (hand tag "shorten both"). On "Shortening the walls" E shrinks from 2 to 1: both amber bars drop to 8 and the finish line moves to 8. Then everything resets to the original shed.
+Visual: stage change: the chart, the network and the stack together (as in 2). On "three days" the handle shrinks B from 4 to 3; B's window grows to 2; on "nine" (bold) the finish line stays at 9 with a green tick (hand tag "not critical: no change"); B returns to 4. On "Remember the late kit" B grows to 5 again; both critical paths amber, the crown split, and a small grey tag on B's bar, "kit: 5 days (two critical paths)", holds until the reset. On "Cut a day off the curing" D shrinks from 3 to 2: the slab's path drops to 8, the crown stays on B-E-G at 9, and the finish line stays at 9. On "once" a bracket links the two amber paths (hand tag "shorten both"). On "Shortening the walls" E shrinks from 2 to 1: both amber bars drop to 8 and the finish line moves to 8. Then everything resets to the original shed, and the kit tag fades with the reset.
 
 ### 7. memory aid
 > Here's the summary. A critical job changes the finish day for day. A job that isn't critical uses up its float first. And after any change, check every path **again**. The longest path then tells you the new finish.
@@ -182,6 +192,8 @@ Recalculated in Python 3.14 (19 Nov 2026, scratchpad `cf/verify.py`, `python -I`
 
 ## Narration length estimate
 
+Revision 2, counted by script (`work/brief-resolve-standard-cf/count.py`, the sum of the scene strings, which reproduces e08's 5,632): **5,016 characters** (Revision 1: 5,016), 13 scene headings. Characters per scene (1 to 13): 482, 489, 503, 470, 700, 554, 211, 341, 285, 244, 348, 314, 75. Speech about 377 s; holds and settling unchanged from Revision 1 (below); total **about 497 s**, 73 s under the 570 s cap. Feedback speech: about 21 s and 26 s. The Revision 1 paragraph below is kept for the record.
+
 Counted by script (scratchpad `cf/count.py`, the method of `work/brief-resolve-standard-t1/count.py`, which reproduces e08's 5,632): **5,016 characters**, 13 scene headings. Characters per scene (1 to 13): 482, 489, 503, 470, 700, 554, 211, 341, 285, 244, 348, 314, 75.
 
 At 13.3 characters per second the speech is about 377 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, final frame 2 s) 6 s; settling for each drag and its rescan (2 to 4, 6), the board's rows and crown jump (5) and the sheet typing in (12) about 55 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 497 s**, under the 570 s cap. Feedback speech: about 21 s and 26 s.
@@ -247,9 +259,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Changing Activity Durations: What Happens to the Finish? | Year 12 Maths Standard 2
+Title: When an Activity Takes Longer or Shorter | Year 12 Maths Standard 2
 
-(Title length: 83 characters by script.)
+(Title length: 67 characters by script; Revision 2, ruling 81. Revision 1: "Changing Activity Durations: What Happens to the Finish? | Year 12 Maths Standard 2", 83 characters.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html
 
@@ -267,8 +279,9 @@ Builds on: Gantt Charts and the Critical Path. Next: Critical Path Analysis in a
 ## Open decisions
 
 - **1. A1's dropped part (c) (root).** The pack's D + 2 (14 days) repeats scene 2's case; dropped for brief feedback. It can return as a third part if the review wants a critical delay practised.
-- **2. The title (root).** 83 characters with the course suffix; a shorter alternative is "When an Activity Takes Longer or Shorter | Year 12 Maths Standard 2".
+- **2. The title (root).** Closed in Revision 2: ruling 81 accepts the shorter title, now on the Title line (67 characters); c04's "Next" line and c06's "Builds on" line name it. Revision 1 text: 83 characters with the course suffix; a shorter alternative is "When an Activity Takes Longer or Shorter | Year 12 Maths Standard 2".
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s12-c05-learning-review.md`). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from c04; check that one drag per case is followable at playback speed, that "float used up" in scene 3 is clear, that "delay minus float" is reachable, that the crown jump makes the surprise land, that the two-critical-path case in 6 is not too quick, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
