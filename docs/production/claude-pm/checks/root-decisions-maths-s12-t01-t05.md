@@ -4,6 +4,8 @@
 
 Every value was recalculated with SymPy 1.14 (scratchpad `t/verify.py`, run with `python -I`, 0 failures). Narration was counted by script (scratchpad `t/count.py`, the method of `work/brief-resolve-standard-r2/count.py`, which reproduces e08's 5,632). Every bold cue is quoted in its scene's Visual in spoken order, and no design contains an em dash (both checked by script, scratchpad `t/cues.py`). Seconds are speech at 13.3 characters a second plus countdowns, holds, settling and the 45 s notes scene; measure on the Google voice.
 
+**Revision 2 note (18 Nov 2026).** All six designs are now at Revision 2 (learning review resolved; log `m-s12-t01-t05-learning-review-resolution.md`). Section 3 (t05's final frame) is **unchanged**. Section 4's t04 → t05 join changes only in the leg colours. Sections 1 and 6 to 9 are kept as the Revision 1 handover. Current lengths and the sources recorded for section 6 are in the resolution log. Rulings 61 and 62 close section 9's items 1, 3, 4, 5, 6 and 7.
+
 ## 1. Summary
 
 | Design | Characters | About (s, with holds) | Scenes | Courses | Anchor | New plate briefed here | Open question |
@@ -54,7 +56,7 @@ t05 scene 12, held about 2 s, then returned to silently after the notes (scene 1
 - **t01b → t02:** the ladder plate with its 4 : 1 overlay and "tan⁻¹(4 ÷ 1) = 75.96375…°", "75.96° in degrees and minutes?".
 - **t02 → t03:** the drone plate over a coded sports field, "40 m", "75 m", a dotted sight line, "how far away?", "what angle?".
 - **t03 → t04:** the farm plate with a north arrow and three pins ("dam", "shearing shed", "front gate"), "which way?" chips, no bearing drawn.
-- **t04 → t05:** the farm with the ute's dotted track, 2.0 km north then 2.1 km east to the far paddock gate, the ute badge, a dashed "?" straight line.
+- **t04 → t05:** the farm with the ute's dotted track, 2.0 km north (violet) then 2.1 km east (amber) to the far paddock gate, the ute badge, a dashed "?" straight line. Revision 2 (learning review, root's decision 4): one colour per leg from t04 scene 11 through t05, using t05's roles (north leg adjacent, east leg opposite from the homestead); Revision 1 had north amber and east violet in t04 and t05 scene 1.
 - **t05 → t06 / b01:** section 3.
 
 ## 5. Departures from the packs (each recorded in its design)
