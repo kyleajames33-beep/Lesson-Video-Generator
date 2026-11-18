@@ -97,3 +97,10 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 67. **"20% chance of rain"** (p01, p08): Codex finds the Bureau of Meteorology's dated definition before narration; if unavailable, the designs say only "the forecast says a 20% chance" without explaining the Bureau's method.
 68. **Standard 1 path:** b01 to b04a, b07, p01 to p03, p05, p06, p08; p08 is Standard 1's last Year 12 video (no normal distribution or networks), with the two-route final frame the z01 pack proposed. The b07 dependency on Year 11 interpolation and extrapolation replaces the outline's b04 entry.
 69. **Contexts:** the site's deaths, drug trial, raffle and genetic marker contexts are not used (MS-64, MS-68); all new data are invented and labelled as such.
+
+## Rulings on the z, c and f packs (19 November 2026)
+70. **c01 splits** into c01a (precedence table to network) and c01b (dummy activities). z05 splits only if a design cannot fit under 570 s.
+71. **Dummies:** two activities with the same start and end events are drawn with a dummy (standard network convention); Codex confirms the convention against recent HSC Standard 2 papers in the maths check.
+72. **Continuity anchors:** the bakery loaves through the normal distribution videos and the café and shed through critical path are deliberate callbacks; each video still has its own worked example.
+73. **f04** is the last core Year 12 Standard video: it ends on "core videos complete" and points to the Year 12 Maths Standard playlist, with no promise of future videos.
+74. **Site errors** MS-47 to MS-59 (normal distribution and networks) are never taught; the corrected critical-path diagram total (7, not 12) and the saturated-edges path-order warning are taught correctly.

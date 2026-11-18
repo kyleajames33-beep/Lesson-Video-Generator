@@ -1,0 +1,1580 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-19",
+ "brief": "Maths Standard start (root request, 19 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 12 Standard 2 (no matching Standard 1 points)",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 12 entries list Standard 2 and Standard 1 codenames separately (standard2ActionIds, standard1ActionIds); these three focus areas have no Standard 1 points, so standard1ActionIds is empty.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 12 Standard 2 The normal distribution, Critical path analysis and Network flow pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year12Standard2Points": 26,
+  "year12Standard1Points": 0,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 19 November 2026 and match the crosswalk inventory. All fourteen lessons use data-step-id sections. Normal distribution lessons 06 and 07 label worked examples we-1 (06 also we-2), lessons 03 and 05 we-1, lesson08 we-1 and we-2; critical path lesson01 labels we-l07-1 to we-l07-3 and lessons 02 to 06 have no example ids; network flow lessons label we-1 to we-3. The normal distribution folder has lessons 03 and 05 to 08 only."
+ },
+ "recommendations": [
+  "Run z01 to z06, then c01 to c06, then f01 to f04 after Relative frequency and probability (outline recommended order; root ruling 28). All sixteen are Standard 2 only: the 2024 Standard 1 course has no normal distribution, critical path analysis or network flow focus area, so Standard 1 viewers finish the Year 12 course at math-s12-p08 and these videos carry no Standard 1 codes.",
+  "Playlist order: the outline's numbers 77 to 92 stand (rulings 46 and 58 moved only r and t); split parts would share their number.",
+  "Joins: z01 opens on p08's final frame; z01's pack proposed a two-route frame (Standard 2: the bakery's loaf histogram; Standard 1: course complete, see the playlist) and the p08 pack accepts it; the bakery plate is briefed once, in z01's asset brief. z06 ends on the bakery-cafe's morning jobs (c01's anchor); c06 ends on the stadium walkways (f01's anchor); f04 ends the course with a playlist pointer and no promises of future videos.",
+  "Advanced reuse (ruling 7): the Year 12 Advanced normal kit (NormalCurve, BandSlider, ZSlider, TailLadder, SigmaRuler, ScoreCompare; ClassHistogram) covers z01 to z06 with a 'rule readout' mode added (68, 95, 99.7 and the pieces, not table values); the Advanced anchors (chips, apples, fish, the bottle filler) and scripts are not reused. The Standard course uses no density formula and no normal table: probabilities come from whole-number z-scores and the empirical rule only.",
+  "Networks have no existing kit. checks/maths-standard-kit-needs-z-c-f.md describes a shared ProjectModel with ActivityNetwork, ScanSweep, PathStack, FloatTable, GanttChart and ProjectSheet for critical paths, and FlowModel with FlowNetwork, CutLine and DemandGauge for flow; both course-neutral and sharing one graph layout.",
+  "Pace flags (gentler Standard pace): c01 at risk (suggested split c01a and c01b); z04, z05, c02, c03, c05 and f01 to watch (suggested splits for z05 and f01 only if a design runs past 570 s); z01, z02, z03, z06, c04, c06, f02, f03 and f04 fit 6 to 8 minutes.",
+  "Site findings: MS-47 to MS-59 appended to docs/production/claude-pm/site-corrections-maths-standard.md, section 9 (a wrong memory trick and a misstated total, an impossible sleep regression, a hero caption of 12 against arrows that give 7, a crossed-out worked attempt and a missing question, a seven-activity example needing two dummies, wrong days in a scheduling example, node slack called float, a path-order claim contradicted on its own page, a miscounted title, owner notes on methods beyond Standard 2, an unsourced height hook, old module labels and 2017 codes, and three points stated but not shown).",
+  "Outline problems: none in the point assignment (all 26 points of the three focus areas are owned once). The outline's z-strand Advanced reuse candidates are math-a12-s09 to s11; math-a12-s12 (the filling machine) also has reusable motion, noted in z05 and z06. The outline lists the CPA spreadsheet (c06) under lesson03 only, which is right; lesson06 (module review) is used only for one delay example in c05."
+ ],
+ "part": 7,
+ "covers": "math-s12-z01 to z06 (The normal distribution), math-s12-c01 to c06 (Critical path analysis) and math-s12-f01 to f04 (Network flow), Year 12 Standard 2",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 12,
+   "entries": [
+    {
+     "id": "math-s12-z01",
+     "playlistOrder": 77,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What does normally distributed data look like, and why do its mean, median and mode match?",
+     "syllabusActionIds": [
+      "cic0ba342d",
+      "cif956cc8e"
+     ],
+     "standard2ActionIds": [
+      "cic0ba342d",
+      "cif956cc8e"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cic0ba342d",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that a dataset that is normally distributed can be represented by a bell-shaped curve",
+       "sourceHtml": "<p>Recognise that a <a data-item-id=\"ee4c5696-bb05-4660-b565-cf5ec9dbb64c\" href=\"\">dataset</a> that is normally distributed can be represented by a bell-shaped curve</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": "Covered as a described curve; no lesson shows a histogram of a dataset with the bell over it (MS-59). z01 adds 200 invented loaf masses."
+      },
+      {
+       "id": "cif956cc8e",
+       "course": "Year 12 Standard 2",
+       "text": "Explain that the mean, median and mode are approximately equal for data arising from a random variable that is normally distributed",
+       "sourceHtml": "<p>Explain that the <a data-item-id=\"2c1494c6-6322-4e86-a08c-32bb66158a71\" href=\"\">mean</a>, <a data-item-id=\"c8bd5f36-3c30-4bb9-b84e-df1a1819a46f\" href=\"\">median</a> and <a data-item-id=\"36cea914-6762-4653-babb-217290266149\" href=\"\">mode</a> are approximately equal for <a data-item-id=\"5551f3b1-f9bb-459c-a1ac-01931cc54368\" href=\"\">data</a> arising from a <a data-item-id=\"0e972d96-9e19-4b60-9572-b0c587d93dba\" href=\"\">random variable</a> that is normally distributed</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": "Covered for the curve ('Mean = median = mode'); 'approximately equal for data' is not shown with a dataset (MS-59). z01 computes 709.95, 710, 710 g and a skewed contrast."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+      "sectionIds": [
+       "orient-normal-distribution",
+       "describe-normal-properties",
+       "compare-normal-distributions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "sectionIds": [
+        "orient-normal-distribution",
+        "describe-normal-properties",
+        "compare-normal-distributions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "sectionIds": [
+        "practise-normal-applications-activities"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "b6e3053ec2974ccd9f6a3deef897a85c23ea4a61a67d252f3457569d2419dcbe"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-d11",
+       "text": "ciaf232c38: mean, median and mode from graphs and tables."
+      },
+      {
+       "source": "math-s11-d09",
+       "text": "ci0c94e728: symmetric, positively skewed and negatively skewed shapes."
+      },
+      {
+       "source": "math-s11-d13",
+       "text": "ci14ad4af7: population standard deviation sigma, as 'how spread out'."
+      },
+      {
+       "source": "math-s12-p01",
+       "text": "Probability language (p01 to p08)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-p08"
+     ],
+     "startBoundary": "p08's final frame, accepted in math-s12-p08.md (read 19 November 2026): a two-route frame, left 'Standard 2: next, the normal distribution' (a bakery's quality sheet, 200 loaves labelled 700 g dropping into a histogram, 'what shape is this?'), right a grey chip 'Standard 1: Year 12 course complete' pointing to the Year 12 Standard playlist.",
+     "stopBoundary": "A large dataset's histogram becomes a smooth bell; one central peak, symmetric, thin tails; mean, median and mode approximately equal for real normal data (loaves 709.95, 710, 710 g) and apart for skewed data (reaction taps 321, 300, 250 ms); mu places the centre, sigma sets the width (same mean, sigma 4 and 9 g). Bands are z04; z-scores are z02.",
+     "nextHandoff": "math-s12-z02",
+     "advancedReuseCandidates": [
+      "math-a12-s09"
+     ],
+     "recommendation": "Standard 2 only (Standard 1 has no normal distribution; Standard 1 viewers finish at p08). Site examples here are statements, not worked examples; the loaves are invented and labelled. The site's height hook (178 cm, 7 cm) is unsourced and above the ABS 2011-12 adult male mean of 175.6 cm (MS-57): not narrated as fact. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-z02",
+     "playlistOrder": 78,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What does a z-score tell us, and how do we calculate it?",
+     "syllabusActionIds": [
+      "ci92695626",
+      "ci7864f60a",
+      "ci5c476cce"
+     ],
+     "standard2ActionIds": [
+      "ci92695626",
+      "ci7864f60a",
+      "ci5c476cce"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci92695626",
+       "course": "Year 12 Standard 2",
+       "text": "Describe the z-score as the number of standard deviations that a value is above or below the mean",
+       "sourceHtml": "<div><span>Describe the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span><a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/3660568f-655a-4fe1-8295-14593c5e282c\" data-item-codename=\"glo_link__shared__z_score\" data-item-id=\"3660568f-655a-4fe1-8295-14593c5e282c\" data-item-systemname=\"GLO Link: Shared: z-score\" data-item-type=\"link_glossary\">-score</a> as the number of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/54aa43ed-156b-473f-a7c2-5ac4e7259131\" data-item-codename=\"glo_link__shared__standard_deviation\" data-item-id=\"54aa43ed-156b-473f-a7c2-5ac4e7259131\" data-item-systemname=\"GLO Link: SHARED: standard deviation\" data-item-type=\"link_glossary\">standard deviations</a> that a value is above or below the mean </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci7864f60a",
+       "course": "Year 12 Standard 2",
+       "text": "Recognise that the set of z-scores for data arising from a random variable that is normally distributed has a mean of 0 and standard deviation of 1",
+       "sourceHtml": "<div><span>Recognise that the set of </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores for data arising from a random variable that is normally distributed has a mean of 0 and standard deviation of 1</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": "Stated ('Standard normal') but not shown (MS-59). z02 uses five values with mean 710 and sigma 4."
+      },
+      {
+       "id": "ci5c476cce",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate the z-score corresponding to a specific value in a dataset by applying the formula z = (x - μ)/σ, where x is a specific value, μ is the mean and σ is the standard deviation",
+       "sourceHtml": "<div><span>Calculate the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-score corresponding to a specific value in a dataset by applying the formula</span><br/><span></span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"italic\">x </mi><mo>-</mo><mi mathvariant=\"italic\"> μ</mi></mrow><mrow><mi>σ</mi></mrow></mfrac></math></span><span>, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>x</mi></math></span><span> is a specific value, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>μ</mi></math></span><span> is the mean and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>σ</mi></math></span><span> is the standard deviation</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; the page leads with the sample form z = (x - x-bar)/s; the syllabus writes mu and sigma (MS-56)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "sectionIds": [
+       "orient-z-scores",
+       "calculate-z-scores",
+       "interpret-z-score-magnitude",
+       "consolidate-z-scores",
+       "practise-z-scores"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "sectionIds": [
+        "orient-z-scores",
+        "calculate-z-scores",
+        "interpret-z-score-magnitude",
+        "consolidate-z-scores",
+        "practise-z-scores"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-d13",
+       "text": "ci14ad4af7: population standard deviation sigma."
+      },
+      {
+       "source": "math-s12-z01",
+       "text": "cic0ba342d: the bell; mu at the centre, sigma as the width."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substitution into a formula."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z01"
+     ],
+     "startBoundary": "z01's final frame (proposed): one loaf reading 718 g against the loaf bell (mu 710 g, sigma 5 g), 'how unusual is this loaf?'.",
+     "stopBoundary": "Standard deviations from the mean as steps on a ruler, then z = (x - mu)/sigma; the sign; five loaves 704, 708, 710, 712, 716 give z = -1.5, -0.5, 0, 0.5, 1.5 (mean 0, standard deviation 1); one back-conversion x = mu + z sigma. Comparing tests is z03; 'unusual' is z06.",
+     "nextHandoff": "math-s12-z03",
+     "advancedReuseCandidates": [
+      "math-a12-s11"
+     ],
+     "recommendation": "Keep the site's 115 (z = 1), 160 (z = -1.25), 88 (z = 2), SA 1 (1.5, -1.17, 0.67, back to 67). Use mu and sigma only, not the page's sample form (MS-56). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-z03",
+     "playlistOrder": 79,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do z-scores compare results from different tests?",
+     "syllabusActionIds": [
+      "ci115110e6"
+     ],
+     "standard2ActionIds": [
+      "ci115110e6"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci115110e6",
+       "course": "Year 12 Standard 2",
+       "text": "Use z-scores to compare scores from different datasets and justify conclusions in the context of the problem",
+       "sourceHtml": "<div><span>Use </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores to compare scores from different datasets and justify conclusions in the context of the problem</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "sectionIds": [
+       "orient-z-scores",
+       "compare-across-distributions",
+       "shade-areas-under-curve",
+       "consolidate-z-scores",
+       "practise-z-scores"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "sectionIds": [
+        "orient-z-scores",
+        "compare-across-distributions",
+        "shade-areas-under-curve",
+        "consolidate-z-scores",
+        "practise-z-scores"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson08.sa.html",
+       "sectionIds": [
+        "compare-spread"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "ca18927cfda5ccddc74b7e1f56cc7f7f8030095f18d4f86a8e85a26f5464fe9d"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-z02",
+       "text": "ci92695626, ci5c476cce: the z-score and its sign."
+      },
+      {
+       "source": "math-s11-d13",
+       "text": "ci14ad4af7: sigma as spread."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z02"
+     ],
+     "startBoundary": "z02's final frame (proposed): two report cards, Maths 72 (mean 64, SD 8) and English 77 (mean 70, SD 5), 'which result is better?'.",
+     "stopBoundary": "Different tests have different means and spreads; compare z-scores, not raw marks; the conclusion in a context sentence with both z-scores; a lower raw mark can be better (72 at 1.5 beats 85 at 1.0); for times lower is better (the most negative z wins); ranking three people. Percentages below a mark are z05.",
+     "nextHandoff": "math-s12-z04",
+     "advancedReuseCandidates": [
+      "math-a12-s11"
+     ],
+     "recommendation": "Keep the site's we-1 (a) (1.0 against 1.4), the think first (1.5 against 1.0), activity 2 (Tom 1.17, Sarah 1.0, Emma 0.42; ranking computed, the page gives none) and SA 2 (all 1.0). we-1 (b) and (c) move to z05. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-z04",
+     "playlistOrder": 80,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the 68-95-99.7 rule describe normal data?",
+     "syllabusActionIds": [
+      "ci9d813bbf"
+     ],
+     "standard2ActionIds": [
+      "ci9d813bbf"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci9d813bbf",
+       "course": "Year 12 Standard 2",
+       "text": "Model and apply the empirical rule, where approximately 68% of data will have z-scores between −1 and 1, approximately 95% of data will have z-scores between −2 and 2, and approximately 99.7% of data will have z-scores between −3 and 3",
+       "sourceHtml": "<div><span>Model and apply the empirical rule, where approximately 68% of data will have </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores between −1 and 1, approximately 95% of data will have </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores between −2 and 2, and approximately 99.7% of data will have </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores between −3 and 3 </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+      "sectionIds": [
+       "apply-empirical-rule",
+       "find-percentages-and-unusual-values",
+       "consolidate-normal-distribution"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "sectionIds": [
+        "apply-empirical-rule",
+        "find-percentages-and-unusual-values",
+        "consolidate-normal-distribution"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "sectionIds": [
+        "orient-empirical-rule",
+        "learn-empirical-rule",
+        "apply-empirical-rule",
+        "use-symmetry-and-combined-intervals",
+        "practise-empirical-rule-activities",
+        "practise-empirical-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "75fc5aaa881ee73917745152df82bb12661b239d2a924938173498eeffe144a3"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-z02",
+       "text": "ci92695626, ci5c476cce: z-scores; x = mu + z sigma."
+      },
+      {
+       "source": "math-s12-z01",
+       "text": "cic0ba342d: the symmetric bell."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z03"
+     ],
+     "startBoundary": "z03's final frame (proposed): the loaf bell with the band from 705 to 715 g about to be shaded, 'what fraction of loaves lie within one standard deviation?'.",
+     "stopBoundary": "About 68%, 95% and 99.7% within z = -1 to 1, -2 to 2, -3 to 3; bands in values (loaves 705 to 715, 700 to 720, 695 to 725 g); only for bell-shaped data; symmetry halves each band; pieces 34, 13.5, 2.35, 0.15; the labelled bell (site SAQ 2). One-sided probabilities and counts are z05.",
+     "nextHandoff": "math-s12-z05",
+     "advancedReuseCandidates": [
+      "math-a12-s10"
+     ],
+     "recommendation": "Keep the site's we-1 (a) (62 to 82: 68%), we-2 (a) (135 to 165 g: 68%), IQ 70 to 130 (95%) as a number line, activity 1 (53 to 77, 41 to 89) and SAQ 2 (11 to 29). Do not use lesson03's 'roughly double' memory trick (MS-47). The site's apples are Advanced s10's anchor: numbers on a coded bell only. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-z05",
+     "playlistOrder": 81,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do z-scores and shading under the curve give a probability?",
+     "syllabusActionIds": [
+      "ci8b7ebb67",
+      "cicf71571a"
+     ],
+     "standard2ActionIds": [
+      "ci8b7ebb67",
+      "cicf71571a"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci8b7ebb67",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate probabilities using z-scores and the empirical rule",
+       "sourceHtml": "<div><span>Calculate probabilities using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores and the empirical rule</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cicf71571a",
+       "course": "Year 12 Standard 2",
+       "text": "Represent probabilities by shading areas under the normal distribution curve",
+       "sourceHtml": "<p>Represent probabilities by shading areas under the <a data-item-id=\"053aa0e3-3358-491c-a614-b3c346c289f2\" href=\"\">normal distribution</a> curve</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+      "sectionIds": [
+       "shade-areas-under-curve"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "sectionIds": [
+        "shade-areas-under-curve"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "sectionIds": [
+        "use-symmetry-and-combined-intervals"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "75fc5aaa881ee73917745152df82bb12661b239d2a924938173498eeffe144a3"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "sectionIds": [
+        "find-counts-with-z-scores"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "b6e3053ec2974ccd9f6a3deef897a85c23ea4a61a67d252f3457569d2419dcbe"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "sectionIds": [
+        "apply-empirical-rule",
+        "find-percentages-and-unusual-values"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-z04",
+       "text": "ci9d813bbf: the empirical rule and its pieces."
+      },
+      {
+       "source": "math-s12-p02",
+       "text": "ci6224eb8c: probability from 0 to 1."
+      },
+      {
+       "source": "math-s12-p06",
+       "text": "cib9b655d5: expected number = probability x number of trials."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z04"
+     ],
+     "startBoundary": "z04's final frame (proposed): the loaf bell with the tail below 700 g shaded, 'what's the chance a loaf is under its 700 g label?'.",
+     "stopBoundary": "A probability is a shaded area (whole curve 1); z first, sketch, shade one of three shapes; P(z < 1) = 0.84, P(z > 1) = 0.16, P(-1 < z < 2) = 0.815; one tail beyond 2 is 2.5%; an interval split at the mean (34% + 47.5% = 81.5%); expected counts (2.5% of 400 loaves, about 10); a z between whole numbers gives only a range. Unusual results are z06.",
+     "nextHandoff": "math-s12-z06",
+     "advancedReuseCandidates": [
+      "math-a12-s10",
+      "math-a12-s11"
+     ],
+     "recommendation": "Keep the site's lesson07 table (0.84, 0.16, 0.815) and we-1 (b), (c) (84%; between 84% and 97.5%), lesson03 we-1 (81.5%, 15 students), lesson05 we-1 (a) (30 bags) and lesson06 we-1 (b), (c) and we-2 (b), (c). Rule values only, no tables. Pace: watch (split z05a shading and probability, z05b counts and ranges, only if a design runs past 570 s).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-z06",
+     "playlistOrder": 82,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do z-scores tell us whether a result is unusual?",
+     "syllabusActionIds": [
+      "cicf797bee",
+      "ci36168bef"
+     ],
+     "standard2ActionIds": [
+      "cicf797bee",
+      "ci36168bef"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cicf797bee",
+       "course": "Year 12 Standard 2",
+       "text": "Use z-scores to identify probabilities of events less or more extreme than a given event and solve problems",
+       "sourceHtml": "<div><span>Use </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores to identify probabilities of <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-codename=\"glo_link__shared__event\" data-item-id=\"c9ca9181-3083-4bcc-b303-ff1a53013d04\" data-item-systemname=\"GLO Link: SHARED: event\" data-item-type=\"link_glossary\">events</a> less or more extreme than a given event and solve problems</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci36168bef",
+       "course": "Year 12 Standard 2",
+       "text": "Use z-scores to make judgements related to outcomes of a given event or sets of data",
+       "sourceHtml": "<div><span>Use </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>z</mi></math></span><span>-scores to make judgements related to <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/efd3aeef-e175-4f4d-93ad-3822b32b4130\" data-item-codename=\"glo_link__shared__outcome\" data-item-id=\"efd3aeef-e175-4f4d-93ad-3822b32b4130\" data-item-systemname=\"GLO Link: SHARED: outcome\" data-item-type=\"link_glossary\">outcomes</a> of a given event or sets of data</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+      "sectionIds": [
+       "identify-unusual-values",
+       "practise-empirical-rule-activities",
+       "practise-empirical-rule"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "75fc5aaa881ee73917745152df82bb12661b239d2a924938173498eeffe144a3"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html",
+       "sectionIds": [
+        "identify-unusual-values",
+        "practise-empirical-rule-activities",
+        "practise-empirical-rule"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "75fc5aaa881ee73917745152df82bb12661b239d2a924938173498eeffe144a3"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson05.sa.html",
+       "sectionIds": [
+        "apply-to-quality-control",
+        "find-counts-with-z-scores"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "b6e3053ec2974ccd9f6a3deef897a85c23ea4a61a67d252f3457569d2419dcbe"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html",
+       "sectionIds": [
+        "interpret-z-score-magnitude"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "02538caa91989ae43d07cd49cc1ab935e1fa3482f2f1f779c4695b447649a2f8"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html",
+       "sectionIds": [
+        "practise-normal-distribution"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "d4e654bcbf0d15841ccbf4dd5899b1f0bd15d43d8cd369c2a0468be454618d96"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-z05",
+       "text": "ci8b7ebb67, cicf71571a: shaded areas from the rule."
+      },
+      {
+       "source": "math-s12-z02",
+       "text": "ci92695626: z-scores."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z05"
+     ],
+     "startBoundary": "z05's final frame (proposed): a loaf reading 723 g on the scale, 'is this loaf a problem?'.",
+     "stopBoundary": "More extreme = further from the mean; at least as extreme as z = 2: 2.5% one side, 5% either side (z = 3: 0.15%, 0.3%); |z| > 2 unusual, |z| > 3 very unusual (a convention; exactly 2 is on the line); judgements in context with the z-score and an action (quality control, a surprising test mark, a simulator reaction time). Final frame hands to math-s12-c01.",
+     "nextHandoff": "math-s12-c01",
+     "advancedReuseCandidates": [
+      "math-a12-s11"
+     ],
+     "recommendation": "Last normal distribution video. Keep the site's bolt (2.5), juice bottles (-2.0 borderline, 2.5, 1.25), bottles 738 to 762 mL (5% rejected; 765 mL z = 2.5), rice 1017 g (1.4) and battery 650 h (3.0). Health contexts on the site (blood pressure, newborn weights) are not used. Final frame (proposed): the bakery-café at 6 am with a chalkboard of morning jobs, 'what order, and how soon can we open?'. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-z06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c01",
+     "playlistOrder": 83,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do we turn a precedence table into a project network, including dummy activities?",
+     "syllabusActionIds": [
+      "ci9043c6d8"
+     ],
+     "standard2ActionIds": [
+      "ci9043c6d8"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci9043c6d8",
+       "course": "Year 12 Standard 2",
+       "text": "Construct a network diagram from a precedence table or equivalent, including those involving dummy activities, limited to 10 activities",
+       "sourceHtml": "<p>Construct a <a data-item-id=\"ff757a0f-741c-483a-aed5-b9acb1709b17\" href=\"\">network</a> diagram from a <a data-item-id=\"0965f09a-1371-479f-979b-35da0ddbd230\" href=\"\">precedence table</a> or equivalent, including those involving <a data-item-id=\"96390ba3-2af0-465c-a943-71f75dfb4d44\" href=\"\">dummy activities</a>, limited to 10 activities</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": "Covered with one drawn dummy (lesson05 Worked Example 2); lesson05 Worked Example 3 needs two dummies, says one and draws none, and several examples imply undrawn dummies (MS-51)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "read-precedence-table",
+       "draw-activity-network",
+       "study-worked-networks"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-l07-1"
+      ],
+      "sha256": "baf5c3da12545359d8b0834b53f67c4be1a1f0daa9be7676afa44304033ea498"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "read-precedence-table",
+        "draw-activity-network",
+        "study-worked-networks"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-l07-1"
+       ],
+       "sha256": "baf5c3da12545359d8b0834b53f67c4be1a1f0daa9be7676afa44304033ea498"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "sectionIds": [
+        "use-dummy-activities",
+        "solve-larger-networks",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "5e734b49509d875811ac31b4927d901c9e4e29f36aa754a6a13470d2ff7b51ac"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-n02",
+       "text": "cica79bb9b: vertex, edge, degree, directed networks and weighted edges."
+      },
+      {
+       "source": "math-s11-n03",
+       "text": "ci022052d4: a network diagram from a table or map with weighted and directed edges."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-z06"
+     ],
+     "startBoundary": "z06's final frame (proposed): the bakery-café at 6 am, loaves on the shelf, a chalkboard of morning jobs, 'what order, and how soon can we open?'.",
+     "stopBoundary": "Precedence tables (immediate predecessors only); activities on arrows, events on nodes, one start and one finish node; building the network row by row; a dummy (dashed, duration 0) when activities share some but not all predecessors (cafe: muffins need oven and batter, pies need only the oven); checking against the table; reading a table back from a network. Scans are c02.",
+     "nextHandoff": "math-s12-c02",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only (Standard 1 has no critical path analysis). Keep the site's office fit-out (A 2, B 4, C 3, D 5; 11 days), we-l07-1 and lesson05 Worked Example 2 (one dummy; 9 days). Lesson05 Worked Example 3 needs two dummies (MS-51). The hero caption's '= 12' is wrong (MS-49). Pace: at risk; suggested split c01a (tables and drawing) and c01b (dummies) only if a design cannot fit under 570 s.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c02",
+     "playlistOrder": 84,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do forward and backward scans find the earliest and latest start times?",
+     "syllabusActionIds": [
+      "ci1ebd8915"
+     ],
+     "standard2ActionIds": [
+      "ci1ebd8915"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci1ebd8915",
+       "course": "Year 12 Standard 2",
+       "text": "Apply forward and backward scanning to determine the earliest starting time (EST) and latest starting time (LST) for each activity in a project",
+       "sourceHtml": "<p>Apply <a data-item-id=\"9896e901-f3b1-4647-a783-b1f37607961d\" href=\"\">forward</a> and <a data-item-id=\"e94f5827-4f44-4551-821a-1d954196e582\" href=\"\">backward scanning</a> to determine the <a data-item-id=\"a34c1a53-61b2-40f1-907f-b5fae9a4b16d\" href=\"\">earliest starting time (EST)</a> and <a data-item-id=\"a1e78b13-f94b-43c4-89d4-1565cee97f6c\" href=\"\">latest starting time (LST)</a> for each activity in a project</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": "Covered at the nodes; the syllabus asks for EST and LST 'for each activity', and lesson02 calls node slack activity float (MS-53)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson02.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "forward-scan",
+       "backward-scan",
+       "record-node-times",
+       "apply-scanning",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "8942c2958c33dd25018d79f76c9a8ec7d52ec4fdffbff0198f9afe4ef471d3a3"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson02.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "forward-scan",
+        "backward-scan",
+        "record-node-times",
+        "apply-scanning",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "8942c2958c33dd25018d79f76c9a8ec7d52ec4fdffbff0198f9afe4ef471d3a3"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "sectionIds": [
+        "use-dummy-activities"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "5e734b49509d875811ac31b4927d901c9e4e29f36aa754a6a13470d2ff7b51ac"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-c01",
+       "text": "ci9043c6d8: precedence table to network, dummies."
+      },
+      {
+       "source": "math-s11-n03",
+       "text": "ci022052d4: weighted directed networks."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c01"
+     ],
+     "startBoundary": "c01's final frame (proposed): the cafe network with an empty box at each node, 'how long until we open?'.",
+     "stopBoundary": "Forward scan (0 at the start; the largest of incoming times; finish time 50 min for the cafe); backward scan (finish's latest = earliest; the smallest of outgoing times); dummies pass times unchanged; each activity's EST (start node's earliest) and LST (end node's latest minus duration): cafe A 0/5, B 0/0, C 15/15, D 10/20, E 40/40. Float and the critical path are c03.",
+     "nextHandoff": "math-s12-c03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's Worked Examples 1 to 3 (7; 11 with node boxes 0/0, 2/2, 6/6, 5/9, 11/11) and SAQ 1 (A 0/0, B 5/6, C 5/5, D 9/9). Add the per-activity row the syllabus asks for (MS-53). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c03",
+     "playlistOrder": 85,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What is the critical path, and how do float times reveal it?",
+     "syllabusActionIds": [
+      "ci7195eacb",
+      "ci3045f9aa",
+      "ci6087f0de",
+      "cib45f96bd"
+     ],
+     "standard2ActionIds": [
+      "ci7195eacb",
+      "ci3045f9aa",
+      "ci6087f0de",
+      "cib45f96bd"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci7195eacb",
+       "course": "Year 12 Standard 2",
+       "text": "Explain the term critical path",
+       "sourceHtml": "<p>Explain the term <a data-item-id=\"a3008706-c985-4e89-b2bc-27430ee038d4\" href=\"\">critical path</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci3045f9aa",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate float times to identify critical and non-critical activities",
+       "sourceHtml": "<p>Calculate <a data-item-id=\"a3b2806d-3b29-41df-b3b2-778cef2b3c5c\" href=\"\">float times</a> to identify <a data-item-id=\"2d6774ad-ffd3-4644-b5ca-03fa11249ada\" href=\"\">critical</a> and <a data-item-id=\"78584f44-ac7b-4958-b5fa-c29453ea1afd\" href=\"\">non-critical activities</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci6087f0de",
+       "course": "Year 12 Standard 2",
+       "text": "Analyse ESTs and LSTs to locate the critical path(s) for the project",
+       "sourceHtml": "<p>Analyse ESTs and LSTs to locate the critical path(s) for the project</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib45f96bd",
+       "course": "Year 12 Standard 2",
+       "text": "Apply critical path analysis to determine the minimum completion time for a project",
+       "sourceHtml": "<p>Apply critical path analysis to determine the minimum completion time for a project</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "identify-critical-path",
+       "calculate-float",
+       "schedule-with-float",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "identify-critical-path",
+        "calculate-float",
+        "schedule-with-float",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "identify-critical-path",
+        "study-worked-networks",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-l07-3"
+       ],
+       "sha256": "baf5c3da12545359d8b0834b53f67c4be1a1f0daa9be7676afa44304033ea498"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "sectionIds": [
+        "compare-critical-paths"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "5e734b49509d875811ac31b4927d901c9e4e29f36aa754a6a13470d2ff7b51ac"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-c02",
+       "text": "ci1ebd8915: forward and backward scans; EST and LST of each activity."
+      },
+      {
+       "source": "math-s12-c01",
+       "text": "ci9043c6d8: networks and dummies."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c02"
+     ],
+     "startBoundary": "c02's final frame (proposed): the backyard shed's network with its scans finished, 'which jobs can't slip?'.",
+     "stopBoundary": "Minimum completion time = finish node's earliest time = longest path (shed: 9 days); the critical path; float = LST - EST; float 0 critical, positive non-critical (shed: B and F 1 day); checking by adding critical durations; two critical paths when paths tie; shared float. Gantt charts are c04.",
+     "nextHandoff": "math-s12-c04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's house build (10 days, electrical float 3), lesson03 Worked Example 2 (11 days; C and E float 4, shared), activity 1 (14 days; Q and T float 3, shared), SAQ 1 (C float 3) and lesson05 Worked Example 1 (two critical paths of 10). Lesson03 Worked Example 3 puts A and B on the wrong days (MS-52). Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c04",
+     "playlistOrder": 86,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does a Gantt chart show a project schedule and its critical path?",
+     "syllabusActionIds": [
+      "cid66dcd84"
+     ],
+     "standard2ActionIds": [
+      "cid66dcd84"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cid66dcd84",
+       "course": "Year 12 Standard 2",
+       "text": "Construct a Gantt chart to represent a project from a network diagram indicating the critical path",
+       "sourceHtml": "<p>Construct a <a data-item-id=\"70c61136-3c62-4de3-bd74-b2788dcf6445\" href=\"\">Gantt chart</a> to represent a project from a network diagram indicating the critical path</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+      "sectionIds": [
+       "orient-and-prepare",
+       "draw-gantt-chart",
+       "read-gantt-chart",
+       "apply-gantt-analysis",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "d0e1166464da1c40cb45571fc94734b73b5ed926c330a6ab2c3706cc37d5663a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "draw-gantt-chart",
+        "read-gantt-chart",
+        "apply-gantt-analysis",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "d0e1166464da1c40cb45571fc94734b73b5ed926c330a6ab2c3706cc37d5663a"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-c03",
+       "text": "ci3045f9aa, ci6087f0de: float and the critical path."
+      },
+      {
+       "source": "math-s12-c02",
+       "text": "ci1ebd8915: EST and LST."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c03"
+     ],
+     "startBoundary": "c03's final frame (proposed): the school formal's activities as bars beside an empty week timeline, 'how do we show this on a calendar?'.",
+     "stopBoundary": "Gantt chart built from the network: bars at EST with length = duration; critical bars in one colour, joined end to end; dashed float windows to the latest finish; reading back start, duration, finish, float, latest start and how many activities run at a time; shared float on consecutive bars (formal: B and D share 4 weeks). Changes in duration are c05.",
+     "nextHandoff": "math-s12-c05",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's Worked Example 1 (A to E bars on 0 to 11), Worked Example 2 (G: 3, 5, float 3, latest start 6), activity 1 and SAQ 1 (10 days, C float 2). Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c05",
+     "playlistOrder": 87,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What happens to the finish time when one activity speeds up or slows down?",
+     "syllabusActionIds": [
+      "ci96fea97a"
+     ],
+     "standard2ActionIds": [
+      "ci96fea97a"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci96fea97a",
+       "course": "Year 12 Standard 2",
+       "text": "Examine the impact of increasing or reducing the duration of an activity on the completion time of the project or task being modelled",
+       "sourceHtml": "<p>Examine the impact of increasing or reducing the duration of an activity on the completion time of the project or task being modelled</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+      "sectionIds": [
+       "crash-critical-path",
+       "apply-gantt-analysis",
+       "independent-practice"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "d0e1166464da1c40cb45571fc94734b73b5ed926c330a6ab2c3706cc37d5663a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html",
+       "sectionIds": [
+        "crash-critical-path",
+        "apply-gantt-analysis",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "d0e1166464da1c40cb45571fc94734b73b5ed926c330a6ab2c3706cc37d5663a"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "sectionIds": [
+        "schedule-with-float",
+        "model-project",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html",
+       "sectionIds": [
+        "compare-critical-paths",
+        "independent-practice"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "5e734b49509d875811ac31b4927d901c9e4e29f36aa754a6a13470d2ff7b51ac"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson06.sa.html",
+       "sectionIds": [
+        "prepare-for-exams"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "0b95600b48eedf7c1d576de4fb431270d6e793d09d2bd9840e717ee725eec3e6"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-c03",
+       "text": "ci3045f9aa, ci6087f0de, cib45f96bd: float, critical path, minimum time."
+      },
+      {
+       "source": "math-s12-c04",
+       "text": "cid66dcd84: Gantt charts and float windows."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c04"
+     ],
+     "startBoundary": "c04's final frame (proposed): the shed's Gantt chart with a rain cloud over 'slab cures', 'what if it rains for a day?'.",
+     "stopBoundary": "A critical activity longer: the project grows by the same amount; a non-critical one longer by up to its float: no change (but the float is used); beyond its float: grows by the excess; a non-critical one shorter: no change; a critical one shorter: shorter only until another path takes over (shed curing 3 to 1 saves 1 day); two critical paths: shortening one changes nothing; always recheck. Spreadsheets are c06.",
+     "nextHandoff": "math-s12-c06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's lesson04 Worked Example 3 (12 to 8), activity 2 (15 to 12; the parallel path's activities are not stated), lesson03's F 5 to 6 (14) and 7 (15), and lesson06's R delayed 2 weeks (13). Crash costs are not in the syllabus. Pace: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-c06",
+     "playlistOrder": 88,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does a spreadsheet model a project from its precedence table?",
+     "syllabusActionIds": [
+      "cida841b0a"
+     ],
+     "standard2ActionIds": [
+      "cida841b0a"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cida841b0a",
+       "course": "Year 12 Standard 2",
+       "text": "Use a spreadsheet to model a project involving precedence tables and solve related problems",
+       "sourceHtml": "<p>Use a spreadsheet to model a project involving precedence tables and solve related problems</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+      "sectionIds": [
+       "model-project"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [],
+      "sha256": "562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html",
+       "sectionIds": [
+        "model-project"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "562cf13c015378f7626b2f1b2c6ad94691464f68f1a742f9b395dd8102dd485a"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-c02",
+       "text": "ci1ebd8915: scans."
+      },
+      {
+       "source": "math-s12-c05",
+       "text": "ci96fea97a: changing a duration."
+      },
+      {
+       "source": "math-s12-i13",
+       "text": "Spreadsheet formulas and fill down from the money strand."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c05"
+     ],
+     "startBoundary": "c05's final frame (proposed): the formal's precedence table in a spreadsheet with an empty EST column, 'can a spreadsheet do the scans for us?'.",
+     "stopBoundary": "Rows ordered below their predecessors; EFT = EST + duration; EST = MAX of predecessors' EFTs; LFT = MIN of successors' LSTs (last = MAX of EFTs); LST = LFT - duration; float = LST - EST; Critical? = IF(float = 0, 'YES', ''); three checks; what-if edits to one duration cell. Final frame hands to math-s12-f01.",
+     "nextHandoff": "math-s12-f01",
+     "advancedReuseCandidates": [],
+     "recommendation": "Last critical path video. Keep the site's seven-activity sheet (14 days, critical A, C, E, G; B float 2, D and F 1; F 6 gives 14, F 7 gives 15). Final frame (proposed): a stadium before the grand final, walkways from the station plaza to the gates with capacities, 'how many people a minute can the gates take?'. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-c06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-f01",
+     "playlistOrder": 89,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How do source, sink, capacity and cuts describe a flow network?",
+     "syllabusActionIds": [
+      "ci87d0361a",
+      "cie0dcd4b6"
+     ],
+     "standard2ActionIds": [
+      "ci87d0361a",
+      "cie0dcd4b6"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci87d0361a",
+       "course": "Year 12 Standard 2",
+       "text": "Define and use network flow terminology including source, sink, outflow, inflow and cut",
+       "sourceHtml": "<p>Define and use network flow terminology including <a data-item-id=\"a1ee4805-ed41-43d6-aa0f-d3d2110213c2\" href=\"\"><em>source</em></a>, <a data-item-id=\"7a3deee1-ee1a-4998-9a45-9190cdd23205\" href=\"\"><em>sink</em></a>, <a data-item-id=\"57f617df-06ca-49a8-9e15-88b4b77760cf\" href=\"\"><em>outflow</em></a>, <a data-item-id=\"a6e3a590-1c4d-4a25-84b4-637c2dfdc3d3\" href=\"\"><em>inflow</em></a> and <a data-item-id=\"71187810-5c32-4934-a5ba-eee5d91603be\" href=\"\"><em>cut</em></a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cie0dcd4b6",
+       "course": "Year 12 Standard 2",
+       "text": "Convert information presented in a table to a weighted and directed network diagram",
+       "sourceHtml": "<p>Convert information presented in a table to a weighted and <a data-item-id=\"bd274b27-7e21-435e-b7dc-76726ffc9e04\" href=\"\">directed network</a> diagram</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+      "sectionIds": [
+       "orient-network-flow",
+       "read-flow-terminology",
+       "identify-network-cuts",
+       "convert-tables-to-diagrams",
+       "work-network-examples",
+       "apply-network-diagrams"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "ff2e356c61e1ecd75877952bd054e101b212c33325ddc9283c6f178913496b5c"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+       "sectionIds": [
+        "orient-network-flow",
+        "read-flow-terminology",
+        "identify-network-cuts",
+        "convert-tables-to-diagrams",
+        "work-network-examples",
+        "apply-network-diagrams"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "ff2e356c61e1ecd75877952bd054e101b212c33325ddc9283c6f178913496b5c"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-n02",
+       "text": "cica79bb9b: directed networks and weighted edges."
+      },
+      {
+       "source": "math-s11-n03",
+       "text": "ci022052d4: a network diagram from a table."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-c06"
+     ],
+     "startBoundary": "c06's final frame (proposed): the stadium before the grand final, walkways from the station plaza through two concourses to the gates in people per minute.",
+     "stopBoundary": "Directed edges with capacities; source (only out) and sink (only in); inflow and outflow, equal at every middle node; capacity is a limit, not the flow; a From, To, Capacity table drawn as a diagram; a cut splits the nodes into a source side and a sink side; its capacity adds only edges crossing from the source side to the sink side; every cut is a ceiling on the flow. Maximum flow is f02; the minimum cut is f03.",
+     "nextHandoff": "math-s12-f02",
+     "advancedReuseCandidates": [],
+     "recommendation": "Standard 2 only (Standard 1 has no network flow). Keep the site's we-1 (13 in, 10 out at C), we-2 (cuts 22 and 25), we-3 (five paths, cut 27) and SA 3 (cuts 18, 17, 14). The site's cut example omits its smallest cut, 11 (MS-56). Stadium (invented): S->A 120, S->B 90, A->B 30, A->T 80, B->T 110; cuts 210, 200, 230, 190. Pace: watch (split f01a terms and tables, f01b cuts, only if a design runs past 570 s).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-f01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-f02",
+     "playlistOrder": 90,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the saturated edges method find the most a network can carry?",
+     "syllabusActionIds": [
+      "cia23e92d8"
+     ],
+     "standard2ActionIds": [
+      "cia23e92d8"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cia23e92d8",
+       "course": "Year 12 Standard 2",
+       "text": "Calculate and analyse the flow capacity of a network including the use of the saturated edges method",
+       "sourceHtml": "<p>Calculate and analyse the <a data-item-id=\"5061d752-002d-4c09-9ea9-26c844aee0a8\" href=\"\">flow capacity</a> of a <a data-item-id=\"ff757a0f-741c-483a-aed5-b9acb1709b17\" href=\"\">network</a> including the use of the <a data-item-id=\"19a47b56-ab63-4d5a-96ce-bbd2ce3857bc\" href=\"\">saturated edges</a> method</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": "Covered; card 02 says path order never matters, contradicted by the same page (MS-54)."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson02.sa.html",
+      "sectionIds": [
+       "orient-flow-capacity",
+       "read-saturated-edges",
+       "use-saturated-edge-method",
+       "solve-complete-flow",
+       "work-capacity-examples",
+       "consolidate-saturated-flow",
+       "apply-saturated-method"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "99c4b096938fd219649911bc0947f167858cbaffb3fcf9b543d1c2a333e66b22"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson02.sa.html",
+       "sectionIds": [
+        "orient-flow-capacity",
+        "read-saturated-edges",
+        "use-saturated-edge-method",
+        "solve-complete-flow",
+        "work-capacity-examples",
+        "consolidate-saturated-flow",
+        "apply-saturated-method"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "99c4b096938fd219649911bc0947f167858cbaffb3fcf9b543d1c2a333e66b22"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-f01",
+       "text": "ci87d0361a, cie0dcd4b6: source, sink, capacity, inflow and outflow, cuts, table to diagram."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-f01"
+     ],
+     "startBoundary": "f01's final frame (proposed): the festival water network (tank to campground taps, kL per hour) with every pipe at 0, 'how much water can reach the campground each hour?'.",
+     "stopBoundary": "flow/capacity labels; saturated edges; a path's bottleneck; the saturated edges method path by path with what is left on shared edges; total out of S = total into T; the order trap (a poor first path blocks at 12 when the maximum is 13); finishing with a cut equal to the flow. No backward flow. The theorem is f03.",
+     "nextHandoff": "math-s12-f03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's full example (14), we-1 (13), we-2 (11), we-3 (19) and SA 1 to SA 3 (13, 10, 19). Card 02's 'order doesn't change the answer' contradicts the page (MS-54); we-3's title counts six edges for five (MS-55). Festival (invented): S->A 12, S->B 10, A->B 4, A->C 7, B->C 5, B->T 6, C->T 11; maximum 17. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-f02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-f03",
+     "playlistOrder": 91,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "How does the minimum cut prove the maximum flow?",
+     "syllabusActionIds": [
+      "ci0d82df6b"
+     ],
+     "standard2ActionIds": [
+      "ci0d82df6b"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci0d82df6b",
+       "course": "Year 12 Standard 2",
+       "text": "Solve small-scale network flow problems including the use of applying the maximum-flow minimum-cut theorem",
+       "sourceHtml": "<p>Solve small-scale network flow problems including the use of applying the <a data-item-id=\"13905cdc-5fb9-4f0e-905d-1210c37b1c95\" href=\"\">maximum-flow minimum-cut theorem</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+      "sectionIds": [
+       "orient-max-flow-min-cut",
+       "apply-max-flow-min-cut",
+       "work-demand-examples",
+       "apply-min-cut-decisions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1"
+      ],
+      "sha256": "59e939459228608fc7c8af3cc28a3a46d01cd06935bd90d83dca37e066cba875"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+       "sectionIds": [
+        "orient-max-flow-min-cut",
+        "apply-max-flow-min-cut",
+        "work-demand-examples",
+        "apply-min-cut-decisions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1"
+       ],
+       "sha256": "59e939459228608fc7c8af3cc28a3a46d01cd06935bd90d83dca37e066cba875"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson01.sa.html",
+       "sectionIds": [
+        "apply-network-diagrams"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "ff2e356c61e1ecd75877952bd054e101b212c33325ddc9283c6f178913496b5c"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-f02",
+       "text": "cia23e92d8: the saturated edges method and the cut check."
+      },
+      {
+       "source": "math-s12-f01",
+       "text": "ci87d0361a: cuts and their capacity, forward edges only."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-f02"
+     ],
+     "startBoundary": "f02's final frame (proposed): the traffic network (motorway exit to a shopping centre car park, cars per minute) with three cut lines, 'which cut tells us the most cars that can get through?'.",
+     "stopBoundary": "Every unit of flow crosses every cut, so no flow exceeds any cut; maximum flow = minimum cut; listing all cuts systematically (eight for three middle nodes); the minimum cut can be in the middle (traffic: 34); a flow equal to a cut proves both; a claim above a cut is impossible. Changing capacities and demand are f04.",
+     "nextHandoff": "math-s12-f04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's we-1 (cuts 17, 16, 19, 15; maximum 15), SA 1 (14) and lesson01 SA 3 (d) (middle cut 14). Traffic (invented): S->A 30, S->B 25, A->B 10, A->C 10, B->C 12, B->T 12, C->T 28; minimum cut 34 at {S, A, B}. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-f03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s12-f04",
+     "playlistOrder": 92,
+     "course": "Year 12 Standard 2 only",
+     "mainLearnerQuestion": "What happens when an edge's capacity changes, and can the network meet demand?",
+     "syllabusActionIds": [
+      "ci1c4ddbb0",
+      "cie0f5e510"
+     ],
+     "standard2ActionIds": [
+      "ci1c4ddbb0",
+      "cie0f5e510"
+     ],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci1c4ddbb0",
+       "course": "Year 12 Standard 2",
+       "text": "Examine the impact of increasing or reducing the flow capacity of an edge in a network diagram",
+       "sourceHtml": "<p>Examine the impact of increasing or reducing the flow capacity of an <a data-item-id=\"78c50333-0dc1-41c8-8393-1d3b247115e0\" href=\"\">edge</a> in a network diagram</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cie0f5e510",
+       "course": "Year 12 Standard 2",
+       "text": "Explain why the flow capacity of a network is or is not sufficient to meet demand in a variety of contexts",
+       "sourceHtml": "<p>Explain why the flow capacity of a network is or is not sufficient to meet demand in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+      "sectionIds": [
+       "orient-max-flow-min-cut",
+       "analyse-capacity-changes",
+       "test-network-demand",
+       "work-demand-examples",
+       "consolidate-demand-decisions",
+       "apply-min-cut-decisions"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "59e939459228608fc7c8af3cc28a3a46d01cd06935bd90d83dca37e066cba875"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson03.sa.html",
+       "sectionIds": [
+        "orient-max-flow-min-cut",
+        "analyse-capacity-changes",
+        "test-network-demand",
+        "work-demand-examples",
+        "consolidate-demand-decisions",
+        "apply-min-cut-decisions"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "59e939459228608fc7c8af3cc28a3a46d01cd06935bd90d83dca37e066cba875"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s12-f03",
+       "text": "ci0d82df6b: maximum flow = minimum cut."
+      },
+      {
+       "source": "math-s12-f02",
+       "text": "cia23e92d8: the saturated edges method."
+      },
+      {
+       "source": "math-s11-f04",
+       "text": "Rates and unit changes (per minute to per hour)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s12-f03"
+     ],
+     "startBoundary": "f03's final frame (proposed): the stadium gates with a crowd counter, '60 000 fans in 5 hours: will 190 a minute be enough?'.",
+     "stopBoundary": "Demand against maximum flow in the same units; sufficient (spare) or not (shortfall) in a context sentence; increasing a minimum-cut edge helps only until another cut is smallest (stadium Gate 1 +40 gives +20); increasing an edge in no minimum cut changes nothing; reducing a minimum-cut edge lowers the maximum; recheck all cuts after a change; choosing one upgrade to meet demand. Final frame closes the Year 12 Standard course.",
+     "nextHandoff": "none (last core Year 12 Standard video)",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's we-2 (10; C->T 14 gives 12; S->A 15 gives 10), we-3 (21 000 passengers a day, sufficient for 20 000; C->T 14 gives 22 000), SA 2 (16 to 20) and SA 3 (33 Gbps, 3 spare). The shortfall rule needs 'at least, then recheck' (MS-56). Final frame (proposed): the stadium's flow counter at 210 against a demand of 200, then the ten Year 12 Standard 2 focus areas with 'Year 12 Maths Standard: core videos complete' and 'Find every video in the Year 12 Maths Standard playlist'; no promises of future videos. Pace: fits.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s12-f04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}

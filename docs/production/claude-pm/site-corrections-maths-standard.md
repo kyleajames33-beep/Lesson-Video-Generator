@@ -369,3 +369,156 @@ Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standa
 - Pythagoras (Standard 1 `ci0f40c78b`, and the Pythagoras part of `cid1949529` and Standard 2 `cif644212f`): the crosswalk's evidence for these points is lesson04 `use-two-observations`, which has no Pythagoras. No Year 12 lesson sets a practical two-dimensional Pythagoras problem except lesson05 `we-3` (two perpendicular legs). Suggested: one practical problem in lesson04 that needs Pythagoras and an angle of elevation together (for example a drone 40 m up and 75 m along the ground: 85 m away, at 28°4').
 - Named directions: lesson05's hook says "northeast" and "southeast", and only the revisit card turns them into 045°T and 135°T. Suggested: one line in card 02 giving NE, SE, SW and NW as 045°T, 135°T, 225°T and 315°T.
 - Radial surveys (`cibe642c8e`, "Construct and interpret"): lesson08's step 1 says "Draw $O$, mark north, and draw each radial line at its bearing with its length", but no example draws a survey to scale from the field book. Suggested: one scaled construction (for example 1 cm : 10 m with a protractor), and a cross-reference to the rainfall lesson (`ratios-and-rates/lesson04.sa.html`; see MS-37): 25 mm on the 11 738 m² paddock is V = Ah = 293.46 m³, about 293 kL.
+
+## 9. Findings from the Year 12 normal distribution, critical path analysis and network flow packs, z01 to z06, c01 to c06, f01 to f04 (19 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-standard/year12/the-normal-distribution/` (lessons 03, 05, 06, 07, 08), `critical-path-analysis/` (lessons 01 to 06) and `network-flow/` (lessons 01 to 03); SHA256 values in `programme/maths-standard-route-inputs-7.json` (they match the crosswalk inventory). No site file was changed. Every worked answer, drill answer and short-answer answer quoted in the packs was recalculated with exact fractions in Python (`work/brief-standard-zcf/recalc.py`, output in `recalc-output.txt`): empirical-rule percentages, z-scores, every critical path example (earliest and latest start times, float, all paths) and every flow example (maximum flow by augmenting paths and every cut listed). All numerical answers match except the hero caption in MS-49. Packs: `pre-design/maths-standard/math-s12-z01.md` to `z06.md`, `c01.md` to `c06.md`, `f01.md` to `f04.md`.
+
+### MS-47. The empirical rule's memory trick is wrong, and a labelled diagram's total is misstated
+
+- Lesson: `year12/the-normal-distribution/lesson03.sa.html`, `learn-empirical-rule` and `practise-empirical-rule` (SAQ 2 answer and the revisit card).
+- Old text: "Memory trick: 68, 95, 99.7, increasing by roughly double each time." SAQ 2 answer: "Regions from left to right: 0.15% | 2.35% | 13.5% | 34% | 34% | 13.5% | 2.35% | 0.15%. These sum to approximately 99.7% (with 0.3% in the extreme tails beyond 3σ)." Revisit: "Can you draw the labelled bell curve with all seven σ-boundary regions?"
+- Correction: "Memory trick: 68, 95, 99.7. The part left outside halves and more: 32%, then 5%, then 0.3%." SAQ 2: "The six regions between −3σ and 3σ sum to 99.7%; adding the two 0.15% tails beyond ±3σ makes 100%." Revisit: "all eight regions" (or "the six regions inside ±3σ").
+- Reason: 68 to 95 to 99.7 is not doubling. The eight listed regions include both tails and add to exactly 100%; the six inner ones add to 99.7%. Seven marks on the axis make eight regions.
+
+### MS-48. A regression example on the normal distribution page predicts 74 hours of sleep
+
+- Lesson: `year12/the-normal-distribution/lesson05.sa.html`, `practise-normal-applications-activities`, Activity 2, first question and answer.
+- Old text: "The regression line is y = 90 − 3.2x (x = hours of screen time, y = hours of sleep)." Answer: "y-intercept 90: with zero screen time, predicted sleep time is 90 hours ... y = 90 − 3.2(5) = 90 − 16 = 74 hours".
+- Correction: change the numbers so they are possible, for example "y = 9 − 0.32x (x = hours of screen time per day, y = hours of sleep per night)", giving an intercept of 9 hours and a prediction of 7.4 hours at x = 5.
+- Reason: no one sleeps 90 or 74 hours a night; the example teaches students to accept impossible model output. (The bivariate packs own this content; it is logged here because it sits on a normal distribution page.)
+
+### MS-49. The critical path lesson's hero diagram has a path length of 12 that its arrows do not give
+
+- Lesson: `year12/critical-path-analysis/lesson01.sa.html`, hero illustration.
+- Old text: arrows A(3) 1→2, B(5) 1→3, C(4) 2→4, D(2) 3→4, an unlabelled arrow 4→5, and the caption "Critical path: 1→2→4→5 = 12".
+- Correction: either label the arrows with the hook's house build (foundations 3, framing 5, roofing 2, electrical 4) and caption "Critical path: foundations, framing, roofing = 10 days", or keep the arrows and caption "Both paths take 7: A + C = B + D = 7" (no single critical path).
+- Reason: 1→2→4 is A + C = 3 + 4 = 7 and 1→3→4 is B + D = 5 + 2 = 7; the 4→5 arrow has no duration. No path is 12, and the lesson's own hook answer is 10 days.
+
+### MS-50. A worked example shows a crossed-out attempt, and another has no question
+
+- Lesson: `year12/critical-path-analysis/lesson01.sa.html`, `study-worked-networks`, `we-l07-2` step 3 and `we-l07-3`.
+- Old text (`we-l07-2`): "Path A–C–E: E starts when max(D_finish, C_finish) = max(13, 2+3)=max(13,5)=13. E: start=13, finish=13+5=18? No, check: A–C finishes at 2+3=5. E must wait for D also. D finishes at 2+4+2=8. So E starts at max(5,8)=8. E: 8+5=13." `we-l07-3` starts at step 1 with no problem statement.
+- Correction (`we-l07-2` step 3): "Path A–C–E = 2 + 3 + 5 = 10. E waits for both C (finished at 5) and D (finished at 8), so E starts at 8 and finishes at 13." Add to `we-l07-3`: "PROBLEM 3 · HOUSE BUILD REVISIT: Foundations A (3 days); framing B (5 days, after A); roofing C (2 days, after B); electrical D (4 days, after A). Find the minimum build time and the float of electrical."
+- Reason: the final answers are right (13 days, C float 3; 10 days, D float 3) but the printed thinking aloud ("18? No, check") is confusing in a model solution, and Problem 3 cannot be read without its data.
+
+### MS-51. A seven-activity example needs two dummies but says one and never draws the network; other examples hide a dummy
+
+- Lessons: `year12/critical-path-analysis/lesson05.sa.html`, `solve-larger-networks`, Worked Example 3; also `lesson03.sa.html` SAQ 1, `lesson02.sa.html` SAQ 1 and think-first, and `lesson06.sa.html` HSC-style question.
+- Old text (lesson05): "With seven activities, three merge points and a dummy, node numbering gets in the way. Use the activity table from Lesson 9 instead".
+- Correction: "D needs A and B, but C needs only A and E needs only B, so A and B each need their own end event, and D starts at a third event joined to both by dummies: two dummies." Draw the network once (A to event 2, B to event 3, dummies 2→4 and 3→4, D from 4) before switching to the table. In lesson06's HSC-style question (T after Q and R, S after Q only) and the condensed example (D after A and B, C after A only), name the dummy that the node list implies.
+- Reason: the event that starts D must follow both A and B, while the events that start C and E must not. With one dummy, either C would wait for B or E would wait for A. The syllabus point `ci9043c6d8` asks students to construct networks "including those involving dummy activities"; the scans in these examples are right (14 days, critical B–D–F–G, floats A 2, C 4, E 3), but students never see the dummies drawn. Lesson05's Worked Example 2 (C after A and B, D after A only; 9 days) is the only drawn dummy and should stay.
+
+### MS-52. A scheduling example puts critical activities on the wrong days
+
+- Lesson: `year12/critical-path-analysis/lesson03.sa.html`, `schedule-with-float`, Worked Example 3.
+- Old text: "If workers are occupied on days 2–4 (critical activities A and B), the manager can schedule C to start on day 5".
+- Correction: "If workers are busy with activity B on days 2 to 5, the manager can schedule C to start on day 5".
+- Reason: in this network A runs from day 0 to day 2 and B from day 2 to day 6. The rest of the example (C from day 5 to 8, E's float falling from 4 to 1) is correct.
+
+### MS-53. Node slack is called activity float in the scan lesson, against the lesson's own warning
+
+- Lesson: `year12/critical-path-analysis/lesson02.sa.html`, `record-node-times` and `independent-practice` Q3; `retrieve-and-finish` revisit.
+- Old text: "When LST > EST, the activity leading into this node has float (LST − EST days of slack)"; Q3 "A node has LST = 7 and EST = 4. The float on the path through that node is: ... C (3)"; revisit "EST(End) = max(7+2, 9+2) = max(9, 11) = 11".
+- Correction: "When LST > EST at a node, the event can happen up to LST − EST later; measure an activity's float with float = LST(end node) − EST(start node) − duration." Q3: ask for the activity float with the start node, end node and duration given (as Q4 does). Revisit: "B and C both end where D starts, so that event is at max(7, 9) = 9 and D finishes at 11."
+- Reason: the same lesson's warning ("Float belongs to an activity ... not by subtracting EST from LST at a single node") and lesson03's float formula contradict these lines. "max(7 + 2, 9 + 2)" draws roofing twice.
+
+### MS-54. The flow lesson says path order never matters, then warns that it does
+
+- Lesson: `year12/network-flow/lesson02.sa.html`, `orient-flow-capacity` card 02.
+- Old text: "Order of paths doesn't change the answer: HSC exam networks are small enough that you can try paths in any order and still reach the same maximum flow."
+- Correction: "Path order can matter: pushing flow along a poor first path can block you below the maximum. Always check your total against a cut; if no cut matches, re-allocate."
+- Reason: the lesson's own `use-saturated-edge-method` step ("If no cut matches your total, a different ORDER of paths will do better") and `solve-complete-flow` ("a different path ORDER can leave you stranded below the maximum") say the opposite. Example: S→A 8, S→B 6, A→B 5, A→T 4, B→T 9; pushing S→A→B→T first gives 5 + 3 + 4 = 12 and then every path is blocked, but the maximum is 13 (cut A→T + B→T = 4 + 9).
+
+### MS-55. A worked example's title counts six edges for a five-edge network
+
+- Lesson: `year12/network-flow/lesson02.sa.html`, `we-3`.
+- Old text: "PROBLEM 3 · COMPLETE 6-EDGE NETWORK" (edges S→A, S→B, A→B, A→T, B→T; step 1 says "5 edges").
+- Correction: "PROBLEM 3 · A NETWORK WITH A CROSS-EDGE".
+- Reason: there are five edges. The answer (maximum flow 19) is correct.
+
+### MS-56. Owner notes: methods beyond Standard 2 and statements that need a condition
+
+- `year12/the-normal-distribution/lesson06.sa.html`, `compare-normal-distributions` and SA 3 (c): "Factory B: 100 ± 4 = μ ± 0.8σ ... roughly 58% meet spec." A percentage at 0.8σ needs a normal table (exact 57.6%), which the 2024 Standard 2 point `ci8b7ebb67` ("Calculate probabilities using z-scores and the empirical rule") does not use. Suggested: say "fewer than 68%, because ±4 is less than one standard deviation", or change the spec to 100 ± 5 (68%).
+- `lesson06.sa.html`, `describe-normal-properties`: "This is the Central Limit Theorem in action": beyond the course; one plain sentence ("many small, independent effects add up") is enough.
+- `lesson07.sa.html`, card 02 and `calculate-z-scores`: the z-score is written $z = \dfrac{x - \bar{x}}{s}$ (sample) first. The syllabus point `ci5c476cce` writes z = (x − μ)/σ with μ the mean and σ the standard deviation; suggested: lead with μ and σ only.
+- `year12/network-flow/lesson01.sa.html`, key terms: inflow and outflow as the "Sum of capacities (or flows)". Suggested: define them with flows, and use "capacity into" or "capacity out of" for the sums of capacities. The cut example (S→A 8, A→T 5, S→B 6, B→T 7) shows cuts of 14 and 12 beside "minimum cut = maximum flow", but the minimum cut is 11 (S→B 6 + A→T 5); a note would stop students taking 12 as the maximum.
+- `year12/network-flow/lesson03.sa.html`, key terms and `test-network-demand`: "Shortfall ... This is the extra capacity that must be added to the minimum cut." Adding the shortfall to the minimum cut is needed but not always enough: another cut may then be the smaller one (the lesson's own `we-2` raises C→T by 4 and the flow by only 2). Suggested: "at least the shortfall, then recheck the other cuts".
+
+### MS-57. Data note: the height hook is not sourced and is above the ABS adult average
+
+- Lesson: `year12/the-normal-distribution/lesson06.sa.html`, hook and revisit: "Adult male heights in Australia are approximately normally distributed with mean 178 cm and standard deviation 7 cm."
+- Note: the ABS Australian Health Survey: First Results, 2011-12 (cat. 4364.0.55.001, now archived) gives a mean height of 175.6 cm for men aged 18 and over (177.8 cm for men aged 18 to 24). Suggested: cite the source and year, or label the numbers "illustrative". The packs do not narrate these values as fact.
+
+### MS-58. Year 12 pages carry old module labels and 2017 outcome codes
+
+- Lessons: `the-normal-distribution/lesson03.sa.html` ("Maths Standard Y12 M5 L10"), `lesson05.sa.html` ("Y12 M5 L12", "Module 5", "MS-S4", "MS-S5"), `lesson06.sa.html` to `lesson08.sa.html` ("Module 8 · L6 of 12" to "L8 of 12"); `critical-path-analysis/lesson01.sa.html` to `lesson06.sa.html` ("Module 6 · L7 of 12" to "Lesson 12 · Module Review", "MS-N2", "MS-N3", back links to "Lesson 6 · Dijkstra's Algorithm"); `lesson06.sa.html` reviews Euler trails and Dijkstra's algorithm as part of the module.
+- Correction: label these as the Year 12 Standard 2 focus areas The normal distribution and Critical path analysis, drop the 2017 codes, and move the Year 11 networks review out of the critical path module review (Euler trails and circuits are not 2024 points).
+- Reason: the 2024 course has no modules or MS- outcome codes; these are the 2017 structure. Section 3 lists the stale lesson ids; these are the student-facing labels.
+
+### MS-59. Gaps: three points the site states but does not show
+
+- `cic0ba342d` (a normally distributed dataset represented by a bell-shaped curve): no lesson shows a histogram of real or invented data with the bell drawn over it; the bell appears only as a finished curve. Suggested: one histogram (for example 200 loaves weighed to the nearest 5 g) with the curve laid over it.
+- `cif956cc8e` (mean, median and mode approximately equal for data from a normal variable): lesson06 says "Mean = median = mode" for the curve only. Suggested: compute all three for one dataset (the loaves: mean 709.95 g, median 710 g, mode 710 g) and contrast a skewed set.
+- `ci7864f60a` (z-scores of a normal dataset have mean 0 and standard deviation 1): lesson07 states it ("Standard normal") without showing it. Suggested: five values 704, 708, 710, 712, 716 (mean 710, σ = 4) give z = −1.5, −0.5, 0, 0.5, 1.5, with mean 0 and standard deviation 1.
+
+## 10. Findings from the Year 12 Bivariate data analysis and Relative frequency and probability packs, b01 to b07 and p01 to p08 (19 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-standard/year12/bivariate-data-analysis/` (lessons 04 to 11 and `assets/diagrams/correlation-explorer-interactive.html`) and `year12/relative-frequency-and-probability/` (lessons 01 to 04); SHA256 values in `programme/maths-standard-route-inputs-6.json` (they match the crosswalk inventory). No site file was changed. Every worked answer, drill, activity and short-answer value in the twelve lessons was recalculated with Python `statistics`, `fractions` and SymPy 1.14.0 (`work/brief-standard-bp/recalc.py`, output in `recalc-output.txt`), including each correlation coefficient and least-squares line: all match. Packs: `pre-design/maths-standard/math-s12-b01.md` to `b07.md` and `p01.md` to `p08.md`. The findings are contradictions, unrealistic models, notation, gaps and owner notes. (Section 9's MS-48, the screen time and sleep regression on a normal distribution page, belongs with these lessons in subject; it is not repeated here.)
+
+### MS-60. Three different strength scales for r, and an r for a categorical variable
+
+- Lesson: `year12/bivariate-data-analysis/lesson06.sa.html`.
+- Old text: card 05's table: "$0.8$ to $1.0$ Strong; $0.5$ to $0.8$ Moderate; $0.3$ to $0.5$ Weak; $0$ to $0.3$ Very weak / no correlation", with "Use these boundaries throughout this course". Card 06: "For strength, HSC uses two thresholds: |r| ≥ 0.8 is strong, 0.5 ≤ |r| < 0.8 is moderate, and |r| < 0.5 is weak." The embedded Correlation Explorer labels |r| ≥ 0.9 "Very strong", ≥ 0.7 "Strong", ≥ 0.5 "Moderate", ≥ 0.3 "Weak", otherwise "Little or none", and the prompt says "One point takes the correlation from very strong down to moderate positive."
+- Correction: one scale everywhere, labelled as a guide (for example card 05's table); make the explorer use the same cut-offs and change the prompt to "from strong down to moderate" (the starting data give r = 0.9857, strong on the lesson's scale; after the change r = 0.5816, moderate on every scale). Remove "HSC uses two thresholds": the 2024 point `ci5401622a` asks for strength without numerical cut-offs.
+- Second item, short answer Q2: "A researcher finds $r = 0.03$ for the relationship between a person's favourite colour and their reaction time." Favourite colour is categorical, so r cannot be calculated. Suggested: a numerical pair with a curved pattern, for example "the hour of the day (6 am to 10 pm) and the outside temperature", which can give r near 0 while clearly related.
+
+### MS-61. Gap: one-variable data against bivariate data
+
+- Lesson: `year12/bivariate-data-analysis/lesson04.sa.html`. Standard 2 `ci91fdb0d7` and Standard 1 `cif80a9d87`: "Distinguish between situations involving one-variable data and bivariate data and explain when each is needed". The crosswalk records both as covered (evidence: `work-scatterplot-examples`), but the lesson defines bivariate data and never mentions one-variable data or when it is enough.
+- Suggested addition: one card contrasting "how many ice creams does the kiosk usually sell?" (one variable: a dot plot, mean or box plot from Year 11) with "do hotter days sell more?" (two variables measured on each day, kept as pairs), and a quick sort of four situations.
+
+### MS-62. Gap: non-linear form; a check item says "Curved" is not a description
+
+- Lessons: `year12/bivariate-data-analysis/lesson04.sa.html` and `lesson05.sa.html`. Standard 2 `ci8c04e655` and Standard 1 `ci999efce4` ask students to "Describe the form of a dataset as linear or non-linear". No example in either lesson shows a curved pattern. Lesson05 `judge-correlation-strength` asks "Which does NOT belong? Descriptions used when classifying correlation: A, Strong B, Negative C, Curved D, Moderate", where the intended answer is C.
+- Correction: add one non-linear scatter plot (for example a new café's weekly customers levelling off) and describe it as "non-linear"; change the check item to strength words only ("A, Strong B, Weak C, Steep D, Moderate", answer C: steepness is not strength), or accept that form (linear or non-linear) is part of a full description.
+
+### MS-63. The line's equation is written three ways, and b means two different things
+
+- Lessons: `year12/bivariate-data-analysis/lesson08.sa.html` writes "$y = mx + b$" with "$b$ is the y-intercept" (cards 02 and 06, `we-2`), but card 06's lead, card 07 and the pause prompts write "y = a + bx" with "gradient b = rise/run". `lesson09.sa.html` says "The HSC uses $y = a + bx$, not $y = mx + c$" and "The exam uses $y = a + bx$, not $y = mx + b$."
+- Correction: use one form across the strand. The 2024 bivariate points (`ci880296d0`, `ci9bd861ac`) name no form, and Year 11 teaches "y = mx + c where m is the gradient and c is the y-intercept" (`ciafd3b572`). Suggested: y = mx + c on the page, plus one sentence that a calculator's A + Bx mode shows the intercept as A and the gradient as B. Never use b for the intercept in one lesson and the gradient in the next. The statement about what "the HSC uses" needs a source (a reference sheet) or should be removed.
+
+### MS-64. A muddled causal checklist, and deaths as the main contexts
+
+- Lesson: `year12/bivariate-data-analysis/lesson07.sa.html`, `evaluate-causal-evidence`.
+- Old text: the lead lists four criteria ("Is the association strong and consistent? Does A always precede B in time? Is there a plausible mechanism? Does removing A reduce B?"); the body then gives a different checklist (experiment or observation, confounder, reversed direction, sample size); the pause prompt asks students to copy "dose-response (removing cause reduces effect)".
+- Correction: keep the body's checklist (it matches the syllabus point and the worked examples) and drop the lead's criteria and the "dose-response" prompt. Dose-response means that more of a cause gives more of the effect; it is not "removing the cause reduces the effect", and neither idea is in the Standard points.
+- Owner note on the same lesson: the hook, card 02, card 05, the quick check and the revisit card use ice cream and drowning deaths; card 02 adds film releases and pool drownings; card 06 uses hospital deaths and infant mortality. The videos use ice creams and sunscreen sales (both driven by hot weather) instead. Activity item 4 ("Sunscreen sales and skin cancer rates both increase in summer", answer: hot weather drives "sun exposure leading to cancer") describes a causal chain, not a confounder, and skin cancer does not appear within the same season; suggested replacement: "Sunscreen sales and ice cream sales both increase in summer."
+
+### MS-65. What the line minimises, formulas the lesson calls optional, and an impossible model
+
+- `year12/bivariate-data-analysis/lesson08.sa.html`, card 02: "It minimises the total vertical distances from the points to the line"; card 05 summary: "should minimise overall vertical distance from points". Correction: "A line of best fit drawn by eye balances the points above and below it. The least-squares line (lesson09) makes the sum of the squared vertical distances as small as possible." A by-eye line minimises nothing exactly, and the least-squares line minimises squared distances, not distances.
+- `lesson09.sa.html`: card 03 says "The formulas b = r × (s_y / s_x) and a = ȳ − b x̄, and the optimisation theory behind them, are optional", but card 05's pause prompt asks students to copy "plus the formulas b = r × (s_y / s_x) and a = ȳ − bx̄ into your book". Correction: remove the formulas from the pause prompt, or mark them "optional" there too.
+- `lesson09.sa.html`, short answer Q2: "For a regression of weight (kg) (x) vs height (cm) (y) for babies aged 0–12 months, the equation is $y = -12 + 8.5x$." Inside the data range this gives 13.5 cm at 3 kg and 30.5 cm at 5 kg (recalculated), far below any baby's length. Suggested: $y = 45 + 3x$ (54 cm at 3 kg, 75 cm at 10 kg), which keeps the point of the question: the intercept (45 cm for a 0 kg baby) has no meaning because 0 kg is outside the data.
+
+### MS-66. Conditional notation the Standard course does not use
+
+- Lesson: `year12/relative-frequency-and-probability/lesson02.sa.html`, card 07 lead, summary and pause prompt: "P(A and B) = P(A) × P(B|A)" and "the independence simplification"; the fill-the-blanks task uses "$P(B|A) = 1/4$". The Standard 2 point is "Determine the probabilities of outcomes for multistage events using P(A and B) = P(A) × P(B)" (`ci90a4b4a6`); conditional probability and its notation belong to Mathematics Advanced.
+- Suggested: describe the second-stage branches in words ("after a blue marble is taken, 4 marbles are left: 2 blue and 2 red") and multiply the branch probabilities without P(B|A). The working and answers are unchanged.
+- Related: `lesson01.sa.html` `we-2` (c) says the overlap subtraction is "the addition rule for overlapping events (covered in Lesson 2)", but lesson02 does not cover it; lesson04 does.
+
+### MS-67. An electricity model that runs the wrong way for summer
+
+- Lessons: `year12/bivariate-data-analysis/lesson10.sa.html` hook ("AEMO ... uses regression to predict electricity demand on hot summer days") and `we-3` ("temperatures between 18°C and 32°C. The equation is $y = 420 - 8.5x$ (y = electricity demand)"); `lesson09.sa.html` activity (same equation, "warmer weather reduces heating demand").
+- Owner note: across 18 to 32°C, electricity demand in an Australian city generally rises with temperature as air conditioning comes on, and the hook itself is about hot days, so a falling line contradicts the hook. Suggested: a positive gradient for the summer range, or set the example in winter temperatures (for example 5 to 18°C), where heating explains a negative gradient. The AEMO claim needs a source or should be removed (see MS-69).
+
+### MS-68. Owner note: a raffle, a drug trial, a genetic marker and a deck of cards
+
+- `year12/relative-frequency-and-probability/lesson03.sa.html`: SA 2 ("A raffle has 1 200 tickets and three winning tickets"), SA 3 ("A medical study tests a drug on 800 patients") and `we-2` ("8% of adults have a particular genetic marker"); `lesson01.sa.html` `we-2` (a standard 52-card deck).
+- Suggested changes (numbers unchanged): SA 2 as "A school library has 1 200 books and three are signed copies; a book is chosen at random, recorded and returned" (1/400; 9 in 3 600); SA 3 as "A phone repair shop replaces 800 screens and 680 still work perfectly after a year" (0.85; 212.5 of 250); `we-2` as "8% of a café's customers order a hot chocolate"; the deck as 52 numbered tiles if a deck is not wanted.
+- Reason: the videos use no gambling contexts (root ruling 6; MS-32 and MS-33 make the same note) and keep medical contexts out of worked examples (ruling 11 pattern).
+
+### MS-69. Lesson numbers that do not match the files, and unsourced hooks
+
+- Numbering: the bivariate pages are lesson04 to lesson11 but are labelled "Module 5 · L01 of 8" to "L07 of 8" and "Lesson 08", and their cross-references use the L numbers ("Lesson 3" for lesson06's calculator data, "Lesson 4" for causation, "Lesson 6" for least squares). `lesson08.sa.html` card 07 says "Coming up in Lesson 7: ... We will cover this in depth next lesson", but the next lesson is L06 (least squares); interpolation is L07 (lesson10). Suggested: number the pages consistently and change "next lesson" to "in Lesson 7". (Section 3 already records that the folder starts at lesson04.)
+- Unsourced hooks: lesson05 ("Cricket Australia analysts use correlation to find which batting statistics best predict match wins"), lesson06 ("CSIRO researchers use Pearson's r ..."), lesson08 ("Weather forecasters at the Bureau of Meteorology use trend lines ..."), lesson09 ("The AFL uses regression lines fitted to player performance data to build salary models"), lesson10 (AEMO) and lesson11 ("These four errors appear repeatedly in marked HSC papers"). Each states a fact about a named organisation or about HSC marking without a source. Suggested: cite a dated source or reword as an illustration ("Sports analysts can use correlation to ..."). The videos do not repeat them.
