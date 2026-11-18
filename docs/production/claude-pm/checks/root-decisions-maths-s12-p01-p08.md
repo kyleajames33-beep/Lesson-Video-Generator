@@ -2,9 +2,13 @@
 
 19 November 2026. Design author's handover to root for `lessons/math-s12-p01.md` to `p08.md` (Revision 1 each). Documents only: no speech, build, render, plate or commit, and no sub-agent. Inputs: the packs `pre-design/maths-standard/math-s12-p01.md` to `p08.md` and `math-s12-z01.md` (its "Start"), `programme/maths-standard-route-inputs-6.json`, `checks/maths-standard-kit-needs-b-p.md`, the Year 11 Advanced probability kit (`src/explainer/math/studio/a11-prob-parts.tsx`: OutcomeArray, ProbabilityTree, VennDiagram, TwoWayTable, SetBraces; `prob-parts.tsx`; `spread-parts.tsx`), `checks/root-rulings-maths-standard-outline.md` (rulings 1 to 69, binding), `site-corrections-maths-standard.md` (MS-66, MS-68, MS-69), the format of `lessons/math-s12-r12a.md`, `t05.md` and `a04b.md` (Revision 2 sections), the accepted Advanced designs `math-a11-s04.md` to `s08.md` (visual approach only), `maths-visual-standard.md`, `AGENTS.md`, and, for p01's opening, section 3 of `checks/root-decisions-maths-s12-b01-b07.md` (b07's final frame, read 19 Nov 2026 after p02 to p08 were written). p02 to p08 were written first; p01 was written last and opens on b07's frame exactly, so its opening is not provisional.
 
+**Revision 2 (19 Nov 2026): learning review resolved.** The eight designs are now Revision 2 (resolution log: `m-s12-p01-p08-learning-review-resolution.md`). This file is updated to match: the summary table and per-scene counts (section 1), the labels rule (section 2, root's resolution decision 1), the shared frames in sections 3, 5, 6 and 7 (an "invented example" tag on the app record and the canteen survey card; the two Standard 1 "done" chips reworded "Standard 2: ... done", root's decision 2), and the questions for root (section 13). Section 4 (p03's two-route frame) and section 8 (p08's two-route frame, z01's opening) are unchanged. Revision 1 values are kept below where they are history.
+
 Every value was recalculated with Python `fractions`, `math.comb` and full listings (scratchpad `p/verify.py`, run with `python -I`; 54 checks, 0 failures). Narration was counted by script (scratchpad `p/count.py`, the method of `work/brief-resolve-standard-r2/count.py`; it reproduces e08's 5,632). Every bold cue is quoted in its scene's Visual in spoken order, and no design contains an em dash (both checked by the same script). Seconds are speech at 13.3 characters a second plus two 10 s countdowns, short holds, settling and the 45 s notes scene; measure on the Google voice.
 
 ## 1. Summary
+
+Revision 2 characters and seconds (by `work/brief-resolve-standard-p/count.py`, which reproduces e08's 5,632; Revision 1 in brackets): p01 5,410 (5,124), about 502 s; p02 5,162 (5,012), about 483 s; p03 5,251 (5,122), about 489 s; p04 5,219 (5,086), about 488 s; p05 5,369 (5,189), about 499 s; p06 5,083 (4,981), about 480 s; p07 5,115 (5,007), about 479 s; p08 5,603 (5,465), about 516 s. All under 570 s. The table below is Revision 1.
 
 | Design | Characters | About (s, with holds) | Scenes | Courses | Anchor | New plate briefed here | Open question |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -19,7 +23,19 @@ Every value was recalculated with Python `fractions`, `math.comb` and full listi
 
 All eight are under 570 s with holds. p06 is just under 5,000 characters with nothing padded (ruling 52 pattern; the pack calls it short); the others are 5,000 to 5,500. Every feedback is 30 s of speech or less (the longest: p08 feedback 1, 391 characters, about 29 s). The longest single scenes are p08 scene 4 (879 characters, about 66 s; the council board), p06 scene 5 (823; the phone-case board) and p03 scene 4 (796; the die and coin board). Each is one board and one method stage.
 
-Per-scene characters:
+Per-scene characters, Revision 2:
+- p01 (15): 437, 635, 583, 557, 448, 429, 327, 452, 185, 262, 319, 218, 305, 178, 75.
+- p02 (13): 388, 728, 528, 499, 640, 651, 204, 285, 290, 269, 296, 309, 75.
+- p03 (13): 423, 542, 534, 826, 772, 375, 172, 282, 300, 248, 367, 335, 75.
+- p04 (14): 430, 442, 635, 644, 526, 601, 231, 125, 279, 348, 267, 336, 280, 75.
+- p05 (13): 378, 515, 694, 544, 488, 895, 193, 304, 335, 316, 358, 274, 75.
+- p06 (13): 363, 486, 442, 468, 870, 618, 141, 263, 397, 252, 357, 351, 75.
+- p07 (13): 437, 673, 465, 813, 790, 159, 304, 341, 321, 376, 150, 211, 75.
+- p08 (13): 435, 755, 528, 879, 418, 385, 253, 398, 391, 327, 367, 392, 75.
+
+Revision 2 longest scenes: p05 scene 6 (895, the die board), p08 scene 4 (879, the council board), p06 scene 5 (870, the phone-case board), p03 scene 4 (826) and p07 scene 4 (813). Longest feedback: p06 feedback 1, 397 characters, about 29.8 s.
+
+Per-scene characters, Revision 1:
 - p01 (15): 437, 538, 476, 544, 448, 360, 327, 452, 185, 262, 319, 218, 305, 178, 75.
 - p02 (13): 388, 574, 528, 499, 640, 655, 204, 285, 290, 269, 296, 309, 75.
 - p03 (13): 397, 542, 534, 796, 699, 375, 172, 282, 300, 248, 367, 335, 75.
@@ -34,7 +50,7 @@ Per-scene characters:
 - **Colour roles (fixed for p01 to p08).** Total, sample space and n **teal**; favourable outcomes, the event and counts of it **violet**; the complement ("not", "neither", "none") **amber**; probability values and branch probabilities **blue**; answer **green**; mistake **red**, crossed slips only. p05 draws the relative frequency violet against a dashed blue theoretical line. p07 gives its two attributes violet and blue (fractions in ink), and p08 gives relative change amber and absolute change blue; each says so in its design.
 - **Tokens.** Marbles, counters, pens and chargers are neutral grey tokens with ink letters (R, B, Y, W, F, K), following the accepted Advanced s06 decision, so no object is ever drawn in a role colour. Trees, arrays, Venn diagrams and tables are coded, HSC style, letters and numbers only.
 - **Notation (ruling 66).** No P(B|A), "|" or "conditional" anywhere. p04 describes the changed second stage in words ("the second branches already allow for what happened first"); p07 teaches "of those who" as one row's count over that row's total. No ∪ or ∩ on screen (p07).
-- **Contexts (rulings 6 and 69).** No gambling (no card deck, raffle or prizes; spinners and counters carry no stake). No drug, supplement, disease, insurance or genetic contexts. Every new dataset or claim is invented and labelled on screen ("invented example" or "(All figures invented ...)" in p08). The site's own examples keep their numbers (marbles, die and coin, `we-1` to `we-3` of lessons 02 to 04, card 01's class).
+- **Contexts (rulings 6 and 69).** No gambling (no card deck, raffle or prizes; spinners and counters carry no stake). No drug, supplement, disease, insurance or genetic contexts. Every new dataset or claim is invented. Revision 2 (root's resolution decision 1): the on-screen label goes on **records and surveys only**: the app record (p05 scenes 5 and 12, p06 scene 1: "invented example"), the staged months (p06 scene 3: "simulated months") and the pie gauge (p06 scene 6: "invented example"), the canteen survey (p06's left panel, p07 scenes 1 to 4: "invented example"), and p08's advertisement, headline, council, phone maker and attempts ("invented example" or "(All figures invented ...)"). Set-ups are not tagged: marble bags, cars nearby, a die, "say the bus is on time 0.8", the coin's tally card and the site's own examples. p05's simulated run is tagged "simulated fair coin" (its review finding 1). The site's own examples keep their numbers (marbles, die and coin, `we-1` to `we-3` of lessons 02 to 04, card 01's class).
 - **The forecast (ruling 67).** p01 and p08 say only "a twenty per cent chance of rain", treated as a probability of 0.2; neither explains the Bureau of Meteorology's method. If Codex supplies a dated Bureau definition, root may add one sentence (p08 open decision 3); no design depends on it.
 - **Standard 1 path (ruling 68).** p01, p02, p03, p05, p06, p08. p03 and p06 end on two-route frames; p04 and p07 (Standard 2 only) end on the Standard 1 panel scaled up, so p05 and p08 each have one opening (sections 5 and 7).
 
@@ -43,7 +59,7 @@ Per-scene characters:
 - **b07 → p01.** p01 opens on b07's final frame exactly as section 3 of `checks/root-decisions-maths-s12-b01-b07.md` fixes it (the kiosk plate, the board with five rows and the sixth "30 (tomorrow) | ≈ 107", the forecast slip "Tomorrow", cloud, "top 30°C", "20% chance of rain", chip "what does 20% mean?", label "Next: probability", "Next", "?"). On p01's first sentence the header swaps to "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY" and the label, "Next", "?" and the sixth row fade, as section 3 allows. p01's narration repeats b07's wording, "the forecast also says a twenty per cent chance of rain".
 - **p01 → p02.** The counter bag plate `ma11-counter-bag-v1.png` (about 420 px) at the left; ten grey round tokens in a row lettered "R", "R", "R", "B", "B", "B", "B", "B", "Y", "Y" in ink (88 px each); a grey brace under the row "S: 10 marbles"; p01's chance line (0 to 1, "impossible", "even chance", "certain") dimmed along the bottom; chips "how likely is blue?", "Next: favourable over total" and "?". No probability shown.
 - **p02 → p03.** A coded chalk-style lunch-deal board (about 900 × 620 px) headed "Lunch deal: 1 main + 1 drink", columns "Mains" (pie, wrap, sushi roll) and "Drinks" (water, juice, milk, iced tea), ink, 40 px; a small tag "picked at random"; chips "how many different lunches?", "Next: arrays and tree diagrams" and "?". No count shown.
-- **p05 → p06.** The phone plate `ma12-phone-v1.png` (about 420 px tall) at the left with the coded record "40 of the last 50 rides arrived within 5 minutes" and 50 dots (40 violet, 10 grey); at the right a coded grid "your next 30 trips" (30 empty cells, 6 × 5, about 720 × 520 px); chips "how many on time?", "Next: expected frequency" and "?". No count shown.
+- **p05 → p06.** The phone plate `ma12-phone-v1.png` (about 420 px tall) at the left with the coded record "40 of the last 50 rides arrived within 5 minutes", 50 dots (40 violet, 10 grey) and a small grey tag "invented example" (26 px; Revision 2, root's decision 1); at the right a coded grid "your next 30 trips" (30 empty cells, 6 × 5, about 720 × 520 px); chips "how many on time?", "Next: expected frequency" and "?". No count shown.
 
 ## 4. p03's two-route frame (p04 opens on its left panel; p05's picture on its right)
 
@@ -58,21 +74,21 @@ p03 scene 12, held about 2 s, then returned to silently after the notes. 1920 ×
 
 ## 5. p04's final frame (p05's opening for both courses)
 
-p04 scene 13: p03's right panel **scaled evenly by 1.3 and centred** (the t11 pattern, ruling 64): the coin plate (about 340 px), the tally card (about 680 × 390 px) "10 flips: 7 heads, 3 tails"; chip "is this coin unfair?"; grey chip "Probability trees: done" (replacing "Arrays and trees: done"); label "Next: relative frequency" (replacing "Standard 1 next: relative frequency"); chips "Next" and "?". p05 opens on this; Standard 1 viewers arriving from p03 have seen the same picture at 1/1.3 scale.
+p04 scene 13: p03's right panel **scaled evenly by 1.3 and centred** (the t11 pattern, ruling 64): the coin plate (about 340 px), the tally card (about 680 × 390 px) "10 flips: 7 heads, 3 tails"; chip "is this coin unfair?"; grey chip "Standard 2: probability trees done" (replacing "Arrays and trees: done"; Revision 2, root's decision 2: Revision 1 read "Probability trees: done", which named a video Standard 1 viewers skip); label "Next: relative frequency" (replacing "Standard 1 next: relative frequency"); chips "Next" and "?". p05 opens on this; Standard 1 viewers arriving from p03 have seen the same picture at 1/1.3 scale.
 
 ## 6. p06's two-route frame (p07 opens on its left panel; p08's picture on its right)
 
 p06 scene 12, held about 2 s, then returned to silently after the notes. Exactly:
 
 - **Split and tags:** as section 4.
-- **Left panel, Standard 2 (x 0 to 950), p07's opening:** a coded canteen survey card (about 820 × 560 px) headed "Canteen survey: 80 students" with two tick-box questions "bought lunch?" and "bought recess?"; a small stack of returned cards beside it, three showing both boxes ticked; chip "how do we count the overlap once?"; label "Standard 2 next: Venn diagrams and two-way tables". No counts shown (p07 says 45, 30 and 12 in its scene 1).
+- **Left panel, Standard 2 (x 0 to 950), p07's opening:** a coded canteen survey card (about 820 × 560 px) headed "Canteen survey: 80 students" with a small grey tag "invented example" (26 px; Revision 2, root's decision 1), two tick-box questions "bought lunch?" and "bought recess?"; a small stack of returned cards beside it, three showing both boxes ticked; chip "how do we count the overlap once?"; label "Standard 2 next: Venn diagrams and two-way tables". No counts shown (p07 says 45, 30 and 12 in its scene 1).
 - **Right panel, Standard 1 (x 970 to 1920), p08's picture:** the phone plate `ma12-phone-v1.png` (about 520 px tall) showing an invented app advertisement "4 out of 5 users sleep better!" (40 px), a small grey footnote "Based on 25 volunteers" (26 px) and a tag "invented example"; chip "should we believe it?"; grey chip "Probability calculations: done"; label "Standard 1 next: probability in the real world".
 - **Chips:** "Next" and "?". No value worked out.
 - **Spoken lead-in (p06 scene 12):** "That's expected frequency. From here, there are two paths. If you're doing Standard two, next we sort survey answers with two questions at once, like students who bought lunch, recess, or both. If you're doing Standard one, next we look at how numbers like these are used, and sometimes misused, by advertisers, councils and companies. Pick your path."
 
 ## 7. p07's final frame (p08's opening for both courses)
 
-p07 scene 12: p06's right panel **scaled evenly by 1.3 and centred**: the phone plate (about 680 px tall), the advertisement "4 out of 5 users sleep better!" (52 px), the footnote "Based on 25 volunteers" (34 px), the tag "invented example"; chip "should we believe it?"; grey chip "Venn diagrams and tables: done"; label "Next: probability in the real world"; chips "Next" and "?". p08 opens on this. p07 adds a 12 s bridge (scene 11) before it, so the move from tables to an advertisement has a reason; it is p07's first trim.
+p07 scene 12: p06's right panel **scaled evenly by 1.3 and centred**: the phone plate (about 680 px tall), the advertisement "4 out of 5 users sleep better!" (52 px), the footnote "Based on 25 volunteers" (34 px), the tag "invented example"; chip "should we believe it?"; grey chip "Standard 2: Venn diagrams and tables done" (Revision 2, root's decision 2; Revision 1 read "Venn diagrams and tables: done"); label "Next: probability in the real world"; chips "Next" and "?". p08 opens on this. p07 adds a 12 s bridge (scene 11) before it, so the move from tables to an advertisement has a reason; it is p07's first trim.
 
 ## 8. p08's two-route frame (Standard 2 to z01; Standard 1: Year 12 course complete)
 
@@ -113,6 +129,9 @@ Kit, as `checks/maths-standard-kit-needs-b-p.md`, with these uses and additions 
 Plates: existing and inspected 19 Nov 2026 (counter bag, coins, die faces, phone, bus, produce scale; the kiosk is b07's). New, one brief each: `ms12-commuter-train-v1.png` (p04, first seen there), `ms12-pie-warmer-v1.png` (p06, first seen there), `ms12-bread-loaf-v1.png` (p08's final frame and z01's anchor; ruling 17). Not used: the tear-off calendars (an Advanced anchor), the spinner plates (Advanced s10's homemade spinner), `ms12-coffee-sandwich-v1.png` (a dark vignette background, not a clean object plate).
 
 ## 13. For root
+
+Revision 2 status (19 Nov 2026): items 1, 3, 4, 5 and 6 are closed by ruling 76 and root's resolution decision 3 (the without-replacement scene stays; the seed values stand, to be met by the build; "Of whom?" stays; p06 is not padded; p08 briefs the loaf and z01 does not). Item 2 is still open for the train and the pie warmer: the learning review found the train helpful but not essential and the pie warmer adding little that a coded gauge does not, and the bread loaf is needed either way. Revision 2 keeps both plates as briefed, so root can drop either without other changes (p04: a second bus; p06: the gauge alone with a grey caption "canteen pies"). Revision 1 list, for the record:
+
 
 1. **p03's without-replacement scene** (section 9, item 3): keep (serves Standard 1's "involving replacement where applicable"), or cut about 30 s if root reads it as "with replacement only".
 2. **Three new plates** (section 12): accept, or swap the train for a second bus (p04) and drop the pie warmer (p06); the bread loaf is needed for p08 and z01 either way.
