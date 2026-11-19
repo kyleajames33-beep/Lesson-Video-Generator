@@ -185,3 +185,13 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
    - **e05 to e06 chip:** "a formula, filled down".
    - **e09 scene 6:** "tax from the table plus the levy".
    PAYG, ATO and Medicare placeholders still wait for brief 256, step 1.
+
+## Rulings on the f01 to f08 learning review (19 November 2026)
+97. **All findings are accepted** (including the 11 optional ones), with the reviewer's recommended options:
+   - **f05:** the weight dial stops at 80 kg, so attempt 2 is not given away.
+   - **P plates:** the coded P is green (P2) from f03b to f08, and the red border is removed from f03b's plate brief.
+   - **f04b:** attempt 1's braking distance is 52 m (76 m total).
+   - **f08:** feedback 2 may say "A spreadsheet needs the star" once, to name the symbol. Everywhere else it says "times".
+   - **f01:** area bars for the pizza comparison.
+   - **f03b:** drop the Year 12 sentence.
+   **No codename or video id is ever spoken**; say "last video" or name the topic. Ruling 95's changes are applied where still missing. f07 narration waits for brief 256, step 1.
