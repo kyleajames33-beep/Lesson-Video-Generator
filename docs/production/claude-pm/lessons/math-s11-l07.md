@@ -1,8 +1,20 @@
 # Maths S11 L07: How do we graph y = kx and use the graph to solve problems? A New Zealand conversion graph drawn from the origin and one point, read both ways, a steeper line as a bigger k, and k read back from a graph (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard designs (`math-s12-a01.md`, `a07.md`, `r12a.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, rulings 1 to 91). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard designs (`math-s12-a01.md`, `a07.md`, `r12a.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, rulings 1 to 91). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,062 characters by script (see "Narration length estimate"), 12 scene headings, about 468 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,078 characters by script (see "Narration length estimate"; Revision 2), 12 scene headings, about 469 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s11-l07-learning-review.md` (summary `../checks/m-s11-l01-l07-learning-review-summary.md`), with root's rulings 1 to 93 in `../checks/root-rulings-maths-standard-outline.md` (ruling 93 extends w for mass to l07's practice 1). Numbers rechecked with SymPy: `work/brief-review-s11-l/resolve-check.py`. Findings by the review's numbers:
+
+1. Should fix, attempt 1 and feedback 1 (m for mass, one video after w): **accepted** (ruling 93). Card: "The cost C ($) of a bag of potatoes varies directly with its mass w (kg), with C = 2.5w. (a) Draw the graph for 0 ≤ w ≤ 8. ..."; narration "its mass w in kilograms, with C equals two point five w"; axis label "w (kg)"; the model answer, "Numbers used", the site note, the author notes, the pronunciation note and error-check item 4 to match. Feedback 1 names no letter, so its speech is unchanged.
+2. Optional, scene 5 (the worked example is l06's car): **applied**, the callback option (no new numbers): "Remember last video's car? Here's its graph, ... Find k from the graph alone", with a grey chip "Year 11 l06: the same car". The rise and run still do the work on screen.
+3. Optional, description "Next" line: **applied**, it quotes e01's title, "Wages, Salaries and Pay Periods".
+
+Open decisions closed: 1 (rulings 92 and 93 confirm the e01 join) and 2 (the "Next" line). Joins unchanged: scene 1 still opens on l06's final frame, and scene 11 is still e01's opening frame.
+
+Narration 5,078 characters by script (Revision 1: 5,062), about 469 s with holds, 101 s under the 570 s cap; feedback speech about 30 s and 24 s (unchanged). Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: seventh and last video of Year 11 Mathematics Standard (2024) Linear relationships, outline playlist order 15. Year 11 is one course for Standard 1 and Standard 2. Pre-design pack: `../pre-design/maths-standard/math-s11-l07.md`. Site lesson (read through the pack's quotations, read only): `maths-standard/year11/linear-relationships/lesson04.sa.html` (Direct Variation and Proportional Relationships, SHA256 `10c21a1091b81c3b7abfafca29ee9324488313fb7d6d0ce4c11b34decf71e92f`; card 02 "y = kx, no fixed fee, graph through the origin"; card 05's caption "Direct variation: a straight line through the origin, the ratio y/x stays constant at every point"; `we-2`'s d = 60t with 300 km at 5 hours). The site has no worked example that reads values off a graph, so the graph reading is original teaching built on the site's model card (ruling 3 for the missing part). Route entry: `math-s11-l07` in `../../programme/maths-standard-route-inputs-8.json`. Visual system: maths studio kit; one new painted plate (a frozen yoghurt cup); the travel suitcase reused; every graph, reading path and board coded.
 
@@ -33,9 +45,9 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Worked example (g01 layout).** Scene 5: a graph through (0, 0) and (5, 300); k = 60, d = 60t; 210 km read as 3.5 h; check 210 ÷ 60 = 3.5. Crossed slip: "k = 300" (caption "divide by the run, 5").
 - **Memory aid.** Framed card: "Origin + one point = the whole line." Key line: "Read from the axis your number is on."
 - **Visual surprise.** The check point: after the line is ruled from the origin through (300, 330), the check point (100, 110) is plotted last and lands exactly on the line with a green flash; a deliberately wrong check (100, 130, shown faint) sits off the line in red. One extra point proves the whole line.
-- **Site notes.** MS-01 (k for kilograms) is avoided: potatoes use C = 2.5m with m for mass (ruling 91). The site's apples are l06's; this video's examples are new except `we-2`.
+- **Site notes.** MS-01 (k for kilograms) is avoided: potatoes use C = 2.5w with w for mass (ruling 91; w, not m, by rulings 92 and 93, because m is the gradient in y = mx + c). The site's apples are l06's; this video's examples are new except `we-2`.
 - **Plain meanings at first use.** Conversion graph ("a graph that changes one unit into another, like one currency into another"); reading path ("up to the line, then across", or the reverse); check point ("an extra point that must land on the line").
-- **Attempts (pack questions).** A1 (pack question 1): potatoes C = 2.5m for 0 ≤ m ≤ 8; graph; $15 for 6 kg; 5 kg for $12.50; checked. Crossed "12.50 × 2.5 = 31.25 kg" (caption "cost to mass: divide by k"). A2 (pack question 2, with the two lines supplied so the 10 s task is reading, not drawing): lolly shops at $2.80 and $3.50 per 100 g; B steeper, dearer; $17.50 − $14 = $3.50 at 500 g. Crossed "A is steeper because it is cheaper". Prices invented, labelled "example prices".
+- **Attempts (pack questions).** A1 (pack question 1): potatoes C = 2.5w for 0 ≤ w ≤ 8; graph; $15 for 6 kg; 5 kg for $12.50; checked. Crossed "12.50 × 2.5 = 31.25 kg" (caption "cost to mass: divide by k"). A2 (pack question 2, with the two lines supplied so the 10 s task is reading, not drawing): lolly shops at $2.80 and $3.50 per 100 g; B steeper, dearer; $17.50 − $14 = $3.50 at 500 g. Crossed "A is steeper because it is cheaper". Prices invented, labelled "example prices".
 - **Mistake scene:** none separate. Reading the wrong axis (3 spoken; A1 crossed); reading k from a point without dividing (5 crossed); steeper as cheaper (4 spoken; A2 crossed); a line not through the origin (2, by the free point).
 - **Cause chain taught, in order:** (1) direct variation has no starting amount, so the origin is always on the line, and one more point fixes it (2); (2) a check point catches a slip because every point on the line fits y = kx (2); (3) each point pairs an input with its output, so a reading goes from the given axis to the line and then to the other axis (3); (4) k is the output per unit of input, so a larger k climbs faster: the steeper line costs more per gram (4); (5) from a graph, k is the rise over the run from the origin, because the line starts at (0, 0) (5).
 - **Entry knowledge (route):** math-s11-l06 (`cie0224c11`, `ci6f88d684`, `cic7837e3f`, `ci04c5dcb2`: y = kx, k from one pair); math-s11-l02 (`ci5ff71229`: drawing a straight line by hand and with a graphing application). Recalled in a phrase or grey chip.
@@ -45,10 +57,10 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (a) Conversion: N = 1.1A; A = 300: 330; A = 100: 110; A = 250: 275; N = 220: A = 200; wrong check (100, 130) is off the line.
   (b) Yoghurt: A: C = 3.2 × (mass ÷ 100), B: C = 2.4 × (mass ÷ 100); 350 g: A 11.20, B 8.40, difference 2.80; 500 g: A 16, B 12.
   (c) Car: k = 300 ÷ 5 = 60; d = 210: t = 3.5.
-  (d) A1: C = 2.5m; m = 8: 20; m = 6: 15; C = 12.50: m = 5; slip 12.5 × 2.5 = 31.25. A2: A: 2.8 × 5 = 14; B: 3.5 × 5 = 17.50; difference 3.50.
+  (d) A1: C = 2.5w; w = 8: 20; w = 6: 15; C = 12.50: w = 5; slip 12.5 × 2.5 = 31.25. A2: A: 2.8 × 5 = 14; B: 3.5 × 5 = 17.50; difference 3.50.
   (e) Final frame: the line drawn at $29.40 an hour (e01 scene 2's rate, unlabelled here), from (0, 0) to (40, 1176).
-  (f) Pronunciations: "N equals one point one A"; "two dollars twenty"; "three point five hours"; "C equals two point five m".
-  (g) Windows: conversion A$ 0 to 400 (grid every 50), NZ$ 0 to 450 (grid every 50; reading ticks every 5 shown on the path tags only); yoghurt mass 0 to 500 g (grid every 50 g), cost $0 to $18 (grid every $1); car t 0 to 6 h (grid every 0.5 h), d 0 to 360 km (grid every 30 km); A1 blank axes m 0 to 8 kg, C $0 to $22; A2 0 to 500 g, $0 to $18 (grid every 50 g and $0.50); final frame hours 0 to 40 (grid every 10), pay $0 to $1,200 (grid every $200).
+  (f) Pronunciations: "N equals one point one A"; "two dollars twenty"; "three point five hours"; "C equals two point five w".
+  (g) Windows: conversion A$ 0 to 400 (grid every 50), NZ$ 0 to 450 (grid every 50; reading ticks every 5 shown on the path tags only); yoghurt mass 0 to 500 g (grid every 50 g), cost $0 to $18 (grid every $1); car t 0 to 6 h (grid every 0.5 h), d 0 to 360 km (grid every 30 km); A1 blank axes w 0 to 8 kg, C $0 to $22; A2 0 to 500 g, $0 to $18 (grid every 50 g and $0.50); final frame hours 0 to 40 (grid every 10), pay $0 to $1,200 (grid every $200).
 
 Main question: *How do we graph y = kx and use the graph to solve problems?*
 Entry knowledge (l06, l02): y = kx and k from one pair; drawing a line by hand.
@@ -80,9 +92,9 @@ Visual: camera continue on the same graph. The reading paths (simulation 1): fro
 Visual: clear change: the frozen yoghurt cup `ms11s-frozen-yoghurt-v1.png` (about 420 px wide) at the left with two coded price signs, 40 px: "Shop A: $3.20 per 100 g" (blue) and "Shop B: $2.40 per 100 g" (teal); grey tag "example prices". Axes at the right (1,100 × 650 px, mass 0 to 500 g, cost $0 to $18): the blue line A and the teal line B draw from the origin (A to (500, 16), B to (500, 12)). On "steeper" amber step triangles on each line "100 g across: $3.20 up" and "$2.40 up", hand tag "bigger k, steeper". On "cheaper" chip, 44 px: "steeper = dearer per gram", hand tag "steeper = dearer". On "vertical line" the rider (simulation 2) slides from 0 to 350 g, readouts "A: $", "B: $", "A dearer by $" updating live; on "B" it stops at 350 g: "A: $11.20", "B: $8.40", "A dearer by $2.80" (52 px), hand tag "same cup, two prices".
 
 ### 5. worked example: k from a graph
-> Here's the method on its own, going backwards from a graph. A graph shows a car's distance at a steady speed, a straight line from the origin through five hours, three hundred kilometres. Find k, and use the graph to find how long the car takes to travel two hundred and ten kilometres. Step one, k is the gradient, rise over run from the origin. Three hundred divided by five is **sixty**, so d equals sixty t. Step two, read the graph. Start at two hundred and ten on the distance axis, go across to the line, then down. It reads three and a half **hours**. Step three, check with the equation. Two hundred and ten divided by sixty is three point **five**. The slip is reading k as three hundred, the height of the point. You have to divide by the run, **five**.
+> Here's the method on its own, going backwards from a graph. Remember last video's car? Here's its **graph**, a straight line from the origin through five hours, three hundred kilometres. Find k from the graph alone, and use the graph to find how long the car takes to travel two hundred and ten kilometres. Step one, k is the gradient, rise over run from the origin. Three hundred divided by five is **sixty**, so d equals sixty t. Step two, read the graph. Start at two hundred and ten on the distance axis, go across to the line, then down. It reads three and a half **hours**. Step three, check with the equation. Two hundred and ten divided by sixty is three point **five**. The slip is reading k as three hundred, the height of the point. You have to divide by the run, **five**.
 
-Visual: clear change to the g01 board. Task strip, 44 px: "The graph shows the distance d (km) travelled by a car at a steady speed after t hours. Find k in d = kt, and use the graph to find the time taken to travel 210 km." Givens card, 44 px: "line through (0, 0) and (5, 300)" (the point labelled on the graph), "d = 210 km". Plot at the right (700 × 620 px, t 0 to 6 h, d 0 to 360 km, the blue line from the origin to (6, 360), the point (5, 300) marked). Rows, 52 px: "k = rise ÷ run = 300 ÷ 5"; on "sixty" the triangle (simulation 3) grows from the origin to (5, 300) with "rise 300" and "run 5", row "k = 60 (km per hour)", "d = 60t" (60 amber), hand tag "rise ÷ run from (0, 0)". On "hours" a dashed amber path from d = 210 across to the line and down to t = 3.5, tag "3.5 h", hand tag "across, then down". On "five" (first bold) the check row "210 ÷ 60 = 3.5 ✓" and framed answer (green): "k = 60; 210 km takes 3.5 hours". On "five" (second bold) a red slip "k = 300" writes small at the right and is crossed (caption "divide by the run, 5"), the run "5" pulsing amber on the triangle.
+Visual: clear change to the g01 board. On "graph" (Revision 2, review finding 2) a grey chip "Year 11 l06: the same car" sits by the plot. Task strip, 44 px: "The graph shows the distance d (km) travelled by a car at a steady speed after t hours. Find k in d = kt, and use the graph to find the time taken to travel 210 km." Givens card, 44 px: "line through (0, 0) and (5, 300)" (the point labelled on the graph), "d = 210 km". Plot at the right (700 × 620 px, t 0 to 6 h, d 0 to 360 km, the blue line from the origin to (6, 360), the point (5, 300) marked). Rows, 52 px: "k = rise ÷ run = 300 ÷ 5"; on "sixty" the triangle (simulation 3) grows from the origin to (5, 300) with "rise 300" and "run 5", row "k = 60 (km per hour)", "d = 60t" (60 amber), hand tag "rise ÷ run from (0, 0)". On "hours" a dashed amber path from d = 210 across to the line and down to t = 3.5, tag "3.5 h", hand tag "across, then down". On "five" (first bold) the check row "210 ÷ 60 = 3.5 ✓" and framed answer (green): "k = 60; 210 km takes 3.5 hours". On "five" (second bold) a red slip "k = 300" writes small at the right and is crossed (caption "divide by the run, 5"), the run "5" pulsing amber on the triangle.
 
 ### 6. memory aid
 > Here's the idea to keep. Origin, one point, ruler, and you have the whole line. Then read from the axis your number is on, and check with the **equation**.
@@ -90,9 +102,9 @@ Visual: clear change to the g01 board. Task strip, 44 px: "The graph shows the d
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the conversion graph small, the green origin, the point (300, 330) and one amber reading path. Main line, hand font 56 px: "Origin + one point = the whole line." On "equation" the key line, 40 px: "Read from the axis your number is on." Hold about 2 s.
 
 ### 7. attempt 1 (countdown, 10 seconds)
-> Your turn. The cost C of a bag of potatoes varies directly with its mass m in kilograms, with C equals two point five m. Draw the graph for m from zero to eight. Use your graph to find the cost of six kilograms, and the mass that costs twelve dollars fifty. Check each with the equation. Pause here to answer.
+> Your turn. The cost C of a bag of potatoes varies directly with its mass w in kilograms, with C equals two point five w. Draw the graph for w from zero to eight. Use your graph to find the cost of six kilograms, and the mass that costs twelve dollars fifty. Check each with the equation. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px, worded as printed: "The cost C ($) of a bag of potatoes varies directly with its mass m (kg), with C = 2.5m. (a) Draw the graph for 0 ≤ m ≤ 8. (b) Use your graph to find the cost of 6 kg and the mass that costs $12.50. Check each with the equation." Grey tag "example price". The full question stays on screen. Picture slot: empty axes, m 0 to 8 kg, C $0 to $22, grid every 1 kg and $1. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px, worded as printed: "The cost C ($) of a bag of potatoes varies directly with its mass w (kg), with C = 2.5w. (a) Draw the graph for 0 ≤ w ≤ 8. (b) Use your graph to find the cost of 6 kg and the mass that costs $12.50. Check each with the equation." Grey tag "example price". The full question stays on screen. Picture slot: empty axes, w 0 to 8 kg (axis label "w (kg)"), C $0 to $22, grid every 1 kg and $1. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 8. feedback 1 (brief)
 > Plot the origin, and one more point, like eight kilograms at twenty **dollars**, then rule the line. Up from six kilograms, then across, gives fifteen dollars, and two point five times six is fifteen. Across from twelve fifty, then down, gives five kilograms, and twelve fifty divided by two point five is **five**. Multiplying twelve fifty by two point five is the slip. Going from cost to mass, you **divide**.
@@ -141,7 +153,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 11's frame exac
 
 ## Practice questions and model answers
 
-**Attempt 1 (scene 7; pack question 1, original, HSC style, 3 marks suggested, not an official marking scheme).** "The cost C ($) of a bag of potatoes varies directly with its mass m (kg), with C = 2.5m. (a) Draw the graph for 0 ≤ m ≤ 8. (b) Use your graph to find the cost of 6 kg and the mass that costs $12.50. Check each with the equation."
+**Attempt 1 (scene 7; pack question 1, original, HSC style, 3 marks suggested, not an official marking scheme).** "The cost C ($) of a bag of potatoes varies directly with its mass w (kg), with C = 2.5w. (a) Draw the graph for 0 ≤ w ≤ 8. (b) Use your graph to find the cost of 6 kg and the mass that costs $12.50. Check each with the equation."
 Model answer: (a) A straight line from (0, 0) through (8, 20). (b) 6 kg: $15 (2.5 × 6 = 15). $12.50: 5 kg (12.50 ÷ 2.5 = 5). Classic mistake (crossed): "12.50 × 2.5 = 31.25 kg".
 
 **Attempt 2 (scene 9; pack question 2 with the lines supplied, original, HSC style, 2 marks suggested).** "Two lolly shops sell by weight. Shop A charges $2.80 per 100 g and Shop B charges $3.50 per 100 g. The graph shows the cost of each for 0 to 500 g. (a) Which line is steeper, and what does that mean? (b) Find the difference in price for 500 g."
@@ -154,7 +166,7 @@ Model answer: (a) B is steeper: it costs more per gram (dearer). (b) A: $14; B: 
 | Conversion | N = 1.1A; 300 → 330; 100 → 110 (check); 250 → 275; NZ$220 → A$200 (220 ÷ 1.1 = 200); wrong check (100, 130) | 1 to 3 |
 | Yoghurt | A $3.20, B $2.40 per 100 g; 350 g: $11.20 and $8.40, A dearer by $2.80; 500 g: $16 and $12 | 4 |
 | Car (site `we-2`) | (5, 300): k = 300 ÷ 5 = 60; d = 60t; 210 km: t = 210 ÷ 60 = 3.5 h | 5 |
-| A1 | C = 2.5m; (8, 20); 6 kg: $15; $12.50: 5 kg; slip 31.25 | 7, 8 |
+| A1 | C = 2.5w; (8, 20); 6 kg: $15; $12.50: 5 kg; slip 31.25 | 7, 8 |
 | A2 | A: 2.80 × 5 = $14; B: 3.50 × 5 = $17.50; difference $3.50 | 9, 10 |
 | Final frame | line at $29.40 an hour (unlabelled), (40, 1,176) | 11 |
 
@@ -165,7 +177,7 @@ Recalculated with SymPy 1.14 (19 Nov 2026, scratchpad `l/verify.py`, run with `p
 - 1.1 × 300 = 330; 1.1 × 100 = 110; 1.1 × 250 = 275; 220 ÷ 1.1 = 200; 1.1 × 100 ≠ 130.
 - 3.2 × 3.5 = 11.2; 2.4 × 3.5 = 8.4; 11.2 − 8.4 = 2.8; 3.2 × 5 = 16; 2.4 × 5 = 12.
 - 300 ÷ 5 = 60; 210 ÷ 60 = 3.5.
-- 2.5 × 8 = 20; 2.5 × 6 = 15; 12.5 ÷ 2.5 = 5; 12.5 × 2.5 = 31.25.
+- 2.5 × 8 = 20; 2.5 × 6 = 15; 12.5 ÷ 2.5 = 5; 12.5 × 2.5 = 31.25 (Revision 2: the same values with w for mass, C = 2.5w; rechecked with SymPy in `work/brief-review-s11-l/resolve-check.py`).
 - 2.8 × 5 = 14; 3.5 × 5 = 17.5; 17.5 − 14 = 3.5.
 - 29.40 × 40 = 1176.
 
@@ -175,6 +187,8 @@ Recalculated with SymPy 1.14 (19 Nov 2026, scratchpad `l/verify.py`, run with `p
 - **Considered, not used:** "Zero to one, then done" (catchy, but "one" could be heard as x = 1, which is a poor plotting choice for small k).
 
 ## Narration length estimate
+
+Revision 2, counted by script (`work/brief-resolve-standard-cf/count.py`, the same method): **5,078 characters** (Revision 1: 5,062), 12 scene headings. Characters per scene (1 to 12): 445, 688, 590, 545, 764, 151, 309, 400, 302, 324, 485, 75. Speech about 382 s; holds and settling unchanged from Revision 1 (below); total **about 469 s**, 101 s under the 570 s cap. Feedback speech: about 30 s and 24 s. The Revision 1 paragraphs below are kept for the record.
 
 Revision 1, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `l/count.py`, which reproduces e08's 5,632): **5,062 characters**, 12 scene headings. Characters per scene (1 to 12): 445, 688, 590, 545, 748, 151, 309, 400, 302, 324, 485, 75.
 
@@ -235,7 +249,7 @@ Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with a CAS, and every value in narration, screen text, attempts and key notes against "Numbers used".
 2. Confirm the syllabus quote matches the route-inputs JSON and the crosswalk exactly.
 3. Confirm the exchange rate is labelled "example rate" on screen and said once to change every day; no real dated rate is implied.
-4. Confirm m is used for mass (never k for kilograms; MS-01, ruling 91).
+4. Confirm w is used for mass (never k for kilograms, MS-01, ruling 91; never m, rulings 92 and 93).
 5. Confirm both attempts carry every demand and neither card nor picture shows an answer (A2's lines unvalued).
 6. Confirm scene 11's frame matches e01's opening frame as written in `math-s11-e01.md` scene 1 (axes, colours, tag "k dollars per hour", chip "pay = k × hours", chips "Next: earning money" and "?"), and that l07's narration never says "wage".
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
@@ -255,15 +269,16 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024):
 "Graph and analyse equations of the form y = kx to solve problems in a variety of contexts"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c
 
-Builds on: Direct Variation: y = kx and Finding k. Next: Earning money, wages and salaries.
+Builds on: Direct Variation: y = kx and Finding k. Next: Wages, Salaries and Pay Periods.
 
 #Year11Maths #MathsStandard #DirectVariation #HSCScience
 
 ## Open decisions
 
-- **1. The e01 join (root; ruling 87).** Scene 11 matches e01's opening as written (Revision 1). The line is drawn at e01 scene 2's $29.40 an hour without a label, so e01's axes can grow straight into its own scene 2. If e01 changes its opening, only scene 11 and this file's frame description change.
-- **2. The "Next" line in the description.** It names e01 by topic; replace with e01's published title when it exists.
+- **1. The e01 join (root; ruling 87).** Closed in Revision 2: rulings 92 and 93 confirm the join. Revision 1 text: Scene 11 matches e01's opening as written (Revision 1). The line is drawn at e01 scene 2's $29.40 an hour without a label, so e01's axes can grow straight into its own scene 2. If e01 changes its opening, only scene 11 and this file's frame description change.
+- **2. The "Next" line in the description.** Closed in Revision 2: it quotes e01's title, "Wages, Salaries and Pay Periods" (review finding 3). Revision 1 text: It names e01 by topic; replace with e01's published title when it exists.
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s11-l07-learning-review.md`; ruling 93). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from l06 and l02 only; check that "one of them is free" is followable, that the check point's purpose is clear, that "which axis does my number belong to?" lands before the reverse reading, that steeper = dearer is caused by k, not stated, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

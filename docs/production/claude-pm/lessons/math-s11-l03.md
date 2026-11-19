@@ -1,8 +1,20 @@
 # Maths S11 L03: How does a linear model describe a real situation, and what do its gradient and intercept mean? A hire bike in words, the model built and used both ways, interpreting with units, a falling model, and the site's savings example (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard designs (`math-s12-a01.md`, `a07.md`, `r12a.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, rulings 1 to 91). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard designs (`math-s12-a01.md`, `a07.md`, `r12a.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, rulings 1 to 91). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,281 characters by script (see "Narration length estimate"), 13 scene headings, about 484 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,268 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 483 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s11-l03-learning-review.md` (summary `../checks/m-s11-l01-l07-learning-review-summary.md`; verdict pass), with root's rulings 1 to 93 in `../checks/root-rulings-maths-standard-outline.md`. Findings by the review's numbers, plus ruling 93's title change:
+
+1. Optional, scene 2 (a crowded board at the syllabus sentence): **applied**. On "change" the formula strip and the variable key fade (their content is in the model card) as the syllabus sentence writes. No narration change.
+2. Optional, feedback 1 (about 30 s): **applied**, reviewer's sentence: "The gradient, forty-eight, means forty-eight dollars per day." Feedback 1 is now about 29 s.
+3. Ruling 93 (l04's title): the description's "Next" line quotes l04's new title, "Interpolation and Extrapolation".
+
+Open decisions closed: 1 (ruling 92 accepts the example price) and 2 (kept, as the reviewer advised). Joins unchanged: scene 1 still opens on l02's final frame, and scene 12 (l04's opening) is unchanged. Numbers unchanged.
+
+Narration 5,268 characters by script (Revision 1: 5,281), about 483 s with holds, 87 s under the 570 s cap; feedback speech about 29 s and 30 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: third video of Year 11 Mathematics Standard (2024) Linear relationships, outline playlist order 11. Year 11 is one course for Standard 1 and Standard 2. Pre-design pack: `../pre-design/maths-standard/math-s11-l03.md`. Site lessons (read through the pack's quotations, read only): `maths-standard/year11/linear-relationships/lesson03.sa.html` (Intercepts and Linear Equations, SHA256 `c8d6872ef3873497730932a9296aa733ae5a3439e9f27e20984f9e21d5d2c8e0`; the bike hire "$12 before you ride a single metre, then $5 per hour", `we-1`'s C = 12 + 5h and $32 for 4 hours, `we-2`'s S = 75 + 20w and $195 after 6 weeks, card 05 "the intercept is not the final total. It is the starting output", trap 02 "Saying the intercept is 'added each time'", the revisit's price rise to $6) and `formulas-and-equations/lesson05.sa.html` (Building Formulas from Patterns and Tables, SHA256 `548a35b67aa1760a54719d8f8996c3c1b8b06f1b84aeae185178f34b0642ba18`; card 02 "output = starting value + rate × input"). Route entry: `math-s11-l03` in `../../programme/maths-standard-route-inputs-8.json`. Visual system: maths studio kit; one new painted plate (a box of coffee pods); the hire e-bike and the water tank reused; every model card, graph, slider and board coded.
 
@@ -65,7 +77,7 @@ Visual: opens on l02's final frame exactly (the e-bike `ma11-share-ebike-v1.png`
 ### 2. from words to a model
 > First, name the variables in words, with units. Let C be the cost in dollars, and h the number of hours. The twelve dollars is paid even at zero hours, so it's the starting value. The five dollars is added for every hour, so it's the **rate**. A linear model is the starting value, plus the rate times the input. So C equals twelve plus five **h**. On the graph, the line meets the vertical axis at twelve, and climbs five dollars for every hour across. And that's the big idea of this whole topic. The y-intercept is the vertical intercept, the starting value, and the gradient is the rate of **change**.
 
-Visual: stage change: the e-bike shrinks to a 260 px badge at the top left with the swing tag (30 px). Variable key, 44 px: "C = cost ($)", "h = time (hours)". On "paid even at zero hours" the "$12" phrase lifts and flies into the violet slot, hand tag "paid at 0 hours: start"; on "rate" the "$5 per hour" phrase flies into the amber slot, hand tag "added each hour: rate". Formula strip, 44 px: "output = starting value + rate × input" (start violet, rate amber). On "h" the model card completes, 52 px: "C = 12 + 5h" (12 violet, 5 amber). On "graph" axes slide in at the right (h 0 to 8, C $0 to $60): the line draws blue from (0, 12), the point ringed violet, and an amber step triangle "1 hour across, $5 up" rides from h = 0 to 2. Grey chip "Year 11 l02: y = mx + c". On "change" the syllabus sentence writes across the bottom (44 px, above y = 950): "y-intercept = vertical intercept = starting value" (violet) and "gradient = rate of change" (amber).
+Visual: stage change: the e-bike shrinks to a 260 px badge at the top left with the swing tag (30 px). Variable key, 44 px: "C = cost ($)", "h = time (hours)". On "paid even at zero hours" the "$12" phrase lifts and flies into the violet slot, hand tag "paid at 0 hours: start"; on "rate" the "$5 per hour" phrase flies into the amber slot, hand tag "added each hour: rate". Formula strip, 44 px: "output = starting value + rate × input" (start violet, rate amber). On "h" the model card completes, 52 px: "C = 12 + 5h" (12 violet, 5 amber). On "graph" axes slide in at the right (h 0 to 8, C $0 to $60): the line draws blue from (0, 12), the point ringed violet, and an amber step triangle "1 hour across, $5 up" rides from h = 0 to 2. Grey chip "Year 11 l02: y = mx + c". On "change" the formula strip and the variable key fade (their content is now in the model card; Revision 2, review finding 1) and the syllabus sentence writes across the bottom (44 px, above y = 950): "y-intercept = vertical intercept = starting value" (violet) and "gradient = rate of change" (amber).
 
 ### 3. using the model, both ways
 > Now put the model to work. How much for four hours? Substitute h equals four. Twelve plus five times four is twelve plus twenty, which is thirty-two **dollars**. Or go backwards. If you've got forty-seven dollars, how long can you ride? Set twelve plus five h equal to forty-seven, and solve it, just like in our equations videos. Take away twelve, and five h is thirty-five. Divide by five, and h is **seven** hours. Check it, twelve plus five times seven is forty-seven.
@@ -98,7 +110,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the bike line sma
 Visual: `QuestionCard`, 40 px, worded as printed: "A ski hire shop charges $55 plus $48 per day for skis and boots. (a) Write a linear model for the cost C ($) after d days. (b) Interpret the gradient and the vertical intercept. (c) Find the cost for 5 days." Grey tag "example prices". The full question stays on screen. No picture (the words are the task). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
-> The model is C equals fifty-five plus forty-eight **d**. The gradient, forty-eight, is the cost per day, forty-eight dollars a day. The intercept, fifty-five, is the fixed amount paid before any days. Five days costs fifty-five plus two hundred and forty, which is two hundred and ninety-five **dollars**. Writing C equals forty-eight plus fifty-five d is the slip. The per-day amount goes with **d** every time.
+> The model is C equals fifty-five plus forty-eight **d**. The gradient, forty-eight, means forty-eight dollars per day. The intercept, fifty-five, is the fixed amount paid before any days. Five days costs fifty-five plus two hundred and forty, which is two hundred and ninety-five **dollars**. Writing C equals forty-eight plus fifty-five d is the slip. The per-day amount goes with **d** every time.
 
 Visual: the card shrinks to the top (30 px). On "d" (first bold) the model "C = 55 + 48d" (55 violet, 48 amber). Rows, 44 px: "48: $48 per day" (amber), "55: $55 paid once, before any days" (violet). On "dollars" "55 + 48 × 5 = 55 + 240" and framed answer (green) "$295". On "d" (second bold) a red slip "C = 48 + 55d" writes and is crossed (caption "the per-day amount goes with d"). Hold about 1 s.
 
@@ -137,7 +149,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Misconceptions addressed:** intercept added each time (4, 6 crossed); swapped start and rate (A1 crossed); positive gradient for a fall (5 crossed ghost); no units or "per" (4 tags); solving for the wrong target (A2 crossed).
 - **Visual standard, item by item:** 1 the e-bike from the first frame, returning as a badge; 2 a new stage every 30 to 60 s; 3 words into slots, the price-rise slider with a live readout, the pods running down with a count bar; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 board in 6; 8 framed card and five bullets; 9 the pinned intercept as the line swings.
 - **One idea at a time:** building (2), using (3), interpreting (4), falling (5), whole method (6).
-- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 30 s and 30 s.
+- **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 29 s (Revision 2) and 30 s.
 - **Avoided double teaching:** l01's rise over run, l02's y = mx + c and f02's solving are recalled in grey chips and phrases.
 - **Syllabus coverage:** `cib2d6c0df` (2 to 6, A1, A2; all five key notes).
 - **Out of scope by design:** trusting predictions (l04); spreadsheets (l05); direct variation (l06).
@@ -178,6 +190,8 @@ Recalculated with SymPy 1.14 (19 Nov 2026, scratchpad `l/verify.py`, run with `p
 - **Considered, not used:** "Fee first, then per" (catchy, but suggests the order of terms matters; the site's card 05 and l01 teach that it does not).
 
 ## Narration length estimate
+
+Revision 2, counted by script (`work/brief-resolve-standard-cf/count.py`, the same method): **5,268 characters** (Revision 1: 5,281), 13 scene headings. Characters per scene (1 to 13): 411, 593, 464, 599, 555, 744, 172, 265, 387, 265, 397, 341, 75. Speech about 396 s; holds and settling unchanged from Revision 1 (below); total **about 483 s**, 87 s under the 570 s cap. Feedback speech: about 29 s and 30 s. The Revision 1 paragraphs below are kept for the record.
 
 Revision 1, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `l/count.py`, which reproduces e08's 5,632): **5,281 characters**, 13 scene headings. Characters per scene (1 to 13): 411, 593, 464, 599, 555, 744, 172, 265, 400, 265, 397, 341, 75.
 
@@ -258,15 +272,16 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024):
 "Model linear relationships and interpret the features of those relationships in a variety of contexts, noting that the y-intercept is the vertical intercept and the gradient is the rate of change"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c
 
-Builds on: Writing y = mx + c and Drawing Straight-Line Graphs. Next: Interpolation, Extrapolation and Limits of Linear Models.
+Builds on: Writing y = mx + c and Drawing Straight-Line Graphs. Next: Interpolation and Extrapolation.
 
 #Year11Maths #MathsStandard #LinearModels #HSCScience
 
 ## Open decisions
 
-- **1. The hire bike's price (root).** The site's $12 plus $5 per hour is kept and labelled "example price"; real Sydney hire rates are higher per hour. Root may prefer a dated real rate (ruling 32), at the cost of the site's numbers.
-- **2. "Just like in our equations videos" (learning review).** Scene 3 points back to f02 by description, not title, because f02's title is not yet fixed. Once f02's title is settled, the chip may quote it.
+- **1. The hire bike's price (root).** Closed in Revision 2: ruling 92 accepts the site's price with the "example price" tag. Revision 1 text: The site's $12 plus $5 per hour is kept and labelled "example price"; real Sydney hire rates are higher per hour. Root may prefer a dated real rate (ruling 32), at the cost of the site's numbers.
+- **2. "Just like in our equations videos" (learning review).** Kept in Revision 2, as the reviewer advised; the grey chip quotes f02's title once it is fixed. Revision 1 text: Scene 3 points back to f02 by description, not title, because f02's title is not yet fixed. Once f02's title is settled, the chip may quote it.
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s11-l03-learning-review.md`; ruling 93). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from l02 and f02 only; check that "starting value" and "rate" land before "intercept" and "gradient", that the syllabus sentence is followable at speed, that the slider makes "only the gradient changes" visible, that the pods' zero is reached by a stated cause, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
