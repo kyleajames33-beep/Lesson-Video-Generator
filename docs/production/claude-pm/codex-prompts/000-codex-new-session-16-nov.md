@@ -45,3 +45,5 @@ When a job is waiting (quota, plates rendering), move to the next one rather tha
 **Root, 18 Nov night:** brief 254 (`codex-prompts/254-maths-standard-t-check-plates-voice.md`): the 12 Maths Standard trigonometry designs. Steps 1 to 3 after brief 253's; voice after brief 253. r13 and r14 are cleared to voice.
 
 **Root, 19 Nov:** brief 255 (`codex-prompts/255-maths-standard-b-p-z-c-f-check-plates-voice.md`): the last 42 Year 12 Maths Standard designs. Steps 1 to 3 after brief 254's; voice after brief 254. Year 12 Maths Standard is now fully designed and reviewed (briefs 251 to 255).
+
+**Root, 19 Nov night:** brief 256 (`codex-prompts/256-maths-standard-y11-facts-check-plates-voice.md`) covers Year 11 Maths Standard f, l and e (30 designs). **Do step 1, the official facts (ATO tables, Medicare levy threshold, dosage and BAC formula forms), now in any gap**: it is text research and blocks seven designs. Do steps 2 to 4 once each design reaches Revision 2; voicing goes after brief 255.
