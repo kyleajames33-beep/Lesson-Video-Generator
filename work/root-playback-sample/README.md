@@ -247,3 +247,21 @@ First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
 - Both questions run with countdowns.
 - Key notes hold beside the card.
 Captions come from the playback lesson; 14,015 frames, equal to the master. Pass.
+
+## math-a12-g01 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- Opens from the series final frame. The structure, domain and demand chips light in turn.
+- Worked problem 1: the domain shades x > 0, the calculator sweep finds gradient 4 at x = 3, and x = -1 is crossed out as outside the domain.
+
+## math-a12-g02 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- Tank B: the readings plot as points, the trapezia fill strip by strip (8, 11, 10, 6), and "added so far" rises to 35 L as the tank fills.
+- Counts row 1, 2, 2, 2, 1 appears, and the "inside ones counted twice" slip is crossed out.
+
+## math-a12-g03 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- Annuity check: the deposit bars shrink toward year 10, and the last deposit earns nothing yet. FV ≈ $25,155.79, and the 20,000 × 1.05^10 slip is crossed out.
+- The final question card (bag of chips, empirical rule) holds for the attempt.
