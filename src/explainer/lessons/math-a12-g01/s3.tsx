@@ -58,23 +58,24 @@ export const S09: React.FC = () => (
 // ---------- 10. feedback 1 ----------
 const lnq = (x: number) => Math.log(x * x - 4);
 const R5 = Math.sqrt(5);
-const GI = {x: 980, y: 300, w: 660, h: 460};
+const GI = {x: 40, y: 340, w: 900, h: 590};
+const RX = 980;
 const WI = {x: [-6, 6] as [number, number], y: [-3, 4] as [number, number]};
 export const S10: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K10;
-	const calc = fr < k.one ? undefined : fr < k.five ? '1 − √5 ≈ −1.24' : '≈ 3.24';
+	const calc = fr < k.one ? undefined : fr < k.five ? '≈ −1.24' : '≈ 3.24';
 	return (
 		<>
 			<SceneHeading text="Check your working" at={2} size={44} />
 			<QStrip y={150} size={32} parts={['The curve y = ', {u: 'ln', at: k.chain}, '(', {u: 'x² − 4', at: k.domain}, ') has a tangent with ', {u: 'gradient 1', at: k.setting}, ' at one or more points. Find all such x-values, giving exact answers.']} />
 			<GivensStrip x={96} y={290} size={36} items={[{content: 'y = ln(x² − 4)', at: k.chain}, {content: 'gradient 1', at: k.chain + 8}]} />
-			<Row x={96} y={380} at={k.chain} size={52} small={40} dim={prog(fr, k.domain, 12)}>dy/dx = 2x/(x² − 4)</Row>
-			<Row x={96} y={455} at={k.two - 20} size={40} small={36} color={BR.ink} dim={prog(fr, k.setting, 12)}>domain: x² − 4 &gt; 0, so x &lt; −2 or x &gt; 2</Row>
-			<Row x={96} y={525} at={k.setting} size={48} small={40} dim={prog(fr, k.so, 12)}>x² − 2x − 4 = 0, so x = 1 ± √5</Row>
-			<AnswerBox x={96} y={612} at={k.five} size={52}>x = 1 + √5</AnswerBox>
-			<Slip x={96} y={720} w={860} at={k.keep} strikeAt={k.keep + 12} size={40} caption="1 − √5 is outside the domain">x = 1 + √5 or 1 − √5</Slip>
-			<StudioPlot x={GI.x} y={GI.y} width={GI.w} height={GI.h} window={WI} xTicks={[-4, -2, 2, 4]} yTicks={[-2, 2]} at={k.domain - 10}>
+			<Row x={RX} y={380} at={k.chain} size={52} small={40} dim={prog(fr, k.domain, 12)}>dy/dx = 2x/(x² − 4)</Row>
+			<Row x={RX} y={455} at={k.two - 20} size={40} small={36} color={BR.ink} dim={prog(fr, k.setting, 12)}>domain: x² − 4 &gt; 0, so x &lt; −2 or x &gt; 2</Row>
+			<Row x={RX} y={525} at={k.setting} size={48} small={40} dim={prog(fr, k.so, 12)}>x² − 2x − 4 = 0, so x = 1 ± √5</Row>
+			<AnswerBox x={RX} y={612} at={k.five} size={52}>x = 1 + √5</AnswerBox>
+			<Slip x={RX} y={720} w={680} at={k.keep} strikeAt={k.keep + 12} size={40} caption="1 − √5 is outside the domain">x = 1 + √5 or 1 − √5</Slip>
+			<StudioPlot x={GI.x} y={GI.y} width={GI.w} height={GI.h} window={WI} xTicks={[-4, -2, 2, 4]} yTicks={[-2, 2]} at={-30}>
 				{m => {
 					const [g0] = m.p(-2, 0), [g1] = m.p(2, 0), gap = prog(fr, k.two - 10, 14);
 					const xr = 1 + R5, xb = 1 - R5;
@@ -97,7 +98,7 @@ export const S10: React.FC = () => {
 					</>;
 				}}
 			</StudioPlot>
-			<Calc x={1665} y={300} w={190} value={calc} />
+			<Calc x={1680} y={640} w={200} value={calc} />
 		</>
 	);
 };
@@ -120,17 +121,18 @@ export const S12: React.FC = () => {
 			<SceneHeading text="Check your working" at={2} size={44} />
 			<QStrip y={150} size={34} parts={['Find the equation of the tangent to y = ln x that passes through the point ', {u: '(0, 1)', at: k.zero}, '.']} />
 			<GivensStrip x={96} y={260} size={36} items={[{content: 'y = ln x', at: k.zero}, {content: 'through (0, 1)', at: k.zero + 8}]} />
-			<Row x={96} y={350} at={k.a} size={48} small={36} dim={prog(fr, k.tangent, 12)}>contact point: (<Ac>a</Ac>, ln <Ac>a</Ac>), <Ac>a</Ac> &gt; 0</Row>
-			<Row x={96} y={420} at={k.tangent} size={48} small={36} dim={prog(fr, k.put, 12)}>y − ln <Ac>a</Ac> = (1/<Ac>a</Ac>)(x − <Ac>a</Ac>)</Row>
-			<Row x={96} y={490} at={k.put} size={44} small={36} dim={prog(fr, k.ln2, 12)}>1 − ln <Ac>a</Ac> = (1/<Ac>a</Ac>)(0 − <Ac>a</Ac>) = −1</Row>
-			<Row x={96} y={560} at={k.ln2} size={48} small={40} dim={prog(fr, k.y, 12)}>ln <Ac>a</Ac> = 2, so <Ac>a</Ac> = e²</Row>
-			<AnswerBox x={96} y={640} at={k.y} size={52}>y = x/e² + 1</AnswerBox>
-			<Slip x={96} y={750} w={860} at={k.grad} strikeAt={k.grad + 40} size={40} caption="x = 0 is outside the domain">gradient at x = 0</Slip>
+			<TreeChips x={RX} y={360} dir="col" size={44} gap={18} at={-30} out={k.a - 12} lit={[undefined, undefined, 0]} res={[undefined, undefined, 'outside point: name it a']} resAt={[undefined, undefined, 0]} />
+			<Row x={RX} y={350} at={k.a} size={48} small={36} dim={prog(fr, k.tangent, 12)}>contact point: (<Ac>a</Ac>, ln <Ac>a</Ac>), <Ac>a</Ac> &gt; 0</Row>
+			<Row x={RX} y={420} at={k.tangent} size={48} small={36} dim={prog(fr, k.put, 12)}>y − ln <Ac>a</Ac> = (1/<Ac>a</Ac>)(x − <Ac>a</Ac>)</Row>
+			<Row x={RX} y={490} at={k.put} size={44} small={36} dim={prog(fr, k.ln2, 12)}>1 − ln <Ac>a</Ac> = (1/<Ac>a</Ac>)(0 − <Ac>a</Ac>) = −1</Row>
+			<Row x={RX} y={560} at={k.ln2} size={48} small={40} dim={prog(fr, k.y, 12)}>ln <Ac>a</Ac> = 2, so <Ac>a</Ac> = e²</Row>
+			<AnswerBox x={RX} y={640} at={k.y} size={52}>y = x/e² + 1</AnswerBox>
+			<Slip x={RX} y={750} w={680} at={k.grad} strikeAt={k.grad + 40} size={40} caption="x = 0 is outside the domain">gradient at x = 0</Slip>
 			<StudioPlot x={GI.x} y={GI.y} width={GI.w} height={GI.h} window={W12} xTicks={[2, 4, {value: E2, label: 'e²'}]} yTicks={[1, 2]} at={-30}>
 				{m => {
 					const o = prog(fr, k.sq, 14);
 					const [p0, q0] = m.p(-0.5, -0.5 / E2 + 1), [p1, q1] = m.p(9, 9 / E2 + 1);
-					const z = prog(fr, k.zero, 12);
+					const z = 1;
 					return <>
 						<g clipPath={m.clip}><path d={fnPath(m, Math.log, 0.05, 9, 300)} stroke={INK} strokeWidth={6} fill="none" />
 							{o > 0.01 ? <line x1={p0} y1={q0} x2={p1} y2={q1} stroke={VIO.stroke} strokeWidth={6} strokeLinecap="round" opacity={o} /> : null}</g>
@@ -140,7 +142,7 @@ export const S12: React.FC = () => {
 					</>;
 				}}
 			</StudioPlot>
-			<Calc x={1665} y={300} w={190} value={fr >= k.sq ? 'e² ≈ 7.39' : undefined} />
+			<Calc x={1680} y={640} w={200} value={fr >= k.sq ? 'e² ≈ 7.39' : undefined} />
 		</>
 	);
 };

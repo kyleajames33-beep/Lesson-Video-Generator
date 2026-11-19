@@ -28,23 +28,23 @@ export const S05: React.FC = () => {
 			<MarkChip x={cx - 70} y={cy - 30} at={-300} out={k.one - 10} size={34} color={GREY}>x = −1</MarkChip>
 			<LiveReadoutBoard x={466} y={412} width={240} at={k.set} out={k.so} rows={[{label: 'x', value: xr, digits: 2}, {label: 'gradient', value: df1(xr), digits: 2, role: 'gradient'}]} />
 			<Chip x={1180} y={284} at={-300} size={40} color={BR.ink}>domain: x &gt; 0</Chip>
-			<Row x={960} y={390} at={k.set} size={52} small={36} dim={prog(fr, k.mult, 12)}>2x − 6/x = 4</Row>
-			<Row x={960} y={455} at={k.mult} size={48} small={36} dim={prog(fr, k.fact, 12)}>2x² − 6 = 4x, so x² − 2x − 3 = 0</Row>
-			<Row x={960} y={520} at={k.fact} size={52} small={36} dim={prog(fr, k.at, 12)}>(x − 3)(x + 1) = 0</Row>
+			<Row x={960} y={390} at={k.set} size={52} small={40} dim={prog(fr, k.mult, 12)}>2x − 6/x = 4</Row>
+			<Row x={960} y={455} at={k.mult} size={48} small={40} dim={prog(fr, k.fact, 12)}>2x² − 6 = 4x, so x² − 2x − 3 = 0</Row>
+			<Row x={960} y={520} at={k.fact} size={52} small={40} dim={prog(fr, k.at, 12)}>(x − 3)(x + 1) = 0</Row>
 			<Row x={960} y={590} at={k.one} size={52} small={40} dim={prog(fr, k.at, 12)}>x = 3  or</Row>
 			<MarkChip x={1230} y={582} at={k.one} crossAt={k.rej} size={44}>x = −1</MarkChip>
 			<HandTag x={1450} y={548} text="outside the domain" at={k.rej + 8} size={36} color={RED} />
 			<Row x={960} y={680} at={k.height} size={48} small={36} dim={prog(fr, k.so + 30, 12)}>point: (3, 9 − 6 ln 3)</Row>
 			<Row x={960} y={748} at={k.so} size={46} small={36}>y − (9 − 6 ln 3) = 4(x − 3)</Row>
 			<AnswerBox x={960} y={830} at={k.three} size={48}>y = 4x − 3 − 6 ln 3</AnswerBox>
-			<Calc x={1680} y={600} w={190} value={fr >= k.height + 20 ? '≈ 2.408' : undefined} />
+			<Calc x={1665} y={590} w={220} value={fr >= k.height + 20 ? '≈ 2.408' : undefined} />
 			<HandTag x={690} y={760} text="gradient 4 here" at={k.one - 10} out={k.so} size={36} color={VIO.ink} />
 		</>
 	);
 };
 
 // ---------- 6. worked problem 2: a tangent through an outside point ----------
-const G6 = {x: 40, y: 420, w: 880, h: 510};
+const G6 = {x: 40, y: 400, w: 920, h: 530};
 const W6 = {x: [-2, 2.5] as [number, number], y: [-1, 8] as [number, number]};
 const E = Math.E;
 export const S06: React.FC = () => {
@@ -59,11 +59,12 @@ export const S06: React.FC = () => {
 		<>
 			<SceneHeading text="Worked problem 2: through an outside point" at={4} size={44} />
 			<Chip x={1120} y={92} at={k.here + 10} size={30} color={LIT.ink}>Demand? → outside point: name it a</Chip>
-			<Task x={96} y={180} w={1728} at={k.find} size={40}>Find the equation of the beam (the tangent through the origin).</Task>
-			<EqStrip x={96} y={300} at={k.torch} size={48}>y = eˣ</EqStrip>
-			<BoxCard x={400} y={294} w={620} at={k.isnt} size={36} title="given">torch at (0, 0), not on the curve</BoxCard>
+			<Task x={96} y={180} w={1728} at={-30} size={40}>Find the equation of the beam (the tangent through the origin).</Task>
+			<EqStrip x={96} y={300} at={-30} size={48}>y = eˣ</EqStrip>
+			<BoxCard x={400} y={294} w={620} at={-30} size={36} title="given">torch at (0, 0), not on the curve</BoxCard>
+			<TreeChips x={980} y={440} dir="col" size={34} gap={18} at={-30} out={k.slip - 20} lit={[undefined, undefined, k.here + 10]} res={[undefined, undefined, 'outside point: name it a']} resAt={[undefined, undefined, k.here + 20]} />
 			<StudioPlot x={G6.x} y={G6.y} width={G6.w} height={G6.h} window={W6} xTicks={[-1, 1, 2]} yTicks={[{value: E, label: 'e'}, 5]} at={-30}
-				html={m => <TangentPlate plate={TORCH} point={m.pf(0, 0)} angle={screenAngle(m.pf, 0, 0, graze > 0.5 ? E : 1)} w={200} contact={TORCH_LENS} />}>
+				html={m => <TangentPlate plate={TORCH} point={m.pf(0, 0)} angle={screenAngle(m.pf, 0, 0, graze > 0.5 ? E : 1)} w={260} contact={TORCH_LENS} />}>
 				{m => {
 					const line = (s: number, c: number, o: number, color: string, w = 6, dash?: string) => {const [p0, q0] = m.p(W6.x[0], s * W6.x[0] + c), [p1, q1] = m.p(W6.x[1], s * W6.x[1] + c); return <line x1={p0} y1={q0} x2={p1} y2={q1} stroke={color} strokeWidth={w} strokeLinecap="round" strokeDasharray={dash} opacity={o} />;};
 					const [ox, oy] = m.p(0, 0), [, o1] = m.p(0, 1);
@@ -85,7 +86,7 @@ export const S06: React.FC = () => {
 					</>;
 				}}
 			</StudioPlot>
-			<LiveReadoutBoard x={170} y={474} width={300} at={k.a} labelSize={28} rows={[{label: <Ac>contact point a</Ac>, value: a, digits: 2, role: 'a'}, {label: 'height at x = 0', value: h0, digits: 2, role: 'gradient'}]} />
+			<LiveReadoutBoard x={150} y={452} width={290} at={k.a} labelSize={28} rows={[{label: <Ac>contact point a</Ac>, value: a, digits: 2, role: 'a'}, {label: 'height at x = 0', value: h0, digits: 2, role: 'gradient'}]} />
 			<HandTag x={560} y={520} text="beam misses" at={k.comp + 10} out={k.instead} size={40} color={RED} />
 			<HandTag x={600} y={560} text="grazes" at={k.one + 20} size={42} color={VIO.ink} />
 			<MarkChip x={960} y={420} at={k.slip} out={k.instead + 30} crossAt={k.comp} size={38}>gradient at x = 0 is 1, so y = x?</MarkChip>
@@ -97,7 +98,7 @@ export const S06: React.FC = () => {
 			<Row x={960} y={758} at={k.one} size={52} small={52}><Ac>a</Ac> = 1</Row>
 			<div style={{position: 'absolute', left: 1130, top: 772, opacity: prog(fr, k.one + 10, 12), fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, color: GREY}}>(e<sup>a</sup> ≠ 0)</div>
 			<AnswerBox x={960} y={838} at={k.ex} size={52}>y = ex</AnswerBox>
-			<Calc x={1680} y={560} w={190} value={fr >= k.comp ? (fr < k.instead + 20 ? 'gap 1' : fr >= k.beam ? 'e ≈ 2.718' : undefined) : undefined} />
+			<Calc x={1665} y={540} w={220} value={fr >= k.comp ? (fr < k.instead + 20 ? 'gap 1' : fr >= k.beam ? 'e ≈ 2.718' : undefined) : undefined} />
 		</>
 	);
 };
@@ -113,7 +114,7 @@ export const S07: React.FC = () => {
 	const b = fr < k.three2 ? -3 + 3 * Math.sin(((fr - k.three1) / 114) * 2 * Math.PI) * famO : kf(fr, [[k.three2, -3 + 3 * Math.sin(((k.three2 - k.three1) / 114) * 2 * Math.PI)], [k.three2 + 34, -3]]);
 	const a = -3 - b;
 	const known = fr >= k.three1;
-	const track = 0.4 + 0.6 * prog(fr, k.track - 10, 24);
+	const track = 0.6 + 0.4 * prog(fr, k.track - 10, 24);
 	const car = prog(fr, k.track, 12);
 	const carX = kf(fr, [[k.track, -1.85], [k.track + 150, 1]]);
 	const Mp = stageMap(ST);
@@ -122,9 +123,10 @@ export const S07: React.FC = () => {
 		<>
 			<SceneHeading text="Worked problem 3: working backwards" at={4} size={44} />
 			<Chip x={1060} y={92} at={k.last + 10} size={30} color={LIT.ink}>Demand? → stationary point: f(c) = k, f′(c) = 0</Chip>
-			<Task x={96} y={180} w={1728} at={k.find} size={40}>Find a and b, then classify the other stationary point.</Task>
-			<EqStrip x={96} y={300} at={k.coaster} size={48}>f(x) = x³ + <Ac>a</Ac>x² + <Bc>b</Bc>x</EqStrip>
-			<BoxCard x={640} y={294} w={640} at={k.coaster + 30} size={36} title="given">dip (stationary point): (1, −2)</BoxCard>
+			<Task x={96} y={180} w={1728} at={-30} size={40}>Find a and b, then classify the other stationary point.</Task>
+			<EqStrip x={96} y={300} at={-30} size={48}>f(x) = x³ + <Ac>a</Ac>x² + <Bc>b</Bc>x</EqStrip>
+			<BoxCard x={640} y={294} w={640} at={-30} size={36} title="given">dip (stationary point): (1, −2)</BoxCard>
+			<div style={{position: 'absolute', inset: 0, opacity: 1 - prog(fr, k.on - 16, 14)}}><PlateImg plate={CAR} x={1150} y={450} w={520} /><div style={{position: 'absolute', left: 1150, top: 800, width: 520, textAlign: 'center', fontFamily: FONT_HAND, fontWeight: 700, fontSize: 40, color: GREY}}>the dip is at (1, −2)</div></div>
 			<StudioPlot x={ST.x} y={ST.y} width={ST.w} height={ST.h} window={HOOK_WIN} xTicks={[-2, -1, 1, 2, 3]} yTicks={[5, 10, 15]} at={-30} />
 			<FrameSvg>
 				<TrackPlate Mp={Mp} opacity={track} />
@@ -176,23 +178,26 @@ export const S07: React.FC = () => {
 
 // ---------- 8. memory aid ----------
 export const AID_MAIN = 'Last step suggests the rule. The domain picks the answers.';
+const AIDPICS = [{plate: SKATE, w: 360, label: 'given gradient'}, {plate: TORCH, w: 300, label: 'outside point'}, {plate: CAR, w: 210, label: 'stationary point'}];
 export const S08: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K8;
 	return (
 		<>
 			<SceneHeading text="The whole habit in one line" at={4} size={44} />
-			<FramedCard x={290} y={170} w={1340} h={700} at={-30} />
-			<div style={{position: 'absolute', left: 340, top: 192, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#6b6358'}}>Memory aid</div>
-			<PlateImg plate={SKATE} x={1050} y={204} w={170} />
-			<PlateImg plate={TORCH} x={1250} y={204} w={150} />
-			<PlateImg plate={CAR} x={1440} y={196} w={140} />
-			<div style={{position: 'absolute', left: 340, top: 270, width: 1240, opacity: prog(fr, k.last, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: INK}}>{AID_MAIN}</div>
-			<div style={{position: 'absolute', left: 340, top: 430, opacity: prog(fr, k.a, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 48, color: INK}}>Point not given? Name it <Ac>a</Ac>.</div>
-			<div style={{position: 'absolute', left: 330, top: 510, width: 1260, height: 3, background: 'rgba(60,45,20,0.14)', opacity: prog(fr, k.try, 12)}} />
-			<TreeChips x={340} y={540} dir="col" size={34} at={k.try} lit={[k.last2, k.allowed]} res={['× : product rule', 'all real x']} resAt={[k.last2 + 12, k.allowed + 6]} gap={14} />
-			<div style={{position: 'absolute', left: 1000, top: 530, opacity: prog(fr, k.try, 12), fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44, color: INK}}>x e^(2x)</div>
-			<MiniTree kind="xe2x" cx={1330} y={600} s={0.9} leafAt={[k.last2 - 30, k.last2 - 20]} rootAt={k.last2 + 6} collapsed o={prog(fr, k.try + 6, 12)} />
+			<FramedCard x={150} y={160} w={1620} h={790} at={-30} />
+			<div style={{position: 'absolute', left: 200, top: 180, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 46, color: '#6b6358'}}>Memory aid</div>
+			<div style={{position: 'absolute', left: 200, top: 250, width: 1520, opacity: prog(fr, k.last, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 66, lineHeight: 1.1, color: INK}}>{AID_MAIN}</div>
+			<div style={{position: 'absolute', left: 200, top: 410, opacity: prog(fr, k.a, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 54, color: INK}}>Point not given? Name it <Ac>a</Ac>.</div>
+			<div style={{position: 'absolute', left: 180, top: 500, width: 1560, height: 3, background: 'rgba(60,45,20,0.14)'}} />
+			{AIDPICS.map((p, i) => <div key={p.label}>
+				<div style={{position: 'absolute', left: 200, top: 530 + i * 135, width: 380, height: 110, display: 'flex', alignItems: 'center', justifyContent: 'center'}}><div style={{position: 'relative', width: p.w, height: 100}}><PlateImg plate={p.plate} x={0} y={(100 - (p.w * (p.plate.box[3] - p.plate.box[1])) / (p.plate.box[2] - p.plate.box[0])) / 2} w={p.w} /></div></div>
+				<div style={{position: 'absolute', left: 600, top: 560 + i * 135, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, color: INK}}>{p.label}</div>
+			</div>)}
+			<div style={{position: 'absolute', left: 900, top: 520, width: 3, height: 400, background: 'rgba(60,45,20,0.14)'}} />
+			<div style={{position: 'absolute', left: 940, top: 525, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 48, color: INK}}>Try: x e^(2x)</div>
+			<MiniTree kind="xe2x" cx={1530} y={520} s={0.75} leafAt={[k.last2 - 30, k.last2 - 20]} rootAt={k.last2 + 6} collapsed />
+			<TreeChips x={940} y={745} dir="col" size={34} lit={[k.last2, k.allowed]} res={['× : product rule', 'all real x']} resAt={[k.last2 + 12, k.allowed + 6]} gap={12} />
 		</>
 	);
 };

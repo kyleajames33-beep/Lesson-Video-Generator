@@ -1,6 +1,6 @@
 # math-a12-g01 build notes (built on the measured narration)
 
-Builder: Claude build agent, 19 November 2026. No stills, grade run, bundle or MP4 by the builder (machine limit: the Google voicing worker was running). Root runs the sheet and `npm run grade:explainer -- Explainer-math-a12-g01`. 14 scenes, 14,007 frames (key notes 1,350).
+Builder: Claude build agent, 19 November 2026; grade round 2 on 20 November (stills and grade under `work/brief245/root/stills.lock`; no MP4). Sheet: `out/explainer/Explainer-math-a12-g01/grade/Explainer-math-a12-g01-grade-sheet.jpg`. 14 scenes, 14,007 frames (key notes 1,350).
 
 ## Files
 `src/explainer/lessons/math-a12-g01/` (assets, common, config, cuemap, parts, s1 to s3, scenes). Not registered (root adds the registry lines). `parts.tsx` holds `Desk` (question printed on the measured blank left page; calculator placed on the measured calculator rectangle), `Calc` (grey readouts on the measured display), `SkateGraph` (y = x² − 6 ln x for x > 0; the skateboard on the tangent at x = 3 via the kit's `TangentPlate`, angle from `screenAngle` on the plot's own unequal scales, never stretched), `MiniTree` (structure trees, the root lit last), `TreeChips` (compact decision-tree questions) and `MarkChip`. d10's `TrackPlate`, `CarOnRail`, `rideH` and `stageMap` are imported read-only for scene 7.
@@ -31,6 +31,20 @@ None missing; none stretched. Exam desk and calculator (anchors from their brief
 - Cues: every cue phrase resolves at load against the measured word timings (cuemap evaluated in node). Two repeated phrases take their second occurrence ("The tangent is y", "The curve is").
 - Server-side render of 13 evenly spaced frames per scene (node, React server renderer, no Remotion bundle): no throw, no NaN, undefined or Infinity in the markup.
 - No em dashes in the lesson files.
+
+## Grade round 2 (20 November): root's round 1 findings and fixes
+Round 1 failed: 3 failures (scenes 3, 6, 12 mostly empty), 3 warnings, plus root's sheet read. Changes:
+- Scene 1: the booklet question sits on a solid card at full ink (700 weight) over the page; the desk-to-bowl change is a quick 10-frame cut after "A skateboard rests" (no long half-faded frames); the parked question card is 33 px.
+- Scene 3: the skate bowl (board, empty line at x = −1, ln band on cue) is on screen from frame 0 at the left. The right column opens with "Which x-values does it allow?" and the three decision-tree questions at 52 px (Domain? lit); the three domain rows replace them on "A log needs", each in a solid card with its number line.
+- Scene 5: dimmed rows stay at 40 px; calculator enlarged to 220 px wide.
+- Scene 6: task, equation and givens on screen from frame 0; graph enlarged (920 × 530); torch 260 px; the decision-tree column (Demand? lit) fills the right column until the slip; calculator 220 px.
+- Scene 7: task, equation and givens from frame 0; the coaster track at 60% (was 40%) until the answer; d10's car shown large in the right column ("the dip is at (1, −2)") until "on the curve", then the working.
+- Scene 8: memory card resized to its content: main line 66 px, keyed line 54 px, the three plates enlarged and labelled (given gradient, outside point, stationary point) beside the x e^(2x) trial (mini tree and lit questions).
+- Scenes 10 and 12: the graph moved to the left and enlarged (900 × 590), working in the right column, calculator 200 px; scene 12's point (0, 1) is drawn from frame 0 and the Demand? column fills the right column until "name the touching point". Calculator strings shortened ("≈ −1.24", "≈ 3.24") so the display digits stay at or above 26 px.
+- `G01FinalFrame` unchanged.
+
+## Grade checker
+`npm run grade:explainer -- Explainer-math-a12-g01`: **PASS (0 failures, 0 warnings)**, 20 Nov 2026 (07:53 Sydney). Typecheck clean; cues resolve; server-side render of 13 frames per scene clean.
 
 ## Look first on the sheet
 Scene 1 (desk text fit on the page; then the bowl with the board's angle and the empty line at x = −1); scene 4 (decision-tree pill text inside its pills; result chips); scene 5 (rows against the calculator); scene 6 (torch at the origin, readout box clear of the curve); scene 7 (family curves under the readout box; the track and curve coincide); scene 10 and 12 insets; scene 13 final frame.

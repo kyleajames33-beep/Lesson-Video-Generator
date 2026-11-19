@@ -26,20 +26,20 @@ export const S01: React.FC = () => {
 	if (fr < 1) return <S12FinalFrame />;
 	const s12 = 1 - prog(fr, 8, 26);
 	const slide = smooth(prog(fr, k.practice, 30));
-	const desk = prog(fr, 22, 20) * (1 - prog(fr, k.board - 10, 20));
-	const stage = prog(fr, k.board - 6, 20);
+	const desk = prog(fr, 22, 20) * (1 - prog(fr, k.board + 14, 10));
+	const stage = prog(fr, k.board + 16, 10);
 	const [mx, my] = gp(G1, -1, 6.2);
 	return (
 		<>
 			{s12 > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: s12}}><S12FinalFrame /></div> : null}
-			<div style={{position: 'absolute', inset: 0, opacity: 1 - prog(fr, k.board - 10, 16)}}>
+			<div style={{position: 'absolute', inset: 0, opacity: 1 - prog(fr, k.board + 14, 10)}}>
 				<Chip x={1260 + (1300 - 1260) * slide} y={800 + (96 - 800) * slide} at={-300} size={44 - 10 * slide} color={BROWNC}>Later: mixed practice</Chip>
 			</div>
 			<SceneHeading text="Which rule, which domain?" at={k.questions} size={44} />
 			<Desk x={180} y={150} w={1560} q={Q1} at={k.here + 6} size={38} o={desk} />
 			{stage > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: stage}}>
 				<SkateGraph g={G1} board={1} v3={prog(fr, k.one, 14)} vm1={prog(fr, k.one + 6, 14)} />
-				<Task x={1150} y={160} w={700} at={-300} size={30}>{Q1}</Task>
+				<Task x={1130} y={150} w={730} at={-300} size={33}>{Q1}</Task>
 				<HandTag x={600} y={862} text="the board is the tangent" at={k.board + 20} size={38} color={VIO.ink} />
 				<MarkChip x={1150} y={470} at={k.one} size={40}>x = 3</MarkChip>
 				<MarkChip x={1340} y={470} at={k.one + 6} qAt={k.so} size={40}>x = −1</MarkChip>
@@ -87,46 +87,47 @@ export const S02: React.FC = () => {
 };
 
 // ---------- 3. the domain picks the answers ----------
+// The bowl stays on screen from frame 0 (left); the three domain rows build in the right column, each with its
+// number-line picture; on "Why does this matter?" the empty line at x = −1 is circled.
 const ROWS3 = [{t: 'ln u: u > 0', kind: 'ln'}, {t: 'fraction: denominator ≠ 0', kind: 'frac'}, {t: 'tan u: u ≠ π/2 + kπ', kind: 'tan'}] as const;
-const G3: GraphBox = {x: 60, y: 230, w: 1040, h: 710};
+const G3: GraphBox = {x: 40, y: 220, w: 1020, h: 730};
 export const S03: React.FC = () => {
 	const fr = useCurrentFrame();
 	const k = K3;
 	const at = [k.log, k.fraction, k.tan];
-	const u = smooth(prog(fr, k.why, 24));
-	const pics = 1 - prog(fr, k.why - 6, 14);
-	const graph = prog(fr, k.why + 10, 18);
 	const [ex, ey] = gp(G3, -1, 5);
+	const rowO = (i: number) => prog(fr, at[i], 12);
 	return (
 		<>
 			<SceneHeading text="The domain picks the answers" at={4} size={44} />
-			<div style={{position: 'absolute', left: 96, top: 160, display: 'flex', gap: 14}}>
+			<div style={{position: 'absolute', left: 96, top: 150, display: 'flex', gap: 14}}>
 				{['x³ sin x: product', 'sin(x³): chain', 'sin x / x³: quotient'].map(s => <div key={s} style={{background: '#fffdf8', border: '3px solid rgba(60,45,20,0.25)', borderRadius: 14, padding: '2px 14px 4px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 28, color: INK}}>{s}</div>)}
 			</div>
-			<TreeChips x={1180} y={160} lit={[undefined, 6]} res={[undefined, 'ln · fraction · tan']} resAt={[undefined, k.so + 6]} size={30} />
-			<div style={{position: 'absolute', inset: 0, transformOrigin: '96px 290px', transform: `translate(${1054 * u}px, ${70 * u}px) scale(${1 - 0.25 * u})`}}>
-				{ROWS3.map((r, i) => <Row key={r.t} x={96} y={290 + i * 150} at={at[i]} size={48} small={48}>{r.t}</Row>)}
-			</div>
-			<FrameSvg style={{opacity: pics}}>
+			<TreeChips x={1110} y={150} at={k.log - 10} lit={[undefined, 6]} res={[undefined, 'ln · fraction · tan']} resAt={[undefined, k.so + 6]} size={32} />
+			<TreeChips x={1110} y={380} dir="col" size={52} gap={26} at={-30} out={k.log - 14} lit={[undefined, 6]} res={['the rule', 'the answers', 'the equations']} resAt={[-30, 6, -30]} />
+			<SkateGraph g={G3} board={1} vm1={1} band={prog(fr, k.log, 14)} />
+			<FrameSvg><ellipse cx={ex} cy={ey} rx={52} ry={190} fill="none" stroke={RED} strokeWidth={6} opacity={prog(fr, k.it, 10)} /></FrameSvg>
+			<HandTag x={ex + 64} y={ey - 150} text="no point, so no tangent" at={k.it + 6} size={40} color={RED} />
+			<HandTag x={ex + 64} y={ey - 210} text="x = −1: no bowl here" at={k.an} out={k.it} size={38} color={GREY} />
+			{ROWS3.map((r, i) => <div key={r.t} style={{position: 'absolute', inset: 0, opacity: rowO(i)}}>
+				<div style={{position: 'absolute', left: 1110, top: 330 + i * 180, width: 740, height: 165, boxSizing: 'border-box', background: '#fffdf8', borderRadius: 18, boxShadow: '0 14px 32px rgba(60,45,20,0.10)', border: `3px solid ${fr >= at[i] ? BR.stroke : 'rgba(60,45,20,0.12)'}`}} />
+				<div style={{position: 'absolute', left: 1140, top: 340 + i * 180, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 46, color: INK}}>{r.t}</div>
+			</div>)}
+			<FrameSvg>
 				{ROWS3.map((r, i) => {
-					const o = prog(fr, at[i] + 6, 12), y = 320 + i * 150, x0 = 900, x1 = 1760, z = (x0 + x1) / 2;
-					if (o < 0.01) return null;
+					const o = rowO(i), y = 450 + i * 180, x0 = 1150, x1 = 1810, z = (x0 + x1) / 2;
 					return <g key={r.kind} opacity={o}>
 						{r.kind === 'ln' ? <rect x={z} y={y - 12} width={x1 - z} height={24} fill={DOMAIN_FILL} stroke={BR.stroke} strokeWidth={3} /> : null}
 						<line x1={x0} x2={x1} y1={y} y2={y} stroke={INK} strokeWidth={4} />
-						{r.kind !== 'tan' ? <><circle cx={z} cy={y} r={13} fill="#fffdf8" stroke={r.kind === 'ln' ? BR.stroke : INK} strokeWidth={5} /><text x={z} y={y + 46} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, fill: INK}}>0</text></> : null}
-						{r.kind === 'ln' ? <text x={x1} y={y - 26} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: BR.ink}}>u &gt; 0 allowed</text> : null}
-						{r.kind === 'frac' ? <text x={z + 24} y={y - 24} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}}>bottom = 0: not allowed</text> : null}
-						{r.kind === 'tan' ? [-1.5, -0.5, 0.5, 1.5].map(q => {const px = z + q * 260, g = prog(fr, k.asym, 10); return <g key={q}><line x1={px} x2={px} y1={y - 50} y2={y + 30} stroke={g > 0.5 ? RED : GREY} strokeWidth={g > 0.5 ? 6 : 4} strokeDasharray="10 8" /><text x={px} y={y + 66} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, fill: GREY}}>{['−3π/2', '−π/2', 'π/2', '3π/2'][[-1.5, -0.5, 0.5, 1.5].indexOf(q)]}</text></g>;}) : null}
+						{r.kind !== 'tan' ? <><circle cx={z} cy={y} r={13} fill="#fffdf8" stroke={r.kind === 'ln' ? BR.stroke : INK} strokeWidth={5} /><text x={z - 20} y={y + 10} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, fill: INK}}>0</text></> : null}
+						{r.kind === 'ln' ? <text x={x1} y={y - 22} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: BR.ink}}>u &gt; 0 allowed</text> : null}
+						{r.kind === 'frac' ? <text x={z + 24} y={y - 20} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 30, fill: INK}}>bottom = 0: not allowed</text> : null}
+						{r.kind === 'tan' ? [-1.5, -0.5, 0.5, 1.5].map((q, j) => {const px = z + q * 200, g = prog(fr, k.asym, 10); return <g key={q}><line x1={px} x2={px} y1={y - 40} y2={y + 20} stroke={g > 0.5 ? RED : GREY} strokeWidth={g > 0.5 ? 6 : 4} strokeDasharray="10 8" /><text x={px + 8} y={y - 18} style={{fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 28, fill: GREY}}>{['−3π/2', '−π/2', 'π/2', '3π/2'][j]}</text></g>;}) : null}
 					</g>;
 				})}
 			</FrameSvg>
-			{graph > 0.01 ? <div style={{position: 'absolute', inset: 0, opacity: graph}}>
-				<SkateGraph g={G3} board={1} vm1={1} />
-				<FrameSvg><ellipse cx={ex} cy={ey} rx={52} ry={190} fill="none" stroke={RED} strokeWidth={6} opacity={prog(fr, k.it, 10)} /></FrameSvg>
-				<HandTag x={ex + 64} y={ey - 120} text="no point, so no tangent" at={k.it + 6} size={40} color={RED} />
-				<Chip x={1150} y={760} at={k.so} size={40} color={BR.ink}>domain first</Chip>
-			</div> : null}
+			<Chip x={1110} y={872} at={k.so} size={36} color={BR.ink}>domain first: it picks the answers</Chip>
+			<div style={{position: 'absolute', left: 1110, top: 250, width: 740, boxSizing: 'border-box', background: '#fffdf8', borderRadius: 18, borderLeft: `10px solid ${BR.stroke}`, boxShadow: '0 14px 32px rgba(60,45,20,0.10)', padding: '6px 22px 10px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: INK}}>Which x-values does it allow?</div>
 		</>
 	);
 };

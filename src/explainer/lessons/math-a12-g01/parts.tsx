@@ -66,7 +66,7 @@ export const Desk: React.FC<{x: number; y: number; w: number; q?: string; at?: n
 	return <div style={{position: 'absolute', inset: 0, opacity: o}}>
 		<PlateImg plate={DESK} x={x} y={y} w={w} />
 		<Calc x={cx + ((DESK_CALC[2] - DESK_CALC[0]) * s - cw) / 2} y={cy} w={cw} value={calc} />
-		{q ? <div style={{position: 'absolute', left: px + 14, top: py + 10, width: px1 - px - 28, height: py1 - py - 20, fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: size, lineHeight: 1.24, color: INK}}>
+		{q ? <div style={{position: 'absolute', left: px + 4, top: py + 2, width: px1 - px - 8, height: py1 - py - 4, boxSizing: 'border-box', padding: '10px 14px', background: CARD, borderRadius: 10, boxShadow: '0 4px 12px rgba(60,45,20,0.12)', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: size, lineHeight: 1.22, color: INK}}>
 			<span>{q.slice(0, n)}</span><span style={{visibility: 'hidden'}}>{q.slice(n)}</span>
 		</div> : null}
 	</div>;

@@ -69,3 +69,5 @@ The joins are drawn to match:
 **Root, 17 Nov:** `math-a12-t01`, `math-a12-t02`, `math-a12-t03` built (graded A, checker pass) and ready to render.
 
 **Root, 20 Nov:** `math-a12-t04` built (checker pass with 3 justified warnings: two sparse decibel frames and an axis label meeting its own tick mark) and ready to render. g01 to g03 wait for grade A.
+
+**Root, 20 Nov 08:10:** `math-a12-g01` (checker pass, 0 warnings), `math-a12-g02` and `math-a12-g03` (checker pass, justified question-hold warnings) built, sheet-reviewed by root and ready to render.
