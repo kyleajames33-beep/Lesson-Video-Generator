@@ -173,3 +173,15 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
    - **f05 and f06:** the ruling 4 footer shows on the first formula frame and on every answer frame, not in every teaching scene.
    - **f08:** narration says "times". One line says "the star means times in a spreadsheet".
    - **f07:** waits for Codex to confirm the dosage formulas and age ranges.
+
+## Rulings on the e01 to e12 learning review (19 November 2026)
+96. **All findings are accepted as the review wrote them**, including the 15 optional ones (none needs a new scene or plate):
+   - **e07:** gifts to registered charities are named as a special rule. One sentence, plus a line on the memory card and in the key notes.
+   - **e08:** the reviewer's sentence on "threshold".
+   - **e12:** the single IF `=IF(A2<=45000,0.15*(A2-18200),4020+0.3*(A2-45000))`, stated as valid for incomes from $18,201 to $135,000.
+   - **e11:** Priya's withheld amount is repriced to $16,950 (a refund of $526; the crossed slip becomes $2,145). Ella's withheld amount is repriced to $4,800 (a debt of $120).
+   - **e10:** Rhys's $276 is tied to the ATO row at $1,338.
+   - **Roster card** (e01 scene 12, e02 scenes 1 and 4): weekdays 16 h, Saturday 6 h, public holiday 5 h.
+   - **e05 to e06 chip:** "a formula, filled down".
+   - **e09 scene 6:** "tax from the table plus the levy".
+   PAYG, ATO and Medicare placeholders still wait for brief 256, step 1.
