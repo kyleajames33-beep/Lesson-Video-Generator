@@ -233,3 +233,17 @@ v1 was never queued: root found the kit FillDial's "μ = …" label drawn across
 ## bio-m8-b15 v1
 
 First release (18 Nov; owner decision 18 Nov: kept general, no community context). Whole master sampled in 3 s windows (11 sheets): the pathway strip follows the sound; ear section with the ossicles ringed in turn and "same push, smaller area: more pressure"; the uncoiled cochlea, hair cells, channels open and the signal; conductive against sensorineural breaks on the strip; hearing aid, cochlear implant and bone conduction implant, each mapped onto the strip; the Melbourne 1978 timeline with limits; the balance ("matched, not ranked"); the otosclerosis and factory-noise questions with countdowns; feedback with "choose the most advanced device" crossed; decision rule and key notes. Captions from the playback lesson (166 cues, 14,535 frames equal to master). Pass.
+
+## math-a12-t04 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- The storage ruler opens from t03's final frame.
+- The axis morph: the stars spread out and the heights squeeze in. Labels outside the strip fade.
+- The decibel stage: the meter follows the teal span, the "× 10" hops run along it, and the "12% more intense" slip is crossed out.
+- The library and café worked example builds row by row.
+- The seismograph and pH meter readings.
+- The star magnitudes.
+- The memory card, with no black box.
+- Both questions run with countdowns.
+- Key notes hold beside the card.
+Captions come from the playback lesson; 14,015 frames, equal to the master. Pass.

@@ -31,3 +31,7 @@ Agents to resume: the t04/g01 build agent and the g02/g03 build agent (this sess
 
 Reports and sheets: `out/explainer/Explainer-math-a12-<id>/grade/`.
 After grade A: add the four keys to brief 245, then `render-one.sh <key> v1`, the sample check and `queue.py`, as for t01 to t03.
+
+## Update, 20 Nov 07:20 (root)
+- **t04:** fixed by root (checker pass with 3 justified warnings), rendered as v1, sampled and queued (`work/release-queue/math-a12-t04-v1.json`).
+- **g01, g02, g03:** still at round 1. Resume the two build agents after the limit resets. g01 scene 3: frame 2189 lands before the first domain row appears (cue "A log needs"), so give the scene an opening visual from frame 0.
