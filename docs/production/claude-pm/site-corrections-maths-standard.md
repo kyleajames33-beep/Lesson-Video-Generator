@@ -584,3 +584,52 @@ Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standa
 - **Royalties** (`ci85c34acf`): lesson03 defines a royalty in its key terms but has no example or practice item. Government payments and sole-trader earnings are already listed in section 2.
 - **Spreadsheets** (`cic3748618`, `ci877a99ed`): already listed in section 2.
 - **Leave loading on leave other than 4 weeks:** lesson03 and lesson05 always use 4 weeks; the point says "a percentage of eligible normal pay", so a 2- or 3-week example and a line that overtime is not eligible would close the gap.
+
+## 12. Findings from the Year 11 Formulas and equations and Linear relationships packs, f01 to f08 and l01 to l07 (19 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-standard/year11/formulas-and-equations/` (lessons 01 to 08) and `year11/linear-relationships/` (lessons 01 to 04), plus `year12/ratios-and-rates/lesson01.sa.html` for speed; SHA256 values in `programme/maths-standard-route-inputs-8.json`, all matching the crosswalk inventory. No site file was changed. Every worked example, drill, short answer and quick-check value in the thirteen lessons was recalculated with SymPy 1.14.0 (`work/brief-standard-s11-fl/recalc.py`, output `recalc-output.txt`): all match. The findings are an explanation that does not produce the wrong answer it explains, a wrong definition, a wrong word, muddled sentences, notation, gaps and page labels. MS-01 (k used for kilograms in linear-relationships/lesson04) and MS-03 (the curriculum map drops y = ax^2 + c) still apply. Packs: `pre-design/maths-standard/math-s11-f01.md` to `f08.md` and `l01.md` to `l07.md`.
+
+### MS-77. A reasonableness check explains 540 m with a slip that gives 378 m
+
+- Lesson: `year11/formulas-and-equations/lesson08.sa.html`, `we-4`.
+- Old text: "Error: student likely used 0.1 instead of 0.01 ... The student's answer is ten times too large. A decimal error: $0.1 \times 3600 = 360$ vs $0.01 \times 3600 = 36$."
+- Correction: "The student's answer is exactly ten times the correct 54 m, which points to a misplaced decimal point (for example 54.0 copied as 540). Using 0.1 instead of 0.01 would give $0.1(3600) + 18 = 378$ m, a different wrong answer."
+- Reason: with 0.1 in place of 0.01, D = 360 + 18 = 378, not 540 (recalculated). The correct 54 m and the "ten times too large" observation are right; only the suggested cause is wrong.
+
+### MS-78. "Stopping distance" is defined as the braking distance
+
+- Lesson: `year11/formulas-and-equations/lesson07.sa.html`, key terms (card 04).
+- Old text: "Stopping distance ($D$): The total distance a vehicle travels from when the brakes are applied to when it stops."
+- Correction: "Stopping distance ($D$): the total distance a vehicle travels from the moment the driver sees a hazard to when the vehicle stops. Stopping distance = reaction distance + braking distance." Add one line linking the lesson's model to that sum: in $D = 0.01v^2 + 0.3v$, the $0.3v$ part is a reaction distance (about 1.08 s at $v$ km/h) and the $0.01v^2$ part is the braking distance.
+- Reason: the official point `ci61d581aa` states "stopping distance = reaction distance + braking distance". The site's definition describes braking distance only and contradicts the model on the same page, whose $0.3v$ term is the distance travelled before braking.
+
+### MS-79. A solving rule says "last" where it means "first"
+
+- Lesson: `year11/formulas-and-equations/lesson02.sa.html`, `two-step-equations-undo` (card 06), summary line.
+- Old text: "Always undo the operation furthest from the variable last."
+- Correction: "Always undo the operation furthest from the variable first." (or "undo the operation closest to the variable last").
+- Reason: the card's own body says "For $3x + 5 = 26$ ... undo the addition first", and the $+5$ is the operation furthest from $x$. The summary sentence reverses this.
+
+### MS-80. Four muddled sentences in the formulas lessons
+
+1. `lesson04.sa.html`, Trap 02: "Leaving $\pi$ on the right gives $r = \frac{C}{2\pi}$ only if you divide the whole expression." Suggested: "Dividing by 2 alone leaves $\frac{C}{2} = \pi r$, so $r$ is not yet on its own; divide by the whole multiplier $2\pi$ to get $r = \frac{C}{2\pi}$." The same page's pause prompt calls the subject "the variable alone on the left side"; suggested "alone on one side" (its own `we-2` writes $\frac{C}{2\pi} = r$ first).
+2. `lesson06.sa.html`, `we-3` step 3: "4 extra items each add $\$8$, so the output increases by $\$4 \times 8 = 32$." Suggested: "$4 \times \$8 = \$32$" (4 is a number of items, not dollars).
+3. `lesson08.sa.html`, card 05 summary and pause prompt: "if asked for input → rearrange first then substitute". The card's own table says "The input that produced a total: Solve an equation" and keeps "Rearrange" for "A variable not currently alone". Suggested: "if a total is given and an input is wanted → write and solve an equation; if the wanted variable is not the subject → rearrange first".
+4. `lesson03.sa.html`, short answer Q3 answer: "Correct equation: Let $w$ = number of weeks. $\$30 + 5w = 80$". Suggested: "$30 + 5w = 80$" (no dollar sign inside the equation).
+
+### MS-81. Gaps: rearranging y = ax^2 + c, stopping distance as a sum, and graphing applications
+
+- `cib54d5e23` (change the subject, "limited to quadratics of the form y = ax^2 + c"): the crosswalk records it as covered, but `lesson04.sa.html` rearranges linear formulas only and `lesson07.sa.html` substitutes into squared formulas without rearranging any. No lesson subtracts c, divides by a, takes a square root, writes ± or rejects a negative root in context. Suggested addition to lesson04: one worked example such as $A = \pi r^2$ for $r$, or a cost $C = 25x^2 + 15$ solved for the side $x$, with the negative root rejected because a length cannot be negative.
+- `ci61d581aa` (stopping distance = reaction distance + braking distance, with unit changes): no Year 11 lesson converts km/h to m/s or adds a reaction distance to a braking distance (crosswalk: partial). Suggested: a card in lesson07 with reaction distance = speed in m/s × reaction time, then a table of reaction, braking and stopping distances.
+- `ci5ff71229` ("with and without using graphing applications"): the linear lessons draw lines by hand only; no lesson uses a graphing app. Suggested: one card showing the same line typed into a graphing app and one point checked.
+
+### MS-82. The line is written y = mx + b on a page that also says y = mx + c
+
+- Lesson: `year11/linear-relationships/lesson03.sa.html`, cards 02 to 04 and `we-1` ("$y = mx + b$", "$b$ is the vertical intercept"), against card 05's summary and pause prompt ("c in y = mx + c").
+- Correction: use $y = mx + c$ throughout, as in the official point `ciafd3b572` ("y = mx + c where m is the gradient and c is the y-intercept").
+- Reason: two letters for one idea on the same page, and the Year 12 bivariate pages add a third form (MS-63). Year 11 should set the syllabus letters once.
+
+### MS-83. Linear relationships pages carry the formulas module's lesson numbers
+
+- Lessons: `year11/linear-relationships/lesson01.sa.html` to `lesson04.sa.html` are labelled "Module 1 · L9 of 13" to "L12 of 13", and their lesson ids are `maths-std-y11-m1-l09` to `l12`; the formulas lessons are "Module 1 · L1 of 13" to "L8 of 13". The two folders together hold 12 lessons, not 13.
+- Suggested: number Linear relationships as its own focus area (L1 to L4), or confirm that the 13th lesson exists; the videos do not use the labels.

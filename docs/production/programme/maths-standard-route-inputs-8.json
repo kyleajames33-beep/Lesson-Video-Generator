@@ -1,0 +1,1664 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-19",
+ "brief": "Maths Standard Year 11 start (root request, 19 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course common to Standard 1 and Standard 2)",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 11 is one course shared by Standard 1 and Standard 2, so standard2ActionIds and standard1ActionIds both repeat syllabusActionIds (kept for the same schema as the Year 12 files); each syllabusActions item carries the course 'Year 11 (common to Standard 1 and Standard 2)'.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 11 Formulas and equations and Linear relationships pages, as recorded in the crosswalk (read 18 November 2026)",
+  "year11FormulasPoints": 11,
+  "year11LinearPoints": 13,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (not modified). SHA256 values recomputed from the clone on 19 November 2026 and match the crosswalk inventory. All twelve Year 11 lessons and year12/ratios-and-rates/lesson01 use data-step-id sections and label worked examples we-1 to we-4. f05, f06 and f07 have no site lesson (root ruling 3)."
+ },
+ "recommendations": [
+  "Run f01 to f08, then l01 to l07, in outline order; the Year 11 course is shared by Standard 1 and Standard 2, so every video serves both. f01 is the first video of the whole Standard course: it opens cold on a concrete case with no title card. l07 hands to math-s11-e01 (Earning money).",
+  "Pace flags (gentler Standard pace): f03 and f04 are at risk (suggested splits f03a and f03b; f04a and f04b, sharing the outline number); f02, f07, l02 and l06 to watch; l07 may run short. The rest fit 6 to 9 minutes.",
+  "Year 12 dependencies checked against the Year 12 Standard packs and designs: f01 (substitution, the power key: a01, a05, a06, i01, i02), f02 (word problems: a03, i09, r03), f03 (unknown underneath and y = ax^2 + c: t01, a13, i01, a09), f04 (speed = distance ÷ time with unit changes: r04, r10, r12, f04), f08 and l05 (cells, =, *, fill down, no absolute references: a04b, i13), l01 to l03 (m and c, rise over run, steeper is faster, negative gradient as a steady fall: a01, a08, b04, i09, r12), l04 (interpolation between the data, extrapolation beyond it, the two-part limitation: a07, a11, b07), l06 and l07 (y = kx through the origin: a12).",
+  "Root rulings 3 and 4: f05, f06 and f07 teach from the syllabus alone; BAC is framed around road safety (zero BAC for learner and P-plate drivers in NSW; the formula is an estimate, never a guide to how much is safe to drink); medication doses use invented, labelled medicines with 'your doctor or pharmacist sets real doses'. Sources read 19 November 2026: nsw.gov.au 'Alcohol limits, drugs and medicines' (L, P1, P2: zero; full licence: under 0.05; 'It's impossible for you to estimate your own BAC'); health.gov.au standard drinks guide (10 g of pure alcohol). Codex re-verifies both and the dose formulas against the 2024 reference sheet.",
+  "Site findings: MS-77 to MS-83 appended to docs/production/claude-pm/site-corrections-maths-standard.md, section 12 (a reasoning-check explanation that does not give the wrong answer, a 'stopping distance' definition that is the braking distance, a solving rule that says 'last' for 'first', muddled rearranging and spreadsheet sentences, gaps for y = ax^2 + c and graphing applications, y = mx + b against the syllabus's y = mx + c). MS-01 (k for kilograms) still applies to l06.",
+  "Kit needs: docs/production/claude-pm/checks/maths-standard-kit-needs-s11-f-l.md. The main new parts are SpreadsheetGrid (already requested by math-s12-a04b, not yet built), a StoppingDistanceStrip, a FormulaSlots card for substitution and a ConversionGraph mode."
+ ],
+ "part": 8,
+ "covers": "math-s11-f01 to math-s11-f08 and math-s11-l01 to math-s11-l07 (Year 11 Formulas and equations and Linear relationships, common to Standard 1 and Standard 2)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 11,
+   "entries": [
+    {
+     "id": "math-s11-f01",
+     "playlistOrder": 1,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do we substitute values into a formula and trust the answer?",
+     "syllabusActionIds": [
+      "ci7f303375",
+      "cib2f9cd13",
+      "ci2343d424"
+     ],
+     "standard2ActionIds": [
+      "ci7f303375",
+      "cib2f9cd13",
+      "ci2343d424"
+     ],
+     "standard1ActionIds": [
+      "ci7f303375",
+      "cib2f9cd13",
+      "ci2343d424"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci7f303375",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Substitute numbers into linear and non-linear algebraic expressions, equations and formulas",
+       "sourceHtml": "<p>Substitute numbers into linear and non-linear <a data-item-id=\"1f875991-4114-406f-9bec-70b4e9c8020a\" href=\"\">algebraic expressions</a>, <a data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" href=\"\">equations</a> and formulas</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cib2f9cd13",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Evaluate the subject of a formula, given the value of other pronumerals in the formula",
+       "sourceHtml": "<p>Evaluate the subject of a formula, given the value of other <a data-item-id=\"6698c75c-0ac9-4acd-aa04-e736b1d5c5ac\" href=\"\">pronumerals</a> in the formula</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci2343d424",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Apply given formulas to solve problems in a variety of contexts",
+       "sourceHtml": "<p>Apply given formulas to solve problems in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson01.sa.html",
+      "sectionIds": [
+       "connect",
+       "variables",
+       "notation",
+       "expr-eqn",
+       "worked",
+       "apply",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "8d7a495712125af1a6f3ec51e679be1af3b40b2ade42a1bd38c66636c8cc0f3c"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson01.sa.html",
+       "sectionIds": [
+        "connect",
+        "variables",
+        "notation",
+        "expr-eqn",
+        "worked",
+        "apply",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "8d7a495712125af1a6f3ec51e679be1af3b40b2ade42a1bd38c66636c8cc0f3c"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "sectionIds": [
+        "think-first-your-gut",
+        "the-strategy-decision-guide",
+        "choose-the-first-move",
+        "check-for-reasonableness",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "revisit-the-decision-process",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "963fedd859ac4fa1a9bb496342246289c904a73ac7fd581453d3e20098b681ed"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Order of operations, including powers and brackets; operations with negative numbers."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Algebraic notation: 3x means 3 × x; x^2 means x × x; x/2 means x ÷ 2."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Area and perimeter of rectangles and circles; a scientific calculator's power and π keys."
+      }
+     ],
+     "prerequisiteVideos": [],
+     "startBoundary": "First video of the whole Year 11 Standard course: opens cold on a concrete case (the site's delivery quote, $8 booking plus $1.50 a kilometre, for a 12 km trip), with no title card. No prior video is assumed.",
+     "stopBoundary": "A formula is one rule that works for many cases; name what each letter stands for (with units); substitute with brackets, then evaluate in the correct order; substitute a negative value in brackets so a power applies to the whole number; use the calculator's power key for non-linear formulas (x^2, a power such as 1.05^3); state the answer as a sentence with units and check it is sensible. Includes one 'which first move?' note from lesson08 (need an output: substitute). Solving for an input is f02; rearranging is f03; spreadsheets are f08.",
+     "nextHandoff": "math-s11-f02",
+     "advancedReuseCandidates": [],
+     "recommendation": "First video: cold open, no title card. Keep the site's exact numbers. Must give Year 12 the substitution habits it assumes (a01 check a point; a05, a06, i02 power key; i01 formula use). Claude chooses final splits and length.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f02",
+     "playlistOrder": 2,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do we turn a word problem into an equation, solve it and check it makes sense?",
+     "syllabusActionIds": [
+      "ci2acef85d"
+     ],
+     "standard2ActionIds": [
+      "ci2acef85d"
+     ],
+     "standard1ActionIds": [
+      "ci2acef85d"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci2acef85d",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Represent a word problem as a linear equation, solve the equation and interpret the solution in the context of the problem",
+       "sourceHtml": "<p>Represent a word problem as a <a data-item-id=\"c2ddc2bd-4641-4cf1-9ae8-1eb401fb928b\" href=\"\">linear equation</a>, solve the equation and interpret the solution in the context of the problem<br/>\n</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson03.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "use-a-four-step",
+       "choose-an-equation-not",
+       "worked-examples-3-in",
+       "common-errors-middot-the",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "827b0e17b6645fe014b99893448183554774087d14c356caef4e02ab08c9db89"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "use-a-four-step",
+        "choose-an-equation-not",
+        "worked-examples-3-in",
+        "common-errors-middot-the",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "827b0e17b6645fe014b99893448183554774087d14c356caef4e02ab08c9db89"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson02.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "inverse-operations-the-key",
+        "equations-must-stay-balanced",
+        "two-step-equations-undo",
+        "equations-with-brackets",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-the-ticket-problem",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "9df7086d9cbecc62b87115133e88e9825cf26716c94677719483cca881d4d146"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375 and cib2f9cd13: substituting values; a formula's letters stand for quantities with units."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Solving one-step and two-step linear equations with inverse operations (recalled here, not taught from scratch)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f01"
+     ],
+     "startBoundary": "f01 found an output from known inputs (12 km gives $26). Now the total is known and an input is missing: the same delivery rule, but the bill is $41 (or the site's cinema hook, 5 + 12t = 41).",
+     "stopBoundary": "Four steps: define the unknown with units ('Let n be the number of texts'); write the equation from the words (fixed charge + rate × unknown = total, including a falling balance such as 125 − 9w = 53); solve with inverse operations, keeping both sides balanced (undo the outside operation first); check by substitution and interpret in context, including rounding a non-whole answer the way the situation needs (up for a target, down for a budget) and rejecting impossible answers. Brackets equations appear once as an option. Rearranging a formula is f03; simultaneous equations are math-s12-a01 to a03.",
+     "nextHandoff": "math-s11-f03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Pace flag: watch. Solving is Stage 5 and is recalled, not taught from scratch; if Claude wants to teach the balance method fully, split into f02a (solving and checking) and f02b (word problems and interpretation). Must deliver what math-s12-a03, i09 and r03 assume.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f03",
+     "playlistOrder": 3,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do we change the subject of a formula, including y = ax^2 + c?",
+     "syllabusActionIds": [
+      "cib54d5e23"
+     ],
+     "standard2ActionIds": [
+      "cib54d5e23"
+     ],
+     "standard1ActionIds": [
+      "cib54d5e23"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cib54d5e23",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Change the subject of linear and non-linear formulas limited to quadratics of the form y = ax^2 + c to solve problems and make decisions about solutions in the context of the problem",
+       "sourceHtml": "<div><span>Change the subject of linear and non-linear formulas limited to quadratics of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi>a</mi><msup><mrow><mi>x</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mi>c</mi></math></span><span> to solve problems and make decisions about solutions in the context of the problem</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": "Partial in practice (the crosswalk records covered). lesson04 rearranges linear formulas only (d = st, C = 2πr, A = bh); no lesson rearranges y = ax^2 + c, takes a square root or rejects a negative root in context (MS-81). Root ruling 3 for the missing part."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "the-subject-is-the",
+       "check-a-rearranged-formula",
+       "worked-examples-3-in",
+       "common-errors-middot-the",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "85bf8cdd80b824ece87303a73906a6753528df68a157e34c988473a62df4d9a2"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-subject-is-the",
+        "check-a-rearranged-formula",
+        "worked-examples-3-in",
+        "common-errors-middot-the",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "85bf8cdd80b824ece87303a73906a6753528df68a157e34c988473a62df4d9a2"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "sectionIds": [
+        "think-first-your-gut",
+        "the-strategy-decision-guide",
+        "choose-the-first-move",
+        "check-for-reasonableness",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "revisit-the-decision-process",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "963fedd859ac4fa1a9bb496342246289c904a73ac7fd581453d3e20098b681ed"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+       "sectionIds": [
+        "think-first-your-gut",
+        "the-formulas-you-need",
+        "squared-terms-change-the",
+        "round-at-the-end",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-the-stopping-distance",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "56fbba593ae4c2b386e409da02860a1b369f59e6e1d17149ec5d8ba024ccdc29"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f02",
+       "text": "ci2acef85d: inverse operations, keeping both sides balanced."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "Substitution and a scientific calculator."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Squares and square roots; a positive number has two square roots."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f02"
+     ],
+     "startBoundary": "f02 solved for a number. If the same formula is used many times for a different letter, rearrange once instead (the site's hook: d = st, but we know d and t and need s).",
+     "stopBoundary": "The subject is the letter on its own; rearranging uses the same inverse operations as f02 but keeps letters; divide by the whole multiplier (2π, not 2); when the wanted letter is underneath (s = d/t, solve for t; y = k/x, solve for x), multiply up first, then divide; check a rearrangement with simple numbers; two-step linear rearrangements (C = 8 + 1.5k for k); y = ax^2 + c: subtract c, divide by a, then take the square root, writing ± and keeping only the root that makes sense in context (a length or time cannot be negative); rearrange first, then substitute. Quadratic graphs are math-s12-a09.",
+     "nextHandoff": "math-s11-f04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Pace flag: at risk. Suggested split: f03a (linear rearranging, including the unknown underneath) and f03b (y = ax^2 + c, the square root and rejecting the negative root). The y = ax^2 + c part is a site gap (root ruling 3). Must deliver what math-s12-t01, a13, i01 and a09 assume.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f04",
+     "playlistOrder": 4,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do speed, time and stopping distance connect, and why does speed matter so much?",
+     "syllabusActionIds": [
+      "ci61d581aa"
+     ],
+     "standard2ActionIds": [
+      "ci61d581aa"
+     ],
+     "standard1ActionIds": [
+      "ci61d581aa"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci61d581aa",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Calculate distance, speed and time (with change of units of measurement as required) and stopping distances of vehicles using speed = distance/time and stopping distance = reaction distance + braking distance",
+       "sourceHtml": "<div><span>Calculate <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/eaff39f1-b778-4dd2-9291-d74810b6f846\" data-item-codename=\"glo_link__shared__distance\" data-item-id=\"eaff39f1-b778-4dd2-9291-d74810b6f846\" data-item-systemname=\"GLO Link: SHARED: distance\" data-item-type=\"link_glossary\">distance</a>, <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/5d4e728f-c88f-424b-9cae-82742a507631\" data-item-codename=\"glo_link__shared__speed\" data-item-id=\"5d4e728f-c88f-424b-9cae-82742a507631\" data-item-systemname=\"GLO Link: SHARED: speed\" data-item-type=\"link_glossary\">speed</a> and time (with change of units of measurement as required) and stopping distances of vehicles using </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">speed</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"italic\">distance</mi></mrow><mrow><mi mathvariant=\"italic\">time</mi></mrow></mfrac></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">stopping distance</mi><mo>=</mo><mi mathvariant=\"italic\">reaction distance</mi><mo>+</mo><mi mathvariant=\"italic\">braking distance</mi></math></span></div>\n\n\n\n\n\n\n\n\n\n\n\n",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "partial",
+       "siteGap": "Partial. year11/formulas-and-equations/lesson07 teaches only the supplied quadratic model D = 0.01v^2 + 0.3v, and its key-terms card defines stopping distance as the braking distance (MS-78). Stopping distance = reaction distance + braking distance and the km/h to m/s change are not taught; speed = distance/time with unit changes appears in year12/ratios-and-rates/lesson01 (used by math-s12-r10). Root ruling 3: teach the missing part from the syllabus."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+      "sectionIds": [
+       "think-first-your-gut",
+       "the-formulas-you-need",
+       "squared-terms-change-the",
+       "round-at-the-end",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-the-stopping-distance",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "56fbba593ae4c2b386e409da02860a1b369f59e6e1d17149ec5d8ba024ccdc29"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson07.sa.html",
+       "sectionIds": [
+        "think-first-your-gut",
+        "the-formulas-you-need",
+        "squared-terms-change-the",
+        "round-at-the-end",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-the-stopping-distance",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "56fbba593ae4c2b386e409da02860a1b369f59e6e1d17149ec5d8ba024ccdc29"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson04.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-subject-is-the",
+        "check-a-rearranged-formula",
+        "worked-examples-3-in",
+        "common-errors-middot-the",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "85bf8cdd80b824ece87303a73906a6753528df68a157e34c988473a62df4d9a2"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson08.sa.html",
+       "sectionIds": [
+        "think-first-your-gut",
+        "the-strategy-decision-guide",
+        "choose-the-first-move",
+        "check-for-reasonableness",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "revisit-the-decision-process",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "963fedd859ac4fa1a9bb496342246289c904a73ac7fd581453d3e20098b681ed"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson01.sa.html",
+       "sectionIds": [
+        "orient-and-prepare",
+        "build-foundation",
+        "work-examples",
+        "avoid-common-errors",
+        "guided-drill",
+        "independent-practice",
+        "retrieve-and-finish"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "05ae0325c7136abaf31da18d8639832e80554887247876ba02712b10dfa64381"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f03",
+       "text": "cib54d5e23: d = st rearranged as s = d/t and t = d/s."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "Substitution, including a squared term."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Time units: 60 minutes in an hour, 60 seconds in a minute; metres and kilometres."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f03"
+     ],
+     "startBoundary": "f03 ended with d = st in its three forms. A car's speedometer reads km/h, but a driver's reaction happens in seconds and metres: the units must match before a formula can be used.",
+     "stopBoundary": "speed = distance/time and its two rearrangements; converting minutes to hours (15 min = 0.25 h, never 0.15) and km/h to m/s (÷ 3.6) and back (× 3.6); stopping distance = reaction distance + braking distance; reaction distance = speed in m/s × reaction time in s; braking distance read from a table or a supplied formula; why stopping distance grows faster than speed (the braking part grows with the square of speed: the site's D = 0.01v^2 + 0.3v, whose 0.3v is the reaction distance for a reaction time of 1.08 s); road-safety meaning (wet roads, tiredness and alcohol lengthen it; this sets up f05). Average speed over a multi-leg trip, rates in other units and distance-time graphs are math-s12-r10 and r12.",
+     "nextHandoff": "math-s11-f05",
+     "advancedReuseCandidates": [],
+     "recommendation": "Pace flag: at risk. Suggested split: f04a (speed, distance, time with unit changes) and f04b (stopping distance = reaction + braking). Stopping distance as a sum is a site gap (ruling 3). Do not reuse year12 rates lesson01 we-2 (270 km in 3 h 15 min): math-s12-r10's design uses it. Example reaction times and braking distances are labelled examples; Codex checks them against Transport for NSW guidance.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f05",
+     "playlistOrder": 5,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do the BAC formulas estimate blood alcohol from drinks, hours and body weight?",
+     "syllabusActionIds": [
+      "ci9f40765a"
+     ],
+     "standard2ActionIds": [
+      "ci9f40765a"
+     ],
+     "standard1ActionIds": [
+      "ci9f40765a"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci9f40765a",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Apply the formulas BAC_male = (10N - 7.5H)/(6.8M) and BAC_female = (10N - 7.5H)/(5.5M) to calculate and interpret blood alcohol content (BAC) based on drink consumption and body weight, where N is the number of standard drinks consumed, H is the number of hours of drinking and M is the person’s weight in kilograms",
+       "sourceHtml": "<div><span>Apply the formulas </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">BA</mi><msub><mrow><mi>C</mi></mrow><mrow><mi>male</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>10</mn><mi mathvariant=\"italic\">N </mi><mo>-</mo><mi> </mi><mn>7</mn><mo>.</mo><mn>5</mn><mi>H</mi></mrow><mrow><mn>6</mn><mo>.</mo><mn>8</mn><mi>M</mi></mrow></mfrac></math></span><span> and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">BA</mi><msub><mrow><mi>C</mi></mrow><mrow><mi>female</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>10</mn><mi mathvariant=\"italic\">N </mi><mo>-</mo><mi> </mi><mn>7</mn><mo>.</mo><mn>5</mn><mi>H</mi></mrow><mrow><mn>5</mn><mo>.</mo><mn>5</mn><mi>M</mi></mrow></mfrac></math></span><span> to calculate and interpret <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/fd499a2d-7e96-4561-8a6d-08d3438d2274\" data-item-codename=\"glo_link__mst__blood_alcohol_content__bac_\" data-item-id=\"fd499a2d-7e96-4561-8a6d-08d3438d2274\" data-item-systemname=\"GLO Link: MST: blood alcohol content (BAC)\" data-item-type=\"link_glossary\">blood alcohol content (BAC)</a> based on drink consumption and body weight, where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>N</mi></math></span><span> is the number of standard drinks consumed, </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>H</mi></math></span><span> is the number of hours of drinking and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>M</mi></math></span><span> is the person’s weight in kilograms</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "missing",
+       "siteGap": "Missing. No lesson teaches the BAC formulas (lesson05 names them in a notice). Root rulings 3 and 4: teach from the syllabus, framed around road safety; P-platers must have zero BAC; the formula is an estimate, never a guide to how much is safe to drink."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f04",
+       "text": "ci61d581aa: reaction distance grows with reaction time; anything that slows reactions lengthens stopping distance."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "Substituting into a formula with a fraction and brackets; rounding at the end."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Decimals to three places; order of operations with a numerator and denominator."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f04"
+     ],
+     "startBoundary": "f04 ended on reaction time: alcohol slows reactions. The law measures alcohol as blood alcohol content, and NSW learner and P-plate drivers must have zero.",
+     "stopBoundary": "What BAC measures (grams of alcohol per 100 mL of blood: 0.05 means 0.05 g in every 100 mL); the NSW limits in one line (zero for learner, P1 and P2 drivers; under 0.05 for full licence holders); a standard drink (10 g of pure alcohol); the two syllabus formulas, with N, H and M named; substituting with the numerator and denominator worked separately, rounding to three decimal places at the end; interpreting a result (any BAC above zero means a P-plater must not drive; a result under 0.05 is an estimate, not a safe number; a negative result means the model estimates zero); why the female formula gives a higher BAC for the same N, H and M (5.5 < 6.8). Examples are invented adults. Time to zero and the limitations are f06.",
+     "nextHandoff": "math-s11-f06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Syllabus-only video (root ruling 3). Root ruling 4 binds: road-safety framing, P-platers zero BAC, the formula is an estimate and never a guide to how much is safe to drink. No people, no drinking scenes; drinks shown as a count, not glamorised glasses. Sources: nsw.gov.au 'Alcohol limits, drugs and medicines' (read 19 Nov 2026); health.gov.au standard drinks guide.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f06",
+     "playlistOrder": 6,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How long until BAC returns to zero, and why is any BAC estimate only rough?",
+     "syllabusActionIds": [
+      "cifd71015e",
+      "ci9caaa5c5"
+     ],
+     "standard2ActionIds": [
+      "cifd71015e",
+      "ci9caaa5c5"
+     ],
+     "standard1ActionIds": [
+      "cifd71015e",
+      "ci9caaa5c5"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cifd71015e",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Apply the formula Time = BAC/0.015 to determine the number of hours required for a person to stop consuming alcohol in order to reach zero BAC",
+       "sourceHtml": "<div><span>Apply the formula </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">Time</mi><mo>=</mo><mfrac><mrow><mi mathvariant=\"italic\">BAC</mi></mrow><mrow><mn>0</mn><mo>.</mo><mn>015</mn></mrow></mfrac></math></span><span> to determine the number of hours required for a person to stop consuming alcohol in order to reach zero BAC</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "missing",
+       "siteGap": "Missing. No lesson teaches Time = BAC/0.015. Root rulings 3 and 4."
+      },
+      {
+       "id": "ci9caaa5c5",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Identify and explain the limitations of methods used to estimate BAC",
+       "sourceHtml": "<p>Identify and explain the limitations of methods used to estimate BAC</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "missing",
+       "siteGap": "Missing. No lesson discusses the limitations of BAC estimates. Root rulings 3 and 4."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f05",
+       "text": "ci9f40765a: an estimated BAC from the formula; zero for learner and P-plate drivers."
+      },
+      {
+       "source": "math-s11-f03",
+       "text": "Rearranging and dividing; converting a decimal number of hours to hours and minutes (math-s11-f04's time units)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f05"
+     ],
+     "startBoundary": "f05's invented driver had an estimated BAC of about 0.032. A P-plater needs zero: how long until the model says zero?",
+     "stopBoundary": "Time = BAC/0.015 (the body removes about 0.015 of BAC each hour in this model); converting decimal hours to hours and minutes and rounding up (waiting less is not enough); using the unrounded BAC from f05 where possible; the next-morning case (a high BAC late at night can still be above zero the next morning); limitations: the formulas assume a fixed rate and average bodies, while real BAC depends on food, body build, health, medication, drink size and how fast drinks were had; drinks poured at home are often bigger than a standard drink; only a breath or blood test measures BAC; NSW Government: 'It's impossible for you to estimate your own BAC'. The only safe plan for a P-plater is no alcohol before driving.",
+     "nextHandoff": "math-s11-f07",
+     "advancedReuseCandidates": [],
+     "recommendation": "Syllabus-only video (ruling 3); ruling 4 binds. Keep a limitation as two parts (the assumption, why it fails), the pattern math-s12-a07 uses. Codex confirms the quoted NSW sentence and the date read.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f07",
+     "playlistOrder": 7,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do Fried's, Young's and Clark's formulas scale a medicine dose for a child?",
+     "syllabusActionIds": [
+      "ci700a4fe8"
+     ],
+     "standard2ActionIds": [
+      "ci700a4fe8"
+     ],
+     "standard1ActionIds": [
+      "ci700a4fe8"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci700a4fe8",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Calculate the required medication dosages for children and adults given age or weight, using Fried’s, Young’s and Clark’s formula as appropriate",
+       "sourceHtml": "<p>Calculate the required medication dosages for children and adults given age or weight, using Fried’s, Young’s and Clark’s formula as appropriate</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "missing",
+       "siteGap": "Missing. No lesson teaches Fried's, Young's or Clark's formula. Root rulings 3 and 4: invented, clearly labelled medicines and doses; 'your doctor or pharmacist sets real doses' on screen and in narration."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f01",
+       "text": "Substituting into a fraction formula; rounding at the end."
+      },
+      {
+       "source": "math-s11-f04",
+       "text": "Months and years (12 months in a year)."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Mass in kilograms and milligrams."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f06"
+     ],
+     "startBoundary": "f06 showed that a formula can only estimate what a body does. Medicine doses are another case where a formula gives a starting estimate and a professional decides.",
+     "stopBoundary": "Why a child's dose is scaled down from an adult dose; Fried's formula (age in months, for infants), Young's formula (age in years, for children), Clark's formula (weight in kg); choosing the formula from the information given and the age; comparing two formulas for one child and saying why they differ (age and weight are different proxies); an adult dose from a per-kilogram rate (mg per kg × mass); stating the dose with units and sensible rounding. Every medicine and dose is invented and labelled; 'your doctor or pharmacist sets real doses' on screen and in narration. Liquid volumes (mL from mg) are optional.",
+     "nextHandoff": "math-s11-f08",
+     "advancedReuseCandidates": [],
+     "recommendation": "Syllabus-only video (ruling 3); ruling 4 binds. The formula forms follow the NESA Standard reference sheet; Codex confirms them, and the age ranges for each, against the current 2024 reference sheet before narration. Pace flag: watch (three formulas plus a per-kg adult case).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-f08",
+     "playlistOrder": 8,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How does a spreadsheet apply one formula to a whole table of cases?",
+     "syllabusActionIds": [
+      "ciffbbbd58",
+      "ci2343d424"
+     ],
+     "standard2ActionIds": [
+      "ciffbbbd58",
+      "ci2343d424"
+     ],
+     "standard1ActionIds": [
+      "ciffbbbd58",
+      "ci2343d424"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ciffbbbd58",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Use a spreadsheet to perform calculations involving formulas",
+       "sourceHtml": "<p>Use a spreadsheet to perform calculations involving formulas</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci2343d424",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Apply given formulas to solve problems in a variety of contexts",
+       "sourceHtml": "<p>Apply given formulas to solve problems in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "spreadsheet-formulas-are-just",
+       "cell-references-stand-in",
+       "keep-units-and-inputs",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "83c071741dc7f915df11d2dc4da32d05f7f8652705146894de95a55bb0e1df72"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "spreadsheet-formulas-are-just",
+        "cell-references-stand-in",
+        "keep-units-and-inputs",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "83c071741dc7f915df11d2dc4da32d05f7f8652705146894de95a55bb0e1df72"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f01",
+       "text": "Substitution into a formula, with order of operations."
+      },
+      {
+       "source": "math-s11-f04",
+       "text": "Stopping distance = reaction distance + braking distance (the capstone table)."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "Reading a table with rows and columns."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f07"
+     ],
+     "startBoundary": "The strand has used one formula at a time. A spreadsheet uses one formula for many cases at once: the site's canteen order (=B2*C2+D2).",
+     "stopBoundary": "A spreadsheet as a grid of cells named by column and row; a formula starts with = and uses cell references in place of letters; * for times, / for divide, ^ for a power; reading =B2*C2+D2 as T = qc + f; filling down, where the references change row by row (=B2*C2 becomes =B3*C3); changing one input updates every result; keeping units consistent in a column; one strand capstone: a column of speeds and a filled-down stopping-distance formula, so the table shows how fast stopping distance grows. Absolute references are not taught (consistent with math-s12-a04b). Linear models in a spreadsheet are l05.",
+     "nextHandoff": "math-s11-l01",
+     "advancedReuseCandidates": [],
+     "recommendation": "Must deliver what math-s12-a04b assumes (cells, =, *, fill down with relative references). New kit part SpreadsheetGrid is needed (not yet built). Closes the Formulas and equations strand.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-f08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l01",
+     "playlistOrder": 9,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "What do the gradient and y-intercept tell us, from a graph or an equation?",
+     "syllabusActionIds": [
+      "ci94641a48",
+      "cic0a28004"
+     ],
+     "standard2ActionIds": [
+      "ci94641a48",
+      "cic0a28004"
+     ],
+     "standard1ActionIds": [
+      "ci94641a48",
+      "cic0a28004"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci94641a48",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Determine the y-intercept and gradient of a straight line given in graphical form",
+       "sourceHtml": "<div><span>Determine the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept and <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-codename=\"glo_link__shared__gradient\" data-item-id=\"e085f0ca-74f4-4dd0-b051-0c5c1354a8db\" data-item-systemname=\"GLO Link: SHARED: gradient\" data-item-type=\"link_glossary\">gradient</a> of a straight line given in graphical form</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cic0a28004",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Determine the y-intercept and gradient from the equation of a straight line",
+       "sourceHtml": "<div><span>Determine the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept and gradient from the equation of a straight line </span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+      "sectionIds": [
+       "the-key-idea-gradient",
+       "gradient-is-a-rate",
+       "use-output-change-over",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "d7934d3324181f8d09e2ba1f88528443f90d479061b79e7c40f383aabbd11abb"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+       "sectionIds": [
+        "the-key-idea-gradient",
+        "gradient-is-a-rate",
+        "use-output-change-over",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "d7934d3324181f8d09e2ba1f88528443f90d479061b79e7c40f383aabbd11abb"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-intercept-is-the",
+        "worked-examples-middot-3",
+        "common-errors-middot-3",
+        "quick-fire-practice-middot",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "c8d6872ef3873497730932a9296aa733ae5a3439e9f27e20984f9e21d5d2c8e0"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f08",
+       "text": "Tables of values produced by a formula."
+      },
+      {
+       "source": "Stage 5 (NSW Mathematics K-10)",
+       "text": "The Cartesian plane, plotting points (x, y), reading scales; gradient as rise over run and y = mx + c met in Stage 5 (recalled, not assumed fluent)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-f08"
+     ],
+     "startBoundary": "f08's spreadsheet made tables. Plot one table and the points line up: a straight line has two numbers that describe it completely.",
+     "stopBoundary": "The y-intercept as the value where the line crosses the vertical axis (the output when x = 0); the gradient as rise over run between two clear points, with its sign (up: positive, down: negative, flat: zero); steeper means a bigger rate; gradient = change in output ÷ change in input, never the reverse; gradient with units in context (dollars per week, litres per minute); reading m and c straight from y = mx + c, including y = 12 − 3x (m = −3, c = 12) and C = 12 + 5h. Writing the equation and drawing the line are l02; building a model from words is l03.",
+     "nextHandoff": "math-s11-l02",
+     "advancedReuseCandidates": [
+      "math-a11-w10",
+      "math-a11-w11"
+     ],
+     "recommendation": "Keep the site's exact numbers. Use y = mx + c (the syllabus letters), not the site's y = mx + b (MS-82). Must deliver what math-s12-a01, a08, b04 and r12 assume.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l02",
+     "playlistOrder": 10,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do we write y = mx + c and draw the line, by hand and with technology?",
+     "syllabusActionIds": [
+      "ciafd3b572",
+      "ci5ff71229"
+     ],
+     "standard2ActionIds": [
+      "ciafd3b572",
+      "ci5ff71229"
+     ],
+     "standard1ActionIds": [
+      "ciafd3b572",
+      "ci5ff71229"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ciafd3b572",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Determine the equation of a straight line of the form y = mx + c where m is the gradient and c is the y-intercept",
+       "sourceHtml": "<div><span>Determine the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-codename=\"glo_link__shared__equation\" data-item-id=\"21225257-d01a-485b-b7c2-9b9b2c805ab4\" data-item-systemname=\"GLO Link: SHARED: equation\" data-item-type=\"link_glossary\">equation</a> of a straight line of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">mx</mi><mo>+</mo><mi>c</mi></math></span><span> where </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>m</mi></math></span><span> is the gradient and </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">c </mi></math></span><span>is the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci5ff71229",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Construct a straight-line graph, with and without using graphing applications",
+       "sourceHtml": "<p>Construct a straight-line <a data-item-id=\"7c989827-7ebe-4a42-bf55-91433cc3cb55\" href=\"\">graph</a>, with and without using graphing applications</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": "Covered by hand (tables to points in linear-relationships/lesson01); no lesson uses a graphing application (MS-81). The 'with graphing applications' half is original teaching."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson01.sa.html",
+      "sectionIds": [
+       "the-key-idea-linear",
+       "ordered-pairs-connect-tables",
+       "increasing-does-not-always",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "517b64f10c3e8e7cd36941021b77d9d5eea0880e3280bd154b07b1207cd71603"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson01.sa.html",
+       "sectionIds": [
+        "the-key-idea-linear",
+        "ordered-pairs-connect-tables",
+        "increasing-does-not-always",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "517b64f10c3e8e7cd36941021b77d9d5eea0880e3280bd154b07b1207cd71603"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-intercept-is-the",
+        "worked-examples-middot-3",
+        "common-errors-middot-3",
+        "quick-fire-practice-middot",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "c8d6872ef3873497730932a9296aa733ae5a3439e9f27e20984f9e21d5d2c8e0"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48 and cic0a28004: gradient and y-intercept from a graph or an equation."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "Substituting x values to make a table."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l01"
+     ],
+     "startBoundary": "l01 read m and c from a line. Now go the other way: given m and c (or a graph, or a table), write the equation and draw the line.",
+     "stopBoundary": "Writing y = mx + c from a gradient and an intercept, from a graph (read c, count m) and from a table (c is the output at x = 0; m is the constant difference for steps of 1); checking a table is linear by equal differences for equal steps (lesson01); drawing a line by hand from a table of at least three points with a ruler, or by plotting c and stepping the gradient; drawing the same line in a graphing application and checking a point; every point on the line makes the equation true. Writing a model from words is l03; two lines crossing is math-s12-a01.",
+     "nextHandoff": "math-s11-l03",
+     "advancedReuseCandidates": [
+      "math-a11-w10",
+      "math-a11-w11"
+     ],
+     "recommendation": "The graphing-application half is original teaching (site gap). HSC Standard calculators do not graph; the app is a classroom tool. Must deliver math-s12-a01's start boundary (a line drawn from y = mx + c and a short table). Pace flag: watch.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l03",
+     "playlistOrder": 11,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How does a linear model describe a real situation, and what do its gradient and intercept mean?",
+     "syllabusActionIds": [
+      "cib2d6c0df"
+     ],
+     "standard2ActionIds": [
+      "cib2d6c0df"
+     ],
+     "standard1ActionIds": [
+      "cib2d6c0df"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cib2d6c0df",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Model linear relationships and interpret the features of those relationships in a variety of contexts, noting that the y-intercept is the vertical intercept and the gradient is the rate of change",
+       "sourceHtml": "<div><span>Model <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/a3428885-8f27-454e-901c-b4a83a4f9be8\" data-item-codename=\"glo_link__shared__linear_relationship\" data-item-id=\"a3428885-8f27-454e-901c-b4a83a4f9be8\" data-item-systemname=\"GLO Link: SHARED: linear relationship\" data-item-type=\"link_glossary\">linear relationships</a> and interpret the features of those relationships in a variety of contexts, noting that the </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi></math></span><span>-intercept is the vertical <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-codename=\"glo_link__shared__intercept\" data-item-id=\"4db15ad8-d8c4-4fb5-8972-18dc65288dd0\" data-item-systemname=\"GLO Link: SHARED: intercept\" data-item-type=\"link_glossary\">intercept</a> and the gradient is the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/e142f6d8-f0f5-4c41-9c12-11e3787d4c04\" data-item-codename=\"glo_link__shared__rate_of_change\" data-item-id=\"e142f6d8-f0f5-4c41-9c12-11e3787d4c04\" data-item-systemname=\"GLO Link: Shared: rate of change\" data-item-type=\"link_glossary\">rate of change</a></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "the-intercept-is-the",
+       "worked-examples-middot-3",
+       "common-errors-middot-3",
+       "quick-fire-practice-middot",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "c8d6872ef3873497730932a9296aa733ae5a3439e9f27e20984f9e21d5d2c8e0"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "the-intercept-is-the",
+        "worked-examples-middot-3",
+        "common-errors-middot-3",
+        "quick-fire-practice-middot",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "c8d6872ef3873497730932a9296aa733ae5a3439e9f27e20984f9e21d5d2c8e0"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson02.sa.html",
+       "sectionIds": [
+        "the-key-idea-gradient",
+        "gradient-is-a-rate",
+        "use-output-change-over",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "d7934d3324181f8d09e2ba1f88528443f90d479061b79e7c40f383aabbd11abb"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "look-for-equal-input",
+        "check-the-differences-before",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "548a35b67aa1760a54719d8f8996c3c1b8b06f1b84aeae185178f34b0642ba18"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l02",
+       "text": "ciafd3b572: writing y = mx + c."
+      },
+      {
+       "source": "math-s11-f02",
+       "text": "ci2acef85d: solving a linear equation in context."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l02"
+     ],
+     "startBoundary": "l02 wrote equations for lines. Real situations come with words, not m and c: the site's bike hire, $12 before riding plus $5 an hour.",
+     "stopBoundary": "Building a linear model from words or a table: the starting value is the vertical intercept (the amount when the input is zero), the rate is the gradient (the change for each one unit of input); define both variables with units; negative gradients as a steady fall (V = 200 − 15h); interpreting the intercept and gradient in a sentence with units; using the model to find an output (substitute) or an input (solve, f02); changing one feature (a price rise changes the gradient only). When predictions can be trusted is l04.",
+     "nextHandoff": "math-s11-l04",
+     "advancedReuseCandidates": [
+      "math-a11-w12"
+     ],
+     "recommendation": "Keep the site's exact numbers. Must deliver what math-s12-a03, a04a, i01 and i09 assume (intercept as starting value, gradient as rate, a negative gradient as a steady fall).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l04",
+     "playlistOrder": 12,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "When can we trust a prediction from a linear model?",
+     "syllabusActionIds": [
+      "ci4777471a",
+      "ci1b3cf962"
+     ],
+     "standard2ActionIds": [
+      "ci4777471a",
+      "ci1b3cf962"
+     ],
+     "standard1ActionIds": [
+      "ci4777471a",
+      "ci1b3cf962"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci4777471a",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Interpolate and extrapolate from a linear model in a practical context",
+       "sourceHtml": "<p><a data-item-id=\"1b393be2-7d6a-43e2-a2c2-90e460ac7b77\" href=\"\">Interpolate</a> and <a data-item-id=\"078bda43-5b72-4881-b52c-4216f23955ac\" href=\"\">extrapolate</a> from a <a data-item-id=\"4feb28c1-eaa0-483c-86e4-a88fe8ca3000\" href=\"\">linear model</a> in a practical context</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "missing",
+       "siteGap": "Missing. No Year 11 lesson teaches interpolation or extrapolation from a linear model (section 2 of the site corrections). Root ruling 3."
+      },
+      {
+       "id": "ci1b3cf962",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Identify and describe the limitations of a linear model in a practical context",
+       "sourceHtml": "<p>Identify and describe the limitations of a linear model in a practical context</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "partial",
+       "siteGap": "Partial. formulas-and-equations/lesson05 checks differences before assuming a linear pattern; limitations of a linear model in context are not taught. Root ruling 3 for the missing part."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "look-for-equal-input",
+       "check-the-differences-before",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "548a35b67aa1760a54719d8f8996c3c1b8b06f1b84aeae185178f34b0642ba18"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson05.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "look-for-equal-input",
+        "check-the-differences-before",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "548a35b67aa1760a54719d8f8996c3c1b8b06f1b84aeae185178f34b0642ba18"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: a linear model with its intercept and gradient in context."
+      },
+      {
+       "source": "math-s11-f02",
+       "text": "Solving a linear equation for an input."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l03"
+     ],
+     "startBoundary": "l03's models gave a cost for any number of hours. Can we trust the answer for 30 hours, or for minus 2?",
+     "stopBoundary": "A model is built from values over a range; interpolation is predicting inside that range (fairly safe); extrapolation is predicting outside it (less reliable, more so the further out, but not automatically wrong); nonsense answers (a negative amount of fuel, a cost for an impossible time) are warning signs; limitations of a linear model: it assumes the same rate for ever, so caps, new prices, running out or physical limits break it; values below zero; stating a limitation in two parts (the assumption, why it fails here); the valid input range in a sentence. Lines of best fit for data are math-s12-b04 and b07; exponential limitations are math-s12-a07.",
+     "nextHandoff": "math-s11-l05",
+     "advancedReuseCandidates": [],
+     "recommendation": "Interpolation and extrapolation are a site gap (ruling 3); limitations are partial. Use the words math-s12-b07 and a07 assume ('interpolation = between the data', 'extrapolation = beyond it', the two-part limitation). a07 uses a fare cap; do not repeat it here.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l05",
+     "playlistOrder": 13,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How does a spreadsheet build and test a linear model?",
+     "syllabusActionIds": [
+      "ci80b8ed46"
+     ],
+     "standard2ActionIds": [
+      "ci80b8ed46"
+     ],
+     "standard1ActionIds": [
+      "ci80b8ed46"
+     ],
+     "syllabusActions": [
+      {
+       "id": "ci80b8ed46",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Use a spreadsheet to model a linear relationship in a variety of contexts",
+       "sourceHtml": "<p>Use a spreadsheet to model a linear relationship in a variety of contexts</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "partial",
+       "siteGap": "Partial. Spreadsheet formulas are taught generally in formulas-and-equations/lesson06; no lesson builds a linear model in a spreadsheet. Root ruling 3 for the missing part."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "spreadsheet-formulas-are-just",
+       "cell-references-stand-in",
+       "keep-units-and-inputs",
+       "worked-examples-3-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "83c071741dc7f915df11d2dc4da32d05f7f8652705146894de95a55bb0e1df72"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/formulas-and-equations/lesson06.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "spreadsheet-formulas-are-just",
+        "cell-references-stand-in",
+        "keep-units-and-inputs",
+        "worked-examples-3-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "83c071741dc7f915df11d2dc4da32d05f7f8652705146894de95a55bb0e1df72"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f08",
+       "text": "ciffbbbd58: spreadsheet formulas, cell references and fill down."
+      },
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: a linear model's intercept and gradient."
+      },
+      {
+       "source": "math-s11-l04",
+       "text": "ci4777471a and ci1b3cf962: interpolation, extrapolation and a valid range."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l04"
+     ],
+     "startBoundary": "l04 ended with a model and its valid range. A spreadsheet can lay out every case in that range at once.",
+     "stopBoundary": "Building a linear model in a spreadsheet: an input column filled with a step, an output column with a formula such as =150+18*A2 filled down; checking the output column has a constant difference equal to the gradient; reading the intercept in the row where the input is 0; a line chart from the two columns; finding when the output first reaches a target (bracket between two rows, refine the step, round in context); changing the rate or the fixed amount in the formula and watching every row and the chart update; comparing to the algebra answer. Break-even with two columns is math-s12-a04b.",
+     "nextHandoff": "math-s11-l06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Partial site coverage (ruling 3 for the missing part). Must deliver what math-s12-a04b and i13 assume (math-s12-i13's pack calls l05 the first spreadsheet video; f08 is first). Do not teach break-even (a04b).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l06",
+     "playlistOrder": 14,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "What makes direct variation special, and how does one pair of values give k?",
+     "syllabusActionIds": [
+      "cie0224c11",
+      "ci6f88d684",
+      "cic7837e3f",
+      "ci04c5dcb2"
+     ],
+     "standard2ActionIds": [
+      "cie0224c11",
+      "ci6f88d684",
+      "cic7837e3f",
+      "ci04c5dcb2"
+     ],
+     "standard1ActionIds": [
+      "cie0224c11",
+      "ci6f88d684",
+      "cic7837e3f",
+      "ci04c5dcb2"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cie0224c11",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Recognise that a direct variation relationship of the form y = kx produces a straight-line graph",
+       "sourceHtml": "<div><span>Recognise that a <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/ec3f1def-0447-4dbc-9db9-84ec5014bd3a\" data-item-codename=\"glo_link__shared__direct_variation\" data-item-id=\"ec3f1def-0447-4dbc-9db9-84ec5014bd3a\" data-item-systemname=\"GLO Link: SHARED: direct variation\" data-item-type=\"link_glossary\">direct variation</a> relationship of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">kx</mi></math></span><span> produces a straight-line graph</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci6f88d684",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Explain that a direct variation relationship of the form y = kx is a graph that passes through the origin with gradient k being the constant of variation",
+       "sourceHtml": "<div><span>Explain that a direct variation relationship of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">kx</mi></math></span><span> is a graph that passes through the origin with gradient </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi mathvariant=\"italic\">k </mi></math></span><span>being the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/d03a202a-085d-4c03-8d30-679a56fed896\" data-item-codename=\"glo_link__mst__constant_of_variation\" data-item-id=\"d03a202a-085d-4c03-8d30-679a56fed896\" data-item-systemname=\"GLO Link: MST: constant of variation\" data-item-type=\"link_glossary\">constant of variation</a></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "cic7837e3f",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Identify and represent direct variation of the form y = kx from descriptions of situations in which one quantity varies directly with another quantity",
+       "sourceHtml": "<div><span>Identify and represent direct variation of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">kx</mi></math></span><span> from descriptions of situations in which one quantity varies directly with another quantity</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci04c5dcb2",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Evaluate k in equations of the form y = kx, given one pair of values for the variables, and use the resulting formula to find other values of the variables to solve problems in a variety of contexts",
+       "sourceHtml": "<div><span>Evaluate </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>k</mi></math></span><span> in equations of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">kx</mi></math></span><span>, given one pair of values for the <a class=\"glossary-link\" data-item-cmslink=\"https://app.kontent.ai/341419dc-8ec2-0289-7225-6db7f2d751ef/content-inventory/00000000-0000-0000-0000-000000000000/content/8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-codename=\"glo_link__shared__variable__algebra_\" data-item-id=\"8d5ddf8e-cf10-4966-9d04-4f063adf328f\" data-item-systemname=\"GLO Link: SHARED: variable (algebra)\" data-item-type=\"link_glossary\">variables</a>, and use the resulting formula to find other values of the variables to solve problems in a variety of contexts</span></div>\n\n\n\n\n\n",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "direct-variation-the-model",
+       "direct-variation-has-no",
+       "worked-examples-middot-3",
+       "common-errors-middot-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "10c21a1091b81c3b7abfafca29ee9324488313fb7d6d0ce4c11b34decf71e92f"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "direct-variation-the-model",
+        "direct-variation-has-no",
+        "worked-examples-middot-3",
+        "common-errors-middot-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "10c21a1091b81c3b7abfafca29ee9324488313fb7d6d0ce4c11b34decf71e92f"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l03",
+       "text": "cib2d6c0df: a linear model with a starting value and a rate."
+      },
+      {
+       "source": "math-s11-l01",
+       "text": "ci94641a48: gradient from a graph."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l05"
+     ],
+     "startBoundary": "Every l03 model had a starting amount. Some have none: apples at $4 a kilogram with no fixed fee (the site's hook). Zero kilograms costs zero.",
+     "stopBoundary": "Direct variation y = kx: no fixed amount, so the line passes through the origin; k is the constant of variation, the gradient and the rate (output per one unit of input); y/x = k for every point with x ≠ 0; doubling x doubles y; recognising direct variation from a description (no fee, starts at zero, 'per') and from a table (constant ratio, and y = 0 at x = 0 if that row is shown); not every straight line is direct variation (y = 5x + 12); finding k from one pair and using y = kx to find other values in both directions. Graphing and reading y = kx is l07.",
+     "nextHandoff": "math-s11-l07",
+     "advancedReuseCandidates": [
+      "math-a11-w22"
+     ],
+     "recommendation": "Keep the site's numbers but use m (not k) for kilograms (MS-01). Must deliver what math-s12-a12 assumes (y = kx is a straight line through the origin; k constant). Pace flag: watch (four points).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-l07",
+     "playlistOrder": 15,
+     "course": "Year 11 Standard 1 and Standard 2 (common course)",
+     "mainLearnerQuestion": "How do we graph y = kx and use the graph to solve problems?",
+     "syllabusActionIds": [
+      "cifb738725"
+     ],
+     "standard2ActionIds": [
+      "cifb738725"
+     ],
+     "standard1ActionIds": [
+      "cifb738725"
+     ],
+     "syllabusActions": [
+      {
+       "id": "cifb738725",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "text": "Graph and analyse equations of the form y = kx to solve problems in a variety of contexts",
+       "sourceHtml": "<div><span>Graph and analyse equations of the form </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>y</mi><mo>=</mo><mi mathvariant=\"italic\">kx</mi></math></span><span> to solve problems in a variety of contexts</span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabe84d89c",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "direct-variation-the-model",
+       "direct-variation-has-no",
+       "worked-examples-middot-3",
+       "common-errors-middot-3",
+       "revisit-your-thinking",
+       "practice-set",
+       "review-and-complete"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3"
+      ],
+      "sha256": "10c21a1091b81c3b7abfafca29ee9324488313fb7d6d0ce4c11b34decf71e92f"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/linear-relationships/lesson04.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "direct-variation-the-model",
+        "direct-variation-has-no",
+        "worked-examples-middot-3",
+        "common-errors-middot-3",
+        "revisit-your-thinking",
+        "practice-set",
+        "review-and-complete"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3"
+       ],
+       "sha256": "10c21a1091b81c3b7abfafca29ee9324488313fb7d6d0ce4c11b34decf71e92f"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-l06",
+       "text": "cie0224c11, ci6f88d684, cic7837e3f and ci04c5dcb2: y = kx, k from one pair."
+      },
+      {
+       "source": "math-s11-l02",
+       "text": "ci5ff71229: drawing a straight line by hand and with a graphing application."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l06"
+     ],
+     "startBoundary": "l06 found k from one pair. Two points fix a line, and the origin is always one of them, so one more point is enough to draw a direct variation graph.",
+     "stopBoundary": "Graphing y = kx from the origin and one calculated point (and a check point); a larger k gives a steeper line; reading values off the graph in both directions (across to the line, down to the axis), including a conversion graph (currency); comparing two direct variations on one set of axes; using the graph to answer a practical question and checking with the equation; reading k back from a graph (rise over run from the origin). Closes the Linear relationships strand.",
+     "nextHandoff": "math-s11-e01",
+     "advancedReuseCandidates": [
+      "math-a11-w22"
+     ],
+     "recommendation": "Pace flag: may run short (about 5 minutes is acceptable, as root accepted near 5,000-character videos). Exchange rates are labelled example rates that change daily (ruling 5 pattern). Final frame hands to math-s11-e01 (Earning money; another author's strand).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-l07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}

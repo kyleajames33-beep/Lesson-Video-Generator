@@ -127,3 +127,9 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 85. **Tax and wages:** use 2026-27 figures only; every site answer built on the 2024-25 tax table or below-minimum wages is recalculated, never copied (MS-73, MS-76). **e09's PAYG withholding rows** are copied by Codex from the ATO's published 2026-27 tables in the maths check; the pack's coefficient-derived values are placeholders. **Medicare levy low-income threshold:** use the threshold in force (legislated), not a proposed one; say once that thresholds change.
 86. **Super** is the employer's contribution on top of pay, never shown as a deduction from pay (MS-71, MS-72); the 12% guarantee applies from 1 July 2025.
 87. **Joins** l07 to e01 and e12 to m01 stay provisional until those designs exist; percentages rely on Stage 5 skills (m01 comes later).
+
+## Rulings on the Year 11 formulas and linear packs (19 November 2026)
+88. **Splits:** f03 into f03a (rearranging, including the unknown underneath, which Year 12 t01 and a13 need) and f03b (y = ax² + c, rejecting the negative root); f04 into f04a (speed, distance, time) and f04b (stopping distance = reaction + braking). f02 stays one video.
+89. **f05 to f07** follow ruling 4. f07's dosage formula forms and age ranges are confirmed by Codex against the NESA reference sheet before narration. NSW BAC limits and the 10 g standard drink are as checked on 19 Nov (nsw.gov.au, health.gov.au).
+90. **SpreadsheetGrid** (a coded, unbranded spreadsheet with a formula bar) is built as a shared kit part before the f08 build; f08, l05 and Year 12 a04b use it.
+91. **Notation:** y = mx + c throughout (MS-82); never k for kilograms (MS-01).
