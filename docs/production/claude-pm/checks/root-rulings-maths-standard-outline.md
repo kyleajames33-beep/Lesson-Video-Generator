@@ -136,3 +136,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 
 ## Rulings on the Year 11 l01 to l07 designs (19 November 2026)
 92. Accepted: l01's pancake answer as designed; the site's taxi fare (l02) and bike hire (l03) as labelled "example price"; l04's site link to the l03 page and the 56-character title; l05's trailer hire in place of the party bus; l07's New Zealand rate 1.10 as an example rate. **l06 uses w for mass** with the chip "w = mass in kg" (m is the gradient in y = mx + c). **The l07 to e01 join is confirmed** (ruling 87 satisfied for e01's opening). New plates (aquarium, coffee pods, hire boat, ice skates, frozen yoghurt) are painted one video early.
+
+## Rulings on the l01 to l07 learning review (19 November 2026)
+93. **Ruling 92 is applied in l06 before voicing** (w for mass in narration, on screen and on practice card 1), and **w for mass extends to l07** (practice 1). l06's second practice question uses the checked replacement Table B (0, 3), (2, 12), (4, 21), so scene 4 no longer shows its answer. **l04 takes the 56-character title** from ruling 92; l03's and l05's description lines quote the new title. **e01 drops "provisional"** on its join. All other should-fix findings are accepted as the review wrote them; optional findings are taken where they cost no new scene or plate.
