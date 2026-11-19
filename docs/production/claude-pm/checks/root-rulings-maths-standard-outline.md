@@ -133,3 +133,6 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 89. **f05 to f07** follow ruling 4. f07's dosage formula forms and age ranges are confirmed by Codex against the NESA reference sheet before narration. NSW BAC limits and the 10 g standard drink are as checked on 19 Nov (nsw.gov.au, health.gov.au).
 90. **SpreadsheetGrid** (a coded, unbranded spreadsheet with a formula bar) is built as a shared kit part before the f08 build; f08, l05 and Year 12 a04b use it.
 91. **Notation:** y = mx + c throughout (MS-82); never k for kilograms (MS-01).
+
+## Rulings on the Year 11 l01 to l07 designs (19 November 2026)
+92. Accepted: l01's pancake answer as designed; the site's taxi fare (l02) and bike hire (l03) as labelled "example price"; l04's site link to the l03 page and the 56-character title; l05's trailer hire in place of the party bus; l07's New Zealand rate 1.10 as an example rate. **l06 uses w for mass** with the chip "w = mass in kg" (m is the gradient in y = mx + c). **The l07 to e01 join is confirmed** (ruling 87 satisfied for e01's opening). New plates (aquarium, coffee pods, hire boat, ice skates, frozen yoghurt) are painted one video early.
