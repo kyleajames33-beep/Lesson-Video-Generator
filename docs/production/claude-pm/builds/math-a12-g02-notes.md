@@ -35,3 +35,14 @@ Scene 1 frames 0 to 160 (the g01 join and the layout ease), scene 3 around frame
 
 ## Playback checks for root
 Scene 1 layout ease; scene 3 area sweep with the tank rising; scene 4 family sliding to C = 4 then the cursor running the tank 5 to 6.72 L; scene 5 boat back to −4/3 m and forward to 0 while the readouts end at position 0.00 and distance 2.67; scene 6 trapezia one at a time with the running total.
+
+## Round 2 (20 Nov 2026): grade fixes
+Round 1 (root, 19 Nov): FAIL, scene 2 mostly empty; collisions in scenes 4 and 7; sparse scenes 1, 9, 10.
+- Scene 1: the four demand chips move into the question column as solid "amount?", "function?", "area?", "estimate?" cards, each replaced by its question strip on cue.
+- Scene 2: every branch of the decision tree (icon and trigger words) is on the board from the first frame, at 40 px; the model each leads to writes on at its cue. The left column (question card, chip, tank and ring) is larger.
+- Scene 4: the C dial moved under the tank and the readout strip moved right (no overlap with "volume V").
+- Scene 6: working rows at 40 and 42 px. Scene 7: the e^(−x²) inset moved down; "area = 2 + 2 = 4" sits beside "∫₀²π sin x dx = 0" under the sine inset.
+- Scenes 9 and 11: question cards at 50 and 52 px, with the tank at 360 px wide and the calculator at 290 px.
+- Scene 10: a coded graph of V = 20 + 6t − t² on [0, 5] shows V(0) = 20, the answer point (5, 25) and an amber "change: 5" bar on "Five litres", the crossed slip's cause. Scene 12: the first working row at 44 px.
+
+Grade checker (20 Nov 08:05): **PASS WITH WARNINGS, 0 failures, 1 warning.** Justified warning: scene 9's question frame is 58% bare. It holds the full question at 50 px, the tank picture, "Pause here to answer." and the countdown ring. Anything more would give away part of the answer. Root's grade-A frames to check: scene 2 at f1312 (branches before their models), scene 4 at f3937, scene 7 at f8311, scene 10 at f10061.

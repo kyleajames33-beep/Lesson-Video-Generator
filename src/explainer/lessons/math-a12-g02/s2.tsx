@@ -117,8 +117,8 @@ export const S06: React.FC = () => {
 			<HandTag x={560} y={460} text="the rate between readings is unknown" at={k.know} size={36} color={GREY} />
 			<Task x={1230} y={165} w={640} at={-30} size={36}>Estimate the volume added over the 8 minutes.</Task>
 			<BoxCard x={1230} y={318} w={640} at={-30} size={36} title="given">h = 2 min, n = 4 strips</BoxCard>
-			<Row x={1230} y={452} at={k.use} size={36} small={30} dim={prog(fr, k.thats, 12)}>(h/2)[y₀ + 2(y₁ + y₂ + y₃) + y₄]</Row>
-			<Row x={1230} y={512} at={k.thats} size={38} small={32} dim={prog(fr, k.tf, 12)}>= (2/2)[3 + 2(5 + 6 + 4) + 2]</Row>
+			<Row x={1230} y={452} at={k.use} size={40} small={30} dim={prog(fr, k.thats, 12)}>(h/2)[y₀ + 2(y₁ + y₂ + y₃) + y₄]</Row>
+			<Row x={1230} y={512} at={k.thats} size={42} small={32} dim={prog(fr, k.tf, 12)}>= (2/2)[3 + 2(5 + 6 + 4) + 2]</Row>
 			<AnswerBox x={1230} y={578} at={k.tf} size={46}>= 35 L (estimate)</AnswerBox>
 			<Hand x={1236} y={668} at={k.about} size={28} color={GREY} w={630}>reference sheet: (b − a)/(2n){'{'}f(a) + f(b) + 2[f(x₁) + ... + f(xₙ₋₁)]{'}'} = (8/8)(35)</Hand>
 			<Slip x={1230} y={780} at={k.tf + 50} strikeAt={k.tf + 64} w={640} size={32} caption="insides count twice">(2/2)(3 + 5 + 6 + 4 + 2) = 20</Slip>
@@ -167,15 +167,15 @@ export const S07: React.FC = () => {
 					<g clipPath={m.clip}><path d={fnPath(m, Math.sin, 0, 2 * Math.PI, 160)} stroke={INK} strokeWidth={5} fill="none" /></g>
 				</>}
 			</StudioPlot>
-			<Hand x={1200} y={652} at={k.alone} size={30} color={GREY}>∫₀²π sin x dx = 0</Hand>
-			<Hand x={1200} y={690} at={k.four} size={34} color={KR.ink}>area = 2 + 2 = 4</Hand>
-			<StudioPlot x={1190} y={705} width={450} height={200} window={{x: [-0.1, 1.15], y: [0, 1.2]}} xTicks={[1]} yTicks={[1]} xLabel="x" yLabel="y = e^(−x²)" at={k.third}>
+			<Hand x={1200} y={640} at={k.alone} size={30} color={GREY}>∫₀²π sin x dx = 0</Hand>
+			<Hand x={1420} y={636} at={k.four} size={34} color={KR.ink}>area = 2 + 2 = 4</Hand>
+			<StudioPlot x={1190} y={735} width={450} height={200} window={{x: [-0.1, 1.15], y: [0, 1.2]}} xTicks={[1]} yTicks={[1]} xLabel="x" yLabel="y = e^(−x²)" at={k.third}>
 				{m => <>
 					{[0, 0.25, 0.5, 0.75].map((a, i) => {const b = a + 0.25, g = (x: number) => Math.exp(-x * x), [pa, ya] = m.p(a, g(a)), [pb, yb] = m.p(b, g(b)), [, y0] = m.p(0, 0); return <path key={i} opacity={prog(fr, k.formula + i * 8, 10)} d={`M${pa},${y0} L${pa},${ya} L${pb},${yb} L${pb},${y0} Z`} fill={TRAP_FILL} stroke={TRAP_STROKE} strokeWidth={3} />;})}
 					<path d={fnPath(m, x => Math.exp(-x * x), 0, 1.1, 100)} stroke={INK} strokeWidth={5} fill="none" />
 				</>}
 			</StudioPlot>
-			<HandTag x={1640} y={772} text="no primitive in this course" at={k.noprim} size={30} color={GREY} anchor="end" />
+			<HandTag x={1640} y={800} text="no primitive in this course" at={k.noprim} size={30} color={GREY} anchor="end" />
 		</>
 	);
 };

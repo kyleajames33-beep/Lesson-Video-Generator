@@ -28,7 +28,7 @@ const Rig: React.FC<{u: number; level: number; gauge: number; chipOut?: readonly
 			</>}
 		</RateGraph>
 		<div style={{position: 'absolute', left: lerp(470, 500, u), top: lerp(840, 830, u), display: 'flex', gap: 22}}>
-			{CHIPS.map((c, i) => <span key={c} style={{opacity: 1 - prog(f, chipOut[i], 12), fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, color: GREY, background: CARD, border: `3px solid ${GREY}`, borderRadius: 16, padding: '4px 20px 6px'}}>{c}</span>)}
+			{CHIPS.map((c, i) => <span key={c} style={{opacity: (1 - u) * (1 - prog(f, chipOut[i], 12)), fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, color: GREY, background: CARD, border: `3px solid ${GREY}`, borderRadius: 16, padding: '4px 20px 6px'}}>{c}</span>)}
 		</div>
 	</>;
 };
@@ -45,6 +45,17 @@ export const S01: React.FC = () => {
 		{text: 'a table of readings', at: k.table, tag: 'an estimate', grey: true},
 	];
 	const qY = [175, 345, 515, 655];
+	const row = (q: Q, i: number, o: number, so: number) => {
+		return <div key={i} style={{position: 'absolute', left: 1200, top: qY[i], width: 670, opacity: o, transform: `translateX(${(1 - smooth(o)) * 40}px)`, display: 'flex', gap: 16, alignItems: 'flex-start'}}>
+						<div style={{flex: 'none', width: 56, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 72, lineHeight: 1, color: INK, opacity: so}}>∫</div>
+						<div style={{flex: 1}}>
+							<div style={{background: CARD, borderRadius: 16, borderLeft: `8px solid ${q.grey ? '#b5ab9b' : BROWN}`, boxShadow: '0 10px 24px rgba(60,45,20,0.10)', padding: '8px 20px 10px', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 36, lineHeight: 1.25, color: q.grey ? GREY : INK}}>
+								{q.text}{q.grey ? <span style={{fontFamily: FONT_HAND, fontSize: 32, marginLeft: 14, opacity: 1 - so}}>later in this video</span> : null}
+							</div>
+							<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: KR.ink, opacity: so, marginTop: 2, marginLeft: 8}}>{q.tag}</div>
+						</div>
+					</div>;
+	};
 	return (
 		<>
 			{fr < 1 ? <G01FinalFrame /> : <>
@@ -54,16 +65,14 @@ export const S01: React.FC = () => {
 				<HandTag x={lay(1).gx + 150} y={235} text="rate, not amount" at={k.fast} size={40} color={INK} />
 				{qs.map((q, i) => {
 					const o = prog(fr, q.at, 14), so = prog(fr, k.notSame + i * 10, 12);
+					if (o < 0.99 && u > 0.01) {
+						// The demand chip has moved into its row: a solid grey card until its question is read.
+						const ph = <div key={'p' + i} style={{position: 'absolute', left: 1272, top: qY[i] + 6, width: 598, opacity: u * (1 - o), boxSizing: 'border-box', background: CARD, border: '3px solid #b5ab9b', borderRadius: 16, padding: '8px 22px 10px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 40, color: INK}}>{CHIPS[i]}?</div>;
+						if (o < 0.01) return ph;
+						return <React.Fragment key={i}>{ph}{row(q, i, o, so)}</React.Fragment>;
+					}
 					if (o < 0.01) return null;
-					return <div key={i} style={{position: 'absolute', left: 1200, top: qY[i], width: 670, opacity: o, transform: `translateX(${(1 - smooth(o)) * 40}px)`, display: 'flex', gap: 16, alignItems: 'flex-start'}}>
-						<div style={{flex: 'none', width: 56, fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 72, lineHeight: 1, color: INK, opacity: so}}>∫</div>
-						<div style={{flex: 1}}>
-							<div style={{background: CARD, borderRadius: 16, borderLeft: `8px solid ${q.grey ? '#b5ab9b' : BROWN}`, boxShadow: '0 10px 24px rgba(60,45,20,0.10)', padding: '8px 20px 10px', fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 36, lineHeight: 1.25, color: q.grey ? GREY : INK}}>
-								{q.text}{q.grey ? <span style={{fontFamily: FONT_HAND, fontSize: 32, marginLeft: 14, opacity: 1 - so}}>later in this video</span> : null}
-							</div>
-							<div style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 38, color: KR.ink, opacity: so, marginTop: 2, marginLeft: 8}}>{q.tag}</div>
-						</div>
-					</div>;
+					return row(q, i, o, so);
 				})}
 				<Chip x={700} y={190} at={-300} out={k.rain - 30} size={48} color={KR.ink}>Which integral?</Chip>
 				<Chip x={1560} y={92} at={k.so} size={40} color={KR.ink}>Which integral?</Chip>

@@ -86,26 +86,29 @@ export const RateGraph: React.FC<{x: number; y: number; w: number; h: number; wi
 );
 
 // ---------- the decision tree ----------
-export type ModelRow = {text: React.ReactNode; sub?: React.ReactNode; subAt?: number; icon: React.ReactNode; at: number; litAt?: number; glow?: number};
-/** The decision tree large: a question card, then one row per branch (icon, words, formula), lit amber at litAt. */
-export const ModelRows: React.FC<{x: number; y: number; w: number; question: string; rows: readonly ModelRow[]; size?: number; rowH?: number; at?: number; out?: number}> = ({x, y, w, question, rows, size = 38, rowH = 150, at = -30, out}) => {
+export type ModelRow = {label: React.ReactNode; text: React.ReactNode; sub?: React.ReactNode; subAt?: number; icon: React.ReactNode; at: number; litAt?: number; glow?: number};
+/**
+ * The decision tree large: a question card, then one row per branch. Every branch (icon and its trigger words) is
+ * on the board, solid, from the first frame; the model it leads to writes on at `at`, the detail line at `subAt`,
+ * and the branch lights amber at `litAt`.
+ */
+export const ModelRows: React.FC<{x: number; y: number; w: number; question: string; rows: readonly ModelRow[]; size?: number; rowH?: number; at?: number; out?: number}> = ({x, y, w, question, rows, size = 40, rowH = 166, at = -30, out}) => {
 	const f = useCurrentFrame();
 	const o = vis(f, at, out, 14);
 	if (o <= 0.001) return null;
 	return <div style={{position: 'absolute', left: x, top: y, width: w, opacity: o}}>
-		<div style={{display: 'inline-block', background: CARD, borderRadius: 16, boxShadow: CARD_SHADOW, border: `3px solid ${rows.some(r => r.litAt !== undefined && f >= r.litAt) ? KR.stroke : 'rgba(60,45,20,0.15)'}`, padding: '8px 30px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 44, color: INK}}>{question}</div>
-		<svg width={60} height={rows.length * rowH + 40} style={{position: 'absolute', left: 24, top: 70, overflow: 'visible'}}>
-			{rows.map((r, j) => {const ro = prog(f, r.at, 12), lit = r.litAt !== undefined ? prog(f, r.litAt, 10) : 0; return <path key={j} d={`M6,0 V${30 + j * rowH + rowH / 2 - 10} H56`} fill="none" stroke={lit > 0.5 ? KR.stroke : '#c9bfae'} strokeWidth={lit > 0.5 ? 6 : 4} opacity={ro} />;})}
+		<div style={{display: 'inline-block', background: CARD, borderRadius: 16, boxShadow: CARD_SHADOW, border: `3px solid ${rows.some(r => r.litAt !== undefined && f >= r.litAt) ? KR.stroke : 'rgba(60,45,20,0.15)'}`, padding: '6px 30px', fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 48, color: INK}}>{question}</div>
+		<svg width={60} height={rows.length * rowH + 40} style={{position: 'absolute', left: 24, top: 74, overflow: 'visible'}}>
+			{rows.map((r, j) => {const lit = r.litAt !== undefined ? prog(f, r.litAt, 10) : 0; return <path key={j} d={`M6,0 V${26 + j * rowH + rowH / 2 - 10} H56`} fill="none" stroke={lit > 0.5 ? KR.stroke : '#b5ab9b'} strokeWidth={lit > 0.5 ? 6 : 4} />;})}
 		</svg>
 		{rows.map((r, j) => {
 			const ro = prog(f, r.at, 12), lit = r.litAt !== undefined ? prog(f, r.litAt, 10) : 0, gl = r.glow ?? 0;
-			if (ro <= 0.001) return null;
-			return <div key={j} style={{position: 'absolute', left: 84, top: 100 + j * rowH, width: w - 84, height: rowH - 18, boxSizing: 'border-box', opacity: ro, transform: `translateX(${(1 - smooth(ro)) * -20}px)`, display: 'flex', alignItems: 'center', gap: 24, padding: '6px 22px', borderRadius: 22,
+			return <div key={j} style={{position: 'absolute', left: 84, top: 96 + j * rowH, width: w - 84, height: rowH - 16, boxSizing: 'border-box', display: 'flex', alignItems: 'center', gap: 26, padding: '6px 24px', borderRadius: 22,
 				background: lit > 0 ? `rgba(248,232,200,${0.35 + 0.65 * lit})` : gl > 0.01 ? `rgba(248,232,200,${0.35 * gl})` : CARD, border: `3px solid ${lit > 0.5 ? KR.stroke : gl > 0.01 ? 'rgba(209,143,31,0.55)' : 'rgba(60,45,20,0.16)'}`, boxShadow: CARD_SHADOW}}>
-				<div style={{flex: 'none', width: 150, height: rowH - 40, position: 'relative'}}>{r.icon}</div>
-				<div style={{fontFamily: FONT_DISPLAY, lineHeight: 1.22}}>
-					<div style={{fontWeight: 800, fontSize: size, color: lit > 0.5 ? KR.ink : INK}}>{r.text}</div>
-					{r.sub ? <div style={{fontWeight: 700, fontSize: size - 6, color: INK, opacity: r.subAt !== undefined ? prog(f, r.subAt, 12) : 1}}>{r.sub}</div> : null}
+				<div style={{flex: 'none', width: 170, height: 120, position: 'relative', transform: 'scale(1.12)', transformOrigin: 'left center'}}>{r.icon}</div>
+				<div style={{fontFamily: FONT_DISPLAY, lineHeight: 1.2}}>
+					<div style={{fontWeight: 800, fontSize: size, color: lit > 0.5 ? KR.ink : INK}}>{r.label}<span style={{opacity: ro, color: lit > 0.5 ? KR.ink : INK}}> {r.text}</span></div>
+					{r.sub ? <div style={{fontWeight: 700, fontSize: size - 6, color: INK, opacity: r.subAt !== undefined ? prog(f, r.subAt, 12) : ro}}>{r.sub}</div> : null}
 				</div>
 			</div>;
 		})}

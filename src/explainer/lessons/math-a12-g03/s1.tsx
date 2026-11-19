@@ -72,16 +72,16 @@ export const S02: React.FC = () => {
 	return (
 		<>
 			<SceneHeading text="Finance: which words, which model?" at={4} size={44} />
-			<FrameSvg><SvgPlate plate={DESK} x={30} y={190} w={540} /></FrameSvg>
-			<div style={{opacity: prog(fr, k.which, 12)}}><QCard x={40} y={520} w={520} size={38} lit={fr < k.its}>The buyer <UL at={k.which + 20}>can afford $2,800 a month</UL>.</QCard></div>
-			{fr >= k.seconds - 12 ? <FrameSvg><Countdown start={k.seconds} end={k.seconds + 90} x={500} y={710} r={44} /></FrameSvg> : null}
-			<Chip x={40} y={680} at={k.its} size={34} color={KR.ink}>equal repayments: loan</Chip>
-			<Hand x={44} y={800} at={k.period} size={34} color={GREY} w={520}>r and n per period (month, quarter, year)</Hand>
-			<ModelRows x={620} y={170} w={1250} question="Finance?" size={34} rowH={154} rows={[
-				{at: k.same, icon: <IconLine />, text: 'same amount each period → arithmetic', sub: 'aₙ = a + (n − 1)d: a straight line', subAt: k.same + 70},
-				{at: k.pct, icon: <IconBend />, text: 'same percentage of the current amount → geometric', sub: 'multiply by (1 + r) each period', subAt: k.pct + 100},
-				{at: k.dep, icon: <IconAnnuity />, text: 'equal deposits, compound interest → annuity', sub: <>FV = <span style={{color: DEP.ink}}>M</span>[(1 + r)ⁿ − 1]/r</>, subAt: k.fv},
-				{at: k.loan, litAt: k.its, icon: <IconLoan />, text: 'equal repayments on a loan → reducing balance', sub: <>Aₙ = P(1 + r)ⁿ − <span style={{color: REP.ink}}>M</span>[(1 + r)ⁿ − 1]/r; repaid when Aₙ = 0</>, subAt: k.zero},
+			<FrameSvg><SvgPlate plate={DESK} x={20} y={180} w={570} /></FrameSvg>
+			<div style={{opacity: prog(fr, k.which, 12)}}><QCard x={30} y={500} w={560} size={40} lit={fr < k.its}>The buyer <UL at={k.which + 20}>can afford $2,800 a month</UL>.</QCard></div>
+			{fr >= k.seconds - 12 ? <FrameSvg><Countdown start={k.seconds} end={k.seconds + 90} x={520} y={720} r={50} /></FrameSvg> : null}
+			<Chip x={30} y={680} at={k.its} size={36} color={KR.ink}>equal repayments: loan</Chip>
+			<Hand x={34} y={790} at={k.period} size={38} color={INK} w={540}>r and n per period (month, quarter, year)</Hand>
+			<ModelRows x={620} y={160} w={1250} question="Finance?" size={38} rowH={166} rows={[
+				{at: k.same, icon: <IconLine />, label: 'same amount each period', text: '→ arithmetic', sub: 'aₙ = a + (n − 1)d: a straight line', subAt: k.same + 70},
+				{at: k.pct, icon: <IconBend />, label: 'same percentage of the current amount', text: '→ geometric', sub: 'multiply by (1 + r) each period', subAt: k.pct + 100},
+				{at: k.dep, icon: <IconAnnuity />, label: 'equal deposits, compound interest', text: '→ annuity', sub: <>FV = <span style={{color: DEP.ink}}>M</span>[(1 + r)ⁿ − 1]/r</>, subAt: k.fv},
+				{at: k.loan, litAt: k.its, icon: <IconLoan />, label: 'equal repayments on a loan', text: '→ reducing balance', sub: <>Aₙ = P(1 + r)ⁿ − <span style={{color: REP.ink}}>M</span>[(1 + r)ⁿ − 1]/r; repaid when Aₙ = 0</>, subAt: k.zero},
 			]} />
 		</>
 	);
@@ -104,7 +104,7 @@ export const S03: React.FC = () => {
 				{label: 'P borrowed', value: P, format: v => money(v), role: 'gradient'},
 				{label: 'balance after 300 months', value: A300, format: v => money(v), unit: A300 > 0.005 ? 'owing' : 'in credit'},
 			]} />
-			<ParameterSlider x={40} y={640} width={350} symbol="P" role="gradient" value={P} min={430000} max={540000} ticks={[{value: 450000, label: '450k'}, {value: 500000, label: '500k'}]} format={v => `${Math.round(v / 1000)}k`} at={-300} />
+			<ParameterSlider x={430} y={790} width={240} symbol="P" role="gradient" value={P} min={430000} max={540000} ticks={[{value: 450000, label: '450k'}, {value: 500000, label: '500k'}]} format={v => `${Math.round(v / 1000)}k`} at={-300} />
 			<StudioPlot x={430} y={170} width={640} height={560} window={{x: [-10, 315], y: [-30000, 560000]}} xTicks={[100, 200, 300]} yTicks={[{value: 100000, label: '$100k'}, {value: 300000, label: '$300k'}, {value: 500000, label: '$500k'}]} xLabel="month n" yLabel="balance" at={-300}>
 				{m => {
 					let d = '', end = 300;
@@ -124,13 +124,13 @@ export const S03: React.FC = () => {
 			<BoxCard x={RC} y={322} w={RW} at={-30} size={34} title="given"><UL at={k.buyer + 14}>can afford</UL> <span style={{color: REP.ink}}>M = $2,800</span> per month<br />4.8% p.a., compounded monthly, 25 years</BoxCard>
 			<Hand x={RC + 300} y={332} at={k.unknown} size={32} color={UNK.ink}>can afford: M given, P unknown</Hand>
 			<Row x={RC} y={480} at={k.hundred} size={44} small={30} dim={prog(fr, k.move, 12)}>r = 0.048 ÷ 12 = 0.004, n = 300</Row>
-			<Row x={RC} y={540} at={k.zero} size={38} small={30} dim={prog(fr, k.move, 12)}>{'A₃₀₀ = '}<span style={{color: UNK.ink, outline: fr >= k.unknown ? `3px solid ${UNK.stroke}` : undefined, borderRadius: 8}}>P</span>{'(1.004)³⁰⁰\n     − 2800[(1.004)³⁰⁰ − 1]/0.004 = 0'}</Row>
-			<Row x={RC} y={645} at={k.move} size={38} small={30} dim={prog(fr, k.nine, 12)}>{'P = 2800[(1.004)³⁰⁰ − 1]\n     ÷ [0.004 × (1.004)³⁰⁰]'}</Row>
+			<Row x={RC} y={540} at={k.zero} size={42} small={30} dim={prog(fr, k.move, 12)}>{'A₃₀₀ = '}<span style={{color: UNK.ink, outline: fr >= k.unknown ? `3px solid ${UNK.stroke}` : undefined, borderRadius: 8}}>P</span>{'(1.004)³⁰⁰\n     − 2800[(1.004)³⁰⁰ − 1]/0.004 = 0'}</Row>
+			<Row x={RC} y={645} at={k.move} size={42} small={30} dim={prog(fr, k.nine, 12)}>{'P = 2800[(1.004)³⁰⁰ − 1]\n     ÷ [0.004 × (1.004)³⁰⁰]'}</Row>
 			<Hand x={RC + 510} y={488} at={k.move + 20} size={28} color={GREY}>(1.004)³⁰⁰ ≈ {G300.toFixed(4)}</Hand>
 			<Row x={RC} y={752} at={k.nine} out={k.round} size={44}>P ≈ $488,658.79</Row>
-			<AnswerBox x={RC} y={748} at={k.round} size={38}>maximum: $488,658.78 (rounded down)</AnswerBox>
+			<AnswerBox x={RC} y={752} at={k.round} size={40}>maximum: $488,658.78 (rounded down)</AnswerBox>
 			<Hand x={RC + 6} y={845} at={k.sure} size={28} color={GREY}>another form you may see: P = M[1 − (1 + r)^(−n)]/r</Hand>
-			<Slip x={40} y={790} at={k.mult} strikeAt={k.total} w={600} size={32} caption="that's the total repaid">P = 2,800 × 300 = $840,000</Slip>
+			<Slip x={20} y={640} at={k.mult} strikeAt={k.total} w={400} size={28} caption="that's the total repaid">P = 2,800 × 300 = $840,000</Slip>
 		</>
 	);
 };

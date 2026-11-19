@@ -36,3 +36,13 @@ Scene 1 frames 300 to 1300 (layout ease, the compact strips against the readout 
 
 ## Playback checks for root
 Scene 1 jars rising with the dots and the amber gap bars; scene 3 P dial with the balance curve ending owing, early, then on zero at month 300; scene 5 block dimming, bell drawing, tails filling then one tail; scene 6 sectors and bars growing to fill the circle and reach 1, then the triangle area reaching 1.00.
+
+## Round 2 (20 Nov 2026): grade fixes
+Round 1 (root, 19 Nov): FAIL, scene 2 mostly empty; "530k" and "489k" collide with "100" (scene 3); sparse scenes 4 and 11; question frames in scenes 8 and 10 65% bare.
+- Scenes 2 and 4: every branch of the finance and probability trees (icon and trigger words) is on the board from the first frame, at 38 px; the model each leads to writes on at its cue. The desk and the question strip in the left column are larger.
+- Scene 3: the P dial moved under the graph (clear of the month ticks), the slip moved to the left column under the readout, and the working rows are at 42 px.
+- Scene 6: working rows at 44 px.
+- Scenes 8 and 10: question cards at 48 px; the statement plate is 500 px tall and the chip bag 340 px wide.
+- Scene 11: the bell plot is larger (880 × 560) and s08's chip bag sits beside the working.
+
+Grade checker (20 Nov 08:15): **PASS WITH WARNINGS, 0 failures, 2 warnings.** Justified warnings: the question frames in scenes 8 and 10 are 52% bare. Each holds the full question at 48 px, its picture, "Pause here to answer." and the countdown ring, and nothing answer-bearing may be added. Root's grade-A frames to check: scene 2 at f1349, scene 3 at f2860 to f4300 (dial, readout, rows, answer at y 752), scene 4, scene 11.

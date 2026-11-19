@@ -16,18 +16,18 @@ export const S04: React.FC = () => {
 	return (
 		<>
 			<SceneHeading text="Probability: which words, which model?" at={4} size={44} />
-			<FrameSvg><SvgPlate plate={DESK} x={30} y={190} w={540} /></FrameSvg>
-			<div style={{opacity: prog(fr, k.test, 12)}}><QCard x={40} y={500} w={530} size={34} lit={fr >= k.seconds}>How likely is a delivery to take more than 58 minutes?</QCard></div>
+			<FrameSvg><SvgPlate plate={DESK} x={20} y={180} w={570} /></FrameSvg>
+			<div style={{opacity: prog(fr, k.test, 12)}}><QCard x={30} y={490} w={560} size={38} lit={fr >= k.seconds}>How likely is a delivery to take more than 58 minutes?</QCard></div>
 			<div style={{opacity: prog(fr, k.test + 6, 14)}}><FrameSvg><SvgPlate plate={VAN} x={60} y={650} w={300} /></FrameSvg></div>
 			{fr >= k.seconds - 12 ? <FrameSvg><Countdown start={k.seconds} end={k.seconds + 90} x={490} y={710} r={44} /></FrameSvg> : null}
 			<Chip x={390} y={760} at={k.cant} size={44} color={GREY}>?</Chip>
 			<DashSlot x={40} y={830} w={250} at={k.means}>equally likely?</DashSlot>
 			<DashSlot x={310} y={830} w={250} at={k.means + 8}>normal?</DashSlot>
-			<ModelRows x={620} y={170} w={1250} question="Probability?" size={34} rowH={154} rows={[
-				{at: k.lists, icon: <IconBars />, text: 'a list of values and probabilities → discrete', sub: 'ΣP(x) = 1', subAt: k.one},
-				{at: k.density, icon: <IconDensity />, text: 'a density f(x) → probabilities are areas', sub: 'total area 1', subAt: k.area},
-				{at: k.unif, icon: <IconFlat />, text: 'equal-width parts equally likely → uniform', sub: 'flat: f(x) = 1/(b − a) on [a, b]', subAt: k.flat, glow},
-				{at: k.normal, icon: <IconBell />, text: 'normally distributed, mean μ, sd σ → normal', sub: 'X ∼ N(μ, σ²): 68, 95, 99.7% or z-scores', subAt: k.probs, glow},
+			<ModelRows x={620} y={160} w={1250} question="Probability?" size={38} rowH={166} rows={[
+				{at: k.lists, icon: <IconBars />, label: 'a list of values and probabilities', text: '→ discrete', sub: 'ΣP(x) = 1', subAt: k.one},
+				{at: k.density, icon: <IconDensity />, label: 'a density f(x)', text: '→ probabilities are areas', sub: 'total area 1', subAt: k.area},
+				{at: k.unif, icon: <IconFlat />, label: 'equal-width parts equally likely', text: '→ uniform', sub: 'flat: f(x) = 1/(b − a) on [a, b]', subAt: k.flat, glow},
+				{at: k.normal, icon: <IconBell />, label: 'normally distributed, mean μ, sd σ', text: '→ normal', sub: 'X ∼ N(μ, σ²): 68, 95, 99.7% or z-scores', subAt: k.probs, glow},
 			]} />
 		</>
 	);
@@ -122,7 +122,7 @@ export const S06: React.FC = () => {
 				<text x={BX + 395} y={BY + 38} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 28, fill: INK}}>sum</text>
 				<text x={BX + 395} y={BY - 10 * kL * U - 12} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: kL > 0.0995 ? '#287347' : DATA.ink}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{`10k = ${(10 * kL).toFixed(2)}`}</text>
 			</FrameSvg>
-			<Row x={50} y={700} at={k.add} size={40} small={32} dim={prog(fr, k.tenth, 12)}>k + 2k + 3k + 4k = 10k = 1</Row>
+			<Row x={50} y={700} at={k.add} size={44} small={32} dim={prog(fr, k.tenth, 12)}>k + 2k + 3k + 4k = 10k = 1</Row>
 			<AnswerBox x={50} y={762} at={k.tenth} size={42}>k = 1/10</AnswerBox>
 			<Hand x={330} y={774} at={k.tenth + 20} size={30} color={GREY}>P(X = 4) = 2/5</Hand>
 			<Cookie cx={1120} cy={440} w={250} rim={o(k.cookieD) * (1 - o(k.cookieD + 50))} at={-300} />
@@ -135,7 +135,7 @@ export const S06: React.FC = () => {
 					<text x={m.p(0.1, 0)[0]} y={m.p(0, 0.55)[1]} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: kD > 0.1245 ? '#287347' : PAREA.ink}} stroke={CARD} strokeWidth={7} paintOrder="stroke">{`area = 8k = ${(8 * kD).toFixed(2)}`}</text>
 				</>}
 			</StudioPlot>
-			<Row x={990} y={700} at={k.triangle} size={40} small={32} dim={prog(fr, k.eighth, 12)}>½ × 4 × 4k = 8k = 1</Row>
+			<Row x={990} y={700} at={k.triangle} size={44} small={32} dim={prog(fr, k.eighth, 12)}>½ × 4 × 4k = 8k = 1</Row>
 			<Hand x={1420} y={710} at={k.triangle + 30} size={28} color={GREY}>check: ∫₀⁴ kx dx = 8k</Hand>
 			<AnswerBox x={990} y={762} at={k.eighth} size={42}>k = 1/8</AnswerBox>
 			<Hand x={1250} y={774} at={k.eighth + 20} size={30} color={GREY}>P(X &gt; 3) = 7/16</Hand>

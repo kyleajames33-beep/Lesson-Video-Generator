@@ -13,10 +13,10 @@ import {AID_LINES, G02Card} from './s2';
 // ---------- 9. attempt 1 ----------
 const Q1 = 'A tank holds 20 L of water at t = 0. Its volume V litres changes at the rate dV/dt = 6 − 2t litres per minute. Find the volume when t = 5.';
 const TankPic: React.FC<{level?: number}> = ({level = 0}) => (
-	<div style={{position: 'relative', width: 300, height: tankH(260) + 10}}><Tank x={20} y={0} w={260} level={level} max={40} water={level > 0 ? 1 : 0} /></div>
+	<div style={{position: 'relative', width: 380, height: tankH(360) + 10}}><Tank x={10} y={0} w={360} level={level} max={40} water={level > 0 ? 1 : 0} /></div>
 );
 export const S09: React.FC = () => (
-	<QuestionCard at={0} size={40} w={1480} y={200} hold={{...hold('scene-09'), ringFrom: K9.pause}} pauseAt={K9.pause} picture={{node: <TankPic />, w: 300}}><div>{Q1}</div></QuestionCard>
+	<QuestionCard at={0} size={50} w={1500} y={190} hold={{...hold('scene-09'), ringFrom: K9.pause}} pauseAt={K9.pause} picture={{node: <TankPic />, w: 380}}><div>{Q1}</div></QuestionCard>
 );
 
 // ---------- 10. feedback 1 ----------
@@ -32,7 +32,18 @@ export const S10: React.FC = () => {
 			<Row x={96} y={500} at={k.twenty} size={50} small={34} dim={prog(fr, k.litres, 12)}>V(0) = 20, so <Vc>C = 20</Vc></Row>
 			<AnswerBox x={96} y={580} at={k.litres} size={50}>V(5) = 30 − 25 + 20 = 25 L</AnswerBox>
 			<div style={{position: 'absolute', left: 96, top: 700}}><Slip x={0} y={0} w={760} at={k.five} strikeAt={k.volume} size={44} caption="∫₀⁵ (6 − 2t) dt = 5 is the change">5 L</Slip></div>
-			<Tank x={1360} y={380} w={340} level={fr >= k.litres ? 25 : 20} max={40} gauge={{text: fr >= k.litres ? 'V(5) = 25 L' : 'V(0) = 20 L', o: prog(fr, k.vol + 10, 12), color: fr >= k.litres ? GOOD.ink : undefined}} />
+			<StudioPlot x={900} y={300} width={590} height={540} window={{x: [-0.4, 5.6], y: [0, 33]}} xTicks={[1, 2, 3, 4, 5]} yTicks={[10, 20, 30]} xLabel="t (min)" yLabel="V (L)" at={k.v}>
+				{m => {const V = (t: number) => 20 + 6 * t - t * t; const [x0, y20] = m.p(0, 20), [x5, y25] = m.p(5, 25), [, y20b] = m.p(5, 20); const ch = prog(fr, k.five, 12); return <>
+					<line x1={x0} x2={x5 + 20} y1={y20} y2={y20} stroke={GREY} strokeWidth={3} strokeDasharray="10 8" />
+					<path d={fnPath(m, V, 0, 5, 120)} stroke={INK} strokeWidth={7} fill="none" />
+					<circle cx={x0} cy={y20} r={13} fill={INK} stroke={CARD} strokeWidth={4} opacity={prog(fr, k.twenty, 10)} />
+					<text x={x0 + 20} y={y20 + 40} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 32, fill: INK}} opacity={prog(fr, k.twenty, 10)}>V(0) = 20</text>
+					<circle cx={x5} cy={y25} r={14} fill={GOOD.stroke} stroke={CARD} strokeWidth={4} opacity={prog(fr, k.litres, 10)} />
+					<text x={x5 - 18} y={y25 - 22} textAnchor="end" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: GOOD.ink}} stroke={CARD} strokeWidth={7} paintOrder="stroke" opacity={prog(fr, k.litres, 10)}>(5, 25)</text>
+					{ch > 0.01 ? <g opacity={ch}><line x1={x5 + 12} x2={x5 + 12} y1={y20b} y2={y25} stroke={KR.stroke} strokeWidth={8} strokeLinecap="round" /><text x={x5 - 12} y={(y20b + y25) / 2 + 52} textAnchor="end" style={{fontFamily: FONT_HAND, fontWeight: 700, fontSize: 36, fill: KR.ink}} stroke={CARD} strokeWidth={7} paintOrder="stroke">change: 5</text></g> : null}
+				</>;}}
+			</StudioPlot>
+			<Tank x={1520} y={360} w={330} level={fr >= k.litres ? 25 : 20} max={40} gauge={{text: fr >= k.litres ? 'V(5) = 25 L' : 'V(0) = 20 L', o: prog(fr, k.vol + 10, 12), color: fr >= k.litres ? GOOD.ink : undefined}} />
 		</>
 	);
 };
@@ -40,11 +51,11 @@ export const S10: React.FC = () => {
 // ---------- 11. attempt 2 ----------
 const Q2 = 'Find the exact area of the region bounded by the curve y = 2x/(x² + 1), the x-axis and the lines x = −1 and x = 2.';
 const CalcPic: React.FC = () => {
-	const w = 210, h = (w * (CALC.box[3] - CALC.box[1])) / (CALC.box[2] - CALC.box[0]);
-	return <div style={{position: 'relative', width: 260, height: h}}><svg width={w} height={h} style={{position: 'absolute', left: 25, top: 0, overflow: 'visible'}}><SvgPlate plate={CALC} x={0} y={0} w={w} /></svg></div>;
+	const w = 290, h = (w * (CALC.box[3] - CALC.box[1])) / (CALC.box[2] - CALC.box[0]);
+	return <div style={{position: 'relative', width: 340, height: h}}><svg width={w} height={h} style={{position: 'absolute', left: 25, top: 0, overflow: 'visible'}}><SvgPlate plate={CALC} x={0} y={0} w={w} /></svg></div>;
 };
 export const S11: React.FC = () => (
-	<QuestionCard at={0} size={42} w={1480} y={210} heading="Last one" hold={{...hold('scene-11'), ringFrom: K11.pause}} pauseAt={K11.pause} picture={{node: <CalcPic />, w: 260}}><div>{Q2}</div></QuestionCard>
+	<QuestionCard at={0} size={52} w={1500} y={190} heading="Last one" hold={{...hold('scene-11'), ringFrom: K11.pause}} pauseAt={K11.pause} picture={{node: <CalcPic />, w: 340}}><div>{Q2}</div></QuestionCard>
 );
 
 // ---------- 12. feedback 2 ----------
@@ -58,7 +69,7 @@ export const S12: React.FC = () => {
 			<SceneHeading text="Check your working" at={2} size={44} />
 			<QStrip y={150} size={32} parts={['Find the exact ', {u: 'area', at: k.top}, ' of the region bounded by the curve y = 2x/(x² + 1), the x-axis and the lines ', {u: 'x = −1 and x = 2', at: k.below}, '.']} />
 			<GivensStrip x={96} y={290} size={36} items={[{content: 'y = 2x/(x² + 1)', at: k.top + 6}, {content: 'x = −1 to x = 2', at: k.top + 14}, {content: 'area', at: k.top + 22}]} />
-			<Row x={96} y={380} at={k.prim} size={40} small={32} dim={prog(fr, k.left, 12)}>{'d/dx (x² + 1) = '}<Dc>2x</Dc>{', so\n∫ '}<Dc>2x</Dc>{'/(x² + 1) dx = ln(x² + 1) + C'}</Row>
+			<Row x={96} y={380} at={k.prim} size={44} small={32} dim={prog(fr, k.left, 12)}>{'d/dx (x² + 1) = '}<Dc>2x</Dc>{', so\n∫ '}<Dc>2x</Dc>{'/(x² + 1) dx = ln(x² + 1) + C'}</Row>
 			<Hand x={100} y={490} at={k.prim + 70} size={32} color={GREY}>x² + 1 &gt; 0, so no modulus</Hand>
 			<Row x={96} y={560} at={k.left} size={46} small={34} dim={prog(fr, k.ten, 12)}>∫₋₁⁰ = ln 1 − ln 2 = −ln 2</Row>
 			<Row x={96} y={630} at={k.five} size={46} small={34} dim={prog(fr, k.ten, 12)}>∫₀² = ln 5 − ln 1 = ln 5</Row>

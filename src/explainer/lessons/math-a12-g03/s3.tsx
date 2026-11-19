@@ -12,9 +12,9 @@ import {G03Card} from './s2';
 
 // ---------- 8. attempt 1 ----------
 const Q1 = '$2,000 is deposited into a new account (starting at $0) at the end of each year. The account earns 5% p.a. interest, compounded annually. Find the value of the account immediately after the 10th deposit.';
-const StatementPic: React.FC<{panel?: React.ReactNode}> = ({panel}) => <div style={{position: 'relative', width: superW(340) + 20, height: 360}}><SuperSheet x={10} y={0} h={340} at={-300} header="Account statement" panel={panel} /></div>;
+const StatementPic: React.FC<{panel?: React.ReactNode}> = ({panel}) => <div style={{position: 'relative', width: superW(500) + 20, height: 520}}><SuperSheet x={10} y={0} h={500} at={-300} header="Account statement" panel={panel} /></div>;
 export const S08: React.FC = () => (
-	<QuestionCard at={0} size={40} w={1480} y={190} hold={{...hold('scene-08'), ringFrom: K8.pause}} pauseAt={K8.pause} picture={{node: <StatementPic />, w: superW(340) + 20}}><div>{Q1}</div></QuestionCard>
+	<QuestionCard at={0} size={48} w={1500} y={180} hold={{...hold('scene-08'), ringFrom: K8.pause}} pauseAt={K8.pause} picture={{node: <StatementPic />, w: superW(500) + 20}}><div>{Q1}</div></QuestionCard>
 );
 
 // ---------- 9. feedback 1 ----------
@@ -57,11 +57,11 @@ export const S09: React.FC = () => {
 // ---------- 10. attempt 2 ----------
 const Q2 = 'The masses of bags of chips filled by a machine are normally distributed with mean 500 g and standard deviation 5 g. Use the empirical rule to estimate the percentage of bags with mass less than 490 g.';
 const BagPic: React.FC = () => {
-	const w = 230, h = plateHeight(CHIP_BAG, w);
+	const w = 340, h = plateHeight(CHIP_BAG, w);
 	return <div style={{position: 'relative', width: w + 20, height: h}}><svg width={w} height={h} style={{position: 'absolute', left: 10, top: 0, overflow: 'visible'}}><SvgPlate plate={CHIP_BAG} x={0} y={0} w={w} /></svg></div>;
 };
 export const S10: React.FC = () => (
-	<QuestionCard at={0} size={40} w={1480} y={190} heading="Last one" hold={{...hold('scene-10'), ringFrom: K10.pause}} pauseAt={K10.pause} picture={{node: <BagPic />, w: 250}}><div>{Q2}</div></QuestionCard>
+	<QuestionCard at={0} size={48} w={1500} y={180} heading="Last one" hold={{...hold('scene-10'), ringFrom: K10.pause}} pauseAt={K10.pause} picture={{node: <BagPic />, w: 360}}><div>{Q2}</div></QuestionCard>
 );
 
 // ---------- 11. feedback 2 ----------
@@ -77,10 +77,11 @@ export const S11: React.FC = () => {
 			<QStrip y={150} size={30} parts={['The masses of bags of chips filled by a machine are ', {u: 'normally distributed', at: k.four}, ' with mean 500 g and standard deviation 5 g. Use the empirical rule to estimate the percentage of bags with ', {u: 'mass less than 490 g', at: k.only}, '.']} />
 			<GivensStrip x={96} y={310} size={36} items={[{content: 'μ = 500 g', at: k.four + 6}, {content: 'σ = 5 g', at: k.four + 14}, {content: 'under 490 g', at: k.four + 22}]} />
 			<Row x={96} y={410} at={k.dev} size={50} small={36} dim={prog(fr, k.cent, 12)}>z = (490 − 500)/5 = −2</Row>
-			<Row x={96} y={485} at={k.about} size={42} small={34} dim={prog(fr, k.cent, 12)}>within 2σ: about 95%; outside: about 5%</Row>
+			<Row x={96} y={485} at={k.about} size={44} small={34} dim={prog(fr, k.cent, 12)}>within 2σ: about 95%; outside: about 5%</Row>
 			<AnswerBox x={96} y={570} at={k.cent} size={50}>about 2.5%</AnswerBox>
-			<div style={{position: 'absolute', left: 96, top: 690}}><Slip x={0} y={0} w={620} at={k.five} strikeAt={k.well} size={44} caption="both tails">5%</Slip></div>
-			<StudioPlot x={1100} y={330} width={770} height={430} window={{x: [481, 519], y: [0, 0.092]}} xTicks={[490, 500, 510]} yTicks={[]} xLabel="mass (g)" yLabel="" grid={false} at={k.four}>
+			<div style={{position: 'absolute', left: 96, top: 690}}><Slip x={0} y={0} w={560} at={k.five} strikeAt={k.well} size={44} caption="both tails">5%</Slip></div>
+			<svg width={180} height={plateHeight(CHIP_BAG, 180)} style={{position: 'absolute', left: 740, top: 600, overflow: 'visible'}}><SvgPlate plate={CHIP_BAG} x={0} y={0} w={180} /></svg>
+			<StudioPlot x={1000} y={300} width={880} height={560} window={{x: [481, 519], y: [0, 0.092]}} xTicks={[490, 500, 510]} yTicks={[]} xLabel="mass (g)" yLabel="" grid={false} at={k.four}>
 				{m => <>
 					<g clipPath={m.clip}>
 						<path d={regionPath(m, bag, 490, 510)} fill="#e4dccd" opacity={mid * (1 - 0.5 * o(k.only))} />
@@ -92,7 +93,7 @@ export const S11: React.FC = () => {
 					<text x={m.p(486, 0)[0]} y={m.p(0, 0.022)[1]} textAnchor="middle" opacity={o(k.only)} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 34, fill: PAREA.ink}} stroke={CARD} strokeWidth={8} paintOrder="stroke">about 2.5%</text>
 				</>}
 			</StudioPlot>
-			<HandTag x={1690} y={720} text="heavy bags: not asked" at={k.both} size={32} color={GREY} anchor="middle" />
+			<HandTag x={1660} y={430} text="heavy bags: not asked" at={k.both} size={32} color={GREY} anchor="middle" />
 		</>
 	);
 };

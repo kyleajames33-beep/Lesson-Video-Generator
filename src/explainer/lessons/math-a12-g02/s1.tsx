@@ -26,15 +26,15 @@ export const S02: React.FC = () => {
 	return (
 		<>
 			<SceneHeading text="What does it ask for?" at={4} size={44} />
-			<QCard x={60} y={190} w={520} lit={fr >= k.which && fr < k.integral + 30}>{Q_AMOUNT}</QCard>
-			<Chip x={60} y={380} at={k.integral + 6} size={34} color={KR.ink}>change: definite integral</Chip>
-			{fr >= k.seconds - 12 ? <FrameSvg><Countdown start={k.seconds} end={k.seconds + 90} x={520} y={480} r={46} /></FrameSvg> : null}
-			<Tank x={110} y={470} w={300} level={0} max={8} water={0} />
-			<ModelRows x={640} y={170} w={1220} question="What does the question ask for?" size={36} rowH={152} rows={[
-				{at: k.fn, icon: <IconFamily />, text: 'a function → indefinite ∫, then + C', sub: 'a known value fixes C (or start + a definite ∫)', subAt: k.start},
-				{at: k.change, litAt: k.integral, icon: <IconChange />, text: 'a change from a to b → ∫ₐᵇ f dt = F(b) − F(a)', sub: 'adds rate × small time; below the axis counts as negative', subAt: k.adds},
-				{at: k.area, icon: <IconSplit />, text: 'an area or a distance → split at the zeros', sub: 'add the parts as positive amounts', subAt: k.split},
-				{at: k.readings, icon: <IconTrap />, text: 'readings only → trapezoidal rule', sub: 'no formula to integrate: an estimate', subAt: k.trap},
+			<QCard x={50} y={180} w={540} size={42} lit={fr >= k.which && fr < k.integral + 30}>{Q_AMOUNT}</QCard>
+			<Chip x={50} y={352} at={k.integral + 6} size={36} color={KR.ink}>change: definite integral</Chip>
+			{fr >= k.seconds - 12 ? <FrameSvg><Countdown start={k.seconds} end={k.seconds + 90} x={520} y={560} r={50} /></FrameSvg> : null}
+			<Tank x={100} y={440} w={320} level={0} max={8} water={0} />
+			<ModelRows x={620} y={160} w={1250} question="What does the question ask for?" size={40} rowH={166} rows={[
+				{at: k.fn, icon: <IconFamily />, label: 'a function', text: '→ indefinite ∫, then + C', sub: 'a known value fixes C (or start + a definite ∫)', subAt: k.start},
+				{at: k.change, litAt: k.integral, icon: <IconChange />, label: 'a change from a to b', text: '→ ∫ₐᵇ f dt = F(b) − F(a)', sub: 'adds rate × small time; below the axis counts negative', subAt: k.adds},
+				{at: k.area, icon: <IconSplit />, label: 'an area or a distance', text: '→ split at the zeros', sub: 'add the parts as positive amounts', subAt: k.split},
+				{at: k.readings, icon: <IconTrap />, label: 'readings only', text: '→ trapezoidal rule', sub: 'no formula to integrate: an estimate', subAt: k.trap},
 			]} />
 		</>
 	);
@@ -93,8 +93,8 @@ export const S04: React.FC = () => {
 					<text x={m.p(0.62, 0)[0]} y={m.p(0, F(0.62) + C)[1] - 26} style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: 38, fill: '#6b4fa0'}} stroke="#fffdf8" strokeWidth={8} paintOrder="stroke">{`e^(t²) + ${fr >= k.four + 22 ? '4' : 'C'}`}</text>
 				</>}
 			</StudioPrimitiveFamily>
-			<ParameterSlider x={WB.gx + 10} y={790} width={360} symbol="C" role="gradient" value={C} min={0} max={6} ticks={[{value: 0, label: '0'}, {value: 4, label: '4'}, {value: 6, label: '6'}]} at={-300} />
-			<ReadStrip x={WB.gx + 420} y={790} w={380} cells={[{label: 'time t', text: t.toFixed(2), unit: 's'}, {label: 'volume V', text: V.toFixed(2), unit: 'L'}]} />
+			<ParameterSlider x={20} y={720} width={170} symbol="C" role="gradient" value={C} min={0} max={6} ticks={[{value: 0, label: '0'}, {value: 4, label: '4'}, {value: 6, label: '6'}]} at={-300} />
+			<ReadStrip x={WB.gx + 200} y={790} w={600} cells={[{label: 'time t', text: t.toFixed(2), unit: 's'}, {label: 'volume V', text: V.toFixed(2), unit: 'L'}]} />
 			<Task x={RC} y={170} w={360} at={-30} size={40}>Find V(t).</Task>
 			<BoxCard x={RC} y={292} w={RW} at={-30} size={36} title="given">dV/dt = 2t e^(t²) L/s<br />V(0) = 5 L</BoxCard>
 			<Row x={RC} y={452} at={k.vt} size={40} small={30} dim={prog(fr, k.at0, 12)}>V(t) = ∫ 2t e^(t²) dt = e^(t²) + <Vc>C</Vc></Row>
