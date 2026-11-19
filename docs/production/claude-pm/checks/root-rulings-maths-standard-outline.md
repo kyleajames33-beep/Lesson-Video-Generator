@@ -139,3 +139,17 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
 
 ## Rulings on the l01 to l07 learning review (19 November 2026)
 93. **Ruling 92 is applied in l06 before voicing** (w for mass in narration, on screen and on practice card 1), and **w for mass extends to l07** (practice 1). l06's second practice question uses the checked replacement Table B (0, 3), (2, 12), (4, 21), so scene 4 no longer shows its answer. **l04 takes the 56-character title** from ruling 92; l03's and l05's description lines quote the new title. **e01 drops "provisional"** on its join. All other should-fix findings are accepted as the review wrote them; optional findings are taken where they cost no new scene or plate.
+
+## Rulings on the e01 to e12 designs (19 November 2026)
+94. Accepted as designed:
+   - e01's "Builds on" line uses l07's current design title.
+   - e02's roster and meal allowance, labelled "example".
+   - e03 leaves out target sales.
+   - e04a uses $27.81 an hour.
+   - e04b keeps the income-test chip as a one-line caution.
+   - e05's mechanic case.
+   - e06 keeps $ references, marked as an optional tip.
+   - e10 uses $276 withheld.
+   - e11 drops the year comparison.
+   - The five new ms11- plates.
+   **e08** says "the row's lower limit, called the threshold" once, so students meet the exam word, then uses "threshold". **e12** uses a single IF per rule, not a nested IF (Standard 1 load). The m01 join stays provisional until m01 exists. **e07, e09, e10 and e11 wait for Codex** to copy and date the ATO deduction pages, the 2026-27 PAYG withholding rows and the Medicare levy threshold in force. No placeholder is voiced. The pack errors (lesson01 we-1 $26.40, lesson04 SAQ 3 $26.00, both below the $26.44 minimum) join MS-76.

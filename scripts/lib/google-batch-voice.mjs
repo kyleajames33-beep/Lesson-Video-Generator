@@ -142,7 +142,21 @@ export async function prepareGoogleBatches({manifest,lesson,key,needed,dryRun=fa
     return read(output);
   }
 
+  // Root, 19 Nov: a dropped connection (socket closed, ECONNABORTED) is retried up to twice after a pause.
+  // Each attempt is written to the ledger first, so the local quota count stays conservative. HTTP errors are never retried.
   async function request(group,tag){
+    for(let attempt=1;;attempt++){
+      try { return await requestOnce(group,tag); }
+      catch(error){
+        const network=error instanceof TypeError&&/fetch failed|terminated/i.test(error.message)
+          ||/UND_ERR_SOCKET|ECONNABORTED|ECONNRESET|ETIMEDOUT/.test(String(error.cause?.code??error.code??''));
+        if(!network||attempt>=3)throw error;
+        console.error('Network drop on attempt '+attempt+' ('+String(error.cause?.code??error.message)+'); retrying in 30 s');
+        await new Promise(r=>setTimeout(r,30000));
+      }
+    }
+  }
+  async function requestOnce(group,tag){
     if(googleQuotaDay()!==day||used()>=99)throw Error('Daily local quota exhausted; no speech requested');
     const text=group.map(spoken).join('\n\n');
     const ids=group.map(s=>s.id), hashes=group.map(s=>sha(s.text));

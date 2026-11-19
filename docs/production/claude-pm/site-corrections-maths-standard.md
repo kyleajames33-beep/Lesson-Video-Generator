@@ -574,7 +574,7 @@ Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standa
 
 ### MS-76. Owner note: hourly rates below the 2026-27 minimum wage
 
-- Lessons: `lesson01.sa.html` `we-3` ($23.20); `lesson02.sa.html` `we-1` ($22.80), `we-2` ($18.60), `we-4` ($25.40) and drill 2 ($24.80); `lesson04.sa.html` `we-3` ($24.00); `lesson05.sa.html` `we-3` ($19.80); `lesson05.sa.html` card 02 insight ("Most full-time workers earn $800–$2,500 per week gross").
+- Lessons: `lesson01.sa.html` `we-1` ($26.40, added 19 Nov by the e01 designer) and `we-3` ($23.20); `lesson04.sa.html` SAQ 3 ($26.00, added 19 Nov); `lesson02.sa.html` `we-1` ($22.80), `we-2` ($18.60), `we-4` ($25.40) and drill 2 ($24.80); `lesson04.sa.html` `we-3` ($24.00); `lesson05.sa.html` `we-3` ($19.80); `lesson05.sa.html` card 02 insight ("Most full-time workers earn $800–$2,500 per week gross").
 - Suggested: raise the adult rates to at least $26.44 an hour (national minimum wage from 1 July 2026, Fair Work Commission Annual Wage Review 2026) or call them junior rates in the text; change the insight to "Full-time adult workers earn at least about $1,000 a week gross (the 2026-27 national minimum wage is $1,004.90 for 38 hours)". If rates are raised, the answers change; the videos use the site's other examples or repriced ones (see the e01, e02 and e04 packs).
 - Reason: root ruling 5 asks for realistic 2026 NSW wages; a student comparing these examples with a real pay slip would be misled about the legal minimum.
 
