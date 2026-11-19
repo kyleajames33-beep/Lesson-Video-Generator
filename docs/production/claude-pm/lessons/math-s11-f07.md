@@ -1,8 +1,19 @@
 # Maths S11 F07: How do Fried's, Young's and Clark's formulas scale a medicine dose for a child? An invented medicine in a holiday first-aid kit, a child's dose as a fraction of the adult dose, Young's by age, Clark's by weight, Fried's for babies by months, choosing by what is given, and an adult dose by weight (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a01.md`, `a07.md`, `r10.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 91; **rulings 4 and 89 bind this video**: invented, clearly labelled examples, with "your doctor or pharmacist sets real doses" on screen and in narration; the formula forms and age ranges confirmed by Codex against the NESA reference sheet before narration). Opens on f06's final frame as specified in `math-s11-f06.md` (Decisions, "Handoff", and scene 12). Not voiced. Next: Codex's reference-sheet check (before narration), student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. **Narration waits for Codex brief 256, step 1 (the reference-sheet check of the three formula forms and age ranges; ruling 89), and for root to apply it.** Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Standard designs (`math-s12-a01.md`, `a07.md`, `r10.md`, each at Revision 2) and root's Standard rulings (`../checks/root-rulings-maths-standard-outline.md`, 1 to 91; **rulings 4 and 89 bind this video**: invented, clearly labelled examples, with "your doctor or pharmacist sets real doses" on screen and in narration; the formula forms and age ranges confirmed by Codex against the NESA reference sheet before narration). Opens on f06's final frame as specified in `math-s11-f06.md` (Decisions, "Handoff", and scene 12). Not voiced. Next: Codex's reference-sheet check (before narration), student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 4,798 characters by script (see "Narration length estimate"), 14 scene headings, about 452 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 4,798 characters by script (see "Narration length estimate"; Revision 2), 14 scene headings, about 452 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s11-f07-learning-review.md` (summary `../checks/m-s11-f01-f08-learning-review-summary.md`), with root's rulings 95 and 97 in `../checks/root-rulings-maths-standard-outline.md` (ruling 97 accepts every finding, including the optional one; f07 narration waits for brief 256, step 1). Numbers rechecked with SymPy: `work/brief-review-s11-f/resolve-check.py`. Findings by the review's numbers:
+
+1. Should fix, title (ruling 95): **accepted**: "Medication Dosage Formulas | Year 11 Maths Standard" (51 characters). The description's "Builds on:" line quotes f06's ruled title: "Builds on: BAC: Time to Zero and Limitations."
+2. Optional, scene 7 (68 labelled ticks): **accepted**. A bar marked "68 kg" with one "15 mg per kg" tick under its first kilogram, then the bar fills to "1,020 mg". Same timing, much less to read.
+
+Gate unchanged: Codex confirms the three formula forms, their wording and any age range on the current 2024 reference sheet (brief 256, step 1) before narration. If the sheet differs, scenes 2 to 5, key notes 2 to 4 and A2 (b)'s "meant for babies" follow the sheet, and the numbers are rechecked. Joins unchanged: scene 1 still opens on f06's final frame, and scene 13 is still f08's opening frame. Narration, practice cards and feedback unchanged.
+
+Narration 4,798 characters by script (Revision 1: 4,798; no narration change), about 452 s with holds, 118 s under the 570 s cap; feedback speech about 26 s and 20 s. Nothing recorded; human listening pending.
 
 Scope: ninth video of Year 11 Mathematics Standard (2024), Formulas and equations, playlist order 7. Year 11 is one course for Standard 1 and Standard 2. **No site lesson teaches this point** (lesson05 names the formulas in a notice only; site corrections, section 2), so the video teaches from the syllabus alone (ruling 3). Pre-design pack: `../pre-design/maths-standard/math-s11-f07.md`. The syllabus names the formulas but does not print them; the forms used are those the pack gives from the NESA Mathematics Standard reference sheet: Fried's, dosage = (age of child in months × adult dosage) ÷ 150; Young's, dosage = (age of child in years × adult dosage) ÷ (age of child in years + 12); Clark's, dosage = (weight in kg × adult dosage) ÷ 70. **Codex confirms these forms, and any age range stated for each, against the current 2024 Standard reference sheet before narration (ruling 89).** Route entry: `math-s11-f07` in `../../programme/maths-standard-route-inputs-8.json`. Visual system: maths studio kit; the first-aid kit and invented medicine bottle (painted with f06); one new plate for f08's anchor in the final frame (a plate of pancakes); every formula, bar, decision tree and board coded. **No people, no babies or children drawn, no real medicine names, brands or doses.**
 
@@ -92,7 +103,7 @@ Visual: clear change: the which-formula tree (`DecisionTree`), 44 px: "What are 
 ### 7. adults: a dose by weight
 > The syllabus also mentions adults. Some adult doses are set per kilogram of body weight. If an invented medicine's dose is fifteen milligrams per kilogram, then a sixty-eight kilogram adult gets fifteen times sixty-eight, which is one thousand and twenty **milligrams**.
 
-Visual: stage change: a coded label card "adult: 68 kg" (blue) and a rate chip "15 mg per kg (invented)" (violet); row, 52 px: "dose = 15 × 68"; on "milligrams" "= 1020 mg" framed green, hand tag "per kg × kg". A row of 68 small ticks fills, each "15 mg" (grouped in tens), then sums.
+Visual: stage change: a coded label card "adult: 68 kg" (blue) and a rate chip "15 mg per kg (invented)" (violet); row, 52 px: "dose = 15 × 68"; on "milligrams" "= 1020 mg" framed green, hand tag "per kg × kg". A bar marked "68 kg" (blue) with one tick "15 mg per kg" under its first kilogram, then the bar fills to "1,020 mg" (Revision 2, review finding 2: one tick, not 68 labels).
 
 ### 8. memory aid
 > Here's the idea to keep. Months, Fried's. Years, Young's. Kilograms, Clark's. Each one gives the child a fraction of the adult dose. And remember, these are invented examples. Your doctor or pharmacist sets real **doses**.
@@ -190,9 +201,11 @@ Recalculated with SymPy 1.14 (19 Nov 2026, scratchpad `s11f/verify.py`, `python 
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s11f/count.py`, which reproduces e08's 5,632): **4,798 characters**, 14 scene headings. Characters per scene (1 to 14): 434, 361, 604, 432, 479, 452, 266, 218, 293, 349, 240, 271, 324, 75.
+Revision 2, counted by script (the same method): **4,798 characters** (Revision 1: 4,798; no narration change), 14 scene headings. Characters per scene (1 to 14): 434, 361, 604, 432, 479, 452, 266, 218, 293, 349, 240, 271, 324, 75. Speech about 361 s; total **about 452 s**, 118 s under the 570 s cap. Feedback speech: about 26 s and 20 s. The Revision 1 paragraphs below are kept for the record.
 
-At 13.3 characters per second the speech is about 361 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the bar fills (2 to 5), the age sweep (3), the tree (6) and the ticks (7) about 26 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 452 s (7 min 32 s)**, 118 s under the 570 s cap. At 4,798 characters it sits just under the 5,000 guide, like r08, r09 and t09 (ruling 55), with no padding; the pack's optional liquid step stays out. Feedback speech: about 26 s and 20 s.
+Revision 1, counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s11f/count.py`, which reproduces e08's 5,632): **4,798 characters**, 14 scene headings. Characters per scene (1 to 14): 434, 361, 604, 432, 479, 452, 266, 218, 293, 349, 240, 271, 324, 75.
+
+At 13.3 characters per second the speech is about 361 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the bar fills (2 to 5), the age sweep (3), the tree (6) and the per-kg bar (7) about 26 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 452 s (7 min 32 s)**, 118 s under the 570 s cap. At 4,798 characters it sits just under the 5,000 guide, like r08, r09 and t09 (ruling 55), with no padding; the pack's optional liquid step stays out. Feedback speech: about 26 s and 20 s.
 
 Reserve trims if the voiced take runs long: scene 3's "As the age goes up ..." sentence (about 5 s; the age sweep can stay silent); scene 4's percentage sentence (about 7 s).
 
@@ -228,7 +241,7 @@ Inspected before choosing (19 Nov 2026, `public/assets/maths`, read only): no me
 
 Need (painted, new; see the Codex asset brief): `ms11s-pancake-stack-v1.png` (first seen in this video's final frame; f08's anchor and f08's final frame, which l01 opens on; ruling 17). Reused: `ms11s-first-aid-kit-v1.png`, `ms11s-medicine-a-bottle-v1.png` (1, 2, badges).
 
-Coded: the formula cards, the label cards (no figures), the part-of-adult bar, the age slider, the decision tree, the ticks, the board, question cards, the countdown, hand tags, the footer, the framed card and key notes.
+Coded: the formula cards, the label cards (no figures), the part-of-adult bar, the age slider, the decision tree, the per-kg bar, the board, question cards, the countdown, hand tags, the footer, the framed card and key notes.
 
 ### Studio kit use and additions
 
@@ -257,9 +270,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Medication Dosage Formulas: Fried's, Young's and Clark's | Year 11 Maths Standard
+Title: Medication Dosage Formulas | Year 11 Maths Standard
 
-(Title length: 81 characters.)
+(Title length: 51 characters; ruling 95. Revision 1: "Medication Dosage Formulas: Fried's, Young's and Clark's | Year 11 Maths Standard", 81.)
 
 Description: An invented medicine's label gives an adult dose of 500 mg. A child's body is smaller, so how much should a child have? See how Fried's, Young's and Clark's formulas each give a child a fraction of the adult dose: Young's by age in years, Clark's by weight in kilograms and Fried's by age in months for babies. Learn why brackets matter on the calculator, how to choose the formula from what you're given, why two formulas give different doses for the same child, and how an adult dose can be set per kilogram. Every medicine and dose in this video is invented. Your doctor or pharmacist sets real doses. Two exam-style questions at the end. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
 
@@ -268,16 +281,17 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024), Year 11:
 "Calculate the required medication dosages for children and adults given age or weight, using Fried’s, Young’s and Clark’s formula as appropriate"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa346f5353
 
-Builds on: How Long Until BAC Reaches Zero? Next: Spreadsheet Formulas.
+Builds on: BAC: Time to Zero and Limitations. Next: Spreadsheet Formulas.
 
 #Year11Maths #MathsStandard #Formulas #HSCScience
 
 ## Open decisions
 
-- **1. Reference-sheet forms and age ranges (Codex, before narration; ruling 89).** The design uses the pack's forms. If the sheet states an age range for Fried's (for example "under 1 year" or "up to 1 to 2 years") or Young's, scene 5's "for babies" and A2's model answer quote the sheet; if it states none, "for babies" stays as the plain reason (months suit babies).
-- **2. Title length (root).** 81 characters, under 100; a shorter alternative is "Medication Dosage Formulas | Year 11 Maths Standard" (51).
-- **3. The adult case (learning review).** Scene 7 is short (about 15 s). Check that "per kilogram" is clear without a worked board; it could join scene 6's tree as a fourth branch ("an adult with a mg-per-kg rate → rate × weight").
+- **1. Reference-sheet forms and age ranges (Codex, before narration; ruling 89).** Still open: waits for Codex brief 256, step 1. Revision 1 text: The design uses the pack's forms. If the sheet states an age range for Fried's (for example "under 1 year" or "up to 1 to 2 years") or Young's, scene 5's "for babies" and A2's model answer quote the sheet; if it states none, "for babies" stays as the plain reason (months suit babies).
+- **2. Title length (root).** Closed: the 51-character title is used (ruling 95). Revision 1 text: 81 characters, under 100; a shorter alternative is "Medication Dosage Formulas | Year 11 Maths Standard" (51).
+- **3. The adult case (learning review).** Closed in Revision 2: kept as its own short scene; the review raised only the tick labels (finding 2). Revision 1 text: Scene 7 is short (about 15 s). Check that "per kilogram" is clear without a worked board; it could join scene 6's tree as a fourth branch ("an adult with a mg-per-kg rate → rate × weight").
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s11-f07-learning-review.md`; rulings 95 and 97). Next: Codex brief 256, step 1 (the reference-sheet check), root applies it, then the Codex maths check and error check, then voicing and a build to grade A.
 - Student learning review: trace from f01 and f06 only. Check that the shared shape (adult dose × a fraction) is clear before the three formulas; that the brackets slip lands; that the unit check (months into Young's) is a memorable reason, not a scare; that choosing by what is given is enough for "as appropriate"; that every example reads as invented and the footer never crowds the board; that the cards give nothing away. Then the Codex reference-sheet check and maths check, then voicing and a build to grade A.

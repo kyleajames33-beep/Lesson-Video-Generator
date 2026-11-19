@@ -195,3 +195,7 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
    - **f01:** area bars for the pizza comparison.
    - **f03b:** drop the Year 12 sentence.
    **No codename or video id is ever spoken**; say "last video" or name the topic. Ruling 95's changes are applied where still missing. f07 narration waits for brief 256, step 1.
+98. f01 to f08 Revision 2 accepted:
+   - f08 keeps both spoken "star" lines ("the star means times" and "A spreadsheet needs the star").
+   - f04a's 73-character title stands.
+   - f03b has no site link. f04a and f04b link to the site's speed lesson (year12/ratios-and-rates/lesson01) only if route inputs 8 list it. Otherwise they have no link.
