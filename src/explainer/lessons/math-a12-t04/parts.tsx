@@ -34,7 +34,7 @@ const span = (c: string) => {
 };
 export const Nc = span(NUM.ink), Sc = span(STEP.ink), Rc = span(RATIO.ink), Gc = span(GOODR.ink), Gy = span(GREY);
 /** Subscript (log₁₀ is written with Unicode; this is for word subscripts such as I with "library"). */
-export const Sb: React.FC<{children: React.ReactNode}> = ({children}) => <span style={{fontSize: '0.62em', verticalAlign: '-0.28em'}}>{children}</span>;
+export const Sb: React.FC<{children: React.ReactNode}> = ({children}) => <span style={{fontSize: 'max(0.66em, 28px)', verticalAlign: '-0.28em'}}>{children}</span>;
 const SUP: Record<string, string> = {'0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹', '-': '⁻', '.': '·'};
 /** "10" with a Unicode superscript exponent. */
 export const p10 = (e: number | string) => '10' + String(e).split('').map(c => SUP[c] ?? c).join('');
@@ -154,11 +154,14 @@ export const MorphStrip: React.FC<StripProps> = props => {
 	const M = stripMap(props), e = M.e;
 	const ks: number[] = [];
 	for (let k = dec[0]; k <= dec[1]; k++) ks.push(k);
+	// Root, 20 Nov: during the morph a tick can sit far outside the strip (10^-7 on the linear map); fade it out
+	// instead of letting its label run off the frame.
+	const inside = (px: number) => Math.max(0, Math.min(1, 1 - (Math.max(x - px, px - (x + w), 0)) / 40));
 	return <FrameSvg style={{opacity: o}}>
 		<text x={x} y={y - 92} style={TXT(36, INK)}>{title}<tspan style={TXT(30, GREY, 700)}>{e > 0.5 ? '   (log scale)' : '   (ordinary scale)'}</tspan></text>
 		<line x1={x - 10} x2={x + w + 10} y1={y} y2={y} stroke={INK} strokeWidth={5} strokeLinecap="round" />
-		{linTicks.map(t => <g key={'l' + t.label} opacity={1 - e}><line x1={M.pos(t.v)} x2={M.pos(t.v)} y1={y - 12} y2={y + 12} stroke={INK} strokeWidth={3} /><text x={M.pos(t.v)} y={y + 48} textAnchor="middle" style={TXT(30, INK, 700)}>{t.label}</text></g>)}
-		{ks.map(k => <g key={'d' + k} opacity={e}><line x1={M.pos(10 ** k)} x2={M.pos(10 ** k)} y1={y - 12} y2={y + 12} stroke={INK} strokeWidth={3} /><text x={M.pos(10 ** k)} y={y + 48} textAnchor="middle" style={TXT(30, INK, 700)}>{decLabel(k)}</text></g>)}
+		{linTicks.map(t => <g key={'l' + t.label} opacity={(1 - e) * inside(M.pos(t.v))}><line x1={M.pos(t.v)} x2={M.pos(t.v)} y1={y - 12} y2={y + 12} stroke={INK} strokeWidth={3} /><text x={M.pos(t.v)} y={y + 48} textAnchor="middle" style={TXT(30, INK, 700)}>{t.label}</text></g>)}
+		{ks.map(k => <g key={'d' + k} opacity={e * inside(M.pos(10 ** k))}><line x1={M.pos(10 ** k)} x2={M.pos(10 ** k)} y1={y - 12} y2={y + 12} stroke={INK} strokeWidth={3} /><text x={M.pos(10 ** k)} y={y + 48} textAnchor="middle" style={TXT(30, INK, 700)}>{decLabel(k)}</text></g>)}
 		{values.map((v, i) => <circle key={i} cx={M.pos(v)} cy={y - 26} r={13} fill={dotColor} stroke={CARD} strokeWidth={4} />)}
 	</FrameSvg>;
 };
@@ -296,7 +299,7 @@ export const T04Card: React.FC<{x: number; y: number; s?: number; c: CardCues; k
 	return <div style={{position: 'absolute', left: x, top: y, width: W, height: H, transform: `scale(${s})`, transformOrigin: '0 0'}}>
 		<FramedCard x={0} y={0} w={W} h={H} at={-30} />
 		<div style={{position: 'absolute', left: 48, top: 22, fontFamily: FONT_HAND, fontWeight: 700, fontSize: keys ? 46 : 54, color: '#6b6358'}}>Memory aid</div>
-		<PhoneScreen x={keys ? 1150 : 1170} y={24} w={keys ? 100 : 80} bare />
+		{/* Root, 20 Nov: the bare phone screen read as an empty black box on the sheet; removed. */}
 		<div style={{position: 'absolute', left: 48, top: 96, opacity: prog(f, c.main, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: 62, color: INK, padding: '2px 12px', borderRadius: 14, background: gl > 0.01 ? `rgba(220,234,247,${gl})` : undefined}}><AidMain /></div>
 		{keys ? AID_KEYS.map((k, i) => <div key={i} style={{position: 'absolute', left: 60, top: 210 + i * 76, opacity: prog(f, c.keys[i], 12), transform: `translateX(${(1 - smooth(prog(f, c.keys[i], 14))) * -16}px)`, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 42, color: INK, whiteSpace: 'pre'}}>{k}</div>) : null}
 		<div style={{position: 'absolute', left: 60, top: keys ? 530 : 190, opacity: prog(f, c.cond, 12), fontFamily: FONT_HAND, fontWeight: 700, fontSize: keys ? 48 : 58, color: NUM.ink}}>A minus sign flips the direction.</div>

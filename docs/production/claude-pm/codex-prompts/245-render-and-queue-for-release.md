@@ -67,3 +67,5 @@ The joins are drawn to match:
 - Change a queue file after `"checks": "pass"` is written. If you later find a defect, write `work/release-queue/<lesson>-<rev>.HOLD.txt` saying why. The release chat skips any video with a HOLD file.
 
 **Root, 17 Nov:** `math-a12-t01`, `math-a12-t02`, `math-a12-t03` built (graded A, checker pass) and ready to render.
+
+**Root, 20 Nov:** `math-a12-t04` built (checker pass with 3 justified warnings: two sparse decibel frames and an axis label meeting its own tick mark) and ready to render. g01 to g03 wait for grade A.

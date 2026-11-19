@@ -42,13 +42,13 @@ export const S12: React.FC = () => {
 // ---------- 13. attempt 2 ----------
 const Q2 = 'Set A: the populations of 10 towns and cities, from 1 200 to 5 300 000. Set B: the daily maximum temperatures over one month, from 21 °C to 31 °C. Which set should be graphed on a logarithmic scale? Justify your answer by referring to the range of each set.';
 const TownThermo: React.FC = () => (
-	<div style={{position: 'relative', width: 400, height: 330}}>
-		<PlateImg plate={TOWN} x={0} y={10} w={400} />
-		<PlateImg plate={THERMO} x={90} y={180} w={240} />
+	<div style={{position: 'relative', width: 540, height: 560}}>
+		<PlateImg plate={TOWN} x={0} y={0} w={540} />
+		<PlateImg plate={THERMO} x={110} y={290} w={330} />
 	</div>
 );
 export const S13: React.FC = () => (
-	<QuestionCard at={0} size={40} w={1480} y={190} heading="Last one" hold={{...hold('scene-13'), ringFrom: K13.pause}} pauseAt={K13.pause} picture={{node: <TownThermo />, w: 400}}><div>{Q2}</div></QuestionCard>
+	<QuestionCard at={0} size={48} w={1720} y={170} heading="Last one" hold={{...hold('scene-13'), ringFrom: K13.pause}} pauseAt={K13.pause} picture={{node: <TownThermo />, w: 540}}><div>{Q2}</div></QuestionCard>
 );
 
 // ---------- 14. feedback 2 ----------
@@ -116,7 +116,7 @@ export const S16: React.FC = () => {
 				<FramedCard x={1230} y={196} w={650} h={660} at={8} />
 				{fr >= 8 ? <div style={{position: 'absolute', inset: 0, opacity: prog(fr, 8, 14)}}>
 					<div style={{position: 'absolute', left: 1270, top: 214, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, color: '#287347'}}>Memory aid</div>
-					<PhoneScreen x={1760} y={214} w={80} bare />
+					{/* Root, 20 Nov: bare phone removed (read as a black box). */}
 					<div style={{position: 'absolute', left: 1270, top: 300, width: 470, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 58, lineHeight: 1.12, color: INK}}><AidMain /></div>
 					<div style={{position: 'absolute', left: 1270, top: 500, width: 580, fontFamily: FONT_HAND, fontWeight: 700, fontSize: 42, lineHeight: 1.15, color: NUM.ink}}>A minus sign flips the direction.</div>
 					<div style={{position: 'absolute', left: 1270, top: 640, width: 580, fontFamily: FONT_DISPLAY, fontWeight: 700, fontSize: 30, lineHeight: 1.35, color: INK}}>dB ÷ <Nc>10</Nc> · earthquake ÷ <Nc>1</Nc><br />pH ÷ <Nc>−1</Nc> · stars ÷ <Nc>−2.5</Nc></div>
