@@ -138,7 +138,8 @@ export function compareGoogleWords(expected, heard) {
   const numbersMatch=numbersMatchByValue(expectedNumbers,heardNumbers);
   // Root, 19 Nov: the recogniser sometimes hears this voice's "here" as "year" or "hear". The pause line is still
   // counted as spoken; the word difference stays in the mismatches, so the take goes to the review list.
-  const pauseCount=tokens=>tokens.filter((_,i)=>['pause',"paul's",'pauls','paws','pores','pours'].includes(tokens[i])&&['here','year','hear'].includes(tokens[i+1])&&tokens[i+2]==='to'&&tokens[i+3]==='answer').length;
+  const pauseCount=tokens=>tokens.filter((_,i)=>['pause',"paul's",'pauls','paws','pores','pours'].includes(tokens[i])&&['here','year','hear'].includes(tokens[i+1])
+    &&((tokens[i+2]==='to'&&tokens[i+3]==='answer')||(tokens[i+3]==='to'&&tokens[i+4]==='answer'))).length; // one stray recognised word allowed after 'here'
   const pausePresent=pauseCount(got)>=pauseCount(want);
   return {pass:!mismatches.length&&numbersMatch&&pausePresent,allowed,mismatches,numbersMatch,pausePresent,
     ...(!numbersMatch?{expectedNumbers,heardNumbers}:{})};
