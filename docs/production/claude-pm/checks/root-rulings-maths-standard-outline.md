@@ -199,3 +199,7 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
    - f08 keeps both spoken "star" lines ("the star means times" and "A spreadsheet needs the star").
    - f04a's 73-character title stands.
    - f03b has no site link. f04a and f04b link to the site's speed lesson (year12/ratios-and-rates/lesson01) only if route inputs 8 list it. Otherwise they have no link.
+99. **e01 to e12 Revision 2 accepted.** The open decisions:
+   - **6:** lengths under 5,000 characters stand (ruling 55).
+   - **7:** a video with no matching site lesson has no site link.
+   - **9:** Codex checks the travel card plate's halo in brief 256, step 3. Repaint it only if the halo shows on the dark background.

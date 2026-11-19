@@ -1,8 +1,18 @@
 # Maths S11 E09: How does PAYG take tax out of each weekly, fortnightly or monthly pay? Pay as you go withholding, reading an ATO tax table excerpt (row by gross pay, column by the tax-free threshold), one table per pay period, net pay on the slip, and why a year of withholding is close to, but not exactly, the year's tax (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard money designs (`math-s12-i01.md`, `i08.md`, `i17a.md`, each at Revision 2, and the i-strand resolution logs) and root's Standard rulings 1 to 87 (`../checks/root-rulings-maths-standard-outline.md`; ruling 85: **every PAYG withholding amount in this design is a placeholder** until Codex copies the ATO's 2026-27 rows; rulings 5, 32 and 86 apply). Not voiced. Next: Codex copies the NAT 1005, 1006 and 1007 rows (see "Numbers to verify", **PAYG placeholders**) and the dependent values are updated; then student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced; waits for Codex brief 256, step 1 (the 2026-27 PAYG withholding rows; every withholding amount is a placeholder) before voicing. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard money designs (`math-s12-i01.md`, `i08.md`, `i17a.md`, each at Revision 2, and the i-strand resolution logs) and root's Standard rulings 1 to 87 (`../checks/root-rulings-maths-standard-outline.md`; ruling 85: **every PAYG withholding amount in this design is a placeholder** until Codex copies the ATO's 2026-27 rows; rulings 5, 32 and 86 apply). Not voiced. Next: Codex copies the NAT 1005, 1006 and 1007 rows (see "Numbers to verify", **PAYG placeholders**) and the dependent values are updated; then student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 4,845 characters by script (see "Narration length estimate"), 13 scene headings, about 451 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 4,862 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 451 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s11-e09-learning-review.md` (summary `../checks/m-s11-e01-e12-learning-review-summary.md`), with root's rulings 84 to 96 in `../checks/root-rulings-maths-standard-outline.md` (ruling 96 accepts every finding as the review wrote it, including the optional ones, and fixes the repriced values). Numbers rechecked with SymPy: `work/brief-review-s11-e/resolve-check.py`. Findings by the review's numbers:
+
+1. Should fix, scene 6 ("the real tax"): **accepted** (ruling 96), reviewer's wording: "The tax from the table on this year's pay, plus the Medicare levy, comes to eight thousand one hundred and four dollars eighty-two." The block reads "tax from the table + levy for the year: $8104.82". Note for Codex (Numbers to verify and open decision 1): compare like with like when the rows are copied; if 52 × the $1,056 row lands more than about $20 above or below $8,104.82, the next sentence becomes "Close, but not exact" with no direction, or a gross pay whose row lands within a few dollars is chosen.
+
+Placeholders unchanged: every PAYG row waits for Codex brief 256, step 1 (ruling 94); no placeholder is voiced. Joins unchanged: scene 1 opens on e08's final frame; scene 12 is e10's opening (its $156 and $900.78 follow the copied row).
+
+Narration 4,862 characters by `work/brief-review-s11-e/count.py` (Revision 1: 4,857 by the same parser; 4,845 by the author's), about 451 s with holds, 119 s under the 570 s cap; feedback speech about 26.2 s and 20.5 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: tenth video of the Year 11 Earning money strand, outline playlist order 24. One video for Standard 1 and Standard 2. Viewers arrive from e08's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-e09.md`. Site lessons (read through the pack's quotations, read only): `maths-standard/year11/earning-money/lesson04.sa.html` (SHA256 `9dfc6dcec3727e7981fbade98d9b06ccc0c88ad4373ec8bdef040c6059b79d09`; card 01, a pay slip within one working day; card 04's deductions) and `lesson06.sa.html` (SHA256 `210387123f041f906bf684f5ff2cea3e23085f3febc6da2120726f784279ff17`; the hook, "$1,500 this week but only $1,050 landed in your bank account"). Neither lesson reads a PAYG table (pack: a site gap for the table reading, logged in section 11), so the table reading is taught from the syllabus (ruling 3). Route entry: `math-s11-e09` in `../../programme/maths-standard-route-inputs-9.json`. Visual system: maths studio kit; the coin jar and calendar plates reused; a new stethoscope plate for the final frame; the pay slip, table excerpts, tick box and boards coded.
 
@@ -88,9 +98,9 @@ Visual: stage change (simulation 3): a coded declaration line (1,100 × 120 px) 
 Visual: clear change to the board. Task strip, 40 px: "A graduate is paid $62 400 a year, monthly, and has claimed the threshold. Find the tax withheld each month." Givens row, 44 px: "62 400 ÷ 12 = $5200 a month" (teal), grey chip "e01: year ÷ 12". A coded excerpt "Monthly tax table (NAT 1007), for payments from 1 July 2026, ATO", rows $5,198 to $5,202 (**placeholder rows**). On "eight hundred and seventy-five" the $5,200 row lights and the "with" column outlines; on "dollars" framed answer (green) "$875 withheld each month". On "weekly table for a monthly pay" a grey crossed ghost "weekly table, $5200 row", hand tag "a table for each pay period". On "period" three small excerpt tabs "weekly", "fortnightly", "monthly" line up at the top.
 
 ### 6. close, but not exact
-> Does it add up? Fifty-two weeks of a hundred and fifty-six dollars is eight thousand one hundred and twelve dollars withheld over the **year**. The real tax on this year's pay, including the Medicare levy, comes to eight thousand one hundred and four dollars eighty-two. Close, but not exact, a few dollars too **much**. That small difference is sorted out after the year ends, in a tax return. The tables change each year, so always use the one you're **given**.
+> Does it add up? Fifty-two weeks of a hundred and fifty-six dollars is eight thousand one hundred and twelve dollars withheld over the **year**. The tax from the table on this year's pay, plus the Medicare levy, comes to eight thousand one hundred and four dollars eighty-two. Close, but not exact, a few dollars too **much**. That small difference is sorted out after the year ends, in a tax return. The tables change each year, so always use the one you're **given**.
 
-Visual: stage change (simulation 4): the coin jar (360 px) on the left pan of a balance; on "year" its label writes "withheld: 52 × 156 = $8112" (brown). On the right pan a block "tax + levy for the year: $8104.82" (amber with an olive top), with a grey working line underneath, 32 px: "52 × 1056.78 = $54 952.56; tax $7005.77 (e08 table) + levy $1099.05". On "much" the beam tips slightly towards the jar, label "about $7 too much", hand tag "close, not exact". On "tax return" chip "sorted out in a tax return (refund or bill)". On "given" grey chip "tables change every year: use the one you're given".
+Visual: stage change (simulation 4): the coin jar (360 px) on the left pan of a balance; on "year" its label writes "withheld: 52 × 156 = $8112" (brown). On the right pan a block "tax from the table + levy for the year: $8104.82" (Revision 2, review finding 1) (amber with an olive top), with a grey working line underneath, 32 px: "52 × 1056.78 = $54 952.56; tax $7005.77 (e08 table) + levy $1099.05". On "much" the beam tips slightly towards the jar, label "about $7 too much", hand tag "close, not exact". On "tax return" chip "sorted out in a tax return (refund or bill)". On "given" grey chip "tables change every year: use the one you're given".
 
 ### 7. memory aid
 > Here's the summary. PAYG is your income tax, paid as you go. Use the table for your pay period, find the row for your gross pay, and read the right column. Threshold claimed, one column. Not claimed, the **other**.
@@ -174,6 +184,8 @@ Model answer (placeholder values): (a) $212. (b) 26 × $212 = $5512. Classic mis
 
 **PAYG placeholders (ruling 85): Codex copies these from the ATO before narration; the ATO values win.**
 
+Revision 2: every changed or newly shown value rechecked with SymPy in `work/brief-review-s11-e/resolve-check.py` (`python -I`; 117 checks, 0 failures); placeholder values are checked only as the arithmetic built on them.
+
 | Table (payments from 1 July 2026) | Rows to copy (both columns) | Placeholder used | Where it is spoken or shown |
 | --- | --- | --- | --- |
 | NAT 1005 weekly | $1,054 to $1,058 | $1,056 → $156 (with) | 3, 6, 12 (and net $900.78, year $8,112, "about $7") |
@@ -183,7 +195,7 @@ Model answer (placeholder values): (a) $212. (b) 26 × $212 = $5512. Classic mis
 | NAT 1006 fortnightly | $1,798 to $1,802 | $1,800 → $212 (with) | A2 card, feedback 2 (and $5,512, $5,088) |
 | NAT 1007 monthly | $5,198 to $5,202 | $5,200 → $875 (with) | 5 |
 
-When the rows are copied, recompute: 1056.78 − (row $1,056) = net; 52 × (row $1,056) and its difference from $8,104.82 (if the difference is not "a few dollars too much", scene 6's sentence changes to match, for example "a few dollars too little"); (row $520 without) − (row $520 with); 1200 − (row $1,200) − 15; 26 × (row $1,800) and 24 × (row $1,800). Each changed spoken number is re-voiced only if voicing has happened (it has not).
+When the rows are copied, recompute: 1056.78 − (row $1,056) = net; 52 × (row $1,056) and its difference from $8,104.82 (compare like with like, Revision 2: if 52 × the copied $1,056 row is more than about $20 above or below $8,104.82, scene 6's sentence becomes "Close, but not exact" with no direction, or Codex picks a gross pay whose row lands within a few dollars; if it is a few dollars below, "a few dollars too little"); (row $520 without) − (row $520 with); 1200 − (row $1,200) − 15; 26 × (row $1,800) and 24 × (row $1,800). Each changed spoken number is re-voiced only if voicing has happened (it has not).
 
 Not placeholders (exact decimal arithmetic, 19 Nov 2026, scratchpad `s11e/verify2.py`, `python -I`; 0 failures): 38 × 27.81 = 1056.78; 1056.78 × 52 = 54 952.56; 4020 + 0.30 × (54 952.56 − 45 000) = 7005.768 → 7005.77; 0.02 × 54 952.56 = 1099.0512 → 1099.05; 7005.768 + 1099.0512 = 8104.8192 → 8104.82; 62 400 ÷ 12 = 5200.00. Placeholder arithmetic as written: 1056.78 − 156 = 900.78; 52 × 156 = 8112; 8112 − 8104.82 = 7.18; 89 − 24 = 65; 1200 − 202 − 15 = 983; 26 × 212 = 5512; 24 × 212 = 5088.
 
@@ -195,6 +207,8 @@ Also confirm: the tax-free threshold rule (one payer; the ATO's own page) and th
 - **Considered, not used:** "table, row, column" alone (drops the meaning of PAYG).
 
 ## Narration length estimate
+
+Revision 2, counted by `work/brief-review-s11-e/count.py` (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; it counts the joining spaces the author's parser left out): **4,862 characters** (Revision 1: 4,857 by the same parser, 4,845 by the author's), 13 scene headings. Characters per scene (1 to 13): 383, 421, 750, 681, 416, 456, 210, 346, 349, 245, 272, 246, 75. Speech about 366 s; holds and settling unchanged from Revision 1 (below); total **about 451 s**, 119 s under the 570 s cap. Feedback speech: about 26.2 s and 20.5 s. The Revision 1 paragraphs below are kept for the record.
 
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s11e/count.py`, which reproduces e08's 5,632).
 
@@ -287,10 +301,11 @@ Builds on: Tax Tables and Tax Payable. Next: The Medicare Levy and Net Pay.
 
 ## Open decisions
 
-- **1. PAYG placeholders (ruling 85).** Every withholding amount is a placeholder; the design cannot be voiced until Codex copies the rows and the dependent values are updated. If the $1,056 row differs from $156 by more than a few dollars, scene 6's "a few dollars too much" sentence is re-checked.
+- **1. PAYG placeholders (ruling 85).** Every withholding amount is a placeholder; the design cannot be voiced until Codex copies the rows and the dependent values are updated. Scene 6 (Revision 2, ruling 96) now says "tax from the table plus the levy", not "the real tax". When the rows are copied, compare like with like: if 52 × the $1,056 row is more than about $20 above or below $8,104.82 (for example because the ATO rows allow for offsets), the sentence becomes "Close, but not exact" with no direction, or a gross pay whose row lands within a few dollars is chosen; a few dollars below gives "a few dollars too little".
 - **2. A2 drops the pack's part (c)** (refund or debt), which is e11's content. Confirm.
 - **3. The stethoscope plate** replaces the kit-needs file's optional health card (no text or real card design). Confirm.
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s11-e09-learning-review.md`; ruling 96). Next: Codex maths check and error check, after brief 256, step 1 fills the placeholders, then voicing on the Google voice and a build to grade A.
 - Revision 1. Next: Codex copies the PAYG rows; then student learning review (trace from e08; check that "pay as you go" is clear before the table, that the whole-dollar row and the column outline make the lookup obvious, that the tick box explains why the second job's column is different, that "close, not exact" sets up e11 without teaching it, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A. The builder needs `TaxTableReader` withholding mode before this video.

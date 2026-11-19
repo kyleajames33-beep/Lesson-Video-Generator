@@ -1,8 +1,18 @@
 # Maths S11 E04a: How are piecework and royalties worked out? Pay per item, the items needed to match a wage (divide, then round up), the farm minimum for pieceworkers, and a royalty as rate × price × copies sold (design)
 
-Status: Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard money designs (`math-s12-i01.md`, `i08.md`, `i17a.md`, each at Revision 2, and the i-strand resolution logs) and root's Standard rulings 1 to 87 (`../checks/root-rulings-maths-standard-outline.md`; ruling 84 splits the outline's e04 into e04a, piecework and royalties, and e04b, government payments and sole-trader income; rulings 5, 32 and 85 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (19 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (19 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 12 Standard money designs (`math-s12-i01.md`, `i08.md`, `i17a.md`, each at Revision 2, and the i-strand resolution logs) and root's Standard rulings 1 to 87 (`../checks/root-rulings-maths-standard-outline.md`; ruling 84 splits the outline's e04 into e04a, piecework and royalties, and e04b, government payments and sole-trader income; rulings 5, 32 and 85 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 4,901 characters by script (see "Narration length estimate"), 12 scene headings, about 453 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 4,912 characters by script (see "Narration length estimate"; Revision 2), 12 scene headings, about 453 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+
+## Revision 2 (19 Nov 2026): learning review resolved
+
+Review: `../checks/m-s11-e04a-learning-review.md` (summary `../checks/m-s11-e01-e12-learning-review-summary.md`), with root's rulings 84 to 96 in `../checks/root-rulings-maths-standard-outline.md` (ruling 96 accepts every finding as the review wrote it, including the optional ones, and fixes the repriced values). Numbers rechecked with SymPy: `work/brief-review-s11-e/resolve-check.py`. Findings by the review's numbers:
+
+1. Optional, scene 4 (the "≈ $3.00 a copy" label invited the shortcut scene 5 forbids): **accepted**: the label reads "0.1 × 29.99 = $2.999 a copy (just under $3)"; simulation 3 and kit addition 1 match. The narration's "just under three dollars" is unchanged.
+
+Joins unchanged: scene 1 opens on e03's final frame; scene 11 is e04b's opening. Practice cards, feedback and key notes unchanged.
+
+Narration 4,912 characters by `work/brief-review-s11-e/count.py` (Revision 1: 4,912 by the same parser; 4,901 by the author's), about 453 s with holds, 117 s under the 570 s cap; feedback speech about 25 s and 27.2 s. Stage-plan times are Revision 1 approximations; frames come from the recording's word timings. Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Earning money strand, outline playlist order 19 (shared with e04b, ruling 84). One video for Standard 1 and Standard 2. The syllabus point is shared with e03 (commission) and e04b (government payments, sole traders) and is quoted in full. Viewers arrive from e03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-e04.md` (the "e04a" half of its suggested split). Site lessons (read through the pack's quotations, read only): `maths-standard/year11/earning-money/lesson03.sa.html` (SHA256 `4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4`; `we-4`, "$2.35 per crate of strawberries ... 186 crates", $437.10; the revisit's "Piecework rewards speed but can disadvantage workers during machinery breakdowns or poor harvests"; the key term "royalty: Payment to the owner of intellectual property based on sales or usage") and `lesson05.sa.html` (SHA256 `b254ea601d328e73a60f6b12e60e4218df2bcfb2fbe7afdf5df4cb7577de32c2`; `we-3`'s piecework break-even, $2.75 per component, "274 components" at the site's $19.80, repriced here). Route entry: `math-s11-e04` in `../../programme/maths-standard-route-inputs-9.json`. Visual system: maths studio kit; the strawberry crate plate (briefed in e03), the book stack and swing tag reused; the counter, target line, price slice and boards coded.
 
@@ -26,7 +36,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Simulations (standard item 3).**
   1. **Crate counter** (scene 2; `StepCounter` with `LiveReadoutBoard`): crates stack beside the plate as the counter runs 0 → 186, the pay readout rising $2.35 a crate to $437.10.
   2. **Target line** (scene 3; `TargetDial` or a readout with a target line): the parts counter runs up to 383, 384 (readout $1,056.00, just under the green target line $1,056.78, gap "78c short"), then 385 tips over ($1,058.75).
-  3. **Royalty slice** (scene 4; new `RoyaltySlice`, a `PlateFields` overlay on the swing tag): the tag "$29.99" splits into a thin teal 10% slice ("≈ $3.00") and a grey rest labelled "printing, shop, publisher"; the slice lifts out.
+  3. **Royalty slice** (scene 4; new `RoyaltySlice`, a `PlateFields` overlay on the swing tag): the tag "$29.99" splits into a thin teal 10% slice ("$2.999, just under $3") and a grey rest labelled "printing, shop, publisher"; the slice lifts out.
   4. **Copies sold** (scene 5): a printed stack "3000 printed" with 2,400 lit as "sold" and 600 grey "unsold"; slices multiply out of the lit part only.
 - **Colour roles (fixed for e01 to e06).** Rate per item and royalty percentage **amber**; items, crates and copies **blue**; pay and royalties **teal**; the wage to match **violet**; answer **green**; mistake **red**, crossed slips only; recalls grey.
 - **Large type, handwritten voice.** Current working 52 px, rows 44 px, chips 30 to 40 px; nothing below 26 px; all text above y = 950. Hand tags: "items × rate per item", "$2.35 a crate", "speed pays", "farm floor", "divide, then round up", "check one less", "78c short", "a slice of every price", "copies sold, not printed", "one go: no early rounding". At most two live at once.
@@ -78,7 +88,7 @@ Visual: clear change to the g01 board. Task strip, 44 px: "Option A: $27.81 an h
 ### 4. a royalty: a slice of every price
 > Now royalties. A royalty is a payment to the creator of a book, song or game, for each copy sold. It's a percentage of the price. Say a first novel sells for twenty-nine dollars ninety-nine, and the author's royalty is ten per cent. Ten per cent of the price is just under three dollars a **copy**. The rest of the price pays for printing, the shop and the publisher. So most of each sale never reaches the **author**. Because it's a percentage, the royalty grows with the price, and with every extra copy sold.
 
-Visual: stage change: the book stack (500 px) at the left, the swing tag (420 px) at the centre with "$29.99" (simulation 3). Row, 44 px: "royalty: 10% of the price, for each copy sold" (10% amber). On "ten per cent" the tag's lower edge splits: a thin teal slice (10% of the tag's height) and a grey rest. On "copy" the slice lifts out to the right, labelled "0.1 × 29.99 = $2.999 ≈ $3.00 a copy" (teal), hand tag "a slice of every price". On "printing, the shop and the publisher" the grey rest is labelled "$26.99: printing, shop, publisher" (grey, 32 px). On "author" the slice rings, chip "royalty rates: set by each contract (example)". On "grows with the price" hand tag "more copies, more royalty".
+Visual: stage change: the book stack (500 px) at the left, the swing tag (420 px) at the centre with "$29.99" (simulation 3). Row, 44 px: "royalty: 10% of the price, for each copy sold" (10% amber). On "ten per cent" the tag's lower edge splits: a thin teal slice (10% of the tag's height) and a grey rest. On "copy" the slice lifts out to the right, labelled "0.1 × 29.99 = $2.999 a copy (just under $3)" (teal; Revision 2, review finding 1), hand tag "a slice of every price". On "printing, the shop and the publisher" the grey rest is labelled "$26.99: printing, shop, publisher" (grey, 32 px). On "author" the slice rings, chip "royalty rates: set by each contract (example)". On "grows with the price" hand tag "more copies, more royalty".
 
 ### 5. worked example: a year of royalties
 > Now a whole year. The publisher prints three thousand copies, and two thousand four hundred are sold. Find the author's royalties. A royalty is paid on copies sold, not copies printed. So it's ten per cent, times the price, times two thousand four **hundred**. Do it in one go, zero point one, times twenty-nine ninety-nine, times two thousand four hundred, so no cents are lost to early rounding. That's seven thousand one hundred and ninety-seven dollars **sixty**. Using all three thousand printed copies is the slip. It would pay for books nobody **bought**.
@@ -163,6 +173,8 @@ Model answer: 0.08 × 34.95 × 1850 = $5172.60; 0.12 × 14.99 × 640 = $1151.23 
 
 Recalculated with exact decimal arithmetic (19 Nov 2026, scratchpad `s11e/verify2.py`, `python -I`; 0 failures); Codex to re-check.
 
+Revision 2: every changed or newly shown value rechecked with SymPy in `work/brief-review-s11-e/resolve-check.py` (`python -I`; 117 checks, 0 failures); placeholder values are checked only as the arithmetic built on them.
+
 - 186 × 2.35 = 437.10; 437.10 ÷ 8 = 54.6375 → 54.64.
 - 27.81 × 38 = 1056.78; 1056.78 ÷ 2.75 = 384.2836…; 384 × 2.75 = 1056.00; 1056.78 − 1056.00 = 0.78; 385 × 2.75 = 1058.75.
 - 0.1 × 29.99 = 2.999; 29.99 − 3.00 = 26.99 (the slice label shows $26.99 for the rest, from 29.99 − 2.999 = 26.991 displayed to the cent); 0.1 × 29.99 × 2400 = 7197.60; 0.1 × 29.99 × 3000 = 8997.00.
@@ -176,6 +188,8 @@ Recalculated with exact decimal arithmetic (19 Nov 2026, scratchpad `s11e/verify
 - **Considered, not used:** "round up for targets" alone (drops the royalty formula).
 
 ## Narration length estimate
+
+Revision 2, counted by `work/brief-review-s11-e/count.py` (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; it counts the joining spaces the author's parser left out): **4,912 characters** (Revision 1: 4,912 by the same parser, 4,901 by the author's), 12 scene headings. Characters per scene (1 to 12): 450, 698, 827, 503, 550, 172, 248, 332, 378, 362, 306, 75. Speech about 369 s; holds and settling unchanged from Revision 1 (below); total **about 453 s**, 117 s under the 570 s cap. Feedback speech: about 25 s and 27.2 s. The Revision 1 paragraphs below are kept for the record.
 
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; scratchpad `s11e/count.py`, which reproduces e08's 5,632).
 
@@ -224,7 +238,7 @@ Coded: the crate counter and stack, the target line and readout, the royalty sli
 Uses: `PlateImg`, `PlateFields`, `HandTag`, `StepCounter`, `TargetDial`, `LiveReadoutBoard`, `SpriteStack`, the g01 `WorkingBoard` parts, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions (kit-needs row e04):
-1. **RoyaltySlice** (small, a `PlateFields` overlay): a price tag whose lower edge splits into a thin percentage slice and a grey rest; the slice lifts out and can be multiplied by a count. Check: 10% of $29.99 shows $2.999 ≈ $3.00 and a rest of $26.99.
+1. **RoyaltySlice** (small, a `PlateFields` overlay): a price tag whose lower edge splits into a thin percentage slice and a grey rest; the slice lifts out and can be multiplied by a count. Check: 10% of $29.99 shows $2.999 (just under $3, never rounded on the label) and a rest of $26.99.
 2. **Target line on a counter** (small): a readout with a horizontal target, showing the gap below it. Check: 384 parts read $1,056.00 with "78c short".
 
 ## Codex asset brief
@@ -269,4 +283,5 @@ Builds on: Commission and Sliding Scale Commission. Next: Government Payments an
 
 ## Review notes
 
+- Revision 2 resolves the student learning review (`../checks/m-s11-e04a-learning-review.md`; ruling 96). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A.
 - Revision 1. Next: student learning review (trace from e03; check that the counter makes "items × rate" obvious, that the 78-cent gap makes rounding up feel necessary, that the price-tag slice makes a royalty concrete, that "copies sold, not printed" lands, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A. The builder needs `RoyaltySlice` and the target line before this video.
