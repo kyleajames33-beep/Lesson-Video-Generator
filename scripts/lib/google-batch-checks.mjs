@@ -11,12 +11,13 @@ function integerWords(n) {
 
 const numberWords = new Set([...units, ...tens, 'hundred', 'thousand', 'million', 'billion', 'trillion']);
 function tokenize(text) {
-  return (text.toLowerCase().replace(/[’‘]/g, "'").match(/-?\d[\d,]*(?:\.\d+)?%?|[a-z]+(?:'[a-z]+)?/g) ?? []).flatMap(token => {
-    if (!/^-?\d/.test(token)) return [token];
-    const [whole, decimal] = token.replace(/[,%-]/g, '').split('.');
+  // Root, 19 Nov: a recogniser writes "$2,000" for spoken "two thousand dollars", so a $ prefix reads as a trailing "dollars".
+  return (text.toLowerCase().replace(/[’‘]/g, "'").match(/-?\$?\d[\d,]*(?:\.\d+)?%?|[a-z]+(?:'[a-z]+)?/g) ?? []).flatMap(token => {
+    if (!/^-?\$?\d/.test(token)) return [token];
+    const [whole, decimal] = token.replace(/[,%$-]/g, '').split('.');
     return [...(token.startsWith('-') ? ['minus'] : []), ...integerWords(Number(whole)),
       ...(decimal ? ['point', ...Array.from(decimal, d => units[Number(d)])] : []),
-      ...(token.endsWith('%') ? ['per', 'cent'] : [])];
+      ...(token.endsWith('%') ? ['per', 'cent'] : []), ...(token.includes('$') ? ['dollars'] : [])];
   }).filter((word, i, arr) => word !== 'and' || !(['hundred', 'thousand', 'million', 'billion'].includes(arr[i - 1]) && numberWords.has(arr[i + 1])));
 }
 
@@ -134,8 +135,9 @@ export function compareGoogleWords(expected, heard) {
   }
   const expectedNumbers=numericWords(want),heardNumbers=numericWords(got);
   const numbersMatch=numbersMatchByValue(expectedNumbers,heardNumbers);
-  const pause=['pause','here','to','answer'];
-  const pauseCount=tokens=>tokens.filter((_,i)=>begins(tokens,i,pause)).length;
+  // Root, 19 Nov: the recogniser sometimes hears this voice's "here" as "year" or "hear". The pause line is still
+  // counted as spoken; the word difference stays in the mismatches, so the take goes to the review list.
+  const pauseCount=tokens=>tokens.filter((_,i)=>tokens[i]==='pause'&&['here','year','hear'].includes(tokens[i+1])&&tokens[i+2]==='to'&&tokens[i+3]==='answer').length;
   const pausePresent=pauseCount(got)>=pauseCount(want);
   return {pass:!mismatches.length&&numbersMatch&&pausePresent,allowed,mismatches,numbersMatch,pausePresent,
     ...(!numbersMatch?{expectedNumbers,heardNumbers}:{})};
