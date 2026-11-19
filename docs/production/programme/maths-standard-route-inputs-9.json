@@ -1,0 +1,1091 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-19",
+ "brief": "Maths Standard Year 11 (root request, 19 November 2026), methods of brief 243",
+ "purpose": "Research route inputs for Claude, not a canonical route or teaching approval",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course for Standard 1 and Standard 2)",
+ "identifierPolicy": "Exact CMS codenames; official sourceHtml preserves mathematical layout. Year 11 is one course shared by Standard 1 and Standard 2, so standard2ActionIds and standard1ActionIds are empty and syllabusActions carries each point once with course \"Year 11 (common to Standard 1 and Standard 2)\". Text and sourceHtml are copied from the crosswalk byte for byte (three points use the typographic apostrophe U+2019: individual’s, employee’s, worker’s).",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 11 Earning money page (focus area faacdf9b3d), as recorded in the crosswalk (read 18 November 2026)",
+  "year11EarningMoneyPoints": 13,
+  "focusAreaUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+  "pageSha256": "e2063e62b78e5e9cad3f0345c6bc996ec1b754d44a644749e3b7927fd0a8a54a",
+  "outcomes": [
+   "MST-11-03"
+  ],
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "commit": "5d74a62729764d93f6bf22c3d09c6535f28b8090",
+  "commitDate": "2026-11-16 11:01:17 +1100",
+  "note": "Paths are repo paths at this commit, read from the read-only local clone C:/Users/kygs/teaching-app-fix at the same commit (HEAD checked 19 November 2026, not modified). SHA256 values recomputed from the clone on 19 November 2026 and match the crosswalk inventory. All eight Earning money lessons use data-step-id sections. lesson05 (exam practice) and lesson04 (pay slips) supply worked examples to several videos; no lesson teaches spreadsheets, royalties beyond a definition, government payments, sole-trader earnings or reading a PAYG table."
+ },
+ "recommendations": [
+  "Run e01 to e12 in outline order for both Standard 1 and Standard 2 (Year 11 is one course). Playlist numbers 16 to 27 follow the outline. If e04 splits, e04a and e04b share 19.",
+  "Joins: e01 opens on math-s11-l07's final frame. l07 is not designed and has no pack yet, so the frame is PROVISIONAL: a line through the origin, pay ($) against hours worked, gradient labelled dollars per hour (pay = k × hours). The l07 author or designer confirms or replaces it. Each later video opens on the previous video's final frame (listed as startBoundary); e12 hands to math-s11-m01 (provisional).",
+  "Pace flags (gentler Standard pace): e04 is at risk (four kinds of earning in one point, three without site teaching): suggested split e04a (piecework and royalties) and e04b (government payments and sole-trader earnings). Watch e06, e10 and e12. e05 is short (about 5 to 6 minutes), which is fine.",
+  "Money figures (root rulings 5 and 32), every one dated in the packs: Fair Work Commission Annual Wage Review 2026 (decision 2 June 2026; from the first full pay period on or after 1 July 2026): national minimum wage $26.44 an hour, $1004.90 a week; award rates up 4.75%; General Retail Industry Award Level 1 $27.81 (permanent), $34.76 (casual), with Saturday 125%, Sunday 150% and public holiday 225% for permanent staff (FWO pay guide MA000004, Codex confirms). ATO resident tax rates 2026-27: nil to $18 200, 15% to $45 000, 30% to $135 000, 37% to $190 000, 45% above. Medicare levy 2% (low-income single threshold $28 011 for 2026-27, provisional on the ATO page). Superannuation guarantee 12% from 1 July 2025. Youth Allowance (student, single, away from home) $677.20 a fortnight from 1 January 2026 (Services Australia). PAYG withholding: ATO NAT 1005, 1006 and 1007 for payments from 1 July 2026 (values in the packs are PROVISIONAL, computed from published Schedule 1 coefficients; Codex copies the exact rows). Each video says once that rates change every year.",
+  "Site numbers: every value in the eight lessons was recalculated (work/brief-standard-s11-e/recalc.py, 143 values, all match the site's own arithmetic). Two problems are dated, not arithmetic: lesson08 uses the 2024-25 tax table (redo with 2026-27; Ella's $88 debt becomes a $180 refund) and lesson06 mixes 11.5% and 12% super. Seven site hourly rates are below the 2026-27 adult minimum ($26.44): lesson01 we-3, lesson02 we-1, we-2, we-4 and drill 2, lesson04 we-3, lesson05 we-3. Use the site's other examples or present these as junior rates.",
+  "Site gaps taught from the syllabus (root ruling 3): e06 and e12 (spreadsheets, no site lesson); e04 (royalties, government payments, sole-trader earnings); e09 (reading a PAYG tax table: the site only gives PAYG as a stated amount, although the crosswalk marks it covered).",
+  "New site findings are logged as MS-70 onward in docs/production/claude-pm/site-corrections-maths-standard.md (section 11). Kit needs: docs/production/claude-pm/checks/maths-standard-kit-needs-s11-e.md (SpreadsheetGrid from the a-strand list, a pay slip card, a tax table reader and a bracket slicer)."
+ ],
+ "part": 9,
+ "covers": "math-s11-e01 to math-s11-e12 (Year 11 Earning money, one course for Standard 1 and Standard 2)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 11,
+   "entries": [
+    {
+     "id": "math-s11-e01",
+     "playlistOrder": 16,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do salaries and wages compare across weekly, fortnightly, monthly and yearly pay?",
+     "syllabusActionIds": [
+      "ci80921f0a",
+      "ci7d0d168c"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci80921f0a",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Solve problems involving salaries",
+       "sourceHtml": "<p>Solve problems involving salaries</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci7d0d168c",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Calculate weekly, fortnightly, monthly and yearly earnings assuming 1 year = 52 weeks",
+       "sourceHtml": "<div><span>Calculate weekly, fortnightly, monthly and yearly earnings assuming </span><span class=\"math-tex\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>1</mn><mi> </mi><mtext>year</mtext><mo>=</mo><mn>52</mn><mi> </mi><mtext>weeks</mtext></math></span><span></span></div>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson01.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson01.sa.html",
+      "sectionIds": [
+       "wages-vs-salaries-what",
+       "converting-between-pay-periods",
+       "worked-examples-4-in",
+       "common-errors-the-3",
+       "revisit-your-thinking",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3",
+       "we-4"
+      ],
+      "sha256": "4e0770af0317b766d82086712ad73172274e01c594c5c25922ea2d05521f58fa"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson01.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson01.sa.html",
+       "sectionIds": [
+        "wages-vs-salaries-what",
+        "converting-between-pay-periods",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "revisit-your-thinking",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "4e0770af0317b766d82086712ad73172274e01c594c5c25922ea2d05521f58fa"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "Stage 5",
+       "text": "Rates in context (dollars per hour); multiplying and dividing by whole numbers."
+      },
+      {
+       "source": "math-s11-l07",
+       "text": "Final frame (PROVISIONAL, l07 not yet designed): pay against hours worked as a straight line through the origin, the gradient k labelled \"dollars per hour\"."
+      },
+      {
+       "source": "math-s11-f01",
+       "text": "ci7f303375: substituting into a formula."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-l07"
+     ],
+     "startBoundary": "PROVISIONAL: l07's final frame, a line through the origin with pay ($) up and hours worked across, gradient k = dollars per hour (pay = k × hours). e01 names k: that rate is a wage. If the l07 designer chooses another final frame, e01's first scene follows it.",
+     "stopBoundary": "A wage is paid per hour (more hours, more pay); a salary is a fixed yearly amount paid in equal instalments; weekly pay = hourly rate × hours; the year as 52 weeks (syllabus), 26 fortnights and 12 months; convert through the yearly figure (× 52, ÷ 26, ÷ 12); why monthly pay is not weekly × 4 (a year is 52 weeks, not 48); hourly rate from a salary (÷ 52, then ÷ hours); compare two job offers in the same unit and finish with a sentence. Overtime and penalty rates are e02; tax is e07 onwards.",
+     "nextHandoff": "math-s11-e02",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's numbers where the wage is at or above the 2026-27 minimum: we-1 ($26.40 × 38), we-2 ($84 500 ÷ 26), we-4 ($61 152, 36 hours, $32.67), drill 2 (Job A $63 500 against $31.25 × 38: Job A by $1 750) and the hook ($80 000 paid three ways). we-3's $23.20 an hour is below the 2026-27 adult national minimum ($26.44, Fair Work Commission, from 1 July 2026): use drill 2 as the job comparison instead. Say once that award rates change every 1 July. Pace: comfortable (two points); about 7 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e01.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e02",
+     "playlistOrder": 17,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do overtime and penalty rates change a pay packet?",
+     "syllabusActionIds": [
+      "ci652749aa"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci652749aa",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Solve problems involving wages, penalty rates for overtime, weekends and public holidays, given an hourly rate of pay",
+       "sourceHtml": "<p>Solve problems involving <a data-item-id=\"22659865-0859-4167-80b7-d0b5633bd5a2\" href=\"\">wages</a>, <a data-item-id=\"75fbc825-2b4c-4053-a905-7c79596748be\" href=\"\">penalty rates</a> for <a data-item-id=\"8a002a99-812a-42f0-b889-ff77297604be\" href=\"\">overtime</a>, weekends and public holidays, given an hourly <a data-item-id=\"1b90898f-0cd8-4378-9e48-96acef2a41b3\" href=\"\">rate</a> of pay</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson02.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson02.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "understanding-overtime-and-penalty",
+       "calculating-total-pay-with",
+       "worked-examples-4-in",
+       "common-errors-the-3",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3",
+       "we-4"
+      ],
+      "sha256": "00c075f91535c41cd0adc2ae4216f2539dcc6fe7e34ada63ee0a7bad19b84311"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson02.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson02.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "understanding-overtime-and-penalty",
+        "calculating-total-pay-with",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "00c075f91535c41cd0adc2ae4216f2539dcc6fe7e34ada63ee0a7bad19b84311"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+       "sectionIds": [
+        "calculating-gross-pay-from",
+        "checking-and-verifying-a",
+        "worked-examples"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-3"
+       ],
+       "sha256": "9dfc6dcec3727e7981fbade98d9b06ccc0c88ad4373ec8bdef040c6059b79d09"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "ci80921f0a, ci7d0d168c: wages (hourly rate × hours) and pay periods."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e01"
+     ],
+     "startBoundary": "e01's final frame: a fish-and-chip shop's window sign \"Open public holiday\" beside its staff roster, chip \"same hours, bigger pay?\". e02 answers: penalty rates.",
+     "stopBoundary": "Penalty rates as multipliers of the ordinary hourly rate (time-and-a-quarter 1.25, time-and-a-half 1.5, double time 2, double time and a half 2.5), for overtime, weekends and public holidays, always given in the question; the multiplier sets the whole rate (1.5 × rate, not an extra 0.5 forgotten); each rate-block worked separately (hours × rate), then added; tiered overtime (first 2 hours at 1.5, then 2); allowances added flat, never multiplied; the ordinary-time equivalent (4 hours at double time = 8 ordinary hours); a pay-slip check line (lesson04 we-1, we-3). Real award percentages (General Retail Award 2026-27: Saturday 125%, Sunday 150%, public holiday 225% for permanent Level 1) shown once as a dated example. Commission is e03.",
+     "nextHandoff": "math-s11-e03",
+     "advancedReuseCandidates": [],
+     "recommendation": "Reuse the site's numbers that sit above the 2026-27 adult minimum: drill 1 ($28.60, 38 + 4 at 1.5: $1258.40), drill 3 ($32, tiered: $1504.00), lesson04 we-1 (Hana, $27.50 a fortnight with a meal allowance: $2517.50) and lesson04 we-3 (the pay-slip error, $24.00 base: flag as below the adult minimum or use SAQ 3's $26.00 version: $1176.00). we-1 ($22.80), we-2 ($18.60) and we-4 ($25.40) are below $26.44: present any of them only as a junior rate, or skip. Pace: comfortable; about 8 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e02.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e03",
+     "playlistOrder": 18,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does commission, including a sliding scale, pay for sales?",
+     "syllabusActionIds": [
+      "ci85c34acf"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci85c34acf",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Calculate an individual’s earnings from commission, sliding scale commission, piecework, royalties, government payments and as a sole trader",
+       "sourceHtml": "<p>Calculate an individual’s earnings from <a data-item-id=\"aa93cf25-447d-478d-9a26-0fa964f39edc\" href=\"\">commission</a>, sliding scale commission, <a data-item-id=\"f431a981-9636-41dd-afac-42c3995a5501\" href=\"\">piecework</a>, <a data-item-id=\"147b3b13-2612-42f0-928a-39c1d103ae95\" href=\"\">royalties</a>, <a data-item-id=\"a9fd9383-23c7-42a1-8345-6ecc6640942f\" href=\"\">government payments</a> and as a sole trader</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "partial",
+       "siteGap": "Commission, sliding-scale (tiered) commission, piecework and royalties are taught in earning-money/lesson03. Government payments and sole-trader earnings are not taught as earnings."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "commission-flat-and-retainer",
+       "tiered-commission-split-by",
+       "worked-examples-4-in",
+       "common-errors-the-3",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2"
+      ],
+      "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "commission-flat-and-retainer",
+        "tiered-commission-split-by",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2"
+       ],
+       "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "sectionIds": [
+        "comparing-earning-options",
+        "worked-examples",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2"
+       ],
+       "sha256": "b254ea601d328e73a60f6b12e60e4218df2bcfb2fbe7afdf5df4cb7577de32c2"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Pay periods and converting to a year (for retainer comparisons)."
+      },
+      {
+       "source": "math-s11-e02",
+       "text": "Working a pay in separate blocks, then adding."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e02"
+     ],
+     "startBoundary": "e02's final frame: a car yard's price board with a \"salesperson: $620 a week + 2.8%\" card (lesson03 we-1), chip \"paid for sales, not hours\".",
+     "stopBoundary": "Commission as a percentage of sales (rate as a decimal first); retainer plus commission; commission only on sales above a threshold (subtract the threshold first); sliding scale (tiered) commission, each rate applied only to its slice of sales, then added; finding the sales needed for a target income (one simple equation, as in lesson05 card 03); comparing a commission job with a salary in the same period (lesson05 we-2, optional). Piecework, royalties, government payments and sole-trader earnings are e04 (the same syllabus point, ci85c34acf).",
+     "nextHandoff": "math-s11-e04",
+     "advancedReuseCandidates": [],
+     "recommendation": "Use lesson03's numbers exactly: card 05 (3.5% of $45 000 = $1575), we-1 ($620 + 2.8% of $84 000 = $2972.00), card 06 (2% / 3.5% / 5% on $65 000 = $2200, with the crossed $3250) and we-2 (3% / 4.5% / 6% on $55 000 = $2475.00). The point is shared with e04; e03 owns commission and the sliding scale. Pace: comfortable; about 8 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e03.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e04",
+     "playlistOrder": 19,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How are piecework, royalties, government payments and sole-trader income worked out?",
+     "syllabusActionIds": [
+      "ci85c34acf"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci85c34acf",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Calculate an individual’s earnings from commission, sliding scale commission, piecework, royalties, government payments and as a sole trader",
+       "sourceHtml": "<p>Calculate an individual’s earnings from <a data-item-id=\"aa93cf25-447d-478d-9a26-0fa964f39edc\" href=\"\">commission</a>, sliding scale commission, <a data-item-id=\"f431a981-9636-41dd-afac-42c3995a5501\" href=\"\">piecework</a>, <a data-item-id=\"147b3b13-2612-42f0-928a-39c1d103ae95\" href=\"\">royalties</a>, <a data-item-id=\"a9fd9383-23c7-42a1-8345-6ecc6640942f\" href=\"\">government payments</a> and as a sole trader</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "partial",
+       "siteGap": "Commission, sliding-scale (tiered) commission, piecework and royalties are taught in earning-money/lesson03. Government payments and sole-trader earnings are not taught as earnings."
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "sectionIds": [
+       "worked-examples-4-in",
+       "revisit-your-thinking",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-4"
+      ],
+      "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "sectionIds": [
+        "worked-examples-4-in",
+        "revisit-your-thinking",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-4"
+       ],
+       "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "sectionIds": [
+        "comparing-earning-options",
+        "worked-examples"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "b254ea601d328e73a60f6b12e60e4218df2bcfb2fbe7afdf5df4cb7577de32c2"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e03",
+       "text": "Earnings as a rate applied to an amount; rounding up to meet a target."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Weekly, fortnightly and yearly conversions (Youth Allowance is paid fortnightly)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e03"
+     ],
+     "startBoundary": "e03's final frame: a strawberry crate on a farm scale with a \"$2.35 a crate\" tag (lesson03 we-4), chip \"paid per item\".",
+     "stopBoundary": "Piecework (items × rate per item; the number of items needed to match a wage, rounded up, lesson05 we-3); the Horticulture Award minimum-wage floor for pieceworkers (one sentence, dated); royalties as a percentage of the price of each item sold (a book; syllabus only); government payments as a fixed amount per period, converted between fortnights, weeks and years (Youth Allowance, Services Australia rate from 1 January 2026; syllabus only, no income-test calculation); sole-trader earnings as income minus business costs, with no employer, no paid leave and no employer super (syllabus only). Leave loading is e05.",
+     "nextHandoff": "math-s11-e05",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep lesson03 we-4 (186 crates × $2.35 = $437.10) and drill 2 (172 × $2.45 = $421.40). lesson05 we-3 uses $19.80 an hour (below the 2026-27 minimum): keep its method and price per component ($2.75) but match a 2026-27 retail Level 1 week (38 × $27.81 = $1056.78, so 385 components), or present it as a junior rate. Royalties, government payments and sole-trader earnings have no site teaching (crosswalk: partial); teach from the syllabus. Pace: AT RISK (four kinds of earning, three without site teaching). Suggested split: e04a (piecework and royalties: paid per item) and e04b (government payments and sole-trader earnings). Root decides.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e04.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e05",
+     "playlistOrder": 20,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "What is leave loading, and how much extra does it pay?",
+     "syllabusActionIds": [
+      "ci9724bbbe"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci9724bbbe",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Calculate leave loading by finding a percentage of eligible normal pay",
+       "sourceHtml": "<p>Calculate leave loading by finding a percentage of eligible normal pay</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+      "sectionIds": [
+       "worked-examples-4-in",
+       "common-errors-the-3",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-3"
+      ],
+      "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson03.sa.html",
+       "sectionIds": [
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-3"
+       ],
+       "sha256": "4bff2698118bd1e4657f6f5cf02f51557282e4959a29a1249fd1b481a6392aa4"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson05.sa.html",
+       "sectionIds": [
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [],
+       "sha256": "b254ea601d328e73a60f6b12e60e4218df2bcfb2fbe7afdf5df4cb7577de32c2"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Weekly ordinary pay from a rate and hours."
+      },
+      {
+       "source": "math-s11-e02",
+       "text": "Ordinary pay is separate from overtime and penalty pay."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e04 (or e04b if split)"
+     ],
+     "startBoundary": "e04's final frame: a packed suitcase beside a wall calendar with four weeks circled, chip \"4 weeks off: paid?\".",
+     "stopBoundary": "Annual leave as paid time off for permanent employees (4 weeks a year under the National Employment Standards); leave loading as a percentage (commonly 17.5%, always given) of the eligible normal (ordinary) pay for the leave taken; ordinary pay excludes overtime, penalty and one-off amounts; loading = rate × weeks of leave × weekly ordinary pay; total leave pay = leave pay + loading; casual employees get a 25% casual loading instead of paid leave (one contrast). The spreadsheet model is e06.",
+     "nextHandoff": "math-s11-e06",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep lesson03 we-3 ($1240 × 4 × 0.175 = $868.00), drill 3 ($1120: $784.00), the fill-the-gap ($980: $686) and lesson05 SAQ 3 ($1050: $4935.00 in total). The crosswalk's site match (lesson03 tiered-commission card) points at the wrong section; leave loading is taught in lesson03 card 02, we-3 and trap 03. Pace: short (one point); about 5 to 6 minutes, which is fine.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e05.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e06",
+     "playlistOrder": 21,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does a spreadsheet model a pay packet with overtime, bonuses and commission?",
+     "syllabusActionIds": [
+      "cic3748618"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cic3748618",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Ways of earning",
+       "text": "Use a spreadsheet to model an employee’s income including overtime, salary, bonuses, commission, piecework and royalties",
+       "sourceHtml": "<p>Use a spreadsheet to model an employee’s income including overtime, <a data-item-id=\"3572cfb3-8236-4be3-a4a6-2e79ddb3a98b\" href=\"\">salary</a>, bonuses, commission, piecework and royalties</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "missing",
+       "siteGap": "No Earning money lesson uses a spreadsheet."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-f08",
+       "text": "ciffbbbd58: a spreadsheet formula filled down a column (cell references, = sign, fill-down)."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Salary and wage conversions."
+      },
+      {
+       "source": "math-s11-e02",
+       "text": "Overtime blocks."
+      },
+      {
+       "source": "math-s11-e03",
+       "text": "Commission."
+      },
+      {
+       "source": "math-s11-e04",
+       "text": "Piecework and royalties."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e05",
+      "math-s11-f08"
+     ],
+     "startBoundary": "e05's final frame: a blank, unbranded spreadsheet with column headings Rate, Hours, Overtime hours, Pay, chip \"one formula, every worker\".",
+     "stopBoundary": "A spreadsheet that models an employee's income: one row per worker or per month, input columns (rate, hours, overtime hours, sales, items, copies sold) and formula columns (=B2*C2, overtime =B2*1.5*D2, commission =E2*$H$1, piecework, royalty, a salary row ÷ 52, a bonus as a percentage or a fixed amount, a SUM total); a rate cell referenced with $ so one change updates every row; reading a formula and predicting its value; what-if changes (commission rate 2.5% to 3%). Tax spreadsheets are e12.",
+     "nextHandoff": "math-s11-e07",
+     "advancedReuseCandidates": [],
+     "recommendation": "No site lesson (crosswalk: missing). Teach from the syllabus with original, labelled examples. Reuse e01 to e05 numbers inside the sheet where possible so the spreadsheet checks answers students have already met. Pace: WATCH (six income types named in the point); one sheet for hourly and salaried rows and one short sheet for per-item and royalty rows keeps it under 9 minutes. Needs SpreadsheetGrid (kit list a).",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e06.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e07",
+     "playlistOrder": 22,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do allowable deductions turn income into taxable income?",
+     "syllabusActionIds": [
+      "ci1e53d540"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci1e53d540",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Determine taxable income by examining allowable deductions",
+       "sourceHtml": "<p>Determine <a data-item-id=\"e935ee9d-b2c1-40ad-a995-8300a7b0fa81\" href=\"\">taxable income</a> by examining allowable <a data-item-id=\"21a239b0-ebc1-451e-bb03-af27b39b7003\" href=\"\">deductions</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson07.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson07.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "gross-income-vs-taxable",
+       "worked-examples-4-in",
+       "independent-checks",
+       "revisit-your-thinking",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3",
+       "we-4"
+      ],
+      "sha256": "7d3d53ce2e0ad96f2440b5cb996d22f6bc8336f3a9e5be6496d6956284afedd0"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson07.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson07.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "gross-income-vs-taxable",
+        "worked-examples-4-in",
+        "independent-checks",
+        "revisit-your-thinking",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "7d3d53ce2e0ad96f2440b5cb996d22f6bc8336f3a9e5be6496d6956284afedd0"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Yearly income from a salary or wage."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e06"
+     ],
+     "startBoundary": "e06's final frame: steel-capped work boots on a receipt, chip \"does this cut my tax?\".",
+     "stopBoundary": "Gross (assessable) income as the total of wages, salary, interest and other income for the financial year; an allowable deduction as a cost of earning that income (protective boots, tools, union fees, work-related study, compulsory or occupation-specific uniforms, gifts of $2 or more to a deductible gift recipient); not allowable: ordinary clothing, travel from home to work, private costs, and PAYG tax already withheld; taxable income = gross income − allowable deductions; working backwards for the deductions. Tax payable is e08.",
+     "nextHandoff": "math-s11-e08",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep lesson07's numbers exactly: we-1 (Sophie: $90 040 − $1050 = $88 990), we-2 ($72 830), we-3 (working back: $3730), we-4 (Olivia: $71 580). The hook (boots, a course, a donation) is a good opener. Cite the ATO's occupation guides and the gifts and donations page (dated) once; say that only work-related costs count. Pace: comfortable; about 7 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e07.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e08",
+     "playlistOrder": 23,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does a tax table give the tax payable on a year of income?",
+     "syllabusActionIds": [
+      "cifaf82aa0"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cifaf82aa0",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Determine tax payable by interpreting and applying information in tax tables",
+       "sourceHtml": "<p>Determine <a data-item-id=\"bd716fec-f3fd-4c88-bbe8-743d0bc37ae8\" href=\"\">tax</a> payable by interpreting and applying information in tax tables</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "sectionIds": [
+       "recall-your-gut-answer",
+       "how-progressive-tax-brackets",
+       "worked-examples-4-in",
+       "revisit-your-thinking",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-4"
+      ],
+      "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "how-progressive-tax-brackets",
+        "worked-examples-4-in",
+        "revisit-your-thinking",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-4"
+       ],
+       "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      },
+      {
+       "source": "math-s11-e07",
+       "text": "ci1e53d540: taxable income."
+      },
+      {
+       "source": "math-s11-e03",
+       "text": "A rate applied only to a slice (sliding scale commission is the same idea)."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e07"
+     ],
+     "startBoundary": "e07's final frame: Sophie's taxable income card ($88 990) slid beside a blank resident tax table, chip \"which row?\".",
+     "stopBoundary": "The 2026-27 resident income tax table (ATO; nil to $18 200, 15c, 30c, 37c, 45c), read row by row: find the bracket, base amount + rate × (taxable income − the bracket's lower limit); progressive tax as slices (the same idea as e03's sliding scale); the myth that a pay rise into a higher bracket lowers take-home pay; tax payable excludes the Medicare levy (e10) and PAYG reconciliation (e11). Rates change each year; the question's table is always used.",
+     "nextHandoff": "math-s11-e09",
+     "advancedReuseCandidates": [],
+     "recommendation": "The site uses the 2024-25 table (16c, base $4288). Root ruling 5 needs 2026-27 (15c, bases $4020, $31 020 and $51 370). Keep the site's incomes and redo the tax: we-1 (Zara, $67 500: $10 770, site $11 038), we-4 (Ella, $45 000: $4020, site $4288), SA 1 ($60 000: $8520, site $8788). All site arithmetic is correct for 2024-25. Pace: comfortable; about 7 to 8 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e08.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e09",
+     "playlistOrder": 24,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does PAYG take tax out of each weekly, fortnightly or monthly pay?",
+     "syllabusActionIds": [
+      "cic3cf78c6"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cic3cf78c6",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Calculate the weekly, fortnightly or monthly tax to be deducted from a worker’s pay under the Australian Pay-As-You-Go (PAYG) taxation system using tax tables",
+       "sourceHtml": "<p>Calculate the weekly, fortnightly or monthly tax to be deducted from a worker’s pay under the Australian <a data-item-id=\"91753839-7474-4f47-b33e-b23766f542ea\" href=\"\">Pay-As-You-Go (PAYG) taxation</a> system using tax tables</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+      "sectionIds": [
+       "anatomy-of-a-pay",
+       "pay-slip-strategy-for",
+       "worked-examples"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-2",
+       "we-4"
+      ],
+      "sha256": "9dfc6dcec3727e7981fbade98d9b06ccc0c88ad4373ec8bdef040c6059b79d09"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson04.sa.html",
+       "sectionIds": [
+        "anatomy-of-a-pay",
+        "pay-slip-strategy-for",
+        "worked-examples"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-2",
+        "we-4"
+       ],
+       "sha256": "9dfc6dcec3727e7981fbade98d9b06ccc0c88ad4373ec8bdef040c6059b79d09"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson06.sa.html",
+       "sectionIds": [
+        "what-are-deductions-and",
+        "superannuation-employer-cost-vs",
+        "worked-examples-4-in"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-4"
+       ],
+       "sha256": "210387123f041f906bf684f5ff2cea3e23085f3febc6da2120726f784279ff17"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-e08",
+       "text": "cifaf82aa0: yearly tax payable from a table."
+      },
+      {
+       "source": "math-s11-e01",
+       "text": "Weekly, fortnightly and monthly pay."
+      },
+      {
+       "source": "math-s11-e02",
+       "text": "Gross pay on a pay slip."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e08"
+     ],
+     "startBoundary": "e08's final frame: a weekly pay slip with a blank \"Tax withheld\" line, chip \"taken out every week?\".",
+     "stopBoundary": "Pay As You Go (PAYG) withholding: the employer takes tax from each pay and sends it to the ATO as a prepayment of the year's tax; reading the ATO weekly (NAT 1005), fortnightly (NAT 1006) and monthly (NAT 1007) tax tables for 2026-27 (amounts from 1 July 2026), choosing the column (tax-free threshold claimed or not, from the TFN declaration); the withheld amount includes an allowance for the Medicare levy; weekly withheld × 52 compared with the yearly tax (a preview of e11); net pay = gross − PAYG − other deductions (on a pay slip). Medicare levy as a calculation is e10.",
+     "nextHandoff": "math-s11-e10",
+     "advancedReuseCandidates": [],
+     "recommendation": "The site never reads a PAYG tax table: lesson04 and lesson06 give PAYG as a stated dollar amount (crosswalk says covered; it is not). Teach the table reading from the syllabus with a 2026-27 ATO table excerpt; Codex copies the exact rows. Use lesson06 we-1 and lesson04 we-4 for the net-pay line only. Pace: comfortable; about 7 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e09.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e10",
+     "playlistOrder": 25,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How are the Medicare levy and net pay calculated?",
+     "syllabusActionIds": [
+      "cieb8d7d73",
+      "ci87c8a7d9"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "cieb8d7d73",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Calculate the Medicare levy from taxable income",
+       "sourceHtml": "<p>Calculate the <a data-item-id=\"2605a68f-33aa-4444-9ce8-63717dbbe814\" href=\"\">Medicare levy</a> from taxable income</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      },
+      {
+       "id": "ci87c8a7d9",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Calculate net earnings after deductions, taxation and the Medicare levy",
+       "sourceHtml": "<p>Calculate <a data-item-id=\"b6ca4481-5320-46a4-8bba-89aeea94f0dd\" href=\"\">net earnings</a> after deductions, taxation and the Medicare levy</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "sectionIds": [
+       "how-progressive-tax-brackets",
+       "worked-examples-4-in"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-3"
+      ],
+      "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "sectionIds": [
+        "how-progressive-tax-brackets",
+        "worked-examples-4-in"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-3"
+       ],
+       "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+      },
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson06.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson06.sa.html",
+       "sectionIds": [
+        "recall-your-gut-answer",
+        "what-are-deductions-and",
+        "superannuation-employer-cost-vs",
+        "worked-examples-4-in",
+        "common-errors-the-3",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "210387123f041f906bf684f5ff2cea3e23085f3febc6da2120726f784279ff17"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-e08",
+       "text": "Tax payable from the 2026-27 table."
+      },
+      {
+       "source": "math-s11-e09",
+       "text": "PAYG withheld and pay-slip deductions."
+      },
+      {
+       "source": "Stage 5",
+       "text": "Percentages as decimals (3.5% = 0.035), a percentage of an amount, multiplying and dividing decimals, rounding money to the cent."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e09"
+     ],
+     "startBoundary": "e09's final frame: the same pay slip with a Medicare card beside it and a chip \"2% of what?\".",
+     "stopBoundary": "The Medicare levy as 2% of taxable income (not of the tax); a reduced or nil levy for low incomes (2026-27 single threshold $28 011, provisional, ATO) named once and not calculated beyond one example; net earnings for a year = gross income − income tax − Medicare levy (and any other stated deductions); net pay on a pay slip = gross − total deductions (PAYG, union fees, salary sacrifice, health insurance); employer superannuation guarantee (12% from 1 July 2025) paid on top of wages, never subtracted from net pay. Refund or debt is e11.",
+     "nextHandoff": "math-s11-e11",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep lesson08's Medicare examples ($67 500: $1350; $70 000: $1400 with the crossed $235.76) and lesson06 we-1 (Kofi: $2327.50) and we-3 (Rhys: $897.45). lesson06 we-2 and we-4 use the 2024-25 super rate (11.5%): redo at 12% ($223.20 and $182.40) or skip the super calculation. Pace: WATCH (two points plus the super contrast); about 8 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e10.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e11",
+     "playlistOrder": 26,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "After a tax return, do we get a refund or owe more tax?",
+     "syllabusActionIds": [
+      "ci7b90b994"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci7b90b994",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Determine by calculation if more tax is payable or if a refund is owed after completing a tax return",
+       "sourceHtml": "<p>Determine by calculation if more tax is payable or if a refund is owed after completing a <a data-item-id=\"e98f972a-59a3-4510-952c-cd57321c1cb7\" href=\"\">tax return</a></p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "covered",
+       "siteGap": null
+      }
+     ],
+     "sourceLesson": {
+      "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+      "sectionIds": [
+       "tax-refund-or-tax",
+       "worked-examples-4-in",
+       "practice-set"
+      ],
+      "sectionSelector": "data-step-id",
+      "exampleIds": [
+       "we-1",
+       "we-2",
+       "we-3",
+       "we-4"
+      ],
+      "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+     },
+     "sourceLessons": [
+      {
+       "path": "kyleajames33-beep/Teaching-APP@5d74a627:subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "url": "https://hscscience.com.au/subjects/maths-standard/year11/earning-money/lesson08.sa.html",
+       "sectionIds": [
+        "tax-refund-or-tax",
+        "worked-examples-4-in",
+        "practice-set"
+       ],
+       "sectionSelector": "data-step-id",
+       "exampleIds": [
+        "we-1",
+        "we-2",
+        "we-3",
+        "we-4"
+       ],
+       "sha256": "2d5c712075eeee98f4fa6a78089dbe912fb78f0c8b11ca706e2188b435bf1ef5"
+      }
+     ],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-e07",
+       "text": "Taxable income."
+      },
+      {
+       "source": "math-s11-e08",
+       "text": "Tax payable (2026-27 table)."
+      },
+      {
+       "source": "math-s11-e09",
+       "text": "PAYG withheld across the year."
+      },
+      {
+       "source": "math-s11-e10",
+       "text": "Medicare levy."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e10"
+     ],
+     "startBoundary": "e10's final frame: an unbranded tax-return summary screen with two lines, \"Tax withheld\" and \"Tax and Medicare levy owed\", chip \"refund or bill?\".",
+     "stopBoundary": "The tax return as the yearly check: total liability = tax payable + Medicare levy; compare with PAYG withheld; refund = withheld − liability when withheld is bigger, debt (more tax payable) = liability − withheld otherwise; the full chain from income and deductions (lesson08 we-3); why a debt happens (two jobs both claiming the tax-free threshold; untaxed interest; a pay rise late in the year). Spreadsheet scenarios are e12.",
+     "nextHandoff": "math-s11-e12",
+     "advancedReuseCandidates": [],
+     "recommendation": "Keep the site's incomes and PAYG amounts, recalculated with the 2026-27 table: we-1 (Zara: refund $2860, site $2592), we-2 (Marcus: debt $1060, site $1328), we-3 (Priya: refund $2976, site $2708), we-4 (Ella: refund $180; the site's 2024-25 answer is a debt of $88). Ella's flip is a ready-made \"rates change every year\" moment. Pace: comfortable; about 7 to 8 minutes.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e11.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    },
+    {
+     "id": "math-s11-e12",
+     "playlistOrder": 27,
+     "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does a spreadsheet test different tax scenarios?",
+     "syllabusActionIds": [
+      "ci877a99ed"
+     ],
+     "standard2ActionIds": [],
+     "standard1ActionIds": [],
+     "syllabusActions": [
+      {
+       "id": "ci877a99ed",
+       "course": "Year 11 (common to Standard 1 and Standard 2)",
+       "group": "Taxation",
+       "text": "Use a spreadsheet to model scenarios involving taxation",
+       "sourceHtml": "<p>Use a spreadsheet to model scenarios involving taxation</p>",
+       "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/faacdf9b3d",
+       "siteCoverage": "missing",
+       "siteGap": "No Earning money lesson uses a spreadsheet for tax."
+      }
+     ],
+     "sourceLesson": null,
+     "sourceLessons": [],
+     "entryKnowledge": [
+      {
+       "source": "math-s11-e06",
+       "text": "cic3748618: a pay spreadsheet with input and formula columns and a $ rate cell."
+      },
+      {
+       "source": "math-s11-e08",
+       "text": "Tax payable from the table."
+      },
+      {
+       "source": "math-s11-e10",
+       "text": "Medicare levy and net earnings."
+      },
+      {
+       "source": "math-s11-e11",
+       "text": "Refund or debt."
+      }
+     ],
+     "prerequisiteVideos": [
+      "math-s11-e11",
+      "math-s11-e06"
+     ],
+     "startBoundary": "e11's final frame: the tax-return summary turned into a spreadsheet row (Income, Tax, Medicare, Net) with an empty row under it, chip \"what if I earn more?\".",
+     "stopBoundary": "A tax spreadsheet with inputs (income, deductions, PAYG) and given formula columns (taxable income, tax from the 2026-27 table, Medicare levy, net earnings, refund or debt); changing one input to test a scenario (a pay rise, extra shifts, a new deduction, a second job); reading the results to answer a question; showing that more taxable income always leaves more after tax (the bracket myth, tested row by row). Students read and adapt a supplied tax formula; they are not expected to build nested IF formulas.",
+     "nextHandoff": "math-s11-m01 (Managing money; not yet researched)",
+     "advancedReuseCandidates": [],
+     "recommendation": "No site lesson (crosswalk: missing). Teach from the syllabus with original, labelled examples in the 2026-27 table. Reuse e01, e08 and e11 incomes as rows so the sheet checks earlier answers. Pace: WATCH; about 8 minutes. The handoff to m01 is PROVISIONAL until the m-strand pack exists.",
+     "preDesignPack": "docs/production/claude-pm/pre-design/maths-standard/math-s11-e12.md",
+     "status": "research-input-for-Claude-not-approved-route"
+    }
+   ]
+  }
+ }
+}

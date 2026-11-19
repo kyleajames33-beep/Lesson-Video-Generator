@@ -525,3 +525,62 @@ Source: the same read-only clone, HEAD `5d74a627`, folders `subjects/maths-stand
 
 ## Note for the site (root, 19 Nov 2026)
 - **c06 (critical path spreadsheet):** the video's backward-scan cells point at a finish cell (=E10) so the memory aid "MIN coming up" holds; the site writes =MAX($E$2:$E$8). Values agree; consider aligning the site.
+
+## 11. Findings from the Year 11 Earning money packs, e01 to e12 (19 November 2026)
+
+Source: the same read-only clone, HEAD `5d74a627`, folder `subjects/maths-standard/year11/earning-money/` (lessons 01 to 08; SHA256 values in `programme/maths-standard-route-inputs-9.json`, all matching the crosswalk inventory). No site file was changed. Every worked example, drill, short answer and trap value in the eight lessons was recalculated with exact decimal arithmetic (`work/brief-standard-s11-e/recalc.py`, output `recalc-output.txt`): 143 values, all match the site's own arithmetic. The findings below are wording, consistency and currency problems. Packs: `pre-design/maths-standard/math-s11-e01.md` to `e12.md`.
+
+### MS-70. "Bi-monthly" for 24 pay periods, and the reason monthly pay is not weekly × 4
+
+- Lesson: `year11/earning-money/lesson01.sa.html`, card 02, card 05 and `common-errors-the-3`.
+- Old text: Trap 02: "Students sometimes confuse "bi-monthly" (24 periods) with "fortnightly" (26 periods)." Card 02 and card 05: "Some months have 5 weeks." Trap 01: "Using $W \times 4$ gives an amount that is about $\$200$–$\$400$ short for a typical salary."
+- Correction: Trap 02: "Students sometimes confuse "twice a month" (24 pay periods) with "fortnightly" (26 pay periods)." Card 02 and card 05: "A year has 52 weeks, but 12 × 4 is only 48, so weekly × 4 leaves out four weeks of pay each year. A month is about 4.33 weeks." Trap 01: "Using $W \times 4$ for monthly pay leaves the month short by one-thirteenth of a month's pay (about $\$385$ on a $\$60{,}000$ salary and $\$513$ on $\$80{,}000$)."
+- Reason: "bi-monthly" usually means every two months (6 periods a year); 24 periods is semi-monthly. "Some months have 5 weeks" is not the reason (no month has 5 full weeks; the gap is the 4 weeks lost by 12 × 4). The shortfall is year ÷ 12 − 4 × year ÷ 52 = year ÷ 156: $384.62 on $60 000 and $512.82 on $80 000, so "$200 to $400" is too low for the lesson's own $80 000 hook (recalculated).
+
+### MS-71. Superannuation shown as a deduction from gross pay
+
+- Lesson: `year11/earning-money/lesson04.sa.html`, key terms and `we-2`.
+- Old text: key term "Deductions: Amounts subtracted from gross pay (tax, superannuation, union fees, etc.)"; key term "Superannuation: Compulsory employer contributions to a retirement savings fund."; `we-2`: "His deductions for the fortnight are: PAYG tax withheld $\$482.00$, superannuation $\$148.80$."
+- Correction: key term "Deductions: Amounts subtracted from gross pay (tax, voluntary super contributions such as salary sacrifice, union fees, etc.)"; `we-2`: "PAYG tax withheld $\$482.00$, salary-sacrifice superannuation $\$148.80$." Values unchanged ($630.80; gross $2,274.00).
+- Reason: the compulsory superannuation guarantee is paid by the employer on top of wages and is not subtracted from gross pay (lesson06 card 02 and Trap 01 say so). Only voluntary employee contributions reduce net pay. As written, lesson04 contradicts lesson06.
+
+### MS-72. Two superannuation rates, and the guarantee listed as a deduction
+
+- Lesson: `year11/earning-money/lesson06.sa.html`, card 02, card 05, card 06, `we-2`, `we-4`, fill-the-gap and SA 2.
+- Old text: key term "The super guarantee rate is 12% from 1 July 2025"; card 06 "the 11.5% superannuation guarantee (2024–25)", "rising to 12% from 2025 onwards", "employer contributes 11.5% (2024–25) of gross earnings"; `we-2`, `we-4` and SA 2 use 11.5%. Card 02: "Mandatory deductions: PAYG income tax withheld and superannuation guarantee, law requires these. They always reduce net pay or are an extra employer cost." Card 05 summary: "Mandatory: income tax (PAYG) and superannuation."
+- Correction: use 12% (from 1 July 2025) in card 06, `we-2` ($1,860 × 0.12 = $223.20; total cost $2,083.20), `we-4` ($182.40; $1,702.40), SA 2 ($268.80; $2,508.80), the card 06 example ($60,000 × 1.12 = $67,200) and the fill-the-gap ($3,400 × 0.12 = $408); or keep 11.5% and write "(2024–25 rate)" beside every use. Card 02: "Mandatory deduction: PAYG income tax withheld. The superannuation guarantee is also required by law, but it is paid by the employer on top of wages, so it does not reduce net pay." Card 05 summary: "Mandatory: income tax (PAYG). Voluntary: health insurance, union fees, salary sacrifice." Card 06 summary: "of ordinary time earnings" in place of "of gross earnings".
+- Reason: the page states two rates for the same year and lists the guarantee as a deduction in the same cards that say it is not one. Recalculated: every 12% value above.
+
+### MS-73. The income tax table is the 2024-25 table
+
+- Lesson: `year11/earning-money/lesson08.sa.html`, card 03, card 05, `we-1` to `we-4`, the match task and SA 1 to SA 3.
+- Old text: "The supplied resident income tax table for 2024–25 (unchanged for 2025–26)", "$\$18{,}201$ – $\$45{,}000$: 16c for each $\$1$ over $\$18,200$", "$\$4,288$ + 30c", "$\$31,288$ + 37c", "$\$51{,}638$ + 45c"; `we-1` "for the 2024–25 financial year".
+- Correction: for 2026-27 the 16% rate is 15%, so the table reads: nil to $18,200; 15c for each $1 over $18,200; $4,020 plus 30c for each $1 over $45,000; $31,020 plus 37c for each $1 over $135,000; $51,370 plus 45c for each $1 over $190,000 (ATO; secondary sources read 19 November 2026, to be confirmed on the ATO page). Either label every example "2024–25" (the arithmetic is right for that year) or rework them: `we-1` tax $10,770, total $12,120, refund $2,860; `we-2` $24,120, $26,360, debt $1,060; `we-3` $14,805, $16,424, refund $2,976; `we-4` $4,020, $4,920, a **refund** of $180 (not a debt of $88); SA 1 $8,520; SA 2 $12,120, $13,560, refund $2,040; SA 3 $19,020, $20,920, debt $920; card 05's wrong-method example $70,000: tax $11,520.
+- Reason: rates change each year and the lesson says so; the page should name its year everywhere or use the current table. `we-4`'s answer changes from a debt to a refund (recalculated).
+
+### MS-74. The effective-rate sense check is wrong at $60 000
+
+- Lesson: `year11/earning-money/lesson08.sa.html`, `tax-refund-or-tax` pause prompt.
+- Old text: "the reasonableness check (effective rate = total tax ÷ taxable income; should be approximately 20–30% for incomes around $\$60\text{k}$–$\$100\text{k}$)".
+- Correction: "should be roughly 16% to 23% for incomes from $60k to $100k (including the Medicare levy)", or drop the range.
+- Reason: with the lesson's own table, tax plus levy is 16.6% of $60,000, 20.5% of $80,000 and 22.8% of $100,000 (2024-25); 16.2%, 20.2% and 22.5% for 2026-27 (recalculated). The stated range would make a correct answer at $60,000 look wrong.
+
+### MS-75. The hook's boots and course need their conditions
+
+- Lesson: `year11/earning-money/lesson07.sa.html`, `revisit-your-thinking`.
+- Old text: "Work boots = allowable (protective equipment for earning income). Professional development = allowable (directly incurred in earning income)."
+- Correction: "Protective work boots (for example steel-capped) = allowable. A professional development course = allowable if it is related to your current job. Registered charity donation = allowable (gift of $2 or more to a deductible gift recipient)." Consider changing the hook's "$800 on work boots" to "$180 on steel-capped work boots".
+- Reason: the ATO allows protective footwear, not ordinary shoes worn to work, and self-education only when it relates to current employment; the lesson's own `we-1` rejects a "conventional work wardrobe", so the hook should show the condition. $800 for one pair of boots is unrealistic.
+
+### MS-76. Owner note: hourly rates below the 2026-27 minimum wage
+
+- Lessons: `lesson01.sa.html` `we-3` ($23.20); `lesson02.sa.html` `we-1` ($22.80), `we-2` ($18.60), `we-4` ($25.40) and drill 2 ($24.80); `lesson04.sa.html` `we-3` ($24.00); `lesson05.sa.html` `we-3` ($19.80); `lesson05.sa.html` card 02 insight ("Most full-time workers earn $800–$2,500 per week gross").
+- Suggested: raise the adult rates to at least $26.44 an hour (national minimum wage from 1 July 2026, Fair Work Commission Annual Wage Review 2026) or call them junior rates in the text; change the insight to "Full-time adult workers earn at least about $1,000 a week gross (the 2026-27 national minimum wage is $1,004.90 for 38 hours)". If rates are raised, the answers change; the videos use the site's other examples or repriced ones (see the e01, e02 and e04 packs).
+- Reason: root ruling 5 asks for realistic 2026 NSW wages; a student comparing these examples with a real pay slip would be misled about the legal minimum.
+
+### Teaching gaps (no lesson teaches these; the videos teach from the syllabus)
+
+- **Reading a PAYG tax table** (`cic3cf78c6`): the crosswalk marks it covered through lesson04 and lesson06, but both give PAYG as a stated dollar amount; no lesson shows an ATO withholding table, the tax-free threshold column choice, or fortnightly and monthly tables. Suggested: a card with a short 2026-27 NAT 1005 excerpt and two look-ups (math-s11-e09 pack).
+- **Royalties** (`ci85c34acf`): lesson03 defines a royalty in its key terms but has no example or practice item. Government payments and sole-trader earnings are already listed in section 2.
+- **Spreadsheets** (`cic3748618`, `ci877a99ed`): already listed in section 2.
+- **Leave loading on leave other than 4 weeks:** lesson03 and lesson05 always use 4 weeks; the point says "a percentage of eligible normal pay", so a 2- or 3-week example and a line that overtime is not eligible would close the gap.
