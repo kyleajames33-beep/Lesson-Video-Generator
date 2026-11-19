@@ -153,3 +153,23 @@ Root read the crosswalk (`programme/syllabus/maths-standard-2024-crosswalk.json`
    - e11 drops the year comparison.
    - The five new ms11- plates.
    **e08** says "the row's lower limit, called the threshold" once, so students meet the exam word, then uses "threshold". **e12** uses a single IF per rule, not a nested IF (Standard 1 load). The m01 join stays provisional until m01 exists. **e07, e09, e10 and e11 wait for Codex** to copy and date the ATO deduction pages, the 2026-27 PAYG withholding rows and the Medicare levy threshold in force. No placeholder is voiced. The pack errors (lesson01 we-1 $26.40, lesson04 SAQ 3 $26.00, both below the $26.44 minimum) join MS-76.
+
+## Rulings on the f01 to f08 designs (19 November 2026)
+95. **Accepted as designed:**
+   - The eight designs under 5,000 characters (ruling 55).
+   - f01's cold open, with no course welcome.
+   - f02 leaves out equations with brackets.
+   - f03b's 73-character title.
+   - f04a's preview of f04b.
+   - f05 to f07 have no site link.
+   - f06's "only time does".
+   - f08's final frame, as the frame l01 opens on.
+   - The seven new ms11s- plates.
+
+   **Changes:**
+   - **Titles:** f06 and f07 take the shorter titles (58 and 51 characters).
+   - **f03a:** drop the π circle check (Standard 1 load).
+   - **f04b:** the worked example uses one reaction time (1.5 s). Where the site's model is used, one on-screen chip says the model has its own built-in reaction time. No second time is spoken.
+   - **f05 and f06:** the ruling 4 footer shows on the first formula frame and on every answer frame, not in every teaching scene.
+   - **f08:** narration says "times". One line says "the star means times in a spreadsheet".
+   - **f07:** waits for Codex to confirm the dosage formulas and age ranges.
