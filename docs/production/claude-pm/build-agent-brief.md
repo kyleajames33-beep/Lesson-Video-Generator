@@ -74,6 +74,8 @@ Before you report a lesson as A, sweep it densely. Render one still every 3 s (`
 - labels clipped by an edge or a ring;
 - a chip landing on an older note (fade the old note first);
 - any moment over about 40% empty while teaching;
-- handoff frames that don't match the next lesson's first frame.
+- handoff frames that don't match the next lesson's first frame;
+- a main visual (table, diagram, apparatus) drawn faint or ghosted while it carries the explanation (root found 25 to 40 s faint-table stretches in chem-y11-m1-v12 v1 that the sheet missed);
+- a cue keyed to the wrong occurrence of a repeated phrase (v09 and v12 each had one).
 
 Fix what you find before handing in. Report the sweep in your notes.

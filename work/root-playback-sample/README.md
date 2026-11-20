@@ -357,3 +357,9 @@ Root (20 Nov, 22:45): 3 s sweep of the master read in full (10 sheets). Opening 
 
 ## chem-y11-m1-v09 v1
 Root (20 Nov, 23:25): 3 s sweep of the master read in full (10 sheets). Opens on v08's final frame; final frame matches v10 v1's first frame (red-left strip). Numbers checked: chlorine 35.4846, boron 10.801, silicon x = 0.78 (check 21.84 + 6.38 = 28.22), attempt 1 22.6, attempt 2 70%/30% (slip gives 64.4). Beam tilt and pivot follow the token counts; no misleading equal-token picture (root ruling). No overlaps or clipping; minor: two silicon plates on screen together in scene 9 (redundant, harmless). Pass.
+
+## chem-y11-m1-v11 v1
+Root (21 Nov, 01:00): 3 s sweep of the master read in full (11 sheets). Opens on ws-v03's final frame (WsV03FinalFrame, built in v11 for the ws-v03 build to import); final frame matches v12's opening. Chemistry checked: subshell capacities 2, 6, 10, 14; Cl 1s2 2s2 2p6 3s2 3p5 and [Ne] 3s2 3p5; P 3 unpaired; K 4s1; Fe [Ar] 3d6 4s2; S 3p4, 2 unpaired; V [Ar] 3d3 4s2, 3 unpaired; struck slips (2p5 3p6 right total wrong order; [Ar] 3d5). Brief transient counter lags while arrows animate (sub-second). Pass.
+
+## chem-y11-m1-v12 v1
+Root (21 Nov, 01:05): 3 s sweep read in full (11 sheets). FAIL: the main periodic table is a faint ghost for long stretches (1:54 to 2:27, 5:21 to 5:48, 6:30 to 6:57, closing board 7:00+). Chemistry correct. Sent back for v2; v1 preserved, not queued.
