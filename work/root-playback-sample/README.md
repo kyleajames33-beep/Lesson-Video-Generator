@@ -369,3 +369,6 @@ Root (21 Nov, 01:35): 3 s sweep of the v2 master read for every scene the v1 fai
 
 ## chem-y11-ws-v01 v1
 Root (21 Nov, 02:30): 3 s sweep of the master read in full (10 sheets). Opens on v10 v1's final frame (frozen v10 handoff); final frame is the plan board with the ws-v02 chip. Chemistry and numbers checked: CuSO4·5H2O loses 36.1% (groups A 36.0%, B 27.6% under-heated, C 47.2% decomposed to black CuO); salt solubility 40 mL × 36 g / 100 mL ≈ 14 g matches the 69.4% plateau. No overlaps, no faint main visuals. Minor: scene 9 heating readouts hold at 0.0 for about 30 s before the run. Pass.
+
+## chem-y11-ws-v02 v1
+Root (21 Nov, 03:00): 3 s sweep of the master read in full (10 sheets). Opens on ws-v01 v1's final frame (frozen ws-v01 handoff); ends on the plan board with lidded crucible, desiccator and blank balance and the ws-v03 chip (exported SceneHandoff for ws-v03). Checked: 0.1 g vs 0.01 g balance against a 0.90 g loss (9 vs 90 steps), empty-crucible control to constant mass, trial run gaining mass on the open bench ((2.50 - 1.64) / 2.50 = 34.4%) so cool in a desiccator, risk matrix, copper waste not the sink, attempt answers (IV, DV, controls with the water-temperature reason; strong heat decomposes CuSO4, irritating gases). No overlaps; feedback scenes start sparse for a few seconds while answers write. Pass.
