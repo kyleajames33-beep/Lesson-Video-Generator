@@ -64,3 +64,16 @@ Use these in every new build. Do not refactor finished lessons onto them.
 - **Simulations:** read `src/explainer/sims/README.md` before coding any particle, gas, reaction-rate, equilibrium, diffusion, titration, circuit, wave, probability or dice, projectile, orbit or charged-particle animation. Use the engine there and read every on-screen number from its run. Copy the nearest scene in `src/explainer/lessons/SimGallery/scenes.tsx`.
 - **Before you send a sheet to root, run the check:** `npm run grade:explainer -- <explainer id>`. It takes the stills lock itself, so do not wrap it in your own lock. Fix every failure and look at every warning. Attach `out/explainer/<id>/grade/<id>-grade.md` to your notes. A pass is required but is not the grade: root still judges the sheet. Details: `docs/production/claude-pm/grade-checker.md`.
 
+
+## Dense sweep before hand-in (root, 20 November 2026)
+
+The 16-frame sheet samples about one frame every 30 s, so it misses overlaps, clipped labels and sparse scene openings between its frames. Root's 3 s playback samples of the Y11 Chemistry v04 to v07 masters found these defects after renders, and each one cost a re-render.
+
+Before you report a lesson as A, sweep it densely. Render one still every 3 s (`npx remotion still` at concurrency 1 under the stills lock, or the sims stills script), at reduced scale if that is fast enough. Montage them per scene and read every montage. Check for:
+- text over text or over plates;
+- labels clipped by an edge or a ring;
+- a chip landing on an older note (fade the old note first);
+- any moment over about 40% empty while teaching;
+- handoff frames that don't match the next lesson's first frame.
+
+Fix what you find before handing in. Report the sweep in your notes.
