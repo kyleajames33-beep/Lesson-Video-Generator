@@ -56,8 +56,8 @@ export const SceneHook: React.FC = () => {
 			</g>
 			<Readout x={640} y={330} w={520} text="mixture: 20.00 g" size={52} color={PURE} frame={PURE} at={K1.together + 20} />
 			<Sx x={644} y={470} text="example data" size={30} color={INK} weight={700} at={K1.together + 30} />
-			<Chip x={1260} y={520} segs={[{t: 'sand: ? %'}]} at={K1.salt2} size={48} color={INK} dashed />
-			<Chip x={1260} y={660} segs={[{t: 'salt: ? %'}]} at={K1.salt2 + 8} size={48} color={INK} dashed />
+			<Chip x={1260} y={520} segs={[{t: 'sand: ? %'}]} at={K1.together + 30} size={48} color={INK} dashed />
+			<Chip x={1260} y={660} segs={[{t: 'salt: ? %'}]} at={K1.together + 38} size={48} color={INK} dashed />
 			<Heading text="Percentage by mass: how much of each?" at={K1.salt2} />
 			<Write x={760} y={600} text="start" at={K1.start} size={42} color={PURE} />
 			<PenArrow a={[800, 560]} b={[860, 424]} at={K1.start + 4} color={PURE} bend={0.15} />
@@ -120,12 +120,11 @@ export const SceneSeparation: React.FC = () => {
 				<Sx x={SLOT(0) + SW / 2} y={830} text="1 dissolve" size={36} color={INK} anchor="middle" weight={800} at={K2.doesnt} />
 				{/* 2 filter */}
 				<Plate p={FILT} x={SLOT(1) + SW / 2 - 118} y={SY + 10} h={520} />
-				<Write x={fm.X(700)} y={fm.Y(300)} text="sand stays" at={K2.stays} size={42} color={SAND_INK} />
-				<PenArrow a={[fm.X(690), fm.Y(330)]} b={[fm.X(560), fm.Y(430)]} at={K2.stays + 4} color={SAND_INK} bend={-0.2} />
+				<Write x={SLOT(1) + 30} y={242} text="sand stays" at={K2.stays} size={42} color={SAND_INK} />
+				<PenArrow a={[SLOT(1) + 120, 252]} b={[fm.X(480), fm.Y(400)]} at={K2.stays + 4} color={SAND_INK} bend={-0.2} />
 				<Sx x={SLOT(1) + SW / 2} y={830} text="2 filter" size={36} color={INK} anchor="middle" weight={800} at={K2.residue} />
-				<Write x={fm.X(720)} y={fm.Y(820)} text="salt goes through," at={K2.runs} size={38} color={INK} />
-				<Write x={fm.X(720)} y={fm.Y(820) + 46} text="dissolved" at={K2.runs + 16} size={38} color={INK} />
-				<PenArrow a={[fm.X(760), fm.Y(900)]} b={[fm.X(600), fm.Y(1110)]} at={K2.runs + 8} color={INK} bend={-0.2} />
+				<Write x={SLOT(1) + 10} y={892} text="salt goes through, dissolved" at={K2.runs} size={36} color={INK} />
+				<PenArrow a={[SLOT(1) + 330, 856]} b={[fm.X(700), fm.Y(1200)]} at={K2.runs + 8} color={INK} bend={-0.2} />
 				<Drops x={fm.X(512)} y0={SY - 10} y1={fm.Y(420)} at={K2.rinse} n={3} every={12} />
 				<Sx x={SLOT(2) + SW / 2} y={830} text="3 rinse and dry" size={36} color={INK} anchor="middle" weight={800} at={K2.dry} />
 				{/* 4 evaporate */}
@@ -195,9 +194,9 @@ export const SceneWeigh: React.FC = () => {
 			<Write x={650} y={250} text="container first" at={K3.container} out={K3.dried} size={42} color={PURE} />
 			<PenArrow a={[700, 266]} b={[g.pan[0] + 150, g.pan[1] - 150]} at={K3.container + 6} out={K3.dried} color={PURE} bend={-0.2} />
 			{/* salt rows */}
-			<Rich x={RX} y={300} segs={[{t: 'empty basin       '}, {t: '45.12 g', c: PURE}]} size={40} weight={700} at={K3.r1 - 6} />
-			<Rich x={RX} y={364} segs={[{t: 'basin + salt      '}, {t: '59.12 g', c: PURE}]} size={40} weight={700} at={K3.r2 - 6} />
-			<Bracket a={[RX - 16, 376]} b={[RX - 16, 262]} at={K3.alone} color={PURE} depth={18} />
+			<Rich x={RX} y={300} segs={[{t: 'empty basin       '}, {t: '45.12 g', c: PURE, at: K3.r1 - 6}]} size={40} weight={700} />
+			<Rich x={RX} y={364} segs={[{t: 'basin + salt      '}, {t: '59.12 g', c: PURE, at: K3.r2 - 6}]} size={40} weight={700} />
+			<Bracket a={[RX - 22, 376]} b={[RX - 22, 262]} at={K3.alone} color={PURE} depth={-18} />
 			<Rich x={RX} y={472} segs={[{t: e1}]} size={46} at={K3.sub} />
 			<Framed x={RX + richW([{t: e1}], 46)} y={472} segs={[{t: '14.00 g', c: '#2f8a5b'}]} at={K3.fourteen} size={52} />
 			<Write x={RX} y={560} text="weighing by difference" at={K3.wbd} size={42} color={PURE} />
@@ -241,7 +240,11 @@ export const ScenePercentage: React.FC = () => {
 			<GivensCard x={370} y={450} w={450} lines={[[{t: 'mixture   20.00 g'}], [{t: 'sand        6.00 g'}], [{t: 'salt       14.00 g'}]]} />
 			<AccBar id="v6b4" x={1040} y={520} w={600} whole={20} segs={[SAND_SEG(6, K4.thirty, '30.0%'), SALT_SEG(14, K4.gives, '70.0%')]} okAt={K4.check} wholeLabel="20.00 g" base="whole mixture: 20.00 g" />
 			<Chip x={1040} y={650} segs={[{t: '30.0% + 70.0% = 100.0%'}]} at={K4.together} size={44} color={INK} />
-			<Write x={1100} y={790} text="adds to 100" at={K4.check} size={42} color="#2f8a5b" />
+			<Write x={1040} y={760} text="adds to 100" at={K4.check} size={42} color="#2f8a5b" />
+			<Plate p={SAND} x={1300} y={790} h={SAND.box[3] * (240 / SAND.box[2])} />
+			<Plate p={BASIN_X} x={1570} y={760} h={BASIN_X.box[3] * (250 / BASIN_X.box[2])} />
+			<Sx x={1420} y={918} text="sand 6.00 g" size={32} color={SAND_INK} anchor="middle" weight={800} at={-1000} />
+			<Sx x={1695} y={918} text="salt 14.00 g" size={32} color={INK} anchor="middle" weight={800} at={-1000} />
 			<Rich x={110} y={790} segs={r1.map((s, i) => ({...s, at: [K4.sand, K4.six, K4.times2][i]}))} at={K4.sand} size={52} />
 			<Framed x={110 + richW(r1, 52)} y={790} segs={[{t: '30.0%', c: '#2f8a5b'}]} at={K4.thirty} size={52} />
 			<Rich x={110} y={900} segs={r2.map((s, i) => ({...s, at: [K4.salt, K4.fourteen, K4.fourteen + 40][i]}))} at={K4.salt} size={52} />

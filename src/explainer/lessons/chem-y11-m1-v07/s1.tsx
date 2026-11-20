@@ -6,6 +6,7 @@ import {useCurrentFrame} from 'remotion';
 import {Countdown} from '../../kit';
 import {cues} from '../../cues';
 import {SALT_SEG, SAND_SEG} from '../chem-y11-m1-v06/s1';
+import {SaltBoard} from '../chem-y11-m1-v06/parts';
 import {BOTTLE, CARTON, F_CO2, FILT_E, SJAR, hold, sc} from './common';
 import {
 	AMB, AMB_INK, AccBar, Beam, Bracket, Chip, CountBar, DrawPath, EL, Fade, Framed, Glyph, Heading, INK, MassBar, PCell, PURE, PenArrow, PenRing, Plate, RED, RLab, Readout,
@@ -20,41 +21,29 @@ const Ball: React.FC<{el: string; r: number}> = ({el, r}) => <circle cx={0} cy={
 const K1 = cues(sc('hook'), {last: 'Last time', one: 'one sodium for every', them: 'split them', dont: "you don't need", element: 'each element', build: "We'll build", yourself: 'salt yourself'});
 export const SceneHook: React.FC = () => {
 	const f = useCurrentFrame();
-	const fh = 210, fw = (fh / FILT_E.box[3]) * FILT_E.box[2];
-	const FX = 1545 - fw / 2, FY = 380;
-	const park = smooth(prog(f, K1.yourself, 22));
 	const pulse = 1 + 0.08 * Math.sin(Math.min(1, Math.max(0, (f - K1.them) / 24)) * Math.PI);
-	const cx = 1545, cy = 485;
+	const E = K1.element;
+	const jm = plateMap(SJAR, 0, 0, 110);
 	return (
 		<SVG>
-			<g transform={`translate(${1400 * park},${-60 * park}) scale(${1 - 0.62 * park})`} opacity={1}>
-				<AccBar id="v7b1" x={560} y={210} w={600} h={64} labelSize={30} whole={20} segs={[SAND_SEG(6, -1000, '30.0%'), SALT_SEG(14, -1000, 'salt 70.0%')]} out={K1.element} />
-				<Plate p={SJAR} x={560} y={320} h={420} />
-				<Rich x={940} y={560} segs={[{t: 'NaCl'}]} size={84} out={K1.element} />
-				<Sx x={940} y={628} text="compound: fixed ratio" size={38} color={INK} weight={800} at={-1000} out={K1.element} />
-				<Write x={940} y={706} text="1 Na : 1 Cl, always" at={K1.one} out={K1.element} size={46} color={PURE} />
-				{f >= K1.one + 10 ? <DrawPath d="M940,720 L1300,720" at={K1.one + 10} dur={12} color={PURE} width={4} /> : null}
-				<Write x={940} y={470} text="read it off the formula" at={K1.dont} out={K1.element} size={46} color={AMB_INK} />
-				<PenArrow a={[1000, 482]} b={[990, 512]} at={K1.dont + 6} out={K1.element} color={AMB_INK} bend={0} />
-			</g>
-			<g opacity={1 - prog(f, K1.element, 12)} transform={`translate(${cx},${cy}) scale(${pulse}) translate(${-cx},${-cy})`}>
-				<Plate p={FILT_E} x={FX} y={FY} h={fh} />
-				<path d={`M${FX - 30},${FY - 10} L${FX + fw + 30},${FY + fh + 10} M${FX + fw + 30},${FY - 10} L${FX - 30},${FY + fh + 10}`} stroke="#5a6470" strokeWidth={8} strokeLinecap="round" />
-				<Sx x={1545} y={650} text="can't filter" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
-				<Sx x={1545} y={692} text="a compound apart" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
-			</g>
-			<Chip x={960} y={790} segs={[{t: 'Na: ? %     Cl: ? %     from the formula alone?'}]} at={-1000} out={K1.element} size={44} color={PURE} anchor="middle" />
+			<SaltBoard out={{bar: E, nacl: E, compound: E, lattice: E, filter: E, chip: E, jar: K1.yourself}} pulse={pulse} />
+			<Write x={1020} y={640} text="1 Na : 1 Cl, always" at={K1.one} out={E} size={46} color={PURE} />
+			{f >= K1.one + 10 && f < E + 12 ? <g opacity={1 - prog(f, E, 12)}><DrawPath d="M1020,656 L1390,656" at={K1.one + 10} dur={12} color={PURE} width={4} /></g> : null}
+			<Write x={680} y={392} text="read it off the formula" at={K1.dont} out={E} size={46} color={AMB_INK} />
+			<PenArrow a={[730, 400]} b={[720, 418]} at={K1.dont + 6} out={E} color={AMB_INK} bend={0} />
 			{/* the formula splits into two (not yet meaningful) tiles */}
-			<g opacity={prog(f, K1.element, 12) * (1 - park)}>
-				<rect x={960} y={560} width={260} height={100} fill={EL.Na} stroke={INK} strokeWidth={4} strokeDasharray="12 8" />
-				<rect x={1220} y={560} width={260} height={100} fill={EL.Cl} stroke={INK} strokeWidth={4} strokeDasharray="12 8" />
-				<Sx x={1090} y={626} text="Na" size={52} color="#fff" anchor="middle" weight={800} at={-1000} />
-				<Sx x={1350} y={626} text="Cl" size={52} color="#fff" anchor="middle" weight={800} at={-1000} />
-				<Sx x={1090} y={740} text="? %" size={52} color={AMB_INK} anchor="middle" weight={800} at={-1000} />
-				<Sx x={1350} y={740} text="? %" size={52} color={AMB_INK} anchor="middle" weight={800} at={-1000} />
+			<g opacity={prog(f, E, 12) * (1 - prog(f, K1.yourself, 14))}>
+				<rect x={900} y={460} width={300} height={120} fill={EL.Na} stroke={INK} strokeWidth={4} strokeDasharray="12 8" />
+				<rect x={1200} y={460} width={300} height={120} fill={EL.Cl} stroke={INK} strokeWidth={4} strokeDasharray="12 8" />
+				<Sx x={1050} y={538} text="Na" size={60} color="#fff" anchor="middle" weight={800} at={-1000} />
+				<Sx x={1350} y={538} text="Cl" size={60} color="#fff" anchor="middle" weight={800} at={-1000} />
+				<Sx x={1050} y={660} text="? %" size={56} color={AMB_INK} anchor="middle" weight={800} at={-1000} />
+				<Sx x={1350} y={660} text="? %" size={56} color={AMB_INK} anchor="middle" weight={800} at={-1000} />
+				<Sx x={1200} y={760} text="read from the formula NaCl" size={38} color={INK} anchor="middle" weight={800} at={-1000} />
 			</g>
 			<Heading text="Percentage composition from a formula" at={30} />
-			<Sx x={1820} y={235} text="your turn later" size={30} color={INK} anchor="end" weight={700} at={K1.yourself + 14} />
+			<Plate p={SJAR} x={1800 - jm.w} y={200} h={110} at={K1.yourself + 8} />
+			<Sx x={1800} y={346} text="your turn later" size={30} color={INK} anchor="end" weight={700} at={K1.yourself + 14} />
 			<Rich x={960} y={620} segs={[{t: 'CO_2'}]} size={120} anchor="middle" at={K1.yourself + 8} />
 			{void K1.last}{void K1.build}
 		</SVG>
@@ -79,7 +68,8 @@ export const SceneFixedRatio: React.FC = () => {
 			<Sx x={1600} y={758} text="carbon dioxide" size={30} color={INK} anchor="middle" weight={700} at={-1000} />
 			{/* one molecule */}
 			<g opacity={bigO}>
-				<Glyph k="CO2" x={660} y={520} u={62} />
+				<Glyph k="CO2" x={660} y={520} u={80} />
+				<Write x={400} y={740} text="1 carbon atom + 2 oxygen atoms" at={K2.two} size={46} color={INK} />
 				<Write x={560} y={380} text="1 C" at={K2.atoms} size={44} color={INK} />
 				<PenArrow a={[620, 392]} b={[656, 470]} at={K2.atoms + 4} color={INK} bend={-0.1} />
 				<Write x={880} y={410} text="2 O" at={K2.two} size={44} color={EL.O} />
@@ -110,7 +100,7 @@ const K3 = cues(sc('relative-atomic-mass'), {compare: 'compare them', ram: 'rela
 export const SceneRAM: React.FC = () => {
 	const f = useCurrentFrame();
 	const tilt = 7 * smooth(prog(f, K3.oxygen + 6, 24));
-	const BX = 1080, BY = 400, L = 330;
+	const BX = 1080, BY = 470, L = 330;
 	const a = (tilt * Math.PI) / 180;
 	const lx = BX - L * Math.cos(a), rx = BX + L * Math.cos(a), ly = BY - L * Math.sin(a), ry = BY + L * Math.sin(a);
 	return (
@@ -124,10 +114,10 @@ export const SceneRAM: React.FC = () => {
 			<Beam cx={BX} cy={BY} L={L} tilt={tilt}
 				left={<g opacity={prog(f, K3.mass, 10)}><Ball el="C" r={54} /></g>}
 				right={<g opacity={prog(f, K3.oxygen, 10)}><Ball el="O" r={60} /></g>} />
-			<Readout x={lx - 120} y={ly + 200} w={240} text="C 12.0" size={52} color={INK} frame={INK} anchor="middle" at={K3.twelve} />
-			<Readout x={rx - 120} y={ry + 200} w={240} text="O 16.0" size={52} color={EL.O} frame={EL.O} anchor="middle" at={K3.sixteen} />
-			{f >= K3.units ? <DrawPath d={`M${lx - 120},${ly + 296} L${rx + 120},${ry + 296}`} at={K3.units} dur={14} color={INK} width={4} /> : null}
-			<Write x={BX - 60} y={BY + 400} text="no units" at={K3.units + 6} size={42} color={INK} />
+			<Readout x={lx - 120} y={BY + 210} w={240} text="C 12.0" size={52} color={INK} frame={INK} anchor="middle" at={K3.twelve} />
+			<Readout x={rx - 120} y={BY + 210} w={240} text="O 16.0" size={52} color={EL.O} frame={EL.O} anchor="middle" at={K3.sixteen} />
+			{f >= K3.units ? <><DrawPath d={`M${lx - 120},${BY + 300} L${lx + 120},${BY + 300}`} at={K3.units} dur={10} color={INK} width={4} /><DrawPath d={`M${rx - 120},${BY + 300} L${rx + 120},${BY + 300}`} at={K3.units + 6} dur={10} color={INK} width={4} /></> : null}
+			<Write x={BX - 80} y={BY + 380} text="no units" at={K3.units + 6} size={42} color={INK} />
 			<PCell x={1620} y={250} sym="C" ar="12.0" at={K3.periodic} />
 			<Sx x={1705} y={474} text="periodic table" size={30} color={INK} anchor="middle" weight={700} at={K3.periodic} />
 			<Chip x={1824} y={880} segs={[{t: 'why decimals? a later video'}]} at={K3.numbers} size={30} color={INK} anchor="end" />
@@ -193,6 +183,9 @@ export const SceneCO2: React.FC = () => {
 			<Write x={1440} y={440} text="now weigh the atoms" at={K5.more + 20} out={CO2_AT[0] - 10} size={44} color={INK} />
 			<Sx x={620} y={700} text="one molecule: weigh its atoms" size={38} color={INK} anchor="middle" weight={800} at={-1000} out={CO2_AT[0] - 10} />
 			<Chip x={1100} y={660} segs={[{t: 'carbon: 27.3% (check: adds to 100%)'}]} at={K5.p72 + 30} size={34} color={INK} />
+			<Glyph k="CO2" x={1460} y={850} u={46} />
+			{[['12.0', 0], ['16.0', -1], ['16.0', 1]].map(([t, d]) => <Sx key={String(d)} x={1460 + Number(d) * 90} y={935} text={String(t)} size={30} color={Number(d) ? EL.O : INK} anchor="middle" weight={800} at={-1000} />)}
+			<Sx x={1460} y={772} text="relative atomic masses" size={30} color={INK} anchor="middle" weight={700} at={-1000} />
 			<Rich x={110} y={740} segs={r1.map((s, i) => ({...s, at: [K5.add, K5.c12, K5.mr][i]}))} at={K5.add} size={s1} />
 			<Rich x={110} y={820} segs={r2.map((s, i) => ({...s, at: [K5.share, K5.share + 20, K5.t32][i]}))} at={K5.share} size={s2} />
 			<Rich x={110} y={910} segs={r3.map((s, i) => ({...s, at: [K5.so, K5.so + 30, K5.so + 100][i]}))} at={K5.so} size={52} />

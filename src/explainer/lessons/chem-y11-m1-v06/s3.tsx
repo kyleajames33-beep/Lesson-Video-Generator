@@ -6,9 +6,9 @@ import React from 'react';
 import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {Givens, Lines, QTag} from '../chem-y11-m1-v01/s3';
-import {FILT_E, OVEN, SAND, SJAR, hold, p1, sc} from './common';
+import {BASIN_X, FILT_E, OVEN, SAND, SJAR, hold, p1, sc} from './common';
 import {
-	AMB, AccBar, Balance, CHALK_F, Card, Chip, DrawPath, Fade, Framed, Heading, INK, MIX, PURE, PauseHoldR, PenRing, Plate, ROSE, Readout, Rich, SVG, Sx, TEAL, TEAL_INK, Write,
+	AMB, AccBar, SaltBoard, SAND_INK, Balance, CHALK_F, Card, Chip, DrawPath, Fade, Framed, Heading, INK, MIX, PURE, PauseHoldR, PenRing, Plate, ROSE, Readout, Rich, SVG, Sx, TEAL, TEAL_INK, Write,
 	balGeo, prog, richW, smooth, tw,
 } from './parts';
 import type {Seg} from './parts';
@@ -26,7 +26,7 @@ const GivUnder: React.FC<{before: string; text: string; at: number; color?: stri
 // ---------- 11. attempt 1 ----------
 const K11 = cues(sc('attempt-1'), {pause: 'Pause here'});
 export const SceneAttempt1: React.FC = () => {
-	const g = balGeo(1490, 270, 220);
+	const g = balGeo(1400, 270, 300);
 	return (
 		<SVG>
 			<Heading text="Your turn" at={0} />
@@ -56,23 +56,23 @@ export const SceneFeedback1: React.FC = () => {
 	const ra = [{t: '(a) chalk:  '}, {t: '4.20 ÷ 15.00', c: PURE}, {t: ' × 100 = '}];
 	const rs = [{t: '      salt:  '}, {t: '10.50 ÷ 15.00', c: PURE}, {t: ' × 100 = '}];
 	const rb = [{t: '(b) 100% − 98.0% = '}];
-	const g = balGeo(1300, 280, 360);
+	const g = balGeo(1280, 300, 380);
 	return (
 		<SVG>
 			<Heading text="Your turn" at={-1000} />
 			<Givens segs={[{t: 'mixture 15.00 g     |     chalk 4.20 g     |     salt 10.50 g'}]} />
 			<GivUnder before="mixture " text="15.00 g" at={K12.chalk + 30} />
-			<AccBar id="v6b12" x={110} y={320} w={800} h={100} whole={15} segs={[{m: 4.2, fill: CHALK_F, ink: INK, label: '28.0%', at: K12.c28}, SALT_SEG(10.5, K12.s70, '70.0%')]} gapAt={K12.recovered} gapLabel="2.0%" wholeLabel="15.00 g" base="whole mixture: 15.00 g" />
+			<AccBar id="v6b12" x={110} y={320} w={820} h={110} whole={15} segs={[{m: 4.2, fill: CHALK_F, ink: INK, label: '28.0%', at: K12.c28}, SALT_SEG(10.5, K12.s70, '70.0%')]} gapAt={K12.recovered} gapLabel="2.0%" wholeLabel="15.00 g" base="whole mixture: 15.00 g" />
 			<Balance g={g} text="15.00 g" />
-			<Rich x={110} y={520} segs={ra} size={48} at={K12.chalk} />
-			<Framed x={110 + richW(ra, 48)} y={520} segs={[{t: '28.0%', c: GREEN_T}]} at={K12.c28} size={52} />
-			<Rich x={110} y={615} segs={rs} size={48} at={K12.salt} />
-			<Framed x={110 + richW(rs, 48)} y={615} segs={[{t: '70.0%', c: GREEN_T}]} at={K12.s70} size={52} />
-			<Rich x={110} y={712} segs={rb} size={48} at={K12.together} />
-			<Framed x={110 + richW(rb, 48)} y={712} segs={[{t: '2.0% not recovered', c: GREEN_T}]} at={K12.recovered} size={52} />
-			<Sx x={110 + richW(rb, 48) + richW([{t: '2.0% not recovered'}], 52) + 110} y={712} text="(0.30 g)" size={44} color={INK} weight={800} at={K12.recovered + 10} />
-			<Chip x={110} y={770} segs={[{t: '÷ 14.70 g: chalk 28.6%, salt 71.4%'}]} at={K12.slip} size={40} color={RED_T} strike={K12.completely - 10} />
-			<Write x={110} y={900} text="divide by the original 15.00 g" at={K12.completely} size={44} color={RED_T} />
+			<Rich x={110} y={570} segs={ra} size={50} at={K12.chalk} />
+			<Framed x={110 + richW(ra, 50)} y={570} segs={[{t: '28.0%', c: GREEN_T}]} at={K12.c28} size={52} />
+			<Rich x={110} y={680} segs={rs} size={50} at={K12.salt} />
+			<Framed x={110 + richW(rs, 50)} y={680} segs={[{t: '70.0%', c: GREEN_T}]} at={K12.s70} size={52} />
+			<Rich x={110} y={790} segs={rb} size={50} at={K12.together} />
+			<Framed x={110 + richW(rb, 50)} y={790} segs={[{t: '2.0% not recovered', c: GREEN_T}]} at={K12.recovered} size={52} />
+			<Sx x={110 + richW(rb, 50) + richW([{t: '2.0% not recovered'}], 52) + 110} y={790} text="(0.30 g)" size={44} color={INK} weight={800} at={K12.recovered + 10} />
+			<Chip x={110} y={840} segs={[{t: '÷ 14.70 g: chalk 28.6%, salt 71.4%'}]} at={K12.slip} size={40} color={RED_T} strike={K12.completely - 10} />
+			<Write x={920} y={885} text="divide by the original 15.00 g" at={K12.completely} size={42} color={RED_T} />
 			{void K12.p1}{void K12.p2}{void K12.dividing}{void K12.hides}
 		</SVG>
 	);
@@ -111,25 +111,25 @@ export const SceneFeedback2: React.FC = () => {
 	const f = useCurrentFrame();
 	const ra = [{t: '(a) sand:  '}, {t: '4.12 ÷ 10.00', c: PURE}, {t: ' × 100 = '}];
 	const rs = [{t: '      salt:  '}, {t: '6.25 ÷ 10.00', c: PURE}, {t: ' × 100 = '}];
-	const tot = 41.2 * smooth(prog(f, K14.sand + 40, 18)) + 62.5 * smooth(prog(f, K14.salt + 30, 18));
+	const tot = 41.2 * smooth(prog(f, K14.sand, 18)) + 62.5 * smooth(prog(f, K14.salt, 18));
 	return (
 		<SVG>
 			<Heading text="Last one" at={-1000} />
 			<Givens segs={[{t: 'mixture 10.00 g     |     sand 4.12 g after 10 minutes     |     salt 6.25 g'}]} />
 			<GivUnder before="mixture 10.00 g     |     sand 4.12 g after " text="10 minutes" at={K14.ten} color={TEAL} />
-			<AccBar id="v6b14" x={110} y={330} w={700} whole={10} segs={[SAND_SEG(4.12, K14.sand + 40, '41.2%'), SALT_SEG(6.25, K14.salt + 30, '62.5%')]} extraAt={K14.weighed} wholeLabel="10.00 g mixture" />
-			<Sx x={1000} y={316} text="total" size={30} color={INK} weight={700} at={K14.sand + 40} />
-			<Readout x={1000} y={328} w={290} text={p1(tot)} size={52} color={tot > 100.05 ? TEAL_INK : PURE} frame={tot > 100.05 ? TEAL : PURE} anchor="middle" at={K14.sand + 40} />
+			<AccBar id="v6b14" x={110} y={320} w={760} h={100} whole={10} segs={[SAND_SEG(4.12, K14.sand, '41.2%'), SALT_SEG(6.25, K14.salt, '62.5%')]} extraAt={K14.weighed} wholeLabel="10.00 g mixture" base="whole mixture: 10.00 g" />
+			<Sx x={1000} y={316} text="total" size={30} color={INK} weight={700} at={K14.sand} />
+			<Readout x={1000} y={328} w={290} text={p1(tot)} size={52} color={tot > 100.05 ? TEAL_INK : PURE} frame={tot > 100.05 ? TEAL : PURE} anchor="middle" at={K14.sand} />
 			<Write x={1320} y={384} text="0.37 g extra" at={K14.weighed} size={42} color={TEAL_INK} />
-			<Plate p={SAND} x={1610} y={290} h={(200 / SAND.box[2]) * SAND.box[3]} />
-			<Plate p={OVEN} x={1620} y={380} h={190} />
-			<Rich x={110} y={540} segs={ra} size={48} at={K14.sand} />
-			<Framed x={110 + richW(ra, 48)} y={540} segs={[{t: '41.2%', c: AMB_T}]} at={K14.sand + 40} size={52} tick={false} stroke="#e8a33d" />
-			<Rich x={110} y={635} segs={rs} size={48} at={K14.salt} />
-			<Framed x={110 + richW(rs, 48)} y={635} segs={[{t: '62.5%', c: AMB_T}]} at={K14.salt + 30} size={52} tick={false} stroke="#e8a33d" />
-			<Framed x={110} y={750} segs={[{t: '(b) water in the sand: dry to constant mass', c: GREEN_T}]} at={K14.dry} size={44} />
-			<Chip x={110} y={800} segs={[{t: 'extra 3.7% = a third substance'}]} at={K14.calling} size={40} color={RED_T} strike={K14.mistake - 6} />
-			<Write x={860} y={850} text="usually water" at={K14.mistake} size={44} color={RED_T} />
+			<Plate p={SAND} x={1500} y={480} h={(300 / SAND.box[2]) * SAND.box[3]} />
+			<Plate p={OVEN} x={1500} y={600} h={300} />
+			<Rich x={110} y={570} segs={ra} size={50} at={K14.sand} />
+			<Framed x={110 + richW(ra, 50)} y={570} segs={[{t: '41.2%', c: AMB_T}]} at={K14.sand + 40} size={52} tick={false} stroke="#e8a33d" />
+			<Rich x={110} y={675} segs={rs} size={50} at={K14.salt} />
+			<Framed x={110 + richW(rs, 50)} y={675} segs={[{t: '62.5%', c: AMB_T}]} at={K14.salt + 30} size={52} tick={false} stroke="#e8a33d" />
+			<Framed x={110} y={790} segs={[{t: '(b) water in the sand: dry to constant mass', c: GREEN_T}]} at={K14.dry} size={44} />
+			<Chip x={110} y={840} segs={[{t: 'extra 3.7% = a third substance'}]} at={K14.calling} size={40} color={RED_T} strike={K14.mistake - 6} />
+			<Write x={800} y={885} text="usually water" at={K14.mistake} size={44} color={RED_T} />
 			{void K14.p1}{void K14.p2}{void K14.adds}{void K14.cause}{void K14.weighing}{void MIX}{void AMB}{void ROSE}
 		</SVG>
 	);
@@ -137,27 +137,21 @@ export const SceneFeedback2: React.FC = () => {
 
 // ---------- 15. handoff: inside the salt (final frame; V07 opens on it) ----------
 const K15 = cues(sc('handoff'), {so: 'So by separating', salt: 'was salt', but: 'But salt itself', compound: 'a compound', bonded: 'bonded together', filter: 'no filter', next: 'Next time', formula: 'formula alone', element: 'each element'});
-export const SceneHandoff: React.FC = () => {
-	const fh = 210, fw = (fh / FILT_E.box[3]) * FILT_E.box[2];
-	const FX = 1545 - fw / 2, FY = 380;
-	return (
-		<SVG>
-			<AccBar id="v6b15" x={560} y={210} w={600} h={64} labelSize={30} whole={20} segs={[SAND_SEG(6, -1000, '30.0%'), SALT_SEG(14, -1000, 'salt 70.0%')]} />
-			<PenRing cx={560 + 180 + 210} cy={242} rx={240} ry={52} at={K15.salt} out={K15.next} color={PURE} seed={3} />
-			<Plate p={SJAR} x={560} y={320} h={420} dy={20} />
-			<Rich x={940} y={560} segs={[{t: 'NaCl'}]} size={84} at={K15.compound} />
-			<Sx x={940} y={628} text="compound: fixed ratio" size={38} color={INK} weight={800} at={K15.compound + 10} />
-			<Write x={1170} y={540} text="bonded" at={K15.bonded} out={K15.element - 20} size={42} color={PURE} />
-			<Plate p={FILT_E} x={FX} y={FY} h={fh} at={K15.filter} />
-			<DrawPath d={`M${FX - 30},${FY - 10} L${FX + fw + 30},${FY + fh + 10}`} at={K15.filter + 10} dur={10} color="#5a6470" width={8} />
-			<DrawPath d={`M${FX + fw + 30},${FY - 10} L${FX - 30},${FY + fh + 10}`} at={K15.filter + 16} dur={10} color="#5a6470" width={8} />
-			<Sx x={1545} y={650} text="can't filter" size={34} color={INK} anchor="middle" weight={800} at={K15.filter + 10} />
-			<Sx x={1545} y={692} text="a compound apart" size={34} color={INK} anchor="middle" weight={800} at={K15.filter + 10} />
-			<Chip x={960} y={790} segs={[{t: 'Na: ? %     Cl: ? %     from the formula alone?'}]} at={K15.element} size={44} color={PURE} anchor="middle" />
-			{void K15.so}{void K15.but}{void K15.next}{void K15.formula}
-		</SVG>
-	);
-};
+export const SceneHandoff: React.FC = () => (
+	<SVG>
+		<SaltBoard at={{nacl: K15.compound, compound: K15.compound + 10, lattice: K15.bonded - 10, filter: K15.filter, cross: K15.filter + 10, chip: K15.element}} />
+		<Fade at={-1000} out={K15.but}>
+			<Plate p={SAND} x={1000} y={420} h={SAND.box[3] * (280 / SAND.box[2])} />
+			<Plate p={BASIN_X} x={1380} y={380} h={BASIN_X.box[3] * (320 / BASIN_X.box[2])} />
+			<Sx x={1140} y={590} text="sand 6.00 g" size={38} color={SAND_INK} anchor="middle" weight={800} at={-1000} />
+			<Sx x={1540} y={590} text="salt 14.00 g" size={38} color={INK} anchor="middle" weight={800} at={-1000} />
+			<Sx x={1260} y={680} text="separated and weighed" size={38} color={INK} anchor="middle" weight={800} at={-1000} />
+		</Fade>
+		<PenRing cx={950} cy={232} rx={225} ry={48} at={K15.salt} out={K15.next} color={PURE} seed={3} />
+		<Write x={900} y={440} text="bonded" at={K15.bonded} out={K15.element - 20} size={42} color={PURE} />
+		{void K15.so}{void K15.but}{void K15.formula}
+	</SVG>
+);
 
 // ---------- 16. key notes ----------
 const NOTES: Seg[][][] = [

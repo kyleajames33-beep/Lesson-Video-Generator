@@ -12,7 +12,7 @@ import lesson from '../../../../docs/production/claude-pm/lessons/c-y11-m1-v07/m
 import type {CueScene} from '../../cues';
 import {SALT, mkp} from '../chem-y11-m1-v01/common';
 import type {PDef} from '../chem-y11-m1-v01/common';
-import {FILT_E, SJAR} from '../chem-y11-m1-v06/common';
+import {BAL, FILT_E, SJAR} from '../chem-y11-m1-v06/common';
 
 export {SALT, FILT_E, SJAR};
 export type {PDef};
@@ -36,7 +36,7 @@ export const CRU_B = mkp(C + 'y11c-cuso4-crucible-blue-v1.png', [1024, 1536], [1
 export const CRU_L = mkp(C + 'y11c-cuso4-crucible-blue-lit-v1.png', [1024, 1536], [124, 152, 900, 1383]);
 export const CRU_W = mkp(C + 'm5-g02b-open-crucible-v1.png', [1280, 1920], [155, 190, 1125, 1729]);
 
-export const PLATES: PDef[] = [BOTTLE, CARTON, CRU_B, CRU_L, CRU_W, SALT, FILT_E, SJAR];
+export const PLATES: PDef[] = [BOTTLE, CARTON, CRU_B, CRU_L, CRU_W, SALT, FILT_E, SJAR, BAL];
 
 // ---------- formula data (relative atomic masses as given in the lesson) ----------
 export type Ent = {el: string; ar: number; n: number; label?: string; water?: boolean};

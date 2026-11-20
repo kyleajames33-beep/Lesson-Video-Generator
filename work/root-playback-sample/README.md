@@ -322,3 +322,32 @@ v2 was sampled in full in 3 s windows (10 sheets):
 - The handoff frame matches v06's opening.
 
 Pass.
+
+## chem-y11-m1-v06 v2
+
+First release (20 Nov). v1 was rendered but never queued: root's 3 s playback review found the "+24.00 g" slip overlapping the total-recovered box, and an overlap in the missing-mass scene. The v1 master is preserved.
+
+v2 was sampled in full in 3 s windows (10 sheets):
+- The opening matches v05's handoff, with the top-pan balance.
+- Separation in fast forward, then weighing by difference on the balance plate.
+- The percentage-by-mass formula, then "why it adds back to 20.00 g".
+- The real run: 96.0% with its label alongside, and the struck slip on its own row.
+- Where the missing mass went, with the label clear.
+- Extra mass and drying to constant mass (6.00 to 6.40 g).
+- The memory line, the attempts and feedback, and key notes.
+
+Pass.
+
+## chem-y11-m1-v07 v2
+
+First release (20 Nov). v1 was rendered but never queued: root's 3 s playback review found a sparse, colliding handoff, the hydrate label running into the burner, and a sparse "method" opening. The v1 master is preserved.
+
+v2 was sampled in full in 3 s windows (10 sheets):
+- The opening matches v06's final frame (NaCl).
+- CO2 is worked: 72.7%, with "heavier atom, bigger share".
+- NH4NO3 counts both nitrogens (35.0%), with the 17.5% slip crossed.
+- The CuSO4·5H2O hydrate: unit plus five waters, then 36.1%, with the label clear of the burner.
+- The memory line, then MgSO4·7H2O feedback (51.1%), with the 13.0% slip crossed.
+- The handoff shows "Na 23.0 / Cl 35.5" as given numbers, then the chlorine atom with "what's inside?". It ends on v08's opening frame.
+
+Pass.

@@ -8,7 +8,8 @@ import {Countdown} from '../../kit';
 import {AMB, AMB_INK, DrawPath, INK, PURE, Plate, Rich, Sx, TickMark, Write, clamp01, prog, smooth, tw, vis} from '../chem-y11-m1-v01/parts';
 import type {Seg} from '../chem-y11-m1-v01/parts';
 import {TEAL, TEAL_INK} from '../chem-y11-m2-v06/parts';
-import {BAL, BASIN_E} from './common';
+import {BAL, BASIN_E, FILT_E, SJAR} from './common';
+import {Chip, Lattice, ViewFrame} from '../chem-y11-m1-v01/parts';
 import type {PDef} from './common';
 
 export * from '../chem-y11-m1-v01/parts';
@@ -90,11 +91,11 @@ export const AccBar: React.FC<{id: string; x: number; y: number; w: number; whol
 				<pattern id={id + 't'} width={14} height={14} patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width={14} height={14} fill="#dff3f1" /><line x1={0} y1={0} x2={0} y2={14} stroke={TEAL} strokeWidth={6} /></pattern>
 			</defs>
 			<rect x={x} y={y} width={w} height={h} fill="#fffdf8" stroke={INK} strokeWidth={3} strokeDasharray="10 7" />
-			{base ? <g opacity={1 - prog(f, Math.min(...segs.map(s => s.at)), 14)}>
+			{base ? <g opacity={1 - prog(f, Math.max(...segs.map(s => s.at)), 14)}>
 				<rect x={x} y={y} width={w} height={h} fill="#efe3c8" stroke={INK} strokeWidth={3} />
 				{Array.from({length: Math.floor(w / 18)}, (_, i) => <circle key={i} cx={x + 9 + i * 18} cy={y + h / 2 + ((i * 37) % 5 - 2) * h * 0.12} r={4} fill={i % 3 ? SAND_F : '#fff'} stroke={i % 3 ? SAND_INK : INK} strokeWidth={1.2} />)}
-				<rect x={x + w / 2 - tw(base, labelSize, false, 800) / 2 - 14} y={y + h / 2 - labelSize * 0.75} width={tw(base, labelSize, false, 800) + 28} height={labelSize * 1.4} rx={10} fill="#fffdf8" />
-				<Sx x={x + w / 2} y={y + h / 2 + labelSize * 0.36} text={base} size={labelSize} color={INK} anchor="middle" weight={800} at={-1000} />
+				<g opacity={1 - prog(f, Math.min(...segs.map(s => s.at)), 8)}><rect x={x + w / 2 - tw(base, labelSize, false, 800) / 2 - 14} y={y + h / 2 - labelSize * 0.75} width={tw(base, labelSize, false, 800) + 28} height={labelSize * 1.4} rx={10} fill="#fffdf8" />
+				<Sx x={x + w / 2} y={y + h / 2 + labelSize * 0.36} text={base} size={labelSize} color={INK} anchor="middle" weight={800} at={-1000} /></g>
 			</g> : null}
 			{rects}
 			{gapO > 0.01 && total < whole - 1e-6 ? <g opacity={gapO}><rect x={end - gapW} y={y} width={gapW} height={h} fill={`url(#${id}r)`} stroke={ROSE} strokeWidth={4} /></g> : null}
@@ -177,3 +178,34 @@ export const ArrowLine: React.FC<{a: [number, number]; b: [number, number]; at: 
 	);
 };
 void AMB;
+
+// ---------- V06's final frame, shared with V07's opening ----------
+export type SBT = Partial<Record<'bar' | 'jar' | 'nacl' | 'compound' | 'lattice' | 'filter' | 'cross' | 'chip', number>>;
+/** The salt board: 20.00 g bar, the salt jar, NaCl with a lattice view (1 Na : 1 Cl), the struck filter and the
+ *  question chip. `at` gives each part's start frame (default: on from frame 0), `out` its fade-out frame. */
+export const SaltBoard: React.FC<{at?: SBT; out?: SBT; pulse?: number}> = ({at = {}, out = {}, pulse = 1}) => {
+	const f = useCurrentFrame();
+	const A = (k: keyof SBT) => at[k] ?? -1000;
+	const fh = 240, fw = (fh / FILT_E.box[3]) * FILT_E.box[2];
+	const FX = 1560 - fw / 2, FY = 330;
+	const crossA = A('cross');
+	return (
+		<g>
+			<AccBar id="v6sb" x={560} y={200} w={600} h={64} labelSize={30} whole={20} at={A('bar')} out={out.bar} segs={[{m: 6, fill: SAND_F, ink: SAND_INK, label: '30.0%', at: -1000}, {m: 14, fill: SALT_F, ink: INK, label: 'salt 70.0%', at: -1000}]} />
+			<Plate p={SJAR} x={300} y={300} h={480} at={A('jar')} out={out.jar} dy={20} />
+			<Rich x={680} y={470} segs={[{t: 'NaCl'}]} size={84} at={A('nacl')} out={out.nacl} />
+			<Sx x={680} y={530} text="compound: fixed ratio" size={38} color={INK} weight={800} at={A('compound')} out={out.compound} />
+			<ViewFrame id="v6sbl" cx={860} cy={690} r={140} at={A('lattice')} out={out.lattice} src={[470, 740]}>
+				<Lattice cx={860} cy={690} cols={6} rows={6} sp={54} u={20} kindAt={(i, j) => ((i + j) % 2 ? 'Cl' : 'Na')} vib={1} />
+			</ViewFrame>
+			<Sx x={1020} y={770} text="1 Na : 1 Cl in the crystal" size={34} color={INK} weight={800} at={A('lattice') + 10} out={out.lattice} />
+			<g opacity={vis(f, A('filter'), out.filter, 14)} transform={`translate(1560,450) scale(${pulse}) translate(-1560,-450)`}>
+				<Plate p={FILT_E} x={FX} y={FY} h={fh} />
+				{f >= crossA ? <><DrawPath d={`M${FX - 30},${FY - 10} L${FX + fw + 30},${FY + fh + 10}`} at={crossA} dur={10} color="#5a6470" width={8} /><DrawPath d={`M${FX + fw + 30},${FY - 10} L${FX - 30},${FY + fh + 10}`} at={crossA + 6} dur={10} color="#5a6470" width={8} /></> : null}
+				<Sx x={1560} y={622} text="can't filter" size={34} color={INK} anchor="middle" weight={800} at={crossA} />
+				<Sx x={1560} y={664} text="a compound apart" size={34} color={INK} anchor="middle" weight={800} at={crossA} />
+			</g>
+			<Chip x={960} y={860} segs={[{t: 'Na: ? %     Cl: ? %     from the formula alone?'}]} at={A('chip')} out={out.chip} size={44} color={PURE} anchor="middle" />
+		</g>
+	);
+};

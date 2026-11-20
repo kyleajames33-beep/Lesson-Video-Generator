@@ -29,3 +29,18 @@ Scene 1 park move and "CO2" write-on (last 30 frames); scene 2 molecule field mu
 
 ## Builder's sheet grade
 A. The hydrate formula is now clear of the magnifier (the dot and the 4 are visible).
+
+## Round 3 (root playback review, 20 Nov 2026, afternoon)
+All ten playback sheets in `work/root-playback-sample/chem-y11-m1-v07-v1/` were read; fixes:
+- Final handoff: v08 v1 is accepted and frozen, so V07's last frame now matches V08's current first frame exactly (salt jar, Na stub bar, Cl tile with 35, 17 and amber "?"s, chip at y 760; confirmed by stills of V07 frame 12430 and V08 frame 0). Before that the scene fills the frame: the NaCl bar with "Na 23.0" and "Cl 35.5" ("relative atomic masses: numbers handed to us"), then the Cl tile lifts while a chlorine atom model ("what's inside?", "protons? neutrons? electrons?") fills the right half; the model clears before the question chip and the final hold. "what's inside?" no longer touches the Na tile. No V08 file is changed (a ClBoard attempt was reverted).
+- Hook: opens on V06's new final frame (shared `SaltBoard`); its tags moved so nothing overlaps; the 1 Na : 1 Cl underline clears with the tag.
+- Hydrates: "water built into / the crystal" is two lines clear of the burner and the working; the CuSO4 unit and five waters show from the first frame until the working starts.
+- The method: larger CO2 and sand-and-salt bars and a CO2 molecule ("count, weigh, add, divide") from the first frame.
+- Why the formula is enough: larger molecule and a "1 carbon atom + 2 oxygen atoms" line.
+- Relative atomic mass: beam lowered so the lower frame is used; the "no units" underlines are level under each readout.
+- Carbon dioxide: a CO2 molecule labelled 12.0, 16.0, 16.0 fills the lower right.
+- Ammonium nitrate: the two ion groups now sit at the lower right and stay until "Count only one".
+- Heating: the painted balance (display 2.50 g to 1.60 g) replaces the coded readout; the crucible is larger.
+- Feedback 1 and 2, attempt 2: bars, rows and pictures enlarged and spread; feedback 2's bar builds at once.
+
+Grade checker after round 3 (20 Nov, about 13:40 Sydney): **PASS (0 failures, 0 warnings)**. Verification stills were rendered and viewed (frames 0, 700, 962, 2270, 3030, 4064, 5303, 6018, 7258, 7496, 9457, 10505, 11152, 11892, 12200, 12430). V07 frame 12430 was compared with V08 frame 0, and they match apart from the topic label. The painted balance is now in V07's asset list (the first heating still showed it missing).

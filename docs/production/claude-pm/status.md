@@ -10014,3 +10014,7 @@ Root (15 Nov): queued chem-y11-m1-v08 v1; work/release-queue/chem-y11-m1-v08-v1.
 Root (15 Nov): queued chem-y11-m1-v04 v2; work/release-queue/chem-y11-m1-v04-v2.json. Root sampled playback pass; playlist PLZ0nfDo05zgg position 3 (route order).
 
 Root (15 Nov): queued chem-y11-m1-v05 v2; work/release-queue/chem-y11-m1-v05-v2.json. Root sampled playback pass; playlist PLZ0nfDo05zgg position 4 (route order).
+
+Root (15 Nov): queued chem-y11-m1-v06 v2; work/release-queue/chem-y11-m1-v06-v2.json. Root sampled playback pass; playlist PLZ0nfDo05zgg position 5 (route order).
+
+Root (15 Nov): queued chem-y11-m1-v07 v2; work/release-queue/chem-y11-m1-v07-v2.json. Root sampled playback pass; playlist PLZ0nfDo05zgg position 6 (route order).

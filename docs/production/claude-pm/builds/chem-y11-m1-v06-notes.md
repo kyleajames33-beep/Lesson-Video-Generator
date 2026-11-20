@@ -31,3 +31,19 @@ Scene 2 strip timing (amber step frame, drops, wisps); scene 3 display ticks aga
 
 ## Builder's sheet grade
 A.
+
+## Round 3 (root playback review, 20 Nov 2026, afternoon)
+Root's 3 s playback sheets (`work/root-playback-sample/chem-y11-m1-v06-v1/`) showed defects the 16-frame sheet missed. All ten sheets were read; fixes:
+- A real run (2:48 to 2:54): new layout. The bar sits at the top middle; the 96.0% readout has its label to its right; the struck "divide by what came back" slip and its red tag have their own row under it; the working rows sit below the slip; the row openings write on "twenty-five". Nothing overlaps.
+- Where did the missing mass go (3:09): "left wetting the glass and paper" moved up, clear of "25.00 g mixture".
+- Hook: the "sand: ? %" and "salt: ? %" boxes arrive just after "together" (were after "salt"), so the frame is not half empty.
+- Separation: "sand stays" now sits above slot 2 and "salt goes through, dissolved" under the labels (both were spilling across slot edges).
+- Weighing: the bracket no longer touches "empty basin"; the row labels show from the first frame (values on cue).
+- Percentage: the recovered sand and salt (6.00 g, 14.00 g) sit at the lower right from the first frame; "adds to 100" moved under the sum chip.
+- Prediction: the damp-sand magnifier shows from the first frame.
+- Extra mass: the display ticks 6.00 to 6.40 g (it ticked from 0.00 and showed a wrong 4.0% sand label); the "above 100%" tag now waits for the second "Above one" (it overlapped "water weighed as sand"); the drying oven sits beside the balance from the first frame.
+- Memory line: the card's first line writes at once; plates and bar enlarged.
+- Attempt 1 and feedback 1 and 2: balances and pictures enlarged, rows spread down the frame, the bar's "whole mixture" fill stays until the last segment lands (its label clears as the first lands); feedback 2's total readout now lands with the segments.
+- Handoff and final frame: the board is now full (`SaltBoard` in `parts.tsx`): the recovered sand and salt show until "But salt itself", then NaCl, a lattice magnifier ("1 Na : 1 Cl in the crystal"), the struck filter and the chip. V07's opening uses the same component, so the join is exact.
+
+Grade checker after round 3 (20 Nov, about 13:35 Sydney): **PASS (0 failures, 0 warnings)**. Verification stills were rendered at each fixed moment (frames 600, 1204, 1780, 2816, 4496, 5066, 5719, 6103, 6766, 7381, 9089, 9620, 10760, 11420, 11499, 12110) and viewed. The lattice glyphs on the final frame are u 20, so their + and − signs stay at 18 px or more.

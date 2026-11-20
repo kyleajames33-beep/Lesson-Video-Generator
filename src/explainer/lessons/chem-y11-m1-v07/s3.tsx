@@ -7,6 +7,7 @@ import {useCurrentFrame} from 'remotion';
 import {cues} from '../../cues';
 import {Givens, Lines, QTag} from '../chem-y11-m1-v01/s3';
 import {CRU_B, F_MGSO4, F_NACL, SALT, SJAR, hold, sc} from './common';
+import {Atom} from '../chem-y11-m1-v08/parts';
 import {
 	AMB, AMB_INK, Card, Chip, DrawPath, EL, Fade, Framed, Heading, INK, MIX, MassBar, PURE, PauseHoldR, Plate, RED, Rich, SVG, Sx, WATER_INK, Write, prog, richW, smooth, tw,
 } from './parts';
@@ -47,15 +48,15 @@ export const SceneFeedback1: React.FC = () => {
 		<SVG>
 			<Heading text="Your turn" at={-1000} />
 			<Givens segs={[{t: 'Na 23.0     |     Cl 35.5     |     NaCl'}]} />
-			<MassBar F={F_NACL} x={110} y={310} w={640} h={90} at={[K12.rfm + 20, K12.rfm + 40]} sel={{Cl: K12.s60}} />
-			<Sx x={110 + 640 * 35.5 / 58.5 + 140} y={450} text="60.7%" size={40} color={AMB_INK} anchor="middle" weight={800} at={K12.s60} />
-			<Rich x={110} y={560} segs={r1.map((s, i) => ({...s, at: [K12.rfm, K12.rfm + 40, K12.f58][i]}))} at={K12.rfm} size={52} />
-			<Rich x={110} y={660} segs={r2.map((s, i) => ({...s, at: [K12.chl, K12.chl + 20, K12.chl + 100][i]}))} at={K12.chl} size={52} />
-			<Framed x={110 + richW(r2, 52)} y={660} segs={[{t: '60.7%', c: GREEN_T}]} at={K12.s60} size={52} />
-			<Chip x={110} y={730} segs={[{t: '1 of 2 atoms = 50%'}]} at={K12.one} size={40} color={RED} strike={K12.slip} />
-			<Write x={560} y={782} text="count ≠ mass" at={K12.slip + 8} size={44} color={RED} />
-			<Plate p={SJAR} x={1500} y={290} h={330} />
-			<Chip x={1580} y={660} segs={[{t: 'Cl 60.7%, Na 39.3%'}]} at={K12.heavier} size={44} color={GREEN_T} anchor="middle" />
+			<MassBar F={F_NACL} x={110} y={300} w={820} h={110} at={[K12.rfm, K12.rfm + 8]} sel={{Cl: K12.s60}} />
+			<Sx x={110 + 820 * 23 / 58.5 + 820 * 35.5 / 117} y={462} text="60.7%" size={40} color={AMB_INK} anchor="middle" weight={800} at={K12.s60} />
+			<Rich x={110} y={590} segs={r1.map((s, i) => ({...s, at: [K12.rfm, K12.rfm + 40, K12.f58][i]}))} at={K12.rfm} size={52} />
+			<Rich x={110} y={710} segs={r2.map((s, i) => ({...s, at: [K12.chl, K12.chl + 20, K12.chl + 100][i]}))} at={K12.chl} size={52} />
+			<Framed x={110 + richW(r2, 52)} y={710} segs={[{t: '60.7%', c: GREEN_T}]} at={K12.s60} size={52} />
+			<Chip x={110} y={780} segs={[{t: '1 of 2 atoms = 50%'}]} at={K12.one} size={40} color={RED} strike={K12.slip} />
+			<Write x={600} y={824} text="count ≠ mass" at={K12.slip + 8} size={44} color={RED} />
+			<Plate p={SJAR} x={1480} y={280} h={420} />
+			<Chip x={1610} y={760} segs={[{t: 'Cl 60.7%, Na 39.3%'}]} at={K12.heavier} size={44} color={GREEN_T} anchor="middle" />
 			{void K12.mass}
 		</SVG>
 	);
@@ -64,7 +65,7 @@ export const SceneFeedback1: React.FC = () => {
 // ---------- 13. attempt 2 ----------
 const K13 = cues(sc('attempt-2'), {pause: 'Pause here'});
 export const SceneAttempt2: React.FC = () => {
-	const wh = (300 / SALT.box[2]) * SALT.box[3];
+	const wh = (420 / SALT.box[2]) * SALT.box[3];
 	return (
 		<SVG>
 			<Heading text="Last one" at={0} />
@@ -76,7 +77,8 @@ export const SceneAttempt2: React.FC = () => {
 				[{t: 'the percentage by mass of water in this hydrate.'}],
 			]} />
 			<Sx x={140} y={500} text="(3 marks)" size={34} color={INK} weight={700} at={-1000} />
-			<Plate p={SALT} x={1490} y={300} h={wh} />
+			<Plate p={SALT} x={1360} y={560} h={wh} />
+			<Sx x={1570} y={760} text="white crystals" size={30} color={INK} anchor="middle" weight={700} at={-1000} />
 			<PauseHoldR h={hold('attempt-2')} at={K13.pause} x={140} y={936} cx={1220} cy={680} />
 		</SVG>
 	);
@@ -91,23 +93,23 @@ export const SceneFeedback2: React.FC = () => {
 	const r3 = [{t: 'Mr = 120.4 + 126.0 = 246.4'}];
 	const r4 = [{t: '% H_2O = '}, {t: '126.0 ÷ 246.4', c: PURE}, {t: ' × 100 = '}];
 	const gx0 = 124 + tw('Mg 24.3   |   S 32.1   |   O 16.0   |   H 1.0   |   MgSO', 36, false, 700);
-	const wh = (240 / SALT.box[2]) * SALT.box[3];
+	const wh = (340 / SALT.box[2]) * SALT.box[3];
 	return (
 		<SVG>
 			<Heading text="Last one" at={-1000} />
 			<Givens segs={[{t: 'Mg 24.3   |   S 32.1   |   O 16.0   |   H 1.0   |   MgSO_4·7H_2O'}]} />
 			{f >= K14.seven ? <DrawPath d={`M${gx0 + 14},248 L${gx0 + 120},248`} at={K14.seven} dur={12} color={WATER_INK} width={5} /> : null}
-			<MassBar F={F_MGSO4} x={110} y={300} w={800} h={80} at={[K14.mg, K14.mg + 8, K14.mg + 16, K14.seven + 10]} sel={{H2O: K14.f51}} size={30} />
-			<Plate p={SALT} x={1560} y={300} h={wh} />
-			<Rich x={110} y={490} segs={r1} size={48} at={K14.mg} />
-			<Framed x={110 + richW(r1, 48)} y={490} segs={[{t: '120.4', c: '#a35c00'}]} at={K14.four} size={48} tick={false} stroke="#e8a33d" />
-			<Rich x={110} y={580} segs={r2} size={48} at={K14.seven} />
-			<Framed x={110 + richW(r2, 48)} y={580} segs={[{t: '126.0', c: '#a35c00'}]} at={K14.z126} size={48} tick={false} stroke="#e8a33d" />
-			<Rich x={110} y={670} segs={r3} size={44} at={K14.total} />
-			<Rich x={110} y={765} segs={r4} size={52} at={K14.water} />
-			<Framed x={110 + richW(r4, 52)} y={765} segs={[{t: '51.1%', c: GREEN_T}]} at={K14.f51} size={52} />
-			<Chip x={110} y={815} segs={[{t: 'one H_2O: 18.0 ÷ 138.4 × 100 = 13.0%'}]} at={K14.counting} size={38} color={RED} strike={K14.avoid} />
-			<Write x={920} y={865} text="count all seven waters" at={K14.avoid + 6} size={44} color={RED} />
+			<MassBar F={F_MGSO4} x={110} y={290} w={880} h={100} at={[K14.mg, K14.mg + 8, K14.mg + 16, K14.mg + 24]} sel={{H2O: K14.f51}} size={30} />
+			<Plate p={SALT} x={1460} y={330} h={wh} />
+			<Rich x={110} y={520} segs={r1} size={48} at={K14.mg} />
+			<Framed x={110 + richW(r1, 48)} y={520} segs={[{t: '120.4', c: '#a35c00'}]} at={K14.four} size={48} tick={false} stroke="#e8a33d" />
+			<Rich x={110} y={615} segs={r2} size={48} at={K14.seven} />
+			<Framed x={110 + richW(r2, 48)} y={615} segs={[{t: '126.0', c: '#a35c00'}]} at={K14.z126} size={48} tick={false} stroke="#e8a33d" />
+			<Rich x={110} y={705} segs={r3} size={44} at={K14.total} />
+			<Rich x={110} y={800} segs={r4} size={52} at={K14.water} />
+			<Framed x={110 + richW(r4, 52)} y={800} segs={[{t: '51.1%', c: GREEN_T}]} at={K14.f51} size={52} />
+			<Chip x={110} y={845} segs={[{t: 'one H_2O: 18.0 ÷ 138.4 × 100 = 13.0%'}]} at={K14.counting} size={38} color={RED} strike={K14.avoid} />
+			<Write x={940} y={888} text="count all seven waters" at={K14.avoid + 6} size={44} color={RED} />
 			{void smooth}{void prog}
 		</SVG>
 	);
@@ -120,17 +122,27 @@ export const SceneHandoff: React.FC = () => {
 	const lift = smooth(prog(f, K15.inside - 20, 30));
 	const x0 = 640 + 640 * 23 / 58.5, w0 = 640 * 35.5 / 58.5;
 	const bx = x0 + (860 - x0) * lift, by = 230 + (330 - 230) * lift, bw = w0 + (300 - w0) * lift, bh = 80 + (300 - 80) * lift;
+	const side = prog(f, K15.inside, 14) * (1 - prog(f, K15.ion - 40, 16));
 	return (
 		<SVG>
 			<Plate p={SJAR} x={150} y={360} h={380} />
 			<MassBar F={[F_NACL[0]]} x={640} y={230} w={640 * 23 / 58.5} h={80} />
+			<Sx x={640 + 320 * 23 / 58.5} y={360} text="Na 23.0" size={40} color={INK} anchor="middle" weight={800} at={-1000} out={K15.inside - 20} />
+			<Sx x={x0 + w0 / 2} y={360} text="Cl 35.5" size={40} color={INK} anchor="middle" weight={800} at={-1000} out={K15.inside - 20} />
+			<Sx x={960} y={470} text="relative atomic masses:" size={44} color={INK} anchor="middle" weight={800} at={-1000} out={K15.inside - 20} />
+			<Sx x={960} y={530} text="numbers handed to us" size={44} color={INK} anchor="middle" weight={800} at={-1000} out={K15.inside - 20} />
 			<rect x={bx} y={by} width={bw} height={bh} rx={12 * lift} fill={EL.Cl} stroke={INK} strokeWidth={4} />
 			<Sx x={bx + bw / 2} y={by + bh / 2 + 12 + 50 * lift} text="Cl" size={34 + 130 * lift} color="#fff" anchor="middle" weight={800} at={-1000} />
-			<Write x={880} y={300} text="what's inside?" at={K15.inside} out={K15.ion - 30} size={42} color={INK} />
 			<Sx x={850} y={420} text="35" size={52} color={INK} anchor="end" weight={800} at={K15.t35} />
 			<Sx x={850} y={620} text="17" size={52} color={INK} anchor="end" weight={800} at={K15.s17} />
 			<Sx x={770} y={420} text="?" size={52} color={AMB_INK} anchor="end" weight={800} at={K15.t35 + 10} />
 			<Sx x={770} y={620} text="?" size={52} color={AMB_INK} anchor="end" weight={800} at={K15.s17 + 10} />
+			{/* what's inside: a chlorine atom model at the right while it is spoken, cleared before the final frame */}
+			<g opacity={side}>
+				<Atom cx={1540} cy={500} R={190} p={17} n={18} e={17} r={7} />
+				<Sx x={1540} y={262} text="what's inside?" size={44} color={INK} anchor="middle" weight={800} at={-1000} />
+				<Sx x={1540} y={760} text="protons? neutrons? electrons?" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
+			</g>
 			<Chip x={960} y={760} segs={[{t: 'How does nuclide notation tell us the particles in an atom or ion?'}]} at={K15.ion} size={38} color={PURE} anchor="middle" />
 			{void K15.using}{void K15.chem}{void K15.symbol}{void K15.next}{void AMB}
 		</SVG>

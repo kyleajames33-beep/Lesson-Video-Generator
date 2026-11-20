@@ -8,7 +8,7 @@ import {cues} from '../../cues';
 import {SALT_SEG, SAND_SEG} from '../chem-y11-m1-v06/s1';
 import {CRU_B, CRU_L, CRU_W, F_CO2, F_CUSO4, F_NH4NO3, sc} from './common';
 import {
-	AMB, AMB_INK, AccBar, Bracket, Chip, DrawPath, EL, Fade, Framed, Glyph, Heading, INK, MassBar, PURE, PenArrow, PenRing, Plate, RED, RLab, ROSE, Readout, Rich, SVG,
+	AMB, AMB_INK, AccBar, Balance, balGeo, Bracket, Chip, DrawPath, EL, Fade, Framed, Glyph, Heading, INK, MassBar, PURE, PenArrow, PenRing, Plate, RED, RLab, ROSE, Readout, Rich, SVG,
 	Sx, TaskStrip, ViewFrame, WATER, WATER_INK, Write, clamp01, plateMap, prog, richW, tileGeo,
 } from './parts';
 
@@ -52,16 +52,18 @@ export const SceneMethod: React.FC = () => {
 			<Rich x={110} y={282} segs={[{t: 'Mr(CO_2) = 12.0 + 2 × 16.0 = 44.0'}]} size={34} weight={700} />
 			<Rich x={110} y={326} segs={[{t: 'oxygen share = 2 × 16.0 = 32.0'}]} size={34} weight={700} />
 			<Rich x={110} y={370} segs={[{t: '% O = 32.0 ÷ 44.0 × 100 = 72.7%'}]} size={34} weight={700} />
-			<MassBar F={F_CO2} x={1380} y={250} w={420} h={60} size={30} sel={{O: -1000}} />
-			<Sx x={1380} y={360} text="CO_2: oxygen 72.7% of the mass" size={30} color={INK} weight={700} at={-1000} />
+			<MassBar F={F_CO2} x={1300} y={250} w={520} h={80} size={32} sel={{O: -1000}} />
+			<Sx x={1300} y={376} text="CO_2: oxygen 72.7% of the mass" size={30} color={INK} weight={700} at={-1000} />
 			{stages.map((s, i) => (
 				<g key={s.n}>
 					<Write x={110} y={470 + i * 80} text={s.n} at={s.at} size={48} color={AMB_INK} />
 					<Rich x={170} y={470 + i * 80} segs={[{t: s.t}]} size={44} at={s.at + 4} />
 				</g>
 			))}
-			<AccBar id="v7b6" x={1380} y={480} w={420} h={64} labelSize={30} whole={20} segs={[SAND_SEG(6, -1000, '30.0%'), SALT_SEG(14, -1000, '70.0%')]} wholeLabel="the sand and salt run" />
-			<Sx x={1380} y={600} text="same idea: part over whole" size={34} color={INK} weight={800} at={K6.last} />
+			<AccBar id="v7b6" x={1300} y={480} w={520} h={80} labelSize={30} whole={20} segs={[SAND_SEG(6, -1000, '30.0%'), SALT_SEG(14, -1000, '70.0%')]} wholeLabel="the sand and salt run" />
+			<Sx x={1300} y={612} text="same idea: part over whole" size={34} color={INK} weight={800} at={K6.last} />
+			<Glyph k="CO2" x={1560} y={740} u={52} />
+			<Sx x={1560} y={840} text="count, weigh, add, divide" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
 			<Rich x={110} y={860} segs={EQF} size={52} at={K6.part - 6} />
 			<Bracket a={[p0, 806]} b={[p1, 806]} at={K6.part + 4} color={AMB} depth={-16} />
 			<Write x={(p0 + p1) / 2 - 40} y={776} text="part" at={K6.part + 10} size={42} color={AMB_INK} />
@@ -115,13 +117,13 @@ export const SceneAmmonium: React.FC = () => {
 			<Fade at={NH_AT[0]}><RLab x={860} y={500} t="Mr" /><Readout x={860} y={510} w={220} text={mrv.toFixed(1)} size={52} color={PURE} frame={PURE} anchor="middle" /></Fade>
 			<Fade at={K7.t28}><RLab x={1110} y={500} t="N share" /><Readout x={1110} y={510} w={220} text="28.0" size={52} color={AMB_INK} frame={AMB} anchor="middle" /></Fade>
 			<Fade at={K7.t35}><RLab x={1360} y={500} t="% N" /><Readout x={1360} y={510} w={240} text="35.0%" size={52} color={AMB_INK} frame={AMB} anchor="middle" /></Fade>
-			<g opacity={1 - prog(f, K7.rfm - 8, 12)}>
-				<g transform="translate(700,760) scale(1.5) translate(-700,-760)"><Ion x={700} y={760} kind="NH4" /></g>
-				<g transform="translate(1250,760) scale(1.5) translate(-1250,-760)"><Ion x={1250} y={760} kind="NO3" /></g>
-				<Sx x={700} y={928} text="ammonium part" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
-				<Sx x={1250} y={928} text="nitrate part" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
-				<PenRing cx={700} cy={760} rx={56} ry={56} at={K7.each} color={AMB} seed={3} />
-				<PenRing cx={1250} cy={760} rx={56} ry={56} at={K7.each + 8} color={AMB} seed={6} />
+			<g opacity={1 - prog(f, K7.countone - 10, 12)}>
+				<g transform="translate(1400,780) scale(1.3) translate(-1400,-780)"><Ion x={1400} y={780} kind="NH4" /></g>
+				<g transform="translate(1690,780) scale(1.3) translate(-1690,-780)"><Ion x={1690} y={780} kind="NO3" /></g>
+				<Sx x={1400} y={930} text="ammonium part" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
+				<Sx x={1690} y={930} text="nitrate part" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
+				<PenRing cx={1400} cy={780} rx={48} ry={48} at={K7.each} color={AMB} seed={3} />
+				<PenRing cx={1690} cy={780} rx={48} ry={48} at={K7.each + 8} color={AMB} seed={6} />
 			</g>
 			<Rich x={110} y={690} segs={r1.map((s, i) => ({...s, at: [K7.rfm, K7.f14, K7.eighty][i]}))} at={K7.rfm} size={44} />
 			<Rich x={110} y={780} segs={r2.map((s, i) => ({...s, at: [K7.share, K7.share + 20, K7.t28][i]}))} at={K7.share} size={48} />
@@ -170,7 +172,8 @@ export const SceneHydrate: React.FC = () => {
 			<ViewFrame id="v7hy" cx={470} cy={470} r={140} at={K8.crys - 20} src={[cm.X(512), cm.Y(250)]}>
 				<LatticeBits cx={470} cy={470} />
 			</ViewFrame>
-			<Write x={380} y={660} text="water built into the crystal" at={K8.crys} size={40} color={WATER_INK} />
+			<Write x={400} y={656} text="water built into" at={K8.crys} size={40} color={WATER_INK} />
+			<Write x={400} y={702} text="the crystal" at={K8.crys + 12} size={40} color={WATER_INK} />
 			{/* the formula; the 5H2O group stays bright while the rest dims */}
 			<Rich x={fx} y={fy} segs={[{t: 'CuSO_4', c: dimRest > 0.5 ? '#8a8478' : INK}, {t: '·'}, {t: '5H_2O', c: WATER_INK}]} size={fs} />
 			<PenArrow a={[dotX + 40, fy + 90]} b={[dotX + 2, fy + 10]} at={K8.five} out={K8.treat} color={INK} bend={0.2} />
@@ -178,13 +181,13 @@ export const SceneHydrate: React.FC = () => {
 			<Chip x={fx} y={380} segs={[{t: '5H_2O read as one water'}]} at={K8.treat} out={K8.whole} size={36} color={RED} strike={K8.treat + 24} />
 			<Write x={1260} y={420} text="five waters, not one" at={K8.treat + 30} out={K8.whole} size={42} color={RED} />
 			{/* for every copper sulfate unit, five waters (shown until the working starts) */}
-			<Fade at={K8.dot} out={K8.each - 10}>
+			<Fade at={-1000} out={K8.each - 10}>
 				<circle cx={860} cy={640} r={34} fill={EL.Cu} stroke={INK} strokeWidth={3} />
 				<g>{[0, 1, 2, 3].map(k => <circle key={k} cx={960 + Math.cos(k * 1.57 + 0.78) * 30} cy={640 + Math.sin(k * 1.57 + 0.78) * 30} r={15} fill={EL.O} stroke={INK} strokeWidth={2} />)}<circle cx={960} cy={640} r={22} fill={EL.S} stroke={INK} strokeWidth={2} /></g>
 				<Sx x={910} y={730} text="one CuSO_4 unit" size={34} color={INK} anchor="middle" weight={800} at={-1000} />
 				<Sx x={1050} y={658} text="+" size={60} color={INK} anchor="middle" weight={800} at={-1000} />
-				{[0, 1, 2, 3, 4].map(k => <g key={k} opacity={prog(f, K8.dot + k * 6, 8)}><circle cx={1140 + k * 120} cy={640} r={46} fill={WATER} stroke={WATER_INK} strokeWidth={3} /><Glyph k="H2O" x={1140 + k * 120} y={640} u={20} /></g>)}
-				<Sx x={1380} y={730} text="five H_2O in the crystal" size={34} color={WATER_INK} anchor="middle" weight={800} at={K8.dot} />
+				{[0, 1, 2, 3, 4].map(k => <g key={k} opacity={prog(f, k * 4, 8)}><circle cx={1140 + k * 120} cy={640} r={46} fill={WATER} stroke={WATER_INK} strokeWidth={3} /><Glyph k="H2O" x={1140 + k * 120} y={640} u={20} /></g>)}
+				<Sx x={1380} y={730} text="five H_2O in the crystal" size={34} color={WATER_INK} anchor="middle" weight={800} at={-1000} />
 			</Fade>
 			{/* staged working */}
 			<Rich x={fx} y={540} segs={ra.map((s, i) => ({...s, at: [K8.each, K8.each + 20, K8.e18][i]}))} at={K8.each} size={48} out={K8.whole} />
@@ -206,7 +209,7 @@ export const SceneHeating: React.FC = () => {
 	const f = useCurrentFrame();
 	const u = clamp01((f - K9.steam) / (K9.t36 + 30 - K9.steam));
 	const m = 2.5 - 0.9 * u, pc = 100 - 36.1 * u;
-	const cx = 230, cy = 230, ch = 540;
+	const cx = 210, cy = 230, ch = 600;
 	const cm = plateMap(CRU_B, cx, cy, ch);
 	const lit = prog(f, K9.heat, 16), white = prog(f, K9.powder - 10, 24);
 	const BX = 860, BW = 760;
@@ -223,8 +226,8 @@ export const SceneHeating: React.FC = () => {
 			<PenArrow a={[620, 290]} b={[cm.X(560), cm.Y(120)]} at={K9.steam + 4} color={WATER_INK} bend={-0.2} />
 			<Write x={600} y={600} text="anhydrous:" at={K9.powder} size={40} color={INK} />
 			<Write x={600} y={648} text="without water" at={K9.powder + 10} size={40} color={INK} />
-			<Sx x={cx + 30} y={812} text="balance reading" size={30} color={INK} weight={700} at={-1000} />
-			<Readout x={cx + 30} y={822} w={300} text={`${m.toFixed(2)} g`} size={52} color={PURE} frame={PURE} anchor="middle" />
+			<Sx x={1480} y={636} text="on the balance" size={30} color={INK} weight={700} at={-1000} />
+			<Balance g={balGeo(1480, 650, 240)} text={`${m.toFixed(2)} g`} />
 			<Sx x={1480} y={206} text="% of starting mass" size={30} color={INK} weight={700} at={-1000} />
 			<Readout x={1480} y={216} w={320} text={`${pc.toFixed(1)}%`} size={52} color={AMB_INK} frame={AMB} anchor="middle" />
 			<MassBar F={F_CUSO4} x={BX} y={380} w={BW} h={90} lift={u} />
