@@ -379,3 +379,6 @@ The YouTube refresh token (secrets/youtube-token.json, made 13 Nov) stopped work
 1. Run `node scripts/youtube-auth.mjs` and approve in the browser.
 2. Optional, stops the weekly expiry: in Google Cloud console, OAuth consent screen, set the app's publishing status to "In production".
 Waiting: chem-y11-m1-v08 v1 (already queued) and chem-y11-m1-v10 v1 (checked and prepared in work/brief245/root/bio/chem-y11-m1-v10; root queues it once the token works).
+
+## 21 Nov 2026 (root, overnight): Codex brief 257 to hand over
+chem-y11-m1-v14's "across-period" scene was voiced with about 41 s of unscripted extra speech (the TTS kept talking; the gate logged it but retained the take). v14 is built and graded but held from render. Please give Codex `docs/production/claude-pm/codex-prompts/257-y11c-v14-revoice-and-runon-gate.md` (harden the gate, re-voice that one scene, re-scan). Root re-renders v14 after.
