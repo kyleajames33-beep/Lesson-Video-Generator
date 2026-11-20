@@ -382,3 +382,6 @@ Waiting: chem-y11-m1-v08 v1 (already queued) and chem-y11-m1-v10 v1 (checked and
 
 ## 21 Nov 2026 (root, overnight): Codex brief 257 to hand over
 chem-y11-m1-v14's "across-period" scene was voiced with about 41 s of unscripted extra speech (the TTS kept talking; the gate logged it but retained the take). v14 is built and graded but held from render. Please give Codex `docs/production/claude-pm/codex-prompts/257-y11c-v14-revoice-and-runon-gate.md` (harden the gate, re-voice that one scene, re-scan). Root re-renders v14 after.
+
+## Optional, low priority (root, 21 Nov): four public videos missing from Bunny
+`chem-m5-c01`, `chem-m5-c02`, `bio-m5-b01` and `bio-m5-mould` are public on YouTube, but their masters are lost and they no longer render (they predate the render asset guard, which fails on their image components). If you want them on Bunny, download each from YouTube Studio (Content, then the three-dot menu, then Download) into `out/explainer/Explainer-<id>/Explainer-<id>-v1.mp4`, and root will upload them with captions. The six old-engine Year 11 Chemistry videos are left off on purpose: the new Module 2 lessons replace them.
