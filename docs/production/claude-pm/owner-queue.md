@@ -373,3 +373,9 @@ Links have the form http://127.0.0.1:8778/Explainer-<id>-preview-v1/
 - The owner passed the C09 to C14, B13, P01 and G01 previews. They are queued to render (log: `out/explainer/render-queue-29oct.log`).
 - New standing policy from the owner: Claude renders built lessons without waiting for an owner preview pass. The owner reviews on YouTube and flags any redos. Every other check still runs: the reviews, the Codex error check, the recording gate, Claude's preview inspection, render verification, cumulative captions and the upload-brief checks.
 - Unchanged: B14, B15 and bio G02 stay held for the cultural review.
+
+## 21 Nov 2026 (root, overnight): YouTube sign-in expired
+The YouTube refresh token (secrets/youtube-token.json, made 13 Nov) stopped working at about 22:08 on 20 Nov (Google: "Token has been expired or revoked"). Google expires these after 7 days while the OAuth app is in "Testing". Uploads and root's playlist readback are blocked until you sign in again:
+1. Run `node scripts/youtube-auth.mjs` and approve in the browser.
+2. Optional, stops the weekly expiry: in Google Cloud console, OAuth consent screen, set the app's publishing status to "In production".
+Waiting: chem-y11-m1-v08 v1 (already queued) and chem-y11-m1-v10 v1 (checked and prepared in work/brief245/root/bio/chem-y11-m1-v10; root queues it once the token works).

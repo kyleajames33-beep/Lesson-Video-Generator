@@ -351,3 +351,9 @@ v2 was sampled in full in 3 s windows (10 sheets):
 - The handoff shows "Na 23.0 / Cl 35.5" as given numbers, then the chlorine atom with "what's inside?". It ends on v08's opening frame.
 
 Pass.
+
+## chem-y11-m1-v10 v1
+Root (20 Nov, 22:45): 3 s sweep of the master read in full (10 sheets). Opening matches v09's final frame (red-left strip after root's v09 flip). No overlaps, clipping or sparse teaching moments; worked answer, crossed slip, countdowns and key notes correct; physics checked (photon energy = gap, 2.5 × 10⁻¹⁹ J, gaps 2, 3, 5 units). Minor: the strip is an empty dark box for about 12 s at 0:03 to 0:15 while the prism lines draw (design intent). Pass.
+
+## chem-y11-m1-v09 v1
+Root (20 Nov, 23:25): 3 s sweep of the master read in full (10 sheets). Opens on v08's final frame; final frame matches v10 v1's first frame (red-left strip). Numbers checked: chlorine 35.4846, boron 10.801, silicon x = 0.78 (check 21.84 + 6.38 = 28.22), attempt 1 22.6, attempt 2 70%/30% (slip gives 64.4). Beam tilt and pivot follow the token counts; no misleading equal-token picture (root ruling). No overlaps or clipping; minor: two silicon plates on screen together in scene 9 (redundant, harmless). Pass.
