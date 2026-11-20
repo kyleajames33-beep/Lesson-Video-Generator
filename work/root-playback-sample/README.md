@@ -378,3 +378,9 @@ Root (21 Nov, 03:40): 3 s sweep of the master read in full (10 sheets). Opens on
 
 ## chem-y11-ws-v03 v1
 Root (21 Nov, 04:20): 3 s sweep of the master read in full (11 sheets). Opens on ws-v02 v1's final frame; ends exactly on v11 v1's first frame (imported WsV03FinalFrame), so the v10, ws-v01 to ws-v03, v11 chain joins. Checked: class 1 accurate and precise (36.0, 35.8, 36.2 against 36.1), class 2 precise not accurate (34.3 to 34.5), hot crucible reads low, zero then check mass, one balance per sample, source checks (who, why, when, agree), attempt answers (P accurate, Q about 4 points high; A and C reliable; reference parts). Minor: the prediction ring sits close to the "accepted value" label at 2:42. Pass.
+
+## chem-y11-m1-v15 v1
+Root (21 Nov, 05:40): 3 s sweep of the master read (sheets 1 to 6, 8, 9). Opens on v14's final frame (frozen v14 handoff; v14 audio re-voice pending does not touch it); ends on the potassium trough and flame plates with the v16 chip. Checked: Li 0.53 g/cm3 and 181 °C, Na 98 °C, K 63 °C; IE Li 520, Na 496, K 419, Rb 403, Cs 376 kJ/mol (NIST via PubChem); 2Na + 2H2O -> 2NaOH + H2 and Li/K analogues; model rates labelled; fair-test controls; tarnish slip; feedback answers. Pass. Release after v14 (prerequisite).
+
+## chem-y11-m1-v16 v1
+Root (21 Nov, 05:45): 3 s sweep of the master read (sheets 1 to 6, 8, 9). Opens on v15's final frame; ends on the nucleus "?" frame with the v17 chip. Checked: flame colours (Li crimson, Na yellow-orange, K lilac, Ca orange-red, Sr red, Ba green, Cu blue-green), Mg no colour, Li 671/610 nm and Sr bands and 461 nm (NIST), sodium masking answer, red-left strips as in v10. Minor: spectroscope strips empty for about 10 s before their lines (as v10); memory-card caption line small. Pass.
