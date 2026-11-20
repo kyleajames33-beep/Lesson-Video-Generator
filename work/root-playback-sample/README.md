@@ -384,3 +384,6 @@ Root (21 Nov, 05:40): 3 s sweep of the master read (sheets 1 to 6, 8, 9). Opens 
 
 ## chem-y11-m1-v16 v1
 Root (21 Nov, 05:45): 3 s sweep of the master read (sheets 1 to 6, 8, 9). Opens on v15's final frame; ends on the nucleus "?" frame with the v17 chip. Checked: flame colours (Li crimson, Na yellow-orange, K lilac, Ca orange-red, Sr red, Ba green, Cu blue-green), Mg no colour, Li 671/610 nm and Sr bands and 461 nm (NIST), sodium masking answer, red-left strips as in v10. Minor: spectroscope strips empty for about 10 s before their lines (as v10); memory-card caption line small. Pass.
+
+## chem-y11-m1-v14 v1
+Root (21 Nov, 10:30): 3 s sweep of the master read (sheets 1 to 9). Rendered after brief 257's across-period re-voice (31.4 s take, gate pass). Opens on v13's final frame; ends on the water dish "?" frame leading to v15. Checked: first IE Na 496, Mg 738, Al 578, Si 787, P 1012, S 1000, Cl 1251, Ar 1521; Li 520, Na 496, K 419, Rb 403, Cs 376 kJ/mol (NIST via PubChem); Pauling Na 0.9 to Cl 3.2, F 4.0, Cl 3.2, Br 3.0, I 2.7; Al and S dips explained (new 3p, paired 3p); Ar no Pauling value with the "noble gases = 0" slip crossed; Na vs K feedback with the "more protons" slip crossed; notes hold 45 s. Pass. v16 v1 is superseded by brief 258's trim (render v16 v2).
