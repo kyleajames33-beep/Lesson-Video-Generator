@@ -47,7 +47,7 @@ export const SceneHook: React.FC = () => {
 	const lvl = 60 * prog(f, K1.water, 30);
 	return (
 		<SVG>
-			<g opacity={1 - prog(f, 0, 30)}><InkBoard /></g>
+			<g opacity={1 - prog(f, K1.stand - 20, 30)}><InkBoard /></g>
 			<Jar x={J1.x} y={J1.y} h={J1.h} o={jarIn} front={prog(f, K1.stand + 30, 20)}>
 				<Solvent g={g} lvl={lvl} />
 				<DevStrip x={IS.x} y={IS.y + (1 - jarIn) * -120} w={IS.w} h={IS.h} base={ib} travel={tIn} spots={HOOK_SPOTS} sep={sep} spotR={9} />
@@ -156,7 +156,9 @@ export const SceneWhy: React.FC = () => {
 			<rect x={PV.x} y={PV.y} width={PV.w} height={PV.h} rx={18} fill="none" stroke={INK} strokeWidth={5} />
 			<Sx x={PV.x + 20} y={PV.y + PV.h - 18} text="paper fibres and moving water (model, not to scale)" size={30} color={INK} weight={700} at={-1000} />
 			{stuckBlue ? <PenRing cx={(stuckBlue as [number, number])[0]} cy={(stuckBlue as [number, number])[1]} rx={30} ry={30} at={K3.stick} out={K3.carried} color={SLATE_INK} seed={2} /> : null}
+			<Fade at={K3.stick}><rect x={110} y={218} width={330} height={56} rx={12} fill="#fffdf8" opacity={0.92} /></Fade>
 			<Write x={PV.x + 30} y={PV.y + 60} text="stuck: stays put" at={K3.stick + 4} size={42} color={SLATE_INK} />
+			<Fade at={K3.carried}><rect x={110} y={278} width={330} height={56} rx={12} fill="#fffdf8" opacity={0.92} /></Fade>
 			<Write x={PV.x + 30} y={PV.y + 120} text="carried: rides up" at={K3.carried} size={42} color={PURE} />
 			{ridingY ? <PenArrow a={[(ridingY as [number, number])[0] + 30, (ridingY as [number, number])[1] + 40]} b={[(ridingY as [number, number])[0] + 30, (ridingY as [number, number])[1] - 60]} at={K3.carried} out={K3.attr} color={PURE} bend={0} width={5} /> : null}
 			{/* live shares on one timer */}
@@ -170,8 +172,10 @@ export const SceneWhy: React.FC = () => {
 			<rect x={1320} y={656} width={480} height={44} rx={10} fill="#eef2fa" stroke={INK} strokeWidth={3} />
 			<rect x={1324} y={660} width={472 * share(45) / 100} height={36} rx={8} fill={DYE.yellow} />
 			<Readout x={1320} y={712} w={220} text={`${share(45)}%`} size={44} color="#8a6a00" frame={DYE.yellow} anchor="middle" />
-			<Write x={PV.x + 30} y={PV.y + PV.h - 90} text="sticks more: falls behind" at={K3.behind} size={42} color={DYE.blue} />
-			<Write x={PV.x + 620} y={PV.y + 300} text="moves more: goes further" at={K3.further} size={42} color={INK} />
+			<Fade at={K3.behind}><rect x={110} y={338} width={470} height={56} rx={12} fill="#fffdf8" opacity={0.92} /></Fade>
+			<Write x={PV.x + 30} y={PV.y + 180} text="sticks more: falls behind" at={K3.behind} size={42} color={DYE.blue} />
+			<Fade at={K3.further}><rect x={700} y={218} width={470} height={56} rx={12} fill="#fffdf8" opacity={0.92} /></Fade>
+			<Write x={PV.x + 620} y={PV.y + 60} text="moves more: goes further" at={K3.further} size={42} color={INK} />
 			<Sx x={1320} y={880} text="same time, different attraction" size={34} color={INK} weight={800} at={K3.every} />
 			<Sx x={1320} y={922} text="so the dyes spread apart" size={34} color={INK} weight={800} at={K3.every} />
 			{void K3.key}{void K3.each}{void K3.dist}{void K3.diss}{void K3.spots}{void Fade}

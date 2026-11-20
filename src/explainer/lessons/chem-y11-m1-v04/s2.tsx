@@ -70,12 +70,14 @@ export const SceneColumn: React.FC = () => {
 			<Fade at={K6.hot}>
 				<defs><linearGradient id="v4grad" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor="#d9532c" /><stop offset="1" stopColor="#f2c14e" /></linearGradient></defs>
 				<rect x={g.colTop[0] + 36} y={g.colTop[1]} width={14} height={colH} rx={6} fill="url(#v4grad)" stroke={INK} strokeWidth={2} />
-				<Sx x={g.colTop[0] + 60} y={g.colBot[1] - 6} text="about 89 °C" size={34} color={INK} weight={800} at={-1000} />
+				<Sx x={470} y={g.colBot[1] - 14} text="about" size={30} color={INK} weight={800} at={-1000} />
+				<Sx x={470} y={g.colBot[1] + 18} text="89 °C" size={32} color={INK} weight={800} at={-1000} />
 			</Fade>
-			<Sx x={g.colTop[0] + 60} y={g.colTop[1] + 34} text="about 78 °C" size={34} color={INK} weight={800} at={K6.top} />
+			<Sx x={470} y={g.colTop[1] + 50} text="about" size={30} color={INK} weight={800} at={K6.top} />
+			<Sx x={470} y={g.colTop[1] + 82} text="78 °C" size={32} color={INK} weight={800} at={K6.top} />
 			{/* the run placed up the column */}
-			{vals.map((v, i) => <Sx key={v} x={g.colTop[0] - 46} y={g.colBot[1] - 20 - (i * colH) / 4} text={`${v}%`} size={34} color={ETH_INK} anchor="end" weight={800} at={K6.over + i * 30} />)}
-			<Sx x={g.flask[0] - 70} y={g.flask[1] + 10} text="17%" size={34} color={ETH_INK} anchor="end" weight={800} at={K6.over - 20} />
+			{vals.map((v, i) => { const yy = g.colBot[1] - 20 - (i * colH) / 4; return <g key={v} opacity={prog(f, K6.over + i * 30, 10)}><line x1={g.colTop[0] + 52} x2={g.colTop[0] + 66} y1={yy} y2={yy} stroke={ETH_INK} strokeWidth={3} /><Sx x={328} y={yy + 12} text={`${v}%`} size={34} color={ETH_INK} weight={800} at={-1000} /></g>; })}
+			<Sx x={336} y={g.flask[1] - 4} text="17%" size={34} color={ETH_INK} weight={800} at={K6.over - 20} />
 			<BeadView cx={1420} cy={420} r={220} from={K6.rising} reboil={K6.hotter} id="v4bv6" src={[g.colTop[0] + 30, (g.colTop[1] + g.colBot[1]) / 2]} />
 			<Sx x={1420} y={676} text="inside the column (model)" size={30} color={INK} anchor="middle" weight={700} at={-1000} />
 			<Sx x={1190} y={720} text="vapour: % ethanol" size={30} color={INK} weight={800} at={-1000} />
@@ -83,11 +85,11 @@ export const SceneColumn: React.FC = () => {
 			<Sx x={1510} y={720} text="top of column" size={30} color={INK} weight={800} at={-1000} />
 			<Readout x={1510} y={734} w={300} text={f >= K6.deg - 30 ? 'about 78 °C' : 'warming'} size={f >= K6.deg - 30 ? 44 : 40} color={INK} frame={INK} anchor="middle" />
 			<PenRing cx={1660} cy={772} rx={170} ry={56} at={K6.deg} color={INK} seed={5} />
-			<Write x={1190} y={880} text="condenses, trickles down" at={K6.down} size={42} color={PURE} />
-			<Write x={1190} y={940} text="boils again: richer" at={K6.esc} size={42} color={ETH_INK} />
+			<Write x={1190} y={880} text="condenses, trickles down" at={K6.down} out={K6.mostly - 10} size={42} color={PURE} />
+			<Write x={1190} y={940} text="boils again: richer" at={K6.esc} out={K6.mostly - 10} size={42} color={ETH_INK} />
 			<PenArrow a={[1300, 300]} b={[1300, 420]} at={K6.down + 4} color={PURE} bend={0.15} />
 			<PenArrow a={[1560, 520]} b={[1560, 330]} at={K6.esc + 4} color={ETH} bend={0.15} />
-			<Write x={600} y={900} text="mostly ethanol at the top" at={K6.mostly} size={42} color={ETH_INK} />
+			<Write x={1190} y={900} text="mostly ethanol at the top" at={K6.mostly} size={42} color={ETH_INK} />
 			{void K6.boils}{void K6.bytop}
 		</SVG>
 	);
@@ -107,22 +109,22 @@ export const SceneFractions: React.FC = () => {
 			<Plate p={FRAC} x={RF.x} y={RF.y} h={RF.h} />
 			<Sx x={330} y={222} text="side-arm reading" size={30} color={INK} weight={800} at={-1000} />
 			<Readout x={330} y={236} w={240} text={`${Math.round(T)} °C`} size={52} color={INK} frame={INK} anchor="middle" />
-			<PenRing cx={450} cy={275} rx={150} ry={56} at={K7.climbs + 10} color={INK} seed={3} />
-			<Write x={600} y={300} text="ethanol running out" at={K7.running - 10} size={42} color={INK} />
-			<BeadView cx={1500} cy={400} r={200} from={0} reboil={0} scale={0.55} id="v4bv7" src={[g.colTop[0] + 30, (g.colTop[1] + g.colBot[1]) / 2]} />
-			<Write x={1250} y={650} text="more surface, more cycles" at={K7.surface} size={42} color={ETH_INK} />
-			<Sx x={1250} y={720} text="cycles in the column (model)" size={30} color={INK} weight={800} at={K7.longer - 20} />
-			<Readout x={1250} y={734} w={240} text={`${cyc}`} size={52} color={ETH_INK} frame={ETH} anchor="middle" at={K7.longer - 20} />
-			<Write x={1520} y={790} text="taller: more steps" at={K7.longer + 10} size={42} color={ETH_INK} />
+			<PenRing cx={450} cy={286} rx={146} ry={38} at={K7.climbs + 10} color={INK} seed={3} />
+			<Write x={600} y={330} text="ethanol running out" at={K7.running - 10} size={42} color={INK} />
+			<BeadView cx={1560} cy={360} r={170} from={0} reboil={0} scale={0.55} id="v4bv7" src={[g.colTop[0] + 30, (g.colTop[1] + g.colBot[1]) / 2]} />
+			<Write x={1250} y={600} text="more surface, more cycles" at={K7.surface} size={42} color={ETH_INK} />
+			<Sx x={1250} y={660} text="cycles in the column (model)" size={30} color={INK} weight={800} at={K7.longer - 20} />
+			<Readout x={1250} y={674} w={240} text={`${cyc}`} size={52} color={ETH_INK} frame={ETH} anchor="middle" at={K7.longer - 20} />
+			<Write x={1520} y={730} text="taller: more steps" at={K7.longer + 10} size={42} color={ETH_INK} />
 			<rect x={g.colTop[0] - 30} y={g.colTop[1] - 6} width={60} height={g.colBot[1] - g.colTop[1] + 12} rx={12} fill="none" stroke={ETH} strokeWidth={4} strokeDasharray="12 8" opacity={prog(f, K7.longer, 12)} />
 			{/* fractions at the receiver */}
-			<g opacity={1 - swap} transform={`translate(${swap * 80},0)`}>
-				<Chip x={g.mouth[0] + 70} y={g.rMid[1] - 40} segs={[{t: 'fraction 1: mostly ethanol'}]} at={K7.fractions} size={38} color={ETH_INK} />
+			<g opacity={1 - swap}>
+				<Chip x={700} y={700} segs={[{t: 'fraction 1: mostly ethanol'}]} at={K7.fractions} size={38} color={ETH_INK} />
 			</g>
-			<Chip x={g.mouth[0] + 70} y={g.rMid[1] + 50} segs={[{t: 'fraction 2: new receiver'}]} at={K7.receiver} size={38} color={PURE} />
-			<PenArrow a={[g.mouth[0] + 60, g.rMid[1] + 80]} b={[g.mouth[0] + 20, g.rMid[1] + 30]} at={K7.swap} color={PURE} bend={0.3} />
-			<Sx x={600} y={880} text="fractions: parts of the distillate" size={34} color={INK} weight={800} at={K7.fractions} />
-			<Sx x={600} y={922} text="collected separately" size={34} color={INK} weight={800} at={K7.fractions} />
+			<Chip x={700} y={780} segs={[{t: 'fraction 2: new receiver'}]} at={K7.receiver} size={38} color={PURE} />
+			<PenArrow a={[g.rMid[0] + 40, 778]} b={[g.rMid[0] + 6, g.rMid[1] + 64]} at={K7.swap} color={PURE} bend={0.3} />
+			<Sx x={750} y={890} text="fractions: parts of the distillate" size={34} color={INK} weight={800} at={K7.fractions} />
+			<Sx x={750} y={932} text="collected separately" size={34} color={INK} weight={800} at={K7.fractions} />
 			{void K7.beads}{void K7.short}{void K7.while}{void K7.mostly}
 		</SVG>
 	);
@@ -221,12 +223,12 @@ export const SceneSafety: React.FC = () => {
 				<rect x={870} y={520} width={944} height={400} rx={16} fill="none" stroke={INK} strokeWidth={2} />
 				<Sx x={900} y={568} text="memory aid" size={30} color={INK} hand weight={700} at={-1000} />
 			</Fade>
-			{[[17, 62], [62, 80], [80, 86], [86, 89]].map(([a, b], i) => <Tile key={i} x={900 + i * 225} y={600} a={a} b={b} at={-1000} w={210} />)}
+			{[[17, 62], [62, 80], [80, 86]].map(([a, b], i) => <Tile key={i} x={900 + i * 300} y={596} a={a} b={b} at={-1000} w={270} />)}
 			<Rich x={900} y={740} segs={[{t: 'Simple: one step.', c: PURE}]} size={48} hand at={K10.simple} />
 			<Rich x={900} y={808} segs={[{t: 'Column: many steps.', c: ETH_INK}]} size={48} hand at={K10.column} />
 			<Rich x={900} y={876} segs={[{t: 'The ladder ends at the azeotrope.', c: ETH_INK}]} size={48} hand at={K10.ends} />
 			<Sx x={1800} y={912} text="about 96%" size={34} color={ETH_INK} anchor="end" weight={800} at={K10.az} />
-			<PenRing cx={900 + 105} cy={638} rx={120} ry={52} at={K10.simple} color={PURE} seed={2} />
+			<PenRing cx={900 + 135} cy={634} rx={120} ry={52} at={K10.simple} color={PURE} seed={2} />
 			{void StrikeLine}{void Eth}{void Glyph}
 		</SVG>
 	);

@@ -47,3 +47,14 @@ A. Weakest frames: the hook's early frame (strip still mostly white before the r
 - Scene 3: the stuck/carried rhythm reads as switching, not jitter; the blue and yellow groups separate.
 - Scene 7: the replay pause at 4.0 cm and the readouts holding 0.30 and 0.80.
 - Scene 9: the pencil drawing the baseline on "Draw the baseline" and the front tick on "as soon as".
+
+## Root playback fixes (20 Nov, from the 3 s playback samples)
+
+- Hook: V04's ink close-up stays on until the strip moves to the jar (no bare strip in the first seconds).
+- Why the distances differ: the four hand tags sit on light backing strips in the top band of the view, where no dye particle reaches.
+- Worked example: the givens card appears with its first value (no empty box); a tag "green food colouring: spots P and Q" fills the opening; dimension labels and the right column moved apart.
+- Comparing with standards: the painted jar with a three-lane sheet developing inside it sits beside the large sheet from the first frame; the solvent climbs from frame 0; "same paper, same solvent, same run" and a lane key are there from the start; the Rf readouts, chip and insets arrive on their cues and were re-spaced.
+- Details that protect the measurement: the pencil rests at the baseline from the first frame, the baseline label is present, and the "ink baseline" panel opens at once (its ink runs on "ink would run").
+- Two traps: the Rf equation and the hook strip are on the board from the first frame.
+- Handoff: the top-pan balance is on from the scene's first frame (final frame unchanged).
+- Checker after the fixes: PASS WITH WARNINGS (0 failures, 1 warning, dense key notes).

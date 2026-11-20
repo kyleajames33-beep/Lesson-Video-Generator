@@ -48,3 +48,13 @@ A (round 2 sheet showed the scene 10 memory card as a near-empty box at its samp
 - Scene 6: bead cutaway motion (drops, reboil) and the percentages climbing the column on "over and over".
 - Scene 7: side-arm reading climbing on "climbs towards a hundred"; the fraction chips.
 - Scene 8: gauge steps stopping at about 96% on "ninety six".
+
+## Root playback fixes (20 Nov, from the 3 s playback samples)
+
+- Column scene: the percentages now sit on a clear ladder beside the column (leader ticks from the gradient bar, labels at x 328), with the temperatures ("about 78 C", "about 89 C") moved further right so nothing is drawn over the column or its ring. "mostly ethanol at the top" replaces the two right-column tags (they fade) instead of sitting on the stand base.
+- Beads, height and fractions: the bead view is smaller and the right column re-spaced; the fraction chips sit under the receiver (x 700) and fade rather than slide; the "fractions: parts of the distillate" label moved clear of the stand base; the side-arm ring no longer covers its label.
+- Simple distillation: "cooled: vapour -> liquid" moved above the condenser, clear of the "out" and "condenser" labels.
+- Two liquids: the red "both evaporate" tag sits under the prediction card, not on its top edge.
+- Staircase: arrows end at the next tile's edge (no longer over its text); "richer each time" and the "enriches" lines moved to clear space.
+- Safety card: three wider staircase tiles instead of four cramped ones.
+- Checker after the fixes: PASS WITH WARNINGS (0 failures, 1 warning, dense key notes). Extra stills at 2:45 to 3:20 checked.

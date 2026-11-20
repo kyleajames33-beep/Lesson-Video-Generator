@@ -33,28 +33,29 @@ const K6 = cues(sc('worked-example'), {green: 'green food', front: 'eight point 
 export const SceneWorked: React.FC = () => {
 	const tr = 8 * PXCM;
 	const pY = spotY(WS.y, WS.h, WB, tr, 0.3), qY = spotY(WS.y, WS.h, WB, tr, 0.8);
-	const ux = 744 + tw('solvent front: ', 38, false, 700);
+	const ux = 804 + tw('solvent front: ', 38, false, 700);
 	return (
 		<SVG>
 			<Heading text="Worked example: P and Q" at={0} />
 			<WorkedStrip travel={tr} />
 			<Dim x={430} y0={wby} y1={pY} at={K6.p} label="2.4 cm" color={RF_INK} />
-			<Dim x={510} y0={wby} y1={qY} at={K6.q} label="6.4 cm" color={RF_INK} />
-			<Dim x={590} y0={wby} y1={wby - tr} at={K6.front} label="8.0 cm" color={PURE} />
-			<Rich x={720} y={250} segs={[{t: 'Calculate Rf for spots P and Q'}]} size={44} at={-1000} />
-			<Rich x={720} y={320} segs={[{t: 'Rf = ', c: RF_INK}, {t: 'spot distance', c: RF_INK}, {t: ' ÷ '}, {t: 'front distance', c: PURE}]} size={44} at={-1000} />
-			<rect x={720} y={360} width={600} height={190} rx={16} fill="#eef2fa" stroke={PURE} strokeWidth={3} />
-			<Sx x={744} y={410} text="solvent front: 8.0 cm" size={38} color={PURE} weight={700} at={K6.front} />
-			<Sx x={744} y={462} text="spot P: 2.4 cm" size={38} color={PURE} weight={700} at={K6.p} />
-			<Sx x={744} y={514} text="spot Q: 6.4 cm" size={38} color={PURE} weight={700} at={K6.q} />
-			<Sx x={1340} y={462} text="all from the" size={30} color={INK} weight={700} at={K6.front} />
-			<Sx x={1340} y={498} text="baseline" size={30} color={INK} weight={700} at={K6.front} />
-			<Rich x={720} y={680} segs={[{t: 'Rf(P) = 2.4 ÷ 8.0 ='}]} size={52} at={K6.forP} />
-			<Framed x={1300} y={680} segs={[{t: '0.30', c: GOOD}]} at={K6.zero1} size={52} />
-			<Rich x={720} y={800} segs={[{t: 'Rf(Q) = 6.4 ÷ 8.0 ='}]} size={52} at={K6.forQ} />
-			<Framed x={1300} y={800} segs={[{t: '0.80', c: GOOD}]} at={K6.zero2} size={52} />
+			<Dim x={480} y0={wby} y1={qY} at={K6.q} label="6.4 cm" color={RF_INK} />
+			<Dim x={640} y0={wby} y1={wby - tr} at={K6.front} label="8.0 cm" color={PURE} />
+			<Write x={780} y={440} text="green food colouring: spots P and Q" at={K6.green} out={K6.front - 10} size={42} color={INK} />
+			<Rich x={780} y={250} segs={[{t: 'Calculate Rf for spots P and Q'}]} size={44} at={-1000} />
+			<Rich x={780} y={320} segs={[{t: 'Rf = ', c: RF_INK}, {t: 'spot distance', c: RF_INK}, {t: ' ÷ '}, {t: 'front distance', c: PURE}]} size={44} at={-1000} />
+			<Fade at={K6.front - 8}><rect x={780} y={360} width={560} height={190} rx={16} fill="#eef2fa" stroke={PURE} strokeWidth={3} /></Fade>
+			<Sx x={804} y={410} text="solvent front: 8.0 cm" size={38} color={PURE} weight={700} at={K6.front} />
+			<Sx x={804} y={462} text="spot P: 2.4 cm" size={38} color={PURE} weight={700} at={K6.p} />
+			<Sx x={804} y={514} text="spot Q: 6.4 cm" size={38} color={PURE} weight={700} at={K6.q} />
+			<Sx x={1360} y={462} text="all from the" size={30} color={INK} weight={700} at={K6.front} />
+			<Sx x={1360} y={498} text="baseline" size={30} color={INK} weight={700} at={K6.front} />
+			<Rich x={780} y={680} segs={[{t: 'Rf(P) = 2.4 ÷ 8.0 ='}]} size={52} at={K6.forP} />
+			<Framed x={1340} y={680} segs={[{t: '0.30', c: GOOD}]} at={K6.zero1} size={52} />
+			<Rich x={780} y={800} segs={[{t: 'Rf(Q) = 6.4 ÷ 8.0 ='}]} size={52} at={K6.forQ} />
+			<Framed x={1340} y={800} segs={[{t: '0.80', c: GOOD}]} at={K6.zero2} size={52} />
 			<Underline x0={ux} x1={ux + tw('8.0', 38, false, 700)} y={420} at={K6.sig} color={INK} />
-			<Write x={720} y={910} text="2 sig figs, like the data" at={K6.sig} size={42} color={INK} />
+			<Write x={780} y={910} text="2 sig figs, like the data" at={K6.sig} size={42} color={INK} />
 			<JarStrip x={1560} y={540} h={380} />
 			<Cross x={WS.x + WS.w / 2} y={pY} at={K6.p} color={RF_INK} />
 			<Cross x={WS.x + WS.w / 2} y={qY} at={K6.q} color={RF_INK} />
@@ -111,49 +112,69 @@ export const SceneRatio: React.FC = () => {
 
 // ---------- 8. comparing with standards ----------
 const K8 = cues(sc('standards'), {identify: 'helps identify', run: 'Run known', time: 'same time', x: 'standard X', y: 'standard Y', px: 'P matches', qy: 'Q matches', but: 'But a match', prove: "doesn't prove", share: 'share an', again: 'run them again', match: 'still match'});
-const SH = {x: 160, y: 190, w: 660, h: 760};
-const LX = [270, 490, 710];
+const SH = {x: 500, y: 190, w: 600, h: 760};
+const LXF = [1 / 6, 1 / 2, 5 / 6];
+const LANES = [[{c: DYE.blue, rf: 0.3}, {c: DYE.yellow, rf: 0.8}], [{c: DYE.blue, rf: 0.3}], [{c: DYE.yellow, rf: 0.8}]];
+const DOTS = [DYE.green, DYE.blue, DYE.yellow];
+/** A three-lane sheet (sample, X, Y) developed to fraction d of its full run (front 8.0 cm on the big sheet). */
+const Sheet3: React.FC<{x: number; y: number; w: number; h: number; d: number; r?: number; labels?: boolean}> = ({x, y, w, h, d, r = 16, labels = false}) => {
+	const base = h / 6, by = y + h - base, full = 0.74 * (h - base), tr = full * d;
+	const s = tr > 4 ? 1 : 0;
+	return (
+		<g>
+			<rect x={x} y={y} width={w} height={h} rx={4} fill="#fff" stroke="#8a8378" strokeWidth={3} />
+			{tr > 0 ? <rect x={x + 2} y={by - tr} width={w - 4} height={y + h - (by - tr) - 2} fill="rgba(120,170,220,0.22)" /> : null}
+			{tr > 0 ? <line x1={x + 2} x2={x + w - 2} y1={by - tr} y2={by - tr} stroke="#5b8fc2" strokeWidth={3} /> : null}
+			<line x1={x + 8} x2={x + w - 8} y1={by} y2={by} stroke="#4a4642" strokeWidth={3.5} />
+			{LXF.map((fx, i) => (
+				<g key={i}>
+					{s < 1 ? <circle cx={x + fx * w} cy={by} r={r - 2} fill={DOTS[i]} /> : null}
+					{s ? LANES[i].map((p, k) => <ellipse key={k} cx={x + fx * w} cy={by - p.rf * tr} rx={r} ry={r * 1.1} fill={p.c} stroke="rgba(30,30,30,0.35)" strokeWidth={1.5} />) : null}
+					{labels ? <Sx x={x + fx * w} y={by + 52} text={['sample', 'X', 'Y'][i]} size={34} color={INK} anchor="middle" weight={800} at={-1000} /> : null}
+				</g>
+			))}
+		</g>
+	);
+};
 export const SceneStandards: React.FC = () => {
 	const f = useCurrentFrame();
-	const base = SH.h / 6, by = SH.y + SH.h - base;
-	const tr = 8 * PXCM * kf(f, [[K8.time - 20, 0], [K8.time + 140, 1]]);
-	const lanes = [[{c: DYE.blue, rf: 0.3}, {c: DYE.yellow, rf: 0.8}], [{c: DYE.blue, rf: 0.3}], [{c: DYE.yellow, rf: 0.8}]];
-	const dots = [DYE.green, DYE.blue, DYE.yellow];
-	const s = tr > 6 ? 1 : 0;
+	const d = kf(f, [[0, 0], [K8.time + 140, 1]]);
+	const g = jarGeo(96, 260, 640);
+	const base = SH.h / 6, by = SH.y + SH.h - base, full = 0.74 * (SH.h - base);
+	const LX = LXF.map(fx => SH.x + fx * SH.w);
+	const yP = by - 0.3 * full, yQ = by - 0.8 * full;
 	return (
 		<SVG>
 			<Heading text="Comparing with standards" at={0} />
-			<rect x={SH.x} y={SH.y} width={SH.w} height={SH.h} rx={4} fill="#fff" stroke="#8a8378" strokeWidth={3} />
-			{tr > 0 ? <rect x={SH.x + 2} y={by - tr} width={SH.w - 4} height={SH.y + SH.h - (by - tr) - 2} fill="rgba(120,170,220,0.22)" /> : null}
-			{tr > 0 ? <line x1={SH.x + 2} x2={SH.x + SH.w - 2} y1={by - tr} y2={by - tr} stroke="#5b8fc2" strokeWidth={3} /> : null}
-			<line x1={SH.x + 10} x2={SH.x + SH.w - 10} y1={by} y2={by} stroke="#4a4642" strokeWidth={3.5} />
-			{LX.map((x, i) => (
-				<g key={i}>
-					{s < 1 ? <circle cx={x} cy={by} r={14} fill={dots[i]} /> : null}
-					{s ? lanes[i].map((p, k) => <ellipse key={k} cx={x} cy={by - p.rf * tr} rx={16} ry={18} fill={p.c} stroke="rgba(30,30,30,0.35)" strokeWidth={1.5} />) : null}
-					<Sx x={x} y={by + 52} text={['sample', 'X', 'Y'][i]} size={34} color={INK} anchor="middle" weight={800} at={-1000} />
-				</g>
-			))}
-			<line x1={LX[0] + 20} x2={LX[1] - 20} y1={by - 0.3 * 560} y2={by - 0.3 * 560} stroke={RF_INK} strokeWidth={4} strokeDasharray="10 7" opacity={prog(f, K8.px, 12)} />
-			<line x1={LX[0] + 20} x2={LX[2] - 20} y1={by - 0.8 * 560} y2={by - 0.8 * 560} stroke={RF_INK} strokeWidth={4} strokeDasharray="10 7" opacity={prog(f, K8.qy, 12)} />
-			<Write x={LX[0] + 70} y={by - 0.3 * 560 - 16} text="match" at={K8.px + 6} size={42} color={RF_INK} />
-			<Write x={LX[1] + 30} y={by - 0.8 * 560 - 16} text="match" at={K8.qy + 6} size={42} color={RF_INK} />
-			<Write x={880} y={260} text="same paper, same solvent, same run" at={K8.run} size={42} color={INK} />
-			<Rich x={880} y={350} segs={[{t: 'X: Rf 0.30', c: DYE.blue}]} size={44} at={K8.x} />
-			<Rich x={1260} y={350} segs={[{t: 'Y: Rf 0.80', c: '#8a6a00'}]} size={44} at={K8.y} />
-			<Rich x={880} y={430} segs={[{t: 'P matches X; Q matches Y'}]} size={44} at={K8.px} />
-			<Chip x={880} y={470} segs={[{t: "match: supports, doesn't prove"}]} at={K8.but} size={44} color={RF_INK} />
-			<Inset x={880} y={580} w={440} h={360} title="another dye, Z" at={K8.prove}>
-				<DevStrip x={1060} y={640} w={80} h={240} base={40} travel={170} spots={[{c: '#2a8a8a', rf: 0.3}]} dot={'#2a8a8a'} spotR={10} />
-				<Write x={900} y={920} text="same Rf, different dye" at={K8.share} size={42} color={RED} />
+			<Jar x={96} y={260} h={640}>
+				<Solvent g={g} lvl={46} />
+				<Sheet3 x={g.cx - 120} y={g.Y(520)} w={240} h={g.Y(1370) - g.Y(520)} d={d} r={8} />
+			</Jar>
+			<Sheet3 x={SH.x} y={SH.y} w={SH.w} h={SH.h} d={d} labels />
+			<line x1={LX[0] + 20} x2={LX[1] - 20} y1={yP} y2={yP} stroke={RF_INK} strokeWidth={4} strokeDasharray="10 7" opacity={prog(f, K8.px, 12)} />
+			<line x1={LX[0] + 20} x2={LX[2] - 20} y1={yQ} y2={yQ} stroke={RF_INK} strokeWidth={4} strokeDasharray="10 7" opacity={prog(f, K8.qy, 12)} />
+			<Write x={LX[0] + 50} y={yP - 16} text="match" at={K8.px + 6} size={42} color={RF_INK} />
+			<Write x={LX[1] + 30} y={yQ - 16} text="match" at={K8.qy + 6} size={42} color={RF_INK} />
+			<Write x={1150} y={260} text="same paper, same solvent, same run" at={8} size={40} color={INK} />
+			<Rich x={1150} y={330} segs={[{t: 'sample: ', c: DYE.green}, {t: 'green food colouring'}]} size={38} weight={700} at={-1000} />
+			<Rich x={1150} y={380} segs={[{t: 'X, Y: ', c: INK}, {t: 'known substances (standards)'}]} size={38} weight={700} at={-1000} />
+			<Rich x={1150} y={470} segs={[{t: 'X: Rf 0.30', c: DYE.blue}]} size={44} at={K8.x} />
+			<Rich x={1480} y={470} segs={[{t: 'Y: Rf 0.80', c: '#8a6a00'}]} size={44} at={K8.y} />
+			<Rich x={1150} y={540} segs={[{t: 'P matches X; Q matches Y'}]} size={44} at={K8.px} />
+			<Chip x={1150} y={570} segs={[{t: "match: supports, doesn't prove"}]} at={K8.but} size={38} color={RF_INK} />
+			<Inset x={1150} y={660} w={320} h={290} title="another dye, Z" at={K8.prove}>
+				<DevStrip x={1275} y={716} w={70} h={150} base={28} travel={104} spots={[{c: '#2a8a8a', rf: 0.3}]} dot={'#2a8a8a'} spotR={10} />
+				<Sx x={1170} y={902} text="same Rf," size={34} color={RED} hand weight={700} at={K8.share} />
+				<Sx x={1170} y={934} text="different dye" size={34} color={RED} hand weight={700} at={K8.share} />
 			</Inset>
-			<Inset x={1360} y={580} w={464} h={360} title="different solvent" at={K8.again}>
-				<DevStrip x={1420} y={640} w={70} h={240} base={40} travel={170} spots={[{c: DYE.blue, rf: 0.55}]} dot={DYE.green} spotR={10} />
-				<DevStrip x={1520} y={640} w={70} h={240} base={40} travel={170} spots={[{c: DYE.blue, rf: 0.55}]} dot={DYE.blue} spotR={10} />
-				<line x1={1455} x2={1555} y1={640 + 240 - 40 - 0.55 * 170} y2={640 + 240 - 40 - 0.55 * 170} stroke={RF_INK} strokeWidth={3} strokeDasharray="8 6" />
-				<Sx x={1384} y={912} text="still matches: stronger evidence" size={30} color={INK} weight={800} at={K8.match} />
+			<Inset x={1500} y={660} w={324} h={290} title="different solvent" at={K8.again}>
+				<DevStrip x={1550} y={716} w={60} h={150} base={28} travel={104} spots={[{c: DYE.blue, rf: 0.55}]} dot={DYE.green} spotR={10} />
+				<DevStrip x={1680} y={716} w={60} h={150} base={28} travel={104} spots={[{c: DYE.blue, rf: 0.55}]} dot={DYE.blue} spotR={10} />
+				<line x1={1580} x2={1710} y1={716 + 150 - 28 - 0.55 * 104} y2={716 + 150 - 28 - 0.55 * 104} stroke={RF_INK} strokeWidth={3} strokeDasharray="8 6" />
+				<Sx x={1516} y={902} text="still matches:" size={30} color={INK} weight={800} at={K8.match} />
+				<Sx x={1516} y={934} text="stronger evidence" size={30} color={INK} weight={800} at={K8.match} />
 			</Inset>
-			{void K8.identify}{void K8.qy}
+			{void K8.identify}{void K8.time}
 		</SVG>
 	);
 };
@@ -175,7 +196,7 @@ export const ScenePractical: React.FC = () => {
 	const dry = prog(f, K9.disappears - 10, 30);
 	const markP = prog(f, K9.soon, 24);
 	const fy = fby - 0.8 * (FS.h - fb);
-	const pen: [number, number] | null = f >= K9.draw - 10 && f < K9.draw + 70 ? [FS.x + 8 + draw * (FS.w - 16), fby] : f >= K9.soon - 10 && f < K9.disappears + 20 ? [FS.x + FS.w - 30 + markP * 24, fy] : null;
+	const pen: [number, number] | null = f >= K9.draw - 10 && f < K9.draw + 70 ? [FS.x + 8 + draw * (FS.w - 16), fby] : f >= K9.soon - 10 && f < K9.disappears + 20 ? [FS.x + FS.w - 30 + markP * 24, fy] : f < K9.draw - 10 ? [FS.x + 8, fby] : null;
 	void JAR_B;
 	return (
 		<SVG>
@@ -194,11 +215,11 @@ export const ScenePractical: React.FC = () => {
 				<line x1={FS.x + 8} x2={FS.x + 8 + draw * (FS.w - 16)} y1={fby} y2={fby} stroke="#4a4642" strokeWidth={3.5} />
 				{f >= K9.soon ? <line x1={FS.x + FS.w - 30} x2={FS.x + FS.w - 30 + markP * 24} y1={fy} y2={fy} stroke="#4a4642" strokeWidth={4} /> : null}
 			</g>
-			{pen ? <PencilAt x={pen[0]} y={pen[1]} h={300} /> : null}
+			{pen ? <PencilAt x={pen[0]} y={pen[1]} h={240} /> : null}
 			<Write x={FS.x} y={fby + 70} text="pencil stays put" at={K9.pencil} size={42} color={INK} />
 			<Write x={FS.x + FS.w + 20} y={fy + 14} text="mark it now" at={K9.soon + 10} size={42} color={INK} />
 			{/* two wrong set-ups */}
-			<Inset x={820} y={200} w={480} h={340} title="ink baseline" at={K9.ink - 10}>
+			<Inset x={820} y={200} w={480} h={340} title="ink baseline" at={20}>
 				<rect x={860} y={270} width={90} height={250} fill="#fff" stroke="#8a8378" strokeWidth={2} />
 				<path d={`M866,480 L944,480 L944,${480 - 120 * prog(f, K9.ink, 40)} Q905,${470 - 160 * prog(f, K9.ink, 40)} 866,${480 - 100 * prog(f, K9.ink, 40)} Z`} fill="rgba(80,60,160,0.45)" />
 				<line x1={866} x2={944} y1={480} y2={480} stroke="#3c2a8a" strokeWidth={5} />
@@ -213,7 +234,7 @@ export const ScenePractical: React.FC = () => {
 				<StrikeLine x1={1360} y1={530} x2={1800} y2={250} at={K9.pool} />
 				<Write x={1500} y={420} text="spots wash out" at={K9.pool + 6} size={42} color={RED} />
 			</Inset>
-			<Sx x={820} y={630} text="pencil: doesn't dissolve, so the line stays put" size={34} color={INK} weight={800} at={K9.pencil} />
+			<Sx x={820} y={630} text="baseline: drawn in pencil, which doesn't dissolve" size={34} color={INK} weight={800} at={-1000} />
 			<Sx x={820} y={700} text="solvent below the baseline" size={34} color={INK} weight={800} at={K9.keep} />
 			<Sx x={820} y={770} text="lid on: the solvent doesn't evaporate off the paper" size={34} color={INK} weight={800} at={K9.lid} />
 			<Sx x={820} y={840} text="mark the solvent front straight away: it dries" size={34} color={INK} weight={800} at={K9.mark} />
@@ -228,9 +249,9 @@ export const SceneTraps: React.FC = () => {
 	const f = useCurrentFrame();
 	const tr = 8 * PXCM;
 	const pY = spotY(WS.y, WS.h, WB, tr, 0.3);
-	const HS = {x: 1000, y: 470, w: 120, h: 420};
+	const HS = {x: 1320, y: 470, w: 120, h: 420};
 	const hb = HS.h / 6, htr = 0.82 * (HS.h - hb);
-	const NL = {x0: 1220, x1: 1780, y: 840};
+	const NL = {x0: 1500, x1: 1780, y: 900};
 	return (
 		<SVG>
 			<Heading text="Two traps, and a way to remember" at={0} />
@@ -241,6 +262,7 @@ export const SceneTraps: React.FC = () => {
 			<Dim x={520} y0={wby} y1={pY - 16} at={K10.centre} color={RED} dashed />
 			<StrikeLine x1={500} y1={wby - 20} x2={550} y2={pY + 10} at={K10.centre + 20} />
 			<Write x={560} y={pY + 40} text="to the centre" at={K10.centre + 26} size={42} color={RED} />
+			<Rich x={480} y={580} segs={[{t: 'Rf = ', c: RF_INK}, {t: 'spot distance', c: RF_INK}, {t: ' ÷ '}, {t: 'front distance', c: PURE}]} size={44} at={-1000} />
 			<Chip x={480} y={230} segs={[{t: 'Rf = 8.0 ÷ 2.4 = 3.3'}]} at={K10.ever} size={44} color={RED} strike={K10.flipped} />
 			<Write x={480} y={370} text="bigger than 1: flipped" at={K10.flipped + 6} size={42} color={RED} />
 			<Rich x={480} y={450} segs={[{t: 'spot distance on top'}]} size={44} at={K10.top} />
@@ -251,7 +273,7 @@ export const SceneTraps: React.FC = () => {
 			</Fade>
 			<Rich x={1000} y={330} segs={[{t: 'Spot over front,', c: RF_INK}]} size={52} hand at={K10.spot} />
 			<Rich x={1000} y={400} segs={[{t: 'and stickier stays lower.', c: SLATE_INK}]} size={52} hand at={K10.stickier} />
-			<Fade at={K10.here}>
+			<Fade at={-1000}>
 				<DevStrip x={HS.x} y={HS.y} w={HS.w} h={HS.h} base={hb} travel={htr} spots={HOOK_SPOTS} spotR={11} />
 			</Fade>
 			<PenRing cx={HS.x + HS.w / 2} cy={spotY(HS.y, HS.h, hb, htr, 0.2)} rx={34} ry={30} at={K10.lower} color={DYE.blue} seed={2} />

@@ -265,3 +265,60 @@ First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
 First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
 - Annuity check: the deposit bars shrink toward year 10, and the last deposit earns nothing yet. FV ≈ $25,155.79, and the 20,000 × 1.05^10 slip is crossed out.
 - The final question card (bag of chips, empirical rule) holds for the attempt.
+
+## chem-y11-m1-v03 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- The sand-and-salt beaker opens with the insoluble/dissolved contrast.
+- The filter model counts water molecules, ions and sand grains through the pore.
+- The filtration setup is labelled, with a close-up of the paper; residue and filtrate are named on cue.
+- The "is the filtrate pure?" prediction leads to "No: still salt water".
+- Solute, solvent and solubility build one line at a time.
+- Crystallisation shows the water-left readout falling, the saturation meter, and a safe-heating card.
+- The potassium nitrate solubility curve is shown, then "why crystals are purer" (mother liquor).
+- The order rule: filter (1) and crystallise (2) with pen rings, the crossed "crystallise first?" panel, and the kitchen-sieve analogy.
+- Two attempts with countdowns, brief feedback, then key notes.
+- Minor polish noted, not blocking: the "filter paper" tag touches the band in the model, and "heat gently" touches the hotplate.
+Pass.
+
+## chem-y11-m1-v08 v1
+
+First release (20 Nov). The whole master was sampled in 3 s windows (10 sheets).
+- Opening: the chlorine gas tube, the Cl tile, and "inside: how many of each?".
+- The three particles: a table and a mass balance, with the electron at "almost no mass" and a model atom (not to scale).
+- The bottom number: Z = protons, with a periodic-table highlight and one more proton making argon.
+- The top number: A = protons + neutrons, and neutrons = A - Z.
+- Ions: a charge meter (+17 / -18 = -1) for the chloride ion.
+- The Fe²⁺ worked example with framed answers.
+- Isotopes: chlorine-35 and chlorine-37 atoms built side by side, with "still chlorine" and "37 - 17 = 20".
+- Stable and unstable carbon isotopes, and the neutron/proton band.
+- The memory aid "protons pick the element, neutrons pick the isotope, electrons pick the charge", with Ar and Cl-37 swaps.
+- Two attempts with countdowns, brief feedback with crossed slips, then key notes.
+Pass.
+
+## chem-y11-m1-v04 v2
+
+First release (20 Nov). v1 was rendered but never queued: root's 3 s playback review found label collisions in the column and fractions scenes. The v1 master is preserved.
+
+v2 was sampled in full in 3 s windows (10 sheets):
+- The column percentages now sit on a ladder beside the column, with leader ticks.
+- The "about 78 / 89 °C" labels are clear of the ring.
+- The fraction 1 and fraction 2 chips sit under the receiver. Fraction 1 fades as fraction 2 arrives (a brief cross-fade at about 3:18).
+- The "fractions" label is clear of the stand.
+- The azeotrope staircase stops at "about 96% ethanol", with "steady reading = pure" crossed out.
+- The simple-or-fractional cards, then the attempts and feedback.
+
+Pass.
+
+## chem-y11-m1-v05 v2
+
+First release (20 Nov). v1 was rendered but never queued: root's 3 s playback review found sparse openings in "Comparing with standards" and "Details that protect the measurement". The v1 master is preserved.
+
+v2 was sampled in full in 3 s windows (10 sheets):
+- "Comparing with standards" now opens with the jar, the developing three-lane sheet, the heading and a key. The X and Y Rf matches and "match: supports, doesn't prove" follow, with the other-dye and different-solvent panels.
+- "Details" opens with the painted pencil at the baseline and the ink-baseline panel.
+- The distances model's notes sit on backing strips.
+- The Rf worked example builds in frames.
+- The handoff frame matches v06's opening.
+
+Pass.

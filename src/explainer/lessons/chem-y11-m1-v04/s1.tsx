@@ -109,7 +109,7 @@ export const SceneSimple: React.FC = () => {
 				<PenArrow a={[g.wOut[0] - 4, g.wOut[1] - 4]} b={[g.wOut[0] - 50, g.wOut[1] - 70]} at={K2.cond + 40} color={PURE} bend={0.2} width={5} />
 				<Sx x={g.wOut[0] - 60} y={g.wOut[1] - 84} text="out" size={30} color={PURE} anchor="end" weight={800} at={-1000} />
 			</Fade>
-			<Write x={g.X(640)} y={g.Y(420)} text="cooled: vapour → liquid" at={K2.conds} size={42} color={PURE} />
+			<Write x={560} y={300} text="cooled: vapour → liquid" at={K2.conds} size={42} color={PURE} />
 			{/* the flask surface, close up */}
 			<ViewFrame id="v4s2" cx={V.cx} cy={V.cy} r={V.r} src={[g.surf[0] + 30, g.surf[1]]}>
 				<rect x={V.cx - V.r} y={top} width={2 * V.r} height={V.r * 2} fill="#e6eff6" />
@@ -202,7 +202,7 @@ export const SceneTwoLiquids: React.FC = () => {
 			<Inset x={600} y={380} w={700} h={130} title="you might expect" at={K4.expect} out={K4.both - 30}>
 				<Rich x={622} y={480} segs={[{t: '78 °C: ethanol off, water left'}]} size={40} weight={800} />
 				<StrikeLine x1={612} y1={496} x2={1290} y2={430} at={K4.not} />
-				<Write x={1000} y={400} text="both evaporate" at={K4.not + 8} size={42} color={RED} />
+				<Write x={620} y={555} text="both evaporate" at={K4.not + 8} size={42} color={RED} />
 			</Inset>
 			<ViewFrame id="v4s4" cx={V.cx} cy={V.cy} r={V.r} src={[cropPt(CF, 345, 745)[0] + 60, cropPt(CF, 345, 745)[1]]}>
 				<rect x={V.cx - V.r} y={top} width={2 * V.r} height={V.r * 2} fill="#f3ead6" />
@@ -245,13 +245,12 @@ export const SceneStairs: React.FC = () => {
 			<Sx x={1584} y={200} text="cycles" size={30} color={INK} weight={800} at={-1000} />
 			<Readout x={1584} y={214} w={200} text={`${Math.floor(c + 0.02)}`} size={52} color={INK} frame={INK} anchor="middle" />
 			{[0, 1, 2, 3].map(i => <Tile key={i} x={TX(i)} y={TY(i)} a={[17, 62, 80, 86][i]} b={[62, 80, 86, 89][i]} at={ats[i]} cur={cur === i} />)}
-			{[0, 1, 2].map(i => <PenArrow key={'a' + i} a={[TX(i) + 250, TY(i) - 6]} b={[TX(i + 1) + 20, TY(i + 1) + 40]} at={ats[i + 1] - 6} color={ETH} bend={-0.25} width={4} />)}
+			{[0, 1, 2].map(i => <PenArrow key={'a' + i} a={[TX(i) + 250, TY(i) - 6]} b={[TX(i + 1) - 10, TY(i + 1) + 38]} at={ats[i + 1] - 6} color={ETH} bend={-0.25} width={4} />)}
 			{[0, 1, 2, 3].map(i => <Sx key={'r' + i} x={TX(i) + 150} y={TY(i) + 130} text={`+${[45, 18, 6, 3][i]}`} size={38} color={ETH_INK} anchor="middle" weight={800} at={K5.notice + 10 + i * 10} />)}
 			<Write x={TX(2) + 40} y={TY(0) + 170} text="smaller gains" at={K5.smaller} size={42} color={ETH_INK} />
-			<Write x={480} y={580} text="richer each time" at={K5.enr} size={42} color={ETH_INK} />
-			<PenArrow a={[760, 560]} b={[TX(2) + 40, TY(2) + 20]} at={K5.enr + 8} color={ETH} bend={0.2} />
-			<Sx x={700} y={884} text="enriches: raises the share of" size={34} color={INK} weight={800} at={K5.vol - 20} />
-			<Sx x={700} y={926} text="the more volatile liquid" size={34} color={INK} weight={800} at={K5.vol} />
+			<Write x={96} y={630} text="richer each time" at={K5.enr} size={42} color={ETH_INK} />
+			<Sx x={1300} y={884} text="enriches: raises the share of" size={34} color={INK} weight={800} at={K5.vol - 20} />
+			<Sx x={1300} y={926} text="the more volatile liquid" size={34} color={INK} weight={800} at={K5.vol} />
 			<PenRing cx={TX(0) + 150} cy={TY(0) + 38} rx={190} ry={70} at={K5.one} color={PURE} seed={2} />
 			<Write x={TX(0)} y={TY(0) - 50} text="simple: one step" at={K5.one + 6} size={42} color={PURE} />
 			<Chip x={TX(3) - 20} y={TY(3) + 130} segs={[{t: 'two liquids: many steps'}]} at={K5.many - 6} size={40} color={ETH_INK} />

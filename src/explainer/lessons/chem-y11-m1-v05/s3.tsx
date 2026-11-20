@@ -143,7 +143,7 @@ export const HandoffBench: React.FC<{tagAt?: number; tagOut?: number; balAt?: nu
 };
 export const SceneHandoff: React.FC = () => (
 	<SVG>
-		<HandoffBench tagAt={K15.how - 20} tagOut={K15.next - 20} balAt={K15.how - 10} wgAt={K15.sand} chipAt={K15.weigh} nextAt={K15.comp - 24} />
+		<HandoffBench tagAt={K15.how - 20} tagOut={K15.next - 20} balAt={-1000} wgAt={K15.sand} chipAt={K15.weigh} nextAt={K15.comp - 24} />
 		{void K15.so}
 	</SVG>
 );
