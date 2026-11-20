@@ -375,3 +375,6 @@ Root (21 Nov, 03:00): 3 s sweep of the master read in full (10 sheets). Opens on
 
 ## chem-y11-m1-v13 v1
 Root (21 Nov, 03:40): 3 s sweep of the master read in full (10 sheets). Opens on v12 v2's final frame (frozen v12 handoff); ends on the Na/Cl tug frame with the v14 chip (exported for v14). Data checked: covalent radii Cordero 2008 (Na 166 to Cl 102, Li 128, K 203, O 66, Mg 141, S 105); ionic radii Shannon 1976 (Na+ 102, Cl- 181, O2- 140, F- 133, Mg2+ 72, Al3+ 54); core charges +1 to +7; S vs Mg answer; O2- larger with struck "extra shell" slip. Minor: empty dashed bar slots for about 15 s before the period 3 stepper; attempt 2 feedback opens sparse. Pass.
+
+## chem-y11-ws-v03 v1
+Root (21 Nov, 04:20): 3 s sweep of the master read in full (11 sheets). Opens on ws-v02 v1's final frame; ends exactly on v11 v1's first frame (imported WsV03FinalFrame), so the v10, ws-v01 to ws-v03, v11 chain joins. Checked: class 1 accurate and precise (36.0, 35.8, 36.2 against 36.1), class 2 precise not accurate (34.3 to 34.5), hot crucible reads low, zero then check mass, one balance per sample, source checks (who, why, when, agree), attempt answers (P accurate, Q about 4 points high; A and C reliable; reference parts). Minor: the prediction ring sits close to the "accepted value" label at 2:42. Pass.
