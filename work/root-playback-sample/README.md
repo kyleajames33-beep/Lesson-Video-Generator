@@ -363,3 +363,6 @@ Root (21 Nov, 01:00): 3 s sweep of the master read in full (11 sheets). Opens on
 
 ## chem-y11-m1-v12 v1
 Root (21 Nov, 01:05): 3 s sweep read in full (11 sheets). FAIL: the main periodic table is a faint ghost for long stretches (1:54 to 2:27, 5:21 to 5:48, 6:30 to 6:57, closing board 7:00+). Chemistry correct. Sent back for v2; v1 preserved, not queued.
+
+## chem-y11-m1-v12 v2
+Root (21 Nov, 01:35): 3 s sweep of the v2 master read for every scene the v1 fail named (sheets 3, 8, 9, 10) and the rest spot-checked. Tables solid as the main visual throughout (prediction and trap, selenium feedback with row/column/block outlines, last-one regions in legend colours, closing board and key-notes card). Chemistry unchanged from v1 (correct). Pass. v1 preserved, not queued.

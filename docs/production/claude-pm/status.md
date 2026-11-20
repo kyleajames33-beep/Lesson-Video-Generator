@@ -10152,3 +10152,5 @@ Google batch ledger chem-y11-m1-v16 all new takes accepted. 8 requests, sizes 3,
 Voice continuation, 2026-11-20: Chemistry wave 2 stopped at the whole-lesson quota gate. Resume after the next reset.
 
 Root (21 Nov, 00:10): Y11 Chem route order for builds is v10 -> ws-v01 -> ws-v02 -> ws-v03 -> v11 (v10 ends on the ws-v01 chip). v11 opens on ws-v03's final frame, built in v11 as an exported component (WsV03FinalFrame); the ws-v03 build must import it read-only and end on it. ws-v01 opens on v10 v1's final frame.
+
+Root (21 Nov, 02:00): chem-y11-m1-v12 v2 final frame keeps block tints at about 65% (v1 design said low opacity); the v13 build must open on that frame as rendered in v12 v2.
