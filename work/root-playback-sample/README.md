@@ -366,3 +366,6 @@ Root (21 Nov, 01:05): 3 s sweep read in full (11 sheets). FAIL: the main periodi
 
 ## chem-y11-m1-v12 v2
 Root (21 Nov, 01:35): 3 s sweep of the v2 master read for every scene the v1 fail named (sheets 3, 8, 9, 10) and the rest spot-checked. Tables solid as the main visual throughout (prediction and trap, selenium feedback with row/column/block outlines, last-one regions in legend colours, closing board and key-notes card). Chemistry unchanged from v1 (correct). Pass. v1 preserved, not queued.
+
+## chem-y11-ws-v01 v1
+Root (21 Nov, 02:30): 3 s sweep of the master read in full (10 sheets). Opens on v10 v1's final frame (frozen v10 handoff); final frame is the plan board with the ws-v02 chip. Chemistry and numbers checked: CuSO4·5H2O loses 36.1% (groups A 36.0%, B 27.6% under-heated, C 47.2% decomposed to black CuO); salt solubility 40 mL × 36 g / 100 mL ≈ 14 g matches the 69.4% plateau. No overlaps, no faint main visuals. Minor: scene 9 heating readouts hold at 0.0 for about 30 s before the run. Pass.

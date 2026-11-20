@@ -1,0 +1,68 @@
+# chem-y11-ws-v01 build notes (built on the measured narration)
+
+Builder: Claude build agent, 21 November 2026. Explainer id `Explainer-chem-y11-ws-v01`, export `config_y11c_wsv01` (15 scenes, 14,313 frames, about 477 s; key notes 1,350 frames = 45 s). Design: `docs/production/claude-pm/lessons/chem-y11-ws-v01.md` Revision 4 (Upgrade paragraphs followed where they differ from the Visual lines). Narration: `lessons/c-y11-ws-v01/measured/lesson.json` (unchanged). Sheet: `work/quality-audit/fixed/chem-y11-ws-v01-sheet.jpg` (the checker's 16 sheet frames, no stamps). No MP4 built.
+
+## Files
+`src/explainer/lessons/chem-y11-ws-v01/`:
+- `common.ts`: lookups, holds, plates (alpha boxes measured with PIL), the illustrative group numbers, and the heating-run model `lostAt(t)` (rises and levels at 36.1% at 7 min; its exponent is set so it passes exactly through group B's 4 min, 27.6%).
+- `parts.tsx`: re-exports V10's parts (and through them V08, V06, V01, M2 V06). New, all coded: `wrapSegs`/`wrapText` (wrapping by the real font widths), `spanOf` (pen underlines placed on words), `WriteRich`, `Para`, `Under`, `Strike`, `BoxCard`, the crucible set `Cru` (five plates cross-fading in one registration), `CruBowl` (the bowl clipped off its tripod for the balance pan), `CheckList`/`checkRowY`, `PenCross`, `Bin`, `Disc`, `NumLine`, `Axes`/`fnPath`, `SplitInset` (CuSO4 unit splitting into black CuO and a gas puff).
+- `s1.tsx` (scenes 1 to 4), `s2.tsx` (5 to 9), `s3.tsx` (10 to 15), `scenes.tsx`, `assets.ts`, `config.ts`.
+- `src/explainer/registry.ts`: one import and one list entry after `config_y11c_m1v12`.
+- Read-only imports: V10 `SceneHandoff` and `dur` (opening), V07 `MassBar`, `F_CUSO4`, crucible plate defs, V06 balance, accounting bar, sand and salt colours, V01 `Givens`, `QTag`.
+
+## Plates
+All present under `public/assets`: `y11c-cuso4-crucible-blue-v1.png`, `-blue-lit-v1.png`, `-patchy-v1.png`, `-black-v1.png` (all 1024 x 1536, one registration), `m5-g02b-open-crucible-v1.png` (1.25 times canvas, V07's mapping), `y11c-top-pan-balance-v1.png`, `y11c-watch-glass-sand-v1.png`, `y11c-sand-saltwater-beaker-v1.png`, `biology/m5x-clipboard-sheet-v1.png`. Uniform scale only. None missing.
+
+## Simulation
+Scene 9's heating run is a coded model (`lostAt` in `common.ts`) on one clock: the time readout runs 0 to 10 min from "Our prediction" to "has gone", the "mass lost" readout (52 px), the dashed curve and its moving dot all read the same function, and the crucible cross-fades blue, patchy, white in step. Labelled "prediction (model)"; the only data points are B (4 min, 27.6%) and A (steady mass, 36.0%), both in the design's illustrative class data. The sims engine has no dehydration model, so this small function stands in; it is not a physics engine and makes no claim beyond the design's curve. Scene 6's number line narrows live from 1 to 100% to a band at 36.1%.
+
+## Opening-frame match (V10)
+Scene 1 renders V10's `SceneHandoff` frozen at its last frame (`<Freeze frame={v10dur('handoff') - 1}>`, the V12 technique) for frames 0 to about 212, so the cut is exact. My own copy of V10's accounting bar (x 1560, y 868, w 236, h 48, whole 20, segments 6.2 and 14.3, overhang shown) is drawn on top from frame 0 and is pixel-identical to V10's, then grows to the board (x 760, y 330, w 960, h 110) while its segments morph to V06 attempt 2's 41.2% and 62.5% (103.7%). The two timeline arrows glow amber on "each time because" and "evidence that"; on "Your own" the frozen frame shrinks and fades towards the top-right chip "new evidence → better model". V10 untouched.
+
+## Final frame (ws-v02 opens on it)
+Scene 14 (`conclusion-handoff`) from "Our copper" on; the key-notes scene cross-fades back to it over its last 44 frames, so the video's last frame is this layout exactly. ws-v02 can open with `<Freeze frame={dur('conclusion-handoff') - 1}><SceneHandoff /></Freeze>` imported from `src/explainer/lessons/chem-y11-ws-v01/s3.tsx` (geometry also exported as `FF`). At 1920 x 1080:
+- Top line (in place of a heading): hand font 52 px at (96, 150): "If, " navy #24407a, "then, " ink, "because: the because is the chemistry." gold #8a6a0e.
+- Crucible of blue crystals, burner unlit (`y11c-cuso4-crucible-blue-v1.png`, box 124,152,900,1383): x 140, y 470, height 440 (width about 277).
+- Prediction sketch above it: axes x0 200 to x1 560, y0 360 (0%) to y1 220 (50%), 0 to 10 min; tick labels 0 and 10, 0 and 50 (30 px); "heating time (min)" centred at (380, 440); "% mass lost" rotated at x 124; dark-ink dashed line at 36.1% (y about 259) with "36.1%" at (570, 269); "prediction" at (360, 214); dashed navy curve (`lostAt`, levels at 7 min).
+- Question box: x 680, y 200, w 760, h 190 (3 lines of 38 px, baselines 252, 302, 352, text x 705): "How does the time of gentle heating affect the percentage of mass lost by blue copper sulfate crystals?" ("time of gentle heating" navy).
+- Modified hypothesis card: x 680, y 420, w 760, h 256 (5 lines of 32 px, lh 44, first baseline 468): "If the crystals are heated gently until their mass stops changing, then they'll lose 36.1% of their mass, because gentle heat drives off the water, while strong heat also breaks down the copper sulfate." ("If" navy, "gently", "because" and the last clause gold).
+- Clipboard (`m5x-clipboard-sheet-v1.png`, box 283,160,1716,1840): x 1480, y 250, width 344 (height about 403); "plan: ?" hand 52 px, #4a4540, centred at (1652, 472).
+- Chip "Next: How does a chemistry plan produce valid, useful data?" at x 680, y 850, 34 px, navy outline.
+
+## Departures from the design (with reasons)
+- Scene 1: the heading writes on just after "Your own" (design: on "them") so the board is not headless for 25 s; the question box appears with "How much salt is there?" on "sand and salt" (the original question) and is struck and rewritten on "was the sand"; tag "extra mass: water still in the sand?" added (the v06 reason, in words); a small route row (inquiry question → hypothesis → new evidence) writes on "build", "hypothesis", "improve".
+- Scene 2: until "one that data can answer", the right half shows a before/after pair (blue crystals → white powder) so the observation is visible and the half is not empty; the question box then takes it.
+- Scene 3: the inquiry question rides above the card as a navy strip (continuity from scene 2); the if, then, because slots stand from the first frame as solid ink labels with dotted lines, and each lead word takes its colour and a pen underline when spoken (an empty card waiting for cues failed the sweep); the formula mass bar is on the board from the start and its water lifts on "heating drives". The gold "prediction + reason" tag sits right of the heading.
+- Scene 4: the crucible bowl (clipped from the blue crucible plate) lands on the balance as "measurements you collect yourself" is said and the display ticks to 26.81 g; the empty crucible's 24.31 g is a recorded readout. The secondary-data values are on the sheet from the first frame and take pen underlines on "relative atomic" (a ring crossed the sheet's title).
+- Scenes 5, 6: a blue crucible plate fills the lower right of scene 5 (beside the 3 s ring). Scene 6 marks two columns, "weak" and "ours".
+- Scenes 7, 8: "our hypothesis" is a small card at the top right (then 36.1% lost, because heating drives off the water, and only water) so the evidence is judged against it; its because line takes the rose underline on "the because was". Evidence cards trimmed to fit ("gentle heat; steady mass"; "roaring flame; steady mass; black solid"). Discs B and C fly into the bins (C into two). The particle inset (280 px circle) is labelled "CuSO₄" then "black CuO + gas". The rule card is 44 px in two lines (the three parts coloured).
+- Scene 9: the hypothesis edit is shown as the old card fading and the new text writing line by line on its cues (an in-place word insertion would reflow every line); "gently" and the added clause carry gold underlines. "published data agree" chip and "breaks down only when much hotter" stand in the left column until the run starts.
+- Scene 11, 13: answers framed in green boxes with ticks (multi-line, so not the one-line `Framed`). Scene 13's points plot on "from twenty", "to forty", then two after "then stays", with a live readout.
+- Scene 14: the six-step route is on the board from the start as ink chips with navy arrows; each chip turns navy-filled with a green tick when spoken (sparse frames otherwise). Chips are 44 px (design 34 px) for fill.
+- Key notes trimmed to short bullets (checker warned "dense" at 512 characters): "Inquiry question: data can answer it. It names what is measured and the condition." / "Hypothesis: if (the change), then (the result), because (the chemistry)." / "Primary data: you collect it. Secondary: someone else did." / "Judge it: testable, specific, reasoned, could be shown wrong." / "Evidence that doesn't fit: method, prediction or reason?". Memory card with the crucible plate.
+
+## Cue check
+All cues resolve (config loads; `cueFrame` throws on a miss). Repeated phrases take stated occurrences, each checked in the sweep: scene 2 "blue copper" #2 (the first is in "blue copper sulfate crystals, leaving"); scene 3 "If, then, because" #2 (the first is "a useful pattern is if, then, because"), "then," #1 and "because." #1 for the slot labels; scene 9 "copper sulfate" #2 (the first is "Copper sulfate breaks down"); scene 13 "Forty millilitres" #2 (the first is inside "to forty millilitres"); scene 8 "the method" #1 is the rule line. Countdowns: 3 s rings from "it fail" (scene 5) and "the method" (scene 7); 10 s rings full from "Pause here" (scenes 10, 12).
+
+## Grade checker
+`npm run grade:explainer -- Explainer-chem-y11-ws-v01`: earlier run PASS with 3 warnings (sparse hypothesis opening 54%, sparse attempt 1 opening 54%, dense notes 512 characters), all three fixed; rerun **PASS: 0 failures, 0 warnings**. Final run after restoring "and the condition" in note 1 (21 Nov 2026): **PASS: 0 failures, 0 warnings**. Report: `out/explainer/Explainer-chem-y11-ws-v01/grade/Explainer-chem-y11-ws-v01-grade.md`.
+
+## Dense 3 s sweep
+Two full sweeps (one still every 90 frames, 159 stills each, scale 0.5, montaged per scene) plus re-sweeps of the changed scenes. Defects found and fixed:
+- scene 1: "103.7%" tag sat on the "100%" label (100% moved under the end line); "the question" label touched the first question line; balance label touched the route chips;
+- scene 2: the new question's second line drew before its first (wrong "blue copper" occurrence); "measure what?" crossed the box edge; the right half was empty for 15 s and the box sat empty (before/after pair added, box arrives with its first text);
+- scene 3: the memory card wrote at frame 235 (wrong "If, then, because" occurrence); the card stood empty at the start; "water 36.1%" sat on the lifted water tile;
+- scene 4: the crucible bowl was oversized and covered the "primary data" label; the balance read 24.31 g with nothing on the pan; the ring crossed the data sheet's title; hazard tag underline overran its text;
+- scene 6: the 36.1% target label sat on the number-line title;
+- scenes 7, 8: card text overran card edges; "fits" overlapped the card's third line; "still blue" and "black?" sat in the heading band; "time matters" landed on the bin row; the C tick stayed after its card left; the B pen arrow crossed the tripod (removed); inset labels crossed the circle; "our hypothesis" text overran its card;
+- scene 9: the gold underline under the added clause drew 20 s early (wrong "copper sulfate" occurrence); "breaks down only when much hotter" ran into the right column and the "prediction (model)" label; the published-data tick outlived its chip;
+- scene 11: the (b) box stood empty until "then more";
+- scene 13: "40 mL × 36 g ÷ 100 mL ≈ 14 g" wrote on the first "forty millilitres" (wrong occurrence);
+- scene 14: the lower half was empty while the route built.
+Faint-visual check (root, 20 Nov): no main visual (plate, table, card, graph, bar) is faint or ghosted while it carries the explanation; fades are only transitions under 1 s and the scene 9 old hypothesis giving way to the new one.
+
+## Builder's sheet grade
+A. A painted plate or the live heating run is on screen in most teaching frames (balance and sand, crucible set, three group crucibles, beaker on both cards); a new visual idea at least every 60 s (bar and question rewrite, crucible and question box, if-then-because card, data board, check list and number line, evidence and bins, heating run, attempt cards, route, final board); framed green answers and red crossed slips in both feedback scenes; notes five short bullets with the framed memory card, 45 s hold. For root to look at: sheet frame 3 (hypothesis, about 6 s in) shows the card with its three slot labels before the content is spoken, and frame 10 (attempt 1 before "Pause here") is the whole card with its beaker; both pass the checker.
+
+## Things to check at playback speed
+Scene 1 shrink of V10's frame and the bar's growth (frames about 212 to 260); the arrow glows on "each time because" and "evidence that"; scene 2 cross-fade blue, lit, white against "heating drove ... white powder"; scene 3 slot labels taking colour on "if, then, because"; scene 4 bowl landing and display tick; scene 6 number line narrowing on "clearly show"; scene 8 disc flights and the CuSO4 split on "broke down"; scene 9 heating run (5 s for 0 to 10 min) against "rises, then levels off ... has gone"; scene 14 route chips lighting in step; the key-notes cross-fade back to the final frame in the last 1.5 s.

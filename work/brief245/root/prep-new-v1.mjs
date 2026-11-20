@@ -9,7 +9,7 @@ import {execFileSync} from 'node:child_process';
 import {loadConfig, totalFrames} from '../../../scripts/lib/explainer-common.mjs';
 
 const key = process.argv[2], rev = process.argv[3] || 'v1';
-if (!/^((bio|chem)-m8-[a-z]\d\d[a-z]?|chem-y11-m\d-v\d\d)$/.test(key)) throw new Error('lesson id');
+if (!/^((bio|chem)-m8-[a-z]\d\d[a-z]?|chem-y11-(m\d|ws)-v\d\d)$/.test(key)) throw new Error('lesson id');
 const sha = (p) => crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex');
 const id = `Explainer-${key}`;
 const master = `out/explainer/${id}/${id}-${rev}.mp4`;
