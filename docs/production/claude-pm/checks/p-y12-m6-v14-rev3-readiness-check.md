@@ -21,3 +21,13 @@ Findings:
 3. **Optional.** Scene 7 narration names an earlier video by number: "The fix is the closed iron core from video twelve". This is not a module label, but the Revision 3 rule keeps video codes off screen, and the number may not match a 2025 playlist. Proposed fix: "The fix is the closed iron core we met earlier".
 
 Result: 0 blockers, 0 should fix, 3 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `debf7dc58eaffb6ca6fe2d0b056464de1b8eea577699cde3ed0c8c2cc0eeb358`.
+
+Compared the current file (commit `52a6fd17`) against the version checked above (`82c803e9...`) by git diff. Changes: scene 7 narration "The fix is the closed iron core from video twelve" became "The fix is the closed iron core we met earlier"; the headline count; a dated root note. No Visual line changed.
+
+Finding 3 is resolved: no narration names a video number, a module or "the syllabus". The new phrase reads naturally aloud and is true (the closed core was taught earlier). Recount by the build parser rules: scene 7 is 511 characters (was 514), and the 16 scene strings sum to 5,838, equal to the headline and under 7,000. Scene 7's bold cues ("secondary", "load", "flux") are unchanged and in spoken order; all other scenes are byte-identical. No U+2014. Findings 1 and 2 (optional) stand, not taken.
+
+Result: 0 blockers, 0 should fix, 2 optional.

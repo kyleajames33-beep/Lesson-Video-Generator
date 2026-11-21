@@ -23,3 +23,15 @@ Findings:
 4. **Optional.** Scene 17 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 3 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `41dc765ebbdbd653e2995ce79aeda39f6cce0bc627220f5d8584f89a643c9307`.
+
+Compared the current file (commit `52a6fd17`) against the version checked above (`825df002...`) by git diff. Changes: the scene 4 sentence in the Simulation engines bullet, replaced word for word with the proposed fix; scene 9 narration "as we saw in video twelve" became "as we saw with mutual induction"; the headline count; a dated root note.
+
+Finding 1 is resolved. Each slider stop now resets the load so that VI = 500 MW: R_load = V²/P − R_line = 123, 498, 1,998 and 12,498 Ω at 250, 500, 1,000 and 2,500 kV, giving I = 2000, 1000, 500 and 200 A and P_loss = 8.0, 2.0, 0.50 and 0.080 MW. These are × 1, ¼, 1/16 and 1/100, matching the scene 4 readouts and the narration. The stops (× 1, × 2, × 4, × 10) agree with scene 4's Visual line.
+
+Finding 2 is resolved. "as we saw with mutual induction" is accurate (transformers work by mutual induction from a changing current) and reads naturally. Recount by the build parser rules: scene 9 is 314 characters (was 308), and the 17 scene strings sum to 5,905, equal to the headline and under 7,000. Scene 9's only bold cue, "end", is unchanged and last; all other scenes are byte-identical. No U+2014. Findings 3 and 4 (optional) stand, not taken.
+
+Result: 0 blockers, 0 should fix, 2 optional.

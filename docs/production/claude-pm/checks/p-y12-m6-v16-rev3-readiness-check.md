@@ -23,3 +23,31 @@ Findings:
 4. **Optional.** Scene 16 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 2 should fix, 2 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `f28a0378c4cb5d0be5a29573fa71a4c66fc5ce49aad5ec83fcac3c903bee1b0d`.
+
+Compared the current file (commit `52a6fd17`) against the version checked above (`63d13078...`) by git diff.
+
+Changes:
+- Scene 3: "From video seven, each side feels..." became "As we've seen, each side feels...".
+- Scene 4: "from video **nine**" became "the same normal we used for **flux**", and "That's the formula on your data **sheet**." became "That's the form we'll **use**, with theta measured from the normal."
+- Scene 5: "Notice the contrast with video nine." became "Notice the contrast with flux."
+- Scene 6: "Some books measure..." became "Some books and data sheets measure the angle from the plane and use cos."
+- Scene 4 Visual: the cue "torque is r F sine theta" became "it's r F sine theta" with the chip "τ = rF sin θ (met before)"; the cue "nine" became "flux"; the cue "sheet" became "use", and the strip on it now shows "the form" "τ = nIA⊥B = nIAB sin θ" with its normal tag.
+- The headline count and a dated root note.
+
+Finding 1 is resolved: the quoted cue "it's r F sine theta" now occurs in scene 4's narration, and the chip carries no module label. No Visual line quotes the removed phrases ("From video seven", "video nine", "sheet").
+
+Finding 2 is resolved. "That's the form we'll use, with theta measured from the normal" is true in any course: it states the convention the video uses, and with θ from the area normal, τ = nIAB sin θ is correct. "Some books and data sheets measure the angle from the plane and use cos" is also true for both courses: with α the angle between the coil's plane and B, α = 90° − θ, so nIAB cos α = nIAB sin θ. The 2025 form recorded by the reuse audit (τ = nBIA cos θ with the plane angle) is one such data sheet, and the scene 6 chip "plane angle α: τ = nIAB cos α (same answer)" agrees. Finding 3 is resolved: no narration names a video number, a module or "the syllabus". The new lines read naturally aloud.
+
+Recount by the build parser rules: scenes 3, 4, 5 and 6 are 524, 531, 493 and 719 characters, and the 16 scene strings sum to 6,450, equal to the headline and under 7,000. Bold cues are in spoken order: scene 3 "field", "down", "coil", "axle" (unchanged); scene 4 "flux", "theta", "use"; scene 5 "B", "zero", "point", "torque" (unchanged); scene 6 "metres", "degrees", "metres", "given" (unchanged). In scene 4's narration "flux" occurs once. "use" occurs once as a whole word, at its cue, but the letters "use" also occur earlier inside "used" ("the same normal we used for flux"). A word-level cue matcher is unaffected. All other scenes are byte-identical. No U+2014.
+
+Findings:
+
+5. **Optional.** Scene 4: if the build's cue matcher searches by substring rather than whole word, the cue "use" could fire on "used", before "flux". Proposed fix: confirm that the cue matcher works on whole words, or change the cue to "form" ("That's the **form** we'll use, with theta measured from the normal.") and the Visual "On "use"" to "On "form"".
+
+Finding 4 (optional) stands, not taken.
+
+Result: 0 blockers, 0 should fix, 2 optional.
