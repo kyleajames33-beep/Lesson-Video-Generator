@@ -1,0 +1,175 @@
+{
+  "id": "phys-y12-m6-v14",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "debf7dc58eaffb6ca6fe2d0b056464de1b8eea577699cde3ed0c8c2cc0eeb358",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (the missing watts)",
+      "voiceover": {
+        "text": "Here's our transformer from last time, twelve hundred turns to sixty, on two hundred and thirty volts. The ideal model said one hundred and fifteen watts in, and one hundred and fifteen watts out. Now try a real transformer, with the same supply and the same lamp. One hundred and fifteen watts go in. But only one hundred and four watts come out. And the transformer is warm. So where did eleven watts go?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "efficiency",
+      "title": "efficiency, and three assumptions",
+      "voiceover": {
+        "text": "We compare them with efficiency. Efficiency is the useful power out, divided by the power in. Here that's one hundred and four over one hundred and fifteen, about ninety per cent. Remember the three assumptions behind the ideal model. All the flux links both coils, the windings have no resistance, and no energy is lost in the core. A real transformer breaks each one, just a little. Let's find out how."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "copper-heating",
+      "title": "hot copper",
+      "voiceover": {
+        "text": "Start with the windings. They're long coils of copper wire, and real wire has resistance. Whenever current flows through resistance, it heats it. From Year 11, the heating power is I squared R. Double the current, and the heating goes up four times. Here's the surprise. The secondary carries ten amps. Even with a resistance of only zero point zero five zero ohms, it loses five point zero watts. The primary has much more resistance, four point zero ohms, but carries only zero point five zero amps, so it loses just one point zero watt. Because the current is squared, here the high-current winding loses more, even with far less resistance. So designers give it thicker wire, with less resistance. Big transformers also use oil and cooling fins, to carry the heat away."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "eddy-currents",
+      "title": "currents inside the iron",
+      "voiceover": {
+        "text": "Next, the core. Iron is a metal, so it conducts electricity. And the changing flux doesn't just pass through the windings, it runs through the iron itself. Picture a loop inside the iron, going round the flux. The flux through that loop is changing, so by Faraday's law, there's an emf around it. And because iron conducts, a current swirls round inside the core. These are called eddy currents. By Lenz's law they oppose the change, and they just heat the iron."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "laminations",
+      "title": "laminations",
+      "voiceover": {
+        "text": "The fix is clever. Instead of a solid block, build the core from thin sheets of iron, each one coated with insulation. The sheets lie along the flux, so the field still runs through. But now each swirl of current is trapped inside one thin sheet. A thin loop goes round much less flux, so its emf is smaller, and its narrow path has more resistance. In a simple model, sheets ten times thinner cut the eddy current heating about a hundred times. That's why a real transformer core is laminated."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "hysteresis",
+      "title": "flipping the iron's magnetism",
+      "voiceover": {
+        "text": "There's one more loss in the core. With AC, the iron is magnetised one way, then the other, a hundred times every second. Turning the iron's magnetism around takes a little energy each time, and that ends up as heat too. It's called hysteresis loss. Soft iron is easy to magnetise and demagnetise, so it wastes less energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flux-leakage",
+      "title": "flux that misses",
+      "voiceover": {
+        "text": "The last assumption is that all the flux links both coils. In a real transformer, some of the primary's field leaks out through the air, and never reaches the secondary. This one isn't mainly heat. It means the secondary gets less flux than the model assumes, so its voltage is lower than the turns ratio predicts, especially under a heavy load. The fix is the closed iron core we met earlier, made with no gaps, and often the secondary is wound right on top of the primary, so they share almost all their flux."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "loss-fix-pairs",
+      "title": "each loss, its fix",
+      "voiceover": {
+        "text": "So here's the list. Each loss breaks one assumption, and each has its own fix. Heating in the copper windings, so use thicker wire. Eddy currents and hysteresis in the core, so use thin, insulated sheets of soft iron. And flux leakage, so use a closed core, with the coils wound together. In an exam, always pair the loss with the fix that targets it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the three. Copper, core, coupling. Copper is heat in the windings. Core is heat in the iron. Coupling is flux that never reaches the secondary."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "judgement",
+      "title": "how good is the ideal model?",
+      "voiceover": {
+        "text": "So is the ideal model wrong? Not really. Large transformers in the electricity network are very efficient, well above ninety per cent, so the turns ratio and power in equals power out still give very good predictions. What the model can't tell you is how hot the transformer gets, or how much the voltage drops under load. So it's a very good approximation, with known limits."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Explain how a laminated core improves the efficiency of a transformer. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The changing flux induces eddy currents in the iron core, and those currents waste energy as heat. Thin insulated sheets confine each eddy current to a small loop with a high resistance, so the currents are much smaller, and much less energy is wasted. The classic slip is saying laminating increases the flux linkage. It doesn't. It cuts the eddy currents."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A transformer draws two point zero amps from a two hundred and thirty volt supply. Its secondary delivers nineteen amps at twenty three volts. Calculate its efficiency, and identify one way the missing energy is lost. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Power in is two hundred and thirty times two point zero, four hundred and sixty watts. Power out is twenty three times nineteen, four hundred and thirty seven watts. So the efficiency is ninety five per cent. Twenty three watts are lost, for example as heat in the windings, reduced by thicker wire. The slip is dividing the wrong way round. An efficiency over one hundred per cent is always a mistake."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So real transformers lose a little energy, mostly as heat, and the biggest culprit in the windings is I squared R. Now think about the wires that carry electricity from a power station to a city. They're hundreds of kilometres long, so their resistance adds up, and the same I squared R heating happens all along the line. So why does stepping the voltage up reduce transmission loss?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

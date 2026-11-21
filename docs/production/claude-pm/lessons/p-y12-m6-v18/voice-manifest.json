@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v18.md",
+  "sourceSha256": "f6de7cfed715674e2e46923b0f64395be6442a0e42adbcfdecf6178c51ebf29e",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's our motor, turned by an outside drive, so it works as a generator. Here's the simplest version, one coil between two magnets, with a split ring and brushes. On the oscilloscope, the output rises and falls in a row of humps, but it never goes below zero. It always pushes current the same way, so it's a DC generator. Now swap just one part, the split ring, for two separate rings, and turn it at the same speed. The trace goes up, then down, then up again. It alternates, so this is an AC generator. So what's different, the emf the coil makes, or how it connects to the outside circuit? Make your prediction. It's the connection.",
+      "audioFile": "public/audio/phys-y12-m6-v18/hook.wav"
+    },
+    {
+      "id": "flux-turning-coil",
+      "text": "Start with the coil. As it turns, the flux through it changes. Remember, flux is B A cos theta, where theta is the angle between the field and the coil's area normal, the arrow sticking straight out of the coil's face. When the coil faces the field square on, the normal points along the field, and the flux is a maximum. A quarter turn later, the coil is edge on, the field skims along it, and the flux is zero. Another quarter turn, and it faces the field the other way round, so the flux is a maximum in the opposite direction. Against time, that's a cosine curve.",
+      "audioFile": "public/audio/phys-y12-m6-v18/flux-turning-coil.wav"
+    },
+    {
+      "id": "emf-steepness",
+      "text": "From Faraday's law, the emf depends on how fast the flux is changing, not on how big it is. So read the emf from the steepness of the flux graph. At the top of the curve, the flux is at its biggest, but for that instant it isn't changing. So the emf is zero. Where the flux crosses zero, the graph is at its steepest, so the emf is at its biggest. Edge on, the two sides are cutting straight across the field lines, as fast as they can. Face on, they're sliding along the field lines, cutting none. So the emf graph is a sine curve, a quarter of a turn out of step with the flux.",
+      "audioFile": "public/audio/phys-y12-m6-v18/emf-steepness.wav"
+    },
+    {
+      "id": "both-make-ac",
+      "text": "Here's the surprise. Follow one side of the coil, side a. For half a turn, side a moves up through the field. For the next half turn, it moves down. The two sides keep swapping places. So the emf in the coil reverses every half turn, in both machines. The coil of a DC generator makes alternating emf too. Everything that's different happens at the end of the shaft.",
+      "audioFile": "public/audio/phys-y12-m6-v18/both-make-ac.wav"
+    },
+    {
+      "id": "slip-rings",
+      "text": "In the AC generator, each end of the coil is joined to its own complete ring, called a slip ring. A slip ring is a continuous metal ring that turns with the coil, while a fixed brush presses on it. Each brush always touches the same ring, so it stays joined to the same end of the coil. Whatever the coil makes, the outside circuit gets, unchanged. The coil's emf alternates, so the output alternates. One full turn gives one full cycle. Connect a lamp, and an alternating current flows through it.",
+      "audioFile": "public/audio/phys-y12-m6-v18/slip-rings.wav"
+    },
+    {
+      "id": "split-ring",
+      "text": "In the DC generator, both ends of the coil go to one ring, split into two halves. That's the split ring commutator, the same part you met in the motor. Every half turn, the halves swap brushes. And the gap passes the brushes just as the coil is face on, exactly when its emf is zero and about to reverse. So as the coil's emf flips, the connections flip too. The two flips cancel, and the output never changes sign. You get a row of humps, all one way, called pulsating DC. Inside the coil, the current still alternates. Only the outside circuit sees it flowing one way.",
+      "audioFile": "public/audio/phys-y12-m6-v18/split-ring.wav"
+    },
+    {
+      "id": "what-rings-dont-change",
+      "text": "Three things don't depend on the rings. First, the flux through the coil reverses every half turn in both generators. Second, the current in the coil alternates in both. Third, the torque. When a current flows, the coil's sides feel a force from the field, the motor effect. By Lenz's law, that force opposes the turning, in both machines. That's why a generator gets harder to turn when a load is connected. The outside drive does work against that force, and the work becomes the electrical energy. The rings only decide which way the current flows in the outside circuit.",
+      "audioFile": "public/audio/phys-y12-m6-v18/what-rings-dont-change.wav"
+    },
+    {
+      "id": "turn-faster",
+      "text": "What if the coil turns faster? Each change in flux happens in less time, so the flux changes faster, and the peak emf gets bigger. The turns also come more often, so there are more cycles every second, and the frequency goes up. Turn it twice as fast, and you get twice the peak emf, at twice the frequency.",
+      "audioFile": "public/audio/phys-y12-m6-v18/turn-faster.wav"
+    },
+    {
+      "id": "power-station",
+      "text": "Power-station generators use the same idea, turned around. A turbine spins a large electromagnet inside fixed coils, so the flux through the coils keeps reversing, and they produce AC. Because the output coils don't move, the huge output current never passes through sliding brushes. On a fifty hertz grid, a two pole generator turns fifty times a second, three thousand revolutions per minute.",
+      "audioFile": "public/audio/phys-y12-m6-v18/power-station.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the difference. Slip rings keep it. Split ring flips it. Slip rings keep the coil's alternating emf. The split ring flips the connections, so the output stays one way.",
+      "audioFile": "public/audio/phys-y12-m6-v18/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A rectangular coil rotates at a steady rate in a uniform magnetic field. At one instant, the plane of the coil is parallel to the field. State whether the flux through the coil is a maximum or zero at that instant, and whether the induced emf is a maximum or zero. Explain your answers. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v18/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Parallel to the field means edge on. The field skims along the coil, so the flux is zero. But here the flux is changing fastest, because the sides are cutting straight across the field lines. So the emf is a maximum. The classic slip is saying zero flux means zero emf. It's the rate of change that counts.",
+      "audioFile": "public/audio/phys-y12-m6-v18/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Compare the construction and the output of a simple AC generator and a simple DC generator. Describe the shape of each output against time. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v18/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Both have a coil turning in a magnetic field, and in both, the coil's emf alternates. The AC generator uses slip rings, so the output alternates, a sine wave above and below zero. The DC generator uses a split ring commutator, which swaps the connections every half turn, just as the emf reverses. So its output is a row of humps, all one way. The slip is saying the DC generator's coil makes direct current. Its coil still makes AC.",
+      "audioFile": "public/audio/phys-y12-m6-v18/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the same turning coil makes an alternating emf, and the rings decide what the outside circuit gets. Now, what if the field itself turns, round a metal rotor that isn't connected to anything at all? The turning field drags the rotor round with it. That's an induction motor. But the rotor never quite keeps up.",
+      "audioFile": "public/audio/phys-y12-m6-v18/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v18/key-notes.wav"
+    }
+  ]
+}

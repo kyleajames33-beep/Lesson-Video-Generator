@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v16.md",
+  "sourceSha256": "f28a0378c4cb5d0be5a29573fa71a4c66fc5ce49aad5ec83fcac3c903bee1b0d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the simple motor from last time, running from the lab power pack. Its coil spins, round and round. Now let's change one thing. Take away the split ring, and connect the coil's two ends straight to the supply. Switch it on. Will it keep spinning, rock back and forth and stop, or not move at all? Make your prediction. It swings round, overshoots, swings back, and stops, with its face towards the magnets. Put the split ring back, and it spins again. So how does a split-ring motor keep turning?",
+      "audioFile": "public/audio/phys-y12-m6-v16/hook.wav"
+    },
+    {
+      "id": "parts",
+      "text": "Let's name the parts. The magnets provide the magnetic field. The coil, also called the armature, carries the current, and it's free to turn on an axle. At one end of the axle is the split-ring commutator. It's a ring cut into two halves, and each half is joined to one end of the coil, so the halves turn with the coil. Pressing on the ring are two brushes. They stay still, and they carry current from the supply into whichever half they're touching.",
+      "audioFile": "public/audio/phys-y12-m6-v16/parts.wav"
+    },
+    {
+      "id": "force-pair",
+      "text": "Now look at the coil end on, along the axle. Its two long sides cross the magnetic field at right angles. Current comes out of the screen in one side, and goes into the screen in the other. As we've seen, each side feels a force at right angles to both the current and the field. And because the currents run opposite ways, the forces point opposite ways, one up, one down. Two equal, opposite forces, a distance apart. That pair turns the coil. The short end sides don't help, because their forces just push along the axle.",
+      "audioFile": "public/audio/phys-y12-m6-v16/force-pair.wav"
+    },
+    {
+      "id": "torque-formula",
+      "text": "How strong is that turning effect? You've met torque before: it's r F sine theta. Each long side is half the coil's width from the axle, and with n turns, its force is n I l B. Here's the neat part. The angle that matters turns out to be the angle between the field, and the coil's area normal, the arrow at right angles to its face, the same normal we used for flux. Add the two sides, and the width times the length is the area. So the torque is n I A B sine theta. That's the form we'll use, with theta measured from the normal.",
+      "audioFile": "public/audio/phys-y12-m6-v16/torque-formula.wav"
+    },
+    {
+      "id": "edge-face",
+      "text": "So where is the torque biggest? When the coil is edge on to the field, its normal is at ninety degrees to the field, sine theta is one, and the torque is the maximum, n I A B. As it turns, the torque gets smaller. When the coil is face on to the field, the normal points along the field, theta is zero, and the two forces pull straight through the axle. The torque is zero. This is called the dead point. Notice the contrast with flux. Face on gave full flux, but here face on gives no torque.",
+      "audioFile": "public/audio/phys-y12-m6-v16/edge-face.wav"
+    },
+    {
+      "id": "worked-example",
+      "text": "Let's do one. A coil has fifty turns, each four point zero centimetres by three point zero centimetres. It carries three point zero amps in a field of zero point two zero tesla. The area is one point two times ten to the minus three square metres. Multiply n, I, A and B, and the maximum torque is three point six times ten to the minus two newton metres. Now the coil's plane is at thirty degrees to the field. Careful, that's the plane, so the normal is at sixty degrees. The torque is three point six times ten to the minus two, times sine sixty, three point one times ten to the minus two newton metres. Some books and data sheets measure the angle from the plane and use cos. Always check which angle you're given.",
+      "audioFile": "public/audio/phys-y12-m6-v16/worked-example.wav"
+    },
+    {
+      "id": "rocking",
+      "text": "Now back to the hook. Without a split ring, the current in each side never changes direction. The coil turns towards face on, and its inertia carries it past the dead point. But now the sides have swapped places. The side on the left is now on the right, still with the same current and the same force. So the torque now turns the coil back. It swings back and forth, and friction stops it face on. That's the rocking.",
+      "audioFile": "public/audio/phys-y12-m6-v16/rocking.wav"
+    },
+    {
+      "id": "split-ring",
+      "text": "The split ring fixes this. Watch the brushes. As the coil reaches the dead point, the gaps in the ring pass the brushes, and each brush moves onto the other half of the ring. That swaps the connections, so the current in the coil reverses. Now the side on the left has the force upwards again, and the torque keeps turning the coil the same way. For a moment, right at the dead point, no current flows. But the coil is already turning, so it keeps going through that point. Every half turn, the same thing happens, so the coil keeps turning.",
+      "audioFile": "public/audio/phys-y12-m6-v16/split-ring.wav"
+    },
+    {
+      "id": "smoother-motors",
+      "text": "A simple motor like this still has a weak spot. Its torque pulses, and if it stops exactly at the dead point, it won't start by itself. Real motors use several coils at different angles, so one coil is always near its best position. And curved magnets around an iron core keep the coil's sides edge on to the field almost all the way round. That's called a radial field, and it keeps the torque close to its maximum.",
+      "audioFile": "public/audio/phys-y12-m6-v16/smoother-motors.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the split ring's job. Every half turn, flip the current. Flip the current, and the forces flip, so the torque keeps turning the same way.",
+      "audioFile": "public/audio/phys-y12-m6-v16/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A rectangular coil of one hundred and twenty turns measures four point zero centimetres by two point five centimetres. It carries one point five amps in a uniform field of zero point two five tesla. Calculate the torque when the plane of the coil is at sixty degrees to the field. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v16/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The area is one point zero times ten to the minus three square metres. The plane is at sixty degrees to the field, so the normal is at thirty degrees. So the torque is n I A B, times sine thirty, which is two point three times ten to the minus two newton metres. The classic slip is putting sine sixty straight into the formula, which gives three point nine times ten to the minus two.",
+      "audioFile": "public/audio/phys-y12-m6-v16/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Explain the function of the split-ring commutator in a simple DC motor. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v16/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Without it, the torque on the coil would reverse each time the coil passed face on, so it would rock and stop. The split ring turns with the coil, and every half turn, it swaps which half touches each brush. That reverses the current in the coil, so the forces reverse, and the torque keeps acting in the same direction, giving continuous rotation. The classic slip is saying it changes AC into DC. The supply is already DC.",
+      "audioFile": "public/audio/phys-y12-m6-v16/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So a split-ring motor keeps turning because the forces on its coil make a torque, and the split ring flips the current every half turn, so that torque never turns it back. Now put an ammeter in the supply lead, and switch on. At first the current is large. But as the coil speeds up, the current falls, even though the supply hasn't changed. So why does a spinning DC motor draw less current?",
+      "audioFile": "public/audio/phys-y12-m6-v16/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v16/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m6-v08.md",
+  "sourceSha256": "eba32c8d734b580864f20200de0ad40d74bf8757d7035d840b8af5c9ab304a7a",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Two long wires hang side by side, a few centimetres apart, and both carry a current upwards. Each one sits in the other's magnetic field. So will they pull together, push apart, or do nothing at all? Make your prediction. They pull together. Now reverse one of the currents. This time they push apart. So why do parallel currents attract, and opposite currents repel?",
+      "audioFile": "public/audio/phys-y12-m6-v08/hook.wav"
+    },
+    {
+      "id": "one-wire-field",
+      "text": "Start with one wire. Look at it end on, with its current coming out of the screen towards us. That's a dot. Its magnetic field makes circles around it. The right-hand grip rule from Year 11 gives the direction. Thumb along the current, and the fingers curl the way the field goes, anticlockwise here. The field gets weaker further out. Its strength is B equals mu nought I over two pi r, where r is the distance from the wire. Mu nought is a constant, about four pi times ten to the minus seven, that sets how strong a field a current makes. Double the distance, and the field halves.",
+      "audioFile": "public/audio/phys-y12-m6-v08/one-wire-field.wav"
+    },
+    {
+      "id": "second-wire",
+      "text": "Now put a second wire to the right, a distance r away, also with its current out of the screen. Wire one's field circles pass through it, and at wire two that field points straight up the screen. So wire two is a current in a magnetic field, at right angles to it. That's last video's motor effect. Thumb out of the screen, fingers up, and the palm faces left, so wire two is pushed towards wire one. Now swap roles. Wire one sits in wire two's field, which points down at wire one. That pushes wire one to the right, towards wire two. They attract.",
+      "audioFile": "public/audio/phys-y12-m6-v08/second-wire.wav"
+    },
+    {
+      "id": "force-size",
+      "text": "How big is that force? Wire two feels F equals B I l, where B is wire one's field at wire two. Swap in B equals mu nought I one over two pi r, and the force on a length l of wire two is mu nought I one I two l, over two pi r. Divide by l to get the force on each metre of wire. F over l equals mu nought over two pi, times I one I two over r. More current gives more force, and more distance gives less.",
+      "audioFile": "public/audio/phys-y12-m6-v08/force-size.wav"
+    },
+    {
+      "id": "opposite-repel",
+      "text": "Now reverse the current in wire two, so it goes into the screen. Wire one's field at wire two still points up. But now the thumb points into the screen, so the palm faces right, and wire two is pushed away. Wire two's own field has reversed too, so the push on wire one also flips, to the left. Same size of force, but now they repel. Reverse both currents, and nothing changes.",
+      "audioFile": "public/audio/phys-y12-m6-v08/opposite-repel.wav"
+    },
+    {
+      "id": "worked-example",
+      "text": "Two long parallel wires are eight point zero centimetres apart. One carries twelve amps upwards, the other eight point zero amps downwards. Mu nought over two pi is two times ten to the minus seven, so F over l is two times ten to the minus seven, times twelve times eight point zero, over zero point zero eight zero. That's two point four times ten to the minus four newtons per metre. The currents are opposite, so the wires repel. Which wire gets the bigger push? Neither. The formula multiplies I one by I two, so it's the same for both wires. That's a Newton's third law pair: equal in size, opposite in direction, and acting on two different wires.",
+      "audioFile": "public/audio/phys-y12-m6-v08/worked-example.wav"
+    },
+    {
+      "id": "ampere",
+      "text": "This force was once used to define the amp. Until twenty nineteen, one amp was the steady current that, in two long straight parallel wires one metre apart in a vacuum, gave a force of two times ten to the minus seven newtons on each metre of wire. Check it. Two times ten to the minus seven, times one times one, over one. Newton's third law is what made that definition work. The two wires push on each other equally, so it didn't matter which wire you measured. Since twenty nineteen, it's defined differently. The size of the charge on one electron, called the elementary charge, is fixed exactly. One amp is now a flow of about six point two four times ten to the eighteen elementary charges every second. Mu nought is now measured, but four pi times ten to the minus seven is still extremely close.",
+      "audioFile": "public/audio/phys-y12-m6-v08/ampere.wav"
+    },
+    {
+      "id": "investigation",
+      "text": "You can measure this force. Fix one copper rod flat on the pan of a sensitive balance, and clamp a second rod just above it, a measured distance away. Join them so the same current runs out along one and back along the other. Opposite currents repel, so the lower rod is pushed down, and the balance reading rises. For example, ten amps might raise it by zero point one zero grams. Turn that into a force with F equals m g, and divide by the rods' length. Change the current, but keep the distance, the length and the alignment fixed. Then plot F over l against I one I two over r. If the model holds, the points make a straight line through the origin, with a gradient of mu nought over two pi, two times ten to the minus seven.",
+      "audioFile": "public/audio/phys-y12-m6-v08/investigation.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the direction. Like currents attract, unlike currents repel. That's the opposite of what you'd guess from magnets, where like poles repel. And whatever the currents, the two forces are always the same size.",
+      "audioFile": "public/audio/phys-y12-m6-v08/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two long parallel wires are four point zero centimetres apart. One carries twenty amps, and the other carries five point zero amps in the opposite direction. Calculate the force per metre on the five amp wire, state whether the wires attract or repel, and compare it with the force per metre on the twenty amp wire. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v08/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "F over l is two times ten to the minus seven, times twenty times five point zero, over zero point zero four zero. That's five point zero times ten to the minus four newtons per metre. Opposite currents, so they repel. And the twenty amp wire feels exactly the same force, by Newton's third law. The classic slip is saying the bigger current pushes harder.",
+      "audioFile": "public/audio/phys-y12-m6-v08/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Two long parallel wires carry currents in the same direction. Both currents are doubled, and the distance between the wires is also doubled. By what factor does the force per unit length change? Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m6-v08/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The force depends on I one times I two, so doubling both currents makes it four times bigger. Doubling the distance halves it. Four times a half is two, so the force per unit length doubles. The slip is using one over r squared, like gravity. That gives four over four, no change. For long wires, it's one over r.",
+      "audioFile": "public/audio/phys-y12-m6-v08/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So currents push on currents through their magnetic fields. Michael Faraday asked the reverse question. Can a magnetic field make a current? To answer that, we first need a way to measure how much magnetic field passes through a loop of wire. And that depends on which way the loop is facing.",
+      "audioFile": "public/audio/phys-y12-m6-v08/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m6-v08/key-notes.wav"
+    }
+  ]
+}

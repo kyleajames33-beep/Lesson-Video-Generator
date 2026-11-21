@@ -1,0 +1,185 @@
+{
+  "id": "phys-y12-m6-v05",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "6df775701c2781bc40849b8c6c26b830c5187bd54eff7114ea1ca76477928223",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (a push that never speeds it up)",
+      "voiceover": {
+        "text": "Here's our proton, moving to the right through a field into the page, and pushed upwards. As it turns, the force turns with it, always at right angles to the motion. So, does it speed up, spiral inwards, or go round in a circle? And would an electron at the same speed curve more tightly, or less? Make your predictions."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "zero-work",
+      "title": "no work, so no change in speed",
+      "voiceover": {
+        "text": "Start with the speed. Work is done only by the part of a force along the direction of motion. The magnetic force is always at right angles to the velocity, so it has no part along the motion, and it does no work, at any instant. No work means no change in kinetic energy, so the speed stays exactly the same. The field changes the direction of the velocity, never its size. That's different from the electric field between plates, which pushed partly along the motion, did work, and sped the electron up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-circle",
+      "title": "why the path is a circle",
+      "voiceover": {
+        "text": "So the speed is constant, which means the force, q v B, has a constant size too. A force of constant size, always at right angles to the velocity, turns the path by the same amount every moment. That's uniform circular motion, which we've met before. The magnetic force points to the centre of the circle. It is the centripetal force. There's no extra force, and nothing at the centre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "radius",
+      "title": "deriving the radius",
+      "voiceover": {
+        "text": "Set the magnetic force equal to the centripetal force the circle needs. q v B equals m v squared over r. One v cancels, so r equals m v over q B. Read what it says. A faster or heavier particle swings out on a bigger circle. A stronger field, or a bigger charge, pulls it into a tighter one. The mass is on top because a heavier particle is harder to turn."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-orbits",
+      "title": "worked example: an electron and a proton",
+      "voiceover": {
+        "text": "Try an electron and a proton, both moving at four point zero times ten to the six metres per second, in a field of zero point zero two oh tesla. For the electron, r is nine point one oh nine times ten to the minus thirty-one, times four times ten to the six, over one point six oh two times ten to the minus nineteen, times zero point zero two. That's about one point one four millimetres. The proton has the same size of charge, but it's about eighteen hundred times heavier, so its circle is about eighteen hundred times bigger, two point oh nine metres. And they turn in opposite directions, because their charges have opposite signs."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "perpendicular-acceleration",
+      "title": "an acceleration at right angles to the field",
+      "voiceover": {
+        "text": "Physicists call this an acceleration perpendicular to the field. The electron's speed isn't changing, but its velocity is, because its direction keeps turning. Its acceleration is the force over the mass, q v B over m, which is about one point four times ten to the sixteen metres per second squared. It points to the centre of the circle, at right angles to both the velocity and the field, so it changes the direction, and never the speed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "period",
+      "title": "the lap time doesn't depend on speed",
+      "voiceover": {
+        "text": "How long does one lap take? The period is the distance round, two pi r, over the speed. Put in r equals m v over q B, and the v cancels, so T equals two pi m over q B. That's surprising. A faster particle goes round a bigger circle, in exactly the same time. For the electron here, one lap takes one point seven nine nanoseconds. For the proton, three point two eight microseconds. This is what lets a cyclotron keep particles in step, as long as they stay well below the speed of light."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "compare-circular",
+      "title": "compared with other circular motion",
+      "voiceover": {
+        "text": "Let's compare this with other circular motion. In every case, a real force supplies m v squared over r. For a ball whirled on a string, the tension adjusts, and the string fixes the radius. For a satellite, gravity supplies the force, and a faster orbit is a smaller one, r equals big G M over v squared. For a charge in a magnetic field, the force is set by the speed, and a faster particle takes a bigger circle. Same rule, three different causes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "compare-electric",
+      "title": "compared with an electric field",
+      "voiceover": {
+        "text": "And compare it with an electric field between plates. There, the force always pointed the same way, so the path was a parabola, and the field did work, so the speed changed. Here, the force keeps turning with the motion, so the path is a circle, and the speed never changes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "predictions-answered",
+      "title": "back to the predictions",
+      "voiceover": {
+        "text": "So, back to the predictions. The proton doesn't speed up, and it doesn't spiral in. With no work done, it goes round a circle at a steady speed. And the electron at the same speed curves far more tightly, on a circle about eighteen hundred times smaller, turning the other way."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "To remember it: a magnetic force steers, it never speeds. And the radius is m v over q B, momentum on top, charge and field underneath."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A proton travels at three point zero times ten to the six metres per second, at right angles to a uniform magnetic field of zero point two five tesla. Calculate the radius of its path, and its period. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "r equals m v over q B. Put in the proton's mass, its speed, its charge and the field, and r is zero point one two five metres, about twelve and a half centimetres. The period is two pi m over q B, two point six two times ten to the minus seven seconds. The classic slip is using the electron's mass, which gives a radius about eighteen hundred times too small."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Now the proton's speed is doubled, in the same field. What happens to the radius of its path, and to its period? Explain. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The radius doubles, because r equals m v over q B is proportional to v. The period stays the same, because T equals two pi m over q B has no v in it. The proton goes twice as far round, twice as fast. The classic slip is halving the period, as if a faster particle must finish sooner."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "next: two fields at once",
+      "voiceover": {
+        "text": "So an electric field can push a charge along its path and change its speed, while a magnetic field can only steer it. What if we use both at once, pushing in opposite directions? How can crossed fields select one particle speed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

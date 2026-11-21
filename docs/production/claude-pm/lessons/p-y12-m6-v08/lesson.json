@@ -1,0 +1,168 @@
+{
+  "id": "phys-y12-m6-v08",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "eba32c8d734b580864f20200de0ad40d74bf8757d7035d840b8af5c9ab304a7a",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (pull together or push apart?)",
+      "voiceover": {
+        "text": "Two long wires hang side by side, a few centimetres apart, and both carry a current upwards. Each one sits in the other's magnetic field. So will they pull together, push apart, or do nothing at all? Make your prediction. They pull together. Now reverse one of the currents. This time they push apart. So why do parallel currents attract, and opposite currents repel?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "one-wire-field",
+      "title": "the field of one wire",
+      "voiceover": {
+        "text": "Start with one wire. Look at it end on, with its current coming out of the screen towards us. That's a dot. Its magnetic field makes circles around it. The right-hand grip rule from Year 11 gives the direction. Thumb along the current, and the fingers curl the way the field goes, anticlockwise here. The field gets weaker further out. Its strength is B equals mu nought I over two pi r, where r is the distance from the wire. Mu nought is a constant, about four pi times ten to the minus seven, that sets how strong a field a current makes. Double the distance, and the field halves."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "second-wire",
+      "title": "the second wire feels a push",
+      "voiceover": {
+        "text": "Now put a second wire to the right, a distance r away, also with its current out of the screen. Wire one's field circles pass through it, and at wire two that field points straight up the screen. So wire two is a current in a magnetic field, at right angles to it. That's last video's motor effect. Thumb out of the screen, fingers up, and the palm faces left, so wire two is pushed towards wire one. Now swap roles. Wire one sits in wire two's field, which points down at wire one. That pushes wire one to the right, towards wire two. They attract."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "force-size",
+      "title": "how big is the force?",
+      "voiceover": {
+        "text": "How big is that force? Wire two feels F equals B I l, where B is wire one's field at wire two. Swap in B equals mu nought I one over two pi r, and the force on a length l of wire two is mu nought I one I two l, over two pi r. Divide by l to get the force on each metre of wire. F over l equals mu nought over two pi, times I one I two over r. More current gives more force, and more distance gives less."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "opposite-repel",
+      "title": "opposite currents repel",
+      "voiceover": {
+        "text": "Now reverse the current in wire two, so it goes into the screen. Wire one's field at wire two still points up. But now the thumb points into the screen, so the palm faces right, and wire two is pushed away. Wire two's own field has reversed too, so the push on wire one also flips, to the left. Same size of force, but now they repel. Reverse both currents, and nothing changes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-example",
+      "title": "equal forces: a worked example",
+      "voiceover": {
+        "text": "Two long parallel wires are eight point zero centimetres apart. One carries twelve amps upwards, the other eight point zero amps downwards. Mu nought over two pi is two times ten to the minus seven, so F over l is two times ten to the minus seven, times twelve times eight point zero, over zero point zero eight zero. That's two point four times ten to the minus four newtons per metre. The currents are opposite, so the wires repel. Which wire gets the bigger push? Neither. The formula multiplies I one by I two, so it's the same for both wires. That's a Newton's third law pair: equal in size, opposite in direction, and acting on two different wires."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ampere",
+      "title": "the ampere, then and now",
+      "voiceover": {
+        "text": "This force was once used to define the amp. Until twenty nineteen, one amp was the steady current that, in two long straight parallel wires one metre apart in a vacuum, gave a force of two times ten to the minus seven newtons on each metre of wire. Check it. Two times ten to the minus seven, times one times one, over one. Newton's third law is what made that definition work. The two wires push on each other equally, so it didn't matter which wire you measured. Since twenty nineteen, it's defined differently. The size of the charge on one electron, called the elementary charge, is fixed exactly. One amp is now a flow of about six point two four times ten to the eighteen elementary charges every second. Mu nought is now measured, but four pi times ten to the minus seven is still extremely close."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "investigation",
+      "title": "measure it yourself",
+      "voiceover": {
+        "text": "You can measure this force. Fix one copper rod flat on the pan of a sensitive balance, and clamp a second rod just above it, a measured distance away. Join them so the same current runs out along one and back along the other. Opposite currents repel, so the lower rod is pushed down, and the balance reading rises. For example, ten amps might raise it by zero point one zero grams. Turn that into a force with F equals m g, and divide by the rods' length. Change the current, but keep the distance, the length and the alignment fixed. Then plot F over l against I one I two over r. If the model holds, the points make a straight line through the origin, with a gradient of mu nought over two pi, two times ten to the minus seven."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the direction. Like currents attract, unlike currents repel. That's the opposite of what you'd guess from magnets, where like poles repel. And whatever the currents, the two forces are always the same size."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Two long parallel wires are four point zero centimetres apart. One carries twenty amps, and the other carries five point zero amps in the opposite direction. Calculate the force per metre on the five amp wire, state whether the wires attract or repel, and compare it with the force per metre on the twenty amp wire. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "F over l is two times ten to the minus seven, times twenty times five point zero, over zero point zero four zero. That's five point zero times ten to the minus four newtons per metre. Opposite currents, so they repel. And the twenty amp wire feels exactly the same force, by Newton's third law. The classic slip is saying the bigger current pushes harder."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Two long parallel wires carry currents in the same direction. Both currents are doubled, and the distance between the wires is also doubled. By what factor does the force per unit length change? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The force depends on I one times I two, so doubling both currents makes it four times bigger. Doubling the distance halves it. Four times a half is two, so the force per unit length doubles. The slip is using one over r squared, like gravity. That gives four over four, no change. For long wires, it's one over r."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So currents push on currents through their magnetic fields. Michael Faraday asked the reverse question. Can a magnetic field make a current? To answer that, we first need a way to measure how much magnetic field passes through a loop of wire. And that depends on which way the loop is facing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

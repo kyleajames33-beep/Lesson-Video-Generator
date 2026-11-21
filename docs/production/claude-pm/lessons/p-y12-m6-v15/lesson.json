@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m6-v15",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "41dc765ebbdbd653e2995ce79aeda39f6cce0bc627220f5d8584f89a643c9307",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (double the voltage)",
+      "voiceover": {
+        "text": "Here's the line from last time. A power station sends five hundred megawatts to a city, along wires with a total resistance of two point zero ohms. It could send that power at two hundred and fifty thousand volts, or at five hundred thousand volts. If we double the voltage, what happens to the power wasted in the line? Does it double, halve, or drop to a quarter? Hold on to your answer. A lot of people guess it doubles. More voltage, more loss. Let's see why stepping the voltage up actually reduces transmission loss."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "two-powers",
+      "title": "two powers, two voltages",
+      "voiceover": {
+        "text": "First, keep two powers apart. The power the line carries to the city is P equals V I, where V is the transmission voltage. But the power wasted in the line is something different. It's the heating in the wires' resistance, I squared R. And there are two voltages too. In our simple model, V is the voltage the power station puts between the outgoing wire and the return wire. The voltage that actually heats the wires is the small drop along their length, I R. So the loss depends on the current in the wire, not on how high the voltage is."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "current-falls",
+      "title": "same power, smaller current",
+      "voiceover": {
+        "text": "Now, for a fixed power, the current depends on the voltage. Rearrange P equals V I, and the current is P over V. So the same five hundred megawatts can travel as a big current at a low voltage, or a small current at a high voltage. Double the voltage, and the current halves."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "square",
+      "title": "the square does the work",
+      "voiceover": {
+        "text": "And here's the key. The loss is I squared R, so it goes with the square of the current. Put I equals P over V into it, and the loss is P squared R over V squared. Half the current gives a quarter of the loss. A tenth of the current gives one hundredth of the loss. That square is why high voltage is worth it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-250kv",
+      "title": "worked example: two hundred and fifty kilovolts",
+      "voiceover": {
+        "text": "Let's put numbers on our line. Five hundred megawatts, two point zero ohms, at two hundred and fifty kilovolts. The current is five hundred million watts over two hundred and fifty thousand volts, which is two thousand amps. The loss is two thousand squared, times two point zero, which is eight point zero megawatts. That's one point six per cent of the power sent."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-500kv",
+      "title": "worked example: five hundred kilovolts",
+      "voiceover": {
+        "text": "Now double the voltage to five hundred kilovolts. The current halves, to one thousand amps. The loss is one thousand squared, times two point zero, which is two point zero megawatts. Just zero point four per cent. Doubling the voltage cut the loss to a quarter. So if you guessed a quarter in the hook, you were right."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "no-step-up",
+      "title": "what if we didn't step up at all?",
+      "voiceover": {
+        "text": "Here's a surprise. Big generators make electricity at tens of thousands of volts. What if we sent our five hundred megawatts straight from the generator, at twenty five kilovolts? The current would be twenty thousand amps, and I squared R gives eight hundred megawatts. That's more than we're sending. The answer is impossible, and that's the point. You couldn't push that much power down the line at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "grid-chain",
+      "title": "transformers make it happen",
+      "voiceover": {
+        "text": "So we need the voltage up, and that's the job of a step-up transformer. Remember, it raises the voltage by lowering the current, with the same power on both sides. In New South Wales, the main transmission lines are rated at five hundred or three hundred and thirty thousand volts. Near the city, substations step it down in stages, to eleven thousand volts for the streets. Then a transformer on a pole, or in a box on the ground, steps it down to two hundred and thirty volts, the nominal supply for our homes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-ac",
+      "title": "why the grid is AC",
+      "voiceover": {
+        "text": "And this is why the grid uses alternating current. Transformers only work with a changing current, as we saw with mutual induction, so AC lets us step the voltage up and down easily. Some very long links, like cables under the sea, do use high-voltage DC, but they need expensive electronic converters at each end."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-not-higher",
+      "title": "why not even higher?",
+      "voiceover": {
+        "text": "So why not a million volts, or more? Higher voltages need more insulation, taller towers and wider gaps to the ground. And near very high-voltage wires, the air itself starts to leak charge, called corona, which wastes energy too. So the voltage is chosen as a balance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Double the voltage, half the current, a quarter of the loss. It works when the power sent and the line stay the same."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A wind farm sends one hundred and thirty two megawatts through transmission lines with a total resistance of three point zero ohms. Calculate the current and the power lost if it's transmitted at one hundred and thirty two kilovolts. Then calculate the power lost at three hundred and thirty kilovolts. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "At one hundred and thirty two kilovolts, the current is one thousand amps, and the loss is one thousand squared times three point zero, three point zero megawatts. At three hundred and thirty kilovolts, the current is four hundred amps, so the loss is four hundred squared times three point zero, zero point four eight megawatts. The classic slip is dividing the loss by two point five. The current drops two point five times, so the loss drops two point five squared."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. For the three hundred and thirty kilovolt line, a student uses P equals V squared over R, with V as three hundred and thirty thousand volts and R as three point zero ohms. They conclude that raising the transmission voltage increases the loss. Explain the student's error. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "In V squared over R, V must be the voltage across the resistance, the small drop along the line. That's I R, four hundred times three point zero, just twelve hundred volts. Twelve hundred squared over three point zero gives zero point four eight megawatts, the same answer as before. The slip is using the transmission voltage, which gives an impossible thirty six thousand megawatts."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So stepping the voltage up makes the current small, and that cuts the I squared R loss by the square. Then step-down transformers bring it back to two hundred and thirty volts. Follow that energy into a school lab. A lab power pack steps it down again, and turns it into DC. Connect a simple motor, and its coil spins. So how does a split-ring motor keep turning?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}
