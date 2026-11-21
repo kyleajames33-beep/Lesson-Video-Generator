@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v06.md",
+  "sourceSha256": "2ce8bc0cd1a939c65a174de0e189f1a1577468040bebd943d2aee54907743caf",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "If light were a stream of particles, two slits would give two bright strips on the screen. Instead, you get a whole row of bright and dark bands, evenly spaced. Light from two slits, added together, makes some places dark. Make your prediction. Right at the centre of the screen, halfway between the two slits, is it bright or dark? It's bright. Let's see why.",
+      "audioFile": "public/audio/phys-y12-m7-v06/hook.wav"
+    },
+    {
+      "id": "superposition",
+      "text": "Remember superposition. When two waves meet, they add. If they arrive in phase, crest with crest, they build a bigger wave, and that's bright. If they arrive exactly half a cycle out, crest with trough, they cancel, and that's dark. That adding and cancelling is called interference.",
+      "audioFile": "public/audio/phys-y12-m7-v06/superposition.wav"
+    },
+    {
+      "id": "path-difference",
+      "text": "Pick a point on the screen. Light reaches it from both slits, but along two different paths. The waves leave the slits in step, so what matters is how much further one has travelled. That's the path difference. At the centre, both paths are equal, so the waves arrive in step. Bright. Move along until one path is a whole wavelength longer. The waves are back in step, so it's bright again. In between, where one path is half a wavelength longer, crest meets trough, and it's dark. So bright bands sit where the path difference is a whole number of wavelengths, and dark bands where it's a half more than a whole number. Light from both slits does reach the dark bands. It just cancels.",
+      "audioFile": "public/audio/phys-y12-m7-v06/path-difference.wav"
+    },
+    {
+      "id": "coherence",
+      "text": "This only works if the light from the two slits stays in step. The sources must be coherent, the same frequency, with a steady phase relationship. A laser does that. Thomas Young, who first did this experiment, made his own coherent light by sending it through one single slit first, so both slits were fed by the same wavefront. Two separate lamps won't work. Their phases jump around at random, so the bands shift billions of times a second and wash out into an even glow.",
+      "audioFile": "public/audio/phys-y12-m7-v06/coherence.wav"
+    },
+    {
+      "id": "derive-dsin",
+      "text": "Now let's find that path difference. The screen is far away compared with the gap between the slits, so the two paths to a point are almost parallel, at an angle theta to the straight-ahead direction. Draw a line across, at right angles to the paths. The extra distance is the short side of a right-angled triangle, whose long side is the slit separation, d. So the path difference is d sine theta. Bright bands appear where d sine theta equals m lambda, with m, the order, counting the bands out from the centre.",
+      "audioFile": "public/audio/phys-y12-m7-v06/derive-dsin.wav"
+    },
+    {
+      "id": "screen-relation",
+      "text": "To find where they land, use the screen. A band a distance x from the centre, on a screen a distance L away, has tan theta equal to x over L. For small angles, sine theta and tan theta are almost equal. Put that into d sine theta equals m lambda, and the m-th bright band is at x equals m lambda L over d. Each step in m moves the band by the same amount, lambda L over d. So the spacing between bands is constant, and that's why they're regularly spaced. This works when the screen is much further away than the slit separation, and the angles are small.",
+      "audioFile": "public/audio/phys-y12-m7-v06/screen-relation.wav"
+    },
+    {
+      "id": "spacing-factors",
+      "text": "So what spreads the bands out? A longer wavelength, like red instead of blue. A screen further away. And a smaller gap between the slits. That last one surprises people. Move the slits closer together, and the bands move further apart. Double the slit separation, and the spacing halves.",
+      "audioFile": "public/audio/phys-y12-m7-v06/spacing-factors.wav"
+    },
+    {
+      "id": "worked-example",
+      "text": "Here's one. Red laser light, six hundred and thirty-two point eight nanometres, passes through two slits nought point two five millimetres apart, onto a screen two point four metres away. Delta x equals lambda L over d. That's six hundred and thirty-two point eight times ten to the minus nine, times two point four, over nought point two five times ten to the minus three, which is about six point one millimetres. The first band's angle is only about nought point one five degrees, so the small-angle step is fine. You can run it backwards. Measure a spacing of three point eight millimetres with the same slits and screen, and the wavelength is about three hundred and ninety-six nanometres, violet light.",
+      "audioFile": "public/audio/phys-y12-m7-v06/worked-example.wav"
+    },
+    {
+      "id": "measuring-well",
+      "text": "To measure a wavelength in the investigation, don't measure one spacing. The bands are only millimetres apart, so a small misreading is a big fraction. Measure across ten spacings and divide by ten. Measure L with a tape, and use the slide's slit separation, remembering it has its own uncertainty. And use a laser, because white light gives every colour its own spacing, and the bands blur. Never look along the beam.",
+      "audioFile": "public/audio/phys-y12-m7-v06/measuring-well.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it. Whole waves, bright. Half waves, dark. And for wide bands, long wavelength, long screen distance, little gap.",
+      "audioFile": "public/audio/phys-y12-m7-v06/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Green light of wavelength five hundred and thirty-two nanometres passes through two slits nought point three zero millimetres apart, onto a screen one point eight metres away. Calculate the fringe spacing. Then state the new spacing if the slit separation is doubled. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Delta x equals lambda L over d, five hundred and thirty-two times ten to the minus nine, times one point eight, over nought point three zero times ten to the minus three, about three point two millimetres. Doubling d halves the spacing, to about one point six millimetres. The classic slip is thinking wider-apart slits give wider-apart bands. It's the opposite.",
+      "audioFile": "public/audio/phys-y12-m7-v06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. In a double-slit experiment with six hundred nanometre light, point P on the screen is the second dark band from the centre. Find the path difference to P, and explain why P is dark. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The first dark band has a path difference of half a wavelength, and the second has one and a half. One and a half times six hundred nanometres is nine hundred nanometres. The waves from the two slits arrive at P exactly half a cycle out of step, crest on trough, so they cancel. The slip is saying no light reaches P. Light from both slits arrives. It interferes destructively.",
+      "audioFile": "public/audio/phys-y12-m7-v06/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So two slits make regularly spaced bands because the path difference, d sine theta, grows steadily across the screen, taking the waves in and out of step at equal steps. But look at these bands. They're broad and soft, so their centres are hard to pin down. Keep the same spacing, d, and add thousands more slits. The bright bands stay in exactly the same places, but they turn into thin, sharp lines, with darkness in between. That's a diffraction grating. How does a grating let us measure wavelength?",
+      "audioFile": "public/audio/phys-y12-m7-v06/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v06/key-notes.wav"
+    }
+  ]
+}

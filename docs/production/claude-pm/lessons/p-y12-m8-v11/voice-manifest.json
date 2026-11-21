@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v11.md",
+  "sourceSha256": "382432f8a0008353bcea589d9480ae1ed6277ef6d4e0c55189d253e5c70060e8",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here are hydrogen's four bright visible lines, and Bohr's energy levels. In eighteen eighty five, a Swiss maths teacher, Johann Balmer, found a formula that fitted these four wavelengths, with no idea why it worked. Nearly thirty years later, Bohr's model explained it. If each line comes from one drop between two levels, the size of each energy gap should fix each wavelength. So how do hydrogen energy gaps predict Balmer wavelengths?",
+      "audioFile": "public/audio/phys-y12-m8-v11/hook.wav"
+    },
+    {
+      "id": "seeing-lines",
+      "text": "You can see these lines yourself. A hydrogen discharge tube glows when a high voltage drives a current through the gas. Look at it through a spectroscope, or a diffraction grating, and the glow separates into sharp coloured lines. Measure where each line falls, and you get its wavelength. The tube runs at high voltage and gets hot, so it's set up by your teacher, and you don't touch it.",
+      "audioFile": "public/audio/phys-y12-m8-v11/seeing-lines.wav"
+    },
+    {
+      "id": "energy-levels",
+      "text": "First, the levels. Bohr's model gives hydrogen's levels as minus thirteen point six over n squared electron volts. So level two is minus three point four zero, level three is minus one point five one, level four is minus zero point eight five, and the levels crowd together as they approach zero. In exams, you'll usually be given a diagram like this.",
+      "audioFile": "public/audio/phys-y12-m8-v11/energy-levels.wav"
+    },
+    {
+      "id": "gap-energy",
+      "text": "Take the red line, a drop from level three to level two. The photon's energy is the gap. Minus one point five one, minus minus three point four zero, is one point eight nine electron volts. To get joules, multiply by one point six zero two times ten to the minus nineteen, giving three point zero three times ten to the minus nineteen joules.",
+      "audioFile": "public/audio/phys-y12-m8-v11/gap-energy.wav"
+    },
+    {
+      "id": "gap-wavelength",
+      "text": "Then E equals h c over lambda, so lambda equals h c over E. Six point six two six times ten to the minus thirty four, times three point zero zero times ten to the eight, over three point zero three times ten to the minus nineteen, is six point five six times ten to the minus seven metres. That's six hundred and fifty six nanometres, the red line we measure.",
+      "audioFile": "public/audio/phys-y12-m8-v11/gap-wavelength.wav"
+    },
+    {
+      "id": "rydberg-derived",
+      "text": "There's a shortcut that does both steps at once. Every level is minus thirteen point six over n squared, so any gap is thirteen point six electron volts, times one over n f squared, minus one over n i squared. Dividing a gap by h c gives one over lambda. And thirteen point six electron volts over h c is one point zero nine six times ten to the seven per metre, the Rydberg constant, R. So one over lambda equals R, times one over n f squared, minus one over n i squared. That's on your formula sheet.",
+      "audioFile": "public/audio/phys-y12-m8-v11/rydberg-derived.wav"
+    },
+    {
+      "id": "rydberg-red",
+      "text": "Try it on the red line. The final level, n f, is the lower one, two, and the initial level, n i, is three. One quarter minus one ninth is five thirty sixths. Times one point zero nine seven times ten to the seven, that's one point five two four times ten to the six per metre. Flip it, and lambda is six hundred and fifty six nanometres again.",
+      "audioFile": "public/audio/phys-y12-m8-v11/rydberg-red.wav"
+    },
+    {
+      "id": "rydberg-blue-trap",
+      "text": "For the blue-green line, n i is four. One quarter minus one sixteenth is three sixteenths, and lambda comes out at four hundred and eighty six nanometres. Always make the lower level n f. For emission the answer must be positive, so if you get a negative, you've swapped them.",
+      "audioFile": "public/audio/phys-y12-m8-v11/rydberg-blue-trap.wav"
+    },
+    {
+      "id": "crowding",
+      "text": "Levels five and six give four hundred and thirty four, and four hundred and ten nanometres, matching all four bright lines. Level seven gives three hundred and ninety seven, a faint deep violet line near the edge of what we can see. Notice the lines bunch up as n i grows. The upper levels crowd together, so their drops to level two become almost the same size.",
+      "audioFile": "public/audio/phys-y12-m8-v11/crowding.wav"
+    },
+    {
+      "id": "series-limit",
+      "text": "Where does the bunching stop? The biggest possible drop to level two starts at n equals infinity, from an electron that was only just free. Then one over n i squared is zero, so one over lambda is R over four, and lambda is three hundred and sixty five nanometres. That's the series limit, the shortest Balmer wavelength. It isn't one more line from a level. It's the edge the lines crowd towards.",
+      "audioFile": "public/audio/phys-y12-m8-v11/series-limit.wav"
+    },
+    {
+      "id": "other-series",
+      "text": "So why is Balmer the series we see? Visible photons carry about one point seven to three point three electron volts. Drops to level one are at least ten point two electron volts, so the Lyman series is all ultraviolet. Drops to level three are at most one point five one, so the Paschen series is all infrared. Only drops to level two land in the visible, at least for the first few lines.",
+      "audioFile": "public/audio/phys-y12-m8-v11/other-series.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the three named series. Lyman, Balmer, Paschen land on one, two and three. Ultraviolet, visible, infrared.",
+      "audioFile": "public/audio/phys-y12-m8-v11/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An electron in a hydrogen atom drops from the n equals five level to the n equals two level. Use the Rydberg equation to calculate the wavelength of the emitted photon. Then calculate the photon's energy in electron volts, and name the series. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "One over lambda equals R times one quarter minus one twenty fifth, which is two point three zero times ten to the six per metre, so lambda is four hundred and thirty four nanometres. E equals h c over lambda, four point five eight times ten to the minus nineteen joules, or two point eight six electron volts. It ends on level two, so it's Balmer. The slip is swapping n i and n f, which makes one over lambda negative.",
+      "audioFile": "public/audio/phys-y12-m8-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Calculate the wavelength of the photon emitted when an electron in hydrogen drops from n equals three to n equals one, and explain why this line can't be seen. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "One over lambda equals R times one minus one ninth, so lambda is one hundred and three nanometres. That's ultraviolet, far shorter than violet light at about four hundred, because a drop to level one is a very big gap. It's a Lyman line. The slip is thinking a drop from level three must be Balmer. The series is set by where the electron lands.",
+      "audioFile": "public/audio/phys-y12-m8-v11/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So Bohr's energy gaps predict every Balmer wavelength. But his model still rests on one unexplained rule, that the electron's angular momentum comes in whole numbers of h over two pi. In nineteen twenty four, Louis de Broglie suggested a reason. If an electron also behaves like a wave, only orbits that fit a whole number of its wavelengths would last. That's a bold claim about a particle. So what evidence shows that particles have wave behaviour?",
+      "audioFile": "public/audio/phys-y12-m8-v11/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v11/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v13.md",
+  "sourceSha256": "b9ed324b3a863625a97baa608f9684e12533e52709a00da1849f9a487d02d386",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Nature has already run this experiment. Cosmic rays hitting the top of the atmosphere make particles called muons, about fifteen kilometres up. A muon at rest lives, on average, only two point two microseconds. Even at almost the speed of light, that's only about six hundred and sixty metres of travel. So how many should reach the ground? Make your prediction. Detectors at sea level catch plenty of them. So how can two observers measure different elapsed times?",
+      "audioFile": "public/audio/phys-y12-m7-v13/hook.wav"
+    },
+    {
+      "id": "clock-at-rest",
+      "text": "Back to the light clock. Two mirrors are a distance d apart, and a pulse of light bounces between them. One tick is one round trip, up and back. On the spacecraft, where the clock is at rest, the pulse travels two d at speed c, so one tick takes t zero equals two d over c.",
+      "audioFile": "public/audio/phys-y12-m7-v13/clock-at-rest.wav"
+    },
+    {
+      "id": "clock-moving",
+      "text": "Now watch the same clock from Earth, as the ship passes at speed v. While the pulse travels up, the mirrors move sideways. So the pulse has to travel along a slanted path to hit the top mirror, and another slanted path back down. That's longer than two d. And by Einstein's second postulate, the pulse still travels at c. Longer path, same speed, so each tick takes longer, measured from Earth.",
+      "audioFile": "public/audio/phys-y12-m7-v13/clock-moving.wav"
+    },
+    {
+      "id": "pythagoras",
+      "text": "Let's find how much longer. Take half a tick, a time t over two. In that time, light travels c t over two along the slant, and the ship moves v t over two sideways. The height is still d, because the motion is sideways, not along the mirrors' separation. That's a right-angled triangle, so by Pythagoras, c t over two, all squared, equals d squared, plus v t over two, all squared.",
+      "audioFile": "public/audio/phys-y12-m7-v13/pythagoras.wav"
+    },
+    {
+      "id": "dilation-equation",
+      "text": "Now swap d for c t zero over two, from the clock at rest. Multiply out, and collect the t terms. You get t squared, times c squared minus v squared, equals c squared t zero squared. Divide, and take the square root, and t equals t zero over the square root of one minus v squared over c squared. That's time dilation, on your data sheet. The factor one over that square root is called gamma, the Lorentz factor, so t equals gamma t zero.",
+      "audioFile": "public/audio/phys-y12-m7-v13/dilation-equation.wav"
+    },
+    {
+      "id": "proper-time",
+      "text": "The two times have names. t zero is the proper time. It's the time between two events measured by one clock that's present at both of them, so in its frame both events happen in the same place. Here the events are the pulse leaving the bottom mirror and getting back, and only the ship's clock is at both. Gamma is never less than one, so proper time is always the shortest. Proper doesn't mean correct. Both frames are right.",
+      "audioFile": "public/audio/phys-y12-m7-v13/proper-time.wav"
+    },
+    {
+      "id": "every-clock",
+      "text": "This isn't a trick of light clocks. If the other clocks on the ship didn't slow by the same amount, you could compare them inside the cabin and discover your speed. That would break the first postulate. So every process on the moving ship, every clock, every vibration, every decay, runs slow by the same factor, as measured from Earth. And it works both ways. To the ship, Earth's clocks run slow.",
+      "audioFile": "public/audio/phys-y12-m7-v13/every-clock.wav"
+    },
+    {
+      "id": "gamma-size",
+      "text": "How big is gamma? At everyday speeds, it's almost exactly one. Even for a jet at nine hundred kilometres per hour, gamma is about one plus three times ten to the minus thirteen. At zero point six c, gamma is one point two five. At zero point eight c, it's one point six seven. At zero point nine nine five c, it's about ten. As v approaches c, gamma shoots up without limit.",
+      "audioFile": "public/audio/phys-y12-m7-v13/gamma-size.wav"
+    },
+    {
+      "id": "worked-muons",
+      "text": "Now the muons. They travel at zero point nine nine five c, so gamma is ten point zero. Their proper lifetime, measured by a clock riding with the muon, is two point two microseconds. From Earth, t equals gamma t zero, ten point zero times two point two, which is twenty two microseconds. In that time it covers about six point six kilometres, not six hundred and sixty metres. So the fifteen kilometre trip takes about two point three average lifetimes, and roughly one muon in ten survives, instead of almost none.",
+      "audioFile": "public/audio/phys-y12-m7-v13/worked-muons.wav"
+    },
+    {
+      "id": "clocks-accelerators",
+      "text": "Two more tests. In 1971, Joseph Hafele and Richard Keating flew caesium atomic clocks around the world on airliners, eastward and then westward, and compared them with clocks left on the ground. The eastbound clocks lost about fifty nine nanoseconds, and the westbound clocks gained about two hundred and seventy three, matching predictions that include both speed and the weaker gravity at altitude. And at CERN, muons circling a storage ring with gamma about twenty nine lived about twenty nine times longer than muons at rest.",
+      "audioFile": "public/audio/phys-y12-m7-v13/clocks-accelerators.wav"
+    },
+    {
+      "id": "worked-trip",
+      "text": "One more example. A spacecraft travels from Earth to a star twelve light years away, at zero point eight c. Which clock measures proper time? The ship's clock, because it's present at both events, leaving Earth and arriving at the star. In Earth's frame, the trip takes twelve over zero point eight, fifteen years. Gamma at zero point eight c is one point six seven, so the ship's clock shows fifteen over one point six seven, nine years.",
+      "audioFile": "public/audio/phys-y12-m7-v13/worked-trip.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it. Moving clocks run slow. And the proper time is the shortest, on the clock that's at both events.",
+      "audioFile": "public/audio/phys-y12-m7-v13/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Charged pions have a mean lifetime of twenty six nanoseconds, measured at rest. In an accelerator, pions travel at zero point nine five c. Calculate their mean lifetime in the laboratory frame, and how far they travel in the laboratory in that time. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Twenty six nanoseconds is the proper time, measured at rest. Gamma at zero point nine five c is three point two zero, so the lab lifetime is twenty six times three point two zero, eighty three nanoseconds. So the distance, v t, is about twenty four metres. The slip is dividing by gamma. The moving pions' lifetime is longer.",
+      "audioFile": "public/audio/phys-y12-m7-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A spacecraft travels at zero point six c from Earth to a space station six point zero light years away, measured in Earth's frame. Calculate the trip time in Earth's frame, and on the spacecraft's clock, and state which is the proper time. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "In Earth's frame, six point zero over zero point six is ten years. Gamma is one point two five, so the ship's clock shows ten over one point two five, eight point zero years. The ship's clock measures proper time, because it's present at both events. The slip is calling Earth's time proper, because it seems more correct.",
+      "audioFile": "public/audio/phys-y12-m7-v13/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "Back to the trip to the star. The ship's clock says nine years. But the ship's instruments watch the star approach at zero point eight c for those nine years. Zero point eight times nine is only seven point two light years. Earth says twelve. So the distance itself must be shorter for the ship. Why can a moving distance be shorter without an object being crushed?",
+      "audioFile": "public/audio/phys-y12-m7-v13/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v13/key-notes.wav"
+    }
+  ]
+}

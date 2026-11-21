@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v12.md",
+  "sourceSha256": "d6bb3db461dd7afcafa74371ac735be7cede6d113c670801c5d2a668dbd30507",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the spacecraft from last time, moving at zero point eight c past the Earth. It fires a laser pulse straight ahead. Measured on board, the pulse moves away at c. How fast is it, measured from Earth? Common sense says add the speeds, and get one point eight c. Make your prediction. Careful measurements always give c, within their uncertainties. So why must observers agree on light speed?",
+      "audioFile": "public/audio/phys-y12-m7-v12/hook.wav"
+    },
+    {
+      "id": "frames-galilean",
+      "text": "First, what's an observer? In physics, it just means a frame of reference, a set of rulers and clocks that records where and when things happen. Nobody has to be there. At everyday speeds, velocities simply add. If the spacecraft moves at twenty kilometres per second and launches a probe forward at ten kilometres per second, Earth measures the probe at thirty kilometres per second. That's Galilean relativity, and at low speeds it works extremely well.",
+      "audioFile": "public/audio/phys-y12-m7-v12/frames-galilean.wav"
+    },
+    {
+      "id": "inertial-frames",
+      "text": "Some frames are special. An inertial frame is one that isn't accelerating, so Newton's first law works in it. A spacecraft coasting with its engines off is an inertial frame. Inside a closed cabin, a floating ball just stays where it is, whether the ship is drifting or coasting at a huge speed. Now fire the engines. The ship accelerates, and the ball drifts to the back wall with no force acting on it. Newton's first law seems to fail. That's a non-inertial frame. Turning and spinning frames are non-inertial too.",
+      "audioFile": "public/audio/phys-y12-m7-v12/inertial-frames.wav"
+    },
+    {
+      "id": "no-absolute-rest",
+      "text": "Here's the deep idea. Inside a closed, coasting cabin, no experiment can tell you how fast you're moving. Collide two balls, time a vibrating spring, anything you like. The results are the same as when the ship is at rest. Only motion relative to something else can be measured. There's no special frame that is truly at rest.",
+      "audioFile": "public/audio/phys-y12-m7-v12/no-absolute-rest.wav"
+    },
+    {
+      "id": "maxwell-aether",
+      "text": "Light caused a problem. Maxwell's equations predict that electromagnetic waves travel at c, one over the square root of mu zero epsilon zero, about three times ten to the eight metres per second. But c relative to what? The equations don't mention the source or the observer. Physicists assumed light travels through an invisible medium called the aether, like sound through air. Earth moves around the Sun at about thirty kilometres per second, so it should feel an aether wind.",
+      "audioFile": "public/audio/phys-y12-m7-v12/maxwell-aether.wav"
+    },
+    {
+      "id": "michelson-morley",
+      "text": "In 1887, Albert Michelson and Edward Morley went looking for it. They split a light beam into two arms at right angles, reflected both back, and recombined them to make interference fringes. If the aether wind slowed one arm more than the other, rotating the apparatus would shift the fringes by about zero point four of a fringe. Their apparatus could detect about a hundredth of a fringe. They saw no significant shift at any angle, in noon and evening runs over several days in July. Later tests, at other times of year, agreed. That's a null result.",
+      "audioFile": "public/audio/phys-y12-m7-v12/michelson-morley.wav"
+    },
+    {
+      "id": "null-result-limits",
+      "text": "Be careful about what this proves. It's strong evidence against a still aether that Earth moves through, because that model made a clear prediction, and the experiment was sensitive enough to test it. But a null result on its own can't prove the aether doesn't exist. Physicists rescued it with extra ideas, like the arm along the motion shrinking by just the right amount. That fix fitted the data, but it was added just to explain this one result, so it gave no separate test of the aether.",
+      "audioFile": "public/audio/phys-y12-m7-v12/null-result-limits.wav"
+    },
+    {
+      "id": "postulates",
+      "text": "In 1905, Einstein took a different path. He dropped the aether and built everything on two postulates, starting assumptions. First, the laws of physics are the same in all inertial frames. Second, the speed of light in a vacuum, c, is the same for all inertial observers, whatever the motion of the source or the observer.",
+      "audioFile": "public/audio/phys-y12-m7-v12/postulates.wav"
+    },
+    {
+      "id": "why-same-c",
+      "text": "Here's why the second postulate isn't a wild guess. Maxwell's equations are laws of physics. By the first postulate, every inertial frame has the same laws, so every inertial observer calculates the same speed for light. If light's speed depended on how fast you were moving, you could measure light inside a closed cabin and find your speed. The first postulate would fail. So light speed has to be the same for everyone, and the null result, repeated at every time of year, is exactly what the postulates predict.",
+      "audioFile": "public/audio/phys-y12-m7-v12/why-same-c.wav"
+    },
+    {
+      "id": "moving-source-test",
+      "text": "There's direct evidence too. In 1964, physicists at CERN made particles called pions, moving at more than ninety nine point nine per cent of the speed of light. As they decayed, they gave off gamma rays straight ahead. Adding speeds says those gamma rays should travel at almost two c. They were timed at c, to within about one part in ten thousand.",
+      "audioFile": "public/audio/phys-y12-m7-v12/moving-source-test.wav"
+    },
+    {
+      "id": "the-price",
+      "text": "Agreeing on light speed has a price. Speed is distance over time. If two observers moving relative to each other measure the same speed for the same pulse of light, then they must disagree about distances or times. That's where relativity gets strange.",
+      "audioFile": "public/audio/phys-y12-m7-v12/the-price.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it. Same laws, same light. If every inertial frame has the same laws, they all get the same speed of light.",
+      "audioFile": "public/audio/phys-y12-m7-v12/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Classify each as an inertial or a non-inertial frame of reference, and give a reason. A spacecraft coasting at constant velocity with its engines off. A car travelling around a roundabout at constant speed. A lift slowing down as it arrives at a floor. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v12/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The coasting spacecraft is inertial, because its velocity is constant. The car is non-inertial. Its speed is constant, but its direction keeps changing, so it accelerates. The lift is non-inertial, because it's slowing down. The slip is calling the car inertial because its speed doesn't change. Velocity includes direction.",
+      "audioFile": "public/audio/phys-y12-m7-v12/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Evaluate this statement. The Michelson Morley experiment proved that the aether does not exist. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v12/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The statement goes too far. The experiment was sensitive enough to detect the expected aether wind, and found none, so it's strong evidence against a stationary aether. But a null result can't prove something doesn't exist, and rescue ideas fitted the data. The aether was dropped because Einstein's postulates explained the result without it. The slip is the word proved.",
+      "audioFile": "public/audio/phys-y12-m7-v12/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So every inertial observer measures the same c. Now put that to work. Build a clock from light, a pulse bouncing between two mirrors on the spacecraft. On board, the pulse goes straight up and down. From Earth, the ship moves sideways during each bounce, so the same pulse travels a longer, slanted path, at the same speed. So how can two observers measure different elapsed times?",
+      "audioFile": "public/audio/phys-y12-m7-v12/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v12/key-notes.wav"
+    }
+  ]
+}

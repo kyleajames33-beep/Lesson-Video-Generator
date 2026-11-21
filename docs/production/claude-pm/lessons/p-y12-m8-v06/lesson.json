@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m8-v06",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "e0dcc30baa4f23df7f53d256e7e9d1d18b3cdac27b48790b80ffd47daa6e0424",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (which star climbs higher?)",
+      "voiceover": {
+        "text": "When a star's core hydrogen runs out, can it keep climbing the curve? Here's a star like the Sun, and one twenty-five times more massive. Which one can make heavier elements? Make your prediction. The massive one, by far. And the gold in a ring needs something more extreme still. So how does stellar mass change the elements a star can make?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "after-hydrogen",
+      "title": "when the hydrogen runs out",
+      "voiceover": {
+        "text": "Start when the core's hydrogen runs out. Fusion in the core stops, so the core's pressure drops, and gravity squeezes it smaller. Squeezing turns gravitational potential energy into heat, so the core gets hotter. Hydrogen keeps fusing in a shell around the core, and the extra energy pushes the outer layers out. They swell and cool, and the star becomes a red giant, up and to the right on the HR diagram."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "helium-burning",
+      "title": "burning helium",
+      "voiceover": {
+        "text": "When the core reaches about a hundred million kelvin, helium can fuse. Helium nuclei have two protons each, so they repel more strongly than protons, and that's why it takes a much hotter core. Three helium four nuclei join to make carbon twelve. It's called the triple alpha process, because a helium four nucleus is also an alpha particle. Some carbon then captures another helium nucleus, making oxygen sixteen. So the core fills with carbon and oxygen."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "pattern",
+      "title": "the pattern",
+      "voiceover": {
+        "text": "There's a pattern. Each time a fuel runs out, the core contracts and heats, until the next fuel can burn. Helium and carbon have bigger charges than hydrogen, so they need hotter cores, and each later stage needs a hotter core again. How hot can a core get? That depends on mass. More mass means stronger gravity, which squeezes the core harder and makes it hotter. So a star's mass decides how far up the curve it can climb."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "sun-like-end",
+      "title": "a star like the Sun",
+      "voiceover": {
+        "text": "For a star like the Sun, the climb stops at carbon and oxygen. Its core never gets hot enough, about six hundred million kelvin, to fuse carbon. Its outer layers drift away as a glowing shell of gas, a planetary nebula, though it's nothing to do with planets. That gas carries helium, carbon and nitrogen back into space. The hot core left behind is a white dwarf, mostly carbon and oxygen, slowly cooling for billions of years."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "massive-climb",
+      "title": "a massive star climbs to iron",
+      "voiceover": {
+        "text": "A star more than about eight times the Sun's mass keeps going. Carbon fuses at about six hundred million kelvin, then neon, then oxygen at about one and a half billion, and finally silicon at about three billion kelvin, making iron. Each stage leaves its ash in a shell, so the star ends up layered like an onion, hydrogen outside, iron at the centre. And the stages speed up. For a star of fifteen solar masses, hydrogen lasts about eleven million years, but silicon lasts about eighteen days."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "iron-limit",
+      "title": "iron says stop",
+      "voiceover": {
+        "text": "Why stop at iron? Look at the curve. Iron sits at the peak, among the most tightly bound nuclei there are. Fusing iron into anything heavier would move down the curve, so it would take in energy instead of giving it out. The core has no fuel left that can release energy. It keeps losing energy, its pressure falls, and gravity wins. In less than a second, the iron core collapses into a ball of neutrons about the size of a city. The rebound and a flood of neutrinos blast the outer layers away, in a supernova."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "neutron-capture",
+      "title": "beyond iron: add neutrons",
+      "voiceover": {
+        "text": "So how do elements heavier than iron form? Not by fusion. They're built by neutron capture. A neutron has no charge, so it isn't repelled, and a nucleus can simply absorb it. Iron fifty-eight absorbs a neutron and becomes iron fifty-nine. That's unstable, so a neutron inside it turns into a proton, giving out an electron. The nucleus is now cobalt fifty-nine, one element higher. Repeat, and you climb the periodic table."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "slow-rapid",
+      "title": "slow and rapid",
+      "voiceover": {
+        "text": "There are two speeds. In the slow process, inside old giant stars, nuclei capture neutrons one at a time, with time to decay in between. That makes elements like strontium, barium and lead. In the rapid process, neutrons arrive so fast that nuclei swallow many before they can decay. That needs the most extreme events, like two neutron stars colliding, and it makes gold, platinum and uranium. In twenty seventeen, astronomers detected exactly that kind of collision, and saw the glow of freshly made heavy elements."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-against-elements",
+      "title": "making energy against making elements",
+      "voiceover": {
+        "text": "Notice the difference. Fusion up to iron releases energy, and that energy holds a star up and makes it shine. Neutron capture beyond iron makes only small amounts of heavy elements, as a by-product, and it can't keep a star going. That's one reason gold is so rare. And the winds and explosions that end a star's life spread all these elements into space, where they're built into new stars, planets, and you."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "origins",
+      "title": "where every element came from",
+      "voiceover": {
+        "text": "Put it on the periodic table. Hydrogen and most helium came from the Big Bang. Carbon and nitrogen mostly came from Sun-like stars, and stars a few times bigger, as they shed their outer layers. Oxygen up to iron mostly came from massive stars and their explosions. And beyond iron, from slow neutron capture in giants, and rapid neutron capture in neutron star collisions."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Heavier star, hotter core, heavier elements, until iron says stop. Past iron, add neutrons."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In the triple alpha process, three helium four nuclei fuse to form carbon twelve. Using the atomic masses given, calculate the energy released, in MeV. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Three helium fours have a mass of twelve point zero zero seven eight zero nine u. Take away the carbon's twelve, and the mass lost is zero point zero zero seven eight zero nine u. Times nine three one point five, that's about seven point two seven MeV. The slip is subtracting the wrong way round, and deciding energy is absorbed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Explain why a star of twenty solar masses can produce iron in its core, but a star of one solar mass can't. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Each later fuel needs a hotter core, starting with helium and carbon, whose bigger charges repel more. The more massive star's stronger gravity squeezes its core to about three billion kelvin, hot enough for silicon to fuse into iron. The Sun's core never gets hot enough to fuse carbon, so it stops at carbon and oxygen. The slip is saying the massive star has more fuel, so it burns for longer. It actually burns much faster."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff-v07",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So stars of different masses forged everything from carbon to gold. And every one of those atoms has electrons inside it. But until the end of the eighteen hundreds, nobody knew electrons existed. The first clue came from glowing glass tubes. So how did cathode rays and oil drops reveal the electron?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

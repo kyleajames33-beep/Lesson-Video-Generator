@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m7-v15",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "16a66e7984a3264b9fd749765278998906544f2e71d255cd9bf309bd6fd44840",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (two years of thrust)",
+      "voiceover": {
+        "text": "Here's the probe with its engines on. Let's make it simple. A thousand kilogram probe, a steady thrust of ten thousand newtons, and we'll ignore the fuel it burns. Newton's second law says it speeds up by ten metres per second, every second. At that rate it would reach the speed of light in under a year. So after two years of thrust, timed on Earth's clocks, how fast is it going? Make your prediction. Not two c. It's at about zero point nine c, and it never reaches c, however long you push. So why does ever more momentum fail to push mass to light speed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "force-adds-momentum",
+      "title": "force adds momentum",
+      "voiceover": {
+        "text": "Start with momentum. In Year 11, momentum is mass times velocity, and force is the rate of change of momentum, F equals delta p over delta t. So a steady force adds the same momentum every second. Ten thousand newtons adds ten thousand kilogram metres per second of momentum, each second. That rule still holds near the speed of light."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "relativistic-momentum",
+      "title": "relativistic momentum",
+      "voiceover": {
+        "text": "What changes is how momentum depends on speed. To keep momentum conserved in every inertial frame, Einstein showed that it has to be p equals m zero v, over the square root of one minus v squared over c squared. That's gamma, times m zero v. Here m zero is the rest mass, the mass measured when the object is at rest. At everyday speeds gamma is one, so this is just m v. Near the speed of light, gamma gets huge."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "p-v-graph",
+      "title": "momentum against speed",
+      "voiceover": {
+        "text": "Plot momentum against speed. The classical line, m v, is straight, and reaches m zero c at the speed of light, nothing special. The relativistic curve starts on that line at low speed, then bends upwards, and climbs without limit as v approaches c. It never touches the line where v equals c."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "speed-limit",
+      "title": "why there's a speed limit",
+      "voiceover": {
+        "text": "Now put the two ideas together. The thrust keeps adding momentum at a steady rate, forever. But on this curve, each extra bit of momentum buys less and less speed, because near c the curve climbs almost straight up. To actually reach c, gamma would have to be infinite, so the momentum would have to be infinite. No finite force, acting for a finite time, can supply that. So anything with mass can get closer and closer to c, but never reach it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "probe-numbers",
+      "title": "the probe's numbers",
+      "voiceover": {
+        "text": "Here are the numbers for our probe. After just under a year of Earth time, its momentum reaches m zero c, and its speed is zero point seven one c. Double that momentum, and it's at zero point eight nine c. Triple it, zero point nine five c. Ten times, zero point nine nine five c. The momentum keeps climbing steadily, but the speed just creeps towards c, and never gets there."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "photons",
+      "title": "light itself",
+      "voiceover": {
+        "text": "What about light? Photons have no rest mass, so this limit works differently for them. They always travel at exactly c, never slower, and they still carry momentum. The speed limit applies to anything with mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "invariant-mass",
+      "title": "invariant mass, not relativistic mass",
+      "voiceover": {
+        "text": "A warning about older books. Some say mass increases with speed, and call gamma m zero the relativistic mass. Physicists now avoid that idea. The mass, m zero, is the same at every speed. In its own frame, a fast muon is just an ordinary muon, with ordinary mass. What grows is the momentum, and the energy. So in an exam, say the momentum increases without limit, not that the mass becomes infinite."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-proton",
+      "title": "worked example: a proton in an accelerator",
+      "voiceover": {
+        "text": "Let's calculate. A proton in an accelerator moves at zero point seven five eight c, and its rest mass is one point six seven three times ten to the minus twenty seven kilograms. First, gamma. One over the square root of one minus zero point seven five eight squared is one point five three. Then p equals gamma m zero v. One point five three, times one point six seven three times ten to the minus twenty seven, times zero point seven five eight times three times ten to the eight, is five point eight three times ten to the minus nineteen kilogram metres per second. The classical m v gives only three point eight zero times ten to the minus nineteen, about thirty five per cent too small."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-electron",
+      "title": "worked example: a small step in speed",
+      "voiceover": {
+        "text": "Now compare an electron at zero point nine nine c with one at zero point nine nine nine c. The speed goes up by less than one per cent. But gamma goes from seven point zero nine to twenty two point four, so the momentum more than triples. That's the speed limit at work."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "accelerators",
+      "title": "accelerators are built for it",
+      "voiceover": {
+        "text": "Particle accelerators depend on this every day. Remember, a charged particle in a magnetic field moves in a circle of radius p over q B, and the momentum in that formula has to be gamma m zero v. At CERN's Large Hadron Collider, protons travel within about three metres per second of the speed of light, with gamma near seven thousand. Its bending magnets curve them on a radius of nearly three kilometres. If momentum were just m v, the same magnets would bend them in a circle of radius about forty centimetres."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Momentum has no ceiling. Speed does."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. An electron travels at zero point nine five c. Calculate its relativistic momentum, and compare it with the value given by the classical expression, m v. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Gamma at zero point nine five c is three point two zero. So p, which is gamma m zero v, comes to eight point three times ten to the minus twenty two kilogram metres per second. The classical m v is two point six times ten to the minus twenty two, so the true momentum is three point two times bigger. The slip is stopping at m v."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Use relativistic momentum to explain why a particle with mass can't be accelerated to the speed of light. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "As v approaches c, the square root approaches zero, so the momentum grows without limit. A force adds momentum at a finite rate, so any finite push gives finite momentum, and a speed still below c. Reaching c would need infinite momentum. The slip is saying the mass becomes infinite. The rest mass doesn't change. The momentum does."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So pushing harder always adds momentum, and energy too, but never quite enough speed. And here's the surprise. Even at rest, with no momentum at all, an object holds an enormous store of energy, just because it has mass. The Sun gives some of it away, losing about four million tonnes every second. So how does mass-energy accounting explain fusion, annihilation and combustion?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v09.md",
+  "sourceSha256": "2a899680a9de9e815aec4f1859d7a94a9e50b0efe9982281a40c5aeaf5b62f10",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the puzzle from last time. A gold nucleus has the charge of seventy nine protons, but the mass of about a hundred and ninety seven. Helium has the charge of two protons, and the mass of four. An early guess was extra protons paired with electrons, but that clashed with other measurements. So something heavy with no charge seemed to be in there. But a neutral particle doesn't bend in fields, so how would you ever catch one? What evidence established an uncharged massive particle in the nucleus?",
+      "audioFile": "public/audio/phys-y12-m8-v09/hook.wav"
+    },
+    {
+      "id": "beryllium-radiation",
+      "text": "The first clue came in nineteen thirty. Walther Bothe and Herbert Becker fired alpha particles from polonium at the light metal beryllium. Out came a radiation that passed through several centimetres of lead. Electric and magnetic fields didn't bend it, so it had no charge. The only uncharged, penetrating radiation anyone knew was gamma rays, high-energy photons, so that's what they assumed it was.",
+      "audioFile": "public/audio/phys-y12-m8-v09/beryllium-radiation.wav"
+    },
+    {
+      "id": "paraffin-protons",
+      "text": "In nineteen thirty two, Irène Curie and Frédéric Joliot put paraffin wax in its path. Paraffin is full of hydrogen, and the radiation knocked protons out of it. When James Chadwick, at Cambridge, measured them more carefully, the fastest moved at about three point three times ten to the seven metres per second, a kinetic energy of about five point seven million electron volts. Protons are charged, so they're easy to detect. The question was what could hit them that hard.",
+      "audioFile": "public/audio/phys-y12-m8-v09/paraffin-protons.wav"
+    },
+    {
+      "id": "photon-trouble",
+      "text": "If the radiation were gamma photons, here's the trouble. A photon has no mass, and when something massless bounces off something heavy, it hands over only a small share of its energy, like a ping-pong ball bouncing off a bowling ball. To give a proton five point seven million electron volts, a photon would need about fifty five million. An alpha hitting beryllium could release at most about sixteen.",
+      "audioFile": "public/audio/phys-y12-m8-v09/photon-trouble.wav"
+    },
+    {
+      "id": "nitrogen-contradiction",
+      "text": "It got worse. Chadwick also aimed the radiation at nitrogen gas, and measured the fastest nitrogen recoils. To explain those, the photons would need about ninety million electron volts, by his own estimate. One beam can't be fifty five million for protons and ninety million for nitrogen. The photon idea didn't fit the energy, and it didn't fit itself.",
+      "audioFile": "public/audio/phys-y12-m8-v09/nitrogen-contradiction.wav"
+    },
+    {
+      "id": "neutron-proposal",
+      "text": "Chadwick proposed a different answer. The radiation is a stream of uncharged particles, each with about the mass of a proton. He called them neutrons. Now picture a head-on elastic collision between equal masses, from Year 11. The moving one stops, and the target moves off with all the speed, like one billiard ball hitting another. So a neutron with five point seven million electron volts can hand all of it to a proton.",
+      "audioFile": "public/audio/phys-y12-m8-v09/neutron-proposal.wav"
+    },
+    {
+      "id": "through-lead",
+      "text": "Being uncharged also explains the lead. A charged particle tugs on electrons all along its path, knocking them off atoms and losing energy fast. A neutron feels no electric force, so it slips through until it strikes a nucleus. And the reaction balances. Helium four plus beryllium nine gives carbon twelve plus one neutron.",
+      "audioFile": "public/audio/phys-y12-m8-v09/through-lead.wav"
+    },
+    {
+      "id": "recoil-rule",
+      "text": "To weigh the neutron, Chadwick used both targets. For a head-on elastic collision, conservation of momentum and kinetic energy give the target's recoil speed. It's two times the neutron's mass, over the neutron's mass plus the target's mass, times the neutron's speed. Check it. If the target's mass equals the neutron's, the recoil speed is the neutron's own speed. If the target is very heavy, it hardly moves.",
+      "audioFile": "public/audio/phys-y12-m8-v09/recoil-rule.wav"
+    },
+    {
+      "id": "two-targets",
+      "text": "But the neutron's speed is unknown too. So write the rule once for protons, and once for nitrogen nuclei, about fourteen times heavier, using the fastest recoil of each, from head-on hits by the fastest neutrons. Then divide. The unknown speed cancels. The fastest protons recoiled at three point three times ten to the seven metres per second, and the fastest nitrogen nuclei at four point seven times ten to the six. So seven point zero two equals m n plus fourteen m p, over m n plus m p.",
+      "audioFile": "public/audio/phys-y12-m8-v09/two-targets.wav"
+    },
+    {
+      "id": "solve-mass",
+      "text": "Cross-multiply and solve, and the neutron's mass is about one point one six proton masses. Chadwick's own estimate was close, within his measurement errors. Today's data-sheet value is one point six seven five times ten to the minus twenty seven kilograms, just a tenth of a percent heavier than a proton.",
+      "audioFile": "public/audio/phys-y12-m8-v09/solve-mass.wav"
+    },
+    {
+      "id": "nucleus-adds-up",
+      "text": "Now the nucleus adds up. Gold has seventy nine protons and a hundred and eighteen neutrons, so its mass number is one hundred and ninety seven. The atomic number counts protons, and the mass number counts protons plus neutrons.",
+      "audioFile": "public/audio/phys-y12-m8-v09/nucleus-adds-up.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the key argument. A photon hitting a proton is a ping-pong ball hitting a bowling ball. A neutron hitting a proton is one billiard ball hitting another.",
+      "audioFile": "public/audio/phys-y12-m8-v09/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Bombarding beryllium with alpha particles produces a penetrating radiation that is not deflected by electric or magnetic fields, and that ejects high-speed protons from paraffin wax. Explain why Chadwick concluded that this radiation was made of neutral particles with a mass similar to a proton's, rather than gamma rays. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "No deflection means no charge. Gamma photons would need about fifty five million electron volts to give the protons their energy, more than the reaction can release, and nitrogen recoils needed a different value. A neutral particle with a proton's mass can hand a proton all its energy head-on, so modest energies work. The slip is saying gamma rays are charged. Both ideas were uncharged.",
+      "audioFile": "public/audio/phys-y12-m8-v09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Explain why Chadwick needed recoil measurements from two different targets to determine the neutron's mass. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Each recoil speed depends on two unknowns, the neutron's mass and its speed. One target gives one equation, which can't fix both. A second target gives a second equation, and dividing them cancels the speed, leaving the mass. The slip is thinking one target is enough. One equation can't fix two unknowns.",
+      "audioFile": "public/audio/phys-y12-m8-v09/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the atom is complete, a tiny nucleus of protons and neutrons, with electrons outside it. But how do those electrons stay there? In Rutherford's picture, they orbit the nucleus, like planets around the Sun. An orbiting electron keeps changing direction, so it's always accelerating, and you know what accelerating charges do. So why couldn't Rutherford's model explain stable atoms and line spectra?",
+      "audioFile": "public/audio/phys-y12-m8-v09/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v09/key-notes.wav"
+    }
+  ]
+}

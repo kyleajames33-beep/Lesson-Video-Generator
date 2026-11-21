@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v12.md",
+  "sourceSha256": "56e9a3f87a9e103c3dc29b98eda6825ad3aeb41b25d56170ae17a09fee773c18",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's where we stopped. De Broglie suggested that an electron also behaves like a wave, and that only orbits fitting a whole number of its wavelengths would last. It's a bold idea, because an electron had always been a tiny charged ball, with a mass and a path. A claim like that needs a test. So what evidence shows that particles have wave behaviour?",
+      "audioFile": "public/audio/phys-y12-m8-v12/hook.wav"
+    },
+    {
+      "id": "light-turned-around",
+      "text": "De Broglie started with light. Earlier, light diffracted like a wave, but in the photoelectric effect it arrived as photons. A photon has no mass, yet it still carries momentum, p equals E over c. Its energy is h f, and f over c is one over lambda, so a photon's momentum is h over lambda. De Broglie turned that around. If light waves carry momentum, perhaps anything with momentum has a wavelength, lambda equals h over p.",
+      "audioFile": "public/audio/phys-y12-m8-v12/light-turned-around.wav"
+    },
+    {
+      "id": "particle-wavelength",
+      "text": "For a particle, momentum is mass times velocity, so lambda equals h over m v. That's the form on your formula sheet. It works when the particle is much slower than light, say under a tenth of c. Faster than that, you'd use relativistic momentum, which you met earlier. The more momentum a particle has, the shorter its wavelength.",
+      "audioFile": "public/audio/phys-y12-m8-v12/particle-wavelength.wav"
+    },
+    {
+      "id": "steel-ball",
+      "text": "So why had nobody noticed? Take a fifty gram steel ball, rolling at two metres per second. Lambda is six point six two six times ten to the minus thirty four, over zero point zero five zero times two point zero. That's six point six times ten to the minus thirty three metres, far smaller than a proton. No gap is ever that narrow, so the ball never shows diffraction.",
+      "audioFile": "public/audio/phys-y12-m8-v12/steel-ball.wav"
+    },
+    {
+      "id": "electron-wavelength",
+      "text": "Now take an electron moving at two point two times ten to the six metres per second. Its mass is nine point one zero nine times ten to the minus thirty one kilograms, so lambda comes out at three point three one times ten to the minus ten metres. That's about the spacing of atoms in a solid. Waves diffract strongly through gaps about their own wavelength. So the rows of atoms in a crystal could act like a diffraction grating for electrons.",
+      "audioFile": "public/audio/phys-y12-m8-v12/electron-wavelength.wav"
+    },
+    {
+      "id": "davisson-germer",
+      "text": "In nineteen twenty seven, Clinton Davisson and Lester Germer, in New York, fired a beam of electrons at a nickel crystal. If electrons are waves, the rows of atoms should send the strongest signal at one angle, set by the wavelength. The detector found a strong peak at fifty degrees, with weaker signals either side. A sharp peak at one angle is exactly what a grating does with waves.",
+      "audioFile": "public/audio/phys-y12-m8-v12/davisson-germer.wav"
+    },
+    {
+      "id": "dg-speed",
+      "text": "Let's check the numbers. Their electrons were accelerated through fifty four volts, so each gained fifty four electron volts of kinetic energy, that's eight point six five times ten to the minus eighteen joules. Kinetic energy is half m v squared, so the speed is four point three six times ten to the six metres per second.",
+      "audioFile": "public/audio/phys-y12-m8-v12/dg-speed.wav"
+    },
+    {
+      "id": "dg-wavelength",
+      "text": "De Broglie's equation predicts lambda equals h over m v, which is one point six seven times ten to the minus ten metres. Now treat the rows of nickel atoms as a grating. They're two point one five times ten to the minus ten metres apart, and the peak was at fifty degrees. So d sine theta gives one point six five times ten to the minus ten metres. Prediction and measurement agree to about one per cent.",
+      "audioFile": "public/audio/phys-y12-m8-v12/dg-wavelength.wav"
+    },
+    {
+      "id": "rings-and-tube",
+      "text": "That same year, George Thomson fired faster electrons through very thin metal foil, and they made rings. Here's the surprise. His father, J J Thomson, had shown the electron was a particle. A school electron diffraction tube does the same thing. Electrons pass through a thin layer of graphite and make bright rings on a glowing screen. It runs at thousands of volts, so it's a teacher demonstration. Turn up the voltage, and the rings get smaller. Faster electrons have more momentum, so a shorter wavelength, and they diffract less, just as h over m v predicts.",
+      "audioFile": "public/audio/phys-y12-m8-v12/rings-and-tube.wav"
+    },
+    {
+      "id": "why-evidence",
+      "text": "Why is this convincing? Peaks and rings come from waves overlapping, adding in some directions and cancelling in others. Particles on separate paths can't cancel each other out. And the wavelength measured from the pattern matches h over m v. The pattern and the number together make strong evidence. But the electrons are still particles too. Each one lands as a single spot, and the rings build up from many spots.",
+      "audioFile": "public/audio/phys-y12-m8-v12/why-evidence.wav"
+    },
+    {
+      "id": "ground-orbit",
+      "text": "Now back to the atom. An electron in hydrogen's lowest orbit moves at about two point two times ten to the six metres per second. We just found its wavelength, three point three one times ten to the minus ten metres. The orbit's circumference, two pi r, is three point three two times ten to the minus ten metres. One wavelength fits exactly.",
+      "audioFile": "public/audio/phys-y12-m8-v12/ground-orbit.wav"
+    },
+    {
+      "id": "bohr-rule-explained",
+      "text": "So the rule is that a whole number of wavelengths fits round the orbit. Two pi r equals n lambda, and lambda is h over m v. Rearrange, and m v r equals n h over two pi. That's Bohr's rule, the one he had to assume. An orbit that doesn't fit makes the wave cancel itself on every lap, so it can't last.",
+      "audioFile": "public/audio/phys-y12-m8-v12/bohr-rule-explained.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. An electron is accelerated from rest through a potential difference of one hundred volts. Calculate its de Broglie wavelength. Then decide whether a crystal with atoms two times ten to the minus ten metres apart could diffract it. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v12/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The kinetic energy is one hundred electron volts, one point six zero times ten to the minus seventeen joules. So the speed is five point nine three times ten to the six metres per second, and lambda is h over m v, one point two three times ten to the minus ten metres. That's close to the atom spacing, so yes, it can diffract. The slip is using one hundred as joules, which gives a speed faster than light.",
+      "audioFile": "public/audio/phys-y12-m8-v12/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Explain how electron diffraction supports de Broglie's hypothesis. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v12/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "De Broglie proposed that particles have a wavelength, h over m v. Electrons fired at a crystal give peaks at set angles, an interference pattern that only waves can make. And the wavelength found from the pattern matches h over m v, so the hypothesis is confirmed. The slip is saying electrons are waves and not particles. Each electron still arrives as a single spot.",
+      "audioFile": "public/audio/phys-y12-m8-v12/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So electrons diffract, with exactly de Broglie's wavelength, and his idea explains Bohr's rule. But look again at the screen. Each electron lands as one tiny spot, and we can't say where the next one will land, only where it's likely to. If an electron spreads like a wave but arrives like a particle, what does its orbit really look like? Why do orbital probabilities replace literal electron paths?",
+      "audioFile": "public/audio/phys-y12-m8-v12/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v12/key-notes.wav"
+    }
+  ]
+}

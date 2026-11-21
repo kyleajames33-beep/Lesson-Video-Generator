@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v16.md",
+  "sourceSha256": "c74097b00a5dbd109d4649211d299c1bf6fb68d9dacbc14b8a7188a23fba9945",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the Sun. It shines with a power of about three point eight times ten to the twenty six watts, and to do that, it loses about four million tonnes of mass every second. Where does that mass go? Make your prediction. That four million tonnes isn't gas blowing away. It's the mass equivalent of the energy that light carries away. So how does mass-energy accounting explain fusion, annihilation and combustion?",
+      "audioFile": "public/audio/phys-y12-m7-v16/hook.wav"
+    },
+    {
+      "id": "e-mc2",
+      "text": "Einstein's other famous result from relativity is E equals m c squared. Mass and energy are equivalent. Any mass m has a rest energy, m c squared, even sitting still. And c squared is enormous, nine times ten to the sixteen joules for every kilogram. One kilogram's rest energy could run a one gigawatt power station for almost three years.",
+      "audioFile": "public/audio/phys-y12-m7-v16/e-mc2.wav"
+    },
+    {
+      "id": "accounting-rule",
+      "text": "Here's the accounting rule. Draw a boundary around a system. If the system gives out energy E, as light, heat or fast-moving particles, its mass goes down by delta m equals E over c squared. If it takes in energy, its mass goes up. Total energy, counting rest energy, is always conserved. So when we say mass is converted to energy, nothing is destroyed. The system's mass falls because energy leaves.",
+      "audioFile": "public/audio/phys-y12-m7-v16/accounting-rule.wav"
+    },
+    {
+      "id": "worked-sun",
+      "text": "First, the Sun. The system is the Sun, and the energy leaving each second is three point eight times ten to the twenty six joules. So delta m equals E over c squared. Three point eight times ten to the twenty six, over nine times ten to the sixteen, is four point two times ten to the nine kilograms, every second. That's about four million tonnes.",
+      "audioFile": "public/audio/phys-y12-m7-v16/worked-sun.wav"
+    },
+    {
+      "id": "fusion",
+      "text": "Where does that energy come from? Fusion in the Sun's core. Through several steps, four hydrogen nuclei become one helium nucleus. The helium has about zero point seven per cent less mass than the four hydrogens, and the energy matching that missing mass leaves as light, and as tiny particles called neutrinos. So to lose four point two times ten to the nine kilograms a second, the Sun must fuse about six times ten to the eleven kilograms of hydrogen every second.",
+      "audioFile": "public/audio/phys-y12-m7-v16/fusion.wav"
+    },
+    {
+      "id": "annihilation",
+      "text": "Now annihilation. Every particle has an antiparticle, with the same mass and the opposite charge. The electron's antiparticle is the positron. When an electron and a positron meet at rest, they annihilate. All of their mass becomes two gamma ray photons, flying apart in opposite directions, so the total momentum is still zero. Hospitals use this every day. A PET scanner finds where in the body these photon pairs come from.",
+      "audioFile": "public/audio/phys-y12-m7-v16/annihilation.wav"
+    },
+    {
+      "id": "worked-annihilation",
+      "text": "The total mass is two times nine point one zero nine times ten to the minus thirty one kilograms. Times c squared, that's one point six four times ten to the minus thirteen joules. Each photon carries half, eight point two times ten to the minus fourteen joules, which is about zero point five one MeV, a million electron volts being one MeV. Here, one hundred per cent of the mass is converted.",
+      "audioFile": "public/audio/phys-y12-m7-v16/worked-annihilation.wav"
+    },
+    {
+      "id": "worked-combustion",
+      "text": "Finally, burning fuel. Burning one kilogram of petrol releases about forty four megajoules. That's a chemical reaction, but the same accounting applies. The system is the petrol and the oxygen it burns with, about four and a half kilograms in total. Delta m equals forty four times ten to the six, over nine times ten to the sixteen, which is four point nine times ten to the minus ten kilograms, half a microgram. The products really are lighter, by about one part in ten billion.",
+      "audioFile": "public/audio/phys-y12-m7-v16/worked-combustion.wav"
+    },
+    {
+      "id": "three-scales",
+      "text": "Put the three side by side, as fractions of the mass that reacts. Combustion, about one ten billionth. Fusion, about zero point seven per cent. Annihilation, all of it. Why such a huge gap? Chemical reactions only rearrange electrons, a few electron volts per bond. Nuclear reactions rearrange the particles in the nucleus, millions of electron volts each. Same rule, very different scale.",
+      "audioFile": "public/audio/phys-y12-m7-v16/three-scales.wav"
+    },
+    {
+      "id": "chemistry-conservation",
+      "text": "That's why chemists could treat mass as perfectly conserved for centuries. Half a microgram out of four and a half kilograms is far too small for an ordinary laboratory balance to detect. In nuclear reactions, the mass change is big enough to measure.",
+      "audioFile": "public/audio/phys-y12-m7-v16/chemistry-conservation.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's the accounting in four words. Energy out, mass down. And the exchange rate is c squared.",
+      "audioFile": "public/audio/phys-y12-m7-v16/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A star radiates energy at a rate of one point five times ten to the twenty seven watts. Calculate the mass it loses each second. If fusion converts zero point seven per cent of the hydrogen's mass into energy, calculate the mass of hydrogen it fuses each second. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v16/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Each second it gives out one point five times ten to the twenty seven joules. Delta m is that over nine times ten to the sixteen, one point seven times ten to the ten kilograms. That's zero point seven per cent of the hydrogen fused, so divide by zero point zero zero seven, two point four times ten to the twelve kilograms each second. The slip is dividing by c instead of c squared.",
+      "audioFile": "public/audio/phys-y12-m7-v16/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Burning one kilogram of methane releases fifty five megajoules. A student claims the products of burning have exactly the same mass as the reactants. Evaluate this claim, using a calculation. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v16/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Delta m equals fifty five times ten to the six, over nine times ten to the sixteen, about six times ten to the minus ten kilograms. So the products are lighter, and the claim isn't exactly true. But the change is under a microgram, far too small for an ordinary balance, so the claim works for all practical purposes. The slip is saying chemical reactions don't change mass at all.",
+      "audioFile": "public/audio/phys-y12-m7-v16/feedback-2.wav"
+    },
+    {
+      "id": "handoff-m8",
+      "text": "One rule explains all three. Energy out, mass down. And the accounting runs both ways. Run annihilation backwards, and two energetic photons meeting head-on can make an electron and a positron, if each brings at least zero point five one MeV. The early Universe was full of photons that energetic. Then it cooled. So how did cooling radiation allow matter to form in the early Universe?",
+      "audioFile": "public/audio/phys-y12-m7-v16/handoff-m8.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v16/key-notes.wav"
+    }
+  ]
+}

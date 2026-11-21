@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m7-v05",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "620167caf02e1eef1ee049c235918e269b8548f79317dae231287fadfaf9da64",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (squeeze it and it spreads)",
+      "voiceover": {
+        "text": "Light coming through the spectroscope's slit doesn't just carry straight on. It spreads out on the other side. Shine a laser through a narrow slit onto a screen, and you don't get a thin line. You get a wide bright band, with fainter bands either side. Make your prediction. Make the slit narrower. Does the bright band get narrower, or wider? It gets wider. Squeeze light through a smaller gap, and it spreads out more."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "ripple-gap",
+      "title": "waves through a gap",
+      "voiceover": {
+        "text": "You can see the same thing with water. In a ripple tank, straight waves roll towards a barrier with a gap in it. Beyond a wide gap, the waves carry on mostly straight, bending only a little at the edges. Make the gap about one wavelength wide, and the waves spread out in semicircles, right round into the regions behind the barrier. This spreading is called diffraction. And light does it too, because light is a wave."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "huygens",
+      "title": "every point is a source",
+      "voiceover": {
+        "text": "Why do waves spread like that? In the 1600s, Christiaan Huygens had an idea. Treat every point on a wavefront as a tiny source, sending out its own little circular wave, called a wavelet. A moment later, the new wavefront is the line touching the front of every wavelet. On a wide, open wavefront, each wavelet has neighbours on both sides, so the sideways parts fill in, and the front just moves straight ahead."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "edges-and-gaps",
+      "title": "at an edge or a gap",
+      "voiceover": {
+        "text": "Now put a barrier in the way, with a gap. Only the points in the gap can send wavelets on. In the middle of the gap, the wavelets still have neighbours, so that part of the front stays straight. But at each edge, there's nothing beyond to fill in. Those wavelets spread round, into the shadow behind the barrier. A single edge does the same thing. Make the gap narrower, and more of the front is near an edge. In a very narrow gap, the whole front behaves like one wavelet, and it spreads out like a semicircle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "size-matters",
+      "title": "why shadows usually look sharp",
+      "voiceover": {
+        "text": "So why don't we see light bending round doorways? It's about size. Spreading is strong only when the gap is not much bigger than the wavelength. Visible light has a wavelength of about five hundred nanometres, so a doorway is about two million wavelengths wide. The spreading is far too small to notice. Sound has wavelengths around a metre, which is why you hear someone round a corner but can't see them. To see light diffract, you need a slit about a tenth of a millimetre wide."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "slit-pattern",
+      "title": "the pattern on the screen",
+      "voiceover": {
+        "text": "Look closely at the single-slit pattern. The middle band is bright and wide, and the side bands are much fainter. The dark gaps come from cancelling. At those angles, light from different parts of the slit arrives out of step, and adds up to nothing. Narrow the slit, and the whole pattern spreads wider. Use red light instead of green, and it's wider again, because red has the longer wavelength. Even the shadow of a straight edge isn't perfectly sharp. Up close, it has fine bright and dark fringes."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "newton-huygens",
+      "title": "Newton or Huygens?",
+      "voiceover": {
+        "text": "In the late sixteen hundreds, there were two models of light. Isaac Newton said light is a stream of tiny particles, which he called corpuscles, flying in straight lines. Huygens said light is a wave. Both could explain reflection, so reflection couldn't decide between them. But they disagreed on two things. In the simple particle picture, straight-line particles should cast sharp shadows, and never spread through a gap. And to bend towards the normal on entering water, Newton's particles had to be pulled in, so they'd speed up. Huygens' waves had to slow down. For about a century, most scientists followed Newton. His reputation was enormous, and with light's tiny wavelength, its spreading was easy to miss."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "evidence",
+      "title": "the evidence decides",
+      "voiceover": {
+        "text": "Then the evidence came in. Light was shown to spread into shadows, which only waves do. In 1850, Foucault put water in his spinning-mirror apparatus, and found light travels slower in water, just as the wave model predicted. And there was a famous surprise. Siméon Poisson pointed out that the wave theory predicted a bright spot right in the centre of the shadow of a round disc. He thought that was absurd. François Arago looked, and found the spot. In each case, the two models predicted different things, and the wave prediction won. The strongest evidence of all, interference, is next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "investigation",
+      "title": "investigating diffraction",
+      "voiceover": {
+        "text": "To investigate it yourself, shine a laser through an adjustable slit onto a screen a couple of metres away. Narrow the slit slowly, and watch the central band widen. Swap a red laser for a green one, and compare. Even a single hair in the beam gives a spread-out pattern. Never look along a laser beam, or at its reflections."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Narrow gap, wide spread. Wide gap, narrow spread."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Laser light passes through a single narrow slit. When the slit is made narrower, the central bright band on the screen becomes wider. Use Huygens' principle to explain why. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Every point on the wavefront in the slit acts as a source of wavelets, and the new wavefront is the line touching them. At the edges of the slit, the wavelets have no neighbours beyond, so they spread into the shadow. In a narrower slit, more of the front is near an edge, and it behaves more like a single wavelet, so it spreads more. The slip is saying less light gets through, so the band gets narrower. The band widens, even though it gets dimmer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Newton modelled light as particles, and Huygens as waves. Explain how the speed of light in water, and the diffraction of light, provided evidence to decide between these models. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Newton's model needed light to speed up in water, while Huygens' needed it to slow down. Foucault measured it, and it was slower, supporting the waves. Particles travelling in straight lines should cast sharp shadows and not spread through gaps. Light does spread into shadows, as Huygens' wavelets predict, so diffraction supports waves too. The slip is using reflection as evidence. Both models explain reflection, so it can't decide."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So light spreads after an edge or narrow opening because it's a wave. Every point on the wavefront sends out wavelets, and at an edge, nothing fills in, so the wave curves into the shadow. Now cut two narrow slits, side by side. Each one spreads light out, and the two spreading waves overlap. On the screen, you don't get one wide blur. You get a row of bright and dark bands, evenly spaced. Why do two slits produce regularly spaced bright and dark bands?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

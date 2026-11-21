@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v09.md",
+  "sourceSha256": "ab71c812be48cb2a8aa0a510c434477a543bd8a5bfed6c76d925322602687949",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "So far, light has behaved like a wave every time. It diffracts, it interferes, and it can be polarised. By 1900, physicists thought the wave model was nearly finished. Then switch on a bar heater. The element glows dull red, then orange, and a much hotter object glows white. The wave model should have predicted how much of each colour comes out. It got it badly wrong. So how did these thermal spectra challenge classical predictions?",
+      "audioFile": "public/audio/phys-y12-m7-v09/hook.wav"
+    },
+    {
+      "id": "thermal-radiation",
+      "text": "Everything warmer than absolute zero gives out electromagnetic radiation, because its charged particles are always jiggling, and accelerating charges radiate. That's thermal radiation, and at room temperature it's almost all infrared. The ideal case is called a black body. It absorbs all the radiation that falls on it, and what it gives out depends only on its temperature. A good model is a hollow box with a tiny hole. Light that gets in bounces around and almost never comes back out.",
+      "audioFile": "public/audio/phys-y12-m7-v09/thermal-radiation.wav"
+    },
+    {
+      "id": "read-curve",
+      "text": "Here's the Sun, at about five thousand eight hundred kelvin, very nearly a black body. Intensity goes up the side, wavelength goes along the bottom. At very short wavelengths there's almost nothing. The curve climbs to a single peak, then falls away gradually. The Sun's peak is near five hundred nanometres, in the visible band. Only the height and position of this shape change with temperature.",
+      "audioFile": "public/audio/phys-y12-m7-v09/read-curve.wav"
+    },
+    {
+      "id": "hotter-shorter-higher",
+      "text": "If the object gets hotter, where does the peak go? Make your prediction. A cool star at three thousand five hundred kelvin peaks in the infrared. A hot star at ten thousand kelvin peaks in the ultraviolet. As the temperature rises, the peak moves to shorter wavelengths, and the curve rises everywhere, so a hotter object gives out more at every wavelength. That explains the heater. Its element is only about a thousand kelvin, so its peak is far out in the infrared, and only the tail reaches the visible, at the red end.",
+      "audioFile": "public/audio/phys-y12-m7-v09/hotter-shorter-higher.wav"
+    },
+    {
+      "id": "wien-law",
+      "text": "The peak follows a simple rule, Wien's law. Lambda max equals b over T, where T is the temperature in kelvin and b is Wien's constant, two point eight nine eight times ten to the minus three metre kelvin, on your data sheet. Double the temperature, and the peak wavelength halves. Check the Sun. Two point eight nine eight times ten to the minus three, over five thousand eight hundred, is five times ten to the minus seven metres, five hundred nanometres.",
+      "audioFile": "public/audio/phys-y12-m7-v09/wien-law.wav"
+    },
+    {
+      "id": "worked-star",
+      "text": "Astronomers use it the other way round. A star's spectrum peaks at two hundred and ninety nanometres. To find its temperature, rearrange for T, so T equals b over lambda max. First convert to metres, two point nine zero times ten to the minus seven metres. Then two point eight nine eight times ten to the minus three, over two point nine zero times ten to the minus seven, is about ten thousand kelvin. That's a hot, blue white star.",
+      "audioFile": "public/audio/phys-y12-m7-v09/worked-star.wav"
+    },
+    {
+      "id": "classical-prediction",
+      "text": "So what did classical physics predict? Picture the radiation inside the hot box as standing waves, each fitting a whole number of half wavelengths between the walls. Classical physics gave every possible pattern the same average share of thermal energy. But shorter waves fit in far more ways. Halve the wavelength, and there are about eight times as many patterns. The prediction matched the measured curve at long wavelengths. At short wavelengths it kept climbing, without any limit.",
+      "audioFile": "public/audio/phys-y12-m7-v09/classical-prediction.wav"
+    },
+    {
+      "id": "uv-catastrophe",
+      "text": "This failure got a dramatic name, the ultraviolet catastrophe. The theory said a hot object should pour out endless ultraviolet, and radiate infinite total energy. Even a warm cup of tea would blaze with deadly radiation. Real curves always peak and then fall. Something basic was missing.",
+      "audioFile": "public/audio/phys-y12-m7-v09/uv-catastrophe.wav"
+    },
+    {
+      "id": "planck-packets",
+      "text": "In 1900, Max Planck found the fix. He proposed that the vibrating charges in the walls can only gain or lose energy in whole packets, called quanta. Each packet has energy E equals h f, where h is Planck's constant, six point six two six times ten to the minus thirty four joule seconds. So an oscillator can hold no packets, one, two, three, and so on. E equals n h f.",
+      "audioFile": "public/audio/phys-y12-m7-v09/planck-packets.wav"
+    },
+    {
+      "id": "packets-fix-curve",
+      "text": "Thermal jiggling hands out energy in small random amounts. At low frequencies a packet is small, so the walls trade packets easily, and the classical answer is about right. At high frequencies one packet is huge compared with the energy jiggling can supply. Those oscillators almost never get a whole packet, so short-wavelength patterns are frozen out. The curve falls back towards zero, and Planck's formula matched the measurements at every wavelength.",
+      "audioFile": "public/audio/phys-y12-m7-v09/packets-fix-curve.wav"
+    },
+    {
+      "id": "claims-limits",
+      "text": "Two warnings. Wien's law alone doesn't prove that energy comes in packets. Wien found it in 1893 with classical physics. Packets were needed for the whole shape, especially the fall at short wavelengths. And Planck quantised the vibrating charges in the walls, not light itself. Light in packets came from Einstein in 1905, and that's where we're heading.",
+      "audioFile": "public/audio/phys-y12-m7-v09/claims-limits.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to hold it together. Hotter means shorter and higher, a shorter peak and a higher curve. And for the shape, remember that big packets are hard to afford.",
+      "audioFile": "public/audio/phys-y12-m7-v09/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. The spectrum of a star peaks at a wavelength of four hundred and twenty nanometres. Calculate the star's surface temperature, and state whether it is hotter or cooler than the Sun, whose spectrum peaks at about five hundred nanometres. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v09/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "T equals b over lambda max. Two point eight nine eight times ten to the minus three, over four point two zero times ten to the minus seven, is six thousand nine hundred kelvin. Its peak is at a shorter wavelength than the Sun's, so it's hotter. The classic slip is leaving the wavelength in nanometres. Always convert to metres first.",
+      "audioFile": "public/audio/phys-y12-m7-v09/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Explain why the classical model of black body radiation failed at short wavelengths, and how Planck's hypothesis fixed it. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v09/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Classical physics shared energy equally among wave patterns, and there are more and more patterns at short wavelengths, so intensity rose without limit, the ultraviolet catastrophe. Planck said energy comes in packets, E equals h f. At high frequency, thermal energy rarely supplies a whole packet, so short-wavelength emission is suppressed, and the curve falls. The slip is saying that Planck discovered photons. That was Einstein.",
+      "audioFile": "public/audio/phys-y12-m7-v09/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So hot objects showed that energy is traded in packets of h f. Einstein went further, and said light itself arrives in packets. The evidence came from metals. A dim ultraviolet lamp knocks electrons out of zinc, but a red lamp, however bright, knocks out none. So why can bright low-frequency light fail to eject electrons?",
+      "audioFile": "public/audio/phys-y12-m7-v09/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v09/key-notes.wav"
+    }
+  ]
+}

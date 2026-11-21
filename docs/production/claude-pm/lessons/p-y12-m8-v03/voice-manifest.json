@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v03.md",
+  "sourceSha256": "f34ec515c4ba12a5abf6b19310665ae33bec2f25041192415198cf42a9ea780f",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the Sun's light, spread into a spectrum. A smooth rainbow, with dark lines cut into it. From this one strip, astronomers can read a star's temperature, and sort it into a class. Almost every star is mostly hydrogen. So which stars show the strongest hydrogen lines? The hottest, the coolest, or ones in between? Make your prediction. Ones in between, and the reason is the key to classifying stars. So how can spectra classify stars and reveal their temperature?",
+      "audioFile": "public/audio/phys-y12-m8-v03/hook.wav"
+    },
+    {
+      "id": "emission-levels",
+      "text": "First, the three kinds of spectra, now explained with photons. A hot, dense object gives a continuous spectrum, every wavelength. A hot, thin gas gives an emission spectrum, bright lines only. Its electrons can only have fixed energy levels. Each drop between levels gives out one photon, with E equals h f, an exact energy. Hydrogen's red line at six hundred and fifty-six nanometres comes from a drop of three point zero times ten to the minus nineteen joules, about one point nine electron volts.",
+      "audioFile": "public/audio/phys-y12-m8-v03/emission-levels.wav"
+    },
+    {
+      "id": "absorption",
+      "text": "Now put cooler, thinner gas in front of a hot source. Its atoms absorb only photons whose energy exactly matches a gap between their levels, lifting an electron up. They give that energy out again, but in all directions, so less reaches you at that wavelength. That's a dark line, at the same wavelength as the bright one. A star works like this. Its hot, dense layers give the continuous light, and the cooler gas above absorbs, so stars show absorption spectra.",
+      "audioFile": "public/audio/phys-y12-m8-v03/absorption.wav"
+    },
+    {
+      "id": "black-body-comparison",
+      "text": "How does a star's spectrum compare with a pure black body? Plot intensity against wavelength. A black body gives a smooth curve, and its shape depends only on temperature. A star's spectrum follows nearly the same curve, but with narrow dips cut into it. The curve tells you the temperature. The dips tell you which atoms are in the atmosphere, and, as you'll see, they tell you the temperature again.",
+      "audioFile": "public/audio/phys-y12-m8-v03/black-body-comparison.wav"
+    },
+    {
+      "id": "wien-method",
+      "text": "Method one is the peak. Wien's law says the peak wavelength is b over T. The Sun's spectrum peaks at about five hundred nanometres, so T is two point eight nine eight times ten to the minus three, over five times ten to the minus seven. That's about five thousand eight hundred kelvin. But hot stars peak in the ultraviolet, which our atmosphere blocks, and dust between the stars can redden light. So astronomers also read the lines.",
+      "audioFile": "public/audio/phys-y12-m8-v03/wien-method.wav"
+    },
+    {
+      "id": "hydrogen-hump",
+      "text": "Here's why hydrogen lines peak in the middle. The visible hydrogen lines are absorbed by electrons starting in level two, not the lowest level. In a cool star, almost every electron sits in level one, so hardly any atoms can absorb these lines. Heat the star, and collisions lift more electrons up to level two, so the lines grow stronger. But too hot, and collisions strip the electron off completely. Ionised hydrogen has no electron left to absorb. The balance is best near ten thousand kelvin, in A stars. So weak hydrogen lines can mean too cool or too hot, not too little hydrogen.",
+      "audioFile": "public/audio/phys-y12-m8-v03/hydrogen-hump.wav"
+    },
+    {
+      "id": "other-features",
+      "text": "Other features fill in the scale. Helium holds its electrons more tightly than hydrogen, so lines from ionised helium only show in the hottest stars, the O stars. Calcium loses an electron easily, so ionised calcium lines are strong in cooler stars like the Sun. And in the coolest stars, below about three and a half thousand kelvin, molecules like titanium oxide survive, adding broad dark bands. Each feature is like a thermometer, reading over its own range.",
+      "audioFile": "public/audio/phys-y12-m8-v03/other-features.wav"
+    },
+    {
+      "id": "classes",
+      "text": "Put it together, and stars fall into seven classes, O, B, A, F, G, K and M, from hottest to coolest. O stars are above about thirty thousand kelvin and look blue. M stars are below about three and a half thousand kelvin and look red. Each class splits into ten steps, zero to nine, and the Sun is a G2 star. The letters look scrambled because they began as an alphabet, sorted by hydrogen line strength. Astronomers later reordered them into a smooth sequence, and it turned out to be a sequence of temperature.",
+      "audioFile": "public/audio/phys-y12-m8-v03/classes.wav"
+    },
+    {
+      "id": "payne",
+      "text": "And here's the surprise. In nineteen twenty-five, Cecilia Payne showed that the differences between classes come from temperature, not composition. Almost every star is mostly hydrogen and helium. An A star and an M star can be made of nearly the same stuff, and still have completely different spectra.",
+      "audioFile": "public/audio/phys-y12-m8-v03/payne.wav"
+    },
+    {
+      "id": "worked-classify",
+      "text": "Let's classify one. A star's spectrum peaks at four hundred and fourteen nanometres. Its hydrogen lines are fairly strong, with some metal lines, but there's no ionised helium and no molecular bands. By Wien's law, T is b over four point one four times ten to the minus seven, about seven thousand kelvin. Strong but not the strongest hydrogen, no helium, no molecules, and seven thousand kelvin. That's an F star, and the lines and the curve agree.",
+      "audioFile": "public/audio/phys-y12-m8-v03/worked-classify.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember why hydrogen peaks in the middle. Too cool to lift, too hot to keep.",
+      "audioFile": "public/audio/phys-y12-m8-v03/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A star's spectrum peaks at seven hundred and twenty-five nanometres. It shows strong lines from metals, and weak molecular bands. Calculate its surface temperature, and identify its spectral class. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "T is b over seven point two five times ten to the minus seven metres, about four thousand kelvin. That's in the K range, about three and a half thousand to five thousand two hundred, and strong metal lines with weak molecular bands fit a K star. The slip is putting in seven hundred and twenty-five without converting to metres.",
+      "audioFile": "public/audio/phys-y12-m8-v03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Star P shows strong lines of ionised helium. Star Q shows strong titanium oxide bands. Both have weak hydrogen lines, and both have the same composition. Explain why both stars have weak hydrogen lines, and identify their spectral classes. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Star P is an O star. It's so hot that most hydrogen is ionised, with no electron left to absorb. Star Q is an M star. It's so cool that almost no electrons are lifted to level two, where the visible hydrogen lines start. Different temperatures, the same weak lines. The slip is saying weak hydrogen lines mean little hydrogen.",
+      "audioFile": "public/audio/phys-y12-m8-v03/feedback-2.wav"
+    },
+    {
+      "id": "handoff-v04",
+      "text": "So a spectrum gives a star's temperature, from its curve and from its lines. But here's a problem. These two M stars have the same temperature, so their spectra peak at the same wavelength and share the same class. Yet one gives out about a million times more power than the other. Temperature alone can't tell you that. So how does the HR diagram distinguish brightness, temperature and stellar stage?",
+      "audioFile": "public/audio/phys-y12-m8-v03/handoff-v04.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v03/key-notes.wav"
+    }
+  ]
+}

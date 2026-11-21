@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m7-v08",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "335a811ca26f6312e9a512e9dd2320c646dece8f11b102a484f98ceb46a12c5f",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (turn it and it fades)",
+      "voiceover": {
+        "text": "In the laser beam, turning the filter makes the light brighter and dimmer, because many lasers are already polarised. Try it with ordinary lamp light. One filter cuts the brightness to half, and turning it changes nothing. Now add a second filter, and turn that one. The light fades, and a quarter turn later, it's gone. Keep turning, and it comes back. Make your prediction. Turn the second filter just forty-five degrees. Does half the light get through it, or a quarter? Half. Let's see why."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "polarisation",
+      "title": "what polarised light is",
+      "voiceover": {
+        "text": "Light is a transverse wave. Its electric field points across the direction the light travels. In ordinary light, that direction keeps changing at random, through every direction across the beam. That's unpolarised light. If the electric field points in just one direction, the light is plane polarised. And here's the point. Only a transverse wave can be polarised. In a longitudinal wave, like sound, the vibration is along the direction of travel, so there's nothing across the beam to restrict. So the fact that light can be polarised tells us light is transverse."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "filter-action",
+      "title": "what a filter does",
+      "voiceover": {
+        "text": "A polarising filter has a transmission axis. It lets through the part of the electric field that lies along that axis, and absorbs the part across it. So the light coming out is polarised along the axis. With unpolarised light going in, the field points every way, and on average the filter passes exactly half the intensity. That's true whichever way you turn it, which is why one filter alone never changes the brightness."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "malus-law",
+      "title": "Malus's law",
+      "voiceover": {
+        "text": "Now send polarised light into a second filter, called an analyser, whose axis is at an angle theta to the light's polarisation. Split the electric field into two parts. The part along the analyser's axis is E cos theta, and that's what gets through. But intensity depends on the square of the amplitude, so the intensity drops by cos squared theta. That's Malus's law, I equals I max cos squared theta. I max is the intensity of the polarised light reaching the analyser. At zero degrees, everything gets through. At forty-five degrees, half. At sixty degrees, a quarter. And at ninety degrees, nothing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "crossed",
+      "title": "crossed filters",
+      "voiceover": {
+        "text": "So when the two axes are at right angles, cos ninety is zero, and no light gets through. The filters are crossed. Keep turning the analyser, and the light comes back at one hundred and eighty degrees. In one full turn, you get two bright positions and two dark ones."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "half-or-cos-squared",
+      "title": "half, or cos squared?",
+      "voiceover": {
+        "text": "Here's the trap. Malus's law only works for light that's already polarised. For unpolarised light hitting the first filter, there's no single angle theta. You just halve it. So unpolarised light through two filters at angle theta gives a half, times cos squared theta, times the starting intensity. Don't use cos squared on the first filter."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "three-filter-chain",
+      "title": "a chain of three filters",
+      "voiceover": {
+        "text": "Try a chain. Unpolarised light of eighty watts per square metre meets three filters. The first is vertical, the second is turned thirty degrees, and the third is at sixty. After the first, it's halved to forty watts per square metre. The second is thirty degrees from the first, so forty times cos squared thirty, which is thirty. The third is thirty degrees from the second, so thirty times cos squared thirty, which is twenty-two point five. Now take the middle filter out. The third is now sixty degrees from the first, so forty times cos squared sixty is only ten. Adding a filter let more light through, because each filter resets the polarisation along its own axis."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "investigation",
+      "title": "investigating Malus's law",
+      "voiceover": {
+        "text": "To test Malus's law, put a lamp, a polariser and an analyser on a rotating mount, with a light sensor behind. Turn the analyser in fifteen degree steps and record the sensor reading, after subtracting the background light in the room. Then plot the intensity against cos squared theta. If Malus's law holds, you get a straight line through the origin, and its gradient is I max."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "significance",
+      "title": "what polarisation says about light",
+      "voiceover": {
+        "text": "So how important was polarisation for the model of light? Very, but for one thing. It showed that light is a transverse wave, because only transverse waves can be polarised. That ruled out light as a longitudinal wave, and a simple stream of particles has no direction for a filter to pick out. It also fitted Maxwell's picture, with the electric field across the beam. But it couldn't say what was oscillating. For years, people took it as evidence for an invisible medium, the aether, which turned out to be wrong. So polarisation settled the shape of light's wave, not what light is made of."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Cos for the field, cos squared for the light. And the first filter on unpolarised light, just half."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Unpolarised light of intensity one hundred and twenty watts per square metre passes through two ideal polarising filters, with their transmission axes at thirty-five degrees. Calculate the intensity after the second filter. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The first filter halves the unpolarised light, to sixty watts per square metre. Then Malus's law, sixty times cos squared thirty-five degrees, gives about forty watts per square metre. The classic slip is skipping the half, and using one hundred and twenty times cos squared thirty-five, about eighty-one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Explain how the fact that light can be polarised supports a transverse wave model of light, and why it rules out a longitudinal wave model. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Polarisation means restricting the oscillation to one direction across the direction of travel. A transverse wave oscillates across its direction of travel, so a filter can pass one direction and absorb the rest. A longitudinal wave oscillates along its direction of travel, so there's no direction across the beam to select, and it can't be polarised. The slip is saying polarisation shows light is made of particles. A simple particle stream has no oscillation for a filter to select."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So rotating a polariser changes the intensity because only the part of the electric field along its axis gets through. That part is E cos theta, and intensity goes as its square. With interference, diffraction and polarisation, light behaves as a transverse wave every time, just as Maxwell's theory predicts. By the end of the eighteen hundreds, it looked as if the theory of light was nearly complete. But one ordinary thing would not fit. The glow of hot objects. How did thermal spectra challenge classical predictions?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

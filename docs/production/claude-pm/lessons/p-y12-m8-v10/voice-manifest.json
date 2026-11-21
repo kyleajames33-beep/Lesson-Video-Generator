@@ -1,0 +1,116 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v10.md",
+  "sourceSha256": "de10f5de66eeb75a25aecfadc828be96318572beb1d71c3427e973c0c9c0cc2d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's Rutherford's atom, with an electron orbiting the nucleus. Its direction keeps changing, so it's always accelerating, and we've seen that accelerating charges give out electromagnetic waves. So what should happen to this electron? Make your prediction. Classical physics says it spirals into the nucleus. But atoms don't collapse, and they give out sharp lines of light. So why couldn't Rutherford's model explain stable atoms and line spectra?",
+      "audioFile": "public/audio/phys-y12-m8-v10/hook.wav"
+    },
+    {
+      "id": "radiating",
+      "text": "Let's follow the classical argument. As the electron circles, it shakes its electric field round and round, so it sends out electromagnetic waves at the frequency of its orbit. Those waves carry energy away. That energy comes from the electron, so it sinks into a smaller orbit, closer to the nucleus.",
+      "audioFile": "public/audio/phys-y12-m8-v10/radiating.wav"
+    },
+    {
+      "id": "spiral-stability",
+      "text": "In a smaller orbit, it moves faster and radiates more strongly, so it sinks faster still. For hydrogen, the calculation gives about ten to the minus eleven seconds before the electron hits the nucleus, less than a ten-billionth of a second. Yet a jar of hydrogen gas stays hydrogen for as long as you like. That's the first failure. Rutherford's model says atoms can't be stable.",
+      "audioFile": "public/audio/phys-y12-m8-v10/spiral-stability.wav"
+    },
+    {
+      "id": "line-failure",
+      "text": "The second failure is the light. As the electron spirals in, its orbit frequency rises smoothly, so its waves should slide through every frequency, giving a continuous smear of colour. But glowing hydrogen gives sharp lines, with four bright visible ones, at six five six, four eight six, four three four and four one zero nanometres. Every hydrogen atom, anywhere, gives the same lines. Rutherford's model can't produce a line spectrum at all.",
+      "audioFile": "public/audio/phys-y12-m8-v10/line-failure.wav"
+    },
+    {
+      "id": "rutherford-verdict",
+      "text": "So Rutherford got the nucleus right, but classical physics couldn't explain the electrons. The rules for electrons had to change.",
+      "audioFile": "public/audio/phys-y12-m8-v10/rutherford-verdict.wav"
+    },
+    {
+      "id": "stationary-states",
+      "text": "In nineteen thirteen, Niels Bohr changed the rules. A postulate is a starting assumption, and his first was bold. An electron can only be in certain allowed orbits, each with a fixed energy. While it stays in one of these stationary states, it doesn't radiate at all. Bohr didn't explain why. He simply said classical radiation doesn't happen there.",
+      "audioFile": "public/audio/phys-y12-m8-v10/stationary-states.wav"
+    },
+    {
+      "id": "energy-levels",
+      "text": "Each allowed orbit is an energy level, numbered n equals one, two, three, and so on. The lowest, n equals one, is the ground state, and the higher ones are excited states. The energies are negative, because the electron is bound. A just-free electron has zero energy, so freeing it means adding energy. Hydrogen's ground state is minus thirteen point six electron volts, so it takes thirteen point six electron volts to ionise the atom.",
+      "audioFile": "public/audio/phys-y12-m8-v10/energy-levels.wav"
+    },
+    {
+      "id": "photon-postulate",
+      "text": "The next postulate links levels to light. When an electron drops from a higher level to a lower one, the atom emits one photon. By conservation of energy, the photon carries exactly the energy difference, so h f equals E initial minus E final. An electron can also jump up, by absorbing a photon with exactly the right energy.",
+      "audioFile": "public/audio/phys-y12-m8-v10/photon-postulate.wav"
+    },
+    {
+      "id": "failures-fixed",
+      "text": "Now both failures are fixed. The ground state is the lowest level, and there's nothing lower to fall to, so the atom is stable. Only certain energy gaps exist, so only certain photon energies come out, and only certain wavelengths. That's a line spectrum. A bigger drop gives a bigger photon energy, a higher frequency, and a shorter wavelength.",
+      "audioFile": "public/audio/phys-y12-m8-v10/failures-fixed.wav"
+    },
+    {
+      "id": "angular-momentum",
+      "text": "Bohr's other postulate chose which orbits are allowed. He set the electron's angular momentum, its mass times speed times orbit radius, equal to a whole number times h over two pi. That rule gave energy levels that matched hydrogen's lines extremely well. But again, he gave no reason for it. It worked, so he used it.",
+      "audioFile": "public/audio/phys-y12-m8-v10/angular-momentum.wav"
+    },
+    {
+      "id": "bohr-success",
+      "text": "So how good is Bohr's model? For hydrogen, it predicts the spectral lines with remarkable accuracy, as we'll calculate next time. But it has real limits.",
+      "audioFile": "public/audio/phys-y12-m8-v10/bohr-success.wav"
+    },
+    {
+      "id": "limit-one-electron",
+      "text": "First, it only works for hydrogen, and for ions with just one electron. Try it on helium, with two electrons, and the predicted lines are wrong, because the model ignores the electrons pushing on each other.",
+      "audioFile": "public/audio/phys-y12-m8-v10/limit-one-electron.wav"
+    },
+    {
+      "id": "limit-details",
+      "text": "Second, even for hydrogen, it misses details. It can't explain why some lines are much brighter than others. And a high-resolution spectroscope shows that some lines are really two or more lines very close together, which split further in a magnetic field. Bohr's model predicts none of this.",
+      "audioFile": "public/audio/phys-y12-m8-v10/limit-details.wav"
+    },
+    {
+      "id": "limit-hybrid",
+      "text": "Third, and most deeply, it mixes two kinds of physics. It keeps classical orbits and Coulomb's force, but it switches off classical radiation, and it assumes the angular momentum rule, without explaining either. It works, but it doesn't say why.",
+      "audioFile": "public/audio/phys-y12-m8-v10/limit-hybrid.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the two models. Rutherford got the nucleus right, but his electrons collapse. Bohr's electrons stay put, but only because his rules say so. The energy levels survived into modern physics. The neat circular orbits did not.",
+      "audioFile": "public/audio/phys-y12-m8-v10/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Explain why, according to classical physics, Rutherford's model of the atom predicts that atoms should be unstable. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v10/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "An orbiting electron keeps changing direction, so it's accelerating. Classical physics says an accelerating charge radiates electromagnetic waves, so the electron loses energy and spirals into the nucleus in about ten to the minus eleven seconds. Real atoms are stable, so the model fails. The slip is saying its speed is constant, so it isn't accelerating. A change of direction is an acceleration.",
+      "audioFile": "public/audio/phys-y12-m8-v10/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Bohr's model explained the hydrogen line spectrum. Outline two limitations of Bohr's model. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v10/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Any two of these. It only works for one-electron atoms, because it ignores repulsion between electrons. It can't explain line brightness or the fine splitting of lines. And it assumes its stationary orbits and its angular momentum rule, without a reason. The slip is a vague answer like it's just wrong. Name a specific thing it can't explain.",
+      "audioFile": "public/audio/phys-y12-m8-v10/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So Bohr's energy levels give hydrogen its lines. The four bright visible lines all end on level two. The red line is a drop from three to two, and the others start at four, five and six. If the levels are right, the gaps should predict those wavelengths closely. So how do hydrogen energy gaps predict Balmer wavelengths?",
+      "audioFile": "public/audio/phys-y12-m8-v10/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v10/key-notes.wav"
+    }
+  ]
+}

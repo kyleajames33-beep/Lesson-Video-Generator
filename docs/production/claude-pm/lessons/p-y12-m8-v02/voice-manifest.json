@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v02.md",
+  "sourceSha256": "3aa3c21feae0b4893970b9cd5216e4682f1e40f860d09e417c95fac5fc2a44e6",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we followed the hot early Universe from light to atoms. But a story isn't science until it makes predictions you can check. If space is expanding, how should light from a distant galaxy compare with light from a nearer one? Make your prediction. More stretched, more redshifted. So what evidence supports an expanding hot early Universe?",
+      "audioFile": "public/audio/phys-y12-m8-v02/hook.wav"
+    },
+    {
+      "id": "redshift",
+      "text": "Start with a galaxy's spectrum. Its dark lines form the same pattern as hydrogen in the lab, but every line has slid towards the red. We measure that with the redshift, z. It's the change in wavelength divided by the rest wavelength, the fractional stretch. You met this before as a Doppler shift, delta lambda over lambda equals v over c. So for small z, the galaxy's speed away from us is about c times z.",
+      "audioFile": "public/audio/phys-y12-m8-v02/redshift.wav"
+    },
+    {
+      "id": "hubble-graph",
+      "text": "In the nineteen twenties, astronomers measured these redshifts, and Edwin Hubble measured distances, using pulsing stars whose rhythm reveals how bright they really are. Compare that with how bright they look, and you get the distance. In nineteen twenty-nine, he plotted speed against distance. The points fell close to a straight line through the origin. Twice as far, twice as fast. That's Hubble's law, v equals H nought d. The gradient, H nought, is about seventy kilometres per second per megaparsec, where a megaparsec is about three point two six million light years.",
+      "audioFile": "public/audio/phys-y12-m8-v02/hubble-graph.wav"
+    },
+    {
+      "id": "expansion-meaning",
+      "text": "Why does a straight line mean space is expanding? Picture a grid of galaxies, and stretch all the spacing by the same factor. A galaxy one step away moves one step further. Two steps away, it moves two steps. So farther galaxies recede faster, in proportion, and that's true seen from every galaxy on the grid. No galaxy is the centre. Run the expansion backwards, and the Universe was once far denser. One over H nought even gives a rough age, about fourteen billion years.",
+      "audioFile": "public/audio/phys-y12-m8-v02/expansion-meaning.wav"
+    },
+    {
+      "id": "worked-distance",
+      "text": "Let's use it. A galaxy's hydrogen alpha line, rest wavelength six hundred and fifty-six nanometres, is observed at seven hundred and fourteen. So z is fifty-eight over six hundred and fifty-six, zero point zero eight eight. The speed is c times z, three times ten to the five kilometres per second times that, about two point six five times ten to the four kilometres per second. Then d is v over H nought, divided by seventy, about three hundred and eighty megaparsecs.",
+      "audioFile": "public/audio/phys-y12-m8-v02/worked-distance.wav"
+    },
+    {
+      "id": "limits",
+      "text": "The simple law has limits. Nearby, a galaxy's own motion can swamp the expansion. Andromeda's light is blueshifted. It's coming towards us at about three hundred kilometres per second, pulled by gravity, while the expansion at its distance is only about fifty. And far away, v equals c z breaks down. Beyond a z of about zero point one, you need a fuller model of how the expansion has changed. Some galaxies have z above ten.",
+      "audioFile": "public/audio/phys-y12-m8-v02/limits.wav"
+    },
+    {
+      "id": "cmb-discovery",
+      "text": "The second prediction is about heat. If the early Universe was hot, the light released at recombination should still be here, stretched into microwaves. In nineteen sixty-five, two radio astronomers, Arno Penzias and Robert Wilson, testing a large horn antenna, found a faint microwave hiss, coming equally from every direction. It was that light, the cosmic microwave background.",
+      "audioFile": "public/audio/phys-y12-m8-v02/cmb-discovery.wav"
+    },
+    {
+      "id": "cmb-spectrum",
+      "text": "Its spectrum is a near-perfect black body curve, at two point seven two five kelvin. By Wien's law, that peaks at about one millimetre, in the microwaves. Light released at about three thousand kelvin peaked near one micrometre. Stretch it about eleven hundred times, and you get today's millimetre. Once our own motion through it is allowed for, it's the same in every direction, to about one part in a hundred thousand. A steady-state Universe, unchanging forever, has no way to make a glow like this.",
+      "audioFile": "public/audio/phys-y12-m8-v02/cmb-spectrum.wav"
+    },
+    {
+      "id": "helium",
+      "text": "The third prediction is a number, the one we counted last time. The early Universe should be about a quarter helium by mass. In the least processed gas astronomers can find, gas with the fewest heavy elements, helium is about twenty-four to twenty-five per cent. Could stars have made it instead? Over the whole age of the Universe, stars have added only a few per cent, and even gas that has barely formed any stars still has nearly a quarter helium.",
+      "audioFile": "public/audio/phys-y12-m8-v02/helium.wav"
+    },
+    {
+      "id": "time-dilation",
+      "text": "The fourth clue links to relativity. A wavelength is just the time between crests, times the speed of light. So if expansion stretches each wavelength by one plus z, it stretches every time interval in the signal by one plus z as well. Exploding stars called supernovae show exactly this. One at a z of one brightens and fades twice as slowly as a nearby one. That's cosmological time dilation, and it's been measured.",
+      "audioFile": "public/audio/phys-y12-m8-v02/time-dilation.wav"
+    },
+    {
+      "id": "together",
+      "text": "Each clue alone might have another explanation. Together, they point the same way. Expanding, because of the redshift and the slowed clocks. Hot, because of the black body glow. Dense enough to fuse, because of the helium. Four independent measurements, made with different instruments, and one model explains them all.",
+      "audioFile": "public/audio/phys-y12-m8-v02/together.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the four clues. Stretched light, leftover glow, a quarter helium, slow supernovae.",
+      "audioFile": "public/audio/phys-y12-m8-v02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. In a galaxy's spectrum, the calcium K line, with a rest wavelength of three hundred and ninety-three point four nanometres, is observed at four hundred and twenty-five point zero. Using a Hubble constant of seventy kilometres per second per megaparsec, estimate the galaxy's distance. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "z is thirty-one point six over three ninety-three point four, zero point zero eight zero. So v is c z, about two point four times ten to the four kilometres per second. And d is v over seventy, about three hundred and forty megaparsecs. The slip is putting v in metres per second, which gives a distance a thousand times too big.",
+      "audioFile": "public/audio/phys-y12-m8-v02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. The Andromeda galaxy is zero point seven seven megaparsecs away, and its light is blueshifted. It's approaching us at about three hundred kilometres per second. A student claims this shows the Universe isn't expanding. Evaluate the claim. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "At that distance, expansion would give only seventy times zero point seven seven, about fifty-four kilometres per second. Andromeda's own motion, pulled by gravity, is much bigger. Hubble's law describes the average trend for distant galaxies, and those are all redshifted in proportion to distance. So the claim is wrong. The slip is reading one nearby blueshift as the Universe contracting.",
+      "audioFile": "public/audio/phys-y12-m8-v02/feedback-2.wav"
+    },
+    {
+      "id": "handoff-v03",
+      "text": "Every one of these clues was read from light, and most of them from spectra. Now turn the same tool on the stars themselves. A star's spectrum is a black body curve with dark lines cut into it. So how can spectra classify stars and reveal their temperature?",
+      "audioFile": "public/audio/phys-y12-m8-v02/handoff-v03.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v02/key-notes.wav"
+    }
+  ]
+}

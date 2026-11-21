@@ -1,0 +1,185 @@
+{
+  "id": "phys-y12-m7-v11",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "49dcc984a42e2ec9fc40722efd79c989b7ad9b81a8fe55dc16b73ce8f0f90cbb",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (ten numbers)",
+      "voiceover": {
+        "text": "Last time, we ended with an energy statement. A photon's energy pays the work function, and whatever is left becomes kinetic energy. In 1916, Robert Millikan set out to test that statement carefully, and he expected it to fail. Here's data like his, for a sodium surface. Five frequencies of light, and a voltage measured for each. Hidden in these ten numbers are Planck's constant and sodium's work function. So how do photoelectric graphs reveal Planck's constant and the work function?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "energy-conservation",
+      "title": "energy conservation",
+      "voiceover": {
+        "text": "Start with energy conservation for one photon and one electron. The photon brings h f. The electron uses at least phi to get out of the metal, and keeps the rest as kinetic energy. Electrons right at the surface use the least, so they come out fastest, with the maximum kinetic energy, K max. Energy in equals energy out, so h f equals phi plus K max, or K max equals h f minus phi. That's the photoelectric equation on your data sheet."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "stopping-voltage",
+      "title": "measuring K max: the stopping voltage",
+      "voiceover": {
+        "text": "But how do you measure the fastest electrons' energy? You push back on them. Connect a variable supply so the anode is negative, and the electrons have to climb against the electric force to reach it. Turn the voltage up, and fewer electrons make it, so the photocurrent falls. At one voltage, even the fastest electrons just fail, and the current drops to zero. That's the stopping voltage. The work done stopping an electron is its charge times the voltage, so e times V stop equals K max."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "iv-graph",
+      "title": "brightness and frequency on a current-voltage graph",
+      "voiceover": {
+        "text": "This gives a neat graph of photocurrent against voltage. Make the light brighter at the same frequency, and the current is bigger, because more photons free more electrons, but the stopping voltage doesn't change. Raise the frequency, and the stopping voltage gets bigger, because each photon gives more energy. Brightness sets the height of the graph. Frequency sets where the current hits zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "straight-line",
+      "title": "a straight line",
+      "voiceover": {
+        "text": "Now plot K max against frequency. K max equals h f minus phi has the same form as y equals m x plus c. So the graph is a straight line, and its gradient is h, Planck's constant. Where the line crosses the frequency axis, K max is zero, so that's the threshold frequency, f zero. Extend the line back to the vertical axis, and it meets it at minus phi. The line only exists above f zero. Below that there are no electrons, so the extension is drawn dashed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-metals",
+      "title": "a second metal",
+      "voiceover": {
+        "text": "Test a second metal with a bigger work function. Its line starts at a higher threshold frequency, and sits lower, but it's exactly parallel. Every metal gives the same gradient, because h is a constant of nature, not a property of the metal. The work function belongs to the metal, so the intercepts move."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-gradient",
+      "title": "worked example: the gradient",
+      "voiceover": {
+        "text": "Let's use the sodium data. Millikan plotted the stopping voltage, not K max. Divide the equation by e, and V stop equals h over e times f, minus phi over e. So the gradient of this graph is h over e. Using the first and last points, the rise is one point eight five minus zero point two zero, which is one point six five volts. The run is four point zero times ten to the fourteen hertz. So the gradient is four point one three times ten to the minus fifteen volt seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-planck",
+      "title": "worked example: Planck's constant",
+      "voiceover": {
+        "text": "Planck's constant is the gradient times e. Four point one three times ten to the minus fifteen, times one point six zero two times ten to the minus nineteen, is six point six times ten to the minus thirty four joule seconds. The data sheet value is six point six two six. A constant first found from glowing hot objects turns up again in electrons leaving a metal. That agreement helped convince physicists that photons were real."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-intercepts",
+      "title": "worked example: threshold and work function",
+      "voiceover": {
+        "text": "Now the intercepts. Extend the line down to zero stopping voltage. It crosses the frequency axis at about five point five times ten to the fourteen hertz, sodium's threshold frequency. Extend it to the vertical axis, and it meets it at about minus two point two eight volts. So phi over e is two point two eight volts, and the work function is two point two eight electron volts, which is three point six four times ten to the minus nineteen joules. That matches sodium's accepted value."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "graph-traps",
+      "title": "three graph traps",
+      "voiceover": {
+        "text": "Three traps. Plot against frequency, not wavelength, because only frequency gives a straight line. The work function is the size of the vertical intercept, so drop the minus sign. And brighter light never moves the line. It only changes the current."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. The slope is h, for every metal. The intercepts belong to the metal."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. The graph shows the maximum kinetic energy of photoelectrons against the frequency of the light, for one metal. The line passes through one point zero zero times ten to the fifteen hertz, at two point zero times ten to the minus nineteen joules, and meets the frequency axis at seven point zero times ten to the fourteen hertz. Use the graph to find a value for Planck's constant, and the work function of the metal, in joules and electron volts. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The gradient is two point zero times ten to the minus nineteen, over three point zero times ten to the fourteen, which is six point seven times ten to the minus thirty four joule seconds, a value for h. At the threshold, phi equals h f zero, which is four point seven times ten to the minus nineteen joules, or two point nine electron volts. The slip is reading a point's K max as the work function. It comes from the intercept."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. The same light is made twice as intense, with no change in frequency. State the effect on the stopping voltage, on the largest photocurrent, and on the gradient of the stopping voltage against frequency graph. Explain each. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The stopping voltage is unchanged, because each photon still has the same energy, so K max is the same. The largest photocurrent doubles, because twice as many photons free twice as many electrons. The gradient is unchanged, because it's h over e, a constant. The slip is saying the stopping voltage doubles."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So light arrives in photons of energy h f, and Millikan's graphs measured h. Einstein's photon paper came in 1905, and in the same year he asked a very different question about light. If a spacecraft races after a pulse of light, does the light seem to slow down? So why must observers agree on light speed?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

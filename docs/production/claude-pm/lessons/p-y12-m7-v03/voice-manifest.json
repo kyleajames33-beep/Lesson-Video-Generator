@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v03.md",
+  "sourceSha256": "d65d6b9bd1afc3f558584f8afd62c40491cc0ccfcddf81bd775e60a1dceedc27",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here are three light sources, each viewed through a spectroscope. A hot filament gives an unbroken rainbow. Hydrogen gas in a glowing tube gives four bright, thin coloured lines, on black. And sunlight gives a rainbow crossed by dark lines. Make your prediction. Which of these three patterns can't tell you what the source is made of? It's the filament. The unbroken rainbow looks much the same whatever the filament is made of. The lines are where the information is.",
+      "audioFile": "public/audio/phys-y12-m7-v03/hook.wav"
+    },
+    {
+      "id": "spectroscope",
+      "text": "A spectroscope spreads light out by wavelength. Inside, a grating or a prism sends each wavelength in a slightly different direction, and how a grating does that is a later video. Visible light is a tiny slice of the electromagnetic spectrum, from about four hundred nanometres for violet to about seven hundred for red. So a spectrum is a map. It shows how much light the source gives out at each wavelength.",
+      "audioFile": "public/audio/phys-y12-m7-v03/spectroscope.wav"
+    },
+    {
+      "id": "continuous",
+      "text": "Start with the filament. It's a coil of tungsten wire, heated by the current to about twenty-nine hundred kelvin. In a solid, the atoms are packed tightly and interact strongly, so their charges are shaken in every possible way. Remember, accelerating charges radiate. Shake them in every way, and you get every wavelength, with no gaps. That's a continuous spectrum. Heat the filament more, and it gets brighter, and its light shifts towards the blue end. But its smooth spread depends mainly on temperature, not on the metal, which is why it can't identify an element.",
+      "audioFile": "public/audio/phys-y12-m7-v03/continuous.wav"
+    },
+    {
+      "id": "emission",
+      "text": "Now the discharge tube. It holds hydrogen gas at low pressure, with a high voltage across it. Electrons crash into the atoms and give them energy. Here's the key idea. An electron in an atom can only have certain energies, called energy levels. When it drops from a higher level to a lower one, the atom gives out light of one particular wavelength. A bigger drop gives a shorter wavelength. Hydrogen's drops down to the second level give its four bright visible lines, at six hundred and fifty-six, four hundred and eighty-six, four hundred and thirty-four, and four hundred and ten nanometres. In a thin gas the atoms are far apart, so each behaves on its own, and the lines stay sharp.",
+      "audioFile": "public/audio/phys-y12-m7-v03/emission.wav"
+    },
+    {
+      "id": "fingerprints",
+      "text": "Every element has its own set of energy levels, so it has its own set of lines. That pattern is a fingerprint. Sodium gives two yellow lines, very close together, at five hundred and eighty-nine nanometres. Neon gives a crowd of red and orange lines. To identify a gas, match its lines to reference spectra, and every observed line has to match, not just one. Here's a surprise. In 1868, sunlight showed a yellow line that matched no element known on Earth. It was named helium, after the Greek word for the Sun, and it wasn't found on Earth for another twenty-seven years.",
+      "audioFile": "public/audio/phys-y12-m7-v03/fingerprints.wav"
+    },
+    {
+      "id": "absorption",
+      "text": "Now put cool sodium vapour in front of the hot filament. Cool atoms sit in their lowest energy level. They absorb exactly the wavelengths they would give out, because the same energy gaps are involved, this time with electrons jumping up. So the rainbow comes through with two dark lines, at exactly the same places as sodium's bright yellow lines. The absorbed light isn't destroyed. It's given out again, but in all directions, so very little carries on towards you, and the line looks dark. The Sun works the same way. Its hot, dense layers give a continuous spectrum, and cooler gas above them absorbs, leaving the dark lines first mapped by Joseph von Fraunhofer.",
+      "audioFile": "public/audio/phys-y12-m7-v03/absorption.wav"
+    },
+    {
+      "id": "reflected-sunlight",
+      "text": "What about sunlight bouncing off the Moon, a cloud or a sheet of white paper? You see the same dark lines, in the same places. Reflection doesn't make a new spectrum. The Moon isn't a glowing gas. It just sends sunlight back, so moonlight carries the Sun's pattern. That's also the safe way to look at sunlight. Never point a spectroscope at the Sun. Aim it at white paper or a cloud instead.",
+      "audioFile": "public/audio/phys-y12-m7-v03/reflected-sunlight.wav"
+    },
+    {
+      "id": "three-rules",
+      "text": "In the 1850s, Gustav Kirchhoff summed this up in three rules. Here's a way to remember them. Hot and dense, all colours. Hot and thin, bright lines. Cool and thin, in front of something hot, dark lines, in the same places.",
+      "audioFile": "public/audio/phys-y12-m7-v03/three-rules.wav"
+    },
+    {
+      "id": "investigation",
+      "text": "In the investigation, you view each source through a spectroscope with a wavelength scale. A filament lamp, a few discharge tubes, and sunlight reflected from white paper. For each one, record whether it's continuous, bright lines or dark lines, and read off where the lines sit. Then match them to reference spectra. The discharge tubes run at high voltage and get hot, so switch the supply off before a tube is changed.",
+      "audioFile": "public/audio/phys-y12-m7-v03/investigation.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A gas in a discharge tube gives bright lines at four hundred and forty-seven, five hundred and two, five hundred and eighty-eight, six hundred and sixty-eight and seven hundred and seven nanometres. Use the reference spectra to identify the gas, and explain your reasoning. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v03/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "It's helium. All five lines match helium's reference lines, and each element's set of energy levels gives a unique set of lines. The trap is the line at five hundred and eighty-eight. Neon has a line there too, but the other four observed lines have no neon partner, so neon doesn't fit. One matching line isn't enough. Every observed line must match.",
+      "audioFile": "public/audio/phys-y12-m7-v03/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Light from the full Moon is viewed through a spectroscope. It shows a continuous spectrum crossed by dark lines. Explain the dark lines, and explain why this is not the Moon's own emission spectrum. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v03/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The Sun's hot, dense layers give a continuous spectrum. Cooler gas in the Sun's outer layers absorbs particular wavelengths, matching jumps between its atoms' energy levels, and re-emits them in all directions, leaving dark lines. The Moon just reflects that sunlight. It's not a hot thin gas, so it adds no bright lines of its own. The slip is saying the Moon's atmosphere makes the dark lines. The lines come from the Sun.",
+      "audioFile": "public/audio/phys-y12-m7-v03/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So different sources give different patterns because of what they are and their state. Hot and dense gives every wavelength. A hot thin gas gives its own bright lines. Cooler gas in front takes those same lines away. Astronomers read star spectra exactly this way, to find what stars are made of. But look at these two stars. Both show hydrogen's lines. In one, every line has slid along a little. In the other, the lines are broader. What can stellar spectra tell us beyond chemical identity?",
+      "audioFile": "public/audio/phys-y12-m7-v03/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v03/key-notes.wav"
+    }
+  ]
+}

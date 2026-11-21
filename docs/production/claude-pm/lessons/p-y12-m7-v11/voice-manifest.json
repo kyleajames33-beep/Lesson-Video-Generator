@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m7-v11.md",
+  "sourceSha256": "49dcc984a42e2ec9fc40722efd79c989b7ad9b81a8fe55dc16b73ce8f0f90cbb",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, we ended with an energy statement. A photon's energy pays the work function, and whatever is left becomes kinetic energy. In 1916, Robert Millikan set out to test that statement carefully, and he expected it to fail. Here's data like his, for a sodium surface. Five frequencies of light, and a voltage measured for each. Hidden in these ten numbers are Planck's constant and sodium's work function. So how do photoelectric graphs reveal Planck's constant and the work function?",
+      "audioFile": "public/audio/phys-y12-m7-v11/hook.wav"
+    },
+    {
+      "id": "energy-conservation",
+      "text": "Start with energy conservation for one photon and one electron. The photon brings h f. The electron uses at least phi to get out of the metal, and keeps the rest as kinetic energy. Electrons right at the surface use the least, so they come out fastest, with the maximum kinetic energy, K max. Energy in equals energy out, so h f equals phi plus K max, or K max equals h f minus phi. That's the photoelectric equation on your data sheet.",
+      "audioFile": "public/audio/phys-y12-m7-v11/energy-conservation.wav"
+    },
+    {
+      "id": "stopping-voltage",
+      "text": "But how do you measure the fastest electrons' energy? You push back on them. Connect a variable supply so the anode is negative, and the electrons have to climb against the electric force to reach it. Turn the voltage up, and fewer electrons make it, so the photocurrent falls. At one voltage, even the fastest electrons just fail, and the current drops to zero. That's the stopping voltage. The work done stopping an electron is its charge times the voltage, so e times V stop equals K max.",
+      "audioFile": "public/audio/phys-y12-m7-v11/stopping-voltage.wav"
+    },
+    {
+      "id": "iv-graph",
+      "text": "This gives a neat graph of photocurrent against voltage. Make the light brighter at the same frequency, and the current is bigger, because more photons free more electrons, but the stopping voltage doesn't change. Raise the frequency, and the stopping voltage gets bigger, because each photon gives more energy. Brightness sets the height of the graph. Frequency sets where the current hits zero.",
+      "audioFile": "public/audio/phys-y12-m7-v11/iv-graph.wav"
+    },
+    {
+      "id": "straight-line",
+      "text": "Now plot K max against frequency. K max equals h f minus phi has the same form as y equals m x plus c. So the graph is a straight line, and its gradient is h, Planck's constant. Where the line crosses the frequency axis, K max is zero, so that's the threshold frequency, f zero. Extend the line back to the vertical axis, and it meets it at minus phi. The line only exists above f zero. Below that there are no electrons, so the extension is drawn dashed.",
+      "audioFile": "public/audio/phys-y12-m7-v11/straight-line.wav"
+    },
+    {
+      "id": "two-metals",
+      "text": "Test a second metal with a bigger work function. Its line starts at a higher threshold frequency, and sits lower, but it's exactly parallel. Every metal gives the same gradient, because h is a constant of nature, not a property of the metal. The work function belongs to the metal, so the intercepts move.",
+      "audioFile": "public/audio/phys-y12-m7-v11/two-metals.wav"
+    },
+    {
+      "id": "worked-gradient",
+      "text": "Let's use the sodium data. Millikan plotted the stopping voltage, not K max. Divide the equation by e, and V stop equals h over e times f, minus phi over e. So the gradient of this graph is h over e. Using the first and last points, the rise is one point eight five minus zero point two zero, which is one point six five volts. The run is four point zero times ten to the fourteen hertz. So the gradient is four point one three times ten to the minus fifteen volt seconds.",
+      "audioFile": "public/audio/phys-y12-m7-v11/worked-gradient.wav"
+    },
+    {
+      "id": "worked-planck",
+      "text": "Planck's constant is the gradient times e. Four point one three times ten to the minus fifteen, times one point six zero two times ten to the minus nineteen, is six point six times ten to the minus thirty four joule seconds. The data sheet value is six point six two six. A constant first found from glowing hot objects turns up again in electrons leaving a metal. That agreement helped convince physicists that photons were real.",
+      "audioFile": "public/audio/phys-y12-m7-v11/worked-planck.wav"
+    },
+    {
+      "id": "worked-intercepts",
+      "text": "Now the intercepts. Extend the line down to zero stopping voltage. It crosses the frequency axis at about five point five times ten to the fourteen hertz, sodium's threshold frequency. Extend it to the vertical axis, and it meets it at about minus two point two eight volts. So phi over e is two point two eight volts, and the work function is two point two eight electron volts, which is three point six four times ten to the minus nineteen joules. That matches sodium's accepted value.",
+      "audioFile": "public/audio/phys-y12-m7-v11/worked-intercepts.wav"
+    },
+    {
+      "id": "graph-traps",
+      "text": "Three traps. Plot against frequency, not wavelength, because only frequency gives a straight line. The work function is the size of the vertical intercept, so drop the minus sign. And brighter light never moves the line. It only changes the current.",
+      "audioFile": "public/audio/phys-y12-m7-v11/graph-traps.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it. The slope is h, for every metal. The intercepts belong to the metal.",
+      "audioFile": "public/audio/phys-y12-m7-v11/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. The graph shows the maximum kinetic energy of photoelectrons against the frequency of the light, for one metal. The line passes through one point zero zero times ten to the fifteen hertz, at two point zero times ten to the minus nineteen joules, and meets the frequency axis at seven point zero times ten to the fourteen hertz. Use the graph to find a value for Planck's constant, and the work function of the metal, in joules and electron volts. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The gradient is two point zero times ten to the minus nineteen, over three point zero times ten to the fourteen, which is six point seven times ten to the minus thirty four joule seconds, a value for h. At the threshold, phi equals h f zero, which is four point seven times ten to the minus nineteen joules, or two point nine electron volts. The slip is reading a point's K max as the work function. It comes from the intercept.",
+      "audioFile": "public/audio/phys-y12-m7-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. The same light is made twice as intense, with no change in frequency. State the effect on the stopping voltage, on the largest photocurrent, and on the gradient of the stopping voltage against frequency graph. Explain each. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m7-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The stopping voltage is unchanged, because each photon still has the same energy, so K max is the same. The largest photocurrent doubles, because twice as many photons free twice as many electrons. The gradient is unchanged, because it's h over e, a constant. The slip is saying the stopping voltage doubles.",
+      "audioFile": "public/audio/phys-y12-m7-v11/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So light arrives in photons of energy h f, and Millikan's graphs measured h. Einstein's photon paper came in 1905, and in the same year he asked a very different question about light. If a spacecraft races after a pulse of light, does the light seem to slow down? So why must observers agree on light speed?",
+      "audioFile": "public/audio/phys-y12-m7-v11/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m7-v11/key-notes.wav"
+    }
+  ]
+}

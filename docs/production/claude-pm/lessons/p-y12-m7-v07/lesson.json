@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m7-v07",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "9a79d49099cb01a878feb0b3101ba9b92fdb806876a39e98727094898c4ab1ea",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (sharper, not shifted)",
+      "voiceover": {
+        "text": "Two slits give broad, soft bands, and their centres are hard to pin down. A diffraction grating is a slide ruled with thousands of equally spaced lines, each one acting as a slit. Make your prediction. With the same spacing between slits, but thousands of them, do the bright lines move to new places? No. They stay exactly where they were, but they become thin, sharp and bright, with darkness in between."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "sharp-lines",
+      "title": "why many slits make sharp lines",
+      "voiceover": {
+        "text": "Why so sharp? At the exact angle of a bright line, light from every slit arrives in step, so it all adds up. Now turn just a tiny bit away from that angle. With only two slits, the waves are still almost in step, so it's still fairly bright. That's why two-slit bands are broad. But picture a grating with a thousand slits. Turn just far enough that slit one and slit five hundred and one are half a wavelength apart. They cancel. So do slits two and five hundred and two, and every other pair like them. The whole lot cancels, so it's dark almost straight away. More slits, sharper lines."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "grating-equation",
+      "title": "the same equation, now at large angles",
+      "voiceover": {
+        "text": "The bright lines follow exactly the same rule as two slits. Neighbouring slits must differ in path by a whole number of wavelengths. So d sine theta equals m lambda, where d is the spacing between neighbouring lines, theta is the angle from the straight-through direction, and m is the order. The difference is the angles. A grating's lines are so close together that the bright lines come out at large angles, often tens of degrees. So you work with the angle itself, not the small-angle shortcut from two slits."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "line-density",
+      "title": "from lines per millimetre to d",
+      "voiceover": {
+        "text": "Gratings are labelled with a line density, like four hundred lines per millimetre. To get d, turn that around. Four hundred lines per millimetre is four hundred thousand lines per metre, so the spacing is one over four hundred thousand, which is two point five times ten to the minus six metres. Here's the trap. That d is the spacing between lines on the grating. It's not the distance to the screen."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measure-wavelength",
+      "title": "measuring a wavelength",
+      "voiceover": {
+        "text": "Here's a measurement. Red laser light passes through the four hundred line per millimetre grating, onto a screen one metre away. The first-order spot lands twenty-six point eight centimetres from the centre. First, find the angle. Tan theta is nought point two six eight over one, so theta is fifteen point nought degrees. At an angle this big, sine and tan are noticeably different, so don't swap one for the other. Now use the grating equation with m equal to one. Lambda equals d sine theta, two point five times ten to the minus six times sine fifteen degrees, which is about six hundred and forty-seven nanometres. Red, as expected."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "orders",
+      "title": "how many orders?",
+      "voiceover": {
+        "text": "Where's the second-order spot? Sine theta equals two lambda over d, nought point five one eight, so theta is thirty-one point two degrees. Is there a limit? Yes, because sine theta can't be bigger than one. So m can't be bigger than d over lambda, which here is three point eight six. The highest order is three, so you see seven spots in all, the centre and three on each side. On a one metre screen, the third-order spots are over a metre out, so they'd usually miss the screen."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "white-light",
+      "title": "white light",
+      "voiceover": {
+        "text": "Shine white light through the grating instead. The centre stays white, because every colour has m equal to zero there. But in each order, longer wavelengths come out at bigger angles, so the light spreads into a spectrum, violet nearest the centre and red furthest out. Further out, the spectra are wider, and the second and third orders overlap."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "better-ruler",
+      "title": "why a grating is the better ruler",
+      "voiceover": {
+        "text": "So why use a grating to measure wavelength, rather than two slits? Its lines are sharp, so you can find their centres precisely. And they're at large angles, so a small error in reading the angle is only a small fraction of it. That's why spectroscopes, like the ones that spread starlight, use gratings."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "investigation",
+      "title": "doing the investigation",
+      "voiceover": {
+        "text": "In the investigation, measure the angle to the first-order spot on both sides of the centre, and halve the total angle. That greatly reduces the error from a small tilt of the grating. Repeat the measurement, and if the spots fit on the screen, use the second order too, since bigger angles give smaller percentage errors. Remember the line density printed on the grating has its own uncertainty, which repeating can't reveal. And never look along the beam."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember it. Lines per metre? Flip it for d. Many lines, tiny d, big angles."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Green laser light, wavelength five hundred and thirty-two nanometres, passes through a grating with three hundred lines per millimetre. Calculate the angle of the second-order maximum, and the highest order that can be observed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Three hundred lines per millimetre is three times ten to the five per metre, so d is three point three three times ten to the minus six metres. Sine theta equals two lambda over d, nought point three one nine, so theta is about eighteen point six degrees. For the highest order, d over lambda is six point two seven, so the highest order is six. The classic slip is using three hundred times ten to the minus three as d, without flipping it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Light passes through a grating with five hundred lines per millimetre, onto a screen nought point eight zero zero metres away. The two first-order spots are each nought point two eight zero metres from the centre. Calculate the wavelength. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "First the angle. Tan theta is nought point two eight zero over nought point eight zero zero, so theta is nineteen point three degrees. The spacing is one over five times ten to the five, two times ten to the minus six metres. Lambda equals d sine theta, about six hundred and sixty-one nanometres. The slip is putting the screen distance in for d. The screen distance only finds the angle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a grating measures wavelength because thousands of slits turn the bright bands into sharp lines, at large angles you can measure precisely. Then d sine theta equals m lambda gives the wavelength. Diffraction and interference prove that light is a wave. But sound diffracts and interferes too, and sound is a longitudinal wave. So which way does light wiggle? Put a polarising filter in the beam, and turn it. The brightness changes. Why does rotating a polariser change transmitted intensity?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v13.md",
+  "sourceSha256": "f45fe79e937eed6047cd454095508268098bf30f2028224d25f3db54ba85e970",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Each electron lands as a single spot, yet the spots build up a wave pattern. So where is an electron inside an atom, and what path does it follow? Bohr drew a neat circle, at a definite radius. That picture had two big problems. So why do orbital probabilities replace literal electron paths?",
+      "audioFile": "public/audio/phys-y12-m8-v13/hook.wav"
+    },
+    {
+      "id": "bohr-problems",
+      "text": "First, Bohr's model only worked with a single electron. Add a second electron, as in helium, and its predictions go wrong. Second, an electron behaves like a wave, and a wave isn't at one point. A wave spread round a circle can't also be a dot moving along a sharp line. Bohr's model mixed a particle's path with a wave's rules.",
+      "audioFile": "public/audio/phys-y12-m8-v13/bohr-problems.wav"
+    },
+    {
+      "id": "wave-equation",
+      "text": "In nineteen twenty six, Erwin Schrödinger, inspired by de Broglie's matter waves, took the wave idea all the way. He stopped drawing paths, and wrote an equation for how an electron's wave behaves around a nucleus, in three dimensions. You don't need the equation itself, just what it does. Like a guitar string, the wave can only settle into certain patterns, and each pattern has its own energy.",
+      "audioFile": "public/audio/phys-y12-m8-v13/wave-equation.wav"
+    },
+    {
+      "id": "allowed-energies",
+      "text": "A guitar string is fixed at both ends, so only standing waves that fit can last, and that's why it plays particular notes. In an atom, the electron's wave is held in by the nucleus's pull. Only certain three dimensional standing waves fit, so only certain energies are allowed. For hydrogen, they come out as minus thirteen point six over n squared, the same as Bohr's values. But now nobody had to assume them.",
+      "audioFile": "public/audio/phys-y12-m8-v13/allowed-energies.wav"
+    },
+    {
+      "id": "born-probability",
+      "text": "But what does the wave actually tell us? Max Born gave the answer that stuck. Where the wave is large, you're likely to find the electron. Where it's small, you rarely will. More exactly, the square of the wave's size at each point gives the probability per unit volume of finding the electron there. So where the wave is twice as big, the electron is four times as likely to be found.",
+      "audioFile": "public/audio/phys-y12-m8-v13/born-probability.wav"
+    },
+    {
+      "id": "orbital-from-dots",
+      "text": "Picture measuring where hydrogen's electron is, in many identical atoms. Each measurement finds it at one point. Plot thousands of points, and they make a cloud, densest near the nucleus and fading outwards. That cloud is an orbital. It isn't a blurry photo of a moving electron. It's a map of where the electron is likely to be found.",
+      "audioFile": "public/audio/phys-y12-m8-v13/orbital-from-dots.wav"
+    },
+    {
+      "id": "no-path",
+      "text": "So where does the electron go between measurements? The model doesn't give a path at all. There's no circle, and no speed along a track, just probabilities. And that's not because our instruments are too clumsy to follow it. In this model, there's simply no sharp path to follow. An orbital is a region around the nucleus where the electron is likely to be found, not a road it travels along.",
+      "audioFile": "public/audio/phys-y12-m8-v13/no-path.wav"
+    },
+    {
+      "id": "orbital-shapes",
+      "text": "Higher energy states have their own shapes. The lowest, called one s, is a sphere. The next level has a larger sphere, two s, and three dumbbell shaped orbitals, the two p orbitals, pointing along three directions. These shapes come straight out of Schrödinger's equation, and they help explain how atoms bond in chemistry.",
+      "audioFile": "public/audio/phys-y12-m8-v13/orbital-shapes.wav"
+    },
+    {
+      "id": "orbit-vs-orbital",
+      "text": "Let's line up the two pictures. A Bohr orbit is a flat circle at one exact radius, with the electron at a definite place at every moment. An orbital is three dimensional, with no exact radius, and gives only the chance of finding the electron at each point. In Bohr's model, quantised energy was assumed. In Schrödinger's model, it comes out of the wave equation. The energy levels are the same, so everything you learned about hydrogen's spectrum still holds.",
+      "audioFile": "public/audio/phys-y12-m8-v13/orbit-vs-orbital.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to keep them apart. An orbit is where the electron goes. An orbital is where it's likely to be. The extra a l is for all the places it might be.",
+      "audioFile": "public/audio/phys-y12-m8-v13/memory-aid.wav"
+    },
+    {
+      "id": "contribution-strengths",
+      "text": "So how big was Schrödinger's contribution? It's the basis of the current model of the atom. Quantised energies came from one equation, instead of being assumed. It also predicts things Bohr's model couldn't, like why some spectral lines are much brighter than others. And the same method works for atoms with many electrons, which explains the layout of the periodic table, and chemical bonding.",
+      "audioFile": "public/audio/phys-y12-m8-v13/contribution-strengths.wav"
+    },
+    {
+      "id": "contribution-limits",
+      "text": "It came at a price. We lost any picture of the electron moving along a path. The equation can only be solved exactly with one electron, so bigger atoms need approximations. And what the wave really is, behind the probabilities, is still debated. Overall, it was a new foundation, not a small fix to Bohr's model.",
+      "audioFile": "public/audio/phys-y12-m8-v13/contribution-limits.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Distinguish between an electron orbit in Bohr's model and an orbital in Schrödinger's model. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "A Bohr orbit is a definite circular path, at a fixed radius, with the electron at a known place at each moment. An orbital is a three dimensional region, giving the probability of finding the electron at each point, with no path at all. The slip is calling an orbital a fuzzy path the electron travels along.",
+      "audioFile": "public/audio/phys-y12-m8-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Assess the contribution of Schrödinger to the current model of the atom. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Bohr's model assumed quantised orbits, and only worked with one electron. Schrödinger treated the electron as a three dimensional wave. Allowed energies came out of his equation, and it works for all atoms, giving orbitals as regions of probability. Limits are that we lose any picture of the motion, and bigger atoms need approximations. So it's a foundational contribution. The slip is saying Schrödinger found the electron's exact path.",
+      "audioFile": "public/audio/phys-y12-m8-v13/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the current model describes electrons as clouds of probability, not as little planets on paths. But look at the very centre of the cloud. The nucleus is about a hundred thousand times smaller than the atom, packed with protons and neutrons. And some nuclei don't stay the same. They throw out particles, or energy, and change. So what changes in a nucleus during alpha, beta and gamma decay?",
+      "audioFile": "public/audio/phys-y12-m8-v13/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v13/key-notes.wav"
+    }
+  ]
+}
