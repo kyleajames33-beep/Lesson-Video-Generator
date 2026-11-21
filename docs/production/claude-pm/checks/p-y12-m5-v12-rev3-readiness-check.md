@@ -16,6 +16,6 @@ Mechanical: 5,878 characters as the sum of 16 scene strings, matching the headli
 
 1. **Optional.** "Visual upgrade (Revision 3)", bullet "Simulation engines": "In scene 9 the car is a `custom` field whose inward acceleration is capped at μ_s g". "Inward" is ambiguous. If a builder points the capped acceleration at the roundabout's centre, a constant-size central pull gives a bounded rosette: the car swings out and then curves back towards the centre if the run continues, which would contradict "it drifts towards the outside of the roundabout". If the capped friction acts at right angles to the car's velocity, the car follows a circle of radius v² ÷ (μ_s g), wider than the bend, which is the narrated picture. Proposed fix: "an acceleration of size μ_s g at right angles to the car's velocity, towards the inside of the bend (friction at its maximum), so above v_max the path is a circle of radius v² ÷ (μ_s g), wider than the ring; the clip ends as the car reaches the outer edge."
 
-Result: 0 blockers, 0 should fix, 1 optional.
-
 This is a source check at recording stage only. It supplies no motion-at-playback-speed review, exact voiced preview, caption fit, human listening or release pass.
+
+Result: 0 blockers, 0 should fix, 1 optional.

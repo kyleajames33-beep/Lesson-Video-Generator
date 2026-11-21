@@ -2,7 +2,7 @@
 
 Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 5,595 characters, 15 scenes, about 511 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
+Narration 5,594 characters, 15 scenes, about 511 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
 
 Scope: ninth video of Year 12 Physics Module 6 (Electromagnetism, Physics Stage 6, 2017 syllabus), first video of the inquiry question "How are electric and magnetic fields related?". Templates as `phys-y12-m6-v07.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only, through the brief 168 text extract `work/brief168/module6-lesson12.sa.txt`, hash checked against the live file): orient and predict (loop prediction, warm-up, intentions, vocabulary, boundary), define and represent flux (normal, Φ = BA cos θ, Figure 1, worked example, MC), change flux (three ways, key insight, misconception, true/false, optional preview), convert angle conventions (plane angle α, MC), link and graph flux (signed flux, linkage, Figure 2, MC), apply and consolidate (Activities 1 and 2, synthesis, MC, "Describe 5 marks", "Analyse 5 marks"), practice (Q1, Q2 and model answers), review and revisit: `C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson12.sa.html`, SHA256 `623e8c2063b841b9eb270be6360877b3a6a14887bb4c6520cedb4059818a4012` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m6-v09`, sections `define-and-represent-flux`, `change-flux`, `convert-angle-conventions`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Define flux BA cos theta with theta to area normal; distinguish area, field and orientation. Stop before induced emf." Next: "phys-y12-m6-v10: What changes create an induced emf?"
 
@@ -335,3 +335,5 @@ Counts: 5,595 characters, unchanged; about 496 s (it was about 511 s; the notes 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root label edit (21 Nov 2026, Claude recording-readiness check): records root's earlier 21 Nov course-label edit (commit 0d345c3a, "you'll also see it written as ..." in place of a syllabus reference) and corrects the headline count. No module numbers in narration or on-screen chips, so one take serves the 2017 and 2025 courses. Narration now 5,594 characters (headline was 5,595; scene sum before this edit 5,594); bold cues keep their order.

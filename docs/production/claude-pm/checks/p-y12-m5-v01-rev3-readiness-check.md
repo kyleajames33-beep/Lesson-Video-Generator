@@ -19,6 +19,6 @@ Mechanical: 6,314 characters as the sum of 17 scene strings, matching the headli
 
 Findings: none.
 
-Result: 0 blockers, 0 should fix, 0 optional.
-
 This is a source check at recording stage only. It supplies no motion-at-playback-speed review, exact voiced preview, caption fit, human listening or release pass.
+
+Result: 0 blockers, 0 should fix, 0 optional.
