@@ -79,3 +79,7 @@ Before you report a lesson as A, sweep it densely. Render one still every 3 s (`
 - a cue keyed to the wrong occurrence of a repeated phrase (v09 and v12 each had one).
 
 Fix what you find before handing in. Report the sweep in your notes.
+
+## No course labels on screen (root, 21 November 2026)
+
+One take now serves both the 2017 and 2025 syllabuses, so the picture must too. Never draw a module number ("Module 7", "later in Module 6"), a syllabus name or a syllabus tag ("Physics Stage 6 (2017)") on screen, even when an older design asks for one: drop the label and keep the rest of the chip. "Year 11" references and the HSC data sheet are fine. Title cards and YouTube descriptions are handled at release, not in scenes.
