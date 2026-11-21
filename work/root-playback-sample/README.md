@@ -403,3 +403,7 @@ Root 3 s playback pass, 22 Nov 2026 (483 s, 11 sheets). Opens on m2-v03's final 
 ## chem-y11-m2-v02 v1
 
 Root 3 s playback pass, 22 Nov 2026 (448 s, 10 sheets). Opens on m2-v01's final frame (balance, 2Mg + O2 equation, lens); numbers checked (one C atom about 2e-23 g, counting a mole at one per second 1.9e16 years, 2.5 mol C 1.5e24 atoms, 3.01e24 molecules 5.00 mol, 0.50 mol CO2 3.011e23 molecules and 1.0 mol O atoms, 1 mol NaCl 2 mol ions, He 0.150 mol, CaCl2 2.41e23 Cl- ions); both attempts show the full question with a 10 s countdown; notes hold. Human listening pending. Queue after m2-v01 v2.
+
+## chem-y11-m2-v01 v2
+
+Root 3 s playback pass, 22 Nov 2026 (488 s, 11 sheets). v1 was rejected for a "Module 1 complete" tag in the opening (recreated m1-v27 final frame); v2 removes only that tag (opening.tsx), and the v2 opening sheet confirms it. The rest matches the v1 review: closed and open systems with illustrative masses (CuCO3 2.47 g to 1.59 g, CO2 0.88 g; Mg 0.24 g to 0.40 g, O2 0.16 g); balancing 2H2 + O2 -> 2H2O, 2Mg + O2 -> 2MgO, CuCO3 already balanced, 4Al + 3O2 -> 2Al2O3; CaCO3 5.00 - 2.80 = 2.20 g CO2; attempts show full questions with 10 s countdowns; notes hold. The opening is drawn from m1-v27's design and must be re-matched when m1-v27 is built. Human listening pending.
