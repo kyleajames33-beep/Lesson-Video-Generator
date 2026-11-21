@@ -23,3 +23,21 @@ Findings:
 4. **Optional.** Scene 15 (key notes) still reads "Notes in the role colours, 32 px" and "framed card under the notes", and the "Holds" line still says "key-notes (about 50 s)", while Revision 3 sets "34 px", "the framed memory card beside them" and 45 s. Proposed fix: change "32 px" to "34 px", "framed card under the notes" to "framed card beside the notes" and "about 50 s" to "45 s in all".
 
 Result: 0 blockers, 2 should fix, 2 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `a97a452cf0635a254bcae237e606eb1791ff4ea9830f5bd67e8a98ea5912493f`.
+
+Compared the current file against the version checked above (`fe2183db...`, HEAD) by git diff, and `phys-y12-m6-v01.md` against HEAD for the join.
+
+Changes: scene 14 heading "### 14. end of gravity, and the next field"; scene 14 narration "That wraps up gravity and orbits. ... Next, we meet a different kind of field. ..." (the rest of the line is unchanged); the scene 14 and "Final frame" chip "Next: how does voltage between parallel plates determine a charged particle's acceleration?"; the escape stop at v_esc = √(2GM/R) = 11.21 km s⁻¹ with E shown as 0; the headline count and a dated root note.
+
+Finding 1 resolved: no "Module" or "syllabus" remains in any narration line. The new line reads naturally aloud and states nothing new to check scientifically. Recount by the build parser rules: scene 14 is 357 characters (was 366), and the sum of the 15 scene strings is 5,561 (408, 523, 531, 470, 470, 492, 347, 434, 269, 262, 399, 221, 303, 357, 75), equal to the headline and under 7,000. Bold cues are unchanged in every scene and in spoken order; scene 14's only cue, "acceleration", is still the last word, and the visual cue "Between two charged plates" is still spoken. The chip text in scene 14, in "Final frame" and in `phys-y12-m6-v01.md` "Opening frame" is identical, so the join holds. No U+2014 in either file.
+
+Finding 2 resolved: ½(11,209)² − GM/R = 0 to within rounding, so the run escapes and the E readout of 0 agrees with scene 6's narration. 11.21 km s⁻¹ is labelled "11.2 km s⁻¹", consistent with the other on-screen values.
+
+Root should note that `phys-y12-m6-v01.md` has a new SHA256 (`13b0c0d5...4406`). No existing check names its old or new SHA, so no gate is lost now, but its readiness check must cite the new SHA.
+
+Findings 3 and 4 (optional) stand, not taken. One further optional: the headline duration "about 503 s" was not updated after Revision 3 (about 498 s) or this edit (9 fewer characters, about 497 s). Proposed fix: change "about 503 s" to "about 497 s" in the headline.
+
+Result: 0 blockers, 0 should fix, 3 optional.

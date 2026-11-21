@@ -16,6 +16,6 @@ Findings:
 
 1. **Optional.** Scene 16 (feedback 2) Visual still says "On the outline a navy r line to a dashed circle at 2R", but Revision 3 replaces the coded outline with the painted Earth plate on the card, which has shrunk to the top. Proposed fix: change "On the outline" to "On the Earth plate (enlarged beside the working)".
 
-2. **Optional.** Scene 18 (key notes) still reads "Notes in the role colours, 32 px" and "framed card under the notes", while "Visual upgrade (Revision 3)" sets "34 px" and "the framed memory card beside them". Proposed fix: change "32 px" to "34 px" and "framed card under the notes" to "framed card beside the notes".
+2. **Optional.** Scene 18 (key notes) still reads "Notes in the role colours, 32 px" and "framed card under the notes", and the "Holds" line still says "key-notes (about 50 s)", while Revision 3 sets "34 px", "the framed memory card beside them" and 45 s. Proposed fix: change "32 px" to "34 px", "framed card under the notes" to "framed card beside the notes" and "about 50 s" to "45 s in all".
 
 Result: 0 blockers, 0 should fix, 2 optional.

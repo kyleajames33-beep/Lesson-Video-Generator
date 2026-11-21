@@ -19,3 +19,11 @@ Findings:
 2. **Optional.** Scene 17 (key notes) still reads "Notes in the role colours, 32 px" and "framed card under the notes", while "Visual upgrade (Revision 3)" sets "34 px" and "the framed memory card beside them". Proposed fix: in scene 17 change "32 px" to "34 px" and "framed card under the notes" to "framed card beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `db4bf7384a569271b9602dd3163c75cd8547bc18adb3aead8f019729f47bc8c3`.
+
+Compared the current file against the version checked above (`d0fba0cf...`, HEAD) by git diff. The only change is the Simulation engines bullet, which now reads: a circular run "at ω from the hanging stack: 50 g (ω = 4.95 rad s⁻¹) in scenes 1 and 2; in scene 4 the stack shows 100 g and the run uses the 100 g row (ω = 6.943 rad s⁻¹), so 20 laps on the lap counter read 18.1 s on the stopwatch." This resolves finding 1: 2π / 6.943 × 20 = 18.10 s, matching the table and scene 4's stopwatch, and the scene 1 and 2 speed matches the 50 g stack and scene 2a's 30° droop. Narration is unchanged (all 18 scene strings identical; 6,422 characters). No U+2014. Finding 2 (optional) stands, not taken.
+
+Result: 0 blockers, 0 should fix, 1 optional.
