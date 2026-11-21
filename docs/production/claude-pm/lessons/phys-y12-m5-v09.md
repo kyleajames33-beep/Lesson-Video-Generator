@@ -2,7 +2,7 @@
 
 Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (6 Nov 2026): brief 187 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 5,706 characters, 15 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
+Narration 5,705 characters, 15 scenes, about 509 s, counted by script with the build parser rules (see "Narration length estimate"). Opens on v08's final frame.
 
 Scope: ninth video of Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), first video on torque. Templates: `phys-y12-m5-v01.md` (this run's structure), `phys-y11-fa1-v01.md`, `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief format). Pre-design pack: `../pre-design/phys-y12/phys-y12-m5-v09.md` (every number recalculated below). Site lesson read in full (6 Nov, read-only): connect and orient (crane hook, door prediction, vocabulary, misconceptions), define the moment and its sign, represent the line of action, worked example 1 (wrench), worked example 2 (seesaw, v10's), scope boundary, misconceptions, activities, wrap-up, "Analyse 6 marks", "Account 5 marks", short answers and the revisit: `C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson06.sa.html`, SHA256 `d17495f1c7fc12f866524790a37850f2e52c0f292d51e2bedbe55fe2335c35f7` (recomputed 6 Nov; matches the pack and the route). Route entry: `phys-y12-m5-v09` in `../../programme/phys-y12-route-inputs.json`, sections `l06-define-title`, `l06-represent-title`, `l06-wrench-title`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Define torque through perpendicular moment arm; calculate 80 N at 0.25 m for 90, 30, 180 degrees. Stop before equilibrium of several forces." Next: "phys-y12-m5-v10: How do clockwise and anticlockwise torques balance?"
 
@@ -356,6 +356,8 @@ Kit gaps: no engine for turning effects (a pivoted body with forces, net torque 
 Joins: the opening frame and the final frame are unchanged word for word; builders draw both solid (R2).
 
 Counts: 5,706 characters, unchanged; about 504 s (it was about 509 s; the notes hold falls from 50 s to 45 s).
+
+Root label edit (21 Nov 2026): scene 5's course label became "which you'll also see written as r perpendicular times **F**." so one take serves both syllabuses. Narration now 5,705 characters (one fewer); bold cues and their order are unchanged.
 
 Speech changes needed: none.
 
