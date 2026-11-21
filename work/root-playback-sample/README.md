@@ -391,3 +391,11 @@ Root (21 Nov, 10:30): 3 s sweep of the master read (sheets 1 to 9). Rendered aft
 ## math-a12-d04 v4
 
 Root 3 s playback pass, 21 Nov 2026. Replaces v3 (https://youtu.be/khpv-Q0-zas) after the brief 258 trim of scene-01's run-on tail (the repeated closing question). Scene 1 now ends at about 47.7 s on "by exactly how much?" and scene 2 opens cleanly at 48.0 s; Codex's word-time diff proves every other scene is identical, and the sheets show no other change. Captions are the rebuilt measured set (222 cues). Human listening pending. Queued as a replacement on YouTube and Bunny.
+
+## chem-y11-m2-v03 v1
+
+Root 3 s playback pass, 22 Nov 2026 (446 s, 10 sheets). Opens on m2-v02's final frame; cues land on the spoken words; every number checked (Mg/C 2.02, 54 g water 3.0 mol, NaCl 58.44 and 29 g, ribbon 9.9e-3 mol and 5.9e21 atoms, 10 g Mg 0.41 mol and Cu 0.16 mol, CO2 0.250 mol, Ca(OH)2 11.1 g); both attempts show the full question with a 10 s countdown; notes hold 45 s. Human listening pending. Queue after m2-v01 and m2-v02.
+
+## chem-y11-m2-v04 v1
+
+Root 3 s playback pass, 22 Nov 2026 (483 s, 11 sheets). Opens on m2-v03's final frame; particle-box gas model and live burette readouts agree; numbers checked (H2 1.702e-3 mol and MM 24.7, escaped-gas 27.4, balance band 21 to 26 and 24.1 to 25.3, vapour 4.575e-3 mol and 59.5 (propanone), Zn 65.4); error-direction reasoning correct; notes hold 45 s. Human listening pending. Queue after m2-v03.
