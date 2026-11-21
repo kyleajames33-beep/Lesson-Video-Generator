@@ -83,3 +83,7 @@ Fix what you find before handing in. Report the sweep in your notes.
 ## No course labels on screen (root, 21 November 2026)
 
 One take now serves both the 2017 and 2025 syllabuses, so the picture must too. Never draw a module number ("Module 7", "later in Module 6"), a syllabus name or a syllabus tag ("Physics Stage 6 (2017)") on screen, even when an older design asks for one: drop the label and keep the rest of the chip. "Year 11" references and the HSC data sheet are fine. Title cards and YouTube descriptions are handled at release, not in scenes.
+
+## Stale "no engine yet" notes (root, 21 November 2026)
+
+Some Revision 3 design notes (written 13 November) say a simulation helper is missing. Sims kit 4 (commit `bdafcf0e`, the same morning) added many of them: single-slit and grating patterns, `blackbody.ts`, `photoelectric.ts`, `induction.ts`, `magnetic-field.ts`, AC supplies and transformers in the circuits engine. Always check `src/explainer/sims/README.md` and the folder before hand-building a simulation; use the engine when it exists, even if the design says it does not.
