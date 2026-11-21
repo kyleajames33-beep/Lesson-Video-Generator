@@ -19,3 +19,11 @@ Findings:
 2. **Optional.** Scene 17 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `49dcc984a42e2ec9fc40722efd79c989b7ad9b81a8fe55dc16b73ce8f0f90cbb`.
+
+Compared the current file (commit `3075bfe7`) against the version checked above (`9dd03136...`) by git diff. The only changes are the Simulation engines bullet and a dated root note. Each electron now starts "with its own kinetic energy, spread from 0 up to K_max (only the fastest have K_max)", and "as the slider rises, a growing share turn back, so the photocurrent readout falls steadily and reaches zero exactly when eV equals K_max". That resolves finding 1. The run now agrees with scene 3's narration ("fewer electrons make it, so the photocurrent falls"; "even the fastest electrons just fail") and with scene 4's sloping trace to "−V_stop". Narration is unchanged (all 17 scene strings identical; 6,158 characters). No U+2014. Finding 2 (optional) stands, not taken.
+
+Result: 0 blockers, 0 should fix, 1 optional.

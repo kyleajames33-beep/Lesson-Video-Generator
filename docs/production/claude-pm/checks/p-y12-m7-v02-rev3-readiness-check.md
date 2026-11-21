@@ -19,3 +19,11 @@ Findings:
 2. **Optional.** Scene 14 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `6c0e20b5bad7b7539688ed2330cf0c06f9e6454f590e3f48a0fe1e7c5c1aebbb`.
+
+Compared the current file (commit `3075bfe7`) against the version checked above (`4a9f3d2d...`) by git diff. The only changes are the Simulation engines bullet and a dated root note. The "runs late" readout is now the Earth to Jupiter distance "minus its value at closest approach, divided by c, so it starts at 0 and reaches about 1000 s with Earth on the far side". That resolves finding 1. The extra distance between nearest and farthest is about 2 AU = 3.0 × 10¹¹ m, so the readout reaches 3.0 × 10¹¹ / 3.0 × 10⁸ = 1000 s, matching scene 2's "delay ≈ 1000 s" and its narration. Narration is unchanged (all 14 scene strings identical; 6,123 characters). No U+2014. Finding 2 (optional) stands, not taken.
+
+Result: 0 blockers, 0 should fix, 1 optional.
