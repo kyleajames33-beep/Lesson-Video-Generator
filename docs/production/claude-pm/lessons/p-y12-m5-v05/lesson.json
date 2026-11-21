@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m5-v05",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "5067664b7dfa5be5d2a1011ad90d03ef5bd1174bc39add3a50c27240a27a6e48",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (which goes furthest now?)",
+      "voiceover": {
+        "text": "Here's the launcher on top of a thirty metre cliff, firing at twenty metres per second. Last time, on level ground, forty-five degrees went furthest, and thirty and sixty degrees tied. Now each ball has an extra thirty metres to fall after it comes back down to its launch level. So which of these three lands furthest from the cliff: thirty, forty-five or sixty degrees? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "shortcuts-fail",
+      "title": "why the shortcuts fail",
+      "voiceover": {
+        "text": "The level-ground shortcuts can't answer this. They came from setting the vertical displacement to zero, because the ball landed back at its launch level. Here, the sea is thirty metres below the launch point, so with up as positive, the vertical displacement at landing is minus thirty metres. Each ball reaches the launch level again just as it did on level ground, but then it keeps falling. So the flight isn't twice the time to the top any more, and the range formula doesn't apply. We go back to the two columns."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "quadratic",
+      "title": "the vertical equation becomes a quadratic",
+      "voiceover": {
+        "text": "The method doesn't change: find the time from the vertical column, then carry it across. Use s equals u t plus a half a t squared, with s y equal to minus thirty. That gives minus thirty equals u y t minus four point nine t squared. Rearrange it, and it's a quadratic in t: four point nine t squared, minus u y t, minus thirty, equals zero. An equation with a t squared in it can have two answers, so we solve it with the quadratic formula."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-thirty-time",
+      "title": "worked example: thirty degrees, the time",
+      "voiceover": {
+        "text": "Let's do thirty degrees. u y is twenty sin thirty, ten metres per second, and u x is twenty cos thirty, about seventeen point three two. So the quadratic is four point nine t squared, minus ten t, minus thirty, equals zero. The formula gives t equals ten, plus or minus the square root of ten squared plus four times four point nine times thirty, all over nine point eight. That square root is the square root of six hundred and eighty-eight, about twenty-six point two three. So t is about three point seven zero seconds, or minus one point six six seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "negative-root",
+      "title": "the negative root",
+      "voiceover": {
+        "text": "A negative time means before the launch. If you ran the same curve backwards, the ball would have been at sea level one point six six seconds before it was fired. That never happened, so we reject that root. The time of flight is three point seven zero seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "range-and-check",
+      "title": "the range, and a check",
+      "voiceover": {
+        "text": "Now carry the time across. The range is u x times t: seventeen point three two times three point six nine seven, about sixty-four point zero metres. Here's a quick check. The ball rises for about one point zero two seconds, to five point one metres above the cliff top. Then it falls about thirty-five metres to the sea, which takes about two point six eight seconds. Together, that's three point seven zero seconds again."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "forty-five-and-sixty",
+      "title": "forty-five and sixty degrees",
+      "voiceover": {
+        "text": "The same steps work for the other two angles. At forty-five degrees, the flight lasts about four point three one seconds, and the ball lands about sixty point nine metres out. At sixty degrees, the ball stays up longest, about four point eight one seconds, but it lands only forty-eight point one metres from the cliff."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "why-thirty-wins",
+      "title": "thirty wins: why",
+      "voiceover": {
+        "text": "So from the cliff, thirty degrees goes furthest of the three, and thirty and sixty no longer tie. Here's why. The extra thirty metres of fall adds time to every flight, and the flatter launches gain the most, because they come back through the launch level more slowly. On top of that, a flatter launch has the bigger horizontal component to spend during that extra time. So the best angle slides below forty-five degrees."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "three-samples",
+      "title": "three angles aren't the whole story",
+      "voiceover": {
+        "text": "Careful, though. Testing three angles doesn't prove that thirty degrees is the best possible angle. If we try many more, the range peaks at about thirty-two and a half degrees, a little above thirty. So from a height, the best angle is below forty-five, but you'd need more than three samples to find it exactly."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-slips",
+      "title": "two slips",
+      "voiceover": {
+        "text": "Two slips cost marks here. One is using plus thirty for the displacement, when the sea is below the launch point. The other is doubling the time to the top, as if the ground were level. That gives about two point zero four seconds, far too short."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid: down is negative, time is positive",
+      "voiceover": {
+        "text": "Here's a way to remember both: down is negative, time is positive. If the landing is below the launch point, s y is negative, and of the two roots, you keep the positive one."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A ball is launched horizontally at six point zero metres per second, from five point zero metres above a level floor. Calculate its time of flight, and the horizontal distance it travels before it lands. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Launched horizontally, so u y is zero, and the quadratic shrinks to minus five equals minus four point nine t squared. So t is about one point zero one seconds. The horizontal distance is six point zero times that, about six point one metres. Using plus five instead gives a negative t squared, with no real answer at all, which is your clue that the sign is wrong."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A ball is launched at ten point zero metres per second, at thirty degrees above the horizontal, from a point five point zero metres above the level ground where it lands. Calculate the time it takes to land. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "u y is ten sin thirty, five metres per second, and s y is minus five point zero, so four point nine t squared minus five t minus five equals zero. The quadratic formula gives about one point six four seconds, or minus zero point six two, which is before the launch. So the time of flight is one point six four seconds. Doubling the time to the top, about one point zero two seconds, is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So when the landing is lower than the launch, solve the vertical column as a quadratic, keep the positive time, then carry it across. Here, we knew the vertical displacement and found the time. Next time, we'll know a horizontal distance instead, because a wall stands partway out from the cliff. Will the ball clear it?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m5-v08",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "66c288ae920edd5887c7425b4d63c4c896476494c640d3a3ee623b31c3df7a72",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (four times higher)",
+      "voiceover": {
+        "text": "Last time ended with a ball rolling down a ramp and flying off it horizontally. Here's the experiment. The ramp's exit is ten centimetres above the bench, and the ball lands thirty-two centimetres away. Now raise the exit to forty centimetres, four times higher, and release the ball from the same spot. How much further will it land? The same, one and a half times, twice, or four times as far? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "prediction",
+      "title": "what the model predicts",
+      "voiceover": {
+        "text": "The model makes a sharp prediction. The ball leaves horizontally, so its fall time comes from the drop alone: h equals a half g t squared, so t is the square root of two h over g. Four times the height gives only twice the time. The horizontal velocity doesn't change, so the range, u x times t, is also twice, sixty-four centimetres. The model says R is proportional to the square root of h. So how can our own measurements test that prediction?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "fair-test",
+      "title": "a fair test: what changes, what stays",
+      "voiceover": {
+        "text": "Data you collect yourself, by measuring, is called primary data. To make it a fair test, only one thing should change at a time. Here we change the height, h, and measure the range, R. So the launch speed has to stay the same at every height. That means the same ball, released from the same marked point on the ramp, let go and never pushed. And the exit has to be horizontal, checked with a spirit level, so the ball leaves with no vertical velocity."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measuring",
+      "title": "measuring h and R",
+      "voiceover": {
+        "text": "Now measure carefully. Carbon paper laid over white paper marks exactly where the ball first touches down. A plumb line hanging from the exit marks the point directly below it, and R is measured from there to the centre of the mark. For the height, measure from the bench to the bottom of the ball at the exit, because that's how far the ball actually falls before it touches. Use at least five heights, and at least three trials at each."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "risk-check",
+      "title": "a quick risk check",
+      "voiceover": {
+        "text": "Before you start, a quick risk check. The ball bounces and rolls, so put a catch tray beyond the paper, where it can't roll off the bench and under someone's feet. Clamp the stand firmly so it can't tip. And if you use a spring launcher instead of a ramp, wear safety glasses."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "repeats",
+      "title": "repeats and uncertainty",
+      "voiceover": {
+        "text": "Here are three landing marks from one height, as illustrative values: fifty-three, fifty-five and fifty-seven centimetres. Identical launches don't land in exactly the same place, because tiny differences in release and spin change each flight. That scatter is random uncertainty. We report the mean, fifty-five centimetres, plus or minus half the spread, two centimetres. The rule's reading uncertainty is only half a millimetre, so here it's the scatter, not the ruler, that limits us. Repeating trials makes the mean more reliable, but it doesn't make any single landing less scattered."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "linearise",
+      "title": "straighten the curve",
+      "voiceover": {
+        "text": "Now the full set. These are sample values, supplied to practise processing, not anyone's own results. Plot R against h, and the points curve. A curve is hard to judge by eye. But if R is proportional to the square root of h, then plotting R against root h should give a straight line through the origin. Choosing what to plot so the model predicts a straight line is called linearising. And here, the points do line up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "gradient-test",
+      "title": "the gradient is a speed in disguise",
+      "voiceover": {
+        "text": "The gradient has a meaning. From the model, R equals u x times root two over g, times root h. So the gradient is u x times root two over g. The line of best fit here has a gradient of about one point zero, in units of root metres, and it passes almost through the origin. Rearranging, u x equals the gradient times root g over two, about two point two metres per second. Now here's the real test. Measure u x another way, say with a light gate at the exit. If the two values agree within their uncertainties, the model has passed a genuine test."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "spread-or-shift",
+      "title": "spread or shift?",
+      "voiceover": {
+        "text": "But what if they don't agree? Imagine repeated landings spread over about six centimetres, while the mean lands about four centimetres short of the prediction, every time. The spread is random. It sets the uncertainty, about plus or minus three centimetres. The shortfall is a systematic error, because it shifts every result the same way, and averaging more trials will never remove it. Air resistance could cause it. So could an exit tilted slightly down, or a height measured to the centre of the ball instead of the bottom. Each is a lead to investigate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "straight-not-proof",
+      "title": "what a straight line can't tell you",
+      "voiceover": {
+        "text": "One more warning. A straight line through the origin doesn't prove there's no systematic error. If the ball always left a little slower than you assumed, every range would shrink by the same fraction, and the graph would still be a perfect straight line through the origin, just with a lower gradient. That's why the check against an independent u x matters. And even a good match only supports the model over the heights and speeds you actually tested."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "So keep two ideas apart. Spread is random, and a shift is systematic. Repeats steady the mean, not the shift."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In a horizontal-launch investigation, three repeated ranges from one height are zero point seven zero, zero point seven two and zero point seven four metres. Calculate the mean range and its uncertainty as half the spread. Then explain whether the repeated trials show that the result is accurate. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The mean is zero point seven two metres, and half the spread is zero point seven four minus zero point seven zero, over two, which is zero point zero two. So R is zero point seven two, plus or minus zero point zero two metres. Repeats show the result is precise, not that it's accurate. A tilted exit or a mis-measured height would shift all three trials together, and the spread would never show it. The slip is saying more trials make it accurate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student plots range R against the square root of the drop height h, and the line of best fit has a gradient of one point zero zero root metres. Using R equals u x times the square root of two h over g, calculate the horizontal launch speed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The gradient is u x times root two over g. So u x is the gradient times root g over two, one point zero zero times root four point nine, about two point two one metres per second. The slip is treating the gradient itself as the speed. Its unit is root metres, so it isn't a speed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So far, every force has changed how something moves along a path. Next, forces that make things turn. Here's a spanner on a stuck nut. Push on the end of the handle with the same force, in three different directions. One turns the nut best, and one does nothing at all. Why?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

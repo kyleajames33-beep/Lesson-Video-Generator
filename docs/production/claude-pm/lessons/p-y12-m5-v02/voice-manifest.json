@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v02.md",
+  "sourceSha256": "48085fff530385dc447b60225f8b7f60e911be609c61de03d48b067d693264d5",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time, ball B left the bench sideways, so it started with no vertical velocity at all. Now let's tilt the launcher up. This one fires a ball at twenty metres per second, at thirty degrees above the horizontal. Some of that velocity carries the ball across, and some carries it up. But how much of each? Thirty degrees is a third of the way from horizontal to vertical. So does a third of the speed go up? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v02/hook.wav"
+    },
+    {
+      "id": "launch-triangle",
+      "text": "The launch velocity is a vector, so we can split it into two components at right angles: a horizontal one, u x, and a vertical one, u y. Put them tip to tail and they make a right-angled triangle, with the launch velocity as the hypotenuse. The angle theta sits between the launch velocity and the horizontal. So the horizontal side is next to the angle, the adjacent side, and the vertical side is opposite it. From right-angled triangles, adjacent over hypotenuse is cos theta, and opposite over hypotenuse is sin theta. So u x equals u cos theta, and u y equals u sin theta.",
+      "audioFile": "public/audio/phys-y12-m5-v02/launch-triangle.wav"
+    },
+    {
+      "id": "worked-components",
+      "text": "Let's do the twenty metres per second at thirty degrees. Horizontally, u x is twenty times cos thirty, which is about seventeen point three metres per second. Vertically, u y is twenty times sin thirty. Sin thirty is exactly a half, so u y is ten point zero metres per second, upwards. So half the speed goes up, not a third. And notice, seventeen point three plus ten isn't twenty. The components aren't pieces of a total that you add as numbers. They're at right angles, so they combine by Pythagoras, and the square root of seventeen point three squared plus ten squared is twenty.",
+      "audioFile": "public/audio/phys-y12-m5-v02/worked-components.wav"
+    },
+    {
+      "id": "angle-sweep",
+      "text": "Now watch what the angle does. At zero degrees, like ball B last time, all twenty metres per second goes across, and none goes up. As the launcher tilts up, u y grows and u x shrinks. At forty-five degrees they're equal, about fourteen point one each. Keep going, and at ninety degrees it's all vertical, with nothing across. The launch speed never changes. The angle only decides how that speed is shared between the two directions.",
+      "audioFile": "public/audio/phys-y12-m5-v02/angle-sweep.wav"
+    },
+    {
+      "id": "in-flight",
+      "text": "Once the ball's in the air, the two components behave just as before. u x never changes, because there's still no horizontal force. But u y now points up, while gravity points down. Taking up as positive, a y is minus nine point eight, so the vertical velocity drops by nine point eight metres per second every second. Starting at ten, after one second it's down to just zero point two, and a moment later it runs out. That's the highest point.",
+      "audioFile": "public/audio/phys-y12-m5-v02/in-flight.wav"
+    },
+    {
+      "id": "predict-peak",
+      "text": "So what's happening right at the top? What's the ball's velocity there, and what's its acceleration? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v02/predict-peak.wav"
+    },
+    {
+      "id": "peak",
+      "text": "At the top, the vertical velocity is zero for an instant. But the ball is still moving, because its horizontal velocity is still seventeen point three metres per second. So its velocity at the peak isn't zero. It's horizontal. And the acceleration hasn't changed at all. Gravity never switches off, so it's still nine point eight metres per second squared, downwards. That's what turns the ball around. If the acceleration were zero at the top, the vertical velocity would stay at zero, and the ball would just keep going sideways at that height. Zero vertical velocity isn't zero acceleration.",
+      "audioFile": "public/audio/phys-y12-m5-v02/peak.wav"
+    },
+    {
+      "id": "worked-time-to-peak",
+      "text": "Here's how to use that. A ball is launched at twenty-five metres per second, at forty degrees above the horizontal. How long does it take to reach its highest point? Only the vertical column can tell us, so start there. Up is positive, so a y is minus nine point eight. u y is twenty-five sin forty, about sixteen point one metres per second. At the peak, v y is zero. So using v equals u plus a t, zero equals sixteen point zero seven minus nine point eight t, and t is about one point six four seconds. That's the time to the top, not the whole flight.",
+      "audioFile": "public/audio/phys-y12-m5-v02/worked-time-to-peak.wav"
+    },
+    {
+      "id": "two-traps",
+      "text": "Two traps here. The first is putting the whole twenty-five metres per second into that equation. That gives two point five five seconds, which is wrong, because only the vertical component is fighting gravity. The second is an angle measured from the vertical. Forty degrees from the vertical is fifty degrees above the horizontal. Now the vertical side is the one next to the angle, so u y is twenty-five cos forty. Always check which side the angle is next to before you choose sin or cos.",
+      "audioFile": "public/audio/phys-y12-m5-v02/two-traps.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember it: cos is close. The component close to the angle, the side right next to it, uses cos, and the other one uses sin. It works whichever way the angle is measured, as long as you check which side it's touching.",
+      "audioFile": "public/audio/phys-y12-m5-v02/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A ball is launched at ten point zero metres per second, at sixty degrees above the horizontal. Calculate the horizontal and vertical components of its initial velocity. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v02/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The angle is measured from the horizontal, so the horizontal side is close to it. u x is ten cos sixty, five point zero zero metres per second, horizontally. u y is ten sin sixty, about eight point six six metres per second, upwards. It's a steep launch, so more goes up than across. Swapping them, with eight point six six across, is the slip to avoid.",
+      "audioFile": "public/audio/phys-y12-m5-v02/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A projectile is launched with a horizontal velocity component of eight point zero metres per second, and a vertical component of fourteen point seven metres per second upwards. Calculate the time it takes to reach its highest point, and state its velocity and its acceleration at that point. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v02/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "At the top, v y is zero, so zero equals fourteen point seven minus nine point eight t, and t is one point five zero seconds. The velocity there is eight point zero metres per second, horizontally, because the horizontal component never changes. The acceleration is still nine point eight metres per second squared, downwards. Saying the velocity or the acceleration is zero at the top is the classic slip.",
+      "audioFile": "public/audio/phys-y12-m5-v02/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the launch angle splits the speed, u cos theta across and u sin theta up. The vertical part decides when the ball reaches the top, while the horizontal part just carries on. But that's only half the flight. How high does the ball get, how long is it in the air altogether, and how fast is it going when it lands? That's next.",
+      "audioFile": "public/audio/phys-y12-m5-v02/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v02/key-notes.wav"
+    }
+  ]
+}

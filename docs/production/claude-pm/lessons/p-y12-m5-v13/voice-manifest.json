@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v13.md",
+  "sourceSha256": "57b4feb14ddb9ffbaca127c090a878f5f9f3ff3dfa41f34cdbfbc0da2df0b507",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that steel ball, going round in a horizontal circle on a string. The string slants, tracing out a cone, so this is called a conical pendulum. Now imagine the ball going faster and faster. Could it ever go fast enough for the string to be perfectly horizontal? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v13/hook.wav"
+    },
+    {
+      "id": "two-forces-centre",
+      "text": "Only two forces act on the ball. The tension pulls along the string, towards the support, and the weight pulls straight down. There's no third arrow for centripetal force, because that's a job, not a force. And notice where the centre of the circle is. It isn't the support. It's level with the ball, directly below the support. So the net force has to be horizontal, pointing at that centre.",
+      "audioFile": "public/audio/phys-y12-m5-v13/two-forces-centre.wav"
+    },
+    {
+      "id": "geometry",
+      "text": "Let's name the parts. The string has length L, and it makes an angle theta with the vertical. The radius of the circle is the horizontal distance from the ball to the centre, so r equals L sine theta. And the height of the support above the circle is h, which is L cosine theta. Keep those straight, because r is not L, and mixing them up is the most common slip in these questions.",
+      "audioFile": "public/audio/phys-y12-m5-v13/geometry.wav"
+    },
+    {
+      "id": "resolve-tension",
+      "text": "Now split the tension into two parts. Its vertical part is F T cosine theta, and its horizontal part, pointing at the centre, is F T sine theta. The ball doesn't move up or down, so the vertical part balances the weight. F T cosine theta equals m g. The horizontal part has nothing to balance it, so it's the net force, doing the centripetal job. F T sine theta equals m v squared over r. One string, doing two jobs at once.",
+      "audioFile": "public/audio/phys-y12-m5-v13/resolve-tension.wav"
+    },
+    {
+      "id": "never-horizontal",
+      "text": "That answers the question. If the string were horizontal, it would have no vertical part at all, and nothing would hold the ball up against its weight. So the string always slants, however fast the ball goes. It also means the tension is always bigger than the weight, because only part of it is holding the ball up.",
+      "audioFile": "public/audio/phys-y12-m5-v13/never-horizontal.wav"
+    },
+    {
+      "id": "angle-and-speed",
+      "text": "Divide the horizontal equation by the vertical one. The tension and the mass both cancel, and you get tan theta equals v squared over r g. So a faster ball swings out to a bigger angle. And as theta gets closer to ninety degrees, cosine theta shrinks, so the tension needed grows very large. That's why the string never quite reaches horizontal.",
+      "audioFile": "public/audio/phys-y12-m5-v13/angle-and-speed.wav"
+    },
+    {
+      "id": "worked-radius-tension",
+      "text": "Let's try an example. A zero point two zero kilogram bob hangs on a zero point five zero metre string, at thirty degrees to the vertical. The bob is just the small mass on the end. First the radius. r is zero point five zero times sine thirty, which is zero point two five metres. Now the tension, from the vertical equation. F T equals m g over cosine theta, so zero point two zero times nine point eight, over cosine thirty. That's about two point two six newtons, a bit more than the weight of one point nine six newtons.",
+      "audioFile": "public/audio/phys-y12-m5-v13/worked-radius-tension.wav"
+    },
+    {
+      "id": "worked-speed",
+      "text": "Next, the speed. From tan theta equals v squared over r g, v equals the square root of r g tan theta. That's the square root of zero point two five times nine point eight times tan thirty, about one point one nine metres per second. As a check, the horizontal part of the tension, two point two six times sine thirty, is about one point one three newtons, and m v squared over r gives the same value.",
+      "audioFile": "public/audio/phys-y12-m5-v13/worked-speed.wav"
+    },
+    {
+      "id": "worked-period",
+      "text": "And the period. The ball goes once round a circle of radius zero point two five metres at one point one nine metres per second, so T equals two pi r over v, about one point three two seconds. Here's a surprise. If you put the speed formula into T equals two pi r over v, r over tan theta turns out to be just the height h. So T equals two pi times the square root of h over g. The period depends only on how far the circle sits below the support. The mass doesn't matter at all.",
+      "audioFile": "public/audio/phys-y12-m5-v13/worked-period.wav"
+    },
+    {
+      "id": "radius-mistake",
+      "text": "The classic slip is using the string length as the radius. Put r equals zero point five zero into the speed formula, and you get about one point six eight metres per second, which is far too fast. The ball goes round a circle of radius L sine theta, not L.",
+      "audioFile": "public/audio/phys-y12-m5-v13/radius-mistake.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to hold it together. One string, two jobs. The up part holds, the in part turns. That works for a light string and a ball going round a horizontal circle at a steady speed. If you get stuck, ask which part of the tension holds the ball up, and which part turns it.",
+      "audioFile": "public/audio/phys-y12-m5-v13/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A zero point five zero kilogram bob on a string of length zero point eight zero metres moves in a horizontal circle, with the string at thirty-five degrees to the vertical. Calculate the radius of the circle, the tension in the string, and the speed of the bob. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v13/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The radius is zero point eight zero times sine thirty-five, about zero point four five nine metres. The tension is m g over cosine thirty-five, which is four point nine zero over zero point eight one nine, about five point nine eight newtons. And v is the square root of r g tan thirty-five, about one point seven seven metres per second. The slip is using zero point eight zero as the radius.",
+      "audioFile": "public/audio/phys-y12-m5-v13/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A conical pendulum has a string of length zero point four zero metres, at twenty-five degrees to the vertical. Calculate its period. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v13/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "The circle sits L cosine theta below the support, so h is zero point four zero times cosine twenty-five, about zero point three six three metres. Then T equals two pi times the square root of h over g, about one point two one seconds. The slip is using the whole string length instead of h, which gives one point two seven seconds.",
+      "audioFile": "public/audio/phys-y12-m5-v13/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the slant of the string gives the tension a part that points inwards. A road can do the same trick. Tilt the road towards the centre of the bend, and the normal force, which is always at right angles to the road, tilts too. Now part of it points inwards. So how does a banked road cut down the friction a car needs?",
+      "audioFile": "public/audio/phys-y12-m5-v13/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v13/key-notes.wav"
+    }
+  ]
+}

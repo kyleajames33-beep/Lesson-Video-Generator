@@ -1,0 +1,168 @@
+{
+  "id": "phys-y12-m5-v07",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "f102bd64494df1acf48c652f29e2b1a21cf783cc7a27e965b1b45bfe41851b4a",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (which lands first?)",
+      "voiceover": {
+        "text": "Last time ended with a target on level ground, seventy-two metres from a launcher that fires at thirty metres per second. Two paths reach it. One stays low, peaking at under nine metres. The other climbs to about thirty-seven metres before it comes down. If both are launched at the same instant, which reaches the target first? Or do they arrive together?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "reveal",
+      "title": "reveal (one target, two clocks' worth)",
+      "voiceover": {
+        "text": "Let's launch them together. The low one arrives after about two point six seven seconds. The high one is still up there. It finally lands after about five point five one seconds, in exactly the same spot. Same speed, same target, two angles, two very different flights. So why are there two angles, and how do we find them both?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "speed-backwards",
+      "title": "the range equation, run backwards for speed",
+      "voiceover": {
+        "text": "For level ground we already have a shortcut, the range equation. R equals u squared sin two theta over g. Remember its conditions: launch and landing at the same height, no air resistance, and constant g. It can run backwards, too. Say a projectile launched at thirty-eight degrees lands forty-five metres away on level ground. Rearrange for u: u is the square root of R g over sin two theta. That's the square root of four hundred and forty-one over sin seventy-six degrees, about twenty-one point three metres per second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "angle-backwards",
+      "title": "run it backwards for the angle",
+      "voiceover": {
+        "text": "Now our target. This time we know u and R, and we want theta. Rearranging, sin two theta equals R g over u squared. That's seventy-two times nine point eight over nine hundred, which is zero point seven eight four. Your calculator's inverse sine gives two theta as fifty-one point six degrees, so theta is twenty-five point eight degrees. That's the low path. But the calculator only gave us one answer. Where's the other?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "second-angle",
+      "title": "the second angle: sine takes each value twice",
+      "voiceover": {
+        "text": "Look at the sine graph from zero to one hundred and eighty degrees. It rises to one at ninety degrees, then falls back again, symmetrically. So a height of zero point seven eight four is reached twice: at fifty-one point six degrees, and at one hundred and eighty minus that, one hundred and twenty-eight point four. Halve it, and theta is sixty-four point two degrees, the high path. Notice that twenty-five point eight plus sixty-four point two is ninety. Angles that add to ninety degrees are called complementary. One warning: subtract from one eighty before you halve, not after. One eighty minus twenty-five point eight would aim the launcher backwards."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "swap-product",
+      "title": "the physics: swap the parts, keep the product",
+      "voiceover": {
+        "text": "That's the maths. Here's the physics. Resolve both launches. The low one has u x of about twenty-seven metres per second, and u y of about thirteen point one. The high one has exactly the same two numbers, swapped. Now think about what range is: horizontal velocity times the time in the air. The time in the air depends only on u y. So the low launch is fast across but brief, and the high launch is slow across but stays up longer. Swapping the components swaps those two effects, and their product, the range, doesn't change."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flight-times",
+      "title": "two flight times, one landing point",
+      "voiceover": {
+        "text": "Let's put numbers on that. On level ground, the flight time is two u y over g. For the low path, that's two times thirteen point one over nine point eight, about two point six seven seconds, and twenty-seven times that is seventy-two metres. For the high path, it's two times twenty-seven over nine point eight, about five point five one seconds, and thirteen point one times that is also seventy-two metres. Two flights, different times, one landing point."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "two-one-none",
+      "title": "two, one or none",
+      "voiceover": {
+        "text": "Is there always a second angle? Push the target further away, and the two angles move towards each other, until they meet at forty-five degrees. There, u x equals u y, and their product is as big as it can be. At thirty metres per second that range is u squared over g, about ninety-one point eight metres, and only one angle works. Beyond that, R g over u squared is bigger than one, and no angle has a sine bigger than one. Your calculator shows an error, and that's the physics telling you the target is out of reach."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a way to remember it. Complementary angles swap the components, and the range depends only on their product. Swap the parts, keep the product. But this only works on level ground. Launch from a cliff, and the two angles that hit a target are no longer complementary."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A projectile is launched at fourteen point zero metres per second over level ground. Neglecting air resistance, find both launch angles that give a horizontal range of ten point zero metres. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "sin two theta equals ten times nine point eight over fourteen squared, which is exactly zero point five. So two theta is thirty degrees or one hundred and fifty degrees, and theta is fifteen degrees or seventy-five degrees. They add to ninety, as they should. The classic slip is stopping at fifteen degrees, the only angle the calculator gives."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A target is twenty point zero metres away, at the same height as the launch point. Neglecting air resistance, find the minimum launch speed that can reach it, and the launch angle needed. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The range is biggest when sin two theta is one, at forty-five degrees. So the minimum speed satisfies R equals u squared over g, and u is the square root of twenty times nine point eight, the square root of one hundred and ninety-six, exactly fourteen point zero metres per second. Any slower, and the sine would have to be bigger than one. The slip is to aim at ninety degrees because it makes sin theta biggest. Straight up has no range at all. It's sin two theta that matters."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "Every prediction so far has come from a model, with no air resistance and a constant g. But how do we know the model is any good? We test it. Next time, a ball rolls down a ramp, flies off it horizontally and lands on the bench, and we'll see how our own measurements can put the model to the test."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

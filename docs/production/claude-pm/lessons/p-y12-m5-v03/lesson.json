@@ -1,0 +1,178 @@
+{
+  "id": "phys-y12-m5-v03",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "3e720f36d302bb086bcc2a3ac704478f2f562ba4569147a2f722eb35957bb41c",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (faster, slower or the same?)",
+      "voiceover": {
+        "text": "Here's the ball from last time, launched at twenty-five metres per second, fifty degrees above the horizontal, from level ground. Its components are about sixteen point one across and nineteen point two up, and we followed it to the top. Now let's finish the flight. How high does it get, and how long is it in the air? But first, a prediction. When it lands back at the level it started from, is it moving faster than at launch, slower, or at the same speed? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "height-equation",
+      "title": "the height: the equation without time",
+      "voiceover": {
+        "text": "Start with the height. At the top, the vertical velocity is zero, and we don't need to know when that happens. So choose the equation without time in it, v squared equals u squared plus two a s, written for the vertical column. Put in v y equals zero and a y equals minus g, and it rearranges to the height above the launch point: H equals u y squared over two g. Only the vertical component appears. Moving sideways doesn't help the ball climb at all."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-height",
+      "title": "worked example (a): the maximum height",
+      "voiceover": {
+        "text": "For our ball, u y is twenty-five sin fifty, about nineteen point one five metres per second. Squared, that's about three hundred and sixty-seven. Divide by two times nine point eight, which is nineteen point six, and the maximum height is about eighteen point seven metres above the launch point."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "flight-time-roots",
+      "title": "the flight time: two answers",
+      "voiceover": {
+        "text": "Now the flight time. The ball lands when it's back at its launch level, so its vertical displacement is zero. Write s equals u t plus a half a t squared for the vertical column, and set it to zero: u y t minus four point nine t squared equals zero. Take out a factor of t, and there are two answers. t equals zero is the moment of launch, when the ball was also at that level, so that's not the one we want. The other is t equals two u y over g."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "twice-the-climb",
+      "title": "why twice the time to the top",
+      "voiceover": {
+        "text": "That's exactly twice the time to the top. Why? Gravity takes u y away at nine point eight metres per second, every second, until it's all gone. Then it gives it back at the same rate on the way down, so the fall takes just as long as the climb. For our ball, the time to the top is nineteen point one five over nine point eight, about one point nine five seconds, so the whole flight takes about three point nine one seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "landing-velocity",
+      "title": "the landing velocity",
+      "voiceover": {
+        "text": "So, the landing. The horizontal component hasn't changed: still sixteen point one metres per second. The vertical component is back to nineteen point one five, but now it points down. Those are the same two sizes as at launch, so the landing speed is twenty-five metres per second again, the same as the launch speed. Only the direction has changed: fifty degrees below the horizontal, instead of fifty degrees above."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "range-from-clock",
+      "title": "the range from the clock",
+      "voiceover": {
+        "text": "And the clock links the columns again. The ball is in the air for about three point nine one seconds, moving sideways at sixteen point zero seven metres per second the whole time, so it lands about sixty-two point eight metres away."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-controls-what",
+      "title": "what controls what",
+      "voiceover": {
+        "text": "These results tell us what controls what. Write u y as u sin theta, and the height becomes u squared sin squared theta over two g, while the flight time is two u sin theta over g. So launch at the same angle, twice as fast. The flight time just doubles, because it depends on u. But the height goes up four times, because it depends on u squared. A faster ball climbs faster, and it also keeps climbing for longer, so the two effects multiply. It's tempting to think everything grows with the square of the speed, but the flight time doesn't."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "condition",
+      "title": "the condition",
+      "voiceover": {
+        "text": "One warning. Twice the time to the top, and landing at the launch speed, both depend on landing at the same level you launched from. Launch from a cliff and land lower, and the fall lasts longer than the climb, so neither shortcut works. We'll deal with that case soon."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid: the mirror",
+      "voiceover": {
+        "text": "Here's how to remember all of this. On level ground, the way down mirrors the way up. The fall takes as long as the climb, the ball passes each height at the same speed going up and coming down, and it lands at the launch speed, at the launch angle below the horizontal. Just remember, the mirror only works when the ball comes back to the level it started from."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A projectile is launched at fourteen point zero metres per second, at forty-five degrees above the horizontal, and lands at the same level it was launched from. Calculate its maximum height and its total time of flight. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "First, u y is fourteen sin forty-five, about nine point nine metres per second. The height is u y squared over two g, ninety-eight over nineteen point six, which is five point zero zero metres. The flight time is two u y over g, about two point zero two seconds. Using fourteen instead of u y is the slip to avoid. It gives ten metres and two point eight six seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A projectile is launched at nineteen point six metres per second, at thirty degrees above the horizontal, and returns to its launch level. Calculate the time to reach its highest point and its total time of flight, and describe its velocity just before it lands. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "u y is nineteen point six sin thirty, which is nine point eight, so the time to the top is one point zero zero second, and the whole flight takes two point zero zero seconds. The flight mirrors itself, so it lands at nineteen point six metres per second, thirty degrees below the horizontal, with the horizontal component unchanged and the vertical one reversed. Giving thirty degrees above is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So at equal levels, the vertical component sets the height and the flight time, and the horizontal component turns that time into a range: sixty-two point eight metres for our ball. Now launch it at forty degrees instead, at the same speed. It doesn't go as high, and it comes down sooner, yet it lands in exactly the same spot. Why? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

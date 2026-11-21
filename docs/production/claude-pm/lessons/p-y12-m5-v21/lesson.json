@@ -1,0 +1,175 @@
+{
+  "id": "phys-y12-m5-v21",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "7b0424831c562261f9335e7c4b6ec2aaf2b5ed767af397bb751559e13c43dd23",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (bigger or smaller?)",
+      "voiceover": {
+        "text": "Here's a job: lift a one thousand kilogram satellite from Earth's surface all the way up to geostationary height, about thirty-six thousand kilometres. Using m g h, that takes about three point five times ten to the eleven joules of extra potential energy. Will the true answer be bigger, or smaller? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mgh-fails",
+      "title": "why mgh fails",
+      "voiceover": {
+        "text": "The true answer is about five point three times ten to the ten joules. So m g h overestimates it by more than six times. The reason is hidden in the formula. m g h assumes gravity's pull stays the same all the way up. But gravity weakens with distance. At geostationary height, g is less than a fortieth of its surface value. Using the surface value for the whole climb counts far too much work. It's like paying full price for every metre of a climb that keeps getting easier."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "work-area",
+      "title": "adding up work: the area under the graph",
+      "voiceover": {
+        "text": "So how do we add up work when the force keeps changing? To lift the satellite slowly, you have to push it outwards with a force as big as gravity's pull. Work is force times distance, but only while the force stays constant. So split the climb into lots of thin steps. In each step, the lifting force barely changes, so the work you supply is that force times the step. Add up all the steps, and you get the area under the graph of force against distance. That's what integration does. It adds up work, step by step."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "finite-total",
+      "title": "the surprise: an endless climb, a finite total",
+      "voiceover": {
+        "text": "Now the surprise. Keep climbing forever. Further out, the steps add less and less, because the force falls with r squared. From the surface out to two Earth radii, the area is half of a fixed total. Out to three radii, it's two thirds. Out to ten radii, nine tenths. The area gets closer and closer to a finite amount, big G M m over the radius you start from. So even an endless climb, right out of Earth's pull, takes a finite amount of work."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "zero-at-infinity",
+      "title": "zero at infinity, negative everywhere else",
+      "voiceover": {
+        "text": "That's why we put the zero of gravitational potential energy at infinity. Out there, two masses no longer pull on each other, and that's true for every pair of masses in the universe. Now run the climb backwards. As an object falls in from infinity, gravity does work on it, so its potential energy drops below zero. At distance r, it has dropped by big G M m over r. So U equals minus big G M m over r."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "negative-meaning",
+      "title": "what the negative sign means",
+      "voiceover": {
+        "text": "On the graph, U is always negative, and it rises towards zero as r grows. It's steep near Earth, where gravity is strong, and almost flat far away. The negative sign doesn't mean the satellite has less than no energy. It means you'd have to supply that much energy to pull it free, from rest, all the way to infinity. Its size tells you how deep in Earth's gravity well it sits."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "changes",
+      "title": "only changes matter",
+      "voiceover": {
+        "text": "What actually matters is the change in potential energy. Moving from r one out to r two, the change is the final value minus the starting value, which is big G M m times one over r one minus one over r two. Moving outwards, U becomes less negative, so it increases, even though both values are below zero. Divide U by the small mass, and you get the energy per kilogram, called gravitational potential."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-geo",
+      "title": "worked example: back to the satellite",
+      "voiceover": {
+        "text": "Let's check our satellite. At Earth's surface, U is minus four point zero zero two times ten to the seventeen, over six point three seven one times ten to the six, which is minus six point two eight times ten to the ten joules. At geostationary radius, U is minus nine point four six times ten to the nine joules. The change is final minus initial, so plus five point three four times ten to the ten joules, exactly the true answer from the start."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mgh-limit",
+      "title": "where mgh still works",
+      "voiceover": {
+        "text": "So is m g h wrong? No, it's a very good shortcut near the ground. For a small height h, the exact change becomes big G M m h over R squared, and big G M over R squared is just g. So for small heights, the change is m g h. Its error is roughly h over R. Ten kilometres up, that's under a fifth of a per cent. Four hundred kilometres up, it's about six per cent. It always overestimates, because it uses the strongest pull for the whole climb. For satellites, use the exact formula."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's a picture to keep: Earth sits at the bottom of a well, and infinity is ground level at the top. Zero at the top, negative everywhere below. Climbing out makes U less negative, and that's an increase."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A five hundred kilogram satellite moves from an orbit of radius seven point zero times ten to the six metres to one of radius nine point zero times ten to the six metres. Calculate the change in its gravitational potential energy, using the data sheet values. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Use big G M m times one over r one minus one over r two. Big G M m is two point zero zero one times ten to the seventeen, and the bracket is about three point one seven times ten to the minus eight. So the change is about plus six point three five times ten to the nine joules, an increase, because it moved outwards. The classic slip is subtracting the wrong way, and getting a negative answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A space probe's gravitational potential energy changes from minus six point zero times ten to the ten joules, to minus four point zero times ten to the ten joules. Did it move closer to the planet, or further away? Calculate the change, and explain why both values are negative. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The change is final minus initial: minus four, minus minus six, so plus two point zero times ten to the ten joules. U went up, towards zero, so the probe moved further away. Both values are negative because the zero is at infinity, and the probe is closer than that. The slip is reading minus four as smaller than minus six, and saying it moved in."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "A satellite in orbit doesn't just have potential energy. It's moving too, so it has kinetic energy. In a higher orbit its potential energy is greater, but we know it moves more slowly. So what happens to its total energy? That's next: why a higher orbit has lower speed, but greater total energy."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

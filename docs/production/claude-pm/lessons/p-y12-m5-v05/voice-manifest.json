@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v05.md",
+  "sourceSha256": "5067664b7dfa5be5d2a1011ad90d03ef5bd1174bc39add3a50c27240a27a6e48",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the launcher on top of a thirty metre cliff, firing at twenty metres per second. Last time, on level ground, forty-five degrees went furthest, and thirty and sixty degrees tied. Now each ball has an extra thirty metres to fall after it comes back down to its launch level. So which of these three lands furthest from the cliff: thirty, forty-five or sixty degrees? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v05/hook.wav"
+    },
+    {
+      "id": "shortcuts-fail",
+      "text": "The level-ground shortcuts can't answer this. They came from setting the vertical displacement to zero, because the ball landed back at its launch level. Here, the sea is thirty metres below the launch point, so with up as positive, the vertical displacement at landing is minus thirty metres. Each ball reaches the launch level again just as it did on level ground, but then it keeps falling. So the flight isn't twice the time to the top any more, and the range formula doesn't apply. We go back to the two columns.",
+      "audioFile": "public/audio/phys-y12-m5-v05/shortcuts-fail.wav"
+    },
+    {
+      "id": "quadratic",
+      "text": "The method doesn't change: find the time from the vertical column, then carry it across. Use s equals u t plus a half a t squared, with s y equal to minus thirty. That gives minus thirty equals u y t minus four point nine t squared. Rearrange it, and it's a quadratic in t: four point nine t squared, minus u y t, minus thirty, equals zero. An equation with a t squared in it can have two answers, so we solve it with the quadratic formula.",
+      "audioFile": "public/audio/phys-y12-m5-v05/quadratic.wav"
+    },
+    {
+      "id": "worked-thirty-time",
+      "text": "Let's do thirty degrees. u y is twenty sin thirty, ten metres per second, and u x is twenty cos thirty, about seventeen point three two. So the quadratic is four point nine t squared, minus ten t, minus thirty, equals zero. The formula gives t equals ten, plus or minus the square root of ten squared plus four times four point nine times thirty, all over nine point eight. That square root is the square root of six hundred and eighty-eight, about twenty-six point two three. So t is about three point seven zero seconds, or minus one point six six seconds.",
+      "audioFile": "public/audio/phys-y12-m5-v05/worked-thirty-time.wav"
+    },
+    {
+      "id": "negative-root",
+      "text": "A negative time means before the launch. If you ran the same curve backwards, the ball would have been at sea level one point six six seconds before it was fired. That never happened, so we reject that root. The time of flight is three point seven zero seconds.",
+      "audioFile": "public/audio/phys-y12-m5-v05/negative-root.wav"
+    },
+    {
+      "id": "range-and-check",
+      "text": "Now carry the time across. The range is u x times t: seventeen point three two times three point six nine seven, about sixty-four point zero metres. Here's a quick check. The ball rises for about one point zero two seconds, to five point one metres above the cliff top. Then it falls about thirty-five metres to the sea, which takes about two point six eight seconds. Together, that's three point seven zero seconds again.",
+      "audioFile": "public/audio/phys-y12-m5-v05/range-and-check.wav"
+    },
+    {
+      "id": "forty-five-and-sixty",
+      "text": "The same steps work for the other two angles. At forty-five degrees, the flight lasts about four point three one seconds, and the ball lands about sixty point nine metres out. At sixty degrees, the ball stays up longest, about four point eight one seconds, but it lands only forty-eight point one metres from the cliff.",
+      "audioFile": "public/audio/phys-y12-m5-v05/forty-five-and-sixty.wav"
+    },
+    {
+      "id": "why-thirty-wins",
+      "text": "So from the cliff, thirty degrees goes furthest of the three, and thirty and sixty no longer tie. Here's why. The extra thirty metres of fall adds time to every flight, and the flatter launches gain the most, because they come back through the launch level more slowly. On top of that, a flatter launch has the bigger horizontal component to spend during that extra time. So the best angle slides below forty-five degrees.",
+      "audioFile": "public/audio/phys-y12-m5-v05/why-thirty-wins.wav"
+    },
+    {
+      "id": "three-samples",
+      "text": "Careful, though. Testing three angles doesn't prove that thirty degrees is the best possible angle. If we try many more, the range peaks at about thirty-two and a half degrees, a little above thirty. So from a height, the best angle is below forty-five, but you'd need more than three samples to find it exactly.",
+      "audioFile": "public/audio/phys-y12-m5-v05/three-samples.wav"
+    },
+    {
+      "id": "two-slips",
+      "text": "Two slips cost marks here. One is using plus thirty for the displacement, when the sea is below the launch point. The other is doubling the time to the top, as if the ground were level. That gives about two point zero four seconds, far too short.",
+      "audioFile": "public/audio/phys-y12-m5-v05/two-slips.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember both: down is negative, time is positive. If the landing is below the launch point, s y is negative, and of the two roots, you keep the positive one.",
+      "audioFile": "public/audio/phys-y12-m5-v05/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A ball is launched horizontally at six point zero metres per second, from five point zero metres above a level floor. Calculate its time of flight, and the horizontal distance it travels before it lands. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v05/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Launched horizontally, so u y is zero, and the quadratic shrinks to minus five equals minus four point nine t squared. So t is about one point zero one seconds. The horizontal distance is six point zero times that, about six point one metres. Using plus five instead gives a negative t squared, with no real answer at all, which is your clue that the sign is wrong.",
+      "audioFile": "public/audio/phys-y12-m5-v05/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A ball is launched at ten point zero metres per second, at thirty degrees above the horizontal, from a point five point zero metres above the level ground where it lands. Calculate the time it takes to land. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v05/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "u y is ten sin thirty, five metres per second, and s y is minus five point zero, so four point nine t squared minus five t minus five equals zero. The quadratic formula gives about one point six four seconds, or minus zero point six two, which is before the launch. So the time of flight is one point six four seconds. Doubling the time to the top, about one point zero two seconds, is the slip to avoid.",
+      "audioFile": "public/audio/phys-y12-m5-v05/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So when the landing is lower than the launch, solve the vertical column as a quadratic, keep the positive time, then carry it across. Here, we knew the vertical displacement and found the time. Next time, we'll know a horizontal distance instead, because a wall stands partway out from the cliff. Will the ball clear it?",
+      "audioFile": "public/audio/phys-y12-m5-v05/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v05/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "id": "phys-y12-m5-v01",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "21b76283eb2d2c07b1b49ff9491f4fce028bd171af38fa5b4e031b8788589035",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (which lands first?)",
+      "voiceover": {
+        "text": "Two identical steel balls sit side by side on the edge of a bench, one point two metres above the floor. When this spring-loaded rod is released, it knocks ball B straight off the edge at two metres per second, and at the same instant it lets ball A simply drop. Which one hits the floor first? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "reveal",
+      "title": "reveal (same height at every flash)",
+      "voiceover": {
+        "text": "Let's release it. They hit the floor at the same instant. Here it is again in slow motion, with a flash every tenth of a second. At every flash, the two balls are at exactly the same height. B's sideways motion doesn't change its fall at all. Why not? The answer gives us a way to analyse any projectile, as two motions sharing one clock."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "model",
+      "title": "projectile and the model",
+      "voiceover": {
+        "text": "Once B leaves the rod, nothing pushes it forward. An object moving under gravity alone is called a projectile, and its path is its trajectory. We'll make two assumptions. First, zero air resistance, the push of the air on a moving object. A feather fails that badly, but on the Moon, with no air, a hammer and a feather dropped together landed together. For a steel ball over a short drop, air resistance is small enough to ignore. Second, gravity's acceleration is constant, nine point eight metres per second squared, downwards."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "horizontal",
+      "title": "horizontal: no force, constant velocity",
+      "voiceover": {
+        "text": "Start with the horizontal direction. What forces act sideways on the ball in the air? With no air resistance, none. Its weight acts straight down. No horizontal force means no horizontal acceleration, so by Newton's first law, the horizontal velocity can't change. B keeps moving sideways at two metres per second for the whole flight, the same twenty centimetres between every pair of flashes. So horizontal displacement is horizontal velocity times time."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "vertical",
+      "title": "vertical: weight only, same fall",
+      "voiceover": {
+        "text": "Now the vertical direction. The only force is the ball's weight, so the vertical acceleration is g, straight down. Taking up as positive, a y is minus nine point eight metres per second squared. B was launched horizontally, so its initial vertical velocity is zero, just like A's. Same starting vertical velocity, same vertical acceleration, so their vertical motions are identical. Every tenth of a second, each ball gains another zero point nine eight metres per second downwards, so the gaps between flashes keep growing."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-clock",
+      "title": "two columns, one clock",
+      "voiceover": {
+        "text": "So one projectile becomes two simpler motions: constant velocity sideways, and constant acceleration vertically. Neither changes the other. Launching B faster doesn't hold it up, and falling doesn't slow it sideways. But both happen to one ball at the same moments, so they share one clock. Time is the only thing the two columns have in common. Find it from one motion, and you can use it in the other."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-time",
+      "title": "worked example: when does B land?",
+      "voiceover": {
+        "text": "Let's use that link to find where B lands. We know how far B falls, but not for how long, so start with the vertical column. Up is positive, so B's vertical displacement is minus one point two metres, its initial vertical velocity is zero, and a y is minus nine point eight. Using s equals u t plus a half a t squared, minus one point two equals minus four point nine t squared. So t squared is one point two over four point nine, and t is about zero point four nine seconds."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-distance",
+      "title": "worked example: from time to distance",
+      "voiceover": {
+        "text": "Now carry that time across to the horizontal column. s x equals u x times t, two metres per second times zero point four nine five seconds, which is about zero point nine nine metres. Here's a surprise. Launch B at four metres per second instead. Its fall time doesn't change at all, so it simply lands twice as far out. The vertical motion sets the time, and the horizontal motion turns that time into a distance."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "resultant-path",
+      "title": "one velocity, a curved path",
+      "voiceover": {
+        "text": "At any instant, though, the ball has just one velocity: the two components added tip to tail, a constant horizontal arrow plus a vertical arrow that keeps growing downwards. So as B falls, it speeds up, and its velocity turns steadily towards straight down. The path curves for the same reason. Horizontal distance grows in step with time, but the drop grows with time squared, so the curve bends more and more, into a parabola."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "slowing-mistake",
+      "title": "the slowing-down mistake",
+      "voiceover": {
+        "text": "Here's a common mistake. Near the end, B is heading steeply down, so it looks as if it has slowed sideways. It hasn't. Its horizontal arrow is the same length at landing as at launch. Only the vertical arrow has grown. A real ball does lose a little sideways speed, because air resistance pushes back on it, and that's exactly what our model leaves out."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid: two columns, one clock",
+      "voiceover": {
+        "text": "Here's a way to hold it together: two columns, one clock. Every horizontal quantity goes in one column, and every vertical quantity in the other. The only thing that crosses between them is time. When you're stuck on a projectile, ask which column can give you the time, then carry it across."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Two balls start one point two five metres above level ground at the same instant. Ball A is dropped, and ball B is launched horizontally at three point zero metres per second. Neglecting air resistance, calculate the time each ball takes to land, and how far ball B lands from the point directly below its start. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Both balls start with zero vertical velocity and fall one point two five metres, so minus one point two five equals minus four point nine t squared, and t is about zero point five one seconds for each. B's horizontal distance is three point zero times that time, about one point five metres. The classic slip is giving B a longer time because it travels further. Its sideways motion doesn't change its fall."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A ball is launched horizontally from the top of a cliff. Near the end of its flight, it's travelling steeply downwards, so a student claims its horizontal velocity must have decreased. Using the forces on the ball, explain whether the claim is correct when air resistance is neglected. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The claim is wrong in this model. The only force is the ball's weight, which acts straight down, so there's no horizontal force and no horizontal acceleration. The horizontal velocity keeps its launch value. The path is steeper because the vertical component has grown, not because the horizontal one shrank. Saying gravity slows it sideways is the slip to avoid."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So a projectile is two motions with one clock. Ball B started with its velocity pointing straight sideways. But what if the launcher points upwards at an angle? Then the launch velocity has a horizontal part and a vertical part, and next time we'll see how the angle splits it into two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m5-v17",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "b822dd6e04f6b63871b93cd364b18cde4bf75aa99ddf0fda426f870435748770",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (mass or distance?)",
+      "voiceover": {
+        "text": "Here are two metal spheres, each with a mass of seventy kilograms, with their centres one metre apart. Gravity pulls them together with a force of about three point three times ten to the minus seven newtons. That's about the weight of a fine grain of sand. Put one of them on the ground, and Earth pulls it down with about six hundred and ninety newtons. So what makes Earth's pull about two billion times stronger, its mass or its distance? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "the-law",
+      "title": "the law",
+      "voiceover": {
+        "text": "Newton's law of universal gravitation says every mass attracts every other mass. The force is big G times the two masses, divided by the distance between them squared. Big G is the gravitational constant, six point six seven times ten to the minus eleven, and it's tiny, which is why two everyday objects barely attract at all. The force pulls each mass straight towards the other, and by Newton's third law, the two forces are equal and opposite. So the sphere pulls the whole Earth up with six hundred and ninety newtons too."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "centre-distance",
+      "title": "measure from the centres",
+      "voiceover": {
+        "text": "The key detail is that r is the distance between the centres. But for a sphere sitting on Earth, r isn't zero. It's Earth's radius, about six point four million metres. Why the centre? Earth's mass is spread through a huge ball. Rock on the near side pulls harder, rock on the far side pulls more weakly and at an angle, and for a spherical body, all those pulls add up to exactly what you'd get if all the mass sat at the centre. That only works outside the surface, which is everywhere we'll use it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mass-factor",
+      "title": "mass: proportional",
+      "voiceover": {
+        "text": "Now the two factors, starting with mass. The force is proportional to each mass. Double Earth's mass and the pull doubles. Double the sphere's mass as well and it doubles again. So a bigger mass on either end means a proportionally stronger pull."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "inverse-square",
+      "title": "distance: inverse square",
+      "voiceover": {
+        "text": "Distance works the other way, and more strongly, because it's squared. Picture gravity's influence spreading out from a mass over bigger and bigger spheres. Double the distance and the same influence covers four times the area, so the force falls to a quarter. Triple it, and the force drops to a ninth. That's the inverse square law. It's a picture, not a proof, but it matches what we measure."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "test-graph",
+      "title": "testing it: force against one over r squared",
+      "voiceover": {
+        "text": "How would you test that? Keep both masses fixed and measure the force at several separations. A graph of force against distance is a steep curve that never quite reaches zero. But plot force against one over r squared, and the points fall on a straight line through the origin. That straight line is the evidence that force is proportional to one over r squared."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "puzzle-answer",
+      "title": "back to the puzzle",
+      "voiceover": {
+        "text": "Now back to our puzzle. Earth's centre is six point four million times further away than the other sphere's, and squaring that weakens the pull by a factor of about four times ten to the thirteen. But Earth's mass is nearly ten to the twenty-three times bigger than the sphere's. Mass wins by about two billion. So the answer is Earth's enormous mass, even though its distance works against it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "field-strength",
+      "title": "field strength: force per kilogram",
+      "voiceover": {
+        "text": "The force changes with whatever mass you put there, so to describe gravity at a place, we divide by the small mass. That gives the gravitational field strength, little g, the force on each kilogram. Little g equals big G times the planet's mass over r squared, and the small mass has cancelled. Its units are newtons per kilogram, the same as metres per second squared, so it's also the free-fall acceleration there. It's a vector, pointing towards the planet's centre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-surface",
+      "title": "worked example: g at the surface",
+      "voiceover": {
+        "text": "Let's predict g at Earth's surface, using the values on the HSC data sheet. Big G is six point six seven times ten to the minus eleven, Earth's mass is six point zero times ten to the twenty-four kilograms, and r is Earth's radius, six point three seven one times ten to the six metres. Then g comes out at about nine point eight six newtons per kilogram. That's close to the nine point eight we usually use. Real values vary a little, because Earth isn't a perfect sphere and it spins."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-altitude",
+      "title": "400 kilometres up",
+      "voiceover": {
+        "text": "Now go four hundred kilometres up, where the space station flies. The classic mistake is to put four hundred kilometres in for r. That gives a field thousands of times stronger than at the surface, which can't be right. r is measured from the centre, so add the radius, and r is six point seven seven one times ten to the six metres. Then g is about eight point seven three newtons per kilogram, still about eighty-nine per cent of its surface value."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "field-map",
+      "title": "the whole field",
+      "voiceover": {
+        "text": "Here's the whole picture. The field arrows all point to Earth's centre, crowded close to the surface and spreading apart further out. At two Earth radii from the centre, which is one radius up, g is a quarter of its surface value, about two point five. At three radii it's a ninth. It keeps getting weaker, but it never switches off at any distance, it just tends towards zero."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "To keep it straight: measure r from the middle, and double the distance, quarter the pull. And keep the two equations apart. The force uses both masses. Field strength uses only the planet's mass, because it's the force on each kilogram."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Mars has a mass of six point four two times ten to the twenty-three kilograms and a radius of three point four zero times ten to the six metres. Calculate the gravitational field strength at its surface, and express it as a percentage of Earth's value of nine point eight. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Use g equals big G M over r squared, with the radius squared. That gives about three point seven zero newtons per kilogram, around thirty-eight per cent of Earth's. The slip to avoid is forgetting to square the radius."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. At what altitude above Earth's surface is the gravitational field strength one quarter of its value at the surface? Give your answer in metres, using Earth's radius of six point three seven one times ten to the six metres. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "A quarter of the field needs double the distance from the centre, so r is two Earth radii. The altitude is r minus the radius, which is one Earth radius, six point three seven one times ten to the six metres. The classic slip is answering two Earth radii, which is the distance from the centre, not the altitude."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So four hundred kilometres up, gravity is still almost ninety per cent as strong as on the ground. Then why doesn't a satellite up there fall straight down? It's moving sideways, very fast. Next time, we'll see how gravity keeps it going round in a circle."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v06.md",
+  "sourceSha256": "3ac3133c669657c595188ff8540cbf97f1c21dd1c0ba2ff564d665bc28d58643",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Last time we found where a ball lands when it's launched from a cliff. Now there's something in the way. This ball leaves a cliff top fifteen metres above the sea, at eighteen metres per second, thirty-five degrees above the horizontal. Twenty-five metres out stands a wall, eight metres tall, measured from sea level. The wall is lower than the cliff, so surely it clears? And what if the ball were launched straight sideways at the same speed? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v06/hook.wav"
+    },
+    {
+      "id": "reveal",
+      "text": "Here's the thirty-five degree launch. It sails over. Now the sideways launch, same speed. It hits the wall. So a wall lower than the cliff guarantees nothing. What matters is how high the ball is at one moment, the moment it reaches the wall's horizontal position. How far above the wall top it passes then is called the clearance. Finding it is our whole question.",
+      "audioFile": "public/audio/phys-y12-m5-v06/reveal.wav"
+    },
+    {
+      "id": "set-up",
+      "text": "Let's set it up. Put the origin at the launch point, with up as positive, so a y is minus nine point eight metres per second squared. The sea is fifteen metres below the launch point, and the wall top is eight metres above the sea. Eighteen metres per second is the size of the launch velocity, not either component, so resolve it: u x is eighteen cos thirty-five, about fourteen point seven metres per second, and u y is eighteen sin thirty-five, about ten point three, upwards. Keep the unrounded values in your calculator. And the wall is twenty-five metres away horizontally.",
+      "audioFile": "public/audio/phys-y12-m5-v06/set-up.wav"
+    },
+    {
+      "id": "time-to-wall",
+      "text": "Which column can tell us when the ball reaches the wall? Not the vertical one, because the height there is exactly what we don't know. But we do know the horizontal distance, and horizontally the ball keeps a constant velocity. So s x equals u x t, which gives t equals twenty-five over fourteen point seven four, about one point six nine six seconds. Two columns, one clock, but this time the horizontal column sets the clock, and the time carries across.",
+      "audioFile": "public/audio/phys-y12-m5-v06/time-to-wall.wav"
+    },
+    {
+      "id": "height-at-wall",
+      "text": "Now use that time in the vertical column. s y equals u y t plus a half a y t squared. The first term is how high the launch velocity alone would carry the ball by then, ten point three two times one point six nine six, about seventeen point five metres. The second term is how far gravity has pulled it back down in the same time, four point nine t squared, about fourteen point one metres. Subtract, and the ball is three point four two metres above the launch point when it reaches the wall. It's already past its peak and falling, but it's still above the cliff top.",
+      "audioFile": "public/audio/phys-y12-m5-v06/height-at-wall.wav"
+    },
+    {
+      "id": "datum-clearance",
+      "text": "Careful here. Three point four two metres is measured from the launch point, but the wall is measured from the sea. Heights only compare when they're measured from one datum, one level that every height is measured from. Take sea level. The launch point is fifteen metres up, so the ball is at fifteen plus three point four two, eighteen point four two metres above the sea. The wall top is at eight. So the clearance is eighteen point four two minus eight, ten point four two, about ten point four metres. Yes, it clears.",
+      "audioFile": "public/audio/phys-y12-m5-v06/datum-clearance.wav"
+    },
+    {
+      "id": "rounding-trap",
+      "text": "Here's a trap worth seeing. Suppose you round u y to ten point three two and the time to one point seven zero seconds, then round each term to three figures. Seventeen point five minus fourteen point two gives three point three. That's twelve centimetres too low, and the clearance comes out as ten point three instead of ten point four. Subtracting two big, nearly equal numbers magnifies any rounding in them. So keep the full values in your calculator, and round only the final answer.",
+      "audioFile": "public/audio/phys-y12-m5-v06/rounding-trap.wav"
+    },
+    {
+      "id": "sideways-contrast",
+      "text": "Now the sideways launch that hit the wall. Same steps. It reaches the wall after twenty-five over eighteen, one point three nine seconds. It started with no vertical velocity, so in that time it simply falls four point nine t squared, about nine point four five metres. That leaves it about five point five metres above the sea, around two and a half metres below the wall top. It gets to the wall sooner, but it has no upward velocity to lift it first. The launch angle changes both when the ball arrives and how high it is.",
+      "audioFile": "public/audio/phys-y12-m5-v06/sideways-contrast.wav"
+    },
+    {
+      "id": "method",
+      "text": "So here's the method for any obstacle. Where is it? When does the ball get there? How high is the ball at that time? Then compare, on one datum. Where, when, how high, compare. Notice the clock runs the other way from a landing problem. There, the vertical motion gave us the time. Here, the obstacle's horizontal position gives the time, and the vertical column turns that time into a height.",
+      "audioFile": "public/audio/phys-y12-m5-v06/method.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A ball is launched at twenty point zero metres per second, thirty degrees above the horizontal, from a platform two point zero metres above level ground. A wall three point zero metres high stands twenty point zero metres away horizontally. Neglecting air resistance, determine whether the ball clears the wall, and by how much. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v06/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "u x is twenty cos thirty, about seventeen point three, so the ball reaches the wall after twenty over seventeen point three, one point one five seconds. Then s y is ten t minus four point nine t squared, about plus five point zero one metres. On the ground datum that's two plus five point zero one, about seven point zero one metres, so it clears the three metre wall by about four point zero one metres. The classic slip is comparing five point zero one with three and forgetting the platform.",
+      "audioFile": "public/audio/phys-y12-m5-v06/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A ball is launched from a point twelve point zero metres above the ground. When it reaches a wall, it is two point six metres below its launch point. The wall is nine point zero metres tall. Determine whether the ball clears the wall, and by how much. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v06/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Put both heights on the ground datum. The ball is at twelve minus two point six, nine point four metres above the ground. The wall top is at nine point zero, so the ball clears it by zero point four metres, just forty centimetres. The slip is seeing minus two point six and deciding it must hit, or comparing two point six with nine directly. Heights only compare on the same datum.",
+      "audioFile": "public/audio/phys-y12-m5-v06/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So to clear a wall, find when the ball gets there, then how high it is. Now take the wall away and put a target on level ground, seventy-two metres from a launcher firing at thirty metres per second. What angle should it aim at? It turns out there are two answers, and next time we'll see why.",
+      "audioFile": "public/audio/phys-y12-m5-v06/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v06/key-notes.wav"
+    }
+  ]
+}

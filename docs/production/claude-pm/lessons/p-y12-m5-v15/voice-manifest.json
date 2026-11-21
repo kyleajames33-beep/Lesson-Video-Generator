@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v15.md",
+  "sourceSha256": "3f3df0e97e8ee71aaab7153db039eac5721fc899f8634b53c1dcd34fea3acd66",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that car going round the banked bend at the design speed. The inward force on it is about two and a half thousand newtons, and one lap is about five hundred metres. Force times distance would be about one point two six million joules, every single lap. So does the inward force really do that much work? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v15/hook.wav"
+    },
+    {
+      "id": "what-work-means",
+      "text": "Remember what work is. A force does work when it pushes something along the direction it moves. The work is the force, times the displacement, times the cosine of the angle between them. Push along the motion, and the angle is zero, so all of the force counts. Push at right angles to the motion, and the angle is ninety degrees. Cosine ninety is zero, so that force does no work at all.",
+      "audioFile": "public/audio/phys-y12-m5-v15/what-work-means.wav"
+    },
+    {
+      "id": "step-by-step",
+      "text": "Now chop the lap into tiny steps. In each step, the car moves a tiny distance along the tangent. But the inward force points at the centre, at right angles to that step. So in every step, the work done is zero. Add up zero, step after step, and the total over a whole lap is zero too. The one point two six million joules assumed the force pointed along the path. It never does.",
+      "audioFile": "public/audio/phys-y12-m5-v15/step-by-step.wav"
+    },
+    {
+      "id": "work-kinetic-energy",
+      "text": "That fits with the work-energy theorem. The net work done on an object equals its change in kinetic energy. Zero work means the kinetic energy doesn't change, so the speed doesn't change. The car's kinetic energy is a half m v squared, about a hundred thousand joules, and it stays at that value lap after lap. If one point two six million joules really went in each lap, the car would be going more than three times faster after just one lap.",
+      "audioFile": "public/audio/phys-y12-m5-v15/work-kinetic-energy.wav"
+    },
+    {
+      "id": "turns-velocity",
+      "text": "So what does the inward force do, if it doesn't change the energy? It changes the direction of the velocity, and only the direction. In the velocity circle from the first circular motion video, the velocity arrow swings round, but its length never changes. The acceleration is always at right angles to the velocity, so it turns the arrow without stretching it.",
+      "audioFile": "public/audio/phys-y12-m5-v15/turns-velocity.wav"
+    },
+    {
+      "id": "total-energy",
+      "text": "What about the total energy? On a level bend the car's height doesn't change, so its gravitational potential energy stays the same. Its kinetic energy stays the same too. So on this level circle, the total mechanical energy is constant, because the speed and the height both stay the same. A real car's engine does do some work, but only to replace the energy lost to air resistance and rolling resistance. The net work on the car is still zero.",
+      "audioFile": "public/audio/phys-y12-m5-v15/total-energy.wav"
+    },
+    {
+      "id": "energy-mistake",
+      "text": "A common mistake is thinking that a net force must change an object's energy. A net force always changes the velocity. But it only changes the speed if part of it points along the path. In uniform circular motion, none of it does.",
+      "audioFile": "public/audio/phys-y12-m5-v15/energy-mistake.wav"
+    },
+    {
+      "id": "vertical-contrast",
+      "text": "Now a contrast, and it goes beyond uniform circular motion. A ball on a string can also go round a vertical circle. The tension still points to the centre, at right angles to the motion, so it still does no work. But the weight always points straight down. Except at the very top and bottom, part of the weight points along the path. So gravity does work. The ball speeds up on the way down, and slows on the way up. Its speed changes, so this is non-uniform circular motion.",
+      "audioFile": "public/audio/phys-y12-m5-v15/vertical-contrast.wav"
+    },
+    {
+      "id": "energy-two-points",
+      "text": "We can use energy to link two points. Say a zero point five zero kilogram ball on a zero point eight zero metre string moves at four point zero metres per second at the top. On the way down to the bottom, it falls two radii, one point six metres. Gravity does m g h of work, about seven point eight four joules. That all becomes extra kinetic energy. So at the bottom, v squared is sixteen plus four g r, and v is about six point eight eight metres per second.",
+      "audioFile": "public/audio/phys-y12-m5-v15/energy-two-points.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the difference. Across steers, along speeds. The part of a force across the path steers the object. Only the part along the path speeds it up or slows it down.",
+      "audioFile": "public/audio/phys-y12-m5-v15/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A zero point three zero kilogram ball on a smooth horizontal table is tied to a string, and moves in a circle of radius zero point six zero metres at a constant four point zero metres per second. Calculate the tension in the string, and state the work done by the tension in one revolution, with a reason. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v15/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The tension is the only horizontal force, so it equals m v squared over r. That's zero point three zero times sixteen, over zero point six zero, which is eight point zero newtons. The work it does in a revolution is zero, because at every instant it's at right angles to the ball's motion. The classic slip is multiplying eight newtons by the circumference, and getting about thirty joules.",
+      "audioFile": "public/audio/phys-y12-m5-v15/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A zero point four zero kilogram stone on a zero point five zero metre string moves in a vertical circle. At the top, its speed is three point zero metres per second. Ignoring air resistance, calculate its speed at the bottom, and explain why this isn't uniform circular motion. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v15/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "From the top to the bottom, the stone drops two radii, one point zero metre. So v squared at the bottom is nine, plus two times nine point eight times one point zero, which is twenty-eight point six, and v is about five point three five metres per second. Gravity has a part along the path, so it does work and the speed changes. That's why the motion isn't uniform. The slip is saying the speed stays at three point zero, because the tension does no work. Gravity still does.",
+      "audioFile": "public/audio/phys-y12-m5-v15/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So F equals m v squared over r tells us the inward force a circle needs, and that force does no work. But how do we know the formula is right? We can test it. Here's a rubber bung on a string. The string runs down through a short glass tube, to some hanging masses. The hanging weight keeps the string tight, and pulls the bung inwards. So can measurements of this bung test F equals m v squared over r?",
+      "audioFile": "public/audio/phys-y12-m5-v15/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v15/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v20.md",
+  "sourceSha256": "802608548aee141d689e0807e586bfd6b05d00aab39f002a2123b708dbbf62e3",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Let's zoom out to the Sun and follow Halley's comet. In nineteen eighty-six it swung past the Sun at less than six tenths of Earth's distance from it. Then it headed out beyond Neptune, more than thirty-five times Earth's distance, and it won't be back until twenty sixty-one. It spends decades crawling far out, and only months racing near the Sun. Why does it move so much faster up close? Have a think.",
+      "audioFile": "public/audio/phys-y12-m5-v20/hook.wav"
+    },
+    {
+      "id": "kepler-laws",
+      "text": "About four hundred years ago, Johannes Kepler worked through twenty years of careful measurements of Mars, made by Tycho Brahe without a telescope. No circle fitted them, however he adjusted it. What fitted was an ellipse. Kepler summed up planetary motion in three laws. They describe how planets move, and Newton's gravity later explained why.",
+      "audioFile": "public/audio/phys-y12-m5-v20/kepler-laws.wav"
+    },
+    {
+      "id": "law-1-ellipse",
+      "text": "Kepler's first law: each planet moves on an ellipse, with the Sun at one focus. An ellipse has two special points called foci. From any point on it, the two distances to the foci always add to the same total. The Sun sits at one focus, and the other is just empty space. Half the longest width is called the semi-major axis, a. The closest point to the Sun is the perihelion, and the furthest is the aphelion. Squash the foci together, and the ellipse becomes a circle, where a is just the radius.",
+      "audioFile": "public/audio/phys-y12-m5-v20/law-1-ellipse.wav"
+    },
+    {
+      "id": "law-2-areas",
+      "text": "Kepler's second law: a line from the Sun to the planet sweeps out equal areas in equal times. Near the Sun, that line is short, so to sweep the same area in a month, the planet has to cover a longer stretch of its path. Far away, the line is long, and a short stretch does the job. So a planet moves fastest at perihelion, and slowest at aphelion.",
+      "audioFile": "public/audio/phys-y12-m5-v20/law-2-areas.wav"
+    },
+    {
+      "id": "gravity-cause",
+      "text": "Gravity explains it. Gravity always points at the Sun. As the planet falls inwards, part of that pull points along its motion, so it speeds up. On the way out, part of the pull points backwards, and it slows down. So gravity does work on it on the way in, and against it on the way out. In a circle, gravity is always at right angles to the motion, so the speed never changes. And because gravity points straight at the Sun, it never twists the planet around the Sun. That's why the area swept each month stays the same.",
+      "audioFile": "public/audio/phys-y12-m5-v20/gravity-cause.wav"
+    },
+    {
+      "id": "end-speeds",
+      "text": "At perihelion and aphelion, the velocity is at right angles to the line from the Sun. Over a short time, each swept area is close to a thin triangle, half times r times v times t. Equal areas means r times v is the same at both points. Earth is a hundred and forty-seven million kilometres from the Sun in January, and a hundred and fifty-two million in July. So in January it moves about three per cent faster. NASA lists thirty point three kilometres per second, against twenty-nine point three.",
+      "audioFile": "public/audio/phys-y12-m5-v20/end-speeds.wav"
+    },
+    {
+      "id": "law-3",
+      "text": "Kepler's third law links the size of an orbit to its period. T squared is proportional to a cubed. For circles, we've already derived it from gravity: r cubed over T squared equals big G M over four pi squared. Newton showed the same holds for an ellipse, with the semi-major axis a in place of r. Measure a in astronomical units, Earth's average distance from the Sun, and T in years. Earth gives one and one. Mars has an a of one point five two four, and a period of one point eight eight one years. Cube one, square the other, and both come to three point five four.",
+      "audioFile": "public/audio/phys-y12-m5-v20/law-3.wav"
+    },
+    {
+      "id": "worked-halley",
+      "text": "Now Halley. Its closest distance from the Sun is zero point five eight seven astronomical units, and its furthest is thirty-five point two five. The long axis runs from one end to the other, so a is half their sum, about seventeen point nine units. With T squared equal to a cubed, T is seventeen point nine to the power one and a half, about seventy-six years. That matches the comet's real return. Notice we didn't need the Sun's mass, because Earth's orbit sets the constant.",
+      "audioFile": "public/audio/phys-y12-m5-v20/worked-halley.wav"
+    },
+    {
+      "id": "extreme-mistake",
+      "text": "Here's the classic mistake: using one of the distances as a. Use the furthest distance, and you'd predict over two hundred years. Use the closest, and you'd get less than half a year. The third law needs the semi-major axis, the average of the two extremes. A circle is the one case where those two distances are equal, so a is just r.",
+      "audioFile": "public/audio/phys-y12-m5-v20/extreme-mistake.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "To keep the three laws apart, think shape, speed, size. The first law gives the shape, an ellipse with the Sun at one focus. The second gives the speed, fast when close and slow when far. And the third links the size, a, to the period, with T squared proportional to a cubed.",
+      "audioFile": "public/audio/phys-y12-m5-v20/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Jupiter's orbit around the Sun has a semi-major axis of five point two zero astronomical units. Using Earth's orbit as a reference, calculate Jupiter's orbital period in Earth years. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v20/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Both orbit the Sun, so T squared over a cubed is the same, and for Earth it's one in these units. So T squared equals five point two zero cubed, about one hundred and forty-one, and T is about eleven point nine years. The slip to avoid is cubing the period and squaring the distance, the wrong way round.",
+      "audioFile": "public/audio/phys-y12-m5-v20/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Mars is one point three eight one astronomical units from the Sun at perihelion, and one point six six six at aphelion. At which of these points is Mars moving faster, and by what factor? Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v20/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "It's faster at perihelion, the closer point. r times v is the same at both points, so the speed ratio is the inverse of the distance ratio: one point six six six over one point three eight one, about one point two one. The slip is flipping the ratio and saying it's faster far away.",
+      "audioFile": "public/audio/phys-y12-m5-v20/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So Kepler's laws describe the shape, speed and size of every orbit, and gravity explains them. As Halley's comet falls in, it speeds up, trading one kind of energy for another. But how much gravitational energy does something have out in space? Next, we'll see why that energy uses a zero at infinity.",
+      "audioFile": "public/audio/phys-y12-m5-v20/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v20/key-notes.wav"
+    }
+  ]
+}

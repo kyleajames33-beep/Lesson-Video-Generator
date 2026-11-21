@@ -1,0 +1,96 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v11.md",
+  "sourceSha256": "96e791105a50a037406a97f8fdeb9e2f3da88d0abae1379f2c5494233d516ffe",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that crane again, seen from above, turning at a steady rate. The tip of its jib goes round and round a circle, and its speed never changes. Each of these arrows shows the tip's velocity at one moment, and they're all the same length. So here's a question. Is the tip of the jib accelerating? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v11/hook.wav"
+    },
+    {
+      "id": "speed-velocity",
+      "text": "Speed only tells you how fast something's going. Velocity tells you how fast, and which way. Look at the four arrows copied side by side. They're the same length, so the speed is the same, but they point four different ways, so the velocity is different each time. Acceleration is the rate of change of velocity, not of speed. So yes, the tip is accelerating, the whole way round. Moving in a circle at a constant speed like this is called uniform circular motion.",
+      "audioFile": "public/audio/phys-y12-m5-v11/speed-velocity.wav"
+    },
+    {
+      "id": "delta-v",
+      "text": "So which way is the velocity changing? Take two moments a little apart. Copy their velocity arrows so they start from the same point. The change in velocity, delta v, is the arrow that takes you from the tip of the first to the tip of the second. Now bring the two moments closer and closer together. The change ends up pointing straight at the centre of the circle. So the acceleration points towards the centre too. It's called centripetal acceleration, which means centre-seeking, and it's always at right angles to the velocity.",
+      "audioFile": "public/audio/phys-y12-m5-v11/delta-v.wav"
+    },
+    {
+      "id": "describing-motion",
+      "text": "To put numbers on this, we need a few ways to describe circular motion. Here's a car going round a circular track of radius fifty metres. It takes twelve seconds to do one lap. That's the period, capital T, the time for one complete revolution. The frequency, f, is the number of revolutions each second, so f equals one over T. We can also describe how fast it turns. An angle in radians is the arc length divided by the radius, so one full lap is two pi radians. Angular velocity, omega, is the angle turned divided by the time taken. For one lap, that's two pi over T.",
+      "audioFile": "public/audio/phys-y12-m5-v11/describing-motion.wav"
+    },
+    {
+      "id": "worked-v-omega-f",
+      "text": "Let's find the car's speed. In one period it travels one circumference, two pi r. So v equals two pi r over T, which is two pi times fifty, over twelve. That's about twenty-six point two metres per second. Omega is two pi over twelve, about zero point five two four radians per second. And the frequency is one over twelve, about zero point zero eight three three hertz. As a check, f times T should equal one, and it does.",
+      "audioFile": "public/audio/phys-y12-m5-v11/worked-v-omega-f.wav"
+    },
+    {
+      "id": "further-out-faster",
+      "text": "Put those together and you get v equals omega r, because two pi over T is just omega. This explains something about the crane. Every point on the jib turns through the same angle in the same time, so every point has the same omega. But a point twice as far out goes round a circle twice as big, so it moves twice as fast. When omega is fixed, speed grows in proportion to the radius.",
+      "audioFile": "public/audio/phys-y12-m5-v11/further-out-faster.wav"
+    },
+    {
+      "id": "size-of-a",
+      "text": "Now, how big is the centripetal acceleration? Here's a neat way to see it. Back to the car. Take its velocity arrows from all the way round and start them from one point. As the car goes once round the track, the tip of its velocity arrow goes once round a circle too, a circle of radius v. The acceleration is how fast the velocity changes, so it's the distance that tip travels, two pi v, divided by the period. And the period is two pi r over v. Substitute that in, and the two pis cancel, leaving a equals v squared over r. Using v equals omega r, that's also omega squared r.",
+      "audioFile": "public/audio/phys-y12-m5-v11/size-of-a.wav"
+    },
+    {
+      "id": "car-acceleration",
+      "text": "For the car, a equals twenty-six point two squared, over fifty. That's about thirteen point seven metres per second squared, towards the centre. That's bigger than the acceleration of a falling object. And notice the square. At the same radius, twice the speed means four times the acceleration. At the same speed, twice the radius means half the acceleration.",
+      "audioFile": "public/audio/phys-y12-m5-v11/car-acceleration.wav"
+    },
+    {
+      "id": "net-force-inwards",
+      "text": "Newton's second law says the net force points the same way as the acceleration. So anything in uniform circular motion needs a net force pointing towards the centre, of size m v squared over r. This is called the centripetal force. But it isn't a new kind of force. It's just a name for a job that real forces do, the overall push or pull towards the centre. Tension, friction, gravity or a normal force can do that job, on their own or together.",
+      "audioFile": "public/audio/phys-y12-m5-v11/net-force-inwards.wav"
+    },
+    {
+      "id": "flung-outwards",
+      "text": "A common idea is that things moving in a circle get flung outwards. Picture a steel ball on a smooth table, kept in a circle by a string tied to a peg. Now cut the string. With no net force, the ball keeps the velocity it had at that instant, and it moves off in a straight line along the tangent, the line that just touches the circle. It doesn't fly straight out from the centre. Nothing was ever pushing it outwards. The string was only ever pulling it in.",
+      "audioFile": "public/audio/phys-y12-m5-v11/flung-outwards.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a quick way to remember why the square matters. Twice as fast, four times the pull. That holds when the mass and the radius stay the same, because the force needed is m v squared over r.",
+      "audioFile": "public/audio/phys-y12-m5-v11/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A laboratory rotor has a radius of zero point three zero metres and completes four point zero revolutions per second. Calculate the angular velocity of the rotor, the speed of a point on its rim, and the centripetal acceleration of that point. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v11/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Four revolutions per second means omega is two pi times four point zero, about twenty-five point one radians per second. The rim speed is omega r, twenty-five point one times zero point three zero, about seven point five metres per second. And a is v squared over r, about one hundred and ninety metres per second squared. The classic slip is writing omega as four, but four is the frequency in hertz, not the angle per second.",
+      "audioFile": "public/audio/phys-y12-m5-v11/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Two identical cars travel around the same circular track at constant speeds. Car B travels at twice the speed of car A. Compare their centripetal accelerations, and the net forces on them. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v11/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Same track, so the same radius. Acceleration is v squared over r, so doubling v makes it two squared, four times as big. The cars are identical, so they have the same mass, and the net force is four times as big too. The slip is saying twice, which forgets that the speed is squared.",
+      "audioFile": "public/audio/phys-y12-m5-v11/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So a car going round a bend at a steady speed is accelerating towards the centre, and something has to provide a net force towards the centre. Here's a car on a flat roundabout. Its weight pulls down, and the road pushes up. So which real force can pull it inwards?",
+      "audioFile": "public/audio/phys-y12-m5-v11/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v11/key-notes.wav"
+    }
+  ]
+}

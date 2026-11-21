@@ -1,0 +1,86 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v10.md",
+  "sourceSha256": "1f66d64a7aaf92950a290d578fd257f23c163d8b6fd2736086b2f77740068e39",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that tower crane. Its load is four tonnes, hanging thirty metres out along the jib. On the other side, only six metres behind the mast, sits a twenty tonne concrete counterweight. The counterweight is five times heavier than the load. So why doesn't the crane tip over backwards? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v10/hook.wav"
+    },
+    {
+      "id": "crane-torques",
+      "text": "Let's compare turning effects about the top of the mast, and leave aside the crane's own steel arms for now. The load's weight is four thousand kilograms times nine point eight, about thirty-nine thousand newtons. Thirty metres out, that's a torque of about one point one eight million newton metres, clockwise. The counterweight's weight is five times bigger, but its distance is five times smaller, so its torque is the same size, one point one eight million newton metres, anticlockwise. The turning effects cancel, and the crane doesn't rotate. That's how torques balance.",
+      "audioFile": "public/audio/phys-y12-m5-v10/crane-torques.wav"
+    },
+    {
+      "id": "equilibrium-signs",
+      "text": "When the turning effects cancel, the net torque is zero, and the object is in rotational equilibrium. Its rotation doesn't change. If it's still, it stays still, and if it's turning at a steady rate, it keeps turning steadily. To add torques, we give them signs. Take anticlockwise as positive and clockwise as negative. Then rotational equilibrium means the signed torques add to zero. In other words, the clockwise torques equal the anticlockwise torques.",
+      "audioFile": "public/audio/phys-y12-m5-v10/equilibrium-signs.wav"
+    },
+    {
+      "id": "seesaw-pivot",
+      "text": "Let's use that on a seesaw. A uniform seesaw, three metres long, is pivoted at its centre. A thirty kilogram child sits one point two metres to the left of the pivot. Where must a twenty-five kilogram child sit on the right to balance it? First, choose the point to take torques about: the pivot. Two forces act right at that point: the support pushing up, and the seesaw's own weight, which acts at its centre because it's uniform. Both lines of action pass through the pivot, so neither makes any torque.",
+      "audioFile": "public/audio/phys-y12-m5-v10/seesaw-pivot.wav"
+    },
+    {
+      "id": "signed-sum",
+      "text": "That leaves the two children's weights. The seesaw is level, so each weight acts at right angles to it, and each torque is just distance times weight. The left child's weight turns the seesaw anticlockwise, so it's positive: thirty g times one point two. The right child's weight turns it clockwise, so it's negative: twenty-five g times r. For balance, thirty g times one point two, minus twenty-five g times r, equals zero.",
+      "audioFile": "public/audio/phys-y12-m5-v10/signed-sum.wav"
+    },
+    {
+      "id": "solve-check",
+      "text": "Now solve. Notice that g cancels, because both forces are weights in the same gravity. So r equals thirty times one point two, over twenty-five, which is one point four four metres. Check it makes sense. Each half of the seesaw is one point five metres long, so one point four four metres fits, just. The lighter child sits further out, and that's the whole trick: less force, more distance.",
+      "audioFile": "public/audio/phys-y12-m5-v10/solve-check.wav"
+    },
+    {
+      "id": "torque-not-force",
+      "text": "But balanced torques aren't the whole story. The torque equation says nothing about the support. For the seesaw not to fall, the upward support must also equal the total weight: both children, plus the seesaw itself. We weren't told the seesaw's mass, so we can't find that force from these numbers. And the two conditions really are separate. Push up on one end and down on the other with equal forces. The net force is zero, yet the seesaw starts to turn. Complete balance needs zero net force and zero net torque.",
+      "audioFile": "public/audio/phys-y12-m5-v10/torque-not-force.wav"
+    },
+    {
+      "id": "two-slips",
+      "text": "Here's a common slip. Seat the lighter child at one point two metres as well, the same distance. Now the anticlockwise torque is bigger, by five g times one point two, about fifty-nine newton metres, so the left side goes down. Equal distances only balance equal weights. The other slip is measuring distances from the end of the seesaw. Torques are always measured from the pivot.",
+      "audioFile": "public/audio/phys-y12-m5-v10/two-slips.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a short way to remember it. Heavy near, light far. More precisely, mass times distance from the pivot must match on both sides. That shortcut only works when every force is a weight, at right angles to a level beam, and the beam's own weight acts at the pivot.",
+      "audioFile": "public/audio/phys-y12-m5-v10/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A uniform metre rule is pivoted at its fifty centimetre mark. A two hundred gram mass hangs from the twenty centimetre mark. Where must a one hundred and fifty gram mass hang for the rule to balance horizontally? Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v10/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "The two hundred gram mass is thirty centimetres from the pivot, so its torque is zero point two zero zero g times zero point three zero. The rule's own weight acts at the pivot, so it adds nothing. For balance, zero point one five zero g times r must match, and r is zero point four zero metres. So the mass hangs at the ninety centimetre mark. The classic slip is answering forty centimetres, the distance from the pivot, when the question asked for the position on the rule.",
+      "audioFile": "public/audio/phys-y12-m5-v10/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A light beam is pivoted at its centre. A twenty newton force acts downwards one point five metres to the left of the pivot, and a thirty newton force acts downwards one point zero metre to the right. Show that the beam is in rotational equilibrium, and find the force from the pivot. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v10/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Anticlockwise, twenty times one point five is thirty newton metres. Clockwise, thirty times one point zero is also thirty newton metres. The signed sum is zero, so the beam is in rotational equilibrium. For the forces to balance too, the pivot must push up with twenty plus thirty, fifty newtons, because the beam is light. The slip is saying the pivot force is zero because the torques cancel.",
+      "audioFile": "public/audio/phys-y12-m5-v10/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So balanced torques mean the rotation doesn't change. A crane turning round on its mast at a steady rate is in that state. Look down on the tip of its jib from above. It moves at a constant speed, but its direction keeps changing, all the way round the circle. So is its velocity changing? And if it is, what's making it change?",
+      "audioFile": "public/audio/phys-y12-m5-v10/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v10/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m5-v12.md",
+  "sourceSha256": "8d39bcc6da1a69f0127b15e0272f879d3ec4bd1636bf1ef1d408f771bf99ac4d",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's that car on the flat roundabout. To go round, it needs a net force pointing towards the centre. Its weight pulls down, and the road pushes up, so neither of those can do it. So which force is pulling the car inwards? Is it air resistance, friction from the road, or a separate centripetal force? Make a prediction.",
+      "audioFile": "public/audio/phys-y12-m5-v12/hook.wav"
+    },
+    {
+      "id": "forces-on-car",
+      "text": "Let's look at the car from behind, as it drives into the screen, with the centre of the bend on the left. Its weight acts straight down. The road pushes straight up with a normal force, the push of a surface at right angles to it. The car isn't moving up or down, so these two forces balance, and N equals m g. Air resistance pushes backwards along the path, against the motion, so it doesn't point inwards either.",
+      "audioFile": "public/audio/phys-y12-m5-v12/forces-on-car.wav"
+    },
+    {
+      "id": "friction-job",
+      "text": "That leaves friction, the grip between the tyres and the road. Think about what the car would do without it. From the last video, with no inward force it would carry straight on along the tangent. So compared with the curving road, the tyres would start to slide outwards. Friction opposes that sliding, so it pushes on the tyres inwards, towards the centre. The tyres grip rather than slide, so this is static friction. So the answer is friction. There's no separate centripetal force. Friction is doing the centripetal job.",
+      "audioFile": "public/audio/phys-y12-m5-v12/friction-job.wav"
+    },
+    {
+      "id": "force-equations",
+      "text": "So in this rear view there are three forces to draw. Along the path, the engine's drive balances air resistance, so we leave that pair out. Vertically, the normal force balances the weight. Sideways, friction is the only force, so it's the whole net force towards the centre. That gives us the key equation for a flat curve. Friction equals m v squared over r.",
+      "audioFile": "public/audio/phys-y12-m5-v12/force-equations.wav"
+    },
+    {
+      "id": "worked-friction-needed",
+      "text": "Let's try it. A twelve hundred kilogram car rounds a flat curve of radius forty metres at fifteen metres per second. How much friction does it need? Friction equals m v squared over r, so that's twelve hundred times fifteen squared, over forty. That's six thousand seven hundred and fifty newtons, towards the centre. That's the friction the turn needs. It isn't the most friction the road could give, and that difference matters.",
+      "audioFile": "public/audio/phys-y12-m5-v12/worked-friction-needed.wav"
+    },
+    {
+      "id": "the-limit",
+      "text": "Static friction can only grow so far. Its maximum is mu s times N, where mu s, the coefficient of static friction, is a number that describes how well the two surfaces grip. On a flat road N is m g, so the most friction available is mu s m g. The car is at its top speed when the friction it needs just equals the most that's available. So m v squared over r equals mu s m g. The mass cancels, and v max equals the square root of mu s g r.",
+      "audioFile": "public/audio/phys-y12-m5-v12/the-limit.wav"
+    },
+    {
+      "id": "worked-limiting-speed",
+      "text": "For a flat curve of radius thirty metres, with mu s equal to zero point six zero, v max is the square root of zero point six zero times nine point eight times thirty. That's the square root of one hundred and seventy-six point four, about thirteen point three metres per second, or about forty-eight kilometres per hour.",
+      "audioFile": "public/audio/phys-y12-m5-v12/worked-limiting-speed.wav"
+    },
+    {
+      "id": "what-sets-limit",
+      "text": "Look at what's in that formula, and what isn't. The mass cancelled, so a loaded truck and a small car have the same top speed on the same bend, with the same grip. A bigger radius gives a higher limit. And on a wet road mu s drops. If it halved to zero point three zero, v max would fall to about nine point four metres per second. Remember, the friction needed rises with the square of the speed, so the margin disappears quickly.",
+      "audioFile": "public/audio/phys-y12-m5-v12/what-sets-limit.wav"
+    },
+    {
+      "id": "past-the-limit",
+      "text": "So what happens if the car goes faster than v max? The road can't supply enough friction, so the net inward force is smaller than m v squared over r. The car still turns, but not as sharply as the bend. Its path is a wider curve, and it drifts towards the outside of the roundabout. Nothing throws it outwards. The inward force just isn't big enough.",
+      "audioFile": "public/audio/phys-y12-m5-v12/past-the-limit.wav"
+    },
+    {
+      "id": "mistake-memory-aid",
+      "text": "A common mistake is drawing an extra arrow labelled centripetal force, next to the friction. That counts the same force twice. Here's a way to remember it. Centripetal is a job, not a force. Draw the real forces first, then ask which of them does the job of pointing to the centre.",
+      "audioFile": "public/audio/phys-y12-m5-v12/mistake-memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A twelve hundred kilogram car travels around a flat, unbanked bend of radius forty-five metres. The coefficient of static friction between its tyres and the road is zero point six five. Identify the force that provides the centripetal force, and calculate the greatest speed at which the car can take the bend. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v12/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "On a flat bend, static friction is the only horizontal force, so it provides the centripetal force. At the limit, m v squared over r equals mu s m g, and the mass cancels. So v max is the square root of zero point six five times nine point eight times forty-five, about sixteen point nine metres per second. The classic slip is forgetting the square root, and getting an impossible two hundred and eighty-seven metres per second.",
+      "audioFile": "public/audio/phys-y12-m5-v12/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A fifteen hundred kilogram car enters a flat roundabout of radius fifteen metres at thirty-five kilometres per hour. The road is wet, and the coefficient of static friction is zero point four zero. Determine whether the car can get round at this speed without sliding. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m5-v12/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "First convert. Thirty-five kilometres per hour is about nine point seven two metres per second. The friction needed is m v squared over r, about nine thousand four hundred and fifty newtons. The most the wet road can give is zero point four zero times fifteen hundred times nine point eight, which is five thousand eight hundred and eighty newtons. That's not enough, so the car slides. The slip is putting thirty-five straight into the formula, without converting to metres per second.",
+      "audioFile": "public/audio/phys-y12-m5-v12/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So on a flat road, friction does the inward job. Now take the road away. Hang a small steel ball on a string from a fixed support, and set it going round in a horizontal circle. Only two forces act now, the string's pull and gravity. And the string doesn't stay horizontal. It slants, tracing out a cone. So how does one slanted string hold the ball up, and pull it inwards?",
+      "audioFile": "public/audio/phys-y12-m5-v12/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m5-v12/key-notes.wav"
+    }
+  ]
+}

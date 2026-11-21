@@ -1,0 +1,185 @@
+{
+  "id": "phys-y12-m5-v18",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "cd1f717a40e9b93b56c8dc12d3751bbae4880e2d8d2e2a6abb4557372ba133fb",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (Newton's mountain)",
+      "voiceover": {
+        "text": "Imagine a launcher on top of a mountain so tall it pokes right out of the air. Fire a ball sideways, and it curves down and hits the ground a little way off. Fire it faster, and it lands further round the planet. Newton asked this over three hundred years ago: what happens if you keep firing it faster and faster? Have a think."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "falling-around",
+      "title": "falling around, not into",
+      "voiceover": {
+        "text": "Here's the trick. In its first second, any projectile falls about four point nine metres. And Earth's surface curves away below a straight line by about five metres over the first eight kilometres you travel. So a ball launched sideways at about eight kilometres per second falls five metres in that first second, and the ground drops away five metres too. By then its direction has turned a little, so the next second starts along a new straight line, and the same thing happens again. It keeps falling, and it keeps missing. That's an orbit, falling around Earth, not into it."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "gravity-role",
+      "title": "gravity is the inward resultant",
+      "voiceover": {
+        "text": "Once it's moving, the only force on it is gravity, pointing to Earth's centre. In a circular orbit, that force is always at right angles to the velocity. As we saw with circular motion, a sideways force like that changes the velocity's direction but not its speed, and it does no work. So gravity is the inward resultant force. Centripetal force isn't an extra force here, it's the job gravity is doing. So a satellite doesn't need its engines running to stay up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "orbital-speed",
+      "title": "the orbital speed",
+      "voiceover": {
+        "text": "That gives us the orbital speed. For a circle of radius r, the inward force needed is m v squared over r. Gravity supplies big G M m over r squared. In a stable circular orbit, they're equal. The satellite's mass m is on both sides, so it cancels. Multiply both sides by r, and v squared equals big G M over r. So v equals the square root of big G M over r, with r measured from Earth's centre."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "free-fall",
+      "title": "same speed for everything: free fall",
+      "voiceover": {
+        "text": "Because m cancelled, the orbital speed doesn't depend on the satellite's mass. A space station and a spanner at the same radius need exactly the same speed, and they have the same acceleration towards Earth. That's why loose objects float inside a station. The station and everything in it fall together, so nothing presses on the floor. They aren't free of gravity, they're in free fall."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-speed",
+      "title": "worked example: speed at 400 km",
+      "voiceover": {
+        "text": "Let's find the speed of a satellite four hundred kilometres up, about where the space station orbits. First, r from the centre: six point three seven one plus zero point four zero zero gives six point seven seven one times ten to the six metres. Then v is the square root of four point zero zero two times ten to the fourteen, over that radius. That's about seven point six nine times ten to the three metres per second, nearly seven point seven kilometres every second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "higher-slower",
+      "title": "higher means slower",
+      "voiceover": {
+        "text": "Notice r is on the bottom. A higher orbit has a weaker pull, so it needs less speed to match it. Four times the radius, and the speed halves. That surprises a lot of people: the satellites furthest out are the slowest ones. The Moon, way out, moves at only about one kilometre per second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "period",
+      "title": "one lap: the period",
+      "voiceover": {
+        "text": "How long does one lap take? In one period, T, the satellite travels one circumference, so v equals two pi r over T. Put that into the force equation, and with a little rearranging, r cubed over T squared equals big G M over four pi squared. That's the circular-orbit form of Kepler's third law."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-period",
+      "title": "worked example: the period at 400 km",
+      "voiceover": {
+        "text": "For our satellite, T is two pi r over v: two pi times six point seven seven one times ten to the six, over seven thousand six hundred and eighty-eight. That's about five thousand five hundred and thirty seconds, or ninety-two minutes, around sixteen laps a day. NASA quotes about ninety minutes for the space station, so the model works well."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-constant",
+      "title": "one constant for every satellite",
+      "voiceover": {
+        "text": "Here's the powerful part. The right-hand side has only big G and Earth's mass, so r cubed over T squared is the same for everything orbiting Earth. Try the Moon: about three hundred and eighty-four thousand kilometres away, going round once every twenty-seven point three days. Its r cubed over T squared comes out within one per cent of the satellite's value. Two orbits that look nothing alike, one shared constant."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "memory aid",
+      "voiceover": {
+        "text": "Here's the pattern to remember: gravity is the centripetal force. Write gravity equal to m v squared over r, cancel the m, and everything about a circular orbit follows, the speed, the period, and the constant ratio. And remember what an orbit is: falling around, not falling down."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. A space telescope orbits five hundred and forty-seven kilometres above Earth's surface. Assuming a circular orbit, calculate its orbital speed, and its period in minutes. Use the data sheet values for Earth. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "First, r equals six point three seven one plus zero point five four seven, which is six point nine one eight times ten to the six metres. Then v is the square root of big G M over r, about seven point six one times ten to the three metres per second. T is two pi r over v, about five thousand seven hundred seconds, or ninety-five minutes. The classic slip is using five hundred and forty-seven kilometres as r."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Satellite Y orbits Earth at four times the orbital radius of satellite X. Both orbits are circular. How do Y's orbital speed and period compare with X's? Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "Speed goes as one over the square root of r, so four times the radius gives half the speed. Now the period. Y's lap is four times longer, and it moves at half the speed, so it takes eight times as long. The slip to avoid is saying four times as long, just because the radius is four times bigger."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So gravity holds a satellite in orbit by bending its path, and the radius fixes both its speed and its period. That means if you choose the period, you've chosen the radius. Which period would let a satellite keep pace with Earth's spin, so it hangs over one spot? That's next."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}

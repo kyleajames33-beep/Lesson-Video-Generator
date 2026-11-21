@@ -1,0 +1,198 @@
+{
+  "id": "phys-y12-m5-v16",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "db4bf7384a569271b9602dd3163c75cd8547bc18adb3aead8f019729f47bc8c3",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (four times the weight)",
+      "voiceover": {
+        "text": "Here's that bung apparatus. The bung goes round in a horizontal circle, and the weight of the hanging masses keeps the string tight. Suppose we keep the string length the same, and hang four times as much mass. How many times faster will the bung have to turn, in revolutions per second? Make a prediction."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "apparatus",
+      "title": "how the apparatus works",
+      "voiceover": {
+        "text": "First, how does it work? The hanging masses sit still, so the string's tension equals their weight, M g. You set that tension just by choosing the masses. The paper clip on the string is a marker. If it stays just below the tube, the length of string out to the bung, L, stays the same. In practice, the tube has to be moved in a tiny circle to keep the bung going. Your school will have its own approved method and safety steps, so follow those."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "string-droops",
+      "title": "the string droops",
+      "voiceover": {
+        "text": "Look closely, though. The bung's weight makes the string droop a little below horizontal, just like the conical pendulum. So only the horizontal part of the tension pulls the bung inwards, and the circle's radius is a bit shorter than L. Both are shrunk by the same factor, the cosine of the droop angle. Now write the inward force as m v squared over r, which is m omega squared r. The same factor appears on both sides and cancels, leaving M g equals m omega squared L. That's the form we can test."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "variables",
+      "title": "the variables",
+      "voiceover": {
+        "text": "Let's set up the test. The independent variable, the one we change, is the hanging mass, which sets the tension. The dependent variable, the one we measure, is how fast the bung turns, from its period. And the controlled variables, the ones we keep the same, are the string length and the bung's mass."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "measuring-speed",
+      "title": "measuring the speed",
+      "voiceover": {
+        "text": "We can't read omega directly, so we measure a time and calculate it. Time twenty revolutions with a stopwatch, and divide by twenty to get the period. Timing twenty, not one, spreads your reaction time over many turns, so the period is much more precise. Repeat each run three times, and average. Then omega is one full turn, two pi radians, divided by the period, so omega equals two pi over T."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "what-to-plot",
+      "title": "what to plot",
+      "voiceover": {
+        "text": "Now the prediction. If M g equals m omega squared L, with m and L fixed, then the hanging weight is proportional to omega squared. So plot M g against omega squared, not against omega. The prediction is a straight line through the origin, with a gradient of m times L. Four times the hanging weight means four times omega squared, so the bung turns twice as fast."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "one-row",
+      "title": "one row of results",
+      "voiceover": {
+        "text": "Here's a set of results. These are illustrative values, set up to show how you'd process real class data. With a hundred grams hanging, M g is zero point one zero zero times nine point eight, which is zero point nine eight newtons. Twenty revolutions took eighteen point one seconds, so T is zero point nine zero five seconds. Then omega is two pi over zero point nine zero five, about six point nine four radians per second, and omega squared is about forty-eight point two."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "the-graph",
+      "title": "the graph",
+      "voiceover": {
+        "text": "Do that for each row, and plot the points. In these illustrative results they lie close to a straight line through the origin. The line's gradient is about zero point zero two zero kilogram metres. Dividing by the string length should give the bung's mass, and it gives about zero point zero two five four kilograms. The balance said zero point zero two five, so they agree to about two percent. Real measurements are the real test, but this is how you'd process them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "uncertainty",
+      "title": "how much to trust it",
+      "voiceover": {
+        "text": "Each timing is uncertain by about plus or minus a fifth of a second, from reaction time. Over eighteen seconds, that's about one percent in the period. Omega squared squares that, so its uncertainty doubles, to around two percent. Each point gets an error bar, and the prediction line passes through them all. So these numbers are consistent with the model, within the uncertainty."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "systematic-errors",
+      "title": "repeats and systematic errors",
+      "voiceover": {
+        "text": "Repeating runs and averaging reduces the effect of random errors, like reaction time, on the mean. It can't fix a systematic error, one that pushes every reading the same way. Friction where the string rubs on the tube is one. A marker that slowly drifts is another, because then the string length isn't really eighty centimetres. You control those with the method, like a smooth tube and a steady marker, not by repeating. And follow your school's safety steps, such as safety glasses, because a bung can fly off."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "length-and-mass",
+      "title": "testing length and mass",
+      "voiceover": {
+        "text": "The same apparatus can test the other variables too: change the string length, or the bung's mass, and keep everything else fixed."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "mistake-memory-aid",
+      "title": "mistake and memory aid",
+      "voiceover": {
+        "text": "A common mistake is plotting the hanging weight against omega. That gives a curve, and it's easy to wrongly decide the model has failed. Here's a way to remember the fix. Square the speed to straighten the line."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In a whirling bung experiment, there's zero point five zero metres of string between the tube and the bung, the bung's mass is twenty grams, and a hundred grams hangs from the string. The bung makes twenty revolutions in fourteen point zero seconds. Calculate m omega squared L, compare it with the hanging weight, and suggest one reason for any difference. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "The period is fourteen over twenty, zero point seven zero seconds, so omega is two pi over zero point seven zero, about eight point nine eight radians per second. Then m omega squared L is about zero point eight one newtons, but the hanging weight is zero point nine eight newtons. One reason is friction between the string and the tube, so less than the full weight reaches the bung. The classic slip is using fourteen seconds as the period."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A student plots the hanging weight against omega squared, for a bung on zero point four zero metres of string. The graph is a straight line through the origin, with a gradient of zero point zero zero eight zero kilogram metres. Determine the mass of the bung. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "M g equals m omega squared L, so the gradient of M g against omega squared is m times L. So m is the gradient divided by L, zero point zero zero eight zero over zero point four zero, which is zero point zero two zero kilograms, or twenty grams. The slip is multiplying by L instead, and getting zero point zero zero three two kilograms."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So the bung moves in a circle because the string pulls it inwards, and measurements like these are how we test F equals m v squared over r. Now think about the Moon. It goes round the Earth about once a month, with no string at all. Something must still pull it inwards, and that's gravity. So how does the pull of gravity depend on the masses involved, and on the distance from the Earth's centre?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}
