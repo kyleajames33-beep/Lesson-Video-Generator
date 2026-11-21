@@ -19,3 +19,13 @@ Mechanical: the 21 scene strings sum to 6,029 characters (under 7,000). Bold cue
 This is a source check at recording stage only. Finding 1 is a count and record correction with no effect on the spoken text; once made, the source SHA changes and needs a fresh passing check. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `de10f5de66eeb75a25aecfadc828be96318572beb1d71c3427e973c0c9c0cc2d`.
+
+Compared against the version checked above (`17e647c9...c0ee`, the `09b3e84e` file) after root's commit `33484dd1`. Changes: line 5 now reads 6,029 characters, and a dated root note records the earlier scene 1 label edit (commit `0d345c3a`) and the corrected count. No narration changed. Finding 1 is resolved.
+
+Recount: the 21 scene strings sum to 6,029 characters, equal to the headline and under 7,000. All bold cues are unchanged, whole-word, verbatim and in order. No U+2014 in the file. For the record, three scene chips still carry course labels on screen ("observed: sharp lines (four bright; Module 7)", "E = hf (Module 7)", "replaced (later in Module 8)"); the build rule "No course labels on screen" covers them.
+
+Result: 0 blockers, 0 should fix, 0 optional.

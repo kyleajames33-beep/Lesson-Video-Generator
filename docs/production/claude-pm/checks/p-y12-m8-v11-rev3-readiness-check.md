@@ -19,3 +19,13 @@ Mechanical: 6,034 characters as the sum of 18 scene strings, matching the headli
 This is a source check at recording stage only. Finding 1 is a description correction with no effect on the spoken text; once made, the source SHA changes and needs a fresh passing check. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `382432f8a0008353bcea589d9480ae1ed6277ef6d4e0c55189d253e5c70060e8`.
+
+Compared against the version checked above (`5edf5183...cb22`, the `a31af64d` file) after root's commit `33484dd1`. Changes: the YouTube description now says "then use it for the four bright Balmer lines, the fainter lines beyond them and the series limit", and a dated root note records the correction. No narration changed. Finding 1 is resolved; the description now agrees with scene 9 (four bright lines, then 397, 389 and 384 nm and the UV tail).
+
+Recount: the 18 scene strings sum to 6,034 characters, equal to the headline and under 7,000. All bold cues are unchanged, whole-word, verbatim and in order. No U+2014 in the file. For the record, one scene chip still carries a course label on screen ("or a grating (Module 7)"); the build rule "No course labels on screen" covers it.
+
+Result: 0 blockers, 0 should fix, 0 optional.

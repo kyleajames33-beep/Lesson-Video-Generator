@@ -19,3 +19,13 @@ Mechanical: 6,265 characters as the sum of 18 scene strings, matching the headli
 This is a source check at recording stage only. Finding 1 is an on-screen chip correction with no effect on the spoken text; once made, the source SHA changes and needs a fresh passing check. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `56e9a3f87a9e103c3dc29b98eda6825ad3aeb41b25d56170ae17a09fee773c18`.
+
+Compared against the version checked above (`6f920388...8b2b`, the `09b3e84e` file) after root's commit `33484dd1`. Changes: the scene 9 chip now reads "11 to 14% of c: λ = h/mv within 0.3% of the relativistic value"; the scene 2 chip "light: photoelectric effect → photon" has lost "(Module 7)"; a dated root note records both. No narration changed. Finding 1 is resolved: at a fixed voltage the h/mv wavelength exceeds the exact relativistic one by about K/(4mc²), 0.15%, 0.20% and 0.24% at 3, 4 and 5 kV, all within 0.3%.
+
+Recount: the 18 scene strings sum to 6,265 characters, equal to the headline and under 7,000. All bold cues are unchanged, whole-word, verbatim and in order. No scene chip carries a module number. No U+2014 in the file.
+
+Result: 0 blockers, 0 should fix, 0 optional.
