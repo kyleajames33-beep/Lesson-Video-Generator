@@ -194,7 +194,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Same kind of mass on both sides (¹H with atoms).
 5. Towards the peak (near iron) releases energy.
 
-Memory aid (framed card under the notes, hand lettering as in scene 13): *Same nucleons, tighter binding, less mass.* Notes in the role colours, 34 px; about 250 characters of bullet text; no paragraphs.
+Memory aid (framed card beside the notes, hand lettering as in scene 13): *Same nucleons, tighter binding, less mass.* Notes in the role colours, 34 px; about 250 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
@@ -247,7 +247,7 @@ Checked with Python (6 Nov, `nuclear.py` in the session scratchpad folder `m8v12
 
 ## Memory aid check
 
-- **Revision 2: "Same nucleons, tighter binding, less mass."** Meaning, as said in scene 13: for the same set of protons and neutrons (a reaction's reactants and products, or a nucleus against its own separate parts), more total binding energy means less total mass, so when the products sit higher on the curve the mass difference comes out as energy. Assumptions checked: in a nuclear reaction the total Z and N are conserved, so the free-nucleon masses are identical on both sides and only the binding energies differ; Δ(mass) = −Δ(E_b)/c² exactly. Electron masses cancel with consistent atomic masses (scene 7). It makes no claim about mass per nucleon across different N/Z mixtures. Introduced after the explanation (12).
+- **Revision 2: "Same nucleons, tighter binding, less mass."** Meaning, as said in scene 13: for the same set of protons and neutrons (a reaction's reactants and products, or a nucleus against its own separate parts), more total binding energy means less total mass, so when the products sit higher on the curve the mass difference comes out as energy. Assumptions checked: in the fusion, fission and formation comparisons used here (no beta processes), the total Z and N are the same on both sides, so the free-nucleon masses are identical on both sides and only the binding energies differ; Δ(mass) = −Δ(E_b)/c² exactly. Electron masses cancel with consistent atomic masses (scene 7). It makes no claim about mass per nucleon across different N/Z mixtures. Introduced after the explanation (12).
 - **Rejected in Revision 2 (brief 193): "Higher on the curve, lighter per nucleon."** Not universal: AME2020 gives Ni-62 the higher binding per nucleon (8.79461 MeV against Fe-56's 8.79041 MeV) but Fe-56 the lower atomic mass per nucleon (0.998838135 u against 0.998844270 u), because m_n > m_p and the neutron to proton mixture differs. The inverted ghost curve taught the same wrong rule and is removed; the caveat stays in author note d.
 - **Considered, not used:** "binding energy is the glue" (suggests energy stored inside the nucleus, the misconception scene 3 removes).
 
@@ -284,7 +284,7 @@ Have: none used as plates (the content is nuclei, curves and working). Revision 
 
 Need: no new plates.
 
-Coded: the balance, nuclei and nucleons, energy bars, gamma packets, the method and working strips, the carbon atom with electrons, bars, the binding curve and its ghost, neighbour links, the repulsion web, the equation, chips, countdowns, key notes board.
+Coded: the balance, nuclei and nucleons, energy bars, gamma packets, the method and working strips, the carbon atom with electrons, bars, the binding curve, neighbour links, the repulsion web, the equation, chips, countdowns, key notes board.
 
 Kit gaps (for the v16 build brief):
 1. **Comparison balance.** A coded two-pan beam that tips by a set amount from a numeric difference, with a gap bracket and readout (used in v15's final frame and here).
@@ -389,3 +389,5 @@ Counts: 5,744 characters, unchanged; about 498 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: (1) The two-pan "mass comparison (diagram)" balance is a coded drawing of a real object. It is kept because the join frame between the half-life video and the mass-defect video shows it and a final frame must not change, and because Revision 2 chose it on purpose (a painted balance would suggest that nuclei are weighed on scales). Root may accept it as a labelled diagram, or ask for mass bars in both videos in a later pass that changes the join on both sides together.
+
+Root fix (21 Nov 2026, from the Claude recording-readiness check): the two carried Revision 2 findings are resolved. (1) Memory aid section: the assumption now reads "in the fusion, fission and formation comparisons used here (no beta processes), the total Z and N are the same on both sides", since beta processes change Z and N. (2) Assets "Coded:" list: "the binding curve and its ghost" became "the binding curve", so the removed ghost curve is not rebuilt. Optional one-line fix applied: the key-notes memory card is now "beside the notes", as Revision 3 sets. Narration unchanged: 5,744 characters.

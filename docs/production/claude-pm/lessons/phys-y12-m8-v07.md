@@ -2,7 +2,7 @@
 
 Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 192 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 6,075 characters, 18 scenes, about 523 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v06's Revision 2 final frame (see "Opening frame").
+Narration 6,088 characters, 18 scenes, about 524 s, counted by script with the build parser rules (total = sum of scene strings; see "Narration length estimate"). Opens on v06's Revision 2 final frame (see "Opening frame").
 
 Scope: seventh video of Year 12 Physics Module 8 (From the Universe to the Atom, Physics Stage 6, 2017 syllabus), inquiry question "How is it known that atoms are made up of protons, neutrons and electrons?". Templates as `phys-y12-m7-v10.md`; `math-a12-d10.md` for the calculation layout; `bio-y11-fa1-v05.md` for plates. No pre-design pack exists; the pack work is done here (2017 wording from the ledger, site givens kept, every number recalculated in Python with HSC data-sheet constants, original attempts, asset reuse). Site lesson read in full (6 Nov, read-only, through the brief 168 text extract `work/brief168/module8-lesson11.sa.txt`, hash checked against the live file): lesson 11, orient and predict (gold-foil prediction, warm-up, intentions, vocabulary: cathode rays, charge-to-mass ratio, elementary charge, neutron), "read-the-geiger-marsden-evidence", "calculate-closest-approach" (beyond the syllabus), "compare-thomson-and-rutherford", "explain-cathode-ray-evidence" (four properties, wave-versus-particle debate, universality, Figure 4, Stop and check), "measure-the-electron" (Thomson's two stages, 1.76 × 10¹¹ C/kg, Millikan's balance, quantisation, m_e = e ÷ (e/m), Figure 5, Stop and check), "find-the-neutron", apply and consolidate (Activities 1 and 2, "Assess 7 marks", "Analyse 6 marks" on Thomson and Millikan), independent practice, reflect: `C:/Users/kygs/hscscience/subjects/physics/year12/module8/lesson11.sa.html`, SHA256 `6591d8a12ec01faee9ff2fb923daa8b2f23cd6652916e85be5bdc8b5c0858641` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m8-v07`, sections `explain-cathode-ray-evidence`, `measure-the-electron`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Separate cathode-ray evidence, Thomson e/m and Millikan charge measurement; combine them for electron mass. Keep apparatus fields and forces explicit." Next: "phys-y12-m8-v08: Why did scattering require a tiny dense nucleus?"
 
@@ -184,7 +184,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Millikan: |q|E = mg, E = V/d; charge in whole e.
 5. m_e = e ÷ (e/m) = 9.10 × 10⁻³¹ kg.
 
-Memory aid (framed card under the notes, hand lettering as in scene 12): *Cathode rays: it exists. Thomson: the ratio. Millikan: the charge. Divide for the mass.* Notes in the role colours, 34 px; about 230 characters of bullet text; no paragraphs.
+Memory aid (framed card beside the notes, hand lettering as in scene 12): *Cathode rays: it exists. Thomson: the ratio. Millikan: the charge. Divide for the mass.* Notes in the role colours, 34 px; about 230 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
@@ -385,3 +385,7 @@ Counts: 6,075 characters, unchanged; about 523 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root label edit (21 Nov 2026): scene 5 "That's Module 6's velocity selector." became "That's the velocity selector you met earlier."; scene 6 "between plates in Module 6." became "between charged plates earlier."; narration now 6,088 characters (was 6,075; scene 5 +7, scene 6 +6); bold cues unchanged.
+
+Root fix (21 Nov 2026, from the Claude recording-readiness check): the headline now reads "Narration 6,088 characters" (recounted with the build parser rules: sum of the 18 scene strings) and about 524 s (was 523 s); the dated label-edit note above records the narration change. The earlier Revision 2 and Revision 3 count lines are kept as records of their dates. Optional one-line fix applied: the key-notes memory card is now "beside the notes", as Revision 3 sets. File line endings normalised to LF. Narration not changed by this fix: 6,088 characters.

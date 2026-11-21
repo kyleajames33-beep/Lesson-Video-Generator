@@ -199,7 +199,7 @@ Heading on screen: "Key notes: what to write in your book".
 4. Head-on beams: 6.8 + 6.8 = 13.6 TeV available.
 5. Detectors: tracks, calorimeters, missing momentum.
 
-Memory aid (framed card under the notes, hand lettering as in scene 14): *Electric fields push. Magnetic fields steer. Detectors read the debris.* Notes in the role colours, 34 px; about 240 characters of bullet text; no paragraphs.
+Memory aid (framed card beside the notes, hand lettering as in scene 14): *Electric fields push. Magnetic fields steer. Detectors read the debris.* Notes in the role colours, 34 px; about 240 characters of bullet text; no paragraphs.
 
 ### 20. course end
 > And that's the end of Year 12 Physics. You started with projectiles and orbits, then charges pushed and bent by fields, then the nature of light, and finally the universe and the atom. One idea ran through all of it. Every model was tested against **evidence**. Now, put it to work with past HSC papers. Good **luck**.
@@ -243,7 +243,7 @@ Model answer: The electric field in the accelerating sections exerts a force alo
 | Higgs, W, Z | 1964 prediction; 2012 discovery; 1983 W and Z | 12 |
 | A1 | B = 3.63e-15 / (1.602e-19 × 2800) = 8.093 T ("8.09 T"); slip with r = 2.80: 8093 T ("over eight thousand", "8090") | 15, 16 |
 | Field ramp (Revision 2) | r = 8.0 m: E = 0.1, 0.5, 1.0, 2.0, 3.0 GeV gives p = 5.34e-20, 2.67e-19, 5.34e-19, 1.068e-18, 1.602e-18 kg m s⁻¹ and B = 0.0417, 0.208, 0.417, 0.833, 1.25 T | 6 |
-| Crossed slip (Revision 2) | p left as 3.0 × 10⁹ (GeV, not SI): 3.0e9 / (1.602e-19 × 8.0) = 2.3 × 10²⁷ T | 7 |
+| Crossed slip (Revision 2) | p left as 3.0 × 10⁹ (the energy in eV, not an SI momentum): 3.0e9 / (1.602e-19 × 8.0) = 2.3 × 10²⁷ T | 7 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
@@ -402,3 +402,5 @@ Counts: 6,432 characters, unchanged; about 557 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root fix (21 Nov 2026, from the Claude recording-readiness check): "Numbers used", Crossed slip row: the slip is now described as "p left as 3.0 × 10⁹ (the energy in eV, not an SI momentum)"; the crossed calculation (2.3 × 10²⁷ T, rechecked) and the correct method are unchanged. Optional one-line fix applied: the key-notes memory card is now "beside the notes", as Revision 3 sets. Narration unchanged: 6,432 characters.

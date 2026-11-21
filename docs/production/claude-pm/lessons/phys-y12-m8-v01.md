@@ -187,11 +187,11 @@ Heading on screen: "Key notes: what to write in your book".
 4. n : p ≈ 1 : 7, so 25% He, 75% H by mass.
 5. Nuclei at minutes (MeV); atoms at 380 000 years (eV).
 
-Memory aid (framed card under the notes, hand lettering as in scene 12): *Too cool to make pairs, then too cool to break nuclei, then too cool to break atoms.* Notes in the role colours, 34 px; about 250 characters of bullet text; no paragraphs.
+Memory aid (framed card beside the notes, hand lettering as in scene 12): *Too cool to make pairs, then too cool to break nuclei, then too cool to break atoms.* Notes in the role colours, 34 px; about 250 characters of bullet text; no paragraphs.
 
 ## Teaching checks
 
-- **Does it explain causes?** Why the Universe cooled: stretched wavelengths carry less energy (2). Why matter appeared and stayed: pairs need E ≥ mc², cooling stops making, a small excess survives annihilation (3 to 6). Why only a quarter helium: neutrons were scarce (7, 9). Why nuclei waited three minutes: photons broke deuterium (8). Why atoms waited 380 000 years: eV bonds are about 10⁵ times weaker than MeV bonds (10, 11).
+- **Does it explain causes?** Why the Universe cooled: stretched wavelengths carry less energy (2). Why matter appeared and stayed: pairs need E ≥ mc², so as it cools production becomes rare while annihilation continues, and a small excess survives (3 to 6). Why only a quarter helium: neutrons were scarce (7, 9). Why nuclei waited three minutes: photons broke deuterium (8). Why atoms waited 380 000 years: eV bonds are about 10⁵ times weaker than MeV bonds (10, 11).
 - **Misconceptions addressed:** the Big Bang as an explosion from a centre (2); matter appeared from nothing (3); nuclei and atoms formed together (10, 16 crossed); T = bλ (14 crossed); the Universe was transparent from the start (10); pair making switching off sharply at one temperature (3, the energetic tail); 25% helium read as a share of nuclei (9 crossed); c not squared (4 crossed).
 - **One idea at a time:** expansion and cooling (2), threshold (3), estimate (4), heavier particles (5), excess (6), neutrons (7), deuterium (8), helium count (9), plasma (10), recombination (11), sequence and memory aid (12).
 - **Video makes it easier:** the stretching wave on the expanding grid (2); the threshold bars sinking below the dashed line (3); annihilation thinning the field (6); the sixteen-disc regrouping and mass pie (9); the zig-zag path straightening (10, 11); the timeline with the temperature bar (12).
@@ -318,7 +318,7 @@ Title: From Light to Matter: How the Early Universe Made Particles, Nuclei and A
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module8/lesson01.sa.html
 
-The young Universe was mostly light. Follow how it cooled as space expanded: photons stopped making particle pairs, a tiny excess of matter survived, quarks bound into protons and neutrons, helium nuclei formed in the first twenty minutes, and atoms only formed 380 000 years later when the Universe became transparent. See why the early Universe ended up about 25% helium, and estimate the temperatures with Wien's law. Two exam-style questions at the end.
+The young Universe was mostly light. Follow how it cooled as space expanded: photons became too cool to make particle pairs often, a tiny excess of matter survived, quarks bound into protons and neutrons, helium nuclei formed in the first twenty minutes, and atoms only formed 380 000 years later when the Universe became transparent. See why the early Universe ended up about 25% helium, and estimate the temperatures with Wien's law. Two exam-style questions at the end.
 
 Year 12 Physics (2017 syllabus), Module 8: From the Universe to the Atom.
 Syllabus content (NSW Physics Stage 6, 2017):
@@ -384,3 +384,5 @@ Counts: 6,504 characters, unchanged; about 558 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: (1) The particle box runs in scenes 6, 8, 10 and 11 use model counts and a model temperature scale; each carries a "model" tag so no count reads as data.
+
+Root fix (21 Nov 2026, from the Claude recording-readiness check): the carried Revision 2 finding is resolved. The draft YouTube description now says "photons became too cool to make particle pairs often", and "Teaching checks" now says "pairs need E ≥ mc², so as it cools production becomes rare while annihilation continues, and a small excess survives", matching the repaired scene 3 (the energetic tail keeps making a few pairs). Optional one-line fix applied: the key-notes memory card is now "beside the notes", as Revision 3 sets. Narration unchanged: 6,504 characters.

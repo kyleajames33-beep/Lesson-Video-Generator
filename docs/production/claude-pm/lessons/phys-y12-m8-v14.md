@@ -59,7 +59,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage
   (b) Beta spectrum: continuous up to the Q-value (C-14: 156 keV; Sr-90: 546 keV); Pauli's letter of December 1930; Fermi's theory 1934 named the neutrino; Cowan and Reines detected reactor antineutrinos in 1956.
   (c) Electron capture (a proton-rich nucleus captures an inner electron) competes with β⁺; not taught. F-18 decays about 97% by β⁺ and 3% by electron capture.
   (d) Co-60: β⁻ to the 2.506 MeV level of Ni-60, then gamma rays of 1.173 and 1.332 MeV. Visible photons about 1.7 to 3.3 eV, so "hundreds of thousands of times" (1.33 MeV / 2 eV ≈ 6.7 × 10⁵).
-  (e) Deflection: r = mv/(qB). Typical alpha (5 MeV): m = 6.64 × 10⁻²⁷ kg, v = 1.55 × 10⁷ m s⁻¹, q = 2e, so mv/q = 3.2 × 10⁻¹⁹ / 3.2 × 10⁻¹⁹ ≈ 0.32 kg m s⁻¹ C⁻¹ (in units of T m); a 1 MeV beta electron has momentum 7.6 × 10⁻²² kg m s⁻¹, so mv/q ≈ 0.0047 T m: about 70 times smaller radius. "Thousands of times lighter" is the reason given in narration; the speed difference partly offsets it (author note only).
+  (e) Deflection: r = mv/(qB). Typical alpha (5 MeV): m = 6.64 × 10⁻²⁷ kg, v = 1.55 × 10⁷ m s⁻¹, q = 2e, so mv/q = 1.03 × 10⁻¹⁹ / 3.2 × 10⁻¹⁹ ≈ 0.32 kg m s⁻¹ C⁻¹ (in units of T m); a 1 MeV beta electron has momentum 7.6 × 10⁻²² kg m s⁻¹, so mv/q ≈ 0.0047 T m: about 70 times smaller radius. "Thousands of times lighter" is the reason given in narration; the speed difference partly offsets it (author note only).
   (f) Ranges: 5 MeV alpha about 3.5 to 4 cm in air; beta (1 to 2 MeV) a few mm of aluminium; gamma half-value thickness about 1 cm of lead at 1 MeV, so "several centimetres of lead only reduces it".
   (g) Alpha mass: m_α / m_e = 7294 ("about seven thousand" in the site; screen uses "4 u").
   (h) A2 data (invented, plausible): no absorber 612; paper 610 (no alpha); 5 mm aluminium 98 (beta stopped, gamma remains); 5 cm lead 31 (gamma reduced to about a third). Counts per minute, corrected for background.
@@ -187,7 +187,7 @@ Heading on screen: "Key notes: what to write in your book".
 2. Balance A (top) and Z (bottom) in every equation.
 3. β⁻ creates its electron; ν̄ takes a share of the energy.
 4. Ionising α > β⁻ > γ; penetrating the reverse.
-5. Products have less mass: the difference → kinetic energy.
+5. Products have less mass: the difference → kinetic energy and γ-ray energy.
 
 Memory card (framed, beside the notes): the scene 12 summary table (A, Z, charge, stopper, field for α, β⁻, β⁺, γ) with its line *Alpha: lose a helium-4 nucleus. Beta: one nucleon swaps type. Gamma: lose energy only.* Notes in the role colours, 34 px; about 260 characters of bullet text; no paragraphs. The β⁺ detail and the deflection directions now live in the table.
 
@@ -231,7 +231,7 @@ Checked with Python (6 Nov, `nuclear.py` in the session scratchpad folder `m8v12
 
 - Q(U-238 α) = (238.050788 − 234.043601 − 4.002603) × 931.5 = 4.27 MeV.
 - Q(C-14 β⁻) = (14.003242 − 14.003074) × 931.5 = 0.156 MeV (atomic masses; the electron is included in the daughter atom's count).
-- Q(F-18 β⁺) = (18.000937 − 17.999160 − 2 × 0.000549) × 931.5 = 0.634 MeV.
+- Q(F-18 β⁺) = (18.000937 − 17.999160 − 2 × 0.000549) × 931.5 = 0.000679 × 931.5 = 0.6325 MeV with these rounded masses (0.634 MeV with full AME2020 values).
 - Q(Ra-226 α) = 4.87 MeV; Q(Sr-90 β⁻) = (89.907728 − 89.907142) × 931.5 = 0.546 MeV (Revision 2: AME2020 gives 0.545972 MeV; Revision 1's 0.544 was wrong; no speech uses it).
 - Revision 2 (Python, 7 Nov): selector differences 940 − 622 = 318, 622 − 88 = 534, 88 → 27 (ratio 0.31); A2 differences 2, 512, 67 (brief 193 check).
 - Q(Po-210 α) = (209.982874 − 205.974465 − 4.002603) × 931.5 = 5.408 MeV.
@@ -391,3 +391,5 @@ Counts: 5,620 characters, unchanged; about 490 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root fix (21 Nov 2026, from the Claude recording-readiness check): the three carried Revision 2 findings are resolved. (1) Scene 18 key-notes bullet 5 now reads "Products have less mass: the difference → kinetic energy and γ-ray energy." (learner copy, on screen only). (2) "Numbers to verify": the F-18 β⁺ line now shows 0.000679 × 931.5 = 0.6325 MeV with the rounded masses and notes 0.634 MeV with full AME2020 values (recomputed in Python; the table entry Q = 0.634 MeV stays). (3) Author note (e): the alpha's momentum is now 1.03 × 10⁻¹⁹ kg m s⁻¹ (6.64 × 10⁻²⁷ × 1.55 × 10⁷), so mv/q = 1.03 × 10⁻¹⁹ / 3.2 × 10⁻¹⁹ ≈ 0.32 T m; the conclusion is unchanged. The optional "beside the notes" finding needed no edit: this file already sets the memory card beside the notes. Narration unchanged: 5,620 characters.
