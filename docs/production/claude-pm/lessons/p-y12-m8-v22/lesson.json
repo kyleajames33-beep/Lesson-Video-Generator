@@ -1,0 +1,228 @@
+{
+  "id": "phys-y12-m8-v22",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "cfdd6e1587c1c4faca1bddebfce271439270adb166e1fe38ab24b953f8d3f984",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (how do you make a Higgs?)",
+      "voiceover": {
+        "text": "Most of the Standard Model never turns up in ordinary matter. So how do you make a Higgs boson, or a top quark, to study it? Make your prediction. You smash particles together, with enormous energy. So how do accelerators create and test evidence about particles?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 3
+      }
+    },
+    {
+      "id": "why-energy",
+      "title": "why so much energy?",
+      "voiceover": {
+        "text": "There are two reasons. First, to make a heavy particle, the collision must supply at least its mass as energy, E equals m c squared. A Higgs boson needs at least a hundred and twenty-five GeV. Second, seeing tiny structure needs a tiny wavelength, so huge momentum. So the collision energy decides which particles and processes are possible."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "electric-push",
+      "title": "pushing with electric fields",
+      "voiceover": {
+        "text": "You speed particles up with electric fields. A charge crossing a potential difference gains energy, W equals q V. A proton crossing one million volts gains one MeV. Reaching the biggest collider's energy in one go would take almost seven million million volts. So accelerators give many smaller pushes, one after another."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "linac",
+      "title": "a straight line of pushes",
+      "voiceover": {
+        "text": "The simplest way is a straight line, a linear accelerator. Particles pass through a row of gaps. The fields in the gaps flip in step, so every time a particle reaches a gap, it's pushed forwards. Each gap adds a little more energy. But a straight machine can only be so long. The one in California was three kilometres long, and that limits the energy it can reach."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "ring-steer",
+      "title": "bending it into a ring",
+      "voiceover": {
+        "text": "Now bend the path into a ring, and the same gaps push the particles again on every lap. To bend them, use magnetic fields. A magnetic force is at right angles to the motion, so it does no work. It can't speed particles up, but it can steer them round a curve. Other magnets squeeze the beam, to keep it narrow. So electric fields push, and magnetic fields steer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "field-ramp",
+      "title": "a field that keeps up",
+      "voiceover": {
+        "text": "But there's a catch. The radius of a charge's circle is r equals p over q B, where p is the momentum. At low speeds, that's m v. As the particles speed up, their momentum grows. To keep them on the same ring, the magnetic field has to grow in step. Rearranged, B equals p over q r. A ring that ramps its field like this is called a synchrotron, because the field and the pushes stay in step, synchronised."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "worked-booster",
+      "title": "worked example: the Australian Synchrotron",
+      "voiceover": {
+        "text": "Try it on the Australian Synchrotron in Melbourne. Its booster ring takes electrons up to three GeV. Each electron's momentum is then one point six zero times ten to the minus eighteen kilogram metres per second, and the bending radius is eight point zero metres. B equals p over q r, which gives one point two five tesla. The electrons arrive with a thirtieth of that momentum, so the field starts at a thirtieth too, and ramps up as they accelerate."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "synchrotron-light",
+      "title": "light from bent electrons",
+      "voiceover": {
+        "text": "There's a cost. Any charge forced round a curve gives off light, called synchrotron light, and light particles like electrons lose energy this way fast. At the Australian Synchrotron, that's the point. Its electrons circle a two hundred and sixteen metre ring, giving off intense X-rays for research. But for the highest-energy collisions it's a problem, so the biggest collider uses protons instead."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "collider",
+      "title": "head-on collisions",
+      "voiceover": {
+        "text": "That's the Large Hadron Collider at CERN, a twenty-seven kilometre ring. Two beams of protons travel in opposite directions, each at six point eight trillion electron volts, steered by magnets of about eight tesla. Then the beams cross, head on. Because they meet head on, all of their energy is available, thirteen point six trillion electron volts, not six point eight."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "detector-layers",
+      "title": "a detector like an onion",
+      "voiceover": {
+        "text": "Then you have to see what comes out. Around each collision sits a detector built in layers. In the middle, a tracker records the paths of charged particles, in a strong magnetic field. The amount of bending gives their momentum, and its direction gives their charge. Next, a layer stops electrons and photons. Then a thicker layer stops protons, neutrons and pions. Muons go on, leaving tracks in the outer chambers."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "signatures",
+      "title": "reading the signatures",
+      "voiceover": {
+        "text": "So each particle leaves a signature. A photon has no charge, so it leaves no track, just a burst of energy in the first calorimeter. An electron leaves a curved track, then stops in the same layer. A muon leaves a track all the way out. A neutrino leaves nothing at all. But momentum is conserved. Across the beam, the momenta of everything you can see should add to zero. If they don't, something unseen carried the rest, such as a neutrino."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "testing",
+      "title": "a test the theory could fail",
+      "voiceover": {
+        "text": "So how does this test a theory? The Standard Model predicted the Higgs boson back in nineteen sixty-four. In twenty twelve, two separate detectors at the Large Hadron Collider both saw an excess of photon pairs whose combined mass was a hundred and twenty-five GeV. That was the Higgs. If it had never turned up, the theory would have been in trouble. The W and Z were found at their predicted masses in nineteen eighty-three."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "limits",
+      "title": "what accelerators can't tell us",
+      "voiceover": {
+        "text": "Accelerator evidence has limits. It only tests the theory up to the energy the machines reach. Most new particles decay almost instantly, so we see only what they turn into, and work backwards. And gravity sits outside the Standard Model, so testing the model says nothing about it. So the theory is well tested where we can reach, but that's not the same as complete."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember how they work. Electric fields push. Magnetic fields steer. Detectors read the debris."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. In the Large Hadron Collider, protons with the momentum given travel round a bend of radius two point eight zero kilometres. Calculate the magnetic field the bending magnets need. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Convert the radius first, two point eight zero kilometres is two thousand eight hundred metres. Then B equals p over q r, which gives about eight point zero nine tesla. The slip is leaving the radius in kilometres, which gives over eight thousand tesla."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. Explain the roles of the electric and magnetic fields in a synchrotron, and why the magnetic field must increase as the particles speed up. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "The electric field pushes along the motion, so it does work and increases the particles' kinetic energy. The magnetic field is at right angles to the motion, so it does no work. It provides the force that keeps them on the ring. Since r equals p over q B, and the radius is fixed, B must rise as the momentum rises. The slip is saying the magnetic field speeds them up."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    },
+    {
+      "id": "course-end",
+      "title": "course end",
+      "voiceover": {
+        "text": "And that's the end of Year 12 Physics. You started with projectiles and orbits, then charges pushed and bent by fields, then the nature of light, and finally the universe and the atom. One idea ran through all of it. Every model was tested against evidence. Now, put it to work with past HSC papers. Good luck."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 3,
+      "holdKind": "visual"
+    },
+    {
+      "id": "end-hold",
+      "title": "end hold (silent)",
+      "voiceover": {
+        "text": ""
+      },
+      "durationInFrames": 90,
+      "holdSeconds": 3,
+      "holdKind": "silent"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v16.md",
+  "sourceSha256": "6c7c18cfeea92704f005ba8cc220066baf80dd1de936911c533df44f68f107b5",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here's the puzzle. A carbon twelve nucleus has less mass than the six protons and six neutrons it's made from. Yet nothing has gone missing. Count them, and all twelve nucleons are still there. The difference is less than one per cent, but it's real, and it's measured very precisely. So how does missing mass measure nuclear binding energy?",
+      "audioFile": "public/audio/phys-y12-m8-v16/hook.wav"
+    },
+    {
+      "id": "pull-apart",
+      "text": "You met the idea in the video on stars. Nucleons attract each other through the strong force, so pulling a nucleus apart takes energy. That energy is the binding energy. And adding energy to anything adds to its mass, by E equals m c squared. So the separated nucleons, with that energy added, have more mass than the nucleus.",
+      "audioFile": "public/audio/phys-y12-m8-v16/pull-apart.wav"
+    },
+    {
+      "id": "not-lost-matter",
+      "text": "So the mass defect isn't matter that's been lost. When the nucleus formed, energy left, as gamma rays and kinetic energy, and the mass of that energy left with it. The mass defect is the mass of the energy you'd have to put back, to pull the nucleus apart. It's the same rule you saw for the Sun, energy out, mass down.",
+      "audioFile": "public/audio/phys-y12-m8-v16/not-lost-matter.wav"
+    },
+    {
+      "id": "method",
+      "text": "Here's the method. The mass defect is the mass of Z protons and N neutrons, minus the mass of the nucleus. Then the binding energy is the mass defect, times c squared. With masses in atomic mass units, there's a shortcut. One u is worth nine hundred and thirty one point five mega electron volts, from your data sheet.",
+      "audioFile": "public/audio/phys-y12-m8-v16/method.wav"
+    },
+    {
+      "id": "c12-mass-defect",
+      "text": "Let's do carbon twelve. Six protons at one point zero zero seven two seven six u, and six neutrons at one point zero zero eight six six five u, add to twelve point zero nine five six four six u. The nucleus itself is eleven point nine nine six seven zero nine u. So the mass defect is zero point zero nine eight nine three seven u.",
+      "audioFile": "public/audio/phys-y12-m8-v16/c12-mass-defect.wav"
+    },
+    {
+      "id": "c12-binding",
+      "text": "Times nine hundred and thirty one point five, the binding energy is ninety two point two mega electron volts. That's the energy needed to pull carbon twelve completely apart. Divide by its twelve nucleons, and it's seven point six eight mega electron volts per nucleon. Compare that with pulling the electron off a hydrogen atom, which takes only thirteen point six electron volts.",
+      "audioFile": "public/audio/phys-y12-m8-v16/c12-binding.wav"
+    },
+    {
+      "id": "atomic-mass-trap",
+      "text": "Watch out for one trap. Data tables often give atomic masses, which include the electrons. Carbon twelve's atomic mass is exactly twelve u, with six electrons included. Use that with bare proton masses, and you get eighty nine point one mega electron volts, which is wrong. The fix is to keep both sides the same. Use hydrogen atom masses instead of proton masses, so the six electrons cancel, and you get ninety two point two again.",
+      "audioFile": "public/audio/phys-y12-m8-v16/atomic-mass-trap.wav"
+    },
+    {
+      "id": "per-nucleon",
+      "text": "Why divide by the number of nucleons? A big nucleus has a big total binding energy, simply because it has more nucleons. Uranium two three five's total is about seventeen hundred and eighty mega electron volts. Per nucleon tells you how tightly each nucleon is held, on average, so you can compare nuclei fairly.",
+      "audioFile": "public/audio/phys-y12-m8-v16/per-nucleon.wav"
+    },
+    {
+      "id": "curve-values",
+      "text": "Plot binding energy per nucleon against mass number, and you get the curve from the stars video. Helium four is seven point one, carbon twelve seven point seven, iron fifty six is near the top at eight point eight, and uranium two three five drops back to seven point six.",
+      "audioFile": "public/audio/phys-y12-m8-v16/curve-values.wav"
+    },
+    {
+      "id": "curve-rises",
+      "text": "Why that shape? The strong force only reaches a nucleon's nearest neighbours. In a small nucleus, a large share of the nucleons sit on the surface, with fewer neighbours holding them, so each is less tightly bound. As nuclei grow, more nucleons are surrounded on all sides, so the binding per nucleon rises.",
+      "audioFile": "public/audio/phys-y12-m8-v16/curve-rises.wav"
+    },
+    {
+      "id": "curve-falls",
+      "text": "But the electric repulsion between protons reaches right across the nucleus, so every proton pushes on every other one. Past iron, that growing repulsion eats into the binding, so the curve slowly falls. Heavy nuclei need extra neutrons, which add attraction without adding repulsion. And beyond lead, no arrangement is stable at all.",
+      "audioFile": "public/audio/phys-y12-m8-v16/curve-falls.wav"
+    },
+    {
+      "id": "energy-release",
+      "text": "This curve tells you which changes release energy. Moving towards the peak, from either side, makes the products more tightly bound, so they have less mass, and the difference is released. Fusing light nuclei climbs the left side, as in stars. Splitting a heavy nucleus climbs the right side, towards the peak. That's fission, coming soon.",
+      "audioFile": "public/audio/phys-y12-m8-v16/energy-release.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember the link. Same nucleons, tighter binding, less mass. So when the products sit higher on the curve, the difference comes out as energy.",
+      "audioFile": "public/audio/phys-y12-m8-v16/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. A lithium seven nucleus has a mass of seven point zero one four three five seven u. Calculate its mass defect, its binding energy, and its binding energy per nucleon. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v16/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Lithium seven has three protons and four neutrons, totalling seven point zero five six four eight eight u. Subtract the nucleus, and the mass defect is zero point zero four two one three one u. Times nine three one point five gives thirty nine point two mega electron volts, and over seven nucleons, that's five point six one per nucleon. The slip is dividing by the three protons instead of all seven nucleons.",
+      "audioFile": "public/audio/phys-y12-m8-v16/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A student says the mass defect is the mass of the particles lost when a nucleus forms. Explain why that's wrong, and what the mass defect represents. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v16/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "No particles are lost. The nucleus has exactly the same protons and neutrons as before. When it forms, binding energy is released, and energy has mass, so the system's mass falls by that energy over c squared. So the mass defect is the mass equivalent of the binding energy. The slip is the student's claim itself, that bits of matter go missing.",
+      "audioFile": "public/audio/phys-y12-m8-v16/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So the curve shows where nuclear energy can come from. But in nineteen nineteen, Ernest Rutherford did something new. He fired alpha particles into nitrogen gas, and turned some of the nitrogen into oxygen, the first artificial transmutation. Did that reaction release energy, or cost energy? What determines the energy released in an artificial transmutation?",
+      "audioFile": "public/audio/phys-y12-m8-v16/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v16/key-notes.wav"
+    }
+  ]
+}

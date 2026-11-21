@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v14.md",
+  "sourceSha256": "0b9e283719afdc7be3b88200a1414b67e136a27d56010c82eaed90643a4c6d41",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "At the centre of every atom is a tiny nucleus, and some nuclei don't stay the same. Put a school radioactive source near a Geiger counter, and it clicks at random moments, with nothing pushing it. Each click is one detected emission, from a nucleus that just changed. So what changes in a nucleus during alpha, beta and gamma decay?",
+      "audioFile": "public/audio/phys-y12-m8-v14/hook.wav"
+    },
+    {
+      "id": "why-unstable",
+      "text": "A nucleus is unstable when its protons and neutrons could be arranged with less energy. It might be too big, have too many neutrons, have too many protons, or simply have too much energy. It reaches a lower energy state by itself, with no trigger. That's spontaneous decay, and each type of decay fixes a different problem.",
+      "audioFile": "public/audio/phys-y12-m8-v14/why-unstable.wav"
+    },
+    {
+      "id": "alpha",
+      "text": "In alpha decay, the nucleus throws out an alpha particle, two protons and two neutrons stuck together, a helium four nucleus. Uranium two three eight becomes thorium two three four. Check the top numbers: two three eight equals two three four plus four. And the bottom numbers: ninety two equals ninety plus two. It happens in very heavy nuclei, where many protons repel each other, and it lowers the mass number by four, and the atomic number by two.",
+      "audioFile": "public/audio/phys-y12-m8-v14/alpha.wav"
+    },
+    {
+      "id": "beta-minus",
+      "text": "Beta minus decay happens when a nucleus has too many neutrons. A neutron turns into a proton, and an electron is created and thrown out. That's the beta particle. It wasn't sitting in the nucleus beforehand. Carbon fourteen becomes nitrogen fourteen. The mass number stays the same, and the atomic number goes up by one.",
+      "audioFile": "public/audio/phys-y12-m8-v14/beta-minus.wav"
+    },
+    {
+      "id": "antineutrino",
+      "text": "There's one more particle. If only the electron came out, every beta electron would have the same energy. Instead, they come out with a whole range of energies. In nineteen thirty, Wolfgang Pauli suggested that a tiny neutral particle carries off the rest. It's now called an antineutrino, and it was finally detected in nineteen fifty six. It has no charge, and almost no mass, so it doesn't change A or Z.",
+      "audioFile": "public/audio/phys-y12-m8-v14/antineutrino.wav"
+    },
+    {
+      "id": "beta-plus",
+      "text": "Beta plus decay is the mirror image, for nuclei with too many protons. A proton turns into a neutron, giving out a positron, the electron's antiparticle, and a neutrino. Fluorine eighteen, used in hospital PET scans, becomes oxygen eighteen. The mass number stays the same, and the atomic number goes down by one.",
+      "audioFile": "public/audio/phys-y12-m8-v14/beta-plus.wav"
+    },
+    {
+      "id": "gamma",
+      "text": "Gamma decay changes nothing in the count. After an alpha or beta decay, the new nucleus is often left excited, with extra energy. Like an electron dropping between atomic energy levels, it drops to a lower nuclear level, and gives out a photon. Nuclear levels are much further apart, so this gamma photon carries hundreds of thousands of times more energy than visible light. Cobalt sixty's beta decay leaves nickel sixty excited, and it gives out two gamma rays. A and Z stay the same.",
+      "audioFile": "public/audio/phys-y12-m8-v14/gamma.wav"
+    },
+    {
+      "id": "ionisation",
+      "text": "The three radiations behave very differently. An alpha particle has a charge of plus two, it's heavy, and fairly slow. It pulls electrons off almost every atom it passes, so it's strongly ionising. A beta minus particle has a charge of minus one, it's far lighter and faster, and it ionises less. Gamma rays have no charge, and ionise least of all.",
+      "audioFile": "public/audio/phys-y12-m8-v14/ionisation.wav"
+    },
+    {
+      "id": "penetration",
+      "text": "Every ionisation costs the radiation a bit of its energy, so the strongest ionisers stop soonest. Test it with absorbers between a source and a Geiger counter. Alpha is stopped by a sheet of paper, or a few centimetres of air. Beta minus gets through paper, but a few millimetres of aluminium stops it. Gamma gets through both, and several centimetres of lead only reduces it. So outside the body, gamma is the danger, but swallowed or breathed in, alpha does the most damage.",
+      "audioFile": "public/audio/phys-y12-m8-v14/penetration.wav"
+    },
+    {
+      "id": "deflection",
+      "text": "A magnetic field sorts them too. Alpha and beta minus curve in opposite directions, because their charges have opposite signs. Beta minus curves far more, because it's thousands of times lighter. Gamma goes straight through, because it has no charge.",
+      "audioFile": "public/audio/phys-y12-m8-v14/deflection.wav"
+    },
+    {
+      "id": "spontaneous-artificial",
+      "text": "All of these happen spontaneously. A nucleus can also be changed on purpose, by hitting it with a particle, like an alpha particle or a neutron. That's an artificial transmutation, and we'll calculate one later. In every spontaneous decay, the products have slightly less total mass than the nucleus they came from. That missing mass becomes the products' kinetic energy, and any gamma energy, by E equals m c squared.",
+      "audioFile": "public/audio/phys-y12-m8-v14/spontaneous-artificial.wav"
+    },
+    {
+      "id": "summary-table",
+      "text": "Here's the whole picture in one table, worth copying into your book. Alpha takes four from A and two from Z. Beta minus adds one to Z. Beta plus takes one from Z. Gamma changes neither, it just carries off energy.",
+      "audioFile": "public/audio/phys-y12-m8-v14/summary-table.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Complete two decay equations. Radium two two six undergoes alpha decay, and strontium ninety undergoes beta minus decay. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v14/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Radium two two six loses four from A and two from Z, giving radon two two two. Strontium ninety keeps A, and Z goes up by one, to thirty nine, which is yttrium ninety, plus an antineutrino. The slip is treating beta like alpha, and taking four from the mass number.",
+      "audioFile": "public/audio/phys-y12-m8-v14/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. A source is tested with different absorbers in front of a Geiger counter. Use the count rates to identify the radiation it emits. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v14/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Paper makes almost no difference, so there's no alpha. Aluminium removes most of the count, so there's beta. Some radiation gets through the aluminium, and lead reduces it but doesn't stop it, so there's gamma too. The slip is thinking lead stops gamma completely, so the last count can't be gamma.",
+      "audioFile": "public/audio/phys-y12-m8-v14/feedback-2.wav"
+    },
+    {
+      "id": "handoff",
+      "text": "So each decay changes one nucleus, at a moment nobody can predict. That's why the Geiger counter clicks at random. Yet a large sample of radioactive nuclei always halves in the same time, as reliably as a clock. How can random single events add up to such a steady pattern? Why does half-life predict a population but not one atom?",
+      "audioFile": "public/audio/phys-y12-m8-v14/handoff.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v14/key-notes.wav"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "mathPronunciation": false,
+  "source": "docs/production/claude-pm/lessons/phys-y12-m8-v19.md",
+  "sourceSha256": "6804f4580e1483be41a06ea5f0edc47aded43cca190b648793b1d7d806c4d048",
+  "voiceSelection": {
+    "voiceId": "voice_shdbjsxcrr0a",
+    "modelId": "gemini-3.8-flash-tts"
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "text": "Here are two hydrogen nuclei, deuterium and tritium, hydrogen two and hydrogen three. They're both positive, so they push each other away, harder and harder as they get closer. Yet if they join, they release energy. Can that be true? Make your prediction. Yes, it can, if they get close enough. So why can fusion release energy despite repulsion between nuclei?",
+      "audioFile": "public/audio/phys-y12-m8-v19/hook.wav"
+    },
+    {
+      "id": "two-ranges",
+      "text": "Two forces act between them. The electric repulsion reaches a long way, and it grows as they get closer. The strong nuclear force pulls nucleons together, but only within about three femtometres, about the width of a couple of protons. Inside that range, it's far stronger than the repulsion. So plot energy against separation. Coming in, there's a hill to climb, called the Coulomb barrier. Inside it, there's a deep valley.",
+      "audioFile": "public/audio/phys-y12-m8-v19/two-ranges.wav"
+    },
+    {
+      "id": "coulomb-push",
+      "text": "How hard is that push? Use Coulomb's law. At three femtometres, two single charges repel with a force of about twenty-six newtons. That's about the weight of a two and a half kilogram mass, acting on a nucleus. At the width of an atom, the same two charges would feel about a billion times less. To climb the hill, a nucleus needs about half an MeV of kinetic energy.",
+      "audioFile": "public/audio/phys-y12-m8-v19/coulomb-push.wav"
+    },
+    {
+      "id": "over-the-hill",
+      "text": "So the nuclei need enormous speeds, which means enormous temperatures. Fusion reactors aim for about a hundred and fifty million kelvin. Even then, a typical nucleus has only about four per cent of the energy it needs to get over. A quantum effect called tunnelling lets some of the faster nuclei pass right through the hill, well below its top. So fusion also needs a dense fuel, for lots of collisions, held hot for long enough. In a hot gas, the fast ones are always rare.",
+      "audioFile": "public/audio/phys-y12-m8-v19/over-the-hill.wav"
+    },
+    {
+      "id": "neutron-contrast",
+      "text": "Compare that with fission. A neutron has no charge, so there's no hill in its way. Even a slow neutron can drift right up to a uranium nucleus and be captured. That's why fission can start at ordinary temperatures, while fusion needs millions of kelvin. Fusion's problem was never the energy it releases. It's getting the nuclei close enough.",
+      "audioFile": "public/audio/phys-y12-m8-v19/neutron-contrast.wav"
+    },
+    {
+      "id": "binding-gain",
+      "text": "Now, why is energy released? Think binding energy. Deuterium's binding energy is about two point two MeV. Tritium's is about eight point five. But helium four's is twenty-eight point three MeV, much more tightly bound, at about seven MeV per nucleon. Joining them releases the difference, about seventeen point six MeV. Helium sits far higher up the binding energy curve.",
+      "audioFile": "public/audio/phys-y12-m8-v19/binding-gain.wav"
+    },
+    {
+      "id": "worked-q",
+      "text": "Check it with masses. Deuterium and tritium atoms have a total mass of five point zero three zero two u. Helium four and a neutron have five point zero one one three. The difference is zero point zero one eight nine u. Times nine hundred and thirty-one point five gives seventeen point six MeV, the same answer. The products have less mass, because they're more tightly bound.",
+      "audioFile": "public/audio/phys-y12-m8-v19/worked-q.wav"
+    },
+    {
+      "id": "energy-ledger",
+      "text": "So what about the kinetic energy the nuclei brought in? It isn't lost. Whether they go over the hill or tunnel through it, the products get that energy back, plus the seventeen point six MeV. It's like a ball getting past a small hump into a deep valley. Total mass and energy together stay the same. Some rest mass becomes kinetic energy of the products.",
+      "audioFile": "public/audio/phys-y12-m8-v19/energy-ledger.wav"
+    },
+    {
+      "id": "energy-share",
+      "text": "The products fly apart in opposite directions, with equal and opposite momentum. The neutron is about a quarter of helium's mass, so it moves much faster, and carries about four fifths of the energy, about fourteen MeV. It has no charge, so magnetic fields can't hold it. It flies out to the walls, where its energy becomes heat. Per nucleon, the whole reaction gives about three and a half MeV, four times what fission gives.",
+      "audioFile": "public/audio/phys-y12-m8-v19/energy-share.wav"
+    },
+    {
+      "id": "stars",
+      "text": "Stars solve all three problems with gravity. In the Sun's core, gravity squeezes the hydrogen to high density at about fifteen million kelvin, and holds it there. Here's a surprise. Fusion reactors need about ten times the Sun's core temperature. The Sun can be slow, because it's enormous and it has billions of years. A reactor has to react quickly in a small volume, so it uses deuterium and tritium, the easiest pair to fuse.",
+      "audioFile": "public/audio/phys-y12-m8-v19/stars.wav"
+    },
+    {
+      "id": "tokamak",
+      "text": "On Earth, no wall can touch fuel that hot. It would cool the fuel and damage the wall. So the fuel is kept as a plasma, a gas so hot that the electrons are stripped off the nuclei, and charged particles can be held by magnetic fields. Remember, a charged particle circles around a magnetic field. In a doughnut-shaped machine called a tokamak, the particles spiral round and round, away from the walls. A huge tokamak called ITER is being built in France.",
+      "audioFile": "public/audio/phys-y12-m8-v19/tokamak.wav"
+    },
+    {
+      "id": "memory-aid",
+      "text": "Here's a way to remember why fusion works. Get past the hill, win the valley.",
+      "audioFile": "public/audio/phys-y12-m8-v19/memory-aid.wav"
+    },
+    {
+      "id": "attempt-1",
+      "text": "Your turn. Two deuterium nuclei fuse to form helium three and a neutron. Using the atomic masses given, calculate the energy released, in MeV. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v19/attempt-1.wav"
+    },
+    {
+      "id": "feedback-1",
+      "text": "Reactants, two deuteriums, four point zero two eight two u. Products, helium three and a neutron, four point zero two four seven u. The difference is zero point zero zero three five one u, about three point two seven MeV. The slip is leaving out the neutron, which gives an impossible answer.",
+      "audioFile": "public/audio/phys-y12-m8-v19/feedback-1.wav"
+    },
+    {
+      "id": "attempt-2",
+      "text": "Last one. Fusion releases energy, yet it needs extremely high temperatures to start. Explain why. Pause here to answer.",
+      "audioFile": "public/audio/phys-y12-m8-v19/attempt-2.wav"
+    },
+    {
+      "id": "feedback-2",
+      "text": "Nuclei are positive, so they repel, and they must get within a few femtometres before the strong force can bind them. Only very fast nuclei can get through or over that Coulomb barrier, and high temperature means high speeds. Once they fuse, the product is more tightly bound, so energy is released. The slip is saying the strong force only switches on when it's hot.",
+      "audioFile": "public/audio/phys-y12-m8-v19/feedback-2.wav"
+    },
+    {
+      "id": "handoff-v20",
+      "text": "All of this treats protons and neutrons as tiny solid balls, held together by the strong force. But are they? Earlier, firing alpha particles at atoms revealed the nucleus inside. What if we fire something at a proton? So what evidence shows that protons and neutrons have smaller constituents?",
+      "audioFile": "public/audio/phys-y12-m8-v19/handoff-v20.wav"
+    },
+    {
+      "id": "key-notes",
+      "text": "Here are the key notes. Pause the video if you need more time to copy them.",
+      "audioFile": "public/audio/phys-y12-m8-v19/key-notes.wav"
+    }
+  ]
+}

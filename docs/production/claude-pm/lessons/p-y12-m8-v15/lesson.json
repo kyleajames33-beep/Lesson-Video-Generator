@@ -1,0 +1,195 @@
+{
+  "id": "phys-y12-m8-v15",
+  "fps": 30,
+  "subject": "Physics",
+  "yearLevel": 12,
+  "sourceDesignSha256": "af7d08890940bdb591d1a47005f482a32fedc09a280e7e0667d016a9b29de110",
+  "scenes": [
+    {
+      "id": "hook",
+      "title": "hook (random, yet on schedule)",
+      "voiceover": {
+        "text": "Each nucleus in a sample decays at a moment nobody can predict. Yet a large sample of a radioactive isotope always halves in the same time, whether you start with a gram or a tonne. Random single events, and a pattern as steady as a clock. So why does half-life predict a population but not one atom?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "no-memory",
+      "title": "one nucleus has no memory",
+      "voiceover": {
+        "text": "Start with one nucleus. It doesn't age, or wear out, or count down. In every moment, it has the same small chance of decaying, whether it was made a minute ago or a billion years ago. Heating it, squeezing it, or locking it in a chemical compound makes no difference. So you can never say when it will go. Its fixed rate of decay, per second, is called the decay constant, lambda."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "counters-model",
+      "title": "a safe model: counters",
+      "voiceover": {
+        "text": "Here's a safe way to model it. Take two hundred counters, red on one side and yellow on the other. Tip them onto a tray, and remove every one that lands red side up. Each counter has a one in two chance every throw. You can't predict which ones will go, but about half go each time. Two hundred, then about a hundred, about fifty, about twenty five."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "half-life-trap",
+      "title": "what half-life halves",
+      "voiceover": {
+        "text": "That's a half-life, the time for half the nuclei in a sample to decay. And notice what each half-life halves. It's what's left, not what you started with. After one half-life, half remains. After two, a quarter. After three, an eighth. The expected number never quite reaches zero. Half-lives range from fractions of a second to billions of years. Uranium two three eight's is four and a half billion years."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "exponential-law",
+      "title": "why equal halving times",
+      "voiceover": {
+        "text": "Why does it halve in equal times? Every nucleus has the same decay rate, so the number decaying each second is lambda times the number left. Twice as many nuclei, twice as many decays. So the same fraction disappears in every equal stretch of time. That's why the curve is steep at first, when there are lots of nuclei, and flattens out later. That's exponential decay. N t equals N nought, e to the minus lambda t."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "lambda-half-life",
+      "title": "linking lambda to half-life",
+      "voiceover": {
+        "text": "Now connect lambda to the half-life. After one half-life, N t is half of N nought. So e to the minus lambda t half equals one half. Take the natural log of both sides, and lambda t half equals the natural log of two. So lambda equals the natural log of two, over the half life. A short half-life means a big lambda, so each nucleus is more likely to decay each second."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "activity",
+      "title": "activity: what we measure",
+      "voiceover": {
+        "text": "Activity is the number of decays per second, in becquerels. A counter only catches a fixed fraction of them. Since each nucleus decays at a rate lambda, activity equals lambda times N. So activity falls with exactly the same half-life as N. But they're different things. One is a count of nuclei, the other is a rate of decays."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "background-data",
+      "title": "real data: subtract the background",
+      "voiceover": {
+        "text": "In an experiment, a Geiger counter also picks up background radiation, from rocks, building materials and space. So first, measure the count rate with no source, and subtract it from every reading. Then plot the corrected count rate against time. The points scatter a little, because decay is random, so draw a smooth curve of best fit. Read off the time it takes to halve, from a few different starting points, and average them."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "whole-half-lives",
+      "title": "stage 1: whole half-lives",
+      "voiceover": {
+        "text": "Let's predict an activity. Iodine one three one, used in medicine, has a half-life of eight days. A sample has an activity of six hundred and forty becquerels. After twenty four days, that's three half-lives, so the activity is six hundred and forty over eight, which is eighty becquerels."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "formula-case",
+      "title": "stage 2: not a whole number",
+      "voiceover": {
+        "text": "But what about ten days, which isn't a whole number of half-lives? Use the formula. Lambda is the natural log of two over eight, which is zero point zero eight six six per day. So lambda t is zero point eight six six, and the activity is six hundred and forty, times e to the minus zero point eight six six, two hundred and sixty nine becquerels. Keep lambda and t in the same time units."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "crowd-not-individual",
+      "title": "the crowd, not the individual",
+      "voiceover": {
+        "text": "So why does this work for a population, but not one atom? With twenty nuclei, chance matters a lot. After one half-life, you might have seven left, or thirteen. With a million million nuclei, the random differences even out, and the number left is within about one part in a million of half. The half-life describes the crowd. For one nucleus, it only tells you there's a fifty per cent chance it's gone after one half-life."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 0,
+      "holdKind": "visual"
+    },
+    {
+      "id": "memory-aid",
+      "title": "a way to remember",
+      "voiceover": {
+        "text": "Here's a way to remember the trap. Each half-life halves what's left, not what you started with."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-1",
+      "title": "attempt 1 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Your turn. Phosphorus thirty two has a half-life of fourteen point three days. A sample starts with eight point zero times ten to the ten atoms. Calculate the decay constant, and the number of atoms left after thirty point zero days. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-1",
+      "title": "feedback 1 (brief)",
+      "voiceover": {
+        "text": "Lambda is the natural log of two over fourteen point three, zero point zero four eight five per day. Then lambda t is one point four five five, so N is eight point zero times ten to the ten, times e to the minus one point four five five. That's one point eight seven times ten to the ten atoms. The slip is using lambda per second with t in days, which makes almost nothing decay."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "attempt-2",
+      "title": "attempt 2 (countdown, 10 seconds)",
+      "voiceover": {
+        "text": "Last one. A nucleus has a half-life of ten minutes. It has already lasted thirty minutes without decaying. What's the chance it decays in the next ten minutes? Explain. Pause here to answer."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 10,
+      "holdKind": "countdown",
+      "planningResponseInterval": {
+        "countdownSeconds": 10
+      }
+    },
+    {
+      "id": "feedback-2",
+      "title": "feedback 2 (brief)",
+      "voiceover": {
+        "text": "It's fifty per cent, the same as for a brand new nucleus. A nucleus has no memory, so it has the same chance per second at any age. The half-life is ten minutes, so in any ten minutes, the chance is one half. The slip is thinking it's overdue, so it's more likely to go."
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 1,
+      "holdKind": "visual"
+    },
+    {
+      "id": "handoff",
+      "title": "handoff",
+      "voiceover": {
+        "text": "So half-life predicts the crowd, never one nucleus. But every one of these decays gives out energy. Where does that energy come from? Weigh a carbon twelve nucleus. Then weigh six protons and six neutrons, separately. They don't balance. So how does missing mass measure nuclear binding energy?"
+      },
+      "durationInFrames": 1,
+      "holdSeconds": 2,
+      "holdKind": "visual"
+    },
+    {
+      "id": "key-notes",
+      "title": "key notes (quiet, hold about 45 seconds)",
+      "voiceover": {
+        "text": "Here are the key notes. Pause the video if you need more time to copy them."
+      },
+      "durationInFrames": 1350,
+      "holdSeconds": 0,
+      "holdKind": "notes"
+    }
+  ]
+}
