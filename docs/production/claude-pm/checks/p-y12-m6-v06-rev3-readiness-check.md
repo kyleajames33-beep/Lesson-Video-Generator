@@ -19,3 +19,13 @@ Mechanical: 5,603 characters as the sum of 16 scene strings, matching the headli
 This is a source check at recording stage only. Finding 1 changes narration, so it must be resolved and rechecked against the new source SHA before recording. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `b17793248908a26a20b4946a78fb83cf6072108a55dece36674f42eab06f12e5`.
+
+Compared against the version checked above (`dd6ac9f3...8d55`, the `039f0bbb` file) after root's commit `09b3e84e`. Changes: scene 8 narration "And in Module eight, you'll see Thomson" became "And in a later video, you'll see Thomson"; the scene 8 chip became "later: Thomson's charge-to-mass experiment"; line 5 now reads 5,604 characters; a dated root note records the edit. Finding 1 is resolved.
+
+Recount: the 16 scene strings sum to 5,604 characters, equal to the headline and under 7,000. Only scene 8 changed; its bold cues (atoms, ratio) are unchanged, verbatim and in order. No narration or scene Visual names a module number or "the syllabus" (remaining module mentions are in design notes and YouTube metadata). No U+2014 in the file.
+
+Result: 0 blockers, 0 should fix, 0 optional.

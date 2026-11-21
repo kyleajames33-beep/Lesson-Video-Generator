@@ -21,3 +21,15 @@ Mechanical: the 15 scene strings sum to 5,594 characters (under 7,000). Bold cue
 This is a source check at recording stage only. Finding 1 is a count and record correction with no effect on the spoken text; once made, the source SHA changes and needs a fresh passing check. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `710b4976eb7eae1500f7b550187699af0cc1405ac2ce28cc874949b03194c97c`.
+
+Compared against the version checked above (`1b6c2bd3...e64a`, the `0d345c3a` file) after root's commit `09b3e84e`. Changes: line 5 now reads 5,594 characters, and a dated root note after it records the 21 November scene 4 edit and the corrected count. No narration changed. Finding 1 is resolved.
+
+Recount: the 15 scene strings sum to 5,594 characters, equal to the headline and under 7,000. All bold cues are unchanged, verbatim and in order. No U+2014 in the file.
+
+Open: finding 2 (optional, the scene 4 on-screen tag "Physics Stage 6 (2017)") remains open; root is covering it with a build rule that no course or module tag appears on screen.
+
+Result: 0 blockers, 0 should fix, 1 optional.

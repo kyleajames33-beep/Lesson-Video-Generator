@@ -18,4 +18,6 @@ Findings:
 
 2. **Optional.** Scene 16 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
-Result: 0 blockers, 0 should fix, 2 optional.
+3. **Optional.** Scene 7 narration names an earlier video by number: "The fix is the closed iron core from video twelve". This is not a module label, but the Revision 3 rule keeps video codes off screen, and the number may not match a 2025 playlist. Proposed fix: "The fix is the closed iron core we met earlier".
+
+Result: 0 blockers, 0 should fix, 3 optional.

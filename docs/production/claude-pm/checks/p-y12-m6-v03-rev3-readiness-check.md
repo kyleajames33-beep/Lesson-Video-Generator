@@ -21,3 +21,15 @@ Mechanical: 6,013 characters as the sum of 16 scene strings, matching the headli
 This is a source check at recording stage only. Finding 1 changes narration, so it must be resolved and rechecked against the new source SHA before recording. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `4d1d462b5ca1e3a004749d5ea6035a2ac07d596c214cb62520ac5b126b7e67ff`.
+
+Compared against the version checked above (`6d96a946...261e`, the `039f0bbb` file) after root's commit `09b3e84e`. Changes: scene 5 narration now ends "which is a story for a later **video**."; the scene 5 Visual cue "On 'seven'" became "On 'video'" and the chip lost "(Module 7)" (now "v ≈ 0.14c: classical model starting to strain"); line 5 now reads 6,014 characters; a dated root note records the edit. Finding 1 is resolved.
+
+Recount: the 16 scene strings sum to 6,014 characters, equal to the headline and under 7,000. Only scene 5 changed; its bold cues are now m, second, video, verbatim and in spoken order, and the Visual uses "video" as the new trigger. No narration or scene Visual names a module number or "the syllabus" (remaining module mentions are in the scope, decisions, root note and YouTube metadata, not on screen). No U+2014 in the file.
+
+Open: finding 2 (optional, the held CRT plate) remains open.
+
+Result: 0 blockers, 0 should fix, 1 optional.

@@ -19,3 +19,13 @@ Mechanical: 5,705 characters as the sum of 14 scene strings, matching the headli
 This is a source check at recording stage only. Finding 1 changes narration, so it must be resolved and rechecked against the new source SHA before recording. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 1 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `6a080974492432fd41c9dd8ee9d5ef6e2b60e47de184372a9c4c7ed282dfcc40`.
+
+Compared against the version checked above (`952f937c...6ffe`, the `039f0bbb` file) after root's commit `09b3e84e`. Changes: scene 7 narration "Later in this module, the same idea" became "Later on, the same idea"; the scene 7 chip became "magnetic braking: later on"; line 5 now reads 5,693 characters; a dated root note records the edit. Finding 1 is resolved.
+
+Recount: the 14 scene strings sum to 5,693 characters, equal to the headline and under 7,000. Only scene 7 changed; its bold cues (freely, pole, end, slowly, it) are unchanged, verbatim and in order. No narration or scene Visual names a module number or "the syllabus". No U+2014 in the file.
+
+Result: 0 blockers, 0 should fix, 0 optional.

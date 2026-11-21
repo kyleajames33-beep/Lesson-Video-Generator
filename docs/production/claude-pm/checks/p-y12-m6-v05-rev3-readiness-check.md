@@ -21,3 +21,13 @@ Mechanical: the 17 scene strings sum to 5,603 characters (under 7,000). Bold cue
 This is a source check at recording stage only. Finding 1 changes narration, so both findings must be resolved and rechecked against the new source SHA before recording. No motion-at-playback-speed, voiced preview, caption fit, human listening or release pass is supplied.
 
 Result: 0 blockers, 2 should fix, 0 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `6df775701c2781bc40849b8c6c26b830c5187bd54eff7114ea1ca76477928223`.
+
+Compared against the version checked above (`679efdc2...041a`, the `0d345c3a` file) after root's commit `09b3e84e`. Changes: scene 3 narration "which we met in Module five." became "which we've met before."; line 5 now reads 5,598 characters; a dated root note records this edit and the earlier scene 6 and 8 edits. Findings 1 and 2 are resolved.
+
+Recount: the 17 scene strings sum to 5,598 characters, equal to the headline and under 7,000. Only scene 3 changed; its bold cues (motion, centre) are unchanged, verbatim and in order. No narration names a module number or "the syllabus". No U+2014 in the file.
+
+Result: 0 blockers, 0 should fix, 0 optional.
