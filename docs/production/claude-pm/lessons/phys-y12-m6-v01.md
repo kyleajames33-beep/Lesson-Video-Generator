@@ -2,7 +2,7 @@
 
 Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-card pictures, givens strips, five-line notes, simulation engines named, root rules R1 to R4), visuals only. Narration unchanged. Needs a Codex error check before plates and voicing. Previously Revision 2 (7 Nov 2026): brief 189 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 6,162 characters, 16 scenes, about 552 s, counted by script with the build parser rules (see "Narration length estimate"). First video of Module 6.
+Narration 6,158 characters, 16 scenes, about 552 s, counted by script with the build parser rules (see "Narration length estimate"). First video of Module 6.
 
 Scope: Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 6 (Electromagnetism), inquiry question "What happens to stationary and moving charged particles when they interact with an electric or magnetic field?". Templates: `phys-y11-fa1-v01.md` (structure, voice), `math-a12-d10.md` (calculation layout), `bio-y11-fa1-v05.md` (plates and asset brief); layout and voice as `phys-y12-m5-v23.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year12/module6/lesson01.sa.html`, SHA256 `c3cdeb0ba635b7fe5b8207a93d8acd8c3fad7c253462e9ab00df683bdc9f7569` (recomputed 6 Nov; matches the route). Sections used: `model-uniform-field`, `represent-force-vectors`, `calculate-particle-response`. Route entry: `phys-y12-m6-v01`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Connect V/d to uniform field, signed charge force qE and acceleration; distinguish field direction from negative-charge motion. Stop before trajectories." Next: "phys-y12-m6-v02: Why is a charged-particle path between plates like a projectile?"
 
@@ -84,7 +84,7 @@ The Revision 2 visual upgrade is already written into each scene's Visual line (
 Cue words in **bold** trigger the visual change. Screen symbols in italic: *E*, *V*, *d*, *q*, *F*, *a*, *m*, *e*. Paper background and handwritten headline face as the explainer house style.
 
 ### 1. hook (one particle, three changes)
-> Here are the two plates we ended Module five with. The top plate is positive, the bottom one negative, and there's a voltage across them. A proton between them accelerates steadily, like a dropped ball. So here's the puzzle. Double the **voltage**, and what happens to its acceleration? Keep the voltage, but pull the plates twice as far **apart**. Or swap the proton for an **electron**. Make your predictions **now**.
+> Here are the two plates we ended on last time. The top plate is positive, the bottom one negative, and there's a voltage across them. A proton between them accelerates steadily, like a dropped ball. So here's the puzzle. Double the **voltage**, and what happens to its acceleration? Keep the voltage, but pull the plates twice as far **apart**. Or swap the proton for an **electron**. Make your predictions **now**.
 
 Visual: opens on m5-v23's final frame (see "Opening frame"); the "+q" label rewrites as "proton (+)". The proton accelerates from rest towards the bottom plate (violet "a" arrow) and resets. On "voltage" a ghost copy of the plates appears with "2V" and a "?" on its acceleration arrow; on "apart" a second ghost with the gap stretched "2d" and "?"; on "electron" a third ghost with an electron "(−)" and "?" on both the length and direction of its arrow. On "now" the 3 s `Countdown` runs beside chips "a doubles / halves / no change" under each ghost. Anchor (Revision 2): from the first sentence the painted high-voltage supply (`phys-y11-eht-supply-v1.png`, uniform scale, about 300 px tall) slides in at the left with two coded leads to the plates, its display window reading "100 V" (52 px, navy). Hand tags: blue "+ to −" beside the field arrows, and violet "steady push, steady a" with a pen arrow to the proton's arrow.
 
@@ -229,7 +229,7 @@ Revision 3 (13 Nov 2026): narration unchanged (6,162 characters). The notes scen
 
 ## Opening frame
 
-m5-v23's final frame (`phys-y12-m5-v23.md`, "Final frame"): paper background; two coded horizontal parallel plates across the centre (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", a voltage label "V" across the gap; a small coded "+q" particle between the plates with an empty arrow "a = ?"; at the left a small inset of Earth's surface patch with parallel gravitational field arrows, tag "near the surface: uniform"; heading "What minimum launch speed allows escape without further propulsion?"; chip "Next (Module 6): how does voltage between parallel plates determine a charged particle's acceleration?". Scene 1 relabels the particle "proton (+)", starts it moving and builds the three ghosts; the heading changes in scene 2 and the inset fades there.
+m5-v23's final frame (`phys-y12-m5-v23.md`, "Final frame"): paper background; two coded horizontal parallel plates across the centre (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", a voltage label "V" across the gap; a small coded "+q" particle between the plates with an empty arrow "a = ?"; at the left a small inset of Earth's surface patch with parallel gravitational field arrows, tag "near the surface: uniform"; heading "What minimum launch speed allows escape without further propulsion?"; chip "Next: how does voltage between parallel plates determine a charged particle's acceleration?". Scene 1 relabels the particle "proton (+)", starts it moving and builds the three ghosts; the heading changes in scene 2 and the inset fades there.
 
 ## Final frame
 
@@ -348,3 +348,5 @@ Counts: 6,162 characters, unchanged; about 537 s (it was about 552 s; the notes 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root label edit (21 Nov 2026): narration "Here are the two plates we ended Module five with." became "Here are the two plates we ended on last time." so one take serves the 2017 and 2025 courses (module numbers do not exist in 2025). Narration now 6,158 characters (was 6,162); bold cues and their order are unchanged.
