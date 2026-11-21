@@ -315,7 +315,7 @@ Title: Hydrogen's Balmer Series: Energy Levels and the Rydberg Equation | HSC Ph
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/physics/year12/module8/lesson12.sa.html
 
-Each line in hydrogen's spectrum is one photon from one drop between energy levels. Use the energy gaps with E = hc/λ to predict the red 656 nm line, see where the Rydberg equation comes from, then use it for all four Balmer lines and the series limit. Find out why the Balmer series is the visible one while Lyman is ultraviolet and Paschen is infrared. Two exam-style questions at the end.
+Each line in hydrogen's spectrum is one photon from one drop between energy levels. Use the energy gaps with E = hc/λ to predict the red 656 nm line, see where the Rydberg equation comes from, then use it for the four bright Balmer lines, the fainter lines beyond them and the series limit. Find out why the Balmer series is the visible one while Lyman is ultraviolet and Paschen is infrared. Two exam-style questions at the end.
 
 Year 12 Physics (2017 syllabus), Module 8: From the Universe to the Atom.
 Syllabus content (NSW Physics Stage 6, 2017):
@@ -381,3 +381,5 @@ Counts: 6,034 characters, unchanged; about 520 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root edit (21 Nov 2026, Claude recording-readiness check): YouTube description corrected (the Balmer series has more than four lines). Narration unchanged. Narration 6,034 characters.
