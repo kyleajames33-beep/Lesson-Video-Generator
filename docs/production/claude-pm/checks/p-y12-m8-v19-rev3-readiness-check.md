@@ -25,3 +25,18 @@ Findings:
 5. **Optional.** Scene 18 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 3 should fix, 2 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `6804f4580e1483be41a06ea5f0edc47aded43cca190b648793b1d7d806c4d048`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`4d9b8115...`) by git diff. Narration is byte-identical (18 scene strings, 5,770 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. The field motion run now covers only the approach (scenes 1 and 2) with the repulsive 1/r² force alone, so the marker climbs part way and slows. The crossing in scenes 8 and 12 is the lesson-coded dashed tunnelling path below the top, and the grey over-the-top path stays the labelled classical comparison. No classical run reaches the valley, matching scene 4 ("pass right through the hill, well below its top").
+- Finding 2 is resolved. Both the Revision 3 schematic line and the "Coded:" list now name "the helical (twisted) field lines". The kept item "the charge's spiral" is acceptable: it is the particle's path round a field line, which is still lesson-coded under the recorded kit gap, not a ring field.
+- Finding 3 is resolved. The speed spread's long bars now reach "part way up the hill, where a few tunnel through", and the energy ledger now reads "The kinetic energy brought in is kept by the products, and Q is added", both matching scenes 4 and 8.
+- Finding 5 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014. Finding 4 (optional, effective activation energy in the scene 4 particle box) was left for the build brief and stands.
+
+Result: 0 blockers, 0 should fix, 1 optional.

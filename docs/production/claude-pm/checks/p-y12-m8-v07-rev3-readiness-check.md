@@ -19,3 +19,17 @@ Findings:
 2. **Optional.** Scene 18 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `3fd36d6641ed485111e9a459a72d401e48f6045e02dca487a63f9b71be9de69a`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`0c370079...`) by git diff. The fix also normalised the working copy to LF line endings (75,063 bytes, identical to the committed blob), so the SHA256 above is stable across checkouts.
+
+- Finding 1 is resolved. The headline now reads "Narration 6,088 characters" and "about 524 s". A recount by the build parser rules gives 6,088 (scenes 5 and 6 are 482 and 475), and a dated root note records the label edit.
+- Narration is byte-identical to the checked version, and bold cues are unchanged and in spoken order.
+- Finding 2 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

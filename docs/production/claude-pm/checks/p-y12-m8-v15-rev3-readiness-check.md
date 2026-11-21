@@ -23,3 +23,18 @@ Findings (1 to 3 are the Revision 2 findings, still open):
 4. **Optional.** Scene 18 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes". (Root's open call on the coded two-pan balance in the handoff is noted, not a finding here: it is labelled "mass comparison (diagram)" and is consistent on both sides of the v15 to v16 join.)
 
 Result: 0 blockers, 3 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `af7d08890940bdb591d1a47005f482a32fedc09a280e7e0667d016a9b29de110`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`0c5b47fe...`) by git diff. Narration is byte-identical (18 scene strings, 5,636 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. The scene 3 tag (and the tag list) now reads "about half, not always exactly half", which is true (for 200 fair counters, exactly 100 survivors has probability 0.056).
+- Finding 2 is resolved. "each of N nuclei decays at the same fixed rate λ: in a short time Δt each has a chance of about λΔt" is the correct reading of λ and agrees with the repaired scenes and the scene 2 tag "short time Δt: chance ≈ λΔt".
+- Finding 3 is resolved: the handoff decision no longer claims millions of electron volts for every decay.
+- Finding 4 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

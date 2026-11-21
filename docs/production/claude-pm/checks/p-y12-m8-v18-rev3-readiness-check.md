@@ -21,3 +21,17 @@ Findings:
 3. **Optional.** Scene 19 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 2 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `f38b2b28188268593f802acdd7a9dd4a34934e9a33b9d0954051add302a22b9e`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`9bea4709...`) by git diff. Narration is byte-identical (19 scene strings, 6,435 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved, and the deviation is sound. The scene 6 tree is now exact and lesson-coded (1, 2, 4, 8, ..., 2¹⁰ = 1024 at Gen 11), matching "each fission triggers two more" and the counter. Only scene 11's tree is a seeded `coins` run with average k = 2, tagged "model". That suits scene 11's point (unchecked growth), and the narration there gives no exact counts.
+- Finding 2 is resolved. Cause-chain point 8 now keeps scene 11's conditions (k well above 1, nothing absorbing, fast neutrons in an unmoderated lump, generations far shorter than a microsecond) and notes that a reactor briefly above 1 only raises its power.
+- Finding 3 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

@@ -19,3 +19,16 @@ Findings:
 2. **Optional.** Scene 19 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `cfdd6e1587c1c4faca1bddebfce271439270adb166e1fe38ab24b953f8d3f984`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`f3d9bb0f...`) by git diff. Narration is byte-identical (20 scene strings, 6,432 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. The slip row now reads "p left as 3.0 × 10⁹ (the energy in eV, not an SI momentum)". The crossed value 3.0 × 10⁹ / (1.602 × 10⁻¹⁹ × 8.0) = 2.34 × 10²⁷ T rechecks.
+- Finding 2 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

@@ -21,3 +21,17 @@ Findings (1 and 2 are the Revision 2 findings, still open):
 3. **Optional.** Scene 19 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 2 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `6c7c18cfeea92704f005ba8cc220066baf80dd1de936911c533df44f68f107b5`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`a85631da...`) by git diff. Narration is byte-identical (19 scene strings, 5,744 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. The assumption now applies only to "the fusion, fission and formation comparisons used here (no beta processes)", where Z and N are the same on both sides, so Δm = −ΔE_b/c² holds as stated.
+- Finding 2 is resolved: the "Coded:" list asks only for "the binding curve".
+- Finding 3 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

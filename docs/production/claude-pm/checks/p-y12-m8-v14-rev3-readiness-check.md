@@ -23,3 +23,17 @@ Findings (1 to 3 are the Revision 2 findings, still open):
 4. **Optional.** Scene 18 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 3 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `0b9e283719afdc7be3b88200a1414b67e136a27d56010c82eaed90643a4c6d41`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`ec2ba722...`) by git diff. Narration is byte-identical (18 scene strings, 5,620 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. Key-notes bullet 5 now reads "Products have less mass: the difference → kinetic energy and γ-ray energy.", which is correct for alpha, beta and gamma decay.
+- Finding 2 is resolved, and the stated deviation is correct. (18.000937 − 17.999160 − 2 × 0.000549) × 931.5 = 0.000679 × 931.5 = 0.6325 MeV with these rounded masses; full AME2020 values give 0.6339 MeV, about 0.634 MeV. The "Numbers used" entry "Q = 0.634 MeV" stays consistent with the full-mass value.
+- Finding 3 is resolved: 6.64 × 10⁻²⁷ × 1.55 × 10⁷ = 1.03 × 10⁻¹⁹ kg m s⁻¹, and 1.03 × 10⁻¹⁹ / 3.2 × 10⁻¹⁹ = 0.32 T m. The comparison with the beta's 0.0047 T m (a radius ratio of about 70) is unchanged.
+
+No U+2014. Finding 4 (optional, "framed card under the notes") was not applied and stands.
+
+Result: 0 blockers, 0 should fix, 1 optional.

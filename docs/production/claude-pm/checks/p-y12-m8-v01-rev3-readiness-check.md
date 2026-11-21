@@ -19,3 +19,16 @@ Findings:
 2. **Optional.** Scene 18 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 1 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `d8c9d5ab2994a9308dc045c45bee438007dc7dc20a67896c5f00825ffd099230`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`750aef20...`) by git diff. Narration is byte-identical (18 scene strings, 6,504 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. The description now says "photons became too cool to make particle pairs often", and "Teaching checks" says "as it cools production becomes rare while annihilation continues". Both match the repaired scene 3, where the energetic tail keeps making a few pairs.
+- Finding 2 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.

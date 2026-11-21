@@ -21,3 +21,17 @@ Findings:
 3. **Optional.** Scene 20 (key notes) still says "framed card under the notes", while Revision 3 sets "the framed memory card beside them". Proposed fix: change "under the notes" to "beside the notes".
 
 Result: 0 blockers, 1 should fix, 2 optional.
+
+## Re-check, 21 November 2026 (Claude reviewer)
+
+Source SHA256 `4d30f0e2da35f02b5fe6d409749d52dfeaebe2ec16bc2edc7f8a0b861d01d4d0`.
+
+Compared the current file (commit `3575b452`) against the version checked above (`51c44ed8...`) by git diff. Narration is byte-identical (20 scene strings, 6,190 characters, equal to the headline); bold cues are unchanged.
+
+- Finding 1 is resolved. "Stops after" now lists two lines of evidence (deep inelastic scattering and the hadron pattern; decay is not proof), and A2's crossed answer is "a neutron decays, so it must have parts" (the muon is fundamental yet decays), matching scenes 7, 9 and 18.
+- Finding 2 (optional) is applied correctly. The scene 10 note now describes one positron track as two joined `magnetic` runs, faster below the lead plate and slower and more tightly curved above it, with positive-charge curvature. That matches the narration ("A lead plate across the middle slowed particles down, and a slower particle curves more tightly", "it went up").
+- Finding 3 (optional) is applied: the memory card is "beside the notes".
+
+No U+2014.
+
+Result: 0 blockers, 0 should fix, 0 optional.
