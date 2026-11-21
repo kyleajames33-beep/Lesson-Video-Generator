@@ -387,3 +387,7 @@ Root (21 Nov, 05:45): 3 s sweep of the master read (sheets 1 to 6, 8, 9). Opens 
 
 ## chem-y11-m1-v14 v1
 Root (21 Nov, 10:30): 3 s sweep of the master read (sheets 1 to 9). Rendered after brief 257's across-period re-voice (31.4 s take, gate pass). Opens on v13's final frame; ends on the water dish "?" frame leading to v15. Checked: first IE Na 496, Mg 738, Al 578, Si 787, P 1012, S 1000, Cl 1251, Ar 1521; Li 520, Na 496, K 419, Rb 403, Cs 376 kJ/mol (NIST via PubChem); Pauling Na 0.9 to Cl 3.2, F 4.0, Cl 3.2, Br 3.0, I 2.7; Al and S dips explained (new 3p, paired 3p); Ar no Pauling value with the "noble gases = 0" slip crossed; Na vs K feedback with the "more protons" slip crossed; notes hold 45 s. Pass. v16 v1 is superseded by brief 258's trim (render v16 v2).
+
+## math-a12-d04 v4
+
+Root 3 s playback pass, 21 Nov 2026. Replaces v3 (https://youtu.be/khpv-Q0-zas) after the brief 258 trim of scene-01's run-on tail (the repeated closing question). Scene 1 now ends at about 47.7 s on "by exactly how much?" and scene 2 opens cleanly at 48.0 s; Codex's word-time diff proves every other scene is identical, and the sheets show no other change. Captions are the rebuilt measured set (222 cues). Human listening pending. Queued as a replacement on YouTube and Bunny.
