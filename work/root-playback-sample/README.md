@@ -399,3 +399,7 @@ Root 3 s playback pass, 22 Nov 2026 (446 s, 10 sheets). Opens on m2-v02's final 
 ## chem-y11-m2-v04 v1
 
 Root 3 s playback pass, 22 Nov 2026 (483 s, 11 sheets). Opens on m2-v03's final frame; particle-box gas model and live burette readouts agree; numbers checked (H2 1.702e-3 mol and MM 24.7, escaped-gas 27.4, balance band 21 to 26 and 24.1 to 25.3, vapour 4.575e-3 mol and 59.5 (propanone), Zn 65.4); error-direction reasoning correct; notes hold 45 s. Human listening pending. Queue after m2-v03.
+
+## chem-y11-m2-v02 v1
+
+Root 3 s playback pass, 22 Nov 2026 (448 s, 10 sheets). Opens on m2-v01's final frame (balance, 2Mg + O2 equation, lens); numbers checked (one C atom about 2e-23 g, counting a mole at one per second 1.9e16 years, 2.5 mol C 1.5e24 atoms, 3.01e24 molecules 5.00 mol, 0.50 mol CO2 3.011e23 molecules and 1.0 mol O atoms, 1 mol NaCl 2 mol ions, He 0.150 mol, CaCl2 2.41e23 Cl- ions); both attempts show the full question with a 10 s countdown; notes hold. Human listening pending. Queue after m2-v01 v2.
