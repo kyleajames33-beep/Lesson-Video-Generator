@@ -411,3 +411,7 @@ Root 3 s playback pass, 22 Nov 2026 (488 s, 11 sheets). v1 was rejected for a "M
 ## chem-y11-m1-v08 v2
 
 Root 3 s playback pass, 22 Nov 2026 (460 s, 10 sheets). Replaces v1 (kKti4nWtV24). Only change: brief 261 re-voiced feedback-1 to remove the unscripted run-on tail; all other scenes and cue times identical by Codex's word-time diff. Feedback-1 sheet checked: Mg-24/Mg-25 ion table builds row by row (protons 12, electrons 12 - 2 = 10, neutrons 12 and 13), "(b) isotopes, both 2+ ions" framed, crossed slip "electrons = 12 + 2 = 14" with "positive: electrons lost", then attempt-2 with full question and 10 s countdown. Human listening pending.
+
+## chem-y11-m1-v09 v2
+
+Root 3 s playback pass, 22 Nov 2026 (479 s, 10 sheets). Replaces v1 (FgAnF9QTUT0). Only change: brief 261 re-voiced sense-check to remove the unscripted run-on tail; all other scenes and cue times identical by Codex's word-time diff. Sense-check sheet checked: atom-draw simulation runs 0 to 500 atoms with the running average settling near 10.80, the 10.8 coin crossed "no such atom", the final "Ar is a sample average, not a mass number" chip, then a clean transition into the silicon reverse question. Human listening pending.
