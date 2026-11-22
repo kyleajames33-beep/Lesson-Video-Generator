@@ -407,3 +407,7 @@ Root 3 s playback pass, 22 Nov 2026 (448 s, 10 sheets). Opens on m2-v01's final 
 ## chem-y11-m2-v01 v2
 
 Root 3 s playback pass, 22 Nov 2026 (488 s, 11 sheets). v1 was rejected for a "Module 1 complete" tag in the opening (recreated m1-v27 final frame); v2 removes only that tag (opening.tsx), and the v2 opening sheet confirms it. The rest matches the v1 review: closed and open systems with illustrative masses (CuCO3 2.47 g to 1.59 g, CO2 0.88 g; Mg 0.24 g to 0.40 g, O2 0.16 g); balancing 2H2 + O2 -> 2H2O, 2Mg + O2 -> 2MgO, CuCO3 already balanced, 4Al + 3O2 -> 2Al2O3; CaCO3 5.00 - 2.80 = 2.20 g CO2; attempts show full questions with 10 s countdowns; notes hold. The opening is drawn from m1-v27's design and must be re-matched when m1-v27 is built. Human listening pending.
+
+## chem-y11-m1-v08 v2
+
+Root 3 s playback pass, 22 Nov 2026 (460 s, 10 sheets). Replaces v1 (kKti4nWtV24). Only change: brief 261 re-voiced feedback-1 to remove the unscripted run-on tail; all other scenes and cue times identical by Codex's word-time diff. Feedback-1 sheet checked: Mg-24/Mg-25 ion table builds row by row (protons 12, electrons 12 - 2 = 10, neutrons 12 and 13), "(b) isotopes, both 2+ ions" framed, crossed slip "electrons = 12 + 2 = 14" with "positive: electrons lost", then attempt-2 with full question and 10 s countdown. Human listening pending.
