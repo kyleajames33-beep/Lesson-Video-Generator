@@ -1,8 +1,8 @@
 # HMS Year 11 V02 (Health for individuals and communities): the dynamic nature of health. If health is not a fixed state, what actually makes it change, and how do we describe a person whose health is moving? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: five new, one reused from v01 (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: five new, one reused from v01 (see Assets).
 
-Narration 5,663 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 530 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,704 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 533 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the second video of the HMS programme. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v02** in `docs/production/hms-video-route.json` (draft, 23 Nov). Pre-design pack `../pre-design/hms/hms-y11-m1-v02.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson02.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v01.md` (its handoff frame is this video's first frame). Templates: `bio-y11-fa1-v01.md`.
 
@@ -57,9 +57,9 @@ Visual: the loop stage stays (thigh plate left, three boxes right). On "can't tr
 Visual: the loop stays; the two small plates leave and the thigh plate shrinks to a thumbnail at the upper left. On "dimensions interacting" a gloss writes under the triangle: "interact: a change in one causes a change in another" (38 px). On "lists the dimensions one by one" a sketch of three separate bullet lines ("physical...", "mental...", "social...") writes at the left and is crossed in red; red hand tag "a list, not an explanation" (34 px). On "Put a mechanism on every arrow" the three mechanism labels brighten back to 44 px in turn. On "the good way too" the arrows fade and redraw in the opposite sense of improvement, now green-edged: social to mental "team contact → better mood", mental to physical "better mood → keeps training", physical to social "fitter → plays more". On "Joining a social sports team" the training-field plate returns small above the social box, now with the cones set out for a game (the same plate; a green tick lands on it). On "One change, three dimensions" an amber hand tag: "one change, three dimensions" (42 px). Hold one second.
 
 ### 4. good health is relative
-> So what counts as good health? It isn't one bar that everyone is measured against. A seventeen-year-old sprinter who's back to jogging after an illness would call their health poor. A seventy-year-old who walks two kilometres a day, and takes medication for blood pressure, would call the same fitness excellent. Both are right, because good health is judged relative to a person's circumstances, expectations and life stage. That's why someone can live with a chronic condition and still be in good health.
+> So what counts as good health? It isn't one bar that everyone is measured against. A seventeen-year-old sprinter who's back to jogging after an illness would call their health poor. A seventy-year-old who walks two kilometres a day, and takes medication for blood pressure, would call a similar level of fitness excellent. Both are right, because good health is judged relative to a person's circumstances, expectations and life stage. That's why someone can live with a chronic condition and still be in good health.
 
-Visual: board change to the good-health bench (solid from its first frame): new plate `hms-spikes-and-pill-organiser-v1.png` at the centre (about 520 px tall): at its left a pair of sprint spikes, at its right a weekly pill organiser beside walking shoes. Above it a single coded horizontal "bar" line already drawn across both halves (grey tag "one bar for everyone?"). On "seventeen-year-old sprinter" a teal tag lands on the spikes: "17, sprinter, jogging again: 'poor'" (34 px). On "seventy-year-old" a warm tag lands on the organiser: "70, walks 2 km a day: 'excellent'" (34 px). On "the same fitness" a short coded equals sign links the two tags (the same capacity). On "Both are right" the single bar line breaks into two bars at different heights, one above each half, each labelled with its person's expectation; green ticks on both tags. On "circumstances, expectations and life stage" three amber chips write under the plate. On "live with a chronic condition and still be in good health" the v01 hook plate `hms-asthma-puffer-shoes-v1.png` returns small at the right with a green tag "good health, with asthma". At most three bright items. Hold one second.
+Visual: board change to the good-health bench (solid from its first frame): new plate `hms-spikes-and-pill-organiser-v1.png` at the centre (about 520 px tall): at its left a pair of sprint spikes, at its right a weekly pill organiser beside walking shoes. Above it a single coded horizontal "bar" line already drawn across both halves (grey tag "one bar for everyone?"). On "seventeen-year-old sprinter" a teal tag lands on the spikes: "17, sprinter, jogging again: 'poor'" (34 px). On "seventy-year-old" a warm tag lands on the organiser: "70, walks 2 km a day: 'excellent'" (34 px). On "a similar level of fitness" a short coded "≈" sign links the two tags, grey tag "similar capacity". On "Both are right" the single bar line breaks into two bars at different heights, one above each half, each labelled with its person's expectation; green ticks on both tags. On "circumstances, expectations and life stage" three amber chips write under the plate. On "live with a chronic condition and still be in good health" the v01 hook plate `hms-asthma-puffer-shoes-v1.png` returns small at the right with a green tag "good health, with asthma". At most three bright items. Hold one second.
 
 ### 5. the health continuum
 > To describe health that keeps moving, we use the health continuum. It's a line, not a switch, with optimal health at one end and death at the other. Everyone is somewhere on it, and nobody stays still. Now put two people at exactly the same point. One is three weeks into recovering from an injury, moving towards optimal health. The other has an untreated condition that's slowly getting worse. Their position is identical, but their situations are opposite.
@@ -82,9 +82,9 @@ Visual: board change to the timescale strip (solid from its first frame): three 
 Visual: board change to the circumstances bench (solid from its first frame): the `TwoRoute` diagram at the right half (an amber "circumstance" box at its left, two empty arrow paths leading right, the top to a "health" box, the bottom to a "choices" gate, both boxes drawn), and at the left a column for plates. On "conditions of a person's life" six amber chips write in a column under the circumstance box: "income", "housing", "work", "relationships", "location", "access to services" (30 px). On "Most of them aren't choices" a grey tag "mostly not chosen". On "two ways" both arrow paths pulse once. On "The first is direct" the top arrow draws, labelled "direct" (44 px, amber). On "income falls" the circumstance box fills "income falls (job lost)" (38 px). On "more crowded housing" v01's plate `hms-insecure-housing-v1.png` slides in at the left (about 460 px tall). On "sleep gets broken, and the food gets cheaper" three small chips land on the health box: "broken sleep", "cheaper food", "crowding". On "without anyone deciding anything" a grey tag "no decision involved" sits on the top arrow. At most three bright items. Hold one second.
 
 ### 9. circumstances: the range of choices
-> The second way is quieter. Circumstances change the range of choices a person actually has. The teenager in that family starts working shifts after school, so training stops. Exercise hasn't become less important to them. It's become less available. And because circumstances keep changing, a new job or a scholarship could move their health back the other way. So health is dynamic: the dimensions interact, people move along the continuum, and the conditions around them keep shifting.
+> The second way is quieter. Circumstances change the range of choices a person actually has. The teenager in that family starts working shifts after school, so training stops. Exercise hasn't become less important to them. It's become less available. And because circumstances keep changing, a new job or a scholarship could move their health back the other way. So health is dynamic, which means always changing, for reasons you can name: the dimensions interact, people move along the continuum, and the conditions around them keep shifting.
 
-Visual: the bench stays. On "the range of choices" the bottom arrow draws, labelled "range of choices" (44 px, amber), into the choices gate. On "working shifts after school" new plate `hms-shift-roster-apron-v1.png` (a supermarket apron on a hook beside a printed weekly roster) slides in under the housing plate (about 360 px tall), and the gate shows two coded doors: "train" and "work a shift"; on "training stops" the "train" door closes (grey). On "less important" a chip "valued less" writes and is crossed in grey, and on "less available" a chip "less available" writes in amber beside the closed door. On "a new job or a scholarship" the circumstance box rewrites to "income recovers" and the "train" door reopens with a green tick; grey tag "circumstances change too". On "So health is dynamic" the board compresses into a three-part summary along the top, each part solid from its arrival: the small loop ("dimensions interact"), the small continuum with A and B ("move along the continuum"), and the small two-route diagram ("conditions keep shifting"); gloss under the word "dynamic": "changing, for reasons you can name" (30 px). Hold one second.
+Visual: the bench stays. On "the range of choices" the bottom arrow draws, labelled "range of choices" (44 px, amber), into the choices gate. On "working shifts after school" new plate `hms-shift-roster-apron-v1.png` (a supermarket apron on a hook beside a printed weekly roster) slides in under the housing plate (about 360 px tall), and the gate shows two coded doors: "train" and "work a shift"; on "training stops" the "train" door closes (grey). On "less important" a chip "valued less" writes and is crossed in grey, and on "less available" a chip "less available" writes in amber beside the closed door. On "a new job or a scholarship" the circumstance box rewrites to "income recovers" and the "train" door reopens with a green tick; grey tag "circumstances change too". On "So health is dynamic" the board compresses into a three-part summary along the top, each part solid from its arrival: the small loop ("dimensions interact"), the small continuum with A and B ("move along the continuum"), and the small two-route diagram ("conditions keep shifting"); and on "always changing, for reasons you can name" the gloss writes under the word "dynamic": "dynamic: always changing, for reasons you can name" (34 px); the three parts write in as the sentence names them. Hold one second.
 
 ### 10. memory
 > Two lines to remember. Position isn't the whole story, so describe direction and rate. And circumstances change health directly, and they change which choices are possible.
@@ -107,9 +107,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; givens strip "same point",
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain the dynamic nature of health, referring to the dimensions of health and the health continuum. (5 marks)" Beside it (about 300 px tall): an empty triangle of three boxes and an empty continuum line, with no labels on arrows and no markers. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11d. feedback, item two
-> Define dynamic first: health changes, for reasons you can name. Then give two mechanisms. The dimensions interact, so an injury can lower social contact, then mood, then slow recovery. And the continuum shows that people at one position can move in opposite directions, so you describe direction and rate. Finish by joining them. The classic mistake is defining both terms and never using them.
+> Define dynamic first: health changes, for reasons you can name. Then give two mechanisms. The dimensions interact, so an injury can lower social contact, then mood, then slow recovery. And the continuum shows that people at one position can move in opposite directions, so you describe direction and rate. The classic mistake is defining both terms and never using them.
 
-Visual: `FeedbackScene` with a four-step answer strip (38 px): on "Define dynamic first" step 1 writes "dynamic = changing, for reasons you can name" in a green frame; on "The dimensions interact" the triangle on the card gains its three loop arrows with short labels and step 2 writes "mechanism 1: dimensions interact (injury → contact → mood → recovery)"; on "opposite directions" the continuum on the card gains two markers with opposite arrows and step 3 writes "mechanism 2: continuum, direction and rate"; on "joining them" step 4 writes "so health is dynamic, not fixed". The givens "dimensions of health" and "health continuum" in the demand take amber underlines as steps 2 and 3 write. On "classic mistake" a chip "defines terms, never uses them" writes and is crossed in red, red hand tag "use them as causes" (34 px). Settle one second.
+Visual: `FeedbackScene` with a four-step answer strip (38 px): on "Define dynamic first" step 1 writes "dynamic = changing, for reasons you can name" in a green frame; on "The dimensions interact" the triangle on the card gains its three loop arrows with short labels and step 2 writes "mechanism 1: dimensions interact (injury → contact → mood → recovery)"; on "opposite directions" the continuum on the card gains two markers with opposite arrows and step 3 writes "mechanism 2: continuum, direction and rate"; step 4 then writes silently, "so health is dynamic, not fixed". The givens "dimensions of health" and "health continuum" in the demand take amber underlines as steps 2 and 3 write. On "classic mistake" a chip "defines terms, never uses them" writes and is crossed in red, red hand tag "use them as causes" (34 px). Settle one second.
 
 ### 12. decision rule and handoff
 > So, to explain why someone's health is changing, name the interaction, the direction and rate, and the circumstance behind it. So far that's one person at a time. Next, we'll zoom out to a whole population, and ask how you can measure the health of millions of people at once.
@@ -137,7 +137,7 @@ Two unseen items, each followed by its own brief feedback (11a to 11d). Each att
 2. (11c, explain, 5 marks.) Explain the dynamic nature of health, referring to the dimensions of health and the health continuum.
    Model (the site's full-mark structure, shortened): define dynamic as changing constantly in response to identifiable causes (1 mark); the dimensions are interdependent, so a change in one produces change in another (1 mark), shown by one worked loop, for example a hamstring injury reducing team contact, lowering mood and slowing recovery (1 mark); the continuum models health as a line on which no one is stationary, and two people at one position can be moving in opposite directions, so health is described by direction and rate (1 mark); a closing sentence joining the two (interaction explains why health changes, the continuum how the change is described) (1 mark). Classic mistake crossed: "defines terms, never uses them".
 
-Feedback spoken lengths are about 24 s (11b) and 31 s (11d) by script; time the exact audio.
+Feedback spoken lengths are about 24 s (11b) and 29 s (11d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -156,24 +156,24 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5663 characters**, 16 scene files. At 13.3 characters per second the speech is about 426 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 530 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5704 characters**, 16 scene files. At 13.3 characters per second the speech is about 429 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 533 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (from the WHO rung) | 387 |
 | 2. the loop, step by step | 448 |
 | 3. interaction, and the good loop | 468 |
-| 4. good health is relative | 507 |
+| 4. good health is relative | 517 |
 | 5. the health continuum | 459 |
 | 6. direction, rate and a limitation | 424 |
 | 7. three timescales | 447 |
 | 8. circumstances: the direct route | 475 |
-| 9. circumstances: the range of choices | 487 |
+| 9. circumstances: the range of choices | 542 |
 | 10. memory | 172 |
 | 11a. attempt one (two people, one point) | 180 |
 | 11b. feedback, item one | 333 |
 | 11c. attempt two (the site's explain question) | 131 |
-| 11d. feedback, item two | 394 |
+| 11d. feedback, item two | 370 |
 | 12. decision rule and handoff | 276 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -264,3 +264,14 @@ Holds: attempt and attempt-two (10 s countdown, card on screen during and after)
 - **Cultural content.** None.
 - **Pronunciation.** "continuum" as "con-TIN-yoo-um"; "hamstring" as written; numbers as words.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v02-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, "dynamic" defined only in feedback 11d.** Accepted. Scene 9 now ends "So health is dynamic, which means always changing, for reasons you can name: the dimensions interact, ...". The gloss "dynamic: always changing, for reasons you can name" writes at 34 px on those words, so 11c can be answered with the definition the feedback expects.
+2. **Should fix, "the same fitness".** Accepted. The narration now says "would call a similar level of fitness excellent", and the equals sign became "≈" with the grey tag "similar capacity".
+3. **Note, 11d about 31 s.** Accepted: "Finish by joining them." is cut, and step 4 writes silently. About 29 s by script.
+4. **Note, scene 8's six circumstances.** Kept, as advised ("access to services" stays as a chip for v04's gates).
+
+Narration changed in scenes 4, 9 and 11d. Recount: 5,704 characters, about 533 s (Revision 1: 5,663, about 530 s). `cues.py`: 0 findings.

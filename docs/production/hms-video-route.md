@@ -132,9 +132,9 @@ Source of truth: [hms-video-route.json](./hms-video-route.json). Syllabus: NESA 
 | Ottawa five action areas grid | hms-y11-m1-v16 | hms-y11-m1-v18 |
 | SDG ring | hms-y11-m1-v17 | hms-y11-m1-v18, hms-y12-m3-v19 |
 | lever | hms-y11-m2-v03 | hms-y12-m4-v17 |
+| cardiac output equation | hms-y11-m2-v05 | hms-y11-m2-v14, hms-y12-m4-v08 |
 | six-criteria energy-system table | hms-y11-m2-v09 | hms-y11-m2-v10 |
 | work-to-rest dial | hms-y11-m2-v12 | hms-y12-m4-v03 |
-| cardiac output equation | hms-y11-m2-v14 | hms-y12-m4-v08 |
 | evidence ladder | hms-y11-m2-v19 | hms-y12-m3-v13 |
 | transfer test | hms-y12-m3-v04 | hms-y12-m3-v21 |
 | adaptation staircase | hms-y12-m4-v06 | hms-y12-m4-v07 |

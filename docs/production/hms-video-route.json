@@ -1766,18 +1766,19 @@
     }
    ],
    "opening": "the double circulation loop from v04 with a delivery readout: litres of oxygen per minute",
-   "startBoundary": "Start from efficiency as delivering the oxygen needed at the lowest cost, as a chain (ventilate, load, pump, deliver, unload).",
+   "startBoundary": "Start from efficiency as delivering the oxygen needed at the lowest cost, with cardiac output defined (heart rate x stroke volume), and the three-link delivery chain (load, carry, deliver).",
    "stopBoundary": "Stop when students can explain how altitude (lower partial pressure, same 21 per cent), haemoglobin levels and vascular disease each break a link in the chain, and weigh further factors (fitness, smoking, dehydration) on the same chain.",
    "nextHandoff": "hms-y11-m2-v06: opens on the delivery chain from v05 gains a fuel line: oxygen is half the supply, fuel is the other.",
    "laterHomes": [
     "Training adaptations that raise efficiency: hms-y12-m4-v08."
    ],
    "recurringModels": [
-    "intro:oxygen delivery chain"
+    "intro:oxygen delivery chain",
+    "intro:cardiac output equation (Q = HR x SV, at rest)"
    ],
-   "visualPlan": "Coded five-link delivery chain with a live delivery readout that drops as each factor breaks a link; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.",
+   "visualPlan": "Coded three-link delivery chain (load, carry, deliver) with a live delivery readout that drops as each factor breaks a link and a heart-rate cost meter; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.",
    "crossYearOverlap": "None.",
-   "status": "route draft; pre-design written; design pending"
+   "status": "route draft; full design written"
   },
   {
    "id": "hms-y11-m2-v06",
@@ -1838,7 +1839,7 @@
    ],
    "visualPlan": "Reuse plates: y11-digestive-tract-v2.png, y11-villi-wall-v1.png, m8-pancreas-v1.png, y11-hypothalamus-pituitary-section-v2.png, m8-kidney-adrenal-v1.png, m8-liver-v1.png; coded hormone timeline over a session; coded blood glucose trace (math graphs).",
    "crossYearOverlap": "Biology plates reused at HMS depth.",
-   "status": "route draft; pre-design written; design pending"
+   "status": "route draft; full design written"
   },
   {
    "id": "hms-y11-m2-v07",
@@ -1898,7 +1899,7 @@
    ],
    "visualPlan": "Reuse plates: b3a2-brain-v1.png, y11-neuron-v1.png, m8-skeletal-muscle-v1.png; coded pathway from cortex to motor unit with a live impulse; coded feedback loop for an ankle roll on uneven ground (coded ankle linkage, no foot outline beyond bones).",
    "crossYearOverlap": "None.",
-   "status": "route draft; pre-design written; design pending"
+   "status": "route draft; full design written"
   },
   {
    "id": "hms-y11-m2-v08",
@@ -1983,7 +1984,7 @@
    ],
    "visualPlan": "Coded seven-system wheel with each system's plate thumbnail (reused from v01 to v07); painted objects: a netball ring and ball, a first aid kit, a water bottle, a sports drink, an ice pack; coded phase strip for the movement (preparation, execution, follow-through).",
    "crossYearOverlap": "Year 12 hms-y12-m4-v20 and v21 own injury classification and management.",
-   "status": "route draft; pre-design written; design pending"
+   "status": "route draft; full design written"
   },
   {
    "id": "hms-y11-m2-v09",
@@ -2344,6 +2345,10 @@
      "idea": "Heart, lungs, circulation."
     },
     {
+     "source": "hms-y11-m2-v05",
+     "idea": "Cardiac output as heart rate x stroke volume, at rest."
+    },
+    {
      "source": "hms-y11-m2-v09",
      "idea": "Glycolysis and lactate."
     }
@@ -2357,7 +2362,7 @@
     "Adaptations: hms-y12-m4-v08."
    ],
    "recurringModels": [
-    "intro:cardiac output equation (Q = HR x SV)",
+    "reuse:cardiac output equation (Q = HR x SV, worked in exercise)",
     "intro:lactate threshold curve"
    ],
    "visualPlan": "Reuse m8-heart-v1.png and m8-lungs-healthy-v1.png; live coded traces (HR, ventilation, SV, Q, lactate) against a work-rate ramp read from one model; worked Q = HR x SV in the g01 layout.",

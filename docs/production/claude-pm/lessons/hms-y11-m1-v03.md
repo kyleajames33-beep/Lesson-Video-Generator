@@ -1,8 +1,8 @@
 # HMS Year 11 V03 (Health for individuals and communities): measuring a population's health. How can we tell how healthy a whole population is, when every number only shows part of the picture? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets).
 
-Narration 6,031 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 557 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,075 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the third HMS video. Course brief `../hms-design-brief.md` (including the root rulings of 23 Nov). Route entry **hms-y11-m1-v03** in `docs/production/hms-video-route.json`. Pre-design pack `../pre-design/hms/hms-y11-m1-v03.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson03.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v02.md` (its handoff frame is this video's first frame). Templates: `bio-y11-fa1-v01.md`; calculation layout `math-a12-d10.md` (g01).
 
@@ -83,7 +83,7 @@ Visual: board change to the five-questions stage (solid from its first frame): t
 Visual: board change to the bathtub and table (solid from its first frame): the bathtub at the left set to condition X at 2,000 cases, and a coded table at the right with headings and the year column already written: "Year | New cases | Deaths | Total cases (prevalence)" and a grey label "constructed practice data, not real Australian data". Year 1 row is filled: "400 | 180 | 2,000". On "New cases fall" the model runs year 2 then year 3: the tap narrows slightly each year and the new-cases cells write "380", "360" (teal), with a teal arrow down the column and tag "prevention working". On "Deaths halve" the deaths cells write "120", "90" (warm), with a warm arrow down and tag "treatment working" (180 to 90). On "prevalence rises by about a quarter" the prevalence cells write "2,260", "2,530" as the level rises (blue), with a blue arrow up and a readout "+26.5%" (52 px). On "looks like a worsening epidemic" a coded newspaper-style headline card "Cases up by a quarter!" writes with a red question mark; on "the result of the success" the question mark becomes a green tick and the three column arrows are joined by an amber bracket "read together". Hold one second.
 
 ### 9. what the numbers hide
-> These numbers are powerful, but they hide things. An average hides the spread, so a national figure can improve while one group gets worse. Morbidity data depends on being counted, so people who can't reach a service can look healthier than they are, which is exactly backwards. These measures count disease, not wellbeing, so they miss the mental and social dimensions. And the numbers arrive late, so a report describes a situation that's already moved on.
+> These numbers are powerful, but they hide things. An average hides the spread, so a national figure can improve while one group gets worse. Morbidity data depends on being counted, so people who can't reach a service can look healthier than they are, which is exactly backwards. These measures count disease, not wellbeing, so they miss the mental and social dimensions. And the numbers arrive late, so reports describe the past.
 
 Visual: board change to the limits board (solid from its first frame): four cards in a 2 by 2 grid, each already framed with its heading (38 px) and a small coded picture: "averages hide the spread" (a bar with a hidden low group), "depends on being counted" (the hollow grey dots from scene 4), "counts disease, not wellbeing" (the v01 WHO rung with "mental" and "social" greyed), "arrives late" (a calendar with a two-year gap). Each card lights on its cue: "An average hides the spread", "depends on being counted", "count disease, not wellbeing", "the numbers arrive late"; on "exactly backwards" an amber hand tag on card 2 "less access, looks healthier" (34 px). At most three bright items. Hold one second.
 
@@ -98,9 +98,9 @@ Visual: board change to the memory card (solid from its first frame): the bathtu
 Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "In a town of 50,000 people, 150 people are newly diagnosed with a condition during one year, and 1,200 people are living with it at the end of that year." Demand: "(a) Identify the incidence and the prevalence. (1 mark) (b) Express the incidence as a rate per 100,000 people. (2 marks)" Picture at the right: an empty bathtub outline (no labels, no level). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11b. feedback, item one
-> The one hundred and fifty new cases are the incidence, and the twelve hundred living with it are the prevalence. For the rate, divide by the population and multiply by one hundred thousand. That's one hundred and fifty, divided by fifty thousand, times one hundred thousand, which is three hundred per one hundred thousand. The classic slip is calling the twelve hundred the incidence because it's the bigger number.
+> The one hundred and fifty new cases are the incidence, and the twelve hundred living with it are the prevalence. For the rate: one hundred and fifty, divided by fifty thousand, times one hundred thousand, which is three hundred per one hundred thousand. The classic slip is calling the twelve hundred the incidence because it's the bigger number.
 
-Visual: `FeedbackScene` in the g01 layout: the card shrinks to the top; givens strip "population 50,000", "150 newly diagnosed in one year", "1,200 living with it at year end" (30 px, amber). On "are the incidence" the given "150 newly diagnosed" takes an amber underline and "(a) incidence = 150 (new cases); prevalence = 1,200 (all cases)" writes in a green frame (44 px); the picture's tap and level label themselves. On "divide by the population" the equation strip writes "rate = count ÷ population × 100,000"; on "which is three hundred" the working writes "150 ÷ 50,000 × 100,000 = 300" and the framed answer "(b) 300 per 100,000" (52 px, green). On "classic slip" a chip "incidence = 1,200" writes and is crossed in red, red hand tag "new, not total" (34 px). Settle one second.
+Visual: `FeedbackScene` in the g01 layout: the card shrinks to the top; givens strip "population 50,000", "150 newly diagnosed in one year", "1,200 living with it at year end" (30 px, amber). On "are the incidence" the given "150 newly diagnosed" takes an amber underline and "(a) incidence = 150 (new cases); prevalence = 1,200 (all cases)" writes in a green frame (44 px); the picture's tap and level label themselves. On "For the rate" the equation strip writes "rate = count ÷ population × 100,000" (silent, the rule is on screen); on "which is three hundred" the working writes "150 ÷ 50,000 × 100,000 = 300" and the framed answer "(b) 300 per 100,000" (52 px, green). On "classic slip" a chip "incidence = 1,200" writes and is crossed in red, red hand tag "new, not total" (34 px). Settle one second.
 
 ### 11c. attempt two (the site's distinguish question)
 > Second. Distinguish between incidence and prevalence, using an example to show why the two can move in opposite directions. Pause here to answer.
@@ -113,9 +113,9 @@ Visual: the board clears. The card arrives in one move with its whole text (38 p
 Visual: `FeedbackScene`: a three-step strip (38 px) with the bathtub small at the right. On "Define them in parallel" step 1 writes "incidence: new cases over a period | prevalence: all cases at one time" in a green frame, the two halves aligned. On "how long people stay cases" step 2 writes "the hinge: duration (how long people remain cases)" in a green frame and the bathtub's drain pulses. On "incidence falls but prevalence rises" the bathtub runs the treatment case (tap narrows, drain narrows, level rises) and the card's blank arrows fill: incidence ↓ (teal), prevalence ↑ (blue); step 3 writes "example: prevention + life-saving treatment". The demand's words "opposite directions" take an amber underline. On "classic mistake" a chip "prevalence up, so it's spreading" writes and is crossed in red, red hand tag "check the tap, not the level" (34 px). Settle one second.
 
 ### 12. decision rule and handoff
-> So, to describe a population's health, use several measures together, ask the five questions of every table, and remember what the averages hide. And that last point matters most. Next, we'll split the average apart, and ask why giving everyone the same thing often fails to give everyone the same health.
+> So, to describe a population's health, use several measures together, ask the five questions of every table, and remember what the averages hide. So for that hundred million, you'd ask for deaths and new cases from cancer and from road injury, as rates, read together, and split by group. And that last point matters most. Next, we'll split the average apart, and ask why giving everyone the same thing often fails to give everyone the same health.
 
-Visual: three step chips write on, one per cue (38 px): "several measures together", "five questions for every table", "what the averages hide". On "that last point matters most" the chips leave and the condition X table returns at the centre with an "all" row; on "split the average apart" the "all" row splits into four group rows beneath it, three near the average and one (grey label "a group far from services") much worse, ringed amber; the "Next" chip slides in: "Next: why doesn't the same for everyone give the same health?" **This is the handoff frame; v04 opens from it.** Hold half a second.
+Visual: three step chips write on, one per cue (38 px): "several measures together", "five questions for every table", "what the averages hide". On "that hundred million" the scene 1 banknote and its two budget jars return small at the right, and the hook's empty three-line card fills one line per cue (34 px, green): "mortality (deaths), as rates" on "deaths and new cases", "incidence (new cases)" on "new cases from cancer and from road injury", "split by group" on "split by group"; the hook card takes a green tick. On "that last point matters most" the chips, jars and card leave and the condition X table returns at the centre with an "all" row; on "split the average apart" the "all" row splits into four group rows beneath it, three near the average and one (grey label "a group far from services") much worse, ringed amber; the "Next" chip slides in: "Next: why doesn't the same for everyone give the same health?" **This is the handoff frame; v04 opens from it.** Hold half a second.
 
 ### 13. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -138,7 +138,7 @@ Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each
 2. (11c, 4 marks.) Distinguish incidence and prevalence with an opposite-direction example.
    Model (the site's, shortened): parallel definitions (1 mark); the difference named, prevalence also depends on duration (1 mark); an example in which incidence falls (prevention) while prevalence rises (treatment that prevents death without cure) (1 mark); the divergence explained, people who would have died remain cases, so it signals success (1 mark). Classic mistake crossed: "prevalence up, so it's spreading".
 
-Feedback spoken lengths: about 31 s (11b) and 29 s (11d) by script; time the exact audio.
+Feedback spoken lengths: about 27 s (11b, Revision 2 trim) and 29 s (11d) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -159,7 +159,7 @@ Self-check (23 Nov), arithmetic by Python. The Codex science check must confirm 
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6031 characters**, 16 scene files. At 13.3 characters per second the speech is about 453 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 557 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6075 characters**, 16 scene files. At 13.3 characters per second the speech is about 457 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -171,13 +171,13 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 6. what the bathtub predicts | 492 |
 | 7. reading any table: five questions | 487 |
 | 8. reading the measures together | 500 |
-| 9. what the numbers hide | 458 |
+| 9. what the numbers hide | 429 |
 | 10. memory | 173 |
 | 11a. attempt one (a rate) | 349 |
-| 11b. feedback, item one | 416 |
+| 11b. feedback, item one | 346 |
 | 11c. attempt two (the site's distinguish question) | 145 |
 | 11d. feedback, item two | 390 |
-| 12. decision rule and handoff | 305 |
+| 12. decision rule and handoff | 448 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
 
 Reserve cuts (in order): (1) scene 9, "And the numbers arrive late, so a report describes a situation that's already moved on." (the card carries it); (2) scene 2, the final source sentence (the plate tag carries it); (3) scene 12, "And that last point matters most." Do not cut below 5,500 without replacing content.
@@ -253,3 +253,15 @@ Holds: attempt and attempt-two 10 s countdowns; scenes 1 to 9 hold 1 s; memory a
 - **Cultural content.** None.
 - **Pronunciation.** "epidemiology" as "ep-ih-dee-mee-OL-oh-jee"; "morbidity" as "mor-BID-it-ee"; "prevalence" as "PREV-uh-lence"; numbers as words.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v03-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, the $100 million hook is never answered.** Accepted with the review's sentence. Scene 12 now says "So for that hundred million, you'd ask for deaths and new cases from cancer and from road injury, as rates, read together, and split by group." The banknote and budget jars return small, and the hook's empty three-line card fills ("mortality (deaths), as rates", "incidence (new cases)", "split by group") and takes a green tick.
+2. **Note, scene 3 density.** Kept for the playback test. The sensitivity sentence stays because it carries why infant mortality matters. The offset came from item 4 and the scene 9 trim instead.
+3. **Note, 11b about 31 s.** Accepted. "For the rate, divide by the population and multiply by one hundred thousand. That's one hundred and fifty, ..." became "For the rate: one hundred and fifty, ...", and the equation strip writes the rule silently. About 27 s.
+4. **Offset.** In scene 9, "so a report describes a situation that's already moved on" became "so reports describe the past". The card "arrives late" still lights on its cue.
+5. **Note, the "Last time" opening.** No change, as advised.
+
+Narration changed in scenes 9, 11b and 12. Recount: 6,075 characters, about 561 s (Revision 1: 6,031, about 557 s). `cues.py`: 0 findings.

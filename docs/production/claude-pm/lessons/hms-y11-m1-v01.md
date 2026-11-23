@@ -1,8 +1,8 @@
 # HMS Year 11 V01 (Health for individuals and communities): meanings of health. What is health, and why do people define it so differently without any of them being wrong? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice (approved for all Year 11, 3 Nov). Plates: five new (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice (approved for all Year 11, 3 Nov). Plates: five new (see Assets).
 
-Narration 6,178 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,110 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 563 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the first video of the HMS programme and of the Year 11 HMS playlist. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v01** in `docs/production/hms-video-route.json` (draft, 23 Nov). Pre-design pack `../pre-design/hms/hms-y11-m1-v01.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson01.sa.html` (read in full, 23 Nov; sha256 `92eaf324cfb892ed`). Templates: `bio-y11-fa1-v01.md` (structure, Decisions, author notes, practice format, metadata).
 
@@ -87,7 +87,7 @@ Visual: board change to the influences board (solid from its first frame): five 
 ### 9. comparing two meanings
 > When a question says compare, don't describe one meaning and then the other, and don't just pick a winner. Put them side by side on the same three questions. What does each one count? What does it leave out? And whose work does it make possible? Try it on our athlete. Biomedical counts the diagnosis, so it calls them unwell. Functional counts what they can do, so it calls them healthy. Biomedical leaves out how their life is going, while functional has no fixed line. One serves the doctor, the other serves the person. Neither is wrong. They're built for different jobs.
 
-Visual: board change to the compare stage (solid from its first frame): a `CompareLedger` at the centre with its frame, row headings and column headings already written: rows "counts", "leaves out", "useful for"; columns "Biomedical" (teal) and "Functional" (olive) (38 px); the hook thumbnail at the upper right. On "describe one meaning and then the other" a small sketch of two separate text blocks writes at the left and is crossed in red, red hand tag "that's Describe, not Compare" (34 px). On "the same three questions" the three row headings pulse in turn on "count", "leave out" and "whose work". On "Biomedical counts the diagnosis" the first row's teal cell writes "the diagnosis → unwell"; on "Functional counts what they can do" the olive cell writes "what they can do → healthy". On "Biomedical leaves out" the second row writes "how life is going" (teal) and on "no fixed line" "a fixed line: it shifts per person" (olive). On "One serves the doctor" the third row writes "the doctor" (teal) and "the person" (olive). On "built for different jobs" the ledger takes an amber frame and an amber hand tag beneath it: "judge against a purpose" (42 px). At most three bright items. Hold one second.
+Visual: board change to the compare stage (solid from its first frame): a `CompareLedger` at the centre with its frame, row headings and column headings already written: rows "counts", "leaves out", "useful for"; columns "Biomedical" (teal) and "Functional" (olive) (38 px); the hook thumbnail at the upper right. On "describe one meaning and then the other" a small sketch of two separate text blocks writes at the left and is crossed in red, red hand tag "that's Describe, not Compare" (34 px). On "the same three questions" the three row headings pulse in turn on "count", "leave out" and "whose work". On "Biomedical counts the diagnosis" the first row's teal cell writes "the diagnosis → unwell"; on "Functional counts what they can do" the olive cell writes "what they can do → healthy". On "Biomedical leaves out" the second row writes "how life is going" (teal) and on "no fixed line" "a fixed standard (the bar shifts per person)" (olive). On "One serves the doctor" the third row writes "the doctor" (teal) and "the person" (olive). On "built for different jobs" the ledger takes an amber frame and an amber hand tag beneath it: "judge against a purpose" (42 px). At most three bright items. Hold one second.
 
 ### 10. memory
 > Two lines to remember. Widening a meaning buys relevance and costs precision. And to compare any two meanings, ask what each one counts, what it leaves out, and who it's useful for.
@@ -110,9 +110,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; a givens strip keeps "no d
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Compare the WHO definition of health with the biomedical meaning of health. (5 marks)" Beside it (about 300 px tall): the definition card (the WHO quote, 30 px) and a small coded card "biomedical: health = no diagnosable disease or injury". **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11d. feedback, item two
-> Start with shared ground. Both treat disease as relevant, and the WHO includes it with "not merely". Then run the three questions. Biomedical counts only disease, while the WHO adds mental and social wellbeing. Biomedical leaves out how a life is going, while "complete" leaves out almost everyone. And biomedical serves the clinic, while the WHO serves policy. The classic mistake is two separate paragraphs that never meet.
+> Shared ground first: both treat disease as relevant, and the WHO includes it with "not merely". Then run the three questions. Biomedical counts only disease, while the WHO adds mental and social wellbeing. Biomedical leaves out how a life is going, while "complete" leaves out almost everyone. The classic mistake is two separate paragraphs that never meet.
 
-Visual: `FeedbackScene` with a compact `CompareLedger` (rows "shared", "counts", "leaves out", "useful for"; columns "WHO" blue and "Biomedical" teal, 34 px). On "shared ground" the "shared" row writes across both columns in amber: "disease is relevant ('not merely')", with an amber underline on "not merely" in the small definition card. On "counts only disease" the "counts" row writes "physical, mental, social" (blue) and "disease only" (teal). On "leaves out" the third row writes "almost everyone ('complete')" and "how a life is going". On "serves the clinic" the fourth row writes "policy" and "the clinic". On "classic mistake" a sketch of two separate paragraphs writes at the right and is crossed in red, red hand tag "every sentence names both" (34 px). The finished ledger takes a green frame. Settle one second.
+Visual: `FeedbackScene` with a compact `CompareLedger` (rows "shared", "counts", "leaves out", "useful for"; columns "WHO" blue and "Biomedical" teal, 34 px). On "Shared ground" the "shared" row writes across both columns in amber: "disease is relevant ('not merely')", with an amber underline on "not merely" in the small definition card. On "counts only disease" the "counts" row writes "physical, mental, social" (blue) and "disease only" (teal). On "leaves out" the third row writes "almost everyone ('complete')" and "how a life is going". With "almost everyone" settled, the fourth row writes silently, "policy" and "the clinic" (Revision 2: no longer spoken). On "classic mistake" a sketch of two separate paragraphs writes at the right and is crossed in red, red hand tag "every sentence names both" (34 px). The finished ledger takes a green frame. Settle one second.
 
 ### 12. decision rule and handoff
 > So, when you meet any definition of health, don't ask whether it's right. Ask what it counts, what it leaves out, and whose work it makes possible. Next, we'll take the three dimensions inside the WHO definition, and see how a change in one of them spreads to the others.
@@ -140,7 +140,7 @@ Two unseen items, each followed by its own brief feedback (11a to 11d). Each att
 2. (11c, compare, 5 marks.) Compare the WHO definition of health with the biomedical meaning of health.
    Model (the site's full-mark structure, shortened): shared ground, both treat the absence of disease as relevant and the WHO names it in "not merely the absence of disease or infirmity", so the biomedical meaning is close to a subset of the WHO one (1 mark); counts, the biomedical meaning counts the physical state of the body alone, the WHO adds mental and social wellbeing, so isolation or insecure housing register under the WHO only (1 mark); leaves out, the biomedical meaning omits whether a life is going well, the WHO omits attainability because "complete" excludes most people and those managing a lifelong condition (1 mark); useful for, the biomedical meaning settles clinical decisions, the WHO justifies policy on social conditions (1 mark); judgement against purpose, neither is simply better (1 mark). Classic mistake crossed: "two separate paragraphs that never meet". Other wrong chains: ranking one as "better" without naming a purpose; "the WHO definition ignores disease".
 
-Feedback spoken lengths are about 25 s (11b) and 32 s (11d) by script; time the exact audio. Each names the answer and its shape, underlines the givens as they are used and crosses one classic mistake. Neither re-teaches the lesson.
+Feedback spoken lengths are about 25 s (11b) and 27 s (11d, Revision 2 trim) by script; time the exact audio. Each names the answer and its shape, underlines the givens as they are used and crosses one classic mistake. Neither re-teaches the lesson.
 
 ## Numbers or facts to verify
 
@@ -161,7 +161,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6178 characters**, 16 scene files. At 13.3 characters per second the speech is about 465 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 569 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6110 characters**, 16 scene files. At 13.3 characters per second the speech is about 459 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 563 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -178,7 +178,7 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 11a. attempt one (two people, two meanings) | 311 |
 | 11b. feedback, item one | 339 |
 | 11c. attempt two (the site's compare question) | 105 |
-| 11d. feedback, item two | 425 |
+| 11d. feedback, item two | 357 |
 | 12. decision rule and handoff | 271 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -268,3 +268,15 @@ Holds (10 s countdown after the speech, "Pause here to answer." on screen, the c
 - **Cultural content.** Scene 6 describes social and emotional wellbeing in general terms only, as the site does; no community, person, place or symbol is named or drawn (owner rule, 18 Nov). Flagged in Open decisions.
 - **Pronunciation (Google voice to confirm).** "infirmity" as "in-FIRM-it-ee"; "holistic" as "hoh-LIS-tik"; "biomedical" as "by-oh-MED-ik-al"; numbers as words ("nineteen forty-eight").
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v01-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 11d feedback about 32 s.** Accepted as proposed. "Start with shared ground." became "Shared ground first:", and "And biomedical serves the clinic, while the WHO serves policy." is cut. The fourth ledger row ("policy", "the clinic") now writes silently with the green frame. About 27 s by script.
+2. **Note, the "a fixed line" ledger cell read as a double negative.** Accepted: the cell is now "a fixed standard (the bar shifts per person)".
+3. **Note, length at the cap.** Resolved by item 1. The design is now about 563 s, which gives the module's later edits headroom here. No reserve cut was needed.
+4. **Note, 11c picture.** Kept as the review advises (it supplies a definition, not an answer).
+5. **Module finding 4, "biomedical".** The bridge is made in v15 scene 3, which links the biomedical approach back to this video's biomedical meaning (v01's teal rung appears small). Nothing changes here.
+
+Narration changed in 11d only. Recount: 6,110 characters, about 563 s (Revision 1: 6,178, about 569 s). `cues.py`: 0 findings.

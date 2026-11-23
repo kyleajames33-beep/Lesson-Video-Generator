@@ -211,12 +211,12 @@ v(m='y11/module2', n=4, q="How do the lungs and the heart work together to get o
   overlap="Biology plates reused; content kept at HMS depth.")
 v(m='y11/module2', n=5, q="What makes one cardiovascular system more efficient than another, and what takes that efficiency away?",
   open="the double circulation loop from v04 with a delivery readout: litres of oxygen per minute",
-  start="Start from efficiency as delivering the oxygen needed at the lowest cost, as a chain (ventilate, load, pump, deliver, unload).",
+  start="Start from efficiency as delivering the oxygen needed at the lowest cost, with cardiac output defined (heart rate x stroke volume), and the three-link delivery chain (load, carry, deliver).",
   stop="Stop when students can explain how altitude (lower partial pressure, same 21 per cent), haemoglobin levels and vascular disease each break a link in the chain, and weigh further factors (fitness, smoking, dehydration) on the same chain.",
   entry=[('hms-y11-m2-v04', "Circulation and gas exchange.")],
   owns=['fa2-g1-d3-s3'], later=["Training adaptations that raise efficiency: hms-y12-m4-v08."],
-  models=['intro:oxygen delivery chain'],
-  visual="Coded five-link delivery chain with a live delivery readout that drops as each factor breaks a link; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.",
+  models=['intro:oxygen delivery chain', 'intro:cardiac output equation (Q = HR x SV, at rest)'],
+  visual="Coded three-link delivery chain (load, carry, deliver) with a live delivery readout that drops as each factor breaks a link and a heart-rate cost meter; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.",
   overlap="None.")
 v(m='y11/module2', n=6, q="How do the digestive and endocrine systems fuel and control movement, and what makes them less efficient?",
   open="the delivery chain from v05 gains a fuel line: oxygen is half the supply, fuel is the other",
@@ -294,9 +294,9 @@ v(m='y11/module2', n=14, q="What changes in your heart, lungs and blood the mome
   open="a FITT session card from v13 starts: a heart-rate readout begins to climb",
   start="Start from heart rate, including the anticipatory rise.",
   stop="Stop when students can explain the immediate responses of heart rate, ventilation rate, stroke volume, cardiac output (Q = HR x SV, worked) and lactate levels (production and removal; threshold), and separate immediate responses from long-term adaptations.",
-  entry=[('hms-y11-m2-v04', "Heart, lungs, circulation."), ('hms-y11-m2-v09', "Glycolysis and lactate.")],
+  entry=[('hms-y11-m2-v04', "Heart, lungs, circulation."), ('hms-y11-m2-v05', "Cardiac output as heart rate x stroke volume, at rest."), ('hms-y11-m2-v09', "Glycolysis and lactate.")],
   owns=['fa2-g2-d5'], later=["Investigating responses: hms-y11-m2-v15.", "Adaptations: hms-y12-m4-v08."],
-  models=['intro:cardiac output equation (Q = HR x SV)', 'intro:lactate threshold curve'],
+  models=['reuse:cardiac output equation (Q = HR x SV, worked in exercise)', 'intro:lactate threshold curve'],
   visual="Reuse m8-heart-v1.png and m8-lungs-healthy-v1.png; live coded traces (HR, ventilation, SV, Q, lactate) against a work-rate ramp read from one model; worked Q = HR x SV in the g01 layout.",
   overlap="Year 12 hms-y12-m4-v08 recalls Q = HR x SV in one sentence.")
 v(m='y11/module2', n=15, q="How do you investigate training responses properly, and is fitness testing worth doing at all?",

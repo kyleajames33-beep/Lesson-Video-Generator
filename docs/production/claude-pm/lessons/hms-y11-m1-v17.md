@@ -1,8 +1,8 @@
 # HMS Year 11 V17 (Health for individuals and communities): the Sustainable Development Goals and health. If only one Sustainable Development Goal is about health, why do the other sixteen matter for health too? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, five reused (see Assets). No official statistics; framework facts only (2015, 193 states, 17 goals, 169 targets, 2030).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, five reused (see Assets). No official statistics; framework facts only (2015, 193 states, 17 goals, 169 targets, 2030).
 
-Narration 5,950 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 547 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,951 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 547 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the seventeenth HMS video and the fifth of the "opportunities" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v17**. Pre-design pack `../pre-design/hms/hms-y11-m1-v17.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson17.sa.html` (read in full, 23 Nov; sha256 `c9987e005c84b8894bb5ec5b8676b1d8214fc6a19af232d11b7c1a66e6e46342`). Previous design `hms-y11-m1-v16.md`.
 
@@ -22,7 +22,7 @@ Scope: the seventeenth HMS video and the fifth of the "opportunities" inquiry qu
 - **Entry knowledge.** hms-y11-m1-v16 (the Ottawa grid); hms-y11-m1-v15 (the socio-ecological approach; Alma-Ata's cross-sector idea; WHO statements); hms-y11-m1-v05 (determinants; the gradient); hms-y11-m1-v08 (road injury and mental health as young people's burden); hms-y11-m1-v03 (measures, averages hiding gaps); hms-y11-m1-v14 (impact against activity). Each recalled in one line. Not assumed: SDG, MDG, target, indicator, indivisibility, leave no one behind, universal health coverage, health in all policies, Voluntary National Review, disaggregated.
 - **Terms.** Sustainable Development Goals (2, "seventeen goals agreed by all UN members in 2015, for 2030"); target and indicator (2, screen glosses "a measurable part of a goal" and "the statistic that tracks it"); leave no one behind (2, "progress must reach the most disadvantaged, not just lift the average"); indivisibility (5, "the goals can't be achieved separately"); universal health coverage (6, "everyone gets the care they need without financial hardship"); health in all policies (6, "every department weighs the health effects of its decisions"); Voluntary National Review (7, screen gloss "a country's own progress report to the UN").
 - **Visual system.** One recurring model is introduced here: the **SDG ring** (`SdgRing`, new in `hms-shared`: seventeen numbered segments in house tones with short names; mechanism arrows draw from any segment into segment 3; a segment can expand into a mechanism chain). Reused in v18 and hms-y12-m3-v19. Recurring models reused: v16's `OttawaGrid` (1, small), v05's `DeterminantsChain` (4), v15's `ApproachBands` (5, small) and `PolicyTimeline` (2), v14's `ImpactStairs` (8). People are never drawn: girls' education is a school building, water is a tap, roads are a learner's logbook.
-- **Attempt.** 10a: written for this video: "Explain how progress on SDG 8, decent work and economic growth, could improve the health of young Australians." (3 marks). 10c: WE b1 verbatim, "Examine how the United Nations Sustainable Development Goals are being used to improve health." (5 marks).
+- **Attempt.** 10a (Revision 2): written for this video: "Explain how progress on SDG 11, sustainable cities and communities, could improve the health of young Australians." (3 marks). SDG 8 was named with its mechanism in scene 4; goal 11 is not worked in this video. 10c: WE b1 verbatim, "Examine how the United Nations Sustainable Development Goals are being used to improve health." (5 marks).
 - **Memory aids.** The site's lines: "One goal names health; sixteen produce it" and "The SDGs coordinate and make failure visible; they can't compel". Scene 9, after scenes 2 to 8.
 - **A mistake/fix scene** is not included. "SDGs are for poor countries" is fixed in 2 and 3; "only goal 3 matters" in 4; "the SDGs make countries improve" in 6; "Australia reports, so it acts" in 8; "a goal related to health, no mechanism" crossed in 10b; "no limitations" crossed in 10d.
 - **Reuse:** explainer kit, shared scenes; v16's grid; v05's chain; v15's bands and timeline; v14's staircase; plates `hms-school-gate-morning-v1.png` (v09; scene 5), `hms-learner-logbook-keys-v1.png` (v08; scene 3), `hms-shift-roster-apron-v1.png` (v02; scene 10b), `hms-health-reports-stack-v1.png` (v03; scene 7), `hms-community-health-service-v1.png` (v14; scene 6). New in `hms-shared`: `SdgRing`.
@@ -63,9 +63,9 @@ Visual: the ring stays; segment 3 lifts out and enlarges (olive), titled "3 good
 Visual: board change to the ring with mechanisms (solid from its first frame): the ring at the centre, segment 3 olive. On "everywhere in the mechanisms" faint amber arrows hint from every segment towards 3. Each named goal's segment lights and draws a solid amber arrow into 3 with a mechanism chip (30 px) on its cue: "1 income: housing, food, delayed care" on "No poverty"; "2 early nutrition" on "Zero hunger"; "6 water, not clinics" on "Clean water", with the tap plate tiny; "8 secure income, safe work" on "Decent work"; "10 the social gradient" on "Reduced inequalities"; "13 heat, smoke, disaster" on "climate action". On "Lay them beside the determinants" v05's `DeterminantsChain` slides in at the right and thin lines join each lit segment to its box (socioeconomic, environmental, society); on "close to one to one" the lines glow together, amber hand tag "one goal names health; sixteen produce it" (42 px). Hold one second.
 
 ### 5. girls' education, and indivisibility
-> So the budget question answers itself. Proposal B is the SDG argument in one budget. A girl who finishes secondary school tends to have her first child later, has fewer and better-spaced pregnancies, can read health information and use vaccination services, and has more income and more say in household spending. Each step is modest, but together they save more children than the same money spent on clinics alone. That's **indivisibility**: the goals can't be achieved separately. It's the socio-ecological approach, written as a global agreement.
+> So here's the case for Proposal B, the SDG argument in one budget. A girl who finishes secondary school tends to have her first child later, has fewer and better-spaced pregnancies, can read health information and use vaccination services, and has more income and more say in household spending. Each step is modest, but together they tend to save more children than the same money spent on clinics alone. That's **indivisibility**: the goals can't be achieved separately. It's the socio-ecological approach, written as a global agreement.
 
-Visual: board change to the girls' education chain (solid from its first frame): the pinned scene 1 board returns enlarged, its empty five-link chain under bar B. On "Proposal B is the SDG argument" bar B's three parts light as goal segments 3, 6 and 4. The chain fills one link per cue (34 px), each with a small coded icon and the school gate plate at its start: "first child later" on "her first child later"; "fewer, better-spaced pregnancies" on "fewer and better-spaced pregnancies"; "reads health information, uses vaccination" on "can read health information and use vaccination services"; "income, say in spending" on "more income and more say in household spending"; the final link "fewer child deaths" lights green. On "together they save more children" the child-deaths readout drops further for B than for A (illustrative, no values). On "indivisibility" the gloss writes "indivisibility: the goals can't be achieved separately" (34 px) and segments 3, 4, 5 and 6 light together on the ring. On "the socio-ecological approach" v15's bands appear tiny with the outer band lit. Hold one second.
+Visual: board change to the girls' education chain (solid from its first frame): the pinned scene 1 board returns enlarged, its empty five-link chain under bar B. On "the SDG argument in one budget" bar B's three parts light as goal segments 3, 6 and 4. The chain fills one link per cue (34 px), each with a small coded icon and the school gate plate at its start: "first child later" on "her first child later"; "fewer, better-spaced pregnancies" on "fewer and better-spaced pregnancies"; "reads health information, uses vaccination" on "can read health information and use vaccination services"; "income, say in spending" on "more income and more say in household spending"; the final link "fewer child deaths" lights green. On "together they tend to save more children" the child-deaths readout drops further for B than for A (illustrative, no values). On "indivisibility" the gloss writes "indivisibility: the goals can't be achieved separately" (34 px) and segments 3, 4, 5 and 6 light together on the ring. On "the socio-ecological approach" v15's bands appear tiny with the outer band lit. Hold one second.
 
 ### 6. how the WHO uses the goals
 > The syllabus asks how the World Health Organization applies a health lens, and it uses the goals four ways. As a measuring framework: it looks after many health indicators and publishes progress, which makes failure visible. As an argument for **universal health coverage**, everyone getting needed care without financial hardship. As the basis for **health in all policies**, where transport, housing and education departments weigh the health effects of their decisions. And for equity: leave no one behind means reporting results separately by group. But the goals aren't law. Nobody's penalised for missing them. They coordinate and make failure visible, and advocates use that.
@@ -87,15 +87,15 @@ Visual: the board stays; two columns write at the right, "what works" (green) an
 
 Visual: board change to the memory card (solid from its first frame): the ring small at the left with arrows into 3, beside a dark-ink framed card (52 px): "One goal names health; sixteen produce it" (written with "One goal names health") and "The SDGs coordinate and expose; they can't compel" (written with "the goals can't compel anyone"). This card returns beside the key notes. Hold half a second.
 
-### 10a. attempt one (SDG 8 for young Australians)
-> Two exam questions. First. Explain how progress on goal eight, decent work and economic growth, could improve the health of young Australians. Pause here to answer.
+### 10a. attempt one (SDG 11 for young Australians)
+> Two exam questions. First. Explain how progress on goal eleven, sustainable cities and communities, could improve the health of young Australians. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain how progress on SDG 8, decent work and economic growth, could improve the health of young Australians. (3 marks)" Picture: the ring small with segment 8 outlined and an empty arrow to 3. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain how progress on SDG 11, sustainable cities and communities, could improve the health of young Australians. (3 marks)" Picture: the ring small with segment 11 outlined and an empty arrow to 3. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> Give a mechanism, not just a link. Secure, fairly paid work gives young people income for housing, food and care, and predictable hours protect sleep and study. Safe workplaces cut injury, and decent conditions reduce the stress of insecure work, protecting mental health. The classic mistake is saying the goal is related to health, without saying how.
+> Give a mechanism, not just a link. Safe, lit public spaces and active transport make it easier for young people to be active. Affordable housing reduces crowding and stress, which protects sleep and mental health. And better public transport improves access to services, school and work. The classic mistake is saying the goal is related to health, without saying how.
 
-Visual: `FeedbackScene`: the card shrinks to the top; on "Give a mechanism" segment 8's arrow to 3 draws. Three green links write along it (34 px): "secure income → housing, food, care" on "income for housing, food and care"; "predictable hours → sleep, study" on "predictable hours protect sleep and study", with reused `hms-shift-roster-apron-v1.png` tiny and v09's sleep window tiny; "safe, decent work → less injury, less stress" on "Safe workplaces cut injury". On "classic mistake" a chip "goal 8 is related to health" writes and is crossed in red, red hand tag "say how" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; on "Give a mechanism" segment 11's arrow to 3 draws. Three green links write along it (34 px): "safe, lit spaces, active transport → activity" on "Safe, lit public spaces and active transport"; "affordable housing → less crowding, stress" on "Affordable housing reduces crowding and stress", with reused `hms-insecure-housing-v1.png` tiny; "public transport → access to services, school, work" on "better public transport", with v04's clinic bus stop tiny. On "classic mistake" a chip "goal 11 is related to health" writes and is crossed in red, red hand tag "say how" (34 px). Settle one second.
 
 ### 10c. attempt two (the site's examine question)
 > Second. Examine how the United Nations Sustainable Development Goals are being used to improve health. Pause here to answer.
@@ -103,9 +103,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; on "Give a mechanism" segm
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Examine how the United Nations Sustainable Development Goals are being used to improve health. (5 marks)" Picture: the ring small and the two empty columns "works" and "weaker". **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10d. feedback, item two
-> Describe the goals briefly, then show health across them, with at least three goals and their mechanisms. Name real uses: WHO indicators, universal health coverage, health in all policies, and Australia's reporting. Then the limits: voluntary, self-assessed, often mapped afterwards. Conclude that they coordinate and expose, rather than compel. The classic mistake is a brochure with no limitations.
+> Describe the goals, then show health across them, with at least three goals and their mechanisms. Name real uses: WHO indicators, universal health coverage, health in all policies, and Australia's reporting. Then the limits: voluntary, self-assessed, often mapped afterwards. Conclude that they coordinate and expose, rather than compel. The classic mistake is a brochure with no limitations.
 
-Visual: `FeedbackScene` with the ring and columns filling: on "Describe the goals briefly" step 1 "describe: 17 goals, 2015 to 2030, universal" in a green frame; on "at least three goals and their mechanisms" step 2 "health across goals: 3+ mechanisms", three arrows into segment 3; on "Name real uses" step 3 "uses: WHO, UHC, health in all policies, data, Australia"; on "Then the limits" step 4 "limits: voluntary, self-assessed, afterwards", the amber column filling; on "Conclude" step 5 "judgement: coordinate and expose". On "classic mistake" a chip "SDGs = great (no limits)" writes and is crossed in red, red hand tag "examine includes the limits" (34 px). Settle one second.
+Visual: `FeedbackScene` with the ring and columns filling: on "Describe the goals" step 1 "describe: 17 goals, 2015 to 2030, universal" in a green frame; on "at least three goals and their mechanisms" step 2 "health across goals: 3+ mechanisms", three arrows into segment 3; on "Name real uses" step 3 "uses: WHO, UHC, health in all policies, data, Australia"; on "Then the limits" step 4 "limits: voluntary, self-assessed, afterwards", the amber column filling; on "Conclude" step 5 "judgement: coordinate and expose". On "classic mistake" a chip "SDGs = great (no limits)" writes and is crossed in red, red hand tag "examine includes the limits" (34 px). Settle one second.
 
 ### 11. decision rule and handoff
 > So, for any goal, trace its mechanism into health, and for any use, ask whether a decision actually changed. Next, we bring the goals down to one local community. How could they change young people's health there?
@@ -128,16 +128,17 @@ Memory card (the scene 9 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video; item 2 is the site's WE b1 stem verbatim.
 
-1. (10a, 3 marks.) SDG 8 and young Australians.
-   Model: one mark per developed mechanism, to three: secure, fair income (housing, food, timely care); predictable hours (sleep, study); safe workplaces (injury); decent conditions (less stress, mental health). Classic mistake crossed: a link with no mechanism.
+1. (10a, 3 marks.) SDG 11 and young Australians (Revision 2; SDG 8 was named with its mechanism in scene 4).
+   Model: one mark per developed mechanism, to three: safe, lit public spaces and active transport (physical activity); affordable housing (less crowding and stress, better sleep and mental health); public transport (access to services, school and work); cleaner air in cities (respiratory health). Classic mistake crossed: a link with no mechanism.
 2. (10c, 5 marks.) Examine how the SDGs are used.
    Model (the site's SA 3 guidance, shortened to 5 marks): the goals described, universal (1 mark); health across at least three goals with mechanisms (1 mark); at least two WHO uses (1 mark); Australian practice (1 mark); limitations and a judgement (coordinate and expose, not compel) (1 mark). Classic mistake crossed: no limitations.
 
-Feedback spoken lengths about 27 s (10b) and 31 s (10d) by script; time the exact audio.
+Feedback spoken lengths about 28 s (10b, Revision 2) and 30 s (10d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
 Self-check (23 Nov). The Codex science check must confirm each before voicing.
+- **"Independent reviews have criticised Australia" (8), Revision 2: source needed before voicing.** Candidate sources for the reviewer to confirm and name in this list: the SDSN *Sustainable Development Report* (annual country dashboards, which rate Australia's climate goal (13) and some inequality indicators poorly) and the Monash Sustainable Development Institute's *Transforming Australia: SDG Progress Report* (2020). If neither supports inequality, climate and Indigenous health outcomes together, narrow the spoken list to what the named source states.
 - **The SDGs (2).** Adopted 25 September 2015 by all 193 UN member states; 17 goals, 169 targets; for 2030; replaced the 8 MDGs (2000 to 2015). Correct (UN, *Transforming our world: the 2030 Agenda*).
 - **SDG 3 targets (3).** 3.1 maternal mortality; 3.2 newborn and under-5 deaths; 3.3 AIDS, TB, malaria; 3.4 reduce premature NCD mortality by one third and promote mental health; 3.6 halve road traffic deaths and injuries (target date 2020 in the original text, since extended in WHO's road safety decade); 3.8 universal health coverage. Spoken "halving road traffic deaths" without a date. Reviewer to confirm.
 - **Mechanisms (4).** Diarrhoeal disease remains a leading cause of death in children under five globally (WHO). Others as the site states. Correct.
@@ -154,7 +155,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5950 characters**, 15 scene files. At 13.3 characters per second the speech is about 447 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 547 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5951 characters**, 15 scene files. At 13.3 characters per second the speech is about 447 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 547 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -162,15 +163,15 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 2. what the SDGs are | 558 |
 | 3. SDG 3, and the targets that apply here | 504 |
 | 4. sixteen goals are health policy | 589 |
-| 5. girls' education, and indivisibility | 545 |
+| 5. girls' education, and indivisibility | 535 |
 | 6. how the WHO uses the goals | 674 |
 | 7. how Australia uses them | 522 |
 | 8. an honest evaluation | 616 |
 | 9. memory | 148 |
-| 10a. attempt one (SDG 8 for young Australians) | 164 |
-| 10b. feedback, item one | 353 |
+| 10a. attempt one (SDG 11 for young Australians) | 168 |
+| 10b. feedback, item one | 368 |
 | 10c. attempt two (the site's examine question) | 124 |
-| 10d. feedback, item two | 400 |
+| 10d. feedback, item two | 392 |
 | 11. decision rule and handoff | 213 |
 | 12. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -242,3 +243,14 @@ Holds and transitions as v03. 2 to 3 continue on the ring; 7 to 8 on the Austral
 - **Term load.** SDGs, target and indicator (screen), leave no one behind, indivisibility, universal health coverage, health in all policies, Voluntary National Review (screen). Five spoken with a gloss, two screen glosses.
 - **Overlap.** v18 applies the goals locally; Year 12 v19 and v20 develop goals 3, 4, 10 and 11.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v17-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 10a (SDG 8) was not unseen.** Accepted with the review's case. 10a: "Explain how progress on goal eleven, sustainable cities and communities, could improve the health of young Australians." Goal 11 is not worked in this video. 10b gives three mechanisms: safe, lit spaces and active transport lead to activity; affordable housing means less crowding and stress, so better sleep and mental health; public transport gives access to services, school and work. The crossed mistake is unchanged. The ring outlines segment 11, and the model is updated.
+2. **Note, scene 5 presented one answer as settled.** Accepted. "So the budget question answers itself." became "So here's the case for Proposal B, the SDG argument in one budget.", and "together they save more children" became "together they tend to save more children". The claim stays with the science check.
+3. **Note, "Independent reviews have criticised Australia" needs a source.** Accepted as a pre-voicing gate. "Numbers or facts to verify" now names candidate sources (the SDSN *Sustainable Development Report*; Monash's *Transforming Australia: SDG Progress Report*) and says to narrow the spoken list to what the named source supports.
+4. **Note, 10d about 31 s.** Accepted: "Describe the goals briefly, then" became "Describe the goals, then".
+
+Narration changed in scenes 5, 10a, 10b and 10d. Recount: 5,951 characters, about 547 s (Revision 1: 5,950, about 547 s). `cues.py`: 0 findings.

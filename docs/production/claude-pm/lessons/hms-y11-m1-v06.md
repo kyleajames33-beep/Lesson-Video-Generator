@@ -1,8 +1,8 @@
 # HMS Year 11 V06 (Health for individuals and communities): young people across generations. Are young people today really so different from their parents' generation, or has only the form of growing up changed? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new (the anchor), two reused (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new (the anchor), two reused (see Assets).
 
-Narration 5,702 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 529 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,542 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 517 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the sixth HMS video and the first of the "young people" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v06**. Pre-design pack `../pre-design/hms/hms-y11-m1-v06.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson06.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v05.md`.
 
@@ -20,10 +20,10 @@ Scope: the sixth HMS video and the first of the "young people" inquiry question.
 - **Entry knowledge.** hms-y11-m1-v05 (determinants act on groups; differences within groups); hms-y11-m1-v03 (averages hide spread; diagnosis depends on being counted, recalled for test 2); hms-y11-m1-v04 (participation, recalled in scene 8). Stage 5 PDHPE: puberty and adolescence at a basic level. Not assumed: developmental stage, developmental task, identity formation, autonomy, emerging adulthood, cohort effect.
 - **Terms.** Adolescence (2, "the stage between childhood and adulthood"); developmental task (2, "the jobs every adolescent works through"); identity formation (2, "working out who you are, separately from your family"); autonomy (2, "making your own decisions"); form (4, "how the task gets done"); emerging adulthood (5, "the longer stretch between adolescence and settled adult life"); cohort effect (7, screen gloss "a difference caused by the times a generation lived through").
 - **Visual system.** One recurring model is introduced here: **task against form** (`TaskFormTable`, new in `hms-shared`: two columns, "the task" and "how its form has changed", one row per constant, the site's own book table), drawn as a spine of five task labels running horizontally across both desks of the anchor plate, with each form change pinned to an object on the desk where it lives. People are never drawn: a generation is its desk. At most three bright items.
-- **Attempt.** 10a: the site's Activity 1 claim 1 as an item: "A parent says: 'Young people today care far more about what other people think of them than we did.' Identify whether this claim describes a change in a developmental task or in the form of the task, and rewrite it as a claim that could be supported with evidence." (3 marks). 10c: WE b1 verbatim: "Compare the lives of young people today with those of a previous generation, referring to at least three of the influences on young people's lives." (5 marks).
+- **Attempt.** 10a (Revision 2): "A grandparent says: 'Teenagers today take far more risks than we ever did.' Identify whether this claim describes a change in a developmental task or in the form of the task, and rewrite it as a claim that could be supported with evidence." (3 marks). 10c: WE b1 verbatim: "Compare the lives of young people today with those of a previous generation, referring to at least three of the influences on young people's lives." (5 marks).
 - **Memory aids.** The site's organising sentence "The developmental tasks of adolescence are constant across generations; the form in which they are carried out is not", shortened to "Same task, new form", and its closing caution "the differences within a generation are usually larger than those between generations". Scene 9, after scenes 4 to 7.
 - **A mistake/fix scene** is not included. "Young people are defective adults" (the deficit story) is answered in scene 3; "peers matter more now because of social media" in scene 4 and crossed in 10b; "two paragraphs, then and now" crossed in 10d.
-- **Reuse:** explainer kit, shared scenes; v05's `DeterminantsChain` (scene 1, then scene 7 for "which young people?"); v03's bathtub small (scene 7, test 2: diagnosis rates); v02's `hms-empty-training-field-v1.png` (scene 3, peer-based programs); Module 6 b01 parts, `WrongChip`. New in `hms-shared`: `TaskFormTable`.
+- **Reuse:** explainer kit, shared scenes; v05's `DeterminantsChain` (scene 1, then scene 7 for "which young people?"); v03's three-gate counting strip small (scene 7, test 2: diagnosis rates; Revision 2, was the bathtub); v02's `hms-empty-training-field-v1.png` (scene 3, peer-based programs); Module 6 b01 parts, `WrongChip`. New in `hms-shared`: `TaskFormTable`.
 - **Colour key.** The constant tasks olive (they are the same on both desks). Forms then (about 1995) warm; forms now cool. The five influences each take one ink accent in scene 6 (family violet, peers teal, culture amber, technology blue, global events grey-ink). Answers green; crossed mistakes red only.
 - **Type sizes.** As the course brief.
 - **Anchor.** `hms-then-now-desks-v1.png` (2400 x 1300) solid from the first frame of scene 1's board change at about 1,200 px wide, present in scenes 1, 4, 5 and 6 (camera moves between objects), small in 8, 10a and 11.
@@ -73,7 +73,7 @@ Visual: the desks stay; a five-row influence strip writes down the right side, e
 ### 7. a claim you can defend
 > So how do you make a generational claim that holds up? Use four tests. First, is it the age, or the era? Adults describing young people are often just describing being young. Second, compared with what, and measured how? More diagnoses can mean more people seeking help, not more illness. Third, which young people? The differences within a generation are usually bigger than the differences between generations. And fourth, does anything follow for health?
 
-Visual: board change to the tests board (solid from its first frame): a four-row card at the left with amber numbers. On "is it the age, or the era?" row 1 writes "age or era?" with gloss "cohort effect: a difference caused by the times" (30 px). On "compared with what, and measured how?" row 2 writes "compared with what? measured how?"; on "more people seeking help" v03's bathtub returns small with its tap labelled "diagnoses" and a grey tag "more help-seeking can raise the count". On "which young people?" row 3 writes "which young people?" and a coded spread chart draws at the right: two overlapping dot clouds, "about 30 years ago" (warm) and "today" (cool), with readouts (52 px) "gap between: small" and "spread within: large" read from the drawn distributions; grey tag "illustrative". On "within a generation" the within-spread brackets glow; v05's chain flashes beside it, tag "determinants". On "does anything follow for health?" row 4 writes "so what, for health?". Hold one second.
+Visual: board change to the tests board (solid from its first frame): a four-row card at the left with amber numbers. On "is it the age, or the era?" row 1 writes "age or era?" with gloss "cohort effect: a difference caused by the times" (30 px). On "compared with what, and measured how?" row 2 writes "compared with what? measured how?"; on "more people seeking help" v03's three-gate counting strip returns small ("presents", "diagnosed", "recorded"), with more dots than before passing the first gate and on through to "recorded", grey tag "more help-seeking, more counted" (Revision 2: not the bathtub, whose tap means true new cases). On "which young people?" row 3 writes "which young people?" and a coded spread chart draws at the right: two overlapping dot clouds, "about 30 years ago" (warm) and "today" (cool), with readouts (52 px) "gap between: small" and "spread within: large" read from the drawn distributions; grey tag "illustrative". On "within a generation" the within-spread brackets glow; v05's chain flashes beside it, tag "determinants". On "does anything follow for health?" row 4 writes "so what, for health?". Hold one second.
 
 ### 8. why it matters for health
 > Why compare generations in a health course at all? Three reasons. What worked before may not work now: a message built for television and school assemblies won't reach someone whose news arrives through a feed. Some risks have shrunk, like smoking, and some are new, like screens cutting into sleep and comparison that never switches off. And it stops the deficit story, because young people treated as a problem are less likely to use the services meant for them.
@@ -85,15 +85,15 @@ Visual: board change to the reasons board (solid from its first frame): three ca
 
 Visual: board change to the memory card (solid from its first frame): the desks small at the left beside a dark-ink framed card (52 px): "Same task, new form" (written with "Same task") and "Within a generation > between generations" (written with "the differences within a generation"). This card returns beside the key notes. Hold half a second.
 
-### 10a. attempt one (a parent's claim)
-> Two exam questions. First. A parent says, "Young people today care far more about what other people think of them than we did." Identify whether this claim describes a change in a developmental task, or in the form of the task, and rewrite it as a claim that could be supported with evidence. Pause here to answer.
+### 10a. attempt one (a grandparent's claim)
+> Two exam questions. First. A grandparent says, "Teenagers today take far more risks than we ever did." Identify whether this claim describes a change in a developmental task, or in the form of the task, and rewrite it as a claim that could be supported with evidence. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A parent says: 'Young people today care far more about what other people think of them than we did.'" Demand: "Identify whether this claim describes a change in a developmental task or in the form of the task, and rewrite it as a claim that could be supported with evidence. (3 marks)" Picture: the anchor plate small (both phones visible). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A grandparent says: 'Teenagers today take far more risks than we ever did.'" Demand: "Identify whether this claim describes a change in a developmental task or in the form of the task, and rewrite it as a claim that could be supported with evidence. (3 marks)" Picture: the anchor plate small (both phones visible). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> The task hasn't changed: caring what peers think is part of adolescence in every generation. So the claim is really about form. A defensible version says that peer feedback is now continuous, comes from a bigger group, and is public and countable, and you'd support it with data on how often and how widely young people are in contact. The classic mistake is blaming the caring itself on social media.
+> The task hasn't changed: risk-taking rises in adolescence in every generation. So the claim is really about form. A defensible version names which risks changed: smoking and drink driving have fallen, and online risks are new. You'd support it with trend data by age. The classic mistake is saying phones made teenagers reckless.
 
-Visual: `FeedbackScene`: the card shrinks to the top; givens strip "care far more", "than we did" (30 px). On "The task hasn't changed" the answer "the task (peers matter) is constant" writes in a green frame (44 px) and the given "care far more" takes an amber underline. On "really about form" a second green frame "the change is in form". On "continuous, comes from a bigger group, and is public and countable" a cool line writes "defensible: peer feedback is continuous, wider, public and countable" (38 px); on "you'd support it with data" a grey tag "evidence: contact frequency, network size". On "classic mistake" a chip "social media made teens care what others think" writes and is crossed in red, red hand tag "they always cared" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; givens strip "far more risks", "than we ever did" (30 px). On "The task hasn't changed" the answer "the task (risk-taking in adolescence) is constant" writes in a green frame (44 px) and the given "far more risks" takes an amber underline. On "really about form" a second green frame "the change is in form". On "names which risks changed" a cool line writes "defensible: name the risks" (38 px), and on "smoking and drink driving have fallen" two small trend arrows point down ("illustrative pattern"), on "online risks are new" a new chip "online risks" writes; on "trend data by age" a grey tag "evidence: trends by age, same measure". On "classic mistake" a chip "phones made teenagers reckless" writes and is crossed in red, red hand tag "risk-taking was always there" (34 px). Settle one second.
 
 ### 10c. attempt two (the site's compare question)
 > Second. Compare the lives of young people today with those of a previous generation, referring to at least three of the influences on young people's lives. Pause here to answer.
@@ -101,9 +101,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; givens strip "care far mor
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Compare the lives of young people today with those of a previous generation, referring to at least three of the influences on young people's lives. (5 marks)" Picture: the empty task-form table (headings only). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10d. feedback, item two
-> Open with the organising idea: the developmental tasks are the same, so compare the form they take. Then take three influences, each with a similarity and a difference. Peers matter in both, but contact is now continuous. Family still shapes health, but dependence lasts longer. Technology is always adopted first by the young, but one device now carries everything. Close with a judgement. The classic mistake is a paragraph on then, and a paragraph on now.
+> Open with the organising idea: the developmental tasks are the same, so compare the form they take. Then take three influences, each with a similarity and a difference. Peers matter in both, but contact is now continuous. Family still shapes health, but dependence lasts longer. Technology is always adopted first by the young. The classic mistake is a paragraph on then, and a paragraph on now.
 
-Visual: `FeedbackScene` with the task-form table filling as the answer builds (38 px): on "Open with the organising idea" step 1 "tasks constant → compare form" in a green frame; on "Peers matter in both" row "peers: same | continuous, public"; on "Family still shapes health" row "family: same | longer dependence"; on "Technology is always adopted first" row "technology: same pattern | one device for everything"; each row shows its similarity in olive and its difference in cool; on "Close with a judgement" step 2 "judgement: more alike than people think; differences in scale and visibility" in a green frame. On "classic mistake" a sketch of two separate paragraphs "then ..." and "now ..." writes and is crossed in red, red hand tag "both halves in every paragraph" (34 px). Settle one second.
+Visual: `FeedbackScene` with the task-form table filling as the answer builds (38 px): on "Open with the organising idea" step 1 "tasks constant → compare form" in a green frame; on "Peers matter in both" row "peers: same | continuous, public"; on "Family still shapes health" row "family: same | longer dependence"; on "Technology is always adopted first" row "technology: same pattern | one device for everything"; each row shows its similarity in olive and its difference in cool; with the technology row settled, step 2 writes silently, "judgement: more alike than people think; differences in scale and visibility" in a green frame. On "classic mistake" a sketch of two separate paragraphs "then ..." and "now ..." writes and is crossed in red, red hand tag "both halves in every paragraph" (34 px). Settle one second.
 
 ### 11. decision rule and handoff
 > So, to compare generations, name the task, name the changed form, check the evidence, and say what follows for health. Which leaves a real question. If the tasks are the same but the conditions have changed, what does health actually mean to young people now? Adults can't answer that on their behalf. Next, we'll learn how to find out properly.
@@ -124,18 +124,19 @@ Memory card (the scene 9 card) beside the notes. Notes 38 px, note 1 olive; each
 
 ## Practice question and feedback
 
-Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is the site's Activity 1 claim 1 as an exam item; item 2 the site's WE b1 stem verbatim.
+Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 applies the site's Activity 1 method to a constant from scene 2 (Revision 2: the site's peer claim was scene 4's worked example); item 2 the site's WE b1 stem verbatim.
 
-1. (10a, 3 marks.) "Young people today care far more about what other people think of them than we did."
-   Model: the task (peer orientation in adolescence) is constant across generations, so the claim as stated is hard to support and probably false (1 mark); what has changed is the form (1 mark); a defensible rewrite, for example "peer feedback is now continuous, comes from a larger group and is public and quantified", supportable with data on contact frequency, network size or time spent on social platforms (1 mark). Classic mistake crossed: "social media made teens care what others think". Other wrong chains: accepting the claim because "teens are on their phones" (no measure, no comparison).
+1. (10a, 3 marks.) "Teenagers today take far more risks than we ever did."
+   Model: the task (risk-taking rising in adolescence, as the reward system matures before impulse control) is constant across generations, so the claim as stated is hard to support (1 mark); what has changed is the form: which risks (1 mark); a defensible rewrite names them, for example "some risks such as smoking and drink driving have fallen among young people, while online risks are new", supported with trend data by age on the same measure (1 mark). Classic mistake crossed: "phones made teenagers reckless". Other wrong chains: accepting the claim because of news stories (no measure, no comparison).
 2. (10c, 5 marks.) Compare young people today with a previous generation, three influences.
    Model (the site's, shortened): the organising principle, tasks constant, compare form (1 mark); three influences each with a similarity and a difference in the same paragraph, for example peers, family and technology (3 marks); a judgement, for example more similarity than public discussion allows, with differences in scale, continuity and visibility, and differences within a generation larger than between (1 mark). Classic mistake crossed: a "then" paragraph and a "now" paragraph.
 
-Feedback spoken lengths about 30 s (10b) and 34 s (10d) by script; time the exact audio.
+Feedback spoken lengths about 25 s (10b, Revision 2) and 29 s (10d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
 Self-check (23 Nov). The Codex science check must confirm each before voicing.
+- **Youth risk trends (10b, Revision 2).** Smoking among young Australians has fallen over recent decades (AIHW, National Drug Strategy Household Survey trends), and drink driving by young drivers has fallen (road safety and NDSHS trends); online risks are new. Spoken without figures; the arrows are "illustrative pattern". Reviewer to confirm both directions before voicing.
 - **Developmental tasks (2).** The site's five; consistent with standard adolescent development texts.
 - **Reward and control maturation (2).** The dual-systems model (for example Steinberg; Casey); spoken as "tends to mature earlier", which is fair; confirm wording.
 - **Injury as a leading cause of harm for young people (3).** AIHW reports injury (including transport accidents and intentional self-harm) among the leading causes of death for young Australians; the site's claim. No figure spoken.
@@ -152,7 +153,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5702 characters**, 15 scene files. At 13.3 characters per second the speech is about 429 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 529 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5542 characters**, 15 scene files. At 13.3 characters per second the speech is about 417 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 517 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -165,10 +166,10 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 7. a claim you can defend | 457 |
 | 8. why it matters for health | 464 |
 | 9. memory | 138 |
-| 10a. attempt one (a parent's claim) | 314 |
-| 10b. feedback, item one | 401 |
+| 10a. attempt one (a grandparent's claim) | 289 |
+| 10b. feedback, item one | 329 |
 | 10c. attempt two (the site's compare question) | 177 |
-| 10d. feedback, item two | 458 |
+| 10d. feedback, item two | 395 |
 | 11. decision rule and handoff | 345 |
 | 12. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -176,7 +177,7 @@ Reserve cuts: (1) scene 1, "People love to answer that with a strong opinion." (
 
 ## Assets
 
-Have: v05's `DeterminantsChain` (scenes 1, 7); v03's bathtub (scene 7, small); v02's `hms-empty-training-field-v1.png` (scene 3). Coded: the tasks spine, the reward and control timeline, the balance, the task-form table, the influence strip, the autonomy timeline, the tests card, the spread chart, the reasons cards, trend arrows (illustrative), question cards, countdown. No people.
+Have: v05's `DeterminantsChain` (scenes 1, 7); v03's three-gate counting strip (scene 7, small; Revision 2); v02's `hms-empty-training-field-v1.png` (scene 3). Coded: the tasks spine, the reward and control timeline, the balance, the task-form table, the influence strip, the autonomy timeline, the tests card, the spread chart, the reasons cards, trend arrows (illustrative), question cards, countdown. No people.
 
 Need (new plate):
 1. `hms-then-now-desks-v1.png` (2400 x 1300): the anchor, scenes 1, 4, 5, 6, 8 (small), 10a, 11.
@@ -240,3 +241,14 @@ Holds and transitions as v03. 2 to 3 continue on the spine; 4 to 5 to 6 continue
 - **Cultural content.** None.
 - **Sensitive content.** Mental health appears only as a measurement example and as a norm that has become easier to talk about.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v06-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 10a repeated scene 4's peer case.** Accepted with the review's case. 10a: "A grandparent says, 'Teenagers today take far more risks than we ever did.' Identify whether this claim describes a change in a developmental task, or in the form of the task, and rewrite it as a claim that could be supported with evidence." 10b: the task (risk-taking rises in adolescence) is constant, so the claim is about form. A defensible version names which risks changed (smoking and drink driving have fallen; online risks are new) and is supported with trend data by age. The crossed mistake is "phones made teenagers reckless". The model is updated, and the trend directions are added to "Numbers or facts to verify" with no figures spoken.
+2. **Should fix, scene 7 relabelled v03's bathtub tap "diagnoses".** Accepted. Test 2's picture is now v03's three-gate counting strip ("presents", "diagnosed", "recorded"), with more dots passing the first gate (grey tag "more help-seeking, more counted"). The bathtub keeps its one meaning (the tap is true new cases).
+3. **Should fix, 10d about 34 s.** Accepted. "Close with a judgement." and "but one device now carries everything" are cut. The technology row and the judgement step still write on screen, silently. About 29 s.
+4. **Note, the scene 2 dual-systems wording.** Left to the science check, keeping "tends to".
+
+Narration changed in scenes 10a, 10b and 10d. Recount: 5,542 characters, about 517 s (Revision 1: 5,702, about 529 s), still above the 5,500 floor. `cues.py`: 0 findings.

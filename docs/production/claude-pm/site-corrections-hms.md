@@ -171,3 +171,13 @@ Same source hash. Card 01 warm-up ("One of them will do something the other cann
 **Correction:** "Your knee is a hinge, so it can rotate only a little, and only when it is bent; straight, it cannot rotate at all."
 
 **Reason:** the knee is a modified hinge: with the knee flexed, the tibia can rotate a little on the femur (this is also why twisting on a bent knee loads the ligaments and menisci, the page's own Activity 2 mechanism). A student who tries the warm-up will feel a small rotation and doubt the lesson. The contrast with the hip still holds. Video hms-y11-m2-v01 says "You'll get a little at most" and "your knee barely does because it's a hinge". Severity: minor (overstated).
+
+## 17. subjects/health-movement-science/year11/module2/lesson06.sa.html
+
+Source hash: `aaa5957803f9c7cd09a478c0570846eb96e291baa55a490e05f461df9e5ea2a4`. Card 04 ("The digestive system: one long tube, and the organs that serve it"), the small intestine item.
+
+**Exact old text:** "Its lining is folded into millions of villi, each covered in microvilli, giving a surface area of around 250 square metres."
+
+**Correction:** "Its lining is folded into millions of villi, each covered in microvilli, giving an enormous surface area: current measurements put the whole digestive tract's inner surface at about 30 to 40 square metres, most of it in the small intestine, roughly the floor area of a small flat."
+
+**Reason:** the "250 square metres" (tennis court) figure is an older textbook estimate. Helander and Fändriks (2014, Scandinavian Journal of Gastroenterology) measured the mean total mucosal surface of the adult digestive tract, including villi and microvilli, at about 32 square metres. The lesson's point (a huge folded surface, the same design as the alveoli) is unchanged. Video hms-y11-m2-v06 says "a huge folded surface" and shows no number. Severity: minor (dated figure). Science check to confirm the citation.

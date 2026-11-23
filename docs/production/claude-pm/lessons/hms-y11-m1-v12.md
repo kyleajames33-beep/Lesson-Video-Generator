@@ -1,8 +1,8 @@
 # HMS Year 11 V12 (Health for individuals and communities): reflecting on your own health. How do you reflect on your own health honestly and turn it into a plan that survives a bad week? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, three reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, three reused (see Assets). No official figures.
 
-Narration 5,587 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 520 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,536 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 519 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the twelfth HMS video and the last of the "key issues" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v12**. Pre-design pack `../pre-design/hms/hms-y11-m1-v12.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson12.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v11.md`.
 
@@ -23,7 +23,7 @@ Scope: the twelfth HMS video and the last of the "key issues" inquiry question. 
 - **Entry knowledge.** hms-y11-m1-v11 (nine skills; resilience as a process, "be more resilient" adds shame; bad coping persists because it works); hms-y11-m1-v10 (skills work inside conditions; mastery; help-seeking); hms-y11-m1-v02 (dimensions interact; circumstances move health); hms-y11-m1-v09 (the sleep issue, the sleep window); hms-y11-m1-v05 (determinants). Each recalled in one line. Not assumed: reflection (as a method), self-audit, baseline, agency, agency boundary, course of action, intention-behaviour gap, review point.
 - **Terms.** Reflection (2, "a structured review that ends in a conclusion and a change"); self-audit (4, "checking yourself across the dimensions, with evidence"); baseline (4, screen gloss "your starting count"); agency boundary (5, screen gloss "what's yours to change, to influence, and not yours"); course of action (7, screen gloss "a stated plan to improve health"); intention-behaviour gap (8, "the distance between what you intend and what you do"); review point (7, screen gloss "a set date to judge the plan").
 - **Visual system.** Two recurring models are introduced here: the **agency boundary** (`AgencyBoundary`, new in `hms-shared`: three columns "yours to change now" (teal), "yours to influence" (amber), "not yours" (grey); audit chips drop into columns and can slide between them; a chip in the wrong column shows a red edge and a tag naming the error) and the **intention-behaviour gap** (`IntentionGap`, new: two parallel tracks "intend" and "do" across a fortnight grid, the gap shaded between them; an if-then cue draws a bridge and the "do" track rises to meet it). Both return in v13 (column three) and hms-y11-m2-v21 (the gap). Recurring models reused: v11's nine-card audit sheet (1), v09's `SleepWindow` (2, 8), v10's `SkillSocket` cards as small chips (4, 7), v02's `InteractionLoop` (4, small). People are never drawn.
-- **Attempt.** 10a: written for this video from the site's cards 04 and 07: "A student writes: 'I never get enough sleep because I have no self-discipline. From Monday I will be in bed by 9.30 every night.' Identify two weaknesses in this reflection, and rewrite it as a usable course of action." (4 marks). 10c: WE b2 verbatim, "Assess the value of personal reflection as a way of improving the health of young people." (6 marks).
+- **Attempt.** 10a: written for this video from the site's cards 04 and 07: "A student writes: 'I never eat breakfast because I am lazy. From Monday I will eat a healthy breakfast every single day.' Identify two weaknesses in this reflection, and rewrite it as a usable course of action." (4 marks). 10c: WE b2 verbatim, "Assess the value of personal reflection as a way of improving the health of young people." (6 marks).
 - **Memory aids.** The site's lines, shortened: "Reflection ends in a change, not a feeling" and "Draw the boundary before you plan: change what's yours, name what isn't". Scene 9, after scenes 2 to 8. "A missed day is data, not a verdict" is spoken in scene 8 and is the fifth key note.
 - **A mistake/fix scene** is not included. "Reflection is a diary entry" is fixed in 2; "I have no discipline" in 3 and crossed in 10b; "I'm not fit" in 4; the two column errors in 5; "go big" in 7; "one miss means I've failed" in 8; "quite useful" in 10d.
 - **Reuse:** explainer kit, shared scenes; v11's audit sheet; v09's `SleepWindow`; v10's skill cards; v02's `InteractionLoop`; plates `hms-bedside-phone-alarm-v1.png` (v09; scenes 2, 3, 8), `hms-lunchboxes-v1.png` (v04; scene 5, the empty box for Thursday), `hms-empty-training-field-v1.png` (v02; scenes 4, 7). New in `hms-shared`: `AgencyBoundary`, `IntentionGap`, `ReflectionSteps` (a four-step strip).
@@ -89,14 +89,14 @@ Visual: board change to the gap tracks (solid from their first frame): the `Inte
 Visual: board change to the memory card (solid from its first frame): the agency boundary small at the left beside a dark-ink framed card (52 px): "Reflection ends in a change, not a feeling" (written with "Reflection ends in a change") and "Draw the boundary: change what's yours, name what isn't" (written with "draw the boundary before you plan"). This card returns beside the key notes. Hold half a second.
 
 ### 10a. attempt one (a weak reflection)
-> Two exam questions. First. A student writes, I never get enough sleep because I've got no self-discipline. From Monday I'll be in bed by nine thirty every night. Identify two weaknesses in this reflection, and rewrite it as a usable course of action. Pause here to answer.
+> Two exam questions. First. A student writes, I never eat breakfast because I'm lazy. From Monday I'll eat a healthy breakfast every single day. Identify two weaknesses in this reflection, and rewrite it as a usable course of action. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A student writes: 'I never get enough sleep because I have no self-discipline. From Monday I will be in bed by 9.30 every night.'" Demand: "Identify two weaknesses in this reflection, and rewrite it as a usable course of action. (4 marks)" Picture: the five-property table with empty cells. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A student writes: 'I never eat breakfast because I am lazy. From Monday I will eat a healthy breakfast every single day.'" Demand: "Identify two weaknesses in this reflection, and rewrite it as a usable course of action. (4 marks)" Picture: the five-property table with empty cells. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> First weakness: it's self-criticism, a verdict on the person, with no evidence or analysis. Second: the plan is big, has no cue, and has no review date. A usable version: phone charges on the desk from ten thirty, Sunday to Thursday, my sister knows, and I review in three weeks against nights asleep before midnight. The classic mistake is changing the bedtime and nothing else.
+> First weakness: it's self-criticism, with no evidence or analysis. Second: the plan is big, with no cue and no review date. A usable version: on school days, when I fill my water bottle at seven fifteen, I take a banana and a yoghurt, my family keeps them stocked, and I review in three weeks. The classic mistake is changing the target and nothing else.
 
-Visual: `FeedbackScene`: the card shrinks to the top; on "it's self-criticism" the phrase "no self-discipline" in the card takes a red underline, and a green frame writes "1 self-criticism: no evidence, no analysis" (34 px); on "the plan is big, has no cue, and has no review date" "2 big, no cue, no review" and the phrase "From Monday ... every night" takes an amber underline. On "A usable version" the five-property table fills (34 px): "specific: phone on the desk" on "phone charges on the desk", "scheduled: from 10.30, Sunday to Thursday" on "from ten thirty, Sunday to Thursday", "supported: my sister knows" on "my sister knows", "reviewable: 3 weeks, nights asleep before midnight" on "review in three weeks", and "small" ticks on its own as the row completes. On "classic mistake" a chip "bed by 9.30 (and nothing else changes)" writes and is crossed in red, red hand tag "change the situation, not just the target" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; on "it's self-criticism" the word "lazy" in the card takes a red underline, and a green frame writes "1 self-criticism: no evidence, no analysis" (34 px); on "the plan is big, with no cue and no review date" "2 big, no cue, no review" and the phrase "From Monday ... every single day" takes an amber underline. On "A usable version" the five-property table fills (34 px): "scheduled: school days, 7.15" on "when I fill my water bottle at seven fifteen" (the cue is the water bottle), "specific: banana and yoghurt" on "a banana and a yoghurt", "supported: family keeps them stocked" on "my family keeps them stocked", "reviewable: 3 weeks, school days with breakfast" on "review in three weeks", and "small" ticks on its own as the row completes. On "classic mistake" a chip "breakfast every day (and nothing else changes)" writes and is crossed in red, red hand tag "change the situation, not just the target" (34 px). Settle one second.
 
 ### 10c. attempt two (the site's assess question)
 > Second. Assess the value of personal reflection as a way of improving the health of young people. Pause here to answer.
@@ -104,14 +104,14 @@ Visual: `FeedbackScene`: the card shrinks to the top; on "it's self-criticism" t
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Assess the value of personal reflection as a way of improving the health of young people. (6 marks)" Picture: the agency boundary small, columns empty. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10d. feedback, item two
-> Give a judgement with a boundary. For: it turns impressions into evidence, it's free, and it builds skills like self-efficacy. Against: it can name a condition precisely, but can't change it, and if it's sold as enough, a failed plan feels like personal failure. So it's valuable within your own agency, and what it finds in column three feeds advocacy. The classic mistake is calling it quite useful, with no boundary.
+> Judge it with a boundary. For: it turns impressions into evidence, it's free, and it builds skills like self-efficacy. Against: it can name a condition precisely, but can't change it, and if it's sold as enough, a failed plan feels like personal failure. So it's valuable within your own agency, and what it finds in column three feeds advocacy. The classic mistake is calling it quite useful, with no boundary.
 
 Visual: `FeedbackScene` with the agency boundary filling: on "For" step 1 "for: evidence, free for all, uses the skills" in a green frame, columns 1 and 2 lighting; on "Against" step 2 "against: finds conditions, can't change them" with column 3 lit grey; on "a failed plan feels like personal failure" step 3 "risk: failure read as personal" with a small red-edged chip "my fault"; on "valuable within your own agency" step 4 "judgement: valuable for what's yours; column three → advocacy", the escalate arrow from scene 6 drawing out of column 3. On "classic mistake" a chip "quite useful" writes and is crossed in red, red hand tag "valuable for what, and not for what" (34 px). Settle one second.
 
 ### 11. decision rule, callback and handoff
 > So, describe with evidence, draw the boundary, and write a small plan built for a bad week. Now check the reason you wrote at the start: a choice, or a condition? Next, column three. How have young people changed the conditions themselves?
 
-Visual: three step chips write on (38 px): "describe with evidence", "draw the boundary", "small plan, built for a bad week". On "the reason you wrote at the start" the pinned scene 1 card slides up beside the board with its two tick boxes, still empty for the viewer, and the agency boundary returns full behind it. On "column three" the card leaves; columns 1 and 2 dim to grey and column 3 ("not yours") lights with its chips ("local transport", "what a service costs", "whether the club exists", "no food on Thursdays"); on "changed the conditions themselves" an amber arrow leaves it to the right labelled "who can change this?", and the "Next" chip slides in: "Next: how do young people change the conditions?" **This is the handoff frame; v13 opens from it.** Hold half a second.
+Visual: three step chips write on (38 px): "describe with evidence", "draw the boundary", "small plan, built for a bad week". On "the reason you wrote at the start" the pinned scene 1 card slides up beside the board with its two tick boxes, still empty for the viewer, and the agency boundary returns full behind it; after "a choice, or a condition?" the frame holds 3 seconds of quiet so the viewer can tick a box (Revision 2). On "column three" the card leaves; columns 1 and 2 dim to grey and column 3 ("not yours") lights with its chips ("local transport", "what a service costs", "whether the club exists", "no food on Thursdays"); on "changed the conditions themselves" an amber arrow leaves it to the right labelled "who can change this?", and the "Next" chip slides in: "Next: how do young people change the conditions?" **This is the handoff frame; v13 opens from it.** Hold half a second.
 
 ### 12. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -129,12 +129,12 @@ Memory card (the scene 9 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video from the site's cards 04 and 07; item 2 is the site's WE b2 stem verbatim.
 
-1. (10a, 4 marks.) The self-discipline sleep plan.
-   Model: weakness 1, self-criticism (a judgement about the person) with no evidence or analysis (1 mark); weakness 2, the plan is large, uncued and unreviewable (1 mark); a rewrite meeting at least four of the five properties, attached to a cue and naming the condition-side change (moving the charger) (2 marks). Classic mistake crossed: changing only the target bedtime.
+1. (10a, 4 marks.) The "lazy" breakfast plan (Revision 2: replaced the sleep and self-discipline item, which repeated scenes 3 and 8).
+   Model: weakness 1, self-criticism (a judgement about the person) with no evidence or analysis (1 mark); weakness 2, the plan is large, uncued and unreviewable (1 mark); a rewrite meeting at least four of the five properties, attached to a cue (filling the water bottle at 7.15) and naming the condition-side change (food kept stocked) (2 marks). Classic mistake crossed: changing only the target. Sensitive-topic check: no diet or weight advice; the food named is ordinary and neutral.
 2. (10c, 6 marks.) Assess the value of personal reflection.
    Model (the site's, shortened): strengths: evidence over impression, free and universal, transferable, activates the skills (2 marks); limit: identifies conditions but cannot alter them (1 mark); risk: a failed plan read as personal deficiency, and an equity effect (reflection-only raises the average and widens the gap) (2 marks); a bounded judgement: valuable within agency, with column three as material for advocacy (1 mark). Classic mistake crossed: an unbounded "quite useful".
 
-Feedback spoken lengths about 28 s (10b) and 31 s (10d) by script; time the exact audio.
+Feedback spoken lengths about 27 s (10b, Revision 2) and 30 s (10d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -155,7 +155,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5587 characters**, 15 scene files. At 13.3 characters per second the speech is about 420 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 520 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5536 characters**, 15 scene files. At 13.3 characters per second the speech is about 416 s; add 30 s of padding (2 s per scene) and 73 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 519 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -168,10 +168,10 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 7. a usable course of action | 590 |
 | 8. the intention-behaviour gap, and the bad week | 519 |
 | 9. memory | 148 |
-| 10a. attempt one (a weak reflection) | 272 |
-| 10b. feedback, item one | 379 |
+| 10a. attempt one (a weak reflection) | 254 |
+| 10b. feedback, item one | 354 |
 | 10c. attempt two (the site's assess question) | 119 |
-| 10d. feedback, item two | 419 |
+| 10d. feedback, item two | 411 |
 | 11. decision rule, callback and handoff | 239 |
 | 12. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -243,3 +243,13 @@ Holds and transitions as v03. 2 to 3 and 5 to 6 continue on their stages; other 
 - **Overlap.** hms-y11-m2-v21 develops self-regulation and the gap; v13 and v14 take column three into advocacy.
 - **Sensitive content.** The audit is personal; scene 4 frames worries as a help-seeking moment. Food insecurity is one chip, no detail.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v12-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 10a was the taught example.** Accepted with the review's case. 10a: "A student writes, I never eat breakfast because I'm lazy. From Monday I'll eat a healthy breakfast every single day." (two weaknesses, plus a usable rewrite). 10b: self-criticism with no evidence or analysis; a big plan with no cue and no review date. The usable version is "on school days, when I fill my water bottle at seven fifteen, I take a banana and a yoghurt, my family keeps them stocked, and I review in three weeks". The crossed mistake is "breakfast every day (and nothing else changes)". The five-property table fills on cue, and the model and decision line are updated. Sensitive-topic check: ordinary food, no diet or weight advice. 10b is about 27 s.
+2. **Note, the scene 11 callback has no time.** Accepted: a 3 s quiet hold after "a choice, or a condition?" with the two tick boxes empty (holds 70 to 73 s).
+3. **Note, 10d about 31 s.** Accepted: "Give a judgement with a boundary." became "Judge it with a boundary."
+
+Narration changed in scenes 10a, 10b and 10d. Recount: 5,536 characters, about 519 s with 73 s of holds (Revision 1: 5,587, about 520 s), above the 5,500 floor. `cues.py`: 0 findings.

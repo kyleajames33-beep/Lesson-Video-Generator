@@ -1,8 +1,8 @@
 # HMS Year 11 V04 (Health for individuals and communities): social justice principles. Why does giving everyone the same thing often fail to give everyone the same health? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
 
-Narration 5,624 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 523 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,627 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 523 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the fourth HMS video. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v04**. Pre-design pack `../pre-design/hms/hms-y11-m1-v04.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson04.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v03.md`. Templates: `bio-y11-fa1-v01.md`.
 
@@ -62,9 +62,9 @@ Visual: the columns shrink to the left. On "Older people have more chronic disea
 Visual: board change to the clinic stage (solid from its first frame): the clinic plate large (about 1,100 px wide) with six amber gate markers already pinned to it, unlabelled and open: one on the door (financial), one on the bus stop (geographic), one on the doorway frame (cultural), one on the brochure rack (language and literacy), one on the steps (physical), one on the blank sign (informational). On "exists isn't the same as a service you can use" the `AccessGates` strip draws along the foot with six empty slots (gloss "access: can people actually get and use it?", 30 px). On each barrier word its gate labels itself and its slot fills (38 px): "Financial" (with sub-chips "fee", "lost wages", "petrol", "childcare" on "lost wages, petrol and childcare"), "Geographic" (with the bus stop's empty timetable frame lighting), "Cultural", "Language and literacy" (the brochure rack lighting), "Physical" (the steps lighting), "Informational" (the blank sign lighting). At most three bright items (earlier labels dim to grey). Hold one second.
 
 ### 5. the clinic audited
-> Back to the clinic. It's free, so the financial barrier is handled. But it's only open while most people are at work, in one town, with no interpreter mentioned, and no sign of how anyone hears about it. That's five of the six barriers untouched. This is a classic exam trap. A question about access almost always gives you a free service. The word free is bait. Name at least three kinds of barrier, and say which ones the case actually fixes.
+> Back to the clinic. Free handles the fee, but not the lost wages of coming during work hours, because it's only open while most people are at work. It's in one town, with no interpreter mentioned, and no sign of how anyone hears about it. That's five of the six barriers untouched, and the financial one only half fixed. This is a classic exam trap. A question about access almost always gives you a free service. The word free is bait. Name at least three kinds of barrier, and say which ones the case actually fixes.
 
-Visual: the clinic stage stays. On "the financial barrier is handled" the financial gate turns green and its slot ticks. On "open while most people are at work" the hours board pulses and the financial gate's sub-chip "lost wages" turns amber again, with an amber tag "work hours: lost wages"; the geographic gate closes on "in one town"; the language gate closes on "no interpreter mentioned"; the informational gate closes on "how anyone hears about it"; the cultural and physical gates close with grey tags "not stated" and "steps, no ramp". On "five of the six barriers untouched" a readout (52 px) "barriers untouched: 5 of 6". On "The word free is bait" a chip "it's free, so it's accessible" writes and is crossed in red, red hand tag "free ≠ accessible" (34 px). On "Name at least three" an amber hand tag "name 3 or more, say which are fixed" (42 px). The three hook cards now fill: "shift workers", "people outside the town", "people who don't speak English well" (38 px). Hold one second.
+Visual: the clinic stage stays. On "Free handles the fee" the financial gate turns half green (its "fee" half ticks); on "lost wages" its other half turns amber with an amber tag "work hours: lost wages", so the gate shows half green, half amber. On "open while most people are at work" the hours board pulses and hook card 1 fills "shift and office workers" (30 px); the geographic gate closes on "in one town" and hook card 2 fills "people from outlying towns"; the language gate closes on "no interpreter mentioned" and hook card 3 fills "people who don't read English"; the informational gate closes on "how anyone hears about it"; the cultural and physical gates close with grey tags "not stated" and "steps, no ramp". On "five of the six barriers untouched" a readout (52 px) "barriers left: 5 of 6"; on "the financial one only half fixed" a second line beneath it (34 px) "and financial only half fixed". On "The word free is bait" a chip "it's free, so it's accessible" writes and is crossed in red, red hand tag "free ≠ accessible" (34 px). On "Name at least three" an amber hand tag "name 3 or more, say which are fixed" (42 px). The three hook cards, filled as their gates closed, stay at the right (Revision 2). Hold one second.
 
 ### 6. participation
 > Participation means the people affected help design, run and judge what happens to them. It's not a courtesy. It changes whether a program works, for three reasons. Communities know their own barriers, like a bus that doesn't run at four. A service people helped build is one they trust, and trust is what gets people through the door. And it changes what counts as success. That's why community-controlled health services, run by the communities they serve, work so well. But watch for the fake. Asking for comments on a plan that's already finished is consultation, not participation.
@@ -102,9 +102,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; givens strip "only in Engl
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain how the social justice principle of equity can improve the health status of a community. (5 marks)" Picture: the two empty equity columns (no blocks, no labels). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10d. feedback, item two
-> Define equity against equality first. Then give the mechanism: the group furthest behind has the most avoidable ill health, so help matched to its needs removes the most, and the community's health status rises furthest. Use a case, like the two schools, where the same grant widens the gap. Finish by linking to access, because targeted help still needs to be reachable. The classic mistake is arguing that equity is fair, and stopping there.
+> Define equity against equality first. Then give the mechanism: the group furthest behind has the most avoidable ill health, so help matched to its needs removes the most, and the community's health status rises furthest. Finish by linking to access, because targeted help still needs to be reachable. The classic mistake is arguing that equity is fair, and stopping there.
 
-Visual: `FeedbackScene` with a four-step strip (38 px): on "Define equity against equality" step 1 "equity: by need | equality: the same" in a green frame (the picture's columns gain their headings); on "give the mechanism" step 2 "mechanism: most avoidable ill health → biggest gain" in a green frame (a small copy of the scene 8 bars with group 4 lifting); on "like the two schools" step 3 "case: same grant, gap widens" (the picture's equality column gains identical blocks and a widening bracket); on "linking to access" step 4 "link: it still has to be reachable" with a small gates strip. On "classic mistake" a chip "equity is fair, so it improves health" writes and is crossed in red, red hand tag "fair is not a mechanism" (34 px). Settle one second.
+Visual: `FeedbackScene` with a four-step strip (38 px): on "Define equity against equality" step 1 "equity: by need | equality: the same" in a green frame (the picture's columns gain their headings); on "give the mechanism" step 2 "mechanism: most avoidable ill health → biggest gain" in a green frame (a small copy of the scene 8 bars with group 4 lifting); step 3 then writes silently, "case: same grant, gap widens" (the picture's equality column gains identical blocks and a widening bracket); on "linking to access" step 4 "link: it still has to be reachable" with a small gates strip. On "classic mistake" a chip "equity is fair, so it improves health" writes and is crossed in red, red hand tag "fair is not a mechanism" (34 px). Settle one second.
 
 ### 11. decision rule and handoff
 > So, to judge any health initiative, ask four questions. Is it treated as a right? Is help shared by need? Can people actually reach it? And did the people affected help decide? But why do some groups start so far behind in the first place? Next, we'll follow the chain of causes that comes before the gates.
@@ -132,7 +132,7 @@ Two unseen items (10a to 10d), each with "Pause here to answer." and a 10 s coun
 2. (10c, 5 marks.) Explain how equity can improve a community's health status.
    Model (the site's structure, shortened): equity defined against equality (1 mark); where groups start in different places, identical distribution keeps or widens the gap, with a case (1 mark); the mechanism, the group furthest behind carries the most avoidable ill health, so help matched to its needs produces the largest gain in the community's health status (2 marks); the effect depends on access and participation (1 mark). Classic mistake crossed: "equity is fair, so it improves health" (assertion, no mechanism).
 
-Feedback spoken lengths: about 28 s (10b) and 33 s (10d) by script; time the exact audio.
+Feedback spoken lengths: about 28 s (10b) and 28 s (10d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -152,7 +152,7 @@ Self-check (23 Nov), arithmetic by Python.
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5624 characters**, 15 scene files. At 13.3 characters per second the speech is about 423 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 523 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5627 characters**, 15 scene files. At 13.3 characters per second the speech is about 423 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 523 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -160,7 +160,7 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 2. equality and equity | 547 |
 | 3. when a difference is an inequity | 383 |
 | 4. access: six barriers | 488 |
-| 5. the clinic audited | 444 |
+| 5. the clinic audited | 518 |
 | 6. participation | 586 |
 | 7. rights | 482 |
 | 8. how the four raise health status | 515 |
@@ -168,7 +168,7 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 10a. attempt one (which principle?) | 303 |
 | 10b. feedback, item one | 368 |
 | 10c. attempt two (the site's explain question) | 126 |
-| 10d. feedback, item two | 443 |
+| 10d. feedback, item two | 372 |
 | 11. decision rule and handoff | 307 |
 | 12. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -244,3 +244,14 @@ Holds and transitions as v03 (2 to 3 and 4 to 5 continue on their stages; all ot
 - **Cultural content.** General description of community-controlled services; nothing named or drawn.
 - **Pronunciation.** "equity" as "EK-wit-ee"; "inequity" as "in-EK-wit-ee" (distinct from "inequality").
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v04-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 5 said the financial gate was "handled" and then reopened it.** Accepted. The narration now reads "Free handles the fee, but not the lost wages of coming during work hours, because it's only open while most people are at work." The financial gate is drawn half green and half amber. The count reads "That's five of the six barriers untouched, and the financial one only half fixed" (readout "barriers left: 5 of 6" plus "and financial only half fixed").
+2. **Should fix, the hook's three group cards were never filled on cue.** Accepted. Each card now fills as its gate closes: "shift and office workers" (hours), "people from outlying towns" (geographic) and "people who don't read English" (language), visual only at 30 px. The silent end-of-scene fill is removed.
+3. **Should fix, 10d about 33 s.** Accepted. "Use a case, like the two schools, where the same grant widens the gap." is cut, and step 3 writes silently with its picture. About 28 s.
+4. **Note, the scene 6 community-controlled claim.** Left to the science check, and kept general per the cultural ruling.
+
+Narration changed in scenes 5 and 10d. Recount: 5,627 characters, about 523 s (Revision 1: 5,624, about 523 s). This is still above the 5,500 floor. `cues.py`: 0 findings.

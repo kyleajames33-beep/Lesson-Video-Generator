@@ -1,8 +1,8 @@
 # HMS Year 11 V05 (Health for individuals and communities): the determinants of health. Why do some groups of Australians end up with worse health, and why can't "they should choose better" explain it? (design)
 
-Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: three new, three reused (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, three reused (see Assets).
 
-Narration 5,875 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 542 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,849 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 540 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the fifth HMS video. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v05**. Pre-design pack `../pre-design/hms/hms-y11-m1-v05.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson05.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v04.md`.
 
@@ -22,7 +22,7 @@ Scope: the fifth HMS video. Course brief `../hms-design-brief.md`. Route entry *
 - **Entry knowledge.** hms-y11-m1-v02 (circumstances change health directly and change the range of choices); hms-y11-m1-v04 (equity, access, the inequity test); hms-y11-m1-v03 (averages hide groups). Recalled in one line each, not re-taught. Not assumed: determinant, the five group names, upstream, downstream, social gradient, sociological, norm.
 - **Terms.** Determinant (2, "anything that influences health, for a person or a whole population"); each group by its examples (2); upstream and downstream (2, "the social conditions that shape health" and "the body-level factors closest to the outcome"); social gradient (4, "health improves at every step up"); sociological (5, "about people's situations, not their character"); norm (5, "what's usual in a person's setting").
 - **Visual system.** One recurring model is introduced here: the **determinants chain** (`DeterminantsChain`, new in `hms-shared`: five stacked boxes from "broad features of society" at the top to "biomedical factors" at the foot, a downward arrow "shapes" and an upward arrow "is treated by", the site's own book diagram). It fills the v04 handoff's empty boxes (they become the five groups and connect into the v04 gates). Interaction kinds draw on it as coloured paths (chain: one path down; clustering: several boxes lighting together with a multiplier readout; feedback: an arrow running back up). The **campaign model** is a coded two-group readout board. People are never drawn; babies, families and groups are objects, places, coded blocks and labels.
-- **Attempt.** 10a: the site's Activity 2 as an item: "A national television campaign tells Australians to eat more vegetables and walk 30 minutes a day. Explain how this campaign could improve the national average while widening the gap between groups." (3 marks). 10c: WE b1 verbatim: "Explain how determinants of health interact to affect the health of a population group." (5 marks).
+- **Attempt.** 10a (Revision 2): the site's Activity 2 idea on an unseen case: "A national campaign gives every young person a free fitness app with home workout plans. Explain how this campaign could improve the national average while widening the gap between groups." (3 marks). 10c: WE b1 verbatim: "Explain how determinants of health interact to affect the health of a population group." (5 marks).
 - **Memory aids.** The site's two book lines: "Upstream shapes, downstream gets treated" (from the stack's two arrows) and "An intervention that requires resources to act on will help most those who have the most resources" (shortened for speech). Scene 9, after scenes 2 and 8.
 - **A mistake/fix scene** is not included. "Behaviours are furthest upstream" is answered in scene 2; "only the poorest have worse health" in scene 4; "they should choose better" in scenes 5 and 6; "a list of five determinants" is crossed in 10d; "the campaign worked, so the gap closed" in 10b.
 - **Reuse:** explainer kit, shared scenes; v04's `AccessGates` strip (scene 1, 2); v01 and v02 plates `hms-insecure-housing-v1.png` (scene 3), `hms-shift-roster-apron-v1.png` (scene 4); v04's `hms-regional-clinic-v1.png` (scene 3, small); Module 6 b01 parts, `WrongChip`. New in `hms-shared`: `DeterminantsChain`, `GradientSteps`, `CampaignModel`.
@@ -45,7 +45,7 @@ Handoff: the same chain, pointed at young people (route entry hms-y11-m1-v06). *
 ### 1. hook (two bracelets)
 > Last time, we saw that a service can be free and still out of reach. But why do some groups need so much more help in the first place? Here's a puzzle. Two babies are born in Australia on the same day, in the same hospital, and both are healthy. On average, one can expect to live around four to five years longer than the other. What would you want to know to predict which one? And how many of those things will either of them ever get to choose?
 
-Visual: opens on v04's handoff frame (the six amber gates at the right third, five grey empty boxes leading in from the left, an amber "?"). The heading rewrites to "Why do some groups end up with worse health?" (60 px). On "why do some groups need so much more help" the empty boxes pulse once. On "Two babies are born" new plate `hms-hospital-bracelets-v1.png` enters at the centre (about 520 px tall) and the boxes and gates shrink to a strip along the top. On "around four to five years longer" two coded bars grow from the two bracelets to different lengths (to scale), labelled "lowest socioeconomic areas" (warm) and "highest socioeconomic areas" (cool), with a small source card under them (30 px): "Life expectancy at birth, born 2024: males 78.4 v 83.8 years; females 83.0 v 87.0 years. AIHW, Deaths in Australia (2026)." On "What would you want to know" a five-line card writes at the right with empty lines. On "ever get to choose" each line gains an empty tick box labelled "chosen?" (30 px), amber hand tag "count the ones nobody chooses" (42 px). Hold one second.
+Visual: opens on v04's handoff frame (the six amber gates at the right third, five grey empty boxes leading in from the left, an amber "?"). The heading rewrites to "Why do some groups end up with worse health?" (60 px). On "why do some groups need so much more help" the empty boxes pulse once. On "Two babies are born" new plate `hms-hospital-bracelets-v1.png` enters at the centre (about 520 px tall) and the boxes and gates shrink to a strip along the top. On "around four to five years longer" two coded bars grow from the two bracelets to different lengths (to scale), unlabelled for now (warm and cool), with a small source card under them (30 px): "Life expectancy at birth, born 2024: males 78.4 v 83.8 years; females 83.0 v 87.0 years. AIHW, Deaths in Australia (2026)." On "What would you want to know" a five-line card writes at the right with empty lines. On "ever get to choose" each line gains an empty tick box labelled "chosen?" (30 px), amber hand tag "count the ones nobody chooses" (42 px), and only then do the bars take their labels, "lowest socioeconomic areas" (warm) and "highest socioeconomic areas" (cool), so the viewer predicts before seeing the answer. Hold one second.
 
 ### 2. five groups, from society down to the body
 > The things that shape health are called **determinants**, and the syllabus sorts them into five groups. They act in order, from society down to the body. Broad features of society come first, like culture, education systems, jobs and the media. Then environmental factors, like housing, transport and safe places to walk. Then socioeconomic characteristics, like income, education and occupation. Then health behaviours, like diet, exercise and smoking. And last, biomedical factors, like blood pressure and weight. A clinic treats the bottom of the stack. But the top is what moves a whole population.
@@ -88,14 +88,14 @@ Visual: board change to the campaign model (solid from its first frame): two cod
 Visual: board change to the memory card (solid from its first frame): the determinants chain small at the left with its two arrows beside a dark-ink framed card (52 px): "Upstream shapes. Downstream gets treated." (written with "Upstream shapes health") and "Needs resources to act on? Helps the resourced first." (written with "a campaign that needs resources"). This card returns beside the key notes. Hold half a second.
 
 ### 10a. attempt one (the campaign)
-> Two exam questions. First. A national television campaign tells Australians to eat more vegetables and walk thirty minutes a day. Explain how this campaign could improve the national average, while widening the gap between groups. Pause here to answer.
+> Two exam questions. First. A national campaign gives every young person a free fitness app with home workout plans. Explain how this campaign could improve the national average, while widening the gap between groups. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A national television campaign tells Australians to eat more vegetables and walk 30 minutes a day." Demand: "Explain how this campaign could improve the national average while widening the gap between groups. (3 marks)" Picture: the coded campaign poster frame and two empty bars. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A national campaign gives every young person a free fitness app with home workout plans." Demand: "Explain how this campaign could improve the national average while widening the gap between groups. (3 marks)" Picture: a coded phone outline with a blank app screen "free workout app" (no brand) and two empty bars. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> Acting on the message needs money, time and safe places to walk, and those are spread unevenly by the determinants. So better-off groups take it up more and improve faster. The average rises, but the worse-off group gains less, so the gap widens. The classic mistake is assuming that if the average improved, everyone did.
+> Using it needs a phone with data, space at home and spare time, and those are spread unevenly by the determinants. So better-off groups take it up more and improve faster. The average rises, but the worse-off group gains less, so the gap widens. The classic mistake is assuming that if the average improved, everyone did.
 
-Visual: `FeedbackScene`: the card shrinks to the top; givens strip "information only", "national average", "gap between groups" (30 px). On "spread unevenly by the determinants" the line "acting needs resources, spread unevenly" writes in a green frame (44 px) and the picture's bars gain their resource chips; on "improve faster" the cool bar rises more; on "the gap widens" the second green frame writes "average ↑, gap ↑" and the gap bracket widens; the givens "national average" and "gap between groups" take amber underlines. On "classic mistake" a chip "average up, so everyone improved" writes and is crossed in red, red hand tag "ask who improved" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; givens strip "free app, used at home", "national average", "gap between groups" (30 px). On "spread unevenly by the determinants" the line "using it needs a phone, space, time: spread unevenly" writes in a green frame (44 px) and the picture's bars gain their resource chips; on "improve faster" the cool bar rises more; on "the gap widens" the second green frame writes "average ↑, gap ↑" and the gap bracket widens; the givens "national average" and "gap between groups" take amber underlines. On "classic mistake" a chip "average up, so everyone improved" writes and is crossed in red, red hand tag "ask who improved" (34 px). Settle one second.
 
 ### 10c. attempt two (the site's explain question)
 > Second. Explain how determinants of health interact to affect the health of a population group. Pause here to answer.
@@ -103,9 +103,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; givens strip "information 
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain how determinants of health interact to affect the health of a population group. (5 marks)" Picture: the determinants stack outline with empty boxes and no arrows. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10d. feedback, item two
-> Pick one group and stay with it, say a rural community. Build a chain with a mechanism on each link, from services in the cities, to distance, to cost, to delayed help, to later diagnosis. Then add clustering, because disadvantages arrive together and multiply. Add feedback, because illness cuts income. And finish with the social gradient. The classic mistake is five paragraphs, one per determinant, that never interact.
+> Stay with one group, like a rural community. Build a chain with a mechanism on each link, from services in the cities, to distance, to cost, to delayed help, to later diagnosis. Then add clustering, because disadvantages arrive together and multiply. Add feedback, because illness cuts income. And finish with the social gradient. The classic mistake is five paragraphs, one per determinant, that never interact.
 
-Visual: `FeedbackScene`: the picture's stack fills as the answer builds. On "Pick one group" step 1 writes "one group: rural community" in a green frame; on "Build a chain" the ink path draws down the stack with its five short labels from scene 3, step 2 "chain, with mechanisms"; on "clustering" step 3 "clustering: multiply"; on "feedback" the warm arrow runs up, step 4 "feedback: illness → income"; on "the social gradient" step 5 "gradient across the population" (38 px each). On "classic mistake" a sketch of five separate paragraphs writes and is crossed in red, red hand tag "they must interact" (34 px). Settle one second.
+Visual: `FeedbackScene`: the picture's stack fills as the answer builds. On "Stay with one group" step 1 writes "one group: rural community" in a green frame; on "Build a chain" the ink path draws down the stack with its five short labels from scene 3, step 2 "chain, with mechanisms"; on "clustering" step 3 "clustering: multiply"; on "feedback" the warm arrow runs up, step 4 "feedback: illness → income"; on "the social gradient" step 5 "gradient across the population" (38 px each). On "classic mistake" a sketch of five separate paragraphs writes and is crossed in red, red hand tag "they must interact" (34 px). Settle one second.
 
 ### 11. decision rule and handoff
 > So when a group has worse health, start upstream, follow the chain down, and look for clustering and feedback. And when you judge a campaign, ask who improved, not just whether the average moved. Next, we'll point this same chain at one age group, young people, and ask what's really changed since their parents' generation.
@@ -126,14 +126,14 @@ Memory card (the scene 9 card) beside the notes. Note 1 in the five box colours;
 
 ## Practice question and feedback
 
-Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is the site's Activity 2 as an exam item; item 2 the site's WE b1 stem verbatim.
+Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 applies the site's Activity 2 idea to a new case (Revision 2: the vegetables campaign was scene 8's worked example); item 2 the site's WE b1 stem verbatim.
 
-1. (10a, 3 marks.) A national information campaign: average up, gap wider.
-   Model: acting on information requires resources (money, time, transport, safe places, security) that the determinants distribute unevenly (1 mark); so advantaged groups take it up more and improve faster (1 mark); the mean rises while the disadvantaged group gains less, so the gap widens even though the campaign is judged a success (1 mark). Classic mistake crossed: "average up, so everyone improved". Other wrong chains: "poorer people don't care about health" (individual blame, not sociological); "the campaign didn't work" (it did, on average).
+1. (10a, 3 marks.) A free fitness app for every young person: average up, gap wider.
+   Model: using the app requires resources (a phone with data, private space at home, spare time, often a safe and quiet place) that the determinants distribute unevenly (1 mark); so advantaged groups take it up more and improve faster (1 mark); the mean rises while the disadvantaged group gains less, so the gap widens even though the campaign is judged a success (1 mark). Classic mistake crossed: "average up, so everyone improved". Other wrong chains: "poorer people don't care about health" (individual blame, not sociological); "the campaign didn't work" (it did, on average). Sensitive-topic check: the app is fitness, not diet or weight loss.
 2. (10c, 5 marks.) Explain how determinants interact for a population group.
    Model (the site's, shortened): one group named (rural community) and a chain of at least four links with mechanisms, from a broad feature of society to a biomedical outcome (2 marks); clustering, multiplying effects (1 mark); feedback, illness reducing income (1 mark); the social gradient as the population-level result (1 mark). Classic mistake crossed: five unconnected paragraphs.
 
-Feedback spoken lengths about 25 s (10b) and 32 s (10d) by script; time the exact audio.
+Feedback spoken lengths about 25 s (10b) and 30 s (10d, Revision 2 trim) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -153,7 +153,7 @@ Self-check (23 Nov), arithmetic by Python. The Codex science check must confirm 
 
 ## Narration length estimate
 
-Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5875 characters**, 15 scene files. At 13.3 characters per second the speech is about 442 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 542 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5849 characters**, 15 scene files. At 13.3 characters per second the speech is about 440 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 540 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -166,10 +166,10 @@ Revision 1 count (23 Nov; by script with the build parser rules: only lines star
 | 7. where inequities exist | 582 |
 | 8. why behaviour-only campaigns widen gaps | 553 |
 | 9. memory | 179 |
-| 10a. attempt one (the campaign) | 252 |
-| 10b. feedback, item one | 322 |
+| 10a. attempt one (the campaign) | 238 |
+| 10b. feedback, item one | 321 |
 | 10c. attempt two (the site's explain question) | 117 |
-| 10d. feedback, item two | 423 |
+| 10d. feedback, item two | 412 |
 | 11. decision rule and handoff | 324 |
 | 12. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -248,3 +248,14 @@ Holds and transitions as v03. 2 to 3 to 4 continue on the chain until the gradie
 - **Cultural content.** Scene 7 names Aboriginal and Torres Strait Islander peoples as a group with the site's general causes; nothing else.
 - **Pronunciation.** "determinants" as "de-TER-min-ants"; "socioeconomic" as "so-see-oh-ee-ko-NOM-ik"; "sociological" as "so-see-oh-LOJ-ik-al".
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m1-v05-learning-review.md` and the module summary `../checks/hms-y11-m1-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 10a repeated scene 8's vegetables campaign.** Accepted, but with a different unseen case. The review's online skin-check case overlaps v04's free skin cancer clinic, so 10a now reads "A national campaign gives every young person a free fitness app with home workout plans. Explain how this campaign could improve the national average, while widening the gap between groups." 10b: "Using it needs a phone with data, space at home and spare time, and those are spread unevenly by the determinants." The rest of the feedback and the crossed mistake are unchanged. The picture is a coded blank phone with no brand. The model is updated, and the case is fitness, not diet (sensitive-topic rule).
+2. **Should fix, the hook labels gave away the prediction.** Accepted. The two bars grow unlabelled, and their labels ("lowest" and "highest socioeconomic areas") write only after "ever get to choose".
+3. **Note, 10d about 32 s.** Accepted: "Pick one group and stay with it, say a rural community." became "Stay with one group, like a rural community." About 30 s.
+4. **Note, scene 4 density.** Kept, with the grey tag "they compound" beside the readout, as advised.
+
+Narration changed in scenes 10a, 10b and 10d. Recount: 5,849 characters, about 540 s (Revision 1: 5,875, about 542 s). `cues.py`: 0 findings.
