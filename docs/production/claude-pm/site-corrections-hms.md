@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026).
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) await root.
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
@@ -151,3 +151,23 @@ Source hash: `7d8e5a644a87157db243aa896c3f9deefbf12a67222ed4ab971cc263d83bfe84`.
 **Correction:** add one paragraph on partnerships with culturally and linguistically diverse communities, for example migrant and refugee communities working with bilingual community health workers and multicultural health services co-designing information and services, with the same three reasons (relevance, trust and reach, durability).
 
 **Reason:** "a range of cultural groups" requires more than one group; a student using only the page cannot answer a question about another cultural group. Video hms-y11-m1-v16 adds a general example (scene 8). Severity: moderate (coverage of the sub-point).
+
+## 15. subjects/health-movement-science/year11/module2/lesson01.sa.html
+
+Source hash: `a146fa9abd93cb20bff942bede5966634919f25684bf8341c59f773878991902`. Card 06 ("Three classes of joint, and the trade-off that runs through all of them"), the cartilaginous paragraph.
+
+**Exact old text:** "Each individual joint moves only a little; the twenty-four of them in the vertebral column together produce a spine that bends substantially while still protecting the spinal cord."
+
+**Correction:** "Each individual joint moves only a little; the twenty-three intervertebral discs together produce a spine that bends substantially while still protecting the spinal cord."
+
+**Reason:** there are 24 presacral vertebrae but 23 intervertebral discs, because there is no disc between the first two vertebrae (the atlas and axis, a synovial pivot joint). The paragraph counts discs as its example of a cartilaginous joint. Video hms-y11-m2-v01 says "twenty-three of them in a row". Severity: minor (count).
+
+## 16. subjects/health-movement-science/year11/module2/lesson01.sa.html
+
+Same source hash. Card 01 warm-up ("One of them will do something the other cannot") and card 07, the paragraph after the six-row table.
+
+**Exact old text:** "Your knee is a hinge, so essentially it cannot."
+
+**Correction:** "Your knee is a hinge, so it can rotate only a little, and only when it is bent; straight, it cannot rotate at all."
+
+**Reason:** the knee is a modified hinge: with the knee flexed, the tibia can rotate a little on the femur (this is also why twisting on a bent knee loads the ligaments and menisci, the page's own Activity 2 mechanism). A student who tries the warm-up will feel a small rotation and doubt the lesson. The contrast with the hip still holds. Video hms-y11-m2-v01 says "You'll get a little at most" and "your knee barely does because it's a hinge". Severity: minor (overstated).

@@ -13,8 +13,8 @@ The HSCScience site has the whole HMS course. The read-only clone `C:/Users/kygs
 | Course design brief (with root rulings of 23 Nov) | `hms-design-brief.md` | 1 |
 | Video route | `../hms-video-route.md` and `../hms-video-route.json` | 84 videos (Y11: 18 + 22; Y12: 22 + 22) |
 | Pre-designs | `pre-design/hms/<id>.md` and `pre-design/hms/hms-index.md` | 84 packs |
-| Full lesson designs (Revision 1) | `lessons/hms-y11-m1-v01.md` to `lessons/hms-y11-m1-v18.md` | 18 (Year 11 first focus area complete) |
-| Site corrections | `site-corrections-hms.md` | 14 items; 1 to 14 accepted by root |
+| Full lesson designs (Revision 1) | `lessons/hms-y11-m1-v01.md` to `lessons/hms-y11-m1-v18.md`; `lessons/hms-y11-m2-v01.md` | 19 (Year 11 first focus area complete; second focus area started 24 Nov) |
+| Site corrections | `site-corrections-hms.md` | 16 items; 1 to 14 accepted by root, 15 and 16 (m2-v01) pending |
 | Route and coherence scripts | `scripts/hms/` (`build_route.py`, `route_data.py`, `extract.py`, `count.py`, `dump.py`) | rebuild with `python -X utf8 scripts/hms/build_route.py` |
 
 | Design | Topic | Narration | Length | New plates | Notes |
@@ -37,6 +37,7 @@ The HSCScience site has the whole HMS course. The read-only clone `C:/Users/kygs
 | hms-y11-m1-v16 | health promotion II: the Ottawa Charter and partnerships | 6,123 | about 562 s | 1 | introduces the Ottawa grid with the empty-row test; adds a general culturally and linguistically diverse partnership example (site correction 14) |
 | hms-y11-m1-v17 | the SDGs and health | 5,950 | about 547 s | 1 | introduces the SDG ring (house tones, no UN marks); girls' education mechanism; honest evaluation of Australia's use |
 | hms-y11-m1-v18 | the SDGs in a local community | 5,722 | about 528 s | 2 | introduces the six-step localisation method; SDG-washing test; closes the focus area and hands off to hms-y11-m2-v01's knee (segment linkage) |
+| hms-y11-m2-v01 | the skeleton, joints and joint actions | 6,172 | about 568 s | 6 (1 Biology plate reused) | owns `SegmentLinkage`; introduces the mobility-stability scale and the joint-action pairs; first draft ran 7,806 characters and was cut to the cap (menisci, planes, inversion left to the site); site corrections 15, 16 |
 
 - The route's per-video status now reads "full design written" automatically when `lessons/<id>.md` exists. The site digest is regenerated into `%TEMP%/hms-site-digest.json` when missing (not kept in the repo).
 - **Dated official figure (v05, root ruling).** AIHW, *Deaths in Australia*, "Life expectancy across population groups" (web report, last updated June 2026), people born in 2024: lowest against highest socioeconomic areas, males 78.4 against 83.8 years (gap 5.4), females 83.0 against 87.0 (gap 4.0). Shown with source and year; spoken "around four to five years". **Release re-check** before voicing and before publication. Source: https://www.aihw.gov.au/reports/life-expectancy-deaths/deaths-in-australia/contents/life-expectancy/life-expectancy-across-population-groups
@@ -52,7 +53,7 @@ Q2 regional plates and limb-segment line diagrams only, no whole-body figure; Q3
 - Root approval of the eighteen designs; a Codex syllabus coverage check of the route.
 - Independent learning review and science check for v01 to v18 (briefs in each design), then Codex error checks.
 - Plates for v01 to v18 (below), then builds. `hms-shared` components specified so far: `ModelLadder`, `QuoteCard`, `DefinitionCard`, `CompareLedger`, `InteractionLoop`, `Continuum`, `TwoRoute`, `MoodTrace`, `Bathtub`, `PopulationGrid`, `FiveQuestionsCard`, `AccessGates`, `EquityColumns`, `PrincipleChain`, `DeterminantsChain`, `GradientSteps`, `CampaignModel`, `TaskFormTable`, `ResearchCycle`, `TargetDiagram`, `ThemeTally`, `BurdenBar`, `IssueTrends`, `FactorBalance`, `IssueFrame`, `StrategyLevels`, `SleepWindow`, `FiveTestsChecklist`, `SkillSocket`, `BarrierWall`, `CopingTimescale`, `AgencyBoundary`, `IntentionGap`, `ReflectionSteps`, `AskAudience`, `ParticipationLadder`, `SourceFan`, `ReachPath`, `SectorBoard`, `ImpactStairs`, `SectorChain`, `ApproachBands`, `PolicyTimeline`, `OttawaGrid`, `SdgRing`, `LocaliseSteps`, `CouncilMap` (and `SegmentLinkage`, first shown in v18's handoff, owned by hms-y11-m2-v01).
-- Full designs for hms-y11-m2-v01 onwards (66 videos). Next in route order: hms-y11-m2-v01 (the skeleton, joints and joint actions), which opens on v18's segment linkage: a knee at 180°, then bending to 90° in a squat.
+- Full designs for hms-y11-m2-v02 onwards (65 videos). Next in route order: hms-y11-m2-v02 (muscles, fibres, contractions and roles), which opens on v01's handoff: the linkage held at the bottom of the squat, amber dashed lines along the thigh, "something must be pulling", heading from v01's Next chip "If muscles only pull, how do we push?". Plan for v02: reuse `m8-skeletal-muscle-v1.png` (inspected 24 Nov: a painted muscle belly with tendons at both ends and a cut end showing fascicles, transparent ground; fits the fibre zoom) and v01's `hms-arm-bones-v1.png` with a new registered biceps and triceps overlay; `b5x-zoom-fibre-v1.png` is chromatin, not muscle, so do not use it.
 - Add the HMS accent to `SUBJECT_ACCENT` in `src/explainer/shared/tokens.ts` (accepted `#5d6b2a`), and add HMS to the production board and coverage ledger (root; not edited here).
 
 ## Root rulings (23 Nov 2026, second set)
@@ -68,6 +69,13 @@ v13's five plates approved; the 1965 event stays unnamed (consistent with the cu
 - **Rulings.** The seven new plates for v14 to v18 are approved. Site corrections 13 and 14 are accepted. v15 may show the dated AIHW smoking figure on screen (24% in 1991 to 8.3% in 2022–23, NDSHS 2022–2023), source and year on screen, **flagged for release re-check**.
 - **Cue fixes (no narration changed, counts unchanged).** v02 scene 4: the cues now read "seventeen-year-old sprinter" and "seventy-year-old" (the narration says "A seventeen-year-old sprinter", capital A, so the lower-case quoted cue did not match). v03 scene 3: a cue on "mortality" writes the gloss "mortality: deaths, counted or as a rate". v03 scene 5: cues on "Incidence" and "Prevalence" write each term beside the tap and the level; the glosses complete on "counts new cases" and "counts all the cases". v04 scene 3: a cue on "inequity" writes the term and the gloss "inequity: a difference that passes three tests". v04 scene 7: a cue on "right" lights the card's title word. Also found by the same check and fixed: v04 scene 2 cues on "Equality" and "Equity" (each heading underlines), and v08 scene 3 a cue on "trend". A cue checker (every quoted cue verbatim and in spoken order; every bold narration term has an exact cue; no em dash or U+2061) now passes on v01 to v18 and every module 2 design; it is now `scripts/hms/cues.py` (new, 23 Nov).
 
+## Module 2 design notes (24 Nov 2026)
+
+- **Anatomy plates inspected before choosing (24 Nov).** `m8-leg-bones-normal-v1.png`: femur, tibia and fibula in front view with knee cartilage, no foot, no patella, no skin; the bones fill only the centre third of the frame, so crop, never stretch. Used in m2-v01. `m8-skeletal-muscle-v1.png`: muscle belly, tendons, fascicle cross-section; for m2-v02. `b5x-zoom-fibre-v1.png`: a chromatin coil, not usable for muscle. `y11-forelimb-*`: animal forelimbs for homology, not usable.
+- **m2-v01 new plates (6), all regional bones, briefed with the no-people line:** `hms-knee-synovial-cutaway-v1.png` (anchor; reused later), `hms-shoulder-hip-sockets-v1.png`, `hms-arm-bones-v1.png` (cut above the wrist; base for v02's muscle overlay and v03's forearm lever), `hms-vertebral-segment-v1.png`, `hms-cranium-sutures-v1.png` (superior view, so no face), `hms-thoracic-cage-v1.png`.
+- **New `hms-shared` components from m2-v01:** `SegmentLinkage` (owned; a one-parameter squat model so every angle comes from one run), `TradeoffScale`, `ActionPairs`, `BoneRegionBoard`, `JointShapes`.
+- **Length pressure.** The syllabus's first body dotpoint is a vocabulary dotpoint; m2-v01's first draft ran 7,806 characters. It was cut to 6,172 by leaving the menisci, the planes, inversion and eversion, and the bone-shape classes to the site page (recorded in the design). Expect the same pressure in v02 (muscles, fibres, three contractions, three roles).
+
 ## Open questions
 
 1. **Production order (owner).** Year 11 or Year 12 first; unchanged.
@@ -78,6 +86,8 @@ v13's five plates approved; the 1965 event stays unnamed (consistent with the cu
 5. **v13: resolved by root (23 Nov, third set).** The 1965 event stays unnamed; v13's five plates approved; site correction 12 accepted.
 
 6. **v15 and v16: resolved by root (23 Nov, fourth set): corrections 13 and 14 accepted, smoking figure approved for screen, plates approved.** Was: accept site corrections 13 and 14 (v16: the page covers only Aboriginal and Torres Strait Islander partnerships for "a range of cultural groups"; the video adds a general culturally and linguistically diverse example)? Correction 13 (the site page omits the syllabus's named examples: salutogenic, sociocultural, ecological and Aboriginal and Torres Strait Islander approaches, and UNESCO)? Approve the dated AIHW smoking figure on screen (24% in 1991 to 8.3% in 2022–23, NDSHS 2022–2023, confirmed 23 Nov; release re-check) and two plates?
+
+7. **m2-v01 (root).** Approve six new regional bone plates (no hands, feet, skin or faces; the arm is cut above the wrist and the cranium is seen from above) and site corrections 15 (23 intervertebral discs, not 24) and 16 (the knee rotates a little when bent)?
 
 ## Plate requests (designed videos only)
 
@@ -130,8 +140,14 @@ All `hms-` prefix, house watercolour style, transparent PNG with true alpha, no 
 | `hms-water-tap-v1.png` | v17 | outdoor tap running into a basin |
 | `hms-school-wall-goals-v1.png` | v18 | seventeen plain painted squares, no SDG colours or icons |
 | `hms-dark-sportsground-v1.png` | v18 | unlit country sportsground at winter dusk |
+| `hms-knee-synovial-cutaway-v1.png` | m2-v01 (anchor); later v02 and injury videos | 1600 x 2000; side cutaway, no skin |
+| `hms-shoulder-hip-sockets-v1.png` | m2-v01 | 2400 x 1300; two panels at one scale |
+| `hms-arm-bones-v1.png` | m2-v01; base for v02 overlay, v03 lever | 1400 x 2200; cut above the wrist, no hand |
+| `hms-vertebral-segment-v1.png` | m2-v01 | three lumbar vertebrae, two discs |
+| `hms-cranium-sutures-v1.png` | m2-v01 | superior view, no face |
+| `hms-thoracic-cage-v1.png` | m2-v01 | ribs, sternum, bones only |
 
-Forty-six plate files (forty-five plates and one overlay). Existing reuse: `y11-blood-tube-unspun-v1.png` (v01), `y11-banknote-v1.png` (v03). Later videos reuse many Biology anatomy plates (listed per video in the route `visualPlan`).
+Fifty-two plate files (fifty-one plates and one overlay; six added for m2-v01). Existing reuse: `y11-blood-tube-unspun-v1.png` (v01), `y11-banknote-v1.png` (v03). Later videos reuse many Biology anatomy plates (listed per video in the route `visualPlan`).
 
 ## Course and module coherence
 
