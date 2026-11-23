@@ -233,6 +233,114 @@ Source as above (HEAD `5d74a627`). Every site value used in the n packs was reca
 - Correction: add a short card after lesson06: (a) circumstances where the shortest path is not the best (tolls, travel time against distance, closures and floods, hills, safety, traffic), with a weight swap that changes the answer; (b) a triangle such as AB 3, BC 3, AC 5, whose only minimum spanning tree (AB, BC) does not contain the shortest path from A to C (the edge AC), and why (the tree minimises the total for linking everything, not any one trip).
 - Reason: a whole point with no page. Video n07 teaches it from the syllabus (ruling 3).
 
-## 5. Data analysis
+## 5. Data analysis (packs and designs d01 onward; written 24 November 2026)
 
-Not yet written in this file: the d packs follow (see `maths-standard-y11-design-status-2026-11-23.md`). The crosswalk's remaining partial and missing points (audit S9): survey design, privacy, ethics and faults (`ci22ad0284`, `cie24b93fc`, `ci63195120`, `ci4c7cc505`); uniform distributions (`cie2345a02`); spreadsheet graphs and statistics (`cia127389f`, `ci6446263f`, no lesson); infographics and misleading graphs (`ci2c2bc777`, `ci9c22fcc3`, `ciebdc8d60`); clusters and gaps (`ci72ffda24`). The audit's N7 items (a Year 11 speed page; formulas-and-equations lesson02 as a revision page) belong to the earlier strands and are left for root.
+Source as above (HEAD `5d74a627`). Lessons read: `year11/data-analysis/lesson02`, `07`, `09`, `10`, `11`, `12`, `13` (`lesson08` is a 2017 module review and is not used). Every site value used in the d packs was recalculated (scratchpad `s11d/verify.py`, `python -I`). Lessons 02, 09, 10 and 12 have no arithmetic error; errors were found in lesson07 (MSY-45), lesson11 (MSY-44) and lesson13 (MSY-46). MSY-33 to MSY-47 cover the whole strand (d01 to d19).
+
+### MSY-33. No issue-to-question step and no questionnaire design principles
+
+- Lessons: `lesson02.sa.html` (census, sample, bias); `lesson09.sa.html` (card 08: "Use neutral, clearly worded questions").
+- Points: `ci22ad0284` ("Identify an issue and pose a question to a targeted population to gather statistical information"); `cie24b93fc` ("Develop a survey by applying questionnaire design principles of clear language, unambiguous questions and consideration of number of choices"); both partial.
+- Correction: add a card on the investigation steps (issue, question, collect, organise and display, analyse, conclude); a statistical question as one whose answers vary across a named target population; and the three principles with a fault and a fix each: clear language (no jargon or vague words like "often"), unambiguous questions (one idea, a time frame, answer boxes with no overlaps or gaps, such as "7 to under 8"), number of choices (enough to fit every answer exactly once, few enough to read; an odd number for a rating scale).
+- Reason: both points are syllabus steps the site skips. Video d01 teaches them.
+
+### MSY-34. Privacy, ethics and responsiveness to diverse groups and cultures are not taught
+
+- Lesson: `lesson02.sa.html` (bias types only); SA 2 uses a drug-use survey outside a nightclub.
+- Point: `ci63195120` ("Examine issues of privacy, bias, ethics and responsiveness to diverse groups and cultures"), partial.
+- Correction: add a card on privacy (collect only what is needed; anonymous or confidential; details can combine to identify one person; report groups), ethics (informed consent; free to skip or stop; school and parent permission for under-18s; no harm; report every result) and responsiveness to diverse groups and cultures (options that don't assume one kind of household, "prefer not to say", plain English, translations, paper and accessible formats, trialling the survey with people from different groups), kept general. Replace SA 2's context with a non-sensitive one.
+- Reason: three of the four named issues have no page; the nightclub example is sensitive for a Year 11 page. Video d02 teaches them.
+
+### MSY-35. A call-in vote labelled "selection bias" (minor)
+
+- Lesson: `lesson02.sa.html`, card 06 true/false: "A TV station asking viewers to call in and vote is an example of selection bias because only motivated viewers call."
+- Correction: "... is a self-selected sample: only motivated viewers call, so strong opinions are over-represented (self-selection bias)."
+- Reason: the page's own card 06 and `lesson09` (trap 02, MC 4) call this self-selection; the true/false item uses a different term for the same case, so either answer can be argued. Video d03 uses "self-selected sample" (Year 12 p08 recalls it).
+
+### MSY-36. Experiments, observational studies and misrepresentation are not taught
+
+- Lessons: `lesson02.sa.html`, `lesson09.sa.html` (sampling bias, non-response, confirmation bias).
+- Point: `ci4c7cc505` ("Describe the potential faults in the design and practicalities of a data collection process by considering survey design, experiments and observational studies, and misunderstandings and misrepresentations"), partial.
+- Correction: add a card contrasting an observational study ("just watching what happens") with a controlled experiment ("change one thing on purpose and keep everything else the same"), why only a fair experiment with random groups can show cause, faults in each (another factor; self-chosen groups; people knowing they are watched; too short or too small), practical faults (non-response, rounding, typing errors, an unusual week), and misrepresentation (a cause claimed from observation, a sample generalised too far, a percentage of a tiny sample).
+- Reason: the point names experiments and observational studies; Year 12 b03 recalls them. Video d04 teaches them in b03's words.
+
+### MSY-37. "Discrete = whole numbers", Year 12 labels, and "depending on responses"
+
+- Lesson: `lesson09.sa.html`: card 02 "Discrete = countable whole numbers (number of siblings)"; the page title "Types of Data and Sampling | HSC Maths Standard Year 12" and the back link "Module 7 · Lesson 12" on a Year 11 page.
+- Points: `ci038853db`; `ci87535c02` ("Identify collections of data that can be described as numerical or categorical depending on responses").
+- Correction: "Discrete: counted; separate values with gaps between them, often whole numbers (shoe sizes go up in halves)"; relabel the page Year 11 and fix the back link; add an example of one question collected two ways (hours typed as a number: continuous numerical; hours ticked in ranges: ordinal categorical).
+- Reason: the page's own table lists shoe size as discrete, which is not always whole; the labels send Year 11 students to the wrong course; the fourth point is taught only through postcodes. Video d05 teaches all three.
+
+### MSY-38. No frequency polygon, no cumulative graph, no digital tools; frequency density beyond the syllabus
+
+- Lesson: `lesson12.sa.html`, cards 05 and 06 (a cumulative column; histograms with "frequency density for unequal-width classes"; "Bars touch each other, no gaps, because the data is continuous").
+- Point: `cia7a007a6` ("... frequency distribution table or a cumulative frequency distribution table and graph the associated histogram with polygon, both with and without using digital tools").
+- Correction: add the frequency polygon (class centres, closed on the axis at the centres of the empty classes either side); the cumulative frequency histogram and polygon (points at the upper class boundaries, starting at zero at the first lower boundary; reading "less than", "at least" and "between"); and both drawn with a spreadsheet (running-total formula, column chart with no gap, line chart) or a statistics app. Use equal-width classes and move frequency density to an extension note. Extend "bars touch because the data is continuous" to "because the classes meet on a number line" (grouped discrete data too).
+- Reason: the polygon and the cumulative graph are named in the point and the page draws neither; frequency density is not in the 2024 Standard syllabus. Videos d06a and d06b teach them.
+
+### MSY-39. No spreadsheet organising or graphing; "bar chart" against "column graph"
+
+- Lessons: none for `cia127389f` ("Use a spreadsheet to organise and represent data using appropriate graphs"; crosswalk: missing); `lesson12.sa.html` says "bar chart" for categorical data.
+- Correction: add a spreadsheet card: raw answers in a column, COUNTIF to count each category (for example `=COUNTIF(B2:B21,"bedroom")`), a percentage column, a column chart with a title and axis labels, and a histogram (gap set to zero) for numerical data. Use the syllabus term "column graph".
+- Reason: a whole point with no page; Year 12 b06 recalls "Year 11: spreadsheet charts". Video d07 teaches it.
+
+### MSY-40. Dot plots, line graphs, sector graphs and divided bar charts are named but not taught
+
+- Lesson: `lesson12.sa.html` teaches stem-and-leaf and back-to-back plots (card 07) only.
+- Point: `cib2984676` ("Interpret and analyse dot plots, line graphs, sector graphs, stem-and-leaf plots, back-to-back stem-and-leaf plots and divided bar charts related to real-world applications").
+- Correction: add short reading cards: dot plot (one dot per value; count dots); line graph (change over time; the slope as the rate; only the points are measured); sector graph (share = angle ÷ 360°; amount = share × total); divided bar chart (share = part length ÷ whole length); keep the back-to-back key rule (left leaves read outwards).
+- Reason: four of the six named displays have no page. Video d08 teaches all six with one reading routine.
+
+### MSY-41. "Uniform" is not taught, and shapes are named without reasons
+
+- Lessons: `lesson12.sa.html` (key term "Skew"; card 06 "Modality: Unimodal (one peak) or bimodal (two peaks)?"); `lesson10.sa.html` card 06 (unimodal, bimodal, multimodal, "no mode").
+- Point: `cie2345a02` ("Identify and describe datasets as uniform, unimodal, bimodal or multimodal"), partial; `ci0c94e728` (shape).
+- Correction: add "Uniform: a flat shape; every value or class is about equally common (for example, a fair die rolled many times)", and contrast it with "symmetric" (a mirror image, which need not be flat). Add one line asking for a reason in context with every shape (screen time is positively skewed because it can't go below zero but a few use their phones for hours), and one line that two peaks often mean two groups mixed together.
+- Reason: "uniform" is in the point and absent from the site; "describe" in both points expects more than a label. Video d09 teaches both.
+
+### MSY-42. No infographic analysis; limitations not taught; sensitive examples in SA 3
+
+- Lesson: `lesson12.sa.html`: no infographic; the top-3 list asks for three misleading techniques without teaching any; SA 3 (b) cites climate data, COVID graphs and political polling.
+- Points: `ci2c2bc777` ("Analyse a statistical infographic and justify the choice of graphical representations used for the relevant dataset"; missing); `ci9c22fcc3` ("Interpret and consider limitations of graphical representations to make conclusions and predictions"; partial); `ciebdc8d60` ("Explain why a given graphical representation can lead to a misinterpretation of data"; partial).
+- Correction: add a card that analyses one infographic tile by tile (what data, which graph, why it suits), then teaches the main misleading features with a picture each (a truncated axis; icons scaled in both directions, so the area grows four times; 3D sector graphs; uneven scales; a cherry-picked range; a percentage with no sample size) and the limits on conclusions and predictions (the sample, the time, observation against cause, averages hiding spread, nothing beyond the data). Replace SA 3 (b)'s examples with everyday ones (sales, rubbish collected, a survey poster).
+- Reason: one point has no page and two are only touched; the political and health-crisis examples are not suitable for a Year 11 maths page. Video d10 teaches all three points on the strand's own survey poster.
+
+### MSY-43. "The only measure" lines, and a Year 12 code on a Year 11 page (minor)
+
+- Lesson: `lesson10.sa.html`: card 06 "The mode is the only measure of centre that applies to categorical data"; card 05 warning "The mean is the only measure of centre affected by outliers"; the page header shows the course code "MS12-8" (lesson12 shows "MS12-2", lesson11 "MS12-2", lesson13 "MS12-9").
+- Points: `ciaf232c38`, `ci1ce7c84d`.
+- Correction: "The mode is the only measure of centre for nominal categories (for ordinal categories, a median category can also be found)"; "The mean is the measure most affected by outliers; the median is resistant" (a mode can also be unrepresentative); replace the Year 12 codes with the Year 11 outcome (MST-11-08).
+- Reason: the absolute lines are slightly too strong, and the codes point Year 11 students to Year 12 outcomes. Videos d11 and d12 use the softened wording.
+
+### MSY-44. The spread page leads with the sample formula; "average distance"; an IQR slip
+
+- Lesson: `lesson11.sa.html`: key ideas box "Standard deviation: s = √(Σ(x − x̄)² ÷ (n − 1)) (sample), average distance from the mean"; key terms "measures the average distance of each value from the mean"; SA 1 (c) answer: "Without 50: range = 27 (drops by 15); IQR = 15 (unchanged)".
+- Points: `ci5bdca88b`, `ci14ad4af7` ("Calculate the range and population standard deviation σ ...").
+- Correction: lead with σ (population), as the page's own "Beyond the syllabus" note says, and move s to that note; describe σ as "roughly the typical distance of the values from the mean" (it is not exactly the average distance: for 0, 1, 2, 6, 7, 8 the mean distance is 3 and σ is 3.11); fix SA 1 (c): without 50 the nine values 8, 12, 15, 18, 20, 22, 25, 30, 35 have Q1 = 13.5, Q3 = 27.5 and IQR = 14 (it changes by 1, against the range's 15), so the conclusion "the range changes far more" still holds.
+- Reason: the assessed measure should come first; "average distance" is a common misreading; the IQR claim is arithmetically wrong. Video d13 teaches σ by calculator with the softened wording; d15 and d19 use correct IQRs.
+
+### MSY-45. No spreadsheet statistics; a comparison example contradicts itself
+
+- Lessons: none for `ci6446263f` ("Use a spreadsheet to analyse data including calculating measures of centre and spread"; crosswalk: missing); `lesson07.sa.html` WE: step 3 "Both have equal range" (90 − 45 = 45 and 95 − 50 = 45), then the final statement "Class Y is more consistent with a slightly wider overall range".
+- Correction: add a spreadsheet card: two groups in two columns; =COUNT, =AVERAGE, =MEDIAN, =MAX()−MIN(), =STDEV.P() under each, filled across; a comparison sentence from the results. Change the WE's final line to "Class Y is more consistent (IQR 13 against 20); both have the same range (45)".
+- Reason: a whole point has no page; the WE's final line contradicts its own working. Video d14 teaches the spreadsheet comparison.
+
+### MSY-46. The box plot page: fences before outliers, no graph sources, no clusters or gaps, and two errors
+
+- Lesson: `lesson13.sa.html`.
+- Points: `ci4c0893da` (box plots "with and without using digital tools"); `ci2d7c794d` ("Determine quartiles from datasets displayed in histograms and dot plots ..."); `ci72ffda24` ("Identify clusters, gaps and outliers and explain their occurrence in the context of the data"); `ci02be1794` (the fences).
+- Findings and corrections:
+  1. WE 2 (data 10, 12, 15, 18, 20, 22, 25, 28, 30, 60), step 2 shows "Lower half: 10,12,15,18,20 → Q1 = 15 (the middle value)" and, beside it, "Lower half: 10,12,15,18,20. Q1 = (12+15)/2 = 13.5". Delete the second line (Q1 = 15 is correct).
+  2. SA 2: "Class A: min=50 ... Class B: min=40 ... Both have one outlier each (Class A: 45, Class B: 35)". With Q1 65, IQR 17, Class A's lower fence is 39.5, so 45 is not an outlier (and 45 is below the stated minimum of 50); Class B's lower fence is 60 − 37.5 = 22.5, so 35 is not an outlier either. Either change the summaries so the stated values fall outside the fences (for example Class A minimum 45 shown as a point with Q1 65 and IQR 10, fence 50) or drop the outlier sentence.
+  3. The page draws whiskers "to the most extreme values within the fences" from card 08 onward; state first that a basic box plot's whiskers run to the minimum and maximum (the five-number summary), then show the outlier version.
+  4. Add quartiles from a dot plot and from a histogram whose bars are single values (count to the positions; running totals), and one sentence that grouped histograms only allow estimates.
+  5. Add clusters ("a group of values bunched close together") and gaps ("a stretch of the number line with no values"), each explained in context, and one line on the fence rule's limit when data form two clusters (the IQR becomes wide).
+  6. Add box plots drawn by an app or spreadsheet, with a note to check its quartile rule and outlier setting.
+- Reason: two arithmetic and consistency errors; three point clauses with no teaching. Videos d15 to d18 teach them.
+
+### MSY-47. "Leaves the median unchanged" (minor)
+
+- Lesson: `lesson10.sa.html`, card 08: "An outlier pulls the mean toward it but leaves the median unchanged"; key ideas: "Median ... Not affected by outliers".
+- Point: `ci38858a7c` ("Explain the impact of outliers on the measures of centre and spread").
+- Correction: "An outlier pulls the mean toward it; the median barely moves (removing one value can shift it by a single step along the ordered list)". Add the spread side: the range and the standard deviation are pulled by an outlier; the IQR barely moves.
+- Reason: the absolute claim is not always true (removing 80 from lesson10's own SA 1 data moves the median from 23.5 to 22); the point asks about spread as well as centre. Video d19 teaches both with the sleep data.

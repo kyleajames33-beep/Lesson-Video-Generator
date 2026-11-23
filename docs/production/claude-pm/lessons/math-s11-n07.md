@@ -1,6 +1,6 @@
 # Maths S11 N07: When is the shortest path not the best path? Shortest means least of one weight; tolls, time, floods, hills and safety can make a longer path best; and a shortest path need not lie in any minimum spanning tree (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n06.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 1 (24 Nov 2026): first design (join edit 24 Nov 2026, after d01 was designed: the d01 frame is confirmed unchanged, every "provisional" mark on the n07 to d01 join is lifted, and the YouTube "Next" line quotes d01's title; no narration or picture changed), written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n06.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
 Narration 5,545 characters by script (see "Narration length estimate"), 13 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
@@ -22,7 +22,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Weights measure one thing.** The point's "not necessarily the best path" is shown three ways: cost (the toll), time against distance (a town route against a motorway, with f04a's time = distance ÷ speed), and things the weights don't record (a flood, a hill, safety, peak hour).
 - **Weight toggle (visual surprise).** Switching the same two routes from kilometres to minutes swaps the winner (X 12 km but 14.4 min; Y 15 km but 9 min).
 - **"Nor contained in any minimum spanning tree": a triangle first, then the camp.** Triangle AB 3, BC 3, AC 5: the unique MST is AB + BC; the shortest A→C path is AC, in no MST. Then the camp (n05): the lit tree takes A to C the long way (70 m) while the dark direct path is 60 m. The reason: an MST minimises the total for linking everyone, not any one trip.
-- **Strand close and the d01 handoff (provisional).** Grey chip "Networks, paths and trees: done"; the phone's survey screen opens Data analysis. Networks and Data analysis are parallel strands; the playlist runs d after n (61 onward). The d01 designer confirms or replaces the frame.
+- **Strand close and the d01 handoff (confirmed by d01).** Grey chip "Networks, paths and trees: done"; the phone's survey screen opens Data analysis. Networks and Data analysis are parallel strands; the playlist runs d after n (61 onward). d01 confirms the frame unchanged and uses its overlapping buttons and "last night" as its hook.
 - **Simulations (standard item 3).**
   1. **Edge removal and re-run** (scene 2, feedback 1): the toll edge greys; the shortest-path search (n06's label table, compact) re-runs and lights A–C–D with its total.
   2. **Weight toggle** (scene 3): two routes between two towns with tags that flip between "km" and "min"; the winning route's highlight jumps from X to Y.
@@ -38,7 +38,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Cause chain taught, in order:** (1) a shortest path minimises the total of one kind of weight, so it ignores anything the weights don't measure (2); (2) choosing a different weight (time, cost) can change which route is shortest (3); (3) real constraints (closures, hills, safety, traffic) are not in the weights, so the best path can be longer (4); (4) an MST chooses edges to keep the total for linking everyone as low as possible, so it can leave out a direct edge that one trip would use (5, 6).
 - **Entry knowledge (route):** math-s11-n06, n05, f04a, t01. Recalled in grey chips.
 - **Site notes.** MSY-32 (no site lesson).
-- **Handoff (to math-s11-d01, statistical investigations; strand close; provisional).** Scene 12: board clear; grey strand chip "Networks, paths and trees: done"; the phone `ma12-phone-v1.png` (about 640 px tall) at the centre-left with a coded survey screen: the question "How many hours did you sleep last night?" (40 px) and four answer buttons "under 7", "7 to 8", "8 to 9", "over 9"; chips "a clear question, a fair survey", "Next: statistical investigations" and "?". The d01 designer confirms or replaces this frame; if it changes, only scene 12 and this design's "Next" line change.
+- **Handoff (to math-s11-d01, statistical investigations; strand close; confirmed).** Scene 12: board clear; grey strand chip "Networks, paths and trees: done"; the phone `ma12-phone-v1.png` (about 640 px tall) at the centre-left with a coded survey screen: the question "How many hours did you sleep last night?" (40 px) and four answer buttons "under 7", "7 to 8", "8 to 9", "over 9"; chips "a clear question, a fair survey", "Next: statistical investigations" and "?". d01 opens on this frame exactly (confirmed 24 Nov 2026).
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) Toll network (example km): A–B 10 (toll), B–D 8, A–C 12, C–D 9, B–C 3. Shortest A→D = A–B–D 18; without A–B: A–C–D 21 (A–C–B–D 23). Difference 3.
@@ -50,7 +50,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 Main question: *The toll road is on the shortest path. When is the shortest path not the best path?*
 Entry knowledge (math-s11-n06, n05, f04a, t01): shortest paths; minimum spanning trees; time = distance ÷ speed; decimal hours.
 Stops after: circumstances, weights, the MST contrast. Closes the strand.
-Handoff: math-s11-d01 (provisional): "Next: statistical investigations".
+Handoff: math-s11-d01: "Next: statistical investigations".
 
 ## Script and shots
 
@@ -114,7 +114,7 @@ Visual: the card shrinks to the top. The builder (n05) runs: R–S, P–Q, Q–R
 ### 12. handoff: Networks, paths and trees, done
 > That's Networks, paths and trees done, from dots and lines to cheapest connections and quickest routes, and knowing when to look past them. Next, a different kind of question. Not how places connect, but what people think and do. How many hours of sleep do Year 11 students get? You can't ask everyone, so you ask some of them, carefully. A good statistical investigation starts with a clear question and a fair survey. That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (provisional; as under Decisions, "Handoff"): on "Networks, paths and trees done" a grey strand chip "Networks, paths and trees: done". On "dots and lines" a small network flashes and fades. On "what people think and do" the phone `ma12-phone-v1.png` (about 640 px tall) rises at the centre-left with a coded survey screen; on "hours of sleep" the question "How many hours did you sleep last night?" writes on the screen (40 px) with four answer buttons "under 7", "7 to 8", "8 to 9", "over 9". On "a clear question and a fair survey" chip "a clear question, a fair survey". On "next" chips "Next: statistical investigations" and "?". Hold about 2 s. This is d01's provisional opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "Networks, paths and trees done" a grey strand chip "Networks, paths and trees: done". On "dots and lines" a small network flashes and fades. On "what people think and do" the phone `ma12-phone-v1.png` (about 640 px tall) rises at the centre-left with a coded survey screen; on "hours of sleep" the question "How many hours did you sleep last night?" writes on the screen (40 px) with four answer buttons "under 7", "7 to 8", "8 to 9", "over 9". On "a clear question and a fair survey" chip "a clear question, a fair survey". On "next" chips "Next: statistical investigations" and "?". Hold about 2 s. This is d01's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -128,7 +128,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 Memory aid (framed card, right side, as in scene 7): *Shortest is about one number. Best is about everything that matters.* Key: *A minimum spanning tree links everyone for the least total; it may not hold the shortest trip between two places.* The notes scene is 1,350 frames (45 s).
 
-Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and d01's provisional opening frame.
+Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and d01's opening frame.
 
 ## Teaching checks
 
@@ -222,7 +222,7 @@ Uses: `PlateImg`, `HandTag`, `NetworkBoard`, `LabelTable` (n06, compact), `MSTBu
 Additions (kit-needs row n07):
 1. **`WeightToggle`**: edge tags that flip between two weight sets (km and min) with the shortest-path highlight recomputed and animated between winners. Check: X 12 km, 14.4 min; Y 15 km, 9 min; winner X then Y.
 2. **Tree-against-trip overlay**: an MST lit on a network while the walker travels between two vertices inside the tree and a non-tree edge flashes its shorter total. Check: triangle 6 against 5; camp 70 against 60; A2 8 against 6.
-3. **Survey screen** for `ma12-phone-v1.png` (a question and answer buttons). Reused by d01 (provisional).
+3. **Survey screen** for `ma12-phone-v1.png` (a question and answer buttons). Reused by d01.
 
 ## Codex asset brief
 
@@ -235,7 +235,7 @@ Error-only check (report errors; do not restyle or rewrite):
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
 3. Confirm the speeds (50 km/h town, 100 km/h motorway) are presented as examples.
 4. Confirm both attempts carry every demand and show no answer.
-5. Confirm scene 1 opens on n06's final frame exactly and scene 12 is marked provisional for d01.
+5. Confirm scene 1 opens on n06's final frame exactly and scene 12 matches d01's Boundary.
 6. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
 
 ## YouTube metadata (draft)
@@ -253,13 +253,13 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024, Year 11):
 "Describe a circumstance in which a shortest path is not necessarily the best path nor contained in any minimum spanning tree"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
-Builds on: Shortest Paths: The Quickest Route Through a Network. Next: statistical investigations (title set by the d01 design).
+Builds on: Shortest Paths: The Quickest Route Through a Network. Next: Statistical Investigations: Asking a Clear Survey Question.
 
 #Year11Maths #MathsStandard #Networks #HSCScience
 
 ## Open decisions
 
-- **1. The d01 join (provisional).** The survey phone with "How many hours did you sleep last night?" is this design's idea. The d01 designer confirms or replaces it; only scene 12 and the "Next" line change. The YouTube "Next" line quotes d01's title once it exists.
+- **1. The d01 join (closed 24 Nov 2026).** d01 confirms the survey phone frame unchanged (its overlapping buttons and "last night" are d01's hook); the YouTube "Next" line quotes d01's title.
 - **2. Related lesson link.** The point has no site lesson; the description links lesson06 (shortest paths) until the site adds a card (MSY-32).
 
 ## Review notes

@@ -14,7 +14,7 @@ Year 11, Networks, paths and trees, group "Shortest paths and spanning trees", o
 
 **Stop:** a shortest path minimises one weight only; circumstances where it is not best (a toll; time against distance; a flood or closure; a steep hill on a bike; safety; peak-hour traffic); the weight chosen decides the answer; a shortest path that is not in any minimum spanning tree (a triangle with a unique MST; the camp's A to C); why (the MST minimises the total for everyone, not one trip). Closes the strand. Not: new algorithms.
 
-**Next:** math-s11-d01 (Data analysis; provisional until d01 is designed): the phone `ma12-phone-v1.png` with a coded survey screen "How many hours did you sleep last night?" and four answer buttons; grey strand chip "Networks, paths and trees: done"; chips "a clear question, a fair survey", "Next: statistical investigations", "?".
+**Next:** math-s11-d01 (Data analysis; confirmed by d01, 24 Nov 2026): the phone `ma12-phone-v1.png` with a coded survey screen "How many hours did you sleep last night?" and four answer buttons; grey strand chip "Networks, paths and trees: done"; chips "a clear question, a fair survey", "Next: statistical investigations", "?".
 
 ## 2. Site order, sections and worked examples
 
@@ -59,5 +59,5 @@ A toll road; a town route against a motorway; a flooded road; a hilly bike route
 
 - MSY-32: the point has no site lesson.
 - "Describe a circumstance" answers in words with a reason; the attempts pair a calculation with a yes/no reason.
-- Close the strand: grey chip "Networks, paths and trees: done"; the d01 frame is provisional.
+- Close the strand: grey chip "Networks, paths and trees: done"; d01 confirms the frame (24 Nov 2026).
 - Pace: about 9 minutes.

@@ -1,0 +1,825 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "brief": "Maths Standard Year 11 missing strands (root request, 23 November 2026, after the coherence audit findings B1 and B2), continued after Networks, paths and trees",
+  "purpose": "Route inputs written by Claude (designer of record) for the Year 11 Data analysis strand, in the shape of route inputs 10 to 13: syllabus text copied from the crosswalk's plain text. Not teaching approval.",
+  "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course for Standard 1 and Standard 2)",
+  "identifierPolicy": "Exact CMS codenames from docs/production/programme/syllabus/maths-standard-2024-crosswalk.json. Year 11 is one course, so standard1ActionIds and standard2ActionIds are empty.",
+  "officialEvidence": {
+    "source": "NSW Curriculum Year 11 Data analysis page (focus area fa4de413b8), as recorded in the crosswalk (read 18 November 2026)",
+    "focusAreaUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8",
+    "outcomes": [
+      "MST-11-08"
+    ],
+    "year11DataAnalysisPoints": 38,
+    "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "clone": "C:/Users/kygs/teaching-app-fix (read only; HEAD 5d74a627, the crosswalk's commit; nothing run or changed)",
+    "lessons": "year11/data-analysis/lesson02 (collecting data: census, sample, bias, stratified), lesson07 (comparing data sets), lesson08 (module review, 2017; not used), lesson09 (types of data and sampling), lesson10 (measures of centre), lesson11 (measures of spread), lesson12 (displaying data), lesson13 (box plots and outliers). No lesson for spreadsheets, infographics, questionnaire design, privacy and ethics, experiments and observational studies.",
+    "note": "Every site value used was recalculated (scratchpad s11d/verify.py, python -I). Site issues are logged from MSY-33 in docs/production/claude-pm/site-corrections-maths-standard-y11-additions.md (section 5)."
+  },
+  "recommendations": [
+    "Run d01 to d19 in outline order, playlist numbers 61 to 79, after n07 (60). d06 is designed as d06a and d06b (both 66) by ruling 8's test (status file open question 16). Every design fits under 570 s (about 497 to 515 s).",
+    "One investigation runs through the strand (Year 11 sleep on school nights and where phones charge): d01 poses the question for the 200 Year 11 students at our school; d02 makes the survey fair; d03 chooses a stratified sample of 20 (14 nearby, 6 bus); d04 judges the headline; d05 classifies the record sheet; d06a and d06b group a class of 30's screen times; d07 graphs phone location; d08 to d10 read and judge displays; d11 to d19 analyse the 20 sleep values (sorted: 3, 5.5, 6, 6, 6.5, 6.5, 7, 7, 7, 7.5, 7.5, 7.5, 7.5, 8, 8, 8, 8.5, 8.5, 9, 9.5; phone in bedroom 12, elsewhere 8).",
+    "Joins: d01 opens on n07's final frame exactly (the survey phone; n07's provisional mark lifted 24 Nov 2026). Each later video opens on the previous video's final frame. d19 closes the strand and Year 11 ('Data analysis: done', 'Year 11: done') and hands to Year 12 Standard's first video, math-s12-a01, by showing a01's cold-open picture (the driving-school car and two quote cards).",
+    "Each 'Next' chip quotes the next video's on-screen heading: d01 'Statistical investigations'; d02 'Privacy, bias and ethics'; d03 'Sampling methods'; d04 'Faults in data collection'; d05 'Types of data'; d06a 'Grouping data'; d06b 'Cumulative frequency'; d07 'Choosing a graph'; d08 'Reading statistical graphs'; d09 'The shape of a distribution'; d10 'Infographics and misleading graphs'; d11 'Mean, median and mode'; d12 'Choosing a measure of centre'; d13 'Range and standard deviation'; d14 'Comparing datasets'; d15 'Quartiles and the IQR'; d16 'Box plots'; d17 'Parallel box plots'; d18 'Clusters, gaps and outliers'; d19 'The effect of an outlier'; d19's final chip 'Next: Year 12, simultaneous equations'.",
+    "Strand colour roles (fixed d01 to d19): data values, dots and raw answers blue; counts, frequencies, tallies, bars and percentages olive; the mean teal (a triangle); the median and quartiles violet; the mode an olive ring; spread (range, IQR, standard deviation brackets) and outlier fences amber; survey wording, categories and labels violet; answer green; mistake red (crossed slips only).",
+    "Recurring models introduced once: the investigation strip (d01; a mini strip under the header after); the dot field (d01; filter d02; sampler d03); the answer sorter (d01); the lean gauge (d02); the random allocator and fault map (d04); the record sheet and type tree (d05; graph chooser d07); the tally board and class-width slider (d06a); the staircase and reading guide (d06b); the column graph with ordinal lock and two-way table (d07); the stem-and-leaf plot, dot plot, time line graph and sector-to-bar unroll (d07, d08); the mirror fold, shape slider and peak counter (d09); the infographic poster, axis slider and icon scaler (d09, d10); the balance beam and order strip (d11); the drag-the-extreme dot plot and claim gallery (d12); deviation arms gathering into σ and the calculator's σx line (d13); the two-group spreadsheet summary and comparison board (d14); the halving fold and range-IQR slider (d15); the box build and quarter slide (d16); the scale snap and comparison lenses (d17); the cluster finder and fence builder (d18); the six-readout drag and sorting board (d19).",
+    "Memory aids introduced once: d01 'Plain words. One idea. A clear time. A box for every answer.'; d02 'Ask only what you need. Keep it safe. Ask it fairly. Make it fit everyone.'; d03 'Random gives everyone the same chance. Stratified keeps the groups in proportion.'; d04 'Check the question, the people, the method, the recording and the claim.'; d05 'Count it or measure it: numerical. Name it: categorical.'; d06a 'Group it, tally it, draw it: bars touch for numbers.'; d06b 'Cumulative: keep a running total, and plot it at the end of each class.'; d07 'Name the data type first, then choose the graph.'; d08 'Key, value, count, compare, say it.'; d09 'The tail tells the skew.'; d10 'Check the axis, the area, the sample and the claim.'; d11 'Mean shares, median middles, mode is most.'; d12 'Skewed or extreme values: median. Symmetric: mean. Categories: mode.'; d13 'σ: how far values usually sit from the mean.'; d14 'Compare centre, then spread, with numbers, in context.'; d15 'Halve, then halve again.'; d16 'Five numbers, one box, two whiskers.'; d17 'Same scale; then medians, boxes, whiskers.'; d18 'Fences sit one and a half boxes out.'; d19 'An outlier pulls the mean, the range and σ; the median and IQR hold steady.'",
+    "Everyday anchors (no people, hands or faces; no science contexts): sleep and phones (the investigation); a phone plan, a café app (d01); a gym, a council field (d02); a sports club, a concert (d03); a canteen, a phone company (d04); a playlist, a hotel, a gym (d05); screen time, app downloads, deliveries (d06a); battery life, a fun run (d06b); streaming, coffee sales, apples (d07); cricket, a phone battery, a weekly budget, travel to school, cafés (d08); apples, a food truck, a café, a die as a fairness check, a quiz (d09); a phone company, a council (d10); a café's coffee, soccer goals (d11); house prices, hoodies, a café's pay, phone cases (d12); buses, phone batteries, two classes (d13); phone plans, delivery, coffee machines, swimmers (d14); deliveries, earnings (d15); wickets, basketball, battery life (d16); bus routes, two classes (d17); travel to school, a festival coffee stall, a phone shop (d18); a soccer season (d19).",
+    "Prices and money values are examples, labelled on screen: d08's $200 weekly budget; d12's café pay and the site's house prices (lesson10's hook); d14's phone plans and delivery times; d15's part-time earnings; d18's phone prices. The sleep guideline (8 to 10 hours for 14 to 17 year olds) is a fact for Codex.",
+    "Facts Codex confirms: the Australian 24-Hour Movement Guidelines' sleep range for 14 to 17 year olds (d01); NSW Standard conventions for systematic and stratified samples (d03), the frequency polygon and cumulative frequency polygon (d06a, d06b), back-to-back stem-and-leaf keys (d08); 'column graph' as the syllabus term (d07); spreadsheet formulas as written (d06b, d07); σx and sx labels on permitted calculators, STDEV.P and STDEV.S in spreadsheets (d13); the halves quartile method matching permitted calculators (d15); whiskers to min and max, then the outlier version (d16, d18); a value exactly on a fence is not an outlier (d18).",
+    "No new plate: every plate used exists and was viewed on contact sheets (phone, phone dock, phone budget, wall calendar, alarm clock, exam desk, bedroom furniture, coffee cart, gym card, shuttle-run field, bus side, bus stop, calculator, tournament board, team caps, concert ticket, food truck, headphones, hotel facade, delivery bag, starting blocks, television, apple crate, apple, red die, cricket scoreboard, cricket ball, coin jar, club hoodie, holiday house, swim goggles, pay envelope, driving-school car).",
+    "Header strip (owner rule of 23 Nov): the focus area only, 'DATA ANALYSIS'."
+  ],
+  "year12DependsOn": [
+    {
+      "y12": "math-s12-b01",
+      "recalls": "d05, d08, d11",
+      "chipOrPhrase": "'Year 11: dot plot, mean, median'; numerical variables",
+      "setUpIn": "d05 (numerical variable); d07, d08 (dot plot); d11 (mean and median, named together on the dot plot)"
+    },
+    {
+      "y12": "math-s12-b02",
+      "recalls": "d18",
+      "chipOrPhrase": "'Year 11: outliers'; outlier as 'a point well away from the rest'",
+      "setUpIn": "d18 scenes 3 and 4: outlier as 'a value well away from the rest of the data', then the formal fences"
+    },
+    {
+      "y12": "math-s12-b03",
+      "recalls": "d04",
+      "chipOrPhrase": "'Year 11: experiments and observational studies'; controlled experiment 'change one thing on purpose and keep everything else the same'; observational study 'just watching what happens'",
+      "setUpIn": "d04 scenes 2, 3 and the memory card use both plain meanings word for word"
+    },
+    {
+      "y12": "math-s12-b04a",
+      "recalls": "d11",
+      "chipOrPhrase": "'Year 11: the mean = total ÷ how many'",
+      "setUpIn": "d11 scene 2: 'the mean = total ÷ how many' said and written before x̄; memory card key line"
+    },
+    {
+      "y12": "math-s12-b05",
+      "recalls": "d13",
+      "chipOrPhrase": "'Year 11: the calculator's statistics mode'",
+      "setUpIn": "d11 (one-variable statistics mode first met, for x̄); d13 scene 5 names 'the calculator's statistics mode' in those words and reads σx"
+    },
+    {
+      "y12": "math-s12-b06",
+      "recalls": "d07",
+      "chipOrPhrase": "'Year 11: spreadsheet charts'",
+      "setUpIn": "d06b (column chart with the gap at zero; line chart) and d07 scene 4 (COUNTIF and a column chart, titled and labelled)"
+    },
+    {
+      "y12": "math-s12-p05",
+      "recalls": "d06a",
+      "chipOrPhrase": "a frequency table, a tally",
+      "setUpIn": "d06a scenes 2 and 3 (tally in fives; frequency table)"
+    },
+    {
+      "y12": "math-s12-p07",
+      "recalls": "d07",
+      "chipOrPhrase": "categorical data in tables",
+      "setUpIn": "d07 scene 2 (frequency table with percentages; a two-way table)"
+    },
+    {
+      "y12": "math-s12-p08",
+      "recalls": "d03, d10",
+      "chipOrPhrase": "samples; random and self-selected samples; misleading displays",
+      "setUpIn": "d03 (random and self-selected samples named in those words); d10 ('misleading displays': truncated axes, scaled icons, percentages without n)"
+    },
+    {
+      "y12": "math-s12-z01",
+      "recalls": "d09, d11, d13",
+      "chipOrPhrase": "'Year 11: measures of centre'; 'Year 11: symmetric, skewed'; 'Year 11: positively skewed'; sigma used only as 'how spread out'",
+      "setUpIn": "d09 (symmetric, skewed, positively skewed, tail, z01's plain meanings); d11 ('measures of centre'); d12 ('the mean is pulled towards the tail'); d13 (σ as 'how far values usually sit from the mean')"
+    },
+    {
+      "y12": "math-s12-z02, math-s12-z03",
+      "recalls": "d13",
+      "chipOrPhrase": "'Year 11: σ on the calculator'; σx on the results screen",
+      "setUpIn": "d13 scene 5: σ read from the results screen's σx line (sx named once, to be avoided)"
+    }
+  ],
+  "part": 14,
+  "covers": "math-s11-d01 to math-s11-d19 (Year 11 Data analysis, complete: 19 outline videos as 20 designs, d06 as d06a and d06b)",
+  "subjects": {
+    "Mathematics Standard": {
+      "year": "Year 11",
+      "entries": [
+        {
+          "id": "math-s11-d01",
+          "playlistOrder": 61,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How does a statistical investigation start with a clear question and a fair survey?",
+          "syllabusActionIds": [
+            "ci22ad0284",
+            "cie24b93fc"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci22ad0284",
+              "group": "Statistical investigation process",
+              "text": "Identify an issue and pose a question to a targeted population to gather statistical information",
+              "siteCoverage": "partial",
+              "siteGap": "the issue-to-question step is not taught (MSY-33)"
+            },
+            {
+              "id": "cie24b93fc",
+              "group": "Statistical investigation process",
+              "text": "Develop a survey by applying questionnaire design principles of clear language, unambiguous questions and consideration of number of choices",
+              "siteCoverage": "partial",
+              "siteGap": "the three questionnaire principles are not taught (MSY-33)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson02.sa.html (census and sample only)",
+            "year11/data-analysis/lesson09.sa.html (card 08: 'Use neutral, clearly worded questions')"
+          ],
+          "startBoundary": "math-s11-n07 final frame: the phone (ma12-phone-v1.png) with the survey screen 'How many hours did you sleep last night?' and buttons 'under 7', '7 to 8', '8 to 9', 'over 9'; grey chip 'Networks, paths and trees: done'; chips 'a clear question, a fair survey', 'Next: statistical investigations', '?' (confirmed; its overlap and 'last night' are d01's hook)",
+          "stopBoundary": "The six investigation steps; issue; statistical question; target population (sample named only); clear language; unambiguous questions (one idea, a time frame, no overlaps); number of choices (no overlaps, no gaps, not too many; a number box; an odd rating scale). Not: privacy and bias (d02); sampling (d03).",
+          "nextHandoff": "math-s11-d02: the bedroom (ms12-bedroom-furniture-v1.png) and the phone with the fixed sleep question plus fields 'Name: ______' and 'Where does your phone charge overnight?'; chips 'Who sees the answers?', 'Next: privacy, bias and ethics', '?'",
+          "anchors": "sleep on school nights; a phone plan; a café loyalty app"
+        },
+        {
+          "id": "math-s11-d02",
+          "playlistOrder": 62,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "What privacy, bias and ethics questions come with collecting data about people?",
+          "syllabusActionIds": [
+            "ci63195120"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci63195120",
+              "group": "Statistical investigation process",
+              "text": "Examine issues of privacy, bias, ethics and responsiveness to diverse groups and cultures",
+              "siteCoverage": "partial",
+              "siteGap": "privacy, ethics and responsiveness to diverse groups and cultures are not taught (MSY-34)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson02.sa.html (card 06: response bias)",
+            "year11/data-analysis/lesson09.sa.html (card 08; drill 2: a neutral rewrite)"
+          ],
+          "startBoundary": "math-s11-d01 final frame (the bedroom; the phone with the fixed question, 'Name' and the phone question; chips 'Who sees the answers?', 'Next: privacy, bias and ethics', '?')",
+          "stopBoundary": "Privacy (only what you need; anonymous or confidential; details combine to identify; report groups); ethics (consent, skip or stop, permission, no harm, report all); bias from the asking (leading wording, missing options, answers that sound good); responsiveness to diverse groups and cultures (inclusive options, languages and formats, a trial), kept general; a five-point audit. Not: sampling (d03).",
+          "nextHandoff": "math-s11-d03: the 200-dot population (140 nearby, 60 bus) with the bus (ma12-bus-side-v1.png); chips 'Who do we ask?', 'Next: sampling methods', '?'",
+          "anchors": "the sleep and phone survey; a gym; a council sports field"
+        },
+        {
+          "id": "math-s11-d03",
+          "playlistOrder": 63,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "Which sampling method gives a sample that represents the population?",
+          "syllabusActionIds": [
+            "ci3d27ce1c",
+            "ciefb0c944"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci3d27ce1c",
+              "group": "Population and sample",
+              "text": "Compare and contrast systematic sampling, self-selected sampling, random sampling and stratified sampling",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ciefb0c944",
+              "group": "Population and sample",
+              "text": "Justify whether a sample obtained from a population is representative of the population by considering the sampling method",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson02.sa.html (card 05, WE, drill 5)",
+            "year11/data-analysis/lesson09.sa.html (card 06, MC 2, MC 4, trap 02)"
+          ],
+          "startBoundary": "math-s11-d02 final frame (the 200-dot field, 140 and 60; the bus; chips 'Who do we ask?', 'Next: sampling methods', '?')",
+          "stopBoundary": "Census and sample; representative; random (three runs: 4, 9, 6 bus); systematic (k = 10, start 7); stratified (14 and 6); self-selected (a poster; 14 of 20 under 7 h); convenience named once; comparison; judging by the method. Not: faults (d04).",
+          "nextHandoff": "math-s11-d04: the bedroom with the headline 'Phones in bedrooms steal 2 hours of sleep!'; the 20 tokens as 'phone in bedroom: 12' and 'elsewhere: 8'; chips 'What could go wrong?', 'Next: faults in data collection', '?'",
+          "anchors": "the early bus; a sports club (24 and 16 of 40); a concert"
+        },
+        {
+          "id": "math-s11-d04",
+          "playlistOrder": 64,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "What can go wrong when we collect data?",
+          "syllabusActionIds": [
+            "ci4c7cc505"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci4c7cc505",
+              "group": "Population and sample",
+              "text": "Describe the potential faults in the design and practicalities of a data collection process by considering survey design, experiments and observational studies, and misunderstandings and misrepresentations",
+              "siteCoverage": "partial",
+              "siteGap": "faults in experiments and observational studies, and misrepresentation, are not taught (MSY-36)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson02.sa.html (card 06, SA 1)",
+            "year11/data-analysis/lesson09.sa.html (card 08)"
+          ],
+          "startBoundary": "math-s11-d03 final frame (the headline over the bedroom; tokens 12 and 8; chips 'What could go wrong?', 'Next: faults in data collection', '?')",
+          "stopBoundary": "Observational study ('just watching what happens') and controlled experiment ('change one thing on purpose and keep everything else the same'), Year 12 b03's words; a hidden factor (the bus); random allocation (3 and 3) against self-chosen groups (6 and 0); practical faults (non-response, rounding, typing, timing) with fixes; misrepresentation and misunderstanding; an honest rewrite. Not: data types (d05); misleading graphs (d10).",
+          "nextHandoff": "math-s11-d05: the exam desk with the record sheet ('Sleep (h)', 'Screens in bedroom', 'Phone charges', 'How rested?', 'Gets to school'); chips 'Numbers or words?', 'Next: types of data', '?'",
+          "anchors": "phones in bedrooms; a school canteen; a phone company's 2 am text"
+        },
+        {
+          "id": "math-s11-d05",
+          "playlistOrder": 65,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "Is this data numerical or categorical, discrete or continuous, nominal or ordinal?",
+          "syllabusActionIds": [
+            "cic8a0b6e9",
+            "ci038853db",
+            "cic17a10b5",
+            "ci87535c02"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cic8a0b6e9",
+              "group": "Data classification",
+              "text": "Classify and describe variables as numerical or categorical",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci038853db",
+              "group": "Data classification",
+              "text": "Describe a numerical variable as discrete or continuous",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cic17a10b5",
+              "group": "Data classification",
+              "text": "Describe a categorical variable as nominal or ordinal",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci87535c02",
+              "group": "Data classification",
+              "text": "Identify collections of data that can be described as numerical or categorical depending on responses",
+              "siteCoverage": "covered",
+              "siteGap": "taught on the site only through postcodes (MSY-37)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson09.sa.html (card 05; MC 1, 3, 5; drill 1; trap 01)"
+          ],
+          "startBoundary": "math-s11-d04 final frame (the exam desk and the record sheet; chips 'Numbers or words?', 'Next: types of data', '?')",
+          "stopBoundary": "Variable; the arithmetic test; discrete (counted) and continuous (measured, even when rounded); nominal and ordinal; digits that are labels; the same question giving either type (sleep buttons or a number box; screens counted or ticked); the record sheet classified. Not: graphs (d07).",
+          "nextHandoff": "math-s11-d06a: the phone's screen-time screen (2 h 25 min) and the class's 30 values in minutes; chips '30 different answers?', 'Next: grouping data', '?'",
+          "anchors": "the record sheet; a playlist; an app download; a hotel; a gym"
+        },
+        {
+          "id": "math-s11-d06a",
+          "playlistOrder": 66,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "Why do we group data, and how do frequency tables, histograms and polygons show it?",
+          "syllabusActionIds": [
+            "cib752696f",
+            "cia7a007a6"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cib752696f",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Recognise and explain why some datasets need to be grouped to allow for appropriate representation and analysis",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cia7a007a6",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Represent a numerical dataset as either a frequency distribution table or a cumulative frequency distribution table and graph the associated histogram with polygon, both with and without using digital tools",
+              "siteCoverage": "covered",
+              "siteGap": "shared with d06b; the site has no frequency polygon, no cumulative graph and no digital tools, and teaches frequency density (MSY-38)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (cards 05 and 06; WE 1)"
+          ],
+          "startBoundary": "math-s11-d05 final frame (the screen-time phone and the 30 values; chips '2 h 25 min = 145 min', '30 different answers?', 'Next: grouping data', '?')",
+          "stopBoundary": "Frequency and tallies; the screens table (3, 7, 6, 4); why screen time needs classes; choosing classes (width 60 from 60; 60–<120); the grouped table (3, 9, 7, 5, 3, 2, 1); the class-width slider; the histogram (bars touch); the frequency polygon (centres 90 to 450; closed at 30 and 510). Not: cumulative frequency or digital tools (d06b).",
+          "nextHandoff": "math-s11-d06b: the screen-time histogram with its polygon, the phone and an amber line at 240 min; chips '4 hours = 240 min', 'How many used less than 4 hours?', 'Next: cumulative frequency', '?'",
+          "anchors": "screen time (a class of 30); screens in bedrooms; app downloads; food deliveries"
+        },
+        {
+          "id": "math-s11-d06b",
+          "playlistOrder": 66,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do a cumulative frequency table, histogram and polygon answer 'how many below?', by hand and with digital tools?",
+          "syllabusActionIds": [
+            "cia7a007a6"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cia7a007a6",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Represent a numerical dataset as either a frequency distribution table or a cumulative frequency distribution table and graph the associated histogram with polygon, both with and without using digital tools",
+              "siteCoverage": "covered",
+              "siteGap": "shared with d06a (MSY-38)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (card 05's cumulative column)"
+          ],
+          "startBoundary": "math-s11-d06a final frame (the histogram and polygon, the 240 line; chips '4 hours = 240 min', 'How many used less than 4 hours?', 'Next: cumulative frequency', '?')",
+          "stopBoundary": "Cumulative frequency (3, 12, 19, 24, 27, 29, 30); the staircase histogram; the polygon through top-right corners from (60, 0); reading 'less than', 'at least' (30 − 24 = 6) and 'between' (24 − 12 = 12); a spreadsheet (=B2; =C2+B3 filled down; column chart, gap zero; line chart); a statistics app. Not: medians from the polygon (d15).",
+          "nextHandoff": "math-s11-d07: the phone dock (ma12-phone-dock-v1.png) and the table 'bedroom 12, kitchen 5, lounge room 2, other 1'; a ghost histogram lightly crossed; chips 'Which graph?', 'Next: choosing a graph', '?'",
+          "anchors": "screen time; phone battery life; a 5 km fun run"
+        },
+        {
+          "id": "math-s11-d07",
+          "playlistOrder": 67,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "Which graph suits a dataset, including categorical data and spreadsheet graphs?",
+          "syllabusActionIds": [
+            "cic1f6796f",
+            "ci01aceb17",
+            "cia127389f"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cic1f6796f",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Represent categorical datasets in tables and column graphs as appropriate, with and without using digital tools",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci01aceb17",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Select the type of graph best suited to represent various single datasets and justify the choice of graph",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cia127389f",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Use a spreadsheet to organise and represent data using appropriate graphs",
+              "siteCoverage": "missing",
+              "siteGap": "no spreadsheet organising or graphing on the site (MSY-39)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (card 06's bar chart against histogram; match activity; MC 1, 5)"
+          ],
+          "startBoundary": "math-s11-d06b final frame (the dock and the location table; chips 'Which graph?', 'Next: choosing a graph', '?')",
+          "stopBoundary": "Categorical tables with percentages; a two-way table (5, 7; 1, 7); column graphs (gaps, axis from 0, title, labels; nominal sortable, ordinal locked); a spreadsheet (COUNTIF, =F2/20, a column chart; a histogram for numbers); the graph chooser (column, sector or divided bar, dot plot or stem-and-leaf, histogram, line); justified choices. Not: reading the displays (d08).",
+          "nextHandoff": "math-s11-d08: the cricket scoreboard (ma12-cricket-scoreboard-v1.png) with a batter's 15 scores as a stem-and-leaf plot (key '2 | 4 = 24 runs') and four thumbnails; chips 'What does each one tell us?', 'Next: reading statistical graphs', '?'",
+          "anchors": "phone location; how rested; streaming genres; café sales; apples"
+        },
+        {
+          "id": "math-s11-d08",
+          "playlistOrder": 68,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we read dot plots, stem-and-leaf plots, line graphs, sector graphs and divided bar charts?",
+          "syllabusActionIds": [
+            "cib2984676"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cib2984676",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Interpret and analyse dot plots, line graphs, sector graphs, stem-and-leaf plots, back-to-back stem-and-leaf plots and divided bar charts related to real-world applications",
+              "siteCoverage": "covered",
+              "siteGap": "dot plots, line graphs, sector graphs and divided bar charts are not taught on the site (MSY-40)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (card 07; WE 2; trap 03; MC 5)"
+          ],
+          "startBoundary": "math-s11-d07 final frame (the scoreboard and its stem-and-leaf; four thumbnails; chips 'What does each one tell us?', 'Next: reading statistical graphs', '?')",
+          "stopBoundary": "The routine 'key, value, count, compare, say it' on: stem-and-leaf (30 or more: 6; middle 24); back-to-back (left reads outwards; A and B compared); dot plot (wickets; 3 or more: 5); line graph (battery; charging +30; steepest −17); sector graph ($200 budget; 108° = 30% = $60) unrolled into a divided bar (travel; 6 of 20 cm = 30% = 60). Not: mean and median (d11); shape (d09).",
+          "nextHandoff": "math-s11-d09: the screen-time histogram (tail right), the sleep dot plot (one value far left) and an apple-mass histogram (symmetric) with the apple crate; chips 'Which way is the tail?', 'Next: the shape of a distribution', '?'",
+          "anchors": "cricket; a phone's battery; a weekly budget; travel to school; cafés; a concert"
+        },
+        {
+          "id": "math-s11-d09",
+          "playlistOrder": 69,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "What does the shape of a distribution tell us?",
+          "syllabusActionIds": [
+            "ci0c94e728",
+            "cie2345a02"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci0c94e728",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Identify and describe the shape of the distribution of a dataset as either symmetric, positively skewed or negatively skewed",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cie2345a02",
+              "group": "Measures of centre and spread",
+              "text": "Identify and describe datasets as uniform, unimodal, bimodal or multimodal",
+              "siteCoverage": "partial",
+              "siteGap": "uniform is not taught (MSY-41)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (key term 'Skew'; card 06)",
+            "year11/data-analysis/lesson10.sa.html (card 06: unimodal, bimodal, multimodal)"
+          ],
+          "startBoundary": "math-s11-d08 final frame (the screen-time histogram, the sleep dot plot, the apple-mass histogram with the apple crate; chips 'Which way is the tail?', 'Next: the shape of a distribution', '?')",
+          "stopBoundary": "Distribution; symmetric ('the left side is a mirror image of the right'); tail ('the thin end on each side'); skewed ('one tail longer than the other'), positively and negatively, named by the tail; the shape slider (peak opposite the tail); unimodal, bimodal (two groups), multimodal; uniform (flat); a reason in context; a description sentence. Not: mean and median against shape (d12); outliers (d18).",
+          "nextHandoff": "math-s11-d10: the tournament board (ma11-tournament-board-v1.png) with the infographic poster 'Sleep and screens: our Year 11 survey' (35% get 8+ hours; a sector graph; 12 of 20 phones; a column graph with its axis from 6); chips 'Is this poster fair?', 'Next: infographics and misleading graphs', '?'",
+          "anchors": "apples; screen time; sleep; a food truck; a café; a die (fairness only); an easy quiz; the trip to school"
+        },
+        {
+          "id": "math-s11-d10",
+          "playlistOrder": 70,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How can a graph or infographic inform us, or mislead us?",
+          "syllabusActionIds": [
+            "ci2c2bc777",
+            "ci9c22fcc3",
+            "ciebdc8d60"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci2c2bc777",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Analyse a statistical infographic and justify the choice of graphical representations used for the relevant dataset",
+              "siteCoverage": "missing",
+              "siteGap": "no infographic analysis on the site (MSY-42)"
+            },
+            {
+              "id": "ci9c22fcc3",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Interpret and consider limitations of graphical representations to make conclusions and predictions",
+              "siteCoverage": "partial",
+              "siteGap": "limitations are not taught as a method (MSY-42)"
+            },
+            {
+              "id": "ciebdc8d60",
+              "group": "Display and interpret grouped and ungrouped data",
+              "text": "Explain why a given graphical representation can lead to a misinterpretation of data",
+              "siteCoverage": "partial",
+              "siteGap": "only lesson12 SA 3's two axes (MSY-42)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson12.sa.html (key ideas on scales; SA 3's truncated axis)"
+          ],
+          "startBoundary": "math-s11-d09 final frame (the infographic poster on the tournament board; chips 'Is this poster fair?', 'Next: infographics and misleading graphs', '?')",
+          "stopBoundary": "Infographic; justifying each tile's graph by its data; the truncated axis (looks 3.5 times, really 1.23 times); scaled icons (area times 4); 3D sectors; uneven scales; cherry-picked ranges; percentages without n; limitations for conclusions and predictions; a fair conclusion; the fixed poster. Not: calculating means (d11); spread (d13).",
+          "nextHandoff": "math-s11-d11: the sleep dot plot of the 20 values with the alarm clock (ma11-alarm-clock-v1.png) and the calculator (ma12-calculator-v1.png); chips 'One number for a typical night?', 'Next: mean, median and mode', '?'",
+          "anchors": "the strand's sleep poster; a phone company's sales; a council's rubbish"
+        },
+        {
+          "id": "math-s11-d11",
+          "playlistOrder": 71,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do the mean, median and mode measure the centre of a dataset?",
+          "syllabusActionIds": [
+            "ciaf232c38"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ciaf232c38",
+              "group": "Measures of centre and spread",
+              "text": "Describe the mean, median and mode as measures of centre and calculate their values for a dataset in graphical form and tabular form, using a scientific calculator and other digital tools",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson10.sa.html (cards 05, 06; WE 2)"
+          ],
+          "startBoundary": "math-s11-d10 final frame (the sleep dot plot of the 20 values; the alarm clock; the calculator; chips 'One number for a typical night?', 'Next: mean, median and mode', '?')",
+          "stopBoundary": "Measure of centre; the mean ('the mean = total ÷ how many'; balance point; 144 ÷ 20 = 7.2); the median (order; position (n + 1) ÷ 2; 7.5); the mode (7.5; bedroom for categories); from a dot plot, a stem-and-leaf plot and a frequency table (screens: 31 ÷ 20 = 1.55; median 1.5; mode 1); the calculator's statistics mode (x̄, n, Σx; first use); =AVERAGE, =MEDIAN, =MODE. Not: choosing (d12); spread (d13).",
+          "nextHandoff": "math-s11-d12: the sleep dot plot with the mean 7.2 (teal triangle), median 7.5 (violet line) and mode 7.5 (olive ring), the 3 h dot ringed; chips 'Which one is typical?', 'Next: choosing a measure of centre', '?'",
+          "anchors": "sleep; screens; a batter's scores; a café's coffee sales; a soccer team's goals"
+        },
+        {
+          "id": "math-s11-d12",
+          "playlistOrder": 72,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "When is the mean, median or mode the right measure of centre?",
+          "syllabusActionIds": [
+            "ci1ce7c84d",
+            "ci6dfbf5c5"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci1ce7c84d",
+              "group": "Measures of centre and spread",
+              "text": "Examine the merits of each measure of centre and justify where each measure is most appropriately used",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci6dfbf5c5",
+              "group": "Measures of centre and spread",
+              "text": "Identify and describe real-world examples illustrating appropriate and inappropriate uses of measures of centre and measures of spread",
+              "siteCoverage": "covered",
+              "siteGap": "shared with d14: d12 takes measures of centre"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson10.sa.html (hook; cards 06, 08; match activity)",
+            "year11/data-analysis/lesson07.sa.html (trap 01)"
+          ],
+          "startBoundary": "math-s11-d11 final frame (the dot plot with three markers; chips 'Which one is typical?', 'Next: choosing a measure of centre', '?')",
+          "stopBoundary": "Merits of the mean (every value; totals; symmetric data; pulled by extremes: 3 to 7 gives 7.4, the median stays 7.5), the median (resistant; skewed data: screen time 218.8 against 200; houses 928.6 against 680 thousand), the mode (categories; hoodie size M); shape and centre ('the mean is pulled towards the tail'); uses of centre that fit or mislead; justified choices. Not: spread (d13, d14).",
+          "nextHandoff": "math-s11-d13: the bus stop (ma12-bus-stop-v1.png) with dot plots of Bus A 3, 4, 4, 4, 5, 4 and Bus B 0, 1, 2, 6, 7, 8 minutes late, both mean 4; chips 'Same mean, same bus?', 'Next: range and standard deviation', '?'",
+          "anchors": "sleep; screen time; house prices; club hoodies; a café's pay; phone cases"
+        },
+        {
+          "id": "math-s11-d13",
+          "playlistOrder": 73,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do the range and standard deviation measure spread?",
+          "syllabusActionIds": [
+            "ci5bdca88b",
+            "ci14ad4af7"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci5bdca88b",
+              "group": "Measures of centre and spread",
+              "text": "Identify the range and standard deviation as measures of spread to describe variation in a dataset",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci14ad4af7",
+              "group": "Measures of centre and spread",
+              "text": "Calculate the range and population standard deviation σ of a dataset using a scientific calculator or other digital tools",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson11.sa.html (cards 05, 07; WE 2; the 'Beyond the syllabus' note)"
+          ],
+          "startBoundary": "math-s11-d12 final frame (the bus stop and the two buses' dot plots; chips 'Same mean, same bus?', 'Next: range and standard deviation', '?')",
+          "stopBoundary": "Measure of spread; range (A 2, B 8; a breakdown day makes A's 12); σ as roughly the typical distance from the mean (deviation arms; A 0.58, B 3.11); σ by the calculator's statistics mode (read σx, not sx; sleep 1.39 h); =STDEV.P and =MAX − MIN; interpreting σ with units. Not: the formula by hand; IQR (d15).",
+          "nextHandoff": "math-s11-d14: the bedroom and two sleep dot plots, phone in bedroom (12; mean 6.58, σ 1.37) and elsewhere (8; mean 8.13, σ 0.78), with a spreadsheet badge; chips 'Which group sleeps more, and more steadily?', 'Next: comparing datasets', '?'",
+          "anchors": "two buses; sleep; phone batteries; two classes' marks"
+        },
+        {
+          "id": "math-s11-d14",
+          "playlistOrder": 74,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we compare two datasets using centre and spread, by hand and in a spreadsheet?",
+          "syllabusActionIds": [
+            "ciabf18f84",
+            "ci6dfbf5c5",
+            "ci6446263f"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ciabf18f84",
+              "group": "Measures of centre and spread",
+              "text": "Compare datasets using measures of centre and measures of spread",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci6dfbf5c5",
+              "group": "Measures of centre and spread",
+              "text": "Identify and describe real-world examples illustrating appropriate and inappropriate uses of measures of centre and measures of spread",
+              "siteCoverage": "covered",
+              "siteGap": "shared with d12: d14 takes measures of spread"
+            },
+            {
+              "id": "ci6446263f",
+              "group": "Measures of centre and spread",
+              "text": "Use a spreadsheet to analyse data including calculating measures of centre and spread",
+              "siteCoverage": "missing",
+              "siteGap": "no spreadsheet statistics on the site (MSY-45)"
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson07.sa.html (cards 02, 05, 06; traps; SA 1)",
+            "year11/data-analysis/lesson11.sa.html"
+          ],
+          "startBoundary": "math-s11-d13 final frame (the two sleep groups with means and σ brackets; chips 'Which group sleeps more, and more steadily?', 'Next: comparing datasets', '?')",
+          "stopBoundary": "A two-group spreadsheet summary (=COUNT, =AVERAGE, =MEDIAN, =MAX−MIN, =STDEV.P, filled across); comparing centre (same measure; 8.13 against 6.58, about 1.5 h) and spread (σ 0.78 against 1.37: more consistent); a full sentence with the observational caution; uses of spread that fit or mislead (a range set by one plan; an average without spread). Not: IQR (d15); box plots (d16, d17).",
+          "nextHandoff": "math-s11-d15: the 20 sleep values on d11's order strip with the median line between positions 10 and 11 and an amber bracket over the middle; the alarm clock; chips 'Where's the middle half?', 'Next: quartiles and the IQR', '?'",
+          "anchors": "sleep by phone location; phone plans; food delivery; coffee machines; swimmers"
+        },
+        {
+          "id": "math-s11-d15",
+          "playlistOrder": 75,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do quartiles, the five-number summary and the IQR describe spread?",
+          "syllabusActionIds": [
+            "ci3247f05b",
+            "ci955be675",
+            "cib3d54f04"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci3247f05b",
+              "group": "Quartiles and interquartile range",
+              "text": "Determine the five-number summary from a set of numerical data or graphical representation",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci955be675",
+              "group": "Quartiles and interquartile range",
+              "text": "Determine the interquartile range (IQR) of datasets",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cib3d54f04",
+              "group": "Quartiles and interquartile range",
+              "text": "Compare and contrast the use of range and IQR as measures of spread",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson11.sa.html (card 06; WE 1)",
+            "year11/data-analysis/lesson13.sa.html (card 05; quick check)"
+          ],
+          "startBoundary": "math-s11-d14 final frame (the 20 sleep values on the order strip with the median line and a bracket over the middle; the alarm clock; chips 'Where's the middle half?', 'Next: quartiles and the IQR', '?')",
+          "stopBoundary": "Quartiles by halving, then halving again (odd n: the median left out); the five-number summary from a list (sleep 3, 6.5, 7.5, 8, 9.5) and a stem-and-leaf plot (Batter A 0, 12, 24, 41, 87); IQR = Q3 − Q1 (1.5 h); range against IQR (a slider: the range moves, the IQR doesn't); quartiles on the calculator's results screen; a caution about other quartile rules. Not: box plots (d16); fences (d18).",
+          "nextHandoff": "math-s11-d16: the five-number card '3 | 6.5 | 7.5 | 8 | 9.5' over an empty number line with five ticks; the alarm clock; chips 'Five numbers, one picture?', 'Next: box plots', '?'",
+          "anchors": "sleep; a batter's scores; food deliveries; part-time earnings"
+        },
+        {
+          "id": "math-s11-d16",
+          "playlistOrder": 76,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we draw and read a box plot, including from a histogram or dot plot?",
+          "syllabusActionIds": [
+            "ci4c0893da",
+            "ci2d7c794d",
+            "cic5161f3b"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci4c0893da",
+              "group": "Five-number summary and box plots",
+              "text": "Represent numerical datasets using a box plot to display a five-number summary, with and without using digital tools",
+              "siteCoverage": "covered",
+              "siteGap": "no digital tools on the site (MSY-46)"
+            },
+            {
+              "id": "ci2d7c794d",
+              "group": "Five-number summary and box plots",
+              "text": "Determine quartiles from datasets displayed in histograms and dot plots, and represent these datasets as a box plot",
+              "siteCoverage": "covered",
+              "siteGap": "no histogram or dot plot source on the site (MSY-46)"
+            },
+            {
+              "id": "cic5161f3b",
+              "group": "Five-number summary and box plots",
+              "text": "Interpret box plots to draw conclusions and make inferences about a dataset",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson13.sa.html (card 08; MC 3)"
+          ],
+          "startBoundary": "math-s11-d15 final frame (the five-number card over the number line; the alarm clock; chips 'Five numbers, one picture?', 'Next: box plots', '?')",
+          "stopBoundary": "Drawing a box plot (box Q1 to Q3, median line, whiskers to min and max); a quarter of the data per section (length shows spread, not count); reading, conclusions and inferences (the 8 to 10 hour guideline; 'suggests'); quartiles from a dot plot (wickets 0, 1, 2, 3, 5) and a single-value histogram (screens 0, 1, 1.5, 2, 3) by counting; app box plots and their settings. Not: outliers as points (d18); comparing groups (d17).",
+          "nextHandoff": "math-s11-d17: the bedroom; two box plots on one scale, phone in bedroom (3, 6, 6.75, 7.5, 8.5) and elsewhere (7, 7.5, 8, 8.75, 9.5); chips 'Two boxes, one scale?', 'Next: parallel box plots', '?'",
+          "anchors": "sleep; cricket wickets; screens; basketball points; phone battery life"
+        },
+        {
+          "id": "math-s11-d17",
+          "playlistOrder": 77,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do parallel box plots compare two groups?",
+          "syllabusActionIds": [
+            "cia0dff040"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cia0dff040",
+              "group": "Five-number summary and box plots",
+              "text": "Compare and contrast the measures of centre, spread and shape using parallel box plots",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson13.sa.html (card 09; MC 5)",
+            "year11/data-analysis/lesson07.sa.html (card 06)"
+          ],
+          "startBoundary": "math-s11-d16 final frame (the two sleep box plots on one scale; chips 'Two boxes, one scale?', 'Next: parallel box plots', '?')",
+          "stopBoundary": "One shared scale (a snap demo); centre (medians 8 and 6.75; the boxes meet at 7.5); spread (IQRs 1.25 and 1.5 close; ranges 2.5 and 5.5 differ, from the bedroom group's long whisker); shape (bedroom negatively skewed; elsewhere roughly symmetric); a written comparison with the observational caution. Not: outliers by rule (d18).",
+          "nextHandoff": "math-s11-d18: the sleep box plot with the 3 ringed ('unusual?') and a dot plot of 16 travel times (6 to 18, 42 to 55, and 95) with the bus; chips 'Unusual, or just different?', 'Next: clusters, gaps and outliers', '?'",
+          "anchors": "sleep by phone location; two bus routes; two classes"
+        },
+        {
+          "id": "math-s11-d18",
+          "playlistOrder": 78,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we spot clusters, gaps and outliers, and test an outlier formally?",
+          "syllabusActionIds": [
+            "ci72ffda24",
+            "ci02be1794"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci72ffda24",
+              "group": "Clusters and outliers",
+              "text": "Identify clusters, gaps and outliers and explain their occurrence in the context of the data",
+              "siteCoverage": "partial",
+              "siteGap": "clusters and gaps are not taught on the site (MSY-46)"
+            },
+            {
+              "id": "ci02be1794",
+              "group": "Clusters and outliers",
+              "text": "Apply Q_1 - 1.5 × IQR and Q_3 + 1.5 × IQR to formally identify outliers",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson13.sa.html (card 06; WE 1; card 08)"
+          ],
+          "startBoundary": "math-s11-d17 final frame (the sleep box plot and the travel-time dot plot; chips 'Unusual, or just different?', 'Next: clusters, gaps and outliers', '?')",
+          "stopBoundary": "Cluster, gap and outlier ('a value well away from the rest of the data'), each explained in context (walkers and bus students; a breakdown); the fences Q1 − 1.5 × IQR and Q3 + 1.5 × IQR (sleep 4.25 and 10.25: 3 an outlier); the outlier box plot (whisker to 5.5, the 3 as a point); check the record, keep and report genuine values; the rule's limit with clusters (95 passes; fence 106). Not: the effect on each measure (d19).",
+          "nextHandoff": "math-s11-d19: two box plots, with and without the 3 h night, and a summary card (mean, median, mode, range, IQR, σ) with the 'without' column blank; the alarm clock; chips 'What changes?', 'Next: the effect of an outlier', '?'",
+          "anchors": "travel to school; sleep; a festival coffee stall; a phone shop"
+        },
+        {
+          "id": "math-s11-d19",
+          "playlistOrder": 79,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How does one outlier change the measures of centre and spread?",
+          "syllabusActionIds": [
+            "ci38858a7c"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci38858a7c",
+              "group": "Clusters and outliers",
+              "text": "Explain the impact of outliers on the measures of centre and spread",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/data-analysis/lesson10.sa.html (card 08; SA 1 (c))",
+            "year11/data-analysis/lesson11.sa.html (card 05)",
+            "year11/data-analysis/lesson13.sa.html (card 06)"
+          ],
+          "startBoundary": "math-s11-d18 final frame (the two box plots and the half-blank summary card; chips 'What changes?', 'Next: the effect of an outlier', '?')",
+          "stopBoundary": "The six measures with and without the outlier (mean 7.2 → 7.42; median and mode 7.5; range 6.5 → 4; IQR 1.5; σ 1.39 → 1.03) and why; both directions (a live drag); sensitive (mean, range, σ) and resistant (median, IQR, usually mode); reporting pairs (median and IQR; mean and σ; with and without); the investigation's conclusion; 'Data analysis: done'; 'Year 11: done'.",
+          "nextHandoff": "Year 12 Mathematics Standard, math-s12-a01 ('Solving Simultaneous Equations with Graphs'): its cold-open picture, the driving-school car (ms12-driving-school-car-v1.png) and two quote cards ('School A: $90 booking fee + $65 a lesson'; 'School B: no fee, $80 a lesson'), with grey chips 'Data analysis: done' and 'Year 11: done' and chips 'Next: Year 12, simultaneous equations', '?' (a01 is not edited; it opens cold on the same picture)",
+          "anchors": "sleep; a soccer season's goals; driving lessons (Year 12's anchor)"
+        }
+      ]
+    }
+  }
+}

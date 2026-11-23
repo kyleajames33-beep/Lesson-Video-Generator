@@ -100,6 +100,77 @@ Joins: each "Next" chip quotes the next on-screen heading (networks; degree, dir
 
 Site decisions: lesson02 and lesson03 (2017 content) used only for the degree sum and the path definition; the name Dijkstra and ∞ are not used (site advice; Standard pace); Kruskal's method taught, Prim's shown once (the point says "any method"); MSY-28 to MSY-32 cover the thin or missing points.
 
+## 1d. Fifth batch (24 November 2026): Data analysis complete (d01 to d19 as 20 designs, in four groups)
+
+**Root rulings on the fourth batch (recorded here, 24 Nov 2026).** (1) t05 stays as designed: the Australian zones are taught as gaps between cities, and UTC offsets are left to t06 (closes section 4 item 14 (c)). (2) The n-strand choices are approved: loops in one sentence (n02), Kruskal and Prim named once (n05), "–" in the labelling table (n06), no adjacency matrices (n03) (closes item 15 (c)). (3) n07's description link to the site's shortest-paths lesson (lesson06) is fine (closes item 15 (d)).
+
+**Small edit first: the n07 to d01 join.** d01 confirms n07's provisional frame unchanged (the survey phone, "How many hours did you sleep last night?", buttons "under 7", "7 to 8", "8 to 9", "over 9"): its overlapping buttons and "last night" become d01's hook. In `lessons/math-s11-n07.md` every "provisional" mark on the join was lifted (status line, Decisions, Handoff line, scene 12 and 13 visuals, kit row, error-check item 5, open decision 1, now closed) and the YouTube "Next" line quotes d01's title ("Statistical Investigations: Asking a Clear Survey Question"); no narration or picture changed. The n07 pack and route inputs 13 were updated to "confirmed".
+
+**Data analysis, first group: 9 designs for outline videos d01 to d07 plus d08 (d06 split), 16 of 38 content points.**
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| d01 | Statistical Investigations: Asking a Clear Survey Question | `ci22ad0284`, `cie24b93fc` | 5,594 | 503 s | none |
+| d02 | Privacy, Bias and Ethics in Surveys | `ci63195120` | 5,766 | 515 s | none |
+| d03 | Sampling Methods and Representative Samples | `ci3d27ce1c`, `ciefb0c944` | 5,528 | 497 s | none |
+| d04 | Faults in Data Collection: Experiments vs Observation | `ci4c7cc505` | 5,643 | 505 s | none |
+| d05 | Types of Data: Numerical and Categorical | `cic8a0b6e9`, `ci038853db`, `cic17a10b5`, `ci87535c02` | 5,521 | 498 s | none |
+| d06a | Grouping Data: Frequency Tables and Histograms | `cib752696f`, `cia7a007a6` (frequency table, histogram, polygon by hand) | 5,548 | 501 s | none |
+| d06b | Cumulative Frequency: Tables, Histograms and Polygons | `cia7a007a6` (cumulative parts; digital tools) | 5,528 | 499 s | none |
+| d07 | Choosing a Graph: Column Graphs and Spreadsheet Charts | `cic1f6796f`, `ci01aceb17`, `cia127389f` | 5,561 | 501 s | none |
+| d08 | Reading Statistical Graphs: Dot Plots to Divided Bars | `cib2984676` | 5,566 | 501 s | none |
+
+Files (all new): route input `../programme/maths-standard-route-inputs-14.json` (entries d01 to d08, the strand plan, colour roles, recurring models, memory aids, anchors, facts for Codex and the full "year12DependsOn" block; later entries are appended as designed); packs `pre-design/maths-standard/math-s11-d01.md` to `d08.md` (with `d06a`, `d06b`); designs `lessons/math-s11-d01.md` to `d08.md` (with `d06a`, `d06b`), each "Revision 1 ... Not voiced"; site findings MSY-33 to MSY-40 in `site-corrections-maths-standard-y11-additions.md` (section 5, replacing the placeholder); kit rows d01 to d08 in `maths-standard-y11-kit-and-plate-needs.md`.
+
+Checks run: every number recalculated with exact fractions (scratchpad `s11d/verify.py`, `python -I`: the sleep sample, the screen-time classes and running totals, the strata, every attempt, and the site's lessons 02, 07, 09 to 13); every syllabus quote in the designs asserted against the crosswalk text (scratchpad `s11d/quotes.py`); route inputs 14 generated from the crosswalk with a coverage check; narration counted with `work/brief-review-s11-e/count.py` (5,521 to 5,766 characters; 13 scene headings each; 497 to 515 s, 55 to 73 s spare); feedback 17.9 s to 26.5 s; every attempt ends "Pause here to answer."; no em dash in any new or edited file (en dashes only in class labels such as "60–<120" and price ranges). Every plate used was viewed on contact sheets.
+
+**Course-level decisions for Data analysis.**
+- **One investigation runs through the strand.** Year 11 sleep on school nights and where phones charge: question (d01), fair survey (d02), stratified sample of 20 (d03; 14 nearby, 6 bus of 200), faults and an honest claim (d04), the record sheet classified (d05), displays (d06a to d10), then d11 to d19 analyse the 20 sleep values (sorted 3, 5.5, 6, 6, 6.5, 6.5, 7, 7, 7, 7.5, 7.5, 7.5, 7.5, 8, 8, 8, 8.5, 8.5, 9, 9.5: mean 7.2, median 7.5, mode 7.5, Q1 6.5, Q3 8, IQR 1.5, σ 1.39, the 3 an outlier below 4.25; phone in bedroom 12 against elsewhere 8). The status file's plan note ("reuse one dataset across d11 to d19") is met by this sample. Grouping uses a separate class of 30's screen times (d06a, d06b), because 20 half-hour values don't need grouping.
+- **d06 split** into d06a and d06b (both playlist 66) by ruling 8's test (open question 16).
+- **Year 12 words set up early.** b03's plain meanings in d04 word for word; p05's "tally" and "frequency table" in d06a; p07's "categorical data in tables" (with a two-way table) and b06's "spreadsheet charts" in d07; p08's "random and self-selected samples" in d03; b01's dot plot read in d08.
+- **Colour roles** fixed for d01 to d19 (route inputs 14): values blue; counts and bars olive; mean teal; median and quartiles violet; spread and fences amber; categories violet; answer green; mistake red.
+- **Header strip:** "DATA ANALYSIS" only.
+
+Site decisions: lessons 02 and 09 used for definitions and sampling; their sensitive contexts (a nightclub drug-use survey, blood types, pain levels) are not used; stratifying by gender is replaced by where students live; lesson12's frequency density is not taught (beyond the Standard syllabus); MSY-33 to MSY-40 cover the missing points (questionnaire design, privacy and ethics, experiments, spreadsheets, the polygon and cumulative graph, four unnamed displays) and the small errors (a call-in item; "discrete = whole numbers"; Year 12 labels on a Year 11 page).
+
+**Second group added (24 Nov 2026): d09 and d10, which complete the displays (d05 to d10).** 21 of 38 content points now have a design.
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| d09 | Shape of a Distribution: Skewed, Symmetric, Bimodal | `ci0c94e728`, `cie2345a02` | 5,539 | 499 s | none |
+| d10 | Infographics and Misleading Graphs | `ci2c2bc777`, `ci9c22fcc3`, `ciebdc8d60` | 5,568 | 502 s | none |
+
+Same checks as above (numbers in scratchpad `s11d`; quotes asserted; 13 scene headings; feedback 19.0 s to 23.5 s; no em dash). Route inputs 14 now carries d01 to d10; MSY-41 and MSY-42 added; kit rows d09 and d10 added. Year 12 recall set up: z01's "symmetric", "skewed", "positively skewed" and "tail" with z01's plain meanings word for word (d09); p08's "misleading displays" (d10). d10 shows the two groups' averages (6.6 and 8.1 h) as given poster values before d11 teaches the mean (d10 open decision 1).
+
+**Third group added (24 Nov 2026): d11 to d14, measures of centre and spread.** 28 of 38 content points now have a design (`ci6dfbf5c5` is shared by d12 and d14, as the outline plans: centre in d12, spread in d14).
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| d11 | Mean, Median and Mode | `ciaf232c38` | 5,513 | 498 s | none |
+| d12 | Choosing a Measure of Centre: Mean, Median or Mode? | `ci1ce7c84d`, `ci6dfbf5c5` (centre) | 5,509 | 497 s | none |
+| d13 | Range and Standard Deviation | `ci5bdca88b`, `ci14ad4af7` | 5,541 | 500 s | none |
+| d14 | Comparing Datasets: Centre, Spread and Spreadsheets | `ciabf18f84`, `ci6dfbf5c5` (spread), `ci6446263f` | 5,512 | 497 s | none |
+
+Same checks as above (exact fractions in scratchpad `s11d/stats.py`; quotes asserted; 13 scene headings; feedback 18.9 s to 27.4 s; no em dash). Route inputs 14 now carries d01 to d14; MSY-43 to MSY-45 added (including two site arithmetic errors: lesson11 SA 1 (c)'s IQR and lesson07 WE's ranges); kit rows d11 to d14 added.
+
+Year 12 recall set up word for word: "the mean = total ÷ how many" (b04a) said and written before x̄ in d11; the dot plot, mean and median together (b01) in d11; "measures of centre" (z01) in d11; "the mean is pulled towards the tail" (z01) in d12; "the calculator's statistics mode" (b05) named in d13 scene 5 (first met for x̄ in d11, because d11's point requires a calculator; d11 open decision 1), with σ read from the σx line (z02) and σ described as "how far values usually sit from the mean" (z01's "how spread out"); σ is the population standard deviation by calculator only, as the 2024 point says (no formula by hand).
+
+**Fourth group added (24 Nov 2026): d15 to d19, quartiles, box plots and outliers. Data analysis is complete: 19 outline videos as 20 designs, 38 of 38 content points** (`cia7a007a6` shared by d06a and d06b; `ci6dfbf5c5` by d12 and d14, as the outline plans). Year 11 Standard now has a design for every outline video except the optional x01 and x02.
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| d15 | Quartiles, the Five-Number Summary and the IQR | `ci3247f05b`, `ci955be675`, `cib3d54f04` | 5,502 | 497 s | none |
+| d16 | Box Plots: Drawing and Reading Them | `ci4c0893da`, `ci2d7c794d`, `cic5161f3b` | 5,538 | 499 s | none |
+| d17 | Parallel Box Plots: Comparing Two Groups | `cia0dff040` | 5,568 | 502 s | none |
+| d18 | Clusters, Gaps and Outliers | `ci72ffda24`, `ci02be1794` | 5,522 | 498 s | none |
+| d19 | The Effect of an Outlier on Centre and Spread | `ci38858a7c` | 5,508 | 497 s | none |
+
+Same checks as above (halves-method quartiles and fences in scratchpad `s11d/stats.py`; every syllabus quote asserted; 13 scene headings each; feedback 21.7 s to 28.1 s; no em dash). Strand-wide checks: every "Next" chip in n07 and d01 to d18 matches the next design's on-screen heading (scripted check); every YouTube "Builds on" and "Next" line quotes the neighbouring titles; route inputs 14 covers all 38 points (scripted coverage check); all 20 designs run 497 to 515 s (55 to 73 s spare) with 5,502 to 5,766 characters. Data analysis needs no new plate. MSY-46 and MSY-47 added (lesson13's WE 2 stray line and SA 2 outliers inside their own fences; lesson10's "leaves the median unchanged").
+
+Year 12 recall set up: b02's outlier as "a value well away from the rest of the data" (d18), before the fences. The d strand's year12DependsOn block in route inputs 14 now names the scene for every recall (b01, b02, b03, b04a, b05, b06, p05, p07, p08, z01, z02, z03).
+
+**Year 11 close and the Year 12 hand-off.** d19 closes the strand ("Data analysis: done") and Year 11 ("Year 11: done") and hands to Year 12 Standard's first video, a01 ("Solving Simultaneous Equations with Graphs"). a01 opens cold on the driving-school car and two quote cards; d19's final frame shows that same picture (copied from a01 scene 1, read only) with the chips "Next: Year 12, simultaneous equations" and "?". No math-s12 file was edited (open question 19).
+
 ## 2. Course-level decisions made for Managing money
 
 - **e12 to m01 join confirmed.** m01 opens on e12's scene 11 frame exactly (swing tag "+3%", "Earning money: done", "Next: prices go up too"). Ruling 87's "provisional" marks in e12 can be lifted; e12's description "Next" line can quote "Percentage Change, Profit and Loss" (root edit, not made here).
@@ -167,7 +238,7 @@ Plan notes: t03 latitude and longitude with and without digital tools (a map app
 
 Plan notes: n07 (shortest path not the best path, nor in any minimum spanning tree) has no site lesson: design from the syllabus (a toll road, a flooded road, a steep cycle route); n05 minimum spanning tree by any method (Prim's or Kruskal's, one taught, the other named). Anchors: a bike-path map, phone towers, a school-camp trail, a delivery route.
 
-### 3.5 Data analysis (d01 to d19; 19 videos; not designed)
+### 3.5 Data analysis (d01 to d19; 19 outline videos; designed 24 Nov as 20 designs, section 1d; every recall below is set up, scene by scene in route inputs 14)
 
 | Year 12 design | Recall chip or phrase | The Year 11 video must |
 | --- | --- | --- |
@@ -199,10 +270,17 @@ x01 (money: which pay, tax or purchase calculation does an unseen problem need?)
 6. **Kit additions** (rows m01 to m09 in each design): `PercentBar` (with slider, ladder and reverse arrow), `PartsBar`, gap bars, `PeriodTimeline` month blocks and stamps, budget overflow bar, stacked and ranked total bars, `DecisionPath`, `BlockCounter`, threshold bar, who-pays table, `SpreadsheetGrid` input slider and stale-cell demo, fuel tank, rolling counters on plates, power-time area, bill builder, block container, period converter, row splitter, fund gauge, signed variance bars, account transfer strip. A kit-needs file for the m-strand (in the style of `checks/maths-standard-kit-needs-s11-e.md`) would collect them; not written here.
 7. **Example prices.** Codex's error-check briefs ask for dated NSW sources for registration ($385), the green slip ($780), the transfer fee ($40), comprehensive ($1,640), the lay-by fee ($10), water ($2.70/kL, $190 service) and gas (75c a day; 4.8c and 3.9c per MJ). Any change touches only the affected design's numbers.
 8. **m05 and m06 length.** About 560 s each, under the 570 s cap with named reserve trims; root may prefer to split m05 (duty and fees; insurance and the loan) if the voiced takes run long.
-9. **Remaining work (updated 24 Nov, after the n strand).** Designed: m (9), a (12 designs), t (6), n (7). Not designed: Data analysis (d01 to d19), optional x01 and x02: 21 videos. Section 3.5 is the plan. Next: d01 (it must confirm or replace n07's provisional survey-phone frame, and set the 'DATA ANALYSIS' header strip), then d02 onward in order; x01 any time; x02 after d. d19 (the last Year 11 video in playlist order) closes with 'Year 11: done' and no 'Next' chip (audit N9).
+9. **Remaining work (updated 24 Nov, Data analysis complete).** Designed: m (9), a (12 designs), t (6), n (7), d (20 designs, with d06a and d06b). Year 11 Standard has a design for every outline content video. Not designed: optional x01 (money; can start now) and x02 (measurement, time and data; can start now that d is designed). Next for root: the learning reviews and Codex checks for d01 to d19 (section 1d), the board update (item 3), and the decisions in items 16 and 19 to 22.
 10. **a05 split (24 Nov).** One point (`ci139f00a0`) names seven shape families plus perimeters and composites; designed as a05a (straight-edged) and a05b (circles, sectors, curved composites), both playlist 41, by ruling 8's test. Confirm, or rule one video (it would run about 11 minutes even after cuts).
 11. **m09 join and Year 12 lines (24 Nov).** a01 uses m09's final frame exactly: lift m09's provisional marks and set its "Next" to "Units of Measurement: Length, Mass and Capacity". Year 12 t09's entry line cites "a03" for the hectare; it is taught in a02. Year 12 "Builds on (Year 11)" lines (a01, a05, a12, b01, r01, r07) can now name the a-strand titles (audit B2).
 12. **Facts for Codex (24 Nov).** Netball court 30.5 m by 15.25 m (a02); Olympic pool minimum 50 m by 25 m by 2 m (a03); softball base path 18.29 m (a05b, a06); golf ball minimum diameter 42.67 mm (a08); the trapezoidal rule on the 2024 Standard reference sheet (a11; Year 12 r07 recalls "on the reference sheet"); the site's concrete price $220 per m³ (a09, labelled an example).
 13. **Plates and kit (24 Nov).** The a-strand needs no new plate. The m-strand's three plates and every kit part for m and a are collected in `maths-standard-y11-kit-and-plate-needs.md` (answers open question 6's request for a kit-needs file).
 14. **t strand (24 Nov).** (a) The new plate `ms11-desk-globe-v1.png` (brief in `lessons/math-s11-t03.md`) is needed for the t03 build; if it cannot show a recognisable Australia, the coded globe carries the scenes (t03 open decision 1). (b) Facts for Codex: city coordinates (t03); rounded longitudes (t04); Australian daylight-saving states and dates (t05); UTC offsets with British Summer Time and US daylight-saving dates (t06); example flight times (Perth to Sydney 4 h 30 min, Sydney to Perth 5 h, Sydney to Dubai 14 h 20 min, Singapore to Sydney 7 h 45 min); "−33.86, 151.21" in Sydney and "33.86°N, 151.21°E" in the open Pacific; the Google voice's reading of four-digit times ("nought nine fifteen", "nineteen forty-five"). (c) t05 teaches the Australian zones as gaps and leaves UTC offsets to t06 (t05 open decision 1). (d) "Position coordinates" is read as the (latitude, longitude) pair (t03 open decision 2).
 15. **n strand (24 Nov).** (a) No new plate. (b) Facts for Codex: the 2024 glossary wording for path, tree, spanning tree and minimum spanning tree (n04); uniqueness of every shortest path and MST where "the" or "any" is claimed (n06, n07; checked by listing here); 21 spanning trees of the camp network (n04); the example fibre price $25,000 per km (n05) and the example speeds (n07). (c) Root choices offered: loops kept to one sentence in n02 (open decision 1); method names said once in n05 (open decision 1); "–" instead of ∞ in n06 (open decision 1); no adjacency matrices in n03 (open decision 1). (d) n07's description links lesson06 until the site adds a card for `ci53383df4` (MSY-32).
+16. **d06 split (24 Nov).** One point (`cia7a007a6`) asks for a frequency table and a cumulative frequency table, each graphed as a histogram with a polygon, by hand and with digital tools, on top of d06's "why group" point. Designed as d06a (grouping, frequency table, histogram and polygon by hand) and d06b (cumulative table, histogram and polygon; both sets with a spreadsheet and an app), both playlist 66, by ruling 8's test. Confirm, or rule one video (about 13 minutes).
+17. **Root rulings of 24 Nov recorded** (section 1d): t05 as designed; the n-strand choices approved; n07's lesson06 link fine. Items 14 (c) and 15 (c), (d) are closed.
+18. **Data analysis facts for Codex (24 Nov).** The sleep range for 14 to 17 year olds in the Australian 24-Hour Movement Guidelines (8 to 10 hours; d01); NSW Standard conventions for systematic and stratified samples (d03), the frequency polygon closed at the empty classes' centres and the cumulative polygon through upper boundaries from zero (d06a, d06b), back-to-back keys (d08); "column graph" as the syllabus term (d07); the spreadsheet formulas as written (=B2, =C2+B3, =COUNTIF(B2:B21,"bedroom"); d06b, d07).
+19. **Year 12 a01 join (24 Nov).** d19's final frame shows a01's cold-open picture (the driving-school car and the two quote cards, copied from `math-s12-a01.md` scene 1) with "Year 11: done" and "Next: Year 12, simultaneous equations". a01 was not edited (math-s12 files are out of this batch's scope). Root may add one line to a01's Boundary ("matches d19's final frame without its chips") or leave a01 as a cold open; the picture works either way. a01's "Builds on (Year 11)" line can now name d19's title if root wants a link across the course boundary.
+20. **Data analysis choices to confirm (24 Nov).** (a) The calculator's statistics mode is first met in d11 (the point asks for a calculator for the mean), and d13 names it again in those words and reads σx (Year 12 b05 recalls d13): d11 open decision 1. (b) d10's poster shows the two groups' averages (6.6 and 8.1 h) before d11 teaches the mean (d10 open decision 1; the alternative is medians). (c) d16 draws whiskers to the minimum and maximum, and d18 adds the outlier version (d16 open decision 1). (d) d13 names sx and STDEV.S once, as numbers to avoid (d13 open decision 1). (e) d17 calls the elsewhere group "roughly symmetric" (d17 open decision 1). (f) d18 shows the fence rule missing an isolated value in clustered data (d18 open decision 1).
+21. **Data analysis facts for Codex (24 Nov, adds to item 18).** σx and sx on the scientific calculators NESA permits, and STDEV.P and STDEV.S in spreadsheets (d13); the halves quartile method matching those calculators' Q1 and Q3 (d15); "a value exactly on a fence is not an outlier" (d18); the spreadsheet formulas in d14 (=COUNT, =AVERAGE, =MEDIAN, =MAX−MIN, =STDEV.P) as written; Year 12 a01 scene 1's quote-card wording (d19).
+22. **Sensitive-content check (24 Nov).** d02's diverse-groups scene is kept general (owner rule of 18 Nov: no named communities); the site's nightclub, drug-use, blood-type, pain, COVID, climate and political-polling examples are not used anywhere in the strand (MSY-34, MSY-42).
