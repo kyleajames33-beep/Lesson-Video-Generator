@@ -14,7 +14,7 @@ Year 11, Managing money, group "Budgeting", outcome MST-11-04:
 
 **Stop:** why a surplus alone does not cover a sudden cost; living expenses = fixed + variable essentials (what you would still pay if income stopped); an emergency fund of 3 to 6 months (13 to 26 weeks) of living expenses; weeks to build it, rounded up; saving first (an automatic transfer on payday); monitoring with variance = actual − budget and its effect on the time to the target; choosing 3 or 6 months by how steady the income is; the four strategies and the question each answers. Closes the strand. Not: credit cards and loans (Year 12 i16 to i18).
 
-**Next:** math-s11-a01 (Applications of measurement): provisional final frame (coin jar "100 c = $1" beside a coded tape strip "10 mm = 1 cm"; grey chip "Managing money: done"; chips "Next: units of measurement", "?").
+**Next:** math-s11-a01 (Applications of measurement; confirmed by a01's Boundary, 24 Nov 2026): final frame (coin jar "100 c = $1" beside a coded tape strip "10 mm = 1 cm"; grey chip "Managing money: done"; chips "Next: units of measurement", "?").
 
 ## 2. Site order, sections and worked examples
 
@@ -62,5 +62,5 @@ The car repair (the hoist, as Year 12 i18 uses later); the coin jar (the course'
 
 - Living expenses from the three groups (MSY-08); "save first" added (MSY-09).
 - Weekly figures from m08 (13 weeks = 3 months).
-- Close the strand: grey chip "Managing money: done"; the a01 frame is provisional.
+- Close the strand: grey chip "Managing money: done"; the a01 frame is confirmed (a01 opens on it exactly).
 - Pace: about 8.5 minutes.

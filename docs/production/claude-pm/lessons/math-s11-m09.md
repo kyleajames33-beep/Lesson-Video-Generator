@@ -40,7 +40,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Cause chain taught, in order:** (1) a surplus arrives a little each week, but a big bill arrives all at once, so money has to be set aside before it's needed (1); (2) if pay stops you'd still pay fixed costs and essentials, but you'd cut the choices, so the fund is built on living expenses (2); (3) a part-week of saving doesn't reach the target, so weeks are rounded up (3); (4) money left in a spending account tends to get spent, so moving it first makes saving happen (4); (5) small overspends each week shrink the surplus, so the target takes longer, and only monitoring shows it (5); (6) the less steady the income, the longer a gap in pay could last, so the bigger the fund (6).
 - **Entry knowledge (route):** math-s11-m08; e01. Recalled in grey chips.
 - **Site notes.** lesson06 values recalculated: no arithmetic error. MSY-08 (groceries as discretionary), MSY-09 (saving first not taught).
-- **Handoff (to math-s11-a01, units of measurement; provisional).** Scene 12: board clear; a grey strand chip "Managing money: done"; the coin jar (about 420 px tall) at the left with a coded chip "100 c = $1"; at the right a coded tape-measure strip (1,000 px) with centimetre marks and millimetre ticks and the chip "10 mm = 1 cm"; chips "Next: units of measurement" and "?". No measurement is stated. The a01 designer confirms or replaces this frame; if it changes, only scene 12 and this design's "Next" line change. This mirrors e12's provisional close (ruling 87).
+- **Handoff (to math-s11-a01, units of measurement; confirmed 24 Nov 2026: a01's Boundary opens on this frame exactly).** Scene 12: board clear; a grey strand chip "Managing money: done"; the coin jar (about 420 px tall) at the left with a coded chip "100 c = $1"; at the right a coded tape-measure strip (1,000 px) with centimetre marks and millimetre ticks and the chip "10 mm = 1 cm"; chips "Next: units of measurement" and "?". No measurement is stated. a01 confirmed this frame (a01 Boundary).
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) 2000 ÷ 233 = 8.58 → 9 weeks.
@@ -53,7 +53,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 Main question: *A $2,000 repair, due today. How do saving, an emergency fund and tracking spending protect us from money trouble?*
 Entry knowledge (math-s11-m08; e01): the weekly budget and its groups; 13 weeks in 3 months.
 Stops after: living expenses, the fund, weeks to build, save first, variance, choosing the size, the four strategies. Closes the strand.
-Handoff: math-s11-a01 (provisional): "Next: units of measurement".
+Handoff: math-s11-a01: "Next: units of measurement" (a01: Units of Measurement: Length, Mass and Capacity).
 
 ## Script and shots
 
@@ -117,7 +117,7 @@ Visual: the card shrinks to the top. Rows, 44 px: on "forty" "+63 − 48 + 45 = 
 ### 12. handoff: Managing money, done
 > That's Managing money done, from a price tag to a plan that can handle surprises. Money works in hundreds. A hundred cents make a dollar. Next we're measuring things, and metric units work the same way, in tens, hundreds and thousands. How do millimetres, centimetres and metres fit **together**? That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (provisional; as under Decisions, "Handoff"): on "Managing money done" a grey strand chip "Managing money: done". On "A hundred cents" the coin jar (420 px tall) at the left with a coded chip "100 c = $1". On "metric units" a coded tape-measure strip (1,000 px) draws at the right with centimetre marks and millimetre ticks; on "together" the chip "10 mm = 1 cm". On "next" chips "Next: units of measurement" and "?". Hold about 2 s. This is a01's provisional opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "Managing money done" a grey strand chip "Managing money: done". On "A hundred cents" the coin jar (420 px tall) at the left with a coded chip "100 c = $1". On "metric units" a coded tape-measure strip (1,000 px) draws at the right with centimetre marks and millimetre ticks; on "together" the chip "10 mm = 1 cm". On "next" chips "Next: units of measurement" and "?". Hold about 2 s. This is a01's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -131,7 +131,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 Memory aid (framed card, right side, as in scene 7): *Budget, save first, keep a fund, check every month.* Key: *Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up.* The notes scene is 1,350 frames (45 s).
 
-Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and a01's provisional opening frame.
+Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and a01's opening frame.
 
 ## Teaching checks
 
@@ -240,7 +240,7 @@ Error-only check (report errors; do not restyle or rewrite):
 3. Confirm no claim needs a source beyond the syllabus's "3 to 6 months" (Moneysmart's emergency fund page may be cited if a source is wanted).
 4. Confirm the spoken forms match the screen.
 5. Confirm both attempts carry every demand and show no answer.
-6. Confirm scene 1 opens on m08's final frame and scene 12 is marked provisional for a01 (and matches a01's boundary once a01 exists).
+6. Confirm scene 1 opens on m08's final frame and scene 12 matches a01's Boundary exactly.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
 
 ## YouTube metadata (draft)
@@ -258,13 +258,13 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024, Year 11):
 "Examine budgeting, saving, establishing an emergency fund with 3 to 6 months of living expenses, and monitoring spending as strategies designed to minimise financial problems"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa8d2fb431
 
-Builds on: Building a Budget, on Paper and in a Spreadsheet. Next: units of measurement.
+Builds on: Building a Budget, on Paper and in a Spreadsheet. Next: Units of Measurement: Length, Mass and Capacity.
 
 #Year11Maths #MathsStandard #Budgeting #HSCScience
 
 ## Open decisions
 
-- **1. The a01 join (provisional).** The coin jar with "100 c = $1" beside a tape strip with "10 mm = 1 cm" is this design's idea. The a01 designer confirms or replaces it; only scene 12 and the "Next" line change.
+- **1. The a01 join (closed 24 Nov 2026).** The coin jar with "100 c = $1" beside a tape strip with "10 mm = 1 cm" is confirmed: a01 opens on it exactly. The YouTube "Next" line quotes a01's title.
 - **2. "Monthly" in the card.** The memory aid says "check every month" though the budget is weekly; monitoring monthly is the common habit and matches the syllabus examples. Confirm.
 
 ## Review notes

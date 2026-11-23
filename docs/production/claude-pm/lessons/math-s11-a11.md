@@ -24,7 +24,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **A zero width.** At a pointed end the width is 0; that strip is a triangle, and the rule still works (½ × gap × width).
 - **Estimate, not exact.** The "≈" sign is said: "about equal to". The strip builder shows the slivers the chords cut off or add; with 1, 2 and 4 applications the pond's estimate goes 0, 16.4, 21.8 m² (the surprise: one application gives zero).
 - **Volume and capacity (a09, a03).** The pond's water: area × depth (about 0.6 m deep throughout, said as an assumption). The channel: its cross-section by the rule (four applications), times its length, then kilolitres.
-- **Strand close.** Scene 12 shows a grey chip "Applications of measurement: done" and hands to t01 with the wall clock and stopwatch (provisional, as m09 did for a01).
+- **Strand close.** Scene 12 shows a grey chip "Applications of measurement: done" and hands to t01 with the wall clock and stopwatch (confirmed by t01's Boundary, 24 Nov 2026).
 - **Simulations (standard item 3).**
   1. **Strip builder** (scenes 2 to 4, 6): width lines drop at even gaps; chords join their tops; each strip fills as a trapezium with its own area readout; slivers between chord and curve tinted.
   2. **Application slider** (scene 4): 1, 2, 4 applications on the pond; the total readout moves 0 → 16.4 → 21.8 m².
@@ -41,7 +41,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Cause chain taught, in order:** (1) between two parallel widths, pretend the curved edge is straight, so the piece is a trapezium (2); (2) a trapezium's area is its average width times the gap, so A ≈ (h/2)(d_f + d_l) (2); (3) one trapezium misses the curve's wobbles, so cut the shape into strips and apply the rule to each, then add (3); (4) narrower strips follow the curve more closely, so the estimate improves (4); (5) a volume with the same cross-section all along is that area times the length (a09), so the rule gives volumes and capacities too (5, 6).
 - **Entry knowledge (route):** math-s11-a05a, a09, a03, a02. Recalled in grey chips.
 - **Site notes.** lesson13 values recalculated: no arithmetic error. MSY-21 (the d_m form and five applications go beyond the point).
-- **Handoff (to math-s11-t01, time units; provisional).** Scene 12: board clear; a grey strand chip "Applications of measurement: done"; the wall clock `ma11-wall-clock-v1.png` (about 480 px, coded hands at 10:10) at the left and the stopwatch `ma12-stopwatch-v1.png` (about 420 px tall, a coded hand) at the right; chips "60 s = 1 min" and "60 min = 1 h"; chips "Next: time units" and "?". The t01 designer confirms or replaces this frame; if it changes, only scene 12 and this design's "Next" line change. Year 12 r10 recalls t01's "60 × 60".
+- **Handoff (to math-s11-t01, time units; confirmed 24 Nov 2026: t01's Boundary opens on this frame exactly).** Scene 12: board clear; a grey strand chip "Applications of measurement: done"; the wall clock `ma11-wall-clock-v1.png` (about 480 px, coded hands at 10:10) at the left and the stopwatch `ma12-stopwatch-v1.png` (about 420 px tall, a coded hand) at the right; chips "60 s = 1 min" and "60 min = 1 h"; chips "Next: time units" and "?". t01 confirmed this frame and shows "1 h = 60 × 60 s = 3600 s", which Year 12 r10 recalls.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) 18 ÷ 2 = 9; 28 + 34 = 62; 9 × 62 = 558 (site WE1).
@@ -54,7 +54,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 Main question: *A pond with a wobbly edge: no formula fits. How does the trapezoidal rule estimate an irregular area or volume?*
 Entry knowledge (math-s11-a05a, a09, a03, a02): the trapezium; V = Ah; kL; ha.
 Stops after: the rule, up to four applications, the estimate, volume and capacity. Closes the strand.
-Handoff: math-s11-t01 (provisional): "Next: time units".
+Handoff: math-s11-t01: "Next: time units" (t01: Seconds, Minutes, Hours and 24-Hour Time).
 
 ## Script and shots
 
@@ -118,7 +118,7 @@ Visual: the card shrinks to the top. Rows, 44 px: "0.75 × (2.0 + 2.6) = 3.45; 0
 ### 12. handoff: Applications of measurement, done
 > That's Applications of measurement done, from millimetres to megalitres, and from a box to a pond with no formula. Every unit we've used steps by tens, hundreds or thousands. But time doesn't. Sixty seconds make a minute, and sixty minutes make an hour. How do we convert time, when the steps are sixties? That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (provisional; as under Decisions, "Handoff"): on "Applications of measurement done" a grey strand chip "Applications of measurement: done". On "tens, hundreds or thousands" a01's three ladders flash small and fade. On "time doesn't" the wall clock `ma11-wall-clock-v1.png` (about 480 px, coded hands at 10:10) at the left and the stopwatch `ma12-stopwatch-v1.png` (about 420 px tall, a coded hand) at the right; on "Sixty seconds" chip "60 s = 1 min"; on "sixty minutes" chip "60 min = 1 h". On "next" chips "Next: time units" and "?". Hold about 2 s. This is t01's provisional opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "Applications of measurement done" a grey strand chip "Applications of measurement: done". On "tens, hundreds or thousands" a01's three ladders flash small and fade. On "time doesn't" the wall clock `ma11-wall-clock-v1.png` (about 480 px, coded hands at 10:10) at the left and the stopwatch `ma12-stopwatch-v1.png` (about 420 px tall, a coded hand) at the right; on "Sixty seconds" chip "60 s = 1 min"; on "sixty minutes" chip "60 min = 1 h". On "next" chips "Next: time units" and "?". Hold about 2 s. This is t01's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -132,7 +132,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 Memory aid (framed card, right side, as in scene 7): *Average the two ends, times the gap.* Key: *A ≈ (h/2)(d_f + d_l): d_f first length, d_l last length, h the gap between them. Up to four applications: add them.* The notes scene is 1,350 frames (45 s).
 
-Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and t01's provisional opening frame.
+Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and t01's opening frame.
 
 ## Teaching checks
 
@@ -242,7 +242,7 @@ Error-only check (report errors; do not restyle or rewrite):
 3. Confirm the trapezoidal rule appears on the 2024 Mathematics Standard reference sheet in the form A ≈ (h/2)(d_f + d_l); if not, change the chip "on the reference sheet" and tell root (Year 12 r07 recalls it).
 4. Confirm d_f, d_l and h are named and spoken as Year 12 r07 recalls them, and that "offset" and "ends once, middles twice" do not appear.
 5. Confirm both attempts carry every demand and show no answer.
-6. Confirm scene 1 opens on a10's final frame exactly and scene 12 is marked provisional for t01.
+6. Confirm scene 1 opens on a10's final frame exactly and scene 12 matches t01's Boundary exactly.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
 
 ## YouTube metadata (draft)
@@ -260,13 +260,13 @@ Syllabus content (NSW Mathematics Standard 11-12, 2024, Year 11):
 "Apply the Trapezoidal rule A ≈ (h/2)(d_f + d_l), where A is the area, d_f and d_l are the lengths of the parallel sides of the trapezium, d_f is the first length and d_l is the last length, and h is the perpendicular distance between them, to solve a variety of practical problems involving area, volume and capacity for up to four applications"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fad74ae493
 
-Builds on: Volume of Pyramids, Cones and Spheres. Next: time units.
+Builds on: Volume of Pyramids, Cones and Spheres. Next: Seconds, Minutes, Hours and 24-Hour Time.
 
 #Year11Maths #MathsStandard #TrapezoidalRule #HSCScience
 
 ## Open decisions
 
-- **1. The t01 join (provisional).** The clock and stopwatch with "60 s = 1 min" and "60 min = 1 h" is this design's idea. The t01 designer confirms or replaces it; only scene 12 and the "Next" line change.
+- **1. The t01 join (closed 24 Nov 2026).** The clock and stopwatch with "60 s = 1 min" and "60 min = 1 h" is confirmed: t01 opens on it exactly. The YouTube "Next" line quotes t01's title.
 - **2. Year 12 r07.** r07 recalls "the Year 11 rule" and then teaches "ends once, middles twice" as new: consistent with this design. No change to r07.
 
 ## Review notes

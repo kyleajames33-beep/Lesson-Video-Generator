@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-24",
+  "brief": "Maths Standard Year 11 missing strands (root request, 23 November 2026, after the coherence audit findings B1 and B2), continued after Applications of measurement",
+  "purpose": "Route inputs written by Claude (designer of record) for the Year 11 Time and location strand, in the shape of route inputs 10 and 11: syllabus text copied from the crosswalk's plain text (sourceHtml is not repeated; see the crosswalk). Not teaching approval.",
+  "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course for Standard 1 and Standard 2)",
+  "identifierPolicy": "Exact CMS codenames from docs/production/programme/syllabus/maths-standard-2024-crosswalk.json. Year 11 is one course, so standard1ActionIds and standard2ActionIds are empty.",
+  "officialEvidence": {
+    "source": "NSW Curriculum Year 11 Time and location page (focus area fa136ea49c), as recorded in the crosswalk (read 18 November 2026)",
+    "focusAreaUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa136ea49c",
+    "outcomes": [
+      "MST-11-06"
+    ],
+    "year11TimeAndLocationPoints": 8,
+    "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+  },
+  "siteSource": {
+    "repo": "kyleajames33-beep/Teaching-APP",
+    "clone": "C:/Users/kygs/teaching-app-fix (read only; HEAD 5d74a627, the crosswalk's commit; nothing run or changed)",
+    "lessons": "year11/time-and-location/lesson01 (24-hour time, time units, elapsed time, timetables), lesson02 (Australian zones, daylight saving, UTC), lesson03 (latitude, longitude, 15° per hour).",
+    "note": "Every site value used in the packs was recalculated (scratchpad s11t/verify.py). Site issues are logged as MSY-22 to MSY-27 in docs/production/claude-pm/site-corrections-maths-standard-y11-additions.md."
+  },
+  "recommendations": [
+    "Run t01 to t06 in outline order, playlist numbers 48 to 53, straight after a11 (47). No split: every design fits under 570 s (about 496 to 536 s estimated).",
+    "Joins: t01 opens on a11's final frame exactly (wall clock and stopwatch, '60 s = 1 min', '60 min = 1 h', 'Applications of measurement: done', 'Next: time units', '?'); a11's provisional mark is lifted. Each later video opens on the previous video's final frame. t06 closes the strand ('Time and location: done') and hands to math-s11-n01 with a flight-route map (confirmed by n01, 24 Nov 2026). Audit N9: t06 is not the last Year 11 video in playlist order, so it closes its strand only.",
+    "Each 'Next' chip quotes the next video's on-screen heading: t01 'Time units'; t02 'Elapsed time'; t03 'Latitude and longitude'; t04 'Longitude and time'; t05 'Australian time zones'; t06 'UTC'; n01 'Networks'.",
+    "Strand colour roles (fixed t01 to t06): given times and values blue; the factor, hop, offset or difference (× 60, + 12, hops, 15°, zone gaps, UTC offsets, flight times) amber; leftovers and decimal parts teal; midnight and day changes violet; answer green; mistake red (crossed slips only). t03 and t04: latitude and parallels teal, longitude and meridians blue, the equator and prime meridian amber.",
+    "Recurring models introduced once: the time ladder (t01, a01's UnitLadder with 60); the leftover splitter (t01); the decimal-hour bar (t01; relabelled for degrees and minutes in t03); the 24-hour dial (t01); the hop line (t02); the clock odometer (t02; backwards in t04; linked in t05, t06); the coded globe (t03, spinning in t04); the gridded map (t03); the longitude ruler (t04); the zone map with month slider (t04, t05); the difference ladder (t05; hung from UTC in t06).",
+    "Memory aids introduced once: t01 'Time counts in sixties: a leftover is the next unit down.'; t02 'Count up: hop to the next o'clock, then whole hours, then the minutes left.'; t03 'Lat is flat: parallels run around, north or south of the equator. Longitude lines are long: pole to pole, east or west of Greenwich.'; t04 '15 degrees is an hour, 1 degree is 4 minutes. East is ahead: the Sun gets there first.'; t05 'West is behind. From October to April the south-east goes forward an hour; Queensland, the NT and WA stay put.'; t06 'Go through UTC: back to UTC (subtract the offset), then out (add the new offset).'",
+    "Everyday anchors (no people, hands or faces; no science contexts): a song, a podcast, a playlist and a casual shift (t01); an overnight coach, a bus, an example timetable, a shift (t02); a map app, a desk globe, an atlas map (t03); the globe and Sun, ships (t04); a football final, a cricket match, a live stream, a video call, domestic flights (t05); a call to London, a Tokyo broadcast, Los Angeles, flights to Dubai and from Singapore (t06).",
+    "Prices: only the example pay rate $28.40 an hour (the site's Q4 rate, labelled 'example rate') in t01 and t02.",
+    "Facts Codex confirms in the error check: every city coordinate in t03; rounded longitudes in t04; Australian zones and daylight-saving dates and states (t05); UTC offsets and the British Summer Time and US daylight-saving dates (t06); flight times labelled 'example' (Perth to Sydney 4 h 30 min; Sydney to Perth 5 h; Sydney to Dubai 14 h 20 min; Singapore to Sydney 7 h 45 min); '−33.86, 151.21' in Sydney and '33.86°N, 151.21°E' in the open Pacific; the voice's reading of four-digit times.",
+    "New plate: ms11-desk-globe-v1.png (t03 scenes 1 and 12; t04 scenes 1 and 2). No other plate is needed.",
+    "Header strip (owner rule of 23 Nov): the focus area only, 'TIME AND LOCATION'."
+  ],
+  "year12DependsOn": [
+    {
+      "y12": "math-s12-r10",
+      "recalls": "t01",
+      "chipOrPhrase": "'Year 11: 60 × 60'; Year 11 t01 (60 s in a minute, 60 minutes in an hour)",
+      "setUpIn": "t01 scene 2: the row '1 h = 60 × 60 s = 3600 s' with '60 × 60' visible; key note 1 and the memory aid's key line"
+    },
+    {
+      "y12": "math-s12-t02",
+      "recalls": "t03 (minutes of a degree)",
+      "chipOrPhrase": "none named; Year 12 t02 teaches the calculator's degrees-minutes-seconds key for angles",
+      "setUpIn": "t03 scene 5 says once that 60 minutes make a degree (33° 52′ ≈ 33.87°); the DMS key is left to Year 12 t02"
+    },
+    {
+      "y12": "math-s12-r10, r12a (speed and time units)",
+      "recalls": "t01 decimal hours",
+      "chipOrPhrase": "'15 min = 0.25 h' style conversions",
+      "setUpIn": "t01 scene 4 (minutes ÷ 60) and attempt 1 (1.25 h)"
+    }
+  ],
+  "part": 12,
+  "covers": "math-s11-t01 to math-s11-t06 (Year 11 Time and location)",
+  "subjects": {
+    "Mathematics Standard": {
+      "year": "Year 11",
+      "entries": [
+        {
+          "id": "math-s11-t01",
+          "playlistOrder": 48,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we convert between seconds, minutes and hours, and between 12-hour and 24-hour time?",
+          "syllabusActionIds": [
+            "cic8bbf9d6",
+            "cicd3af9e2"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cic8bbf9d6",
+              "group": "Time and time differences",
+              "text": "Convert between seconds (s), minutes (min) and hours (h)",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "cicd3af9e2",
+              "group": "Time and time differences",
+              "text": "Represent and convert between 12-hour and 24-hour time formats",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson01.sa.html (sections 2 and 3; drills 1, 2, 6, 7; Q4 pay)"
+          ],
+          "startBoundary": "math-s11-a11 final frame: the wall clock (coded hands 10:10) and the stopwatch; chips '60 s = 1 min', '60 min = 1 h'; grey chip 'Applications of measurement: done'; chips 'Next: time units', '?' (confirmed)",
+          "stopBoundary": "The time ladder (× 60 down, ÷ 60 up); 1 h = 60 × 60 s = 3600 s on screen; a leftover as the next unit down; decimal hours both ways (pay); 12-hour and 24-hour time; noon and midnight. Not: elapsed time (t02); zones (t05, t06); the DMS key (Year 12 t02).",
+          "nextHandoff": "math-s11-t02: the coach (ma12-bus-side-v1.png) and the departure board (ma12-timing-display-v1.png) with 'DEP 2348', 'ARR 0125'; chips 'How long?', 'Next: elapsed time', '?'",
+          "anchors": "a 200-second song on the phone; a calculator; a movie; a playlist; a casual shift at an example $28.40 an hour; a podcast"
+        },
+        {
+          "id": "math-s11-t02",
+          "playlistOrder": 49,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do we calculate elapsed time from timetables and schedules?",
+          "syllabusActionIds": [
+            "cia32b799a"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cia32b799a",
+              "group": "Time and time differences",
+              "text": "Solve a variety of practical problems by calculating elapsed time",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson01.sa.html (hook; WE1 to WE3; traps 02, 03; drills 3 to 5; Q1)"
+          ],
+          "startBoundary": "math-s11-t01 final frame (coach and departure board 'DEP 2348', 'ARR 0125'; chips 'How long?', 'Next: elapsed time', '?')",
+          "stopBoundary": "Elapsed time; counting up in hops (next o'clock, whole hours, minutes left); midnight as a stop; why plain subtraction misleads (376) and borrowing 60; adding a duration past 2400 (next day); timetables (columns are services, rows are stops; next service; wait); a shift's length and pay. Not: zones (t05, t06).",
+          "nextHandoff": "math-s11-t03: the phone (ma12-phone-v1.png) with a coded map, a pin and '−33.86, 151.21'; chips 'What do these numbers mean?', 'Next: latitude and longitude', '?'",
+          "anchors": "an overnight coach; a city bus and bus stop; an example bus timetable (generic stops); a casual shift"
+        },
+        {
+          "id": "math-s11-t03",
+          "playlistOrder": 50,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do latitude and longitude pin down any place on Earth?",
+          "syllabusActionIds": [
+            "ci922e564d"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci922e564d",
+              "group": "Positions on the Earth’s surface",
+              "text": "Identify a location on the Earth's surface using latitude, longitude and position coordinates, with and without using digital tools",
+              "siteCoverage": "covered",
+              "siteGap": "'with and without using digital tools' not taught on the site (MSY-24)"
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson03.sa.html (formulas card; key terms; section 2 coordinate table; WE1)"
+          ],
+          "startBoundary": "math-s11-t02 final frame (the phone's map pin '−33.86, 151.21'; chips 'What do these numbers mean?', 'Next: latitude and longitude', '?')",
+          "stopBoundary": "Latitude (equator, parallels, 0° to 90° N or S, an angle from the centre); longitude (meridians, prime meridian at Greenwich, 0° to 180° E or W); coordinates (latitude, longitude); a gridded map without digital tools; signed decimals and typed coordinates in a map app; degrees and minutes once; comparing places. Not: time from longitude (t04); distances.",
+          "nextHandoff": "math-s11-t04: the desk globe (ms11-desk-globe-v1.png, new) lit by a coded sun; pins 'Sydney 151°E', 'Perth 116°E'; chips 'Noon at different times?', 'Next: longitude and time', '?'",
+          "anchors": "a phone map app; a desk globe; an atlas map of Australia; Australian capitals; Cape Town on Sydney's parallel"
+        },
+        {
+          "id": "math-s11-t04",
+          "playlistOrder": 51,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How does longitude give time differences at 15 degrees per hour?",
+          "syllabusActionIds": [
+            "cib18a3d4b"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cib18a3d4b",
+              "group": "Positions on the Earth’s surface",
+              "text": "Apply 15° = 1 hour time difference to calculate the time differences between locations on Earth given the relevant longitudes",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson03.sa.html (recall; formulas card 'One and four'; WE2, WE3; trap 02; drills 3 to 7; Q2)"
+          ],
+          "startBoundary": "math-s11-t03 final frame (the lit desk globe; pins 'Sydney 151°E', 'Perth 116°E'; chips 'Noon at different times?', 'Next: longitude and time', '?')",
+          "stopBoundary": "360° in 24 h: 15° = 1 h, 1° = 4 min; east is ahead (the Sun gets there first); same side subtract, opposite sides add; ÷ 15 or × 4 min; the day change; the Sun's time against rounded clock time (Perth and Sydney: 2 h 20 min against 2 h). Not: Australian zones (t05); UTC (t06).",
+          "nextHandoff": "math-s11-t05: a coded map of Australia in three zone bands with clock faces 'Perth', 'Adelaide', 'Sydney'; chips '3 zones, 1 time in each', 'Next: Australian time zones', '?'",
+          "anchors": "the desk globe and the Sun; Sydney and Perth; Tokyo and New York; two towns; two ships"
+        },
+        {
+          "id": "math-s11-t05",
+          "playlistOrder": 52,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How do Australian time zones and daylight saving work?",
+          "syllabusActionIds": [
+            "cidfef63ed"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "cidfef63ed",
+              "group": "Time and time differences",
+              "text": "Solve problems involving time zones in Australia, making necessary allowances for daylight saving",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson02.sa.html (key facts on the Australian zones and daylight saving; WE3; traps 01, 03; drill 7)"
+          ],
+          "startBoundary": "math-s11-t04 final frame (the three-band zone map; chips '3 zones, 1 time in each', 'Next: Australian time zones', '?')",
+          "stopBoundary": "Western, Central and Eastern Standard Time and their states; standard gaps (2 h; 30 min); daylight saving (forward 1 h, first Sunday in October to first Sunday in April; NSW, ACT, Vic, Tas, SA; not Qld, NT, WA); summer gaps (five mainland times; Adelaide and Brisbane swap); event times; a flight across zones (duration on the departure clock, then convert). Not: UTC offsets (t06).",
+          "nextHandoff": "math-s11-t06: the phone's world clock ('Sydney', 'London', 'Tokyo' with '?') and a coded world strip with the Greenwich meridian; chips 'One clock for the world?', 'Next: UTC', '?'",
+          "anchors": "a football final in Melbourne; a cricket match in Sydney; a live stream; a video call; Perth to Sydney and back by plane (example times)"
+        },
+        {
+          "id": "math-s11-t06",
+          "playlistOrder": 53,
+          "course": "Year 11 (Standard 1 and Standard 2)",
+          "mainLearnerQuestion": "How does UTC make international time problems simpler?",
+          "syllabusActionIds": [
+            "ci840445ac",
+            "ci9f3c20ba"
+          ],
+          "standard2ActionIds": [],
+          "standard1ActionIds": [],
+          "syllabusActions": [
+            {
+              "id": "ci840445ac",
+              "group": "Time and time differences",
+              "text": "Represent time difference between locations using Coordinated Universal Time (UTC)",
+              "siteCoverage": "covered",
+              "siteGap": null
+            },
+            {
+              "id": "ci9f3c20ba",
+              "group": "Time and time differences",
+              "text": "Solve practical problems involving UTC",
+              "siteCoverage": "covered",
+              "siteGap": null
+            }
+          ],
+          "siteSources": [
+            "year11/time-and-location/lesson02.sa.html (hook; UTC card; city table; WE1, WE2; Q1; Q3; the July case corrected, MSY-26)"
+          ],
+          "startBoundary": "math-s11-t05 final frame (world clock and world strip; chips 'One clock for the world?', 'Next: UTC', '?')",
+          "stopBoundary": "UTC (time at 0°, no daylight saving); offsets (+ ahead, − behind; half hours; + 1 h in a city's own summer, London BST UTC+1); local = UTC + offset and back; city to city through UTC; the day (a negative offset back into yesterday); flights in three steps. Closes the strand. Not: the International Date Line by name; GMT.",
+          "nextHandoff": "math-s11-n01: a coded flight-route map of Australia (7 city dots, 10 example routes); grey chip 'Time and location: done'; chips 'dots and lines', 'Next: networks', '?' (confirmed by n01)",
+          "anchors": "a video call to London (January and July); a broadcast from Tokyo; Sydney and Los Angeles; flights to Dubai and from Singapore (example times)"
+        }
+      ]
+    }
+  }
+}

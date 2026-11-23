@@ -14,7 +14,7 @@ Year 11, Applications of measurement, group "Perimeter, area and volume", outcom
 
 **Stop:** A ≈ (h/2)(d_f + d_l) as a trapezium's average width times the gap, with d_f, d_l and h named as the syllabus names them; why it estimates (the edge is treated as straight); up to four applications, each with its own first and last length, added; a zero length at a pointed end; more applications, a closer estimate; volume as a cross-section's area times a length; capacity in kL. Closes the strand. Not: the word "offset", the "ends once, middles twice" shortcut, plans, photos and maps to scale (Year 12 r07).
 
-**Next:** math-s11-t01 (provisional): the wall clock and the stopwatch; chips "60 s = 1 min", "60 min = 1 h"; grey chip "Applications of measurement: done"; chips "Next: time units", "?".
+**Next:** math-s11-t01 (confirmed by t01's Boundary, 24 Nov 2026): the wall clock and the stopwatch; chips "60 s = 1 min", "60 min = 1 h"; grey chip "Applications of measurement: done"; chips "Next: time units", "?".
 
 ## 2. Site order, sections and worked examples
 
@@ -60,5 +60,5 @@ A land block; a garden pond; a drainage channel; a paddock; a garden bed. No peo
 
 - MSY-21: applications counted and capped at four; the d_m form left to Year 12 r07.
 - Notation exactly as Year 12 r07 recalls: "d f, the first length", "d l, the last length", "h, the perpendicular distance between them"; "on the reference sheet" (Codex confirms against the 2024 reference sheet).
-- Close the strand: grey chip "Applications of measurement: done"; the t01 frame is provisional.
+- Close the strand: grey chip "Applications of measurement: done"; the t01 frame is confirmed (t01 opens on it exactly).
 - Pace: about 9 minutes.

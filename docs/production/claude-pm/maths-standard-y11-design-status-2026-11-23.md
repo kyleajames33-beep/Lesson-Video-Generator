@@ -53,6 +53,53 @@ Checks run: every number recalculated (scratchpad `s11a/verify.py`, `python -I`,
 
 Year 12 recall set up word for word: "1 L = 1000 mL" (r01), "1 mm = 0.001 m" (r08), "1 km = 1000 m" (r10) in a01; "1 ha = 10 000 m²" (t09) in a02; "1 m³ = 1000 L" (r08) in a03; "kilo = 1000" (r14) in a04; "area = ½ × base × height" (t09) in a05a; "the hypotenuse is the longest side, opposite the right angle" (t01a, t03, t08) in a06; "areas by splitting into shapes" (r07) in a07; d_f, d_l and h spoken and labelled as r07 recalls, and "on the reference sheet", in a11 (the "ends once, middles twice" shortcut and the word "offset" are left to r07).
 
+## 1b. Third batch (24 November 2026): Time and location complete
+
+**Small edits first (requested by root).** (1) `lessons/math-s11-m09.md` and its pack: every "provisional" mark on the m09 to a01 join lifted (a01's Boundary opens on m09's frame exactly); the YouTube "Next" line now reads "Next: Units of Measurement: Length, Mass and Capacity." (a01's title and heading); open decision 1 closed. (2) `lessons/math-s11-a11.md` and its pack: the a11 to t01 join confirmed by t01's Boundary; "provisional" marks lifted; the YouTube "Next" line now quotes t01's title; open decision 1 closed. Route inputs 11's two "provisional" mentions of t01 were updated to "confirmed".
+
+**Time and location: complete (6 of 6 outline videos, 8 of 8 content points).**
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| t01 | Seconds, Minutes, Hours and 24-Hour Time | `cic8bbf9d6`, `cicd3af9e2` | 5,750 | 515 s | none |
+| t02 | Elapsed Time: Timetables, Shifts and Midnight | `cia32b799a` | 5,629 | 502 s | none |
+| t03 | Latitude and Longitude: Finding Any Place on Earth | `ci922e564d` | 6,048 | 536 s | `ms11-desk-globe-v1.png` |
+| t04 | Longitude and Time: 15 Degrees Is One Hour | `cib18a3d4b` | 5,541 | 502 s | none (t03's globe) |
+| t05 | Australian Time Zones and Daylight Saving | `cidfef63ed` | 5,514 | 496 s | none |
+| t06 | UTC: Solving International Time Problems | `ci840445ac`, `ci9f3c20ba` | 5,632 | 506 s | none |
+
+Files (all new): route input `../programme/maths-standard-route-inputs-12.json` (entries, joins, colour roles, recurring models, memory aids, anchors, facts for Codex, "year12DependsOn"); packs `pre-design/maths-standard/math-s11-t01.md` to `t06.md`; designs `lessons/math-s11-t01.md` to `t06.md`, each "Revision 1 ... Not voiced"; site findings MSY-22 to MSY-27 in `site-corrections-maths-standard-y11-additions.md` (section 3; the n and d placeholder moved to section 4); kit and plate rows in `maths-standard-y11-kit-and-plate-needs.md`.
+
+Checks run: every number recalculated (scratchpad `s11t/verify.py`, `python -I`, 0 failures); every syllabus quote asserted against the crosswalk while writing route inputs 12; narration counted with `work/brief-review-s11-e/count.py` (all six between 5,514 and 6,048 characters, 13 scene headings each, all under 570 s with 34 to 74 s spare); feedback 16.5 s to 27.1 s; every attempt ends "Pause here to answer."; no em dash in any new file; every plate used was viewed on a contact sheet. Joins: t01 opens on a11's final frame exactly; each "Next" chip quotes the next design's on-screen heading (time units, elapsed time, latitude and longitude, longitude and time, Australian time zones, UTC); t06 closes the strand ("Time and location: done") and hands to n01 with a coded flight-route map (7 city dots, 10 example routes), provisional until n01 is designed.
+
+Year 12 recall set up word for word: "1 h = 60 × 60 s = 3600 s" with "60 × 60" visible (r10's "Year 11: 60 × 60") in t01 scene 2, key note 1 and the memory card; minutes ÷ 60 for decimal hours (r10, r12a) in t01 scene 4; 60 minutes in a degree said once in t03 (Year 12 t02 teaches the DMS key).
+
+Site decisions: lesson01's "add 2400, then subtract" replaced by counting up (MSY-22); lesson01 Q3's flight without zones not used (MSY-23); lesson03's digital-tools gap filled (MSY-24); lesson03's rounding (MSY-25); lesson02's London-in-July error corrected in t06 (MSY-26); daylight-saving dates and the summer gap table added in t05 (MSY-27).
+
+## 1c. Fourth batch (24 November 2026): Networks, paths and trees complete
+
+**Networks, paths and trees: complete (7 of 7 outline videos, 10 of 10 content points).** n01 confirms t06's frame (t06's provisional mark lifted; route inputs 12 updated).
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| n01 | Networks: Dots, Lines and Real-World Maps | `ci4513c403`, `ci2d693812` | 5,520 | 496 s | none |
+| n02 | Network Words: Degree, Directed and Weighted | `cica79bb9b` | 5,573 | 500 s | none |
+| n03 | Drawing Networks from Tables and Maps | `ci022052d4`, `ci51fdc3e5` | 5,558 | 501 s | none |
+| n04 | Paths, Trees and Spanning Trees | `ci0eb52b4b` | 5,475 | 493 s | none |
+| n05 | Minimum Spanning Trees: Connecting Everything for Less | `cicce79437`, `cif65754dc` | 5,495 | 496 s | none |
+| n06 | Shortest Paths: The Quickest Route Through a Network | `ci5aa7836f` | 5,526 | 500 s | none |
+| n07 | When the Shortest Path Isn't the Best Path | `ci53383df4` (site: none) | 5,545 | 498 s | none |
+
+Files (all new): route input `../programme/maths-standard-route-inputs-13.json`; packs `pre-design/maths-standard/math-s11-n01.md` to `n07.md`; designs `lessons/math-s11-n01.md` to `n07.md`, each "Revision 1 ... Not voiced"; site findings MSY-28 to MSY-32 in `site-corrections-maths-standard-y11-additions.md` (section 4; the Data analysis placeholder is now section 5); kit rows in `maths-standard-y11-kit-and-plate-needs.md`.
+
+Checks run: every network value recomputed by search (scratchpad `s11n/verify.py`, `python -I`: shortest paths by a labelling search, minimum spanning trees by Kruskal, degrees, route totals; 0 failures), with MST uniqueness and the camp's 21 spanning trees confirmed by listing; every syllabus quote asserted against route inputs 13 (built from the crosswalk); narration counted with `work/brief-review-s11-e/count.py` (5,475 to 5,573 characters; 13 scene headings each; all about 493 to 501 s, 69 to 77 s spare); feedback 16.8 s to 28.8 s; every attempt ends "Pause here to answer."; no em dash in any new file (en dashes are used only for edge names such as A–B, as in Year 12 c01a). One check caught and fixed a route claim in n02 (Café back to Bakery is 6 min via the Pharmacy, not 9 via the Depot).
+
+Year 12 recall set up word for word: "arrows with directions and weights" (c01a's chip) as a hand tag and spoken in n02 scene 5; "directed, weighted network" (f01's chip) as a row in n02 scene 5 and spoken in n03 scene 5; a network drawn from a table (c01a, c02, f01) in n03; "shortest path" as the least total weight between two vertices (c03's contrast) in n06, with the critical path not mentioned.
+
+Joins: each "Next" chip quotes the next on-screen heading (networks; degree, direction and weight; networks from tables and maps; paths, trees and spanning trees; minimum spanning trees; shortest paths; when shortest isn't best). n07 closes the strand ("Networks, paths and trees: done") and hands to d01 with a survey phone ("How many hours did you sleep last night?"), provisional until d01 is designed; its YouTube "Next" line waits for d01's title.
+
+Site decisions: lesson02 and lesson03 (2017 content) used only for the degree sum and the path definition; the name Dijkstra and ∞ are not used (site advice; Standard pace); Kruskal's method taught, Prim's shown once (the point says "any method"); MSY-28 to MSY-32 cover the thin or missing points.
+
 ## 2. Course-level decisions made for Managing money
 
 - **e12 to m01 join confirmed.** m01 opens on e12's scene 11 frame exactly (swing tag "+3%", "Earning money: done", "Next: prices go up too"). Ruling 87's "provisional" marks in e12 can be lifted; e12's description "Next" line can quote "Percentage Change, Profit and Loss" (root edit, not made here).
@@ -100,7 +147,7 @@ Each block lists the Year 12 designs that recall the Year 11 strand, the exact c
 
 Plan notes: a02 and a03 should use the parts picture or a unit-cube picture (area factor squared, volume factor cubed); megalitres and the prefixes nano to tera are site gaps (MSY items to be written); keep anchors everyday (a garden bed, a water tank, a pool, a shed, phone storage in GB for a04). Likely length flags: a05 (many shapes) and a08 (surface area) may need splits.
 
-### 3.3 Time and location (t01 to t06; 6 videos; not designed)
+### 3.3 Time and location (t01 to t06; 6 videos; designed 24 Nov, section 1b)
 
 | Year 12 design | Recall chip or phrase | The Year 11 video must |
 | --- | --- | --- |
@@ -109,7 +156,7 @@ Plan notes: a02 and a03 should use the parts picture or a unit-cube picture (are
 
 Plan notes: t03 latitude and longitude with and without digital tools (a map app view coded); t04 15° = 1 hour; t05 Australian zones with daylight saving (NSW, Queensland, WA, NT, SA's half hour); t06 UTC. Audit N9: if t06 is the last Year 11 video in playlist order, close on "Year 11: done" with no "Next" chip into Year 12 a01 (or give d19 that close if data runs last).
 
-### 3.4 Networks, paths and trees (n01 to n07; 7 videos; not designed)
+### 3.4 Networks, paths and trees (n01 to n07; 7 videos; designed 24 Nov, section 1c)
 
 | Year 12 design | Recall chip or phrase | The Year 11 video must |
 | --- | --- | --- |
@@ -152,8 +199,10 @@ x01 (money: which pay, tax or purchase calculation does an unseen problem need?)
 6. **Kit additions** (rows m01 to m09 in each design): `PercentBar` (with slider, ladder and reverse arrow), `PartsBar`, gap bars, `PeriodTimeline` month blocks and stamps, budget overflow bar, stacked and ranked total bars, `DecisionPath`, `BlockCounter`, threshold bar, who-pays table, `SpreadsheetGrid` input slider and stale-cell demo, fuel tank, rolling counters on plates, power-time area, bill builder, block container, period converter, row splitter, fund gauge, signed variance bars, account transfer strip. A kit-needs file for the m-strand (in the style of `checks/maths-standard-kit-needs-s11-e.md`) would collect them; not written here.
 7. **Example prices.** Codex's error-check briefs ask for dated NSW sources for registration ($385), the green slip ($780), the transfer fee ($40), comprehensive ($1,640), the lay-by fee ($10), water ($2.70/kL, $190 service) and gas (75c a day; 4.8c and 3.9c per MJ). Any change touches only the affected design's numbers.
 8. **m05 and m06 length.** About 560 s each, under the 570 s cap with named reserve trims; root may prefer to split m05 (duty and fees; insurance and the loan) if the voiced takes run long.
-9. **Remaining work (updated 24 Nov).** Designed: m (9) and a (12 designs). Not designed: Time and location (t01 to t06), Networks (n01 to n07), Data analysis (d01 to d19), optional x01 and x02: 34 videos. Section 3 is the plan. Next: t01 (it must confirm or replace a11's provisional final frame and show "60 × 60" for Year 12 r10), then n and d in parallel; x01 any time.
+9. **Remaining work (updated 24 Nov, after the n strand).** Designed: m (9), a (12 designs), t (6), n (7). Not designed: Data analysis (d01 to d19), optional x01 and x02: 21 videos. Section 3.5 is the plan. Next: d01 (it must confirm or replace n07's provisional survey-phone frame, and set the 'DATA ANALYSIS' header strip), then d02 onward in order; x01 any time; x02 after d. d19 (the last Year 11 video in playlist order) closes with 'Year 11: done' and no 'Next' chip (audit N9).
 10. **a05 split (24 Nov).** One point (`ci139f00a0`) names seven shape families plus perimeters and composites; designed as a05a (straight-edged) and a05b (circles, sectors, curved composites), both playlist 41, by ruling 8's test. Confirm, or rule one video (it would run about 11 minutes even after cuts).
 11. **m09 join and Year 12 lines (24 Nov).** a01 uses m09's final frame exactly: lift m09's provisional marks and set its "Next" to "Units of Measurement: Length, Mass and Capacity". Year 12 t09's entry line cites "a03" for the hectare; it is taught in a02. Year 12 "Builds on (Year 11)" lines (a01, a05, a12, b01, r01, r07) can now name the a-strand titles (audit B2).
 12. **Facts for Codex (24 Nov).** Netball court 30.5 m by 15.25 m (a02); Olympic pool minimum 50 m by 25 m by 2 m (a03); softball base path 18.29 m (a05b, a06); golf ball minimum diameter 42.67 mm (a08); the trapezoidal rule on the 2024 Standard reference sheet (a11; Year 12 r07 recalls "on the reference sheet"); the site's concrete price $220 per m³ (a09, labelled an example).
 13. **Plates and kit (24 Nov).** The a-strand needs no new plate. The m-strand's three plates and every kit part for m and a are collected in `maths-standard-y11-kit-and-plate-needs.md` (answers open question 6's request for a kit-needs file).
+14. **t strand (24 Nov).** (a) The new plate `ms11-desk-globe-v1.png` (brief in `lessons/math-s11-t03.md`) is needed for the t03 build; if it cannot show a recognisable Australia, the coded globe carries the scenes (t03 open decision 1). (b) Facts for Codex: city coordinates (t03); rounded longitudes (t04); Australian daylight-saving states and dates (t05); UTC offsets with British Summer Time and US daylight-saving dates (t06); example flight times (Perth to Sydney 4 h 30 min, Sydney to Perth 5 h, Sydney to Dubai 14 h 20 min, Singapore to Sydney 7 h 45 min); "−33.86, 151.21" in Sydney and "33.86°N, 151.21°E" in the open Pacific; the Google voice's reading of four-digit times ("nought nine fifteen", "nineteen forty-five"). (c) t05 teaches the Australian zones as gaps and leaves UTC offsets to t06 (t05 open decision 1). (d) "Position coordinates" is read as the (latitude, longitude) pair (t03 open decision 2).
+15. **n strand (24 Nov).** (a) No new plate. (b) Facts for Codex: the 2024 glossary wording for path, tree, spanning tree and minimum spanning tree (n04); uniqueness of every shortest path and MST where "the" or "any" is claimed (n06, n07; checked by listing here); 21 spanning trees of the camp network (n04); the example fibre price $25,000 per km (n05) and the example speeds (n07). (c) Root choices offered: loops kept to one sentence in n02 (open decision 1); method names said once in n05 (open decision 1); "–" instead of ∞ in n06 (open decision 1); no adjacency matrices in n03 (open decision 1). (d) n07's description links lesson06 until the site adds a card for `ci53383df4` (MSY-32).

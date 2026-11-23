@@ -148,6 +148,91 @@ Added 24 November 2026 by Claude (designer of record) with the a-strand packs an
 - Correction: teach the rule as one trapezium, A ≈ (h/2)(d_f + d_l), applied up to four times with each application's own first and last lengths, then added; keep worked examples to four applications or fewer. The compressed "first and last once, middles twice" form can stay as an extension note, since Year 12 (the trapezoidal rule from plans and photos) teaches it.
 - Reason: the 2024 point caps the applications at four and names only the single-application formula. Video a11 follows the point; Year 12 r07 then introduces the shortcut.
 
-## 3. Time and location, Networks, Data analysis
+## 3. Time and location (packs and designs t01 to t06; written 24 November 2026)
 
-Not yet written: the packs for these strands are not drafted in this batch (see `maths-standard-y11-design-status-2026-11-23.md`). The crosswalk's remaining partial and missing points (audit S9): the shortest path that is not the best path (`ci53383df4`, no lesson); survey design, privacy, ethics and faults (`ci22ad0284`, `cie24b93fc`, `ci63195120`, `ci4c7cc505`); uniform distributions (`cie2345a02`); spreadsheet graphs and statistics (`cia127389f`, `ci6446263f`, no lesson); infographics and misleading graphs (`ci2c2bc777`, `ci9c22fcc3`, `ciebdc8d60`); clusters and gaps (`ci72ffda24`). The audit's N7 items (a Year 11 speed page; formulas-and-equations lesson02 as a revision page) belong to the earlier strands and are left for root.
+Source as above (HEAD `5d74a627`). Every site value used in the t packs was recalculated (scratchpad `s11t/verify.py`, `python -I`, 0 failures). Final answers in lesson01 are all right; the items below are method, rounding, factual and syllabus-gap findings.
+
+### MSY-22. "Add 2400, then subtract" gives the wrong number unless 60 is borrowed
+
+- Lesson: `year11/time-and-location/lesson01.sa.html`, card 02 ("Crossing midnight: Add 2400 to the finish time before subtracting. e.g. depart 2348, arrive 0125: 2525 − 2348 = 1 h 37 min"); trap 03; drill 4's worked answer ("40 min to midnight (2240→2300=20, 2300→0000=60, ...)").
+- Old text: as quoted. As ordinary subtraction, 2525 − 2348 = 177, not 1 h 37 min; drill 4's "40 min to midnight" contradicts its own next step (2240 to 0000 is 80 min).
+- Correction: teach counting up (to the next whole hour, whole hours, the minutes left), which the page's WE1 and WE2 already use; if "add 2400" stays, add "then subtract hours and minutes separately, borrowing 60 minutes when needed (as in trap 02)". Fix drill 4's line to "2240 → 0000 = 1 h 20 min; 0000 → 0205 = 2 h 5 min; total 3 h 25 min".
+- Reason: four-digit times are not base-ten numbers; students who subtract as written get 1 h 77 min. Video t02 counts up and shows borrowing once.
+
+### MSY-23. A layover flight ignores time zones
+
+- Lesson: `lesson01.sa.html`, short answer Q3 (Sydney 2150, 8 h 20 min to Singapore, "At what 24-hour time does the plane land in Singapore?": answer 0610).
+- Old text: the answer adds the flight time to the Sydney departure time and calls it the landing time in Singapore.
+- Correction: either ask "in Sydney time" throughout, or move the question to the UTC lesson and convert (Singapore is UTC+8; Sydney UTC+10 or +11).
+- Reason: local landing times are always in the arrival city's zone; the question teaches the opposite of lesson02. Video t02 adds durations within one zone; t06 handles flights with UTC.
+
+### MSY-24. "With and without using digital tools" is not taught
+
+- Lesson: `year11/time-and-location/lesson03.sa.html` (coordinates only as a table and in words).
+- Point: `ci922e564d` ("Identify a location on the Earth's surface using latitude, longitude and position coordinates, with and without using digital tools").
+- Correction: add a card on (a) reading coordinates off a map with a grid of parallels and meridians (estimating between lines), and (b) a map app: signed decimal coordinates (minus latitude south, minus longitude west), and typing coordinates to drop a pin; one line on degrees and minutes (60 minutes in a degree).
+- Reason: both halves of the point are named in the syllabus. Video t03 teaches them.
+
+### MSY-25. Rounding slips in the longitude short answers
+
+- Lesson: `lesson03.sa.html`, short answer Q1 (c) and Q3 (c).
+- Old text: Q1 (c) "0800 + 7 h 36 min = 1536" for 114.2 ÷ 15 = 7.6133 h; Q3 (c) "approximately 14 h 47 min" for 221.9 ÷ 15, then (d) uses 14 h 48 min.
+- Correction: 7.6133 h = 7 h 36.8 min ≈ 7 h 37 min, so 1537; 14.7933 h = 14 h 47.6 min ≈ 14 h 48 min in both (c) and (d). Better: × 4 minutes per degree (114.2 × 4 = 456.8 min; 221.9 × 4 = 887.6 min).
+- Reason: the page rounds down in one place and up in another for the same kind of value. Video t04 teaches × 4 minutes per degree with whole-degree examples.
+
+### MSY-26. London is not UTC+0 in July
+
+- Lesson: `year11/time-and-location/lesson02.sa.html`, "Revisit your thinking" ("in July (AEST, UTC+10), the call would be at 7:00 pm Sydney time"); short answer Q2 (d) ("July (London still UTC+0 ...)": answer 1900); trap 01 ("When London also observes BST (UTC+1), the gap shrinks back to 10 hours").
+- Old text: as quoted.
+- Correction: London uses British Summer Time (UTC+1) from the last Sunday in March to the last Sunday in October. A 9 am London call in July is 0800 UTC, which is 1800 (6:00 pm) in Sydney on AEST. Trap 01: "When London is on BST and Sydney on AEST (most of April to September), the gap is 9 hours; only in the weeks when both are on daylight saving is it 10 hours."
+- Reason: the page's own city table lists London as UTC+1 in its summer; the July answers contradict it. Video t06 teaches the corrected July case.
+
+### MSY-27. No dates or summer gap table for Australian daylight saving
+
+- Lesson: `lesson02.sa.html` (key facts and key terms name AEDT and ACDT and the non-observing states, but not when daylight saving runs, and no summer table of gaps between Australian cities).
+- Point: `cidfef63ed` ("Solve problems involving time zones in Australia, making necessary allowances for daylight saving").
+- Correction: add "Daylight saving runs from the first Sunday in October to the first Sunday in April in NSW, the ACT, Victoria, Tasmania and South Australia" and a small table of gaps from Sydney in standard time (Brisbane 0, Adelaide and Darwin 30 min, Perth 2 h) and in summer (Brisbane 1 h, Adelaide 30 min, Darwin 1 h 30 min, Perth 3 h).
+- Reason: "making necessary allowances" needs the dates; the summer gaps are where students go wrong. Video t05 teaches both (Codex confirms the dates).
+
+## 4. Networks, paths and trees (packs and designs n01 to n07; written 24 November 2026)
+
+Source as above (HEAD `5d74a627`). Every site value used in the n packs was recalculated (scratchpad `s11n/verify.py`, `python -I`, 0 failures); no arithmetic error was found in lessons 01, 04, 05 and 06. Lessons 02 (degree sequences, adjacency matrices) and 03 (walks, trails, Eulerian and Hamiltonian ideas) are 2017 content; only the degree-sum idea (02) and the definition of a path (03) are used.
+
+### MSY-28. "Circumstances in which networks are used" is only a list
+
+- Lesson: `year11/networks-paths-and-trees/lesson01.sa.html` (the big-idea card and card 07 list systems: roads, social media, water mains, web links).
+- Point: `ci2d693812` ("Examine circumstances in which networks are used in a variety of real-world applications").
+- Correction: add a short card on what networks are used to decide: whether everything stays connected when a link fails; which place is best connected (highest degree); the shortest route between two places; the cheapest way to connect everything. Link each to its later lesson.
+- Reason: "examine circumstances" asks why and when networks are used, not only where. Video n01 teaches the four questions.
+
+### MSY-29. Weighted edges are not defined
+
+- Lesson: `lesson01.sa.html` (vertex, edge, degree, directed and loops are defined; weights first appear as data in lessons 05 and 06).
+- Point: `cica79bb9b` ("... vertex, edge, degree, directed networks and weighted edges").
+- Correction: add "Weight: a number on an edge, such as a distance, time or cost. A network whose edges carry weights is a weighted network; with arrows too, a directed, weighted network." with one route-total example.
+- Reason: the point names weighted edges as terminology to define and use. Video n02 defines them (Year 12 c01a and f01 recall "directed, weighted networks").
+
+### MSY-30. No construction from a table or map, and no practical problem set
+
+- Lessons: `lesson01.sa.html` (drawing from a description only); `lesson02.sa.html` (adjacency matrices of 0s and 1s, 2017 content).
+- Points: `ci022052d4` ("Construct a network diagram to represent information from a given table or map, showing weighted and directed edges"); `ci51fdc3e5` ("Solve problems involving network diagrams in a variety of practical contexts").
+- Correction: add a lesson that draws (a) an undirected weighted network from a symmetric distance table (use one half; a dash is no edge), (b) a directed weighted network from a from-to table (row = from), and (c) a network from a map (keep the stops, paths and lengths; drop the curves), with practical questions (route totals, return trips, a travel time).
+- Reason: both points have no matching page; the 0/1 matrices answer a different (2017) point. Video n03 teaches them.
+
+### MSY-31. "Minimum spanning tree" is a lesson04 term but defined only in lesson05
+
+- Lesson: `lesson04.sa.html` ("In Lesson 5, we extend this to weighted networks and find the minimum spanning tree").
+- Point: `ci0eb52b4b` ("Define and use the network terminology: path, tree, spanning tree and minimum spanning tree").
+- Correction: define the minimum spanning tree in lesson04 ("the spanning tree with the smallest total weight") with two spanning trees of one weighted network compared by total; keep the methods in lesson05. The page's note that "n − 1 edges" is a check, not a requirement, is correct and can stay.
+- Reason: the term belongs to this point. Video n04 defines it and leaves the method to n05.
+
+### MSY-32. No lesson for "a shortest path is not necessarily the best path nor contained in any minimum spanning tree"
+
+- Lessons: none (crosswalk: missing).
+- Point: `ci53383df4`.
+- Correction: add a short card after lesson06: (a) circumstances where the shortest path is not the best (tolls, travel time against distance, closures and floods, hills, safety, traffic), with a weight swap that changes the answer; (b) a triangle such as AB 3, BC 3, AC 5, whose only minimum spanning tree (AB, BC) does not contain the shortest path from A to C (the edge AC), and why (the tree minimises the total for linking everything, not any one trip).
+- Reason: a whole point with no page. Video n07 teaches it from the syllabus (ruling 3).
+
+## 5. Data analysis
+
+Not yet written in this file: the d packs follow (see `maths-standard-y11-design-status-2026-11-23.md`). The crosswalk's remaining partial and missing points (audit S9): survey design, privacy, ethics and faults (`ci22ad0284`, `cie24b93fc`, `ci63195120`, `ci4c7cc505`); uniform distributions (`cie2345a02`); spreadsheet graphs and statistics (`cia127389f`, `ci6446263f`, no lesson); infographics and misleading graphs (`ci2c2bc777`, `ci9c22fcc3`, `ciebdc8d60`); clusters and gaps (`ci72ffda24`). The audit's N7 items (a Year 11 speed page; formulas-and-equations lesson02 as a revision page) belong to the earlier strands and are left for root.
