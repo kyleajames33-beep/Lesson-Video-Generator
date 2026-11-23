@@ -74,7 +74,7 @@ Handoff: the 718 g loaf on the scale beside the loaf bell, "how far above the us
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ and the three centres violet; areas amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ and the three centres violet; areas amber; answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: two hundred loaves
 > Here's a bakery's quality check. Two hundred loaves, all labelled seven hundred grams, come off the line and onto the scale. They don't all weigh the same. As each mass drops into its column, a shape starts to build. What shape is it? What does normally distributed data look like, and why do its mean, median and mode **match**?
@@ -261,9 +261,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: The Normal Distribution: The Bell Curve | Year 12 Maths Standard 2
+Title: The Normal Distribution: The Bell Curve | Year 12 Maths Standard
 
-(Title length: 66 characters by script.)
+(Title length: 64 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson06.sa.html
 

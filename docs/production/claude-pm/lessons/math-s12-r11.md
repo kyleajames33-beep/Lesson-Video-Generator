@@ -78,7 +78,7 @@ Handoff: math-s12-r12a: "Sydney to Melbourne, 880 km, with a stop: can one line 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price teal; quantity violet; unit price amber; best value green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame. A small grey tag "example prices" sits at the bottom right of every scene with a price (above y = 950).
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price teal; quantity violet; unit price amber; best value green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame. A small grey tag "example prices" sits at the bottom right of every scene with a price (above y = 950).
 
 ### 1. hook: which bag?
 > Here's the flour shelf. The two kilogram bag costs three dollars eighty, and the five kilogram bag costs eight dollars seventy-five. The small bag has the lower price tag, so it's tempting to grab it. But the big bag has much more flour in **it**. A few cents on every kilogram adds up over a year of shopping, so it's worth knowing how to check. Which pack is the best **buy**?

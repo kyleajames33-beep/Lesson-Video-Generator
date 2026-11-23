@@ -48,7 +48,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Attempts (pack questions).** A1: x³ at P(1, 1) with h = 1, 0.1, 0.01, −0.01: 7, 3.31, 3.0301, 2.9701, about 3; crossed "f(0.1) instead of f(1.1)" ((0.001 − 1)/0.1 = −9.99). A2: x⁴ at 2, h = ±0.1: 34.481 and 29.679; the curve gets steeper, so the true gradient is between; crossed "−29.679" (sign of the negative run lost).
 - **Mistake scene:** none separate. Setting h = 0 (5); only positive h (4, 6); too-tiny h on a calculator (5, one sentence); f(h) instead of f(c + h) (A1 crossed); a lost minus in the run (A2 crossed).
 - **Cause chain taught, in order:** (1) zoomed in, a smooth curve looks straight, like its tangent, so it has a gradient at a point (1); (2) a secant from P to a nearby Q has a gradient we can calculate, rise over the step h (2); (3) as h shrinks, Q slides to P and the secant swings onto the tangent, so the gradients settle on the curve's gradient (3); (4) from the left as well as the right, and if both sides settle on the same number that is the gradient (4); (5) h can't be 0, because rise and run would both be 0 (5); (6) at a corner the two sides settle on different numbers, so there is no single tangent (6).
-- **Entry knowledge (route):** c02 (shorter intervals give better speed estimates); w08 (evaluating f(c + h)); w29 and w30 (the corner of |x| at 0).
+- **Entry knowledge (route):** c02 (shorter intervals give better speed estimates); w08 (evaluating f(c + h)); w30 (the corner of |x| at 0; corrected 23 Nov 2026 from "w29 and w30", coherence audit: only w30 has the corner).
 - **Handoff (to math-a11-c05, "What is the derivative, and how do we write it?").** Scene 12: the water slide plate (`ma11-water-slide-v1.png`) side-on, with a coded dot riding its profile and a short violet tangent at the dot, readout "steepness here: ?"; chips "Next: a gradient for every x" and "?". This is c05's opening frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -62,7 +62,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
   (h) Windows: x² plot x 0 to 3.5, y 0 to 10; |x| plot x −2 to 2, y −0.5 to 2; A2 picture x 1 to 3, y 0 to 40.
 
 Main question: *Zoom in on a bend on a map and it straightens. How do shrinking secants find the gradient of a curve, with numbers?*
-Entry knowledge (c02, w08, w29, w30): shorter intervals improve an estimate; f(c + h) by substitution; the corner of |x|.
+Entry knowledge (c02, w08, w30): shorter intervals improve an estimate; f(c + h) by substitution; the corner of |x|.
 Stops after: the secant through P(c, f(c)) and Q(c + h, f(c + h)); tables as h shrinks from both sides, by hand, with a spreadsheet and an app; x² and x³; h ≠ 0; a corner with no gradient. No f′, no algebraic limit, no rule.
 Handoff: math-a11-c05: "the water slide: a steepness at every point: one new function?"
 

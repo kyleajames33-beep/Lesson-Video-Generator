@@ -69,7 +69,7 @@ Handoff: math-s12-r06a: "benchtop $320 a metre: what does it cost?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; n violet; space teal; overflow and mistakes red; answer green. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; n violet; space teal; overflow and mistakes red; answer green. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: rearrange without lifting
 > Here's the plan. You want to rearrange your bedroom, but you don't want to drag the bed around ten times to find what fits. So draw the room to scale, cut out paper shapes of the furniture at the same scale, and move those instead. The room is three point six metres by three metres, and it has to fit in a space ten centimetres by eight on the page. Builders, designers and landscapers start every job like this. So how do we construct a scale **drawing**?

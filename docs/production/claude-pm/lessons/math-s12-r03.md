@@ -72,7 +72,7 @@ Handoff: math-s12-r04: "a bushwalk map, 1 : 25 000: how far is the walk, really?
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): tagged amber; catch blue; untagged grey; estimate teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): tagged amber; catch blue; untagged grey; estimate teal; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: fish we cannot count
 > Here's the lake. The local fishing club wants to know how many fish live in it, so it can set a fair catch limit. Nobody can drain the lake and count them. But the club can count what's in a net. Wildlife rangers have the same problem with possums, koalas and birds. So how can a ratio estimate a population we can't **count**?

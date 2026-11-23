@@ -84,7 +84,7 @@ Handoff: Standard 2, math-s12-i06a: "a gym chain's share: $6.00, a 30c dividend,
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): P violet; rate amber; simple blue; compound teal; interest on interest olive; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): P violet; rate amber; simple blue; compound teal; interest on interest olive; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: two accounts
 > Here's a coffee cart business with five thousand dollars to put away for five years, at six per cent a year. Rates change, so six per cent is just an example. One account pays the interest out each year. That's simple interest. The other leaves it in, adding it once a year. That's compound interest. After five years, which one is ahead, and by how much? So why does compound interest pull ahead of simple interest, and how does a spreadsheet show **it**?

@@ -69,7 +69,7 @@ Handoff: the traffic network with three cuts, "which cut tells us the most cars 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; saturated amber ("full"); cuts violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · NETWORK FLOW". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; saturated amber ("full"); cuts violet; answer green; mistake red. Header strip "NETWORK FLOW" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: empty pipes
 > Here's the festival's water network, with every pipe empty, and water only runs one way through each pipe. Each pipe shows its flow over its capacity, so nought over twelve means nothing flowing yet, out of a possible twelve kilolitres an hour. The campground wants as much water as the pipes can deliver, which is called the network's flow capacity. So how does the saturated edges method find the most a network can **carry**?
@@ -270,9 +270,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: The Saturated Edges Method for Maximum Flow | Year 12 Maths Standard 2
+Title: The Saturated Edges Method for Maximum Flow | Year 12 Maths Standard
 
-(Title length: 70 characters by script.)
+(Title length: 68 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson02.sa.html
 

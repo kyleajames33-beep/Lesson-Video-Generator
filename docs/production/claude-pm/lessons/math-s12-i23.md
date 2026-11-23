@@ -70,7 +70,7 @@ Handoff: math-s12-r01: "how much of the jug is cordial?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest and tax amber; payments violet; present value teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ANNUITIES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest and tax amber; payments violet; present value teal; answer green; mistake red. Header strip "ANNUITIES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: three real decisions
 > Everything from the last few videos comes together here, in three real decisions. First, what does super do with a first job's pay? Second, should you save up for a car, or borrow for it **now**? And third, how much can a monthly repayment actually **borrow**? Each one is an annuity, and each ends in a decision you can back with numbers. So how do annuities answer super, savings and loan **decisions**?
@@ -269,14 +269,14 @@ Syllabus content, Standard 2 (NSW Mathematics Standard 11-12, 2024):
 Standard 1 has no annuities content.
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faa14f8aa3
 
-Builds on: How Each Input Changes an Annuity's Value. Next: the first ratios video.
+Builds on: How Each Input Changes an Annuity's Value. Next: Ratios, Fractions and Simplest Form.
 
 #Year12Maths #MathsStandard #Superannuation #HSCScience
 
 ## Open decisions
 
 - **1. The super return assumption.** 5.4% p.a. after fees, compounded fortnightly, keeps the site's `we-1` rate; it is labelled an assumption. Confirm, or ask for a cited long-run figure.
-- **2. The r01 teaser (shared with i18).** The jug is provisional until r01 is designed; only scene 11 changes if r01 picks another anchor. Revision 2 (root note, 18 Nov 2026): the r01 pack opens on the cordial jug from i18's Standard 1 panel, so scene 11 ends on that same jug (`ma11-water-jug-v1.png` with the coded cordial layer, no numbers), and the kit-needs house roof triangle moves to r13 and r14, which hand to t01. Both routes (Standard 1 from i18, Standard 2 from here) reach r01 on one picture. No change to scene 11 was needed; this confirms it.
+- **2. The r01 teaser (shared with i18).** Closed 23 Nov 2026 (coherence audit S3): r01 is designed and opens on this jug. (Earlier text: the jug was provisional until r01 was designed.) Revision 2 (root note, 18 Nov 2026): the r01 pack opens on the cordial jug from i18's Standard 1 panel, so scene 11 ends on that same jug (`ma11-water-jug-v1.png` with the coded cordial layer, no numbers), and the kit-needs house roof triangle moves to r13 and r14, which hand to t01. Both routes (Standard 1 from i18, Standard 2 from here) reach r01 on one picture. No change to scene 11 was needed; this confirms it.
 - **3. Payday Super sentence.** The "within days of each payday" detail is new law from 1 July 2026; it is one sentence and the first trim.
 
 ## Review notes

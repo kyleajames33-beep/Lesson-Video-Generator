@@ -261,7 +261,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Use graphing applications to identify the graphs of y = a^x and y = log_a x as reflections of each other in the line y = x, in cases where a > 1 and 0 < a < 1"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce
 
-Builds on: The change of base rule; exponential graphs. Next: Exact trig values from two special triangles.
+Builds on: Exponential graphs (e01); logarithms as indices (e03); domain and range (w09). Next: Exact trig values from two special triangles.
 
 #Year11Maths #MathsAdvanced #LogarithmicFunctions #HSCScience
 

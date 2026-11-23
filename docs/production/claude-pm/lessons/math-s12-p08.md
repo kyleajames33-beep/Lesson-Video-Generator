@@ -75,7 +75,7 @@ Handoff: two routes: Standard 2 to z01 ("200 loaves weighed: what shape is this?
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles: claim figures violet; sample size teal; relative change amber; absolute change blue; flags amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles: claim figures violet; sample size teal; relative change amber; absolute change blue; flags amber; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: four out of five
 > Here's that app advertisement. Four out of five users sleep better. Then the tiny print says it's based on twenty-five volunteers. Advertisers, news sites, councils and governments all use numbers like this to persuade us, and to make decisions. You don't need new formulas to check them, just the probability you already know, and a few good questions. So how do the media, governments and companies use probability to make **decisions**?

@@ -279,7 +279,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Apply trigonometric identities to solve problems, simplify expressions and prove further trigonometric identities using substitution and/or reduction to sin x and cos x"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/faa07be39c
 
-Builds on: Complementary angle identities; sec, cosec and cot for any angle. Next: Proving trig identities.
+Builds on: Trig ratios on a circle (t03); quadrant signs (t04); reciprocal and quotient identities (t12); algebraic fractions (w02). Next: Proving trig identities.
 
 #Year11Maths #MathsAdvanced #PythagoreanIdentities #HSCScience
 

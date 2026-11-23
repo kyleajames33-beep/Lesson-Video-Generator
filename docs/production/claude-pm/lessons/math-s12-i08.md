@@ -81,7 +81,7 @@ Handoff: math-s12-i09: "$6,200 of new tools: worth less each year?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): start violet; rates and costs amber; return teal; access blue; risk hatched ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): start violet; rates and costs amber; return teal; access blue; risk hatched ink; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: four places for your money
 > Here are four places to put the same money. A savings account, a term deposit, shares, and an investment property. If you're doing Standard 1, shares aren't in your course, so you can skip that row. The interest rate is only part of the story. When you'll need the money back, and how much risk you can take, matter just as much. So which investment suits which **goal**?

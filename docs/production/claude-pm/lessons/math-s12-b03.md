@@ -73,7 +73,7 @@ Handoff: math-s12-b04a: "one line through the middle?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature amber; ice creams teal; sunscreen violet; points ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature amber; ice creams teal; sunscreen violet; points ink; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: ice creams and sunscreen
 > Here's the kiosk's board with its new column, sunscreen sold. Let's plot ice creams across and sunscreen up. The points rise, and sit almost exactly on a straight line. That's a very strong, positive, linear relationship. So should the kiosk sell more ice creams, to sell more sunscreen? When one thing moves with another, does one cause the **other**?

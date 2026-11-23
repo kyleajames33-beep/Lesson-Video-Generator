@@ -75,7 +75,7 @@ Handoff: math-s12-t11: "four triangles from the topic: which rule fits?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bearings blue; distances ink; angles at O amber; area chips pale blue; boundary teal; rain teal with depth amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bearings blue; distances ink; angles at O amber; area chips pale blue; boundary teal; rain teal with depth amber; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the survey we left for later
 > Remember this? A radial survey, from the land area video. It needed triangle rules, and now we have them. Later, the storm from the rainfall video comes back too. Here's how one works. A surveyor stands at one point inside the land, called O. For each corner, they write down just two things, the true bearing of that corner from O, and its distance. Because the directions come from a **compass** as true bearings, it's called a compass radial survey. Here's a farm paddock with four corners, A, B, C and D, and its field book. The same idea works for any number of corners. So how does a compass radial survey map this paddock, and find its **area**?

@@ -270,7 +270,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Use graphs of functions and their derivatives, without the use of algebraic techniques, to describe and interpret physical phenomena"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678
 
-Builds on: Stationary points of a cubic. Next: Displacement and velocity.
+Builds on: Rates and units from tangents (c03); sketching f′ from f (c15); differentiating polynomials (c07). Next: Displacement and velocity.
 
 #Year11Maths #MathsAdvanced #RatesOfChange #HSCScience
 

@@ -292,7 +292,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Convert between degrees and radians and find the exact sine, cosine and tangent ratios for integer multiples of π/6 and π/4"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-Builds on: The ambiguous case, and choosing a rule. Next: Arc length, sector area and segment area.
+Builds on: Angles on a circle (t03); related angles and quadrant signs (t04); Year 10 circumference and area. Next: Arc length, sector area and segment area.
 
 #Year11Maths #MathsAdvanced #Radians #HSCScience
 

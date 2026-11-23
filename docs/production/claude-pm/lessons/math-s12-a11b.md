@@ -70,7 +70,7 @@ Handoff: math-s12-a12: "a $1,200 holiday house, split evenly: double the friends
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; vertex amber; valid x pale blue band, valid y pale teal band; outside grey dashed; assumption chip amber; why-it-fails chip violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; vertex amber; valid x pale blue band, valid y pale teal band; outside grey dashed; assumption chip amber; why-it-fails chip violet; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: twenty-five metres underground
 > Here's the rocket's graph, with the model kept going. At five seconds, it says the height is minus twenty-five metres. And at minus one second, before the launch, it says minus twenty-five metres too. But the rocket is sitting on the grass. It can't be underground, and it can't fly before it's launched. The equation keeps going for ever, but the real situation **doesn't**. So which values of t and h actually make sense, and where does a quadratic model stop **working**?
@@ -257,9 +257,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Quadratic Models: Valid Values and Limitations | Year 12 Maths Standard 2
+Title: Quadratic Models: Valid Values and Limitations | Year 12 Maths Standard
 
-(Title length: 73 characters.)
+(Title length: 71 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html
 

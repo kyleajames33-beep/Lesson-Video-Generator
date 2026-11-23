@@ -73,7 +73,7 @@ Handoff: math-s12-b02: "five days, five points: what shape do they make?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): independent variable and x axis amber; dependent variable and y axis teal; points ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): independent variable and x axis amber; dependent variable and y axis teal; points ink; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the kiosk's board
 > Trigonometry's done, and this is a new topic. Here's a beach kiosk's board. Each day, the kiosk writes down two things, the top temperature and the number of ice creams sold. Here are five days. Eighteen degrees, forty ice creams. Twenty-two degrees, sixty. Twenty-five, seventy-five. Twenty-eight, ninety. And thirty-two degrees, a hundred and twenty ice creams. So when do we need data in pairs like this, and which one is the independent **variable**?

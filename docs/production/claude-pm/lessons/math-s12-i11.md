@@ -84,7 +84,7 @@ Handoff: math-s12-i12: "a $3,000 e-bike: buy now, pay later? What does paying la
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; straight-line blue; declining balance olive; rate, multiplier and crossing amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; straight-line blue; declining balance olive; rate, multiplier and crossing amber; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: one van, two methods
 > Here's a delivery van, bought by a small business for forty thousand dollars. Businesses really do choose between two ways to model its value, though the rules and prices change over time. Straight-line takes six thousand dollars off every year. Declining balance takes twenty per cent of whatever it's worth **now**. So which one loses value faster? You might say declining balance, because twenty per cent of forty thousand is eight thousand, more than **six**. But that's only the first year. So which method loses value faster, and how can a spreadsheet show the whole **story**?
@@ -302,7 +302,7 @@ Builds on: Declining Balance Depreciation and Compound Interest. Next: Buy Now, 
 
 ## Open decisions
 
-- **1. The i12 join (root and the i12 designer; ruling 31).** Closed in Revision 2: rulings 38 and 39 accept the e-bike frame, and i12's design opens on it. Revision 1 text: The final frame is fixed as ruling 31 states (the e-bike with a "buy now, pay later?" tag). Details for the i12 designer to confirm in their decisions file: the price "$3,000" on the tag (the i12 pack's e-bike price), the grey "What things are worth: done" thumbnail (i12 may fade it on its first sentence), and the chip wording "Next: the real cost of borrowing". If i12 wants another price or wording, only scene 12's tag text changes. The "Next" line in the description uses a provisional i12 title.
+- **1. The i12 join (root and the i12 designer; ruling 31).** Closed in Revision 2: rulings 38 and 39 accept the e-bike frame, and i12's design opens on it. Revision 1 text: The final frame is fixed as ruling 31 states (the e-bike with a "buy now, pay later?" tag). Details for the i12 designer to confirm in their decisions file: the price "$3,000" on the tag (the i12 pack's e-bike price), the grey "What things are worth: done" thumbnail (i12 may fade it on its first sentence), and the chip wording "Next: the real cost of borrowing". If i12 wants another price or wording, only scene 12's tag text changes. The "Next" line in the description uses i12's title, "Buy Now, Pay Later and Loans: What They Really Cost" (confirmed 23 Nov 2026, coherence audit S3).
 - **2. Olive for declining balance (learning review).** Closed in Revision 2: root's decision 4 (leave as designed; the builder checks it on a real still at phone size). Revision 1 text: Olive is the kit's `MATH_CURVE_OLIVE`; blue is kept for straight-line from i09, and teal stays with compound growth (i02a to i05). Check that olive reads clearly against the paper at phone size.
 
 ## Review notes

@@ -79,7 +79,7 @@ Handoff: math-s12-r02: "a drinks esky: $100 and $60 put in, $480 taken."
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first quantity amber; second blue; whole teal; common factor violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first quantity amber; second blue; whole teal; common factor violet; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how much is cordial?
 > Here's the jug of cordial. It has two hundred and fifty millilitres of cordial, and then one litre of water is added. How much of the jug is cordial? Recipes, paint mixes, phone screens and even sports results all ask this kind of question. To answer it, we need two ideas that are closely linked, a ratio and a **fraction**. And along the way, we'll write a ratio in its simplest **form**.
@@ -290,7 +290,7 @@ Syllabus content, Standard 1:
 "Determine the ratio of two quantities"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0 (Standard 1)
 
-Builds on: the money topic (Standard 2: annuities; Standard 1: credit cards and loans) and Year 11 unit conversions. Next: Dividing a Quantity in a Ratio.
+Builds on: the money topic (Standard 2: annuities; Standard 1: credit cards and loans) and Units of Measurement: Length, Mass and Capacity (Year 11). Next: Dividing a Quantity in a Ratio.
 
 #Year12Maths #MathsStandard #Ratios #HSCScience
 

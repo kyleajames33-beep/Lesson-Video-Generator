@@ -74,7 +74,7 @@ Handoff: math-s12-t09: "the paddock's three fences are known: how much land is i
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): a, A amber; b, B violet; c, C teal; correction blue; unknown rose; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): a, A amber; b, B violet; c, C teal; correction blue; unknown rose; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: no matched pair
 > Here's the farm paddock. Two fences already run from one corner, two hundred and forty metres and a hundred and eighty metres, and they meet at a hundred and ten degrees. The third side needs wire. Can the sine rule help? It needs a matched pair, a side with its opposite angle known. But the hundred and ten degree angle faces the missing side, and no other angle is known. So the sine rule can't start. How does the cosine rule find a missing side, or a missing **angle**?

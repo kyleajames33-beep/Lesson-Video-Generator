@@ -69,7 +69,7 @@ Handoff: math-s12-b05: "how strong, as one number?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and run amber; ice creams and rise teal; points ink; line and m blue; c violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and run amber; ice creams and rise teal; points ink; line and m blue; c violet; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the line's equation
 > Here's the kiosk's line of best fit. It's a straight line, so it has an equation, y equals m x plus c, like the lines from Year Eleven. Once we know m and c, each number tells us something real about the kiosk. So how do we find the gradient and the intercept from the graph, and what do they **mean**?

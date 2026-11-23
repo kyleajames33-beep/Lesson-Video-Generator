@@ -71,7 +71,7 @@ Handoff: math-s12-i14: "a camper trailer loan of $15,000: what if we pay $50 mor
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; debt paid off teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; debt paid off teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: where does each payment go?
 > Here's the e-bike again. You borrow three thousand dollars at one per cent a month, and you pay back a hundred and forty-one dollars and twenty-two cents every month for two years. But where does each payment actually go? Part of it pays the interest, and the rest pays off the **loan**. And that split changes every month. Car loans, personal loans and home loans all work this way, so if you can read one month, you can read them all. So how does a loan like this change from one month to the **next**?

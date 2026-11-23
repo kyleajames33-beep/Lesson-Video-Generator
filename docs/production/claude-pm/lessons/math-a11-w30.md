@@ -1,6 +1,6 @@
 # Maths A11 W30: Why is absolute value a distance, and why does it need two cases? |x| as distance, the piecewise definition, |a − b|, √(x²) = |x|, and the graph of y = |x| (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: learning review resolved, Revision 1 unchanged (status updated 23 Nov 2026, coherence audit N-4): the independent learning review passed with 0 blockers and 0 should-fix findings (`../checks/m-a11-w30-learning-review.md`) and the Codex maths check passed (`../checks/m-a11-w30-maths-check.md`). Not voiced. Next: voicing on the Google voice and a build on the studio kit to grade A. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced.
 
 Narration 5,653 characters by script (build parser rules), 14 scene headings, about 519 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 

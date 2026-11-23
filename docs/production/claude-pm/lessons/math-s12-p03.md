@@ -73,7 +73,7 @@ Handoff: two routes: Standard 2 to p04 ("a probability on each branch?"); Standa
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): outcome cells and paths teal; event violet; probability values blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): outcome cells and paths teal; event violet; probability values blue; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how many lunches?
 > Here's the canteen's lunch deal: one main and one drink. There are three mains and four drinks. Say the canteen runs a mystery deal, and picks both at random. Last time we multiplied choices to count outcomes, so three times four is twelve lunches. But which twelve? If you try to list them in your head, it's easy to miss one, or count one twice. So how do arrays and tree diagrams list every outcome of a two-stage **event**?

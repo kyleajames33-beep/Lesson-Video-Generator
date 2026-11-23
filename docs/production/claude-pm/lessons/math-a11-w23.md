@@ -1,6 +1,6 @@
 # Maths A11 W23: How does inverse variation y = k/xⁿ differ from direct variation? A constant product, k by multiplying, the inverse doubling ladder and rounding in context (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w23/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: learning review resolved, Revision 1 unchanged (status updated 23 Nov 2026, coherence audit N-4): the independent learning review passed with 0 blockers and 0 should-fix findings (`../checks/m-a11-w23-learning-review.md`) and the Codex maths check passed (`../checks/m-a11-w23-maths-check.md`). Not voiced. Next: voicing on the Google voice and a build on the studio kit to grade A. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w23/` folder, no audio). Nothing recorded; human listening pending.
 
 Narration 5,598 characters, 14 scene headings, about 508 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
 

@@ -285,3 +285,14 @@ Same source commit (`5d74a627`, read from the read-only clone `C:/Users/kygs/tea
 
 - Beyond the crosswalk's partial and missing points: no site lesson defines an experiment or trial as infinitely repeatable (`cib914fe5d`); lesson11 shows no infinite set such as {0, 2, 4, 6, …} (`ci04bd3585`); lesson03 never establishes $P(A|B) = \frac{|A \cap B|}{|B|}$ by counting before the probability form (`cidbe2315d`); lesson05 of graph-transformations never names discontinuities (`cid4fd3807`); lesson15 shows tables but no spreadsheet (`ci1c297b6d`).
 - Gambling-adjacent copy: `probability-and-data/lesson01.sa.html` card 05 (Oz Lotto, "the lottery is a tax on people who cannot do probability") and `lesson04.sa.html` card 05 ("two separate lottery draws"). Year 12 s02 already ruled out raffle and lottery contexts for videos.
+
+## 9. Found in the Year 11 coherence audit (23 November 2026)
+
+Source: `checks/maths-a11-coherence-audit-2026-11-23.md`, section 4. For site-fix task 2 (`site-fix-maths-a11-task-2.md`), with the other graph-transformations items.
+
+### A11-N1. The asymptote key term says a graph "never touches" its asymptote (g05)
+
+- Lesson: `graph-transformations/lesson05.sa.html`, key-term card "Asymptote".
+- Old text: "A line the graph gets closer and closer to but never touches. Like this: $y = \tfrac{1}{x} + 2$ approaches the line $y = 2$ as $x$ gets large."
+- Correction: "A line that the graph gets closer and closer to as $x$ or $y$ grows without bound. A graph can still cross a horizontal asymptote somewhere else, so 'never touches' is not part of the meaning. Like this: $y = \tfrac{1}{x} + 2$ approaches the line $y = 2$ as $x$ gets large."
+- Reason: as a general definition, "never touches" is false. For example, $y = 2 + \frac{x}{x^2 + 1}$ crosses its horizontal asymptote $y = 2$ at $x = 0$. It is the same error as the logged exponentials lesson02 item ("never crosses", section 6). g05 relies on asymptotes, so the site page should match the video.

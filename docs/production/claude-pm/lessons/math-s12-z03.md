@@ -68,7 +68,7 @@ Handoff: the loaf bell with the band 705 to 715 g outlined, "what fraction of lo
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ-steps and z violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ-steps and z violet; answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: Ava's two results
 > Here are Ava's two results, seventy-two in Maths and seventy-seven in English. Seventy-seven looks better, but the two tests were different. The Maths class had a mean of sixty-four and a standard deviation of eight. The English class had a mean of seventy and a standard deviation of five. So which result was really better? How do z-scores compare results from different **tests**?
@@ -262,9 +262,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Comparing Results with z-Scores | Year 12 Maths Standard 2
+Title: Comparing Results with z-Scores | Year 12 Maths Standard
 
-(Title length: 58 characters by script.)
+(Title length: 56 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html
 

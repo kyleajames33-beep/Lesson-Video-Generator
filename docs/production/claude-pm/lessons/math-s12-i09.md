@@ -79,7 +79,7 @@ Handoff: math-s12-i10: "a $38,500 ute: the same dollars every year, or a percent
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; D and losses blue; level amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; D and losses blue; level amber; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: worth less every year
 > So far, money has grown. But most things you buy to use do the opposite. Here's an apprentice's new set of tools, six thousand two hundred dollars. As they wear out, and newer models come along, they're worth less each year. That loss of value is called depreciation, and something you own that has value is called an asset. Does an asset lose the same dollars every year, or something different? Businesses use both answers at tax time, and the rules and prices change. Today, the same dollars. So how does straight-line depreciation **work**?

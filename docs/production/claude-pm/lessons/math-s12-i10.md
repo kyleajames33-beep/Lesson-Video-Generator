@@ -77,7 +77,7 @@ Handoff: math-s12-i11: "a $40,000 van: $6,000 a year or 20% a year: which loses 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; rate and multiplier amber; declining balance olive; straight-line ghosts blue; compound growth teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): V₀ violet; rate and multiplier amber; declining balance olive; straight-line ghosts blue; compound growth teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a percentage of what it's worth now
 > Here's a new ute, thirty-eight thousand five hundred dollars. A ute loses the most value when it's new, and less as it gets older. So instead of the same dollars every year, it makes more sense to take the same percentage of whatever it's worth now. Say twenty-two per cent a year. That's called declining-balance depreciation. The tax office uses a method like this for cars too, though the rules and rates **change**. So how does declining balance work, and why does it look so much like compound **interest**?

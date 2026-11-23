@@ -1,6 +1,6 @@
 # Maths A11 W26: How do symmetry tests tell even, odd and neither functions apart? Reflection in the y-axis, a half-turn about the origin, the tests f(−x) = f(x) and f(−x) = −f(x), and problems (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: learning review resolved, Revision 1 unchanged (status updated 23 Nov 2026, coherence audit N-4): the independent learning review passed with 0 blockers and 0 should-fix findings (`../checks/m-a11-w26-learning-review.md`) and the Codex maths check passed (`../checks/m-a11-w26-maths-check.md`). The review's one optional item (a hint on attempt 2's card) stays a voiced-preview watch. Not voiced. Next: voicing on the Google voice and a build on the studio kit to grade A. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern) and the accepted w01 to w14 designs (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced.
 
 Narration 5,651 characters by script (build parser rules), 14 scene headings, about 514 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 

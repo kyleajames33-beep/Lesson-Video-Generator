@@ -69,7 +69,7 @@ Handoff: math-s12-a03: "a theatre's ticket problem comes as words, with no equat
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first equation blue; second teal; cancelling terms and sign changes violet; solved values amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first equation blue; second teal; cancelling terms and sign changes violet; solved values amber; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: fours and sixes
 > Here are three x plus two y equals sixteen, and three x minus y equals seven, and both have exactly three x. Hold that thought, and look at this cricket scoreboard. A batter hit eleven boundaries, some fours and some sixes, worth fifty-two runs **altogether**. How many fours, and how many sixes? With f fours and s sixes, f plus s equals eleven, and four f plus six s equals fifty-**two**. Neither equation has a letter on its own. There's a method that gets rid of one letter in a single step, by adding or subtracting whole equations. Getting rid of a letter is called eliminating it, so this is elimination. So how does elimination work, and when do we add instead of **subtract**?

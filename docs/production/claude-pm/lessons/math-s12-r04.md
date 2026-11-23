@@ -58,7 +58,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Attempts (original, HSC style).** A1 (pack question 1, parts (a) and (b)): 18.4 cm at 1 : 25 000 = 4.6 km; 3 km/h, 92 minutes = 1 h 32 min; crossed "1 h 53 min" (reading 1.53 h as 1 h 53 min). A2 (pack question 2): 4 cm for 2 km → 1 : 50 000; 7.3 cm → 3.65 km; crossed "4 : 2" (units mixed).
 - **Mistake scene:** none separate. Dividing on the way to the ground (7 crossed); a kilometre answer read as centimetres (4 crossed, Revision 2); decimal hours read as minutes (A1 crossed); mixed units in a scale (A2 crossed).
 - **Cause chain taught, in order:** (1) a scale is a ratio, so both terms share one unit and the unit can be anything (2); (2) each map unit stands for n real units, so map to ground multiplies by n (3); (3) the multiplied answer is in the map's unit, so convert it after (3); (4) coming back, the answer has to be measured with a ruler in centimetres, so converting the real length to centimetres first gives a ruler-ready answer; dividing kilometres by n is not wrong, it gives kilometres (4; Revision 2 wording: "convert first" is advice, not a rule); (5) a bar is drawn on the map itself, so it grows and shrinks with it, while a printed ratio is only true at one size (5); (6) a bar or measured pair gives n as real ÷ map in one unit (6).
-- **Entry knowledge (route):** r01 (same unit in a ratio); Year 11 math-s11-a01 (cm, m, km) and f04 (speed = distance ÷ time). Recalled in a phrase or grey chip. Nothing from r03.
+- **Entry knowledge (route):** r01 (same unit in a ratio); Year 11 math-s11-a01 (cm, m, km) and f04a (speed = distance ÷ time). Recalled in a phrase or grey chip. Nothing from r03.
 - **Handoff (two routes).** Scene 13's frame is split by a thin grey rule. Left, "Standard 2": coded squared paper (about 700 × 520 px) with a dashed box "space on the page: 10 cm × 8 cm" and, beside it, a room outline labelled in real lengths "3.6 m" and "3.0 m", not yet drawn to any scale; chip "will it fit the page?"; label "Standard 2 next: constructing scale drawings". Right, "Standard 1": a coded floor plan corner (`PlanSymbols`, about 760 × 520 px; thick walls, a doorway with its swing arc, a kitchen bench along one wall with a dimension line reading "3.6 cm", the title box "Scale 1 : 100"); chip "benchtop $320 a metre: what does it cost?" with a small grey tag, 30 px, "example price" (Revision 2, ruling 51); label "Standard 1 next: building plans". Chips "Next" and "?". No value is worked out. This is r05's opening frame (r05 fades the right panel); r05's final frame repeats the right panel full width as r06a's opening frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -69,13 +69,13 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (e) Pronunciations: "one to twenty-five thousand"; "two hundred and ten thousand centimetres".
 
 Main question: *A bushwalk map says 1 : 25 000, and the track is a few centimetres long. How does a map scale turn map distances into real distances?*
-Entry knowledge (r01; Year 11 a01, f04): ratios in one unit; cm, m, km; speed = distance ÷ time.
+Entry knowledge (r01; Year 11 a01, f04a): ratios in one unit; cm, m, km; speed = distance ÷ time.
 Stops after: both directions, scale bars, finding n, a travel time. No areas, no construction.
 Handoff: Standard 2: math-s12-r05, "will it fit the page?"; Standard 1: math-s12-r06a, "benchtop $320 a metre: what does it cost?".
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): map length amber; real length blue; n violet; unit steps grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): map length amber; real length blue; n violet; unit steps grey; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how far is the walk?
 > Here's the bushwalking map. The red line is the track, from the car park up to a lookout. On the map, it's only a few centimetres long. But before you set off, you need the real distance, to plan your water, your time and the daylight. That's what the scale in the corner is for. So how does a map scale turn map distances into real **distances**?
@@ -285,7 +285,7 @@ Syllabus content, Standard 1:
 "Explain the relationship between ratios and map scales and apply this relationship to solve problems in a variety of practical contexts"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0 (Standard 1)
 
-Builds on: Ratios, Fractions and Simplest Form. Next (Standard 2): Constructing Scale Drawings. Next (Standard 1): Building Plans: Floor Areas and Flooring Costs.
+Previous: Capture-Recapture: Estimating a Population (Standard 2) or Dividing a Quantity in a Ratio (Standard 1). Builds on: Ratios, Fractions and Simplest Form. Next (Standard 2): Constructing Scale Drawings. Next (Standard 1): Building Plans: Floor Areas and Flooring Costs.
 
 #Year12Maths #MathsStandard #MapScales #HSCScience
 

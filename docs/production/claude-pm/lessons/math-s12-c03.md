@@ -72,7 +72,7 @@ Handoff: the formal's loose bars on an empty week timeline, "how do we show this
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; EST teal; LST violet; float olive; critical amber; dummies grey dashed; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; EST teal; LST violet; float olive; critical amber; dummies grey dashed; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: which jobs can't slip?
 > Here's the shed, with both scans done, so we know every job's earliest and latest start, and the whole build takes nine days. Some jobs have no room to move at all. If the slab takes an extra day to cure, the shed is finished a day late. But if the kit arrives a day late, nothing changes at all. Why the difference? What is the critical path, and how do float times **reveal** it?
@@ -267,9 +267,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: The Critical Path and Float Times | Year 12 Maths Standard 2
+Title: The Critical Path and Float Times | Year 12 Maths Standard
 
-(Title length: 60 characters by script.)
+(Title length: 58 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson03.sa.html
 

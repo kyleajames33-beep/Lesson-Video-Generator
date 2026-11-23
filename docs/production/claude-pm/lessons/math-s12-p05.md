@@ -78,7 +78,7 @@ Handoff: math-s12-p06: "40 of the last 50 rides on time: how many of the next 30
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): trials teal; happened and relative frequency violet; theoretical probability blue (dashed); answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): trials teal; happened and relative frequency violet; theoretical probability blue (dashed); answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: seven heads in ten
 > Here's a coin that's been flipped ten times, and it landed heads seven times. A fair coin should land heads half the time, so is this coin unfair? Or could a fair coin do this just by chance? To answer that, we need to know how results from real trials compare with the probability we work out. So how does relative frequency estimate a probability, and why do more trials **help**?

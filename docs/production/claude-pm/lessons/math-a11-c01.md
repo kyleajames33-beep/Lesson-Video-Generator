@@ -280,7 +280,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Recognise when modelling with a linear function that its gradient is the rate of change and determine the rate of change for linear functions in practical situations"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678
 
-Builds on: Absolute value graphs; gradient of a line. Next: Instantaneous speed and the tangent.
+Builds on: Gradient through two points (w10); a linear model's gradient as a rate (w12); evaluating f(a) (w08). Next: Instantaneous speed and the tangent.
 
 #Year11Maths #MathsAdvanced #RatesOfChange #HSCScience
 

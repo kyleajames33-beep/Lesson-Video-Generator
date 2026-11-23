@@ -71,7 +71,7 @@ Handoff: Ava's two report cards, "which result is better?" (z03).
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ-steps and z violet; areas amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ-steps and z violet; areas amber; answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the 718 g loaf
 > Here's that loaf again, seven hundred and eighteen grams on the scale. The bakery's loaves have a mean of seven hundred and ten grams and a standard deviation of five grams. So this loaf is heavy, but how heavy, really? Eight grams more than usual could be a lot, or hardly anything. It depends how much the loaves usually vary. If they usually varied by twenty grams, eight would be nothing special. If they varied by one gram, eight would be huge. So we measure the gap with the loaves' own **spread**. What does a z-score tell us, and how do we **calculate** it?
@@ -266,9 +266,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: z-Scores: How Far From the Mean? | Year 12 Maths Standard 2
+Title: z-Scores: How Far From the Mean? | Year 12 Maths Standard
 
-(Title length: 59 characters by script.)
+(Title length: 57 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html
 

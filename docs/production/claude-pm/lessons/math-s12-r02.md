@@ -75,7 +75,7 @@ Handoff: Standard 2: math-s12-r03, "how many fish are in the lake?"; Standard 1:
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first share amber; second blue; third rose; total teal; one part violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first share amber; second blue; third rose; total teal; one part violet; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a fair split
 > Here's the drinks stall. Two cousins put in a hundred dollars and sixty dollars to buy cold drinks, and sold them at a junior footy carnival. By the end of the day, they'd taken four hundred and eighty dollars. Splitting it evenly, two hundred and forty each, doesn't feel fair, because one cousin put in more. Sharing money, mixing mortar and scaling a recipe all need the same skill. So how do we share an amount in a given **ratio**?

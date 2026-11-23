@@ -66,7 +66,7 @@ Handoff: the formal's precedence table in a spreadsheet, "can a spreadsheet do t
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; critical amber; float olive dashed; finish line ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; critical amber; float olive dashed; finish line ink; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: rain on the slab
 > Here's the shed's Gantt chart again, finishing on day nine, and the forecast says rain on the curing slab. If curing takes an extra day, does the whole shed finish a day late? And what if the kit turns up late instead, or a fast-setting mix saves time? Every one of these really happens on a building job. Plans change all the time, so we need to know which changes matter. Let's test each one on the chart. What happens to the finish time when one activity speeds up or slows **down**?
@@ -259,9 +259,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: When an Activity Takes Longer or Shorter | Year 12 Maths Standard 2
+Title: When an Activity Takes Longer or Shorter | Year 12 Maths Standard
 
-(Title length: 67 characters by script; Revision 2, ruling 81. Revision 1: "Changing Activity Durations: What Happens to the Finish? | Year 12 Maths Standard 2", 83 characters.)
+(Title length: 65 characters by script; Revision 2, ruling 81. Revision 1: "Changing Activity Durations: What Happens to the Finish? | Year 12 Maths Standard 2", 83 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html
 

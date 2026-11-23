@@ -72,7 +72,7 @@ Handoff: math-s12-r09: "two pay slips, $336 for 8 hours and $270 for 6 hours: wh
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): area blue; depth amber; volume teal; litres green; tank violet; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): area blue; depth amber; volume teal; litres green; tank violet; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: what does 25 mm mean?
 > Here's the farm dam from last time, about one thousand seven hundred and ten square metres of water. Overnight, the weather report says twenty-five millimetres of rain fell. But rain is measured as a depth, not in litres. Farmers, and anyone with a rainwater tank, want to know how much water that really is. So how much water falls on a roof, or a block of land, in a **storm**?
@@ -253,9 +253,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Rainfall Volume: V = Ah on Roofs, Tanks and Land | Year 12 Maths Standard 2
+Title: Rainfall Volume: V = Ah on Roofs, Tanks and Land | Year 12 Maths Standard
 
-(Title length: 75 characters.)
+(Title length: 73 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/ratios-and-rates/lesson04.sa.html
 

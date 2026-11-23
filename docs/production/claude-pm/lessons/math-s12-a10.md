@@ -71,7 +71,7 @@ Handoff: math-s12-a11a: "we found 0, 4, 2 and 20: what does each one mean, and w
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x and x-intercepts blue; y and the y-intercept teal; vertex amber; axis and midpoint violet dashed; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x and x-intercepts blue; y and the y-intercept teal; vertex amber; axis and midpoint violet dashed; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: only the crossings
 > Here's that foam rocket. A backyard launcher fires it straight up from the grass, and then it falls back down. It goes straight up and straight down, but its graph is a hill shape, because time runs across the page. Its height, h metres, after t seconds, can be modelled by h equals minus five t squared, plus twenty t. The graph shows where it leaves the ground, at zero seconds, and where it lands again, at four **seconds**. It doesn't show the top. But a parabola is symmetric, so those two crossings should tell us where the top is, and how high it gets. So how do the x-intercepts of a parabola locate its **vertex**?
@@ -256,9 +256,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Finding the Vertex from the x-Intercepts | Year 12 Maths Standard 2
+Title: Finding the Vertex from the x-Intercepts | Year 12 Maths Standard
 
-(Title length: 67 characters.)
+(Title length: 65 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html
 

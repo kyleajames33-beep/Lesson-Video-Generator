@@ -74,7 +74,7 @@ Handoff: math-s12-t03 ("a drone 40 m up and 75 m along: how far away, and at wha
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; minutes teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; minutes teal; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the ladder's angle
 > Here's the ladder from last time. Its foot is one metre out for every four metres up, so its angle with the ground is inverse tangent of four, seventy-five point nine six degrees. But exam questions, maps and surveyors often give angles in degrees and minutes instead. So how do degrees and minutes work when we find angles and **sides**?

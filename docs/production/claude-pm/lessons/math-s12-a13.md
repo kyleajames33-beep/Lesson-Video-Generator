@@ -33,7 +33,7 @@ Standard 1: no matching point.
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a
 
-**Boundary:** starts from a12's final frame exactly (Revision 2: the country road strip with the road sign `maths/ma11-road-sign-post-v1.png` carrying coded "Lakeside" and no vehicle, a12 Revision 2 scene 12; the red hatchback drives in on the first sentence; a coded board "same trip every time"; a small table "40 km/h: 3 h"; chips "100 km/h: how long?", "Next: building reciprocal models" and "?"). Recalls a12 (y = k/x, the multiply test, the first-quadrant branch), Year 11 changing the subject (math-s11-f03, `cib54d5e23`) and substitution (math-s11-f01), and a07 and a11b (a limitation names the assumption and why it fails) in a phrase or grey chip each. Teaches: build y = k/x from a practical situation in four steps (name the quantities and units; multiply a known pair for k and check a second pair; write the model; say what k means, the fixed total); solve algebraically by substituting (y = k/x) or rearranging (x = k/y); solve graphically with a horizontal line meeting the curve and dropping to the x-axis; convert decimal hours to hours and minutes; round up when a whole number of people, boxes or machines is needed; limitations: x = 0 impossible, tiny x gives huge y, huge x is not realistic, fractional answers may be meaningless, and the product may not really stay constant. Stops at reciprocal models. Not taught: anything beyond y = k/x; the investment strand (math-s12-i01 next).
+**Boundary:** starts from a12's final frame exactly (Revision 2: the country road strip with the road sign `maths/ma11-road-sign-post-v1.png` carrying coded "Lakeside" and no vehicle, a12 Revision 2 scene 12; the red hatchback drives in on the first sentence; a coded board "same trip every time"; a small table "40 km/h: 3 h"; chips "100 km/h: how long?", "Next: building reciprocal models" and "?"). Recalls a12 (y = k/x, the multiply test, the first-quadrant branch), Year 11 changing the subject (math-s11-f03a, `cib54d5e23`) and substitution (math-s11-f01), and a07 and a11b (a limitation names the assumption and why it fails) in a phrase or grey chip each. Teaches: build y = k/x from a practical situation in four steps (name the quantities and units; multiply a known pair for k and check a second pair; write the model; say what k means, the fixed total); solve algebraically by substituting (y = k/x) or rearranging (x = k/y); solve graphically with a horizontal line meeting the curve and dropping to the x-axis; convert decimal hours to hours and minutes; round up when a whole number of people, boxes or machines is needed; limitations: x = 0 impossible, tiny x gives huge y, huge x is not realistic, fractional answers may be meaningless, and the product may not really stay constant. Stops at reciprocal models. Not taught: anything beyond y = k/x; the investment strand (math-s12-i01 next).
 
 ## Decisions
 
@@ -55,7 +55,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Attempts (pack questions, trimmed).** A1 (pack question 1 (a) and (b)): mowers: k = 3 × 2 = 6, T = 6/n; 4 mowers: 1.5 h = 1 h 30 min; crossed "1 h 50 min". A2 (pack question 2 (a) to (c)): muffins: B = 240/b; 16 per box: 15 boxes; B = 34.29 when b = 7: 35 boxes (34 boxes hold only 238); crossed "34 boxes". Pack question 1 (c) and (d) are not asked (feedback length); scene 6 teaches the same limitation idea.
 - **Mistake scene:** none separate. k by dividing (2, said; a12's test recalled); 1.2 h as 1 h 20 min (3 crossed, A1 crossed); rounding down (5, A2 crossed); "x can't be zero because you can't divide by zero" without the practical reason (6, both said); a limitation with no assumption (6, the card).
 - **Cause chain taught, in order:** (1) the trip's length is fixed, so speed × time is always the same, so k is the distance (1, 2); (2) once k is known, any one value gives the other by dividing k (3, 4); (3) the graph holds every pair, so a horizontal line at the known value finds the other (4); (4) an hour has 60 minutes, not 100, so 0.2 h is 12 minutes (3); (5) a share above the limit fails the condition, so the count rounds up (5); (6) the model is exact for the average speed actually achieved, so it breaks only where that speed is impossible: 0, tiny or illegal speeds, and a planned average that traffic, corners and stops pull down (6; Revision 2).
-- **Entry knowledge (route):** a12 (y = k/x, the constant product, the hyperbola); math-s11-f03 (`cib54d5e23`, changing the subject); math-s11-f01 (`ci7f303375`, substitution); a07 and a11b (the two-part limitation).
+- **Entry knowledge (route):** a12 (y = k/x, the constant product, the hyperbola); math-s11-f03a (`cib54d5e23`, changing the subject); math-s11-f01 (`ci7f303375`, substitution); a07 and a11b (the two-part limitation).
 - **What later videos rely on.** math-s12-i01 (simple interest) opens on this video's final frame. The strand closes on a straight line again, which i01's simple interest graph will be (pack section 8: "closes the loop with a01's lines"); this design asks the question and does not answer it.
 - **Handoff (to math-s12-i01, "How does simple interest grow, and what does its graph look like?").** Scene 12: the coin jar `maths/ma12-coin-jar-v1.png` (viewed 18 Nov: a glass jar of gold and silver coins, metal lid, true alpha) as a 300 px badge beside small empty coded axes ("balance ($)" up in teal, "years" across in blue); a strip of four small grey strand thumbnails across the top (a line, an exponential curve, a parabola, a hyperbola branch) with "Algebraic relationships: done"; the grey chip "the same amount added each year: what shape?" (worded exactly as a08's right panel), chips "Next: simple interest" and "?". The jar, axes and grey chip match a08's right panel, so i01 can open on either final frame. This is i01's opening frame.
 - **Legacy logic ported:** none.
@@ -69,13 +69,13 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (g) Windows: car graph s 0 to 130, T 0 to 13 (zoomed to T 0 to 130 for the slider); house strip n 4 to 6.
 
 Main question: *A car makes the same trip every time. At 40 km/h it takes 3 hours. How long at 100 km/h? How do we build and use a reciprocal model, and where does it fail?*
-Entry knowledge (a12; math-s11-f03, f01; a07, a11b): y = k/x; changing the subject; substitution; the two-part limitation.
+Entry knowledge (a12; math-s11-f03a, f01; a07, a11b): y = k/x; changing the subject; substitution; the two-part limitation.
 Stops after: building y = k/x from facts, solving by algebra and by graph, hours and minutes, rounding up, limitations of reciprocal models. The strand ends.
 Handoff: math-s12-i01: "money added at the same amount each year: what shape?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; k amber; level line violet; rounding arrow amber; answer green; mistake red; assumption amber, why-it-fails violet. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; k amber; level line violet; rounding arrow amber; answer green; mistake red; assumption amber, why-it-fails violet. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: one trip, many speeds
 > Here's that road trip, and here's the car that makes it, the same trip every time. The table shows its average speed, that's the whole distance divided by the whole time, and how long the trip takes. At forty kilometres an hour, three hours. At sixty, two hours. At eighty, one and a half hours. At a hundred and twenty, one **hour**. The faster it goes, the less time it takes, so it looks like inverse variation. But to answer new questions, like the time at a hundred kilometres an hour, we need the model itself. So how do we build and use a reciprocal model, and where does it **fail**?
@@ -262,9 +262,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Building and Using Reciprocal Models: y = k/x | Year 12 Maths Standard 2
+Title: Building and Using Reciprocal Models: y = k/x | Year 12 Maths Standard
 
-(Title length: 72 characters.)
+(Title length: 70 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson06.sa.html
 

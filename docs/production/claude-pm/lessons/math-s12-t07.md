@@ -72,7 +72,7 @@ Handoff: math-s12-t08: "two fences of 240 m and 180 m at 110°: how much wire fo
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): a, A amber; b, B violet; c, C teal; unknown rose; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): a, A amber; b, B violet; c, C teal; unknown rose; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: an angle this time
 > Last time, the sine rule found a missing side. Here's the shade sail again. Its edge P Q is four point six metres, the edge Q R is five point eight metres, and the angle at P is forty-seven degrees. The fitting at corner R has to be made for the angle there, so we need the angle at R. This time the unknown is an angle. So how does the sine rule find a missing angle, and what if that angle is **obtuse**?

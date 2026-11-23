@@ -69,7 +69,7 @@ Handoff: math-s12-i17b: "a credit card statement, every field blank: what's on i
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; rate amber outline; days violet; simple grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; rate amber outline; days violet; simple grey; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: interest every day
 > Here's the television, two thousand dollars on a credit card at nineteen point nine nine per cent a year. That's an example rate, and card rates change. The closing balance wasn't paid in full, so the interest-free days are gone, and interest is now charged every single **day**. Most cards work this way. So if it sits there for thirty days, how much interest is that? How is credit card interest charged by the **day**?

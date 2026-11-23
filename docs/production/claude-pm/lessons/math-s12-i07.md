@@ -79,7 +79,7 @@ Handoff: math-s12-i08: "savings account, term deposit, shares or property: which
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price violet; fees amber; percentage teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price violet; fees amber; percentage teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the order
 > Here's an order to buy shares, paid for from savings. Five hundred shares, at twelve dollars forty each. To buy them, you go through a broker, a company that places the trade on the stock exchange for you. And brokers charge a fee for every trade, called brokerage. Fees vary between brokers, and they change. It's an easy cost to forget, and on a small trade it can eat into your gains. So what does it really cost to buy shares, once brokerage is **added**?

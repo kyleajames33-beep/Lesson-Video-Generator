@@ -78,7 +78,7 @@ Handoff: math-s12-a06: "every curve today started at 1; a rent starts at $650 an
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): growth and video A teal; decay blue; linear and video B violet; a amber; intercept green ring; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): growth and video A teal; decay blue; linear and video B violet; a amber; intercept green ring; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: two videos
 > Here's a new video's view count. A hundred views on the day it's posted, then two hundred, four hundred, eight **hundred**. Another video starts with a hundred views too, but gains a steady thousand views a day. After three days, the steady one is way ahead, three thousand one hundred against eight hundred. But by day ten, the doubling video has over a hundred thousand views, and the steady one has just over ten **thousand**. That's the difference between adding and multiplying. So how do tables, graphs and equations show exponential growth and **decay**?

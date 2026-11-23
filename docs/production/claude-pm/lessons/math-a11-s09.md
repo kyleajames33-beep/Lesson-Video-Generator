@@ -265,7 +265,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Compare discrete random variables with continuous random variables, describe their differences, and give practical examples of each"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5
 
-Builds on: Independent events. Next: Frequency tables and relative frequency.
+Builds on: Experiments, outcomes and probability (s04); the two-dice array (s06). Next: Frequency tables and relative frequency.
 
 #Year11Maths #MathsAdvanced #RandomVariables #HSCScience
 

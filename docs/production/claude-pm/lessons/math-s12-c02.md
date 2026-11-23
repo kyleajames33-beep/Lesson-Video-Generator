@@ -66,7 +66,7 @@ Handoff: the shed's scanned network, "which jobs can't slip?" (c03).
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; earliest teal; latest violet; dummies grey dashed; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; earliest teal; latest violet; dummies grey dashed; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how soon can we open?
 > The café's network is ready, with its one dummy, and it's six o'clock. If every job starts the moment it can, when is the display finished, and how late could each job start without keeping the doors shut? Each event's box has room for two times, an earliest one and a latest one. Earliest means the soonest we can get there. Latest means as late as we can leave it without opening late. We'll fill them by scanning the network, first forwards and then backwards. So how do forward and backward scans find the earliest and latest start **times**?
@@ -259,9 +259,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Forward and Backward Scans: EST and LST | Year 12 Maths Standard 2
+Title: Forward and Backward Scans: EST and LST | Year 12 Maths Standard
 
-(Title length: 66 characters by script.)
+(Title length: 64 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson02.sa.html
 

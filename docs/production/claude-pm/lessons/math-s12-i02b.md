@@ -76,7 +76,7 @@ Handoff: math-s12-i03: "a $200 grocery shop: will prices grow like money in the 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; r and multiplier amber; FV ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; r and multiplier amber; FV ink; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the goal comes first
 > Here's the phone. You want fifteen hundred dollars for it in two years, and an account pays five per cent a year, compounded annually. Rates change, so that's just an example. Last time, we started with the money and found the future value. This time we know the future value, fifteen hundred dollars. What we need is the present value, the amount to put in **now**. And sometimes we know both amounts, and need the rate the money earned. That's how you'd plan a savings goal, or judge how well an investment really did. So how do we work backwards, to the starting amount, or to the **rate**?

@@ -72,7 +72,7 @@ Handoff: the 723 g loaf, "is this loaf a problem?" (z06).
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; shaded areas and probabilities amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; shaded areas and probabilities amber; answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: under the label
 > Every loaf is labelled seven hundred grams, but the masses vary, with a mean of seven hundred and ten grams and a standard deviation of five. So what's the chance a loaf weighs less than its label? How do z-scores and shading under the curve give a **probability**?
@@ -266,9 +266,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Normal Probabilities by Shading | Year 12 Maths Standard 2
+Title: Normal Probabilities by Shading | Year 12 Maths Standard
 
-(Title length: 58 characters by script.)
+(Title length: 56 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson07.sa.html
 

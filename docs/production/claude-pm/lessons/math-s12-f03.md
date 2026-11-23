@@ -66,7 +66,7 @@ Handoff: the stadium gates, "60 000 fans in 5 hours: will 190 a minute be enough
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; saturated amber; cuts violet; back edges grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · NETWORK FLOW". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; saturated amber; cuts violet; back edges grey; answer green; mistake red. Header strip "NETWORK FLOW" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: three cuts, three ceilings
 > Here's the traffic from the motorway exit to the shopping centre car park, in cars per minute, with three cuts drawn. Every cut is a ceiling on the traffic, but these three are different sizes, even on the same roads. So which one actually tells us how many cars can get through in a minute? How does the minimum cut prove the maximum **flow**?
@@ -265,9 +265,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Maximum Flow, Minimum Cut | Year 12 Maths Standard 2
+Title: Maximum Flow, Minimum Cut | Year 12 Maths Standard
 
-(Title length: 52 characters by script.)
+(Title length: 50 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson03.sa.html
 

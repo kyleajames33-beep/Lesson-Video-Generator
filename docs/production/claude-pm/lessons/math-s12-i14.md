@@ -73,7 +73,7 @@ Handoff: Standard 2: math-s12-i15, "a $25,000 car loan and four questions"; Stan
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): usual balance blue; changed balance teal-blue; interest amber; repayment violet; extra and debt paid off teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): usual balance blue; changed balance teal-blue; interest amber; repayment violet; extra and debt paid off teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: pay fifty dollars more?
 > Here's the camper trailer. The loan is fifteen thousand dollars at zero point eight per cent a month, an example rate, since rates change. The repayment is three hundred and fifteen dollars seventy-six a month for five years, and over those five years the interest comes to about three thousand nine hundred and forty-six dollars. Now suppose you could find an extra fifty dollars a **month**. Would that just save fifty dollars here and there, or a lot more? So how do extra repayments, lump sums and paying more often shorten a **loan**?

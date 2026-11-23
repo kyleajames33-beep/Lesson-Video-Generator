@@ -75,7 +75,7 @@ Handoff: math-s12-a04a: "a mowing round's cost line and takings line cross: wher
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first unknown blue; second unknown teal; count fact violet; value fact amber; crossing and answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first unknown blue; second unknown teal; count fact violet; value fact amber; crossing and answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: words first
 > Here's the theatre's problem. Adult tickets cost twenty-two dollars, and child tickets twelve dollars. One night, three hundred and fifty tickets were sold, and the takings were five thousand nine hundred dollars. How many adult tickets, and how many child tickets? This time, nobody has given us equations. The words come first, and we build the equations **ourselves**. So how do we build simultaneous equations from a real situation, and make sense of the **answer**?

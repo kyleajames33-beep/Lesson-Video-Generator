@@ -273,7 +273,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Extend and apply the definitions cos θ = x/r, sin θ = y/r and tan θ = y/x for angles of any magnitude"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-Builds on: True and compass bearings. Next: Related angles and signs in every quadrant.
+Builds on: Exact trig values (t01); SOH CAH TOA in right-angled triangles (t02a); circles centred at the origin (w24). Next: Related angles and signs in every quadrant.
 
 #Year11Maths #MathsAdvanced #UnitCircle #HSCScience
 

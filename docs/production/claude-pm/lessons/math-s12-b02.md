@@ -77,7 +77,7 @@ Handoff: math-s12-b03: "sunscreen sales rise too: do ice creams make people buy 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature or x amber; ice creams or y teal; points ink; straight guide blue; strength band olive; outlier ringed grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature or x amber; ice creams or y teal; points ink; straight guide blue; strength band olive; outlier ringed grey; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: five days, five points
 > Here are the kiosk's five days again, with the first point already on the graph. Let's put the rest on. Eighteen degrees and forty ice creams. Twenty-two and sixty. Twenty-five and seventy-five. And thirty-two and a hundred and twenty. Together, the points make a picture of the data. So how do we draw this graph properly, and how do we describe the shape it **makes**?

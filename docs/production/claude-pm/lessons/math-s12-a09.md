@@ -30,7 +30,7 @@ Standard 1: no matching point.
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/faf5e47f4a
 
-**Boundary:** starts from a08's final frame exactly (the two-route frame: left panel, the footbridge plate with a "?" at the cable's lowest point and "Standard 2 next: what shape is this cable?"; right panel, the coin jar badge, empty axes and "Standard 1 next: simple interest"; chips "Next" and "?"). Standard 2 students who skip a08 meet this frame cold; its left panel stands alone. Recalls a05 (equation, table, ordered pairs and graph for exponentials) and Year 11's y = ax² + c formulas (math-s11-f03) in a phrase or grey chip each. Teaches: a table whose values fall, turn and rise symmetrically; matching pairs about a middle x; the vertex (turning point; minimum or maximum) and the axis of symmetry (the vertical line x = vertex x-value); second differences as an optional check; one quadratic in four representations (equation with x² as the highest power, table, ordered pairs, graph) and moving between them, including squaring a negative x; the sign of a (a > 0 opens up with a minimum, a < 0 opens down with a maximum, a = 0 is not a quadratic); graphing y = ax² + bx + c in a graphing app and reading the vertex and axis. Stops at the shape, vertex and axis from a table, graph or app. Not taught: intercepts and the midpoint method (a10); practical meanings and valid values (a11a, a11b); any formula for the vertex (x = −b/(2a) is beyond Standard 2, root ruling 11); completing the square.
+**Boundary:** starts from a08's final frame exactly (the two-route frame: left panel, the footbridge plate with a "?" at the cable's lowest point and "Standard 2 next: what shape is this cable?"; right panel, the coin jar badge, empty axes and "Standard 1 next: simple interest"; chips "Next" and "?"). Standard 2 students who skip a08 meet this frame cold; its left panel stands alone. Recalls a05 (equation, table, ordered pairs and graph for exponentials) and Year 11's y = ax² + c formulas (math-s11-f03b) in a phrase or grey chip each. Teaches: a table whose values fall, turn and rise symmetrically; matching pairs about a middle x; the vertex (turning point; minimum or maximum) and the axis of symmetry (the vertical line x = vertex x-value); second differences as an optional check; one quadratic in four representations (equation with x² as the highest power, table, ordered pairs, graph) and moving between them, including squaring a negative x; the sign of a (a > 0 opens up with a minimum, a < 0 opens down with a maximum, a = 0 is not a quadratic); graphing y = ax² + bx + c in a graphing app and reading the vertex and axis. Stops at the shape, vertex and axis from a table, graph or app. Not taught: intercepts and the midpoint method (a10); practical meanings and valid values (a11a, a11b); any formula for the vertex (x = −b/(2a) is beyond Standard 2, root ruling 11); completing the square.
 
 ## Decisions
 
@@ -51,7 +51,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Attempts (pack questions).** A1: the table 10, 5, 2, 1, 2, 5, 10 for x = 0 to 6: symmetric (and second differences 2), axis x = 3, vertex (3, 1), upward; crossed "vertex x = 3". A2: y = −x² + 4x + 5: downward (a = −1), table 5, 8, 9, 8, 5, axis x = 2, vertex (2, 9), maximum; crossed "upward, because of the + 5".
 - **Mistake scene:** none separate. Squaring a negative (4 crossed); joining with straight segments (3 crossed); axis versus vertex (2 tags, A1 crossed); the vertex always on an axis (the cable's vertex is not); c deciding the direction (5 crossed, A2 crossed).
 - **Cause chain taught, in order:** (1) the cable's heights fall, turn and rise in matching pairs, so the shape is symmetric about the middle (1, 2); (2) the turning point is the vertex, and the line through it is the axis, because each matching pair sits the same distance either side (2); (3) every row comes from the equation, so the four representations are one relationship (3, 4); (4) a negative x squared is positive, which is why the table stays symmetric (4); (5) the x² term dominates for large x, so its sign decides the direction; with no x² it is a straight line (5).
-- **Entry knowledge (route):** a05 (moving between equation, table, ordered pairs and graph); math-s11-f01 (`ci7f303375`, substitution, x² with negative x); math-s11-f03 (`cib54d5e23`, y = ax² + c); math-s11-l02 (`ci5ff71229`, graphing with and without applications).
+- **Entry knowledge (route):** a05 (moving between equation, table, ordered pairs and graph); math-s11-f01 (`ci7f303375`, substitution, x² with negative x); math-s11-f03b (`cib54d5e23`, y = ax² + c); math-s11-l02 (`ci5ff71229`, graphing with and without applications).
 - **What later videos rely on.** a10 says "the two x-intercepts are a matching pair" and "the axis is halfway between them", recalling scene 2's pairs; a10 and a11a use "a negative, so a maximum" from scene 5.
 - **Handoff (to math-s12-a10, "How do the x-intercepts of a parabola locate its vertex?").** Scene 12: the launch paddock strip `maths/ma11-launch-paddock-v1.png` (viewed 18 Nov: a grassy paddock with gum trees and a wire fence, true alpha), the new launcher `ms12-rocket-launcher-v1.png` at the left with the foam rocket `ms12-foam-rocket-v1.png` on it; coded axes "t (s)" 0 to 5 and "h (m)" 0 to 25 below, the rocket's curve drawn without a grid, only the crossings labelled "0" and "4" (ringed amber), a "?" ring at the top; chips "Only the crossings are shown: where is the top?", "Next: intercepts and the vertex" and "?". This is a10's opening frame.
 - **Legacy logic ported:** none.
@@ -65,13 +65,13 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (g) Windows: cable plot x −0.5 to 4.5 (hangers), y 0 to 9; worked example x −2 to 4, y −5 to 2; slider x −3 to 3, y −3 to 4; app x −1 to 7, y −6 to 6.
 
 Main question: *A footbridge cable's heights are 8, 5, 4, 5, 8 metres. They fall, turn and rise again, the same on both sides. What shape does a quadratic make, and where are its vertex and axis of symmetry?*
-Entry knowledge (a05; math-s11-f01, f03, l02): four representations; substitution with x²; y = ax² + c; graphing.
+Entry knowledge (a05; math-s11-f01, f03b, l02): four representations; substitution with x²; y = ax² + c; graphing.
 Stops after: the parabola, vertex and axis from a table, graph or app; four representations; the sign of a. No intercept method, no vertex formula.
 Handoff: math-s12-a10: "a rocket's graph shows only where it leaves and meets the ground: where is the top?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; vertex amber; axis violet dashed; pairs grey arcs; a in a grey slot; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x blue; y teal; vertex amber; axis violet dashed; pairs grey arcs; a in a grey slot; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: falls, turns, rises
 > Here's a footbridge. Its main cable hangs between two towers, and thin hangers hold up the deck. Number the hangers from zero at the left tower, to four at the right tower. The cable's height above the deck at each one, in metres, is eight, five, four, five and **eight**. That's a new pattern. A straight line goes up or down steadily, and an exponential keeps multiplying. These values fall, turn, and rise again, the same on both sides. Plot them, join them with a smooth curve, and we get a **parabola**, the shape of a quadratic. So what shape does a quadratic make, and where are its vertex and axis of **symmetry**?
@@ -264,9 +264,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Parabolas: The Vertex and Axis of Symmetry | Year 12 Maths Standard 2
+Title: Parabolas: The Vertex and Axis of Symmetry | Year 12 Maths Standard
 
-(Title length: 69 characters.)
+(Title length: 67 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson04.sa.html
 

@@ -72,7 +72,7 @@ Handoff: math-s12-a04b: "a school formal: venue, catering and ticket price, and 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): cost violet; revenue teal; profit teal-tinted, loss grey; break-even amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): cost violet; revenue teal; profit teal-tinted, loss grey; break-even amber; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: when does it pay?
 > Here's the lawn-mowing round. Hiring the trailer, the insurance and a phone cost a hundred and fifty dollars a week, even before the first lawn. Each lawn then uses six dollars of fuel and trimmer line, and each lawn earns forty-five dollars. Mow no lawns, and the week loses a hundred and fifty dollars. Mow lots, and it makes money. Somewhere in between, it exactly breaks **even**. Any small business, from a market stall to a food van, needs to know that number before it starts. So where is the break-even point, and what does it say about profit and **loss**?

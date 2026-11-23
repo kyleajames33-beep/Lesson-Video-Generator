@@ -71,7 +71,7 @@ Handoff: math-s12-r13: "the hatchback after 880 km with a fuel gauge: how much f
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): time violet; distance teal; average amber; van A blue; car B teal; crossing amber; stop grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): time violet; distance teal; average amber; van A blue; car B teal; crossing amber; stop grey; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the whole trip's speed
 > Here's the finished trip, Sydney to Melbourne, eight hundred and eighty kilometres in ten hours and five minutes, with a stop in the middle. The car drove at a hundred, then at ninety. So was its average speed ninety-five, halfway between them? It's tempting, but it's **wrong**. Map apps use average speed to tell you when you'll arrive, so it's worth getting right. So what is the average speed for a whole trip, and what does it mean when two journeys **cross**?

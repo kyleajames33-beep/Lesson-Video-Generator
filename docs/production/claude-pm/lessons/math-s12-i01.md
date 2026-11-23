@@ -81,7 +81,7 @@ Handoff: math-s12-i02a: "tip the $200 back in: is next year's interest 4% of $5,
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): P violet; r amber; I teal; total line blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): P violet; r amber; I teal; total line blue; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the coin jar's question
 > Last time ended with a coin jar, and a question. If the same amount is added every year, what shape does the balance make? Here's a real version. You've saved five thousand dollars for a gap year, and you put it in an account paying four per cent per year, simple interest. Interest is what the bank pays you for keeping your money there. With simple interest, the bank pays it out to you, say into this jar, so the account stays at five **thousand**. Rates change all the time, so four per cent is just an example. So how does simple interest grow, and what does its graph look **like**?
@@ -301,7 +301,7 @@ Syllabus content, Standard 1:
 "Compare simple interest graphs for different interest rates and time periods, with and without using digital tools"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf818a3d6 (Standard 1)
 
-Builds on: Inverse Variation Models (Standard 2) or Linear Models in Context (Standard 1). Next: Compound Interest: Future Value.
+Builds on: Building and Using Reciprocal Models: y = k/x (Standard 2) or Sketching Graphs from Real-Life Stories (Standard 1). Next: Compound Interest: Future Value.
 
 #Year12Maths #MathsStandard #SimpleInterest #HSCScience
 

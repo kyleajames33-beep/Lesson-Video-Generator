@@ -72,7 +72,7 @@ Handoff: two routes: Standard 2 to p07 ("how do we count the overlap once?"); St
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): n teal; p blue; expected count violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): n teal; p blue; expected count violet; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: thirty trips
 > Here's the app's record again. Forty of the last fifty rides came within five minutes, so the chance is about zero point eight. Next month you'll book thirty rides. How many should you expect to come within five minutes? Companies ask this kind of question all the time, to plan staff, stock and spare parts. So how many times should we expect an event to **happen**?

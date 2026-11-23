@@ -274,7 +274,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the x-axis, and recognise that f(x) is stationary at x = c when f'(c) = 0"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678
 
-Builds on: Choosing the right rule. Next: Sketching the graph of f′.
+Builds on: Differentiating polynomials (c07); f′(c) as the tangent's gradient (c05); where a quadratic is positive or negative (w18). Next: Sketching the graph of f′.
 
 #Year11Maths #MathsAdvanced #IncreasingDecreasing #HSCScience
 

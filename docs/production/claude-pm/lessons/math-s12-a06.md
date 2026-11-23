@@ -76,7 +76,7 @@ Handoff: math-s12-a07: "the city model says about 452 000 after 20 years; what d
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): k violet; a amber; growth teal; decay blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): k violet; a amber; growth teal; decay blue; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the rent
 > Here's a one-bedroom unit, with a rent of six hundred and fifty dollars a week. Suppose the rent goes up four per cent every year. That four per cent is just an example, not a forecast. After one year, the rent is six hundred and seventy-six dollars. After two, it's about seven hundred and **three**. Each year multiplies by the same number, so it's exponential. But in the last video, every curve started at one. This one starts at six hundred and fifty dollars. Real things start wherever they start, a rent, a population, the price you paid for a car. So how do we build an exponential model, and what does its starting value **mean**?

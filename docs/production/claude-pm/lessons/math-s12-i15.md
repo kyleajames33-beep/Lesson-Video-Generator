@@ -68,7 +68,7 @@ Handoff: math-s12-i16: "a plain credit card and a loan table with a new column: 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; borrowed teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; borrowed teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: four questions about one loan
 > Here's a small second-hand SUV for a long commute to a first full-time job. It costs twenty-five thousand dollars, borrowed over five years at seven point two per cent a year. That's an example rate, and rates change. Before anyone signs, there are four questions to answer. How big is the monthly **repayment**? How much is paid in total? How much is still owed after two years? And how long would it take paying six hundred a month? Most loan questions in the exam are one of these four. So how do we find **them**?

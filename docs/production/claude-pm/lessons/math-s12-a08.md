@@ -68,7 +68,7 @@ Handoff: two routes. Standard 2: math-s12-a09 ("what shape is this cable?"). Sta
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): time blue; quantity teal; start and change points amber; current sentence and piece violet; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): time blue; quantity teal; start and change points amber; current sentence and piece violet; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a graph that tells a story
 > Last time, the travel card's fares added up trip by trip, until the daily cap, and then the total went flat. That flat piece told part of a story, because nothing more was being paid. A graph can tell a whole story like that, going up, staying level, or coming down. Here's a phone with forty gigabytes of data for the month. Over the month, the data left goes down, stops for a while, then goes down again, **faster**. So how do we sketch a graph that tells the story of a real **situation**?
@@ -255,9 +255,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Sketching Graphs from Real-Life Stories | Year 12 Maths Standard 1
+Title: Sketching Graphs from Real-Life Stories | Year 12 Maths Standard
 
-(Title length: 66 characters.)
+(Title length: 64 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: A phone starts the month with 40 GB of data, uses it steadily, stops while camping, then uses it twice as fast. How do you turn a story like that into a graph? Learn four steps: label the axes with time across, mark where the story starts, decide whether each part goes up, down or stays flat, and choose straight pieces for steady change and curved pieces for change that speeds up or slows down. Steeper means faster, and there are no gaps when a quantity can't jump. Then match a story to its graph, by reading each graph piece by piece. Two exam-style questions at the end. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
 
@@ -268,7 +268,7 @@ Syllabus content, Standard 1 (NSW Mathematics Standard 11-12, 2024):
 "Represent the description of a real-world situation graphically"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa493dfdfb
 
-Builds on: Where linear and exponential models stop matching reality. Next (Standard 1): Simple interest. Next (Standard 2): Parabolas, the vertex and axis of symmetry.
+Builds on: Where linear and exponential models stop matching reality. Next (Standard 1): Simple Interest: I = Prn and Its Graph. Next (Standard 2): Parabolas: The Vertex and Axis of Symmetry.
 
 #Year12Maths #MathsStandard #PracticalGraphs #HSCScience
 

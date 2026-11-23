@@ -74,7 +74,7 @@ Handoff: math-s12-a05: "each spreadsheet row added $450; a video's views go 100,
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): cost and column B violet; revenue and column C teal; profit cells grey (loss) or teal (profit); bracket amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): cost and column B violet; revenue and column C teal; profit cells grey (loss) or teal (profit); bracket amber; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the formal's spreadsheet
 > Here's the school formal. The venue and DJ cost six thousand five hundred dollars, however many people come. Catering is eighty-five dollars a guest, and tickets are a hundred and thirty dollars each. The committee needs to know how many tickets to sell before the formal stops losing money. They could draw a graph, or solve the algebra. But a spreadsheet shows every possible number of tickets at once, and if a price changes, the answer updates by **itself**. That's why businesses, clubs and committees use them. So how do we find break-even, and profit or loss, in a **spreadsheet**?

@@ -2,7 +2,7 @@
 
 Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (17 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-e08.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md`, `../checks/root-rulings-maths-a11-c-e-packs.md` and `../checks/root-rulings-maths-a11-t-g-s-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,684 characters by script (see "Narration length estimate"; Revision 2), 14 scene headings, about 514 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,715 characters by script (see "Narration length estimate"; Revision 2 plus the 23 Nov 2026 audit fix to scene 13), 14 scene headings, about 516 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 ## Revision 2 (17 Nov 2026): learning review resolved
 
@@ -31,7 +31,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 ## Decisions
 
 - **Anchor: waiting times at a theme-park ride (painted plate, live), after the spinner carried in from s10.** A queue's waiting time is a measured, continuous quantity that only makes sense grouped into classes, so the ride carries the second half of the lesson (touching bars, the modal class, upper boundaries, an estimated median); "how long will I wait?" is an everyday question whose middle answer is the median. Leisure; the pack's anchor 1, with its question 2 data as the worked example. Year 12 f04 uses a theme park's yearly visitors in a series problem, a different idea; no design uses ride waits (grep 17 Nov 2026). The opening is the spinner table, fixed by s10's handoff and the route's start boundary.
-- **The final frame closes Year 11 (task requirement).** Scene 13 is the last core frame of the course. It points to the Year 12 Maths Advanced playlist and states only what Year 12 videos already do (Year 12 s01 builds probability distributions from relative frequencies; Year 12 s04 uses a cumulative curve that rises from 0 to 1; both are published, `bunny/ledger.csv`). It does not mention the optional practice videos p01 to p03, which are not designed.
+- **The final frame closes Year 11 (task requirement).** Scene 13 is the last core frame of the course. It points to the Year 12 Maths Advanced playlist, which opens on math-a12-d01 (derivatives of exponentials, playlist order 1 in `../../maths-a12-video-route.json`), and names the Year 11 ideas d01 relies on (e02's eˣ as its own derivative; c10's chain rule). It then states only what later Year 12 videos already do (Year 12 s01 builds probability distributions from relative frequencies; Year 12 s04 uses a cumulative curve that rises from 0 to 1; both are published, `bunny/ledger.csv`). Changed 23 Nov 2026 by the coherence audit (`../checks/maths-a11-coherence-audit-2026-11-23.md`, S-1): the earlier close pointed learners at distributions, but the Year 12 playlist opens on d01. It does not mention the optional practice videos p01 to p03, which are not designed.
 - **Spreadsheets or graphing applications (syllabus).** Every graph is drawn in a coded, unbranded spreadsheet chart panel (`ScreenApp`) beside its table, with a "chart type" switch that changes histogram to polygon to cumulative. The narration says "In a spreadsheet".
 - **Median from a cumulative histogram for single values; from a cumulative polygon for grouped data.** For whole-number values the cumulative histogram's steps show the median exactly (the first value whose running total reaches half); for grouped data the polygon through the upper class boundaries gives an estimate. This keeps each reading honest.
 - **Simulations (standard item 3).**
@@ -51,7 +51,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Cause chain taught, in order:** (1) bars make the most frequent value visible, and the mode is the value, not its count (2); (2) dividing every height by the same total changes only the scale (3); (3) joining the tops shows the shape as one line (4); (4) a running total climbs to the total, so the middle result sits where it first reaches half (5); (5) measured data fill an interval, so classes touch and only the modal class can be named (6); (6) a running total is complete only at the top of each class, so the polygon is plotted at upper boundaries, and the median read between them is an estimate (7); (7) dividing by the total turns the climb into 0 to 1, with the median at 0.5 (7).
 - **Entry knowledge (route):** s10 (frequency, relative frequency and cumulative columns).
 - **What Year 12 relies on.** Year 12 s01 builds bar graphs of distributions from relative frequencies; Year 12 s04 uses a reaction-time histogram (bars touching, classes of 0.1 s) and a cumulative function that "never decreases, from 0 to 1"; Year 12 s06 reads the median at F = 0.5. Scene 3 delivers the relative frequency histogram (heights adding to 1); scene 7 delivers the cumulative relative frequency polygon rising from 0 to 1 with the median at 0.5.
-- **Handoff (end of the Year 11 core course; points to Year 12).** Scene 13: the ride's cumulative relative frequency polygon (amber, 0 to 1) with the dashed median line at 0.5 dropping to "≈ 22.5 min", beside the spinner's relative frequency histogram (teal, small); the ride plate at 240 px; chips "Year 11 Maths Advanced: complete", "Year 12: relative frequencies become probability distributions", "Year 12: the 0 to 1 curve returns", "Next: the Year 12 Maths Advanced playlist". No "?" chip (nothing is promised beyond the playlist).
+- **Handoff (end of the Year 11 core course; points to Year 12, which opens on math-a12-d01).** Scene 13: the ride's cumulative relative frequency polygon (amber, 0 to 1) with the dashed median line at 0.5 dropping to "≈ 22.5 min", beside the spinner's relative frequency histogram (teal, small); the ride plate at 240 px; chips "Year 11 Maths Advanced: complete", "Year 12 starts: derivatives of eˣ (e02, c10)", "Later in Year 12: relative frequencies become probability distributions", "Next: the Year 12 Maths Advanced playlist". No "?" chip (nothing is promised beyond the playlist).
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) Spinner: 40 results in increasing order: positions 1 to 10 are 1, 11 to 28 are 2, 29 to 40 are 3; the 20th and 21st are both 2, so the median is 2. Cumulative relative 0.25, 0.70, 1.
@@ -63,7 +63,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 Main question: *How do histograms and polygons show the mode and median? What's the most common spin, and how long is the middle wait at a ride?*
 Entry knowledge (s10): the five-column table and spreadsheet.
 Stops after: frequency, relative frequency and cumulative histograms and polygons, with the mode and median from graphs and tables, for single values and grouped data. No box plots, quartiles or frequency density.
-Handoff: the Year 12 Maths Advanced playlist (relative frequencies become probability distributions; the 0 to 1 cumulative curve returns).
+Handoff: the Year 12 Maths Advanced playlist, which opens on math-a12-d01 (derivatives of eˣ, using e02 and c10); later in Year 12, relative frequencies become probability distributions and the 0 to 1 cumulative curve returns.
 
 ## Script and shots
 
@@ -130,9 +130,9 @@ Visual: `QuestionCard`, 40 px: "Fifty scores out of 100 in an online quiz were g
 Visual: the card shrinks to the top. A histogram (blue) 3, 8, 15, 18, 6 with the 60 to 80 bar ringed, the green frame "modal class: 60 to 80". On "fifty" the cumulative points (0, 0), (20, 3), (40, 11), (60, 26), (80, 44), (100, 50) plot and join (violet). The dashed line across from 25 meets the polygon and drops just below 60, tag "reading near 59: right"; on "seven" the green frame "median ≈ 58.7", grey row "40 + 14/15 × 20 ≈ 58.7". On "the slip" a red slip "median in 60 to 80" writes and is crossed, caption "median class: 40 to 60". Hold about 1 s.
 
 ### 13. the end of Year 11
-> That's the last core video of Year 11 Maths Advanced. This strand started with sets, and it finishes with graphs of real data. In the Year 12 Maths Advanced playlist, bars of relative frequencies like these become probability distributions. And a cumulative curve that climbs from zero to one comes back, for things you measure. See you **there**.
+> That's the last core video of Year 11 Maths Advanced. This strand started with sets, and it finishes with graphs of real data. Year 12 starts with calculus, picking up e to the x from the exponentials videos, and the chain rule. Later in Year 12, bars of relative frequencies like these become probability distributions, and this zero to one curve comes back. See you **there**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the closing frame: the ride's cumulative relative frequency polygon (amber, 1,000 × 560 px, 0 to 1) with the dashed median line at 0.5 dropping to "≈ 22.5 min"; the spinner's relative frequency histogram (teal, 420 px) at its left; the ride plate (240 px) at the top left. Chips write as spoken: "Year 11 Maths Advanced: complete", "Year 12: relative frequencies become probability distributions", "Year 12: the 0 to 1 curve returns". On "there" the chip "Next: the Year 12 Maths Advanced playlist". Hold about 2 s. This is the course's closing frame; scene 14 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the closing frame: the ride's cumulative relative frequency polygon (amber, 1,000 × 560 px, 0 to 1) with the dashed median line at 0.5 dropping to "≈ 22.5 min"; the spinner's relative frequency histogram (teal, 420 px) at its left; the ride plate (240 px) at the top left. Chips write as spoken: "Year 11 Maths Advanced: complete", "Year 12 starts: derivatives of eˣ (e02, c10)", "Later in Year 12: relative frequencies become probability distributions". On "this zero to one curve" the amber polygon pulses once. On "there" the chip "Next: the Year 12 Maths Advanced playlist". Hold about 2 s. This is the course's closing frame; scene 14 returns to it silently after the notes.
 
 ### 14. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -193,7 +193,7 @@ Recalculated with Python and SymPy 1.14 (17 Nov 2026, scratchpad `s-designs/veri
 
 ## Narration length estimate
 
-Revision 2 recount (narration blockquotes, bold markers removed; `work/brief-resolve-s/count.py`, which reproduces e08's 5,632): 5,684 characters (Revision 1: 5,377). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the chart switches, the queue clock, the median reader) and the 45 s notes scene: about 514 s (Revision 2 adds about 1 s of holds and settling). Characters per scene (1 to 14): 400, 448, 424, 365, 752, 434, 869, 222, 310, 361, 308, 373, 343, 75. Speech before the notes is about 422 s, under the 570 s cap. Feedback speech: about 27 s and 28 s.
+Recount 23 Nov 2026 after the audit fix to scene 13 (same method): 5,715 characters (Revision 2: 5,684; Revision 1: 5,377). Revision 2 recount (narration blockquotes, bold markers removed; `work/brief-resolve-s/count.py`, which reproduces e08's 5,632): 5,684 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 20 s of settling (the chart switches, the queue clock, the median reader) and the 45 s notes scene: about 516 s (Revision 2 adds about 1 s of holds and settling; the scene 13 fix adds about 2 s). Characters per scene (1 to 14): 400, 448, 424, 365, 752, 434, 869, 222, 310, 361, 308, 373, 374, 75. Speech before the notes is about 424 s, under the 570 s cap. Feedback speech: about 27 s and 28 s.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence (keep the grey overlay); scene 2's two-modes sentence (keep the chip).
 
@@ -256,7 +256,7 @@ Error-only check (report errors; do not restyle or rewrite):
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
 3. Confirm cumulative polygons are plotted at upper class boundaries from zero, frequency polygons through bar-top midpoints closed to the axis, grouped histograms with touching bars, and every grouped median called an estimate.
 4. Confirm no box plot, quartile, frequency density or stem-and-leaf plot appears, and that no lesson07 quartile value is used (S11-P03 to S11-P05).
-5. Confirm the closing frame states only that Year 12 builds probability distributions from relative frequencies and that a 0 to 1 cumulative curve returns, and names the Year 12 playlist without promising other videos.
+5. Confirm the closing frame says Year 12 starts with calculus (derivatives of eˣ, recalling e02 and c10), then states only that later Year 12 videos build probability distributions from relative frequencies and that a 0 to 1 cumulative curve returns, and names the Year 12 playlist without promising other videos.
 6. Confirm both attempts carry every demand and neither card nor picture shows an answer.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its Visual in spoken order, and that scene 1 opens on s10's final frame.
 
@@ -266,14 +266,14 @@ Title: Histograms, Polygons, Mode and Median | Year 11 Maths Advanced
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-advanced/year11/probability-and-data/lesson15.sa.html
 
-Turn a frequency table into graphs in a spreadsheet: frequency and relative frequency histograms, the frequency polygon, and cumulative frequency histograms and polygons. Read the mode from the tallest bar and the median from half the total, for single values and for grouped waiting times at a theme-park ride, from the graphs and from the table. This is the last core video of Year 11 Maths Advanced; the Year 12 playlist picks up from here. Two exam-style questions at the end. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+Turn a frequency table into graphs in a spreadsheet: frequency and relative frequency histograms, the frequency polygon, and cumulative frequency histograms and polygons. Read the mode from the tallest bar and the median from half the total, for single values and for grouped waiting times at a theme-park ride, from the graphs and from the table. This is the last core video of Year 11 Maths Advanced; the Year 12 playlist picks up from here, starting with derivatives of exponentials. Two exam-style questions at the end. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
 
 Mathematics Advanced 11-12 (2024 syllabus), Year 11, Probability and data.
 Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Graph the frequency, relative frequency, and cumulative frequency histograms and polygons of datasets, using spreadsheets or graphing applications, and identify the mode and median from the graphs, and from tables"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa829162c5
 
-Builds on: Frequency tables and relative frequency. Next: the Year 12 Maths Advanced playlist.
+Builds on: Frequency tables and relative frequency (s10). Next: the Year 12 Maths Advanced playlist, starting with Differentiating k e^(ax+b): Squash, Slide or Stretch e^x.
 
 #Year11Maths #MathsAdvanced #Histograms #HSCScience
 

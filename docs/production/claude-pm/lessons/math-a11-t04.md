@@ -26,7 +26,7 @@ Syllabus content points (Mathematics Advanced 11-12 (2024), Year 11, Trigonometr
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-**Boundary:** starts from t03's final frame exactly (the coded circle of radius 2 with blue rays at 30° and 150°, their points joined by a dashed level line, heights drawn amber, chips "same height", "sin 150° = sin 30°?", "Next: every quadrant", "?"). Recalls t03 (cos θ = x/r, sin θ = y/r, tan θ = y/x; signs from coordinates) and t01 (exact values at 30°, 45°, 60°) in a phrase or chip each. Teaches: quadrants; the related angle as the acute angle between the ray and the x-axis, for angles that are not multiples of 90° (`ci535e2340`); the copies 180° − A, 180° + A, 360° − A of an acute angle A, with the same triangle and signs from the quadrant (`cid118da07`); ASTC built from the signs of x and y; exact values (cos 150°, tan 300°); a second ratio from one ratio and the quadrant by drawing the triangle; cos(−θ) = cos θ, sin(−θ) = −sin θ, tan(−θ) = −tan θ from the reflection in the x-axis (`ci7bdc1767`). Stops at degrees. Not taught: radians (t08); the Pythagorean identity (t14); equations (t15).
+**Boundary:** starts from t03's final frame exactly (the coded circle of radius 2 with blue rays at 30° and 150°, their points joined by a dashed level line, heights drawn amber, chips "same height", "sin 150° = sin 30°?", "Next: every quadrant", "?"). Recalls t03 (cos θ = x/r, sin θ = y/r, tan θ = y/x; signs from coordinates) and t01 (exact values at 30°, 45°, 60°) in a phrase or chip each. Teaches: quadrants; the related angle as the acute angle between the ray and the x-axis, for angles that are not multiples of 90° (`ci535e2340`); the copies 180° − A, 180° + A, 360° − A of an acute angle A, with the same triangle and signs from the quadrant (`cid118da07`); ASTC built from the signs of x and y; exact values (cos 150°, tan 300°); a second ratio from one ratio and the quadrant by drawing the triangle; cos(−θ) = cos θ, sin(−θ) = −sin θ, tan(−θ) = −tan θ from the reflection in the x-axis (`ci7bdc1767`). Stops at degrees. Not taught: radians (t08); the Pythagorean identity (t14a); equations (t15a, t15b).
 
 ## Decisions
 
@@ -41,7 +41,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Worked examples (g01 layout).** 4: site card 06, cos 150° = −√3/2; site drill, tan 300° = −√3; crossed "related angle −30°". 5: site lesson03 `we-2`, sin θ = −3/5 in the fourth quadrant, cos θ = 4/5 (by the triangle, not the identity); crossed "−4/5". 6: site `we-3`, cos(−45°) = √2/2, and TI06 `we-1`, tan(−60°) = −√3; crossed "sin(−30°) = 1/2".
 - **Memory aid.** Framed card: "Size from the related angle, sign from the quadrant: All Stations To Central." Second line: "−θ mirrors in the x-axis: cos keeps its sign, sin and tan flip."
 - **Visual surprise.** One wedge, three mirrors: the 30° triangle lands exactly on the clock's ten, eight and four o'clock marks.
-- **Site notes (pack section 8).** The site's "reference angle" is called the related angle (syllabus word). Radian forms (card 07, drill 2) move to t08; drill 4 (the identity) to t14. The three negative-angle results, which the site shows only as later graph facts, are established together here from the mirror (`ci7bdc1767` gap).
+- **Site notes (pack section 8).** The site's "reference angle" is called the related angle (syllabus word). Radian forms (card 07, drill 2) move to t08; drill 4 (the identity) to t14a. The three negative-angle results, which the site shows only as later graph facts, are established together here from the mirror (`ci7bdc1767` gap).
 - **Plain meanings at first use.** Quadrant ("the four quarters of the plane, numbered one to four, anticlockwise from the top right"); related angle ("the acute angle between the ray and the x-axis"); acute ("less than ninety degrees"); reflect, recalled from e08 ("flip across a mirror line").
 - **Attempts (pack questions).** A1: sin 240° − cos 300° + tan(−135°) = (1 − √3)/2; crossed "tan(−135°) = −1". A2: cos θ = −8/17, 180° < θ < 270°: sin θ = −15/17, tan θ = 15/8; crossed "tan θ = −15/8".
 - **Mistake scene:** none separate. A negative "related angle" from θ − 180° in the second quadrant (4 crossed); keeping ± or the wrong sign from Pythagoras (5 crossed); sin(−θ) = sin θ by analogy with cos (6 crossed); a double negative (A1 crossed); a third-quadrant tangent made negative (A2 crossed).
@@ -152,7 +152,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 27 s and 27 s.
 - **Avoided double teaching:** the circle definitions (t03) and exact values (t01) are recalled by chip; t03's 120° is named as a related angle in one sentence (ruling 17), not redone.
 - **Syllabus coverage:** `ci535e2340` (2, 4, A1; key notes 1, 2); `cid118da07` (2 to 5, A1, A2; key notes 2 to 4); `ci7bdc1767` (6, A1; key note 5).
-- **Out of scope by design:** radians (t08); the identity sin² θ + cos² θ = 1 (t14); equations (t15).
+- **Out of scope by design:** radians (t08); the identity sin² θ + cos² θ = 1 (t14a); equations (t15a, t15b).
 
 ## Practice questions and model answers
 

@@ -73,7 +73,7 @@ Handoff: math-s12-p03: "the canteen lunch deal: how many different lunches?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): total teal; favourable violet; complement amber; probability values blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): total teal; favourable violet; complement amber; probability values blue; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: ten marbles, one question
 > Here's the bag from last time, tipped out. Ten marbles: three red, five blue and two yellow. Mix them back in, take one without looking, and ask how likely it is to be blue. There are three colours, so is it one in three? Or does it depend on how many marbles there are of each colour? So how do we find a probability from equally likely outcomes, and the chance something doesn't **happen**?

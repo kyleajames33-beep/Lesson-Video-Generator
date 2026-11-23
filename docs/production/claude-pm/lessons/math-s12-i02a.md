@@ -76,7 +76,7 @@ Handoff: math-s12-i02b: "$1,500 for a phone in 2 years at 5%: how much now?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; r and multiplier amber; interest teal; interest on interest olive; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; r and multiplier amber; interest teal; interest on interest olive; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: leave it in
 > Last time, the interest went into a jar, and the account stayed at five thousand dollars. Now leave it in. The two hundred dollars stays in the account, so next year, the bank works out four per cent of five thousand two hundred. That's two hundred and eight dollars, not two **hundred**. The extra eight dollars is interest, earned on last year's **interest**. That's compound interest. The interest is added to the balance, so it earns interest too. So how does compound interest grow, and what will your money be worth in the **future**?

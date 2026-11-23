@@ -71,7 +71,7 @@ Handoff: math-s12-b06: "what are A and B?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x amber; y teal; points ink; line blue; r, dial and strength olive; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x amber; y teal; points ink; line blue; r, dial and strength olive; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how strong, as one number?
 > Here's the kiosk's line again, beside a dial that runs from minus one to one. In words, we called this relationship strong. But how strong, exactly? Is there one number that measures how closely the points follow a straight line? There is, and it's called Pearson's correlation coefficient. So what does it **measure**?

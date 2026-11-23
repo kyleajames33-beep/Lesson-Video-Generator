@@ -26,7 +26,7 @@ Standard 2 (Critical path analysis):
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa9c92c4c6
 
-**Boundary:** starts from z06's final frame exactly (section 3 of `../checks/root-decisions-maths-s12-z01-z06.md`): header "MATHEMATICS STANDARD"; the bakery-café counter plate `ms12-bakery-cafe-counter-v1.png` (about 1,150 px wide, left and centre); the coded chalkboard "Morning jobs" with five lines ("switch on the oven: 10 min", "mix the muffin batter: 15 min", "bake the muffins: 25 min", "heat the pies: 20 min", "set out the display: 10 min"); clock chip "6:00 am"; chips "what order, and how soon can we open?", grey "Normal distribution: done", "Next" and "?". Recalls Year 11 Standard networks (math-s11-n02, n03: directed and weighted networks) in a phrase or grey chip. Teaches: an activity is a job that takes time (its duration); an immediate predecessor is a job that must finish just before another can start; the precedence table (a dash for none; immediate predecessors only); the activity network (activities as arrows labelled with letter and duration, events as numbered circles, one start event and one finish event); building it row by row (no predecessors: leave the start; otherwise leave the event where all the immediate predecessors finish; nothing waits: end at the finish); checking the drawing against the table; reading a table back from a network. Stops at networks that need no dummy. Not taught: dummy activities (c01b), times and scans (c02).
+**Boundary:** starts from z06's final frame exactly (section 3 of `../checks/root-decisions-maths-s12-z01-z06.md`): no header strip (topic only; root ruling 23 Nov 2026: no course name on screen); the bakery-café counter plate `ms12-bakery-cafe-counter-v1.png` (about 1,150 px wide, left and centre); the coded chalkboard "Morning jobs" with five lines ("switch on the oven: 10 min", "mix the muffin batter: 15 min", "bake the muffins: 25 min", "heat the pies: 20 min", "set out the display: 10 min"); clock chip "6:00 am"; chips "what order, and how soon can we open?", grey "Normal distribution: done", "Next" and "?". Recalls Year 11 Standard networks (math-s11-n02, n03: directed and weighted networks) in a phrase or grey chip. Teaches: an activity is a job that takes time (its duration); an immediate predecessor is a job that must finish just before another can start; the precedence table (a dash for none; immediate predecessors only); the activity network (activities as arrows labelled with letter and duration, events as numbered circles, one start event and one finish event); building it row by row (no predecessors: leave the start; otherwise leave the event where all the immediate predecessors finish; nothing waits: end at the finish); checking the drawing against the table; reading a table back from a network. Stops at networks that need no dummy. Not taught: dummy activities (c01b), times and scans (c02).
 
 ## Decisions
 
@@ -67,12 +67,12 @@ Handoff: the café's half-drawn network, "C needs A and B. D needs only A. How d
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; events ink; predecessor check soft blue glow; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS" (from scene 1's first change). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; events ink; predecessor check soft blue glow; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen) (from scene 1's first change). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the café's morning jobs
 > It's six in the morning at the bakery-café, and the doors open as soon as these five jobs are done. Some jobs can run at the same time, and some have to wait for others. Before we can work out how soon the café can open, we need a clear picture of what waits for what. Builders, event organisers and kitchens plan their work this way, and it starts with a table. So how do we turn a list of jobs into a **network**?
 
-Visual: opens on z06's final frame exactly. On the first sentence "Next" fades and the header strip gains "· CRITICAL PATH ANALYSIS"; the five chalk lines pulse in turn. On "at the same time" two soft brackets join "switch on the oven" and "mix the muffin batter" (hand tag "at the same time"). On "wait for others" a small chalk arrow links "bake the muffins" back to "mix the muffin batter". On "network" heading "From jobs to a network" writes, and the chip "what order, and how soon can we open?" moves to the top right.
+Visual: opens on z06's final frame exactly. On the first sentence "Next" fades and the header strip writes "CRITICAL PATH ANALYSIS"; the five chalk lines pulse in turn. On "at the same time" two soft brackets join "switch on the oven" and "mix the muffin batter" (hand tag "at the same time"). On "wait for others" a small chalk arrow links "bake the muffins" back to "mix the muffin batter". On "network" heading "From jobs to a network" writes, and the chip "what order, and how soon can we open?" moves to the top right.
 
 ### 2. activities and durations
 > Each job is called an activity, a task that takes time, and its time is its duration. Let's give each activity a letter, which keeps the table and the picture short. Switching on the oven is A, ten minutes. Mixing the muffin batter is B, fifteen. Baking the muffins is C, twenty-five. Heating the pies is D, twenty, and setting out the display is E, ten **minutes**.
@@ -255,9 +255,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Precedence Tables and Network Diagrams | Year 12 Maths Standard 2
+Title: Precedence Tables and Network Diagrams | Year 12 Maths Standard
 
-(Title length: 65 characters by script.)
+(Title length: 63 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson01.sa.html
 

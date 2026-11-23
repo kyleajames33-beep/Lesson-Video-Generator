@@ -2,7 +2,7 @@
 
 Status: Revision 2 (17 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-c06.md`, `c10.md`, `w14.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,765 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 521 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,923 characters by script (see "Narration length estimate"; Revision 2 plus the 23 Nov 2026 audit beat in scene 7), 13 scene headings, about 534 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 ## Revision 2 (17 Nov): learning review resolved
 
@@ -51,7 +51,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **Mistake scene:** none separate. The power rule on aˣ (6 crossed, A1 crossed); every exponential having gradient 1 at (0, 1) (2, the slider); e as a rounded 2.7 or a variable (3 tag); eˣ against xᵉ (3 tag); gradient equal to x instead of the height (A2 crossed).
 - **Cause chain taught, in order:** (1) the cart's growth right now is the gradient of its graph, and at the start that is less than 1 (1); (2) every aˣ passes through (0, 1) but leaves it at a different steepness, flatter for small bases and steeper for big ones, so exactly one base gives gradient 1 there (2); (3) that base is a fixed irrational number, e (3); (4) one step right multiplies every height of 2ˣ by 2, which stretches that part of the curve upward by 2 and so doubles every slope, so the gradient is always the same multiple of the height, and that multiple is the gradient at (0, 1) (4, 5); (5) for eˣ the multiple is 1, so the gradient equals the height everywhere (6).
 - **Entry knowledge (route):** e01 (every aˣ passes through (0, 1)); c04 (estimating a tangent's gradient with a graphing application); c05 (the gradient function f′(x)); c07 (the constant multiple rule).
-- **What Year 12 relies on.** d01 assumes `ciac4383bd` and says "e to the x is its own derivative. So on this graph, the gradient always equals the height. At height one, the slope is one"; d03 shows the grey chip "Year 11: on eˣ, gradient = height". This video ends on exactly that picture and those words. d02 measures "gradient ÷ height" for 2ˣ (0.693) and names it ln 2; this video measures the same ratio and stops at "a constant k that depends only on a", with a forward reference "Year 12 finds a formula for it".
+- **What Year 12 relies on.** d01 assumes `ciac4383bd` and says "e to the x is its own derivative. So on this graph, the gradient always equals the height. At height one, the slope is one"; d03 shows the grey chip "Year 11: on eˣ, gradient = height". This video ends on exactly that picture and those words. d01 also draws y = e⁻ˣ and y = 3eˣ as Year 11 curves, so scene 7 ends with a short beat (no new teaching, added 23 Nov 2026 for coherence audit S-6) that draws eˣ, e⁻ˣ and 3eˣ on one set of axes with the grey chip "e01: k aˣ, k a⁻ˣ", and key note 6 repeats it. d02 measures "gradient ÷ height" for 2ˣ (0.693) and names it ln 2; this video measures the same ratio and stops at "a constant k that depends only on a", with a forward reference "Year 12 finds a formula for it".
 - **Handoff (to math-a11-e03, "What is a logarithm, and how does it undo an exponential?").** Scene 11: the tournament noticeboard (`ma11-tournament-board-v1.png`) with a coded knockout draw for 8 teams on its paper sheet, the trophy (`ma11-trophy-v1.png`) beside it; chips "8 teams → 3 rounds" (8 teal, 3 blue), "64 teams → ? rounds", "2^? = 64" (2 amber, ? blue); "Next: running 2ˣ backwards" and "?". This is e03's opening frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -104,9 +104,9 @@ Visual: clear change to the rule card at the left (900 px) with the app badge at
 Visual: stage change: the large graph returns with y = eˣ (teal) and the rider board. Row at the top left, 60 px, framed: "d/dx(eˣ) = eˣ" on "x" (first). The rider runs: at (0, 1) readouts 1.00 | 1.00 | ratio 1.00; at height 5 a small x readout "x ≈ 1.61" (blue, 36 px) shows beside the point, readouts 5.00 | 5.00; the height and gradient readouts tick together; on "height" hand tag "gradient = height". g01 strip below (task 44 px "Find the gradient of y = eˣ at x = 2 and at x = −1."): "x = 2: height e² ≈ 7.39" and on "nine" "gradient ≈ 7.39" (green frame), the violet tangent at (2, 7.39); "x = −1: height and gradient ≈ 0.37" (green frame). On "x" (last) a red slip "d/dx(eˣ) = x e^(x − 1)" writes and is crossed, caption "power rule is for xⁿ". On "moment" the cart badge returns (300 px) beside the graph with readouts "gold: 2.72 kg" and "growing now: 2.72 kg/h" ticking together, hand tag "gold per hour = gold".
 
 ### 7. memory aid
-> Here's the summary. Every a to the x has a gradient that's a constant times its height. e is the one base where that constant is one. So on e to the x, the gradient always equals the **height**.
+> Here's the summary. Every a to the x has a gradient that's a constant times its height. e is the one base where that constant is one. So on e to the x, the gradient always equals the **height**. And everything from e01 still works with e as the base. e to the minus x is the mirror image in the y axis, and three e to the x crosses the y axis at **three**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: y = eˣ small with two tangents and "gradient = height" readouts (1 | 1, 5 | 5). Main line, hand font 56 px: "On eˣ, the gradient always equals the height." On "height" the key line, 40 px: "d/dx(aˣ) = k aˣ; for e, k = 1." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: y = eˣ small with two tangents and "gradient = height" readouts (1 | 1, 5 | 5). Main line, hand font 56 px: "On eˣ, the gradient always equals the height." On "height" the key line, 40 px: "d/dx(aˣ) = k aˣ; for e, k = 1." Hold about 2 s. On "everything from e01" (added 23 Nov 2026, coherence audit S-6; no new teaching) the card shrinks to the top (30 px) and one set of axes draws below it (1,100 × 520 px; x from −2 to 2, y from 0 to 8; dashed grey asymptote "y = 0"), grey chip "e01: k aˣ, k a⁻ˣ". y = eˣ draws in teal through (0, 1); on "mirror image" y = e⁻ˣ (teal, dashed) draws as the reflection of eˣ in the y axis, both through (0, 1), hand tag "mirror in the y axis"; on "three" y = 3eˣ (teal, thicker) draws through (0, 3), the point ringed, hand tag "× 3: starts at 3". All three stay above y = 0. Hold about 1 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. The gradient of y equals four to the x, at x equals zero, is about one point three eight six. Its gradient function is k times four to the x. Find k, then the gradient at x equals one, and at x equals minus a half. Pause here to answer.
@@ -142,6 +142,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 - d/dx(aˣ) = k aˣ, where k is the gradient at (0, 1) and depends only on a.
 - d/dx(eˣ) = eˣ: on y = eˣ, gradient = height.
 - The power rule is for xⁿ, not aˣ.
+- e01's graphs still work: y = e⁻ˣ is eˣ mirrored in the y axis; y = 3eˣ crosses at (0, 3).
 
 Memory aid (framed card, right side, as in scene 7): *On eˣ, the gradient always equals the height.* The notes scene is 1,350 frames (45 s).
 
@@ -151,10 +152,10 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 
 - **Does it explain causes?** Why the cart's start rate is 0.69 and not 1: the rate climbs across the hour, so the average hides a slower start (1). Why exactly one base works: the gradient at (0, 1) rises steadily with the base, through 1 between 2 and 3 (2). Why the gradient is a constant times the height: one step right is an upward stretch by a, which multiplies every slope by a (4, 5). Why eˣ is its own derivative: its constant is 1 (6).
 - **Misconceptions addressed:** e as a variable or as 2.7 (3); eˣ against xᵉ (3); the power rule on aˣ (6 crossed, A1 crossed); every exponential with gradient 1 at (0, 1) (2); the gradient of eˣ at x as x (A2 crossed).
-- **Visual standard, item by item:** 1 the cart plate from the first frame; 2 a new stage every 30 to 50 s; 3 the cart readouts, the app slider locking on e, the height-slope rider and the stretch; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 strips in 3 and 6; 8 framed card and five bullets; 9 the slider locking at 2.71828… and the rider's equal readouts.
+- **Visual standard, item by item:** 1 the cart plate from the first frame; 2 a new stage every 30 to 50 s; 3 the cart readouts, the app slider locking on e, the height-slope rider and the stretch; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 strips in 3 and 6; 8 framed card and six bullets; 9 the slider locking at 2.71828… and the rider's equal readouts.
 - **One idea at a time:** the start rate (1), the base sweep (2), e as a number (3), the gradient function of 2ˣ (4), the general k (5), eˣ (6).
 - **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback 25 s and 25 s.
-- **Avoided double teaching:** tangents and the app (c04), the gradient function (c05), the constant multiple rule (c07) and (0, 1) (e01) are recalled in a phrase or grey chip.
+- **Avoided double teaching:** tangents and the app (c04), the gradient function (c05), the constant multiple rule (c07) and (0, 1) (e01) are recalled in a phrase or grey chip; e01's k aˣ and k a⁻ˣ are recalled with e as the base in scene 7's closing beat.
 - **Syllabus coverage:** `ci93d02049` (1 to 3; key notes 1, 2); `ci7e417be9` (4, 5, A1; key note 3); `ciac4383bd` (6, 7, A2; key note 4).
 - **Out of scope by design:** ln a as k (Year 12 d02); compounding; the chain rule (Year 12 d01); logs (e03).
 
@@ -199,7 +200,7 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `e01e08/verify.py`); Codex
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed; Revision 2 recount, 17 Nov, scratchpad `e-rev2/count.py`): 5,765 characters. At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the cart clock, the slider closing in, the rider and the stretch) and the 45 s notes scene: about 521 s. Characters per scene (1 to 13): 732, 673, 545, 817, 533, 776, 190, 247, 327, 206, 336, 308, 75. Speech before the notes is about 428 s, under the 570 s cap. Feedback speech: about 25 s and 25 s.
+Counted by script (narration blockquotes, bold markers removed): 5,923 characters after the 23 Nov 2026 audit beat in scene 7 (Revision 2 recount, 17 Nov, scratchpad `e-rev2/count.py`: 5,765). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the cart clock, the slider closing in, the rider and the stretch) and the 45 s notes scene: about 534 s (the scene 7 beat adds about 12 s of speech and 1 s of hold). Characters per scene (1 to 13): 732, 673, 545, 817, 533, 776, 348, 247, 327, 206, 336, 308, 75. Speech before the notes is about 440 s, under the 570 s cap. Feedback speech: about 25 s and 25 s.
 
 Reserve trims if the voiced take runs long: scene 3's last sentence (keep the small graph); scene 6's "And at x equals minus one" sentence (keep the row).
 

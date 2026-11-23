@@ -75,7 +75,7 @@ Handoff: math-s12-i07: "500 shares at $12.40: total cost = ?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): Ridgeline violet; Kestrel olive; change teal; falls blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): Ridgeline violet; Kestrel olive; change teal; falls blue; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: up overall, but every month?
 > Here are Ridgeline Mobile's share prices, at the end of each month for six months. It's a made-up phone company, but real share prices move just like this, every day, and they can fall. It started at three dollars twenty, and finished at three ninety-five, so overall, it went up. But did it go up every month? A table is hard to read at a glance. A graph shows the whole story. So how do we graph a share's value over time, and say what it **shows**?

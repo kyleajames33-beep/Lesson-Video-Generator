@@ -71,7 +71,7 @@ Handoff: math-s12-t05 ("the ute drove 2.0 km north then 2.1 km east: how far, an
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): north lines dashed grey; true bearings blue; compass arcs teal; arms ink; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): north lines dashed grey; true bearings blue; compass arcs teal; arms ink; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: which way?
 > Here's the farm from above, with the homestead in the middle, and north at the top. The dam is over here, the shearing shed down here, and the front gate up here. How would you tell someone exactly which way to go? Saying north east is close, but it isn't exact. So how do true bearings and compass bearings describe a **direction**?

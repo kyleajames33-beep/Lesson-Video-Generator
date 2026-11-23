@@ -75,7 +75,7 @@ Handoff: math-s12-i17a: "a $2,000 television on the card, not paid in full: how 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; new purchases dark ink; fees amber stamp; interest-free teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; new purchases dark ink; fees amber stamp; interest-free teal; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a loan you can borrow again
 > Here's a plain credit card. A credit card lets you borrow up to a limit, and pay it back later. This one has a limit of three thousand dollars, and right now two thousand dollars is **owing**. Unlike a car loan, you can keep spending on it while you pay it off. Lots of adults have one, and it can be the cheapest way to pay, or one of the dearest. So why is a credit card a reducing balance loan, and what do its fees and interest-free period **mean**?

@@ -67,7 +67,7 @@ Handoff: math-s12-i23: "a payslip's super line, a car to save for or borrow for:
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): future value blue; interest amber; payments violet; initial amount teal; changed input gold glow; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ANNUITIES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): future value blue; interest amber; payments violet; initial amount teal; changed input gold glow; answer green; mistake red. Header strip "ANNUITIES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: four dials
 > Last time, the same fifty thousand dollars came from many small deposits, or one smaller sum now. So the starting amount matters, not just the deposits. And so do the rate, and the time. This spreadsheet has four inputs: the amount you start with, the payment, the rate, and the number of periods. Change any one, and the final value **changes**. So how do the starting amount, payment, rate and term change an annuity's **value**?

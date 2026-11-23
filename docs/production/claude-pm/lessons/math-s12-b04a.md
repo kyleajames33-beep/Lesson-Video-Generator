@@ -73,7 +73,7 @@ Handoff: two routes: Standard 2 to b04b ("what's its equation?"); Standard 1 to 
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and x amber; ice creams and y teal; points ink; line by eye blue; computer's line ink; mean point amber and teal cross-hairs; gap sticks ink and grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and x amber; ice creams and y teal; points ink; line by eye blue; computer's line ink; mean point amber and teal cross-hairs; gap sticks ink and grey; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: one line through the middle
 > Here's the kiosk's scatter plot, with a ruler lying across it. The points sit close to a straight line, but no single line goes through all five. One line that sums them up would help the kiosk plan, and predict its sales. So which line sums them up best, and how do we draw it, by eye and with a computer? That's called a line of best **fit**.

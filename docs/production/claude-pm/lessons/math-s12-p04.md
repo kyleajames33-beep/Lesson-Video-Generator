@@ -74,7 +74,7 @@ Handoff: math-s12-p05: "10 flips, 7 heads: is this coin unfair?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): branch probabilities and products blue; event paths violet; complement amber; the all-paths check teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed for the strand): branch probabilities and products blue; event paths violet; complement amber; the all-paths check teal; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a question mark on every branch
 > Last time, we named every marble, B one to R two, so all twenty-five pairs were equally likely. That works for marbles. But a bus that's on time eight days in ten can't be split into named, equally likely pieces so easily. So here's the same tree again, with a question mark on every branch. If we write a probability on each branch, how do probability trees, and P of A and B equals P of A times P of B, handle multistage **events**?

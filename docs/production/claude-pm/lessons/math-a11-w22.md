@@ -1,8 +1,8 @@
 # Maths A11 W22: How does one pair of values fix a direct variation model y = kxⁿ? Finding k, using the model both ways, the ratio test and the doubling ladder (design)
 
-Status: Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w22/` folder, no audio). Needs the Codex learning review and maths check before voicing. Nothing recorded; human listening pending.
+Status: learning review resolved, Revision 1 plus 23 Nov 2026 text corrections (status updated 23 Nov 2026, coherence audit N-4): the independent learning review passed with 0 blockers and 0 should-fix findings (`../checks/m-a11-w22-learning-review.md`) and the Codex maths check passed (`../checks/m-a11-w22-maths-check.md`). The maths check's count correction is applied (5,652 characters; scene 10 is 353). Not voiced. Next: voicing on the Google voice and a build on the studio kit to grade A. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`, the d01 Revision 6 pattern and the f01 and s01 models) and the w01 to w14 root rulings (`../checks/root-acceptance-maths-a11-w01-w14.md`). Not voiced (no `math-a11-w22/` folder, no audio). Nothing recorded; human listening pending.
 
-Narration 5,660 characters, 14 scene headings, about 513 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
+Narration 5,652 characters (recounted 23 Nov 2026, as the maths check found), 14 scene headings, about 513 s with holds (the key-notes scene fixed at 45 s), counted by script with the build parser rules (see "Narration length estimate").
 
 Scope: twenty-second video of the Year 11 Mathematics Advanced course (outline playlist order 22), after w21 (y = k/x) and before w23 (inverse variation). Pre-design pack: `../pre-design/maths-a11/math-a11-w22.md` (brief 243). Site lesson (read through the pack's quotations, read only): `working-with-functions/lesson20.sa.html` (Direct Variation, SHA256 `3acc5f2d8a823f2af07743d7f30a1dfe521bbd641ad23e0b69a1fff52018e4cf`, `we-1`, `we-2`, `we-3`). The site teaches n = 1 only (crosswalk: partial); n = 2 and n = 3 are original teaching. Every number recalculated with SymPy. Route entry: `math-a11-w22` in `../../programme/maths-a11-route-inputs-2.json`.
 
@@ -193,7 +193,7 @@ Checked with SymPy 1.14 (16 Nov 2026, scratchpad `w15w23/verify.py`, 85 checks, 
 
 ## Narration length estimate
 
-Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,660 characters**, 14 scene headings. Characters per scene (1 to 14): 457, 654, 409, 631, 718, 523, 507, 171, 202, 361, 234, 401, 317, 75.
+Counted 16 Nov 2026 with the build parser rules (`### N.` headings; only lines starting "> " inside the scene, joined with a space, `**` removed; the total is the sum of the scene strings): **5,660 characters**, 14 scene headings. Recount 23 Nov 2026 (same rules; the maths check's correction): **5,652 characters**; scene 10 is 353, not 361. Characters per scene (1 to 14): 457, 654, 409, 631, 718, 523, 507, 171, 202, 353, 234, 401, 317, 75.
 
 At 13.3 characters per second the speech is about 426 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, two feedbacks 1 s each, handoff 2 s) 6 s; settling for the braking rig at three speeds (1, 5), the ratio tables (4), the doubling ladder (6) and the eight-cube outline (7), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 513 s (8 min 33 s)**, inside the 5,500 to 6,800 character band and about 57 s under the 570 s cap.
 

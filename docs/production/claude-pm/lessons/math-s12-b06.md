@@ -75,7 +75,7 @@ Handoff: math-s12-b07: "can we trust these?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x amber; y teal; points ink; least-squares line, m and B blue; c and A violet; r olive; squares pale grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x amber; y teal; points ink; least-squares line, m and B blue; c and A violet; r olive; squares pale grey; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: what are A and B?
 > Here's the kiosk's results screen again. We've used r. But the calculator also gives two more numbers. A is minus sixty-three point zero eight six, and B is five point six zero three. They describe a line, the one the calculator works out from the data. So how do a calculator and a spreadsheet find this line, called the least-squares regression line, and how do we read **it**?

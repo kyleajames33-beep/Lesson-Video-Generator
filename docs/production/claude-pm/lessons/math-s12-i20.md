@@ -70,7 +70,7 @@ Handoff: math-s12-i21: "a $50,000 deposit in 8 years: how much a month?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; payment violet; FV blue; PV teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ANNUITIES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; payment violet; FV blue; PV teal; answer green; mistake red. Header strip "ANNUITIES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: ten rows, or one number?
 > Last time, four years of summer-job savings grew to eight thousand six hundred and twenty dollars twenty-five, one row at a time. But what if the savings kept going for ten years? That's ten rows by hand. For super, it could be hundreds. There's a shortcut. A printed table gives one number that does all the rows in one **multiplication**. So how does a table of interest factors give an annuity's **value**?

@@ -72,7 +72,7 @@ Handoff: math-s12-a11b: "at t = 5 the model says −25 m: where does it stop wor
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x and x-intercepts blue; y and the y-intercept teal; vertex amber; level line violet, interval pale violet; profit pale teal, loss grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): x and x-intercepts blue; y and the y-intercept teal; vertex amber; level line violet, interval pale violet; profit pale teal, loss grey; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: four numbers, four meanings
 > Here's the rocket's graph again, with the four numbers we found, zero, four, two and twenty. In a maths exercise, finding them is the end. In a real problem, a number on its own isn't an answer. Each feature of the graph tells you something about the rocket, and an exam wants that meaning, in words, with **units**. So what do the intercepts and vertex of a practical graph mean, and how do we read answers from **it**?
@@ -248,9 +248,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Reading a Quadratic Graph in Real Problems | Year 12 Maths Standard 2
+Title: Reading a Quadratic Graph in Real Problems | Year 12 Maths Standard
 
-(Title length: 69 characters.)
+(Title length: 67 characters; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/algebraic-relationships/lesson05.sa.html
 

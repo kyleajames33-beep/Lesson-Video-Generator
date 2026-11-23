@@ -76,7 +76,7 @@ Handoff: math-s12-r10: "a tap dripping 0.3 L every minute: a little or a lot ove
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first quantity teal; per unit violet; unit rate amber; ratio blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first quantity teal; per unit violet; unit rate amber; ratio blue; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: who is paid more?
 > Here are two pay slips from two part-time jobs. Job A paid three hundred and thirty-six dollars for an eight-hour shift. Job B paid two hundred and seventy dollars for a six-hour shift. Job A's pay slip is bigger, so it looks like the better job. But Job A also took two more hours of your **time**. Whenever you compare jobs, phone plans or anything else that runs over time, the total on its own can fool you. So how is a rate different from a ratio, and how do unit rates make a comparison **fair**?
@@ -283,7 +283,7 @@ Syllabus content, Standard 1:
 "Make comparisons between rates in a variety of practical contexts"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0 (Standard 1)
 
-Builds on: Ratios and simplest form. Next: Converting Rates and Using Them to Solve Problems.
+Previous: Rainfall Volume: V = Ah on Roofs, Tanks and Land (Standard 2) or Building Plans: Paint and Comparing Costs (Standard 1). Builds on: Ratios, Fractions and Simplest Form. Next: Converting Rates and Using Them to Solve Problems.
 
 #Year12Maths #MathsStandard #Rates #HSCScience
 

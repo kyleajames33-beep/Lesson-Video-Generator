@@ -69,7 +69,7 @@ Handoff: math-s12-p08: "4 out of 5 users sleep better! (25 volunteers): should w
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles: lunch violet; recess blue; both hatched; neither amber; totals teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RELATIVE FREQUENCY AND PROBABILITY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles: lunch violet; recess blue; both hatched; neither amber; totals teal; answer green; mistake red. Header strip "RELATIVE FREQUENCY AND PROBABILITY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: two questions, one card
 > Here's the canteen survey. Schools, shops and councils run surveys like this all the time. Eighty students answered two questions: did you buy lunch, and did you buy recess? Forty-five said yes to lunch, thirty said yes to recess, and twelve said yes to both. Forty-five plus thirty is seventy-five, but that counts those twelve twice. So how do we count the overlap once, and how do Venn diagrams and two-way tables sort two **attributes**?

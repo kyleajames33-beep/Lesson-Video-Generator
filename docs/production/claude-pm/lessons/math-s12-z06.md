@@ -73,7 +73,7 @@ Handoff: the bakery-café at 6 am, "what order, and how soon can we open?" (c01a
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; tails and probabilities amber; gauge zones green, amber and red (with words); answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION" (scenes 1 to 11 and 13); scene 12's header is "MATHEMATICS STANDARD" only, so the frame serves c01a. Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; tails and probabilities amber; gauge zones green, amber and red (with words); answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen) (scenes 1 to 11 and 13); scene 12 has no header strip (no course name; topic-only rule), so the frame serves c01a. Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the 723 g loaf
 > This loaf just came off the line at seven hundred and twenty-three grams. The mean is seven hundred and ten, and the standard deviation is five. Heavy loaves happen, so is this one a problem, or just the luck of the oven? How do z-scores tell us whether a result is **unusual**?
@@ -133,7 +133,7 @@ Visual: the card shrinks to the top. A small bell with time labels 22 to 34 s. R
 ### 12. handoff: the café opens
 > That's the normal distribution done. Back at the bakery, it's six in the morning. The loaves are checked and on the shelf, and the café has jobs to do before it opens. Switch on the oven, mix the muffin batter, bake the muffins, heat the pies and set out the display. Some jobs have to wait for others. What order works, and how soon can we **open**?
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the final frame (exactly as decisions file section 3): the header strip changes to "MATHEMATICS STANDARD"; the bakery-café counter plate `ms12-bakery-cafe-counter-v1.png` (about 1,150 px wide, left and centre) with loaves on the shelf and a blank chalkboard on the wall; on "six in the morning" a coded clock chip "6:00 am" (40 px); on "Switch on the oven" the chalkboard heading "Morning jobs" writes in chalk style, then each job writes on its spoken word: "switch on the oven: 10 min", "mix the muffin batter: 15 min", "bake the muffins: 25 min", "heat the pies: 20 min", "set out the display: 10 min" (32 px, chalk white on the board); on "wait for others" the grey chip "Normal distribution: done"; on "open" chip "what order, and how soon can we open?" (40 px) and chips "Next" and "?". No order, arrow, letter or total time is shown. Hold about 2 s. Scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the final frame (exactly as decisions file section 3): the header strip clears (no course name; topic-only rule, 23 Nov 2026); the bakery-café counter plate `ms12-bakery-cafe-counter-v1.png` (about 1,150 px wide, left and centre) with loaves on the shelf and a blank chalkboard on the wall; on "six in the morning" a coded clock chip "6:00 am" (40 px); on "Switch on the oven" the chalkboard heading "Morning jobs" writes in chalk style, then each job writes on its spoken word: "switch on the oven: 10 min", "mix the muffin batter: 15 min", "bake the muffins: 25 min", "heat the pies: 20 min", "set out the display: 10 min" (32 px, chalk white on the board); on "wait for others" the grey chip "Normal distribution: done"; on "open" chip "what order, and how soon can we open?" (40 px) and chips "Next" and "?". No order, arrow, letter or total time is shown. Hold about 2 s. Scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -267,9 +267,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Unusual Results with z-Scores | Year 12 Maths Standard 2
+Title: Unusual Results with z-Scores | Year 12 Maths Standard
 
-(Title length: 56 characters by script.)
+(Title length: 54 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html
 
@@ -281,7 +281,7 @@ Syllabus content, Standard 2 (NSW Mathematics Standard 11-12, 2024):
 "Use z-scores to make judgements related to outcomes of a given event or sets of data"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa92309f60
 
-Builds on: Normal Probabilities by Shading. Next: Critical path analysis.
+Builds on: Normal Probabilities by Shading. Next: Precedence Tables and Network Diagrams.
 
 #Year12Maths #MathsStandard #NormalDistribution #HSCScience
 

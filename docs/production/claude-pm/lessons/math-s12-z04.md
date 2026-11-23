@@ -69,7 +69,7 @@ Handoff: the loaf bell with the tail under 700 g shaded, "what's the chance a lo
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; bands and percentages amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · THE NORMAL DISTRIBUTION". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): bell teal; data blue; μ, σ marks and z violet; bands and percentages amber; answer green; mistake red. Header strip "THE NORMAL DISTRIBUTION" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the loaves' middle band
 > Here are the loaves again, with a mean of seven hundred and ten grams and a standard deviation of five. One standard deviation either side runs from seven oh five to seven fifteen grams. What fraction of all the loaves land in that band? And how does the sixty-eight, ninety-five, ninety-nine point seven rule describe normal **data**?
@@ -260,9 +260,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: The Empirical Rule: 68, 95, 99.7 | Year 12 Maths Standard 2
+Title: The Empirical Rule: 68, 95, 99.7 | Year 12 Maths Standard
 
-(Title length: 59 characters by script.)
+(Title length: 57 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/the-normal-distribution/lesson03.sa.html
 

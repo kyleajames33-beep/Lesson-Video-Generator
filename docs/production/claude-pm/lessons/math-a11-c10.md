@@ -281,7 +281,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Apply the chain rule: if y is a differentiable function of u, and u is a differentiable function of x, then dy/dx = dy/du × du/dx or if h(x) = f(g(x)) for differentiable functions f(x) and g(x) then h'(x) = f'(g(x))g'(x)"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678
 
-Builds on: Given gradient and angle of inclination; the power rule. Next: The product rule.
+Builds on: The power rule, with roots and reciprocals as powers (c07); composite functions (w27); dy/dx and f′ notation (c05). Next: The product rule.
 
 #Year11Maths #MathsAdvanced #ChainRule #HSCScience
 

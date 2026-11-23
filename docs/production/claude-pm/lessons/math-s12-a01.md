@@ -78,7 +78,7 @@ Handoff: math-s12-a02a: "two lines cross between the grid lines; can we find the
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first line blue; second line teal; crossing amber; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ALGEBRAIC RELATIONSHIPS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): first line blue; second line teal; crossing amber; answer green; mistake red. Header strip "ALGEBRAIC RELATIONSHIPS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: two driving schools
 > Say you've got your learner licence, and you need driving lessons. Two driving schools send you quotes. School A charges a ninety dollar booking fee, then sixty-five dollars a lesson. School B has no booking fee, but charges eighty dollars a lesson. So which one is cheaper? A has the cheaper lessons, but B has nothing to pay up front. The honest answer is, it **depends** on how many lessons you'll need. Draw both prices as lines on one graph, and where they cross tells us when the two schools cost the same. So how do two lines on a graph solve a pair of equations at **once**?

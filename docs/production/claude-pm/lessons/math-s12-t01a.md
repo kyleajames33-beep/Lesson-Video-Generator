@@ -58,7 +58,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Attempts (HSC style).** A1 (site lesson02 quick match, worded as a question, corrected to 9.65 m by MS-42): a wire anchored 4.5 m from a pole's foot at 65° with the ground: 4.5 tan 65° = 9.65 m (tangent, unknown on top); crossed "4.5 × sin 65° = 4.08 m" (caption "the wire's length wasn't given: no hypotenuse"). A2 (pack question 2 (a)): a shade-sail pole 2.4 m tall, rope at 58° with the ground: 2.4 ÷ sin 58° = 2.83 m (sine, unknown underneath); crossed "2.4 × sin 58° = 2.04 m" (caption "the rope is the hypotenuse: longer than 2.4 m"). Pack question 2 (b) (the peg distance) and question 1 (degrees and minutes) are not used here: question 1's 52°18' belongs with t02.
 - **Mistake scene:** none separate. Labelling from the right angle instead of the chosen angle (3); the wrong calculator mode, caught by sin 90° = 1 (4 crossed); multiplying when the unknown is underneath (6 crossed, A2 crossed); choosing sine without the hypotenuse (A1 crossed); rounding early (5, said).
 - **Cause chain taught, in order:** (1) copies of a triangle with the same angles have the same shape: scaling multiplies every side by the same number, which cancels when one side is divided by another, so the ratio is fixed by the angle (2); (2) "opposite" and "adjacent" depend on which angle we stand at, so name the sides from the angle used (3); (3) each pair of sides has a ratio with a name, which the calculator stores for each angle in degree mode (4); (4) an equation like sin 35° = h ÷ 5.5 holds, so multiplying both sides by 5.5 finds h (5); (5) when the unknown is the bottom of the fraction, multiply by it and then divide, and check the hypotenuse is the longest side (6).
-- **Entry knowledge (route):** math-s11-a06 (Pythagoras; the hypotenuse is the longest side, opposite the right angle); math-s11-f03 (changing the subject). Recalled in a phrase or grey chip.
+- **Entry knowledge (route):** math-s11-a06 (Pythagoras; the hypotenuse is the longest side, opposite the right angle); math-s11-f03a (changing the subject). Recalled in a phrase or grey chip.
 - **Handoff (to math-s12-t01b, "How do we find a missing angle in a right-angled triangle?").** Scene 12: the house plate (about 1,300 px wide) with the coded amber roof triangle; its vertical side now labelled "3.15 m" (amber), its bottom side "4.51 m" (violet), the slope "5.5 m" dimmed to grey; the "35°" at the eave covered by a coded card "?" (blue outline); the grey tag "not to scale"; chips "could we get the angle back?", "Next: finding an angle" and "?". No value is worked out. This is t01b's opening frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -73,13 +73,13 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (h) Pronunciations: "five point five metres"; "zero point five seven three six"; "thirteen point four five metres"; "SOH CAH TOA" as "soh cah toe-ah", with the letters spelled once ("S O H").
 
 Main question: *This roof rises at thirty-five degrees, and its edge is 5.5 m long. How high does it go, and how do sine, cosine and tangent find a missing side of a right-angled triangle?*
-Entry knowledge (math-s11-a06, math-s11-f03): Pythagoras and the hypotenuse; changing the subject.
+Entry knowledge (math-s11-a06, math-s11-f03a): Pythagoras and the hypotenuse; changing the subject.
 Stops after: naming sides, why the ratio is fixed, the three ratios, degree mode, a side with the unknown on top or underneath. No angles, no degrees and minutes.
 Handoff: math-s12-t01b ("the roof's two sides are known: could we get the angle back?").
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; ratio values teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; ratio values teal; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how high is the roof?
 > Here's the house from last time. Its roof rises from the gutter at an angle of thirty-five degrees, and the roof's edge runs five point five metres, from the gutter to the top. How high does the roof go? You can't hold a tape measure up in the air, but a right-angled triangle can tell us. So how do sine, cosine and tangent find a missing side of a right-angled **triangle**?

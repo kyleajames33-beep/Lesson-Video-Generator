@@ -74,7 +74,7 @@ Handoff: Standard 2: math-s12-i19, "save the same amount every year"; Standard 1
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; card teal outline; personal loan violet outline; home loan grey-blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): balance blue; interest amber; repayment violet; card teal outline; personal loan violet outline; home loan grey-blue; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the car breaks down
 > Here's a car on a workshop hoist, and the repair bill is six thousand dollars. It's needed now, to get to work, but there's no way to pay it off in one month. You could put it on a credit card, or take out a personal loan. Last time, we saw a card's minimum could drag a debt out for **decades**. So which suits this, a card or a loan? And more generally, which kind of credit suits a short, medium or long-term **goal**?
@@ -283,7 +283,7 @@ Syllabus content, Standard 1:
 "Compare credit cards and personal loans as options to meet short-term, medium-term and long-term financial goals"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fac80cab35 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/fa9ea10adb (Standard 1)
 
-Builds on: Credit Card Statements and the Minimum Payment. Next (Standard 2): What Is an Annuity? Tables and Spreadsheets. Next (Standard 1): the first ratios video.
+Builds on: Credit Card Statements and the Minimum Payment. Next (Standard 2): What Is an Annuity? Tables and Spreadsheets. Next (Standard 1): Ratios, Fractions and Simplest Form.
 
 #Year12Maths #MathsStandard #CreditCards #HSCScience
 

@@ -72,7 +72,7 @@ Handoff: math-s12-p01: "the forecast says a 20% chance of rain: what does 20% me
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and x axis amber; ice creams and y axis teal; points ink; line of best fit blue; range band pale grey; strength and r olive; answer green; mistake red. Header strip "MATHEMATICS STANDARD · BIVARIATE DATA ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): temperature and x axis amber; ice creams and y axis teal; points ink; line of best fit blue; range band pale grey; strength and r olive; answer green; mistake red. Header strip "BIVARIATE DATA ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: past the ends
 > Here's the kiosk's line of best fit again. The kiosk's five days ran from eighteen to thirty-two degrees. But the line keeps going. What would it say about a cold ten degree day, or a forty-five degree scorcher? So when can we trust a prediction from a line of best **fit**?

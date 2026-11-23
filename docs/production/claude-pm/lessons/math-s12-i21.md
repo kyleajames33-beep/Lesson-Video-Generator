@@ -69,7 +69,7 @@ Handoff: math-s12-i22: "four input cells and a future value: change one at a tim
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): goal and balance blue; interest amber; contribution violet; single sum teal; FV table blue; PV table teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · ANNUITIES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): goal and balance blue; interest amber; contribution violet; single sum teal; FV table blue; PV table teal; answer green; mistake red. Header strip "ANNUITIES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a deposit in eight years
 > Here's the goal. A deposit of fifty thousand dollars for a first home, in eight years. The savings account pays six per cent a year, compounded monthly. That's a little above today's best savings rates, and rates change. Last time, we multiplied a payment by a factor to get the future value. This time, we know the future value, and the payment is the question **mark**. So how much must we put in to reach a savings **goal**?

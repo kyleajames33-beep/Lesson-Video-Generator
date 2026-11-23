@@ -2,7 +2,7 @@
 
 Status: Revision 2 (17 Nov 2026): independent learning review resolved (see "Revision 2" below); not voiced. Revision 1 (16 Nov 2026): first design, written to the Year 12 Maths standard (`../maths-visual-standard.md`) and the accepted Year 11 designs (`math-a11-w05.md`, `w14.md`, `c06.md`; rulings in `../checks/root-acceptance-maths-a11-w01-w14.md`, `-w15-w31.md` and `../checks/root-rulings-maths-a11-c-e-packs.md`). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,549 characters by script (see "Narration length estimate"), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,640 characters by script (see "Narration length estimate"; recounted 23 Nov 2026 after the memory-aid change), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 ## Revision 2 (17 Nov): learning review resolved
 
@@ -30,14 +30,14 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-adv
 - **The model.** The profile is drawn with heights × 2 (labelled), as c09's driveway, so the 0.2 m dip reads at video size; the slopes quoted are the real ones. Gradients at the test points: y′(1) = 0.45, y′(3) = −0.15, y′(5) = 0.45 (author note a).
 - **Simulations (standard item 3).**
   1. **Profile rider** (`FunctionRider` on the plate's sidecar profile; scenes 1 to 3): a violet tangent rides the track with a live gradient readout; it flattens and turns amber at x = 2 and x = 4, where the dots snap onto the profile with their coordinates.
-  2. **Table of slopes** (`SignStrip` laid out as a table; scenes 3 to 6): columns at test x-values and the stationary x-values, rows "f′ sign" and "slope" with glyphs ╱ ─ ╲; each column fills as the rider passes, then the verdict writes under each stationary point ("local max", "local min", "neither").
+  2. **Table of slopes** (`SignStrip` laid out as a table; scenes 3 to 6): columns at test x-values and the stationary x-values, rows "f′ sign" and "slope" with glyphs ↗ ─ ↘; each column fills as the rider passes, then the verdict writes under each stationary point ("local max", "local min", "neither").
   3. **Side by side** (scene 5): x³ − 3x² (two stationary points, one max and one min) beside x³ (one stationary point, neither), each with its table.
 - **Colour roles (the c01 to c15 roles, root ruling 7).** f and heights **teal**; f′ and tangents **violet**; stationary points **amber**; "+" and rising the kit's up token, "−" and falling the down token (as c14); x blue; answer green; mistake red, crossed slips only.
 - **Large type, handwritten voice.** As c01. Hand tags: "flat: f′ = 0", "factorise", "heights from f", "both coordinates", "up, flat, down", "down, flat, up", "up, flat, up", "test between, not past", "local: nearby", "a square is never negative".
 - **Stage changes (standard item 2).** The pump track and its rider (1); g01 board, solving f′ = 0 (2); the table of slopes on the track (3); g01 board, site `we-1` (4); side-by-side panels, the "neither" case (5); framed card (6); question cards (7 to 10); the hot-air balloon (11); key notes (12). Scene 3 splits into 3a and 3b at "Local means" (13 headings).
 - **Worked examples (g01 layout).** 2 and 3: the track: (2, 1) local maximum, (4, 0.8) local minimum; increasing for 0.5 ≤ x < 2 and 4 < x ≤ 5, decreasing for 2 < x < 4; crossed "x = 2 and x = 4" (no heights). 4: site `we-1`: (0, 0) local maximum, (2, −4) local minimum; crossed "test x = 3 for the point at 0". 5: x³ at 0: neither.
-- **Memory aid.** Framed card: "Plus to minus: a crest. Minus to plus: a hollow. No change: neither." Key line: "Always both coordinates."
-- **Visual surprise.** The tangent's readout flips sign exactly as the rider passes each stationary point, and the table's glyphs ╱ ─ ╲ redraw the crest's shape in miniature under it; for x³ the glyphs read ╱ ─ ╱, a shape with no turn.
+- **Memory aid (changed 23 Nov 2026, coherence audit S-2).** Framed card: "Turn each sign of f′ into an arrow. Up then down: a crest. Down then up: a hollow. Same way twice: no turn." Key line: "Always both coordinates." This is the published Year 12 d09 aid ("Turn the signs into arrows, and the arrows sketch the shape. Up then down draws a peak. Down then up draws a valley. Two arrows the same way draw a step"), worded on this video's crest and hollow, so that d09 plays as a recall plus its new parts (the name "horizontal point of inflection" and excluded values). The slope table uses the same arrows (↗ for +, ↘ for −), and a sixth key note names the Year 12 term. The earlier aid ("Plus to minus: a crest. Minus to plus: a hollow. No change: neither.") would have given learners two pictures for one test across the years.
+- **Visual surprise.** The tangent's readout flips sign exactly as the rider passes each stationary point, and the table's glyphs ↗ ─ ↘ redraw the crest's shape in miniature under it; for x³ the glyphs read ↗ ─ ↗, a shape with no turn.
 - **Site notes (pack section 8).** lesson08's key terms define local maxima and minima through f″ (logged); this video uses the sign of f′ only and never mentions f″. lesson08's "Move 2" (second-derivative test) is not used. lesson08 `we-1` says "classify" but only finds; the classification step from the pack's correction is added here. lesson08 Q3 (finding a, b, c, d) is not used (pack decision). "Horizontal point of inflection" is not used in learner copy.
 - **Plain meanings at first use.** Stationary point ("a point where the curve is flat for an instant", recalled from c14); local maximum ("higher than every point close by, though not necessarily the highest overall"); local minimum (the reverse); nature ("whether it's a maximum, a minimum or neither"); justify ("show the reason: the sign of f′ on each side").
 - **Attempts (pack questions).** A1: 2x³ − 3x² − 12x + 5: (−1, 12) local maximum, (2, −15) local minimum; crossed "x = −1 and x = 2" (no heights). A2: x³ − 3x² + 3x: one stationary point (1, 1), neither; crossed "f′ = 0, so a turning point".
@@ -76,7 +76,7 @@ Visual: clear change to the g01 board, the track as a 420 px panel at the right.
 ### 3a. justify: a table of slopes
 > Which is the crest? Don't just trust the picture. Justify it with the sign of the gradient on each side. Pick a test value on each side of each stationary point, without going past the next one. Any value will do, as long as it stays in the right stretch. At x equals one, y prime is zero point four five, so the track is rising. At three, it's minus zero point one five, so it's falling. At five, it's zero point four five again, **rising**. So at x equals two, the track goes from rising to falling: up, flat, down. That's a local maximum, the **crest**. At x equals four, it goes from falling to rising: down, flat, up. That's a local minimum, the **hollow**.
 
-Visual: stage change: the track profile full width (1,500 × 420 px, heights × 2) with the table of slopes below it (1,500 × 260 px), columns "x = 1", "x = 2", "x = 3", "x = 4", "x = 5"; rows "y′" and "slope". The rider moves to each column in turn: "0.45, +, ╱" (up token); "0, ─" (amber); "−0.15, −, ╲" (down token); "0, ─"; on "rising" "0.45, +, ╱". On "crest" the verdict under x = 2 writes "local maximum" (green), hand tag "up, flat, down", and the crest on the plate rings. On "hollow" "local minimum" (green) under x = 4, hand tag "down, flat, up", the hollow ringing.
+Visual: stage change: the track profile full width (1,500 × 420 px, heights × 2) with the table of slopes below it (1,500 × 260 px), columns "x = 1", "x = 2", "x = 3", "x = 4", "x = 5"; rows "y′" and "slope". The rider moves to each column in turn: "0.45, +, ↗" (up token); "0, ─" (amber); "−0.15, −, ↘" (down token); "0, ─"; on "rising" "0.45, +, ↗". On "crest" the verdict under x = 2 writes "local maximum" (green), hand tag "up, flat, down", and the crest on the plate rings. On "hollow" "local minimum" (green) under x = 4, hand tag "down, flat, up", the hollow ringing.
 
 ### 3b. local, and where it rises
 > Local means it's the highest or lowest point nearby, not necessarily overall. At five metres, the track is just as high as the crest, and beyond that section it keeps on climbing. The same table tells us where the track rises and falls. It's increasing before two metres and after four, and decreasing between two and **four**. So a full answer gives the points, what each one is, and these stretches. That's what justify means: every claim comes with a reason you can point to.
@@ -86,17 +86,17 @@ Visual: on "Local means" the end of the profile at x = 5 rings with "1 m" and a 
 ### 4. worked example: a plain cubic
 > Here's the same method on a plain cubic. Find the stationary points of f of x equals x cubed minus three x squared, and determine their nature. f prime of x is three x squared minus six x, which is three x times x minus two. That's zero at x equals zero and x equals two. f of zero is zero, and f of two is eight minus twelve, which is minus **four**. So the points are zero, zero, and two, minus four. Now the table. f prime of minus one is nine, f prime of one is minus three, and f prime of three is **nine**. Plus, minus, plus. So zero, zero is a local maximum, and two, minus four is a local **minimum**. Notice the maximum has height zero and the minimum's height is negative. The heights don't decide the nature. The slopes do. Testing x equals three to classify the point at zero is the slip. Three is past the other stationary point, so it tells you nothing about the point at **zero**.
 
-Visual: clear change to the g01 board with a small graph at the right (y = x³ − 3x², 480 px). Task strip, 44 px: "Find the stationary points of f(x) = x³ − 3x² and determine their nature." Rows, 52 px: "f′(x) = 3x² − 6x = 3x(x − 2)"; "f′ = 0: x = 0 or x = 2"; on "four" "f(0) = 0, f(2) = 8 − 12 = −4" (teal). Table of slopes, 44 px: columns −1, 0, 1, 2, 3; on "nine" (second) "9 +, 0, −3 −, 0, 9 +" with glyphs ╱ ─ ╲ ─ ╱. On "minimum" framed answer (green): "(0, 0) local maximum; (2, −4) local minimum"; the small graph's two points ring. On "zero" (last) a red slip "x = 3: f′ > 0, so (0, 0) is a minimum" writes and is crossed, hand tag "test between, not past", with an arrow showing 3 lies beyond x = 2. On "The heights don't decide" the heights "0" and "−4" grey out and the sign row brightens, hand tag "slopes decide, not heights".
+Visual: clear change to the g01 board with a small graph at the right (y = x³ − 3x², 480 px). Task strip, 44 px: "Find the stationary points of f(x) = x³ − 3x² and determine their nature." Rows, 52 px: "f′(x) = 3x² − 6x = 3x(x − 2)"; "f′ = 0: x = 0 or x = 2"; on "four" "f(0) = 0, f(2) = 8 − 12 = −4" (teal). Table of slopes, 44 px: columns −1, 0, 1, 2, 3; on "nine" (second) "9 +, 0, −3 −, 0, 9 +" with glyphs ↗ ─ ↘ ─ ↗. On "minimum" framed answer (green): "(0, 0) local maximum; (2, −4) local minimum"; the small graph's two points ring. On "zero" (last) a red slip "x = 3: f′ > 0, so (0, 0) is a minimum" writes and is crossed, hand tag "test between, not past", with an arrow showing 3 lies beyond x = 2. On "The heights don't decide" the heights "0" and "−4" grey out and the sign row brightens, hand tag "slopes decide, not heights".
 
 ### 5. neither: a flat spot that doesn't turn
 > A stationary point doesn't have to be a maximum or a minimum. Remember x cubed. Its derivative, three x squared, is zero at the origin, but positive on both sides. In the table, that's up, flat, up. Compare it with the plain cubic's table: here the sign never flips. The curve flattens for an instant and keeps on rising, so it's a stationary point that is neither a maximum nor a **minimum**. That's why we check both sides every time, instead of assuming every stationary point is a turn.
 
-Visual: clear change: two panels side by side (each 820 × 560 px): left, y = x³ − 3x² with its table "╱ ─ ╲ ─ ╱" and verdicts "max", "min"; right, y = x³ with its table "+ 0 +", glyphs "╱ ─ ╱", grey chip "c14, c15: x³". On "minimum" the verdict under x = 0 on the right writes "neither" (amber), hand tag "up, flat, up".
+Visual: clear change: two panels side by side (each 820 × 560 px): left, y = x³ − 3x² with its table "↗ ─ ↘ ─ ↗" and verdicts "max", "min"; right, y = x³ with its table "+ 0 +", glyphs "↗ ─ ↗", grey chip "c14, c15: x³". On "minimum" the verdict under x = 0 on the right writes "neither" (amber), hand tag "up, flat, up".
 
 ### 6. memory aid
-> Here's the summary. Plus to minus, a crest. Minus to plus, a hollow. No change in sign, **neither**. Read the signs from left to right, and always give both coordinates.
+> Here's the summary. Turn each sign of f prime into an arrow. Up then down draws a crest. Down then up draws a hollow. Two arrows the same way, and it doesn't turn at all, so it's **neither**. Read the signs from left to right, and always give both coordinates.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the three glyph patterns "╱ ─ ╲", "╲ ─ ╱", "╱ ─ ╱" beside small crest, hollow and flat-spot sketches. Main line, hand font 56 px: "Plus to minus: a crest. Minus to plus: a hollow. No change: neither." On "neither" the key line, 40 px: "Always both coordinates." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: three small sign strips "+ 0 −", "− 0 +", "+ 0 +"; on "into an arrow" each "+" turns into a teal ↗ and each "−" into an amber ↘, giving "↗ ─ ↘", "↘ ─ ↗", "↗ ─ ↗" beside small crest, hollow and flat-spot sketches (each pair of arrows joins into its sketch as it is spoken). Main line, hand font 56 px: "Turn each sign of f′ into an arrow. Up then down: a crest. Down then up: a hollow. Same way twice: no turn." On "neither" the key line, 40 px: "Always both coordinates." Hold about 2 s.
 
 ### 7. attempt 1 (countdown, 10 seconds)
 > Your turn. Find the stationary points of y equals two x cubed minus three x squared minus twelve x plus five, and determine their nature. Pause here to answer.
@@ -116,7 +116,7 @@ Visual: `QuestionCard`, 40 px: "Show that y = x³ − 3x² + 3x has exactly one 
 ### 10. feedback 2 (brief)
 > d y by d x is three x squared minus six x plus three, which is three times x minus one, **squared**. That's zero only at x equals one, where y is one, so there's exactly one stationary point, one, **one**. A square is never negative, and it's zero only at one, so d y by d x is positive on both sides. Up, flat, up: it's **neither**. Calling it a turning point because the gradient is zero is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: on "squared" "y′ = 3x² − 6x + 3 = 3(x − 1)²"; on "one" (last) "y′ = 0 only at x = 1; y(1) = 1: one stationary point (1, 1)"; hand tag "a square is never negative"; table "3 +, 0, 3 +" (x = 0, 1, 2), glyphs ╱ ─ ╱; on "neither" framed answer (green): "(1, 1): neither". On "slip" a red slip "y′ = 0, so a turning point" writes and is crossed. Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: on "squared" "y′ = 3x² − 6x + 3 = 3(x − 1)²"; on "one" (last) "y′ = 0 only at x = 1; y(1) = 1: one stationary point (1, 1)"; hand tag "a square is never negative"; table "3 +, 0, 3 +" (x = 0, 1, 2), glyphs ↗ ─ ↗; on "neither" framed answer (green): "(1, 1): neither". On "slip" a red slip "y′ = 0, so a turning point" writes and is crossed. Hold about 1 s.
 
 ### 11. handoff
 > So the derivative finds exactly where a curve turns, and proves which way it turns. Next, what the derivative means in a real situation, with units. Here's a hot-air balloon. Its height after t minutes is sixty t squared minus t cubed, over fifty, in metres, while it climbs. What does the derivative at ten minutes actually tell us, and in what units? That's **next**.
@@ -129,11 +129,12 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 - Stationary points: solve f′(x) = 0, then find y from f.
 - Justify with the sign of f′ just left and right (don't pass another stationary point).
-- + then −: local maximum. − then +: local minimum. No change: neither.
+- + then − (↗ ↘): local maximum. − then + (↘ ↗): local minimum. No change: neither.
 - Increasing where f′ > 0; decreasing where f′ < 0 (exclude stationary x).
 - Local: highest or lowest nearby, not necessarily overall.
+- Year 12 names the no-turn case a horizontal point of inflection.
 
-Memory aid (framed card, right side, as in scene 6): *Plus to minus: a crest. Minus to plus: a hollow. No change: neither.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 6): *Turn each sign of f′ into an arrow. Up then down: a crest. Down then up: a hollow. Same way twice: no turn.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 11's frame exactly. This is the final frame and c17's opening frame.
 
@@ -141,11 +142,11 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 11's frame exac
 
 - **Does it explain causes?** Why f′ = 0: the tangent is flat at a crest or hollow (2). Why heights from f: the points are on the curve (2). Why the sign pattern decides: rising then falling makes a crest (3a). Why "local": the track later climbs higher (3b). Why test values stay between stationary points: f′ only changes sign at its zeros (4). Why x³ is neither: f′ keeps its sign (5).
 - **Misconceptions addressed:** x-values only (2, A1 crossed); classifying by the sign of f (3a's "don't just trust the picture" and the table's sign of f′); a test past another stationary point (4 crossed); every stationary point a turn (5, A2 crossed).
-- **Visual standard, item by item:** 1 the painted pump track from the first frame with a live rider, returning in 2 and 3; 2 a new stage every 30 to 60 s; 3 the profile rider, the table of slopes filling as the rider passes, the side-by-side "neither"; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 boards in 2 and 4; 8 framed card and five bullets; 9 the glyphs redrawing the crest's shape under it.
+- **Visual standard, item by item:** 1 the painted pump track from the first frame with a live rider, returning in 2 and 3; 2 a new stage every 30 to 60 s; 3 the profile rider, the table of slopes filling as the rider passes, the side-by-side "neither"; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 boards in 2 and 4; 8 framed card and six bullets; 9 the glyphs redrawing the crest's shape under it.
 - **One idea at a time:** finding (2), justifying (3a), local and intervals (3b), a plain cubic (4), neither (5).
 - **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 28 s and 27 s.
-- **Avoided double teaching:** the sign of f′ (c14) and x³'s flat spot (c14, c15) are recalled, not re-taught; this video adds the table and the verdicts. Factorising (w04) is used.
-- **Syllabus coverage:** `ci6341be75` (2 to 5, A1, A2; key notes 1 to 5).
+- **Avoided double teaching:** the sign of f′ (c14) and x³'s flat spot (c14, c15) are recalled, not re-taught; this video adds the table and the verdicts. Across the year boundary, the arrows aid and the slope-table arrows match the published Year 12 d09, so d09 plays as a recall plus its new parts (23 Nov 2026 audit, S-2). Factorising (w04) is used.
+- **Syllabus coverage:** `ci6341be75` (2 to 5, A1, A2; key notes 1 to 5; key note 6 names the Year 12 term).
 - **Out of scope by design:** the second derivative and optimisation (Year 12).
 
 ## Practice questions and model answers
@@ -182,12 +183,12 @@ Recalculated with SymPy 1.14 (16 Nov 2026, scratchpad `c10c18/verify.py`); Codex
 
 ## Memory aid check
 
-- **"Plus to minus: a crest. Minus to plus: a hollow. No change: neither."** Original wording of the first-derivative test. Meaning, as said in scene 6: read the sign of f′ just left then just right of a stationary point; + then − is a local maximum (a crest), − then + a local minimum (a hollow), the same sign both sides neither. Key line: give both coordinates. Assumptions checked: f′ = 0 at the point; the test values lie between neighbouring stationary points; "crest" and "hollow" are local. It helps a new case: x³ − 12x has + − + around −2 and 2, so (−2, 16) is a maximum and (2, −16) a minimum. Introduced after scenes 2 to 5.
-- **Considered, not used:** "Up-down peak, down-up dip" (same idea; "plus to minus" names the sign the student actually computes).
+- **"Turn each sign of f′ into an arrow. Up then down: a crest. Down then up: a hollow. Same way twice: no turn."** The published Year 12 d09 aid ("Turn the signs into arrows, and the arrows sketch the shape"), adopted 23 Nov 2026 (coherence audit S-2) and worded on this video's crest and hollow. Meaning, as said in scene 6: read the sign of f′ just left then just right of a stationary point and turn each into an arrow (+ up, − down); + then − is a local maximum (a crest), − then + a local minimum (a hollow), the same sign both sides neither (Year 12 d09 names it a horizontal point of inflection; key note 6). Key line: give both coordinates. Assumptions checked: f′ = 0 at the point; the test values lie between neighbouring stationary points; "crest" and "hollow" are local. It helps a new case: x³ − 12x has + − + around −2 and 2, so (−2, 16) is a maximum and (2, −16) a minimum. Introduced after scenes 2 to 5.
+- **Considered, not used:** "Plus to minus: a crest. Minus to plus: a hollow. No change: neither." (Revision 2's aid; replaced so that Year 11 and Year 12 share one picture for the test); "Up-down peak, down-up dip" (same idea, not d09's wording).
 
 ## Narration length estimate
 
-Counted by script (narration blockquotes, bold markers removed): 5,549 characters (Revision 2; Revision 1 was 5,522). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider, the table filling) and the 45 s notes scene: about 505 s. Characters per scene (1 to 12, with 3a and 3b counted separately): 521, 844, 650, 474, 879, 486, 165, 159, 367, 174, 390, 365, 75. Speech before the notes is about 412 s, under the 570 s cap. Feedback speech: about 28 s and 29.3 s.
+Counted by script (narration blockquotes, bold markers removed): 5,640 characters (23 Nov 2026 audit fix, scene 6 now 256; Revision 2 was 5,549; Revision 1 was 5,522). At 13.3 characters per second, plus 2 countdowns (20 s), short holds 6 s, about 22 s of settling (the rider, the table filling) and the 45 s notes scene: about 512 s. Characters per scene (1 to 12, with 3a and 3b counted separately): 521, 844, 650, 474, 879, 486, 256, 159, 367, 174, 390, 365, 75. Speech before the notes is about 419 s, under the 570 s cap. Feedback speech: about 28 s and 29.3 s.
 
 Reserve trims if the voiced take runs long: scene 5's last sentence; scene 1's "When you sketched cubics before" sentence (keep the thumbnail).
 
@@ -229,7 +230,7 @@ Coded: the profile, rider, tangent, readouts, tables of slopes, glyphs, sign str
 Uses: `FunctionRider` (plate-profile rider, c05's addition), `SignStrip`, `StudioPlot`, `WorkingBoard`, `TaskStrip`, `PlateImg`, `HandTag`, `MistakeCard`, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions:
-1. **Table of slopes** (new layout of `SignStrip`): columns at chosen x-values (tests and stationary points), rows for the f′ value, its sign and a slope glyph (╱ ─ ╲), and a verdict row; the columns fill when the rider reaches them. Check: every sign matches the computed f′ at its column; verdicts follow the sign pattern.
+1. **Table of slopes** (new layout of `SignStrip`): columns at chosen x-values (tests and stationary points), rows for the f′ value, its sign and a slope glyph (↗ ─ ↘), and a verdict row; the columns fill when the rider reaches them. Check: every sign matches the computed f′ at its column; verdicts follow the sign pattern.
 
 ## Codex asset brief (Maths A11 C16, a hot-air balloon and its launch paddock; open c17)
 
@@ -264,7 +265,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Identify stationary points on the graph of a cubic function, and the values of x for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa6bc41678
 
-Builds on: Sketching the graph of f′. Next: What f′(c) means in a real situation.
+Builds on: The sign of f′ and stationary points (c14); differentiating cubics (c07); graphs of cubics (w20); factorising quadratics (w04). Next: What f′(c) means in a real situation.
 
 #Year11Maths #MathsAdvanced #StationaryPoints #HSCScience
 

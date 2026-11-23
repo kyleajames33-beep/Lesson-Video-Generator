@@ -59,7 +59,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Attempts (original, HSC style).** A1 (pack question 1, a bathroom; price $95 a box): 5.6 cm by 4.0 cm at 1 : 50; 5.6 m²; + 10% = 6.16 m²; ÷ 1.44 = 4.28, so 5 boxes, $475; crossed "4 boxes". A2 (original, compare): a living room 5.0 cm by 4.2 cm at 1 : 100, 21 m²; carpet $38 a square metre laid, $798; vinyl planks in 2.2 m² boxes at $99 plus 5% waste: 22.05 m², 10.02 boxes, so 11, $1089; carpet cheaper by $291; crossed "10 boxes".
 - **Mistake scene:** none separate. Plan area scaled once (3 crossed, 6 crossed); an area used for a per-metre price (4, said); boxes rounded to the nearest (5 crossed, A1 crossed, A2 crossed).
 - **Cause chain taught, in order:** (1) each plan centimetre is n real centimetres, so a length scales by n (1); (2) a plan's symbols say what each line is, so the right length is measured (2); (3) an area is a length times a length, so each side must be scaled first; the area grows n across and n again down, n × n times, so scaling the finished area by n once misses a factor of n (3; Revision 2 wording); (4) the price's unit names what it is charged on, so it decides length or area (4); (5) boxes come whole, and any part box short means running out, so always round up (5); (6) comparing options is the same area times two prices (6).
-- **Entry knowledge (route):** r04 (plan × n = real, convert); Year 11 math-s11-a05 (rectangle areas) and a02 (m²); percentages. Recalled in a phrase or grey chip. Nothing from r05.
+- **Entry knowledge (route):** r04 (plan × n = real, convert); Year 11 math-s11-a05a (rectangle areas) and a02 (m²); percentages. Recalled in a phrase or grey chip. Nothing from r05.
 - **Handoff (to math-s12-r06b, "How much paint do the walls need, and which quote is better value?").** Scene 12: the paint tin plate `ms12-paint-tin-v1.png` (about 560 px) at the left; at the right a coded bedroom plan (`PlanSymbols`, about 900 × 640 px) drawn 3.8 cm by 3.2 cm with dimension lines, one door with its swing arc and one window, the title box "Scale 1 : 100"; a grey chip "ceiling height 2.4 m"; a coded label on the tin's front "4 L"; chips "how many tins for the walls?", "Next: walls and paint" and "?". No value is worked out. This is r06b's opening frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -70,13 +70,13 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (e) A1: 2.8 × 2.0 = 5.6; × 1.1 = 6.16; ÷ 1.44 = 4.278; 5 boxes; 475. A2: 5.0 × 4.2 = 21; × 38 = 798; 21 × 1.05 = 22.05; ÷ 2.2 = 10.023; 11 boxes; × 99 = 1089; 1089 − 798 = 291.
 
 Main question: *A plan shows a kitchen bench 3.6 cm long at 1 : 100, and benchtop costs $320 a metre. How do building plans let us estimate materials and costs?*
-Entry knowledge (r04; Year 11 a02, a05): plan × n = real; rectangle areas; m²; percentages.
+Entry knowledge (r04; Year 11 a02, a05a): plan × n = real; rectangle areas; m²; percentages.
 Stops after: symbols, side-first areas, the price's unit, flooring, tiles in boxes, a comparison. No walls or paint.
 Handoff: math-s12-r06b: "a 4 L paint tin and a bedroom plan: how many tins for the walls?"
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; n violet; area teal; waste rose; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; n violet; area teal; waste rose; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: price it without visiting
 > Here's the floor plan of a small unit, drawn at one to a hundred. The kitchen bench is three point six centimetres long on the plan, and benchtop costs three hundred and twenty dollars a metre. Can you price it without ever visiting? At one to a hundred, each centimetre on the plan is a hundred real centimetres. So three point six centimetres is three hundred and sixty centimetres, which is three point six **metres**. At three hundred and twenty dollars a metre, that's three point six times three hundred and twenty, one thousand one hundred and fifty-two **dollars**. Builders and renovators price whole houses like this. So how do building plans let us estimate materials and **costs**?

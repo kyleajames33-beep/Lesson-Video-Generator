@@ -78,7 +78,7 @@ Handoff: math-s12-i05: "$5,000 at 6%, paid out against left in: side by side, ho
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; rate amber; interest teal; answer green; mistake red; locked inputs grey. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): PV violet; rate amber; interest teal; answer green; mistake red; locked inputs grey. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: one fund, three questions
 > Here's a hair salon's equipment fund, ten thousand dollars, set aside for five years. The bank offers eight per cent a year, compounded annually. That's high, so treat it as an example, and remember that rates change. It grows to fourteen thousand six hundred and ninety-three dollars and twenty-eight **cents**. But what if the rate were different, or the term were longer, or the interest were added more often? Which change matters most? So how do the rate, the term and the compounding period change an **investment**?

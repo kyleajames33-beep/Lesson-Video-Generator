@@ -56,7 +56,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Attempts (original, HSC style).** A1: a bedroom 4.0 cm by 3.5 cm at 1 : 100, ceiling 2.7 m, door 0.82 × 2.04, window 1.8 × 1.2, two coats, 12 m² a litre, $88.90 a 4 L tin: walls 40.5 m², about 36.67 m², about 73.33 m², 6.11 L, 2 tins, $177.80; crossed "1 tin" (one coat only: about 3.06 L). A2 (the pack's comparison): 108 m² including both coats; A: 12 m² a litre, $88.90 a tin, 9 L, 3 tins, $266.70; B: 15 m² a litre, $99 a tin, 7.2 L, 2 tins, $198; B cheaper by $68.70; crossed "A: its tin is cheaper".
 - **Mistake scene:** none separate. Tins rounded down (4 crossed); openings not subtracted (6 crossed); one coat only (A1 crossed); comparing the price per tin (5 said, A2 crossed).
 - **Cause chain taught, in order:** (1) the plan's sides scale to real lengths first (r06a) (2); (2) the walls are rectangles of the same height, so together they make one rectangle as long as the perimeter (2); (3) doors and windows are not painted, so their areas come off (3); (4) each coat paints the area again, so coats multiply it (4); (5) coverage is area per litre, so area ÷ coverage gives litres (4); (6) tins are whole, so round up (4); (7) the better buy is the cheaper whole job, which depends on coverage as well as price; one tin of B is enough only if it covers at least 15.1 m² a litre, so that threshold decides (5; Revision 2).
-- **Entry knowledge (route):** r06a (scale sides first; symbols; round up whole items); Year 11 math-s11-a05 (perimeter, rectangle areas). Recalled in a phrase or grey chip.
+- **Entry knowledge (route):** r06a (scale sides first; symbols; round up whole items); Year 11 math-s11-a05a (perimeter, rectangle areas). Recalled in a phrase or grey chip.
 - **Handoff (two routes).** Scene 12's frame is split by a thin grey rule. Left, "Standard 2": a coded site plan of a creek-side house block (`ScalePlan` plan mode, about 760 × 560 px: a straight front fence along the bottom with a dimension line "6 cm", two straight side fences at right angles to it, the back boundary a blue wavy creek line with a few coded tree crowns, a house footprint outline, the title box "Site plan, scale 1 : 500", no offsets); chip "what area?"; label "Standard 2 next: the trapezoidal rule". Right, "Standard 1": two coded pay slips side by side (each a white card, 40 px: "Shift: 8 hours", "Pay: $336" and "Shift: 6 hours", "Pay: $270"; no names); chip "who is paid more?"; label "Standard 1 next: rates". Chips "Next" and "?". No value is worked out. This is r07's opening frame (r07 fades the right panel); r08's final frame should repeat the right panel full width as r09's opening frame (for the r08 author).
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
@@ -68,13 +68,13 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
   (f) Spoken money: "eighty-eight dollars ninety"; "a hundred and seventy-seven dollars eighty".
 
 Main question: *A 1 : 100 plan shows a bedroom with a door and a window, and paint comes in 4 L tins. How much paint do the walls need, and which paint is better value?*
-Entry knowledge (r06a; Year 11 a05): scaled sides; symbols; whole items round up; perimeter and rectangle areas.
+Entry knowledge (r06a; Year 11 a05a): scaled sides; symbols; whole items round up; perimeter and rectangle areas.
 Stops after: wall area, openings, coats, coverage, whole tins, comparing two paints. No ceilings or labour.
 Handoff: Standard 2: math-s12-r07, "a creek-side block: what area?"; Standard 1: math-s12-r09, "two pay slips: who is paid more?".
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; area teal; coats rose; openings grey; Paint A indigo; Paint B orange; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; area teal; coats rose; openings grey; Paint A indigo; Paint B orange; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: how many tins?
 > Here's a bedroom on a one to a hundred plan, three point eight centimetres by three point two, with a door and a window. The ceiling is two point four metres high. The walls need two coats of paint, and the paint comes in four litre tins. How many tins should you buy? Buy too few, and you're back at the shop halfway through. Buy too many, and you've wasted money. So how much paint do the walls need, and which paint is better **value**?
@@ -279,7 +279,7 @@ Syllabus content, Standard 1:
 "Estimate and compare quantities, materials and costs using measurements taken from scale drawings"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5 (Standard 2) and https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba1/faf13dc7b0 (Standard 1)
 
-Builds on: Building Plans: Floor Areas and Flooring Costs. Next (Standard 2): Trapezoidal Rule: Land Area from a Plan or Photo. Next (Standard 1): the first rates video (title set by its design).
+Builds on: Building Plans: Floor Areas and Flooring Costs. Next (Standard 2): Trapezoidal Rule: Land Area from a Plan or Photo. Next (Standard 1): Ratios vs Rates and Unit Rates.
 
 #Year12Maths #MathsStandard #BuildingPlans #HSCScience
 

@@ -28,7 +28,7 @@ Syllabus content point (Mathematics Advanced 11-12 (2024), Year 11, Trigonometry
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-**Boundary:** starts from e08's final frame exactly (a square of side 1 with its diagonal and one 45° angle marked; an equilateral triangle of side 2 with its height drawn and 30° and 60° marked; the calculator strip "sin 45° = 0.7071067811…" with digits running on; the small grey chip "e04: log₂ 100 ≈ 6.644, exact as log₂ 100"; chips "never ends: exact form?", "30°, 45°, 60°: exact values?", "Next: exact trig values", "?"). Recalls Year 10 SOH CAH TOA and Pythagoras in one sentence each, and w03 (rationalising a denominator) in a phrase. Teaches: the half-square has sides 1, 1, √2 and angles 45°, 45°, 90°; the half-equilateral triangle has sides 1, √3, 2 and angles 30°, 60°, 90°, with the shortest side opposite 30°; exact sin, cos and tan of 30°, 45° and 60° read from them, in rationalised form; that both triangles scale; exact-value expressions by substitution (site card 08, short answer) (`ci83df430f`). Stops at acute angles in degrees. Not taught: other quadrants (t04); radians (t08); sec, cosec and cot (t11); sin 30° = cos 60° as an identity (t13); sin² θ + cos² θ = 1 (t14).
+**Boundary:** starts from e08's final frame exactly (a square of side 1 with its diagonal and one 45° angle marked; an equilateral triangle of side 2 with its height drawn and 30° and 60° marked; the calculator strip "sin 45° = 0.7071067811…" with digits running on; the small grey chip "e04: log₂ 100 ≈ 6.644, exact as log₂ 100"; chips "never ends: exact form?", "30°, 45°, 60°: exact values?", "Next: exact trig values", "?"). Recalls Year 10 SOH CAH TOA and Pythagoras in one sentence each, and w03 (rationalising a denominator) in a phrase. Teaches: the half-square has sides 1, 1, √2 and angles 45°, 45°, 90°; the half-equilateral triangle has sides 1, √3, 2 and angles 30°, 60°, 90°, with the shortest side opposite 30°; exact sin, cos and tan of 30°, 45° and 60° read from them, in rationalised form; that both triangles scale; exact-value expressions by substitution (site card 08, short answer) (`ci83df430f`). Stops at acute angles in degrees. Not taught: other quadrants (t04); radians (t08); sec, cosec and cot (t11); sin 30° = cos 60° as an identity (t13); sin² θ + cos² θ = 1 (t14a).
 
 ## Decisions
 
@@ -158,7 +158,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 13's frame exac
 - **Response opportunity:** two unseen HSC-style tasks with every demand visible; 10 s each; feedback about 25 s and 26 s.
 - **Avoided double teaching:** SOH CAH TOA and Pythagoras (Year 10) and rationalising (w03) are recalled in a sentence or a grey chip.
 - **Syllabus coverage:** `ci83df430f` (2 to 7, A1, A2; key notes 1 to 5).
-- **Out of scope by design:** other quadrants (t04); radians (t08); reciprocal ratios (t11); identities (t13, t14).
+- **Out of scope by design:** other quadrants (t04); radians (t08); reciprocal ratios (t11); identities (t13, t14a, t14b).
 
 ## Practice questions and model answers
 
@@ -287,7 +287,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Use Pythagoras’ theorem to find the exact sine, cosine and tangent ratios for angles of 30°, 45° and 60°"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-Builds on: Log graphs as reflections; Year 10 trigonometry. Next: Angles of elevation and depression.
+Builds on: Year 10 Pythagoras and SOH CAH TOA; simplifying surds and rationalising (w03). Next: Angles of elevation and depression.
 
 #Year11Maths #MathsAdvanced #ExactValues #HSCScience
 

@@ -80,7 +80,7 @@ Handoff: Standard 2, math-s12-i04: "a $10,000 fund: a higher rate, longer, or ad
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): today's price or value violet; rate amber; savings teal; add-on grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): today's price or value violet; rate amber; savings teal; add-on grey; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the weekly shop
 > Here's the weekly shop, two hundred dollars. Inflation means prices in general going up over time. The Australian Bureau of Statistics measures it with the consumer price index, the cost of a typical basket of things people buy. In the twelve months to September twenty twenty-six, it rose four point three per **cent**. Rates like this change every year. But if prices kept rising four point three per cent a year, what would this shop cost in five years? And what about things that grow in value, like property? How do inflation and appreciation use the compound interest **formula**?

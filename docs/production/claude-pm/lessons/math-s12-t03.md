@@ -72,7 +72,7 @@ Handoff: math-s12-t04 ("a farm from above: which way is each landmark?").
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; height amber; ground distance violet; sight line ink; horizontals dashed grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; height amber; ground distance violet; sight line ink; horizontals dashed grey; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the drone
 > Here's the drone from last time, hovering forty metres above a sports field. Its launch pad is seventy-five metres along the ground from the point right below it. How far is the drone from the pad, in a straight line? And at what angle do you look up to see it? So how do Pythagoras and trigonometry solve height and distance **problems**?

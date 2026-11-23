@@ -68,7 +68,7 @@ Handoff: the shed's Gantt chart under a rain cloud, "what if it rains for a day?
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; EST teal; LST violet; critical amber; float olive dashed; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): durations blue; EST teal; LST violet; critical amber; float olive dashed; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a calendar for the formal
 > Here's the Year 12 formal, planned in weeks, with seven jobs to finish before the night. A network diagram tells us what waits for what, and its scans give each job's earliest and latest start. But the formal committee wants to see the plan like a calendar, week by week, so they can see what's happening when. How does a Gantt chart show a project's schedule and its critical **path**?
@@ -261,9 +261,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Gantt Charts and the Critical Path | Year 12 Maths Standard 2
+Title: Gantt Charts and the Critical Path | Year 12 Maths Standard
 
-(Title length: 61 characters by script.)
+(Title length: 59 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson04.sa.html
 

@@ -286,7 +286,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Graph y = sin x, y = cos x and y = tan x over domains given in degrees or radians, showing intercepts with the x-axis and y-axis and any asymptotes, determine their domains and ranges, and period and amplitude where appropriate, and whether each is even or odd or neither"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa0b724fc5
 
-Builds on: Arc length, sector area and segments; radians. Next: Secant, cosecant and cotangent in a right-angled triangle.
+Builds on: Trig ratios on a circle (t03); related angles (t04); radians (t08); asymptotes (w21); even and odd functions (w26). Next: Secant, cosecant and cotangent in a right-angled triangle.
 
 #Year11Maths #MathsAdvanced #TrigGraphs #HSCScience
 

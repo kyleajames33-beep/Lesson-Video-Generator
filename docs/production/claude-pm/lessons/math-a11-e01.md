@@ -278,7 +278,7 @@ Syllabus content (NSW Mathematics Advanced 11-12, 2024):
 "Describe the behaviour of y = k(a^x) and y = k(a^(-x)) as x → ∞ and x → -∞"
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-advanced-11-12-2024/content/year-11/fa576d8dce
 
-Builds on: Displacement and velocity; index laws. Next: The number e.
+Builds on: Index laws (w01); domain and range (w09); asymptotes (w21). Next: The number e.
 
 #Year11Maths #MathsAdvanced #ExponentialFunctions #HSCScience
 

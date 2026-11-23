@@ -74,7 +74,7 @@ Handoff: math-s12-r08: "the dam's surface ≈ 1,710 m², and 25 mm of rain overn
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; h violet; area teal; doubled middles rose; answer green; mistake red. Header strip "MATHEMATICS STANDARD · RATIOS AND RATES". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): plan amber; real blue; h violet; area teal; doubled middles rose; answer green; mistake red. Header strip "RATIOS AND RATES" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: a block with a creek
 > Here's a house block for sale. Three sides are straight fences, but the back boundary is a creek, so it curves. The listing needs the land's area, and new fences need a length. The agent has a site plan with a scale, and there's an aerial photo of the same block. But no area formula fits a creek. So how does the trapezoidal rule find an area of land from a plan or a **photo**?
@@ -295,7 +295,7 @@ Syllabus content, Standard 2 (NSW Mathematics Standard 11-12, 2024):
 "Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale" (radial survey areas are taught in the Trigonometry topic)
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fa96edbda5
 
-Builds on: Building Plans: Paint and Comparing Costs, and the Year 11 trapezoidal rule. Next: the volume of rainfall video (title set by its design).
+Builds on: Building Plans: Paint and Comparing Costs, and The Trapezoidal Rule: Estimating Area and Volume (Year 11). Next: Rainfall Volume: V = Ah on Roofs, Tanks and Land.
 
 #Year12Maths #MathsStandard #TrapezoidalRule #HSCScience
 

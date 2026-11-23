@@ -27,7 +27,7 @@ Standard 2 (Network flow):
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-12-tba2/fafe0a915b
 
-**Boundary:** starts from c06's final frame exactly (decisions file section 2): header "MATHEMATICS STANDARD"; the stadium plate `ms12-stadium-plaza-v1.png`; labels "S plaza", "A north concourse", "B south concourse", "T stands"; arrows S→A "120", S→B "90", A→B "30", A→T "80", B→T "110" with a chip "people per minute"; slow teal dots; chips "how many people a minute can reach the stands?", grey "Critical path analysis: done", "Next", "?". Recalls Year 11 networks (math-s11-n02, n03: directed, weighted networks; a network from a table) in a grey chip. Teaches: a flow network (directed edges, one way only, each with a capacity: the most it can carry per unit of time, a limit, not the actual flow); the source (flow only leaves) and the sink (flow only arrives); inflow and outflow at a middle point (flows in and out; inflow = outflow, nothing is stored); capacity into and out of a point (sums of capacities, a different idea from the flows); a table (From, To, Capacity) drawn as a diagram; a cut (a line splitting the points into a source side and a sink side, crossed by every route from S to T); a cut's capacity (only edges crossing from the source side to the sink side); every cut is a ceiling on the flow. Stops at the terms, table to diagram and cut capacities. Not taught: the saturated edges method (f02), the minimum cut and the theorem (f03).
+**Boundary:** starts from c06's final frame exactly (decisions file section 2): no header strip (topic only; root ruling 23 Nov 2026: no course name on screen); the stadium plate `ms12-stadium-plaza-v1.png`; labels "S plaza", "A north concourse", "B south concourse", "T stands"; arrows S→A "120", S→B "90", A→B "30", A→T "80", B→T "110" with a chip "people per minute"; slow teal dots; chips "how many people a minute can reach the stands?", grey "Critical path analysis: done", "Next", "?". Recalls Year 11 networks (math-s11-n02, n03: directed, weighted networks; a network from a table) in a grey chip. Teaches: a flow network (directed edges, one way only, each with a capacity: the most it can carry per unit of time, a limit, not the actual flow); the source (flow only leaves) and the sink (flow only arrives); inflow and outflow at a middle point (flows in and out; inflow = outflow, nothing is stored); capacity into and out of a point (sums of capacities, a different idea from the flows); a table (From, To, Capacity) drawn as a diagram; a cut (a line splitting the points into a source side and a sink side, crossed by every route from S to T); a cut's capacity (only edges crossing from the source side to the sink side); every cut is a ceiling on the flow. Stops at the terms, table to diagram and cut capacities. Not taught: the saturated edges method (f02), the minimum cut and the theorem (f03).
 
 ## Decisions
 
@@ -52,7 +52,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Mistake scene:** none separate. Capacity read as the actual flow (2, said); an arrow drawn the wrong way (5 crossed); a back edge counted in a cut (6, said; A2 crossed); more in than can go out (4; A1 crossed); an edge wholly on one side counted (6, said).
 - **Cause chain taught, in order:** (1) a walkway has a width and a speed limit, so it can carry at most so many a minute: its capacity (2); (2) flow starts at the source and ends at the sink, so nothing flows into S or out of T (3); (3) nothing is stored at a middle point, so inflow = outflow; if the ways out can take less than the ways in could deliver, the extra queues (4); (4) a cut separates S from T, so every route crosses it, and only edges crossing forwards carry flow towards T (6); (5) so every unit of flow crosses every cut forwards, and no flow can be bigger than any cut (7).
 - **Entry knowledge (route):** math-s11-n02, n03 (directed, weighted networks; a network from a table). Critical path analysis is not needed. Recalled in a grey chip.
-- **Handoff (to math-s12-f02, the saturated edges method).** Scene 13's frame (decisions file section 2): header "MATHEMATICS STANDARD · NETWORK FLOW"; the new plate `ms12-festival-water-tank-v1.png` (briefed here; ruling 17) at the left (about 560 px); the festival's water network at the right (about 1,200 × 520 px): S "tank", A, B, C junctions, T "campground taps"; S→A "0/12", S→B "0/10", A→B "0/4", A→C "0/7", B→C "0/5", B→T "0/6", C→T "0/11" (flow teal, capacity blue), with a chip "kL per hour"; a coded tap counter at T "0 kL per hour"; chips "how much water can reach the campground each hour?", "Next" and "?". No flow is sent.
+- **Handoff (to math-s12-f02, the saturated edges method).** Scene 13's frame (decisions file section 2): header "NETWORK FLOW"; the new plate `ms12-festival-water-tank-v1.png` (briefed here; ruling 17) at the left (about 560 px); the festival's water network at the right (about 1,200 × 520 px): S "tank", A, B, C junctions, T "campground taps"; S→A "0/12", S→B "0/10", A→B "0/4", A→C "0/7", B→C "0/5", B→T "0/6", C→T "0/11" (flow teal, capacity blue), with a chip "kL per hour"; a coded tap counter at T "0 kL per hour"; chips "how much water can reach the campground each hour?", "Next" and "?". No flow is sent.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
   (a) Stadium cuts: {S}: 120 + 90 = 210; {S, A}: 90 + 30 + 80 = 200; {S, B}: 120 + 110 = 230 (A→B back); {S, A, B}: 80 + 110 = 190. Maximum flow 190 (f02's A2 and f03).
@@ -69,12 +69,12 @@ Handoff: the festival's water network with empty pipes, "how much water can reac
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; cuts violet; back edges grey; answer green; mistake red. Header strip "MATHEMATICS STANDARD · NETWORK FLOW" (from scene 1's first change). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): capacity blue; flow teal; cuts violet; back edges grey; answer green; mistake red. Header strip "NETWORK FLOW" (topic only; root ruling 23 Nov 2026: no course name on screen) (from scene 1's first change). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: grand final day
 > It's grand final day. Fans pour off the trains onto the plaza, then head along the walkways to the stands. Every walkway has a limit, like a hundred and twenty people a minute on the wide one to the north concourse. A network like this, where something moves through it, is called a flow network. So how do source, sink, capacity and cuts describe a flow **network**?
 
-Visual: opens on c06's final frame exactly. On the first sentence "Next" and the grey chip fade, and the header strip gains "· NETWORK FLOW". On "pour off the trains" the dots at the plaza thicken. On "a hundred and twenty" the S→A label "120" pulses. On "flow network" a grey chip "Year 11: directed, weighted networks". On "network" (bold) heading "Flow networks" writes.
+Visual: opens on c06's final frame exactly. On the first sentence "Next" and the grey chip fade, and the header strip writes "NETWORK FLOW". On "pour off the trains" the dots at the plaza thicken. On "a hundred and twenty" the S→A label "120" pulses. On "flow network" a grey chip "Year 11: directed, weighted networks". On "network" (bold) heading "Flow networks" writes.
 
 ### 2. edges and capacity
 > Each walkway is an edge, and these edges are directed, because the crowd only walks one way, towards the stands. The number on each edge is its capacity, the most it can carry in a minute. The wide walkway to the north concourse can take a hundred and twenty people a minute. That's a limit, not a count. On a quiet day it might carry ten people a minute, or none at all, but it can never carry more than a hundred and **twenty**.
@@ -271,9 +271,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Flow Networks: Source, Sink, Capacity and Cuts | Year 12 Maths Standard 2
+Title: Flow Networks: Source, Sink, Capacity and Cuts | Year 12 Maths Standard
 
-(Title length: 73 characters by script.)
+(Title length: 71 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/network-flow/lesson01.sa.html
 

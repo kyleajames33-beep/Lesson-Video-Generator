@@ -75,7 +75,7 @@ Handoff: math-s12-t02 ("the ladder's angle is 75.96°: what is that in degrees a
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; ratio values teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · TRIGONOMETRY". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): the angle blue; opposite amber; adjacent violet; hypotenuse ink; ratio values teal; answer green; mistake red. Header strip "TRIGONOMETRY" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: can we get the angle back?
 > Here's the roof again, with its height, three point one five metres, and its run, four point five one metres. Suppose a builder had measured those two sides, and the angle was missing. Could we get it back? A roof's angle matters, because some roofing needs a steep enough slope to shed the rain. Last time, we used an angle to find a side. Now we go the other way. So how do we find a missing angle in a right-angled **triangle**?

@@ -68,7 +68,7 @@ Handoff: the café's complete network with empty event boxes, "how long until we
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; events ink; dummies grey dashed; check glow soft blue; message pulse teal; answer green; mistake red. Header strip "MATHEMATICS STANDARD · CRITICAL PATH ANALYSIS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): letters ink; durations blue; events ink; dummies grey dashed; check glow soft blue; message pulse teal; answer green; mistake red. Header strip "CRITICAL PATH ANALYSIS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: the job that won't fit
 > Here's where we left the café, with its precedence table finished. The muffins, C, need the oven and the batter, A and B. The pies, D, need only the oven. Every arrow that leaves an event waits for everything that arrives there, so neither of our two events works for the muffins. The fix is a special arrow that does no work at all. So how does a dummy activity fix the **network**?
@@ -257,9 +257,9 @@ Error-only check (report errors; do not restyle or rewrite):
 
 ## YouTube metadata (draft)
 
-Title: Dummy Activities in Network Diagrams | Year 12 Maths Standard 2
+Title: Dummy Activities in Network Diagrams | Year 12 Maths Standard
 
-(Title length: 63 characters by script.)
+(Title length: 61 characters by script; course suffix unified to "| Year 12 Maths Standard", 23 Nov 2026, coherence audit S5.)
 
 Description: Full lesson, notes and practice questions: https://hscscience.com.au/subjects/maths-standard/year12/critical-path-analysis/lesson05.sa.html
 

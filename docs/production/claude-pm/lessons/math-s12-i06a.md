@@ -78,7 +78,7 @@ Handoff: math-s12-i06b: "a phone network's six month-end prices: up every month?
 
 ## Script and shots
 
-Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price violet; dividend amber; yield teal; capital growth blue; answer green; mistake red. Header strip "MATHEMATICS STANDARD · INVESTMENT AND LOANS". Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
+Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Colour roles (fixed): price violet; dividend amber; yield teal; capital growth blue; answer green; mistake red. Header strip "INVESTMENT AND LOANS" (topic only; root ruling 23 Nov 2026: no course name on screen). Scene headings in the hand font, 44 px. Every stage's main visual is solid from the stage's first frame.
 
 ### 1. hook: same dividend, lower yield
 > Here's a gym chain, Larkspur Fitness. It's made up, but it works like real companies on the stock exchange. Its shares cost six dollars each, and it pays a dividend of thirty cents for each share. Two years later, it pays exactly the same thirty cents, but the share price has climbed to seven dollars fifty. The yield, the dividend as a percentage of the price, falls from five per cent to four. And nothing has gone wrong. So how do we read a share table, and work out dividends and the dividend **yield**?
