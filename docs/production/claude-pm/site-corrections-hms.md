@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) await root.
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026).
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
