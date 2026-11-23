@@ -1,6 +1,6 @@
 # HMS Year 11 V13 (The body and mind in motion): designing a training program with FITT. How do you turn 'train harder' into a program someone could actually follow, using FITT? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
+Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
 
 Narration 5,699 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 528 s including holds, two countdowns and the 45 s notes hold.
 
@@ -31,7 +31,7 @@ Scope: the thirteenth HMS video of the Year 11 focus area "The body and mind in 
 - **Anchor.** The `FittDials` are the anchor: they open the video, carry 2 to 5, write the netball program in 7, and become the handoff session card.
 - **Simulation.** The dial links use one rule for the visible safe ranges: sustainable time at an intensity follows the v10 and v12 thresholds (below about 85% of maximum heart rate, 20 to 60 minutes; above 85%, efforts of seconds to about 2 minutes); frequency's safe range is 4 to 6 per week for aerobic and 2 to 3 for heavy anaerobic work (48 h). No continuous physiological numbers are drawn; the dials show ranges only.
 - **Board stages.** (1) the calendar and the dials, scenes 1 and 2; (2) the heart-rate strip, scene 3; (3) the linked dials, scene 4; (4) the progression chart, scene 5; (5) the outside-FITT checklist, scene 6; (6) the netball program card, scene 7; (7) memory, questions, close, handoff and notes.
-- **Open decisions for root.** (1) One new plate (`hms-heart-rate-watch-v1.png`, shared with v14). (2) Site correction 22.
+- **Root rulings (24 Nov).** The new plate `hms-heart-rate-watch-v1.png` and site correction 22 are approved.
 
 Main question: *How do you turn 'train harder' into a program someone could actually follow, using FITT?*
 Entry knowledge: hms-y11-m2-v12, v10, v09, v05 (as above).
@@ -216,8 +216,7 @@ Next: What changes the moment you start exercising?
 
 ## Open decisions
 
-- **One new plate (recommended: yes).** `hms-heart-rate-watch-v1.png`, the route's heart-rate watch face, shared with v14.
-- **Site correction 22 (recommended: accept).** The six-week table's steps (33% and 40% rises in weekly volume) contradict the page's own "about 10 per cent" guideline.
+- None. Resolved by root (24 Nov): the new plate `hms-heart-rate-watch-v1.png` and site correction 22 are approved.
 
 ## Build ids
 

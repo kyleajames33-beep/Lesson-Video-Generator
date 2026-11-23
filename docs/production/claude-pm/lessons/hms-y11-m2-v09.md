@@ -1,6 +1,6 @@
 # HMS Year 11 V09 (The body and mind in motion): the ATP-PCr and glycolytic energy systems. Why does even the fastest sprinter slow down before the line, and why does a 400 m runner finish in distress? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
+Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
 
 Narration 6,186 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
 
@@ -31,7 +31,7 @@ Scope: the ninth HMS video of the Year 11 focus area "The body and mind in motio
 - **Anchor.** The `EnergyTable` is the anchor: it appears in 3, fills its first column in 3 and second in 5, is read across in 9, and becomes the handoff frame with its third column empty.
 - **Simulation.** One small model drives every on-screen energy number, labelled "illustrative pattern". (a) PCr store during a maximal effort: remaining = e^(−t/7), so about 42% at 6 s and 24% at 10 s ("running low", not empty). (b) PCr recovery after the effort: restored = 1 − e^(−t/43.3), so 50% at 30 s, 29% at 15 s, 94% at 2 min, 98% at 3 min. (c) Shares during one maximal effort, demand fixed at 1: PCr share p = e^(−t/8); aerobic share a = 0.45(1 − e^(−t/60)); glycolytic share g = (1 − p)(1 − a); so g peaks near 25 to 30 s at about 0.8 and is about 0.6 at 120 s, a stays under 0.4 to 120 s, and p + g + a = 1 at every instant. (d) The speed trace is v08's (peak near 60 m, falling over the last 20 m), with the PCr gauge in 4 read from (a) at the matching times (100 m in about 10 s).
 - **Board stages.** (1) the finish line and the stagger, scene 1; (2) the ATP bead model in the muscle, scene 2; (3) the table, column one, scene 3; (4) the finish line with the PCr gauge, scene 4; (5) the table, column two, scene 5; (6) the stagger with the hydrogen ion tank, scene 6; (7) lactate's journey and the soreness timeline, scene 7; (8) the share curves, scene 8; (9) the table read across with the scale, scene 9; (10) memory, questions, close, handoff and notes. Longest set-up: the table across 3, 5 and 9, broken by the two race boards so it never runs more than about 55 s at a time.
-- **Open decisions for root.** (1) One new plate (`hms-400m-start-stagger-v1.png`). (2) Site correction 18.
+- **Root rulings (24 Nov).** The new plate `hms-400m-start-stagger-v1.png` and site correction 18 are approved.
 
 Main question: *Why does even the fastest sprinter slow down before the line, and why does a 400 m runner finish in distress?*
 Entry knowledge: hms-y11-m2-v02, v04, v05, v06, v08 (as above).
@@ -229,8 +229,7 @@ Next: What can the aerobic system do that the others can't?
 
 ## Open decisions
 
-- **One new plate (recommended: yes).** `hms-400m-start-stagger-v1.png`, the route's 400 m start stagger, matched to the approved finish-line plate.
-- **Site correction 18 (recommended: accept).** PCr is run low, not emptied, by 10 s; card 05's "nothing becomes acidic" contradicts card 07.
+- None. Resolved by root (24 Nov): the new plate `hms-400m-start-stagger-v1.png` and site correction 18 are approved.
 
 ## Build ids
 

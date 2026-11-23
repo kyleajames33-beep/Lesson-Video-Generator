@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set).
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set). Items 18 to 22 (hms-y11-m2-v09 to v13) accepted by root (24 Nov 2026, Module 2 third set). Item 23 (hms-y11-m2-v16) follows root's 24 Nov ruling on the attention-focus wording.
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
@@ -231,3 +231,24 @@ Source hash: `9e13cb02918a7deab0d68384ea438b03b259a6a5d4b40ba5c981609222e7a397`.
 **Correction:** either keep the table and qualify the guideline ("For a low starting volume, single steps larger than 10 per cent are common; what matters is one change at a time and a planned recovery week"), or use smaller steps, for example weeks 1 to 2: 3 × 30 min at 70%; week 3: 3 × 33 min (time only, +10%); week 4: 3 × 33 min at 75% (intensity only); week 5: 3 × 25 min (recovery); week 6: 3 × 36 min at 75% (time only).
 
 **Reason:** the table's own steps raise weekly running time from 75 to 100 minutes (+33%) and then to 140 minutes (+40%), which contradicts the guideline stated immediately after it. The "10 per cent rule" is itself a rule of thumb with weak evidence, so the page should not present both without reconciling them. Video hms-y11-m2-v13 uses the smaller-step table above and says "one variable at a time, in small steps", without teaching the 10% figure. Severity: minor (internal inconsistency).
+
+## 23. subjects/health-movement-science/year11/module2/lesson16.sa.html
+
+Source hash: `ce91a7ef4a3469e1813d7724c9fed4fd62e184ad37ed35f335113b7f6256309a`. Card 01 answer (after the stage table, "Now Card 01") and the overview ("instruction that is exactly right for a beginner actively damages an expert, and the reverse").
+
+**Exact old text:** ""Watch your elbow" directs attention to the body. For the beginner, that is exactly right: her attention is on her body anyway, and the cue gives it something correct to attend to."
+
+**Correction:** ""Watch your elbow" directs attention to the body. For the beginner, one body cue can help with a single key point: her attention is on her body anyway, and the cue gives it something correct to attend to. But learners at every stage usually do better attending to the effect of the movement, such as the ball's path, than to their body parts, and for the nine-year player a body cue is the worst instruction available."
+
+**Reason:** reviews of attentional focus research (Wulf and colleagues) find that an external focus on the movement's effect generally benefits novices as well as skilled performers; the evidence does not support internal cues as the right default for beginners. The page's expert half (an internal cue disrupts an autonomous skill) is correct. Video hms-y11-m2-v16 says "Learners usually do better attending to the movement's effect, like the ball's path, than to their own body parts. A single body cue can still help a beginner with one key point." Severity: minor (overstated). Science check to confirm.
+
+## 24. subjects/health-movement-science/year11/module2/lesson18.sa.html
+
+Source hash: `5849fdf508d96a7e7a04ace1a87379c2871f05213bcc47b5252dc044ee38e4a6`. Card 06 ("Performance elements: decision-making, strategy and tactics"), the paragraph after the table.
+
+**Exact old text:** "Random and varied practice is not only better for retaining the movement, it is the only arrangement that trains the decision at all, which is why the two halves of this lesson are really one idea."
+
+**Correction:** "Random practice is better for retaining the movement, but a shuffled order called out by a coach still asks for no decision. Decision-making is trained only when the player must choose a response from information she reads in the moment (small-sided games, conditioned games, drills with two or more legitimate options), which is varied, open practice. That is why the two halves of this lesson connect: both work by making the learner do the job the match will ask of her."
+
+**Reason:** the page defines random practice as "several skills in an unpredictable order" (card 03), and its own warm-up and Activity 1 run it as an order called out to the learner. Contextual interference research shows retention benefits from that shuffling, but the learner selects nothing; the response is announced. The page's own table (decision-making "cannot be developed by a drill with one correct answer") and Lesson 17's open-practice test (a decision from information not available in advance) make the distinction. Video hms-y11-m2-v18 says "A coach calling out a shuffled order isn't a decision, either. The player has to choose from what she reads." Severity: minor (conflation of two ideas).
+

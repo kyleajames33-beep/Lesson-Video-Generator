@@ -1,6 +1,6 @@
 # HMS Year 11 V12 (The body and mind in motion): aerobic and anaerobic training. What makes a training session aerobic or anaerobic, and how should training differ for a solo runner and a team? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, five reused (see Assets). No official figures.
+Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, five reused (see Assets). No official figures.
 
 Narration 6,050 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 555 s including holds, two countdowns and the 45 s notes hold.
 
@@ -31,7 +31,7 @@ Scope: the twelfth HMS video of the Year 11 focus area "The body and mind in mot
 - **Anchor.** The `WorkRestDial` is the anchor: it grows from v11's dial in 1, is built in 2, places the methods in 4, sets the recovery lever in 7, and splits into four dials at the handoff.
 - **Simulation.** The session bar and PCr gauge use v09's recovery model (restored = 1 − e^(−t/43.3 s)), each 30 m sprint (5 s) using 40% of the store: with 180 s rest each sprint starts at about 99%; with 20 s rest the starting level falls to 75%, 65%, 62% and settles near 60% by the fifth and sixth sprints, and the bar recolours from orange toward plum as the store falls. Ratios are products of the given times only.
 - **Board stages.** (1) the field and the dial, scene 1; (2) the dial and session bar, scene 2; (3) the ledger, scene 3; (4) the dial with methods, scenes 4 and 5; (5) the squad board, scenes 6 and 7; (6) memory, questions, close, handoff and notes.
-- **Open decisions for root.** (1) Site correction 21. No new plates.
+- **Root rulings (24 Nov).** Site correction 21 is accepted. No new plates.
 
 Main question: *What makes a training session aerobic or anaerobic, and how should training differ for a solo runner and a team?*
 Entry knowledge: hms-y11-m2-v10, v09, v11, v05, v02 (as above).
@@ -210,8 +210,7 @@ Next: How do you turn 'train harder' into a real program?
 
 ## Open decisions
 
-- **Site correction 21 (recommended: accept).** The 30 m sprint with 3 min rest is about 1:36, not 1:18.
-- No new plates.
+- None. Resolved by root (24 Nov): site correction 21 is accepted. No new plates.
 
 ## Build ids
 

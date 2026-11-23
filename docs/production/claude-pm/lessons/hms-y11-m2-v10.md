@@ -1,6 +1,6 @@
 # HMS Year 11 V10 (The body and mind in motion): the aerobic system and the interplay of the energy systems. What can the aerobic system do that the other two cannot, and how do all three run at the same time? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No official figures.
+Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No official figures.
 
 Narration 6,136 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 565 s including holds, two countdowns and the 45 s notes hold.
 
@@ -31,7 +31,7 @@ Scope: the tenth HMS video of the Year 11 focus area "The body and mind in motio
 - **Anchor.** The `EnergyTable` opens and is completed in 2; the `OxygenCurve` carries 6 and 7; the `ShareCurves` stack carries 8 and becomes the handoff with three fuel gauges.
 - **Simulation.** One small model per board, every readout from it, all labelled "illustrative pattern". (a) Fuel pipes: carbohydrate store 100 units, fat store 2,000 units; maximum outflow per minute carbohydrate 1.0, fat 0.5 (fat's pipe narrower); the pace tap demands D per minute; carbohydrate supplies max(0, D − fat's share) where fat's share falls as D rises (fat share = 0.8 at D = 0.4, 0.5 at D = 0.7, 0.2 at D = 0.95); at a marathon pace of D = 0.85 the carbohydrate tank empties after about 2 h 50 min of the model (shown at "32 km"), after which supply is capped at 0.5 and the pace trace drops by about 40%. (b) Oxygen curve: demand steps from 0.2 to 1.0 at t = 0; supply = 0.2 + 0.8(1 − e^(−t/30 s)), so 95% of demand at 90 s ("a minute or two"); after stopping at 6 min, supply = 0.2 + 0.8(0.6e^(−t/40 s) + 0.4e^(−t/400 s)), a fast then slow fall. (c) Match strip: efforts of 3 s every 30 to 40 s; PCr restored = 1 − e^(−t/τ) between efforts, τ = 43.3 s (v09) for the less-fit gauge and 30 s for the fitter gauge, each effort using 40% of the store; late in the window the less-fit gauge starts efforts at about 55%, the fitter at about 70%. (d) Share curves extended from v09 to 5 min with the same equations, aerobic share = 0.85(1 − e^(−t/70 s)) for a maximal-then-sustained effort, so aerobic passes half near 1 min 40 s ("from about two minutes", shown with "about").
 - **Board stages.** (1) the table, scenes 1 and 2; (2) the delivery chain, scene 3; (3) the fuel pipes, scenes 4 and 5; (4) the oxygen curve, scenes 6 and 7; (5) the netball match, scenes 8 and 9; (6) memory, questions, close, handoff and notes.
-- **Open decisions for root.** (1) Site correction 19 (the ATP yield of aerobic glucose). No new plates.
+- **Root rulings (24 Nov).** Site correction 19 is accepted. No new plates.
 
 Main question: *What can the aerobic system do that the other two cannot, and how do all three run at the same time?*
 Entry knowledge: hms-y11-m2-v09, v04, v05, v06, v08 (as above).
@@ -225,8 +225,7 @@ Next: How does food decide which system keeps running?
 
 ## Open decisions
 
-- **Site correction 19 (recommended: accept).** The aerobic yield is about 30 to 32 ATP per glucose by current estimates; the video shows "about 30 to 36" and says "more than thirty", which is right under either convention.
-- No new plates.
+- None. Resolved by root (24 Nov): site correction 19 is accepted. No new plates.
 
 ## Build ids
 

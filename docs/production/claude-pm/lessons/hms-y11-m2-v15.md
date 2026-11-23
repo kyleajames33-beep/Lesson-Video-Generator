@@ -1,6 +1,6 @@
 # HMS Year 11 V15 (The body and mind in motion): investigating training responses, and the fitness testing debate. How do you investigate training responses properly, and is fitness testing worth doing at all? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
+Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
 
 Narration 6,123 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
 
@@ -32,7 +32,7 @@ Scope: the fifteenth HMS video of the Year 11 focus area "The body and mind in m
 - **Anchor.** The `ResearchCycle` is the anchor for 1 to 6 (about 700 px at the left), one station filling per scene; the `DebateScale` carries 7 and the handoff.
 - **Simulation.** None physiological. The dot strip uses eighteen illustrative changes chosen so the mean is exactly −6 bpm (74 → 68): −14, −12, −11, −10, −9, −9, −8, −8, −7, −6, −5, −4, −3, −2, 0, 0, 0, 0 (sum −108; four at zero), labelled "illustrative".
 - **Board stages.** (1) the results table and the hook card, scene 1; (2) the cycle, scenes 2 to 6, with the method board (3), the ethics board (4), the quality checks (5) and the dot strip (6) attached to their stations; (3) the debate scale, scene 7; (4) memory, questions, close, handoff and notes.
-- **Open decisions for root.** (1) One new plate (`hms-beep-test-cones-v1.png`). (2) The joined dotpoints in one video (as the site and route pair them).
+- **Root rulings (24 Nov).** The new plate `hms-beep-test-cones-v1.png` is approved, and the investigation and the fitness-testing debate stay in one video.
 
 Main question: *How do you investigate training responses properly, and is fitness testing worth doing at all?*
 Entry knowledge: hms-y11-m1-v07, hms-y11-m2-v14, v13, v10 (as above).
@@ -217,8 +217,7 @@ Next: Why can the same coaching help one learner and hurt another?
 
 ## Open decisions
 
-- **One new plate (recommended: yes).** `hms-beep-test-cones-v1.png`.
-- **Two dotpoints in one video (recommended: keep).** As the site and the route pair them; the video stays inside the cap.
+- None. Resolved by root (24 Nov): the new plate `hms-beep-test-cones-v1.png` is approved, and the investigation and the fitness-testing debate stay in one video.
 
 ## Build ids
 
