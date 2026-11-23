@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set). Items 18 to 22 (hms-y11-m2-v09 to v13) accepted by root (24 Nov 2026, Module 2 third set). Item 23 (hms-y11-m2-v16) follows root's 24 Nov ruling on the attention-focus wording.
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set). Items 18 to 22 (hms-y11-m2-v09 to v13) accepted by root (24 Nov 2026, Module 2 third set). Item 23 (hms-y11-m2-v16) follows root's 24 Nov ruling on the attention-focus wording. Item 24 (hms-y11-m2-v18) accepted by root (24 Nov 2026, fourth set). Items 25 (hms-y12-m3-v04) and 26 (hms-y12-m3-v06) pending.
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
@@ -252,3 +252,22 @@ Source hash: `5849fdf508d96a7e7a04ace1a87379c2871f05213bcc47b5252dc044ee38e4a6`.
 
 **Reason:** the page defines random practice as "several skills in an unpredictable order" (card 03), and its own warm-up and Activity 1 run it as an order called out to the learner. Contextual interference research shows retention benefits from that shuffling, but the learner selects nothing; the response is announced. The page's own table (decision-making "cannot be developed by a drill with one correct answer") and Lesson 17's open-practice test (a decision from information not available in advance) make the distinction. Video hms-y11-m2-v18 says "A coach calling out a shuffled order isn't a decision, either. The player has to choose from what she reads." Severity: minor (conflation of two ideas).
 
+## 25. subjects/health-movement-science/year12/module3/lesson04.sa.html
+
+Source hash: `edb8c5be8359e006df877965fa580bf494cf2e42a6a8ca3c9e993376aa7f3b23`. Worked response we-hms-y12-m3-l04-b1 ("Compare the health status of Australia with that of other OECD countries"), step 4 ("Where Australia lags") and the same sentence in step 6 ("What a full-mark answer looks like").
+
+**Exact old text:** "Against the third criterion, Australia's gap between its Indigenous and non-Indigenous populations is wider than the comparable gaps reported in New Zealand and Canada, so a strong national average coexists with a poorer equity performance."
+
+**Correction:** "Against the third criterion, Australia, like other settler countries such as New Zealand and Canada, reports a large life expectancy gap between its Indigenous and non-Indigenous populations, so a strong national average coexists with a poorer equity performance."
+
+**Reason:** the comparative claim is not supported. Statistics Canada reports life expectancy gaps for First Nations and Inuit people that are comparable to or larger than Australia's (ABS 2020–2022: 8.8 years for males, 8.1 for females), and New Zealand's gap for Māori is somewhat smaller but of the same order. Differences in how each country identifies Indigenous people and estimates life expectancy also make a ranking of the gaps unreliable. The page's point (a strong average with poor equity) does not need the comparison. Video hms-y12-m3-v04 does not use the claim and names no foreign country. Severity: minor (unsupported comparison). Science check to confirm the cross-country figures.
+
+## 26. subjects/health-movement-science/year12/module3/lesson06.sa.html
+
+Source hash: `e648fb55f66e6077f2295bb8f83db545d6cd30e782c639022c5038e1199c45a5`. Card 08 ("Worked example: type 2 diabetes, all six rows"), the incidence row; also WE b1 step 2 and its full answer ("one of the fastest-growing chronic conditions in Australia").
+
+**Exact old text:** "Incidence. Rising over decades, alongside rising overweight and obesity and an ageing population; some of the recent rise reflects earlier detection through routine testing."
+
+**Correction:** "Incidence. The age-standardised rate of new diagnoses has fallen since about 2000 (AIHW reports a 45% drop between 2000 and 2021), possibly reflecting prevention, screening and awareness, while the number of people living with the condition keeps rising because people live with it for decades. This is the incidence-down, prevalence-up pattern from Lesson 5." For WE b1: "Type 2 diabetes is one of the most common chronic conditions in Australia, and the number of people living with it continues to grow."
+
+**Reason:** AIHW, *Diabetes: Australian facts* (summary, read 24 Nov 2026): "a steady decline in the age-standardised incidence rate for type 2 diabetes in Australia between 2000 and 2021", "an overall drop of 45%" (45,700 new diagnoses in 2021, 178 per 100,000; National Diabetes Services Scheme data). Prevalence still rises. Card 05's trend line ("prevalence rising over decades") is correct and unaffected. Video hms-y12-m3-v06 says "The rate of new cases has fallen by almost half since 2000. Yet prevalence keeps rising, because people live with it for decades." Severity: moderate (a trend direction in the worked profile). Science check to confirm.
