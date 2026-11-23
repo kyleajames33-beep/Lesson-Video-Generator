@@ -4,7 +4,7 @@ Status: Revision 3 (13 Nov 2026): visual-standard top-up (stage list, question-c
 
 Narration 5,561 characters (scene sum; 5,570 before root's 21 Nov label edit; Revision 1 stated 5,585 by the joined convention), 15 scenes, about 503 s, counted by script with the build parser rules (see "Narration length estimate"). Last video of Module 5.
 
-Scope: Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), inquiry question "How does the force of gravity determine the motion of planets and satellites?". Templates as `phys-y12-m5-v17.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only): `C:/Users/kygs/hscscience/subjects/physics/year12/module5/lesson16.sa.html`, SHA256 `042db07a785136be57b3e58e165d27e71c4f98e4a992d449e1da6b100c2de8cc` (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m5-v23`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Use total energy zero at infinity to derive escape speed, state no drag/no propulsion assumptions and distinguish orbit speed. Stop before relativistic escape." Next: "phys-y12-m6-v01: How does voltage between parallel plates determine a charged particle acceleration?"
+Scope: Year 12 Physics (Physics Stage 6, 2017 syllabus), Module 5 (Advanced Mechanics), inquiry question "How does the force of gravity determine the motion of planets and satellites?". Templates as `phys-y12-m5-v17.md`. No pre-design pack exists; the pack work is done here. Site lesson read in full (6 Nov, read-only): `C:/Users/kygs/teaching-app-fix/subjects/physics/year12/module5/lesson16.sa.html`, SHA256 `042db07a785136be57b3e58e165d27e71c4f98e4a992d449e1da6b100c2de8cc` (stale: hashed against the old C:/Users/kygs/hscscience copy; not re-hashed against teaching-app-fix, 24 Nov 2026) (recomputed 6 Nov; matches the route). Route entry: `phys-y12-m5-v23`. Route start: "Start from the physical case in the learner question; recall only the earlier result needed for it." Route stop: "Use total energy zero at infinity to derive escape speed, state no drag/no propulsion assumptions and distinguish orbit speed. Stop before relativistic escape." Next: "phys-y12-m6-v01: How does voltage between parallel plates determine a charged particle acceleration?"
 
 Owner rules applied: as v17 (2017 syllabus quoted exactly; no people, hands, faces or body outlines; Earth, the probe (satellite plate) and a launch rocket are painted plates; paths, energy bars, curves and strips are coded; every number recalculated in Python with the HSC data sheet constants; NASA values cited as checks; "Pause here to answer." with a 10 s countdown; brief feedback; Australian spelling; no em dashes). Recalled, not re-taught: v18 (orbital speed √(GM/r)), v21 (U = −GMm/r, finite climb to infinity), v22 (E = K + U, constant without thrust; E < 0 bound).
 
@@ -156,7 +156,7 @@ Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the 
 ### 14. end of gravity, and the next field
 > That wraps up gravity and orbits. A gravitational field around every mass sets every orbit, and every escape. Next, we meet a different kind of field. Between two charged plates, the electric field is uniform, just like gravity close to the ground, so a charged particle accelerates steadily. So how does the voltage across the plates set that **acceleration**?
 
-Visual: board clears to the gravity stage; the radial violet field arrows around Earth draw in. Camera push to a small patch of ground: the arrows there are parallel and equal, tag "near the surface: uniform". As "Between two charged plates" is spoken the ground patch morphs into two coded horizontal plates (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", and a small coded "+q" particle between them with an empty acceleration arrow "a = ?" and a label "V" across the plates. On "acceleration" a chip writes "Next: how does voltage between parallel plates determine a charged particle's acceleration?". Hold about 2 seconds. This is the final frame.
+Visual: board clears to the gravity stage; the radial violet field arrows around Earth draw in. Camera push to a small patch of ground: the arrows there are parallel and equal, tag "near the surface: uniform". As "Between two charged plates" is spoken the ground patch morphs into two coded horizontal plates (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", and a small coded "+q" particle between them with an empty acceleration arrow "a = ?" and a label "V" across the plates. On "acceleration" a chip writes "Next: how does the voltage between parallel plates set a charged particle's acceleration?". Hold about 2 seconds. This is the final frame.
 
 ### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -237,7 +237,7 @@ v22's final frame (`phys-y12-m5-v22.md`, Revision 2): paper background; at the r
 
 ## Final frame
 
-The last explained frame (end of scene 14): paper background; two coded horizontal parallel plates across the centre (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", a voltage label "V" across the gap; a small coded "+q" particle between the plates with an empty arrow "a = ?"; at the left a small inset of Earth's surface patch with its parallel gravitational field arrows, tag "near the surface: uniform"; heading "What minimum launch speed allows escape without further propulsion?"; chip "Next: how does voltage between parallel plates determine a charged particle's acceleration?". phys-y12-m6-v01 can open on this frame (open decision 1).
+The last explained frame (end of scene 14): paper background; two coded horizontal parallel plates across the centre (top "+", bottom "−") with parallel equal field arrows between them, tag "E: uniform", a voltage label "V" across the gap; a small coded "+q" particle between the plates with an empty arrow "a = ?"; at the left a small inset of Earth's surface patch with its parallel gravitational field arrows, tag "near the surface: uniform"; heading "What minimum launch speed allows escape without further propulsion?"; chip "Next: how does the voltage between parallel plates set a charged particle's acceleration?". phys-y12-m6-v01 can open on this frame (open decision 1).
 
 ## Scene list and build ids
 
@@ -356,3 +356,7 @@ Root label edit (21 Nov 2026, from the Claude recording-readiness check): scene 
 Speech changes needed: none.
 
 Calls for root: none.
+
+## Coherence audit fix (24 Nov 2026)
+
+From `../checks/phys-y12-coherence-audit-2026-11-23.md` U-S6: the final-frame chip now reads "Next: how does the voltage between parallel plates set a charged particle's acceleration?", the next design's question verbatim (screen text only; narration unchanged).
