@@ -435,3 +435,11 @@ Root 3 s playback pass, 23 Nov 2026 (about 479 s, 10 sheets). Opens on v16's fin
 ## phys-y12-m5-v01 v1
 
 Root 3 s playback pass, 23 Nov 2026 (498 s, 11 sheets). Measured timing. Bench demonstrator: A dropped, B knocked sideways at 2.0 m s^-1 from 1.2 m, prediction with countdown, strobe replay at one-eighth speed with equal-height readouts; two-assumption model card with the Moon hammer-and-feather inset; horizontal and vertical columns build with one clock (t = 0.49 s, drop 1.200 m, v_y -4.85); worked example 1.2 = 4.9t^2, t = 0.4949 s, s_x = 0.99 m; live launch-speed slider shows t never changes (2.0 and 4.0 m s^-1 both 0.49 s, 0.99 and 1.98 m); velocity table and crossed misconception "it slows down sideways near the end"; memory aid "Two columns, one clock."; both attempts show full questions with 10 s countdowns and brief feedback with a crossed slip; handoff to launch components; notes hold. Human listening pending. Physics has no YouTube playlist yet; not queued.
+
+## phys-y12-m5-v03 v2
+
+Root 3 s playback pass, 23 Nov 2026 (442 s, 10 sheets). v1 was fully reviewed at 3 s; v2 fixes only the "ON LEVEL GROUND" card wrap (now inside the card) and the final "Next: why do 40° and 50° land together?" chip (both lines inside the border), both confirmed on the v2 sheets. Height H = u_y^2/2g = 18.7 m, T = 2u_y/g = 3.91 s, landing 25.0 m s^-1 at 50° below, range 62.8 m, the u-doubling slider (T x 2, H x 4), the 20 m cliff warning (2.81 s, 31.9 m s^-1), memory aid "The way down mirrors the way up.", attempts and feedback all checked on v1. Human listening pending. Not queued (no Physics playlist yet).
+
+## phys-y12-m5-v05 v2
+
+Root 3 s playback pass, 23 Nov 2026 (447 s, 10 sheets). v1 was fully reviewed at 3 s; v2 fixes only the hand note "45° rule: level ground only", now under the chip row and fully on screen (confirmed). From the 30 m cliff at 20 m s^-1: 4.9t^2 - 10.0t - 30 = 0, t = 3.697 s, R = 64.0 m; 45° 60.9 m, 60° 48.1 m; the extra-part bars; the angle sweep peaks at 64.1 m near 32.5° (checked against tan θ = u/√(u^2 + 2gh)); two crossed slips; memory aid "Down is negative, time is positive."; attempts and feedback checked. Human listening pending. Not queued (no Physics playlist yet).
