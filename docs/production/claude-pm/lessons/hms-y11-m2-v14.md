@@ -1,0 +1,234 @@
+# HMS Year 11 V14 (The body and mind in motion): immediate physiological responses to training. What changes in your heart, lungs and blood the moment you start exercising, and which change starts before you move? (design)
+
+Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, five reused (see Assets). No official figures.
+
+Narration 5,862 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 541 s including holds, two countdowns and the 45 s notes hold.
+
+Scope: the fourteenth HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v14**. Pre-design pack `../pre-design/hms/hms-y11-m2-v14.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson14.sa.html` (read in full, 24 Nov; sha256 `8401a871c7b9ca615e5be54429eb2daf8732c578eee90e8950f5566e910e1386`). Previous design `hms-y11-m2-v13.md`.
+
+## Decisions
+
+- **File name and route id.** Route entry **hms-y11-m2-v14**, playlist order 32, site lesson L14 ("Five numbers that change the moment you start, and one that changes before you do"). Opening (route): "a FITT session card from v13 starts: a heart-rate readout begins to climb" (v13's final frame). Start: "Start from heart rate, including the anticipatory rise." Stop: "Stop when students can explain the immediate responses of heart rate, ventilation rate, stroke volume, cardiac output (Q = HR x SV, worked) and lactate levels (production and removal; threshold), and separate immediate responses from long-term adaptations." Next handoff: hms-y11-m2-v15, which opens on "the live response traces from v14 become data points on a class results table". Lesson key **hms11b14**.
+- **Syllabus.** Inquiry question "What factors influence movement and performance?". Spine id **hms-y11-fa2-g2-d5** (p22), owned whole: "Explain the immediate physiological responses to training, heart rate, ventilation rate, stroke volume, cardiac output and lactate levels".
+- **One main question:** *What changes in your heart, lungs and blood the moment you start exercising, and which change starts before you move?* (the route's question, kept). Heading: "What changes the moment you start exercising?" (the v13 Next chip's words).
+- **Case.** The site's warm-up (a swimmer on the block before a 200 m, heart rate 108 against a resting 58; and why her output keeps rising after stroke volume stops) is the hook (1), answered in 2 (the anticipatory rise) and 5 (cardiac output carried by heart rate after the plateau). WE b1 (explain all five responses, 5 marks) shapes 7 ("one demand, five parts of one answer"); WE b2 (two cyclists at the same power, lactate 2.1 against 6.8) is worked in 6 as the threshold example. Attempts are unseen: attempt 1 is the site's Activity 2 rower data (calculate heart rate from output and stroke volume, 3 marks); attempt 2 is the site's Activity 2 hot-day runner (heart rate drifting from 152 to 171 at the same pace, 4 marks), whose mechanism the body does not work and students build from v11's water chain and this video's equation.
+- **Scope.** Hook (1); heart rate in three parts, and response against adaptation (2); ventilation and what drives it (3); stroke volume and its plateau (4); cardiac output worked (5); lactate and the threshold (6); five responses, one demand (7); memory (8); two unseen items (9a to 9d); decision rule and handoff (10); key notes (11).
+- **Syllabus coverage check (root condition, 24 Nov).** Immediate physiological responses to training: heart rate (2), ventilation rate (3), stroke volume (4), cardiac output (5), lactate levels (6), and how they fit together (7). The immediate-response against adaptation distinction (2, 9b). All owned content is taught.
+- **Left to the site page for length (recorded per the root condition).** Cardiovascular drift as a named term (it is attempt 2's mechanism, named in its feedback); hyperventilation before swimming and breath-holding (a safety point, kept for the site and flagged for the science check as a possible restore); blood redistribution away from the gut (taught in v07 and v08, shown silently in 7); the trained athlete's fourth row (an adaptation, Year 12); lactate and next-day soreness (taught in v09, recalled silently in 6); both activities.
+- **What this video does not teach.** Long-term adaptations (lower resting heart rate, larger stroke volume): **hms-y12-m4-v08** (named in 2 only as the contrast). Investigating responses with data: **v15** (the handoff). The cardiac output equation itself: **v05** (recalled, then worked in exercise here, as the route records).
+- **Site alignment.** Kept in substance: the warm-up and both answers (1, 2, 5); the three-part heart rate sequence, "triggered by the expectation of exercise", the anticipatory rise shortening the oxygen deficit, "the session, not the season" (2); ventilation = breathing rate × tidal volume, depth first then rate, the brain signalling the breathing muscles with the working muscles, not low oxygen (3); venous return, the muscle and respiratory pumps, the plateau at about 40 to 60% from filling time, the trained-athlete exception (4); the three-row table 4.9, 14.3, 21.5 and "Stroke volume is identical, and cardiac output has risen by half" (5); "a balance between production and removal", 1 to 2 mmol/L at rest, the threshold at 50 to 60% untrained and 80 to 85% trained, WE b2's cyclists (6); "Lactate is the read-out on whether the attempt worked" (7).
+- **Site errors found (this read).** None. Checked: 70 × 70 = 4,900 mL; 130 × 110 = 14,300 mL; 195 × 110 = 21,450 mL; resting ventilation 12 to 15 breaths × 500 mL = 6 to 7.5 L/min; stroke volume plateau at about 40 to 60% of maximum in untrained people; resting blood lactate about 1 to 2 mmol/L; thresholds; the rower data (15.9 ÷ 0.118 ≈ 135 bpm; 22.2 ÷ 0.117 ≈ 190 bpm).
+- **Added beyond the site.** (a) The **lactate threshold curve** (`ThresholdCurve`, new in `hms-shared`, the route's recurring model): blood lactate against intensity from a production-and-removal model, with a two-tap bathtub icon (production in, removal out) that recalls v03 of the first focus area without re-teaching it; later reused in Year 12 training videos. (b) A `TraceStack` (named in the course brief, built here first): heart rate, ventilation, stroke volume, cardiac output and lactate against one intensity ramp, all from one model, so the plateau and the threshold visibly sit at different intensities. (c) v05's `OutputStrip` reused for Q = HR × SV, worked through three states in the g01 layout. (d) Both attempts.
+- **Entry knowledge.** hms-y11-m2-v05 (stroke volume, cardiac output = heart rate × stroke volume at rest, about 5 L/min); v04 (double loop, left ventricle, alveoli, veins and valves); v06 and v07 (adrenaline, sympathetic and parasympathetic control, the anticipatory rise named in v08); v09 and v10 (lactate made with hydrogen ions; lactate as a fuel; the oxygen deficit; steady state); v11 (sweat lowers plasma volume, so stroke volume falls and heart rate rises); v13 (maximum heart rate, about 200 for an adolescent). Not assumed: immediate response against adaptation, ventilation rate, tidal volume, venous return, muscle pump, stroke volume plateau, lactate threshold.
+- **Terms.** Immediate response, adaptation, anticipatory rise (2); ventilation rate, tidal volume (3); venous return (4); lactate threshold (6). Each gloss writes beside its part.
+- **Visual system.** One recurring model introduced here (as the route lists): the **lactate threshold curve**; the **cardiac output equation** reused from v05, now worked in exercise. Plates: one new (`hms-pool-start-block-v1.png`, the hook's empty pool start block); reused `hms-heart-rate-watch-v1.png` (v13, the opening), `hms-heart-cutaway-v1.png` (v04, approved), `m8-lungs-healthy-v1.png` (inspected), `m8-liver-v1.png` (inspected), `m8-skeletal-muscle-v1.png` (inspected). The route names `m8-heart-v1.png`; the approved HMS heart cutaway is used instead because v04 and v05 established it for this course. No people, hands or faces: the swimmer is her block and her readouts; the cyclists are two labelled gauge rows, with no bicycle icons.
+- **Attempt.** 9a: written for this video from the site's Activity 2 rower data (3 marks). 9c: written for this video from the site's Activity 2 hot-day runner (4 marks).
+- **Memory aids.** The site's lines: "once stroke volume has plateaued, every further increase in output must come from heart rate alone" (written "When stroke volume stops, heart rate carries the rise") and "Lactate is the read-out on whether the attempt worked" (written "Lactate reports whether delivery is winning"). Scene 8, after 2 to 7.
+- **A mistake/fix beat** is in 3 ("you breathe harder because oxygen runs low", crossed: the site's most common misconception in this lesson). Other fixes: "resting heart rate falls" as an immediate response crossed in 2; "lactic acid causes the burn" crossed in 6; "five separate paragraphs" crossed in 7; "the heart got weaker" crossed in 9d.
+- **Reuse (inspected 24 Nov unless approved and not yet painted):** `m8-lungs-healthy-v1.png` (lungs with trachea and bronchial tree), `m8-liver-v1.png`, `m8-skeletal-muscle-v1.png`; approved and not yet painted: `hms-heart-rate-watch-v1.png` (v13), `hms-heart-cutaway-v1.png` (v04).
+- **Colour key.** Heart rate crimson, stroke volume dark red, cardiac output ink, ventilation teal, lactate plum (as v09 and v10); the plateau and threshold markers amber; givens amber; green answers; red only for crossed mistakes.
+- **Type sizes.** As the course brief.
+- **Anchor.** The `TraceStack` is the anchor: it begins in 2 with heart rate alone, gains a trace per scene (3 to 6), and is read as one system in 7; the handoff turns its traces into table rows.
+- **Simulation.** One model against an intensity ramp I (0 to 100% of maximum), every number on screen read from it, labelled "illustrative pattern": heart rate HR = 70 + 1.25I (70 at rest, 130 at 48%, 195 at 100%); stroke volume SV = 70 + 40 × min(1, I/45) mL (plateau at 45%, 110 mL); Q = HR × SV (4.9, 14.3, 21.5 L/min at 0, 48 and 100%); ventilation VE = 7 + 0.6I + 0.02 × max(0, I − 55)² L/min (7 at rest, about 107 at maximum); lactate L = 1.2 + 0.0043 × max(0, I − T)² mmol/L with threshold T = 55% (untrained; about 10 at maximum) or T = 82% (trained). The anticipatory rise in 1 and 2 is a separate pre-start segment: heart rate 58 at rest sitting, rising to 108 on the block before I leaves zero (the site's swimmer).
+- **Board stages.** (1) the block and the watch, scene 1; (2) the trace stack, heart rate, scene 2; (3) the lungs and ventilation, scene 3; (4) the heart and venous return, scene 4; (5) the output strip, scene 5; (6) the threshold curve, scene 6; (7) the full stack, scene 7; (8) memory, questions, close, handoff and notes.
+- **Open decisions for root.** (1) One new plate (`hms-pool-start-block-v1.png`). (2) Whether to restore the hyperventilation safety sentence (about 12 s) in 3 by cutting the trained-athlete exception in 4.
+
+Main question: *What changes in your heart, lungs and blood the moment you start exercising, and which change starts before you move?*
+Entry knowledge: hms-y11-m2-v05, v04, v06, v07, v09, v10, v11, v13 (as above).
+Stops after: explaining the heart rate response in three parts, including the anticipatory rise; explaining ventilation as rate × depth and what drives it; explaining stroke volume's rise and plateau; working cardiac output in exercise and explaining how it rises after the plateau; explaining blood lactate as a balance and the threshold; linking the five as one response; separating responses from adaptations.
+Handoff: investigating responses (route entry hms-y11-m2-v15). **Handoff frame (hms-y11-m2-v15 opens from it):** the `TraceStack` at the left, its heart rate and ventilation traces each marked with three amber dots (rest, after 3 min moderate, after 1 min hard); the dots lifting off the traces and dropping into a coded class results table at the right ("student", "resting HR", "HR at 3 min", "HR at 4 min", "breaths per min") whose first row is filled and whose other rows are empty; the "Next" chip at the lower right reads "Next: how do you investigate responses properly?"; this video's heading at the top left.
+
+## Script and shots
+
+15 scene files (1 to 8, 9a to 9d, 10, 11). No people, hands or faces appear at any point.
+
+### 1. hook (before the first stroke)
+> Monday's session has started, and the heart rate is already climbing. But here's something stranger. A swimmer stands on the block before a two-hundred-metre race. She hasn't moved yet. Her heart rate is one hundred and eight, against fifty-eight at rest. No muscle has done any work, so what raised it? And during the race, her stroke volume stops rising after the first minute or so, yet her heart keeps pumping out more blood. How?
+
+Visual: opens on v13's handoff frame (the Monday `SessionCard` with its start marker, the `hms-heart-rate-watch-v1.png` face with a heart-rate readout climbing from about 70, the v13 Next chip). The Next chip leaves and the heading rewrites to "What changes the moment you start exercising?" (60 px). On "the heart rate is already climbing" the watch readout ticks up twice. On "A swimmer stands on the block" the card slides out and the new plate `hms-pool-start-block-v1.png` lands at the left (about 700 px; an empty starting block at the end of a lane, lane rope and still water); the watch stays at the right. On "She hasn't moved yet" a grey chip "no movement yet" (30 px). On "Her heart rate is one hundred and eight" the watch readout jumps to "108 bpm"; on "against fifty-eight at rest" a small ghost readout "rest: 58" beside it and a coded bar showing the gap of 50. On "what raised it?" an amber question mark (34 px). On "her stroke volume stops rising after the first minute or so" a small two-line graph writes above the block (grey tag "illustrative pattern"): a dark red stroke volume line rising then flattening; on "her heart keeps pumping out more blood" an ink output line that keeps rising; on "How?" a second amber question mark between the two lines. Hold one second.
+
+### 2. heart rate, in three parts
+> Start with heart rate, because it changes in three parts. First, before you move: the **anticipatory rise**. Expecting the effort, the brain's sympathetic nerves and the adrenaline they release speed the heart up. That's the swimmer on the block, and it's useful, because blood's already flowing faster when the work starts. Second, at the start, a steep rise, as the brake on the heart comes off. Third, at a steady pace, a plateau, where supply meets demand. All of this is an **immediate response**, a change during one session that reverses afterwards. A lower resting heart rate after months of training is an **adaptation**, and answering one question with the other loses the marks.
+
+Visual: board change to the trace stack (`TraceStack`, solid from its first frame; maths graph kit; time axis with a "start" marker, grey tag "illustrative pattern"), the watch small at the top right; one crimson heart-rate lane only. On "anticipatory rise" the segment before "start" lifts from 58 to 108 from the model, gloss "anticipatory rise: the increase before exercise begins" (34 px); on "the brain's sympathetic nerves and the adrenaline they release" v07's sympathetic switch tiny flips red-orange and v06's adrenal tile tiny releases a pill; on "That's the swimmer on the block" the hook's first question mark turns into a green tick beside the segment; on "blood's already flowing faster when the work starts" v10's oxygen deficit wedge tiny shrinks, tag "smaller deficit". On "a steep rise" the trace climbs sharply after "start", tag "brake off: parasympathetic withdrawn" (30 px). On "a plateau, where supply meets demand" the trace levels, tag "steady state". On "immediate response" the gloss "immediate response: changes in one session, then reverses" (34 px), the whole trace boxed teal. On "A lower resting heart rate after months of training" a separate small panel writes, "resting HR: 72 → 58 over 8 weeks"; on "adaptation" the gloss "adaptation: a lasting change from repeated training" (30 px); on "answering one question with the other" a chip "resting heart rate falls (as a response)" writes and is crossed in red. Hold one second.
+
+### 3. ventilation, and what really drives it
+> Next, **ventilation rate**: the air you move each minute, breathing rate times **tidal volume**, the size of each breath. At rest, that's about fifteen breaths of half a litre, around seven litres a minute. In hard exercise it can pass a hundred. At moderate effort, you mostly breathe deeper. Near maximum, depth tops out, so you breathe faster, which is why hard work feels like panting. And here's the surprise. Breathing doesn't rise because oxygen runs low. It rises within seconds, because the brain signals the breathing muscles at the same moment as the working muscles. Later, carbon dioxide and, at high intensity, rising acidity push it further.
+
+Visual: board change to the lungs (solid from its first frame): reused `m8-lungs-healthy-v1.png` at the left (about 560 px), a coded breath bar beside it (bar height is tidal volume, bar count per minute is rate), and the trace stack small at the right gaining a teal ventilation lane. On "ventilation rate" the gloss "ventilation rate: air moved per minute" (34 px) and the strip "ventilation = breathing rate × tidal volume" (38 px); on "tidal volume" the gloss "tidal volume: air per breath" (30 px). On "about fifteen breaths of half a litre" the strip fills "15 × 0.5 L"; on "around seven litres a minute" "≈ 7 L/min" (the model's rest value). On "it can pass a hundred" the ventilation lane climbs to about 107 at maximum. On "you mostly breathe deeper" the breath bars grow taller but not more frequent; on "depth tops out, so you breathe faster" the bars stop growing and crowd closer together, tag "depth first, then rate". On "Breathing doesn't rise because oxygen runs low" a chip "oxygen runs low" writes and is crossed in red, with a small oxygen readout beside the lungs staying flat. On "within seconds" the ventilation lane jumps at "start" before any blood readout moves; on "the brain signals the breathing muscles at the same moment as the working muscles" v07's `CommandLoop` tiny sends two olive lines at once, one to a muscle tile and one to the diaphragm line under the lungs. On "carbon dioxide" a grey "CO₂" tag on the lane's middle section; on "rising acidity" a plum tag on its steep upper section, red-orange dots tiny. Hold one second.
+
+### 4. stroke volume, and its ceiling
+> Stroke volume is the blood the left ventricle pushes out each beat. It rises from about seventy millilitres toward one hundred and ten, because more blood comes back to the heart. That's **venous return**. Working muscles squeeze the veins, and deeper breathing helps pull blood back too. So the ventricle fills further, stretches more, and contracts harder. But at around forty to sixty per cent of maximum, stroke volume stops rising. The heart's beating so fast that there's less time to fill between beats. Highly trained endurance athletes are the exception, because their bigger, more elastic ventricles keep filling.
+
+Visual: board change to the heart (solid from its first frame): `hms-heart-cutaway-v1.png` at the centre (about 620 px tall, never stretched), its orientation tag small; the trace stack small at the right gaining a dark red stroke-volume lane. On "the blood the left ventricle pushes out each beat" the left ventricle glows and an outflow pulse leaves the aorta. On "from about seventy millilitres toward one hundred and ten" a readout under the plate climbs "70 → 110 mL" with the lane. On "venous return" coded return arrows thicken into the right atrium, gloss "venous return: blood coming back to the heart" (34 px). On "Working muscles squeeze the veins" reused `m8-skeletal-muscle-v1.png` tiny at the lower left squeezes a coded vein line with one-way valve marks, tag "muscle pump" (30 px); on "deeper breathing helps pull blood back" the lungs tile tiny breathes with a small arrow toward the heart, tag "breathing pump". On "fills further, stretches more, and contracts harder" a coded outline of the left ventricle grows on filling and snaps in on ejection (the plate fixed). On "stroke volume stops rising" the lane flattens at 110, amber marker "plateau, about 45% here" (the model's 45%, inside the 40 to 60% range). On "less time to fill between beats" a coded beat strip below shows filling gaps shrinking as beats crowd together, tag "filling time runs out". On "Highly trained endurance athletes are the exception" a grey dashed lane continues to rise, tag "trained exception". Hold one second.
+
+### 5. cardiac output, worked
+> Earlier, you met **cardiac output**: heart rate times stroke volume. Now watch it in exercise. At rest, seventy beats of seventy millilitres is four point nine litres a minute. At moderate effort, one hundred and thirty times one hundred and ten is fourteen point three. At maximum, one hundred and ninety-five times one hundred and ten is twenty-one point five. Look at the last two rows. Stroke volume hasn't changed, yet output has risen by half. Once stroke volume stops, heart rate carries the whole rise. That's how the swimmer's heart keeps delivering more.
+
+Visual: board change to the output strip (v05's `OutputStrip` in the g01 `WorkedExample` layout, solid from its first frame): the equation strip "cardiac output = heart rate × stroke volume" (38 px) with a grey recall tag "earlier"; a three-row table under it, "state", "HR (bpm)", "SV (mL)", "output (L/min)", rows empty; the trace stack small at the right gaining an ink output lane. On "cardiac output" the gloss "cardiac output: blood pumped per minute" (34 px). Rows fill one per cue (30 px): on "seventy beats of seventy millilitres" "rest | 70 | 70 |", and on "four point nine litres a minute" "70 × 70 mL = 4,900 mL ≈ 4.9"; on "one hundred and thirty times one hundred and ten" "moderate | 130 | 110 |" and on "fourteen point three" "130 × 110 mL = 14,300 mL ≈ 14.3"; on "one hundred and ninety-five times one hundred and ten" "maximum | 195 | 110 |" and on "twenty-one point five" "195 × 110 mL = 21,450 mL ≈ 21.5". On "Look at the last two rows" rows 2 and 3 outline amber; on "Stroke volume hasn't changed" both "110" cells glow; on "output has risen by half" a bracket "14.3 → 21.5: up by half" (21.45 ÷ 14.3 = 1.5). On "heart rate carries the whole rise" the output lane on the stack rises past the stroke-volume plateau while the heart-rate lane lights, amber hand tag "SV stops; HR carries the rise" (42 px). On "the swimmer's heart keeps delivering more" the hook's second question mark turns into a green tick. Hold one second.
+
+### 6. lactate, and the threshold
+> Lactate is made all the time, even at rest, and removed all the time, by the heart, the liver and less active muscle. So blood lactate shows the balance, not just production. At rest it sits around one to two millimoles per litre. As intensity rises, production eventually outruns removal, and lactate starts to climb steeply. That point is the **lactate threshold**. In an untrained person, it's around fifty to sixty per cent of maximum. In a trained endurance athlete, eighty per cent or more. Two cyclists at the same power show why it matters. One has a lactate of two point one, the other six point eight. The first is below her own threshold, and can keep going. The second is above his, and has minutes left.
+
+Visual: board change to the threshold curve (`ThresholdCurve`, solid from its first frame; maths graph kit; axes "blood lactate (mmol/L)" and "intensity, % of maximum", grey tag "illustrative pattern"), with a small two-tap tank icon at the left (a plum inflow labelled "made" and an outflow labelled "removed"). On "removed all the time, by the heart, the liver and less active muscle" three small outflow arrows run to `hms-heart-cutaway-v1.png` tiny, `m8-liver-v1.png` tiny and a muscle tile. On "the balance, not just production" the tank's level holds steady with equal flows, tag "balance" (30 px). On "around one to two millimoles per litre" the plum line draws flat near 1.2 at the left. On "production eventually outruns removal" the inflow widens past the outflow and the tank level rises; on "lactate starts to climb steeply" the line bends upward from the model. On "lactate threshold" an amber marker at the bend, gloss "lactate threshold: where lactate starts to build faster than it's removed" (34 px). On "around fifty to sixty per cent" the marker sits at 55%, label "untrained"; on "eighty per cent or more" a second, teal-edged curve draws with its bend at 82%, label "trained". On "Two cyclists at the same power" two labelled gauge rows write under the graph, "cyclist A" and "cyclist B", at the same power line; on "two point one" A's plum gauge reads "2.1"; on "six point eight" B's reads "6.8". On "below her own threshold" A's dot sits on the flat part of a trained-shaped curve, green tag "sustainable"; on "above his, and has minutes left" B's dot sits on the steep part of an untrained-shaped curve, amber tag "minutes left". A silent chip "lactic acid causes the burn" is crossed in red beside v09's hydrogen-ion dots tiny. Hold one second.
+
+### 7. five responses, one demand
+> These aren't five separate facts. They're one answer to one demand: get more oxygen to the working muscle, and carbon dioxide away. Ventilation brings more air in. Stroke volume and heart rate raise cardiac output, and blood is sent toward the working muscle. And lactate is the report card. Below the threshold, delivery is winning. Above it, it isn't, and the clock has started. Notice that stroke volume plateaus and lactate turns at different intensities.
+
+Visual: board change to the full stack (solid from its first frame): all five lanes on one intensity axis, heart rate, ventilation, stroke volume, cardiac output, lactate, from the model. On "five separate facts" five small paragraph blocks write and are crossed in red, chip "five separate paragraphs". On "one answer to one demand" a single amber banner across the top, "demand: more O₂ in, more CO₂ out". Each lane links to the banner one per cue: on "Ventilation brings more air in" the teal lane glows; on "Stroke volume and heart rate raise cardiac output" the dark red and crimson lanes glow and feed an arrow into the ink output lane; on "blood is sent toward the working muscle" v07's two arteriole taps tiny (muscle open, gut closing), silent. On "lactate is the report card" the plum lane glows with a tag "report card"; on "Below the threshold, delivery is winning" the region left of the threshold shades green; on "Above it, it isn't, and the clock has started" the region right of it shades amber with a small timer chip. On "stroke volume plateaus and lactate turns at different intensities" two vertical amber lines mark 45% (plateau) and 55% (threshold), tag "different intensities" (34 px). Hold one second.
+
+### 8. memory
+> Two things to remember. When stroke volume stops, heart rate carries the rise. And lactate reports whether delivery is winning.
+
+Visual: board change to the memory card (solid from its first frame): the trace stack small at the left beside a dark-ink framed card (52 px): "SV stops; HR carries the rise" (written with "When stroke volume stops") and "Lactate reports whether delivery is winning" (written with "lactate reports whether delivery is winning"). This card returns beside the key notes. Hold half a second.
+
+### 9a. attempt one (the rower)
+> Two exam questions. First. A rower's stroke volume is one hundred and eighteen millilitres at sixty per cent of maximum, and one hundred and seventeen at ninety per cent. Cardiac output rises from fifteen point nine to twenty-two point two litres a minute. Calculate the heart rate at each intensity, and explain how output rose. Pause here to answer.
+
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A rower's stroke volume is 118 mL at 60% of maximum and 117 mL at 90%. Over the same range, cardiac output rises from 15.9 to 22.2 L/min. Calculate the rower's heart rate at each intensity, and explain how cardiac output increased. (3 marks)" Picture: the empty output strip. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 9b. feedback, item one
+> Heart rate is output divided by stroke volume. Fifteen point nine litres over point one one eight is about one hundred and thirty-five. Twenty-two point two over point one one seven is about one hundred and ninety. Stroke volume had plateaued, so heart rate carried the whole rise. The classic mistake is forgetting to turn millilitres into litres.
+
+Visual: `FeedbackScene`: the card shrinks to the top; the strip rearranges to "heart rate = cardiac output ÷ stroke volume"; a green-framed three-line answer writes one per cue (30 px): on "Fifteen point nine litres over point one one eight" "1 60%: 15.9 ÷ 0.118 L ≈ 135 bpm"; on "Twenty-two point two over point one one seven" "2 90%: 22.2 ÷ 0.117 L ≈ 190 bpm"; on "heart rate carried the whole rise" "3 SV flat (plateau): the rise came from heart rate". On "classic mistake" a slip line "15.9 ÷ 118 = 0.13 bpm" writes and is crossed in red, red hand tag "mL to L first" (34 px). Settle one second.
+
+### 9c. attempt two (the hot day)
+> Second. A runner holds exactly the same pace for sixty minutes on a hot day. Her heart rate is one hundred and fifty-two at minute ten, and one hundred and seventy-one at minute fifty-five. Explain why her heart rate rose even though the pace didn't change. Pause here to answer.
+
+Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A runner holds exactly the same pace for 60 minutes on a hot day. Her heart rate is 152 bpm at minute 10 and 171 bpm at minute 55. Explain why her heart rate increased although her pace did not change. (4 marks)" Picture: the watch plate small with "152" and "171" readouts beside a flat pace line. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 9d. feedback, item two
+> Sweating in the heat lowers plasma volume, so less blood returns to the heart. Stroke volume falls. The same pace still needs the same cardiac output, so heart rate has to rise to hold it. That slow upward creep is called cardiovascular drift. The classic mistake is saying her heart got weaker.
+
+Visual: `FeedbackScene`: v11's water chain tiny runs; a green-framed four-line answer writes one per cue (30 px): on "Sweating in the heat lowers plasma volume" "1 sweat: plasma volume down"; on "Stroke volume falls" "2 less venous return: stroke volume down"; on "heart rate has to rise to hold it" "3 same pace, same output needed: HR up (Q = HR × SV)", the output strip tiny with SV falling and HR rising while Q holds; on "cardiovascular drift" "4 named: cardiovascular drift". On "classic mistake" a chip "her heart got weaker" writes and is crossed in red, red hand tag "less filling, not a weaker heart" (34 px). Settle one second.
+
+### 10. decision rule and handoff
+> So, for any response question, name the change, give its cause, and link it back to delivering oxygen. But how would you show these responses in your own class? Put heart rates and breathing on a results table, and the questions start. How do you investigate responses properly?
+
+Visual: three chips write on (38 px): "the change" on "name the change", "its cause" on "give its cause", "link to oxygen delivery" on "link it back to delivering oxygen". On "in your own class" the chips fade and the `TraceStack` settles at the left; three amber dots mark its heart-rate and ventilation lanes at "rest", "3 min moderate" and "1 min hard". On "Put heart rates and breathing on a results table" the dots lift off the lanes and drop into a coded class results table at the right ("student", "resting HR", "HR at 3 min", "HR at 4 min", "breaths per min"), filling the first row; the other rows stay empty. On "How do you investigate responses properly?" the "Next" chip slides in: "Next: how do you investigate responses properly?" **This is the handoff frame; hms-y11-m2-v15 opens from it.** Hold half a second.
+
+### 11. key notes (quiet, hold about 45 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Heart rate: anticipatory rise (adrenaline, nerves), steep rise, then steady state.
+2. Ventilation = breathing rate × tidal volume; depth first, then rate; brain-driven.
+3. Stroke volume rises with venous return, then plateaus at about 40 to 60% of max.
+4. Cardiac output = HR × SV, about 5 L/min at rest; after the plateau, HR carries it.
+5. Lactate: made and removed; climbs past the threshold. Responses aren't adaptations.
+
+Memory card (the scene 8 card) beside the notes. Each bullet one line of at most 86 characters. Hold about 45 seconds in all.
+
+## Practice question and feedback
+
+Two unseen items (9a to 9d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Both are written for this video from the site's Activity 2 data; neither repeats the three-row table (5) or the cyclists (6).
+
+1. (9a, 3 marks.) Heart rate at 60%: 15.9 ÷ 0.118 ≈ 135 bpm (1 mark); at 90%: 22.2 ÷ 0.117 ≈ 190 bpm (1 mark); stroke volume had plateaued, so the rise in output came from heart rate (1 mark). Classic mistake crossed: dividing by millilitres.
+2. (9c, 4 marks.) Sweating in the heat reduces plasma volume (1 mark); venous return and therefore stroke volume fall (1 mark); the unchanged pace requires the same cardiac output, so heart rate rises to maintain it (Q = HR × SV) (1 mark); identified as cardiovascular drift, an immediate response, not a weakening of the heart (1 mark). Classic mistake crossed: "her heart got weaker".
+
+Feedback spoken lengths about 25 s (9b) and 21 s (9d) by script; time the exact audio.
+
+## Numbers or facts to verify
+
+Self-check (24 Nov). The Codex science check must confirm each before voicing.
+- **Heart rate (1, 2).** Anticipatory rise via sympathetic stimulation and adrenaline; rapid onset from vagal withdrawal and sympathetic drive; steady state at constant submaximal work; the swimmer's 58 and 108 bpm (site, illustrative); resting heart rate falling with training as an adaptation (72 → 58 over 8 weeks, the site's example).
+- **Ventilation (3).** Ventilation = breathing rate × tidal volume; rest about 12 to 15 breaths × 0.5 L (6 to 7.5 L/min; the model uses 7); maximal values above 100 L/min in trained adults (adolescents often lower; the model's 107 is illustrative); tidal volume rises first, then frequency; rapid onset from central command and muscle afferents; CO₂ and, at high intensity, acidosis.
+- **Stroke volume (4).** Rest about 70 mL, exercise about 100 to 120 mL; venous return via the muscle and respiratory pumps; Frank-Starling filling and stronger contraction; plateau at about 40 to 60% of maximum from reduced filling time in untrained people; continued rise in elite endurance athletes.
+- **Cardiac output (5).** 70 × 70 = 4,900 mL; 130 × 110 = 14,300 mL; 195 × 110 = 21,450 mL; 21.45 ÷ 14.3 = 1.5.
+- **Lactate (6).** Continuous production and clearance (heart, liver, less active muscle); rest about 1 to 2 mmol/L; lactate threshold about 50 to 60% untrained, 80 to 85% or more trained; the cyclists' 2.1 and 6.8 mmol/L (site's WE b2).
+- **Attempts.** 15.9 ÷ 0.118 = 134.7; 22.2 ÷ 0.117 = 189.7; cardiovascular drift from reduced plasma volume and stroke volume in prolonged exercise in the heat.
+- **Model numbers.** HR(48) = 70 + 60 = 130; SV(48) = 70 + 40 = 110 (plateau reached at 45%); VE(100) = 7 + 60 + 0.02 × 45² = 107.5; L(100) with T = 55: 1.2 + 0.0043 × 2,025 = 9.9.
+- **Official figures.** None.
+- **No em dashes** in this file (searched by script).
+
+## Memory aid check
+
+- **"SV stops; HR carries the rise."** Assumption: an untrained or moderately trained person whose stroke volume plateaus. False for elite endurance athletes (scene 4 states the exception).
+- **"Lactate reports whether delivery is winning."** Assumption: lactate accumulation reflects oxygen delivery against demand. A simplification: lactate also rises with fast-fibre recruitment and adrenaline even when oxygen is available; the site's framing is used at this level. Author note.
+
+## Narration length estimate
+
+Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5862 characters**, 14 scene files. At 13.3 characters per second the speech is about 441 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 541 s**.
+
+| Scene | Characters |
+| --- | --- |
+| 1. hook (before the first stroke) | 434 |
+| 2. heart rate, in three parts | 677 |
+| 3. ventilation, and what really drives it | 648 |
+| 4. stroke volume, and its ceiling | 619 |
+| 5. cardiac output, worked | 560 |
+| 6. lactate, and the threshold | 712 |
+| 7. five responses, one demand | 459 |
+| 8. memory | 127 |
+| 9a. attempt one (the rower) | 351 |
+| 9b. feedback, item one | 348 |
+| 9c. attempt two (the hot day) | 279 |
+| 9d. feedback, item two | 295 |
+| 10. decision rule and handoff | 278 |
+| 11. key notes (quiet, hold about 45 seconds) | 75 |
+
+Reserve cuts: (1) scene 4, the trained-athlete exception (keep the dashed lane silent); (2) scene 3, the panting clause; (3) scene 6, "In a trained endurance athlete, eighty per cent or more" (keep the curve silent). Do not cut below 5,500 without replacing content.
+
+## Assets
+
+Have (reused, inspected 24 Nov unless approved and not yet painted): `m8-lungs-healthy-v1.png`, `m8-liver-v1.png`, `m8-skeletal-muscle-v1.png`; HMS plates approved: `hms-heart-cutaway-v1.png` (v04), `hms-heart-rate-watch-v1.png` (v13, pending root approval). Coded: `TraceStack` (five lanes from one model), breath bar, venous return arrows with muscle and breathing pumps, beat strip, `OutputStrip` (v05) in the `WorkedExample` layout, `ThresholdCurve` with the two-tap tank, gauge rows, results table, question cards, countdown. No people.
+
+Need (new plate):
+1. `hms-pool-start-block-v1.png`: scene 1.
+
+Kit gaps: `TraceStack`, `ThresholdCurve` in `hms-shared`.
+
+## Codex asset brief (HMS-Y11-B14, the start block)
+
+Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
+
+1. `hms-pool-start-block-v1.png` (2000 x 1300): an empty swimming-pool starting block at the end of one lane, seen from the side and slightly above, the lane rope running away into calm blue water, the pool deck tiles wet. No people, hands or faces anywhere in the image; no lane numbers, sponsor marks or text.
+
+Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b14-provenance.json`.
+
+## Codex learning review and science check brief (HMS-Y11-B14)
+
+- **Learning review:** trace from v05, v07, v09 to v11 and v13. Does 2 separate "response" from "adaptation" before any exam question can blur them? Does the ventilation scene correct the oxygen misconception with something visible (the lane jumping before the blood changes)? Is the worked table readable one row at a time, and does "risen by half" land? Does the threshold curve make "balance" visible through the two-tap tank? Does 7 turn five lists into one argument? Are both attempts unseen and answerable from the stop?
+- **Science check:** every item in "Numbers or facts to verify", especially the drivers of ventilation, the stroke volume plateau range, the thresholds, and the model answers' mark splits. Consider whether the hyperventilation safety point should be restored (open decision 2).
+
+## Codex error-check brief (HMS-Y11-B14, after the reviews)
+
+Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v13's handoff frame and the closing matches hms-y11-m2-v15's route opening (the live response traces become data points on a class results table); every product and quotient is correct; trace colours consistent; no people, hands or faces; no bicycle or boat icons; no em dash, no U+2061; no module number or course label on screen.
+
+## YouTube metadata (draft)
+
+- Title: "Immediate Responses to Exercise: Heart Rate, Ventilation, Stroke Volume, Cardiac Output and Lactate | HSC Health and Movement Science"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson14.sa.html
+
+What changes in your heart, lungs and blood the moment you start exercising, and which change starts before you move? The anticipatory rise in heart rate, what really drives breathing during exercise, why stroke volume plateaus, cardiac output worked from rest to maximum, blood lactate as a balance and the lactate threshold, and why these immediate responses are not the same as training adaptations. Includes two exam-style questions with brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Health and Movement Science 11-12 (2023 syllabus), Year 11: The body and mind in motion.
+Syllabus content (NSW Health and Movement Science 11-12, 2023):
+"Explain the immediate physiological responses to training, heart rate, ventilation rate, stroke volume, cardiac output and lactate levels"
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/pdhpe/health-and-movement-science-11-12-2023
+
+Previous: How do you turn 'train harder' into a real program?
+Next: How do you investigate responses properly?
+
+#HealthAndMovementScience #HSC #HSCScience"
+
+## Open decisions
+
+- **One new plate (recommended: yes).** `hms-pool-start-block-v1.png`.
+- **Hyperventilation safety sentence (recommended: leave to the site unless the science check asks for it).** About 12 s; the swap is named in Reserve cuts.
+
+## Build ids
+
+Lesson key `hms11b14`; folder `src/explainer/lessons/hms-y11-m2-v14`; build folder `docs/production/claude-pm/lessons/hms11b14`. Imports `hms-shared` (`OutputStrip`, `CommandLoop`, `DeliveryChain`; new `TraceStack`, `ThresholdCurve`), the g01 `WorkedExample` layout, `src/explainer/math/graphs.tsx`.
+
+Scene headings (15): hook, heart-rate, ventilation, stroke-volume, cardiac-output, lactate, one-demand, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
+
+Holds and transitions as v13. Each teaching scene is a board change, with the trace stack carried small in the corner from 2 to 6.
+
+## Review notes (author, not learner copy)
+
+- **Teaching checks.** Causes: why the heart speeds up before movement (2); why breathing rises within seconds (3); why stroke volume rises and then stops (4); how output still rises (5); why lactate climbs past a threshold (6); why the five belong together (7). Attention: a swimmer whose heart races before she moves; two cyclists at the same power with different futures. Visual medium: five lanes from one model where the plateau and the threshold visibly sit apart; a tank whose flows explain a curve. Apply: a calculation the other way round (9a); an unworked mechanism (9c). Remember: SV stops, HR carries; lactate reports.
+- **Overlap.** v15 investigates these responses with class data; hms-y12-m4-v08 owns adaptations and recalls Q = HR × SV in one sentence.
+- **No em dashes** in this file (searched by script).

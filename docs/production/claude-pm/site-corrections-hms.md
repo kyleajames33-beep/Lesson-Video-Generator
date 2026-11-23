@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026).
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set).
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
@@ -181,3 +181,53 @@ Source hash: `aaa5957803f9c7cd09a478c0570846eb96e291baa55a490e05f461df9e5ea2a4`.
 **Correction:** "Its lining is folded into millions of villi, each covered in microvilli, giving an enormous surface area: current measurements put the whole digestive tract's inner surface at about 30 to 40 square metres, most of it in the small intestine, roughly the floor area of a small flat."
 
 **Reason:** the "250 square metres" (tennis court) figure is an older textbook estimate. Helander and Fändriks (2014, Scandinavian Journal of Gastroenterology) measured the mean total mucosal surface of the adult digestive tract, including villi and microvilli, at about 32 square metres. The lesson's point (a huge folded surface, the same design as the alveoli) is unchanged. Video hms-y11-m2-v06 says "a huge folded surface" and shows no number. Severity: minor (dated figure). Science check to confirm the citation.
+
+## 18. subjects/health-movement-science/year11/module2/lesson09.sa.html
+
+Source hash: `0e5c63ee48c957b731a2441bb207c89f0447fd087b0f341b96a899ea58ed14ef`. Card 05 ("The ATP-PCr system: the fastest thing the body can do"), the cause of fatigue row and the paragraph after the table.
+
+**Exact old text:** "Depletion of phosphocreatine. Nothing accumulates and nothing becomes acidic, the fuel simply runs out" and "They have run out of phosphocreatine."
+
+**Correction:** "Depletion of phosphocreatine: the store runs too low to rebuild ATP at the maximal rate. This system itself adds little that accumulates, though glycolysis, running alongside it from the first seconds, has already begun to add hydrogen ions (Card 07)." and "Their phosphocreatine is running low."
+
+**Reason:** by the end of a 10 s maximal sprint phosphocreatine is substantially depleted but not exhausted; the rate of ATP resynthesis falls as the store runs low. The card also contradicts the page's own Card 07 ("hydrogen ions begin accumulating well before the ten second mark in a maximal effort"). Depletion stays the fatigue cause the syllabus expects. Video hms-y11-m2-v09 says "running low", "too low to rebuild ATP fast enough" and shows the gauge at about a quarter at the line. Severity: minor (overstated; internal inconsistency).
+
+## 19. subjects/health-movement-science/year11/module2/lesson10.sa.html
+
+Source hash: `9a488c328b68f170052cbe0bacf68cbd912f8cac829a433766cb1fc902774ce7`. Card 04 (the aerobic table, efficiency row), card 07 (two truths and a lie), card 08 (the three-system table) and the summary.
+
+**Exact old text:** "Around 36 ATP per glucose molecule, against 2 from the same molecule anaerobically"
+
+**Correction:** "About 30 to 36 ATP per glucose molecule (current estimates are about 30 to 32; many textbooks still give 36 to 38), against 2 from the same molecule anaerobically: roughly fifteen times as much."
+
+**Reason:** the 36 to 38 figure assumes whole-number yields per carrier molecule; measured proton costs give about 2.5 and 1.5 ATP per NADH and FADH₂, so about 30 to 32 ATP per glucose (standard in current biochemistry and exercise physiology texts). HSC marking guides still accept 36 to 38, so the page's comparison stands; only the single figure is dated. Video hms-y11-m2-v10 says "more than thirty ATP per glucose, against two" and shows "about 30 to 36". Severity: minor (dated figure).
+
+## 20. subjects/health-movement-science/year11/module2/lesson11.sa.html
+
+Source hash: `2eb2cfff8f280a4e9fb9dcaff9713d3fdc2c4923e1eeae38ed3df6afe94e5dd8`. Card 07 ("Micronutrients: no energy of their own, and nothing works without them"), the calcium row, third column.
+
+**Exact old text:** "Impaired contraction, and over time a raised risk of stress fracture, which removes the athlete from training altogether"
+
+**Correction:** "Little effect on contraction, because blood calcium is held steady by drawing on bone; over time, lower bone mineral density and a raised risk of stress fracture, which removes the athlete from training altogether"
+
+**Reason:** blood calcium is tightly regulated (parathyroid hormone releases calcium from bone when intake is low), so a low dietary intake does not impair muscle contraction in an otherwise healthy athlete; the cost falls on the skeleton. Impaired contraction from low blood calcium (hypocalcaemia) is a medical condition, not a dietary shortfall. The middle column ("Required for the muscle contraction itself") is correct. Video hms-y11-m2-v11 says calcium "triggers every contraction and builds bone" and that a low intake "shows up mainly in the bones". Severity: minor (mechanism).
+
+## 21. subjects/health-movement-science/year11/module2/lesson12.sa.html
+
+Source hash: `638bd91e42a9a160febf70687ce2699851cbb4d15edd4b7e86800fb0ca8b9e3e`. Card 04 ("What makes a session aerobic or anaerobic"), the "In your book" note.
+
+**Exact old text:** "Write the two sprint sessions side by side with their work-to-rest ratios, roughly 1:18 and 1:4"
+
+**Correction:** "Write the two sprint sessions side by side with their work-to-rest ratios, roughly 1:36 and 1:4 (a maximal 30 metre sprint takes about 5 seconds)"
+
+**Reason:** the card's sessions are maximal 30 m sprints with three minutes or twenty seconds of rest. A 30 m sprint from a standing start takes about 4 to 5.5 s, so 180 s of rest is about 1:36 (1:33 to 1:45); 1:18 would need a 10 s effort. The 1:4 figure for 20 s of rest is correct. The card's diagram scale ("1:20 rest" for speed and power) is unaffected. Video hms-y11-m2-v12 says "about five seconds each, with three minutes' rest, is about one to thirty-six". Severity: minor (arithmetic).
+
+## 22. subjects/health-movement-science/year11/module2/lesson13.sa.html
+
+Source hash: `9e13cb02918a7deab0d68384ea438b03b259a6a5d4b40ba5c981609222e7a397`. Card 07 ("Progression"), the six-week table and the paragraph after it.
+
+**Exact old text:** the table's weeks 1 to 2 (3 per week, 70% HRmax, 25 min), week 3 (4 per week, 25 min, "Frequency only") and week 4 (4 per week, 35 min, "Time only"), followed by "A widely used starting guideline is to increase total weekly load by no more than about 10 per cent per week."
+
+**Correction:** either keep the table and qualify the guideline ("For a low starting volume, single steps larger than 10 per cent are common; what matters is one change at a time and a planned recovery week"), or use smaller steps, for example weeks 1 to 2: 3 × 30 min at 70%; week 3: 3 × 33 min (time only, +10%); week 4: 3 × 33 min at 75% (intensity only); week 5: 3 × 25 min (recovery); week 6: 3 × 36 min at 75% (time only).
+
+**Reason:** the table's own steps raise weekly running time from 75 to 100 minutes (+33%) and then to 140 minutes (+40%), which contradicts the guideline stated immediately after it. The "10 per cent rule" is itself a rule of thumb with weak evidence, so the page should not present both without reconciling them. Video hms-y11-m2-v13 uses the smaller-step table above and says "one variable at a time, in small steps", without teaching the 10% figure. Severity: minor (internal inconsistency).
