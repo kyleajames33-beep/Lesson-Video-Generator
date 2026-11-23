@@ -127,7 +127,7 @@ Visual: the card shrinks to the top with its full wording; the plan diagram stay
 ### 13. summary and handoff
 > So a free-body diagram shows every force on one object. Split the angled forces, sum the components, and recombine, and you have the net force. Next, a crate is pushed hard, and doesn't budge. **What** does a net force of zero tell you about its motion?
 
-Visual: board clears to the sledge's free-body dot with its four arrows and its net force panel (46.0 N forward), and the memory line beneath. On "crate" the painted box `phys-y11-box-v1.png` (delivered; the Revision 1 name `y11p-box-v1.png` is read as this file, root decision 4) appears on a coded floor line with an orange "push" arrow and a terracotta friction arrow of the same length, both labelled with "?" values; on "What" a chip "F_net = 0 ?" and a chip "Next: why velocity stays the same when forces balance" (v13's route question, aligned by root). Hold about 2 seconds.
+Visual: board clears to the sledge's free-body dot with its four arrows and its net force panel (46.0 N forward), and the memory line beneath. On "crate" the painted box `phys-y11-box-v1.png` (delivered; the Revision 1 name `y11p-box-v1.png` is read as this file, root decision 4) appears on a coded floor line with an orange "push" arrow and a terracotta friction arrow of the same length, both labelled with "?" values; on "What" a chip "F_net = 0 ?" and a chip "Next: Why does an object keep the same velocity when the forces on it balance?" (v13's route question, aligned by root). Hold about 2 seconds.
 
 ### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".

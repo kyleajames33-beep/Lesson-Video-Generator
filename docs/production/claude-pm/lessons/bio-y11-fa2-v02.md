@@ -129,9 +129,9 @@ Visual: the board clears. The card arrives with its full text and picture in one
 Visual: the card shrinks to the top; a givens strip stays under it, "grows larger | divides into two smaller cells | use SA:V", and the Amoeba plate stays at the right. On "grows" the given "grows larger" takes a dark-ink pen underline; the answer "growing: volume rises faster than surface, so SA:V falls" in a green frame (44 px over two lines), with the supporting line "less membrane per part, longer distance to the centre" (30 px). On "Just after dividing" "divides into two smaller cells" is underlined; the answer "dividing: same total volume, more membrane, so each cell has a higher SA:V" in a green frame (44 px over two lines), with the supporting line "similar shapes: a shorter distance too" (30 px; slate hand tag "model: just after division, similar shapes"). Under the plate a coded rounded cell outline (not a cube) pinches into two smaller rounded cells of the same outline shape, each drawn at half the area-scaled volume by uniform scaling; the new membrane along the division is drawn teal, teal hand tag "new membrane". No cube is split, so nothing implies the daughters are cubes. On "classic mistake" a chip "bigger cell, more surface, so exchange keeps up" writes and is crossed in red (red hand tag "volume grows faster"). Settle one second.
 
 ### 11. decision rule and handoff
-> So to explain SA to V, work out the ratio, then link it to how much membrane each part of the cell gets, and how far materials must travel. Can you test this prediction with real cubes? Next: how agar cubes test a prediction about size and diffusion.
+> So to explain SA to V, work out the ratio, then link it to how much membrane each part of the cell gets, and how far materials must travel. Can you test this prediction with real cubes? Next: what makes a biology plan valid, reliable and ethical?
 
-Visual: two step chips write one per cue under the results strip: "membrane per part", "distance to the centre". On "real cubes" the board clears to the three coded cubes, 1, 2 and 3 cm, in a row at the centre to scale, each with its ratio chip beneath ("6:1", "3:1", "2:1"); the cubes fill with a flat pink coded wash and a terracotta "?" appears above the row. A "Next" chip slides in at the lower right: "Next: How do agar cubes test a prediction about size and diffusion?". This is the video's final frame (root decision 16): the results strip and two step chips along the top, the three pink coded cubes with their ratio chips, the "?" and the Next chip. Hold half a second before the notes.
+Visual: two step chips write one per cue under the results strip: "membrane per part", "distance to the centre". On "real cubes" the board clears to the three coded cubes, 1, 2 and 3 cm, in a row at the centre to scale, each with its ratio chip beneath ("6:1", "3:1", "2:1"); the cubes fill with a flat pink coded wash and a terracotta "?" appears above the row. A "Next" chip slides in at the lower right: "Next: What makes a biology plan valid, reliable and ethical?". This is the video's final frame (root decision 16): the results strip and two step chips along the top, the three pink coded cubes with their ratio chips, the "?" and the Next chip. Hold half a second before the notes.
 
 ### 12. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -209,7 +209,7 @@ v01's final frame (`bio-y11-fa2-v01.md`, end of scene 10, which that design keep
 
 ## Final frame
 
-The last explained frame (end of scene 11, before the key-notes board; unchanged in Revision 4): paper background; the results strip ("6:1, 3:1, 2:1") and the two step chips "membrane per part" and "distance to the centre" along the top; the three coded cubes, 1, 2 and 3 cm, in a row at the centre to one scale, filled with a flat pink coded wash, each with its ratio chip beneath ("6:1", "3:1", "2:1"); a terracotta "?" above the row; the chip "Next: How do agar cubes test a prediction about size and diffusion?" at the lower right. v03 opens on this frame.
+The last explained frame (end of scene 11, before the key-notes board; unchanged in Revision 4): paper background; the results strip ("6:1, 3:1, 2:1") and the two step chips "membrane per part" and "distance to the centre" along the top; the three coded cubes, 1, 2 and 3 cm, in a row at the centre to one scale, filled with a flat pink coded wash, each with its ratio chip beneath ("6:1", "3:1", "2:1"); a terracotta "?" above the row; the chip "Next: What makes a biology plan valid, reliable and ethical?" at the lower right. v03 opens on this frame.
 
 ## Assets
 
@@ -280,7 +280,7 @@ Year 11 Biology (2025 syllabus), Focus Area 2
 B25-FA2-G1-02: Explain the effect of the surface-area-to-volume ratio on the rate of movement of materials into and out of a cell
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
 
-Previous: What did multicellular life trade away to become big? Next: How do agar cubes test a prediction about size and diffusion?
+Previous: What did multicellular life trade away to become big? Next: Why must a biology plan justify its variables and controls, its sources, its risks and its ethics before any data are collected?
 
 #Year11Biology #SurfaceAreaToVolumeRatio #HSCScience"
 
@@ -363,3 +363,7 @@ Calls for root:
 3. The scene 7 particle model: kept as a labelled model with centre counts and no times; the coded fallback applies if the engine cannot release at the walls or count a centre zone.
 4. If the egg yolk plate fails QA and scene 9 is cut, the script falls to about 5,236 characters; root rules on the length then, as in root decision 2.
 5. One classic slip is crossed in each cube scene (3, 4, 5 and 8) on screen only; none is spoken.
+
+## Revision note (23 Nov 2026, root ruling C5: Next text only)
+
+The Working scientifically video bio-y11-ws-v02 now follows this one (placement approved by root), so the Next text names its on-screen heading, "What makes a biology plan valid, reliable and ethical?". Edited lines (numbers after the edit): 132, 134, 212, 283. bio-y11-ws-v02 opens on this video's final frame and ends on it item for item, so the following video's opening is unchanged. Nothing else changed. The spoken question "Can you test this prediction with real cubes?" is kept; ws-v02 answers it ("Next, you'll test that with agar") and ends on this frame.

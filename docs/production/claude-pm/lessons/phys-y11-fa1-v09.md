@@ -136,7 +136,7 @@ Visual: the card shrinks to the top with its full wording; the car and road pict
 ### 15. summary and handoff
 > So while the acceleration is constant, three equations link s, u, v, a and t. Know three of them, and you can predict the rest. Next, these equations become a measuring tool. In free fall, with air resistance negligible, the acceleration is a constant g. **How** can two different graphs measure it, and how can we tell if the result is any good?
 
-Visual: board clears to the three boxed equations with their "no s", "no v", "no t" tags, and the small v-t graph from scene 3 beside them with its slope and area pieces lit for one beat each. On "How" the steel ball plate `phys-y11-steel-ball-v1.png` (delivered; the Revision 1 name `y11p-steel-ball-v1.png` is read as this file, root decision 4; no coded stand-in) falls beside a vertical scale, and two small grey graph outlines appear ("s against t²", "v against t"), unlabelled values; chip "Next: How can two graphs measure g?" Hold about 2 seconds.
+Visual: board clears to the three boxed equations with their "no s", "no v", "no t" tags, and the small v-t graph from scene 3 beside them with its slope and area pieces lit for one beat each. On "How" the steel ball plate `phys-y11-steel-ball-v1.png` (delivered; the Revision 1 name `y11p-steel-ball-v1.png` is read as this file, root decision 4; no coded stand-in) falls beside a vertical scale, and two small grey graph outlines appear ("s against t²", "v against t"), unlabelled values; chip "Next: How can two graphical methods measure gravitational acceleration reliably?" Hold about 2 seconds.
 
 ### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -327,7 +327,7 @@ Simulation: field motion (`field-motion.ts`, `uniform`, one dimension), three ru
 
 New plate requests: none. The trolley requested in Revision 1 was delivered as `phys-y11-dynamics-trolley-v1.png`; the track `phys-y11-dynamics-track-v1.png` is reused under it.
 
-Joins: the opening (v08's final frame) is unchanged. The final frame (end of scene 15: the three boxed equations, the steel ball beside a vertical scale, two graph outlines, the chip "Next: How can two graphs measure g?") is unchanged, so v10's opening holds.
+Joins: the opening (v08's final frame) is unchanged. The final frame (end of scene 15: the three boxed equations, the steel ball beside a vertical scale, two graph outlines, the chip "Next: How can two graphical methods measure gravitational acceleration reliably?") is unchanged, so v10's opening holds.
 
 Counts: 6,288 to 6,288 characters; about 567 s to about 552 s (the notes hold drops from 60 s to 45 s).
 

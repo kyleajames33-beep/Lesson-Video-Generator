@@ -120,9 +120,9 @@ Visual: board change: the card arrives with its full text and its graph in one m
 Visual: the card shrinks to the top left, keeping its graph (about 360 px tall) and a givens strip (38 px): "optimum temperature and pH · permanently denatured above 50 °C · heated to 80 °C, then cooled"; at the right six small enzyme sprites (`y11-induced-fit-closed-v1.png`, each about 200 px tall) with the readout "busy: 6 of 6" (52 px) from the first frame. On "stay at the optimum" the given "optimum temperature and pH" takes an amber underline; line (38 px) "(a) optimum conditions: shape kept". On "almost every active site is busy" the plateau is underlined and the answer "(a) saturated, not denatured" sits in a dark-ink frame (52 px). On "After heating to eighty degrees" the givens "permanently denatured above 50 °C" and "80 °C" are underlined and the six sprites swap to `y11-enzyme-denatured-v1.png` (readout "busy: 0 of 6"); line "(b) permanently denatured (given); cooling doesn't restore it". On "near zero" a terracotta line draws along the bottom of the graph (label "after 80 °C", 30 px) and the answer "(b) rate near zero at every concentration" sits in a dark-ink frame (44 px). On "classic mistake" a chip "the same curve: it recovered on cooling" writes and is crossed with a slate scribble, slate hand tag "denatured for good" (34 px). Settle one second.
 
 ### 12. decision rule and handoff
-> So, a rise means more collisions, and a fall means weaker binding, often because the shape is lost. A plateau means saturation, not damage. But in a real experiment, how do we know it was the temperature that changed the rate, and not something else? Next: designing a fair test, with catalase and hydrogen peroxide.
+> So, a rise means more collisions, and a fall means weaker binding, often because the shape is lost. A plateau means saturation, not damage. But in a real experiment, how do we know it was the temperature that changed the rate, and not something else? Next: how does a question become a hypothesis you can test?
 
-Visual: the three thumbnails sit along the top with their captions; two step chips write on, one per cue: "rise and fall: collisions, then weaker binding or lost shape" and "plateau: saturation, not damage". On "in a real experiment" the board below clears and `y11-catalase-apparatus-v1.png` appears at the centre (the rack of three tubes with no, some and heavy froth, the thermometer and the pH probe in a beaker); on "and not something else" a terracotta "?" chip writes beside it: "how do we know the factor caused it?". A "Next" chip slides in at the lower right: "Next: How do we fairly test enzyme activity?" (v21's route title). This is the video's final frame (root decision 16): the three captioned thumbnails and two step chips at the top, the catalase apparatus plate at the centre with the "?" chip, and the Next chip. Hold half a second before the notes.
+Visual: the three thumbnails sit along the top with their captions; two step chips write on, one per cue: "rise and fall: collisions, then weaker binding or lost shape" and "plateau: saturation, not damage". On "in a real experiment" the board below clears and `y11-catalase-apparatus-v1.png` appears at the centre (the rack of three tubes with no, some and heavy froth, the thermometer and the pH probe in a beaker); on "and not something else" a terracotta "?" chip writes beside it: "how do we know the factor caused it?". A "Next" chip slides in at the lower right: "Next: How does a question become a hypothesis you can test?" (v21's route title). This is the video's final frame (root decision 16): the three captioned thumbnails and two step chips at the top, the catalase apparatus plate at the centre with the "?" chip, and the Next chip. Hold half a second before the notes.
 
 ### 13. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -206,7 +206,7 @@ v19's final frame (`bio-y11-fa1-v19.md`, end of scene 12; root decision 16): pap
 
 ## Final frame
 
-The last explained frame (end of scene 12, before the key-notes board; unchanged in Revision 3): paper background; heading "How do enzyme graphs explain changing activity?"; the three captioned graph thumbnails (temperature, pH, substrate concentration) along the top; the two step chips "rise and fall: collisions, then weaker binding or lost shape" and "plateau: saturation, not damage"; `y11-catalase-apparatus-v1.png` at the centre (the rack of three tubes with no, some and heavy froth, the thermometer and the pH probe in a beaker); beside it the terracotta "?" chip "how do we know the factor caused it?"; the chip "Next: How do we fairly test enzyme activity?" at the lower right. v21 opens on this frame.
+The last explained frame (end of scene 12, before the key-notes board; unchanged in Revision 3): paper background; heading "How do enzyme graphs explain changing activity?"; the three captioned graph thumbnails (temperature, pH, substrate concentration) along the top; the two step chips "rise and fall: collisions, then weaker binding or lost shape" and "plateau: saturation, not damage"; `y11-catalase-apparatus-v1.png` at the centre (the rack of three tubes with no, some and heavy froth, the thermometer and the pH probe in a beaker); beside it the terracotta "?" chip "how do we know the factor caused it?"; the chip "Next: How does a question become a hypothesis you can test?" at the lower right. v21 opens on this frame.
 
 ## Assets
 
@@ -270,7 +270,7 @@ Year 11 Biology (2025 syllabus), Focus Area 1
 B25-FA1-G3-07: Analyse graphs to explain the effect of temperature, pH and substrate concentration on enzyme activity
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa0edb304c
 
-Previous: How do enzyme models explain substrate specificity? Next: How do we fairly test enzyme activity?
+Previous: How do enzyme models explain substrate specificity? Next: How does an observation become a hypothesis an experiment can test, and why should new evidence change it?
 
 #Year11Biology #Enzymes #HSCScience"
 
@@ -340,3 +340,7 @@ Calls for root:
 4. The particle box cannot show denaturation or saturation, so it is used for the rise only and leaves at scene 4; the car park row stays coded.
 5. In scene 9 the twelve sprites drop to about 200 px tall so that twelve fit; they are counters at that point, and the six at 300 px carry the idea first.
 6. The egg-white pair moves from optional inset to a 300 px picture. If root cuts it, use reserve cut 1.
+
+## Revision note (23 Nov 2026, root ruling C5: Next text only)
+
+The Working scientifically video bio-y11-ws-v01 now follows this one (placement approved by root), so the Next text names its on-screen heading, "How does a question become a hypothesis you can test?". Edited lines (numbers after the edit): 123, 125, 209, 273. bio-y11-ws-v01 opens on this video's final frame and ends on it item for item, so the following video's opening is unchanged. Nothing else changed. The spoken line was "Next: designing a fair test, with catalase and hydrogen peroxide."; the scene's question ("how do we know it was the temperature ...?") is kept and opens ws-v01.

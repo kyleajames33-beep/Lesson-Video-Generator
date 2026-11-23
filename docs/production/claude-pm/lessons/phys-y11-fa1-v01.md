@@ -149,7 +149,7 @@ Visual: card shrinks to the top; a givens strip stays under it (38 px): "2.0 km 
 ### 16. handoff
 > So whenever direction matters, you're dealing with a vector. And that changes how vectors combine. Four metres and three metres made five, not seven. Next time, we'll draw vectors tip to tail and see exactly how they **add**.
 
-Visual: board clears. The two columns from scene 10 return small at the top. On the third sentence the scene 3 arrows return alone: an amber-outlined 4 m east arrow and 3 m north arrow, then the navy 5 m arrow, with "4 + 3 → 5, not 7" written beside. On "add" the three arrows lift apart into two loose arrows (4 m and 3 m) floating unjoined, with a "?" between them and a chip "Next: vector diagrams, adding and subtracting". Hold about 2 seconds.
+Visual: board clears. The two columns from scene 10 return small at the top. On the third sentence the scene 3 arrows return alone: an amber-outlined 4 m east arrow and 3 m north arrow, then the navy 5 m arrow, with "4 + 3 → 5, not 7" written beside. On "add" the three arrows lift apart into two loose arrows (4 m and 3 m) floating unjoined, with a "?" between them and a chip "Next: Why do vectors join tip to tail, and how does a diagram show a resultant or a difference?". Hold about 2 seconds.
 
 ### 17. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".

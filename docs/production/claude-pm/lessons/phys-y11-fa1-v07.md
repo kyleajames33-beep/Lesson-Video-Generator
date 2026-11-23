@@ -130,7 +130,7 @@ Visual: card shrinks to the top with its table, which stays as the givens strip;
 ### 13. handoff
 > These graphs hold more than shapes. Here's a car whose velocity rises in a straight line, from four to twenty metres per second, over eight seconds. What's its acceleration, and how far does it travel, read straight from the **graph**?
 
-Visual: the memory line returns small at the top. Board clears to one velocity-time graph (site lesson 8 `we-1`): axes "velocity v (m s⁻¹)" 0 to 24, "time t (s)" 0 to 10; a teal straight line from (0, 4) to (8, 20) with its end points dotted. On "graph" chips "acceleration?" and "how far?" and a small "Next: slopes and areas" chip. No triangle, no shading. Hold about 2 seconds. This is the final frame (see "Final frame"; unchanged in Revision 3).
+Visual: the memory line returns small at the top. Board clears to one velocity-time graph (site lesson 8 `we-1`): axes "velocity v (m s⁻¹)" 0 to 24, "time t (s)" 0 to 10; a teal straight line from (0, 4) to (8, 20) with its end points dotted. On "graph" chips "acceleration?" and "how far?" and a small "Next: How do slopes and signed areas connect motion graphs?" chip. No triangle, no shading. Hold about 2 seconds. This is the final frame (see "Final frame"; unchanged in Revision 3).
 
 ### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -197,11 +197,11 @@ Revision 3 count (11 Nov; counted by script with the build parser rules: `### N.
 
 ## Opening frame
 
-v06's final frame (`phys-y11-fa1-v06.md`, unchanged in its Revision 3): the memory line "Find the change first, then divide by the time." small at the top; a small data table "t (s): 0, 2, 4, 6" and "v (m s⁻¹): 0, 4, 8, 12"; beside it empty labelled axes "velocity (m s⁻¹)" against "time (s)" with no point plotted; a chip "what shape?" and a small chip "Next: motion graphs". Scene 1 holds it under the bridge sentence, then changes the board to the road stage with the painted car on "Let's watch that car" (about 5 s in); the table is kept as the data strip.
+v06's final frame (`phys-y11-fa1-v06.md`, unchanged in its Revision 3): the memory line "Find the change first, then divide by the time." small at the top; a small data table "t (s): 0, 2, 4, 6" and "v (m s⁻¹): 0, 4, 8, 12"; beside it empty labelled axes "velocity (m s⁻¹)" against "time (s)" with no point plotted; a chip "what shape?" and a small chip "Next: How can motion data become linked displacement, velocity and acceleration graphs?". Scene 1 holds it under the bridge sentence, then changes the board to the road stage with the painted car on "Let's watch that car" (about 5 s in); the table is kept as the data strip.
 
 ## Final frame
 
-The last explained frame (end of scene 13, before the key-notes board), unchanged in Revision 3: the memory line "Flat means that quantity isn't changing." small at the top; one velocity-time graph with axes "velocity v (m s⁻¹)" 0 to 24 and "time t (s)" 0 to 10; a teal straight line from (0, 4) to (8, 20) with its end points dotted; chips "acceleration?" and "how far?" and a small chip "Next: slopes and areas". No triangle, no shading. v08 opens on this frame.
+The last explained frame (end of scene 13, before the key-notes board), unchanged in Revision 3: the memory line "Flat means that quantity isn't changing." small at the top; one velocity-time graph with axes "velocity v (m s⁻¹)" 0 to 24 and "time t (s)" 0 to 10; a teal straight line from (0, 4) to (8, 20) with its end points dotted; chips "acceleration?" and "how far?" and a small chip "Next: How do slopes and signed areas connect motion graphs?". No triangle, no shading. v08 opens on this frame.
 
 ## Scene list and build ids
 

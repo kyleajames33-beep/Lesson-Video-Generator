@@ -130,7 +130,7 @@ Visual: card shrinks to the top; "3.0 m s⁻¹ east", "4.0 m s⁻¹ north", "0.2
 ### 13. handoff
 > So far, every average came from just a start and a finish. Next, we'll record a car's velocity every two seconds, and turn those numbers into graphs. What shape will they **make**?
 
-Visual: the memory line returns small at the top. A small data table writes: "t (s): 0, 2, 4, 6"; "v (m s⁻¹): 0, 4, 8, 12" (site lesson 7 `we-1`), beside empty labelled axes "velocity (m s⁻¹)" against "time (s)". On "make" a chip "what shape?" and a small "Next: motion graphs" chip. No point is plotted. Hold about 2 seconds. This is the final frame (see "Final frame"; unchanged in Revision 3).
+Visual: the memory line returns small at the top. A small data table writes: "t (s): 0, 2, 4, 6"; "v (m s⁻¹): 0, 4, 8, 12" (site lesson 7 `we-1`), beside empty labelled axes "velocity (m s⁻¹)" against "time (s)". On "make" a chip "what shape?" and a small "Next: How can motion data become linked displacement, velocity and acceleration graphs?" chip. No point is plotted. Hold about 2 seconds. This is the final frame (see "Final frame"; unchanged in Revision 3).
 
 ### 14. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -199,11 +199,11 @@ Revision 3 count (11 Nov; counted by script with the build parser rules: `### N.
 
 ## Opening frame
 
-v05's final frame (`phys-y11-fa1-v05.md`, Revision 3, same wave): the memory line "Speed follows the road. Velocity follows the arrow." small at the top; a coded plan grid with a compass "N, E"; an amber path 120 m east then 160 m north, labelled "120 m" and "160 m"; the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) hovering at the finish; a grey clock chip "40 s"; a dashed navy arrow from start to finish with the chip "average velocity?"; a small chip "Next: velocity in two dimensions". Scene 1 fades the memory line and the "Next" chip and sends the drone round the route again.
+v05's final frame (`phys-y11-fa1-v05.md`, Revision 3, same wave): the memory line "Speed follows the road. Velocity follows the arrow." small at the top; a coded plan grid with a compass "N, E"; an amber path 120 m east then 160 m north, labelled "120 m" and "160 m"; the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) hovering at the finish; a grey clock chip "40 s"; a dashed navy arrow from start to finish with the chip "average velocity?"; a small chip "Next: How do I find average velocity in two dimensions?". Scene 1 fades the memory line and the "Next" chip and sends the drone round the route again.
 
 ## Final frame
 
-The last explained frame (end of scene 13, before the key-notes board), unchanged in Revision 3: the memory line "Find the change first, then divide by the time." small at the top; a small data table "t (s): 0, 2, 4, 6" and "v (m s⁻¹): 0, 4, 8, 12"; beside it empty labelled axes "velocity (m s⁻¹)" against "time (s)" with no point plotted; a chip "what shape?" and a small chip "Next: motion graphs". v07 opens on this frame.
+The last explained frame (end of scene 13, before the key-notes board), unchanged in Revision 3: the memory line "Find the change first, then divide by the time." small at the top; a small data table "t (s): 0, 2, 4, 6" and "v (m s⁻¹): 0, 4, 8, 12"; beside it empty labelled axes "velocity (m s⁻¹)" against "time (s)" with no point plotted; a chip "what shape?" and a small chip "Next: How can motion data become linked displacement, velocity and acceleration graphs?". v07 opens on this frame.
 
 ## Scene list and build ids
 

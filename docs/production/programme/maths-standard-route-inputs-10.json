@@ -1,0 +1,167 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-23",
+ "brief": "Maths Standard Year 11 missing strands (root request, 23 November 2026, after the coherence audit findings B1 and B2)",
+ "purpose": "Route inputs written by Claude (designer of record) for the Year 11 Managing money strand, in the shape of route inputs 8 and 9 but compact: syllabus text is copied from the crosswalk's plain text (sourceHtml is not repeated; see the crosswalk). Not teaching approval.",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course for Standard 1 and Standard 2)",
+ "identifierPolicy": "Exact CMS codenames from docs/production/programme/syllabus/maths-standard-2024-crosswalk.json. Year 11 is one course, so standard1ActionIds and standard2ActionIds are empty.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 11 Managing money page (focus area fa8d2fb431), as recorded in the crosswalk (read 18 November 2026)",
+  "focusAreaUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa8d2fb431",
+  "outcomes": ["MST-11-04"],
+  "year11ManagingMoneyPoints": 13,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "clone": "C:/Users/kygs/teaching-app-fix (read only; HEAD 5d74a627, the crosswalk's commit; nothing run or changed)",
+  "lessons": "year11/managing-money/lesson01 (GST, budget, household bills; site L9), lesson02 (tax exam practice; site L10; not a Managing money source), lesson03 (percentage change, profit and loss; L11), lesson04 (terms and BNPL; L12), lesson05 (buying and running a vehicle; L13), lesson06 (budget spreadsheet, emergency fund, monitoring; L14)",
+  "note": "Every site value used in the packs was recalculated (scratchpad s11m/verify.py; no arithmetic error found). Departures and site issues are logged as MSY-01 onward in docs/production/claude-pm/site-corrections-maths-standard-y11-additions.md."
+ },
+ "recommendations": [
+  "Run m01 to m09 in outline order, playlist numbers 28 to 36, straight after e12 (27). One course for Standard 1 and Standard 2.",
+  "Joins: m01 opens on e12's final frame exactly (the swing tag with a coded +3%, grey chip 'Earning money: done', chips 'Next: prices go up too' and '?'); the e12 to m01 join is confirmed (ruling 87's provisional mark can be lifted). Each later video opens on the previous video's final frame. m09 hands to math-s11-a01 (provisional until a01 is designed).",
+  "Order fix inside the strand (audit N4): m01 opens as a callback to e03 and e10 percentages and does not reteach 'a percentage of an amount'.",
+  "Reverse percentages (÷ the multiplier) are taught once, in m02, where GST needs them (÷ 1.1); m01 stays forward only. This keeps m01 to one idea family (multipliers, percentage change, profit and loss).",
+  "Money figures (rulings 5 and 32): NSW motor vehicle stamp duty 2026-27 ($3 per $100 or part to $45,000; $1,350 plus $5 per $100 or part above; Revenue NSW, Codex confirms); petrol about $2.25 a litre (ruling 47, NRMA 9 Nov 2026); electricity about 33c/kWh (ruling 47, AER default market offer 2026-27); every other fee, premium, tariff and price is labelled 'example' on screen and Codex finds a dated NSW source near it or reports it. BNPL rules: ASIC Information Sheet 285 (regulated as credit from 10 June 2025), Moneysmart BNPL page (as cited in math-s12-i12). VAT and overseas GST rates (UK 20%, New Zealand 15%): Codex confirms against the governments' pages. Each video says once that prices, fees and rates change.",
+  "Strand colour roles (fixed m01 to m06): starting amount, cash price or price before tax blue; percentage, multiplier or rate amber; amount after the change, total or price including tax teal; extra cost (fees, GST component, loss, the cost of a plan above cash) violet; answer green; mistake red. Budget colour roles (m07 to m09): income teal; fixed costs blue; variable essentials olive; discretionary violet; surplus green; deficit red outline (never a crossed slip).",
+  "Recurring models introduced once: the multiplier (m01), the parts bar 100 + r (m02), the payment timeline (m03, kit PeriodTimeline), the 'every dollar that leaves your hand' total column (m04), the per-$100 block counter (m05), the inputs-in-cells model sheet (m06, reused m08), the bill = supply charge + usage strip (m07), the times-per-year column (m08), the fund gauge (m09).",
+  "Memory aids introduced once: m01 'Up r%: × (1 + r%). Down r%: × (1 − r%). Divide by where you started.'; m02 'GST is 1 part in 11.'; m03 'Free only while every payment is on time.'; m04 'Add every dollar, then compare totals.'; m05 'Drive-away = price + duty + rego + green slip + transfer.'; m06 'Inputs in cells; cost per km = yearly cost ÷ km.'; m07 'Bill = days × supply + units × rate.'; m08 'One period, then subtract: amount × times a year ÷ 52.'; m09 'Budget, save first, keep a fund, check monthly.'",
+  "Everyday anchors (no people, hands or faces): sneakers with a swing tag and a phone plan (m01); a supermarket basket and an overseas hoodie (m02); headphones and a t-shirt (m03); a television and a broken fridge (m04); e02's red hatchback at the car yard ($14,990) through m05 and m06; the house meters (m07); a first-job weekly budget on a phone (m08); the car on the hoist with a $2,000 repair (m09; Year 12 i18 reuses the hoist with $6,000).",
+  "Pace flags: m01, m05 and m07 are full (about 9 minutes); m02 and m03 lighter. No split proposed.",
+  "Header strip (owner rule of 23 Nov: no course labels or module numbers on screen): the m-strand designs show the focus area only, 'MANAGING MONEY'. Existing f, l and e designs show 'MATHEMATICS STANDARD · ...'; root rules whether to align them (open question in the status file)."
+ ],
+ "year12DependsOn": [
+  {"y12": "math-s12-a04a", "recalls": "m01 profit and loss", "chipOrPhrase": "profit = revenue − cost (a04a writes P = R − C)", "setUpIn": "m01 scene 6: profit = selling price − cost price, a loss when negative; the words 'revenue' and 'cost' named once as what a business calls them"},
+  {"y12": "math-s12-a05, a06", "recalls": "m01 percentage increase and decrease", "chipOrPhrase": "percentage change; rent up 4% a year", "setUpIn": "m01 multiplier: up 4% is × 1.04"},
+  {"y12": "math-s12-i01", "recalls": "m01", "chipOrPhrase": "a percentage of an amount; 6% = 0.06", "setUpIn": "m01 scene 2 recalls e10's 2% = 0.02 and states % ÷ 100 = decimal in a grey chip"},
+  {"y12": "math-s12-i02a", "recalls": "m01", "chipOrPhrase": "grey chip 'Year 11: a 5% increase is × 1.05'", "setUpIn": "m01 key note 1 and memory aid: 'Up r%: × (1 + r%)'; 5% shown as × 1.05 in attempt-free practice row"},
+  {"y12": "math-s12-i06a, i06b", "recalls": "m01", "chipOrPhrase": "% change = (last − first) ÷ first × 100%", "setUpIn": "m01 scene 5: percentage change = change ÷ starting amount × 100%"},
+  {"y12": "math-s12-i07", "recalls": "m01, m02, m05", "chipOrPhrase": "0.12% = 0.0012; fees; buying costs", "setUpIn": "m01 (small percentages as decimals), m02 (GST on fees), m05 (costs on top of the price)"},
+  {"y12": "math-s12-p01, p06", "recalls": "m01", "chipOrPhrase": "grey chip 'Year 11: % to decimal'", "setUpIn": "m01 scene 2 chip '% ÷ 100'"},
+  {"y12": "math-s12-i12", "recalls": "m03, m04", "chipOrPhrase": "grey chip 'Year 11: buy now, pay later'; 'the Year 11 rule' (total = price + account fees + late fees); compare totals", "setUpIn": "m03 teaches total = price + account fees + late fees and 'free only while every payment is on time'; m04 teaches 'add every dollar, then compare totals'. m03 uses headphones and a t-shirt, never i12's e-bike or a loan comparison (audit N5)."},
+  {"y12": "math-s12-i16", "recalls": "m03", "chipOrPhrase": "fees on buy now, pay later", "setUpIn": "m03 account fee and late fee"},
+  {"y12": "math-s12-i18", "recalls": "m09", "chipOrPhrase": "chip 'save first, or an emergency fund (Year 11)'; plain meaning 'savings kept for surprises'", "setUpIn": "m09 teaches the emergency fund (3 to 6 months of living expenses) and 'save first' on the same car-hoist plate i18 uses"},
+  {"y12": "math-s12-r06a, i08 (prices)", "recalls": "labelled example prices", "chipOrPhrase": "'example price: check a current quote'", "setUpIn": "m04 to m07 label every invented price the same way"}
+ ],
+ "part": 10,
+ "covers": "math-s11-m01 to math-s11-m09 (Year 11 Managing money)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 11,
+   "entries": [
+    {
+     "id": "math-s11-m01", "playlistOrder": 28, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do percentage increases and decreases set prices, profit and loss?",
+     "syllabusActionIds": ["cib256693a"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "cib256693a", "group": "Purchasing goods", "text": "Apply percentage increase and decrease to determine the cost of goods, and profit and loss", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/managing-money/lesson03.sa.html"],
+     "startBoundary": "math-s11-e12 final frame: swing tag with coded +3%, grey chip 'Earning money: done', chips 'Next: prices go up too', '?'",
+     "stopBoundary": "Multipliers for increase and decrease; two changes in a row multiply; percentage change from the starting amount; cost price, selling price, profit or loss and percentage profit or loss on the cost price. Not: reverse percentages (m02), GST (m02), compound growth (Year 12).",
+     "nextHandoff": "math-s11-m02 (the supermarket basket and its receipt: 'includes GST ?')",
+     "anchors": "sneakers (ma11-sneakers-v1.png) with the e12 swing tag; a phone plan going from $40 to $46"
+    },
+    {
+     "id": "math-s11-m02", "playlistOrder": 29, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we add or remove GST, and how does VAT work overseas?",
+     "syllabusActionIds": ["cib3251328", "cib09c3969"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "cib3251328", "group": "Purchasing goods", "text": "Calculate the goods and service tax (GST) or value-added tax (VAT) when purchasing goods and services in Australia and internationally", "siteCoverage": "partial", "siteGap": "GST is taught in both directions (managing-money/lesson01). VAT and international purchases are not taught."},
+      {"id": "cib09c3969", "group": "Purchasing goods", "text": "Solve problems involving GST or VAT", "siteCoverage": "partial", "siteGap": "GST problems are taught; VAT problems are not."}
+     ],
+     "siteSources": ["year11/managing-money/lesson01.sa.html"],
+     "startBoundary": "math-s11-m01 final frame: grocery basket with a coded receipt (five items, total $20.30, 'includes GST ?')",
+     "stopBoundary": "GST 10% on most goods and services, GST-free basics; adding GST (× 1.1), GST on a pre-GST price (× 0.1), removing GST (÷ 1.1, the reverse of a percentage increase), the GST in a GST-inclusive price (÷ 11, one part in eleven); a receipt with GST-free and taxable items; VAT overseas (UK 20%, New Zealand GST 15%) by the same parts idea. Not: currency conversion (prices stay in the local currency), business input tax credits, the tourist refund scheme.",
+     "nextHandoff": "math-s11-m03 (headphones, $480, 'or 4 payments of $120')",
+     "anchors": "supermarket basket (ms12-grocery-basket-v1.png) and receipt; a tradesperson's quote; a hoodie bought in London (travel suitcase ma12-travel-suitcase-v1.png)"
+    },
+    {
+     "id": "math-s11-m03", "playlistOrder": 30, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "What does buy now, pay later really cost?",
+     "syllabusActionIds": ["cif403be54"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "cif403be54", "group": "Purchasing goods", "text": "Examine payment options involving buy now, pay later and analyse the costs associated with these schemes for purchasing goods", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/managing-money/lesson04.sa.html (cards 2 and 3)"],
+     "startBoundary": "math-s11-m02 final frame: headphones (ma12-headphones-v1.png) with the swing tag '$480', card 'or 4 payments of $120', chips 'Next: buy now, pay later', '?'",
+     "stopBoundary": "How a pay-in-4 plan works (first payment today, then every two weeks); who pays for 'free' (the shop pays the provider); account fees and late fees; total cost and the extra as a percentage of the price; why a flat fee bites a small purchase harder; several plans at once against a fortnight's spare money; since June 2025 a credit licence and checks. Not: buying on terms or comparing methods (m04); loans and interest (Year 12 i12).",
+     "nextHandoff": "math-s11-m04 (the television, $1,600, four ways to pay)",
+     "anchors": "headphones $480; a $60 t-shirt (ma11-tshirt-v1.png)"
+    },
+    {
+     "id": "math-s11-m04", "playlistOrder": 31, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "What does buying on terms cost, and which way of paying suits a purchase?",
+     "syllabusActionIds": ["ci6124d502", "ci039eaed1"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "ci6124d502", "group": "Purchasing goods", "text": "Calculate the cost of buying on terms that involve paying an initial deposit and making regular repayments", "siteCoverage": "covered", "siteGap": null},
+      {"id": "ci039eaed1", "group": "Purchasing goods", "text": "Compare the total cost of using different methods of purchasing goods and justify which method of purchasing is best suited to a given context", "siteCoverage": "covered", "siteGap": null}
+     ],
+     "siteSources": ["year11/managing-money/lesson04.sa.html (cards 1, 4 and 5; WE1, WE3; SAQ 3)"],
+     "startBoundary": "math-s11-m03 final frame: television (ms12-television-v1.png) with a coded tag '$1600' and an options card 'cash · lay-by · buy now, pay later · terms', chips 'Next: buying on terms', '?'",
+     "stopBoundary": "Terms: deposit + repayments × number; extra = total − cash price, as a percentage of the cash price; four methods totalled the same way and ranked; justification by three questions (cash now? every repayment affordable? how urgent?). Not: credit cards and loans with interest rates (Year 12).",
+     "nextHandoff": "math-s11-m05 (e02's red hatchback at the car yard, windscreen card '$14 990', chip 'drive-away price?')",
+     "anchors": "television $1,600; a broken fridge (new plate ms11-fridge-v1.png)"
+    },
+    {
+     "id": "math-s11-m05", "playlistOrder": 32, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "What does it really cost to buy a car and get it on the road?",
+     "syllabusActionIds": ["ci5b329382"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci5b329382", "group": "Purchasing goods", "text": "Calculate the cost of purchasing a vehicle by considering the purchase price or loan repayments, registration, compulsory and non-compulsory third-party insurance, comprehensive insurance and stamp duty at current rates", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/managing-money/lesson05.sa.html (cards 1 and 2; WE1, WE2; SAQ 1)"],
+     "startBoundary": "math-s11-m04 final frame: red hatchback (ma12-used-hatchback-v1.png) with the windscreen card '$14 990', chips 'drive-away price?', 'Next: buying a car', '?'",
+     "stopBoundary": "Stamp duty from the current NSW table ($3 per $100 or part; above $45,000 the excess at $5), registration, CTP green slip (compulsory, injury to people), third-party property (optional), comprehensive (optional, your own car too), the excess; on-road cost; buying with a loan (repayments from the lender's calculator, total paid). Not: yearly running costs (m06); interest calculations (Year 12).",
+     "nextHandoff": "math-s11-m06 (the hatchback with 'drive-away $16 645' and 'every year after?')",
+     "anchors": "the red hatchback; a ute for the threshold (ms12-ute-v1.png)"
+    },
+    {
+     "id": "math-s11-m06", "playlistOrder": 33, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "What does a car cost to run each year, and how does a spreadsheet track it?",
+     "syllabusActionIds": ["ci9d6326d6", "ci61920f78"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "ci9d6326d6", "group": "Budgeting", "text": "Examine the ongoing costs of a vehicle", "siteCoverage": "covered", "siteGap": null},
+      {"id": "ci61920f78", "group": "Budgeting", "text": "Use a spreadsheet to model the costs of purchasing, running and maintaining a vehicle", "siteCoverage": "covered", "siteGap": null}
+     ],
+     "siteSources": ["year11/managing-money/lesson05.sa.html (cards 3 and 4; WE3, WE4; SAQ 2, 3)"],
+     "startBoundary": "math-s11-m05 final frame: the hatchback with 'drive-away $16 645' stamped and chips 'every year after?', 'Next: running costs', '?'",
+     "stopBoundary": "Yearly costs (fuel from L/100 km, registration and green slip renewal, insurance, servicing, tyres), cost per kilometre and per week; a spreadsheet model with inputs in cells and totals as formulas; what-if changes (distance, petrol price); two cars over five years including the purchase. Depreciation named only. Not: depreciation calculations (Year 12).",
+     "nextHandoff": "math-s11-m07 (the electricity meter, chips 'the house costs money too', 'Next: household bills', '?')",
+     "anchors": "the red hatchback; petrol at about $2.25 a litre"
+    },
+    {
+     "id": "math-s11-m07", "playlistOrder": 34, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we read and check electricity, water and gas bills?",
+     "syllabusActionIds": ["ci345de108"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci345de108", "group": "Budgeting", "text": "Calculate household costs including electricity, water and gas usage from household bills", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/managing-money/lesson01.sa.html (card 3; WE3; SAQ 3)"],
+     "startBoundary": "math-s11-m06 final frame: the electricity meter plate (new ms11-electricity-meter-v1.png) with a coded display '19264 kWh', chips 'the house costs money too', 'Next: household bills', '?'",
+     "stopBoundary": "Usage from meter readings; a kilowatt-hour; supply charge per day plus usage × rate; water in kilolitres; gas in megajoules with two price blocks; checking a bill by its daily average. Not: budgets (m08); unit conversion beyond kL = 1000 L (a01).",
+     "nextHandoff": "math-s11-m08 (the phone with a blank budget screen, the house's bills card '$761.21 a quarter', chips 'Next: a budget', '?')",
+     "anchors": "the electricity meter and a new water meter plate (ms11-water-meter-v1.png); an air conditioner's running cost"
+    },
+    {
+     "id": "math-s11-m08", "playlistOrder": 35, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we build a personal budget, on paper and in a spreadsheet?",
+     "syllabusActionIds": ["ci03b1617b", "cidfff72ec"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "ci03b1617b", "group": "Budgeting", "text": "Prepare a personal budget for a given income, considering fixed and discretionary spending", "siteCoverage": "covered", "siteGap": null},
+      {"id": "cidfff72ec", "group": "Budgeting", "text": "Use a spreadsheet to model personal and household budgets", "siteCoverage": "covered", "siteGap": null}
+     ],
+     "siteSources": ["year11/managing-money/lesson06.sa.html (card 1; WE1)", "year11/managing-money/lesson01.sa.html (card 2; WE2, WE4)"],
+     "startBoundary": "math-s11-m07 final frame: the phone (ma11-phone-budget-v1.png) with a blank screen titled 'My week', the bills card '$761.21 a quarter', chips 'Next: a budget', '?'",
+     "stopBoundary": "Net income; fixed, variable essential and discretionary spending; converting every amount to one period (amount × times a year ÷ 52); surplus or deficit; savings rate; a spreadsheet model with a times-per-year column; a household budget as the same sheet with shared rows split. Not: emergency funds and monitoring (m09).",
+     "nextHandoff": "math-s11-m09 (the budget phone with 'surplus $233 a week' and the car on the hoist with '$2000 repair?')",
+     "anchors": "a first full-time job's weekly budget in a share house; the hatchback's yearly cost from m06; the house bills from m07"
+    },
+    {
+     "id": "math-s11-m09", "playlistOrder": 36, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do saving, an emergency fund and tracking spending protect us from money trouble?",
+     "syllabusActionIds": ["ci3d78450e"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci3d78450e", "group": "Budgeting", "text": "Examine budgeting, saving, establishing an emergency fund with 3 to 6 months of living expenses, and monitoring spending as strategies designed to minimise financial problems", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/managing-money/lesson06.sa.html (cards 2 to 4; WE2 to WE4; SAQ 2, 3)"],
+     "startBoundary": "math-s11-m08 final frame: the budget phone 'surplus $233 a week' and the car on the hoist (ms12-car-hoist-v1.png) with '$2000 repair?', chips 'Next: an emergency fund', '?'",
+     "stopBoundary": "Living expenses (fixed + variable essentials); a fund of 3 to 6 months (13 to 26 weeks) of them; weeks to build, rounded up; saving first on payday; monitoring by variance (actual − budget) and its effect on the time to the target; choosing 3 or 6 months by how steady the income is. Closes the strand. Not: credit cards and loans (Year 12).",
+     "nextHandoff": "math-s11-a01 (provisional: coin jar with '100 c = $1' beside a coded tape strip '10 mm = 1 cm', grey chip 'Managing money: done', chips 'Next: units of measurement', '?')",
+     "anchors": "the car on the hoist with a $2,000 repair; the coin jar"
+    }
+   ]
+  }
+ }
+}

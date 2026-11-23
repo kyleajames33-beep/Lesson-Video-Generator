@@ -1,0 +1,611 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-23",
+ "course": "Biology 11-12 (2025), Year 11, Focus Area 0 Working scientifically",
+ "status": "proposed by the gap-fix design agent (audit S1); root approves placement and merges into the Year 11 Biology route files",
+ "mirrors": [
+  "phys-y11-fa0-v01 to v07 (docs/production/phys-y11-video-route.json)",
+  "chem-y11-ws-v01 to v07 (docs/production/claude-pm/lessons/chem-y11-ws-v0*.md)"
+ ],
+ "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+ "coverage": "All 32 B25-FA0 content points are owned by exactly one video below.",
+ "illustrativeDataRule": "All numbers are illustrative unless a design names a published source; every illustrative table carries an on-screen tag.",
+ "culturalRule": "B25-FA0-G4-05 is taught in general terms with no named communities, nations, people, places or organisations (owner, 18 Nov 2026).",
+ "videos": [
+  {
+   "id": "bio-y11-ws-v01",
+   "playlistOrder": 1,
+   "title": "How does an observation become a hypothesis an experiment can test, and why should new evidence change it?",
+   "mainLearnerQuestion": "How does an observation become a hypothesis an experiment can test, and why should new evidence change it?",
+   "onScreenHeading": "How does a question become a hypothesis you can test?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Questioning and predicting",
+   "syllabusActionIds": [
+    "B25-FA0-G1-01",
+    "B25-FA0-G1-02",
+    "B25-FA0-G1-03"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G1-01",
+     "text": "Use observations and scientific knowledge and understanding to propose questions and hypotheses for scientific investigations involving primary and secondary data",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cib713f31e",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G1-02",
+     "text": "Evaluate questions and hypotheses based on scientific knowledge",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cib511cebf",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G1-03",
+     "text": "Modify questions and hypotheses to reflect new evidence",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci1eeb848f",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v01.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa1-v20",
+    "before": "bio-y11-fa1-v21",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-fa1-v18 to bio-y11-fa1-v20",
+     "idea": "Enzymes speed reactions at an active site; temperature changes collision rate and, above the optimum, the active site's shape; enzyme graphs rise, peak and fall."
+    },
+    {
+     "source": "bio-y11-fa1-v17",
+     "idea": "Photosynthesis needs light and carbon dioxide (attempt context only)."
+    },
+    {
+     "source": "Stage 5 science (assumed)",
+     "idea": "Fair tests, a prediction, a table of results."
+    }
+   ],
+   "biologyContext": "Potato catalase foaming in hydrogen peroxide at different temperatures (the apparatus already on fa1-v20's final frame); attempts on pondweed in light.",
+   "openingFrame": "Open on bio-y11-fa1-v20's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Observation to scientific question; hypothesis in the if, then, because form with a biological reason; primary and secondary data as two ways to answer; four checks for questions and hypotheses (testable, specific, reasoned, could be shown wrong); new evidence (falling rate above the optimum) modifies the question and hypothesis. Not taught: planning the test (fa1-v21), controls, repeats, risk.",
+   "nextHandoff": "bio-y11-fa1-v21: How do we fairly test enzyme activity?",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v01.md"
+  },
+  {
+   "id": "bio-y11-ws-v02",
+   "playlistOrder": 2,
+   "title": "Why must a biology plan justify its variables and controls, its sources, its risks and its ethics before any data are collected?",
+   "mainLearnerQuestion": "Why must a biology plan justify its variables and controls, its sources, its risks and its ethics before any data are collected?",
+   "onScreenHeading": "What makes a biology plan valid, reliable and ethical?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Planning scientific investigations",
+   "syllabusActionIds": [
+    "B25-FA0-G2-01",
+    "B25-FA0-G2-02",
+    "B25-FA0-G2-03",
+    "B25-FA0-G2-04",
+    "B25-FA0-G2-05",
+    "B25-FA0-G2-06"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G2-01",
+     "text": "Justify the use of independent, dependent and controlled variables, and experimental controls in a valid scientific investigation",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci0dabf0dc",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G2-02",
+     "text": "Explain how reliable primary data is obtained",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci7440a197",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G2-03",
+     "text": "Assess the reliability of secondary data and information when planning",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci01323e5a",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G2-04",
+     "text": "Assess potential hazards and their associated risks to develop a risk assessment",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci41393fa5",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G2-05",
+     "text": "Select appropriate materials and technologies to design a scientific investigation",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci49f2e566",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G2-06",
+     "text": "Discuss ethical issues in the development and use of scientific knowledge",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci622d068d",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v02.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa2-v02",
+    "before": "bio-y11-fa2-v03",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-fa1-v21",
+     "idea": "Change / Measure / Keep the same; independent, dependent and controlled variables; the boiled-disc control; three trials and a mean; validity, reliability; a three-row risk assessment."
+    },
+    {
+     "source": "bio-y11-fa2-v02",
+     "idea": "Surface-area-to-volume ratio and the rate of exchange."
+    }
+   ],
+   "biologyContext": "Planning a potato-cylinder osmosis investigation (salt solutions; content from fa1-v09 to v11), so the agar plan stays fa2-v03's; secondary-source reliability with two claims about osmosis; ethics with a classmates' heart-rate plan and the 3Rs for animal work.",
+   "openingFrame": "Open on bio-y11-fa2-v02's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Justify, not just name: why each controlled variable would itself change the result, and what an experimental control rules out (distinct from a controlled variable); repeats and suitable equipment for reliable primary data; assessing secondary sources (who, how, when, why, agreement); hazard, likelihood, consequence and control; choosing materials and technologies for the measurement; ethical issues in developing and using knowledge (animals: replace, reduce, refine; people: consent, privacy, fair use of results). Not re-taught: variable names and the Change / Measure / Keep the same frame (fa1-v21). The agar plan itself is fa2-v03's.",
+   "nextHandoff": "bio-y11-fa2-v03: the SA:V agar-cube experiment (fa2-v02's existing Next chip)",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v02.md"
+  },
+  {
+   "id": "bio-y11-ws-v03",
+   "playlistOrder": 3,
+   "title": "How do you carry out a biology investigation safely and systematically, so every reading and source you record can be used?",
+   "mainLearnerQuestion": "How do you carry out a biology investigation safely and systematically, so every reading and source you record can be used?",
+   "onScreenHeading": "How do you collect biology data safely and systematically?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Conducting scientific investigations",
+   "syllabusActionIds": [
+    "B25-FA0-G3-01",
+    "B25-FA0-G3-02",
+    "B25-FA0-G3-03",
+    "B25-FA0-G3-04"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G3-01",
+     "text": "Apply safe work practices and manage risks while conducting a scientific investigation",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci4498a8a9",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G3-02",
+     "text": "Construct and manipulate identified materials and technologies to perform scientific investigations",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci27494a7b",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G3-03",
+     "text": "Use equipment appropriately and systematically to collect and record data, information, evidence and findings",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci683ef298",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G3-04",
+     "text": "Gather data and information from a range of secondary sources",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci0d9b3def",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v03.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa2-v06",
+    "before": "bio-y11-fa2-v07",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-ws-v02",
+     "idea": "A justified plan and risk assessment."
+    },
+    {
+     "source": "bio-y11-fa2-v06",
+     "idea": "Conditions for photosynthesis (light, carbon dioxide, temperature)."
+    }
+   ],
+   "biologyContext": "Carrying out ws-v02's potato-cylinder osmosis plan: tare the balance, blot the same way every time, record raw masses in a table drawn before starting, keep the odd reading and note why; managing the scalpel and spills while working; gathering secondary data on the same question from more than one source and recording each source. Leaves the pondweed conduct to fa2-v07.",
+   "openingFrame": "Open on bio-y11-fa2-v06's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Managing risks while working (not only on paper); assembling and checking apparatus before data (zeroing, calibration, trial run); systematic recording: a raw-data table drawn first, units in headings, consistent decimal places, every reading including odd ones with a note, observations; gathering secondary data from a range of sources and recording where each came from. Not taught: processing (ws-v04), analysis statistics (ws-v05).",
+   "nextHandoff": "bio-y11-fa2-v07: the pondweed photosynthesis investigation (fa2-v06's existing Next chip)",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v03.md"
+  },
+  {
+   "id": "bio-y11-ws-v04",
+   "playlistOrder": 4,
+   "title": "Why must raw readings be converted, organised into the right representation and sourced before they count as evidence?",
+   "mainLearnerQuestion": "Why must raw readings be converted, organised into the right representation and sourced before they count as evidence?",
+   "onScreenHeading": "How do raw readings become data you can use and cite?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Processing data and information",
+   "syllabusActionIds": [
+    "B25-FA0-G4-01",
+    "B25-FA0-G4-02",
+    "B25-FA0-G4-03",
+    "B25-FA0-G4-04",
+    "B25-FA0-G4-05"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G4-01",
+     "text": "Select qualitative and quantitative information from texts, diagrams, flow charts, tables, databases, graphs and multimedia resources",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci9a1a7490",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G4-02",
+     "text": "Apply quantitative processes to data, including unit conversions",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci93c1a972",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G4-03",
+     "text": "Select and use a range of representations to organise data and information, including graphs, keys, models, diagrams, tables and spreadsheets",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cia31f6a1a",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G4-04",
+     "text": "Extract data and information from a wide range of sources and acknowledge these sources using an accepted referencing style",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci3f89bf95",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G4-05",
+     "text": "Describe the Cultural Knowledges and observations of Aboriginal and Torres Strait Islander Peoples and examine how these contribute to the development of scientific knowledge",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cibda520da",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v04.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa2-v14",
+    "before": "bio-y11-fa2-v15",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-fa2-v14",
+     "idea": "Potometer: bubble distance ÷ time gives the rate of water uptake (mm/min)."
+    },
+    {
+     "source": "bio-y11-fa1-v06",
+     "idea": "Converting mm to µm."
+    },
+    {
+     "source": "bio-y11-fa3-v05 and bio-y11-fa3-v16",
+     "idea": "Not yet watched at this point; G4-05 is handled with a general forward-looking example and recalled again in ws-v07."
+    }
+   ],
+   "biologyContext": "Potometer readings converted from mm/min to µL/min with the tube's bore (πr² × distance); choosing a table, line graph or bar chart; a dichotomous key as a representation; referencing a source in one accepted style; how observations by Aboriginal and Torres Strait Islander Peoples contribute to scientific knowledge, with a general example (knowledge holders' observations of where and when animals occur helping surveys find threatened species), no names (owner rule). Seasonal indicators and megafauna evidence are left to fa3-v16 and fa3-v05.",
+   "openingFrame": "Open on bio-y11-fa2-v14's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Selecting the information a question needs from a table, graph or text; unit conversions with working (mm to µL, mm to µm, per minute to per hour); choosing a representation by data type (continuous: line graph; categories: bar chart; identification: a key); acknowledging every source in one accepted style (author, year, title, publisher or URL, date accessed); Cultural Knowledges described in general terms with their contribution (long-term observation, seasonal records) and the attribution principle. No named communities (owner rule, 18 Nov 2026).",
+   "nextHandoff": "bio-y11-fa2-v15: what the leaf, stem and root look like inside (fa2-v14's existing Next chip)",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v04.md"
+  },
+  {
+   "id": "bio-y11-ws-v05",
+   "playlistOrder": 5,
+   "title": "How do repeated biology measurements become a result you can trust, and how sure can you be about it?",
+   "mainLearnerQuestion": "How do repeated biology measurements become a result you can trust, and how sure can you be about it?",
+   "onScreenHeading": "How sure can you be about a result?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Analysing data and information",
+   "syllabusActionIds": [
+    "B25-FA0-G5-01",
+    "B25-FA0-G5-02",
+    "B25-FA0-G5-03",
+    "B25-FA0-G5-04",
+    "B25-FA0-G5-05",
+    "B25-FA0-G5-06"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G5-01",
+     "text": "Describe qualitative and quantitative relationships between variables",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cibecb8864",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G5-02",
+     "text": "Explain patterns and trends, including inconsistencies in data and information",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cic43d05dc",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G5-03",
+     "text": "Assess error, uncertainty and limitations in data and include calculations of percentage error, range, mean and standard deviation",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci8ac0910d",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G5-04",
+     "text": "Assess the validity, reliability, accuracy and precision of data and information",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci9b78f802",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G5-05",
+     "text": "Interpret data and information to identify outliers, make predictions, explain results and draw conclusions",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cib0cb7208",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G5-06",
+     "text": "Evaluate data and information to suggest improvements or further investigations",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cif19b6d53",
+     "practical": true,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v05.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa3-v28",
+    "before": "bio-y11-fa3-v29",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-fa3-v28",
+     "idea": "Bead mark-release-recapture model: N = M × C ÷ R; repeats 250, 288, 223; the beads can be counted (260)."
+    },
+    {
+     "source": "bio-y11-fa1-v21",
+     "idea": "Mean of three trials; an anomaly; reliability and validity."
+    },
+    {
+     "source": "bio-y11-fa3-v26 and v27",
+     "idea": "Quadrat counts and their spread."
+    }
+   ],
+   "biologyContext": "The bead model's known true count (260) gives a real percentage error; the three repeats and added class repeats give mean, range and standard deviation; one class value of 520 (a counting slip) is the outlier; accuracy against precision shown with marks that wash off (precise but biased).",
+   "openingFrame": "Open on bio-y11-fa3-v28's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Describing relationships qualitatively and quantitatively; patterns, trends and inconsistencies; percentage error = |experimental − accepted| ÷ accepted × 100; range; mean; standard deviation as the typical distance of readings from the mean (calculator method shown, formula on screen); identifying an outlier and deciding with a stated reason whether to exclude it; validity, reliability, accuracy and precision distinguished on one picture; suggesting improvements and further investigations. Before fa3-v32, which can then recall precision and spread.",
+   "nextHandoff": "bio-y11-fa3-v29: relationships between organisms (fa3-v28's existing Next chip)",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v05.md"
+  },
+  {
+   "id": "bio-y11-ws-v06",
+   "playlistOrder": 6,
+   "title": "How can a biology model solve a real problem, and why is current scientific knowledge both contestable and testable?",
+   "mainLearnerQuestion": "How can a biology model solve a real problem, and why is current scientific knowledge both contestable and testable?",
+   "onScreenHeading": "Why is biology knowledge both contestable and testable?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Problem-solving",
+   "syllabusActionIds": [
+    "B25-FA0-G6-01",
+    "B25-FA0-G6-02",
+    "B25-FA0-G6-03",
+    "B25-FA0-G6-04"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G6-01",
+     "text": "Apply scientific principles to address real-world applications and problems",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cib2b2c95e",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G6-02",
+     "text": "Use modelling and cause-and-effect relationships, including mathematical examples, to make predictions, explain phenomena and solve problems",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cic995a062",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G6-03",
+     "text": "Evaluate and modify a scientific investigation in response to new evidence",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cicaf9f1a2",
+     "practical": true,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G6-04",
+     "text": "Explain why current scientific knowledge is both contestable and testable by further inquiry",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cie4cb44e7",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v06.md"
+   ],
+   "placement": {
+    "after": "bio-y11-fa3-v32",
+    "before": "bio-y11-ws-v07",
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-fa3-v28 and bio-y11-fa3-v31",
+     "idea": "Mark-release-recapture as a model; carrying capacity."
+    },
+    {
+     "source": "bio-y11-fa3-v22",
+     "idea": "Biogeography as evidence for evolution (southern beech on several southern continents)."
+    },
+    {
+     "source": "bio-y11-ws-v05",
+     "idea": "Percentage error, spread, outliers."
+    }
+   ],
+   "biologyContext": "Applying the mark-release-recapture model to a real management problem (a feral predator estimate) and modifying the plan when marks are lost; a contested explanation tested by new methods: southern beech distribution, Gondwana separation against later dispersal, tested by molecular dating.",
+   "openingFrame": "Open on bio-y11-fa3-v32's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "Applying principles to a real-world problem; using a model with cause and effect, including a calculation, to predict; evaluating and modifying an investigation in response to new evidence; current knowledge is contestable (open to challenge with evidence) and testable (makes predictions new evidence could contradict), with one biology case. Not taught: peer review (ws-v07).",
+   "nextHandoff": "bio-y11-ws-v07: How do you build an argument other scientists can check?",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v06.md"
+  },
+  {
+   "id": "bio-y11-ws-v07",
+   "playlistOrder": 7,
+   "title": "How do you turn biology evidence into an argument that other people can check, trust and understand?",
+   "mainLearnerQuestion": "How do you turn biology evidence into an argument that other people can check, trust and understand?",
+   "onScreenHeading": "How do you build an argument other scientists can check?",
+   "kind": "investigation-skills",
+   "syllabusGroup": "Communicating",
+   "syllabusActionIds": [
+    "B25-FA0-G7-01",
+    "B25-FA0-G7-02",
+    "B25-FA0-G7-03",
+    "B25-FA0-G7-04"
+   ],
+   "syllabusActions": [
+    {
+     "id": "B25-FA0-G7-01",
+     "text": "Construct evidence-based arguments and recognise the role of peer review in the evaluation of scientific practices, solutions or conclusions",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cib8de47d3",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G7-02",
+     "text": "Select and use appropriate digital, visual, written and oral media to convey scientific arguments",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci8a3eb67b",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G7-03",
+     "text": "Apply appropriate scientific notations, language and nomenclature",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "cif13034f0",
+     "practical": false,
+     "coverage": "owned-action"
+    },
+    {
+     "id": "B25-FA0-G7-04",
+     "text": "Use evidence and correct scientific language and terminology to address a specific audience and purpose in a variety of contexts",
+     "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa42935d20",
+     "officialCodename": "ci1c9128d3",
+     "practical": false,
+     "coverage": "owned-action"
+    }
+   ],
+   "sourceLesson": null,
+   "sourceLessonNote": "No Working scientifically lesson exists on the site (teaching-app-fix biology/year11 has fa1, fa2 and fa3 only; checked 23 Nov 2026). Contexts come from the Year 11 Biology designs named in entryKnowledge.",
+   "preDesignPacks": [
+    "docs/production/claude-pm/pre-design/y11-bio/fa0-ws-v07.md"
+   ],
+   "placement": {
+    "after": "bio-y11-ws-v06",
+    "before": null,
+    "rule": "Restore-and-pass: the WS video opens on its predecessor's final frame and ends on that same frame (the successor's opening frame), so only the predecessor's Next chip text changes. See bio-y11-gap-fix-status-2026-11-23.md, change C5."
+   },
+   "entryKnowledge": [
+    {
+     "source": "bio-y11-ws-v06",
+     "idea": "Knowledge is contestable and testable."
+    },
+    {
+     "source": "bio-y11-ws-v04",
+     "idea": "Referencing a source."
+    },
+    {
+     "source": "bio-y11-fa3-v32",
+     "idea": "Validity, reliability and accuracy of sampling data."
+    }
+   ],
+   "biologyContext": "A quadrat survey conclusion written as claim, evidence, reasoning; peer review with a published case that overturned a consensus (bacteria and stomach ulcers, 1980s); binomial names in italics, SI units, significant figures; the same finding written for a report and for a community noticeboard.",
+   "openingFrame": "Open on bio-y11-ws-v06's final frame (its Next chip edited to this video's on-screen heading).",
+   "startBoundary": "Recall the preceding result in one sentence, then start from the main learner question with a concrete biology observation.",
+   "stopBoundary": "An evidence-based argument (claim, evidence with data, reasoning that links them, limitation); the role of peer review in checking methods and conclusions, and what it does not guarantee; choosing a medium for an audience; scientific notation, nomenclature and units; correct terminology for the audience and purpose. Course-end video for the Year 11 Working scientifically set.",
+   "nextHandoff": "Year 11 Biology complete; the Year 12 2025 route (audit S9) names the next video.",
+   "status": "route approved by root 23 Nov 2026; design Revision 1 written",
+   "focusArea": "FA0",
+   "designPath": "docs/production/claude-pm/lessons/bio-y11-ws-v07.md"
+  }
+ ]
+}

@@ -1,0 +1,252 @@
+# HMS Year 11 V14 (Health for individuals and communities): organisations and communities as advocates. Who else advocates for young people's health, government, NGOs or communities, and how would we know if any of them made a difference? (design)
+
+Status: Revision 1 (23 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
+
+Narration 6,082 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 559 s including holds, two countdowns and the 45 s notes hold.
+
+Scope: the fourteenth HMS video and the second of the "opportunities" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v14**. Pre-design pack `../pre-design/hms/hms-y11-m1-v14.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson14.sa.html` (read in full, 23 Nov; sha256 `72d70cd0fc8e4118b7819fd601fe6e3bee4e99dd34530a745fb92102d5042a3d`). Previous design `hms-y11-m1-v13.md`.
+
+## Decisions
+
+- **File name and route id.** Route entry **hms-y11-m1-v14**, playlist order 14, site lesson L14 ("Organisations and communities: who advocates for young people's health, and with what impact"). Opening (route): "the participation ladder from v13 stands beside three buildings: government, NGO, community". Start: "Start from the three levels of government and what only government can do." The site's warm-up (list organisations, mark G, N or C, how many used?) opens scene 1 in one beat. Stop: "Stop when students can explain the distinct powers and limits of government, non-government organisations and communities, judge impact as outcomes (not activity), and explain why all three are needed and what fails when one is missing ('for' versus 'by')." Next handoff: hms-y11-m1-v15, which opens on "the three-sector board from v14 lights one shared job: health promotion". Lesson key **hms11a14**.
+- **Syllabus.** Inquiry question "What are the opportunities for improving and promoting young people's health?", outcomes HM-11-01, HM-11-10. Spine id **hms-y11-fa1-g4-d2** (p17): "Discuss how organisations and communities advocate for the health of young people", with both sub-points owned: -s1 "the role government and non-government organisations and communities have in promoting the health of young people, including Aboriginal and/or Torres Strait Islander young people" (2 to 6); -s2 "the impact of organisations and communities on the health of young people" (7, 8). "Discuss" is carried by scene 9 (the interdependence) and attempt 2.
+- **One main question:** *Who else advocates for young people's health, government, NGOs or communities, and how would we know if any of them made a difference?* Heading: "Who else advocates for young people's health?" (the v13 Next chip's words).
+- **Case.** The site's three-level government list (2), five instruments and four limits (3), NGO capabilities and limits (4), community control (5), the ACCHO reasons (6), the impact ladder and five questions (7, 8) and the vaping chain (9). Attempt 1 is written for this video from the site's activity-versus-impact odd-one-out, with new numbers so scene 7's examples are not repeated; attempt 2 is WE b1 verbatim.
+- **Cultural content (root ruling).** Scene 6 uses the generic sector name "Aboriginal Community Controlled Health Organisations", which the site and the syllabus's "including Aboriginal and/or Torres Strait Islander young people" need, and the site's four reasons. It does not name the national peak body, any individual service, community or place, or the national agreement by title (spoken as "national policy commits to strengthening the community-controlled sector"). No symbol or flag is drawn.
+- **No real organisations named.** The site names NGOs and peak bodies; the video says "national youth mental health services", "disease-specific charities" and "peak bodies" on screen only, with no names.
+- **Two staircases, not two ladders.** v13's participation ladder is the course's ladder. The site's "impact ladder" is drawn as an **impact staircase** (activity, output, awareness, behaviour, outcome) so students do not confuse the two.
+- **Scope.** Hook from v13's three buildings (1); government's three levels (2); its instruments and limits (3); NGOs (4); communities and control, "for" versus "by" (5); Aboriginal Community Controlled Health Organisations (6); the impact staircase (7); five questions and two complications (8); why all three are needed, the vaping chain (9); memory (10); two unseen items (11a to 11d); decision rule and handoff (12); key notes (13).
+- **What this video does not teach.** Health promotion approaches: **v15**. The Ottawa Charter: **v16**. Australia's healthcare system, its funding and its organisations in depth: **hms-y12-m3-v08, v09, v11**.
+- **Site alignment.** Kept in substance: the warm-up (1); the three levels with "the one students think of last" (2); the five instruments and the four structural weaknesses (3); the NGO capabilities with criticism as "the single most important structural difference" and the funding tension (4); community trust and proximity, "Community control means the community governs the organisation", "a difference in power, not in warmth", "'For' and 'by' are not interchangeable" and its tokenism link (5); the ACCHO description and four reasons (6, in general terms); "Doing things is not impact", the five rungs (7); the five questions, attribution and "absence of evidence is not evidence of absence" (8); the three thought experiments and the vaping chain "as at 2026" (9); WE b1 verbatim (attempt 2).
+- **Site errors found (this read).** None. Card 07's "Lesson 5 already established that knowledge is a weak predictor of behaviour" is consistent with v05's campaign model. Card 06's "Lesson 8 established that a service which exists but is not used has not helped anyone" is closer to Lesson 4 (access) but is not wrong as a recall; not logged.
+- **Added beyond the site.** (a) The **three-sector board** with interlocking power and limit pieces (the route's model). (b) The impact staircase as a coded model with a claim marker. (c) Attempt 1 written for this video.
+- **Entry knowledge.** hms-y11-m1-v13 (advocacy, ask and audience, the participation ladder, tokenism); hms-y11-m1-v09 (strategy levels; combinations; smoking); hms-y11-m1-v11 (connection to community, culture and Country); hms-y11-m1-v08 (community-controlled services; reports as data); hms-y11-m1-v05 (campaigns that widen gaps); hms-y11-m1-v04 (access; cultural safety as an access gate). Each recalled in one line. Not assumed: Commonwealth, local government, NGO, peak body, community control, self-determination, cultural safety, impact, output, attribution.
+- **Terms.** NGO (4, "independent of government, usually not-for-profit"); community control (5, "the community governs the organisation"); self-determination (6, "communities deciding what their own services do"); cultural safety (6, screen gloss "you don't have to explain or defend your culture"); impact (7, "a measured change in health, or in what causes it"); output (7, screen gloss "how many were contacted"); attribution (8, screen gloss "showing which action caused the change").
+- **Visual system.** Two recurring models are introduced: the **three-sector board** (`SectorBoard`, new in `hms-shared`: three columns under the three building plates, each with a "power" piece and a "limit" piece shaped like jigsaw tabs; in scene 9 each limit piece slides across and locks into another sector's power piece) and **activity against impact** (`ImpactStairs`, new: five steps from "activity" to "outcome", a claim marker that lands on the step a claim reaches, the top step green "impact"). Recurring models reused: v13's `ParticipationLadder` (1, 5), v09's `StrategyLevels` (3, small), v05's `CampaignModel` (8), v08's `IssueTrends` smoking line (8), v13's `AskAudience` (9). People are never drawn.
+- **Attempt.** 11a: written for this video: "An organisation reports: 'We ran 60 sessions and handed out 5,000 fact sheets to young people this year.' Explain why this does not show impact, and outline what evidence would." (3 marks). 11c: WE b1 verbatim, "Discuss how government organisations, non-government organisations and communities advocate for the health of young people." (6 marks).
+- **Memory aids.** The site's summary, shortened: "Each sector's limit is another's power" and "Activity isn't impact: look for a measured change". Scene 10, after scenes 2 to 9.
+- **A mistake/fix scene** is not included. "The government" as one actor is fixed in 2; "community control is consultation" in 5; "reach is impact" in 7 and crossed in 11b; "one organisation cut youth smoking" in 8; "three separate descriptions" in 11d.
+- **Reuse:** explainer kit, shared scenes; v13's three building plates and `ParticipationLadder`, `AskAudience`; plates `hms-council-chamber-v1.png` (v13; scene 2), `hms-club-noticeboard-v1.png` (v11; scene 5), `hms-regional-clinic-v1.png` (v04; scene 2, small). New in `hms-shared`: `SectorBoard`, `ImpactStairs`, `SectorChain`.
+- **Colour key.** Government slate blue-grey, NGO violet, community olive (fixed for v15 and v16); power pieces filled, limit pieces outlined; impact staircase grey to green; crossed mistakes red only.
+- **Type sizes.** As the course brief.
+- **Anchor.** The `SectorBoard` under the three building plates is the anchor from scene 2 and returns in 9 and the handoff. New plate `hms-community-health-service-v1.png` (a welcoming small community health service, scene 6).
+- **Simulation.** No physical simulation fits. The live elements: the claim marker on the staircase (a claim's step is set by what it measures), and the sector chain in scene 9, whose "condition changed" light turns on only when every link is present (logic).
+- **Board stages.** (1) v13's ladder and buildings, then the G, N, C list card, scene 1; (2) the sector board, government column, scenes 2 and 3; (3) NGO column, scene 4; (4) community column with the ladder, scene 5; (5) the community health service board, scene 6; (6) the impact staircase, scenes 7 and 8; (7) the interlocked board and the chain, scene 9; (8) memory, questions, handoff and notes. Longest set-up: the sector board, scenes 2 to 5 (about 2,200 characters, about 2 min 45 s across four scenes), kept alive by a new column filling per scene, pieces snapping in, and plates changing.
+- **Open decisions for root.** (1) One new plate.
+
+Main question: *Who else advocates for young people's health, government, NGOs or communities, and how would we know if any of them made a difference?*
+Entry knowledge: hms-y11-m1-v04, v05, v08, v09, v11, v13 (as above).
+Stops after: explaining government's three levels, its instruments and limits; NGOs' independence and its limits; communities' trust and reach, and community control as governing rather than being consulted; why Aboriginal Community Controlled Health Organisations matter for young people; judging impact on the staircase with five questions and two complications; explaining why all three sectors are needed with a chain.
+Handoff: health promotion approaches (route entry hms-y11-m1-v15). **Handoff frame (v15 opens from it):** the three-sector board, all three columns interlocked, with one shared green band lighting across all three beneath them labelled "health promotion"; the "Next" chip at the lower right reads "Next: why did health promotion change twice?"; this video's heading at the top left.
+
+## Script and shots
+
+16 voiced scene files (1 to 10, 11a to 11d, 12, 13). No people appear at any point.
+
+### 1. hook (the list, and the gap)
+> Last time, young people as advocates. But they aren't the only ones. Take a minute and list every organisation you know that exists to improve young people's health. Mark each one G for government, N for non-government, or C for community. Then the awkward question: how many have you actually used?
+
+Visual: opens on v13's handoff frame (the participation ladder with its marker at the partner rung, beside `hms-government-office-v1.png`, `hms-ngo-shopfront-v1.png` and `hms-community-hall-v1.png` with empty grey tags; the v13 Next chip). The Next chip leaves and the heading rewrites to "Who else advocates for young people's health?" (60 px). On "they aren't the only ones" the three plates step forward and the ladder shrinks to the left edge. On "list every organisation you know" a card writes at the right (34 px) with five empty lines; on "G for government, N for non-government, or C for community" the three building tags fill, "G government", "N NGO", "C community", and each list line gains an empty G, N, C box. On "how many have you actually used?" a readout writes under the card "used: __". A grey bracket then spans the list and the readout, tag "the gap". The card takes an amber pin and shrinks to the lower left. Hold one second.
+
+### 2. government, at three levels
+> Start with government, which works at three levels. The Commonwealth funds health nationally, runs Medicare, and regulates things that cross borders, like medicines and tobacco. States and territories run public hospitals and schools, and most laws that touch young people directly, like alcohol sales and driver licensing. And local councils run the built environment: footpaths, lighting, parks, pools and sportsgrounds. That's the level with the most direct effect on a young person's day, and the one students think of last.
+
+Visual: board change to the sector board (solid from its first frame): the `SectorBoard` under the three plates, three empty columns; the government column (slate) lit. On "three levels" the government column divides into three stacked tiers, labels undrawn. On "The Commonwealth" tier 1 labels "Commonwealth" (34 px), with chips "national funding" on "funds health nationally", "Medicare" on "runs Medicare", "cross-border rules" on "regulates things that cross borders"; on "States and territories" tier 2 "state or territory", chips "public hospitals", "schools", "alcohol sales", "licensing" on their words; on "local councils" tier 3 "local council", with reused plate `hms-council-chamber-v1.png` small, and chips "footpaths", "lighting", "parks", "pools", "sportsgrounds" landing one per word; reused `hms-regional-clinic-v1.png` crop of its bus stop and street light tiny beside them. On "the most direct effect on a young person's day" tier 3 glows amber; on "the one students think of last" a crossed grey chip "'the government'" (one undivided block) and a grey tag "name the level". Hold one second.
+
+### 3. what only government can do, and its limits
+> Some tools belong to government alone. Laws and regulation, like minimum purchase ages and graduated licensing, change conditions for everyone at once. Tax, like excise on tobacco, works especially well for price-sensitive young people. Then funding at scale, universal services, and national health data. But government has structural limits. It's slow, because process is the price of accountability. It's tied to the election cycle. It reaches populations rather than people. And it's often least trusted by the groups with the worst health.
+
+Visual: the board stays; the government column's "power" piece (filled slate) writes five lines (30 px), one per cue: "laws and regulation" on "Laws and regulation", with v09's `StrategyLevels` small at the right and its regulation shelf lighting on "everyone at once"; "tax and pricing" on "Tax", with a small grey price tag icon on "price-sensitive young people"; "funding at scale" on "funding at scale", "universal services" on "universal services", "national data" on "national health data". On "structural limits" the column's "limit" piece (slate outline) writes four lines: "slow" on "It's slow", with a small grey tag "accountability" on "the price of accountability"; "election cycle" on "the election cycle"; "populations, not people" on "populations rather than people"; "least trusted where need is greatest" on "least trusted". Hold one second.
+
+### 4. non-government organisations
+> **Non-government organisations**, or NGOs, are independent of government and usually not-for-profit. That independence is their power. They can criticise government publicly, which a department can't do to its own minister. They can specialise, building a service around how young people actually behave. And they're often trusted by people who avoid government services. But their funding is insecure, often grant by grant, their coverage is patchy, and they can't make laws or tax. Many are funded by the very government they need to criticise, so their independence is real, but limited.
+
+Visual: the NGO column (violet) lights beneath `hms-ngo-shopfront-v1.png`. On "Non-government organisations" the gloss writes "NGO: independent of government, usually not-for-profit" (34 px), with three grey example chips on screen only: "national youth mental health services", "disease-specific charities", "peak bodies". On "That independence is their power" the power piece writes: "can criticise government" on "criticise government publicly" (amber edge, the first line), and on "a department can't do to its own minister" a small slate chip "department" with a closed speech line beside an open violet one; "specialised" on "They can specialise", "trusted by those who avoid government" on "often trusted". On "funding is insecure" the limit piece writes "insecure funding", with a grant chip that flips to "ended" after a short countdown; "patchy coverage" on "coverage is patchy", with a small map of dots, some empty; "can't make laws or tax" on "can't make laws or tax". On "funded by the very government they need to criticise" a thin slate line runs from the government column's funding line into the NGO column, grey tag "independent, but funded by government". Hold one second.
+
+### 5. communities, and control
+> Communities promote health constantly, often without calling it that: sporting clubs, cultural and religious groups, youth centres. Their asset is trust and closeness. They reach young people no service contacts, and they already know who's struggling. Then there's a separate category, **community control**, where the community governs the organisation: it elects the board and sets the priorities. On the participation ladder, it's the top rung. A program made for a community and one made by it can look the same on paper, and work very differently.
+
+Visual: the community column (olive) lights beneath `hms-community-hall-v1.png`. On "sporting clubs, cultural and religious groups, youth centres" three chips write, with reused `hms-club-noticeboard-v1.png` small. On "trust and closeness" the power piece writes "trust, closeness" (30 px); on "reach young people no service contacts" "reach no service has"; on "already know who's struggling" "notices early". The limit piece writes, silently, "volunteers, small grants; uneven; rarely evaluated" (grey tag "on the page"). On "community control" the gloss writes "community control: the community governs the organisation" (34 px); on "elects the board and sets the priorities" two chips "elects the board", "sets priorities". A crossed chip "friendlier consultation" sits beside the gloss. On "the participation ladder" v13's `ParticipationLadder` returns at the left and the marker climbs from "consulted" to "lead" on "the top rung". On "made for a community and one made by it" two identical document outlines sit side by side labelled "for" and "by"; on "work very differently" the "by" document gains a green outcome tick and the "for" document a grey dash. Hold one second.
+
+### 6. Aboriginal Community Controlled Health Organisations
+> For Aboriginal and Torres Strait Islander young people, this takes the form of Aboriginal Community Controlled Health Organisations: primary health services started and governed by the local Aboriginal community. They matter for four reasons. **Self-determination**, communities deciding what their own services do, which national policy commits to strengthening. Cultural safety: you don't have to explain your culture, so you come back. Holistic care, treating health as social, emotional, cultural and physical. And connection to community, culture and Country, a protective factor such a service can strengthen.
+
+Visual: board change to the community health service board (solid from its first frame): new plate `hms-community-health-service-v1.png` at the left (a small, welcoming health service building with a verandah, garden benches and an open door; no signs, symbols or flags); at the right a four-line card with amber numbers, empty. On "Aboriginal Community Controlled Health Organisations" a caption writes under the plate (34 px): "Aboriginal Community Controlled Health Organisation: started and governed by the local Aboriginal community". On "governed by the local Aboriginal community" a small olive chip "board elected by the community" attaches to the plate. On "Self-determination" line 1 "self-determination" and the gloss "self-determination: communities deciding what their own services do" (30 px), with a grey tag "national policy: strengthen the sector" on "national policy commits to strengthening". On "Cultural safety" line 2 "cultural safety", gloss "cultural safety: you don't have to explain or defend your culture" (30 px), and a v04 access-gate chip "cultural safety" opens with a green tick; on "so you come back" a small return arrow loops to the door. On "Holistic care" line 3 "holistic care", with v01's ring small, its segments lit "social, emotional, cultural, physical" on those words. On "connection to community, culture and Country" line 4 "connection: a protective factor", with v11's connectedness card small and a green thread to the plate. No community, organisation, person, place or symbol named or drawn. Hold one second.
+
+### 7. activity is not impact
+> Now the second question: impact. Doing things isn't impact. **Impact** is a measured change in health, or in what causes it. Picture a staircase of claims. Activity: we ran forty workshops. Output: we reached twelve thousand young people. Awareness: most could name three symptoms afterwards. Behaviour: visits to the service rose. And outcome: the rate itself changed. Almost every claim you'll read sits on the lower steps.
+
+Visual: board change to the impact staircase (solid from its first frame): the `ImpactStairs` at the centre, five unlabelled steps rising left to right, grey at the bottom to green at the top. On "Doing things isn't impact" a chip "busy = effective" writes and is crossed in grey. On "Impact" the gloss writes "impact: a measured change in health, or in what causes it" (38 px). On "Activity" step 1 labels "activity" with a claim card "40 workshops" on "we ran forty workshops"; on "Output" step 2 "output", gloss "output: how many were contacted" (30 px), claim "12,000 reached" on "twelve thousand young people"; on "Awareness" step 3 "awareness", claim "could name 3 symptoms", with v05's grey tag "knowledge rarely changes behaviour" returning small; on "Behaviour" step 4 "behaviour", claim "service visits rose"; on "outcome" step 5 "outcome" (green, label "impact") with claim "the rate changed" on "the rate itself changed". On "the lower steps" a cloud of small grey claim chips settles on steps 1 and 2, grey tag "where most claims sit". Hold one second.
+
+### 8. five questions, and two honest complications
+> Judge any claim with five questions. Reach: who was contacted, and who was missed? Equity: did the gap narrow, or widen? Durability: did the effect outlast the funding? Level: did it change a behaviour, or a condition? And evidence: did anyone independent evaluate it, with a comparison? Two honest complications. Attribution is hard, so no single organisation can claim the fall in youth smoking. And community groups are the least evaluated, so their effect is under-recorded.
+
+Visual: the staircase stays at the left; a five-line card writes at the right (34 px): "1 reach: who was missed?" on "Reach"; "2 equity: gap narrower or wider?" on "Equity", with v05's `CampaignModel` small, readouts "average up, gap wider"; "3 durability: after the funding?" on "Durability", a grant bar ending with the effect line either holding or falling; "4 level: behaviour or condition?" on "Level"; "5 evidence: independent, with a comparison?" on "evidence". On "Attribution is hard" the gloss "attribution: showing which action caused the change" (30 px) and v08's smoking line (green, falling, "illustrative pattern") draws small with five arrows feeding into it (tax, advertising limits, packaging, education, NGO campaigns); on "no single organisation can claim" a chip "we did it" is crossed in grey. On "the least evaluated" the community column's limit piece glows "rarely evaluated", and on "under-recorded" a grey tag "no evidence ≠ no effect". Hold one second.
+
+### 9. why all three are needed
+> So why do we need all three? Because each sector's limit is another's strength. Government alone has laws and money, but no independent critic and little local trust. NGOs alone have expert services, but can't change a law. Communities alone have trust, but no money or power. Vaping shows the chain. Schools and communities noticed first, young people gave the lived experience, NGOs gathered evidence and campaigned, and only government could restrict import and supply. Remove a link, and the chain breaks.
+
+Visual: board change to the interlocked board (solid from its first frame): the three columns under the plates with their power and limit pieces. On "each sector's limit is another's strength" the limit pieces slide sideways: government's "least trusted" locks into community's "trust", NGO's "can't make laws" locks into government's "laws", community's "small grants" locks into government's "funding at scale", and government's "can't criticise itself" (written on the slide) locks into NGO's "can criticise"; each lock clicks with a small green flash. On "Government alone", "NGOs alone", "Communities alone" each column in turn stands alone with its gaps shown as empty sockets (grey dashed). On "Vaping shows the chain" a `SectorChain` draws across the lower third (coded links, no product image): link 1 "noticed: schools, communities" on "noticed first" (olive); link 2 "lived experience: young people" on "young people gave the lived experience" (v13's reach-path chip); link 3 "evidence, campaign: NGOs" on "NGOs gathered evidence and campaigned" (violet); link 4 "law: restrict import and supply" on "only government could restrict import and supply" (slate), with v13's `AskAudience` light turning green; a light at the chain's end "condition changed" turns green. On "Remove a link" link 3 lifts out and the end light goes grey, then returns. Grey date tag "as at 2026". Hold one second.
+
+### 10. memory
+> Two things to remember. Each sector's limit is another's power, so all three are needed. And activity isn't impact: look for a measured change.
+
+Visual: board change to the memory card (solid from its first frame): the interlocked sector board small at the left beside a dark-ink framed card (52 px): "Each sector's limit is another's power" (written with "Each sector's limit") and "Activity isn't impact: look for a measured change" (written with "activity isn't impact"). This card returns beside the key notes. Hold half a second.
+
+### 11a. attempt one (sixty sessions)
+> Two exam questions. First. An organisation reports, we ran sixty sessions and handed out five thousand fact sheets to young people this year. Explain why this doesn't show impact, and outline what evidence would. Pause here to answer.
+
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "An organisation reports: 'We ran 60 sessions and handed out 5,000 fact sheets to young people this year.'" Demand: "Explain why this does not show impact, and outline what evidence would. (3 marks)" Picture: the impact staircase small, steps unlabelled. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 11b. feedback, item one
+> It reports activity and output, the lowest steps, not a change in health. Better evidence is a measured change, like more young people using a service, or a lower rate, compared before and after, or against a similar group, ideally checked independently, and showing who was missed. The classic mistake is treating reach as results.
+
+Visual: `FeedbackScene`: the card shrinks to the top; on "activity and output, the lowest steps" the staircase labels its steps and the two claims "60 sessions" and "5,000 fact sheets" land on steps 1 and 2, green frame "activity + output, not impact" (34 px). On "a measured change" the marker jumps to steps 4 and 5 with chips "service use up" and "rate down"; on "compared before and after, or against a similar group" a small two-bar comparison writes; on "checked independently" a green chip "independent evaluation"; on "who was missed" a green chip "reach: who was missed". On "classic mistake" a chip "5,000 reached = success" writes and is crossed in red, red hand tag "results, not reach" (34 px). Settle one second.
+
+### 11c. attempt two (the site's discuss question)
+> Second. Discuss how government organisations, non-government organisations and communities advocate for the health of young people. Pause here to answer.
+
+Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Discuss how government organisations, non-government organisations and communities advocate for the health of young people. (6 marks)" Picture: the three building plates small, columns empty. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 11d. feedback, item two
+> Give each sector its power and its limit: government's laws, tax and funding, but slow; NGOs' independence and specialisation, but no law-making; communities' trust and reach, with community control meaning they govern, not just get consulted. Then the discussion: each limit is another's strength, shown by a chain like vaping. The classic mistake is three separate descriptions, with no link between them.
+
+Visual: `FeedbackScene` with the sector board filling: on "government's laws, tax and funding" step 1 "government: law, tax, funding / slow" in a green frame, the slate column filling; on "NGOs' independence and specialisation" step 2 "NGOs: independent, specialised / no law-making"; on "communities' trust and reach" step 3 "communities: trust, reach; control = govern"; on "each limit is another's strength" step 4 "discussion: limits interlock; a chain", the pieces locking and the chain light turning green. On "classic mistake" three separate boxes "gov", "NGO", "community" write and the gaps between them are crossed in red, red hand tag "link them" (34 px). Settle one second.
+
+### 12. decision rule and handoff
+> So, for any organisation, ask what power its sector has, who governs it, and whether it shows impact or just activity. Next, these three sectors share one job, health promotion. Why has its approach changed twice?
+
+Visual: three step chips write on (38 px): "what power?" on "what power its sector has", "who governs?" on "who governs it", "impact or activity?" on "impact or just activity". On "these three sectors share one job" the chips leave and the interlocked three-sector board returns full under the three plates; on "health promotion" one shared green band lights across all three columns beneath them, labelled "health promotion" (42 px); on "changed twice" the "Next" chip slides in: "Next: why did health promotion change twice?" **This is the handoff frame; v15 opens from it.** Hold half a second.
+
+### 13. key notes (quiet, hold about 45 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Government (federal, state, local): only it can legislate, tax and fund at scale.
+2. NGOs: independent, specialised, trusted; insecure funding, can't make laws.
+3. Communities: trust and reach. Community control means governing, not consulted.
+4. ACCHOs: self-determination, cultural safety, holistic care, connection.
+5. Impact is a measured change: judge reach, equity, durability, level, evidence.
+
+Memory card (the scene 10 card) beside the notes. Each bullet one line of at most 86 characters. Hold about 45 seconds in all.
+
+## Practice question and feedback
+
+Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video; item 2 is the site's WE b1 stem verbatim.
+
+1. (11a, 3 marks.) Sixty sessions and 5,000 fact sheets.
+   Model: the report gives activity and output, not a measured change in health or its determinants (1 mark); evidence of impact: a change in behaviour or outcome (service use, a rate), with a comparison (before and after, or a similar group) (1 mark); evaluated independently, with reach and who was missed, or equity (1 mark). Classic mistake crossed: reach as results.
+2. (11c, 6 marks.) Discuss the three sectors.
+   Model (the site's, shortened): government's instruments and structural limits (1.5 marks); NGOs' independence, specialisation and trust, with limits including the funding tension (1.5 marks); communities' trust and reach, and community control as governing, with Aboriginal Community Controlled Health Organisations (1.5 marks); interdependence shown by a chain (1.5 marks). Classic mistake crossed: three unlinked descriptions.
+
+Feedback spoken lengths about 25 s (11b) and 30 s (11d) by script; time the exact audio.
+
+## Numbers or facts to verify
+
+Self-check (23 Nov). The Codex science check must confirm each before voicing.
+- **Three levels of government (2).** Commonwealth: Medicare, national funding, therapeutic goods and tobacco regulation; states and territories: public hospitals, schools, alcohol and tobacco retail, driver licensing; local councils: footpaths, lighting, parks, pools and sportsgrounds. Correct in general terms (Australian Government, Department of Health and Aged Care, "Australia's health system").
+- **Tobacco excise and young people (3).** Price increases reduce smoking, with larger effects among young people (WHO; Cancer Council Tobacco in Australia, chapter 13). Correct.
+- **NGO funding tension (4).** Many Australian health NGOs receive substantial government funding; the site's claim, stated generally. Correct as a general claim.
+- **Aboriginal Community Controlled Health Organisations (6).** Primary health care services initiated and operated by the local Aboriginal community, governed by an elected board, delivering holistic, culturally appropriate care (NACCHO definition; not named on screen). The National Agreement on Closing the Gap (2020) Priority Reform Two commits to building the community-controlled sector (spoken as "national policy commits to strengthening"). Reviewer to confirm the spoken wording.
+- **Vaping chain, as at 2026 (9).** From 1 January 2024 the Commonwealth banned importation of disposable vapes, and from 1 July 2024 restricted supply of vapes to pharmacies (therapeutic pathway), with later amendments. "Only government could restrict import and supply" is correct; **release re-check** of the current position before voicing, because the policy has changed several times.
+- **Attribution and youth smoking (8).** As v09 scene 7; no figures.
+- **Numbers used.** 40 workshops, 12,000 reached, "name 3 symptoms" (site examples, scene 7); 60 sessions and 5,000 fact sheets (attempt 1, invented for the item).
+- **Official figures.** None.
+- **No em dashes** in this file (searched by script).
+
+## Memory aid check
+
+- **"Each sector's limit is another's power."** Assumption: the sectors' limits are complementary. True for the site's table and the vaping chain; not every limit has a perfect partner (for example insecure funding is partly, not wholly, covered by government). Correct as a pattern.
+- **"Activity isn't impact: look for a measured change."** Assumption: impact means change in health or its determinants, measured. Standard evaluation logic (process against outcome evaluation). Correct.
+
+## Narration length estimate
+
+Revision 1 count (23 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6082 characters**, 16 scene files. At 13.3 characters per second the speech is about 457 s; add 32 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 559 s**.
+
+| Scene | Characters |
+| --- | --- |
+| 1. hook (the list, and the gap) | 299 |
+| 2. government, at three levels | 528 |
+| 3. what only government can do, and its limits | 544 |
+| 4. non-government organisations | 586 |
+| 5. communities, and control | 549 |
+| 6. Aboriginal Community Controlled Health Organisations | 611 |
+| 7. activity is not impact | 421 |
+| 8. five questions, and two honest complications | 478 |
+| 9. why all three are needed | 509 |
+| 10. memory | 143 |
+| 11a. attempt one (sixty sessions) | 234 |
+| 11b. feedback, item one | 332 |
+| 11c. attempt two (the site's discuss question) | 153 |
+| 11d. feedback, item two | 407 |
+| 12. decision rule and handoff | 213 |
+| 13. key notes (quiet, hold about 45 seconds) | 75 |
+
+Reserve cuts: (1) scene 1, "The gap between the list and that number is most of this lesson."; (2) scene 2, the examples after "Medicare"; (3) scene 8, the second complication. Do not cut below 5,500 without replacing content.
+
+## Assets
+
+Have: v13's three building plates, `ParticipationLadder`, `AskAudience`; v09's `StrategyLevels`; v05's `CampaignModel`; v08's smoking line; v01's ring; v04's access gate; v11's connectedness card; plates `hms-council-chamber-v1.png`, `hms-club-noticeboard-v1.png`, `hms-regional-clinic-v1.png`. Coded: sector board, staircase, five-question card, sector chain, question cards, countdown. No people.
+
+Need (new plate):
+1. `hms-community-health-service-v1.png`: scene 6.
+
+Kit gaps: `SectorBoard`, `ImpactStairs`, `SectorChain` in `hms-shared`; v15 opens on `SectorBoard` with the shared "health promotion" band.
+
+## Codex asset brief (HMS-Y11-A14, organisations and communities)
+
+Standing rules as v01's asset brief. No people, hands or faces anywhere in the image; no readable text, real logos, organisations' marks or recognisable real places.
+
+1. `hms-community-health-service-v1.png` (2000 x 1400): a small, welcoming single-storey community health service building in a regional town, timber verandah, garden beds and two benches, an open front door with warm light inside, a ramp. No signs, no symbols, flags, murals or artwork, no people, hands or faces anywhere in the image.
+
+Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-a14-provenance.json`.
+
+## Codex learning review and science check brief (HMS-Y11-A14)
+
+- **Learning review:** trace from v04, v05, v08, v09, v11 and v13. Does the sector board make "power and limit" visible and does scene 9's interlock carry "discuss"? Is scene 6 accurate, respectful and general? Is the staircase clearly different from v13's ladder? Is the video too long in set-up (four sector scenes)? Do the attempts test the stop?
+- **Science check:** every item in "Numbers or facts to verify", especially the vaping position as at the check date and the scene 6 wording, and the model answers' mark splits.
+
+## Codex error-check brief (HMS-Y11-A14, after the reviews)
+
+Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v13's handoff frame and the closing matches v15's route opening; no real organisation, service, community, person, place, policy title or symbol named or drawn; no vape product drawn; no people, hands or faces; no em dash, no U+2061; no module number on screen.
+
+## YouTube metadata (draft)
+
+- Title: "Government, NGOs and Communities: Who Advocates for Young People's Health, and With What Impact? | HSC Health and Movement Science"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module1/lesson14.sa.html
+
+Who else advocates for young people's health, and how would we know if any of them made a difference? Learn what government does at three levels and what only it can do, what non-government organisations can do that government cannot, why community control means governing rather than being consulted, why Aboriginal Community Controlled Health Organisations matter for young people, how to judge impact rather than activity, and why all three sectors are needed. Includes two exam-style questions with brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Health and Movement Science 11-12 (2023 syllabus), Year 11: Health for individuals and communities.
+Syllabus content (NSW Health and Movement Science 11-12, 2023):
+"Discuss how organisations and communities advocate for the health of young people"
+"the role government and non-government organisations and communities have in promoting the health of young people, including Aboriginal and/or Torres Strait Islander young people"
+"the impact of organisations and communities on the health of young people"
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/pdhpe/health-and-movement-science-11-12-2023
+
+Previous: How do young people change the conditions?
+Next: Why did health promotion change twice?
+
+#HealthAndMovementScience #HSC #HSCScience"
+
+## Open decisions
+
+- **One new plate (recommended: yes).**
+
+## Build ids
+
+Lesson key `hms11a14`; folder `src/explainer/lessons/hms-y11-m1-v14`; build folder `docs/production/claude-pm/lessons/hms11a14`. Imports `hms-shared` (`ParticipationLadder`, `AskAudience`, `StrategyLevels`, `CampaignModel`, `IssueTrends`; new `SectorBoard`, `ImpactStairs`, `SectorChain`).
+
+Scene headings (16): hook, government-levels, government-power, ngos, communities, acchos, impact, five-questions, all-three, memory, attempt, feedback-one, attempt-two, feedback-two, decision-rule, key-notes.
+
+Holds and transitions as v03. 2 to 5 continue on the sector board; 7 to 8 continue on the staircase; other teaching scenes are board changes.
+
+## Review notes (author, not learner copy)
+
+- **Teaching checks.** Causes: why the level of government matters (2); why only government can change conditions for everyone (3); why NGO independence matters and is limited (4); why control differs from consultation (5); why community-controlled services work for young people (6); why activity is not impact (7); why attribution is hard and communities under-recorded (8); why all three are needed (9). Attention: the list against "used" (1); a chain that fails when one link lifts (9). Visual medium: pieces that interlock; a claim marker on a staircase. Apply: judge a claim (11a); discuss three sectors (11c). Remember: limits interlock; activity is not impact.
+- **Term load.** NGO, community control, self-determination, cultural safety (screen), impact, output (screen), attribution (screen). Four spoken with a gloss, three screen glosses.
+- **Overlap.** v15 and v16 own health promotion; Year 12 owns the healthcare system's organisations.
+- **Cultural content.** Scene 6 general per the root ruling; reviewer to read it for tone.
+- **No em dashes** in this file (searched by script).

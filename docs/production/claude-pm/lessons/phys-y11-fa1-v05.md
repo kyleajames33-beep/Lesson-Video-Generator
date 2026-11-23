@@ -136,7 +136,7 @@ Visual: card shrinks to the top; "5.0 cm" and "0.020 s" underlined; a givens str
 ### 14. handoff
 > Next, the trip leaves the straight line. A drone flies a hundred and twenty metres east, then a hundred and sixty metres north, in forty seconds. What's its average velocity, and which way does it **point**?
 
-Visual: board change to the plan view (solid from the first frame): the memory line returns small at the top; a coded plan grid with a compass "N, E" and the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) on the start point. On "a hundred and twenty metres east" the drone flies east and then north (about 3 s), an amber path drawing behind it, labelled "120 m" and "160 m" (38 px), and it hovers at the finish; a grey clock chip "40 s". On "point" a dashed navy arrow from start to finish with the chip "average velocity?" and a small "Next: velocity in two dimensions" chip. No lengths on the arrow, no angle, no answer. Hold about 2 seconds. This is the final frame (see "Final frame").
+Visual: board change to the plan view (solid from the first frame): the memory line returns small at the top; a coded plan grid with a compass "N, E" and the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) on the start point. On "a hundred and twenty metres east" the drone flies east and then north (about 3 s), an amber path drawing behind it, labelled "120 m" and "160 m" (38 px), and it hovers at the finish; a grey clock chip "40 s". On "point" a dashed navy arrow from start to finish with the chip "average velocity?" and a small "Next: How do I find average velocity in two dimensions?" chip. No lengths on the arrow, no angle, no answer. Hold about 2 seconds. This is the final frame (see "Final frame").
 
 ### 15. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -210,7 +210,7 @@ v04's final frame (`phys-y11-fa1-v04.md`, unchanged in its Revision 3; root deci
 
 ## Final frame
 
-The last explained frame (end of scene 14, before the key-notes board): the memory line "Speed follows the road. Velocity follows the arrow." small at the top; a coded plan grid with a compass "N, E"; an amber path 120 m east then 160 m north, labelled "120 m" and "160 m"; the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) hovering at the finish; a grey clock chip "40 s"; a dashed navy arrow from start to finish with the chip "average velocity?"; a small chip "Next: velocity in two dimensions". No lengths on the arrow, no angle, no answer. v06 opens on this frame. Revision 3 change: the drone plate (delivered) now sits at the finish; everything else is as Revision 2.
+The last explained frame (end of scene 14, before the key-notes board): the memory line "Speed follows the road. Velocity follows the arrow." small at the top; a coded plan grid with a compass "N, E"; an amber path 120 m east then 160 m north, labelled "120 m" and "160 m"; the painted top-down drone `phys-y11-drone-top-v1.png` (about 300 px wide) hovering at the finish; a grey clock chip "40 s"; a dashed navy arrow from start to finish with the chip "average velocity?"; a small chip "Next: How do I find average velocity in two dimensions?". No lengths on the arrow, no angle, no answer. v06 opens on this frame. Revision 3 change: the drone plate (delivered) now sits at the finish; everything else is as Revision 2.
 
 ## Scene list and build ids
 

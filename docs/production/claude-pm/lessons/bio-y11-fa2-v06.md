@@ -126,7 +126,7 @@ Visual: the card shrinks to the top; a givens strip under it (38 px, slate) read
 ### 9. decision rule and handoff
 > So when a question asks you to discuss the conditions for photosynthesis, name each one and why it's needed, define the limiting factor, then weigh them up: light and carbon dioxide raise the rate, then level off, but temperature raises it, then cuts it. Finish with which one limits right now. So far these graphs are predictions. How could you test one, fairly, with a real plant in water?
 
-Visual: four step chips write one per cue under the heading: "name + why", "define limiting factor", "weigh: level off against peak then fall", "which limits now?". Beside them, the two small graph shapes (rise and plateau; rise, peak and fall) sit side by side with the stave chart. The memory line stays small. On "test one, fairly" a pondweed sprig in a test tube of water beside a coded lamp at a marked distance enters large at the right (reuse the pondweed plate from the v07 brief, or a coded fallback outline until it exists); a few coded bubbles rise from the cut stem and a terracotta "?" writes above the tube. On "real plant in water?" the Next chip slides in at the lower right: "Next: How can a controlled pondweed investigation test whether changing a condition changes photosynthesis?" (route title, root edit). This is the video's final frame (root decision 16): the four step chips, the two graph shapes and the stave chart, the memory line, the pondweed tube with its lamp, bubbles and "?", and the Next chip. Hold half a second before the notes.
+Visual: four step chips write one per cue under the heading: "name + why", "define limiting factor", "weigh: level off against peak then fall", "which limits now?". Beside them, the two small graph shapes (rise and plateau; rise, peak and fall) sit side by side with the stave chart. The memory line stays small. On "test one, fairly" a pondweed sprig in a test tube of water beside a coded lamp at a marked distance enters large at the right (reuse the pondweed plate from the v07 brief, or a coded fallback outline until it exists); a few coded bubbles rise from the cut stem and a terracotta "?" writes above the tube. On "real plant in water?" the Next chip slides in at the lower right: "Next: How do you collect biology data safely and systematically?" (route title, root edit). This is the video's final frame (root decision 16): the four step chips, the two graph shapes and the stave chart, the memory line, the pondweed tube with its lamp, bubbles and "?", and the Next chip. Hold half a second before the notes.
 
 ### 10. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -202,7 +202,7 @@ v05's final frame (`bio-y11-fa2-v05.md`, end of its scene 12, before its notes b
 
 ## Final frame
 
-The last explained frame (end of scene 9, before the key-notes board), unchanged in Revision 3: paper background; heading "Why can raising one condition stop increasing photosynthesis?"; under it the four step chips "name + why", "define limiting factor", "weigh: level off against peak then fall", "which limits now?"; beside them the two small graph shapes (rise and plateau; rise, peak and fall) with the stave chart; the memory line "A barrel only fills to its shortest stave." small; large at the right a pondweed sprig in a test tube of water beside a coded lamp at a marked distance, a few coded bubbles rising from the cut stem and a terracotta "?" above the tube; chip at the lower right "Next: How can a controlled pondweed investigation test whether changing a condition changes photosynthesis?". v07 opens on this frame.
+The last explained frame (end of scene 9, before the key-notes board), unchanged in Revision 3: paper background; heading "Why can raising one condition stop increasing photosynthesis?"; under it the four step chips "name + why", "define limiting factor", "weigh: level off against peak then fall", "which limits now?"; beside them the two small graph shapes (rise and plateau; rise, peak and fall) with the stave chart; the memory line "A barrel only fills to its shortest stave." small; large at the right a pondweed sprig in a test tube of water beside a coded lamp at a marked distance, a few coded bubbles rising from the cut stem and a terracotta "?" above the tube; chip at the lower right "Next: How do you collect biology data safely and systematically?". v07 opens on this frame.
 
 ## Assets
 
@@ -270,7 +270,7 @@ Year 11 Biology (2025 syllabus), Focus Area 2
 B25-FA2-G2-02: Discuss the conditions required for photosynthesis
 Official syllabus: https://curriculum.nsw.edu.au/learning-areas/science/biology-11-12-2025/content/year-11/fa79a477bc
 
-Previous: If a plant makes its own glucose, why does a plant in dark, waterlogged soil still die? Next: How can a controlled pondweed investigation test whether changing a condition changes photosynthesis?
+Previous: If a plant makes its own glucose, why does a plant in dark, waterlogged soil still die? Next: How do you carry out a biology investigation safely and systematically, so every reading and source you record can be used?
 
 #Year11Biology #Photosynthesis #HSCScience"
 
@@ -336,3 +336,7 @@ Calls for root:
 3. The four slider clauses lift the count over the 5,500 floor that root decision 8 had waived.
 4. Scene 2 uses the Module 8 stoma pair and thermometer plates; brief 157's provenance check of reused `m8-` plates (root decision 18) should cover them.
 5. The simulation readouts (1.0 to 4.5 × start; 0.5, 3.0, 0.6 on the temperature stage; 3.0 to 1.0 in 8d) are illustrative screen values for the error check to confirm against the curves.
+
+## Revision note (23 Nov 2026, root ruling C5: Next text only)
+
+The Working scientifically video bio-y11-ws-v03 now follows this one (placement approved by root), so the Next text names its on-screen heading, "How do you collect biology data safely and systematically?". Edited lines (numbers after the edit): 129, 205, 273. bio-y11-ws-v03 opens on this video's final frame and ends on it item for item, so the following video's opening is unchanged. Nothing else changed. This design's narration has no spoken Next sentence (it ends on a question), so only the chip, the final-frame text and the YouTube line changed.

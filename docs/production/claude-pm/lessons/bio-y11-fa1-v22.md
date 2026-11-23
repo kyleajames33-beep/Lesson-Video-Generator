@@ -73,9 +73,9 @@ Visual: on "In the bases" the "bases?" arrow takes a dark-ink tick and the "back
 Visual: the board clears to the letter ladder (a new stage, solid from the first frame; tiles about 90 px with 52 px letters), first one strand (the scene 3 strand, now as coded tiles in base key colours on a cream ribbon outlined in dark ink). On "two of these strands" a second strand slides up from below, upside down, its tiles facing up. On "meet in the middle" the tiles slide together into rungs; labels "side: backbone" and "rung: base pair". On "watery inside of the nucleus" small solid blue water dots (dark-ink outlines) drift against the outside of both ribbons, blue hand tag "water outside"; on "tucked in the middle" a dark-ink pen bracket spans the rungs between the two ribbons (dark-ink hand tag "bases inside: protected"). On "twists into a spiral" the flat ladder morphs (an eased twist) into the helix plate `y11-dna-helix-v1.png` (about 760 px tall), which turns slowly by a gentle sway (no 3D spin of a flat image); label "double helix". On "Francis Crick built this model" a tag writes "Watson and Crick model, 1953" (38 px) with a slate credit under it (30 px) "using X-ray images by Rosalind Franklin" (screen text only; no portraits, no Photo 51 reproduction). Hold one second.
 
 ### 5b. opposite directions
-> One more detail matters for the next video. Each strand has a direction, like an arrow, and the two strands run in opposite directions. We call that antiparallel.
+> One more detail matters for the next video. Each strand has a direction, like an arrow, and the two strands run in opposite directions. We call that antiparallel. Each strand starts at its five prime end and finishes at its three prime end.
 
-Visual: on "One more detail" the helix untwists back into the letter ladder (a camera move: same molecule, closer). On "Each strand has a direction" a coded arrow draws along the top ribbon from left to right; on "opposite directions" a second arrow draws along the bottom ribbon from right to left; slate end tags "5′" and "3′" write at both ends of each ribbon (screen only, not spoken); both arrows are amber pen arrows, with the amber hand tag "antiparallel: opposite directions". At most three bright items. Hold one second.
+Visual: on "One more detail" the helix untwists back into the letter ladder (a camera move: same molecule, closer). On "Each strand has a direction" a coded arrow draws along the top ribbon from left to right; on "opposite directions" a second arrow draws along the bottom ribbon from right to left; slate end tags "5′" and "3′" write at both ends of each ribbon; both arrows are amber pen arrows, with the amber hand tag "antiparallel: opposite directions". On "five prime end" the two "5′" tags take a dark-ink pen underline and a gloss writes (30 px): "5′ (five prime): the start of a strand"; on "three prime end" the two "3′" tags take the same underline and the gloss adds "3′ (three prime): the finish". Each arrow runs from its 5′ tag to its 3′ tag. At most three bright items. Hold one second.
 
 ### 6. the pairing rule, and why
 > The bases don't pair at random. A always pairs with T, and C always pairs with G. This is complementary base pairing. Here's why. A and G are large bases with two rings, while T and C are small, with just one ring. Every rung pairs one large base with one small base, so the ladder stays the same width all the way along. And only A and T line up their bonding points, just as only C and G do.
@@ -128,7 +128,7 @@ Heading on screen: "Key notes: what to write in your book".
 
 - Nucleotide = phosphate + deoxyribose sugar + one base (A, T, C or G).
 - Strong covalent sugar-phosphate backbone; the order of the bases is the message.
-- Two antiparallel strands twist into a double helix; base pairs are the rungs.
+- Two antiparallel strands (each runs 5′ to 3′) twist into a double helix; pairs are rungs.
 - A pairs with T (2 hydrogen bonds); C pairs with G (3 hydrogen bonds).
 - Hydrogen bonds: weak alone, strong together, so the strands can be unzipped.
 
@@ -183,7 +183,7 @@ Revision 3 count (12 Nov 2026, by the checker script with the build parser rules
 | 3. the strand, and a prediction | 443 |
 | 4. the message is the order | 518 |
 | 5a. two strands, the double helix | 507 |
-| 5b. opposite directions | 162 |
+| 5b. opposite directions | 240 |
 | 6. the pairing rule, and why | 393 |
 | 7. hydrogen bonds: weak alone, strong together | 518 |
 | 8. a memory aid, and a worked strand | 390 |
@@ -293,7 +293,7 @@ Holds: strand-prediction and worked-strand end with a 3 s prediction countdown. 
 - **Teaching checks.** Causes: why the message is in the bases (the backbone is identical; 3, 4); why four letters are enough (combinations multiply; 4); why A pairs only with T and C only with G (one large plus one small keeps the width; bonding points line up; 6); why the strands stay together yet open (many weak bonds; breaking them leaves the covalent backbone whole; 7); why one strand fixes the other (the rule; 9). Attention: catalase built from DNA (1), the backbone-or-bases prediction (3), the multiplying counter (4), the failed pairings (6), the unzip that leaves the backbones whole (7), the partner-strand prediction (8). Visual medium: nucleotides snapping into a chain, a counter that fans out, a ladder twisting into a helix, tiles that clash and click, bonds that break rung by rung. Apply: a new strand and a bond count (10a), base percentages (10c). Remember: straight and curly letters; the bases are the message.
 - **Term load.** New spoken terms: nucleotide, phosphate group, deoxyribose, nitrogenous base, adenine, thymine, cytosine, guanine, sugar-phosphate backbone, covalent bond (restated), double helix, antiparallel, complementary base pairing, hydrogen bond. That is heavy for one video, but each term is a named part of the one model being built, and the ladder stays the same picture from scene 5.
 - **Boundary with v23.** No enzyme is named; the scene 7 wedge is "an enzyme" only. Scene 9 shows six empty dashed slots beside the separated bases as a hook, then stops (Revision 3: solid outlines in place of the half-second ghost tiles). No primer, fork or polymerase.
-- **Why antiparallel is taught here.** v23's entry knowledge (route) says v22 provides "the two strands run in opposite directions", and v23 needs it to explain the lagging strand. Spoken as direction arrows only; 5′ and 3′ stay grey tags.
+- **Why antiparallel is taught here.** v23's entry knowledge (route) says v22 provides "the two strands run in opposite directions", and v23 needs it to explain the lagging strand. Spoken as direction arrows, with the 5′ and 3′ end names in one sentence (23 Nov 2026 edit).
 - **Cultural content.** None.
 - **Pronunciation.** "deoxyribose" as "dee-OCK-see-RYE-bohs"; "adenine" as "AD-uh-neen"; "thymine" as "THY-meen"; "cytosine" as "SY-tuh-seen"; "guanine" as "GWAH-neen"; "antiparallel" as "AN-tee-PARA-lel"; "nitrogenous" as "ny-TROJ-uh-nus".
 - **Doubts for the reviewers.** (a) Scene 4 carries the order idea and the counter in one scene: is the phone analogy helpful or one idea too many? (b) Scene 6's "bonding points" is a plain substitute for hydrogen bond donor and acceptor positions, said before hydrogen bonds are named in scene 7: does that order work, or should the bonding-points sentence move to scene 7? (c) Is the term load (point above) acceptable for a student starting Year 11?
@@ -341,3 +341,7 @@ Calls for root:
 3. Cream backbones keep their colour but gain a dark-ink outline on the paper stage (the painted helix already has one).
 4. The simulations are two coded items (sequence counter, unzip run); no existing engine fits. Both are listed as kit gaps.
 5. The nucleotide stage runs about 76 s across scenes 2 to 4 (single plate, then the row, then the joined strand). It is under 90 s; a further cut would need a speech bridge.
+
+## Hand-over fix (23 Nov 2026, audit S5)
+
+Scene 5b gains one sentence after "We call that antiparallel.": "Each strand starts at its five prime end and finishes at its three prime end." The existing slate end tags "5′" and "3′" are now underlined on their cues with a short gloss, each arrow runs from 5′ to 3′, and key note 3 reads "Two antiparallel strands (each runs 5′ to 3′) twist into a double helix; pairs are rungs." (shortened so the line stays one line). Reason: the Year 12 Heredity design `bio-m5-b06b.md` assumes the 5′ and 3′ names as entry knowledge, and v23's lagging-strand explanation benefits from them. Scene 5b is now 240 characters (was 162), about 6 s more; recount the total by script before voicing (no voice manifest exists). "Five prime" is written in words so the voice reads it correctly. Remaining for root: record in the Year 12 2025 transition plan that b06b's entry knowledge now comes from fa1-v22, v23 and v25 (audit S5).
