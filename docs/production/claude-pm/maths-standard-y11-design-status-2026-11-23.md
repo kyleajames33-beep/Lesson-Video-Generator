@@ -28,6 +28,31 @@ Checks run: every number recalculated with exact decimal arithmetic (scratchpad 
 
 **Not designed in this batch:** Applications of measurement (a01 to a11), Time and location (t01 to t06), Networks, paths and trees (n01 to n07), Data analysis (d01 to d19), optional x01 and x02: 43 videos. Section 3 gives the course-level plan and the Year 12 recall list for each, so the next designer can start from it.
 
+## 1a. Second batch (24 November 2026): Applications of measurement complete
+
+**Applications of measurement: complete (11 outline videos as 12 designs, 13 of 13 content points).** a05 is split into a05a and a05b (both playlist 41; open question 10).
+
+| Id | Title (draft) | Points | Narration (chars) | Est. length | New plates |
+| --- | --- | --- | --- | --- | --- |
+| a01 | Units of Measurement: Length, Mass and Capacity | `ci29461234`, `ci9035ede7`, `ci529c4c4e` | 5,732 | 521 s | none |
+| a02 | Converting Units of Area and Volume | `ci2d6e3fa8`, `cid416990e` | 5,607 | 512 s | none |
+| a03 | Volume and Capacity: cm³ to mL, m³ to kL | `ci880a544f` | 5,542 | 508 s | none |
+| a04 | Metric Prefixes and Powers of Ten: Nano to Tera | `ci7526e53a` (site: none) | 6,055 | 545 s | none |
+| a05a | Perimeter and Area: Rectangles, Triangles, Trapeziums | `ci139f00a0` (straight-edged share) | 5,534 | 508 s | none |
+| a05b | Circles, Arcs and Sectors: Perimeter and Area | `ci139f00a0` (circles, sectors, curved composites) | 5,692 | 518 s | none |
+| a06 | Pythagoras' Theorem: Finding a Missing Side | `cib49e1f1d` | 5,581 | 510 s | none |
+| a07 | Irregular Blocks of Land: Area and Perimeter | `ci05a36ac3` | 5,697 | 518 s | none |
+| a08 | Surface Area of Prisms, Cylinders and Spheres | `ci5c8f765b` | 5,613 | 512 s | none |
+| a09 | Volume and Capacity of Prisms and Cylinders | `ci6e07f2cb` (prisms, cylinders) | 5,672 | 516 s | none |
+| a10 | Volume of Pyramids, Cones and Spheres | `ci6e07f2cb` (pyramids, cones, spheres) | 5,583 | 510 s | none |
+| a11 | The Trapezoidal Rule: Estimating Area and Volume | `ci3786e651` | 5,737 | 521 s | none |
+
+Files (all new): route input `../programme/maths-standard-route-inputs-11.json` (entries, joins, colour roles, recurring models, memory aids, anchors, facts for Codex, "year12DependsOn"); packs `pre-design/maths-standard/math-s11-a01.md` to `a11.md` (with `a05a`, `a05b`); designs `lessons/math-s11-a01.md` to `a11.md` (with `a05a`, `a05b`), each "Revision 1 ... Not voiced"; site findings MSY-10 to MSY-21 appended to `site-corrections-maths-standard-y11-additions.md` (section 2); kit and plate needs for m and a in `maths-standard-y11-kit-and-plate-needs.md`.
+
+Checks run: every number recalculated (scratchpad `s11a/verify.py`, `python -I`, 0 failures; later-added values checked inline); narration counted with `work/brief-review-s11-e/count.py` (all 12 between 5,534 and 6,055 characters, 13 scene headings each, all under 570 s with 25 to 62 s spare); feedback 17.1 s to 28.8 s (all under 30 s); every attempt ends "Pause here to answer."; no em dash in any new file; every plate used was viewed on a contact sheet. Joins: a01 opens on m09's final frame exactly (m09's provisional mark can be lifted); each "Next" chip quotes the next design's on-screen heading; a11 closes the strand ("Applications of measurement: done") and hands to t01 provisionally (the wall clock and stopwatch, "60 s = 1 min", "60 min = 1 h").
+
+Year 12 recall set up word for word: "1 L = 1000 mL" (r01), "1 mm = 0.001 m" (r08), "1 km = 1000 m" (r10) in a01; "1 ha = 10 000 m²" (t09) in a02; "1 m³ = 1000 L" (r08) in a03; "kilo = 1000" (r14) in a04; "area = ½ × base × height" (t09) in a05a; "the hypotenuse is the longest side, opposite the right angle" (t01a, t03, t08) in a06; "areas by splitting into shapes" (r07) in a07; d_f, d_l and h spoken and labelled as r07 recalls, and "on the reference sheet", in a11 (the "ends once, middles twice" shortcut and the word "offset" are left to r07).
+
 ## 2. Course-level decisions made for Managing money
 
 - **e12 to m01 join confirmed.** m01 opens on e12's scene 11 frame exactly (swing tag "+3%", "Earning money: done", "Next: prices go up too"). Ruling 87's "provisional" marks in e12 can be lifted; e12's description "Next" line can quote "Percentage Change, Profit and Loss" (root edit, not made here).
@@ -58,7 +83,7 @@ Each block lists the Year 12 designs that recall the Year 11 strand, the exact c
 | i16 | fees on buy now, pay later | m03 |
 | i18 | "save first, or an emergency fund (Year 11)"; "savings kept for surprises" | m09 (same plain meaning and the same hoist plate) |
 
-### 3.2 Applications of measurement (a01 to a11; 11 videos; not designed)
+### 3.2 Applications of measurement (a01 to a11; 11 videos as 12 designs; designed 24 Nov, section 1a)
 
 | Year 12 design | Recall chip or phrase | The Year 11 video must |
 | --- | --- | --- |
@@ -127,4 +152,8 @@ x01 (money: which pay, tax or purchase calculation does an unseen problem need?)
 6. **Kit additions** (rows m01 to m09 in each design): `PercentBar` (with slider, ladder and reverse arrow), `PartsBar`, gap bars, `PeriodTimeline` month blocks and stamps, budget overflow bar, stacked and ranked total bars, `DecisionPath`, `BlockCounter`, threshold bar, who-pays table, `SpreadsheetGrid` input slider and stale-cell demo, fuel tank, rolling counters on plates, power-time area, bill builder, block container, period converter, row splitter, fund gauge, signed variance bars, account transfer strip. A kit-needs file for the m-strand (in the style of `checks/maths-standard-kit-needs-s11-e.md`) would collect them; not written here.
 7. **Example prices.** Codex's error-check briefs ask for dated NSW sources for registration ($385), the green slip ($780), the transfer fee ($40), comprehensive ($1,640), the lay-by fee ($10), water ($2.70/kL, $190 service) and gas (75c a day; 4.8c and 3.9c per MJ). Any change touches only the affected design's numbers.
 8. **m05 and m06 length.** About 560 s each, under the 570 s cap with named reserve trims; root may prefer to split m05 (duty and fees; insurance and the loan) if the voiced takes run long.
-9. **Remaining 43 videos.** Section 3 is the plan. At this batch's pace a strand of 6 to 11 videos is one designer session; Data analysis (19) needs two. Suggested order: a (playlist next), then t, with n and d in parallel; x01 any time.
+9. **Remaining work (updated 24 Nov).** Designed: m (9) and a (12 designs). Not designed: Time and location (t01 to t06), Networks (n01 to n07), Data analysis (d01 to d19), optional x01 and x02: 34 videos. Section 3 is the plan. Next: t01 (it must confirm or replace a11's provisional final frame and show "60 × 60" for Year 12 r10), then n and d in parallel; x01 any time.
+10. **a05 split (24 Nov).** One point (`ci139f00a0`) names seven shape families plus perimeters and composites; designed as a05a (straight-edged) and a05b (circles, sectors, curved composites), both playlist 41, by ruling 8's test. Confirm, or rule one video (it would run about 11 minutes even after cuts).
+11. **m09 join and Year 12 lines (24 Nov).** a01 uses m09's final frame exactly: lift m09's provisional marks and set its "Next" to "Units of Measurement: Length, Mass and Capacity". Year 12 t09's entry line cites "a03" for the hectare; it is taught in a02. Year 12 "Builds on (Year 11)" lines (a01, a05, a12, b01, r01, r07) can now name the a-strand titles (audit B2).
+12. **Facts for Codex (24 Nov).** Netball court 30.5 m by 15.25 m (a02); Olympic pool minimum 50 m by 25 m by 2 m (a03); softball base path 18.29 m (a05b, a06); golf ball minimum diameter 42.67 mm (a08); the trapezoidal rule on the 2024 Standard reference sheet (a11; Year 12 r07 recalls "on the reference sheet"); the site's concrete price $220 per m³ (a09, labelled an example).
+13. **Plates and kit (24 Nov).** The a-strand needs no new plate. The m-strand's three plates and every kit part for m and a are collected in `maths-standard-y11-kit-and-plate-needs.md` (answers open question 6's request for a kit-needs file).

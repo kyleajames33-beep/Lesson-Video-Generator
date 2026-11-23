@@ -1,0 +1,194 @@
+{
+ "schemaVersion": 1,
+ "date": "2026-11-23",
+ "brief": "Maths Standard Year 11 missing strands (root request, 23 November 2026, after the coherence audit findings B1 and B2), continued after Managing money",
+ "purpose": "Route inputs written by Claude (designer of record) for the Year 11 Applications of measurement strand, in the shape of route inputs 10: syllabus text copied from the crosswalk's plain text (sourceHtml is not repeated; see the crosswalk). Not teaching approval.",
+ "syllabus": "Mathematics Standard 11-12 (2024), Year 11 (one course for Standard 1 and Standard 2)",
+ "identifierPolicy": "Exact CMS codenames from docs/production/programme/syllabus/maths-standard-2024-crosswalk.json. Year 11 is one course, so standard1ActionIds and standard2ActionIds are empty.",
+ "officialEvidence": {
+  "source": "NSW Curriculum Year 11 Applications of measurement page (focus area fad74ae493), as recorded in the crosswalk (read 18 November 2026)",
+  "focusAreaUrl": "https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fad74ae493",
+  "outcomes": ["MST-11-05"],
+  "year11ApplicationsOfMeasurementPoints": 13,
+  "crosswalk": "docs/production/programme/syllabus/maths-standard-2024-crosswalk.json"
+ },
+ "siteSource": {
+  "repo": "kyleajames33-beep/Teaching-APP",
+  "clone": "C:/Users/kygs/teaching-app-fix (read only; HEAD 5d74a627, the crosswalk's commit; nothing run or changed)",
+  "lessons": "year11/applications-of-measurement/lesson01 (formulas and units), lesson02 (area of basic shapes), lesson03 (Pythagoras), lesson04 (perimeter and arc length), lesson05 (sectors, annuli, composite; its sine area rule is Year 12 t09), lesson06 (surface area of prisms and cylinders), lesson07 (surface area of spheres and composites), lesson08 (volume of prisms and cylinders), lesson09 (volume of pyramids, cones and spheres), lesson12 (mass section only; its energy section is Year 12 r14), lesson13 (trapezoidal rule). lesson10 (scale drawings, Year 12 r04) and lesson11 (errors and limits of accuracy) carry no 2024 Year 11 point.",
+  "note": "Every site value used in the packs was recalculated (scratchpad s11a/verify.py). Site issues are logged as MSY-10 onward in docs/production/claude-pm/site-corrections-maths-standard-y11-additions.md."
+ },
+ "recommendations": [
+  "Run a01 to a11 in outline order, playlist numbers 37 to 47, straight after m09 (36). a05 splits into a05a (straight-edged shapes) and a05b (circles, arcs, sectors and curved composites), both at playlist 41, because one point covers seven shape families plus perimeter and composites and cannot be taught well under 570 s (ruling 8's test). Root to confirm the split.",
+  "Joins: a01 opens on m09's final frame exactly (coin jar with '100 c = $1', coded tape strip '10 mm = 1 cm', grey chip 'Managing money: done', chips 'Next: units of measurement', '?'); m09's provisional mark can be lifted. Each later video opens on the previous video's final frame. a11 closes the strand ('Applications of measurement: done') and hands to math-s11-t01 (provisional until t01 is designed).",
+  "Each 'Next' chip quotes the next video's on-screen heading: a01 'Units of measurement: length, mass and capacity'; a02 'Units of area and volume'; a03 'Volume and capacity'; a04 'Prefixes and powers of ten'; a05a 'Perimeter and area'; a05b 'Circles, arcs and sectors'; a06 'Pythagoras' theorem'; a07 'Irregular blocks of land'; a08 'Surface area'; a09 'Volume of prisms and cylinders'; a10 'Pyramids, cones and spheres'; a11 'The trapezoidal rule'.",
+  "Strand colour roles (fixed a01 to a11): given measurements (lengths, radii, heights) blue; conversion factor, fraction of a circle, the 1/2 or 1/3 amber; area and surface teal; volume and capacity olive; removed, hidden or internal parts violet; answer green; mistake red (crossed slips only).",
+  "Recurring models introduced once: the unit ladder with multiply and divide arrows (a01; squared and cubed rungs in a02; the volume-capacity bridge in a03; the prefix ladder in a04); the grid square and unit-cube fill (a02, reused a03); 'Plan first: Area = ... + ... - ...' written before numbers (a05a, reused a05b, a07, a08 face list, a09, a10); the exposed or hidden face list (a08); the slice stack V = Ah (a09, reused a10 and a11); the strip builder for the trapezoidal rule (a11).",
+  "Memory aids introduced once: a01 'Smaller unit, more of them: multiply. Bigger unit, fewer of them: divide.'; a02 'Square the length factor for area. Cube it for volume.'; a03 'A 1 cm cube holds 1 mL. A 1 m cube holds 1000 L, a kilolitre.'; a04 'Capitals are huge: M, G, T. Lower case is small: m, µ, n (and c). Except k, a thousand.'; a05a 'Every area is base times perpendicular height, or half of it.'; a05b 'Take theta over 360 of the whole circle.'; a06 'Longest side: square, add, square root. Shorter side: square, subtract, square root.'; a07 'Split it, label it, add it. Fence only the outside.'; a08 'List every face, cross out the hidden ones, then add.'; a09 'Volume = area of the end x length.'; a10 'Pointy solids hold a third.'; a11 'Average the two ends, times the gap.'",
+  "Everyday anchors (no people, hands or faces; no science contexts): a ribbon, a fun run, a produce scale, a ute load, a water jug, a tank and a farm dam (a01); floor tiles, a paddock, netball courts and a block cube (a02); a fish tank, a backyard pool and an Olympic pool (a03); a phone's storage, camera and processor (a04); a lawn, a triangular garden bed, an angled parking bay and a sail (a05a); a pizza, a round cake, a running track and a pond path (a05b); a softball diamond, a flying-fox ladder, a phone screen, a gate brace and a ramp (a06); a house block and a paddock plan (a07); a cereal box, a food tin, a golf ball, a polytunnel and a bollard (a08); the cereal box again, a concrete ramp, the water tank, a sloping pool, a retaining wall (a09); an ice-cream cone, a skylight, a watermelon, a sand pile and a bowl (a10); a land block, a garden pond, a drainage channel and a garden bed (a11).",
+  "Prices: water $2.70 per kL is m07's labelled example; concrete $220 per cubic metre is the site's example and is labelled 'example price' (Codex finds a dated NSW source or reports). No other price is used.",
+  "Facts Codex confirms in the error check: netball court 30.5 m x 15.25 m; softball base paths 18.29 m (shown as 18.3 m); golf ball minimum diameter 42.67 mm; Olympic pool 50 m x 25 m with a minimum depth of 2 m; printer paper about 0.1 mm thick; the trapezoidal rule printed on the 2024 Standard reference sheet.",
+  "Pace flags: a01 and a07 are full; a02 and a08 near 9 minutes; a05 split (see above). No other split proposed.",
+  "Header strip (owner rule of 23 Nov): the focus area only, 'APPLICATIONS OF MEASUREMENT'."
+ ],
+ "year12DependsOn": [
+  {"y12": "math-s12-r01", "recalls": "a01", "chipOrPhrase": "grey chip 'Year 11: 1 L = 1000 mL'; converting mL and L, cm and m", "setUpIn": "a01 scene 6 chip '1 L = 1000 mL' (exact wording) and the capacity ladder"},
+  {"y12": "math-s12-r04, r05", "recalls": "a01", "chipOrPhrase": "cm, m and km; m to cm", "setUpIn": "a01 scenes 2 to 4 (the length ladder, the ribbon in m, cm and mm, the 5 km fun run)"},
+  {"y12": "math-s12-r08", "recalls": "a01, a03", "chipOrPhrase": "grey chips 'Year 11: 1 mm = 0.001 m' and 'Year 11: 1 m³ = 1000 L'", "setUpIn": "a01 scene 2 chip '1 mm = 0.001 m'; a03 scene 4 chip '1 m³ = 1000 L' (shown with '= 1 kL')"},
+  {"y12": "math-s12-r10", "recalls": "a01 (and t01)", "chipOrPhrase": "'Year 11: 60 × 60' (t01); 1 km = 1000 m (a01)", "setUpIn": "a01 scene 2 chip '1 km = 1000 m'; a11's handoff frame previews t01's '60 × 60'"},
+  {"y12": "math-s12-r14", "recalls": "a04", "chipOrPhrase": "grey chip 'Year 11: kilo = 1000'", "setUpIn": "a04 scene 2 says 'kilo means a thousand' and shows the chip 'kilo = 1000' before 10³"},
+  {"y12": "math-s12-r06a, r06b", "recalls": "a02, a05a", "chipOrPhrase": "rectangle areas; perimeter; m²", "setUpIn": "a05a scene 2 (perimeter and area of a rectangle) and a02 (m²)"},
+  {"y12": "math-s12-t09", "recalls": "a05a, a02", "chipOrPhrase": "'Year 11: area = ½ × base × height'; 'Year 11: 1 ha = 10 000 m²'", "setUpIn": "a05a scene 4 chip 'area = ½ × base × height' (exact wording); a02 scene 4 chip '1 ha = 10 000 m²'. t09's entry line names 'a03' for the hectare; the hectare is taught in a02 (root fix in t09)."},
+  {"y12": "math-s12-t01a, t01b, t03, t08", "recalls": "a06", "chipOrPhrase": "'Year 11: Pythagoras'; 'the hypotenuse is the longest side, opposite the right angle'", "setUpIn": "a06 scene 2 defines the hypotenuse in exactly those words"},
+  {"y12": "math-s12-r07", "recalls": "a07, a11", "chipOrPhrase": "'areas by splitting into shapes'; A ≈ (h/2)(d_f + d_l) with d_f the first length, d_l the last length and h the perpendicular distance; 'Year 11: on the reference sheet'", "setUpIn": "a07 (dissection; chip 'areas by splitting into shapes'); a11 (the rule with d_f, d_l and h spoken and labelled as r07 recalls, applied up to four times and added; the word 'offset' and the 'ends once, middles twice' shortcut are left to r07)"},
+  {"y12": "math-s12-a01 (and b01 etc.)", "recalls": "Year 11 builds-on lines", "chipOrPhrase": "'(Year 11)'", "setUpIn": "titles now exist for a01 to a11; root updates the Year 12 'Builds on' lines (audit B2)"}
+ ],
+ "part": 11,
+ "covers": "math-s11-a01 to math-s11-a11 (Year 11 Applications of measurement; a05 as a05a and a05b)",
+ "subjects": {
+  "Mathematics Standard": {
+   "year": 11,
+   "entries": [
+    {
+     "id": "math-s11-a01", "playlistOrder": 37, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we convert between units of length, mass and capacity?",
+     "syllabusActionIds": ["ci29461234", "ci9035ede7", "ci529c4c4e"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "ci29461234", "group": "Practicalities of measurement", "text": "Identify and convert between the metric units of length: millimetres (mm), centimetres (cm), metres (m) and kilometres (km)", "siteCoverage": "covered", "siteGap": null},
+      {"id": "ci9035ede7", "group": "Practicalities of measurement", "text": "Identify and convert between the metric units of mass: milligrams (mg), grams (g), kilograms (kg) and tonnes (t)", "siteCoverage": "covered", "siteGap": null},
+      {"id": "ci529c4c4e", "group": "Practicalities of measurement", "text": "Identify and convert between the metric units of capacity: millilitres (mL), litres (L), kilolitres (kL) and megalitres (ML)", "siteCoverage": "partial", "siteGap": "Megalitres are not taught (MSY-10)."}
+     ],
+     "siteSources": ["year11/applications-of-measurement/lesson01.sa.html (card 05 length ladder; WE2 (a), (b))", "year11/applications-of-measurement/lesson12.sa.html (mass card only)"],
+     "startBoundary": "math-s11-m09 final frame: coin jar (ma12-coin-jar-v1.png) with '100 c = $1', coded tape strip with '10 mm = 1 cm', grey chip 'Managing money: done', chips 'Next: units of measurement', '?'",
+     "stopBoundary": "The length ladder mm, cm, m, km; prefixes milli, centi, kilo as their meanings; multiply to a smaller unit, divide to a bigger one; units matching before a calculation; mass mg, g, kg, t and capacity mL, L, kL, ML in steps of 1000. Not: area and volume units (a02), volume to capacity (a03), powers of ten (a04).",
+     "nextHandoff": "math-s11-a02 (the 30 cm floor tile on a coded 1 m by 1 m square, chips '1 m = 100 cm', '1 m² = ? cm²', 'Next: units of area and volume', '?')",
+     "anchors": "a ribbon (ma11-ribbon-length-v1.png); a 5 km fun run on a 400 m track; the produce scale and a bag of mandarins; a muesli bar label; the ute with sand bags; the water jug, the water tank and a farm dam"
+    },
+    {
+     "id": "math-s11-a02", "playlistOrder": 38, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "Why do area and volume conversions multiply the length factor two and three times?",
+     "syllabusActionIds": ["ci2d6e3fa8", "cid416990e"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [
+      {"id": "ci2d6e3fa8", "group": "Practicalities of measurement", "text": "Identify and convert between metric units of area, using 1 cm^2 = 100 mm^2, 1 m^2 = 10 000 cm^2, 1 ha = 10 000 m^2 and 1 km^2 = 1 000 000m^2", "siteCoverage": "covered", "siteGap": null},
+      {"id": "cid416990e", "group": "Practicalities of measurement", "text": "Identify and convert between metric units of volume, using 1 cm^3 = 1000 mm^3, 1 m^3 = 1 000 000 cm^3, and 1 km^3 = 1 000 000 000m^3", "siteCoverage": "covered", "siteGap": null}
+     ],
+     "siteSources": ["year11/applications-of-measurement/lesson01.sa.html (card 06; WE2 (c), (d); trap 02; SA 4)"],
+     "startBoundary": "math-s11-a01 final frame: the floor tile (ma11-floor-tile-30-v1.png) on a coded 1 m square, chips '1 m = 100 cm', '1 m² = ? cm²', 'Next: units of area and volume', '?'",
+     "stopBoundary": "Area factor = length factor squared (1 cm² = 100 mm², 1 m² = 10 000 cm², 1 km² = 1 000 000 m²); the hectare (100 m by 100 m); volume factor = length factor cubed (1 cm³ = 1000 mm³, 1 m³ = 1 000 000 cm³, 1 km³ = 1 000 000 000 m³); converting both ways; tiles from an area. Not: capacity (a03).",
+     "nextHandoff": "math-s11-a03 (a coded 1 cm cube beside the water jug, chips '1 cm³ holds ? mL', 'Next: volume and capacity', '?')",
+     "anchors": "floor tiles and a tile box (ms12-tile-box-v1.png); a netball court (ma11-netball-court-top-v1.png) for the hectare; a paddock; the block cube (ma11-block-cube-v1.png); a brick"
+    },
+    {
+     "id": "math-s11-a03", "playlistOrder": 39, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do cubic centimetres and cubic metres become millilitres, litres and kilolitres?",
+     "syllabusActionIds": ["ci880a544f"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci880a544f", "group": "Practicalities of measurement", "text": "Identify and convert between units of volume and capacity, using 1 cm^3 = 1 mL, 1m^3 = 1000 L = 1 kL and 1000 kL = 1 ML", "siteCoverage": "partial", "siteGap": "1000 kL = 1 ML is not taught (MSY-10)."}],
+     "siteSources": ["year11/applications-of-measurement/lesson01.sa.html (card 06 bridge; WE3; SA 2)", "year11/applications-of-measurement/lesson08.sa.html (conversions box)"],
+     "startBoundary": "math-s11-a02 final frame: a coded 1 cm cube beside the water jug (ma11-water-jug-v1.png), chips '1 cm³ holds ? mL', 'Next: volume and capacity', '?'",
+     "stopBoundary": "Capacity as what a container holds; 1 cm³ = 1 mL; a 10 cm cube holds 1 L; 1 m³ = 1000 L = 1 kL; 1000 kL = 1 ML; box volumes (length × width × height, Stage 4) converted to capacity; water cost per kL. Not: volumes of other solids (a09, a10).",
+     "nextHandoff": "math-s11-a04 (the phone with '256 GB' on its screen, chips 'Next: prefixes and powers of ten', '?')",
+     "anchors": "the water jug; a fish tank; a backyard pool (ma12-pool-cutaway-v1.png); an Olympic pool; the water tank (ma11-water-tank-v1.png)"
+    },
+    {
+     "id": "math-s11-a04", "playlistOrder": 40, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do prefixes such as nano, mega and giga become powers of ten?",
+     "syllabusActionIds": ["ci7526e53a"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci7526e53a", "group": "Practicalities of measurement", "text": "Apply scientific notation to represent numbers involving standard prefixes: nano- (n) for 10^(-9), micro- (µ) for 10^(-6), milli- (m) for 10^(-3), centi- (c) for 10^(-2), kilo- (k) for 10^3, mega- (M) for 10^6, giga- (G) for 10^9 and tera- (T) for 10^12, with and without a required number of significant figures", "siteCoverage": "missing", "siteGap": "No Year 11 lesson teaches the prefixes or scientific notation (MSY-11); syllabus-only teaching (ruling 3)."}],
+     "siteSources": ["none (syllabus only; lesson11's significant-figure answers are not used)"],
+     "startBoundary": "math-s11-a03 final frame: the phone (ma12-phone-v1.png) with a coded screen '256 GB', chips 'Next: prefixes and powers of ten', '?'",
+     "stopBoundary": "kilo = 1000 recalled as 10³; a power of ten as how many times you multiply by ten; mega, giga, tera; negative powers for centi, milli, micro, nano; scientific notation (a number from 1 to under 10 times a power of ten); converting between prefixes; significant figures counted from the first non-zero digit; the calculator's E display. Not: binary storage sizes (author note only).",
+     "nextHandoff": "math-s11-a05a (the triangular garden bed (ma11-garden-bed-v1.png) beside a coded lawn plan 12 m by 8 m, chips 'edging?', 'mulch?', 'Next: perimeter and area', '?')",
+     "anchors": "a phone's storage (GB, TB), camera (megapixels) and processor (nanometres, gigahertz); a sheet of paper (ma12-paper-sheet-v1.png)"
+    },
+    {
+     "id": "math-s11-a05a", "playlistOrder": 41, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we find the perimeter and area of rectangles, triangles, parallelograms, trapeziums and shapes made from them?",
+     "syllabusActionIds": ["ci139f00a0"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci139f00a0", "group": "Perimeter, area and volume", "text": "Solve practical problems requiring the calculation of perimeters and areas of triangles, rectangles, parallelograms, trapeziums, circles, sectors of circles and composite shapes in a variety of contexts", "siteCoverage": "covered", "siteGap": null, "share": "a05a: triangles, rectangles, parallelograms, trapeziums and straight-edged composites; a05b: circles, sectors and curved composites"}],
+     "siteSources": ["year11/applications-of-measurement/lesson02.sa.html (cards on why formulas work, perpendicular height, composite strategy; WE1; trap 01, 03)", "year11/applications-of-measurement/lesson04.sa.html (perimeter card)"],
+     "startBoundary": "math-s11-a04 final frame: the triangular garden bed beside a coded lawn plan 12 m by 8 m, chips 'edging?', 'mulch?', 'Next: perimeter and area', '?'",
+     "stopBoundary": "Perimeter (every outside edge) and area (square units) as different questions; rectangle; parallelogram A = bh with the perpendicular height; triangle area = ½ × base × height; trapezium A = ½(a + b)h; composite shapes by adding or subtracting with a written plan; outside edges only for a perimeter. Not: circles and sectors (a05b); Pythagoras (a06).",
+     "nextHandoff": "math-s11-a05b (the pizza (ma11-pizza-top-v1.png) with one slice outlined, chips 'crust?', 'Next: circles, arcs and sectors', '?')",
+     "anchors": "a backyard lawn and a triangular garden bed; an angled parking bay; a trapezium garden plot; a sail (ma11-yacht-side-v1.png); an L-shaped floor"
+    },
+    {
+     "id": "math-s11-a05b", "playlistOrder": 41, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we find the perimeter and area of circles, sectors and shapes with curved edges?",
+     "syllabusActionIds": ["ci139f00a0"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci139f00a0", "group": "Perimeter, area and volume", "text": "Solve practical problems requiring the calculation of perimeters and areas of triangles, rectangles, parallelograms, trapeziums, circles, sectors of circles and composite shapes in a variety of contexts", "siteCoverage": "covered", "siteGap": null, "share": "a05b: circles, sectors and curved composites"}],
+     "siteSources": ["year11/applications-of-measurement/lesson02.sa.html (circle, calculator card; WE2)", "year11/applications-of-measurement/lesson04.sa.html (arc length, sector perimeter; WE3 running track)", "year11/applications-of-measurement/lesson05.sa.html (sector area; annulus as a composite; not the sine area rule, MSY-13)"],
+     "startBoundary": "math-s11-a05a final frame: the pizza with one slice outlined, chips 'crust?', 'Next: circles, arcs and sectors', '?'",
+     "stopBoundary": "pi as how many diameters go round; C = 2πr = πd; A = πr² (sectors rearranged into a near-rectangle); the radius from a diameter; the fraction θ/360 for an arc and a sector; a sector's perimeter = arc + 2 radii; curved composites (track, ring); the π key and rounding at the end. Not: the sine area rule (Year 12 t09).",
+     "nextHandoff": "math-s11-a06 (the softball diamond (ma11-softball-diamond-top-v1.png) with home and second base ringed, chips '18.3 m', 'home to second?', 'Next: Pythagoras' theorem', '?')",
+     "anchors": "the pizza; the round cake (ma11-round-cake-v1.png); a running track; the garden pond (ma11-garden-pond-v1.png) with a path; a garden with a semicircular end"
+    },
+    {
+     "id": "math-s11-a06", "playlistOrder": 42, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does Pythagoras' theorem find a missing side?",
+     "syllabusActionIds": ["cib49e1f1d"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "cib49e1f1d", "group": "Perimeter, area and volume", "text": "Apply Pythagoras’ theorem to solve problems involving right-angled triangles", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/applications-of-measurement/lesson03.sa.html (formula card; WE1, WE2; traps; Q3 gate brace)"],
+     "startBoundary": "math-s11-a05b final frame: the softball diamond with home and second base ringed, chips '18.3 m', 'home to second?', 'Next: Pythagoras' theorem', '?'",
+     "stopBoundary": "The right angle and the hypotenuse ('the longest side, opposite the right angle'); c² = a² + b² shown with squares on the sides; finding the hypotenuse (square, add, square root); finding a shorter side (square, subtract, square root); the answer must be shorter than the hypotenuse; rounding at the end. Not: the converse; trigonometry (Year 12).",
+     "nextHandoff": "math-s11-a07 (the house plate (ms12-holiday-house-v1.png) above a coded block plan with one slanted boundary, chips 'area?', 'fence?', 'Next: irregular blocks of land', '?')",
+     "anchors": "a softball diamond; the flying-fox platform's ladder (ma11-flying-fox-platform-v1.png); a phone screen (ma12-phone-v1.png); a gate brace; an entrance ramp (ma11-entrance-ramp-v1.png)"
+    },
+    {
+     "id": "math-s11-a07", "playlistOrder": 43, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we find the perimeter and area of an irregular block of land by cutting it up?",
+     "syllabusActionIds": ["ci05a36ac3"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci05a36ac3", "group": "Perimeter, area and volume", "text": "Calculate perimeters and areas of irregularly shaped blocks of land by dissection into triangles, rectangles and trapeziums", "siteCoverage": "partial", "siteGap": "Composite shapes are taught; blocks of land, their perimeters with slanted boundaries and hectares are not (MSY-14)."}],
+     "siteSources": ["year11/applications-of-measurement/lesson02.sa.html (composite strategy card)"],
+     "startBoundary": "math-s11-a06 final frame: the house plate above a coded block plan with a slanted back boundary, chips 'area?', 'fence?', 'Next: irregular blocks of land', '?'",
+     "stopBoundary": "Dissection into rectangles, triangles and trapeziums along right angles; two dissections give the same area (a check); slanted boundaries by Pythagoras; perimeter as the outside boundaries only; areas in m² and hectares. Not: the trapezoidal rule (a11); radial surveys (Year 12).",
+     "nextHandoff": "math-s11-a08 (the cereal box (ma12-cereal-box-v1.png) with a coded '30 cm × 20 cm × 8 cm', chips 'how much cardboard?', 'Next: surface area', '?')",
+     "anchors": "a house block for sale; a paddock plan"
+    },
+    {
+     "id": "math-s11-a08", "playlistOrder": 44, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do we find the surface area of prisms, cylinders, spheres and composite solids?",
+     "syllabusActionIds": ["ci5c8f765b"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci5c8f765b", "group": "Perimeter, area and volume", "text": "Solve practical problems involving the surface area of prisms, cylinders, spheres and composite solids in a variety of contexts", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/applications-of-measurement/lesson06.sa.html (nets; cylinder unrolled; WE1, WE3)", "year11/applications-of-measurement/lesson07.sa.html (sphere, hemisphere, hidden faces; WE3 silo)"],
+     "startBoundary": "math-s11-a07 final frame: the cereal box with '30 cm × 20 cm × 8 cm', chips 'how much cardboard?', 'Next: surface area', '?'",
+     "stopBoundary": "Surface area as the total outside area (square units); nets of prisms; a cylinder's curved surface unrolled (2πr × h); closed and open cylinders; a sphere 4πr², a hemisphere 3πr²; composite and partial solids by listing exposed and hidden faces. Not: cones and pyramids (not in the point); volume (a09).",
+     "nextHandoff": "math-s11-a09 (the water tank (ma11-water-tank-v1.png) with a coded '1.8 m wide, 2 m tall', chips 'how many litres?', 'Next: volume of prisms and cylinders', '?')",
+     "anchors": "a cereal box; a food tin (ma12-food-tin-v1.png); a golf ball (ma11-golf-ball-v1.png); a polytunnel (ma11-polytunnel-end-v1.png); a bollard (coded HSC-style diagram)"
+    },
+    {
+     "id": "math-s11-a09", "playlistOrder": 45, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How do volume and capacity work for prisms and cylinders?",
+     "syllabusActionIds": ["ci6e07f2cb"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci6e07f2cb", "group": "Perimeter, area and volume", "text": "Solve practical problems involving volume and capacity of prisms, cylinders, spheres, cones, pyramids and composite solids in a variety of contexts", "siteCoverage": "covered", "siteGap": null, "share": "a09: prisms and cylinders; a10: pyramids, cones, spheres and composites with them"}],
+     "siteSources": ["year11/applications-of-measurement/lesson08.sa.html (V = Ah; WE1 to WE3; hook pool; Q1, Q2)"],
+     "startBoundary": "math-s11-a08 final frame: the water tank with '1.8 m wide, 2 m tall', chips 'how many litres?', 'Next: volume of prisms and cylinders', '?'",
+     "stopBoundary": "Volume as space inside (cubic units) against surface area; V = Ah for any prism and the cylinder (the end's area times the length); a triangular prism, a cylinder, a trapezoidal prism lying on its side; capacity in L and kL (a03 recall). Not: pyramids, cones, spheres (a10).",
+     "nextHandoff": "math-s11-a10 (the ice-cream cone (ma11-cone-choc-vanilla-v1.png) beside a coded cylinder of the same radius and height, chips 'how many cones fill it?', 'Next: pyramids, cones and spheres', '?')",
+     "anchors": "the cereal box; a concrete ramp; the water tank; a sloping backyard pool (ma12-pool-cutaway-v1.png); a retaining wall"
+    },
+    {
+     "id": "math-s11-a10", "playlistOrder": 46, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "Why do pyramids and cones hold a third of a prism, and how do spheres compare?",
+     "syllabusActionIds": ["ci6e07f2cb"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci6e07f2cb", "group": "Perimeter, area and volume", "text": "Solve practical problems involving volume and capacity of prisms, cylinders, spheres, cones, pyramids and composite solids in a variety of contexts", "siteCoverage": "covered", "siteGap": null, "share": "a10: pyramids, cones, spheres and composites with them"}],
+     "siteSources": ["year11/applications-of-measurement/lesson09.sa.html (one-third card; WE1 to WE3; traps; Q1, Q2)"],
+     "startBoundary": "math-s11-a09 final frame: the ice-cream cone beside a coded cylinder of the same radius and height, chips 'how many cones fill it?', 'Next: pyramids, cones and spheres', '?'",
+     "stopBoundary": "V = ⅓Ah for pyramids and cones, shown by three pours; perpendicular height, not slant (Pythagoras recall); V = 4/3 πr³ for a sphere, two-thirds of its cylinder; a hemisphere; composite solids; capacity. Not: surface area of cones (not in the syllabus point).",
+     "nextHandoff": "math-s11-a11 (the garden pond (ma11-garden-pond-v1.png) with a coded tape across it, chips 'no formula fits', 'Next: the trapezoidal rule', '?')",
+     "anchors": "the ice-cream cone; a pyramid skylight (coded); a watermelon (ma11-watermelon-v1.png); a sand pile (ms12-sand-barrow-v1.png); a mixing bowl (coded)"
+    },
+    {
+     "id": "math-s11-a11", "playlistOrder": 47, "course": "Year 11 (Standard 1 and Standard 2)",
+     "mainLearnerQuestion": "How does the trapezoidal rule estimate an irregular area or volume?",
+     "syllabusActionIds": ["ci3786e651"], "standard2ActionIds": [], "standard1ActionIds": [],
+     "syllabusActions": [{"id": "ci3786e651", "group": "Perimeter, area and volume", "text": "Apply the Trapezoidal rule A ≈ (h/2)(d_f + d_l), where A is the area, d_f and d_l are the lengths of the parallel sides of the trapezium, d_f is the first length and d_l is the last length, and h is the perpendicular distance between them, to solve a variety of practical problems involving area, volume and capacity for up to four applications", "siteCoverage": "covered", "siteGap": null}],
+     "siteSources": ["year11/applications-of-measurement/lesson13.sa.html (trapezium to rule; WE1, WE2; drills 1, 2; Q2 volume)"],
+     "startBoundary": "math-s11-a10 final frame: the garden pond with a coded tape across it, chips 'no formula fits', 'Next: the trapezoidal rule', '?'",
+     "stopBoundary": "A ≈ (h/2)(d_f + d_l) as a trapezium's average width times the gap, with d_f, d_l and h named as the syllabus does; why it estimates; up to four applications, each with its own first and last length, added; a zero end length; volume as a cross-section's area times a length; capacity in kL. Closes the strand. Not: 'offsets', the 'ends once, middles twice' form, plans and photos (Year 12 r07).",
+     "nextHandoff": "math-s11-t01 (provisional: the wall clock (ma11-wall-clock-v1.png) and the stopwatch (ma12-stopwatch-v1.png), chips '60 s = 1 min', '60 min = 1 h', grey chip 'Applications of measurement: done', chips 'Next: time units', '?')",
+     "anchors": "a land block; the garden pond; a drainage channel (ma12-drainage-channel-v1.png); a garden bed"
+    }
+   ]
+  }
+ }
+}
