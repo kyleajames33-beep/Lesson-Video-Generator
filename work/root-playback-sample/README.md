@@ -415,3 +415,15 @@ Root 3 s playback pass, 22 Nov 2026 (460 s, 10 sheets). Replaces v1 (kKti4nWtV24
 ## chem-y11-m1-v09 v2
 
 Root 3 s playback pass, 22 Nov 2026 (479 s, 10 sheets). Replaces v1 (FgAnF9QTUT0). Only change: brief 261 re-voiced sense-check to remove the unscripted run-on tail; all other scenes and cue times identical by Codex's word-time diff. Sense-check sheet checked: atom-draw simulation runs 0 to 500 atoms with the running average settling near 10.80, the 10.8 coin crossed "no such atom", the final "Ar is a sample average, not a mass number" chip, then a clean transition into the silicon reverse question. Human listening pending.
+
+## chem-y11-m1-v16 v2
+
+Root 3 s playback pass, 23 Nov 2026 (439 s, 10 sheets). First release (v1 was held for the spectroscope run-on tail). Only change from v1: brief 261 re-voiced spectroscope; all other scenes and cue times identical by Codex's word-time diff. Spectroscope sheet checked: lithium and strontium flames feed the spectroscope, lines arrive at 671 and 610 nm (Li) and the 640 to 690, 602 to 610 band plus 461 nm (Sr), "model: brightness not to scale", "more tests for metal ions: Year 12" chip, then the memory line "Colour suggests; spectrum confirms." and the attempt with full question. Human listening pending.
+
+## math-a12-d02 v2
+
+Root 3 s playback pass, 23 Nov 2026 (546 s, 12 sheets). Replaces v1 (gm9_OwAwG_Y). Only change: brief 261 re-voiced scene-07 and scene-08 to remove the unscripted run-on tails; other scenes identical by Codex's word-time diff. Sheets checked: the chain-rule proof builds line by line to (ln a)a^x with the a = e check, the base slider runs 2 to 1 to 1/2 with live gradient readouts (1/2: -0.347 and -0.693) and "a <= 0 not allowed", then the worked example at x = 3 gives 8 ln 2. Human listening pending.
+
+## math-a12-s04 v2
+
+Root 3 s playback pass, 23 Nov 2026 (497 s, 11 sheets). Replaces v1 (6tD3hROvFaw). Only change: brief 261 re-voiced scene-16 to remove the unscripted run-on tail; other scenes identical by Codex's word-time diff. Scene-16 sheet checked: F(1.5) = 21/32, F(0.5) = 5/32, 21/32 - 5/32 = 16/32 = 1/2 framed, the 1/2 bracket on the CDF, crossed slip "5/32 - 21/32 = -1/2" with "probabilities are never negative", then the handoff and key notes hold. Human listening pending.
