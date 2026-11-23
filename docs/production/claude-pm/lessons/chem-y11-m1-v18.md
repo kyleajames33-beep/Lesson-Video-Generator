@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V18: Balanced nuclear equations. How do we balance a nuclear reaction? (design)
 
-Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
+Status: Revision 4 (24 Nov 2026): coherence-audit fix US9 (one balanced fission equation added to scene 9). Narration changed, so the voicing inputs need re-preparation and the changed scene needs the learning review and science check before voicing. Previously Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 5,944 characters (sum of scene strings), 18 scenes, about 527 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,274 characters (sum of scene strings; Revision 3: 5,944), 18 scenes, about 554 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: eighteenth video of Year 11 Chemistry (2017 syllabus), Module 1; second of two nuclear videos (v17 radiation types and radioisotopes, v18 balanced nuclear reactions). It builds on `chem-y11-m1-v08.md` (nuclide notation, mass number and atomic number, isotopes) and `chem-y11-m1-v17.md` (what alpha, beta and gamma are, the nuclear change for each in words, the six named radioisotopes) without re-teaching them. Templates: `phys-y11-fa1-v01.md` (structure), `math-a12-d10.md` (calculation layout: task strip, equation strip, grouped givens, one stage at a time), `bio-y11-fa1-v05.md` (plates), `chem-y11-m1-v17.md` (series conventions). No starter pack exists; the pack work is done here. Route entry: `chem-y11-m1-v18` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson20.sa.html` (SHA256 `9b3f77c9e3c1f1dbd121035c1fa3f627ac9da932adf48f0bfa9d14233b2db378`, recomputed, matches; used: `l20-balanced-nuclear-equations-title` (the A and Z rule, the U-238 alpha and C-14 beta equations with their checks, the "beyond the syllabus" note on fission and fusion), the key-term "transmutation", the Th-234 beta worked example (method: identify the change, new Z, equation, check both totals), the misconception "forgetting to balance the atomic number", the lock-in Co-60 beta task, the I-131 spot-the-error item (mass number wrongly dropped by 1), and `l20-natural-and-human-made-radioisotopes-title` for Co-60's origin by neutron bombardment of Co-59; `l20-half-life-title` is later and not used). Site corrections file checked: no logged item touches lesson 20.
 
@@ -49,7 +49,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 
 Author notes (not learner copy):
 (a) Nuclide data (NNDC NuDat 3; site agrees where given): U-238 (Z 92) α to Th-234 (Z 90); C-14 (Z 6) β⁻ to N-14 (Z 7); Tc-99m (Z 43) isomeric transition to Tc-99 (140.5 keV γ); Co-59 (Z 27, stable, 100% natural cobalt) + n to Co-60 (Z 27); Co-60 β⁻ to Ni-60 (Z 28), followed by 1.17 and 1.33 MeV γ rays from the excited Ni-60; Am-241 (Z 95) α to Np-237 (Z 93); N-14 + n → C-14 + p (the cosmic-ray reaction). Element numbers checked against the IUPAC periodic table: Th 90, Pa 91, U 92, Np 93, Pu 94, Am 95; Fe 26, Co 27, Ni 28, Cu 29; C 6, N 7, O 8.
-(b) Fission and fusion: the site marks them "Beyond the syllabus" for Module 1. One grey tag in scene 8 says "the same two rules balance every nuclear reaction"; no fission example is shown.
+(b) Fission and fusion: the site marks them "Beyond the syllabus" for Module 1. One grey tag in scene 8 says "the same two rules balance every nuclear reaction". Revision 4 (24 Nov 2026, audit US9): one fission example is added at the end of scene 9 (²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n), because the 2017 point ("types of balanced nuclear reactions") allows it and the 2025 point C25-FA1-G2-09 ("Construct balanced nuclear equations for nuclear decay and nuclear fission") needs it, so one take serves both courses. Fusion stays out; no energy released is discussed.
 (c) Positron emission (⁰₊₁e) and electron capture occur in proton-rich nuclei; not taught (v17 note b).
 (d) Gamma notation (Revision 2, root decision 26): written γ alone everywhere on screen. The balance rows may still show "+ 0" for γ so the sums are visible; no ⁰₀γ symbol is printed.
 (e) Charge bookkeeping: the bottom row conserves nuclear charge plus the charge of emitted particles. The atom's orbital electrons are ignored in nuclear equations (the daughter is briefly an ion); not taught.
@@ -58,7 +58,7 @@ Author notes (not learner copy):
 
 Main question: *How do we balance a nuclear reaction?*
 Entry knowledge: v08, v12, v17.
-Stops after: the two conservation rules, notation for five particles, alpha, beta and gamma equations, a human-made neutron-capture reaction, an unknown particle, what changes in the nucleus. No half-life, fission, fusion or positron emission.
+Stops after: the two conservation rules, notation for five particles, alpha, beta and gamma equations, a human-made neutron-capture reaction, one fission equation (Revision 4), an unknown particle, what changes in the nucleus. No half-life, fusion, fission energy or chain reactions, or positron emission.
 Handoff: chem-y11-m1-v19, ion charges and neutral formulae.
 
 ## Visual upgrade (Revision 3)
@@ -118,14 +118,14 @@ Visual: board clears to a three-row change table beside a longer element strip (
 Upgrade (Revision 3): The uranium-238 chain shows exactly three labelled steps on the nucleus counter: "α" (U-238 to Th-234), "β" (to Pa-234) and "β" (to U-234), each step tagged in its colour at 38 px. The gamma row is illustrated on a separate small nucleus beside the table, labelled "any nucleus with extra energy" in dark ink, with its own two readouts holding; it is not drawn as a fourth step of the chain. The grey tags are dark ink.
 
 ### 9. a human-made reaction: making cobalt-60
-> Now a reaction people make happen. In a nuclear reactor, cobalt-fifty-nine is hit with **neutrons**. When its nucleus absorbs one, the top number goes up by one, from fifty-nine to sixty. The bottom number stays at twenty-seven, because a neutron has no **charge**. So it's still cobalt, just a heavier isotope, cobalt-**sixty**. That's how the cobalt-sixty used in cancer treatment is **made**.
+> Now a reaction people make happen. In a nuclear reactor, cobalt-fifty-nine is hit with **neutrons**. When its nucleus absorbs one, the top number goes up by one, from fifty-nine to sixty. The bottom number stays at twenty-seven, because a neutron has no **charge**. So it's still cobalt, just a heavier isotope, cobalt-**sixty**. That's how the cobalt-sixty used in cancer treatment is **made**. A neutron can also split a heavy nucleus into two smaller ones, which is called **fission**. When uranium-two-thirty-five absorbs a neutron, it splits into barium-one-forty-one and krypton-ninety-two, and three neutrons fly out. The tops add to two thirty-six on both sides, and the bottoms to ninety-two, so the same two rules **hold**.
 
-Visual: board clears; `phys-y11-gamma-source-v1.png` (from v17, about 320 px tall, solid) stands at the left from the first frame; the faint cobalt line from the opening frame slides back up and rewrites in full ink as the equation strip "⁵⁹₂₇Co + ¹₀n → ?". Task strip: "Neutron capture in a reactor: find the product". On "neutrons" a grey neutron flies in from the left and joins a coded cobalt nucleus, tag "human-made: in a reactor". The amber row writes "59 + 1 = 60" on the second sentence. On "charge" the teal row writes "27 + 0 = 27". On "sixty" the element strip ("26 Fe, 27 Co, 28 Ni") lights 27 and the equation completes "⁵⁹₂₇Co + ¹₀n → ⁶⁰₂₇Co"; both bands tick; tag "same element, heavier isotope". Hand tags: amber "+1 nucleon" with a pen arrow from the neutron to the 60, teal "no charge added" under the 27. On "made" a pen arrow runs from the product to the source plate, tag "cobalt-60 source: cancer treatment, sterilising".
+Visual: board clears; `phys-y11-gamma-source-v1.png` (from v17, about 320 px tall, solid) stands at the left from the first frame; the faint cobalt line from the opening frame slides back up and rewrites in full ink as the equation strip "⁵⁹₂₇Co + ¹₀n → ?". Task strip: "Neutron capture in a reactor: find the product". On "neutrons" a grey neutron flies in from the left and joins a coded cobalt nucleus, tag "human-made: in a reactor". The amber row writes "59 + 1 = 60" on the second sentence. On "charge" the teal row writes "27 + 0 = 27". On "sixty" the element strip ("26 Fe, 27 Co, 28 Ni") lights 27 and the equation completes "⁵⁹₂₇Co + ¹₀n → ⁶⁰₂₇Co"; both bands tick; tag "same element, heavier isotope". Hand tags: amber "+1 nucleon" with a pen arrow from the neutron to the 60, teal "no charge added" under the 27. On "made" a pen arrow runs from the product to the source plate, tag "cobalt-60 source: cancer treatment, sterilising". On "fission" (Revision 4, audit US9) stage change: the cobalt work shrinks to a strip at the top; task strip "Fission in a reactor: check both rows"; a large coded nucleus tagged "²³⁵₉₂U" takes in a grey neutron from the left, wobbles and splits into two smaller nuclei tagged "¹⁴¹₅₆Ba" and "⁹²₃₆Kr" while three grey neutrons fly out (abstract particles; no plate). Gloss chip "fission: a heavy nucleus splits into two smaller nuclei". On "three neutrons fly out" the equation strip writes (48 px): "²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n", the "3" teal with an amber hand tag "3 neutrons: count all three". On "two thirty-six" the amber row writes "235 + 1 = 236 | 141 + 92 + 3 × 1 = 236"; on "the bottoms to ninety-two" the teal row writes "92 + 0 = 92 | 56 + 36 + 3 × 0 = 92"; the element strip lights "36 Kr" and "56 Ba". On "hold" both bands tick and the line is framed in a dark-ink box with a green tick.
 
 ### 10. finding a missing particle
 > Sometimes the missing piece is the particle, not the nucleus. High in the atmosphere, a neutron from cosmic rays hits nitrogen-fourteen, and makes carbon-fourteen plus something **else**. On the left, the tops add to fifteen, and the bottoms to **seven**. Carbon-fourteen accounts for fourteen and six. So the missing particle has a top of one, and a bottom of **one**. One nucleon, with a charge of plus one, is a **proton**.
 
-Visual: board clears; the cobalt work shrinks to a dim strip at the top. Task strip: "Find particle X". Equation strip: "¹⁴₇N + ¹₀n → ¹⁴₆C + X". On "else" the X glows and `g1-tree-v1.png` (from v17, about 300 px tall, solid) appears at the left, tag "natural: carbon-14 in the atmosphere". On "seven" the left sums write: amber "14 + 1 = 15", teal "7 + 0 = 7". On "one" (third) the right sums write: amber "15 − 14 = 1", teal "7 − 6 = 1", and X becomes "¹₁X". On "proton" the proton card in the reference strip glows and slides into place: "¹⁴₇N + ¹₀n → ¹⁴₆C + ¹₁p", the "¹₁p" framed in a dark-ink box; both bands tick; hand tags amber "what's left over: 1" and teal "charge left over: +1", with a pen ring round "¹₁".
+Visual: board clears; the cobalt and fission work shrink to a strip at the top. Task strip: "Find particle X". Equation strip: "¹⁴₇N + ¹₀n → ¹⁴₆C + X". On "else" the X glows and `g1-tree-v1.png` (from v17, about 300 px tall, solid) appears at the left, tag "natural: carbon-14 in the atmosphere". On "seven" the left sums write: amber "14 + 1 = 15", teal "7 + 0 = 7". On "one" (third) the right sums write: amber "15 − 14 = 1", teal "7 − 6 = 1", and X becomes "¹₁X". On "proton" the proton card in the reference strip glows and slides into place: "¹⁴₇N + ¹₀n → ¹⁴₆C + ¹₁p", the "¹₁p" framed in a dark-ink box; both bands tick; hand tags amber "what's left over: 1" and teal "charge left over: +1", with a pen ring round "¹₁".
 
 ### 11. what changes in the nucleus
 > So what actually changes in each nucleus? Alpha decay removes two protons and two neutrons. Beta decay turns one neutron into a proton. Both change the number of protons, so both turn one element into another. That's called **transmutation**. Gamma changes no particles at all. And adding a neutron keeps the same element, but makes a heavier **isotope**.
@@ -187,7 +187,7 @@ The handoff board of scene 17, held about 2 seconds: at the left a small nucleus
 - **Response opportunity:** prediction (3 s); two unseen tasks with every condition on the card, including the periodic table extract; 10 s each. Feedback about 26 s and 30 s.
 - **Avoided double teaching:** nuclide notation recalled from v08 in one sentence each; the nature of alpha, beta and gamma recalled from v17 (cards only).
 - **Syllabus coverage:** `C1-IQ2-05` "types of balanced nuclear reactions" (alpha, beta, gamma, neutron capture, a reaction with an unknown particle), using natural (U-238, C-14, N-14 to C-14) and human-made (Co-60, Am-241, Tc-99m) radioisotopes.
-- **Out of scope by design:** half-life; fission and fusion (author note b); positron emission and electron capture (note c); energy released.
+- **Out of scope by design:** half-life; fusion, and fission beyond one balanced example (author note b); positron emission and electron capture (note c); energy released.
 
 ## Practice questions and model answers
 
@@ -205,18 +205,19 @@ Model answer: In beta decay a neutron changes into a proton and an electron is e
 | C-14 beta | 14 = 14 + 0; 6 = 7 + (−1) (N) | 5, 6, 8, 12, 18 |
 | Tc-99m gamma | 99 = 99 + 0; 43 = 43 + 0 | 7 |
 | Co-59 neutron capture | 59 + 1 = 60; 27 + 0 = 27 (Co) | 9, 18 |
+| U-235 fission (Revision 4) | ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n; tops 235 + 1 = 236 = 141 + 92 + 3; bottoms 92 + 0 = 92 = 56 + 36 + 0 | 9 |
 | N-14 + n → C-14 + X | tops 14 + 1 = 15; bottoms 7 + 0 = 7; X: 15 − 14 = 1, 7 − 6 = 1 (proton) | 10 |
 | I-131 (crossed example) | wrong ¹³⁰₅₄Xe; correct ¹³¹₅₄Xe | 12 |
 | Am-241 alpha (A1) | 241 − 4 = 237; 95 − 2 = 93 (Np); crossed ²³⁷₉₁Pa | 13, 14 |
 | Co-60 beta (A2) | 60 unchanged; 27 + 1 = 28 (Ni); crossed ⁶⁰₂₆Fe | 15, 16 |
 | Na⁺, Cl⁻ | 11 protons, 10 electrons (+1); 17 protons, 18 electrons (−1) | 17 |
-| Element numbers | Ra 88, Ac 89, Th 90, Pa 91, U 92, Np 93, Pu 94, Am 95; B 5, C 6, N 7, O 8; Fe 26, Co 27, Ni 28, Cu 29 | 4, 6, 8, 9, 13 to 16 |
+| Element numbers | Ra 88, Ac 89, Th 90, Pa 91, U 92, Np 93, Pu 94, Am 95; B 5, C 6, N 7, O 8; Fe 26, Co 27, Ni 28, Cu 29; Kr 36, Ba 56 (Revision 4) | 4, 6, 8, 9, 13 to 16 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
-- Every equation balances in both rows (checked by script, 5 November): U-238 α (238 = 234 + 4; 92 = 90 + 2); C-14 β (14 = 14 + 0; 6 = 7 − 1); Tc-99m γ (99, 43); Co-59 + n (59 + 1 = 60; 27 + 0 = 27); N-14 + n → C-14 + p (15 = 15; 7 = 7); Am-241 α (241 = 237 + 4; 95 = 93 + 2); Co-60 β (60 = 60 + 0; 27 = 28 − 1).
-- Atomic numbers against the IUPAC periodic table: Ac 89, Th 90, Pa 91, U 92, Np 93, Pu 94, Am 95, Ra 88; Fe 26, Co 27, Ni 28, Cu 29; B 5, C 6, N 7, O 8; I 53, Xe 54; Tc 43; Na 11, Cl 17.
-- Decay modes against NuDat 3: U-238 α; C-14 β⁻; Tc-99m IT (γ); Co-60 β⁻; Am-241 α; formation of C-14 by ¹⁴N(n,p)¹⁴C.
+- Every equation balances in both rows (checked by script, 5 November): U-238 α (238 = 234 + 4; 92 = 90 + 2); C-14 β (14 = 14 + 0; 6 = 7 − 1); Tc-99m γ (99, 43); Co-59 + n (59 + 1 = 60; 27 + 0 = 27); U-235 + n → Ba-141 + Kr-92 + 3n (236 = 141 + 92 + 3; 92 = 56 + 36 + 0; Revision 4); N-14 + n → C-14 + p (15 = 15; 7 = 7); Am-241 α (241 = 237 + 4; 95 = 93 + 2); Co-60 β (60 = 60 + 0; 27 = 28 − 1).
+- Atomic numbers against the IUPAC periodic table: Ac 89, Th 90, Pa 91, U 92, Np 93, Pu 94, Am 95, Ra 88; Fe 26, Co 27, Ni 28, Cu 29; B 5, C 6, N 7, O 8; I 53, Xe 54; Tc 43; Na 11, Cl 17; Kr 36, Ba 56.
+- Decay modes against NuDat 3: U-238 α; C-14 β⁻; Tc-99m IT (γ); Co-60 β⁻; Am-241 α; formation of C-14 by ¹⁴N(n,p)¹⁴C; ²³⁵U(n,f) with the ¹⁴¹Ba + ⁹²Kr + 3n split, a standard textbook example (one of many possible fission pairs).
 
 ## Memory aid check
 
@@ -224,6 +225,8 @@ Model answer: In beta decay a neutron changes into a proton and an electron is e
 - **Considered, not used:** "alpha: minus four, minus two" chant (a rule without its cause; the pattern is shown in scene 8 and derived each time).
 
 ## Narration length estimate
+
+Revision 4 count (24 November; build parser rules, sum of the 18 scene strings): **6,274 characters** (scene 9: 356 to 709), about 554 s (about 527 s, plus 25 s of speech and about 2 s of settling for the fission split; inside the 570 s cap).
 
 Revision 2 count (7 November; build parser rules, the total is the sum of the 18 scene strings): **5,944 characters** (Revision 1 was 5,959 as a sum, stated 5,976 with the joining spaces; scene 12 lost 15). At 13.3 characters per second the speech is about 447 s; add about 3 s for the balancing writes in scenes 4, 6 and 10, 3 s for the scene 8 chain to settle, 2 s for the scene 8 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s of quiet notes hold: **about 527 s**, inside 5,500 to about 7,000 characters and under 570 s.
 
@@ -345,3 +348,12 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: narration unchanged; the time estimate is unchanged.
 
 Calls for root: none beyond root decisions 26, 37 and 38.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fix US9 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`).
+
+- Narration change, scene 9: three sentences added after the cobalt-60 example: "A neutron can also split a heavy nucleus into two smaller ones, which is called fission. When uranium-two-thirty-five absorbs a neutron, it splits into barium-one-forty-one and krypton-ninety-two, and three neutrons fly out. The tops add to two thirty-six on both sides, and the bottoms to ninety-two, so the same two rules hold." Scene 9: 356 to 709 characters; total 5,944 to 6,274 (inside the band).
+- Scene 9 Visual: a stage change on "fission" with a coded splitting nucleus, the equation ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + 3 ¹₀n, the two check rows (236 = 141 + 92 + 3 × 1; 92 = 56 + 36 + 3 × 0) and a plain gloss "fission: a heavy nucleus splits into two smaller nuclei". Scene 10's opening strip now carries the cobalt and fission work.
+- Author note (b), Stops after, Out of scope, Numbers used, Numbers to verify: updated for the one fission example (fusion still out). Checked: 235 + 1 = 236 = 141 + 92 + 3; 92 + 0 = 92 = 56 + 36 + 0; Kr 36, Ba 56.
+- Why: the 2017 point ("types of balanced nuclear reactions") allows it and the 2025 point C25-FA1-G2-09 requires a fission equation, so the one take serves both courses.

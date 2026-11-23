@@ -1,8 +1,8 @@
 # Year 11 Chemistry M4 V04: Enthalpy of solution. Why can dissolving an ionic substance warm or cool water? (design)
 
-Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
+Status: Revision 4 (24 Nov 2026): coherence-audit fixes US3 and US4 (course labels removed; one spoken in scene 17). Narration changed, so the voicing inputs need re-preparation before voicing. Previously Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
-Narration 6,081 characters, 18 scenes, about 551 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 6,085 characters (Revision 3: 6,081), 18 scenes, about 551 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: fourth Module 4 video of Year 11 Chemistry (2017 syllabus), playlist entry 73, between `chem-y11-m4-v03` and `chem-y11-m4-v05`; a concept, practical and calculation video. Templates: `chem-y11-m4-v03.md` (same designer, series layout), `chem-y11-m4-v02.md` (calculation staging, colour key), `chem-y11-m4-v01.md` (enthalpy-level styling), `math-a12-d10.md`, `phys-y11-fa1-v01.md`, `bio-y11-fa1-v05.md`. No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m4-v04` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Measure dissolution temperature, model competing separation/hydration energy and compute an enthalpy with uncertainty."; next handoff: "Why does a catalyst change activation energy but not reaction enthalpy?"). Site lesson read in full (6 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson04.sa.html` (SHA256 `045d15bcb83112f6eeb794627f78a5d87b823b7bf5ffca19c14c3a3756b09d7d`, recomputed, matches the route), sections `l04-the-dissolution-calorimeter-setup-title`, `l04-worked-examples-title`. Used: the cold-pack and NaOH hook ("They're both ionic solids dissolving in water. What's the difference?"); the setup (polystyrene cup, weighed water, weighed solid, stir, record maximum or minimum); "m = m(water) + m(solute)"; n = moles of solid dissolved; ΔHsoln = −q/n; the two-step model (lattice dissociation, endothermic; hydration, exothermic; "the larger step decides the sign") and its enthalpy-level diagram; the sign rule and trap 3 ("Temperature drop must mean negative ΔHsoln"); traps 1 and 2 (n of water; m of water only); the safety paragraph (glasses and gloves; NaOH corrosive, few pellets, solid into water; ammonium nitrate an oxidiser); worked example 1's masses (5.35 g NH₄Cl, 53.49 g mol⁻¹, 100.0 g water, 0.1000 mol, starting at 22.5 °C) with a corrected final temperature (site note 1); worked example 2's NaOH context (A1 uses new numbers); the accepted values +14.8 (NH₄Cl) and +25.7 (NH₄NO₃). Not used: the three-calorimeter comparison table (one sentence in scene 11 is enough), entropy (`chem-y11-m4-v12` and later), "Born–Haber" naming (site note 3), the 3M history (site note 4).
 
@@ -60,7 +60,7 @@ Author notes (not learner copy):
 (b) NaCl lattice dissociation enthalpy about +787 kJ mol⁻¹ (CRC lattice energy table; some tables give 786); total hydration enthalpy of Na⁺ and Cl⁻ derived as ΔsolH − lattice = 3.9 − 787 = −783 kJ mol⁻¹ (published single-ion values vary by a few kJ, so the pair is shown as "about"). Science check confirms.
 (c) Calcium chloride's strongly negative ΔsolH comes largely from the hydration of the small, doubly charged Ca²⁺ ion; not spoken (one sentence of extra theory), available if the learning review asks why.
 (d) Tabulated enthalpies of solution depend on the final concentration; school results are estimates for the dilute solution made (site key term). Not spoken.
-(e) Why an endothermic dissolution happens at all (entropy increase) is a later Module 4 question (`C4-IQ3`); a learner may ask. No tag here, to keep one idea; the learning review may add a grey "why does it happen at all? later in Module 4" tag.
+(e) Why an endothermic dissolution happens at all (entropy increase) is a later question in this course (`C4-IQ3`); a learner may ask. No tag here, to keep one idea; the learning review may add a grey "why does it happen at all? later" tag.
 (f) Ideal fall for the worked example: 0.1000 mol × 14.78 kJ ÷ (105.35 g × 4.18) = 3.36 °C; shown 3.2 °C (a little heat gained from the room). A1 ideal rise 0.0500 × 44.51 ÷ (102.0 × 4.18) = 5.22 °C; shown 5.0 °C.
 (g) Safety and method reference (Revision 2, brief 184; m3 root decision 19): safety glasses; gloves for sodium hydroxide; ammonium chloride harmful if swallowed and an eye irritant; sodium hydroxide corrosive (2 g in 100 mL is about 0.5 mol L⁻¹); add solid to water; ammonium nitrate (an oxidiser) appears only in the cold pack, not in the practical. No cup, dose, probe or handling method here is presented as school-approved: the method is shown on the painted stills with coded readouts, and a grey chip "Follow your school's approved method" stays on screen through scene 6. Before the practical check is marked complete, root links the applicable school dissolution method and the product SDS for ammonium chloride and sodium hydroxide; Codex records both references.
 (i) Uncertainty scope (Revision 2, brief 184): ±0.1 °C is an assumed probe accuracy (a manufacturer's specification would replace it), not the display resolution. The ±0.9 kJ mol⁻¹ interval propagates the readings and masses only; heat exchange with the room and the assumption that the solution has water's specific heat capacity are separate systematic effects, so the interval does not show where the true value lies.
@@ -181,7 +181,7 @@ Visual: card shrinks. A small level diagram builds on cue: "K⁺ and NO₃⁻ se
 Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the first frame: "solid KNO₃ dissolves in water | the solution's temperature decreases".
 
 ### 17. conclusion and handoff
-> So dissolving can warm or cool water because it happens in two steps. Separating the ions takes energy in, hydrating them gives energy out, and the bigger step wins. Notice that delta H only depended on where the route started and where it finished. In Module Three, a catalyst gave hydrogen peroxide a different route. Does a different route change delta **H**?
+> So dissolving can warm or cool water because it happens in two steps. Separating the ions takes energy in, hydrating them gives energy out, and the bigger step wins. Notice that delta H only depended on where the route started and where it finished. In the rates videos, a catalyst gave hydrogen peroxide a different route. Does a different route change delta **H**?
 
 Visual: the memory line returns small at the top. On "Separating the ions takes energy in" and "hydrating them gives energy out" the ammonium chloride level diagram draws at the left with its arrows; on "the bigger step wins" the blue net arrow "ΔH = +14.8 kJ mol⁻¹ (data)". On "where the route started and where it finished" the start and end levels ring teal with the tag "ΔH depends only on start and end". On "a catalyst gave hydrogen peroxide a different route" `y11c-flask-peroxide-mno2-plug-fizz-v1.png` slides in at the right with "hydrogen peroxide + manganese dioxide: a different route". On "H" the amber chip "A different route: does ΔH change?" and the chip "Next: Why does a catalyst change activation energy but not reaction enthalpy?" write. Hold about 2 seconds. This is the final frame (m4-v05 opens on it).
 
@@ -247,6 +247,8 @@ Checked with Python (6 November); Codex to re-check.
 - **Considered, not used:** "Cold pack: costs win; hot pack: hugs win" (cute, but "hugs" personifies water and the course avoids character metaphors).
 
 ## Narration length estimate
+
+Revision 4 count (24 November; build parser rules, sum of scene strings): **6,085 characters** (scene 17: 358 to 362), about 551 s.
 
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **6,081 characters**, 18 scenes (per scene: 351, 364, 383, 488, 339, 393, 479, 397, 245, 419, 466, 130, 281, 430, 224, 259, 358, 75; Revision 1: 5,968). At 13.3 characters per second the speech is about 457 s; add about 13 s of settling (the lattice lens in 2 and 3, the contest slider in 4, the level diagrams in 5, the number line in 11), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 551 s** (Revision 1: about 540 s).
 
@@ -317,7 +319,7 @@ Previous: Why does combustion calorimetry underestimate a fuel enthalpy? Next: W
 - **1. Worked-example reading (root).** The site's 22.5 → 18.1 °C is replaced by 22.5 → 19.3 °C (site note 1) so that the result is slightly low, as heat gain predicts. Alternative: reuse m4-v01's illustrative cup (5.0 g in 50.0 mL, 21.0 → 15.2 °C, +14.3 kJ mol⁻¹), whose ±0.2 °C band ends almost exactly at 14.8 (a less clean comparison).
 - **2. NaCl numbers (science check).** About +787 and −783 kJ mol⁻¹ (author note b). If the science check prefers not to show single numbers, the bars keep their heights with "about 790" and "about 790, slightly less".
 - **3. Peroxide plate dependency (resolved in Revision 2).** The flask was delivered in brief 183 and is used as painted.
-- **4. Entropy tag (learning review).** Author note e: add a grey "why does it happen at all? later in Module 4" tag in scene 5 if reviewers expect students to ask.
+- **4. Entropy tag (learning review).** Author note e: add a grey "why does it happen at all? later" tag in scene 5 if reviewers expect students to ask.
 - **5. Length (learning review).** Reserve cut: scene 11's sentence about heat leaking in (about 75 characters).
 
 ## Review notes
@@ -368,3 +370,10 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: 6,081 characters, unchanged; about 536 s (it was about 551 s).
 
 Calls for root: a watch glass of white crystals stands for potassium nitrate on the attempt 2 card.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fixes US3 and US4 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`).
+
+- US4, scene 17 narration: "In Module Three, a catalyst gave hydrogen peroxide a different route." is now "In the rates videos, a catalyst gave hydrogen peroxide a different route." Scene 17: 358 to 362 characters; total 6,081 to 6,085. Cues unchanged.
+- US3: the optional grey tag in author note (e) and open decision 4 now reads "why does it happen at all? later" (was "... later in Module 4"); author note (e) says "a later question in this course".

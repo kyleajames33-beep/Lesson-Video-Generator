@@ -1,8 +1,8 @@
 # Year 11 Chemistry M1 V27: Solubility. How can attractions explain whether a substance dissolves? (design)
 
-Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
+Status: Revision 4 (24 Nov 2026): coherence-audit fixes US1, US3 and US4 (final frame matched to the built `V27Final`; "Module 1 complete" tag removed; first spoken sentence of scene 15 removed). Narration changed in scene 15 only, so this design needs re-preparation of its voicing inputs before voicing. Previously Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
-Narration 5,516 characters (sum of scene strings), 16 scenes, about 497 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,486 characters (sum of scene strings; Revision 3: 5,516), 16 scenes, about 495 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: twenty-seventh and last video of Year 11 Chemistry (2017 syllabus), Module 1; the solubility video, after `chem-y11-m1-v26.md` (intermolecular forces) and before `chem-y11-m2-v01` (conservation of mass in balanced equations). Templates: `phys-y11-fa1-v01.md` (structure), `chem-y11-m1-v14.md`, `chem-y11-m1-v24.md` and `chem-y11-m1-v26.md` (series conventions). No starter pack exists; the pack work is done here. Route entry: `chem-y11-m1-v27` in `../../programme/chem-y11-route-inputs.json`. Site lesson read in full (5 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson12.sa.html` (SHA256 `fc891bb1b48fe54628821bf7809bb06df59a90c5dfef259c51307abb815218e7`, recomputed, matches the route; used: the recall prompt (salt in water but not oil; wax in oil but not water), `l12-why-do-things-dissolve-an-imf-perspective-title` (the three-step energy balance and its "first-pass heuristic, not a law" caution), `l12-water-as-a-polar-solvent-why-it-s-exceptiona-title` (ion–dipole forces, hydration shell, "not all ionic compounds dissolve"), `l12-non-polar-solvents-and-hydrophobic-substance-title` (dispersion with dispersion; iodine in hexane; the lab-safety note), the iodine-extraction short answer, the misconception "polar molecules attract non-polar molecules" framed as "not attracted enough", Activity 2 B ("oil has no intermolecular forces" is wrong) and the drill on ethanol's small non-polar part). Site corrections file checked: no logged item touches lesson 12.
 
@@ -32,7 +32,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Memory aid:** "Dissolving is a trade: like dissolves like because the trade is fair." Checked in "Memory aid check".
 - **Attempts (original wording, HSC style).** A1: paraffin wax dissolves in hexane but not in water; explain using intermolecular forces (3 marks). Crossed: "water repels the wax". A2: glucose, five O–H groups, very soluble in water, hardly at all in hexane; explain (3 marks). Crossed: "glucose dissolves because it is ionic".
 - **Mistake scene:** none separate. "Polar and non-polar molecules repel" (5, crossed in 12); "oil floats because it doesn't dissolve" (5, density tag); "all ionic compounds dissolve in water" (9); "like dissolves like is a law" (9); "glucose is ionic" (crossed in 14).
-- **Module close and handoff (route next: `chem-y11-m2-v01`, "Why must mass be conserved when a chemical equation is balanced?").** Scene 15: dissolving 10 g of salt in 100 g of water gives 110 g of solution, because every particle is still there; a chemical reaction rearranges atoms into new substances and the mass still does not change. Final frame: the balance plate `y11c-top-pan-balance-v1.png` (v06's request) with the salt-solution beaker on the pan, coded display "110.0 g", small rows "water 100.0 g + salt 10.0 g", a grey tag "beaker tared" and the chip "Next: why must mass be conserved when a chemical equation is balanced?". A small grey tag top right: "Module 1 complete".
+- **Close and handoff (route next: `chem-y11-m2-v01`, "Why must mass be conserved when a chemical equation is balanced?").** Scene 15: dissolving 10 g of salt in 100 g of water gives 110 g of solution, because every particle is still there; a chemical reaction rearranges atoms into new substances and the mass still does not change. Final frame (audit US1, 24 Nov 2026): exactly `V27Final` as built in `src/explainer/lessons/chem-y11-m2-v01/opening.tsx` (the builder imports it; m2-v01 is published and opens on it): heading "Why some things dissolve" top left; under it the navy-outline chip "Next: why must mass be conserved when a chemical equation is balanced?"; the balance plate at `G27 = balGeo(96, 440, 460)` with the salt-solution beaker (`m5x-unsaturated-beaker-v1.png`) on the pan and the display "110.0 g", tag "beaker tared"; rows "water 100.0 g + salt 10.0 g" and "100.0 + 10.0 = 110.0 g"; the ion lens at the right (Na⁺ and Cl⁻ among water molecules), tag "every particle still there". No course label on screen or in speech.
 - **Site notes (read 5 November; for root to log in `../site-corrections-chem-y11.md` if accepted):**
   1. `l12` worked example 2, final step: "Ionic compounds tend to dissolve in water if and only if their hydration energy exceeds their lattice energy." This contradicts the site's own caution in the same lesson that entropy matters (some salts, such as ammonium nitrate, dissolve while absorbing energy). Suggest: "tend to dissolve when the energy released on hydration is comparable to, or greater than, the lattice energy; entropy also contributes".
   2. `l12-why-do-things-dissolve-an-imf-perspective-title`: "If the solute is non-polar (hydrophobic), no energy is released, the water network is disrupted for no gain". Some energy is released through dispersion attractions between the solute and water; it is too little to compensate (as the site's own misconception card says). Suggest "little energy is released".
@@ -61,7 +61,7 @@ Author notes (not learner copy):
 
 Main question: *How can attractions explain whether a substance dissolves?*
 Entry knowledge: v26, v23, v22, v03, v06; Stage 5 solutions.
-Stops after: the trade, salt in water and hexane, oil and water, iodine, polar and non-polar parts, silver chloride, the guide not a law, the Module 1 close. No entropy, lattice or hydration energy names, soaps or solubility rules.
+Stops after: the trade, salt in water and hexane, oil and water, iodine, polar and non-polar parts, silver chloride, the guide not a law, the close. No entropy, lattice or hydration energy names, soaps or solubility rules.
 Handoff: chem-y11-m2-v01, conservation of mass.
 
 ## Visual upgrade (Revision 3)
@@ -153,9 +153,9 @@ Visual: `QuestionCard`: "A glucose molecule (C₆H₁₂O₆) contains five –O
 Visual: card shrinks to the top with its picture kept small. A navy givens strip on the answer side: "glucose: 5 –OH groups | water: very soluble | hexane: almost insoluble". A glucose ring (skeletal, five O–H ringed violet) with water molecules joining by violet dots, row (44 px) "–OH groups hydrogen bond with water: fair trade: very soluble", framed; row "hexane: dispersion only, cannot replace glucose's hydrogen bonds: insoluble", framed with a green tick. On "trap" a chip "glucose is ionic" fades in and is struck in red, red hand tag "polar molecule; stays whole". Hold about 1 second.
 
 ### 15. handoff: nothing lost
-> That's the end of Module one. Here's one more thing about dissolving. Weigh a hundred grams of water, and ten grams of salt, then dissolve the salt. The solution weighs a hundred and ten **grams**. Nothing is lost, because every ion is still there. Dissolving is a physical change. In a chemical reaction, atoms rearrange into new substances, and the mass still doesn't change. Next time, we'll find out why mass must be conserved when a chemical equation is **balanced**.
+> Here's one more thing about dissolving. Weigh a hundred grams of water, and ten grams of salt, then dissolve the salt. The solution weighs a hundred and ten **grams**. Nothing is lost, because every ion is still there. Dissolving is a physical change. In a chemical reaction, atoms rearrange into new substances, and the mass still doesn't change. Next time, we'll find out why mass must be conserved when a chemical equation is **balanced**.
 
-Visual: board clears to `y11c-top-pan-balance-v1.png` (v06's request), a grey tag "Module 1 complete" at the top right. The empty beaker (`m6-beaker-v1.png`) sits on the pan and the coded display reads "0.0 g", tag "beaker tared". Rows write as spoken: "water 100.0 g", "salt 10.0 g". The beaker cross-fades to `m5x-unsaturated-beaker-v1.png`; on "grams" the display ticks to "110.0 g" and the row "100.0 + 10.0 = 110.0 g" writes. On the sixth sentence a small lens shows Na⁺ and Cl⁻ ions among water molecules, tag "every particle still there". On "balanced" the chip writes: "Next: why must mass be conserved when a chemical equation is balanced?". Hold about 2 seconds. This is the final frame (`chem-y11-m2-v01` opens on it).
+Visual: board clears to `y11c-top-pan-balance-v1.png` (v06's request) at `G27 = balGeo(96, 440, 460)`, heading "Why some things dissolve" (60 px, hand, dark ink) top left. The empty beaker (`m6-beaker-v1.png`) sits on the pan and the coded display reads "0.0 g", tag "beaker tared". Rows write as spoken and settle as one row (44 px): "water 100.0 g + salt 10.0 g". The beaker cross-fades to `m5x-unsaturated-beaker-v1.png`; on "grams" the display ticks to "110.0 g" and the row "100.0 + 10.0 = 110.0 g" writes. On the fifth sentence (Revision 4 numbering) a lens at the right shows Na⁺ and Cl⁻ ions among water molecules, tag "every particle still there". On "balanced" the chip writes under the heading (navy outline, 44 px): "Next: why must mass be conserved when a chemical equation is balanced?". Hold about 2 seconds. The scene ends exactly on `V27Final` (`src/explainer/lessons/chem-y11-m2-v01/opening.tsx`; imported, not redrawn), which `chem-y11-m2-v01` opens on. No "complete" tag.
 
 ### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -217,6 +217,8 @@ Checked with Python (5 November); Codex to re-check.
 - **Considered, not used:** "hydrophobic and hydrophilic" (useful later in biology; adds two terms here).
 
 ## Narration length estimate
+
+Revision 4 count (24 November; build parser rules, sum of the 16 scene strings): **5,486 characters** (scene 15: 464 to 434, after removing "That's the end of Module one."), about 495 s. It sits 14 characters under the band floor; kept, not padded.
 
 Revision 2 count (7 November; build parser rules, the total is the sum of the 16 scene strings): **5,516 characters** (Revision 1 was 5,561 as a sum, stated 5,576 with the joining spaces). At 13.3 characters per second the speech is about 415 s; add about 5 s for the hydration lens in scene 3 and the layer forming in scene 5, 3 s for the hydration counter and chain slider to settle (3, 8), 2 s for the scene 10 hold, 3 s for the prediction countdown, 20 s for the two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 45 s of quiet notes hold: **about 497 s**, inside 5,500 to about 7,000 characters and under 570 s.
 
@@ -293,7 +295,7 @@ Previous: Why molecular substances have very different boiling points. Next: Mod
 
 ## Open decisions
 
-- **1. m2-v01 opening (root).** The final frame (balance at 110.0 g with "Module 1 complete") is the frame `chem-y11-m2-v01` must open on; m2-v01's design should start from salt water's conserved mass and move to a reaction.
+- **1. m2-v01 opening (root).** Resolved 24 Nov 2026: the final frame (balance at 110.0 g, built as `V27Final` in m2-v01, with no course tag) is the frame `chem-y11-m2-v01` must open on; m2-v01's design should start from salt water's conserved mass and move to a reaction.
 - **2. Entropy (root).** Kept to author notes and one grey tag (decision 29), now "mixing itself helps" (Revision 2, brief 179), plus one spoken sentence in scene 10 that mixing helps because particles spread out. The word "entropy" is not used.
 - **3. Silver chloride (root).** Chosen as the "not a law" example over BaSO₄ (site), with a simplified reason (site note 3). Confirm.
 - **4. Balance plate dependency (root).** Delivered; closed.
@@ -319,7 +321,7 @@ Visual upgrade (`../maths-visual-standard.md`, build-agent-brief root rules):
 - Question cards carry pictures: the paraffin candle (attempt 1, enlarged) and a sugar bowl (attempt 2).
 - Memory aid framed in scene 10 and on the notes screen; key notes cut to five short bullets with a 45 s quiet hold.
 - Colour roles and type sizes stated in Decisions.
-- The final frame (balance reading 110.0 g, "Module 1 complete") is unchanged; `chem-y11-m2-v01` opens on it.
+- The final frame (balance reading 110.0 g) is unchanged; `chem-y11-m2-v01` opens on it. (Revision 4, 24 Nov 2026: the "Module 1 complete" tag that stood here is removed.)
 - New plates: none.
 
 Narration: 5,516 characters as the sum of the 16 scene strings (Revision 1: 5,561 as a sum, 5,576 stated with joining spaces); about 497 s with holds. Bold cues quoted in spoken order; no em dashes.
@@ -342,3 +344,13 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: narration unchanged; the time estimate is unchanged.
 
 Calls for root: none beyond root decisions 29, 37 and 38.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fixes (`../checks/chem-y11-coherence-audit-2026-11-23.md`, US1, US3 and US4; record in `../chem-y11-audit-fixes-2026-11-24.md`).
+
+- US1: scene 15's Visual and the Decisions final-frame line now describe exactly the built `V27Final` (`src/explainer/lessons/chem-y11-m2-v01/opening.tsx`): heading "Why some things dissolve", navy chip under it, balance at `balGeo(96, 440, 460)` reading "110.0 g", "beaker tared", rows "water 100.0 g + salt 10.0 g" and "100.0 + 10.0 = 110.0 g", the lens tagged "every particle still there". The builder imports `V27Final` so the seam is pixel-identical.
+- US3: the grey "Module 1 complete" tag is removed everywhere (Decisions, scene 15, open decision 1, Revision 2 note).
+- US4 (narration change): scene 15 no longer opens "That's the end of Module one."; it opens "Here's one more thing about dissolving." Scene 15: 464 to 434 characters; total 5,516 to 5,486.
+
+Joins: the opening frame is unchanged; the final frame now equals m2-v01's published opening.

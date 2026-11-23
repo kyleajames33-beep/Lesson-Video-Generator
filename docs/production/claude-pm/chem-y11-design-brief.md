@@ -7,7 +7,7 @@ Written by Claude (root, designer of record), 5 November 2026. Read this before 
 - Route entry: `docs/production/programme/chem-y11-route-inputs.json` (`subjects.Chemistry.entries`, by `id`): learner question, syllabus actions, source lessons, entry knowledge, start, stop, next and handoff. The route is research input; improve the learner question if a causal form is clearer, and record the change.
 - Starter pack: `pre-design/chem-y11/<id>.md` where it exists (unchanged site givens, independent arithmetic, original questions, asset reuse proposals). Where no pack exists, do the same work yourself.
 - Ledger: `docs/production/programme/syllabus/chem-2017-y11.json` (exact 2017 wording; IDs are local, not official codenames) and `chem-2017-y11-crosswalk.json`.
-- Site lesson, read in full before scripting: `C:/Users/kygs/hscscience/subjects/chemistry/year11/moduleN/lessonNN.sa.html` (read-only). The site is the source of truth: reuse its section order, worked-example numbers and misconception framings. Apply `site-corrections-chem-y11.md` where it flags a site error.
+- Site lesson, read in full before scripting: `C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/moduleN/lessonNN.sa.html` (read-only clone; never edit or run anything there). The old path `C:/Users/kygs/hscscience` no longer exists (updated 24 Nov 2026, audit US7). The site is the source of truth: reuse its section order, worked-example numbers and misconception framings. Apply `site-corrections-chem-y11.md` where it flags a site error.
 - Repo rules: `AGENTS.md` (all of it), `docs/production/student-learning-review.md`, `docs/production/motion-design-standard.md`, `docs/visual-design-handbook.md`.
 
 ## Templates
@@ -29,7 +29,7 @@ Written by Claude (root, designer of record), 5 November 2026. Read this before 
 - No double teaching: refer back to earlier videos instead of re-teaching them.
 - Opening frame equals the previous video's final frame (state what you assume it is); final frame sets up the route's next handoff.
 - No em dashes (U+2014), no U+2061, Australian spelling. Captions are YouTube CC only, so keep text above the bottom 12% of frame.
-- Cultural content (Aboriginal and Torres Strait Islander knowledge, for example `chem-y11-m3-v06`) waits for the owner: do not design it.
+- Cultural content (Aboriginal and Torres Strait Islander knowledge): the hold is lifted (owner, 18 Nov 2026: no cultural reviewer). Design it in general terms: general principles only; no named communities, nations, people, places, sites, plants or organisations; no specific traditional-knowledge case and no universal-practice claim; no people or artefacts drawn; not a food-preparation instruction; state once that the knowledge belongs to the communities who hold it. Include a "Cultural content check" section. `chem-y11-m3-v06` was designed on this basis on 24 Nov 2026 (audit UB1).
 
 ## Output
 

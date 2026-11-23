@@ -1,6 +1,6 @@
 # Year 11 Chemistry M4 V08: Standard enthalpies of formation. How do standard formation enthalpies calculate a reaction enthalpy? (design)
 
-Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
+Status: Revision 4 (24 Nov 2026): coherence-audit fix US5 (scene 9 "reliable" to "accurate"). Narration changed (same length), so the voicing inputs need re-preparation before voicing. Previously Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
 Narration 6,426 characters, 19 scenes, about 567 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -131,7 +131,7 @@ Visual: stage change: the working takes the full width (current row 52 px) and t
 Visual: on "oxygen is an element, so three times zero" the row "reactants: 1(−277.7) + 3(0) = −277.7 kJ" (grey); the reactants level draws at −277.7 on the height diagram. On "minus minus" the row "ΔH = −1644.4 − (−277.7)"; on "Subtracting a negative means adding" the next row "= −1644.4 + 277.7"; on "minus one thousand three hundred and sixty-six point seven" "= −1366.7 kJ mol⁻¹"; on "seven" "≈ −1367 kJ mol⁻¹" (red) frames in a dark-ink box with a green tick (52 px); the height diagram grows back to full size and the sea-level marker (Decisions) runs: up from −277.7 to the line (readout "+277.7"), down to −1644.4 (readout "+277.7 − 1644.4 = −1366.7"), then the direct red arrow draws and its readout lands on the same "−1366.7". Red hand tag "minus a negative adds" with a `ScribbleCircle` round the double negative and a `PenArrow` to "+ 277.7"; grey hand tag "O₂ = 0" on the zero row.
 
 ### 9. the burner's missing energy
-> That's the data value our spirit burner fell short of. Formation enthalpies are found carefully for each pure substance in its real state, so this method is accurate. It's far more reliable than a school calorimeter, which lost over half the heat, and more exact than average bond **enthalpies**.
+> That's the data value our spirit burner fell short of. Formation enthalpies are found carefully for each pure substance in its real state, so this method is accurate. It's far more accurate than a school calorimeter, which lost over half the heat, and more exact than average bond **enthalpies**.
 
 Visual: stage change: on "our spirit burner fell short of" `m7-spirit-burner-calorimeter-shield-v1.png` large at the left with "−626 kJ mol⁻¹ (m4-v03)" and two bars at the right, red −626 and slate −1367 (the scene 1 question answered; slate hand tag "answered" with a tick on −1367). On "each pure substance in its real state" the state symbols on the table rows pulse. On "lost over half the heat" the −626 bar pulses; on "enthalpies" a third small bar "bond estimate (approximate)" appears greyed, tag "m4-v06". Red hand tag "lost over half" with a pen ring on the −626 bar.
 
@@ -370,3 +370,9 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: 6,426 characters, unchanged; about 562 s (it was about 567 s; the notes hold was already 50 s).
 
 Calls for root: the fizzing peroxide flask stands beside the attempt 2 card.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fix US5 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`).
+
+- Scene 9 narration: "It's far more reliable than a school calorimeter, which lost over half the heat" is now "It's far more accurate than a school calorimeter, which lost over half the heat". Heat loss is a systematic error, which lowers accuracy (m4-v03); reliable keeps the ws-v02 and ws-v03 meaning (repeats agree). Same length: total 6,426, unchanged. Cues unchanged.

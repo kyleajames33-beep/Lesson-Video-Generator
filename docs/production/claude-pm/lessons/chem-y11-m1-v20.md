@@ -1,6 +1,6 @@
 # Year 11 Chemistry M1 V20: Naming inorganic compounds. How do we name an inorganic compound from its formula? (design)
 
-Status: Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
+Status: Revision 4 (24 Nov 2026): coherence-audit fix US1 (final frame matched to the built `V20Final`; "(v14)" tag dropped). Visuals only; narration unchanged. Previously Revision 3 (12 Nov 2026): brief 237 error-check points resolved and visual-standard top-up; visual upgrade to maths-visual-standard.md kept. Narration unchanged from Revision 2, so wave 7 voicing (brief 237) can proceed. Previously Revision 2 (7 Nov 2026): brief 179 findings resolved and visual upgrade to maths-visual-standard.md.
 
 Narration 5,765 characters (sum of scene strings), 18 scenes, about 513 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -158,7 +158,7 @@ Visual: card shrinks to the top with its picture kept small. A navy givens strip
 ### 17. handoff: why two systems?
 > Notice why we needed two systems at all. Sodium chloride is made of ions, but carbon dioxide is made of atoms that share electrons. So why do some atoms hand electrons over completely, while others share them? It comes down to how strongly each atom pulls on **electrons**. That's next **time**.
 
-Visual: board clears to two cards. Left: "NaCl: sodium chloride" with small "Na⁺" and "Cl⁻" tags (teal). Right: "CO₂: carbon dioxide" with a small sketch of a C and an O sharing a pair of blue dots, tag "shared electrons" (amber). On the third sentence a faint "?" writes between them. On "electrons" a faint tug-of-war rope (v14's grey rope line with a blue pair on it) draws across the gap between the cards, tag "pull on electrons: electronegativity (v14)". Hand tags: teal "ions" with a pen ring round "Na⁺" and "Cl⁻", amber "shared pair" with a pen arrow to the blue dots. On "time" the chip writes: "Next: how does electron attraction connect ionic and covalent bonding?". Hold about 2 seconds. This is the final frame (v21 opens on it).
+Visual: board clears to the handoff board, which ends exactly on `V20Final` (built in `src/explainer/lessons/chem-y11-m1-v21/opening.tsx`; the builder imports it, with the positions in `V20`, so the seam is pixel-identical). The heading "Naming compounds: from formula to name" (60 px, hand, dark ink) stays top left. Two cards at one size (500 × 230 px): left, "NaCl" (72 px) over "sodium chloride" (38 px) with teal "Na⁺" and "Cl⁻" (40 px); right, "CO₂" (72 px) over "carbon dioxide" (38 px) with a small C and an O sharing a pair of blue dots and the amber line "shared electrons" (34 px). On the third sentence a "?" (80 px, dark ink) writes between them. On "electrons" the tug-of-war rope (a solid ink line with a blue pair of dots at its middle) draws across the gap between the cards, tag "pull on electrons: electronegativity" (34 px, dark ink). Hand tags: teal "ions" with a pen ring round "Na⁺" and "Cl⁻"; amber "shared pair" with a pen arrow to the blue dots. On "time" the chip writes under the heading (navy outline, 44 px): "Next: how does electron attraction connect ionic and covalent bonding?". Hold about 2 seconds. This is the final frame (v21 opens on it).
 
 ### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -174,7 +174,7 @@ Memory aid (framed card under the notes, hand lettering, teal and amber as in sc
 
 ## Final frame
 
-The handoff board of scene 17, held about 2 seconds: at the left a card "NaCl: sodium chloride" with small teal "Na⁺" and "Cl⁻" tags; at the right a card "CO₂: carbon dioxide" with a small C and O sharing a pair of blue dots, tag "shared electrons"; between them a faint "?" and v14's grey tug-of-war rope line with a blue pair of dots on it, tag "pull on electrons: electronegativity (v14)"; heading "Naming compounds: from formula to name" dimmed; the chip "Next: how does electron attraction connect ionic and covalent bonding?". v21 opens on this frame.
+The handoff board of scene 17, held about 2 seconds, exactly as built in `V20Final` (`src/explainer/lessons/chem-y11-m1-v21/opening.tsx`, positions in `V20`; audit US1, 24 Nov 2026): heading "Naming compounds: from formula to name" top left (60 px, hand, dark ink); under it the navy-outline chip "Next: how does electron attraction connect ionic and covalent bonding?" (44 px); at the left a card "NaCl" over "sodium chloride" with teal "Na⁺" and "Cl⁻" and the teal hand tag "ions" with a pen ring; at the right a card "CO₂" over "carbon dioxide" with a small C and O sharing a pair of blue dots, the amber line "shared electrons" and the amber hand tag "shared pair" with a pen arrow; between them a "?" and the solid ink tug-of-war rope with a blue pair of dots, tag "pull on electrons: electronegativity". v21 opens on this frame.
 
 ## Teaching checks
 
@@ -351,3 +351,9 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: narration unchanged; the time estimate is unchanged.
 
 Calls for root: none beyond root decisions 37 and 38.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fix US1 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`). Visuals only; no narration line changed.
+
+- Scene 17 Visual and the "Final frame" section now describe exactly the built `V20Final` (`src/explainer/lessons/chem-y11-m1-v21/opening.tsx`, positions in `V20`): the heading top left, the navy chip under it, the "NaCl / sodium chloride" and "CO₂ / carbon dioxide" cards with their hand tags, the "?" and the solid rope line tagged "pull on electrons: electronegativity". The "(v14)" tag is dropped and nothing is faint or dimmed. The builder imports `V20Final` so the seam with the rendered m1-v21 is pixel-identical.

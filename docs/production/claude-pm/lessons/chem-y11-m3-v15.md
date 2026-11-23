@@ -1,6 +1,6 @@
 # Year 11 Chemistry M3 V15: Surface area and catalysts. How do surface area and catalysts change reaction rate differently? (design)
 
-Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
+Status: Revision 4 (24 Nov 2026): coherence-audit fix US3 (on-screen course label removed). Screen text only; narration unchanged. Previously Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 183 findings resolved and the first visual upgrade; ready to voice.
 
 Narration 6,153 characters, 18 scenes, about 555 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
@@ -37,7 +37,7 @@ Source: https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-sta
 - **Safety (author note d; science check).** Eye protection; about 3% hydrogen peroxide (an irritant; higher concentrations are not used); 0.50 g of manganese(IV) oxide (harmful if swallowed or inhaled; weighed without raising dust); small volumes, the plug against froth and spray; the powder run froths, so a large flask; waste as the school directs. One spoken clause in scene 3 (plug) and a safety chip in scene 5.
 - **Attempts (original wording, HSC style).** A1 (surface area; the site's zinc example rebuilt): 0.50 g of zinc granules and 0.50 g of zinc powder, each with 50.0 mL of 1.0 mol L⁻¹ HCl (excess) at 25 °C; curves P (steep, levelling early) and Q, both at 190 mL. (a) Which is the powder; justify with collision theory. (b) Why the same final volume. Crossed: "the powder has a lower activation energy". A2 (catalyst and surface together; new context): a catalytic converter's thin platinum coating on a ceramic honeycomb for 2CO + O₂ → 2CO₂. (a) Explain with a Maxwell-Boltzmann distribution how platinum increases the rate. (b) Why a thin coating on a honeycomb rather than a solid block. Crossed: "platinum shifts the curve to the right".
 - **Mistake scene:** none separate. "Crushing raises the energy" (1, 4; crossed in A1); "a catalyst gives the particles energy" (7); "a catalyst moves the curve" (8; crossed in A2); "catalysts make more product" (9); "a catalyst is used up" (6).
-- **Handoff (route next: `chem-y11-m4-v01`, "How does an energy profile distinguish endothermic from exothermic change?").** Scene 17: Module 3 ends; the catalysed flask warmed by more than ten degrees; how can we show where that energy goes, and why do some reactions cool their surroundings instead? Final frame: see "Opening frame and final frame".
+- **Handoff (route next: `chem-y11-m4-v01`, "How does an energy profile distinguish endothermic from exothermic change?").** Scene 17: the catalysed flask warmed by more than ten degrees; how can we show where that energy goes, and why do some reactions cool their surroundings instead? Final frame: see "Opening frame and final frame".
 - **Site notes (read 5 November; for root to log if accepted; lesson 12; notes 2 to 4 on the converter card are in `chem-y11-m3-v14.md` and are not repeated):**
   1. Worked example 1, experiment 4: copper(II) sulfate "is not a true catalyst ... The added copper is consumed (deposited), not regenerated". Copper(II) ions are consumed to deposit copper, but the deposited copper then speeds hydrogen evolution without being used up further; many texts call this catalysis by the deposited copper. Suggest: "the copper(II) ions are used up, but the copper they deposit on the zinc speeds up hydrogen evolution and is not consumed further, so the copper metal acts as a catalyst."
   2. Lesson 12 Concepts: "a catalyst is the only factor that changes the proportion of particles exceeding Eₐ WITHOUT changing temperature, it lowers Eₐ, not the energy distribution" is correct; lesson 11's formula reference contradicts it (logged in `chem-y11-m3-v13.md`, note 1).
@@ -71,7 +71,7 @@ Handoff: chem-y11-m4-v01, energy profiles.
 ## Opening frame and final frame
 
 - **Opening frame:** m3-v14's final frame exactly (Decisions).
-- **Final frame (`chem-y11-m4-v01` opens on it):** left: the logging balance with the new plate `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (black powder in frothing liquid, plug in the neck) on its pan; `m7-temp-probe-sleeve-stand-v1.png` beside it with the probe tip dipping through the plug's edge into the liquid (coded readout "32.5 °C", with a small grey "started at 21.0 °C" under it); a faint warm-orange glow ripple spreading from the flask into the air (coded). Right: the memory board small: "Concentration and surface area: hit often. Temperature: hit hard. Catalyst: lower the bar." Top left a small grey tag "Module 3 complete". The amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". The chip "Next: How does an energy profile distinguish endothermic from exothermic change?" at the bottom of the safe area (above the bottom 12%).
+- **Final frame (`chem-y11-m4-v01` opens on it):** left: the logging balance with the new plate `y11c-flask-peroxide-mno2-plug-fizz-v1.png` (black powder in frothing liquid, plug in the neck) on its pan; `m7-temp-probe-sleeve-stand-v1.png` beside it with the probe tip dipping through the plug's edge into the liquid (coded readout "32.5 °C", with a small grey "started at 21.0 °C" under it); a faint warm-orange glow ripple spreading from the flask into the air (coded). Right: the memory board small: "Concentration and surface area: hit often. Temperature: hit hard. Catalyst: lower the bar." The amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". The chip "Next: How does an energy profile distinguish endothermic from exothermic change?" at the bottom of the safe area (above the bottom 12%).
 
 ## Visual upgrade (Revision 3)
 
@@ -186,7 +186,7 @@ Upgrade (Revision 3): A navy givens strip sits under the shrunken card from the 
 ### 17. conclusion and handoff
 > So surface area and catalysts both speed reactions up, but in different ways. More surface means more collisions each second. A catalyst opens a route with a lower activation energy, so more of the collisions succeed. Now look back at the catalyst run. The flask warmed up by more than eleven degrees, and that energy came from the reaction itself. Where does it come from, and why do some reactions cool their surroundings **instead**?
 
-Visual: the memory board small at the right. On "More surface" the surface-area cable pulses; on "lower activation energy" the catalyst cable. On "end of Module 3" grey tag "Module 3 complete". On "look back at the catalyst run" the board settles into the final frame: the balance with `y11c-flask-peroxide-mno2-plug-fizz-v1.png`, the probe beside it reading "32.5 °C" with "started at 21.0 °C", the warm ripple spreading. On "came from the reaction itself" the amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". On "instead" the chip "Next: How does an energy profile distinguish endothermic from exothermic change?" writes. Hold about 2 seconds. This is the final frame (m4-v01 opens on it).
+Visual: the memory board small at the right. On "More surface" the surface-area cable pulses; on "lower activation energy" the catalyst cable. On "look back at the catalyst run" the board settles into the final frame: the balance with `y11c-flask-peroxide-mno2-plug-fizz-v1.png`, the probe beside it reading "32.5 °C" with "started at 21.0 °C", the warm ripple spreading. On "came from the reaction itself" the amber chip "The flask warmed by 11.5 °C. Where did that energy come from?". On "instead" the chip "Next: How does an energy profile distinguish endothermic from exothermic change?" writes. Hold about 2 seconds. This is the final frame (m4-v01 opens on it).
 
 ### 18. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -383,3 +383,9 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: 6,153 characters, unchanged; about 540 s (it was about 555 s).
 
 Calls for root: none.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fix US3 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`). Screen text only; no narration line changed.
+
+- The grey tag "Module 3 complete" is removed from the final frame and scene 17 (the stale cue "end of Module 3" went with it; it was not in the narration); the Decisions handoff bullet no longer says "Module 3 ends". m4-v01 opens on the final frame.

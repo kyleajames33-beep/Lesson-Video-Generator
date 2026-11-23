@@ -1,8 +1,8 @@
 # Year 11 Chemistry M4 V05: Catalysts and energy profiles. Why does a catalyst change activation energy but not reaction enthalpy? (design)
 
-Status: Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
+Status: Revision 4 (24 Nov 2026): coherence-audit fix US4 (spoken course label removed in scene 1). Narration changed, so the voicing inputs need re-preparation before voicing. Previously Revision 3 (12 Nov 2026): visual upgrade to maths-visual-standard.md, visuals only. Narration unchanged, so the brief 236 voicing is not affected. Needs a Codex error check of the visual plan before plates and build. Previously Revision 2 (6 Nov 2026): brief 184 findings resolved and the first visual upgrade.
 
-Narration 5,613 characters, 18 scenes, about 517 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
+Narration 5,617 characters (Revision 3: 5,613), 18 scenes, about 517 s, counted by script with the build parser rules (see "Narration length estimate"). Nothing recorded; human listening pending. Voice: the Google voice (all Year 11).
 
 Scope: fifth Module 4 video of Year 11 Chemistry (2017 syllabus), playlist entry 74, between `chem-y11-m4-v04` and `chem-y11-m4-v06`; a concept video built on one coded energy profile. Templates: `chem-y11-m4-v01.md` (energy-profile styling and colour key, same designer series), `chem-y11-m4-v04.md` (series layout), `chem-y11-m3-v15.md` (the catalyst evidence this video builds on), `phys-y11-fa1-v01.md` (structure), `bio-y11-fa1-v05.md` (plates). No pre-design pack exists: the pack work is done in this file. Route entry: `chem-y11-m4-v05` in `../../programme/chem-y11-route-inputs.json` (start: "Begin with the concrete case named in the question and recall the needed earlier idea"; stop: "Overlay catalysed and uncatalysed energy paths with unchanged endpoints; link to the rate cause already taught."; next handoff: "How do broken and formed bonds determine an approximate enthalpy change?"). Site lesson read in full (6 November, read-only): `C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson05.sa.html` (SHA256 `91e73710ac6fdf5098802d26792ed904a4862e34796fed0da9aa489d679c1e8c`, recomputed, matches the route), sections `l05-how-catalysts-work-lowering-ea-title`, `l05-homogeneous-vs-heterogeneous-catalysts-title`, `l05-drawing-catalysed-vs-uncatalysed-diagrams-title`. Used: "A catalyst provides an alternative reaction pathway with a lower activation energy ... without being consumed"; "a different sequence of bond-breaking and bond-forming steps"; the overlay diagram (same reactant and product levels, one ΔH arrow, two Eₐ arrows from the reactant level); the "changes / does not change" card; the common error "The catalyst provides energy for the reaction"; the drawing rules and the three traps (ΔH changes; Eₐ from the axis or product level; catalysed products lower); homogeneous against heterogeneous by phase, with the instruction to state both phases; the Haber iron example and ΔH = −92 kJ mol⁻¹; the warm-up's two claims (rebuilt as the scene 1 prediction); worked example 1's style of profile reading (A1 uses new numbers). Not used: Eₐ(reverse) = Eₐ(forward) − ΔH (a "should know" calculation beyond the route stop; author note d), equilibrium and yield (Year 12), enzymes (Biology), the catalytic converter history (site note 1).
 
@@ -87,7 +87,7 @@ The earlier visual upgrade is already written into each scene's Visual line (anc
 Cue words in **bold** trigger the visual change. Colour key as in Decisions.
 
 ### 1. hook and prediction (countdown, 3 seconds at the end)
-> Here's the flask from Module Three, hydrogen peroxide breaking down, with manganese dioxide as the catalyst. Two moles of hydrogen peroxide release about one hundred and eighty-nine kilojoules as they break down into water and oxygen. Now picture a second flask with no catalyst, left for weeks until all of its peroxide has broken down too. Which flask releases more energy in **total**?
+> Here's the flask from the rates videos, hydrogen peroxide breaking down, with manganese dioxide as the catalyst. Two moles of hydrogen peroxide release about one hundred and eighty-nine kilojoules as they break down into water and oxygen. Now picture a second flask with no catalyst, left for weeks until all of its peroxide has broken down too. Which flask releases more energy in **total**?
 
 Visual: opens on m4-v04's final frame; the "Next" chip fades and the level diagram shrinks to a thumbnail at the top left. On "breaking down" the flask's bubbles pulse. On "one hundred and eighty-nine kilojoules" an equation strip writes: "2H₂O₂(aq) → 2H₂O(l) + O₂(g)  ΔH = −189 kJ mol⁻¹" (red). On "a second flask with no catalyst" `y11c-flask-acid-plug-spent-v1.png` slides in beside it (label "no catalyst"), with a coded calendar strip "week 1 ... week 6" ticking. Heading writes: "Does a catalyst change ΔH?". Chips "catalysed", "the same", "no catalyst". On "total" the 3 s `Countdown` ring runs. Hand tags: red "same 189 kJ?" with a `PenArrow` from the strip to the second flask; grey "weeks" with a pen ring on the calendar strip.
 
@@ -237,6 +237,8 @@ Checked with Python (6 November); Codex to re-check.
 
 ## Narration length estimate
 
+Revision 4 count (24 November; build parser rules, sum of scene strings): **5,617 characters** (scene 1: 384 to 388), about 517 s.
+
 Revision 2 count (6 November; build parser rules, total = sum of scene strings): **5,613 characters**, 18 scenes (per scene: 384, 345, 384, 409, 400, 324, 311, 307, 318, 344, 348, 96, 318, 326, 239, 329, 356, 75; Revision 1: 5,609, then miscounted as 17 scenes in this line). At 13.3 characters per second the speech is about 422 s; add about 14 s of settling (the full profile in 3, the surface inset in 4, the peak slider and pass morph in 5, the distribution and fraction meter in 6, the second overlay in 9), 3 s for the prediction countdown, 20 s for two attempt countdowns, 2 s of feedback holds, 2 s for the handoff hold and about 54 s more of the quiet notes hold (about 60 s in all): **about 517 s** (Revision 1: about 515 s).
 
 Revision 3 (12 Nov 2026): narration unchanged (5,613 characters). The notes scene is 45 s in all, so the estimate is about 502 s (it was about 517 s).
@@ -350,3 +352,9 @@ Joins: the opening frame and the final frame are unchanged word for word.
 Counts: 5,613 characters, unchanged; about 502 s (it was about 517 s).
 
 Calls for root: none.
+
+## Revision 4 (24 Nov 2026)
+
+Coherence-audit fix US4 (`../checks/chem-y11-coherence-audit-2026-11-23.md`; record in `../chem-y11-audit-fixes-2026-11-24.md`).
+
+- Scene 1 narration: "Here's the flask from Module Three" is now "Here's the flask from the rates videos". Scene 1: 384 to 388 characters; total 5,613 to 5,617. Cues unchanged; the opening still equals m4-v04's final frame.

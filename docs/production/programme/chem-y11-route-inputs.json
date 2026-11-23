@@ -1,6 +1,8 @@
 {
   "schemaVersion": 1,
   "date": "2026-11-05",
+  "updated": "2026-11-24",
+  "updateNote": "24 Nov 2026 (coherence audit US7, UB1, US8): all sourceLessons paths repointed to the read-only clone C:/Users/kygs/teaching-app-fix; recorded sha256 values kept, each with sha256Status and, where the clone differs, sha256Current2026-11-24 (raw bytes); teachingStatus refreshed from the release log and out/explainer; chem-y11-m3-v06 rewritten (cultural hold lifted, designed in general terms); m3-v05 and m4-v14 nextHandoff updated. Old hashes are stale, not deleted.",
   "purpose": "2017 Year 11 Chemistry route drafting inputs for Claude. Research proposal, not a design, approved route or completed coverage.",
   "officialEvidence": {
     "url": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/chemistry-stage6-syllabus-word.docx",
@@ -86,9 +88,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson01.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson01.sa.html",
               "relativePath": "module1/lesson01.sa.html",
               "sha256": "da73d49d78e81181d7a33a7e33de13ab3cf0d955d02e75af0a560614db812d88",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c657336a2bd368b5671e4ddb973272c061e3ff7a0ad92df82061f9c0da1d8465",
               "sectionIds": [
                 "l01-how-chemists-classify-all-matter-title",
                 "l01-pure-substances-elements-and-compounds-title",
@@ -119,7 +123,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v01.md is the record"
         },
         {
           "id": "chem-y11-m1-v02",
@@ -149,9 +153,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson02.sa.html",
               "relativePath": "module1/lesson02.sa.html",
               "sha256": "78e4e339f55bb2a22d60af69ba31dc846487ee6d136096939476257b4df64d79",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "7133c4c74712f02dd943914adfc05626768df823058d7e4845470b5cf41b020e",
               "sectionIds": [
                 "l02-physical-properties-used-to-characterise-sub-title",
                 "l02-sharp-vs-gradual-how-properties-differ-title",
@@ -184,7 +190,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v02.md is the record"
         },
         {
           "id": "chem-y11-m1-v03",
@@ -214,9 +220,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson03.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson03.sa.html",
               "relativePath": "module1/lesson03.sa.html",
               "sha256": "b9de2bcc1ecf2856b4635cbad03877b4dd6218dd51d5b0b5d7bb38a1e55e423f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0a4fcd1434ec1125316d3bd08e3f606a8b4e92ad01bb638075d2a09023fc6a77",
               "sectionIds": [
                 "l03-filtration-title",
                 "l03-crystallisation-title",
@@ -249,7 +257,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v03.md is the record"
         },
         {
           "id": "chem-y11-m1-v04",
@@ -279,9 +287,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson04.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson04.sa.html",
               "relativePath": "module1/lesson04.sa.html",
               "sha256": "2a97d7f9b066e10dce979bf05797b6bf600f73547e5db21cb776f8a13b479f08",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a85ec74443127294f97915d20f02fffc9271991dabd86e0fb5a6e4b074abc84a",
               "sectionIds": [
                 "l04-distillation-title",
                 "l04-choosing-the-right-technique-title",
@@ -314,7 +324,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v04.md is the record"
         },
         {
           "id": "chem-y11-m1-v05",
@@ -344,9 +354,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson04.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson04.sa.html",
               "relativePath": "module1/lesson04.sa.html",
               "sha256": "2a97d7f9b066e10dce979bf05797b6bf600f73547e5db21cb776f8a13b479f08",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a85ec74443127294f97915d20f02fffc9271991dabd86e0fb5a6e4b074abc84a",
               "sectionIds": [
                 "l04-chromatography-title",
                 "l04-worked-examples-title"
@@ -377,7 +389,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v05.md is the record"
         },
         {
           "id": "chem-y11-m1-v06",
@@ -407,9 +419,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson03.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson03.sa.html",
               "relativePath": "module1/lesson03.sa.html",
               "sha256": "b9de2bcc1ecf2856b4635cbad03877b4dd6218dd51d5b0b5d7bb38a1e55e423f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0a4fcd1434ec1125316d3bd08e3f606a8b4e92ad01bb638075d2a09023fc6a77",
               "sectionIds": [
                 "l03-filtration-title",
                 "l03-crystallisation-title",
@@ -423,9 +437,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson05.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson05.sa.html",
               "relativePath": "module1/lesson05.sa.html",
               "sha256": "c8b8b3adf2bc76e424505bb6e88bafecc0cd7fa9784e57dd9400175521a4222d",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "2c40d9f336d393ade6792123bbd9e8247c6970b8377d964cb8cd15a9af7ec53c",
               "sectionIds": [
                 "l05-choosing-the-right-separation-technique-title",
                 "l05-percentage-composition-by-mass-title"
@@ -456,7 +472,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v06.md is the record"
         },
         {
           "id": "chem-y11-m1-v07",
@@ -486,9 +502,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson05.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson05.sa.html",
               "relativePath": "module1/lesson05.sa.html",
               "sha256": "c8b8b3adf2bc76e424505bb6e88bafecc0cd7fa9784e57dd9400175521a4222d",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "2c40d9f336d393ade6792123bbd9e8247c6970b8377d964cb8cd15a9af7ec53c",
               "sectionIds": [
                 "l05-percentage-composition-by-mass-title"
               ],
@@ -515,7 +533,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v07.md is the record"
         },
         {
           "id": "chem-y11-m1-v08",
@@ -546,9 +564,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson13.sa.html",
               "relativePath": "module1/lesson13.sa.html",
               "sha256": "a9c61816c6508eedc88f5fc90ab38adcb03462dfb255883bbd817f098c0dd3aa",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "83eb6fd1a37fe325ac9ef1e936d8569085193848803d5ed0e6d4a308535f5b0a",
               "sectionIds": [
                 "l13-subatomic-particles-reference-table-title",
                 "l13-worked-examples-title"
@@ -560,9 +580,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson14.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson14.sa.html",
               "relativePath": "module1/lesson14.sa.html",
               "sha256": "ba2cf87ee8ad7f4ea07c89e48b2928a7f0c907507573bee7c25e307678b8c5cf",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a7f7549649a6504b38c29978ad946ea4e94155576738f8f63e0312cf2254a916",
               "sectionIds": [
                 "l14-isotopes-same-element-different-mass-title",
                 "l14-structural-basis-of-isotope-instability-title",
@@ -593,7 +615,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v08.md is the record"
         },
         {
           "id": "chem-y11-m1-v09",
@@ -620,9 +642,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson14.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson14.sa.html",
               "relativePath": "module1/lesson14.sa.html",
               "sha256": "ba2cf87ee8ad7f4ea07c89e48b2928a7f0c907507573bee7c25e307678b8c5cf",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a7f7549649a6504b38c29978ad946ea4e94155576738f8f63e0312cf2254a916",
               "sectionIds": [
                 "l14-calculating-relative-atomic-mass-title",
                 "l14-worked-examples-title"
@@ -651,7 +675,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v09.md is the record"
         },
         {
           "id": "chem-y11-m1-v10",
@@ -689,9 +713,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson13.sa.html",
               "relativePath": "module1/lesson13.sa.html",
               "sha256": "a9c61816c6508eedc88f5fc90ab38adcb03462dfb255883bbd817f098c0dd3aa",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "83eb6fd1a37fe325ac9ef1e936d8569085193848803d5ed0e6d4a308535f5b0a",
               "sectionIds": [
                 "l13-rutherford-s-gold-foil-experiment-key-detail-title",
                 "l13-atomic-emission-spectra-and-the-bohr-model-title"
@@ -703,9 +729,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson16.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson16.sa.html",
               "relativePath": "module1/lesson16.sa.html",
               "sha256": "1f62b2fec083361eaa2187bcb30a08332c32c03294713cc4f101b1695a90692f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "4dc738ad4c0d97be22f1d8071c2c6b7d1b3b9ccb238ef0ac523f85968df71af7",
               "sectionIds": [
                 "l16-subshells-orbitals-and-electron-capacity-title"
               ],
@@ -732,7 +760,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v10.md is the record"
         },
         {
           "id": "chem-y11-ws-v01",
@@ -764,8 +792,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -801,7 +831,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m1-v10 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "published (release log); design lessons/chem-y11-ws-v01.md is the record",
           "nextHandoff": "How does a chemistry plan produce valid, useful data?"
         },
         {
@@ -842,8 +872,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -879,7 +911,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m1-v10 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "published (release log); design lessons/chem-y11-ws-v02.md is the record",
           "nextHandoff": "How do we collect and source chemistry data safely and accurately?"
         },
         {
@@ -920,8 +952,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -957,7 +991,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m1-v10 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "published (release log); design lessons/chem-y11-ws-v03.md is the record",
           "nextHandoff": "How does spdf notation locate the electrons in an atom?"
         },
         {
@@ -985,9 +1019,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson16.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson16.sa.html",
               "relativePath": "module1/lesson16.sa.html",
               "sha256": "1f62b2fec083361eaa2187bcb30a08332c32c03294713cc4f101b1695a90692f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "4dc738ad4c0d97be22f1d8071c2c6b7d1b3b9ccb238ef0ac523f85968df71af7",
               "sectionIds": [
                 "l16-subshells-orbitals-and-electron-capacity-title",
                 "l16-worked-examples-title"
@@ -1017,7 +1053,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v11.md is the record"
         },
         {
           "id": "chem-y11-m1-v12",
@@ -1061,9 +1097,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson15.sa.html",
               "relativePath": "module1/lesson15.sa.html",
               "sha256": "421849974d14c7381b91c4e54e4a1030dc857ff9d7eddd645944bcdba744cf2c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "8d7a38543ac1320108d8e86bdde05a5bebc4535aab22d75ac83e0d6b7bb61aaf",
               "sectionIds": [
                 "l15-how-the-modern-periodic-table-is-organised-title",
                 "l15-key-groups-and-their-properties-title"
@@ -1075,9 +1113,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson19.sa.html",
               "relativePath": "module1/lesson19.sa.html",
               "sha256": "bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "02df247ef7464b7b37aeeced78ade7deed53ea3af1877491139433f88c012c4b",
               "sectionIds": [
                 "l19-from-electron-configuration-to-ion-charge-title"
               ],
@@ -1104,7 +1144,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v12.md is the record"
         },
         {
           "id": "chem-y11-m1-v13",
@@ -1136,9 +1176,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson17.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson17.sa.html",
               "relativePath": "module1/lesson17.sa.html",
               "sha256": "f5255f5050cd01fd277fb04e8830faf13d54b88bc8fc9efd1eaeed42a5715665",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "e2540b00e920d574bbe00756540d670d08cf2973dcee48caac0ddc1f7f9e4c23",
               "sectionIds": [
                 "l17-the-main-atomic-radius-trend-title",
                 "l17-how-to-explain-the-trend-in-exam-language-title",
@@ -1169,7 +1211,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v13.md is the record"
         },
         {
           "id": "chem-y11-m1-v14",
@@ -1201,9 +1243,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson17.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson17.sa.html",
               "relativePath": "module1/lesson17.sa.html",
               "sha256": "f5255f5050cd01fd277fb04e8830faf13d54b88bc8fc9efd1eaeed42a5715665",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "e2540b00e920d574bbe00756540d670d08cf2973dcee48caac0ddc1f7f9e4c23",
               "sectionIds": [
                 "l17-how-to-explain-the-trend-in-exam-language-title"
               ],
@@ -1213,9 +1257,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson18.sa.html",
               "relativePath": "module1/lesson18.sa.html",
               "sha256": "018b9247bc9bec32c086f50e45e791b0226ac4ef0dd4dab569d67bdb4b2aac36",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0952ca8fc6090124a12d3d098dead9870cfe15a73a858d783dc89cdf8d7639bf",
               "sectionIds": [
                 "l18-electronegativity-trends-and-explanation-title",
                 "l18-using-electronegativity-difference-to-classi-title",
@@ -1246,7 +1292,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v14.md is the record"
         },
         {
           "id": "chem-y11-m1-v15",
@@ -1278,9 +1324,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson15.sa.html",
               "relativePath": "module1/lesson15.sa.html",
               "sha256": "421849974d14c7381b91c4e54e4a1030dc857ff9d7eddd645944bcdba744cf2c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "8d7a38543ac1320108d8e86bdde05a5bebc4535aab22d75ac83e0d6b7bb61aaf",
               "sectionIds": [
                 "l15-key-groups-and-their-properties-title"
               ],
@@ -1290,9 +1338,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson18.sa.html",
               "relativePath": "module1/lesson18.sa.html",
               "sha256": "018b9247bc9bec32c086f50e45e791b0226ac4ef0dd4dab569d67bdb4b2aac36",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0952ca8fc6090124a12d3d098dead9870cfe15a73a858d783dc89cdf8d7639bf",
               "sectionIds": [
                 "l18-reactivity-trends-metals-and-non-metals-title"
               ],
@@ -1321,7 +1371,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m1-v15.md is the record"
         },
         {
           "id": "chem-y11-m1-v16",
@@ -1351,9 +1401,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson13.sa.html",
               "relativePath": "module1/lesson13.sa.html",
               "sha256": "a9c61816c6508eedc88f5fc90ab38adcb03462dfb255883bbd817f098c0dd3aa",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "83eb6fd1a37fe325ac9ef1e936d8569085193848803d5ed0e6d4a308535f5b0a",
               "sectionIds": [
                 "l13-atomic-emission-spectra-and-the-bohr-model-title"
               ],
@@ -1382,7 +1434,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "rendered, not yet published (out/explainer); design lessons/chem-y11-m1-v16.md"
         },
         {
           "id": "chem-y11-m1-v17",
@@ -1424,9 +1476,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson14.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson14.sa.html",
               "relativePath": "module1/lesson14.sa.html",
               "sha256": "ba2cf87ee8ad7f4ea07c89e48b2928a7f0c907507573bee7c25e307678b8c5cf",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a7f7549649a6504b38c29978ad946ea4e94155576738f8f63e0312cf2254a916",
               "sectionIds": [
                 "l14-structural-basis-of-isotope-instability-title"
               ],
@@ -1436,9 +1490,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson20.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson20.sa.html",
               "relativePath": "module1/lesson20.sa.html",
               "sha256": "9b3f77c9e3c1f1dbd121035c1fa3f627ac9da932adf48f0bfa9d14233b2db378",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "430ce064758aa5477f21cf5219ba37eb9484ad6f9013fbec99f7db638c178da5",
               "sectionIds": [
                 "l20-types-of-ionising-radiation-title",
                 "l20-natural-and-human-made-radioisotopes-title"
@@ -1469,7 +1525,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "rendered, not yet published (out/explainer); design lessons/chem-y11-m1-v17.md"
         },
         {
           "id": "chem-y11-m1-v18",
@@ -1499,9 +1555,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson20.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson20.sa.html",
               "relativePath": "module1/lesson20.sa.html",
               "sha256": "9b3f77c9e3c1f1dbd121035c1fa3f627ac9da932adf48f0bfa9d14233b2db378",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "430ce064758aa5477f21cf5219ba37eb9484ad6f9013fbec99f7db638c178da5",
               "sectionIds": [
                 "l20-balanced-nuclear-equations-title",
                 "l20-natural-and-human-made-radioisotopes-title"
@@ -1530,7 +1588,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v18.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m1-v19",
@@ -1570,9 +1628,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson19.sa.html",
               "relativePath": "module1/lesson19.sa.html",
               "sha256": "bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "02df247ef7464b7b37aeeced78ade7deed53ea3af1877491139433f88c012c4b",
               "sectionIds": [
                 "l19-from-electron-configuration-to-ion-charge-title",
                 "l19-transition-metals-variable-oxidation-states-title",
@@ -1603,7 +1663,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v19.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v20",
@@ -1630,9 +1690,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson19.sa.html",
               "relativePath": "module1/lesson19.sa.html",
               "sha256": "bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "02df247ef7464b7b37aeeced78ade7deed53ea3af1877491139433f88c012c4b",
               "sectionIds": [
                 "l19-iupac-nomenclature-rules-title"
               ],
@@ -1659,7 +1721,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v20.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v21",
@@ -1698,9 +1760,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson18.sa.html",
               "relativePath": "module1/lesson18.sa.html",
               "sha256": "018b9247bc9bec32c086f50e45e791b0226ac4ef0dd4dab569d67bdb4b2aac36",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0952ca8fc6090124a12d3d098dead9870cfe15a73a858d783dc89cdf8d7639bf",
               "sectionIds": [
                 "l18-using-electronegativity-difference-to-classi-title",
                 "l18-using-electronegativity-difference-to-classi-b-title"
@@ -1712,9 +1776,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson19.sa.html",
               "relativePath": "module1/lesson19.sa.html",
               "sha256": "bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "02df247ef7464b7b37aeeced78ade7deed53ea3af1877491139433f88c012c4b",
               "sectionIds": [
                 "l19-lewis-dot-diagrams-title"
               ],
@@ -1741,7 +1807,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "rendered, not yet published (out/explainer); design lessons/chem-y11-m1-v21.md"
         },
         {
           "id": "chem-y11-m1-v22",
@@ -1784,9 +1850,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson07.sa.html",
               "relativePath": "module1/lesson07.sa.html",
               "sha256": "0a69671d7174314d841fb8ee5eac1a0f040361c43c5b0e75786a08c07e76b2e0",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "98c2c454b9aec3cbe1112fefb580b8a8173daa95531745c85fd976938529915f",
               "sectionIds": [
                 "l07-ionic-lattice-structure-title",
                 "l07-physical-properties-of-ionic-compounds-expla-title",
@@ -1817,7 +1885,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v22.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v23",
@@ -1848,9 +1916,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson09.sa.html",
               "relativePath": "module1/lesson09.sa.html",
               "sha256": "992295bba54e94aa8fc5f4d50214c1db498691a6d695516e06da38439815542f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "15dea8c723c082bbf094c92a0bae925ebfa17f94347c3a7c1eac77154428462b",
               "sectionIds": [
                 "l09-covalent-molecular-vs-network-the-critical-d-title",
                 "l09-covalent-molecular-substances-in-detail-title"
@@ -1862,9 +1932,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson10.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson10.sa.html",
               "relativePath": "module1/lesson10.sa.html",
               "sha256": "d10900d8424d90f37ef09e3b240a5b80463623ffd459f1c124106653e0dea52c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "10acb7c9a50850602a744a386fb7058dfc5b6cf4904da4e9f68158f7f37eae54",
               "sectionIds": [
                 "l10-the-three-types-of-intermolecular-forces-title"
               ],
@@ -1874,9 +1946,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson19.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson19.sa.html",
               "relativePath": "module1/lesson19.sa.html",
               "sha256": "bf0c603459da030fe0c3d036c87ccb0efdfaaed2b1b89235f5d6ae1894d8a025",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "02df247ef7464b7b37aeeced78ade7deed53ea3af1877491139433f88c012c4b",
               "sectionIds": [
                 "l19-lewis-dot-diagrams-title"
               ],
@@ -1903,7 +1977,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v23.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v24",
@@ -1946,9 +2020,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson08.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson08.sa.html",
               "relativePath": "module1/lesson08.sa.html",
               "sha256": "381eeac5f02f6b08b1d239f11af34eed68383e992e7b06454d835346d140cd2a",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "67daeb24e9c0c877e43ab4c054362aa5c8c82dceb30c854b9303c5ca689739a3",
               "sectionIds": [
                 "l08-the-electron-sea-model-title",
                 "l08-metallic-properties-trends-and-variations-title",
@@ -1979,7 +2055,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v24.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v25",
@@ -2030,9 +2106,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson09.sa.html",
               "relativePath": "module1/lesson09.sa.html",
               "sha256": "992295bba54e94aa8fc5f4d50214c1db498691a6d695516e06da38439815542f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "15dea8c723c082bbf094c92a0bae925ebfa17f94347c3a7c1eac77154428462b",
               "sectionIds": [
                 "l09-covalent-molecular-vs-network-the-critical-d-title",
                 "l09-covalent-network-solids-in-detail-title"
@@ -2044,9 +2122,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson21.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson21.sa.html",
               "relativePath": "module1/lesson21.sa.html",
               "sha256": "98c6e436b443223cd4df7833c3f237e4c5fd497a755bdeb9fbcef49f3b21fbc5",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "cf2540567da454679588fb71b9115e85a846abdb7ef0832e8554fde180f12699",
               "sectionIds": [
                 "l21-master-example-diamond-vs-graphite-same-elem-title"
               ],
@@ -2073,7 +2153,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v25.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v26",
@@ -2103,9 +2183,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson10.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson10.sa.html",
               "relativePath": "module1/lesson10.sa.html",
               "sha256": "d10900d8424d90f37ef09e3b240a5b80463623ffd459f1c124106653e0dea52c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "10acb7c9a50850602a744a386fb7058dfc5b6cf4904da4e9f68158f7f37eae54",
               "sectionIds": [
                 "l10-the-three-types-of-intermolecular-forces-title",
                 "l10-hydrogen-bonding-in-detail-title",
@@ -2136,7 +2218,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v26.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m1-v27",
@@ -2166,9 +2248,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson12.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson12.sa.html",
               "relativePath": "module1/lesson12.sa.html",
               "sha256": "fc891bb1b48fe54628821bf7809bb06df59a90c5dfef259c51307abb815218e7",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "99456749d55f09240a93a5cc7a6e05fe83f598c7ed2dcb3d24749544dbcbb333",
               "sectionIds": [
                 "l12-why-do-things-dissolve-an-imf-perspective-title",
                 "l12-water-as-a-polar-solvent-why-it-s-exceptiona-title",
@@ -2199,7 +2283,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m1-v27.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m2-v01",
@@ -2229,9 +2313,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson11.sa.html",
               "relativePath": "module2/lesson11.sa.html",
               "sha256": "1c1afd11799fc27c88f06f6c643be9e8cc0f475b4a4f3a4a9c62c620a3ba8d83",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "13a695d75a67e978da0c32b5a4b412f1ff7781ecbe8f7508b7da26a4da7603ce",
               "sectionIds": [
                 "l11-conservation-title"
               ],
@@ -2241,9 +2327,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson02.sa.html",
               "relativePath": "module3/lesson02.sa.html",
               "sha256": "a7facf444691b5c5632a09f95ab0ae7e52e3ecff9a89e8c32525be1e2f645546",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ab509761eb077e219b3d7770801137aed34d34db77a19181dafc28df4418cbb1",
               "sectionIds": [
                 "l02-balancing-synthesis-and-decomposition-equati-title"
               ],
@@ -2270,7 +2358,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m2-v01.md is the record"
         },
         {
           "id": "chem-y11-m2-v02",
@@ -2301,9 +2389,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson01.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson01.sa.html",
               "relativePath": "module2/lesson01.sa.html",
               "sha256": "2982874265271145daca25025980fde451209f1e7f102b63cd17e5aa458b87b5",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ecf3b821c59fd0bb23273bd00f48519bd25ef7dacc3469139739535b422b83f6",
               "sectionIds": [
                 "learn-mole-model",
                 "learn-mole-language",
@@ -2342,7 +2432,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m2-v02.md is the record"
         },
         {
           "id": "chem-y11-m2-v03",
@@ -2373,9 +2463,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson02.sa.html",
               "relativePath": "module2/lesson02.sa.html",
               "sha256": "751832bc580a28da97ddd7500268ddbbab24f8df0f90f241f76a0f10669d35b6",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "5ed3dc6c61b0fee29c9ea92cdcd02487ccb07276d52de0938552af55d2fd5f20",
               "sectionIds": [
                 "l02-molarmass-title",
                 "l02-formula-title",
@@ -2406,7 +2498,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m2-v03.md is the record"
         },
         {
           "id": "chem-y11-m2-v04",
@@ -2436,9 +2528,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson02.sa.html",
               "relativePath": "module2/lesson02.sa.html",
               "sha256": "751832bc580a28da97ddd7500268ddbbab24f8df0f90f241f76a0f10669d35b6",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "5ed3dc6c61b0fee29c9ea92cdcd02487ccb07276d52de0938552af55d2fd5f20",
               "sectionIds": [
                 "l02-practical-title"
               ],
@@ -2467,7 +2561,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "published (release log); design lessons/chem-y11-m2-v04.md is the record"
         },
         {
           "id": "chem-y11-ws-v04",
@@ -2507,8 +2601,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -2544,7 +2640,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m2-v04 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "designed (lessons/chem-y11-ws-v04.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md",
           "nextHandoff": "How do we judge uncertainty and the limits of a chemistry result?"
         },
         {
@@ -2585,8 +2681,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -2622,7 +2720,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m2-v04 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "designed (lessons/chem-y11-ws-v05.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md",
           "nextHandoff": "How do mass percentages reveal an empirical formula?"
         },
         {
@@ -2654,9 +2752,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson03.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson03.sa.html",
               "relativePath": "module2/lesson03.sa.html",
               "sha256": "7afce351414805bdd26c51ab5e48c065748e894242c569d70119e712d215b4b0",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "93b14130da3fb588798d6fe92bdc58ea93eaa710a74c3d149446165e1cda0f2a",
               "sectionIds": [
                 "l03-ef-vs-mf-title",
                 "l03-method-title",
@@ -2692,7 +2792,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v05.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m2-v06",
@@ -2731,9 +2831,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson11.sa.html",
               "relativePath": "module2/lesson11.sa.html",
               "sha256": "1c1afd11799fc27c88f06f6c643be9e8cc0f475b4a4f3a4a9c62c620a3ba8d83",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "13a695d75a67e978da0c32b5a4b412f1ff7781ecbe8f7508b7da26a4da7603ce",
               "sectionIds": [
                 "l11-conservation-title",
                 "l11-jobs-title"
@@ -2764,7 +2866,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "rendered, not yet published (out/explainer); design lessons/chem-y11-m2-v06.md"
         },
         {
           "id": "chem-y11-ws-v06",
@@ -2796,8 +2898,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -2833,7 +2937,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m2-v06 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "designed (lessons/chem-y11-ws-v06.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md",
           "nextHandoff": "How do we calculate product mass from a reactant mass?"
         },
         {
@@ -2877,9 +2981,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson12.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson12.sa.html",
               "relativePath": "module2/lesson12.sa.html",
               "sha256": "6f935143648bfa77bb02577ce5881dbf61888b8ef11101a46a4728493aeb885c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "53cee3a5f882463f50bc22836d3f87efc3842419075d53aa48820251e08bf00d",
               "sectionIds": [
                 "l12-fourstep-title",
                 "l12-worked-title"
@@ -2909,7 +3015,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v07.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v08",
@@ -2940,9 +3046,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson13.sa.html",
               "relativePath": "module2/lesson13.sa.html",
               "sha256": "0a47d595bd869897c801e22e52f79613d8c3a3dbd00ea6ff777b3c5147f3139b",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "be4b20849a79c5c566d55b470e2247e6287efe13f0b064d14c23b02f8fec0811",
               "sectionIds": [
                 "l13-method-title",
                 "l13-concept-title",
@@ -2975,7 +3083,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v08.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v09",
@@ -3016,9 +3124,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "relativePath": "module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-errortype-title",
                 "l18-errors-title"
@@ -3030,9 +3140,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson11.sa.html",
               "relativePath": "module2/lesson11.sa.html",
               "sha256": "1c1afd11799fc27c88f06f6c643be9e8cc0f475b4a4f3a4a9c62c620a3ba8d83",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "13a695d75a67e978da0c32b5a4b412f1ff7781ecbe8f7508b7da26a4da7603ce",
               "sectionIds": [
                 "l11-jobs-title"
               ],
@@ -3061,7 +3173,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v09.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-ws-v07",
@@ -3101,8 +3213,10 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson18.sa.html",
               "sha256": "ce0613b3dcad355698647aa7a762a651ff21b4142db9ff7442acd762ec340499",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "95173b75baa85f102674b0f3487ee16676b304e2b9511d89d9597db1cb0722dc",
               "sectionIds": [
                 "l18-warmup-title",
                 "l18-intentions-title",
@@ -3138,7 +3252,7 @@
           "suggestedMinutes": 7,
           "proposedPlacement": "Immediately after chem-y11-m2-v09 and before the next core entry.",
           "splitOrReorderReason": "Keep the core videos focused; integrate this skill at the named practical rather than place seven generic videos at the end.",
-          "teachingStatus": "research proposal",
+          "teachingStatus": "designed (lessons/chem-y11-ws-v07.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md",
           "nextHandoff": "How does concentration link solution volume with moles?"
         },
         {
@@ -3169,9 +3283,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson06.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson06.sa.html",
               "relativePath": "module2/lesson06.sa.html",
               "sha256": "82c1b29a678a1e32e66b23320f6b12d16e7a6d2449b00e7ec8435946f73f187b",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "69156ae45ecea39d058579b4be46a7e4778269ceefff6b76156baf6f1df95eae",
               "sectionIds": [
                 "l06-formula-title",
                 "l06-concept-title",
@@ -3205,7 +3321,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v10.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v11",
@@ -3243,9 +3359,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson08.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson08.sa.html",
               "relativePath": "module2/lesson08.sa.html",
               "sha256": "49dfb2a457f58b4b37ea782373ca1b979bdd9779f79a8ba3e2729957413428d1",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "f96077ef543f803e7d45428bffe76e462a7a70fd233687cdabad00082e78061a",
               "sectionIds": [
                 "l08-units-title",
                 "l08-worked-title"
@@ -3274,7 +3392,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v11.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v12",
@@ -3301,9 +3419,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson07.sa.html",
               "relativePath": "module2/lesson07.sa.html",
               "sha256": "66d6b0cb43de0d67b103955a9c31a192a8ec337c86dcc9be19e01bb6d17f4501",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "e1eb771a8b51eab30f0084926ab58a36e17e08d2218d05f8c05cadbdf2c5f3f1",
               "sectionIds": [
                 "l07-standards-title"
               ],
@@ -3332,7 +3452,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v12.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v13",
@@ -3370,9 +3490,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson07.sa.html",
               "relativePath": "module2/lesson07.sa.html",
               "sha256": "66d6b0cb43de0d67b103955a9c31a192a8ec337c86dcc9be19e01bb6d17f4501",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "e1eb771a8b51eab30f0084926ab58a36e17e08d2218d05f8c05cadbdf2c5f3f1",
               "sectionIds": [
                 "l07-dilution-title",
                 "l07-worked-title"
@@ -3403,7 +3525,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v13.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v14",
@@ -3441,9 +3563,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson10.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson10.sa.html",
               "relativePath": "module2/lesson10.sa.html",
               "sha256": "bf4c14b8714da90bf3c7259bda2d3910a5fcda57c65ff711daf03a23f09cf813",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "579e36133e864ea0223f695e4e39d68ec41f9a95092531bf8711c05337708e58",
               "sectionIds": [
                 "l10-apparatus-title",
                 "l10-method-title"
@@ -3455,9 +3579,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson16.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson16.sa.html",
               "relativePath": "module2/lesson16.sa.html",
               "sha256": "d522bfe03327a0f7c36dd7613aeed256098d1cb730f31b471b93ebec217ee57e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "b2745fdd308a60181633eabb28a8a84ffd8fbc467ae2f2af01c94fc959a1a6b1",
               "sectionIds": [
                 "l16-concept-title"
               ],
@@ -3486,7 +3612,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v14.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v15",
@@ -3526,9 +3652,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson09.sa.html",
               "relativePath": "module2/lesson09.sa.html",
               "sha256": "46088e0beb03cbe3709924f8151009053c2b9a79604ce6cc636182220de6629f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "d2228f2474b09c19543c69edc25f0ae2ad749e9a95b328638e0db065c1d57c42",
               "sectionIds": [
                 "l09-what-title",
                 "l09-chain-title",
@@ -3542,9 +3670,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson05.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson05.sa.html",
               "relativePath": "module1/lesson05.sa.html",
               "sha256": "c8b8b3adf2bc76e424505bb6e88bafecc0cd7fa9784e57dd9400175521a4222d",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "2c40d9f336d393ade6792123bbd9e8247c6970b8377d964cb8cd15a9af7ec53c",
               "sectionIds": [
                 "l05-gravimetric-analysis-title",
                 "l05-worked-examples-title"
@@ -3575,7 +3705,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v15.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v16",
@@ -3620,9 +3750,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson04.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson04.sa.html",
               "relativePath": "module2/lesson04.sa.html",
               "sha256": "3dd0767ed684e895dbabbbf45d28db13b2186b08b1115072a0772b9eec2de8ec",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c9c7f9171d1e5fe3c46165e9135ee93ed57e7b02e9aa7b00b32a736a6713f56c",
               "sectionIds": [
                 "l04-why-title",
                 "l04-formula-title"
@@ -3634,9 +3766,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson15.sa.html",
               "relativePath": "module2/lesson15.sa.html",
               "sha256": "fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c669da846da62b24e79b20cb8225f84f152a11709a2219b6073cf04f8585e6a0",
               "sectionIds": [
                 "l15-avogadro-title"
               ],
@@ -3663,7 +3797,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v16.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v17",
@@ -3695,9 +3829,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson15.sa.html",
               "relativePath": "module2/lesson15.sa.html",
               "sha256": "fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c669da846da62b24e79b20cb8225f84f152a11709a2219b6073cf04f8585e6a0",
               "sectionIds": [
                 "l15-gaslaws-title",
                 "l15-prac-title"
@@ -3728,7 +3864,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v17.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v18",
@@ -3760,9 +3896,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson15.sa.html",
               "relativePath": "module2/lesson15.sa.html",
               "sha256": "fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c669da846da62b24e79b20cb8225f84f152a11709a2219b6073cf04f8585e6a0",
               "sectionIds": [
                 "l15-gaslaws-title",
                 "l15-prac-title"
@@ -3793,7 +3931,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v18.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v19",
@@ -3825,9 +3963,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson15.sa.html",
               "relativePath": "module2/lesson15.sa.html",
               "sha256": "fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c669da846da62b24e79b20cb8225f84f152a11709a2219b6073cf04f8585e6a0",
               "sectionIds": [
                 "l15-gaslaws-title"
               ],
@@ -3854,7 +3994,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v19.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m2-v20",
@@ -3897,9 +4037,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module2/lesson15.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module2/lesson15.sa.html",
               "relativePath": "module2/lesson15.sa.html",
               "sha256": "fddafeba74553bc550196bfae464df4d3da32f508ee29efb3501efbcbc264d1e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c669da846da62b24e79b20cb8225f84f152a11709a2219b6073cf04f8585e6a0",
               "sectionIds": [
                 "l15-avogadro-title",
                 "l15-prac-title",
@@ -3932,7 +4074,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m2-v20.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v01",
@@ -3970,9 +4112,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson01.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson01.sa.html",
               "relativePath": "module3/lesson01.sa.html",
               "sha256": "c7fcab70a894d6a54e4563de348c6b0a8e6fba210d1b35e3ec8e78093b86d30c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "9bbe770917446777f8e4e485956add88c0ab9e0b09402630e775d9f95362ad20",
               "sectionIds": [
                 "l01-common-indicators-of-chemical-change-title",
                 "l01-modelling-atom-rearrangement-conservation-of-title"
@@ -4001,7 +4145,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v01.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v02",
@@ -4054,9 +4198,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson02.sa.html",
               "relativePath": "module3/lesson02.sa.html",
               "sha256": "a7facf444691b5c5632a09f95ab0ae7e52e3ecff9a89e8c32525be1e2f645546",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ab509761eb077e219b3d7770801137aed34d34db77a19181dafc28df4418cbb1",
               "sectionIds": [
                 "l02-balancing-synthesis-and-decomposition-equati-title",
                 "l02-worked-examples-title"
@@ -4087,7 +4233,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v02.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v03",
@@ -4129,9 +4275,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson03.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson03.sa.html",
               "relativePath": "module3/lesson03.sa.html",
               "sha256": "bc49bf0a146c4fc117c8988d9ac2302dc95637738ec2d566fd8adcb1e28a9106",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "f04f9da7c0eaaaf3afb9a32fd72758b55edd29d226b3c211d32cfe32be7e717a",
               "sectionIds": [
                 "l03-solubility-rules-the-nagsag-framework-title",
                 "l03-writing-full-ionic-and-net-ionic-equations-title"
@@ -4162,7 +4310,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v03.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v04",
@@ -4204,9 +4352,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson04.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson04.sa.html",
               "relativePath": "module3/lesson04.sa.html",
               "sha256": "1b3fbecf2e19c7599253c8a9adcef66c3fa5fd2ab52ae4f7231b7c2306d10591",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "1301214a3e545a13c9d9431862219b46cbbc15e03e7596b2e15396221cd8ee4f",
               "sectionIds": [
                 "l04-incomplete-combustion-title",
                 "l04-metal-combustion-title",
@@ -4239,7 +4389,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v04.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v05",
@@ -4281,9 +4431,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson05.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson05.sa.html",
               "relativePath": "module3/lesson05.sa.html",
               "sha256": "841ad941bfdbd76871134c3e936ced7b63449aaca6727da9ec6660a1786d5976",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "f67162e440a65f8a8e30dc7bce3b8609c572f21662994aa149be9eb0edacf448",
               "sectionIds": [
                 "l05-acid-base-neutralisation-reactions-title",
                 "l05-acid-carbonate-acid-hydrogen-carbonate-react-title",
@@ -4306,7 +4458,7 @@
           "next": [
             "chem-y11-m3-v06"
           ],
-          "nextHandoff": "How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?",
+          "nextHandoff": "What chemistry removes toxins when Aboriginal and Torres Strait Islander Peoples prepare poisonous plant foods?",
           "practicals": [
             "Teacher-approved neutralisation and carbonate reactions"
           ],
@@ -4316,14 +4468,14 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v05.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m3-v06",
           "playlistOrder": 60,
-          "title": "How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?",
-          "mainLearnerQuestion": "How do particular Aboriginal and Torres Strait Islander food-processing practices remove toxins?",
-          "type": "cultural-hold",
+          "title": "What chemistry removes toxins when Aboriginal and Torres Strait Islander Peoples prepare poisonous plant foods?",
+          "mainLearnerQuestion": "What chemistry removes toxins when Aboriginal and Torres Strait Islander Peoples prepare poisonous plant foods?",
+          "type": "core",
           "module": 3,
           "moduleTitle": "Reactive Chemistry",
           "inquiryQuestions": [
@@ -4343,9 +4495,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson06.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson06.sa.html",
               "relativePath": "module3/lesson06.sa.html",
               "sha256": "48bf55dec51fdf456c9babfd04f4a8f8ed864c5cdbf7c09c997184c5bd923927",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "75cdf3b0c5d1314858573d9597f96d9f6b2374ebc99a0c341c22728c7a767a27",
               "sectionIds": [
                 "l06-cycad-toxicity-the-chemistry-of-the-problem-title",
                 "l06-the-chemistry-behind-the-methods-physical-an-title"
@@ -4361,8 +4515,8 @@
           "prerequisites": [
             "chem-y11-m3-v05"
           ],
-          "start": "Begin with the concrete case named in the question and recall the needed earlier idea.",
-          "stop": "Use an attributed community-specific account to explain the chemical process, not a universal tradition or food-preparation instruction. No design until provenance and permission are resolved.",
+          "start": "Begin with poisonous plant foods in general terms and recall the needed earlier ideas (polar dissolving, concentration, new-substance evidence, decomposition).",
+          "stop": "Explain the chemical and physical processes in general terms (no named communities, people, places or specific traditional-knowledge cases); not a food-preparation instruction.",
           "next": [
             "chem-y11-m3-v07"
           ],
@@ -4374,7 +4528,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "held for owner cultural decision and attributed source"
+          "teachingStatus": "designed 24 Nov 2026 in general terms (owner rule, 18 Nov 2026; audit UB1); needs learning review, science check and Codex error check (with the cultural content check) before plates and voicing"
         },
         {
           "id": "chem-y11-m3-v07",
@@ -4414,9 +4568,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson07.sa.html",
               "relativePath": "module3/lesson07.sa.html",
               "sha256": "e0934278911fa449a0dea6ead8b130e95aa8580a09d5a8637650f1acc463c2f7",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "346969aca95f86de3beba83e4c7eda0ada947b86a7605034ea3a494e2b8a5089",
               "sectionIds": [
                 "l07-what-is-metal-reactivity-and-why-does-it-var-title",
                 "l07-the-standard-activity-series-title",
@@ -4449,7 +4605,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v07.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m3-v08",
@@ -4480,9 +4636,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson07.sa.html",
               "relativePath": "module3/lesson07.sa.html",
               "sha256": "e0934278911fa449a0dea6ead8b130e95aa8580a09d5a8637650f1acc463c2f7",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "346969aca95f86de3beba83e4c7eda0ada947b86a7605034ea3a494e2b8a5089",
               "sectionIds": [
                 "l07-what-is-metal-reactivity-and-why-does-it-var-title"
               ],
@@ -4492,9 +4650,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson17.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson17.sa.html",
               "relativePath": "module1/lesson17.sa.html",
               "sha256": "f5255f5050cd01fd277fb04e8830faf13d54b88bc8fc9efd1eaeed42a5715665",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "e2540b00e920d574bbe00756540d670d08cf2973dcee48caac0ddc1f7f9e4c23",
               "sectionIds": [
                 "l17-the-main-atomic-radius-trend-title"
               ],
@@ -4504,9 +4664,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module1/lesson18.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module1/lesson18.sa.html",
               "relativePath": "module1/lesson18.sa.html",
               "sha256": "018b9247bc9bec32c086f50e45e791b0226ac4ef0dd4dab569d67bdb4b2aac36",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "0952ca8fc6090124a12d3d098dead9870cfe15a73a858d783dc89cdf8d7639bf",
               "sectionIds": [
                 "l18-reactivity-trends-metals-and-non-metals-title"
               ],
@@ -4533,7 +4695,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v08.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m3-v09",
@@ -4560,9 +4722,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson08.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson08.sa.html",
               "relativePath": "module3/lesson08.sa.html",
               "sha256": "30f5bcf0d786c10b2ef782bfd58b6bdf6e434d6059e8fa0bb5bd0c33657c40cd",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "d6f14bf10bb8773b0f9a4cc9454a75a0eab643ba9bf002c77161fb2ac7e98042",
               "sectionIds": [
                 "l08-redefining-oxidation-and-reduction-the-elect-title"
               ],
@@ -4589,7 +4753,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v09.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v10",
@@ -4616,9 +4780,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson08.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson08.sa.html",
               "relativePath": "module3/lesson08.sa.html",
               "sha256": "30f5bcf0d786c10b2ef782bfd58b6bdf6e434d6059e8fa0bb5bd0c33657c40cd",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "d6f14bf10bb8773b0f9a4cc9454a75a0eab643ba9bf002c77161fb2ac7e98042",
               "sectionIds": [
                 "l08-writing-half-equations-title"
               ],
@@ -4645,7 +4811,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v10.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v11",
@@ -4680,9 +4846,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson09.sa.html",
               "relativePath": "module3/lesson09.sa.html",
               "sha256": "1e73dd6ac283ad894b2044d5afcd6926c071b9c9364e3f98e240e50aa44c1f92",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "72ff73619fca11e07d3d0a1ed283ef86ca63cdccf4f837790ec805b5b477964e",
               "sectionIds": [
                 "l09-what-is-a-galvanic-cell-title",
                 "l09-standard-reduction-potentials-and-cell-poten-title",
@@ -4715,7 +4883,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v11.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v12",
@@ -4750,9 +4918,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson09.sa.html",
               "relativePath": "module3/lesson09.sa.html",
               "sha256": "1e73dd6ac283ad894b2044d5afcd6926c071b9c9364e3f98e240e50aa44c1f92",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "72ff73619fca11e07d3d0a1ed283ef86ca63cdccf4f837790ec805b5b477964e",
               "sectionIds": [
                 "l09-standard-reduction-potentials-and-cell-poten-title"
               ],
@@ -4762,9 +4932,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson10.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson10.sa.html",
               "relativePath": "module3/lesson10.sa.html",
               "sha256": "1e303865f44ca5de983958afeea3c5d58710b72889354d984b05e8dea887c892",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ba4aefedd081e8ab48db49d986b167bc3eae2316fbd67d0eb35cfa28b613e71f",
               "sectionIds": [
                 "l10-inert-electrodes-when-the-electrode-doesn-t--title",
                 "l10-predicting-reactions-using-the-standard-redu-title"
@@ -4793,7 +4965,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v12.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v13",
@@ -4828,9 +5000,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson11.sa.html",
               "relativePath": "module3/lesson11.sa.html",
               "sha256": "cf5f403acb6076f32aac62de752ab1b82d7813b9d8768fe70038591a7a8d902f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "432d940852c69e58cfb0445c7f1972dffa8a4589f64eb4b886b9c9ce04e57106",
               "sectionIds": [
                 "l11-defining-reaction-rate-title",
                 "l11-collision-theory-the-particle-level-explanat-title"
@@ -4859,7 +5033,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v13.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v14",
@@ -4899,9 +5073,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson12.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson12.sa.html",
               "relativePath": "module3/lesson12.sa.html",
               "sha256": "82cdc5ec95517e567e80bc4bfc8f5fa91c0e29dd3a53783da57ae8a92248e32a",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c5a65f6a5555d6c275a5c221e8f3adeee04ce6fe71e5126ca3f2dbdd733d4864",
               "sectionIds": [
                 "l12-four-factors-that-affect-reaction-rate-title",
                 "l12-2-concentration-and-surface-area-title"
@@ -4932,7 +5108,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v14.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m3-v15",
@@ -4972,9 +5148,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module3/lesson12.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module3/lesson12.sa.html",
               "relativePath": "module3/lesson12.sa.html",
               "sha256": "82cdc5ec95517e567e80bc4bfc8f5fa91c0e29dd3a53783da57ae8a92248e32a",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c5a65f6a5555d6c275a5c221e8f3adeee04ce6fe71e5126ca3f2dbdd733d4864",
               "sectionIds": [
                 "l12-four-factors-that-affect-reaction-rate-title",
                 "l12-2-concentration-and-surface-area-title",
@@ -5007,7 +5185,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m3-v15.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v01",
@@ -5045,9 +5223,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson01.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson01.sa.html",
               "relativePath": "module4/lesson01.sa.html",
               "sha256": "24c82047d9f09703dcff087b64b1f98a0e5809b8fbb923c6c9b8660e2abac4f3",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "144bd0cd0b4f7ecdf662bd39cf573c72f0914a1d6f0059b66c3f03f188562c30",
               "sectionIds": [
                 "l01-what-is-enthalpy-title",
                 "l01-exothermic-vs-endothermic-reactions-title",
@@ -5080,7 +5260,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v01.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v02",
@@ -5107,9 +5287,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson02.sa.html",
               "relativePath": "module4/lesson02.sa.html",
               "sha256": "8767d8a9172673f06f89e589b7606fbcd14ce5f090d2465d2e25c06e488bb318",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ba460b6a7013b68604b1f5df397f4257cfff49b29bf398931e2135ee2566f1d2",
               "sectionIds": [
                 "l02-the-spirit-burner-calorimeter-setup-title"
               ],
@@ -5119,9 +5301,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson03.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson03.sa.html",
               "relativePath": "module4/lesson03.sa.html",
               "sha256": "4f02388499473c9a66690e4936ba14c21d1f8022a6a5b27cd9d226b890b82d42",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "d06307c146374a553e659d70426d2c13ec585ce5d53eca8b80b9bbe57c47e9a5",
               "sectionIds": [
                 "l03-combustion-vs-neutralisation-calorimetry-title",
                 "l03-m-is-just-the-mass-of-the-acid-or-the-base-title"
@@ -5150,7 +5334,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v02.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v03",
@@ -5188,9 +5372,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson02.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson02.sa.html",
               "relativePath": "module4/lesson02.sa.html",
               "sha256": "8767d8a9172673f06f89e589b7606fbcd14ce5f090d2465d2e25c06e488bb318",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ba460b6a7013b68604b1f5df397f4257cfff49b29bf398931e2135ee2566f1d2",
               "sectionIds": [
                 "l02-the-spirit-burner-calorimeter-setup-title",
                 "l02-sources-of-error-in-combustion-calorimetry-title",
@@ -5223,7 +5409,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v03.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v04",
@@ -5261,9 +5447,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson04.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson04.sa.html",
               "relativePath": "module4/lesson04.sa.html",
               "sha256": "045d15bcb83112f6eeb794627f78a5d87b823b7bf5ffca19c14c3a3756b09d7d",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "ed53bc64abdc2953cc6fd68cf2a64f0f22f9a87319b82e89cef5de492832740a",
               "sectionIds": [
                 "l04-the-dissolution-calorimeter-setup-title",
                 "l04-worked-examples-title"
@@ -5294,7 +5482,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Practical method, observations and limitations have their own slot.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v04.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m4-v05",
@@ -5329,9 +5517,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson05.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson05.sa.html",
               "relativePath": "module4/lesson05.sa.html",
               "sha256": "91e73710ac6fdf5098802d26792ed904a4862e34796fed0da9aa489d679c1e8c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "c7921519c75a7165a5ff24fc361e51c605ee8ba9fd6bd1ce9cf57d4187f49748",
               "sectionIds": [
                 "l05-how-catalysts-work-lowering-ea-title",
                 "l05-homogeneous-vs-heterogeneous-catalysts-title",
@@ -5362,7 +5552,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v05.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m4-v06",
@@ -5401,9 +5591,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson06.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson06.sa.html",
               "relativePath": "module4/lesson06.sa.html",
               "sha256": "931953cd3b32025c2e38c8b66fb63d21f8afcc998385d9fc7bf96a89f946d908",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "7fe045cf8adc973e3e46f9150609d1ee99178d530c61536e42971aa0a62e8974",
               "sectionIds": [
                 "l06-the-bond-energy-calculation-method-title",
                 "l06-worked-examples-title"
@@ -5432,7 +5624,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v06.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v07",
@@ -5461,9 +5653,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson08.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson08.sa.html",
               "relativePath": "module4/lesson08.sa.html",
               "sha256": "3e1cbbc975c04e3874267c6c20ff718c5d628f694ced9c43667c9b87f9625587",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "a46652018c03926f16d3e92493e70eed32359041874c873159052304e4531360",
               "sectionIds": [
                 "l08-why-hess-s-law-exists-title",
                 "l08-manipulating-thermochemical-equations-title",
@@ -5494,7 +5688,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v07.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v08",
@@ -5535,9 +5729,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson07.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson07.sa.html",
               "relativePath": "module4/lesson07.sa.html",
               "sha256": "c05ea947313f95c070a4a77060b643ed8da89aa94e2e4cba379ab33e60276d4c",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "b62b3776ce5431899d9a9b5863228be4d09c98e78cc95f3f52032e7e8a5fbdff",
               "sectionIds": [
                 "l07-calculating-h-rxn-from-h-f-values-title",
                 "l07-comparing-accuracy-bond-energy-vs-h-f-title",
@@ -5568,7 +5764,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v08.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         },
         {
           "id": "chem-y11-m4-v09",
@@ -5599,9 +5795,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson10.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson10.sa.html",
               "relativePath": "module4/lesson10.sa.html",
               "sha256": "50dd5288cc5a6ee9520b5fe2616219c4dcca18b9fb5ef65768da976a98b601f6",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "cf3774f597def6967e893f9bb62e2d73973e9592bf0e05c592b8d9bdf9baffcd",
               "sectionIds": [
                 "l10-comparing-the-three-methods-when-to-use-each-title",
                 "l10-comparing-fuel-efficiency-per-mole-vs-per-gr-title",
@@ -5632,7 +5830,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v09.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v10",
@@ -5663,9 +5861,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson09.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson09.sa.html",
               "relativePath": "module4/lesson09.sa.html",
               "sha256": "8610bc8e709b89bb6b34b7883872e404c3ff2a9ca914e2e56de974ddda14c57e",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "49efce1ab56813fd6b0758e757ae0de9fbf91dbf7a0c904c5ae8381aa0b20413",
               "sectionIds": [
                 "l09-constructing-the-hess-s-law-energy-cycle-title",
                 "l09-atp-coupling-hess-s-law-in-biology-title",
@@ -5696,7 +5896,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v10.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v11",
@@ -5731,9 +5931,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson11.sa.html",
               "relativePath": "module4/lesson11.sa.html",
               "sha256": "2b2a7da0570acdb7db9301d252918c766dfc134f8704d10a8dd8a8a1a8f2ea5b",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "492b13dc74ff349fe9f4714498ce12f30c0f3225185a1b90a1c9d8ae61fdf0b6",
               "sectionIds": [
                 "l11-what-is-entropy-title",
                 "l11-the-second-law-of-thermodynamics-title"
@@ -5762,7 +5964,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v11.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v12",
@@ -5797,9 +5999,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson11.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson11.sa.html",
               "relativePath": "module4/lesson11.sa.html",
               "sha256": "2b2a7da0570acdb7db9301d252918c766dfc134f8704d10a8dd8a8a1a8f2ea5b",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "492b13dc74ff349fe9f4714498ce12f30c0f3225185a1b90a1c9d8ae61fdf0b6",
               "sectionIds": [
                 "l11-predicting-the-sign-of-s-title"
               ],
@@ -5809,9 +6013,11 @@
               "role": "Source material only; use the stated teaching scope, not the whole page."
             },
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson12.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson12.sa.html",
               "relativePath": "module4/lesson12.sa.html",
               "sha256": "99affff781eb8853aa6aa4c3081683e706db99508e1110d414fa42dd14abb75f",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "b961109a479c9b939af1d915278f578bfc692caf111a0be9171ae906d4f064c6",
               "sectionIds": [
                 "l12-the-third-law-and-absolute-entropy-title",
                 "l12-calculating-s-using-standard-entropy-values-title"
@@ -5840,7 +6046,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v12.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v13",
@@ -5879,9 +6085,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson13.sa.html",
               "relativePath": "module4/lesson13.sa.html",
               "sha256": "898ff79cedc1b9ac4309c53ee9cf48c201f1da8c6b5ec98291d3e9c767b76e0a",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "7c47e71c796d8700a6426d5a0aa97b736dbfdd01ea131d18f94e65b5da3b7360",
               "sectionIds": [
                 "l13-defining-gibbs-free-energy-title",
                 "l13-the-haber-process-paradox-resolved-title",
@@ -5912,7 +6120,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v13.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md"
         },
         {
           "id": "chem-y11-m4-v14",
@@ -5947,9 +6155,11 @@
           ],
           "sourceLessons": [
             {
-              "path": "C:/Users/kygs/hscscience/subjects/chemistry/year11/module4/lesson13.sa.html",
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/chemistry/year11/module4/lesson13.sa.html",
               "relativePath": "module4/lesson13.sa.html",
               "sha256": "898ff79cedc1b9ac4309c53ee9cf48c201f1da8c6b5ec98291d3e9c767b76e0a",
+              "sha256Status": "stale: recorded 2026-11-05 against C:/Users/kygs/hscscience (no longer exists); the site has been edited since (audit US7). sha256Current2026-11-24 is the raw-bytes hash of the file in the read-only clone C:/Users/kygs/teaching-app-fix; re-read any section a design quotes before voicing it, and log any new error.",
+              "sha256Current2026-11-24": "7c47e71c796d8700a6426d5a0aa97b736dbfdd01ea131d18f94e65b5da3b7360",
               "sectionIds": [
                 "l13-defining-gibbs-free-energy-title",
                 "l13-the-haber-process-paradox-resolved-title",
@@ -5970,7 +6180,7 @@
           "start": "Begin with the concrete case named in the question and recall the needed earlier idea.",
           "stop": "Analyse sign combinations and solve a threshold with kelvin and consistent units; check either side without claiming a rate.",
           "next": [],
-          "nextHandoff": "Complete and communicate an approved depth study with your teacher.",
+          "nextHandoff": "Year 12 (chem-m5-c01): A sealed bottle of soda water looks completely still. Has everything stopped? The depth study stays a spoken line in the video, not a handoff.",
           "practicals": [],
           "targetMinutes": [
             5,
@@ -5978,7 +6188,7 @@
           ],
           "suggestedMinutes": 8,
           "splitOrReorderReason": "One learner question and one current reasoning stage. Separate this explanation from neighbouring calculations or mechanisms.",
-          "teachingStatus": "research proposal, not design or approval"
+          "teachingStatus": "designed (lessons/chem-y11-m4-v14.md), unrendered and unvoiced; see the design Status line and checks/chem-y11-voicing-readiness.md; narration revised 24 Nov 2026 (coherence-audit fixes), so voicing inputs need re-preparation"
         }
       ]
     }
@@ -6001,9 +6211,8 @@
   "coverageAudit": {
     "parentPoints": 52,
     "unassigned": [],
-    "culturalHold": [
-      "C3-IQ1-04"
-    ]
+    "culturalHold": [],
+    "culturalHoldLifted": "2026-11-24: C3-IQ1-04 designed in general terms as chem-y11-m3-v06 (owner rule, 18 Nov 2026; audit UB1)."
   },
   "orderingNote": "All 83 entries have proposed teaching positions. WS1 to WS3 follow the atomic/spectral starter, WS4/WS5 follow molar-mass measurement, WS6 follows whole-number mole evidence, and WS7 follows quantitative mass evidence. Earlier simple separations recall Stage 5 safe practical work. Playlist order is separate from publication chronology.",
   "sizingNote": "Each entry targets 5 to 10 minutes; estimates are planning judgements, not timed narration. Exact scripts may split further without dropping syllabus actions."
