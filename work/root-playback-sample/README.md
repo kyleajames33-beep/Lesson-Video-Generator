@@ -443,3 +443,7 @@ Root 3 s playback pass, 23 Nov 2026 (442 s, 10 sheets). v1 was fully reviewed at
 ## phys-y12-m5-v05 v2
 
 Root 3 s playback pass, 23 Nov 2026 (447 s, 10 sheets). v1 was fully reviewed at 3 s; v2 fixes only the hand note "45° rule: level ground only", now under the chip row and fully on screen (confirmed). From the 30 m cliff at 20 m s^-1: 4.9t^2 - 10.0t - 30 = 0, t = 3.697 s, R = 64.0 m; 45° 60.9 m, 60° 48.1 m; the extra-part bars; the angle sweep peaks at 64.1 m near 32.5° (checked against tan θ = u/√(u^2 + 2gh)); two crossed slips; memory aid "Down is negative, time is positive."; attempts and feedback checked. Human listening pending. Not queued (no Physics playlist yet).
+
+## phys-y12-m5-v02 v2
+
+Root 3 s playback pass, 24 Nov 2026 (469 s, 10 sheets). v1 was fully reviewed at 3 s on 23 Nov; v2 fixes only the time-to-the-peak scene, where the horizontal card now wraps "u_x = 25 cos 40° / = 19.2 m s^-1" inside its own card with no collision with the vertical card (confirmed 3:36 to 3:57). Components 17.3 and 10.0 m s^-1, the tilt slider (u_x^2 + u_y^2 = 400), velocity and acceleration at the top, t = 16.07/9.8 = 1.64 s, the two traps, memory aid "Cos is close.", attempts and feedback all checked on v1. Human listening pending. Not queued (no Physics playlist yet).
