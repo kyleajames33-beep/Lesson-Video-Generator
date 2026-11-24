@@ -1,8 +1,8 @@
 # Maths S11 T04: How does longitude give time differences at 15 degrees per hour? 360° in 24 hours, 1° = 4 minutes, east is ahead, subtract on the same side and add across Greenwich, the day change, and why real clocks round (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,541 characters by script (see "Narration length estimate"), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,594 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Time and location strand, outline playlist order 51. One video for Standard 1 and Standard 2. Viewers arrive from t03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t04.md`. Route entry: `math-s11-t04` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson03.sa.html` (recall, formulas card, WE2, WE3, trap 02, drills, Q2). Visual system: maths studio kit; the desk globe (new in t03); the spinning globe, longitude ruler and zone map coded.
 
@@ -15,6 +15,15 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Time and loc
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa136ea49c
 
 **Boundary:** starts from t03's final frame exactly (the desk globe `ms11-desk-globe-v1.png`, about 640 px tall, at the centre, lit from the left by a coded sun with a day-night shade; pins "Sydney 151°E" and "Perth 116°E"; chips "Noon at different times?", "Next: longitude and time" and "?"). Recalls t03 (longitude), t01 (60 minutes; 24-hour time) and t02 (past midnight changes the day) in grey chips. Teaches: 15° = 1 h and 1° = 4 min, with the reason; east is ahead; subtract on the same side, add across Greenwich; the time at the other place, with the day; longitude time against real clock time. Not taught: Australian zones and daylight saving (t05); UTC (t06).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-t04-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
+
+- **T04-SEASON (should fix, root's ruling 5): accepted.** Scene 3 now says "Real clocks in Perth are two hours behind Sydney on standard time, three during daylight saving, and never two hours twenty." The two clock faces are captioned "standard time", and a grey chip "daylight saving: 3 h (t05)" shows on the daylight-saving clause, so t04 and t05 state one consistent fact. Scene 4's "before any daylight saving" already matches.
+- No number changed. Joins unchanged.
+- Error-check brief item 7 added (strand pattern 1 of the review summary): every time-zone, offset, gap or Sun claim names its season or month or is given in the question.
+- Narration 5,594 characters (Revision 1: 5,541); about 506 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-t04-learning-review.md` already matches).
 
 ## Decisions
 
@@ -70,9 +79,9 @@ Visual: opens on t03's final frame exactly (the lit globe, pins "Sydney 151°E" 
 Visual: stage change (simulation 1): the desk globe cross-fades into the coded globe seen from above the North Pole (about 760 px), with blue meridians every 15° and an amber noon line from the centre towards a sun at the left. Row, 52 px: "360° ÷ 24 h = 15° per hour" (hand tag "360° in 24 h"). On "Watch the noon line sweep" the globe turns; counters at the right tick together: "1 h · 15°", "2 h · 30°", "3 h · 45°". On "sixty divided by fifteen" a zoom onto one 15° slice divided into 15 one-degree slivers, each labelled "4 min"; on "time" row "60 min ÷ 15 = 4 min per degree" (framed green), hand tag "1° = 4 min". On "spins towards the east" a curved arrow "east" on the globe's rim; on "ahead" the sun marker reaches a pin on the east side first and its coded clock reads later (hand tag "east is ahead").
 
 ### 3. same side of Greenwich: subtract
-> Let's use it. Sydney is at about a hundred and fifty-one degrees east, and Perth at about a hundred and sixteen degrees east. Both are east of Greenwich, on the same side, so subtract to find the gap. A hundred and fifty-one minus a hundred and sixteen is thirty-five **degrees**. Each degree is four minutes, so thirty-five degrees is a hundred and forty minutes, two hours and twenty minutes. Or divide by fifteen, and you get two and a third hours, the same thing. Careful, two and a third hours is two hours twenty, not two hours thirty-three, because a third of sixty minutes is twenty. Sydney is further east, so it's ahead. When the Sun says noon in Sydney, it says nine forty in **Perth**. Now here's the surprise. Real clocks in Perth are two hours behind Sydney, not two hours twenty. Regions round their clocks to whole hours, or sometimes half hours, so everyone in a region shares one time. Longitude gives the Sun's time. The clocks are a choice, and that's coming **up**.
+> Let's use it. Sydney is at about a hundred and fifty-one degrees east, and Perth at about a hundred and sixteen degrees east. Both are east of Greenwich, on the same side, so subtract to find the gap. A hundred and fifty-one minus a hundred and sixteen is thirty-five **degrees**. Each degree is four minutes, so thirty-five degrees is a hundred and forty minutes, two hours and twenty minutes. Or divide by fifteen, and you get two and a third hours, the same thing. Careful, two and a third hours is two hours twenty, not two hours thirty-three, because a third of sixty minutes is twenty. Sydney is further east, so it's ahead. When the Sun says noon in Sydney, it says nine forty in **Perth**. Now here's the surprise. Real clocks in Perth are two hours behind Sydney on standard time, three during daylight saving, and never two hours twenty. Regions round their clocks to whole hours, or sometimes half hours, so everyone in a region shares one time. Longitude gives the Sun's time. The clocks are a choice, and that's coming **up**.
 
-Visual: stage change (simulation 2): the longitude ruler across the top (1,600 px): "180°W" at the left, Greenwich "0°" (amber) at the centre, "180°E" at the right, ticks every 15°. Below, a coded strip map of Australia with Perth and Sydney dots. On "Sydney is at" a blue marker drops at 151°E; on "Perth" a second at 116°E. On "same side" both markers glow on the east half (hand tag "same side: subtract"); a gap bracket spans them; on "degrees" (first bold) row "151 − 116 = 35°" (amber). On "four minutes" row "35 × 4 = 140 min = 2 h 20 min" (framed green); on "divide by fifteen" grey row "35 ÷ 15 = 2⅓ h"; on "not two hours thirty-three" a red ghost "2 h 33 min" crossed (caption "⅓ of 60 min = 20 min"). On "noon in Sydney" coded clocks above the two dots: "12:00" over Sydney; on "Perth" "9:40" over Perth (green), with an arrow pointing east labelled "ahead". On "Real clocks" two clock faces slide in beneath: "Sydney 12:00" and "Perth 10:00" with a "2 h" chip, beside the Sun's "2 h 20 min" (visual surprise), hand tag "Sun's time ≠ clock time". On "up" a small chip "rounded zones: soon".
+Visual: stage change (simulation 2): the longitude ruler across the top (1,600 px): "180°W" at the left, Greenwich "0°" (amber) at the centre, "180°E" at the right, ticks every 15°. Below, a coded strip map of Australia with Perth and Sydney dots. On "Sydney is at" a blue marker drops at 151°E; on "Perth" a second at 116°E. On "same side" both markers glow on the east half (hand tag "same side: subtract"); a gap bracket spans them; on "degrees" (first bold) row "151 − 116 = 35°" (amber). On "four minutes" row "35 × 4 = 140 min = 2 h 20 min" (framed green); on "divide by fifteen" grey row "35 ÷ 15 = 2⅓ h"; on "not two hours thirty-three" a red ghost "2 h 33 min" crossed (caption "⅓ of 60 min = 20 min"). On "noon in Sydney" coded clocks above the two dots: "12:00" over Sydney; on "Perth" "9:40" over Perth (green), with an arrow pointing east labelled "ahead". On "Real clocks" two clock faces slide in beneath, captioned "standard time": "Sydney 12:00" and "Perth 10:00" with a "2 h" chip; on "three during daylight saving" a small grey chip "daylight saving: 3 h (t05)" (Revision 2, T04-SEASON); beside the Sun's "2 h 20 min" (visual surprise), hand tag "Sun's time ≠ clock time". On "up" a small chip "rounded zones: soon".
 
 ### 4. measuring from Greenwich
 > The same idea explains a number you'll see a lot. The meridian at a hundred and fifty degrees east is a hundred and fifty degrees from Greenwich. A hundred and fifty divided by fifteen is ten, so it's ten hours ahead of **Greenwich**. When it's noon at Greenwich, it's ten pm there. A place at a hundred and five degrees east is seven hours ahead, so noon at Greenwich is seven pm there. And Sydney, at a hundred and fifty-one east, is one degree past a hundred and fifty, so by the Sun it's ten hours and four minutes ahead of Greenwich. That's why the clocks in eastern Australia are set ten hours ahead of Greenwich, the nearest whole hour, before any daylight saving.
@@ -182,9 +191,9 @@ Recalculated (24 Nov 2026, scratchpad `s11t/verify.py`, `python -I`; 0 failures)
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,541 characters**, 13 scene headings. Characters per scene (1 to 13): 452, 719, 974, 667, 706, 388, 216, 197, 261, 204, 299, 371, 75. Feedback speech about 19.6 s and 22.5 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,594 characters** in Revision 2 (Revision 1: 5,541), 13 scene headings. Characters per scene (1 to 13): 452, 719, 1027, 667, 706, 388, 216, 197, 261, 204, 299, 371, 75. Feedback speech about 19.6 s and 22.5 s.
 
-At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spinning globe (2) and the ruler (3, 5), about 20 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
+At 13.3 characters per second the speech is about 421 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spinning globe (2) and the ruler (3, 5), about 20 s; the key-notes scene adds about 39 s beyond its line. Total **about 506 s**, 64 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 4's 105°E sentence (keep the row on screen); scene 3's "Careful" sentence (keep the crossed ghost).
 
@@ -243,6 +252,7 @@ Error-only check (report errors; do not restyle or rewrite):
 4. Confirm both attempts carry every demand ("using longitude only") and show no answer.
 5. Confirm scene 1 opens on t03's final frame exactly and scene 12 matches t05's Boundary.
 6. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
+7. Season check (Revision 2, learning review pattern 1): every time-zone, offset, gap or Sun claim, including side remarks, names its season or month or is given in the question, and is true for that season.
 
 ## YouTube metadata (draft)
 
@@ -269,4 +279,5 @@ Builds on: Latitude and Longitude: Finding Any Place on Earth. Next: Australian 
 
 ## Review notes
 
+- Revision 2 (24 Nov 2026): learning review resolved (T04-SEASON). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t03; check that 15° comes from 360 ÷ 24 before use, that "east is ahead" carries its reason, that the ruler makes "add across Greenwich" visible, that the day change is shown on the odometer, that the Sun's 2 h 20 against the clocks' 2 h lands, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

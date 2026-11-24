@@ -1,8 +1,8 @@
 # Maths S11 N05: How does a minimum spanning tree connect everything for the least cost? Cheapest link first, skip any link that closes a cycle, stop when everything is joined; the cost saved, a second method with the same total, and the camp's lights confirmed (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,495 characters by script (see "Narration length estimate"), 13 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,458 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifth video of the Year 11 Networks, paths and trees strand, outline playlist order 58. One video for Standard 1 and Standard 2. Viewers arrive from n04's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n05.md`. Route entry: `math-s11-n05` in `../../programme/maths-standard-route-inputs-13.json`. Site lesson: `year11/networks-paths-and-trees/lesson05.sa.html` (Kruskal's and Prim's steps, WE1 to WE3). Visual system: maths studio kit; the phone tower, hiking valley, country town and delivery van plates (existing); networks and lists coded.
 
@@ -16,6 +16,15 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Networks, p
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
 **Boundary:** starts from n04's final frame exactly (the phone tower `ma11-phone-tower-v1.png`, about 460 px tall, at the left; five coded tower icons "A" to "E" at the right with seven amber links tagged in km: A–B "8", A–C "3", B–C "5", B–D "7", C–D "2", C–E "6", D–E "4"; chips "link every tower, least cable?", "Next: minimum spanning trees" and "?"). Recalls n04 (cycle, spanning tree, minimum spanning tree; the camp's 150 m) in grey chips. Teaches: a method for the minimum spanning tree (cheapest first, skip cycles, stop at one fewer link than vertices); minimal connector problems with a cost; a second method with the same total; the camp confirmed. Not taught: shortest paths (n06, n07).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-n05-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
+
+- **N05-TIE (should fix, root's ruling 9): accepted.** Feedback 2 now names both length-7 links and the tie: "Two links tie at seven. A B closes A, B, C, so skip it. E F brings in F, so keep it." The sorted list shows both 7s (A–B and E–F); A–B flashes its cycle A–B–C and greys (hand tag "a tie: either order"). Checked by listing all spanning trees: 21 km is unique (next 22), and taking the tied 7s in either order gives the same tree. To stay under 30 s, "because it joins the two groups" is cut and the slip line is shortened ("Keeping B D, for twenty, makes a loop and leaves F out. That's the slip."): 379 characters, about 28.5 s (Revision 1: 374, 28.1 s). The model answer and author note (e) name the tie.
+- **N05-DIRECT (note): applied by cutting the clause.** Scene 4 ends "every tower can still reach every other, through the tree." In this network each skipped link ties with its tree route, so "not always by the most direct route" had no true picture here; n07 teaches that contrast with a real example. The A → C → D → E glow and its chip are replaced by the tree's links pulsing in turn.
+- No other number changed. Joins unchanged.
+- Narration 5,458 characters (Revision 1: 5,495); about 493 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-n05-learning-review.md` already matches).
 
 ## Decisions
 
@@ -46,7 +55,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (b) 14 × 25 000 = 350 000; 35 × 25 000 = 875 000 (example price, not a quote).
   (c) Prim from A: A–C 3; then cheapest out of {A, C}: C–D 2; out of {A, C, D}: D–E 4; out of {A, C, D, E}: C–B 5 (B–D 7, A–B 8 dearer). 14.
   (d) Camp: 30 (B–C), 35 (D–E), 40 (A–B), 45 (C–D) kept; 50 (B–D), 60 (A–C), 70 (C–E) skipped. 150 = n04's tree. All paths: 40 + 60 + 30 + 50 + 45 + 70 + 35 = 330.
-  (e) A1: Q–R 5, R–S 7, P–R 8 kept; Q–S 10 closes Q–R–S; P–Q 12 closes. 20. A2: D–E 2, B–C 3, A–C 4, C–E 5 kept; B–D 6 closes B–C–E–D; E–F 7 kept (5 links): 21. Slip 20 uses B–D and leaves F out.
+  (e) A1: Q–R 5, R–S 7, P–R 8 kept; Q–S 10 closes Q–R–S; P–Q 12 closes. 20. A2: D–E 2, B–C 3, A–C 4, C–E 5 kept; B–D 6 closes B–C–E–D; A–B 7 (tied with E–F 7) closes A–B–C; E–F 7 kept (5 links): 21 (unique; next 22). Either order for the tied 7s gives the same tree. Slip 20 uses B–D and leaves F out.
 
 Main question: *Five phone towers, seven possible links. How does a minimum spanning tree connect everything for the least cost?*
 Entry knowledge (math-s11-n04, n02): spanning trees; cycles; weights.
@@ -73,9 +82,9 @@ Visual: stage change (simulation 1): the network at the right (1,000 px); at the
 Visual: the list and network stay (continue). Each link in turn: its list row lights and its edge glows amber; on "keep" it turns teal with a tick in the list, and the counter climbs "1 of 4", "2 of 4", "3 of 4", "4 of 4" (hand tag "stop at 4 links" on the fourth). On "C to E, six" the cycle C–D–E flashes violet and C–E greys with a cross; the same for B–D (B–C–D) and A–B (A–B–C). On "kilometres" row "2 + 3 + 4 + 5 = 14 km" (framed green), the teal tree standing alone as the other links fade.
 
 ### 4. a minimal connector problem
-> That's the answer to a minimal connector problem. Connect everything, with the least total length. Fourteen kilometres instead of thirty-five. At twenty-five thousand dollars a kilometre, that's three hundred and fifty thousand **dollars**, instead of eight hundred and seventy-five thousand. And every tower can still reach every other, through the tree, just not always by the most direct route. Councils use the same idea for water mains, farms for irrigation pipes, and power companies for lines to new houses. Whenever a question says connect them all as cheaply as possible, it's a minimal connector problem, and a minimum spanning tree answers it.
+> That's the answer to a minimal connector problem. Connect everything, with the least total length. Fourteen kilometres instead of thirty-five. At twenty-five thousand dollars a kilometre, that's three hundred and fifty thousand **dollars**, instead of eight hundred and seventy-five thousand. And every tower can still reach every other, through the tree. Councils use the same idea for water mains, farms for irrigation pipes, and power companies for lines to new houses. Whenever a question says connect them all as cheaply as possible, it's a minimal connector problem, and a minimum spanning tree answers it.
 
-Visual: stage change (simulation 2): the country town `ma12-country-town-v1.png` (about 700 px wide) along the bottom as the place being served; the tree above it. A chip, 44 px, "minimal connector problem: connect everything for the least total" (hand tag "minimal connector"). Cable meter rolls "0 → 14 km" as each teal link pulses; dollars roll "$0 → $350 000"; on "dollars" row "14 × $25 000 = $350 000" (framed green); a grey ghost bar "all links: 35 × $25 000 = $875 000". On "not always by the most direct route" the tree route A → C → D → E glows teal and a grey chip "n06, n07: shortest routes" appears. On "water mains" three small coded icons (a pipe, an irrigation sprinkler outline, a power pole outline).
+Visual: stage change (simulation 2): the country town `ma12-country-town-v1.png` (about 700 px wide) along the bottom as the place being served; the tree above it. A chip, 44 px, "minimal connector problem: connect everything for the least total" (hand tag "minimal connector"). Cable meter rolls "0 → 14 km" as each teal link pulses; dollars roll "$0 → $350 000"; on "dollars" row "14 × $25 000 = $350 000" (framed green); a grey ghost bar "all links: 35 × $25 000 = $875 000". On "through the tree" the four teal links pulse in turn from A to E (Revision 2, note N05-DIRECT: the "most direct route" clause is cut, because every skipped link here ties with its tree route; n07 carries the true contrast). On "water mains" three small coded icons (a pipe, an irrigation sprinkler outline, a power pole outline).
 
 ### 5. another method, the same total
 > There's another way to the same answer. Start at any tower, say A. Keep adding the cheapest link from the towers you already have to a tower you don't have yet. From A, the cheapest is A to C, three. Then C to D, two. Then D to E, four. Then C to B, five. Same four links, same fourteen **kilometres**. This one's called Prim's method. Kruskal's is handy when you're given a list of edges. Prim's is handy when you're looking at a diagram, because you just look outwards from what you've already built. Either method is fine, because the syllabus lets you use any method, as long as you show your steps.
@@ -108,9 +117,9 @@ Visual: the card shrinks to the top (30 px). The builder runs: Q–R, R–S, P�
 Visual: `QuestionCard`, 40 px: "Six towns A to F are to be linked by a gas pipeline. The possible links (km) are shown. Use any method to find the minimum spanning tree and its total length." Picture slot: the network: A–B 7, A–C 4, B–C 3, B–D 6, C–D 8, C–E 5, D–E 2, D–F 9, E–F 7. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> In order. D E two, keep. B C three, keep. A C four, keep. C E five, keep, because it joins the two groups. B D six would close B, C, E, D, so skip it. E F seven, keep, and that's five links for six towns. The total is two plus three plus four plus five plus seven, twenty-one **kilometres**. Keeping B D and stopping at twenty makes a loop and leaves F out, and that's the **slip**.
+> In order. D E two, keep. B C three, keep. A C four, keep. C E five, keep. B D six closes B, C, E, D, so skip it. Two links tie at seven. A B closes A, B, C, so skip it. E F brings in F, so keep it. That's five links for six towns, and two plus three plus four plus five plus seven is twenty-one **kilometres**. Keeping B D, for twenty, makes a loop and leaves F out. That's the **slip**.
 
-Visual: the card shrinks to the top. The builder runs on the six-town network with the sorted list; B–D flashes the cycle B–C–E–D violet and greys; E–F kept; counter "5 of 5"; on "kilometres" row "2 + 3 + 4 + 5 + 7 = 21 km" (framed green). On "slip" a red slip "2 + 3 + 4 + 5 + 6 = 20 km" writes, F greys with "left out", and the slip is crossed (caption "B–D closes a loop; F is left out"). Hold about 1 s.
+Visual: the card shrinks to the top. The builder runs on the six-town network with the sorted list (2, 3, 4, 5, 6, 7, 7, 8, 9, with both 7s shown: A–B and E–F); B–D flashes the cycle B–C–E–D violet and greys; on "tie at seven" both 7s ring in the list (hand tag "a tie: either order"); A–B flashes the cycle A–B–C violet and greys (Revision 2, N05-TIE); E–F kept; counter "5 of 5"; on "kilometres" row "2 + 3 + 4 + 5 + 7 = 21 km" (framed green). On "slip" a red slip "2 + 3 + 4 + 5 + 6 = 20 km" writes, F greys with "left out", and the slip is crossed (caption "B–D closes a loop; F is left out"). Hold about 1 s.
 
 ### 12. handoff: shortest paths
 > So that's the minimum spanning tree, the cheapest way to connect everything. But a delivery driver has a different question. Not how to connect every stop, but how to get from the depot to one customer as quickly as possible. That's a shortest path, and it needs its own method. How do we find the shortest path through a network? That's **next**.
@@ -137,7 +146,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Misconceptions addressed:** keeping a cycle link (3, A1, A2); not stopping or stopping early (A2); MST as a shortest route (4, said); methods disagreeing (5).
 - **Visual standard, item by item:** 1 the towers in the first 20 s; 2 a new stage every 40 to 70 s; 3 the link-by-link builder flashing would-be cycles, the cost counter, the growing region; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 rows with framed answers and crossed slips; 8 framed card and five bullets; 9 skipped links lighting the very loop they would close, and n04's open question closed.
 - **One idea at a time:** the steps (2), the run (3), the problem and cost (4), another method (5), the camp (6).
-- **Response opportunity:** two unseen tasks with every demand visible; 10 s each; feedback about 23.9 s and 28.1 s.
+- **Response opportunity:** two unseen tasks with every demand visible; 10 s each; feedback about 23.9 s and 28.5 s.
 - **Avoided double teaching:** n04's definitions in chips; shortest paths left to n06 and n07.
 - **Syllabus coverage:** `cicce79437` (2, 3, 5, 6, A1, A2; notes 1 to 3, 5); `cif65754dc` (1, 4, 6, A1, A2; note 4).
 - **Out of scope by design:** proofs that the methods are optimal; matrix forms of Prim's method.
@@ -148,7 +157,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 Model answer: Q–R 5, R–S 7, P–R 8: 20 km. Classic mistake (crossed): "5 + 7 + 8 + 10 = 30 km".
 
 **Attempt 2 (scene 10; pack question 2, 3 marks suggested).** As on the card.
-Model answer: D–E 2, B–C 3, A–C 4, C–E 5, E–F 7 (B–D 6 skipped: it closes B–C–E–D): 21 km. Classic mistake (crossed): "2 + 3 + 4 + 5 + 6 = 20 km".
+Model answer: D–E 2, B–C 3, A–C 4, C–E 5, E–F 7 (B–D 6 skipped: it closes B–C–E–D; A–B 7, tied with E–F 7, skipped: it closes A–B–C): 21 km. Classic mistake (crossed): "2 + 3 + 4 + 5 + 6 = 20 km".
 
 ## Numbers used (author note: every value)
 
@@ -177,9 +186,9 @@ Recalculated (24 Nov 2026, scratchpad `s11n/verify.py`, `python -I`; 0 failures)
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,495 characters**, 13 scene headings. Characters per scene (1 to 13): 510, 667, 704, 650, 599, 582, 219, 224, 318, 218, 374, 343, 75. Feedback speech about 23.9 s and 28.1 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,458 characters** in Revision 2 (Revision 1: 5,495), 13 scene headings. Characters per scene (1 to 13): 510, 667, 704, 608, 599, 582, 219, 224, 318, 218, 379, 343, 75. Feedback speech about 23.9 s and 28.5 s.
 
-At 13.3 characters per second the speech is about 413 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the builder (3, 6), the cost counter (4) and the growing region (5), about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 496 s**, 74 s under the 570 s cap.
+At 13.3 characters per second the speech is about 410 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the builder (3, 6), the cost counter (4) and the growing region (5), about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 493 s**, 77 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence; scene 5's last sentence.
 
@@ -264,4 +273,5 @@ Builds on: Paths, Trees and Spanning Trees. Next: Shortest Paths: The Quickest R
 
 ## Review notes
 
+- Revision 2 (24 Nov 2026): learning review resolved (N05-TIE, N05-DIRECT). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n04; check that "skip a cycle" is justified before the run, that each skipped link shows its loop, that stopping at n − 1 is tied to n04's check, that the camp's 150 m closes n04's open question, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

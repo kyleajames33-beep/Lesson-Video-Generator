@@ -1,8 +1,8 @@
 # Maths S11 T05: How do Australian time zones and daylight saving work? Three standard zones, the half-hour centre, daylight saving in the south-east only, five times in summer, converting event times, and a flight across zones (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,514 characters by script (see "Narration length estimate"), 13 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,598 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifth video of the Year 11 Time and location strand, outline playlist order 52. One video for Standard 1 and Standard 2. Viewers arrive from t04's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t05.md`. Route entry: `math-s11-t05` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson02.sa.html` (key facts on Australian zones, WE3, traps 01 and 03, drill 7). Visual system: maths studio kit; the phone and travel suitcase plates (existing); the zone map, month slider, difference ladder and odometer coded.
 
@@ -15,6 +15,16 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Time and loc
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa136ea49c
 
 **Boundary:** starts from t04's final frame exactly (a coded map of Australia, about 1,100 px wide, shaded in three zone bands (west: Western Australia; central: Northern Territory and South Australia; east: Queensland, New South Wales, the ACT, Victoria, Tasmania), each with a small coded clock face labelled "Perth", "Adelaide", "Sydney" (no times); chips "3 zones, 1 time in each", "Next: Australian time zones" and "?"). Recalls t04 (east is ahead; rounded zones), t02 (adding a duration) and t01 (12-hour and 24-hour time) in grey chips. Teaches: the three standard zones and their differences; daylight saving (what, why, when, who); summer differences; converting event times; a flight across zones. Not taught: UTC (t06).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-t05-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
+
+- **T05-MOST (should fix, root's ruling 6): accepted.** Scene 2 opens "Australia has three time zones. Start with standard time, which runs for about half the year, from April to October." (replacing "For most of the year, there are three zones"), with a grey calendar chip "standard time: Apr to Oct". Scene 12's recap now says "three zones, with three times in winter and five in summer", so the zones stay three and only the number of different times changes.
+- **T05-LOAD and T05-RETURN (notes): not applied now, kept as reserve trims.** Scene 4 is followable with a cue per part and the video has spare time; the Adelaide and Brisbane swap stays in scene 4 and the return flight stays in scene 6. If the voiced take runs long, move the swap to open scene 5 and cut the return flight first.
+- No number changed. Joins unchanged.
+- Error-check brief item 8 added (strand pattern 1 of the review summary): every time-zone, offset, gap or Sun claim names its season or month or is given in the question.
+- Narration 5,598 characters (Revision 1: 5,514); about 502 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-t05-learning-review.md` already matches).
 
 ## Decisions
 
@@ -64,9 +74,9 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): given tim
 Visual: opens on t04's final frame exactly (the three-band map, clocks "Perth", "Adelaide", "Sydney", chips "3 zones, 1 time in each", "Next: Australian time zones", "?"). On "football final" the "Next" chips fade; a coded scoreboard badge "Kick-off 7:30 pm, Melbourne (July)" (blue) appears at the top; on "Perth, Adelaide and Brisbane" three "?" chips pop beside those capitals. On "December" the badge's month flips to "December" and the south-east shimmers violet; on "five different times" five small blank clock faces line up along the bottom. On "work" heading "Australian time zones" writes on (hand font, 56 px).
 
 ### 2. three zones, and the half-hour centre
-> For most of the year, there are three zones. Western Australia uses Western Standard Time. The Northern Territory and South Australia use Central Standard Time. Queensland, New South Wales, the ACT, Victoria and Tasmania use Eastern Standard Time. You'll see them written A W S T, A C S T and A E S T, with the S for standard. Each zone keeps one time on all its clocks, rounded from the Sun's time, like we saw with longitude. Western time is two hours behind Eastern time. Central time is only half an hour behind Eastern, so it's an hour and a half ahead of Western. Half-hour zones are unusual, and that's what makes Adelaide and Darwin tricky. And the rule from longitude still holds. Moving west, the clocks are **behind**, so you take time off. Moving east, you add.
+> Australia has three time zones. Start with standard time, which runs for about half the year, from April to October. Western Australia uses Western Standard Time. The Northern Territory and South Australia use Central Standard Time. Queensland, New South Wales, the ACT, Victoria and Tasmania use Eastern Standard Time. You'll see them written A W S T, A C S T and A E S T, with the S for standard. Each zone keeps one time on all its clocks, rounded from the Sun's time, like we saw with longitude. Western time is two hours behind Eastern time. Central time is only half an hour behind Eastern, so it's an hour and a half ahead of Western. Half-hour zones are unusual, and that's what makes Adelaide and Darwin tricky. And the rule from longitude still holds. Moving west, the clocks are **behind**, so you take time off. Moving east, you add.
 
-Visual: stage change (simulation 1): the zone map large (1,300 px) with state borders; on "Western Australia" the west band lights with a label "Western Standard Time"; on "Northern Territory and South Australia" the central band, "Central Standard Time"; on "Queensland, New South Wales" the east band, "Eastern Standard Time". On "one time on all its clocks" every capital's clock in a band shows the same time (Sydney, Melbourne, Brisbane, Hobart, Canberra all "12:00"; Adelaide and Darwin "11:30"; Perth "10:00"), grey chip "t04: regions round the Sun's time". On "two hours behind" the difference ladder (simulation 2) grows at the right: "Sydney" at the top, "Perth" hung "2 h" below (amber); on "half an hour behind" "Adelaide, Darwin" hung "30 min" below (hand tag "half-hour zone"); "Brisbane" level with Sydney ("0"). On "behind" an arrow "west: behind" (hand tag "west: behind").
+Visual: stage change (simulation 1): the zone map large (1,300 px) with state borders; on "about half the year" a small calendar chip "standard time: Apr to Oct" (grey; Revision 2, T05-MOST); on "Western Australia" the west band lights with a label "Western Standard Time"; on "Northern Territory and South Australia" the central band, "Central Standard Time"; on "Queensland, New South Wales" the east band, "Eastern Standard Time". On "one time on all its clocks" every capital's clock in a band shows the same time (Sydney, Melbourne, Brisbane, Hobart, Canberra all "12:00"; Adelaide and Darwin "11:30"; Perth "10:00"), grey chip "t04: regions round the Sun's time". On "two hours behind" the difference ladder (simulation 2) grows at the right: "Sydney" at the top, "Perth" hung "2 h" below (amber); on "half an hour behind" "Adelaide, Darwin" hung "30 min" below (hand tag "half-hour zone"); "Brisbane" level with Sydney ("0"). On "behind" an arrow "west: behind" (hand tag "west: behind").
 
 ### 3. a winter match
 > Back to the July final, seven thirty pm in Melbourne, on Eastern time. Perth is two hours behind, so fans there tune in at five thirty pm. Adelaide is half an hour behind, so seven pm. Darwin shares Central time with Adelaide, so it's seven pm there as well. Brisbane is in the same zone as Melbourne, so it's seven thirty there **too**. On a twenty-four-hour clock, that's seventeen thirty, nineteen hundred and nineteen thirty. Find the gap between the zones, decide ahead or behind, then add it or take it **off**.
@@ -114,7 +124,7 @@ Visual: `QuestionCard`, 40 px: "In January, a video call starts at 9:00 am in Br
 Visual: the card shrinks to the top. The map at January (violet states). Rows, 44 px: on the first "am" "(a) 9:00 am + 1 h = 10:00 am" (framed green), Sydney's clock lit; on the second "am" "(b) 9:00 am − 30 min = 8:30 am" (framed green), Darwin's clock lit. On "slip" a red slip "Sydney 9:00 am" writes and is crossed (caption "January: Sydney on daylight saving"). Hold about 1 s.
 
 ### 12. handoff: UTC
-> So that's Australia's clocks, three zones in winter and five times in summer. But what about the rest of the world? A friend in London, a match in Tokyo, a flight to Dubai. Each place has its own zone, and some have their own daylight saving, on different dates to ours. Every country sets its clocks from one shared reference, the time at Greenwich, called UTC. How does UTC make international time problems simpler? That's **next**.
+> So that's Australia's clocks, three zones, with three times in winter and five in summer. But what about the rest of the world? A friend in London, a match in Tokyo, a flight to Dubai. Each place has its own zone, and some have their own daylight saving, on different dates to ours. Every country sets its clocks from one shared reference, the time at Greenwich, called UTC. How does UTC make international time problems simpler? That's **next**.
 
 Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "the rest of the world" the phone `ma12-phone-v1.png` (about 640 px tall) at the left with a coded world-clock screen: rows "Sydney", "London", "Tokyo", each with "?" (blue); on "London" its row lights; on "Tokyo" its row lights. On "one shared reference" a coded world strip map (about 1,000 px wide) at the right with the Greenwich meridian drawn in amber; chip "One clock for the world?". On "next" chips "Next: UTC" and "?". Hold about 2 s. This is t06's opening frame; scene 13 returns to it silently after the notes.
 
@@ -181,11 +191,11 @@ Recalculated (24 Nov 2026, scratchpad `s11t/verify.py`, `python -I`; 0 failures)
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,514 characters**, 13 scene headings. Characters per scene (1 to 13): 432, 769, 509, 933, 591, 739, 238, 137, 239, 129, 281, 430, 75. Feedback speech about 18.0 s and 21.1 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,598 characters** in Revision 2 (Revision 1: 5,514), 13 scene headings. Characters per scene (1 to 13): 432, 841, 509, 933, 591, 739, 238, 137, 239, 129, 281, 442, 75. Feedback speech about 18.0 s and 21.1 s.
 
-At 13.3 characters per second the speech is about 415 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the slider (4) and the odometers (6), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 496 s**, 74 s under the 570 s cap.
+At 13.3 characters per second the speech is about 421 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the slider (4) and the odometers (6), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
 
-Reserve trims if the voiced take runs long: scene 2's "Half-hour zones are unusual ..." sentence; scene 6's return-flight sentences (keep the grey rows on screen).
+Reserve trims if the voiced take runs long: scene 2's "Half-hour zones are unusual ..." sentence; scene 6's return-flight sentences (keep the grey rows on screen); if still long, move scene 4's Adelaide and Brisbane swap to open scene 5 (Revision 2, notes T05-LOAD and T05-RETURN).
 
 ## Scene list and build ids
 
@@ -243,6 +253,7 @@ Error-only check (report errors; do not restyle or rewrite):
 5. Confirm both attempts carry every demand (each names its month) and show no answer.
 6. Confirm scene 1 opens on t04's final frame exactly and scene 12 matches t06's Boundary.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
+8. Season check (Revision 2, learning review pattern 1): every time-zone, offset, gap or Sun claim, including side remarks, names its season or month or is given in the question, and is true for that season.
 
 ## YouTube metadata (draft)
 
@@ -269,4 +280,5 @@ Builds on: Longitude and Time: 15 Degrees Is One Hour. Next: UTC: Solving Intern
 
 ## Review notes
 
+- Revision 2 (24 Nov 2026): learning review resolved (T05-MOST; T05-LOAD and T05-RETURN kept as reserve trims). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t04; check that the zones are tied to t04's rounding, that "west is behind" is applied before any summer case, that the slider makes the five times and the Adelaide-Brisbane swap visible, that the flight is done on one clock before converting, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

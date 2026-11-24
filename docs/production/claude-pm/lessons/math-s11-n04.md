@@ -1,8 +1,8 @@
 # Maths S11 N04: What are paths, trees and spanning trees? A path never repeats a vertex, a cycle loops back, a tree connects everything with no cycles, a spanning tree reaches every vertex, and the minimum spanning tree has the smallest total (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,475 characters by script (see "Narration length estimate"), 13 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,500 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 495 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Networks, paths and trees strand, outline playlist order 57. One video for Standard 1 and Standard 2. Viewers arrive from n03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n04.md`. Route entry: `math-s11-n04` in `../../programme/maths-standard-route-inputs-13.json`. Site lessons: lesson03 (the path definition only); lesson04 (trees, spanning trees). Visual system: maths studio kit; the hiking valley and phone tower plates (existing); the networks coded.
 
@@ -15,6 +15,14 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Networks, pa
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
 **Boundary:** starts from n03's final frame exactly (the hiking valley `ma12-hiking-valley-v1.png`, about 1,100 px wide, with five coded cabin dots "A" to "E" (blue) and seven amber path edges with metre tags "40", "60", "30", "50", "45", "70", "35"; a coded lamp icon at the top right; chips "light every cabin, least path?", "Next: paths, trees and spanning trees" and "?"). Recalls n02 (weights; route totals) in a grey chip. Teaches: path; cycle; tree; spanning tree; minimum spanning tree (defined). Not taught: a method for the minimum spanning tree (n05); shortest paths (n06).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-n04-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
+
+- **N04-CYCLE (note): applied, reviewer's wording.** Scene 3 now says "A route that never repeats a vertex until it comes back to the start is called a cycle." (replacing "If a path comes back to where it started, it's called a cycle."), so the definition no longer clashes with scene 2's "a path never visits the same vertex twice". The plain meaning under Decisions matches.
+- No number changed. Joins unchanged.
+- Narration 5,500 characters (Revision 1: 5,475); about 495 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-n04-learning-review.md` already matches).
 
 ## Decisions
 
@@ -32,7 +40,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Stage changes (standard item 2).** The camp map (1); the path walker (2); the cycle and switch-off (3); the tree (4); spanning trees and near misses (5); the carousel and the minimum (6); framed card (7); question cards (8 to 11); the phone towers (12); key notes (13).
 - **Worked examples (g01 order).** Scene 2: "A → B → D → E: 40 + 50 + 35 = 125 m" (framed green); crossed "A → B → C → B → D" (caption "B twice: not a path"). Scene 3: "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". Scene 5: "A–B, B–C, C–D, D–E: 150 m" (framed green); "A–C, C–E, E–D, D–B: 215 m" (framed green). Scene 6: "21 spanning trees; the smallest total is the minimum spanning tree".
 - **Memory aid.** Framed card: "A tree reaches everything and never loops back." Key line: "Path: no vertex twice. Spanning tree: a tree through every vertex. Minimum spanning tree: the smallest total weight."
-- **Plain meanings at first use.** Path ("a route along edges that never visits the same vertex twice"); cycle ("a path that comes back to where it started"); tree ("a connected network with no cycles"); spanning tree ("a tree made of the network's edges that reaches every vertex"); minimum spanning tree ("the spanning tree with the smallest total weight").
+- **Plain meanings at first use.** Path ("a route along edges that never visits the same vertex twice"); cycle ("a route that never repeats a vertex until it comes back to the start"; Revision 2, note N04-CYCLE); tree ("a connected network with no cycles"); spanning tree ("a tree made of the network's edges that reaches every vertex"); minimum spanning tree ("the spanning tree with the smallest total weight").
 - **Attempts.** A1 (pack question 1): (a) yes, 140 m; (b) no; crossed "(b) yes, every step uses an edge" (caption "D twice"). A2 (pack question 2): (iii), 195 m; crossed "(ii): it reaches every cabin" (caption "it has a cycle").
 - **Mistake scene:** none separate. Revisits (2, A1); cycles in "trees" (5, A2); missing vertices (5, A2); one spanning tree only (6); MST as a shortest path (6, said; n07).
 - **Cause chain taught, in order:** (1) a path can't revisit a vertex, so doubling back breaks it (2); (2) a cycle gives two ways round, so one of its edges is spare (3); (3) a connected network with no spare edges is a tree, with exactly one path between any two vertices (4); (4) a tree inside a network that reaches every vertex links everything with no spare edges: a spanning tree (5); (5) different spanning trees have different totals, so the cheapest is the minimum spanning tree (6).
@@ -65,7 +73,7 @@ Visual: opens on n03's final frame exactly (the valley, cabins A to E, seven edg
 Visual: stage change (simulation 1): the camp network enlarged (1,300 px) over the dimmed plate. On "never visits the same vertex twice" hand tag "no vertex twice". On "From A" the walker icon (a small lantern, no figure) steps A → B → D → E; each visited cabin fills; a running length "40", "+50", "+35"; on "path" (first bold) row "A → B → D → E" (teal); on "a hundred and twenty-five metres" "= 125 m" (framed green). On "Now try" the walker resets and steps A → B → C → B; on the second B the cabin flashes red with "already been here"; on "camp" a red slip "A → B → C → B → D" is crossed (caption "B twice: not a path"). On "starts at A and ends at E" tags "start" and "end".
 
 ### 3. a cycle: back to the start
-> If a path comes back to where it started, it's called a cycle. B to C, C to D, and D back to B is a cycle. It's a loop you could walk round and round, thirty plus forty-five plus fifty, a hundred and twenty-five metres of light going in a circle. For lighting, a cycle is wasteful. If every edge of a cycle is lit, you could switch one of them off, and every cabin would still be reachable the other way round the **loop**. Any network with a cycle has a spare edge somewhere. So a cheap lighting plan should have no cycles at all.
+> A route that never repeats a vertex until it comes back to the start is called a cycle. B to C, C to D, and D back to B is a cycle. It's a loop you could walk round and round, thirty plus forty-five plus fifty, a hundred and twenty-five metres of light going in a circle. For lighting, a cycle is wasteful. If every edge of a cycle is lit, you could switch one of them off, and every cabin would still be reachable the other way round the **loop**. Any network with a cycle has a spare edge somewhere. So a cheap lighting plan should have no cycles at all.
 
 Visual: the network stays (continue; simulation 2). On "B to C, C to D, and D back to B" the three edges light teal in turn and then pulse violet together (hand tag "loops back"); row "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". On "switch one of them off" the D–B edge fades; on "the other way round" a reachability glow runs B → C → D (hand tag "switch one off"); on "loop" (bold) all three cabins stay lit.
 
@@ -174,9 +182,9 @@ Recalculated (24 Nov 2026, scratchpad `s11n/verify.py` and an inline count, `pyt
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,475 characters**, 13 scene headings. Characters per scene (1 to 13): 486, 574, 527, 724, 696, 846, 235, 134, 268, 142, 383, 373, 75. Feedback speech about 20.2 s and 28.8 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,500 characters** in Revision 2 (Revision 1: 5,475), 13 scene headings. Characters per scene (1 to 13): 486, 574, 552, 724, 696, 846, 235, 134, 268, 142, 383, 373, 75. Feedback speech about 20.2 s and 28.8 s.
 
-At 13.3 characters per second the speech is about 412 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the walker (2), the tree (4) and the carousel (6), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 493 s**, 77 s under the 570 s cap.
+At 13.3 characters per second the speech is about 414 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the walker (2), the tree (4) and the carousel (6), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 495 s**, 75 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 4's water-pipe sentence; scene 2's last two sentences.
 
@@ -261,4 +269,5 @@ Builds on: Drawing Networks from Tables and Maps. Next: Minimum Spanning Trees: 
 
 ## Review notes
 
+- Revision 2 (24 Nov 2026): learning review resolved (N04-CYCLE). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n03; check that the lighting problem motivates each word, that the walker makes "no vertex twice" visible, that the switch-off shows why cycles waste, that the near misses come before the attempts, that "minimum" is defined without the method, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.

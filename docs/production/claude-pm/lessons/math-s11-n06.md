@@ -1,8 +1,8 @@
 # Maths S11 N06: How do we find the shortest path through a network? Label outwards from the start, lock in the smallest label, update its neighbours, then trace back from the finish; least total weight, not fewest edges (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n05.md` (Revision 1, this batch), the Year 12 design that contrasts it (`math-s12-c03.md`: "Year 11: shortest path (a different question)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n05.md` (Revision 1, this batch), the Year 12 design that contrasts it (`math-s12-c03.md`: "Year 11: shortest path (a different question)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,526 characters by script (see "Narration length estimate"), 13 scene headings, about 500 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,558 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixth video of the Year 11 Networks, paths and trees strand, outline playlist order 59. One video for Standard 1 and Standard 2. Viewers arrive from n05's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n06.md`. Route entry: `math-s11-n06` in `../../programme/maths-standard-route-inputs-13.json`. Site lesson: `year11/networks-paths-and-trees/lesson06.sa.html` (setup, iteration, the worked table, tracing back, WE1 to WE3). Visual system: maths studio kit; the delivery van, share e-bike, road sign post and hillside plates (existing); networks and tables coded.
 
@@ -15,6 +15,14 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Networks, pa
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
 **Boundary:** starts from n05's final frame exactly (the delivery van `ma12-delivery-van-v1.png`, about 480 px wide, at the left; a coded network at the right with a depot "S", stops "A", "B", "C" and a customer "T", edges tagged in minutes S–A "4", S–B "2", A–B "1", A–C "3", A–T "6", B–C "5", C–T "2"; chips "quickest way from S to T?", "Next: shortest paths" and "?"). Recalls n04 (path), n03 (route totals) and n02 (directed, weighted networks) in grey chips. Teaches: the labelling method with its reason; a table layout; tracing back; least total weight against fewest edges; arrows in directed networks; the 10-vertex limit. Not taught: the method's name; "shortest is not best" (n07).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-n06-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
+
+- **N06-WHY (note): applied, reviewer's wording.** Scene 2 now says "Any other route to it would have to go through a stop that's already at least as far, and then travel further still." (replacing "... pass through a stop that's already further away"), so "further than what?" is answered. The race picture is unchanged.
+- No number changed. Joins unchanged.
+- Narration 5,558 characters (Revision 1: 5,526); about 502 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-n06-learning-review.md` already matches).
 
 ## Decisions
 
@@ -63,7 +71,7 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): vertices 
 Visual: opens on n05's final frame exactly (the van, the network S, A, B, C, T with minute tags, chips "quickest way from S to T?", "Next: shortest paths", "?"). On "Your eye goes straight" the edges S–A and A–T glow; a ghost row "S → A → T = 4 + 6 = 10 min?" (amber, with a "?"). On "fewer roads" hand tag "fewer roads ≠ quicker?". On "list every route" a list starts scrolling ("S–A–T", "S–B–C–T", "S–A–C–T", "S–B–A–T", ...) and speeds up to a blur. On "time" heading "Shortest paths" writes on (hand font, 56 px).
 
 ### 2. the idea: first to arrive is quickest
-> Here's the idea behind the method. Imagine the van could split, and send a copy down every road at once, all driving at the same speed. The first copy to reach a stop has found the quickest way there. It's like ripples spreading from a stone dropped in a pond, reaching the nearest places first. So we work outwards from the start, giving each stop a label, the shortest time found so far. Then we lock in whichever stop has the smallest label, because nothing could reach it any faster. Any other route to it would have to pass through a stop that's already further away. Then we use that stop to update its neighbours. Each lock-in is final. Keep going until the finish is locked **in**.
+> Here's the idea behind the method. Imagine the van could split, and send a copy down every road at once, all driving at the same speed. The first copy to reach a stop has found the quickest way there. It's like ripples spreading from a stone dropped in a pond, reaching the nearest places first. So we work outwards from the start, giving each stop a label, the shortest time found so far. Then we lock in whichever stop has the smallest label, because nothing could reach it any faster. Any other route to it would have to go through a stop that's already at least as far, and then travel further still. Then we use that stop to update its neighbours. Each lock-in is final. Keep going until the finish is locked **in**.
 
 Visual: stage change (simulation 1): the network enlarged (1,300 px). On "split" van icons leave S along S–A and S–B, moving at a pace proportional to the weights; at each stop they split again. Arrival stamps pop: "B 2" first, then "A 3" (the copy via B arrives before the copy on S–A, which fades on arrival at "4"), "C 6", "T 8" (the later copies fade). On "first copy" hand tag "first to arrive = quickest". On "ripples" faint concentric rings spread from S across the network. On "label" a definition chip, 40 px, "label: shortest time found so far". On "lock in" chip "lock in the smallest" (hand tag "lock the smallest"). On "in" (bold) the stamps collapse into four ringed labels.
 
@@ -178,9 +186,9 @@ Recalculated (24 Nov 2026, scratchpad `s11n/verify.py`, `python -I`; 0 failures)
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,526 characters**, 13 scene headings. Characters per scene (1 to 13): 546, 685, 666, 540, 753, 556, 180, 209, 316, 185, 362, 441, 75. Feedback speech about 23.8 s and 27.2 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,558 characters** in Revision 2 (Revision 1: 5,526), 13 scene headings. Characters per scene (1 to 13): 546, 717, 666, 540, 753, 556, 180, 209, 316, 185, 362, 441, 75. Feedback speech about 23.8 s and 27.2 s.
 
-At 13.3 characters per second the speech is about 415 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spread race (2), the table (3) and the trace-back (4), about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 500 s**, 70 s under the 570 s cap.
+At 13.3 characters per second the speech is about 418 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spread race (2), the table (3) and the trace-back (4), about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
 
 Reserve trims if the voiced take runs long: scene 5's last two sentences.
 
@@ -265,4 +273,5 @@ Builds on: Minimum Spanning Trees: Connecting Everything for Less. Next: When th
 
 ## Review notes
 
+- Revision 2 (24 Nov 2026): learning review resolved (N06-WHY). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n05; check that the split-and-spread race explains "lock the smallest" before the rule, that each beaten label is crossed visibly, that trace-back is shown before attempts, that "fewer roads ≠ quicker" is felt in the hook and resolved in scene 4, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
