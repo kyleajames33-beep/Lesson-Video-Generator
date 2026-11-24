@@ -1,8 +1,8 @@
 # Maths S11 M09: How do saving, an emergency fund and tracking spending protect us from money trouble? Living expenses, a fund of 3 to 6 months, weeks to build it, saving first, variance, and choosing the fund for the job (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m08.md` (Revision 1, this batch), Year 12 `math-s12-i18.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m08.md` (Revision 1, this batch), Year 12 `math-s12-i18.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,532 characters by script (see "Narration length estimate"), 13 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,551 characters by script at Revision 2 (Revision 1: 5,532; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: last video of the Year 11 Managing money strand, outline playlist order 36. One video for Standard 1 and Standard 2. Viewers arrive from m08's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m09.md`. Route entry: `math-s11-m09` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson06.sa.html` (site L14), Think First, cards 2 to 4, WE2 to WE4 and SAQ 2 and 3 used, moved onto m08's weekly budget (MSY-08, MSY-09). Visual system: maths studio kit; the car on the hoist and the coin jar (both existing); the fund gauge, living-expenses bar, variance table, decision path and boards coded.
 
@@ -32,7 +32,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Large type, handwritten voice.** Gauge labels 40 px; table 36 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "due today", "what you'd still pay", "13 weeks = 3 months", "round up", "before you spend", "actual − budget", "keep the signs", "5 weeks later", "steady or not?". At most two live at once.
 - **Stage changes (standard item 2).** The phone and hoist (1); the living-expenses slide (2); the fund gauge (3); save first (4); variance (5); choosing 3 or 6 (6); the strategy card and memory aid (7); question cards (8 to 11); the strand close (12); key notes (13).
 - **Worked examples (g01 order).** Scene 3: task strip "Living expenses $502 a week; surplus $233 a week. Find the 3-month and 6-month fund targets and the weeks to build the 3-month fund."; rows "502 × 13 = $6526", "502 × 26 = $13 052", "6526 ÷ 233 = 28.01 → 29 weeks" (framed green); crossed "28 weeks" (caption "28 × 233 = $6524, still short"). Scene 5: "+32 − 9 + 0 + 16 = +$39", "233 − 39 = $194", "6526 ÷ 194 = 33.6 → 34 weeks" (framed green); crossed "32 + 9 + 16 = $57" (caption "keep the signs").
-- **Memory aid.** Framed card: "Budget, save first, keep a fund, check every month." Key line: "Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up."
+- **Memory aid.** Framed card (Revision 2 wording): "Budget, save first, keep a fund, check spending regularly." Key line: "Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up."
 - **Visual surprise.** At week 28 the coin jar's level stops a sliver under the target line, $2 short (scene 3); one more week and it crosses.
 - **Plain meanings at first use.** Emergency fund ("savings kept for surprises, like a repair or a gap in pay"; Year 12 i18's chip uses this wording); living expenses ("what you'd still have to pay if your pay stopped: fixed costs and essentials"); save first ("moving money to savings on payday, before you spend"); variance ("actual spending minus budgeted spending"); monitoring ("checking your spending against the budget, regularly").
 - **Attempts.** A1 (pack question 1): $2480 a month, $1180 surplus: $7440, $14 880; 7 months; crossed "6 months" (caption "6 × 1180 = $7080, still short"). A2 (pack question 2): Priya's variances +$60, surplus $1440; casual hours: six months, $19 680, about 14 months at $1440; crossed "63 + 48 + 45 = $156" (caption "keep the signs").
@@ -90,9 +90,9 @@ Visual: stage change (simulation 3): a variance table (36 px) with columns "cate
 Visual: stage change: m04's decision path with one gate "steady income?". On "steady wage" a token "steady wage" passes the gate green and lands on "3 months: $6526, 29 weeks"; on "target" a sentence card (green outline). On "casual or changing hours" a second token "casual hours" lights the gate red and lands on "6 months: $13 052, 57 weeks", row "13 052 ÷ 233 = 56.02 → 57 weeks"; on "nine" a sentence card (green outline), hand tag "steady or not?". On "numbers" grey chip "m04: say the numbers".
 
 ### 7. four strategies, and the memory aid
-> Put it together, and each strategy answers a different question. A budget asks, can my pay cover my life? Saving first asks, does the saving actually happen? An emergency fund asks, what if a big bill comes, or my pay stops? And monitoring asks, am I sticking to the plan? No single one is enough on its own. So, budget, save first, keep a fund, and check your spending every **month**.
+> Put it together, and each strategy answers a different question. A budget asks, can my pay cover my life? Saving first asks, does the saving actually happen? An emergency fund asks, what if a big bill comes, or my pay stops? And monitoring asks, am I sticking to the plan? No single one is enough on its own. So, budget, save first, keep a fund, and check your spending regularly, every week or **month**.
 
-Visual: stage change: a four-row strategy card (40 px): "budget: can my pay cover my life?", "save first: does saving actually happen?", "emergency fund: what if a big bill comes, or pay stops?", "monitoring: am I sticking to the plan?", each row writing on as said, with a small icon (the budget bar, the transfer arrow, the jar, the variance bars). On "month" the card slides left and the framed `MemoryAidCard` opens at the right. Main line, hand font 56 px: "Budget, save first, keep a fund, check every month." Key line, 40 px: "Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up." Hold about 2 s.
+Visual: stage change: a four-row strategy card (40 px): "budget: can my pay cover my life?", "save first: does saving actually happen?", "emergency fund: what if a big bill comes, or pay stops?", "monitoring: am I sticking to the plan?", each row writing on as said, with a small icon (the budget bar, the transfer arrow, the jar, the variance bars). On "month" the card slides left and the framed `MemoryAidCard` opens at the right. Main line, hand font 56 px: "Budget, save first, keep a fund, check spending regularly." Key line, 40 px: "Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. A person's living expenses are two thousand four hundred and eighty dollars a month, and their surplus is eleven hundred and eighty dollars a month. Find the target for a three-month and a six-month emergency fund. Then, how many whole months of saving does the three-month fund take? Pause here to answer.
@@ -100,9 +100,9 @@ Visual: stage change: a four-row strategy card (40 px): "budget: can my pay cove
 Visual: `QuestionCard`, 40 px, worded as printed: "A person's living expenses are $2480 a month and their surplus is $1180 a month. (a) Find the target for a 3-month and a 6-month emergency fund. (b) How many whole months of saving does the 3-month fund take?" Picture slot: the coin jar (260 px), empty target line. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> Three months is seventy-four forty, and six months is fourteen thousand eight hundred and **eighty**. Seventy-four forty divided by eleven eighty is six point three, so round up to seven **months**. Stopping at six months is the **slip**. Six months of saving is only seventy-eighty.
+> Three months is seventy-four **forty**, and six months is fourteen thousand eight hundred and **eighty**. Seventy-four forty divided by eleven eighty is six point three, so round up to seven **months**. Stopping at six months is the **slip**. Six months of saving is only seventy-eighty.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: on "eighty" "3 × 2480 = $7440; 6 × 2480 = $14 880" (framed green); on "months" "7440 ÷ 1180 = 6.3 → 7 months" (framed green). On "slip" a red slip "6 months" writes and is crossed (caption "6 × 1180 = $7080, still short"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px, one result per cue (Revision 2): on "forty" "3 × 2480 = $7440"; on "eighty" "6 × 2480 = $14 880" (framed green); on "months" "7440 ÷ 1180 = 6.3 → 7 months" (framed green). On "slip" a red slip "6 months" writes and is crossed (caption "6 × 1180 = $7080, still short"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Priya budgets seven hundred dollars for groceries, three twenty for eating out, and one eighty for entertainment each month. One month she spends seven sixty-three, two seventy-two and two twenty-five. Her usual surplus is fifteen hundred a month, and her living expenses are thirty-two eighty a month. Find the net variance and her surplus that month. Then, her hours are casual. Recommend a three-month or six-month fund, and justify it with figures. Pause here to answer.
@@ -110,9 +110,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: on "eighty" "3 × 2480
 Visual: `QuestionCard`, 40 px: "Priya budgets $700 for groceries, $320 for eating out and $180 for entertainment each month. One month she spends $763, $272 and $225. Her usual surplus is $1500 a month and her living expenses are $3280 a month. (a) Find the net variance and her surplus that month. (b) Her hours are casual. Recommend a 3-month or 6-month emergency fund and justify your answer with figures." Picture slot: an empty variance table. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> The variances are plus sixty-three, minus forty-eight and plus forty-five, so plus sixty dollars, and her surplus falls to fourteen **forty**. With casual hours, six months is safer, nineteen thousand six hundred and eighty dollars. At fourteen forty a month, that's about fourteen months of **saving**. Adding the variances without signs is the **slip**.
+> The variances are plus sixty-three, minus forty-eight and plus forty-five, so plus sixty **dollars**, and her surplus falls to fourteen **forty**. With casual hours, six months is safer, nineteen thousand six hundred and eighty **dollars**. At fourteen forty a month, that's about fourteen months of **saving**. Adding the variances without signs is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: on "forty" "+63 − 48 + 45 = +$60; 1500 − 60 = $1440" (framed green); on "saving" "6 × 3280 = $19 680; 19 680 ÷ 1440 = 13.7 → 14 months" and a sentence card (green outline) "Casual hours can drop without warning, so 6 months." On "slip" a red slip "63 + 48 + 45 = $156" writes and is crossed (caption "keep the signs"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px, one result per cue (Revision 2): on "dollars" (first) "+63 − 48 + 45 = +$60"; on "forty" "1500 − 60 = $1440" (framed green); on "safer" a sentence card (green outline) "Casual hours can drop without warning, so 6 months."; on "dollars" (second) "6 × 3280 = $19 680"; on "saving" "19 680 ÷ 1440 = 13.7 → 14 months" (framed green). On "slip" a red slip "63 + 48 + 45 = $156" writes and is crossed (caption "keep the signs"). Hold about 1 s.
 
 ### 12. handoff: Managing money, done
 > That's Managing money done, from a price tag to a plan that can handle surprises. Money works in hundreds. A hundred cents make a dollar. Next we're measuring things, and metric units work the same way, in tens, hundreds and thousands. How do millimetres, centimetres and metres fit **together**? That's **next**.
@@ -129,7 +129,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 - Variance = actual − budget; keep the signs.
 - Save first on payday; steady income: 3 months; casual: 6 months.
 
-Memory aid (framed card, right side, as in scene 7): *Budget, save first, keep a fund, check every month.* Key: *Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 7): *Budget, save first, keep a fund, check spending regularly.* Key: *Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and a01's opening frame.
 
@@ -175,7 +175,7 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 
 ## Memory aid check
 
-- **"Budget, save first, keep a fund, check every month."** with key line **"Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up."** Original (the site's three strategies with "save first" added, in syllabus order). Meaning, as said in scene 7: four habits, each answering its own question. Assumptions checked: the 3-to-6-month guide is the syllabus's; living expenses exclude discretionary spending (2); the surplus is saved in full (3, 4). It helps a new case: someone with $400 a week of living expenses and a $150 weekly saving needs 5200 ÷ 150 = 34.7 → 35 weeks for a 3-month fund. Year 12 i18 recalls "save first, or an emergency fund".
+- **"Budget, save first, keep a fund, check spending regularly."** (Revision 2; Revision 1 said "check every month", though scene 5 monitors a week) with key line **"Fund = 3 to 6 months of living expenses (fixed + essentials). Weeks to build: target ÷ saving, rounded up."** Original (the site's three strategies with "save first" added, in syllabus order). Meaning, as said in scene 7: four habits, each answering its own question. Assumptions checked: the 3-to-6-month guide is the syllabus's; living expenses exclude discretionary spending (2); the surplus is saved in full (3, 4). It helps a new case: someone with $400 a week of living expenses and a $150 weekly saving needs 5200 ÷ 150 = 34.7 → 35 weeks for a 3-month fund. Year 12 i18 recalls "save first, or an emergency fund".
 - **Considered, not used:** "Pay yourself first" (a common phrase; "save first" is plainer and is what i18's chip says).
 
 ## Narration length estimate
@@ -183,6 +183,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,532 characters**, 13 scene headings (count output in the review). Feedback speech about 20.4 s and 25.8 s.
 
 At 13.3 characters per second the speech is about 416 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the slide (2), the jar (3, 5) and the transfer strip (4), about 24 s; the key-notes scene adds about 39 s beyond its line. Total **about 511 s**, 59 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,551 characters**, 13 scene headings (per scene: 488, 611, 622, 425, 685, 512, 401, 317, 271, 484, 343, 305, 75); speech about 417 s; total **about 512 s**, 58 s under the 570 s cap. Feedback speech about 20.4 s and 25.8 s.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence; scene 1's "That's a healthy budget."
 
@@ -265,7 +267,17 @@ Builds on: Building a Budget, on Paper and in a Spreadsheet. Next: Units of Meas
 ## Open decisions
 
 - **1. The a01 join (closed 24 Nov 2026).** The coin jar with "100 c = $1" beside a tape strip with "10 mm = 1 cm" is confirmed: a01 opens on it exactly. The YouTube "Next" line quotes a01's title.
-- **2. "Monthly" in the card.** The memory aid says "check every month" though the budget is weekly; monitoring monthly is the common habit and matches the syllabus examples. Confirm.
+- **2. "Monthly" in the card.** Closed at Revision 2 (learning review N1): the card says "check spending regularly" and scene 7 says "every week or month", matching scene 5's weekly check and A2's monthly figures.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m09-learning-review.md` (0 blockers, 0 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **N1 ("check every month"): applied.** The card is now "Budget, save first, keep a fund, check spending regularly." and scene 7 says "check your spending regularly, every week or month". Open decision 2 is closed. Key note 5 and Year 12 i18 do not depend on the word.
+- **N2:** no change (the category column already separates the groups).
+- **N3 (join to a01):** confirmed by the review; the provisional marks on the m09 to a01 join can be lifted (design status open question 11, root).
+- **Feedback rows (root ruling 7, summary pattern 4):** feedback 1 writes "$7440" on "forty" and "$14 880" on "eighty"; feedback 2 writes "+$60", "$1440", the sentence card, "$19 680" and "13.7 → 14 months" each on its own cue.
+- Numbers: no value changed. Narration 5,551 characters (was 5,532), about 512 s with holds.
 
 ## Review notes
 

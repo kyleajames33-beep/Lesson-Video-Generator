@@ -1,8 +1,8 @@
 # Maths S11 M06: What does a car cost to run each year, and how does a spreadsheet track it? Fuel from litres per 100 km, the yearly costs, cost per kilometre and per week, a spreadsheet model with what-ifs, and two cars over five years (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e06.md`, `e12.md`, `f08.md`, each at Revision 2), `math-s11-m01.md` to `m05.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 32, 47 and 90 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e06.md`, `e12.md`, `f08.md`, each at Revision 2), `math-s11-m01.md` to `m05.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 32, 47 and 90 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 6,242 characters by script (see "Narration length estimate"), 13 scene headings, about 562 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,228 characters by script at Revision 2 (Revision 1: 6,242; see "Narration length estimate"), 13 scene headings, about 561 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: Year 11 Managing money, outline playlist order 33. One video for Standard 1 and Standard 2. Viewers arrive from m05's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m06.md`. Route entry: `math-s11-m06` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson05.sa.html` (site L13), cards 3 and 4, WE3, WE4 and SAQ 2 used; repriced at $2.25 a litre (ruling 47) with the green slip renewal added (MSY-06). Visual system: maths studio kit; the red hatchback (existing) and the new electricity meter plate (`ms11-electricity-meter-v1.png`, briefed in m07, painted one video early, ruling 17) for the final frame; the fuel tank, cost stack, `SpreadsheetGrid` (ruling 90), slider and bars coded.
 
@@ -34,7 +34,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Memory aid.** Framed card: "Inputs in cells; cost per km = yearly cost ÷ km." Key line: "Fuel = km × L/100 km ÷ 100 × $ a litre. Every total is a formula."
 - **Visual surprise.** As the distance slider rises, the yearly total climbs but the cost per kilometre falls (scene 5); and in scene 7 the dearer car's bar ends lower.
 - **Plain meanings at first use.** Running costs ("what a car costs every year you own it"); maintenance ("keeping it working: servicing and tyres"); litres per 100 km ("how many litres it uses to drive 100 kilometres"); cost per kilometre ("the yearly cost shared over every kilometre driven"); model ("a sheet where you change an input and every answer updates").
-- **Attempts.** A1 (pack question 1): Mia, 20,000 km at 7.5 L/100 km, $2.25: 1,500 L, $3,375; total $6,025; 30.1c a km; crossed "20 000 ÷ 6025 = 3.3" (caption "cost ÷ distance"). A2 (pack question 2): two cars over 5 years: A $33,187.50, B $32,125; B by $1,062.50; crossed "A, because it's $4000 cheaper to buy" (caption "add 5 years of fuel").
+- **Attempts.** A1 (pack question 1): Mia, 20,000 km at 7.5 L/100 km, $2.25: 1,500 L, $3,375; total $6,025; 30.1c a km; crossed "20 000 ÷ 6025 = 3.3" (caption "cost ÷ distance"). A2 (pack question 2, Revision 2 distance): the same two cars at 10,000 km a year: A $28,125, B $28,750; A by $625; crossed "B, because it was cheaper in the video" (caption "the distance changed"). Scene 7 uses 15,000 km, where B wins; A2's lower distance reverses it, so the countdown picture cannot give the answer and A2 tests scene 5's point that per-km comparisons depend on distance.
 - **Mistake scene:** none separate. ÷ 100 forgotten (2, crossed); distance ÷ cost (3, crossed; A1 crossed); a typed total (4, said and shown going stale); =SUM including its own total (4, crossed); price alone (7; A2 crossed).
 - **Cause chain taught, in order:** (1) fuel use is per 100 km, so litres = km × rate ÷ 100, then dollars = litres × price (2); (2) most other costs are paid every year whatever the distance, so they add as fixed amounts (3); (3) cost per km shares the yearly cost over every km (3); (4) a model keeps inputs separate and totals as formulas, so changing an input updates every answer (4); (5) driving further adds only fuel, so the fixed costs are spread thinner and the cost per km falls (5); (6) a car's real cost is its purchase plus years of running, so a cheaper car can cost more over time (6, 7).
 - **Entry knowledge (route):** math-s11-m05; e06, e12 (spreadsheets); f08. Recalled in grey chips.
@@ -47,7 +47,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (c) 18 000 km: 1170 L; 2632.50; 6285.50; 0.3492 → 34.9c. 8000 km: 520 L, 1170; 4823; 60.3c. 20 000 km: 1300 L, 2925; 6578; 32.9c.
   (d) =SUM(B4:B10) when B10 holds the total: 10 816 (double).
   (e) 16 645 + 5 × 5408 = 43 685; 43 685 ÷ 60 000 = 0.7281 → 72.8c.
-  (f) Cars: A 15 000 × 9 ÷ 100 = 1350 L, 3037.50 a year, 5 years 15 187.50, total 33 187.50; B 900 L, 2025, 10 125, 32 125; difference 1062.50; fuel saving 1012.50 a year.
+  (f) Cars at 15 000 km (scene 7 only): A 15 000 × 9 ÷ 100 = 1350 L, 3037.50 a year, 5 years 15 187.50, total 33 187.50; B 900 L, 2025, 10 125, 32 125; B ahead by 1062.50; fuel saving 1012.50 a year. A2 at 10 000 km: A 900 L, 2025 a year, 10 125, total 28 125; B 600 L, 1350, 6750, 28 750; A ahead by 625; fuel saving 675 a year, 3375 over 5 years, short of the 4000 price gap. Break-even about 11 852 km a year.
   (g) A1: 1500 L; 3375; 820 + 500 + 380 + 950 = 2650; 6025; 0.30125 → 30.1c.
   (h) Pronunciations: "six point five litres per hundred kilometres"; "equals B one times B two divided by a hundred times B three".
 
@@ -68,10 +68,10 @@ Visual: opens on m05's final frame exactly. On "every year you own it" the grey 
 ### 2. fuel from litres per hundred kilometres
 > Start with fuel, the one that depends on how far you drive. Car makers give fuel use in litres per hundred kilometres. This hatchback uses six point five litres to drive a hundred kilometres. Say you drive twelve thousand kilometres a year. That's a hundred and twenty lots of a hundred kilometres, so twelve thousand times six point five, divided by a **hundred**, is seven hundred and eighty litres. At about two dollars twenty-five a litre, that's seventeen hundred and fifty-five dollars of fuel a **year**. The common slip is forgetting to divide by a hundred, which gives seventy-eight thousand litres, enough to fill a **swimming pool**. The car also loses value each year, which is a real cost too, but this video counts only the money you pay **out**.
 
-Visual: stage change (simulation 1): the hatchback (480 px) at the top left with a grey chip "6.5 L/100 km" (amber). Centre: a coded fuel tank (360 × 520 px) and a distance counter "0 km". The g01 board at the right: task strip "12 000 km a year at 6.5 L/100 km; petrol $2.25 a litre. Find the fuel cost."; givens "12 000 km" (blue), "6.5 L/100 km" and "$2.25 a litre" (amber). On "a hundred and twenty lots" the counter runs to 12 000 while the tank fills in 65 L steps; on "hundred" row "12 000 × 6.5 ÷ 100 = 780 L" (52 px), hand tag "÷ 100 first". On "year" row "780 × 2.25 = $1755" (teal), framed green. On "swimming pool" a red slip "12 000 × 6.5 = 78 000 L" writes and is crossed (caption "÷ 100 first"). On "out" a grey chip "the car also loses value (not counted here)".
+Visual: stage change (simulation 1): the hatchback (480 px) at the top left with a grey chip "6.5 L/100 km" (amber). Centre: a coded fuel tank (360 × 520 px) and a distance counter "0 km". The g01 board at the right: task strip "12 000 km a year at 6.5 L/100 km; petrol $2.25 a litre. Find the fuel cost."; givens "12 000 km" (blue), "6.5 L/100 km" and "$2.25 a litre" (amber, with a small grey "example price" chip). On "a hundred and twenty lots" the counter runs to 12 000 while the tank fills in 65 L steps; on "hundred" row "12 000 × 6.5 ÷ 100 = 780 L" (52 px), hand tag "÷ 100 first". On "year" row "780 × 2.25 = $1755" (teal), framed green. On "swimming pool" a red slip "12 000 × 6.5 = 78 000 L" writes and is crossed (caption "÷ 100 first"). On "out" a grey chip "the car also loses value (not counted here)".
 
 ### 3. the year's costs, per kilometre and per week
-> Now add the costs that come every year, whatever the distance. Registration, three eighty-five, and the green slip, seven eighty, from last time. Comprehensive insurance, sixteen forty. Then maintenance, keeping the car working. Servicing, five forty-eight, and tyres, about three hundred a year, averaged over a set. With the fuel, that's five thousand four hundred and eight dollars a **year**. That's hard to picture, so share it out. Divided by twelve thousand kilometres, it's about forty-five cents a **kilometre**. Divided by fifty-two, it's a hundred and four dollars a **week**. Cost per kilometre is cost divided by distance. Twelve thousand divided by fifty-four hundred is kilometres per dollar, which isn't what was **asked**.
+> Now add the costs that come every year, whatever the distance. Registration, three eighty-five, and the green slip, seven eighty, from last time. Comprehensive insurance, sixteen forty. Then maintenance, keeping the car working. Servicing, five forty-eight, and tyres, about three hundred a year, averaged over a set. With the fuel, that's five thousand four hundred and eight dollars a **year**. That's hard to picture, so share it out. Divided by twelve thousand kilometres, it's about forty-five cents a **kilometre**. Divided by fifty-two, it's a hundred and four dollars a **week**. Cost per kilometre is cost divided by distance. Twelve thousand divided by fifty-four oh eight is kilometres per dollar, which isn't what was **asked**.
 
 Visual: stage change: a stacked bar at the centre builds layer by layer (labels 40 px): "fuel $1755" (teal); "rego $385", "green slip $780" (violet, grey chip "m05, every year"); "insurance $1640"; "servicing $548", "tyres $300" (bracket "maintenance", hand tag "maintenance"). Small grey "example" labels on each fixed layer. On "year" the total "$5408 a year" (52 px), framed green. On "kilometre" row "5408 ÷ 12 000 ≈ $0.45 = 45.1c a km" (amber), framed green, hand tag "cost ÷ distance". On "week" row "5408 ÷ 52 = $104 a week" (framed green). On "asked" a red slip "12 000 ÷ 5408 ≈ 2.2" writes and is crossed (caption "that's km per dollar").
 
@@ -91,9 +91,9 @@ Visual: stage change (simulation 2): the grid shrinks to the left (1,000 px); a 
 Visual: the grid returns full size; B14 "16645" (blue, label "Drive-away cost"), grey chip "m05". On "five times B ten" B15 active, bar "=B14+5*B10", label "5-year cost"; on "dollars" B15 "43685" (teal), framed green. A small bar beside the grid: the purchase block (blue) plus five yearly blocks (teal), total "$43 685". On "kilometre" B16 "=B15/(5*B1)" → "0.7281", hand tag "the real cost", and a small grey chip "windscreen: $14 990".
 
 ### 7. two cars over five years
-> That's how to compare two cars fairly. A cheaper car that uses more fuel can end up costing more. Say car A costs eighteen thousand and uses nine litres per hundred kilometres, and car B costs twenty-two thousand but uses only six. You'll find the five-year totals in the second question. For now, watch the **bars**. Car A starts four thousand dollars ahead. But car B saves fuel every single year, and by year five it has caught **up**. So never compare cars on price **alone**.
+> That's how to compare two cars fairly. A cheaper car that uses more fuel can end up costing more. Say car A costs eighteen thousand and uses nine litres per hundred kilometres, and car B costs twenty-two thousand but uses only six. Both are driven fifteen thousand kilometres a year. Watch the **bars**. Car A starts four thousand dollars ahead. But car B saves fuel every single year, and by year five it has caught **up**. So never compare cars on price **alone**.
 
-Visual: stage change (simulation 3): two bars at the same scale, labelled "car A: $18 000, 9 L/100 km" and "car B: $22 000, 6 L/100 km" (blue purchase blocks). On "bars" fuel blocks (teal, unlabelled values) add year by year with a year counter "1 … 5"; car A's blocks are taller. On "up" car B's bar finishes below car A's, a violet bracket marks the gap (no value shown), hand tag "fuel catches up". On "alone" grey chip "price + years of running".
+Visual: stage change (simulation 3): two bars at the same scale, labelled "car A: $18 000, 9 L/100 km" and "car B: $22 000, 6 L/100 km" (blue purchase blocks). On "fifteen thousand kilometres" a grey chip "15 000 km a year" sits above both bars and stays to the end of the scene. On "bars" fuel blocks (teal, unlabelled values) add year by year with a year counter "1 … 5"; car A's blocks are taller. On "up" car B's bar finishes below car A's, a violet bracket marks the gap (no value shown), hand tag "fuel catches up". On "alone" grey chip "price + years of running".
 
 ### 8. memory aid
 > Here's the summary. Put every input in its own cell, and make every total a formula. Fuel is kilometres times litres per hundred, divided by a hundred, times the price. And cost per kilometre is the yearly cost divided by the kilometres **driven**.
@@ -106,19 +106,19 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the twelve-row sh
 Visual: `QuestionCard`, 40 px, worded as printed: "Mia drives 20 000 km a year in a car that uses 7.5 L/100 km. Petrol costs $2.25 a litre. Her other yearly costs are servicing $820, tyres $500, registration $380 and insurance $950. (a) Find her yearly fuel cost. (b) Find her total yearly running cost and the cost per kilometre, in cents, correct to one decimal place." Picture slot: a coded fuel gauge. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 10. feedback 1 (brief)
-> Twenty thousand times seven point five, divided by a hundred, is fifteen hundred litres, so the fuel costs thirty-three seventy-**five**. Her other costs add to twenty-six fifty, so the total is six thousand and twenty-five **dollars**. Divided by twenty thousand, that's thirty point one cents a **kilometre**. Dividing twenty thousand by the cost is the **slip**.
+> Twenty thousand times seven point five, divided by a hundred, is fifteen hundred **litres**, so the fuel costs thirty-three seventy-**five**. Her other costs add to twenty-six fifty, so the total is six thousand and twenty-five **dollars**. Divided by twenty thousand, that's thirty point one cents a **kilometre**. Dividing twenty thousand by the cost is the **slip**.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: on "five" "20 000 × 7.5 ÷ 100 = 1500 L; 1500 × 2.25 = $3375"; on "dollars" "3375 + 2650 = $6025" (framed green); on "kilometre" "6025 ÷ 20 000 ≈ $0.301 = 30.1c" (framed green). On "slip" a red slip "20 000 ÷ 6025 ≈ 3.3" writes and is crossed (caption "cost ÷ distance"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px: on "litres" "20 000 × 7.5 ÷ 100 = 1500 L"; on "five" "1500 × 2.25 = $3375" on its own row (Revision 2 split); on "dollars" "3375 + 2650 = $6025" (framed green); on "kilometre" "6025 ÷ 20 000 ≈ $0.301 = 30.1c" (framed green). On "slip" a red slip "20 000 ÷ 6025 ≈ 3.3" writes and is crossed (caption "cost ÷ distance"). Hold about 1 s.
 
 ### 11. attempt 2 (countdown, 10 seconds)
-> Last one. Car A costs eighteen thousand dollars and uses nine litres per hundred kilometres. Car B costs twenty-two thousand and uses six. Each is driven fifteen thousand kilometres a year, with petrol at two dollars twenty-five a litre. Find the cost of buying and fuelling each car for five years. Which is cheaper over five years, and by how much? Pause here to answer.
+> Last one. Car A costs eighteen thousand dollars and uses nine litres per hundred kilometres. Car B costs twenty-two thousand and uses six. Each is driven ten thousand kilometres a year, with petrol at two dollars twenty-five a litre. Find the cost of buying and fuelling each car for five years. Which is cheaper over five years, and by how much? Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Car A costs $18 000 and uses 9 L/100 km. Car B costs $22 000 and uses 6 L/100 km. Each is driven 15 000 km a year, with petrol at $2.25 a litre. (a) Find the cost of buying and fuelling each car for 5 years. (b) Which is cheaper over 5 years, and by how much?" Picture slot: scene 7's two unlabelled bars (small). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Car A costs $18 000 and uses 9 L/100 km. Car B costs $22 000 and uses 6 L/100 km. Each is driven 10 000 km a year, with petrol at $2.25 a litre. (a) Find the cost of buying and fuelling each car for 5 years. (b) Which is cheaper over 5 years, and by how much?" Picture slot: two blank blue purchase blocks at the same scale, "A $18 000" and "B $22 000", with no fuel blocks, no bars from scene 7 and no totals (Revision 2; nothing answer-bearing). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 12. feedback 2 (brief)
-> Car A's fuel costs three thousand and thirty-seven fifty a year, so five years with the **purchase** come to thirty-three thousand one hundred and eighty-seven fifty. Car B's fuel is two thousand and twenty-five a year, so thirty-two thousand one hundred and twenty-**five**. Car B is cheaper by a thousand and sixty-two dollars **fifty**. Picking car A because it's cheaper to buy is the **slip**.
+> Car A's fuel is two thousand and twenty-five a **year**, so with the purchase, five years cost twenty-eight thousand one hundred and twenty-**five**. Car B's fuel is thirteen fifty a **year**, so twenty-eight thousand seven hundred and **fifty**. Car A is cheaper by six hundred and twenty-five **dollars**. At this **distance**, B saves only six seventy-five a year. Picking car B from the video is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: on "purchase" "A: 1350 L × 2.25 = $3037.50; 18 000 + 5 × 3037.50 = $33 187.50"; on "five" "B: 900 L × 2.25 = $2025; 22 000 + 5 × 2025 = $32 125"; on "fifty" "B is cheaper by $1062.50" (framed green). On "slip" a red slip "A, because it's $4000 cheaper to buy" writes and is crossed (caption "add 5 years of fuel"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px, one result per cue (Revision 2): on "year" (first) "A: 900 L × 2.25 = $2025 a year"; on "five" "A: 18 000 + 5 × 2025 = $28 125"; on "year" (second) "B: 600 L × 2.25 = $1350 a year"; on "fifty" "B: 22 000 + 5 × 1350 = $28 750"; on "dollars" "A is cheaper by $625" (framed green); on "distance" hand tag "10 000 km: B saves $675 a year; 5 × 675 = $3375 < $4000". On "slip" a red slip "B, because it was cheaper in the video" writes and is crossed (caption "the distance changed"). Hold about 1 s.
 
 ### 13. handoff and key notes (quiet, 45 seconds)
 > So the hatchback costs about a hundred and four dollars a week to run. But it's not the only thing that sends you bills. The house does too, for electricity, water and gas. How do you read those bills, and check them? That's **next**. Here are the key notes. Pause the video if you need more time to copy them.
@@ -154,7 +154,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to the handoff frame exa
 Model answer: (a) 20 000 × 7.5 ÷ 100 = 1500 L; 1500 × 2.25 = $3375. (b) 3375 + 820 + 500 + 380 + 950 = $6025; 6025 ÷ 20 000 = $0.30125 ≈ 30.1c a km. Classic mistake (crossed): "20 000 ÷ 6025 ≈ 3.3".
 
 **Attempt 2 (scene 11; pack question 2, 3 marks suggested).** As on the card.
-Model answer: (a) A: 15 000 × 9 ÷ 100 = 1350 L; 1350 × 2.25 = $3037.50 a year; 18 000 + 5 × 3037.50 = $33 187.50. B: 900 L; $2025 a year; 22 000 + 5 × 2025 = $32 125. (b) Car B, by $1062.50. Classic mistake (crossed): "A, because it's $4000 cheaper to buy".
+Model answer (Revision 2, 10 000 km a year): (a) A: 10 000 × 9 ÷ 100 = 900 L; 900 × 2.25 = $2025 a year; 18 000 + 5 × 2025 = $28 125. B: 10 000 × 6 ÷ 100 = 600 L; 600 × 2.25 = $1350 a year; 22 000 + 5 × 1350 = $28 750. (b) Car A, by 28 750 − 28 125 = $625 (B's fuel saving, $675 a year, adds to only $3375 over 5 years, less than the $4000 price gap). Classic mistake (crossed): "B, because it was cheaper in the video".
 
 ## Numbers used (author note: every value)
 
@@ -165,9 +165,9 @@ Model answer: (a) A: 15 000 × 9 ÷ 100 = 1350 L; 1350 × 2.25 = $3037.50 a year
 | Sheet | B4 1755; B10 5408; B11 0.4507; B12 104; slip 10 816 | 4 |
 | What-if | 18 000 km: 2632.50, 6285.50, 34.9c; 8000 km 60.3c; 20 000 km 32.9c | 5 |
 | Five years | 43 685; 72.8c | 6 |
-| Two cars | values in A2 only | 7 |
+| Two cars (15 000 km) | no values shown; B ends lower (33 187.50 against 32 125, author check only) | 7 |
 | A1 | 1500 L; 3375; 2650; 6025; 30.1c | 9, 10 |
-| A2 | 3037.50; 33 187.50; 2025; 32 125; 1062.50 | 11, 12 |
+| A2 (10 000 km) | 900 L, 2025, 28 125; 600 L, 1350, 28 750; A by 625; saving 675 a year, 3375 | 11, 12 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
@@ -177,7 +177,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 - 1755 + 385 + 780 + 1640 + 548 + 300 = 5408; 5408 ÷ 12 000 = 0.45067; 5408 ÷ 52 = 104; 12 000 ÷ 5408 = 2.219; 2 × 5408 = 10 816.
 - 18 000 × 6.5 ÷ 100 = 1170; 1170 × 2.25 = 2632.50; 2632.50 + 3653 = 6285.50; 6285.50 ÷ 18 000 = 0.34919. 8000: 520 L, 1170, 4823, 0.6029. 20 000: 1300 L, 2925, 6578, 0.3289.
 - 16 645 + 5 × 5408 = 43 685; 43 685 ÷ 60 000 = 0.72808.
-- A: 1350 L, 3037.50, 15 187.50, 33 187.50; B: 900 L, 2025, 10 125, 32 125; 33 187.50 − 32 125 = 1062.50.
+- Scene 7 (15 000 km, not shown as values): A: 1350 L, 3037.50, 15 187.50, 33 187.50; B: 900 L, 2025, 10 125, 32 125; 33 187.50 − 32 125 = 1062.50.
+- A2 (10 000 km, Revision 2; rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): A: 10 000 × 9 ÷ 100 = 900 L; 900 × 2.25 = 2025; 5 × 2025 = 10 125; 18 000 + 10 125 = 28 125. B: 10 000 × 6 ÷ 100 = 600 L; 600 × 2.25 = 1350; 5 × 1350 = 6750; 22 000 + 6750 = 28 750. 28 750 − 28 125 = 625. 2025 − 1350 = 675; 5 × 675 = 3375 < 4000. Break-even 4000 ÷ 5 ÷ (0.03 × 2.25) ≈ 11 852 km a year.
 - Mia: 1500 L; 3375; 2650; 6025; 0.30125.
 
 ## Memory aid check
@@ -191,7 +192,9 @@ Counted by script (lines starting "> " inside each `### N.` scene, joined with a
 
 At 13.3 characters per second the speech is about 469 s. Holds and settling: two 10 s countdowns (20 s); short holds 5 s; settling for the tank (2), the sheet (4), the slider (5) and the bars (7), about 30 s; the notes hold adds about 39 s beyond its line. Total **about 562 s**, 8 s under the 570 s cap: tight, with the reserve trims below named.
 
-Reserve trims if the voiced take runs long: scene 7's "You'll find the five-year totals in the second question."; scene 4's "And don't sum B four to B ten. That counts the total inside itself, and doubles it." (the crossed slip shows it).
+Revision 2 (24 Nov 2026, same script): **6,228 characters** (scene 3: 724; scene 7: 454; scene 12: 385), speech about 468 s, total **about 561 s**, 9 s under the cap. Feedback about 26.2 s and 28.9 s.
+
+Reserve trims if the voiced take runs long (Revision 2: scene 7's old trim is now used): scene 4's "And don't sum B four to B ten. That counts the total inside itself, and doubles it." (the crossed slip shows it).
 
 ## Scene list and build ids
 
@@ -246,7 +249,7 @@ Error-only check (report errors; do not restyle or rewrite):
 2. Confirm both syllabus quotes match the route-inputs JSON exactly.
 3. Confirm the petrol price against ruling 47's source; confirm the green slip is renewed with registration each year in NSW; confirm every other price is labelled an example. Confirm the "prices change" sentence is said once.
 4. Confirm every formula on screen is valid as typed and the spoken forms match the screen.
-5. Confirm both attempts carry every demand and show no answer (scene 7 shows no five-year values).
+5. Confirm both attempts carry every demand and show no answer (scene 7 shows no five-year values; A2's picture slot shows only the two purchase blocks; A2's 10 000 km reverses scene 7's 15 000 km result).
 6. Confirm scene 1 opens on m05's final frame and scene 13's handoff frame matches m07's boundary.
 7. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
 
@@ -273,6 +276,18 @@ Builds on: Buying a Car: Stamp Duty, Rego and Insurance. Next: Household Bills: 
 ## Open decisions
 
 - **1. Servicing $548.** Chosen so the total is $104 a week for m08; a rounder $550 would make $104.04. Confirm.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m06-learning-review.md` (1 blocker, 1 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **B1 (A2 answered before it is asked): resolved by root's ruling 1.** A2 now drives each car 10 000 km a year. Car A: 900 L, $2025 a year, 18 000 + 5 × 2025 = $28 125. Car B: 600 L, $1350 a year, 22 000 + 5 × 1350 = $28 750. Car A is cheaper by $625 (B saves only $675 a year, $3375 over five years, less than the $4000 price gap). Scene 7 now states its distance ("Both are driven fifteen thousand kilometres a year", grey chip "15 000 km a year"), so its result (B ends lower) is tied to that distance, and A2's lower distance reverses it; this tests scene 5's point that the comparison depends on the distance. Scene 7's sentence "You'll find the five-year totals in the second question" is removed. A2's picture slot is two blank purchase blocks ("A $18 000", "B $22 000") with no fuel blocks or totals, so the countdown picture does not show the answer. Feedback 2 is rewritten with one result per cue, the reason ("At this distance, B saves only six seventy-five a year") and a new crossed slip "B, because it was cheaper in the video" (caption "the distance changed"). Model answer, Decisions, author note (f), Numbers used and Numbers to verify updated; values rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures).
+- **SF1 (spoken "fifty-four hundred"): applied.** Scene 3 now says "fifty-four oh eight", matching "12 000 ÷ 5408 ≈ 2.2".
+- **N1 (12-row sheet reading load): preview check.** Active cell and formula bar at 44 px dominate; other rows dim. Confirm in voiced preview.
+- **N2 (petrol "example price" chip): applied** in scene 2's givens.
+- **N3 (Mia's list):** the card keeps "Her other yearly costs are" exactly; no change.
+- **Feedback rows (root ruling 7):** feedback 1's fuel row is split ("1500 L" on the new cue "litres", "$3375" on "five"); feedback 2 is one result per cue.
+- Narration 6,228 characters (was 6,242), about 561 s with holds. Scene 7's old reserve trim is used; scene 4's remains.
 
 ## Review notes
 

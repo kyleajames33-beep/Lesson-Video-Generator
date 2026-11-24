@@ -1,8 +1,8 @@
 # Maths S11 M01: How do percentage increases and decreases set prices, profit and loss? The multiplier for a rise and a fall, why two changes in a row do not cancel, percentage change measured from the start, and profit or loss on the cost price (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, `f01.md`, each at Revision 2), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, findings B1, B2, N4, N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 32, 85 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, `f01.md`, each at Revision 2), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, findings B1, B2, N4, N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 32, 85 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,651 characters by script (see "Narration length estimate"), 13 scene headings, about 514 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,861 characters by script at Revision 2 (Revision 1: 5,651; see "Narration length estimate"), 13 scene headings, about 530 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: first video of the Year 11 Managing money strand, outline playlist order 28. One video for Standard 1 and Standard 2. Viewers arrive from e12's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m01.md`. Route entry: `math-s11-m01` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson03.sa.html` (site L11), its multiplier card, profit card and Think First used; its reverse card moves to m02 (route inputs 10). Visual system: maths studio kit; the swing tag and sneakers plates (both existing), the phone plate for the plan and attempt 2, the grocery basket for the final frame; the percentage bar, slider, price ladder and boards coded.
 
@@ -86,14 +86,14 @@ Visual: stage change (simulation 2): the price ladder, three bars (each 220 px w
 Visual: stage change: the phone plate `ma11-phone-budget-v1.png` (about 380 px tall) at the left, its blank screen showing a coded plan card "Plan: $40 a month → $46 a month" (36 px). Centre board (g01 layout): task strip "A phone plan goes from $40 to $46 a month. Find the percentage increase."; givens card "start = $40" (blue), "new = $46" (teal); row "change = 46 − 40 = $6" (violet). On "cent" row "6 ÷ 40 × 100% = 15%" (52 px), framed green; hand tag "divide by where you started". On "wrong" a red slip "6 ÷ 46 = 13%" writes and is crossed, caption "divide by where you started". On "a fall too" the plan card changes to "$40 → $34"; on "decrease" row "6 ÷ 40 × 100% = 15% decrease" (framed green). On "per cent" (last) formula strip, 44 px: "% change = change ÷ starting amount × 100%".
 
 ### 6. profit and loss on the cost price
-> Shops use the same idea for profit. The cost price is what the shop paid for an item, and the selling price is what you pay. Say the shop paid seventy-five dollars for these sneakers, and sells them for a hundred and twenty. The profit is selling price minus cost price, forty-five **dollars**. Businesses often call these revenue and cost. As a percentage, profit is measured on the cost price, what the shop put in. Forty-five divided by seventy-five is sixty per **cent**. Why bother with a percentage? Forty-five dollars profit on a seventy-five dollar pair of sneakers is a much better deal than forty-five dollars on a three hundred dollar **bike**. The percentage lets you compare deals of different sizes fairly. In the sale at ninety-six dollars, the profit is only twenty-one dollars, twenty-eight per **cent**. Clear them out at sixty dollars, and selling price minus cost price is negative fifteen. That's a loss of fifteen dollars, a twenty per cent **loss**, still measured on the seventy-five dollars the shop **paid**.
+> Shops use the same idea for profit. The cost price is what the shop paid for an item, and the selling price is what you pay. Say the shop paid seventy-five dollars for these sneakers, and sells them for a hundred and twenty. The profit is selling price minus cost price, forty-five **dollars**. Businesses often call these revenue and cost. As a percentage, profit is measured on the cost price, what the shop put in. Unless a question asks for a percentage of the selling price, use the cost price. Forty-five divided by seventy-five is sixty per **cent**. Why bother with a percentage? Forty-five dollars profit on a seventy-five dollar pair of sneakers is a much better deal than forty-five dollars on a three hundred dollar **bike**. The percentage lets you compare deals of different sizes fairly. In the sale at ninety-six dollars, the profit is only twenty-one dollars, twenty-eight per **cent**. Clear them out at sixty dollars, and selling price minus cost price is negative fifteen. That's a loss of fifteen dollars, a twenty per cent **loss**, still measured on the seventy-five dollars the shop **paid**.
 
-Visual: stage change (simulation 3): the sneakers (500 px) at the top left with the tag "$120". Two bars on a shared baseline: "cost price $75" (blue, hand tag "what the shop paid") and "selling price $120" (teal). On "dollars" the gap above the blue bar's top shades violet "profit = 120 − 75 = $45". On "revenue and cost" a small grey chip "selling price = revenue; cost price = cost". On "cent" row "45 ÷ 75 × 100% = 60%" (52 px), framed green, hand tag "measured on cost". On "bike" a small grey comparison strip writes at the right: "$45 on $75 = 60%" beside "$45 on $300 = 15%", hand tag "fair to compare". On "twenty-eight" the selling bar slides down to "$96": the gap shrinks, "96 − 75 = $21; 21 ÷ 75 = 28%". On "loss" the selling bar slides to "$60", below the cost line; the violet now sits as a dip under the blue bar's top, relabelled "loss = 75 − 60 = $15; 15 ÷ 75 = 20% loss" (framed green). On "paid" the blue bar pulses.
+Visual: stage change (simulation 3): the sneakers (500 px) at the top left with the tag "$120". Two bars on a shared baseline: "cost price $75" (blue, hand tag "what the shop paid") and "selling price $120" (teal). On "dollars" the gap above the blue bar's top shades violet "profit = 120 − 75 = $45". On "revenue and cost" a small grey chip "selling price = revenue; cost price = cost". On "Unless a question asks" a small grey chip "unless the question says selling price" sits under the blue bar. On "cent" row "45 ÷ 75 × 100% = 60%" (52 px), framed green, hand tag "measured on cost". On "bike" a small grey comparison strip writes at the right: "$45 on $75 = 60%" beside "$45 on $300 = 15%", hand tag "fair to compare". On "twenty-eight" the selling bar slides down to "$96": the gap shrinks, "96 − 75 = $21; 21 ÷ 75 = 28%". On "loss" the selling bar slides to "$60", below the cost line; the violet now sits as a dip under the blue bar's top, relabelled "loss = 75 − 60 = $15; 15 ÷ 75 = 20% loss" (framed green). On "paid" the blue bar pulses.
 
 ### 7. memory aid
-> Here's the summary. Up r per cent, multiply by one plus r per cent. Down r per cent, multiply by one minus r per cent. And for any percentage change, or a profit or loss, divide by where you **started**.
+> Here's the summary. Up r per cent, multiply by one plus r per cent, with r per cent written as a **decimal**. So up three per cent is one plus nought point nought three, times one point nought three. Down r per cent, multiply by one minus r per cent. And for any percentage change, or a profit or loss, divide by where you **started**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the percent bar with its sliver and its cut slice, and the profit gap bars. Main line, hand font 56 px: "Up r%: × (1 + r%). Down r%: × (1 − r%). Divide by where you started." On "started" the key line, 40 px: "Profit or loss = selling price − cost price, as a % of the cost price." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: the percent bar with its sliver and its cut slice, and the profit gap bars. Main line, hand font 56 px: "Up r%: × (1 + r%). Down r%: × (1 − r%). Divide by where you started." On "decimal" a worked line under it (amber, 40 px): "Up 3%: × (1 + 0.03) = × 1.03". On "started" the key line, 40 px: "Profit or loss = selling price − cost price, as a % of the cost price." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. A surf shop buys a wetsuit for sixty-four dollars and marks it up by forty-five per cent. Find the selling price, and the profit on each wetsuit. Pause here to answer.
@@ -111,9 +111,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: on "eighty" (first) "6
 Visual: `QuestionCard`, 40 px: "A phone's price drops from $1250 to $1000 in a sale. The shop paid $900 for it. (a) Find the percentage decrease in price. (b) Find the profit at the sale price as a percentage of the cost price, correct to one decimal place." Picture slot: the phone plate (300 px) with a coded "$1250 → $1000". Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> The drop is two hundred and fifty dollars, and two-fifty divided by twelve-fifty is twenty per **cent**. The profit is a thousand minus nine hundred, a hundred dollars, and a hundred divided by nine hundred is eleven point one per **cent**. Dividing two-fifty by the new price, a thousand, to get twenty-five per cent, is the **slip**.
+> The drop is two hundred and fifty dollars, and two-fifty divided by twelve-fifty is twenty per **cent**. The profit is a thousand minus nine hundred, a hundred **dollars**, and a hundred divided by nine hundred is eleven point one per **cent**. Dividing two-fifty by the new price, a thousand, to get twenty-five per cent, is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: on "cent" (first) "250 ÷ 1250 × 100% = 20%" (framed green); on "cent" (second) "1000 − 900 = $100; 100 ÷ 900 × 100% = 11.1%" (framed green, hand tag "measured on cost"). On "slip" a red slip "250 ÷ 1000 = 25%" writes and is crossed (caption "divide by the old price"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: on "cent" (first) "250 ÷ 1250 × 100% = 20%" (framed green); on "dollars" "1000 − 900 = $100" (violet); on "cent" (second) "100 ÷ 900 × 100% = 11.1%" on its own row under it (framed green, hand tag "measured on cost"). On "slip" a red slip "250 ÷ 1000 = 25%" writes and is crossed (caption "divide by the old price"). Hold about 1 s.
 
 ### 12. handoff
 > So a percentage change is one multiplication, and a percentage is always measured from where you started. Now, at the supermarket, some prices already have a tax inside them. The receipt says it includes GST. How much of that total is tax, and why don't some items have any? That's **next**.
@@ -124,13 +124,13 @@ Visual: the memory lines show small at the top (30 px), then fade. Board clear t
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-- Up r%: × (1 + r%). 3% up: × 1.03. 5% up: × 1.05.
+- Up r%: × (1 + r%). Up 3%: × (1 + 0.03) = × 1.03. Up 5%: × 1.05.
 - Down r%: × (1 − r%). 20% off: × 0.80 (not × 0.20).
 - Two changes multiply: × 1.1 then × 0.9 = × 0.99.
 - % change = change ÷ starting amount × 100%.
-- Profit = selling price − cost price; % profit or loss on the cost price.
+- Profit = selling price − cost price; % profit or loss on the cost price, unless told otherwise.
 
-Memory aid (framed card, right side, as in scene 7): *Up r%: × (1 + r%). Down r%: × (1 − r%). Divide by where you started.* Key: *Profit or loss = selling price − cost price, as a % of the cost price.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 7): *Up r%: × (1 + r%). Down r%: × (1 − r%). Divide by where you started.* Worked line: *Up 3%: × (1 + 0.03) = × 1.03.* Key: *Profit or loss = selling price − cost price, as a % of the cost price.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and m02's opening frame.
 
@@ -186,6 +186,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,651 characters**, 13 scene headings. Characters per scene (1 to 13): 506, 709, 447, 682, 629, 1010, 199, 178, 291, 303, 323, 287, 75.
 
 At 13.3 characters per second the speech is about 425 s. Holds and settling: two 10 s countdowns (20 s); short holds (memory card 2 s, feedbacks 1 s each, handoff 2 s) 6 s; settling for the slider sweeps (2, 3), the ladder (4) and the profit bars (6), about 22 s; the key-notes scene is 45 s, of which its 75-character line is about 6 s, so about 39 s more. Total **about 514 s**, 56 s under the 570 s cap. Feedback speech: about 21.9 s and 24.3 s.
+
+Revision 2 (24 Nov 2026, same script): **5,861 characters** (scene 6: 1,092; scene 7: 327; others unchanged), speech about 441 s, total **about 530 s**, 40 s under the cap. Feedback unchanged in length (21.9 s, 24.3 s).
 
 Reserve trims if the voiced take runs long: scene 2's "Up fifteen per cent is times one point one five." (the slider shows it); scene 6's "Businesses often call these revenue and cost." moves to an on-screen chip only (it must stay on screen for Year 12 a04a).
 
@@ -270,6 +272,17 @@ Builds on: Tax Scenarios in a Spreadsheet. Next: GST and VAT: Adding and Removin
 - **1. e12's "Next" line.** e12's description says "Next: percentage increase and decrease." Root may replace it with this title ("Percentage Change, Profit and Loss"); its scene 11 frame is used exactly, so no picture or narration change is needed, and its "(provisional)" marks can be lifted (ruling 87).
 - **2. Header strip.** "MANAGING MONEY" only (owner rule of 23 Nov). The e, f and l designs show "MATHEMATICS STANDARD · ..."; root decides whether to align them.
 - **3. Reverse percentages in m02.** Confirm the move (route inputs 10).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m01-learning-review.md` (0 blockers, 2 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (cost price stated as absolute): applied.** Scene 6 adds "Unless a question asks for a percentage of the selling price, use the cost price." with a grey chip "unless the question says selling price". Key note 5 ends "unless told otherwise". The memory aid is unchanged, as the review allows.
+- **SF2 ("1 + r%" misread as 1 + 3): applied.** Scene 7 says "with r per cent written as a decimal. So up three per cent is one plus nought point nought three, times one point nought three", and a worked line "Up 3%: × (1 + 0.03) = × 1.03" writes under the main line on "decimal" (scene 7 and the notes card). Key note 1 reads "Up 3%: × (1 + 0.03) = × 1.03".
+- **N1 (scene 6 grey comparison strip): taken as a preview check.** In voiced preview, confirm the "$45 on $75 / $45 on $300" strip fades before the selling bar slides to $96.
+- **N2 (feedback 2 row): applied (root ruling 7).** "1000 − 900 = $100" now writes on a new cue "dollars", and "100 ÷ 900 × 100% = 11.1%" on its own row on "cent". One word ("dollars") gained a bold cue; no words changed.
+- **N3:** no change needed.
+- Numbers: no value changed. Narration 5,861 characters (was 5,651), about 530 s with holds.
 
 ## Review notes
 

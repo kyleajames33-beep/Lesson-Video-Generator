@@ -1,8 +1,8 @@
 # Maths S11 A05B: How do we find the perimeter and area of circles, sectors and shapes with curved edges? Pi as diameters around a circle, the circle cut into a near-rectangle, theta over 360 for arcs and sectors, a sector's two radii, and curved composite shapes (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a05a.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a05a.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,692 characters by script (see "Narration length estimate"), 13 scene headings, about 518 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,013 characters by script at Revision 2 (Revision 1: 5,692; see "Narration length estimate"), 13 scene headings, about 542 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixth video of the Year 11 Applications of measurement strand, outline playlist order 41 (shared with a05a). One video for Standard 1 and Standard 2. Viewers arrive from a05a's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a05b.md`. Route entry: `math-s11-a05b` in `../../programme/maths-standard-route-inputs-11.json`. Site lessons: `year11/applications-of-measurement/lesson02.sa.html` (circle card, WE2), `lesson04.sa.html` (circumference, arc, sector perimeter, WE3 running track) and `lesson05.sa.html` (sector area; the ring as a composite). Visual system: maths studio kit; the pizza, round cake and garden pond plates (all existing); the rolling circle, sector rearranger, fraction wheel, track and boards coded.
 
@@ -45,7 +45,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Author notes (not learner copy):**
   (a) 30π = 94.248 → 94.25; 225π = 706.858 → 706.86; 900π = 2827.433 → 2827.43; 3.14 × 225 = 706.5 (the early-rounding readout).
   (b) 45/360 = 1/8; 30π ÷ 8 = 3.75π = 11.781 → 11.78; 225π ÷ 8 = 28.125π = 88.357 → 88.36; 11.781 + 30 = 41.781 → 41.78.
-  (c) Track: 2 × 60 = 120; 20π = 62.832; 182.832 → 182.83; 60 × 20 = 1200; 100π = 314.159; 1514.159 → 1514.16.
+  (c) Track (Revision 2: a standard 400 m track's inside edge, consistent with a01; World Athletics geometry, straights 84.39 m, inside radius 36.50 m, Codex confirms): 2 × 84.39 = 168.78; 73π = 229.336; 398.116 → 398.12; the 400 m lap is measured 0.30 m out, 2 × 84.39 + 2π × 36.8 = 400.00; 84.39 × 73 = 6160.47; 36.5²π = 4185.387; 10 345.857 → 10 345.86 m², just over 1 ha.
   (d) Pond: π × 3² − π × 2² = 9π − 4π = 5π = 15.708 → 15.71.
   (e) A1: 60/360 = 1/6; 24π ÷ 6 = 4π = 12.566 → 12.57; 24 + 12.566 = 36.566 → 36.57; 144π ÷ 6 = 24π = 75.398 → 75.40. A2: ½ × π × 16 = 8π = 25.133; 96 + 25.133 = 121.133 → 121.13; half the circumference ½ × 8π = 4π = 12.566; 12 + 12 + 8 + 12.566 = 44.566 → 44.57; slip 40 + 12.566 = 52.57.
   (f) Pizza diameter 30 cm and 8 slices: an example (a common family-size pizza is about 30 to 33 cm).
@@ -76,14 +76,14 @@ Visual: stage change (simulation 1): the pizza (420 px) with labels "radius" (bl
 Visual: stage change (simulation 2): the pizza cut into 8 coded slices which slide out into a row, alternating tip-up and tip-down; the slice-count slider steps 8 → 16 → 32 and the scalloped shape straightens; on "rectangle" it reads as a rectangle outline (teal). On "height is one radius" a blue label "r" on its side; on "half the crust" amber labels on the top and bottom scallops "half of 2πr = πr", hand tag "πr long, r high". On "squared" row "A = πr × r = πr²" (52 px), formula strip "A = πr²". On "fifteen centimetres" row "r = 30 ÷ 2 = 15 cm"; on "centimetres" row "A = π × 15² = 225π = 706.86 cm²" (framed green). On "squared" (second) a red slip "π × 30² = 2827.43 cm²" writes and is crossed (caption "halve the diameter first"), hand tag "halve the diameter first". On "off" a grey readout "3.14 × 225 = 706.5" beside "π × 225 = 706.858...", hand tag "π key, round at the end".
 
 ### 4. sectors: a fraction of the circle
-> Now the slice. A slice of a circle between two radii is called a sector, and its curved edge is called an arc. Eight equal slices means each one is an eighth of the circle. Its angle at the centre is forty-five degrees, and forty-five over three sixty is one eighth. So the crust is one eighth of the circumference, eleven point seven eight **centimetres**. And the slice's area is one eighth of the whole area, eighty-eight point three six square **centimetres**. Watch the wheel. Whatever the angle, it's the same fraction of the circle, theta over three sixty, for the arc and for the area. Careful with the slice's perimeter, though. It has three edges, the crust and two straight cuts. Eleven point seven eight plus fifteen plus fifteen is forty-one point seven eight **centimetres**. Writing just the crust is the **slip**.
+> Now the slice. A slice of a circle between two radii is called a sector, and its curved edge is called an arc. Eight equal slices means each one is an eighth of the circle. Its angle at the centre is forty-five degrees, and forty-five over three sixty is one eighth. So the crust is one eighth of the circumference, eleven point seven eight **centimetres**. And the slice's area is one eighth of the whole area, eighty-eight point three six square **centimetres**. We call the angle at the centre theta, a Greek letter. Watch the wheel. Whatever the angle, it's the same fraction of the circle, theta over three sixty, for the arc and for the area. Careful with the slice's perimeter, though. It has three edges, the crust and two straight cuts. Eleven point seven eight plus fifteen plus fifteen is forty-one point seven eight **centimetres**. Writing just the crust is the **slip**.
 
-Visual: stage change (simulation 3): the fraction wheel, a coded circle (600 px) with the pizza plate as its fill, a slider θ; grey chips "sector: a slice between two radii", "arc: part of the circumference". On "forty-five degrees" the slider sets 45°: the slice shades teal with an amber angle mark "45°"; readout "45/360 = 1/8" (amber), hand tag "a fraction of the circle". On "centimetres" (first) row "arc = 45/360 × 30π = 11.78 cm" (framed green). On "centimetres" (second) row "area = 45/360 × 225π = 88.36 cm²" (framed green). On "Watch the wheel" the slider sweeps to 90°, 120° and back to 45°, the readouts "θ/360", "arc", "area" updating together. On "three edges" the edge tracer (a05a) runs round the slice: crust, then the two radii (blue "15 cm" each), hand tag "three edges". On "centimetres" (third) row "P = 11.78 + 15 + 15 = 41.78 cm" (framed green). On "slip" a red slip "perimeter = 11.78 cm" writes and is crossed (caption "three edges: arc + 2 radii").
+Visual: stage change (simulation 3): the fraction wheel, a coded circle (600 px) with the pizza plate as its fill, a slider θ; grey chips "sector: a slice between two radii", "arc: part of the circumference". On "forty-five degrees" the slider sets 45°: the slice shades teal with an amber angle mark "45°"; readout "45/360 = 1/8" (amber), hand tag "a fraction of the circle". On "centimetres" (first) row "arc = 45/360 × 30π = 11.78 cm" (framed green). On "centimetres" (second) row "area = 45/360 × 225π = 88.36 cm²" (framed green). On "theta" the angle mark relabels "θ" with a grey chip "θ (theta): the angle at the centre". On "Watch the wheel" the slider sweeps to 90°, 120° and back to 45°, the readouts "θ/360", "arc", "area" updating together. On "three edges" the edge tracer (a05a) runs round the slice: crust, then the two radii (blue "15 cm" each), hand tag "three edges". On "centimetres" (third) row "P = 11.78 + 15 + 15 = 41.78 cm" (framed green). On "slip" a red slip "perimeter = 11.78 cm" writes and is crossed (caption "three edges: arc + 2 radii").
 
 ### 5. curved composites: a running track
-> Curved edges show up in composite shapes too. A running track is made of two straights, each sixty metres long, joined by a semicircle at each end. The track is twenty metres wide, so each semicircle has a diameter of twenty. Plan first. Perimeter equals two straights plus two semicircles. Two semicircles of the same size make one full circle, so add one circumference. That's a hundred and twenty plus pi times twenty, a hundred and eighty-two point eight three metres around the **edge**. The ends of the rectangle are inside the shape, so they don't count. For the area inside, it's the rectangle plus the two semicircles, which again make one circle. Sixty times twenty, plus pi times ten squared, is fifteen hundred and fourteen point one six square **metres**.
+> Curved edges show up in composite shapes too. The inside edge of a standard running track is two straights, each eighty-four point three nine metres long, joined by a semicircle at each end. Each semicircle has a radius of thirty-six point five metres, so a diameter of seventy-three. Plan first. Perimeter equals two straights plus two semicircles. Two semicircles of the same size make one full circle, so add one circumference. That's a hundred and sixty-eight point seven eight plus pi times seventy-three, three hundred and ninety-eight point one two metres around the **edge**. A lap is called four hundred metres because it's measured a little way out from that edge. The ends of the rectangle are inside the shape, so they don't count. For the area inside, it's the rectangle plus the two semicircles, which again make one circle. Eighty-four point three nine times seventy-three, plus pi times thirty-six point five squared, is ten thousand three hundred and forty-five point eight six square **metres**, just over a hectare.
 
-Visual: stage change: a coded running track (top view, 1,200 × 500 px): a 60 m by 20 m rectangle (teal) with two semicircle ends; labels "60 m" (blue) on the straights and "20 m" across an end. On "Plan first" row "Plan: perimeter = 2 straights + 2 semicircles" (amber underline), hand tag "plan first". On "one full circle" the two semicircles slide together into one circle beside the track, hand tag "two halves = one circle". On "edge" the edge tracer runs the outside; row "P = 2 × 60 + π × 20 = 182.83 m" (framed green). On "inside the shape" the rectangle's two short ends show dashed violet with a small cross. On "metres" (last) row "A = 60 × 20 + π × 10² = 1514.16 m²" (framed green), the infield filling teal.
+Visual: stage change: a coded standard running track (top view, 1,200 × 520 px, drawn to scale; Revision 2): its inside edge, an 84.39 m by 73 m rectangle (teal) with two semicircle ends; labels "84.39 m" (blue) on the straights, "r = 36.5 m" on one end and "73 m" across it; grey chip "a01: a 400 m track". On "Plan first" row "Plan: perimeter = 2 straights + 2 semicircles" (amber underline), hand tag "plan first". On "one full circle" the two semicircles slide together into one circle beside the track, hand tag "two halves = one circle". On "edge" the edge tracer runs the outside; row "P = 2 × 84.39 + π × 73 = 398.12 m" (framed green). On "a little way out" a faint dashed lane line 30 cm outside the edge, tag "a lap: 400 m". On "inside the shape" the rectangle's two short ends show dashed violet with a small cross. On "metres" (last) row "A = 84.39 × 73 + π × 36.5² = 10 345.86 m²" (framed green), the infield filling teal; on "hectare" grey chip "a02: 1 ha = 10 000 m²".
 
 ### 6. a ring: outer minus inner
 > One more shape. This garden pond has a radius of two metres, and a gravel path one metre wide runs all the way around it. How much gravel? The path is a ring. It's the big circle, out to three metres, with the pond's circle cut out. So the plan is outer circle minus inner circle. Pi times three squared, minus pi times two squared, is pi times five, fifteen point seven one square **metres**. It's the same add or subtract thinking as last time, now with **circles**.
@@ -159,7 +159,7 @@ Model answer: area 96 + ½ × π × 4² = 121.13 m²; perimeter 12 + 12 + 8 + ½
 | --- | --- | --- |
 | Pizza | C = 94.25 cm; A = 706.86 cm²; slip 2827.43; 3.14 gives 706.5 | 2, 3 |
 | Slice | 1/8; arc 11.78 cm; area 88.36 cm²; perimeter 41.78 cm | 4 |
-| Track | 182.83 m; 1514.16 m² | 5 |
+| Track (Revision 2) | 398.12 m (lap 400 m, 0.3 m out); 10 345.86 m², just over 1 ha | 5 |
 | Pond path | 5π = 15.71 m² | 6 |
 | A1 | 12.57 cm; 36.57 cm; 75.40 cm² | 8, 9 |
 | A2 | 121.13 m²; 44.57 m; slip 52.57 | 10, 11 |
@@ -170,7 +170,7 @@ Recalculated with floating-point arithmetic to 10 digits (23 Nov 2026, scratchpa
 
 - 30π = 94.25; 15² = 225; 225π = 706.86; 900π = 2827.43; 3.14 × 225 = 706.5.
 - 45/360 = 0.125; 3.75π = 11.78; 28.125π = 88.36; 11.78 + 30 = 41.78.
-- 2 × 60 + 20π = 182.83; 1200 + 100π = 1514.16.
+- Track (Revision 2; rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): 2 × 84.39 + 73π = 168.78 + 229.34 = 398.12; 2 × 84.39 + 2π × 36.8 = 400.00; 84.39 × 73 + 36.5²π = 6160.47 + 4185.39 = 10 345.86.
 - 9π − 4π = 5π = 15.71.
 - 4π = 12.57; 24 + 4π = 36.57; 24π = 75.40.
 - 96 + 8π = 121.13; 32 + 4π = 44.57; 40 + 4π = 52.57.
@@ -185,6 +185,8 @@ Recalculated with floating-point arithmetic to 10 digits (23 Nov 2026, scratchpa
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,692 characters**, 13 scene headings. Characters per scene (1 to 13): 443, 694, 798, 813, 760, 460, 163, 269, 373, 199, 343, 290, 75. Feedback speech about 28.0 s and 25.8 s.
 
 At 13.3 characters per second the speech is about 428 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the rolling circle (2), the rearranger (3), the fraction wheel (4) and the track (5), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 518 s**, 52 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **6,013 characters**, 13 scene headings (per scene: 443, 694, 798, 868, 1026, 460, 163, 269, 373, 199, 343, 290, 75); speech about 452 s; total **about 542 s**, 28 s under the 570 s cap. Feedback speech about 28.0 s and 25.8 s.
 
 Reserve trims if the voiced take runs long: scene 3's 3.14 sentence (the readout stays); scene 6's last sentence.
 
@@ -239,7 +241,7 @@ No new plate. All four plates exist and were viewed.
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with exact arithmetic (π to the calculator's full value, rounded at the end).
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
-3. Confirm the softball base path "about 18.3 m" (Softball Australia: 18.29 m) is worded as approximate in scene 12.
+3. Confirm the softball base path "about 18.3 m" (Softball Australia: 18.29 m) is worded as approximate in scene 12. Confirm the standard track's inside-edge geometry (straights 84.39 m, radius 36.50 m, the 400 m lap measured 0.30 m out; World Athletics track manual) used in scene 5 (Revision 2).
 4. Confirm the spoken forms match the screen.
 5. Confirm both attempts carry every demand and show no answer.
 6. Confirm scene 1 opens on a05a's final frame exactly and scene 12 matches a06's boundary.
@@ -267,6 +269,17 @@ Builds on: Perimeter and Area: Rectangles, Triangles, Trapeziums. Next: Pythagor
 ## Open decisions
 
 - **1. The a05 split.** As a05a's open decision 1.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a05b-learning-review.md` (0 blockers, 1 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (running track contradicts a01's 400 m track): applied (root ruling 6), option (b).** Scene 5 now uses the inside edge of a standard track: straights 84.39 m, semicircles of radius 36.5 m (diameter 73 m). P = 2 × 84.39 + π × 73 = 398.12 m, and the narration adds "A lap is called four hundred metres because it's measured a little way out from that edge" (0.30 m out gives 400.00 m, author note). A = 84.39 × 73 + π × 36.5² = 10 345.86 m², "just over a hectare", with a grey chip recalling a02's "1 ha = 10 000 m²" and another recalling a01's 400 m track. Visual, author note (c), Numbers used, Numbers to verify and Codex brief item 3 updated; rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures).
+- **N1 (theta unnamed): applied.** Scene 4 says "We call the angle at the centre theta, a Greek letter." with a grey chip "θ (theta): the angle at the centre".
+- **N2 (feedback 1 length, 28 s):** unchanged; the named trim stays available.
+- **N3 (early-rounding readout):** already beside the correct row ("3.14 × 225 = 706.5" beside "π × 225 = 706.858..."); no change.
+- Feedback rows already show one result per cue; no change.
+- Narration 6,013 characters (was 5,692), about 542 s with holds. Scene 5 is now 1,026 characters; its three rows and the lane line each have their own cue.
 
 ## Review notes
 

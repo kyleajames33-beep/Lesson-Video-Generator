@@ -49,7 +49,7 @@ Sources: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-st
 - **Colour roles (fixed for i12 to i18).** Price or amount borrowed **teal**; extra cost (interest or fees) **amber**; repayment **violet**; balance owed **blue**; answer **green**; mistake **red**, crossed slips only (a late tick is red-outlined as an event, not a mistake, with an amber fee stamp).
 - **Large type, handwritten voice.** Bar labels 40 px; working rows 44 px; graph labels 34 px; readouts 52 px; hand tags at least 34 px; nothing below 26 px; all text above y = 950. Hand tags: "same e-bike", "from the lender's calculator", "smaller repayment, bigger total", "compare the total paid", "owed for longer", "still owes more", "dollars owed × time", "$0 only if every one is on time", "+ fees", "can every instalment be paid?". At most two live at once.
 - **Stage changes (standard item 2).** i11's frame and three ways to pay (1); BNPL and the two loans set up (2); the g01 board with the bars (3); the balance curves (4); the instalment strip (5); the decision card (6); framed card (7); question cards (8 to 11); the e-bike loan for i13 (12); key notes (13).
-- **Memory aid.** Framed card: "Compare the total paid, not the repayment." Key line: "Longer loan: smaller repayment, bigger total. BNPL: free only while every instalment is on time."
+- **Memory aid.** Framed card: "Compare the total paid, not the repayment." Key line: "Longer loan: smaller repayment, bigger total. BNPL: interest-free only while every instalment is on time."
 - **Visual surprise.** In scene 3 the repayment beside each bar shrinks while the amber cost grows, so the "cheapest-looking" option is visibly the dearest.
 - **Plain meanings at first use.** Buy now, pay later ("you take the item now and pay it off in instalments, usually with no interest"); instalment ("one of the equal payments"); short-term and long-term loan ("a loan paid off over a short time, like two years, or a long time, like five"); interest ("what a lender charges for the use of its money"); total paid ("every payment added up"); late fee ("a charge for a payment that's late").
 - **Attempts (original, HSC style; the pack's two questions).** A1: a $1,440 gaming console, three ways to pay (BNPL 4 fortnightly instalments of $360 with a $10 late fee each; a 12-month loan at $132.02; a 24-month loan at $71.89): totals ($1,440; $1,584.24; $1,725.36), the BNPL total with two missed instalments ($1,460) and a justified recommendation for someone paid fortnightly who can afford $360 a fortnight; crossed "two missed: still $1,440" (caption "add $10 for each missed instalment"). A2: $8,000 for solar panels at 12% p.a., $376.59 a month over 2 years or $210.67 over 4 years: total interest ($1,038.16, $2,112.16), the difference ($1,074.00) and why the longer loan costs more at the same rate; crossed "same rate, so the same cost" (caption "owed for twice as long").
@@ -105,9 +105,9 @@ Visual: stage change: the instalment strip (simulation 3; 1,600 px): 12 monthly 
 Visual: stage change: the decision card (`DecisionTree`, 1,200 × 520 px): "Can every instalment be paid on time?"; "yes" leads to "BNPL: $3,000", "no" leads to "loan: the shortest term you can afford". On "carry" the "no" branch lights the 2-year card above the 5-year card, hand tag "can every instalment be paid?".
 
 ### 7. memory aid
-> Here's the summary. Compare the total paid, not the repayment. A longer loan has a smaller repayment, and a bigger total. And BNPL is only free while every instalment is on **time**.
+> Here's the summary. Compare the total paid, not the repayment. A longer loan has a smaller repayment, and a bigger total. And BNPL is only interest-free while every instalment is on **time**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the three total-paid bars small with their shrinking repayments. Main line, hand font 56 px: "Compare the total paid, not the repayment." On "time" the key line, 40 px: "Longer loan: smaller repayment, bigger total. BNPL: free only while every instalment is on time." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: the three total-paid bars small with their shrinking repayments. Main line, hand font 56 px: "Compare the total paid, not the repayment." On "time" the key line, 40 px: "Longer loan: smaller repayment, bigger total. BNPL: interest-free only while every instalment is on time." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. A gaming console costs one thousand four hundred and forty dollars, and there are three ways to pay. Find the total paid for each option, if every payment is on time. Find the BNPL total if two instalments are missed. And which option would you recommend for someone paid fortnightly, who can afford three hundred and sixty dollars a fortnight? Justify with numbers. Pause here to answer.
@@ -144,7 +144,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 - BNPL: $0 extra only if every instalment is on time.
 - Late fees, account fees and later interest add to BNPL's cost.
 
-Memory aid (framed card, right side, as in scene 7): *Compare the total paid, not the repayment.* Key: *Longer loan: smaller repayment, bigger total. BNPL: free only while every instalment is on time.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 7): *Compare the total paid, not the repayment.* Key: *Longer loan: smaller repayment, bigger total. BNPL: interest-free only while every instalment is on time.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and i13's opening frame.
 
@@ -191,7 +191,7 @@ Recalculated with SymPy 1.14 (18 Nov 2026, scratchpad `s12i/verify.py`, run with
 
 ## Memory aid check
 
-- **"Compare the total paid, not the repayment."** with key line **"Longer loan: smaller repayment, bigger total. BNPL: free only while every instalment is on time."** Original. Meaning, as said in scene 7: the cost of a way to pay is the sum of all its payments (and fees), not the size of one; at the same rate, spreading a loan over longer lowers each repayment but raises the total; BNPL adds nothing only under its on-time condition. Assumptions checked: the loans compared have the same rate and amount (the syllabus comparison and every example here); fees are added to the total; "free" ignores account fees on plans that charge them (scene 5 says to add them). It helps a new case: $5,000 at 1% a month over 3 years ($166.07) or 5 years ($111.22): $5,978.52 against $6,673.20 in total. Introduced after scenes 3 to 6.
+- **"Compare the total paid, not the repayment."** with key line **"Longer loan: smaller repayment, bigger total. BNPL: interest-free only while every instalment is on time."** Original. Meaning, as said in scene 7: the cost of a way to pay is the sum of all its payments (and fees), not the size of one; at the same rate, spreading a loan over longer lowers each repayment but raises the total; BNPL adds nothing only under its on-time condition. Assumptions checked: the loans compared have the same rate and amount (the syllabus comparison and every example here); fees are added to the total; "free" ignores account fees on plans that charge them (scene 5 says to add them). It helps a new case: $5,000 at 1% a month over 3 years ($166.07) or 5 years ($111.22): $5,978.52 against $6,673.20 in total. Introduced after scenes 3 to 6.
 - **Considered, not used:** "Small payments, big bill" (catchy, but leaves out BNPL's condition).
 
 ## Narration length estimate
@@ -292,3 +292,7 @@ Builds on: Straight-Line vs Declining Balance Depreciation. Next: Reducing Balan
 - Revision 2 (18 Nov 2026): learning review resolved (see "Revision 2" at the top and `../checks/m-s12-i12-i23-learning-review-resolution.md`). Next: Codex maths check and error check, then voicing on the Google voice and a build to grade A.
 
 - Revision 1. Next: student learning review (trace from i11 and Year 11 m03 for a Standard 1 student; check that "total paid" and "extra cost" land before the comparison, that the seesaw bars make the smaller-repayment trap visible, that the shaded area explains "owed for longer" without a formula, that BNPL's condition is stated plainly and not as a lecture, that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Root note (24 Nov 2026)
+
+The Year 11 Standard m03 memory aid changed at its learning review ("Interest-free isn't free: account fees even on time, late fees when you miss."). This video's key line and scene 7 summary now say "interest-free" instead of "free", so the two videos agree: a plan can be interest-free and still cost more than the price when it has account fees. Narration changed before voicing; re-count at the error check.

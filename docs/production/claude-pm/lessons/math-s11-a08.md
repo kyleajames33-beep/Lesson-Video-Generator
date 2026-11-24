@@ -1,8 +1,8 @@
 # Maths S11 A08: How do we find the surface area of prisms, cylinders, spheres and composite solids? The outside faces unfolded into a net, a cylinder's label unrolled, a sphere as four circles, and exposed and hidden faces in composite and partial solids (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a07.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a07.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,613 characters by script (see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,613 characters by script at Revision 2 (Revision 1: 5,613; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: ninth video of the Year 11 Applications of measurement strand, outline playlist order 44. One video for Standard 1 and Standard 2. Viewers arrive from a07's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a08.md`. Route entry: `math-s11-a08` in `../../programme/maths-standard-route-inputs-11.json`. Site lessons: `year11/applications-of-measurement/lesson06.sa.html` (nets, the unrolled cylinder, WE1 to WE3, SA 5) and `lesson07.sa.html` (sphere, hemisphere, hidden faces, WE3). Visual system: maths studio kit; the cereal box, chocolate block, food tin, golf ball and polytunnel plates (all existing); the nets, face lists and boards coded.
 
@@ -73,7 +73,7 @@ Visual: stage change (simulation 1): the box (420 px) at the left unfolds into i
 ### 3. a triangular prism: perimeter times length
 > A box is one kind of prism, a solid with the same shape all the way through. A chocolate bar box with triangle ends is another. Its ends are right-angled triangles with shorter sides of nine and twelve centimetres, and the box is twenty centimetres long. The two ends are half of nine times twelve, fifty-four each, so a hundred and eight altogether. The sides are three rectangles, one for each edge of the triangle. But we only know two of the edges. The third is the hypotenuse, the square root of nine squared plus twelve squared, fifteen **centimetres**. Now here's a shortcut. Unroll the three sides and they make one long rectangle. Its width is the triangle's perimeter, nine plus twelve plus fifteen, thirty-six, and its length is twenty. That's seven hundred and twenty. Altogether, eight hundred and twenty-eight square **centimetres**. Five faces, and none **missing**.
 
-Visual: stage change (simulation 1): a coded triangular prism (the chocolate block `ma11-chocolate-block-v1.png`, about 300 px, as a badge for "chocolate", with a coded triangular box beside it; edges "9 cm", "12 cm" with a right-angle mark, "20 cm" long, blue); grey chip "prism: the same shape all the way through". On "two ends" both triangles light; row "ends = 2 × ½ × 9 × 12 = 108 cm²". On "only know two" the third edge shows "?"; on "centimetres" (first) the end triangle lifts out (a06 style): "√(9² + 12²) = √225 = 15 cm" (framed green), grey chip "a06". On "Unroll the three sides" the side faces unroll into one long rectangle labelled "9 + 12 + 15 = 36 cm" by "20 cm", hand tag "perimeter × length"; row "sides = 36 × 20 = 720 cm²". On "centimetres" (second) row "SA = 108 + 720 = 828 cm²" (framed green). On "missing" a face counter "5" with five ticks.
+Visual: stage change (simulation 1): a coded triangular prism (the chocolate block `ma11-chocolate-block-v1.png`, about 300 px, as a badge for "chocolate", with a coded triangular box beside it; edges "9 cm", "12 cm" with a right-angle mark, "20 cm" long, blue); grey chip "prism: the same shape all the way through". On "two ends" both triangles light; row "ends = 2 × ½ × 9 × 12 = 108 cm²". On "only know two" the third edge shows "?"; on "centimetres" (first) the end triangle lifts out (a06 style): "√(9² + 12²) = √225 = 15 cm" (framed green), grey chip "a06". On "Unroll the three sides" the side faces unroll into one long rectangle labelled "9 + 12 + 15 = 36 cm" by "20 cm", hand tag "perimeter × length"; row "sides = 36 × 20 = 720 cm²". On "centimetres" (second) row "SA = 108 + 720 = 828 cm²" (framed green). On "missing" a face counter "5" with five ticks; the counter appears only after all five faces have lit, as a check (Revision 2).
 
 ### 4. a cylinder: unroll the label
 > A food tin is a cylinder, a prism with a circle at each end. This one has a radius of four centimetres and a height of eleven. The two ends are circles, pi r squared each. The curved side is the tricky part, so peel off the label. Flat, it's a rectangle. Its height is the tin's height, eleven. Its width is the distance once round the tin, the circumference, two pi r. So the curved area is two pi r times h, eighty-eight pi, two hundred and seventy-six point four six square **centimetres**. Add the two ends, thirty-two pi, and the whole tin is a hundred and twenty pi, three hundred and seventy-six point nine nine square **centimetres**. If a cylinder is open at the top, like a cup or a tank with no lid, only count one **end**.
@@ -101,9 +101,9 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the box's net, th
 Visual: `QuestionCard`, 40 px: "A closed cylindrical tin has a diameter of 10 cm and a height of 14 cm. Find its total surface area, correct to 2 decimal places." Picture slot: a coded cylinder with "10 cm" across the top and "14 cm" up the side. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
-> The radius is five. Two ends are fifty pi, and the curved side is two pi times five times fourteen, a hundred and forty pi. That's a hundred and ninety pi, five hundred and ninety-six point nine **square centimetres**. Using ten as the radius is the **slip**. Halve the diameter first.
+> The radius is **five**. Two ends are fifty **pi**, and the curved side is two pi times five times fourteen, a hundred and **forty** pi. That's a hundred and ninety pi, five hundred and ninety-six point nine **square centimetres**. Using ten as the radius is the **slip**. Halve the diameter first.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: "r = 10 ÷ 2 = 5 cm"; on "square centimetres" "SA = 2π × 5² + 2π × 5 × 14 = 190π = 596.90 cm²" (framed green). On "slip" a red slip "r = 10: 480π = 1507.96 cm²" writes and is crossed (caption "halve the diameter first"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px, one result per cue (Revision 2): on "five" "r = 10 ÷ 2 = 5 cm"; on "pi" "ends = 2 × π × 5² = 50π"; on "forty" "curved side = 2π × 5 × 14 = 140π"; on "square centimetres" "SA = 50π + 140π = 190π = 596.90 cm²" (framed green). On "slip" a red slip "r = 10: 480π = 1507.96 cm²" writes and is crossed (caption "halve the diameter first"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A bollard is a cylinder with a radius of nought point one five metres and a height of nought point nine metres, with a hemisphere of the same radius on top. Its base stands in the ground. Find the area to be painted, correct to two decimal places. Pause here to answer.
@@ -111,9 +111,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: "r = 10 ÷ 2 = 5 cm"; 
 Visual: `QuestionCard`, 40 px: "A bollard is a cylinder of radius 0.15 m and height 0.9 m with a hemisphere of the same radius on top. Its base stands in the ground. Find the area to be painted, correct to 2 decimal places." Picture slot: a coded bollard diagram (HSC style) with "0.15 m" and "0.9 m". Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> List the faces. The curved side and the dome are painted. The base is in the ground, and the cylinder's top and the dome's flat face are hidden at the join. Curved side, nought point two seven pi, plus dome, nought point nought four five pi, is about nought point nine nine square **metres**. Counting the hidden circles at the join is the **slip**.
+> List the faces. The curved side and the dome are painted. The base is in the ground, and the cylinder's top and the dome's flat face are hidden at the join. Curved side, nought point two **seven** pi, plus dome, nought point nought four **five** pi, is about nought point nine nine square **metres**. Counting the hidden circles at the join is the **slip**.
 
-Visual: the card shrinks to the top. A face list, 36 px: "curved side ✓", "dome ✓", "base ✗ (ground)", "cylinder top ✗ (join)", "dome's flat face ✗ (join)". Row, 44 px: on "metres" "2π × 0.15 × 0.9 + 2π × 0.15² = 0.315π = 0.99 m²" (framed green). On "slip" a red slip "0.36π = 1.13 m²" writes and is crossed (caption "hidden: don't paint"). Hold about 1 s.
+Visual: the card shrinks to the top. A face list, 36 px: "curved side ✓", "dome ✓", "base ✗ (ground)", "cylinder top ✗ (join)", "dome's flat face ✗ (join)". Rows, 44 px, one result per cue (Revision 2): on "seven" "curved side = 2π × 0.15 × 0.9 = 0.27π"; on "five" "dome = 2π × 0.15² = 0.045π"; on "metres" "total = 0.27π + 0.045π = 0.315π ≈ 0.99 m²" (framed green). On "slip" a red slip "0.36π = 1.13 m²" writes and is crossed (caption "hidden: don't paint"). Hold about 1 s.
 
 ### 12. handoff
 > So surface area is the outside skin. Now the inside. This rainwater tank is a cylinder about one point eight metres wide and two metres tall. Not how much metal is it made of, but how much water does it hold? That's **next**.
@@ -187,6 +187,8 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,613 characters**, 13 scene headings. Characters per scene (1 to 13): 520, 607, 869, 722, 661, 685, 155, 189, 277, 279, 341, 221, 75. Feedback speech about 20.8 s and 25.6 s.
 
 At 13.3 characters per second the speech is about 422 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the net unfolds (2, 3), the label unroll (4) and the four circles (5), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 512 s**, 58 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,613 characters**, 13 scene headings (per scene: 520, 607, 869, 722, 661, 685, 155, 189, 277, 279, 341, 221, 75); speech about 422 s; total **about 512 s**, 58 s under the 570 s cap. Feedback speech about 20.8 s and 25.6 s.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence (the greyed end stays); scene 1's "Next time" sentence.
 
@@ -269,6 +271,15 @@ Builds on: Irregular Blocks of Land: Area and Perimeter. Next: Volume and Capaci
 ## Open decisions
 
 - None beyond the strand's.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a08-learning-review.md` (0 blockers, 0 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **N1 (feedback 2 sum in one row): applied (root ruling 7).** "curved side = 0.27π" on "seven", "dome = 0.045π" on "five", then "total = 0.315π ≈ 0.99 m²" on "metres". Feedback 1 is split the same way: the radius on "five", the ends (50π) on "pi", the curved side (140π) on "forty", the total on "square centimetres".
+- **N2 (face counter):** the Visual now states that the counter "5" appears only after all five faces have lit, as a check.
+- **N3 (golf ball size):** no change; with Codex.
+- Numbers: no value changed. Narration 5,613 characters (was 5,613), about 512 s with holds.
 
 ## Review notes
 

@@ -1,8 +1,8 @@
 # Maths S11 A07: How do we find the perimeter and area of an irregular block of land by cutting it up? Cuts at right angles into rectangles, triangles and trapeziums, a second cut as a check, slanted boundaries by Pythagoras, outside boundaries only, and hectares (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a06.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r07.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a06.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r07.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,697 characters by script (see "Narration length estimate"), 13 scene headings, about 518 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,054 characters by script at Revision 2 (Revision 1: 5,697; see "Narration length estimate"), 13 scene headings, about 545 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eighth video of the Year 11 Applications of measurement strand, outline playlist order 43. One video for Standard 1 and Standard 2. Viewers arrive from a06's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a07.md`. Route entry: `math-s11-a07` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson02.sa.html` (composite strategy card) only; blocks of land, slanted boundaries and hectares are taught from the syllabus (ruling 3; MSY-14). Visual system: maths studio kit; the house and ute plates (existing); the block and paddock plans, cut lines and boards coded in HSC survey-plan style.
 
@@ -19,7 +19,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 ## Decisions
 
 - **Anchor: the house block for sale (a06's final frame).** Real estate listings give a block's area and buyers price the fencing; both questions need the plan. The block's only slanted boundary is the back fence.
-- **Cut at right angles (the key decision).** A cut across the block at right angles to the sides, at the 30 m mark, makes a rectangle and a right-angled triangle whose base and height are both known. A cut that creates a piece with no known perpendicular height is shown and crossed (scene 6).
+- **Cut at right angles (the key decision).** A cut across the block at right angles to the sides, at the 30 m mark, makes a rectangle and a right-angled triangle whose base and height are both known. Scene 6 (Revision 2) checks the answer a third way with a diagonal cut: one triangle has its right angle at the front (½ × 20 × 30 = 300 m²), the other has the 40 m side as base and the block's 20 m width as its perpendicular height (½ × 40 × 20 = 400 m²), 700 m² again. The crossed slip is a slanted edge used as a height (½ × 22.36 × 40).
 - **Two cuts, one answer.** The same block seen whole as a trapezium (parallel sides 40 m and 30 m, 20 m apart) gives 700 m² again. Matching answers are the check; "areas by splitting into shapes" is shown as Year 12 r07's chip.
 - **Perimeter uses Pythagoras for slanted boundaries (a06).** The back boundary is the hypotenuse of the triangle piece: √(20² + 10²) = 22.36 m. The internal cut line is never part of the perimeter (a05a's edge tracer).
 - **Hectares for land (a02).** The paddock's 12 300 m² becomes 1.23 ha, with the grey chip "a02: 1 ha = 10 000 m²".
@@ -28,14 +28,14 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   2. **Two-dissection overlay** (scene 3): the trapezium outline lights over the rectangle-and-triangle split; both totals read 700 m², hand tag "same answer".
   3. **Edge tracer** (scenes 4 and 5): a05a's tracer runs the outside boundaries with a counter, skipping the dashed cut lines.
 - **Colour roles (fixed a01 to a11).** Given lengths **blue**; the ½ and cut lines **amber**; areas **teal**; internal cut lines (not perimeter) **violet** dashed; answer **green**; mistake **red**.
-- **Large type, handwritten voice.** Plan labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "cut at right angles", "40 − 30 = 10", "same answer", "hypotenuse!", "outside only", "no known height", "÷ 10 000 for hectares". At most two live at once.
-- **Stage changes (standard item 2).** The block (1); the cut and pieces (2); the trapezium check (3); the back fence and perimeter (4); the paddock and its pieces (5); good and bad cuts (6); framed card (7); question cards (8 to 11); the cereal box frame (12); key notes (13).
+- **Large type, handwritten voice.** Plan labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "cut at right angles", "40 − 30 = 10", "same answer", "hypotenuse!", "outside only", "third check", "find the perpendicular height", "÷ 10 000 for hectares". At most two live at once.
+- **Stage changes (standard item 2).** The block (1); the cut and pieces (2); the trapezium check (3); the back fence and perimeter (4); the paddock and its pieces (5); the diagonal check and the slanted-edge slip (6); framed card (7); question cards (8 to 11); the cereal box frame (12); key notes (13).
 - **Worked examples (g01 order).** Scene 2: "Plan: block = rectangle + triangle"; "20 × 30 = 600 m²", "½ × 20 × 10 = 100 m²", "600 + 100 = 700 m²" (framed green). Scene 3: "½ × (40 + 30) × 20 = 700 m²" (framed green). Scene 4: "back = √(20² + 10²) = √500 = 22.36 m", "P = 20 + 40 + 22.36 + 30 = 112.36 m" (framed green). Scene 5: "120 × 80 = 9600 m²", "½ × 120 × 45 = 2700 m²", "12 300 m² = 1.23 ha" (framed green); "√(80² + 45²) = 91.79 m", "√(40² + 45²) = 60.21 m", "P = 432.00 m" (framed green). Scene 6: crossed "½ × 22.36 × 40" (caption "no known height").
 - **Memory aid.** Framed card: "Split it, label it, add it. Fence only the outside." Key line: "Cut at right angles so every piece has a base and a height. Slanted edges: Pythagoras. 1 ha = 10 000 m²."
-- **Visual surprise.** The two dissections land on the same 700 m² (scene 3): two completely different cuts, one answer.
+- **Visual surprise.** The two dissections land on the same 700 m² (scene 3): two completely different cuts, one answer. Scene 6's diagonal makes it three (Revision 2).
 - **Plain meanings at first use.** Block of land ("a piece of land you can buy, shown on a plan from above"); boundary ("the line around the block where its fences go"); dissection ("cutting a shape into simpler pieces").
 - **Attempts.** A1 (pack question 1): 710 m²; crossed "750 + 40 = 790 m²" (caption "cut away: subtract"). A2 (pack question 2): 42.72 m; 157.72 m; 0.15 ha; crossed "slanted side = 40 m" (caption "slanted: use Pythagoras").
-- **Mistake scene:** none separate. A cut with no known height (6, crossed); the cut line in the perimeter (4, said); adding a removed corner (A1 crossed); the height as the slanted side (A2 crossed).
+- **Mistake scene:** none separate. A slanted edge used as a height (6, crossed); the cut line in the perimeter (4, said); adding a removed corner (A1 crossed); the height as the slanted side (A2 crossed).
 - **Cause chain taught, in order:** (1) an irregular block has no single formula, but it can be cut into shapes that do (2); (2) cutting at right angles gives each piece a base and a perpendicular height you already know or can subtract (2); (3) the pieces cover the block exactly, so their areas add to the block's area, whichever way you cut, so a second cut checks the first (3); (4) a slanted boundary is the hypotenuse of a right-angled piece, so Pythagoras finds its length (4); (5) fences go on the outside, so the perimeter skips the cut lines (4).
 - **Entry knowledge (route):** math-s11-a05a, a06, a02. Recalled in grey chips.
 - **Site notes.** MSY-14 (blocks of land not taught).
@@ -78,14 +78,14 @@ Visual: stage change (simulation 2): the plan returns whole; the rectangle-and-t
 Visual: stage change: the triangle piece lifts out and enlarges at the right (a06's style): legs "20 m" and "10 m" (blue), a right-angle mark, the sloping edge thick blue "?"; hand tag "hypotenuse!"; grey chip "a06: Pythagoras". Rows: "back² = 20² + 10² = 500"; on "metres" (first) "back = √500 = 22.36 m" (framed green); the triangle slides back and the back boundary gets its label "22.36 m". On "all the way around" the edge tracer runs the outside with counter "20, 60, 82.36, 112.36"; on "metres" (second) row "P = 20 + 40 + 22.36 + 30 = 112.36 m" (framed green). On "cut line" the cut line shows violet dashed with a small cross, hand tag "outside only". On "front stays open" the front edge greys; row "fence = 40 + 22.36 + 30 = 92.36 m".
 
 ### 5. a bigger block: a paddock in hectares
-> Rural blocks work the same way, just bigger. This paddock's plan shows a rectangle, a hundred and twenty metres by eighty, with a triangular piece on top. The triangle's base is the same hundred and twenty metres, and its perpendicular height, the dashed line, is forty-five. The rectangle is ninety-six hundred square metres, and the triangle is half of a hundred and twenty times forty-five, twenty-seven hundred. Altogether, twelve thousand three hundred square metres. Land this size is usually given in hectares, and a hectare is ten thousand square metres, so that's one point two three **hectares**. For the perimeter, the two slanted sides each sit on a right-angled triangle, with the dashed height as one side. They come out at ninety-one point seven nine and sixty point two one metres. Add the three straight sides, and the paddock's boundary is four hundred and thirty-two **metres**.
+> Rural blocks work the same way, just bigger. This paddock's plan shows a rectangle, a hundred and twenty metres by eighty, with a triangular piece on top. The triangle's base is the same hundred and twenty metres, and its perpendicular height, the dashed line, is forty-five. The rectangle is ninety-six hundred square metres, and the triangle is half of a hundred and twenty times forty-five, twenty-seven hundred. Altogether, twelve thousand three hundred square metres. Land this size is usually given in hectares, and a hectare is ten thousand square metres, so that's one point two three **hectares**. For the perimeter, the two slanted sides each sit on a right-angled triangle, with the dashed height as one side. The apex is forty metres in from the left, so the right-hand piece is a hundred and twenty minus forty, eighty metres wide. The slanted sides come out at ninety-one point seven **nine** and sixty point two **one** metres. Add the three straight sides, and the paddock's boundary is four hundred and thirty-two **metres**.
 
-Visual: stage change: a coded paddock plan (1,100 × 800 px): rectangle "120 m" by "80 m" (blue), a triangle on top with its apex 40 m in from the left, a dashed perpendicular height "45 m" (amber) from the apex down to the rectangle's top edge; a small ute `ms12-ute-v1.png` (about 200 px) parked at the gate for scale. Rows: "Plan: paddock = rectangle + triangle"; "120 × 80 = 9600 m²"; "½ × 120 × 45 = 2700 m²"; "9600 + 2700 = 12 300 m²"; on "hectares" "12 300 ÷ 10 000 = 1.23 ha" (framed green), grey chip "a02: 1 ha = 10 000 m²", hand tag "÷ 10 000 for hectares". On "two slanted sides" the dashed height splits the triangle into two right triangles, legs labelled "80 m, 45 m" and "40 m, 45 m"; rows "√(80² + 45²) = 91.79 m", "√(40² + 45²) = 60.21 m". On "metres" (last) the edge tracer runs the outside; row "P = 120 + 80 + 91.79 + 60.21 + 80 = 432.00 m" (framed green).
+Visual: stage change: a coded paddock plan (1,100 × 800 px): rectangle "120 m" by "80 m" (blue), a triangle on top with its apex 40 m in from the left, a dashed perpendicular height "45 m" (amber) from the apex down to the rectangle's top edge; a small ute `ms12-ute-v1.png` (about 200 px) parked at the gate for scale. Rows: "Plan: paddock = rectangle + triangle"; "120 × 80 = 9600 m²"; "½ × 120 × 45 = 2700 m²"; "9600 + 2700 = 12 300 m²"; on "hectares" "12 300 ÷ 10 000 = 1.23 ha" (framed green), grey chip "a02: 1 ha = 10 000 m²", hand tag "÷ 10 000 for hectares". On "two slanted sides" the dashed height splits the triangle into two right triangles, legs labelled "80 m, 45 m" and "40 m, 45 m"; on "forty metres in from the left" a blue label "40 m" runs from the left corner to the foot of the dashed height, and on "eighty metres wide" a label "120 − 40 = 80 m" runs from the foot to the right corner (Revision 2). On "nine" row "√(80² + 45²) = 91.79 m"; on "one" row "√(40² + 45²) = 60.21 m", one row per cue. On "metres" (last) the edge tracer runs the outside; row "P = 120 + 80 + 91.79 + 60.21 + 80 = 432.00 m" (framed green).
 
 ### 6. choosing good cuts
-> So how do you choose where to cut? Make every cut at right angles to a side you know, so each piece gets a base and a perpendicular height you can read or work out. Here's a cut that doesn't help. A line from one corner to another splits the house block into two triangles, but neither one has a height you know. Writing half of twenty-two point three six times forty uses the slanted fence as if it were a height, and that's the **slip**. Cut at right angles, and the heights come for **free**. Some blocks need more than one cut. An L-shaped block with a slanted corner might need three pieces, and that's fine. More pieces just means more lines in the plan.
+> So how do you choose where to cut? Any cut works, as long as every piece gets a base and a perpendicular height you can read or work out. Try a diagonal cut, corner to corner, as a third **check**. This triangle has a right angle at the front, so its area is half of twenty times thirty, three hundred square **metres**. The other one has the forty metre side as its base, and its height is the block's width, twenty, measured at right angles to that side. That's four **hundred**. Seven hundred **again**. The slip is a slanted edge used as a height. Half of twenty-two point three six times forty treats the slanted back fence as a height, and that's **wrong**. Cuts at right angles to a side make the heights easiest to **see**. Some blocks need more than one cut. An L-shaped block with a slanted corner might need three pieces, and that's fine. More pieces just means more lines in the plan.
 
-Visual: stage change: the house block plan returns; a diagonal amber cut draws from the front-left corner to the back-right corner, making two triangles with no right angles marked; on "neither one has a height" faint "?" marks where heights would be, hand tag "no known height". On "slip" a red slip "½ × 22.36 × 40" writes and is crossed (caption "no known height"). On "free" the diagonal fades and the scene 2 cut redraws at right angles, its heights labelled "30 m" and "10 m" lighting green, hand tag "cut at right angles". On "L-shaped block" a small coded L-shaped plan with one slanted corner appears at the right, two amber cuts making three pieces numbered 1, 2, 3, and a three-line plan "Area = 1 + 2 + 3".
+Visual (Revision 2): stage change: the house block plan returns; on "diagonal cut" an amber cut draws from the front-left corner to the back-right corner; on "check" the two triangles shade in two teal tones, hand tag "third check". On "right angle at the front" the front-right corner's right-angle mark glows and the legs "20 m" and "30 m" light blue; on "metres" row "½ × 20 × 30 = 300 m²" (teal). On "forty metre side" the 40 m left side lights blue as the base; on "measured at right angles" a dashed amber perpendicular draws from the back-right corner across to the left side, labelled "20 m", hand tag "find the perpendicular height"; on "hundred" row "½ × 40 × 20 = 400 m²" (teal). On "again" row "300 + 400 = 700 m²" (framed green), hand tag "same answer". On "slanted edge" the 22.36 m back fence pulses; on "wrong" a red slip "½ × 22.36 × 40" writes and is crossed (caption "a slanted edge isn't a height"). On "see" the diagonal fades and the scene 2 cut redraws at right angles, its heights labelled "30 m" and "10 m" lighting green, hand tag "cut at right angles". On "L-shaped block" a small coded L-shaped plan with one slanted corner appears at the right, two amber cuts making three pieces numbered 1, 2, 3, and a three-line plan "Area = 1 + 2 + 3".
 
 ### 7. memory aid
 > So here's the method. Split it, label it, add it. And fence only the **outside**. Cut at right angles, so that every piece has a base and a height.
@@ -134,7 +134,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Teaching checks
 
 - **Does it explain causes?** Why cut: each piece has a formula (2). Why at right angles: each piece then has a known height (2, 6). Why a second cut checks: the pieces always cover the same block (3). Why Pythagoras for the back fence: it's a hypotenuse (4). Why skip the cut line: fences go on the outside (4). Why ÷ 10 000: a hectare is 10 000 m² (5).
-- **Misconceptions addressed:** a cut with no known height (6, crossed); the cut line in the perimeter (4); adding a removed corner (A1 crossed); the height used as the slant (A2 crossed).
+- **Misconceptions addressed:** a slanted edge used as a height (6, crossed); "only one cut works" (6, the diagonal check); the cut line in the perimeter (4); adding a removed corner (A1 crossed); the height used as the slant (A2 crossed).
 - **Visual standard, item by item:** 1 the block for sale in the first 20 s; 2 a new stage every 40 to 60 s; 3 the cut and pull-apart pieces, the overlay of two dissections, the edge tracer; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 rows with framed answers and crossed slips; 8 framed card and five bullets; 9 two different cuts landing on 700 m².
 - **One idea at a time:** cutting (2), checking (3), perimeter (4), a larger block in hectares (5), good cuts (6).
 - **Response opportunity:** two unseen tasks with every demand visible; 10 s each; feedback about 19 s and 28 s.
@@ -157,7 +157,7 @@ Model answer: (a) √(40² + 15²) = 42.72 m. (b) 45 + 40 + 30 + 42.72 = 157.72 
 | House block | 600; 10; 100; 700 m²; trapezium 700 m² | 2, 3 |
 | Back fence | √500 = 22.36 m; P = 112.36 m; fence 92.36 m | 4 |
 | Paddock | 9600; 2700; 12 300 m² = 1.23 ha; 91.79 m; 60.21 m; P = 432.00 m | 5 |
-| Bad cut | ½ × 22.36 × 40 (crossed) | 6 |
+| Diagonal check (Revision 2) | ½ × 20 × 30 = 300; ½ × 40 × 20 = 400; 700; slip ½ × 22.36 × 40 (crossed) | 6 |
 | A1 | 750 − 40 = 710 m²; slip 790 | 8, 9 |
 | A2 | 42.72 m; 157.72 m; 1500 m² = 0.15 ha | 10, 11 |
 
@@ -167,6 +167,7 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 
 - 20 × 30 = 600; 40 − 30 = 10; ½ × 20 × 10 = 100; 600 + 100 = 700; ½ × (40 + 30) × 20 = 700.
 - 20² + 10² = 500; √500 = 22.36; 20 + 40 + 22.36 + 30 = 112.36; 40 + 22.36 + 30 = 92.36.
+- Diagonal check (Revision 2; corners front-left (0, 0), front-right (20, 0), back-right (20, 30), back-left (0, 40); rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): ½ × 20 × 30 = 300 (right angle at front-right); ½ × 40 × 20 = 400 (base the left side, height the 20 m from back-right to the left side); 300 + 400 = 700. Paddock apex 40 m from the left: 120 − 40 = 80.
 - 120 × 80 = 9600; ½ × 120 × 45 = 2700; 12 300; 12 300 ÷ 10 000 = 1.23.
 - √(80² + 45²) = √8425 = 91.79; √(40² + 45²) = √3625 = 60.21; 120 + 80 + 91.79 + 60.21 + 80 = 432.00.
 - 30 × 25 = 750; ½ × 10 × 8 = 40; 710; 790.
@@ -182,6 +183,8 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,697 characters**, 13 scene headings. Characters per scene (1 to 13): 542, 697, 579, 684, 889, 652, 143, 259, 251, 320, 372, 222, 75. Feedback speech about 18.9 s and 28.0 s.
 
 At 13.3 characters per second the speech is about 428 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the cuts and pull-apart (2, 5), the overlay (3), the tracer (4, 5), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 518 s**, 52 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **6,054 characters**, 13 scene headings (per scene: 542, 697, 579, 684, 1026, 872, 143, 259, 251, 320, 372, 222, 75); speech about 455 s; total **about 545 s**, 25 s under the 570 s cap. Feedback speech about 18.9 s and 28.0 s.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence (the fence row stays); scene 3's last sentence.
 
@@ -200,7 +203,7 @@ Stage plan (approximate seconds):
 | 100 to 135 s | 3 | The trapezium check |
 | 135 to 195 s | 4 | The back fence and the perimeter |
 | 195 to 270 s | 5 | The paddock in hectares |
-| 270 to 305 s | 6 | Good and bad cuts |
+| 270 to 305 s | 6 | The diagonal check and the slanted-edge slip |
 | 305 to 320 s | 7 | Framed memory card |
 | 315 to 425 s | 8 to 11 | Question cards and countdowns, then feedback |
 | 425 to 445 s | 12 | The cereal box |
@@ -235,7 +238,7 @@ No new plate. All three plates exist and were viewed.
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with exact arithmetic.
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
-3. Confirm the paddock plan's coordinates produce the stated lengths and heights, and that "areas by splitting into shapes" appears as Year 12 r07 quotes it.
+3. Confirm the paddock plan's coordinates produce the stated lengths and heights (apex 40 m from the left, Revision 2 label), that scene 6's diagonal check gives 300 + 400 = 700 with the stated perpendicular heights, and that "areas by splitting into shapes" appears as Year 12 r07 quotes it.
 4. Confirm the spoken forms match the screen.
 5. Confirm both attempts carry every demand and show no answer.
 6. Confirm scene 1 opens on a06's final frame exactly and scene 12 matches a08's boundary.
@@ -263,6 +266,15 @@ Builds on: Pythagoras' Theorem: Finding a Missing Side. Next: Surface Area of Pr
 ## Open decisions
 
 - None beyond the strand's.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a07-learning-review.md` (1 blocker, 1 should fix, 1 note). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **B1 (scene 6's "cut that doesn't help" was false): resolved by root's ruling 3.** The diagonal is now a third check: "Any cut works, as long as every piece gets a base and a perpendicular height you can read or work out. Try a diagonal cut, corner to corner, as a third check." One triangle has its right angle at the front: ½ × 20 × 30 = 300 m². The other has the 40 m side as base and the block's 20 m width, measured at right angles to that side, as its height: ½ × 40 × 20 = 400 m². "Seven hundred again." The crossed slip is kept as "a slanted edge used as a height": "½ × 22.36 × 40" (caption "a slanted edge isn't a height"). Scene 6 ends on "Cuts at right angles to a side make the heights easiest to see", then the L-shaped block as before. The hand tag "no known height" is replaced by "third check" and "find the perpendicular height". Decisions, mistakes, misconceptions, the surprise, Numbers used, Numbers to verify and Codex brief item 3 updated; values rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures). Key note 2 ("Cut at right angles so every piece has a known base and height") stays as advice.
+- **SF1 (paddock apex not given): applied.** Scene 5 says "The apex is forty metres in from the left, so the right-hand piece is a hundred and twenty minus forty, eighty metres wide", with labels "40 m" and "120 − 40 = 80 m" on the plan; the two Pythagoras rows write one at a time on "nine" and "one".
+- **N1 (feedback 2, 28 s):** within range, each result on its own cue; no change.
+- Narration 6,054 characters (was 5,697), about 545 s with holds.
 
 ## Review notes
 

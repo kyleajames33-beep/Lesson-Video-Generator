@@ -1,8 +1,8 @@
 # Maths S11 M04: What does buying on terms cost, and which way of paying suits a purchase? A deposit plus repayments, the extra over the cash price, four methods totalled the same way, and a justified choice for the buyer (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m03.md` (Revision 1, this batch), Year 12 `math-s12-i12.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, finding N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 6 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m03.md` (Revision 1, this batch), Year 12 `math-s12-i12.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, finding N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 6 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,603 characters by script (see "Narration length estimate"), 12 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,638 characters by script at Revision 2 (Revision 1: 5,603; see "Narration length estimate"), 12 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: Year 11 Managing money, outline playlist order 31. One video for Standard 1 and Standard 2. Viewers arrive from m03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m04.md`. Route entry: `math-s11-m04` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson04.sa.html` (site L12), cards 1, 4 and 5, WE1 and SAQ 3 used; lay-by added (MSY-04). Visual system: maths studio kit; the television (existing) and a new fridge plate (`ms11-fridge-v1.png`, briefed below); the hatchback (existing) for the final frame; the total bars, comparison table, decision path and boards coded.
 
@@ -46,7 +46,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (a) 1600 × 0.20 = 320; 18 × 78 = 1404; 320 + 1404 = 1724; 1724 − 1600 = 124; 124 ÷ 1600 = 0.0775; 124 ÷ 1724 = 0.0719 → 7.2%; slips 1404 and 320 + 1600 = 1920.
   (b) Lay-by 1600 + 10 = 1610; 10 ÷ 1600 = 0.625%. Buy now, pay later 8 × 200 = 1600; 4 × 8 = 32; 1632; 32 ÷ 1600 = 2%.
   (c) Counting: 2 years monthly = 24; 3 years fortnightly = 78.
-  (d) Buyer B: $200 a fortnight; lay-by paid off in 8 fortnights (about 4 months), $10 fee.
+  (d) Buyer B (Revision 2): $200 today is the first lay-by payment, then $200 a fortnight; 200 + 7 × 200 = 1600, so 7 more fortnights, 14 weeks, about 3.2 months ("about three months"); $10 fee.
   (e) A1: 1400 × 0.10 = 140; 24 × 58 = 1392; 1532; 132; 132 ÷ 1400 = 0.0943 → 9.4%. A2: 1400 ÷ 10 = 140; 5 × 7 = 35; 1435; 1532 − 1435 = 97.
   (f) Pronunciations: "sixteen hundred dollars"; "seventeen hundred and twenty-four dollars"; "lay-by" as "lay by".
 
@@ -70,7 +70,7 @@ Visual: opens on m03's final frame exactly. On "Cash" the "cash" line rings blue
 Visual: stage change (simulation 1): the television (420 px) at the top left. Centre-left: the g01 board: task strip "Television: cash price $1600. Terms: 20% deposit, then 18 monthly repayments of $78. Find the total cost."; givens card "cash price $1600" (blue), "deposit 20%" (amber), "18 × $78" (teal). Centre-right: the total bar builder. On "a first payment" hand tag "a first payment". On "dollars" (first) a blue slice "deposit $320" drops at the base of the bar, row "deposit = 1600 × 0.20 = $320". On "eighteen of them" teal blocks stack one by one, counter "1 … 18", hand tag "18 of them"; on "dollars" (second) row "repayments = 18 × 78 = $1404". On "dollars" (third) row "total = 320 + 1404 = $1724" (52 px), framed green; a dashed line "cash price $1600" crosses the bar. On "eight" grey chip "2 years monthly = 24; 3 years fortnightly = 78 (e01: 26 a year)", hand tag "count them". On "extra" a red slip "1600 + 320 = $1920" writes and is crossed (caption "the deposit is part of the total").
 
 ### 3. the extra, on the cash price
-> So how much extra does terms cost? Take the cash price away from the total. Seventeen twenty-four minus sixteen hundred is a hundred and twenty-four dollars **extra**. The seller doesn't call it interest. It's built into the repayments, so the only way to see it is to add everything up. Why would anyone pay more? Because you take the TV home after paying only three hundred and twenty dollars, and the seller waits for the rest. The extra is the price of that **wait**. As a percentage, measure it on the cash price, the price you'd pay **today**. A hundred and twenty-four divided by sixteen hundred is seven point seven five per **cent**. Dividing by the total, seventeen twenty-four, gives about seven point two per cent, which makes the deal look **better** than it is.
+> So how much extra does terms cost? Take the cash price away from the total. Seventeen twenty-four minus sixteen hundred is a hundred and twenty-four dollars **extra**. Whatever the seller calls it, the extra is built into the repayments, so the only way to see it is to add everything up. Why would anyone pay more? Because you take the TV home after paying only three hundred and twenty dollars, and the seller waits for the rest. The extra is the price of that **wait**. As a percentage, measure it on the cash price, the price you'd pay **today**. A hundred and twenty-four divided by sixteen hundred is seven point seven five per **cent**. Dividing by the total, seventeen twenty-four, gives about seven point two per cent, which makes the deal look **better** than it is.
 
 Visual: the bar stays at the right; the part above the dashed line shades violet "$124". Rows (52 px): on "extra" "extra = 1724 − 1600 = $124" (violet), framed green. On "built into the repayments" a soft violet tint runs through the 18 teal blocks, grey chip "the extra hides in the repayments". On "wait" hand tag "the price of the wait". On "today" hand tag "on the cash price", grey chip "m01: divide by where you started". On "cent" row "124 ÷ 1600 × 100% = 7.75%" (amber), framed green. On "better" a red slip "124 ÷ 1724 × 100% ≈ 7.2%" writes and is crossed (caption "on the cash price").
 
@@ -80,9 +80,9 @@ Visual: the bar stays at the right; the part above the dashed line shades violet
 Visual: stage change (simulation 2): four bars at the same scale, labelled under each "cash", "lay-by", "buy now, pay later", "terms"; a dashed line at $1600 across all four. On "sixteen hundred" (first) the cash bar builds as one blue block "$1600". On "ten" the lay-by bar builds with a violet cap "+$10" (grey chip "example fee"). On "two" the buy now, pay later bar builds from 8 teal blocks "$200" plus four violet "$8" stamps (grey chip "m03: total = price + fees"), cap "+$32". On "four" the terms bar slides in from scene 2, cap "+$124". On "Put them in order" the bars slide into rank order (shortest left), totals above them (40 px): "$1600", "$1610", "$1632", "$1724". On "total" grey repayment labels float above each bar ("$1600 once", "$1600 in instalments", "$200 a fortnight", "$78 a month"); the "$78" lands over the tallest bar and rings amber, hand tag "smallest repayment, biggest total". On "TV" row "1724 − 1632 = $92 more on terms" (framed green), hand tag "same way for all four".
 
 ### 5. which way suits the buyer?
-> But cheapest isn't automatically best. The best method depends on the buyer, so ask three questions. Can you pay cash now? Can you meet every repayment? And how urgent is it? Buyer one has seventeen hundred dollars saved. Cash is available, and it's a hundred and twenty-four dollars cheaper than terms, so cash suits **her**. Buyer two has two hundred dollars, and can put aside two hundred a fortnight. The old TV still works, so it isn't urgent. Lay-by suits him. He pays two hundred a fortnight, collects the TV in about four months, and pays just ten dollars extra, instead of a hundred and twenty-four on **terms**. And if a buyer can't meet every repayment on any plan, the honest answer is to wait and save first. A good answer names the buyer's situation, and quotes the **numbers**.
+> But cheapest isn't automatically best. The best method depends on the buyer, so ask three questions. Can you pay cash now? Can you meet every repayment? And how urgent is it? Buyer one has seventeen hundred dollars saved. Cash is available, and it's a hundred and twenty-four dollars cheaper than terms, so cash suits **her**. Buyer two has two hundred dollars, and can put aside two hundred a fortnight. The old TV still works, so it isn't urgent. Lay-by suits him. He pays two hundred today and two hundred a fortnight after that, collects the TV in about three months, and pays just ten dollars extra, instead of a hundred and twenty-four on **terms**. And if a buyer can't meet every repayment on any plan, the honest answer is to wait and save first. A good answer names the buyer's situation, and quotes the **numbers**.
 
-Visual: stage change (simulation 3): the decision path across the frame, three gates (40 px labels): "cash now?", "every repayment affordable?", "how urgent?". The four ranked bars shrink to a strip at the top. On "Buyer one" a token "Buyer 1: $1700 saved" travels: gate 1 lights green "yes"; the token lands on "cash"; on "her" a sentence card (green outline) "Cash: $1600, $124 less than terms." On "Buyer two" a second token "Buyer 2: $200 now, $200 a fortnight": gate 1 lights red "no"; gate 2 green "$200 a fortnight fits"; gate 3 grey "not urgent"; the token lands on "lay-by"; on "terms" a sentence card "Lay-by: $1610, collected in about 4 months, $114 less than terms." On "numbers" hand tag "say the numbers".
+Visual: stage change (simulation 3): the decision path across the frame, three gates (40 px labels): "cash now?", "every repayment affordable?", "how urgent?". The four ranked bars shrink to a strip at the top. On "Buyer one" a token "Buyer 1: $1700 saved" travels: gate 1 lights green "yes"; the token lands on "cash"; on "her" a sentence card (green outline) "Cash: $1600, $124 less than terms." On "Buyer two" a second token "Buyer 2: $200 now, $200 a fortnight": gate 1 lights red "no"; gate 2 green "$200 a fortnight fits"; gate 3 grey "not urgent"; the token lands on "lay-by"; on "today" a small token card under it "200 now + 7 × 200 = $1600: 14 weeks" (blue, 36 px); on "terms" a sentence card "Lay-by: $1610, collected in about 3 months, $114 less than terms." On "numbers" hand tag "say the numbers".
 
 ### 6. memory aid
 > Here's the summary. Add every dollar that leaves your hand, then compare the totals. On terms, that's the deposit plus every repayment. A smaller repayment is not a smaller total. Then choose the method that suits the **buyer**.
@@ -102,7 +102,7 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: on "dollars" "140 + 24
 ### 9. attempt 2 (countdown, 10 seconds)
 > Last one. The same fridge can be bought with buy now, pay later. That's ten fortnightly instalments of a hundred and forty dollars, and a seven-dollar account fee for each month money is owed. The plan runs for five months. Maya's fridge has broken, and she needs a new one this week. She has five hundred dollars saved, and can put aside a hundred and forty dollars a fortnight. Find the total cost with buy now, pay later. Then justify which method best suits Maya, using your figures. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "The fridge in Question 1 can also be bought with buy now, pay later: 10 fortnightly instalments of $140 and a $7 account fee for each month money is owed (the plan runs for 5 months). Maya's fridge has broken and she needs a new one this week. She has $500 saved and can put aside $140 a fortnight. (a) Find the total cost with buy now, pay later. (b) Justify which method best suits Maya, using your figures." Beside it, a grey reminder "terms total: $1532 (Question 1)". Picture slot: the fridge (260 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "The fridge in Question 1 can also be bought with buy now, pay later: 10 fortnightly instalments of $140 and a $7 account fee for each month money is owed (the plan runs for 5 months). Maya's fridge has broken and she needs a new one this week. She has $500 saved and can put aside $140 a fortnight. (a) Find the total cost with buy now, pay later. (b) Justify which method best suits Maya, using your figures." Beside it, a grey reminder "terms total: $1532 (Question 1)" and a small grey chip "methods: cash, lay-by, buy now pay later, terms" (Revision 2). Picture slot: the fridge (260 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 10. feedback 2 (brief)
 > The total is fourteen hundred plus five lots of seven, fourteen hundred and thirty-five **dollars**. Maya can't pay cash, and she can't wait. Buy now, pay later costs ninety-seven dollars less than terms, and its hundred and forty dollar payments match what she saves each **fortnight**, as long as none is missed. Choosing terms just because today's deposit is smallest is the **slip**.
@@ -154,7 +154,7 @@ Model answer: (a) 1400 + 5 × 7 = $1435. (b) Maya cannot pay the $1400 cash pric
 | Terms | 320; 1404; 1724; slip 1920 | 2 |
 | Extra | 124; 7.75%; slip 7.2% | 3 |
 | Methods | 1600; 1610; 1632; 1724; 92 | 4 |
-| Buyers | $1700 saved; $124 less; $200 a fortnight; about 4 months; $10; $114 less | 5 |
+| Buyers | $1700 saved; $124 less; $200 now + 7 × $200 = $1600, 14 weeks, about 3 months; $10; $114 less | 5 |
 | Counting | 24; 78 | 2 |
 | A1 | 140; 1392; 1532; 132; 9.4% | 7, 8 |
 | A2 | 140; 35; 1435; 97 | 9, 10 |
@@ -166,7 +166,7 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 - 1600 × 0.20 = 320; 18 × 78 = 1404; 320 + 1404 = 1724; 1600 + 320 = 1920 (slip).
 - 1724 − 1600 = 124; 124 ÷ 1600 = 7.75%; 124 ÷ 1724 = 7.19% → 7.2% (slip).
 - 1600 + 10 = 1610; 8 × 200 = 1600; 4 × 8 = 32; 1632; 1724 − 1632 = 92; 1724 − 1610 = 114.
-- 2 × 12 = 24; 3 × 26 = 78. Lay-by at $200 a fortnight: 1600 ÷ 200 = 8 fortnights (16 weeks, about 4 months).
+- 2 × 12 = 24; 3 × 26 = 78. Lay-by (Revision 2): 200 now + 7 × 200 = 1600; 7 fortnights = 14 weeks; 14 × 7 = 98 days, about 3.2 months ("about three months").
 - 1400 × 0.10 = 140; 24 × 58 = 1392; 1532; 132; 132 ÷ 1400 = 9.43% → 9.4%.
 - 1400 ÷ 10 = 140; 5 × 7 = 35; 1435; 1532 − 1435 = 97.
 
@@ -181,7 +181,9 @@ Counted by script (lines starting "> " inside each `### N.` scene, joined with a
 
 At 13.3 characters per second the speech is about 421 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the bar builder (2), the four bars (4) and the decision path (5), about 22 s; the key-notes scene adds about 39 s beyond its line. Total **about 508 s**, 62 s under the 570 s cap.
 
-Reserve trims if the voiced take runs long: scene 3's "The seller doesn't call it interest." sentence pair (the tint shows it); scene 4's last sentence.
+Revision 2 (24 Nov 2026, same script): **5,638 characters**, 12 scene headings (per scene: 525, 726, 756, 717, 814, 224, 295, 305, 509, 375, 306, 75); speech about 424 s; total **about 511 s**, 59 s under the 570 s cap. Feedback speech about 22.9 s and 28.2 s.
+
+Reserve trims if the voiced take runs long: scene 3's "Whatever the seller calls it" sentence (the tint shows it); scene 4's last sentence.
 
 ## Scene list and build ids
 
@@ -268,6 +270,17 @@ Builds on: Buy Now, Pay Later: What It Really Costs. Next: Buying a Car: Stamp D
 - **1. Year 12 i12's card.** This video's card ("Add every dollar, then compare totals") comes first in the course. i12's own card ("Compare the total paid, not the repayment") can stay as its continuation; root may prefer i12 to mark it as a Year 11 recall in a grey chip.
 - **2. Lay-by fee.** Example $10 pending Codex's source (step 3).
 - **3. The fridge plate.** New; one plate for two attempts. Alternative: the television in both attempts (loses the urgency contrast).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m04-learning-review.md` (0 blockers, 1 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (lay-by timing): applied (root ruling 6).** Buyer two's $200 today is his first lay-by payment: "He pays two hundred today and two hundred a fortnight after that, collects the TV in about three months". A token card shows "200 now + 7 × 200 = $1600: 14 weeks"; the sentence card reads "collected in about 3 months". Author note (d), Numbers used and Numbers to verify updated (14 weeks = 98 days, about 3.2 months).
+- **N1 ("doesn't call it interest"): applied.** Scene 3 now says "Whatever the seller calls it, the extra is built into the repayments, so the only way to see it is to add everything up." The reserve trim names the new sentence.
+- **N2 (A2's methods not on the card): applied.** A grey chip "methods: cash, lay-by, buy now pay later, terms" sits beside the terms reminder during the countdown.
+- **N3 (fridge plate):** still needed before build (design status open question 5); no design change.
+- Feedback rows already show one result per cue (feedback 2's sentence card is the justification, one stage); no change.
+- Narration 5,638 characters (was 5,603), about 511 s with holds.
 
 ## Review notes
 

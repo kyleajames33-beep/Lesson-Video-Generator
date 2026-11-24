@@ -1,8 +1,8 @@
 # Maths S11 A09: How do volume and capacity work for prisms and cylinders? Volume against surface area, the area of the end times the length, triangular, circular and trapezium ends, a hollow pipe, and capacity in litres and kilolitres (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a08.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a08.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,672 characters by script (see "Narration length estimate"), 13 scene headings, about 516 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,585 characters by script at Revision 2 (Revision 1: 5,672; see "Narration length estimate"), 13 scene headings, about 509 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: tenth video of the Year 11 Applications of measurement strand, outline playlist order 45. One video for Standard 1 and Standard 2. Viewers arrive from a08's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a09.md`. Route entry: `math-s11-a09` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson08.sa.html` (V = Ah, WE1 to WE3, the sloping pool hook, Q1, Q2). Visual system: maths studio kit; the water tank, cereal box, entrance ramp and pool cutaway plates (all existing); the slice stack, pipe and boards coded.
 
@@ -27,13 +27,13 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Simulations (standard item 3).**
   1. **Slice stack** (scenes 2 to 5): the end shape copies along the length with a live volume counter; switching the end shape (rectangle, triangle, circle, trapezium) reruns the stack.
   2. **Tank fill** (scene 4): the tank's olive level rises with counters m³, kL and L together.
-  3. **Pool tilt** (scene 5): the sloping pool's water surface tilts flat to the average depth, 1.8 m, while its volume readout stays 450 m³ (the surprise).
+  3. **Pool tilt** (scene 5): the sloping pool's water surface tilts flat to the average depth, 1.5 m, while its volume readout stays 48 m³ (the surprise).
 - **Colour roles (fixed a01 to a11).** Given lengths **blue**; the ½ and π **amber**; end areas **teal**; volume and capacity **olive**; removed parts (the pipe's hole) **violet**; answer **green**; mistake **red**.
 - **Large type, handwritten voice.** Labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "the space inside", "same shape all the way", "area of the end × length", "which way does it run?", "halve the diameter", "average depth", "outer minus inner". At most two live at once.
 - **Stage changes (standard item 2).** The tank (1); the cereal box sliced (2); the ramp (3); the tank filled (4); the sloping pool (5); the concrete pipe (6); framed card (7); question cards (8 to 11); the cone frame (12); key notes (13).
-- **Worked examples (g01 order).** Scene 2: "A = 20 × 8 = 160 cm²", "V = 160 × 30 = 4800 cm³ = 4.8 L" (framed green). Scene 3: "A = ½ × 5.6 × 0.4 = 1.12 m²", "V = 1.12 × 1.5 = 1.68 m³" (framed green); crossed "5.6 × 0.4 × 1.5 = 3.36 m³" (caption "the end is a triangle: ½"). Scene 4: "r = 1.8 ÷ 2 = 0.9 m", "V = π × 0.9² × 2 = 1.62π = 5.09 m³", "= 5.09 kL ≈ 5089 L" (framed green). Scene 5: "A = ½ × (1.2 + 2.4) × 25 = 45 m²", "V = 45 × 10 = 450 m³ = 450 kL" (framed green). Scene 6: "A = π(0.5² − 0.4²) = 0.09π", "V = 0.09π × 2 = 0.18π = 0.57 m³" (framed green).
+- **Worked examples (g01 order).** Scene 2: "A = 20 × 8 = 160 cm²", "V = 160 × 30 = 4800 cm³ = 4.8 L" (framed green). Scene 3: "A = ½ × 5.6 × 0.4 = 1.12 m²", "V = 1.12 × 1.5 = 1.68 m³" (framed green); crossed "5.6 × 0.4 × 1.5 = 3.36 m³" (caption "the end is a triangle: ½"). Scene 4: "r = 1.8 ÷ 2 = 0.9 m", "V = π × 0.9² × 2 = 1.62π = 5.09 m³", "= 5.09 kL ≈ 5089 L" (framed green). Scene 5 (Revision 2): "A = ½ × (1 + 2) × 8 = 12 m²", "V = 12 × 4 = 48 m³ = 48 kL" (framed green). Scene 6: "A = π(0.5² − 0.4²) = 0.09π", "V = 0.09π × 2 = 0.18π = 0.57 m³" (framed green).
 - **Memory aid.** Framed card: "Volume = area of the end × length." Key line: "V = Ah. Prism: any end shape. Cylinder: V = πr²h. Then 1 m³ = 1 kL; 1000 cm³ = 1 L."
-- **Visual surprise.** The sloping pool's water tilts level at 1.8 m and the volume doesn't change: a03's flat pool held exactly the same (scene 5).
+- **Visual surprise.** The sloping pool's water tilts level at 1.5 m and the volume doesn't change: a03's flat pool held exactly the same (scene 5).
 - **Plain meanings at first use.** Volume ("the space inside, in cubic units"); cross-section ("the shape you see if you slice straight across"); prism (a08's, recalled: "the same shape all the way through").
 - **Attempts.** A1 (pack question 1): wall 11.7 m³, $2574; crossed "23.4 m³" (caption "trapezium: don't forget the ½"). A2 (pack question 2): 13.57 kL; crossed "r = 2.4: 54.29 kL" (caption "halve the diameter").
 - **Mistake scene:** none separate. The missing ½ (3, A1 crossed); the diameter as radius (4, said; A2 crossed); mixed units (4, said: "all in metres"); m³ left unconverted (4, the counters); the wrong "length" (3, 5, said).
@@ -46,7 +46,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (a) 20 × 8 = 160; 160 × 30 = 4800; 4800 ÷ 1000 = 4.8. (Same box as a08: 30 tall, 20 wide, 8 deep.)
   (b) Ramp (example size, the entrance ramp plate): ½ × 5.6 × 0.4 = 1.12; × 1.5 = 1.68; slip 5.6 × 0.4 × 1.5 = 3.36.
   (c) 0.9² = 0.81; 0.81 × 2 = 1.62; 1.62π = 5.0894; 5.09 kL; 5089 L.
-  (d) ½ × 3.6 × 25 = 45; 45 × 10 = 450; average depth (1.2 + 2.4) ÷ 2 = 1.8; 25 × 10 × 1.8 = 450 (a03).
+  (d) Revision 2 (8 m by 4 m backyard pool, matching a03): ½ × (1 + 2) × 8 = 12; 12 × 4 = 48; average depth (1 + 2) ÷ 2 = 1.5; 8 × 4 × 1.5 = 48 (a03).
   (e) 0.5² − 0.4² = 0.25 − 0.16 = 0.09; 0.09π × 2 = 0.18π = 0.5655 → 0.57.
   (f) A1: ½ × 1.3 × 1.2 = 0.78; × 15 = 11.7; × 220 = 2574; slip 1.3 × 1.2 × 15 = 23.4. A2: 1.2² = 1.44; × 3 = 4.32; 4.32π = 13.572 → 13.57; slip 2.4² × 3 = 17.28; 17.28π = 54.287 → 54.29.
   (g) Concrete $220 per m³: the site's example (lesson08 Q1); labelled "example price"; Codex finds a dated NSW source or reports.
@@ -81,9 +81,9 @@ Visual: stage change (simulation 1): the entrance ramp `ma11-entrance-ramp-v1.pn
 Visual: stage change (simulation 2): the tank (600 px tall) at the left; a coded cylinder at the right with a circle end "r = 0.9 m" and height "2 m" (blue). Row "r = 1.8 ÷ 2 = 0.9 m", hand tag "halve the diameter". On "circle's area" the circle slice fills teal "π × 0.9²"; it stacks up the height (simulation 1). On "metres" row "V = π × 0.9² × 2 = 1.62π = 5.09 m³" (framed green). On "kilolitre" the tank's olive level rises with counters "m³ 0 → 5.09", "kL 0 → 5.09", "L 0 → 5089"; on "litres" row "= 5.09 kL ≈ 5089 L" (framed green). On "V equals pi r squared h" formula strip "V = πr²h". On "multiply" hand tag "all in metres".
 
 ### 5. a pool on its side
-> Here's a backyard pool with a sloping floor. It's twenty-five metres long and ten metres wide, and its depth goes from one point two metres at the shallow end to two point four at the deep end. Look at it from the side. That side view is a trapezium, and it stays the same across the pool's ten metre width. So the end is the trapezium, and the length it runs for is ten. Its area is half of one point two plus two point four, times twenty-five, forty-five square metres. Times ten, four hundred and fifty cubic metres, or four hundred and fifty **kilolitres**. Now here's something neat. Remember the flat pool in an earlier video, one point eight metres deep everywhere? It held four hundred and fifty kilolitres too. That's because one point eight is the average of one point two and two point four. Level the water out, and it's the same **pool**.
+> Here's a backyard pool with a sloping floor. It's eight metres long and four metres wide, and its depth goes from one metre at the shallow end to two metres at the deep end. Look at it from the side. That side view is a trapezium, and it stays the same across the pool's four metre width. So the end is the trapezium, and the length it runs for is four. Its area is half of one plus two, times eight, twelve square metres. Times four, forty-eight cubic metres, or forty-eight **kilolitres**. Now here's something neat. Remember the flat pool in an earlier video, one point five metres deep everywhere? It held forty-eight kilolitres too. That's because one point five is the average of one and two. Level the water out, and it's the same **pool**.
 
-Visual: stage change (simulation 3): the pool cutaway `ma12-pool-cutaway-v1.png` (about 1,200 px wide) with a coded overlay of its side profile: "1.2 m" at the shallow end, "2.4 m" at the deep end, "25 m" along (blue), and a small "10 m" width arrow into the screen. On "That side view is a trapezium" the profile fills teal; grey chip "a05a: trapezium A = ½(a + b)h". Rows: "A = ½ × (1.2 + 2.4) × 25 = 45 m²"; on "kilolitres" "V = 45 × 10 = 450 m³ = 450 kL" (framed green). On "Remember the flat pool" grey chip "a03: 25 × 10 × 1.8 = 450 m³". On "average" the sloping water surface tilts level to a dashed line at "1.8 m", the slivers swapping across, readout "V = 450 m³" unchanged, hand tag "average depth". On "pool" both 450s ring green.
+Visual: stage change (simulation 3): the pool cutaway `ma12-pool-cutaway-v1.png` (about 1,200 px wide) with a coded overlay of its side profile: "1 m" at the shallow end, "2 m" at the deep end, "8 m" along (blue), and a small "4 m" width arrow into the screen (Revision 2: a backyard-sized pool, the same one as a03). On "That side view is a trapezium" the profile fills teal; grey chip "a05a: trapezium A = ½(a + b)h". Rows: "A = ½ × (1 + 2) × 8 = 12 m²"; on "kilolitres" "V = 12 × 4 = 48 m³ = 48 kL" (framed green). On "Remember the flat pool" grey chip "a03: 8 × 4 × 1.5 = 48 m³". On "average" the sloping water surface tilts level to a dashed line at "1.5 m", the slivers swapping across, readout "V = 48 m³" unchanged, hand tag "average depth". On "pool" both 48s ring green.
 
 ### 6. a hollow pipe
 > Composite solids work by adding or taking away, just like composite shapes. A concrete drainage pipe is a cylinder with a smaller cylinder missing from the middle. Its outer radius is nought point five metres, its hole has a radius of nought point four, and it's two metres long. Its end is a ring, the outer circle minus the inner circle. That's pi times nought point five squared minus nought point four squared, nought point nought nine pi. Times the length, two, gives nought point one eight pi, about nought point five seven cubic metres of **concrete**. Same rule, the area of the end times the **length**.
@@ -101,9 +101,9 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: four slice stacks
 Visual: `QuestionCard`, 40 px: "A concrete retaining wall has a trapezium-shaped cross-section with parallel sides 0.5 m and 0.8 m and a perpendicular height of 1.2 m. The wall is 15 m long. (a) Find the volume of concrete. (b) Concrete costs $220 per cubic metre (example price). Find the cost." Picture slot: a coded wall diagram (HSC style) with its trapezium end labelled. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
-> The end's area is half of nought point five plus nought point eight, times one point two, nought point seven eight square metres. Times fifteen, that's eleven point seven cubic **metres**, and at two hundred and twenty dollars each, two thousand five hundred and seventy-four **dollars**. Leaving out the half doubles it, and that's the **slip**.
+> The end's area is half of nought point five plus nought point eight, times one point two, nought point seven eight square **metres**. Times the fifteen metre length, that's eleven point seven cubic **metres**, and at two hundred and twenty dollars each, two thousand five hundred and seventy-four **dollars**. Leaving out the half doubles it, and that's the **slip**.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: "A = ½ × (0.5 + 0.8) × 1.2 = 0.78 m²"; on "metres" "V = 0.78 × 15 = 11.7 m³" (framed green); on "dollars" "11.7 × $220 = $2574" (framed green). On "slip" a red slip "(0.5 + 0.8) × 1.2 × 15 = 23.4 m³" writes and is crossed (caption "trapezium: don't forget the ½"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px: on "metres" (first) "A = ½ × (0.5 + 0.8) × 1.2 = 0.78 m²"; on "metres" (second) "V = A × length = 0.78 × 15 = 11.7 m³" (framed green; Revision 2 writes "length", not h, so 1.2 is not used twice); on "dollars" "11.7 × $220 = $2574" (framed green). On "slip" a red slip "(0.5 + 0.8) × 1.2 × 15 = 23.4 m³" writes and is crossed (caption "trapezium: don't forget the ½"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A cylindrical rainwater tank has an internal diameter of two point four metres and a height of three metres. Find its capacity in kilolitres, correct to two decimal places. Pause here to answer.
@@ -111,9 +111,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: "A = ½ × (0.5 + 0.8)
 Visual: `QuestionCard`, 40 px: "A cylindrical rainwater tank has an internal diameter of 2.4 m and a height of 3 m. Find its capacity in kilolitres, correct to 2 decimal places." Picture slot: the water tank plate (260 px) with "2.4 m" and "3 m". Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> The radius is one point two. Pi times one point two squared, times three, is four point three two pi, about thirteen point five seven cubic metres. That's thirteen point five seven **kilolitres**. Using two point four as the radius gives over fifty-four, and that's the **slip**.
+> The radius is one point **two**. Pi times one point two squared, times three, is four point three two pi, about thirteen point five seven cubic metres. That's thirteen point five seven **kilolitres**. Using two point four as the radius gives over fifty-four, and that's the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: "r = 2.4 ÷ 2 = 1.2 m"; on "kilolitres" "V = π × 1.2² × 3 = 4.32π = 13.57 m³ = 13.57 kL" (framed green). On "slip" a red slip "r = 2.4: 17.28π = 54.29 kL" writes and is crossed (caption "halve the diameter"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: on "two" "r = 2.4 ÷ 2 = 1.2 m"; on "kilolitres" "V = π × 1.2² × 3 = 4.32π = 13.57 m³ = 13.57 kL" (framed green). On "slip" a red slip "r = 2.4: 17.28π = 54.29 kL" writes and is crossed (caption "halve the diameter"). Hold about 1 s.
 
 ### 12. handoff
 > So prisms and cylinders are the end times the length. But some solids come to a point, so the end doesn't stay the same. Here's an ice-cream cone, and a cylinder with exactly the same radius and height. How many cones of water would it take to fill the cylinder? That's **next**.
@@ -160,7 +160,7 @@ Model answer: r = 1.2; V = π × 1.44 × 3 = 13.57 m³ = 13.57 kL. Classic mista
 | Cereal box | 160 cm²; 4800 cm³ = 4.8 L; 2000 cm² | 2 |
 | Ramp | 1.12 m²; 1.68 m³; slip 3.36 | 3 |
 | Tank | 0.9 m; 1.62π = 5.09 m³ = 5.09 kL ≈ 5089 L | 4 |
-| Pool | 45 m²; 450 m³ = 450 kL; average 1.8 m | 5 |
+| Pool (Revision 2) | 12 m²; 48 m³ = 48 kL; average 1.5 m | 5 |
 | Pipe | 0.09π; 0.18π = 0.57 m³ | 6 |
 | A1 | 0.78 m²; 11.7 m³; $2574; slip 23.4 | 8, 9 |
 | A2 | 1.2 m; 13.57 kL; slip 54.29 | 10, 11 |
@@ -172,7 +172,7 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 - 20 × 8 = 160; 160 × 30 = 4800; 4800 ÷ 1000 = 4.8.
 - ½ × 5.6 × 0.4 = 1.12; 1.12 × 1.5 = 1.68; 5.6 × 0.4 × 1.5 = 3.36.
 - 1.8 ÷ 2 = 0.9; 0.9² × 2 = 1.62; 1.62π = 5.089; × 1000 = 5089.
-- ½ × (1.2 + 2.4) × 25 = 45; 45 × 10 = 450; (1.2 + 2.4) ÷ 2 = 1.8.
+- Pool (Revision 2; rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): ½ × (1 + 2) × 8 = 12; 12 × 4 = 48; (1 + 2) ÷ 2 = 1.5; 8 × 4 × 1.5 = 48.
 - 0.5² − 0.4² = 0.09; 0.09 × 2 = 0.18; 0.18π = 0.565.
 - ½ × 1.3 × 1.2 = 0.78; 0.78 × 15 = 11.7; 11.7 × 220 = 2574; 1.3 × 1.2 × 15 = 23.4.
 - 1.2² × 3 = 4.32; 4.32π = 13.572; 2.4² × 3 = 17.28; 17.28π = 54.287.
@@ -187,6 +187,8 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,672 characters**, 13 scene headings. Characters per scene (1 to 13): 422, 763, 677, 607, 843, 604, 191, 394, 334, 204, 271, 275, 75. Feedback speech about 25.1 s and 20.4 s.
 
 At 13.3 characters per second the speech is about 426 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the slice stacks (2 to 6), the tank fill (4) and the pool levelling (5), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 516 s**, 54 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,585 characters**, 13 scene headings (per scene: 422, 763, 677, 607, 739, 604, 191, 394, 351, 204, 271, 275, 75); speech about 420 s; total **about 509 s**, 61 s under the 570 s cap. Feedback speech about 26.4 s and 20.4 s.
 
 Reserve trims if the voiced take runs long: scene 1's "A garden hose" sentence; scene 4's last sentence.
 
@@ -229,7 +231,7 @@ Uses: `PlateImg`, `HandTag`, the multi-unit fill counter (a01), the g01 `Working
 
 Additions (kit-needs row a09):
 1. **`SliceStack`**: an end shape (rectangle, triangle, circle, trapezium, ring) copied as thin slices along a length with a live volume counter; a "shrinking" mode for a10's cone (each slice smaller). Check: 160 × 30 → 4800; ring 0.09π × 2 → 0.18π.
-2. **Level-out**: a sloping water surface in a profile that tilts to its average level while slivers swap, with a fixed volume readout. Check: 1.2 to 2.4 levels at 1.8; 450 m³ unchanged.
+2. **Level-out**: a sloping water surface in a profile that tilts to its average level while slivers swap, with a fixed volume readout. Check: 1 to 2 levels at 1.5; 48 m³ unchanged.
 
 ## Codex asset brief
 
@@ -268,6 +270,16 @@ Builds on: Surface Area of Prisms, Cylinders and Spheres. Next: Volume of Pyrami
 ## Open decisions
 
 - **1. Concrete price.** The site's $220 per m³ is kept as an example; Codex sources or reports.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a09-learning-review.md` (0 blockers, 0 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **N1 (pool size, with a03 SF1): applied (root ruling 6).** The sloping pool is now the same backyard-sized pool as a03: 8 m long, 4 m wide, depth 1 m to 2 m. End area ½ × (1 + 2) × 8 = 12 m²; × 4 = 48 m³ = 48 kL. The callback still works: a03's flat pool, 1.5 m deep everywhere, also holds 48 kL, and 1.5 is the average of 1 and 2. The level-out picture, simulation 3, the surprise, author note (d), worked examples, Numbers used, Numbers to verify and the kit check are updated; rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures).
+- **N2 (h used twice in A1): applied.** Feedback 1 says "Times the fifteen metre length" and writes "V = A × length = 0.78 × 15 = 11.7 m³"; the area row now writes on its own cue ("metres", first).
+- **N3 (concrete price):** no change; Codex's dated source request stays (author note g).
+- **Feedback rows (root ruling 7):** feedback 2's radius row now writes on "two".
+- Narration 5,585 characters (was 5,672), about 509 s with holds.
 
 ## Review notes
 

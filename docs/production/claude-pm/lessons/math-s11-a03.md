@@ -1,8 +1,8 @@
 # Maths S11 A03: How do cubic centimetres and cubic metres become millilitres, litres and kilolitres? Capacity as what a container holds, a 1 cm cube holding 1 mL, a 10 cm cube holding a litre, a cubic metre holding a kilolitre, and megalitres for pools and dams (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` and `a02.md` (Revision 1, this batch), `math-s11-m07.md` (water billed per kilolitre), the Year 12 design that recalls this video (`math-s12-r08.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` and `a02.md` (Revision 1, this batch), `math-s11-m07.md` (water billed per kilolitre), the Year 12 design that recalls this video (`math-s12-r08.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,542 characters by script (see "Narration length estimate"), 13 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,437 characters by script at Revision 2 (Revision 1: 5,542; see "Narration length estimate"), 13 scene headings, about 500 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: third video of the Year 11 Applications of measurement strand, outline playlist order 39. One video for Standard 1 and Standard 2. Viewers arrive from a02's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a03.md`. Route entry: `math-s11-a03` in `../../programme/maths-standard-route-inputs-11.json`. Site lessons: `year11/applications-of-measurement/lesson01.sa.html` (card 06 bridge, WE3, SA 2) and `lesson08.sa.html` (conversions box). Visual system: maths studio kit; the water jug, pool cutaway and water tank plates (all existing); the fill cubes, bridge ladder, tank and pool outlines coded.
 
@@ -20,7 +20,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 
 - **Anchor: the cube and the jug (a02's final frame).** One question links them: how many little cubes of water fill the jug? The answer comes from one definition (1 cm³ = 1 mL) and a02's cube fill.
 - **Same picture, one size up (recurring model).** A 10 cm cube fills with 1 cm cubes (10 in a row, 100 in a layer, 1000 in the cube) and is one litre. Then a 1 m cube fills with 10 cm cubes, 10 by 10 by 10 = 1000 of them: a thousand litres, one kilolitre. The second fill copies the first exactly, so the student sees why the factor is 1000 again.
-- **Volume and capacity named plainly.** Volume: "how much space something takes up, in cubic units". Capacity: "how much a container holds, in litres". Same space, two kinds of unit. The bridge ladder puts cm³ beside mL and m³ beside kL.
+- **Volume and capacity named plainly.** Volume: "how much space something takes up, in cubic units". Capacity: "how much a container holds, in litres". Same space, two kinds of unit. The bridge ladder puts cm³ beside mL and m³ beside kL, drawn as in a01 with the biggest unit at the top (ML, kL = m³, L, mL = cm³ from top to bottom), arrows down "×", up "÷" (Revision 2, root ruling 5).
 - **Year 12 chip set up word for word (route inputs 11).** Grey chip "1 m³ = 1000 L" with "= 1 kL" written after it (Year 12 r08 recalls "Year 11: 1 m³ = 1000 L").
 - **Water price from m07 (route inputs 11).** "$2.70 per kL (example)" with a grey chip "m07"; one sentence says prices change.
 - **Simulations (standard item 3).**
@@ -30,7 +30,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Colour roles (fixed a01 to a11).** Given lengths **blue**; factor **amber**; volume and capacity **olive** (cubic units darker olive, litres lighter olive); answer **green**; mistake **red**.
 - **Large type, handwritten voice.** Readouts 52 px; bridge ladder 44 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "same space, two units", "10 × 10 × 10", "one litre", "a thousand litres", "a kilolitre", "every m³ is a kL", "÷ 1000, not ÷ 100". At most two live at once.
 - **Stage changes (standard item 2).** The cube and jug (1); the 10 cm cube fill (2); the fish tank (3); the 1 m cube fill (4); the pool and its bill (5); the Olympic pool and the bridge ladder (6); framed card (7); question cards (8 to 11); the phone frame (12); key notes (13).
-- **Worked examples (g01 order).** Scene 3: task strip "A fish tank is 60 cm by 30 cm by 40 cm. How many litres does it hold?"; rows "60 × 30 × 40 = 72 000 cm³", "= 72 000 mL", "72 000 ÷ 1000 = 72 L" (framed green); crossed "72 000 cm³ = 720 L" (caption "÷ 1000, not ÷ 100"). Scene 5: "25 × 10 × 1.8 = 450 m³", "= 450 kL" (framed green), "450 × $2.70 = $1215" (framed green).
+- **Worked examples (g01 order).** Scene 3: task strip "A fish tank is 60 cm by 30 cm by 40 cm. How many litres does it hold?"; rows "60 × 30 × 40 = 72 000 cm³", "= 72 000 mL", "72 000 ÷ 1000 = 72 L" (framed green); crossed "72 000 cm³ = 720 L" (caption "÷ 1000, not ÷ 100"). Scene 5 (Revision 2 backyard pool): "8 × 4 × 1.5 = 48 m³", "= 48 kL" (framed green), "48 × $2.70 = $129.60" (framed green).
 - **Memory aid.** Framed card: "A 1 cm cube holds 1 mL. A 1 m cube holds 1000 L, a kilolitre." Key line: "1 cm³ = 1 mL; 1000 cm³ = 1 L; 1 m³ = 1000 L = 1 kL; 1000 kL = 1 ML."
 - **Visual surprise.** The 1 m cube's fill is the 10 cm cube's fill again, cube for cube, and it reaches a thousand litres (scene 4): a box you could sit in holds as much as a thousand milk cartons.
 - **Plain meanings at first use.** Volume ("how much space something takes up, in cubic units"); capacity ("how much a container holds, in litres"); kilolitre ("a thousand litres"); megalitre ("a thousand kilolitres, a million litres").
@@ -44,7 +44,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Author notes (not learner copy):**
   (a) 10 × 10 × 10 = 1000; 100 × 100 × 100 = 1 000 000; 1 000 000 ÷ 1000 = 1000 L; 1000 ÷ 1000 = 1 kL.
   (b) 60 × 30 × 40 = 72 000; ÷ 1000 = 72; slip ÷ 100 = 720.
-  (c) 25 × 10 × 1.8 = 450; 450 × 2.70 = 1215; 450 ÷ 1000 = 0.45 ML.
+  (c) Revision 2 (a backyard pool sized like one; Revision 1's 25 m by 10 m by 1.8 m was a lap pool): 8 × 4 × 1.5 = 48; 48 × 1000 = 48 000 L; 48 × 2.70 = 129.60; 48 ÷ 1000 = 0.048 ML; hose 48 000 ÷ 20 = 2400 min; 2400 ÷ 60 = 40 h (about 1.7 days); 2500 ÷ 48 = 52.08, "more than fifty". a09 uses the same 8 m by 4 m pool with a floor sloping from 1 m to 2 m (average 1.5 m, the same 48 m³).
   (d) Olympic pool: 50 m × 25 m, minimum depth 2 m (World Aquatics facilities rules; Codex confirms; many are deeper), so at least 2500 m³ = 2.5 ML; said as "at least two and a half megalitres".
   (e) A1: 50 × 20 × 15 = 15 000; ÷ 1000 = 15. A2: 2 × 1.5 × 1.2 = 3.6; 3.6 × 1000 = 3600; 3600 ÷ 20 = 180; 180 ÷ 60 = 3.
   (f) The litre has been defined as exactly 1 dm³ (1000 cm³) since 1964, so 1 mL = 1 cm³ exactly; no learner caveat is needed.
@@ -64,7 +64,7 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): given len
 Visual: opens on a02's final frame exactly (the 1 cm cube, the jug, chip "1 cm³ holds ? mL", chips "Next: volume and capacity", "?"). On "cubic centimetres or cubic metres" two grey chips under the cube "cm³", "m³" (darker olive). On "millilitres, litres and kilolitres" three chips under the jug "mL", "L", "kL" (lighter olive). On "Volume is" grey chip "volume: space taken up (cubic units)"; on "Capacity is" grey chip "capacity: what a container holds (litres)"; hand tag "same space, two units". On "jug" a ghost stream of tiny cubes arcs from the cube toward the jug's mouth. On "kilolitres" heading "Volume and capacity" writes on.
 
 ### 2. a cube of a litre
-> Here's the key fact. A millilitre is defined as the space inside a one centimetre cube. So one cubic centimetre is exactly one **millilitre**. Now build a bigger cube, ten centimetres on each side. A row along the bottom holds ten of the little cubes, a layer holds a hundred, and ten layers hold a **thousand**. That's a thousand cubic centimetres, which is a thousand millilitres, and that's one **litre**. So a box ten centimetres on each side holds exactly a litre of water, about what's in a carton of **milk**. You've seen this bridge before, maybe without noticing. A scooter with a hundred and twenty-five cc engine has cylinders that hold a hundred and twenty-five cubic centimetres, which is a hundred and twenty-five **millilitres**.
+> Here's the key fact. A millilitre is defined as the space inside a one centimetre cube. So one cubic centimetre is exactly one **millilitre**. Now build a bigger cube, ten centimetres on each side. A row along the bottom holds ten of the little cubes, a layer holds a hundred, and ten layers hold a **thousand**. That's a thousand cubic centimetres, which is a thousand millilitres, and that's one **litre**. So a box ten centimetres on each side holds exactly a litre of water, about what's in a carton of **milk**. You've seen this bridge before, maybe without noticing. A scooter can have a hundred and twenty-five cc engine. The cc means cubic centimetres, so that's a hundred and twenty-five **millilitres**.
 
 Visual: stage change (simulation 1): the 1 cm cube (enlarged to 120 px) with "1 cm³" (darker olive) and on "millilitre" a matching label "= 1 mL" (lighter olive), framed green; grey chip "1 cm³ = 1 mL". On "ten centimetres" a coded 10 cm cube (600 px) with "10 cm" on three edges (blue). On "A row" ten little cubes slide along the bottom edge, counter "10"; on "a layer" the row copies back, counter "100"; on "thousand" the layer stacks up ten times, counter "1000", hand tag "10 × 10 × 10". On "litre" row "1000 cm³ = 1000 mL = 1 L" (52 px, framed green), hand tag "one litre", and the full cube tips and pours into the jug, whose coded level rises to a "1 L" mark. On "milk" a small grey chip "about a carton of milk". On "scooter" a grey chip "125 cc = 125 cm³"; on "millilitres" it extends "= 125 mL", hand tag "cc means cm³".
 
@@ -79,14 +79,14 @@ Visual: stage change: a coded fish tank (glass box outline, 900 × 600 px, faint
 Visual: stage change (simulation 2): the 10 cm cube shrinks to a small unit labelled "1 L"; a coded 1 m cube (700 px) with "1 m" on three edges (blue) beside it. On "ten of our litre cubes" ten litre cubes line one edge, counter "10"; then a layer "100", then the cube "1000", hand tag "a thousand litres"; on "litres" row "1 m³ = 1000 L" (52 px), grey chip "1 m³ = 1000 L" (kept for Year 12 r08). On "kilolitre" the row extends "= 1 kL" (framed green), hand tag "a kilolitre". On "sit in" a faint grid of 1000 small carton icons behind the cube. On "kilolitre" (second) a bridge ladder appears at the right: left rungs "cm³", "m³"; right rungs "mL", "L", "kL", "ML"; "=" bridges join "cm³ = mL" and "m³ = kL" (amber), hand tag "every m³ is a kL". On "number" the bridge "m³ = kL" pulses. On "rainwater tank" the water tank `ma11-water-tank-v1.png` (about 420 px tall) slides in with a grey chip "a01: 5 kL"; on "high" a coded box outline "2.5 m × 2 m × 1 m = 5 m³ = 5 kL" draws beside it (framed green).
 
 ### 5. filling a backyard pool
-> A backyard pool is twenty-five metres long, ten metres wide, and one point eight metres deep everywhere. All three are in metres, so multiply. Twenty-five times ten times one point eight is four hundred and fifty cubic metres. Every cubic metre is a kilolitre, so it holds four hundred and fifty **kilolitres**. That's four hundred and fifty thousand litres. Remember the water bill, about two dollars seventy a kilolitre? Prices change, so this is an example. Filling the pool costs four hundred and fifty times two dollars seventy, about twelve hundred and fifteen **dollars**. And with a garden hose running at twenty litres a minute, four hundred and fifty thousand litres would take twenty-two thousand five hundred minutes. That's about fifteen and a half **days**, which is why pools are filled by a water truck.
+> A backyard pool is eight metres long, four metres wide, and one point five metres deep everywhere. All three are in metres, so multiply. Eight times four times one point five is forty-eight cubic metres. Every cubic metre is a kilolitre, so it holds forty-eight **kilolitres**. That's forty-eight thousand litres. Remember the water bill, about two dollars seventy a kilolitre? Prices change, so this is an example. Filling the pool costs forty-eight times two dollars seventy, a hundred and twenty-nine dollars **sixty**. And with a garden hose running at twenty litres a minute, forty-eight thousand litres would take twenty-four hundred minutes. That's forty hours, nearly two **days** of running the hose.
 
-Visual: stage change (simulation 3): the pool cutaway `ma12-pool-cutaway-v1.png` (about 1,100 px wide) with a coded overlay of a flat floor and labels "25 m", "10 m", "1.8 m" (blue); hand tag "all in metres". Rows, 52 px: "25 × 10 × 1.8 = 450 m³"; on "kilolitres" "= 450 kL" (framed green) as an olive level rises in the pool with counters "m³ 0 → 450", "kL 0 → 450", "L 0 → 450 000". On "water bill" grey chip "m07: water $2.70 per kL (example)". On "dollars" a "$" counter runs to "$1215" with the row "450 × $2.70 = $1215" (framed green). On "garden hose" a coded hose line into the pool with a chip "20 L per minute" (olive); on "days" rows "450 000 ÷ 20 = 22 500 min" and "22 500 ÷ 60 = 375 h ≈ 15.6 days" (framed green).
+Visual: stage change (simulation 3): the pool cutaway `ma12-pool-cutaway-v1.png` (about 1,100 px wide) with a coded overlay of a flat floor and labels "8 m", "4 m", "1.5 m" (blue); hand tag "all in metres". Rows, 52 px: "8 × 4 × 1.5 = 48 m³"; on "kilolitres" "= 48 kL" (framed green) as an olive level rises in the pool with counters "m³ 0 → 48", "kL 0 → 48", "L 0 → 48 000". On "water bill" grey chip "m07: water $2.70 per kL (example)". On "sixty" a "$" counter runs to "$129.60" with the row "48 × $2.70 = $129.60" (framed green). On "garden hose" a coded hose line into the pool with a chip "20 L per minute" (olive); on "days" rows "48 000 ÷ 20 = 2400 min" and "2400 ÷ 60 = 40 h ≈ 1.7 days" (framed green).
 
 ### 6. megalitres
-> For really big amounts, a thousand kilolitres is a megalitre, a million litres. Our backyard pool is four hundred and fifty kilolitres, so it's nought point four five of a **megalitre**. An Olympic pool is fifty metres by twenty-five metres, and at least two metres deep. That's at least twenty-five hundred cubic metres, twenty-five hundred kilolitres, or two and a half **megalitres**. And the twelve megalitre farm dam from earlier holds twelve thousand cubic **metres**. So the whole bridge reads like this. Cubic centimetres are millilitres, a thousand of them make a litre, and cubic metres are kilolitres, with a thousand kilolitres in a **megalitre**.
+> For really big amounts, a thousand kilolitres is a megalitre, a million litres. Our backyard pool is forty-eight kilolitres, so it's nought point nought four eight of a **megalitre**. An Olympic pool is fifty metres by twenty-five metres, and at least two metres deep. That's at least twenty-five hundred cubic metres, twenty-five hundred kilolitres, or two and a half **megalitres**, more than fifty of our backyard pools. And the twelve megalitre farm dam from earlier holds twelve thousand cubic **metres**. So the whole bridge reads like this. Cubic centimetres are millilitres, a thousand of them make a litre, and cubic metres are kilolitres, with a thousand kilolitres in a **megalitre**.
 
-Visual: stage change: the bridge ladder grows to full height at the left (44 px). On "megalitre" (first) the "kL → ML" arrow lights "÷ 1000"; row "450 ÷ 1000 = 0.45 ML" (framed green); grey chip "megalitre: a thousand kilolitres". On "Olympic pool" a coded pool outline (lanes, 1,000 × 500 px) with "50 m", "25 m", "at least 2 m" (blue); the backyard pool appears beside it to scale (a small rectangle). On "megalitres" rows "50 × 25 × 2 = 2500 m³ = 2500 kL", "2500 ÷ 1000 = 2.5 ML" (framed green). On "farm dam" a small chip "a01: 12 ML" with the farm dam `ms12-farm-dam-aerial-v1.png` (about 360 px wide); on "metres" row "12 ML = 12 000 kL = 12 000 m³" (framed green). On "So the whole bridge" each bridge rung lights in turn: "cm³ = mL", "1000 cm³ = 1 L", "m³ = kL", and on "megalitre" (last) "1000 kL = 1 ML".
+Visual: stage change: the bridge ladder grows to full height at the left (44 px), biggest unit at the top as in a01 ("ML" at the top, then "kL = m³", "L", "mL = cm³" at the bottom). On "megalitre" (first) the "kL → ML" arrow lights upward "÷ 1000" (going up to a bigger unit); row "48 ÷ 1000 = 0.048 ML" (framed green); grey chip "megalitre: a thousand kilolitres". On "Olympic pool" a coded pool outline (lanes, 1,000 × 500 px) with "50 m", "25 m", "at least 2 m" (blue); the backyard pool appears beside it to scale (a small rectangle). On "megalitres" rows "50 × 25 × 2 = 2500 m³ = 2500 kL", "2500 ÷ 1000 = 2.5 ML" (framed green); on "more than fifty" a grey chip "2500 ÷ 48 ≈ 52 backyard pools". On "farm dam" a small chip "a01: 12 ML" with the farm dam `ms12-farm-dam-aerial-v1.png` (about 360 px wide); on "metres" row "12 ML = 12 000 kL = 12 000 m³" (framed green). On "So the whole bridge" each bridge rung lights in turn: "cm³ = mL", "1000 cm³ = 1 L", "m³ = kL", and on "megalitre" (last) "1000 kL = 1 ML".
 
 ### 7. memory aid
 > Here's the picture to remember. A one centimetre cube holds a millilitre. In between, a ten centimetre cube holds a litre. And a one metre cube holds a thousand litres, a **kilolitre**.
@@ -134,7 +134,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 
 ## Teaching checks
 
-- **Does it explain causes?** Why 1 cm³ = 1 mL: the millilitre is defined that way (2). Why 1000 cm³ = 1 L: a 10 cm cube holds 10 × 10 × 10 (2). Why 1 m³ = 1 kL: a 1 m cube holds 10 × 10 × 10 litre cubes (4). Why the pool is 0.45 ML: a thousand kilolitres make a megalitre (6).
+- **Does it explain causes?** Why 1 cm³ = 1 mL: the millilitre is defined that way (2). Why 1000 cm³ = 1 L: a 10 cm cube holds 10 × 10 × 10 (2). Why 1 m³ = 1 kL: a 1 m cube holds 10 × 10 × 10 litre cubes (4). Why the pool is 0.048 ML: a thousand kilolitres make a megalitre (6).
 - **Misconceptions addressed:** ÷ 100 (3, crossed); cm³ as litres (A1 crossed); m³ as litres (A2 crossed); mixed units (5, said).
 - **Visual standard, item by item:** 1 the cube and jug in the first 20 s; 2 a new stage every 40 to 60 s; 3 the two cube fills and the pool fill with live counters; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 rows with framed answers and crossed slips; 8 framed card and five bullets; 9 the second cube fill copying the first to reach 1000 L.
 - **One idea at a time:** cm³ to mL and L (2, 3); m³ to kL (4, 5); ML (6).
@@ -158,8 +158,8 @@ Model answer: (a) 2 × 1.5 × 1.2 = 3.6 m³ = 3.6 kL = 3600 L. (b) 3600 ÷ 20 = 
 | Litre cube | 10, 100, 1000; 1000 cm³ = 1000 mL = 1 L; 125 cc = 125 mL | 2 |
 | Fish tank | 72 000 cm³; 72 L; slip 720 L | 3 |
 | Kilolitre cube | 10, 100, 1000; 1 m³ = 1000 L = 1 kL; tank 2.5 × 2 × 1 = 5 m³ = 5 kL | 4 |
-| Backyard pool | 450 m³ = 450 kL = 450 000 L; $2.70; $1215; 22 500 min = 375 h ≈ 15.6 days | 5 |
-| Megalitres | 0.45 ML; 2500 m³ = 2500 kL = 2.5 ML; 12 ML = 12 000 kL = 12 000 m³ | 6 |
+| Backyard pool (Revision 2) | 8 × 4 × 1.5 = 48 m³ = 48 kL = 48 000 L; $2.70; $129.60; 2400 min = 40 h ≈ 1.7 days | 5 |
+| Megalitres | 0.048 ML; 2500 ÷ 48 ≈ 52 pools; 2500 m³ = 2500 kL = 2.5 ML; 12 ML = 12 000 kL = 12 000 m³ | 6 |
 | A1 | 15 000 cm³ = 15 L; slip 15 000 L | 8, 9 |
 | A2 | 3.6 m³ = 3.6 kL = 3600 L; 180 min = 3 h; slip 3.6 L | 10, 11 |
 
@@ -170,7 +170,7 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11a/verify
 - 10 × 10 × 10 = 1000; 1000 ÷ 1000 = 1.
 - 60 × 30 × 40 = 72 000; 72 000 ÷ 1000 = 72; 72 000 ÷ 100 = 720.
 - 100 × 100 × 100 = 1 000 000; 1 000 000 ÷ 1000 = 1000; 1000 ÷ 1000 = 1; 2.5 × 2 × 1 = 5.
-- 25 × 10 × 1.8 = 450; 450 × 1000 = 450 000; 450 × 2.70 = 1215; 450 ÷ 1000 = 0.45; 450 000 ÷ 20 = 22 500; 22 500 ÷ 60 = 375; 375 ÷ 24 = 15.625.
+- Backyard pool (Revision 2; rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): 8 × 4 × 1.5 = 48; 48 × 1000 = 48 000; 48 × 2.70 = 129.60; 48 ÷ 1000 = 0.048; 48 000 ÷ 20 = 2400; 2400 ÷ 60 = 40; 40 ÷ 24 = 1.67; 2500 ÷ 48 = 52.08.
 - 50 × 25 × 2 = 2500; 2500 ÷ 1000 = 2.5; 12 × 1000 = 12 000.
 - 50 × 20 × 15 = 15 000; 15 000 ÷ 1000 = 15.
 - 2 × 1.5 × 1.2 = 3.6; 3.6 × 1000 = 3600; 3600 ÷ 20 = 180; 180 ÷ 60 = 3.
@@ -185,6 +185,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11a/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,542 characters**, 13 scene headings. Characters per scene (1 to 13): 583, 724, 625, 606, 807, 643, 181, 149, 280, 269, 309, 279, 75. Feedback speech about 21.1 s and 23.2 s.
 
 At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the two cube fills (2, 4), the pool fill (5) and the bridge (6), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 508 s**, 62 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,437 characters**, 13 scene headings (per scene: 583, 693, 625, 606, 697, 679, 181, 149, 280, 269, 309, 279, 75); speech about 409 s; total **about 500 s**, 70 s under the 570 s cap. Feedback speech about 21.1 s and 23.2 s.
 
 Reserve trims if the voiced take runs long: scene 3's last sentence; scene 4's "That's a box you could sit in" sentence.
 
@@ -215,7 +217,7 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 ## Assets
 
-Inspected before choosing (23 Nov 2026, `public/assets/maths`, opened and viewed on a contact sheet): `ma11-water-jug-v1.png`; `ma12-pool-cutaway-v1.png` (a pool shell cut away through the ground, a deep end at the left and a sloping beach entry at the right; the coded overlay draws a flat floor at 1.8 m for this video, and a09 uses the real slope); `ma12-phone-v1.png` (a phone with a blank black screen, front view); `ma11-water-tank-v1.png`; `ms12-farm-dam-aerial-v1.png` (both a01 callbacks).
+Inspected before choosing (23 Nov 2026, `public/assets/maths`, opened and viewed on a contact sheet): `ma11-water-jug-v1.png`; `ma12-pool-cutaway-v1.png` (a pool shell cut away through the ground, a deep end at the left and a sloping beach entry at the right; the coded overlay draws a flat floor at 1.5 m for this video (Revision 2), and a09 uses the real slope); `ma12-phone-v1.png` (a phone with a blank black screen, front view); `ma11-water-tank-v1.png`; `ms12-farm-dam-aerial-v1.png` (both a01 callbacks).
 
 Need: none new. Reused: the five plates above.
 
@@ -226,7 +228,7 @@ Coded: the 1 cm, 10 cm and 1 m cubes and their fills, the carton grid, the fish 
 Uses: `PlateImg`, `HandTag`, `UnitLadder` (a01), `GridFill` cube mode (a02), the multi-unit fill counter (a01), the g01 `WorkingBoard` parts, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions (kit-needs row a03):
-1. **`BridgeLadder`**: a `UnitLadder` mode with two columns (volume units left, capacity units right) joined by "=" bridges that can light one at a time. Check: "cm³ = mL", "1000 cm³ = 1 L", "m³ = kL", "1000 kL = 1 ML".
+1. **`BridgeLadder`**: a `UnitLadder` mode (biggest unit at the top, as a01) with two columns (volume units left, capacity units right) joined by "=" bridges that can light one at a time. Check: "cm³ = mL", "1000 cm³ = 1 L", "m³ = kL", "1000 kL = 1 ML".
 2. **Cube-of-cubes fill** (a `GridFill` cube mode with a unit swap): after a fill, the filled cube shrinks to become the next fill's unit. Check: 1000 mL cubes make 1 L; 1000 L cubes make 1 kL.
 
 ## Codex asset brief
@@ -266,6 +268,17 @@ Builds on: Converting Units of Area and Volume. Next: Metric Prefixes and Powers
 ## Open decisions
 
 - **1. The pool cutaway with a flat-floor overlay** (scene 5) or a coded pool box; a09 uses the plate's real slope. Builder's choice at the contact sheet.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a03-learning-review.md` (0 blockers, 1 should fix, 2 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (the "backyard pool" was a 25 m lap pool): applied (root ruling 6), with new numbers rather than a rename.** The pool is now a real backyard size: 8 m long, 4 m wide, 1.5 m deep everywhere: 8 × 4 × 1.5 = 48 m³ = 48 kL = 48 000 L. Filling it at the example $2.70 a kilolitre costs $129.60; a 20 L a minute hose takes 2400 min = 40 h, "nearly two days" (the water-truck clause is gone). Scene 6: 48 ÷ 1000 = 0.048 ML, and the Olympic pool holds "more than fifty of our backyard pools" (2500 ÷ 48 ≈ 52). a09 reuses the same pool with a floor sloping from 1 m to 2 m (average 1.5 m), so a09's "same as the flat pool" surprise still holds at 48 m³. Author note (c), worked examples, Numbers used and Numbers to verify updated; rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures).
+- **N1 (scooter cylinders): applied.** Scene 2 now says "A scooter can have a hundred and twenty-five cc engine. The cc means cubic centimetres, so that's a hundred and twenty-five millilitres."
+- **N2 (carton grid behind the cube):** preview check; the counter stays dominant.
+- **Ladder (root ruling 5):** the bridge ladder is drawn with the biggest unit at the top as in a01 (ML; kL = m³; L; mL = cm³), and kL to ML lights upward "÷ 1000".
+- Feedback rows already show one result per cue; no change.
+- Narration 5,437 characters (was 5,542), about 500 s with holds.
 
 ## Review notes
 

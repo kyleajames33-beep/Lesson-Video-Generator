@@ -1,8 +1,8 @@
 # Maths S11 A06: How does Pythagoras' theorem find a missing side? The hypotenuse as the longest side opposite the right angle, squares on the sides, square add root for the hypotenuse, square subtract root for a shorter side, and the sense check (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a05b.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-t01a.md`, `t01b.md`, `t03.md`, `t08.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a05b.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-t01a.md`, `t01b.md`, `t03.md`, `t08.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,581 characters by script (see "Narration length estimate"), 13 scene headings, about 510 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,497 characters by script at Revision 2 (Revision 1: 5,581; see "Narration length estimate"), 13 scene headings, about 504 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: seventh video of the Year 11 Applications of measurement strand, outline playlist order 42. One video for Standard 1 and Standard 2. Viewers arrive from a05b's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a06.md`. Route entry: `math-s11-a06` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson03.sa.html` (formula card, WE1, WE2, traps, Q3). Visual system: maths studio kit; the softball diamond, flying-fox platform, phone and entrance ramp plates (all existing); the triangles, squares on the sides and boards coded.
 
@@ -34,7 +34,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Memory aid.** Framed card: "Longest side: square, add, square root. Shorter side: square, subtract, square root." Key line: "c² = a² + b², where c is the hypotenuse: the longest side, opposite the right angle."
 - **Visual surprise.** The bent-angle slider (scene 3): at exactly 90° the two readouts match; nudge the angle and they split.
 - **Plain meanings at first use.** Right angle ("a square corner, 90 degrees, marked with a small square"); hypotenuse ("the longest side, opposite the right angle"); square root ("the number that multiplies by itself to give the square").
-- **Attempts.** A1 (pack question 1): gate brace 3 m; crossed "2.4 + 1.8 = 4.2 m" (caption "square them first"). A2 (pack question 2): ramp 6.47 m; crossed "√(42.25 + 0.36) = 6.53 m" (caption "longer than the ramp?").
+- **Attempts.** A1 (pack question 1): gate brace 3 m; crossed "2.4 + 1.8 = 4.2 m" (caption "square them first"). A2 (pack question 2; Revision 2 rise 0.45 m, about 1 in 14.4, a realistic access ramp like a09's): ramp 6.48 m; crossed "√(42.25 + 0.2025) = 6.52 m" (caption "longer than the ramp?").
 - **Mistake scene:** none separate. Adding for a shorter side (5, A2 crossed); adding the sides, not the squares (A1 crossed); the wrong side as c (2, the turning triangle); a triangle without a right angle (3, the slider); early rounding (6, said).
 - **Cause chain taught, in order:** (1) the side across from the right angle is always the longest, so find the right angle first (2); (2) the square on the hypotenuse has exactly the area of the other two squares together, but only in a right-angled triangle (3); (3) so to find the hypotenuse, add the two squares, then square root (4); (4) to find a shorter side, take one square away from the biggest, then square root, and the answer must be shorter than the hypotenuse (5); (5) rounding a square root early changes the last digit of the answer, so keep the full value (6).
 - **Entry knowledge (route):** math-s11-a05a (square units; the 3, 4, 5 bed); Stage 4 squares, square roots, Pythagoras. Recalled in grey chips.
@@ -46,7 +46,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (b) 3² + 4² = 9 + 16 = 25 = 5².
   (c) 3.2² = 10.24; 1.1² = 1.21; 10.24 − 1.21 = 9.03; √9.03 = 3.005 → 3.0 (1 d.p.); slip √11.45 = 3.384 → 3.38.
   (d) 7.1² = 50.41; 15.4² = 237.16; 287.57; √287.57 = 16.958 → 16.96, about 17.0 cm (6.7 inches; inches not said). Rounding 7.1² to 50 and 15.4² to 237 gives √287 = 16.94 (the early-rounding readout).
-  (e) A1: 2.4² + 1.8² = 5.76 + 3.24 = 9; √9 = 3; slip 4.2. A2: 6.5² − 0.6² = 42.25 − 0.36 = 41.89; √41.89 = 6.472 → 6.47; slip √42.61 = 6.528 → 6.53. The ramp's 0.6 m rise over 6.47 m is about 1 in 10.8 (steeper than the 1 in 14 access guide); not said, and the question does not claim compliance.
+  (e) A1: 2.4² + 1.8² = 5.76 + 3.24 = 9; √9 = 3; slip 4.2. A2 (Revision 2): 6.5² − 0.45² = 42.25 − 0.2025 = 42.0475; √42.0475 = 6.484 → 6.48; slip √42.4525 = 6.516 → 6.52. The 0.45 m rise over 6.48 m is about 1 in 14.4, within the 1 in 14 access guide (Revision 1's 0.6 m rise was about 1 in 10.8, too steep for a wheelchair ramp). Revision 1 note: not said, and the question does not claim compliance.
   (f) Pronunciations: "hy-POT-en-use"; "pie-THAG-or-us".
 
 Main question: *How far is the throw from home plate to second base? How does Pythagoras' theorem find a missing side?*
@@ -69,7 +69,7 @@ Visual: opens on a05b's final frame exactly (the diamond, "18.3 m" labels, the r
 Visual: stage change (simulation 3): a coded right triangle (teal outline, 600 px) with a right-angle square (amber); grey chips "right angle: a square corner, 90°", "hypotenuse: the longest side, opposite the right angle" (kept for Year 12 t01a and t03), hand tag "find the right angle". On "across from that corner" the opposite side thickens (blue), labelled "hypotenuse", hand tag "across from it". On "turn and flip" the triangle rotates and mirrors through four orientations; the square and the label move together. On "square" (first) a ghost of each orientation stays small in a row. On "second" the diamond (500 px) returns at the right with its triangle home, first, second highlighted: the diagonal labelled "hypotenuse", the base paths labelled "18.3 m".
 
 ### 3. squares on the sides
-> Here's the idea behind the theorem. Take the garden bed triangle from before, with sides of three, four and five metres. Draw a square on each side. The square on the three side holds nine unit squares. The square on the four side holds sixteen. Now slide all of those into the big square on the hypotenuse. Nine plus sixteen is twenty-five, and they fill it **exactly**. So the square on the hypotenuse equals the two other squares added together. In symbols, c squared equals a squared plus b squared, where c is the **hypotenuse**. It works for every right-angled triangle. Change the sides, and the two totals always match. But bend that corner away from ninety degrees, and they stop **matching**. No right angle, no Pythagoras. The rule is named after Pythagoras, a Greek mathematician, but builders in Babylon and India were using it long before him.
+> Here's the idea behind the theorem. Take the garden bed triangle from before, with sides of three, four and five metres. Draw a square on each side. The square on the three side holds nine unit squares. The square on the four side holds sixteen. Now slide all of those into the big square on the hypotenuse. Nine plus sixteen is twenty-five, and they fill it **exactly**. So the square on the hypotenuse equals the two other squares added together. In symbols, c squared equals a squared plus b squared, where c is the **hypotenuse**. It works for every right-angled triangle. Change the sides, and the two totals always match. But bend that corner away from ninety degrees, and they stop **matching**. No right angle, no Pythagoras. The rule is named after Pythagoras, a Greek mathematician, but people in Babylon and India knew this pattern before him.
 
 Visual: stage change (simulation 1): the 3, 4, 5 triangle (a05a's bed shape, teal), with a grey chip "a05a: the garden bed". On "Draw a square on each side" three squares grow outward (amber outlines). On "nine unit squares" the 3 by 3 square fills with tiles, counter "9"; on "sixteen" the 4 by 4 fills, "16". On "slide all of those" the tiles fly into the 5 by 5 square, filling it; on "exactly" counter "9 + 16 = 25", hand tag "9 + 16 = 25". On "hypotenuse" formula strip, 52 px: "c² = a² + b²" with "c" on the hypotenuse (thick blue). On "Change the sides" (simulation 2) sliders a and b appear; the triangle and squares resize; readouts "a² + b²" and "c²" update and stay equal. On "bend that corner" an angle slider moves to 80°, then 100°; the readouts split ("c² ≠ a² + b²", amber), hand tag "only with a right angle"; on "matching" it snaps back to 90° and they match again.
 
@@ -79,7 +79,7 @@ Visual: stage change (simulation 1): the 3, 4, 5 triangle (a05a's bed shape, tea
 Visual: stage change: the diamond (600 px) at the left, its triangle labelled "18.3 m", "18.3 m" and "c" on the diagonal. g01 board at the right: task strip "Bases are 18.3 m apart at right angles. How far is it from home to second?"; givens "a = 18.3 m", "b = 18.3 m" (blue). Rows, 52 px: "c² = 18.3² + 18.3²"; on "eight" "= 334.89 + 334.89 = 669.78". On "not c" hand tag "that's c², not c". On "metres" "c = √669.78 = 25.88 m" (framed green), and the diagonal's label becomes "25.88 m". On "thought" the two comparison bars from scene 1 return either side of it, hand tag "in between". On "square root" (last) hand tag "square, add, root".
 
 ### 5. finding a shorter side: square, subtract, square root
-> Sometimes you know the hypotenuse and need a shorter side. This flying fox platform has a ladder leaning against it. The ladder is three point two metres long, and its foot is one point one metres out from the platform. How high does it reach? The ladder is the hypotenuse, because it's opposite the right angle at the ground. So the height squared is three point two squared minus one point one squared. Ten point two four minus one point two one is nine point nought three, and its square root is about three point nought **metres**. Notice we subtracted. If you add instead, you get three point three eight metres, which is longer than the ladder itself. That can't be **right**. A shorter side always comes out shorter than the hypotenuse. And the same move works the other way round. If you know how high the ladder must reach, you can find how far out its foot has to go.
+> Sometimes you know the hypotenuse and need a shorter side. This flying fox platform has a ladder leaning against it. The ladder is three point two metres long, and its foot is one point one metres out from the platform. How high does it reach? The ladder is the hypotenuse, because it's opposite the right angle at the ground. So the height squared is three point two squared minus one point one squared. Ten point two four minus one point two one is nine point nought three, and its square root is about three point nought **metres**. Notice we subtracted. If you add instead, you get three point three eight metres, which is longer than the ladder itself. That can't be **right**. A shorter side always comes out shorter than the hypotenuse.
 
 Visual: stage change: the flying-fox platform `ma11-flying-fox-platform-v1.png` (about 600 px tall) at the left, with a coded triangle overlaid on its ladder: ladder "3.2 m" (thick blue, hypotenuse), ground "1.1 m" (blue), platform side "h" with a right-angle mark at the ground. On "The ladder is the hypotenuse" the ladder line pulses, hand tag "opposite the right angle". Board at the right: rows "h² = 3.2² − 1.1²", "= 10.24 − 1.21 = 9.03"; on "metres" "h = √9.03 ≈ 3.0 m" (framed green), hand tag "square, subtract, root". On "right" a red slip "√(10.24 + 1.21) = 3.38 m" writes and is crossed (caption "longer than the ladder?"), with a ghost ladder 3.38 m long poking past the platform.
 
@@ -104,14 +104,14 @@ Visual: `QuestionCard`, 40 px: "A gate is 2.4 m wide and 1.8 m tall. A diagonal 
 Visual: the card shrinks to the top (30 px). Rows, 44 px: "c² = 2.4² + 1.8² = 5.76 + 3.24 = 9"; on "metres" "c = √9 = 3 m" (framed green). On "slip" a red slip "2.4 + 1.8 = 4.2 m" writes and is crossed (caption "square them first"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
-> Last one. A wheelchair ramp is six point five metres long and rises point six of a metre. How far does it reach horizontally? Give your answer correct to two decimal places. Pause here to answer.
+> Last one. A wheelchair ramp is six point five metres long and rises nought point four five of a metre. How far does it reach horizontally? Give your answer correct to two decimal places. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "A wheelchair ramp is 6.5 m long and rises 0.6 m. How far does it reach horizontally? Give your answer correct to 2 decimal places." Picture slot: the entrance ramp `ma11-entrance-ramp-v1.png` (about 520 px wide) with a coded triangle: "6.5 m" on the slope, "0.6 m" rise, "?" along the ground. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "A wheelchair ramp is 6.5 m long and rises 0.45 m. How far does it reach horizontally? Give your answer correct to 2 decimal places." Picture slot: the entrance ramp `ma11-entrance-ramp-v1.png` (about 520 px wide) with a coded triangle: "6.5 m" on the slope, "0.45 m" rise, "?" along the ground. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> The ramp itself is the hypotenuse, so subtract. Six point five squared minus point six squared is forty-two point two five minus point three six, forty-one point eight nine. The square root is six point four seven **metres**. Adding gives six point five three, which is longer than the ramp, so that's the **slip**.
+> The ramp itself is the hypotenuse, so subtract. Six point five squared minus nought point four five squared is forty-two point two five minus nought point two nought two five, forty-two point nought four seven **five**. The square root is six point four eight **metres**. Adding gives six point five two, which is longer than the ramp, so that's the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: "d² = 6.5² − 0.6² = 42.25 − 0.36 = 41.89"; on "metres" "d = √41.89 = 6.47 m" (framed green). On "slip" a red slip "√(42.25 + 0.36) = 6.53 m" writes and is crossed (caption "longer than the ramp?"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px: on "five" "d² = 6.5² − 0.45² = 42.25 − 0.2025 = 42.0475"; on "metres" "d = √42.0475 ≈ 6.48 m" (framed green). On "slip" a red slip "√(42.25 + 0.2025) = 6.52 m" writes and is crossed (caption "longer than the ramp?"). Hold about 1 s.
 
 ### 12. handoff
 > So any right-angled triangle gives up its missing side. That's handy on a block of land. This block has a straight front, two sides at right angles to it, and a back fence that slants across. How big is the block, and how much fence does that slanted back need? That's **next**.
@@ -149,7 +149,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 Model answer: c² = 2.4² + 1.8² = 9; c = 3 m. Classic mistake (crossed): "2.4 + 1.8 = 4.2 m".
 
 **Attempt 2 (scene 10; pack question 2, 2 marks suggested).** As on the card.
-Model answer: d² = 6.5² − 0.6² = 41.89; d = 6.47 m. Classic mistake (crossed): "√(42.25 + 0.36) = 6.53 m".
+Model answer (Revision 2): d² = 6.5² − 0.45² = 42.0475; d = √42.0475 ≈ 6.48 m. Classic mistake (crossed): "√(42.25 + 0.2025) = 6.52 m".
 
 ## Numbers used (author note: every value)
 
@@ -160,7 +160,7 @@ Model answer: d² = 6.5² − 0.6² = 41.89; d = 6.47 m. Classic mistake (crosse
 | Ladder | 10.24; 1.21; 9.03; 3.0 m; slip 3.38 m | 5 |
 | Screen | 50.41; 237.16; 287.57; 16.96 ≈ 17.0 cm; early rounding 16.94 | 6 |
 | A1 | 5.76 + 3.24 = 9; 3 m; slip 4.2 | 8, 9 |
-| A2 | 42.25 − 0.36 = 41.89; 6.47 m; slip 6.53 | 10, 11 |
+| A2 (Revision 2) | 42.25 − 0.2025 = 42.0475; 6.48 m; slip 6.52 | 10, 11 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
@@ -171,7 +171,7 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 - 3.2² = 10.24; 1.1² = 1.21; 9.03; √9.03 = 3.005; √11.45 = 3.384.
 - 7.1² = 50.41; 15.4² = 237.16; 287.57; √287.57 = 16.958; √287 = 16.941.
 - 2.4² + 1.8² = 9; √9 = 3; 2.4 + 1.8 = 4.2.
-- 6.5² − 0.6² = 41.89; √41.89 = 6.472; √42.61 = 6.528.
+- A2 (Revision 2; rechecked 24 Nov 2026 with scratchpad `s11ma/verify.py`, `python -I`): 6.5² − 0.45² = 42.0475; √42.0475 = 6.484 → 6.48; √42.4525 = 6.516 → 6.52; 6.484 ÷ 0.45 = 14.4 (1 in 14.4).
 
 ## Memory aid check
 
@@ -183,6 +183,8 @@ Recalculated (23 Nov 2026, scratchpad `s11a/verify.py`, `python -I`; 0 failures)
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,581 characters**, 13 scene headings. Characters per scene (1 to 13): 507, 635, 845, 741, 869, 525, 149, 187, 260, 195, 307, 274, 75. Feedback speech about 19.5 s and 23.1 s.
 
 At 13.3 characters per second the speech is about 420 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the turning triangle (2), the tiles and sliders (3), and the diagrams (4 to 6), about 25 s; the key-notes scene adds about 39 s beyond its line. Total **about 510 s**, 60 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,497 characters**, 13 scene headings (per scene: 507, 635, 842, 741, 735, 525, 149, 187, 260, 208, 347, 274, 75); speech about 413 s; total **about 504 s**, 66 s under the 570 s cap. Feedback speech about 19.5 s and 26.1 s.
 
 Reserve trims if the voiced take runs long: scene 6's last two sentences (the readout stays); scene 2's last sentence.
 
@@ -237,7 +239,7 @@ No new plate. All six plates exist and were viewed.
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with exact arithmetic.
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
-3. Confirm the softball base distance (60 ft, 18.29 m) and that "about 18.3 m" is said; confirm "the hypotenuse is the longest side, opposite the right angle" appears as Year 12 t01a quotes it.
+3. Confirm the softball base distance (60 ft, 18.29 m) and that "about 18.3 m" is said; confirm "the hypotenuse is the longest side, opposite the right angle" appears as Year 12 t01a quotes it. Confirm the history sentence in scene 3 ("people in Babylon and India knew this pattern before him": Babylonian tablets such as Plimpton 322, the Indian Sulba Sutras) and that A2's 0.45 m rise over 6.48 m (about 1 in 14.4) suits a wheelchair ramp (Revision 2).
 4. Confirm the spoken forms match the screen.
 5. Confirm both attempts carry every demand and show no answer.
 6. Confirm scene 1 opens on a05b's final frame exactly and scene 12 matches a07's boundary.
@@ -265,6 +267,16 @@ Builds on: Circles, Arcs and Sectors: Perimeter and Area. Next: Irregular Blocks
 ## Open decisions
 
 - None beyond the strand's (the a05 split; header strip).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-a06-learning-review.md` (0 blockers, 0 should fix, 4 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **N1 (ramp too steep for a wheelchair ramp): applied (root ruling 6).** A2's ramp is still 6.5 m long but rises 0.45 m: d² = 6.5² − 0.45² = 42.25 − 0.2025 = 42.0475, d ≈ 6.48 m; the crossed slip is √(42.25 + 0.2025) = 6.52 m. That is about 1 in 14.4, consistent with a09's 1 in 14 entrance ramp. Narration, card, picture slot, feedback (the d² row now writes on its own cue "five"), model answer, author note (e), Numbers used and Numbers to verify updated; rechecked with scratchpad `s11ma/verify.py` (`python -I`, 0 failures).
+- **N2 (history claim): applied.** Scene 3 says "people in Babylon and India knew this pattern before him"; added to Codex brief item 3.
+- **N3 (early-rounding demonstration):** no change, as the review advises.
+- **N4 (scene 5's last two sentences had no picture): applied by cutting them** ("And the same move works the other way round ...").
+- Narration 5,497 characters (was 5,581), about 504 s with holds.
 
 ## Review notes
 

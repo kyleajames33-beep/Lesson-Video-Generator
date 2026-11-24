@@ -1,8 +1,8 @@
 # Maths S11 M07: How do we read and check electricity, water and gas bills? Usage from meter readings, a kilowatt-hour, supply charge plus usage, cost per day as a check, water in kilolitres, and gas in two price blocks (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e03.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m06.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 17, 32 and 47 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e03.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m06.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 17, 32 and 47 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,790 characters by script (see "Narration length estimate"), 13 scene headings, about 522 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,962 characters by script at Revision 2 (Revision 1: 5,790; see "Narration length estimate"), 13 scene headings, about 535 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: Year 11 Managing money, outline playlist order 34. One video for Standard 1 and Standard 2. Viewers arrive from m06's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m07.md`. Route entry: `math-s11-m07` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson01.sa.html` (site L9), card 3, WE3 and SAQ 3 used, with the GST step removed (MSY-07). Visual system: maths studio kit; two new plates (`ms11-electricity-meter-v1.png`, `ms11-water-meter-v1.png`, briefed below); the phone plate (existing) for the final frame; the bills, kWh bars, gas blocks and boards coded.
 
@@ -46,7 +46,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Author notes (not learner copy):**
   (a) 19 264 − 18 452 = 812; 91 × 1.10 = 100.10; 812 × 0.33 = 267.96; 368.06; 368.06 ÷ 91 = 4.0446 → $4.04.
   (b) 2 × 1 = 2 kWh, 2 × 0.33 = 0.66; 2.5 × 6 = 15 kWh, 15 × 0.33 = 4.95.
-  (c) Last year: 412.16 ÷ 92 = 4.48.
+  (c) Last year: 412.16 ÷ 92 = 4.48. Use per day (Revision 2): 812 ÷ 91 = 8.923 → about 8.9 kWh.
   (d) Water: 1342 − 1284 = 58 kL; 58 × 2.70 = 156.60; + 190 = 346.60.
   (e) Gas: 1800 × 0.048 = 86.40; 2100 × 0.039 = 81.90; 91 × 0.75 = 68.25; 236.55; slip 3900 × 0.048 = 187.20, + 68.25 = 255.45.
   (f) House (tenant): 368.06 + 156.60 + 236.55 = 761.21.
@@ -68,7 +68,7 @@ Cue words in **bold** trigger the visual change. Exact frames are set from the r
 Visual: opens on m06's final frame exactly. On "electricity, water and gas" three small coded bill envelopes (grey, 220 px each) slide in under the meter labelled "electricity", "water", "gas". On "the electricity bill arrives" the electricity envelope opens to a coded bill card (36 px) with "Amount due: $368.06" (teal). On "Is that right?" a "?" rings amber beside the amount. On "bills" heading "Household bills: read them, check them" writes on.
 
 ### 2. the meter and the kilowatt-hour
-> Start at the meter. It counts up forever, like a car's odometer. At the last bill it read eighteen thousand four hundred and fifty-two. Now it reads nineteen thousand two hundred and sixty-four. So the house used the difference, eight hundred and twelve kilowatt-**hours**. A kilowatt-hour is the energy a thousand-watt appliance uses in one hour. Kilo means a thousand. So a two-kilowatt heater running for an hour uses two kilowatt-hours, and at thirty-three cents each, that's sixty-six **cents**. An air conditioner using two and a half kilowatts, for six hours on a hot afternoon, uses fifteen kilowatt-hours, four ninety-**five**. The bigger the appliance, and the longer it runs, the more it **costs**.
+> Start at the meter. It counts up forever, like a car's odometer. At the last bill it read eighteen thousand four hundred and fifty-two. Now it reads nineteen thousand two hundred and sixty-four. So the house used the difference, eight hundred and twelve kilowatt-**hours**. Watts measure how fast an appliance uses energy. A kilowatt-hour is the energy a thousand-watt appliance uses in one hour. Kilo means a thousand. So a two-kilowatt heater running for an hour uses two kilowatt-hours, and at thirty-three cents each, that's sixty-six **cents**. An air conditioner using two and a half kilowatts, for six hours on a hot afternoon, uses fifteen kilowatt-hours, four ninety-**five**. The bigger the appliance, and the longer it runs, the more it **costs**.
 
 Visual: stage change (simulation 1): the meter (520 px) at the left; a 91-day calendar strip under it. On "At the last bill" a grey stamp "last reading: 18452" above the meter; on "Now it reads" the display rolls up from 18452 to 19264 while the strip fills. On "hours" row "19 264 − 18 452 = 812 kWh" (52 px, blue), framed green, hand tag "new − old". On "A kilowatt-hour" (simulation 2) a coded plot at the right: a power bar "1 kW" running along a time axis for "1 hour", the filled area labelled "1 kWh", grey chip "kilo = 1000", hand tag "1 kW for 1 hour". On "cents" the bar doubles to "2 kW" for 1 hour: "2 kWh × 33c = 66c". On "five" the bar becomes "2.5 kW" for "6 hours": the area fills, readout "15 kWh × 33c = $4.95". If `ma12-air-conditioner-v1.png` passes the builder's paper check, it sits small (300 px) above this bar; otherwise the bar carries it alone. On "costs" grey chip "kWh = kW × hours".
 
@@ -78,9 +78,9 @@ Visual: stage change (simulation 1): the meter (520 px) at the left; a 91-day ca
 Visual: stage change (simulation 3): the coded bill (900 × 600 px) at the centre with two empty lines "supply charge" and "usage charge" and an empty total; task strip above "91 days; meter 18 452 → 19 264 kWh; supply $1.10 a day (example); usage 33c per kWh". On "even if you use nothing" hand tag "even if you use nothing". On "ten" 91 small olive coins drop into the supply line, row "91 × $1.10 = $100.10" (olive). On "six" (first) the 812 kWh block pours into the usage line, row "812 × $0.33 = $267.96" (teal). On "cents" total "$368.06" (52 px), framed green; the hook's "?" turns to a green tick. On "include GST" grey chip "m02: prices include GST". On "suppliers" grey chip "example rates; they change". On "slip" a red slip "total = 812 × 0.33 = $267.96" writes and is crossed (caption "add the supply charge"). On "lot" the olive line pulses.
 
 ### 4. checking a bill: cost per day
-> Is three sixty-eight high? Comparing it with the last bill can mislead you, because bills cover different numbers of days, and winter and summer use different amounts. So divide by the days, and compare with the same season last year. This bill is three sixty-eight oh six over ninety-one days, about four dollars and four cents a **day**. The same quarter last year was four hundred and twelve dollars sixteen, over ninety-two days, four dollars forty-eight a **day**. So the house is using a bit less than last year. If the cost per day had jumped, you'd look for a reason, like a new heater, or a wrong **reading**.
+> Is three sixty-eight high? Comparing it with the last bill can mislead you, because bills cover different numbers of days, and winter and summer use different amounts. So divide by the days, and compare with the same season last year. This bill is three sixty-eight oh six over ninety-one days, about four dollars and four cents a **day**. The same quarter last year was four hundred and twelve dollars sixteen, over ninety-two days, four dollars forty-eight a **day**. So this bill costs a bit less per day than last year. But rates change, so to check the house is really using less, compare kilowatt-hours per **day**, which most bills print. If the cost per day had jumped, you'd look for a reason, like a new heater, or a wrong **reading**.
 
-Visual: stage change: two bill cards side by side (36 px): "this quarter: $368.06, 91 days" and "same quarter last year: $412.16, 92 days" (grey chip "same season"). On "divide by the days" grey chip "m06: share it out", hand tag "per day, to compare". On "day" (first) row under the first card "368.06 ÷ 91 ≈ $4.04 a day" (teal), framed green; on "day" (second) "412.16 ÷ 92 = $4.48 a day". Two short bars show $4.04 against $4.48. On "reading" small grey chips "new appliance?", "wrong reading?" appear beside the bars.
+Visual: stage change: two bill cards side by side (36 px): "this quarter: $368.06, 91 days" and "same quarter last year: $412.16, 92 days" (grey chip "same season"). On "divide by the days" grey chip "m06: share it out", hand tag "per day, to compare". On "day" (first) row under the first card "368.06 ÷ 91 ≈ $4.04 a day" (teal), framed green; on "day" (second) "412.16 ÷ 92 = $4.48 a day". Two short bars show $4.04 against $4.48, captioned "cost per day" (Revision 2). On "rates change" grey chip "rates change each year". On "day" (third) a small row under the first card "812 ÷ 91 ≈ 8.9 kWh a day" (blue), hand tag "use, not cost". On "reading" small grey chips "new appliance?", "wrong reading?" appear beside the bars.
 
 ### 5. water: kilolitres and a service charge
 > Water works the same way, in kilolitres. A kilolitre is a thousand litres. The water meter went from twelve hundred and eighty-four kilolitres to thirteen hundred and forty-two, so the house used fifty-eight kilolitres. That's showers, washing and the garden for three months. At an example two dollars seventy a kilolitre, the usage is a hundred and fifty-six dollars **sixty**. Water bills also have a service charge, here a hundred and ninety dollars a quarter, so the whole bill is three hundred and forty-six **sixty**. If you rent in New South Wales, the landlord usually pays the service charge, and you pay the **usage**.
@@ -103,9 +103,9 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the bill with its
 Visual: `QuestionCard`, 40 px, worded as printed: "An electricity bill covers 92 days. The meter read 24 615 kWh at the start and 25 203 kWh at the end. The supply charge is $1.05 a day and usage costs 34c per kWh (prices include GST). Find (a) the electricity used (b) the total bill." Picture slot: the meter (260 px) with a blank display. Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> The house used twenty-five two oh three minus twenty-four six fifteen, five hundred and eighty-eight kilowatt-**hours**. Supply is ninety-two times one oh five, ninety-six sixty, and usage is five eighty-eight times thirty-four cents, one ninety-nine ninety-two. So the bill is two hundred and ninety-six fifty-**two**. Leaving out the supply charge is the **slip**.
+> The house used twenty-five two oh three minus twenty-four six fifteen, five hundred and eighty-eight kilowatt-**hours**. Supply is ninety-two times one oh five, ninety-six **sixty**, and usage is five eighty-eight times thirty-four cents, one ninety-nine ninety-**two**. So the bill is two hundred and ninety-six fifty-**two**. Leaving out the supply charge is the **slip**.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: on "hours" "25 203 − 24 615 = 588 kWh" (blue); on "two" "92 × 1.05 = $96.60; 588 × 0.34 = $199.92; total $296.52" (framed green). On "slip" a red slip "total = $199.92" writes and is crossed (caption "add the supply charge"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px: on "hours" "25 203 − 24 615 = 588 kWh" (blue); on "sixty" "supply: 92 × 1.05 = $96.60"; on "two" (first) "usage: 588 × 0.34 = $199.92"; on "two" (second) "total: 96.60 + 199.92 = $296.52" (framed green). One result per row (Revision 2). On "slip" a red slip "total = $199.92" writes and is crossed (caption "add the supply charge"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A gas bill covers ninety-one days, and the household used fifty-two hundred megajoules. The first eighteen hundred megajoules cost four point eight cents each, and the rest cost three point nine cents each. There's also a supply charge of seventy-five cents a day. Find the total bill. Pause here to answer.
@@ -113,9 +113,9 @@ Visual: the card shrinks to the top (30 px). Rows, 44 px: on "hours" "25 203 −
 Visual: `QuestionCard`, 40 px: "A gas bill covers 91 days. The household used 5200 MJ. The first 1800 MJ cost 4.8c per MJ and the rest cost 3.9c per MJ, and there is a supply charge of 75c a day. Find the total bill." Picture slot: the two-block container, empty. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
-> The first block is eighty-six forty. The other thirty-four hundred megajoules cost a hundred and thirty-two **sixty**. Supply is sixty-eight twenty-five. So the bill is two hundred and eighty-seven dollars twenty-**five**. Charging all fifty-two hundred at four point eight cents is the **slip**.
+> The first block is eighty-six **forty**. The other thirty-four hundred megajoules cost a hundred and thirty-two **sixty**. Supply is sixty-eight twenty-**five**. So the bill is two hundred and eighty-seven dollars twenty-**five**. Charging all fifty-two hundred at four point eight cents is the **slip**.
 
-Visual: the card shrinks to the top. Rows, 44 px: "1800 × 0.048 = $86.40"; on "sixty" "3400 × 0.039 = $132.60"; on "five" "91 × 0.75 = $68.25; total $287.25" (framed green). On "slip" a red slip "5200 × 0.048 + 68.25 = $317.85" writes and is crossed (caption "first block, then the rest"). Hold about 1 s.
+Visual: the card shrinks to the top. Rows, 44 px, one result per cue (Revision 2): on "forty" "1800 × 0.048 = $86.40"; on "sixty" "3400 × 0.039 = $132.60"; on "five" (first) "supply: 91 × 0.75 = $68.25"; on "five" (second) "total: 86.40 + 132.60 + 68.25 = $287.25" (framed green). On "slip" a red slip "5200 × 0.048 + 68.25 = $317.85" writes and is crossed (caption "first block, then the rest"). Hold about 1 s.
 
 ### 12. handoff
 > So the share house's three bills this quarter, for the part tenants pay, come to seven hundred and sixty-one dollars twenty-one. That's a lot to find every three months. So where does it fit, next to rent, food, a phone and a car, on one week's pay? That's a budget, and it's **next**.
@@ -161,7 +161,7 @@ Model answer: 1800 × 0.048 = $86.40; (5200 − 1800) × 0.039 = 3400 × 0.039 =
 | --- | --- | --- |
 | Electricity | 812 kWh; 100.10; 267.96; 368.06 | 1 to 3 |
 | Appliances | 66c; 15 kWh; 4.95 | 2 |
-| Check | 4.04 a day; 412.16 over 92 days, 4.48 | 4 |
+| Check | 4.04 a day; 412.16 over 92 days, 4.48; 812 ÷ 91 ≈ 8.9 kWh a day | 4 |
 | Water | 58 kL; 156.60; 190; 346.60 | 5 |
 | Gas | 86.40; 81.90; 68.25; 236.55; slip 255.45 | 6 |
 | House | 761.21 | 12 |
@@ -175,6 +175,7 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 - 19 264 − 18 452 = 812; 91 × 1.10 = 100.10; 812 × 0.33 = 267.96; 100.10 + 267.96 = 368.06; 368.06 ÷ 91 = 4.0446.
 - 2 × 0.33 = 0.66; 2.5 × 6 = 15; 15 × 0.33 = 4.95.
 - 412.16 ÷ 92 = 4.48.
+- 812 ÷ 91 = 8.923 → 8.9 kWh a day (Revision 2).
 - 1342 − 1284 = 58; 58 × 2.70 = 156.60; 156.60 + 190 = 346.60.
 - 1800 × 0.048 = 86.40; 2100 × 0.039 = 81.90; 91 × 0.75 = 68.25; 86.40 + 81.90 + 68.25 = 236.55; 3900 × 0.048 + 68.25 = 255.45; 255.45 − 236.55 = 18.90.
 - 368.06 + 156.60 + 236.55 = 761.21.
@@ -191,6 +192,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,790 characters**, 13 scene headings. Characters per scene (1 to 13): 427, 693, 678, 606, 617, 834, 224, 388, 354, 317, 284, 281, 75. Feedback speech about 26.6 s and 21.4 s.
 
 At 13.3 characters per second the speech is about 435 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the meter (2), the bill builder (3) and the gas blocks (6), about 22 s; the key-notes scene adds about 39 s beyond its line. Total **about 522 s**, 48 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,962 characters**, 13 scene headings (per scene: 427, 742, 678, 729, 617, 834, 224, 388, 354, 317, 284, 281, 75); speech about 448 s; total **about 535 s**, 35 s under the 570 s cap. Feedback speech about 26.6 s and 21.4 s.
 
 Reserve trims if the voiced take runs long: scene 4's last sentence; scene 5's "That's showers, washing and the garden for three months."
 
@@ -281,6 +284,16 @@ Builds on: Running a Car: Yearly Costs in a Spreadsheet. Next: Building a Budget
 - **1. The air conditioner plate.** Optional in scene 2 (yellow fringe on its wall wash). Root may brief a clean replacement or leave the coded bar alone.
 - **2. Tenant water sentence.** Kept to "usually"; Codex confirms.
 - **3. Electricity tiers.** Not taught (the syllabus names usage, not tariffs); the gas blocks carry the block idea. Root may add a tiered electricity line to attempt 1 if HSC papers favour it.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m07-learning-review.md` (0 blockers, 1 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (cost per day read as usage): applied.** Scene 4 now says "So this bill costs a bit less per day than last year. But rates change, so to check the house is really using less, compare kilowatt-hours per day, which most bills print." The bars are captioned "cost per day"; a grey chip "rates change each year" and a row "812 ÷ 91 ≈ 8.9 kWh a day" (hand tag "use, not cost") write on their cues. The memory aid is unchanged. Added to Numbers to verify.
+- **N1 (feedback 1 row): applied (root ruling 7).** Supply, usage and total each write on their own cue ("sixty", "two", "two"). Feedback 2 is split the same way (first block on "forty"; supply and total on the two "five" cues).
+- **N2 (plates):** the water and electricity meter plates are still needed before build; no design change.
+- **N3 (watts): applied.** Scene 2 adds "Watts measure how fast an appliance uses energy." before the kilowatt-hour meaning.
+- Narration 5,962 characters (was 5,790), about 535 s with holds.
 
 ## Review notes
 

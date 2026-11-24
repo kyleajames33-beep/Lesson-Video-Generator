@@ -1,8 +1,8 @@
 # Maths S11 M02: How do we add or remove GST, and how does VAT work overseas? GST as a 10% increase, adding it (× 1.1), removing it (÷ 1.1), the GST inside a price as one part in eleven, a receipt with GST-free food, and VAT abroad by the same parts (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, `f01.md`, each at Revision 2), `math-s11-m01.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 3, 5 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, `f01.md`, each at Revision 2), `math-s11-m01.md` (Revision 1, this batch), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 3, 5 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,487 characters by script (see "Narration length estimate"), 13 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,499 characters by script at Revision 2 (Revision 1: 5,487; see "Narration length estimate"), 13 scene headings, about 499 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: Year 11 Managing money, outline playlist order 29. One video for Standard 1 and Standard 2. Viewers arrive from m01's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m02.md`. Route entry: `math-s11-m02` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson01.sa.html` (site L9), card 1, WE1 and SAQ 1 used; VAT and overseas purchases are taught from the syllabus (ruling 3; site gap logged as MSY-02 in `../site-corrections-maths-standard-y11-additions.md`). Visual system: maths studio kit; the grocery basket and the travel suitcase (both existing); the receipt, quote card, parts bar and boards coded.
 
@@ -34,7 +34,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Memory aid.** Framed card: "GST is 1 part in 11." Key line: "Add: × 1.1. Remove: ÷ 1.1. GST inside a price: ÷ 11. Other rates: count the parts."
 - **Visual surprise.** The crossed "× 0.9" block lands short of the true $1480 line, so the missing $14.80 shows as a red-outlined gap (scene 3); and in scene 6 the same bar redraws itself into six parts.
 - **Plain meanings at first use.** GST ("goods and services tax, a ten per cent tax on most things sold in Australia"); GST-free ("no GST is charged, as for most basic food"); GST-inclusive ("the GST is already in the price"); VAT ("value-added tax, the name many countries use for the same kind of tax").
-- **Attempts.** A1 (pack question 1): mechanic's bill $462 including GST: GST $42, price before GST $420; crossed "GST = 462 × 0.1 = $46.20" (caption "the 10% was of $420"). A2 (pack question 2): UK train ticket £54 including 20% VAT: £45, £9, and the friend's error; crossed "VAT = 54 × 0.2 = £10.80" (caption "the 20% was added to £45").
+- **Attempts.** A1 (pack question 1): mechanic's bill $462 including GST: GST $42, price before GST $420; crossed "GST = 462 × 0.1 = $46.20" (caption "the 10% was of $420"). A2 (pack question 2; Revision 2 item): a London hotel room, £54 a night including 20% VAT (standard-rated; Revision 1's train ticket was dropped because UK rail fares are zero-rated): £45, £9, and the friend's error; crossed "VAT = 54 × 0.2 = £10.80" (caption "the 20% was added to £45").
 - **Mistake scene:** none separate. 10% of an inclusive price (A1 crossed, said in 4); × 0.9 to remove GST (3, crossed); GST on GST-free items (5, crossed); ÷ 11 at another rate (6, said: "the parts change with the rate").
 - **Cause chain taught, in order:** (1) GST is a 10% increase on the price before GST, so adding it is × 1.1 (2); (2) removing it undoes that multiplication, so divide by 1.1; taking 10% off the total fails because the 10% was of the smaller price (3); (3) the price before GST is 10 parts and the GST is 1 more part, so the GST is 1 part in 11 of the total (4); (4) GST-free lines carry no tax, so only the taxable lines are split into 11 parts (5); (5) another rate makes different parts, 100 + 20 = 120, so VAT at 20% is 1 part in 6 (6).
 - **Entry knowledge (route):** math-s11-m01 (the multiplier; divide by where you started). Recalled in a grey chip.
@@ -80,7 +80,7 @@ Visual: stage change (simulation 1): a coded price card "Laptop $1628 incl. GST"
 Visual: stage change (simulation 2): the `PartsBar` (1,300 × 130 px) under the label "$1628": ten blue parts write on one by one, counter "10 parts: price before GST"; on "one more part" a violet part joins at the right, "1 part: GST"; on "altogether" the counter reads "11 parts = $1628", hand tag "1 part in 11". On "dollars" every part labels "$148" and the violet one rings, row "GST = 1628 ÷ 11 = $148" (52 px, violet), framed green. Row "1480 + 148 = 1628 ✓". On "ten" a red slip "GST = 1628 × 0.1 = $162.80" writes and is crossed (caption "$1628 is 11 parts, not 10"). On "haircut" a small 11-part bar (900 px) writes under the first, labelled "$55", each part "$5"; on "GST" (last) its violet part rings "$5 GST" and its blue parts "$50 before GST" (framed green).
 
 ### 5. the receipt: only the taxed lines
-> Back to the supermarket. Twenty dollars thirty altogether, but the bread, milk and bananas are GST-free. Only the chips and the soft drink carry GST. They add to eight dollars **eighty**. That's eleven parts, so the GST is eight eighty divided by eleven, eighty **cents**. So of the twenty dollars thirty, just eighty cents is tax. Dividing the whole twenty thirty by eleven gives a dollar eighty-five, which taxes the bread and milk as **well**. And notice that the GST was never added at the register. In Australia, the price on the shelf has to include the GST, so the price you see is the price you **pay**.
+> Back to the supermarket. Twenty dollars thirty altogether, but the bread, milk and bananas are GST-free. Only the chips and the soft drink carry GST. They add to eight dollars **eighty**. That's eleven parts, so the GST is eight eighty divided by eleven, eighty **cents**. So of the twenty dollars thirty, just eighty cents is tax. Dividing the whole twenty thirty by eleven gives a dollar eighty-five, which taxes the bread and milk as **well**. And notice that the GST was never added at the register. In Australia, shops show prices with the GST already in, so the price you see is the price you **pay**.
 
 Visual: stage change (simulation 3): the receipt card (40 px) centre. On "GST-free" the three "#" lines slide left and grey out under a grey label "GST-free: no tax". On "eighty" (first) the two taxable lines slide right into an amber box, sum "5.50 + 3.30 = $8.80" (teal). The $8.80 drops onto an 11-part bar; on "cents" one violet part rings, row "GST = 8.80 ÷ 11 = $0.80" (framed green), and the receipt's "includes GST ?" fills "includes GST $0.80"; hand tag "only taxed lines". On "well" a red slip "20.30 ÷ 11 = $1.85" writes and is crossed (caption "bread, milk and bananas have no GST"). On "pay" grey chip "shelf price = price including GST".
 
@@ -105,9 +105,9 @@ Visual: `QuestionCard`, 40 px, worded as printed: "A mechanic's bill is $462, in
 Visual: the card shrinks to the top (30 px). Rows, 44 px: on "dollars" (first) "GST = 462 ÷ 11 = $42" (violet), framed green; on "dollars" (second) "462 ÷ 1.1 = $420" (blue), framed green, check "420 × 1.1 = 462 ✓". On "slip" a red slip "GST = 462 × 0.1 = $46.20" writes and is crossed (caption "the 10% was of $420"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
-> Last one. In the United Kingdom, VAT is twenty per cent. A train ticket costs fifty-four pounds, including VAT. Find the price before VAT, and the VAT included. A friend says the VAT is twenty per cent of fifty-four pounds, ten pounds eighty. Explain the error. Pause here to answer.
+> Last one. In the United Kingdom, VAT is twenty per cent. A hotel room in London costs fifty-four pounds a night, including VAT. Find the price before VAT, and the VAT included. A friend says the VAT is twenty per cent of fifty-four pounds, ten pounds eighty. Explain the error. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "In the United Kingdom, VAT is 20%. A train ticket costs £54, including VAT. (a) Find the price before VAT. (b) Find the VAT included. (c) A friend says the VAT is 20% of £54, which is £10.80. Explain the error." Picture slot: the suitcase (260 px) and a coded ticket "£54 incl. VAT". Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "In the United Kingdom, VAT is 20%. A hotel room in London costs £54 a night, including VAT. (a) Find the price before VAT. (b) Find the VAT included. (c) A friend says the VAT is 20% of £54, which is £10.80. Explain the error." Picture slot: the suitcase (260 px) and a coded hotel booking card "1 night, £54 incl. VAT". Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > Fifty-four divided by one point two is forty-five **pounds** before VAT. So the VAT is nine pounds, one part in **six**. The friend took twenty per cent of the wrong amount. The twenty per cent was added to forty-five pounds, not to fifty-**four**.
@@ -149,7 +149,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 **Attempt 1 (scene 8; pack question 1, original HSC style, 2 marks suggested, not an official marking scheme).** "A mechanic's bill is $462, including GST. Find (a) the GST included in the bill (b) the price before GST."
 Model answer: (a) 462 ÷ 11 = $42. (b) 462 ÷ 1.1 = $420 (check 420 × 1.1 = 462). Classic mistake (crossed): "GST = 462 × 0.1 = $46.20".
 
-**Attempt 2 (scene 10; pack question 2, 3 marks suggested).** "In the United Kingdom, VAT is 20%. A train ticket costs £54, including VAT. (a) Find the price before VAT. (b) Find the VAT included. (c) A friend says the VAT is 20% of £54, which is £10.80. Explain the error."
+**Attempt 2 (scene 10; pack question 2, 3 marks suggested).** "In the United Kingdom, VAT is 20%. A hotel room in London costs £54 a night, including VAT. (a) Find the price before VAT. (b) Find the VAT included. (c) A friend says the VAT is 20% of £54, which is £10.80. Explain the error."
 Model answer: (a) 54 ÷ 1.2 = £45. (b) 54 − 45 = £9. (c) The 20% was added to the price before VAT (£45), not to £54; the VAT is one part in six of the inclusive price. Classic mistake (crossed): "VAT = 54 × 0.2 = £10.80".
 
 ## Numbers used (author note: every value)
@@ -186,6 +186,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,487 characters**, 13 scene headings. Characters per scene (1 to 13): 550, 577, 634, 756, 595, 787, 207, 165, 290, 283, 236, 320, 75. Feedback speech about 21.8 s and 17.7 s.
 
 At 13.3 characters per second the speech is about 413 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the backward arrow (3), the parts bar (4), the receipt filter (5) and the rate slider (6), about 20 s; the key-notes scene adds about 39 s beyond its line. Total **about 498 s**, 72 s under the 570 s cap. At 5,487 characters it sits at the bottom of the 5,500 to 6,800 target, like e12 (4,745) and r09 (ruling 55): no padding was added.
+
+Revision 2 (24 Nov 2026, same script): **5,499 characters**, 13 scene headings (per scene: 550, 577, 634, 756, 591, 787, 207, 165, 290, 299, 236, 320, 75); speech about 413 s; total **about 499 s**, 71 s under the 570 s cap. Feedback speech about 21.8 s and 17.7 s.
 
 Reserve trims if the voiced take runs long: scene 2's last sentence ("And three forty plus thirty-four ...", the check row shows it); scene 6's New Zealand example can lose its working sentence (the rows show it).
 
@@ -240,7 +242,7 @@ No new plate. All plates exist.
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check every value under "Numbers to verify" with exact arithmetic.
 2. Confirm both syllabus quotes match the route-inputs JSON exactly.
-3. Confirm with dated sources: Australian GST 10% and that plain bread, milk and fresh fruit are GST-free while potato chips and soft drinks are taxable (ATO); UK standard VAT 20% (GOV.UK); New Zealand GST 15% (Inland Revenue); that Australian displayed prices must include GST (ACCC, component pricing). Confirm the "rates can change" sentence is said once.
+3. Confirm with dated sources: Australian GST 10% and that plain bread, milk and fresh fruit are GST-free while potato chips and soft drinks are taxable (ATO); UK standard VAT 20% (GOV.UK), and that UK hotel accommodation is standard-rated (A2; Revision 1's train fare was zero-rated); New Zealand GST 15% (Inland Revenue); that Australian displayed prices must include GST (ACCC, component pricing). Confirm the "rates can change" sentence is said once.
 4. Confirm the spoken forms match the screen.
 5. Confirm both attempts carry every demand and show no answer.
 6. Confirm scene 1 opens on m01's final frame and scene 12 matches m03's boundary.
@@ -270,6 +272,17 @@ Builds on: Percentage Change, Profit and Loss. Next: Buy Now, Pay Later: What It
 
 - **1. The "#" GST-free mark.** Receipts use different marks; "#" with a footnote is a generic choice. Root may prefer "GST-free" spelt out beside each line (wider receipt).
 - **2. Two overseas examples.** UK VAT carries the teaching; New Zealand shows the same idea at a rate that does not make whole small parts. Root may drop New Zealand to a chip if the voiced take runs long.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m02-learning-review.md` (0 blockers, 1 should fix, 3 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (UK train fares are zero-rated): applied (root ruling 6).** A2 is now "A hotel room in London costs £54 a night, including VAT", a standard-rated item, in the narration, the card, the picture slot (a coded hotel booking card "1 night, £54 incl. VAT") and the model answer. The numbers (£45, £9, £10.80) are unchanged. Codex's brief item 3 now asks for the dated GOV.UK page confirming hotel accommodation is standard-rated.
+- **N1 (shelf-price rule as a legal fact): applied.** Scene 5 now says "shops show prices with the GST already in". The ACCC component-pricing check stays in Codex's brief item 3.
+- **N2 (two money-speaking styles): preview check.** In voiced preview, if "sixteen twenty-eight" is unclear, say "sixteen hundred and twenty-eight" on first use in the scene.
+- **N3 (rate chips undated): left to Codex**, who records the dated ATO, GOV.UK and Inland Revenue pages in the check file (brief item 3).
+- Feedback rows already show one result per cue; no change.
+- Narration 5,499 characters (was 5,487), about 499 s with holds.
 
 ## Review notes
 

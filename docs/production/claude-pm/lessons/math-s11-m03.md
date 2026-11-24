@@ -1,8 +1,8 @@
 # Maths S11 M03: What does buy now, pay later really cost? How a pay-in-4 plan works, who pays for "free", account fees and late fees, the extra as a percentage of the price, why a flat fee bites a small purchase, and several plans at once (design)
 
-Status: Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` and `m02.md` (Revision 1, this batch), Year 12 `math-s12-i12.md` (Revision 2, for the BNPL wording it recalls), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, finding N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 6 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` and `m02.md` (Revision 1, this batch), Year 12 `math-s12-i12.md` (Revision 2, for the BNPL wording it recalls), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`, finding N5) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5, 6 and 32 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,537 characters by script (see "Narration length estimate"), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,708 characters by script at Revision 2 (Revision 1: 5,537; see "Narration length estimate"), 13 scene headings, about 515 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: Year 11 Managing money, outline playlist order 30. One video for Standard 1 and Standard 2. Viewers arrive from m02's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m03.md`. Route entry: `math-s11-m03` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson04.sa.html` (site L12), Think First, key terms, card 2 and SAQ 2 used; two site issues logged as MSY-03. Visual system: maths studio kit; the headphones, swing tag and t-shirt plates (existing); the payment timeline, fee bars, fortnight bar and boards coded.
 
@@ -21,7 +21,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Anchor: the $480 headphones (site Think First; m02's final frame).** The hook states the plan's promise ("no interest, take them home today") and asks whether it really costs nothing extra; scene 3 answers it with the example plan's totals.
 - **Months stated, not derived (MSY-03).** The timeline shows four payment ticks at weeks 0, 2, 4 and 6, laid over two calendar-month blocks; the card says "the plan is open for 2 months". The site's "4 fortnights is 2 months" is not repeated.
 - **Example plan, labelled (pack decision; ruling 32).** "Example plan: $6 a month account fee while you owe; $10 for each missed payment." The narration says some plans charge no account fee and only late fees (Moneysmart, as cited in Year 12 i12). The headphones' total with this plan is the site's $492 and $502.
-- **Year 12 setup (route inputs 10, year12DependsOn; audit N5).** Total cost = price + account fees + late fees is taught here as the rule Year 12 i12 calls "the Year 11 rule"; "free only while every payment is on time" is this video's card, which i12's key line echoes. No e-bike, console or loan appears.
+- **Year 12 setup (route inputs 10, year12DependsOn; audit N5).** Total cost = price + account fees + late fees is taught here as the rule Year 12 i12 calls "the Year 11 rule"; Revision 1's card "free only while every payment is on time" is replaced at Revision 2 (it contradicted scene 3's on-time total of $492); the new card is "Interest-free isn't free: account fees even on time, late fees when you miss." Year 12 i12's key line ("BNPL: free only while every instalment is on time") needs a matching root edit (flagged; i12 is outside this round's files). No e-bike, console or loan appears.
 - **Who pays for "free" (examine).** One plain sentence: the shop pays the provider a cut of each sale, because people spend more when they don't pay all at once. Said as a fact about the business model, not a judgement.
 - **Regulation (ASIC Information Sheet 285, as cited in Year 12 i12).** One sentence in scene 6: since June 2025 providers need a credit licence and must check a plan suits you, and missed payments can show on a credit report.
 - **Simulations (standard item 3).**
@@ -33,7 +33,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Large type, handwritten voice.** Timeline labels 36 px; readouts 52 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "first one today", "done in 6 weeks", "the shop pays", "each month you owe", "each missed payment", "nearly doubled", "same $, bigger %", "too many at once". At most two live at once.
 - **Stage changes (standard item 2).** The headphones and card (1); the payment timeline (2); fees on the timeline (3); the percentage board (4); headphones and t-shirt bars (5); the fortnight squeeze (6); framed card (7); question cards (8 to 11); the television (12); key notes (13).
 - **Worked examples (g01 order).** Scene 3: task strip "Example plan: $480 in 4 payments; $6 a month while you owe (2 months); $10 per missed payment."; givens card (price blue, fees violet); rows "480 + 2 × 6 = $492", "492 + 10 = $502"; framed answers. Scene 4: "12 ÷ 480 × 100% = 2.5%", "22 ÷ 480 × 100% = 4.6%". Crossed slip in 3: "0% interest, so $480" (caption "fees aren't interest").
-- **Memory aid.** Framed card: "Free only while every payment is on time." Key line: "Total = price + account fees + late fees. Compare the extra with the price."
+- **Memory aid.** Framed card (Revision 2): "Interest-free isn't free: account fees even on time, late fees when you miss." Key line: "Total = price + account fees + late fees. Compare the extra with the price."
 - **Visual surprise.** The same violet fee block that is a sliver on the headphones towers over the t-shirt's bar (scene 5).
 - **Plain meanings at first use.** Buy now, pay later ("you take the item today and pay for it in equal parts"); instalment ("one of the equal payments"); account fee ("a fee for each month you owe the provider money"); late fee ("a fee each time a payment is missed"); total cost ("every dollar you pay, added up"); credit licence (in a chip: "permission to lend, with rules").
 - **Attempts.** A1 (pack question 1): $720 phone, 6 fortnightly instalments, $4 a month for 3 months, $15 late fee: $120; $732; two missed $762, 5.8%; crossed "two missed: still $732" (caption "add $15 for each missed payment"). A2 (pack question 2): one $10 late fee on $40 and on $400: 25% and 2.5%, with the reason; crossed "$10 is $10, the same either way" (caption "compare it with the price").
@@ -92,19 +92,19 @@ Visual: stage change (simulation 3): the t-shirt `ma11-tshirt-v1.png` (about 360
 Visual: stage change (simulation 4): a horizontal bar "spare each fortnight: $150" (teal outline, 1,200 px). Three blocks write in turn and stack into it: "headphones $120", "shoes $45", "concert ticket $30" (violet outlines). On "weeks" a total "120 + 45 + 30 = $195" (52 px). On "don't fit" the stack overflows the bar's end by "$45", flashing amber "short $45", hand tag "too many at once". On "start" red "+$10" stamps drop onto the overflow. On "credit licence" a grey chip "since 10 June 2025: a credit licence and checks (ASIC)". On "spare" the row "add every plan's payment ≤ what's spare" (green outline).
 
 ### 7. memory aid
-> Here's the summary. Buy now, pay later is free only while every payment is on time. The total cost is the price, plus account fees, plus late fees. And always compare the extra with the **price**.
+> Here's the summary. Buy now, pay later charges no interest, but it isn't always free. Account fees cost even when you pay on time, and late fees cost when you don't. The total cost is the price, plus account fees, plus late fees. And always compare the extra with the **price**.
 
-Visual: stage change to the framed `MemoryAidCard`. Left slot: the payment timeline with its four teal coins, one turned red. Main line, hand font 56 px: "Free only while every payment is on time." On "price" the key line, 40 px: "Total = price + account fees + late fees. Compare the extra with the price." Hold about 2 s.
+Visual: stage change to the framed `MemoryAidCard`. Left slot: the payment timeline with its four teal coins, one turned red. Main line, hand font 56 px: "Interest-free isn't free: account fees even on time, late fees when you miss." (the $6 stamps from scene 3 glow on "even when you pay on time"; the red coin on "when you don't"). On "price" the key line, 40 px: "Total = price + account fees + late fees. Compare the extra with the price." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
-> Your turn. A seven hundred and twenty dollar phone is bought on a buy now, pay later plan, with six equal fortnightly instalments. There's a four-dollar account fee for each month money is owed, and the plan runs for three months. A missed payment costs fifteen dollars. Find each instalment, and the total cost if every payment is on time. Then two payments are missed. Find the total cost, and the extra as a percentage of the price, to one decimal place. Pause here to answer.
+> Your turn. A seven hundred and twenty dollar phone is bought on a buy now, pay later plan, with six equal fortnightly instalments. There's a four-dollar account fee for each month money is owed, and the plan runs for three months. A missed payment costs fifteen dollars. Find each instalment, and the total cost if every payment is on time. Then two payments are missed. Find the total cost, and the extra as a percentage of the price, to one decimal place. There's a lot to read, so pause the video if you need more time. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px, worded as printed: "A $720 phone is bought with a buy now, pay later plan: 6 equal fortnightly instalments, a $4 account fee for each month money is owed (the plan runs for 3 months) and a $15 late fee for each missed payment. (a) Find each instalment. (b) Find the total cost if every payment is on time. (c) Two payments are missed. Find the total cost and the extra paid as a percentage of the price, correct to one decimal place." Picture slot: the phone plate `ma11-phone-budget-v1.png` (260 px) with a coded "$720". Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
+Visual: `QuestionCard`, 40 px, worded as printed, with the givens grouped in a blue box at the top (Revision 2): "Phone: $720 | 6 equal fortnightly instalments | account fee: $4 for each month money is owed (the plan runs for 3 months) | late fee: $15 for each missed payment", one given per line, then the three short questions below: "(a) Find each instalment. (b) Find the total cost if every payment is on time. (c) Two payments are missed. Find the total cost and the extra paid as a percentage of the price, correct to one decimal place." Picture slot: the phone plate `ma11-phone-budget-v1.png` (260 px) with a coded "$720". Countdown ring shown full from "Pause here to answer.", then 10 s. Nothing answer-bearing.
 
 ### 9. feedback 1 (brief)
-> Each instalment is seven twenty divided by six, a hundred and twenty **dollars**. On time, the total is seven twenty plus three lots of four, seven hundred and thirty-**two**. Two missed payments add thirty dollars, so seven hundred and sixty-two, and forty-two on seven twenty is five point eight per **cent**. Leaving the late fees out is the **slip**.
+> Each instalment is seven twenty divided by six, a hundred and twenty **dollars**. On time, the total is seven twenty plus three lots of four, seven hundred and thirty-**two**. Two missed payments add thirty dollars, so seven hundred and sixty-**two**. That's forty-two extra, and forty-two on seven twenty is five point eight per **cent**. Leaving the late fees out is the **slip**.
 
-Visual: the card shrinks to the top (30 px). Rows, 44 px: on "dollars" "720 ÷ 6 = $120" (teal); on "two" "720 + 3 × 4 = $732" (framed green); on "cent" "732 + 2 × 15 = $762; 42 ÷ 720 × 100% ≈ 5.8%" (framed green). On "slip" a red slip "two missed: still $732" writes and is crossed (caption "add $15 for each missed payment"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). Rows, 44 px: on "dollars" "720 ÷ 6 = $120" (teal); on "two" (first) "720 + 3 × 4 = $732" (framed green); on "two" (second) "732 + 2 × 15 = $762" (framed green); on "cent" "42 ÷ 720 × 100% ≈ 5.8%" on its own row (framed green). On "slip" a red slip "two missed: still $732" writes and is crossed (caption "add $15 for each missed payment"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A plan charges a ten-dollar late fee for a missed payment. Compare one late fee on a forty-dollar purchase and on a four-hundred-dollar purchase, as a percentage of each price. Then explain why buy now, pay later can be expensive for small purchases. Pause here to answer.
@@ -127,11 +127,11 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 - Instalments add to the price: $480 = 4 × $120.
 - Total = price + account fees + late fees.
-- Account fee: per month owed. Late fee: per missed payment.
+- Account fee: per month owed, even if on time. Late fee: per missed payment.
 - Extra as a %: extra ÷ price × 100%.
 - A fixed fee is a bigger % of a small price; add up every plan.
 
-Memory aid (framed card, right side, as in scene 7): *Free only while every payment is on time.* Key: *Total = price + account fees + late fees. Compare the extra with the price.* The notes scene is 1,350 frames (45 s).
+Memory aid (framed card, right side, as in scene 7): *Interest-free isn't free: account fees even on time, late fees when you miss.* Key: *Total = price + account fees + late fees. Compare the extra with the price.* The notes scene is 1,350 frames (45 s).
 
 Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exactly. This is the final frame and m04's opening frame.
 
@@ -179,7 +179,7 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 
 ## Memory aid check
 
-- **"Free only while every payment is on time."** with key line **"Total = price + account fees + late fees. Compare the extra with the price."** Original. Meaning, as said in scene 7: the instalments only add to the price; the extra comes from fees, mostly late ones. Assumptions checked: a plan with no account fee is free when paid on time (said in 3); a plan with an account fee costs a little even when on time, so the card says "free only while", not "always free while" (the key line's total covers both). It helps a new case: a $200 jacket on 4 instalments with no account fee and two missed $10 payments costs $220, 10% extra. Year 12 i12's key line ("BNPL: free only while every instalment is on time") recalls it.
+- **"Interest-free isn't free: account fees even on time, late fees when you miss."** (Revision 2; Revision 1's card was "Free only while every payment is on time") with key line **"Total = price + account fees + late fees. Compare the extra with the price."** Original. Meaning, as said in scene 7: the instalments only add to the price; the extra comes from fees, mostly late ones. Assumptions checked (Revision 2): a plan with no account fee costs nothing extra when paid on time (said in 3); a plan with an account fee costs a little even when on time (scene 3's $492), and the card now says so in words a student reads literally, so it cannot be read as "pay on time = free"; late fees apply only to missed payments. It helps a new case: a $200 jacket on 4 instalments with no account fee and two missed $10 payments costs $220, 10% extra. Year 12 i12's key line ("BNPL: free only while every instalment is on time") recalled Revision 1's card; root to align it with this wording.
 - **Considered, not used:** "0% interest is not 0% cost" (true, but a slogan without the total).
 
 ## Narration length estimate
@@ -187,6 +187,8 @@ Recalculated with exact decimal arithmetic (23 Nov 2026, scratchpad `s11m/verify
 Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,537 characters**, 13 scene headings. Characters per scene (1 to 13): 451, 717, 758, 437, 506, 699, 192, 479, 338, 282, 223, 368, 75. Feedback speech about 25.4 s and 16.8 s.
 
 At 13.3 characters per second the speech is about 416 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the timeline (2, 3), the bars (5) and the squeeze (6), about 21 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
+
+Revision 2 (24 Nov 2026, same script): **5,708 characters**, 13 scene headings (per scene: 451, 717, 758, 437, 506, 699, 274, 544, 362, 282, 223, 368, 75); speech about 429 s; total **about 515 s**, 55 s under the 570 s cap. Feedback speech about 27.2 s and 16.8 s.
 
 Reserve trims if the voiced take runs long: scene 2's "That's worth knowing. These plans are built to make spending easy." (the arrow shows the shop's cut); scene 4's last sentence.
 
@@ -269,6 +271,17 @@ Builds on: GST and VAT: Adding and Removing the Tax. Next: Buying on Terms and C
 
 - **1. Credit report sentence.** Year 12 i12 says the same; Codex confirms it against a dated ASIC or Moneysmart page. If unconfirmed, scene 6 keeps only the licence and checks.
 - **2. "The shop pays" wording.** Plain and factual; root may prefer "the shop usually pays".
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-m03-learning-review.md` (0 blockers, 2 should fix, 2 notes). Resolution record: `../checks/m-s11-m-a-learning-review-resolution.md`.
+
+- **SF1 (memory aid contradicts the $492 on-time total): applied (root ruling 4).** The card is now "Interest-free isn't free: account fees even on time, late fees when you miss." Scene 7 says "Buy now, pay later charges no interest, but it isn't always free. Account fees cost even when you pay on time, and late fees cost when you don't." The $6 stamps glow on "on time" and the red coin on "when you don't". Key note 3 reads "Account fee: per month owed, even if on time." The key line is unchanged. Decisions and the memory aid check are updated. **Root:** Year 12 i12's key line still reads "BNPL: free only while every instalment is on time"; it should be aligned (for example "BNPL: interest-free isn't free; fees even on time"). i12 is outside this round's files.
+- **SF2 (A1 reading load): applied, both options.** The A1 card now groups the givens in a blue box, one per line (price; instalments; account fee with the 3-month plan; late fee), with the three short questions below. The narration adds "There's a lot to read, so pause the video if you need more time." before "Pause here to answer." on this attempt only.
+- **N1 (two misses could extend the plan):** the card's "(the plan runs for 3 months)" is kept word for word, and the model answer is unchanged ($762).
+- **N2 (dated regulation chip):** already met; no change.
+- **Feedback rows (root ruling 7):** feedback 1 now writes "$762" on "sixty-two" and "42 ÷ 720 × 100% ≈ 5.8%" on its own row on "cent".
+- Numbers: no value changed. Narration 5,708 characters (was 5,537), about 515 s with holds.
 
 ## Review notes
 
