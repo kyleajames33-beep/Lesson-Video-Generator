@@ -1,8 +1,8 @@
 # Maths S11 D01: How does a statistical investigation start? An issue, a statistical question for a target population, and a survey with clear language, unambiguous questions and the right number of choices (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n07.md` and `t01.md` (Revision 1), the Year 12 designs that recall this strand (b01 to b06, p05, p07, p08, z01 to z03), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n07.md` and `t01.md` (Revision 1), the Year 12 designs that recall this strand (b01 to b06, p05, p07, p08, z01 to z03), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,594 characters by script (see "Narration length estimate"), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,661 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: first video of the Year 11 Data analysis strand, outline playlist order 61. One video for Standard 1 and Standard 2. Viewers arrive from n07's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d01.md`. Route entry: `math-s11-d01` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson02.sa.html` and `lesson09.sa.html` (partial; the issue-to-question step and the questionnaire principles are taught from the syllabus, MSY-33). Visual system: maths studio kit; the phone, exam desk, bedroom, alarm clock and wall calendar plates (all existing); the investigation strip, question board and answer sorter coded.
 
@@ -17,10 +17,18 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 
 **Boundary:** starts from n07's final frame exactly (the phone `ma12-phone-v1.png`, about 640 px tall, at the centre-left with a coded survey screen: "How many hours did you sleep last night?" (40 px) and four answer buttons "under 7", "7 to 8", "8 to 9", "over 9"; grey strand chip "Networks, paths and trees: done"; chips "a clear question, a fair survey", "Next: statistical investigations" and "?"). This confirms the n07 to d01 join unchanged: n07's provisional mark is lifted (see "Decisions", "Join"). Recalls Stage 5 surveys in a phrase. Teaches: the six-step investigation; issue, statistical question, target population (sample named only); clear language; unambiguous questions; number of choices; an open number box. Not taught: privacy, bias and leading questions (d02); sampling methods and census (d03); faults (d04); data types (d05).
 
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d01-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D01-GUIDE (should fix, root's ruling 2): applied.** Scene 2 now says "Australian guidelines advise teenagers to get eight to ten hours of sleep a night", and the guideline chip carries a grey source line, 28 px: "Australian 24-Hour Movement Guidelines (Australian Government, 2019)". The design cites the Australian Government Department of Health's Australian 24-Hour Movement Guidelines for Children (5 to 12 years) and Young People (13 to 17 years), 2019; its health.gov.au publication page and fact sheet were checked on 24 Nov 2026 (14 to 17 years: 8 to 10 hours of uninterrupted sleep a night). The YouTube description gains a "Sleep guideline source" line. Author note (c), Numbers used, Numbers to verify and error-check item 3 match; Codex confirms the year. d16 and d19 carry the same source line.
+- **D01-NIGHT (note): applied.** Scene 5 adds "and every answer is about the same kind of night" after the Sunday to Thursday fix, which sets up the "one night" limitation in d04 and d10.
+- Narration 5,661 characters (Revision 1: 5,594); about 508 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 20.4 s and 20.2 s. No em dash. Joins unchanged.
+
 ## Decisions
 
 - **Join: n07's frame confirmed, with its faults as the hook.** The frame is kept exactly as n07 designed it. Its buttons "7 to 8" and "8 to 9" overlap at 8, and "last night" might be a Saturday. The hook asks the viewer to try the survey as someone who slept exactly eight hours, so the first thing this strand teaches is visible in the first 20 seconds. n07's provisional marks are lifted and its YouTube "Next" line quotes this title (edit recorded in n07's status and in the status file, section 1d).
-- **One investigation runs through the strand.** Issue: Year 11 students seem tired in first period. Question: "How many hours do Year 11 students at our school sleep on a school night?" Target population: the 200 Year 11 students at our school (example size). d02 to d04 collect it, d05 to d10 classify and display it, d11 to d19 analyse it (20 sampled answers). The guideline for 14 to 17 year olds (8 to 10 hours) gives the issue a reason (Codex confirms the source).
+- **One investigation runs through the strand.** Issue: Year 11 students seem tired in first period. Question: "How many hours do Year 11 students at our school sleep on a school night?" Target population: the 200 Year 11 students at our school (example size). d02 to d04 collect it, d05 to d10 classify and display it, d11 to d19 analyse it (20 sampled answers). The guideline for 14 to 17 year olds (8 to 10 hours) gives the issue a reason; it is shown with its dated source on screen (Revision 2).
 - **The investigation strip (recurring model).** Six steps, left to right: "issue", "question", "collect", "organise and display", "analyse", "conclude". Each later video lights its step in a small strip under the header (a picture-only element, reused d02 to d19).
 - **Statistical question, defined by contrast.** "How long did I sleep last night?" has one answer; "How many hours do Year 11 students at our school sleep on a school night?" expects answers that vary. Plain meanings: issue ("something worth finding out about"); statistical question ("a question answered by collecting data that varies"); target population ("the whole group you want to know about"); sample ("the part of the population you actually ask", one sentence; methods in d03).
 - **The three principles get one scene each**, in the syllabus's order: clear language (4), unambiguous questions (5), number of choices (6).
@@ -44,7 +52,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Author notes (not learner copy):**
   (a) Population size 200 is an example; d03 splits it 140 and 60 for strata.
   (b) Sorter tokens: 4 to 11 h in 0.5 h steps (15 tokens). On the old buttons, 7 is only in "7 to 8" ("under 7" excludes 7); 8 is in "7 to 8" and "8 to 9"; 9 is only in "8 to 9" ("over 9" excludes 9). So exactly one token (8) fits two boxes. After scene 5's fix ("8 to under 9" beside "over 9"), 9 fits no box (scene 6's gap). On the final buttons every token fits one box.
-  (c) Guideline: 8 to 10 hours for 14 to 17 year olds (Australian 24-Hour Movement Guidelines for Children and Young People, Department of Health and Aged Care; Codex confirms wording and date).
+  (c) Guideline: 8 to 10 hours for 14 to 17 year olds. Cited as the Australian 24-Hour Movement Guidelines for Children (5 to 12 years) and Young People (13 to 17 years), Australian Government Department of Health, 2019 (health.gov.au publication page and fact sheet, checked 24 Nov 2026: 14 to 17 years, 8 to 10 hours of uninterrupted sleep a night). Short on-screen tag: "Australian 24-Hour Movement Guidelines (Australian Government, 2019)". Codex confirms the publication year before voicing.
   (d) A1: $20 in "$0–$20" and "$20–$40"; $40 in "$20–$40" and "$40–$60"; $75 in none.
 
 Main question: *Someone slept exactly eight hours: which button do they tap? How does a statistical investigation start with a clear question and a fair survey?*
@@ -62,9 +70,9 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): values bl
 Visual: opens on n07's final frame exactly (the phone with "How many hours did you sleep last night?", the four buttons, grey chip "Networks, paths and trees: done", chips "a clear question, a fair survey", "Next: statistical investigations", "?"). On "Here's the survey" the strand chip and the "Next" chips fade. On "exactly eight hours" a blue token "8 h" drops from above the phone and hovers over the buttons (hand tag "8 h: which button?"); on "Both buttons fit" it splits into two half-tokens landing on "7 to 8" and "8 to 9", both flashing red. On "a Saturday" the wall calendar `ma12-wall-calendar-v1.png` (about 320 px) slides in at the right with a coded ring on a Saturday square, and "last night" on the screen pulses. On "survey" heading "Statistical investigations" writes on (hand font, 56 px).
 
 ### 2. the investigation: six steps
-> Every statistical investigation follows the same steps. It starts with an issue, something worth finding out about. Then you pose a question that data can answer. Then you collect the data, organise and display it, analyse it, and finally draw a conclusion. Here's the issue we'll follow through this whole topic. Teachers notice that Year 11 students seem tired in first period. Teenagers are advised to get eight to ten hours of sleep a night. So are our Year 11 students getting **enough**? The survey comes at the collect step, but it can only be as good as the question before **it**. In every video from here on, the strip shows which step we're on.
+> Every statistical investigation follows the same steps. It starts with an issue, something worth finding out about. Then you pose a question that data can answer. Then you collect the data, organise and display it, analyse it, and finally draw a conclusion. Here's the issue we'll follow through this whole topic. Teachers notice that Year 11 students seem tired in first period. Australian guidelines advise teenagers to get eight to ten hours of sleep a night. So are our Year 11 students getting **enough**? The survey comes at the collect step, but it can only be as good as the question before **it**. In every video from here on, the strip shows which step we're on.
 
-Visual: stage change (simulation 1): the investigation strip across the upper half, six violet-labelled blue cards, 40 px: "issue", "question", "collect", "organise and display", "analyse", "conclude", joined by arrows. Each lights as it is named. On "Teachers notice" the "issue" card fills with "Year 11 students seem tired in first period" and the alarm clock `ma11-alarm-clock-v1.png` (about 360 px) settles below it. On "eight to ten hours" a chip "guideline, 14 to 17 years: 8 to 10 h a night". On "enough" (bold) the "question" card pulses empty with "?" (hand tag "what exactly do we ask?"). On "it" a small phone badge (about 200 px) drops onto the "collect" card. A small copy of the strip (about 30 px tall) parks under the header for the rest of the video, "question" lit.
+Visual: stage change (simulation 1): the investigation strip across the upper half, six violet-labelled blue cards, 40 px: "issue", "question", "collect", "organise and display", "analyse", "conclude", joined by arrows. Each lights as it is named. On "Teachers notice" the "issue" card fills with "Year 11 students seem tired in first period" and the alarm clock `ma11-alarm-clock-v1.png` (about 360 px) settles below it. On "eight to ten hours" a chip "guideline, 14 to 17 years: 8 to 10 h a night" with a grey source line under it, 28 px: "Australian 24-Hour Movement Guidelines (Australian Government, 2019)" (Revision 2, D01-GUIDE; Codex confirms the year). On "enough" (bold) the "question" card pulses empty with "?" (hand tag "what exactly do we ask?"). On "it" a small phone badge (about 200 px) drops onto the "collect" card. A small copy of the strip (about 30 px tall) parks under the header for the rest of the video, "question" lit.
 
 ### 3. from an issue to a statistical question
 > An issue is too vague to measure. Do students sleep enough? Enough for what, and which students? A statistical question is one you answer by collecting data that varies. How long did I sleep last night has just one answer, so it isn't statistical. How many hours do Year 11 students at our school sleep on a school night expects lots of different answers, and that's what makes it **statistical**. A good statistical question tells you what to measure, and who to measure it for. Notice this one names who we're asking about. That group is the target population, the whole group you want to know about. Here it's the two hundred Year 11 students at our school, not every teenager in Australia. We'll usually only ask some of them. That part is called the **sample**, and choosing it fairly is coming soon.
@@ -77,7 +85,7 @@ Visual: stage change to the g01 board. Task strip, 44 px: "Issue: Year 11 studen
 Visual: stage change (simulation 2): the question fixer. A survey card on the exam desk `ma12-exam-desk-v1.png` (about 1,000 px wide, notebook open; the card overlays the notebook's right page). Card text, 44 px: "How would you rate your sleep hygiene?" On "sleep hygiene" the phrase is ringed violet; a readout "possible meanings: 3" with three small speech chips "how clean?", "how tidy?", "how healthy?" (hand tag "plain words"). The phrase is struck through. On "often" a second card "Do you often sleep badly?"; "often" ringed; a mini strip shows "2 a week", "4 a week", "every night" under it; readout "possible meanings: 3". On "Ask for something people can answer exactly" both cards are crossed; a new card writes: "How many hours did you sleep?" and on "way" the readout drops to "possible meanings: 1" (green).
 
 ### 5. unambiguous questions
-> The second principle is that each question has only one possible meaning. Watch for three traps. First, two ideas in one question. How many hours do you sleep and use your phone in bed? Someone who sleeps eight hours and scrolls for one can't answer that, so split it into two questions. Second, a missing time frame. Last night might be a Saturday, when people sleep in, so say on your last school night, Sunday to Thursday. Third, answer boxes that overlap. Seven to eight and eight to nine both contain eight, so an eight hour sleeper can pick either. Make it seven to under eight, and eight to under **nine**. Now every eight lands in one **place**. Each fix removes a second way to read the question.
+> The second principle is that each question has only one possible meaning. Watch for three traps. First, two ideas in one question. How many hours do you sleep and use your phone in bed? Someone who sleeps eight hours and scrolls for one can't answer that, so split it into two questions. Second, a missing time frame. Last night might be a Saturday, when people sleep in, so say on your last school night, Sunday to Thursday, and every answer is about the same kind of night. Third, answer boxes that overlap. Seven to eight and eight to nine both contain eight, so an eight hour sleeper can pick either. Make it seven to under eight, and eight to under **nine**. Now every eight lands in one **place**. Each fix removes a second way to read the question.
 
 Visual: the fixer continues. On "two ideas" a card "How many hours do you sleep and use your phone in bed?"; "and" ringed violet; on "split it" the card tears into two cards "How many hours did you sleep?" and "How long did you use your phone in bed?" (hand tag "one idea per question"). On "missing time frame" the card "How many hours did you sleep last night?" with "last night" ringed; the wall calendar badge (about 240 px) with its Saturday ring; on "on your last school night" the phrase is replaced, "on your last school night (Sunday to Thursday)" (green; hand tag "when, exactly?"). On "overlap" stage change (simulation 3): the answer sorter; the old buttons in a row at the bottom (52 px); blue tokens 4 to 11 h fall in turn; the "8" token lands across "7 to 8" and "8 to 9" and flashes red, counter "fits 2 boxes". On "nine" (first bold) the two buttons rewrite as "7 to under 8" and "8 to under 9" (framed green); on "place" the 8 token falls again and lands only in "8 to under 9", counter "fits 1 box" (green).
 
@@ -153,7 +161,7 @@ Model answer: (a) the café's customers. (b) Q2: plain words, and it says exactl
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
-| Guideline (14 to 17 years) | 8 to 10 h a night | 2 |
+| Guideline (14 to 17 years) | 8 to 10 h a night; Australian 24-Hour Movement Guidelines (Australian Government, 2019) | 2 |
 | Target population | 200 students (example) | 3 |
 | Sample (picture) | 20 dots of 200 | 3 |
 | Sorter tokens | 4 to 11 h in 0.5 h steps; 8 fits two old boxes | 5, 6 |
@@ -164,7 +172,7 @@ Model answer: (a) the café's customers. (b) Q2: plain words, and it says exactl
 
 - 0, 0.5, ..., 12: 25 values (12 ÷ 0.5 + 1).
 - On "under 7 | 7 to 8 | 8 to 9 | over 9", 8 is in two boxes; 9 is in one ("8 to 9"); no value is in none. On the half-fixed row "under 7 | 7 to under 8 | 8 to under 9 | over 9", 9 is in none (scene 6's gap). On "under 7 | 7 to under 8 | 8 to under 9 | 9 or more", every value is in exactly one.
-- The sleep guideline for 14 to 17 years: 8 to 10 hours (source and date).
+- The sleep guideline for 14 to 17 years: 8 to 10 hours; source tag "Australian 24-Hour Movement Guidelines (Australian Government, 2019)" (confirm the year).
 
 ## Memory aid check
 
@@ -173,9 +181,9 @@ Model answer: (a) the café's customers. (b) Q2: plain words, and it says exactl
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,594 characters**, 13 scene headings. Characters per scene (1 to 13): 425, 647, 797, 623, 697, 670, 193, 255, 271, 314, 268, 347, 75. Feedback speech about 20.4 s and 20.2 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,661 characters** in Revision 2 (Revision 1: 5,594), 13 scene headings. Characters per scene (1 to 13): 425, 664, 797, 623, 747, 670, 193, 255, 271, 314, 268, 347, 75. Feedback speech about 20.4 s and 20.2 s.
 
-At 13.3 characters per second the speech is about 421 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the strip (2), the fixer (4, 5) and the sorter drops (5, 6), about 17 s; the key-notes scene adds about 39 s beyond its line. Total **about 503 s**, 67 s under the 570 s cap.
+At 13.3 characters per second the speech is about 426 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the strip (2), the fixer (4, 5) and the sorter drops (5, 6), about 17 s; the key-notes scene adds about 39 s beyond its line. Total **about 508 s**, 62 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 6's last sentence (the rating scale); scene 3's "not every teenager" sentence.
 
@@ -232,7 +240,7 @@ No new plate. All seven plates exist and were viewed.
 Error-only check (report errors; do not restyle or rewrite):
 1. Re-check the values under "Numbers to verify", including which old and fixed buttons contain 8 and 9.
 2. Confirm the syllabus quotes match the route-inputs JSON exactly.
-3. Confirm the sleep guideline (8 to 10 hours for 14 to 17 year olds) against the current Australian 24-Hour Movement Guidelines, with the date.
+3. Confirm the sleep guideline (8 to 10 hours for 14 to 17 year olds) against the current Australian 24-Hour Movement Guidelines, and the year (2019) in the on-screen source tag and the YouTube description (Revision 2, D01-GUIDE). d16 and d19 carry the same tag.
 4. Confirm both attempts carry every demand and show no answer.
 5. Confirm scene 1 opens on n07's final frame exactly and scene 12 matches d02's Boundary.
 6. Confirm no em dash (U+2014), Australian spelling, the narration count, every bold cue quoted in its scene's Visual in spoken order, and all text above y = 950.
@@ -246,6 +254,8 @@ Title: Statistical Investigations: Asking a Clear Survey Question | Year 11 Math
 Description: Related lesson notes: https://hscscience.com.au/subjects/maths-standard/year11/data-analysis/lesson02.sa.html
 
 Someone slept exactly eight hours: which survey button do they tap? Learn the six steps of a statistical investigation, how to turn an issue into a statistical question for a target population, and how to write survey questions with clear language, one meaning and the right number of choices, so every answer fits exactly one box. Two exam-style questions at the end. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Sleep guideline source: Australian Government Department of Health, Australian 24-Hour Movement Guidelines for Children (5 to 12 years) and Young People (13 to 17 years), 2019 (8 to 10 hours a night for 14 to 17 year olds).
 
 Mathematics Standard 11-12 (2024 syllabus), Year 11, Data analysis. For Standard 1 and Standard 2.
 Syllabus content (NSW Mathematics Standard 11-12, 2024, Year 11):
@@ -265,3 +275,4 @@ Builds on: When the Shortest Path Isn't the Best Path. Next: Privacy, Bias and E
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from n07 with Stage 5 surveys only; check that "statistical question" is defined by the contrast before it is used, that each principle has its own fault and fix, that "sample" is a plain sentence without methods, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D01-GUIDE; D01-NIGHT). Next: Codex maths check and error check, then voicing and a build to grade A.

@@ -1,8 +1,8 @@
 # Maths S11 D17: How do parallel box plots compare two groups? One scale; centre from the medians and the overlap of the boxes; spread from the IQRs and ranges; shape from the whiskers; and a written comparison (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d16.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d16.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,568 characters by script (see "Narration length estimate"), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,599 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 504 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eighteenth video of the Year 11 Data analysis strand, outline playlist order 77. One video for Standard 1 and Standard 2. Viewers arrive from d16's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d17.md`. Route entry: `math-s11-d17` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson13.sa.html` (card 09; MC 5) and `lesson07.sa.html` (card 06). Visual system: maths studio kit; the bedroom, bus side, bus stop and exam desk plates (all existing); the box plots, lenses, brackets and comparison table coded.
 
@@ -15,6 +15,14 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Data analysi
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d16's final frame exactly (the bedroom `ms12-bedroom-furniture-v1.png`, about 600 px wide, at the top left; one number line "Hours of sleep" 2 to 10, about 1,300 px wide, with two box plots stacked above it: "phone in bedroom" (whiskers 3 and 8.5, box 6 to 7.5, median 6.75) and "elsewhere" (whiskers 7 and 9.5, box 7.5 to 8.75, median 8); chips "Two boxes, one scale?", "Next: parallel box plots" and "?"). Recalls d16 (box plots; quarters; shape), d15 (IQR against range), d14 (comparison sentences; the caution) and d09 (skew) in grey chips. Teaches: parallel box plots; one scale; comparing centre, spread and shape; a written comparison. Not taught: outliers by rule (d18); the effect of an outlier (d19).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d17-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D17-FEW (note): applied.** Scene 6's written model now says the range was larger "because of its short nights, especially the three hour night", matching scene 4.
+- **D17-SYM (note): no change.** "Roughly symmetric" stays, as the reviewer agreed.
+- Narration 5,599 characters (Revision 1: 5,568); about 504 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 22.2 s and 24.7 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -83,7 +91,7 @@ Visual: the spread brackets: amber IQR brackets under each box ("1.5 h", "1.25 h
 Visual: shape pointers: on "left whisker is three hours" a violet tail pointer slides along the bedroom left whisker (label "3 h") against the right ("1 h") (hand tag "long left whisker"; grey chip "d16: a long whisker points to the tail"); row "bedroom: negatively skewed". On "The elsewhere group's whiskers" both whiskers label "0.5 h" and "0.75 h"; the median's position in the box marked "0.5 | 0.75"; on "symmetric" (bold) row "elsewhere: roughly symmetric" (framed green with the bedroom row; hand tag "roughly symmetric").
 
 ### 6. writing the comparison
-> Now write it down, centre, spread and shape, each with numbers. The elsewhere group had a higher median, eight hours against six point seven five, and about three quarters of each group sat on opposite sides of seven and a half hours. The groups' IQRs were similar, one and a quarter against one and a half hours, but the bedroom group's range was much larger, five and a half against two and a half, because of a few short nights. The bedroom group was negatively skewed, and the elsewhere group roughly symmetric. And as always with this survey, it's an observational study, so it doesn't show that the phone caused the **difference**.
+> Now write it down, centre, spread and shape, each with numbers. The elsewhere group had a higher median, eight hours against six point seven five, and about three quarters of each group sat on opposite sides of seven and a half hours. The groups' IQRs were similar, one and a quarter against one and a half hours, but the bedroom group's range was much larger, five and a half against two and a half, because of its short nights, especially the three hour night. The bedroom group was negatively skewed, and the elsewhere group roughly symmetric. And as always with this survey, it's an observational study, so it doesn't show that the phone caused the **difference**.
 
 Visual: stage change (simulation 3): the comparison table (40 px), three rows "centre", "spread", "shape" with columns "bedroom", "elsewhere", "so": filled from the lenses: "6.75 | 8 | elsewhere 1.25 h higher"; "IQR 1.5, range 5.5 | IQR 1.25, range 2.5 | IQRs similar; bedroom range larger"; "negatively skewed | roughly symmetric | bedroom has a tail of short nights" (hand tag "centre, spread, shape"). The sentence builder (d09's) assembles the written comparison below, 36 px; on "difference" (bold) a caution line adds "observational: doesn't show cause" (grey chip "d04"; hand tag "not cause") and the whole frames green.
 
@@ -176,9 +184,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d`, `python -I`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,568 characters**, 13 scene headings. Characters per scene (1 to 13): 424, 586, 806, 615, 463, 633, 181, 420, 295, 356, 328, 374, 75. Feedback speech about 22.2 s and 24.7 s.2 s and 24.7 s.2 s and 24.7 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,599 characters** in Revision 2 (Revision 1: 5,568), 13 scene headings. Characters per scene (1 to 13): 424, 586, 806, 615, 463, 664, 181, 420, 295, 356, 328, 374, 75. Feedback speech about 22.2 s and 24.7 s.
 
-At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the snap, the lenses and the table fill, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
+At 13.3 characters per second the speech is about 421 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the snap, the lenses and the table fill, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 504 s**, 66 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 2's last sentence; scene 5's last two sentences.
 
@@ -264,3 +272,4 @@ Builds on: Box Plots: Drawing and Reading Them. Next: Clusters, Gaps and Outlier
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d16; check that the scale snap comes first, that every comparison has numbers and a direction, that the IQR-range disagreement is explained by the whisker, that skew is named by the tail, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D17-FEW; D17-SYM unchanged). Next: Codex maths check and error check, then voicing and a build to grade A.

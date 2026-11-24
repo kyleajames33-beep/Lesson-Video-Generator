@@ -1,8 +1,8 @@
 # Maths S11 D10: How can a graph or infographic inform us, or mislead us? Analysing an infographic and justifying each graph, the tricks that mislead (truncated axes, scaled icons, 3D sectors, missing sample sizes), and the limits on conclusions and predictions (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d09.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "misleading displays (d10)"), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d09.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "misleading displays (d10)"), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,568 characters by script (see "Narration length estimate"), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,568 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eleventh video of the Year 11 Data analysis strand, outline playlist order 70. One video for Standard 1 and Standard 2. Viewers arrive from d09's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d10.md`. Route entry: `math-s11-d10` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (key ideas; SA 3's two axes); infographics and limitations are taught from the syllabus (MSY-42). Visual system: maths studio kit; the tournament board, phone, phone dock, calculator and alarm clock plates (all existing); the poster tiles, axis slider, icon grid and limitation checklist coded.
 
@@ -17,6 +17,14 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Data analys
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d09's final frame exactly (the tournament board `ma11-tournament-board-v1.png`, about 1,200 px wide, with the coded poster "Sleep and screens: our Year 11 survey" (44 px) and four tiles: "35% get 8+ hours" (olive, 64 px); a sector graph of where phones charge (60%, 25%, 10%, 5%); a pictogram row of 20 small phone icons with 12 lit; a column graph "average sleep" with two columns, "phone in bedroom" 6.6 h and "elsewhere" 8.1 h, whose vertical axis starts at 6; chips "Is this poster fair?", "Next: infographics and misleading graphs" and "?"). Recalls d07 (columns start at 0; the graph chooser), d08 (sector graphs; line graphs), d04 (observation, not cause) and d09 (shape) in grey chips. Teaches: analysing an infographic and justifying its graphs; how graphs mislead; limitations for conclusions and predictions; a fair conclusion; fixing the poster. Not taught: calculating means (d11); spread (d13).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d10-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D10-3D (note): applied.** The scene 4 visual now shows the front 10% slice looking "nearly as big as" the 25% slice behind it, a distortion the build can show honestly. The narration ("the slices at the front look bigger than they are") was already safe and is unchanged.
+- **D10-AVG (note): no change**, as the reviewer advised.
+- Narration 5,568 characters (Revision 1: 5,568); about 502 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 20.6 s and 23.5 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -75,7 +83,7 @@ Visual: stage change (simulation 1): the column graph enlarges (about 1,000 px t
 ### 4. other ways graphs mislead
 > The truncated axis is the most common trick, but there are others. Pictures can lie with area. To show twice as many phones, someone draws a phone twice as tall. But to keep its shape, it's twice as wide too, so it covers four times the space, and the eye sees four times as much. Three D sector graphs tilt the circle, so the slices at the front look bigger than they are. Scales with uneven steps squash some changes and stretch others. A line graph can start and stop at handy dates, and hide the rest. And a percentage needs its sample size. Thirty-five per cent sounds solid, until you ask, of how many? Here, it's seven students out of **twenty**.
 
-Visual: stage change (simulation 2): a square grid (about 900 px) with one phone icon covering 1 square; on "twice as tall" it stretches upward (2 squares); on "twice as wide too" it widens to cover a 2 × 2 block; a counter "area: 1 → 4" (hand tag "area × 4"). On "Three D sector graphs" a tilted 3D sector graph of the phone shares: the front slice (10%) looks bigger than the 25% slice at the back; it flattens to 2D and the true sizes return (chip "3D distorts"). On "uneven steps" an axis with ticks 0, 5, 10, 50, 100 flashes amber. On "handy dates" a battery-style line graph shows only its falling part, then the full day appears (grey chip "d08: the battery's day"). On "of how many?" the poster's "35%" tile flips to show "7 of 20" (hand tag "of how many?"). On "twenty" (bold) chip "always give n".
+Visual: stage change (simulation 2): a square grid (about 900 px) with one phone icon covering 1 square; on "twice as tall" it stretches upward (2 squares); on "twice as wide too" it widens to cover a 2 × 2 block; a counter "area: 1 → 4" (hand tag "area × 4"). On "Three D sector graphs" a tilted 3D sector graph of the phone shares: the front slice (10%) looks nearly as big as the 25% slice behind it (Revision 2, D10-3D: claim softened so the build can show it honestly at playback speed); it flattens to 2D and the true sizes return (chip "3D distorts"). On "uneven steps" an axis with ticks 0, 5, 10, 50, 100 flashes amber. On "handy dates" a battery-style line graph shows only its falling part, then the full day appears (grey chip "d08: the battery's day"). On "of how many?" the poster's "35%" tile flips to show "7 of 20" (hand tag "of how many?"). On "twenty" (bold) chip "always give n".
 
 ### 5. what a graph can't tell you
 > Even an honest graph has limits, and conclusions and predictions have to respect them. Our graphs describe twenty Year 11 students, at one school, on one night. They can't tell us about all teenagers, or about every night. Our data came from an observational study, so they can't show that phones cause less sleep. An average hides the spread. Behind six point six hours is one student who slept just three. And no graph can safely predict outside its data. It can't tell us how next year's Year 11 will sleep. So here's a fair conclusion. In our sample of twenty Year 11 students on one school night, those whose phones charged outside the bedroom slept about one and a half hours more on average. That doesn't show the phone caused it, or that all teenagers are the **same**.
@@ -178,9 +186,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,568 characters**, 13 scene headings. Characters per scene (1 to 13): 539, 709, 664, 649, 773, 413, 154, 305, 274, 345, 312, 344, 75. Feedback speech about 20.6 s and 23.5 s.6 s and 23.5 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,568 characters** in Revision 2 (Revision 1: 5,568), 13 scene headings. Characters per scene (1 to 13): 539, 709, 664, 649, 773, 413, 154, 305, 274, 345, 312, 344, 75. Feedback speech about 20.6 s and 23.5 s.
 
-At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the tiles, the axis slide, the icon and the toggle, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap.
+At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the tiles, the axis slide, the icon and the toggle, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 4's uneven-scale and handy-dates sentences; scene 5's prediction sentence.
 
@@ -269,3 +277,4 @@ Builds on: Shape of a Distribution: Skewed, Symmetric, Bimodal. Next: Mean, Medi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d09; check that the good choices are justified before any fault is found, that the axis slider makes the 3.5 × illusion visible, that the area trick is counted on a grid, that the fair conclusion keeps "on average" and "doesn't show the phone caused it", and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D10-3D; D10-AVG unchanged). Next: Codex maths check and error check, then voicing and a build to grade A.

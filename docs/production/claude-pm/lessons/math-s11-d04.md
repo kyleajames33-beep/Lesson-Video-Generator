@@ -1,8 +1,8 @@
 # Maths S11 D04: What can go wrong when we collect data? Observational studies and experiments, practical faults in collecting and recording, and results that are misunderstood or misrepresented (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d03.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b03.md`: "Year 11: experiments and observational studies", with b03's plain meanings), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d03.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b03.md`: "Year 11: experiments and observational studies", with b03's plain meanings), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,643 characters by script (see "Narration length estimate"), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,647 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Data analysis strand, outline playlist order 64. One video for Standard 1 and Standard 2. Viewers arrive from d03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d04.md`. Route entry: `math-s11-d04` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson02.sa.html` (card 06, SA 1) and `lesson09.sa.html` (card 08); experiments and observational studies are taught from the syllabus (MSY-36). Visual system: maths studio kit; the bedroom, bus, alarm clock, wall calendar, phone and exam desk plates (all existing); the study panels, allocation, fault map and headline board coded.
 
@@ -15,6 +15,14 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Data analysi
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d03's final frame exactly (the bedroom `ms12-bedroom-furniture-v1.png`, about 900 px wide, at the left with the white headline card "Phones in bedrooms steal 2 hours of sleep!"; at the right the 20 blue tokens in two olive-labelled groups "phone in bedroom: 12" and "elsewhere: 8"; chips "What could go wrong?", "Next: faults in data collection" and "?"). Recalls d01 (question faults), d02 (bias; honest reporting) and d03 (random; self-selected; representative) in grey chips. Teaches: observational studies and controlled experiments; faults in each; practical faults; survey design faults; misunderstandings and misrepresentations. Not taught: data types (d05); misleading graphs (d10).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d04-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D04-2H (note): applied.** Scene 5 now says "Our survey found a smaller difference, and only on average." (d10 and d14 report about 1.5 hours).
+- **D04-A1PIC (note): applied.** Attempt 1's picture slot is left to the card: the food truck plate is a different place from a school canteen, and no canteen plate exists. The Assets section records the food truck as inspected but not used.
+- Narration 5,647 characters (Revision 1: 5,643); about 505 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 24.6 s and 22.9 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -76,7 +84,7 @@ Visual: stage change: a second panel "controlled experiment: change one thing on
 Visual: stage change (simulation 3): the fault map: five stages left to right as violet-labelled blue boxes "question", "people", "method", "recording", "claim", with a "trust" meter (green bar) above. On "overlapping buttons" a pin drops on "question" with the d01 buttons badge "7 to 8 | 8 to 9" (grey chip "d01"); meter falls. On "might not reply" a pin on "people": the 20 tokens, 5 grey out (olive chip "returned: 15 of 20 (75%)"; hand tag "who didn't answer?"); on "are" (bold) the 5 grey tokens show they were from "under 7". On "guess and round" a pin on "method": token values snap from 6.5, 7.5 to 7, 8 (example). On "seventy-five" a pin on "recording": a row "7.5 → 75" with the value "75 h" in red (hand tag "75 hours?"). On "exam week" the wall calendar `ma12-wall-calendar-v1.png` (about 300 px) with a week shaded "exams". On "use" (bold) each pin turns into a green tick with a fix label: "trial the question", "follow up non-response", "record exact values", "check for impossible values", "choose a normal week"; the meter rises.
 
 ### 5. misunderstandings and misrepresentations
-> The last stage is the claim, and this is where the headline goes wrong. A misrepresentation presents results so they seem to show more than they do. Steal says the phone causes it, but ours was an observational study. Phones in bedrooms suggests every teenager, but we asked twenty students at one school, on one night. And two hours isn't what our survey found for everyone. Percentages can mislead too. Sixty per cent of students sleep with their phone sounds huge, but it's twelve out of **twenty**. Misunderstandings happen on the other side, when people read a result, or a question, differently from what was meant. Hours slept might be read as hours in bed. Here's an honest version. In our sample of twenty Year 11 students, those who charged their phones in their bedrooms tended to report less sleep. That doesn't show the phone caused **it**.
+> The last stage is the claim, and this is where the headline goes wrong. A misrepresentation presents results so they seem to show more than they do. Steal says the phone causes it, but ours was an observational study. Phones in bedrooms suggests every teenager, but we asked twenty students at one school, on one night. Our survey found a smaller difference, and only on average. Percentages can mislead too. Sixty per cent of students sleep with their phone sounds huge, but it's twelve out of **twenty**. Misunderstandings happen on the other side, when people read a result, or a question, differently from what was meant. Hours slept might be read as hours in bed. Here's an honest version. In our sample of twenty Year 11 students, those who charged their phones in their bedrooms tended to report less sleep. That doesn't show the phone caused **it**.
 
 Visual: stage change: the headline board (g01 layout). Task strip, 44 px: "Headline: Phones in bedrooms steal 2 hours of sleep!" Grey chip "d02: report honestly". On "Steal" the word is struck violet with a tag "observational: not cause"; on "every teenager" "Phones in bedrooms" is struck with a tag "one school, one night" (hand tag); on "two hours" "2 hours" is struck with a tag "not what we found". On "Sixty per cent" a red chip "60% of students sleep with their phone" and beside it an olive row "12 ÷ 20 = 60%"; on "twenty" (first bold) the 20 tokens appear under it with 12 lit (hand tag "12 of 20"). On "hours in bed" a small coded strip shows "in bed 9 h" against "asleep 7.5 h". On "Here's an honest version" the rewrite writes, 44 px: "In our sample of 20 Year 11 students, those who charged phones in their bedrooms tended to report less sleep. This does not show the phone caused it." On "it" (bold) the rewrite frames green (hand tag "tended to, not caused").
 
@@ -93,7 +101,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the two panels (o
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. A school finds that students who eat breakfast at the school canteen get higher marks, and claims that canteen breakfasts raise marks. Is this an experiment, or an observational study? Then give one reason the claim may be wrong. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "A school finds that students who eat breakfast at the school canteen get higher marks, and claims that canteen breakfasts raise marks. (a) Is this an experiment or an observational study? (b) Give one reason the claim may be wrong." Picture slot: the food truck `ma11-food-truck-v1.png` (about 360 px; read as the canteen counter). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "A school finds that students who eat breakfast at the school canteen get higher marks, and claims that canteen breakfasts raise marks. (a) Is this an experiment or an observational study? (b) Give one reason the claim may be wrong." Picture slot: none; the card takes the full width (Revision 2, D04-A1PIC: the food truck plate is a different place, and no canteen plate exists, so the slot is left to the card). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
 > Nobody was told to eat breakfast there. The school just recorded what happened, so it's an observational **study**. The claim may be wrong because something else could explain both. Students who arrive early for breakfast might be more organised, or get more **sleep**. Calling it an experiment because marks were measured is the **slip**.
@@ -173,9 +181,9 @@ Model answer: non-response: only 200 of 10,000 (2%) replied, by choice, so the v
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,643 characters**, 13 scene headings. Characters per scene (1 to 13): 421, 645, 811, 818, 845, 367, 229, 262, 327, 197, 305, 329, 75. Feedback speech about 24.6 s and 22.9 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,647 characters** in Revision 2 (Revision 1: 5,643), 13 scene headings. Characters per scene (1 to 13): 421, 645, 811, 818, 849, 367, 229, 262, 327, 197, 305, 329, 75. Feedback speech about 24.6 s and 22.9 s.
 
-At 13.3 characters per second the speech is about 424 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the reveal (2), the allocation (3) and the pins (4), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 505 s**, 65 s under the 570 s cap.
+At 13.3 characters per second the speech is about 425 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the reveal (2), the allocation (3) and the pins (4), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 505 s**, 65 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 4's timing sentences; scene 5's "hours in bed" sentence.
 
@@ -206,9 +214,9 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 ## Assets
 
-Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ms12-bedroom-furniture-v1.png`; `ma11-alarm-clock-v1.png`; `ma12-bus-side-v1.png`; `ma12-wall-calendar-v1.png`; `ma11-food-truck-v1.png` (a food van with a blank side board; read as a canteen counter); `ma12-phone-v1.png`; `ma12-exam-desk-v1.png`.
+Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ms12-bedroom-furniture-v1.png`; `ma11-alarm-clock-v1.png`; `ma12-bus-side-v1.png`; `ma12-wall-calendar-v1.png`; `ma11-food-truck-v1.png` (a food van with a blank side board; Revision 2: not used, since a food van is not a school canteen); `ma12-phone-v1.png`; `ma12-exam-desk-v1.png`.
 
-Need: none new. Reused: the seven plates above.
+Need: none new. Reused: the six plates above other than the food truck.
 
 Coded: the headline and rewrite board, study panels, tokens with badges, allocation trays, fault map and trust meter, record sheet, boards, question cards, the countdown, hand tags, the framed card and key notes.
 
@@ -261,3 +269,4 @@ Builds on: Sampling Methods and Representative Samples. Next: Types of Data: Num
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d03; check that both study types have b03's plain meanings before they are judged, that the hidden factor is shown before "can't show cause" is said, that each practical fault has a fix, and that the honest rewrite keeps "tended to"), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D04-2H; D04-A1PIC). Next: Codex maths check and error check, then voicing and a build to grade A.

@@ -1,8 +1,8 @@
 # Maths S11 D08: How do we read dot plots, stem-and-leaf plots, line graphs, sector graphs and divided bar charts? The key first, then a value, a count, a comparison and a sentence in context, for six real-world displays (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d07.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b01.md`: "Year 11: dot plot, mean, median"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d07.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b01.md`: "Year 11: dot plot, mean, median"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,566 characters by script (see "Narration length estimate"), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,587 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: ninth video of the Year 11 Data analysis strand, outline playlist order 68. One video for Standard 1 and Standard 2. Viewers arrive from d07's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d08.md`. Route entry: `math-s11-d08` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (card 07, WE 2, trap 03, MC 5); dot plots, line graphs, sector graphs and divided bars are taught from the syllabus (MSY-40). Visual system: maths studio kit; the cricket scoreboard, cricket ball, phone dock, coin jar, bus, concert ticket and coffee cart plates (all existing); every display coded.
 
@@ -15,6 +15,15 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Data analysi
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d07's final frame exactly (the cricket scoreboard `ma12-cricket-scoreboard-v1.png`, about 900 px wide, at the centre with a coded stem-and-leaf plot on its green board (white, 40 px): "0 | 0 4 7", "1 | 2 5 8", "2 | 1 4 4", "3 | 3 6", "4 | 1", "5 | 8", "6 | 3", "7 |", "8 | 7", key "2 | 4 = 24 runs"; around it four thumbnails (a dot plot, a line graph, a sector graph, a divided bar chart); chips "What does each one tell us?", "Next: reading statistical graphs" and "?"). Recalls d07 (each display's purpose and plain meaning) and Stage 4 angles (360°) in grey chips. Teaches: reading and analysing stem-and-leaf, back-to-back stem-and-leaf, dot plot, line graph, sector graph and divided bar chart in context. Not taught: mean and median calculations (d11); shape words (d09); misleading graphs (d10).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d08-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D08-2HRS (should fix, root's ruling 4): applied.** Scene 5 now says the battery was "measured ten times through the day", with no interval. The ten readings (7, 9 and 11 am; 1, 3, 4, 5, 7, 9 and 11 pm) are not evenly spaced, and the charge between four and five is a one-hour rise. The readings are now listed under "Numbers to verify". The steepest fall (7 to 9 pm, 17 points) is still the steepest per hour as well as per segment.
+- **D08-BATTERB (note): applied.** Batter B's 15 innings (8, 11, 16, 19, 22, 25, 27, 28, 30, 31, 34, 36, 38, 42, 45) are copied from the pre-design pack into author note (a) and "Numbers to verify" (30 or more: 7; under 10: 1; 8th value 28; highest 45; all rechecked).
+- **D08-WORDING (note): applied.** "In how many matches did she take three or more wickets?"
+- Narration 5,587 characters (Revision 1: 5,566); about 503 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 20.0 s and 18.8 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -42,7 +51,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Handoff (to math-s11-d09, the shape of a distribution).** Scene 12: board clear; three displays side by side (about 560 px wide each): at the left the screen-time histogram (d06a; bars 3, 9, 7, 5, 3, 2, 1, olive) with its long right side; at the centre the sleep dot plot (d07; the 20 values, 3 to 9.5 in half hours, blue) with its single dot at 3 far to the left; at the right a histogram of 60 apple masses (olive bars 2, 6, 12, 20, 12, 6, 2 across 140 to 210 g in classes of 10) under the apple crate `ma12-apple-crate-v1.png` (about 360 px wide); chips "Which way is the tail?", "Next: the shape of a distribution" and "?". d09 opens on this frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Batter A: 15 values; ≥ 30: 6; middle 8th: 24; under 10: 3. Batter B: ≥ 30: 7; under 10: 1; middle: 28.
+  (a) Batter A: 15 values; ≥ 30: 6; middle 8th: 24; under 10: 3. Batter B (15 innings; Revision 2, D08-BATTERB, copied from the pre-design pack): 8, 11, 16, 19, 22, 25, 27, 28, 30, 31, 34, 36, 38, 42, 45; ≥ 30: 7; under 10: 1; middle (8th): 28; highest 45.
   (b) Wickets: 2 + 4 + 5 + 3 + 1 + 1 = 16 matches; ≥ 3: 5; total 32.
   (c) Battery drops: 12, 14, 14, 15, 5; +30 charging; 12, 17, 11. Steepest fall 7 to 9 pm (17).
   (d) Budget: 30, 15, 10, 25, 20 (100%) of $200: $60, $30, $20, $50, $40; × 3.6: 108°, 54°, 36°, 90°, 72° (360°).
@@ -74,12 +83,12 @@ Visual: stage change (simulation 1): the scoreboard plate shrinks to a badge (ab
 Visual: stage change: the back-to-back plot (about 1,100 px wide), stems grey down the centre spine, A's leaves (blue) at the left, B's leaves (hollow blue) at the right; keys at each side: "A: 4 | 2 = 24", "B: 2 | 4 = 24". On "reading outwards" the A leaves on stem 2 ("4 4 1") unfold outwards into "21, 24, 24" (hand tag "read outwards"); a red ghost "42?" is crossed. On "under ten" the 0-stem rows light: A "7 4 0" (3), B "8" (1); row "A: 3 under 10; B: 1". On "three biggest" A's leaves on stems 5, 6, 8 glow; row "A's top three: 58, 63, 87; B's highest 45" (framed green). On "middle scores" violet rings on A's 8th (24) and B's 8th (28). On "game" (bold) speech chip "B: consistent. A: boom or bust".
 
 ### 4. dot plots
-> The same season, from the bowler's end. This dot plot shows how many wickets one bowler took in each of sixteen matches. Each dot is one match, sitting above its number of wickets. Every dot is a real match, so nothing is grouped or lost. The tallest stack is above two, so two wickets was the most common result. How many matches did she take three or more? Count the dots, not the heights. Three above three, one above four, one above five, five **matches**. A dot plot shows every value and where they bunch up, and it works best for small sets of numbers, like **these**.
+> The same season, from the bowler's end. This dot plot shows how many wickets one bowler took in each of sixteen matches. Each dot is one match, sitting above its number of wickets. Every dot is a real match, so nothing is grouped or lost. The tallest stack is above two, so two wickets was the most common result. In how many matches did she take three or more wickets? Count the dots, not the heights. Three above three, one above four, one above five, five **matches**. A dot plot shows every value and where they bunch up, and it works best for small sets of numbers, like **these**.
 
 Visual: stage change (simulation 2): the cricket ball `ma12-cricket-ball-v1.png` (about 240 px) at the left; a number line 0 to 5 ("Wickets in a match", 40 px) across the centre. On "Each dot is one match" a match list strip ("M1: 2", "M2: 0", ...) ticks through and drops a blue dot above its value for each of 16 matches (hand tag "one dot, one match"). On "The tallest stack" the five dots above 2 ring (olive ring, chip "most common: 2"). On "three or more" the dots above 3, 4 and 5 light; on "matches" (first bold) row "3 + 1 + 1 = 5 matches" (framed green). On "these" a grey chip "d07: dot plot for small sets".
 
 ### 5. line graphs
-> A line graph shows change over time. Here's a phone's battery level through one day, measured every two hours, from a hundred per cent at seven in the morning. Read a value. At one in the afternoon it's sixty per cent. Then look at the shape. It falls all day, except between four and five, where it jumps by thirty. That rise only makes sense one way. It was on the charger. Where's the steepest fall? From seven to nine at night, fifty-eight down to forty-one, seventeen points in two **hours**, perhaps a movie on the way home. The line between the points shows the trend, but only the dots were actually **measured**.
+> A line graph shows change over time. Here's a phone's battery level through one day, measured ten times through the day, from a hundred per cent at seven in the morning. Read a value. At one in the afternoon it's sixty per cent. Then look at the shape. It falls all day, except between four and five, where it jumps by thirty. That rise only makes sense one way. It was on the charger. Where's the steepest fall? From seven to nine at night, fifty-eight down to forty-one, seventeen points in two **hours**, perhaps a movie on the way home. The line between the points shows the trend, but only the dots were actually **measured**.
 
 Visual: stage change (simulation 3): the phone dock `ma12-phone-dock-v1.png` (about 360 px tall) at the left; axes (about 1,100 px wide): "Time" 7 am to 11 pm, "Battery (%)" 0 to 100; blue dots at the ten readings joined by a line. On "Read a value" a time marker slides to 1 pm with a live readout "1 pm: 60%". On "falls all day" the marker runs along the line; on "between four and five" the rising segment glows olive "+30" (hand tag "rises: charging"); a small charging bolt on the dock's screen. On "steepest fall" each falling segment flashes its drop (12, 14, 14, 15, 5, 12, 17, 11); the 7 to 9 pm segment holds; on "hours" (first bold) row "7 pm to 9 pm: 58 − 41 = 17 points" (framed green; hand tag "steepest fall"). On "measured" the line fades to dashed between the dots, the dots stay solid.
 
@@ -168,7 +177,8 @@ Model answer: (a) Café B (71 coffees). (b) Café A: 6 days of 50 or more (Café
 ## Numbers to verify (all values, repeated for Codex)
 
 Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`, `python -I`); Codex to re-check.
-- Batter A: ≥ 30 count 6; 8th value 24; under 10: 3. Batter B: ≥ 30: 7; under 10: 1; 8th value 28.
+- Batter A: ≥ 30 count 6; 8th value 24; under 10: 3. Batter B (8, 11, 16, 19, 22, 25, 27, 28, 30, 31, 34, 36, 38, 42, 45): ≥ 30: 7; under 10: 1; 8th value 28; highest 45.
+- Battery readings (Revision 2, D08-2HRS): 7 am 100, 9 am 88, 11 am 74, 1 pm 60, 3 pm 45, 4 pm 40, 5 pm 70, 7 pm 58, 9 pm 41, 11 pm 30: ten readings, not evenly spaced (3, 4 and 5 pm are an hour apart), so the narration says "ten times through the day", with no interval.
 - Wickets: 16 matches; ≥ 3: 5.
 - Battery segment changes; steepest fall 17 (7 to 9 pm); charging rise 30.
 - 108 ÷ 360 = 0.3; 0.3 × 200 = 60; all five angles sum to 360°.
@@ -183,9 +193,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`, `python -I`); Codex to r
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,566 characters**, 13 scene headings. Characters per scene (1 to 13): 455, 732, 587, 567, 613, 877, 175, 292, 266, 262, 250, 403, 75. Feedback speech about 20.0 s and 18.8 s.0 s and 18.8 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,587 characters** in Revision 2 (Revision 1: 5,566), 13 scene headings. Characters per scene (1 to 13): 455, 732, 587, 578, 623, 877, 175, 292, 266, 262, 250, 403, 75. Feedback speech about 20.0 s and 18.8 s.
 
-At 13.3 characters per second the speech is about 418 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the unfold, the dot drops, the slider and the unroll, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 501 s**, 69 s under the 570 s cap.
+At 13.3 characters per second the speech is about 420 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the unfold, the dot drops, the slider and the unroll, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 503 s**, 67 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 5's "movie" clause and last sentence; scene 3's last sentence.
 
@@ -272,3 +282,4 @@ Builds on: Choosing a Graph: Column Graphs and Spreadsheet Charts. Next: Shape o
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d07; check that each display's key or scale is read before any value, that the back-to-back left side is shown unfolding outwards, that counts are of dots or leaves, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D08-2HRS; D08-BATTERB; D08-WORDING). Next: Codex maths check and error check, then voicing and a build to grade A.

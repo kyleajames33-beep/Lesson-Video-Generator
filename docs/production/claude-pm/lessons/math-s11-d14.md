@@ -1,8 +1,8 @@
 # Maths S11 D14: How do we compare two datasets using centre and spread, by hand and in a spreadsheet? A spreadsheet summary for two groups, centre then spread with numbers, a full comparison sentence, and measures of spread used well and badly (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d13.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d13.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,512 characters by script (see "Narration length estimate"), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,546 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 500 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifteenth video of the Year 11 Data analysis strand, outline playlist order 74. One video for Standard 1 and Standard 2. Viewers arrive from d13's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d14.md`. Route entry: `math-s11-d14` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson07.sa.html` (cards 02, 05, 06; traps; SA 1) and `lesson11.sa.html`; spreadsheet statistics are taught from the syllabus (MSY-45). Visual system: maths studio kit; the bedroom, phone, delivery bag, coffee cart and swim goggles plates (all existing); the dot plots, spreadsheet, comparison board and gallery coded.
 
@@ -17,6 +17,14 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Data analys
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d13's final frame exactly (the bedroom `ms12-bedroom-furniture-v1.png`, about 700 px wide, at the top left; two dot plots of the sleep sample, axis 2 to 10 in half hours: "phone in bedroom" (12 dots: 3, 5.5, 6, 6, 6.5, 6.5, 7, 7, 7.5, 7.5, 8, 8.5) with a teal triangle at 6.58 and an amber bracket "σ 1.37"; "elsewhere" (8 hollow dots: 7, 7.5, 7.5, 8, 8, 8.5, 9, 9.5) with a teal triangle at 8.13 and an amber bracket "σ 0.78"; a small spreadsheet badge; chips "Which group sleeps more, and more steadily?", "Next: comparing datasets" and "?"). Recalls d11 to d13 (measures and their formulas), d07 (spreadsheet layout) and d04 (observation, not cause) in grey chips. Teaches: a two-group spreadsheet summary; comparing centre and spread with numbers; a full comparison sentence; uses of spread that fit or mislead. Not taught: quartiles and IQR (d15); box plots (d16, d17).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d14-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D14-SEEN (should fix, root's ruling 7): applied by replacing the practice item.** Scene 6's coffee-machine card stays. Attempt 1 is now two bakeries' loaves labelled 500 g: Bakery 1 mean 503 g, σ 14 g; Bakery 2 mean 501 g, σ 3 g (example values). Bakery 2 is 1 g over the label against 3 g, and its σ is much smaller, so it sells the more reliable loaf. Crossed slip "Bakery 1: heavier on average" (caption "500 g is the label"). The bold cues are now "one", "two", "slip" in spoken order. Picture slot: `ms12-bread-loaf-v1.png` only if it has been delivered and viewed (it is briefed for Year 12 p08 and z01 and is not yet in `public/assets/maths`); otherwise the slot is left to the card. The Attempts line, model answer, Numbers used, Numbers to verify, `ComparisonBoard` check and memory-aid check match.
+- **D14-DELIV (note): applied.** "some orders take close to an hour, and many take over forty-five minutes".
+- Narration 5,546 characters (Revision 1: 5,512); about 500 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 20.8 s and 25.5 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -35,7 +43,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Stage changes (standard item 2).** The two groups (1); the spreadsheet (2); comparing centre (3); comparing spread (4); the full sentence (5); the gallery (6); framed card (7); question cards (8 to 11); the order strip and the middle half (12); key notes (13).
 - **Worked examples (g01 order).** Scene 3: "centre: mean 8.13 h against 6.58 h: elsewhere about 1.5 h higher" (framed green). Scene 4: "spread: σ 0.78 h against 1.37 h: elsewhere more consistent" (framed green). Scene 5: the full sentence (framed green); crossed slip in scene 3: "elsewhere mean 8.13 against bedroom median 6.75" (caption "same measure for both").
 - **Memory aid.** Framed card: "Compare centre, then spread, with numbers, in context." Key line: "Use the same measure for both groups; say which is higher or more consistent, and by how much."
-- **Attempts.** A1 (pack question 1): Machine 1; crossed "Machine 2, because its mean is higher" (caption "250 is the target"). A2 (pack question 2): the formulas; B faster, A more consistent; crossed "(b) Swimmer A is faster: 31.2 is higher" (caption "lower times are faster").
+- **Attempts.** A1 (Revision 2, D14-SEEN: a fresh case and fresh numbers, since scene 6's card shows the coffee machines): two bakeries' 500 g loaves, Bakery 1 mean 503 g, σ 14 g; Bakery 2 mean 501 g, σ 3 g; choose Bakery 2; crossed "Bakery 1: heavier on average" (caption "500 g is the label"). A2 (pack question 2): the formulas; B faster, A more consistent; crossed "(b) Swimmer A is faster: 31.2 is higher" (caption "lower times are faster").
 - **Mistake scene:** none separate. Mixing measures (3); comparing without numbers (5); higher-is-better in a time context (A2); a range with one extreme (6); an average with no spread (6); claiming cause (5).
 - **Cause chain taught, in order:** (1) a spreadsheet applies the same formula to every value in a column, so one set of formulas summarises both groups and updates if a value changes (2); (2) the centre says where each group typically is, so comparing centres says which is higher (3); (3) the spread says how much values vary, so comparing spreads says which group is more consistent (4); (4) a comparison is only useful with numbers, a direction and the context, and an observational comparison can't show cause (5); (5) a range depends on two values and an average hides the spread, so a measure of spread fits only when it describes what the reader needs (6).
 - **Entry knowledge (route):** math-s11-d11 to d13 (the measures and formulas), d07 (spreadsheet layout), d04 (observation). Recalled in grey chips.
@@ -84,7 +92,7 @@ Visual: the comparison board adds a "spread" scale 0 to 2 hours below the centre
 Visual: stage change: the sentence builder (d09's) with five slots: "centre", "spread", "numbers", "context", "caution". On "slept more on average" the "centre" slot fills; on "more consistently" "spread"; the numbers write in teal and amber; on "observational study" the "caution" slot fills with grey chip "d04: just watching". The full sentence assembles, 40 px, and frames green on "show" (hand tags "with numbers", "not cause").
 
 ### 6. spread, used well and badly
-> Measures of spread get used well and badly too. Fits. A café compares two coffee machines by their standard deviations, to find the consistent one. Misleads. A phone shop says its plans range from fifteen dollars to two hundred and fifty. One premium plan sets that range, and ten of the eleven plans cost between fifteen and forty. Misleads. A delivery app promises an average of thirty minutes. With a standard deviation of eighteen minutes, plenty of orders take close to an hour. An average without a spread hides the **risk**. Fits. Our sleep comparison, which gives both the centre and the spread, side by side.
+> Measures of spread get used well and badly too. Fits. A café compares two coffee machines by their standard deviations, to find the consistent one. Misleads. A phone shop says its plans range from fifteen dollars to two hundred and fifty. One premium plan sets that range, and ten of the eleven plans cost between fifteen and forty. Misleads. A delivery app promises an average of thirty minutes. With a standard deviation of eighteen minutes, some orders take close to an hour, and many take over forty-five minutes. An average without a spread hides the **risk**. Fits. Our sleep comparison, which gives both the centre and the spread, side by side.
 
 Visual: stage change (simulation 3): the gallery (d12's `ClaimGallery`): on "Fits. A café" a card "Machine 1: σ 1.2 mL; Machine 2: σ 6.8 mL" with the coffee cart badge flips "fits" (green; reason "σ compares consistency"). On "Misleads. A phone shop" a card "Plans from $15 to $250!" with a value strip 15, 18, 20, 22, 25, 25, 28, 30, 35, 40, 250 (the 250 far right) flips "misleads" (red; reason "one plan sets the range"; hand tag "one plan sets the range"). On "A delivery app" the delivery bag `ma11-delivery-bag-v1.png` (about 220 px) and a card "Average delivery 30 min" with a faint wide spread of dots appearing (σ 18 min) flips "misleads" (red; reason "average without spread"; hand tag). On "risk" (bold) the card's reason glows. On "Our sleep comparison" the sentence from scene 5 as a small card flips "fits" (green).
 
@@ -94,14 +102,14 @@ Visual: stage change (simulation 3): the gallery (d12's `ClaimGallery`): on "Fit
 Visual: stage change to the framed `MemoryAidCard`. Left slot: the comparison board with its two scales and arrows. Main line, hand font 56 px: "Compare centre, then spread, with numbers, in context." On "much" the key line, 40 px: "Use the same measure for both groups; say which is higher or more consistent, and by how much." Hold about 2 s.
 
 ### 8. attempt 1 (countdown, 10 seconds)
-> Your turn. Two coffee machines are set to pour two hundred and fifty millilitres. Machine one has a mean of two fifty-one, with a standard deviation of one point two. Machine two has a mean of two fifty-five, with a standard deviation of six point eight. Compare the machines using centre and spread, and say which a café should choose. Pause here to answer.
+> Your turn. Two bakeries sell loaves labelled five hundred grams. Bakery one's loaves have a mean of five hundred and three grams, with a standard deviation of fourteen. Bakery two's have a mean of five hundred and one, with a standard deviation of three. Compare the bakeries using centre and spread, and say which sells the more reliable loaf. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Two coffee machines are set to pour 250 mL. Machine 1: mean 251 mL, standard deviation 1.2 mL. Machine 2: mean 255 mL, standard deviation 6.8 mL. Compare the machines using centre and spread, and say which a café should choose." Picture slot: the coffee cart `ma11-coffee-cart-v1.png` (about 280 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Two bakeries sell loaves labelled 500 g. Bakery 1: mean 503 g, standard deviation 14 g. Bakery 2: mean 501 g, standard deviation 3 g. Compare the bakeries using centre and spread, and say which sells the more reliable loaf." Picture slot: the loaf `ms12-bread-loaf-v1.png` (about 280 px) if it has been delivered and viewed by the build (it is briefed for Year 12 p08 and z01, not yet in `public/assets/maths` on 24 Nov 2026); otherwise the slot is left to the card. No new plate is requested for d14. (Revision 2, D14-SEEN.) Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
-> Machine one's mean is just one millilitre over the target, against five for machine **two**. And its standard deviation is much smaller, one point two against six point eight, so its cups are more consistent. Choose machine **one**. Choosing machine two because its mean is higher is the **slip**.
+> Bakery two's mean is just one gram over the label, against three for bakery **one**. And its standard deviation is much smaller, three against fourteen, so its loaves are more consistent. Choose bakery **two**. Choosing bakery one because its loaves are heavier on average is the **slip**.
 
-Visual: the card shrinks to the top (30 px). The comparison board: a centre scale with a target line at 250 and triangles at 251 and 255; on "two" row "centre: 1 mL over against 5 mL over" (green). The spread scale with bars 1.2 and 6.8; row "spread: σ 1.2 against 6.8: Machine 1 more consistent" (green); on "one" row "choose Machine 1" (framed green). On "slip" a red slip "Machine 2: higher mean" writes and is crossed (caption "250 is the target"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). The comparison board: a centre scale with a label line at 500 and triangles at 501 and 503; on "one" row "centre: Bakery 2 1 g over against 3 g over" (green). The spread scale with bars 3 and 14; row "spread: σ 3 g against 14 g: Bakery 2 more consistent" (green); on "two" row "choose Bakery 2" (framed green). On "slip" a red slip "Bakery 1: heavier on average" writes and is crossed (caption "500 g is the label"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Swimmer A's eight fifty metre times are in cells B two to B nine, and Swimmer B's in C two to C nine. Write spreadsheet formulas for Swimmer A's mean and population standard deviation. Then, the results are, A, mean thirty-one point two seconds, sigma nought point four. B, mean thirty point eight seconds, sigma one point five. Compare the swimmers. Pause here to answer.
@@ -138,7 +146,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 - **Misconceptions addressed:** mixing measures (3); no numbers (5); higher-is-better with times (A2); a range with one extreme (6); an average without spread (6); claiming cause (5).
 - **Visual standard, item by item:** 1 the two groups and the "conclude" step in the first 20 s; 2 a new stage every 40 to 70 s; 3 the spreadsheet fill with results flying to markers, the comparison board's growing arrows, the gallery flips; 4 fixed roles; 5 large type; 6 hand tags; 7 g01 rows with framed answers and crossed slips; 8 framed card and five bullets; 9 changing one cell updates every result.
 - **One idea at a time:** spreadsheet (2), centre (3), spread (4), sentence (5), real-world uses (6).
-- **Response opportunity:** two unseen tasks with every demand visible; 10 s each; feedback about 21.4 s and 25.5 s.
+- **Response opportunity:** two unseen tasks with every demand visible; 10 s each; feedback about 20.8 s and 25.5 s.
 - **Avoided double teaching:** d11 to d13's formulas are grey chips; d04's caution is a chip; the IQR is left to d15.
 - **Syllabus coverage:** `ciabf18f84` (3 to 5, A1, A2; notes 2 to 4); `ci6dfbf5c5` spread (6; note 5); `ci6446263f` (2, A2; note 1).
 - **Out of scope by design:** comparing with box plots (d17); significance tests.
@@ -146,7 +154,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Practice questions and model answers
 
 **Attempt 1 (scene 8; pack question 1, original HSC style, 2 marks suggested, not an official marking scheme).** As on the card.
-Model answer: Machine 1's mean is closer to 250 mL (1 mL over against 5 mL) and its σ is much smaller (1.2 mL against 6.8 mL), so its cups are closer to the target and more consistent: choose Machine 1. Classic mistake (crossed): "Machine 2, because its mean is higher".
+Model answer: Bakery 2's mean is closer to 500 g (1 g over against 3 g) and its σ is much smaller (3 g against 14 g), so its loaves are closer to the label and more consistent: choose Bakery 2. Classic mistake (crossed): "Bakery 1, because its loaves are heavier on average".
 
 **Attempt 2 (scene 10; pack question 2, 3 marks suggested).** As on the card.
 Model answer: (a) =AVERAGE(B2:B9) and =STDEV.P(B2:B9). (b) Swimmer B is faster on average (30.8 s against 31.2 s, 0.4 s less); Swimmer A is more consistent (σ 0.4 s against 1.5 s). Classic mistake (crossed): "(b) Swimmer A is faster, because 31.2 is higher".
@@ -160,7 +168,7 @@ Model answer: (a) =AVERAGE(B2:B9) and =STDEV.P(B2:B9). (b) Swimmer B is faster o
 | Differences | 1.54 h (about 1.5 h); 1.25 h; σ 0.59 h | 3, 4 |
 | Phone plans (example) | $15 to $250; ten within $15 to $40 | 6 |
 | Delivery (example) | mean 30 min, σ 18 min | 6 |
-| A1 | 251, 1.2; 255, 6.8 | 8, 9 |
+| A1 (Revision 2) | Bakery 1: 503 g, σ 14 g; Bakery 2: 501 g, σ 3 g | 8, 9 |
 | A2 | 31.2, 0.4; 30.8, 1.5 | 10, 11 |
 
 ## Numbers to verify (all values, repeated for Codex)
@@ -169,18 +177,19 @@ Recalculated (24 Nov 2026, scratchpad `s11d/stats.py`, `python -I`); Codex to re
 - Bedroom: n 12; 79 ÷ 12 = 6.5833; median 6.75; range 5.5; σ 1.3668. Elsewhere: n 8; 65 ÷ 8 = 8.125; median 8; range 2.5; σ 0.7806.
 - 8.125 − 6.5833 = 1.5417; 8 − 6.75 = 1.25; 1.3668 − 0.7806 = 0.5862.
 - Phone plans: range 250 − 15 = 235; ten of eleven within 15 to 40.
+- A1 (Revision 2): Bakery 1 503 − 500 = 3 g over, σ 14 g; Bakery 2 501 − 500 = 1 g over, σ 3 g; Bakery 2 is closer to the label and more consistent (example values).
 - The spreadsheet formulas run as written (=COUNT, =AVERAGE, =MEDIAN, =MAX−MIN, =STDEV.P).
 
 ## Memory aid check
 
-- **"Compare centre, then spread, with numbers, in context."** with key line **"Use the same measure for both groups; say which is higher or more consistent, and by how much."** Original; it carries site lesson07's three traps (different measures, ignoring spread, no numbers). It helps a new case: two bakeries' loaf masses (same mean, different σ: the smaller σ is more consistent).
+- **"Compare centre, then spread, with numbers, in context."** with key line **"Use the same measure for both groups; say which is higher or more consistent, and by how much."** Original; it carries site lesson07's three traps (different measures, ignoring spread, no numbers). It helps a new case: two bakeries' loaf masses (the smaller σ is more consistent); since Revision 2 this is attempt 1, a case the teaching cards do not settle.
 - **Considered, not used:** "CSN: centre, spread, numbers" (an acronym without a natural word).
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,512 characters**, 13 scene headings. Characters per scene (1 to 13): 464, 834, 566, 580, 509, 613, 170, 358, 285, 382, 339, 325, 75. Feedback speech about 21.4 s and 25.5 s.4 s and 25.5 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,546 characters** in Revision 2 (Revision 1: 5,512), 13 scene headings. Characters per scene (1 to 13): 464, 834, 566, 580, 509, 647, 170, 366, 277, 382, 339, 325, 75. Feedback speech about 20.8 s and 25.5 s.
 
-At 13.3 characters per second the speech is about 414 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spreadsheet fill, the arrows and the card flips, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 497 s**, 73 s under the 570 s cap.
+At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the spreadsheet fill, the arrows and the card flips, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 500 s**, 70 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 2's last sentence; scene 4's "three hour night" sentences.
 
@@ -223,7 +232,7 @@ Uses: `PlateImg`, `HandTag`, `InvestigationStrip` (mini), `DotPlot` (d07), `Spre
 
 Additions (kit-needs row d14):
 1. **`SpreadsheetGrid` summary block with fill-across and live recompute**: formulas evaluated from the cells; results fly to linked plot markers; editing a cell recomputes. Check: B 12, 6.58, 6.75, 5.5, 1.37; C 8, 8.13, 8, 2.5, 0.78.
-2. **`ComparisonBoard`**: centre and spread scales with two groups' markers, a target line option, growing difference arrows with readouts, and a "faster ←" direction flag. Check: 1.54 h; σ 0.59 h; A1 1 and 5 mL over, σ 1.2 and 6.8; A2 0.4 s.
+2. **`ComparisonBoard`**: centre and spread scales with two groups' markers, a target line option, growing difference arrows with readouts, and a "faster ←" direction flag. Check: 1.54 h; σ 0.59 h; A1 (Revision 2) 3 g and 1 g over 500 g, σ 14 and 3; A2 0.4 s.
 
 ## Codex asset brief
 
@@ -267,3 +276,4 @@ Builds on: Range and Standard Deviation. Next: Quartiles, the Five-Number Summar
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d13; check that each formula is spoken with its meaning, that every comparison names a group, a direction and an amount, that the caution is in the sentence, that the swimmer context flips "higher", and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D14-SEEN; D14-DELIV). Next: Codex maths check and error check, then voicing and a build to grade A.

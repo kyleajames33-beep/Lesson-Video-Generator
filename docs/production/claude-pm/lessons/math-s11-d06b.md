@@ -1,8 +1,8 @@
 # Maths S11 D06B: How do a cumulative frequency table, histogram and polygon answer "how many below?" A running total, the staircase histogram, the polygon through the top-right corners, reading "less than" and "at least", and drawing both sets with a spreadsheet or app (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d06a.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d06a.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,528 characters by script (see "Narration length estimate"), 13 scene headings, about 499 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,550 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: seventh video of the Year 11 Data analysis strand, the second half of outline video d06 (playlist order 66, with d06a). One video for Standard 1 and Standard 2. Viewers arrive from d06a's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d06b.md`. Route entry: `math-s11-d06b` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (card 05's cumulative column); the cumulative graph and digital tools are taught from the syllabus (MSY-38). Visual system: maths studio kit; the phone, starting blocks and phone dock plates (all existing); the staircase, cumulative polygon, reading guide, spreadsheet grid and app screen coded.
 
@@ -15,6 +15,13 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Data analysi
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d06a's final frame exactly (the screen-time histogram with its polygon, about 1,000 px wide, at the centre-right: axis "Screen time (min)" 0 to 540, ticks every 60, frequency 0 to 10, olive bars 3, 9, 7, 5, 3, 2, 1, the darker olive polygon closed at 30 and 510; the phone `ma12-phone-v1.png`, about 420 px tall, at the left; an amber dashed line at 240 min; chips "4 hours = 240 min", "How many used less than 4 hours?", "Next: cumulative frequency" and "?"). Recalls d06a (frequency table, histogram, polygon) and f08 (spreadsheet formulas, fill down) in grey chips. Teaches: cumulative frequency; the cumulative table; the cumulative histogram and polygon; reading "less than", "at least" and "between"; a spreadsheet and a statistics app for both sets. Not taught: medians or quartiles from the polygon (d15); shape words (d09).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d06b-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D06B-EARLY (note): applied.** Scene 4 now says "Plot them at the class centres instead, and the line runs half a class too far left, so every reading comes out too high." The bold cue moves from "early" to "high"; a reading at 180 on the ghost line shows above 12 in red before the ghost line is crossed.
+- Narration 5,550 characters (Revision 1: 5,528); about 501 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 20.9 s and 19.6 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -71,9 +78,9 @@ Visual: stage change: the frequency table (d06a's, 44 px) at the left: "Screen t
 Visual: stage change (simulation 1): d06a's histogram at full width; on "running total" each bar in turn slides up to sit on the previous bar's height (ghost outlines of the original bars stay faint): 3, then 9 lands on 3 to reach 12, then 7 lands to reach 19, then 24, 27, 29, 30; the vertical axis rescales from 0 to 10 to 0 to 30 as it climbs, with a running counter beside the tallest step. On "climbs like a staircase" an olive outline traces the steps (hand tag "climbs, never falls"). On "down" (first bold) a ghost step tries to drop and is crossed red. On "values" the top step rings with "30 = whole class".
 
 ### 4. the cumulative frequency polygon
-> The cumulative frequency polygon joins the staircase with a line. Here's the important part. Each running total counts every value below the end of its class, so its point goes at the end of the class, the top right corner of each bar. Not the middle, like last time. Twelve goes at a hundred and eighty. Nineteen goes at two hundred and forty. And the polygon starts at zero, at sixty minutes, because nobody used less than sixty. From there it rises to thirty at four hundred and **eighty**. Read it like the table. Each point says how many students are below that time. Plot these points at the class centres instead, and every reading comes out half a class too **early**.
+> The cumulative frequency polygon joins the staircase with a line. Here's the important part. Each running total counts every value below the end of its class, so its point goes at the end of the class, the top right corner of each bar. Not the middle, like last time. Twelve goes at a hundred and eighty. Nineteen goes at two hundred and forty. And the polygon starts at zero, at sixty minutes, because nobody used less than sixty. From there it rises to thirty at four hundred and **eighty**. Read it like the table. Each point says how many students are below that time. Plot them at the class centres instead, and the line runs half a class too far left, so every reading comes out too **high**.
 
-Visual: stage change (simulation 2): on the staircase, blue-outlined dots drop onto the top-right corner of each bar: (120, 3), (180, 12), (240, 19), (300, 24), (360, 27), (420, 29), (480, 30) (hand tag "top right corner"); on "Not the middle" a ghost dot on the second bar's top centre is crossed red (grey chip "d06a: polygon dots at centres"). On "starts at zero, at sixty minutes" a dot drops on the axis at (60, 0) (hand tag "start at zero"). On "eighty" (bold) the darker olive line joins all eight points. On "early" a ghost line through the centres slides half a class left and is crossed (caption "cumulative: plot at the end of each class").
+Visual: stage change (simulation 2): on the staircase, blue-outlined dots drop onto the top-right corner of each bar: (120, 3), (180, 12), (240, 19), (300, 24), (360, 27), (420, 29), (480, 30) (hand tag "top right corner"); on "Not the middle" a ghost dot on the second bar's top centre is crossed red (grey chip "d06a: polygon dots at centres"). On "starts at zero, at sixty minutes" a dot drops on the axis at (60, 0) (hand tag "start at zero"). On "eighty" (bold) the darker olive line joins all eight points. On "high" (Revision 2, D06B-EARLY) a ghost line through the centres slides half a class left, a reading at 180 on it shows above 12 (red), and the ghost line is crossed (caption "cumulative: plot at the end of each class").
 
 ### 5. reading the polygon
 > Now the payoff. To find how many are below a value, go up from that value to the line, then across. Less than three hundred minutes? Up and across gives twenty-four. But exam questions also ask for at least, or more than. The polygon only reads less than, so subtract from the total. At least three hundred minutes is thirty minus twenty-four, six **students**. And between a hundred and eighty and three hundred? Twenty-four are below three hundred, and twelve are below a hundred and eighty, so twenty-four minus twelve, twelve **students**. Reading twenty-four as the at least answer is the classic **slip**. Read first, then decide whether to subtract.
@@ -176,9 +183,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`, `python -I`); Codex to r
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,528 characters**, 13 scene headings. Characters per scene (1 to 13): 435, 616, 484, 668, 644, 738, 161, 398, 278, 370, 261, 388, 75. Feedback speech about 20.9 s and 19.6 s.9 s and 19.6 s.9 s and 19.6 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,550 characters** in Revision 2 (Revision 1: 5,528), 13 scene headings. Characters per scene (1 to 13): 435, 616, 484, 690, 644, 738, 161, 398, 278, 370, 261, 388, 75. Feedback speech about 20.9 s and 19.6 s.
 
-At 13.3 characters per second the speech is about 416 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the staircase, the dots and guides, and the fill-down, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 499 s**, 71 s under the 570 s cap.
+At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the staircase, the dots and guides, and the fill-down, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 501 s**, 69 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 6's statistics-app sentences; scene 3's last sentence.
 
@@ -265,3 +272,4 @@ Builds on: Grouping Data: Frequency Tables and Histograms. Next: Choosing a Grap
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d06a; check that "running total" is shown before "cumulative" is used, that the corner placement has its reason before the slip, that every reading is at a class boundary, that the spreadsheet scene speaks each formula and its meaning, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D06B-EARLY). Next: Codex maths check and error check, then voicing and a build to grade A.

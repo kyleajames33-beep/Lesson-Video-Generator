@@ -1,8 +1,8 @@
 # Maths S11 D03: Which sampling method gives a sample that represents the population? Census and sample; random, systematic, stratified and self-selected samples compared; and judging a sample by how it was chosen (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` and `d02.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "Year 11 d03 (samples; random and self-selected samples)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` and `d02.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "Year 11 d03 (samples; random and self-selected samples)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,528 characters by script (see "Narration length estimate"), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,528 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: third video of the Year 11 Data analysis strand, outline playlist order 63. One video for Standard 1 and Standard 2. Viewers arrive from d02's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d03.md`. Route entry: `math-s11-d03` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson02.sa.html` (card 05, WE, drill 5) and `lesson09.sa.html` (card 06, MC 2, MC 4, trap 02). Visual system: maths studio kit; the bus, calculator, tournament board, paper sheet and concert ticket plates (all existing); the dot field sampler, list pointer and comparison table coded.
 
@@ -16,6 +16,13 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Data analys
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d02's final frame exactly (the 200-dot field, about 1,000 px wide, 140 dots blue and 60 dots blue with amber outlines; legend chips "140 live nearby" and "60 catch the early bus"; counter "sample: 20"; the bus `ma12-bus-side-v1.png`, about 420 px wide, at the bottom right; chips "Who do we ask?", "Next: sampling methods" and "?"). Recalls d01 (target population, sample) and d02 (bias as a lean) in grey chips. Teaches: census and sample; representative; random, systematic, stratified and self-selected sampling (convenience named once); comparing them; justifying representativeness by the method. Not taught: faults in experiments and observational studies (d04).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d03-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D03-RAN (note): applied.** The calculator screen in scene 2 reads "random: 137", not the brand key label "Ran#". No narration changed.
+- Narration 5,528 characters (Revision 1: 5,528); about 497 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 26.5 s and 23.0 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -64,7 +71,7 @@ Visual: opens on d02's final frame exactly. On "we want to ask twenty" the "Next
 ### 2. census, then a random sample
 > Asking every member of the population is called a census. It's the most complete, but it takes time and money, and for big populations it's often impossible. So we sample. And a sample is only useful if it's representative, meaning it looks like the population in the ways that matter for our question. Here, that's where students live. The first method is a random sample, where every member has the same chance of being chosen. That's not the everyday meaning of random, just grabbing whoever. It means a fair draw, like a random number generator on a calculator, picking students by their roll numbers. Let's run it. This draw picked four bus students. Run it again, nine. Again, six. Random sampling is fair, because nobody chooses who's in. But with a small sample, chance can still give you a lopsided **one**.
 
-Visual: stage change (simulation 1): the dot field sampler enlarged (about 1,100 px wide), share bar beneath with an amber "population: 30% bus" line. On "census" every dot glows at once (hand tag "everyone = census"; chip "census: every member"); on "time and money" a small clock and coin-jar badge flicker, then the glow fades. On "representative" chip "representative: looks like the population in the ways that matter". On "random sample" the calculator `ma12-calculator-v1.png` (about 360 px tall) at the left with a coded screen "Ran# → 137"; dots light one at a time with roll numbers (hand tag "same chance"). On "four bus students" the run completes: counter "bus: 4 of 20", share bar 20%. On "nine" a second run: "bus: 9 of 20", 45%. On "six" a third run: "bus: 6 of 20", 30% (on the line). On "one" (bold) hand tag "unlucky, not unfair".
+Visual: stage change (simulation 1): the dot field sampler enlarged (about 1,100 px wide), share bar beneath with an amber "population: 30% bus" line. On "census" every dot glows at once (hand tag "everyone = census"; chip "census: every member"); on "time and money" a small clock and coin-jar badge flicker, then the glow fades. On "representative" chip "representative: looks like the population in the ways that matter". On "random sample" the calculator `ma12-calculator-v1.png` (about 360 px tall) at the left with a coded screen "random: 137" (Revision 2, D03-RAN: no brand key label); dots light one at a time with roll numbers (hand tag "same chance"). On "four bus students" the run completes: counter "bus: 4 of 20", share bar 20%. On "nine" a second run: "bus: 9 of 20", 45%. On "six" a third run: "bus: 6 of 20", 30% (on the line). On "one" (bold) hand tag "unlucky, not unfair".
 
 ### 3. a systematic sample
 > A systematic sample picks every k-th member from a list. Divide the population by the sample size. Two hundred divided by twenty is ten, so we take every tenth student on the roll. Start at a random place between one and ten, say seven. Then seven, seventeen, twenty-seven, and so on, up to one ninety-**seven**. That's twenty students, spread evenly through the list. It's quick, and it usually behaves like a random sample. The catch is a list with a pattern. If every tenth student on the roll happened to be a bus student, a step of ten could pick all bus students, or **none**.
@@ -175,9 +182,9 @@ Model answer: (i) systematic; (ii) self-selected; (iii) random. (ii) is least li
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,528 characters**, 13 scene headings. Characters per scene (1 to 13): 423, 812, 574, 601, 662, 573, 182, 322, 353, 282, 306, 351, 75. Feedback speech about 26.5 s and 23.0 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,528 characters** in Revision 2 (Revision 1: 5,528), 13 scene headings. Characters per scene (1 to 13): 423, 812, 574, 601, 662, 573, 182, 322, 353, 282, 306, 351, 75. Feedback speech about 26.5 s and 23.0 s.
 
-At 13.3 characters per second the speech is about 416 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the sampler runs (2 to 5), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 497 s**, 73 s under the 570 s cap.
+At 13.3 characters per second the speech is about 416 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the sampler runs (2 to 5), about 16 s; the key-notes scene adds about 39 s beyond its line. Total **about 497 s**, 73 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 5's convenience sentence; scene 3's patterned-list sentences.
 
@@ -264,3 +271,4 @@ Builds on: Privacy, Bias and Ethics in Surveys. Next: Faults in Data Collection:
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d02; check that "representative" is defined before any method is judged, that each method's run is visible on the same population, that the stratified working shows the proportion before the count, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D03-RAN). Next: Codex maths check and error check, then voicing and a build to grade A.

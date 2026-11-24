@@ -1,10 +1,10 @@
 # Maths S11 D11: How do the mean, median and mode measure the centre of a dataset? The mean as total ÷ how many and the balance point, the median as the middle, the mode as the most common, from dot plots, stem-and-leaf plots and frequency tables, with the calculator's statistics mode (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d10.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b04a.md`: "Year 11: the mean = total ÷ how many"; `math-s12-b01.md`: "Year 11: dot plot, mean, median"; `math-s12-z01.md`: "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d10.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b04a.md`: "Year 11: the mean = total ÷ how many"; `math-s12-b01.md`: "Year 11: dot plot, mean, median"; `math-s12-z01.md`: "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,513 characters by script (see "Narration length estimate"), 13 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,518 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
-Scope: twelfth video of the Year 11 Data analysis strand, outline playlist order 71. One video for Standard 1 and Standard 2. Viewers arrive from d10's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d11.md`. Route entry: `math-s11-d11` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson10.sa.html` (cards 05, 06; WE 2). Visual system: maths studio kit; the alarm clock, calculator, bedroom, phone dock, coffee cart and cricket scoreboard plates (all existing); the dot plot, balance beam, order strip, frequency table and calculator screens coded.
+Scope: twelfth video of the Year 11 Data analysis strand, outline playlist order 71. One video for Standard 1 and Standard 2. Viewers arrive from d10's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d11.md`. Route entry: `math-s11-d11` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson10.sa.html` (cards 05, 06; WE 2). Visual system: maths studio kit; the alarm clock, calculator, bedroom, phone dock, and coffee cart plates (all existing); the dot plot, balance beam, order strip, frequency table and calculator screens coded.
 
 Owner rules applied: as d01 (header strip "DATA ANALYSIS" only; one question; one stage at a time; words before symbols; plain meanings; two attempts with "Pause here to answer." and 10 s countdowns; brief feedback with one crossed slip; five key notes with a framed card; everyday anchors; no people, hands or faces; unbranded calculator, no key sequences; Australian spelling; no em dashes).
 
@@ -16,6 +16,14 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 
 **Boundary:** starts from d10's final frame exactly (the sleep dot plot, about 1,200 px wide, axis "Hours of sleep" 2 to 10 in half hours, 20 blue dots: 3; 5.5; 6, 6; 6.5, 6.5; 7, 7, 7; 7.5 × 4; 8 × 3; 8.5, 8.5; 9; 9.5; the alarm clock `ma11-alarm-clock-v1.png`, about 260 px, at the top left; the calculator `ma12-calculator-v1.png`, about 440 px tall, at the right; chips "One number for a typical night?", "Next: mean, median and mode" and "?"). Recalls d06a (the screens table), d06b (running totals), d08 (the middle of 15) and d10 (the poster's "average") in grey chips. Teaches: measures of centre; the mean, median and mode; from a dot plot, a stem-and-leaf plot and a frequency table; the calculator's statistics mode; a spreadsheet in one line. Not taught: choosing between them (d12); spread (d13).
 
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d11-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D11-SIGMAX (should fix, root's ruling 6): applied.** Scene 6 says "and the sum of x, the total, a hundred and forty-four"; "sigma x" is never said for Σx. The screen line "Σx = 144" carries a small grey label "the sum of x (the total)". d13 now says "lower-case sigma x" for σx and labels Σx the same way.
+- **D11-A2PIC (note): applied.** Attempt 2's picture slot shows the table only; the cricket scoreboard plate is no longer used for a soccer season (Assets and Scope updated).
+- Narration 5,518 characters (Revision 1: 5,513); about 498 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 21.9 s and 25.0 s. No em dash. Joins unchanged.
+
 ## Decisions
 
 - **Anchor: the sleep dot plot (d10's frame).** d10 teased three markers (balance, middle, most common); here each gets its name, its rule and its value on the same 20 dots: mean 7.2, median 7.5, mode 7.5. The disagreement (7.2 against 7.5) is left as the handoff question.
@@ -24,7 +32,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **The median by position.** Order first; position (n + 1) ÷ 2; for 20 values, 10.5 means halfway between the 10th and 11th values (both 7.5). The batter's 15 scores (d08) give the odd case (8th, 24) as a grey recall.
 - **The mode, including categories.** 7.5 (four nights); phone location's mode is "bedroom" (a categorical mode). Two modes (bimodal, recalled from d09) or none (all different).
 - **Tabular form: the screens table (d06a).** An f × x column gives Σfx = 31, so the mean is 31 ÷ 20 = 1.55; a running-total column finds the 10th and 11th values (1 and 2), so the median is 1.5; the mode is 1 (frequency 7). The symbols Σ, f and x are said in words: "add up frequency times value".
-- **The calculator's statistics mode (first use; d13 extends it to σ).** One-variable statistics: type the values into a list (or values with a frequency column), then read the results screen: x̄ (the mean), n (how many) and Σx (the total). Menus differ, so no key sequence is given (Year 12 b05's approach). Plain meaning: statistics mode ("a calculator setting for lists of data that works out the mean and other statistics for you"). A spreadsheet's =AVERAGE, =MEDIAN and =MODE are shown in one row as the "other digital tools".
+- **The calculator's statistics mode (first use; d13 extends it to σ).** One-variable statistics: type the values into a list (or values with a frequency column), then read the results screen: x̄ (the mean), n (how many) and Σx (the total, said "the sum of x"; Revision 2). Menus differ, so no key sequence is given (Year 12 b05's approach). Plain meaning: statistics mode ("a calculator setting for lists of data that works out the mean and other statistics for you"). A spreadsheet's =AVERAGE, =MEDIAN and =MODE are shown in one row as the "other digital tools".
 - **Plain meanings at first use.** Measure of centre ("one number that sums up the middle of the data"); mean ("total ÷ how many; the balance point"); median ("the middle value when the data are in order"); mode ("the most common value").
 - **Simulations (standard item 3).**
   1. **Balance beam** (scene 2): the dot plot on a beam over a sliding teal pivot; the beam tips until it levels at 7.2; dragging the 3 h dot to 7 moves the balance right (a preview, said in one clause).
@@ -83,9 +91,9 @@ Visual: stage change: the dot plot full width; on "the tallest stack" an olive r
 Visual: stage change: the screens frequency table (d06a's, 44 px; grey chip "d06a: screens 3, 7, 6, 4") gains a column "f × x" and a column "running total". On "multiply each value by its frequency" the f × x cells fill: "0", "7", "12", "12" (hand tag "add f × x"); row "total = 31". On "screens" (first bold) row "mean = 31 ÷ 20 = 1.55 screens" (framed green). On "Don't just average the values" a red ghost "(0 + 1 + 2 + 3) ÷ 4 = 1.5" is crossed (caption "ignores the frequencies"). On "running total" the running-total column fills "3, 10, 16, 20" (grey chip "d06b: running totals"); on "The tenth student" a pointer stops at the "1" row (10) and the "2" row (11) (hand tag "running total finds it"); on "five" row "median = (1 + 2) ÷ 2 = 1.5" (framed green). On "one" (last bold) the 7 frequency rings olive, row "mode = 1" (green).
 
 ### 6. with the calculator and a spreadsheet
-> For bigger datasets, let the calculator do the adding. Scientific calculators have a statistics mode, a setting for lists of data. Menus differ, but you're always looking for the same three things. A one variable statistics mode. A list, where you type each value, or each value with its frequency. And a results screen. Type in our twenty sleeps, and the results screen shows x bar, the mean, seven point two. It also shows n, how many, twenty, and sigma x, the total, a hundred and forty-four, so you can check your **typing**. If n isn't twenty, you've missed a value, or typed one twice. A spreadsheet can do it too. Equals AVERAGE, equals MEDIAN and equals MODE of the column give seven point two, seven point five and seven point five. Whichever tool you use, know what each number **means**.
+> For bigger datasets, let the calculator do the adding. Scientific calculators have a statistics mode, a setting for lists of data. Menus differ, but you're always looking for the same three things. A one variable statistics mode. A list, where you type each value, or each value with its frequency. And a results screen. Type in our twenty sleeps, and the results screen shows x bar, the mean, seven point two. It also shows n, how many, twenty, and the sum of x, the total, a hundred and forty-four, so you can check your **typing**. If n isn't twenty, you've missed a value, or typed one twice. A spreadsheet can do it too. Equals AVERAGE, equals MEDIAN and equals MODE of the column give seven point two, seven point five and seven point five. Whichever tool you use, know what each number **means**.
 
-Visual: stage change (simulation 3): the calculator plate (about 640 px tall) at the left with a coded unbranded screen; at the right a three-step strip, 44 px: "1. one-variable statistics mode", "2. a list: values (and frequencies)", "3. the results screen" (hand tag "menus differ"). On "one variable" the menu highlights "1-variable (x)". On "a list" a column "x" fills with the 20 values; a toggle shows a "freq" column version (7.5 | 4 ...). On "results screen" the results show "x̄ = 7.2" (48 px, teal, lit), "Σx = 144", "n = 20", and dimmed unlabelled lines below (hand tag "x̄ = the mean"). On "typing" (first bold) chips "n = 20 ✓", "Σx = 144 ✓". On "A spreadsheet" a one-row `SpreadsheetGrid` strip: "=AVERAGE(B2:B21) → 7.2 | =MEDIAN(B2:B21) → 7.5 | =MODE(B2:B21) → 7.5". On "means" the three values fly to the three markers on a small dot plot.
+Visual: stage change (simulation 3): the calculator plate (about 640 px tall) at the left with a coded unbranded screen; at the right a three-step strip, 44 px: "1. one-variable statistics mode", "2. a list: values (and frequencies)", "3. the results screen" (hand tag "menus differ"). On "one variable" the menu highlights "1-variable (x)". On "a list" a column "x" fills with the 20 values; a toggle shows a "freq" column version (7.5 | 4 ...). On "results screen" the results show "x̄ = 7.2" (48 px, teal, lit), "Σx = 144" with a small grey label "the sum of x (the total)" (Revision 2, D11-SIGMAX: said "the sum of x", never "sigma x", so it cannot be confused with d13's σx), "n = 20", and dimmed unlabelled lines below (hand tag "x̄ = the mean"). On "typing" (first bold) chips "n = 20 ✓", "Σx = 144 ✓". On "A spreadsheet" a one-row `SpreadsheetGrid` strip: "=AVERAGE(B2:B21) → 7.2 | =MEDIAN(B2:B21) → 7.5 | =MODE(B2:B21) → 7.5". On "means" the three values fly to the three markers on a small dot plot.
 
 ### 7. memory aid
 > Here's the card. Mean shares, median middles, mode is most. The mean is the total divided by how many. For the median, order, then find the middle. And the mode is the most common **value**.
@@ -105,7 +113,7 @@ Visual: the card shrinks to the top (30 px). Rows: "total = 482"; on "eight" "me
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A soccer team's goals in twenty matches are in this table. No goals in four matches, one goal in six, two goals in five, three goals in three, and four goals in two. Find the mean, the median and the mode. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "A soccer team's goals in 20 matches: Goals 0, 1, 2, 3, 4; Matches 4, 6, 5, 3, 2. Find the mean, the median and the mode." Picture slot: the table, and the cricket scoreboard `ma12-cricket-scoreboard-v1.png` (about 260 px) with coded "GOALS" on its board. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "A soccer team's goals in 20 matches: Goals 0, 1, 2, 3, 4; Matches 4, 6, 5, 3, 2. Find the mean, the median and the mode." Picture slot: the table only (Revision 2, D11-A2PIC: the cricket scoreboard plate is not used for a soccer season). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > Frequency times value gives nought, six, ten, nine and eight, thirty-three goals, so the mean is thirty-three over twenty, one point six **five**. Running totals are four, ten, fifteen, so the tenth is one and the eleventh is two, and the median is one point **five**. The mode is **one**. Averaging nought to four, and getting two, is the **slip**.
@@ -179,9 +187,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/verify.py` and `stats.py`, `python -
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,513 characters**, 13 scene headings. Characters per scene (1 to 13): 451, 621, 775, 558, 667, 790, 186, 163, 291, 237, 333, 354, 75. Feedback speech about 21.9 s and 25.0 s.9 s and 25.0 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,518 characters** in Revision 2 (Revision 1: 5,513), 13 scene headings. Characters per scene (1 to 13): 451, 621, 775, 558, 667, 795, 186, 163, 291, 237, 333, 354, 75. Feedback speech about 21.9 s and 25.0 s.
 
-At 13.3 characters per second the speech is about 415 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the beam, the order strip, the table fills and the calculator list, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 498 s**, 72 s under the 570 s cap.
+At 13.3 characters per second the speech is about 415 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the beam, the order strip, the table fills and the calculator list, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 498 s**, 72 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 6's spreadsheet sentences; scene 4's "two modes" sentence.
 
@@ -212,9 +220,9 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 ## Assets
 
-Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ma11-alarm-clock-v1.png`; `ma12-calculator-v1.png` (plain, unbranded); `ma11-coffee-cart-v1.png`; `ma12-cricket-scoreboard-v1.png` (blank green board, used for a coded "GOALS" label in attempt 2).
+Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ma11-alarm-clock-v1.png`; `ma12-calculator-v1.png` (plain, unbranded); `ma11-coffee-cart-v1.png`; `ma12-cricket-scoreboard-v1.png` (blank green board; Revision 2: not used, since a cricket board does not suit a soccer season).
 
-Need: none new. Reused: the four plates above.
+Need: none new. Reused: the three plates above other than the scoreboard.
 
 Coded: the dot plot and markers, the beam and pivot, the order strip and counters, the column graph badge, the frequency table with its extra columns, the calculator screens, the spreadsheet strip, the stem-and-leaf plot, boards, question cards, the countdown, hand tags, the framed card and key notes.
 
@@ -268,3 +276,4 @@ Builds on: Infographics and Misleading Graphs. Next: Choosing a Measure of Centr
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d10; check that "total ÷ how many" is said before x̄, that ordering is shown before the median position, that the position-as-value slip is crossed, that the table's f × x column is explained in words, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D11-SIGMAX; D11-A2PIC). Next: Codex maths check and error check, then voicing and a build to grade A.

@@ -1,8 +1,8 @@
 # Maths S11 D07: Which graph suits a dataset? Categorical data in tables and column graphs, organising and graphing data in a spreadsheet, and choosing and justifying the best graph for one dataset (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d06b.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b06.md`: "Year 11: spreadsheet charts"; `math-s12-p07.md`: "categorical data in tables"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d06b.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b06.md`: "Year 11: spreadsheet charts"; `math-s12-p07.md`: "categorical data in tables"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,561 characters by script (see "Narration length estimate"), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,561 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eighth video of the Year 11 Data analysis strand, outline playlist order 67. One video for Standard 1 and Standard 2. Viewers arrive from d06b's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d07.md`. Route entry: `math-s11-d07` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (card 06's contrast, the match activity, MC 1 and 5); spreadsheets are taught from the syllabus (MSY-39). Visual system: maths studio kit; the phone dock, bus, coffee cart, apple crate, television and cricket scoreboard plates (all existing); the tables, column graphs, spreadsheet and graph chooser coded.
 
@@ -17,6 +17,14 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Data analys
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d06b's final frame exactly (the phone dock `ma12-phone-dock-v1.png`, about 560 px tall, at the left; at the right the frequency table "Phone charges overnight | Frequency": "bedroom | 12", "kitchen | 5", "lounge room | 2", "other | 1", "Total | 20"; a ghost histogram of these counts with touching bars, lightly crossed; chips "Which graph?", "Next: choosing a graph" and "?"). Recalls d05 (the type tree), d06a and d06b (histograms; the spreadsheet chart) and d04 (the bus counts) in grey chips. Teaches: categorical tables with percentages; a two-way table; the column graph by hand; a spreadsheet to organise (COUNTIF) and graph; choosing and justifying a graph. Not taught: reading the six named displays (d08); shape (d09); misleading graphs (d10).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d07-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D07-SORT (note): applied.** Scene 3's nominal columns first rise in the order the answers came in (kitchen 5, bedroom 12, other 1, lounge room 2), so the sort button visibly reorders them to bedroom 12, kitchen 5, lounge room 2, other 1. No narration changed.
+- **D07-NEARBY (note): not applied.** It follows D05-TRAVEL, which is held for root (the "nearby" label runs through d02 to d07; see the resolution record).
+- Narration 5,561 characters (Revision 1: 5,561); about 501 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 23.2 s and 19.3 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -71,7 +79,7 @@ Visual: stage change: the location table enlarges (44 px) with a new column "Per
 ### 3. column graphs: gaps, and keeping order
 > Now graph it. A column graph has one column for each category, with gaps between them, because the categories are separate. The heights are the frequencies, and the vertical axis starts at nought, or the columns would mislead. Give it a title, and label both axes. Because phone location is nominal, the order of the columns doesn't matter. Sorting them, largest first, makes the graph easier to **read**. But not every categorical variable can be sorted. How rested do students feel? Not at all, a little, somewhat, quite, very. That's ordinal. Sort those columns by height, and the order that gave them meaning is gone. Ordinal data keep their **order**.
 
-Visual: stage change (simulation 1): axes (about 1,100 px wide): horizontal "Where the phone charges", vertical "Number of students" from 0 to 14. On "one column for each category" olive columns rise with gaps: bedroom 12, kitchen 5, lounge room 2, other 1 (hand tag "categories: gaps"). On "starts at nought" the 0 on the axis glows (hand tag "start at 0"). On "title" a title writes "Where our sample charges phones overnight" and the axis labels pulse. On "nominal" a "sort" button presses; the columns slide, already largest first (hand tag "nominal: any order"). On "read" (first bold) a tick. On "How rested" a second graph slides in beside: "not at all 2, a little 5, somewhat 7, quite 4, very 2" with an arrow "more rested →". On "Sort those columns" the sort button presses; the columns shuffle to "somewhat, a little, quite, not at all, very" and the arrow breaks (red flash); on "order" (bold) they snap back (hand tag "ordinal: keep the order").
+Visual: stage change (simulation 1): axes (about 1,100 px wide): horizontal "Where the phone charges", vertical "Number of students" from 0 to 14. On "one column for each category" olive columns rise with gaps in the order the answers came in: kitchen 5, bedroom 12, other 1, lounge room 2 (hand tag "categories: gaps"). On "starts at nought" the 0 on the axis glows (hand tag "start at 0"). On "title" a title writes "Where our sample charges phones overnight" and the axis labels pulse. On "nominal" a "sort" button presses; the columns slide into largest-first order: bedroom 12, kitchen 5, lounge room 2, other 1 (hand tag "nominal: any order"; Revision 2, D07-SORT: the sort now visibly changes the graph). On "read" (first bold) a tick. On "How rested" a second graph slides in beside: "not at all 2, a little 5, somewhat 7, quite 4, very 2" with an arrow "more rested →". On "Sort those columns" the sort button presses; the columns shuffle to "somewhat, a little, quite, not at all, very" and the arrow breaks (red flash); on "order" (bold) they snap back (hand tag "ordinal: keep the order").
 
 ### 4. a spreadsheet organises and graphs
 > A spreadsheet can do the organising and the graphing. Put the twenty raw answers in one column, exactly as they came in. Then let the spreadsheet count them. COUNTIF counts the cells in a range that match what you ask for. Equals COUNTIF, B two to B twenty-one, bedroom, gives twelve. Do the same for each category. For the percentage, divide by twenty, and format the cell as a percentage. Then select the categories and counts, and insert a column chart. Add a title and axis labels, because the spreadsheet won't choose good ones for you. For numerical data, like screen time, you'd make a histogram instead, with the gaps set to zero, like last time. The spreadsheet makes the chart, but you still choose which chart is **right**.
@@ -179,9 +187,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`); Codex to re-check.
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,561 characters**, 13 scene headings. Characters per scene (1 to 13): 404, 737, 648, 730, 718, 635, 158, 284, 308, 206, 257, 389, 75. Feedback speech about 23.2 s and 19.3 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,561 characters** in Revision 2 (Revision 1: 5,561), 13 scene headings. Characters per scene (1 to 13): 404, 737, 648, 730, 718, 635, 158, 284, 308, 206, 257, 389, 75. Feedback speech about 23.2 s and 19.3 s.
 
-At 13.3 characters per second the speech is about 418 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the sorting, the spreadsheet fill and the chooser drops, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 501 s**, 69 s under the 570 s cap.
+At 13.3 characters per second the speech is about 418 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the sorting, the spreadsheet fill and the chooser drops, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 501 s**, 69 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 4's histogram sentence; scene 5's stem-and-leaf clause.
 
@@ -271,3 +279,4 @@ Builds on: Cumulative Frequency: Tables, Histograms and Polygons. Next: Reading 
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d06b; check that gaps get their reason before the rule, that the ordinal sort failure is visible, that each spreadsheet formula is spoken with its meaning, that every choice in scene 6 has a "because", and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D07-SORT; D07-NEARBY held with D05-TRAVEL). Next: Codex maths check and error check, then voicing and a build to grade A.

@@ -1,10 +1,10 @@
 # Maths S11 D19: How does one outlier change the measures of centre and spread? The six measures with and without the 3-hour night, why the mean, range and σ move while the median and IQR hold, what to report, the investigation's conclusion, and the close of Year 11 (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d18.md` (Revision 1, this batch), the Year 12 design it hands to (`math-s12-a01.md`, read only: its cold-open picture), the coherence audit (N9: a "Year 11: done" close) and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d18.md` (Revision 1, this batch), the Year 12 design it hands to (`math-s12-a01.md`, read only: its cold-open picture), the coherence audit (N9: a "Year 11: done" close) and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,508 characters by script (see "Narration length estimate"), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,508 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
-Scope: twentieth design and last video of the Year 11 Data analysis strand, outline playlist order 79, and the last Year 11 video in playlist order. One video for Standard 1 and Standard 2. Viewers arrive from d18's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d19.md`. Route entry: `math-s11-d19` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson10.sa.html` (card 08; SA 1 (c)), `lesson11.sa.html` (card 05) and `lesson13.sa.html` (card 06). Visual system: maths studio kit; the alarm clock, bedroom, cricket scoreboard and driving-school car plates (all existing); the box plots, summary card, drag readouts and sorting board coded.
+Scope: twentieth design and last video of the Year 11 Data analysis strand, outline playlist order 79, and the last Year 11 video in playlist order. One video for Standard 1 and Standard 2. Viewers arrive from d18's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d19.md`. Route entry: `math-s11-d19` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson10.sa.html` (card 08; SA 1 (c)), `lesson11.sa.html` (card 05) and `lesson13.sa.html` (card 06). Visual system: maths studio kit; the alarm clock, bedroom and driving-school car plates (all existing); the box plots, summary card, drag readouts and sorting board coded.
 
 Owner rules applied: as d01 (header strip "DATA ANALYSIS" only; one question; one stage at a time; plain meanings; two attempts with "Pause here to answer." and 10 s countdowns; brief feedback with one crossed slip; five key notes with a framed card; everyday anchors; no people, hands or faces; Australian spelling; no em dashes).
 
@@ -15,6 +15,16 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Data analysi
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d18's final frame exactly (the alarm clock `ma11-alarm-clock-v1.png` small at the top left; one number line "Hours of sleep" 2 to 10 with two box plots: "with the 3 h night" (point at 3, whisker from 5.5, box 6.5 to 8, median 7.5, whisker to 9.5) and "without it" (whiskers 5.5 and 9.5, box 6.5 to 8, median 7.5); a summary card at the right with rows "mean", "median", "mode", "range", "IQR", "σ" and columns "with" (7.2, 7.5, 7.5, 6.5, 1.5, 1.39) and "without" (blank); chips "What changes?", "Next: the effect of an outlier" and "?"). Recalls d18 (the outlier is genuine; keep and report), d11 to d13 and d15 (the six measures) and d12 (the mean follows the extremes) in grey chips. Teaches: the impact of an outlier on each measure, and why; sensitive and resistant measures; what to report. Closes the strand, the investigation and Year 11; hands to Year 12 a01.
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d19-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D19-DRAG (should fix, root's ruling 9): applied with the 7.5 stop kept.** Recomputed by the halves method for every drag position from 1 to 16 in steps of 0.1 (scratchpad `s11drev/drag.py`, `python -I`, exact fractions). At 7.5: mean 297/40 = 7.425 (shown 7.43), range 4, Q1 6.75, Q3 8, IQR 1.25, σ 1.0034 (1.00), median 7.5. The IQR dips from 1.5 to 1.25 while the dot is between 7 and 8 (the dot joins the lower half there and lifts Q1), and returns to 1.5 from 8.5. At 16: mean 7.85, range 10.5, Q1 6.75, Q3 8.25, IQR 1.5, σ 2.1219 (2.12). The median is 7.5 at every position. The scene 4 visual, author note (d), Numbers used, Numbers to verify, the drag-mode kit check and error-check item 1 now state these values; the builder rounds the exact mean half up (a binary float would show 7.42). The narration ("the median and the IQR barely flicker") still holds: the median does not move and the IQR moves by a quarter of an hour.
+- **D19-GUIDE (note): applied.** The conclusion card carries d01's source line, 28 px: "Australian 24-Hour Movement Guidelines (Australian Government, 2019)".
+- **D19-A1PIC (note): applied.** Attempt 1's picture slot is left to the card; the cricket scoreboard plate is no longer used for a goals season (Assets and Scope updated).
+- Cross-link with d13 (ruling 1): scene 3's deviation arms carry a grey chip "d13: the breakdown day pulled σ too", so d19 confirms what d13 now teaches.
+- Narration 5,508 characters (Revision 1: 5,508); about 497 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 27.1 s and 21.7 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -44,7 +54,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
   (a) With: 144 ÷ 20 = 7.2; without: 141 ÷ 19 = 7.4211; change 0.2211 h = 13.3 min.
   (b) Without: 19 values, median the 10th = 7.5; Q1 the 5th of the lower 9 = 6.5; Q3 the 5th of the upper 9 = 8; mode 7.5 (4 times).
   (c) σ with 1.3910; without 1.0293; drop 0.36 (26%).
-  (d) Drag (builder computes live): at 16 the mean is (141 + 16) ÷ 20 = 7.85, the range 16 − 5.5 = 10.5; the median and IQR stay 7.5 and 1.5 for every position from 1 to 16 except where the dragged value passes 6.5 (then Q1 can move; the drag skips that stretch quickly).
+  (d) Drag (builder computes live; Revision 2, recomputed by the halves method for every position 1 to 16 in steps of 0.1): the median is 7.5 at every position. The IQR is 1.5 up to 6.5, falls linearly to 1.25 at 7 (Q1 6.75), stays 1.25 from 7 to 8, rises back to 1.5 at 8.5 (Q3 8.25) and stays 1.5 to 16. At 7.5: mean 297/40 = 7.425 (shown 7.43, rounded half up from the exact value, not from a binary float, which would give 7.42), range 9.5 − 5.5 = 4, Q1 6.75, Q3 8, IQR 1.25, σ 1.0034 (1.00). At 16: mean 157 ÷ 20 = 7.85, range 16 − 5.5 = 10.5, Q1 6.75, Q3 8.25, IQR 1.5, σ 2.1219 (2.12).
   (e) A1: with 74 ÷ 8 = 9.25, median (6 + 7) ÷ 2 = 6.5; without 43 ÷ 7 = 6.142857 (6.14), median 6; mean change 3.11, median change 0.5.
   (f) Conclusion values: median 7.5, IQR 1.5; groups' medians 8 and 6.75 (d17).
   (g) a01's picture is copied from `math-s12-a01.md` scene 1 (read only): car about 1,100 px wide; cards 44 px with blue and teal frames.
@@ -71,12 +81,12 @@ Visual: stage change (simulation 1): the summary card enlarges (52 px). On "nine
 ### 3. spread: the range and σ move, the IQR holds
 > Now the spread. The range drops from six and a half hours to four, because the three hour night was one of the two extremes the range is built from. The IQR stays at one and a half. It only looks at the middle half, and the outlier was outside it. The standard deviation falls from one point three nine to one point nought three, about a quarter less. Sigma combines every value's distance from the mean, and the three hour night was four point two hours away, much further than any other value. One big distance counts heavily, so removing it shrinks sigma a **lot**. So the outlier stretched the range and sigma, and left the IQR alone. Notice the box plots hide most of this. They show the range changing, but not the mean or sigma.
 
-Visual: the card continues; on "The range drops" the range cell fills "4" with an amber down-arrow "−2.5 h"; the "without" box plot's left whisker glows from 5.5 (hand tag "the extreme was the 3"). On "The IQR stays" the IQR cell fills "1.5", "no change", and both boxes' IQR brackets glow equal (hand tag "middle half unchanged"). On "The standard deviation falls" the σ cell fills "1.03" with "−0.36 (about a quarter)". On "four point two hours away" d13's deviation arms appear on a small dot plot, the 3's arm (4.2) far longer than the rest (hand tag "4.2 h from the mean"). On "lot" (bold) rows "range: 9.5 − 5.5 = 4 (down 2.5 h)", "IQR 1.5 (no change)", "σ: 1.03 (down from 1.39)" (framed green).
+Visual: the card continues; on "The range drops" the range cell fills "4" with an amber down-arrow "−2.5 h"; the "without" box plot's left whisker glows from 5.5 (hand tag "the extreme was the 3"). On "The IQR stays" the IQR cell fills "1.5", "no change", and both boxes' IQR brackets glow equal (hand tag "middle half unchanged"). On "The standard deviation falls" the σ cell fills "1.03" with "−0.36 (about a quarter)". On "four point two hours away" d13's deviation arms appear on a small dot plot (grey chip "d13: the breakdown day pulled σ too"; Revision 2), the 3's arm (4.2) far longer than the rest (hand tag "4.2 h from the mean"). On "lot" (bold) rows "range: 9.5 − 5.5 = 4 (down 2.5 h)", "IQR 1.5 (no change)", "σ: 1.03 (down from 1.39)" (framed green).
 
 ### 4. drag it and watch
 > Here's the whole pattern at once. Drag the outlier along the number line and watch all six measures. Slide it up into the middle of the data, and the mean, the range and sigma all settle down. Keep going, and push it far out to the right, as a very high value instead. Now the mean climbs, the range stretches, and sigma grows. Through all of that, the median and the IQR barely flicker. An outlier on either side pulls the sensitive measures towards it, and leaves the resistant ones **alone**. Try it with any dataset, and the same pattern appears.
 
-Visual: stage change (simulation 2): the sleep dot plot (about 1,300 px wide) with the 3 as a draggable grey-ringed dot; six live readouts in a row below, 44 px: "mean", "median", "mode", "range", "IQR", "σ". On "Slide it up into the middle" the dot drags to 7.5: mean 7.43, range 4, σ 1.03 (live); on "push it far out to the right" the dot drags to 16: mean 7.85, range 10.5, σ grows past 2 (live); the median readout stays 7.5 and the IQR stays 1.5 throughout (each pulsing green when the dot passes). On "alone" (bold) the dot returns to 3 and the readouts reset.
+Visual: stage change (simulation 2): the sleep dot plot (about 1,300 px wide) with the 3 as a draggable grey-ringed dot; six live readouts in a row below, 44 px: "mean", "median", "mode", "range", "IQR", "σ". On "Slide it up into the middle" the dot drags to 7.5: mean 7.43, range 4, σ 1.00, IQR 1.25 (live; the IQR dips from 1.5 to 1.25 while the dot sits between 7 and 8, because the dot joins the lower half there and lifts Q1 to 6.75); on "push it far out to the right" the dot drags to 16: mean 7.85, range 10.5, σ 2.12 (live), and the IQR is back to 1.5 (Q1 6.75, Q3 8.25); the median readout stays 7.5 throughout (pulsing green when the dot passes). (Revision 2, D19-DRAG: the readouts are the exact live values at each named stop.) On "alone" (bold) the dot returns to 3 and the readouts reset.
 
 ### 5. sensitive and resistant: what to report
 > So sort the measures. The mean, the range and the standard deviation are sensitive. They change a lot when one extreme value changes. The median and the IQR are resistant. They barely change. The mode usually holds too. That's why they come in pairs. When data have outliers, or are skewed, report the median and the IQR. That's why house prices in the news are reported as a median. When data are symmetric with no outliers, the mean and the standard deviation make good use of every value. And when an outlier is genuine, it's often best to report the results with it and without it, so nobody is **misled**.
@@ -86,7 +96,7 @@ Visual: stage change (simulation 3): the sorting board: six measure cards slide 
 ### 6. our investigation's conclusion
 > That brings our investigation to its last step. We started with an issue, students tired in first period, and a question, how much do Year 11 students at our school sleep on a school night? Our sample's median was seven and a half hours, with an IQR of one and a half hours, below the eight to ten hour guideline, and the outlier doesn't change that. Students whose phones charged outside the bedroom tended to sleep more, a median of eight hours against six point seven five. It's an observational study, so it doesn't prove the phone caused it. But it's a fair, honest answer to the question we **asked**. Every step mattered, from the clear question to the fair sample.
 
-Visual: stage change: the investigation strip (d01's) returns full width with all six steps; each lights in turn with a small thumbnail from its video: "issue" (the alarm clock), "question" (d01's card), "collect" (the 200-dot field with 20 lit), "organise and display" (the dot plot), "analyse" (the box plot and summary card), "conclude" (pulsing). A conclusion card writes below, 36 px: "Median 7.5 h (IQR 1.5 h): below the 8 to 10 h guideline. Phone elsewhere: median 8 h; in the bedroom: 6.75 h. Observational: not proof of cause." On "asked" (bold) the "conclude" step and the card frame green; the bedroom plate badge (about 300 px) appears beside it.
+Visual: stage change: the investigation strip (d01's) returns full width with all six steps; each lights in turn with a small thumbnail from its video: "issue" (the alarm clock), "question" (d01's card), "collect" (the 200-dot field with 20 lit), "organise and display" (the dot plot), "analyse" (the box plot and summary card), "conclude" (pulsing). A conclusion card writes below, 36 px (with a grey source line under it, 28 px: "Australian 24-Hour Movement Guidelines (Australian Government, 2019)"; Revision 2, D19-GUIDE): "Median 7.5 h (IQR 1.5 h): below the 8 to 10 h guideline. Phone elsewhere: median 8 h; in the bedroom: 6.75 h. Observational: not proof of cause." On "asked" (bold) the "conclude" step and the card frame green; the bedroom plate badge (about 300 px) appears beside it.
 
 ### 7. memory aid
 > Here's the card. An outlier pulls the mean, the range and sigma. The median and the IQR hold steady. So with outliers or skew, report the median and the IQR. With symmetric data, the mean and **sigma**.
@@ -96,7 +106,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the two columns "
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. The goals scored in a season by eight players were four, five, five, six, seven, eight, eight, and thirty-one, by the star striker. Find the mean and median with and without thirty-one. Then, which measure of centre changed more? Explain why. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "The goals scored in a season by eight players were 4, 5, 5, 6, 7, 8, 8 and 31 (the star striker). (a) Find the mean and median with and without 31. (b) Which measure of centre changed more? Explain why." Picture slot: the cricket scoreboard `ma12-cricket-scoreboard-v1.png` (about 280 px) with a coded "GOALS" heading on its board. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "The goals scored in a season by eight players were 4, 5, 5, 6, 7, 8, 8 and 31 (the star striker). (a) Find the mean and median with and without 31. (b) Which measure of centre changed more? Explain why." Picture slot: none; the card takes the full width (Revision 2, D19-A1PIC: the cricket scoreboard plate is not used for a goals season). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
 > With thirty-one, the mean is nine point two five and the median is six point five. Without it, the mean is six point one four and the median is **six**. The mean fell by over three goals, the median by half a goal. The mean changed more, because it uses every value, so the thirty-one pulled it **up**. Saying the median changed more, because it went down, is the **slip**.
@@ -159,7 +169,7 @@ Model answer: the mean, the range and the standard deviation (sensitive); the me
 | Without | 7.42, 7.5, 7.5, 4, 1.5, 1.03 | 2, 3, 5 |
 | Changes | +0.22 h (13 min); −2.5 h; −0.36 (about a quarter) | 2, 3 |
 | Outlier distance | 4.2 h | 3 |
-| Drag | at 7.5: 7.43, 4, 1.03; at 16: 7.85, 10.5 | 4 |
+| Drag (Revision 2) | at 7.5: mean 7.43, range 4, σ 1.00, IQR 1.25; at 16: 7.85, 10.5, σ 2.12, IQR 1.5; median 7.5 throughout | 4 |
 | Conclusion | median 7.5, IQR 1.5; groups 8 and 6.75 | 6 |
 | A1 | 9.25, 6.5; 6.14, 6; −3.11, −0.5 | 8, 9 |
 | Driving schools (a01) | $90 + $65 a lesson; $80 a lesson | 12 |
@@ -169,7 +179,7 @@ Model answer: the mean, the range and the standard deviation (sensitive); the me
 Recalculated (24 Nov 2026, scratchpad `s11d/stats.py`, `python -I`, exact fractions); Codex to re-check.
 - Without the 3: sum 141, mean 7.4211, median 7.5, mode 7.5, range 4, Q1 6.5, Q3 8, IQR 1.5, σ 1.0293.
 - With: mean 7.2, σ 1.3910; σ drop 0.3617 (26.0%); mean rise 0.2211 h = 13.3 min.
-- Drag at 7.5: mean (141 + 7.5) ÷ 20 = 7.425 (7.43); range 4; at 16: 7.85; range 10.5.
+- Drag at 7.5 (Revision 2): mean (141 + 7.5) ÷ 20 = 7.425 (7.43); range 4; Q1 6.75, Q3 8, IQR 1.25; σ 1.0034 (1.00). At 16: mean 7.85; range 10.5; Q1 6.75, Q3 8.25, IQR 1.5; σ 2.1219. Median 7.5 at every position.
 - A1: 74 ÷ 8 = 9.25; median 6.5; 43 ÷ 7 = 6.1429; median 6.
 - The driving-school quote cards match `math-s12-a01.md` scene 1 word for word.
 
@@ -180,9 +190,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/stats.py`, `python -I`, exact fracti
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,508 characters**, 13 scene headings. Characters per scene (1 to 13): 464, 669, 731, 546, 606, 668, 198, 275, 361, 193, 288, 422, 75. Feedback speech about 27.1 s and 21.7 s.1 s and 21.7 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,508 characters** in Revision 2 (Revision 1: 5,508), 13 scene headings. Characters per scene (1 to 13): 464, 669, 731, 546, 606, 668, 198, 275, 361, 193, 288, 422, 75. Feedback speech about 27.1 s and 21.7 s.
 
-At 13.3 characters per second the speech is about 414 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the cell fills, the drag and the sorting, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 497 s**, 73 s under the 570 s cap.
+At 13.3 characters per second the speech is about 414 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the cell fills, the drag and the sorting, about 18 s; the key-notes scene adds about 39 s beyond its line. Total **about 497 s**, 73 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 2's "single step" sentences; scene 12's strand list.
 
@@ -213,9 +223,9 @@ Holds: attempt-1, attempt-2 (10 s). key-notes 45 s (1,350 frames). Review eviden
 
 ## Assets
 
-Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ma11-alarm-clock-v1.png`; `ms12-bedroom-furniture-v1.png`; `ma12-cricket-scoreboard-v1.png`; `ms12-driving-school-car-v1.png` (a lime-green hatchback with a roof sign and an L plate; Year 12 a01's anchor).
+Inspected before choosing (24 Nov 2026, viewed on contact sheets): `ma11-alarm-clock-v1.png`; `ms12-bedroom-furniture-v1.png`; `ma12-cricket-scoreboard-v1.png` (Revision 2: not used); `ms12-driving-school-car-v1.png` (a lime-green hatchback with a roof sign and an L plate; Year 12 a01's anchor).
 
-Need: none new. Reused: the four plates above.
+Need: none new. Reused: the three plates above other than the scoreboard.
 
 Coded: the box plots, the summary card and arrows, the order strip, the deviation arms, the drag dot plot and six readouts, the sorting board, the investigation strip and conclusion card, the quote cards, strand chips, boards, question cards, the countdown, hand tags, the framed card and key notes.
 
@@ -225,7 +235,7 @@ Uses: `PlateImg`, `HandTag`, `InvestigationStrip` (d01, full and mini), `BoxPlot
 
 Additions (kit-needs row d19):
 1. **`SummaryCard` fill with change arrows**: cells fill in turn with up, down or "no change" markers and sizes. Check: +0.22; 0; 0; −2.5; 0; −0.36.
-2. **`DotPlot` drag mode, six readouts**: mean, median, mode, range, IQR and σ recompute live (extends d12's two). Check: at 3: 7.2, 7.5, 7.5, 6.5, 1.5, 1.39; at 7.5: 7.43, 7.5, 7.5, 4, 1.5, 1.03; at 16: 7.85, 7.5, 7.5, 10.5, 1.5, about 2.
+2. **`DotPlot` drag mode, six readouts**: mean, median, mode, range, IQR and σ recompute live (extends d12's two). Check (Revision 2): at 3: 7.2, 7.5, 7.5, 6.5, 1.5, 1.39; at 7.5: 7.43, 7.5, 7.5, 4, 1.25, 1.00; at 16: 7.85, 7.5, 7.5, 10.5, 1.5, 2.12. Round the mean half up from the exact value (7.425 shows 7.43).
 3. **Sorting board**: measure cards slide into two labelled columns with pair chips. Check: sensitive mean, range, σ; resistant median, IQR, mode (usually).
 4. **`InvestigationStrip` full recap**: all six steps lit with thumbnails from earlier videos and a conclusion card.
 
@@ -236,7 +246,7 @@ No new plate. All four plates exist and were viewed.
 ## Codex error-check brief
 
 Error-only check (report errors; do not restyle or rewrite):
-1. Re-check every value under "Numbers to verify", including the drag readouts at 7.5 and 16.
+1. Re-check every value under "Numbers to verify", including the drag readouts at 7.5 and 16 (Revision 2: IQR 1.25 and σ 1.00 at 7.5).
 2. Confirm the syllabus quote matches the route-inputs JSON exactly.
 3. Confirm scene 12's driving-school car and quote cards match `math-s12-a01.md` scene 1 (read only).
 4. Confirm the conclusion card's claims match d01 (guideline), d16 (median and IQR) and d17 (group medians), with the observational caution.
@@ -270,3 +280,4 @@ Builds on: Clusters, Gaps and Outliers. Next (Year 12 Maths Standard): Solving S
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d18; check that each measure's change comes with its reason, that the drag shows both directions, that the reporting pairs follow from the sorting, that the conclusion keeps "tended to" and the caution, that the close names Year 12's first topic plainly, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D19-DRAG; D19-GUIDE; D19-A1PIC). Next: Codex maths check and error check, then voicing and a build to grade A.

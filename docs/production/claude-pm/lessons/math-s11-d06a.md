@@ -1,8 +1,8 @@
 # Maths S11 D06A: Why do we group data, and how do frequency tables, histograms and polygons show it? Tallies and frequency tables, why thirty different answers need classes, choosing classes, and drawing the histogram and frequency polygon (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d05.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p05.md`: "Year 11 d06 (a frequency table, a tally)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d05.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p05.md`: "Year 11 d06 (a frequency table, a tally)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,548 characters by script (see "Narration length estimate"), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,567 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixth video of the Year 11 Data analysis strand, outline playlist order 66 (d06 is split into d06a and d06b, both 66; ruling 8's test; status file open question). One video for Standard 1 and Standard 2. Viewers arrive from d05's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d06a.md`. Route entry: `math-s11-d06a` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (cards 05 and 06, WE 1). Visual system: maths studio kit; the phone, bedroom, delivery bag and exam desk plates (all existing); the tally board, class-width slider, histogram and polygon coded.
 
@@ -16,6 +16,14 @@ Syllabus content points (Mathematics Standard 11-12 (2024), Year 11, Data analys
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fa4de413b8
 
 **Boundary:** starts from d05's final frame exactly (the phone `ma12-phone-v1.png`, about 640 px tall, at the left with the screen-time screen "Screen time yesterday" and "2 h 25 min"; at the right 30 values in minutes in three columns (blue, 32 px): 70, 95, 110, 120, 125, 135, 140, 145, 150, 160, 165, 175, 180, 185, 195, 205, 215, 225, 235, 245, 255, 270, 280, 295, 305, 320, 345, 370, 395, 455; chips "2 h 25 min = 145 min", "30 different answers?", "Next: grouping data" and "?"). Recalls d05 (continuous; discrete) and d01 ("a box for every answer") in grey chips. Teaches: frequency and tallies; an ungrouped frequency table; why some data must be grouped; choosing classes; a grouped frequency table; the histogram; the frequency polygon. Not taught: cumulative frequency and digital tools (d06b); shape words (d09).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Source review: `../checks/m-s11-d06a-learning-review.md`; resolution record `../checks/m-s11-d-learning-review-resolution.md`.
+
+- **D06A-200 (note): applied.** Scene 4 says "squash everything into two big bars and a lone one", matching the readout "classes 3" with a lone bar of height 1 (the 455 in 400 to under 600).
+- **D06A-A2LOAD (note): no change.** The 10 s countdown is the owner rule; the full list stays on the card through the countdown.
+- Narration 5,567 characters (Revision 1: 5,548); about 502 s with holds, under the 570 s cap. Both attempts still end "Pause here to answer."; feedback about 17.9 s and 19.6 s. No em dash. Joins unchanged.
 
 ## Decisions
 
@@ -73,9 +81,9 @@ Visual: stage change (simulation 1): the bedroom plate `ms12-bedroom-furniture-v
 Visual: stage change: a long ungrouped table scrolls: "70 | 1", "95 | 1", "110 | 1" ... (30 rows of 1; hand tag "a table of ones"); it fades. A class strip writes, 40 px: "60–<120", "120–<180", "180–<240", "240–<300", "300–<360", "360–<420", "420–<480" (hand tag "a box for every value"; grey chip "d01: a box for every answer"). On "A hundred and twenty sits" the value 120 hovers between "60–<120" and "120–<180", then drops into "120–<180" (hand tag "120 → 120–<180"); on "once" (bold) a red slip "120 in 60–120 and 120–180" writes beside it and is crossed (caption "120 belongs to 120–<180"). On "tally again" the tally board fills from the list (values fly in turn; the phone's 145 lands in "120–<180"); on "thirty in all" the grouped table, 44 px: "Screen time (min) | Frequency" with 3, 9, 7, 5, 3, 2, 1 and "Total 30" (framed green). On "read" (bold) chip "grouping loses exact values, gains a pattern".
 
 ### 4. how wide should the classes be?
-> Why sixty minutes? Watch what happens if we change the width. Classes twenty minutes wide give lots of ones and twos, and the graph looks like a picket fence. Classes two hundred minutes wide squash everything into two bars. Somewhere between, the shape appears. Most students sit between two and four hours, with a few much higher. A good rule is about five to ten classes, all the same width, starting at a tidy value below the smallest number, and covering the **largest**. That's why some datasets need grouping. Without it, we can't see the shape, and we can't analyse it.
+> Why sixty minutes? Watch what happens if we change the width. Classes twenty minutes wide give lots of ones and twos, and the graph looks like a picket fence. Classes two hundred minutes wide squash everything into two big bars and a lone one. Somewhere between, the shape appears. Most students sit between two and four hours, with a few much higher. A good rule is about five to ten classes, all the same width, starting at a tidy value below the smallest number, and covering the **largest**. That's why some datasets need grouping. Without it, we can't see the shape, and we can't analyse it.
 
-Visual: stage change (simulation 2): the class-width slider under a live histogram (about 1,100 px wide). On "twenty minutes wide" the slider snaps to 20: 20 thin bars of heights 0 to 3, readout "width 20: classes 20" (picket fence). On "two hundred minutes wide" the slider snaps to 200: two bars, readout "width 200: classes 3" (the third almost empty). On "Somewhere between" the slider settles on 60: seven bars 3, 9, 7, 5, 3, 2, 1, readout "width 60: classes 7" (hand tag "shape appears"). On "between two and four hours" a soft bracket over 120 to 240 min. On "largest" (bold) a checklist chip: "5 to 10 classes | equal widths | tidy start | cover the largest" (green ticks).
+Visual: stage change (simulation 2): the class-width slider under a live histogram (about 1,100 px wide). On "twenty minutes wide" the slider snaps to 20: 20 thin bars of heights 0 to 3, readout "width 20: classes 20" (picket fence). On "two hundred minutes wide" the slider snaps to 200: two big bars and a lone bar of height 1 (the 455), readout "width 200: classes 3" (the third almost empty). On "Somewhere between" the slider settles on 60: seven bars 3, 9, 7, 5, 3, 2, 1, readout "width 60: classes 7" (hand tag "shape appears"). On "between two and four hours" a soft bracket over 120 to 240 min. On "largest" (bold) a checklist chip: "5 to 10 classes | equal widths | tidy start | cover the largest" (green ticks).
 
 ### 5. the histogram
 > A histogram is a column graph for numerical data. The horizontal axis is a number line, here screen time in minutes. Each class gets a bar, and its height is the class's frequency, so a bar's height tells you how many students are in that class. Three for sixty to a hundred and twenty. Nine for the next. Then seven, five, three, two and one. Notice the bars touch. That's because the classes meet. One class ends exactly where the next one begins, so there's no gap on the number line, and no gap between the bars. The tallest bar is the class with the most students, a hundred and twenty to under a hundred and eighty **minutes**. Gaps between bars are for categories, like bedroom and kitchen, which we'll draw **soon**.
@@ -178,9 +186,9 @@ Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`, `python -I`); Codex to r
 
 ## Narration length estimate
 
-Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,548 characters**, 13 scene headings. Characters per scene (1 to 13): 426, 643, 806, 573, 716, 665, 169, 266, 238, 337, 261, 361, 75. Feedback speech about 17.9 s and 19.6 s.9 s and 19.6 s.
+Counted by script (lines starting "> " inside each `### N.` scene, joined with a space, `**` removed; `work/brief-review-s11-e/count.py`): **5,567 characters** in Revision 2 (Revision 1: 5,548), 13 scene headings. Characters per scene (1 to 13): 426, 643, 806, 592, 716, 665, 169, 266, 238, 337, 261, 361, 75. Feedback speech about 17.9 s and 19.6 s.
 
-At 13.3 characters per second the speech is about 417 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the tallies, the slider and the bars and dots, about 19 s; the key-notes scene adds about 39 s beyond its line. Total **about 501 s**, 69 s under the 570 s cap.
+At 13.3 characters per second the speech is about 419 s. Holds and settling: two 10 s countdowns (20 s); short holds 6 s; settling for the tallies, the slider and the bars and dots, about 19 s; the key-notes scene adds about 39 s beyond its line. Total **about 502 s**, 68 s under the 570 s cap (Revision 2).
 
 Reserve trims if the voiced take runs long: scene 4's last two sentences; scene 6's last sentence.
 
@@ -267,3 +275,4 @@ Builds on: Types of Data: Numerical and Categorical. Next: Cumulative Frequency:
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d05; check that frequency is defined on the screens table before grouping, that the class-width slider makes "why group" visible, that "bars touch" has its reason, that the polygon's centres are computed before the dots drop, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+- Revision 2 (24 Nov 2026): learning review resolved (D06A-200; D06A-A2LOAD unchanged). Next: Codex maths check and error check, then voicing and a build to grade A.
