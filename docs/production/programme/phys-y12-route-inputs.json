@@ -2891,11 +2891,11 @@
           "start": "Start from the physical case in the learner question; recall only the earlier result needed for it.",
           "stop": "Explain back emf as induction opposing supply, current=(V-back emf)/R and start/stall current. Stop before AC induction motors.",
           "next": [
-            "phys-y12-m6-v18"
+            "phys-y12-m6-v17a"
           ],
           "nextHandoff": {
-            "id": "phys-y12-m6-v18",
-            "question": "How do simple AC and DC generators produce different outputs?"
+            "id": "phys-y12-m6-v17a",
+            "question": "How can we test the motor effect and a DC motor at the bench?"
           },
           "practicals": [],
           "targetMinutes": [
@@ -2905,6 +2905,114 @@
           "suggestedMinutes": 8,
           "splitOrReorderReason": "Separate the current learner question from the next mechanism or calculation. Keep one reasoning stage visible and defer the exclusions stated in the stop boundary.",
           "status": "research input for Claude, not design or coverage approval"
+        },
+        {
+          "id": "phys-y12-m6-v17a",
+          "playlistOrder": 40.5,
+          "playlistOrderNote": "Inserted 24 Nov 2026 (coherence audit U-S1) between phys-y12-m6-v17 and phys-y12-m6-v18; renumber the later entries when the route is finalised.",
+          "title": "How can we test the motor effect and a DC motor at the bench?",
+          "mainLearnerQuestion": "How can we test the motor effect and a DC motor at the bench?",
+          "module": 6,
+          "moduleTitle": "Electromagnetism",
+          "inquiryQuestions": [
+            "Under what circumstances is a force produced on a current-carrying conductor in a magnetic field?",
+            "How has knowledge about the Motor Effect been applied to technological advances?"
+          ],
+          "syllabusActionIds": [
+            "P6-IQ2-01",
+            "P6-IQ4-01"
+          ],
+          "syllabusActions": [
+            {
+              "id": "P6-IQ2-01",
+              "text": "investigate qualitatively and quantitatively the interaction between a current-carrying conductor and a uniform magnetic field F=lI_(⊥)B=lIBsinθ to establish: (ACSPH080, ACSPH081)",
+              "examples": [
+                "conditions under which the maximum force is produced",
+                "the relationship between the directions of the force, magnetic field strength and current",
+                "conditions under which no force is produced on the conductor"
+              ],
+              "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx",
+              "page": 56
+            },
+            {
+              "id": "P6-IQ4-01",
+              "text": "investigate the operation of a simple DC motor to analyse:",
+              "examples": [
+                "the functions of its components",
+                "production of a torque τ=nIA_(⊥)B=nIABsinθ",
+                "effects of back emf (ACSPH108)"
+              ],
+              "sourceUrl": "https://www.nsw.gov.au/sites/default/files/noindex/2025-03/physics-stage-6-syllabus-2017.docx",
+              "page": 57
+            }
+          ],
+          "syllabus2025": [
+            {
+              "id": "FA2-G2-04",
+              "ledgerId": "P25Y12-FA2-G2-04",
+              "officialCodename": "cie65352f7",
+              "text": "Conduct a laboratory experiment to demonstrate the motor effect",
+              "sourceUrl": "https://curriculum.nsw.edu.au/learning-areas/science/physics-11-12-2025/content/year-12/fae740c732",
+              "note": "2025 gap point (phys-y12-2025-route-draft.md row 31). Design recommends placing it after phys-y12-m6-v17 in the 2025 order too (needs v16 and v17)."
+            }
+          ],
+          "sourceLessons": [
+            {
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/physics/year12/module6/lesson07.sa.html",
+              "relativePath": "module6/lesson07.sa.html",
+              "sha256": "1ba6d04173c8eed041862f0fdd4568e96b53c6dd97da3958a88854b085c109f3",
+              "sha256Stale": "recorded against the old C:/Users/kygs/hscscience copy; not re-hashed against teaching-app-fix (24 Nov 2026)",
+              "sectionIds": [
+                "investigate-force-patterns",
+                "apply-and-consolidate"
+              ],
+              "dataStepIds": [
+                "investigate-force-patterns",
+                "apply-and-consolidate"
+              ],
+              "role": "Investigation scope: lesson07 'Investigate force patterns', Activity 1 and the 'Assess 6 marks' balance investigation; lesson17 ammeter observation (switch-on and running current). Section ids checked against the live clone (24 Nov 2026)."
+            },
+            {
+              "path": "C:/Users/kygs/teaching-app-fix/subjects/physics/year12/module6/lesson17.sa.html",
+              "relativePath": "module6/lesson17.sa.html",
+              "sha256": "b666280482f9179bb7ab6b0592004f6ec93f4a529967113c60a9ee36d628c48d",
+              "sha256Stale": "recorded against the old C:/Users/kygs/hscscience copy; not re-hashed against teaching-app-fix (24 Nov 2026)",
+              "sectionIds": [
+                "model-back-emf-current"
+              ],
+              "dataStepIds": [
+                "model-back-emf-current"
+              ],
+              "role": "Back emf from ammeter readings (switch-on and running current, slowed motor)."
+            }
+          ],
+          "entryKnowledge": "F = lIB sin theta, the right-hand palm rule and active length (phys-y12-m6-v07); the split-ring commutator, dead point and torque nIAB sin theta (phys-y12-m6-v16); back emf and I = (V - back emf)/R (phys-y12-m6-v17); Newton's third law, variables, mean, gradient and half-range (Year 11; phys-y12-m5-v08). Recall each in a line; do not re-teach.",
+          "prerequisites": [
+            "phys-y12-m6-v17",
+            "phys-y12-m6-v07",
+            "phys-y12-m6-v16",
+            "phys-y12-m5-v08"
+          ],
+          "start": "Start on phys-y12-m6-v17's final frame (the motor turned from outside, wired to an oscilloscope); defer its output question to the next video in a sentence.",
+          "stop": "Current balance: why the balance reads the force, fair test, careful measurement (zero, short readings, reversal), risk check, repeats and resolution, F against I and gradient Bl, doubling l, and the rig's limits (tested range; cannot test sin theta). DC motor bench: reversing current or field, more current more torque, no split ring rocks, dead point, back emf from switch-on and running currents. Stop before generator output and before quantitative motor speed or torque measurement.",
+          "next": [
+            "phys-y12-m6-v18"
+          ],
+          "nextHandoff": {
+            "id": "phys-y12-m6-v18",
+            "question": "How do simple AC and DC generators produce different outputs?"
+          },
+          "practicals": [
+            "Motor effect: current balance (magnet on an electronic balance, fixed wire through its gap), force against current",
+            "Simple DC motor: component changes, torque and back emf from ammeter readings"
+          ],
+          "targetMinutes": [
+            5,
+            10
+          ],
+          "suggestedMinutes": 9,
+          "splitOrReorderReason": "Added from the coherence audit (U-S1): the motor effect and the DC motor are explained (v07, v16, v17) but never investigated. One investigation video closes P6-IQ2-01's investigation and P6-IQ4-01, and the 2025 gap FA2-G2-04. Placed after v17 (not after v07 as the audit proposed) because the motor half needs the split ring and back emf. Viewing does not complete required practical hours.",
+          "status": "designed-not-voiced (docs/production/claude-pm/lessons/phys-y12-m6-v17a.md, Revision 1, 24 Nov 2026)"
         },
         {
           "id": "phys-y12-m6-v18",

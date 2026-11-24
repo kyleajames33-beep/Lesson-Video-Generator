@@ -166,7 +166,7 @@ Upgrade (Revision 3): The bench at the right is the same set of painted plates (
 ### 15. handoff
 > So a spinning motor draws less current because its coil is also a generator, and the back emf it makes pushes against the supply. Now remove the supply. Turn the shaft with something else, and connect the motor to an **oscilloscope**. The back emf is still there, but now it's the output. The motor has become a **generator**. So what shape is **its output**?
 
-Visual: board clears (camera change) to the motor bench. On "remove the supply" the supply plate, switch and ammeter slide out of frame. On "Turn the shaft with something else" a curved amber outline arrow "turned by an outside drive" appears round the flywheel and it turns steadily (no hand). On "oscilloscope" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a "?". On "generator" the rose "ε_back" tag beside the motor changes to "ε (output)", chip "motor → generator". On "its output" a "?" pulses on the oscilloscope screen and a chip "Next: how do simple AC and DC generators produce different outputs?". Hold about 2 seconds. This is the final frame (see "Final frame").
+Visual: board clears (camera change) to the motor bench. On "remove the supply" the supply plate, switch and ammeter slide out of frame. On "Turn the shaft with something else" a curved amber outline arrow "turned by an outside drive" appears round the flywheel and it turns steadily (no hand). On "oscilloscope" the oscilloscope plate (`phys-y11-oscilloscope-v1.png`) slides in at the right, coded leads from the motor's terminals; its screen shows a flat coded trace with a "?". On "generator" the rose "ε_back" tag beside the motor changes to "ε (output)", chip "motor → generator". On "its output" a "?" pulses on the oscilloscope screen and a chip "Next: how can we test the motor effect and a DC motor at the bench?". Hold about 2 seconds. This is the final frame (see "Final frame").
 
 ### 16. key notes (quiet, hold about 45 seconds)
 Heading on screen: "Key notes: what to write in your book".
@@ -245,7 +245,7 @@ v16's final frame exactly (reconciled by root, 6 November): see `phys-y12-m6-v16
 
 ## Final frame
 
-The last explained frame (end of scene 15, before the key-notes board): paper background; the hobby motor plate with its flywheel turning steadily, a curved amber outline arrow round the flywheel "turned by an outside drive"; no supply, switch or ammeter; coded leads from the motor's terminals to the oscilloscope plate at the right, its screen showing a flat coded trace with a "?"; a rose tag "ε (output)" beside the motor and a chip "motor → generator"; heading unchanged ("Why does a spinning DC motor draw less current?"); a chip reads "Next: how do simple AC and DC generators produce different outputs?". v18 opens on this frame.
+The last explained frame (end of scene 15, before the key-notes board): paper background; the hobby motor plate with its flywheel turning steadily, a curved amber outline arrow round the flywheel "turned by an outside drive"; no supply, switch or ammeter; coded leads from the motor's terminals to the oscilloscope plate at the right, its screen showing a flat coded trace with a "?"; a rose tag "ε (output)" beside the motor and a chip "motor → generator"; heading unchanged ("Why does a spinning DC motor draw less current?"); a chip reads "Next: how can we test the motor effect and a DC motor at the bench?". v17a opens on this frame.
 
 ## Scene list and build ids
 
@@ -382,3 +382,7 @@ Counts: 6,556 characters, unchanged; about 564 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: (1) The back emf is drawn as an explicit second battery in the equivalent circuit, which is how the design already draws it; the engine's own motor part is not used to show the current falling.
+
+## Route insertion (24 Nov 2026)
+
+The investigation video `phys-y12-m6-v17a` ("How can we test the motor effect and a DC motor at the bench?") now follows this video (coherence audit U-S1, owner approved 24 Nov). Two lines changed, screen text only: the scene 15 Visual chip and the "Final frame" chip now read "Next: how can we test the motor effect and a DC motor at the bench?", and "v18 opens on this frame" became "v17a opens on this frame". Narration unchanged (scene 15 still ends "So what shape is its output?"; v17a's scene 1 defers that question in a sentence and its handoff returns to it; see v17a open decision 2). The prepared inputs in `p-y12-m6-v17/` carry the old chip text and must be regenerated before the build.
