@@ -107,7 +107,7 @@ export const HandoffBoard: React.FC<{goAt?: number; forcesAt?: number; coneAt?: 
 	const tx = CONE.pivot[0] - bob[0], ty = CONE.pivot[1] - bob[1], tl = Math.hypot(tx, ty);
 	return (
 		<>
-			<SceneHeading text={HEAD} at={-200} size={HEAD_SIZE} />
+			<SceneHeading text="How does string tension sustain a conical pendulum?" at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
 				<Bench edgeX={1250} topY={CONE.benchY} left={96} floorY={4000} legs={false} />
 				<ConeRig pivot={CONE.pivot} benchY={CONE.benchY} L={CONE.L} theta={CONE.theta} tiltK={CONE.tiltK} phase={phase} cone={f >= coneAt} />

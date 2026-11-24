@@ -85,7 +85,7 @@ export const HandoffBoard: React.FC<{slantAt?: number; roadAt?: number; tiltAt?:
 	const showSq = nt > 0.5 && Math.abs(nt - t) < 0.5;
 	return (
 		<>
-			<SceneHeading text={HEAD} at={-200} size={HEAD_SIZE} />
+			<SceneHeading text="How does a banked road reduce reliance on friction?" at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
 				<RoadSection cx={RD.cx} cy={RD.cy} half={RD.half} tilt={t} />
 				<RearCar cx={RD.cx} cy={RD.cy} w={RD.w} tilt={t} />

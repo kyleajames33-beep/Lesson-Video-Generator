@@ -59,6 +59,6 @@ export const steady = (th: number) => {
 };
 
 export const HEAD = 'How does string tension sustain a conical pendulum?';
-export const HEAD_V12 = 'Which force supplies the inward acceleration on a flat curve?';
+export const HEAD_V12 = HEAD; // v12's handoff now ends on this lesson's question
 export const HEAD_SIZE = 48;
 export const ACCENT = '#9c5a00';

@@ -48,7 +48,7 @@ export const S01: React.FC = () => {
 					<Line size={34}>Is the tip accelerating?</Line>
 				</Card>
 				<Chip x={1150} y={850} at={pred} size={32}>No: its speed is constant</Chip>
-				<Chip x={1560} y={850} at={pred + 6} size={32}>Yes</Chip>
+				<Chip x={1150} y={920} at={pred + 6} size={32}>Yes</Chip>
 				<FrameSvg><Countdown start={hd.startFrame} end={hd.endFrame} x={1740} y={760} ringFrom={pred} /></FrameSvg>
 			</div>
 		</>
