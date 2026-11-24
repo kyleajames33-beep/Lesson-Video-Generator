@@ -45,7 +45,7 @@ New plates needed: painted watercolour plates in the house style with the `hms-`
 
 ## 6. Course coherence
 
-- **Entry knowledge:** hms-y12-m3-v19: Key features, SDG 3 and SDG 4.
+- **Entry knowledge:** hms-y12-m3-v19: Key features, SDG 3 and SDG 4.; hms-y11-m1-v17: The SDG ring and 'goals can't compel' (Year 11), recalled in a sentence.
 - **Opens on:** the two-way loop from v19 gains two more nodes: SDG 10 and SDG 11 (the final frame of hms-y12-m3-v19).
 - **Start:** Start from SDG 10 and its targets.
 - **Stop:** Stop when students can describe SDG 10 and SDG 11, trace one change through all four goals, describe where SDG 10 and 11 bite in Australia, and set up the method for thinking about a community.

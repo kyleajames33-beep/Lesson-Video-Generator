@@ -47,7 +47,7 @@ New plates needed: painted watercolour plates in the house style with the `hms-`
 
 ## 6. Course coherence
 
-- **Entry knowledge:** hms-y12-m3-v20: Four goals interlock.; Year 11 HMS (recalled in one sentence; do not assume our Year 11 video was watched): Localisation and Ottawa action areas, recalled in a sentence.
+- **Entry knowledge:** hms-y12-m3-v20: Four goals interlock.; hms-y11-m1-v18: Localisation, the start-from-a-local-need method and Ottawa action areas (Year 11), recalled in a sentence.
 - **Opens on:** the four-goal interlock from v20 settles onto a coastal city map (the final frame of hms-y12-m3-v20).
 - **Start:** Start from a Healthy Cities style worked example (the syllabus names Healthy Cities Illawarra), described as a model.
 - **Stop:** Stop when students can evaluate how the goals have been applied in other communities, name seven shared features of approaches that work, explain other community approaches by mechanism, apply the transfer test, and explain why community-led outperforms delivered-to.

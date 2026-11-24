@@ -48,7 +48,7 @@ Independent check: pending at design. See `../../site-corrections-hms.md` for er
 
 ## 5. Visual plan, real objects and plates
 
-Coded five-link delivery chain with a live delivery readout that drops as each factor breaks a link; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.
+Coded three-link delivery chain (load, carry, deliver) with a live delivery readout that drops as each factor breaks a link and a heart-rate cost meter; reuse m8-artery-healthy-v1.png and m8-artery-plaque-v1.png, m5x-red-blood-cells-v1.png; painted plate of a mountain altitude marker; no people.
 
 Existing plates named above (present in the repo, checked by script): `public/assets/biology/m5x-red-blood-cells-v1.png`, `public/assets/biology/m8-artery-healthy-v1.png`, `public/assets/biology/m8-artery-plaque-v1.png`. Inspect their actual appearance before use.
 New plates needed: painted watercolour plates in the house style with the `hms-` prefix (transparent PNG, true alpha, never stretched, no people, hands, faces or whole-body outlines, no real brands or logos). Exact list at design.
@@ -58,11 +58,11 @@ Site diagrams on this page (coded on the site; ideas may be redrawn, not copied)
 
 - **Entry knowledge:** hms-y11-m2-v04: Circulation and gas exchange.
 - **Opens on:** the double circulation loop from v04 with a delivery readout: litres of oxygen per minute (the final frame of hms-y11-m2-v04).
-- **Start:** Start from efficiency as delivering the oxygen needed at the lowest cost, as a chain (ventilate, load, pump, deliver, unload).
+- **Start:** Start from efficiency as delivering the oxygen needed at the lowest cost, with cardiac output defined (heart rate x stroke volume), and the three-link delivery chain (load, carry, deliver).
 - **Stop:** Stop when students can explain how altitude (lower partial pressure, same 21 per cent), haemoglobin levels and vascular disease each break a link in the chain, and weigh further factors (fitness, smoking, dehydration) on the same chain.
 - **Next handoff:** hms-y11-m2-v06: opens on the delivery chain from v05 gains a fuel line: oxygen is half the supply, fuel is the other.
 - **Later homes:** Training adaptations that raise efficiency: hms-y12-m4-v08.
-- **Recurring models:** intro:oxygen delivery chain
+- **Recurring models:** intro:oxygen delivery chain, intro:cardiac output equation (Q = HR x SV, at rest)
 - **Cross-year overlap:** None.
 
 ## 7. Open questions for the designer

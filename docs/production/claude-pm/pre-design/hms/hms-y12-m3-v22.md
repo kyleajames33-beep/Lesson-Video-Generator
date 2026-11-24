@@ -50,7 +50,7 @@ New plates needed: painted watercolour plates in the house style with the `hms-`
 
 ## 6. Course coherence
 
-- **Entry knowledge:** hms-y12-m3-v21: Lessons from other communities.
+- **Entry knowledge:** hms-y12-m3-v21: Lessons from other communities.; hms-y11-m1-v18: Year 11's strategy checklist, which this video grows (lines 13 to 15).
 - **Opens on:** the seven features from v21 become a blank planning sheet for one community (the final frame of hms-y12-m3-v21).
 - **Start:** Start from identifying the major health issues using data and the community's own account.
 - **Stop:** Stop when students can identify major issues, build strategies across SDGs 3, 4, 10 and 11, justify why they may be effective, name six failure modes, and assemble the whole task in one structure.

@@ -1,8 +1,8 @@
 # HMS Year 12 V18 (Health in an Australian and global context): big data. How is big data shaping Australians' health, and what protects the privacy of the people inside it? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
 
-Narration 6,149 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 562 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,145 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 565 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the eighteenth HMS video of the Year 12 focus area "Health in an Australian and global context", closing its inquiry question on technology and data. Course brief `../hms-design-brief.md`. Route entry **hms-y12-m3-v18**. Pre-design pack `../pre-design/hms/hms-y12-m3-v18.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year12/module3/lesson18.sa.html` (read in full, 24 Nov; sha256 `a901f3b32d79f7b3f0345f2262937194043153dd3149df0d586f109927513653`). Previous design `hms-y12-m3-v17.md`.
 
@@ -42,7 +42,7 @@ Handoff: the SDGs (route entry hms-y12-m3-v19). **Handoff frame (hms-y12-m3-v19 
 
 ## Script and shots
 
-13 scene files (1 to 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
+14 scene files (1 to 4, 5a, 5b, 6, 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
 
 ### 1. hook (every record, linked)
 > So, how is big data shaping our health? Every prescription dispensed in Australia is recorded. So is every hospital admission, every subsidised medical visit, every cancer diagnosis and every vaccination. Write down two useful things we could learn by linking those records. Then two things you'd never want anyone to do with them. And what would have to be in place first?
@@ -64,10 +64,15 @@ Visual: board change to the saving ledger (solid from its first frame): v10's sp
 
 Visual: board change to disease uses (solid from its first frame): the linkage grid small at the left; six use cards write one per cue at the right (28 px): on "It finds causes" "finding causes", a scatter of thousands of grey dots in which a faint slope appears only when all are shown; on "precision medicine" the gloss "precision medicine: treatment matched to a person's features" (28 px), a coded tumour-gene strip with one marked band choosing between two drug cards; on "speeds research" "faster research", a long follow-up line extending past a trial's end mark; on "how treatments work in everyone" "real-world effect", a trial box of a few similar dots beside a large mixed field; on "older people and people with several conditions" two tags in the field outside the trial box; on "patients drifting out of control" "chronic management", a few rows drifting amber; a silent card "learning from the best", three service bars with one green. On "One caution" v16's training-data bar returns as a dataset representation bar, grey recall tag "earlier": on "under-represents some groups" two groups' shares in the data shrink amber against their population shares; on "rural communities or Aboriginal and Torres Strait Islander Peoples" two small grey tags (general, no places named); on "its conclusions fit them worse" an accuracy bar shrinks for those groups; a chip "more data, fairer care" writes and is crossed in red; on "an equity step, not paperwork" amber hand tag "representative data is an equity step" (34 px). Hold one second.
 
-### 5. privacy and confidentiality: the measures
-> So what protects the people inside the data? First, two meanings. **Privacy** is your right to control information about yourself. **Confidentiality** is the duty not to share what was given in trust. Now the measures. Collect only what's needed, and don't keep it forever. **De-identify** it, removing names, but know that's imperfect. **Re-identification** can happen when age, postcode and dates are combined, especially for rare conditions or small towns. Give access for a stated purpose, only the fields needed, with every look logged. Trusted staff isn't a control. Have an independent body approve each new use. Encrypt and monitor it. Make penalties real. And where possible, send the question to the data instead of copying the data out. Stronger privacy means less can be learned, so the line has to be drawn deliberately. One serious breach can cost the public trust that every future use depends on.
+### 5a. privacy and confidentiality: the first measures
+> So what protects the people inside the data? First, two meanings. **Privacy** is your right to control information about yourself. **Confidentiality** is the duty not to share what was given in trust. Now the measures. Collect only what's needed, and don't keep it forever. **De-identify** it, removing names, but know that's imperfect. **Re-identification** can happen when age, postcode and dates are combined, especially for rare conditions or small towns.
 
-Visual: board change to measures on the grid (solid from its first frame): the linkage grid at the centre with its gold thread; red-orange risk arrows point in at it from the edges. On "Privacy" the gloss "privacy: your right to control your information" (28 px); on "Confidentiality" the gloss "confidentiality: the duty not to share what was given in trust" (28 px), the painted `hms-locked-file-box-v1.png` tiny. Eight teal measure locks fix to a ring around the grid one per cue (26 px), each blocking one arrow: on "Collect only what's needed" "collect the minimum", two data columns disappearing; on "De-identify" the name column greys out, gloss "de-identify: remove what names a person" (28 px); on "Re-identification" the probe runs: three columns light (on "age, postcode and dates" "age", "postcode", "date") and the matching rows narrow to one, which lights amber, gloss "re-identification: working out who someone is" (28 px); on "small towns" a tiny "small population" tag; a chip "de-identified = no privacy risk" writes and is crossed in red; on "Give access for a stated purpose" "access by purpose, logged", `y11-lock-key-v1.png` tiny, a log strip ticking; on "Trusted staff isn't a control" a chip "trusted staff" writes and is crossed in red; on "an independent body approve each new use" "independent approval"; a silent lock "transparency"; on "Encrypt and monitor it" "security", the server rack plate tiny with its lights; on "Make penalties real" "real penalties"; on "send the question to the data" "question to the data", a small query card travelling into the grid and only a result card coming out. On "Stronger privacy means less can be learned" a balance beam: "what we learn" against "what can go wrong", amber hand tag "draw the line deliberately" (30 px); on "public trust" a teal trust bar that a single breach mark drains. Hold one second.
+Visual: board change to measures on the grid (solid from its first frame): the linkage grid at the centre with its gold thread; red-orange risk arrows point in at it from the edges. On "Privacy" the gloss "privacy: your right to control your information" (28 px); on "Confidentiality" the gloss "confidentiality: the duty not to share what was given in trust" (28 px), the painted `hms-locked-file-box-v1.png` tiny. Teal measure locks fix to a ring around the grid one per cue (26 px), each blocking one arrow (three in 5a, the rest in 5b): on "Collect only what's needed" "collect the minimum", two data columns disappearing; on "De-identify" the name column greys out, gloss "de-identify: remove what names a person" (28 px); on "Re-identification" the probe runs: three columns light (on "age, postcode and dates" "age", "postcode", "date") and the matching rows narrow to one, which lights amber, gloss "re-identification: working out who someone is" (28 px); on "small towns" a tiny "small population" tag; a chip "de-identified = no privacy risk" writes and is crossed in red. Settle one second.
+
+### 5b. the measures that limit who looks, and the trade-off
+> Give access for a stated purpose, only the fields needed, with every look logged. Trusted staff isn't a control. Have an independent body approve each new use. Encrypt and monitor it. Make penalties real. And where possible, send the question to the data instead of copying the data out. Stronger privacy means less can be learned, so the line has to be drawn deliberately. One serious breach can cost the public trust that every future use depends on.
+
+Visual: same board, no board change. The privacy and confidentiality glosses and the re-identification probe fade to a small grey strip at the top; the three locks from 5a stay, in grey. Each remaining lock writes on its own cue with the previous one dimming to grey, so one measure and the arrow it blocks are bright at a time. On "Give access for a stated purpose" "access by purpose, logged", `y11-lock-key-v1.png` tiny, a log strip ticking; on "Trusted staff isn't a control" a chip "trusted staff" writes and is crossed in red; on "an independent body approve each new use" "independent approval"; a silent lock "transparency"; on "Encrypt and monitor it" "security", the server rack plate tiny with its lights; on "Make penalties real" "real penalties"; on "send the question to the data" "question to the data", a small query card travelling into the grid and only a result card coming out. On "Stronger privacy means less can be learned" a balance beam: "what we learn" against "what can go wrong", amber hand tag "draw the line deliberately" (30 px); on "public trust" a teal trust bar that a single breach mark drains. Hold one second.
 
 ### 6. how big data shapes health
 > Notice the syllabus says shaping, not just helping. Big data shapes health in four ways. It decides what's visible, because a problem that's measured becomes a policy problem, and splitting data by group is how an inequity becomes something the system must answer for. It shifts care from reacting to anticipating. It changes what treatment means, from the group average to the person. And it moves power to whoever holds and analyses the data. Public bodies with oversight ask the population's questions. Companies ask the questions worth money. So big data is one of the biggest opportunities in health, but it's not automatically a benefit. It depends on representative data, someone funded to act, trusted rules, and attention to who benefits.
@@ -85,9 +90,9 @@ Visual: board change to the memory card (solid from its first frame): the linkag
 Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "Use 1: Publishing cancer screening participation rates by small geographic area to identify gaps. Use 2: Giving a commercial company access to de-identified health records to develop a diagnostic tool." Demand: "For EACH use, identify the benefit, the specific privacy risk, and ONE protection you would require. (4 marks)" Picture: the linkage grid with its name column greyed. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 8b. feedback, item one
-> Small-area rates find communities that screening is missing. The risk is re-identification, because in a tiny area a few people can be recognised, so suppress very small counts. The company's tool might help diagnosis. The risks are re-identification and unexpected commercial use, so require independent approval, and keep the data where it is. The classic mistake is saying de-identified means safe.
+> Small-area rates find communities that screening is missing. The risk is re-identification, because in a tiny area a few people can be recognised, so suppress very small counts. The company's tool might help diagnosis. The risks are re-identification and unexpected commercial use, so require independent approval, and keep the data in place. The classic mistake is saying de-identified means safe.
 
-Visual: `FeedbackScene`: the card shrinks to the top; the grid shows a small-area row lighting amber, then the query card travelling in. A green-framed four-line answer writes one per cue (30 px): on "find communities that screening is missing" "1 use 1: finds screening gaps"; on "suppress very small counts" "2 risk: re-identification; protect: suppress small counts"; on "The company's tool might help diagnosis" "3 use 2: a diagnostic tool"; on "require independent approval, and keep the data where it is" "4 risk: re-identification, commercial use; protect: approval, data stays put". On "classic mistake" a chip "de-identified = safe" writes and is crossed in red, red hand tag "de-identification is imperfect" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; the grid shows a small-area row lighting amber, then the query card travelling in. A green-framed four-line answer writes one per cue (30 px): on "find communities that screening is missing" "1 use 1: finds screening gaps"; on "suppress very small counts" "2 risk: re-identification; protect: suppress small counts"; on "The company's tool might help diagnosis" "3 use 2: a diagnostic tool"; on "require independent approval, and keep the data in place" "4 risk: re-identification, commercial use; protect: approval, data stays put". On "classic mistake" a chip "de-identified = safe" writes and is crossed in red, red hand tag "de-identification is imperfect" (34 px). Settle one second.
 
 ### 8c. attempt two (asthma by street)
 > Second. A local council asks for hospital data on asthma admissions by street, to decide where to put air quality monitors and plant trees. Examine how this could shape health, and name two privacy measures it needs. Pause here to answer.
@@ -120,7 +125,7 @@ Memory card (the scene 7 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (8a to 8d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Neither use in 8a and not the council request in 8c is worked in the body (the body uses a medicine-safety linkage, a readmission prediction in passing and general measures).
 
-1. (8a, 4 marks.) Use 1: benefit (finds areas with low participation for targeted outreach) and risk (re-identification in small populations) (1 mark each, combined); protection (suppress or aggregate small counts) (together 2 marks). Use 2: benefit (a diagnostic tool) and risk (re-identification, commercial secondary use beyond expectations, data leaving custodial control); protection (independent approval, analysis inside a secure environment, purpose limits, contractual penalties) (2 marks). Classic mistake crossed: de-identification treated as eliminating risk.
+1. (8a, 4 marks.) Marking, stated plainly (Revision 2): for EACH use, 1 mark for the benefit with its risk, and 1 mark for a protection that blocks that risk. Use 1: benefit (finds areas with low participation for targeted outreach) and risk (re-identification in small populations); protection (suppress or aggregate small counts). Use 2: benefit (a diagnostic tool) and risk (re-identification, commercial secondary use beyond expectations, data leaving custodial control); protection (independent approval, analysis inside a secure environment, purpose limits, contractual penalties). Classic mistake crossed: de-identification treated as eliminating risk.
 2. (8c, 4 marks.) How it shapes health: makes a pattern visible and directs action to where asthma is worst (1 mark); an equity link (lower-income streets near traffic) (1 mark); privacy risk (re-identification at street level) and measure 1 (aggregation to larger areas or small-count suppression) (1 mark); measure 2 (purpose limitation with independent approval, access logging, minimum fields) (1 mark). Classic mistake crossed: naming privacy as a concern without a measure.
 
 Feedback spoken lengths about 30 s (8b) and 28 s (8d) by script; time the exact audio.
@@ -142,7 +147,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing. N
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6149 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 562 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6145 characters**, 14 scene files. At 13.3 characters per second the speech is about 462 s; add 28 s of padding (2 s per scene) and 75 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 565 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -150,11 +155,12 @@ Revision 1 count (24 Nov; by script with the build parser rules: only lines star
 | 2. five uses, and why linkage matters | 814 |
 | 3. does it reduce spending? | 749 |
 | 4. curing and managing disease | 757 |
-| 5. privacy and confidentiality: the measures | 896 |
+| 5a. privacy and confidentiality: the first measures | 443 |
+| 5b. the measures that limit who looks, and the trade-off | 452 |
 | 6. how big data shapes health | 747 |
 | 7. memory | 123 |
 | 8a. attempt one (benefit, risk, protection) | 298 |
-| 8b. feedback, item one | 401 |
+| 8b. feedback, item one | 398 |
 | 8c. attempt two (asthma by street) | 238 |
 | 8d. feedback, item two | 376 |
 | 9. decision rule, close and handoff | 302 |
@@ -219,7 +225,7 @@ Next: What are the SDGs, and why does health need education?
 
 Lesson key `hms12a18`; folder `src/explainer/lessons/hms-y12-m3-v18`; build folder `docs/production/claude-pm/lessons/hms12a18`. Imports `hms-shared` (`ConnectionMap`, `TechColumns`, `ThreeQuestions`, training-data bar, `SpendingBar`, `FundersMap` seam glow; new `LinkageGrid`, saving ledger, measures ring).
 
-Scene headings (13): hook, uses-linkage, spending, disease, privacy, shaping, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
+Scene headings (14): hook, uses-linkage, spending, disease, privacy, access-measures, shaping, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
 
 Holds and transitions as hms-y12-m3-v01. Every teaching scene is a board change.
 
@@ -229,3 +235,16 @@ Holds and transitions as hms-y12-m3-v01. Every teaching scene is a board change.
 - **Close of the inquiry question.** Scene 9's recap strip shows v15 to v18's models for one second.
 - **Overlap.** v19 starts the SDGs (the handoff sorts the dataset into seventeen bands).
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y12-m3-v18-learning-review.md` and the module summary `../checks/hms-y12-m3-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 5 carried four new terms and eight measures at once.** Root ruling 11: split at "Give access for a stated purpose" into 5a and 5b, and the remaining measures are staged one at a time.
+   - 5a covers the two meanings, collecting the minimum, de-identification and the re-identification probe. It ends with a one-second settle.
+   - 5b covers access by purpose, the other controls and the trade-off. The glosses and probe fade to a grey strip, and each lock writes on its own cue while the previous one dims, so one measure and the arrow it blocks are bright at a time.
+   - The terms now arrive two and two across the scenes, not four at once. No narration change. 14 scene files; build headings add `access-measures`.
+2. **Note, 8a's marking was hard to apply.** Now stated plainly: for each use, 1 mark for the benefit with its risk and 1 mark for a protection that blocks that risk.
+3. **Note, 8b at about 30 s.** "and keep the data where it is" became "and keep the data in place" (narration and cue).
+
+Narration changed in 8b only. Recount: 6,145 characters, about 565 s (Revision 1: 6,149, about 562 s).

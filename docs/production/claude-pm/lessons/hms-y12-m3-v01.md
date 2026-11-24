@@ -1,8 +1,8 @@
 # HMS Year 12 V01 (Health in an Australian and global context): the health status of Australians. What does national health data really tell us about how healthy Australians are, and what does it hide? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, four reused (see Assets). Three dated official sources on screen (ABS life expectancy 2022–2024; AIHW Deaths in Australia, 2024 data; AIHW Australian Burden of Disease Study 2024), each flagged for release re-check.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, four reused (see Assets). Three dated official sources on screen (ABS life expectancy 2022–2024; AIHW Deaths in Australia, 2024 data; AIHW Australian Burden of Disease Study 2024), each flagged for release re-check.
 
-Narration 5,735 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 529 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,764 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 534 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the first HMS video of the Year 12 focus area "Health in an Australian and global context". Course brief `../hms-design-brief.md`. Route entry **hms-y12-m3-v01**. Pre-design pack `../pre-design/hms/hms-y12-m3-v01.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year12/module3/lesson01.sa.html` (read in full, 24 Nov; sha256 `d9b2e839b3f36fcdae5feca4f2dafb9f8474c99ddf4fe66293d1f8ae4f6ef608`). Previous design `hms-y11-m2-v22.md`.
 
@@ -41,7 +41,7 @@ Handoff: Aboriginal and Torres Strait Islander health (route entry hms-y12-m3-v0
 
 ## Script and shots
 
-13 scene files (1 to 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
+14 scene files (1 to 3, 4a, 4b, 5 to 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
 
 ### 1. hook (two claims, one report)
 > So, what does national health data really tell us? Here's a puzzle. One person says Australians are among the healthiest people in the world. Another says Australia has a chronic disease crisis. Both are quoting the same national health report, and both can be right. How? And before you pick a side, what would you need to know? Living longer is good news. But healthy for whom, and healthy for how many of those years?
@@ -58,10 +58,15 @@ Visual: board change to the trend reader (solid from its first frame): the natio
 
 Visual: board change to the two lists (solid from its first frame): two columns, "what we die of" (grey-ink) and "what we live with" (amber), empty. On "mortality" the gloss "mortality: deaths" (30 px) heads column 1; on "morbidity" "morbidity: illness and disability" (30 px) heads column 2; on "incidence counts new cases, and prevalence counts everyone living with it" m1-v03's `Bathtub` tiny at the bottom centre, its tap labelled "incidence" and level "prevalence", grey recall tag "earlier". On "In 2024, the leading causes of death were" column 1 fills one per cue with a source tag under it, "AIHW, Deaths in Australia, 2024 data" (24 px, with the release re-check flag in the design only): on "dementia" "dementia, incl. Alzheimer's"; on "coronary heart disease" "coronary heart disease"; on "lung cancer" "lung cancer"; on "stroke" "stroke (cerebrovascular disease)"; on "lung disease" "COPD (chronic lung disease)". On "the leading causes of illness are different" column 2 fills with its source tag "AIHW, Australian Burden of Disease Study 2024": on "mental health conditions" "mental health and substance use conditions"; on "muscle and bone conditions like back pain" "musculoskeletal conditions, e.g. back pain". On "Plan only from the death list" column 1 lights alone and column 2 dims, a red-orange tag "underfunds what people live with". On "keeps people alive without curing them" the bathtub's drain narrows ("deaths" outflow slows); on "the number living with the condition rises" its level rises, readout "prevalence up"; a chip "rising chronic disease means the system is failing" writes and is crossed in red, green tag "success, plus more long-term care" (30 px); the hook's first question mark turns into a green tick. Hold one second.
 
-### 4. life expectancy, and what it hides
-> **Life expectancy** is the headline number: how long a baby born now would live on average, if today's death rates never changed. It has risen for over a century. For 2022 to 2024, it was eighty-one point one years for males and eighty-five point one for females, so the population sits in between. The gap is four years, down from about six in the mid-nineties. Three things hide in that number. It's a projection, so it gets revised. It's an average, so a group can be stuck while the total rises. And it counts years, not health. Many of those extra years are lived with illness. And the sex gap? Biology plays a part, but the gap has shrunk, and biology doesn't change that fast. Risk-taking, dangerous jobs, smoking, drinking and not seeking help explain a gap that moves.
+### 4a. life expectancy, and what it hides
+> **Life expectancy** is the headline number: how long a baby born now would live on average, if today's death rates never changed. It has risen for over a century. For 2022 to 2024, it was eighty-one point one years for males and eighty-five point one for females, so the population sits in between. The gap is four years, down from about six in the mid-nineties. Three things hide in that number. It's a projection, so it gets revised. It's an average, so a group can be stuck while the total rises. And it counts years, not health. Some of those extra years are lived with illness or disability.
 
-Visual: board change to the chart by sex (solid from its first frame): the national chart redrawn with three lines from two dated points each, females teal, males orange, general population ink between them, an "illustrative pattern" tag on the joining lines and a source tag "ABS, Life expectancy, 2022–2024 (released Nov 2025)" (24 px). On "Life expectancy" the gloss "life expectancy: average years a newborn would live if today's death rates stayed fixed" (34 px). On "eighty-one point one years for males" the orange dot labels "81.1"; on "eighty-five point one for females" the teal dot "85.1"; on "the population sits in between" the ink line glows between them. On "The gap is four years" a bracket "4.0 years" between the end dots; on "down from about six in the mid-nineties" a second bracket at 1994, "5.9 years", grey, and the brackets read as narrowing. On "Three things hide in that number" three empty tags under the chart fill one per cue (30 px): on "It's a projection, so it gets revised" "projection: revised as death rates change"; on "It's an average, so a group can be stuck while the total rises" "average: a group can stay flat", a faint flat line below the general line; on "it counts years, not health" "years, not health", and the `HealthyYearsBar` draws beside the chart: one bar per sex, the later part shaded grey "years with illness or disability" (grey tag "illustrative pattern"); on "Many of those extra years are lived with illness" the grey part lengthens slightly with the bar; the hook's second question mark turns into a green tick. On "Biology plays a part" a small "biology" tag on the gap bracket; on "biology doesn't change that fast" a chip "the gap is just biology" writes and is crossed in red; on "Risk-taking, dangerous jobs, smoking, drinking and not seeking help" five plum tags write one per word group around the shrinking bracket, amber hand tag "a gap that moves is social" (42 px). Hold one second.
+Visual: board change to the chart by sex (solid from its first frame): the national chart redrawn with three lines from two dated points each, females teal, males orange, general population ink between them, an "illustrative pattern" tag on the joining lines and a source tag "ABS, Life expectancy, 2022–2024 (released Nov 2025)" (24 px). On "Life expectancy" the gloss "life expectancy: average years a newborn would live if today's death rates stayed fixed" (34 px). On "eighty-one point one years for males" the orange dot labels "81.1"; on "eighty-five point one for females" the teal dot "85.1"; on "the population sits in between" the ink line glows between them and a grey tag writes on it, "general population: between the two" (30 px). On "The gap is four years" a bracket "4.0 years" between the end dots; on "down from about six in the mid-nineties" a second bracket at 1994, "5.9 years", grey, and the brackets read as narrowing. On "Three things hide in that number" three empty tags under the chart fill one per cue (30 px): on "It's a projection, so it gets revised" "projection: revised as death rates change"; on "It's an average, so a group can be stuck while the total rises" "average: a group can stay flat", a faint flat line below the general line; on "it counts years, not health" "years, not health", and the `HealthyYearsBar` draws beside the chart: one bar per sex, the later part shaded grey "years with illness or disability" (grey tag "illustrative pattern"); on "Some of those extra years are lived with illness or disability" the grey part lengthens slightly, staying small (science check: health-adjusted life expectancy); the hook's second question mark turns into a green tick. Settle one second.
+
+### 4b. the sex gap moves
+> And the sex gap? Biology plays a part, but the gap has shrunk, and biology doesn't change that fast. Risk-taking, dangerous jobs, smoking, drinking and not seeking help explain a gap that moves.
+
+Visual: same board, no board change. Settle one second first: the three hide tags and the `HealthyYearsBar` go grey and small to the lower left, and the two gap brackets enlarge at the centre so the sex-gap argument has the screen to itself. On "Biology plays a part" a small "biology" tag on the gap bracket; on "biology doesn't change that fast" a chip "the gap is just biology" writes and is crossed in red; on "Risk-taking, dangerous jobs, smoking, drinking and not seeking help" five plum tags write one per word group around the shrinking bracket, amber hand tag "a gap that moves is social" (42 px). Hold one second.
 
 ### 5. why "they chose to" isn't an analysis
 > Now risky health behaviours, like smoking, heavy drinking, inactivity and poor diet. The data shows they aren't spread evenly. They cluster by income, education, job, remoteness and background. Choices alone wouldn't make such regular patterns, so something in people's circumstances is producing them. These are **sociological causes**. Money, work hours and insecure housing limit what's realistic. Health literacy is uneven. Some areas lack footpaths, fresh food or a nearby clinic, and have more takeaway shops and ads. What's normal among your family and friends spreads. And low control over your life brings stress, and ways of coping with it. The behaviour is the last link in a long chain, not the first.
@@ -79,14 +84,14 @@ Visual: board change to the group rows (solid from its first frame): the nationa
 Visual: board change to the memory card (solid from its first frame): the chart small at the left beside a dark-ink framed card (52 px): "Direction, shape, distribution, cause" (written with "direction, shape, distribution and cause") and "Averages are where inequities hide" (written with "averages are where inequities hide"). This card returns beside the key notes. Hold half a second.
 
 ### 8a. attempt one (a description to analyse)
-> Two exam questions. First. A student writes: smoking rates in Australia have gone down. Rewrite this description as an analysis, using at least two of direction, shape, distribution and cause, without quoting any figures. Pause here to answer.
+> Two exam questions. First. A student writes: smoking rates in Australia have gone down. Rewrite this description as an analysis, using direction or shape, distribution, and cause, without quoting any figures. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A student writes: 'Smoking rates in Australia have gone down.' Rewrite this description as an analysis of the trend, using at least TWO of direction, shape, distribution and cause. Do not quote figures. (3 marks)" Picture: the empty trend reader. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A student writes: 'Smoking rates in Australia have gone down.' Rewrite this description as an analysis of the trend, using direction or shape, distribution, and cause. Do not quote figures. (3 marks)" Picture: the empty trend reader. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 8b. feedback, item one
-> For example: smoking has fallen steadily over several decades, which is direction and shape. But the fall has been slower in lower-income and remote groups, so the gap between groups hasn't closed, which is distribution. That pattern suggests taxes, plain packaging and smoke-free laws worked unevenly, which is cause. The classic mistake is adding a number instead of a meaning.
+> Smoking has fallen steadily for decades, which is direction and shape. But the fall has been slower in lower-income and remote groups, so the gap between groups hasn't closed, which is distribution. That pattern suggests taxes, plain packaging and smoke-free laws worked unevenly, or that norms and stress keep some groups smoking, which is cause. The classic mistake is adding a number instead of a meaning.
 
-Visual: `FeedbackScene`: the card shrinks to the top; a coded smoking line (grey tag "illustrative pattern") draws under the trend reader; a green-framed three-line answer writes one per cue (30 px): on "fallen steadily over several decades" "1 direction and shape: a steady fall over decades"; on "the gap between groups hasn't closed" "2 distribution: slower in lower-income and remote groups", a second, higher line for those groups; on "taxes, plain packaging and smoke-free laws worked unevenly" "3 cause: policies reached groups unevenly". On "classic mistake" a chip "Smoking fell to X%." writes and is crossed in red, red hand tag "say what it means" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; a coded smoking line (grey tag "illustrative pattern") draws under the trend reader; a green-framed three-line answer writes one per cue (30 px): on "fallen steadily for decades" "1 direction and shape: a steady fall over decades"; on "the gap between groups hasn't closed" "2 distribution: slower in lower-income and remote groups", a second, higher line for those groups; on "taxes, plain packaging and smoke-free laws worked unevenly" "3 cause: policies reached groups unevenly; norms and stress". On "classic mistake" a chip "Smoking fell to X%." writes and is crossed in red, red hand tag "say what it means" (34 px). Settle one second.
 
 ### 8c. attempt two (the average that hid a group)
 > Second. A report says deaths from one condition have fallen a lot over twenty years, a public health success. A second table shows the fall is much smaller outside the major cities. Explain what the second table adds, give two possible causes, and say what you'd measure next. Pause here to answer.
@@ -110,7 +115,7 @@ Heading on screen: "Key notes: what to write in your book".
 1. Learn trends, not rates: direction, shape, distribution, cause.
 2. Deaths: dementia, heart disease, lung cancer. Illness: mental health, back pain.
 3. Keeping people alive lowers deaths and raises prevalence.
-4. Life expectancy rising; females about 4 years longer; a projection and an average.
+4. Life expectancy rising (a projected average); females +4 years; population between.
 5. Risky behaviours have sociological causes. Inequity: access, conditions, control.
 
 Memory card (the scene 7 card) beside the notes. Each bullet one line of at most 86 characters. Hold about 45 seconds in all.
@@ -119,7 +124,7 @@ Memory card (the scene 7 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (8a to 8d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Both are the site's activity items in exam wording; neither is worked in the body.
 
-1. (8a, 3 marks.) Direction or shape stated (a sustained fall over decades) (1 mark); distribution (a slower fall in lower socioeconomic or remote groups, the gap persisting) (1 mark); a plausible cause linked to the pattern (tobacco control measures reaching groups unevenly; norms and stress) (1 mark); any two of the three earn 2, all three with links earn 3. Classic mistake crossed: adding a figure instead of a meaning.
+1. (8a, 3 marks.) Direction or shape stated (a sustained fall over decades) (1 mark); distribution (a slower fall in lower socioeconomic or remote groups, the gap persisting) (1 mark); a plausible cause linked to the pattern (tobacco control measures reaching groups unevenly; or norms and stress in some groups) (1 mark). Each part is asked for on the card, so full marks need all three, linked. Classic mistake crossed: adding a figure instead of a meaning.
 2. (8c, 4 marks.) Accepts the national finding as an average (1 mark); identifies the widening gap by remoteness and that the average concealed it (1 mark); two plausible causes (access to specialist or emergency care; higher risk factor prevalence; later diagnosis) (1 mark); a next measure (the gap by remoteness over time; access measures such as travel time) (1 mark). Classic mistake crossed: rejecting rather than qualifying the national finding.
 
 Feedback spoken lengths about 28 s (8b) and 29 s (8d) by script; time the exact audio.
@@ -130,6 +135,7 @@ Self-check (24 Nov), with sources read on 24 Nov. The Codex science check must c
 - **Life expectancy (4).** ABS, *Life expectancy, 2022–2024*, released 11 November 2025 (https://www.abs.gov.au/statistics/people/population/life-expectancy/latest-release): males 81.1, females 85.1, gap 4.0 years; 1994: males 75.0, females 80.9, gap 5.9 years. Release re-check.
 - **Leading causes of death (3).** AIHW, *Deaths in Australia*, leading causes of death, 2024 data (page updated June 2026; https://www.aihw.gov.au/reports/life-expectancy-deaths/deaths-in-australia/contents/leading-causes-of-death): dementia including Alzheimer's disease (leading), coronary heart disease, lung cancer, cerebrovascular disease, COPD. The page does not rank causes 3 to 5; the video lists them in that order as "leading causes", not as a ranking; confirm. Release re-check.
 - **Leading non-fatal burden (3).** AIHW, *Australian Burden of Disease Study 2024* (December 2024): mental health and substance use conditions (about 98% non-fatal) and musculoskeletal conditions (about 97% non-fatal) are the largest non-fatal groups; back problems within musculoskeletal. Confirm the YLD ranking directly in the report's non-fatal tables. Release re-check.
+- **Years lived with illness (4a; added Revision 2).** The narration now says "Some of those extra years are lived with illness or disability." The science check confirms against AIHW health-adjusted life expectancy in the current burden of disease release that recent gains are mostly in full health with a modest rise in years lived with illness, and that "some" is accurate; the bar's grey part stays small to match.
 - **Measures (3).** Treatment that prolongs survival lowers mortality and raises prevalence.
 - **Sex gap (4).** Biological and social contributors; gap narrowing over decades.
 - **Sociological causes (5).** Clustering of smoking, alcohol, inactivity and diet by socioeconomic position, education, remoteness; outlet density and marketing.
@@ -145,19 +151,20 @@ Self-check (24 Nov), with sources read on 24 Nov. The Codex science check must c
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5735 characters**, 13 scene files. At 13.3 characters per second the speech is about 431 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 529 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5764 characters**, 14 scene files. At 13.3 characters per second the speech is about 433 s; add 28 s of padding (2 s per scene) and 73 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 534 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (two claims, one report) | 420 |
 | 2. the rule: read the trend, not the number | 558 |
 | 3. what we die of, and what we live with | 728 |
-| 4. life expectancy, and what it hides | 773 |
+| 4a. life expectancy, and what it hides | 592 |
+| 4b. the sex gap moves | 194 |
 | 5. why "they chose to" isn't an analysis | 709 |
 | 6. where the inequities are, and what can be done | 721 |
 | 7. memory | 126 |
-| 8a. attempt one (a description to analyse) | 243 |
-| 8b. feedback, item one | 379 |
+| 8a. attempt one (a description to analyse) | 230 |
+| 8b. feedback, item one | 408 |
 | 8c. attempt two (the average that hid a group) | 298 |
 | 8d. feedback, item two | 402 |
 | 9. decision rule and handoff | 303 |
@@ -217,7 +224,7 @@ Next: What actually improves Aboriginal and Torres Strait Islander health?
 
 Lesson key `hms12a01`; folder `src/explainer/lessons/hms-y12-m3-v01`; build folder `docs/production/claude-pm/lessons/hms12a01`. Imports `hms-shared` (`Bathtub`, `DeterminantsChain`, `AccessGates`, `FiveQuestionsCard`; new `HealthyYearsBar`), `src/explainer/math/graphs.tsx`.
 
-Scene headings (13): hook, trend-rule, two-lists, life-expectancy, sociological-causes, inequities, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
+Scene headings (14): hook, trend-rule, two-lists, life-expectancy, sex-gap, sociological-causes, inequities, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
 
 Holds and transitions as hms-y11-m2-v22. Every teaching scene is a board change.
 
@@ -227,3 +234,15 @@ Holds and transitions as hms-y11-m2-v22. Every teaching scene is a board change.
 - **Year 12 recall rule.** Every Year 11 idea is stated in plain words on first use; nothing depends on having watched our Year 11 videos.
 - **Overlap.** v02 and v03 analyse the groups; v04 compares countries; v05 to v07 take conditions and ages.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y12-m3-v01-learning-review.md` and the module summary `../checks/hms-y12-m3-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, 8a demand and marking disagreed.** The card and narration now ask for all three parts: "using direction or shape, distribution, and cause". The marking gives one mark to each part and says full marks need all three, linked (root ruling 4: the card asks for exactly what the marks reward).
+2. **Should fix, scene 4 carried two ideas and about ten new items.** Split at "And the sex gap?" into 4a (life expectancy, the three hidden things and the `HealthyYearsBar`) and 4b (the sex gap). 4a ends with a one-second settle; 4b opens by moving the hide tags and the bar to grey and small and enlarging the gap brackets. The narration is unchanged apart from item 3. 14 scene files; build headings updated (`sex-gap` added).
+3. **Note (science check), "Many of those extra years are lived with illness".** Changed to "Some of those extra years are lived with illness or disability." The bar's grey part stays small. Flagged in the facts section for the science check against AIHW health-adjusted life expectancy.
+4. **Note, the general population figure.** A grey tag "general population: between the two" writes on the ink line in 4a, and key note 4 now ends "population between".
+5. **Note, 8b cause named policies the body never taught.** 8b now also accepts "norms and stress keep some groups smoking", scene 5's causes; its answer line reads "policies reached groups unevenly; norms and stress". "For example" and "over several decades" were trimmed to hold 8b near 30 s.
+
+Narration changed in 4a, 8a and 8b. Recount: 5,764 characters, about 534 s (Revision 1: 5,735, about 529 s).

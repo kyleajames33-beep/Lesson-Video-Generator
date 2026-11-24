@@ -48,7 +48,7 @@ Site diagrams on this page (coded on the site; ideas may be redrawn, not copied)
 
 ## 6. Course coherence
 
-- **Entry knowledge:** Year 11 HMS (recalled in one sentence; do not assume our Year 11 video was watched): What the SDGs are and the health lens, recalled in a sentence.
+- **Entry knowledge:** hms-y11-m1-v17: What the SDGs are, the SDG ring and the health lens (Year 11), recalled in a sentence.
 - **Opens on:** the dataset from v18 is organised by seventeen goal tags (the final frame of hms-y12-m3-v18).
 - **Start:** Start from the six key features as design choices; recall the Year 11 SDG ring in one sentence.
 - **Stop:** Stop when students can describe the key features, SDG 3 and SDG 4 with targets in plain words, explain how SDG 3 and SDG 4 act on each other in both directions, and say what the framework is good for and what it is not.

@@ -54,13 +54,13 @@ Site diagrams on this page (coded on the site; ideas may be redrawn, not copied)
 
 ## 6. Course coherence
 
-- **Entry knowledge:** hms-y11-m2-v04: Heart, lungs, circulation.; hms-y11-m2-v09: Glycolysis and lactate.
+- **Entry knowledge:** hms-y11-m2-v04: Heart, lungs, circulation.; hms-y11-m2-v05: Cardiac output as heart rate x stroke volume, at rest.; hms-y11-m2-v09: Glycolysis and lactate.
 - **Opens on:** a FITT session card from v13 starts: a heart-rate readout begins to climb (the final frame of hms-y11-m2-v13).
 - **Start:** Start from heart rate, including the anticipatory rise.
 - **Stop:** Stop when students can explain the immediate responses of heart rate, ventilation rate, stroke volume, cardiac output (Q = HR x SV, worked) and lactate levels (production and removal; threshold), and separate immediate responses from long-term adaptations.
 - **Next handoff:** hms-y11-m2-v15: opens on the live response traces from v14 become data points on a class results table.
 - **Later homes:** Investigating responses: hms-y11-m2-v15. Adaptations: hms-y12-m4-v08.
-- **Recurring models:** intro:cardiac output equation (Q = HR x SV), intro:lactate threshold curve
+- **Recurring models:** reuse:cardiac output equation (Q = HR x SV, worked in exercise), intro:lactate threshold curve
 - **Cross-year overlap:** Year 12 hms-y12-m4-v08 recalls Q = HR x SV in one sentence.
 
 ## 7. Open questions for the designer

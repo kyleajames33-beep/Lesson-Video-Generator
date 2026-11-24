@@ -1,8 +1,8 @@
 # HMS Year 12 V13 (Health in an Australian and global context): the critical health consumer. How do you decide whom to believe about a health claim, in under a minute? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; the risk example uses illustrative numbers.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; the risk example uses illustrative numbers.
 
-Narration 5,889 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 543 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,939 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 547 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the thirteenth HMS video of the Year 12 focus area "Health in an Australian and global context", sixth in its inquiry question on the healthcare system. Course brief `../hms-design-brief.md`. Route entry **hms-y12-m3-v13**. Pre-design pack `../pre-design/hms/hms-y12-m3-v13.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year12/module3/lesson13.sa.html` (read in full, 24 Nov; sha256 `080caa2df14ec359a98228342385902c0530720c71bed9b6d8a3ced48d67b50f`). Previous design `hms-y12-m3-v12.md`.
 
@@ -69,9 +69,9 @@ Visual: board change to six questions (solid from its first frame): a question c
 Visual: board change to the eight patterns (solid from its first frame): the green tea headline card at the left. On "Accuracy" the gloss "accuracy: is this claim true?" (30 px) beside a small link to the "credibility" gloss from 3, tag "two separate questions" (26 px). On "true facts arranged to suggest something they don't show" the headline's words stay green while an arrow from it to "green tea prevents heart disease" turns dashed amber. Eight slate pattern stamps write one per cue down the right (28 px): on "Correlation" "1 correlation as cause", gloss "correlation: things varying together"; on "exercise more, smoke less and earn more" three grey tags attach to the tea drinkers' side of a small two-group diagram; on "confounding" the gloss "confounding: a third factor behind both" (30 px), the three tags drawing arrows to both "tea" and "less heart disease", and one hook slot fills green "what else differs?"; on "Relative risk with no absolute risk" "2 relative only"; on "A blood test number moving" "3 surrogate number"; on "The wrong population" "4 wrong population"; on "An anecdote" "5 anecdote", a chip "it worked for me" writes and is crossed in red; on "Cherry-picking one study" "6 cherry-picking"; on "Empty authority words" "7 authority words", the tub's "Clinically proven" and "Doctors recommend" lines lighting slate; on "pressure to decide now" "8 urgency". On "For a service" the pending `hms-treatment-table-v1.png` tiny; three teal checks (26 px): on "Is the practitioner registered?" "registered?"; on "What can you do if it goes wrong?" "recourse?"; on "will they refer you on" "refers on?", tag "willingness to refer: a good sign". Hold one second.
 
 ### 6. the sixty-second method
-> Now put it together into something short enough to use in a shop. Take the tub. One, who benefits if I believe this? The seller. Two, what's the actual claim? Strip the adjectives. Boost immunity, in whom, by how much? Nothing testable is left. Three, where would it be if it were true? In clinical guidance, not only on a label. Four, how big, in absolute terms? It won't say, and that's the answer. Five, what am I giving up? Money, and maybe a vaccine. Then match the evidence you demand to the stakes. Something cheap and harmless can be tried on weak evidence. Anything risky, or replacing treatment, needs strong evidence. Being critical isn't refusing to believe things. It's believing in proportion to the evidence.
+> Now put it together into one claim checker, short enough to use in a shop. Every gate is something you've just used. Take the tub. One, who benefits if I believe this? The seller. Two, what's the actual claim? Strip the adjectives. Boost immunity, in whom, by how much? Nothing testable is left. Three, where would it be if it were true? In clinical guidance, not only on a label. Four, how big, in absolute terms? It won't say, and that's the answer. Five, what am I giving up? Money, and maybe a vaccine. Then match the evidence you demand to the stakes. Something cheap and harmless can be tried on weak evidence. Anything risky, or replacing treatment, needs strong evidence. Being critical isn't refusing to believe things. It's believing in proportion to the evidence.
 
-Visual: board change to the sixty-second check (solid from its first frame): `SixtySecondCheck`, a five-gate funnel at the left with a 60 s ring at its top, the tub plate as a claim card above it. On "Take the tub" the ring starts. The card drops through the gates, each gate labelling on its cue (30 px): on "who benefits if I believe this?" gate 1 "who benefits?", tag "the seller" on "The seller"; on "what's the actual claim?" gate 2 "the actual claim?"; on "Strip the adjectives" the tub's claim text loses "Clinically proven" and the exclamation mark, leaving "boost immunity"; on "Nothing testable is left" the remaining words fade and the card is caught at gate 2, grey exit tag "most claims leave here"; the card is lifted back above the funnel to finish the run: on "where would it be if it were true?" gate 3 "where if true?", tag "guidance, not only labels"; on "how big, in absolute terms?" gate 4 "how big, absolutely?", tag "won't say: that's the answer"; on "what am I giving up?" gate 5 "what am I giving up?", v12's vaccine vial plate tiny with a ghost outline. On "match the evidence you demand to the stakes" the stakes line writes at the right, from "cheap, harmless" (green) to "risky, or replacing treatment" (plum), with a teal "evidence demanded" bar; on "tried on weak evidence" a herbal tea chip sits at the low end, the bar short; on "needs strong evidence" a chip "instead of treatment" sits at the high end, the bar tall. A chip "critical = believe nothing" writes and is crossed in red; on "believing in proportion to the evidence" amber hand tag "believe in proportion to the evidence" (34 px). The ring completes at 60. Hold one second.
+Visual: board change to the sixty-second check (solid from its first frame): `SixtySecondCheck`, a five-gate funnel at the left with a 60 s ring at its top, the tub plate as a claim card above it; the cards from 3 to 5 sit small and grey in a column at the right. On "one claim checker" the funnel's title writes, "claim checker: the sixty-second check" (34 px); it keeps this title in every later video that grows it (v15, v16). On "Every gate is something you've just used" a grey tag "you've met these" writes beside the column. As each gate labels below, a thin grey line links it to its source card: gate 1 to test 1 (who benefits), gate 2 to question 1 (what exactly is claimed) and the authority-words stamp, gate 3 to test 3 (fits the wider evidence), gate 4 to question 2 (how big, absolutely), gate 5 to question 4 (alternatives, including doing nothing). On "Take the tub" the ring starts. The card drops through the gates, each gate labelling on its cue (30 px): on "who benefits if I believe this?" gate 1 "who benefits?", tag "the seller" on "The seller"; on "what's the actual claim?" gate 2 "the actual claim?"; on "Strip the adjectives" the tub's claim text loses "Clinically proven" and the exclamation mark, leaving "boost immunity"; on "Nothing testable is left" the remaining words fade and the card is caught at gate 2, grey exit tag "most claims leave here"; the card is lifted back above the funnel to finish the run: on "where would it be if it were true?" gate 3 "where if true?", tag "guidance, not only labels"; on "how big, in absolute terms?" gate 4 "how big, absolutely?", tag "won't say: that's the answer"; on "what am I giving up?" gate 5 "what am I giving up?", v12's vaccine vial plate tiny with a ghost outline. On "match the evidence you demand to the stakes" the stakes line writes at the right, from "cheap, harmless" (green) to "risky, or replacing treatment" (plum), with a teal "evidence demanded" bar; on "tried on weak evidence" a herbal tea chip sits at the low end, the bar short; on "needs strong evidence" a chip "instead of treatment" sits at the high end, the bar tall. A chip "critical = believe nothing" writes and is crossed in red; on "believing in proportion to the evidence" amber hand tag "believe in proportion to the evidence" (34 px). The ring completes at 60. Hold one second.
 
 ### 7. memory
 > Two things to remember. Who benefits if I believe this? And demand evidence in proportion to the stakes.
@@ -94,9 +94,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; three stamps fill. A green
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A fitness influencer's post promotes a pre-workout powder with a personal discount code. The post says it 'boosts performance by 40%', is 'trusted by elite athletes', and that 'stock is almost gone'." Demand: "Using a stated method, assess the credibility of this claim. (5 marks)" Picture: the approved `hms-group-chat-phone-v1.png` with a coded plain post card (no avatar, no name). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 8d. feedback, item two
-> Run the sixty-second check. The influencer benefits from every sale, through the code. Forty per cent is relative, with no starting point, no population and no study. Elite athletes is authority language, and almost gone is urgency. If it worked that well, it would be in sports guidance. So credibility is low. The classic mistake is trusting it because the influencer is fit.
+> Run the sixty-second check. The influencer benefits from every sale, through the code. Forty per cent of what? There's no starting point, no population and no study. Elite athletes is authority language, and almost gone is urgency. If it worked that well, it would be in sports guidance. So credibility is low. The classic mistake is trusting it because the influencer is fit.
 
-Visual: `FeedbackScene`: the card shrinks to the top; the post card drops through the sixty-second funnel. A green-framed five-line answer writes one per cue (30 px): on "The influencer benefits from every sale" "1 conflict of interest: the code"; on "Forty per cent is relative" "2 no absolute size, population or study"; on "Elite athletes is authority language" "3 authority words, urgency", two slate stamps; on "it would be in sports guidance" "4 absent from guidance"; on "So credibility is low" "5 judgement: low; demand independent evidence". On "classic mistake" a chip "fit, so trustworthy" writes and is crossed in red, red hand tag "expertise in the right field?" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; the post card drops through the sixty-second funnel. A green-framed five-line answer writes one per cue (30 px): on "The influencer benefits from every sale" "1 conflict of interest: the code"; on "Forty per cent of what?" "2 no absolute size, population or study"; on "Elite athletes is authority language" "3 authority words, urgency", two slate stamps; on "it would be in sports guidance" "4 absent from guidance"; on "So credibility is low" "5 judgement: low; demand independent evidence". On "classic mistake" a chip "fit, so trustworthy" writes and is crossed in red, red hand tag "expertise in the right field?" (34 px). Settle one second.
 
 ### 9. decision rule and handoff
 > So ask who benefits, test the claim, ask how big, and match the evidence to the stakes. Now turn from the consumer to the system that has to answer all these questions. Out of the shop, and back to the hospital, which is under strain. What pressures are changing the healthcare system?
@@ -109,11 +109,10 @@ Heading on screen: "Key notes: what to write in your book".
 
 1. Why it matters: money, delay, direct harm, lost trust; not only the consumer's job.
 2. Whom to believe: who benefits, right expertise, fits evidence, corrects itself.
-3. Before deciding: claim, absolute size, harms, alternatives, certainty, fits me?
-4. Traps: correlation, relative risk, proxy, lab only, anecdote, cherry-pick, hype.
-5. Sixty seconds: benefits, claim, where if true, how big, giving up; match the stakes.
+3. Traps: correlation as cause, relative only, wrong population, anecdote, authority.
+4. Claim checker: who benefits, claim, where if true, how big, giving up; match stakes.
 
-Memory card (the scene 7 card) beside the notes. Each bullet one line of at most 86 characters ("proxy" is the surrogate number, "lab only" the wrong population, "hype" covers authority words and urgency). Hold about 45 seconds in all.
+Memory card (the scene 7 card) beside the notes. Each bullet one line of at most 86 characters (Revision 2: four notes; the six questions are folded into the claim checker, and the traps use the narrated names). Hold about 45 seconds in all.
 
 ## Practice question and feedback
 
@@ -141,7 +140,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing. N
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5889 characters**, 13 scene files. At 13.3 characters per second the speech is about 443 s; add 26 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 543 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5939 characters**, 13 scene files. At 13.3 characters per second the speech is about 447 s; add 26 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 547 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -150,12 +149,12 @@ Revision 1 count (24 Nov; by script with the build parser rules: only lines star
 | 3. whom to believe: four tests | 759 |
 | 4. what you need to know: six questions | 566 |
 | 5. eight ways a true statement misleads | 888 |
-| 6. the sixty-second method | 723 |
+| 6. the sixty-second method | 774 |
 | 7. memory | 104 |
 | 8a. attempt one (name the pattern) | 305 |
 | 8b. feedback, item one | 298 |
 | 8c. attempt two (the pre-workout post) | 270 |
-| 8d. feedback, item two | 377 |
+| 8d. feedback, item two | 376 |
 | 9. decision rule and handoff | 285 |
 | 10. key notes (quiet, hold about 45 seconds) | 75 |
 
@@ -228,3 +227,14 @@ Holds and transitions as hms-y12-m3-v01. Every teaching scene is a board change.
 - **Pace risk.** Scene 5 carries eight patterns plus three service checks; the learning review should time it at playback. The site's own advice ("learn the eight patterns") makes the full list part of the dotpoint's -s3; trimming to fewer would leave owned content out.
 - **Overlap.** v14 takes system pressures.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y12-m3-v13-learning-review.md` and the module summary `../checks/hms-y12-m3-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, five overlapping checklists in one video.** Root ruling 2: the module keeps one claim checker, and it starts here. Scene 6 now says "Now put it together into one claim checker, short enough to use in a shop. Every gate is something you've just used." The funnel is titled "claim checker: the sixty-second check". As each gate labels, a thin grey line links it to its source card from scenes 3 to 5, under a grey tag "you've met these". So the four tests, six questions and patterns read as the material the one checker collects, not as four lists to learn. The key notes now end with the claim checker as the one list to keep. v15 and v16 add gates to this same checker with "earlier" tags, and they do not restate these five.
+2. **Note, 8d's "forty per cent is relative".** Now "Forty per cent of what? There's no starting point, no population and no study."
+3. **Note, 8a is identification.** Kept as the review advises; 8c carries the transfer.
+4. **Note, key notes were lists of lists.** Note 3 (the six questions, now folded into the checker) is dropped. The traps note uses the narrated names (no "proxy", "lab only" or "hype"). Four notes remain.
+
+Narration changed in 6 and 8d. Recount: 5,939 characters, about 547 s (Revision 1: 5,889, about 543 s).
