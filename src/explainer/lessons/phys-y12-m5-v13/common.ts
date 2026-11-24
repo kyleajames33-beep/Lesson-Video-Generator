@@ -3,13 +3,13 @@
 // throws if a phrase is missing), never to a fixed frame, so switching the import below to the measured take
 // re-times the whole video. Keyframe lists go through `mono`, so a later cue that lands earlier in the real
 // take can never make a sequence run backwards.
-// PROVISIONAL TIMING: switch to measured/lesson.json when voiced
-import lessonJson from '../../../../work/physics-prebuild/p-y12-m5-v13/lesson.json';
+// Measured timing (voiced 24 Nov 2026)
+import lessonJson from '../../../../docs/production/claude-pm/lessons/p-y12-m5-v13/measured/lesson.json';
 import {cueFrame} from '../../cues';
 import type {CueScene} from '../../cues';
 
 /** True while the word times are estimates (provisional lesson.json). Set false with the measured import. */
-export const PROVISIONAL = true;
+export const PROVISIONAL = false;
 
 export const lesson = lessonJson;
 type Scene = (typeof lessonJson.scenes)[number] & {responseHold?: {startFrame: number; endFrame: number}};

@@ -3,12 +3,12 @@
 // throws if a phrase is missing), never to a fixed frame. Every circling body is a field-motion run
 // (src/explainer/sims/field-motion.ts, a central field set to the circular speed), so each velocity arrow is
 // tangent and each acceleration arrow points to the centre because the run says so.
-import lessonJson from '../../../../work/physics-prebuild/p-y12-m5-v11/lesson.json'; // PROVISIONAL TIMING: switch to docs/production/claude-pm/lessons/p-y12-m5-v11/measured/lesson.json when voiced
+import lessonJson from '../../../../docs/production/claude-pm/lessons/p-y12-m5-v11/measured/lesson.json'; // Measured timing (voiced 24 Nov 2026)
 import {cueFrame} from '../../cues';
 import type {CueScene} from '../../cues';
 import {runMotion, stateAt} from '../../sims/field-motion';
 
-export const PROVISIONAL = true;
+export const PROVISIONAL = false;
 
 export const lesson = lessonJson;
 type Scene = (typeof lessonJson.scenes)[number] & {responseHold?: {startFrame: number; endFrame: number}};

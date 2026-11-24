@@ -197,6 +197,7 @@ export const S04: React.FC = () => {
 		<>
 			<SceneHeading text={HEAD} at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
+				<g transform="translate(0, 560) scale(0.55)" opacity={0.95}><PendStage theta={30} phase={0} bench={false} coneInk={1} /></g>
 				<CloseUp x={BX} y={BY} theta={30} mg={WE.mg} k={KC} splitAt={vPart - 10} aAt={nothing} centreX={CENTRE_X} pulseUp={balances} pulseW={balances} pulseIn={nothing} />
 				{f >= nothing + 20 ? <path d={`M${BX - side - 30},${BY - 40} C ${BX - side - 120},${BY - 10} ${BX - side - 120},${BY + 80} ${BX - 160},${BY + 100}`} fill="none" stroke={ROLE.x.stroke} strokeWidth={4} strokeDasharray="1 0" opacity={prog(f, nothing + 20, 14)} /> : null}
 			</FrameSvg>
@@ -211,8 +212,8 @@ export const S04: React.FC = () => {
 			<Enter at={split - 10} style={{position: 'absolute', left: 1120, top: 200, width: 704}}>
 				<div style={{...card, border: `3px solid ${INK}`}}>
 					<Title>Split the tension</Title>
-					<div style={{...DISPLAY(36, ROLE.y.ink, 800), marginTop: 4, opacity: prog(f, vPart, 12)}}>up part: <FT /> cos θ</div>
-					<div style={{...DISPLAY(36, ROLE.x.ink, 800), opacity: prog(f, hPart, 12)}}>in part: <FT /> sin θ</div>
+					<div style={{...DISPLAY(36, f < vPart ? INK : ROLE.y.ink, 800), marginTop: 4, opacity: f < vPart ? 0.4 : prog(f, vPart, 12)}}>up part: {f < vPart ? '?' : <><FT /> cos θ</>}</div>
+					<div style={{...DISPLAY(36, f < hPart ? INK : ROLE.x.ink, 800), opacity: f < hPart ? 0.4 : prog(f, hPart, 12)}}>in part: {f < hPart ? '?' : <><FT /> sin θ</>}</div>
 				</div>
 			</Enter>
 			<div style={{position: 'absolute', left: 1120, top: 420, display: 'flex', flexDirection: 'column', gap: 6}}>
