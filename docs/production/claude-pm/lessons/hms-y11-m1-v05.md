@@ -116,7 +116,7 @@ Visual: three step chips write on (38 px): "start upstream", "follow the chain; 
 Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
-1. Determinants, upstream to downstream: society, environment, socioeconomic, behaviours, biomedical.
+1. Determinants, upstream first: society, environment, socioeconomic, behaviours, biomedical.
 2. They interact: chains, clustering (effects compound) and feedback.
 3. Social gradient: health improves at every step up, not just at the bottom.
 4. Risky behaviours have sociological causes: norms, stress, availability, control, belonging.
@@ -269,3 +269,7 @@ Check: `../checks/hms-y11-m1-v05-science-check.md` and the module summary `../ch
 3. **Release re-check stays:** the AIHW life expectancy by socioeconomic area figures (born 2024) were confirmed on 24 Nov 2026 and are re-checked before voicing and publication.
 
 Narration changed in scenes 4 and 11d. Recount: 5,886 characters, about 543 s (Revision 2: 5,849, about 540 s). `cues.py`: 0 findings. Joins unchanged.
+
+## Revision 3a (root, 25 November 2026): brief 267 key-note fix
+
+The determinants key note is shortened to "Determinants, upstream first: society, environment, socioeconomic, behaviours, biomedical." (90 characters), under the 95-character limit. On-screen notes only; no narration, cue or timing change. This section overrides earlier text.
