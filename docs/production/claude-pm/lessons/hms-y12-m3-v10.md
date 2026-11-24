@@ -1,6 +1,6 @@
 # HMS Year 12 V10 (Health in an Australian and global context): health expenditure. Should Australia spend more on preventing illness or on treating it, and what does each choice cost the future? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, six reused (see Assets). No official figures (spending shapes labelled "illustrative pattern").
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with no findings (24 Nov 2026, `../checks/hms-y12-m3-v10-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, six reused (see Assets). No official figures (spending shapes labelled "illustrative pattern").
 
 Narration 6,161 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
 
@@ -132,7 +132,7 @@ Feedback spoken lengths about 23 s (9b) and 30 s (9d) by script; time the exact 
 ## Numbers or facts to verify
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing. No figure on screen; the bar and the two-line chart are labelled "illustrative pattern".
-- **Shape of spending (2).** AIHW *Health expenditure Australia*: health spending has grown faster than GDP over the long run; governments fund about two-thirds to seven-tenths; hospitals and primary health care are the largest areas; public health about 2% of recurrent spending (a few cents in the dollar; it rose temporarily with pandemic spending in 2020–2022, so "has not grown" is not narrated); individuals' out-of-pocket share concentrated in dental, allied health, medicines and specialist gaps.
+- **Shape of spending (2).** AIHW *Health expenditure Australia*: health spending has grown faster than GDP over the long run; governments fund about two-thirds to seven-tenths; hospitals and primary health care are the largest areas; public health about 2% of recurrent spending (a few cents in the dollar; it rose temporarily with pandemic spending in 2020-2022, so "has not grown" is not narrated); individuals' out-of-pocket share concentrated in dental, allied health, medicines and specialist gaps.
 - **Prevention kinds (3).** Primary, secondary, tertiary prevention as the site defines them.
 - **Drivers (5).** Technology and new medicines as the largest driver of growth in most analyses; ageing a smaller contributor than commonly assumed (Productivity Commission and AIHW decompositions); labour-intensive sector costs (the cost disease argument).
 - **Dental (6).** ABS *Patient Experiences*: cost-related delay or avoidance highest for dental professionals among common services; dental largely outside Medicare; potentially preventable hospitalisations for dental conditions among the largest acute categories.

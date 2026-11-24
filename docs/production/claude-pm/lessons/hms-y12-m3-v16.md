@@ -1,6 +1,6 @@
 # HMS Year 12 V16 (Health in an Australian and global context): new technologies and treatments. Do health apps, artificial intelligence and assistive technology actually improve health, and how would we know? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
 
 Narration 5,991 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 555 s including holds, two countdowns and the 45 s notes hold.
 
@@ -26,7 +26,7 @@ Scope: the sixteenth HMS video of the Year 12 focus area "Health in an Australia
 - **Attempt.** 8a: the site's Activity 1 items 2 and 4 (4 marks). 8c: the site's Activity 2 in exam wording (4 marks).
 - **Memory aids.** The three questions themselves (written "True for it to help? Wrong which way? Who first?") and the site's strongest sentence (written "Technology helps only when the system changes to use it"). Scene 7, after 2 to 6.
 - **A mistake/fix beat** is in 4 ("accurate on the test = better outcomes", crossed). Other fixes: "describe what it does" crossed in 2; "an app that shows numbers changes behaviour" crossed in 3; "a computer can't be biased" crossed in 4; "assistive technology is just convenience" crossed in 5.
-- **Reuse:** v15's handoff frame (opening) and base band (6); v13's "approved" stamp split (3); v14's workforce roster (4, tiny); v07's functional ability tags (5); v09's seam glow (5); v02's gap lines (4, tiny, general).
+- **Reuse:** v15's handoff frame (opening) and base band (6); v12's "listed" stamp split (3); v14's workforce roster (4, tiny); v07's functional ability tags (5); v09's seam glow (5); v02's gap lines (4, tiny, general).
 - **Colour key.** The three questions: amber slot 1 (requirements), violet slot 2 (errors; false reassurance plum, false alarm grey), teal slot 3 (who first); apps blue, AI slate, assistive green; the training-data bar's under-represented group amber; the system wrapper teal; green answers; red only for crossed mistakes.
 - **Type sizes.** As the course brief.
 - **Anchor.** The three questions card in 2 to 6 and both feedbacks.
@@ -56,7 +56,7 @@ Visual: board change to the technology gates (solid from its first frame): `Thre
 ### 3. health apps
 > Start with **health apps**, software that does a health job. There are huge numbers, and very few have been evaluated. Sort them by what they do. Tracking and coaching apps have the best evidence, when they set goals, give feedback and add some accountability. An app that only shows numbers changes little. Condition apps, like medication reminders or asthma plans, work best when a clinician is connected. Symptom checkers are the riskiest, because errors in either direction matter. And digital therapy programs have good evidence for anxiety and depression, and extend a stretched workforce. Software that diagnoses or monitors a condition is regulated as a medical device, but wellbeing apps mostly aren't, and on your phone they look the same. Three more limits. Most are never tested, people stop using them within weeks, and privacy is often poor.
 
-Visual: board change to apps (blue; solid from its first frame): the phone plate at the left; on "health apps" the gloss "health app: software that does a health job" (30 px). On "very few have been evaluated" a large grid of small grey app tiles with only a handful outlined green, tag "evaluated" (26 px). Four app groups write one per cue at the right with evidence tags (28 px): on "Tracking and coaching apps have the best evidence" "tracking, coaching: good evidence" (green tag); on "set goals, give feedback and add some accountability" three small chips; on "An app that only shows numbers changes little" a chip "showing numbers changes behaviour" writes and is crossed in red; on "Condition apps" "condition management", a dashed link to the clinic plate tiny, v15's "needs a responder" tag, grey recall tag "earlier"; on "Symptom checkers are the riskiest" "symptom checkers: riskiest" (amber), the two-way fork from 2 tiny; on "digital therapy programs" "therapy programs: good for anxiety, depression" (green); on "extend a stretched workforce" a small roster chip. On "regulated as a medical device" two identical coded app tiles side by side; on "wellbeing apps mostly aren't" one takes a small "regulated" tag and the other none, while both look the same, v13's split "approved" stamp tiny, amber hand tag "same look, different rules" (30 px). On "Three more limits" three grey tags: on "Most are never tested" "untested"; on "people stop using them within weeks" an engagement curve (illustrative) falling steeply over twelve weeks, tag "engagement drops"; on "privacy is often poor" "privacy". Hold one second.
+Visual: board change to apps (blue; solid from its first frame): the phone plate at the left; on "health apps" the gloss "health app: software that does a health job" (30 px). On "very few have been evaluated" a large grid of small grey app tiles with only a handful outlined green, tag "evaluated" (26 px). Four app groups write one per cue at the right with evidence tags (28 px): on "Tracking and coaching apps have the best evidence" "tracking, coaching: good evidence" (green tag); on "set goals, give feedback and add some accountability" three small chips; on "An app that only shows numbers changes little" a chip "showing numbers changes behaviour" writes and is crossed in red; on "Condition apps" "condition management", a dashed link to the clinic plate tiny, v15's "needs a responder" tag, grey recall tag "earlier"; on "Symptom checkers are the riskiest" "symptom checkers: riskiest" (amber), the two-way fork from 2 tiny; on "digital therapy programs" "therapy programs: good for anxiety, depression" (green); on "extend a stretched workforce" a small roster chip. On "regulated as a medical device" two identical coded app tiles side by side; on "wellbeing apps mostly aren't" one takes a small "regulated" tag and the other none, while both look the same, v12's split "listed" stamp tiny (Revision 3), amber hand tag "same look, different rules" (30 px). On "Three more limits" three grey tags: on "Most are never tested" "untested"; on "people stop using them within weeks" an engagement curve (illustrative) falling steeply over twelve weeks, tag "engagement drops"; on "privacy is often poor" "privacy". Hold one second.
 
 ### 4a. artificial intelligence
 > Next, **artificial intelligence**, systems that find patterns in data to classify or predict. It's genuinely strong at reading images, like scans, skin photos and slides, at predicting who might deteriorate, and at handling volume, so experts review only the uncertain cases. That helps where specialists are scarce.
@@ -145,7 +145,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing. N
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5991 characters**, 14 scene files. At 13.3 characters per second the speech is about 450 s; add 28 s of padding (2 s per scene) and 77 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 555 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5991 characters**, 14 scene files. At 13.3 characters per second the speech is about 450 s; add 28 s of padding (2 s per scene) and 77 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 555 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -242,3 +242,11 @@ Review: `../checks/hms-y12-m3-v16-learning-review.md` and the module summary `..
 4. **Note, the hook gave no thinking time.** A 2 s quiet hold with the two unlabelled arrows ends scene 1.
 
 Narration changed in 2, 7, 8a, 8b and 9. Recount: 5,991 characters, about 555 s (Revision 1: 5,924, about 545 s).
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y12-m3-v16-science-check.md` and the module summary `../checks/hms-y12-m3-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Echo of v12's blocker (root ruling 2).** No finding in this video's check. Scene 3 recalls v12's stamp, which now reads "listed", not "approved" (v12 Revision 3), so the recall and the Reuse line now say "v12's split 'listed' stamp" (the source video was also misnamed as v13). Visual only.
+
+No narration change. Recount: 5,991 characters, about 555 s (unchanged). `cues.py`: 0 findings. Joins unchanged.

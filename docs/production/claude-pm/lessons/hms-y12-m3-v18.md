@@ -1,8 +1,8 @@
 # HMS Year 12 V18 (Health in an Australian and global context): big data. How is big data shaping Australians' health, and what protects the privacy of the people inside it? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
 
-Narration 6,145 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 565 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,156 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 566 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the eighteenth HMS video of the Year 12 focus area "Health in an Australian and global context", closing its inquiry question on technology and data. Course brief `../hms-design-brief.md`. Route entry **hms-y12-m3-v18**. Pre-design pack `../pre-design/hms/hms-y12-m3-v18.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year12/module3/lesson18.sa.html` (read in full, 24 Nov; sha256 `a901f3b32d79f7b3f0345f2262937194043153dd3149df0d586f109927513653`). Previous design `hms-y12-m3-v17.md`.
 
@@ -45,9 +45,9 @@ Handoff: the SDGs (route entry hms-y12-m3-v19). **Handoff frame (hms-y12-m3-v19 
 14 scene files (1 to 4, 5a, 5b, 6, 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
 
 ### 1. hook (every record, linked)
-> So, how is big data shaping our health? Every prescription dispensed in Australia is recorded. So is every hospital admission, every subsidised medical visit, every cancer diagnosis and every vaccination. Write down two useful things we could learn by linking those records. Then two things you'd never want anyone to do with them. And what would have to be in place first?
+> So, how is big data shaping our health? Every subsidised prescription dispensed in Australia is recorded. So is every hospital admission, every subsidised medical visit, every cancer diagnosis and every vaccination. Write down two useful things we could learn by linking those records. Then two things you'd never want anyone to do with them. And what would have to be in place first?
 
-Visual: opens on hms-y12-m3-v17's handoff frame (many small connection maps merged into one large unnamed "dataset" table; the Next chip). The Next chip leaves and the heading rewrites to "How is big data shaping our health?" (60 px). The table splits into five source tables, one per cue (28 px): on "Every prescription dispensed" "prescribing", the pending `hms-pharmacy-counter-v1.png` tiny; on "every hospital admission" "admissions", `m8-hospital-case-files-v1.png` tiny; on "every subsidised medical visit" "medical services"; on "every cancer diagnosis" "cancer registry"; on "every vaccination" "immunisation", `m7-vaccine-vial-syringe-v1.png` tiny. Behind them the new `hms-server-rack-v1.png` fades in, small. On "two useful things" two empty green slots; on "two things you'd never want" two empty red-orange slots; on "what would have to be in place" an empty teal frame around both. Hold one second.
+Visual: opens on hms-y12-m3-v17's handoff frame (many small connection maps merged into one large unnamed "dataset" table; the Next chip). The Next chip leaves and the heading rewrites to "How is big data shaping our health?" (60 px). The table splits into five source tables, one per cue (28 px): on "Every subsidised prescription dispensed" "subsidised prescribing", the pending `hms-pharmacy-counter-v1.png` tiny; on "every hospital admission" "admissions", `m8-hospital-case-files-v1.png` tiny; on "every subsidised medical visit" "medical services"; on "every cancer diagnosis" "cancer registry"; on "every vaccination" "immunisation", `m7-vaccine-vial-syringe-v1.png` tiny. Behind them the new `hms-server-rack-v1.png` fades in, small. On "two useful things" two empty green slots; on "two things you'd never want" two empty red-orange slots; on "what would have to be in place" an empty teal frame around both. Hold one second.
 
 ### 2. five uses, and why linkage matters
 > **Big data** means datasets so large and varied that they show patterns no single record can. It's used five ways. First, and biggest, just knowing what's happening. Every trend in this course comes from linked national data. Second, surveillance, like spotting outbreaks and rare medicine side effects. Third, planning and evaluation. Fourth, prediction: who's at high risk, so attention goes there first. Fifth, research: does a treatment work in real life, not just in a trial? Most of the value comes from **data linkage**, joining records about the same person from different sources. A prescribing record says what was dispensed. Linked to hospital and death records, it says whether the medicine helped or harmed. And that's exactly where the privacy risk is greatest. The benefit and the risk have the same source.
@@ -147,11 +147,11 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing. N
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6145 characters**, 14 scene files. At 13.3 characters per second the speech is about 462 s; add 28 s of padding (2 s per scene) and 75 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 565 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6156 characters**, 14 scene files. At 13.3 characters per second the speech is about 463 s; add 28 s of padding (2 s per scene) and 75 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 566 s**.
 
 | Scene | Characters |
 | --- | --- |
-| 1. hook (every record, linked) | 373 |
+| 1. hook (every record, linked) | 384 |
 | 2. five uses, and why linkage matters | 814 |
 | 3. does it reduce spending? | 749 |
 | 4. curing and managing disease | 757 |
@@ -231,7 +231,7 @@ Holds and transitions as hms-y12-m3-v01. Every teaching scene is a board change.
 
 ## Review notes (author, not learner copy)
 
-- **Teaching checks.** Causes: why linkage creates value and risk together (2); why some savings are real and others moved or imagined (3); why unrepresentative data serves some groups worse (4); why each measure is needed and why de-identification is imperfect (5); why data shapes rather than merely helps (6). Attention: every prescription and vaccination you have ever had, already recorded. Visual medium: a gold thread through one person's rows ending in "helped or harmed"; coins sliding to another funder; a trial box of similar dots beside a mixed field; three columns narrowing to one amber row; locks fixing to a ring, each blocking an arrow. Apply: two unseen uses (8a); an unseen council request (8c). Remember: same source for benefit and risk; better value, not less spending.
+- **Teaching checks.** Causes: why linkage creates value and risk together (2); why some savings are real and others moved or imagined (3); why unrepresentative data serves some groups worse (4); why each measure is needed and why de-identification is imperfect (5); why data shapes rather than merely helps (6). Attention: every subsidised prescription and vaccination you have ever had, already recorded. Visual medium: a gold thread through one person's rows ending in "helped or harmed"; coins sliding to another funder; a trial box of similar dots beside a mixed field; three columns narrowing to one amber row; locks fixing to a ring, each blocking an arrow. Apply: two unseen uses (8a); an unseen council request (8c). Remember: same source for benefit and risk; better value, not less spending.
 - **Close of the inquiry question.** Scene 9's recap strip shows v15 to v18's models for one second.
 - **Overlap.** v19 starts the SDGs (the handoff sorts the dataset into seventeen bands).
 - **No em dashes** in this file (searched by script).
@@ -248,3 +248,11 @@ Review: `../checks/hms-y12-m3-v18-learning-review.md` and the module summary `..
 3. **Note, 8b at about 30 s.** "and keep the data where it is" became "and keep the data in place" (narration and cue).
 
 Narration changed in 8b only. Recount: 6,145 characters, about 565 s (Revision 1: 6,149, about 562 s).
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y12-m3-v18-science-check.md` and the module summary `../checks/hms-y12-m3-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 1: "Every prescription".** Accepted: "Every subsidised prescription dispensed in Australia is recorded." The source table label is "subsidised prescribing". National dispensing data cover PBS-listed medicines, not fully private scripts. The teaching-check line matches.
+
+Narration changed in scene 1 (its opening frame, v17's merged dataset table, is unchanged). Recount: 6,156 characters, about 566 s (Revision 2: 6,145, about 565 s). `cues.py`: 0 findings. The joins with v17 (opening) and v19 (handoff frame) are unchanged.

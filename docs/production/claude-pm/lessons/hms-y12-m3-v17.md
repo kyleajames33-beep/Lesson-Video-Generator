@@ -1,6 +1,6 @@
 # HMS Year 12 V17 (Health in an Australian and global context): digital health. Has digital health succeeded in connecting Australians' health information, and what would it take to make it work? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, eight reused (see Assets). No figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only; the sharing-by-default dates are corrected in site correction 30 (24 Nov 2026, `../checks/hms-y12-m3-v17-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, eight reused (see Assets). No figures.
 
 Narration 6,177 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 564 s including holds, two countdowns and the 45 s notes hold.
 
@@ -127,7 +127,7 @@ Feedback spoken lengths about 29 s (8b) and 26 s (8d) by script; time the exact 
 ## Numbers or facts to verify
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing. No figures.
-- **Shared record (3).** My Health Record: opt-out since 2018–19, so most Australians have one; holds shared health summaries, discharge summaries, medicines information, pathology and imaging reports, immunisation history; individuals set access controls and see an access log.
+- **Shared record (3).** My Health Record: opt-out since 2018-19, so most Australians have one; holds shared health summaries, discharge summaries, medicines information, pathology and imaging reports, immunisation history; individuals set access controls and see an access log.
 - **Sharing by default (3; site correction 30).** The 2025 legislation requiring prescribed providers (pathology and diagnostic imaging first) to share key reports to the national record by default; confirm the commencement dates (phased 2025 to 2026) before voicing. **Currency item (root ruling 12, Revision 2):** the science check confirms which report types and providers are covered by late 2026. The narration says only that new rules "are starting to make some test results upload by default" (scene 3) and asks for "every key document, not just some test results" (scene 6), which stays true while commencement is phased; if all key reports are covered by voicing, change "starting to make some test results" to the covered reports, and scene 6's condition to "for every key document".
 - **Telehealth (3, 4).** Rapid expansion of Medicare-funded telehealth from March 2020, made permanent in 2022 with conditions.
 - **Electronic prescribing, secure messaging, registers (3).** Electronic prescriptions in use nationally since 2020; secure messaging between providers; the Australian Immunisation Register and national cancer screening register.

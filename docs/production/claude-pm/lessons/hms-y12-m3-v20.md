@@ -1,6 +1,6 @@
 # HMS Year 12 V20 (Health in an Australian and global context): the SDGs II. How do reducing inequality and building better cities improve health, and how do the four goals lock together? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, seven reused (see Assets). No figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m3-v20-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, seven reused (see Assets). No figures.
 
 Narration 6,176 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 564 s including holds, two countdowns and the 45 s notes hold.
 

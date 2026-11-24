@@ -52,7 +52,7 @@ Source of truth: [hms-video-route.json](./hms-video-route.json). Syllabus: NESA 
 | 36 | hms-y11-m2-v18 | Why does the practice that looks worse in training often work better in matches? | y11-fa2-g3-d1 s4, s5, s6 | L18 |
 | 37 | hms-y11-m2-v19 | How do you find out what the evidence really says about learning a sport skill, when everyone has an opinion? | y11-fa2-g3-d2 | L19 |
 | 38 | hms-y11-m2-v20 | Why do people start playing sport, and why is staying so much harder? | y11-fa2-g4-d1 s1, s2 | L20 |
-| 39 | hms-y11-m2-v21 | Almost everyone intends to exercise more, so why do so few change, and what actually closes the gap? | y11-fa2-g4-d1 s3 | L21 |
+| 39 | hms-y11-m2-v21 | Most people intend to exercise more, so why do so many fail to change, and what actually closes the gap? | y11-fa2-g4-d1 s3 | L21 |
 | 40 | hms-y11-m2-v22 | Why do thousands of people turn up to a 5.30 am bootcamp they don't enjoy? | y11-fa2-g4-d2 | L22 |
 
 ## Year 12, Health in an Australian and global context
@@ -93,7 +93,7 @@ Source of truth: [hms-video-route.json](./hms-video-route.json). Syllabus: NESA 
 | 67 | hms-y12-m4-v05 | How do flexibility, strength and skill training methods differ, and what do they share? | y12-fa2-g2-d1 s3, s4, s5 | L05 |
 | 68 | hms-y12-m4-v06 | Why does a program stop working, and how do overload, thresholds and specificity keep it working? | y12-fa2-g2-d2 s1, s2, s4 | L06 |
 | 69 | hms-y12-m4-v07 | What happens when training stops, and why do variety, warm-up and cool-down matter physiologically? | y12-fa2-g2-d2 s3, s5, s6 | L07 |
-| 70 | hms-y12-m4-v08 | Why does a trained athlete have a lower resting heart rate, and what else does training change inside the body? | y12-fa2-g2-d3 | L08 |
+| 70 | hms-y12-m4-v08 | What does training change inside the body? | y12-fa2-g2-d3 | L08 |
 | 71 | hms-y12-m4-v09 | How do you start designing a training session: aim, safety, warm-up and cool-down, for an individual and for a team? | y12-fa2-g3-d1 s1, s2, s3 | L09 |
 | 72 | hms-y12-m4-v10 | Where do skill, conditioning and tactics go in a session, and how do athletes and coaches close it out? | y12-fa2-g3-d1 s4, s5, s6, s7 | L10 |
 | 73 | hms-y12-m4-v11 | How do you plan a whole training year so an athlete peaks at the right time, and why does a team's year look so different? | y12-fa2-g3-d2 | L11 |

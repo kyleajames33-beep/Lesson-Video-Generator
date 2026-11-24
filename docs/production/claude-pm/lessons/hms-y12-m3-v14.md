@@ -1,6 +1,6 @@
 # HMS Year 12 V14 (Health in an Australian and global context): changes and challenges to the healthcare system. What pressures are changing Australia's healthcare system now, and which ones are coming next? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m3-v14-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No figures.
 
 Narration 6,199 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
 
@@ -135,9 +135,9 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing. N
 - **Shared workforce (3).** Specialists and nurses working across both sectors; evidence that private activity growth can draw workforce from public hospitals (WE b2).
 - **Hospital function (4).** Falling average length of stay and rising same-day separations (AIHW *Admitted patient care*); hospital-in-the-home programs; volume-outcome relationships for complex surgery; lower-urgency emergency presentations that could be managed in primary care; long-stay older patients awaiting residential aged care.
 - **Surge (4, 8d).** High occupancy (above about 85%) associated with access block and reduced surge capacity; illustrative only, no threshold stated.
-- **Emerging (5).** Heat as a cause of death and illness in Australia; bushfire smoke health effects (2019–20 season); health sector emissions (about 7% of national emissions in Australian estimates; not stated); antimicrobial resistance threatening surgery and cancer care (AURA reports); youth mental health demand; workforce ageing and burnout.
+- **Emerging (5).** Heat as a cause of death and illness in Australia; bushfire smoke health effects (2019-20 season); health sector emissions (about 7% of national emissions in Australian estimates; not stated); antimicrobial resistance threatening surgery and cancer care (AURA reports); youth mental health demand; workforce ageing and burnout.
 - **Unmet need (6).** Utilisation data records services delivered, not unmet need (WE b1's limitation).
-- **Bulk billing (site correction 29).** GP bulk-billing rates fell in 2022–23 and rose after the November 2023 incentive increase; incentives extended to all patients from November 2025. Not narrated.
+- **Bulk billing (site correction 29).** GP bulk-billing rates fell in 2022-23 and rose after the November 2023 incentive increase; incentives extended to all patients from November 2025. Not narrated.
 - **No em dashes** in this file (searched by script).
 
 ## Memory aid check

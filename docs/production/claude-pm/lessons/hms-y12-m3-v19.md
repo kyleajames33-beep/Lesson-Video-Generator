@@ -1,6 +1,6 @@
 # HMS Year 12 V19 (Health in an Australian and global context): the SDGs I. What are the key features of the SDGs, and why does the health goal depend on the education goal? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m3-v19-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No figures.
 
 Narration 6,017 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 552 s including holds, two countdowns and the 45 s notes hold.
 

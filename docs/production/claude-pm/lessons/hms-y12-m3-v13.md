@@ -1,6 +1,6 @@
 # HMS Year 12 V13 (Health in an Australian and global context): the critical health consumer. How do you decide whom to believe about a health claim, in under a minute? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; the risk example uses illustrative numbers.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with no findings (24 Nov 2026, `../checks/hms-y12-m3-v13-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; the risk example uses illustrative numbers.
 
 Narration 5,939 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 547 s including holds, two countdowns and the 45 s notes hold.
 

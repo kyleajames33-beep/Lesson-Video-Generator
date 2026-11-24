@@ -1,6 +1,6 @@
 # HMS Year 12 V07 (Health in an Australian and global context): an ageing population. Is an ageing population a crisis for Australia's health, or a design problem we can solve? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, six reused (see Assets). No official figures (trends labelled "illustrative pattern").
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m3-v07-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, six reused (see Assets). No official figures (trends labelled "illustrative pattern").
 
 Narration 6,036 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 554 s including holds, two countdowns and the 45 s notes hold.
 

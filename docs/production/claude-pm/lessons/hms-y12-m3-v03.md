@@ -1,6 +1,6 @@
 # HMS Year 12 V03 (Health in an Australian and global context): a second group experiencing inequity. How do you analyse a second group experiencing health inequity, and why do the same causes keep appearing? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures (trends labelled "illustrative pattern").
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m3-v03-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures (trends labelled "illustrative pattern").
 
 Narration 6,118 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
 
