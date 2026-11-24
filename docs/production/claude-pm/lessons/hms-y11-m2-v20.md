@@ -1,8 +1,8 @@
 # HMS Year 11 V20 (The body and mind in motion): identity and motivation. Why do people start playing sport, and why is staying so much harder? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
 
-Narration 6,172 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 564 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,176 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 564 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the twentieth HMS video of the Year 11 focus area "The body and mind in motion", opening its last group (psychology and communities of exercise). Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v20**. Pre-design pack `../pre-design/hms/hms-y11-m2-v20.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson20.sa.html` (read in full, 24 Nov; sha256 `ac82376c08810653194fed01b1e88f7f2479910159b1fdff5229b7775469975d`). Previous design `hms-y11-m2-v19.md`.
 
@@ -48,9 +48,9 @@ Handoff: self-regulation and behaviour change (route entry hms-y11-m2-v21). **Ha
 Visual: opens on v19's handoff frame (the `EvidenceLadder` dimmed at the left, the card "why do people keep turning up?" at the right with its eight-week attendance strip, the v19 Next chip). The Next chip leaves and the heading rewrites to "Why is staying in sport harder than starting?" (60 px). On "why is staying in sport harder than starting?" the ladder fades out and the attendance strip lengthens to fifteen weeks. On "a story" a grey tag "a story, not data" (30 px). On "play in a park every afternoon" the new plate `hms-empty-playground-v1.png` lands at the left (about 760 px wide; empty swings, slide and grass in afternoon light); the strip's first five weeks fill with five ticks each, teal. On "paying them a little each time" a small coded coin chip sits on each tick of weeks six to ten. On "the payments stop" the coins vanish; on "the kids stop coming" weeks eleven to fifteen fill with about two ticks each; on "less than before any money was involved" an amber dashed line at the five-tick level shows the drop, with an amber question mark (34 px). On "a seventeen-year-old has played representative sport since she was eight" the playground slides small to the top left and the new plate `hms-knee-brace-kit-bag-v1.png` lands at the right (a hinged knee brace and crutches leaning on a packed kit bag with a folded team jersey, no number or crest); a quote card writes beside it, "she's an athlete", attributed "everyone she knows" (30 px). On "tears a knee ligament" a grey tag "out for a year". On "copes far worse than a teammate with the same injury" two small coping bars, "her" low and "teammate" higher. On "Is that really about the knee?" a second amber question mark over the brace. Hold one second.
 
 ### 2. who you think you are
-> Start with **personal identity**: your sense of who you are, built from the roles and groups you treat as defining. People tend to act like the person they believe they are. Compare two sentences. I want to get fitter is an intention, and it often loses to a cold morning. I'm someone who runs is an identity, and it usually doesn't. Identity works on sport in three ways. It decides whether you start, because people join where they can picture themselves belonging, so who already plays sends a signal. It decides whether you keep going. A bad session tells a committed player this happens to people like me, and tells a newcomer she was right to doubt. Same session, opposite conclusions. And it shapes performance. If your worth rides on the result, an ordinary game becomes a test of you, and that pressure can drag attention onto the movement.
+> Start with **personal identity**: your sense of who you are, built from the roles and groups you treat as defining. People tend to act like the person they believe they are. Compare two sentences. I want to get fitter is an intention, and it often loses to a cold morning. I'm someone who runs is an identity, and it holds up far better. Identity works on sport in three ways. It decides whether you start, because people join where they can picture themselves belonging, so who already plays sends a signal. It decides whether you keep going. A bad session tells a committed player this happens to people like me, and tells a newcomer she was right to doubt. Same session, opposite conclusions. And it shapes performance. If your worth rides on the result, an ordinary game becomes a test of you, and that pressure can drag attention onto the movement.
 
-Visual: board change to the identity ring (`IdentityRing`, solid from its first frame): an empty ring at the centre; three arrow slots to its right labelled later. On "personal identity" the ring fills with five segments one by one ("student", "friend", "sister", "musician", "netballer" in olive), gloss "personal identity: your sense of who you are" (34 px). On "Compare two sentences" two empty quote-card frames slide in side by side (Revision 2: the voice now frames the quotations, and the cards show them). On "I want to get fitter" the first quote card "I want to get fitter." attributed "16, new to running", with a grey tag "intention"; on "it often loses to a cold morning" the card dims under a small coded frost overlay. On "I'm someone who runs" a second card "I'm someone who runs." attributed "16, runs most mornings", tag "identity", staying bright. On "three ways" three arrows draw from the ring: "start", "keep going", "perform" (30 px). On "who already plays sends a signal" the approved `hms-club-noticeboard-v1.png` tiny beside "start", its blank team-list notices all one tone, and a grey tag "not for me?" with a recall tag "access (earlier)". On "A bad session" a single session card marked with a cross drops onto the "keep going" arrow and splits into two readings, "this happens to people like me" (teal, attributed "committed player") and "I was right to doubt" (grey, attributed "newcomer"); on "Same session, opposite conclusions" amber hand tag "same session, opposite conclusions" (42 px). On "If your worth rides on the result" the "netballer" segment pulses beside the "perform" arrow; on "drag attention onto the movement" v16's `AttentionWedge` tiny swings its plum wedge wide, grey recall tag "earlier". Hold one second.
+Visual: board change to the identity ring (`IdentityRing`, solid from its first frame): an empty ring at the centre; three arrow slots to its right labelled later. On "personal identity" the ring fills with five segments one by one ("student", "friend", "sister", "musician", "netballer" in olive), gloss "personal identity: your sense of who you are" (34 px). On "Compare two sentences" two empty quote-card frames slide in side by side (Revision 2: the voice now frames the quotations, and the cards show them). On "I want to get fitter" the first quote card "I want to get fitter." attributed "16, new to running", with a grey tag "intention"; on "it often loses to a cold morning" the card dims under a small coded frost overlay. On "I'm someone who runs" a second card "I'm someone who runs." attributed "16, runs most mornings", tag "identity", staying bright; on "holds up far better" the frost overlay touches its corner and clears. On "three ways" three arrows draw from the ring: "start", "keep going", "perform" (30 px). On "who already plays sends a signal" the approved `hms-club-noticeboard-v1.png` tiny beside "start", its blank team-list notices all one tone, and a grey tag "not for me?" with a recall tag "access (earlier)". On "A bad session" a single session card marked with a cross drops onto the "keep going" arrow and splits into two readings, "this happens to people like me" (teal, attributed "committed player") and "I was right to doubt" (grey, attributed "newcomer"); on "Same session, opposite conclusions" amber hand tag "same session, opposite conclusions" (42 px). On "If your worth rides on the result" the "netballer" segment pulses beside the "perform" arrow; on "drag attention onto the movement" v16's `AttentionWedge` tiny swings its plum wedge wide, grey recall tag "earlier". Hold one second.
 
 ### 3. when sport is the whole ring
 > Now the seventeen-year-old. A strong **athletic identity**, how much you see yourself as an athlete, is genuinely useful. It drives commitment and persistence. The risk comes when it's the only identity. That's **identity foreclosure**: committing so fully to one role that others never develop. Her injury hasn't just taken a season. It's taken her answer to who she is. The protection isn't caring less. It's having other identities that are real too, so a lost season is a serious loss, not a total one. And talking it through with someone she trusts helps.
@@ -146,12 +146,12 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6172 characters**, 14 scene files. At 13.3 characters per second the speech is about 464 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 564 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6176 characters**, 14 scene files. At 13.3 characters per second the speech is about 464 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 564 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (paid to play, and a lost year) | 566 |
-| 2. who you think you are | 845 |
+| 2. who you think you are | 849 |
 | 3. when sport is the whole ring | 552 |
 | 4. inside the activity, or outside it | 826 |
 | 5. chasing or avoiding: four kinds, not two | 576 |
@@ -164,40 +164,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 9d. feedback, item two | 385 |
 | 10. decision rule and handoff | 255 |
 | 11. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 2, the performance route's last sentence (keep the wedge silent; 7 covers performance); (2) scene 4, "Not every reward does this ... crowds it out" (keep the two tags silent); (3) scene 3, the last sentence. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (approved, not yet painted): `hms-club-noticeboard-v1.png` (m1-v11). Coded: attendance strip with coin chips, `IdentityRing`, quote cards, route arrows, `MotivationGrid` with durability bars and the "stops winning" switch, `NeedsTriad` with trays and gauge, three-route bars and age lines, ranked list (blank rows), question cards, countdown. Reused coded: v16's `AttentionWedge` and `StageTrack`, v12's squad board, v19's ladder (opening). No people.
-
-Need (new plates):
-1. `hms-empty-playground-v1.png`: scenes 1 and 4 (anchor).
-2. `hms-knee-brace-kit-bag-v1.png`: scenes 1 and 3.
-
-Kit gaps: `IdentityRing`, `MotivationGrid`, `NeedsTriad` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B20, the playground and the brace)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-empty-playground-v1.png` (2400 x 1300): a small suburban park playground in warm afternoon light: a swing set with two still swings, a low slide, a patch of grass and a bench, empty. No people, hands or faces anywhere in the image; no signs, text or brand marks.
-2. `hms-knee-brace-kit-bag-v1.png` (2000 x 1400): a hinged knee brace and a pair of crutches leaning against a packed sports kit bag on a bedroom floor, a folded team jersey on top of the bag. No people, hands or faces anywhere in the image; no numbers, names, crests or logos on the jersey, bag or brace.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b20-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B20)
-
-- **Learning review:** trace from Stage 5 PDHPE and m1-v10, v11 and m2-v12. Does the identity ring make foreclosure visible (a full olive ring that empties) rather than a definition? Does the "stops winning" switch let students sort motivation by durability on their own? Is the second axis clearly independent (four cells), not a renaming? Does the needs board give a coach actions, not three definitions? Is the injury handled with care (no graphic detail, help-seeking positive)? Are both attempts unseen and answerable from the stop?
-- **Science check:** every item in "Numbers or facts to verify", especially the overjustification conditions (expected, tangible, controlling rewards), the softened claims in 6 and 7, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B20, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v19's handoff frame and the closing matches hms-y11-m2-v21's route opening (the motivation grid is full, but a gap opens between intending and doing); axis colours consistent (intrinsic teal, extrinsic orange); no people, hands or faces (children only as ticks, quotes only as attributed cards, no names on the ranked list); no weight or body-shape talk; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Personal Identity and Motivation in Sport: Intrinsic, Extrinsic, Positive, Negative | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson20.sa.html
@@ -245,3 +212,11 @@ Review: `../checks/hms-y11-m2-v20-learning-review.md` and the module summary `..
 4. **Note, 9c overlaps scene 6 and v15.** Kept: 9c asks students to name two needs and propose an alternative. The hook plates are still unpainted.
 
 Narration changed in 2, 9b and 9d. Recount: 6,172 characters, about 564 s (Revision 1 about 561 s). `cues.py`: 0 findings. The joins with v19 and v21 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v20-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. The check passed with one note; it was cheap and removes an overclaim, so it is taken.
+
+1. **Note, scene 2: identity against a cold morning.** Taken with the checker's wording: "I'm someone who runs is an identity, and it holds up far better." (exercise identity predicts behaviour moderately; Rhodes and others 2016). On the new cue the frost overlay touches the identity card's corner and clears.
+
+Narration changed in scene 2. Recount: 6,176 characters, about 564 s (Revision 2: 6,172, about 564 s). `cues.py`: 0 findings. Joins with v19 and v21 unchanged.

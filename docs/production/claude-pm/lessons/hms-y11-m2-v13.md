@@ -1,8 +1,8 @@
 # HMS Year 11 V13 (The body and mind in motion): designing a training program with FITT. How do you turn 'train harder' into a program someone could actually follow, using FITT? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
 
-Narration 5,809 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 537 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,812 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 537 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the thirteenth HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v13**. Pre-design pack `../pre-design/hms/hms-y11-m2-v13.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson13.sa.html` (read in full, 24 Nov; sha256 `9e13cb02918a7deab0d68384ea438b03b259a6a5d4b40ba5c981609222e7a397`). Previous design `hms-y11-m2-v12.md`.
 
@@ -53,9 +53,9 @@ Visual: opens on v12's handoff frame (the four empty dials "F", "I", "T", "T" wi
 Visual: board change to the dials (`FittDials`, solid from its first frame): four dials in a row, each with a label below. On "FITT" the gloss "FITT: frequency, intensity, time, type" (34 px). Each dial lights and writes its label and question one per cue (30 px): on "Frequency: how often" "F: how often", a small teal recovery gap drawing between two session blocks on "how much recovery falls between sessions"; on "Intensity: how hard" "I: how hard", with v09 and v10's three system tones on its arc on "which decides the energy system trained"; on "Time: how long" "T: how long", with v12's session bar tiny inside it on "the work and rest inside the session"; on "type: which method" "T: which method", with v12's method chips tiny. On "Could a stranger run Monday's session" a blank `SessionCard` writes at the right, "Monday", with four empty lines (F, I, T, T). On "fails, because it isn't a number" the hook's "Go hard." line slides onto the intensity line and is crossed in red, tag "not a number"; on "fails, because it isn't a plan" the "Build up over the term." line slides beside the card and is crossed, tag "not a plan"; on "survives, because it's a frequency and a type" that line fills the frequency and type lines ("4 per week", "running") with green ticks, and the hook's question mark turns into a green tick. On "Every question you'd have to ask" the hook's six question chips drop onto the empty dials and card lines they belong to. Hold one second.
 
 ### 3. intensity, as a number
-> Intensity matters most, so it has to be a number. There are three ways. First, a percentage of **maximum heart rate**, estimated as two hundred and twenty minus age. For a sixteen-year-old, that's two hundred and four. Seventy to eighty-five per cent gives a target zone of about one hundred and forty-three to one hundred and seventy-three beats per minute. But the formula is a population average. A real sixteen-year-old's maximum can be ten or more beats either side, so treat the zone as a starting point. Second, for weights, a percentage of the heaviest load you can lift once. Third, perceived exertion, a score out of ten. It needs no equipment, so for a school squad with no monitors, it's the right choice, though beginners tend to under-rate hard efforts.
+> Intensity matters most, so it has to be a number. There are three ways. First, a percentage of **maximum heart rate**, estimated as two hundred and twenty minus age. For a sixteen-year-old, that's two hundred and four. Seventy to eighty-five per cent gives a target zone of about one hundred and forty-three to one hundred and seventy-three beats per minute. But the formula is a population average. A real sixteen-year-old's maximum can be ten or more beats either side, so treat the zone as a starting point. Second, for weights, a percentage of the heaviest load you can lift once. Third, perceived exertion, a score out of ten. It needs no equipment, so for a school squad with no monitors, it's the right choice, though beginners rate effort less accurately.
 
-Visual: board change to the heart-rate strip (g01 `WorkedExample` layout, solid from its first frame): the intensity dial small at the top left; the new plate `hms-heart-rate-watch-v1.png` at the right (about 420 px; a sports watch with a blank face on a bench, no wrist). On "three ways" three tabs write across the top: "% max heart rate", "% 1RM", "RPE" (30 px), the first lit. On "maximum heart rate" the gloss "maximum heart rate: the highest your heart can reach" (34 px); on "two hundred and twenty minus age" the equation strip writes "max HR ≈ 220 − age" (38 px). On "For a sixteen-year-old" the task strip writes "16 years old; zone 70 to 85%"; on "that's two hundred and four" stage 1 "220 − 16 = 204 bpm". On "Seventy to eighty-five per cent" stage 2 writes "0.70 × 204 = 142.8 ≈ 143" and "0.85 × 204 = 173.4 ≈ 173"; on "about one hundred and forty-three to one hundred and seventy-three beats per minute" a framed answer "target zone: about 143 to 173 bpm", gloss "target zone: the heart rates for the intended intensity" (30 px), and the watch face shows a coded band 143 to 173. On "the formula is a population average" a chip "220 − age is your real maximum" writes and is crossed in red; on "ten or more beats either side" an amber error bar spans about 192 to 216 around 204, tag "estimate: about ±10 to 12"; on "treat the zone as a starting point" the band's edges soften. On "a percentage of the heaviest load you can lift once" the second tab lights with a coded bar "1RM: the most you can lift once" and three bands: "above 85%: 1 to 5 reps, strength", "70 to 85%: 6 to 12, strength and size", "below 70%: 15+, endurance". On "perceived exertion, a score out of ten" the third tab lights with a 1 to 10 scale, "6 to 7 moderate", "9 to 10 maximal", gloss "RPE: rating of perceived exertion" (30 px); on "for a school squad with no monitors, it's the right choice" a green tick on the RPE tab; on "beginners tend to under-rate hard efforts" a small amber caveat "novices under-rate". Hold one second.
+Visual: board change to the heart-rate strip (g01 `WorkedExample` layout, solid from its first frame): the intensity dial small at the top left; the new plate `hms-heart-rate-watch-v1.png` at the right (about 420 px; a sports watch with a blank face on a bench, no wrist). On "three ways" three tabs write across the top: "% max heart rate", "% 1RM", "RPE" (30 px), the first lit. On "maximum heart rate" the gloss "maximum heart rate: the highest your heart can reach" (34 px); on "two hundred and twenty minus age" the equation strip writes "max HR ≈ 220 − age" (38 px). On "For a sixteen-year-old" the task strip writes "16 years old; zone 70 to 85%"; on "that's two hundred and four" stage 1 "220 − 16 = 204 bpm". On "Seventy to eighty-five per cent" stage 2 writes "0.70 × 204 = 142.8 ≈ 143" and "0.85 × 204 = 173.4 ≈ 173"; on "about one hundred and forty-three to one hundred and seventy-three beats per minute" a framed answer "target zone: about 143 to 173 bpm", gloss "target zone: the heart rates for the intended intensity" (30 px), and the watch face shows a coded band 143 to 173. On "the formula is a population average" a chip "220 − age is your real maximum" writes and is crossed in red; on "ten or more beats either side" an amber error bar spans about 192 to 216 around 204, tag "estimate: about ±10 to 12"; on "treat the zone as a starting point" the band's edges soften. On "a percentage of the heaviest load you can lift once" the second tab lights with a coded bar "1RM: the most you can lift once" and three bands: "above 85%: 1 to 5 reps, strength", "70 to 85%: 6 to 12, strength and size", "below 70%: 15+, endurance". On "perceived exertion, a score out of ten" the third tab lights with a 1 to 10 scale, "6 to 7 moderate", "9 to 10 maximal", gloss "RPE: rating of perceived exertion" (30 px); on "for a school squad with no monitors, it's the right choice" a green tick on the RPE tab; on "beginners rate effort less accurately" a small amber caveat "novices: less accurate". Hold one second.
 
 ### 4. the dials are linked
 > The four letters look like a list, but they're linked. Intensity trades against time: the harder the effort, the shorter you can hold it, exactly like the energy systems. Intensity trades against frequency, through recovery. You adapt during recovery, not during the session, so hard work every day doesn't add fitness. It piles up fatigue. And type limits the rest. A plyometric session is short and intense by its nature. And time includes the rest: forty minutes with eight minutes of work is a different session from forty minutes of running. So within one session, if you raise one dial a lot, name the one you lower to pay for it. A program where every dial goes up at once isn't ambitious. It's unplanned.
@@ -98,9 +98,9 @@ Visual: `FeedbackScene`: the card shrinks to the top; the equation strip fills o
 Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A 400 m runner's program reads: 'Four sessions a week, 60 minutes of continuous running at 70% of maximum heart rate. Progress by adding 10 minutes each week.' Every FITT variable is specified. Explain why this program is still unsuitable for the athlete. (4 marks)" Picture: the approved plate `hms-starting-blocks-v1.png` small beside a filled `SessionCard`, all four lines ticked. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 9d. feedback, item two
-> A four hundred lasts about a minute, near all-out, so it depends on the glycolytic system. This program trains the aerobic system instead: seventy per cent of maximum heart rate, continuous, no hard efforts. That's a specificity fault, which FITT can't catch. And adding ten minutes a week builds even more of the wrong quality. The classic mistake is passing it because every box is filled.
+> A four hundred lasts about a minute, near all-out, so it depends mainly on the glycolytic system. This program trains the aerobic system instead: seventy per cent of maximum heart rate, continuous, no hard efforts. That's a specificity fault, which FITT can't catch. And adding ten minutes a week builds even more of the wrong quality. The classic mistake is passing it because every box is filled.
 
-Visual: `FeedbackScene`: the ticked card stays; v09's 400 m window tiny with its plum band; a green-framed four-line answer writes one per cue (30 px): on "it depends on the glycolytic system" "1 demand: 45 to 60 s near-maximal, glycolytic"; on "This program trains the aerobic system instead" "2 program: 70%, continuous: aerobic base"; on "That's a specificity fault, which FITT can't catch" "3 type doesn't match the event: outside FITT", the scene 6 checklist's box 1 lighting red; on "adding ten minutes a week" "4 progression adds more of the wrong quality". On "classic mistake" a chip "every box filled, so it's fine" writes and is crossed in red, red hand tag "check the type against the event" (34 px). Settle one second.
+Visual: `FeedbackScene`: the ticked card stays; v09's 400 m window tiny with its plum band; a green-framed four-line answer writes one per cue (30 px): on "it depends mainly on the glycolytic system" "1 demand: 45 to 60 s near-maximal, glycolytic"; on "This program trains the aerobic system instead" "2 program: 70%, continuous: aerobic base"; on "That's a specificity fault, which FITT can't catch" "3 type doesn't match the event: outside FITT", the scene 6 checklist's box 1 lighting red; on "adding ten minutes a week" "4 progression adds more of the wrong quality". On "classic mistake" a chip "every box filled, so it's fine" writes and is crossed in red, red hand tag "check the type against the event" (34 px). Settle one second.
 
 ### 10. decision rule and handoff
 > So, to design any program, start from the demands, then set four numbers, each with a reason. Now press start on Monday's session. Within seconds, before anything has adapted, the heart rate is already climbing. What changes the moment you start exercising?
@@ -148,13 +148,13 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5809 characters**, 14 scene files. At 13.3 characters per second the speech is about 437 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 537 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5812 characters**, 14 scene files. At 13.3 characters per second the speech is about 437 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 537 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (the whole program) | 369 |
 | 2. four decisions, and the stranger test | 590 |
-| 3. intensity, as a number | 763 |
+| 3. intensity, as a number | 759 |
 | 4. the dials are linked | 712 |
 | 5. build up, one step at a time | 483 |
 | 6. what FITT doesn't check | 552 |
@@ -163,41 +163,10 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 9a. attempt one (an eighteen-year-old's zone) | 206 |
 | 9b. feedback, item one | 326 |
 | 9c. attempt two (the 400 m program) | 291 |
-| 9d. feedback, item two | 391 |
+| 9d. feedback, item two | 398 |
 | 10. decision rule and handoff | 257 |
 | 11. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 3, the 1RM sentence (keep the bands silent); (2) scene 6, the Year 12 sentence; (3) scene 4, the plyometric sentence. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov unless approved and not yet painted): `ma12-stopwatch-v1.png` (inspected; not needed on screen in this revision, held for the build if a timer is wanted); HMS plates approved: `hms-running-shoe-calendar-v1.png` (m1-v10), `hms-netball-ring-ball-v1.png` (v08), `hms-starting-blocks-v1.png` (v03). Coded: `FittDials` with links, `SessionCard`, heart-rate `WorkedExample`, intensity tabs, week strip with adaptation steps, progression chart, outside-FITT checklist, v10's `MatchStrip` (tiny), question cards, countdown. No people.
-
-Need (new plate):
-1. `hms-heart-rate-watch-v1.png`: scenes 3, 9a, 10; v14's opening.
-
-Kit gaps: `FittDials`, `SessionCard` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B13, the heart-rate watch)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-heart-rate-watch-v1.png` (1400 x 1400): a plain sports watch with a fabric strap lying on a wooden bench, its large round face blank and evenly lit (leave the face empty and flat so coded readouts can sit on it), a small optical sensor visible on the underside edge. No people, hands, wrists or faces anywhere in the image; no logos, numbers or text on the watch.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b13-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B13)
-
-- **Learning review:** trace from v12 and v10. Does the stranger test (2) make "a number, not an adjective" concrete before the numbers arrive? Is the heart-rate strip one stage at a time, with its limitation visible? Do the linked dials (4) show trade-offs rather than state them? Does 7 model the design order (demands first) that an exam "propose" answer needs? Is the hook's "which sentence survives?" answered clearly? Are both attempts unseen?
-- **Science check:** every item in "Numbers or facts to verify", especially the heart-rate estimate's error, the 1RM bands, the progression table (site correction 22), and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B13, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v12's handoff frame and the closing matches hms-y11-m2-v14's route opening (a FITT session card starts and a heart-rate readout begins to climb); every product and percentage is correct; one variable changes per progression step; no people, hands, wrists or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Designing a Training Program with FITT: Frequency, Intensity, Time and Type | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson13.sa.html
@@ -243,3 +212,13 @@ Review: `../checks/hms-y11-m2-v13-learning-review.md` and the module summary `..
 5. **Style.** Two en dashes in the decisions section (between "time" and "intensity", and between "frequency" and "intensity") became "and".
 
 Narration changed in 4, 6, 8 and 9d. Recount: 5,809 characters, about 537 s (Revision 1 about 528 s). `cues.py`: 0 findings. The joins with v12 and v14 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v13-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. The check passed with notes only; two were cheap and make the lines exact, so they are taken.
+
+1. **Note, scene 3: beginners and RPE.** Taken: "though beginners rate effort less accurately", caveat "novices: less accurate" (the direction of the error has limited evidence).
+2. **Note, 9d: the 400 m.** Taken: "so it depends mainly on the glycolytic system" (about 40 per cent of a 400 m is aerobic). The model answer already says "predominantly glycolytic".
+3. **Note, scene 3: 220 minus age in adolescents.** No change; the "starting point" framing covers it.
+
+Narration changed in scenes 3 and 9d. Recount: 5,812 characters, about 537 s (Revision 2: 5,809, about 537 s). `cues.py`: 0 findings. Joins with v12 and v14 unchanged.

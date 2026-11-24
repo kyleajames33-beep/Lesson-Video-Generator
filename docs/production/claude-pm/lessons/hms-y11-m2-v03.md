@@ -1,8 +1,8 @@
 # HMS Year 11 V03 (The body and mind in motion): biomechanical principles for safe movement. What physics are your bones and muscles already obeying, and how does knowing it make lifting and moving safer? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: four new, four reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: four new, four reused (see Assets). No official figures.
 
-Narration 6,176 characters (17 scene files, counted by script from lines starting "> " with bold markers removed), about 570 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,171 characters (17 scene files, counted by script from lines starting "> " with bold markers removed), about 570 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the third HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v03**. Pre-design pack `../pre-design/hms/hms-y11-m2-v03.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson03.sa.html` (read in full, 24 Nov; sha256 `028a4b8f41eff07a65d34dc0d043513675454bffe1bbefe5bb3d6dfd6d6d3ef7`). Previous design `hms-y11-m2-v02.md`.
 
@@ -58,9 +58,9 @@ Visual: board change to the motion board (solid from its first frame): three emp
 Visual: board change to the lever beam (solid from its first frame): the arm plate with overlay at the left, elbow at 90°; a `BeamView` beam drawn along the forearm. On "fulcrum" an amber triangle at the elbow, label "F: fulcrum (the joint)"; on "effort" a teal arrow up at the biceps tendon, label "E: effort (the muscle)"; on "resistance" a warm arrow down at the grip disc, label "R: resistance (the load)". On "Whatever sits in the middle names the class" three small coded beams write at the right, letters only. On "Fulcrum in the middle is first class" beam 1 "E F R", tag "first: nodding the head"; on "Resistance in the middle is second class" beam 2 "F R E", with reused `hms-lower-leg-muscles-v1.png` tiny and the calf pull drawn up from its tendon end, tag "second: rising onto the toes (calf effort, ball of the foot the fulcrum)"; on "Effort in the middle is third class" beam 3 "F E R", tag "third: biceps curl", and on "that's most of the body" beam 3 takes an amber frame, tag "most body levers". On "the biceps pulls five centimetres from the elbow" a distance bracket "5 cm" between F and E on the big beam; on "fifty newtons thirty-five centimetres out" a load arrow "50 N" and a bracket "35 cm". On "seven times that force" the `solveBeam` readout writes "effort × 5 = 50 × 35, so effort = 350 N" (44 px), the teal arrow growing to scale, tag "× 7"; both turning readouts show "1,750 N cm". On "speed and range at the hand" the forearm flexes: a short teal stroke at the tendon ("2 cm") against a long arc at the grip disc ("14 cm"), tag "third class: trades force for speed and range" (amber, 42 px). Hold one second.
 
 ### 4. balance, and five factors
-> Next, balance. Your **centre of gravity** is the point where your mass is evenly spread. The **line of gravity** drops straight down from it. Your **base of support** is the area inside your points of contact. You stay balanced while the line of gravity falls inside the base. Five things raise stability: a lower centre of gravity, a wider base, a line of gravity nearer the middle of the base, more mass, and more points of contact. That's what widening your feet changed. It made the base bigger.
+> Next, balance. Your **centre of gravity** is the point where your weight is balanced in every direction. The **line of gravity** drops straight down from it. Your **base of support** is the area inside your points of contact. You stay balanced while the line of gravity falls inside the base. Five things raise stability: a lower centre of gravity, a wider base, a line of gravity nearer the middle of the base, more mass, and more points of contact. That's what widening your feet changed. It made the base bigger.
 
-Visual: board change to the stability triangle (`StabilityTriangle`, solid from its first frame): a coded upright linkage with trunk line at the left, contact dots under it, a five-row factor card at the right, empty. On "centre of gravity" a dark dot at the hip level, gloss "centre of gravity: where mass is evenly spread" (30 px); on "line of gravity" a grey dashed line drops from it, gloss "line of gravity: straight down from it"; on "base of support" an olive polygon joins the contact dots, gloss "base of support: area inside the contact points". On "the line of gravity falls inside the base" a readout "inside" (green), and the linkage leans until the line crosses the polygon edge, readout "outside" (red), and it stops just as it would tip, then returns. Factor rows write one per cue (30 px), each demonstrated: on "a lower centre of gravity" "lower centre of gravity", the linkage crouches and the dot drops; on "a wider base" "wider base", the dots spread; on "nearer the middle of the base" "line nearer the middle", the line moves inwards; on "more mass" "more mass", the dot grows; on "more points of contact" "more contact points", a third dot adds and the polygon grows. On "That's what widening your feet changed" the hook's two dot pairs return with their polygons, the wide one larger, amber tag "bigger base" (42 px). Hold one second.
+Visual: board change to the stability triangle (`StabilityTriangle`, solid from its first frame): a coded upright linkage with trunk line at the left, contact dots under it, a five-row factor card at the right, empty. On "centre of gravity" a dark dot at the hip level, gloss "centre of gravity: the balance point of your weight" (30 px); on "line of gravity" a grey dashed line drops from it, gloss "line of gravity: straight down from it"; on "base of support" an olive polygon joins the contact dots, gloss "base of support: area inside the contact points". On "the line of gravity falls inside the base" a readout "inside" (green), and the linkage leans until the line crosses the polygon edge, readout "outside" (red), and it stops just as it would tip, then returns. Factor rows write one per cue (30 px), each demonstrated: on "a lower centre of gravity" "lower centre of gravity", the linkage crouches and the dot drops; on "a wider base" "wider base", the dots spread; on "nearer the middle of the base" "line nearer the middle", the line moves inwards; on "more mass" "more mass", the dot grows; on "more points of contact" "more contact points", a third dot adds and the polygon grows. On "That's what widening your feet changed" the hook's two dot pairs return with their polygons, the wide one larger, amber tag "bigger base" (42 px). Hold one second.
 
 ### 5. when less stability is the point
 > But more stability isn't always better, because stability resists any change in motion, including the one you want. A sprinter in the set position raises the centre of gravity and moves the line of gravity to the front edge of the base, on purpose. Being almost off balance forward is the fastest way to start.
@@ -73,9 +73,9 @@ Visual: the triangle stays. On "more stability isn't always better" a chip "more
 Visual: board change to the force board (solid from its first frame): three empty columns "make", "aim", "absorb". On "summation of forces" the gloss writes "summation: body parts in sequence, largest to smallest" (34 px); on "each starting as the last one peaks" a coded stacked trace draws, five speed humps labelled "legs", "hips", "trunk", "shoulder", "arm", each starting as the one before peaks, the last highest; on "legs, hips, trunk, then arm in a throw" each hump lights in turn. On "where it's applied" a coded ball under the aim column; on "Through the centre gives straight-line motion" an arrow through its centre and the ball slides straight; on "off centre gives spin" an arrow off-centre and the ball spins as it moves. On "spread it over a longer time and a larger area" the absorb column shows a coded force-time graph with two curves of equal area, one tall and narrow ("stiff landing"), one low and wide ("bent knees"), tag "same impulse, lower peak". On "Bending your knees as you land" the leg linkage lands and flexes, its quadriceps band lengthening (violet, "eccentric"), readout "time: longer"; on "Landing on the whole foot" a contact strip under the linkage lengthens from a point to a bar, readout "area: larger". Hold one second.
 
 ### 7. moving through water and air
-> In water and air, the main resistance is **drag**, and the biggest part is form drag, from the shape you present. A swimmer whose legs sink shows a bigger front to the water, so the same speed costs more effort. **Buoyancy**, the upward push of the water, helps hold the body level.
+> In water and air, the main resistance is **drag**, and the biggest part is form drag, from the shape you present. A swimmer whose legs sink shows a bigger front to the water, so the same speed costs more effort. **Buoyancy**, the upward push of the water, holds the body up.
 
-Visual: board change to the water band (solid from its first frame): a coded blue water band across the frame. On "drag" the gloss writes "drag: resistance to moving through a fluid" (34 px); on "form drag, from the shape you present" a horizontal linkage line (trunk and leg segments only, no body outline) glides left in the band with grey drag arrows at its front, and its frontal profile shows as a small olive bar at the right, readout "frontal area: small". Two grey screen chips "surface drag", "wave drag" sit small below (not narrated). On "legs sink" the leg segments angle downwards, the olive bar grows tall, the drag arrows thicken, readout "frontal area: large", and on "the same speed costs more effort" an effort readout climbs. On "Buoyancy" an upward teal arrow under the trunk, gloss "buoyancy: the water's upward push"; on "helps hold the body level" the legs rise to the line and the bar shrinks. With the legs level, an amber hand tag "position before effort" (42 px) writes silently (Revision 2: no longer spoken). Hold one second.
+Visual: board change to the water band (solid from its first frame): a coded blue water band across the frame. On "drag" the gloss writes "drag: resistance to moving through a fluid" (34 px); on "form drag, from the shape you present" a horizontal linkage line (trunk and leg segments only, no body outline) glides left in the band with grey drag arrows at its front, and its frontal profile shows as a small olive bar at the right, readout "frontal area: small". Two grey screen chips "surface drag", "wave drag" sit small below (not narrated). On "legs sink" the leg segments angle downwards, the olive bar grows tall, the drag arrows thicken, readout "frontal area: large", and on "the same speed costs more effort" an effort readout climbs. On "Buoyancy" an upward teal arrow under the trunk, gloss "buoyancy: the water's upward push"; on "holds the body up" the whole linkage lifts a little towards the surface while the legs stay angled (Revision 3, science check note: buoyancy acts near the chest, so on its own it lets the legs sink). Then, silently, the legs rise to the line as a small kick trace plays and the bar shrinks, grey chip "legs level: technique, not buoyancy alone" (30 px), and an amber hand tag "position before effort" (42 px) writes (Revision 2: no longer spoken). Hold one second.
 
 ### 8. safe lifting is a torque problem
 > Now the lift. The danger is **torque**, the turning effect of a force, which is the force times its distance from the pivot. Take a ten-kilogram box, about a hundred newtons. Held against your body, twenty centimetres from your lower spine, that's twenty newton metres. At arm's length, sixty centimetres out, it's sixty, three times the turning effect on your lower back. So keep the load close. Bending your knees is what lets you get close, so the torque stays small. Then the gluteus maximus and quadriceps do the work across big synovial joints. Keep your feet apart, so the line of gravity stays inside the base. And step to turn, rather than twist.
@@ -88,9 +88,9 @@ Visual: board change to the lifting worked example (solid from its first frame):
 Visual: board change to squat and gait (solid from its first frame): v01's leg linkage at the left in a squat, a walking run of v01's `SegmentLinkage` on a second linkage at the right (new use of the linkage here; v01 has no gait model, so the builder adds the walking keyframes). On "keep the line of gravity over the middle of the foot" the dashed line drops into the middle of the base strip, readout "inside, centred"; on "let the knees track over the toes" a top-down coded view shows the knee marker in line with the foot direction (green tick) and then pushed inwards (red-crossed chip "knee pushed sideways"), tag "the hinge loaded in its own plane". On "the heel lands first" the gait linkage's foot line contacts at its rear point; on "rolls through to the toes" the contact point travels forward along the foot line; on "the ankle, knee and hip bend slightly" three small arcs at the joints; on "spreading the impact over more time" a force-time curve lowers and widens, tag "absorb: more time". Hold one second.
 
 ### 10. efficiency, and specific needs
-> Biomechanics also makes movement more **efficient**, which means getting the result for the least energy. For a wheelchair user, the seat and axle position set the angle at which the arm meets the push rim. Set well, the shoulder works in its middle range, the deltoid and triceps push harder each stroke, fewer strokes are needed, and the shoulder takes less repeated strain. A running prosthesis is shaped to store energy on landing and return it at push-off. The principles don't change. Only the body parts available to apply them do.
+> Biomechanics also makes movement more **efficient**, which means getting the result for the least energy. For a wheelchair user, the seat and axle position set the angle at which the arm meets the push rim. Set well, the shoulder works in its middle range, each stroke is longer and smoother, fewer strokes are needed, and the shoulder takes less repeated strain. A running prosthesis is shaped to store energy on landing and return it at push-off. The principles don't change. Only the body parts available to apply them do.
 
-Visual: board change to the efficiency board (solid from its first frame). On "efficient" the gloss writes "efficiency: the result for the least energy" (38 px). On "a wheelchair user" new plate `hms-wheelchair-v1.png` (an empty manual wheelchair, side view, push rim visible; about 520 px tall) lands at the left; on "the seat and axle position" the axle and seat glow amber; on "the angle at which the arm meets the push rim" a coded arm linkage (upper arm and forearm lines only) reaches to the rim with a shoulder angle readout. On "Set well, the shoulder works in its middle range" the shoulder readout settles inside a green "mid-range" band; on "the deltoid and triceps push harder each stroke" v02's muscle colours glow on the arm lines, a force-per-stroke bar rises; on "fewer strokes are needed" a stroke counter readout drops (illustrative); on "less repeated strain" a grey tag "less repeated shoulder loading: reduces injury". On "A running prosthesis" new plate `hms-running-blade-v1.png` (a carbon running blade standing alone; about 460 px tall) at the right; on "store energy on landing" the blade compresses in a short coded loop, a stored-energy bar filling; on "return it at push-off" it springs back, the bar emptying into a forward arrow, tag "third law, used on purpose". On "The principles don't change" an amber hand tag "same principles, different structures" (42 px). Hold one second.
+Visual: board change to the efficiency board (solid from its first frame). On "efficient" the gloss writes "efficiency: the result for the least energy" (38 px). On "a wheelchair user" new plate `hms-wheelchair-v1.png` (an empty manual wheelchair, side view, push rim visible; about 520 px tall) lands at the left; on "the seat and axle position" the axle and seat glow amber; on "the angle at which the arm meets the push rim" a coded arm linkage (upper arm and forearm lines only) reaches to the rim with a shoulder angle readout. On "Set well, the shoulder works in its middle range" the shoulder readout settles inside a green "mid-range" band; on "each stroke is longer and smoother" the arm linkage sweeps a long, even arc along the rim, a stroke-length bar lengthening; on "fewer strokes are needed" a stroke counter readout drops (illustrative) and a chip writes "longer strokes, fewer of them"; on "less repeated strain" a grey tag "less repeated shoulder loading: reduces injury". On "A running prosthesis" new plate `hms-running-blade-v1.png` (a carbon running blade standing alone; about 460 px tall) at the right; on "store energy on landing" the blade compresses in a short coded loop, a stored-energy bar filling; on "return it at push-off" it springs back, the bar emptying into a forward arrow, tag "third law, used on purpose". On "The principles don't change" an amber hand tag "same principles, different structures" (42 px). Hold one second.
 
 ### 11. memory
 > Two things to remember. You stay balanced while the line of gravity stays inside your base. And safe lifting is a torque problem, so keep the load close.
@@ -167,20 +167,20 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6176 characters**, 17 scene files. At 13.3 characters per second the speech is about 464 s; add 34 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 570 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6171 characters**, 17 scene files. At 13.3 characters per second the speech is about 464 s; add 34 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 570 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (lift with your legs) | 357 |
 | 2. motion, and three laws | 554 |
 | 3. the body's levers | 609 |
-| 4. balance, and five factors | 487 |
+| 4. balance, and five factors | 503 |
 | 5. when less stability is the point | 310 |
 | 6. force: make it, aim it, absorb it | 545 |
-| 7. moving through water and air | 274 |
+| 7. moving through water and air | 266 |
 | 8. safe lifting is a torque problem | 651 |
 | 9. squatting and walking | 349 |
-| 10. efficiency, and specific needs | 534 |
+| 10. efficiency, and specific needs | 521 |
 | 11. memory | 153 |
 | 12a. attempt one (the tackle and the blocks) | 236 |
 | 12b. feedback, item one | 326 |
@@ -188,44 +188,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 12d. feedback, item two | 382 |
 | 13. decision rule and handoff | 189 |
 | 14. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 9, the walking sentence's last clause; (2) scene 2, the inertia example; (3) scene 7, the buoyancy sentence's second half. Revision 2 already cut scene 7's last sentence ("That's why a coach fixes body position before effort.", now a silent tag). Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have: `beam.ts` and `BeamView`; `WorkedExample`; v01's linkage; plates `hms-arm-bones-v1.png`, `hms-arm-muscles-overlay-v1.png`, `hms-lower-leg-muscles-v1.png`, `hms-thigh-quadriceps-v1.png`, `hms-vertebral-segment-v1.png`. Coded: stability triangle, motion tiles, law card, summation trace, force-time curves, water band, efficiency readouts, question cards, countdown. No people.
-
-Need (new plates):
-1. `hms-lifting-crate-v1.png`: scenes 1, 8, 12c.
-2. `hms-starting-blocks-v1.png`: scenes 2, 5, 12b. Reused later in sprint and energy-system videos.
-3. `hms-wheelchair-v1.png`: scene 10; later inclusion and participation videos.
-4. `hms-running-blade-v1.png`: scene 10.
-
-Kit gaps: `StabilityTriangle` in `hms-shared`; a body-lever wrapper over `BeamView` (plate under, beam along the bone), `LeverOnBone`.
-
-## Codex asset brief (HMS-Y11-B03, biomechanics)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no real brands or logos. No people, hands, feet, faces or body outlines anywhere in the image.
-
-1. `hms-lifting-crate-v1.png` (1400 x 1200): a sturdy wooden crate sitting on a plain warehouse or garage floor, slight three-quarter view, two cut-out hand slots in its sides (empty). No people, hands or faces anywhere in the image.
-2. `hms-starting-blocks-v1.png` (2000 x 1000): a pair of athletics starting blocks on a red running track lane, side view, the white start line just in front, no numbers or branding. No people, hands, feet or faces anywhere in the image.
-3. `hms-wheelchair-v1.png` (1600 x 1600): an empty everyday manual wheelchair in side view, the push rim on the large wheel clearly visible, the axle hub and seat visible, no logos. No people, hands or faces anywhere in the image.
-4. `hms-running-blade-v1.png` (1000 x 1600): a carbon-fibre running prosthesis (a J-shaped blade with its socket mount) standing alone against nothing, side view, matte dark carbon with a rubber sole pad, no logos. No people, limbs, hands or faces anywhere in the image.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b03-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B03)
-
-- **Learning review:** trace from v01 and v02. Four principle areas plus three applications is a heavy load: does each scene show one idea at a time, and does the hook's two questions get answered visibly (4, 8)? Is the forearm number (seven times) clear at speed (3)? Does the lifting example keep the task, equation and givens separate (8)? Is the specific-needs scene an application of the same principles, not an add-on (10)?
-- **Science check:** every item in "Numbers or facts to verify", the lever classes and examples, the stability factors, and the model answers' mark splits; the lifting hedge.
-
-## Codex error-check brief (HMS-Y11-B03, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; every number on screen matches "Numbers used" and the `solveBeam` run; the opening matches v02's handoff frame and the closing matches hms-y11-m2-v04's route opening (a working thigh muscle with a supply line drawn back towards the chest); no whole-body figure, hand, foot, skin or face; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Biomechanics for Safe Movement: Levers, Stability, Force and Safe Lifting | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson03.sa.html
@@ -275,3 +238,14 @@ Review: `../checks/hms-y11-m2-v03-learning-review.md` and the module summary `..
 5. **Note, density.** Kept; check scenes 2 and 6 at playback speed.
 
 Narration changed in 7, 8, 12a and 12b. Recount: 6,176 characters, about 570 s (Revision 1: about 569 s); at the cap, so any later addition needs a matching cut (reserves above). `cues.py`: 0 findings. The joins with v02 and v04 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v03-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 4: centre of gravity.** Accepted with the checker's wording: "Your centre of gravity is the point where your weight is balanced in every direction." Gloss: "centre of gravity: the balance point of your weight".
+2. **Should fix, scene 10: the wheelchair stroke.** Accepted: "Set well, the shoulder works in its middle range, each stroke is longer and smoother, fewer strokes are needed, and the shoulder takes less repeated strain." The force-per-stroke bar is replaced by a long, even arc along the rim with a stroke-length bar, and a chip "longer strokes, fewer of them".
+3. **Note, scene 7: buoyancy.** Taken, because the spoken clause was still present: "helps hold the body level" becomes "holds the body up". The linkage lifts a little with its legs still angled; the legs reach the line only silently, with a kick trace and a chip "legs level: technique, not buoyancy alone".
+4. **Note, scene 7: "the biggest part is form drag".** Not changed for length (the design is at the cap); true at most swimming and running speeds. If the line is touched at preview, say "usually the biggest part".
+
+Narration changed in scenes 4, 7 and 10. Recount: 6,171 characters, about 570 s (Revision 2: 6,176, about 570 s). `cues.py`: 0 findings. Joins with v02 and v04 unchanged.

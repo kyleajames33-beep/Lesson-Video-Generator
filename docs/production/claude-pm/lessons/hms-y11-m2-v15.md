@@ -1,8 +1,8 @@
 # HMS Year 11 V15 (The body and mind in motion): investigating training responses, and the fitness testing debate. How do you investigate training responses properly, and is fitness testing worth doing at all? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
 
-Narration 6,123 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,132 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the fifteenth HMS video of the Year 11 focus area "The body and mind in motion", closing its second group (energy, fuel, training and responses). Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v15**. Pre-design pack `../pre-design/hms/hms-y11-m2-v15.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson15.sa.html` (read in full, 24 Nov; sha256 `3e1e987d1858efe546a9aafd8eadd678410d6187dfe8ec4cacb3e2f14c9a50ac`). Previous design `hms-y11-m2-v14.md`.
 
@@ -54,9 +54,9 @@ Visual: opens on v14's handoff frame (the `TraceStack` at the left with its ambe
 Visual: board change to the cycle (m1-v07's `ResearchCycle`, solid from its first frame; a grey recall tag "earlier"), its seven stations writing round the loop on "question, method, sample, ethics, quality, findings and the next question" (30 px); the hook's table small at the right. On "Run this investigation round it" a marker sits on station 1. On "names what's measured, in whom, under what conditions, and compared with what" four empty slots write under the station: "measure", "who", "conditions", "compared with". On "Does six weeks of training" the question card writes in one move (34 px) and its parts fill the slots as spoken: "six weeks, 70 to 80% max HR" into "conditions" on "at seventy to eighty per cent of maximum heart rate", "resting heart rate" into "measure" on "lower resting heart rate", "16-year-olds" into "who" on "in sixteen-year-olds", "a matched group who don't train" into "compared with" on "compared with a matched group who don't train". On "control group" that slot outlines amber, gloss "control group: a similar group that doesn't get the training" (34 px). On "any change has endless possible causes" the hook's table gains a fan of grey arrows into its "after" column, labels "growth", "season", "sleep", "practice at the test" (30 px); the first of the hook's amber slots fills: "1 no comparison". Hold one second.
 
 ### 3. choosing a method
-> Next, the method. At school, you've got a few real options, and each has a weakness. A pulse count needs no equipment, but counting errors creep in, and after exercise the rate's already falling while you count. A heart rate monitor records the whole session, if the strap fits. A sub-maximal step test estimates aerobic fitness, but it relies on the maximum heart rate guess from earlier. A beep test is maximal, so it measures motivation as well as fitness, and carries the most risk. Choose the method that can answer your question, and say one thing it can't tell you.
+> Next, the method. At school, you've got a few real options, and each has a weakness. A pulse count needs no equipment, but counting errors creep in, and after exercise the rate's already falling while you count. A heart rate monitor records the whole session, if the strap fits. A sub-maximal step test estimates aerobic fitness, but many versions rely on the maximum heart rate guess from earlier. A beep test is maximal, so it measures motivation as well as fitness, and carries the most risk. Choose the method that can answer your question, and say one thing it can't tell you.
 
-Visual: the cycle stays small at the left, station 2 lit; a method board writes at the right, two columns "gives" and "weakness" (30 px), one row per cue. On "A pulse count needs no equipment" row "pulse count | any time, no equipment |"; on "counting errors creep in" the weakness cell "counting error"; on "the rate's already falling while you count" a small coded recovery curve dropping under a 60 s counting bracket, the weakness cell adding "falls during the count". On "A heart rate monitor records the whole session" row "monitor | continuous HR |" with `hms-heart-rate-watch-v1.png` tiny; on "if the strap fits" weakness "fit, availability". On "A sub-maximal step test estimates aerobic fitness" row "step test | estimate of aerobic fitness |"; on "the maximum heart rate guess from earlier" weakness "rests on 220 − age", v13's error bar tiny. On "A beep test is maximal" row "beep test | maximal field measure |" with the new plate `hms-beep-test-cones-v1.png` tiny; on "it measures motivation as well as fitness" weakness "motivation, highest risk". On "say one thing it can't tell you" an amber chip "name its weakness" beside station 2. Hold one second.
+Visual: the cycle stays small at the left, station 2 lit; a method board writes at the right, two columns "gives" and "weakness" (30 px), one row per cue. On "A pulse count needs no equipment" row "pulse count | any time, no equipment |"; on "counting errors creep in" the weakness cell "counting error"; on "the rate's already falling while you count" a small coded recovery curve dropping under a 60 s counting bracket, the weakness cell adding "falls during the count". On "A heart rate monitor records the whole session" row "monitor | continuous HR |" with `hms-heart-rate-watch-v1.png` tiny; on "if the strap fits" weakness "fit, availability". On "A sub-maximal step test estimates aerobic fitness" row "step test | estimate of aerobic fitness |"; on "the maximum heart rate guess from earlier" weakness "often rests on 220 − age", v13's error bar tiny. On "A beep test is maximal" row "beep test | maximal field measure |" with the new plate `hms-beep-test-cones-v1.png` tiny; on "it measures motivation as well as fitness" weakness "motivation, highest risk". On "say one thing it can't tell you" an amber chip "name its weakness" beside station 2. Hold one second.
 
 ### 4. the ethics of measuring bodies
 > Then ethics. You met consent and anonymity earlier. Measuring bodies adds more. Anyone under eighteen needs a parent or guardian's consent too, and everyone can stop at any time, with no consequence. A maximal test needs screening for health conditions first, and supervision, and nobody should be pushed past the point they want to stop. Results should be de-identified and stored securely. And testing in front of classmates isn't neutral. It can be humiliating, and for some students it touches body image. So ask more than whether they signed. Ask whether they could realistically have said no.
@@ -148,13 +148,13 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6123 characters**, 14 scene files. At 13.3 characters per second the speech is about 460 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6132 characters**, 14 scene files. At 13.3 characters per second the speech is about 461 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (a true conclusion, badly supported) | 402 |
 | 2. the question needs a comparison | 573 |
-| 3. choosing a method | 572 |
+| 3. choosing a method | 581 |
 | 4. the ethics of measuring bodies | 598 |
 | 5. quality, when the thing measured is a body | 724 |
 | 6. present honestly, conclude small, ask the next question | 682 |
@@ -166,38 +166,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 9d. feedback, item two | 367 |
 | 10. decision rule and handoff | 276 |
 | 11. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 3, the step test sentence (keep the row silent); (2) scene 6, the third further question; (3) scene 7, the elite athletes' "training for the test" clause. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov unless approved and not yet painted): `ma12-stopwatch-v1.png`; HMS plates approved: `hms-heart-rate-watch-v1.png` (v13), `hms-survey-clipboard-v1.png` and `hms-locked-file-box-v1.png` (m1-v07), `hms-school-gate-morning-v1.png` (m1-v09). Coded: results table, `ResearchCycle` and `TargetDiagram` (m1-v07), question slots, method board, ethics board, quality checks, dot strip, axis comparison, `DebateScale` with group cards and the four-question test card, question cards, countdown. No people.
-
-Need (new plate):
-1. `hms-beep-test-cones-v1.png`: scenes 3, 4, 9c.
-
-Kit gaps: `DebateScale` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B15, the beep test)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-beep-test-cones-v1.png` (2400 x 1200): an empty school gym floor with two parallel lines of marker cones about twenty metres apart, a small plain portable speaker on the floor at one end, painted court lines, soft indoor light. No people, hands or faces anywhere in the image; no logos, labels or text on the speaker.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b15-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B15)
-
-- **Learning review:** trace from m1-v07 (recalled, not assumed), v14 and v13. Is m1-v07's content recalled in single lines rather than re-taught? Does each station of the cycle add something specific to body data? Does the dot strip make "show the spread" and "the axis argues" visible? Is the debate argued both ways for four groups, and does the test card settle it rather than list opinions? Are the hook's three reasons and its "why is it still a failure" answered? Are both attempts unseen? Is the two-dotpoint pairing one clear learner question?
-- **Science check:** every item in "Numbers or facts to verify", especially the recovery-count advice, the ethics of testing minors, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B15, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v14's handoff frame and the closing matches hms-y11-m2-v16's route opening (the debate scale tips toward "how do people actually learn movement skills?"); the dot strip's values average −6; trio colours as m1-v07; no people, hands or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Investigating Training Responses and the Fitness Testing Debate | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson15.sa.html
@@ -243,3 +212,11 @@ Review: `../checks/hms-y11-m2-v15-learning-review.md` (pass with notes) and the 
 3. **Note, 9c leans on scene 3.** Kept: 9c also needs an ethical fault and two fixes, so it still asks for application. The beep test plate is still unpainted.
 
 No narration changed: 6,123 characters, about 560 s. `cues.py`: 0 findings. The joins with v14 and v16 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v15-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. The check passed with one note; it was cheap and makes the line exact, so it is taken.
+
+1. **Note, scene 3: the step test.** Taken with the checker's wording: "but many versions rely on the maximum heart rate guess from earlier"; on-screen weakness "often rests on 220 − age" (some step tests, such as the Queens College test, predict from recovery heart rate instead).
+
+Narration changed in scene 3. Recount: 6,132 characters, about 561 s (Revision 2: 6,123, about 560 s). `cues.py`: 0 findings. Joins with v14 and v16 unchanged.

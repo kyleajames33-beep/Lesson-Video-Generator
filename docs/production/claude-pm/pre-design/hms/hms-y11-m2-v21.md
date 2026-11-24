@@ -1,4 +1,4 @@
-# HMS pre-design: Almost everyone intends to exercise more, so why do so few change, and what actually closes the gap?
+# HMS pre-design: Most people intend to exercise more, so why do so many fail to change, and what actually closes the gap?
 
 Video **hms-y11-m2-v21** (route order 39). Site lesson: Year 11 L21, Everyone intends to. Almost nobody changes what they do.. [Page](https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson21.sa); local file `C:\Users\kygs\teaching-app-fix\subjects\health-movement-science\year11\module2\lesson21.sa.html` (sha256 `0faf143d1d21da69`, read-only).
 

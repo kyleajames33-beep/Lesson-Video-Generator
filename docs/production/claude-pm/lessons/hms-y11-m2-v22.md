@@ -1,8 +1,8 @@
 # HMS Year 11 V22 (The body and mind in motion): communities of exercise. Why do thousands of people turn up to a 5.30 am bootcamp they don't enjoy? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets). No official figures.
 
-Narration 5,940 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 545 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,920 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 543 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the twenty-second and last HMS video of the Year 11 focus area "The body and mind in motion", closing its psychology group and Year 11. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v22**. Pre-design pack `../pre-design/hms/hms-y11-m2-v22.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson22.sa.html` (read in full, 24 Nov; sha256 `3d3eb08aa11c200a3ad0e0af8c972c97d3d8a22790895f9019f6e27fe1afd922`). Previous design `hms-y11-m2-v21.md`.
 
@@ -48,14 +48,14 @@ Handoff: Year 12, health in an Australian and global context (route entry hms-y1
 Visual: opens on v21's handoff frame (the `IfThenCard` "when: Tuesday 6 am / where: the park / how: 30 minutes", someone else's identical card beside it, the coded park outline, the v21 Next chip). The Next chip leaves and the heading rewrites to "Why do people turn up to a bootcamp they don't enjoy?" (60 px). On "why do people turn up to a bootcamp they don't enjoy?" the cards shrink to the top right. On "A buys a treadmill for home" the new plate `hms-home-treadmill-v1.png` lands at the left (about 640 px; a treadmill in a quiet living room corner); three green tags write one per phrase: on "free to use" "free to use", on "ready any hour" "any hour", on "needs no travel" "no travel". On "B joins a group in a park" the new plate `hms-dawn-park-mats-v1.png` lands at the right (about 760 px; exercise mats and kettlebells laid in a row on dewy grass under a dawn sky); grey tags on "cold", "dark" and "costs money". On "Twelve months later" two attendance strips draw under the plates (grey tag "a story"); on "A has stopped" A's strip empties after a few months; on "B is still going" B's runs on. On "Why did the worse option win?" an amber question mark between the plates (34 px). On "welcomed her warmly for three weeks" B's strip shows three bright weeks with a small "welcome!" quote card attributed "the group"; on "nobody noticed whether she came" the following weeks turn pale with a grey "?" over them, a second amber question mark. Hold one second.
 
 ### 2. contemporary forms, and what they share
-> The syllabus asks first what **contemporary forms of exercise** are: the newer ways people exercise, often outside traditional club sport. Group fitness classes remove the need for skill, because someone tells you what to do. Community runs and walks are free, weekly and open to anyone. There are bootcamps in parks, social and modified sport, and app-based challenges and online classes. And there's exercising alone, with a gym card or home gear, the most convenient form, and the one people tend to drop. The reason is in the design. Convenience removes other people. What the successful forms share isn't the exercise. It's the structure: a fixed time someone else set, a group that meets whether you feel like it or not, no skill needed to start, and people who'd notice if you weren't there.
+> The syllabus asks first what **contemporary forms of exercise** are: the newer ways people exercise, often outside traditional club sport. Group fitness classes remove the need for skill, because someone tells you what to do. Community runs and walks are free, weekly and open to anyone. There are bootcamps in parks, social and modified sport, and app-based challenges and online classes. And there's exercising alone, with a gym card or home gear, the most convenient form, and the one many people drop. The reason is in the design. Convenience removes other people. What the successful forms share isn't the exercise. It's the structure: a fixed time someone else set, a group that meets whether you feel like it or not, no skill needed to start, and people who'd notice if you weren't there.
 
-Visual: board change to the forms table (solid from its first frame): two columns "form" and "what it removes" (30 px), six empty rows; the two plates small at the top. On "contemporary forms of exercise" the gloss "contemporary forms of exercise: newer ways of exercising, often outside club sport" (34 px). Rows fill one per cue: on "Group fitness classes" row 1 "group fitness classes | needing a skill; deciding what to do"; on "Community runs and walks" row 2 "community runs and walks | cost; 'only for runners'"; on "bootcamps in parks" row 3 "outdoor group training | gym cost and intimidation", the park plate glowing; on "social and modified sport" row 4 "social, modified sport | the all-or-nothing standard"; on "app-based challenges and online classes" row 5 "digitally connected | distance; timetables". On "exercising alone" row 6 "alone, flexible | other people, entirely" (grey), the treadmill plate glowing; on "the one people tend to drop" a small retention bar on row 6 sits lowest. On "Convenience removes other people" row 6's "other people" outlines amber; a chip "convenient means sticky" writes and is crossed in red; the hook's first question mark turns into a green tick. On "It's the structure" a framed box writes under the table and fills one per cue (30 px): on "a fixed time someone else set" "fixed time, set by others"; on "a group that meets whether you feel like it or not" "meets regardless"; on "no skill needed to start" "no skill needed"; on "people who'd notice if you weren't there" "someone notices". Hold one second.
+Visual: board change to the forms table (solid from its first frame): two columns "form" and "what it removes" (30 px), six empty rows; the two plates small at the top. On "contemporary forms of exercise" the gloss "contemporary forms of exercise: newer ways of exercising, often outside club sport" (34 px). Rows fill one per cue: on "Group fitness classes" row 1 "group fitness classes | needing a skill; deciding what to do"; on "Community runs and walks" row 2 "community runs and walks | cost; 'only for runners'"; on "bootcamps in parks" row 3 "outdoor group training | gym cost and intimidation", the park plate glowing; on "social and modified sport" row 4 "social, modified sport | the all-or-nothing standard"; on "app-based challenges and online classes" row 5 "digitally connected | distance; timetables". On "exercising alone" row 6 "alone, flexible | other people, entirely" (grey), the treadmill plate glowing; on "the one many people drop" a small retention bar on row 6 sits lowest. On "Convenience removes other people" row 6's "other people" outlines amber; a chip "convenient means sticky" writes and is crossed in red; the hook's first question mark turns into a green tick. On "It's the structure" a framed box writes under the table and fills one per cue (30 px): on "a fixed time someone else set" "fixed time, set by others"; on "a group that meets whether you feel like it or not" "meets regardless"; on "no skill needed to start" "no skill needed"; on "people who'd notice if you weren't there" "someone notices". Hold one second.
 
 ### 3. norms, and two kinds of cohesion
-> Inside a group, members shape each other. That's **group dynamics**, and its strongest tool is the **norm**, an unwritten rule about what people here do. If everyone finishes the session, finishing takes no decision, and stopping early does. Groups also hold together in two ways. **Task cohesion** is unity around a shared goal, and it's linked more closely to performance. **Social cohesion** is liking each other and valuing the time together, and it's linked more closely to turning up. A group needs both. A team with a shared goal that dislikes each other performs while results hold, then fractures. A group that loves its coffee after training but shares no standard has fun, and doesn't improve. So a group that gets on well won't automatically perform.
+> Inside a group, members shape each other. That's **group dynamics**, and its strongest tool is the **norm**, an unwritten rule about what people here do. If everyone finishes the session, finishing takes no decision, and stopping early does. Groups also hold together in two ways. **Task cohesion** is unity around a shared goal. **Social cohesion** is liking each other and valuing the time together, and it's strongly linked to turning up. Both are linked to performance. A group needs both. A team with a shared goal that dislikes each other performs while results hold, then fractures. A group that loves its coffee after training but shares no standard has fun, and doesn't improve. So a group that gets on well won't automatically perform.
 
-Visual: board change to the norm line and bars (solid from its first frame). On "group dynamics" the gloss "group dynamics: how members influence each other" (34 px). On "norm" a plum norm line draws across a session timeline labelled "what people here do", gloss "norm: an unwritten rule about what people here do" (34 px). On "If everyone finishes the session" a row of grey dots (group members) run to the end of the timeline; on "finishing takes no decision" a teal dot runs with them, tag "no decision"; on "stopping early does" a small decision gate (from v21) appears only at an early exit, tag "decision needed". On "two ways" the `CohesionBars` draw at the right: two empty bars. On "Task cohesion" the ink bar labels "task", gloss "task cohesion: united by a shared goal" (34 px), tag under it "→ performance"; on "Social cohesion" the amber bar labels "social", gloss "social cohesion: liking each other, valuing the time" (34 px), tag "→ turning up". On "A group needs both" the pair outlines. On "A team with a shared goal that dislikes each other" a second pair: task high, social low; on "performs while results hold, then fractures" a small results line stays high then drops, the task bar cracking. On "loves its coffee after training but shares no standard" a third pair: social high, task low, with a quote card "best part's the coffee" attributed "19, social running group"; on "doesn't improve" a flat improvement line. On "a group that gets on well won't automatically perform" a chip "a group that gets on well will perform" writes and is crossed in red. Hold one second.
+Visual: board change to the norm line and bars (solid from its first frame). On "group dynamics" the gloss "group dynamics: how members influence each other" (34 px). On "norm" a plum norm line draws across a session timeline labelled "what people here do", gloss "norm: an unwritten rule about what people here do" (34 px). On "If everyone finishes the session" a row of grey dots (group members) run to the end of the timeline; on "finishing takes no decision" a teal dot runs with them, tag "no decision"; on "stopping early does" a small decision gate (from v21) appears only at an early exit, tag "decision needed". On "two ways" the `CohesionBars` draw at the right: two empty bars. On "Task cohesion" the ink bar labels "task", gloss "task cohesion: united by a shared goal" (34 px); on "Social cohesion" the amber bar labels "social", gloss "social cohesion: liking each other, valuing the time" (34 px); on "strongly linked to turning up" a tag under it "→ turning up". On "Both are linked to performance" a bracket draws over both bars, tag "both → performance" (Revision 3). On "A group needs both" the pair outlines. On "A team with a shared goal that dislikes each other" a second pair: task high, social low; on "performs while results hold, then fractures" a small results line stays high then drops, the task bar cracking. On "loves its coffee after training but shares no standard" a third pair: social high, task low, with a quote card "best part's the coffee" attributed "19, social running group"; on "doesn't improve" a flat improvement line. On "a group that gets on well won't automatically perform" a chip "a group that gets on well will perform" writes and is crossed in red. Hold one second.
 
 ### 4. being expected beats intending
 > So why does B keep going? A group changes the decision itself. Skipping a solo session costs nothing, and nobody knows. Skipping when someone's waiting means letting a person down, and that cost arrives just when motivation is lowest. You don't have to enjoy a five-thirty alarm when someone's waiting for you. The group also keeps an if-then plan for you: Tuesday at six, in the park. It offers support: a lift, advice, company when it's hard. And it confirms the identity. Being named and expected by other runners makes I'm someone who runs feel true. That's **belonging**, being known, expected, and missed when you're not there. Now the hard answer. Welcome B for three weeks, then stop noticing, and she'll quietly drift away. A warm welcome brings people in. Being missed keeps them. One message to someone who didn't come is a real retention plan.
@@ -108,7 +108,7 @@ Heading on screen: "Key notes: what to write in your book".
 
 1. Contemporary forms: classes, community runs, bootcamps, modified sport, apps.
 2. They work through structure: a set time, a group, no skill needed, someone notices.
-3. Norms; task cohesion (performance) and social cohesion (turning up). Need both.
+3. Norms; task cohesion and social cohesion both help; social keeps people coming.
 4. A group makes commitment external, keeps the cue, gives support and identity.
 5. Limits: exclusion, cost and access, harmful norms, loafing, dependence.
 
@@ -126,8 +126,8 @@ Feedback spoken lengths about 23 s (8b) and 27 s (8d) by script; time the exact 
 ## Numbers or facts to verify
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing.
-- **Forms (2).** Contemporary forms as listed (site); solo, convenient exercise showing poorer adherence than group exercise (Carron, Hausenblas and Mack, 1996 meta-analysis; check the wording "the one people tend to drop" is fair).
-- **Cohesion (3).** Task and social cohesion (Carron); task cohesion more closely linked to performance and both to adherence (Carron, Colman, Wheeler and Stevens, 2002, and adherence reviews).
+- **Forms (2).** Contemporary forms as listed (site); solo, convenient exercise showing poorer adherence than group exercise (Carron, Hausenblas and Mack, 1996 meta-analysis). Revision 3 says "the one many people drop" (science check note: some supported home-based programs adhere well).
+- **Cohesion (3).** Task and social cohesion (Carron); both linked to performance (the overall cohesion-performance relationship is moderate to large; Carron, Colman, Wheeler and Stevens, 2002) and social cohesion strongly linked to adherence (adherence reviews). Revision 3 (root ruling 7): the separate task and social effect sizes were not confirmed, so the video no longer says task cohesion is "more closely" linked to performance.
 - **Belonging (4).** Social support's three forms; being expected as an external commitment; belonging and retention (softened from the site's "strongest single predictor").
 - **Performance (5).** Social facilitation (Zajonc, 1965: dominant responses; helps well-learned, can impair new skills); social loafing (Ringelmann; Latané, Williams and Harkins, 1979; reduced by identifiability).
 - **Limits (6).** Exclusion by identity and by cost, transport and time; harmful norms; dependence.
@@ -142,13 +142,13 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5940 characters**, 13 scene files. At 13.3 characters per second the speech is about 447 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 545 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5920 characters**, 13 scene files. At 13.3 characters per second the speech is about 445 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 543 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (the treadmill and the park) | 514 |
-| 2. contemporary forms, and what they share | 794 |
-| 3. norms, and two kinds of cohesion | 746 |
+| 2. contemporary forms, and what they share | 791 |
+| 3. norms, and two kinds of cohesion | 729 |
 | 4. being expected beats intending | 851 |
 | 5. how groups improve performance, and two catches | 670 |
 | 6. who the group leaves out | 607 |
@@ -159,40 +159,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 8d. feedback, item two | 365 |
 | 9. decision rule, close and handoff | 395 |
 | 10. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 2, "There are bootcamps in parks, social and modified sport, and app-based challenges and online classes" (keep the rows silent); (2) scene 6, the dependence sentence; (3) scene 4, the support sentence (keep the tags silent). Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (approved, not yet painted): `hms-club-noticeboard-v1.png` (m1-v11), `hms-health-reports-stack-v1.png` (m1-v03). Coded: attendance strips, forms table, structure box, norm line with dots, `CohesionBars`, `SupplyBoard`, support tags, roster lines, message card, four-route bars, facilitation arrows, loafing bars, limits circle, national report chart (illustrative, handoff), question cards, countdown. Reused coded: v21's `IfThenCard` and decision gate, v20's `IdentityRing` and needs sockets, v18's `FeedbackAxes`, v16's `StageTrack`. No people.
-
-Need (new plates):
-1. `hms-dawn-park-mats-v1.png`: scenes 1, 2, 4 (anchor).
-2. `hms-home-treadmill-v1.png`: scenes 1, 2, 4.
-
-Kit gaps: `CohesionBars`, `SupplyBoard` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B22, the park and the treadmill)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-dawn-park-mats-v1.png` (2400 x 1300): a row of eight exercise mats laid on dewy grass in a suburban park at dawn, a kettlebell at the head of each mat, a few cones, a dim path light and a pale sky. No people, hands or faces anywhere in the image; no brand marks, signs or text.
-2. `hms-home-treadmill-v1.png` (1800 x 1400): a home treadmill in a tidy living-room corner, its console blank, a towel folded over the handrail, a window with daylight. No people, hands or faces anywhere in the image; no brand marks, numbers or text on the console.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b22-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B22)
-
-- **Learning review:** trace from v20 and v21. Does the forms table end in the shared structure, not a list? Are the four concepts (group dynamics, cohesion, social interaction, belonging) kept distinct on screen? Does the supply board answer "why the worse option won" by mechanism? Is "being missed keeps them" visible (a strip that relights after one message)? Does 6 give an honest, non-preachy set of limits with no diet or body talk? Are both attempts unseen and answerable from the stop? Does the Year 11 close land in one sentence without a course label on screen?
-- **Science check:** every item in "Numbers or facts to verify", especially the adherence claims for solo against group exercise, the cohesion-performance link, social facilitation and loafing, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B22, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v21's handoff frame and the closing matches hms-y12-m3-v01's route opening (a national health report chart: life expectancy rising for decades, with "healthy for whom?"); bar colours consistent (task ink, social amber); no people, hands or faces (groups only as dots, rosters and mats; no figures in the park); no values on the handoff chart beyond decade ticks; no em dash, no U+2061; no module number, year label or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Communities of Exercise: Group Cohesion, Belonging and Contemporary Forms of Exercise | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson22.sa.html
@@ -239,3 +206,12 @@ Review: `../checks/hms-y11-m2-v22-learning-review.md` and the module summary `..
 3. **Note, plates.** Both hook plates are still unpainted; the supply board carries the comparison if they are late.
 
 Narration changed in 4, 8a and 8b. Recount: 5,940 characters, about 545 s (Revision 1 about 541 s). `cues.py`: 0 findings. The joins with v21 and y12-m3-v01 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v22-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 3 and key note 3: task and social cohesion.** Reworded so nothing depends on the separate Carron (2002) effect sizes, which were not confirmed (root ruling 7). Narration, with the checker's wording: "Task cohesion is unity around a shared goal. Social cohesion is liking each other and valuing the time together, and it's strongly linked to turning up. Both are linked to performance. A group needs both." On screen the "→ performance" tag under the task bar is gone; "→ turning up" lands under the social bar on its cue, and a bracket over both bars reads "both → performance". Key note 3: "Norms; task cohesion and social cohesion both help; social keeps people coming." The two failure pairs and the crossed chip "a group that gets on well will perform" still work. The facts section is updated.
+2. **Note, scene 2: solo exercise.** Taken: "the one many people drop" (some supported home-based programs adhere well).
+
+Narration changed in scenes 2 and 3. Recount: 5,920 characters, about 543 s (Revision 2: 5,940, about 545 s). `cues.py`: 0 findings. Joins with v21 and the next module's opening unchanged.

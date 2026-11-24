@@ -353,7 +353,7 @@ v(m='y11/module2', n=20, q="Why do people start playing sport, and why is stayin
   models=['intro:motivation two axes (intrinsic-extrinsic, positive-negative)', 'intro:competence, autonomy, relatedness'],
   visual="Coded two-axis motivation grid with example cards; painted plates: a medal and ribbon, a club jersey on a hook, a park with a playground and a sticker chart (overjustification case, no people).",
   overlap="None.")
-v(m='y11/module2', n=21, q="Almost everyone intends to exercise more, so why do so few change, and what actually closes the gap?",
+v(m='y11/module2', n=21, q="Most people intend to exercise more, so why do so many fail to change, and what actually closes the gap?",
   open="the motivation grid from v20 is full, but a gap opens between intending and doing",
   start="Start from the intention-behaviour gap (named in hms-y11-m1-v12) and why information campaigns disappoint.",
   stop="Stop when students can explain why self-regulation is essential, the three phases (goal setting with outcome, performance and process goals; self-monitoring; self-evaluation), implementation intentions, relapse planning, and self-regulation inside performance.",

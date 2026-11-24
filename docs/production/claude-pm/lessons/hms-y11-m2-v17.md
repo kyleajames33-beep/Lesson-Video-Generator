@@ -1,8 +1,8 @@
 # HMS Year 11 V17 (The body and mind in motion): classifying motor skills. How do you classify any movement skill, and why does the classification change how it should be practised? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, five reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, five reused (see Assets). No official figures.
 
-Narration 6,143 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,135 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 559 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the seventeenth HMS video of the Year 11 focus area "The body and mind in motion", the second of its skill-learning group. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v17**. Pre-design pack `../pre-design/hms/hms-y11-m2-v17.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson17.sa.html` (read in full, 24 Nov; sha256 `31f81de002f7fd8df976f9e0aa19ba34a58eca03c5895d09b0b36d38a604ca49`). Previous design `hms-y11-m2-v16.md`.
 
@@ -48,9 +48,9 @@ Handoff: practice methods, performance elements and feedback (route entry hms-y1
 Visual: opens on v16's handoff frame (the `StageTrack` across the upper third with its wedges and the free-throw marker in the autonomous zone, four empty sliding scales beneath it, the free-throw and tennis plates tiny at either side, the v16 Next chip). The Next chip leaves and the heading rewrites to "How do you classify any movement skill?" (60 px). On "how do you classify any movement skill?" the four empty scales brighten and the track fades up and out. On "a netball shooter" the approved plate `hms-netball-ring-ball-v1.png` lands at the left (about 700 px tall, never stretched); a chip "training: one spot, unguarded" writes at the right (30 px). On "forty-five shots out of fifty" a green readout "45 / 50" (42 px). On "In matches, from the same spot" a second chip "match: same spot"; on "about half" an amber readout "about 25 / 50". On "nerves, or tiredness" two grey tags "nerves?" and "tiredness?" write under the readouts. On "a third reason" an amber question mark beside a third, empty tag (34 px); on "what kind of task each one is, not how hard it is" the empty tag gains a dotted outline. On "a triple jump in parts" the new plate `hms-triple-jump-pit-v1.png` lands small at the lower right with three short tick marks over it; on "mostly keep a swimming stroke whole" the approved `hms-pool-start-block-v1.png` lands beside it with one unbroken arc, and a second amber question mark between them. Hold one second.
 
 ### 2. which muscles? gross and fine
-> The syllabus gives four ways to classify a skill, and each one asks a different question. The first asks which muscles do the work. A **gross** skill uses large muscle groups for force and whole-body coordination, like running or a tackle. A **fine** skill uses small muscle groups for precision, like a dart throw or a golf putt. Most sport skills are both. Her shot uses her legs and trunk for force, and her fingertips to control the release. So ask which part limits it. When you tire, force drops a little, but precision drops a lot. So a skill limited by its fine part should sometimes be practised tired, not only fresh.
+> The syllabus gives four ways to classify a skill, and each one asks a different question. The first asks which muscles do the work. A **gross** skill uses large muscle groups for force and whole-body coordination, like running or a tackle. A **fine** skill uses small muscle groups for precision, like a dart throw or a golf putt. Most sport skills are both. Her shot uses her legs and trunk for force, and her fingertips to control the release. So ask which part limits it. When you tire, precision often drops faster than force. So a skill limited by its fine part should sometimes be practised tired, not only fresh.
 
-Visual: board change to the continua (`SkillContinua`, solid from its first frame): the four scales stacked, all titles and end labels blank, sliders grey at the centre; the netball plate small at the top left. On "four ways to classify a skill" four title slots pulse once, one per scale. On "which muscles do the work" scale 1 enlarges and its title writes "which muscles?" (34 px). On "gross" the left end label "gross" writes, gloss "gross: large muscles, force and coordination" (34 px), and text tags "running", "tackle" sit near that end. On "fine" the right end label "fine" writes, gloss "fine: small muscles, precision" (34 px), and the new plate `hms-golf-green-hole-v1.png` lands tiny near the right end beside a text tag "dart throw". On "Most sport skills are both" a chip "a basketball shot is purely gross" writes and is crossed in red. On "her legs and trunk for force" the netball slider splits into two linked markers, a dark red "legs and trunk" marker toward gross; on "her fingertips to control the release" an amber "release" marker toward fine. On "which part limits it" an amber ring circles the release marker, tag "the limiting part" (30 px). On "force drops a little, but precision drops a lot" the coded fatigue pair writes beside the scale (grey tag "illustrative pattern"): a dark red "force" bar falls from 100% to about 90%, an amber "precision" bar to about 70%. On "practised tired, not only fresh" a green chip "some practice done tired". Hold one second.
+Visual: board change to the continua (`SkillContinua`, solid from its first frame): the four scales stacked, all titles and end labels blank, sliders grey at the centre; the netball plate small at the top left. On "four ways to classify a skill" four title slots pulse once, one per scale. On "which muscles do the work" scale 1 enlarges and its title writes "which muscles?" (34 px). On "gross" the left end label "gross" writes, gloss "gross: large muscles, force and coordination" (34 px), and text tags "running", "tackle" sit near that end. On "fine" the right end label "fine" writes, gloss "fine: small muscles, precision" (34 px), and the new plate `hms-golf-green-hole-v1.png` lands tiny near the right end beside a text tag "dart throw". On "Most sport skills are both" a chip "a basketball shot is purely gross" writes and is crossed in red. On "her legs and trunk for force" the netball slider splits into two linked markers, a dark red "legs and trunk" marker toward gross; on "her fingertips to control the release" an amber "release" marker toward fine. On "which part limits it" an amber ring circles the release marker, tag "the limiting part" (30 px). On "precision often drops faster than force" the coded fatigue pair writes beside the scale (grey tag "illustrative pattern"): a dark red "force" bar and an amber "precision" bar fall together from 100%, the precision bar falling faster and further. On "practised tired, not only fresh" a green chip "some practice done tired". Hold one second.
 
 ### 3. where does it start and end? continuous, discrete, serial
 > The second question is where the movement starts and ends. A **continuous** skill has no clear start or finish. The end of one cycle is the start of the next, like running or swimming. A **discrete** skill is one short unit with a clear start and end, like a penalty kick or a free throw. A **serial** skill is a chain of discrete parts in a fixed order, like a gymnastics routine or a triple jump. This scale decides whether a skill can be broken into parts for practice. Serial skills can. Continuous skills are mostly taught as a whole, because the rhythm is the skill. Kick and pull drills are practice parts, rejoined to the full stroke quickly. That answers the second puzzle. And with a serial skill, practise the joins too, because that's where it fails. A jumper who drills the hop, the step and the jump separately still has to arrive at each phase with the right speed.
@@ -118,7 +118,7 @@ Memory card (the scene 7 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (8a to 8d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Both are written for this video; neither repeats the netball shooter (1, 4), the putt or the lay-up (6).
 
-1. (8a, 3 marks; Revision 2: the closed-open scheme replaces gross-fine, whose consequence in scene 2 is about fine skills.) Closed, with a reason (stable water and lane, no interference) and its consequence (repeat one consistent stroke) (1 mark); continuous, with a reason (strokes cycle without a clear start or end) (1 mark); its consequence (mostly whole practice, varied by rate and distance; any part drill rejoined quickly) (1 mark). Classic mistake crossed: splitting the stroke like a serial skill.
+1. (8a, 3 marks; Revision 2: the closed-open scheme replaces gross-fine, whose consequence in scene 2 is about fine skills.) Closed, with a reason (stable water and lane, no interference) and its consequence (repeat one consistent stroke) (1 mark); continuous, with a reason (strokes cycle without a clear start or end) (1 mark); its consequence (mostly whole practice, varied by rate and distance; any part drill rejoined quickly) (1 mark). Classic mistake crossed: splitting the stroke like a serial skill. Marking note (Revision 3, science check): some texts place rowing toward the closed end rather than fully closed (wind and water change), so "mostly closed" with that reason also earns the mark.
 2. (8c, 4 marks.) Match passing classified as open, with reading and choosing (1 mark); the drill classified as closed (fixed partner and cones) (1 mark); speed and a countdown add pressure but not unpredictability, so the perceptual demand is still unpractised (1 mark); a change that adds a decision from unpredictable information (live defender, two receivers, a randomised call) with its reason (1 mark). Classic mistake crossed: "harder = open".
 
 Feedback spoken lengths about 23 s (8b) and 27 s (8d) by script; time the exact audio.
@@ -126,7 +126,7 @@ Feedback spoken lengths about 23 s (8b) and 27 s (8d) by script; time the exact 
 ## Numbers or facts to verify
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing.
-- **Gross and fine (2).** Muscle-group size and precision as the criterion; most sport skills mixed; fatigue degrading precision more than force production (a teaching generalisation; check the wording "force drops a little, but precision drops a lot" is defensible).
+- **Gross and fine (2).** Muscle-group size and precision as the criterion; most sport skills mixed; fatigue degrading precision more than force production (a teaching generalisation). Revision 3 (science check note): fatigue also reduces force substantially, so the line is now "precision often drops faster than force" and the bars carry no percentages.
 - **Continuous, discrete, serial (3).** Definitions; triple jump and gymnastics routine as serial; part practice suiting serial skills and not continuous ones; transitions as the failure point.
 - **Open and closed (4).** Environmental predictability as the criterion; perceptual demand; closed practice building the movement for beginners.
 - **Pacing (5).** Sprint start as externally paced and closed; self-paced skills allowing a routine; externally paced skills relying on anticipation and reaction.
@@ -142,12 +142,12 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6143 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6135 characters**, 13 scene files. At 13.3 characters per second the speech is about 461 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 559 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (forty-five from fifty) | 474 |
-| 2. which muscles? gross and fine | 619 |
+| 2. which muscles? gross and fine | 611 |
 | 3. where does it start and end? continuous, discrete, serial | 868 |
 | 4. how predictable? closed, open, and the shooter | 998 |
 | 5. who sets the timing? self-paced and externally paced | 785 |
@@ -159,40 +159,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 8d. feedback, item two | 374 |
 | 9. decision rule and handoff | 304 |
 | 10. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 3, the last sentence (keep the speed readout silent); (2) scene 5, the pressure sentences (keep the time bars silent); (3) scene 2, "like running or a tackle". Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (approved, not yet painted): `hms-netball-ring-ball-v1.png` (v08), `hms-free-throw-line-v1.png` (v16), `hms-tennis-racquet-ball-v1.png` (v16), `hms-starting-blocks-v1.png` (v03), `hms-pool-start-block-v1.png` (v14). Coded: `SkillContinua` with sliders and profiles, arcs (looping, single, chained), fatigue pair, two-halves bar, practice cards, cone sketch, question cards, countdown. Reused coded: v16's `StageTrack`. No people.
-
-Need (new plates):
-1. `hms-golf-green-hole-v1.png`: scenes 2, 4, 6.
-2. `hms-triple-jump-pit-v1.png`: scenes 1, 3.
-
-Kit gaps: `SkillContinua` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B17, the putt and the pit)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-golf-green-hole-v1.png` (2000 x 1300): a golf ball resting on a putting green a short way from the hole, the flagstick in the hole with a plain flag, soft grass texture. No people, hands or faces anywhere in the image; no numbers, logos or text on the flag or ball.
-2. `hms-triple-jump-pit-v1.png` (2400 x 1200): an athletics runway ending in a white take-off board and a raked sand pit, seen from the side and slightly above, empty. No people, hands or faces anywhere in the image; no footprints shaped like feet, no distance numbers or text.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b17-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B17)
-
-- **Learning review:** trace from v16. Does each scale arrive with its question and its practice consequence, not as a pair of labels? Does the two-halves bar make "she trained half the task" visible? Is the beginner qualification clear enough that students don't conclude closed practice is wrong? Does "harder isn't open" land before attempt 2 asks for it? Are both attempts unseen and answerable from the stop?
-- **Science check:** every item in "Numbers or facts to verify", especially the fatigue generalisation (2), the netball timing claim (9), and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B17, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v16's handoff frame and the closing matches hms-y11-m2-v18's route opening (the four continua set for the netball shot: open, discrete, externally paced); profile colours consistent (drill teal, match orange, putt blue-grey, lay-up plum); no people, hands or faces (no players on the cone sketch, no defender figure); no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Classifying Motor Skills: Gross and Fine, Open and Closed, Discrete, Serial, Continuous, Self-Paced | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson17.sa.html
@@ -238,3 +205,12 @@ Review: `../checks/hms-y11-m2-v17-learning-review.md` and the module summary `..
 4. **Note, plates.** Five named plates are still unpainted; the coded scales carry scenes 2 to 6 if they are late.
 
 Narration changed in 1, 3, 8a and 8b. Recount: 6,143 characters, about 560 s (Revision 1 about 554 s). `cues.py`: 0 findings. The joins with v16 and v18 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v17-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. The check passed with notes only; both were cheap, so they are taken.
+
+1. **Note, scene 2: fatigue, force and precision.** Taken with the checker's wording: "When you tire, precision often drops faster than force." The two illustrative bars now fall together, precision faster and further, with no percentages (fatigue reduces force substantially too). The facts section is updated.
+2. **Note, 8b: rowing on the closed-open scale.** Added a marking note: "mostly closed", reasoned from wind and water changes, also earns the mark.
+
+Narration changed in scene 2. Recount: 6,135 characters, about 559 s (Revision 2: 6,143, about 560 s). `cues.py`: 0 findings. Joins with v16 and v18 unchanged.

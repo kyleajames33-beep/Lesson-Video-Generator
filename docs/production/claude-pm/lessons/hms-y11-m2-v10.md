@@ -1,8 +1,8 @@
 # HMS Year 11 V10 (The body and mind in motion): the aerobic system and the interplay of the energy systems. What can the aerobic system do that the other two cannot, and how do all three run at the same time? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Nothing recorded. Voice: the Google voice. Plates: none new, seven reused (see Assets). No official figures.
 
-Narration 6,077 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,082 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the tenth HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v10**. Pre-design pack `../pre-design/hms/hms-y11-m2-v10.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson10.sa.html` (read in full, 24 Nov; sha256 `9a488c328b68f170052cbe0bacf68cbd912f8cac829a433766cb1fc902774ce7`). Previous design `hms-y11-m2-v09.md`.
 
@@ -78,9 +78,9 @@ Visual: board change to the oxygen curve (`OxygenCurve`, solid from its first fr
 Visual: the curve stays (the steady-state version); a vertical marker "stop" writes at 6 min. On "you stop" the dashed demand drops at once to rest; on "your oxygen use stays high" the teal supply curve falls slowly, fast then slow from the model. On "excess post-exercise oxygen consumption" the tail between the curve and the resting line shades teal, gloss "EPOC: extra oxygen used after exercise" (34 px), with a small grey tag "older name: oxygen debt". On "The extra oxygen pays for recovery" a five-row receipt writes beside the tail, one row per cue (30 px): on "rebuilds phosphocreatine and ATP" "1 PCr and ATP rebuilt" (v09's recovery curve tiny); on "clears the lactate" "2 lactate cleared"; on "reloads oxygen onto haemoglobin and onto myoglobin" "3 haemoglobin and myoglobin reloaded", gloss "myoglobin: the muscle's own oxygen store" (30 px); then row "4 raised heart rate, breathing, temperature, hormones" writes silently (Revision 2: the last uses are no longer spoken, to shorten the list) (the receipt groups the site's five uses as four rows; PCr and ATP share a row). The hook's second question mark turns into a green tick on "So recovery isn't doing nothing". On "It costs energy" amber hand tag "recovery is work too" (42 px). On "a light cool-down clears by-products faster than sitting down" a chip "sit down to recover" writes and is crossed in red, and a small green chip "light cool-down" with v09's lactate traces tiny (the steeper one lit). Hold one second.
 
 ### 8. all three at once
-> Now the part of the dot point most answers leave out: **interplay**. All three systems run all the time. What changes is the share each one supplies, and intensity and duration set those shares, moment by moment. Take a netball match. Every sprint, jump and change of direction is mostly ATP-PCr. A long passage of hard defence pushes glycolysis up. But most of seventy minutes is walking and jogging, so across the whole match, the aerobic system supplies most of the energy.
+> Now the part of the dot point most answers leave out: **interplay**. All three systems run all the time. What changes is the share each one supplies, and intensity and duration set those shares, moment by moment. Take a netball match. Every sprint, jump and change of direction is mostly ATP-PCr. A long passage of hard defence pushes glycolysis up. But most of a sixty-minute match is walking and jogging, so across the whole match, the aerobic system supplies most of the energy.
 
-Visual: board change to the match (`MatchStrip`, solid from its first frame): `hms-netball-ring-ball-v1.png` small at the left (court, ring, ball; no players), a two-minute window of match time across the board with a stacked share band (orange, plum, teal from the shares model) and a grey tag "illustrative pattern". On "interplay" the gloss "interplay: all three systems contribute at once; only the shares change" (34 px). On "All three systems run all the time" a scan line sweeps the band and all three colours stay above zero, chip "the systems take turns" written and crossed in red. On "intensity and duration set those shares" two small dials "intensity" and "duration" write under the band. On "Every sprint, jump and change of direction is mostly ATP-PCr" short orange spikes rise in the band at each effort (2 to 5 s), with a chip "efforts: 2 to 5 s"; on "A long passage of hard defence pushes glycolysis up" a 25 s stretch where the plum share swells; on "most of seventy minutes is walking and jogging" the troughs between efforts shade teal and a chip "most of 70 min: low intensity"; on "the aerobic system supplies most of the energy" a whole-match share bar writes beside the strip, teal the largest segment, label "whole match: mostly aerobic". Hold one second.
+Visual: board change to the match (`MatchStrip`, solid from its first frame): `hms-netball-ring-ball-v1.png` small at the left (court, ring, ball; no players), a two-minute window of match time across the board with a stacked share band (orange, plum, teal from the shares model) and a grey tag "illustrative pattern". On "interplay" the gloss "interplay: all three systems contribute at once; only the shares change" (34 px). On "All three systems run all the time" a scan line sweeps the band and all three colours stay above zero, chip "the systems take turns" written and crossed in red. On "intensity and duration set those shares" two small dials "intensity" and "duration" write under the band. On "Every sprint, jump and change of direction is mostly ATP-PCr" short orange spikes rise in the band at each effort (2 to 5 s), with a chip "efforts: 2 to 5 s"; on "A long passage of hard defence pushes glycolysis up" a 25 s stretch where the plum share swells; on "most of a sixty-minute match is walking and jogging" the troughs between efforts shade teal and a chip "most of 60 min: low intensity"; on "the aerobic system supplies most of the energy" a whole-match share bar writes beside the strip, teal the largest segment, label "whole match: mostly aerobic". Hold one second.
 
 ### 9. why a netballer trains aerobically
 > So why should a netballer train aerobically, when no single effort lasts more than a few seconds? Because the aerobic system is what recovers them between efforts. In every walk and jog, it rebuilds phosphocreatine and clears by-products. A fitter player rebuilds faster, so they reach the next sprint with more fast fuel. That doesn't show up as a faster single sprint. It shows up in the last quarter, as sprints that stay sharp. Aerobic fitness in team sport is about the recovery, not the running.
@@ -149,7 +149,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 - **Deficit and EPOC (6, 7).** Oxygen uptake reaching steady state within about 1 to 2 min (moderate intensity); warm-up reduces the deficit; above the maximal steady state no steady state is reached; EPOC components (PCr and ATP resynthesis, lactate, myoglobin and haemoglobin reloading, raised heart rate, ventilation, temperature and hormones); active recovery clears lactate faster.
 - **Interplay (8, 9, 11d).** Netball efforts of about 2 to 5 s; most match time at low intensity; aerobic supplies most total energy in team sports; aerobic fitness speeds PCr resynthesis between efforts (repeat-sprint ability); 1500 m (about 3.5 to 4.5 min) mostly aerobic overall (roughly three-quarters or more), with large anaerobic contributions at the start and finish.
 - **Model numbers.** Supply at 90 s: 0.2 + 0.8(1 − e^(−3)) = 0.96 of a demand of 1.0 (about 95%). PCr after 30 s rest with τ = 43.3 s: 50%; with τ = 30 s: 63%. Match gauges late in the window (efforts using 40%, about 35 s rest): less fit settles near 55%, fitter near 70% (steady-state values of the refill model; the builder reads them from the run). Aerobic share at 100 s: 0.85(1 − e^(−100/70)) = 0.65 of the total, i.e. passing half before 2 min.
-- **Numbers used.** 32 km, 42 km, 100 m, more than 30 (about 30 to 36) and 2 ATP, about 2 min, hours, about 85%, 12 to 48 h, 1 to 3 days, 37 and 17 kJ per gram, 90 min to 2 h, about 90 min, 1 to 2 min, 2 to 5 s, 70 min, 70% and 55%, 1500 m, about 4 min.
+- **Numbers used.** 32 km, 42 km, 100 m, more than 30 (about 30 to 36) and 2 ATP, about 2 min, hours, about 85%, 12 to 48 h, 1 to 3 days, 37 and 17 kJ per gram, 90 min to 2 h, about 90 min, 1 to 2 min, 2 to 5 s, 60 min (four 15-minute quarters; Revision 3), 70% and 55%, 1500 m, about 4 min.
 - **Official figures.** None.
 - **No em dashes** in this file (searched by script).
 
@@ -160,7 +160,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6077 characters**, 16 scene files. At 13.3 characters per second the speech is about 457 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6082 characters**, 16 scene files. At 13.3 characters per second the speech is about 457 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -171,7 +171,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 5. the wall | 489 |
 | 6. the gap at the start | 559 |
 | 7. the oxygen after you stop | 420 |
-| 8. all three at once | 472 |
+| 8. all three at once | 477 |
 | 9. why a netballer trains aerobically | 501 |
 | 10. memory | 145 |
 | 11a. attempt one (go out hard) | 207 |
@@ -180,33 +180,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 11d. feedback, item two | 348 |
 | 12. decision rule and handoff | 213 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts (the first draft ran 6,212 characters; already taken: "and more again from fat", two hook phrases). Further: (1) scene 3, the last two sentences (keep the ticks silent); (2) scene 7, the myoglobin gloss spoken (keep it on screen); (3) scene 6, the warm-up clause (keep the ghost curve silent). Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov unless approved and not yet painted): `b6a-mitochondrion-v1.png`, `m8-lungs-healthy-v1.png`, `m8-liver-v1.png`, `m8-skeletal-muscle-v1.png`; HMS plates approved: `hms-heart-cutaway-v1.png` (v04), `hms-barbell-and-shoes-v1.png` (v08, shoes half only), `hms-netball-ring-ball-v1.png` (v08), `hms-track-finish-line-v1.png` (v08, tiny). Coded: `EnergyTable`, `TradeoffScale`, step chain, `DeliveryChain`, `FuelPipes` with intensity dial and pace trace, `OxygenCurve`, EPOC receipt, `MatchStrip` with PCr gauges, `ShareCurves` with fuel gauges, question cards, countdown. No people.
-
-Need: no new plates.
-
-Kit gaps: `OxygenCurve`, `FuelPipes`, `MatchStrip` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B10)
-
-No new plates. Codex confirms only that the reused plates above are present at their paths and unchanged once painted, and that the shoes half of `hms-barbell-and-shoes-v1.png` can be cropped without the barbell showing.
-
-## Codex learning review and science check brief (HMS-Y11-B10)
-
-- **Learning review:** trace from v09, v04, v05 and v06. Does 3 make "delivery" the cause of the column's numbers rather than a seventh fact? Does the fuel-pipe picture explain the wall before the wall is shown? Is the oxygen deficit (6) clearly the anaerobic systems' job? Are both hook question marks answered where they turn into ticks (5, 7)? Does 9 answer the netball question through recovery? Are both attempts unseen and answerable from the stop?
-- **Science check:** every item in "Numbers or facts to verify", especially the ATP yield wording (site correction 19), the 85% ceiling, the EPOC components, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B10, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v09's handoff frame and the closing matches hms-y11-m2-v11's route opening (the three-system stack from v10 with a fuel gauge under each system); ATP-PCr orange, glycolytic plum, aerobic teal throughout; every model readout agrees with the Simulation values; no people, hands or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "The Aerobic Energy System and Interplay: Hitting the Wall, Oxygen Deficit and EPOC | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson10.sa.html
@@ -251,3 +225,12 @@ Review: `../checks/hms-y11-m2-v10-learning-review.md` and the module summary `..
 3. **Note, scene 7's EPOC list.** The first four uses are spoken; row 4 (heart rate, breathing, temperature, hormones) writes silently.
 
 Narration changed in 2, 4 and 7. Recount: 6,077 characters, about 561 s (Revision 1 about 565 s). `cues.py`: 0 findings. The joins with v09 and v11 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v10-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 8: the length of a netball match.** Accepted (root ruling 6): "But most of a sixty-minute match is walking and jogging". On screen "most of 60 min: low intensity". A match is four 15-minute quarters (World Netball rules). The numbers list is updated.
+2. **Note, scene 2: "it leads from about two minutes".** Kept as the HSC convention, consistent with v09.
+
+Narration changed in scene 8. Recount: 6,082 characters, about 561 s (Revision 2: 6,077, about 561 s). `cues.py`: 0 findings. Joins with v09 and v11 unchanged.

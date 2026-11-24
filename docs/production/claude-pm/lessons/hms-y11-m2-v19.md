@@ -1,6 +1,6 @@
 # HMS Year 11 V19 (The body and mind in motion): researching skill acquisition. How do you find out what the evidence really says about learning a sport skill, when everyone has an opinion? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, four reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with no findings (24 Nov 2026, `../checks/hms-y11-m2-v19-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, four reused (see Assets). No official figures.
 
 Narration 6,023 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 551 s including holds, two countdowns and the 45 s notes hold.
 

@@ -1,6 +1,6 @@
 # HMS Year 11 V04 (The body and mind in motion): the respiratory and circulatory systems. How do the lungs and the heart work together to get oxygen to a working muscle and carbon dioxide out? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, eleven reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m2-v04-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, eleven reused (see Assets). No official figures.
 
 Narration 6,174 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
 

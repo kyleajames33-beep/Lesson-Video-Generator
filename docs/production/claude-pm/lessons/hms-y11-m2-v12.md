@@ -1,8 +1,8 @@
 # HMS Year 11 V12 (The body and mind in motion): aerobic and anaerobic training. What makes a training session aerobic or anaerobic, and how should training differ for a solo runner and a team? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, five reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Nothing recorded. Voice: the Google voice. Plates: none new, five reused (see Assets). No official figures.
 
-Narration 6,125 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 563 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,135 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 563 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the twelfth HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v12**. Pre-design pack `../pre-design/hms/hms-y11-m2-v12.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson12.sa.html` (read in full, 24 Nov; sha256 `638bd91e42a9a160febf70687ce2699851cbb4d15edd4b7e86800fb0ca8b9e3e`). Previous design `hms-y11-m2-v11.md`.
 
@@ -48,14 +48,14 @@ Handoff: FITT (route entry hms-y11-m2-v13). **Handoff frame (hms-y11-m2-v13 open
 Visual: opens on v11's handoff frame (the `FuelMixGraph` with its intensity axis curled into the "training intensity" dial, the v11 Next chip). The Next chip leaves and the heading rewrites to "What makes a session aerobic or anaerobic?" (60 px). On "watch a coach set it badly" the graph fades, leaving the dial. On "An under-seventeen football squad" the approved plate `hms-empty-training-field-v1.png` settles across the lower two-thirds (an oval at dusk, cones, a ball bag; no players); on "twelve laps of the pitch, at a steady pace" a coded lap counter "12 laps" writes and a dashed loop traces the oval twelve times quickly, the dial's needle parked at a low steady setting; on "every Tuesday, all season" a coded calendar strip writes with the same tick on every Tuesday. On "Everyone does exactly the same thing" a squad board writes at the right with eleven identical rows, each "12 laps, same pace" (30 px). On "three different reasons" three empty amber reason slots (34 px); on "one player it nearly suits" an amber question mark beside the squad board. Hold three seconds of quiet with the session bar and the three empty slots on screen, so viewers can look for the reasons (Revision 2), then the board change.
 
 ### 2. the rest is part of the prescription
-> All three systems work in every session, so "aerobic" or "anaerobic" names the system that's pushed hard enough to adapt. Two things decide it, and neither is the sport's name. First, intensity: below about eighty-five per cent of maximum effort, the aerobic system leads. Second, and more often missed, the **work-to-rest ratio**. Earlier, you explained the six sprints. Now treat them as training. Thirty-metre sprints, about five seconds each, with three minutes' rest, is about one to thirty-six. Every sprint starts fresh, so that trains speed and power. Cut the rest to twenty seconds, one to four, and phosphocreatine never refills. Glycolysis takes more of the load, and now you're training repeat sprints and lactate tolerance. The rest is part of the prescription.
+> All three systems work in every session, so "aerobic" or "anaerobic" names the system that's pushed hard enough to adapt. Two things decide it, and neither is the sport's name. First, intensity: below about eighty-five per cent of maximum effort, the aerobic system leads. Second, and more often missed, the **work-to-rest ratio**. Earlier, you explained the six sprints. Now treat them as training. Thirty-metre sprints, about five seconds each, with three minutes' rest, is about one to thirty-six. Every sprint starts fresh, so that trains speed and power. Cut the rest to twenty seconds, one to four, and phosphocreatine never fully refills. Glycolysis takes more of the load, and now you're training repeat sprints and lactate tolerance. The rest is part of the prescription.
 
-Visual: board change to the dial (`WorkRestDial`, solid from its first frame) with a session bar timeline beside it (work blocks coloured by system, rest blocks pale grey) and v09's orange PCr gauge small above the bar. On "All three systems work in every session" a tiny three-tone stack sits under the bar, all bands above zero. On "pushed hard enough to adapt" a chip "aerobic or anaerobic: which system is pushed to adapt" (30 px). On "neither is the sport's name" a chip "the sport's name" writes and is crossed in red. On "First, intensity" the v11 intensity dial sits small at the left, its needle crossing an amber mark "about 85% of maximum effort" on "below about eighty-five per cent of maximum effort", the arc below the mark tinting teal. On "work-to-rest ratio" the gloss "work-to-rest ratio: effort time against recovery time" (34 px) and the main dial's ratio scale writes, from "continuous" through "1:1", "1:4" to "1:36". On "Earlier, you explained the six sprints" a grey recall chip "earlier: 6 sprints, 3 min against 15 s rest". On "about five seconds each, with three minutes' rest" the bar draws six orange 5 s blocks separated by long grey 180 s blocks, the stopwatch plate `ma12-stopwatch-v1.png` tiny; on "about one to thirty-six" the needle swings to "1:36" and the working writes "5 s : 180 s = 1 : 36" (amber). On "Every sprint starts fresh" the PCr gauge refills to about 99% before each block; on "trains speed and power" the zone label "speed and power: ATP-PCr" lights orange. On "Cut the rest to twenty seconds, one to four" the grey blocks shrink to 20 s, the working writes "5 s : 20 s = 1 : 4", the needle swings; on "phosphocreatine never refills" the gauge starts each sprint lower, down to about 60% by the sixth; on "Glycolysis takes more of the load" the later blocks recolour toward plum; on "repeat sprints and lactate tolerance" the zone label "repeat sprints, lactate tolerance: glycolytic" lights plum. On "The rest is part of the prescription" the grey rest blocks outline amber, amber hand tag "the rest is part of the prescription" (42 px). Hold one second.
+Visual: board change to the dial (`WorkRestDial`, solid from its first frame) with a session bar timeline beside it (work blocks coloured by system, rest blocks pale grey) and v09's orange PCr gauge small above the bar. On "All three systems work in every session" a tiny three-tone stack sits under the bar, all bands above zero. On "pushed hard enough to adapt" a chip "aerobic or anaerobic: which system is pushed to adapt" (30 px). On "neither is the sport's name" a chip "the sport's name" writes and is crossed in red. On "First, intensity" the v11 intensity dial sits small at the left, its needle crossing an amber mark "about 85% of maximum effort" on "below about eighty-five per cent of maximum effort", the arc below the mark tinting teal. On "work-to-rest ratio" the gloss "work-to-rest ratio: effort time against recovery time" (34 px) and the main dial's ratio scale writes, from "continuous" through "1:1", "1:4" to "1:36". On "Earlier, you explained the six sprints" a grey recall chip "earlier: 6 sprints, 3 min against 15 s rest". On "about five seconds each, with three minutes' rest" the bar draws six orange 5 s blocks separated by long grey 180 s blocks, the stopwatch plate `ma12-stopwatch-v1.png` tiny; on "about one to thirty-six" the needle swings to "1:36" and the working writes "5 s : 180 s = 1 : 36" (amber). On "Every sprint starts fresh" the PCr gauge refills to about 99% before each block; on "trains speed and power" the zone label "speed and power: ATP-PCr" lights orange. On "Cut the rest to twenty seconds, one to four" the grey blocks shrink to 20 s, the working writes "5 s : 20 s = 1 : 4", the needle swings; on "phosphocreatine never fully refills" the gauge refills only part way in each rest (about a third, from the v09 model) and starts each sprint lower, down to about 60% by the sixth; on "Glycolysis takes more of the load" the later blocks recolour toward plum; on "repeat sprints and lactate tolerance" the zone label "repeat sprints, lactate tolerance: glycolytic" lights plum. On "The rest is part of the prescription" the grey rest blocks outline amber, amber hand tag "the rest is part of the prescription" (42 px). Hold one second.
 
 ### 3. compare, one criterion at a time
-> Now compare the two kinds of training properly, one criterion at a time. Intensity: aerobic training sits at about sixty to eighty-five per cent of maximum heart rate, whereas anaerobic training goes above eighty-five per cent of maximum heart rate, often all-out. Effort: minutes to hours, against seconds to about two minutes. Work-to-rest: continuous or about one to one, against one to three up to one to twenty or more. System: aerobic, against ATP-PCr or glycolytic. Adaptations: a bigger stroke volume, more capillaries and mitochondria, against bigger fuel stores, better buffering and stronger muscles. Recovery: aerobic work can be done on consecutive days, but heavy anaerobic sessions need about forty-eight hours. And both follow the same principles, and both fade if you stop.
+> Now compare the two kinds of training properly, one criterion at a time. Intensity: aerobic training sits at about seventy to eighty-five per cent of maximum heart rate, whereas anaerobic training goes above eighty-five per cent of maximum heart rate, often all-out. Effort: minutes to hours, against seconds to about two minutes. Work-to-rest: continuous or about one to one, against one to three up to one to twenty or more. System: aerobic, against ATP-PCr or glycolytic. Adaptations: a bigger stroke volume, more capillaries and mitochondria, against bigger fuel stores, better buffering and stronger muscles. Recovery: aerobic work can be done on consecutive days, but heavy anaerobic sessions need about forty-eight hours. And both follow the same principles, and both fade if you stop.
 
-Visual: board change to the ledger (v02's `CompareLedger`, solid from its first frame): two column heads "aerobic training" (teal) and "anaerobic training" (plum-orange), six empty rows. On "one criterion at a time" a chip "two descriptions side by side" writes and is crossed in red. Rows fill one per cue, both halves together (30 px): on "Intensity" row "intensity | about 60 to 85% of max heart rate | above 85%, often all-out", "whereas" written in amber between the cells on "whereas anaerobic training goes above eighty-five"; on "Effort: minutes to hours" row "effort | minutes to hours | seconds to about 2 min"; on "Work-to-rest" row "work-to-rest | continuous or about 1:1 | 1:3 to 1:20 or more", the dial tiny with both arcs lit; on "System" row "system | aerobic | ATP-PCr or glycolytic"; on "Adaptations" row "adaptations | stroke volume, capillaries, mitochondria | fuel stores, buffering, muscle size and recruitment"; on "Recovery" row "recovery | consecutive days | about 48 h between heavy sessions". On "both follow the same principles, and both fade if you stop" an amber band spans both columns under the ledger, "both: same principles, progressive load, lost if you stop, specific to what you train". A silent seventh row "what you notice | lower heart rate at the same pace | repeat efforts without the drop-off" writes in grey. Hold one second.
+Visual: board change to the ledger (v02's `CompareLedger`, solid from its first frame): two column heads "aerobic training" (teal) and "anaerobic training" (plum-orange), six empty rows. On "one criterion at a time" a chip "two descriptions side by side" writes and is crossed in red. Rows fill one per cue, both halves together (30 px): on "Intensity" row "intensity | about 70 to 85% of max heart rate | above 85%, often all-out", "whereas" written in amber between the cells on "whereas anaerobic training goes above eighty-five"; on "Effort: minutes to hours" row "effort | minutes to hours | seconds to about 2 min"; on "Work-to-rest" row "work-to-rest | continuous or about 1:1 | 1:3 to 1:20 or more", the dial tiny with both arcs lit; on "System" row "system | aerobic | ATP-PCr or glycolytic"; on "Adaptations" row "adaptations | stroke volume, capillaries, mitochondria | fuel stores, buffering, muscle size and recruitment"; on "Recovery" row "recovery | consecutive days | about 48 h between heavy sessions". On "both follow the same principles, and both fade if you stop" an amber band spans both columns under the ledger, "both: same principles, progressive load, lost if you stop, specific to what you train". A silent seventh row "what you notice | lower heart rate at the same pace | repeat efforts without the drop-off" writes in grey. Hold one second.
 
 ### 4. methods, grouped by the system they stress
 > A training method is just a way of arranging work and rest. Group them by the system they stress. For the aerobic system: **continuous** training, steady for twenty minutes or more; **fartlek**, continuous running with changes of pace; **long intervals** of two to five minutes; and **circuits**, stations with little rest. For the anaerobic systems: **short intervals** and repeated sprints; **plyometrics**, like bounding and depth jumps, for explosive power; and **resistance** training, for strength and muscle size.
@@ -88,9 +88,9 @@ Visual: board change to the memory card (solid from its first frame): the dial s
 Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A netball squad completes six 2-minute efforts at about 80% of maximum heart rate, with 2 minutes of easy jogging between efforts. Identify the training method and the energy system it mainly stresses, and justify your answer. (3 marks)" Picture: `hms-netball-ring-ball-v1.png` small beside an empty session bar and the dial with no needle. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 9b. feedback, item one
-> It's long-interval training, stressing the aerobic system. Eighty per cent of maximum heart rate sits inside the aerobic training zone, sixty to eighty-five per cent. Each effort lasts minutes, not seconds. And two minutes on, two minutes easy is about one to one. The classic mistake is calling it anaerobic because it's called intervals.
+> It's long-interval training, stressing the aerobic system. Eighty per cent of maximum heart rate sits inside the aerobic training zone, seventy to eighty-five per cent. Each effort lasts minutes, not seconds. And two minutes on, two minutes easy is about one to one. The classic mistake is calling it anaerobic because it's called intervals.
 
-Visual: `FeedbackScene`: the card shrinks to the top; the session bar fills with six teal 2-minute blocks and pale grey 2-minute blocks; the needle settles at "1:1"; a green-framed three-line answer writes one per cue (30 px): on "long-interval training, stressing the aerobic system" "1 long intervals; aerobic"; on "Eighty per cent of maximum heart rate sits inside the aerobic training zone" "2 intensity: 80% of max HR, inside the aerobic zone (60 to 85%)"; on "about one to one" "3 efforts of minutes; work-to-rest about 1:1". On "classic mistake" a chip "intervals, so anaerobic" writes and is crossed in red, red hand tag "read intensity and the ratio" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; the session bar fills with six teal 2-minute blocks and pale grey 2-minute blocks; the needle settles at "1:1"; a green-framed three-line answer writes one per cue (30 px): on "long-interval training, stressing the aerobic system" "1 long intervals; aerobic"; on "Eighty per cent of maximum heart rate sits inside the aerobic training zone" "2 intensity: 80% of max HR, inside the aerobic zone (70 to 85%)"; on "about one to one" "3 efforts of minutes; work-to-rest about 1:1". On "classic mistake" a chip "intervals, so anaerobic" writes and is crossed in red, red hand tag "read intensity and the ratio" (34 px). Settle one second.
 
 ### 9c. attempt two (the hockey squad)
 > Second. A school hockey squad includes a player returning from a hamstring strain, and two seniors who are much fitter than the rest. The coach plans eight thirty-second hard runs, with ninety seconds' rest, at one set pace for everyone. Explain two ways to differentiate this session so it suits the whole squad. Pause here to answer.
@@ -112,7 +112,7 @@ Heading on screen: "Key notes: what to write in your book".
 > Here are the key notes. Pause the video if you need more time to copy them.
 
 1. Intensity and the work-to-rest ratio decide the system trained, not the sport.
-2. Aerobic: 60 to 85% max HR, minutes to hours, about 1:1. Anaerobic: above 85% max HR.
+2. Aerobic: 70 to 85% max HR, minutes to hours, about 1:1. Anaerobic: above 85% max HR.
 3. Continuous, fartlek, long intervals, circuits; sprints, plyometrics, resistance.
 4. Contemporary: HIIT, cross-training, aquatic, altitude, technology; each a limit.
 5. Squads: differentiate by intensity (relative), volume, recovery and role.
@@ -123,7 +123,7 @@ Memory card (the scene 8 card) beside the notes. Each bullet one line of at most
 
 Two unseen items (9a to 9d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Both are written for this video; neither repeats the sprint sessions (2) or the football squad (6, 7).
 
-1. (9a, 3 marks.) Long-interval training (1 mark); predominantly aerobic (1 mark); justified by intensity inside the aerobic training zone (about 60 to 85% of maximum heart rate) and efforts of minutes with a work-to-rest ratio of about 1:1 (1 mark). Classic mistake crossed: "intervals, so anaerobic".
+1. (9a, 3 marks.) Long-interval training (1 mark); predominantly aerobic (1 mark); justified by intensity inside the aerobic training zone (about 70 to 85% of maximum heart rate) and efforts of minutes with a work-to-rest ratio of about 1:1 (1 mark). Classic mistake crossed: "intervals, so anaerobic".
 2. (9c, 4 marks.) Two levers, each named with what changes (1 mark each) and why it suits the squad (1 mark each): relative intensity (each player at a percentage of their own maximum, equal stress at different speeds); reduced volume for the returning player (fewer runs at the same quality, re-injury risk). Also creditable: role-based content; recovery changes with the caution that it changes the system. Classic mistake crossed: "cater for individual differences" with no lever.
 
 Feedback spoken lengths about 21 s (9b) and 24 s (9d) by script; time the exact audio.
@@ -132,11 +132,11 @@ Feedback spoken lengths about 21 s (9b) and 24 s (9d) by script; time the exact 
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing.
 - **Deciders (2).** Intensity about 85% of maximum effort as the point above which the aerobic system no longer leads (consistent with v10; Revision 2: "of maximum effort" spoken). This is not the lactate threshold (v14), which the module states as a share of maximum aerobic capacity; v12 never names a threshold; a maximal 30 m sprint takes about 4 to 5 s (school-age athletes about 4.5 to 5.5 s); 5 s : 180 s = 1:36; 5 s : 20 s = 1:4 (site correction 21); PCr recovery model from v09.
-- **Comparison (3).** Aerobic training zone about 60 to 85% of maximum heart rate; anaerobic above 85% of maximum heart rate (a training zone convention, not a threshold); effort durations; work-to-rest about 1:1 against 1:3 to 1:20 or more; adaptations (stroke volume, capillarisation, mitochondria; PCr and glycogen stores, buffering, hypertrophy and neural recruitment); recovery about 48 h between heavy anaerobic sessions; shared principles, reversibility, specificity.
+- **Comparison (3).** Aerobic training zone about 70 to 85% of maximum heart rate (course-wide, root ruling 24 Nov); anaerobic above 85% of maximum heart rate (a training zone convention, not a threshold); effort durations; work-to-rest about 1:1 against 1:3 to 1:20 or more; adaptations (stroke volume, capillarisation, mitochondria; PCr and glycogen stores, buffering, hypertrophy and neural recruitment); recovery about 48 h between heavy anaerobic sessions; shared principles, reversibility, specificity.
 - **Methods (4).** Continuous 20 min or more; fartlek; long intervals 2 to 5 min at about 1:1; circuits; short intervals 5 to 30 s; plyometrics; resistance.
 - **Contemporary (5).** HIIT produces aerobic and anaerobic adaptations in less time (reviews of sprint interval and HIIT training); cross-training; aquatic training for reduced joint load; altitude training's variable response; technology for load monitoring.
 - **Squads (6, 7).** Position-specific demands in football; maturation spread at 15 to 17; relative prescription; the four levers; participation argument.
-- **Numbers used.** 12 laps, 17, 85%, 30 m, 5 s, 180 s, 1:36, 20 s, 1:4, about 99% and about 60% (model), 60 to 85%, about 2 min, 1:1, 1:3 to 1:20, 48 h, 20 min, 2 to 5 min, 5 to 30 s; attempts: 6 × 2 min at 80% with 2 min jogging (1:1); 8 × 30 s with 90 s rest (1:3).
+- **Numbers used.** 12 laps, 17, 85%, 30 m, 5 s, 180 s, 1:36, 20 s, 1:4, about 99% and about 60% (model), 70 to 85%, about 2 min, 1:1, 1:3 to 1:20, 48 h, 20 min, 2 to 5 min, 5 to 30 s; attempts: 6 × 2 min at 80% with 2 min jogging (1:1); 8 × 30 s with 90 s rest (1:3).
 - **Official figures.** None.
 - **No em dashes** in this file (searched by script).
 
@@ -147,51 +147,25 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6125 characters**, 14 scene files. At 13.3 characters per second the speech is about 461 s; add 28 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 563 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6135 characters**, 14 scene files. At 13.3 characters per second the speech is about 461 s; add 28 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 563 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (twelve laps, every Tuesday) | 357 |
-| 2. the rest is part of the prescription | 770 |
-| 3. compare, one criterion at a time | 790 |
+| 2. the rest is part of the prescription | 776 |
+| 3. compare, one criterion at a time | 792 |
 | 4. methods, grouped by the system they stress | 492 |
 | 5. the contemporary methods, judged | 607 |
 | 6. one athlete, or a squad | 691 |
 | 7. four levers | 684 |
 | 8. memory | 112 |
 | 9a. attempt one (the netball session) | 283 |
-| 9b. feedback, item one | 339 |
+| 9b. feedback, item one | 341 |
 | 9c. attempt two (the hockey squad) | 335 |
 | 9d. feedback, item two | 345 |
 | 10. decision rule and handoff | 245 |
 | 11. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 5, the water training sentence (keep the row silent); (2) scene 7, the participation sentence; (3) scene 3, the last sentence (keep the amber band silent). Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov unless approved and not yet painted): `ma12-stopwatch-v1.png`; HMS plates approved: `hms-empty-training-field-v1.png` (m1-v02), `hms-track-finish-line-v1.png` and `hms-netball-ring-ball-v1.png` (v08); `m5x-red-blood-cells-v1.png` (tiny, inspected in v05's pair). Coded: v11's dial, `WorkRestDial` with session bar and PCr gauge, `CompareLedger`, method chips, judgement board, squad board with profile and capacity bars, `LeverBoard`, question cards, countdown. No people.
-
-Need: no new plates.
-
-Kit gaps: `WorkRestDial`, `LeverBoard` in `hms-shared` (`CompareLedger` from v02).
-
-## Codex asset brief (HMS-Y11-B12)
-
-No new plates. Codex confirms only that the reused plates above are present at their paths and unchanged once painted.
-
-## Codex learning review and science check brief (HMS-Y11-B12)
-
-- **Learning review:** trace from v09, v10 and v11. Does scene 2 make the ratio, not the activity, decide the system, visibly? Is the ledger a comparison (criterion by criterion) rather than two lists? Is the method list anchored on the dial rather than read out? Are the contemporary methods judged, not described? Does the squad board show "training to the average" without any figure? Are all three hook reasons and the midfielder answered (6)? Are both attempts unseen?
-- **Science check:** every item in "Numbers or facts to verify", especially the sprint ratios (site correction 21), the 60 to 85% range, HIIT's claims, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B12, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v11's handoff frame and the closing matches hms-y11-m2-v13's route opening (the work-to-rest dial splits into four labelled dials: F, I, T, T); every ratio is the quotient of its given times; system colours as v09 and v10; no people, hands or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Aerobic vs Anaerobic Training, Methods and Differentiated Programs | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson12.sa.html
@@ -236,3 +210,16 @@ Review: `../checks/hms-y11-m2-v12-learning-review.md` and the module summary `..
 3. **Note, 9c's volume lever is named in scene 7.** Kept: 9c also needs relative intensity for the seniors, so it still asks for application.
 
 Narration changed in 2, 3 and 9b. Recount: 6,125 characters, about 563 s with 74 s of holds (Revision 1 about 555 s). `cues.py`: 0 findings. The joins with v11 and v13 are unchanged.
+
+## Root note: aerobic training zone (24 Nov 2026)
+
+Root ruling (Year 12 Module 4 learning review, ruling 3): the aerobic training zone is 70 to 85 per cent of maximum heart rate, course-wide. Scene 3, 9b, key note 2, the 9a marking and the facts section now say 70 to 85 per cent (was 60 to 85), so this video agrees with hms-y11-m2-v13 and hms-y12-m4-v04, v06 and v08. 9b's 80 per cent session is still inside the zone, so its answer is unchanged. Narration changed in 3 and 9b ("seventy" for "sixty", two words). Recount: 6,129 characters, about 563 s (was 6,125). `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v12-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. Applied after the root note above, which it does not change: the aerobic training zone stays 70 to 85 per cent of maximum heart rate.
+
+1. **Should fix, scene 2: "phosphocreatine never refills".** Accepted with the checker's wording: "and phosphocreatine never fully refills." About a third refills in 20 s (the v09 model; Harris 1976), so the gauge now refills part way in each rest before starting each sprint lower, down to about 60 per cent by the sixth.
+2. **Note, the concurrent zone edit.** Confirmed: scene 3 and 9b both say "seventy to eighty-five", key note 2 reads "70 to 85% max HR", and 9a's 80 per cent session sits inside the zone.
+
+Narration changed in scene 2. Recount: 6,135 characters, about 563 s (after the root note: 6,129, about 563 s). `cues.py`: 0 findings. Joins with v11 and v13 unchanged.

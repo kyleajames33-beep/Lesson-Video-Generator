@@ -1,6 +1,6 @@
 # HMS Year 11 V14 (The body and mind in motion): immediate physiological responses to training. What changes in your heart, lungs and blood the moment you start exercising, and which change starts before you move? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov (plate approved; hyperventilation safety point restored in 3). Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, five reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m2-v14-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov (plate approved; hyperventilation safety point restored in 3). Nothing recorded. Voice: the Google voice. Plates: one new, five reused (see Assets). No official figures.
 
 Narration 6,208 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
 

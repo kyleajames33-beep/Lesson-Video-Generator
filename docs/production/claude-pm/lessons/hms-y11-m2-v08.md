@@ -1,8 +1,8 @@
 # HMS Year 11 V08 (The body and mind in motion): systems working together, and first aid. How do seven body systems work together in one movement, and what should first aid do when movement goes wrong? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: four new (one shared with v09), nine reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: four new (one shared with v09), nine reused (see Assets). No official figures.
 
-Narration 6,156 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,155 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the eighth HMS video of the Year 11 focus area "The body and mind in motion", closing its first group (the body's systems). Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v08**. Pre-design pack `../pre-design/hms/hms-y11-m2-v08.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson08.sa.html` (read in full, 24 Nov; sha256 `cc9d3d8cb4cfa67e902dbe9a785349df09f8ed54ab4306a6c3458fc42e303006`). Previous design `hms-y11-m2-v07.md`.
 
@@ -78,14 +78,14 @@ Visual: board change to the gate track (`GateTrack`, solid from its first frame)
 Visual: the gate track shrinks to the top; a three-column board writes below it, "situation", "likely injury", "first aid" (34 px), row 1 filling now. On "inefficient movement" the situation cell writes "inefficient movement", with three chips on "poor technique, fatigue or a skipped warm-up". On "a soft tissue injury" the injury cell; three definition chips write one per cue (30 px) with v01's knee cutaway tiny: "sprain: ligament" on "A sprain is a ligament", the knee's ligament outlined; "strain: muscle or tendon" on "a strain is a muscle or tendon", v02's hamstring tear overlay tiny; "contusion: bruise" on "a contusion is a bruise". On "RICER" the first aid cell writes the five letters, each expanding on its word: "rest", "ice", "compression", "elevation", "referral"; on "about twenty minutes every two hours" the kit's ice pack glows with a timer chip "20 min, every 2 h, first 48 to 72 h". On "avoid HARM" four crossed chips write, "heat", "alcohol", "running", "massage"; on "increase blood flow and swelling" a small swelling gauge rises behind them. On "Deformity, a sound at the moment of injury, or not being able to bear weight" three red-outlined chips; on "a doctor decides" a red tag "refer". Hold one second.
 
 ### 8. dehydration
-> Second, dehydration. As you saw with the delivery chain, sweat lowers plasma volume, so heart rate rises and the body sheds heat less well. The signs come in order: thirst and dark urine, then headache and a racing heart, then cramps and dizziness, then confusion. For mild cases, stop, find shade and sip cool fluid, and don't return to play. Heat exhaustion means lie them down, cool them and get medical help. But confusion in a hot athlete means heat stroke. That's an emergency. Call an ambulance, cool them hard, and follow DRSABCD.
+> Second, dehydration. As you saw with the delivery chain, sweat lowers plasma volume, so heart rate rises and the body sheds heat less well. The signs come in order: thirst and dark urine, then headache and a racing heart, then cramps and dizziness, then confusion. For mild cases, stop, find shade and sip cool fluid, and don't return to play. Heat exhaustion means lie them down, cool them and get medical help. But treat confusion in a hot athlete as heat stroke. That's an emergency. Call an ambulance, cool them hard, and follow DRSABCD.
 
-Visual: row 2 of the board fills. On "dehydration" the situation cell writes "dehydration", with `m8-water-glass-v1.png` tiny, its level dropping (coded mask), and `m8-thermometer-v1.png` tiny beside it. On "sweat lowers plasma volume" v05's delivery chain tiny (a one-line recall; v05 owns the mechanism) with link 3's readout "stroke volume: down", and on "heart rate rises" its cost meter climbing. On "The signs come in order" a four-step escalator writes in the injury cell, one per cue (30 px): "thirst, dark urine" on "thirst and dark urine"; "headache, racing heart" on "headache and a racing heart"; "cramps, dizziness" on "cramps and dizziness"; "confusion" on "then confusion", that step outlined red. On "For mild cases" the first aid cell writes "stop, shade, sip cool fluid; no return". On "Heat exhaustion" a second line "heat exhaustion: lie down, cool, medical help". On "confusion in a hot athlete means heat stroke" a chip "confusion = discipline problem" writes and is crossed in red, and a red-outlined line writes "heat stroke: emergency"; on "Call an ambulance, cool them hard, and follow DRSABCD" the upper gate track's DRSABCD gates light red in sequence. Hold one second.
+Visual: row 2 of the board fills. On "dehydration" the situation cell writes "dehydration", with `m8-water-glass-v1.png` tiny, its level dropping (coded mask), and `m8-thermometer-v1.png` tiny beside it. On "sweat lowers plasma volume" v05's delivery chain tiny (a one-line recall; v05 owns the mechanism) with link 3's readout "stroke volume: down", and on "heart rate rises" its cost meter climbing. On "The signs come in order" a four-step escalator writes in the injury cell, one per cue (30 px): "thirst, dark urine" on "thirst and dark urine"; "headache, racing heart" on "headache and a racing heart"; "cramps, dizziness" on "cramps and dizziness"; "confusion" on "then confusion", that step outlined red. On "For mild cases" the first aid cell writes "stop, shade, sip cool fluid; no return". On "Heat exhaustion" a second line "heat exhaustion: lie down, cool, medical help". On "treat confusion in a hot athlete as heat stroke" a chip "confusion = discipline problem" writes and is crossed in red, and a red-outlined line writes "heat stroke: emergency"; on "Call an ambulance, cool them hard, and follow DRSABCD" the upper gate track's DRSABCD gates light red in sequence. Hold one second.
 
 ### 9. undue stress, and where first aid stops
-> Third, undue stress on the body: more load than the body is ready for. Here the harm builds up. Overuse injuries, like stress fractures and shin pain, mean stop and refer. A collapse at the end of hard effort is never just tiredness: follow DRSABCD and get help. Chest pain or collapse during exercise means an ambulance, and CPR with a defibrillator if they're not breathing normally. So first aid is essential, but it treats the event, not the cause.
+> Third, undue stress on the body: more load than the body is ready for. Here the harm builds up. Overuse injuries, like stress fractures and shin pain, mean stop and refer. Never put a collapse after hard effort down to tiredness: follow DRSABCD and get help. Chest pain or collapse during exercise means an ambulance, and CPR with a defibrillator if they're not breathing normally. So first aid is essential, but it treats the event, not the cause.
 
-Visual: row 3 of the board fills. On "undue stress on the body" the situation cell writes "undue stress on the body", with a coded load bar rising past a "ready for" line on "more load than the body is ready for". On "the harm builds up" a small accumulating stack of grey blocks. On "Overuse injuries" the injury cell writes "overuse: stress fractures, shin pain", v01's leg bones thumbnail tiny with a faint line; on "stop and refer" the first aid cell writes "stop, refer". On "A collapse at the end of hard effort" a red-outlined line "exertional collapse: DRSABCD, help"; on "never just tiredness" a crossed chip "just tired". On "Chest pain or collapse during exercise" a red-outlined line "chest pain or collapse: ambulance, CPR, defibrillator", the kit's defibrillator case glowing. On "first aid is essential" the whole three-row board takes a green frame; on "it treats the event, not the cause" an amber band slides under the board, "the cause: load, fluids, preparation", amber hand tag "treats the event, not the cause" (42 px), its three chips lighting in turn. Hold one second.
+Visual: row 3 of the board fills. On "undue stress on the body" the situation cell writes "undue stress on the body", with a coded load bar rising past a "ready for" line on "more load than the body is ready for". On "the harm builds up" a small accumulating stack of grey blocks. On "Overuse injuries" the injury cell writes "overuse: stress fractures, shin pain", v01's leg bones thumbnail tiny with a faint line; on "stop and refer" the first aid cell writes "stop, refer". On "Never put a collapse after hard effort" a red-outlined line "exertional collapse: DRSABCD, help"; on "down to tiredness" a crossed chip "just tired" and a red tag "collapse: never assume it's just tiredness" (30 px). On "Chest pain or collapse during exercise" a red-outlined line "chest pain or collapse: ambulance, CPR, defibrillator", the kit's defibrillator case glowing. On "first aid is essential" the whole three-row board takes a green frame; on "it treats the event, not the cause" an amber band slides under the board, "the cause: load, fluids, preparation", amber hand tag "treats the event, not the cause" (42 px), its three chips lighting in turn. Hold one second.
 
 ### 10. memory
 > Two things to remember. How a performer fails names the system that failed. And first aid is essential, but not enough on its own.
@@ -133,7 +133,7 @@ Memory card (the scene 10 card) beside the notes. Each bullet one line of at mos
 
 Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video from the site's own example; item 2 is the site's WE b2 stem verbatim.
 
-1. (11a, 3 marks.) Nervous system identified (1 mark); justified from the failure mode: still running, so fuel and oxygen delivery are not limiting (1 mark); mechanism: central fatigue reduces drive and slows decision making, so skill and accuracy fail first (1 mark). Classic mistake crossed: "heart and lungs".
+1. (11a, 3 marks.) Nervous system identified (1 mark); justified from the failure mode: still running, so fuel and oxygen delivery are not limiting (1 mark); mechanism: central fatigue reduces drive and slows decision making, so skill and accuracy fail first (1 mark). Classic mistake crossed: "heart and lungs". Marking note (Revision 3, science check): low blood glucose and dehydration also impair late-match accuracy, so an answer naming fuel for the brain, reasoned from "still running well", is not marked wrong.
 2. (11c, 5 marks.) The site's marking shape: first aid defined with its four purposes in priority order (1 mark); inefficient movement: TOTAPS and RICER, with what to avoid (1 mark); dehydration: recognition, cooling, fluids, heat stroke as an emergency (1 mark); undue stress: overuse referral and DRSABCD for collapse (1 mark); limits and a judgement ("essential but not enough") (1 mark). Classic mistake crossed: listing the acronyms without discussing.
 
 Feedback spoken lengths about 20 s (11b) and 26 s (11d, Revision 2 trim) by script; time the exact audio.
@@ -141,7 +141,7 @@ Feedback spoken lengths about 20 s (11b) and 26 s (11d, Revision 2 trim) by scri
 ## Numbers or facts to verify
 
 Self-check (24 Nov). The Codex science check must confirm each before voicing.
-- **Collapse rule (9, Revision 2 flag).** "A collapse at the end of hard effort is never just tiredness" is meant as a first aid rule (treat it as serious); some collapses after a finish line are benign. Science check to confirm the wording is acceptable as a safety rule.
+- **Collapse rule (9, Revision 3).** Now worded as a rule, not a medical claim: "Never put a collapse after hard effort down to tiredness". Most collapses just after an endurance finish are benign postural low blood pressure (Asplund, O'Connor and Noakes, *Br J Sports Med* 2011), but first aid treats every collapse as serious; collapse during exercise is the more sinister sign and is named in the next sentence.
 - **Hook (1).** "Spent after six seconds" and "two hours" are the site's framing of a maximal lift effort and an elite marathon; illustrative.
 - **Seven systems (2).** Digestion suppressed during exercise (sympathetic); anticipatory rise in heart rate and ventilation before movement (feedforward, central command); netball shot contributions as the site.
 - **Limiting systems (3).** Maximal lift limited by neural drive and muscle force; 100 m by phosphocreatine depletion within about 10 s (the energy detail is v09's; the site's own claim that everyone slows over the last 20 m is standard race analysis); 400 m by metabolite accumulation; long hike by glycogen, fluid and electrolyte loss. Durations: 2 to 3 s, about 10 s, 45 to 60 s (shown "about 50 s"), 3 h.
@@ -158,7 +158,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6156 characters**, 16 scene files. At 13.3 characters per second the speech is about 463 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 567 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6155 characters**, 16 scene files. At 13.3 characters per second the speech is about 463 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 567 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -169,8 +169,8 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 5. what first aid is for | 456 |
 | 6. two plans, and every step is a gate | 525 |
 | 7. inefficient movement | 555 |
-| 8. dehydration | 538 |
-| 9. undue stress, and where first aid stops | 452 |
+| 8. dehydration | 541 |
+| 9. undue stress, and where first aid stops | 448 |
 | 10. memory | 130 |
 | 11a. attempt one (the footballer) | 206 |
 | 11b. feedback, item one | 273 |
@@ -178,44 +178,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 11d. feedback, item two | 347 |
 | 12. decision rule and handoff | 205 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 2, the skeleton clause (keep the slot lighting silently); (2) scene 7, the HARM reason clause (keep the swelling gauge silent); (3) scene 4, the follow-through sentence. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov unless approved and not yet painted): `y11-digestive-tract-v2.png`, `m8-kidney-adrenal-v1.png`, `m8-lungs-healthy-v1.png`, `b3a2-brain-v1.png`, `m8-water-glass-v1.png`, `m8-thermometer-v1.png`; HMS plates approved: `hms-knee-synovial-cutaway-v1.png` (v01), `hms-thigh-quadriceps-v1.png` and `hms-hamstring-tear-overlay-v1.png` (v02 and m1-v02), `hms-heart-cutaway-v1.png` (v04), `m8-leg-bones-normal-v1.png`. Coded: `SystemWheel` with clocks and time ruler, `LimitTest` gauges, `SegmentLinkage` jump with `MuscleBand` and phase strip, purposes ladder and limits wall, `GateTrack`, three-row situation board, escalator, load bar, speed trace, question cards, countdown. No people.
-
-Need (new plates):
-1. `hms-netball-ring-ball-v1.png`: scene 2 (and later v10's netball court video may reuse it).
-2. `hms-barbell-and-shoes-v1.png`: scene 1.
-3. `hms-first-aid-kit-v1.png`: scenes 5 to 9, 11c; later Year 12 injury videos.
-4. `hms-track-finish-line-v1.png`: scene 12 (handoff); reused as v09's opening and anchor.
-
-Kit gaps: `SystemWheel`, `LimitTest`, `GateTrack` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B08, one movement and first aid)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-netball-ring-ball-v1.png` (1400 x 2200): an outdoor netball goal post with its ring and net, seen from the court, a netball resting on the court line below it, painted court lines, late afternoon light. No people, hands or faces anywhere in the image; no logos on the ball.
-2. `hms-barbell-and-shoes-v1.png` (2400 x 1300): two halves on one plate at one scale: left, a loaded barbell resting on a rubber lifting platform with chalk dust; right, a pair of worn running shoes on a road kerb with a plain drink bottle. No people, hands or faces anywhere in the image; no brand marks.
-3. `hms-first-aid-kit-v1.png` (2000 x 1400): an open sports first aid kit on a bench: rolled crepe bandages, an instant ice pack, tape, gloves in a plain packet, and beside it a closed plain defibrillator case marked only with a simple heart-and-lightning pictogram. No people, hands or faces anywhere in the image; no readable text, no organisation's cross or logo.
-4. `hms-track-finish-line-v1.png` (2400 x 1200): one or two empty running track lanes in low side light, ending at a white painted finish line, the track surface texture visible, the infield grass at the edge. No people, hands or faces anywhere in the image; no numbers, sponsor boards or text.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b08-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B08)
-
-- **Learning review:** trace from v01 to v07. Does the wheel's clock ruler make "anticipates, doesn't just react" visible (2)? Does the limit test teach a method (read the failure) rather than four facts (3)? Can students run the four-phase analysis on their own movement after 4? Do 5 to 9 discuss first aid (role and limits) rather than list acronyms? Is the pairing of two dotpoints still one clear learner question? Do the attempts test the stop?
-- **Science check:** every item in "Numbers or facts to verify", especially current Australian first aid sequences and the RICER and HARM wording, and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B08, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v07's handoff frame and the closing matches hms-y11-m2-v09's route opening (a 100 m track finish line with a speed trace that falls over the last 20 m); system tones consistent; no figure in any first aid scene; no people, hands or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Body Systems Working Together, and the Role of First Aid | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson08.sa.html
@@ -267,3 +230,15 @@ Review: `../checks/hms-y11-m2-v08-learning-review.md` and the module summary `..
 5. **Module finding 2 and root ruling 6, heat and plasma volume.** Scene 8 now recalls v05's mechanism in one sentence ("As you saw with the delivery chain, sweat lowers plasma volume...") and teaches only what is new here: the signs in order and the first aid.
 
 Narration changed in 3, 8 and 11d. Recount: 6,156 characters, about 567 s (Revision 1 about 565 s). `cues.py`: 0 findings. The joins with v07 and v09 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v08-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix (flagged), scene 9: the collapse rule.** Accepted with the checker's wording (root ruling 3): "Never put a collapse after hard effort down to tiredness: follow DRSABCD and get help." It now reads as a first aid rule, not a claim that such a collapse is never benign. On screen: the crossed "just tired" chip plus "collapse: never assume it's just tiredness". The next sentence (collapse during exercise means an ambulance) is unchanged. The facts section is updated with Asplund and others (2011).
+2. **Should fix, scene 8: confusion in the heat.** Accepted: "But treat confusion in a hot athlete as heat stroke. That's an emergency." The crossed chip "confusion = discipline problem" stays.
+3. **Note, scene 8: cramps.** Kept in the list of warning signs (acceptable per the checker); first line to cut if scene 8 needs time.
+4. **Note, 11b.** Added a marking note: an answer naming fuel for the brain, reasoned from "still running well", is not marked wrong.
+5. **Note, scene 7: RICER and No HARM.** No change (Sports Medicine Australia's published advice).
+
+Narration changed in scenes 8 and 9. Recount: 6,155 characters, about 567 s (Revision 2: 6,156, about 567 s). `cues.py`: 0 findings. Joins with v07 and v09 unchanged.

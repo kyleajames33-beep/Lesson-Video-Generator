@@ -1,8 +1,8 @@
 # HMS Year 11 V16 (The body and mind in motion): learners and the stages of skill acquisition. Why can the same coaching help one learner and make another worse? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov (plates approved; the attention-focus claim reworded to fit the evidence in 5, 7 and the notes). Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov (plates approved; the attention-focus claim reworded to fit the evidence in 5, 7 and the notes). Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
 
-Narration 6,143 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,141 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the sixteenth HMS video of the Year 11 focus area "The body and mind in motion", opening its third group (learning skills). Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v16**. Pre-design pack `../pre-design/hms/hms-y11-m2-v16.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson16.sa.html` (read in full, 24 Nov; sha256 `ce91a7ef4a3469e1813d7724c9fed4fd62e184ad37ed35f335113b7f6256309a`). Previous design `hms-y11-m2-v15.md`.
 
@@ -58,7 +58,7 @@ Visual: board change to the characteristics table (solid from its first frame): 
 Visual: board change to the track (`StageTrack`, solid from its first frame): a horizontal continuum with three empty zones, a learner marker at the left, and under it the `AttentionWedge` (two opposing wedges along the track, both empty outlines). Zones label one per cue (34 px): on "cognitive" the left zone "cognitive" (pale amber), gloss "cognitive: working out what to do"; on "what do I do?" a question tag in the zone; on "attention is completely used up by the movement" the plum "on the movement" wedge fills full height at the left and the teal "free for the game" wedge is a sliver. On "associative" the middle zone "associative" (teal), gloss "associative: refining how to do it"; on "how do I do it better?" its tag; on "some attention starts to free up" the plum wedge narrows and the teal widens. On "autonomous" the right zone "autonomous" (green), gloss "autonomous: runs without conscious attention"; on "what do I do with it?" its tag; on "attention is free for the game" the teal wedge fills the right end, the plum a sliver. On "That exchange explains everything else" the two wedges glow together, amber hand tag "one exchange explains the stages" (42 px); on "Attention" the gloss "attention: limited conscious capacity" (34 px). On "A beginner can't watch an opponent" a small grey "opponent" chip at the left zone stays unlit. On "stages belong to skills, not people" the tennis plate tiny drops two markers on the track, "forehand" in the autonomous zone on "autonomous at a forehand" and "backhand volley" in the cognitive zone on "cognitive at a backhand volley", and a chip "autonomous in one skill means autonomous at the sport" writes and is crossed in red. Silent rows under the zones list "verbalisation: talks it through → can't explain" and "duration: hours → months to years → few skills". Hold one second.
 
 ### 4. placing a learner from evidence
-> So how do you tell which stage someone's at? Not by how long they've played. Years of inattentive practice can leave someone associative. Use evidence. First, spare attention: ask them to call out a number mid-movement. If the skill falls apart, it isn't autonomous yet. Second, the error-detection test: after an attempt, ask how it was, before you say anything. A cognitive learner doesn't know. An associative learner knows it was wrong, but not why. An autonomous performer tells you what went wrong, and has usually already fixed it. Third, pressure. A player who's great at training and poor in matches is often associative, not lacking confidence. The fix is more quality practice, not a talk about belief.
+> So how do you tell which stage someone's at? Not by how long they've played. Years of inattentive practice can leave someone associative. Use evidence. First, spare attention: ask them to call out a number mid-movement. If the skill falls apart, it isn't autonomous yet. Second, the error-detection test: after an attempt, ask how it was, before you say anything. A cognitive learner doesn't know. An associative learner knows it was wrong, but not why. An autonomous performer tells you what went wrong, and has usually already fixed it. Third, pressure. A player who's great at training and poor in matches can be associative, not lacking confidence. The fix is more quality practice, not a talk about belief.
 
 Visual: the track stays; three test cards write under it one per cue (30 px). On "Not by how long they've played" a chip "years played = stage" writes and is crossed in red. On "spare attention" card 1 "spare attention: add a second task", a small "7!" call bubble (no figure) beside the marker; on "If the skill falls apart" a coded performance bar drops sharply, tag "not autonomous yet". On "the error-detection test" card 2 "error detection: 'how was that?'", and the probe writes beneath the three zones one per cue: on "A cognitive learner doesn't know" "don't know" under cognitive; on "knows it was wrong, but not why" "wrong, not why" under associative; on "tells you what went wrong, and has usually already fixed it" "wrong, and fixed it" under autonomous, green. On "Third, pressure" card 3 "pressure: fatigue, crowd, a consequence"; on "great at training and poor in matches" two bars "training" (high) and "match" (low) beside the associative zone; on "not lacking confidence" a chip "nervous, so talk about belief" writes and is crossed in red; on "more quality practice" a green chip "practise the skill". Hold one second.
 
@@ -141,14 +141,14 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6143 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6141 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (one cue, two results) | 464 |
 | 2. six things learners bring | 758 |
 | 3. three stages, and one exchange | 700 |
-| 4. placing a learner from evidence | 713 |
+| 4. placing a learner from evidence | 711 |
 | 5. coaching that reverses | 925 |
 | 6. recreational and elite athletes | 732 |
 | 7. memory | 185 |
@@ -158,40 +158,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 8d. feedback, item two | 387 |
 | 9. decision rule and handoff | 297 |
 | 10. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 2, the tennis and volleyball example (keep the tile silent); (2) scene 3, the forehand and backhand sentence; (3) scene 6, the last sentence. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have: v07's `CommandLoop` (coded). Coded: percentage bars and quote cards, characteristics table, `StageTrack` with `AttentionWedge`, error-detection probe, test cards, feedback and attention scales, two-context board, technique-change line, sliding scales (handoff), question cards, countdown. No people.
-
-Need (new plates):
-1. `hms-free-throw-line-v1.png`: scenes 1, 5, 9 (anchor).
-2. `hms-tennis-racquet-ball-v1.png`: scenes 2, 3, 9; later v17 and v18 (open skills).
-
-Kit gaps: `StageTrack`, `AttentionWedge` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B16, the free-throw line and the racquet)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
-
-1. `hms-free-throw-line-v1.png` (1600 x 2000): an indoor basketball court seen from just behind the free-throw line, a basketball resting on the line, the key's painted lines leading to the hoop, net and plain backboard above. No people, hands or faces anywhere in the image; no logos, numbers or text.
-2. `hms-tennis-racquet-ball-v1.png` (1800 x 1200): a tennis racquet lying on a hard court beside a single tennis ball, the court's white baseline running across the lower third. No people, hands or faces anywhere in the image; no brand marks on the racquet or ball.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b16-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B16)
-
-- **Learning review:** trace from Stage 5 PDHPE (assumed) and v07. Does the characteristics table teach "which can a coach change" rather than six facts? Do the two wedges make the stages one idea? Can students run the three tests on themselves after 4? Is the hook answered by mechanism (attention and the conscious route), not by assertion? Are both attempts unseen?
-- **Science check:** every item in "Numbers or facts to verify", especially the internal and external focus claim for beginners (Memory aid check), and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B16, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v15's handoff frame and the closing matches hms-y11-m2-v17's route opening (the three-stage track gains four sliding scales beneath it); zone colours consistent; no people, hands or faces (no figure for the "call out a number" test); no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Stages of Skill Acquisition and Characteristics of Learners | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson16.sa.html
@@ -236,3 +203,12 @@ Review: `../checks/hms-y11-m2-v16-learning-review.md` (pass with notes) and the 
 2. **Note, plates.** The free-throw and tennis plates are still unpainted (they recur in v17 and v18); the stage track carries the hook if they are late.
 
 No narration changed: 6,143 characters, about 560 s. `cues.py`: 0 findings. The joins with v15 and v17 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v16-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built. The check passed with notes only; one was cheap and removes an overclaim, so it is taken.
+
+1. **Note, scene 4: the training-versus-match player.** Taken: "A player who's great at training and poor in matches can be associative, not lacking confidence" (a heuristic, not a rule).
+2. **Note, scene 4: "knows it was wrong, but not why".** Kept: it is the site's error-detection probe, which 8b and 8d's feedback use as the associative answer, and the checker accepts it. Author note: associative learners detect and correct some of their own errors, so the probe describes the typical case.
+
+Narration changed in scene 4. Recount: 6,141 characters, about 560 s (Revision 2: 6,143, about 560 s). `cues.py`: 0 findings. Joins with v15 and v17 unchanged.

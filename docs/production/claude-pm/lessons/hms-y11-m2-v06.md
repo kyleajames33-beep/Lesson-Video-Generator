@@ -1,8 +1,8 @@
 # HMS Year 11 V06 (The body and mind in motion): the digestive and endocrine systems. How do the digestive and endocrine systems fuel and control movement, and what makes them less efficient? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, eight reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, eight reused (see Assets). No official figures.
 
-Narration 6,169 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,189 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the sixth HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v06**. Pre-design pack `../pre-design/hms/hms-y11-m2-v06.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson06.sa.html` (read in full, 24 Nov; sha256 `aaa5957803f9c7cd09a478c0570846eb96e291baa55a490e05f461df9e5ea2a4`). Previous design `hms-y11-m2-v05.md`.
 
@@ -73,14 +73,14 @@ Visual: board change to the gland board (solid from its first frame): an empty v
 Visual: board change to the pancreas and glucose band (solid from its first frame): `m8-pancreas-v1.png` at the left (about 560 px wide) and an empty glucose trace (maths graph kit: "blood glucose" against "time") at the right with an amber band "normal range". On "belongs to both systems" two arrows leave the pancreas, an amber one into a coded gut tube "enzymes into the gut" and an olive one into a blood line "hormones into the blood" (30 px); on "supply and control in one organ" an amber hand tag "supply and control in one organ" (42 px). On "After a meal, blood glucose rises" the model runs a meal: the trace climbs above the band; on "insulin" a blue pill leaves the pancreas, gloss "insulin: moves glucose into cells" (34 px), and glucose dots enter a coded cell tile; on "Glucose falls, and insulin stops" the trace returns into the band and the pill fades. On "When glucose drops too low" the trace dips below the band; on "glucagon" a teal pill leaves, gloss "glucagon: releases glucose from liver glycogen", `m8-liver-v1.png` tiny releasing dots, and the trace rises back into the band. On "negative feedback" the two pills circle the band as a loop (`FeedbackLoop`), gloss "negative feedback: a change triggers a response that reverses it" (34 px); on "like a thermostat" a small thermostat dial icon. Hold one second.
 
 ### 7. one training session, in hormones
-> Follow one training session. Before and at the start, adrenaline raises heart rate, releases glucose, and opens the taps to muscle while closing those to the gut. So a meal still in your stomach stops being digested, and that's why you feel sick. During the session, glucagon holds blood glucose steady as muscles use it, and in long sessions cortisol frees fat for fuel. As you sweat, antidiuretic hormone, from the pituitary, holds onto water, and aldosterone, from the adrenal glands, holds onto salt. Afterwards, when you eat, insulin refills glycogen, and growth hormone repairs tissue, mostly in deep sleep. That's why sleep is part of training.
+> Follow one training session. Before and at the start, adrenaline raises heart rate, releases glucose, and opens the taps to muscle while closing those to the gut. So a meal still in your stomach is digested much more slowly, and that's why you feel sick. During the session, glucagon holds blood glucose steady as muscles use it, and in long sessions cortisol frees fat for fuel. As you sweat, antidiuretic hormone, from the pituitary, holds onto water, and aldosterone, from the adrenal glands, holds onto salt. Afterwards, when you eat, insulin refills glycogen, and growth hormone repairs tissue, mostly in deep sleep. That's why sleep is part of training.
 
-Visual: board change to the session timeline (`HormoneTimeline`, solid from its first frame): three empty lanes "before", "during", "after" across a time ruler, the glucose trace from 6 running underneath (band visible). Pills place one per cue (30 px): on "adrenaline raises heart rate" a red-orange "adrenaline" pill in "before", with a small heart-rate readout rising; on "releases glucose" glucose dots enter the trace; on "opens the taps to muscle while closing those to the gut" v04's arteriole tap icons, the muscle tap opening and the gut tap closing, readouts "muscle: more", "gut: less". On "a meal still in your stomach stops being digested" the hook's meal plate tiny beside the stomach with a "digestion: slowed" readout; on "that's why you feel sick" the hook's question mark from scene 1 turns into a green tick, tag "blood diverted from the gut". On "glucagon holds blood glucose steady" a teal "glucagon" pill in "during", and the model runs the session: muscle uptake rises and the trace stays in the band as the liver tile releases dots. On "cortisol frees fat for fuel" a plum "cortisol" pill later in "during", small fat-dot arrow. On "As you sweat" a sweat-drop icon; on "antidiuretic hormone, from the pituitary" a grey-blue pill "ADH (antidiuretic hormone): keeps water" flies from the pituitary slot of the gland board (tiny at the corner); on "aldosterone, from the adrenal glands" a second pill "aldosterone: keeps salt" flies from the adrenal slot, both docking on the kidney tile. On "insulin refills glycogen" a blue "insulin" pill in "after", the trace rising after a meal icon and returning to the band as a glycogen gauge on the thigh tile refills. On "growth hormone repairs tissue" a green-grey "growth hormone" pill, and on "mostly in deep sleep" a small moon icon under it; on "sleep is part of training" an amber hand tag "sleep is training" (42 px). Hold one second.
+Visual: board change to the session timeline (`HormoneTimeline`, solid from its first frame): three empty lanes "before", "during", "after" across a time ruler, the glucose trace from 6 running underneath (band visible). Pills place one per cue (30 px): on "adrenaline raises heart rate" a red-orange "adrenaline" pill in "before", with a small heart-rate readout rising; on "releases glucose" glucose dots enter the trace; on "opens the taps to muscle while closing those to the gut" v04's arteriole tap icons, the muscle tap opening and the gut tap closing, readouts "muscle: more", "gut: less". On "a meal still in your stomach is digested much more slowly" the hook's meal plate tiny beside the stomach with a "digestion: slowed" readout; on "that's why you feel sick" the hook's question mark from scene 1 turns into a green tick, tag "blood diverted from the gut". On "glucagon holds blood glucose steady" a teal "glucagon" pill in "during", and the model runs the session: muscle uptake rises and the trace stays in the band as the liver tile releases dots. On "cortisol frees fat for fuel" a plum "cortisol" pill later in "during", small fat-dot arrow. On "As you sweat" a sweat-drop icon; on "antidiuretic hormone, from the pituitary" a grey-blue pill "ADH (antidiuretic hormone): keeps water" flies from the pituitary slot of the gland board (tiny at the corner); on "aldosterone, from the adrenal glands" a second pill "aldosterone: keeps salt" flies from the adrenal slot, both docking on the kidney tile. On "insulin refills glycogen" a blue "insulin" pill in "after", the trace rising after a meal icon and returning to the band as a glycogen gauge on the thigh tile refills. On "growth hormone repairs tissue" a green-grey "growth hormone" pill, and on "mostly in deep sleep" a small moon icon under it; on "sleep is part of training" an amber hand tag "sleep is training" (42 px). Hold one second.
 
 ### 8. stress: useful, then harmful
-> That answers the race question too. Nerves before a race release the same adrenaline, pulling blood from the gut. That's **acute stress**, and it's useful, because it gets you ready to move. The problem is **chronic stress**, the kind that doesn't switch off. Then the gut gets too little blood for too long, causing nausea and cramps. And cortisol stays high, keeping the body breaking down when it should be rebuilding. Muscle protein breaks down, recovery slows, illness comes more often, and sleep suffers, which cuts growth hormone. Poor sleep raises stress again, so the loop feeds itself.
+> That answers the race question too. Nerves before a race release the same adrenaline, pulling blood from the gut. That's **acute stress**, and it's useful, because it gets you ready to move. The problem is **chronic stress**, the kind that doesn't switch off. Then the gut's movement and blood flow stay upset for weeks, causing nausea and cramps. And cortisol stays high, keeping the body breaking down when it should be rebuilding. Muscle protein breaks down, recovery slows, illness comes more often, and sleep suffers, which cuts growth hormone. Poor sleep raises stress again, so the loop feeds itself.
 
-Visual: the timeline stays. On "the race question" the starting blocks plate from scene 1 returns tiny with its green tick. On "the same adrenaline" the "adrenaline" pill copies into a new short lane "before a race (nerves)"; on "pulling blood from the gut" the gut tap closes again. On "acute stress" the gloss "acute stress: short-term, switches off" (34 px), a green tag "useful: ready to move" on "it gets you ready to move"; a chip "all stress is bad" writes and is crossed in red. On "chronic stress" the gloss "chronic stress: doesn't switch off", and the timeline's ruler stretches to "weeks". On "the gut gets too little blood for too long" the gut tap stays closed across the stretched ruler, the tract plate tiny with chips "nausea", "cramps" written on "causing nausea and cramps" (and a grey "appetite" chip). On "cortisol stays high" the plum pill lengthens into a bar across the weeks, tag "breaking down, not rebuilding" on "keeping the body breaking down". A four-node loop draws one node per cue (30 px): "muscle protein broken down" on "Muscle protein breaks down"; "recovery slower" on "recovery slows"; "more illness" on "illness comes more often"; "poor sleep: less growth hormone" on "sleep suffers", the growth hormone pill shrinking; on "Poor sleep raises stress again" an arrow closes back to "stress", and on "the loop feeds itself" the loop turns once, amber hand tag "the stress loop" (42 px). Hold one second.
+Visual: the timeline stays. On "the race question" the starting blocks plate from scene 1 returns tiny with its green tick. On "the same adrenaline" the "adrenaline" pill copies into a new short lane "before a race (nerves)"; on "pulling blood from the gut" the gut tap closes again. On "acute stress" the gloss "acute stress: short-term, switches off" (34 px), a green tag "useful: ready to move" on "it gets you ready to move"; a chip "all stress is bad" writes and is crossed in red. On "chronic stress" the gloss "chronic stress: doesn't switch off", and the timeline's ruler stretches to "weeks". On "the gut's movement and blood flow stay upset for weeks" the gut tap flickers half shut across the stretched ruler and a small wavy trace of gut movement turns irregular, tag "digestion disturbed for weeks" (30 px), the tract plate tiny with chips "nausea", "cramps" written on "causing nausea and cramps" (and a grey "appetite" chip). On "cortisol stays high" the plum pill lengthens into a bar across the weeks, tag "breaking down, not rebuilding" on "keeping the body breaking down". A four-node loop draws one node per cue (30 px): "muscle protein broken down" on "Muscle protein breaks down"; "recovery slower" on "recovery slows"; "more illness" on "illness comes more often"; "poor sleep: less growth hormone" on "sleep suffers", the growth hormone pill shrinking; on "Poor sleep raises stress again" an arrow closes back to "stress", and on "the loop feeds itself" the loop turns once, amber hand tag "the stress loop" (42 px). Hold one second.
 
 ### 9. other factors
 > Other factors work the same way. Fat, fibre and protein slow the stomach, so pre-training meals are light, mostly carbohydrate. Dehydration slows absorption, just when you need fluid most. Poor sleep cuts growth hormone and raises cortisol. The serious one is **low energy availability**: eating less than training needs. The body quietly cuts spending on hormones, bone and immunity, so it shows up as stress fractures and repeated illness. Weight loss isn't a good sign here. It's a reason to see a doctor.
@@ -134,7 +134,7 @@ Memory card (the scene 10 card) beside the notes. Each bullet one line of at mos
 Two items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is the site's WE b1 stem verbatim (from the lesson, labelled honestly); item 2 is written for this video and is unseen.
 
 1. (11a, 5 marks.) Stress. The site's marking shape: acute response stated as functional, with the adrenaline effects including gut vasoconstriction (1 mark); "the same responses become impairments" when sustained (1 mark); chronic effects on digestion: blood flow, motility, nausea, appetite (1 mark); chronic effects on the endocrine system: cortisol, protein breakdown, impaired recovery, immunity (1 mark); the self-reinforcing sleep cycle (1 mark). Classic mistake crossed: "all stress is harmful".
-2. (11c, 4 marks.) The rower in the heat (Revision 2). Falling body water triggers antidiuretic hormone from the pituitary, so the kidneys keep water (1 mark); sodium loss triggers aldosterone from the adrenal glands, so the kidneys keep sodium (1 mark); both are negative feedback that slows further loss (1 mark); hormones cannot replace water and sodium already lost, so she must drink (1 mark). Classic mistake crossed: "the hormones replace the lost water".
+2. (11c, 4 marks.) The rower in the heat (Revision 2). Falling body water triggers antidiuretic hormone from the pituitary, so the kidneys keep water (1 mark); sodium loss triggers aldosterone from the adrenal glands, so the kidneys keep sodium (1 mark; Revision 3, science check note: falling blood volume, through renin and angiotensin, is the main trigger, so an answer naming it also earns the mark); both are negative feedback that slows further loss (1 mark); hormones cannot replace water and sodium already lost, so she must drink (1 mark). Classic mistake crossed: "the hormones replace the lost water".
 
 Feedback spoken lengths about 26 s (11b) and 28 s (11d) by script; time the exact audio.
 
@@ -159,7 +159,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6169 characters**, 16 scene files. At 13.3 characters per second the speech is about 464 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 568 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6189 characters**, 16 scene files. At 13.3 characters per second the speech is about 465 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 569 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -169,8 +169,8 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 4. micronutrients make it usable | 465 |
 | 5. a second control system | 500 |
 | 6. the pancreas, and the glucose thermostat | 479 |
-| 7. one training session, in hormones | 651 |
-| 8. stress: useful, then harmful | 587 |
+| 7. one training session, in hormones | 659 |
+| 8. stress: useful, then harmful | 599 |
 | 9. other factors | 504 |
 | 10. memory | 155 |
 | 11a. attempt one (stress) | 133 |
@@ -179,38 +179,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 11d. feedback, item two | 378 |
 | 12. decision rule and handoff | 236 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 4, the vitamins C and E sentence (keep the slot silent); (2) Revision 2 already removed scene 5's ovaries and testes clause; (3) scene 9, the alcohol and diabetes sentence (keep the cards silent). Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have (reused, inspected 24 Nov): `y11-digestive-tract-v2.png`, `y11-villi-wall-v1.png`, `y11-alveolar-wall-section-v2.png`, `m8-liver-v1.png`, `m8-pancreas-v1.png`, `y11-hypothalamus-pituitary-section-v2.png`, `m8-kidney-adrenal-v1.png`, `m5x-red-blood-cells-v1.png`, `m8-water-glass-v1.png`; HMS plates approved: `hms-starting-blocks-v1.png` (v03), `hms-arm-bones-v1.png` (v01), `hms-thigh-quadriceps-v1.png` (v02). Coded: mouth station, bolus and peristalsis rings, `CompareLedger`, micronutrient tray, gland board with receptor tiles, glucose trace and band (maths graph kit), `FeedbackLoop`, `HormoneTimeline`, stress loop, factors board, question cards, countdown. No people.
-
-Need (new plate):
-1. `hms-pre-training-meal-v1.png`: scenes 1 and 7.
-
-Kit gaps: `HormoneTimeline`, `FeedbackLoop` in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B06, the meal before training)
-
-Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos.
-
-1. `hms-pre-training-meal-v1.png` (2200 x 1400): on a wooden change-room bench, an open takeaway-style container with a half-eaten greasy meal (chips and a burger, no logo), a crumpled plain napkin, beside a pair of football boots and a plain drink bottle; a plain wall clock behind showing about 3.45. No people, hands or faces anywhere in the image; no brand marks, no readable text.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b06-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B06)
-
-- **Learning review:** trace from v05 and v04. Is the tract in 2 readable at speed with one function per organ? Does "supply and control" (6) give the two systems one thesis rather than two lists? Is the session timeline (7) a sequence students could redraw? Does scene 8 make acute stress useful before chronic stress harmful, using the same mechanism? Is low energy availability (9) framed as a health issue without diet advice? Do the attempts test the stop?
-- **Science check:** every item in "Numbers or facts to verify", site correction 17, the hormone actions and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B06, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v05's handoff frame and the closing matches hms-y11-m2-v07's route opening (the hormone timeline is slow; a much faster control line appears: the nervous system); hormone pill tones are consistent across scenes; no body outline on the gland board; no people, hands or faces; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "The Digestive and Endocrine Systems: Fuel, Hormones and Stress | HSC Health and Movement Science"
+ HSC Health and Movement Science"
 - Description:
 
 "Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson06.sa.html
@@ -258,3 +227,14 @@ Review: `../checks/hms-y11-m2-v06-learning-review.md` and the module summary `..
 4. **Note, 11a is WE b1 verbatim.** Kept as the site's question and labelled "from the lesson" in the practice section.
 
 Narration changed in 5, 7, 11c and 11d. Recount: 6,169 characters, about 568 s (Revision 1 about 568 s). `cues.py`: 0 findings. The joins with v05 and v07 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v06-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 7: digestion during exercise.** Accepted with the checker's wording: "So a meal still in your stomach is digested much more slowly, and that's why you feel sick." The cue follows; the on-screen "digestion: slowed" readout already matched.
+2. **Should fix, scene 8: chronic stress and the gut.** Accepted in a shorter form of the checker's wording, for length: "Then the gut's movement and blood flow stay upset for weeks, causing nausea and cramps." The gut tap flickers half shut (not closed) across the stretched ruler, a gut movement trace turns irregular, and the tag reads "digestion disturbed for weeks"; the grey "appetite" chip stays on screen, so "changes in appetite" is shown, not spoken.
+3. **Note, scene 6: "It digests carbohydrate into glucose".** Not changed: the design is at the cap and the checker rates it optional. If the line is touched at preview, say "Its enzymes help digest carbohydrate into glucose".
+4. **Note, 11d: aldosterone trigger.** Added to the marking guidance: an answer naming falling blood volume (through renin and angiotensin) also earns the mark.
+
+Narration changed in scenes 7 and 8. Recount: 6,189 characters, about 569 s (Revision 2: 6,169, about 568 s). `cues.py`: 0 findings. Joins with v05 and v07 unchanged.

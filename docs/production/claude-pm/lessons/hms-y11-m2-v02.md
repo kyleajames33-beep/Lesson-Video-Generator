@@ -1,8 +1,8 @@
 # HMS Year 11 V02 (The body and mind in motion): muscles, fibres, contractions and roles. If a muscle can only pull, how does the body push, lower, hold and move smoothly? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: four new, five reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: four new, five reused (see Assets). No official figures.
 
-Narration 6,165 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,194 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 570 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the second HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v02**. Pre-design pack `../pre-design/hms/hms-y11-m2-v02.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson02.sa.html` (read in full, 24 Nov; sha256 `8e7f73692efb426aea034854c7d4c2a1a91df3078f74bb20dff970f7fb1858ca`). Previous design `hms-y11-m2-v01.md`.
 
@@ -48,9 +48,9 @@ Handoff: biomechanics (route entry hms-y11-m2-v03). **Handoff frame (hms-y11-m2-
 Visual: opens on v01's handoff frame (the leg linkage at the bottom of the squat, amber dashed lines along the front and back of the thigh, question mark, v01 Next chip). The Next chip leaves and the heading rewrites to "If muscles only pull, how do we push?" (60 px). On "something has to pull" the two dashed lines firm into coded muscle bands (front teal, back violet); on "a muscle can only pull" an arrow along the front band points inwards towards its middle, tag "pull only" (42 px), and a grey chip "push" is struck through in grey. On "Hold a heavy bag" board change: the arm plate `hms-arm-bones-v1.png` with the new overlay `hms-arm-muscles-overlay-v1.png` (biceps on the front, triceps on the back, deltoid at the shoulder) at the left, about 640 px tall, the elbow at 90°, a coded bag hanging from a grip disc at the forearm's end, a grey gravity arrow under it. On "lower it slowly to your side" the forearm lowers over five seconds, the elbow readout running from "90°" to "170°". On "Which muscle is working?" two tick boxes "triceps", "biceps"; on "Most people say the triceps" the triceps box takes a grey tick and the triceps glows; on "the elbow is straightening" a tag "elbow extending". On "it's the biceps that's hard" the biceps glows amber with a tension readout "high", and the triceps tick greys. On "Why?" a question mark at the biceps. Hold one second.
 
 ### 2. a muscle can only pull
-> Of the three kinds of muscle, cardiac muscle works the heart, and smooth muscle lines vessels, airways and the gut, both without your control. Skeletal muscle is the kind you control. It attaches to bone through a **tendon**, and when it contracts, it shortens and pulls the bone towards itself. It can't push the bone back. So muscles work in opposing pairs. The biceps pulls the forearm up, and only the triceps can pull it straight again, unless gravity does that job for free. Remember that, because it solves the bag.
+> Of the three kinds of muscle, cardiac muscle works the heart, and smooth muscle lines vessels, airways and the gut, both without your control. Skeletal muscle is the kind you control. It attaches to bone through a **tendon**, and when it contracts, it pulls on the bone, and if it shortens, it draws the bone towards itself. It can't push the bone back. So muscles work in opposing pairs. The biceps pulls the forearm up, and only the triceps can pull it straight again, unless gravity does that job for free. Remember that, because it solves the bag.
 
-Visual: board change to the pull board (solid from its first frame): three small tiles at the top, empty. On "cardiac muscle works the heart" tile 1 "cardiac: heart, involuntary" with reused Biology plate `m8-heart-v1.png` tiny; on "smooth muscle lines vessels, airways and the gut" tile 2 "smooth: walls of vessels, airways, gut, involuntary"; on "Skeletal muscle is the kind you control" tile 3 "skeletal: voluntary, moves bones" lights teal and grows. Reused `m8-skeletal-muscle-v1.png` lands at the centre (about 520 px tall). On "tendon" both tendon ends glow, gloss "tendon: joins muscle to bone" (34 px), and coded bone stubs attach at each end, grey labels "origin (fixed end)" and "insertion (moving end)" (30 px). On "it shortens and pulls" the belly shortens on screen, a length readout falling, and the moving bone stub swings towards it. On "It can't push the bone back" a grey "push" arrow at the stub is struck through. On "opposing pairs" the arm overlay returns at the right; on "The biceps pulls the forearm up" the biceps band shortens (teal) and the forearm rises; on "only the triceps can pull it straight again" the triceps shortens (teal) and the forearm lowers; on "unless gravity does that job for free" a grey gravity arrow appears under the forearm and the triceps relaxes, tag "gravity can extend" (amber, 42 px). Hold one second.
+Visual: board change to the pull board (solid from its first frame): three small tiles at the top, empty. On "cardiac muscle works the heart" tile 1 "cardiac: heart, involuntary" with reused Biology plate `m8-heart-v1.png` tiny; on "smooth muscle lines vessels, airways and the gut" tile 2 "smooth: walls of vessels, airways, gut, involuntary"; on "Skeletal muscle is the kind you control" tile 3 "skeletal: voluntary, moves bones" lights teal and grows. Reused `m8-skeletal-muscle-v1.png` lands at the centre (about 520 px tall). On "tendon" both tendon ends glow, gloss "tendon: joins muscle to bone" (34 px), and coded bone stubs attach at each end, grey labels "origin (fixed end)" and "insertion (moving end)" (30 px). On "it pulls on the bone" a small teal pull arrow appears at the insertion; on "if it shortens" the belly shortens on screen, a length readout falling, and on "draws the bone towards itself" the moving bone stub swings towards it. On "It can't push the bone back" a grey "push" arrow at the stub is struck through. On "opposing pairs" the arm overlay returns at the right; on "The biceps pulls the forearm up" the biceps band shortens (teal) and the forearm rises; on "only the triceps can pull it straight again" the triceps shortens (teal) and the forearm lowers; on "unless gravity does that job for free" a grey gravity arrow appears under the forearm and the triceps relaxes, tag "gravity can extend" (amber, 42 px). Hold one second.
 
 ### 3. major muscles, with their actions
 > Learn each major muscle with the action it produces, because a name alone answers nothing. At the shoulder, the deltoid abducts the arm. At the elbow, the biceps flexes and the triceps extends. In the trunk, the rectus abdominis flexes and the erector spinae extends. At the hip, the gluteus maximus extends. At the knee, the quadriceps on the front of the thigh extend it, and the hamstrings on the back flex it. The hamstrings also extend the hip, so they cross two joints. They're often strained in sprinting, because a sprint stride stretches them at both ends at once. At the ankle, the gastrocnemius and soleus plantar flex, and tibialis anterior dorsiflexes.
@@ -159,12 +159,12 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6165 characters**, 16 scene files. At 13.3 characters per second the speech is about 464 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 568 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6194 characters**, 16 scene files. At 13.3 characters per second the speech is about 466 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 570 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (lowering the bag) | 370 |
-| 2. a muscle can only pull | 518 |
+| 2. a muscle can only pull | 547 |
 | 3. major muscles, with their actions | 665 |
 | 4. slow and fast twitch, and why the traits cluster | 498 |
 | 5. which fibres, for which job | 345 |
@@ -179,89 +179,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 11d. feedback, item two | 428 |
 | 12. decision rule and handoff | 220 |
 | 13. key notes (quiet, hold about 45 seconds) | 75 |
-
-Reserve cuts: (1) scene 7, the eccentric facts sentence (keep the bars and tag on screen); (2) scene 3, "In the trunk" sentence (keep the rows on screen); (3) scene 2, the three-tissue sentence. Do not cut below 5,500 without replacing content.
-
-## Assets
-
-Have: plates `hms-arm-bones-v1.png` (v01), `m8-skeletal-muscle-v1.png`, `m8-heart-v1.png`, `m8-leg-bones-normal-v1.png` (Biology), `hms-thigh-hamstrings-v1.png` (m1-v02); v01's linkage and action-pairs styling. Coded: muscle bands, role tags, fibre ledger, recruitment bar, contraction stage, squat table, question cards, countdown. No people.
-
-Need (new plates):
-1. `hms-arm-muscles-overlay-v1.png`: scenes 1, 2, 3, 7, 8, 12 (anchor overlay). Reused in v03.
-2. `hms-thigh-quadriceps-v1.png`: scene 3; later training videos.
-3. `hms-lower-leg-muscles-v1.png`: scene 3; later injury videos.
-4. `hms-fibre-cross-section-v2.png` (Revision 2: repaint of v1, which painted the types in two zones): scenes 4, 5, 11c; later hms-y11-m2-v09, v12 and hms-y12-m4-v08.
-
-Kit gaps: `MuscleBand`, `RoleTags`, `CompareLedger` (first built here) in `hms-shared`.
-
-## Codex asset brief (HMS-Y11-B02, muscles)
-
-Standing rules as v01's brief: house watercolour anatomical style matching `m8-skeletal-muscle-v1.png` and `hms-arm-bones-v1.png`, transparent PNG with true alpha, never stretched, no readable text or labels. Regional anatomy only: no whole-body figure or outline, no skin, no hands, feet, fingers, toes or faces anywhere in the image.
-
-1. `hms-arm-muscles-overlay-v1.png` (1400 x 2200, registered pixel for pixel to `hms-arm-bones-v1.png`): the deltoid over the shoulder, the biceps brachii on the front of the upper arm with its tendon to the radius just below the elbow, the triceps brachii on the back with its tendon to the point of the elbow; muscles only (the bones come from the base plate), cut cleanly just above the wrist like the base. No people, hands or faces anywhere in the image.
-2. `hms-thigh-quadriceps-v1.png` (1400 x 2000): the front of one thigh, cut cleanly below the hip and just below the knee: the femur faintly behind, the four quadriceps (rectus femoris, vastus lateralis, vastus medialis, vastus intermedius partly visible) converging on the patella and patellar tendon. Same scale and style as the hamstrings plate. No skin, no people, hands, feet or faces anywhere in the image.
-3. `hms-lower-leg-muscles-v1.png` (1600 x 2000): one lower leg in a three-quarter view, cut cleanly below the knee and just above the ankle joint: the gastrocnemius and the soleus beneath it on the back, joining the Achilles tendon (which ends at the cut), and tibialis anterior on the front beside the tibia. No foot, no skin, no people, hands or faces anywhere in the image.
-4. `hms-fibre-cross-section-v2.png` (1600 x 1600; Revision 2 repaint, keep v1 on disk): a circular field of a stained muscle cross-section as seen down a microscope, polygonal fibres packed together, roughly half darker red (slow twitch) and half paler rose (fast twitch) interspersed fibre by fibre in a mosaic across the whole field, with no zone of either type, thin pale connective tissue between them, a few small capillary dots around the darker fibres. No text, no people, hands or faces anywhere in the image.
-
-Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y11-b02-provenance.json`.
-
-## Codex learning review and science check brief (HMS-Y11-B02)
-
-- **Learning review:** trace from v01. Is the bag puzzle resolved convincingly in 7 at playback speed? Does the fibre ledger make the cluster causal rather than a list (4)? Do the role tags' swap and non-swap read clearly (8)? Is the muscle table's screen-only grey-ink set readable without competing with the narrated rows (3)? Do the attempts test the stop?
-- **Science check:** every item in "Numbers or facts to verify", muscle names and actions, the three contraction definitions, the role definitions and the model answers' mark splits.
-
-## Codex error-check brief (HMS-Y11-B02, after the reviews)
-
-Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches v01's handoff frame and the closing matches hms-y11-m2-v03's route opening (the arm plate, the forearm as a lever and the elbow as its pivot); the overlay registers to the arm plate; no whole-body figure, hand, foot, skin or face; plates never stretched; no em dash, no U+2061; no module number or course label on screen.
-
-## YouTube metadata (draft)
-
-- Title: "Muscles, Fibre Types, Contractions and Roles: Why Lowering a Bag Works Your Biceps | HSC Health and Movement Science"
-- Description:
-
-"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year11/module2/lesson02.sa.html
-
-If a muscle can only pull, how does the body push, lower, hold and move smoothly? Learn why muscles work in pairs, the major muscles with the actions they produce, how slow and fast twitch fibres compare and why their traits cluster, the three types of muscle contraction, the agonist, antagonist and stabiliser roles, and how the skeletal and muscular systems work together in a squat. Includes two exam-style questions with brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
-
-Health and Movement Science 11-12 (2023 syllabus), Year 11: The body and mind in motion.
-Syllabus content (NSW Health and Movement Science 11-12, 2023):
-"Explain the interrelationship between the skeletal and muscular systems and movement"
-"structure and function"
-"major muscles"
-"characteristics and functions of muscle fibres"
-"types of muscle contractions"
-"muscle relationship"
-Official syllabus: https://curriculum.nsw.edu.au/learning-areas/pdhpe/health-and-movement-science-11-12-2023
-
-Previous: How does the skeleton make movement possible?
-Next: What physics are your muscles obeying?
-
-#HealthAndMovementScience #HSC #HSCScience"
-
-## Open decisions
-
-- **Four new plates (recommended: yes).** All regional; the overlay registers to v01's approved arm plate.
-
-## Build ids
-
-Lesson key `hms11b02`; folder `src/explainer/lessons/hms-y11-m2-v02`; build folder `docs/production/claude-pm/lessons/hms11b02`. Imports `hms-shared` (`SegmentLinkage`, `ActionPairs`; new `MuscleBand`, `RoleTags`, `CompareLedger`).
-
-Scene headings (16): hook, pull-only, major-muscles, fibre-types, fibre-jobs, contractions, bag-solved, roles, squat, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
-
-Holds and transitions as v03. 4 to 5 continue on the ledger; 6 to 7 continue on the contraction card; other teaching scenes are board changes.
-
-## Review notes (author, not learner copy)
-
-- **Teaching checks.** Causes: why muscles pair (2); why the slow twitch traits cluster (4); why recruitment order makes a jog and a sprint different (5); why the eccentric muscle works when a joint moves the other way (7); why the antagonist must relax (8); why the knee's shape limits the quadriceps' effect (9). Attention: the bag puzzle that most people get wrong (1, 7). Visual medium: muscle bands whose length readouts come from the joint angles; role tags that swap or stay; fibres lighting in recruitment order. Apply: classify three phases (11a); compare fibres (11c). Remember: only pull; ask what is resisting.
-- **Term load.** Tendon, fibre, slow and fast twitch, three oxygen terms (glossed by job), three contraction types, three roles; fifteen muscle names (eleven spoken).
-- **Overlap.** v03 takes levers and forces; v09 and v10 the energy systems; Year 12 v08 recalls fibre adaptations in one sentence.
-- **No em dashes** in this file (searched by script).
-
-## Revision 2: learning review resolved (24 Nov 2026)
-
-Review: `../checks/hms-y11-m2-v02-learning-review.md` and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
-
-1. **Should fix, hamstrings called the antagonist after scene 3 taught they extend the hip.** Scene 9 now says "the hamstrings are the antagonist at the knee, though at the hip they help the gluteus maximus". The table row reads "hamstrings | antagonist at the knee; assist hip extension | lengthen at the knee", with a grey tag "a role belongs to a muscle at a joint".
+ lengthen at the knee", with a grey tag "a role belongs to a muscle at a joint".
 2. **Should fix, "the resistance wins" against "eccentric produces the most force".** Scene 6 now says "the muscle lets the resistance win, slowly, while still pulling against it". Scene 7 now says "A muscle can brake a heavier load than it can lift". The bar pair reads "lift" and "brake (lower)".
 3. **Should fix, scene 6 gave away 11a's landing.** "or landing from a jump" became "or lowering yourself into a chair" (a tiny linkage sits onto a coded chair). Students must now apply "ask what is resisting" to the landing themselves.
 4. **Should fix, fibre plate in two zones (root ruling 9).** The design now names `hms-fibre-cross-section-v2.png`, a mosaic repaint (Codex request in `../hms-status.md`, plate section). Scene 4 also adds a grey tag "real muscle mixes them like a mosaic", so the point holds even if v1 is used in a pilot.
@@ -270,3 +188,13 @@ Review: `../checks/hms-y11-m2-v02-learning-review.md` and the module summary `..
 7. **Note, 11d about 31 s.** Trimmed to "Add a similarity and an event for each." About 29 s. The arm overlay plate remains the most urgent unpainted plate (status file).
 
 Narration changed in 3, 6, 7, 9 and 11d. Recount: 6,165 characters, about 568 s (Revision 1 about 558 s). `cues.py`: 0 findings. The joins with v01 and v03 are unchanged.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m2-v02-science-check.md` and the module summary `../checks/hms-y11-m2-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 2: "it shortens and pulls the bone".** Accepted with the checker's wording, so it no longer contradicts scene 6 (a working muscle can lengthen or hold its length): "when it contracts, it pulls on the bone, and if it shortens, it draws the bone towards itself." The visual cue splits: a teal pull arrow on "it pulls on the bone", the belly shortens on "if it shortens", the stub swings on "draws the bone towards itself".
+2. **Note, scene 5, "largely inherited".** Not changed: the design is at the cap and the checker rates the line a note. Heritability of fibre-type proportion is about 40 to 50 per cent; if the line is touched at preview, say "strongly influenced by your genes".
+3. **Note, the isotonic gloss.** Kept (school usage, acceptable per the checker).
+
+Narration changed in scene 2. Recount: 6,194 characters, about 570 s (Revision 2: 6,165, about 568 s). `cues.py`: 0 findings. Joins with v01 and v03 unchanged.
