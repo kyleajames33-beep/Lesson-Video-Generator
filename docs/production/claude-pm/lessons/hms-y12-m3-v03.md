@@ -224,7 +224,7 @@ Next: Where does Australia rank among wealthy countries?
 
 ## Open decisions
 
-- **One new plate (recommended: approve).** `hms-remote-airstrip-v1.png`: an airstrip with a small health post and a plain, unbranded light aircraft; no people.
+- **One new plate (recommended: approve).** `hms-remote-airstrip-v1.png` **Resolved by root (24 Nov, fifth set): approved/accepted.**: an airstrip with a small health post and a plain, unbranded light aircraft; no people.
 
 ## Build ids
 

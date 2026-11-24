@@ -218,7 +218,7 @@ Next: Is an ageing population a crisis, or a design problem?
 
 ## Open decisions
 
-- **Site correction 26 (recommended: accept).** Type 2 diabetes incidence (age-standardised) has fallen since 2000 (AIHW, down 45% to 2021); the page says it has risen over decades.
+- **Site correction 26 (recommended: accept).** **Resolved by root (24 Nov, fifth set): approved/accepted.** Type 2 diabetes incidence (age-standardised) has fallen since 2000 (AIHW, down 45% to 2021); the page says it has risen over decades.
 - **For information.** One dated AIHW figure on screen (within the 23 Nov ruling, release re-check); no new plates.
 
 ## Build ids

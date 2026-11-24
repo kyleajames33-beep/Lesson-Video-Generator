@@ -214,8 +214,8 @@ Next: Why are cardiovascular deaths falling while so many still live with it?
 
 ## Open decisions
 
-- **One new plate (recommended: approve).** `hms-dental-chair-v1.png`: an empty dental surgery; no people.
-- **Site correction 25 (recommended: accept).** WE b1's "wider than the comparable gaps reported in New Zealand and Canada"; the video does not use the claim.
+- **One new plate (recommended: approve).** `hms-dental-chair-v1.png` **Resolved by root (24 Nov, fifth set): approved/accepted.**: an empty dental surgery; no people.
+- **Site correction 25 (recommended: accept).** **Resolved by root (24 Nov, fifth set): approved/accepted.** WE b1's "wider than the comparable gaps reported in New Zealand and Canada"; the video does not use the claim.
 
 ## Build ids
 

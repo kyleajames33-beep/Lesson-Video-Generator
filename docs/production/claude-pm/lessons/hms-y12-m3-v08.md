@@ -33,7 +33,7 @@ Scope: the eighth HMS video of the Year 12 focus area "Health in an Australian a
 - **Anchor.** The hospital entrance plate in 1, 2 and 9; the `CriterionBoard` in 2, 3 and 6; the five-gate strip in 4 and 8a to 8b.
 - **Simulation.** None physiological. The gate strip is logic (a token passes only if every gate is open). The criterion board's judgement line is logic (it unlocks only after a criterion is chosen).
 - **Board stages.** (1) v07's pyramid and building, then the hospital and the measuring card, scene 1; (2) the six roles on the criterion board, scene 2; (3) verdicts by row, scene 3; (4) the five-gate strip, scene 4; (5) the three settings, scene 5; (6) the four moves, scene 6; (7) memory, questions, handoff and notes.
-- **Open decisions for root.** (1) Approve one new plate, `hms-hospital-entrance-v1.png` (no people, signs, crosses or logos). (2) Note the dependency on two pending plates (v03's airstrip, v04's dental chair); coded fallback chips are specified.
+- **Open decisions for root: resolved (root, 24 Nov, fifth set).** (1) `hms-hospital-entrance-v1.png` approved. (2) v03's airstrip and v04's dental chair approved, so this video keeps both; the coded fallback chips stay specified only as a build fallback if a plate is not yet painted.
 
 Main question: *How effective is Australia's healthcare system, and effective for whom?*
 Entry knowledge: hms-y12-m3-v02 to v07; Year 11 HMS (recalled, as above).
@@ -213,8 +213,7 @@ Next: Who actually runs health in Australia?
 
 ## Open decisions
 
-- **One new plate (recommended: approve).** `hms-hospital-entrance-v1.png`; no people, signs, crosses or logos.
-- **Dependency.** Two pending plates (v03's airstrip, v04's dental chair) appear small; coded fallbacks are specified if either is not approved.
+- **Resolved by root (24 Nov, fifth set).** `hms-hospital-entrance-v1.png` approved; v03's airstrip and v04's dental chair approved, so both stay in scenes 3 and 5.
 
 ## Build ids
 

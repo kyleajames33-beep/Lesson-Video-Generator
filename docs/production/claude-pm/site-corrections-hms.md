@@ -2,7 +2,7 @@
 
 Read-only source audit by Claude (HMS design wave), started 23 November 2026. These are proposed repairs for the owner's site record, not website edits; nothing in the site clone was changed. Site clone: `C:/Users/kygs/teaching-app-fix` (branch main, site commit 5d74a6272). Exact old text keeps the page's spelling; where the source contains an em dash it is shown as a comma. Videos follow the correct science or syllabus, not the error.
 
-Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set). Items 18 to 22 (hms-y11-m2-v09 to v13) accepted by root (24 Nov 2026, Module 2 third set). Item 23 (hms-y11-m2-v16) follows root's 24 Nov ruling on the attention-focus wording. Item 24 (hms-y11-m2-v18) accepted by root (24 Nov 2026, fourth set). Items 25 (hms-y12-m3-v04) and 26 (hms-y12-m3-v06) pending.
+Root decision (23 Nov 2026): items 1 to 6 are accepted for the site record. Items 7 to 11 accepted by root (23 Nov 2026, second set). Item 12 accepted by root (third set). Items 13 (v15) and 14 (v16) accepted by root (fourth set, 23 Nov 2026). Items 15 and 16 (hms-y11-m2-v01) accepted by root (24 Nov 2026). Item 17 (hms-y11-m2-v06) accepted by root (24 Nov 2026, Module 2 second set). Items 18 to 22 (hms-y11-m2-v09 to v13) accepted by root (24 Nov 2026, Module 2 third set). Item 23 (hms-y11-m2-v16) follows root's 24 Nov ruling on the attention-focus wording. Item 24 (hms-y11-m2-v18) accepted by root (24 Nov 2026, fourth set). Items 25 (hms-y12-m3-v04) and 26 (hms-y12-m3-v06) accepted by root (24 Nov 2026, fifth set). Items 27 (hms-y12-m3-v09), 28 (hms-y12-m3-v11, also L09) , 29 (hms-y12-m3-v14) and 30 (hms-y12-m3-v17) pending.
 
 Scope so far: the site lessons read in full for the first two full designs (Year 11 L01 and L02), plus the misconception boxes of all 84 lessons scanned for the pre-design packs. Later designs append here.
 
@@ -271,3 +271,43 @@ Source hash: `e648fb55f66e6077f2295bb8f83db545d6cd30e782c639022c5038e1199c45a5`.
 **Correction:** "Incidence. The age-standardised rate of new diagnoses has fallen since about 2000 (AIHW reports a 45% drop between 2000 and 2021), possibly reflecting prevention, screening and awareness, while the number of people living with the condition keeps rising because people live with it for decades. This is the incidence-down, prevalence-up pattern from Lesson 5." For WE b1: "Type 2 diabetes is one of the most common chronic conditions in Australia, and the number of people living with it continues to grow."
 
 **Reason:** AIHW, *Diabetes: Australian facts* (summary, read 24 Nov 2026): "a steady decline in the age-standardised incidence rate for type 2 diabetes in Australia between 2000 and 2021", "an overall drop of 45%" (45,700 new diagnoses in 2021, 178 per 100,000; National Diabetes Services Scheme data). Prevalence still rises. Card 05's trend line ("prevalence rising over decades") is correct and unaffected. Video hms-y12-m3-v06 says "The rate of new cases has fallen by almost half since 2000. Yet prevalence keeps rising, because people live with it for decades." Severity: moderate (a trend direction in the worked profile). Science check to confirm.
+
+## 27. subjects/health-movement-science/year12/module3/lesson09.sa.html
+
+Source hash: `7b7c201c009ed1036a1b5b81200ba60e778d6d39d959351ddbd3418df216e50e`. Card 04 ("Who is responsible for what"), the federal column; also Activity 1's model answer 1 ("practitioners registered federally").
+
+**Exact old text:** "Regulates medicines, devices and health practitioner registration, and the private health insurance industry." and "practitioners registered federally".
+
+**Correction:** "Regulates medicines and devices, and the private health insurance industry. Health practitioner registration is a national scheme that every state and territory set up by passing the same national law, overseen jointly by all health ministers." and "practitioners registered under the national registration scheme".
+
+**Reason:** the National Registration and Accreditation Scheme for health practitioners operates under the Health Practitioner Regulation National Law, which each state and territory adopted in its own legislation; it is a joint scheme of all Australian governments, not a Commonwealth function. Placing it in the federal column also undercuts the page's own point that responsibility is shared. Video hms-y12-m3-v09 lists only medicines and insurance as federal regulation and does not assign registration to one level. Severity: minor (attribution). Science check to confirm.
+
+## 28. subjects/health-movement-science/year12/module3/lesson11.sa.html (and lesson09.sa.html)
+
+Source hash (lesson11): `c42d4a82cf8ed9e587c5938f70fc522b323d03e6dbe10c4a83e741c6741ab510`. Card 07 ("Related Commonwealth-funded programs"), the My Aged Care paragraph; Activity 1 item 4; also lesson09.sa.html Activity 1 item 3 and its model answer ("A home care package delivered by a not-for-profit organisation").
+
+**Exact old text:** "The entry point to federally funded aged care: assessment, then home support, home care packages or residential care." and "needs a home care package that has not yet been assigned" (L11); "A home care package delivered by a not-for-profit organisation." (L09).
+
+**Correction:** "The entry point to federally funded aged care: assessment, then support at home or residential care. (Since 1 November 2025, under the new Aged Care Act, the Support at Home program has replaced Home Care Packages and short-term restorative care; the entry-level home support program is due to move across later.)" L11 Activity 1 item 4: "needs home support services that have not yet been assigned". L09 Activity 1 item 3: "Aged care services in an older person's home, delivered by a not-for-profit organisation."
+
+**Reason:** the Home Care Packages Program closed to new arrangements when Support at Home began on 1 November 2025 (Department of Health, Disability and Ageing). Students in 2026 and later will meet the current program name; the page's other points (assessment, ageing in place, waiting times, navigation) still hold. Videos hms-y12-m3-v09 and v11 do not use the retired name. Severity: minor (dated program name). Science check to confirm the commencement date and the entry-level program's transition.
+
+## 29. subjects/health-movement-science/year12/module3/lesson14.sa.html
+
+Source hash: `66ae95795c899ee7f0cc883c682d7dd1578a7b18e3a5b9a99610fd93417c9530`. Worked response we-hms-y12-m3-l14-b1 ("Investigate the current and emerging challenges facing the Australian healthcare system"), step 4 ("Report the findings: current pressures") and the same clause in step 7.
+
+**Exact old text:** "And rising out-of-pocket costs, including falling bulk-billing rates, increasingly determine whether primary care is accessed at all."
+
+**Correction:** "And out-of-pocket costs, especially for services at or beyond the edge of universal coverage such as specialist gaps, dental and allied health, increasingly determine whether care is accessed at all."
+
+**Reason:** GP bulk-billing rates fell from 2022 into 2023, but rose after the Commonwealth tripled the bulk-billing incentive in November 2023, and the incentive was extended to all patients from November 2025. "Falling bulk-billing rates" is out of date as a present-tense finding, and a student quoting it in 2026 states a reversed trend. The worked response's point about out-of-pocket costs stands without it. Video hms-y12-m3-v14 states no bulk-billing trend. Severity: minor (dated trend). Science check to confirm the latest Medicare statistics before release.
+
+## 30. subjects/health-movement-science/year12/module3/lesson17.sa.html
+
+Source hash: `290bb9e8ea6763e869877b1eb257431e6d04bd896907bc50bc72987de2794320`. Card 05 ("What services exist in Australia", the shared record paragraph) and card 08 ("What would actually make it work", condition 1).
+
+**Exact old text:** "Crucially, it is a summary that providers choose to contribute to, not a complete clinical record automatically fed by every system." and "Contribution has to be the default, not a choice. A shared record is only as good as what is in it, and voluntary contribution guarantees an incomplete record."
+
+**Correction:** "Crucially, it is a summary, not a complete clinical record. Contribution has mostly been the provider's choice; legislation passed in 2025 now requires prescribed providers, starting with pathology and diagnostic imaging, to share key reports by default, phased in from 2025 to 2026." and for card 08: "Contribution has to be the default, not a choice. Australia has begun this for some test results; for most other documents contribution is still voluntary, and voluntary contribution guarantees an incomplete record."
+
+**Reason:** the "sharing by default" amendments to the national shared record legislation (2025) changed the voluntary model for some report types. The page's argument still holds for most documents, but as written it tells 2026 students that no default exists. Video hms-y12-m3-v17 says "Uploading has mostly been the provider's choice, and new rules are starting to make some test results upload by default." Severity: minor (dated). Science check to confirm the Act's title, the prescribed provider types and the commencement dates before voicing.

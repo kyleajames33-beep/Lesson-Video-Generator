@@ -214,7 +214,7 @@ Next: How effective is Australia's healthcare system, and for whom?
 
 ## Open decisions
 
-- **Two new plates (recommended: approve).** `hms-walking-frame-bench-v1.png` and `hms-community-bus-ramp-v1.png`; no people; the bus unbranded.
+- **Two new plates (recommended: approve).** **Resolved by root (24 Nov, fifth set): approved/accepted.** `hms-walking-frame-bench-v1.png` and `hms-community-bus-ramp-v1.png`; no people; the bus unbranded.
 
 ## Build ids
 
