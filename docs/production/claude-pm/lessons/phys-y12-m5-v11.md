@@ -83,7 +83,7 @@ The Revision 2 visual upgrade is already written into each scene's Visual line (
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *v*, *Δv*, *a*, *T*, *f*, *ω*, *r*, *F*, *m*. Paper background and handwritten headline face as the explainer house style.
 
 ### 1. hook (is the tip accelerating?)
-> Here's that crane again, seen from above, turning at a steady rate. The tip of its jib goes round and round a circle, and its speed never changes. Each of these arrows shows the tip's velocity at one moment, and they're all the same **length**. So here's a question. Is the tip of the jib **accelerating**? Make a **prediction**.
+> Here's a crane, seen from above, turning at a steady rate. The tip of its jib goes round and round a circle, and its speed never changes. Each of these arrows shows the tip's velocity at one moment, and they're all the same **length**. So here's a question. Is the tip of the jib **accelerating**? Make a **prediction**.
 
 Visual: opens on v10's final frame (see "Opening frame"); the jib keeps slewing. On "turning at a steady rate" the painted tower crane plate (`y12p-tower-crane-v1.png`, side view, uniform scale, about 420 px wide) slides in at the left with a curved navy arrow round its mast and the hand tag navy "same crane, from above"; a dashed navy line joins its jib tip to the tip dot in the top view. On "length" the four teal arrows pulse together and the readout "speed: constant" glows. On "accelerating" two chips write beside the circle: "No: its speed is constant" and "Yes". Teal hand tag "same length" beside the four arrows and an ink pen ring round the "speed: constant" readout. On "prediction" a 3 s `Countdown` (chips 36 px).
 
@@ -362,3 +362,5 @@ Counts: 6,274 characters, unchanged; about 549 s (it was about 554 s; the notes 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root, 24 Nov 2026 (owner approved): the first sentence of the hook is now neutral ("Here's a ..." instead of "Here's that ..."), so one take serves both the 2017 order and the 2025 order, where the previous video changes. Hook narration changed; brief 265 re-voices the hook scene only.

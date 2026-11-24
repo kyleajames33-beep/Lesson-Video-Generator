@@ -79,7 +79,7 @@ The Revision 2 visual upgrade is already written into each scene's Visual line (
 Cue words in **bold** trigger the visual change. Exact frames are set from the recording's word timings. Screen symbols in italic: *τ*, *r*, *r⊥*, *F*, *θ*. Paper background and handwritten headline face as the explainer house style.
 
 ### 1. hook (rank the pushes)
-> Here's that spanner on a stuck nut. Its handle is twenty-five centimetres long, and each push on the end is eighty newtons. One push is at right angles to the handle, one is at thirty degrees to it, and one points straight along the handle, towards the **nut**. Same force, same spot. Rank them. Which turns the nut best, and does any of them do nothing at **all**?
+> Here's a spanner on a stuck nut. Its handle is twenty-five centimetres long, and each push on the end is eighty newtons. One push is at right angles to the handle, one is at thirty degrees to it, and one points straight along the handle, towards the **nut**. Same force, same spot. Rank them. Which turns the nut best, and does any of them do nothing at **all**?
 
 Visual: opens on v08's final frame (see "Opening frame"). On "twenty-five centimetres" a navy bracket along the handle "0.25 m" from the nut centre to the handle end. On "eighty newtons" each of the three amber arrows gets "80 N". On "at right angles" the perpendicular arrow brightens with a right-angle mark; on "thirty degrees" the 30° arrow brightens with an arc "30°"; on "nut" the along-handle arrow brightens. Hand tags: amber "same force" by the three labels and an ink pen ring round the handle end ("same spot"). On "all" a 3 s `Countdown` runs beside three chips (36 px) "A: right angles", "B: 30°", "C: along the handle" and a small ranking strip "best → worst".
 
@@ -362,3 +362,5 @@ Root label edit (21 Nov 2026): scene 5's course label became "which you'll also 
 Speech changes needed: none.
 
 Calls for root: none.
+
+Root, 24 Nov 2026 (owner approved): the first sentence of the hook is now neutral ("Here's a ..." instead of "Here's that ..."), so one take serves both the 2017 order and the 2025 order, where the previous video changes. Hook narration changed; brief 265 re-voices the hook scene only.
