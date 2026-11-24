@@ -1,8 +1,8 @@
 # HMS Year 11 V08 (Health for individuals and communities): the health status of young people. If young people are the healthiest age group, why do health reports still worry about them? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). Burden figure (root's open question, resolved 23 Nov): AIHW does not publish one combined share for mental and substance use disorders plus injuries at 15 to 24, so the bars stay "illustrative pattern"; scene 2 adds the confirmed dated finding from AIHW, *Australia's youth: Health of young people* (2024 data; page last updated June 2026, amended 19 Aug 2026), "In 2024, mental health and behavioural conditions contributed the greatest burden among young people", source and year on screen, flagged for release re-check (https://www.aihw.gov.au/reports/children-youth/health-of-young-people).
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). Burden figure (root's open question, resolved 23 Nov): AIHW does not publish one combined share for mental and substance use disorders plus injuries at 15 to 24, so the bars stay "illustrative pattern"; scene 2 adds the confirmed dated finding from AIHW, *Australia's youth: Health of young people* (2024 data; page last updated June 2026, amended 19 Aug 2026), "In 2024, mental health and behavioural conditions contributed the greatest burden among young people", source and year on screen, flagged for release re-check (https://www.aihw.gov.au/reports/children-youth/health-of-young-people).
 
-Narration 5,918 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 545 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,925 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 545 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the eighth HMS video and the first of the "key issues" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v08**. Pre-design pack `../pre-design/hms/hms-y11-m1-v08.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson08.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v07.md`.
 
@@ -79,9 +79,9 @@ Visual: board change to the chain stage (solid from its first frame): v05's `Det
 Visual: the chain stays. On "where the determinants become visible" the behaviours box glows and the boxes above it dim to show the path down, grey tag "visible here, caused above". On "the link people get blamed for" a chip "they just choose badly" writes beside the behaviours box and is crossed in red, red hand tag "last link, not first cause" (34 px). On "help the already advantaged first" v05's campaign model returns small (the two bars and readouts "average up, gap wider"). Hold one second.
 
 ### 8. Aboriginal and Torres Strait Islander young people
-> The syllabus names Aboriginal and Torres Strait Islander young people, and this needs precision. As we saw earlier, the inequities have historical and structural causes: colonisation, dispossession, the forced removal of children, continuing disadvantage, racism, and services that haven't been culturally safe. They're not explained by culture or by choices. These causes work through the determinants you know, and they cluster, so their effects multiply. But describe strengths too. Connection to culture, community and Country protects social and emotional wellbeing, and community-controlled health services work because communities run them. An answer listing only gaps tells a deficit story.
+> The syllabus names Aboriginal and Torres Strait Islander young people, and this needs precision. As we saw earlier, the inequities have historical and structural causes: colonisation, dispossession, the forced removal of children, continuing disadvantage, racism, and services that haven't been culturally safe. They're not explained by culture or by choices. These causes work through the determinants you know, and they cluster, so their effects compound. But describe strengths too. Connection to culture, community and Country protects social and emotional wellbeing, and community-controlled health services are trusted because communities run them. An answer listing only gaps tells a deficit story.
 
-Visual: board change to the two-column board (solid from its first frame): headings "inequities: causes" (warm) and "strengths and protection" (green), both columns empty; v05's chain small between them. On "historical and structural causes" the left column writes, one line per cue (34 px): "colonisation", "dispossession", "forced removal of children", "continuing disadvantage", "racism; services not culturally safe". On "not explained by culture or by choices" a chip "culture explains the gaps" writes and is crossed in red, red hand tag "historical and structural" (34 px). On "they cluster" several chain boxes light together with the "×" from v05. On "describe strengths too" the right column writes: "connection to culture, community and Country", "community-controlled health services", "social and emotional wellbeing" (the v01 ring returns small). On "a deficit story" a grey tag "deficit story: only the gaps" and an amber bracket joining both columns "both, in one answer" (42 px). No community, organisation, person, place or symbol named or drawn. Hold one second.
+Visual: board change to the two-column board (solid from its first frame): headings "inequities: causes" (warm) and "strengths and protection" (green), both columns empty; v05's chain small between them. On "historical and structural causes" the left column writes, one line per cue (34 px): "colonisation", "dispossession", "forced removal of children", "continuing disadvantage", "racism; services not culturally safe". On "not explained by culture or by choices" a chip "culture explains the gaps" writes and is crossed in red, red hand tag "historical and structural" (34 px). On "they cluster" several chain boxes light together with the compounding bar from v05, tag "they compound" (34 px). On "describe strengths too" the right column writes: "connection to culture, community and Country", "community-controlled health services", "social and emotional wellbeing" (the v01 ring returns small). On "a deficit story" a grey tag "deficit story: only the gaps" and an amber bracket joining both columns "both, in one answer" (42 px). No community, organisation, person, place or symbol named or drawn. Hold one second.
 
 ### 9. memory
 > Two things to remember. Young people are low in illness and high in leverage. And the factors that protect them most are conditions and relationships, not decisions.
@@ -154,7 +154,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5918 characters**, 15 scene files. At 13.3 characters per second the speech is about 445 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 545 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5925 characters**, 15 scene files. At 13.3 characters per second the speech is about 445 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 545 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -165,7 +165,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 5. why the protective list is the useful one | 457 |
 | 6. determinants shape behaviours | 552 |
 | 7. where determinants become visible | 320 |
-| 8. Aboriginal and Torres Strait Islander young people | 698 |
+| 8. Aboriginal and Torres Strait Islander young people | 705 |
 | 9. memory | 165 |
 | 10a. attempt one (behaviour or determinant?) | 292 |
 | 10b. feedback, item one | 384 |
@@ -255,3 +255,13 @@ Review: `../checks/hms-y11-m1-v08-learning-review.md` and the module summary `..
 6. **Module finding 9, double teaching (note).** Accepted. Scene 8 opens its causes sentence with "As we saw earlier," so the historical and structural causes read as a recall of v05.
 
 Narration changed in scenes 2, 3 and 8. Recount: 5,918 characters, about 545 s (Revision 1: 5,812, about 537 s). `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v08-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 8: "multiply".** Accepted (root ruling 5): "and they cluster, so their effects compound." The chain boxes now light with v05's compounding bar and the tag "they compound", not a multiplication sign.
+2. **Should fix, scene 8: "work because communities run them".** Accepted: "community-controlled health services are trusted because communities run them."
+3. **Note, scene 8, connection to culture protects wellbeing.** Supported; no change.
+
+Narration changed in scene 8. Recount: 5,925 characters, about 545 s (Revision 2: 5,918, about 545 s). `cues.py`: 0 findings. Joins unchanged.

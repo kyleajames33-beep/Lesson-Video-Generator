@@ -1,6 +1,6 @@
 # HMS Year 11 V09 (Health for individuals and communities): researching one health issue. How do you research one youth health issue well enough to propose something that would actually work? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, four reused (see Assets). Two dated ABS figures on screen (scene 3), flagged for release re-check.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m1-v09-science-check.md`); no design change; error check next. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, four reused (see Assets). Two dated ABS figures on screen (scene 3), flagged for release re-check.
 
 Narration 6,122 characters (17 scene files, counted by script from lines starting "> " with bold markers removed), about 566 s including holds, two countdowns and the 45 s notes hold.
 

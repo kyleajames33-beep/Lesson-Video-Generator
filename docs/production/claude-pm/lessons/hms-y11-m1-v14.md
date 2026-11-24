@@ -1,8 +1,8 @@
 # HMS Year 11 V14 (Health for individuals and communities): organisations and communities as advocates. Who else advocates for young people's health, government, NGOs or communities, and how would we know if any of them made a difference? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
 
-Narration 6,102 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,108 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the fourteenth HMS video and the second of the "opportunities" inquiry question. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v14**. Pre-design pack `../pre-design/hms/hms-y11-m1-v14.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson14.sa.html` (read in full, 23 Nov; sha256 `72d70cd0fc8e4118b7819fd601fe6e3bee4e99dd34530a745fb92102d5042a3d`). Previous design `hms-y11-m1-v13.md`.
 
@@ -79,7 +79,7 @@ Visual: board change to the community health service board (solid from its first
 Visual: board change to the impact staircase (solid from its first frame): the `ImpactStairs` at the centre, five unlabelled steps rising left to right, grey at the bottom to green at the top. On "the poster campaign" v09's crossed chip "500 posters = success" returns small at the top left with a grey tag "from the poster campaign"; on "counting what you did isn't counting what changed" it slides onto the (still unlabelled) bottom step. This is a one-line recall, not a re-teach. On "Impact" the gloss writes "impact: a measured change in health, or in what causes it" (38 px). On "Activity" step 1 labels "activity" with a claim card "40 workshops" on "we ran forty workshops"; on "Output" step 2 "output", gloss "output: how many were contacted" (30 px), claim "12,000 reached" on "twelve thousand young people"; on "Awareness" step 3 "awareness", claim "could name 3 symptoms", with v05's grey tag "knowledge rarely changes behaviour" returning small; on "Behaviour" step 4 "behaviour", claim "more asked for help"; on "outcome" step 5 "outcome" (green, label "impact") with claim "the rate changed" on "the rate itself changed". On "the lower steps" a cloud of small grey claim chips settles on steps 1 and 2, grey tag "where most claims sit". Hold one second.
 
 ### 8. the strategy checklist grows, and two honest complications
-> To judge any claim, use the strategy checklist from the sleep proposal. Three lines you know. Reach: who was contacted, and who was missed? Level: did it change a behaviour, or a condition? And evidence: was it measured, with a comparison, ideally by someone independent? Two lines are new. Equity: did the gap narrow, or widen? Durability: did the effect outlast the funding? Two honest complications. Attribution is hard, so no single organisation can claim the fall in youth smoking. And community groups are the least evaluated, so their effect is under-recorded.
+> To judge any claim, use the strategy checklist from the sleep proposal. Three lines you know. Reach: who was contacted, and who was missed? Level: did it change a behaviour, or a condition? And evidence: was it measured, with a comparison, ideally by someone independent? Two lines are new. Equity: did the gap narrow, or widen? Durability: did the effect outlast the funding? Two honest complications. Attribution is hard, so no single organisation can claim the fall in youth smoking. And community groups are often the least evaluated, so their effect is under-recorded.
 
 Visual: the staircase stays at the left; on "the strategy checklist from the sleep proposal" v09's titled "strategy checklist" returns at the right with its five tests in grey and its dashed "more later" line (34 px). On "Three lines you know" three of its lines glow and rewrite for a claim, each with a grey tag "from the sleep proposal" (30 px): "reach: who was missed?" on "Reach"; "level: behaviour or condition?" on "Level"; "evidence: measured, with a comparison, independent?" on "evidence". On "Two lines are new" the dashed line becomes two amber lines with tag "new": "equity: gap narrower or wider?" on "Equity", with v05's `CampaignModel` small, readouts "average up, gap wider"; "durability: after the funding?" on "Durability", a grant bar ending with the effect line either holding or falling. A fresh dashed "more later" line sits under them. On "Attribution is hard" the gloss "attribution: showing which action caused the change" (30 px) and v08's smoking line (green, falling, "illustrative pattern") draws small with five arrows feeding into it (tax, advertising limits, packaging, education, NGO campaigns); on "no single organisation can claim" a chip "we did it" is crossed in grey. On "the least evaluated" the community column's limit piece glows "rarely evaluated", and on "under-recorded" a grey tag "no evidence ≠ no effect". Hold one second.
 
@@ -148,7 +148,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 - **Tobacco excise and young people (3).** Price increases reduce smoking, with larger effects among young people (WHO; Cancer Council Tobacco in Australia, chapter 13). Correct.
 - **NGO funding tension (4).** Many Australian health NGOs receive substantial government funding; the site's claim, stated generally. Correct as a general claim.
 - **Aboriginal Community Controlled Health Organisations (6).** Primary health care services initiated and operated by the local Aboriginal community, governed by an elected board, delivering holistic, culturally appropriate care (NACCHO definition; not named on screen). The National Agreement on Closing the Gap (2020) Priority Reform Two commits to building the community-controlled sector (spoken as "national policy commits to strengthening"). Reviewer to confirm the spoken wording.
-- **Vaping chain, as at 2026 (9).** From 1 January 2024 the Commonwealth banned importation of disposable vapes, and from 1 July 2024 restricted supply of vapes to pharmacies (therapeutic pathway), with later amendments. "Only government could restrict import and supply" is correct; **release re-check** of the current position before voicing, because the policy has changed several times.
+- **Vaping chain, as at 2026 (9).** From 1 January 2024 the Commonwealth banned importation of disposable vapes; from 1 March 2024 the importation of all non-therapeutic vapes; from 1 July 2024 supply of vapes was restricted to pharmacies (therapeutic pathway); and from 1 October 2024 pharmacists could supply some vapes without a prescription (Revision 3, science check; TGA, "Reforms to the regulation of vapes"). "Only government could restrict import and supply" is correct; **release re-check** of the current position before voicing, because the policy has changed several times.
 - **Attribution and youth smoking (8).** As v09 scene 7; no figures.
 - **Numbers used.** 40 workshops, 12,000 reached, "name 3 symptoms" (site examples, scene 7); visits to a youth service up by a third (attempt 1, Revision 2, invented for the item; a ratio only, no figure to check).
 - **Official figures.** None.
@@ -161,7 +161,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6102 characters**, 16 scene files. At 13.3 characters per second the speech is about 459 s; add 32 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6108 characters**, 16 scene files. At 13.3 characters per second the speech is about 459 s; add 32 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -172,7 +172,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 5. communities, and control | 555 |
 | 6. Aboriginal Community Controlled Health Organisations | 611 |
 | 7. activity is not impact | 491 |
-| 8. the strategy checklist grows, and two honest complications | 567 |
+| 8. the strategy checklist grows, and two honest complications | 573 |
 | 9. why all three are needed | 340 |
 | 10. memory | 143 |
 | 11a. attempt one (service visits up) | 255 |
@@ -265,3 +265,13 @@ Review: `../checks/hms-y11-m1-v14-learning-review.md` and the module summary `..
 Length offset: scene 9's three "alone" sentences became "Each one alone leaves gaps." (scenes 3 to 5 already state each limit, and the interlock shows them).
 
 Narration changed in scenes 5, 7, 8, 9, 11a and 11b. Recount: 6,102 characters, about 561 s (Revision 1: 6,082, about 559 s). `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v14-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, facts section: vaping timeline.** Taken: the list now gives 1 January, 1 March, 1 July and 1 October 2024 (TGA), so the release re-check starts from the full timeline. **Release re-check stays:** the current vaping regulation position is confirmed at voicing.
+2. **Note, scene 8: "the least evaluated".** Taken: "community groups are often the least evaluated".
+3. **Note, scene 3: "often least trusted".** Fair with "often"; no change.
+
+Narration changed in scene 8 (6 characters). Recount: 6,108 characters, about 561 s (Revision 2: 6,102, about 561 s). `cues.py`: 0 findings. Joins unchanged.

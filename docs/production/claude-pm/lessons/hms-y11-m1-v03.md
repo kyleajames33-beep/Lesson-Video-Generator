@@ -1,8 +1,8 @@
 # HMS Year 11 V03 (Health for individuals and communities): measuring a population's health. How can we tell how healthy a whole population is, when every number only shows part of the picture? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets).
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, two reused (see Assets).
 
-Narration 6,075 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 561 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,164 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the third HMS video. Course brief `../hms-design-brief.md` (including the root rulings of 23 Nov). Route entry **hms-y11-m1-v03** in `docs/production/hms-video-route.json`. Pre-design pack `../pre-design/hms/hms-y11-m1-v03.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson03.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v02.md` (its handoff frame is this video's first frame). Templates: `bio-y11-fa1-v01.md`; calculation layout `math-a12-d10.md` (g01).
 
@@ -58,9 +58,9 @@ Visual: board change to the epidemiology board (solid from its first frame): the
 Visual: board change to the measures bench (solid from its first frame): a g01 `WorkedExample` panel at the left with task strip already written ("Which town has the higher death rate?"), and two coded town blocks above it: "Town A: 20 deaths, population 10,000" and "Town B: 60 deaths, population 60,000" (38 px). On "mortality" a gloss writes above the panel, "mortality: deaths, counted or as a rate" (38 px). On "a rate per 100,000 people" the equation strip writes "rate = count ÷ population × 100,000" (52 px). On "a count can't compare" the two counts (20 and 60) take a grey bracket with the tag "counts: B looks worse", then the working writes one stage at a time: "A: 20 ÷ 10,000 × 100,000 = 200 per 100,000", "B: 60 ÷ 60,000 × 100,000 = 100 per 100,000", and the framed answer "Town A's rate is double Town B's" (green); a red-crossed chip "B has more deaths, so B is worse" (34 px). On "registered by law" a grey tag "most reliable: deaths are registered"; on "says nothing about anyone still alive" a warm tag "blind to the living". On "Infant mortality" the panel clears and a coded grid of 1,000 small squares ("1,000 live births") draws at the right; its gloss writes "infant mortality: deaths before age one, per 1,000 live births" (38 px). On "housing, nutrition and access to care" three olive chips write beside the grid. On "most sensitive signs" an amber hand tag "a sensitive sign of living conditions" (42 px). No figure of an infant or a cot. Hold one second.
 
 ### 4. morbidity
-> **Morbidity** is the illness, disease and injury carried by people who are alive. In a country like Australia, where many conditions are managed for decades rather than being quickly fatal, that's where most of the burden sits. But morbidity is harder to measure, because an illness only gets counted when someone goes to a service, is diagnosed, and is recorded. If you never walk in the door, you never appear in the data.
+> **Morbidity** is the illness, disease and injury carried by people who are alive. In a country like Australia, where many conditions are managed for decades rather than being quickly fatal, that's where most of the burden sits. But morbidity is harder to measure, because most illness data come from services, so an illness usually gets counted only when someone goes to a service, is diagnosed, and is recorded. Surveys fill some of the gap, but if you never walk in the door, you often don't appear in the data.
 
-Visual: the bench stays (the infant grid shrinks to the upper left). On "Morbidity" the gloss writes "morbidity: illness, disease and injury among the living" (44 px, olive) and in the population grid many dots turn olive (living with a condition) while a few turn warm (deaths); an amber bracket "most of the burden" covers the olive dots on "most of the burden sits". On "harder to measure" new plate `hms-empty-gp-waiting-room-v1.png` (an empty clinic waiting room with chairs, a reception desk and a check-in screen, no people) enters at the right (about 480 px tall). On "goes to a service, is diagnosed, and is recorded" a coded three-gate strip draws across the plate's foot: "presents", "diagnosed", "recorded", each with a tick as the cue word is spoken. On "never appear in the data" several olive dots in the grid turn hollow grey (present but uncounted), grey tag "uncounted". Hold one second.
+Visual: the bench stays (the infant grid shrinks to the upper left). On "Morbidity" the gloss writes "morbidity: illness, disease and injury among the living" (44 px, olive) and in the population grid many dots turn olive (living with a condition) while a few turn warm (deaths); an amber bracket "most of the burden" covers the olive dots on "most of the burden sits". On "harder to measure" new plate `hms-empty-gp-waiting-room-v1.png` (an empty clinic waiting room with chairs, a reception desk and a check-in screen, no people) enters at the right (about 480 px tall). On "goes to a service, is diagnosed, and is recorded" a coded three-gate strip draws across the plate's foot: "presents", "diagnosed", "recorded", each with a tick as the cue word is spoken. On "Surveys fill some of the gap" a small coded clipboard card writes at the strip's end, grey tag "surveys catch some" (30 px), and a few hollow dots fill olive. On "don't appear in the data" several olive dots in the grid turn hollow grey (present but uncounted), grey tag "uncounted". Hold one second.
 
 ### 5. incidence, prevalence and the bathtub
 > The last two measures are the ones most often confused. **Incidence** counts new cases in a period, like a year. **Prevalence** counts all the cases present at one time, new and old together. Think of a bath. Incidence is the tap, the flow of new cases coming in. Prevalence is the water level, how many cases are in the bath right now. And the drain is people leaving, because they recover or they die.
@@ -123,7 +123,7 @@ Heading on screen: "Key notes: what to write in your book".
 
 1. Epidemiology: patterns and causes of health and disease in populations.
 2. Mortality: deaths per 100,000. Infant mortality: under one, per 1,000 births.
-3. Morbidity: illness among the living; only counted if people present.
+3. Morbidity: illness among the living; mostly counted only if people present.
 4. Incidence: new cases in a period. Prevalence: all cases at one time.
 5. Table: unit, who, age-standardised?, direction, what's missing.
 
@@ -134,7 +134,7 @@ Memory card (the scene 10 card) beside the notes. Notes 38 px; note 4 teal and b
 Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card, not read aloud; tag "HSC-style question, written for HSCScience". Item 1 original; item 2 the site's WE b1 stem verbatim.
 
 1. (11a, 3 marks.) Town of 50,000; 150 newly diagnosed in one year; 1,200 living with the condition at year end.
-   Model: (a) incidence 150, prevalence 1,200 (1 mark). (b) rate = 150 ÷ 50,000 × 100,000 (1 mark) = 300 per 100,000 (1 mark). Classic slip crossed: "incidence = 1,200". Other wrong chains: dividing 1,200 by the population for (b); "300 per cent".
+   Model: (a) incidence 150, prevalence 1,200 (1 mark; a prevalence also given as a rate, 2,400 per 100,000 or 2.4 per cent, is accepted). (b) rate = 150 ÷ 50,000 × 100,000 (1 mark) = 300 per 100,000 (1 mark). Classic slip crossed: "incidence = 1,200". Other wrong chains: dividing 1,200 by the population for (b); "300 per cent".
 2. (11c, 4 marks.) Distinguish incidence and prevalence with an opposite-direction example.
    Model (the site's, shortened): parallel definitions (1 mark); the difference named, prevalence also depends on duration (1 mark); an example in which incidence falls (prevention) while prevalence rises (treatment that prevents death without cure) (1 mark); the divergence explained, people who would have died remain cases, so it signals success (1 mark). Classic mistake crossed: "prevalence up, so it's spreading".
 
@@ -159,14 +159,14 @@ Self-check (23 Nov), arithmetic by Python. The Codex science check must confirm 
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6075 characters**, 16 scene files. At 13.3 characters per second the speech is about 457 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 561 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6164 characters**, 16 scene files. At 13.3 characters per second the speech is about 463 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 567 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (from one person to many) | 410 |
 | 2. epidemiology | 489 |
 | 3. mortality, rates and infant mortality | 527 |
-| 4. morbidity | 420 |
+| 4. morbidity | 509 |
 | 5. incidence, prevalence and the bathtub | 395 |
 | 6. what the bathtub predicts | 492 |
 | 7. reading any table: five questions | 487 |
@@ -265,3 +265,13 @@ Review: `../checks/hms-y11-m1-v03-learning-review.md` and the module summary `..
 5. **Note, the "Last time" opening.** No change, as advised.
 
 Narration changed in scenes 9, 11b and 12. Recount: 6,075 characters, about 561 s (Revision 1: 6,031, about 557 s). `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v03-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 4 and key note 3: morbidity is also measured by surveys.** Accepted with the checker's wording: "...because most illness data come from services, so an illness usually gets counted only when someone goes to a service, is diagnosed, and is recorded. Surveys fill some of the gap, but if you never walk in the door, you often don't appear in the data." A small coded clipboard card with the grey tag "surveys catch some" now writes on "Surveys fill some of the gap", and the uncounted-dots cue moves to "don't appear in the data". Key note 3: "Morbidity: illness among the living; mostly counted only if people present."
+2. **Note, scene 3, "the most reliable measure we have".** Kept (acceptable at this level, as the checker says).
+3. **Note, 11a/11b, prevalence as a rate.** Taken in the model: a prevalence also given as a rate (2,400 per 100,000 or 2.4 per cent) is accepted.
+
+Narration changed in scene 4. Recount: 6,164 characters, about 567 s (Revision 2: 6,075, about 561 s), under the 570 s cap. `cues.py`: 0 findings. Joins unchanged.

@@ -1,8 +1,8 @@
 # HMS Year 11 V18 (Health for individuals and communities): the SDGs in a local community. How could the SDGs actually change young people's health in one local community, rather than just decorate a school wall? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, four reused (see Assets). No official figures.
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: two new, four reused (see Assets). No official figures.
 
-Narration 5,884 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 540 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,895 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 541 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the eighteenth HMS video and the last of the Year 11 focus area "Health for individuals and communities". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v18**. Pre-design pack `../pre-design/hms/hms-y11-m1-v18.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson18.sa.html` (read in full, 23 Nov; sha256 `f0f6afeb0c8c70c6601c7ddf02c000e3eaf3ceb364aff4438c671e5bb769eb35`). Previous design `hms-y11-m1-v17.md`.
 
@@ -132,7 +132,7 @@ Feedback spoken lengths about 27 s (9b) and 31 s (9d) by script; time the exact 
 ## Numbers or facts to verify
 
 Self-check (23 Nov). The Codex science check must confirm each before voicing.
-- **Local government and the targets (2).** UN-Habitat and the SDSN estimate that around 65% of the 169 targets cannot be achieved without local and regional government involvement. Spoken as "most of the targets". Reviewer to confirm the source.
+- **Local government and the targets (2).** Revision 3 (science check): the UN inter-agency figure of at least 65 per cent describes targets "linked to the work and mandates of local and regional governments"; the "cannot be reached without" figure is the OECD's at least 105 of 169 (about 62 per cent; *A Territorial Approach to the Sustainable Development Goals*, 2020) or UN-Habitat's "the majority". Spoken as "most of the targets", which both support.
 - **Voluntary Local Reviews (2).** Several Australian cities and councils have published VLRs or SDG reports. General; no council named.
 - **Council responsibilities (2).** Parks, pools, lighting, footpaths, local planning, libraries, community grants and food safety inspection are typical Australian council functions; water quality varies by state (often a utility). Reviewer to confirm "food and water safety" is fair as a general list or soften to "food safety".
 - **The case (1, 5).** The site's invented town and figures ($1,400; about a third skip breakfast; two buses a day). Labelled as a case, not data.
@@ -147,7 +147,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5884 characters**, 14 scene files. At 13.3 characters per second the speech is about 442 s; add 28 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 540 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5895 characters**, 14 scene files. At 13.3 characters per second the speech is about 443 s; add 28 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 541 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -156,7 +156,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 3. awareness is not localisation | 633 |
 | 4. six steps from a need to a proposal | 628 |
 | 5. the town, done properly | 556 |
-| 6. three features of a good proposal | 580 |
+| 6. three features of a good proposal | 591 |
 | 7. the strategy checklist, applied to your own proposal | 604 |
 | 8. memory | 161 |
 | 9a. attempt one (the relabelled library) | 275 |
@@ -249,3 +249,11 @@ Narration changed in scenes 6, 7 and 9d. Recount: 5,884 characters, about 540 s 
 Noticed, not changed (for root): Decisions say the "actors outside the school" readout is 3 of 5, but scene 6 writes "4 of 5", and all five listed actors (council, transport authority, community organisation, council reference group, club) are outside the school. Fix the readout and "most of them aren't the school" at the build or science check.
 
 Root, 24 Nov 2026: readout fixed to "actors outside the school: 5 of 5" (all five listed actors are outside the school), with the narration in scene 6 now "and every one of them sits outside the school:" and its cue updated. Scene 6 narration changed (unvoiced).
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v18-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, facts section: the 65 per cent figure.** Taken: the source note now says the UN inter-agency "at least 65 per cent" describes targets linked to local and regional government mandates, and the "cannot be reached without" figure is the OECD's at least 105 of 169 (about 62 per cent) or UN-Habitat's "the majority". The narration ("most of the targets") is unchanged and true under both.
+
+No narration change. The recount corrects a stale Revision 2 figure: 5,895 characters, about 541 s (the header said 5,884, about 540 s). `cues.py`: 0 findings. Joins unchanged.

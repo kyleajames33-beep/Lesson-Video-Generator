@@ -1,6 +1,6 @@
 # HMS Year 11 V06 (Health for individuals and communities): young people across generations. Are young people today really so different from their parents' generation, or has only the form of growing up changed? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new (the anchor), two reused (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m1-v06-science-check.md`); no design change; error check next. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new (the anchor), two reused (see Assets).
 
 Narration 5,542 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 517 s including holds, two countdowns and the 45 s notes hold.
 

@@ -1,6 +1,6 @@
 # HMS Year 11 V02 (Health for individuals and communities): the dynamic nature of health. If health is not a fixed state, what actually makes it change, and how do we describe a person whose health is moving? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: five new, one reused from v01 (see Assets).
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m1-v02-science-check.md`); no design change; error check next. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: five new, one reused from v01 (see Assets).
 
 Narration 5,704 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 533 s including holds, two countdowns and the 45 s notes hold.
 

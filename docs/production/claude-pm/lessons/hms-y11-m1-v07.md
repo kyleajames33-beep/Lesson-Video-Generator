@@ -1,8 +1,8 @@
 # HMS Year 11 V07 (Health for individuals and communities): investigating young people's meanings of health. How do you investigate what health means to young people so that your findings can actually be trusted? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
 
-Narration 6,002 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 551 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,972 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 549 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the seventh HMS video. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v07**. Pre-design pack `../pre-design/hms/hms-y11-m1-v07.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson07.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v06.md`.
 
@@ -92,9 +92,9 @@ Visual: board change to the memory card (solid from its first frame): the target
 Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A class runs the same health-meanings survey twice, once in the week after exams and once in a normal week, and gets very different results." Demand: "Identify whether this mainly damages validity, reliability or credibility, and propose a repair. (3 marks)" Picture: the survey clipboard plate small with two coded calendar chips, "week after exams" and "normal week", above two bars of clearly different lengths. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 10b. feedback, item one
-> It's reliability. The survey and the students were the same, but the conditions changed between the runs, so repeating the study didn't give the same result, for a reason unrelated to what health means to them. The repair is to run both at comparable times, with the same instructions. The classic mistake is calling it validity, but the questions still ask about the right thing.
+> Mainly reliability: run twice, it didn't give the same result. You could also argue validity, because the post-exam week added a condition unrelated to what health means to them. Either way, the repair is to run both at comparable times, with the same instructions. The classic mistake is calling it credibility, but nothing about the source changed.
 
-Visual: `FeedbackScene`: the card shrinks to the top; givens strip "same survey, twice", "after exams", "normal week" (30 px). On "It's reliability" the answer "reliability" writes in a green frame (52 px, teal edge) and the target picture runs its "valid, not reliable" condition (centred but wide: "yes", "wide"). On "the conditions changed" the givens "after exams" and "normal week" take amber underlines. On "comparable times, with the same instructions" a second green frame "repair: comparable times, same instructions". On "classic mistake" a chip "validity" writes and is crossed in red, red hand tag "right topic, results that don't repeat" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; givens strip "same survey, twice", "after exams", "normal week" (30 px). On "Mainly reliability" the answer "mainly reliability: the result didn't repeat" writes in a green frame (52 px, teal edge) and the target picture runs its "valid, not reliable" condition (centred but wide: "yes", "wide"). On "You could also argue validity" a smaller green frame writes beneath it, "also accepted: validity (an uncontrolled condition)" (38 px, blue edge), and on "the post-exam week" the givens "after exams" and "normal week" take amber underlines. On "comparable times, with the same instructions" a third green frame "repair: comparable times, same instructions" (the first frame dims to full-ink grey so at most three items are bright). On "classic mistake" a chip "credibility" writes and is crossed in red, red hand tag "the source didn't change" (34 px). Settle one second.
 
 ### 10c. attempt two (the site's justify question)
 > Second. Justify the choice of method for an investigation into the meanings of health for young people. Pause here to answer.
@@ -128,7 +128,7 @@ Memory card (the scene 9 card) beside the notes. Each bullet one line of at most
 Two unseen items (10a to 10d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video in Revision 2 (it tests the site's reliability idea on an unseen case); item 2 the site's WE b1 stem verbatim.
 
 1. (10a, 3 marks.) The same survey run twice, after exams and in a normal week (Revision 2: the site's three-interviewer case was scene 7's worked reliability example).
-   Model: reliability (1 mark), because the instrument and the participants were the same but the conditions changed between runs, so repeating the method did not reproduce the result (1 mark); repair: run both administrations at comparable times with the same instructions (1 mark). Classic mistake crossed: "validity". Other wrong chains: "credibility" (nothing about the source's interest); "ethics" (no harm or consent issue described).
+   Model (Revision 3): mainly reliability (1 mark), because the instrument and the participants were the same but the conditions changed between runs, so repeating the method did not reproduce the result (1 mark); validity is also accepted for both marks when it is reasoned as an uncontrolled condition (the post-exam week) affecting responses for a reason unrelated to what health means to the students; repair: run both administrations at comparable times with the same instructions (1 mark). Classic mistake crossed: "credibility" (nothing about the source changed). Other wrong chains: "ethics" (no harm or consent issue described).
 2. (10c, 5 marks.) Justify the choice of method for investigating young people's meanings of health.
    Model (the site's, shortened): the question needs qualitative data in participants' own words, including unanticipated meanings (1 mark); semi-structured interviews chosen because they can follow up and ask why (1 mark); a fixed-option survey rejected because its options constrain the meanings it can return, and a focus group because peers can suppress private meanings (1 mark); the cost, a small sample that cannot generalise and interviewer influence (1 mark); mitigated by a short open-response survey first and piloting (1 mark). Classic mistake crossed: praising the method without rejecting alternatives.
 
@@ -151,7 +151,7 @@ Self-check (23 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6002 characters**, 15 scene files. At 13.3 characters per second the speech is about 451 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 551 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5972 characters**, 15 scene files. At 13.3 characters per second the speech is about 449 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 549 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -165,7 +165,7 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 8. findings, conclusions and the next question | 530 |
 | 9. memory | 210 |
 | 10a. attempt one (the survey run twice) | 286 |
-| 10b. feedback, item one | 380 |
+| 10b. feedback, item one | 350 |
 | 10c. attempt two (the site's justify question) | 125 |
 | 10d. feedback, item two | 414 |
 | 11. decision rule and handoff | 413 |
@@ -254,3 +254,12 @@ Review: `../checks/hms-y11-m1-v07-learning-review.md` and the module summary `..
 5. **Note, 10d about 32 s.** Accepted: "Start from what the question needs:" became "The question needs". About 30 s.
 
 Narration changed in scenes 3, 10a, 10b and 10d. Recount: 6,002 characters, about 551 s (Revision 1: 5,999, about 551 s). `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v07-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Blocker, 10b feedback and the 10a model.** Resolved as root ruled (ruling 1): validity is accepted with its reasoning and "credibility" is crossed instead. 10b: "Mainly reliability: run twice, it didn't give the same result. You could also argue validity, because the post-exam week added a condition unrelated to what health means to them. Either way, the repair is to run both at comparable times, with the same instructions. The classic mistake is calling it credibility, but nothing about the source changed." On screen: the green answer frame "mainly reliability: the result didn't repeat", a smaller frame "also accepted: validity (an uncontrolled condition)", the repair frame, and the crossed chip "credibility" with the red tag "the source didn't change" (the first frame dims so at most three items are bright). The model now gives both marks for a reasoned validity answer and crosses "credibility". About 26 s by script, inside the brief-feedback range.
+2. **Note, scene 5, "community consultation and control".** Kept: it is the root ruling's wording for the general requirement, and the checker says it is not wrong.
+
+Narration changed in 10b only. Recount: 5,972 characters, about 549 s (Revision 2: 6,002, about 551 s). `cues.py`: 0 findings. Joins unchanged.

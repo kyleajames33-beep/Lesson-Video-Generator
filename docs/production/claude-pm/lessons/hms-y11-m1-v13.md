@@ -1,6 +1,6 @@
 # HMS Year 11 V13 (Health for individuals and communities): young people as advocates. How have young people changed the conditions that shape health, and what makes advocacy work rather than just raise awareness? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: five new (three of them shared with v14), two reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y11-m1-v13-science-check.md`); no design change; error check next. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: five new (three of them shared with v14), two reused (see Assets). No official figures.
 
 Narration 6,183 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 565 s including holds, two countdowns and the 45 s notes hold.
 

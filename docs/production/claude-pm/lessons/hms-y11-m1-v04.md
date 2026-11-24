@@ -1,8 +1,8 @@
 # HMS Year 11 V04 (Health for individuals and communities): social justice principles. Why does giving everyone the same thing often fail to give everyone the same health? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
+Status: Revision 3 (24 Nov 2026): science check resolved (see "Revision 3: science check resolved" at the end); error check next. Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved"). Revision 1 (23 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: three new, one reused (see Assets).
 
-Narration 5,627 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 523 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,667 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 526 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the fourth HMS video. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m1-v04**. Pre-design pack `../pre-design/hms/hms-y11-m1-v04.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module1/lesson04.sa.html` (read in full, 23 Nov). Previous design `hms-y11-m1-v03.md`. Templates: `bio-y11-fa1-v01.md`.
 
@@ -67,7 +67,7 @@ Visual: board change to the clinic stage (solid from its first frame): the clini
 Visual: the clinic stage stays. On "Free handles the fee" the financial gate turns half green (its "fee" half ticks); on "lost wages" its other half turns amber with an amber tag "work hours: lost wages", so the gate shows half green, half amber. On "open while most people are at work" the hours board pulses and hook card 1 fills "shift and office workers" (30 px); the geographic gate closes on "in one town" and hook card 2 fills "people from outlying towns"; the language gate closes on "no interpreter mentioned" and hook card 3 fills "people who don't read English"; the informational gate closes on "how anyone hears about it"; the cultural and physical gates close with grey tags "not stated" and "steps, no ramp". On "five of the six barriers untouched" a readout (52 px) "barriers left: 5 of 6"; on "the financial one only half fixed" a second line beneath it (34 px) "and financial only half fixed". On "The word free is bait" a chip "it's free, so it's accessible" writes and is crossed in red, red hand tag "free ≠ accessible" (34 px). On "Name at least three" an amber hand tag "name 3 or more, say which are fixed" (42 px). The three hook cards, filled as their gates closed, stay at the right (Revision 2). Hold one second.
 
 ### 6. participation
-> Participation means the people affected help design, run and judge what happens to them. It's not a courtesy. It changes whether a program works, for three reasons. Communities know their own barriers, like a bus that doesn't run at four. A service people helped build is one they trust, and trust is what gets people through the door. And it changes what counts as success. That's why community-controlled health services, run by the communities they serve, work so well. But watch for the fake. Asking for comments on a plan that's already finished is consultation, not participation.
+> Participation means the people affected help design, run and judge what happens to them. It's not a courtesy. It changes whether a program works, for three reasons. Communities know their own barriers, like a bus that doesn't run at four. A service people helped build is one they trust, and trust is what gets people through the door. And it changes what counts as success. That's why community-controlled health services, run by the communities they serve, are often more trusted and better used. But watch for the fake. Asking for comments on a plan that's already finished is consultation, not participation.
 
 Visual: board change to the participation room (solid from its first frame): new plate `hms-community-meeting-room-v1.png` (a community room with a circle of empty chairs, a whiteboard with blank sticky notes, a tea urn) at the left (about 560 px tall), and a three-row card at the right with its frame and olive numbers. On "help design, run and judge" three olive chips write under the heading: "design", "run", "judge" (gloss "participation", 38 px). On "Communities know their own barriers" row 1 writes "they know the barriers" and the clinic thumbnail returns small with its bus-stop gate pulsing; on "trust" row 2 writes "trust → use"; on "what counts as success" row 3 writes "they choose what success means". On "community-controlled health services" an olive tag "community-controlled: run by the community it serves" (34 px) sits on the plate (no names, no symbols). On "consultation, not participation" a sketch of a finished plan with a small "comments?" box writes at the right and is crossed in red; red hand tag "already decided = consultation" (34 px). Hold one second.
 
@@ -77,9 +77,9 @@ Visual: board change to the participation room (solid from its first frame): new
 Visual: board change to the rights card (solid from its first frame): v01's `DefinitionCard` styled the same, now titled "WHO constitution: a right" (no logo), already in place and empty, with a violet edge. On "right" the title word "right" glows violet. On "an entitlement you hold because you're a person" the gloss writes "right: an entitlement, because you're a person" (44 px, violet). On "the highest attainable standard of health" the quoted line types into the card (38 px): "the enjoyment of the highest attainable standard of health is one of the fundamental rights of every human being". On "deserve" a violet chip "deserve?" writes and is struck through; on "a smoker with lung disease" and "a driver hurt while speeding" two small grey cards write beneath it, each ending in a green tick "entitled to care". On "Two limits" two cards write at the right: "not unlimited resources" and "a right needs access", the second linked by an amber arrow to a small copy of the gates strip. Hold one second.
 
 ### 8. how the four raise health status
-> So how do these principles actually improve health status? Here's the mechanism. The group furthest behind carries the most ill health that could be avoided. When help is matched to what that group needs, the same effort removes far more ill health there than in a group that's already close to the best it can be. So equity isn't just fair. It's the most effective way to lift a whole population. And the four work as a chain. A right nobody can reach changes nothing, and a service nobody trusts doesn't get used.
+> So how do these principles actually improve health status? Here's the mechanism. The group furthest behind carries the most ill health that could be avoided. When help is matched to what that group needs, the same effort removes far more ill health there than in a group that's already close to the best it can be. So equity isn't just fair. It's often one of the most effective ways to lift a whole population. And the four work as a chain. A right nobody can reach changes nothing, and a service nobody trusts doesn't get used.
 
-Visual: board change to the model (solid from its first frame): four coded group bars at the left at 90, 85, 80 and 50 (labelled "group 1" to "group 4", the last warm), a dashed "reachable" line at 90, the shaded "avoidable gap" above each bar drawn from the first frame, and two readouts at the right (52 px): "avoidable ill health removed: 0" and "population average: 76.25"; grey tag "illustrative model". On "carries the most ill health that could be avoided" group 4's shaded gap pulses (its gap 40 against 0, 5 and 10). On "matched to what that group needs" one teal resource block drops on group 1 first: nothing changes, readouts unchanged, grey tag "already near its best"; then the same block lifts off and drops on group 4: its bar rises by 12 and the readouts change to "avoidable ill health removed: 12" and "population average: 79.25" (both read from the model). On "the most effective way" a teal hand tag "equity: fair and effective" (42 px). On "work as a chain" the bars shrink left and the `PrincipleChain` writes at the right, one link per cue: "rights" (violet) → "equity" (teal) → "access" (amber) → "participation" (olive), each link with its question beneath (30 px): "entitled?", "by need?", "can they reach it?", "did they help decide?". On "A right nobody can reach" the rights-to-access link flashes and a grey tag "no access: nothing changes"; on "a service nobody trusts" the participation link flashes, grey tag "no trust: not used". Hold one second.
+Visual: board change to the model (solid from its first frame): four coded group bars at the left at 90, 85, 80 and 50 (labelled "group 1" to "group 4", the last warm), a dashed "reachable" line at 90, the shaded "avoidable gap" above each bar drawn from the first frame, and two readouts at the right (52 px): "avoidable ill health removed: 0" and "population average: 76.25"; grey tag "illustrative model". On "carries the most ill health that could be avoided" group 4's shaded gap pulses (its gap 40 against 0, 5 and 10). On "matched to what that group needs" one teal resource block drops on group 1 first: nothing changes, readouts unchanged, grey tag "already near its best"; then the same block lifts off and drops on group 4: its bar rises by 12 and the readouts change to "avoidable ill health removed: 12" and "population average: 79.25" (both read from the model). On "one of the most effective ways" a teal hand tag "equity: fair and effective" (42 px). On "work as a chain" the bars shrink left and the `PrincipleChain` writes at the right, one link per cue: "rights" (violet) → "equity" (teal) → "access" (amber) → "participation" (olive), each link with its question beneath (30 px): "entitled?", "by need?", "can they reach it?", "did they help decide?". On "A right nobody can reach" the rights-to-access link flashes and a grey tag "no access: nothing changes"; on "a service nobody trusts" the participation link flashes, grey tag "no trust: not used". Hold one second.
 
 ### 9. memory
 > Two things to remember. A difference becomes an inequity when it's avoidable, unnecessary and unfair. And free isn't the same as accessible, so check all six gates.
@@ -152,7 +152,7 @@ Self-check (23 Nov), arithmetic by Python.
 
 ## Narration length estimate
 
-Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5627 characters**, 15 scene files. At 13.3 characters per second the speech is about 423 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 523 s**.
+Revision 3 count (24 Nov, after the science check; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5667 characters**, 15 scene files. At 13.3 characters per second the speech is about 426 s; add 30 s of padding (2 s per scene) and 70 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 526 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -161,9 +161,9 @@ Revision 2 count (24 Nov; by script with the build parser rules: only lines star
 | 3. when a difference is an inequity | 383 |
 | 4. access: six barriers | 488 |
 | 5. the clinic audited | 518 |
-| 6. participation | 586 |
+| 6. participation | 612 |
 | 7. rights | 482 |
-| 8. how the four raise health status | 515 |
+| 8. how the four raise health status | 529 |
 | 9. memory | 164 |
 | 10a. attempt one (which principle?) | 303 |
 | 10b. feedback, item one | 368 |
@@ -255,3 +255,13 @@ Review: `../checks/hms-y11-m1-v04-learning-review.md` and the module summary `..
 4. **Note, the scene 6 community-controlled claim.** Left to the science check, and kept general per the cultural ruling.
 
 Narration changed in scenes 5 and 10d. Recount: 5,627 characters, about 523 s (Revision 1: 5,624, about 523 s). This is still above the 5,500 floor. `cues.py`: 0 findings.
+
+## Revision 3: science check resolved (24 Nov 2026)
+
+Check: `../checks/hms-y11-m1-v04-science-check.md` and the module summary `../checks/hms-y11-m1-science-check-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, scene 6: "work so well".** Accepted: "community-controlled health services, run by the communities they serve, are often more trusted and better used." The on-screen tag was already neutral.
+2. **Should fix, scene 8: "the most effective way".** Accepted (root ruling 5): "It's often one of the most effective ways to lift a whole population." The teal hand tag's cue follows the new words.
+3. **Note, scene 4, physical access.** Kept as an example; no change.
+
+Narration changed in scenes 6 and 8. Recount: 5,667 characters, about 526 s (Revision 2: 5,627, about 523 s). `cues.py`: 0 findings. Joins unchanged.
