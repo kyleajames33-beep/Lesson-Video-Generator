@@ -18,10 +18,10 @@ export const TEAL = MATH_TEAL; // horizontal: u_x, cos θ, crossing speed, groun
 export const TEAL_STROKE = '#1f8a8f';
 export const BLUE = MATH_BLUE; // vertical: u_y, sin θ, time aloft
 export const ORANGE = MATH_AMBER; // range, the R box, launch velocity (text ink)
-export const ORANGE_STROKE = '#d0761c'; // flatter / main path, launch velocity arrow
+export const ORANGE_STROKE = '#d0761c'; // steeper partner path (solid; v03's 50 degree path), launch velocity arrow
 export const GREEN_GREY = '#4f6e57'; // the 45 degree path
 export const GREEN_GREY_STROKE = '#6a8a70';
-export const BLUE_GREY = '#566c82'; // steeper partner paths (dashed)
+export const BLUE_GREY = '#566c82'; // flatter partner paths (dashed; v03's 40 degree path)
 export const NAVY = '#1f3a68'; // givens
 export const RED = MATH_MISTAKE; // crossed mistakes, stamps
 
@@ -113,8 +113,10 @@ export const GroundLine: React.FC<{x1: number; x2: number; y: number; opacity?: 
 };
 
 export type PathStyle = {color: string; dash?: string; width?: number};
-export const STYLE_FLAT: PathStyle = {color: ORANGE_STROKE};
-export const STYLE_STEEP: PathStyle = {color: BLUE_GREY, dash: '16 11'};
+// 24 Nov 2026: roles match v03's final frame (50 degrees solid orange, 40 degrees dashed blue-grey), so the steeper
+// partner is solid orange and the flatter partner dashed blue-grey throughout v04.
+export const STYLE_FLAT: PathStyle = {color: BLUE_GREY, dash: '16 11'};
+export const STYLE_STEEP: PathStyle = {color: ORANGE_STROKE};
 export const STYLE_45: PathStyle = {color: GREEN_GREY_STROKE};
 
 /** SVG path of a flight from (mx, gy) at ppm px per metre, from t0 to t1 seconds. */
@@ -138,7 +140,7 @@ export const FlightLane: React.FC<{
 	mx: number; gy: number; ppm: number; u: number; deg: number; lw: number; right: number;
 	launchAt?: number; ghost?: number; style?: PathStyle; full?: boolean; shadow?: boolean; landRing?: number; opacity?: number;
 	floorLeft?: number; hideBall?: boolean;
-}> = ({mx, gy, ppm, u, deg, lw, right, launchAt, ghost = 0.3, style = STYLE_FLAT, full = false, shadow = false, landRing, opacity = 1, floorLeft, hideBall = false}) => {
+}> = ({mx, gy, ppm, u, deg, lw, right, launchAt, ghost = 0.3, style = STYLE_STEEP, full = false, shadow = false, landRing, opacity = 1, floorLeft, hideBall = false}) => {
 	const f = useCurrentFrame();
 	const [px, py] = pivotForMuzzle(mx, gy, lw, deg);
 	const g = launcherGeom(px, py, lw, deg);
@@ -378,8 +380,8 @@ export const RangeGraph: React.FC<RangeGraphProps> = ({x, y, w, h, u, yMax, ySte
 					return (
 						<g key={i} opacity={q}>
 							<line x1={pa.x} x2={pa.x + (pb.x - pa.x) * q} y1={pa.y} y2={pb.y} stroke={INK} strokeWidth={3.5} strokeDasharray="10 8" />
-							<circle cx={pa.x} cy={pa.y} r={12} fill={ORANGE_STROKE} stroke={CARD} strokeWidth={4} />
-							<circle cx={pb.x} cy={pb.y} r={12} fill={BLUE_GREY} stroke={CARD} strokeWidth={4} />
+							<circle cx={pa.x} cy={pa.y} r={12} fill={BLUE_GREY} stroke={CARD} strokeWidth={4} />
+							<circle cx={pb.x} cy={pb.y} r={12} fill={ORANGE_STROKE} stroke={CARD} strokeWidth={4} />
 							{p.label ? <text x={(pa.x + pb.x) / 2} y={pa.y - 16} textAnchor="middle" style={{fontFamily: FONT_DISPLAY, fontWeight: 800, fontSize: small ? 30 : 36, fill: INK}} stroke={CARD} strokeWidth={8} paintOrder="stroke">{p.label}</text> : null}
 						</g>
 					);

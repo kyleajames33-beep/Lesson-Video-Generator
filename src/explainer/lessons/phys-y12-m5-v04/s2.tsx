@@ -63,9 +63,9 @@ export const S06: React.FC = () => {
 	const cond = cue(id, 'conditions'), allowed = cue(id, 'allowed'), a30 = cue(id, 'At thirty'), r30 = cue(id, 'about'), a45 = cue(id, 'At forty-five'), r45 = cue(id, 'about', 2), a60 = cue(id, 'At sixty'), sin120 = cue(id, 'sin one hundred'), r60 = cue(id, 'nineteen point nine', 2);
 	const U = 15, PPM = 15, GY = 890, LW = 130;
 	const lanes = [
-		{deg: 30, mx: 250, style: STYLE_FLAT, launch: r30 - 30, col: ORANGE},
+		{deg: 30, mx: 250, style: STYLE_FLAT, launch: r30 - 30, col: BLUE_GREY},
 		{deg: 45, mx: 820, style: STYLE_45, launch: r45 - 50, col: GREEN_GREY},
-		{deg: 60, mx: 1390, style: STYLE_STEEP, launch: sin120 + 6, col: BLUE_GREY},
+		{deg: 60, mx: 1390, style: STYLE_STEEP, launch: sin120 + 6, col: ORANGE},
 	];
 	const rowStyle = {position: 'absolute' as const, left: 740};
 	return (
@@ -85,7 +85,7 @@ export const S06: React.FC = () => {
 			<FrameSvg>
 				{lanes.map((l, i) => <FlightLane key={i} mx={l.mx} gy={GY} ppm={PPM} u={U} deg={l.deg} lw={LW} right={l.mx + 390} style={l.style} launchAt={f >= l.launch ? l.launch : undefined} ghost={0.22} shadow landRing={l.launch + Math.round(flightT(U, l.deg) * 30)} floorLeft={l.mx - 120} />)}
 				{/* the 30 degree landing mark, carried into the 60 degree lane */}
-				<circle cx={lanes[2].mx + range(U, 30) * PPM} cy={GY} r={9} fill="none" stroke={ORANGE_STROKE} strokeWidth={4} opacity={prog(f, a60, 12)} />
+				<circle cx={lanes[2].mx + range(U, 30) * PPM} cy={GY} r={9} fill="none" stroke={BLUE_GREY} strokeWidth={4} opacity={prog(f, a60, 12)} />
 			</FrameSvg>
 			{lanes.map((l, i) => (
 				<React.Fragment key={i}>
@@ -93,7 +93,7 @@ export const S06: React.FC = () => {
 					<ReadCard x={l.mx + 150} y={608} w={230} label="time in the air" value={fx(f >= l.launch ? clockAt(f, l.launch, flightT(U, l.deg)) : 0, 2)} unit="s" size={44} color={INK} />
 				</React.Fragment>
 			))}
-			<HandTag x={lanes[2].mx + range(U, 30) * PPM - 60} y={930} text="30° mark" at={a60 + 10} size={36} color={ORANGE} anchor="middle" />
+			<HandTag x={lanes[2].mx + range(U, 30) * PPM - 60} y={930} text="30° mark" at={a60 + 10} size={36} color={BLUE_GREY} anchor="middle" />
 		</>
 	);
 };
@@ -137,8 +137,8 @@ export const S07: React.FC = () => {
 			</FrameSvg>
 			<div style={{position: 'absolute', left: p25 + 12, top: GY - H25 - 54, opacity: prog(f, higher, 12), ...DISPLAY(36, BLUE)}}>5.70 m</div>
 			<div style={{position: 'absolute', left: p65 - 132, top: GY - H65 / 2 - 10, opacity: prog(f, higher, 12), ...DISPLAY(36, BLUE)}}>26.2 m</div>
-			<div style={{position: 'absolute', left: M25 - 136, top: 760, ...DISPLAY(40, ORANGE, 800)}}>25°</div>
-			<div style={{position: 'absolute', left: M65 - 70, top: 690, ...DISPLAY(40, BLUE_GREY, 800)}}>65°</div>
+			<div style={{position: 'absolute', left: M25 - 136, top: 760, ...DISPLAY(40, BLUE_GREY, 800)}}>25°</div>
+			<div style={{position: 'absolute', left: M65 - 70, top: 690, ...DISPLAY(40, ORANGE, 800)}}>65°</div>
 			<ReadCard x={636} y={640} w={284} label="25°: in the air" value={fx(c25, 2)} unit="s" size={44}>
 				<div style={{...DISPLAY(40, TEAL), opacity: prog(f, means, 12)}}>u<Sub>x</Sub> = 22.7<span style={DISPLAY(30, INK_SOFT, 600)}> m s⁻¹</span></div>
 			</ReadCard>

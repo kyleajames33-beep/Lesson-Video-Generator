@@ -455,3 +455,15 @@ Root 3 s playback pass, 24 Nov 2026 (482 s, 11 sheets). Opens on v05's final fra
 ## phys-y12-m5-v09 v1
 
 Root 3 s playback pass, 24 Nov 2026 (about 452 s, 10 sheets). Opens on v08's final frame (spanner on a stuck nut, three 80 N pushes A, B, C, Next chip). Ranking prediction with countdown, then torque arrows (A biggest, B half, C none); slide-the-push readouts (r 0.250 m, 20.0 N m; 0.125 m, 10.0 N m); tau = rF; at 30°: F sin 30° = 40 N, tau = 0.25 x 40 = 10 N m; same answer from the moment arm r-perp = 0.125 m; along the handle r-perp = 0, theta 180° or 0°, tau = 0 even at 160 N; live angle sweep (26°: 8.8 N m checked; 90°: 20 N m); two crossed slips; memory aid "Push square, push far."; attempt 1 (12 N m and 6.0 N m) and attempt 2 (0, 0 N m, 180°) with full questions, 10 s countdowns and crossed slips; tower-crane handoff (clockwise and anticlockwise); notes hold. Human listening pending. Not queued (no Physics playlist yet).
+
+## phys-y12-m5-v04 v2
+
+Root 3 s playback pass, 24 Nov 2026 (about 470 s, 10 sheets). v1 was fully reviewed at 3 s; v2 restyles the partner paths so they match v03's final frame: 50° (steeper) solid orange, 40° (flatter) dashed blue-grey, 45° green-grey, in every scene. Confirmed on the v2 sheets: opening cross-fade from V03FinalFrame with no colour swap, the time cards (3.91 s orange, 3.28 s blue-grey), the two-columns build (T = 2u sin θ / g, R = u_x x T = 2u^2 sin θ cos θ / g, 16.1 x 3.91 = 62.8 m), the swap triangles (16.1 and 19.2), the 30° and 60° level-ground pair (30° dashed, 60° solid), the 30 m cliff warning "LEVEL GROUND ONLY?", notes hold with memory aid "Complements swap the components." Human listening pending.
+
+## phys-y12-m5-v07 v2
+
+Root 3 s playback pass, 24 Nov 2026 (447 s, 10 sheets). v1 was fully reviewed at 3 s; v2 fixes label collisions only. Confirmed: in "The physics: swap the parts" (2:36 to 3:12) the "low: 30 m s^-1" label sits right of the low triangle after the slide, the hand notes "fast across, brief" and "slow across, long" stack beside the strobe stage, and "27.0", "13.1" and "25.8°" are clear of the lines; in "Swap the parts, keep the product" (4:15 to 4:35) "25.8°" sits inside the low triangle and "27.0" is clear of the dashed mirror line. Human listening pending.
+
+## phys-y12-m5-v08 v2
+
+Root 3 s playback pass, 24 Nov 2026 (478 s, 10 sheets). v1 was fully reviewed at 3 s; v2 fixes "Repeats and uncertainty" only. Confirmed 2:06 to 2:41: the caption "illustrative values, h = 0.30 m" sits above "spread 0.04 m" with no overlap, and the hand note "the scatter limits us" sits right of "the 40 mm scatter band" inside the ruler card. Mean 0.55 m, ± (0.57 - 0.53)/2 = 0.02 m, R = 0.55 ± 0.02 m checked. Human listening pending.

@@ -1,6 +1,6 @@
 // Scenes 1 to 4: the hook (paired flights), range from the two columns, the swap, the shortcut.
 import React from 'react';
-import {useCurrentFrame} from 'remotion';
+import {Freeze, useCurrentFrame} from 'remotion';
 import {Countdown, DrawPath, Enter, FONT_DISPLAY, HandText, INK, INK_SOFT, prog} from '../../kit';
 import {Card, CardTitle, FrameSvg, HandTag, LiveReadoutBoard, MarkSpan, SceneHeading, kf, vis} from '../../math/studio';
 import {clockAt, cue, flightT, fx, hold, pos, range, ux, uy} from './common';
@@ -8,6 +8,8 @@ import {
 	AngleArc, AnswerBox, BLUE, BallSvg, Chip, Cos, DISPLAY, FlightLane, LaunchTriangle, LauncherSvg, MS, ORANGE, ORANGE_STROKE, RBox, ReadCard,
 	HandNote, Row, STYLE_FLAT, STYLE_STEEP, Sin, Sub, Sup, TEAL, TEAL_STROKE, TravelSide, Ux, Uy, launcherGeom,
 } from './parts';
+import {V03FinalFrame} from '../phys-y12-m5-v03/s3';
+import {dur as v03Dur} from '../phys-y12-m5-v03/common';
 
 // ---------- 1. hook: longer in the air, same landing ----------
 export const S01: React.FC = () => {
@@ -21,8 +23,12 @@ export const S01: React.FC = () => {
 	const T50 = flightT(U, 50), T40 = flightT(U, 40);
 	const c50 = replay ? clockAt(f, spot, T50) : T50, c40 = replay ? clockAt(f, spot, T40) : T40;
 	const CA = 230, CB = 620;
+	// Opens on v03's final frame (the 40 and 50 degree flights landing together), cross-fading over frames 10 to 34.
+	const fade = prog(f, 10, 24);
 	return (
 		<>
+			{fade < 1 ? <div style={{position: 'absolute', inset: 0, opacity: 1 - fade}}><Freeze frame={v03Dur('handoff') - 1}><V03FinalFrame /></Freeze></div> : null}
+			<div style={{position: 'absolute', inset: 0, opacity: fade}}>
 			<SceneHeading text="Why do complementary angles give the same range?" at={-40} size={56} />
 			<FrameSvg>
 				<FlightLane mx={MX} gy={GA} ppm={PPM} u={U} deg={50} lw={LW} right={landX + 50} style={STYLE_STEEP} full={!replay} launchAt={replay ? spot : undefined} shadow landRing={-30} />
@@ -31,13 +37,13 @@ export const S01: React.FC = () => {
 			</FrameSvg>
 			<div style={{position: 'absolute', left: landX - 168, top: 640, ...DISPLAY(44, ORANGE)}}>62.8 m</div>
 			<HandTag x={landX + 18} y={690} text="?" at={-30} out={comp} size={76} color={INK} />
-			<div style={{position: 'absolute', left: 110, top: 430, ...DISPLAY(42, BLUE_GREY_T, 800)}}>50°</div>
-			<div style={{position: 'absolute', left: 110, top: 800, ...DISPLAY(42, ORANGE, 800)}}>40°</div>
+			<div style={{position: 'absolute', left: 110, top: 430, ...DISPLAY(42, ORANGE, 800)}}>50°</div>
+			<div style={{position: 'absolute', left: 110, top: 800, ...DISPLAY(42, BLUE_GREY_T, 800)}}>40°</div>
 			<div style={{position: 'absolute', left: 96, top: 168, ...DISPLAY(32, INK_SOFT, 700)}}>both at 25<MS /></div>
-			<ReadCard x={1470} y={CA} w={354} label="50° ball: time in the air" value={fx(c50, 2)} unit="s" color={BLUE} pulse={t391} />
-			<ReadCard x={1470} y={CB} w={354} label="40° ball: time in the air" value={fx(c40, 2)} unit="s" color={ORANGE} pulse={t328} />
-			<HandTag x={1480} y={CA + 70} at={t391} marks={[{kind: 'circle', cx: 1566, cy: CA + 80, rx: 92, ry: 34}]} color={BLUE} />
-			<HandTag x={1480} y={CB + 70} at={t328} marks={[{kind: 'circle', cx: 1566, cy: CB + 80, rx: 92, ry: 34}]} color={ORANGE_STROKE} />
+			<ReadCard x={1470} y={CA} w={354} label="50° ball: time in the air" value={fx(c50, 2)} unit="s" color={ORANGE} pulse={t391} />
+			<ReadCard x={1470} y={CB} w={354} label="40° ball: time in the air" value={fx(c40, 2)} unit="s" color={BLUE_GREY_T} pulse={t328} />
+			<HandTag x={1480} y={CA + 70} at={t391} marks={[{kind: 'circle', cx: 1566, cy: CA + 80, rx: 92, ry: 34}]} color={ORANGE_STROKE} />
+			<HandTag x={1480} y={CB + 70} at={t328} marks={[{kind: 'circle', cx: 1566, cy: CB + 80, rx: 92, ry: 34}]} color={BLUE_GREY_T} />
 			<HandTag x={1490} y={CA + 190} text="longer up" at={t391 + 12} size={50} role="a" />
 			<HandTag x={1490} y={CA + 260} text="(same landing spot)" at={-30} out={t391} size={40} color={INK_SOFT} />
 			<Chip x={440} y={556} at={comp} size={40}>40° + 50° = 90°: <span style={{color: INK}}>complementary</span></Chip>
@@ -45,6 +51,7 @@ export const S01: React.FC = () => {
 				marks={[{kind: 'arrow', from: [1120, 756], to: [landX - 28, GA + 18], bend: 0.2}, {kind: 'arrow', from: [1130, 792], to: [landX - 30, GB - 14], bend: -0.2}]} markAt={place + 8} />
 			<div style={{position: 'absolute', left: 520, top: 892}}><HandText text="Longer in the air, same landing: how?" at={think - 6} size={50} color={INK} cps={40} /></div>
 			<FrameSvg><Countdown start={h.startFrame} end={h.endFrame} x={1660} y={840} r={54} /></FrameSvg>
+			</div>
 		</>
 	);
 };
@@ -163,8 +170,8 @@ export const S03: React.FC = () => {
 				<FlightLane mx={MXL} gy={GY} ppm={PPM} u={U} deg={50} lw={LW} right={760} style={STYLE_STEEP} launchAt={f >= slowly ? slowly : undefined} shadow ghost={0.35} />
 				<FlightLane mx={MXR} gy={GY} ppm={PPM} u={U} deg={40} lw={LW} right={1570} style={STYLE_FLAT} launchAt={f >= slowly ? slowly : undefined} shadow ghost={0.35} floorLeft={930} />
 			</FrameSvg>
-			<ReadCard x={560} y={640} w={250} label="50°: in the air" value={fx(c50, 2)} unit="s" color={BLUE} size={48} />
-			<ReadCard x={1370} y={640} w={250} label="40°: in the air" value={fx(c40, 2)} unit="s" color={ORANGE} size={48} />
+			<ReadCard x={560} y={640} w={250} label="50°: in the air" value={fx(c50, 2)} unit="s" color={ORANGE} size={48} />
+			<ReadCard x={1370} y={640} w={250} label="40°: in the air" value={fx(c40, 2)} unit="s" color={BLUE_GREY_T} size={48} />
 			<HandTag x={214} y={700} text="slower × longer" at={slowly + 20} size={46} color={TEAL} />
 			<HandTag x={1030} y={700} text="faster × shorter" at={faster + 10} size={46} color={TEAL} />
 			<div style={{position: 'absolute', left: 120, top: 556}}><Row at={swapping} size={44}><span style={{color: TEAL}}>16.07</span> × 3.908 = <AnswerBox at={match}>62.8 m</AnswerBox></Row></div>

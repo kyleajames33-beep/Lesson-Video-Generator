@@ -68,7 +68,7 @@ export const S11: React.FC = () => {
 			<HandTag x={880} y={652} text="double the angle" at={sin40 + 14} size={42} color={INK} />
 			<CrossedChip x={96} y={786} at={using} size={40} caption="the formula doubles the angle">196 × sin 20° ÷ 9.8 = 6.84 m</CrossedChip>
 			<Card x={1150} y={176} w={674} h={770} at={-40} pad="12px 22px"><CardTitle>Range against angle, 14.0 m s⁻¹</CardTitle></Card>
-			<RangeGraph x={GR.x} y={GR.y} w={GR.w} h={GR.h} u={U} yMax={GR.yMax} small point={f >= matching ? 20 : f >= a20 ? 20 : 45}
+			<RangeGraph x={GR.x} y={GR.y} w={GR.w} h={GR.h} u={U} yMax={GR.yMax} small point={f >= matching ? 20 : f >= a20 ? 20 : 45} pointColor={f >= a20 ? BLUE_GREY : ORANGE_STROKE}
 				pairs={[{a: 20, b: 70, at: seventy, label: '12.9 m'}]} peakAt={m1} />
 			{(() => {const [x, y] = rgPoint(GR, 45, range(U, 45)); return <HandTag x={x} y={y - 34} text="20.0 m at 45°" at={m1 + 6} size={36} color={GREEN_GREY} anchor="middle" />;})()}
 		</>
@@ -114,7 +114,7 @@ export const S13: React.FC = () => {
 			<CrossedChip x={96} y={866} at={saying} size={36}>equal range, so equal time</CrossedChip>
 			{/* clock bars: time in the air, drawn empty, filling at one real-time rate on "Flight time" */}
 			<div style={{position: 'absolute', left: 96, top: 718, ...DISPLAY(32, INK_SOFT, 700)}}>time in the air (for u = 15<MS />)</div>
-			{[{deg: 30, y: 768, col: ORANGE_STROKE, lab: ORANGE}, {deg: 60, y: 816, col: BLUE_GREY, lab: BLUE_GREY}].map(b => {
+			{[{deg: 30, y: 768, col: BLUE_GREY, lab: BLUE_GREY}, {deg: 60, y: 816, col: ORANGE_STROKE, lab: ORANGE}].map(b => {
 				const T = flightT(U, b.deg);
 				const tt = clockAt(f, flight, T);
 				return (
@@ -137,8 +137,8 @@ export const S13: React.FC = () => {
 					<line x1={pk} x2={pk} y1={gb} y2={gb - H30} stroke={BLUE} strokeWidth={3.5} />
 				</g>
 			</FrameSvg>
-			<div style={{position: 'absolute', left: 1150, top: ga - 64, ...DISPLAY(38, BLUE_GREY, 800)}}>60°</div>
-			<div style={{position: 'absolute', left: 1150, top: gb - 64, ...DISPLAY(38, ORANGE, 800)}}>30°</div>
+			<div style={{position: 'absolute', left: 1150, top: ga - 64, ...DISPLAY(38, ORANGE, 800)}}>60°</div>
+			<div style={{position: 'absolute', left: 1150, top: gb - 64, ...DISPLAY(38, BLUE_GREY, 800)}}>30°</div>
 			<HandTag x={pk + 16} y={ga - 36} text="× 3 higher" at={high + 6} size={42} color={BLUE} />
 			<HandTag x={1630} y={300} text="× 1.73 longer" at={long + 6} size={42} color={BLUE} />
 			<HandTag x={MX + range(U, 30) * PPM - 20} y={gb + 60} text="same landing" at={equal + 6} size={40} color={INK} anchor="middle" />
@@ -163,8 +163,8 @@ export const S14: React.FC = () => {
 				{level ? (
 					<>
 						<FlightLane mx={MX} gy={SEA} ppm={ppm} u={15} deg={45} lw={190} right={1240} style={STYLE_45} ghost={0} hideBall floorLeft={96} />
-						<path d={levelPath(MX, SEA, ppm, 15, 30)} fill="none" stroke={ORANGE_STROKE} strokeWidth={7.5} strokeLinecap="round" />
-						<path d={levelPath(MX, SEA, ppm, 15, 60)} fill="none" stroke={BLUE_GREY} strokeWidth={7.5} strokeDasharray="16 11" strokeLinecap="round" />
+						<path d={levelPath(MX, SEA, ppm, 15, 30)} fill="none" stroke={BLUE_GREY} strokeWidth={7.5} strokeDasharray="16 11" strokeLinecap="round" />
+						<path d={levelPath(MX, SEA, ppm, 15, 60)} fill="none" stroke={ORANGE_STROKE} strokeWidth={7.5} strokeLinecap="round" />
 						{(() => {const g = launcherGeom(...pivotFor(MX, SEA, 190, 45), 190, 45); return <BallSvg cx={g.muzzle[0]} cy={g.muzzle[1]} d={g.ballD} />;})()}
 					</>
 				) : (

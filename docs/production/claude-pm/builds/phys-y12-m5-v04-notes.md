@@ -130,3 +130,18 @@ In every launcher still, the barrel stays on the pivot in the base lug and the b
 - **Other motion.** The side swap in scenes 3 and 9 (the travelling sides change colour as they turn), the scene 4 identity panel sweep, and the scene 14 cliff rise and zoom-out.
 - **The scene 1 cut at "spot".** The balls jump from the landing marks back to the muzzles for the replay.
 - **Hand tags and the barrel.** Tags should write on in time with their words, and the barrel should never leave its pivot.
+
+## Path colours match v03 (24 November 2026, brief 245)
+
+v04 now cross-fades from `V03FinalFrame`, where 50° is solid orange and 40° dashed blue-grey (`#566c82`); v04 had the roles the other way round, so the colours swapped mid-fade. This supersedes the "Colour conflict in the design" departure above. The partner roles are now: steeper partner solid orange, flatter partner dashed blue-grey, 45° green-grey, consistently in every scene.
+
+- `parts.tsx`: `STYLE_STEEP` is solid orange and `STYLE_FLAT` dashed blue-grey (comments updated; the `FlightLane` default is the solid style); `RangeGraph` pair dots: lower angle blue-grey, higher angle orange.
+- Scene 1: "50°" label and "50° ball" time card orange (was blue-grey and blue), "40°" label and card blue-grey (was orange), with matching ring colours. Scene 3: the 50° and 40° time cards likewise.
+- Scene 2: the single 50° flight is solid orange (via `STYLE_STEEP`).
+- Scene 6: 30° label, 30° landing mark and "30° mark" tag blue-grey; 60° label orange.
+- Scene 7: 25° label blue-grey, 65° label orange.
+- Scene 13: 30° clock bar and label blue-grey, 60° orange; lane labels swapped to match.
+- Scene 14: level-ground 30° path dashed blue-grey, 60° solid orange; the cliff paths follow the styles.
+- Teal, blue, the orange range and R-box text, and everything else unchanged. Verified with stills across scenes (`work/brief245/`). Scoped typecheck clean.
+- Scene 11 (feedback 1): the range-graph cursor at 20° is blue-grey from (b) onwards, so it no longer hides the blue-grey partner dot.
+- Grade after the change (`npm run grade:explainer -- Explainer-phys-y12-m5-v04`, 24 November 2026): PASS WITH WARNINGS, 0 failures, 3 warnings (sparse attempt-1 and attempt-2 at 58%; key notes 491 characters). None comes from this change.
