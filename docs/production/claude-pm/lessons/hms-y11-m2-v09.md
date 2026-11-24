@@ -1,8 +1,8 @@
 # HMS Year 11 V09 (The body and mind in motion): the ATP-PCr and glycolytic energy systems. Why does even the fastest sprinter slow down before the line, and why does a 400 m runner finish in distress? (design)
 
-Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures.
 
-Narration 6,186 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,175 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the ninth HMS video of the Year 11 focus area "The body and mind in motion", opening its second group (energy, fuel, training and responses). Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v09**. Pre-design pack `../pre-design/hms/hms-y11-m2-v09.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson09.sa.html` (read in full, 24 Nov; sha256 `0e5c63ee48c957b731a2441bb207c89f0447fd087b0f341b96a899ea58ed14ef`). Previous design `hms-y11-m2-v08.md`.
 
@@ -43,7 +43,7 @@ Handoff: the aerobic system and interplay (route entry hms-y11-m2-v10). **Handof
 16 scene files (1 to 10, 11a to 11d, 12, 13). No people, hands or faces appear at any point.
 
 ### 1. hook (what ran out?)
-> Here's the last twenty metres of a hundred, where even the fastest sprinters slow down. They've only run for about ten seconds, so what's run out? It isn't oxygen, because you can hold your breath for longer than that. Now a second puzzle. Four-hundred-metre runners often stagger or sit down at the finish, and hundred-metre runners almost never do. But the four hundred is run more slowly. So why does it hurt more?
+> Here's the last twenty metres of a hundred, where even the fastest sprinters slow down. They've only run for about ten seconds, so what's run out? It isn't oxygen: the fastest system, as you'll see, doesn't use any. Now a second puzzle. Four-hundred-metre runners often stagger or sit down at the finish, and hundred-metre runners almost never do. But the four hundred is run more slowly. So why does it hurt more?
 
 Visual: opens on v08's handoff frame (`hms-track-finish-line-v1.png` across the lower two-thirds, the coded speed trace with its last 20 m shaded amber and a down arrow, grey tag "illustrative pattern", the v08 Next chip). The Next chip leaves and the heading rewrites to "Why does every sprinter slow before the line?" (60 px). On "the last twenty metres of a hundred" the amber band pulses once. On "about ten seconds" a time chip "about 10 s" writes under the trace (30 px). On "what's run out?" an empty orange gauge appears above the lane with an amber question mark (34 px). On "It isn't oxygen" a chip "ran out of oxygen" writes and is crossed in red. On "Now a second puzzle" the finish-line board slides to the left half and the new plate `hms-400m-start-stagger-v1.png` lands at the right (about 900 px wide; staggered starting lines on a bend, empty lanes). On "stagger or sit down at the finish" a second empty gauge appears above it, plum outline. On "run more slowly" two small speed chips write, "100 m: faster" under the left board and "400 m: slower" under the right. On "why does it hurt more?" a second amber question mark (34 px). Hold one second.
 
@@ -93,14 +93,14 @@ Visual: board change to the table (solid from its first frame), both columns ful
 Visual: board change to the memory card (solid from its first frame): the scale small at the left beside a dark-ink framed card (52 px): "Faster supply, smaller total" (written with "The faster a system supplies ATP") and "Empty tank or disturbed environment?" (written with "an empty tank, or a disturbed environment?"). This card returns beside the key notes. Hold half a second.
 
 ### 11a. attempt one (the wrestler)
-> Two exam questions. First. A wrestler makes a forty-five-second exchange at near-maximal effort. Identify the predominant energy system, and explain the likely cause of fatigue. Pause here to answer.
+> Two exam questions. First. A wrestler makes a thirty-second exchange at near-maximal effort. Identify the predominant energy system, and explain the likely cause of fatigue. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A wrestler performs a 45-second exchange at near-maximal effort. Identify the predominant energy system and explain the likely cause of fatigue. (3 marks)" Picture: the empty table rows, unlabelled columns. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "A wrestler performs a 30-second exchange at near-maximal effort. Identify the predominant energy system and explain the likely cause of fatigue. (3 marks)" Picture: the empty table rows, unlabelled columns. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11b. feedback, item one
-> Glycolytic. Forty-five seconds is too long for phosphocreatine, and near-maximal is too hard for the slow aerobic system to lead. Fatigue comes from hydrogen ions building up, which makes the muscle more acidic and impairs contraction. The classic mistake is blaming the lactate.
+> Glycolytic. Thirty seconds is too long for phosphocreatine, and near-maximal is too hard for the slow aerobic system to lead. Fatigue comes from hydrogen ions building up, which makes the muscle more acidic and impairs contraction. The classic mistake is blaming the lactate.
 
-Visual: `FeedbackScene`: the card shrinks to the top; the plum column of the table lights; a green-framed three-line answer writes one per cue (30 px): on "Glycolytic" "1 predominant: glycolytic (lactic acid)"; on "too long for phosphocreatine" "2 45 s, near-maximal: past PCr, too hard to be mainly aerobic"; on "hydrogen ions building up" "3 fatigue: hydrogen ions build up, more acidic, contraction impaired", the small tank filling. On "classic mistake" a chip "lactate causes the fatigue" writes and is crossed in red, red hand tag "hydrogen ions, not lactate" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; the plum column of the table lights; a green-framed three-line answer writes one per cue (30 px): on "Glycolytic" "1 predominant: glycolytic (lactic acid)"; on "too long for phosphocreatine" "2 30 s, near-maximal: past PCr, too hard to be mainly aerobic"; on "hydrogen ions building up" "3 fatigue: hydrogen ions build up, more acidic, contraction impaired", the small tank filling. On "classic mistake" a chip "lactate causes the fatigue" writes and is crossed in red, red hand tag "hydrogen ions, not lactate" (34 px). Settle one second.
 
 ### 11c. attempt two (the repeat sprints)
 > Second. Six maximal thirty-metre sprints, once with three minutes' rest between them, once with fifteen seconds. Explain why the times fall away more with the short rest. Pause here to answer.
@@ -133,7 +133,7 @@ Memory card (the scene 10 card) beside the notes. Each bullet one line of at mos
 
 Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Both items are written for this video from the site's activities; neither repeats the worked 100 m against 400 m comparison taught in scenes 4 and 6.
 
-1. (11a, 3 marks.) Glycolytic system identified (1 mark); justified by duration and intensity: 45 s is beyond PCr's 10 to 12 s and near-maximal intensity is above what the aerobic system can lead (1 mark); fatigue by hydrogen ion accumulation lowering muscle pH and impairing contraction (1 mark). Classic mistake crossed: "lactate causes the fatigue".
+1. (11a, 3 marks.) Glycolytic system identified (1 mark); justified by duration and intensity: 30 s is beyond PCr's 10 to 12 s and near-maximal intensity is above what the aerobic system can lead (1 mark); fatigue by hydrogen ion accumulation lowering muscle pH and impairing contraction (1 mark). Classic mistake crossed: "lactate causes the fatigue".
 2. (11c, 4 marks.) Three minutes restores most phosphocreatine, so each sprint is mainly ATP-PCr and near-maximal (1 mark); fifteen seconds restores well under half (1 mark); so glycolysis supplies a growing share, which cannot supply ATP at the rate maximal sprinting needs, so times fall (1 mark); hydrogen ions accumulate across the set (1 mark). Classic mistake crossed: "they just got tired" (no mechanism).
 
 Feedback spoken lengths about 21 s (11b) and 26 s (11d) by script; time the exact audio.
@@ -159,11 +159,11 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6186 characters**, 16 scene files. At 13.3 characters per second the speech is about 465 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 569 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6175 characters**, 16 scene files. At 13.3 characters per second the speech is about 464 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 568 s**.
 
 | Scene | Characters |
 | --- | --- |
-| 1. hook (what ran out?) | 417 |
+| 1. hook (what ran out?) | 414 |
 | 2. the only fuel, and a tiny store | 578 |
 | 3. the fastest system | 651 |
 | 4. the last twenty metres | 270 |
@@ -173,8 +173,8 @@ Revision 1 count (24 Nov; by script with the build parser rules: only lines star
 | 8. a shift, not a switch | 462 |
 | 9. one trade-off links the rows | 440 |
 | 10. memory | 166 |
-| 11a. attempt one (the wrestler) | 199 |
-| 11b. feedback, item one | 279 |
+| 11a. attempt one (the wrestler) | 195 |
+| 11b. feedback, item one | 275 |
 | 11c. attempt two (the repeat sprints) | 192 |
 | 11d. feedback, item two | 350 |
 | 12. decision rule and handoff | 248 |
@@ -245,3 +245,13 @@ Holds and transitions as v08. 3, 5 and 9 return to the same table; other teachin
 - **Term load.** Moderate; the six rows carry most of the numbers, and the key notes select them.
 - **Overlap.** v10 fills the third column and owns three-system interplay; v12 and hms-y12-m4-v03 and v04 train the systems; hms-y12-m4-v08 owns buffering as an adaptation.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m2-v09-learning-review.md` (pass with notes) and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, 11a mirrored the 400 m's numbers.** The wrestler's exchange is now 30 s, not 45 s, so it no longer matches scene 6's "forty-five to sixty seconds" and students must reason from PCr's 10 s limit and the intensity. The review's added recovery demand was not taken: the design is at the cap, and it would lengthen both the card and the feedback.
+2. **Note, the hook's oxygen argument.** Now "It isn't oxygen: the fastest system, as you'll see, doesn't use any." Scene 3 pays it off.
+3. **Note, length and plate.** The changes are slightly shorter than before, so the design stays under the cap. The stagger plate is still unpainted; the coded time axis carries scene 6 if it is late.
+
+Narration changed in 1, 11a and 11b. Recount: 6,175 characters, about 568 s (Revision 1 about 569 s). `cues.py`: 0 findings. The joins with v08 and v10 are unchanged.

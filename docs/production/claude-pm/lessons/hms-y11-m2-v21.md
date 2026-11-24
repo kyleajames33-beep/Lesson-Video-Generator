@@ -1,8 +1,8 @@
 # HMS Year 11 V21 (The body and mind in motion): self-regulation and behaviour change. Almost everyone intends to exercise more, so why do so few change, and what actually closes the gap? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, three reused (see Assets). No official figures; one research figure (close to half of exercise intenders do not act) flagged for the science check.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, three reused (see Assets). No official figures; one research figure (close to half of exercise intenders do not act) flagged for the science check.
 
-Narration 5,682 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 527 s including holds, two countdowns and the 45 s notes hold.
+Narration 5,683 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 527 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the twenty-first HMS video of the Year 11 focus area "The body and mind in motion", the second of its psychology group. Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v21**. Pre-design pack `../pre-design/hms/hms-y11-m2-v21.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson21.sa.html` (read in full, 24 Nov; sha256 `0faf143d1d21da69018a2b91909a913146f1c52fc7c9469aa194c53cebebc951`). Previous design `hms-y11-m2-v20.md`.
 
@@ -58,9 +58,9 @@ Visual: board change to the gap (solid from its first frame): three blocks in a 
 Visual: the cycle's "set" node enlarges into the goal control ladder (solid from its first frame): three empty goal cards stacked, each with a control gauge. On "outcome goal" card 1 (grey) "win the district final", gloss "outcome goal: a result" (34 px); on "depends on opponents and luck" its gauge fills to "partial", tags "opponents", "luck"; on "you can do everything right and still miss it" a small run of green ticks ends in a red "lost". On "performance goal" card 2 (amber) "5 km under 25 min", gloss "performance goal: a personal standard" (34 px), gauge "mostly". On "process goal" card 3 (green) "3 runs this week", gloss "process goal: an action you fully control" (34 px), gauge "complete". On "That's the one that changes behaviour" card 3 lifts forward; a chip "win the final" as a weekly target writes and is crossed in red. On "a win every week" a weekly strip under card 3 gains a green tick per week; on "which feeds competence" v20's competence socket tiny lights, grey recall tag "last time". On "specific, measurable, reachable but challenging, and time-bound" four small tags write on card 3 one per word group ("specific", "measurable", "reachable, challenging", "time-bound"). Hold one second.
 
 ### 4. decide once: when, where and how
-> Then make it concrete. An **implementation intention** names when, where and how. That's B's fridge note, and it fixes all three problems. The decision is made once, on a calm day, so Tuesday at seven isn't a choice any more. The time and place become the cue. And there's nothing left to plan on the day. Stronger still, hook it onto something that already happens: after I get off the bus, I walk the last two stops. And A's advantages? Motivation forms the intention, but it doesn't get you out the door on a cold morning, and new shoes can feel like starting without being it.
+> Then make it concrete. An **implementation intention** names when, where and how. That's B's fridge note, and it fixes all three problems. The decision is made once, on a calm day, so Tuesday at seven isn't a choice any more. The time and place become the cue. And there's nothing left to plan on the day. Stronger still, hook it onto something that already happens: I get off the bus two stops early and walk the rest. And A's advantages? Motivation forms the intention, but it doesn't get you out the door on a cold morning, and new shoes can feel like starting without being it.
 
-Visual: board change to the if-then card (`IfThenCard`, solid from its first frame), inside the cycle's "set" node: three slots "when", "where", "how", empty. On "implementation intention" the gloss "implementation intention: a plan naming when, where and how" (34 px). On "That's B's fridge note" B's note flies into the card and fills it: "when: Tue, Thu 7 am; Sun 4 pm", "where: from the front door", "how: 20 minutes" (30 px). On "fixes all three problems" the three gap slots from 2 return small beside the card and each gets a green tick one per cue: on "The decision is made once" slot 1, B's strip tiny showing no gates; on "The time and place become the cue" slot 3, a small cue marker on each Tuesday; on "nothing left to plan on the day" slot 2's balance steadies, tag "no planning on the day". On "hook it onto something that already happens" a second card writes, "after: I get off the bus / then: walk the last two stops", amber tag "attach to a routine" (34 px). On "Motivation forms the intention" A's card returns small, its "tells everyone" chip lighting the intend track only; on "it doesn't get you out the door on a cold morning" the do track stays flat. On "new shoes can feel like starting without being it" A's "new shoes" chip is crossed in red with tag "buy better shoes". The hook's question mark turns into a green tick. Hold one second.
+Visual: board change to the if-then card (`IfThenCard`, solid from its first frame), inside the cycle's "set" node: three slots "when", "where", "how", empty. On "implementation intention" the gloss "implementation intention: a plan naming when, where and how" (34 px). On "That's B's fridge note" B's note flies into the card and fills it: "when: Tue, Thu 7 am; Sun 4 pm", "where: from the front door", "how: 20 minutes" (30 px). On "fixes all three problems" the three gap slots from 2 return small beside the card and each gets a green tick one per cue: on "The decision is made once" slot 1, B's strip tiny showing no gates; on "The time and place become the cue" slot 3, a small cue marker on each Tuesday; on "nothing left to plan on the day" slot 2's balance steadies, tag "no planning on the day". On "hook it onto something that already happens" a second card writes, "after: the bus reaches two stops early / then: get off and walk the rest", amber tag "attach to a routine" (34 px). On "Motivation forms the intention" A's card returns small, its "tells everyone" chip lighting the intend track only; on "it doesn't get you out the door on a cold morning" the do track stays flat. On "new shoes can feel like starting without being it" A's "new shoes" chip is crossed in red with tag "buy better shoes". The hook's question mark turns into a green tick. Hold one second.
 
 ### 5. monitor, then evaluate: the same week, two futures
 > Phase two is **self-monitoring**: recording what you actually did. Memory flatters us. People remember more sessions than their records show. And just recording a behaviour tends to change it, because a gap you can see is hard to ignore. Phase three is **self-evaluation**: comparing what you did with the plan, and deciding what it means. This is where most attempts die. Take one missed week. One person says, I missed three sessions because I've got no discipline. That **attribution**, the reason you give yourself, is personal and permanent, so next week looks hopeless, and she stops. Another says, I missed them because it was exam week. That's specific and temporary, so she starts again. Same week, opposite futures. And if a cause really is permanent, change the plan, not the person.
@@ -148,14 +148,14 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5682 characters**, 14 scene files. At 13.3 characters per second the speech is about 427 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 527 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5683 characters**, 14 scene files. At 13.3 characters per second the speech is about 427 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 527 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (two January plans) | 588 |
 | 2. what sits in the gap | 575 |
 | 3. set: three kinds of goal | 572 |
-| 4. decide once: when, where and how | 576 |
+| 4. decide once: when, where and how | 577 |
 | 5. monitor, then evaluate: the same week, two futures | 782 |
 | 6. plan the slide back | 360 |
 | 7. self-regulation inside performance | 422 |
@@ -228,3 +228,12 @@ Holds and transitions as v20. 3, 4 and 6 continue inside the cycle's "set" node;
 - **No double teaching.** m1-v12's gap, if-then line, bad-week version and "missed day is data" are recalled, not re-taught (1, 6).
 - **Overlap.** v22 opens on the if-then card and turns to groups; hms-y12-m4 covers goal setting inside psychological strategies for competition.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m2-v21-learning-review.md` (pass with notes) and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, scene 4's bus example contradicted itself.** Now "I get off the bus two stops early and walk the rest." The card reads "after: the bus reaches two stops early / then: get off and walk the rest".
+2. **Note, "close to half" waits on the science check.** Kept with its "in exercise studies" framing; Rhodes and de Bruijn (2013) is named in the facts section for the check.
+
+Narration changed in 4. Recount: 5,683 characters, about 527 s (Revision 1 about 527 s). `cues.py`: 0 findings. The joins with v20 and v22 are unchanged.

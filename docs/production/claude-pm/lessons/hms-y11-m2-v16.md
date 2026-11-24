@@ -1,6 +1,6 @@
 # HMS Year 11 V16 (The body and mind in motion): learners and the stages of skill acquisition. Why can the same coaching help one learner and make another worse? (design)
 
-Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov (plates approved; the attention-focus claim reworded to fit the evidence in 5, 7 and the notes). Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov (plates approved; the attention-focus claim reworded to fit the evidence in 5, 7 and the notes). Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: two new, one reused (see Assets). No official figures.
 
 Narration 6,143 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
 
@@ -141,7 +141,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6143 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6143 characters**, 13 scene files. At 13.3 characters per second the speech is about 462 s; add 26 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -227,3 +227,12 @@ Holds and transitions as v15. 3 to 5 continue on the track; 2 and 6 are board ch
 - **Teaching checks.** Causes: why two characteristics are the coach's real levers (2); why the stages differ (attention) (3); why time served misleads (4); why a body cue hurts an expert (5); why a technique change dips first (6). Attention: one cue, two opposite results. Visual medium: two opposing wedges; a probe with three answers; a marker that slides back and forward on the track. Apply: an unseen swimmer to place (8a); unseen learners to explain (8c). Remember: attention is the currency; cue the effect, not the body.
 - **Overlap.** v17 classifies skills on the sliding scales; v18 names practice methods, performance elements and feedback types; v20 and v21 own motivation; hms-y12-m4-v10 owns instruction inside a session.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m2-v16-learning-review.md` (pass with notes) and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, 8a maps onto scene 4's two tests.** Kept. The swimmer's turn is a new skill, and students must combine two tests to justify one stage. The review's alternative evidence ("fine in training, slow in races") would map onto scene 4's third test word for word, so it would not add transfer.
+2. **Note, plates.** The free-throw and tennis plates are still unpainted (they recur in v17 and v18); the stage track carries the hook if they are late.
+
+No narration changed: 6,143 characters, about 560 s. `cues.py`: 0 findings. The joins with v15 and v17 are unchanged.

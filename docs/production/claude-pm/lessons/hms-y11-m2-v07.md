@@ -1,8 +1,8 @@
 # HMS Year 11 V07 (The body and mind in motion): the nervous system. How does a decision become a movement, and how does the body know the movement worked? (design)
 
-Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, eight reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: none new, eight reused (see Assets). No official figures.
 
-Narration 5,870 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 545 s including holds, two countdowns and the 45 s notes hold.
+Narration 6,017 characters (16 scene files, counted by script from lines starting "> " with bold markers removed), about 556 s including holds, two countdowns and the 45 s notes hold.
 
 Scope: the seventh HMS video of the Year 11 focus area "The body and mind in motion". Course brief `../hms-design-brief.md`. Route entry **hms-y11-m2-v07**. Pre-design pack `../pre-design/hms/hms-y11-m2-v07.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year11/module2/lesson07.sa.html` (read in full, 24 Nov; sha256 `0531bc656c2d26c365ad190d3968a9dc33d2b25295b3d303801391452c1d5706`). Previous design `hms-y11-m2-v06.md`.
 
@@ -22,7 +22,7 @@ Scope: the seventh HMS video of the Year 11 focus area "The body and mind in mot
 - **Entry knowledge.** hms-y11-m2-v06 (hormones are slower, wider and longer-lasting than nerves; adrenaline; the adrenal glands); hms-y11-m2-v02 (skeletal muscle, fibre types, agonist and antagonist); hms-y11-m2-v04 (heart rate, airways, arterioles as taps); hms-y11-m2-v01 (joints; the segment linkage). Not assumed: every nervous system term.
 - **Terms.** Central and peripheral nervous system, somatic and autonomic (2); neuron, myelin, synapse (3); neuromuscular junction, motor unit (4); recruitment, rate coding (5); proprioception (6); reflex arc (7); sympathetic and parasympathetic (8). Each gloss writes beside its part.
 - **Visual system.** One recurring model introduced here: the **command and feedback loop** (`CommandLoop`). The structure is a coded branching tree (`BranchTree`) that the loop grows out of. Plates: the brain section (no head, no face), the neuron, the skeletal muscle, v01's ankle linkage, v04's heart and lungs and v06's adrenal for the autonomic board. No new plates. No people, hands or faces; the "one-legged stand" is shown only as the ankle linkage and an input panel.
-- **Attempt.** 11a: written for this video (3 marks). 11c: WE b2 verbatim (4 marks).
+- **Attempt.** 11a: written for this video (3 marks; Revision 2: the starting gun against the knee-jerk replaces "why is a reflex faster", which scene 7 and the memory card state). 11c: WE b2 verbatim (4 marks).
 - **Memory aids.** From WE b1's "interrelationship requires two directions" and the site's reflex rule: "Every movement is a loop: command out, information back" and "Reflexes win on route, not speed". Scene 10, after 2 to 9.
 - **A mistake/fix beat** is in 7 ("reflex neurons are faster", crossed), kept because the site names it the distinction most often lost in short answers. Other fixes: "fibres contract a little for small forces" crossed in 5 (the site's true-or-false item); "the athlete decides to correct it" crossed in 11d; "early strength gains are bigger muscles" crossed in 9.
 - **Reuse (all inspected 24 Nov):** `b3a2-brain-v1.png` (a midline brain section: cerebrum, cerebellum, brain stem continuing as the top of the spinal cord, pituitary; no skull, no face), `y11-neuron-v1.png` (dendrites, cell body with nucleus, myelinated axon with gaps, axon terminals), `m8-skeletal-muscle-v1.png` (a muscle belly with tendons and a fascicle cross-section), v01's ankle linkage (coded), `m8-heart-v1.png`, `m8-lungs-healthy-v1.png`, `m8-kidney-adrenal-v1.png` (v06, adrenal lit), `y11-digestive-tract-v2.png` (tiny, for "gut"), `hms-thigh-quadriceps-v1.png` (v02).
@@ -53,9 +53,9 @@ Visual: opens on v06's handoff frame (the `HormoneTimeline` with its slow amber 
 Visual: board change to the tree (`BranchTree`, solid from its first frame): a root node "nervous system" at the top, empty branches. On "central nervous system" the left branch writes "central: brain, spinal cord" (30 px) and reused `b3a2-brain-v1.png` lands beside it (about 520 px), gloss "central nervous system: brain and spinal cord" (34 px). On "the cerebrum's motor cortex starts voluntary movement" a coded band over the top of the cerebrum glows olive, label "motor cortex: starts voluntary movement"; on "the cerebellum coordinates it, keeps balance and stores learned patterns" the cerebellum glows, label "cerebellum: coordination, balance, learned patterns"; on "the brain stem runs breathing and heart rate" the brain stem glows, label "brain stem: breathing, heart rate". On "The spinal cord isn't just a cable" a coded column extends down from the brain stem, label "spinal cord"; on "It makes decisions too" a small amber node lights inside it (it returns in 7). On "peripheral nervous system" the right branch writes "peripheral: every nerve outside", gloss "peripheral nervous system: nerves outside the brain and cord". On "Sensory neurons carry information in" a teal sub-branch "sensory: in" with an inward arrow; on "motor neurons carry commands out" an olive sub-branch "motor: out" with an outward arrow. On "The motor side splits again" the motor branch forks. On "The somatic system drives skeletal muscle" "somatic: skeletal muscle, voluntary" with the thigh tile tiny; on "The autonomic system runs the heart, airways, vessels and gut" "autonomic: heart, airways, vessels, gut, involuntary" with four tiny icons; on "sympathetic and parasympathetic" two leaves "sympathetic", "parasympathetic". Hold one second.
 
 ### 3. the neuron, and the slow step
-> All of it is built from **neurons**. Dendrites receive signals, the cell body combines them, and the axon carries the impulse away. Many axons are wrapped in **myelin**, a fatty sheath that lets the signal jump from gap to gap, many times faster. Where a neuron meets another cell, they don't touch. The signal crosses a **synapse** as a chemical, and that chemical step is the slow part of the whole route.
+> All of it is built from **neurons**. Dendrites receive signals, the cell body combines them, and the axon carries the impulse away. Many axons are wrapped in **myelin**, a fatty sheath that lets the signal jump between bare points along the axon, many times faster. Where a neuron meets another cell, they don't touch. The signal crosses a **synapse** as a chemical, and that chemical step is the slow part of the whole route.
 
-Visual: board change to the neuron (solid from its first frame): reused `y11-neuron-v1.png` across the centre (about 1,300 px wide), the tree tiny at the top left. On "neurons" the gloss "neuron: a nerve cell that carries an impulse" (34 px). On "Dendrites receive signals" the dendrites glow, label "dendrites: receive" (30 px); on "the cell body combines them" the cell body glows, label "cell body: combines"; on "the axon carries the impulse away" an impulse dot travels the axon, label "axon: carries it away". On "myelin" the sheath segments glow cream, gloss "myelin: fatty sheath, faster signal"; on "jump from gap to gap" the dot leaps node to node, and a ghost dot on a coded bare axon below crawls behind it, tag "no myelin: slower" (grey); on "many times faster" a small bracket shows the gap between them widening. On "they don't touch" the terminals zoom to a coded gap beside a second cell; on "synapse" chemical dots cross the gap, gloss "synapse: the gap, crossed by a chemical"; on "the slow part of the whole route" the dot visibly pauses at the gap, amber hand tag "each synapse costs time" (42 px). Hold one second.
+Visual: board change to the neuron (solid from its first frame): reused `y11-neuron-v1.png` across the centre (about 1,300 px wide), the tree tiny at the top left. On "neurons" the gloss "neuron: a nerve cell that carries an impulse" (34 px). On "Dendrites receive signals" the dendrites glow, label "dendrites: receive" (30 px); on "the cell body combines them" the cell body glows, label "cell body: combines"; on "the axon carries the impulse away" an impulse dot travels the axon, label "axon: carries it away". On "myelin" the sheath segments glow cream, gloss "myelin: fatty sheath, faster signal"; on "jump between bare points along the axon" the dot leaps node to node, a pointer landing on two bare points between sheath segments, label "bare points (nodes)" (Revision 2: "gap" is kept for the synapse only), and a ghost dot on a coded bare axon below crawls behind it, tag "no myelin: slower" (grey); on "many times faster" a small bracket shows the gap between them widening. On "they don't touch" the terminals zoom to a coded gap beside a second cell; on "synapse" chemical dots cross the gap, gloss "synapse: the gap, crossed by a chemical"; on "the slow part of the whole route" the dot visibly pauses at the gap, amber hand tag "each synapse costs time" (42 px). Hold one second.
 
 ### 4. from decision to contraction
 > Now a voluntary movement, say a kick. The motor cortex sends the command. It runs down the spinal cord to a motor neuron, along its axon to the **neuromuscular junction**, where a chemical crosses to the muscle fibres, and they contract. One motor neuron and all the fibres it controls is a **motor unit**, and it's all or nothing. When it fires, every fibre in it contracts fully. Units vary hugely. One moving your eye has fewer than ten fibres. One in your quadriceps can have more than a thousand.
@@ -92,15 +92,15 @@ Visual: board change to the better-and-worse board (solid from its first frame):
 
 Visual: board change to the memory card (solid from its first frame): the loop small at the left beside a dark-ink framed card (52 px): "Every movement is a loop: command out, information back" (written with "Every movement is a loop") and "Reflexes win on route, not speed" (written with "reflexes win on route, not speed"). This card returns beside the key notes. Hold half a second.
 
-### 11a. attempt one (reflex speed)
-> Two exam questions. First. Explain why a reflex response is faster than a voluntary response. Pause here to answer.
+### 11a. attempt one (the starting gun)
+> Two exam questions. First. Explain why a sprinter's reaction to the starting gun is much slower than a knee-jerk reflex, even though both use the same kind of neurons. Pause here to answer.
 
-Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain why a reflex response is faster than a voluntary response. (3 marks)" Picture: the loop with the reflex bridge unlit and no labels. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Demand: "Explain why a sprinter's reaction to the starting gun is much slower than a knee-jerk reflex, even though both use the same kind of neurons. (3 marks)" Picture: the loop with the reflex bridge unlit and no labels, a small coded sound-wave icon "bang" at the ear end of the sensory line (no person, no gun). **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
 
 ### 11b. feedback, item one
-> A reflex is routed through the spinal cord, not the brain. So the signal travels a shorter distance, and it crosses fewer synapses, where every crossing is a slow chemical step. The brain is only told afterwards. The classic mistake is saying reflex neurons conduct faster.
+> The gun must be heard, and the brain must interpret it and decide, before the motor cortex sends the command down the spinal cord to the muscles. That's a longer route, through many more synapses, each a slow chemical step. The knee-jerk stays in the spinal cord. The classic mistake is saying the sprinter's nerves are slower.
 
-Visual: `FeedbackScene`: the card shrinks to the top; the two racing dots from scene 7 replay tiny; a green-framed three-line answer writes one per cue (30 px): on "routed through the spinal cord" "1 routed through the spinal cord, not the brain"; on "travels a shorter distance" "2 shorter distance"; on "crosses fewer synapses" "3 fewer synapses, each a slow chemical step". On "classic mistake" a chip "reflex neurons conduct faster" writes and is crossed in red, red hand tag "route, not speed" (34 px). Settle one second.
+Visual: `FeedbackScene`: the card shrinks to the top; the two racing dots from scene 7 replay tiny; a green-framed three-line answer writes one per cue (30 px): on "the brain must interpret it and decide" "1 heard, interpreted, decided in the brain"; on "the motor cortex sends the command" "2 motor cortex → spinal cord → muscle", the voluntary dot running the full loop; on "many more synapses" "3 longer route, more synapses, each a slow chemical step". On "The knee-jerk stays in the spinal cord" the reflex dot arrives first, grey tag "knee-jerk: spinal cord only". On "classic mistake" a chip "the sprinter's nerves are slower" writes and is crossed in red, red hand tag "route, not speed" (34 px). Settle one second.
 
 ### 11c. attempt two (the site's balance question)
 > Second. Explain how the nervous system detects and corrects a loss of balance while an athlete is running on uneven ground. Pause here to answer.
@@ -131,12 +131,12 @@ Memory card (the scene 10 card) beside the notes. Each bullet one line of at mos
 
 ## Practice question and feedback
 
-Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video; item 2 is the site's WE b2 stem verbatim.
+Two unseen items (11a to 11d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Item 1 is written for this video and is unseen; item 2 is the site's WE b2 stem verbatim.
 
-1. (11a, 3 marks.) Routed through the spinal cord rather than the brain (1 mark); a shorter distance (1 mark); fewer synapses, each a slow chemical step (1 mark). Classic mistake crossed: "reflex neurons conduct faster".
+1. (11a, 3 marks.) The starting gun (Revision 2). The gun must be heard and interpreted, and a decision made, in the brain (1 mark); the command runs from the motor cortex down the spinal cord to the muscle, a longer route (1 mark); more synapses, each a slow chemical step, while the knee-jerk stays in the spinal cord (1 mark). Classic mistake crossed: "the sprinter's nerves are slower".
 2. (11c, 4 marks.) The site's marking shape: the stimulus and receptors (spindles, joint receptors, vestibular apparatus) (1 mark); sensory neurons carry the information to the central nervous system (1 mark); a rapid reflex correction through the spinal cord activates the stabilising muscles (1 mark); the cerebellum refines subsequent movement (1 mark). Classic mistake crossed: a conscious decision to correct.
 
-Feedback spoken lengths about 21 s (11b) and 26 s (11d) by script; time the exact audio.
+Feedback spoken lengths about 24 s (11b) and 26 s (11d) by script; time the exact audio.
 
 ## Numbers or facts to verify
 
@@ -159,13 +159,13 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **5870 characters**, 16 scene files. At 13.3 characters per second the speech is about 441 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 545 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6017 characters**, 16 scene files. At 13.3 characters per second the speech is about 452 s; add 32 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 556 s**.
 
 | Scene | Characters |
 | --- | --- |
 | 1. hook (one leg, eyes closed) | 325 |
 | 2. two divisions, then two more | 720 |
-| 3. the neuron, and the slow step | 395 |
+| 3. the neuron, and the slow step | 414 |
 | 4. from decision to contraction | 493 |
 | 5. grading force | 416 |
 | 6. the information coming back | 509 |
@@ -173,8 +173,8 @@ Revision 1 count (24 Nov; by script with the build parser rules: only lines star
 | 8. the autonomic link | 509 |
 | 9. better and worse | 553 |
 | 10. memory | 155 |
-| 11a. attempt one (reflex speed) | 115 |
-| 11b. feedback, item one | 273 |
+| 11a. attempt one (the starting gun) | 189 |
+| 11b. feedback, item one | 327 |
 | 11c. attempt two (the site's balance question) | 145 |
 | 11d. feedback, item two | 355 |
 | 12. decision rule and handoff | 237 |
@@ -236,8 +236,18 @@ Holds and transitions as v06. 4 to 7 continue on the loop; other teaching scenes
 
 ## Review notes (author, not learner copy)
 
-- **Teaching checks.** Causes: why myelin speeds a signal and why the synapse is slow (3); why force is graded by unit number and rate (5); why closing your eyes causes wobble (6); why a reflex is faster (7); why sprain rehab trains balance (7); why nerves and adrenaline work together (8); why beginners get stronger before bigger (9). Attention: a test students can do in their seat; two question marks that turn into ticks. Visual medium: one impulse dot whose pauses at synapses make the reflex race fair; a motor-unit field that lights small to large. Apply: the reflex explanation (11a); an unseen balance case (11c). Remember: the loop; route, not speed.
+- **Teaching checks.** Causes: why myelin speeds a signal and why the synapse is slow (3); why force is graded by unit number and rate (5); why closing your eyes causes wobble (6); why a reflex is faster (7); why sprain rehab trains balance (7); why nerves and adrenaline work together (8); why beginners get stronger before bigger (9). Attention: a test students can do in their seat; two question marks that turn into ticks. Visual medium: one impulse dot whose pauses at synapses make the reflex race fair; a motor-unit field that lights small to large. Apply: the route rule on an unseen voluntary response (11a); an unseen balance case (11c). Remember: the loop; route, not speed.
 - **Term load.** Heavy by syllabus design (structure). The tree writes each term on its branch; the key notes select five lines.
 - **Sensitive content.** Concussion framed with medical clearance and no return on the day.
 - **Overlap.** v08 widens the loop to seven systems; v15 measures reaction time; v16 to v18 build skill learning on the cerebellum and feedback.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m2-v07-learning-review.md` and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Should fix, "gap" used for myelin and for the synapse.** Scene 3 now says myelin "lets the signal jump between bare points along the axon". A pointer lands on two bare points on the neuron plate, labelled "bare points (nodes)". "Gap" now means the synapse only.
+2. **Should fix, 11a was scene 7's sentence and the memory card.** Replaced with the review's transfer: why a sprinter's reaction to the starting gun is slower than a knee-jerk, with the same kind of neurons. 11b models hearing, interpreting and deciding in the brain; the motor cortex command down the cord; more synapses. Crossed mistake: "the sprinter's nerves are slower". The card shows a coded "bang" sound icon, with no person or gun.
+3. **Note, scene 2 density.** Kept. Judge at playback speed; if it runs fast, the sympathetic and parasympathetic leaves write without narration.
+
+Narration changed in 3, 11a and 11b. Recount: 6,017 characters, about 556 s (Revision 1 about 545 s). `cues.py`: 0 findings. The joins with v06 and v08 are unchanged.

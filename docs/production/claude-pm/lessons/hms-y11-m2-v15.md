@@ -1,6 +1,6 @@
 # HMS Year 11 V15 (The body and mind in motion): investigating training responses, and the fitness testing debate. How do you investigate training responses properly, and is fitness testing worth doing at all? (design)
 
-Status: Revision 1 (24 Nov 2026): first design; root rulings applied 24 Nov. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Revision 1 (24 Nov 2026) was the first design; root rulings applied 24 Nov. Needs science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, four reused (see Assets). No official figures.
 
 Narration 6,123 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 560 s including holds, two countdowns and the 45 s notes hold.
 
@@ -148,7 +148,7 @@ Self-check (24 Nov). The Codex science check must confirm each before voicing.
 
 ## Narration length estimate
 
-Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6123 characters**, 14 scene files. At 13.3 characters per second the speech is about 460 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
+Revision 2 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6123 characters**, 14 scene files. At 13.3 characters per second the speech is about 460 s; add 28 s of padding (2 s per scene) and 72 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 560 s**.
 
 | Scene | Characters |
 | --- | --- |
@@ -233,3 +233,13 @@ Holds and transitions as v14. 2 to 6 continue on the cycle; 7 is a board change.
 - **Sensitive content.** Body image is named once, generally, as a reason for private testing; no weight, shape or diet content.
 - **Overlap.** m1-v07 owns the research cycle and the trio (recalled); hms-y12-m4-v02 owns fitness testing for program design.
 - **No em dashes** in this file (searched by script).
+
+## Revision 2: learning review resolved (24 Nov 2026)
+
+Review: `../checks/hms-y11-m2-v15-learning-review.md` (pass with notes) and the module summary `../checks/hms-y11-m2-learning-review-summary.md`. Written design only; nothing voiced or built.
+
+1. **Note, scene 7 is the densest scene.** Kept spoken in full. The dotpoint asks for a debate, so each group's case against testing stays in the narration; making two "against" pans silent would leave the spoken argument one-sided. The scale re-weighs per group; judge the pace at playback speed, and use the review's silent pans only if it runs fast.
+2. **Note, "Earlier, you met" against "not assumed watched".** Kept: each recall of m1-v07 is already a full clause a new viewer can follow.
+3. **Note, 9c leans on scene 3.** Kept: 9c also needs an ethical fault and two fixes, so it still asks for application. The beep test plate is still unpainted.
+
+No narration changed: 6,123 characters, about 560 s. `cues.py`: 0 findings. The joins with v14 and v16 are unchanged.
