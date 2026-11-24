@@ -1,0 +1,227 @@
+# HMS Year 12 V05 (Training for improved performance): flexibility, strength, and skill and tactical training. How do flexibility, strength and skill training methods differ, and what do they share? (design)
+
+Status: Revision 1 (24 Nov 2026): first design. Needs independent learning review and science check before voicing. Nothing recorded. Voice: the Google voice. Plates: one new, eight reused (see Assets). No official figures; hold times and joint angles are the site's ranges or illustrative.
+
+Narration 6,193 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 566 s including holds, two countdowns and the 45 s notes hold.
+
+Scope: the fifth video of the Year 12 focus area "Training for improved performance", completing the types-of-training dotpoint. Course brief `../hms-design-brief.md`. Route entry **hms-y12-m4-v05**. Pre-design pack `../pre-design/hms/hms-y12-m4-v05.md`. Site page `C:/Users/kygs/teaching-app-fix/subjects/health-movement-science/year12/module4/lesson05.sa.html` (read in full, 24 Nov; sha256 `e0af2a14294983edbd6f33574c379713711bd22b9c1a0e23bb8cb3617686ef5b`). Previous design `hms-y12-m4-v04.md`.
+
+## Decisions
+
+- **File name and route id.** Route entry **hms-y12-m4-v05**, playlist order 67, site lesson Year 12 module 4 L05 ("Flexibility, strength, skill and tactics"). Opening (route): "the intensity histograms from v04 give way to three more method families" (hms-y12-m4-v04's final frame). Start: from the three empty method-family cards. Stop: when students can distinguish static, dynamic, ballistic and PNF stretching and place each in a session; compare free weights, fixed weights, body weight and elastics; explain how drills, modified games and games for specific outcomes develop skill and tactics; explain transfer as what the three share; and assess relevance with v03's routine. Next handoff: hms-y12-m4-v06, which opens on "the training methods from v03 to v05 run for six weeks; the improvement line flattens". Lesson key **hms12b05**.
+- **Syllabus.** Inquiry question "How does training influence movement and performance?". Dotpoint **hms-y12-fa2-g2-d1** (p31) "Assess the types of training and training methods and their relevance for a variety of sports", sub-points **s3** "flexibility training, including static, dynamic, ballistic, and Proprioceptive Neuromuscular Facilitation (PNF)", **s4** "strength training, including free/fixed weights, body weight exercises and elastics" and **s5** "skill and tactical development, including drills, modified games and games for specific outcomes", owned here (s1 is v03's, s2 v04's).
+- **One main question:** *How do flexibility, strength and skill training methods differ, and what do they share?* (the route's question, kept). Heading: "How do flexibility, strength and skill training differ?" (the hms-y12-m4-v04 Next chip's words).
+- **Case.** The site's warm-up (a netball coach runs fixed-spot shooting drills every session; training percentage rises for eight weeks, match percentage does not move) is the hook (1), answered in 4 and 5. Card 04 shapes 2; card 05 shapes 3; card 06 shapes 4; card 07 ("transfer is the thing all three share", "specificity is a spectrum, and both ends have a cost") shapes 5; card 08's rows and v03's routine shape 6. WE b1 (assess flexibility, 6 marks) gives 2 its verdict ("relevance is determined by timing at least as much as by sport"); WE b2 (explain drills, modified games and games for outcomes, 5 marks) gives 4 its "repetition against realism" frame and "increase the frequency of the target situation". Attempts are unseen: attempt 1 is the page's Activity 1 items 2 and 4 (a 14-year-old at school with no coach or spotter; a swimmer rehabilitating a shoulder at home with no equipment: choose a strength method, justify, one limitation, 4 marks); attempt 2 is an unseen junior hockey team whose players dribble well in drills but keep dribbling into defenders (design a modified game, explain its mechanism, name what it gives up, 4 marks).
+- **Scope.** Hook (1); flexibility: four methods and the placement rule (2); strength: four ways to apply resistance (3); skill and tactics: drills, modified games, games for outcomes (4); transfer and the specificity spectrum (5); relevance with the routine (6); memory (7); two unseen items (8a to 8d); decision rule and handoff (9); key notes (10).
+- **Syllabus coverage check (root condition, 24 Nov).** s3: all four stretching methods (2) and relevance (2's verdict, 6). s4: all four equipment types (3) and relevance (3, 6, 8a). s5: drills, modified games, games for specific outcomes (4) and relevance (6, 8c). Owned content is taught.
+- **Left to the site page for length (recorded per the root condition).** The hurdler and beginner rows of card 08 (silent); Activity 1 items 1 and 3 (item 3's touch football is the body's own example); Activity 2's netball redesign in full (the hook's answer shows one design); the matching item.
+- **What this video does not teach (recall, one sentence each).** Loading variables (load, reps, sets, rest): **v03**, recalled in 3's first sentence. Stages of learning and practice that looks worse in training but transfers: Year 11 (**hms-y11-m2-v16**, **v18**), recalled in one sentence in 4. Muscle actions and joint range: Year 11 (**hms-y11-m2-v01**, **v02**), the `SegmentLinkage` reused. Specificity as a training principle: **v06** (5 names it and hands it on). Warm-up physiology: **v07**.
+- **Site alignment.** Kept in substance: the warm-up (1); the four-method table (how, placement, strength, risk), "Dynamic before, static or PNF after. Ballistic almost never", the mechanistic reason (temperature and rehearsal before; long static holds briefly reduce force before explosive work), WE b1's "determined by timing at least as much as by sport" (2); "the equipment choice does not change the loading principle, but it changes what else the athlete gets", the four rows, the elastics load profile (3); the four things a match adds (decision, opponent, fatigue, consequence), the three approaches, the touch football and netball modifications, "Drills build the skill. Modified games build the decision that selects the skill", WE b2's repetition against realism (4); transfer in all three, specificity as a spectrum with a cost at each end (5); the gymnast, rugby forward and junior team rows (6).
+- **Site errors found (this read).** None.
+- **Added beyond the site.** (a) A **range readout** on Year 11's `SegmentLinkage` (hip and knee with a straight-leg raise angle, illustrative 70° baseline): each stretch type plays as a motion pattern (static hold, controlled swings, a bounce past the controlled limit that flashes red, PNF's stretch, push, relax, deeper) with a long-term range bar and a "power before activity" bar beside it. (b) A **session placement strip** (warm-up, main, cool-down) that the methods snap into: the site's lower figure. (c) A **load-profile graph**: resistance against joint angle for a dumbbell (roughly flat) and a band (rising), with a "joint strongest" zone shaded. (d) A **specificity spectrum** (`SpecificitySpectrum`, new in `hms-shared`, reused in v06): drills at the simplified end, modified games, games for outcomes at the game-like end, with opposing arrows for "repetitions per player" and "transfer"; flexibility and strength examples dock on the same spectrum in 5. (e) A **tactics board** (abstract counters on a coded court, no people) for the modified games, as the route plans. (f) v03's routine card for 6.
+- **Entry knowledge.** hms-y12-m4-v03 (loading variables; the routine); hms-y12-m4-v04 (aerobic methods); Year 11 HMS (recalled in one sentence): stages of learning and practice design, muscle actions. Not assumed: static, dynamic, ballistic, PNF, free and fixed weights, elastics' load profile, drill, modified game, game for a specific outcome, transfer, specificity spectrum.
+- **Terms.** Static, dynamic, ballistic, PNF (2); free weights, fixed weights, elastics (3); drill, modified game, game for a specific outcome (4); transfer (5). Each gloss writes beside its part.
+- **Naming.** Methods and sports only; no brands, teams or organisations.
+- **Visual system.** One model introduced here: the **specificity spectrum**. Reused: Year 11's `SegmentLinkage`; v03's `DemandProfile`; v04's histograms (opening). Plates: one new, `hms-weight-machine-v1.png` (a plain selectorised weight machine with a pin-loaded weight stack and a guided seat and handles, no text: fixed weights, 3). Reused: painted HMS plates opened and inspected 24 Nov (contact sheet): `hms-netball-ring-ball-v1.png` (a netball post and ring over an outdoor court with a ball: the hook, 1, 4, 5), `hms-thigh-hamstrings-v1.png` (the hamstring muscles of a thigh, no skin: the stretched muscle, 2), `hms-barbell-and-shoes-v1.png` (the barbell half: free weights, 3, 6), `hms-rehab-band-sheet-v1.png` (a red resistance band on a ticked exercise sheet with a pen: elastics, 3 and 8b), `hms-empty-training-field-v1.png` (a grass field with cones and a ball bag at dusk: the small-sided grid, 4 and 6); approved, not yet painted (chosen from their briefs): `hms-dawn-park-mats-v1.png` (mats on dewy grass: body weight, 3), `hms-pool-start-block-v1.png` (an empty starting block and lane: the swimmer, 8a), `hms-knee-brace-kit-bag-v1.png` is not used. No people, hands or faces: movement is the coded linkage only; players are abstract counters.
+- **Painted HMS plates inspected (24 Nov).** `hms-netball-ring-ball-v1.png`, `hms-thigh-hamstrings-v1.png`, `hms-barbell-and-shoes-v1.png`, `hms-rehab-band-sheet-v1.png`, `hms-empty-training-field-v1.png`.
+- **Attempt.** 8a: Activity 1 items 2 and 4 (4 marks). 8c: an unseen junior hockey team (4 marks).
+- **Memory aids.** The site's "Dynamic before, static or PNF after" and "Drills build the skill. Modified games build the decision that selects the skill" (written "Drills build the skill; games build the decision"). Scene 7, after 2 to 6.
+- **A mistake/fix beat** is in 5 ("a program of drills gives the most transfer", crossed: the page's two-truths lie). Other fixes: "static stretch before sprinting" crossed in 2; "a band is just a cheap dumbbell" crossed in 3; "shout 'support!' louder" crossed in 4; "one method is best" crossed in 6.
+- **Reuse:** v04's handoff frame (opening); Year 11's linkage; v03's routine.
+- **Colour key.** Flexibility methods teal shades, ballistic flashing red-orange at its overshoot; strength equipment slate shades; skill approaches amber to green along the spectrum; transfer arrow green, repetitions arrow grey; placement strip warm-up orange, cool-down blue; green answers; red only for crossed mistakes.
+- **Type sizes.** As the course brief.
+- **Anchor.** The three family cards from v04 fill one per scene (2, 3, 4) and stand together in 5 and 9.
+- **Simulation.** The `SegmentLinkage` one-parameter model drives the leg-raise range in 2 (hip angle from one run per method; illustrative baseline 70°, long-term gains shown only as relative bar heights). The load-profile graph is two illustrative curves.
+- **Board stages.** (1) The family cards and the hook's netball shot, scene 1; (2) the linkage range readout and placement strip, scene 2; (3) four equipment plates with the load-profile graph, scene 3; (4) the tactics board and the spectrum, scene 4; (5) the spectrum with three families docked, scene 5; (6) the routine card, scene 6; (7) memory, questions, handoff and notes.
+- **Open decisions for root.** (1) Approve one new plate, `hms-weight-machine-v1.png` (no people, text or brands).
+
+Main question: *How do flexibility, strength and skill training methods differ, and what do they share?*
+Entry knowledge: hms-y12-m4-v03, v04; Year 11 HMS (recalled).
+Stops after: distinguishing four stretching methods and placing them; comparing four ways to apply resistance; explaining how drills, modified games and games for outcomes develop skill and decisions; explaining transfer and the specificity spectrum; assessing relevance with the routine.
+Handoff: principles of training (route entry hms-y12-m4-v06). **Handoff frame (hms-y12-m4-v06 opens from it):** five method-family cards in a row at the top ("anaerobic", "aerobic", "flexibility", "strength", "skill and tactics"), each feeding a single green improvement line on a 0 to 6 week axis below; the line rises for four weeks and flattens across weeks 5 and 6, a grey "?" at its flat end; the "Next" chip at the lower right reads "Next: why does a program stop working?"; this video's heading at the top left.
+
+## Script and shots
+
+13 scene files (1 to 7, 8a to 8d, 9, 10). No people, hands or faces appear at any point.
+
+### 1. hook (better at training, same in matches)
+> So, how do flexibility, strength and skill training differ? Start with a puzzle. A netball coach spends every session on shooting drills from fixed spots. For eight weeks, training shooting percentage rises steadily. In matches, it doesn't move at all. Write down two reasons the improvement didn't carry over, and one change you'd make to the drill.
+
+Visual: opens on hms-y12-m4-v04's handoff frame (the histograms at the left edge; three empty cards "flexibility", "strength", "skill and tactics" with grey "?"; v03's dial greyed; the Next chip). The Next chip leaves and the heading rewrites to "How do flexibility, strength and skill training differ?" (60 px). The histograms leave; the three cards shrink to a row at the top. On "shooting drills from fixed spots" the painted `hms-netball-ring-ball-v1.png` lands (about 560 px) with three coded spot markers on the court, no counters. On "training shooting percentage rises steadily" a green "training %" line climbs on an eight-week axis; on "In matches, it doesn't move at all" a grey "match %" line runs flat beside it. On "two reasons" two empty slots (30 px); on "one change you'd make" a third slot with a grey dashed outline. Hold one second.
+
+### 2. flexibility: four methods, and when each belongs
+> All four stretching methods increase range, but they differ in how, in risk, and above all in when. **Static** stretching moves to mild tension and holds, about fifteen to thirty seconds. It's safe and builds long-term range, but long holds just before explosive work can briefly reduce power. **Dynamic** stretching moves a joint under control through its range, getting faster and wider. It warms the tissue and rehearses the movement, so it belongs in the warm-up. **Ballistic** stretching uses bouncing momentum to push past normal range. It carries the highest injury risk, so it's rarely used, and only by trained athletes whose sport needs fast end-range movement. **PNF** means stretching, then contracting the stretched muscle against resistance, then relaxing and stretching further, usually with a partner. It's generally the most effective for range, but it's slow and uncomfortable. So, dynamic before, static or PNF after. Timing matters at least as much as the sport.
+
+Visual: board change to the linkage range readout (solid from its first frame): Year 11's `SegmentLinkage` lying as a straight-leg raise (thigh, shank and foot lines, hip readout "70°", illustrative), `hms-thigh-hamstrings-v1.png` small behind the thigh line, grey recall tag "earlier"; a session placement strip below (warm-up, main, cool-down); two small bars at the right, "long-term range" and "power just after". On "how, in risk, and above all in when" the placement strip glows. On "Static" the gloss "static: hold at mild tension" (28 px); on "holds, about fifteen to thirty seconds" the leg rises and holds while a 15 to 30 s ring runs; on "builds long-term range" the range bar grows; on "long holds just before explosive work can briefly reduce power" the power bar dips amber; a chip "static stretch before sprinting" writes and is crossed in red. On "Dynamic" the gloss "dynamic: controlled swings, faster and wider" (28 px); on "getting faster and wider" the leg swings in widening arcs, the hip readout climbing 60°, 70°, 80°; on "It warms the tissue" a small warmth glow on the thigh; on "rehearses the movement" a ghost of a sprint stride; on "it belongs in the warm-up" a "dynamic" card snaps into the warm-up block. On "Ballistic" the gloss "ballistic: bouncing momentum past normal range" (28 px); on "push past normal range" the leg bounces and overshoots a dashed "controlled limit" line, which flashes red-orange; on "the highest injury risk" a red risk tag; on "only by trained athletes" a "ballistic" card goes to a small side box "rarely", outside the strip. On "PNF" the gloss "PNF: stretch, contract against resistance, relax, stretch further" (26 px); three steps write one per cue (24 px): on "stretching" "1 stretch", on "contracting the stretched muscle against resistance" "2 push against resistance" (the leg presses down against a coded block), on "relaxing and stretching further" "3 relax, deeper" (the readout passes its last value); on "usually with a partner" a grey tag "partner"; on "the most effective for range" the range bar grows tallest; on "slow and uncomfortable" an amber tag. On "dynamic before, static or PNF after" "static" and "PNF" cards snap into the cool-down block; amber hand tag "dynamic before; static or PNF after" (34 px). On "Timing matters at least as much as the sport" the strip pulses. The "flexibility" family card at the top fills. Hold one second.
+
+### 3. strength: four ways to apply resistance
+> In v-three, load, reps, sets and rest decided whether you build strength, size or power. Equipment decides what else comes with it. **Free weights**, like barbells and dumbbells, make the athlete stabilise the load, so supporting muscles and balance get trained too, and they transfer well to sport. But they need coaching. **Fixed weights**, machines, guide the movement path, so they isolate a muscle and are safe without a spotter, good for beginners and rehab, but they transfer less. Body weight needs no equipment, and you make it harder through leverage, range or speed, but it's hard to load heavily. **Elastics** are different. A dumbbell's load is roughly constant, but a band's resistance rises as it stretches. So the load is greatest near the end of the range, which is often where the joint is strongest. That makes bands useful for rehab and speed work, though the load is hard to measure.
+
+Visual: board change to four equipment plates (solid from its first frame): four slots in a row, v03's load ladder tiny at the left with grey recall tag "v03". On "Equipment decides what else comes with it" amber hand tag "loading decides the adaptation; equipment decides what comes with it" (28 px). On "Free weights" the barbell half of `hms-barbell-and-shoes-v1.png` fills slot 1, gloss "free weights: loads not fixed to a frame" (26 px); on "stabilise the load" three small wobble arrows round the bar and a tag "stabilisers, balance"; on "transfer well to sport" a green "transfer" tag; on "they need coaching" an amber "needs coaching" tag. On "Fixed weights" the new `hms-weight-machine-v1.png` fills slot 2, gloss "fixed weights: machine, guided path" (26 px); on "guide the movement path" a coded guide rail draws on the plate; on "safe without a spotter" green tag "beginners, rehab, no spotter"; on "they transfer less" amber tag "less transfer". On "Body weight" the approved `hms-dawn-park-mats-v1.png` fills slot 3; on "leverage, range or speed" three small tags; on "hard to load heavily" amber tag. On "Elastics" `hms-rehab-band-sheet-v1.png` fills slot 4, gloss "elastics: bands whose resistance rises as they stretch" (26 px). A load-profile graph writes below (resistance against joint angle): on "A dumbbell's load is roughly constant" a flat slate line, "dumbbell"; on "a band's resistance rises as it stretches" a rising teal line, "band"; on "greatest near the end of the range" the teal line's top end glows; on "often where the joint is strongest" a shaded "joint strongest" zone overlaps it; a chip "a band is just a cheap dumbbell" writes and is crossed in red. On "rehab and speed work" green tags; on "the load is hard to measure" amber tag. The "strength" family card at the top fills. Hold one second.
+
+### 4. skill and tactics: drills, modified games, games for outcomes
+> Now the hook. A shot from a fixed spot isn't the same task as a shot in a match. The match adds a decision, an opponent, fatigue and consequence. In Year 11 you saw that practice which looks worse in training often works better in games. **Drills** repeat a skill in simplified conditions, often with no opponent. They give lots of repetitions and suit new skills or fixing a fault, but they remove the decision. A **modified game** is a real game with one rule, space, player number or score changed, so the target behaviour becomes the way to win. Want support play in touch football? Two points for a try within three passes. It makes the target situation happen far more often, with the pressure still on. A **game for a specific outcome** makes one tactical goal the object of play, so players discover the solution. That needs the skills to exist already. So drills build the skill, and games build the decision that selects it.
+
+Visual: board change to the tactics board and spectrum (solid from its first frame): the netball plate small at the left with its three spot markers; a coded court at the right. On "A shot from a fixed spot isn't the same task" the spot markers grey. Four amber tags write one per cue on the court (26 px): on "a decision" "decision", on "an opponent" "opponent" (a red counter appears beside a blue counter), on "fatigue" "fatigue", on "consequence" "consequence". On "In Year 11" a grey recall tag "earlier" with a tiny "training ↓, matches ↑" chip. The `SpecificitySpectrum` draws under the court: a line from "simplified" to "game-like". On "Drills" a card "drills" lands at the simplified end, gloss "drill: repeated practice, simplified" (26 px); on "lots of repetitions" a grey "repetitions" arrow fattens at that end; on "they remove the decision" the four amber tags fade from the court. On "modified game" a card lands mid-spectrum, gloss "modified game: one rule, space, number or score changed" (26 px); on "Two points for a try within three passes" the court shows blue counters passing three times (a counter-to-counter pass line counting 1, 2, 3) and a "+2" score flash, the painted training field tiny; on "far more often, with the pressure still on" the decision and opponent tags return. On "game for a specific outcome" a card lands at the game-like end, gloss "game for a specific outcome: one tactical goal is the object" (26 px); on "players discover the solution" a small lightbulb-free "found it" tick on a counter; on "needs the skills to exist already" an amber tag "skills first". A chip "shout 'support!' louder" writes and is crossed in red. The opposing arrows label: "transfer" (green, rising toward game-like) and "repetitions per player" (grey, rising toward simplified). The hook's slots fill (24 px): "no decision or opponent", "no pressure, no fatigue", change "4 on 4 in a third, shot clock". On "drills build the skill, and games build the decision" amber hand tag (34 px). The "skill and tactics" family card fills. Hold one second.
+
+### 5. what all three share: transfer
+> These three look unrelated, but one question governs them all. Does the improvement show up in the sport? That's **transfer**. More hamstring range on a mat is worth little to a hurdler unless it's there at speed. A bigger leg-press number doesn't guarantee a faster first step. And a fixed-spot shooting percentage measures a task the match never asks for. The principle underneath is specificity, coming up next: the closer training is to the real task, the more carries over. But it's a spectrum, and both ends cost something. All-specific training gives little variety and few chances to fix a weakness. All-general training builds abilities that never show up on game day. Good programs use both, and know which is which.
+
+Visual: board change to the spectrum with three families docked (solid from its first frame): `SpecificitySpectrum` across the centre, the three family cards above. On "transfer" the gloss "transfer: how much training improvement shows up in competition" (30 px), a green arrow from "training" to "competition". Three examples dock one per cue (26 px): on "More hamstring range on a mat" a flexibility chip "range on a mat" at the general end, slides toward "range at speed" at the specific end on "unless it's there at speed"; on "A bigger leg-press number" a strength chip at the general end, the weight machine tiny, and a "first step" chip at the specific end with a grey gap between; on "a fixed-spot shooting percentage" the netball spots at the general end and the 4-on-4 game at the specific end. On "specificity, coming up next" grey tag "specificity (next)". On "both ends cost something" two amber cost tags write: on "All-specific training" "little variety, weakness unfixed" at the specific end; on "All-general training" "never shows up on game day" at the general end. A chip "a program of drills gives the most transfer" writes and is crossed in red. On "Good programs use both" a bracket spans the spectrum, amber hand tag "a spectrum: both ends cost" (34 px). Hold one second.
+
+### 6. assessing relevance
+> Use the same routine. A gymnast needs extreme range under control, so PNF and static work, plus body-weight strength through that full range. The cost is a partner and time, and range needs strength to be safe. A rugby forward needs force in an unstable, contested position, so free weights, with bands for shoulder and hip health. That needs real coaching, because heavy lifting done badly injures. And a junior team with good technique but poor choices has a decision problem, so modified games and games for outcomes, accepting fewer repetitions each. So no method is best. Match it to the demand, and name the cost.
+
+Visual: board change to the routine card (solid from its first frame): v03's `DemandProfile` with its three slots. Three rows write one per cue (24 px): on "A gymnast needs extreme range under control" "extreme controlled range", on "PNF and static work, plus body-weight strength" "PNF + static; body-weight strength through range", on "range needs strength to be safe" "partner, time; range needs strength"; on "A rugby forward" the barbell tiny, "force, unstable, contested", on "free weights, with bands" "free weights + elastics", on "heavy lifting done badly injures" "coaching essential"; on "a junior team with good technique but poor choices" the tactics board tiny, "decision problem", on "modified games and games for outcomes" "modified games, outcome games", on "fewer repetitions each" "fewer reps each". Two silent rows: "hurdler: dynamic before, PNF separately" and "beginner: drills first, games early". On "no method is best" a chip "one method is best" writes and is crossed in red, amber hand tag "match the demand, name the cost" (34 px). Hold one second.
+
+### 7. memory
+> Two things to remember. Dynamic before, static or PNF after. And drills build the skill, games build the decision.
+
+Visual: board change to the memory card (solid from its first frame): the placement strip and the spectrum small at the left, beside a dark-ink framed card (52 px): "Dynamic before; static or PNF after" (written with "Dynamic before, static or PNF after") and "Drills build the skill; games build the decision" (written with "drills build the skill, games build the decision"). This card returns beside the key notes. Hold half a second.
+
+### 8a. attempt one (choose the equipment)
+> Two exam questions. First. A fourteen-year-old is starting resistance training at school, with no coach present and no spotter. A swimmer is rehabilitating a shoulder at home, cleared for light loading, with no gym equipment. For each, choose a way to apply resistance, justify it, and give one limitation. Pause here to answer.
+
+Visual: the board clears. `QuestionScene`: the card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "Athlete A: a 14-year-old beginning resistance training at school, with no coach present during the session and no spotter available. Athlete B: a swimmer rehabilitating a shoulder, cleared for light loading, training at home with no equipment." Demand: "For EACH athlete, recommend a form of strength training (free weights, fixed weights, body weight or elastics), justify the choice and identify one limitation. (4 marks)" Picture: the four empty equipment slots, the approved `hms-pool-start-block-v1.png` tiny. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 8b. feedback, item one
+> The fourteen-year-old suits fixed weights and body weight: a guided path is safe without a spotter, and body weight builds control. The limitation is less transfer to sport. The swimmer suits elastics: light, portable, and loading where the shoulder is strong. The limitation is that the load is hard to measure. The classic mistake is heavy free weights with nobody watching.
+
+Visual: `FeedbackScene`: the card shrinks to the top; the slots light. A green-framed four-line answer writes one per cue (30 px): on "fixed weights and body weight" "1 A: fixed weights + body weight", the machine and mats light; on "safe without a spotter" "2 guided path, safe alone; limit: less transfer"; on "The swimmer suits elastics" "3 B: elastics, light and portable, rising load", the band lights and the load-profile curve tiny; on "the load is hard to measure" "4 limit: load hard to quantify". On "classic mistake" a chip "heavy free weights, unsupervised" writes and is crossed in red, red hand tag "safety and progression first" (34 px). Settle one second.
+
+### 8c. attempt two (the hockey team that won't pass)
+> Second. A junior hockey team all dribble well in drills, but in matches they keep dribbling into defenders instead of passing. Design a modified game for them, explain why it works, and name one thing it gives up compared with drills. Pause here to answer.
+
+Visual: the board clears. The card arrives in one move with its whole text (38 px), tagged "HSC-style question, written for HSCScience". Stem: "A junior hockey team's players dribble accurately in drills, but in matches they repeatedly dribble into defenders instead of passing to an open teammate." Demand: "Design a modified game to address this, explain how it changes the players' behaviour, and identify one thing the modified game gives up compared with drills. (4 marks)" Picture: the coded court with blue and red counters, the painted training field small. **The countdown ring is shown full from "Pause here to answer." and runs for 10 seconds.** The whole card stays on screen during the countdown and after it.
+
+### 8d. feedback, item two
+> One option: small-sided games in a narrow grid where a player may take only three touches, or a goal counts double after three passes. The rule makes passing the way to win, while defenders and decisions stay in. It gives up repetitions of technique per player. The classic mistake is running more dribbling drills.
+
+Visual: `FeedbackScene`: the card shrinks to the top; the court runs a three-pass move. A green-framed four-line answer writes one per cue (30 px): on "small-sided games in a narrow grid" "1 small-sided game, narrow grid"; on "only three touches, or a goal counts double after three passes" "2 rule: 3-touch limit or double goal after 3 passes"; on "The rule makes passing the way to win" "3 mechanism: passing becomes how to score; opponents and decisions kept"; on "repetitions of technique per player" "4 gives up: reps per player". On "classic mistake" a chip "more dribbling drills" writes and is crossed in red, red hand tag "train the decision" (34 px). Settle one second.
+
+### 9. decision rule and handoff
+> So with every method, ask how it's done, when it belongs, what it costs, and whether it transfers. Now put all five families into a real program and run it for six weeks. At first it works, then the improvement line flattens. Why does a program stop working?
+
+Visual: board change to the families. Four chips write on (38 px): "how" on "how it's done", "when" on "when it belongs", "cost" on "what it costs", "transfer" on "whether it transfers". On "all five families" the chips leave; two more cards, "anaerobic" and "aerobic", join the three at the top, five in a row; on "run it for six weeks" each card sends a thin line into a single green improvement line on a 0 to 6 week axis; on "At first it works" the line rises for four weeks; on "then the improvement line flattens" it flattens across weeks 5 and 6 and a grey "?" appears at its end. The "Next" chip slides in: "Next: why does a program stop working?" **This is the handoff frame; hms-y12-m4-v06 opens from it.** Hold half a second.
+
+### 10. key notes (quiet, hold about 45 seconds)
+Heading on screen: "Key notes: what to write in your book".
+> Here are the key notes. Pause the video if you need more time to copy them.
+
+1. Dynamic: warm-up. Static, PNF: cool-down or separate. Ballistic: rarely, highest risk.
+2. PNF: stretch, contract against resistance, relax, stretch further; most range gain.
+3. Free: stabilise. Fixed: guided, safe alone. Body weight: no kit. Bands: rising load.
+4. Drills: reps, no decision. Modified games: a rule makes the target the way to win.
+5. Transfer is the shared test; specificity is a spectrum, and both ends cost.
+
+Memory card (the scene 7 card) beside the notes. Each bullet one line of at most 86 characters. Hold about 45 seconds in all.
+
+## Practice question and feedback
+
+Two unseen items (8a to 8d), "Pause here to answer." and a 10 s countdown each, cards on screen during and after; marks on the card; tag "HSC-style question, written for HSCScience". Neither athlete in 8a nor the hockey team in 8c is worked in the body (the body works a netball shooting drill, touch football support play, a gymnast, a rugby forward and a junior team in general terms).
+
+1. (8a, 4 marks.) A: fixed weights and/or body weight, justified on safety without a spotter and controllable progression (1 mark); limitation: little stabilisation demand and weaker transfer, or body weight hard to load heavily later (1 mark). B: elastics (or body weight), justified as light, portable, home-based and loading most near the end of range (1 mark); limitation: load hard to quantify; bands lose tension (1 mark). Classic mistake crossed: heavy free weights unsupervised.
+2. (8c, 4 marks.) A specific modification (rule, space, player number or score: for example a three-touch limit, a narrow grid, double goals after three passes) (1 mark); mechanism: the rule makes passing the efficient way to score, so the behaviour is selected by the game, not by instruction (1 mark); opponents, decisions and pressure retained, so transfer is higher (1 mark); gives up repetition volume and low-pressure technique correction (1 mark). Classic mistake crossed: more dribbling drills.
+
+Feedback spoken lengths about 30 s (8b) and 23 s (8d) by script; time the exact audio.
+
+## Numbers or facts to verify
+
+Self-check (24 Nov). The Codex science check must confirm each before voicing. No official figures.
+- **Stretching (2).** Static holds about 15 to 30 s; prolonged static stretching immediately before explosive activity can transiently reduce force and power output (short holds within a full warm-up show small effects); dynamic stretching suits warm-ups; ballistic carries the highest injury risk; PNF (contract-relax) generally gives the largest acute range gains and needs a partner.
+- **Equipment (3).** Free weights demand stabilisation; fixed weights guide the path; body weight scaled by leverage, range or tempo; elastic resistance increases with stretch, so load is greatest near end range, which for many movements is where the joint is strongest ("often").
+- **Skill (4).** Drills, modified games and games for specific outcomes as the site defines them; the touch football rule (two points for a try within three passes) is the site's example.
+- **Transfer (5).** Specificity as a spectrum with costs at both ends (the site's own framing).
+- **No em dashes** in this file (searched by script).
+
+## Memory aid check
+
+- **"Dynamic before; static or PNF after."** Assumption: the session ends in, or the next activity is, explosive work. Short static holds inside a full warm-up have small effects, and some sports (gymnastics, dance) do need end-range static work before performing, so the rule is for power and speed sessions.
+- **"Drills build the skill; games build the decision."** Assumption: the skill already exists at a usable level. A true beginner needs drills first (the silent beginner row in 6).
+
+## Narration length estimate
+
+Revision 1 count (24 Nov; by script with the build parser rules: only lines starting "> ", joined with a space, bold markers removed): **6193 characters**, 13 scene files. At 13.3 characters per second the speech is about 466 s; add 26 s of padding (2 s per scene) and 74 s of stated holds, settles, the two 10 s countdowns and the rest of the quiet notes hold: **about 566 s**.
+
+| Scene | Characters |
+| --- | --- |
+| 1. hook (better at training, same in matches) | 350 |
+| 2. flexibility: four methods, and when each belongs | 966 |
+| 3. strength: four ways to apply resistance | 892 |
+| 4. skill and tactics: drills, modified games, games for outcomes | 922 |
+| 5. what all three share: transfer | 722 |
+| 6. assessing relevance | 619 |
+| 7. memory | 114 |
+| 8a. attempt one (choose the equipment) | 328 |
+| 8b. feedback, item one | 376 |
+| 8c. attempt two (the hockey team that won't pass) | 256 |
+| 8d. feedback, item two | 315 |
+| 9. decision rule and handoff | 258 |
+| 10. key notes (quiet, hold about 45 seconds) | 75 |
+
+Reserve cuts: (1) scene 5, the two "both ends cost" sentences spoken (keep the tags silent); (2) scene 6, the junior team row spoken; (3) scene 4, the Year 11 recall sentence (keep the tag). Do not cut below 5,500 without replacing content.
+
+## Assets
+
+Have: HMS painted, inspected 24 Nov: `hms-netball-ring-ball-v1.png`, `hms-thigh-hamstrings-v1.png`, `hms-barbell-and-shoes-v1.png`, `hms-rehab-band-sheet-v1.png`, `hms-empty-training-field-v1.png`; HMS approved, not yet painted (chosen from briefs): `hms-dawn-park-mats-v1.png`, `hms-pool-start-block-v1.png`. Coded: spot markers, training and match lines, linkage range readout with method motions, placement strip, range and power bars, PNF steps, guide rail, load-profile graph, tactics board with counters and pass counts, `SpecificitySpectrum` with arrows and docked chips, routine rows, improvement line (handoff), question cards, countdown. Reused coded: Year 11's `SegmentLinkage`; v03's `DemandProfile` and load ladder; v04's histograms. No people.
+
+Need (new plate): `hms-weight-machine-v1.png`.
+
+Kit gaps: `SpecificitySpectrum` in `hms-shared`; the tactics board (abstract counters) in `hms-shared` for v10 and v13.
+
+## Codex asset brief (HMS-Y12-B05, weight machine)
+
+Standing rules as v01's brief: house watercolour style, transparent PNG with true alpha, never stretched, no readable text, no brands or logos. Every plate: no people, hands or faces anywhere in the image.
+
+1. `hms-weight-machine-v1.png` (1600 x 1600): a plain selectorised gym machine (for example a seated leg-press or chest-press) with a pin-loaded weight stack behind a guard, a padded seat and handles on a guided frame, on a rubber gym floor. No people, hands or faces anywhere in the image; no numbers on the weight plates, no logos or text.
+
+Hand-in to `status.md`; provenance `docs/production/claude-pm/assets/hms-y12-b05-provenance.json`.
+
+## Codex learning review and science check brief (HMS-Y12-B05)
+
+- **Learning review:** trace from m4-v04 as a student who did not watch our Year 11 videos. Do the linkage motions make the four stretching methods distinct, and does the placement strip carry the rule with its reason? Does the load-profile graph make elastics' difference visible? Does the tactics board show why a rule change selects the behaviour? Does the spectrum make transfer a single idea across the three families? Are both attempts unseen?
+- **Science check:** every item in "Numbers or facts to verify", especially the static-stretching-before-power claim's wording and the elastics load profile.
+
+## Codex error-check brief (HMS-Y12-B05, after the reviews)
+
+Error-only: every quoted cue appears word for word in its scene in spoken order; the opening matches hms-y12-m4-v04's handoff frame and the closing matches hms-y12-m4-v06's route opening (the methods run for six weeks; the improvement line flattens); no brands or logos; no people, hands or faces (linkage lines and counters only); no "Year 11" or "Year 12" label on screen (narration only); no em dash, no U+2061; no module number or course label on screen.
+
+## YouTube metadata (draft)
+
+- Title: "Flexibility, Strength and Skill Training: PNF, Free Weights, Modified Games | HSC Health and Movement Science"
+- Description:
+
+"Full lesson, notes and practice questions: https://hscscience.com.au/subjects/health-movement-science/year12/module4/lesson05.sa.html
+
+How do flexibility, strength and skill training methods differ, and what do they share? Static, dynamic, ballistic and PNF stretching, and where each belongs in a session; free weights, fixed weights, body weight and elastics; drills, modified games and games for specific outcomes; transfer and the specificity spectrum; and assessing each method's relevance for a range of sports. Includes two exam-style questions with brief feedback. All questions are written for HSCScience in the HSC style; they are not official NESA questions.
+
+Health and Movement Science 11-12 (2023 syllabus), Year 12: Training for improved performance.
+Syllabus content (NSW Health and Movement Science 11-12, 2023):
+"Assess the types of training and training methods and their relevance for a variety of sports"
+"flexibility training, including static, dynamic, ballistic, and Proprioceptive Neuromuscular Facilitation (PNF)"
+"strength training, including free/fixed weights, body weight exercises and elastics"
+"skill and tactical development, including drills, modified games and games for specific outcomes"
+Official syllabus: https://curriculum.nsw.edu.au/learning-areas/pdhpe/health-and-movement-science-11-12-2023
+
+Previous: Why do endurance athletes train mostly easy?
+Next: Why does a program stop working?
+
+#HealthAndMovementScience #HSC #HSCScience"
+
+## Open decisions
+
+- **One new plate (recommended: approve).** `hms-weight-machine-v1.png`; no people, numbers or brands.
+
+## Build ids
+
+Lesson key `hms12b05`; folder `src/explainer/lessons/hms-y12-m4-v05`; build folder `docs/production/claude-pm/lessons/hms12b05`. Imports `hms-shared` (`SegmentLinkage`, `DemandProfile`, `IntensityHistogram`; new `SpecificitySpectrum`, tactics board).
+
+Scene headings (13): hook, flexibility, strength, skill, transfer, relevance, memory, attempt, feedback-one, attempt-two, feedback-two, handoff, key-notes.
+
+Holds and transitions as hms-y12-m3-v01. Every teaching scene is a board change.
+
+## Review notes (author, not learner copy)
+
+- **Teaching checks.** Causes: why dynamic work suits warm-ups and long static holds do not (temperature and rehearsal against a brief drop in force) (2); why free weights transfer and machines are safer alone; why a band's load rises (3); why a fixed-spot drill fails to transfer and how a rule change selects a behaviour (4); why the same transfer question governs all three (5). Attention: a coach whose training numbers rise while match numbers stay flat. Visual medium: one leg linkage performing four stretch types, one overshooting a red limit; a flat line against a rising one on a load graph; counters passing three times for a "+2"; three families docking on one spectrum. Apply: two unseen athletes (8a); an unseen hockey team (8c). Remember: dynamic before, static or PNF after; drills build the skill, games build the decision.
+- **Overlap.** v06 formalises specificity; v07 takes warm-up physiology; v10 places skill and tactics in a session; v13 takes tactics on the day.
+- **No em dashes** in this file (searched by script).
