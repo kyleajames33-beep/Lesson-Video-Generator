@@ -1,4 +1,4 @@
-# HMS pre-design: Why does a trained athlete have a lower resting heart rate, and what else does training change inside the body?
+# HMS pre-design: What does training change inside the body?
 
 Video **hms-y12-m4-v08** (route order 70). Site lesson: Year 12 L08, Physiological adaptations to training. [Page](https://hscscience.com.au/subjects/health-movement-science/year12/module4/lesson08.sa); local file `C:\Users\kygs\teaching-app-fix\subjects\health-movement-science\year12\module4\lesson08.sa.html` (sha256 `4dc0aca4591b8022`, read-only).
 

@@ -636,7 +636,7 @@ v(m='y12/module4', n=7, q="What happens when training stops, and why do variety,
   models=['reuse:adaptation staircase', 'intro:detraining decay curves'],
   visual="Coded decay curves for aerobic capacity and strength at different rates; coded muscle temperature readout during a warm-up; painted plates: a foam roller, a stationary bike.",
   overlap="None.")
-v(m='y12/module4', n=8, q="Why does a trained athlete have a lower resting heart rate, and what else does training change inside the body?",
+v(m='y12/module4', n=8, q="What does training change inside the body?",
   open="the warm-up readout from v07 settles to a resting heart rate: 48 against 72",
   start="Start from Q = HR x SV (recalled from Year 11) and the resting heart rate puzzle.",
   stop="Stop when students can examine adaptations in heart rate, stroke volume and cardiac output, oxygen uptake and lung capacity, haemoglobin level, muscle hypertrophy and fibre types, and link principle to adaptation to performance, avoiding three common false claims.",
