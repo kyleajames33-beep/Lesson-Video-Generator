@@ -1,0 +1,559 @@
+WEBVTT
+
+00:00:00.181 --> 00:00:02.073
+Last time we found where a ball lands
+
+00:00:02.113 --> 00:00:03.321
+when it's launched from a cliff.
+
+00:00:04.007 --> 00:00:05.298
+Now there's something in the way.
+
+00:00:06.164 --> 00:00:08.530
+This ball leaves a cliff top fifteen metres
+
+00:00:08.652 --> 00:00:11.098
+above the sea, at eighteen metres per second,
+
+00:00:11.520 --> 00:00:13.345
+thirty-five degrees above the horizontal.
+
+00:00:14.168 --> 00:00:16.694
+Twenty-five metres out stands a wall, eight metres
+
+00:00:16.735 --> 00:00:18.358
+tall, measured from sea level.
+
+00:00:19.062 --> 00:00:20.711
+The wall is lower than the cliff, so
+
+00:00:21.094 --> 00:00:21.898
+surely it clears?
+
+00:00:22.684 --> 00:00:24.292
+And what if the ball were launched straight
+
+00:00:24.353 --> 00:00:25.680
+sideways at the same speed?
+
+00:00:26.426 --> 00:00:27.011
+Make a prediction.
+
+00:00:30.849 --> 00:00:32.315
+Here's the thirty-five degree launch.
+
+00:00:32.900 --> 00:00:33.684
+It sails over.
+
+00:00:34.510 --> 00:00:36.457
+Now the sideways launch, same speed.
+
+00:00:37.324 --> 00:00:37.952
+It hits the wall.
+
+00:00:38.601 --> 00:00:40.888
+So a wall lower than the cliff guarantees
+
+00:00:41.190 --> 00:00:41.550
+nothing.
+
+00:00:42.273 --> 00:00:44.356
+What matters is how high the ball is
+
+00:00:44.498 --> 00:00:46.701
+at one moment, the moment it reaches the
+
+00:00:46.742 --> 00:00:48.104
+wall's horizontal position.
+
+00:00:48.706 --> 00:00:50.611
+How far above the wall top it passes
+
+00:00:50.672 --> 00:00:52.436
+then is called the clearance.
+
+00:00:53.202 --> 00:00:54.915
+Finding it is our whole question.
+
+00:00:55.609 --> 00:00:56.214
+Let's set it up.
+
+00:00:56.778 --> 00:00:58.883
+Put the origin at the launch point, with
+
+00:00:59.085 --> 00:01:01.932
+up as positive, so a y is minus
+
+00:01:02.013 --> 00:01:03.978
+nine point eight metres per second squared.
+
+00:01:04.641 --> 00:01:06.949
+The sea is fifteen metres below the launch
+
+00:01:06.990 --> 00:01:09.078
+point, and the wall top is eight metres
+
+00:01:09.199 --> 00:01:09.861
+above the sea.
+
+00:01:10.644 --> 00:01:12.624
+Eighteen metres per second is the size of
+
+00:01:12.645 --> 00:01:15.886
+the launch velocity, not either component, so resolve
+
+00:01:15.927 --> 00:01:16.026
+it:
+
+00:01:16.767 --> 00:01:20.648
+u x is eighteen cos thirty-five, about fourteen
+
+00:01:20.709 --> 00:01:23.350
+point seven metres per second, and u y
+
+00:01:23.531 --> 00:01:26.811
+is eighteen sin thirty-five, about ten point three,
+
+00:01:27.153 --> 00:01:27.452
+upwards.
+
+00:01:28.153 --> 00:01:30.491
+Keep the unrounded values in your calculator.
+
+00:01:31.356 --> 00:01:33.963
+And the wall is twenty-five metres away horizontally.
+
+00:01:35.189 --> 00:01:37.319
+Which column can tell us when the ball
+
+00:01:37.401 --> 00:01:38.264
+reaches the wall?
+
+00:01:39.171 --> 00:01:40.820
+Not the vertical one, because the height there
+
+00:01:40.861 --> 00:01:42.068
+is exactly what we don't know.
+
+00:01:42.552 --> 00:01:44.476
+But we do know the horizontal distance,
+
+00:01:45.178 --> 00:01:48.004
+and horizontally the ball keeps a constant velocity.
+
+00:01:48.646 --> 00:01:51.029
+So s x equals u x t,
+
+00:01:51.551 --> 00:01:54.475
+which gives t equals twenty-five over fourteen point
+
+00:01:54.536 --> 00:01:57.200
+seven four, about one point six nine six
+
+00:01:57.241 --> 00:01:57.581
+seconds.
+
+00:01:58.302 --> 00:02:00.663
+Two columns, one clock, but this time the
+
+00:02:00.744 --> 00:02:03.385
+horizontal column sets the clock, and the time
+
+00:02:03.426 --> 00:02:04.026
+carries across.
+
+00:02:04.702 --> 00:02:06.998
+Now use that time in the vertical column.
+
+00:02:07.682 --> 00:02:09.952
+s y equals u y t plus a
+
+00:02:10.034 --> 00:02:11.400
+half a y t squared.
+
+00:02:12.124 --> 00:02:13.805
+The first term is how high the launch
+
+00:02:13.845 --> 00:02:16.005
+velocity alone would carry the ball by then,
+
+00:02:16.386 --> 00:02:18.406
+ten point three two times one point six
+
+00:02:18.467 --> 00:02:18.988
+nine six,
+
+00:02:19.548 --> 00:02:21.309
+about seventeen point five metres.
+
+00:02:22.070 --> 00:02:23.950
+The second term is how far gravity has
+
+00:02:23.991 --> 00:02:25.891
+pulled it back down in the same time,
+
+00:02:26.473 --> 00:02:29.393
+four point nine t squared, about fourteen point
+
+00:02:29.554 --> 00:02:30.034
+one metres.
+
+00:02:30.756 --> 00:02:33.003
+Subtract, and the ball is three point four
+
+00:02:33.084 --> 00:02:35.292
+two metres above the launch point when it
+
+00:02:35.373 --> 00:02:36.095
+reaches the wall.
+
+00:02:36.799 --> 00:02:39.270
+It's already past its peak and falling, but
+
+00:02:39.291 --> 00:02:40.758
+it's still above the cliff top.
+
+00:02:41.318 --> 00:02:41.911
+Careful here.
+
+00:02:42.375 --> 00:02:44.679
+Three point four two metres is measured from
+
+00:02:44.720 --> 00:02:47.264
+the launch point, but the wall is measured
+
+00:02:47.305 --> 00:02:47.865
+from the sea.
+
+00:02:48.749 --> 00:02:51.098
+Heights only compare when they're measured from one
+
+00:02:51.219 --> 00:02:53.628
+datum, one level that every height is measured
+
+00:02:53.669 --> 00:02:53.829
+from.
+
+00:02:54.413 --> 00:02:55.036
+Take sea level.
+
+00:02:55.782 --> 00:02:57.642
+The launch point is fifteen metres up,
+
+00:02:58.144 --> 00:03:00.444
+so the ball is at fifteen plus three
+
+00:03:00.505 --> 00:03:01.225
+point four two,
+
+00:03:01.806 --> 00:03:04.007
+eighteen point four two metres above the sea.
+
+00:03:04.728 --> 00:03:06.037
+The wall top is at eight.
+
+00:03:06.620 --> 00:03:08.823
+So the clearance is eighteen point four two
+
+00:03:09.045 --> 00:03:11.850
+minus eight, ten point four two, about ten
+
+00:03:11.911 --> 00:03:12.611
+point four metres.
+
+00:03:13.317 --> 00:03:14.168
+Yes, it clears.
+
+00:03:14.864 --> 00:03:15.997
+Here's a trap worth seeing.
+
+00:03:16.602 --> 00:03:17.584
+Suppose you round u
+
+00:03:18.106 --> 00:03:20.412
+y to ten point three two and the
+
+00:03:20.452 --> 00:03:22.718
+time to one point seven zero seconds,
+
+00:03:23.420 --> 00:03:25.285
+then round each term to three figures.
+
+00:03:26.148 --> 00:03:29.443
+Seventeen point five minus fourteen point two gives
+
+00:03:29.624 --> 00:03:30.569
+three point three.
+
+00:03:31.232 --> 00:03:34.281
+That's twelve centimetres too low, and the clearance
+
+00:03:34.322 --> 00:03:36.528
+comes out as ten point three instead of
+
+00:03:36.590 --> 00:03:37.371
+ten point four.
+
+00:03:38.456 --> 00:03:42.204
+Subtracting two big, nearly equal numbers magnifies any
+
+00:03:42.325 --> 00:03:42.966
+rounding in them.
+
+00:03:43.468 --> 00:03:45.634
+So keep the full values in your calculator,
+
+00:03:45.996 --> 00:03:47.599
+and round only the final answer.
+
+00:03:48.141 --> 00:03:50.189
+Now the sideways launch that hit the wall.
+
+00:03:50.814 --> 00:03:51.403
+Same steps.
+
+00:03:52.113 --> 00:03:54.785
+It reaches the wall after twenty-five over eighteen,
+
+00:03:55.247 --> 00:03:56.513
+one point three nine seconds.
+
+00:03:57.175 --> 00:03:59.780
+It started with no vertical velocity, so in
+
+00:03:59.820 --> 00:04:02.384
+that time it simply falls four point nine
+
+00:04:02.625 --> 00:04:05.229
+t squared, about nine point four five metres.
+
+00:04:05.851 --> 00:04:07.935
+That leaves it about five point five metres
+
+00:04:08.116 --> 00:04:10.079
+above the sea, around two and a half
+
+00:04:10.140 --> 00:04:11.622
+metres below the wall top.
+
+00:04:12.526 --> 00:04:14.152
+It gets to the wall sooner, but it
+
+00:04:14.213 --> 00:04:16.744
+has no upward velocity to lift it first.
+
+00:04:17.388 --> 00:04:19.634
+The launch angle changes both when the ball
+
+00:04:19.675 --> 00:04:21.379
+arrives and how high it is.
+
+00:04:22.128 --> 00:04:24.215
+So here's the method for any obstacle.
+
+00:04:25.101 --> 00:04:25.627
+Where is it?
+
+00:04:26.353 --> 00:04:27.539
+When does the ball get there?
+
+00:04:28.285 --> 00:04:30.038
+How high is the ball at that time?
+
+00:04:30.744 --> 00:04:32.912
+Then compare, on one datum.
+
+00:04:33.597 --> 00:04:36.435
+Where, when, how high, compare.
+
+00:04:37.339 --> 00:04:39.546
+Notice the clock runs the other way from
+
+00:04:39.567 --> 00:04:40.529
+a landing problem.
+
+00:04:41.092 --> 00:04:43.319
+There, the vertical motion gave us the time.
+
+00:04:43.842 --> 00:04:46.743
+Here, the obstacle's horizontal position gives the time,
+
+00:04:47.185 --> 00:04:49.525
+and the vertical column turns that time into
+
+00:04:49.566 --> 00:04:49.866
+a height.
+
+00:04:53.658 --> 00:04:54.127
+Your turn.
+
+00:04:55.075 --> 00:04:57.396
+A ball is launched at twenty point zero
+
+00:04:57.457 --> 00:05:00.539
+metres per second, thirty degrees above the horizontal,
+
+00:05:00.840 --> 00:05:03.321
+from a platform two point zero metres above
+
+00:05:03.382 --> 00:05:03.961
+level ground.
+
+00:05:04.703 --> 00:05:07.112
+A wall three point zero metres high stands
+
+00:05:07.314 --> 00:05:09.864
+twenty point zero metres away horizontally.
+
+00:05:10.507 --> 00:05:13.696
+Neglecting air resistance, determine whether the ball clears
+
+00:05:13.737 --> 00:05:15.300
+the wall, and by how much.
+
+00:05:16.085 --> 00:05:16.989
+Pause here to answer.
+
+00:05:28.200 --> 00:05:31.042
+u x is twenty cos thirty, about seventeen
+
+00:05:31.082 --> 00:05:31.582
+point three,
+
+00:05:32.123 --> 00:05:34.304
+so the ball reaches the wall after twenty
+
+00:05:34.484 --> 00:05:36.925
+over seventeen point three, one point one five
+
+00:05:36.965 --> 00:05:37.286
+seconds.
+
+00:05:38.106 --> 00:05:40.552
+Then s y is ten t minus four
+
+00:05:40.592 --> 00:05:43.338
+point nine t squared, about plus five point
+
+00:05:43.358 --> 00:05:44.360
+zero one metres.
+
+00:05:45.220 --> 00:05:47.442
+On the ground datum that's two plus five
+
+00:05:47.482 --> 00:05:49.963
+point zero one, about seven point zero one
+
+00:05:50.003 --> 00:05:50.343
+metres,
+
+00:05:50.904 --> 00:05:52.625
+so it clears the three metre wall by
+
+00:05:52.645 --> 00:05:54.366
+about four point zero one metres.
+
+00:05:55.208 --> 00:05:57.573
+The classic slip is comparing five point zero
+
+00:05:57.694 --> 00:05:59.819
+one with three and forgetting the platform.
+
+00:06:01.469 --> 00:06:01.934
+Last one.
+
+00:06:02.540 --> 00:06:04.370
+A ball is launched from a point twelve
+
+00:06:04.432 --> 00:06:06.081
+point zero metres above the ground.
+
+00:06:06.883 --> 00:06:08.604
+When it reaches a wall, it is two
+
+00:06:08.685 --> 00:06:11.127
+point six metres below its launch point.
+
+00:06:11.850 --> 00:06:14.100
+The wall is nine point zero metres tall.
+
+00:06:14.724 --> 00:06:16.958
+Determine whether the ball clears the wall, and
+
+00:06:16.979 --> 00:06:17.562
+by how much.
+
+00:06:18.290 --> 00:06:19.120
+Pause here to answer.
+
+00:06:29.869 --> 00:06:31.944
+Put both heights on the ground datum.
+
+00:06:32.669 --> 00:06:34.634
+The ball is at twelve minus two point
+
+00:06:34.675 --> 00:06:34.914
+six,
+
+00:06:35.417 --> 00:06:37.361
+nine point four metres above the ground.
+
+00:06:38.023 --> 00:06:39.766
+The wall top is at nine point zero,
+
+00:06:40.088 --> 00:06:42.252
+so the ball clears it by zero point
+
+00:06:42.334 --> 00:06:42.914
+four metres,
+
+00:06:43.416 --> 00:06:44.558
+just forty centimetres.
+
+00:06:45.500 --> 00:06:47.700
+The slip is seeing minus two point six
+
+00:06:47.821 --> 00:06:49.101
+and deciding it must hit,
+
+00:06:49.603 --> 00:06:52.164
+or comparing two point six with nine directly.
+
+00:06:52.887 --> 00:06:54.703
+Heights only compare on the same datum.
+
+00:06:56.328 --> 00:06:58.298
+So to clear a wall, find when the
+
+00:06:58.339 --> 00:07:00.268
+ball gets there, then how high it is.
+
+00:07:01.152 --> 00:07:03.073
+Now take the wall away and put a
+
+00:07:03.134 --> 00:07:04.335
+target on level ground,
+
+00:07:04.976 --> 00:07:07.518
+seventy-two metres from a launcher firing at thirty
+
+00:07:07.579 --> 00:07:08.379
+metres per second.
+
+00:07:09.062 --> 00:07:10.127
+What angle should it aim at?
+
+00:07:10.973 --> 00:07:13.100
+It turns out there are two answers, and
+
+00:07:13.161 --> 00:07:14.084
+next time we'll see why.
+
+00:07:16.961 --> 00:07:17.784
+Here are the key notes.
+
+00:07:18.307 --> 00:07:19.855
+Pause the video if you need more time
+
+00:07:19.895 --> 00:07:20.317
+to copy them.

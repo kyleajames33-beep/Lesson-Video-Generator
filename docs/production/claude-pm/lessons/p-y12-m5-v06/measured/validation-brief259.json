@@ -1,0 +1,785 @@
+{
+  "lesson": "phys-y12-m5-v06",
+  "wave": "P5",
+  "sourceSha256": "3ac3133c669657c595188ff8540cbf97f1c21dd1c0ba2ff564d665bc28d58643",
+  "measuredPath": "work/brief259/physics/P5/phys-y12-m5-v06/voiced/lesson.json",
+  "measuredSha256": "b069fcb9750dd81c6eedc9c23bdeca284461a991a9f0be08d715f8d8e2cb6252",
+  "characters": 6250,
+  "totalSeconds": 481.6,
+  "under570": true,
+  "inputTokens": 1504,
+  "outputTokens": 11175,
+  "costUsd": 0.101327,
+  "cuesTimingPass": true,
+  "scenes": [
+    {
+      "id": "hook",
+      "audio": "public/audio/phys-y12-m5-v06/hook.wav",
+      "seconds": 27.435,
+      "durationInFrames": 914,
+      "cues": [
+        {
+          "text": "horizontal",
+          "start": 12.84399999999999,
+          "end": 13.30036363636363
+        },
+        {
+          "text": "prediction",
+          "start": 26.627000000000095,
+          "end": 26.976090909091003
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8649999999999967,
+        "after": "way.",
+        "before": "This"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 27.435,
+        "characters": 464,
+        "charactersPerSecond": 16.912702751959177,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/hook.wav",
+        "audioSha256": "6013277ff5c494f9069a9463f367862f3b44a2a2fb0b4169d7db694f46a7aee5",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.83428955078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 1.348,
+          "end": 1.389,
+          "score": 0.496
+        },
+        {
+          "word": "a",
+          "start": 7.006999999999992,
+          "end": 7.026999999999992,
+          "score": 0
+        },
+        {
+          "word": "what",
+          "start": 22.8030000000001,
+          "end": 22.944000000000102,
+          "score": 0.262
+        },
+        {
+          "word": "were",
+          "start": 23.3670000000001,
+          "end": 23.508000000000102,
+          "score": 0.344
+        },
+        {
+          "word": "a",
+          "start": 26.566000000000095,
+          "end": 26.607000000000095,
+          "score": 0.308
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "reveal",
+      "audio": "public/audio/phys-y12-m5-v06/reveal.wav",
+      "seconds": 24.872,
+      "durationInFrames": 747,
+      "cues": [
+        {
+          "text": "over",
+          "start": 3.0570000000000004,
+          "end": 3.1858
+        },
+        {
+          "text": "wall",
+          "start": 7.2419999999999884,
+          "end": 7.437199999999988
+        },
+        {
+          "text": "question",
+          "start": 24.08600000000005,
+          "end": 24.408666666666715
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8660000000000005,
+        "after": "speed.",
+        "before": "It"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 24.872,
+        "characters": 365,
+        "charactersPerSecond": 14.675136699903506,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/reveal.wav",
+        "audioSha256": "4f90abd5798234835c3de1dd6e3cb2c4b6246f10248d9341e0926c13f6c3cf90",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.87567138671875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "Here's",
+          "start": 0.382,
+          "end": 0.623,
+          "score": 0.483
+        },
+        {
+          "word": "one",
+          "start": 14.250999999999998,
+          "end": 14.390999999999996,
+          "score": 0.458
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "set-up",
+      "audio": "public/audio/phys-y12-m5-v06/set-up.wav",
+      "seconds": 39.48,
+      "durationInFrames": 1185,
+      "cues": [
+        {
+          "text": "upwards",
+          "start": 31.785999999999987,
+          "end": 32.04849999999998
+        },
+        {
+          "text": "horizontally",
+          "start": 37.995999999999924,
+          "end": 38.550769230769156
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.864000000000047,
+        "after": "calculator.",
+        "before": "And"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 39.48,
+        "characters": 579,
+        "charactersPerSecond": 14.665653495440731,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/set-up.wav",
+        "audioSha256": "3d2a9fda90298debd35ae36aa1cd685b7398e64e0c75b739fe4ce6e744fa691f",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.856292724609375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "y",
+          "start": 5.824,
+          "end": 5.843999999999999,
+          "score": 0
+        },
+        {
+          "word": "your",
+          "start": 34.418999999999876,
+          "end": 34.53999999999987,
+          "score": 0.132
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "time-to-wall",
+      "audio": "public/audio/phys-y12-m5-v06/time-to-wall.wav",
+      "seconds": 29.52,
+      "durationInFrames": 886,
+      "cues": [
+        {
+          "text": "seconds",
+          "start": 22.373999999999988,
+          "end": 22.672374999999988
+        },
+        {
+          "text": "across",
+          "start": 28.880000000000045,
+          "end": 29.120000000000047
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9059999999999859,
+        "after": "wall?",
+        "before": "Not"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 29.52,
+        "characters": 456,
+        "charactersPerSecond": 15.447154471544716,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/time-to-wall.wav",
+        "audioSha256": "33e86841f39103332f3b63700c20a556178ab50c5a999e30ef60962b8971d569",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.8570556640625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "humanListening": "pending"
+    },
+    {
+      "id": "height-at-wall",
+      "audio": "public/audio/phys-y12-m5-v06/height-at-wall.wav",
+      "seconds": 36.72,
+      "durationInFrames": 1102,
+      "cues": [
+        {
+          "text": "metres",
+          "start": 16.608999999999984,
+          "end": 16.86614285714284
+        },
+        {
+          "text": "back down",
+          "start": 19.951000000000032,
+          "end": 20.51100000000003
+        },
+        {
+          "text": "wall",
+          "start": 31.434000000000083,
+          "end": 31.642800000000083
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.7600000000000477,
+        "after": "metres.",
+        "before": "The"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 36.72,
+        "characters": 569,
+        "charactersPerSecond": 15.495642701525055,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/height-at-wall.wav",
+        "audioSha256": "59a8561daaa2defeff1bdbf9ef2d27d121f4a29510a16711045a5fc72aa8a260",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.83526611328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "t",
+          "start": 5.030999999999989,
+          "end": 5.050999999999989,
+          "score": 0
+        },
+        {
+          "word": "a",
+          "start": 5.492999999999989,
+          "end": 5.552999999999988,
+          "score": 0.321
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "datum-clearance",
+      "audio": "public/audio/phys-y12-m5-v06/datum-clearance.wav",
+      "seconds": 33.36,
+      "durationInFrames": 1001,
+      "cues": [
+        {
+          "text": "sea",
+          "start": 6.4719999999999995,
+          "end": 6.667
+        },
+        {
+          "text": "clears",
+          "start": 32.792000000000066,
+          "end": 33.00028571428578
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8829999999999849,
+        "after": "sea.",
+        "before": "Heights"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 33.36,
+        "characters": 522,
+        "charactersPerSecond": 15.647482014388489,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/datum-clearance.wav",
+        "audioSha256": "27bf9c8a3e7110a2cc29fff89d78e1cf44acf2c9e00817e1646af9be3bbe5b2a",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.882598876953125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "height",
+          "start": 11.811999999999985,
+          "end": 12.032999999999985,
+          "score": 0.45
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "rounding-trap",
+      "audio": "public/audio/phys-y12-m5-v06/rounding-trap.wav",
+      "seconds": 33.4,
+      "durationInFrames": 1002,
+      "cues": [
+        {
+          "text": "three",
+          "start": 4.728,
+          "end": 4.969
+        },
+        {
+          "text": "answer",
+          "start": 32.85800000000006,
+          "end": 33.06457142857149
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 1.084000000000092,
+        "after": "four.",
+        "before": "Subtracting"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 33.4,
+        "characters": 488,
+        "charactersPerSecond": 14.610778443113773,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/rounding-trap.wav",
+        "audioSha256": "4cdd757ad36b4870a309cedebb6aa5f676c2655c99dee53fc98038e01d9ccf6f",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.84765625,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "u",
+          "start": 3.064,
+          "end": 3.0840000000000005,
+          "score": 0
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "sideways-contrast",
+      "audio": "public/audio/phys-y12-m5-v06/sideways-contrast.wav",
+      "seconds": 33.84,
+      "durationInFrames": 1016,
+      "cues": [
+        {
+          "text": "seconds",
+          "start": 8.290999999999986,
+          "end": 8.572749999999987
+        },
+        {
+          "text": "top",
+          "start": 23.502000000000088,
+          "end": 23.66700000000009
+        },
+        {
+          "text": "is",
+          "start": 33.39900000000009,
+          "end": 33.45233333333343
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000307,
+        "after": "top.",
+        "before": "It"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 33.84,
+        "characters": 525,
+        "charactersPerSecond": 15.514184397163119,
+        "rateExempt": false,
+        "insertedWords": 1,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/sideways-contrast.wav",
+        "audioSha256": "4aad86e1712f11dbd7ab46a03f984793e23c1c5ee1e39f7ccb9ce9b325c252d5",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.83465576171875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 21.89800000000009,
+          "end": 21.93900000000009,
+          "score": 0.489
+        },
+        {
+          "word": "it",
+          "start": 28.402000000000122,
+          "end": 28.462000000000124,
+          "score": 0.47
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "method",
+      "audio": "public/audio/phys-y12-m5-v06/method.wav",
+      "seconds": 28.64,
+      "durationInFrames": 950,
+      "cues": [
+        {
+          "text": "compare",
+          "start": 9.317999999999987,
+          "end": 9.810624999999987
+        },
+        {
+          "text": "height",
+          "start": 27.879000000000072,
+          "end": 28.068428571428644
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9030000000000058,
+        "after": "compare.",
+        "before": "Notice"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 28.64,
+        "characters": 393,
+        "charactersPerSecond": 13.722067039106145,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/method.wav",
+        "audioSha256": "022f6163fc6abbdd634f840a06350b139158b8fc738357ac07cece8e44794320",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.86419677734375,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "is",
+          "start": 7.102999999999997,
+          "end": 7.182999999999997,
+          "score": 0.248
+        },
+        {
+          "word": "a",
+          "start": 17.799999999999997,
+          "end": 17.819999999999997,
+          "score": 0
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-1",
+      "audio": "public/audio/phys-y12-m5-v06/attempt-1.wav",
+      "seconds": 24.36,
+      "durationInFrames": 1031,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.9470000000000005,
+        "after": "turn.",
+        "before": "A"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 24.36,
+        "characters": 361,
+        "charactersPerSecond": 14.819376026272579,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/attempt-1.wav",
+        "audioSha256": "75e2709926e694b24af2fb025331cba240eca5ef84e210902d95415939fa773e",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.861297607421875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 7.586,
+          "end": 7.626000000000001,
+          "score": 0.498
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-1",
+      "audio": "public/audio/phys-y12-m5-v06/feedback-1.wav",
+      "seconds": 32.44,
+      "durationInFrames": 1004,
+      "cues": [
+        {
+          "text": "seconds",
+          "start": 9.165,
+          "end": 9.445875000000001
+        },
+        {
+          "text": "metres",
+          "start": 16.198999999999987,
+          "end": 16.50842857142856
+        },
+        {
+          "text": "platform",
+          "start": 31.61800000000006,
+          "end": 31.974444444444508
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8600000000000243,
+        "after": "metres.",
+        "before": "On"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 32.44,
+        "characters": 495,
+        "charactersPerSecond": 15.258939580764489,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/feedback-1.wav",
+        "audioSha256": "adf7e72cd5a2fb6dc79f5e66883d2540fee45df530ee9ce09e9910d522074f76",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.8663330078125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "y",
+          "start": 11.147999999999987,
+          "end": 11.167999999999987,
+          "score": 0
+        },
+        {
+          "word": "zero",
+          "start": 19.94200000000001,
+          "end": 20.202000000000012,
+          "score": 0.365
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "attempt-2",
+      "audio": "public/audio/phys-y12-m5-v06/attempt-2.wav",
+      "seconds": 18.28,
+      "durationInFrames": 849,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.8009999999999975,
+        "after": "ground.",
+        "before": "When"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 18.28,
+        "characters": 283,
+        "charactersPerSecond": 15.481400437636761,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/attempt-2.wav",
+        "audioSha256": "4447b4f8121a534727798ec9e2c4d8eabba6c614d7cde6bff68cda439ccc9668",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.843292236328125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 2.2590000000000003,
+          "end": 2.2990000000000004,
+          "score": 0.497
+        },
+        {
+          "word": "metres",
+          "start": 8.018999999999998,
+          "end": 8.358999999999998,
+          "score": 0.435
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "feedback-2",
+      "audio": "public/audio/phys-y12-m5-v06/feedback-2.wav",
+      "seconds": 25.48,
+      "durationInFrames": 795,
+      "cues": [
+        {
+          "text": "ground",
+          "start": 1.552,
+          "end": 1.914
+        },
+        {
+          "text": "datum",
+          "start": 2.015,
+          "end": 2.3175
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.9410000000000096,
+        "after": "centimetres.",
+        "before": "The"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 25.48,
+        "characters": 382,
+        "charactersPerSecond": 14.992150706436421,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/feedback-2.wav",
+        "audioSha256": "b18a55e84c3583e04213c5407bd2f43175bc28f7f29dc7a13845c46f7e3bc8c5",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.852508544921875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [],
+      "humanListening": "pending"
+    },
+    {
+      "id": "handoff",
+      "audio": "public/audio/phys-y12-m5-v06/handoff.wav",
+      "seconds": 18.52,
+      "durationInFrames": 616,
+      "cues": [
+        {
+          "text": "answers",
+          "start": 16.130999999999986,
+          "end": 16.411874999999988
+        },
+        {
+          "text": "why",
+          "start": 17.816999999999986,
+          "end": 17.967749999999988
+        }
+      ],
+      "worstWordGap": {
+        "seconds": 0.8829999999999885,
+        "after": "is.",
+        "before": "Now"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 18.52,
+        "characters": 293,
+        "charactersPerSecond": 15.8207343412527,
+        "rateExempt": false,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/handoff.wav",
+        "audioSha256": "e35e29609b353a5892e041ca74e32dbefeee90a6285ddcbf173f99370a8f45ac",
+        "evidence": "work/google-batch-voice/phys-y12-m5-v06/2026-11-22T09-16-41-576Z/report.json"
+      },
+      "peakFraction": 0.842071533203125,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "a",
+          "start": 9.809999999999988,
+          "end": 9.849999999999987,
+          "score": 0.491
+        }
+      ],
+      "humanListening": "pending"
+    },
+    {
+      "id": "key-notes",
+      "audio": "public/audio/phys-y12-m5-v06/key-notes.wav",
+      "seconds": 4.24,
+      "durationInFrames": 1350,
+      "cues": [],
+      "worstWordGap": {
+        "seconds": 0.5230000000000004,
+        "after": "notes.",
+        "before": "Pause"
+      },
+      "runOn": {
+        "pass": true,
+        "seconds": 4.24,
+        "characters": 75,
+        "charactersPerSecond": 17.68867924528302,
+        "rateExempt": true,
+        "insertedWords": 0,
+        "trailingInsertedWords": 0,
+        "failures": [],
+        "audio": "public/audio/phys-y12-m5-v06/key-notes.wav",
+        "audioSha256": "d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5",
+        "evidence": "work/google-runon-checks/d7146ecd92dba50a9529a9f6d240b9e0735062b7ec715b393b61142066b464e5.json"
+      },
+      "peakFraction": 0.82440185546875,
+      "fullScaleSamples": 0,
+      "silencesAtLeast1_5s": [],
+      "lowScoreWords": [
+        {
+          "word": "key",
+          "start": 0.723,
+          "end": 0.903,
+          "score": 0.419
+        }
+      ],
+      "humanListening": "pending"
+    }
+  ],
+  "worstWordGap": {
+    "scene": "rounding-trap",
+    "seconds": 1.084000000000092,
+    "after": "four.",
+    "before": "Subtracting"
+  },
+  "humanListening": "pending",
+  "builtPreview": "pending",
+  "notesFrames": 1350,
+  "machineChecks": "Source hashes, character alignment and cue bounds, hold durations and independent run-on checks. Human listening and exact built playback pending."
+}
