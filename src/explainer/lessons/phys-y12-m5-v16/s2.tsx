@@ -148,7 +148,7 @@ const CloseUp: React.FC<{bar: number; pulse?: number}> = ({bar, pulse}) => {
 export const S08: React.FC = () => {
 	const id = 'uncertainty';
 	const f = useCurrentFrame();
-	const pm = cue(id, 'plus or minus a fifth'), onePct = cue(id, 'one percent'), sq = cue(id, 'Omega squared squares'), twoPct = cue(id, 'around two percent'), each = cue(id, 'Each point gets'), passes = cue(id, 'prediction line passes'), within = cue(id, 'within the uncertainty');
+	const pm = cue(id, 'plus or minus a fifth'), onePct = cue(id, 'one percent'), sq = cue(id, 'Omega squared squares'), twoPct = cue(id, 'around two percent'), each = cue(id, 'Each point gets'), passes = cue(id, 'prediction line passes'), within = cue(id, 'consistent with the model');
 	const z = prog(f, 0, 24) * (1 - prog(f, each, 24));
 	const bars = prog(f, each + 20, 30);
 	const close = 0.5 * prog(f, onePct, 20) + 0.5 * prog(f, twoPct, 20);
@@ -170,7 +170,7 @@ export const S08: React.FC = () => {
 			</FrameSvg>
 			{z > 0.01 ? <div style={{opacity: z}}>
 				<Lbl x={px} y={py - 50} at={pm} color={NAVY.ink} anchor="middle" size={34}>the 0.100 kg point</Lbl>
-				<Lbl x={px} y={py + 70} at={onePct} color={ERR} anchor="middle" size={40}>ω² = {fx(MID.w2, 1)} ± {fx(f < twoPct ? (MID.w2 * UNC.pctT) / 100 : (MID.w2 * UNC.pctW2) / 100, 1)}</Lbl>
+				<Lbl x={px} y={py + 70} at={twoPct} color={ERR} anchor="middle" size={40}>ω² = {fx(MID.w2, 1)} ± {fx((MID.w2 * UNC.pctW2) / 100, 1)}</Lbl>
 				<Lbl x={1500} y={330} at={sq} color={ORANGE.ink} size={30}>prediction (orange)</Lbl>
 				<Lbl x={900} y={820} at={sq} color={NAVY.ink} size={30}>best line (navy)</Lbl>
 			</div> : null}
