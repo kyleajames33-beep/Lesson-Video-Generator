@@ -1,8 +1,8 @@
 # Maths S11 T02: How do we calculate elapsed time from timetables and schedules? Counting up in hops (to the next o'clock, whole hours, the minutes left), midnight as a stop on the way, adding a duration past 2400, reading a timetable, and a shift's pay (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` (Revision 1, this batch), `math-s11-a01.md` to `a11.md`, the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` (Revision 1, this batch), `math-s11-a01.md` to `a11.md`, the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,818 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 516 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,806 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 515 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: second video of the Year 11 Time and location strand, outline playlist order 49. One video for Standard 1 and Standard 2. Viewers arrive from t01's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t02.md`. Route entry: `math-s11-t02` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson01.sa.html` (hook, WE1 to WE3, traps 02 and 03, drills 3 to 5, Q1). Visual system: maths studio kit; the coach, departure board, bus, bus stop, pay envelope and phone plates (all existing); the hop line, clock odometer and timetable coded.
 
@@ -286,3 +286,12 @@ Builds on: Seconds, Minutes, Hours and 24-Hour Time. Next: Latitude and Longitud
 
 - Revision 2 (24 Nov 2026): learning review resolved (T02-BORROW, T02-2400, T02-GUESS). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t01; check that the negative number and "1 h 35" make the need for a method felt, that each hop lands on a whole hour, that "376" is explained by 60-minute hours, that the odometer makes "next day" visible, that the timetable's column and row meanings are said before the question, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-t02-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,818 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,806 (Codex's value). Narration is **5,806 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 437 s; total about 515 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

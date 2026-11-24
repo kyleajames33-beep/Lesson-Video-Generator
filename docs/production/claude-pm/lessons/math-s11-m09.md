@@ -1,8 +1,8 @@
 # Maths S11 M09: How do saving, an emergency fund and tracking spending protect us from money trouble? Living expenses, a fund of 3 to 6 months, weeks to build it, saving first, variance, and choosing the fund for the job (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m08.md` (Revision 1, this batch), Year 12 `math-s12-i18.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), the accepted Year 11 Standard designs (`math-s11-e01.md`, `e12.md`, each at Revision 2), `math-s11-m01.md` to `m08.md` (Revision 1, this batch), Year 12 `math-s12-i18.md` (Revision 2, which recalls this video), the coherence audit (`../checks/maths-standard-coherence-audit-2026-11-23.md`) and root's Standard rulings 1 to 99 (`../checks/root-rulings-maths-standard-outline.md`; rulings 5 and 87 apply). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,551 characters by script at Revision 2 (Revision 1: 5,532; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,539 characters by script at Revision 2 (Revision 1: 5,532; see "Narration length estimate"), 13 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: last video of the Year 11 Managing money strand, outline playlist order 36. One video for Standard 1 and Standard 2. Viewers arrive from m08's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-m09.md`. Route entry: `math-s11-m09` in `../../programme/maths-standard-route-inputs-10.json`. Site lesson: `year11/managing-money/lesson06.sa.html` (site L14), Think First, cards 2 to 4, WE2 to WE4 and SAQ 2 and 3 used, moved onto m08's weekly budget (MSY-08, MSY-09). Visual system: maths studio kit; the car on the hoist and the coin jar (both existing); the fund gauge, living-expenses bar, variance table, decision path and boards coded.
 
@@ -282,3 +282,12 @@ Source review: `../checks/m-s11-m09-learning-review.md` (0 blockers, 0 should fi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from m08; check that "due today" makes the fund's purpose obvious before any number, that living expenses come from m08's blocks, that the $2 gap at week 28 makes rounding up felt, that variances keep their signs on screen, and that the 3-or-6 choice is justified with numbers), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-m09-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,551 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,539 (Codex's value). Narration is **5,539 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 416 s; total about 511 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

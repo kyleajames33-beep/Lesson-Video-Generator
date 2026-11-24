@@ -1,8 +1,8 @@
 # Maths S11 D15: How do quartiles, the five-number summary and the IQR describe spread? Halve, then halve again; the five-number summary from a list or a stem-and-leaf plot; the IQR as the spread of the middle half; and range against IQR (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d14.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d14.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,502 characters by script (see "Narration length estimate"), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,490 characters by script (see "Narration length estimate"), 13 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixteenth video of the Year 11 Data analysis strand, outline playlist order 75. One video for Standard 1 and Standard 2. Viewers arrive from d14's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d15.md`. Route entry: `math-s11-d15` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson11.sa.html` (card 06, WE 1) and `lesson13.sa.html` (card 05, quick check). Visual system: maths studio kit; the alarm clock, cricket scoreboard, calculator, delivery bag and pay envelope plates (all existing); the order strip, quarter bands, brackets and stem-and-leaf coded.
 
@@ -269,3 +269,13 @@ Builds on: Comparing Datasets: Centre, Spread and Spreadsheets. Next: Box Plots:
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from d14; check that ordering and the median come first, that the odd-n step is shown before it is named as a slip, that the IQR is a subtraction with units, that the slider makes "resistant" visible, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d15-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,502 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,490 (Codex's value). Narration is **5,490 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 413 s; total about 496 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

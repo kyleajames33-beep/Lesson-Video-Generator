@@ -1,8 +1,8 @@
 # Maths S11 T04: How does longitude give time differences at 15 degrees per hour? 360° in 24 hours, 1° = 4 minutes, east is ahead, subtract on the same side and add across Greenwich, the day change, and why real clocks round (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,594 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 506 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,582 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 505 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Time and location strand, outline playlist order 51. One video for Standard 1 and Standard 2. Viewers arrive from t03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t04.md`. Route entry: `math-s11-t04` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson03.sa.html` (recall, formulas card, WE2, WE3, trap 02, drills, Q2). Visual system: maths studio kit; the desk globe (new in t03); the spinning globe, longitude ruler and zone map coded.
 
@@ -281,3 +281,12 @@ Builds on: Latitude and Longitude: Finding Any Place on Earth. Next: Australian 
 
 - Revision 2 (24 Nov 2026): learning review resolved (T04-SEASON). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t03; check that 15° comes from 360 ÷ 24 before use, that "east is ahead" carries its reason, that the ruler makes "add across Greenwich" visible, that the day change is shown on the odometer, that the Sun's 2 h 20 against the clocks' 2 h lands, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-t04-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,594 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,582 (Codex's value). Narration is **5,582 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 420 s; total about 505 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

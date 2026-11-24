@@ -1,8 +1,8 @@
 # Maths S11 D06A: Why do we group data, and how do frequency tables, histograms and polygons show it? Tallies and frequency tables, why thirty different answers need classes, choosing classes, and drawing the histogram and frequency polygon (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d05.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p05.md`: "Year 11 d06 (a frequency table, a tally)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d05.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p05.md`: "Year 11 d06 (a frequency table, a tally)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,567 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,555 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixth video of the Year 11 Data analysis strand, outline playlist order 66 (d06 is split into d06a and d06b, both 66; ruling 8's test; status file open question). One video for Standard 1 and Standard 2. Viewers arrive from d05's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d06a.md`. Route entry: `math-s11-d06a` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (cards 05 and 06, WE 1). Visual system: maths studio kit; the phone, bedroom, delivery bag and exam desk plates (all existing); the tally board, class-width slider, histogram and polygon coded.
 
@@ -29,7 +29,7 @@ Source review: `../checks/m-s11-d06a-learning-review.md`; resolution record `../
 
 - **Split (ruling 8's test).** The point `cia7a007a6` asks for two tables, two histograms with polygons, by hand and with digital tools, on top of `cib752696f`'s "why group". At Standard pace, one video would run well over 570 s. d06a: why group, frequency tables, histogram and polygon by hand. d06b: cumulative table, cumulative histogram and polygon, and digital tools for both. Both playlist 66 (as a05a and a05b).
 - **Two datasets, each for its reason.** Screens in bedrooms (the sample of 20: 0 to 3) shows an ungrouped table working well; screen time (a class of 30, 70 to 455 minutes, all different) shows why grouping is needed. The class of 30 is a separate group (the whole class read their phones), said in d05's handoff.
-- **Classes: width 60 from 60.** Seven classes, 60–<120 to 420–<480, on screen as "60–<120" and spoken "sixty to under a hundred and twenty". The empty classes on each side (0–<60, 480–<540) give the polygon's end points 30 and 510 without negative times. 120 and 180 are in the data, so the "where does 120 go?" question is real; d01's memory card answers it.
+- **Classes: width 60 from 60.** Seven classes, 60-<120 to 420-<480, on screen as "60-<120" and spoken "sixty to under a hundred and twenty". The empty classes on each side (0-<60, 480-<540) give the polygon's end points 30 and 510 without negative times. 120 and 180 are in the data, so the "where does 120 go?" question is real; d01's memory card answers it.
 - **Class-width slider (simulation, visual surprise).** The same 30 values re-binned live: width 20 gives a picket fence of 1s and 2s; width 60 shows a clear shape; width 200 squashes it into two bars. Grouping is a choice, and the shape only appears at a sensible width.
 - **Bars touch.** The axis is a number line of minutes, and the classes meet at their boundaries, so the bars meet too. Gaps are for categories (d07).
 - **The polygon.** Dots at the class centres on the bar tops, joined, then closed on the axis at the centres of the empty classes either side (30 and 510). It traces the same shape as the histogram.
@@ -39,11 +39,11 @@ Source review: `../checks/m-s11-d06a-learning-review.md`; resolution record `../
   2. **Class-width slider** (scene 4): width 20 to 200 re-bins the 30 values into a live histogram with a "classes: n" readout.
   3. **Histogram and polygon draw** (scenes 5, 6): bars rise to their frequencies; centre dots drop onto the bar tops; the line joins and closes on the axis.
 - **Colour roles (strand, fixed).** As d01: values blue; counts, frequencies, tallies and bars olive; mean teal; median and quartiles violet; spread and fences amber; answer green; mistake red. Here: the polygon a darker olive line with blue-outlined centre dots.
-- **Large type, handwritten voice.** Labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "tally in fives", "a table of ones", "a box for every value", "120 → 120–<180", "shape appears", "bars touch", "middle of the class", "close on the axis". At most two live at once.
+- **Large type, handwritten voice.** Labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "tally in fives", "a table of ones", "a box for every value", "120 → 120-<180", "shape appears", "bars touch", "middle of the class", "close on the axis". At most two live at once.
 - **Stage changes (standard item 2).** The 30 values (1); the screens tally and table (2); the useless table of ones, choosing classes, the grouped tally (3); the class-width slider (4); the histogram (5); the polygon (6); framed card (7); question cards (8 to 11); the histogram with the question chip (12); key notes (13).
-- **Worked examples (g01 order).** Scene 2: "screens: 0 | 3, 1 | 7, 2 | 6, 3 | 4; total 20" (framed green). Scene 3: the grouped table "60–<120 | 3; 120–<180 | 9; 180–<240 | 7; 240–<300 | 5; 300–<360 | 3; 360–<420 | 2; 420–<480 | 1; total 30" (framed green); crossed slip "120 in 60–120 and 120–180" (caption "120 belongs to 120–<180"). Scene 6: centres "90, 150, 210, 270, 330, 390, 450"; ends "30 and 510" (framed green).
+- **Worked examples (g01 order).** Scene 2: "screens: 0 | 3, 1 | 7, 2 | 6, 3 | 4; total 20" (framed green). Scene 3: the grouped table "60-<120 | 3; 120-<180 | 9; 180-<240 | 7; 240-<300 | 5; 300-<360 | 3; 360-<420 | 2; 420-<480 | 1; total 30" (framed green); crossed slip "120 in 60 to 120 and 120 to 180" (caption "120 belongs to 120-<180"). Scene 6: centres "90, 150, 210, 270, 330, 390, 450"; ends "30 and 510" (framed green).
 - **Memory aid.** Framed card: "Group it, tally it, draw it: bars touch for numbers." Key line: "Polygon dots go in the middle of each bar top, and the line closes on the axis."
-- **Attempts.** A1 (pack question 1): 3, 4, 5, 2, 1; 8; crossed "(b) 5" (caption "at least 2: 2, 3 and 4"). A2 (pack question 2): 1, 4, 7, 5, 2, 1; 30–<40, centre 35; crossed "30–<40: 8" (caption "40 goes in 40–<50").
+- **Attempts.** A1 (pack question 1): 3, 4, 5, 2, 1; 8; crossed "(b) 5" (caption "at least 2: 2, 3 and 4"). A2 (pack question 2): 1, 4, 7, 5, 2, 1; 30-<40, centre 35; crossed "30-<40: 8" (caption "40 goes in 40-<50").
 - **Mistake scene:** none separate. Overlapping class labels (3, A2); gaps between bars (5); polygon at the boundaries or left open (6); "at least" read as "exactly" (A1).
 - **Cause chain taught, in order:** (1) a frequency table counts how often each value occurs, which is useful only when values repeat (2); (2) when nearly every value is different, every count is 1 and no pattern shows, so we group values into classes and count each class (3); (3) the classes must cover every value exactly once and be a sensible width, because the width decides whether the shape shows (3, 4); (4) the axis of a histogram is a number line and the classes meet, so the bars touch, and each bar's height is its class's frequency (5); (5) the polygon joins the centre of each bar top, the class's middle value, so it traces the same shape as a line (6).
 - **Entry knowledge (route):** math-s11-d05 (discrete; continuous), d01 ("a box for every answer"); Stage 4 and 5 tallies and column graphs. Recalled in grey chips.
@@ -78,7 +78,7 @@ Visual: stage change (simulation 1): the bedroom plate `ms12-bedroom-furniture-v
 ### 3. why some data need grouping
 > Now try the same thing with screen time. Seventy minutes, once. Ninety-five, once. A hundred and ten, once. The table is thirty rows of ones, and it tells us nothing. When nearly every value is different, we group the values into classes and count each class instead. Here, classes sixty minutes wide work well. Sixty to under a hundred and twenty, a hundred and twenty to under a hundred and eighty, and so on, up to four hundred and eighty. Remember the survey buttons? A box for every answer, no overlaps, no gaps. Classes follow the same rule. A hundred and twenty sits in a hundred and twenty to under a hundred and eighty, never in two classes at **once**. Now tally again. Three, nine, seven, five, three, two and one, thirty in all. We lose the exact values, but we gain a picture we can actually **read**.
 
-Visual: stage change: a long ungrouped table scrolls: "70 | 1", "95 | 1", "110 | 1" ... (30 rows of 1; hand tag "a table of ones"); it fades. A class strip writes, 40 px: "60–<120", "120–<180", "180–<240", "240–<300", "300–<360", "360–<420", "420–<480" (hand tag "a box for every value"; grey chip "d01: a box for every answer"). On "A hundred and twenty sits" the value 120 hovers between "60–<120" and "120–<180", then drops into "120–<180" (hand tag "120 → 120–<180"); on "once" (bold) a red slip "120 in 60–120 and 120–180" writes beside it and is crossed (caption "120 belongs to 120–<180"). On "tally again" the tally board fills from the list (values fly in turn; the phone's 145 lands in "120–<180"); on "thirty in all" the grouped table, 44 px: "Screen time (min) | Frequency" with 3, 9, 7, 5, 3, 2, 1 and "Total 30" (framed green). On "read" (bold) chip "grouping loses exact values, gains a pattern".
+Visual: stage change: a long ungrouped table scrolls: "70 | 1", "95 | 1", "110 | 1" ... (30 rows of 1; hand tag "a table of ones"); it fades. A class strip writes, 40 px: "60-<120", "120-<180", "180-<240", "240-<300", "300-<360", "360-<420", "420-<480" (hand tag "a box for every value"; grey chip "d01: a box for every answer"). On "A hundred and twenty sits" the value 120 hovers between "60-<120" and "120-<180", then drops into "120-<180" (hand tag "120 → 120-<180"); on "once" (bold) a red slip "120 in 60 to 120 and 120 to 180" writes beside it and is crossed (caption "120 belongs to 120-<180"). On "tally again" the tally board fills from the list (values fly in turn; the phone's 145 lands in "120-<180"); on "thirty in all" the grouped table, 44 px: "Screen time (min) | Frequency" with 3, 9, 7, 5, 3, 2, 1 and "Total 30" (framed green). On "read" (bold) chip "grouping loses exact values, gains a pattern".
 
 ### 4. how wide should the classes be?
 > Why sixty minutes? Watch what happens if we change the width. Classes twenty minutes wide give lots of ones and twos, and the graph looks like a picket fence. Classes two hundred minutes wide squash everything into two big bars and a lone one. Somewhere between, the shape appears. Most students sit between two and four hours, with a few much higher. A good rule is about five to ten classes, all the same width, starting at a tidy value below the smallest number, and covering the **largest**. That's why some datasets need grouping. Without it, we can't see the shape, and we can't analyse it.
@@ -88,12 +88,12 @@ Visual: stage change (simulation 2): the class-width slider under a live histogr
 ### 5. the histogram
 > A histogram is a column graph for numerical data. The horizontal axis is a number line, here screen time in minutes. Each class gets a bar, and its height is the class's frequency, so a bar's height tells you how many students are in that class. Three for sixty to a hundred and twenty. Nine for the next. Then seven, five, three, two and one. Notice the bars touch. That's because the classes meet. One class ends exactly where the next one begins, so there's no gap on the number line, and no gap between the bars. The tallest bar is the class with the most students, a hundred and twenty to under a hundred and eighty **minutes**. Gaps between bars are for categories, like bedroom and kitchen, which we'll draw **soon**.
 
-Visual: stage change (simulation 3): full-width axes: horizontal "Screen time (min)" 0 to 540 with ticks every 60 (40 px labels), vertical "Frequency" 0 to 10. On "Three for sixty" the first bar rises from 60 to 120, height 3 (olive; the table row lights beside it); on "Nine for the next" the second rises; on "seven, five, three, two and one" the rest rise in turn. On "the bars touch" the shared edges glow (hand tag "bars touch"); a magnifier on the 120 boundary shows one bar ending as the next begins. On "minutes" (first bold) the 120–<180 bar rings olive with chip "tallest: 9 students". On "soon" a ghost column graph with gaps (bedroom, kitchen) slides in small and fades (grey chip "categories: gaps").
+Visual: stage change (simulation 3): full-width axes: horizontal "Screen time (min)" 0 to 540 with ticks every 60 (40 px labels), vertical "Frequency" 0 to 10. On "Three for sixty" the first bar rises from 60 to 120, height 3 (olive; the table row lights beside it); on "Nine for the next" the second rises; on "seven, five, three, two and one" the rest rise in turn. On "the bars touch" the shared edges glow (hand tag "bars touch"); a magnifier on the 120 boundary shows one bar ending as the next begins. On "minutes" (first bold) the 120-<180 bar rings olive with chip "tallest: 9 students". On "soon" a ghost column graph with gaps (bedroom, kitchen) slides in small and fades (grey chip "categories: gaps").
 
 ### 6. the frequency polygon
 > A frequency polygon draws the same shape as a line. Put a dot in the middle of the top of each bar, at its class centre, halfway between the class's ends. Sixty to a hundred and twenty has its centre at ninety, so the first dot sits at ninety, height three. Then a hundred and fifty, height nine, and so on to four fifty. Join the dots. Then close the polygon on the axis, at the centres of the empty classes on either side, thirty and five hundred and **ten**. The polygon and the histogram tell the same story. The line just makes it easier to see the rise and the long, slow fall on the **right**. Some questions show only the polygon, so you need to read it either way.
 
-Visual: the histogram stays. On "middle of the top of each bar" a blue-outlined dot drops onto the first bar's top centre (hand tag "middle of the class"); row, 44 px: "(60 + 120) ÷ 2 = 90". On "a hundred and fifty, height nine" the next dot drops; the rest drop in turn at 210, 270, 330, 390, 450. On "Join the dots" a darker olive line joins them. On "close the polygon" two extra dots drop onto the axis at 30 and 510 (dashed ghost bars of height 0 for 0–<60 and 480–<540) and the line closes (hand tag "close on the axis"). On "ten" (first bold) row "centres 90, 150, 210, 270, 330, 390, 450; ends 30 and 510" (framed green). On "right" the bars fade to 30% so the polygon stands alone, with a soft arrow along its right side.
+Visual: the histogram stays. On "middle of the top of each bar" a blue-outlined dot drops onto the first bar's top centre (hand tag "middle of the class"); row, 44 px: "(60 + 120) ÷ 2 = 90". On "a hundred and fifty, height nine" the next dot drops; the rest drop in turn at 210, 270, 330, 390, 450. On "Join the dots" a darker olive line joins them. On "close the polygon" two extra dots drop onto the axis at 30 and 510 (dashed ghost bars of height 0 for 0-<60 and 480-<540) and the line closes (hand tag "close on the axis"). On "ten" (first bold) row "centres 90, 150, 210, 270, 330, 390, 450; ends 30 and 510" (framed green). On "right" the bars fade to 30% so the polygon stands alone, with a soft arrow along its right side.
 
 ### 7. memory aid
 > Here's the card. Group it, tally it, draw it, and for numbers, the bars touch. Then the polygon's dots go in the middle of each bar top, and the line closes on the **axis**.
@@ -113,12 +113,12 @@ Visual: the card shrinks to the top (30 px). The tally board fills quickly; on "
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Twenty food deliveries took these times in minutes. They're on the card. Complete a frequency table with classes ten to under twenty, twenty to under thirty, and so on, up to sixty to under seventy. Which class has the tallest bar on the histogram, and at what class centre is the polygon's highest point? Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Twenty food deliveries took these times (minutes): 18, 22, 25, 27, 29, 31, 33, 34, 35, 36, 38, 39, 40, 42, 44, 47, 49, 52, 58, 63. (a) Complete a frequency table with classes 10–<20, 20–<30, ..., 60–<70. (b) Which class has the tallest bar on the histogram, and at what class centre is the polygon's highest point?" Picture slot: the delivery bag `ma11-delivery-bag-v1.png` (about 260 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Twenty food deliveries took these times (minutes): 18, 22, 25, 27, 29, 31, 33, 34, 35, 36, 38, 39, 40, 42, 44, 47, 49, 52, 58, 63. (a) Complete a frequency table with classes 10-<20, 20-<30, ..., 60-<70. (b) Which class has the tallest bar on the histogram, and at what class centre is the polygon's highest point?" Picture slot: the delivery bag `ma11-delivery-bag-v1.png` (about 260 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > The frequencies are one, four, seven, five, two and one, twenty in **total**. Forty goes in forty to under fifty, so thirty to under forty has seven. That's the tallest bar, and its centre is thirty-**five**. Putting forty in the thirties and getting eight is the **slip**.
 
-Visual: the card shrinks to the top. A mini histogram draws with bars 1, 4, 7, 5, 2, 1; on "total" row "(a) 1, 4, 7, 5, 2, 1; total 20" (framed green). On "Forty goes in" the value 40 drops into "40–<50" (hand tag "a box for every value"). On "five" a polygon dot lands on the 30–<40 bar top; row "(b) 30–<40; centre 35" (framed green). On "slip" a red slip "30–<40: 8" writes and is crossed (caption "40 goes in 40–<50"). Hold about 1 s.
+Visual: the card shrinks to the top. A mini histogram draws with bars 1, 4, 7, 5, 2, 1; on "total" row "(a) 1, 4, 7, 5, 2, 1; total 20" (framed green). On "Forty goes in" the value 40 drops into "40-<50" (hand tag "a box for every value"). On "five" a polygon dot lands on the 30-<40 bar top; row "(b) 30-<40; centre 35" (framed green). On "slip" a red slip "30-<40: 8" writes and is crossed (caption "40 goes in 40-<50"). Hold about 1 s.
 
 ### 12. handoff: cumulative frequency
 > Here's our screen-time histogram and its polygon. Now a different kind of question. Four hours is two hundred and forty minutes. How many of the class used their phone for less than four hours? You could add up the bars to the left of two hundred and forty, one by one. Or you could keep a running total as you go, so the answer is waiting for you. That's **next**.
@@ -131,7 +131,7 @@ Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). B
 
 - Frequency: how many times a value or class occurs.
 - Group when most values differ: 5 to 10 equal classes.
-- Classes like 60–<120: each value in exactly one.
+- Classes like 60-<120: each value in exactly one.
 - Histogram: frequency as height; bars touch.
 - Polygon: dots at class centres; close on the axis.
 
@@ -156,7 +156,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 Model answer: (a) 0: 3; 1: 4; 2: 5; 3: 2; 4: 1; total 15. (b) 5 + 2 + 1 = 8 students. Classic mistake (crossed): "(b) 5".
 
 **Attempt 2 (scene 10; pack question 2, 3 marks suggested).** As on the card.
-Model answer: (a) 10–<20: 1; 20–<30: 4; 30–<40: 7; 40–<50: 5; 50–<60: 2; 60–<70: 1; total 20. (b) 30–<40; class centre 35. Classic mistake (crossed): "30–<40: 8".
+Model answer: (a) 10-<20: 1; 20-<30: 4; 30-<40: 7; 40-<50: 5; 50-<60: 2; 60-<70: 1; total 20. (b) 30-<40; class centre 35. Classic mistake (crossed): "30-<40: 8".
 
 ## Numbers used (author note: every value)
 
@@ -168,13 +168,13 @@ Model answer: (a) 10–<20: 1; 20–<30: 4; 30–<40: 7; 40–<50: 5; 50–<60: 
 | Centres | 90, 150, ..., 450; ends 30, 510 | 6 |
 | 4 hours | 240 min | 12 |
 | A1 | 3, 4, 5, 2, 1; 8 | 8, 9 |
-| A2 | 1, 4, 7, 5, 2, 1; 30–<40; 35 | 10, 11 |
+| A2 | 1, 4, 7, 5, 2, 1; 30-<40; 35 | 10, 11 |
 
 ## Numbers to verify (all values, repeated for Codex)
 
 Recalculated (24 Nov 2026, scratchpad `s11d/verify.py`, `python -I`); Codex to re-check.
 - Screens: 3 + 7 + 6 + 4 = 20.
-- Screen time classes from the 30 values: 60–<120: 70, 95, 110 (3); 120–<180: 120 to 175 (9); 180–<240: 180 to 235 (7); 240–<300: 245 to 295 (5); 300–<360: 305, 320, 345 (3); 360–<420: 370, 395 (2); 420–<480: 455 (1). Total 30.
+- Screen time classes from the 30 values: 60-<120: 70, 95, 110 (3); 120-<180: 120 to 175 (9); 180-<240: 180 to 235 (7); 240-<300: 245 to 295 (5); 300-<360: 305, 320, 345 (3); 360-<420: 370, 395 (2); 420-<480: 455 (1). Total 30.
 - Centres (a + b) ÷ 2; ends 30 and 510.
 - A1 tallies 3, 4, 5, 2, 1 (15); at least 2: 8. A2 classes 1, 4, 7, 5, 2, 1 (20).
 - Slider widths 20 and 200: the builder's live counts (no value is spoken).
@@ -276,3 +276,15 @@ Builds on: Types of Data: Numerical and Categorical. Next: Cumulative Frequency:
 
 - Revision 1. Next: student learning review (trace from d05; check that frequency is defined on the screens table before grouping, that the class-width slider makes "why group" visible, that "bars touch" has its reason, that the polygon's centres are computed before the dots drop, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D06A-200; D06A-A2LOAD unchanged). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d06a-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,567 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,555 (Codex's value). Narration is **5,555 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 418 s; total about 501 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 62 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

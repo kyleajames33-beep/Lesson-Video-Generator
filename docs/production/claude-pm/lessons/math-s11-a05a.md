@@ -1,8 +1,8 @@
 # Maths S11 A05A: How do we find the perimeter and area of rectangles, triangles, parallelograms, trapeziums and shapes made from them? Perimeter against area, base times perpendicular height, half for a triangle, the average width of a trapezium, and composite shapes planned before calculating (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a04.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-r06a.md`, `r06b.md`, `t09.md`), the coherence audit and root's Standard rulings 1 to 99 (ruling 8: a split where one video cannot teach the point well under 570 s). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a04.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-r06a.md`, `r06b.md`, `t09.md`), the coherence audit and root's Standard rulings 1 to 99 (ruling 8: a split where one video cannot teach the point well under 570 s). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,594 characters by script at Revision 2 (Revision 1: 5,534; see "Narration length estimate"), 13 scene headings, about 513 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,582 characters by script at Revision 2 (Revision 1: 5,534; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifth video of the Year 11 Applications of measurement strand, outline playlist order 41 (shared with a05b; the split is proposed in route inputs 11 and the pack). One video for Standard 1 and Standard 2. Viewers arrive from a04's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a05a.md`. Route entry: `math-s11-a05a` in `../../programme/maths-standard-route-inputs-11.json`. Site lessons: `year11/applications-of-measurement/lesson02.sa.html` (why the formulas work, perpendicular height, composite strategy, WE1, traps 01 and 03, SA 1) and `lesson04.sa.html` (perimeter card). Visual system: maths studio kit; the garden bed plate (existing); the lawn, parking bay, plot, sail, floor and boards coded as HSC-style plans.
 
@@ -286,3 +286,12 @@ Source review: `../checks/m-s11-a05a-learning-review.md` (0 blockers, 1 should f
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a04; check that edging against mulch makes the two questions distinct, that each formula's reason is seen before it is used, that the slider makes "perpendicular" matter, that the plan line comes before numbers, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a05a-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,594 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,582 (Codex's value). Narration is **5,582 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 420 s; total about 512 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

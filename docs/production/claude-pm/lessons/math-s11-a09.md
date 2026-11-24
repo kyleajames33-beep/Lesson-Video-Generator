@@ -1,8 +1,8 @@
 # Maths S11 A09: How do volume and capacity work for prisms and cylinders? Volume against surface area, the area of the end times the length, triangular, circular and trapezium ends, a hollow pipe, and capacity in litres and kilolitres (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a08.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a08.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,585 characters by script at Revision 2 (Revision 1: 5,672; see "Narration length estimate"), 13 scene headings, about 509 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,573 characters by script at Revision 2 (Revision 1: 5,672; see "Narration length estimate"), 13 scene headings, about 508 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: tenth video of the Year 11 Applications of measurement strand, outline playlist order 45. One video for Standard 1 and Standard 2. Viewers arrive from a08's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a09.md`. Route entry: `math-s11-a09` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson08.sa.html` (V = Ah, WE1 to WE3, the sloping pool hook, Q1, Q2). Visual system: maths studio kit; the water tank, cereal box, entrance ramp and pool cutaway plates (all existing); the slice stack, pipe and boards coded.
 
@@ -284,3 +284,12 @@ Source review: `../checks/m-s11-a09-learning-review.md` (0 blockers, 0 should fi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a08; check that the slice stack makes V = Ah obvious before the symbol, that the ramp and pool show which way "length" runs, that the levelled pool's match with a03 is understood, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a09-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,585 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,573 (Codex's value). Narration is **5,573 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 419 s; total about 508 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts: applied.** The $220 per m³ concrete price is not confirmed as a current supply price (brief 264). It is question data only, already said as "which is an example price" and printed "(example price)" on the card, so it is not presented as a current price: no change (11.7 × 220 = 2574, rechecked).
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

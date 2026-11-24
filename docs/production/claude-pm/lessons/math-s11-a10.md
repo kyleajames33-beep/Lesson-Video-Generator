@@ -1,8 +1,8 @@
 # Maths S11 A10: Why do pyramids and cones hold a third of a prism, and how do spheres compare? Three pours to fill a cylinder, one third of base area times height, the perpendicular height, a sphere as two thirds of its cylinder, and composite solids (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a09.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a09.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,651 characters by script at Revision 2 (Revision 1: 5,583; see "Narration length estimate"), 13 scene headings, about 515 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,639 characters by script at Revision 2 (Revision 1: 5,583; see "Narration length estimate"), 13 scene headings, about 514 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eleventh video of the Year 11 Applications of measurement strand, outline playlist order 46. One video for Standard 1 and Standard 2. Viewers arrive from a09's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a10.md`. Route entry: `math-s11-a10` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson09.sa.html` (the one-third card, the cone, the sphere, WE1 to WE3, traps, Q1, Q2). Visual system: maths studio kit; the ice-cream cone, watermelon, sand barrow and garden barrow plates (all existing); the cylinder, pours, skylight, planter, bowl and boards coded.
 
@@ -283,3 +283,12 @@ Source review: `../checks/m-s11-a10-learning-review.md` (0 blockers, 0 should fi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a09; check that the pours settle the guess before any formula, that the shrinking stack explains "less than half", that the slant height goes through Pythagoras, that the melon's two thirds lands before 4/3 πr³, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a10-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,651 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,639 (Codex's value). Narration is **5,639 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 424 s; total about 514 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

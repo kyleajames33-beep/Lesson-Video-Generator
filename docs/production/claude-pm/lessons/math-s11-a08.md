@@ -1,8 +1,8 @@
 # Maths S11 A08: How do we find the surface area of prisms, cylinders, spheres and composite solids? The outside faces unfolded into a net, a cylinder's label unrolled, a sphere as four circles, and exposed and hidden faces in composite and partial solids (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a07.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a07.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,613 characters by script at Revision 2 (Revision 1: 5,613; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,601 characters by script at Revision 2 (Revision 1: 5,613; see "Narration length estimate"), 13 scene headings, about 511 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: ninth video of the Year 11 Applications of measurement strand, outline playlist order 44. One video for Standard 1 and Standard 2. Viewers arrive from a07's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a08.md`. Route entry: `math-s11-a08` in `../../programme/maths-standard-route-inputs-11.json`. Site lessons: `year11/applications-of-measurement/lesson06.sa.html` (nets, the unrolled cylinder, WE1 to WE3, SA 5) and `lesson07.sa.html` (sphere, hemisphere, hidden faces, WE3). Visual system: maths studio kit; the cereal box, chocolate block, food tin, golf ball and polytunnel plates (all existing); the nets, face lists and boards coded.
 
@@ -284,3 +284,12 @@ Source review: `../checks/m-s11-a08-learning-review.md` (0 blockers, 0 should fi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a07; check that "outside skin" separates surface area from volume, that the label unroll shows why the width is 2πr, that the hemisphere's new flat face is seen, that the face list comes before numbers, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a08-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,613 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,601 (Codex's value). Narration is **5,601 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 421 s; total about 511 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts: applied.** Golf ball minimum diameter 42.67 mm (brief 264): confirmed; it is a minimum and the narration already says "about four point two seven centimetres", so no change (4π × 2.135² = 57.28 cm², rechecked).
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

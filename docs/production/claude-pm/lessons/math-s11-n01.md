@@ -1,8 +1,8 @@
 # Maths S11 N01: What is a network, and where do networks appear in real life? Vertices for objects and edges for connections, the same network in any drawing, real systems as networks, the questions networks answer, and drawing one from a description (design)
 
-Status: Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t06.md` (Revision 1, this batch), the Year 12 designs that recall this strand (`math-s12-c01a.md`, `c02.md`, `c03.md`, `f01.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t06.md` (Revision 1, this batch), the Year 12 designs that recall this strand (`math-s12-c01a.md`, `c02.md`, `c03.md`, `f01.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,520 characters by script (see "Narration length estimate"), 13 scene headings, about 496 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,508 characters by script (see "Narration length estimate"), 13 scene headings, about 495 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: first video of the Year 11 Networks, paths and trees strand, outline playlist order 54. One video for Standard 1 and Standard 2. Viewers arrive from t06's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n01.md`. Route entry: `math-s11-n01` in `../../programme/maths-standard-route-inputs-13.json`. Site lesson: `year11/networks-paths-and-trees/lesson01.sa.html` (card 05 and its "position doesn't matter" insight; degree and directions are n02's). Visual system: maths studio kit; the phone tower, rail trail and delivery van plates (all existing); the networks and maps coded.
 
@@ -31,7 +31,7 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Colour roles (fixed n01 to n07).** Vertices blue; edges amber; a highlighted route or tree green-teal (teal); removed or failed edges violet; answer green; mistake red. (n02 adds direction arrows amber and weights in white on amber tags.)
 - **Large type, handwritten voice.** Labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "dots: vertices", "lines: edges", "same connections, same network", "what are the objects? what joins them?", "still connected", "vertices first". At most two live at once.
 - **Stage changes (standard item 2).** The flight map (1); the counted network (2); the morph and the train map (3); the real-world gallery (4); the four questions (5); the drawing board (6); framed card (7); question cards (8 to 11); the delivery van's street network (12); key notes (13).
-- **Worked examples (g01 order).** Scene 2: "7 vertices, 10 edges" (framed green); "Hobart → Melbourne → Adelaide → Darwin". Scene 5: "Sydney → Adelaide → Darwin → Brisbane: still connected" (framed green). Scene 6: "A–B, A–C, B–D, C–D, C–E, D–E: 5 vertices, 6 edges" (framed green).
+- **Worked examples (g01 order).** Scene 2: "7 vertices, 10 edges" (framed green); "Hobart → Melbourne → Adelaide → Darwin". Scene 5: "Sydney → Adelaide → Darwin → Brisbane: still connected" (framed green). Scene 6: "A-B, A-C, B-D, C-D, C-E, D-E: 5 vertices, 6 edges" (framed green).
 - **Memory aid.** Framed card: "Dots for things, lines for links." Key line: "A network only records what's joined to what: not distances, not shapes, not where the dots sit."
 - **Plain meanings at first use.** Network ("a collection of objects joined by connections"); vertex ("an object, drawn as a dot"); edge ("a connection between two vertices, drawn as a line").
 - **Attempts.** A1 (pack question 1): 4 vertices, 5 edges; crossed "4 edges" (caption "count the lines, not the dots"). A2 (pack question 2): the same network; crossed "different: the lines cross" (caption "same connections, same network").
@@ -42,10 +42,10 @@ Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-sta
 - **Handoff (to math-s11-n02, degree, direction and weight).** Scene 12: board clear; the delivery van `ma12-delivery-van-v1.png` (about 520 px wide) at the left; at the right a coded street network (about 1,000 px wide) of five labelled stops, "Depot", "Bakery", "Café", "Pharmacy", "Gym" (blue dots), joined by amber edges with arrowheads on the one-way streets and minute tags "4", "3", "5", "2", "6", "7", "4" (as n02 scene 4); chips "one-way? how long?", "Next: degree, direction and weight" and "?". n02 opens on this frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Flight network edges (example routes, no airline): Perth–Adelaide, Perth–Melbourne, Perth–Sydney, Darwin–Adelaide, Darwin–Brisbane, Adelaide–Melbourne, Adelaide–Sydney, Melbourne–Sydney, Melbourne–Hobart, Sydney–Brisbane. 7 vertices, 10 edges. Connections each (n02's degrees): Perth 3, Darwin 2, Adelaide 4, Melbourne 4, Hobart 1, Sydney 4, Brisbane 2.
-  (b) Without Sydney–Brisbane: Sydney–Adelaide–Darwin–Brisbane (3 flights).
+  (a) Flight network edges (example routes, no airline): Perth-Adelaide, Perth-Melbourne, Perth-Sydney, Darwin-Adelaide, Darwin-Brisbane, Adelaide-Melbourne, Adelaide-Sydney, Melbourne-Sydney, Melbourne-Hobart, Sydney-Brisbane. 7 vertices, 10 edges. Connections each (n02's degrees): Perth 3, Darwin 2, Adelaide 4, Melbourne 4, Hobart 1, Sydney 4, Brisbane 2.
+  (b) Without Sydney-Brisbane: Sydney-Adelaide-Darwin-Brisbane (3 flights).
   (c) Rail trail: 5 vertices, 6 edges. A1: 4 vertices, 5 edges; Q and R join three each.
-  (d) A2 drawings: (1) square A top left, B top right, C bottom right, D bottom left, with edges A–B, B–C, C–D, D–A and diagonal A–C; (2) A top left, C top right, B bottom right, D bottom left, with the same five edges, so A–B and C–D cross. Connections: A: B, C, D; B: A, C; C: A, B, D; D: A, C.
+  (d) A2 drawings: (1) square A top left, B top right, C bottom right, D bottom left, with edges A-B, B-C, C-D, D-A and diagonal A-C; (2) A top left, C top right, B bottom right, D bottom left, with the same five edges, so A-B and C-D cross. Connections: A: B, C, D; B: A, C; C: A, B, D; D: A, C.
 
 Main question: *A flight map with the clocks taken away is just dots and lines. What is a network, and where do networks appear in real life?*
 Entry knowledge: none beyond Stage 5.
@@ -79,12 +79,12 @@ Visual: stage change: a gallery of panels, each a plate with a coded network ove
 ### 5. what networks help us decide
 > So why bother drawing them? Because a network turns a messy real situation into a picture we can reason about. Here are four questions networks help answer. First, is everything still connected if one link fails? Say storms close the Sydney to Brisbane route. Take that edge away. Can you still get from Sydney to Brisbane? Yes, by going Sydney, Adelaide, Darwin, **Brisbane**. Engineers ask exactly this about power lines and phone links, so that one failure doesn't cut a whole town off. Second, which place is best connected? Adelaide, Melbourne and Sydney each join four others, so they make good hubs. Third, what's the shortest or quickest route between two places? And fourth, what's the cheapest way to link every place, like laying fibre to every tower? We'll answer each of those in this strand, one at a **time**.
 
-Visual: stage change (simulation 2): the flight network (tidy drawing) at the left; a list of four questions at the right, 40 px, lighting in turn: "1. Still connected?", "2. Best connected?", "3. Shortest route?", "4. Cheapest way to link everything?". On "storms close" a small coded storm icon over the Sydney–Brisbane edge; the edge fades to a violet dash. On "Can you still get" a search glow spreads from Sydney along the edges; on "Brisbane" (bold) the route Sydney → Adelaide → Darwin → Brisbane lights teal, row "Sydney → Adelaide → Darwin → Brisbane: still connected" (framed green), hand tag "still connected". On "best connected" Adelaide, Melbourne and Sydney enlarge, each with four edges glowing and a chip "4 each" (grey chip "n02: degree"). On "shortest" chip "n06" beside question 3; on "cheapest way" chip "n05" beside question 4, and a faint tree of edges flashes over the network. On "time" the four questions tick.
+Visual: stage change (simulation 2): the flight network (tidy drawing) at the left; a list of four questions at the right, 40 px, lighting in turn: "1. Still connected?", "2. Best connected?", "3. Shortest route?", "4. Cheapest way to link everything?". On "storms close" a small coded storm icon over the Sydney-Brisbane edge; the edge fades to a violet dash. On "Can you still get" a search glow spreads from Sydney along the edges; on "Brisbane" (bold) the route Sydney → Adelaide → Darwin → Brisbane lights teal, row "Sydney → Adelaide → Darwin → Brisbane: still connected" (framed green), hand tag "still connected". On "best connected" Adelaide, Melbourne and Sydney enlarge, each with four edges glowing and a chip "4 each" (grey chip "n02: degree"). On "shortest" chip "n06" beside question 3; on "cheapest way" chip "n05" beside question 4, and a faint tree of edges flashes over the network. On "time" the four questions tick.
 
 ### 6. drawing a network from a description
 > Let's draw one from words. A rail trail has five junctions, A, B, C, D and E. Paths join A and B, A and C, B and D, C and D, C and E, and D and E. Always start with the vertices. Draw five dots and label them. Then add the edges one at a time, ticking each one off as you go. A to B, A to C, B to D, C to D, C to E, D to E. That's five vertices and six **edges**. Count again at the end. Six paths in the description, six lines on the page, so nothing's missing. Where you put the dots is up to you. Spread them out, so the lines don't cross more than they need **to**.
 
-Visual: stage change (simulation 3): a drawing board. Task strip, 44 px: "Rail trail: junctions A, B, C, D, E. Paths: A–B, A–C, B–D, C–D, C–E, D–E." On "start with the vertices" five blue dots drop and label (hand tag "vertices first"). On "one at a time" each listed path ticks in the strip as its amber edge draws; on "edges" (bold) row "5 vertices, 6 edges" (framed green). On "Spread them out" the dots nudge apart so no lines cross; on "to" a small ghost of a tangled version beside it fades.
+Visual: stage change (simulation 3): a drawing board. Task strip, 44 px: "Rail trail: junctions A, B, C, D, E. Paths: A-B, A-C, B-D, C-D, C-E, D-E." On "start with the vertices" five blue dots drop and label (hand tag "vertices first"). On "one at a time" each listed path ticks in the strip as its amber edge draws; on "edges" (bold) row "5 vertices, 6 edges" (framed green). On "Spread them out" the dots nudge apart so no lines cross; on "to" a small ghost of a tangled version beside it fades.
 
 ### 7. memory aid
 > So here's networks in one card. Dots for things, lines for links. A network only cares what's joined to what, not where the dots sit on the **page**. Same connections, same network.
@@ -99,12 +99,12 @@ Visual: `QuestionCard`, 40 px: "A bike park has four junctions P, Q, R and S. Pa
 ### 9. feedback 1 (brief)
 > Four dots first, then the five paths as lines. That's four **vertices** and five **edges**. Q and R are the busiest, each joined to three others. Saying four edges, one for each junction, is the **slip**. Count the lines, not the dots.
 
-Visual: the card shrinks to the top (30 px). On "vertices" four dots P, Q, R, S drop; on "edges" five edges draw in turn (P–Q, P–R, Q–R, Q–S, R–S), row "4 vertices, 5 edges" (framed green). On "slip" a red slip "4 edges" writes and is crossed (caption "count the lines, not the dots"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). On "vertices" four dots P, Q, R, S drop; on "edges" five edges draw in turn (P-Q, P-R, Q-R, Q-S, R-S), row "4 vertices, 5 edges" (framed green). On "slip" a red slip "4 edges" writes and is crossed (caption "count the lines, not the dots"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Here are two drawings. Do they show the same network? Give a reason. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Do these two drawings show the same network? Give a reason." Picture slot: drawing 1 (a square A top left, B top right, C bottom right, D bottom left, with edges A–B, B–C, C–D, D–A and the diagonal A–C) and drawing 2 (A top left, C top right, B bottom right, D bottom left, with edges A–B, B–C, C–D, D–A and A–C, so two edges cross). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Do these two drawings show the same network? Give a reason." Picture slot: drawing 1 (a square A top left, B top right, C bottom right, D bottom left, with edges A-B, B-C, C-D, D-A and the diagonal A-C) and drawing 2 (A top left, C top right, B bottom right, D bottom left, with edges A-B, B-C, C-D, D-A and A-C, so two edges cross). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > Check the connections, not the looks. In both drawings, A joins B, C and D. B joins A and C. C joins A, B and D. And D joins A and C. Same vertices, same edges, so it's the same **network**. Saying they're different because two lines cross is the **slip**.
@@ -144,7 +144,7 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Practice questions and model answers
 
 **Attempt 1 (scene 8; pack question 1, original HSC style, 2 marks suggested, not an official marking scheme).** As on the card.
-Model answer: a network of four vertices P, Q, R, S with five edges P–Q, P–R, Q–R, Q–S, R–S; 4 vertices, 5 edges. Classic mistake (crossed): "4 edges".
+Model answer: a network of four vertices P, Q, R, S with five edges P-Q, P-R, Q-R, Q-S, R-S; 4 vertices, 5 edges. Classic mistake (crossed): "4 edges".
 
 **Attempt 2 (scene 10; pack question 2, 2 marks suggested).** As on the card.
 Model answer: yes. In both, A joins B, C and D; B joins A and C; C joins A, B and D; D joins A and C. Same vertices and edges. Classic mistake (crossed): "different: the lines cross".
@@ -166,7 +166,7 @@ Model answer: yes. In both, A joins B, C and D; B joins A and C; C joins A, B an
 Recalculated (24 Nov 2026, scratchpad `s11n/verify.py`, `python -I`; 0 failures); Codex to re-check.
 
 - Flight network: 7 vertices, 10 edges; connections Perth 3, Darwin 2, Adelaide 4, Melbourne 4, Hobart 1, Sydney 4, Brisbane 2.
-- Without Sydney–Brisbane, Sydney reaches Brisbane through Adelaide and Darwin.
+- Without Sydney-Brisbane, Sydney reaches Brisbane through Adelaide and Darwin.
 - Rail trail: 6 edges. A1: 5 edges. A2: the connection lists of the two drawings match.
 
 ## Memory aid check
@@ -220,7 +220,7 @@ Coded: the flight network and outline, the morph and connection list, the train-
 Uses: `PlateImg`, `HandTag`, `NetworkMap` (t06), the g01 `WorkingBoard` parts, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions (kit-needs row n01):
-1. **`NetworkBoard`** (the strand's base part): labelled vertices and edges from data (undirected or directed, with optional weight tags), with modes: **morph** (vertices tween to new positions, edges follow, a connection list stays fixed and ticks); **edge failure** (an edge fades violet and a breadth-first search lights a teal route around it, with a "still connected" readout); **edge-by-edge draw** (edges draw in list order as items tick). Check: flight network 7 vertices, 10 edges; without Sydney–Brisbane, the route Sydney–Adelaide–Darwin–Brisbane. Reused n02 to n07.
+1. **`NetworkBoard`** (the strand's base part): labelled vertices and edges from data (undirected or directed, with optional weight tags), with modes: **morph** (vertices tween to new positions, edges follow, a connection list stays fixed and ticks); **edge failure** (an edge fades violet and a breadth-first search lights a teal route around it, with a "still connected" readout); **edge-by-edge draw** (edges draw in list order as items tick). Check: flight network 7 vertices, 10 edges; without Sydney-Brisbane, the route Sydney-Adelaide-Darwin-Brisbane. Reused n02 to n07.
 2. **Line-diagram mode**: a wiggly polyline track straightening to a tidy station diagram with the same order.
 
 ## Codex asset brief
@@ -265,3 +265,14 @@ Builds on: UTC: Solving International Time Problems. Next: Network Words: Degree
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from t06; check that the plain meanings come before "vertex" and "edge", that the morph makes "same network" visible before the rule is stated, that scene 4 and scene 5 answer different questions (systems against uses), and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-n01-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,520 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,508 (Codex's value). Narration is **5,508 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 414 s; total about 495 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 59 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

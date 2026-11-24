@@ -1,8 +1,8 @@
 # Maths S11 A07: How do we find the perimeter and area of an irregular block of land by cutting it up? Cuts at right angles into rectangles, triangles and trapeziums, a second cut as a check, slanted boundaries by Pythagoras, outside boundaries only, and hectares (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a06.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r07.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a06.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r07.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 6,054 characters by script at Revision 2 (Revision 1: 5,697; see "Narration length estimate"), 13 scene headings, about 545 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,042 characters by script at Revision 2 (Revision 1: 5,697; see "Narration length estimate"), 13 scene headings, about 544 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eighth video of the Year 11 Applications of measurement strand, outline playlist order 43. One video for Standard 1 and Standard 2. Viewers arrive from a06's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a07.md`. Route entry: `math-s11-a07` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson02.sa.html` (composite strategy card) only; blocks of land, slanted boundaries and hectares are taught from the syllabus (ruling 3; MSY-14). Visual system: maths studio kit; the house and ute plates (existing); the block and paddock plans, cut lines and boards coded in HSC survey-plan style.
 
@@ -279,3 +279,12 @@ Source review: `../checks/m-s11-a07-learning-review.md` (1 blocker, 1 should fix
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a06; check that "cut at right angles" is given a reason, that the second cut's matching answer is felt as a check, that the back fence is recognised as a hypotenuse, that the perimeter skips the cut line, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a07-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 6,054 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 6,042 (Codex's value). Narration is **6,042 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 454 s; total about 544 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

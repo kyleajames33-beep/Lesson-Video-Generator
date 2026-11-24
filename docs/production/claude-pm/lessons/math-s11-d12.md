@@ -1,8 +1,8 @@
 # Maths S11 D12: When is the mean, median or mode the right measure of centre? The merits of each, the mean pulled towards the tail, and real-world uses that fit or mislead (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d11.md` (Revision 1, this batch), the Year 12 design that recalls this strand (`math-s12-z01.md`: the mean pulled towards the tail; "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d11.md` (Revision 1, this batch), the Year 12 design that recalls this strand (`math-s12-z01.md`: the mean pulled towards the tail; "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,483 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 495 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,471 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 494 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: thirteenth video of the Year 11 Data analysis strand, outline playlist order 72. One video for Standard 1 and Standard 2. Viewers arrive from d11's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d12.md`. Route entry: `math-s11-d12` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson10.sa.html` (hook, cards 06, 08, match activity) and `lesson07.sa.html` (trap 01). Visual system: maths studio kit; the alarm clock, phone, club hoodie, coffee cart, holiday house and bus stop plates (all existing); the dot plot, drag simulation, histograms, value strips and gallery coded.
 
@@ -279,3 +279,13 @@ Builds on: Mean, Median and Mode. Next: Range and Standard Deviation.
 
 - Revision 1. Next: student learning review (trace from d11; check that the drag simulation comes before any rule, that "pulled towards the tail" is shown on the slider, that every choice has a "because", that the café claim's reason is the manager's pay, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D12-SEEN; D12-87; D12-BATT). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d12-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,483 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,471 (Codex's value). Narration is **5,471 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 411 s; total about 494 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

@@ -1,8 +1,8 @@
 # Maths S11 A02: Why do area and volume conversions multiply the length factor two and three times? Square units cut into smaller squares, the hectare and the square kilometre, tiles from an area, and cubes cut into smaller cubes (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` (Revision 1, this batch), the accepted Year 11 Standard designs, the Year 12 designs that recall this video (`math-s12-r06a.md`, `t09.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` (Revision 1, this batch), the accepted Year 11 Standard designs, the Year 12 designs that recall this video (`math-s12-r06a.md`, `t09.md`), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,620 characters by script at Revision 2 (Revision 1: 5,607; see "Narration length estimate"), 13 scene headings, about 513 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,608 characters by script at Revision 2 (Revision 1: 5,607; see "Narration length estimate"), 13 scene headings, about 512 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: second video of the Year 11 Applications of measurement strand, outline playlist order 38. One video for Standard 1 and Standard 2. Viewers arrive from a01's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a02.md`. Route entry: `math-s11-a02` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: `year11/applications-of-measurement/lesson01.sa.html` (card 06, WE2 (c) and (d), trap 02, drill 4, SA 4). Visual system: maths studio kit; the floor tile, tile box, netball court and block cube plates (all existing); the grids, scale slider, ladders and boards coded.
 
@@ -115,7 +115,7 @@ Visual: the card shrinks to the top. Rows, 44 px, one result per cue (Revision 2
 ### 12. handoff
 > So areas use the factor twice, and volumes three times. But water isn't sold in cubic centimetres. It's sold in litres and kilolitres. How much does a cube one centimetre on each side actually hold? That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "cube one centimetre" the coded 1 cm cube (160 px, "1 cm" on each edge, olive faces) at the left; on "litres" the water jug `ma11-water-jug-v1.png` (about 500 px tall) at the right; chip "1 cm³ holds ? mL" with "?" ringed amber. On "next" chips "Next: volume and capacity" and "?". Hold about 2 s. This is a03's opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "sold in litres and kilolitres" the water jug `ma11-water-jug-v1.png` (about 500 px tall) at the right; on "a cube one centimetre on each side" the coded 1 cm cube (160 px, "1 cm" on each edge, olive faces) at the left (Revision 3: spoken order); chip "1 cm³ holds ? mL" with "?" ringed amber. On "next" chips "Next: volume and capacity" and "?". Hold about 2 s. This is a03's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -282,3 +282,13 @@ Source review: `../checks/m-s11-a02-learning-review.md` (1 blocker, 0 should fix
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a01; check that the tile makes "100" feel wrong before any rule, that "ten rows of ten" gives the reason, that the hectare is pictured, that the tile count has a units-free check, and that the slider makes k² and k³ visible), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a02-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,620 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,608 (Codex's value). Narration is **5,608 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 422 s; total about 512 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Cue plan: fixed.** Scene 12 (cue-order): the jug now arrives on "sold in litres and kilolitres" and the 1 cm cube on "a cube one centimetre on each side", in spoken order. Narration unchanged by this fix.
+- **Official facts: applied.** Netball court 30.5 m by 15.25 m (brief 264): confirmed, no change (465.125 m²; 10 000 ÷ 465.125 = 21.5 courts, rechecked).
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

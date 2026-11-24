@@ -1,8 +1,8 @@
 # Maths S11 T01: How do we convert between seconds, minutes and hours, and between 12-hour and 24-hour time? Time steps in sixties, 1 h = 60 × 60 s = 3600 s, a leftover as the next unit down, decimal hours for pay, and the 24-hour clock with its noon and midnight traps (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a11.md` (Revision 1), the Year 12 design that recalls this video (`math-s12-r10.md`, Revision 2: "Year 11: 60 × 60"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a11.md` (Revision 1), the Year 12 design that recalls this video (`math-s12-r10.md`, Revision 2: "Year 11: 60 × 60"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,892 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 526 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,880 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 525 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: first video of the Year 11 Time and location strand, outline playlist order 48. One video for Standard 1 and Standard 2. Viewers arrive from a11's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t01.md`. Route entry: `math-s11-t01` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson01.sa.html` (sections 2 and 3, drills 1, 2, 6, 7, Q4; its elapsed-time parts are t02's). Visual system: maths studio kit; the wall clock, stopwatch, phone, calculator, departure board and coach plates (all existing); the ladder, splitter, decimal-hour bar and 24-hour dial coded.
 
@@ -287,3 +287,12 @@ Builds on: The Trapezoidal Rule: Estimating Area and Volume. Next: Elapsed Time:
 
 - Revision 2 (24 Nov 2026): learning review resolved (T01-333, T01-2400). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from a11; check that "3.333 against 3:20" lands before the ladder, that the leftover splitter makes "the next unit down" visible, that "60 × 60" is on screen, that + 12 is explained by the twelve hours already passed, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-t01-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,892 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,880 (Codex's value). Narration is **5,880 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 442 s; total about 525 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

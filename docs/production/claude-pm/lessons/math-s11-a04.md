@@ -1,8 +1,8 @@
 # Maths S11 A04: How do prefixes such as nano, mega and giga become powers of ten? kilo = 1000 as ten cubed, mega, giga and tera, negative powers for centi, milli, micro and nano, scientific notation, changing prefixes, and significant figures (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a03.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r14.md`), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2: learning review resolved (24 Nov 2026)"). Revision 1 (23 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-a01.md` to `a03.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-r14.md`), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 6,162 characters by script at Revision 2 (Revision 1: 6,055; see "Narration length estimate"), 13 scene headings, about 553 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 6,150 characters by script at Revision 2 (Revision 1: 6,055; see "Narration length estimate"), 13 scene headings, about 552 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Applications of measurement strand, outline playlist order 40. One video for Standard 1 and Standard 2. Viewers arrive from a03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-a04.md`. Route entry: `math-s11-a04` in `../../programme/maths-standard-route-inputs-11.json`. Site lesson: none (crosswalk: missing; MSY-11). Visual system: maths studio kit; the phone and paper sheet plates (existing) and the calculator plate; the prefix ladder, place-value boxes and boards coded.
 
@@ -289,3 +289,12 @@ Source review: `../checks/m-s11-a04-learning-review.md` (0 blockers, 1 should fi
 ## Review notes
 
 - Revision 1. Next: student learning review (trace from a03; check that "kilo = 1000" leads into 10³ in words before symbols, that "small, not negative" is clear, that the decimal hop shows why the power changes, that significant figures have a reason, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-a04-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 6,162 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 6,150 (Codex's value). Narration is **6,150 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 462 s; total about 552 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts: applied.** The fact sheet places the Sydney to Brisbane distance in a01 and the Babylon line in a06; a04 contains neither, so nothing applies. Confirmed, no change.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

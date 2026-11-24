@@ -1,8 +1,8 @@
 # Maths S11 D11: How do the mean, median and mode measure the centre of a dataset? The mean as total ÷ how many and the balance point, the median as the middle, the mode as the most common, from dot plots, stem-and-leaf plots and frequency tables, with the calculator's statistics mode (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d10.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b04a.md`: "Year 11: the mean = total ÷ how many"; `math-s12-b01.md`: "Year 11: dot plot, mean, median"; `math-s12-z01.md`: "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d10.md` (Revision 1, this batch), the Year 12 designs that recall this video (`math-s12-b04a.md`: "Year 11: the mean = total ÷ how many"; `math-s12-b01.md`: "Year 11: dot plot, mean, median"; `math-s12-z01.md`: "Year 11: measures of centre"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,518 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 498 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,506 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 497 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: twelfth video of the Year 11 Data analysis strand, outline playlist order 71. One video for Standard 1 and Standard 2. Viewers arrive from d10's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d11.md`. Route entry: `math-s11-d11` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson10.sa.html` (cards 05, 06; WE 2). Visual system: maths studio kit; the alarm clock, calculator, bedroom, phone dock, and coffee cart plates (all existing); the dot plot, balance beam, order strip, frequency table and calculator screens coded.
 
@@ -277,3 +277,13 @@ Builds on: Infographics and Misleading Graphs. Next: Choosing a Measure of Centr
 
 - Revision 1. Next: student learning review (trace from d10; check that "total ÷ how many" is said before x̄, that ordering is shown before the median position, that the position-as-value slip is crossed, that the table's f × x column is explained in words, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D11-SIGMAX; D11-A2PIC). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d11-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,518 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,506 (Codex's value). Narration is **5,506 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 414 s; total about 497 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

@@ -1,8 +1,8 @@
 # Maths S11 D10: How can a graph or infographic inform us, or mislead us? Analysing an infographic and justifying each graph, the tricks that mislead (truncated axes, scaled icons, 3D sectors, missing sample sizes), and the limits on conclusions and predictions (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d09.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "misleading displays (d10)"), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d09.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-p08.md`: "misleading displays (d10)"), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,568 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,556 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: eleventh video of the Year 11 Data analysis strand, outline playlist order 70. One video for Standard 1 and Standard 2. Viewers arrive from d09's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d10.md`. Route entry: `math-s11-d10` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (key ideas; SA 3's two axes); infographics and limitations are taught from the syllabus (MSY-42). Visual system: maths studio kit; the tournament board, phone, phone dock, calculator and alarm clock plates (all existing); the poster tiles, axis slider, icon grid and limitation checklist coded.
 
@@ -278,3 +278,13 @@ Builds on: Shape of a Distribution: Skewed, Symmetric, Bimodal. Next: Mean, Medi
 
 - Revision 1. Next: student learning review (trace from d09; check that the good choices are justified before any fault is found, that the axis slider makes the 3.5 × illusion visible, that the area trick is counted on a grid, that the fair conclusion keeps "on average" and "doesn't show the phone caused it", and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D10-3D; D10-AVG unchanged). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d10-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,568 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,556 (Codex's value). Narration is **5,556 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 418 s; total about 501 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

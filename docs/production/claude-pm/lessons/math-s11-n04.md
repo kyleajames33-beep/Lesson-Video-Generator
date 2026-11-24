@@ -1,8 +1,8 @@
 # Maths S11 N04: What are paths, trees and spanning trees? A path never repeats a vertex, a cycle loops back, a tree connects everything with no cycles, a spanning tree reaches every vertex, and the minimum spanning tree has the smallest total (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n03.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,500 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 495 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,488 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 494 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fourth video of the Year 11 Networks, paths and trees strand, outline playlist order 57. One video for Standard 1 and Standard 2. Viewers arrive from n03's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n04.md`. Route entry: `math-s11-n04` in `../../programme/maths-standard-route-inputs-13.json`. Site lessons: lesson03 (the path definition only); lesson04 (trees, spanning trees). Visual system: maths studio kit; the hiking valley and phone tower plates (existing); the networks coded.
 
@@ -38,7 +38,7 @@ Source review: `../checks/m-s11-n04-learning-review.md`; resolution record `../c
 - **Colour roles (fixed n01 to n07).** Vertices blue; network edges amber (faint when unlit); lit (chosen) edges teal; cycles pulse violet; answer green; mistake red.
 - **Large type, handwritten voice.** Labels 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "no vertex twice", "loops back", "switch one off", "connected, no cycles", "5 vertices, 4 edges", "reaches every vertex", "misses E", "has a cycle", "smallest total". At most two live at once.
 - **Stage changes (standard item 2).** The camp map (1); the path walker (2); the cycle and switch-off (3); the tree (4); spanning trees and near misses (5); the carousel and the minimum (6); framed card (7); question cards (8 to 11); the phone towers (12); key notes (13).
-- **Worked examples (g01 order).** Scene 2: "A → B → D → E: 40 + 50 + 35 = 125 m" (framed green); crossed "A → B → C → B → D" (caption "B twice: not a path"). Scene 3: "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". Scene 5: "A–B, B–C, C–D, D–E: 150 m" (framed green); "A–C, C–E, E–D, D–B: 215 m" (framed green). Scene 6: "21 spanning trees; the smallest total is the minimum spanning tree".
+- **Worked examples (g01 order).** Scene 2: "A → B → D → E: 40 + 50 + 35 = 125 m" (framed green); crossed "A → B → C → B → D" (caption "B twice: not a path"). Scene 3: "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". Scene 5: "A-B, B-C, C-D, D-E: 150 m" (framed green); "A-C, C-E, E-D, D-B: 215 m" (framed green). Scene 6: "21 spanning trees; the smallest total is the minimum spanning tree".
 - **Memory aid.** Framed card: "A tree reaches everything and never loops back." Key line: "Path: no vertex twice. Spanning tree: a tree through every vertex. Minimum spanning tree: the smallest total weight."
 - **Plain meanings at first use.** Path ("a route along edges that never visits the same vertex twice"); cycle ("a route that never repeats a vertex until it comes back to the start"; Revision 2, note N04-CYCLE); tree ("a connected network with no cycles"); spanning tree ("a tree made of the network's edges that reaches every vertex"); minimum spanning tree ("the spanning tree with the smallest total weight").
 - **Attempts.** A1 (pack question 1): (a) yes, 140 m; (b) no; crossed "(b) yes, every step uses an edge" (caption "D twice"). A2 (pack question 2): (iii), 195 m; crossed "(ii): it reaches every cabin" (caption "it has a cycle").
@@ -46,12 +46,12 @@ Source review: `../checks/m-s11-n04-learning-review.md`; resolution record `../c
 - **Cause chain taught, in order:** (1) a path can't revisit a vertex, so doubling back breaks it (2); (2) a cycle gives two ways round, so one of its edges is spare (3); (3) a connected network with no spare edges is a tree, with exactly one path between any two vertices (4); (4) a tree inside a network that reaches every vertex links everything with no spare edges: a spanning tree (5); (5) different spanning trees have different totals, so the cheapest is the minimum spanning tree (6).
 - **Entry knowledge (route):** math-s11-n02, n03 (weights; tables and maps). Recalled in a grey chip.
 - **Site notes.** lesson04 recalculated: no error. MSY-31 (MST defined only in lesson05).
-- **Handoff (to math-s11-n05, minimum spanning trees).** Scene 12: board clear; the phone tower `ma11-phone-tower-v1.png` (about 460 px tall) at the left; at the right a coded network of five tower icons "A" to "E" (blue) with seven amber links tagged in km: A–B "8", A–C "3", B–C "5", B–D "7", C–D "2", C–E "6", D–E "4"; chips "link every tower, least cable?", "Next: minimum spanning trees" and "?". n05 opens on this frame.
+- **Handoff (to math-s11-n05, minimum spanning trees).** Scene 12: board clear; the phone tower `ma11-phone-tower-v1.png` (about 460 px tall) at the left; at the right a coded network of five tower icons "A" to "E" (blue) with seven amber links tagged in km: A-B "8", A-C "3", B-C "5", B-D "7", C-D "2", C-E "6", D-E "4"; chips "link every tower, least cable?", "Next: minimum spanning trees" and "?". n05 opens on this frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Camp (example metres): A–B 40, A–C 60, B–C 30, B–D 50, C–D 45, C–E 70, D–E 35.
-  (b) Path A–B–D–E 125; cycle B–C–D 125; spanning trees 150 (A–B, B–C, C–D, D–E; the unique minimum, by search) and 215 (A–C, C–E, D–E, B–D). 21 spanning trees in all (search over 4-edge subsets with no cycle); the three smallest totals 150, 155, 170.
-  (c) A1: E–D–C–A = 35 + 45 + 60 = 140; E–D–B–C–D repeats D. A2: (iii) = 60 + 30 + 70 + 35 = 195; (i) misses E; (ii) contains B–C–D.
+  (a) Camp (example metres): A-B 40, A-C 60, B-C 30, B-D 50, C-D 45, C-E 70, D-E 35.
+  (b) Path A-B-D-E 125; cycle B-C-D 125; spanning trees 150 (A-B, B-C, C-D, D-E; the unique minimum, by search) and 215 (A-C, C-E, D-E, B-D). 21 spanning trees in all (search over 4-edge subsets with no cycle); the three smallest totals 150, 155, 170.
+  (c) A1: E-D-C-A = 35 + 45 + 60 = 140; E-D-B-C-D repeats D. A2: (iii) = 60 + 30 + 70 + 35 = 195; (i) misses E; (ii) contains B-C-D.
 
 Main question: *A camp wants to light every cabin with the least path. What are paths, trees and spanning trees?*
 Entry knowledge (math-s11-n02, n03): weights; route totals.
@@ -75,17 +75,17 @@ Visual: stage change (simulation 1): the camp network enlarged (1,300 px) over t
 ### 3. a cycle: back to the start
 > A route that never repeats a vertex until it comes back to the start is called a cycle. B to C, C to D, and D back to B is a cycle. It's a loop you could walk round and round, thirty plus forty-five plus fifty, a hundred and twenty-five metres of light going in a circle. For lighting, a cycle is wasteful. If every edge of a cycle is lit, you could switch one of them off, and every cabin would still be reachable the other way round the **loop**. Any network with a cycle has a spare edge somewhere. So a cheap lighting plan should have no cycles at all.
 
-Visual: the network stays (continue; simulation 2). On "B to C, C to D, and D back to B" the three edges light teal in turn and then pulse violet together (hand tag "loops back"); row "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". On "switch one of them off" the D–B edge fades; on "the other way round" a reachability glow runs B → C → D (hand tag "switch one off"); on "loop" (bold) all three cabins stay lit.
+Visual: the network stays (continue; simulation 2). On "B to C, C to D, and D back to B" the three edges light teal in turn and then pulse violet together (hand tag "loops back"); row "B → C → D → B: 30 + 45 + 50 = 125 m (a cycle)". On "switch one of them off" the D-B edge fades; on "the other way round" a reachability glow runs B → C → D (hand tag "switch one off"); on "loop" (bold) all three cabins stay lit.
 
 ### 4. a tree: connected, no cycles
 > That leads to a tree. A tree is a network that's connected, so you can get from any vertex to any other, and has no cycles. It's called a tree because it branches out like one, but its branches never join back up. Here's one. A to B, B to C, C to D and D to E. Everything's connected, and there's no loop anywhere. In a tree, there's exactly one path between any two vertices, so nothing is doubled up. Delete any one edge of a tree, and it falls into two pieces. Water pipes from a dam to farm troughs are often laid as a tree, because a loop would be wasted pipe. You'll notice something else. Five vertices, and four edges. A tree always has one edge fewer than it has **vertices**, which makes a handy check on your drawing.
 
-Visual: stage change (simulation 2): the faint full network; on "Here's one" the tree grows edge by edge in teal: A–B, B–C, C–D, D–E (hand tag "connected, no cycles"). On "exactly one path" two cabins (A and E) ring and the single teal route between them glows. On "Water pipes" a small coded inset: a dam outline branching pipes to three trough icons. On "Five vertices, and four edges" counters "vertices 5", "edges 4"; on "vertices" (bold) hand tag "5 vertices, 4 edges". On "Delete any one edge" the C–D edge fades and the tree splits into two coloured groups {A, B, C} and {D, E}, then the edge returns.
+Visual: stage change (simulation 2): the faint full network; on "Here's one" the tree grows edge by edge in teal: A-B, B-C, C-D, D-E (hand tag "connected, no cycles"). On "exactly one path" two cabins (A and E) ring and the single teal route between them glows. On "Delete any one edge" the C-D edge fades and the tree splits into two coloured groups {A, B, C} and {D, E}, then the edge returns. (Revision 3: spoken order.) On "Water pipes" a small coded inset: a dam outline branching pipes to three trough icons. On "Five vertices, and four edges" counters "vertices 5", "edges 4"; on "vertices" (bold) hand tag "5 vertices, 4 edges".
 
 ### 5. a spanning tree: reaching every vertex
 > Now put a tree inside a bigger network. A spanning tree is a tree that uses only the network's own edges, and reaches every one of its vertices. It spans the whole network. The tree we just drew is a spanning tree of the camp network, and its lit length is forty plus thirty plus forty-five plus thirty-five, a hundred and fifty metres. But it's not the only one. Here's another. A to C, C to E, E to D and D to B. It reaches every cabin and it has no cycle, so it's a spanning tree too, and it's two hundred and fifteen **metres**. Both reach all five cabins with four edges. Watch out for two near misses. If a set of edges misses a cabin, it isn't spanning. And if it has a cycle, it isn't a **tree**.
 
-Visual: stage change: the full camp network faint, the plate dimmed behind. On "spanning tree" chip, 44 px, "spanning tree: a tree through every vertex" (hand tag "reaches every vertex"). On "The tree we just drew" its four edges light teal; the lit meter reads "40 + 30 + 45 + 35 = 150 m" (framed green). On "Here's another" the teal edges swap to A–C, C–E, E–D, D–B; meter "60 + 70 + 35 + 50 = 215 m"; on "metres" (bold) framed green. On "misses a cabin" a small panel: A–B, B–C, C–D lit, E greyed with a red tag "misses E". On "has a cycle" a second panel: A–B, B–C, C–D, D–B, D–E lit with B–C–D pulsing violet, red tag "has a cycle"; on "tree" (bold) both panels gain crosses.
+Visual: stage change: the full camp network faint, the plate dimmed behind. On "spanning tree" chip, 44 px, "spanning tree: a tree through every vertex" (hand tag "reaches every vertex"). On "The tree we just drew" its four edges light teal; the lit meter reads "40 + 30 + 45 + 35 = 150 m" (framed green). On "Here's another" the teal edges swap to A-C, C-E, E-D, D-B; meter "60 + 70 + 35 + 50 = 215 m"; on "metres" (bold) framed green. On "misses a cabin" a small panel: A-B, B-C, C-D lit, E greyed with a red tag "misses E". On "has a cycle" a second panel: A-B, B-C, C-D, D-B, D-E lit with B-C-D pulsing violet, red tag "has a cycle"; on "tree" (bold) both panels gain crosses.
 
 ### 6. the minimum spanning tree
 > So a network can have many spanning trees, each with its own total weight. This small camp network has twenty-one of them. The one with the smallest total is called the minimum spanning tree. For the camp, it's the cheapest way to light a route to every cabin. Of our two, a hundred and fifty metres beats two hundred and fifteen. But is a hundred and fifty the smallest possible? Checking every spanning tree one by one would take far too long on a big network. That's why minimum spanning trees matter for real jobs, like cables, pipes and power lines, where every metre costs. And notice, the minimum spanning tree is about linking everything. It isn't the shortest way from one cabin to another. That's a different question, and we'll come back to it. There's a neat method that finds the minimum spanning tree directly, and that's coming **up**.
@@ -110,12 +110,12 @@ Visual: the card shrinks to the top (30 px). The walker runs E → D → C → A
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. Here are three sets of edges from the camp network. Which one is a spanning tree, and what's its total length? Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Three sets of edges from the camp network are shown. Which one is a spanning tree? Find its total length." Picture slot: three small copies of the camp network with lit edges: (i) A–B, B–C, C–D; (ii) A–B, B–C, C–D, D–B, D–E; (iii) A–C, B–C, C–E, D–E; weights shown on all edges. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Three sets of edges from the camp network are shown. Which one is a spanning tree? Find its total length." Picture slot: three small copies of the camp network with lit edges: (i) A-B, B-C, C-D; (ii) A-B, B-C, C-D, D-B, D-E; (iii) A-C, B-C, C-E, D-E; weights shown on all edges. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > The first one misses cabin E, so it isn't spanning. The second reaches every cabin, but B, C, D makes a cycle, so it isn't a tree. The third reaches all five cabins with four edges and no cycle, so it's the spanning **tree**. Its length is sixty plus thirty plus seventy plus thirty-five, a hundred and ninety-five **metres**. Picking the second, because it reaches every cabin, is the **slip**.
 
-Visual: the card shrinks to the top. Panel (i) gains a red tag "misses E"; panel (ii) pulses B–C–D violet with "has a cycle"; on "tree" panel (iii) rings green. On "metres" row "(iii): 60 + 30 + 70 + 35 = 195 m" (framed green). On "slip" a red slip "(ii): it reaches every cabin" writes and is crossed (caption "it has a cycle"). Hold about 1 s.
+Visual: the card shrinks to the top. Panel (i) gains a red tag "misses E"; panel (ii) pulses B-C-D violet with "has a cycle"; on "tree" panel (iii) rings green. On "metres" row "(iii): 60 + 30 + 70 + 35 = 195 m" (framed green). On "slip" a red slip "(ii): it reaches every cabin" writes and is crossed (caption "it has a cycle"). Hold about 1 s.
 
 ### 12. handoff: minimum spanning trees
 > So that's paths, trees and spanning trees. Now the real question. Of all the spanning trees a network has, how do we find the one with the smallest total, quickly and reliably? Here's a phone company linking five towers with fibre cable, and every kilometre costs money. Which links should it lay? How a minimum spanning tree connects everything for the least cost is **next**.
@@ -153,14 +153,14 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 Model answer: (a) yes: 35 + 45 + 60 = 140 m. (b) No: D is visited twice. Classic mistake (crossed): "(b) yes, every step uses an edge".
 
 **Attempt 2 (scene 10; pack question 2, 2 marks suggested).** As on the card.
-Model answer: (iii); 60 + 30 + 70 + 35 = 195 m ((i) misses E; (ii) has the cycle B–C–D). Classic mistake (crossed): "(ii): it reaches every cabin".
+Model answer: (iii); 60 + 30 + 70 + 35 = 195 m ((i) misses E; (ii) has the cycle B-C-D). Classic mistake (crossed): "(ii): it reaches every cabin".
 
 ## Numbers used (author note: every value)
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
-| Path A–B–D–E | 125 m | 2 |
-| Cycle B–C–D | 125 m | 3 |
+| Path A-B-D-E | 125 m | 2 |
+| Cycle B-C-D | 125 m | 3 |
 | Tree counts | 5 vertices, 4 edges | 4 |
 | Spanning trees | 150 m; 215 m; 21 in all | 5, 6 |
 | A1 | 140 m; no | 8, 9 |
@@ -226,8 +226,8 @@ Coded: the camp network, cabins, lamp and meter, the walker (a lantern icon, no 
 Uses: `PlateImg`, `HandTag`, `NetworkBoard` (n01, n02), the g01 `WorkingBoard` parts, `MemoryAidCard`, `KeyNotesScreen`, `QuestionCard`.
 
 Additions (kit-needs row n04):
-1. **`NetworkBoard` path walker**: a lantern icon stepping along a vertex list with a running total; a revisit flashes red. Check: A–B–D–E 125; A–B–C–B flagged at B; E–D–C–A 140; E–D–B–C–D flagged at D.
-2. **`NetworkBoard` subgraph overlay**: lit edges teal over a faint network with a total meter; a cycle detector pulses any cycle violet; a reachability glow. Check: 150, 215, 195; B–C–D flagged.
+1. **`NetworkBoard` path walker**: a lantern icon stepping along a vertex list with a running total; a revisit flashes red. Check: A-B-D-E 125; A-B-C-B flagged at B; E-D-C-A 140; E-D-B-C-D flagged at D.
+2. **`NetworkBoard` subgraph overlay**: lit edges teal over a faint network with a total meter; a cycle detector pulses any cycle violet; a reachability glow. Check: 150, 215, 195; B-C-D flagged.
 3. **`SpanningTreeCarousel`**: enumerates spanning trees from the edge list, flicks them over the network and stacks their totals. Check: 21 trees; smallest 150. Reused in n05 (to confirm the minimum after the method).
 
 ## Codex asset brief
@@ -271,3 +271,15 @@ Builds on: Drawing Networks from Tables and Maps. Next: Minimum Spanning Trees: 
 
 - Revision 2 (24 Nov 2026): learning review resolved (N04-CYCLE). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n03; check that the lighting problem motivates each word, that the walker makes "no vertex twice" visible, that the switch-off shows why cycles waste, that the near misses come before the attempts, that "minimum" is defined without the method, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-n04-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,500 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,488 (Codex's value). Narration is **5,488 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 413 s; total about 494 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Cue plan: fixed.** Scene 4 (cue-order): the "Delete any one edge" instruction now sits before "Water pipes" and the five-vertices/four-edges counters, in spoken order. Narration unchanged by this fix.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 100 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

@@ -1,8 +1,8 @@
 # Maths S11 D14: How do we compare two datasets using centre and spread, by hand and in a spreadsheet? A spreadsheet summary for two groups, centre then spread with numbers, a full comparison sentence, and measures of spread used well and badly (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d13.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d13.md` (Revision 1, this batch), `math-s11-f08.md` and `e06.md` (spreadsheet conventions), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching where the site has no lesson). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,546 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 500 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,534 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 499 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifteenth video of the Year 11 Data analysis strand, outline playlist order 74. One video for Standard 1 and Standard 2. Viewers arrive from d13's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d14.md`. Route entry: `math-s11-d14` in `../../programme/maths-standard-route-inputs-14.json`. Site lessons: `year11/data-analysis/lesson07.sa.html` (cards 02, 05, 06; traps; SA 1) and `lesson11.sa.html`; spreadsheet statistics are taught from the syllabus (MSY-45). Visual system: maths studio kit; the bedroom, phone, delivery bag, coffee cart and swim goggles plates (all existing); the dot plots, spreadsheet, comparison board and gallery coded.
 
@@ -277,3 +277,13 @@ Builds on: Range and Standard Deviation. Next: Quartiles, the Five-Number Summar
 
 - Revision 1. Next: student learning review (trace from d13; check that each formula is spoken with its meaning, that every comparison names a group, a direction and an amount, that the caution is in the sentence, that the swimmer context flips "higher", and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D14-SEEN; D14-DELIV). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d14-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,546 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,534 (Codex's value). Narration is **5,534 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 416 s; total about 499 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.

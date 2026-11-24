@@ -1,8 +1,8 @@
 # Maths S11 N06: How do we find the shortest path through a network? Label outwards from the start, lock in the smallest label, update its neighbours, then trace back from the finish; least total weight, not fewest edges (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n05.md` (Revision 1, this batch), the Year 12 design that contrasts it (`math-s12-c03.md`: "Year 11: shortest path (a different question)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n05.md` (Revision 1, this batch), the Year 12 design that contrasts it (`math-s12-c03.md`: "Year 11: shortest path (a different question)"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,558 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,546 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: sixth video of the Year 11 Networks, paths and trees strand, outline playlist order 59. One video for Standard 1 and Standard 2. Viewers arrive from n05's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n06.md`. Route entry: `math-s11-n06` in `../../programme/maths-standard-route-inputs-13.json`. Site lesson: `year11/networks-paths-and-trees/lesson06.sa.html` (setup, iteration, the worked table, tracing back, WE1 to WE3). Visual system: maths studio kit; the delivery van, share e-bike, road sign post and hillside plates (existing); networks and tables coded.
 
@@ -14,7 +14,7 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Networks, pa
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
-**Boundary:** starts from n05's final frame exactly (the delivery van `ma12-delivery-van-v1.png`, about 480 px wide, at the left; a coded network at the right with a depot "S", stops "A", "B", "C" and a customer "T", edges tagged in minutes S–A "4", S–B "2", A–B "1", A–C "3", A–T "6", B–C "5", C–T "2"; chips "quickest way from S to T?", "Next: shortest paths" and "?"). Recalls n04 (path), n03 (route totals) and n02 (directed, weighted networks) in grey chips. Teaches: the labelling method with its reason; a table layout; tracing back; least total weight against fewest edges; arrows in directed networks; the 10-vertex limit. Not taught: the method's name; "shortest is not best" (n07).
+**Boundary:** starts from n05's final frame exactly (the delivery van `ma12-delivery-van-v1.png`, about 480 px wide, at the left; a coded network at the right with a depot "S", stops "A", "B", "C" and a customer "T", edges tagged in minutes S-A "4", S-B "2", A-B "1", A-C "3", A-T "6", B-C "5", C-T "2"; chips "quickest way from S to T?", "Next: shortest paths" and "?"). Recalls n04 (path), n03 (route totals) and n02 (directed, weighted networks) in grey chips. Teaches: the labelling method with its reason; a table layout; tracing back; least total weight against fewest edges; arrows in directed networks; the 10-vertex limit. Not taught: the method's name; "shortest is not best" (n07).
 
 ## Revision 2: learning review resolved (24 Nov 2026)
 
@@ -26,12 +26,12 @@ Source review: `../checks/m-s11-n06-learning-review.md`; resolution record `../c
 
 ## Decisions
 
-- **Anchor: the van's depot and customer (n05's frame).** The eye picks S–A–T (two roads, 10 min); the method finds S–B–A–C–T (four roads, 8 min): the visual surprise.
+- **Anchor: the van's depot and customer (n05's frame).** The eye picks S-A-T (two roads, 10 min); the method finds S-B-A-C-T (four roads, 8 min): the visual surprise.
 - **The reason before the rule: split and spread.** Copies of the van spread down every road at once at the same speed; the first to reach a stop has found its quickest time. Locking in the smallest label is "the next copy to arrive", so a locked label can never improve. This explains why the method works before its steps are listed.
-- **Labels, lock in, update; no "infinity".** Unlabelled vertices show "–" ("no route found yet"), not ∞. Old labels are crossed when a shorter route appears (a visible update).
+- **Labels, lock in, update; no "infinity".** Unlabelled vertices show "-" ("no route found yet"), not ∞. Old labels are crossed when a shorter route appears (a visible update).
 - **Trace back to read the path.** From the finish, find the neighbour whose label plus the edge weight equals the finish's label; repeat (site's rule, in words).
 - **Fewest edges ≠ shortest.** Said and crossed in scene 4, A1 and A2.
-- **A one-way network (scene 5, site WE3).** The bus from A to E: 15 min by A–C–B–D–E, going round through C because A→C→B (5) beats the direct A→B (8).
+- **A one-way network (scene 5, site WE3).** The bus from A to E: 15 min by A-C-B-D-E, going round through C because A→C→B (5) beats the direct A→B (8).
 - **Directed networks and the 10-vertex limit (scene 6).** Updates follow arrows only; exam networks have at most 10 vertices, so the table stays small; listing is fine for tiny networks.
 - **Simulations (standard item 3).**
   1. **Split and spread** (scene 2): van icons leave S along every edge at a speed proportional to time, splitting at each stop; arrival stamps appear (B 2, A 3, C 6, T 8); later arrivals at a stamped stop fade.
@@ -40,21 +40,21 @@ Source review: `../checks/m-s11-n06-learning-review.md`; resolution record `../c
 - **Colour roles (fixed n01 to n07).** Vertices blue; edges amber; tentative labels amber; locked labels green-ringed; the shortest path teal; answer green; mistake red.
 - **Large type, handwritten voice.** Labels 44 px; table cells 40 px; working 52 px; nothing below 26 px; all text above y = 950. Hand tags: "fewer roads ≠ quicker", "first to arrive = quickest", "lock the smallest", "beaten: cross it", "trace back", "least total weight", "follow the arrows", "10 vertices at most". At most two live at once.
 - **Stage changes (standard item 2).** The van network (1); split and spread (2); the label table (3); trace-back (4); the one-way bus network (5); method notes (6); framed card (7); question cards (8 to 11); the toll sign (12); key notes (13).
-- **Worked examples (g01 order).** Scene 1: crossed-in-advance ghost "S–A–T = 10 min?". Scene 3: lock order "S 0; B 2; A 3 (2 + 1 beats 4); C 6 (3 + 3 beats 7); T 8 (6 + 2 beats 9)"; "shortest time: 8 min" (framed green). Scene 5: "A → C → B → D → E = 3 + 2 + 6 + 4 = 15 min" (framed green). Scene 4: "T 8 ← C 6 ← A 3 ← B 2 ← S 0"; "S → B → A → C → T, 8 min" (framed green); crossed "S → A → T, 10 min" (caption "fewer roads ≠ quicker").
+- **Worked examples (g01 order).** Scene 1: crossed-in-advance ghost "S-A-T = 10 min?". Scene 3: lock order "S 0; B 2; A 3 (2 + 1 beats 4); C 6 (3 + 3 beats 7); T 8 (6 + 2 beats 9)"; "shortest time: 8 min" (framed green). Scene 5: "A → C → B → D → E = 3 + 2 + 6 + 4 = 15 min" (framed green). Scene 4: "T 8 ← C 6 ← A 3 ← B 2 ← S 0"; "S → B → A → C → T, 8 min" (framed green); crossed "S → A → T, 10 min" (caption "fewer roads ≠ quicker").
 - **Memory aid.** Framed card: "Label outwards. Lock in the smallest. Update its neighbours." Key line: "When the finish is locked, trace back: the shortest path has the least total weight, not the fewest edges."
 - **Plain meanings at first use.** Shortest path ("the path between two vertices with the smallest total weight"); label ("the shortest time found so far to a vertex"); lock in ("make a label final, because nothing can reach that vertex faster").
-- **Attempts.** A1 (pack question 1): P–R–Q–S, 7 min; crossed "P–R–S, 9 min" (caption "fewer roads ≠ quicker"). A2 (pack question 2): A–B–C–D–E–G, 15 min; crossed "A–C–E–G, 19 min" (caption "least total weight").
+- **Attempts.** A1 (pack question 1): P-R-Q-S, 7 min; crossed "P-R-S, 9 min" (caption "fewer roads ≠ quicker"). A2 (pack question 2): A-B-C-D-E-G, 15 min; crossed "A-C-E-G, 19 min" (caption "least total weight").
 - **Mistake scene:** none separate. Fewest edges (1, 4, A1, A2); locking a non-smallest label (5, said); missing an update (3, the crossed labels); no trace-back (4); arrows backwards (5).
 - **Cause chain taught, in order:** (1) the quickest way to each stop is found by the first copy to arrive, if every road is tried at once (2); (2) the stop with the smallest label is the next to be reached, so its label is final (2, 3); (3) a locked stop can give its neighbours shorter routes, so update them (3); (4) a final label came from one neighbour plus one edge, so tracing back recovers the path (4); (5) the total, not the number of roads, measures the path (4).
 - **Entry knowledge (route):** math-s11-n04, n03, n02. Recalled in grey chips.
 - **Site notes.** lesson06 recalculated: no error. ∞ replaced by "no route yet" for Standard students (a presentation choice, not an error).
-- **Handoff (to math-s11-n07, when shortest isn't best).** Scene 12: board clear; the road sign post `ma11-road-sign-post-v1.png` (about 420 px tall) at the left with coded white text "TOLL" on its green board; at the right a coded network (900 px) with towns "A", "B", "C", "D", edges in km A–B "10", B–D "8", A–C "12", C–D "9", B–C "3", the A–B edge marked with a small toll icon and the shortest path A–B–D glowing teal; the share e-bike `ma11-share-ebike-v1.png` (about 220 px) above the hillside strip `ma12-hillside-strip-v1.png` (about 500 px) small at the bottom right; chips "shortest = best?", "Next: when shortest isn't best" and "?". n07 opens on this frame.
+- **Handoff (to math-s11-n07, when shortest isn't best).** Scene 12: board clear; the road sign post `ma11-road-sign-post-v1.png` (about 420 px tall) at the left with coded white text "TOLL" on its green board; at the right a coded network (900 px) with towns "A", "B", "C", "D", edges in km A-B "10", B-D "8", A-C "12", C-D "9", B-C "3", the A-B edge marked with a small toll icon and the shortest path A-B-D glowing teal; the share e-bike `ma11-share-ebike-v1.png` (about 220 px) above the hillside strip `ma12-hillside-strip-v1.png` (about 500 px) small at the bottom right; chips "shortest = best?", "Next: when shortest isn't best" and "?". n07 opens on this frame.
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Van network (example minutes, undirected; the site's worked-table network made two-way): S–A 4, S–B 2, A–B 1, A–C 3, A–T 6, B–C 5, C–T 2. Lock order S 0, B 2, A 3, C 6, T 8. Path S–B–A–C–T (search confirms 8, unique).
-  (b) A1: P–Q 5, P–R 2, R–Q 1, Q–S 4, R–S 7: P 0, R 2, Q 3, S 7; P–R–Q–S. Slip P–R–S = 9 (P–Q–S = 9 too).
+  (a) Van network (example minutes, undirected; the site's worked-table network made two-way): S-A 4, S-B 2, A-B 1, A-C 3, A-T 6, B-C 5, C-T 2. Lock order S 0, B 2, A 3, C 6, T 8. Path S-B-A-C-T (search confirms 8, unique).
+  (b) A1: P-Q 5, P-R 2, R-Q 1, Q-S 4, R-S 7: P 0, R 2, Q 3, S 7; P-R-Q-S. Slip P-R-S = 9 (P-Q-S = 9 too).
   (b2) Bus (site WE3, directed): A→B 8, A→C 3, B→D 6, C→B 2, C→D 9, D→E 4: A 0, C 3, B 5, D 11, E 15.
-  (c) A2: A 0, B 3, C 5 (3 + 2), D 8 (5 + 3), E 10 (8 + 2), F 14 (8 + 6), G 15 (10 + 5; via F 16). Path A–B–C–D–E–G. Slip A–C–E–G = 6 + 8 + 5 = 19.
+  (c) A2: A 0, B 3, C 5 (3 + 2), D 8 (5 + 3), E 10 (8 + 2), F 14 (8 + 6), G 15 (10 + 5; via F 16). Path A-B-C-D-E-G. Slip A-C-E-G = 6 + 8 + 5 = 19.
 
 Main question: *The van's eye picks two roads and 10 minutes. How do we find the shortest path through a network?*
 Entry knowledge (math-s11-n04, n03, n02): paths; route totals; directed, weighted networks.
@@ -68,17 +68,17 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): vertices 
 ### 1. hook: the obvious route
 > Here's the van's delivery network. The depot is S, the customer is T, and the numbers are minutes. Which way is quickest? Your eye goes straight to S, A, T. It's only two roads, four minutes plus six, ten minutes. But fewer roads doesn't always mean less time. There might be a route with more turns that's actually quicker. Delivery apps and map apps solve exactly this, thousands of times a second. On a small network you could list every route, but that gets out of hand fast. So how do we find the shortest path through a network, every **time**?
 
-Visual: opens on n05's final frame exactly (the van, the network S, A, B, C, T with minute tags, chips "quickest way from S to T?", "Next: shortest paths", "?"). On "Your eye goes straight" the edges S–A and A–T glow; a ghost row "S → A → T = 4 + 6 = 10 min?" (amber, with a "?"). On "fewer roads" hand tag "fewer roads ≠ quicker?". On "list every route" a list starts scrolling ("S–A–T", "S–B–C–T", "S–A–C–T", "S–B–A–T", ...) and speeds up to a blur. On "time" heading "Shortest paths" writes on (hand font, 56 px).
+Visual: opens on n05's final frame exactly (the van, the network S, A, B, C, T with minute tags, chips "quickest way from S to T?", "Next: shortest paths", "?"). On "Your eye goes straight" the edges S-A and A-T glow; a ghost row "S → A → T = 4 + 6 = 10 min?" (amber, with a "?"). On "fewer roads" hand tag "fewer roads ≠ quicker?". On "list every route" a list starts scrolling ("S-A-T", "S-B-C-T", "S-A-C-T", "S-B-A-T", ...) and speeds up to a blur. On "time" heading "Shortest paths" writes on (hand font, 56 px).
 
 ### 2. the idea: first to arrive is quickest
 > Here's the idea behind the method. Imagine the van could split, and send a copy down every road at once, all driving at the same speed. The first copy to reach a stop has found the quickest way there. It's like ripples spreading from a stone dropped in a pond, reaching the nearest places first. So we work outwards from the start, giving each stop a label, the shortest time found so far. Then we lock in whichever stop has the smallest label, because nothing could reach it any faster. Any other route to it would have to go through a stop that's already at least as far, and then travel further still. Then we use that stop to update its neighbours. Each lock-in is final. Keep going until the finish is locked **in**.
 
-Visual: stage change (simulation 1): the network enlarged (1,300 px). On "split" van icons leave S along S–A and S–B, moving at a pace proportional to the weights; at each stop they split again. Arrival stamps pop: "B 2" first, then "A 3" (the copy via B arrives before the copy on S–A, which fades on arrival at "4"), "C 6", "T 8" (the later copies fade). On "first copy" hand tag "first to arrive = quickest". On "ripples" faint concentric rings spread from S across the network. On "label" a definition chip, 40 px, "label: shortest time found so far". On "lock in" chip "lock in the smallest" (hand tag "lock the smallest"). On "in" (bold) the stamps collapse into four ringed labels.
+Visual: stage change (simulation 1): the network enlarged (1,300 px). On "split" van icons leave S along S-A and S-B, moving at a pace proportional to the weights; at each stop they split again. Arrival stamps pop: "B 2" first, then "A 3" (the copy via B arrives before the copy on S-A, which fades on arrival at "4"), "C 6", "T 8" (the later copies fade). On "first copy" hand tag "first to arrive = quickest". On "ripples" faint concentric rings spread from S across the network. On "label" a definition chip, 40 px, "label: shortest time found so far". On "lock in" chip "lock in the smallest" (hand tag "lock the smallest"). On "in" (bold) the stamps collapse into four ringed labels.
 
 ### 3. running the method
 > Let's do it properly. S starts at nought, and it's locked in. From S, A is four and B is two. Write those as labels. The smallest unlocked label is B, two, so lock B in. Now update B's neighbours. A through B is two plus one, three, which beats four, so A's label drops to three. C through B is two plus five, seven. The smallest unlocked label is now A, three. Lock it in. A's neighbours. C through A is three plus three, six, which beats seven. T through A is three plus six, nine. Next smallest is C, six. Lock it. T through C is six plus two, eight, which beats nine. The only stop left is T, at eight. Lock it in. The shortest time from S to T is eight **minutes**.
 
-Visual: stage change (simulation 2): the network at the right (900 px) with labels beside vertices; the table at the left, 40 px: columns "S", "A", "B", "C", "T"; rows "start", "lock B", "lock A", "lock C", "lock T". Unlabelled cells show "–". Each label writes as said (amber); each lock rings green in both table and network. On "drops to three" the "4" is crossed and "3" written (hand tag "beaten: cross it"); likewise "7" crossed for "6", "9" for "8". On "minutes" row "shortest time: 8 min" (framed green), the T label ringed.
+Visual: stage change (simulation 2): the network at the right (900 px) with labels beside vertices; the table at the left, 40 px: columns "S", "A", "B", "C", "T"; rows "start", "lock B", "lock A", "lock C", "lock T". Unlabelled cells show "-". Each label writes as said (amber); each lock rings green in both table and network. On "drops to three" the "4" is crossed and "3" written (hand tag "beaten: cross it"); likewise "7" crossed for "6", "9" for "8". On "minutes" row "shortest time: 8 min" (framed green), the T label ringed.
 
 ### 4. tracing back the path
 > But which route is it? Work backwards from the finish. T's label of eight came from C, because six plus two is eight. C's six came from A, three plus three. A's three came from B, two plus one. And B's two came straight from S. So the shortest path is S, B, A, C, **T**. You can check it by adding the weights along it, two, one, three and two, which is eight. Four roads, eight minutes, and it beats the obvious-looking S, A, T by two minutes. The shortest path isn't the one with the fewest **edges**. It's the one with the smallest total weight.
@@ -103,7 +103,7 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the van network w
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. A cyclist rides from P to S. The times between junctions, in minutes, are P Q five, P R two, R Q one, Q S four, and R S seven. Find the shortest path from P to S, and its time. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "A cyclist rides from P to S. Times between junctions (minutes): P–Q 5, P–R 2, R–Q 1, Q–S 4, R–S 7. Find the shortest path from P to S and its time." Picture slot: the network drawn with weights; the share e-bike badge (about 160 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "A cyclist rides from P to S. Times between junctions (minutes): P-Q 5, P-R 2, R-Q 1, Q-S 4, R-S 7. Find the shortest path from P to S and its time." Picture slot: the network drawn with weights; the share e-bike badge (about 160 px). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
 > P is nought. R gets two and Q gets five. Lock R, two. Q through R is three, which beats five, and S through R is nine. Lock Q, three. S through Q is three plus four, seven, which beats nine. So the shortest path is P, R, Q, S, seven **minutes**. Taking P, R, S because it has fewer roads gives nine, and that's the **slip**.
@@ -113,17 +113,17 @@ Visual: the card shrinks to the top (30 px). A small label table runs: P 0; R 2,
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. The network shows travel times, in minutes, between seven places, A to G. Use the labelling method to find the shortest path from A to G, and its length. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "The network shows travel times (minutes) between seven places. Use the labelling method to find the shortest path from A to G and its length." Picture slot: the network: A–B 3, A–C 6, B–C 2, B–D 7, C–D 3, C–E 8, D–E 2, D–F 6, E–G 5, F–G 2. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "The network shows travel times (minutes) between seven places. Use the labelling method to find the shortest path from A to G and its length." Picture slot: the network: A-B 3, A-C 6, B-C 2, B-D 7, C-D 3, C-E 8, D-E 2, D-F 6, E-G 5, F-G 2. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > The labels lock in like this. A nought, B three, C five, because B to C is two. D eight, through C. E ten, through D. F fourteen. And G fifteen, through E, which beats sixteen through F. Trace back from G, through E, D, C and B, to A. So the shortest path is A, B, C, D, E, G, fifteen **minutes**. A, C, E, G, with the fewest roads, is nineteen, and that's the **slip**.
 
-Visual: the card shrinks to the top. Labels lock on the network one by one with their sums: "B 3", "C 5 (3 + 2)", "D 8 (5 + 3)", "E 10 (8 + 2)", "F 14 (8 + 6)", "G 15 (10 + 5; not 16)". Trace back lights A–B–C–D–E–G teal; on "minutes" row "A → B → C → D → E → G = 15 min" (framed green). On "slip" a red slip "A → C → E → G = 19 min" writes and is crossed (caption "least total weight"). Hold about 1 s.
+Visual: the card shrinks to the top. Labels lock on the network one by one with their sums: "B 3", "C 5 (3 + 2)", "D 8 (5 + 3)", "E 10 (8 + 2)", "F 14 (8 + 6)", "G 15 (10 + 5; not 16)". Trace back lights A-B-C-D-E-G teal; on "minutes" row "A → B → C → D → E → G = 15 min" (framed green). On "slip" a red slip "A → C → E → G = 19 min" writes and is crossed (caption "least total weight"). Hold about 1 s.
 
 ### 12. handoff: when shortest isn't best
 > So that's the shortest path. Label, lock, update, then trace back. The shortest path answers one question, the least distance or time. Real trips have other things to weigh up. So is the shortest path always the best one to take? What if it runs along a toll road, or a road that floods after rain, or straight up a steep hill on a bike? Sometimes a longer path is the better choice. When is the shortest path not the best path? That's **next**.
 
-Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "toll road" the road sign post `ma11-road-sign-post-v1.png` (about 420 px tall) at the left with coded white text "TOLL"; the coded network A, B, C, D at the right with the shortest path A–B–D glowing teal and a small toll icon on A–B; on "floods" a small rain icon flickers over one edge and fades; on "steep hill on a bike" the share e-bike (about 220 px) above the hillside strip (about 500 px) at the bottom right. Chip "shortest = best?". On "next" chips "Next: when shortest isn't best" and "?". Hold about 2 s. This is n07's opening frame; scene 13 returns to it silently after the notes.
+Visual: the memory lines show small at the top (30 px), then fade. Board clear to the handoff frame (as under Decisions, "Handoff"): on "toll road" the road sign post `ma11-road-sign-post-v1.png` (about 420 px tall) at the left with coded white text "TOLL"; the coded network A, B, C, D at the right with the shortest path A-B-D glowing teal and a small toll icon on A-B; on "floods" a small rain icon flickers over one edge and fades; on "steep hill on a bike" the share e-bike (about 220 px) above the hillside strip (about 500 px) at the bottom right. Chip "shortest = best?". On "next" chips "Next: when shortest isn't best" and "?". Hold about 2 s. This is n07's opening frame; scene 13 returns to it silently after the notes.
 
 ### 13. key notes (quiet, 45 seconds)
 Heading on screen: "Key notes: what to write in your book" (hand font, 44 px). Bullets 38 to 40 px in the left 58 to 60 per cent, colour roles kept, each one line.
@@ -153,19 +153,19 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Practice questions and model answers
 
 **Attempt 1 (scene 8; pack question 1, original HSC style, 2 marks suggested, not an official marking scheme).** As on the card.
-Model answer: P 0; R 2; Q 3 (2 + 1); S 7 (3 + 4): P–R–Q–S, 7 min. Classic mistake (crossed): "P–R–S, 9 min".
+Model answer: P 0; R 2; Q 3 (2 + 1); S 7 (3 + 4): P-R-Q-S, 7 min. Classic mistake (crossed): "P-R-S, 9 min".
 
 **Attempt 2 (scene 10; pack question 2, 3 marks suggested).** As on the card.
-Model answer: A 0, B 3, C 5, D 8, E 10, F 14, G 15; A–B–C–D–E–G, 15 min. Classic mistake (crossed): "A–C–E–G, 19 min".
+Model answer: A 0, B 3, C 5, D 8, E 10, F 14, G 15; A-B-C-D-E-G, 15 min. Classic mistake (crossed): "A-C-E-G, 19 min".
 
 ## Numbers used (author note: every value)
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Obvious route | 10 min | 1, 4 |
-| Bus (one-way) | 3, 8 → 5, 12 → 11, 15; A–C–B–D–E 15 min | 5 |
+| Bus (one-way) | 3, 8 → 5, 12 → 11, 15; A-C-B-D-E 15 min | 5 |
 | Labels | 0, 2, 3, 6, 8; beaten 4, 7, 9 | 2, 3 |
-| Path | S–B–A–C–T, 8 min | 4 |
+| Path | S-B-A-C-T, 8 min | 4 |
 | A1 | 0, 2, 3, 7; slip 9 | 8, 9 |
 | A2 | 0, 3, 5, 8, 10, 14, 15; slip 19 | 10, 11 |
 | Toll network (handoff) | 10, 8, 12, 9, 3 km | 12 |
@@ -174,10 +174,10 @@ Model answer: A 0, B 3, C 5, D 8, E 10, F 14, G 15; A–B–C–D–E–G, 15 mi
 
 Recalculated (24 Nov 2026, scratchpad `s11n/verify.py`, `python -I`; 0 failures); Codex to re-check.
 
-- Van: S 0, B 2, A 3, C 6, T 8; path S–B–A–C–T; S–A–T = 10.
-- Bus (directed): A 0, C 3, B 5, D 11, E 15; path A–C–B–D–E.
-- A1: P 0, R 2, Q 3, S 7; P–R–S = 9.
-- A2: A 0, B 3, C 5, D 8, E 10, F 14, G 15 (via F 16); A–C–E–G = 19.
+- Van: S 0, B 2, A 3, C 6, T 8; path S-B-A-C-T; S-A-T = 10.
+- Bus (directed): A 0, C 3, B 5, D 11, E 15; path A-C-B-D-E.
+- A1: P 0, R 2, Q 3, S 7; P-R-S = 9.
+- A2: A 0, B 3, C 5, D 8, E 10, F 14, G 15 (via F 16); A-C-E-G = 19.
 
 ## Memory aid check
 
@@ -231,8 +231,8 @@ Uses: `PlateImg`, `HandTag`, `NetworkBoard` with the runner (n02), `RouteLister`
 
 Additions (kit-needs row n06):
 1. **`SpreadRace`**: copies of an icon travel every edge from a source at a pace proportional to weight, splitting at vertices; first arrivals stamp their times and later copies fade. Check: B 2, A 3, C 6, T 8.
-2. **`LabelTable`**: a shortest-path table linked to a `NetworkBoard`: tentative labels, crossed beaten labels, green lock rings, one row per lock; "–" for no label; directed mode follows arrows only. Check: van 0, 2, 3, 6, 8; A1 0, 2, 3, 7; A2 0, 3, 5, 8, 10, 14, 15.
-3. **`TraceBack`**: from a target, arrows run to the neighbour whose label plus weight equals the target's label, recursively, lighting the path. Check: S–B–A–C–T; P–R–Q–S; A–B–C–D–E–G.
+2. **`LabelTable`**: a shortest-path table linked to a `NetworkBoard`: tentative labels, crossed beaten labels, green lock rings, one row per lock; "-" for no label; directed mode follows arrows only. Check: van 0, 2, 3, 6, 8; A1 0, 2, 3, 7; A2 0, 3, 5, 8, 10, 14, 15.
+3. **`TraceBack`**: from a target, arrows run to the neighbour whose label plus weight equals the target's label, recursively, lighting the path. Check: S-B-A-C-T; P-R-Q-S; A-B-C-D-E-G.
 
 ## Codex asset brief
 
@@ -269,9 +269,20 @@ Builds on: Minimum Spanning Trees: Connecting Everything for Less. Next: When th
 
 ## Open decisions
 
-- **1. No ∞.** Unlabelled vertices show "–" with the meaning "no route found yet". If root prefers the site's ∞, only the table cells change.
+- **1. No ∞.** Unlabelled vertices show "-" with the meaning "no route found yet". If root prefers the site's ∞, only the table cells change.
 
 ## Review notes
 
 - Revision 2 (24 Nov 2026): learning review resolved (N06-WHY). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n05; check that the split-and-spread race explains "lock the smallest" before the rule, that each beaten label is crossed visibly, that trace-back is shown before attempts, that "fewer roads ≠ quicker" is felt in the hook and resolved in scene 4, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-n06-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,558 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,546 (Codex's value). Narration is **5,546 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 417 s; total about 501 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 162 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

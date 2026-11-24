@@ -1,8 +1,8 @@
 # Maths S11 N07: When is the shortest path not the best path? Shortest means least of one weight; tolls, time, floods, hills and safety can make a longer path best; and a shortest path need not lie in any minimum spanning tree (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design (join edit 24 Nov 2026, after d01 was designed: the d01 frame is confirmed unchanged, every "provisional" mark on the n07 to d01 join is lifted, and the YouTube "Next" line quotes d01's title; no narration or picture changed), written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n06.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design (join edit 24 Nov 2026, after d01 was designed: the d01 frame is confirmed unchanged, every "provisional" mark on the n07 to d01 join is lifted, and the YouTube "Next" line quotes d01's title; no narration or picture changed), written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-n01.md` to `n06.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99 (ruling 3: syllabus-only teaching). Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,489 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 494 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,477 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 493 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: last video of the Year 11 Networks, paths and trees strand, outline playlist order 60. One video for Standard 1 and Standard 2. Viewers arrive from n06's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-n07.md`. Route entry: `math-s11-n07` in `../../programme/maths-standard-route-inputs-13.json`. Site lesson: none (MSY-32); taught from the syllabus. Visual system: maths studio kit; the road sign post, share e-bike, hillside strip, country road, hiking valley and phone plates (existing); networks coded.
 
@@ -14,26 +14,26 @@ Syllabus content point (Mathematics Standard 11-12 (2024), Year 11, Networks, pa
 
 Source: https://curriculum.nsw.edu.au/learning-areas/mathematics/mathematics-standard-11-12-2024/content/year-11/fabf235394
 
-**Boundary:** starts from n06's final frame exactly (the road sign post `ma11-road-sign-post-v1.png`, about 420 px tall, at the left with coded white text "TOLL"; a coded network at the right with towns "A", "B", "C", "D", edges in km A–B "10", B–D "8", A–C "12", C–D "9", B–C "3", a small toll icon on A–B and the shortest path A–B–D glowing teal; the share e-bike `ma11-share-ebike-v1.png` above the hillside strip `ma12-hillside-strip-v1.png`, small, at the bottom right; chips "shortest = best?", "Next: when shortest isn't best" and "?"). Recalls n06 (shortest path), n05 (minimum spanning tree; the camp), f04a (time = distance ÷ speed) and t01 (decimal hours) in grey chips. Teaches: circumstances where the shortest path is not best; weights decide the answer; a shortest path in no minimum spanning tree, and why. Closes the strand. Not taught: new methods.
+**Boundary:** starts from n06's final frame exactly (the road sign post `ma11-road-sign-post-v1.png`, about 420 px tall, at the left with coded white text "TOLL"; a coded network at the right with towns "A", "B", "C", "D", edges in km A-B "10", B-D "8", A-C "12", C-D "9", B-C "3", a small toll icon on A-B and the shortest path A-B-D glowing teal; the share e-bike `ma11-share-ebike-v1.png` above the hillside strip `ma12-hillside-strip-v1.png`, small, at the bottom right; chips "shortest = best?", "Next: when shortest isn't best" and "?"). Recalls n06 (shortest path), n05 (minimum spanning tree; the camp), f04a (time = distance ÷ speed) and t01 (decimal hours) in grey chips. Teaches: circumstances where the shortest path is not best; weights decide the answer; a shortest path in no minimum spanning tree, and why. Closes the strand. Not taught: new methods.
 
 ## Revision 2: learning review resolved (24 Nov 2026)
 
 Source review: `../checks/m-s11-n07-learning-review.md`; resolution record `../checks/m-s11-t-n-learning-review-resolution.md`.
 
-- **N07-A1 (blocker, root's ruling 2): resolved with the reviewer's checked replacement.** Attempt 1 repeated scene 2's toll example, so it was not unseen. It is now a fresh network with a different reason to avoid an edge: "Distances (km): P–Q 6, Q–S 5, P–R 8, R–S 6, Q–R 3. The road Q–S is flooded. Find the shortest open path from P to S and its length." Verified by listing every simple path (scratchpad `s11tn/net.py`, `python -I`): P–Q–S 11, P–R–S 14, P–Q–R–S 15, P–R–Q–S 16; with Q–S closed only P–R–S 14 and P–Q–R–S 15 remain, so P–R–S, 14 km, is the unique answer. Feedback 1: "Take the flooded road out first. Then only two routes are open. P, Q, R, S is six plus three plus six, fifteen. P, R, S is eight plus six, fourteen kilometres, the shortest open path. Giving P, Q, S, eleven kilometres, drives through the flood, and that's the slip." (265 characters, about 20 s). Crossed slip "P → Q → S = 11 km" (caption "Q–S is flooded"). The flood ties to scene 4's gallery. Updated with it: the Decisions "Attempts" line, the model answer, author note (f), Numbers used and Numbers to verify.
+- **N07-A1 (blocker, root's ruling 2): resolved with the reviewer's checked replacement.** Attempt 1 repeated scene 2's toll example, so it was not unseen. It is now a fresh network with a different reason to avoid an edge: "Distances (km): P-Q 6, Q-S 5, P-R 8, R-S 6, Q-R 3. The road Q-S is flooded. Find the shortest open path from P to S and its length." Verified by listing every simple path (scratchpad `s11tn/net.py`, `python -I`): P-Q-S 11, P-R-S 14, P-Q-R-S 15, P-R-Q-S 16; with Q-S closed only P-R-S 14 and P-Q-R-S 15 remain, so P-R-S, 14 km, is the unique answer. Feedback 1: "Take the flooded road out first. Then only two routes are open. P, Q, R, S is six plus three plus six, fifteen. P, R, S is eight plus six, fourteen kilometres, the shortest open path. Giving P, Q, S, eleven kilometres, drives through the flood, and that's the slip." (265 characters, about 20 s). Crossed slip "P → Q → S = 11 km" (caption "Q-S is flooded"). The flood ties to scene 4's gallery. Updated with it: the Decisions "Attempts" line, the model answer, author note (f), Numbers used and Numbers to verify.
 - A2 also uses the letters P, Q, R and S, on a different network with its own card. Each card shows its own network, so this is kept as root ruled; Codex's error check should confirm that the two cards are clearly separate.
 - No other number changed. Joins unchanged (n06's toll frame in; d01's frame out).
 - Narration 5,489 characters (Revision 1: 5,545); about 494 s with holds, under the 570 s cap. Review file reference unchanged (`checks/m-s11-n07-learning-review.md` already matches).
 
 ## Decisions
 
-- **Anchor: the toll sign (n06's frame).** The labelling method picks A–B–D (18 km) because it only sees kilometres; a driver avoiding tolls picks A–C–D (21 km).
+- **Anchor: the toll sign (n06's frame).** The labelling method picks A-B-D (18 km) because it only sees kilometres; a driver avoiding tolls picks A-C-D (21 km).
 - **Weights measure one thing.** The point's "not necessarily the best path" is shown three ways: cost (the toll), time against distance (a town route against a motorway, with f04a's time = distance ÷ speed), and things the weights don't record (a flood, a hill, safety, peak hour).
 - **Weight toggle (visual surprise).** Switching the same two routes from kilometres to minutes swaps the winner (X 12 km but 14.4 min; Y 15 km but 9 min).
 - **"Nor contained in any minimum spanning tree": a triangle first, then the camp.** Triangle AB 3, BC 3, AC 5: the unique MST is AB + BC; the shortest A→C path is AC, in no MST. Then the camp (n05): the lit tree takes A to C the long way (70 m) while the dark direct path is 60 m. The reason: an MST minimises the total for linking everyone, not any one trip.
 - **Strand close and the d01 handoff (confirmed by d01).** Grey chip "Networks, paths and trees: done"; the phone's survey screen opens Data analysis. Networks and Data analysis are parallel strands; the playlist runs d after n (61 onward). d01 confirms the frame unchanged and uses its overlapping buttons and "last night" as its hook.
 - **Simulations (standard item 3).**
-  1. **Edge removal and re-run** (scene 2, feedback 1): the toll edge greys; the shortest-path search (n06's label table, compact) re-runs and lights A–C–D with its total.
+  1. **Edge removal and re-run** (scene 2, feedback 1): the toll edge greys; the shortest-path search (n06's label table, compact) re-runs and lights A-C-D with its total.
   2. **Weight toggle** (scene 3): two routes between two towns with tags that flip between "km" and "min"; the winning route's highlight jumps from X to Y.
   3. **Tree against trip** (scenes 5, 6, feedback 2): the MST lit teal; a traveller icon (a lantern) walks between two vertices inside the tree with a timer, while the direct non-tree edge flashes its shorter total.
 - **Colour roles (fixed n01 to n07).** Vertices blue; edges amber; the shortest path teal; the best path (by another measure) green outline; MST edges teal; non-tree edges faint; answer green; mistake red.
@@ -42,7 +42,7 @@ Source review: `../checks/m-s11-n07-learning-review.md`; resolution record `../c
 - **Worked examples (g01 order).** Scene 2: "shortest: A → B → D = 18 km (toll)"; "no toll: A → C → D = 21 km" (framed green). Scene 3: "X: 12 ÷ 50 = 0.24 h = 14.4 min"; "Y: 15 ÷ 100 = 0.15 h = 9 min" (framed green). Scene 5: "MST: AB + BC = 6; shortest A → C = AC = 5: not in the MST" (framed green). Scene 6: "in the tree: A → B → C = 70 m; shortest: A → C = 60 m" (framed green); on "ten metres further" chip "+10 m at night".
 - **Memory aid.** Framed card: "Shortest is about one number. Best is about everything that matters." Key line: "A minimum spanning tree links everyone for the least total; it may not hold the shortest trip between two places."
 - **Plain meanings at first use.** Best path ("the path that suits what matters on this trip, such as cost, time, safety or the road being open"); toll road ("a road you pay to use").
-- **Attempts.** A1 (Revision 2, replacing pack question 1, which repeated scene 2): a fresh flooded-road network, P–Q 6, Q–S 5, P–R 8, R–S 6, Q–R 3, Q–S flooded: P–R–S, 14 km; crossed "P–Q–S, 11 km" (caption "Q–S is flooded"). A2 (pack question 2): MST 11; P–R 6; not in the MST; crossed "(b) P–Q–R, 8" (caption "the tree's route isn't the shortest").
+- **Attempts.** A1 (Revision 2, replacing pack question 1, which repeated scene 2): a fresh flooded-road network, P-Q 6, Q-S 5, P-R 8, R-S 6, Q-R 3, Q-S flooded: P-R-S, 14 km; crossed "P-Q-S, 11 km" (caption "Q-S is flooded"). A2 (pack question 2): MST 11; P-R 6; not in the MST; crossed "(b) P-Q-R, 8" (caption "the tree's route isn't the shortest").
 - **Mistake scene:** none separate. "Shortest is always best" (1 to 4, A1); "the MST holds every shortest trip" (5, 6, A2); wrong weights (3).
 - **Cause chain taught, in order:** (1) a shortest path minimises the total of one kind of weight, so it ignores anything the weights don't measure (2); (2) choosing a different weight (time, cost) can change which route is shortest (3); (3) real constraints (closures, hills, safety, traffic) are not in the weights, so the best path can be longer (4); (4) an MST chooses edges to keep the total for linking everyone as low as possible, so it can leave out a direct edge that one trip would use (5, 6).
 - **Entry knowledge (route):** math-s11-n06, n05, f04a, t01. Recalled in grey chips.
@@ -50,12 +50,12 @@ Source review: `../checks/m-s11-n07-learning-review.md`; resolution record `../c
 - **Handoff (to math-s11-d01, statistical investigations; strand close; confirmed).** Scene 12: board clear; grey strand chip "Networks, paths and trees: done"; the phone `ma12-phone-v1.png` (about 640 px tall) at the centre-left with a coded survey screen: the question "How many hours did you sleep last night?" (40 px) and four answer buttons "under 7", "7 to 8", "8 to 9", "over 9"; chips "a clear question, a fair survey", "Next: statistical investigations" and "?". d01 opens on this frame exactly (confirmed 24 Nov 2026).
 - **Legacy logic ported:** none.
 - **Author notes (not learner copy):**
-  (a) Toll network (example km): A–B 10 (toll), B–D 8, A–C 12, C–D 9, B–C 3. Shortest A→D = A–B–D 18; without A–B: A–C–D 21 (A–C–B–D 23). Difference 3.
+  (a) Toll network (example km): A-B 10 (toll), B-D 8, A-C 12, C-D 9, B-C 3. Shortest A→D = A-B-D 18; without A-B: A-C-D 21 (A-C-B-D 23). Difference 3.
   (b) X 12 km at 50 km/h: 0.24 h = 14.4 min; Y 15 km at 100 km/h: 0.15 h = 9 min; 14.4 − 9 = 5.4.
   (c) Triangle: MST {AB, BC} = 6, unique (AC 5 is the heaviest edge of the only cycle); shortest A→C = 5 via AC.
-  (d) Camp MST {B–C 30, D–E 35, A–B 40, C–D 45}, unique; A→C in the tree 40 + 30 = 70; shortest A→C = A–C 60 (not in the MST).
-  (e) A2: MST {R–S 3, P–Q 4, Q–R 4} = 11 (P–R 6 closes P–Q–R; Q–S 8 closes Q–R–S); this MST is unique (verified by listing all spanning trees; Codex confirms). Shortest P→R = 6 (P–R) against P–Q–R 8.
-  (f) A1 (Revision 2; example km): P–Q 6, Q–S 5, P–R 8, R–S 6, Q–R 3; Q–S flooded. Every simple P→S path: P–Q–S 11, P–R–S 14, P–Q–R–S 15, P–R–Q–S 16. Open (no Q–S): P–R–S 14 (unique shortest), P–Q–R–S 15. Slip P–Q–S 11 uses the flooded road.
+  (d) Camp MST {B-C 30, D-E 35, A-B 40, C-D 45}, unique; A→C in the tree 40 + 30 = 70; shortest A→C = A-C 60 (not in the MST).
+  (e) A2: MST {R-S 3, P-Q 4, Q-R 4} = 11 (P-R 6 closes P-Q-R; Q-S 8 closes Q-R-S); this MST is unique (verified by listing all spanning trees; Codex confirms). Shortest P→R = 6 (P-R) against P-Q-R 8.
+  (f) A1 (Revision 2; example km): P-Q 6, Q-S 5, P-R 8, R-S 6, Q-R 3; Q-S flooded. Every simple P→S path: P-Q-S 11, P-R-S 14, P-Q-R-S 15, P-R-Q-S 16. Open (no Q-S): P-R-S 14 (unique shortest), P-Q-R-S 15. Slip P-Q-S 11 uses the flooded road.
 
 Main question: *The toll road is on the shortest path. When is the shortest path not the best path?*
 Entry knowledge (math-s11-n06, n05, f04a, t01): shortest paths; minimum spanning trees; time = distance ÷ speed; decimal hours.
@@ -69,12 +69,12 @@ Cue words in **bold** trigger the visual change. Colour roles (fixed): vertices 
 ### 1. hook: the toll road
 > Here's the toll road from last time. From town A to town D, the shortest path runs along the toll road from A to B, then on to D, eighteen kilometres. The labelling method would pick it every time, because it only looks at the numbers on the edges. But a driver who doesn't want to pay the toll might choose a different way. So when is the shortest path not the best path, and how does it compare with a minimum spanning **tree**?
 
-Visual: opens on n06's final frame exactly (the toll sign, the network A to D with the teal shortest path A–B–D and a toll icon on A–B, the e-bike and hillside small, chips "shortest = best?", "Next: when shortest isn't best", "?"). On "eighteen kilometres" row "A → B → D = 10 + 8 = 18 km" (teal), hand tag "shortest by km". On "only looks at the numbers" the edge tags pulse. On "doesn't want to pay" the toll icon on A–B enlarges. On "tree" heading "When shortest isn't best" writes on (hand font, 56 px).
+Visual: opens on n06's final frame exactly (the toll sign, the network A to D with the teal shortest path A-B-D and a toll icon on A-B, the e-bike and hillside small, chips "shortest = best?", "Next: when shortest isn't best", "?"). On "eighteen kilometres" row "A → B → D = 10 + 8 = 18 km" (teal), hand tag "shortest by km". On "only looks at the numbers" the edge tags pulse. On "doesn't want to pay" the toll icon on A-B enlarges. On "tree" heading "When shortest isn't best" writes on (hand font, 56 px).
 
 ### 2. a toll: shortest isn't cheapest
 > Remember what a shortest path is. It's the path with the least total weight, and here the weights are kilometres. Every edge's weight said kilometres, so kilometres are all the method could see. But kilometres aren't the only thing that matters on a real trip. Say the toll road from A to B costs money, and the driver wants to avoid it. Take that edge away, and look again. Now the shortest path is A, C, D, twelve plus nine, twenty-one kilometres. That's only three kilometres longer, with no toll. For this driver, the longer path is the best **path**. The shortest path was right about distance, and wrong about what the driver cared about.
 
-Visual: stage change (simulation 1): the network enlarged (1,200 px), the sign post badge (about 260 px) at the top left; grey chip "n06: shortest path = least total weight". On "Take that edge away" the A–B edge greys with a violet "toll: avoid" tag; a compact label table re-runs at the left; on "twenty-one kilometres" A–C–D lights with a green outline, row "A → C → D = 12 + 9 = 21 km" (framed green), and a grey row "A → C → B → D = 23 km". On "three kilometres longer" a chip "+3 km, no toll". On "path" (bold) hand tag "best for this driver".
+Visual: stage change (simulation 1): the network enlarged (1,200 px), the sign post badge (about 260 px) at the top left; grey chip "n06: shortest path = least total weight". On "Take that edge away" the A-B edge greys with a violet "toll: avoid" tag; a compact label table re-runs at the left; on "twenty-one kilometres" A-C-D lights with a green outline, row "A → C → D = 12 + 9 = 21 km" (framed green), and a grey row "A → C → B → D = 23 km". On "three kilometres longer" a chip "+3 km, no toll". On "path" (bold) hand tag "best for this driver".
 
 ### 3. time against distance
 > Here's another. Two routes run between the same two towns. Route X is twelve kilometres through town, at fifty kilometres an hour. Route Y is fifteen kilometres on a motorway, at a hundred kilometres an hour. Route X is shorter. But time is distance divided by speed. Twelve divided by fifty is nought point two four of an hour, fourteen point four minutes. Fifteen divided by a hundred is nought point one five of an hour, nine **minutes**. The longer route is quicker by more than five minutes. So the weights you choose decide the answer. Weight the edges by distance, and route X wins. Weight them by time, and route Y **wins**.
@@ -89,12 +89,12 @@ Visual: stage change: a gallery of four panels, each a small network with its sh
 ### 5. not in any minimum spanning tree
 > Now the second part of the idea. A shortest path isn't always inside a minimum spanning tree either. Here's a tiny network. A to B is three, B to C is three, and A to C is five. The minimum spanning tree takes the two threes, for six, and leaves out A to C, because it would close a loop. It's the only minimum spanning tree this network has. But the shortest path from A to C is the direct edge, five, and that edge isn't in the tree at all. If you could only use the tree, the trip from A to C would be six, through **B**. A minimum spanning tree keeps the total cost of linking everyone as low as possible. It doesn't promise the shortest trip between any two particular **places**. Real cables do the same thing. A town's fibre laid as a minimum spanning tree can send data from one tower to its neighbour the long way round.
 
-Visual: stage change (simulation 3): a large triangle network (900 px): A–B "3", B–C "3", A–C "5". Grey chip "n05: cheapest first, skip loops". On "takes the two threes" A–B and B–C turn teal (row "MST: 3 + 3 = 6"); on "leaves out A to C" A–C flashes the loop violet and fades (faint). On "the only minimum spanning tree" a chip "unique MST". On "the direct edge, five" A–C glows with its "5" (green outline), row "shortest A → C = 5 (edge AC)". On "through B" (bold) the lantern walks A → B → C inside the tree with a timer "6"; row "MST: AB + BC = 6; shortest A → C = AC = 5: not in the MST" (framed green). On "places" (first bold) hand tag "links everyone, not every trip". On "Real cables" a small coded inset: four tower icons joined in a chain (the tree) with data dots travelling the long way between two neighbours.
+Visual: stage change (simulation 3): a large triangle network (900 px): A-B "3", B-C "3", A-C "5". Grey chip "n05: cheapest first, skip loops". On "takes the two threes" A-B and B-C turn teal (row "MST: 3 + 3 = 6"); on "leaves out A to C" A-C flashes the loop violet and fades (faint). On "the only minimum spanning tree" a chip "unique MST". On "the direct edge, five" A-C glows with its "5" (green outline), row "shortest A → C = 5 (edge AC)". On "through B" (bold) the lantern walks A → B → C inside the tree with a timer "6"; row "MST: AB + BC = 6; shortest A → C = AC = 5: not in the MST" (framed green). On "places" (first bold) hand tag "links everyone, not every trip". On "Real cables" a small coded inset: four tower icons joined in a chain (the tree) with data dots travelling the long way between two neighbours.
 
 ### 6. the camp at night
 > The camp shows the same thing. Its minimum spanning tree lights B C, D E, A B and C D, a hundred and fifty metres. Walking from cabin A to cabin C under the lights, you go A to B to C, forty plus thirty, seventy metres. But there's a dark path straight from A to C, sixty metres. The shortest path from A to C isn't in the camp's lit tree. Anyone walking from A to C at night now walks ten metres further than they would by day. The camp saved on lighting, and some walks got longer. That's a fair trade, but it is a **trade**.
 
-Visual: stage change: the hiking valley `ma12-hiking-valley-v1.png` (about 1,100 px wide) at dusk with the camp network; the four lit edges glow as lamps (grey chip "n05: the camp's lit tree, 150 m"). On "Walking from cabin A to cabin C" the lantern walks A → B → C along lit edges, timer "40 + 30 = 70 m". On "a dark path" the unlit A–C edge flashes "60 m" (green outline). Row "in the tree: A → B → C = 70 m; shortest: A → C = 60 m" (framed green); on "ten metres further" chip "+10 m at night". On "trade" (bold) hand tag "a fair trade".
+Visual: stage change: the hiking valley `ma12-hiking-valley-v1.png` (about 1,100 px wide) at dusk with the camp network; the four lit edges glow as lamps (grey chip "n05: the camp's lit tree, 150 m"). On "Walking from cabin A to cabin C" the lantern walks A → B → C along lit edges, timer "40 + 30 = 70 m". On "a dark path" the unlit A-C edge flashes "60 m" (green outline). Row "in the tree: A → B → C = 70 m; shortest: A → C = 60 m" (framed green); on "ten metres further" chip "+10 m at night". On "trade" (bold) hand tag "a fair trade".
 
 ### 7. memory aid
 > So here's the idea in one card. Shortest is about one number. Best is about everything that matters, like cost, time, safety, and whether the road is open. And a minimum spanning tree links everyone cheaply, but it may not hold the shortest trip between two **places**.
@@ -104,22 +104,22 @@ Visual: stage change to the framed `MemoryAidCard`. Left slot: the triangle with
 ### 8. attempt 1 (countdown, 10 seconds)
 > Your turn. Here's a new network, with distances in kilometres. P Q six, Q S five, P R eight, R S six, and Q R three. After a storm, the road from Q to S is flooded. Find the shortest open path from P to S, and its length. Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "Distances (km): P–Q 6, Q–S 5, P–R 8, R–S 6, Q–R 3. The road Q–S is flooded. Find the shortest open path from P to S and its length." Picture slot: a new four-vertex network (P left, S right, Q top, R bottom, Q–R a short vertical edge) with the weights and a coded flood icon (blue water marks) on Q–S; no highlighted path (Revision 2, N07-A1: unseen practice). Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "Distances (km): P-Q 6, Q-S 5, P-R 8, R-S 6, Q-R 3. The road Q-S is flooded. Find the shortest open path from P to S and its length." Picture slot: a new four-vertex network (P left, S right, Q top, R bottom, Q-R a short vertical edge) with the weights and a coded flood icon (blue water marks) on Q-S; no highlighted path (Revision 2, N07-A1: unseen practice). Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 9. feedback 1 (brief)
 > Take the flooded road out first. Then only two routes are open. P, Q, R, S is six plus three plus six, fifteen. P, R, S is eight plus six, fourteen **kilometres**, the shortest open path. Giving P, Q, S, eleven kilometres, drives through the flood, and that's the **slip**.
 
-Visual: the card shrinks to the top (30 px). On "flooded road out" Q–S greys under its water marks; on "fifteen" a grey row "P → Q → R → S = 6 + 3 + 6 = 15 km"; on "kilometres" P–R–S lights (green outline), row "P → R → S = 8 + 6 = 14 km" (framed green). On "slip" a red slip "P → Q → S = 11 km" writes and is crossed (caption "Q–S is flooded"). Hold about 1 s.
+Visual: the card shrinks to the top (30 px). On "flooded road out" Q-S greys under its water marks; on "fifteen" a grey row "P → Q → R → S = 6 + 3 + 6 = 15 km"; on "kilometres" P-R-S lights (green outline), row "P → R → S = 8 + 6 = 14 km" (framed green). On "slip" a red slip "P → Q → S = 11 km" writes and is crossed (caption "Q-S is flooded"). Hold about 1 s.
 
 ### 10. attempt 2 (countdown, 10 seconds)
 > Last one. A network has edges P Q four, Q R four, P R six, R S three, and Q S eight. Find the minimum spanning tree and its total. Then find the shortest path from P to R. Is that path in the minimum spanning tree? Pause here to answer.
 
-Visual: `QuestionCard`, 40 px: "A network has edges P–Q 4, Q–R 4, P–R 6, R–S 3, Q–S 8. (a) Find the minimum spanning tree and its total weight. (b) Find the shortest path from P to R. (c) Is this path contained in the minimum spanning tree?" Picture slot: the network drawn with weights. Countdown ring shown full from "Pause here to answer.", then 10 s.
+Visual: `QuestionCard`, 40 px: "A network has edges P-Q 4, Q-R 4, P-R 6, R-S 3, Q-S 8. (a) Find the minimum spanning tree and its total weight. (b) Find the shortest path from P to R. (c) Is this path contained in the minimum spanning tree?" Picture slot: the network drawn with weights. Countdown ring shown full from "Pause here to answer.", then 10 s.
 
 ### 11. feedback 2 (brief)
 > Cheapest first. R S three, keep. P Q four, keep. Q R four, keep. Three edges for four vertices, so the tree is P Q, Q R and R S, eleven in **total**. The shortest path from P to R is the direct edge, six, beating P, Q, R at eight. P R isn't in the tree, so **no**. Answering P, Q, R, eight, because it's the tree's route, is the **slip**.
 
-Visual: the card shrinks to the top. The builder (n05) runs: R–S, P–Q, Q–R teal; P–R and Q–S skipped with their loops flashing; on "total" row "(a) P–Q, Q–R, R–S: 4 + 4 + 3 = 11" (framed green). P–R glows "6" (green outline) against the lantern's "P → Q → R = 8"; on "no" row "(b) P → R = 6; (c) no: P–R is not in the tree" (framed green). On "slip" a red slip "(b) P → Q → R = 8" writes and is crossed (caption "the tree's route isn't the shortest"). Hold about 1 s.
+Visual: the card shrinks to the top. The builder (n05) runs: R-S, P-Q, Q-R teal; P-R and Q-S skipped with their loops flashing; on "total" row "(a) P-Q, Q-R, R-S: 4 + 4 + 3 = 11" (framed green). P-R glows "6" (green outline) against the lantern's "P → Q → R = 8"; on "no" row "(b) P → R = 6; (c) no: P-R is not in the tree" (framed green). On "slip" a red slip "(b) P → Q → R = 8" writes and is crossed (caption "the tree's route isn't the shortest"). Hold about 1 s.
 
 ### 12. handoff: Networks, paths and trees, done
 > That's Networks, paths and trees done, from dots and lines to cheapest connections and quickest routes, and knowing when to look past them. Next, a different kind of question. Not how places connect, but what people think and do. How many hours of sleep do Year 11 students get? You can't ask everyone, so you ask some of them, carefully. A good statistical investigation starts with a clear question and a fair survey. That's **next**.
@@ -154,17 +154,17 @@ Visual (end of the hold, silent): cross-fade (1 s) back to scene 12's frame exac
 ## Practice questions and model answers
 
 **Attempt 1 (scene 8; pack question 1, original HSC style, 2 marks suggested, not an official marking scheme).** As on the card.
-Model answer: remove Q–S; open routes P → R → S = 8 + 6 = 14 km and P → Q → R → S = 6 + 3 + 6 = 15 km; shortest open path P → R → S, 14 km. Classic mistake (crossed): "P → Q → S = 11 km" (uses the flooded road).
+Model answer: remove Q-S; open routes P → R → S = 8 + 6 = 14 km and P → Q → R → S = 6 + 3 + 6 = 15 km; shortest open path P → R → S, 14 km. Classic mistake (crossed): "P → Q → S = 11 km" (uses the flooded road).
 
 **Attempt 2 (scene 10; pack question 2, 3 marks suggested).** As on the card.
-Model answer: (a) R–S 3, P–Q 4, Q–R 4: 11. (b) P → R, 6. (c) No: the edge P–R is not in the tree. Classic mistake (crossed): "(b) P → Q → R = 8".
+Model answer: (a) R-S 3, P-Q 4, Q-R 4: 11. (b) P → R, 6. (c) No: the edge P-R is not in the tree. Classic mistake (crossed): "(b) P → Q → R = 8".
 
 ## Numbers used (author note: every value)
 
 | Item | Value or result | Where it appears |
 | --- | --- | --- |
 | Toll network | 18 km; 21 km; 23 km; +3 km | 1, 2 |
-| A1 flooded network | P–R–S 14 km; P–Q–R–S 15 km; slip P–Q–S 11 km | 8, 9 |
+| A1 flooded network | P-R-S 14 km; P-Q-R-S 15 km; slip P-Q-S 11 km | 8, 9 |
 | Routes X, Y | 0.24 h = 14.4 min; 0.15 h = 9 min; 5.4 min | 3 |
 | Triangle | MST 6; shortest 5 | 5 |
 | Camp | 150 m; 70 m in the tree; 60 m direct | 6 |
@@ -174,12 +174,12 @@ Model answer: (a) R–S 3, P–Q 4, Q–R 4: 11. (b) P → R, 6. (c) No: the edg
 
 Recalculated (24 Nov 2026, scratchpad `s11n/verify.py`, `python -I`; 0 failures); Codex to re-check.
 
-- 10 + 8 = 18 (shortest); without A–B, 12 + 9 = 21 (shortest); 12 + 3 + 8 = 23.
-- A1 (Revision 2): all simple P→S paths P–Q–S 11, P–R–S 14, P–Q–R–S 15, P–R–Q–S 16; with Q–S closed only P–R–S 14 and P–Q–R–S 15 remain, so 14 km is unique (listing).
+- 10 + 8 = 18 (shortest); without A-B, 12 + 9 = 21 (shortest); 12 + 3 + 8 = 23.
+- A1 (Revision 2): all simple P→S paths P-Q-S 11, P-R-S 14, P-Q-R-S 15, P-R-Q-S 16; with Q-S closed only P-R-S 14 and P-Q-R-S 15 remain, so 14 km is unique (listing).
 - 12 ÷ 50 = 0.24 h = 14.4 min; 15 ÷ 100 = 0.15 h = 9 min.
 - Triangle MST 6 (unique); shortest A → C 5.
-- Camp MST unique, 150; A → B → C = 70; A–C = 60.
-- A2 MST {R–S, P–Q, Q–R} = 11 (confirm unique by listing all spanning trees); shortest P → R = 6.
+- Camp MST unique, 150; A → B → C = 70; A-C = 60.
+- A2 MST {R-S, P-Q, Q-R} = 11 (confirm unique by listing all spanning trees); shortest P → R = 6.
 
 ## Memory aid check
 
@@ -278,3 +278,14 @@ Builds on: Shortest Paths: The Quickest Route Through a Network. Next: Statistic
 
 - Revision 2 (24 Nov 2026): learning review resolved (N07-A1 blocker). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from n06; check that "least of one weight" is said before any circumstance, that the toggle makes "the weights decide" visible, that the triangle shows "in no MST" with a unique MST before the camp, that each attempt needs a reason as well as a number, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-n07-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,489 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,477 (Codex's value). Narration is **5,477 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 412 s; total about 493 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 182 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

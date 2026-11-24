@@ -1,8 +1,8 @@
 # Maths S11 D08: How do we read dot plots, stem-and-leaf plots, line graphs, sector graphs and divided bar charts? The key first, then a value, a count, a comparison and a sentence in context, for six real-world displays (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d07.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b01.md`: "Year 11: dot plot, mean, median"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-d01.md` to `d07.md` (Revision 1, this batch), the Year 12 design that recalls this video (`math-s12-b01.md`: "Year 11: dot plot, mean, median"), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,587 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 503 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,575 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: ninth video of the Year 11 Data analysis strand, outline playlist order 68. One video for Standard 1 and Standard 2. Viewers arrive from d07's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-d08.md`. Route entry: `math-s11-d08` in `../../programme/maths-standard-route-inputs-14.json`. Site lesson: `year11/data-analysis/lesson12.sa.html` (card 07, WE 2, trap 03, MC 5); dot plots, line graphs, sector graphs and divided bars are taught from the syllabus (MSY-40). Visual system: maths studio kit; the cricket scoreboard, cricket ball, phone dock, coin jar, bus, concert ticket and coffee cart plates (all existing); every display coded.
 
@@ -56,7 +56,7 @@ Source review: `../checks/m-s11-d08-learning-review.md`; resolution record `../c
   (c) Battery drops: 12, 14, 14, 15, 5; +30 charging; 12, 17, 11. Steepest fall 7 to 9 pm (17).
   (d) Budget: 30, 15, 10, 25, 20 (100%) of $200: $60, $30, $20, $50, $40; × 3.6: 108°, 54°, 36°, 90°, 72° (360°).
   (e) Travel bar 20 cm: 6, 7, 5, 2 cm = 30%, 35%, 25%, 10% of 200: 60, 70, 50, 20 (bus 60 = d03).
-  (f) Apple masses (d09): 60 values in classes 140–<150 to 200–<210: 2, 6, 12, 20, 12, 6, 2 (example).
+  (f) Apple masses (d09): 60 values in classes 140-<150 to 200-<210: 2, 6, 12, 20, 12, 6, 2 (example).
 
 Main question: *A batter's season, a phone's day, a weekly budget: how do we read dot plots, stem-and-leaf plots, line graphs, sector graphs and divided bar charts?*
 Entry knowledge (math-s11-d07, d05, d03; Stage 4): each display's purpose; data types; the bus count; angles in a circle.
@@ -283,3 +283,15 @@ Builds on: Choosing a Graph: Column Graphs and Spreadsheet Charts. Next: Shape o
 
 - Revision 1. Next: student learning review (trace from d07; check that each display's key or scale is read before any value, that the back-to-back left side is shown unfolding outwards, that counts are of dots or leaves, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
 - Revision 2 (24 Nov 2026): learning review resolved (D08-2HRS; D08-BATTERB; D08-WORDING). Next: Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-d08-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,587 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,575 (Codex's value). Narration is **5,575 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief272/source-inventory.json`). At 13.3 characters per second the speech is about 419 s; total about 502 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Recurring data.** The recurring constructed data (the 20-student sleep sample, the 12/8 bedroom and elsewhere split, the screen-time values, the nearby and bus splits) are unchanged, so they stay consistent across the strand; brief 272's recurring-data check passed them. They are teaching data, not population estimates.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
+
+Revision 3 addendum (root, 25 November 2026): 2 en dashes in screen labels and author notes replaced (number ranges with "to", path and edge labels with hyphens, for example T-L-R-V). No narration change.

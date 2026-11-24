@@ -1,8 +1,8 @@
 # Maths S11 T05: How do Australian time zones and daylight saving work? Three standard zones, the half-hour centre, daylight saving in the south-east only, five times in summer, converting event times, and a flight across zones (design)
 
-Status: Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
+Status: Revision 3 (25 Nov 2026): preflight and fact repairs (see the final section, "Revision 3 (root, 25 November 2026)"). Revision 2 (24 Nov 2026): learning review resolved (see "Revision 2" below); not voiced. Revision 1 (24 Nov 2026): first design, written to the maths visual standard (`../maths-visual-standard.md`), `math-s11-t01.md` to `t04.md` (Revision 1, this batch), the coherence audit and root's Standard rulings 1 to 99. Not voiced. Next: student learning review and Codex maths check, then voicing on the Google voice and a build on the studio kit to grade A.
 
-Narration 5,598 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 502 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
+Narration 5,586 characters by script (see "Narration length estimate"; Revision 2), 13 scene headings, about 501 s with holds (key notes fixed at 45 s). Nothing recorded; human listening pending.
 
 Scope: fifth video of the Year 11 Time and location strand, outline playlist order 52. One video for Standard 1 and Standard 2. Viewers arrive from t04's final frame. Pre-design pack: `../pre-design/maths-standard/math-s11-t05.md`. Route entry: `math-s11-t05` in `../../programme/maths-standard-route-inputs-12.json`. Site lesson: `year11/time-and-location/lesson02.sa.html` (key facts on Australian zones, WE3, traps 01 and 03, drill 7). Visual system: maths studio kit; the phone and travel suitcase plates (existing); the zone map, month slider, difference ladder and odometer coded.
 
@@ -282,3 +282,12 @@ Builds on: Longitude and Time: 15 Degrees Is One Hour. Next: UTC: Solving Intern
 
 - Revision 2 (24 Nov 2026): learning review resolved (T05-MOST; T05-LOAD and T05-RETURN kept as reserve trims). Next: Codex maths check and error check, then voicing and a build to grade A.
 - Revision 1. Next: student learning review (trace from t04; check that the zones are tied to t04's rounding, that "west is behind" is applied before any summer case, that the slider makes the five times and the Adelaide-Brisbane swap visible, that the flight is done on one clock before converting, and that the cards give nothing away), then the Codex maths check and error check, then voicing and a build to grade A.
+
+## Revision 3 (root, 25 November 2026): preflight and fact repairs
+
+This section overrides earlier text. Sources: `../checks/m-s11-t05-maths-check.md`, `../checks/maths-standard-y11-official-facts.md` and `../checks/brief264-fact-checks-2026-11-24.md`. Repair log: `../checks/m-s11-preflight-repair-2026-11-25.md`.
+
+- **Count (count-mismatch): fixed.** The declared 5,598 included the spaces between scenes; the sum of the 13 scene strings at Revision 2 was 5,586 (Codex's value). Narration is **5,586 characters**. Counted in Python the same way as Codex (`> ` lines inside each `### N.` scene joined with a space, `**` removed, scenes summed with no separator; Revision 2 sum matches `work/brief271/source-inventory.json`). At 13.3 characters per second the speech is about 420 s; total about 501 s with holds, under the 570 s cap. The header line is updated; earlier totals under "Narration length estimate" and in Revision 2 are superseded.
+- **Official facts:** none in the fact sheets apply to this design.
+- **Narration changed: no.**
+- No em or en dashes added. Ready for the Codex re-check; human listening still pending.
