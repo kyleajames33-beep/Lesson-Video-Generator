@@ -1,6 +1,6 @@
 # HMS Year 12 V02 (Training for improved performance): fitness testing and exercise assessment. What makes a fitness test worth running, and how does its result actually shape a training program? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the Wingate example and the netball and halfback profiles use illustrative or site numbers.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v02-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the Wingate example and the netball and halfback profiles use illustrative or site numbers.
 
 Narration 6,156 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
 

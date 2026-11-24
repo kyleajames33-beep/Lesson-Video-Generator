@@ -1,6 +1,6 @@
 # HMS Year 12 V13 (Training for improved performance): factors influencing strategies and tactics. What decides which strategies and tactics an athlete or team uses on the day? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; scores and times are illustrative.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v13-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; scores and times are illustrative.
 
 Narration 5,966 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 553 s including holds, two countdowns and the 45 s notes hold.
 

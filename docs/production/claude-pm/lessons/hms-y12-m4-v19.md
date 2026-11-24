@@ -1,6 +1,6 @@
 # HMS Year 12 V19 (Training for improved performance): technology and performance. How does technology improve training and performance, and how can we tell whether it really did? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the 2 per cent improvement is the site's illustrative case and the load chart is illustrative. No products, brands or governing-body rulings named.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v19-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the 2 per cent improvement is the site's illustrative case and the load chart is illustrative. No products, brands or governing-body rulings named.
 
 Narration 6,214 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
 

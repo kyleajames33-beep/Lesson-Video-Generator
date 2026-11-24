@@ -1,6 +1,6 @@
 # HMS Year 12 V08 (Training for improved performance): physiological adaptations. What does training change inside the body? (design; Revision 2 heading, was "Why does a trained athlete have a lower resting heart rate, and what else does training change inside the body?")
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, nine reused (see Assets). No official figures; the worked heart and blood values are illustrative, and the monitoring record in 8c is the site's.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v08-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, nine reused (see Assets). No official figures; the worked heart and blood values are illustrative, and the monitoring record in 8c is the site's.
 
 Narration 5,959 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 551 s including holds, two countdowns and the 45 s notes hold.
 

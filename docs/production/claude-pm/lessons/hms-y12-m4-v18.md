@@ -1,6 +1,6 @@
 # HMS Year 12 V18 (Training for improved performance): recovery strategies. Which recovery strategies are worth including, and how do you justify one rather than just describe it? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; no water temperatures or immersion times on screen.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v18-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, six reused (see Assets). No official figures; no water temperatures or immersion times on screen.
 
 Narration 6,216 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 569 s including holds, two countdowns and the 45 s notes hold.
 

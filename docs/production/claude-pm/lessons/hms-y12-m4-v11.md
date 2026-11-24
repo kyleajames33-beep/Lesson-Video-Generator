@@ -1,6 +1,6 @@
 # HMS Year 12 V11 (Training for improved performance): the yearly training program: phases, sub-phases, peaking and tapering. How do you plan a whole training year so an athlete peaks at the right time, and why does a team's year look so different? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, six reused (see Assets). No official figures; the fitness and fatigue curves and the taper numbers are illustrative.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v11-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: none new, six reused (see Assets). No official figures; the fitness and fatigue curves and the taper numbers are illustrative.
 
 Narration 6,201 characters (13 scene files, counted by script from lines starting "> " with bold markers removed), about 568 s including holds, two countdowns and the 45 s notes hold.
 

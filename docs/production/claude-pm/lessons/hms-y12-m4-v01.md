@@ -1,6 +1,6 @@
 # HMS Year 12 V01 (Training for improved performance): pre-exercise screening. If exercise is good for almost everyone, why screen people before they start? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, eight reused (see Assets). No official figures; the weighted-minutes example uses illustrative numbers.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v01-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, eight reused (see Assets). No official figures; the weighted-minutes example uses illustrative numbers.
 
 Narration 6,151 characters (14 scene files, counted by script from lines starting "> " with bold markers removed), about 567 s including holds, two countdowns and the 45 s notes hold.
 

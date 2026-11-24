@@ -1,6 +1,6 @@
 # HMS Year 12 V12 (Training for improved performance): psychological strategies, arousal, stress and anxiety. Why does more arousal help one athlete and wreck another, and what strategies bring it back to the right level? (design)
 
-Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Needs science check before voicing. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the inverted-U curves are illustrative shapes. Sensitive-topic rule applied: anxiety is treated as normal and manageable, help-seeking framed positively, no clinical claims.
+Status: Revision 2 (24 Nov 2026): independent learning review resolved (see "Revision 2: learning review resolved" at the end). Science check passed with notes only (24 Nov 2026, `../checks/hms-y12-m4-v12-science-check.md`); no design change; error check next. Revision 1 (24 Nov 2026) was the first design. Nothing recorded. Voice: the Google voice. Plates: one new, seven reused (see Assets). No official figures; the inverted-U curves are illustrative shapes. Sensitive-topic rule applied: anxiety is treated as normal and manageable, help-seeking framed positively, no clinical claims.
 
 Narration 6,111 characters (15 scene files, counted by script from lines starting "> " with bold markers removed), about 566 s including holds, two countdowns and the 45 s notes hold.
 
