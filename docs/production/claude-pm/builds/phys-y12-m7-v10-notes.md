@@ -1,0 +1,51 @@
+# phys-y12-m7-v10 build notes (pre-build on provisional timing)
+
+Build agent (Claude), 25 November 2026. Design: `docs/production/claude-pm/lessons/phys-y12-m7-v10.md` (Revision 3 visuals win). No MP4 rendered. Narration untouched.
+
+## Status
+
+- **Timing is provisional.** `src/explainer/lessons/phys-y12-m7-v10/common.ts` imports `work/physics-prebuild/p-y12-m7-v10/lesson.json` on one marked line and exports `PROVISIONAL = true`. Every cue resolves (`work/tsc-scope/cuecheck-m7c.py v10`: 0 problems); late cues capped (no change in a scene's last 2 s). Switch the import to `docs/production/claude-pm/lessons/p-y12-m7-v10/measured/lesson.json` when voiced, set `PROVISIONAL = false`, re-run the cue check, grade and still sweep.
+- **Prepared input matches the design.** The prepared `lesson.json` and the brief 259 source audit carry the current design narration (6,277 characters, 18 scenes; checked scene by scene by script). The provisional file was made with the unchanged `make-provisional.py` from the audit. No narration mismatch.
+- **Prediction hold (open).** The design's 3 s prediction sits after "Make your prediction.", but the prepared hold (countdown, 3 s) is at the end of the hook, after the learner question. The build runs the 3 s ring from "prediction" over "Waves say brightness should win" and lands the slate cross after the ring ends; the end hold stays as a quiet hold on the question. Root to move the 3 s pause to just after "Make your prediction." in the voicing input. The scene 9 slider sweep runs under its narration, as the design says. All other holds are present (memory aid 2 s, attempts 10 s, feedback 1 s, handoff 2 s, notes 45 s).
+- **Opening frame:** v09's exported `M7V09FinalFrame` at frame 0. From frame 1 the plate, both lamps, both beams and the three tags are redrawn in the same places while v09's board (ladder, packet train, old tags) fades; the violet electrons carry on from the same phase.
+- **Plates:** photocell, digital multimeter, bench lamp (one or two copies, one mirrored), zinc (metal) plate, digital timer (display coded: a running seconds count in scene 4, blank on the attempt 2 card, counting in feedback 2). Uniform scale only. **Plate requests: none.**
+
+## Files
+
+- Lesson: `src/explainer/lessons/phys-y12-m7-v10/` (`common.ts`, `parts.tsx`, `s1.tsx` 1 to 6, `s2.tsx` 7 to 12, `s3.tsx` 13 to 18, `scenes.tsx`, `assets.ts`, `config.ts`). Config `Explainer-phys-y12-m7-v10`, topic "THE PHOTOELECTRIC EFFECT", accent `#8e3b78`. Registry: after m7-v09.
+- Shared (new file): `physics/light/photo.tsx` (`PHOTOCELL`, `TIMER` specs measured from the alpha channel; `METER` and `SUPPLY` from the bench kit; `PHOTO_ANCHOR`, `cellGeom`; `Meter` with a coded display; `Beam` with width for intensity; `Electron`; `Packet` (amber photon packet); `EnergyBar` (photon energy against ϕ, the part above ϕ turning orange); `Well` (the surface energy step); `Axes2` and `ax2`). Engine used: `sims/photoelectric.ts` (`photoelectric`) gates emission and sets the top speed on the live bench, so the kit gap the design lists is closed.
+- Lesson parts: colour roles, the live `Bench` (meter, photocell, mirrored lamp, wiring, beam), `Stream` (electrons from the engine), `PredStrip` (the three wave-model chips), `Sliders`, `SpeedGauge`.
+
+## Stages built
+
+1 v09's frame; both lamps ringed; violet electrons leave ("dim UV: electrons out", navy ring); red beam ringed ("bright red: none"); the red beam widens twice ("brighter"); 3 s ring with "bright lamp" and "high-frequency lamp" chips; "wave model" box; slate cross; heading underline. 2 the painted bench: meter, photocell, mirrored lamp; the definition chip; cathode and anode arrows; the UV beam and electrons crossing (navy arrow); the meter reads; the surface inset (ions, electrons, the slate step; an electron that climbs and slides back); the site's work-function definition; "zinc: ϕ ≈ 4.3 eV"; the eV chip. 3 the painted plate under a smooth grey wavefront that grows; one electron's orange bar filling slowly to the slate "enough to escape" line; the "Wave model predicts" panel with three rows on cue and a grey brace. 4 the live bench with frequency and brightness sliders and readouts; the f₀ marker; at 700 nm brightness doubles and the painted timer counts while the meter stays 0.0; chip 1 crossed; the slider passes f₀ to 250 nm and electrons leave; slate ring on f₀; red and zinc f₀ values; "zinc: UV only". 5 250 nm to 200 nm with the orange speed gauge lengthening ("K_max up"); chip 2 underlined; brightness doubles (meter 1.0 to 2.0, more electrons, same gauge; navy ring); chip 2 crossed. 6 the dim UV lamp on the plate; the log timeline (10⁻¹⁰ s to 10³ s); observed < 10⁻⁹ s marker; I = 1 W m⁻²; the atom square ("not to scale"); P = IA; the framed 69 s and its grey marker; the slate "≈ 7 × 10¹⁰ times" arrow; chip 3 crossed. 7 a model zinc surface (ions and electrons, tagged "model"); the grey wavefront dissolves; amber packets arrive one at a time, then denser; E = hf strip; one packet strikes one electron, which leaves with an amber bar. 8 the energy well (inside and outside the metal, ϕ zinc 4.3 eV); a red photon bar falls short and the electron slides back; two bars one after another, slate-crossed "2 red photons → 1 electron"; a stream of short bars; the bar level with the step, "hf₀ = ϕ" framed; "explained" note. 9 the live bench with hf, ϕ and K_max readouts and a live energy bar; stops 700, 400, 289 (λ₀), 250 nm; the orange part; 200 nm and the gauge; brightness doubles with K_max steady (navy ring); "< 10⁻⁹ s" packet inset; strip notes. 10 task, equation and grouped givens; the well inset; the painted red lamp on the zinc plate; E = hc/λ; E_red in J; framed 1.77 eV; slate-crossed "hc / 700 = 2.84 × 10⁻²⁸ J" ("nm → m first"). 11 framed E_red at the top; the well inset grows with both bars; slate-crossed "brighter red → electrons"; E_UV framed (4.96 eV) and the orange top ("≈ 0.7 eV left over"); both painted lamps on the plate. 12 the memory card over the two lamps and the plate; one packet, electrons leaving, the violet beam widening. 13 to 16 question cards (two painted lamps on the plate; the plate under a dim red beam with the painted timer, display blank) and brief feedback (energy-well bars; red bars sliding back while the timer counts). 17 one photon on one electron; the split bar; K_max = hf − ϕ; empty axes with "?" (final frame). 18 key notes.
+
+## Deviations
+
+- **Handoff heading carries the next learner question** (root rule): on "So how do photoelectric graphs" (capped) the heading changes to v11's question, so the final frame's heading is v11's question.
+- **Site definition quoted exactly** (lesson 16 vocabulary): "Work function (ϕ): The minimum energy needed to eject an electron from a metal surface; different for each metal." (design label "work function ϕ = minimum energy to free a surface electron").
+- **Bench layout:** the lamp sits to the right of the photocell, mirrored, so its beam reaches the cathode's concave inner face (the painted cathode faces right); the meter is at the left. The top speed is shown by a "fastest electron" gauge at the right (the 50 px electrode gap is too small for a readable arrow on one dot). The meter shows a relative photocurrent (0.0, 1.0, 2.0), labelled "photocurrent (relative)".
+- The bench stop at the threshold is λ₀ = 288.6 nm (shown "289 nm"), so the readout reads 4.30 eV as designed (exactly 289 nm would read 4.29 eV).
+- Scene 4's "clock icon" is the painted timer with a running coded display (root rule: no coded real objects). Scenes 7 and 17 use a coded model cross-section of the surface (ions and electrons), tagged "model".
+- The prediction strip's "wave model predicted" label was dropped (it collided with the heading); the chips stay grey. The scene 3 panel heading shows from the start of the scene (sparse-frame fix); its rows still arrive on cue.
+- The eV chip reads "(from W = qV)" (no module number on screen). Mistakes and crosses are slate (R1).
+- Historical claims as designed: Einstein 1905, named in text only.
+
+## Final frame (exported as `M7V10FinalFrame` in `s3.tsx`)
+
+`<HandoffBoard10 f={end} final />`: heading "How do photoelectric graphs reveal Planck's constant and work function?"; a coded model zinc surface at (96, 560, 500 × 180) with ions, navy electrons and one amber "hf" packet touching the electron at (396, 548); an energy bar at x 760 (base 760, 90 px per eV): amber "hf (4.96 eV)", slate "ϕ (4.3 eV)", orange "left over: kinetic energy"; "K_max = hf − ϕ" (48 px) under it; empty axes at (1320, 330, 440 × 420) with "K_max", "f" and "?"; chip "Next: how do photoelectric graphs reveal Planck's constant and work function?" at (96, 890).
+
+## Numbers (all from `common.ts`, checked against "Numbers used")
+
+h = 6.626 × 10⁻³⁴ J s, c = 3.00 × 10⁸ m s⁻¹, 1 eV = 1.602 × 10⁻¹⁹ J. Zinc ϕ = 4.3 eV = 6.89 × 10⁻¹⁹ J, f₀ = 1.04 × 10¹⁵ Hz, λ₀ = 288.6 nm. 700 nm: 4.29 × 10¹⁴ Hz, 2.84 × 10⁻¹⁹ J = 1.77 eV. 250 nm: 1.20 × 10¹⁵ Hz, 7.95 × 10⁻¹⁹ J = 4.96 eV, spare 0.66 eV. Bench: 400 nm 3.10 eV; 200 nm 1.50 × 10¹⁵ Hz, 6.20 eV, K_max 1.90 eV. Delay: P = 1 × 10⁻²⁰ W, t = 69 s, ratio 7 × 10¹⁰. Slip 2.84 × 10⁻²⁸ J. A1: 600 nm 3.31 × 10⁻¹⁹ J = 2.07 eV; 400 nm 4.97 × 10⁻¹⁹ J = 3.10 eV.
+
+## Grade
+
+`npm run -s grade:explainer -- Explainer-phys-y12-m7-v10` (25 November 2026, provisional timing, regraded after the last change): **PASS WITH WARNINGS: 0 failures, 3 warnings** (sparse frames in both worked checks; a mostly empty attempt 2 card, a question-scene warning). Earlier runs failed on mostly empty frames (wave predictions, both worked checks), fixed by the panel heading, the painted lamps on the plate and a reflowed scene 11. Report: `out/explainer/Explainer-phys-y12-m7-v10/grade/Explainer-phys-y12-m7-v10-grade.md`.
+
+**Honest grade: B on provisional timing.** The brighter red beam that frees nothing, the timer counting with the meter at 0.0, the live sliders, the electron sliding back down the step and the two timeline markers carry the explanation. Soft spots: the hook countdown runs over narration; the electrode gap is small, so the gauge carries top speed.
+
+## For root
+
+- v11 opens on `M7V10FinalFrame`.
+- Move the hook's 3 s pause to just after "Make your prediction." before voicing (see Status); then re-time from the measured take.

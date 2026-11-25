@@ -377,3 +377,7 @@ Counts: 6,351 characters, unchanged; about 549 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+## Revision note (root, 25 November 2026): hand tag wording
+
+The interferometer hand tag "40 times too small to miss" read backwards: the expected fringe shift was about 40 times larger than the detection limit. It now reads "40 times too big to miss". This is a screen-only change; the narration is unchanged. This section overrides earlier text.
