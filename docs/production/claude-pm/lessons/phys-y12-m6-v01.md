@@ -354,3 +354,7 @@ Root label edit (21 Nov 2026): narration "Here are the two plates we ended Modul
 ## Coherence audit fix (24 Nov 2026)
 
 From `../checks/phys-y12-coherence-audit-2026-11-23.md` U-S6: the "Opening frame" quote of m5-v23's chip now matches the corrected chip, which is this design's question verbatim.
+
+## Revision note (root, 25 November 2026): opening frame heading
+
+The built m5-v23 handoff (its final frame, which this video opens on) carries this lesson's learner question as its heading: "How does the voltage between parallel plates set a charged particle's acceleration?". The opening frame therefore starts on that heading, not the older heading named above. No narration change. This section overrides earlier text.
