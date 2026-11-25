@@ -7,7 +7,7 @@ import {FrameSvg, HandTag, MarkSpan, SceneHeading} from '../../math/studio';
 import {Accent, KeyNotesScene, MemoryCard, QuestionScene} from '../../shared/scenes';
 import {CARD, CARD_SHADOW, INK, TYPE} from '../../shared/tokens';
 import {AnswerBox, Chip, CrossedChip, DISPLAY, Row, VecArrow} from '../../physics/projectile/board';
-import {A1, A2, ACCENT, ALT, HEAD, HEAD_SIZE, RE, SURF, altPx, cue, hold} from './common';
+import {A1, A2, ACCENT, ALT, HEAD_SIZE, RE, SURF, altPx, cue, hold} from './common';
 import {AMBER, AUS, DashCircle, Earth, GREY, Lbl, Mars, NAVY, Satellite, T, TEAL, VIOLET, fx, polar, sci} from './parts';
 
 const M: React.FC<{at?: number; children: React.ReactNode}> = ({at, children}) => (at === undefined ? <>{children}</> : <MarkSpan kind="underline" at={at} color={INK}>{children}</MarkSpan>);
@@ -113,7 +113,7 @@ export const HandoffBoard: React.FC<{showAt?: number; gAt?: number; cardAt?: num
 	const ix = (FF.cx - sx) / FRS, iy = (FF.cy - sy) / FRS;
 	return (
 		<>
-			<SceneHeading text={HEAD} at={-200} size={HEAD_SIZE} />
+			<SceneHeading text="How does gravity maintain a circular orbit?" at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
 				<g opacity={prog(f, showAt, 20)}>
 					<Earth cx={FF.cx} cy={FF.cy} d={FF.d} />

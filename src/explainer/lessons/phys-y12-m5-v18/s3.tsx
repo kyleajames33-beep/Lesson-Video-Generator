@@ -153,7 +153,7 @@ export const HandoffBoard: React.FC<{phase?: number; fixAt?: number; chooseAt?: 
 	const tan = [-Math.sin((a1 * Math.PI) / 180), Math.cos((a1 * Math.PI) / 180)];
 	return (
 		<>
-			<SceneHeading text={HEAD} at={-200} size={HEAD_SIZE} />
+			<SceneHeading text="What makes an orbit geostationary rather than merely near Earth?" at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
 				<DashCircle cx={HS.cx} cy={HS.cy} r={rGeo} at={geoAt} color={INK} width={3} />
 				<Earth cx={HS.cx} cy={HS.cy} d={2 * HS.R} />
