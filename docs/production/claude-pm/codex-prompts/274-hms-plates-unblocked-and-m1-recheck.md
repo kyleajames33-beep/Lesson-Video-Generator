@@ -32,6 +32,14 @@ Paint `public/assets/physics/phys-y12-earth-north-pole-v1.png` for Physics m5-v1
 - **Check:** rotate it 90° in a preview, confirm it still looks right, and save the check sheet to `work/brief274/`.
 - **Report:** list it in the same manifest. Root swaps it in for the coded polar disc.
 
+Then paint `public/assets/physics/y12p-crt-tube-v1.png` for Physics m6-v02 and v03:
+- **Subject and view:** a cathode-ray tube seen side on, in the house watercolour style.
+- **Parts to show:** the glass envelope, the electron gun at the left, one horizontal pair of deflection plates inside the neck, and the flared screen at the right.
+- **Rules:** no text, no beam and no people.
+- **Size:** at least 2400 px wide, transparent PNG with a true alpha channel.
+- **Anchor sidecar:** add a JSON sidecar with these anchor points in native pixels: `gunExit`, `platesLeft`, `platesRight`, `plateGapTop`, `plateGapBottom`, `screenCentre`. The lesson draws the beam between them.
+- **Inspect** it on paper before you accept it.
+
 ## Hand-in to `status.md`
 
 Plates delivered and rejected, with reasons; the arm result; then the v05 and v09 check results, SHA-256 values and planned nights. Human listening stays pending.
