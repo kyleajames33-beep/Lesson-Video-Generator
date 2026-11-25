@@ -344,3 +344,11 @@ Calls for root: (1) The aurora in scene 9 stays a schematic with a "not to scale
 ## Coherence audit fix (24 Nov 2026)
 
 From `../checks/phys-y12-coherence-audit-2026-11-23.md` U-S2. Scene 4 gains one clause at the angle step: "Cos is close, so the part across the field, opposite theta, takes sine." with a small recall chip on screen. Total 5,709 characters (was 5,641). The prepared inputs in `p-y12-m6-v04/` predate this edit and must be regenerated before voicing.
+
+## Revision 3a (root, 26 November 2026): scene 4 visual order (brief 276 should fix)
+
+Scene 4 (`size`) visual cues now follow the spoken order. Narration unchanged.
+
+Visual: camera change back to the 3D field box with one proton. Equation strip: "F = qvB sin θ". On "field" a θ arc draws between the proton's teal v arrow and a field arrow. On "Cos is close" v resolves into dashed teal "v∥ = v cos θ" along the field and "v⊥ = v sin θ" across it, and a small recall chip (the m5-v02 card style) writes "Cos is close: v cos θ is next to θ; v⊥ is opposite, so v sin θ". On "theta" v∥ greys out, tag "only v⊥ counts: F = qv⊥B", teal hand tag "only the across part" with a pen ring round v⊥. On "B" θ sweeps to 90°: the amber arrow grows to its maximum, "F = qvB", amber hand tag "max at 90°". On "all" θ sweeps to 0°: the arrow shrinks to nothing, "F = 0". A screen tag "1 T = 1 N A⁻¹ m⁻¹" (30 px). "F = qvB sin θ" framed (60 px).
+
+This section overrides earlier text.
