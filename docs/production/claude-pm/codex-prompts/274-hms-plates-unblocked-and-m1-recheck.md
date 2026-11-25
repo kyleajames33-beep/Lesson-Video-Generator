@@ -40,6 +40,13 @@ Then paint `public/assets/physics/y12p-crt-tube-v1.png` for Physics m6-v02 and v
 - **Anchor sidecar:** add a JSON sidecar with these anchor points in native pixels: `gunExit`, `platesLeft`, `platesRight`, `plateGapTop`, `plateGapBottom`, `screenCentre`. The lesson draws the beam between them.
 - **Inspect** it on paper before you accept it.
 
+Then paint `public/assets/physics/y12p-neutron-star-merger-v1.png` for Physics m8-v06 scene 9:
+- **Subject:** two neutron stars spiralling together just before they merge, seen from slightly above, in the house watercolour style.
+- **Show:** the two small, dense, glowing stars; a faint swirl of ejected material; dark space with a few stars.
+- **Rules:** no text and no labels.
+- **Size:** about 1400 by 900 px, transparent PNG with a true alpha channel outside the scene's soft edge.
+- **Inspect** it on paper before you accept it.
+
 ## Hand-in to `status.md`
 
 Plates delivered and rejected, with reasons; the arm result; then the v05 and v09 check results, SHA-256 values and planned nights. Human listening stays pending.
