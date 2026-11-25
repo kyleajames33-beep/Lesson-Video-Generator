@@ -21,6 +21,17 @@ Root repaired both designs (Revision 3a in each):
 
 Re-run the brief 267 error check on both. If each has 0 blockers and 0 should-fix items, record its SHA-256, prepare it exactly as brief 267 did, and put it back in Module 1 route order in the nightly plan. Give the amended dry run.
 
+## Part C: one Physics plate (root, 25 November 2026)
+
+Paint `public/assets/physics/phys-y12-earth-north-pole-v1.png` for Physics m5-v19 (geostationary orbits), which rotates it to show Earth turning beneath a satellite. Do this before Part A's HMS plates.
+
+- **View and size:** Earth seen from directly above the North Pole, as a perfect disc centred on the pole. Use a 1600 by 1600 canvas with a true alpha channel outside the disc.
+- **Style:** the same house watercolour as `public/assets/physics/phys-y11-earth-v1.png` (inspect it first).
+  - Land shapes must be geographically correct: the Arctic Ocean in the middle, and the northern continents (North America, Greenland, Europe, Asia) round it. Show light cloud.
+  - Add no text, grid or meridians; the lesson draws those.
+- **Check:** rotate it 90° in a preview, confirm it still looks right, and save the check sheet to `work/brief274/`.
+- **Report:** list it in the same manifest. Root swaps it in for the coded polar disc.
+
 ## Hand-in to `status.md`
 
 Plates delivered and rejected, with reasons; the arm result; then the v05 and v09 check results, SHA-256 values and planned nights. Human listening stays pending.
