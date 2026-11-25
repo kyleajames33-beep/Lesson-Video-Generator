@@ -376,3 +376,7 @@ Counts: 6,395 characters, unchanged; about 552 s, unchanged (the notes hold was 
 Speech changes needed: none.
 
 Calls for root: none.
+
+## Revision note (root, 25 November 2026): which clock runs slow
+
+Scene 8 had Earth's clock lagging. Timed from Earth, the moving ship's clock runs slow, so the build shows the ship's clock as the slow one. This is a screen change only. It agrees with the narration ("as measured from Earth") and the readout "1 ship tick = γ ticks". This section overrides earlier text.

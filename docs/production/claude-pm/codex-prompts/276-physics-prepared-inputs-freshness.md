@@ -16,6 +16,7 @@ Each switches to its measured timing once voiced. A stale take would put the wro
 The m6-v07 to v09 build found two more stale scenes, both missing the 24 November "Cos is close" wording:
 - m6-v07 scene 5 (`angle`)
 - m6-v09 scene 4 (`normal`)
+- m7-v16 scene 5: the prepared input is missing the nuclear-notation sentence.
 - m6-v16 scene 4: its prepared input is 6,450 characters against the design's 6,527.
 
 Root has since built m6-v07 to v09 on provisional timing.
@@ -30,7 +31,7 @@ Root has since built m6-v07 to v09 on provisional timing.
 3. **Keep the voicing order.** Leave the existing nightly order unchanged: earlier P5 lessons first, then v14, then Module 6 in route order. Do not voice any lesson whose comparison or check has not passed.
 4. **Recent design notes.** Root added notes today (25 November) to m6-v01, m6-v05 and m6-v07. They change the on-screen heading or launch direction only, not the narration. Confirm that none of them changes a narration string.
 
-5. **Designed holds.** The m6-v13 to v15 build found that the prepared timing gives no hold time to some holds the designs ask for: screen-check holds and slider holds (three in v14, two each in v13 and v15). The m7 builds found more: m7-v09 scene 4 needs a 3 s prediction-countdown hold, and scene 5 a 2 s slider hold. The m7-v10 and v12 hooks need their 3 s prediction holds placed straight after "Make your prediction." (not at the end of the hook), and m7-v12 scene 10 needs a 2 s slider hold. Speech currently covers them. For every unvoiced Physics lesson:
+5. **Designed holds.** The m6-v13 to v15 build found that the prepared timing gives no hold time to some holds the designs ask for: screen-check holds and slider holds (three in v14, two each in v13 and v15). The m7 builds found more: m7-v09 scene 4 needs a 3 s prediction-countdown hold, and scene 5 a 2 s slider hold. The m7-v10 and v12 hooks need their 3 s prediction holds placed straight after "Make your prediction." (not at the end of the hook), and m7-v12 scene 10 needs a 2 s slider hold. The m7-v13 to v16 hooks need the same placement. Also add: m7-v13 scene 8 (2 s slider), m7-v14 scene 7 (2 s slider) and scene 8 (3 s screen check), m7-v15 scenes 5 and 6 (2 s each, thrust clock), m7-v16 scene 3 (2 s slider). Speech currently covers them. For every unvoiced Physics lesson:
    - add each hold the current design names (scene and seconds) to the prepared lesson's `holdSeconds`;
    - list what you added.
    This changes timing only, not the narration.

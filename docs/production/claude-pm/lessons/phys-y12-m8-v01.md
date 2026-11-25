@@ -390,3 +390,7 @@ Root fix (21 Nov 2026, from the Claude recording-readiness check): the carried R
 ## Coherence audit fix (24 Nov 2026)
 
 From `../checks/phys-y12-coherence-audit-2026-11-23.md` U-S3: the entry line no longer claims "atoms and nuclei (Year 11)"; the 2017 Year 11 Physics course does not teach them. They are Stage 5 Science, with nuclear symbols glossed in m7-v16 scene 5. Narration unchanged.
+
+## Revision note (root, 25 November 2026): opening frame
+
+The built m7-v16 final frame (this video opens on it) carries a "head-on, equal energies" tag and this lesson's learner question as its heading. The opening frame description includes both. No narration change. This section overrides earlier text.
