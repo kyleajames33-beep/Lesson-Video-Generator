@@ -13,6 +13,12 @@ Root has already built these lessons on provisional timing:
 
 Each switches to its measured timing once voiced. A stale take would put the wrong narration under the built scenes.
 
+The m6-v07 to v09 build found two more stale scenes, both missing the 24 November "Cos is close" wording:
+- m6-v07 scene 5 (`angle`)
+- m6-v09 scene 4 (`normal`)
+
+Root has since built m6-v07 to v09 on provisional timing.
+
 ## Task
 
 1. **Compare.** For every Physics lesson not yet voiced (Module 5 and Module 6), compare the current design (its last revision section overrides) with the prepared `lessons/p-y12-m*-vNN/lesson.json`. Compare the scene IDs, every scene narration string, the cue phrases and the hold settings.
