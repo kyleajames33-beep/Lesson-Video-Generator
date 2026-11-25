@@ -483,3 +483,7 @@ Root 3 s playback pass, 25 Nov 2026 (498.3 s, 11 sheets). v1 was fully reviewed 
 ## phys-y12-m5-v12 v2
 
 Root 3 s playback pass, 25 Nov 2026 (10 sheets). v1 was fully reviewed at 3 s (flat roundabout, rear view N = mg, friction as the only sideways force, f = mv^2/r = 1200 x 15^2 / 40 = 6.75 x 10^3 N, f <= mu_s N slider, v_max = sqrt(mu_s g r) = 13.3 m s^-1 (47.8 km h^-1), car versus truck same v_max, wet road 9.4 m s^-1, past the limit with no outward force, memory aid "Centripetal is a job, not a force.", attempts 16.9 m s^-1 and 9.45 x 10^3 N needed > 5.88 x 10^3 N available, notes hold). v2 changes the handoff heading only: the conical-pendulum teaser (6:33 to 7:05) now carries v13's question "How does string tension sustain a conical pendulum?", matching v13's first frame. Human listening pending.
+
+## phys-y12-m5-v13 v3
+
+Root 3 s playback pass, 25 Nov 2026 (452.1 s, 10 sheets). v1 was fully reviewed at 3 s (conical pendulum, two forces, centre level with the ball, r = L sin θ and h = L cos θ, split tension with the cone inset, F_T cos θ = mg and F_T sin θ = mv^2/r, never horizontal, tan θ = v^2/(rg), worked 0.25 m, 2.26 N, 1.19 m s^-1, 1.32 s, T = 2π sqrt(h/g), memory aid "One string, two jobs", attempts 0.459 m, 5.98 N, 1.77 m s^-1 and 1.21 s, banked-road handoff, notes hold). v2 and v3 change headings only: v13 opens on v12's new final heading with no rewrite (confirmed 0:00 to 0:45), and the banked-road handoff carries v14's question (confirmed 6:27 to 6:45 on v2). Human listening pending.
