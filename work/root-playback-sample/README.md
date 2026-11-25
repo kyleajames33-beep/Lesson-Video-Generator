@@ -487,3 +487,11 @@ Root 3 s playback pass, 25 Nov 2026 (10 sheets). v1 was fully reviewed at 3 s (f
 ## phys-y12-m5-v13 v3
 
 Root 3 s playback pass, 25 Nov 2026 (452.1 s, 10 sheets). v1 was fully reviewed at 3 s (conical pendulum, two forces, centre level with the ball, r = L sin θ and h = L cos θ, split tension with the cone inset, F_T cos θ = mg and F_T sin θ = mv^2/r, never horizontal, tan θ = v^2/(rg), worked 0.25 m, 2.26 N, 1.19 m s^-1, 1.32 s, T = 2π sqrt(h/g), memory aid "One string, two jobs", attempts 0.459 m, 5.98 N, 1.77 m s^-1 and 1.21 s, banked-road handoff, notes hold). v2 and v3 change headings only: v13 opens on v12's new final heading with no rewrite (confirmed 0:00 to 0:45), and the banked-road handoff carries v14's question (confirmed 6:27 to 6:45 on v2). Human listening pending.
+
+## phys-y12-m5-v17 v2
+
+Root 3 s playback pass, 25 Nov 2026 (476.0 s, 10 sheets; v1 fully reviewed at 3 s). Opens on v16's final frame. Two 70 kg spheres F = 3.27 x 10^-7 N against 690 N on Earth (2.1 x 10^9 times, mass wins over distance: 8.57 x 10^22 / 4.06 x 10^13); F = GMm/r^2 with G = 6.67 x 10^-11; r centre to centre (spherical body, outside the surface); mass doubling and inverse-square shells with F against r and F against 1/r^2; g = GM/r^2 = 9.86 N kg^-1 at the surface, 8.73 N kg^-1 at 400 km (89%), probe 2R 2.46 and 3R 1.10; memory aid "Measure r from the middle. Twice as far, a quarter of the pull."; attempts Mars 3.70 N kg^-1 (38%) and h = 6.371 x 10^6 m; notes hold. v2 changes only the handoff heading to v18's question (confirmed 6:54 to 7:09). Human listening pending.
+
+## phys-y12-m5-v18 v2
+
+Root 3 s playback pass, 25 Nov 2026 (455.6 s, 10 sheets; v1 fully reviewed at 3 s). Opens on v17's final frame with v18's question. Newton's mountain with launch-speed slider and the 3 s countdown (now present, confirmed 0:24); 8 km in 1 s, ball falls 4.9 m, surface drops 5.0 m; falling around; GMm/r^2 = mv^2/r, v = sqrt(GM/r); station and spanner falling together (apparent weightlessness); worked 7.69 x 10^3 m s^-1 and 92.2 min (15.6 laps a day); radius slider (4r gives v/2, 3.84 km s^-1; Moon 1.02 km s^-1); r^3/T^2 = GM/4π^2 = 1.014 x 10^13 (Moon 1.019, within 1%); memory aid; attempts 7.61 x 10^3 m s^-1, 95.2 min and v_Y = v_X/2, T_Y = 8T_X; handoff carries v19's question; notes hold. Human listening pending.
