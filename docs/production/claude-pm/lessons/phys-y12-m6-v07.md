@@ -357,3 +357,7 @@ Root label edit (21 Nov 2026, Claude recording-readiness check): records root's 
 ## Coherence audit fix (24 Nov 2026)
 
 From `../checks/phys-y12-coherence-audit-2026-11-23.md` U-S2. Scene 5 gains one clause at the angle step: "Cos is close, so the part across the field, opposite theta, takes sine." with a small recall chip on screen. Total 6,068 characters (was 5,996). The prepared inputs in `p-y12-m6-v07/` predate this edit and must be regenerated before voicing.
+
+## Revision note (root, 25 November 2026): opening frame heading
+
+The built m6-v06 final frame (this video opens on it) carries this lesson's learner question as its heading: "Why does a current-carrying wire feel a magnetic force?". No narration change. This section overrides earlier text.

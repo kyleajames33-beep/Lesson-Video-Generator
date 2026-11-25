@@ -351,3 +351,7 @@ Speech changes needed: none.
 Calls for root: none.
 
 Root label edit (21 Nov 2026, Claude recording-readiness check): "which we met in Module five." became "which we've met before.". No module numbers in narration or on-screen chips, so one take serves the 2017 and 2025 courses. Narration now 5,598 characters (headline was 5,624; scene sum before this edit 5,603); bold cues keep their order.
+
+## Revision note (root, 25 November 2026): launch direction
+
+The earlier launch would turn a proton clockwise in this field, which is wrong. The build starts both protons moving down the page so the force and turning sense are correct. Narration is unchanged. This section overrides earlier text.
