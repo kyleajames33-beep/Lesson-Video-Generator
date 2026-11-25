@@ -16,6 +16,7 @@ Each switches to its measured timing once voiced. A stale take would put the wro
 The m6-v07 to v09 build found two more stale scenes, both missing the 24 November "Cos is close" wording:
 - m6-v07 scene 5 (`angle`)
 - m6-v09 scene 4 (`normal`)
+- m6-v16 scene 4: its prepared input is 6,450 characters against the design's 6,527.
 
 Root has since built m6-v07 to v09 on provisional timing.
 

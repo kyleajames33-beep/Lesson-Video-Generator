@@ -1,0 +1,46 @@
+# phys-y12-m6-v18 build notes (pre-build on provisional timing)
+
+Build agent (Claude), 25 November 2026. Design: `docs/production/claude-pm/lessons/phys-y12-m6-v18.md` (Revision 3 visuals win; the 24 November route insertion applied). No MP4 rendered. Narration untouched.
+
+## Status
+
+- **Timing is provisional.** `src/explainer/lessons/phys-y12-m6-v18/common.ts` imports `work/physics-prebuild/p-y12-m6-v18/lesson.json` on one marked line (`// PROVISIONAL TIMING: switch to measured/lesson.json when voiced`) and exports `PROVISIONAL = true`. Every change is keyed to a cue phrase with `cueFrame` (82 cue phrases, all resolve; the checker's 4 "missing" lines are the handoff block, which it files under feedback 2, and its "late" lines are all capped). When the measured take lands at `docs/production/claude-pm/lessons/p-y12-m6-v18/measured/lesson.json`, change that import, set `PROVISIONAL = false`, then re-run the cue check, the grade and a still sweep.
+- **Prepared input matches the design.** The prepared `docs/production/claude-pm/lessons/p-y12-m6-v18/lesson.json` and the brief 259 source audit carry the current design narration (6,300 characters, 16 scenes; checked scene by scene by script). The provisional file was made with the unchanged `make-provisional.py` from the audit. No narration mismatch (the route insertion changed the opening references only).
+- **Hook hold.** The provisional `responseHold` follows "It's the connection.", so the 3 s ring starts 1 s before the hold and counts down at the end. If the measured take puts the pause after "Make your prediction.", the ring moves there automatically.
+- **Opening frame:** v17's exported `M6V17FinalFrame` at frame 0, as briefed (the route's v17a is not built yet; its final frame is designed to be the same stage). From frame 1 v17's board continues (the flywheel keeps turning from `V17_END`; the "Next" chip fades as the heading already carries the question) and fades on "Here's the simplest version" as the generator stage builds, with the hobby motor as a corner inset.
+- **Plates:** hobby motor and flywheel (opening inset), oscilloscope (every output trace), lamp holder (the load; it glows), power station v1 (scene 9), squirrel-cage rotor (handoff, side view beside a coded end-on rotor). All uniform scale. **Plate requests: none.**
+
+## Files
+
+- Lesson: `src/explainer/lessons/phys-y12-m6-v18/` (`common.ts`, `parts.tsx`, `s1.tsx` scenes 1 to 5, `s2.tsx` 6 to 10, `s3.tsx` 11 to 16, `scenes.tsx`, `assets.ts`, `config.ts`). Config `Explainer-phys-y12-m6-v18`, export `config_phys_y12_m6_v18`, PHYSICS, topic "GENERATORS", accent `#9c5a00`, key notes at least 1350 frames. Registry: after m6-v17.
+- Shared: the motor kit `src/explainer/physics/electromagnetism/motor.tsx` (new with v16): `MotorModel` with slip rings or a split ring (slip-ring spacing widened for this video), the area normal and side "a"; `EndOnCoil`; `RingCloseUp` (split and slip); `FnGraph`; `Scope` (sine or rectified-sine traces, dashed earlier trace); `StatorRing` and `EndOnCage` (handoff). Reused: v09's `LoopInField` and `fproj` (`flux.tsx`) for the flux stage.
+- Lesson parts: `Gen` and `GenLeads` (the model in this lesson's colours with its leads), `Lamp` and `lampPts`, `scopeIns`, `FluxLoop`, `MiniTrace`.
+- **Simulation (Revision 3: no engine fits):** one angle clock drives the coil, the flux and emf graphs, the tangent, the readouts and the oscilloscope (`phiOf` = cos theta, `emfOf` = sin theta, `slipOut`, `splitOut` in `common.ts`).
+- All values from `common.ts` and checked against "Numbers used": drag theta 0°, 45°, 90°, 135°, 180°: Phi/Phi_max 1.00, 0.71, 0, −0.71, −1.00 and epsilon/epsilon_max 0, 0.71, 1.00, 0.71, 0; speed × 1, × 1.5, × 2 with peak and frequency scaled by the same factor; 50 Hz, 2 poles: 50 turns each second, 3000 revolutions per minute.
+
+## Stages built
+
+1 v17's board fades; the generator stage (pole blocks, the coil on its axle, the split ring and brushes, leads to the lamp holder and on to the oscilloscope, amber drive arrow) with a row of humps on the screen, "never below zero", DC chip; only the rings swap (split ring out, slip rings in, ringed), the trace redraws as a sine, AC chip; two prediction chips, the connection ticked, "same in both"; 2 the flux loop large with its field lines (lines through the loop drawn heavier), Phi = BA cos theta, the navy normal and arc, the drag with live readouts, three snapshot cards that light on their cues, the cosine drawn with a cursor; 3 the linked flux and emf graphs, a rose tangent sliding on the flux curve, the emf point and readout, framed "ε max when Φ = 0", the slate crossed "biggest flux, biggest emf", the loop thumbnail enlarging with amber motion arrows on its sides (across the field edge on, along it face on), the emf sine drawn in full with a "¼ turn" bracket; 4 the end-on coil with side "a" tinted, its motion arrow up then down and the coil's emf dot and cross flipping, the two machines' icons with "ε in the coil" sines framed "both: AC inside the coil", navy arrows to the ring ends; 5 the slip-ring close-up (clipped), the site's slip-ring definition, "always the same end", the sine on the oscilloscope, framed "AC out", "1 turn = 1 cycle", dots in the outside leads reversing each half cycle; 6 the end-on split ring (halves in two coppers) beside the small model, "ε = 0 at the swap" ringed at the gaps, the humps building over a dashed copy of the coil's sine, framed "pulsating DC: one direction, rising and falling", the slate crossed "the coil's current is one way"; 7 the two icons and three shared rows (ticked for both), amber forces against the drive, energy blocks, the framed fourth row "the only difference"; 8 the slip-ring stage with a speed slider × 1, × 1.5, × 2 and the trace growing taller and crowding over a dashed × 1 trace, live factor rows; 9 the painted power station and a coded cutaway (stator ring, a turning electromagnet, turbine arrow, coils pulsing in turn, a small sine), framed 3000 revolutions per minute; 10 the two ring close-ups with their traces and the memory card; 11 to 14 question cards (an edge-on coil with no normal; a coil whose ring end is hidden behind a grey "?") and brief feedback; 15 the handoff (two chips, a ring of six stator coils with a turning dashed field arrow, the cage rotor plate joined by a navy arrow to a coded end-on rotor that turns slightly behind, "no wires to the rotor", "?"; final frame); 16 five notes and the memory card.
+
+## Deviations
+
+- **Handoff heading carries the next learner question** (root rule): on "But the rotor never quite keeps up" it changes to "Why must an induction-motor rotor lag the rotating field?".
+- **Quoted definition uses the site's wording** (root rule): scene 5's chip reads Slip rings: "Continuous conducting rings that maintain electrical contact with a rotating coil without swapping its external connections." (site lesson 11 vocabulary) instead of the design's paraphrase; the narration's plain definition is unchanged.
+- Every mistake is slate (R1); red is not used for mistakes or brackets (the "¼ turn" and "1 turn = 1 cycle" brackets are rose, the emf colour).
+- The flux stage reuses v09's loop (turning about a vertical axis, seen obliquely) rather than the three-quarter model, because it shows the field lines through the face (the counting picture).
+- The handoff's rotor mark keeps a fixed lag of about 26° behind the field arrow (a picture of "slightly behind"; v19 explains slip).
+
+## Final frame (exported as `M6V18FinalFrame` in `s3.tsx`)
+
+`<HandoffBoard f={end} final />`: heading "Why must an induction-motor rotor lag the rotating field?"; chips "generator: turning → current" and "motor: current → turning" at the upper left; the squirrel-cage rotor plate at (130, 470) 420 px wide with "same rotor, end on" and a navy arrow to a coded end-on cage rotor (r 120) at (1180, 560) inside a ring of six grey stator coils (r 240) with a dashed slate field arrow; the rotor's navy index mark about 26° behind the field arrow; "?" between; "turning field"; "no wires to the rotor"; chip "Next: why must an induction-motor rotor lag the rotating field?" at (96, 890).
+
+## Grade
+
+`npm run -s grade:explainer -- Explainer-phys-y12-m6-v18` (25 November 2026, src build, provisional timing): **PASS WITH WARNINGS: 0 failures, 4 warnings** (sparse frames in the comparison, attempt 1, feedback 1 and the notes). Report: `out/explainer/Explainer-phys-y12-m6-v18/grade/Explainer-phys-y12-m6-v18-grade.md`. The first run failed on 22 px picture text in feedback 1 (fixed: larger label). Scoped typecheck clean; cue check: all 82 cue phrases resolve.
+
+**Honest grade: B on provisional timing.** The ring swap with the live trace, the linked flux and emf graphs with the sliding tangent and the humps flipping up over the coil's dashed sine carry the explanation. Soft spots: the slip-ring close-up is a clipped enlargement of the box model, the comparison scene is text-led, and motion needs judging at playback speed.
+
+## For root
+
+- When v17a is built, change v18's opening import from `M6V17FinalFrame` to v17a's final frame (`s1.tsx`, two lines); the stage is designed to match.
+- Open decision 2 (ε = NBAω sin ωt) stays qualitative as designed.
