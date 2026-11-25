@@ -479,3 +479,7 @@ Root 3 s playback pass, 25 Nov 2026 (452.8 s, 10 sheets). v1 was fully reviewed 
 ## phys-y12-m5-v11 v2
 
 Root 3 s playback pass, 25 Nov 2026 (498.3 s, 11 sheets). v1 was fully reviewed at 3 s (crane top view, speed versus velocity, Δv triangle shrinking to centripetal, v = 2πr/T = ωr with 26.2 m s^-1, 0.524 rad s^-1, 0.0833 Hz, the hodograph a = v^2/r, 13.7 m s^-2, cut-string tangent, memory aid "Twice as fast, four times the pull.", attempts with 25.1 rad s^-1, 7.5 m s^-1, 1.9 x 10^2 m s^-2 and a_B = 4a_A, roundabout handoff, notes hold). v2 moves the "Yes" prediction chip below "No" so it clears the countdown label (confirmed 0:21). Human listening pending.
+
+## phys-y12-m5-v12 v2
+
+Root 3 s playback pass, 25 Nov 2026 (10 sheets). v1 was fully reviewed at 3 s (flat roundabout, rear view N = mg, friction as the only sideways force, f = mv^2/r = 1200 x 15^2 / 40 = 6.75 x 10^3 N, f <= mu_s N slider, v_max = sqrt(mu_s g r) = 13.3 m s^-1 (47.8 km h^-1), car versus truck same v_max, wet road 9.4 m s^-1, past the limit with no outward force, memory aid "Centripetal is a job, not a force.", attempts 16.9 m s^-1 and 9.45 x 10^3 N needed > 5.88 x 10^3 N available, notes hold). v2 changes the handoff heading only: the conical-pendulum teaser (6:33 to 7:05) now carries v13's question "How does string tension sustain a conical pendulum?", matching v13's first frame. Human listening pending.

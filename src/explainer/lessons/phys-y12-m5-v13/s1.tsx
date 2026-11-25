@@ -89,8 +89,7 @@ export const S02: React.FC = () => {
 	const FTpx = WE.FT * K, mgPx = WE.mg * K;
 	return (
 		<>
-			<SceneHeading text={HEAD_V12} at={-200} size={HEAD_SIZE} out={centre - 14} />
-			<SceneHeading text={HEAD} at={centre - 4} size={HEAD_SIZE} />
+			<SceneHeading text={HEAD_V12} at={-200} size={HEAD_SIZE} />
 			<FrameSvg>
 				<PendStage theta={30} phase={phase} tiltK={tiltK} solid={0.55 * prog(f, 0, 30)} />
 				<VecArrow x={bob[0]} y={bob[1]} dx={(tx / tl) * FTpx} dy={(ty / tl) * FTpx} color={AMBER.stroke} width={8} head={24} at={pulls} />
