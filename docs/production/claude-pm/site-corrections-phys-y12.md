@@ -1514,3 +1514,9 @@ Source: [lesson16](https://hscscience.com.au/subjects/physics/year12/module8/les
 The Analyse7marks step4 says "A particle with no internal structure has nothing to rearrange" and treats neutron identity change as independent evidence for constituents. The combined model answer repeats that argument.
 
 Finding: decay does not require constituents. A muon is a fundamental lepton and decays into an electron and neutrinos. Remove decay as independent proof from step4,its justification and the combined answer. Keep the quark model description d to u as an account of neutron decay,with scattering and hadron patterns as the evidence. [DOE muon account](https://www.energy.gov/science/doe-explainsmuons). The repaired v20 scenes/accepted answers already make this distinction. No site HTML changed.
+
+### Module 6 lesson 15: mains voltage (root, 25 November 2026)
+
+Source: `C:/Users/kygs/teaching-app-fix/subjects/physics/year12/module6/lesson15.sa.html` (read-only clone, read 25 November 2026). The worked example now uses 240 V throughout for Australian household mains.
+
+Finding: the nominal Australian low-voltage supply has been 230 V (+10% / -6%) since the change to AS 60038, so 240 V is the old nominal value. The m6-v13 to v15 videos deliberately use 230 V. Suggested site change: use 230 V, or add a note that older texts and some exam questions use 240 V and that either is accepted when it is given. No site HTML changed.
